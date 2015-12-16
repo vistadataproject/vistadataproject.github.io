@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-###  A Sunrise at High Altitude: The Moonshot Vista
+###  Sunrise at High Altitude: A Moonshot Vista
 
 ![alt text](http://static.panoramio.com/photos/1920x1280/66396650.jpg "Haleakala Maui Hawaii Sunrise with Moon")
 
