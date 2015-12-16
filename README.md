@@ -1,9 +1,9 @@
-# VistA Data Project Home
+# VistA Data Project
 VistA Data Project's home web site
 
 ![alt text](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/vista_sunrise.fw.png "Haleakala Maui Hawaii Sunrise with Moon")
 
-__A fresh Look from high altitude: Moonshot vista:  Vista of a sunrise at the higest peak of Maui.. signifying "high altitude", "fresh look", "fresh new day", "rebirth", "future looking" and also and location of the VistA Data innovations laboratory. Add to this sunrise vista the distant moon...and we have a "moonshot" project for VA.
+__VISTA: A fresh Look from a high perspective:__  Vista of a sunrise at the higest peak of Maui... the R&D headquarters of the VISTA Data Project... signifying "high altitude", "fresh look", "fresh new day", "rebirth", "future looking". Add to this mountain sunrise vista the distant moon...and we have a "moonshot" project for VA.
 
 * [Haleakala Sunrise with moonshot] (http://www.panoramio.com/photo/66396650)
 
