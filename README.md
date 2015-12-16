@@ -25,6 +25,7 @@ __Logo for Github__:
 
 __Metadata References__:
 * http://www.slideshare.net/datamgmt/etis11-enterprise-metadata-management
+* http://www.slideshare.net/bobbyschang/10-reasons-to-avoid-folders-in-share-point-spsvb
 
 
 
