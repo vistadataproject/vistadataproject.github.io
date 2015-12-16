@@ -2,9 +2,10 @@
 VistA Data Project's web site
 
 
-### VistA Data:  A High Altitude, Fresh Look at Data
+### VistA Data:  A High Altitude, Fresh Look
 
-* Landing Page Graphics
+* Landing Page Graphics:  Vistas of Maui sunrise at the higest point of the island
+* Significance is "fresh look", "high altitude", and PJITC location
 
 * [Maui Sunrises]( https://www.google.com/search?q=maui+sunrise&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0u8mynt_JAhVL7hoKHQJVCssQ_AUIBygB&biw=1368&bih=1734&dpr=0.75#imgrc=QtAOkjBP7T6QMM%3A)
 
