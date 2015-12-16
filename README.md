@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-### Fresh Look from above: A Moonshot Vista
+### VISTA: A Fresh Look from above
 
 
 
