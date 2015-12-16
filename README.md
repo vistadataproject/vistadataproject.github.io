@@ -4,8 +4,9 @@ VistA Data Project's web site
 
 Potential Logos
 
-## VISTA:  A Fresh Look from High Altitude:  
-* [Maui]( https://www.google.com/search?q=maui+sunrise&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0u8mynt_JAhVL7hoKHQJVCssQ_AUIBygB&biw=1368&bih=1734&dpr=0.75#imgrc=QtAOkjBP7T6QMM%3A)
+## Vista Data:  A High Altitude, Fresh Look at Data
+
+* [Maui Sunrises]( https://www.google.com/search?q=maui+sunrise&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0u8mynt_JAhVL7hoKHQJVCssQ_AUIBygB&biw=1368&bih=1734&dpr=0.75#imgrc=QtAOkjBP7T6QMM%3A)
 
 * [Haleakala Sunsets](https://s3.amazonaws.com/masters.galleries.dpreview.com/2637693.jpg?X-Amz-Expires=3600&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWXD4UV3FXMIDQLQ/20151216/us-east-1/s3/aws4_request&X-Amz-Date=20151216T013918Z&X-Amz-SignedHeaders=host&X-Amz-Signature=e0ea18174dcedf6f36e73e9ec793501495533342d139b011a154fe12f915930a)
 
