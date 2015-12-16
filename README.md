@@ -14,10 +14,12 @@ __VISTA Data: A fresh look from a high perspective:__  Vista of a sunrise at the
 * [Haleakala Sunrises](https://www.google.com/search?espv=2&biw=1368&bih=1734&tbm=isch&sa=1&q=Haleakala++sunrise&search_plus_one=form&oq=Haleakala++sunrise&gs_l=img.3..0l10.81330.81784.0.82223.2.2.0.0.0.0.230.363.0j1j1.2.0....0...1.1j2.64.img..0.2.362.9Fcu4dzTdoE#imgdii=O7pkCIx5Yi2w5M%3A%3BO7pkCIx5Yi2w5M%3A%3BAgK_yvXn0kKbbM%3A&imgrc=O7pkCIx5Yi2w5M%3A&search_plus_one=form)
 
 
+__VA Logos / Templates__:
+* http://www.vacareers.va.gov/togetherVA/
+
+
 __Logo for Github__: 
-
 * [database layers](http://www.essentialsql.com/what-are-the-major-parts-of-a-database)
-
 
 
 __Metadata References__:
