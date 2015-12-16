@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-### A High Altitude Fresh Look: A Moonshot Vista
+### High Altitude Fresh Looks: The Moonshot Vista
 
 ![alt text](http://static.panoramio.com/photos/1920x1280/66396650.jpg "Haleakala Maui Hawaii Sunrise with Moon")
 
