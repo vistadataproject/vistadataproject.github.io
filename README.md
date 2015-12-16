@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-### VistA Data:  High Altitude, Fresh Look on Data ...A Moonshot
+### VistA:  A High Altitude, Fresh Look ...A Moonshot
 
 __Landing Page Image__:  Vista of a sunrise at the higest point of Maui, signifying "high altitude", "fresh look", "fresh new day", "rebirth", "future looking" and also and physical location of PJITC. There is also a stunning image of a sunrise photo with moon...making this also a "moonshot" project for VA.
 
@@ -16,5 +16,13 @@ __Landing Page Image__:  Vista of a sunrise at the higest point of Maui, signify
 
 
 __Logo for Github__: 
+
+* [database layers](http://www.essentialsql.com/what-are-the-major-parts-of-a-database)
+
+
+
+__Metadata References__:
+* http://www.slideshare.net/datamgmt/etis11-enterprise-metadata-management
+
 
 
