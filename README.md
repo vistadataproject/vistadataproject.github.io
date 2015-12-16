@@ -2,9 +2,9 @@
 VistA Data Project's web site
 
 
-### VistA Data:  A High Altitude, Fresh Look
+### VistA Data:  High Altitude, Fresh Look, Moonshot
 
-* Landing Page Graphics:  Vistas of Maui sunrise at the higest point of the island, signifying "new day", "fresh look", "high altitude" and physical location of PJITC.
+* Landing Page Graphics:  Vistas of Maui sunrise at the higest point of the island, signifying "new day", "fresh look", "high altitude" and physical location of PJITC. In addition to sunrise, we see a stunning image of a sunrise with moon...making this a "moonshot".
 
 * [Maui Sunrises]( https://www.google.com/search?q=maui+sunrise&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0u8mynt_JAhVL7hoKHQJVCssQ_AUIBygB&biw=1368&bih=1734&dpr=0.75#imgrc=QtAOkjBP7T6QMM%3A)
 
