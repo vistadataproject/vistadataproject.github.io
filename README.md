@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-### Fresh Look from above: Moonshot sunrise
+### Fresh Look from high altitudes: Moonshot vistas are possible
 
 
 
