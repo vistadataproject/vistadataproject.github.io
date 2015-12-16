@@ -4,6 +4,9 @@ VistA Data Project's web site
 
 ### VistA:  A High Altitude, Fresh Look ...A Moonshot
 
+![alt text](http://static.panoramio.com/photos/1920x1280/66396650.jpg "Haleakala Maui Hawaii Sunrise with Moon")
+
+
 __Landing Page Image__:  Vista of a sunrise at the higest point of Maui, signifying "high altitude", "fresh look", "fresh new day", "rebirth", "future looking" and also and physical location of PJITC. There is also a stunning image of a sunrise photo with moon...making this also a "moonshot" project for VA.
 
 * [Haleakala Sunrise with moonshot] (http://www.panoramio.com/photo/66396650)
