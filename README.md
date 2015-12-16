@@ -2,7 +2,7 @@
 VistA Data Project's web site
 
 
-### Logos for landing page: VistA Data:  A High Altitude, Fresh Look at Data
+### VistA Data:  A High Altitude, Fresh Look at Data (landing page graphic)
 
 * [Maui Sunrises]( https://www.google.com/search?q=maui+sunrise&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0u8mynt_JAhVL7hoKHQJVCssQ_AUIBygB&biw=1368&bih=1734&dpr=0.75#imgrc=QtAOkjBP7T6QMM%3A)
 
