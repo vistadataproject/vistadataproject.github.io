@@ -1,5 +1,4 @@
 # VistA Data Project
-VistA Data Project's home web site
 
 ![alt text](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/vista_sunrise.fw.png "Haleakala Maui Hawaii Sunrise with Moon")
 
