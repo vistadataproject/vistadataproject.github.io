@@ -1,9 +1,10 @@
 # VistA Data Project
+A new dawn on VISTA Data
 
 ![alt text](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/vista_sunrise.fw.png "Haleakala Maui Hawaii Sunrise with Moon")
 
 
-__VISTA Data: A fresh look from a high perspective:__  Vista of a sunrise at the higest peak of Maui... the R&D headquarters of the VISTA Data Project... signifying a "high altitude", "fresh look", "new light", "new dawn", "rebirth", "future looking". Add to this mountain  vista the distant moon...and we have not just fresh new dawn for VISTA, but potentially a moonshot.
+__A fresh look from a new perspective:__ A vista of a sunrise at the higest peak of Maui (the research and development headquarters of the VISTA Data Project) signifies"high altitude", "fresh look", "new light", "new dawn", "rebirth", and "future looking". Add to this vista the distant moon...and we have not just a new dawn for VISTA, but also a moonshot.
 
 
 __Metadata References__:
