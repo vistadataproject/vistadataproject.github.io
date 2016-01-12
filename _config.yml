@@ -1,0 +1,31 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               vistadataproject.org
+tagline:             The data of VISTA
+url:                 http://vistadataproject.org
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              conordowling
+  email:             conor-dowling@caregraf.com
+
+# Custom vars
+github:
+  repo:              https://github.com/vistadataproject/vistadataproject.github.io
+
+kramdown:
+  input: GFM

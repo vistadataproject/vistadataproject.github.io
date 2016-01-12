@@ -1,8 +1,22 @@
-# VISTA Data Project Web Site
+VISTA Data Project (VDP) github-hosted Web Site
 
-![alt text](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/vista_sunrise.fw.png "Haleakala Maui Hawaii Sunrise with Moon")
+Configuration Notes
+=====================
 
-__A fresh look from a new perspective:__ A vista of a sunrise at the higest peak of Maui (the research and development headquarters of the VISTA Data Project) signifies"high altitude", "fresh look", "new light", "new dawn", "rebirth", and "future looking". Add to this vista the distant moon...and we have not just a new dawn for VISTA, but also a moonshot.
+layout and organization from [poole](https://github.com/poole/poole)
 
+To write blogs:
+* install [jekyll](https://help.github.com/articles/using-jekyll-with-pages/)
+* in the base directory, run __jekyll server --watch__
+* go to __localhost:4000__ in your browser to see the site
+* to add or edit posts, change or add to the dated entries in the _posts directory
+* to publish them on the public site, just commit and push them
+* see public site at _https://vistadataproject.github.io/_
 
+To edit the Poole-based theme look at:
+* _config.yml
+* _layouts
+* _includes
+* _sass (style sheets)
 
+Note: using _robots.txt_, to tell search engines to ignore for now.
