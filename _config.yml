@@ -5,9 +5,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               vistadataproject.org
+title:               vistadataproject.info
 tagline:             The data of VISTA
-url:                 http://vistadataproject.org
+url:                 http://vistadataproject.info
 paginate:            1
 baseurl:             ""
 
