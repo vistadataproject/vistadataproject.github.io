@@ -4,7 +4,7 @@ title: Social Coding - The New Standard
 ---
 
 <p align="center">
-<img src="images/VISTA-Circle.jpg" width="90%" alt="ex of image"/>
+![My helpful screenshot]({{ site.url }}/images/VISTA-Circle.jpg)
 </p>
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
