@@ -3,9 +3,7 @@ layout: post
 title: Social Coding - The New Standard
 ---
 
-<p align="center">
 ![My helpful screenshot]({{ site.url }}/images/VISTA-Circle.jpg)
-</p>
 
 ![VISTA Circle](http://vistadataproject.info/images/VISTA-Circle.jpg)
 *VISTA Circle*
