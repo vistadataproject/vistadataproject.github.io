@@ -4,8 +4,7 @@ title: Social Coding - The New Standard
 ---
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/GitHub.svg" width="150px" height="100px" />
-  <img src="http://www.itsourcetek.com/wp-content/uploads/2013/05/drive3.png" width="250px" height="100px" />
+<img src="images/VISTA-Circle.jpg" width="90%" alt="ex of image"/>
 </p>
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
