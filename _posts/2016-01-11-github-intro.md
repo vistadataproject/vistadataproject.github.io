@@ -7,9 +7,6 @@ title: Social Coding - The New Standard
 *VISTA Circle*
 
 
-<img src="/images/logos-github/adobe.png" height=50>
-
-
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
@@ -36,6 +33,20 @@ Introduction to Github
 
 Companies Using Github
 ================
+
+<img src="/images/logos-github/adobe.png" height=60>
+<img src="/images/logos-github/dropbox.png" height=60>
+<img src="/images/logos-github/facebook.png" height=60>
+<img src="/images/logos-github/google.png" height=60>
+<img src="/images/logos-github/linkedin.png" height=60>
+<img src="/images/logos-github/linux.png" height=60>
+<img src="/images/logos-github/microsoft.png" height=60>
+<img src="/images/logos-github/mozilla.png" height=60>
+<img src="/images/logos-github/nodeJS.png" height=60>
+<img src="/images/logos-github/paypal.png" height=60>
+<img src="/images/logos-github/twitter.png" height=60>
+<img src="/images/logos-github/yahoo.png" height=60>
+
 
 Company | Repository
 ---- | ----
