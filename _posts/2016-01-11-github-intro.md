@@ -6,6 +6,9 @@ title: Social Coding - The New Standard
 ![VISTA Circle](/images/VISTA-Circle.jpg)
 *VISTA Circle*
 
+![image](/images/logos-github/adobe.png)
+
+
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
 Github is the industry-leading software development and collaboration platform, supporting the world's largest  software development companies including Google, Microsoft, Adobe, Amazon, Yahoo, LinkedIn, Facebook, Dropbox, and Mozilla.
