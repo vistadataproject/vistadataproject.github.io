@@ -19,7 +19,7 @@ A unique feature of  Github is its advanced distributed revision control, which 
 For example, over 5000 coders around the world concurrently develop the Linux operating system, and have submitted over 500,000 changes and patches (called commits) to Github, which continuously integrated and merged these to a single authoritative source reflecting all contributions at all times. Without Github, this scale of collaboration and agility of development would be simply impossible.  Because of such robust collaboration features, Github is sometimes called the "Facebook of Coders". 
 
 
-Intro to Github
+Introduction to Github
 =================
 * [Wikipedia: Github](https://en.wikipedia.org/wiki/GitHub)
 * [What Exactly is Github?](http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
@@ -48,11 +48,10 @@ Dropbox | [https://github.com/dropbox](https://github.com/dropbox)
 Mozilla | [https://github.com/mozilla](https://github.com/mozilla)
 
 
-Genesis of Github[^fn-what-exactly-is-github]
+History of Github[^fn-what-exactly-is-github]
 ================
 
 [^fn-what-exactly-is-github]: http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway
-
 
 What is GitHub and why are developers so excited about it? You may have heard that GitHub is a code sharing and publishing service, or that it’s a social networking site for programmers. Both statements are true, but neither explain exactly why GitHub is special.
 
@@ -78,11 +77,5 @@ Atlassian acquired a competitor called BitBucket in 2010. And earlier this year 
 
 The money may be in private and on-premise hosting, but the love is in the public repositories. Perhaps most importantly, GitHub has become the Library of Alexandria for code examples. Since Git encourages granular recording of changes, programmers, be they absolute beginners or experts, can trace the steps of some of the greatest developers in the world and find out how they solved thorny problems. But if GitHub were ever to meet the same fate as the Library of Alexandria, it could be reconstructed from all those local forks distributed on so many developers laptops all over the world. Regardless of how this investment works out, that’s a hell of a legacy for the GitHub team to leave behind.
 
-
-Footnotes
-=============
-
-<img src="https://m2.behance.net/rendition/pm/4610553/disp/a93254740c4cdc7101c08a6ed5475f53.jpg"  width="300px" height="250px" />
-<img src="http://saptherapist.com/wp-content/uploads/2013/01/photodune-3652755-symbol-of-social-network-xs.jpg"   width="300px" height="250px" />
 
 
