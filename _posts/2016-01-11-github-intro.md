@@ -12,13 +12,13 @@ Github is the industry-leading software development and collaboration platform, 
 As of 2015, GitHub reports over 9 million users and over 21.1 million repositories, making it the largest host of source code in the world. 
 
 
-### Github is Social Coding
+## Github is Social Coding
 
 A unique feature of  Github is its advanced distributed revision control, which works whether coders are online or offline, and automates the merging of all sources of code continuously. This allows very large distributed teams to work asynchronously in different time zones on one or many large enterprise-critical codebase with minimal administrative overhead, ane with no conflicts when all distributed instances of thier code (called forks) are merged.
 
 For example, over 5000 coders around the world concurrently develop the Linux operating system, and have submitted over 500,000 changes and patches (called commits) to Github, which continuously integrated and merged these to a single authoritative source reflecting all contributions at all times. Without Github, this scale of collaboration and agility of development would be simply impossible.  Because of such robust collaboration features, Github is sometimes called the "Facebook of Coders". 
 
-### Government and Github
+# Government and Github
 
 ![github-gov](/images/github-gov/git-gov1.png)
 ![github-gov](/images/github-gov/git-gov2.png)
@@ -27,18 +27,7 @@ For example, over 5000 coders around the world concurrently develop the Linux op
 
 
 
-Links to Github
-=================
-* [Wikipedia: Github](https://en.wikipedia.org/wiki/GitHub)
-* [What Exactly is Github?](http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
-* [How Big Tech Uses Github](http://jmduke.com/posts/how-big-tech-uses-github/)
-* [Github has conqured Google, Microsoft, Facebook, Yahoo, and everyone else](http://www.wired.com/2015/03/github-conquered-google-microsoft-everyone-else)
-* [Top projects on Github](http://www.fastcompany.com/3015178/the-top-10-hottest-github-projects-right-now)
-* [Explore other repositories](https://github.com/explore)
-
-
-
-Companies Using Github
+# Companies Using Github
 ================
 
 Logo | Company | Repository
@@ -56,6 +45,16 @@ Logo | Company | Repository
 ![img](/images/logos-github/60h/dropbox.jpg) | Dropbox | [https://github.com/dropbox](https://github.com/dropbox)
 ![img](/images/logos-github/60h/mozilla.jpg) | Mozilla | [https://github.com/mozilla](https://github.com/mozilla)
 
+
+
+Github Links
+=================
+* [Wikipedia: Github](https://en.wikipedia.org/wiki/GitHub)
+* [What Exactly is Github?](http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
+* [How Big Tech Uses Github](http://jmduke.com/posts/how-big-tech-uses-github/)
+* [Github has conqured Google, Microsoft, Facebook, Yahoo, and everyone else](http://www.wired.com/2015/03/github-conquered-google-microsoft-everyone-else)
+* [Top projects on Github](http://www.fastcompany.com/3015178/the-top-10-hottest-github-projects-right-now)
+* [Explore other repositories](https://github.com/explore)
 
 
 History of Github
