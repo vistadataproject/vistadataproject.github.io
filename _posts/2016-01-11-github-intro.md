@@ -18,7 +18,7 @@ A unique feature of  Github is its advanced distributed revision control, which 
 
 For example, over 5000 coders around the world concurrently develop the Linux operating system, and have submitted over 500,000 changes and patches (called commits) to Github, which continuously integrated and merged these to a single authoritative source reflecting all contributions at all times. Without Github, this scale of collaboration and agility of development would be simply impossible.  Because of such robust collaboration features, Github is sometimes called the "Facebook of Coders". 
 
-# Government and Github
+# Government on Github
 
 ![github-gov](/images/github-gov/git-gov1.png)
 ![github-gov](/images/github-gov/git-gov2.png)
@@ -27,8 +27,7 @@ For example, over 5000 coders around the world concurrently develop the Linux op
 
 
 
-# Companies Using Github
-================
+# Industries on Github
 
 Logo | Company | Repository
 :---: |----|----
