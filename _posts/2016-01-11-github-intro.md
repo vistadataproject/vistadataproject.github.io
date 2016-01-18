@@ -2,7 +2,9 @@
 layout: post
 title: Social Coding - The New Standard
 ---
-![VISTA Circle](/images/logos-github/github-social-coding.png)
+![github-social-coding](/images/logos-github/github-social-coding.png)
+
+![github-gov](/images/github-gov/git-gov1.png)
 
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
