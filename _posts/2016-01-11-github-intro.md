@@ -40,25 +40,22 @@ Links to Github
 
 Companies Using Github
 ================
-![img](/images/logos-github/60h/adobe.jpg) ![img](/images/logos-github/60h/dropbox.jpg) ![img](/images/logos-github/60h/facebook.jpg)
-![img](/images/logos-github/60h/google.jpg) ![img](/images/logos-github/60h/linkedin.jpg) ![img](/images/logos-github/60h/linux.jpg) ![img](/images/logos-github/60h/microsoft.jpg) ![img](/images/logos-github/60h/mozilla.jpg) ![img](/images/logos-github/60h/nodeJS.jpg) ![img](/images/logos-github/60h/paypal.jpg) ![img](/images/logos-github/60h/twitter.jpg) ![img](/images/logos-github/60h/yahoo.jpg)
 
+Logo | Company | Repository
+:---:- | :----: | :----
+![img](/images/logos-github/60h/google.jpg) | Google |   [https://github.com/google](https://github.com/google)
+![img](/images/logos-github/60h/microsoft.jpg)  | Microsoft | [https://github.com/Microsoft]( https://github.com/Microsoft)
+![img](/images/logos-github/60h/facebook.jpg) | Facebook |  [https://github.com/facebook](https://github.com/facebook)
+![img](/images/logos-github/60h/linkedin.jpg)  | LinkedIn | [https://github.com/linkedin](https://github.com/linkedin)
+![img](/images/logos-github/60h/yahoo.jpg) | Yahoo | [https://github.com/yahoo](https://github.com/yahoo)
+![img](/images/logos-github/60h/linux.jpg)  | Linux | [https://github.com/torvalds/linux](https://github.com/torvalds/linux)
+![img](/images/logos-github/60h/adobe.jpg)  | Adobe | [https://github.com/adobe](https://github.com/adobe)
+![img](/images/logos-github/60h/twitter.jpg) | Twitter | [https://github.com/twitter](https://github.com/twitter)
+![img](/images/logos-github/60h/paypal.jpg)  | PayPal | [https://github.com/paypal](https://github.com/paypal)
+![img](/images/logos-github/60h/nodeJS.jpg) | Amazon | [https://github.com/aws/](https://github.com/aws/)
+![img](/images/logos-github/60h/dropbox.jpg) | Dropbox | [https://github.com/dropbox](https://github.com/dropbox)
+![img](/images/logos-github/60h/mozilla.jpg) | Mozilla | [https://github.com/mozilla](https://github.com/mozilla)
 
-
-Company | Repository
----- | ----
-Google |   [https://github.com/google](https://github.com/google)
-Microsoft | [https://github.com/Microsoft]( https://github.com/Microsoft)
-Facebook |  [https://github.com/facebook](https://github.com/facebook)
-LinkedIn | [https://github.com/linkedin](https://github.com/linkedin)
-Yahoo | [https://github.com/yahoo](https://github.com/yahoo)
-Linux | [https://github.com/torvalds/linux](https://github.com/torvalds/linux)
-Adobe | [https://github.com/adobe](https://github.com/adobe)
-Twitter | [https://github.com/twitter](https://github.com/twitter)
-PayPal | [https://github.com/paypal](https://github.com/paypal)
-Amazon | [https://github.com/aws/](https://github.com/aws/)
-Dropbox | [https://github.com/dropbox](https://github.com/dropbox)
-Mozilla | [https://github.com/mozilla](https://github.com/mozilla)
 
 
 History of Github
