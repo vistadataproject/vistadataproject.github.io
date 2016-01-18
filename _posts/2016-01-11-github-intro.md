@@ -40,18 +40,8 @@ Links to Github
 
 Companies Using Github
 ================
-![img](/images/logos-github/60h/adobe.jpg)
-![img](/images/logos-github/60h/dropbox.jpg)
-![img](/images/logos-github/60h/facebook.jpg)
-![img](/images/logos-github/60h/google.jpg)
-![img](/images/logos-github/60h/linkedin.jpg)
-![img](/images/logos-github/60h/linux.jpg)
-![img](/images/logos-github/60h/microsoft.jpg)
-![img](/images/logos-github/60h/mozilla.jpg)
-![img](/images/logos-github/60h/nodeJS.jpg)
-![img](/images/logos-github/60h/paypal.jpg)
-![img](/images/logos-github/60h/twitter.jpg)
-![img](/images/logos-github/60h/yahoo.jpg)
+![img](/images/logos-github/60h/adobe.jpg) ![img](/images/logos-github/60h/dropbox.jpg) ![img](/images/logos-github/60h/facebook.jpg)
+![img](/images/logos-github/60h/google.jpg) ![img](/images/logos-github/60h/linkedin.jpg) ![img](/images/logos-github/60h/linux.jpg) ![img](/images/logos-github/60h/microsoft.jpg) ![img](/images/logos-github/60h/mozilla.jpg) ![img](/images/logos-github/60h/nodeJS.jpg) ![img](/images/logos-github/60h/paypal.jpg) ![img](/images/logos-github/60h/twitter.jpg) ![img](/images/logos-github/60h/yahoo.jpg)
 
 
 
