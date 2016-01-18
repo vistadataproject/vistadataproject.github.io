@@ -42,7 +42,7 @@ Companies Using Github
 ================
 
 Logo | Company | Repository
-:---:- | :----: | :----
+:---: |----|----
 ![img](/images/logos-github/60h/google.jpg) | Google |   [https://github.com/google](https://github.com/google)
 ![img](/images/logos-github/60h/microsoft.jpg)  | Microsoft | [https://github.com/Microsoft]( https://github.com/Microsoft)
 ![img](/images/logos-github/60h/facebook.jpg) | Facebook |  [https://github.com/facebook](https://github.com/facebook)
