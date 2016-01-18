@@ -39,6 +39,8 @@ Links to Github
 
 Companies Using Github
 ================
+![img](/images/logos-github/google.png)
+
 <img src="/images/logos-github/google.png" height=60>
 <img src="/images/logos-github/microsoft.png" height=60>
 <img src="/images/logos-github/facebook.png" height=60>
