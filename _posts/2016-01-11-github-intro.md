@@ -6,9 +6,7 @@ title: Social Coding - The New Standard
 ![VISTA Circle](/images/VISTA-Circle.jpg)
 *VISTA Circle*
 
-![VISTA Circle](/images/logos-github/github-social-coding)
-
-![VISTA Circle](/images/logos-github/vista-circle-label.fw.png)
+![VISTA Circle](/images/logos-github/github-social-coding.png)
 
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
