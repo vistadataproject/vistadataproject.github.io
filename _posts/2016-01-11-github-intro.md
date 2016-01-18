@@ -6,6 +6,9 @@ title: Social Coding - The New Standard
 ![VISTA Circle](/images/VISTA-Circle.jpg)
 *VISTA Circle*
 
+![VISTA Circle](/images/logos-github/github-social-coding)
+
+![VISTA Circle](/images/logos-github/vista-circle-label.fw.png)
 
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
@@ -15,13 +18,14 @@ Github is the industry-leading software development and collaboration platform, 
 As of 2015, GitHub reports over 9 million users and over 21.1 million repositories, making it the largest host of source code in the world. 
 
 
-### Why Github is *the* Social Coding Hub
+### Github is Social Coding
+
 A unique feature of  Github is its advanced distributed revision control, which works whether coders are online or offline, and automates the merging of all sources of code continuously. This allows very large distributed teams to work asynchronously in different time zones on one or many large enterprise-critical codebase with minimal administrative overhead, ane with no conflicts when all distributed instances of thier code (called forks) are merged.
 
 For example, over 5000 coders around the world concurrently develop the Linux operating system, and have submitted over 500,000 changes and patches (called commits) to Github, which continuously integrated and merged these to a single authoritative source reflecting all contributions at all times. Without Github, this scale of collaboration and agility of development would be simply impossible.  Because of such robust collaboration features, Github is sometimes called the "Facebook of Coders". 
 
 
-Introduction to Github
+Links to Github
 =================
 * [Wikipedia: Github](https://en.wikipedia.org/wiki/GitHub)
 * [What Exactly is Github?](http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
