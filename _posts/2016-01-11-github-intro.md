@@ -20,8 +20,6 @@ For example, over 5000 coders around the world concurrently develop the Linux op
 
 ### Government and Github
 
-![]<img src="/images/github-gov/git-gov1.png>]
-
 ![github-gov](/images/github-gov/git-gov1.png)
 ![github-gov](/images/github-gov/git-gov2.png)
 ![github-gov](/images/github-gov/git-gov3.png)
