@@ -40,20 +40,19 @@ Links to Github
 
 Companies Using Github
 ================
+![img](/images/logos-github/60h/adobe.jpg)
+![img](/images/logos-github/60h/dropbox.jpg)
+![img](/images/logos-github/60h/facebook.jpg)
 ![img](/images/logos-github/60h/google.jpg)
+![img](/images/logos-github/60h/linkedin.jpg)
+![img](/images/logos-github/60h/linux.jpg)
+![img](/images/logos-github/60h/microsoft.jpg)
+![img](/images/logos-github/60h/mozilla.jpg)
+![img](/images/logos-github/60h/nodeJS.jpg)
+![img](/images/logos-github/60h/paypal.jpg)
+![img](/images/logos-github/60h/twitter.jpg)
+![img](/images/logos-github/60h/yahoo.jpg)
 
-<img src="/images/logos-github/google.png" height=60>
-<img src="/images/logos-github/microsoft.png" height=60>
-<img src="/images/logos-github/facebook.png" height=60>
-<img src="/images/logos-github/linkedin.png" height=60>
-<img src="/images/logos-github/yahoo.png" height=60>
-<img src="/images/logos-github/linux.png" height=60>
-<img src="/images/logos-github/adobe.png" height=60>
-<img src="/images/logos-github/twitter.png" height=60>
-<img src="/images/logos-github/dropbox.png" height=60>
-<img src="/images/logos-github/mozilla.png" height=60>
-<img src="/images/logos-github/nodeJS.png" height=60>
-<img src="/images/logos-github/paypal.png" height=60>
 
 
 Company | Repository
