@@ -4,11 +4,6 @@ title: Social Coding - The New Standard
 ---
 ![github-social-coding](/images/logos-github/github-social-coding.png)
 
-![github-gov](/images/github-gov/git-gov1.png)
-![github-gov](/images/github-gov/git-gov2.png)
-![github-gov](/images/github-gov/git-gov3.png)
-![github-gov](/images/github-gov/git-gov4.png)
-
 
 GitHub is a Web-based code repository, source control, and distributed revision control system, and provides collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
@@ -23,6 +18,14 @@ A unique feature of  Github is its advanced distributed revision control, which 
 
 For example, over 5000 coders around the world concurrently develop the Linux operating system, and have submitted over 500,000 changes and patches (called commits) to Github, which continuously integrated and merged these to a single authoritative source reflecting all contributions at all times. Without Github, this scale of collaboration and agility of development would be simply impossible.  Because of such robust collaboration features, Github is sometimes called the "Facebook of Coders". 
 
+### Government and Github
+
+![github-gov](/images/github-gov/git-gov1.png)
+![github-gov](/images/github-gov/git-gov2.png)
+![github-gov](/images/github-gov/git-gov3.png)
+![github-gov](/images/github-gov/git-gov4.png)
+
+
 
 Links to Github
 =================
@@ -36,8 +39,6 @@ Links to Github
 
 Companies Using Github
 ================
-
-
 <img src="/images/logos-github/google.png" height=60>
 <img src="/images/logos-github/microsoft.png" height=60>
 <img src="/images/logos-github/facebook.png" height=60>
@@ -68,10 +69,10 @@ Dropbox | [https://github.com/dropbox](https://github.com/dropbox)
 Mozilla | [https://github.com/mozilla](https://github.com/mozilla)
 
 
-History of Github[^fn-what-exactly-is-github]
+History of Github[^fn-note1]
 ================
 
-[^fn-what-exactly-is-github]: http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway
+[^fn-note1]: http://techcrunch.com/2012/07/14/what-exactly-is-github-anyway
 
 What is GitHub and why are developers so excited about it? You may have heard that GitHub is a code sharing and publishing service, or that it’s a social networking site for programmers. Both statements are true, but neither explain exactly why GitHub is special.
 
