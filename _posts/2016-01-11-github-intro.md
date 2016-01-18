@@ -2,10 +2,6 @@
 layout: post
 title: Social Coding - The New Standard
 ---
-
-![VISTA Circle](/images/VISTA-Circle.jpg)
-*VISTA Circle*
-
 ![VISTA Circle](/images/logos-github/github-social-coding.png)
 
 
