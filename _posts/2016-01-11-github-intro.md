@@ -40,7 +40,7 @@ Links to Github
 
 Companies Using Github
 ================
-![img](/images/logos-github/60h/google.png)
+![img](/images/logos-github/60h/google.jpg)
 
 <img src="/images/logos-github/google.png" height=60>
 <img src="/images/logos-github/microsoft.png" height=60>
