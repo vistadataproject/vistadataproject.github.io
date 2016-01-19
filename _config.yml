@@ -1,12 +1,10 @@
 # Permalinks
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
-title:               vistadataproject.info
-tagline:             The data of VISTA
+title:               VISTA Data Project 
+tagline:             Master Data Management for VA VISTA
 url:                 http://vistadataproject.info
 paginate:            1
 baseurl:             ""
@@ -27,5 +25,8 @@ author:
 github:
   repo:              https://github.com/vistadataproject/vistadataproject.github.io
 
+markdown: kramdown
 kramdown:
   input: GFM
+
+gems: [jekyll-paginate]
