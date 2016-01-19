@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction
+author: rafael
 ---
 
 VISTA Data Project will 

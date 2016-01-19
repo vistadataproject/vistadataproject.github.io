@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behind the Schedule
-author: Conor Dowling
+author: conor
 categories:
 - Project Management
 ---
