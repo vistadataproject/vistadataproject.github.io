@@ -3,25 +3,14 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-subinfo">
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="xpost-date">{{ page.date | date_to_string }}</time>
+        <span class="post-author">{{ site.authors[page.author].name }}</span>
+    </div>
+  </header>
   {{ content }}
 </article>
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
+<!-- add pagination here -->

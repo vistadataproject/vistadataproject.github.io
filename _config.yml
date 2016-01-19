@@ -1,6 +1,6 @@
 # Permalinks
 #
-permalink:           pretty
+permalink:           /blog/:title
 
 # Setup
 title:               VISTA Data Project 
@@ -16,11 +16,6 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-# About/contact
-author:
-  name:              conordowling
-  email:             conor-dowling@caregraf.com
-
 # Custom vars
 github:
   repo:              https://github.com/vistadataproject/vistadataproject.github.io
@@ -30,13 +25,16 @@ kramdown:
   input: GFM
 
 gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "blog/page:num"
+excerpt_separator: "<!--more-->"
 
 authors:
   conor: 
-    display_name: Conor Dowling
+    name: Conor Dowling
     email: conor-dowling@caregraf.com
     role: Project Architect
   rafael:
-    display_name: Dr. Rafael Richards
+    name: Dr. Rafael Richards
     email: rafael.richards@va.gov 
     role: VA Project Director 

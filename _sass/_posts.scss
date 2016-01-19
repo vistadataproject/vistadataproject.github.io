@@ -20,13 +20,28 @@
 }
 
 // Meta data line below post title
+// CG
+/*
 .post-date {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
 }
+*/
 
+// CG
+.post-subinfo {
+  diplay:block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+// CG
+.post-author {
+  padding-left: 10px;
+}
 
 // Related posts
 .related {

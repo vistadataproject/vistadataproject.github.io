@@ -8,6 +8,8 @@ categories:
 
 Every interesting project integrates the old and borrowed with the new and speculative. The pitfall for schedulers is treating remakes and reuses as novelty while assuming that the novel is so well understood that dead-ends and misunderstandings will never happen. A practical schedule must push quickly for the obvious, recognize dependencies and leave plenty of time for the truly new. These principles lie behind the [VISTA Data Project's Schedule](https://github.com/vistadataproject/documents#deliverables-schedule).
 
+<!--more-->
+
 The Performance Work Statement (PWS) requires
 
 > a single comprehensive security-enabled read/write data model for all VA VISTA data, a model which must enable exchange between VA and DoD clinical information systems
