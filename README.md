@@ -19,5 +19,3 @@ To edit the Poole-based theme look at:
 * _layouts
 * _includes
 * _sass (style sheets)
-
-Note: using _robots.txt_, to tell search engines to ignore for now.
