@@ -1,4 +1,4 @@
-VISTA Data Project (VDP) github-hosted Web Site
+VISTA Data Project (VDP) github-hosted Web Site, hosted at __[http://vistadataproject.info](http://vistadataproject.info)__
 
 Configuration Notes
 =====================
