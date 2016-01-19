@@ -30,7 +30,7 @@ Fortunately, there's a lot of open source and VA work just waiting to be refined
   
   * Health-care Systems rarely exchange data directly. Data is first transformed into a standard model such as HL7's FHIR, an approach already taken in DoD projects and by the VA themselves in [eHMP](https://github.com/vistadataproject/MVDMmap/issues/1). 
 
-With reuse of existing artifacts, many deliverables can be made in the first quarter. Others like data exchange or patient-centric security that depend on basic _VDM_ and _MVDM_ implementations will come later.
+With reuse of existing artifacts, many deliverables can be made in the first quarter. Others like data exchange or patient-centric security depend on basic _VDM_ and _MVDM_ implementations and will come later.
 
 But enough of all this refining and integrating. The PWS's big novelty is _data write_, the ability to write data into VISTA with the same ease and based on the same model used for reading data. Up to now, changing VISTA data only happened through thousands of remote procedure calls (RPC) or menu options. In this project, we must correctly create and change data using create and update calls on the _MVDM_. 
 
