@@ -33,7 +33,7 @@ Fortunately, there's a lot of open source and VA work just waiting to be refined
 
 With reuse of existing artifacts, many deliverables can be made in the first quarter. Others like data exchange or patient-centric security depend on basic _VDM_ and _MVDM_ implementations and will come later.
 
-<p class="pull-left" data-pullquote="big novelty is data-write, the ability to write data into VISTA with the same ease and based on the same model used for reading data"></p>
+<p class="pull-left" data-pullquote="novelty is data-write, the ability to write data into VISTA with the same ease and based on the same model used for reading data"></p>
 
 But enough of refining and integrating. This project's big novelty is _data-write_, the ability to write data into VISTA with the same ease and based on the same model used for reading data. Up to now, changing VISTA data only happened through thousands of remote procedure calls (RPC) or menu options. In this project, we must correctly create and change data using create and update calls on the _MVDM_. 
 
