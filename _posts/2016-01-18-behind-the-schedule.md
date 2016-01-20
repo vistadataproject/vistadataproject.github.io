@@ -37,6 +37,6 @@ With reuse of existing artifacts, many deliverables can be made in the first qua
 
 But enough of refining and integrating. This project's big novelty is _data-write_, the ability to write data into VISTA with the same ease and based on the same model used for reading data. Up to now, changing VISTA data only happened through thousands of remote procedure calls (RPC) or menu options. In this project, we must correctly create and change data using create and update calls on the _MVDM_. 
 
-With no pre-existing support in _FMQL_ or the _VPR_, write-back will require all-new configurations and code as well analysis of side effects and dependencies. Inevitably, there will be surprises and work will go through the end of this project. 
+With no pre-existing support in _FMQL_ or the _VPR_, data-write will require all-new configurations and code as well analysis of side effects and dependencies. Inevitably, there will be surprises and work will go through the end of this project. 
 
-Cleaner data extraction and VISTA Javascript development, graphical presentation of models and yet more data exchange, all these must be delivered but the schedule reflects that the success of the Project will be measured by the effectiveness of MVDM's write-back support. 
+Cleaner data extraction and VISTA Javascript development, graphical presentation of models and yet more data exchange, all these must be delivered but the schedule reflects that the success of this project will be measured by the effectiveness of MVDM's support for writing data. 
