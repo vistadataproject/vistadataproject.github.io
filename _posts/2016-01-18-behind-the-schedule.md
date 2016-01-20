@@ -14,7 +14,7 @@ The Performance Work Statement (PWS) requires
 
 > a single comprehensive security-enabled read/write data model for all VA VISTA data, a model which must enable exchange between VA and DoD clinical information systems
 
-There needs to be a _Test VISTA_ system to enable straightforward development, use of Node.js support for Javascript in VISTA and infographics to showcase the model. For those into numbers, this project must make [27 technical deliverables](https://github.com/vistadataproject/documents#technical-deliverables) involving 8 meta data definitions, 18 pieces of software and 6 documents. This is quite a list for a small one year project!
+There needs to be a _Test VISTA_ system to enable straightforward development, use of Node.js support for Javascript in VISTA and infographics to showcase the model. For those into numbers, this project must make [27 technical deliverables](https://github.com/vistadataproject/documents#technical-deliverables) involving 8 meta data definitions, 18 pieces of software and 6 documents. This is quite a list for a small one year endeavor!
 
 <p data-pullquote="there's a lot of open source and VA work just waiting to be refined and integrated"></p>
 Fortunately, there's a lot of open source and VA work just waiting to be refined and integrated:
