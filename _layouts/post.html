@@ -7,6 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-subinfo">
         <time datetime="{{ page.date | date_to_xmlschema }}" class="xpost-date">{{ page.date | date_to_string }}</time>
+        &nbsp;&middot;&nbsp;
         <span class="post-author">{{ site.authors[page.author].name }}</span>
     </div>
   </header>
@@ -14,3 +15,15 @@ layout: default
 </article>
 
 <!-- add pagination here -->
+<div class="pagination">
+  {% if page.previous.url %}
+    <a class="pagination-item" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% else %}
+    <span class="pagination-item">&nbsp;</span>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="pagination-item" href="{{page.next.url}}">{{page.next.title}}) &raquo;</a>
+  {% else %}
+    <span class="pagination-item">&nbsp;</span>
+  {% endif %}
+</div>
