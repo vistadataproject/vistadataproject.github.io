@@ -19,7 +19,7 @@ And Node.js programmers are quite the bunch, one that according to the [Node.js 
 
 But there's more to this story for VISTA. Take a look inside some sample data in that _cache.node_ manual ...
 
-```text
+```code
 
  {
    global: "Customer",
