@@ -3,7 +3,7 @@
 // Styles for managing the structural hierarchy of the site.
 
 .container {
-  max-width: 58rem; /* CG: was originally 38rem */
+  max-width: 1200px; /* 38rem */
   padding-left:  1.5rem;
   padding-right: 1.5rem;
   margin-left:  auto;
@@ -11,5 +11,13 @@
 }
 
 footer {
-  margin-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+    color: #7a7a7a;
+    font-size: 0.75rem;
+    border-top: 1px solid #eee;
+    text-align: center;
 }

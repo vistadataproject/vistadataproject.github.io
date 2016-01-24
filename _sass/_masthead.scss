@@ -1,16 +1,58 @@
 // Masthead
 //
-// Super small header above the content for site name and short description.
 
 .masthead {
-  width: 100%; // CG
-  margin-left: 33%; // CG
-  padding-top:    1rem;
+  width: auto;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  text-align: left;
+  background-color: #268bd2;
+  overflow: auto;
 }
 
-.masthead-title {
+.masthead a {
+  color: rgba(255,255,255,0.5);
+}
+
+.masthead .logo {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  float: left;
+  font-weight: bold;
+}
+
+.masthead .tagline {
+  display: inline-block;
+  color: white;
+  opacity: 0.8;
+  margin-left: 2rem;
+  padding-top: 0.4rem;
+}
+
+.masthead nav {
+    float: right;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.masthead nav a {
+    display: inline-block;
+    // color: rgba(255,255,255,0.5);
+    opacity: 0.8;
+}
+
+.masthead nav a:hover {
+    color: white;
+    opacity: 1.0;
+}
+
+.masthead nav a:not(:last-child) {
+    margin-right: 1.25rem;
+}
+
+.masthead title {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;

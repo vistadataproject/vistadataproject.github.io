@@ -78,7 +78,8 @@
 // CG: pullquotes from https://andytaylor.me/2012/12/03/pull-quotes/ 
 p[data-pullquote] {
   display: block;
-  color: #FF8C00;
+  font-weight: 700;
+  color: black;
 }
 
 p[data-pullquote]:before {

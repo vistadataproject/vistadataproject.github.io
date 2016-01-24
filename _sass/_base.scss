@@ -39,7 +39,8 @@ a {
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none; /* CG change */
+    opacity: 0.7;
   }
 
   strong {
