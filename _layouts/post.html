@@ -8,7 +8,7 @@ layout: default
     <div class="post-subinfo">
         <time datetime="{{ page.date | date_to_xmlschema }}" class="xpost-date">{{ page.date | date_to_string }}</time>
         &nbsp;&middot;&nbsp;
-        <span class="post-author">{{ site.authors[page.author].name }}</span>
+        <a href="https://www.linkedin.com/in/{{ site.authors[page.author].linkedin }}" class="post-author">{{ site.authors[page.author].name }}</a>
     </div>
   </header>
   {{ content }}
