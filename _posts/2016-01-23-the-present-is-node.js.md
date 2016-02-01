@@ -15,7 +15,7 @@ Now it so happens that Intersystems Caché is a [MUMPS](https://en.wikipedia.org
 
 <!--more-->
 
-And Node.js programmers are quite the bunch, one that according to the [Node.js foundation](https://nodejs.org/en/) participate in <q>largest ecosystem of open source libraries in the world</q>. Of course Intersystems wants these folks and they're not alone - seemingly the _Oracle Database Node.js Driver_ <q>demonstrates the power and flexibility of Node.js</q>!
+And Node.js programmers are quite the bunch. According to the [Node.js foundation](https://nodejs.org/en/), this happy band participates in the <q>largest ecosystem of open source libraries in the world</q>. Of course Intersystems wants them and they're not alone - seemingly the _Oracle Database Node.js Driver_ <q>demonstrates the power and flexibility of Node.js</q>!
 
 But there's more to this story for VISTA. Take a look inside some sample data in that _cache.node_ manual ...
 
