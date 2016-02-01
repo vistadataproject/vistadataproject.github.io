@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="css/circlePack.css">
+</head>
+<body>
+
+<!--
+		<select id="values">
+          <option value="size">By Number of Nodes</option>
+          <option value="file">By Number of Properties</option>
+        </select>
+-->		
+<div id="divSvg"></div>
+<script src="ljs/d3.v3.min.js"></script>
+<script src="ljs/jquery.min.js"></script>
+<script src="js/circlePack.js"></script>
+<script>
+
+
+$(function() {		  
+	IFG.displayCirclePack({
+		"divId": "divSvg",
+		"jsonPath": "exjson/treemapPIKS.json",
+		"margin": 10,
+		"outerDiameter": 900,
+		"colors": ["#FFFFFF", "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"], //colors to show on the circles
+		"nameTitle" : "name", //the json key for the name of the circle
+		"valueTitle" : "size" //the json key for the value of the circle		
+		}
+	);
+});
+</script>
+
+</body>
+</html>

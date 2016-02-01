@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+
+</style>
+	<link rel="stylesheet" type="text/css" href="css/d3tip.css">
+	<link rel="stylesheet" type="text/css" href="css/barchart.css">
+</head>
+<body>
+<h1>Bar Chart of CHCS File Properties</h1>
+ <br/>
+
+<div id="divSvg">
+</div>
+<script src="ljs/d3.v3.min.js"></script>
+<script src="ljs/jquery.min.js"></script>
+<script src="ljs/d3.tip.v0.6.3.js"></script>
+<script src="js/barchart.js"></script>
+<script>
+
+$(function() {
+	IFG.displayBarChart({
+		jsonPath: "exjson/patient.json",
+		divId: "divSvg",
+		margin: {top: 40, right: 10, bottom: 50, left: 100},
+		width: 2000,
+		height: 600,
+		nameTitle: "name",
+		valueTitle: "properties",
+		XLabelTitle: "file"
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.barchartDual .axis path,
+.barchartDual .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.barchartDual .bar2 {
+  fill: red;
+}
+
+.barchartDual .bar {
+	fill: orange;
+}
+
+.barchartDual .bar2:hover, .barchartDual .bar:hover {
+  fill: lightgreen ;
+}
+
+.barchartDual .x.axis path {
+  /*display: none;*/
+}
+
+.barchartDual .x.axis text {
+	/*display: none; */
+}

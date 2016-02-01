@@ -1,0 +1,14 @@
+.stackedBar .axis path,
+.stackedBar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.stackedBar .bar {
+  fill: steelblue;
+}
+
+.stackedBar .x.axis path {
+  display: none;
+}

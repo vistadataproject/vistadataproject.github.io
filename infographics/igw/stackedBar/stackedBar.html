@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>;
+<meta charset="utf-8">
+<style>
+body {
+  font: 10px sans-serif;
+}
+
+</style>
+<head>
+<link rel="stylesheet" type="text/css" href="css/stackedBar.css">
+<link rel="stylesheet" type="text/css" href="css/d3tip.css">
+</head>
+<body>
+
+<div id="divStackedBar"></div>
+<script src="ljs/d3.v3.min.js"></script>
+<script src="ljs/jquery.min.js"></script>
+<script src="js/stackedBar.js"></script>
+<script src="ljs/d3.tip.v0.6.3.js"></script>
+<script>
+$(function() {
+	IFG.displayStackedBar({
+		"margin" : {top: 20, right: 20, bottom: 130, left: 40},
+		"width" : 9500,
+		"height" : 500,
+		"colors" : ["#d0743c", "#6b486b"], //color of stacked bar
+		"divId" : "divStackedBar", //div to show the chart
+		"jsonPath" : "exjson/allNodes.json",// json path
+		"categoryTitle" : "fileIndex", //x axis category
+		"nameTitle" : "name", //name to be displayed when mouse over
+		"valueTitles" : ["propertiesDataType", "propertiesObjectType"], //values to show in each bar,
+		"valueTitlesDisplay" : ["properties", "links"], //title to display on the bar tip
+		"YLegendText" : "Property Count", //this is the text displayed on the Y Axis
+		"showXAxis" : false //show X Axis
+	});
+
+});
+</script>
+
+</body>
+</html>

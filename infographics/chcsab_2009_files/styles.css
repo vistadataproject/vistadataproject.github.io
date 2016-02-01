@@ -1,0 +1,219 @@
+.brand {
+    font-family: 'Arvo';
+}
+
+a.plain:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:active {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a.plain:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.status-bar {
+    height: 60px;
+}
+
+.about-icon {
+    float: left;
+    margin-right: 12px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    color: #999;
+    border-top: solid 1px #ddd;
+}
+
+.footer > p {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+h5 {
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+
+.thumbnail {
+    min-width: 260px;
+}
+
+.thumbnails li {
+    margin-left: 0px !important;
+    margin-right: 20px !important;
+}
+
+legend {
+    font-family: 'Georgia, serif';
+}
+
+.home-hero {
+    font-family: "Georgia, serif";
+    font-size: 36;
+    color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -19px;
+    padding: 180px;
+    padding-top: 30px;
+    text-align : center;
+	padding-bottom: 20px;
+}
+
+.stats-box {
+    border: 1px solid gray;
+    padding: 20px;
+    cursor: pointer;
+    width: 170px;
+    height: 140px;
+    overflow-y: auto;
+}
+
+.box-record {
+    border: 1px solid gray;
+    padding: 20px;
+    cursor: pointer;  
+}
+
+.stats-box:hover, .box-record:hover, .prevPage:hover, .nextPage:hover, .optionItem:hover {
+    border: 1px solid #1C90F2;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+
+
+.prevPage, .nextPage, .optionItem {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-right: 10px;
+    width: 120px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.optionItem {
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear:both;
+}
+
+hr {
+    border-bottom: 1px solid gray;
+}
+
+.page {
+    float: left;
+    padding: 10px;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.labelresult {
+    padding-right: 15px; 
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+    float: left;
+}
+
+@media only screen and ( max-width : 1000px ) {
+    .home-hero {
+        padding:100px;
+		padding-bottom:10px
+    }
+}
+
+@media only screen and ( max-width : 480px ) {
+    .home-hero {
+        padding:32px;
+		padding-bottom:10px
+    }
+}
+
+
+.home-hero .btn {
+    font-family: "arvo";
+    width: 160px;
+    margin: 10px 4px;
+}
+
+/* Social proof buttons from GitHub & Twitter */
+.bs-docs-social {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Quick links on Home */
+.bs-docs-social-buttons {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.bs-docs-social-buttons li {
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1;
+    *display: inline;
+    *zoom: 1;
+}
+
+.well h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.home-dataset table {
+    border: 1px solid grey;
+	margin: auto;
+}
+
+.home-dataset td, .home-dataset th{
+    border: 1px solid grey;
+	margin: auto;
+	padding: 8px;
+}
+
+td.hidden-row {
+    padding: 0;
+}
+
+table.table.table-nested {
+    margin-bottom: 0px;
+}
+
+a.pointer-to-class:hover {
+    cursor: pointer;
+}
+
+.schema-clinical-type-label {
+    color: orangered;
+}

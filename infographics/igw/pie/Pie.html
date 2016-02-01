@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+</style>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/pieChart.css">
+</head>
+<body>
+<h1>Pie Charts </h1>
+<h2>Data Type Count </h2>
+<div id="divSvg" class="pie-chart">
+
+</div>
+<br><br>
+
+<script src="ljs/d3.v3.min.js"></script>
+<script src="ljs/jquery.min.js"></script>
+<script src="js/pie.js"></script>
+<script>
+$(function() {
+	IFG.displayPie({
+		divId: 'divSvg', //to display the pie
+		json: '../../json/linkLiteral.json', //path to json file
+		categoryTitle: 'DATATYPE', //the category name of the json data
+		valueTitle: 'COUNT',//the value name of the json data
+		width: 400,
+		height: 400,
+		innerCircleRadius: 50
+		});
+		
+});
+</script>
+</body>
+</html>

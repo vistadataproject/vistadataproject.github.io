@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="ljs/d3.v3.min.js"></script>
+	<script src="ljs/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/tree.css">
+  </head>
+  <body>
+    <div id="body">
+      <div id="footer">
+       <h2> CHCS File Tree</h2>
+		Get graph of top files pointing  
+		<br/>
+        <div class="hint">click or option-click to expand or collapse</div>
+		<div id="divSvg">
+		
+		</div>
+      </div>
+    </div>
+	<script type="text/javascript" src="js/tree.js"> </script>
+    <script type="text/javascript">
+		$(function() {	 
+			 IFG.displayTree({
+				margin: [20, 20, 20, 120],
+				width: 1780,
+				height: 1600,
+				jsonPath: "exjson/treeTo2.json",
+				topDown: false, //false - left to right, true - top down
+				divId: "divSvg"
+			});
+			 
+		});
+    </script>
+  </body>
+</html>

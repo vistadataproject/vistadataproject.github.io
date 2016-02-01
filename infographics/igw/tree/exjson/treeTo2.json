@@ -1,0 +1,162 @@
+{"name": "Patient (2)", "size": 1032150, "properties": 234, "children":[ 
+{"name": "Selection Criteria (1.401)", "size": 5, "properties": 51}, 
+{"name": "Patient Appointment (44.2)", "size": 9959136, "properties": 119, "children":[ 
+{"name": "Requested Records (190.1)", "size": 56007, "properties": 17}, 
+{"name": "Appointment Audit Trail (8501)", "size": 15250523, "properties": 9}, 
+{"name": "Gs Eod Compliance (50025.01)", "size": 448225, "properties": 2}, 
+{"name": "Gt Eod Compliance (51135.01)", "size": 498972, "properties": 2}, 
+{"name": "Kg Adc Data (100501)", "size": 6517065, "properties": 66}, 
+{"name": "Er Follow-Up (4732001)", "size": 0, "properties": 7}
+]}, 
+{"name": "Apv Appointment (44.3)", "size": 12415, "properties": 20}, 
+{"name": "Non Booked Appointments (44.8)", "size": 96354, "properties": 13}, 
+{"name": "Prescription (52)", "size": 8166799, "properties": 73, "children":[ 
+{"name": "Pdts Return Message File (8216.6)", "size": 866, "properties": 10}
+]}, 
+{"name": "Pharmacy Patient (55)", "size": 762869, "properties": 17}, 
+{"name": "Drug Warning Log (55.5)", "size": 2081233, "properties": 54}, 
+{"name": "Pharmacy Patient Safety Parameters (58.01)", "size": 18, "properties": 14}, 
+{"name": "Pharmacy Order Routines Log File (59.7)", "size": 223328, "properties": 6}, 
+{"name": "Quality Control (62.3)", "size": 493, "properties": 13}, 
+{"name": "Lab Result (63)", "size": 820611, "properties": 20}, 
+{"name": "Accession (66)", "size": 5515077, "properties": 38, "children":[ 
+{"name": "Lab Workload Exceptions (8717.1)", "size": 60398, "properties": 10}, 
+{"name": "Lab Rejected Results (8719.6)", "size": 6, "properties": 2}, 
+{"name": "Lab Auto Instrument Error (8735.9)", "size": 0, "properties": 8}, 
+{"name": "Pli Central Info (8738)", "size": 7022261, "properties": 7}
+]}, 
+{"name": "Radiology Exam (70.5)", "size": 804512, "properties": 91, "children":[ 
+{"name": "Rad Workload Exception (8610)", "size": 5334, "properties": 10}
+]}, 
+{"name": "Radiology Reports (74)", "size": 669460, "properties": 29}, 
+{"name": "Report Distribution (74.4)", "size": 11166, "properties": 11}, 
+{"name": "Radiology Schedule Function (77.1)", "size": 7466, "properties": 16}, 
+{"name": "Order (101)", "size": 16722120, "properties": 260, "children":[ 
+{"name": "Order Que (101.4)", "size": 0, "properties": 11}, 
+{"name": "Future Batch (8215)", "size": 0, "properties": 19}
+]}, 
+{"name": "Clinical Site Parameters (101.1)", "size": 1, "properties": 81, "children":[ 
+{"name": "Tcpr Site Parameter (52004)", "size": 1, "properties": 12}
+]}, 
+{"name": "Order Batch (101.3)", "size": 4, "properties": 10}, 
+{"name": "Or Generic Prompt (102.9)", "size": 59, "properties": 11}, 
+{"name": "Dmhrs Acuity (105.9)", "size": 0, "properties": 5}, 
+{"name": "Order Task (107)", "size": 17333083, "properties": 34}, 
+{"name": "Order Entry Pages (109)", "size": 954598, "properties": 21}, 
+{"name": "Order Entry Scratch Pad (109.2)", "size": 85, "properties": 3}, 
+{"name": "Order Entry Episode Tracking (109.3)", "size": 880129, "properties": 4}, 
+{"name": "Records (190)", "size": 1807824, "properties": 48, "children":[ 
+{"name": "Missing Records (190.2)", "size": 1441, "properties": 12}, 
+{"name": "Record Movement History (190.3)", "size": 8175386, "properties": 15}
+]}, 
+{"name": "Encounter (311)", "size": 317504, "properties": 120}, 
+{"name": "Scratch Patient (3007)", "size": 0, "properties": 10}, 
+{"name": "Interface Criteria (4001.1)", "size": 15, "properties": 78}, 
+{"name": "Pending Adt Order (8010)", "size": 9, "properties": 4}, 
+{"name": "Adt Correction (8011)", "size": 0, "properties": 7}, 
+{"name": "Potential Duplicate Patient (8016)", "size": 15471, "properties": 2}, 
+{"name": "Cce Interface Statistics And Errors (8026)", "size": 0, "properties": 8}, 
+{"name": "Sit/Ohi Error Log (8031)", "size": 418, "properties": 13}, 
+{"name": "Sit/Ohi Collection (8032)", "size": 1322, "properties": 11}, 
+{"name": "Deers Exceptions (8043)", "size": 0, "properties": 16}, 
+{"name": "Deers Mailer (8044)", "size": 0, "properties": 15}, 
+{"name": "Cashier Account (8050)", "size": 44137, "properties": 90, "children":[ 
+{"name": "Dd7 Inpatient Sort File (8020)", "size": 0, "properties": 8}, 
+{"name": "Dd7A Outpatient Sort File (8021)", "size": 0, "properties": 5}, 
+{"name": "Sf1080 Sort File (8022)", "size": 0, "properties": 7}, 
+{"name": "Msa Local Dd7 File (8023)", "size": 0, "properties": 8}, 
+{"name": "Army Enlisted Sort File (8024)", "size": 0, "properties": 8}, 
+{"name": "Transfer File (8027)", "size": 3038, "properties": 15}, 
+{"name": "Batch Invoice & Receipts (8029)", "size": 10, "properties": 3}, 
+{"name": "Dd139 Reprint (8071)", "size": 14297, "properties": 6}, 
+{"name": "Sf1049 Reprint (8072)", "size": 451, "properties": 20}, 
+{"name": "Dd1131 Reprint (8073)", "size": 5, "properties": 12}
+]}, 
+{"name": "Msa G&L Corrections (8052)", "size": 51918, "properties": 13}, 
+{"name": "Co-Insurance Claim (8055)", "size": 1406, "properties": 37}, 
+{"name": "Itemized Billing Suspense (8058)", "size": 200, "properties": 31}, 
+{"name": "Newly Billable Encounter Holding File (8058.9)", "size": 1359, "properties": 9}, 
+{"name": "Dd7A Holding File (8068)", "size": 2267, "properties": 16}, 
+{"name": "Other Health Insurance (Ohi) (8074)", "size": 3723, "properties": 3}, 
+{"name": "Insured Party (8083)", "size": 0, "properties": 3}, 
+{"name": "Policy (8086)", "size": 0, "properties": 36}, 
+{"name": "Pharmacy Workload Exceptions (8208.5)", "size": 39, "properties": 17}, 
+{"name": "Pdts Collection File (8216)", "size": 51494, "properties": 50}, 
+{"name": "Pdts Profile Collection File (8217)", "size": 4, "properties": 44}, 
+{"name": "Va Cmop Batch File (8220)", "size": 0, "properties": 33}, 
+{"name": "Translux Callback Entries (8222.4)", "size": 0, "properties": 7}, 
+{"name": "Tmop Status File (8223)", "size": 0, "properties": 26}, 
+{"name": "Or Telephone Consult (8270)", "size": 4282, "properties": 20}, 
+{"name": "Review New Results (8273)", "size": 24170, "properties": 13}, 
+{"name": "Nursing Result (8300)", "size": 615637, "properties": 14}, 
+{"name": "Record Init Scratch (8375.1)", "size": 0, "properties": 6}, 
+{"name": "Cbs Dental Call List (8508)", "size": 0, "properties": 16}, 
+{"name": "Deers Patient Inquiry Collection (8522)", "size": 0, "properties": 22}, 
+{"name": "Deers Patient Inquiry Response (8523)", "size": 0, "properties": 46}, 
+{"name": "Deers Patient Inquiry Partial Response (8528)", "size": 0, "properties": 4}, 
+{"name": "Deers Patient Inquiry Family Response (8529)", "size": 0, "properties": 4}, 
+{"name": "Ndi Eligibility (8530)", "size": 19, "properties": 44}, 
+{"name": "Audit Trail Multiple Entitlement Event (8533)", "size": 0, "properties": 2}, 
+{"name": "Ndi Error Log (8534)", "size": 0, "properties": 5}, 
+{"name": "Ndi Query And Response (8536)", "size": 265, "properties": 24}, 
+{"name": "Statement Of Eligibility (8539)", "size": 0, "properties": 8}, 
+{"name": "Ned Patient (8542)", "size": 102651, "properties": 8, "children":[ 
+{"name": "Ned Batch Pcm Reassignment Request (8549)", "size": 0, "properties": 16}
+]}, 
+{"name": "Mcp Referral (8554)", "size": 2378369, "properties": 63}, 
+{"name": "Mcp Enrollment Candidates (8558)", "size": 0, "properties": 21}, 
+{"name": "Nas Data (8580)", "size": 0, "properties": 25}, 
+{"name": "Rad Workload Data (8605)", "size": 161084, "properties": 12}, 
+{"name": "Cpt Workload Data (8717)", "size": 2482253, "properties": 20}, 
+{"name": "Lab Unprocessed Results (8719.8)", "size": 39, "properties": 4}, 
+{"name": "Lab Queued Results (8750)", "size": 4, "properties": 2}, 
+{"name": "Clinical History (8810)", "size": 581342, "properties": 2}, 
+{"name": "Clinical Event Tracking (8810.2)", "size": 3, "properties": 6}, 
+{"name": "Medication Profile (8810.3)", "size": 6969452, "properties": 9, "children":[ 
+{"name": "Orderset Entity (103.1)", "size": 6722, "properties": 157}
+]}, 
+{"name": "Qaf Event Log (8890.1)", "size": 0, "properties": 80}, 
+{"name": "Deers Transmission Queue (8908)", "size": 0, "properties": 9}, 
+{"name": "Deers Elig/Reg Responses (8909)", "size": 0, "properties": 88}, 
+{"name": "Deers Mcp Enrollment Responses (8909.1)", "size": 0, "properties": 17}, 
+{"name": "Deers Address/Log Responses (8909.3)", "size": 0, "properties": 15}, 
+{"name": "Deers Nas Responses (8909.4)", "size": 0, "properties": 47}, 
+{"name": "Bd/Urs Responses (8909.5)", "size": 0, "properties": 11}, 
+{"name": "Patient Archive History (8924)", "size": 3, "properties": 9}, 
+{"name": "Archive Episode (8928)", "size": 0, "properties": 3}, 
+{"name": "Patients Of Interest (30210)", "size": 0, "properties": 5}, 
+{"name": "Gtgiat Support Center Call (50077)", "size": 14, "properties": 37}, 
+{"name": "Gt Nt Audit Log (51107.1001)", "size": 2, "properties": 4}, 
+{"name": "Gt Nt Clinical Note File (51153)", "size": 0, "properties": 12}, 
+{"name": "Gt Nt Consult Note (51153.2)", "size": 0, "properties": 12}, 
+{"name": "Gt Nt Consult Note Temp (51153.2001)", "size": 0, "properties": 6}, 
+{"name": "Gt Nt Discharge Note (51153.4)", "size": 0, "properties": 14}, 
+{"name": "Gt Nt Discharge Note Temp (51153.4001)", "size": 0, "properties": 6}, 
+{"name": "Gt Nt Other Note (51153.6)", "size": 1, "properties": 12}, 
+{"name": "Gp Discharge Summary (52000)", "size": 0, "properties": 52}, 
+{"name": "Gp Consult Result (52003)", "size": 272826, "properties": 21}, 
+{"name": "Patient Problem (52005)", "size": 37, "properties": 18, "children":[ 
+{"name": "Patient Problem Audit (52006)", "size": 3, "properties": 8}
+]}, 
+{"name": "Immunization Events (52008)", "size": 38, "properties": 38}, 
+{"name": "Mobile Summary (52011)", "size": 7, "properties": 4}, 
+{"name": "Gp Progress Note File (52013)", "size": 627, "properties": 10}, 
+{"name": "Gp Outgoing Message (52014.1)", "size": 0, "properties": 12, "children":[ 
+{"name": "Tcpr Log (52017)", "size": 0, "properties": 4}
+]}, 
+{"name": "Marc Card Data (52111)", "size": 0, "properties": 123, "children":[ 
+{"name": "Marc Encounter Data (52118)", "size": 0, "properties": 57}
+]}, 
+{"name": "Gp Mini-Reg Error (52115)", "size": 0, "properties": 92}, 
+{"name": "Marc Read Holding (52121)", "size": 0, "properties": 123}, 
+{"name": "Taps Allergy (53003)", "size": 29, "properties": 2}, 
+{"name": "Taps Medication (53005)", "size": 1, "properties": 2}, 
+{"name": "Kg Patient Diagnosis (100417)", "size": 5288619, "properties": 18, "children":[ 
+{"name": "Kg Patient Diagnosis Audit (100505)", "size": 577, "properties": 8}
+]}, 
+{"name": "Kg Clinical Note File (100419)", "size": 3333, "properties": 10}, 
+{"name": "Kg Discharge Summary (100423)", "size": 0, "properties": 52}, 
+{"name": "Kg Or Sf509 (100430.2)", "size": 0, "properties": 9}, 
+{"name": "Kg Or Sf600 (100430.4)", "size": 68, "properties": 46}, 
+{"name": "Kg Op10 Log (100504.1001)", "size": 2, "properties": 4}
+]}

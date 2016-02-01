@@ -1,0 +1,13 @@
+.treemap-chart {
+	  display: block;
+	  margin: auto;
+	  margin-top: 40px;
+	}
+
+	.treemap-chart text {
+	  font-size: 11px;
+	}
+
+	.treemap-chart rect {
+	  fill: none;
+	}

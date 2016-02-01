@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://10.255.241.50:8080/#infographics -->
+<html lang="en" class="wf-andika-n4-active wf-active wf-arvo-i4-active wf-arvo-i7-active wf-arvo-n4-active wf-arvo-n7-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>LDR Dataset Repository</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./chcsabLinkLiteral_files/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="./chcsabLinkLiteral_files/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/styles.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/pieChart.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/barchart.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/barchart(1).css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/circleChart.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/circlePack.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/directedGraph.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/stackedBar.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/tree.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/treeMap.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/d3tip.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/c3.min.css" rel="stylesheet">
+    <link href="./chcsabLinkLiteral_files/font-awesome.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="./chcsabLinkLiteral_files/l" media="all"><script src="./chcsabLinkLiteral_files/andika.js"></script>
+    <link rel="stylesheet" href="./chcsabLinkLiteral_files/l(1)" media="all"><script src="./chcsabLinkLiteral_files/arvo.js"></script>
+
+	<script type="text/javascript" src="./chcsabLinkLiteral_files/socket.io.js"></script>
+    <script>
+// UNCOMMENT THIS CODE IF YOU USE THE "serverwithanalytics" SERVER
+//        var socket = io.connect();
+//        socket.on('connect', function () {
+//            socket.send(window.location.href);
+//        });
+//        window.onhashchange = function () {
+//            socket.send(window.location.href);
+//        }
+    </script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./chcsabLinkLiteral_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="router" src="./chcsabLinkLiteral_files/router.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./chcsabLinkLiteral_files/jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="d3" src="./chcsabLinkLiteral_files/d3.v3.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="./chcsabLinkLiteral_files/underscore-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="./chcsabLinkLiteral_files/backbone-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/home/HomeView" src="./chcsabLinkLiteral_files/HomeView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/header/HeaderView" src="./chcsabLinkLiteral_files/HeaderView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/about/AboutView" src="./chcsabLinkLiteral_files/AboutView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/stats/StatsListView" src="./chcsabLinkLiteral_files/StatsListView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/charts/ChartsView" src="./chcsabLinkLiteral_files/ChartsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/charts/InfographicsView" src="./chcsabLinkLiteral_files/InfographicsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/collection/CollectionRecordsView" src="./chcsabLinkLiteral_files/CollectionRecordsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/collection/OneRecordView" src="./chcsabLinkLiteral_files/OneRecordView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util" src="./chcsabLinkLiteral_files/util.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/pgraf/PatientGraphView" src="./chcsabLinkLiteral_files/PatientGraphView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/rest/RESTClientView" src="./chcsabLinkLiteral_files/RESTClientView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/schema/SchemaView" src="./chcsabLinkLiteral_files/SchemaView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/schema/SchemaClinicalView" src="./chcsabLinkLiteral_files/SchemaClinicalView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./chcsabLinkLiteral_files/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/stats/StatsListItemView" src="./chcsabLinkLiteral_files/StatsListItemView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./chcsabLinkLiteral_files/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bardual" src="./chcsabLinkLiteral_files/barchart-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="piechart" src="./chcsabLinkLiteral_files/pie-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="stackedbar" src="./chcsabLinkLiteral_files/stackedBar-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="circlepack" src="./chcsabLinkLiteral_files/circlePack-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="circlechart" src="./chcsabLinkLiteral_files/circleChart-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="directedgraph" src="./chcsabLinkLiteral_files/directedGraph-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tree" src="./chcsabLinkLiteral_files/tree-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="treemap" src="./chcsabLinkLiteral_files/treeMap-amd.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="views/collection/CollectionRecordsItemView" src="./chcsabLinkLiteral_files/CollectionRecordsItemView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="prettyprint" src="./chcsabLinkLiteral_files/prettyprint.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="barchart" src="./chcsabLinkLiteral_files/barchart-amd(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="c3" src="./chcsabLinkLiteral_files/c3.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="d3tip" src="./chcsabLinkLiteral_files/d3.tip.v0.6.3-amd.js"></script></head>
+
+<body>
+
+<div class="header"><div><div class="navbar navbar-inverse navbar-fixed-top" style="z-index: 10;">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="http://10.255.241.50:8080/#">LDR</a>
+
+            <div class="nav-collapse collapse">
+
+                <ul class="nav">
+                    <li class="collection-menu"><a href="http://10.255.241.50:8080/#record?dataset=chcs-1">Browse Types</a></li>
+                    <li class="pgraf-menu"><a href="http://10.255.241.50:8080/#pgraf">Patient Group</a></li>
+                    <li class="ig-menu active"><a href="./chcsabLinkLiteral_files/chcsabLinkLiteral.html">Info Graphics</a></li>   
+                    <li class="rest-menu"><a href="http://10.255.241.50:8080/#rest">REST</a></li>
+                    <li class="dropdown">
+                        <a href="http://10.255.241.50:8080/#" class="dropdown-toggle" data-toggle="dropdown">Schema <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="clinical-menu"><a href="http://10.255.241.50:8080/#clinical">Clinical</a></li>
+                            <li class="schema-menu"><a href="http://10.255.241.50:8080/#schema">All</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav pull-right">
+                    <li class="about-menu"><a href="http://10.255.241.50:8080/#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="http://10.255.241.50:8080/#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://documentcloud.github.com/backbone/" target="_blank">Backbone.js</a></li>
+                            <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></li>
+                            <li><a href="http://nodejs.org/" target="_blank">Node.js</a></li>
+                            <li><a href="http://expressjs.com/mongodb" target="_blank">Express</a></li>
+                            <li><a href="http://requirejs.org/" target="_blank">Require.js</a></li>
+                            <li><a href="http://www.mongodb.org/" target="_blank">MongoDB</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">This App</li>
+                            <li><a href="http://10.255.241.50:8080/#" target="_blank">GitHub Repository</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div></div></div>
+
+<div class="container">
+
+    <div class="row-fluid">
+        <div id="content" class="span12"><div><h1>Info Graphics</h1>
+    <br>
+Dataset:
+<select id="dataset"><option class="datasetOption" value="CHCS-1">CHCS-1</option><option class="datasetOption" value="CHCS-AB">CHCS-AB</option><option class="datasetOption" value="CHCSNC">CHCSNC</option><option class="datasetOption" value="TC2TAPS">TC2TAPS</option></select>
+
+Chart:
+<select id="chart"><option value="providerCreation_2007Prescription">A Year of Prescription  2007 Creation - By Prescription</option><option value="providerCreation_2007">A Year of Prescription  2007 Creation - By Provider</option><option value="providerCreation_2008Prescription">A Year of Prescription  2008 Creation - By Prescription</option><option value="providerCreation_2008">A Year of Prescription  2008 Creation - By Provider</option><option value="providerCreation_2009Prescription">A Year of Prescription  2009 Creation - By Prescription</option><option value="providerCreation_2009">A Year of Prescription  2009 Creation - By Provider</option><option value="chcsUsers">CHCS Users</option><option value="creation_2007">chcs-AB 2007 Creation</option><option value="creation_2008">chcs-AB 2008 Creation</option><option value="creation_2009">chcs-AB 2009 Creation</option><option value="gatheringClass">Classes Gathering Classes</option><option value="classesOfChcsUsers">Classes of CHCS Users</option><option value="how_data_populated">How Data Model Populated</option><option value="treeLabResult">Lab Result Classes in Hierarchies</option><option value="linkVsLiteral">Link vs Literal</option><option value="literalTypes">Literal Types</option><option value="treeOrder">Order Classes in Hierarchies</option><option value="patientOther">Patient vs Other Data</option><option value="providerPersonnel">Personnel</option><option value="treePrescription">Prescription Classes in Hierarchies</option><option value="treeProvider">Provider Classes in Hierarchies</option></select>
+
+<div id="chartPopulated"><div class="loadingLabel"></div><svg width="400" height="400" class="pie-chart"><g transform="translate(200,200)"><g class="arc"><path d="M-181.66167091373114,-55.66899784288601A190,190 0 0,1 -3.490243377569956e-14,-190L-9.184850993605149e-15,-50A50,50 0 0,0 -47.80570287203451,-14.649736274443686Z" style="fill: rgb(31, 119, 180);"><title>Link 3,062
+20.27%</title></path><text transform="translate(-71.34730532038411,-96.4860716555498)" dy="0em" dx="-1em" style="text-anchor: middle; fill: black;">Link 3,062</text><text transform="translate(-71.34730532038411,-96.4860716555498)" dy="1.5em" dx="-0.5em" style="text-anchor: middle; fill: white;">(20.27%)</text></g><g class="arc"><path d="M1.1634144591899855e-14,-190A190,190 0 1,1 -181.66167091373114,-55.66899784288601L-47.80570287203451,-14.649736274443686A50,50 0 1,0 3.061616997868383e-15,-50Z" style="fill: rgb(174, 199, 232);"><title>Literal 12,046
+79.73%</title></path><text transform="translate(71.3473053203841,96.48607165554981)" dy="0em" dx="-1em" style="text-anchor: middle; fill: black;">Literal 12,046</text><text transform="translate(71.3473053203841,96.48607165554981)" dy="1.5em" dx="-0.5em" style="text-anchor: middle; fill: white;">(79.73%)</text></g></g><g transform="translate(200,200)"><text class="label" dy="-10" text-anchor="middle">TOTAL</text><text class="total" dy="13" text-anchor="middle">15,108</text></g></svg></div>
+</div></div>
+    </div>
+
+    <footer class="footer">
+        <p class="pull-right"><a href="http://10.255.241.50:8080/#">Back Home</a></p>
+        <p>Legacy Dataset Repository (LDR), an application using <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>,
+        <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
+        <a href="http://nodejs.org/">Node.js</a>,
+        <a href="http://expressjs.com/">Express</a>,
+        <a href="http://requirejs.org/">Require.js</a>,
+        and <a href="http://www.mongodb.org/">MongoDB</a> by
+        Hokukahu LLC.<br>
+        </p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script data-main="js/main" src="./chcsabLinkLiteral_files/require.js"></script>
+
+
+
+
+<iframe id="rdbIndicator" width="100%" height="270" border="0" src="./chcsabLinkLiteral_files/indicator.html" style="display: none; border: 0; position: fixed; left: 0; top: 0; z-index: 2147483647"></iframe><div class="d3-tip" style="position: absolute; opacity: 0;"></div><div class="d3-tip" style="position: absolute; opacity: 0;"></div><div class="d3-tip" style="position: absolute; opacity: 0;"></div><div class="d3-tip n" style="position: absolute; opacity: 0; pointer-events: none; top: 210px; left: 596.223px;"><strong>Name:</strong><span style="color:white">July</span><br><strong>Order:</strong> <span style="color:white">416</span><br></div></body></html>

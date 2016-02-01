@@ -1,0 +1,45 @@
+svg.circleChart {
+		background-color: rgba(166, 178, 204, 1.000);
+	}
+
+	svg.circleChart circle {
+		fill: rgba(225, 152, 53, 1.000);
+		-webkit-svg-shadow: -2px 1px 4px rgba(0, 0, 0, 0.6);
+	}
+
+	svg.circleChart text {
+		fill: rgba(255, 255, 255, 0.9);
+		font-weight: normal;
+		font-family: sans-serif;
+		font-size: 10pt;
+		text-anchor: middle;
+		alignment-baseline: central;
+	}
+
+	svg.circleChart .title {
+		font-family: sans-serif;
+		font-weight: bold;
+		font-size: 32pt;
+		letter-spacing: -0.05em;
+		text-anchor: start;
+		fill: rgba(255, 255, 255, 0.9);
+	}
+
+	svg.circleChart div.labelDiv {
+		padding: 0px;
+		margin: 0px;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	svg.circleChart foreignObject {
+		padding: 0px;
+	}
+
+	svg.circleChart .label {
+		font-weight: normal;
+		font-family: sans-serif;
+		font-size: 10pt;
+		color: rgba(255, 255, 255, 0.9);
+	}
