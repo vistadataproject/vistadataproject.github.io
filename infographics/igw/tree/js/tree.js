@@ -45,8 +45,8 @@ IFG.displayTree = function(options) {
             }
             vis = selector
                 .append("svg:svg")
-                .attr("width", Math.max(200, 18 * json.children.length))
-                .attr("height", Math.max(100, h + m[0] + m[2]))
+                .attr("width", w)
+                .attr("height", h)
                 .append("svg:g")
                 .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
                 .attr("class", "treeChart");

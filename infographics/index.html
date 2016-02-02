@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+</style>
+<head>
+    <link rel="stylesheet" type="text/css" href="igw/pie/css/pieChart.css">
+    <link rel="stylesheet" href="igw/tree/css/tree.css">
+
+</head>
+<body>
+<h1>VISTA Charts </h1>
+<h2 id="chartTitle"></h2>
+<select id="chartType"> 
+  <option value="linkLiteral">Link vs Literal Pie Chart</option>
+  <option value="literalType">Literal Types Pie Chart</option>
+  <option value="orderTree">Order Class in Hierarchies Tree Chart</option>
+  
+</select>
+
+<div id="divSvg" class="pie-chart">
+</div>
+<br><br>
+<script src="igw/pie/ljs/jquery.min.js"></script>
+<script src="igw/pie/ljs/d3.v3.min.js"></script>
+<script src="igw/pie/js/pie.js"></script>
+<script src="igw/tree/js/tree.js"> </script>
+ 
+
+<script>
+$(function() {
+
+    $("#chartType").change(function () {
+        var chartName = this.value;
+        if(chartName === 'literalType') {
+            displayPie('json/literalType.json');
+            $("#chartTitle").html("Literal Type");
+        }
+        else if(chartName === 'linkLiteral') {
+            displayPie('json/linkLiteral.json');
+            $("#chartTitle").html("Link vs Literal");
+        }
+        else if(chartName === 'orderTree') {
+            displayTree('json/classHierarchies101.json');
+            $("#chartTitle").html("Order Class in Hierarchies ");
+        }
+
+    });
+
+    function displayPie(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayPie({
+            divId: 'divSvg', //to display the pie
+            json: jsonPath, //path to json file
+            categoryTitle: 'DATATYPE', //the category name of the json data
+            valueTitle: 'COUNT',//the value name of the json data
+            width: 400,
+            height: 400,
+            innerCircleRadius: 50
+            });
+    }
+
+    function displayTree(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayTree({
+                margin: [20, 20, 20, 120],
+                width: 2000,
+                height: 500,
+                jsonPath: jsonPath,
+                topDown: false, //false - left to right, true - top down
+                divId: "divSvg"
+            });
+    }
+    displayPie('json/literalType.json');    
+    $("#chartTitle").html("Literal Type");
+});
+</script>
+</body>
+</html>
