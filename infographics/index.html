@@ -17,9 +17,11 @@ body {
 <h1>VISTA Charts </h1>
 <h2 id="chartTitle"></h2>
 <select id="chartType"> 
-  <option value="linkLiteral">Link vs Literal Pie Chart</option>
-  <option value="literalType">Literal Types Pie Chart</option>
-  <option value="orderTree">Order Class in Hierarchies Tree Chart</option>
+  <option value="linkLiteral">Link vs Literal (Pie Chart)</option>
+  <option value="literalType">Literal Types (Pie Chart)</option>
+  <option value="orderTree">Order Classes in Hierarchies (Tree Chart)</option>
+  <option value="prescriptionTree">Prescription Classes in Hierarchies (Tree Chart)</option>
+  <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
   
 </select>
 
@@ -49,6 +51,14 @@ $(function() {
             displayTree('json/classHierarchies101.json');
             $("#chartTitle").html("Order Class in Hierarchies ");
         }
+        else if(chartName === 'prescriptionTree') {
+            displayTree('json/classHierarchies52.json');
+            $("#chartTitle").html("Prescrition Class in Hierarchies ");
+        }
+        else if(chartName === 'labResultTree') {
+            displayTree('json/classHierarchies63.json');
+            $("#chartTitle").html("Prescrition Class in Hierarchies ");
+        }
 
     });
 
@@ -70,7 +80,7 @@ $(function() {
         IFG.displayTree({
                 margin: [20, 20, 20, 120],
                 width: 2000,
-                height: 500,
+                height: 1000,
                 jsonPath: jsonPath,
                 topDown: false, //false - left to right, true - top down
                 divId: "divSvg"
