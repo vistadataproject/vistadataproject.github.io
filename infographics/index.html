@@ -15,18 +15,25 @@ body {
 </head>
 <body>
 <h1>VISTA Charts </h1>
-<h2 id="chartTitle"></h2>
-<select id="chartType"> 
-  <option value="linkLiteral">Link vs Literal (Pie Chart)</option>
-  <option value="literalType">Literal Types (Pie Chart)</option>
+<select id="chartType" style="margin: 20px"> 
+  <option value="linkLiteral">Link vs Literal & Literal Types(Pie Chart)</option>
   <option value="orderTree">Order Classes in Hierarchies (Tree Chart)</option>
   <option value="prescriptionTree">Prescription Classes in Hierarchies (Tree Chart)</option>
   <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
   
 </select>
-
-<div id="divSvg" class="pie-chart">
-</div>
+<div id="chartTitle" style="font-size: 18px"></div>
+<br><br><br>
+<table> 
+  <tr><td><center><div id="chart1Title" style="font-size: 18px"></div></center></td>
+      <td><center><div id="chart2Title" style="font-size: 18px"></div></center></td></tr>
+  <tr>
+    <td><div id="divSvg" class="pie-chart">
+    </div></td>
+    <td><div id="div2ndChart" class="pie-chart">
+    </div></td>
+  </tr>
+</table>
 <br><br>
 <script src="igw/pie/ljs/jquery.min.js"></script>
 <script src="igw/pie/ljs/d3.v3.min.js"></script>
@@ -39,13 +46,13 @@ $(function() {
 
     $("#chartType").change(function () {
         var chartName = this.value;
-        if(chartName === 'literalType') {
-            displayPie('json/literalType.json');
-            $("#chartTitle").html("Literal Type");
-        }
-        else if(chartName === 'linkLiteral') {
-            displayPie('json/linkLiteral.json');
-            $("#chartTitle").html("Link vs Literal");
+        $("#chart1Title").html("");
+        $("#chart2Title").html("");
+        if(chartName === 'linkLiteral') {
+            displayPie('json/linkLiteral.json', "Link vs Literal");
+            $("#chartTitle").html("");
+            display2ndPie('json/literalType.json', 'Literal Types');
+
         }
         else if(chartName === 'orderTree') {
             displayTree('json/classHierarchies101.json');
@@ -53,16 +60,16 @@ $(function() {
         }
         else if(chartName === 'prescriptionTree') {
             displayTree('json/classHierarchies52.json');
-            $("#chartTitle").html("Prescrition Class in Hierarchies ");
+            $("#chartTitle").html("Prescription Class in Hierarchies ");
         }
         else if(chartName === 'labResultTree') {
             displayTree('json/classHierarchies63.json');
-            $("#chartTitle").html("Prescrition Class in Hierarchies ");
+            $("#chartTitle").html("Lab Result Class in Hierarchies ");
         }
 
     });
 
-    function displayPie(jsonPath) {
+    function displayPie(jsonPath, title) {
         $("#divSvg").html("");
         IFG.displayPie({
             divId: 'divSvg', //to display the pie
@@ -73,6 +80,22 @@ $(function() {
             height: 400,
             innerCircleRadius: 50
             });
+        $("#chart1Title").html(title);
+
+    }
+    function display2ndPie(jsonPath, title) {
+        $("#div2ndChart").html("");
+        IFG.displayPie({
+            divId: 'div2ndChart', //to display the pie
+            json: jsonPath, //path to json file
+            categoryTitle: 'DATATYPE', //the category name of the json data
+            valueTitle: 'COUNT',//the value name of the json data
+            width: 400,
+            height: 400,
+            innerCircleRadius: 50
+            });
+        $("#chart2Title").html(title);
+        
     }
 
     function displayTree(jsonPath) {
@@ -80,14 +103,14 @@ $(function() {
         IFG.displayTree({
                 margin: [20, 20, 20, 120],
                 width: 2000,
-                height: 1000,
+                height: 1500,
                 jsonPath: jsonPath,
                 topDown: false, //false - left to right, true - top down
                 divId: "divSvg"
             });
     }
-    displayPie('json/literalType.json');    
-    $("#chartTitle").html("Literal Type");
+    displayPie('json/linkLiteral.json', 'Link vs Literal');    
+    display2ndPie('json/literalType.json', 'Literal Type');
 });
 </script>
 </body>

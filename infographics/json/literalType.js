@@ -11,38 +11,40 @@ if (parsedJSON.classes) {
                 if (property.datatype) {
                     if (property.datatype != 'POINTER') {
                         //count embedded_class
-                        if (property.datatype === '[object]') {
+                        if (property.datatype === '[OBJECT]') {
                             if (property['range']) {
                                 property['range'].properties.forEach(function(subProp) {
-                                    if (subProp.datatype != 'POINTER') {
-                                        if (!literalCount[subProp.datatype]) {
-                                            literalCount[subProp.datatype] = 0;
-                                        }
-                                        literalCount[subProp.datatype]++;
-                                    }
-                                });
-                            }
-                        } else {
+                                        if (subProp.datatype != '[OBJECT]') {
+                                            if (subProp.datatype != 'POINTER') {
+                                                    if (!literalCount[subProp.datatype]) {
+                                                        literalCount[subProp.datatype] = 0;
+                                                    }
+                                                    literalCount[subProp.datatype]++;
+                                                }
+                                            }
+                                        });
+                                }
+                            } else {
 
-                            if (!literalCount[property.datatype]) {
-                                literalCount[property.datatype] = 0;
+                                if (!literalCount[property.datatype]) {
+                                    literalCount[property.datatype] = 0;
+                                }
+                                literalCount[property.datatype]++;
                             }
-                            literalCount[property.datatype]++;
                         }
                     }
                 }
             }
         }
     }
-}
-var result = [];
-for (var k in literalCount) {
-    result.push({
-        "DATATYPE": k,
-        "COUNT": literalCount[k]
-    })
+    var result = [];
+    for (var k in literalCount) {
+        result.push({
+            "DATATYPE": k,
+            "COUNT": literalCount[k]
+        })
 
-}
+    }
 
-//console.log(linkCount + '(link) > literal:' + literalCount);
-console.log(JSON.stringify(result));
+    //console.log(linkCount + '(link) > literal:' + literalCount);
+    console.log(JSON.stringify(result));
