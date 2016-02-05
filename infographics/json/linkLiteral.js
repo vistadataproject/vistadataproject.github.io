@@ -10,8 +10,15 @@ if (parsedJSON.classes) {
                 if (property.datatype) {
                     if (property.datatype === 'POINTER')
                         linkCount++;
-                    else if (property.datatype === '[OBJECT]')
-                        objCount++;
+                    else if (property.datatype === '[OBJECT]') {
+                        if (property['range']) {
+                            property['range'].properties.forEach(function(subProp){
+                                if(subProp.datatype === 'POINTER') linkCount++;
+                                else if (subProp.datatype === '[OBJECT]')objCount++;
+                                else literalCount++
+                            });
+                        }
+                    }
                     else
                         literalCount++;
                 }

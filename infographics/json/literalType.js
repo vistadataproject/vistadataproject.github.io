@@ -1,5 +1,7 @@
 var parsedJSON = require('./vdm.json');
 var literalCount = [];
+var pointer = 0,
+    literal = 0;
 if (parsedJSON.classes) {
     var classLength = parsedJSON.classes.length;
     for (var i = 0; i < classLength; i++) {
@@ -9,42 +11,47 @@ if (parsedJSON.classes) {
             for (var j = 0; j < propertyLength; j++) {
                 var property = cls.properties[j];
                 if (property.datatype) {
-                    if (property.datatype != 'POINTER') {
+                    if (property.datatype === 'POINTER') {
+                        pointer++;
+                    } else if (property.datatype === '[OBJECT]') {
                         //count embedded_class
-                        if (property.datatype === '[OBJECT]') {
-                            if (property['range']) {
-                                property['range'].properties.forEach(function(subProp) {
-                                        if (subProp.datatype != '[OBJECT]') {
-                                            if (subProp.datatype != 'POINTER') {
-                                                    if (!literalCount[subProp.datatype]) {
-                                                        literalCount[subProp.datatype] = 0;
-                                                    }
-                                                    literalCount[subProp.datatype]++;
-                                                }
-                                            }
-                                        });
+                        if (property['range']) {
+                            property['range'].properties.forEach(function(subProp) {
+                                if (subProp.datatype === 'POINTER') pointer++;
+                                else if (subProp.datatype === '[OBJECT]') {
+                                    //do nothing
                                 }
-                            } else {
-
-                                if (!literalCount[property.datatype]) {
-                                    literalCount[property.datatype] = 0;
+                                else {
+                                    literal++;
+                                    if (!literalCount[subProp.datatype]) {
+                                        literalCount[subProp.datatype] = 0;
+                                    }
+                                    literalCount[subProp.datatype]++;
                                 }
-                                literalCount[property.datatype]++;
-                            }
+                            });
                         }
+                    } else { //literals
+                        literal++;
+                        if (!literalCount[property.datatype]) {
+                            literalCount[property.datatype] = 0;
+                        }
+                        literalCount[property.datatype]++;
                     }
                 }
             }
         }
     }
-    var result = [];
-    for (var k in literalCount) {
-        result.push({
-            "DATATYPE": k,
-            "COUNT": literalCount[k]
-        })
+}
 
-    }
+var result = [];
+for (var k in literalCount) {
+    result.push({
+        "DATATYPE": k,
+        "COUNT": literalCount[k]
+    })
 
-    //console.log(linkCount + '(link) > literal:' + literalCount);
-    console.log(JSON.stringify(result));
+}
+//console.log('pointer: ' + pointer);
+//console.log('literal: ' + literal);
+//console.log(linkCount + '(link) > literal:' + literalCount);
+console.log(JSON.stringify(result));

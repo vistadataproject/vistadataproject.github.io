@@ -5,7 +5,7 @@
 var IFG = IFG || {};
 
 IFG.displayTree = function(options) {
-    var m = options.margin || [20, 20, 20, 120],
+    var m = options.margin || [20, 20, 20, 20],
         w = (options.width || 1780) - m[1] - m[3],
         h = (options.height || 1600) - m[0] - m[2],
         jsonPath = options.jsonPath,
@@ -33,7 +33,7 @@ IFG.displayTree = function(options) {
 
     function display(jsonPath) {
         d3.json(jsonPath, function(json) {
-            h = Math.max(200, 18 * json.children.length - m[0] - m[2]);
+            h = Math.max(200, 20 * (json.children.length + 3) - m[0] - m[2]);
             tree.size([h, w]);
 
             if (!selector) {
@@ -46,7 +46,7 @@ IFG.displayTree = function(options) {
             vis = selector
                 .append("svg:svg")
                 .attr("width", w)
-                .attr("height", h)
+                .attr("height", Math.max(100, h + m[0] + m[2]))
                 .append("svg:g")
                 .attr("transform", "translate(" + m[3] + "," + m[0] + ")")
                 .attr("class", "treeChart");

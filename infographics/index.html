@@ -48,6 +48,8 @@ $(function() {
         var chartName = this.value;
         $("#chart1Title").html("");
         $("#chart2Title").html("");
+        $('#divSvg').html("");
+        $('#div2ndChart').html("");
         if(chartName === 'linkLiteral') {
             displayPie('json/linkLiteral.json', "Link vs Literal");
             $("#chartTitle").html("");
@@ -103,7 +105,7 @@ $(function() {
         IFG.displayTree({
                 margin: [20, 20, 20, 120],
                 width: 2000,
-                height: 1500,
+                height: 600,
                 jsonPath: jsonPath,
                 topDown: false, //false - left to right, true - top down
                 divId: "divSvg"
