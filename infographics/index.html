@@ -11,6 +11,8 @@ body {
 <head>
     <link rel="stylesheet" type="text/css" href="igw/pie/css/pieChart.css">
     <link rel="stylesheet" href="igw/tree/css/tree.css">
+    <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/stackedBar.css">
+    <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/d3tip.css">
 
 </head>
 <body>
@@ -20,6 +22,7 @@ body {
   <option value="orderTree">Order Classes in Hierarchies (Tree Chart)</option>
   <option value="prescriptionTree">Prescription Classes in Hierarchies (Tree Chart)</option>
   <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
+  <option value="gatheringClass">Gathering Classes (Stacked Bar Chart)</option>
   
 </select>
 <div id="chartTitle" style="font-size: 18px"></div>
@@ -39,6 +42,8 @@ body {
 <script src="igw/pie/ljs/d3.v3.min.js"></script>
 <script src="igw/pie/js/pie.js"></script>
 <script src="igw/tree/js/tree.js"> </script>
+<script src="igw/stackedBar/js/stackedBar.js"></script>
+<script src="igw/stackedBar/ljs/d3.tip.v0.6.3.js"></script>
  
 
 <script>
@@ -46,6 +51,7 @@ $(function() {
 
     $("#chartType").change(function () {
         var chartName = this.value;
+        $("#chartTitle").html("");
         $("#chart1Title").html("");
         $("#chart2Title").html("");
         $('#divSvg').html("");
@@ -67,6 +73,10 @@ $(function() {
         else if(chartName === 'labResultTree') {
             displayTree('json/classHierarchies63.json');
             $("#chartTitle").html("Lab Result Class in Hierarchies ");
+        }
+        else if(chartName === 'gatheringClass') {
+            displayStackedBar('json/gatheringClass.json');
+            $("#chartTitle").html("Gathering Class");
         }
 
     });
@@ -111,6 +121,25 @@ $(function() {
                 divId: "divSvg"
             });
     }
+
+    function displayStackedBar(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayStackedBar({
+            "margin" : {top: 20, right: 20, bottom: 130, left: 40},
+            "width" : 9500,
+            "height" : 500,
+            "colors" : ["#d0743c", "#6b486b", "red"], //color of stacked bar
+            "divId" : "divSvg", //div to show the chart
+            "jsonPath" : jsonPath,// json path
+            "categoryTitle" : "name", //x axis category
+            "nameTitle" : "name", //name to be displayed when mouse over
+            "valueTitles" : ["link", "literal", "object"], //values to show in each bar,
+            "valueTitlesDisplay" : ["links", "literals", "objects"], //title to display on the bar tip
+            "YLegendText" : "Count", //this is the text displayed on the Y Axis
+            "showXAxis" : false //show X Axis
+        });
+    }
+
     displayPie('json/linkLiteral.json', 'Link vs Literal');    
     display2ndPie('json/literalType.json', 'Literal Type');
 });
