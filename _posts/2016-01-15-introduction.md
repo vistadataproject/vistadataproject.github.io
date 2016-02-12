@@ -15,6 +15,6 @@ In full public view -
 
 The key components and artifacts are shown in this diagram ...
 
-![VISTA Data Project Overview](/assets/vdp-overview.png)
+<img style="padding-left: 5em" src="/assets/vdp-overview2.png"/>
 
 From more details, [read on ...](https://github.com/vistadataproject/documents#tracks).
