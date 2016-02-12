@@ -10,7 +10,7 @@ Beauty is symmetry ...
 
 > universally, the beautiful thing is essentially symmetrical, patterned. -- Plotinus
 
-Now imagine an interface where data is read in one form but written in a completely different form. Let's go further, let's say data is written not in one but in many, many different forms, most of which look more like machine code than anything else. Not a thing of beauty but that's what's involved in reading and writing data to VISTA today.
+Now imagine an interface where data is read in one form but written in a completely different form. Let's go further, let's say data is written not in one but in many, many different forms, most of which look more like machine code than anything else. That's what it takes to read and write data to VISTA today.
 
 Patient data is read with the Virtual Patient Record (VPR) service which presents straightforward _JSON_. Here's a Vital Measurement ...
 
