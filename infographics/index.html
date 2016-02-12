@@ -29,11 +29,11 @@ body {
 <br><br><br>
 <table> 
   <tr>
-      <td><center><div id="" style="font-size: 18px"></div></center></td>
+      <td><center><div id="summaryTitle" style="font-size: 18px"></div></center></td>
       <td><center><div id="chart1Title" style="font-size: 18px"></div></center></td>
       <td><center><div id="chart2Title" style="font-size: 18px"></div></center></td></tr>
   <tr>
-    <td><center><div id="" style="font-size: 18pt">Classes <br>2641
+    <td><center><div id="divSummary" style="font-size: 18pt">
     </div></center></td>
     <td><div id="divSvg" class="pie-chart">
     </div></td>
@@ -58,11 +58,13 @@ $(function() {
         $("#chartTitle").html("");
         $("#chart1Title").html("");
         $("#chart2Title").html("");
+        $('#divSummary').html("");
         $('#divSvg').html("");
         $('#div2ndChart').html("");
         if(chartName === 'linkLiteral') {
             displayPie('json/linkLiteral.json', "Link vs Literal");
             $("#chartTitle").html("");
+            $("#divSummary").html("Classes <br>2641");
             display2ndPie('json/literalType.json', 'Literal Types');
 
         }
