@@ -4,9 +4,9 @@ title: Home
 ---
 
 <div class="posts">
-{% for post in site.posts %}
-  <article class="post">
+{% for post in site.posts reversed %}
 
+  <article class="post">
     <header>
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
@@ -31,19 +31,7 @@ title: Home
     </p>
     {% endif %}
   </article>
+
 {% endfor %}
 </div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-  {% if paginator.previous_page %}
-  <li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Previous page</a>
-  </li>
-  {% endif %} 
-  {% if paginator.next_page %}
-  <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
 
