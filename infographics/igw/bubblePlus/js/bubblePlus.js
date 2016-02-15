@@ -78,6 +78,7 @@ d3.json(options.jsonPath, function(json) {
             el.style("stroke","#000").style("stroke-width", 1.5);
             d3.select("#nytg-tooltip").attr("pointer-events", "none")
                 .style('top', ypos+"px").style('left', xpos+"px").style('display','block');
+            console.log(d);
             d3.select("#nytg-tooltip .nytg-name").html("<p>" + d.className + ": " + sizeFormatter(d.value) + "</p>");
         })
         .on("mouseout", function(d,i) { 
