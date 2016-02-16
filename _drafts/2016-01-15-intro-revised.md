@@ -6,17 +6,16 @@ author: rafael
 
 The VISTA Data Project is a Federal inter-agency health innovations project funded by the Veterans Administration (VA) to 
 
-> demonstrate the exposure, analytics, and automation of VA VISTA metadata using modern, machine-processable, web-centric metadata standards, providing a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
+> provide a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
+
+<img style="padding-left: 5em" src="/assets/vdp-simple3.png"/>
 
 
 What does this mean? What relevance does this have to providing care to patents in the Federal healthcare system?
 
 <!--more-->
 
-<img style="padding-left: 5em" src="/assets/vdp-simple3.png"/>
-
 From more details, [read on ...](https://github.com/vistadataproject/documents).
-
 
 ## 1.1 Objective
 
