@@ -12,6 +12,8 @@ What does this mean? What relevance does this have to providing seamless, high q
 
 <!--more-->
 
+First, a 
+
 The key components and artifacts are shown in this diagram ...
 
 <img style="padding-left: 5em" src="/assets/vdp-overview-simple.png"/>
