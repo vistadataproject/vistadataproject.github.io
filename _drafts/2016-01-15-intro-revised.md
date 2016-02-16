@@ -13,7 +13,7 @@ What does this mean? What relevance does this have to providing care to patents 
 
 <!--more-->
 
-<img style="padding-left: 5em" src="/assets/vdp-overview-simple.png"/>
+<img style="padding-left: 5em" src="/assets/vdp-simple3.png"/>
 
 From more details, [read on ...](https://github.com/vistadataproject/documents).
 
