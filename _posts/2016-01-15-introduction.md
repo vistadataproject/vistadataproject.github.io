@@ -4,11 +4,11 @@ title: Introduction
 author: rafael
 ---
 
-The VISTA Data Project is a Federal Interagency project funded by the Veterans Administration (VA) to 
+The VISTA Data Project is a Federal interagency innovation collaboration funded by the Veterans Administration (VA) to 
 
 > __provide a single comprehensive security-enabled read/write data model for all VA VISTA data  across all VA VISTA operational systems__, establishing a common technical foundation  for __Master Data Management__  and computable data representation and __exchange between VA and DoD clinical information systems__.
 
-What does this mean? Why is the importance of this?
+What does this mean? What is the relevance?
 
 <!--more-->
 
