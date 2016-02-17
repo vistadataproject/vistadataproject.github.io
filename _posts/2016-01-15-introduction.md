@@ -17,17 +17,17 @@ How? Where? Features?
 
 __How?__
 
-1. All sources of existing available metadata (both INTERNAL to VISTA as well as EXTERNAL) will be extracted and transformed to a single, common, web-standard data model called Resource Description Framework (RDF). 
-2. Once nce transformed to RDF, the INTERNAL and EXTERNAL metadata sources can be combined as a single INTEGRATED data model.
-3. This INTEGRATED data model is then annotated, normalized, and enriched. 
-4. This ENRICHED data model is in turn is embedded back in VISTA as an enhanced Master VISTA Data Model (MVDM).
-5. The Master VISTA Data Model is operationalized within VISTA using Node.js/Javascript binding to the VISTA/M data engine.
-6.  The combination of the MVDM embedded within Node/M provides a  server-side, security-enabled, in-process, transactional read/write Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
+>1. All sources of existing available metadata (both INTERNAL to VISTA as well as EXTERNAL) will be extracted and transformed to a single, common, web-standard data model called Resource Description Framework (RDF). The most useful form of RDF is JSON-LD, which is JSON with Linked Data capability.
+2. Once transformed to JSON-LD, the INTERNAL and EXTERNAL metadata sources can be combined as a single INTEGRATED data model.
+3. This INTEGRATED data model is then annotated with new data categories (patient, institution, knowledge, and systems/configuration), redundancy removed, and a subset normalized to the current VPR data model, creating an ENRICHED data model. 
+4. This ENRICHED data model is in then embedded back into VISTA as the Master VISTA Data Model (MVDM).
+5. The MVDM operationalized within VISTA server-side using Node/M binding directly to the existing transactional VISTA data architecture and data engine.
+6.  This MVDM embedded within Node/M provides a  server-side, security-enabled, in-process, transactional read/write Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
 
 
 __Where?__
 
-All artifacts and deliverables shall be developed, version-controlled, stored, and delivered on an industry-standard public Github repository (“Project Repository”). ... The Project Repository shall contain the one and only authoritative version of all artifacts produced ... The government, all necessary stakeholders, and the public shall have full read and download access of all artifacts on the Project Repository at all times --- See [PWS](https://github.com/vistadataproject/documents/blob/master/Submissions/src/VistAMetadata-2015-12-09-PWS.pdf) Section 1.6.15.1
+>All artifacts and deliverables shall be developed, version-controlled, stored, and delivered on an industry-standard public Github repository (“Project Repository”). ... The Project Repository shall contain the one and only authoritative version of all artifacts produced ... The government, all necessary stakeholders, and the public shall have full read and download access of all artifacts on the Project Repository at all times --- See [PWS](https://github.com/vistadataproject/documents/blob/master/Submissions/src/VistAMetadata-2015-12-09-PWS.pdf) Section 1.6.15.1
 
 
 __Key Features__
