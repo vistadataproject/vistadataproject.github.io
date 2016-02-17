@@ -11,18 +11,19 @@ The VISTA Data Project is a Federal inter-agency health innovations project fund
 <img style="padding-left: 5em" src="/assets/vdp-simple3.png"/>
 
 
-What does this mean? What relevance does this have to providing care to patents in the Federal healthcare system?
+What does this mean? 
 
 <!--more-->
 
-From more details, [read on ...](https://github.com/vistadataproject/documents).
+From technical details, [read on ...](https://github.com/vistadataproject/documents).
 
-## 1.1 Objective
+
+## Objective
 
 The objective of this project is to prototype and demonstrate the exposure, analytics, and automation of VA VISTA metadata using modern, machine-processable, web-centric metadata standards, providing a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
 
-## 1.2 Background
+## Background
 
 The Veterans Health Administration (VHA) is the largest integrated healthcare delivery system in the United States with over 1,700 sites of care serving 8.76 million Veterans. The mission of VHA is to honor America's Veterans by providing exceptional healthcare services lifelong for all veterans in need, and to provide the highest quality care, everywhere.
 
@@ -32,15 +33,22 @@ The Veterans Information Systems and Technology Architecture (VISTA)1 is a natio
 #### Congressional Mandate:  Computable Real-time Health Data Exchange
 In order to meet changing clinical and regulatory requirements VA must continuously evolve VISTA.  The requirements of Public Law 113-066 (P.L. 113-066), SECTION 713 – “ELECTRONIC HEALTH RECORDS OF THE DEPARTMENT OF DEFENSE AND THE DEPARTMENT OF VETERANS AFFAIRS,” of the National Defense Authorization Act (NDAA) for Fiscal Year (FY) 2014 state that by December 31, 2016, VA must achieve an interoperable EHR with an integrated display of data with the Department of Defense (DoD) and private sector providers. The interoperable EHR must exchange all relevant health care data between DoD and VA computable in near real time.
 
-__Meaningful Use: Does Not Support Computable Data__
-This NDAA Congressional mandate for VA-DoD EHR interoperability is to a higher standard of interoperability than required for private sector EHRs under the U.S. Health and Human Services Health Information Technology (HIT) Meaningful Use (MU) incentive program. Meaningful Use Stage 3 certification3 (the latest version as of 2015) requires that a EHR shall be capable viewing, downloading, or transmitting a specially-formatted continuity of care document (CCD) from another EHR within four days of service for at least 50% of transitions of care4.  The information content of the CCDs, however, is inconsistent between implementations leading to unpredictable data quality 5, rendering the data non-computable. Meaningful Use standards thus provide only a fraction of the information in the EHR (only specific documents) only a fraction of the time (50% of transitions) and are not computable (viewable only) nor real-time (four days latency).  The VA and DOD are currently meet higher standard of interoperability than this Meaningful Use standard by virtue of use of the Joint Legacy Viewer (JLV).
+__Meaningful Use is Not Computable Data__
 
-__To meet the more stringent Congressional NDAA mandate for the computable exchange of data, both VA and DoD require precise, granular, machine-computable definition of the data and metadata across all their authoritative primary source information systems at the data element level, not at the document-level.__  VA and DoD therefore need to future-enable their EHR data by using modern, machine-processable metadata standards to express the data within all their existing diverse EHR systems. Such a metadata-centric approach was recommended by the President’s Council of Advisors on Science and Technology in their Report to the U.S. President to realize the full potential of Health Information Technology to improve healthcare for Americans6.
+This NDAA Congressional mandate for VA-DoD EHR interoperability is to a higher standard of interoperability than required for private sector EHRs under the U.S. Health and Human Services Health Information Technology (HIT) Meaningful Use (MU) incentive program. Meaningful Use Stage 3 certification3 (the latest version as of 2015) requires that an EHR shall be capable viewing, downloading, or transmitting a specially-formatted continuity of care document (CCD) from another EHR within four days of service for at least 50% of transitions of care4.  The information content of the CCDs, however, is inconsistent between implementations leading to unpredictable data quality 5, rendering the data non-computable. Meaningful Use standards thus provide only a fraction of the information in the EHR (only specific documents) only a fraction of the time (50% of transitions) and are not computable (view-only) nor real-time (four days latency).  The VA and DOD are currently meet a far higher standard of interoperability than this Meaningful Use standard by virtue of use of the Joint Legacy Viewer (JLV).
+
+
+__Metadata Enables Computable Data__
+
+To meet the more stringent Congressional NDAA mandate for the computable exchange of data, both VA and DoD require precise, granular, machine-computable definition of the data and metadata across all their authoritative primary source information systems at the data element level, not at the document-level. VA and DoD therefore need to future-enable their EHR data by using modern, machine-processable metadata standards to express the data within all their existing diverse EHR systems. Such a metadata-centric approach was recommended by the President’s Council of Advisors on Science and Technology in their Report to the U.S. President to realize the full potential of Health Information Technology to improve healthcare for Americans6.
 
 The DoD’s Defense Health Agency (DHA) has successfully demonstrated a modern metadata-centric approach to exposing and managing the data in DHA’s authoritative clinical information system, the Composite Health Care System (CHCS), which, like the VISTA database in VHA, contains virtually all of the health agencies’ structured clinical data. (DHA has a separate database for documents, which are all unstructured). This project was the Transition Application Plan Support (TAPS) and was carried out at the Pacific Joint Information Technology Center (PJITC). The objective of TAPS was to support the transition of all CHCS systems and data to an industry-standard, machine-processable metadata representation in support of migration of all CHCS data for their future architecture. The TAPS project successfully demonstrated translation of a live CHCS system and all its data and metadata in fully machine-processable form using the Linked Data standard. 
 
-#### A Federal Linked Data Future
+#### Federal Government: A Linked Data Future
 Linked Data7, also known as the Resource Description Framework (RDF), is the World Wide Web Consortium (W3C)8 Internet standard for representing machine-processable structured data and metadata on the web, and enables distributed, heterogeneous data query and integration at web scale. The world’s largest search engines all use a common RDF model to structure and index the data within the billions of web pages to support semantic search across all structured data on the web.9 Other Federal agencies have adopted Linked Data (RDF) to support master data management including the National Library of Congress to index and search all published works10, the U.S. National Library of Medicine to index and catalog the world’s largest collection of clinical and lifesciences publications11, and the U.S. HealthData.gov to publish thousands of public structured health datasets 12.  With this convergence of the federal health agencies on this common metadata standard, this means patient data can be linked across agencies and also to a wealth of health-related resources.
+
+
+#### VISTA Data: A Linked Data Approach
 
 The VA VISTA Metadata Audit, Analytics, and Automation project intends to use the knowledge and expertise gained by DoD through the TAPS project as a springboard from which to prototype a new, common, shared interagency approach for machine-processable metadata management for current operational systems in VA and DoD using modern, international, web-standard, web-scale representation. 
 
