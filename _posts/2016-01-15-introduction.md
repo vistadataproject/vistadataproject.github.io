@@ -37,7 +37,7 @@ This NDAA Congressional mandate for VA-DoD EHR interoperability is to a higher s
 
 Meaningful Use Stage 3 certification3 (the latest version as of 2015) requires that an EHR shall be capable viewing, downloading, or transmitting a specially-formatted continuity of care document (CCD) from another EHR within four days of service for at least 50% of transitions of care4.  The information content of the CCDs, however, is inconsistent between implementations leading to unpredictable data quality 5, rendering the data non-computable. 
 
-Thus, Meaningful Use standards support exchange of only a fraction of the information in the EHR (specific documents) only a fraction of the time (50% of transitions), and this is not computable (view-only), nor is it real-time  (up to four days latency).  By these criteria, the VA and DOD are already exceeding the 'Meaningful Use' standard by virtue of using of the Joint Legacy Viewer (JLV). Neverthless, the data remains non-computable.
+Thus, Meaningful Use standards support exchange of only a fraction of the information in the EHR (specific documents) only a fraction of the time (50% of transitions), and this is not computable (view-only), nor is it real-time  (up to four days latency).  By these criteria, the VA and DOD are already exceeding the 'Meaningful Use' standard by virtue of using of the Joint Legacy Viewer (JLV).  Neverthless, in all cases, the data remains non-computable.
 
 
 ### Metadata Enables Computable Data
