@@ -17,7 +17,7 @@ __How?__ Sources of available VA metadata (internal to VISTA and external) will 
 >__Twitter Version__: VISTA has a Data Model!   
 
 
-Simple, right?  <!--more-->
+How does this work, really?  <!--more-->
 
 
 __Creating the Master VISTA Data Model__
