@@ -4,7 +4,7 @@ title: Introduction
 author: rafael
 ---
 
-The VISTA Data Project is a Federal inter-agency health systems research and discovery project between the Defense Health Agency and the Veterans Health Agency to 
+The VISTA Data Project is a Federal inter-agency health systems research and discovery project funded by the Veterans Affairs to 
 
 > provide a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
@@ -17,12 +17,12 @@ What is the relevance of this?
 
 ### Background
 
-The Veterans Health Administration (VHA) is the largest integrated healthcare delivery system in the United States with over 1,700 sites of care serving 8.76 million Veterans. The mission of VHA is to honor America's Veterans by providing exceptional healthcare services lifelong for all veterans in need, and to provide the highest quality care, everywhere.
+The Veterans Health Administration (VHA) is the largest integrated healthcare delivery system in the United States with over 1,400 sites of care serving 8.76 million Veterans. The mission of VHA is to honor America's Veterans by providing exceptional healthcare services lifelong for all veterans in need, and to provide the highest quality care, everywhere.
 
 ### What is VISTA?
-The Veterans Information Systems and Technology Architecture (VISTA)1 is a nationwide, integrated, comprehensive patient-centric inpatient-outpatient Electronic Health Record (EHR) designed for and by VA clinicians to support all VHA clinical and business functions, and manages all veteran healthcare data and transactions. VISTA’s database is the Congressionally-designated authoritative data source for all Veterans health care delivery throughout the United States.  
+The Veterans Information Systems and Technology Architecture (VISTA)1 is a nationwide comprehensive patient-centric integrated inpatient-outpatient Electronic Health Record (EHR) designed for and by VA clinicians to support all VHA clinical and business functions, and manages all veteran healthcare data and transactions. VISTA’s database is the Congressionally-designated authoritative data source for all Veterans health care delivery throughout the United States.  
 
-VISTA is production-proven for over thirty years, and is familiar to and has been used by 65% of all physicians in the United States.  VISTA is purpose-built for VHA and contains over three decades of institutional know-how of all business processes and patient care protocols of the VHA, in addition to over thirty years of patient data, and currently continues to grow at a rate of over one million additional lab tests, medication orders, imaging studies, and documents each day.  The cumulative knowledge and data stored in VISTA today is in the hundreds of billions of facts in structured, computable (but nonstandard) form. 
+VISTA is production-proven for over thirty years, and is familiar to and has been used by 65% of all physicians in the United States.  VISTA is purpose-built for VHA and contains over three decades of institutional know-how of all business processes and patient care protocols of the VA, in addition to over thirty years of patient data, and currently continues to grow at a rate of over one million additional lab tests, medication orders, imaging studies, and documents each day.  The cumulative knowledge and data stored in VISTA today is in the hundreds of billions of facts in structured (but nonstandard) form. 
 
 VISTA is also the evidence-based data engine that continuously validates all data and transactions (more than 50 million real-time quality and safety checks on all patient care data and transactions each day) and is thus an essential tool in supporting VHA’s mission of consistently and reliably providing the safest, highest quality, lifelong care for all veterans, everywhere. VISTA has received Presidential awards for all these accomplishments, and continues today to consistently rank highly in national surveys by physicians for user satisfaction and for supporting high quality care2.
 
