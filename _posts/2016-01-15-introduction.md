@@ -20,7 +20,9 @@ Sounds too simple?  <!--more-->
 __Creating the Master VISTA Data Model__
 
 
-All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, web-centric, industry-standard, machine-processable metadata model. Currently the only data model that meets all these criteria is the World Wide Web Consortium (W3C) Resource Description Framework (RDF). This is the metadata standard used by the National Library of Congress to index all books,  the National Library of Medicine to index all medical journals,  and all major search engines (Google, Yahoo, Microsoft) to index all  structured data on the web to support semantic search.
+All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, web-centric, industry-standard, machine-processable metadata model.
+
+Currently the only data model that meets all these criteria is the World Wide Web Consortium (W3C) Resource Description Framework (RDF). This is the metadata standard used by the National Library of Congress to index all books,  the National Library of Medicine to index all medical journals,  and all major search engines (Google, Yahoo, Microsoft) to index all  structured data on the web.
 
 Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
