@@ -9,13 +9,16 @@ The VISTA Data Project is a Federal Interagency health information systems colla
 > provide a comprehensive, security-enabled, symmetric read/write master data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
 
+![vdp-simple](/assets/vdp-simple4.png)
+
+
 <img style="padding-left: 5em" src="/assets/vdp-simple4.png"/>
 
 
->All sources of available metadata (internal to VISTA and external) will be transformed and incorporated into a single integrated, industry-standard, machine-processable data model, which is then annotated, categorized, normalized, and enhanced. This enriched model is then embedded back in VISTA and operationalized as a server-side Node.js-based security-enabled symmetric read/write Master VISTA Data Model.   
+>Figure in a nutshell: All sources of available VA metadata (internal to VISTA and external) will be transformed and incorporated into a integrated, industry-standard, machine-processable data model, which is then annotated, categorized, normalized, and enhanced. This enriched model is then embedded  in VISTA and operationalized as a server-side Node.js-based security-enabled symmetric read/write Master VISTA Data Model.   
 
 
-There's tomore to it than that, right?  <!--more-->
+There's got to to be more to it than that, right?  <!--more-->
 
 
 __Creating the Master VISTA Data Model__
