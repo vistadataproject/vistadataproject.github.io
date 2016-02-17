@@ -10,12 +10,15 @@ The VISTA Data Project is a Federal Interagency health information systems colla
 
 <img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
+How?
 
-What does this mean? How does this work?
+>All sources of available metadata (both internal to VISTA as well as external) will be transformed and incorporated into a single integrated web-standard data model, which is then annotated, normalized, and enriched. This enhanced model is in turn is embedded back in VISTA as a server-side, security-enabled, in-process, transactional read/write Master Data Model.   
 
+
+For more detail 
 <!--more-->
 
-__Explanation of the Figure__
+__How does this work?__
 
 All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). 
 
@@ -30,14 +33,14 @@ The ENRICHED data model is then embedded back into VISTA and operationalized dir
 The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, symmetric read/write transactional Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
 
 
-__Key Features__
+__VISTA Data Project: Unique Features__
 
 Feature | Details
 ---|---
 __Prototype-Driven__ |  Employs rapid iterative prototyping approach. *Not waterfall development*.
 __Data-centric__ | Novel approach to managing VISTA data.  *Not a code-centric approach*.
 __Representative__  | Exposes, leverages, and enhances all relevant, representative VA VISTA to the maximium extent available.  The VISTA Data Model comprises the current existing data-driven architecture of VISTA, and therefore leverages all existing VISTA definitions.
-__Noninvasive__ | The VISTA Data Model provides essential new functionality on top of the unmodified VISTA architecture 'as is'. No existing VISTA code, routines, packages, modules, or infrastructure will be affected or changed in any way (i.e. this is 'safe' and 'noninvasive').
+__Noninvasive__ | The VISTA Data Model provides essential new functionality on top of the unmodified VISTA architecture 'as is'. <br><br>No existing VISTA code, routines, packages, modules, or infrastructure will be affected or changed in any way (i.e. this is 'safe' and 'noninvasive').
 __Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using the World Wide Web Consortium (W3C) [Web Data Model](https://github.com/vistadataproject/documents/tree/master/Background#standards) (RDF, JSON-LD).
 
 
