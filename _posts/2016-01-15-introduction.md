@@ -17,17 +17,13 @@ What does this mean? How does this work?
 
 __Explanation of the Figure__
 
-All sources of existing available metadata (both internal to VISTA as well as external to VISTA, such as external business logic) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). Once transformed to RDF, all INTERNAL and EXTERNAL metadata sources may be combined as a single, comprehensive INTEGRATED web-standard data model that spans all data in VISTA, as well as external associated data.
+All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
-This INTEGRATED data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and sharable, standard knowledge artifacts. The INTEGRATED data model will have much redundancy removed from overlapping definitions used within VISTA.  A subset of the INTEGRATED model 
+This INTEGRATED data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and knowledge artifacts. The INTEGRATED data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   A subset of the INTEGRATED model will be used to create a Normalized model. Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model).  All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the ENRICHED model.
 
+The ENRICHED data model is in then embedded back into VISTA and operationalized directly on top of the native transactional database engine of VISTA using the server-side Javascript / Node.js binding called nodeVISTA.  This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
 
-This ENRICHED data model is in then embedded back into VISTA as the Master VISTA Data Model (MVDM).
-
-The MVDM operationalized within VISTA server-side using Node/M binding directly to the existing transactional VISTA data architecture and data engine.
-
-
-This MVDM embedded within Node/M provides a  server-side, security-enabled, in-process, transactional read/write Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
+The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, symmetric read/write transactional Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
 
 
 __Where?__
