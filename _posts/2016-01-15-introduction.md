@@ -17,18 +17,17 @@ What does this mean? How does this work?
 
 __Explanation of the Figure__
 
-All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
+All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). 
 
-This INTEGRATED data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and knowledge artifacts. The INTEGRATED data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   A subset of the INTEGRATED model will be used to create a Normalized model. Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model).  All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the ENRICHED model.
+Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
-The ENRICHED data model is in then embedded back into VISTA and operationalized directly on top of the native transactional database engine of VISTA using the server-side Javascript / Node.js binding called nodeVISTA.  This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
+This INTEGRATED data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and knowledge artifacts. The INTEGRATED data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
+
+A subset of the INTEGRATED model will be used to create a Normalized model. Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model).  All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the ENRICHED model.
+
+The ENRICHED data model is then embedded back into VISTA and operationalized directly on top of the native transactional database engine of VISTA using the server-side Javascript / Node.js binding called nodeVISTA.  This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
 
 The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, symmetric read/write transactional Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
-
-
-__Where?__
-
->All artifacts and deliverables shall be developed, version-controlled, stored, and delivered on an industry-standard public Github repository (“Project Repository”). ... The Project Repository shall contain the one and only authoritative version of all artifacts produced ... The government, all necessary stakeholders, and the public shall have full read and download access of all artifacts on the Project Repository at all times --- See [PWS](https://github.com/vistadataproject/documents/blob/master/Submissions/src/VistAMetadata-2015-12-09-PWS.pdf) Section 1.6.15.1
 
 
 __Key Features__
