@@ -31,9 +31,7 @@ In a few easy steps..
 
 2. Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
-<p data-pullquote="
-RDF is the same metadata standard used by all major search engines to index all structured data on the web.
-"></p>
+<p data-pullquote=" RDF is the same metadata standard used by all major search engines to index all structured data on the web."></p>
 
 
 3. This integrated data model is then annotated with new data categories to provide the necessary data identification to support master data management of broad categories of data, such as patient data, systems and configuration data, institutional data, and knowledge data.
