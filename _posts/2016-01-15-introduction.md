@@ -8,7 +8,7 @@ The VISTA Data Project is a Federal Inter-agency health systems collaboration pr
 
 > provide a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
-<img style="padding-left: 5em" src="/assets/vdp-simple4.png"/>
+<img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 
 How? Where? Features?
