@@ -11,26 +11,30 @@ The VISTA Data Project is a Federal Interagency health information systems colla
 <img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 
->How?  All sources of available metadata (internal to VISTA and external) will be transformed and incorporated into a comprehensive, integrated, industry-standard, machine-processible data model, which is then annotated, categorized, normalized, and enhanced. This enriched model is then operationalized by embedding within VISTA as a real-time, server-side, in-process Node.js-based, security-enabled symmetric read/write Master Data Model.   
+>All sources of available metadata (internal to VISTA and external) will be transformed and incorporated into a single integrated, industry-standard, machine-processable web-centric data model, which is then annotated, categorized, normalized, and enhanced. This enriched model is then embedded back in VISTA and operationalized as a server-side, in-process Node.js-based, security-enabled symmetric read/write Master VISTA Data Model.   
 
 
-Sounds too simple?  <!--more-->
+Sounds simple, right?  <!--more-->
 
 
 __Creating the Master VISTA Data Model__
 
+In ten easy steps..
 
-All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, common, web-centric, industry-standard, machine-processable metadata model.
 
-Currently the only data model that meets all these criteria is the World Wide Web Consortium (W3C) Resource Description Framework (RDF). This is the metadata standard used by the National Library of Congress to index all books,  the National Library of Medicine to index all medical journals,  and all major search engines (Google, Yahoo, Microsoft) to index all  structured data on the web.
+1. All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) will be extracted and transformed to a single, integrated, web-centric, industry-standard, machine-processable metadata model. Currently the only data model that meets all these criteria is the World Wide Web Consortium (W3C) Resource Description Framework (RDF). This is the metadata standard used by the National Library of Congress to index all books,  the National Library of Medicine to index all medical journals,  and all major search engines (Google, Yahoo, Microsoft) to index all  structured data on the web.
 
-Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
+2. Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
-This web-standard integrated data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and knowledge artifacts. The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
+3. This web-standard integrated data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and knowledge artifacts. 
 
-A subset of the integrated model will be used to create a normalized model. Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model) because the logic and frameworks currently use distinct models for read and write.  All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the ENRICHED model.
+4. The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
 
-The enriched data model is then embedded back into VISTA and operationalized directly within the native transactional database engine of VISTA using the server-side Javascript / Node.js binding mechanism called nodeVISTA.  This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
+5. A subset of the integrated model will be used to create a normalized model. Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model) because the logic and frameworks currently use distinct models for read and write.  
+ 
+6. All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the enriched model.
+
+7. The enriched data model is then embedded back into VISTA and operationalized directly within the native transactional database engine of VISTA using the server-side Javascript / Node.js binding mechanism called nodeVISTA.  This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
 
 The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, real-time symmetric read/write transactional Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
