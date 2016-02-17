@@ -4,25 +4,30 @@ title: Introduction
 author: rafael
 ---
 
-The VISTA Data Project is a Federal Inter-agency health systems collaboration project funded by the Veterans Affairs to 
+The VISTA Data Project is a Federal Interagency health information systems collaboration funded by the Veterans Affairs to 
 
-> provide a single comprehensive security-enabled read/write data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
+> provide a comprehensive, security-enabled, symmetric read/write master data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
 <img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 
-How? Where? Features?
+What does this mean? How does this work?
 
 <!--more-->
 
-__How?__
+__Explanation of the Figure__
 
->1. All sources of existing available metadata (both INTERNAL to VISTA as well as EXTERNAL) will be extracted and transformed to a single, common, web-standard data model called Resource Description Framework (RDF). The most useful form of RDF is JSON-LD, which is JSON with Linked Data capability.
-2. Once transformed to JSON-LD, the INTERNAL and EXTERNAL metadata sources can be combined as a single INTEGRATED data model.
-3. This INTEGRATED data model is then annotated with new data categories (patient, institution, knowledge, and systems/configuration), redundancy removed, and a subset normalized to the current VPR data model, creating an ENRICHED data model. 
-4. This ENRICHED data model is in then embedded back into VISTA as the Master VISTA Data Model (MVDM).
-5. The MVDM operationalized within VISTA server-side using Node/M binding directly to the existing transactional VISTA data architecture and data engine.
-6.  This MVDM embedded within Node/M provides a  server-side, security-enabled, in-process, transactional read/write Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
+All sources of existing available metadata (both internal to VISTA as well as external to VISTA, such as external business logic) will be extracted and transformed to a single, common, industry-standard metadata model called the Resource Description Framework (RDF). Once transformed to RDF, all INTERNAL and EXTERNAL metadata sources may be combined as a single, comprehensive INTEGRATED web-standard data model that spans all data in VISTA, as well as external associated data.
+
+This INTEGRATED data model is then annotated with new data categories to provide the foundation for patient-centric, on-the-data security model, as well as master data management of other broad categories of VA data, such as systems and configuration data, institutional data, and sharable, standard knowledge artifacts. The INTEGRATED data model will have much redundancy removed from overlapping definitions used within VISTA.  A subset of the INTEGRATED model 
+
+
+This ENRICHED data model is in then embedded back into VISTA as the Master VISTA Data Model (MVDM).
+
+The MVDM operationalized within VISTA server-side using Node/M binding directly to the existing transactional VISTA data architecture and data engine.
+
+
+This MVDM embedded within Node/M provides a  server-side, security-enabled, in-process, transactional read/write Master Data Model that external clients can leverage for transactional, computable data exchange and processing.
 
 
 __Where?__
