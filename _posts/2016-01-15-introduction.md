@@ -11,10 +11,10 @@ The VISTA Data Project is a Federal Interagency health information systems colla
 <img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 
->All sources of available metadata (both internal to VISTA and external) will be transformed and incorporated into one single integrated web-standard data model, which is then annotated, normalized, and enriched. This enhanced model is in turn is embedded back and operationalized in VISTA as a server-side, security-enabled, in-process, transactional symmetric read/write Master Data Model.   
+>All sources of available metadata (both internal to VISTA and external) will be transformed and incorporated into one single integrated web-standard data model, called the Resource Description Framework, which is then annotated, categorized, normalized, and enhanced. This enriched model is then embedded back and operationalized in VISTA as a Node.js-based, server-side, in-process security-enabled symmetric read/write Master Data Model.   
 
 
-Too many new concepts?   <!--more-->
+The devil in the details... <!--more-->
 
 
 __How to Create a Master VISTA Data Model__
