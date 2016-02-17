@@ -48,7 +48,7 @@ In nine easy steps..
 The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, real-time symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
 
-####VISTA Data Project: Unique Features
+#### VISTA Data Project: Unique Features
 
 Feature | Details
 ---|---
