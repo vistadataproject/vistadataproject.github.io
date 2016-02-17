@@ -13,11 +13,11 @@ The VISTA Data Project is a Federal Inter-Agency health systems innovation proje
 
 How does this work? 
 
-__Executive explanation__...
-Sources of available VA metadata (internal to VISTA and external) will be transformed and incorporated into an single industry-standard, machine-processable data model, which is then annotated, categorized, normalized, and enhanced to support patient-centric security and symmetric read/write. This enriched data model is then embedded  in VISTA and operationalized as a server-side Node.js-based Master VISTA Data Model.   
+__Twitter version__: VISTA has a Data Model. Let's use it!
 
+__Executive version__:
+Sources of available VA metadata (internal to VISTA and external) will be transformed and incorporated into an industry-standard, machine-processable data model, which is then annotated, categorized, normalized, and enhanced to support patient-centric security and symmetric read/write. This enriched data model is then embedded  in VISTA and operationalized as a server-side Node.js-based symmetric read/write Master VISTA Data Model.   
 
-__Twitter explanation__: VISTA has a Data Model. Let's use it!
 
  <!--more-->
 
