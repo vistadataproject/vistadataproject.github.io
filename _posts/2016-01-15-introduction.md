@@ -32,7 +32,7 @@ In a few easy steps..
 2. Once transformed to RDF, all internal and external metadata sources may be combined as a single, *comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.*
 
 <p data-pullquote="
-RDF is the metadata standard used by all major search engines to index all structured data on the web.
+RDF is the same metadata standard used by all major search engines to index all structured data on the web.
 "></p>
 
 
