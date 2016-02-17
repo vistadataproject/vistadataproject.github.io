@@ -11,7 +11,7 @@ The VISTA Data Project is a Federal inter-agency health systems research and dis
 <img style="padding-left: 5em" src="/assets/vdp-simple3.png"/>
 
 
-What is the relevance of this?
+Why is this important?
 
 <!--more-->
 
@@ -20,6 +20,7 @@ What is the relevance of this?
 The Veterans Health Administration (VHA) is the largest integrated healthcare delivery system in the United States with over 1,400 sites of care serving 8.76 million Veterans. The mission of VHA is to honor America's Veterans by providing exceptional healthcare services lifelong for all veterans in need, and to provide the highest quality care, everywhere.
 
 ### What is VISTA?
+
 The Veterans Information Systems and Technology Architecture (VISTA)1 is a nationwide comprehensive patient-centric integrated inpatient-outpatient Electronic Health Record (EHR) designed for and by VA clinicians to support all VHA clinical and business functions, and manages all veteran healthcare data and transactions. VISTA’s database is the Congressionally-designated authoritative data source for all Veterans health care delivery throughout the United States.  
 
 VISTA is production-proven for over thirty years, and is familiar to and has been used by 65% of all physicians in the United States.  VISTA is purpose-built for VHA and contains over three decades of institutional know-how of all business processes and patient care protocols of the VA, in addition to over thirty years of patient data, and currently continues to grow at a rate of over one million additional lab tests, medication orders, imaging studies, and documents each day.  The cumulative knowledge and data stored in VISTA today is in the hundreds of billions of facts in structured (but nonstandard) form. 
