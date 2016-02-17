@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg-001" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="160px"
+	 viewBox="0 0 160 160" enable-background="new 0 0 160 160" xml:space="preserve">
+<title  id="title-001">JSON logo</title>
+<linearGradient id="path7508_1_" gradientUnits="userSpaceOnUse" x1="-971.1904" y1="40.2139" x2="-858.3436" y2="-72.6489" gradientTransform="matrix(0.9988 0 0 -0.9987 992.2892 65.2709)">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path id="path7508" fill="url(#path7508_1_)" d="M79.865,119.1c35.397,48.256,70.04-13.469,69.989-50.587
+	c-0.061-43.886-44.541-68.414-70.018-68.414C38.943,0.099,0,33.895,0,80.135C0,131.531,44.641,160,79.835,160
+	c-7.964-1.146-34.506-6.834-34.863-67.967c-0.24-41.347,13.488-57.865,34.805-50.599c0.478,0.177,23.514,9.265,23.514,38.951
+	C103.292,109.945,79.865,119.1,79.865,119.1L79.865,119.1z"/>
+<linearGradient id="path7510_1_" gradientUnits="userSpaceOnUse" x1="-853.2354" y1="-67.5391" x2="-966.0813" y2="45.3228" gradientTransform="matrix(0.9988 0 0 -0.9987 992.2892 65.2709)">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path id="path7510" fill="url(#path7510_1_)" d="M79.823,41.401C56.433,33.339,27.78,52.617,27.78,91.229
+	C27.78,154.277,74.501,160,80.165,160C121.057,160,160,126.204,160,79.964c0-51.396-44.641-79.865-79.835-79.865
+	c9.748-1.35,52.541,10.55,52.541,69.037c0,38.142-31.953,58.905-52.735,50.034c-0.478-0.178-23.514-9.266-23.514-38.951
+	C56.456,50.659,79.823,41.401,79.823,41.401z"/>
+</svg>
