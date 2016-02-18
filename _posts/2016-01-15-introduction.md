@@ -4,30 +4,20 @@ title: Introduction
 author: rafael
 ---
 
-The VISTA Data Project is a Federal Inter-Agency health systems innovation project funded by the Veterans Affairs (VA) to 
+The VISTA Data Project is a Federal Interagency health systems project funded by the Veterans Affairs (VA) to 
 
 > provide a comprehensive, security-enabled, symmetric read/write master data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
 <img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 
-How does this work? 
+How? 
 
 >__Executive version__:  All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model.
 
->__Twitter version__: *VISTA has a Data Model. Let's use it!*
+>__Twitter version__: *VISTA has a Data Model. So let's use it!*
 
  <!--more-->
-
-__How?__
-
->__All sources of available metadata and models__ (both internal to VISTA as well as external) will be __transformed to a single integrated web-standard data model__ which is then __annotated, normalized, and enriched__. This enhanced model is in turn is __embedded back in VISTA as a server-side, security-enabled, transactional (i.e. computable) read/write Master Data Model__.   
-
-
-<img style="padding-left: 5em" src="/assets/vdp-simple4.png"/>
-
-
->__Twitter version__: *VISTA has a Data Model. So use it!*
 
 
 __Where?__
