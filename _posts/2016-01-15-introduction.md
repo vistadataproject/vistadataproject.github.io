@@ -22,7 +22,7 @@ and for the hipsters...
 
  <!--more-->
 
-__What is the process to create the Master VISTA Data Model?__
+## What is the process to create the Master VISTA Data Model?
 
 >__Model Extraction and Transformation__
 
@@ -49,7 +49,8 @@ __What is the process to create the Master VISTA Data Model?__
 >
 * The Master VISTA Data Model is then operationalized by embedding it directly within the transactional database engine of VISTA as an in-process, server-side  model using the Node.js/MUMPS binding mechanism.  This Node/VISTA wrapper on MUMPS is called nodeVISTA.  
 
-__The Result__
+
+## The Result
 
 The resulting Master VISTA Data Model embedded within the VISTA data engine will provide a server-side, security-enabled, in-process, symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
