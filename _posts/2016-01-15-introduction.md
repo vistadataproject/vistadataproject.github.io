@@ -22,19 +22,7 @@ and for the hipsters...
 
  <!--more-->
 
-## VISTA Data Project: Unique Features
-
-Feature | Details
----|---
-__Prototype-Driven__ |  Employs rapid iterative research and prototyping approach. *Not waterfall development*.
-__Data-centric__ | A data-centric approach to managing VISTA data fully leverages VISTA's native architecture.  *Not a code-centric approach*.
-__Representative__  | Exposes, leverages, and enhances all relevant, representative VA VISTA to the maximium extent available.  The VISTA Data Model comprises the current existing data-driven architecture of VISTA, and therefore leverages all existing VISTA definitions.
-__Noninvasive__ | The VISTA Data Model provides essential new functionality on top of the VISTA architecture 'as is' with no modification. <br><br>No existing VISTA code, routines, packages, modules, or infrastructure will be affected or changed in any way (i.e. this is 'safe' and 'noninvasive').
-__Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using the World Wide Web Consortium (W3C) [Web Data Model](https://github.com/vistadataproject/documents/tree/master/Background#standards) (RDF).
-
-
-
-## Creating the Master VISTA Data Model
+__What is the process to create the Master VISTA Data Model?__
 
 <p data-pullquote=" RDF is the same metadata standard used by all major search engines to index all structured data on the web."></p>
 
