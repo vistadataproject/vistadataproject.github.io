@@ -36,35 +36,31 @@ __Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using 
 
 ## Creating the Master VISTA Data Model
 
-__Model Extraction and Transformation__
+<p data-pullquote=" RDF is the same metadata standard used by all major search engines to index all structured data on the web."></p>
 
-* All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) must be extracted and transformed to a single, integrated, web-centric, industry-standard, machine-processable metadata model. 
+
+>__Model Extraction and Transformation__
+
+>* All sources of existing available metadata (both internal to VISTA as well as external, such as business logic from external applications) must be extracted and transformed to a single, integrated, web-centric, industry-standard, machine-processable metadata model. 
 * Currently the data model that meets all these criteria is the World Wide Web Consortium (W3C) Resource Description Framework (RDF), also known as Linked Data. 
 * This is the same metadata standard used by the National Library of Congress to index all books, the National Library of Medicine to index all medical journals, and all major search engines to index all structured data on the web.
 
-<p data-pullquote=" RDF is the same metadata standard used by all major search engines to index all structured data on the web."></p>
+>__Model Integration__
 
-__Model Integration__
-
-* Once transformed to Linked Data, all internal and external metadata sources may be combined as a single, comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.
+>* Once transformed to Linked Data, all internal and external metadata sources may be combined as a single, comprehensive integrated web-standard data model that spans all data in VISTA, as well as all relevant external data.
 
 
-__Model Enrichment__
+>__Model Enrichment__
+> 
+> * Annotation*: This integrated data model is then annotated with new data categories to provide the necessary data identification to support master data management of broad categories of data, such as patient data, systems and configuration data, institutional data, and knowledge data.
+* Security* The patient data annotations will provide the basis of a patient-centric, on-the-data data security model. 
+* Redundancy*: The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
+* Normalization*: A subset of the integrated model will be used to create a normalized model based on the VA's Virtual Patient Record (VPR).
+* Symmetric Read/Write*: Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model). Currently the methods for read and write are completely distinct models and often buried in procedural code. 
+* Enrichment*: All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the enriched model.
 
-* *Annotation*: This integrated data model is then annotated with new data categories to provide the necessary data identification to support master data management of broad categories of data, such as patient data, systems and configuration data, institutional data, and knowledge data.
-
-* *Security* The patient data annotations will provide the basis of a patient-centric, on-the-data data security model. 
-
-* *Redundancy*: The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
-
-* *Normalization*: A subset of the integrated model will be used to create a normalized model based on the VA's Virtual Patient Record (VPR).
-
-* *Symmetric Read/Write*: Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model). Currently the methods for read and write are completely distinct models and often buried in procedural code.
- 
-* *Enrichment*: All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the enriched model.
-
-__Model Operationalization__
-
+>__Model Operationalization__
+>
 * The enriched data model is then embedded back into VISTA and operationalized directly within the native transactional database engine of VISTA using the server-side Javascript / Node.js binding mechanism called nodeVISTA.  
 * This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
 
@@ -74,7 +70,7 @@ The resulting Master VISTA Data Model embedded within the VISTA data engine will
 
 
 
-For more technical details, [read on ...](https://github.com/vistadataproject/documents).
+For more technical details, [see the technical overview ...](https://github.com/vistadataproject/documents).
 
 
 
