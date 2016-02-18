@@ -35,6 +35,7 @@ body {
     <link rel="stylesheet" href="igw/tree/css/tree.css">
     <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/stackedBar.css">
     <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/d3tip.css">
+    <link type="text/css" rel="stylesheet" href="igw/treeMap/css/treeMap.css"/>
 
 </head>
 <body>
@@ -46,6 +47,7 @@ body {
   <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
   <option value="gatheringClass">Gathering Classes (Stacked Bar Chart)</option>
   <option value="bubbleChart">Lab, Prescription and Radiology Properities (Bubble Chart)</option>
+  <option value="treeMap">Lab, Prescription and Radiology Properities (Tree Map Chart)</option>
   
 </select>
 <div id="chartTitle" style="font-size: 18px"></div>
@@ -59,7 +61,9 @@ body {
     <td><center><div id="divSummary" style="font-size: 18pt">
     </div></center></td>
     <td><div id="divSvg" class="pie-chart">
-    </div></td>
+    </div>
+        <div class="legent"></div>
+    </td>
     <td><div id="div2ndChart" class="pie-chart">
     </div></td>
   </tr>
@@ -77,9 +81,11 @@ body {
 <script src="igw/stackedBar/js/stackedBar.js"></script>
 <script src="igw/stackedBar/ljs/d3.tip.v0.6.3.js"></script>
 <script src="igw/bubblePlus/js/bubblePlus.js"></script>
+<script type="text/javascript" src="igw/treeMap/js/treeMap.js"></script>
  
 
-<script>
+<script>    
+
 $(function() {
 
     $("#chartType").change(function () {
@@ -115,10 +121,38 @@ $(function() {
         }
         else if(chartName === 'bubbleChart') {
             displayBubbleChart('json/labPrescriptionRadiology.json');
-            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count');
+            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count/Bubble Chart <a id="bubble" href="#">Tree Map </a>');
+        }
+        else if(chartName === 'treeMap') {
+            displayTreeMap('json/labPrescriptionRadiology.json');
+            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count /Tree Map <a id="tree" href="#">Bubble Chart</a>');
         }
 
     });
+
+    $(document).on("click", "#bubble", function(e){
+        e.preventDefault();
+        displayTreeMap('json/labPrescriptionRadiology.json');
+        $('#chartTitle').html('Lab, Prescription & Radiology Properties Count /Tree Map <a id="tree" href="#">Bubble Chart</a>');
+    });    
+
+    $(document).on("click", "#tree", function(e){
+        e.preventDefault();
+            displayBubbleChart('json/labPrescriptionRadiology.json');
+            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count/Bubble Chart <a id="bubble" href="#">Tree Map </a>');
+    });    
+    function displayTreeMap(jsonPath, title) {
+        $("#divSvg").html("");
+        IFG.displayTreeMap({
+            width: 1200,
+            height: 620,
+            jsonPath : jsonPath,
+            valueTitle : "count",
+            nameTitle : "name",
+            divId: "divSvg"                 
+        });  
+        $("#chart1Title").html(title);      
+    }
 
     function displayPie(jsonPath, title) {
         $("#divSvg").html("");
@@ -185,7 +219,11 @@ $(function() {
             sizeKey: 'count',
             divId: 'divSvg',
             jsonPath: jsonPath,
-            r: 500
+            r: 500,
+            legendData: [{"label": "Lab", "color": "#FF7F0E"}, 
+                     {"label": "Prescription", "color": "#1F77B4"},
+                     {"label": "Radiology", "color": "#2CA02C"}]
+
         });
     }
 
