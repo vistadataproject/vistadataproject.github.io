@@ -22,9 +22,22 @@ and for the hipsters...
 
  <!--more-->
 
-## Creating the Master VISTA Data Model
+## VISTA Data Project: Unique Features
 
-A few steps..
+Feature | Details
+---|---
+__Prototype-Driven__ |  Employs rapid iterative research and prototyping approach. *Not waterfall development*.
+__Data-centric__ | A data-centric approach to managing VISTA data fully leverages VISTA's native architecture.  *Not a code-centric approach*.
+__Representative__  | Exposes, leverages, and enhances all relevant, representative VA VISTA to the maximium extent available.  The VISTA Data Model comprises the current existing data-driven architecture of VISTA, and therefore leverages all existing VISTA definitions.
+__Noninvasive__ | The VISTA Data Model provides essential new functionality on top of the VISTA architecture 'as is' with no modification. <br><br>No existing VISTA code, routines, packages, modules, or infrastructure will be affected or changed in any way (i.e. this is 'safe' and 'noninvasive').
+__Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using the World Wide Web Consortium (W3C) [Web Data Model](https://github.com/vistadataproject/documents/tree/master/Background#standards) (RDF).
+
+
+For more technical details, [read on ...](https://github.com/vistadataproject/documents).
+
+
+
+## Creating the Master VISTA Data Model
 
 __Model Extraction and Transformation__
 
@@ -58,22 +71,9 @@ __Model Operationalization__
 * The enriched data model is then embedded back into VISTA and operationalized directly within the native transactional database engine of VISTA using the server-side Javascript / Node.js binding mechanism called nodeVISTA.  
 * This embedded, server-side transactional master data model for VISTA is called the Master VISTA Data Model (MVDM).
 
+__The Result__
 
-The Master VISTA Data Model embedded within the VISTA data engine provides a server-side, security-enabled, in-process, real-time symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
-
-
-## VISTA Data Project: Unique Features
-
-Feature | Details
----|---
-__Prototype-Driven__ |  Employs rapid iterative research and prototyping approach. *Not waterfall development*.
-__Data-centric__ | A data-centric approach to managing VISTA data fully leverages VISTA's native architecture.  *Not a code-centric approach*.
-__Representative__  | Exposes, leverages, and enhances all relevant, representative VA VISTA to the maximium extent available.  The VISTA Data Model comprises the current existing data-driven architecture of VISTA, and therefore leverages all existing VISTA definitions.
-__Noninvasive__ | The VISTA Data Model provides essential new functionality on top of the VISTA architecture 'as is' with no modification. <br><br>No existing VISTA code, routines, packages, modules, or infrastructure will be affected or changed in any way (i.e. this is 'safe' and 'noninvasive').
-__Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using the World Wide Web Consortium (W3C) [Web Data Model](https://github.com/vistadataproject/documents/tree/master/Background#standards) (RDF).
-
-
-For more technical details, [read on ...](https://github.com/vistadataproject/documents).
+The resulting Master VISTA Data Model embedded within the VISTA data engine will provide a server-side, security-enabled, in-process, symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
 
 
