@@ -37,12 +37,12 @@ __What is the process to create the Master VISTA Data Model?__
 
 >__Model Enrichment__
 > 
-> * Annotation*: This integrated data model is then annotated with new data categories to provide the necessary data identification to support master data management of broad categories of data, such as patient data, systems and configuration data, institutional data, and knowledge data.
-* Security* The patient data annotations will provide the basis of a patient-centric, on-the-data data security model. 
-* Redundancy*: The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
-* Normalization*: A subset of the integrated model will be used to create a normalized model based on the VA's Virtual Patient Record (VPR).
-* Symmetric Read/Write*: Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model). Currently the methods for read and write are completely distinct models and often buried in procedural code. 
-* Enrichment*: All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the enriched model.
+> * __Annotation__: This integrated data model is then annotated with new data categories to provide the necessary data identification to support master data management of broad categories of data, such as patient data, systems and configuration data, institutional data, and knowledge data.
+* __Security__ The patient data annotations will provide the basis of a patient-centric, on-the-data data security model. 
+* __Redundancy__: The integrated data model will have much redundancy removed from overlapping definitions within VISTA and its associated applications.   
+* __Normalization__: A subset of the integrated model will be used to create a normalized model based on the VA's Virtual Patient Record (VPR).
+* __Symmetric Read/Write_: Supplementary metadata will be added to the normalized model to support symmetric read and write (i.e. the read model is the same as the write model). Currently the methods for read and write are completely distinct models and often buried in procedural code. 
+* __Enrichment_: All the annotations, normalizations, categorizations, and enhancements to the integrated model are called the enriched model.
 
 >__Model Operationalization__
 >
