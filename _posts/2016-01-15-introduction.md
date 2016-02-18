@@ -4,7 +4,7 @@ title: Introduction
 author: rafael
 ---
 
-The VISTA Data Project is a Federal Inter-Agency health systems innovation project funded by the Veterans Affairs (VA) to 
+The VISTA Data Project is an Inter-Agency Federal Health systems project funded by the Veterans Affairs (VA) to 
 
 > provide a comprehensive, security-enabled, symmetric read/write master data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
 
