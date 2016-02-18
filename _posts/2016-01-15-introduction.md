@@ -4,7 +4,6 @@ title: Introduction
 author: rafael
 ---
 
-<<<<<<< HEAD
 The VISTA Data Project is a Federal Inter-Agency health systems innovation project funded by the Veterans Affairs (VA) to 
 
 > provide a comprehensive, security-enabled, symmetric read/write master data model for all VA VISTA data across all VA VISTA operational systems, establishing a common technical foundation for master data management and computable data representation and exchange between VA and DoD clinical information systems. 
@@ -19,12 +18,6 @@ How does this work?
 and for the hipsters...
 
 >__Twitter version__: *VISTA has a Data Model. Let's use it!*
-=======
-The VISTA Data Project is an Inter-Agency Federal Health systems project funded by the Veterans Affairs (VA) to 
->>>>>>> 3b4c185ffc30ef646418607efb53724798b26fba
-
- >__Provide a comprehensive security-enabled read/write data model for all VA VISTA data  across VA VISTA operational systems__, establishing the technical foundation  for master data management and __computable data representation and exchange between VA and DoD clinical information systems__. --- See [PWS](https://github.com/vistadataproject/documents/blob/master/Submissions/src/VistAMetadata-2015-12-09-PWS.pdf) Section 1.1
- 
 
  <!--more-->
 
