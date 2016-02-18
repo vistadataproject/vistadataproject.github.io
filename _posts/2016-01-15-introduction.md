@@ -54,8 +54,7 @@ __The Result__
 The resulting Master VISTA Data Model embedded within the VISTA data engine will provide a server-side, security-enabled, in-process, symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
 
-
-For more technical details, [see the technical overview ...](https://github.com/vistadataproject/documents).
+For more details, [see the technical overview ...](https://github.com/vistadataproject/documents).
 
 
 
