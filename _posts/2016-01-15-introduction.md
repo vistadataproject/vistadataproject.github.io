@@ -33,9 +33,6 @@ __Noninvasive__ | The VISTA Data Model provides essential new functionality on t
 __Web-Standard <br>Data Model__  | Exposes VISTA data models and metadata using the World Wide Web Consortium (W3C) [Web Data Model](https://github.com/vistadataproject/documents/tree/master/Background#standards) (RDF).
 
 
-For more technical details, [read on ...](https://github.com/vistadataproject/documents).
-
-
 
 ## Creating the Master VISTA Data Model
 
@@ -76,6 +73,8 @@ __The Result__
 The resulting Master VISTA Data Model embedded within the VISTA data engine will provide a server-side, security-enabled, in-process, symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
 
+
+For more technical details, [read on ...](https://github.com/vistadataproject/documents).
 
 
 
