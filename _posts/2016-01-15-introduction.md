@@ -4,26 +4,24 @@ title: Introduction
 author: rafael
 ---
 
-### Secure Symmetric Read-Write Master Data Model for VA VISTA
-*A Research and Discovery Prototyype*
+#### Server-side. Security-enabled. Symmetric Read-Write.  Master Data Model for VA VISTA
+The VISTA Data Project is about comprehensively exposing and representing all of VA's 35 years of patient data and institutional know-how contained in  130 VA VISTA systems in a single, standards-based machine-processible form, and making all this data accessible and computable using one consistent read/write mechanism across all VISTA systems.
+
 
 __What?__
 
-> The VISTA Data Project is about comprehensively exposing and leveraging all of VA's 35 years of data and institutional know-how contained in the 130 VA VISTA databases in a single, secure, consistent, computable form.
+> The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which supports all adminstrative, financial, and clinical information needs to efficiently manage over 1200 hospitals and clinics throughout the U.S., and to provide veterans access to the highest quality of care, everywhere.  There are over 130 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 130. In addition, there is no single or consistent way to read or write data into any of these VA systems in computable form.
 
 __Why?__
-
-> The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which supports all adminstrative, financial, and clinical information needs to efficiently manage over 1200 hospitals and clinics throughout the U.S., and to provide veterans access to the highest quality of care, everywhere.  There are over 130 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 130. In addition, there is no secure, standard way to read or write data into any of these VA systems in computable form.
-
 > In order to support the needs of the VISTA Evolution Program, which includes creation of new web-based clients and services based on VISTA data,  VA needs a __single, consistent mechanism to both read and write computable data to support transactions against all of the 130 local VISTA systems as if they were only one, national master VISTA system__.  This would reduce the complexity of development and deployment of all new interfaces and services to VISTA data from 130 distinct VISTA systems to that of only one standardized, computable master VISTA data model.
+
+<img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
 __How?__
 
 >__Executive version__:  All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model.
 
 >__Twitter version__: *VISTA has a Data Model. So let's use it!*
-
-<img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
  <!--more-->
 
