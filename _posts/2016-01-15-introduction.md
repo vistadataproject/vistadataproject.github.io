@@ -20,7 +20,8 @@ __Why?__
 
 __How?__
 
-> All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model.
+> All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model. For more details, see the [technical overview ...](https://github.com/vistadataproject/documents#technical-overview).
+
 
 <img style="padding-left: 5em" src="/assets/vdp-simple6.png"/>
 
