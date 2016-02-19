@@ -17,14 +17,13 @@ __Why?__
 
 > In order to support the needs of the VISTA Evolution Program, which includes creation of new web-based clients and services based on VISTA data,  VA needs a __single, consistent mechanism to both read and write computable data to support transactions against all of the 130 local VISTA systems as if they were only one, national master VISTA system__.  This would reduce the complexity of development and deployment of all new interfaces and services to VISTA data from 130 distinct VISTA systems to that of only one standardized, computable master VISTA data model.
 
-<img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
-
-
 __How?__
 
 >__Executive version__:  All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model.
 
 >__Twitter version__: *VISTA has a Data Model. So let's use it!*
+
+<img style="padding-left: 5em" src="/assets/vdp-simple5.png"/>
 
  <!--more-->
 
