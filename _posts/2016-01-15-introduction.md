@@ -7,14 +7,16 @@ author: rafael
 ### A Master Data Model for VA VISTA:  Server-side. Security-enabled. Symmetric Read-Write.
 The VISTA Data Project is about comprehensively exposing and representing all of VA's 35 years of patient data and institutional know-how contained in  130 VA VISTA systems in a modern web-standard machine-processible form, and making all this data accessible and computable using a single consistent read/write mechanism across all VISTA systems.
 
+
 __What?__
 
-> The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which supports all adminstrative, financial, and clinical information needs to efficiently manage over 1200 hospitals and clinics throughout the U.S., and to provide veterans access to the highest quality of care, everywhere.  There are over 130 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 130. In addition, there is no single or consistent way to read or write data into any of these VA systems in computable form.
+> The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which provides all adminstrative, financial, and clinical information management to efficiently run over 1200 hospitals and clinics throughout the U.S., and thus provide veterans the highest quality of care, everywhere.  
+
+> There are over 130 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 130. As a result, there is no single consistent mechanism for reading and writing data into any of these VA systems .
 
 __Why?__
 
-> In order to support the needs of the VISTA Evolution Program, which includes creation of new web-based clients and services based on VISTA data,  VA needs a __single, consistent mechanism to both read and write computable data to support transactions against all of the 130 local VISTA systems as if they were only one, national master VISTA system__.  This would reduce the complexity of development and deployment of all new interfaces and services to VISTA data from 130 distinct VISTA systems to that of only one standardized, computable master VISTA data model.
-
+> In order to support the needs of  veterans and clinicians in today's web-oriented world, VA needs to create new web-based clients and services based on VISTA data. VA therefore needs a __single, consistent mechanism for both reading and writing data to all of the 130 local, unique VISTA systems as if they were only one, national master VISTA system__.  This reduces the complexity of development and deployment of new web interfaces and services from 130 distinct VISTA systems to that of only one standardized, computable master VISTA data model.
 
 __How?__
 
