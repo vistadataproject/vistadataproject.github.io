@@ -22,13 +22,10 @@ __How?__
 
 > All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model.
 
->__Twitter__: *VISTA has a Data Model. So use it!*
-
 <img style="padding-left: 5em" src="/assets/vdp-simple6.png"/>
 
  <!--more-->
-
-
+ 
 __Where?__
 
 > All artifacts and deliverables shall be developed, version-controlled, stored, and delivered on an industry-standard public Github repository (“Project Repository”). ... The Project Repository shall contain the one and only authoritative version of all artifacts produced ... The government, all necessary stakeholders, and the public shall have full read and download access of all artifacts on the Project Repository at all times --- See [PWS](https://github.com/vistadataproject/documents/blob/master/Submissions/src/VistAMetadata-2015-12-09-PWS.pdf) Section 1.6.15.1
@@ -39,7 +36,7 @@ __The Result__
 > The resulting Master VISTA Data Model embedded within the VISTA data engine will provide a server-side, security-enabled, in-process, symmetric read/write Master Data Model that internal and external clients can leverage for transactional, computable data exchange and processing.
 
 
-For more details, [see the technical overview ...](https://github.com/vistadataproject/documents).
+For more details, [see the technical overview ...](https://github.com/vistadataproject/documents#technical-overview).
 
 
 
