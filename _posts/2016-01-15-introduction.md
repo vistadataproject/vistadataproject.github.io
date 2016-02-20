@@ -5,9 +5,10 @@ author: rafael
 ---
 
 ### A Master Data Model for VA VISTA:  Server-side. Security-enabled. Symmetric Read-Write.
-The VISTA Data Project is about comprehensively exposing and representing all of VA's 35 years of patient data and institutional know-how contained in  130 VA VISTA systems in a modern web-standard machine-processible form, and making all this data accessible and computable using a single consistent read/write mechanism across all VISTA systems.
+The VISTA Data Project is about comprehensively exposing and representing all of VA's 35 years of patient data and institutional know-how contained in the 130 VA VISTA systems using a modern web-standard machine-processible form, and through enriching this model, make VISTA data accessible in computable form across all VISTA systems with a single, security-enabled, symmetric-read-write master data model.
 
-<img style="padding-left: 25em" src="/assets/vdp-basic-annotated6.png"/>
+
+<img style="padding-left: 10em" src="/assets/vdp-basic-annotated6.png"/>
 
 
 
