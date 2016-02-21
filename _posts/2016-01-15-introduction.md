@@ -10,11 +10,8 @@ The VISTA Data Project is about comprehensively exposing and representing all 35
 
 <img style="padding-left: 5em" src="/assets/vdp-basic-annotated7.png"/>
 
-
-
  <!--more-->
-
-
+ 
 __What?__
 
 > The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which provides all adminstrative, financial, and clinical information management to efficiently run over 1200 hospitals and clinics throughout the U.S., and thus provide veterans the highest quality of care, everywhere.  
@@ -28,8 +25,6 @@ __Why?__
 __How?__
 
 > All sources of relevant metadata (internal to VISTA as well as external) will be transformed to a single integrated web-standard data model which is then annotated, normalized, and enriched. This enriched model is embedded back in VISTA and operationalized as a server-side, security-enabled, in-process, symmetric read/write transactional Master VISTA Data Model. 
-
-<img style="padding-left: 5em" src="/assets/vdp-simple6.png"/>
 
  
 __Where?__
