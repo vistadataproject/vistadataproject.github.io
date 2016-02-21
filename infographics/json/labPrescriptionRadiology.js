@@ -11,8 +11,8 @@ if (parsedJSON.classes) {
     for (var i = 0; i < classLength; i++) {
         var cls = parsedJSON.classes[i];
         if (cls.fmDD.match(pattern)) { //only interested in the 5, 6, 7 groups
-            //label = cls.fmDD.replace('fmdd:', '') + ' ' + cls.label; //get the class name
-            label = cls.id 
+            label = cls.label + ' (' + cls.fmDD.replace('fmdd:', '') + ')'; //get the class name
+            //label = cls.id 
             size = cls.properties.length;
             for (var j = 0; j < size; j++) {
                 var prop = cls.properties[j];

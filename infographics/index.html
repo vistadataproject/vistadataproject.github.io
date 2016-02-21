@@ -29,6 +29,34 @@ body {
   position: absolute;
   display: none;
 }
+.btn {
+    background-color: #e7e7e7;
+    border: 2px solid #C8C8C8;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btnInactive {
+    background-color: #F9F9F9;
+    border: 2px solid #C8C8C8;
+    color: #BAAFB4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btnInactive:hover {
+    background-color: #000000;
+    color: white;
+}
 </style>
 <head>
     <link rel="stylesheet" type="text/css" href="igw/pie/css/pieChart.css">
@@ -46,8 +74,7 @@ body {
   <option value="prescriptionTree">Prescription Classes in Hierarchies (Tree Chart)</option>
   <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
   <option value="gatheringClass">Gathering Classes (Stacked Bar Chart)</option>
-  <option value="bubbleChart">Lab, Prescription and Radiology Properities (Bubble Chart)</option>
-  <option value="treeMap">Lab, Prescription and Radiology Properities (Tree Map Chart)</option>
+  <option value="lprBubbleTree">Lab, Prescription and Radiology Properities (Bubble/Tree Map Chart)</option>
   
 </select>
 <div id="chartTitle" style="font-size: 18px"></div>
@@ -98,34 +125,25 @@ $(function() {
         $('#div2ndChart').html("");
         if(chartName === 'linkLiteral') {
             displayPie('json/linkLiteral.json', "Properties");
-            $("#chartTitle").html("");
             $("#divSummary").html("Classes <br>2641");
             display2ndPie('json/literalType.json', 'Literal Properties');
 
         }
         else if(chartName === 'orderTree') {
             displayTree('json/classHierarchies101.json');
-            $("#chartTitle").html("Order Class in Hierarchies ");
         }
         else if(chartName === 'prescriptionTree') {
             displayTree('json/classHierarchies52.json');
-            $("#chartTitle").html("Prescription Class in Hierarchies ");
         }
         else if(chartName === 'labResultTree') {
             displayTree('json/classHierarchies63.json');
-            $("#chartTitle").html("Lab Result Class in Hierarchies ");
         }
         else if(chartName === 'gatheringClass') {
             displayStackedBar('json/gatheringClass.json');
-            $("#chartTitle").html("Gathering Class");
         }
-        else if(chartName === 'bubbleChart') {
+        else if(chartName === 'lprBubbleTree') {
             displayBubbleChart('json/labPrescriptionRadiology.json');
-            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count/Bubble Chart <a id="bubble" href="#">Tree Map </a>');
-        }
-        else if(chartName === 'treeMap') {
-            displayTreeMap('json/labPrescriptionRadiology.json');
-            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count /Tree Map <a id="tree" href="#">Bubble Chart</a>');
+            $('#chartTitle').html('<a id="tree" class="btn" href="#">Bubble Chart</a> <a id="bubble" class="btnInactive" href="#">Tree Map </a>');
         }
 
     });
@@ -133,13 +151,13 @@ $(function() {
     $(document).on("click", "#bubble", function(e){
         e.preventDefault();
         displayTreeMap('json/labPrescriptionRadiology.json');
-        $('#chartTitle').html('Lab, Prescription & Radiology Properties Count /Tree Map <a id="tree" href="#">Bubble Chart</a>');
+            $('#chartTitle').html('<a id="tree" class="btnInactive" href="#">Bubble Chart</a> <a id="bubble" class="btn" href="#">Tree Map </a>');
     });    
 
     $(document).on("click", "#tree", function(e){
         e.preventDefault();
             displayBubbleChart('json/labPrescriptionRadiology.json');
-            $('#chartTitle').html('Lab, Prescription & Radiology Properties Count/Bubble Chart <a id="bubble" href="#">Tree Map </a>');
+            $('#chartTitle').html('<a id="tree" class="btn" href="#">Bubble Chart</a> <a id="bubble" class="btnInactive" href="#">Tree Map </a>');
     });    
     function displayTreeMap(jsonPath, title) {
         $("#divSvg").html("");
