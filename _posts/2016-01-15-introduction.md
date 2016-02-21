@@ -10,6 +10,7 @@ The VISTA Data Project is about comprehensively exposing and representing all 35
 
 <img style="padding-left: 5em" src="/assets/vdp-basic-annotated8.png"/>
 
+
  <!--more-->
  
 __What?__
