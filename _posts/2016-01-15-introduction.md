@@ -6,14 +6,11 @@ author: rafael
 # VISTA Data Project
 
 ### A Real-time Computable Master Data Model for VA's VISTA Systems
-
 _Web-standard. Security-enabled. Symmetric-Read-Write._
 
-The VISTA Data Project is an approach to comprehensively expose and represent all 35 years of patient data and institutional know-how currently in the VA's 131 nationally deployed health information systems (VISTA) using a modern web-standard machine-processable data model; and by enriching this model, make all relevant VISTA data securely accessible and computable in real-time across all VA VISTA systems as one national, standard Master VISTA system.
-
+The VISTA Data Project is a new VA data-centric approach to comprehensively expose and represent all 35 years of patient data and institutional know-how currently in the VA's 131 nationally deployed health information systems (VISTA) using a modern web-standard machine-processable data model; and by enriching and operationalizing this model, make all relevant VISTA data securely accessible and computable in real-time across all VA VISTA systems as one national, standard Master VISTA system.
 
 <img style="padding-left: 5em" src="/assets/vdp-basic-annotated11.png"/>
-
 
 ## Features
 
@@ -35,22 +32,19 @@ __Empiric Evolution__ | Employs a rapid iterative prototyping approach to evolvi
 
 
 
-
-
-
 ## Objective and Method of Delivery
 
 __What?__
 
 > The VA Information Systems Technology Architecture (VISTA) is VA's an integrated EHR and resource management system which provides all adminstrative, financial, and clinical information management to efficiently run over 1200 hospitals and clinics throughout the U.S., and thus provide veterans the highest quality of care, everywhere.  
 
-> There are over 130 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 130. As a result, there is no single consistent mechanism for reading and writing data into any of these systems across the VA nationwide.
+> There are over 131 instances of VISTA deployed nationwide, and each has evolved independently over the past thirty-five years. The result is that each VISTA system has its own distinct database and distinct data model.  There is no single "VA system". There are 131. As a result, there is no single consistent mechanism for reading and writing data into any of these systems across the VA nationwide.
 
 __Why?__
 
-> Each of VA's 130 VISTA systems has a unique database and data model, and therefore cannot share any computable data across or between any of the other VISTA systems. Because veterans receive care at multiple facilities, and because VA needs to nationally coordinated approach to veteran care, these VISTA systems need to be functionally integrated as a single, national system.  In addition, in order to support the needs of  veterans and clinicians in today's web-oriented world, VA needs to create web-based clients and services based on VISTA data. 
+> Each of VA's 131 VISTA systems has a unique database and data model, and therefore cannot share any computable data across or between any of the other VISTA systems. Because veterans receive care at multiple facilities, and because VA needs to nationally coordinated approach to veteran care, these VISTA systems need to be functionally integrated as a single, national system.  In addition, in order to support the needs of veterans and clinicians in today's web-oriented world, VA needs to create new web-based clients and services based on all the past and present VISTA data. 
 
-> __VA therefore needs a single, consistent, web-standard mechanism for real-time read-write transactions to all of the 130 local, unique VISTA systems as if they were only one, national master VISTA system__.  This reduces the complexity of development, deployment, and maintenance for any new nationwide data service from any of the 130 distinct local VISTA systems to that of only one standardized computable Master VISTA system.
+> VA therefore needs a single, consistent, web-standard mechanism for real-time read-write transactions to all of the 131 local, unique VISTA systems as if they were only one, national master VISTA system.  This reduces the complexity of development, deployment, and maintenance for any new nationwide data service from any of the 130 distinct local VISTA systems to that of only one standardized computable Master VISTA system.
 
 __How?__
 
