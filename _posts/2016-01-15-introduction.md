@@ -3,7 +3,7 @@ layout: post
 title: Introduction
 author: rafael
 ---
-## VISTA Data Project
+# VISTA Data Project
 ### A Real-time Computable Master Data Model for VA's VISTA Systems
 
 _Web-standard. Security-enabled. Symmetric-Read-Write._
