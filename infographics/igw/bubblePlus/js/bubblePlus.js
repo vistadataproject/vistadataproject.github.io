@@ -136,7 +136,7 @@ function setLegend(json) {
         packages.append(json[i]["packageName"]);
     }
     console.log(JSON.stringify(packages));
-    return;
+    // return;
 
     if (legendData.length == 0)
         return;
