@@ -8,7 +8,7 @@ author: rafael
 ### A Real-time Computable Master Data Model for VA's VISTA Systems
 _Web-standard. Security-enabled. Symmetric-Read-Write._
 
-The VISTA Data Project is VA's new data-centric approach to comprehensively exposing and representing all of the 35 years of patient data and institutional know-how currently in the VA's 131 nationally deployed health information systems (VISTA) using a modern web-standard machine-processable data model; and by enriching and operationalizing this model, make all relevant VISTA data securely accessible and computable in real-time across all VA VISTA systems as one national, standard Master VISTA system.
+The VISTA Data Project is a new data-centric approach to comprehensively expose and represent all of the thirty-five years of patient data and institutional know-how currently in the VA's 131 nationally deployed health information systems (VISTA) using a modern web-standard machine-processable data model; and by enriching and operationalizing this model, make all relevant VISTA data securely accessible and computable in real-time across all VA VISTA systems as one national, standard Master VISTA system.
 
 <img style="padding-left: 5em" src="/assets/vdp-basic-annotated12.png"/>
 
@@ -16,7 +16,7 @@ The VISTA Data Project is VA's new data-centric approach to comprehensively expo
 
 ## Features
 
-The VISTA Data Project is a new purely data-centric approach to VISTA's data.  In a data-centric approach one must first comprehensively expose all the data in a system. This in turn __exposes the fact that VISTA has a data model__. It has been there for 35 years.  But up until now, this model has not been comprehensively surfaced nor taken advantage of.   
+The VISTA Data Project is a new purely data-centric approach to VISTA's data. As opposed to a code-centric approach, where data is divided into thousands of small, isolated, disconnected fragments encapsulated within procedural interface code,  in a data-centric approach one first comprehensively and holistically exposes all the data in the system, revealing the native underlying and overarching data model. This data model - the roadmap to all of VA's institutioal knowhow and data - has organically evolved over the past 35 years, hidden from view.  Now, for the first time, this model will be comprehensively surfaced and taken advantage of. 
 
 *New and unique features for VISTA that an operationalized Master VISTA Data Model (MVDM) will provide:*
 
