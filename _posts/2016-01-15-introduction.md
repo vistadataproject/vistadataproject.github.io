@@ -44,10 +44,6 @@ __Data-Centric__ | __MVDM is a completely new, purely data-centric approach to m
 __Web-Standard__ |  __MVDM technologies are 100% web standard__ and all used in production settings by the worlds' largest corporations and organizations.  For further information see [standards and technologies](https://github.com/vistadataproject/documents/tree/master/Background#standards).
 __Empiric Evolution__ | __MVDM employs a new approach to emprically evolving VISTA's capabilities through rapid, iterative, functional prototypes.__ This allows the focus to remain on exploration of new techniques and approaches, rather than on more superficial end-user requirements, which rarely if ever attempt to tackle the deep conceptual and technological issues of data management. This is *the opposite waterfall development*.  See [spiral model](https://en.wikipedia.org/wiki/Spiral_model)
 
-__Note: As a side-effect of VA taking a data-centric, model-driven approach to VISTA's data, a very high percentage of VISTA's legacy code, which is undocumented and unmaintainable - can be retired.__
-
-
-
 
 
 ## Objective and Method of Delivery
