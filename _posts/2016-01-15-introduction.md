@@ -4,6 +4,9 @@ title: Introduction
 author: rafael
 ---
 
+![vdpiceberg](https://github.com/vistadataproject/documents/blob/master/images/src/iceberg/vdp-iceberg-new-1000w.png)
+
+
 # VISTA Data Project
 
 ### A Real-time Computable Master Data Model for VA's VISTA Systems
