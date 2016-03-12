@@ -5,7 +5,7 @@ author: rafael
 ---
 
 
-![vdpiceberg](/assets/vdp-iceberg-1000w.jpg)
+![vdpiceberg](/assets/vdp-iceberg.jpg)
 
 
 
