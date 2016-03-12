@@ -7,11 +7,6 @@ author: rafael
 ![vdpiceberg](/assets/vdp-iceberg-1000w.png)
 
 
-# .
-
-<img style="padding-left: 5em" src="/assets/vdp-basic-annotated12.png"/>
-
-
 
 # VISTA Data Project
 
