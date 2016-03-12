@@ -6,6 +6,8 @@ author: rafael
 
 ![vdpiceberg](/assets/vdp-iceberg-1000w.png)
 
+![vdpiceberg](/assets/vdp-iceberg-1000w.jpg)
+
 
 
 # VISTA Data Project
