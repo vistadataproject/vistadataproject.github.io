@@ -7,19 +7,20 @@ title: CPRS RPC Use
 
   1. (OSEHRA) CPRS uses __867 (26.26%) of the 3302 RPCs known__ to nodeVISTA (in its 8994 file).
   2. eHMP (r1.3 Oct 2015) uses 44 (5.07%) of the CPRS-supported RPCs and extra custom RPC(s) (HMPCRPC RPC).
-  3. Sources examined: [OSEHRA CPRS Chart Source](https://github.com/OSEHRA/VistA/tree/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart), [Vitals DLL](https://www.osehra.org/document/guis-used-automatic-functional-testing) and [eHMP r1.3](https://github.com/vistadataproject/nodeVISTA/tree/master/eHMP/Resources).
+  3. JLV uses 14 (Get) RPCs in addition to its mainstay, the non CPRS-used VPR RPC
+  4. Sources examined: [OSEHRA CPRS Chart Source](https://github.com/OSEHRA/VistA/tree/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart), [Vitals DLL](https://www.osehra.org/document/guis-used-automatic-functional-testing), [eHMP r1.3](https://github.com/vistadataproject/nodeVISTA/tree/master/eHMP/Resources) and [JLV RPC Use](https://github.com/vistadataproject/nodeVISTA/issues/26).
 
 
 
 \# | RPC | CPRS File(s) | Description
 --- | --- | --- | ---
-1 | DG CHK BS5 XREF ARRAY | rCore.pas, fPtSel.pas | CHECKS IF OTHER PATIENTS ON 'BS5' XREF WITH SAME LAST NAMERETURN 1 OR 0 IN 1ST STRING (-1 IF BAD DFN OR NO ZERO NODE).RETURNS ARRAY NODES WHERE TEXT IS PRECEEDED BY 0 AND PATIENT DATAIS PRECEEDED BY 1.  PATIENT DATA WILL BE IN FOLLOWING FORMAT: 1^DFN^PATIENT NAME^DOB^SSN
-2 | DG CHK BS5 XREF Y/N | rCore.pas | CHECKS IF OTHER PATIENTS ON "BS5" XREF WITH SAME LAST NAMERETURNS 1 OR 0 IN 1ST STRING (OR -1 IF BAD DFN OR NO ZERO NODE)IF 1 RETURNS TEXT TO BE DISPLAYED
-3 | DG CHK PAT/DIV MEANS TEST | rCore.pas | CHECKS IF MEANS TEST REQUIRED FOR PATIENT ANDCHECKS IF MEANS TEST DISPLAY REQUIRED FOR USER'S DIVISIONRETURNS 1 IN 1ST STRING IF BOTH TRUE OTHERWISE 0IF BOTH TRUE RETURNS TEXT IN 2ND AND 3RD STRING (IF ANY)
-4 | DG SENSITIVE RECORD ACCESS | rCore.pas | This Remote Procedure Call (RPC) will:         - Verify user is not accessing his/her own Patient file record ifthe Restrict Patient Record Access (#1201) field in the MAS parameters(#43) file is set to yes and the user does not hold the DG RECORD ACCESSsecurity key.  If parameter set to yes and user is not a key holder , asocial security number must be defined in the New Person file for the userto access any Patient file record.         - Determine if user accessing a sensitive record or an employee'srecord.
-5 | DG SENSITIVE RECORD BULLETIN | rCore.pas | This Remote Procedure Call (RPC) will add an entry to the DG SECURITY LOG(#38.1) file and/or generate the sensitive record access bulletindepending on the value in ACTION input parameter.  If ACTION parameter notdefined, defaults to update DG Security Log file and generate SensitiveRecord Access mail message.
+1 | DG CHK BS5 XREF ARRAY | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas), [fPtSel.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPtSel.pas) | CHECKS IF OTHER PATIENTS ON 'BS5' XREF WITH SAME LAST NAMERETURN 1 OR 0 IN 1ST STRING (-1 IF BAD DFN OR NO ZERO NODE).RETURNS ARRAY NODES WHERE TEXT IS PRECEEDED BY 0 AND PATIENT DATAIS PRECEEDED BY 1.  PATIENT DATA WILL BE IN FOLLOWING FORMAT: 1^DFN^PATIENT NAME^DOB^SSN
+2 | DG CHK BS5 XREF Y/N | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | CHECKS IF OTHER PATIENTS ON "BS5" XREF WITH SAME LAST NAMERETURNS 1 OR 0 IN 1ST STRING (OR -1 IF BAD DFN OR NO ZERO NODE)IF 1 RETURNS TEXT TO BE DISPLAYED
+3 | DG CHK PAT/DIV MEANS TEST | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | CHECKS IF MEANS TEST REQUIRED FOR PATIENT ANDCHECKS IF MEANS TEST DISPLAY REQUIRED FOR USER'S DIVISIONRETURNS 1 IN 1ST STRING IF BOTH TRUE OTHERWISE 0IF BOTH TRUE RETURNS TEXT IN 2ND AND 3RD STRING (IF ANY)
+4 | DG SENSITIVE RECORD ACCESS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This Remote Procedure Call (RPC) will:         - Verify user is not accessing his/her own Patient file record ifthe Restrict Patient Record Access (#1201) field in the MAS parameters(#43) file is set to yes and the user does not hold the DG RECORD ACCESSsecurity key.  If parameter set to yes and user is not a key holder , asocial security number must be defined in the New Person file for the userto access any Patient file record.         - Determine if user accessing a sensitive record or an employee'srecord.
+5 | DG SENSITIVE RECORD BULLETIN | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This Remote Procedure Call (RPC) will add an entry to the DG SECURITY LOG(#38.1) file and/or generate the sensitive record access bulletindepending on the value in ACTION input parameter.  If ACTION parameter notdefined, defaults to update DG Security Log file and generate SensitiveRecord Access mail message.
 &nbsp; | &nbsp; | &nbsp; | &nbsp;
-6 | GMRC LIST CONSULT REQUESTS | rTIU.pas | This RPC will return a list of active and pending consult requests toassociate a result with.
+6 | GMRC LIST CONSULT REQUESTS | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC will return a list of active and pending consult requests toassociate a result with.
 &nbsp; | &nbsp; | &nbsp; | &nbsp;
 7 | GMV ADD VM<br>__eHMP__ | GMV_VitalsViewEnter.dll | This remote procedure call is used to enter a new Vital/Measurement recordin the GMRV Vital Measurement file (#120.5). This remote procedure call is documented in Integration Agreement 3996.
 8 | GMV ALLERGY | GMV_VitalsViewEnter.dll | This remote procedure call retrieves the patient's allergy information. This remote procedure call is documented in Integration Agreement 4350.
@@ -38,956 +39,956 @@ title: CPRS RPC Use
 21 | GMV V/M ALLDATA<br>__eHMP__ | GMV_VitalsViewEnter.dll | This remote procedure call lists all vitals/measurements data for a givendate/time span. This remote procedure call is documented in Integration Agreement 4654.
 22 | GMV VITALS/CAT/QUAL<br>__eHMP__ | GMV_VitalsViewEnter.dll | Returns all qualifier information for the vital types selected. This remote procedure call is documented in Integration Agreement 4359.
 &nbsp; | &nbsp; | &nbsp; | &nbsp;
-23 | OR GET COMBAT VET | uCombatVet.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-24 | ORALWORD ALLWORD | Orders/rODMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-25 | ORB DELETE ALERT | rCore.pas | This function deletes an alert.
-26 | ORB FORWARD ALERT | rCore.pas | The rpc forwards an alert.
-27 | ORB RENEW ALERT | rCore.pas | This rpc renews an alert.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-28 | ORCDLR2 CHECK ALL LC TO WC | Orders/rODLab.pas | 
-29 | ORCDLR2 CHECK ONE LC TO WC | Orders/rODLab.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-30 | ORCHECK DELMONO | Orders/rOrders.pas | 
-31 | ORCHECK GETMONO | Orders/rOrders.pas | 
-32 | ORCHECK GETMONOL | Orders/rOrders.pas | 
-33 | ORCHECK GETXTRA | Orders/rOrders.pas | 
-34 | ORCHECK ISMONO | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-35 | ORCNOTE GET TOTAL | fNotes.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-36 | ORDDPAPI ADMTIME | Orders/rODMeds.pas | 
-37 | ORDDPAPI CLOZMSG | Orders/rODMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-38 | ORDEA CSVALUE | uCore.pas | 
-39 | ORDEA DEATEXT | Orders/fOrdersSign.pas, fReview.pas | Returns the text to show on the signature dialog mandated by DEA for when a controlled substance order is selected to be signed.
-40 | ORDEA HASHINFO | Orders/fOrdersSign.pas, fReview.pas | 
-41 | ORDEA LNKMSG | Orders/uOrders.pas | Returns the text of the OR DEA PIV LINK MSG parameter.
-42 | ORDEA ORDHINFO | Orders/fOrdersSign.pas, fReview.pas | 
-43 | ORDEA PINLKCHK | Orders/fOrdersSign.pas, fReview.pas | 
-44 | ORDEA PINLKSET | Orders/fOrdersSign.pas, fReview.pas | 
-45 | ORDEA PNDHLD | Orders/rOrders.pas | 
-46 | ORDEA SIGINFO | Orders/fOrdersSign.pas, fReview.pas | returns the provider/patient info that must be displayed when signing a controlled substance order(s)
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-47 | ORECS01 CHKESSO | rECS.pas | 
-48 | ORECS01 ECPRINT | rECS.pas | 
-49 | ORECS01 ECRPT | rECS.pas | 
-50 | ORECS01 GETDIV | rECS.pas | 
-51 | ORECS01 SAVPATH | rECS.pas | 
-52 | ORECS01 VSITID | rECS.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-53 | OREVNTX ACTIVE | Orders/rOrders.pas | 
-54 | OREVNTX LIST | Orders/rOrders.pas | 
-55 | OREVNTX PAT | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-56 | OREVNTX1 AUTHMREL | Orders/rOrders.pas | 
-57 | OREVNTX1 CHGEVT | Orders/rOrders.pas | 
-58 | OREVNTX1 CMEVTS | Orders/rOrders.pas | 
-59 | OREVNTX1 COMP | Orders/rOrders.pas | 
-60 | OREVNTX1 CPACT | Orders/rOrders.pas | 
-61 | OREVNTX1 CURSPE | Orders/rOrders.pas | 
-62 | OREVNTX1 DEFLTS | Orders/rOrders.pas | 
-63 | OREVNTX1 DELDFLT | Orders/rOrders.pas | 
-64 | OREVNTX1 DELPTEVT | Orders/rOrders.pas | 
-65 | OREVNTX1 DFLTDLG | Orders/rOrders.pas | 
-66 | OREVNTX1 DFLTEVT | Orders/rOrders.pas | 
-67 | OREVNTX1 DIV | Orders/rOrders.pas | 
-68 | OREVNTX1 DIV1 | Orders/rOrders.pas | 
-69 | OREVNTX1 DLGIEN | Orders/rOrders.pas | 
-70 | OREVNTX1 DONE | Orders/rOrders.pas | 
-71 | OREVNTX1 EMPTY | Orders/rOrders.pas | 
-72 | OREVNTX1 EVT | Orders/rOrders.pas | 
-73 | OREVNTX1 EXISTS | Orders/rOrders.pas | 
-74 | OREVNTX1 GETDLG | Orders/rOrders.pas | 
-75 | OREVNTX1 GETSTS | Orders/rOrders.pas | 
-76 | OREVNTX1 GTEVT | Orders/rOrders.pas | 
-77 | OREVNTX1 GTEVT1 | Orders/rOrders.pas | 
-78 | OREVNTX1 HAVEPRT | Orders/rOrders.pas | 
-79 | OREVNTX1 ISPASS | Orders/rOrders.pas | 
-80 | OREVNTX1 ISPASS1 | Orders/rOrders.pas | 
-81 | OREVNTX1 LOC | Orders/rOrders.pas | 
-82 | OREVNTX1 LOC1 | Orders/rOrders.pas | 
-83 | OREVNTX1 MATCH | Orders/rOrders.pas | 
-84 | OREVNTX1 MULTS | Orders/rOrders.pas | 
-85 | OREVNTX1 NAME | Orders/rOrders.pas | 
-86 | OREVNTX1 ODPTEVID | Orders/rOrders.pas | 
-87 | OREVNTX1 PRMPTID | Orders/rOrders.pas | 
-88 | OREVNTX1 PROMPT IDS | Orders/rOrders.pas | 
-89 | OREVNTX1 PUTEVNT | Orders/rOrders.pas | 
-90 | OREVNTX1 SETDFLT | Orders/rOrders.pas | 
-91 | OREVNTX1 TYPEXT | Orders/rOrders.pas | 
-92 | OREVNTX1 WRLSTED | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-93 | ORIMO IMOLOC | Orders/rOrders.pas | 
-94 | ORIMO IMOOD | Orders/rOrders.pas | 
-95 | ORIMO ISCLOC | fPrintLocation.pas, Orders/rOrders.pas | 
-96 | ORIMO ISIVQO | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-97 | ORPRF CLEAR | uOrPtf.pas | 
-98 | ORPRF GETFLG | uOrPtf.pas | 
-99 | ORPRF HASFLG | uOrPtf.pas | 
-100 | ORPRF TRIGGER POPUP | uOrPtf.pas | Returns 1 if popup flag display should be triggered for given patient uponpatient selection. If not, returns 0. Does not require clean-up aftercalling it since it does not set arrays or globals.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-101 | ORQOR DETAIL<br>__eHMP__ | Orders/rOrders.pas | Returns detailed information regarding an order.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-102 | ORQPT ATTENDING/PRIMARY | rDCSumm.pas | Returns a patient's attending physician and primary provider.
-103 | ORQPT CLINIC PATIENTS | rCore.pas | Returns patients with appointments at a clinic between start and stop dates
-104 | ORQPT DEFAULT CLINIC DATE RANG | rCore.pas | Returns default start and stop dates for clinics in the form: start^stop.Start and stop are free text and are not in FM format.  
-105 | ORQPT DEFAULT LIST SORT | rCore.pas | Returns the current user's default patient selection list SORT ORDERsetting.
-106 | ORQPT DEFAULT LIST SOURCE | rCore.pas | Function returns the source of the current user's default patient list.
-107 | ORQPT KILL RPL | rCore.pas | This RPC is passed a ^TMP file root and $J(job number) and kills the ^TMP("ORRPL",$J globaldata based on the passed file root w/job number.
-108 | ORQPT MAKE RPL | rCore.pas | Passes Team List IEN, creates a TMP file entry of patients based thereon, and receives a $J job number in return.
-109 | ORQPT PATIENT TEAM PROVIDERS | rProbs.pas | Function returns a list of providers linked to a patient via teams.
-110 | ORQPT PROVIDER PATIENTS | rCore.pas | Function returns an array of patients linked to a provider/user.
-111 | ORQPT READ RPL | rCore.pas | Passes global reference and other parameters, and receives a list of patients (up to 44 maximum) with IENs, for use in scrolling a Long List Box (LLB) componenet.
-112 | ORQPT SPECIALTIES | rCore.pas | Function returns an array of treating specialties.
-113 | ORQPT SPECIALTY PATIENTS | rCore.pas | Function returns an array of patients linked to a treating specialty.
-114 | ORQPT TEAM PATIENTS | rCore.pas | Function returns an array of patients on a team.
-115 | ORQPT TEAMS | rCore.pas | Function returns a list of teams.
-116 | ORQPT WARDS | rCore.pas | Function returns a list of wards.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-117 | ORQQAL DETAIL | rCover.pas | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by "^" and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by ";"), comments.
-118 | ORQQAL LIST | rCover.pas | Returns a list of allergies for a patient.
-119 | ORQQAL LIST REPORT | rCover.pas | Returns a list of allergens, severity and signs/symptoms in a reportformat which can be used in a "detailed" display.  This RPC was set upto support the listing of allergies when selected from the Patient Postingslist.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-120 | ORQQCN ADDCMT | Consults/rConsults.pas | Allows addition of a comment to a consult request/consult without changingits status. Optionally, allows sending of an alert to the requestingprovider and others.
-121 | ORQQCN ADMIN COMPLETE | Consults/rConsults.pas | 
-122 | ORQQCN ASSIGNABLE MED RESULTS | Consults/rConsults.pas | Returns a list of medicine results that can be attached to a procedure.
-123 | ORQQCN ATTACH MED RESULTS | Consults/rConsults.pas | Allows a med result to be attached to a procedure request.
-124 | ORQQCN CANEDIT | Consults/rConsults.pas | Returns indication of whether a consult/procedure request can beresubmitted.
-125 | ORQQCN DEFAULT REQUEST REASON | Consults/rConsults.pas | 
-126 | ORQQCN DETAIL | Consults/rConsults.pas | Returns formatted detailed information regarding the consult request,including result report if available.
-127 | ORQQCN DISCONTINUE | Consults/rConsults.pas | Discontinue a consult or deny a consult request.
-128 | ORQQCN EDIT DEFAULT REASON | Consults/rConsults.pas | Return value (see details there) determines if and when the consults'reason for request' can be edited.
-129 | ORQQCN FIND CONSULT | Consults/rConsults.pas | Given a Consult IEN in file 123, return a formatted list item for thatsingle consult only, in the same format as returned by ORQQCN LIST.
-130 | ORQQCN FORWARD | Consults/rConsults.pas | Forwards a consult to a subservice of the forwarding service, as definedin file 123.5
-131 | ORQQCN GET CONSULT | Consults/rConsults.pas | Given a Consult ID from file 123, return the zero node to the client forloading into a consult record in RESULTS[0].  If the consult has anyassociated TIU records (completion, addenda) these will be returned inRESULTS[i..j].
-132 | ORQQCN GET MED RESULT DETAILS | Consults/rConsults.pas | Detailed display of medicine results.
-133 | ORQQCN GET ORDER NUMBER | Orders/rOrders.pas, Consults/rConsults.pas | 
-134 | ORQQCN GET PROC IEN | Consults/rConsults.pas | Given orderable item IEN, return pointer to file 123.3
-135 | ORQQCN GET PROC SVCS | Consults/rConsults.pas | Given an orderable item from the S.PROC XREF in 101.43, return theConsults service from 123.5 that can perform the procedure.
-136 | ORQQCN GET SERVICE IEN | Consults/rConsults.pas | 
-137 | ORQQCN ISPROSVC | Consults/rConsults.pas | RPC will return 1 or 0 if the supplied file entry from 123.5 is marked as part of the Consults-Prosthetics interface.  This RPC is used to disable the Earliest Appropriate Date field and value when ordering Prosthetics requests via CPRS GUI.
-138 | ORQQCN LIST | Consults/rConsults.pas | Returns a list of consult requests for a patient within optional date rangeand optional service.
-139 | ORQQCN MED RESULTS | Consults/rConsults.pas | Returns a display of Medicine Package results, followed by any TIUresults.
-140 | ORQQCN PRINT SF513 | Consults/rConsults.pas | 
-141 | ORQQCN PROVDX | Consults/rConsults.pas | 
-142 | ORQQCN RECEIVE | Consults/rConsults.pas | Test version of RECEIVE CONSULT for use with GUI.  (REV - 8/22/97)
-143 | ORQQCN REMOVABLE MED RESULTS | Consults/rConsults.pas | Returns list of medicine results that are currently attached to aprocedure.
-144 | ORQQCN REMOVE MED RESULTS | Consults/rConsults.pas | Allows removal of medicine results from a  procedure.
-145 | ORQQCN RESUBMIT | Consults/rConsults.pas | Allows resubmission of a cancelled consult or procedure request afterediting.  This is a backdoor resubmission, and CPRS will be notified viathe HL7 proocess.
-146 | ORQQCN SET ACT MENUS | Consults/rConsults.pas | Based on the IEN of the consult passed in, returns a string representingvarious facets of the user's access level for that consult and service.This allows dynamic enabling/disabling of GUI menus based on the user'sability to act on that particular consult.  
-147 | ORQQCN SF513 WINDOWS PRINT | Consults/rConsults.pas | Print consults Standard Form 513 to Windows device from GUI application.
-148 | ORQQCN SHOW SF513 | Consults/rConsults.pas | Returns text of consults standard form 513 for display in GUI application.
-149 | ORQQCN SIGFIND | Consults/rConsults.pas | 
-150 | ORQQCN STATUS | Consults/rConsults.pas | Returns a list of consult statuses currently in use, as reflected in the"AC" XREF of ^GMR(123.1.
-151 | ORQQCN SVC W/SYNONYMS | Consults/rConsults.pas | This is a modified version of ORQQCN GET SERVICE TREE that also includessynonyms for the services returned. It also allows passing of an optionalConsult IEN, for screening allowable services to forward the consult to,especially in the case of interfacility consults.
-152 | ORQQCN SVCLIST | Consults/rConsults.pas | Because the combo box on the Consults order dialog needs to include ashortlist at the top, a call was needed that returned the list of consultsservices alphabetically as a long list.  This is it.
-153 | ORQQCN SVCTREE | Consults/rConsults.pas | Returns a specially formatted list of consult services for use inpopulating a GUI TreeView control.
-154 | ORQQCN UNRESOLVED | Consults/rConsults.pas | Returns 1 if current user has unresolved consults for current patient, 0 if not.
-155 | ORQQCN URGENCIES | Consults/rConsults.pas | Returns a list of applicable urgencies from PROTOCOL file 101,given a ConsultIEN and type.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-156 | ORQQCN2 GET CONTEXT | Consults/rConsults.pas | 
-157 | ORQQCN2 GET PREREQUISITE | Consults/rConsults.pas | Returns resolved boilerplate form CONSULT SERIVCES file (123.5) reflectingthe service's prerequisites for ordering a consult.
-158 | ORQQCN2 SAVE CONTEXT | Consults/rConsults.pas | 
-159 | ORQQCN2 SCHEDULE CONSULT | Consults/rConsults.pas | Changes status of consult to "Scheduled", optionally adding a comment andsending alerts.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-160 | ORQQPL ADD SAVE<br>__eHMP__ | BA/fBALocalDiagnoses.pas, rProbs.pas | Add new problem record
-161 | ORQQPL AUDIT HIST | rProbs.pas | RETURN PROBLEM AUDIT HISTORY
-162 | ORQQPL CHECK DUP | rProbs.pas | 
-163 | ORQQPL CLIN FILTER LIST | rProbs.pas | rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN
-164 | ORQQPL CLIN SRCH | rProbs.pas | Returns list of clinics for problem list. Should be replaced by CLIN^ORQPT
-165 | ORQQPL DELETE<br>__eHMP__ | rProbs.pas | DELETES A PROBLEM
-166 | ORQQPL DETAIL | rCover.pas | Function returns a string of detailed information for a problem.
-167 | ORQQPL EDIT LOAD | rProbs.pas | Return array of default fields and original fields - GMPFLD() and GMPORIG()
-168 | ORQQPL EDIT SAVE<br>__eHMP__ | rProbs.pas | sAVES EDITED PROBLEM RECORD
-169 | ORQQPL INIT PT | BA/UBAGlobals.pas, rProbs.pas | returns death indicator, sc and exposures
-170 | ORQQPL INIT USER | rProbs.pas | Returns user parameters for problem list
-171 | ORQQPL LIST | rCover.pas | Function returns a list of problems for a patient.
-172 | ORQQPL PROB COMMENTS | rProbs.pas | Returns a list of comments associated with a problem IEN.
-173 | ORQQPL PROBLEM LIST | rProbs.pas | Problem list for CPRS GUI client
-174 | ORQQPL PROBLEM NTRT BULLETIN | rProbs.pas | This RPC generates a bulletin to the OR CAC Mail Group, indicating that an unresolved term needs to be requested using the New Term Rapid Turnaround website at http://hdrmul7.aac.domain.ext:7151/ntrt/.
-175 | ORQQPL PROV FILTER LIST | rProbs.pas | RETURNS A LIST OF PROVIDERS CORRESPONDING TO INPUT ARRAY OF IEN
-176 | ORQQPL PROVIDER LIST | rProbs.pas | RETURNS ARRAY OF PROVIDERS MATCHING INPUT
-177 | ORQQPL REPLACE | rProbs.pas | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
-178 | ORQQPL SAVEVIEW | rProbs.pas | Saves preferred view (inpatient/outpatient) and list of preferredclinics/services to NEW PERSON file, field 125.nn.  Also sets value ofparameter [ORCH CONTEXT PROBLEMS], which controls the default status ofthe problems shown, as well as whether comments should be displayed.Preferences take effect for both GUI and List Manager, and can be changedfrom either interface.
-179 | ORQQPL SERV FILTER LIST | rProbs.pas | RETURNS ARRAY OF IEN^NAME FOR INPUT ARRAY OF IEN
-180 | ORQQPL SRVC SRCH | rProbs.pas | gET LIST OF AVAILABLE SERVICES
-181 | ORQQPL UPDATE | rProbs.pas | Updates problem record
-182 | ORQQPL USER PROB CATS | rProbs.pas | rETURNS ARRAY OF CATEGORIES FOR USER TO SELECT FROM
-183 | ORQQPL USER PROB LIST | rProbs.pas | Returns array of user specific problems to select from
-184 | ORQQPL VERIFY | rProbs.pas | VERIFY A TRANSCRIBED PROBLEM
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-185 | ORQQPL4 LEX<br>__eHMP__ | rProbs.pas | This RPC supports the Clinical Lexicon Search for Problem List. It will return an indefinite list of terms that match the user's search string.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-186 | ORQQPP LIST | rCover.pas | Returns a list of active Patient Postings for a patient.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-187 | ORQQPS DETAIL | rCover.pas | Returns the details of a medication order.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-188 | ORQQPX GET FOLDERS | rReminders.pas | Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
-189 | ORQQPX LVREMLST | rReminders.pas | Returns Cover Sheet reminder settings
-190 | ORQQPX NEW COVER SHEET ACTIVE | rReminders.pas | Returns TRUE if the new cover sheet parameters are to be used.
-191 | ORQQPX NEW REMINDERS ACTIVE | rReminders.pas | Return 1 if Interactive Reminders are active, otherwise return 0.
-192 | ORQQPX REM INSERT AT CURSOR | rReminders.pas | Returns TRUE if text generated from a reminder dialog, when processinga reminder, is to be inserted at the current cursor location, ratherthan at the bottom of the note.
-193 | ORQQPX REMINDER DETAIL<br>__eHMP__ | rReminders.pas | Returns the details of a clinical reminder.
-194 | ORQQPX REMINDERS LIST<br>__eHMP__ | rCover.pas | Returns a list of clinical reminders.
-195 | ORQQPX SAVELVL | rReminders.pas | Saves Parameter Level settings.
-196 | ORQQPX SET FOLDERS | rReminders.pas | Sets the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-197 | ORQQPXRM DIALOG ACTIVE | rReminders.pas | For a list of reminders [#811.9] returns same list with status to indicateif an active dialog exists for the reminder.
-198 | ORQQPXRM DIALOG PROMPTS | rReminders.pas | Additional prompts for a given dialog element
-199 | ORQQPXRM EDUCATION SUBTOPICS | rReminders.pas | Returns array of subtopics for any given education topic
-200 | ORQQPXRM EDUCATION SUMMARY | rReminders.pas | Returns list of education topics for a reminder
-201 | ORQQPXRM EDUCATION TOPIC | rReminders.pas | Detailed description of education topic
-202 | ORQQPXRM GEC DIALOG | rReminders.pas | This RPC will evaluate the Reminder Dialogs as the Finish button is clickfor the GEC Project. THis RPC will return an error messages if the fourGEC Reminder Dialogs are done out of order.
-203 | ORQQPXRM GEC FINISHED? | fFrame.pas, rReminders.pas | This RPC pass a boolean value to PXRMGECU
-204 | ORQQPXRM GEC STATUS PROMPT | fFrame.pas | This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.
-205 | ORQQPXRM GET WH LETTER TEXT | uReminders.pas | Retrieve letter text for a WH letter
-206 | ORQQPXRM GET WH REPORT TEXT | uReminders.pas | This RPC will return the Radiology/Lab Report for a WH Procedure
-207 | ORQQPXRM MENTAL HEALTH | rReminders.pas | Returns array for given mental health instrument
-208 | ORQQPXRM MENTAL HEALTH RESULTS | rReminders.pas | Returns progress note text based on the results of the test.
-209 | ORQQPXRM MENTAL HEALTH SAVE | rReminders.pas | Stores test result responses from a reminder dialog.
-210 | ORQQPXRM MHDLL | rReminders.pas | 
-211 | ORQQPXRM MHV | rReminders.pas | 
-212 | ORQQPXRM MST UPDATE | rReminders.pas | Saves MST data
-213 | ORQQPXRM PROGRESS NOTE HEADER | rReminders.pas | Returns header text to be inserted in each progress note.
-214 | ORQQPXRM REMINDER CATEGORIES | rReminders.pas | Returns list of all CPRS lookup categories and associated reminders
-215 | ORQQPXRM REMINDER DETAIL | rReminders.pas | Returns the details of a clinical reminder
-216 | ORQQPXRM REMINDER DIALOG | rReminders.pas | Dialog for a given reminder
-217 | ORQQPXRM REMINDER EVALUATION | rReminders.pas | Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.
-218 | ORQQPXRM REMINDER INQUIRY | rReminders.pas | Detailed description of reminder
-219 | ORQQPXRM REMINDER WEB | rReminders.pas | Web addresses for selected reminder
-220 | ORQQPXRM REMINDERS APPLICABLE | rCover.pas | Returns a list of clinical reminders due/applicable or not applicable tothe patient.
-221 | ORQQPXRM REMINDERS UNEVALUATED | rReminders.pas | Returns list of CPRS reminders for patient/location (no evaluation isdone)
-222 | ORQQPXRM WOMEN HEALTH SAVE | rReminders.pas | Pass back data to be file in the Women's Health Package file 790.1.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-223 | ORQQVI NOTEVIT | Vitals/rVitals.pas | 
-224 | ORQQVI VITALS | Vitals/rVitals.pas, rCover.pas | Array of patient most recent vitals within start and stop date/times.  Ifno start and stop dates are indicated, the most recent are returned. If no start date is passed then the start date is 1 (i.e. before anydates). If no stop date is passed then the start date is also the stop date and ifthere is not start date then 9999999 is used as the stop date.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-225 | ORQQVI2 VITALS RATE CHECK | Vitals/rVitals.pas | 
-226 | ORQQVI2 VITALS VAL & STORE | Vitals/rVitals.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-227 | ORWCH LDFONT | rMisc.pas | 
-228 | ORWCH LOADALL | rMisc.pas | This RPC returns the sizing related CPRS GUI chart parameters for theuser.
-229 | ORWCH LOADSIZ | rMisc.pas | This RPC loads the size (bounds) for a particular CPRS GUI control. 
-230 | ORWCH SAVEALL | rMisc.pas | This RPC saves the sizing related CPRS GUI chart parameters for theuser.
-231 | ORWCH SAVECOL | rReports.pas | This RPC saves the column width sizes for reports in CPRS for the user.
-232 | ORWCH SAVESIZ | rMisc.pas, fMeds.pas | This RPC saves the size (bounds) for a particular CPRS GUI control.
-233 | ORWCH SAVFONT | rMisc.pas | Saves the user's preferred font.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-234 | ORWCIRN AUTORDV | rReports.pas | Get parameter value for ORWRP CIRN AUTOMATIC.
-235 | ORWCIRN CHECKLINK | rCore.pas | Check to see if HL7 TCP link is active.
-236 | ORWCIRN FACLIST | rCore.pas | Returns a list of the remote VA facilities at which the selected patienthas been seen.
-237 | ORWCIRN HDRON | rReports.pas | Get parameter value for ORWRP HDR ON
-238 | ORWCIRN WEBADDR | rCore.pas | Get VistaWeb Web Address.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-239 | ORWCOM DETAILS | rEventHooks.pas | Returns details of COM object when passed in COM IEN.
-240 | ORWCOM GETOBJS | rEventHooks.pas | Returns a list of all active COM objects
-241 | ORWCOM ORDEROBJ | rEventHooks.pas | Returns COM Objects for order accept
-242 | ORWCOM PTOBJ | rEventHooks.pas | Returns COM Object entries from  different parameters.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-243 | ORWCS LIST OF CONSULT REPORTS | rReports.pas | This remote procedure call returns a list on consult reports for aspecific patient.
-244 | ORWCS REPORT TEXT | rReports.pas | This remote procedure call returns an array containinga formattied consult report. This array matches exactlythe report format on the roll 'n scroll version of CPRS.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-245 | ORWCV LAB | rCover.pas | Returns a list of labs to display on the CPRS GUI cover sheet for apatient.
-246 | ORWCV POLL | rCover.pas | This RPC is a process to poll the cover sheet tasks for completion anddisplay the information in the appropriate CPRS GUI cover sheet location.
-247 | ORWCV START | rCover.pas | Checks the value of the ORWOR COVER RETRIEVAL parameter and queuesprocesses to build CPRS GUI cover sheet lists as specified in theparameter.
-248 | ORWCV STOP | rCover.pas | RPC to stop retrieval of cover sheet information for CPRS GUI.
-249 | ORWCV VST | rCore.pas, rCover.pas | This RPC returns a list of appointments and admissions for a patient basedon parameters that define the beginning and ending range for CPRS GUI.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-250 | ORWCV1 COVERSHEET LIST | rCover.pas | This remote procedure call returns a list of Cover Sheet reports,There are no input parameters fo this rpc.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-251 | ORWD1 COMLOC | Orders/rOrders.pas | Returns true if all orders in a list have a common ordering location.
-252 | ORWD1 PARAM | Orders/rOrders.pas | Returns the prompt and device parameters for Automated order prints
-253 | ORWD1 PRINTGUI | Orders/rOrders.pas | RPC used by CPRS GUI to print orders to a designated print device.
-254 | ORWD1 RVPRINT | Orders/rOrders.pas | RPC used by CPRS GUI to print orders to a designated print device afterthe review or sign actions were used.
-255 | ORWD1 SIG4ANY | Orders/rOrders.pas | Returns true if any orders in the list require a signature.
-256 | ORWD1 SIG4ONE | Orders/rOrders.pas | Returns true if an order requires a signature.
-257 | ORWD1 SVONLY | Orders/rOrders.pas | Prints service copies only (used when user says "Don't Print" for theother copies).
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-258 | ORWD2 DEVINFO | Orders/rOrders.pas | Returns device information related to a location/nature of order when anorder is signed or released via CPRS GUI.
-259 | ORWD2 MANUAL | Orders/rOrders.pas | Returns device information for manual prints done via CPRS GUI.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-260 | ORWDAL32 ALLERGY MATCH<br>__eHMP__ | Orders/rODAllergy.pas | Given a text string, return a list of possible matches from severaldifferent sources.
-261 | ORWDAL32 CLINUSER<br>__eHMP__ | Orders/rODAllergy.pas | Determine if user can perform cover sheet allergy actions.
-262 | ORWDAL32 DEF | Orders/rODAllergy.pas | Returns default values and list sets for Allergy ordering dialog.
-263 | ORWDAL32 SAVE ALLERGY<br>__eHMP__ | Orders/rODAllergy.pas | 
-264 | ORWDAL32 SEND BULLETIN | Orders/rODAllergy.pas | 
-265 | ORWDAL32 SITE PARAMS | Orders/rODAllergy.pas | 
-266 | ORWDAL32 SYMPTOMS<br>__eHMP__ | Orders/rODAllergy.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-267 | ORWDBA1 BASTATUS | BA/UBACore.pas | Billing Awareness RPC.Returns 0 if BA functionality is off or 1 if BA functionality is on.
-268 | ORWDBA1 RCVORCI | BA/UBACore.pas | Receive Order Entry Billing Aware data from CPRS.
-269 | ORWDBA1 SCLST | BA/UBAGlobals.pas, BA/UBACore.pas | Array of Order ID's and SC.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-270 | ORWDBA2 ADDPDL | BA/UBACore.pas | Add a new Clinician's Personal DX List or add new ICD9 codes to an existing Clinician's Personal DX List. The Personal DX list is stored in the CPRS Diagnosis Provider file, file # 5000017
-271 | ORWDBA2 DELPDL | BA/UBACore.pas | Delete a selected diagnosis code from a Clinician's Personal DX List. The personal dx list is stored in CPRS Diagnosis Provider file, file # 5000017.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-272 | ORWDBA4 GETBAUSR | BA/UBACore.pas | Gets the value of the Enable Billing Awareness By User parameter. The value returned will be 1 for Yes, Billing Awareness Enabled, and 0 for No, Billing Awareness Disabled.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-273 | ORWDBA7 GETIEN9 | BA/UBAGlobals.pas | Receive external ICD9 number and return IEN
-274 | ORWDBA7 ISWITCH | BA/UBACore.pas | CIDC RPCRETURNS 1 IF PATIENT HAS BILLABLE INSURANCERETURNS 0 IF PATIENT DOES NOT HAVE BILLABLE INSURANCE
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-275 | ORWDCN32 DEF | Consults/rConsults.pas | Load dialog data (lists & defaults) for a consult order. (32-BIT)
-276 | ORWDCN32 NEWDLG | Consults/rConsults.pas | Returns dialog information when NEW CONSULT/PROCEDURE is selected fromthe consults tab.
-277 | ORWDCN32 ORDRMSG | Consults/rConsults.pas | 
-278 | ORWDCN32 PROCEDURES | Consults/rConsults.pas | Returns a list of orderable procedures.  Same as ORDITM^ORWDX except: 1.  Checks inactive date in file 101.43 against NOW instead of DT.2.  Checks for at least one service that can perform the procedure.3.  Returns variable pointer to procedure in 4th piece of each item.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-279 | ORWDFH ADDLATE | Orders/rODDiet.pas | RPC to add a late tray diet order.
-280 | ORWDFH ATTR | Orders/rODDiet.pas | For a diet order, this RPC returns:  Orderable Item^Text^Type^Precedence^AskExpire 
-281 | ORWDFH CURISO | Orders/rODDiet.pas | Return a patient's current isolation.
-282 | ORWDFH CURRENT MEALS | Orders/rODDiet.pas | 
-283 | ORWDFH DIETS | Orders/rODDiet.pas | Returns active diets (including NPO) in the format:      IEN^NAME   or IEN^SYNONYM <NAME>^NAME
-284 | ORWDFH FINDTYP | Orders/rODDiet.pas | Return type of dietetics order based on display group.
-285 | ORWDFH ISOIEN | Orders/rODDiet.pas | Returns the IEN for the Isolation/Precaution orderable item.
-286 | ORWDFH ISOLIST | Orders/rODDiet.pas | Returns a list of active Isolation/Precaution Type (file #119.4) entries.
-287 | ORWDFH NFSLOC READY | Orders/rODDiet.pas | Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.
-288 | ORWDFH OPDIETS | Orders/rODDiet.pas | 
-289 | ORWDFH PARAM | Orders/rODDiet.pas | Returns dietetics parameters for a patient at a location.
-290 | ORWDFH QTY2CC | Orders/rODDiet.pas | Returns cc's given a product, strength, and quantity.
-291 | ORWDFH TFPROD | Orders/rODDiet.pas | Returns a list of active tubefeeding products.
-292 | ORWDFH TXT | Orders/rODDiet.pas | RPC to return the text of the current and any future diets for a patient.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-293 | ORWDLR32 ALLSPEC | Orders/rODLab.pas | Returns a list of specimens from the TOPOGRAPHY FIELD file (#61).
-294 | ORWDLR32 DEF | Orders/rODLab.pas | Get lab order dialog definition.
-295 | ORWDLR32 GET LAB TIMES | Orders/rODLab.pas | Returns a list of lab collect times for a date and location.
-296 | ORWDLR32 IC DEFAULT | Orders/rODLab.pas | Returns default immediate collect time for the user's division.
-297 | ORWDLR32 IC VALID | Orders/rODLab.pas | Determines whether the suplied time is a valid lab immediate collect time.
-298 | ORWDLR32 IMMED COLLECT | Orders/rODLab.pas | Returns help text showing lab immediate collect times for the user'sdivision.
-299 | ORWDLR32 LAB COLL TIME | Orders/rODLab.pas | Is the given time a routine lab collection time for the given location?
-300 | ORWDLR32 MAXDAYS | Orders/rODLab.pas | Returns the maximum number of days for a continuous lab order.
-301 | ORWDLR32 ONE SAMPLE | Orders/rODLab.pas | Returns data for one collection sample in the format:     n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
-302 | ORWDLR32 ONE SPECIMEN | Orders/rODLab.pas | Returns IEN^NAME of requested a TOPOGRAPHY FIELD (file #61) entry.
-303 | ORWDLR32 STOP | Orders/rODLab.pas | Returns a calculated stop date for a lab order.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-304 | ORWDLR33 FUTURE LAB COLLECTS | Orders/rODLab.pas | Returns the number of days in the future to allow Lab Collects.
-305 | ORWDLR33 LASTTIME | Orders/rODLab.pas | When entering quick orders from an order menu, the ^TMP("ORECALL",$J)array contains the last responses entered.  This RPC allows retrieval ofthe previous order's collection time from that array.
-306 | ORWDLR33 LC TO WC | Orders/rODLab.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-307 | ORWDOR LKSCRN | Orders/rODBase.pas | Does a lookup similar to GENERIC^ORWU.  Also allows passing of a referenceto a screen in the Order Dialog file to screen to lookup.
-308 | ORWDOR VALNUM | Orders/rODBase.pas | Validates a numeric entry.
-309 | ORWDOR VMSLCT | Orders/rODBase.pas | Returns the default list for the vitals order dialog in CPRS GUI.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-310 | ORWDPS1 CHK94 | Orders/rOrders.pas | 
-311 | ORWDPS1 DFLTSPLY<br>__eHMP__ | Orders/rODMeds.pas | 
-312 | ORWDPS1 DOSEALT | Orders/rODMeds.pas | 
-313 | ORWDPS1 DOWSCH | Orders/rODMeds.pas | This RPC returns a list of schedule that have a frequency defined and the frequency is less then or equal to 1440 minutes
-314 | ORWDPS1 FAILDEA | Orders/rODMeds.pas | 
-315 | ORWDPS1 FORMALT | Orders/rODMeds.pas | 
-316 | ORWDPS1 HASOIPI | Orders/rOrders.pas | 
-317 | ORWDPS1 HASROUTE | Orders/rODMeds.pas | 
-318 | ORWDPS1 IVDEA | Orders/rODMeds.pas | 
-319 | ORWDPS1 LOCPICK | Orders/rODMeds.pas | 
-320 | ORWDPS1 ODSLCT | Orders/rODMeds.pas | 
-321 | ORWDPS1 QOMEDALT | Orders/rODMeds.pas | 
-322 | ORWDPS1 SCHALL | Orders/rODMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-323 | ORWDPS2 ADMIN | Orders/rODMeds.pas | 
-324 | ORWDPS2 CHKGRP | Orders/rOrders.pas | 
-325 | ORWDPS2 CHKPI | Orders/rODMeds.pas | 
-326 | ORWDPS2 DAY2QTY<br>__eHMP__ | Orders/rODMeds.pas | 
-327 | ORWDPS2 MAXREF | Orders/rODMeds.pas | 
-328 | ORWDPS2 OISLCT<br>__eHMP__ | Orders/fODMedNVA.pas, Orders/rODMeds.pas | 
-329 | ORWDPS2 QOGRP | Orders/rOrders.pas | 
-330 | ORWDPS2 QTY2DAY | Orders/rODMeds.pas | 
-331 | ORWDPS2 REQST | Orders/rODMeds.pas | 
-332 | ORWDPS2 SCHREQ | Orders/rODMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-333 | ORWDPS32 ALLIVRTE | Orders/rODMeds.pas | 
-334 | ORWDPS32 ALLROUTE | Orders/rODBase.pas | Returns a list of all available medication routes.
-335 | ORWDPS32 AUTH | Orders/rODBase.pas | Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text 
-336 | ORWDPS32 AUTHNVA | Orders/fODMedNVA.pas | Checks restrictions for entering non-VA meds.  If no restrictions, a 0 isreturned.  If there is a restriction, it is returned in the format:1^restriction text 
-337 | ORWDPS32 DLGSLCT | Orders/rODBase.pas | Returns default lists for order dialogs in CPRS GUI.
-338 | ORWDPS32 DRUGMSG | Orders/rODBase.pas | Return message text that is associated with a dispense drug.
-339 | ORWDPS32 FORMALT | Orders/rODBase.pas | Return a list of formulary alternatives.
-340 | ORWDPS32 ISSPLY | Orders/rODBase.pas | Return 1 if orderable item is a supply, otherwise return 0.
-341 | ORWDPS32 IVAMT | Orders/rODBase.pas | Returns return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV solutions.
-342 | ORWDPS32 MEDISIV | Orders/rODBase.pas | Return 1 if orderable item is an IV medication, otherwise return 0.
-343 | ORWDPS32 OISLCT | Orders/rODBase.pas | Returns defaults for pharmacy orderable items.
-344 | ORWDPS32 SCSTS | Orders/rODBase.pas | Return pharmacy-related service connected eligibility for a patient.
-345 | ORWDPS32 VALQTY | Orders/rODBase.pas | Validate a medication quantity and return a 1 if it is valid, otherwisereturn 0.
-346 | ORWDPS32 VALRATE | Orders/rODBase.pas | Return a 1 if IV rate text is valid, otherwise return 0.
-347 | ORWDPS32 VALROUTE | Orders/rODBase.pas | Returns the IEN for a route if the name is valid.
-348 | ORWDPS32 VALSCH | Orders/rODBase.pas | Validate a schedule and return a 1 if it is valid, otherwise return 0.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-349 | ORWDPS33 COMPLOC | Orders/rODMeds.pas | This RPC will return a 0 if the patient location is the same location as the original order. It will return a 1 if the location is different.
-350 | ORWDPS33 GETADDFR | Orders/rODMeds.pas | This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.
-351 | ORWDPS33 IVDOSFRM | Orders/rODMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-352 | ORWDPS4 CPINFO | Orders/rODBase.pas, Orders/rOrders.pas | Save outpatient med order co-pay information.
-353 | ORWDPS4 CPLST | Orders/rODBase.pas, Orders/rOrders.pas | Get co-pay ralated questions
-354 | ORWDPS4 IPOD4OP | Orders/rOrders.pas | 
-355 | ORWDPS4 ISUDIV | Orders/rOrders.pas | 
-356 | ORWDPS4 UPDTDG | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-357 | ORWDPS5 ISVTP | Orders/rOrders.pas | 
-358 | ORWDPS5 LESAPI | Orders/rOrders.pas | 
-359 | ORWDPS5 LESGRP | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-360 | ORWDRA32 APPROVAL | Orders/rODRad.pas | 
-361 | ORWDRA32 DEF | Orders/rODRad.pas | Loads dialog data (lists & defaults) for a radiology order.
-362 | ORWDRA32 IMTYPSEL | Orders/rODRad.pas | 
-363 | ORWDRA32 ISOLATN | Orders/rODRad.pas | 
-364 | ORWDRA32 LOCTYPE | Orders/rODRad.pas | 
-365 | ORWDRA32 PROCMSG | Orders/rODRad.pas | 
-366 | ORWDRA32 RADSRC | Orders/rODRad.pas | 
-367 | ORWDRA32 RAORDITM | Orders/rODRad.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-368 | ORWDX AGAIN | Orders/rODBase.pas | Returns a 1 if the dialog should be kept for another order, otherwise 0.
-369 | ORWDX CHANGE | fPrintLocation.pas, fClinicWardMeds.pas | 
-370 | ORWDX DGNM | Orders/rODBase.pas | 
-371 | ORWDX DGRP | Orders/rODBase.pas | Returns the display group pointer for an order dialog.
-372 | ORWDX DISMSG | Orders/rOrders.pas | Returns disabled message for an ordering dialog.
-373 | ORWDX DLGDEF<br>__eHMP__ | Orders/rODBase.pas | Return format information for an order dialog in the format:   LST(n): PrmtID^PrmtIEN^FmtSeq^Fmt^Omit^Lead^Trail^NwLn^Wrap^Chld^IsChld
-374 | ORWDX DLGID | Orders/rOrders.pas | Returns the dialog IEN for an order.
-375 | ORWDX FORMID | Orders/rOrders.pas | Returns the base dialog FormID for an order.
-376 | ORWDX LOADRSP<br>__eHMP__ | Orders/rODBase.pas | 
-377 | ORWDX LOCK | Orders/rOrders.pas | RPC to attempt to lock patient for ordering (returns 1 if successful or 0if unsuccessful).
-378 | ORWDX LOCK ORDER<br>__eHMP__ | Orders/rOrders.pas | RPC to attempt to lock a specific order.
-379 | ORWDX MSG | Orders/rODBase.pas | Return message text for an orderable item.
-380 | ORWDX ORDITM | Orders/rODBase.pas | Returns an array of orderable items in the format:   Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name
-381 | ORWDX SAVE<br>__eHMP__ | Orders/rODBase.pas | Save the order by passing in the following information:        ORVP=DFN        ORNP=Provider        ORL=Location        DLG=Order Dialog,        ORDG=Display Group        ORIT=Quick Order Dialog,        ORIFN=null if new order        ORDIALOG=Response List
-382 | ORWDX SEND<br>__eHMP__ | Orders/rOrders.pas | RPC to sign a list of orders with input as follows:        DFN=Patient        ORNP=Provider        ORL=Location        ES=Encrypted ES code         ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order
-383 | ORWDX SENDED | Orders/rOrders.pas | 
-384 | ORWDX SENDP | Orders/rOrders.pas | Same as ORWDX SEND, but allows print devices as parameter.
-385 | ORWDX UNLOCK | Orders/rOrders.pas | Unlocks the patient for ordering purposes.
-386 | ORWDX UNLOCK ORDER<br>__eHMP__ | Orders/rOrders.pas | RPC to unlock a specific order.
-387 | ORWDX WRLST | Orders/rOrders.pas | Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-388 | ORWDX1 DCORIG | fActivateDeactivate.pas | 
-389 | ORWDX1 DCREN | fActivateDeactivate.pas | 
-390 | ORWDX1 ORDMATCH | Orders/rOrders.pas | This RPC will accept a list of orders and each order status, if one of the order does not have a status it will return a false value.
-391 | ORWDX1 PATWARD | fPrintLocation.pas, fClinicWardMeds.pas | 
-392 | ORWDX1 STCHANGE | rMeds.pas | 
-393 | ORWDX1 UNDCORIG | Orders/fOrdersDC.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-394 | ORWDX2 DCREASON<br>__eHMP__ | Orders/rOrders.pas | RPC to return a list of valid discontinuation reasons.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-395 | ORWDXA ALERT | Orders/rOrders.pas | Set order to send an alert when the order is resulted.
-396 | ORWDXA COMPLETE | Orders/rOrders.pas | Complete an order.
-397 | ORWDXA DC<br>__eHMP__ | Orders/rOrders.pas | RPC to discontinue, cancel, or delete an existing order.
-398 | ORWDXA DCREQIEN | Orders/rOrders.pas | Return the IEN for Requesting Physician Cancelled reason.
-399 | ORWDXA FLAG | Orders/rOrders.pas | Flag an existing order.
-400 | ORWDXA FLAGTXT | Orders/rOrders.pas | Return text associated with a particular flagged order (reason for flag).
-401 | ORWDXA HOLD | Orders/rOrders.pas | RPC to place an existing order on hold.
-402 | ORWDXA ISACTOI | Orders/rODMeds.pas | 
-403 | ORWDXA OFCPLX | Orders/rOrders.pas | 
-404 | ORWDXA UNFLAG | Orders/rOrders.pas | Unflag an existing order.
-405 | ORWDXA UNHOLD | Orders/rOrders.pas | RPC to remove a particular order from hold status.
-406 | ORWDXA VALID<br>__eHMP__ | Orders/rOrders.pas | Returns an error message if the selected action is not valid for aparticular CPRS GUI order.
-407 | ORWDXA VERIFY | Orders/rOrders.pas | Verify an order via CPRS GUI.
-408 | ORWDXA WCGET | Orders/rOrders.pas | Return ward comments for an order.
-409 | ORWDXA WCPUT | Orders/rOrders.pas | Set ward comments for an order.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-410 | ORWDXC ACCEPT | Orders/rOrders.pas | Return list of Order Checks on Accept Order.
-411 | ORWDXC DELAY | Orders/rOrders.pas | Return list or order checks on accept delayed orders.
-412 | ORWDXC DELORD | Orders/rOrders.pas | Delete order.
-413 | ORWDXC DISPLAY | Orders/rOrders.pas | Return list of Order Checks for a FillerID (namespace).
-414 | ORWDXC FILLID | Orders/rOrders.pas | Return the FillerID (namespace) for a dialog.
-415 | ORWDXC ON | Orders/rOrders.pas | Returns E if order checking enabled, otherwise D.
-416 | ORWDXC SAVECHK | Orders/rOrders.pas | Save order checks for session.
-417 | ORWDXC SESSION | Orders/rOrders.pas | Return list of order checks on release of order.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-418 | ORWDXM AUTOACK | Orders/rODBase.pas | Place a quick order in CPRS GUI without the verify step.
-419 | ORWDXM DLGNAME | Orders/rODBase.pas | Return name(s) of dialog & base dialog given IEN in format:        VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName
-420 | ORWDXM FORMID | Orders/rOrders.pas | Return the FormID for a dialog entry.
-421 | ORWDXM LOADSET | Orders/rOrders.pas | Return the contents of an order set in the following format:   LST(0): SetDisplayText^Key Variables   LST(n): DlgIEN^DlgType^DisplayText
-422 | ORWDXM MENU | Orders/rOrders.pas | Returns menu contents for an order dialog in the following format:    LST(0)=name^# cols^path switch^^^ Key Variables (pieces 6-20)    LST(n)=col^row^type^ien^formid^autoaccept^display text^mnemonic           ^displayonly
-423 | ORWDXM MSTYLE | Orders/rODBase.pas | Return the menu style for the system.
-424 | ORWDXM PROMPTS | Orders/rODBase.pas | Return prompting information for a generic dialog in the format:    LST(n)=ID^REQ^HID^PROMPT^TYPE^DOMAIN^DEFAULT^IDFLT^HELP
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-425 | ORWDXM1 BLDQRSP | Orders/rOrders.pas | Build responses for an order Input:      1   2    3    4   5   6    7    8        11-20FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change Output:LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrpLST(n)=verify text or rejection text
-426 | ORWDXM1 SVRPC | Orders/rODRad.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-427 | ORWDXM2 CLRRCL | Orders/rOrders.pas | Clear ORECALL.  Used by CPRS GUI to clean up ^TMP("ORECALL",$J) and^TMP("ORWDXMQ",$J).
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-428 | ORWDXM3 ISUDQO | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-429 | ORWDXQ DLGNAME | Orders/rODBase.pas | Return display name for a dialog.
-430 | ORWDXQ DLGSAVE | Orders/rODBase.pas | Return IEN of new or existing quick order.
-431 | ORWDXQ GETQLST | Orders/rODBase.pas, Orders/rODDiet.pas, Consults/rConsults.pas | Return quick list for a display group.
-432 | ORWDXQ GETQNAM | Orders/rODBase.pas | Return current quick order name.
-433 | ORWDXQ PUTQLST | Orders/rODBase.pas | Save quick order list.
-434 | ORWDXQ PUTQNAM | Orders/rODBase.pas | Save display name for quick order dialog.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-435 | ORWDXR CANRN | Orders/rOrders.pas | 
-436 | ORWDXR GETPKG | Orders/rOrders.pas | 
-437 | ORWDXR GTORITM | Orders/rOrders.pas | 
-438 | ORWDXR ISCPLX | Orders/rOrders.pas | 
-439 | ORWDXR ISNOW | rMeds.pas | 
-440 | ORWDXR ISREL | Orders/rOrders.pas | Return 1 if an order has been released, otherwise return 0.
-441 | ORWDXR ORCPLX | Orders/rOrders.pas | 
-442 | ORWDXR RENEW | Orders/rOrders.pas | Renew an existing order.
-443 | ORWDXR RNWFLDS | Orders/rOrders.pas | Return fields for renew action in format:    LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-444 | ORWDXR01 CANCHG | Orders/rOrders.pas | 
-445 | ORWDXR01 ISSPLY | Orders/rOrders.pas | 
-446 | ORWDXR01 OXDATA | Orders/rOrders.pas | 
-447 | ORWDXR01 SAVCHG | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-448 | ORWDXVB NURSADMN | Orders/rODLab.pas | This procedure checks the parameter OR VBECS SUPPRESS NURS ADMIN to seeif the Nursing Administration Order prompt/pop-up should be supressedafter a VBECS Blood Bank order has been created.
-449 | ORWDXVB STATALOW | Orders/rODLab.pas | Check to see if user is allowed to order STAT orders through VBECS.Checks users with parameter: OR VBECS STAT USER
-450 | ORWDXVB SUBCHK | Orders/rODLab.pas | Check to see if selected test is a Blood Component or a Diagnostic Test.
-451 | ORWDXVB VBTNS | Orders/rODLab.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-452 | ORWDXVB3 COLLTIM | Orders/rODLab.pas | This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.
-453 | ORWDXVB3 SWPANEL | Orders/rODLab.pas | This RPC checks the value of the parameter OR VBECS DIAGNOSTIC PANEL 1STto determine the location of the Diagnostic and Component panels on theVBECS order dialog.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-454 | ORWGRPC ALLITEMS | rGraphs.pas | 
-455 | ORWGRPC ALLVIEWS | rGraphs.pas | 
-456 | ORWGRPC CLASS | rGraphs.pas | 
-457 | ORWGRPC DATEITEM | rGraphs.pas | 
-458 | ORWGRPC DELVIEWS | rGraphs.pas | 
-459 | ORWGRPC DETAIL | rGraphs.pas | 
-460 | ORWGRPC DETAILS | rGraphs.pas | 
-461 | ORWGRPC FASTDATA | rGraphs.pas | 
-462 | ORWGRPC FASTITEM | rGraphs.pas | 
-463 | ORWGRPC FASTLABS | rGraphs.pas | 
-464 | ORWGRPC FASTTASK | rGraphs.pas | 
-465 | ORWGRPC GETDATES | rGraphs.pas | 
-466 | ORWGRPC GETPREF | rGraphs.pas | 
-467 | ORWGRPC GETSIZE | rGraphs.pas | 
-468 | ORWGRPC GETVIEWS | rGraphs.pas | 
-469 | ORWGRPC ITEMDATA | rGraphs.pas | 
-470 | ORWGRPC ITEMS | rGraphs.pas | 
-471 | ORWGRPC LOOKUP | rGraphs.pas | 
-472 | ORWGRPC PUBLIC | rGraphs.pas | 
-473 | ORWGRPC RPTPARAM | rGraphs.pas | 
-474 | ORWGRPC SETPREF | rGraphs.pas | 
-475 | ORWGRPC SETSIZE | rGraphs.pas | 
-476 | ORWGRPC SETVIEWS | rGraphs.pas | 
-477 | ORWGRPC TAX | rGraphs.pas | 
-478 | ORWGRPC TESTING | rGraphs.pas | 
-479 | ORWGRPC TESTSPEC | rGraphs.pas | 
-480 | ORWGRPC TYPES | rGraphs.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-481 | ORWLEX GETFREQ | Encounter/rPCE.pas | This call wraps the Lexicon API $$FREQ^LEXU to satisfy the requirements of the ICD-10-CM diagnosis search.
-482 | ORWLEX GETI10DX | Encounter/rPCE.pas | This call wraps the Lexicon API $$DIAGSRCH^LEX10CS to satisfy the requirements of the ICD-10-CM diagnosis search.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-483 | ORWLRR ALLTESTS | rLabs.pas | 
-484 | ORWLRR ATESTS | rGraphs.pas, rLabs.pas | 
-485 | ORWLRR ATG | rGraphs.pas, rLabs.pas | 
-486 | ORWLRR ATOMICS | rLabs.pas | 
-487 | ORWLRR CHART | rLabs.pas | 
-488 | ORWLRR CHEMTEST | rLabs.pas | 
-489 | ORWLRR GRID | rLabs.pas | 
-490 | ORWLRR INFO | rLabs.pas | Return lab test description information.
-491 | ORWLRR INTERIMG | rLabs.pas | 
-492 | ORWLRR INTERIMS | rLabs.pas | 
-493 | ORWLRR NEWOLD | rLabs.pas | 
-494 | ORWLRR PARAM | rLabs.pas | 
-495 | ORWLRR SPEC | rLabs.pas | 
-496 | ORWLRR TG | rGraphs.pas, rLabs.pas | 
-497 | ORWLRR USERS | rLabs.pas | 
-498 | ORWLRR UTGA | rLabs.pas | 
-499 | ORWLRR UTGD | rLabs.pas | 
-500 | ORWLRR UTGR | rLabs.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-501 | ORWMC PATIENT PROCEDURES1 | rReports.pas | This remote procedure call returns a list of patient procedures for a specific patient.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-502 | ORWNSS CHKSCH | Orders/rOrders.pas | 
-503 | ORWNSS NSSMSG | Orders/fOtherSchedule.pas | 
-504 | ORWNSS QOSCH | Orders/rOrders.pas | 
-505 | ORWNSS VALSCH | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-506 | ORWOR ACTION TEXT | Orders/rOrders.pas | 
-507 | ORWOR EXPIRED | Orders/rOrders.pas | Returns the Fileman Date/Time to begin searching for expired orders.
-508 | ORWOR PKISITE | Orders/rOrders.pas | 
-509 | ORWOR PKIUSE | Orders/rOrders.pas | 
-510 | ORWOR RESULT | Orders/rOrders.pas | Returns results of a CPRS order.
-511 | ORWOR RESULT HISTORY | Orders/rOrders.pas | Returns a result history of a CPRS order.
-512 | ORWOR SHEETS | Orders/rOrders.pas | Returns order sheets for a patient.
-513 | ORWOR TSALL | Orders/rOrders.pas | Returns a list of valid treating specialities.
-514 | ORWOR UNSIGN | Orders/rOrders.pas | Returns outstanding unsigned orders.
-515 | ORWOR VWGET | Orders/rOrders.pas | Retrieves the user's default view for the orders tab.
-516 | ORWOR VWSET | Orders/rOrders.pas | Sets the default view on the orders tab for the user.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-517 | ORWOR1 CHKDIG | Orders/rOrders.pas | Returns true if an order requires a digital signature.
-518 | ORWOR1 GETDSCH | Orders/rOrders.pas | Returns the schedule of the drug.
-519 | ORWOR1 GETDTEXT | Orders/rOrders.pas | Returns the external text of an existing order.
-520 | ORWOR1 SETDTEXT | Orders/rOrders.pas | Sets/updates the external text of an order.The updated text is also returned.
-521 | ORWOR1 SIG | Orders/rOrders.pas | Returns 1 if signature gets stored.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-522 | ORWORB AUTOUNFLAG ORDERS | rCore.pas | Auto unflag orders/delete alert.
-523 | ORWORB GETDATA | rCore.pas | Given an XQAID, return XQADATA for an alert.
-524 | ORWORB GETSORT | rCore.pas | Returns the method for sorting GUI alert display.
-525 | ORWORB KILL EXPIR MED ALERT | rCore.pas | Evaluate expiring med orders.  If none remain, kill current alert forcurrent user.  Kill for other users if alert so defined.
-526 | ORWORB KILL EXPIR OI ALERT | rCore.pas | Evaluate expiring flagged orderable item orders. If none remain, killcurrent alert for current user.  Kill for other users if alert so defined.
-527 | ORWORB KILL UNSIG ORDERS ALERT | rCore.pas | Check patient's unsigned orders, and kill unsigned orders alert for thisuser if no unsigned orders remain for his/her signature.
-528 | ORWORB KILL UNVER MEDS ALERT | rCore.pas | 
-529 | ORWORB KILL UNVER ORDERS ALERT | rCore.pas | 
-530 | ORWORB SETSORT | rCore.pas | Sets the GUI alert sort method for the user.  This is set when a user clicks on the GUI alert columns to change the display sorting.
-531 | ORWORB TEXT FOLLOWUP | rCore.pas | Returns text for notifications/alerts with a simple text message follow-upaction.
-532 | ORWORB UNSIG ORDERS FOLLOWUP | rCore.pas | After viewing unsigned orders for a patient via an alert, evaluateswhether the alert should be deleted for the current user. The following two exception conditions exist when determining how alertdeletion will occur.  In all other cases, alert deletion will occur whenthe patient has no unsigned orders. 1)      If the recipient of this alert does NOT have the ORES key, thealert will be deleted for that recipient after he reviews the unsignedorders.  2)      If the recipient has the ORES key and is NOT linked to the patientas attending, inpatient primary provider or via OE/RR teams, his alertwill be deleted when his unsigned orders are signed.  (If unsigned orderswritten by other providers for the patient remain, alerts for these other providers will not be deleted.)  For example, a consulting surgeon (withORES) places three unsigned orders for a patient.  He then receives an"Order requires electronic signature" alert for the patient.  He uses the View Alerts follow-up action and is presented with ten unsigned orders forthe patient.  Only three of the ten orders are his.  The surgeon signs histhree unsigned orders.  If the surgeon is not linked to the patient asattending, inpatient primary providers or via OE/RR teams, the alert will be deleted (for him only.)   In most cases alert deletion will occur when the patient has no unsignedorders.  For example, if a recipient has the ORES key and is linked to thepatient as attending, inpatient primary provider or via OE/RR teams, allunsigned orders for the patient must be signed before his alert isdeleted.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-533 | ORWORDG ALLTREE | Orders/rOrders.pas | Returns the tree for all display groups.
-534 | ORWORDG IEN | Orders/rOrders.pas | Returns IEN of a display group.
-535 | ORWORDG REVSTS | Orders/rOrders.pas | Returns the status flags available for review orders action.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-536 | ORWORR AGET | Orders/rOrders.pas | Get an abbreviated order list for a patient in the format:     ^TMP("ORR",$J,ORLIST,n)=IFN^DGrp^ActTm
-537 | ORWORR GET | Orders/rOrders.pas | Returns a list of orders & and associated fields and text.
-538 | ORWORR GET4LST | Orders/rOrders.pas | Returns the order fields for a list of orders.
-539 | ORWORR GETBYIFN | Orders/rOrders.pas | Returns the fields for a single order in the format:       1   2    3     4      5     6   7   8   9   10     11    12 .LST=~IFN^Grp^ActTm^StrtTm^StopTm^Sts^Sig^Nrs^Clk^PrvID^PrvNam^ActDA
-540 | ORWORR GETTXT | Orders/rOrders.pas | Returns the text of an existing order.
-541 | ORWORR RGET | Orders/rOrders.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-542 | ORWPCE ACTIVE CODE | Encounter/rPCE.pas, BA/UBACore.pas | 
-543 | ORWPCE ACTIVE PROV | Encounter/rPCE.pas | This calls the PCE API $$ACTIVPRV^PXAPI(provider ien, encounter d/t) tosee if the provider can be stored by PCE.   Returns a 1 if provider is good and 0 if the provider is not active or does not have an active person class.
-544 | ORWPCE ALWAYS CHECKOUT | Encounter/rPCE.pas | Returns TRUE if encounters should be automatically checked out.
-545 | ORWPCE ANYTIME | Encounter/rPCE.pas | Returns TRUE if encounters can be entered at any time
-546 | ORWPCE ASKPCE | Encounter/rPCE.pas | Returns the value of the ORWPCE ASK ENCOUNTER UPDATE parameter.
-547 | ORWPCE AUTO VISIT TYPE SELECT | Encounter/rPCE.pas | Returns TRUE if visit type should be automatically selected.
-548 | ORWPCE CPTMODS | Encounter/rPCE.pas | Returns a list of CPT Modifiers for a given CPT Code.
-549 | ORWPCE CPTREQD | rTIU.pas | Returns 1 if TIU DOCUMENT file entry needs a CPT code.
-550 | ORWPCE CXNOSHOW | Encounter/rPCE.pas | 
-551 | ORWPCE DELETE | Encounter/rPCE.pas | Delete PCE information related to a note being deleted.
-552 | ORWPCE FORCE | Encounter/rPCE.pas | Returns the value of the ORWPCE FORCE GUI PCE ENTRY parameter.
-553 | ORWPCE GAFOK | Encounter/rPCE.pas | Returns TRUE if supporting mental health code exists to read and writeGAF scores.
-554 | ORWPCE GAFURL | Encounter/rPCE.pas | Returns the GAF Scale Rating Form URL
-555 | ORWPCE GET DX TEXT | Encounter/rPCE.pas | Resolves the preferred expanded form of the Diagnosis text for the encounter pane on the notes tab.
-556 | ORWPCE GET EDUCATION TOPICS | Encounter/rPCE.pas | Returns a list of active education topics.
-557 | ORWPCE GET EXAM TYPE | Encounter/rPCE.pas | Returns the list of active exam types.
-558 | ORWPCE GET EXCLUDED | Encounter/rPCE.pas | Returns a list of excluded PCE entries
-559 | ORWPCE GET HEALTH FACTORS TY | Encounter/rPCE.pas | Returns a list of active health factor types.
-560 | ORWPCE GET IMMUNIZATION TYPE | Encounter/rPCE.pas | Returns a list of active immunizations.
-561 | ORWPCE GET SKIN TEST TYPE | Encounter/rPCE.pas | Returns a list of the active skin test codes.
-562 | ORWPCE GET VISIT | Encounter/rPCE.pas | Returns the visit IEN.
-563 | ORWPCE GETMOD | Encounter/rPCE.pas | Returns information for a specific CPT Code.
-564 | ORWPCE GETSVC<br>__eHMP__ | Encounter/rPCE.pas | Calculates the correct service category.
-565 | ORWPCE HASCPT | Encounter/rPCE.pas | Returns the passed array with the second piece set to 0 or 1.
-566 | ORWPCE HASVISIT | Encounter/rPCE.pas | Returns the visit status of the visit associated with a note:1 if the visit is being pointed to by an appointment0 if the visit is NOT being pointed to by an appointment-1 if the visit is invalid or could not be determined
-567 | ORWPCE HNCOK | Encounter/rPCE.pas | Returns TRUE if the Head and/or Neck Cancer patches have been installed
-568 | ORWPCE I10IMPDT | rCore.pas | This RPC returns the ICD-10 implementation date in FM Date/Time format.
-569 | ORWPCE ICDVER | rCore.pas, Encounter/rPCE.pas | Returns the ICD coding system version to be used for diagnosis look-up, asof a particular date of interest.
-570 | ORWPCE ISCLINIC | Encounter/rPCE.pas | Returns TRUE if location is a Clinic.
-571 | ORWPCE LEXCODE | Encounter/rPCE.pas | Returns a code associated with a lexicon entry.
-572 | ORWPCE LOADGAF | Encounter/rPCE.pas | Returns a list of GAF Scores
-573 | ORWPCE MH TEST AUTHORIZED | Encounter/rPCE.pas | Indicates if a given mental health test can be given by the given user.
-574 | ORWPCE MHCLINIC | Encounter/rPCE.pas | Returns TRUE of the indicated clinic is a mental health clinic.
-575 | ORWPCE MHTESTOK | Encounter/rPCE.pas | Returns TRUE if all supporing code is in place for Mental Health Tests.
-576 | ORWPCE NOTEVSTR | rTIU.pas | Returns VISIT LOCATION;EPISODE BEGIN DATE;VISIT TYPE from the TIU DOCUMENTfile.
-577 | ORWPCE PCE4NOTE | Encounter/rPCE.pas | Returns the encounter information for an associated note in the format: LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPTLST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
-578 | ORWPCE SAVE | Encounter/rPCE.pas | Saves PCE information entered into CPRS GUI.
-579 | ORWPCE SAVEGAF | Encounter/rPCE.pas | Saves a GAF Score.
-580 | ORWPCE SCDIS | Orders/rODBase.pas, Encounter/rPCE.pas | Returns service connected percentage and rated disabilities for a patient.
-581 | ORWPCE SCSEL | Encounter/rPCE.pas | Returns a list of service connected conditions that may be selected.
-582 | ORWPCE VISIT | Encounter/rPCE.pas | Returns a list of visit types for a clinic.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-583 | ORWPCE1 NONCOUNT | Encounter/rPCE.pas | Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964)
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-584 | ORWPCE4 LEX | Encounter/rPCE.pas | Returns list of coded elements based on lexicon look-up. Introduced with CPRS v29 to maintain compatibility of older call ORWPCE LEX.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-585 | ORWPFSS IS PFSS ACTIVE? | Orders/rODBase.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-586 | ORWPS ACTIVE | rMeds.pas | Returns listing of a patient's active inpatient and outpatientmedications.
-587 | ORWPS COVER | rCover.pas | Returns a list of medications to display on the CPRS GUI cover sheet for apatient.
-588 | ORWPS DETAIL | rMeds.pas | Returns text of details for a specific mediction order.
-589 | ORWPS MEDHIST | rMeds.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-590 | ORWPS1 NEWDLG | rMeds.pas | Returns order dialog information for a new medication.
-591 | ORWPS1 PICKUP | rMeds.pas | Returns default for refill location (mail or window).
-592 | ORWPS1 REFILL | rMeds.pas | RPC to submit a request for a refill.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-593 | ORWPT ADMITLST | rCore.pas | Returns a list of admissions for a patient (for visit selection).
-594 | ORWPT APPTLST | rCore.pas | Returns a list of appointments for a patient (for visit selection).
-595 | ORWPT BYWARD | rCore.pas | Returns a list of patients currently residing on a specified wardlocation.
-596 | ORWPT CLINRNG | rCore.pas | Returns a list of selectable options from which a user can choose a daterange for appointments.
-597 | ORWPT CWAD<br>__eHMP__ | Orders/rODAllergy.pas | Returns the CWAD flag(s) for a patient.
-598 | ORWPT DFLTSRC | rCore.pas | Return user's default patient list source.
-599 | ORWPT DIEDON | rCore.pas | Returns date of death if patient has expired.  Otherwise returns 0.
-600 | ORWPT DISCHARGE | rDCSumm.pas | Given a patient and an admission date, return the discharge date/time.
-601 | ORWPT ENCTITL | rCore.pas | Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME
-602 | ORWPT FULLSSN | rCore.pas | Given an SSN in the format 999999999(P), return a list of matchingpatients.
-603 | ORWPT FULLSSN RPL | rCore.pas | Given an SSN in the format 999999999(P), return a list of matching patients based on Restricted Patient List.
-604 | ORWPT ID INFO | rCore.pas | Returns identifying information for a patient.
-605 | ORWPT INPLOC | rCore.pas | Returns the patient's current location if an inpatient.
-606 | ORWPT LAST5 | rCore.pas | Returns a list of patients matching the string of Last Name Initial_Last 4SSN (Initial/Last 4 look-up to PATIENT file).
-607 | ORWPT LAST5 RPL | rCore.pas | Returns a list of patients matching the string of Last Name Initial_Last 4 SSN (Initial/Last 4 look-up based on Restricted Patient List).
-608 | ORWPT LEGACY | rCore.pas | Returns message if patient has data on a legacy system.
-609 | ORWPT LIST ALL | rCore.pas | Returns a set of patient names for use with a long list box.
-610 | ORWPT PTINQ | rCover.pas | Returns formatted patient inquiry text for display in GUI environment.
-611 | ORWPT SAVDFLT | rCore.pas | Saves user's preference for default list source.
-612 | ORWPT SELCHK | rCore.pas | Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.
-613 | ORWPT SELECT | rCore.pas | RPC to return key information on a patient as follows: 1    2   3   4    5      6    7    8       9       10      11   12 13NAME^SEX^DOB^SSN^LOCIEN^LOCNM^RMBD^CWAD^SENSITIVE^ADMITTED^CONV^SC^SC%^ 14  15  16  17ICN^AGE^TS^TSSVC
-614 | ORWPT SHARE | rMisc.pas | 
-615 | ORWPT TOP | rCore.pas | Returns the last selected patient by the defined user.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-616 | ORWPT1 PCDETAIL | rMisc.pas | Returns primary care detailed information about a patient.
-617 | ORWPT1 PRCARE | rCore.pas | Return primary care information for a patient in the format:  VAL=Primary Care Team^Primary Care Provider^Attending^MH Treatment      Coordinator
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-618 | ORWRA IMAGING EXAMS1 | rReports.pas | This remote procedure call returns a list on imaging exams for aspecific patient.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-619 | ORWRP COLUMN HEADERS | rReports.pas | Get list of Column headers for a ListView type report from file 101.24.
-620 | ORWRP GET DEFAULT PRINTER | rCore.pas | Returns default printer.
-621 | ORWRP LAB REPORT LISTS | rReports.pas | This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.
-622 | ORWRP PRINT LAB REMOTE | rLabs.pas |  This rpc is used to print a remote report on the Labs tab in CPRS. RETURN PARAMETER DESCRIPTION: If the print request was successfully queued then the Task manager task number is return. Otherwise, and error code and error description are returned. Error Code Table:       Code            Text      ----            ----        0             <Task Number>        1             No device selected        2             No report specified        3             Report type specified is not valid        4             No date range specified        6             Patient specified is not valid
-623 | ORWRP PRINT LAB REPORTS | rLabs.pas | This rpc is used to print a report on the Labs tabin CPRS.
-624 | ORWRP PRINT REMOTE REPORT | rReports.pas |  This rpc is used to print a remote report on the Report tab in CPRS.
-625 | ORWRP PRINT REPORT | rReports.pas | This rpc is used to print a report on the Report tabin CPRS.
-626 | ORWRP PRINT V REPORT | rReports.pas | This rpc is used to print a V type report on the Reports tab in CPRS
-627 | ORWRP PRINT WINDOWS LAB REMOTE | rLabs.pas |  Prints remote CPRS GUI information to windows printer.
-628 | ORWRP PRINT WINDOWS REMOTE | rReports.pas |  Prints CPRS GUI information to windows printer.
-629 | ORWRP PRINT WINDOWS REPORT | rReports.pas | Prints CPRS GUI information to windows printer.
-630 | ORWRP REPORT LISTS<br>__eHMP__ | rReports.pas | This remote procedure call returns a list of reports,Health Summary types and date ranges that can be displayedat the workstation.There are no input parameters fo this rpc.
-631 | ORWRP REPORT TEXT<br>__eHMP__ | fLabs.pas, fReports.pas | This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
-632 | ORWRP SAVE DEFAULT PRINTER | rReports.pas | Saves printer as user's default printer.
-633 | ORWRP WINPRINT DEFAULT | rReports.pas | Returns whether the Windows printer is set as the default for the user. 
-634 | ORWRP WINPRINT LAB REPORTS | rLabs.pas | Prints text from CPRS GUI to a windows printer.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-635 | ORWRP1 LISTNUTR | rReports.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-636 | ORWRP2 COMPABV | rReports.pas | This RPC returns an array of the ADHOC Health Summary components by abbreviation.
-637 | ORWRP2 COMPDISP | rReports.pas | This RPC returns an array of the ADHOC Health Summary components by display name.
-638 | ORWRP2 GETLKUP | rReports.pas | This gets the last Adhoc Health Summary lookup used by a user in CPRS.
-639 | ORWRP2 HS COMP FILES | rReports.pas | This RPC gets a list of files to select from for the ADHOC Health Summary.
-640 | ORWRP2 HS COMPONENT SUBS | rReports.pas | This RPC returns an array of ADHOC Health Summary subcomponents.
-641 | ORWRP2 HS COMPONENTS | rReports.pas | This RPC returns an array of the ADHOC Health Summary components.
-642 | ORWRP2 HS FILE LOOKUP | rReports.pas | This RPC gets the list of file entries for the file defined for a specificHealth Summary component on the ADHOC Health Summary.  Current choicesinclude files 60, 9999999.64, 811.9, 8925.1, 81, and possibly others(handled generically).  The file entries are used to populate a combo boxon the form.
-643 | ORWRP2 HS REPORT TEXT | rReports.pas | This RPC is used to build the ADHOC Health Summary from an array ofpre-selected health summary components.
-644 | ORWRP2 HS SUBITEMS | rReports.pas | This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.
-645 | ORWRP2 SAVLKUP | rReports.pas | This saves the last Adhoc Health Summary lookup used by a user in CPRS.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-646 | ORWRP3 EXPAND COLUMNS | rReports.pas | This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-647 | ORWRP4 HDR MODIFY | rReports.pas | This RPC looks at data returned from the HDR and makes any modificationsnecessary to make the data compatible with CPRS Reports.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-648 | ORWSR CASELIST | rSurgery.pas | Returns a list of all surgery cases for a patient, without documents asreturned by ORWSR LIST.
-649 | ORWSR GET SURG CONTEXT | rSurgery.pas | 
-650 | ORWSR IS NON-OR PROCEDURE | rSurgery.pas | 
-651 | ORWSR LIST | rSurgery.pas | Return list of surgery cases for a patient.
-652 | ORWSR ONECASE | rSurgery.pas | Given a TIU document IEN, return the surgical case record and all otherdocuments related to the case, for display in the GUI treeview.
-653 | ORWSR RPTLIST | rReports.pas | 
-654 | ORWSR SAVE SURG CONTEXT | rSurgery.pas | 
-655 | ORWSR SHOW OPTOP WHEN SIGNING | rSurgery.pas | 
-656 | ORWSR SHOW SURG TAB | rSurgery.pas | Check for presence of SR*3.0*100 (Surgery Electronic Signature) patch, andalso for parameter value.  If both TRUE, surgery tab will be displayed inCPRS.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-657 | ORWTIU CANLINK | rTIU.pas |  Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322
-658 | ORWTIU CHKTXT | rTIU.pas | Check for existence of text in TIU(8925,TIUDA, either in "TEXT" or "TEMP" nodes, before allowing signature.
-659 | ORWTIU GET DCSUMM CONTEXT | rDCSumm.pas | 
-660 | ORWTIU GET LISTBOX ITEM | rTIU.pas | Given a TIU document IEN, return the information required to construct alistbox item for that single document.
-661 | ORWTIU GET SAVED CP FIELDS | Consults/rConsults.pas | Given a TIU document of the clinical procedures class, return the author, title, cosigner, procedure summary code, date/time of procedure, and reference date, as stored on the server.
-662 | ORWTIU GET TIU CONTEXT | rTIU.pas | 
-663 | ORWTIU SAVE DCSUMM CONTEXT | rDCSumm.pas | 
-664 | ORWTIU SAVE TIU CONTEXT | rTIU.pas | 
-665 | ORWTIU WINPRINT NOTE | rTIU.pas | Returns a formatted global of a TIU document for output to a Windows printdevice.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-666 | ORWTPD ACTDF | Options/rOptions.pas | Make default time/occ setting take action on each report
-667 | ORWTPD DELDFLT | Options/rOptions.pas | Delete user level's specific health summary component setting( date range and max occurences)
-668 | ORWTPD GETDFLT | Options/rOptions.pas | get default setting for all reports(time/occ limits)
-669 | ORWTPD GETIMG | rReports.pas | 
-670 | ORWTPD GETOCM | Options/rOptions.pas | 
-671 | ORWTPD GETSETS | Options/fOptionsReportsCustom.pas | 
-672 | ORWTPD PUTOCM | Options/rOptions.pas | 
-673 | ORWTPD RSDFLT | Options/rOptions.pas | get system or package level default setting for all repors.
-674 | ORWTPD SUDF | Options/rOptions.pas | Set user level default time/occ limits for all reports
-675 | ORWTPD SUINDV | Options/rOptions.pas | set user level individual report's time/occ setting
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-676 | ORWTPD1 GETCSDEF | Options/rOptions.pas | 
-677 | ORWTPD1 GETCSRNG | Options/rOptions.pas | 
-678 | ORWTPD1 GETEAFL | Options/rOptions.pas | 
-679 | ORWTPD1 GETEDATS | Options/rOptions.pas | 
-680 | ORWTPD1 GETEFDAT | Options/rOptions.pas | 
-681 | ORWTPD1 PUTCSRNG | Options/rOptions.pas | 
-682 | ORWTPD1 PUTEDATS | Options/rOptions.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-683 | ORWTPN GETCLASS | Options/rOptions.pas | 
-684 | ORWTPN GETTC | Options/rOptions.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-685 | ORWTPO CSLABD | Options/rOptions.pas | 
-686 | ORWTPO GETIMGD | Options/rOptions.pas | 
-687 | ORWTPO GETTABS | Options/rOptions.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-688 | ORWTPP ADDLIST | Options/rOptions.pas | 
-689 | ORWTPP CHKSURR | Options/rOptions.pas | 
-690 | ORWTPP CLDAYS | Options/rOptions.pas | 
-691 | ORWTPP CLEARNOT | Options/rOptions.pas | 
-692 | ORWTPP CLRANGE | Options/rOptions.pas | 
-693 | ORWTPP CSLAB | Options/rOptions.pas | 
-694 | ORWTPP DELLIST | Options/rOptions.pas | 
-695 | ORWTPP GETCOMBO | Options/rOptions.pas | 
-696 | ORWTPP GETCOS | Options/rOptions.pas | 
-697 | ORWTPP GETDCOS | Options/rOptions.pas | 
-698 | ORWTPP GETIMG | Options/rOptions.pas | 
-699 | ORWTPP GETNOT | Options/rOptions.pas | 
-700 | ORWTPP GETNOTO | Options/rOptions.pas | 
-701 | ORWTPP GETOC | Options/rOptions.pas | 
-702 | ORWTPP GETOTHER | Options/rOptions.pas | 
-703 | ORWTPP GETREM | Options/rOptions.pas | 
-704 | ORWTPP GETSUB | Options/rOptions.pas | 
-705 | ORWTPP GETSURR | Options/rOptions.pas | 
-706 | ORWTPP GETTD | Options/rOptions.pas | 
-707 | ORWTPP GETTU | Options/rOptions.pas | 
-708 | ORWTPP LSDEF | Options/rOptions.pas | 
-709 | ORWTPP NEWLIST | Options/rOptions.pas | 
-710 | ORWTPP PLISTS | Options/rOptions.pas | 
-711 | ORWTPP PLTEAMS | Options/rOptions.pas | 
-712 | ORWTPP REMLIST | Options/rOptions.pas | 
-713 | ORWTPP SAVECD | Options/rOptions.pas | 
-714 | ORWTPP SAVELIST | Options/rOptions.pas | 
-715 | ORWTPP SAVENOT | Options/rOptions.pas | 
-716 | ORWTPP SAVENOTO | Options/rOptions.pas | 
-717 | ORWTPP SAVEOC | Options/rOptions.pas | 
-718 | ORWTPP SAVEPLD | Options/rOptions.pas | 
-719 | ORWTPP SAVESURR | Options/rOptions.pas | 
-720 | ORWTPP SAVET | Options/rOptions.pas | 
-721 | ORWTPP SETCOMBO | Options/rOptions.pas | 
-722 | ORWTPP SETDCOS | Options/rOptions.pas | 
-723 | ORWTPP SETIMG | Options/rOptions.pas | 
-724 | ORWTPP SETOTHER | Options/rOptions.pas | 
-725 | ORWTPP SETREM | Options/rOptions.pas | 
-726 | ORWTPP SETSUB | Options/rOptions.pas | 
-727 | ORWTPP SORTDEF | Options/rOptions.pas | 
-728 | ORWTPP TEAMS | Options/rOptions.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-729 | ORWTPT ATEAMS | Options/rOptions.pas | 
-730 | ORWTPT GETTEAM | Options/rOptions.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-731 | ORWU CLINLOC | rCore.pas | Returns a list of clinics from the HOSPITAL LOCATION file (#44).
-732 | ORWU DEFAULT DIVISION | fFrame.pas | Returns True or False for a user depending on default division information.
-733 | ORWU DEVICE | rCore.pas | Returns a list of print devices.
-734 | ORWU DT | rCore.pas | Returns date in internal VA FileMan format.
-735 | ORWU EXTNAME | rCore.pas | Returns the external form of a pointer value given the IEN and filenumber.
-736 | ORWU GBLREF | rCore.pas | Returns the global reference for a particular file number.
-737 | ORWU GENERIC | rCore.pas, Consults/rConsults.pas | Returns a list of entries from a cross-reference passed in.
-738 | ORWU HAS OPTION ACCESS | rCore.pas | Returns true if the user has access to the specified menu option.
-739 | ORWU HASKEY | rCore.pas | Returns 1 if a user holds a security key, otherwise 0.
-740 | ORWU HOSPLOC | rCore.pas | Returns a set of hospital locations for use in a long list box.
-741 | ORWU INPLOC | rCore.pas | Returns a list of wards from the HOSPITAL LOCATION file.
-742 | ORWU NEWPERS | rCore.pas | Returns a set of New Person file entries for use in a long list box.
-743 | ORWU NPHASKEY<br>__eHMP__ | rCore.pas | Returns a 1 if a specified user holds a specified key, otherwise returns0.
-744 | ORWU PARAM | rCore.pas | Simple call to return a parameter value.  The call assumes the currentuser, 'defaultable' entities, and one instance.
-745 | ORWU PATCH | rMisc.pas | Returns a 1 if the specified patch is installed on the system, otherwisereturns a 0.
-746 | ORWU TOOLMENU | rMisc.pas | Returns a list of items for the CPRS GUI Tools menu.
-747 | ORWU USERINFO | rCore.pas | Returns preferences for the current user.
-748 | ORWU VALDT | rCore.pas | Validates date/time entry and returns value of Y from %DT call.
-749 | ORWU VALIDSIG<br>__eHMP__ | rCore.pas | Validates a broker encrypted electronic signature.
-750 | ORWU VERSION | rMisc.pas | Returns current version of package or namespace
-751 | ORWU VERSRV | rMisc.pas | Returns the server version of a particular option.  This is specificallyused by CPRS GUI to determine the current server version of the associatedsoftware.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-752 | ORWU1 NAMECVT | rCore.pas | 
-753 | ORWU1 NEWLOC | rCore.pas | Returns a list of Clinics, Wards, and "Other" category entries from the HOSPITAL LOCATION (#44) file.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-754 | ORWU2 COSIGNER | rCore.pas | Returns a set of New Person file entries for use in a long list box.The set is limited to USR PROVIDERS who do not require cosignature.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-755 | ORWUL FV4DG<br>__eHMP__ | Orders/rODMeds.pas | 
-756 | ORWUL FVIDX<br>__eHMP__ | Orders/rODMeds.pas | 
-757 | ORWUL FVSUB<br>__eHMP__ | Orders/rODMeds.pas | 
-758 | ORWUL QV4DG | Orders/rODMeds.pas, Orders/rODLab.pas | 
-759 | ORWUL QVIDX | Orders/rODMeds.pas | 
-760 | ORWUL QVSUB | Orders/rODMeds.pas, Orders/rODLab.pas | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-761 | ORWUX SYMTAB | rMisc.pas | Returns the contents of the current session's symbol table.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-762 | PXRM REMINDER CATEGORY | rReminders.pas | List reminders and categories in display order for a reminder category.
-763 | PXRM REMINDER DIALOG (TIU) | rReminders.pas | Dialog for a given dialog ien.
-764 | PXRM REMINDERS AND CATEGORIES | rReminders.pas | Returns list of reminders and categories.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-765 | TIU AUTHORIZATION<br>__eHMP__ | rDCSumm.pas, rTIU.pas | This RPC allows the calling application to evaluate privilege to performany ASU-mediated action on a TIU document.
-766 | TIU CAN CHANGE COSIGNER? | rTIU.pas | BOOLEAN RPC to evaluate user's privilege to modify the expected cosigner, given the current status of the document, and the user's role with respect to it.
-767 | TIU CREATE ADDENDUM RECORD | rDCSumm.pas, rTIU.pas | This Remote Procedure allows the creation of addenda to TIU Documents.
-768 | TIU CREATE RECORD<br>__eHMP__ | rDCSumm.pas, rTIU.pas | This remote procedure allows the creation of TIU DOCUMENT records.
-769 | TIU DELETE RECORD | rDCSumm.pas, rTIU.pas | Deletes TIU Document records...Evaluates authorization.
-770 | TIU DETAILED DISPLAY | rSurgery.pas, rTIU.pas | Gets details for display of a given record.
-771 | TIU DIV AND CLASS INFO | rTIU.pas | Returns a list of Divisions and User Classes for a specific User.
-772 | TIU DOCUMENTS BY CONTEXT | rDCSumm.pas, rTIU.pas | Returns lists of TIU Documents that satisfy the following search criteria: 1 - signed documents (all)   2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range
-773 | TIU FIELD CAN EDIT | Templates/rTemplates.pas | Returns TRUE if the current user is allowed to edit template fields.
-774 | TIU FIELD CHECK | Templates/rTemplates.pas | Very similar to IMPORT^TIUSRVF, except does not save template fields.Resolves self referencing loops, and takes into account fields withthe same name already saved.
-775 | TIU FIELD DELETE | Templates/rTemplates.pas | Deletes an entry in the Template Field (8927.1) file.
-776 | TIU FIELD DOLMTEXT | Templates/rTemplates.pas | Reads through an array of text and converts all entries of templatefields to their assocaited List Manager text values.
-777 | TIU FIELD LIST | Templates/rTemplates.pas | Returns long list array of template fields
-778 | TIU FIELD LIST ADD | Templates/rTemplates.pas | Takes in the XML string, in the format XMLSET(1)=" <TEMPLATE_FIELDS>" and merges them with the global ^TMP("TIUFLDXML",$J).  If the subscript is 1,then it KILLs the global before it merges.  This routine is used so verylarge lists of fields can be processed without many calls to the database.
-779 | TIU FIELD LIST IMPORT | Templates/rTemplates.pas | Calls the import process for a pre-loaded (into ^TMP) list of templatefields.
-780 | TIU FIELD LOAD | Templates/rTemplates.pas | Returns a single Template Field object
-781 | TIU FIELD LOAD BY IEN | Templates/rTemplates.pas | Returns a single Template Field object.
-782 | TIU FIELD LOCK | Templates/rTemplates.pas | Locks a template field record for editing
-783 | TIU FIELD NAME IS UNIQUE | Templates/rTemplates.pas | Returns TRUE if the template field name is unique
-784 | TIU FIELD UNLOCK | Templates/rTemplates.pas | Unlock Template Field
-785 | TIU GET ADDITIONAL SIGNERS | rTIU.pas | Returns the list of additional signers currently identified for a givenTIU document.
-786 | TIU GET ALERT INFO | rCore.pas | Given a TIU XQAID, return the patient and document type for the item beingalerted.
-787 | TIU GET BOILERPLATE | Templates/rTemplates.pas | Returns a titles boilerplate.
-788 | TIU GET DEFAULT PROVIDER | Encounter/rPCE.pas | This RPC returns the default provider as specified by the TIU Site ParameterDEFAULT PRIMARY PROVIDER, which has the following allowable values:0      NONE, DON'T PROMTIn which case the call will return 0^1      DEFAULT, BY LOCATIONIn this case, the call will return the default provider for a given HospitalLocation, as specified in the set-up for the Clinic in MAS. If a defaultprovider is specified for the location in question, that person will bereturned. If the Clinic set-up specifies use of the Primary Provider (if defined) for the patient, then that person will be returned. The returnformat will be DUZ^LASTNAME,FIRSTNAME.2      AUTHOR (IF PROVIDER)In this case, the call will return the current user (if they are a known Provider). If their not a known Provider, then the call will return 0^.
-789 | TIU GET DOCUMENT PARAMETERS | Encounter/rPCE.pas, rDCSumm.pas, rTIU.pas | This Remote Procedure returns the parameters by which a given documentor document type is to be processed.
-790 | TIU GET DOCUMENT TITLE | rTIU.pas | This remote procedure returns the pointer to the TIU DOCUMENT DEFINITIONFILE that corresponds to the TITLE of the document identified in the TIUDAparameter.
-791 | TIU GET DS URGENCIES | rDCSumm.pas | Returns a set of discharge summary urgencies for use in a long list box.
-792 | TIU GET LINKED PRF NOTES | fPatientFlagMulti.pas | Returns list of SIGNED, LINKED PRF notes for given patient, for givenPRF Title
-793 | TIU GET LIST OF OBJECTS | Templates/rTemplates.pas | This RPC returns the list of TIU OBJECTS that the current user may selectfrom.
-794 | TIU GET PERSONAL PREFERENCES | rDCSumm.pas, rTIU.pas | Returns Users personal preferences for TIU in the following format: TIUY = USER [1P] ^ DEFAULT LOCATION [2P] ^ REVIEW SCREEN SORT FIELD [3S] ^    ==>REVIEW SCREEN SORT ORDER [4S] ^ DISPLAY MENUS [5S] ^ PATIENT    ==>SELECTION PREFERENCE [6S] ^ ASK 'Save changes?' AFTER EDIT [7S] ^    ==>ASK SUBJECT FOR PROGRESS NOTES [8S] ^
-795 | TIU GET PRF ACTIONS | fNoteProps.pas | This RPC gets the Patient Record Flag History Assignments/Actions for a Patient/Title Combination.
-796 | TIU GET PRF TITLE | fPatientFlagMulti.pas | Returns IEN of the TIU Note Title in file 8925.1 which is associatedwith given flag for given patient.
-797 | TIU GET PRINT NAME | rTIU.pas | This Remote Procedure receives a pointer to the TIU DOCUMENT DEFINITIONFILE (#8925.1) and returns a string containing the Print Name of thecorresponding Document Definition.
-798 | TIU GET RECORD TEXT | fNotes.pas, rSurgery.pas, rTIU.pas, rCover.pas | This RPC will get the textual portion of a TIU Document Record.
-799 | TIU GET REQUEST | rSurgery.pas, rTIU.pas | This Remote Procedure returns the variable pointer to the REQUESTINGPACKAGE REFERENCE (File #8925, Field #1405). This would be the record inthe Requesting Package (e.g., Consult/Request Tracking or Surgery) forwhich the resulting document has been entered in TIU.
-800 | TIU GET SITE PARAMETERS | rTIU.pas | This RPC returns the TIU Parameters for the Division the user is logged in to.
-801 | TIU HAS AUTHOR SIGNED? | rTIU.pas | Boolean RPC returns a value of 0 if the author has not signed and the user attempting to sign is the expected co-signer.  Returns a 1 if the author has signed or the user attempting to sign is NOT the expected co-signer.
-802 | TIU ID ATTACH ENTRY | rTIU.pas | This RPC will attach a a document as an Interdisciplinary (ID) entry to anID Parent document.
-803 | TIU ID CAN ATTACH | rTIU.pas | This BOOLEAN RPC evaluates the question of whether a particular documentmay be attached as an entry to an Interdisciplinary Note (i.e., can thisdocument be an ID Child?).
-804 | TIU ID CAN RECEIVE | rTIU.pas | This BOOLEAN RPC evaluates the question of whether a particular documentmay receive an entry as an Interdisciplinary Parent Note (i.e., can thisdocument be an ID Parent?).
-805 | TIU ID DETACH ENTRY | rTIU.pas | This call will remove an ID Entry from an Interdisciplinary Note.
-806 | TIU IDENTIFY CLINPROC CLASS | Consults/rConsults.pas | This RPC gets the CLINICAL PROCEDURES TIU Document Definitionfile (#8925.1) IEN.
-807 | TIU IDENTIFY CONSULTS CLASS | Consults/rConsults.pas | This RPC returns the record number of the class CONSULTS in the TIUDOCUMENT DEFINITION file (#8925.1).
-808 | TIU IDENTIFY SURGERY CLASS | rSurgery.pas | This RPC returns the record number of the class identified by the CLNAMEparameter in the TIU DOCUMENT DEFINITION file (#8925.1).
-809 | TIU IS THIS A CLINPROC? | rTIU.pas | This RPC evaluates whether or not a Title is under theCLINICAL PROCEDURES Class.
-810 | TIU IS THIS A CONSULT? | rTIU.pas | BOOLEAN RPC which evaluates whether the title indicated is that of aconsult.
-811 | TIU IS THIS A SURGERY? | rSurgery.pas | BOOLEAN RPC which evaluates whether the title indicated is that of aSURGICAL REPORT or PROCEDURE REPORT (NON-O.R.).
-812 | TIU IS USER A PROVIDER? | Encounter/rPCE.pas | This Boolean RPC returns TRUE if the user was a known provider on the date specified.
-813 | TIU IS USER A USR PROVIDER | Encounter/rPCE.pas | This Boolean RPC returns TRUE if the user was a member of USR CLASS PROVIDER on the date specified.
-814 | TIU ISPRF | rTIU.pas | This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.
-815 | TIU JUSTIFY DELETE? | rTIU.pas | BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).
-816 | TIU LINK TO FLAG | fNotes.pas | This RPC is used to link a Progress Note to a Patient Record Flag
-817 | TIU LOAD BOILERPLATE TEXT | rTIU.pas | This RPC will load the boilerplate text associated with the selectedtitle, and execute the methods for any objects embedded in the boilerplatetext.
-818 | TIU LOAD RECORD FOR EDIT | rDCSumm.pas, rTIU.pas | This RPC loads the return array with data in a format consistent with thatrequired by the TIU UPDATE RECORD API.  It should be invoked when the userinvokes the Edit action, to load the dialog for editing the document.
-819 | TIU LOCK RECORD<br>__eHMP__ | rTIU.pas | This RPC will issue an incremental LOCK on the record identified by theTIUDA parameter, returning an integer truth value indicating successor failure in obtaining the LOCK.
-820 | TIU LONG LIST BOILERPLATED | Templates/rTemplates.pas | Used by the GUI to supply a long list of boilerplated titles.
-821 | TIU LONG LIST CLINPROC TITLES | Consults/rConsults.pas | This RPC serves data to a longlist of selectable Titles for CLINICALPROCEDURES.
-822 | TIU LONG LIST CONSULT TITLES | Consults/rConsults.pas | This RPC serves data to a longlist of selectable TITLES for CONSULTS.
-823 | TIU LONG LIST OF TITLES | rDCSumm.pas, rTIU.pas, Options/rOptions.pas | This RPC serves data to a longlist of selectable TITLES by CLASS.  e.g.,passing the class PROGRESS NOTES will return active Progress Notes titleswhich the current user is authorized to enter notes under.
-824 | TIU LONG LIST SURGERY TITLES | rSurgery.pas | This RPC serves data to a longlist of selectable TITLES for the classnamed in the CLNAME parameter.
-825 | TIU ONE VISIT NOTE? | rTIU.pas | Boolean RPC to evaulate if note has a corresponding visit.
-826 | TIU PERSONAL TITLE LIST | rDCSumm.pas, rSurgery.pas, rTIU.pas, Consults/rConsults.pas | This Remote Procedure returns the user's list of preferred titles for agiven class of documents, along with the default title, if specified.
-827 | TIU PRINT RECORD | rTIU.pas | Allows Printing of TIU Documents on demand.
-828 | TIU REM DLG OK AS TEMPLATE | Templates/rTemplates.pas | Returns TRUE is the passed in reminder dialog is allowed to be used ina TIU Template.
-829 | TIU REMINDER DIALOGS | Templates/rTemplates.pas | Returns a list of reminder dialogs allowed for use as Templates.
-830 | TIU REQUIRES COSIGNATURE | rTIU.pas | This Boolean RPC simply evaluates whether the current user requirescosignature for TIU DOCUMENTS, and returns a 1 if true, or a 0 if false.
-831 | TIU SET DOCUMENT TEXT | rTIU.pas | This RPC buffers the transmittal of text (i.e., the body of TIU Documents)from the Client to the Server. It allows documents of indefinite size tobe filed, without risk of an allocate error on the M Server.
-832 | TIU SIGN RECORD<br>__eHMP__ | rDCSumm.pas, rTIU.pas | This API Supports the application of the user's electronic signature to aTIU document while evaluating authorization, and validating the user'selectronic signature.
-833 | TIU SUMMARIES | rTIU.pas | This API gets lists of Discharge Summaries for a patient, with optional parameters for STATUS, EARLY DATE/TIME, and LATE DATE/TIME.
-834 | TIU TEMPLATE ACCESS LEVEL | Templates/rTemplates.pas | 
-835 | TIU TEMPLATE ALL TITLES | Templates/rTemplates.pas | Returns a long list of all active titles.
-836 | TIU TEMPLATE CHECK BOILERPLATE | Templates/rTemplates.pas | This RPC will evaluate boilerplate passed in the input array, checking tosee whether any of the embedded objects are inactive, faulty, orambiguous.
-837 | TIU TEMPLATE DELETE | Templates/rTemplates.pas | This RPC will delete orphan entries in the Template file (i.e., onlythose entries that have been removed from any Groups, Classes, Personalor Shared Root entries).
-838 | TIU TEMPLATE GET DEFAULTS | Templates/rTemplates.pas | Returns Default Template Settings
-839 | TIU TEMPLATE GET DESCRIPTION | Templates/rTemplates.pas | Returns a Template's Description
-840 | TIU TEMPLATE GETBOIL | Templates/rTemplates.pas | 
-841 | TIU TEMPLATE GETITEMS | Templates/rTemplates.pas | 
-842 | TIU TEMPLATE GETLINK | Templates/rTemplates.pas | Returns template linked to a specific title or reason for request.
-843 | TIU TEMPLATE GETROOTS | Templates/rTemplates.pas | 
-844 | TIU TEMPLATE GETTEXT | Templates/rTemplates.pas | 
-845 | TIU TEMPLATE ISEDITOR | Templates/rTemplates.pas | 
-846 | TIU TEMPLATE LISTOWNR | Templates/rTemplates.pas | 
-847 | TIU TEMPLATE LOCK | Templates/rTemplates.pas | Locks Template
-848 | TIU TEMPLATE PERSONAL OBJECTS | Templates/rTemplates.pas | Returns a list or Patient Data Objects allowed in Personal Templates.
-849 | TIU TEMPLATE SET DEFAULTS | Templates/rTemplates.pas | Saves Template Default Settings
-850 | TIU TEMPLATE SET ITEMS | Templates/rTemplates.pas | This RPC will create or update the items for a Group, Class, or Root.
-851 | TIU TEMPLATE UNLOCK | Templates/rTemplates.pas | Unlocks a template.
-852 | TIU UNLOCK RECORD<br>__eHMP__ | rTIU.pas | This RPC will decrement the lock on a given TIU Document Record, identifiedby the TIUDA input parameter. The return value will always be 0.
-853 | TIU UPDATE ADDITIONAL SIGNERS | rTIU.pas | This RPC accepts a list of persons, and adds them as additional signersfor the document identified by the first parameter.
-854 | TIU UPDATE RECORD<br>__eHMP__ | rDCSumm.pas, rTIU.pas | This API updates the record named in the TIUDA parameter, with theinformation contained in the TIUX(Field #) array.  The body of themodified TIU document should be passed in the TIUX("TEXT",i,0) subscript,where i is the line number (i.e., the "TEXT" node should be ready to MERGEwith a word processing field).  Any filing errors which may occur will bereturned in the single valued ERR parameter (which is passed byreference).
-855 | TIU USER CLASS LONG LIST | rTIU.pas | Long List of User Classes
-856 | TIU USER INACTIVE? | rTIU.pas | RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
-857 | TIU WAS THIS SAVED? | rTIU.pas | This Boolean Remote Procedure will evaluate whether a given document wascommitted to the database, or whether the user who last edited it wasdisconnected.
-858 | TIU WHICH SIGNATURE ACTION<br>__eHMP__ | rTIU.pas | This RPC infers whether the user is trying to sign or cosign the docuementin question, and indicates which ASU ACTION the GUI should pass to the TIUAUTHORIZATION RPC.
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-859 | VAFCTFU CONVERT ICN TO DFN | rCore.pas | Given a patient Integration Control Number (ICN), this will returnthe patient Internal Entry Number (IEN) from the PATIENT file (#2).
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-860 | XUS PKI GET UPN | Orders/fOrdersSign.pas, fFrame.pas, fReview.pas | This RPC gets the SUBJECT ALTERNATIVE NAME field from the New Person (#200) file field 501.2.  It is used to check that the correct PIV card has been put into the reader.
-861 | XUS PKI SET UPN | Orders/uOrders.pas | This RPC is used to set the SUBJECT ALTERNATIVE NAME in the New Person #(200) file field 501.2. 
-&nbsp; | &nbsp; | &nbsp; | &nbsp;
-862 | XWB DEFERRED CLEARALL | rReports.pas | This RPC is used to CLEAR all the data known to this job in the ^XTMPglobal.  Makes use of the list in ^TMP("XWBHDL",$J,handle).
-863 | XWB DIRECT RPC | rCore.pas, rReports.pas |  This is the Broker RPC that is called to request that a RPC be run on aremote system.  The data is passed by HL7 to the remote system as is thereturn value.  The difference between this and the XWB REMOTE RPC is thisis a blocking call meaning the user's workstation will not processanything else until the data returns from the remote system.
-864 | XWB GET VARIABLE VALUE | rMisc.pas, rTIU.pas | This RPC accepts the name of a variable which will be evaluated and itsvalue returned to the server.  For example, this RPC may be called witha parameter like DUZ which will be returned as 123456.
-865 | XWB REMOTE GETDATA | rReports.pas | This RPC will return an ARRAY with what ever data has been sent back fromthe remote site.
-866 | XWB REMOTE RPC | rReports.pas, rLabs.pas | This is the RPC that is called to request that an application RPCbe run on a remote system.  The data is passed by HL7 to the remote systemas is the return value.   This RPC will return a HANDLE that can be used to check if the data hasbeen sent back from the remote system.  The HANDLE can be used in anotherRPC to check the status of the RPC.
-867 | XWB REMOTE STATUS CHECK | rReports.pas | This RPC will return the status of a remote RPC.
+23 | OR GET COMBAT VET | [uCombatVet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uCombatVet.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+24 | ORALWORD ALLWORD | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+25 | ORB DELETE ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This function deletes an alert.
+26 | ORB FORWARD ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | The rpc forwards an alert.
+27 | ORB RENEW ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This rpc renews an alert.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+28 | ORCDLR2 CHECK ALL LC TO WC | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+29 | ORCDLR2 CHECK ONE LC TO WC | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+30 | ORCHECK DELMONO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+31 | ORCHECK GETMONO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+32 | ORCHECK GETMONOL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+33 | ORCHECK GETXTRA | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+34 | ORCHECK ISMONO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+35 | ORCNOTE GET TOTAL | [fNotes.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+36 | ORDDPAPI ADMTIME | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+37 | ORDDPAPI CLOZMSG | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+38 | ORDEA CSVALUE | [uCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uCore.pas) | 
+39 | ORDEA DEATEXT | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | Returns the text to show on the signature dialog mandated by DEA for when a controlled substance order is selected to be signed.
+40 | ORDEA HASHINFO | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | 
+41 | ORDEA LNKMSG | [Orders/uOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/uOrders.pas) | Returns the text of the OR DEA PIV LINK MSG parameter.
+42 | ORDEA ORDHINFO | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | 
+43 | ORDEA PINLKCHK | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | 
+44 | ORDEA PINLKSET | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | 
+45 | ORDEA PNDHLD | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+46 | ORDEA SIGINFO | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | returns the provider/patient info that must be displayed when signing a controlled substance order(s)
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+47 | ORECS01 CHKESSO | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+48 | ORECS01 ECPRINT | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+49 | ORECS01 ECRPT | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+50 | ORECS01 GETDIV | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+51 | ORECS01 SAVPATH | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+52 | ORECS01 VSITID | [rECS.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rECS.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+53 | OREVNTX ACTIVE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+54 | OREVNTX LIST | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+55 | OREVNTX PAT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+56 | OREVNTX1 AUTHMREL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+57 | OREVNTX1 CHGEVT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+58 | OREVNTX1 CMEVTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+59 | OREVNTX1 COMP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+60 | OREVNTX1 CPACT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+61 | OREVNTX1 CURSPE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+62 | OREVNTX1 DEFLTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+63 | OREVNTX1 DELDFLT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+64 | OREVNTX1 DELPTEVT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+65 | OREVNTX1 DFLTDLG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+66 | OREVNTX1 DFLTEVT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+67 | OREVNTX1 DIV | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+68 | OREVNTX1 DIV1 | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+69 | OREVNTX1 DLGIEN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+70 | OREVNTX1 DONE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+71 | OREVNTX1 EMPTY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+72 | OREVNTX1 EVT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+73 | OREVNTX1 EXISTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+74 | OREVNTX1 GETDLG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+75 | OREVNTX1 GETSTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+76 | OREVNTX1 GTEVT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+77 | OREVNTX1 GTEVT1 | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+78 | OREVNTX1 HAVEPRT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+79 | OREVNTX1 ISPASS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+80 | OREVNTX1 ISPASS1 | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+81 | OREVNTX1 LOC | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+82 | OREVNTX1 LOC1 | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+83 | OREVNTX1 MATCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+84 | OREVNTX1 MULTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+85 | OREVNTX1 NAME | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+86 | OREVNTX1 ODPTEVID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+87 | OREVNTX1 PRMPTID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+88 | OREVNTX1 PROMPT IDS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+89 | OREVNTX1 PUTEVNT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+90 | OREVNTX1 SETDFLT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+91 | OREVNTX1 TYPEXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+92 | OREVNTX1 WRLSTED | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+93 | ORIMO IMOLOC | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+94 | ORIMO IMOOD | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+95 | ORIMO ISCLOC | [fPrintLocation.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPrintLocation.pas), [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+96 | ORIMO ISIVQO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+97 | ORPRF CLEAR | [uOrPtf.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas) | 
+98 | ORPRF GETFLG | [uOrPtf.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas) | 
+99 | ORPRF HASFLG | [uOrPtf.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas) | 
+100 | ORPRF TRIGGER POPUP | [uOrPtf.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas) | Returns 1 if popup flag display should be triggered for given patient uponpatient selection. If not, returns 0. Does not require clean-up aftercalling it since it does not set arrays or globals.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+101 | ORQOR DETAIL<br>__eHMP/ JLV__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns detailed information regarding an order.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+102 | ORQPT ATTENDING/PRIMARY | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas) | Returns a patient's attending physician and primary provider.
+103 | ORQPT CLINIC PATIENTS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns patients with appointments at a clinic between start and stop dates
+104 | ORQPT DEFAULT CLINIC DATE RANG | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns default start and stop dates for clinics in the form: start^stop.Start and stop are free text and are not in FM format.  
+105 | ORQPT DEFAULT LIST SORT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the current user's default patient selection list SORT ORDERsetting.
+106 | ORQPT DEFAULT LIST SOURCE | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns the source of the current user's default patient list.
+107 | ORQPT KILL RPL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This RPC is passed a ^TMP file root and $J(job number) and kills the ^TMP("ORRPL",$J globaldata based on the passed file root w/job number.
+108 | ORQPT MAKE RPL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Passes Team List IEN, creates a TMP file entry of patients based thereon, and receives a $J job number in return.
+109 | ORQPT PATIENT TEAM PROVIDERS | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Function returns a list of providers linked to a patient via teams.
+110 | ORQPT PROVIDER PATIENTS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns an array of patients linked to a provider/user.
+111 | ORQPT READ RPL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Passes global reference and other parameters, and receives a list of patients (up to 44 maximum) with IENs, for use in scrolling a Long List Box (LLB) componenet.
+112 | ORQPT SPECIALTIES | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns an array of treating specialties.
+113 | ORQPT SPECIALTY PATIENTS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns an array of patients linked to a treating specialty.
+114 | ORQPT TEAM PATIENTS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns an array of patients on a team.
+115 | ORQPT TEAMS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns a list of teams.
+116 | ORQPT WARDS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Function returns a list of wards.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+117 | ORQQAL DETAIL<br>__JLV__ | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by "^" and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by ";"), comments.
+118 | ORQQAL LIST | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of allergies for a patient.
+119 | ORQQAL LIST REPORT | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of allergens, severity and signs/symptoms in a reportformat which can be used in a "detailed" display.  This RPC was set upto support the listing of allergies when selected from the Patient Postingslist.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+120 | ORQQCN ADDCMT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Allows addition of a comment to a consult request/consult without changingits status. Optionally, allows sending of an alert to the requestingprovider and others.
+121 | ORQQCN ADMIN COMPLETE | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+122 | ORQQCN ASSIGNABLE MED RESULTS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of medicine results that can be attached to a procedure.
+123 | ORQQCN ATTACH MED RESULTS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Allows a med result to be attached to a procedure request.
+124 | ORQQCN CANEDIT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns indication of whether a consult/procedure request can beresubmitted.
+125 | ORQQCN DEFAULT REQUEST REASON | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+126 | ORQQCN DETAIL<br>__JLV__ | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns formatted detailed information regarding the consult request,including result report if available.
+127 | ORQQCN DISCONTINUE | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Discontinue a consult or deny a consult request.
+128 | ORQQCN EDIT DEFAULT REASON | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Return value (see details there) determines if and when the consults'reason for request' can be edited.
+129 | ORQQCN FIND CONSULT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Given a Consult IEN in file 123, return a formatted list item for thatsingle consult only, in the same format as returned by ORQQCN LIST.
+130 | ORQQCN FORWARD | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Forwards a consult to a subservice of the forwarding service, as definedin file 123.5
+131 | ORQQCN GET CONSULT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Given a Consult ID from file 123, return the zero node to the client forloading into a consult record in RESULTS[0].  If the consult has anyassociated TIU records (completion, addenda) these will be returned inRESULTS[i..j].
+132 | ORQQCN GET MED RESULT DETAILS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Detailed display of medicine results.
+133 | ORQQCN GET ORDER NUMBER | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas), [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+134 | ORQQCN GET PROC IEN | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Given orderable item IEN, return pointer to file 123.3
+135 | ORQQCN GET PROC SVCS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Given an orderable item from the S.PROC XREF in 101.43, return theConsults service from 123.5 that can perform the procedure.
+136 | ORQQCN GET SERVICE IEN | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+137 | ORQQCN ISPROSVC | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | RPC will return 1 or 0 if the supplied file entry from 123.5 is marked as part of the Consults-Prosthetics interface.  This RPC is used to disable the Earliest Appropriate Date field and value when ordering Prosthetics requests via CPRS GUI.
+138 | ORQQCN LIST | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of consult requests for a patient within optional date rangeand optional service.
+139 | ORQQCN MED RESULTS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a display of Medicine Package results, followed by any TIUresults.
+140 | ORQQCN PRINT SF513 | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+141 | ORQQCN PROVDX | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+142 | ORQQCN RECEIVE | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Test version of RECEIVE CONSULT for use with GUI.  (REV - 8/22/97)
+143 | ORQQCN REMOVABLE MED RESULTS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns list of medicine results that are currently attached to aprocedure.
+144 | ORQQCN REMOVE MED RESULTS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Allows removal of medicine results from a  procedure.
+145 | ORQQCN RESUBMIT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Allows resubmission of a cancelled consult or procedure request afterediting.  This is a backdoor resubmission, and CPRS will be notified viathe HL7 proocess.
+146 | ORQQCN SET ACT MENUS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Based on the IEN of the consult passed in, returns a string representingvarious facets of the user's access level for that consult and service.This allows dynamic enabling/disabling of GUI menus based on the user'sability to act on that particular consult.  
+147 | ORQQCN SF513 WINDOWS PRINT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Print consults Standard Form 513 to Windows device from GUI application.
+148 | ORQQCN SHOW SF513 | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns text of consults standard form 513 for display in GUI application.
+149 | ORQQCN SIGFIND | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+150 | ORQQCN STATUS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of consult statuses currently in use, as reflected in the"AC" XREF of ^GMR(123.1.
+151 | ORQQCN SVC W/SYNONYMS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This is a modified version of ORQQCN GET SERVICE TREE that also includessynonyms for the services returned. It also allows passing of an optionalConsult IEN, for screening allowable services to forward the consult to,especially in the case of interfacility consults.
+152 | ORQQCN SVCLIST | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Because the combo box on the Consults order dialog needs to include ashortlist at the top, a call was needed that returned the list of consultsservices alphabetically as a long list.  This is it.
+153 | ORQQCN SVCTREE | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a specially formatted list of consult services for use inpopulating a GUI TreeView control.
+154 | ORQQCN UNRESOLVED | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns 1 if current user has unresolved consults for current patient, 0 if not.
+155 | ORQQCN URGENCIES | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of applicable urgencies from PROTOCOL file 101,given a ConsultIEN and type.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+156 | ORQQCN2 GET CONTEXT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+157 | ORQQCN2 GET PREREQUISITE | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns resolved boilerplate form CONSULT SERIVCES file (123.5) reflectingthe service's prerequisites for ordering a consult.
+158 | ORQQCN2 SAVE CONTEXT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+159 | ORQQCN2 SCHEDULE CONSULT | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Changes status of consult to "Scheduled", optionally adding a comment andsending alerts.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+160 | ORQQPL ADD SAVE<br>__eHMP__ | [BA/fBALocalDiagnoses.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/fBALocalDiagnoses.pas), [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Add new problem record
+161 | ORQQPL AUDIT HIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | RETURN PROBLEM AUDIT HISTORY
+162 | ORQQPL CHECK DUP | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | 
+163 | ORQQPL CLIN FILTER LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN
+164 | ORQQPL CLIN SRCH | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Returns list of clinics for problem list. Should be replaced by CLIN^ORQPT
+165 | ORQQPL DELETE<br>__eHMP__ | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | DELETES A PROBLEM
+166 | ORQQPL DETAIL<br>__JLV__ | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Function returns a string of detailed information for a problem.
+167 | ORQQPL EDIT LOAD | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Return array of default fields and original fields - GMPFLD() and GMPORIG()
+168 | ORQQPL EDIT SAVE<br>__eHMP__ | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | sAVES EDITED PROBLEM RECORD
+169 | ORQQPL INIT PT | [BA/UBAGlobals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBAGlobals.pas), [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | returns death indicator, sc and exposures
+170 | ORQQPL INIT USER | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Returns user parameters for problem list
+171 | ORQQPL LIST | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Function returns a list of problems for a patient.
+172 | ORQQPL PROB COMMENTS<br>__JLV__ | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Returns a list of comments associated with a problem IEN.
+173 | ORQQPL PROBLEM LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Problem list for CPRS GUI client
+174 | ORQQPL PROBLEM NTRT BULLETIN | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | This RPC generates a bulletin to the OR CAC Mail Group, indicating that an unresolved term needs to be requested using the New Term Rapid Turnaround website at http://hdrmul7.aac.domain.ext:7151/ntrt/.
+175 | ORQQPL PROV FILTER LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | RETURNS A LIST OF PROVIDERS CORRESPONDING TO INPUT ARRAY OF IEN
+176 | ORQQPL PROVIDER LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | RETURNS ARRAY OF PROVIDERS MATCHING INPUT
+177 | ORQQPL REPLACE | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
+178 | ORQQPL SAVEVIEW | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Saves preferred view (inpatient/outpatient) and list of preferredclinics/services to NEW PERSON file, field 125.nn.  Also sets value ofparameter [ORCH CONTEXT PROBLEMS], which controls the default status ofthe problems shown, as well as whether comments should be displayed.Preferences take effect for both GUI and List Manager, and can be changedfrom either interface.
+179 | ORQQPL SERV FILTER LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | RETURNS ARRAY OF IEN^NAME FOR INPUT ARRAY OF IEN
+180 | ORQQPL SRVC SRCH | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | gET LIST OF AVAILABLE SERVICES
+181 | ORQQPL UPDATE | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Updates problem record
+182 | ORQQPL USER PROB CATS | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | rETURNS ARRAY OF CATEGORIES FOR USER TO SELECT FROM
+183 | ORQQPL USER PROB LIST | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | Returns array of user specific problems to select from
+184 | ORQQPL VERIFY | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | VERIFY A TRANSCRIBED PROBLEM
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+185 | ORQQPL4 LEX<br>__eHMP__ | [rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas) | This RPC supports the Clinical Lexicon Search for Problem List. It will return an indefinite list of terms that match the user's search string.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+186 | ORQQPP LIST | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of active Patient Postings for a patient.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+187 | ORQQPS DETAIL | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns the details of a medication order.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+188 | ORQQPX GET FOLDERS | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
+189 | ORQQPX LVREMLST | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns Cover Sheet reminder settings
+190 | ORQQPX NEW COVER SHEET ACTIVE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns TRUE if the new cover sheet parameters are to be used.
+191 | ORQQPX NEW REMINDERS ACTIVE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Return 1 if Interactive Reminders are active, otherwise return 0.
+192 | ORQQPX REM INSERT AT CURSOR | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns TRUE if text generated from a reminder dialog, when processinga reminder, is to be inserted at the current cursor location, ratherthan at the bottom of the note.
+193 | ORQQPX REMINDER DETAIL<br>__eHMP/ JLV__ | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns the details of a clinical reminder.
+194 | ORQQPX REMINDERS LIST<br>__eHMP__ | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of clinical reminders.
+195 | ORQQPX SAVELVL | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Saves Parameter Level settings.
+196 | ORQQPX SET FOLDERS | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Sets the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+197 | ORQQPXRM DIALOG ACTIVE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | For a list of reminders [#811.9] returns same list with status to indicateif an active dialog exists for the reminder.
+198 | ORQQPXRM DIALOG PROMPTS | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Additional prompts for a given dialog element
+199 | ORQQPXRM EDUCATION SUBTOPICS | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns array of subtopics for any given education topic
+200 | ORQQPXRM EDUCATION SUMMARY | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns list of education topics for a reminder
+201 | ORQQPXRM EDUCATION TOPIC | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Detailed description of education topic
+202 | ORQQPXRM GEC DIALOG | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | This RPC will evaluate the Reminder Dialogs as the Finish button is clickfor the GEC Project. THis RPC will return an error messages if the fourGEC Reminder Dialogs are done out of order.
+203 | ORQQPXRM GEC FINISHED? | [fFrame.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fFrame.pas), [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | This RPC pass a boolean value to PXRMGECU
+204 | ORQQPXRM GEC STATUS PROMPT | [fFrame.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fFrame.pas) | This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.
+205 | ORQQPXRM GET WH LETTER TEXT | [uReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uReminders.pas) | Retrieve letter text for a WH letter
+206 | ORQQPXRM GET WH REPORT TEXT | [uReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uReminders.pas) | This RPC will return the Radiology/Lab Report for a WH Procedure
+207 | ORQQPXRM MENTAL HEALTH | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns array for given mental health instrument
+208 | ORQQPXRM MENTAL HEALTH RESULTS | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns progress note text based on the results of the test.
+209 | ORQQPXRM MENTAL HEALTH SAVE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Stores test result responses from a reminder dialog.
+210 | ORQQPXRM MHDLL | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | 
+211 | ORQQPXRM MHV | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | 
+212 | ORQQPXRM MST UPDATE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Saves MST data
+213 | ORQQPXRM PROGRESS NOTE HEADER | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns header text to be inserted in each progress note.
+214 | ORQQPXRM REMINDER CATEGORIES | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns list of all CPRS lookup categories and associated reminders
+215 | ORQQPXRM REMINDER DETAIL | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns the details of a clinical reminder
+216 | ORQQPXRM REMINDER DIALOG | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Dialog for a given reminder
+217 | ORQQPXRM REMINDER EVALUATION | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.
+218 | ORQQPXRM REMINDER INQUIRY | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Detailed description of reminder
+219 | ORQQPXRM REMINDER WEB | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Web addresses for selected reminder
+220 | ORQQPXRM REMINDERS APPLICABLE | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of clinical reminders due/applicable or not applicable tothe patient.
+221 | ORQQPXRM REMINDERS UNEVALUATED | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns list of CPRS reminders for patient/location (no evaluation isdone)
+222 | ORQQPXRM WOMEN HEALTH SAVE | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Pass back data to be file in the Women's Health Package file 790.1.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+223 | ORQQVI NOTEVIT | [Vitals/rVitals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas) | 
+224 | ORQQVI VITALS | [Vitals/rVitals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas), [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Array of patient most recent vitals within start and stop date/times.  Ifno start and stop dates are indicated, the most recent are returned. If no start date is passed then the start date is 1 (i.e. before anydates). If no stop date is passed then the start date is also the stop date and ifthere is not start date then 9999999 is used as the stop date.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+225 | ORQQVI2 VITALS RATE CHECK | [Vitals/rVitals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas) | 
+226 | ORQQVI2 VITALS VAL & STORE | [Vitals/rVitals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+227 | ORWCH LDFONT | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | 
+228 | ORWCH LOADALL | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | This RPC returns the sizing related CPRS GUI chart parameters for theuser.
+229 | ORWCH LOADSIZ | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | This RPC loads the size (bounds) for a particular CPRS GUI control. 
+230 | ORWCH SAVEALL | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | This RPC saves the sizing related CPRS GUI chart parameters for theuser.
+231 | ORWCH SAVECOL | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC saves the column width sizes for reports in CPRS for the user.
+232 | ORWCH SAVESIZ | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas), [fMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fMeds.pas) | This RPC saves the size (bounds) for a particular CPRS GUI control.
+233 | ORWCH SAVFONT | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Saves the user's preferred font.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+234 | ORWCIRN AUTORDV | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Get parameter value for ORWRP CIRN AUTOMATIC.
+235 | ORWCIRN CHECKLINK | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Check to see if HL7 TCP link is active.
+236 | ORWCIRN FACLIST | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of the remote VA facilities at which the selected patienthas been seen.
+237 | ORWCIRN HDRON | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Get parameter value for ORWRP HDR ON
+238 | ORWCIRN WEBADDR | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Get VistaWeb Web Address.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+239 | ORWCOM DETAILS | [rEventHooks.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rEventHooks.pas) | Returns details of COM object when passed in COM IEN.
+240 | ORWCOM GETOBJS | [rEventHooks.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rEventHooks.pas) | Returns a list of all active COM objects
+241 | ORWCOM ORDEROBJ | [rEventHooks.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rEventHooks.pas) | Returns COM Objects for order accept
+242 | ORWCOM PTOBJ | [rEventHooks.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rEventHooks.pas) | Returns COM Object entries from  different parameters.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+243 | ORWCS LIST OF CONSULT REPORTS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns a list on consult reports for aspecific patient.
+244 | ORWCS REPORT TEXT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns an array containinga formattied consult report. This array matches exactlythe report format on the roll 'n scroll version of CPRS.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+245 | ORWCV LAB | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of labs to display on the CPRS GUI cover sheet for apatient.
+246 | ORWCV POLL | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | This RPC is a process to poll the cover sheet tasks for completion anddisplay the information in the appropriate CPRS GUI cover sheet location.
+247 | ORWCV START | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Checks the value of the ORWOR COVER RETRIEVAL parameter and queuesprocesses to build CPRS GUI cover sheet lists as specified in theparameter.
+248 | ORWCV STOP | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | RPC to stop retrieval of cover sheet information for CPRS GUI.
+249 | ORWCV VST | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas), [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | This RPC returns a list of appointments and admissions for a patient basedon parameters that define the beginning and ending range for CPRS GUI.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+250 | ORWCV1 COVERSHEET LIST | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | This remote procedure call returns a list of Cover Sheet reports,There are no input parameters fo this rpc.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+251 | ORWD1 COMLOC | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns true if all orders in a list have a common ordering location.
+252 | ORWD1 PARAM | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the prompt and device parameters for Automated order prints
+253 | ORWD1 PRINTGUI | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC used by CPRS GUI to print orders to a designated print device.
+254 | ORWD1 RVPRINT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC used by CPRS GUI to print orders to a designated print device afterthe review or sign actions were used.
+255 | ORWD1 SIG4ANY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns true if any orders in the list require a signature.
+256 | ORWD1 SIG4ONE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns true if an order requires a signature.
+257 | ORWD1 SVONLY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Prints service copies only (used when user says "Don't Print" for theother copies).
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+258 | ORWD2 DEVINFO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns device information related to a location/nature of order when anorder is signed or released via CPRS GUI.
+259 | ORWD2 MANUAL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns device information for manual prints done via CPRS GUI.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+260 | ORWDAL32 ALLERGY MATCH<br>__eHMP__ | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | Given a text string, return a list of possible matches from severaldifferent sources.
+261 | ORWDAL32 CLINUSER<br>__eHMP__ | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | Determine if user can perform cover sheet allergy actions.
+262 | ORWDAL32 DEF | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | Returns default values and list sets for Allergy ordering dialog.
+263 | ORWDAL32 SAVE ALLERGY<br>__eHMP__ | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | 
+264 | ORWDAL32 SEND BULLETIN | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | 
+265 | ORWDAL32 SITE PARAMS | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | 
+266 | ORWDAL32 SYMPTOMS<br>__eHMP__ | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+267 | ORWDBA1 BASTATUS | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Billing Awareness RPC.Returns 0 if BA functionality is off or 1 if BA functionality is on.
+268 | ORWDBA1 RCVORCI | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Receive Order Entry Billing Aware data from CPRS.
+269 | ORWDBA1 SCLST | [BA/UBAGlobals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBAGlobals.pas), [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Array of Order ID's and SC.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+270 | ORWDBA2 ADDPDL | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Add a new Clinician's Personal DX List or add new ICD9 codes to an existing Clinician's Personal DX List. The Personal DX list is stored in the CPRS Diagnosis Provider file, file # 5000017
+271 | ORWDBA2 DELPDL | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Delete a selected diagnosis code from a Clinician's Personal DX List. The personal dx list is stored in CPRS Diagnosis Provider file, file # 5000017.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+272 | ORWDBA4 GETBAUSR | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | Gets the value of the Enable Billing Awareness By User parameter. The value returned will be 1 for Yes, Billing Awareness Enabled, and 0 for No, Billing Awareness Disabled.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+273 | ORWDBA7 GETIEN9 | [BA/UBAGlobals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBAGlobals.pas) | Receive external ICD9 number and return IEN
+274 | ORWDBA7 ISWITCH | [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | CIDC RPCRETURNS 1 IF PATIENT HAS BILLABLE INSURANCERETURNS 0 IF PATIENT DOES NOT HAVE BILLABLE INSURANCE
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+275 | ORWDCN32 DEF | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Load dialog data (lists & defaults) for a consult order. (32-BIT)
+276 | ORWDCN32 NEWDLG | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns dialog information when NEW CONSULT/PROCEDURE is selected fromthe consults tab.
+277 | ORWDCN32 ORDRMSG | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | 
+278 | ORWDCN32 PROCEDURES | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of orderable procedures.  Same as ORDITM^ORWDX except: 1.  Checks inactive date in file 101.43 against NOW instead of DT.2.  Checks for at least one service that can perform the procedure.3.  Returns variable pointer to procedure in 4th piece of each item.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+279 | ORWDFH ADDLATE | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | RPC to add a late tray diet order.
+280 | ORWDFH ATTR | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | For a diet order, this RPC returns:  Orderable Item^Text^Type^Precedence^AskExpire 
+281 | ORWDFH CURISO | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Return a patient's current isolation.
+282 | ORWDFH CURRENT MEALS | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | 
+283 | ORWDFH DIETS | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns active diets (including NPO) in the format:      IEN^NAME   or IEN^SYNONYM <NAME>^NAME
+284 | ORWDFH FINDTYP | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Return type of dietetics order based on display group.
+285 | ORWDFH ISOIEN | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns the IEN for the Isolation/Precaution orderable item.
+286 | ORWDFH ISOLIST | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns a list of active Isolation/Precaution Type (file #119.4) entries.
+287 | ORWDFH NFSLOC READY | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.
+288 | ORWDFH OPDIETS | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | 
+289 | ORWDFH PARAM | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns dietetics parameters for a patient at a location.
+290 | ORWDFH QTY2CC | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns cc's given a product, strength, and quantity.
+291 | ORWDFH TFPROD | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | Returns a list of active tubefeeding products.
+292 | ORWDFH TXT | [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas) | RPC to return the text of the current and any future diets for a patient.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+293 | ORWDLR32 ALLSPEC | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns a list of specimens from the TOPOGRAPHY FIELD file (#61).
+294 | ORWDLR32 DEF | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Get lab order dialog definition.
+295 | ORWDLR32 GET LAB TIMES | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns a list of lab collect times for a date and location.
+296 | ORWDLR32 IC DEFAULT | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns default immediate collect time for the user's division.
+297 | ORWDLR32 IC VALID | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Determines whether the suplied time is a valid lab immediate collect time.
+298 | ORWDLR32 IMMED COLLECT | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns help text showing lab immediate collect times for the user'sdivision.
+299 | ORWDLR32 LAB COLL TIME | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Is the given time a routine lab collection time for the given location?
+300 | ORWDLR32 MAXDAYS | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns the maximum number of days for a continuous lab order.
+301 | ORWDLR32 ONE SAMPLE | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns data for one collection sample in the format:     n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
+302 | ORWDLR32 ONE SPECIMEN | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns IEN^NAME of requested a TOPOGRAPHY FIELD (file #61) entry.
+303 | ORWDLR32 STOP | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns a calculated stop date for a lab order.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+304 | ORWDLR33 FUTURE LAB COLLECTS | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Returns the number of days in the future to allow Lab Collects.
+305 | ORWDLR33 LASTTIME | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | When entering quick orders from an order menu, the ^TMP("ORECALL",$J)array contains the last responses entered.  This RPC allows retrieval ofthe previous order's collection time from that array.
+306 | ORWDLR33 LC TO WC | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+307 | ORWDOR LKSCRN | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Does a lookup similar to GENERIC^ORWU.  Also allows passing of a referenceto a screen in the Order Dialog file to screen to lookup.
+308 | ORWDOR VALNUM | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Validates a numeric entry.
+309 | ORWDOR VMSLCT | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns the default list for the vitals order dialog in CPRS GUI.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+310 | ORWDPS1 CHK94 | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+311 | ORWDPS1 DFLTSPLY<br>__eHMP__ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+312 | ORWDPS1 DOSEALT | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+313 | ORWDPS1 DOWSCH | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | This RPC returns a list of schedule that have a frequency defined and the frequency is less then or equal to 1440 minutes
+314 | ORWDPS1 FAILDEA | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+315 | ORWDPS1 FORMALT | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+316 | ORWDPS1 HASOIPI | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+317 | ORWDPS1 HASROUTE | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+318 | ORWDPS1 IVDEA | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+319 | ORWDPS1 LOCPICK | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+320 | ORWDPS1 ODSLCT | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+321 | ORWDPS1 QOMEDALT | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+322 | ORWDPS1 SCHALL | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+323 | ORWDPS2 ADMIN | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+324 | ORWDPS2 CHKGRP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+325 | ORWDPS2 CHKPI | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+326 | ORWDPS2 DAY2QTY<br>__eHMP__ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+327 | ORWDPS2 MAXREF | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+328 | ORWDPS2 OISLCT<br>__eHMP__ | [Orders/fODMedNVA.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fODMedNVA.pas), [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+329 | ORWDPS2 QOGRP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+330 | ORWDPS2 QTY2DAY | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+331 | ORWDPS2 REQST | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+332 | ORWDPS2 SCHREQ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+333 | ORWDPS32 ALLIVRTE | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+334 | ORWDPS32 ALLROUTE | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns a list of all available medication routes.
+335 | ORWDPS32 AUTH | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text 
+336 | ORWDPS32 AUTHNVA | [Orders/fODMedNVA.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fODMedNVA.pas) | Checks restrictions for entering non-VA meds.  If no restrictions, a 0 isreturned.  If there is a restriction, it is returned in the format:1^restriction text 
+337 | ORWDPS32 DLGSLCT | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns default lists for order dialogs in CPRS GUI.
+338 | ORWDPS32 DRUGMSG | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return message text that is associated with a dispense drug.
+339 | ORWDPS32 FORMALT | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return a list of formulary alternatives.
+340 | ORWDPS32 ISSPLY | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return 1 if orderable item is a supply, otherwise return 0.
+341 | ORWDPS32 IVAMT | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV solutions.
+342 | ORWDPS32 MEDISIV | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return 1 if orderable item is an IV medication, otherwise return 0.
+343 | ORWDPS32 OISLCT | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns defaults for pharmacy orderable items.
+344 | ORWDPS32 SCSTS | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return pharmacy-related service connected eligibility for a patient.
+345 | ORWDPS32 VALQTY | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Validate a medication quantity and return a 1 if it is valid, otherwisereturn 0.
+346 | ORWDPS32 VALRATE | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return a 1 if IV rate text is valid, otherwise return 0.
+347 | ORWDPS32 VALROUTE | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns the IEN for a route if the name is valid.
+348 | ORWDPS32 VALSCH | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Validate a schedule and return a 1 if it is valid, otherwise return 0.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+349 | ORWDPS33 COMPLOC | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | This RPC will return a 0 if the patient location is the same location as the original order. It will return a 1 if the location is different.
+350 | ORWDPS33 GETADDFR | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.
+351 | ORWDPS33 IVDOSFRM | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+352 | ORWDPS4 CPINFO | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas), [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Save outpatient med order co-pay information.
+353 | ORWDPS4 CPLST | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas), [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Get co-pay ralated questions
+354 | ORWDPS4 IPOD4OP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+355 | ORWDPS4 ISUDIV | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+356 | ORWDPS4 UPDTDG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+357 | ORWDPS5 ISVTP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+358 | ORWDPS5 LESAPI | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+359 | ORWDPS5 LESGRP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+360 | ORWDRA32 APPROVAL | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+361 | ORWDRA32 DEF | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | Loads dialog data (lists & defaults) for a radiology order.
+362 | ORWDRA32 IMTYPSEL | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+363 | ORWDRA32 ISOLATN | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+364 | ORWDRA32 LOCTYPE | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+365 | ORWDRA32 PROCMSG | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+366 | ORWDRA32 RADSRC | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+367 | ORWDRA32 RAORDITM | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+368 | ORWDX AGAIN | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns a 1 if the dialog should be kept for another order, otherwise 0.
+369 | ORWDX CHANGE | [fPrintLocation.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPrintLocation.pas), [fClinicWardMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fClinicWardMeds.pas) | 
+370 | ORWDX DGNM | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | 
+371 | ORWDX DGRP | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns the display group pointer for an order dialog.
+372 | ORWDX DISMSG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns disabled message for an ordering dialog.
+373 | ORWDX DLGDEF<br>__eHMP__ | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return format information for an order dialog in the format:   LST(n): PrmtID^PrmtIEN^FmtSeq^Fmt^Omit^Lead^Trail^NwLn^Wrap^Chld^IsChld
+374 | ORWDX DLGID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the dialog IEN for an order.
+375 | ORWDX FORMID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the base dialog FormID for an order.
+376 | ORWDX LOADRSP<br>__eHMP__ | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | 
+377 | ORWDX LOCK | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to attempt to lock patient for ordering (returns 1 if successful or 0if unsuccessful).
+378 | ORWDX LOCK ORDER<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to attempt to lock a specific order.
+379 | ORWDX MSG | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return message text for an orderable item.
+380 | ORWDX ORDITM | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Returns an array of orderable items in the format:   Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name
+381 | ORWDX SAVE<br>__eHMP__ | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Save the order by passing in the following information:        ORVP=DFN        ORNP=Provider        ORL=Location        DLG=Order Dialog,        ORDG=Display Group        ORIT=Quick Order Dialog,        ORIFN=null if new order        ORDIALOG=Response List
+382 | ORWDX SEND<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to sign a list of orders with input as follows:        DFN=Patient        ORNP=Provider        ORL=Location        ES=Encrypted ES code         ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order
+383 | ORWDX SENDED | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+384 | ORWDX SENDP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Same as ORWDX SEND, but allows print devices as parameter.
+385 | ORWDX UNLOCK | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Unlocks the patient for ordering purposes.
+386 | ORWDX UNLOCK ORDER<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to unlock a specific order.
+387 | ORWDX WRLST | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+388 | ORWDX1 DCORIG | [fActivateDeactivate.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fActivateDeactivate.pas) | 
+389 | ORWDX1 DCREN | [fActivateDeactivate.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fActivateDeactivate.pas) | 
+390 | ORWDX1 ORDMATCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | This RPC will accept a list of orders and each order status, if one of the order does not have a status it will return a false value.
+391 | ORWDX1 PATWARD | [fPrintLocation.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPrintLocation.pas), [fClinicWardMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fClinicWardMeds.pas) | 
+392 | ORWDX1 STCHANGE | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | 
+393 | ORWDX1 UNDCORIG | [Orders/fOrdersDC.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersDC.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+394 | ORWDX2 DCREASON<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to return a list of valid discontinuation reasons.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+395 | ORWDXA ALERT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Set order to send an alert when the order is resulted.
+396 | ORWDXA COMPLETE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Complete an order.
+397 | ORWDXA DC<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to discontinue, cancel, or delete an existing order.
+398 | ORWDXA DCREQIEN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return the IEN for Requesting Physician Cancelled reason.
+399 | ORWDXA FLAG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Flag an existing order.
+400 | ORWDXA FLAGTXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return text associated with a particular flagged order (reason for flag).
+401 | ORWDXA HOLD | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to place an existing order on hold.
+402 | ORWDXA ISACTOI | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+403 | ORWDXA OFCPLX | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+404 | ORWDXA UNFLAG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Unflag an existing order.
+405 | ORWDXA UNHOLD | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | RPC to remove a particular order from hold status.
+406 | ORWDXA VALID<br>__eHMP__ | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns an error message if the selected action is not valid for aparticular CPRS GUI order.
+407 | ORWDXA VERIFY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Verify an order via CPRS GUI.
+408 | ORWDXA WCGET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return ward comments for an order.
+409 | ORWDXA WCPUT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Set ward comments for an order.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+410 | ORWDXC ACCEPT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return list of Order Checks on Accept Order.
+411 | ORWDXC DELAY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return list or order checks on accept delayed orders.
+412 | ORWDXC DELORD | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Delete order.
+413 | ORWDXC DISPLAY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return list of Order Checks for a FillerID (namespace).
+414 | ORWDXC FILLID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return the FillerID (namespace) for a dialog.
+415 | ORWDXC ON | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns E if order checking enabled, otherwise D.
+416 | ORWDXC SAVECHK | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Save order checks for session.
+417 | ORWDXC SESSION | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return list of order checks on release of order.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+418 | ORWDXM AUTOACK | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Place a quick order in CPRS GUI without the verify step.
+419 | ORWDXM DLGNAME | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return name(s) of dialog & base dialog given IEN in format:        VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName
+420 | ORWDXM FORMID | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return the FormID for a dialog entry.
+421 | ORWDXM LOADSET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return the contents of an order set in the following format:   LST(0): SetDisplayText^Key Variables   LST(n): DlgIEN^DlgType^DisplayText
+422 | ORWDXM MENU | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns menu contents for an order dialog in the following format:    LST(0)=name^# cols^path switch^^^ Key Variables (pieces 6-20)    LST(n)=col^row^type^ien^formid^autoaccept^display text^mnemonic           ^displayonly
+423 | ORWDXM MSTYLE | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return the menu style for the system.
+424 | ORWDXM PROMPTS | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return prompting information for a generic dialog in the format:    LST(n)=ID^REQ^HID^PROMPT^TYPE^DOMAIN^DEFAULT^IDFLT^HELP
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+425 | ORWDXM1 BLDQRSP | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Build responses for an order Input:      1   2    3    4   5   6    7    8        11-20FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change Output:LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrpLST(n)=verify text or rejection text
+426 | ORWDXM1 SVRPC | [Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+427 | ORWDXM2 CLRRCL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Clear ORECALL.  Used by CPRS GUI to clean up ^TMP("ORECALL",$J) and^TMP("ORWDXMQ",$J).
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+428 | ORWDXM3 ISUDQO | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+429 | ORWDXQ DLGNAME | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return display name for a dialog.
+430 | ORWDXQ DLGSAVE | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return IEN of new or existing quick order.
+431 | ORWDXQ GETQLST | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas), [Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas), [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Return quick list for a display group.
+432 | ORWDXQ GETQNAM | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Return current quick order name.
+433 | ORWDXQ PUTQLST | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Save quick order list.
+434 | ORWDXQ PUTQNAM | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | Save display name for quick order dialog.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+435 | ORWDXR CANRN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+436 | ORWDXR GETPKG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+437 | ORWDXR GTORITM | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+438 | ORWDXR ISCPLX | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+439 | ORWDXR ISNOW | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | 
+440 | ORWDXR ISREL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return 1 if an order has been released, otherwise return 0.
+441 | ORWDXR ORCPLX | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+442 | ORWDXR RENEW | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Renew an existing order.
+443 | ORWDXR RNWFLDS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Return fields for renew action in format:    LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+444 | ORWDXR01 CANCHG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+445 | ORWDXR01 ISSPLY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+446 | ORWDXR01 OXDATA | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+447 | ORWDXR01 SAVCHG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+448 | ORWDXVB NURSADMN | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | This procedure checks the parameter OR VBECS SUPPRESS NURS ADMIN to seeif the Nursing Administration Order prompt/pop-up should be supressedafter a VBECS Blood Bank order has been created.
+449 | ORWDXVB STATALOW | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Check to see if user is allowed to order STAT orders through VBECS.Checks users with parameter: OR VBECS STAT USER
+450 | ORWDXVB SUBCHK | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | Check to see if selected test is a Blood Component or a Diagnostic Test.
+451 | ORWDXVB VBTNS | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+452 | ORWDXVB3 COLLTIM | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.
+453 | ORWDXVB3 SWPANEL | [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | This RPC checks the value of the parameter OR VBECS DIAGNOSTIC PANEL 1STto determine the location of the Diagnostic and Component panels on theVBECS order dialog.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+454 | ORWGRPC ALLITEMS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+455 | ORWGRPC ALLVIEWS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+456 | ORWGRPC CLASS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+457 | ORWGRPC DATEITEM | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+458 | ORWGRPC DELVIEWS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+459 | ORWGRPC DETAIL | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+460 | ORWGRPC DETAILS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+461 | ORWGRPC FASTDATA | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+462 | ORWGRPC FASTITEM | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+463 | ORWGRPC FASTLABS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+464 | ORWGRPC FASTTASK | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+465 | ORWGRPC GETDATES | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+466 | ORWGRPC GETPREF | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+467 | ORWGRPC GETSIZE | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+468 | ORWGRPC GETVIEWS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+469 | ORWGRPC ITEMDATA | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+470 | ORWGRPC ITEMS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+471 | ORWGRPC LOOKUP | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+472 | ORWGRPC PUBLIC | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+473 | ORWGRPC RPTPARAM | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+474 | ORWGRPC SETPREF | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+475 | ORWGRPC SETSIZE | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+476 | ORWGRPC SETVIEWS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+477 | ORWGRPC TAX | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+478 | ORWGRPC TESTING | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+479 | ORWGRPC TESTSPEC | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+480 | ORWGRPC TYPES | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+481 | ORWLEX GETFREQ | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This call wraps the Lexicon API $$FREQ^LEXU to satisfy the requirements of the ICD-10-CM diagnosis search.
+482 | ORWLEX GETI10DX | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This call wraps the Lexicon API $$DIAGSRCH^LEX10CS to satisfy the requirements of the ICD-10-CM diagnosis search.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+483 | ORWLRR ALLTESTS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+484 | ORWLRR ATESTS | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas), [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+485 | ORWLRR ATG | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas), [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+486 | ORWLRR ATOMICS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+487 | ORWLRR CHART | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+488 | ORWLRR CHEMTEST | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+489 | ORWLRR GRID | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+490 | ORWLRR INFO | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | Return lab test description information.
+491 | ORWLRR INTERIMG | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+492 | ORWLRR INTERIMS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+493 | ORWLRR NEWOLD | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+494 | ORWLRR PARAM | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+495 | ORWLRR SPEC | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+496 | ORWLRR TG | [rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas), [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+497 | ORWLRR USERS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+498 | ORWLRR UTGA | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+499 | ORWLRR UTGD | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+500 | ORWLRR UTGR | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+501 | ORWMC PATIENT PROCEDURES1 | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns a list of patient procedures for a specific patient.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+502 | ORWNSS CHKSCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+503 | ORWNSS NSSMSG | [Orders/fOtherSchedule.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOtherSchedule.pas) | 
+504 | ORWNSS QOSCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+505 | ORWNSS VALSCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+506 | ORWOR ACTION TEXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+507 | ORWOR EXPIRED | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the Fileman Date/Time to begin searching for expired orders.
+508 | ORWOR PKISITE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+509 | ORWOR PKIUSE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+510 | ORWOR RESULT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns results of a CPRS order.
+511 | ORWOR RESULT HISTORY | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns a result history of a CPRS order.
+512 | ORWOR SHEETS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns order sheets for a patient.
+513 | ORWOR TSALL | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns a list of valid treating specialities.
+514 | ORWOR UNSIGN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns outstanding unsigned orders.
+515 | ORWOR VWGET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Retrieves the user's default view for the orders tab.
+516 | ORWOR VWSET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Sets the default view on the orders tab for the user.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+517 | ORWOR1 CHKDIG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns true if an order requires a digital signature.
+518 | ORWOR1 GETDSCH | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the schedule of the drug.
+519 | ORWOR1 GETDTEXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the external text of an existing order.
+520 | ORWOR1 SETDTEXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Sets/updates the external text of an order.The updated text is also returned.
+521 | ORWOR1 SIG | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns 1 if signature gets stored.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+522 | ORWORB AUTOUNFLAG ORDERS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Auto unflag orders/delete alert.
+523 | ORWORB GETDATA | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Given an XQAID, return XQADATA for an alert.
+524 | ORWORB GETSORT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the method for sorting GUI alert display.
+525 | ORWORB KILL EXPIR MED ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Evaluate expiring med orders.  If none remain, kill current alert forcurrent user.  Kill for other users if alert so defined.
+526 | ORWORB KILL EXPIR OI ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Evaluate expiring flagged orderable item orders. If none remain, killcurrent alert for current user.  Kill for other users if alert so defined.
+527 | ORWORB KILL UNSIG ORDERS ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Check patient's unsigned orders, and kill unsigned orders alert for thisuser if no unsigned orders remain for his/her signature.
+528 | ORWORB KILL UNVER MEDS ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | 
+529 | ORWORB KILL UNVER ORDERS ALERT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | 
+530 | ORWORB SETSORT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Sets the GUI alert sort method for the user.  This is set when a user clicks on the GUI alert columns to change the display sorting.
+531 | ORWORB TEXT FOLLOWUP | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns text for notifications/alerts with a simple text message follow-upaction.
+532 | ORWORB UNSIG ORDERS FOLLOWUP | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | After viewing unsigned orders for a patient via an alert, evaluateswhether the alert should be deleted for the current user. The following two exception conditions exist when determining how alertdeletion will occur.  In all other cases, alert deletion will occur whenthe patient has no unsigned orders. 1)      If the recipient of this alert does NOT have the ORES key, thealert will be deleted for that recipient after he reviews the unsignedorders.  2)      If the recipient has the ORES key and is NOT linked to the patientas attending, inpatient primary provider or via OE/RR teams, his alertwill be deleted when his unsigned orders are signed.  (If unsigned orderswritten by other providers for the patient remain, alerts for these other providers will not be deleted.)  For example, a consulting surgeon (withORES) places three unsigned orders for a patient.  He then receives an"Order requires electronic signature" alert for the patient.  He uses the View Alerts follow-up action and is presented with ten unsigned orders forthe patient.  Only three of the ten orders are his.  The surgeon signs histhree unsigned orders.  If the surgeon is not linked to the patient asattending, inpatient primary providers or via OE/RR teams, the alert will be deleted (for him only.)   In most cases alert deletion will occur when the patient has no unsignedorders.  For example, if a recipient has the ORES key and is linked to thepatient as attending, inpatient primary provider or via OE/RR teams, allunsigned orders for the patient must be signed before his alert isdeleted.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+533 | ORWORDG ALLTREE | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the tree for all display groups.
+534 | ORWORDG IEN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns IEN of a display group.
+535 | ORWORDG REVSTS | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the status flags available for review orders action.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+536 | ORWORR AGET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Get an abbreviated order list for a patient in the format:     ^TMP("ORR",$J,ORLIST,n)=IFN^DGrp^ActTm
+537 | ORWORR GET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns a list of orders & and associated fields and text.
+538 | ORWORR GET4LST | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the order fields for a list of orders.
+539 | ORWORR GETBYIFN | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the fields for a single order in the format:       1   2    3     4      5     6   7   8   9   10     11    12 .LST=~IFN^Grp^ActTm^StrtTm^StopTm^Sts^Sig^Nrs^Clk^PrvID^PrvNam^ActDA
+540 | ORWORR GETTXT | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | Returns the text of an existing order.
+541 | ORWORR RGET | [Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+542 | ORWPCE ACTIVE CODE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas), [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas) | 
+543 | ORWPCE ACTIVE PROV | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This calls the PCE API $$ACTIVPRV^PXAPI(provider ien, encounter d/t) tosee if the provider can be stored by PCE.   Returns a 1 if provider is good and 0 if the provider is not active or does not have an active person class.
+544 | ORWPCE ALWAYS CHECKOUT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if encounters should be automatically checked out.
+545 | ORWPCE ANYTIME | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if encounters can be entered at any time
+546 | ORWPCE ASKPCE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the value of the ORWPCE ASK ENCOUNTER UPDATE parameter.
+547 | ORWPCE AUTO VISIT TYPE SELECT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if visit type should be automatically selected.
+548 | ORWPCE CPTMODS | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of CPT Modifiers for a given CPT Code.
+549 | ORWPCE CPTREQD | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns 1 if TIU DOCUMENT file entry needs a CPT code.
+550 | ORWPCE CXNOSHOW | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | 
+551 | ORWPCE DELETE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Delete PCE information related to a note being deleted.
+552 | ORWPCE FORCE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the value of the ORWPCE FORCE GUI PCE ENTRY parameter.
+553 | ORWPCE GAFOK | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if supporting mental health code exists to read and writeGAF scores.
+554 | ORWPCE GAFURL | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the GAF Scale Rating Form URL
+555 | ORWPCE GET DX TEXT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Resolves the preferred expanded form of the Diagnosis text for the encounter pane on the notes tab.
+556 | ORWPCE GET EDUCATION TOPICS | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of active education topics.
+557 | ORWPCE GET EXAM TYPE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the list of active exam types.
+558 | ORWPCE GET EXCLUDED | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of excluded PCE entries
+559 | ORWPCE GET HEALTH FACTORS TY | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of active health factor types.
+560 | ORWPCE GET IMMUNIZATION TYPE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of active immunizations.
+561 | ORWPCE GET SKIN TEST TYPE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of the active skin test codes.
+562 | ORWPCE GET VISIT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the visit IEN.
+563 | ORWPCE GETMOD | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns information for a specific CPT Code.
+564 | ORWPCE GETSVC<br>__eHMP__ | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Calculates the correct service category.
+565 | ORWPCE HASCPT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the passed array with the second piece set to 0 or 1.
+566 | ORWPCE HASVISIT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the visit status of the visit associated with a note:1 if the visit is being pointed to by an appointment0 if the visit is NOT being pointed to by an appointment-1 if the visit is invalid or could not be determined
+567 | ORWPCE HNCOK | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if the Head and/or Neck Cancer patches have been installed
+568 | ORWPCE I10IMPDT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | This RPC returns the ICD-10 implementation date in FM Date/Time format.
+569 | ORWPCE ICDVER | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas), [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the ICD coding system version to be used for diagnosis look-up, asof a particular date of interest.
+570 | ORWPCE ISCLINIC | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if location is a Clinic.
+571 | ORWPCE LEXCODE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a code associated with a lexicon entry.
+572 | ORWPCE LOADGAF | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of GAF Scores
+573 | ORWPCE MH TEST AUTHORIZED | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Indicates if a given mental health test can be given by the given user.
+574 | ORWPCE MHCLINIC | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE of the indicated clinic is a mental health clinic.
+575 | ORWPCE MHTESTOK | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns TRUE if all supporing code is in place for Mental Health Tests.
+576 | ORWPCE NOTEVSTR | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns VISIT LOCATION;EPISODE BEGIN DATE;VISIT TYPE from the TIU DOCUMENTfile.
+577 | ORWPCE PCE4NOTE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns the encounter information for an associated note in the format: LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPTLST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+578 | ORWPCE SAVE | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Saves PCE information entered into CPRS GUI.
+579 | ORWPCE SAVEGAF | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Saves a GAF Score.
+580 | ORWPCE SCDIS | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas), [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns service connected percentage and rated disabilities for a patient.
+581 | ORWPCE SCSEL | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of service connected conditions that may be selected.
+582 | ORWPCE VISIT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns a list of visit types for a clinic.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+583 | ORWPCE1 NONCOUNT | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964)
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+584 | ORWPCE4 LEX | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | Returns list of coded elements based on lexicon look-up. Introduced with CPRS v29 to maintain compatibility of older call ORWPCE LEX.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+585 | ORWPFSS IS PFSS ACTIVE? | [Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+586 | ORWPS ACTIVE | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | Returns listing of a patient's active inpatient and outpatientmedications.
+587 | ORWPS COVER | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns a list of medications to display on the CPRS GUI cover sheet for apatient.
+588 | ORWPS DETAIL<br>__JLV__ | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | Returns text of details for a specific mediction order.
+589 | ORWPS MEDHIST | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+590 | ORWPS1 NEWDLG | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | Returns order dialog information for a new medication.
+591 | ORWPS1 PICKUP | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | Returns default for refill location (mail or window).
+592 | ORWPS1 REFILL | [rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas) | RPC to submit a request for a refill.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+593 | ORWPT ADMITLST<br>__JLV__ | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of admissions for a patient (for visit selection).
+594 | ORWPT APPTLST | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of appointments for a patient (for visit selection).
+595 | ORWPT BYWARD | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of patients currently residing on a specified wardlocation.
+596 | ORWPT CLINRNG | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of selectable options from which a user can choose a daterange for appointments.
+597 | ORWPT CWAD<br>__eHMP__ | [Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas) | Returns the CWAD flag(s) for a patient.
+598 | ORWPT DFLTSRC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Return user's default patient list source.
+599 | ORWPT DIEDON | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns date of death if patient has expired.  Otherwise returns 0.
+600 | ORWPT DISCHARGE | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas) | Given a patient and an admission date, return the discharge date/time.
+601 | ORWPT ENCTITL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME
+602 | ORWPT FULLSSN | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Given an SSN in the format 999999999(P), return a list of matchingpatients.
+603 | ORWPT FULLSSN RPL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Given an SSN in the format 999999999(P), return a list of matching patients based on Restricted Patient List.
+604 | ORWPT ID INFO | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns identifying information for a patient.
+605 | ORWPT INPLOC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the patient's current location if an inpatient.
+606 | ORWPT LAST5 | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of patients matching the string of Last Name Initial_Last 4SSN (Initial/Last 4 look-up to PATIENT file).
+607 | ORWPT LAST5 RPL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of patients matching the string of Last Name Initial_Last 4 SSN (Initial/Last 4 look-up based on Restricted Patient List).
+608 | ORWPT LEGACY | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns message if patient has data on a legacy system.
+609 | ORWPT LIST ALL | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a set of patient names for use with a long list box.
+610 | ORWPT PTINQ<br>__JLV__ | [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | Returns formatted patient inquiry text for display in GUI environment.
+611 | ORWPT SAVDFLT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Saves user's preference for default list source.
+612 | ORWPT SELCHK | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.
+613 | ORWPT SELECT<br>__JLV__ | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | RPC to return key information on a patient as follows: 1    2   3   4    5      6    7    8       9       10      11   12 13NAME^SEX^DOB^SSN^LOCIEN^LOCNM^RMBD^CWAD^SENSITIVE^ADMITTED^CONV^SC^SC%^ 14  15  16  17ICN^AGE^TS^TSSVC
+614 | ORWPT SHARE | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | 
+615 | ORWPT TOP | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the last selected patient by the defined user.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+616 | ORWPT1 PCDETAIL | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns primary care detailed information about a patient.
+617 | ORWPT1 PRCARE<br>__JLV__ | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Return primary care information for a patient in the format:  VAL=Primary Care Team^Primary Care Provider^Attending^MH Treatment      Coordinator
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+618 | ORWRA IMAGING EXAMS1 | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns a list on imaging exams for aspecific patient.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+619 | ORWRP COLUMN HEADERS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Get list of Column headers for a ListView type report from file 101.24.
+620 | ORWRP GET DEFAULT PRINTER | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns default printer.
+621 | ORWRP LAB REPORT LISTS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.
+622 | ORWRP PRINT LAB REMOTE | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) |  This rpc is used to print a remote report on the Labs tab in CPRS. RETURN PARAMETER DESCRIPTION: If the print request was successfully queued then the Task manager task number is return. Otherwise, and error code and error description are returned. Error Code Table:       Code            Text      ----            ----        0             <Task Number>        1             No device selected        2             No report specified        3             Report type specified is not valid        4             No date range specified        6             Patient specified is not valid
+623 | ORWRP PRINT LAB REPORTS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | This rpc is used to print a report on the Labs tabin CPRS.
+624 | ORWRP PRINT REMOTE REPORT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) |  This rpc is used to print a remote report on the Report tab in CPRS.
+625 | ORWRP PRINT REPORT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This rpc is used to print a report on the Report tabin CPRS.
+626 | ORWRP PRINT V REPORT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This rpc is used to print a V type report on the Reports tab in CPRS
+627 | ORWRP PRINT WINDOWS LAB REMOTE | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) |  Prints remote CPRS GUI information to windows printer.
+628 | ORWRP PRINT WINDOWS REMOTE | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) |  Prints CPRS GUI information to windows printer.
+629 | ORWRP PRINT WINDOWS REPORT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Prints CPRS GUI information to windows printer.
+630 | ORWRP REPORT LISTS<br>__eHMP__ | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This remote procedure call returns a list of reports,Health Summary types and date ranges that can be displayedat the workstation.There are no input parameters fo this rpc.
+631 | ORWRP REPORT TEXT<br>__eHMP/ JLV__ | [fLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fLabs.pas), [fReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReports.pas) | This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
+632 | ORWRP SAVE DEFAULT PRINTER | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Saves printer as user's default printer.
+633 | ORWRP WINPRINT DEFAULT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | Returns whether the Windows printer is set as the default for the user. 
+634 | ORWRP WINPRINT LAB REPORTS | [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | Prints text from CPRS GUI to a windows printer.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+635 | ORWRP1 LISTNUTR | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+636 | ORWRP2 COMPABV | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC returns an array of the ADHOC Health Summary components by abbreviation.
+637 | ORWRP2 COMPDISP | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC returns an array of the ADHOC Health Summary components by display name.
+638 | ORWRP2 GETLKUP | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This gets the last Adhoc Health Summary lookup used by a user in CPRS.
+639 | ORWRP2 HS COMP FILES | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC gets a list of files to select from for the ADHOC Health Summary.
+640 | ORWRP2 HS COMPONENT SUBS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC returns an array of ADHOC Health Summary subcomponents.
+641 | ORWRP2 HS COMPONENTS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC returns an array of the ADHOC Health Summary components.
+642 | ORWRP2 HS FILE LOOKUP | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC gets the list of file entries for the file defined for a specificHealth Summary component on the ADHOC Health Summary.  Current choicesinclude files 60, 9999999.64, 811.9, 8925.1, 81, and possibly others(handled generically).  The file entries are used to populate a combo boxon the form.
+643 | ORWRP2 HS REPORT TEXT | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC is used to build the ADHOC Health Summary from an array ofpre-selected health summary components.
+644 | ORWRP2 HS SUBITEMS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.
+645 | ORWRP2 SAVLKUP | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This saves the last Adhoc Health Summary lookup used by a user in CPRS.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+646 | ORWRP3 EXPAND COLUMNS | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+647 | ORWRP4 HDR MODIFY | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC looks at data returned from the HDR and makes any modificationsnecessary to make the data compatible with CPRS Reports.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+648 | ORWSR CASELIST | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | Returns a list of all surgery cases for a patient, without documents asreturned by ORWSR LIST.
+649 | ORWSR GET SURG CONTEXT | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | 
+650 | ORWSR IS NON-OR PROCEDURE | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | 
+651 | ORWSR LIST | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | Return list of surgery cases for a patient.
+652 | ORWSR ONECASE | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | Given a TIU document IEN, return the surgical case record and all otherdocuments related to the case, for display in the GUI treeview.
+653 | ORWSR RPTLIST | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | 
+654 | ORWSR SAVE SURG CONTEXT | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | 
+655 | ORWSR SHOW OPTOP WHEN SIGNING | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | 
+656 | ORWSR SHOW SURG TAB | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | Check for presence of SR*3.0*100 (Surgery Electronic Signature) patch, andalso for parameter value.  If both TRUE, surgery tab will be displayed inCPRS.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+657 | ORWTIU CANLINK | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) |  Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322
+658 | ORWTIU CHKTXT | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Check for existence of text in TIU(8925,TIUDA, either in "TEXT" or "TEMP" nodes, before allowing signature.
+659 | ORWTIU GET DCSUMM CONTEXT | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas) | 
+660 | ORWTIU GET LISTBOX ITEM | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Given a TIU document IEN, return the information required to construct alistbox item for that single document.
+661 | ORWTIU GET SAVED CP FIELDS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Given a TIU document of the clinical procedures class, return the author, title, cosigner, procedure summary code, date/time of procedure, and reference date, as stored on the server.
+662 | ORWTIU GET TIU CONTEXT | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | 
+663 | ORWTIU SAVE DCSUMM CONTEXT | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas) | 
+664 | ORWTIU SAVE TIU CONTEXT | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | 
+665 | ORWTIU WINPRINT NOTE | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns a formatted global of a TIU document for output to a Windows printdevice.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+666 | ORWTPD ACTDF | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | Make default time/occ setting take action on each report
+667 | ORWTPD DELDFLT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | Delete user level's specific health summary component setting( date range and max occurences)
+668 | ORWTPD GETDFLT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | get default setting for all reports(time/occ limits)
+669 | ORWTPD GETIMG | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | 
+670 | ORWTPD GETOCM | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+671 | ORWTPD GETSETS | [Options/fOptionsReportsCustom.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/fOptionsReportsCustom.pas) | 
+672 | ORWTPD PUTOCM | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+673 | ORWTPD RSDFLT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | get system or package level default setting for all repors.
+674 | ORWTPD SUDF | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | Set user level default time/occ limits for all reports
+675 | ORWTPD SUINDV | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | set user level individual report's time/occ setting
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+676 | ORWTPD1 GETCSDEF | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+677 | ORWTPD1 GETCSRNG | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+678 | ORWTPD1 GETEAFL | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+679 | ORWTPD1 GETEDATS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+680 | ORWTPD1 GETEFDAT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+681 | ORWTPD1 PUTCSRNG | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+682 | ORWTPD1 PUTEDATS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+683 | ORWTPN GETCLASS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+684 | ORWTPN GETTC | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+685 | ORWTPO CSLABD | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+686 | ORWTPO GETIMGD | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+687 | ORWTPO GETTABS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+688 | ORWTPP ADDLIST | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+689 | ORWTPP CHKSURR | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+690 | ORWTPP CLDAYS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+691 | ORWTPP CLEARNOT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+692 | ORWTPP CLRANGE | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+693 | ORWTPP CSLAB | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+694 | ORWTPP DELLIST | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+695 | ORWTPP GETCOMBO | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+696 | ORWTPP GETCOS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+697 | ORWTPP GETDCOS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+698 | ORWTPP GETIMG | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+699 | ORWTPP GETNOT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+700 | ORWTPP GETNOTO | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+701 | ORWTPP GETOC | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+702 | ORWTPP GETOTHER | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+703 | ORWTPP GETREM | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+704 | ORWTPP GETSUB | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+705 | ORWTPP GETSURR | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+706 | ORWTPP GETTD | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+707 | ORWTPP GETTU | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+708 | ORWTPP LSDEF | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+709 | ORWTPP NEWLIST | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+710 | ORWTPP PLISTS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+711 | ORWTPP PLTEAMS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+712 | ORWTPP REMLIST | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+713 | ORWTPP SAVECD | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+714 | ORWTPP SAVELIST | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+715 | ORWTPP SAVENOT | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+716 | ORWTPP SAVENOTO | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+717 | ORWTPP SAVEOC | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+718 | ORWTPP SAVEPLD | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+719 | ORWTPP SAVESURR | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+720 | ORWTPP SAVET | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+721 | ORWTPP SETCOMBO | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+722 | ORWTPP SETDCOS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+723 | ORWTPP SETIMG | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+724 | ORWTPP SETOTHER | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+725 | ORWTPP SETREM | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+726 | ORWTPP SETSUB | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+727 | ORWTPP SORTDEF | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+728 | ORWTPP TEAMS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+729 | ORWTPT ATEAMS | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+730 | ORWTPT GETTEAM | [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+731 | ORWU CLINLOC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of clinics from the HOSPITAL LOCATION file (#44).
+732 | ORWU DEFAULT DIVISION | [fFrame.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fFrame.pas) | Returns True or False for a user depending on default division information.
+733 | ORWU DEVICE | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of print devices.
+734 | ORWU DT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns date in internal VA FileMan format.
+735 | ORWU EXTNAME | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the external form of a pointer value given the IEN and filenumber.
+736 | ORWU GBLREF | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns the global reference for a particular file number.
+737 | ORWU GENERIC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas), [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | Returns a list of entries from a cross-reference passed in.
+738 | ORWU HAS OPTION ACCESS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns true if the user has access to the specified menu option.
+739 | ORWU HASKEY | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns 1 if a user holds a security key, otherwise 0.
+740 | ORWU HOSPLOC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a set of hospital locations for use in a long list box.
+741 | ORWU INPLOC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of wards from the HOSPITAL LOCATION file.
+742 | ORWU NEWPERS | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a set of New Person file entries for use in a long list box.
+743 | ORWU NPHASKEY<br>__eHMP__ | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a 1 if a specified user holds a specified key, otherwise returns0.
+744 | ORWU PARAM | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Simple call to return a parameter value.  The call assumes the currentuser, 'defaultable' entities, and one instance.
+745 | ORWU PATCH | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns a 1 if the specified patch is installed on the system, otherwisereturns a 0.
+746 | ORWU TOOLMENU | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns a list of items for the CPRS GUI Tools menu.
+747 | ORWU USERINFO | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns preferences for the current user.
+748 | ORWU VALDT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Validates date/time entry and returns value of Y from %DT call.
+749 | ORWU VALIDSIG<br>__eHMP__ | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Validates a broker encrypted electronic signature.
+750 | ORWU VERSION | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns current version of package or namespace
+751 | ORWU VERSRV | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns the server version of a particular option.  This is specificallyused by CPRS GUI to determine the current server version of the associatedsoftware.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+752 | ORWU1 NAMECVT | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | 
+753 | ORWU1 NEWLOC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a list of Clinics, Wards, and "Other" category entries from the HOSPITAL LOCATION (#44) file.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+754 | ORWU2 COSIGNER | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Returns a set of New Person file entries for use in a long list box.The set is limited to USR PROVIDERS who do not require cosignature.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+755 | ORWUL FV4DG<br>__eHMP__ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+756 | ORWUL FVIDX<br>__eHMP__ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+757 | ORWUL FVSUB<br>__eHMP__ | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+758 | ORWUL QV4DG | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas), [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+759 | ORWUL QVIDX | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas) | 
+760 | ORWUL QVSUB | [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas), [Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas) | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+761 | ORWUX SYMTAB | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas) | Returns the contents of the current session's symbol table.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+762 | PXRM REMINDER CATEGORY | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | List reminders and categories in display order for a reminder category.
+763 | PXRM REMINDER DIALOG (TIU) | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Dialog for a given dialog ien.
+764 | PXRM REMINDERS AND CATEGORIES | [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas) | Returns list of reminders and categories.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+765 | TIU AUTHORIZATION<br>__eHMP__ | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC allows the calling application to evaluate privilege to performany ASU-mediated action on a TIU document.
+766 | TIU CAN CHANGE COSIGNER? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | BOOLEAN RPC to evaluate user's privilege to modify the expected cosigner, given the current status of the document, and the user's role with respect to it.
+767 | TIU CREATE ADDENDUM RECORD | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Remote Procedure allows the creation of addenda to TIU Documents.
+768 | TIU CREATE RECORD<br>__eHMP__ | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This remote procedure allows the creation of TIU DOCUMENT records.
+769 | TIU DELETE RECORD | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Deletes TIU Document records...Evaluates authorization.
+770 | TIU DETAILED DISPLAY | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Gets details for display of a given record.
+771 | TIU DIV AND CLASS INFO | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns a list of Divisions and User Classes for a specific User.
+772 | TIU DOCUMENTS BY CONTEXT | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns lists of TIU Documents that satisfy the following search criteria: 1 - signed documents (all)   2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range
+773 | TIU FIELD CAN EDIT | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns TRUE if the current user is allowed to edit template fields.
+774 | TIU FIELD CHECK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Very similar to IMPORT^TIUSRVF, except does not save template fields.Resolves self referencing loops, and takes into account fields withthe same name already saved.
+775 | TIU FIELD DELETE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Deletes an entry in the Template Field (8927.1) file.
+776 | TIU FIELD DOLMTEXT | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Reads through an array of text and converts all entries of templatefields to their assocaited List Manager text values.
+777 | TIU FIELD LIST | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns long list array of template fields
+778 | TIU FIELD LIST ADD | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Takes in the XML string, in the format XMLSET(1)=" <TEMPLATE_FIELDS>" and merges them with the global ^TMP("TIUFLDXML",$J).  If the subscript is 1,then it KILLs the global before it merges.  This routine is used so verylarge lists of fields can be processed without many calls to the database.
+779 | TIU FIELD LIST IMPORT | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Calls the import process for a pre-loaded (into ^TMP) list of templatefields.
+780 | TIU FIELD LOAD | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a single Template Field object
+781 | TIU FIELD LOAD BY IEN | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a single Template Field object.
+782 | TIU FIELD LOCK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Locks a template field record for editing
+783 | TIU FIELD NAME IS UNIQUE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns TRUE if the template field name is unique
+784 | TIU FIELD UNLOCK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Unlock Template Field
+785 | TIU GET ADDITIONAL SIGNERS | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns the list of additional signers currently identified for a givenTIU document.
+786 | TIU GET ALERT INFO | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Given a TIU XQAID, return the patient and document type for the item beingalerted.
+787 | TIU GET BOILERPLATE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a titles boilerplate.
+788 | TIU GET DEFAULT PROVIDER | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This RPC returns the default provider as specified by the TIU Site ParameterDEFAULT PRIMARY PROVIDER, which has the following allowable values:0      NONE, DON'T PROMTIn which case the call will return 0^1      DEFAULT, BY LOCATIONIn this case, the call will return the default provider for a given HospitalLocation, as specified in the set-up for the Clinic in MAS. If a defaultprovider is specified for the location in question, that person will bereturned. If the Clinic set-up specifies use of the Primary Provider (if defined) for the patient, then that person will be returned. The returnformat will be DUZ^LASTNAME,FIRSTNAME.2      AUTHOR (IF PROVIDER)In this case, the call will return the current user (if they are a known Provider). If their not a known Provider, then the call will return 0^.
+789 | TIU GET DOCUMENT PARAMETERS | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas), [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Remote Procedure returns the parameters by which a given documentor document type is to be processed.
+790 | TIU GET DOCUMENT TITLE | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This remote procedure returns the pointer to the TIU DOCUMENT DEFINITIONFILE that corresponds to the TITLE of the document identified in the TIUDAparameter.
+791 | TIU GET DS URGENCIES | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas) | Returns a set of discharge summary urgencies for use in a long list box.
+792 | TIU GET LINKED PRF NOTES | [fPatientFlagMulti.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas) | Returns list of SIGNED, LINKED PRF notes for given patient, for givenPRF Title
+793 | TIU GET LIST OF OBJECTS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | This RPC returns the list of TIU OBJECTS that the current user may selectfrom.
+794 | TIU GET PERSONAL PREFERENCES | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Returns Users personal preferences for TIU in the following format: TIUY = USER [1P] ^ DEFAULT LOCATION [2P] ^ REVIEW SCREEN SORT FIELD [3S] ^    ==>REVIEW SCREEN SORT ORDER [4S] ^ DISPLAY MENUS [5S] ^ PATIENT    ==>SELECTION PREFERENCE [6S] ^ ASK 'Save changes?' AFTER EDIT [7S] ^    ==>ASK SUBJECT FOR PROGRESS NOTES [8S] ^
+795 | TIU GET PRF ACTIONS | [fNoteProps.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNoteProps.pas) | This RPC gets the Patient Record Flag History Assignments/Actions for a Patient/Title Combination.
+796 | TIU GET PRF TITLE | [fPatientFlagMulti.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas) | Returns IEN of the TIU Note Title in file 8925.1 which is associatedwith given flag for given patient.
+797 | TIU GET PRINT NAME | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Remote Procedure receives a pointer to the TIU DOCUMENT DEFINITIONFILE (#8925.1) and returns a string containing the Print Name of thecorresponding Document Definition.
+798 | TIU GET RECORD TEXT | [fNotes.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas), [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas), [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas) | This RPC will get the textual portion of a TIU Document Record.
+799 | TIU GET REQUEST | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Remote Procedure returns the variable pointer to the REQUESTINGPACKAGE REFERENCE (File #8925, Field #1405). This would be the record inthe Requesting Package (e.g., Consult/Request Tracking or Surgery) forwhich the resulting document has been entered in TIU.
+800 | TIU GET SITE PARAMETERS | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC returns the TIU Parameters for the Division the user is logged in to.
+801 | TIU HAS AUTHOR SIGNED? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Boolean RPC returns a value of 0 if the author has not signed and the user attempting to sign is the expected co-signer.  Returns a 1 if the author has signed or the user attempting to sign is NOT the expected co-signer.
+802 | TIU ID ATTACH ENTRY | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC will attach a a document as an Interdisciplinary (ID) entry to anID Parent document.
+803 | TIU ID CAN ATTACH | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This BOOLEAN RPC evaluates the question of whether a particular documentmay be attached as an entry to an Interdisciplinary Note (i.e., can thisdocument be an ID Child?).
+804 | TIU ID CAN RECEIVE | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This BOOLEAN RPC evaluates the question of whether a particular documentmay receive an entry as an Interdisciplinary Parent Note (i.e., can thisdocument be an ID Parent?).
+805 | TIU ID DETACH ENTRY | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This call will remove an ID Entry from an Interdisciplinary Note.
+806 | TIU IDENTIFY CLINPROC CLASS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This RPC gets the CLINICAL PROCEDURES TIU Document Definitionfile (#8925.1) IEN.
+807 | TIU IDENTIFY CONSULTS CLASS | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This RPC returns the record number of the class CONSULTS in the TIUDOCUMENT DEFINITION file (#8925.1).
+808 | TIU IDENTIFY SURGERY CLASS | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | This RPC returns the record number of the class identified by the CLNAMEparameter in the TIU DOCUMENT DEFINITION file (#8925.1).
+809 | TIU IS THIS A CLINPROC? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC evaluates whether or not a Title is under theCLINICAL PROCEDURES Class.
+810 | TIU IS THIS A CONSULT? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | BOOLEAN RPC which evaluates whether the title indicated is that of aconsult.
+811 | TIU IS THIS A SURGERY? | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | BOOLEAN RPC which evaluates whether the title indicated is that of aSURGICAL REPORT or PROCEDURE REPORT (NON-O.R.).
+812 | TIU IS USER A PROVIDER? | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This Boolean RPC returns TRUE if the user was a known provider on the date specified.
+813 | TIU IS USER A USR PROVIDER | [Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas) | This Boolean RPC returns TRUE if the user was a member of USR CLASS PROVIDER on the date specified.
+814 | TIU ISPRF | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.
+815 | TIU JUSTIFY DELETE? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).
+816 | TIU LINK TO FLAG | [fNotes.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas) | This RPC is used to link a Progress Note to a Patient Record Flag
+817 | TIU LOAD BOILERPLATE TEXT | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC will load the boilerplate text associated with the selectedtitle, and execute the methods for any objects embedded in the boilerplatetext.
+818 | TIU LOAD RECORD FOR EDIT | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC loads the return array with data in a format consistent with thatrequired by the TIU UPDATE RECORD API.  It should be invoked when the userinvokes the Edit action, to load the dialog for editing the document.
+819 | TIU LOCK RECORD<br>__eHMP__ | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC will issue an incremental LOCK on the record identified by theTIUDA parameter, returning an integer truth value indicating successor failure in obtaining the LOCK.
+820 | TIU LONG LIST BOILERPLATED | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Used by the GUI to supply a long list of boilerplated titles.
+821 | TIU LONG LIST CLINPROC TITLES | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This RPC serves data to a longlist of selectable Titles for CLINICALPROCEDURES.
+822 | TIU LONG LIST CONSULT TITLES | [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This RPC serves data to a longlist of selectable TITLES for CONSULTS.
+823 | TIU LONG LIST OF TITLES | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas), [Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas) | This RPC serves data to a longlist of selectable TITLES by CLASS.  e.g.,passing the class PROGRESS NOTES will return active Progress Notes titleswhich the current user is authorized to enter notes under.
+824 | TIU LONG LIST SURGERY TITLES | [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas) | This RPC serves data to a longlist of selectable TITLES for the classnamed in the CLNAME parameter.
+825 | TIU ONE VISIT NOTE? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Boolean RPC to evaulate if note has a corresponding visit.
+826 | TIU PERSONAL TITLE LIST | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas), [Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas) | This Remote Procedure returns the user's list of preferred titles for agiven class of documents, along with the default title, if specified.
+827 | TIU PRINT RECORD | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Allows Printing of TIU Documents on demand.
+828 | TIU REM DLG OK AS TEMPLATE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns TRUE is the passed in reminder dialog is allowed to be used ina TIU Template.
+829 | TIU REMINDER DIALOGS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a list of reminder dialogs allowed for use as Templates.
+830 | TIU REQUIRES COSIGNATURE | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Boolean RPC simply evaluates whether the current user requirescosignature for TIU DOCUMENTS, and returns a 1 if true, or a 0 if false.
+831 | TIU SET DOCUMENT TEXT | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC buffers the transmittal of text (i.e., the body of TIU Documents)from the Client to the Server. It allows documents of indefinite size tobe filed, without risk of an allocate error on the M Server.
+832 | TIU SIGN RECORD<br>__eHMP__ | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This API Supports the application of the user's electronic signature to aTIU document while evaluating authorization, and validating the user'selectronic signature.
+833 | TIU SUMMARIES | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This API gets lists of Discharge Summaries for a patient, with optional parameters for STATUS, EARLY DATE/TIME, and LATE DATE/TIME.
+834 | TIU TEMPLATE ACCESS LEVEL | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+835 | TIU TEMPLATE ALL TITLES | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a long list of all active titles.
+836 | TIU TEMPLATE CHECK BOILERPLATE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | This RPC will evaluate boilerplate passed in the input array, checking tosee whether any of the embedded objects are inactive, faulty, orambiguous.
+837 | TIU TEMPLATE DELETE | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | This RPC will delete orphan entries in the Template file (i.e., onlythose entries that have been removed from any Groups, Classes, Personalor Shared Root entries).
+838 | TIU TEMPLATE GET DEFAULTS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns Default Template Settings
+839 | TIU TEMPLATE GET DESCRIPTION | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a Template's Description
+840 | TIU TEMPLATE GETBOIL | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+841 | TIU TEMPLATE GETITEMS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+842 | TIU TEMPLATE GETLINK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns template linked to a specific title or reason for request.
+843 | TIU TEMPLATE GETROOTS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+844 | TIU TEMPLATE GETTEXT | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+845 | TIU TEMPLATE ISEDITOR | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+846 | TIU TEMPLATE LISTOWNR | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | 
+847 | TIU TEMPLATE LOCK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Locks Template
+848 | TIU TEMPLATE PERSONAL OBJECTS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Returns a list or Patient Data Objects allowed in Personal Templates.
+849 | TIU TEMPLATE SET DEFAULTS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Saves Template Default Settings
+850 | TIU TEMPLATE SET ITEMS | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | This RPC will create or update the items for a Group, Class, or Root.
+851 | TIU TEMPLATE UNLOCK | [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas) | Unlocks a template.
+852 | TIU UNLOCK RECORD<br>__eHMP__ | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC will decrement the lock on a given TIU Document Record, identifiedby the TIUDA input parameter. The return value will always be 0.
+853 | TIU UPDATE ADDITIONAL SIGNERS | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC accepts a list of persons, and adds them as additional signersfor the document identified by the first parameter.
+854 | TIU UPDATE RECORD<br>__eHMP__ | [rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This API updates the record named in the TIUDA parameter, with theinformation contained in the TIUX(Field #) array.  The body of themodified TIU document should be passed in the TIUX("TEXT",i,0) subscript,where i is the line number (i.e., the "TEXT" node should be ready to MERGEwith a word processing field).  Any filing errors which may occur will bereturned in the single valued ERR parameter (which is passed byreference).
+855 | TIU USER CLASS LONG LIST | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | Long List of User Classes
+856 | TIU USER INACTIVE? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
+857 | TIU WAS THIS SAVED? | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This Boolean Remote Procedure will evaluate whether a given document wascommitted to the database, or whether the user who last edited it wasdisconnected.
+858 | TIU WHICH SIGNATURE ACTION<br>__eHMP__ | [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC infers whether the user is trying to sign or cosign the docuementin question, and indicates which ASU ACTION the GUI should pass to the TIUAUTHORIZATION RPC.
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+859 | VAFCTFU CONVERT ICN TO DFN | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas) | Given a patient Integration Control Number (ICN), this will returnthe patient Internal Entry Number (IEN) from the PATIENT file (#2).
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+860 | XUS PKI GET UPN | [Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas), [fFrame.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fFrame.pas), [fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas) | This RPC gets the SUBJECT ALTERNATIVE NAME field from the New Person (#200) file field 501.2.  It is used to check that the correct PIV card has been put into the reader.
+861 | XUS PKI SET UPN | [Orders/uOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/uOrders.pas) | This RPC is used to set the SUBJECT ALTERNATIVE NAME in the New Person #(200) file field 501.2. 
+&nbsp; | &nbsp; | &nbsp; | &nbsp;
+862 | XWB DEFERRED CLEARALL | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC is used to CLEAR all the data known to this job in the ^XTMPglobal.  Makes use of the list in ^TMP("XWBHDL",$J,handle).
+863 | XWB DIRECT RPC | [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas), [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) |  This is the Broker RPC that is called to request that a RPC be run on aremote system.  The data is passed by HL7 to the remote system as is thereturn value.  The difference between this and the XWB REMOTE RPC is thisis a blocking call meaning the user's workstation will not processanything else until the data returns from the remote system.
+864 | XWB GET VARIABLE VALUE<br>__JLV__ | [rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas), [rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas) | This RPC accepts the name of a variable which will be evaluated and itsvalue returned to the server.  For example, this RPC may be called witha parameter like DUZ which will be returned as 123456.
+865 | XWB REMOTE GETDATA | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC will return an ARRAY with what ever data has been sent back fromthe remote site.
+866 | XWB REMOTE RPC | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas), [rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas) | This is the RPC that is called to request that an application RPCbe run on a remote system.  The data is passed by HL7 to the remote systemas is the return value.   This RPC will return a HANDLE that can be used to check if the data hasbeen sent back from the remote system.  The HANDLE can be used in anotherRPC to check the status of the RPC.
+867 | XWB REMOTE STATUS CHECK | [rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas) | This RPC will return the status of a remote RPC.
 
 
