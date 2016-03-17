@@ -9,6 +9,7 @@ title: CPRS RPC Use
   2. eHMP (r1.3 Oct 2015) uses 44 (5.07%) of the CPRS-supported RPCs and extra custom RPC(s) (HMPCRPC RPC).
   3. JLV uses 14 (Get) RPCs in addition to its mainstay, the non CPRS-used VPR RPC
   4. Sources examined: [OSEHRA CPRS Chart Source](https://github.com/OSEHRA/VistA/tree/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart), [Vitals DLL](https://www.osehra.org/document/guis-used-automatic-functional-testing), [eHMP r1.3](https://github.com/vistadataproject/nodeVISTA/tree/master/eHMP/Resources) and [JLV RPC Use](https://github.com/vistadataproject/nodeVISTA/issues/26).
+Tracked in [issue](https://github.com/vistadataproject/VDM/issues/24)
 
 
 
