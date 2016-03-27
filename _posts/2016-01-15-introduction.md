@@ -32,8 +32,6 @@ This master data model - the roadmap to all of VA's institutional know-how and d
 
 *__An operationalized Master VISTA Data Model (MVDM) provides VA with four key transformational capabilities:__*
 
-(/assets/logos-db/50h/db-search.jpg) 
-
 
 VISTA<br>Data | Details
 ---|---
