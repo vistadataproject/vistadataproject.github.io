@@ -4,11 +4,6 @@ title: Introduction
 author: rafael
 ---
 
-
-![vdpiceberg](/assets/vdp-iceberg.jpg)
-
-
-
 # VISTA Data Project
 
 ### A Real-time Computable Master Data Model for VA's VISTA Systems
@@ -20,7 +15,6 @@ The VISTA Data Project is a new data-centric approach to comprehensively exposin
 
 .
 
-.
 
 
 
