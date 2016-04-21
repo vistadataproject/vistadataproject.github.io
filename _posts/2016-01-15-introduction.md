@@ -4,7 +4,7 @@ title: Introduction
 author: rafael
 ---
 
-![vdp-iceberg](assets/vdp-iceberg.jpg)
+![vdpiceberg](/assets/vdp-iceberg.jpg)
 
 
 .
