@@ -10,4 +10,4 @@ author: rafael
 .
 
 
-For more details, [see the technical overview ...](https://github.com/vistadataproject/documents#technical-overview).
+For more details, [see the technical overview ...](https://github.com/vistadataproject/documents).
