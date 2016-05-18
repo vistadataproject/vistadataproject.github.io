@@ -15,8 +15,6 @@ title: CPRS RPC Use
   8. PRELIM: number WRITE RPCs (not full list yet) - 54
   9. Sources examined: [OSEHRA CPRS Chart Source](https://github.com/OSEHRA/VistA/tree/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart), [OR CPRS CHART option](https://github.com/vistadataproject/VDM/blob/master/definitions/nodeVISTA/19_OP_CPRS_GUI_CHART_LIST.json), [Vitals DLL](https://www.osehra.org/document/guis-used-automatic-functional-testing), [eHMP r1.3](https://github.com/vistadataproject/nodeVISTA/tree/master/eHMP/Resources) and [JLV RPC Use](https://github.com/vistadataproject/nodeVISTA/issues/26).
 
-Tracked in [issue](https://github.com/vistadataproject/VDM/issues/24)
-
 
 
 \# | RPC | MUMPS | CPRS File(s) | Description
