@@ -467,7 +467,7 @@ Model __VPR__ has __23__ top classes, __9__ contained classes and __402__ proper
 16 | severity | ENUMERATION | 
 17 | reactions | [OBJECT] | Contained Class 'Reaction'
 
-Contained Class 'Comment'
+#### Contained Class 'Comment'
 
 \# | Name | Type | Details
 --- | --- | --- | ---
@@ -476,21 +476,21 @@ Contained Class 'Comment'
 3 | commentType |  | 
 4 | commentText |  | 
 
-Contained Class 'DrugClass'
+#### Contained Class 'DrugClass'
 
 \# | Name | Type | Details
 --- | --- | --- | ---
 1 | name |  | 
 2 | vuid |  | 
 
-Contained Class 'DrugIngredient'
+#### Contained Class 'DrugIngredient'
 
 \# | Name | Type | Details
 --- | --- | --- | ---
 1 | name |  | 
 2 | vuid |  | 
 
-Contained Class 'Reaction'
+#### Contained Class 'Reaction'
 
 \# | Name | Type | Details
 --- | --- | --- | ---
@@ -573,7 +573,7 @@ Contained Class 'Reaction'
 5 | removed | [OBJECT] | 
 6 | taken |  | 
 
-Contained Class 'Measurement'
+#### Contained Class 'Measurement'
 
 \# | Name | Type | Details
 --- | --- | --- | ---
