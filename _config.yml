@@ -31,12 +31,12 @@ excerpt_separator: "<!--more-->"
 
 authors:
   conor: 
-    name: Conor Dowling
+    name: CD
     email: conor-dowling@caregraf.com
     role: Project Architect
     linkedin: conor-dowling-4306832b
   rafael:
-    name: Dr. Rafael Richards
-    email: rafael.richards@va.gov 
-    role: VISTA Data Program Director 
-    linkedin: rafaelrichardsmd
+    name: RR
+    email: email@email.com
+    role: Program Director 
+    linkedin: vdp
