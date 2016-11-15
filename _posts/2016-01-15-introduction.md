@@ -4,7 +4,7 @@ title: Introduction
 author: rafael
 ---
 
-![vdpiceberg](/assets/vdp-iceberg2.jpg)
+![vdpiceberg](/assets/vdp-iceberg2.png)
 
 The Veterans Information System Technology Architecture (VISTA) is the comprehensive longitudinal health information system of the U.S. Department of Veterans Affairs (VA). For the past thirty-five years, a national network of VISTA systems has provided all clinical, financial, and administrative functions to support the operations of 1200  VA hospitals and clinics throughout the United States. See [VISTA Background](https://github.com/vistadataproject/documents/tree/master/Background/vista)
 
