@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CPRS RPCs Breakdown for VDP Year 2
+title: VDP Year 2 - RPC Locking Tracks
 ---
 
 # VISTA Data Project 
