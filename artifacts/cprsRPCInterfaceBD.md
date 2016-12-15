@@ -1,27 +1,22 @@
 ---
 layout: default
-title: VDP Year 2 - CPRS RPC Breakdown
+title: VDP Year 2 - CPRS RPC Interface Breakdown
 ---
 
-CPRS RPC Interface breakdown (1050 RPCs) ...
-Locked RPCs: 30 (2.9%)
+# CPRS RPC Interface
+
+1050 RPCs, 30 (2.9%) locked, which divide into four groups ...
 
 Name | Number
 --- | ---
-Clinical | 417 (39.7%)
-Non Clinical | 555 (52.9%)
-Authentication (part of Security) | 18 (1.7%)
-Out of Scope | 60 (5.7%)
+[Clinical](#clinical-417) | 417 (39.7%)
+[Non Clinical](#non-clinical-555) | 555 (52.9%)
+[Authentication](#authentication-18) | 18 (1.7%)
+[Out of Scope](#out-of-scope-60) | 60 (5.7%)
+
+Most - 745 (71%) - of the interface's RPCs _READ_ data.
 
 
-Most of the interface's RPCs _READ_ data ...
-
-Category | Number
---- | ---
-AUTHENTICATION | 18 (1.7%)
-CHANGE | 143 (13.6%)
-READ | 745 (71%)
-UTILITY | 144 (13.7%)
 
 
 
@@ -547,248 +542,32 @@ UTILITY | 50 (12%)
 
 
 
+
+
 ## Non Clinical (555)
+
+
+
+Non Clinical RPCs come in three flavors ...
+
+Name | Number
+--- | ---
+[Knowledge](#knowledge-276) | 276 (49.7%)
+[User](#user-179) | 179 (32.3%)
+[Other](#other-100) | 100 (18%)
+
+
+
+
+#### Knowledge (276)
 
 Category | Number
 --- | ---
-CHANGE | 56 (10.1%)
-READ | 441 (79.5%)
-UTILITY | 58 (10.5%)
+CHANGE | 12 (4.3%)
+READ | 258 (93.5%)
+UTILITY | 6 (2.2%)
 
-
-
-User RPCs: 179 (32.3%)
-... many (80 (44.7%)) involve PARAMETER setting or getting.
-
-\# | Name | Category | Tags | Files | Parameters
---- | --- | --- | --- | --- | ---
-1. | GMV USER | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-2. | ORB SORT METHOD | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-3. | ORECS01 SAVPATH | CHANGE | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-4. | OREVNTX1 AUTHMREL | READ | PARAMETER, XUSEC |  | 
-5. | OREVNTX1 CMEVTS | READ | LOCATION, PARAMETER |  | 
-6. | OREVNTX1 DELDFLT | CHANGE | PARAMETER |  | 
-7. | OREVNTX1 DFLTEVT | READ | PARAMETER |  | 
-8. | OREVNTX1 SETDFLT | CHANGE | PARAMETER | 100.5 | 
-9. | OREVNTX1 TYPEXT | READ | - |  | 
-10. | OREVNTX1 WRLSTED | READ | PARAMETER | 101.41 | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-11. | ORQORB SORT | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-12. | ORQPT DEFAULT CLINIC DATE RANG | READ | LOCATION, PARAMETER |  | 
-13. | ORQPT DEFAULT LIST SORT | READ | PARAMETER |  | 
-14. | ORQPT DEFAULT LIST SOURCE | READ | PARAMETER |  | 
-15. | ORQPT PROVIDERS | READ | XREF, XUSEC | 200 | 
-16. | ORQPT TEAMS | READ | - | 100.21 | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-17. | ORQQCN2 SAVE CONTEXT | CHANGE | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-18. | ORQQLR SEARCH RANGE OUTPT | READ | PARAMETER |  | ORQQLR SEARCH RANGE OUTPT
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-19. | ORQQPL INIT USER | READ | PARAMETER, REENTRANCY | 125.99 | ORCH CONTEXT PROBLEMS
-20. | ORQQPL PROBLEM NTRT BULLETIN | UTILITY | BULLETIN, PARAMETER, XMB |  | OR PROBLEM NTRT BY DIVISION
-21. | ORQQPL PROV FILTER LIST | READ | - |  | 
-22. | ORQQPL PROVIDER LIST | READ | - |  | 
-23. | ORQQPL SAVEVIEW | CHANGE | PARAMETER | 200 | ORCH CONTEXT PROBLEMS
-24. | ORQQPL USER PROB CATS | READ | REENTRANCY | 125.1, 200 | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-25. | ORQQPX GET DEF LOCATIONS | READ | PARAMETER |  | ORQQPX DEFAULT LOCATIONS
-26. | ORQQPX GET FOLDERS | READ | PARAMETER |  | ORQQPX REMINDER FOLDERS
-27. | ORQQPX NEW COVER SHEET ACTIVE | READ | IS-A, PARAMETER |  | ORQQPX NEW REMINDER PARAMS
-28. | ORQQPX NEW COVER SHEET REMS | READ | PARAMETER |  | ORQQPX SEARCH ITEMS
-29. | ORQQPX NEW REMINDERS ACTIVE | READ | IS-A, PARAMETER |  | PXRM GUI REMINDERS ACTIVE
-30. | ORQQPX REM INSERT AT CURSOR | READ | PARAMETER |  | ORQQPX REMINDER TEXT AT CURSOR
-31. | ORQQPX SET FOLDERS | CHANGE | PARAMETER |  | ORQQPX REMINDER FOLDERS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-32. | ORQQPXRM GET WH REPORT TEXT | READ | - | 790.1 | 
-33. | ORQQPXRM PROGRESS NOTE HEADER | READ | LOCATION |  | PXRM PROGRESS NOTE HEADERS
-34. | ORQQPXRM REMINDER CATEGORIES | READ | LOCATION |  | PXRM CPRS LOOKUP CATEGORIES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-35. | ORQQVI2 VITALS VALIDATE | UTILITY | EXTERNAL I/F, HARD CODED, IS-A |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-36. | ORWCH LDFONT | READ | PARAMETER |  | ORWCH FONT SIZE
-37. | ORWCH LOADALL | READ | PARAMETER |  | ORWCH BOUNDS, ORWCH WIDTHS, ORWCH COLUMNS
-38. | ORWCH LOADSIZ | READ | PARAMETER |  | ORWCH BOUNDS
-39. | ORWCH SAVEALL | CHANGE | PARAMETER |  | ORWCH BOUNDS, ORWCH WIDTHS, ORWCH COLUMNS
-40. | ORWCH SAVECOL | CHANGE | PARAMETER |  | ORWCH COLUMNS REPORTS
-41. | ORWCH SAVESIZ | CHANGE | PARAMETER |  | ORWCH BOUNDS
-42. | ORWCH SAVFONT | CHANGE | PARAMETER |  | ORWCH FONT SIZE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-43. | ORWCOM ORDEROBJ | READ | PARAMETER |  | ORWCOM PATIENT SELECTED
-44. | ORWCOM PTOBJ | READ | PARAMETER |  | ORWCOM PATIENT SELECTED
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-45. | ORWD KEY | READ | XUSEC |  | 
-46. | ORWD PROVKEY | READ | XUSEC |  | 
-47. | ORWD SAVE | CHANGE | - |  | 
-48. | ORWD SAVEACT | CHANGE | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-49. | ORWDAL32 CLINUSER | READ | IS-A, PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-50. | ORWDBA2 ADDPDL | CHANGE | - | 200 | 
-51. | ORWDBA2 DELPDL | CHANGE | - |  | 
-52. | ORWDBA2 GETPDL | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-53. | ORWDBA4 GETBAUSR | READ | PARAMETER |  | OR BILLING AWARENESS BY USER
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-54. | ORWDBA7 ISWITCH | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-55. | ORWDCSLT LOOK200 | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-56. | ORWDLR32 IC DEFAULT | READ | LOCATION | 69.9 | 
-57. | ORWDLR32 IMMED COLLECT | READ | LOCATION, UNSTRUCTURED READ |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-58. | ORWDLR33 LC TO WC | READ | LOCATION, PARAMETER |  | ORWLR LC CHANGED TO WC
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-59. | ORWDPS1 FAILDEA | UTILITY | FMUTILITY, IS-A | 101.43 | 
-60. | ORWDPS1 IVDEA | READ | - | 200, 101.43 | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-61. | ORWDPS32 AUTH | READ | PARAMETER |  | OR OREMAS MED ORDERS
-62. | ORWDPS32 AUTHNVA | READ | PARAMETER |  | OR OREMAS NON-VA MED ORDERS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-63. | ORWDRA32 APPROVAL | READ | QUERY |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-64. | ORWDXM1 SVRPC | READ | IS-A, PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-65. | ORWDXVB STATALOW | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-66. | ORWGN AUTHUSR | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-67. | ORWGRPC ALLVIEWS | READ | - |  | 
-68. | ORWGRPC DELVIEWS | CHANGE | PARAMETER |  | 
-69. | ORWGRPC PUBLIC | READ | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-70. | ORWLRR ATG | READ | DUZ TO K/META | 60, 69.2, 68 | 
-71. | ORWLRR TG | READ | - |  | 
-72. | ORWLRR USERS | READ | QUERY | 68 | 
-73. | ORWLRR UTGA | READ | QUERY |  | 
-74. | ORWLRR UTGD | READ | QUERY |  | 
-75. | ORWLRR UTGR | READ | QUERY |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-76. | ORWNSS NSSMSG | READ | PARAMETER |  | ORWIM NSS MESSAGE
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-77. | ORWOR PKIUSE | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-78. | ORWOR1 GETDEA | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-79. | ORWPCE ACTIVE PROV | READ | IS-A |  | 
-80. | ORWPCE ALWAYS CHECKOUT | READ | IS-A, PARAMETER |  | ORWPCE DISABLE AUTO CHECKOUT
-81. | ORWPCE ANYTIME | READ | PARAMETER |  | ORWPCE ANYTIME ENCOUNTERS
-82. | ORWPCE ASKPCE | READ | PARAMETER |  | ORWPCE ASK ENCOUNTER UPDATE
-83. | ORWPCE AUTO VISIT TYPE SELECT | READ | IS-A, PARAMETER |  | 
-84. | ORWPCE FORCE | READ | LOCATION, PARAMETER |  | 
-85. | ORWPCE GET EXCLUDED | READ | PARAMETER |  | 
-86. | ORWPCE MH TEST AUTHORIZED | READ | PARAMETER |  | 
-87. | ORWPCE MHTESTOK | READ | IS-A, PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-88. | ORWPT DFLTSRC | READ | PARAMETER |  | ORLP DEFAULT LIST SOURCE
-89. | ORWPT SAVDFLT | CHANGE | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-90. | ORWRP2 SAVLKUP | CHANGE | PARAMETER |  | ORWRP ADHOC LOOKUP
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-91. | ORWSR SAVE SURG CONTEXT | CHANGE | PARAMETER |  | ORCH CONTEXT SURGERY
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-92. | ORWTIU CANLINK | READ | - |  | 
-93. | ORWTIU GET DCSUMM CONTEXT | READ | PARAMETER |  | ORCH CONTEXT SUMMRIES
-94. | ORWTIU GET TIU CONTEXT | READ | PARAMETER |  | ORCH CONTEXT NOTES
-95. | ORWTIU SAVE DCSUMM CONTEXT | CHANGE | PARAMETER |  | ORCH CONTEXT SUMMRIES
-96. | ORWTIU SAVE TIU CONTEXT | CHANGE | PARAMETER |  | ORCH CONTEXT NOTES
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-97. | ORWTPD ACTDF | CHANGE | PARAMETER |  | 
-98. | ORWTPD DELDFLT | CHANGE | PARAMETER |  | 
-99. | ORWTPD GETDFLT | READ | PARAMETER |  | ORWRP TIME/OCC LIMITS ALL
-100. | ORWTPD PUTOCM | CHANGE | PARAMETER |  | 
-101. | ORWTPD SUDF | CHANGE | PARAMETER |  | 
-102. | ORWTPD SUINDV | CHANGE | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-103. | ORWTPD1 GETCSRNG | READ | PARAMETER |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
-104. | ORWTPD1 GETEDATS | READ | PARAMETER |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
-105. | ORWTPD1 PUTCSRNG | CHANGE | PARAMETER |  | 
-106. | ORWTPD1 PUTEDATS | CHANGE | PARAMETER |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-107. | ORWTPP ADDLIST | READ | - | 100.21 | 
-108. | ORWTPP CHKSURR | READ | PARAMETER |  | 
-109. | ORWTPP CLDAYS | READ | PARAMETER |  | 
-110. | ORWTPP CLEARNOT | CHANGE | - | 8992.1 | 
-111. | ORWTPP CLRANGE | READ | PARAMETER |  | 
-112. | ORWTPP CSARNG | READ | PARAMETER |  | 
-113. | ORWTPP CSLAB | READ | PARAMETER |  | 
-114. | ORWTPP DELLIST | READ | - | 100.21 | 
-115. | ORWTPP GETCOMBO | READ | - |  | 
-116. | ORWTPP GETCOS | READ | - |  | 
-117. | ORWTPP GETDCOS | READ | - |  | 
-118. | ORWTPP GETIMG | READ | - |  | 
-119. | ORWTPP GETNOT | READ | - |  | 
-120. | ORWTPP GETNOTO | READ | - |  | 
-121. | ORWTPP GETOC | READ | - |  | 
-122. | ORWTPP GETOTHER | READ | - |  | 
-123. | ORWTPP GETREM | READ | - |  | 
-124. | ORWTPP GETSUB | READ | - |  | 
-125. | ORWTPP GETSURR | READ | - |  | 
-126. | ORWTPP GETTD | READ | - |  | 
-127. | ORWTPP GETTU | READ | - |  | 
-128. | ORWTPP LSDEF | READ | - |  | 
-129. | ORWTPP NEWLIST | READ | - |  | 
-130. | ORWTPP PLISTS | READ | - | 100.21 | 
-131. | ORWTPP PLTEAMS | READ | - | 100.21 | 
-132. | ORWTPP REMLIST | CHANGE | - |  | 
-133. | ORWTPP SAVECD | CHANGE | - |  | 
-134. | ORWTPP SAVECS | CHANGE | - |  | 
-135. | ORWTPP SAVELIST | CHANGE | - |  | 
-136. | ORWTPP SAVENOT | CHANGE | - |  | 
-137. | ORWTPP SAVENOTO | CHANGE | - |  | 
-138. | ORWTPP SAVEOC | CHANGE | - |  | 
-139. | ORWTPP SAVEPLD | CHANGE | - |  | 
-140. | ORWTPP SAVESURR | CHANGE | - |  | 
-141. | ORWTPP SAVET | CHANGE | - |  | 
-142. | ORWTPP SETCOMBO | UTILITY | - |  | 
-143. | ORWTPP SETDCOS | UTILITY | - |  | 
-144. | ORWTPP SETIMG | UTILITY | - |  | 
-145. | ORWTPP SETOTHER | UTILITY | - |  | 
-146. | ORWTPP SETREM | UTILITY | - |  | 
-147. | ORWTPP SETSUB | UTILITY | - |  | 
-148. | ORWTPP SORTDEF | READ | - |  | 
-149. | ORWTPP TEAMS | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-150. | ORWTPT GETTEAM | READ | - | 100.21 | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-151. | ORWU DEFAULT DIVISION | READ | LOCATION |  | 
-152. | ORWU HAS OPTION ACCESS | READ | - |  | 
-153. | ORWU HASKEY | READ | - |  | 
-154. | ORWU NEWPERS | READ | - |  | 
-155. | ORWU PARAM | READ | PARAMETER |  | 
-156. | ORWU PARAMS | READ | PARAMETER |  | 
-157. | ORWU TOOLMENU | READ | PARAMETER |  | 
-158. | ORWU USERINFO | READ | - |  | 
-159. | ORWU VALIDSIG | UTILITY | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-160. | ORWU1 NAMECVT | READ | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-161. | ORWU16 NEWPERS | READ | QUERY |  | 
-162. | ORWU16 USERINFO | READ | - |  | 
-163. | ORWU16 VALIDSIG | UTILITY | - |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-164. | TIU AUTHORIZATION | READ | IS-A |  | 
-165. | TIU CAN CHANGE COSIGNER? | READ | IS-A |  | 
-166. | TIU DIV AND CLASS INFO | READ | - | 200, 8930 | 
-167. | TIU FIELD CAN EDIT | READ | IS-A |  | 
-168. | TIU GET DEFAULT PROVIDER | READ | - |  | 
-169. | TIU GET DS TITLES | READ | DUZ TO K/META | 8925.98, 8925.1 | 
-170. | TIU GET LIST OF OBJECTS | READ | - |  | 
-171. | TIU GET PERSONAL PREFERENCES | READ | - |  | 
-172. | TIU GET PN TITLES | READ | DUZ TO K/META | 8925.98, 8925.1 | 
-173. | TIU IS USER A PROVIDER? | READ | IS-A |  | 
-174. | TIU IS USER A USR PROVIDER | READ | IS-A |  | 
-175. | TIU LOAD BOILERPLATE TEXT | READ | ASSEMBLY | 8925.1 | 
-176. | TIU PERSONAL TITLE LIST | READ | DUZ TO K/META | 8925.1 | 
-177. | TIU REQUIRES COSIGNATURE | READ | IS-A |  | 
-178. | TIU TEMPLATE ACCESS LEVEL | READ | PARAMETER |  | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
-179. | TIU USER INACTIVE? | READ | IS-A |  | 
-
-
-K/META RPCs: 276 (49.7%)
+... most take data from specific files.
 
 \# | Name | Category | Tags | Files | Parameters
 --- | --- | --- | --- | --- | ---
@@ -972,11 +751,11 @@ K/META RPCs: 276 (49.7%)
 138. | ORWDXM3 ISUDQO | READ | COMPUTED, IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 139. | ORWDXQ DLGNAME | READ | - |  | 
-140. | ORWDXQ DLGSAVE | CHANGE | - |  | 
+140. | ORWDXQ DLGSAVE | __CHANGE__ | - |  | 
 141. | ORWDXQ GETQLST | READ | - |  | 
 142. | ORWDXQ GETQNAM | READ | - |  | 
-143. | ORWDXQ PUTQLST | CHANGE | - |  | 
-144. | ORWDXQ PUTQNAM | CHANGE | HARD CODED |  | 
+143. | ORWDXQ PUTQLST | __CHANGE__ | - |  | 
+144. | ORWDXQ PUTQNAM | __CHANGE__ | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 145. | ORWDXR01 ISSPLY | READ | IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -1005,7 +784,7 @@ K/META RPCs: 276 (49.7%)
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 163. | ORWOR TSALL | READ | - | 45.7 | 
 164. | ORWOR VWGET | READ | PARAMETER |  | ORCH CONTEXT ORDERS
-165. | ORWOR VWSET | CHANGE | PARAMETER |  | ORCH CONTEXT ORDERS
+165. | ORWOR VWSET | __CHANGE__ | PARAMETER |  | ORCH CONTEXT ORDERS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 166. | ORWORDG ALLTREE | READ | - | 100.98 | 
 167. | ORWORDG GRPSEQB | READ | PARAMETER | 100.98 | ORWOR CATEGORY SEQUENCE
@@ -1089,15 +868,15 @@ K/META RPCs: 276 (49.7%)
 229. | PXRM REMINDER CATEGORY | READ | - |  | 
 230. | PXRM REMINDERS AND CATEGORIES | READ | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-231. | TIU FIELD DELETE | CHANGE | - | 8927.1 | 
+231. | TIU FIELD DELETE | __CHANGE__ | - | 8927.1 | 
 232. | TIU FIELD EXPORT | READ | XML |  | 
-233. | TIU FIELD IMPORT | CHANGE | XML |  | 
+233. | TIU FIELD IMPORT | __CHANGE__ | XML |  | 
 234. | TIU FIELD LIST | READ | - | 8927.1 | 
-235. | TIU FIELD LIST IMPORT | CHANGE | REENTRANCY | 8927.1 | 
+235. | TIU FIELD LIST IMPORT | __CHANGE__ | REENTRANCY | 8927.1 | 
 236. | TIU FIELD LOAD | READ | - |  | 
 237. | TIU FIELD LOAD BY IEN | READ | - |  | 
 238. | TIU FIELD NAME IS UNIQUE | READ | IS-A | 8927.1 | 
-239. | TIU FIELD SAVE | CHANGE | - | 8927.1 | 
+239. | TIU FIELD SAVE | __CHANGE__ | - | 8927.1 | 
 240. | TIU GET BOILERPLATE | READ | - |  | 
 241. | TIU GET DS URGENCIES | READ | HARD CODED |  | 
 242. | TIU GET PRF TITLE | READ | - |  | 
@@ -1119,8 +898,8 @@ K/META RPCs: 276 (49.7%)
 258. | TIU REMINDER DIALOGS | READ | DUZ FOR SERVICE, PARAMETER |  | TIU TEMPLATE REMINDER DIALOGS
 259. | TIU TEMPLATE ALL TITLES | READ | - |  | 
 260. | TIU TEMPLATE CHECK BOILERPLATE | UTILITY | - |  | 
-261. | TIU TEMPLATE CREATE/MODIFY | CHANGE | - |  | 
-262. | TIU TEMPLATE DELETE | CHANGE | - |  | 
+261. | TIU TEMPLATE CREATE/MODIFY | __CHANGE__ | - |  | 
+262. | TIU TEMPLATE DELETE | __CHANGE__ | - |  | 
 263. | TIU TEMPLATE GET DEFAULTS | READ | PARAMETER |  | TIU DEFAULT TEMPLATES
 264. | TIU TEMPLATE GET DESCRIPTION | READ | - |  | 
 265. | TIU TEMPLATE GETBOIL | READ | - |  | 
@@ -1132,12 +911,256 @@ K/META RPCs: 276 (49.7%)
 271. | TIU TEMPLATE ISEDITOR | READ | - |  | 
 272. | TIU TEMPLATE LISTOWNR | READ | - |  | 
 273. | TIU TEMPLATE PERSONAL OBJECTS | READ | DUZ FOR SERVICE, PARAMETER |  | TIU TEMPLATE PERSONAL OBJECTS
-274. | TIU TEMPLATE SET DEFAULTS | CHANGE | PARAMETER |  | TIU DEFAULT TEMPLATES
-275. | TIU TEMPLATE SET ITEMS | CHANGE | - |  | 
+274. | TIU TEMPLATE SET DEFAULTS | __CHANGE__ | PARAMETER |  | TIU DEFAULT TEMPLATES
+275. | TIU TEMPLATE SET ITEMS | __CHANGE__ | - |  | 
 276. | TIU USER CLASS LONG LIST | READ | - | 8930 | 
 
 
-Other NC RPCs: 100 (18%)
+#### User (179)
+
+Category | Number
+--- | ---
+CHANGE | 38 (21.2%)
+READ | 130 (72.6%)
+UTILITY | 11 (6.1%)
+
+... many - 80 (44.7%) - involve PARAMETER setting or getting.
+
+\# | Name | Category | Tags | Files | Parameters
+--- | --- | --- | --- | --- | ---
+1. | GMV USER | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+2. | ORB SORT METHOD | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+3. | ORECS01 SAVPATH | __CHANGE__ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+4. | OREVNTX1 AUTHMREL | READ | PARAMETER, XUSEC |  | 
+5. | OREVNTX1 CMEVTS | READ | LOCATION, PARAMETER |  | 
+6. | OREVNTX1 DELDFLT | __CHANGE__ | PARAMETER |  | 
+7. | OREVNTX1 DFLTEVT | READ | PARAMETER |  | 
+8. | OREVNTX1 SETDFLT | __CHANGE__ | PARAMETER | 100.5 | 
+9. | OREVNTX1 TYPEXT | READ | - |  | 
+10. | OREVNTX1 WRLSTED | READ | PARAMETER | 101.41 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+11. | ORQORB SORT | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+12. | ORQPT DEFAULT CLINIC DATE RANG | READ | LOCATION, PARAMETER |  | 
+13. | ORQPT DEFAULT LIST SORT | READ | PARAMETER |  | 
+14. | ORQPT DEFAULT LIST SOURCE | READ | PARAMETER |  | 
+15. | ORQPT PROVIDERS | READ | XREF, XUSEC | 200 | 
+16. | ORQPT TEAMS | READ | - | 100.21 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+17. | ORQQCN2 SAVE CONTEXT | __CHANGE__ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+18. | ORQQLR SEARCH RANGE OUTPT | READ | PARAMETER |  | ORQQLR SEARCH RANGE OUTPT
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+19. | ORQQPL INIT USER | READ | PARAMETER, REENTRANCY | 125.99 | ORCH CONTEXT PROBLEMS
+20. | ORQQPL PROBLEM NTRT BULLETIN | UTILITY | BULLETIN, PARAMETER, XMB |  | OR PROBLEM NTRT BY DIVISION
+21. | ORQQPL PROV FILTER LIST | READ | - |  | 
+22. | ORQQPL PROVIDER LIST | READ | - |  | 
+23. | ORQQPL SAVEVIEW | __CHANGE__ | PARAMETER | 200 | ORCH CONTEXT PROBLEMS
+24. | ORQQPL USER PROB CATS | READ | REENTRANCY | 125.1, 200 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+25. | ORQQPX GET DEF LOCATIONS | READ | PARAMETER |  | ORQQPX DEFAULT LOCATIONS
+26. | ORQQPX GET FOLDERS | READ | PARAMETER |  | ORQQPX REMINDER FOLDERS
+27. | ORQQPX NEW COVER SHEET ACTIVE | READ | IS-A, PARAMETER |  | ORQQPX NEW REMINDER PARAMS
+28. | ORQQPX NEW COVER SHEET REMS | READ | PARAMETER |  | ORQQPX SEARCH ITEMS
+29. | ORQQPX NEW REMINDERS ACTIVE | READ | IS-A, PARAMETER |  | PXRM GUI REMINDERS ACTIVE
+30. | ORQQPX REM INSERT AT CURSOR | READ | PARAMETER |  | ORQQPX REMINDER TEXT AT CURSOR
+31. | ORQQPX SET FOLDERS | __CHANGE__ | PARAMETER |  | ORQQPX REMINDER FOLDERS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+32. | ORQQPXRM GET WH REPORT TEXT | READ | - | 790.1 | 
+33. | ORQQPXRM PROGRESS NOTE HEADER | READ | LOCATION |  | PXRM PROGRESS NOTE HEADERS
+34. | ORQQPXRM REMINDER CATEGORIES | READ | LOCATION |  | PXRM CPRS LOOKUP CATEGORIES
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+35. | ORQQVI2 VITALS VALIDATE | UTILITY | EXTERNAL I/F, HARD CODED, IS-A |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+36. | ORWCH LDFONT | READ | PARAMETER |  | ORWCH FONT SIZE
+37. | ORWCH LOADALL | READ | PARAMETER |  | ORWCH BOUNDS, ORWCH WIDTHS, ORWCH COLUMNS
+38. | ORWCH LOADSIZ | READ | PARAMETER |  | ORWCH BOUNDS
+39. | ORWCH SAVEALL | __CHANGE__ | PARAMETER |  | ORWCH BOUNDS, ORWCH WIDTHS, ORWCH COLUMNS
+40. | ORWCH SAVECOL | __CHANGE__ | PARAMETER |  | ORWCH COLUMNS REPORTS
+41. | ORWCH SAVESIZ | __CHANGE__ | PARAMETER |  | ORWCH BOUNDS
+42. | ORWCH SAVFONT | __CHANGE__ | PARAMETER |  | ORWCH FONT SIZE
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+43. | ORWCOM ORDEROBJ | READ | PARAMETER |  | ORWCOM PATIENT SELECTED
+44. | ORWCOM PTOBJ | READ | PARAMETER |  | ORWCOM PATIENT SELECTED
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+45. | ORWD KEY | READ | XUSEC |  | 
+46. | ORWD PROVKEY | READ | XUSEC |  | 
+47. | ORWD SAVE | __CHANGE__ | - |  | 
+48. | ORWD SAVEACT | __CHANGE__ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+49. | ORWDAL32 CLINUSER | READ | IS-A, PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+50. | ORWDBA2 ADDPDL | __CHANGE__ | - | 200 | 
+51. | ORWDBA2 DELPDL | __CHANGE__ | - |  | 
+52. | ORWDBA2 GETPDL | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+53. | ORWDBA4 GETBAUSR | READ | PARAMETER |  | OR BILLING AWARENESS BY USER
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+54. | ORWDBA7 ISWITCH | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+55. | ORWDCSLT LOOK200 | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+56. | ORWDLR32 IC DEFAULT | READ | LOCATION | 69.9 | 
+57. | ORWDLR32 IMMED COLLECT | READ | LOCATION, UNSTRUCTURED READ |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+58. | ORWDLR33 LC TO WC | READ | LOCATION, PARAMETER |  | ORWLR LC CHANGED TO WC
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+59. | ORWDPS1 FAILDEA | UTILITY | FMUTILITY, IS-A | 101.43 | 
+60. | ORWDPS1 IVDEA | READ | - | 200, 101.43 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+61. | ORWDPS32 AUTH | READ | PARAMETER |  | OR OREMAS MED ORDERS
+62. | ORWDPS32 AUTHNVA | READ | PARAMETER |  | OR OREMAS NON-VA MED ORDERS
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+63. | ORWDRA32 APPROVAL | READ | QUERY |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+64. | ORWDXM1 SVRPC | READ | IS-A, PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+65. | ORWDXVB STATALOW | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+66. | ORWGN AUTHUSR | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+67. | ORWGRPC ALLVIEWS | READ | - |  | 
+68. | ORWGRPC DELVIEWS | __CHANGE__ | PARAMETER |  | 
+69. | ORWGRPC PUBLIC | READ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+70. | ORWLRR ATG | READ | DUZ TO K/META | 60, 69.2, 68 | 
+71. | ORWLRR TG | READ | - |  | 
+72. | ORWLRR USERS | READ | QUERY | 68 | 
+73. | ORWLRR UTGA | READ | QUERY |  | 
+74. | ORWLRR UTGD | READ | QUERY |  | 
+75. | ORWLRR UTGR | READ | QUERY |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+76. | ORWNSS NSSMSG | READ | PARAMETER |  | ORWIM NSS MESSAGE
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+77. | ORWOR PKIUSE | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+78. | ORWOR1 GETDEA | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+79. | ORWPCE ACTIVE PROV | READ | IS-A |  | 
+80. | ORWPCE ALWAYS CHECKOUT | READ | IS-A, PARAMETER |  | ORWPCE DISABLE AUTO CHECKOUT
+81. | ORWPCE ANYTIME | READ | PARAMETER |  | ORWPCE ANYTIME ENCOUNTERS
+82. | ORWPCE ASKPCE | READ | PARAMETER |  | ORWPCE ASK ENCOUNTER UPDATE
+83. | ORWPCE AUTO VISIT TYPE SELECT | READ | IS-A, PARAMETER |  | 
+84. | ORWPCE FORCE | READ | LOCATION, PARAMETER |  | 
+85. | ORWPCE GET EXCLUDED | READ | PARAMETER |  | 
+86. | ORWPCE MH TEST AUTHORIZED | READ | PARAMETER |  | 
+87. | ORWPCE MHTESTOK | READ | IS-A, PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+88. | ORWPT DFLTSRC | READ | PARAMETER |  | ORLP DEFAULT LIST SOURCE
+89. | ORWPT SAVDFLT | __CHANGE__ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+90. | ORWRP2 SAVLKUP | __CHANGE__ | PARAMETER |  | ORWRP ADHOC LOOKUP
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+91. | ORWSR SAVE SURG CONTEXT | __CHANGE__ | PARAMETER |  | ORCH CONTEXT SURGERY
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+92. | ORWTIU CANLINK | READ | - |  | 
+93. | ORWTIU GET DCSUMM CONTEXT | READ | PARAMETER |  | ORCH CONTEXT SUMMRIES
+94. | ORWTIU GET TIU CONTEXT | READ | PARAMETER |  | ORCH CONTEXT NOTES
+95. | ORWTIU SAVE DCSUMM CONTEXT | __CHANGE__ | PARAMETER |  | ORCH CONTEXT SUMMRIES
+96. | ORWTIU SAVE TIU CONTEXT | __CHANGE__ | PARAMETER |  | ORCH CONTEXT NOTES
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+97. | ORWTPD ACTDF | __CHANGE__ | PARAMETER |  | 
+98. | ORWTPD DELDFLT | __CHANGE__ | PARAMETER |  | 
+99. | ORWTPD GETDFLT | READ | PARAMETER |  | ORWRP TIME/OCC LIMITS ALL
+100. | ORWTPD PUTOCM | __CHANGE__ | PARAMETER |  | 
+101. | ORWTPD SUDF | __CHANGE__ | PARAMETER |  | 
+102. | ORWTPD SUINDV | __CHANGE__ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+103. | ORWTPD1 GETCSRNG | READ | PARAMETER |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
+104. | ORWTPD1 GETEDATS | READ | PARAMETER |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
+105. | ORWTPD1 PUTCSRNG | __CHANGE__ | PARAMETER |  | 
+106. | ORWTPD1 PUTEDATS | __CHANGE__ | PARAMETER |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+107. | ORWTPP ADDLIST | READ | - | 100.21 | 
+108. | ORWTPP CHKSURR | READ | PARAMETER |  | 
+109. | ORWTPP CLDAYS | READ | PARAMETER |  | 
+110. | ORWTPP CLEARNOT | __CHANGE__ | - | 8992.1 | 
+111. | ORWTPP CLRANGE | READ | PARAMETER |  | 
+112. | ORWTPP CSARNG | READ | PARAMETER |  | 
+113. | ORWTPP CSLAB | READ | PARAMETER |  | 
+114. | ORWTPP DELLIST | READ | - | 100.21 | 
+115. | ORWTPP GETCOMBO | READ | - |  | 
+116. | ORWTPP GETCOS | READ | - |  | 
+117. | ORWTPP GETDCOS | READ | - |  | 
+118. | ORWTPP GETIMG | READ | - |  | 
+119. | ORWTPP GETNOT | READ | - |  | 
+120. | ORWTPP GETNOTO | READ | - |  | 
+121. | ORWTPP GETOC | READ | - |  | 
+122. | ORWTPP GETOTHER | READ | - |  | 
+123. | ORWTPP GETREM | READ | - |  | 
+124. | ORWTPP GETSUB | READ | - |  | 
+125. | ORWTPP GETSURR | READ | - |  | 
+126. | ORWTPP GETTD | READ | - |  | 
+127. | ORWTPP GETTU | READ | - |  | 
+128. | ORWTPP LSDEF | READ | - |  | 
+129. | ORWTPP NEWLIST | READ | - |  | 
+130. | ORWTPP PLISTS | READ | - | 100.21 | 
+131. | ORWTPP PLTEAMS | READ | - | 100.21 | 
+132. | ORWTPP REMLIST | __CHANGE__ | - |  | 
+133. | ORWTPP SAVECD | __CHANGE__ | - |  | 
+134. | ORWTPP SAVECS | __CHANGE__ | - |  | 
+135. | ORWTPP SAVELIST | __CHANGE__ | - |  | 
+136. | ORWTPP SAVENOT | __CHANGE__ | - |  | 
+137. | ORWTPP SAVENOTO | __CHANGE__ | - |  | 
+138. | ORWTPP SAVEOC | __CHANGE__ | - |  | 
+139. | ORWTPP SAVEPLD | __CHANGE__ | - |  | 
+140. | ORWTPP SAVESURR | __CHANGE__ | - |  | 
+141. | ORWTPP SAVET | __CHANGE__ | - |  | 
+142. | ORWTPP SETCOMBO | UTILITY | - |  | 
+143. | ORWTPP SETDCOS | UTILITY | - |  | 
+144. | ORWTPP SETIMG | UTILITY | - |  | 
+145. | ORWTPP SETOTHER | UTILITY | - |  | 
+146. | ORWTPP SETREM | UTILITY | - |  | 
+147. | ORWTPP SETSUB | UTILITY | - |  | 
+148. | ORWTPP SORTDEF | READ | - |  | 
+149. | ORWTPP TEAMS | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+150. | ORWTPT GETTEAM | READ | - | 100.21 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+151. | ORWU DEFAULT DIVISION | READ | LOCATION |  | 
+152. | ORWU HAS OPTION ACCESS | READ | - |  | 
+153. | ORWU HASKEY | READ | - |  | 
+154. | ORWU NEWPERS | READ | - |  | 
+155. | ORWU PARAM | READ | PARAMETER |  | 
+156. | ORWU PARAMS | READ | PARAMETER |  | 
+157. | ORWU TOOLMENU | READ | PARAMETER |  | 
+158. | ORWU USERINFO | READ | - |  | 
+159. | ORWU VALIDSIG | UTILITY | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+160. | ORWU1 NAMECVT | READ | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+161. | ORWU16 NEWPERS | READ | QUERY |  | 
+162. | ORWU16 USERINFO | READ | - |  | 
+163. | ORWU16 VALIDSIG | UTILITY | - |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+164. | TIU AUTHORIZATION | READ | IS-A |  | 
+165. | TIU CAN CHANGE COSIGNER? | READ | IS-A |  | 
+166. | TIU DIV AND CLASS INFO | READ | - | 200, 8930 | 
+167. | TIU FIELD CAN EDIT | READ | IS-A |  | 
+168. | TIU GET DEFAULT PROVIDER | READ | - |  | 
+169. | TIU GET DS TITLES | READ | DUZ TO K/META | 8925.98, 8925.1 | 
+170. | TIU GET LIST OF OBJECTS | READ | - |  | 
+171. | TIU GET PERSONAL PREFERENCES | READ | - |  | 
+172. | TIU GET PN TITLES | READ | DUZ TO K/META | 8925.98, 8925.1 | 
+173. | TIU IS USER A PROVIDER? | READ | IS-A |  | 
+174. | TIU IS USER A USR PROVIDER | READ | IS-A |  | 
+175. | TIU LOAD BOILERPLATE TEXT | READ | ASSEMBLY | 8925.1 | 
+176. | TIU PERSONAL TITLE LIST | READ | DUZ TO K/META | 8925.1 | 
+177. | TIU REQUIRES COSIGNATURE | READ | IS-A |  | 
+178. | TIU TEMPLATE ACCESS LEVEL | READ | PARAMETER |  | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
+179. | TIU USER INACTIVE? | READ | IS-A |  | 
+
+
+#### Other (100)
+
+Category | Number
+--- | ---
+CHANGE | 6 (6%)
+READ | 53 (53%)
+UTILITY | 41 (41%)
 
 \# | Name | Category | Tags
 --- | --- | --- | ---
@@ -1148,7 +1171,7 @@ Other NC RPCs: 100 (18%)
 3. | __GMV GET CURRENT TIME__ | UTILITY | ALLJS, HARD CODED, RPCLOCKER |  | 
 4. | GMV LOCATION SELECT | UTILITY | DYNAMIC EXECUTE |  | 
 5. | GMV MANAGER | UTILITY | DYNAMIC EXECUTE, SECURITY HOLE |  | 
-6. | GMV PARAMETER | CHANGE | PARAMETER |  | 
+6. | GMV PARAMETER | __CHANGE__ | PARAMETER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 7. | ORECS01 GETDIV | READ | GLOBAL |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -1168,7 +1191,7 @@ Other NC RPCs: 100 (18%)
 16. | ORQQPL CLIN SRCH | READ | LOCATION |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 17. | ORQQPX GET HIST LOCATIONS | READ | LOCATION | 9999999.06 | 
-18. | ORQQPX SAVELVL | CHANGE | PARAMETER |  | ORQQPX COVER SHEET REM CLASSES, ORQQPX COVER SHEET REMINDERS
+18. | ORQQPX SAVELVL | __CHANGE__ | PARAMETER |  | ORQQPX COVER SHEET REM CLASSES, ORQQPX COVER SHEET REMINDERS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 19. | ORQQVI2 VITALS RATE CHECK | UTILITY | HARD CODED, IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -1221,9 +1244,9 @@ Other NC RPCs: 100 (18%)
 49. | ORWGRPC GETPREF | UTILITY | FMUTILITY, PARAMETER |  | 
 50. | ORWGRPC GETSIZE | UTILITY | FMUTILITY, PARAMETER |  | 
 51. | ORWGRPC GETVIEWS | UTILITY | FMUTILITY, PARAMETER |  | 
-52. | ORWGRPC SETPREF | CHANGE | PARAMETER |  | 
-53. | ORWGRPC SETSIZE | CHANGE | PARAMETER |  | 
-54. | ORWGRPC SETVIEWS | CHANGE | PARAMETER |  | 
+52. | ORWGRPC SETPREF | __CHANGE__ | PARAMETER |  | 
+53. | ORWGRPC SETSIZE | __CHANGE__ | PARAMETER |  | 
+54. | ORWGRPC SETVIEWS | __CHANGE__ | PARAMETER |  | 
 55. | ORWGRPC TESTING | UTILITY | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 56. | ORWLEX GETFREQ | UTILITY | HARD CODED |  | 
@@ -1237,7 +1260,7 @@ Other NC RPCs: 100 (18%)
 61. | ORWOR PKISITE | READ | LOCATION |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 62. | ORWORB GETSORT | READ | PARAMETER |  | 
-63. | ORWORB SETSORT | CHANGE | PARAMETER |  | 
+63. | ORWORB SETSORT | __CHANGE__ | PARAMETER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 64. | ORWPCE GAFURL | READ | ALLJS, HARD CODED |  | 
 65. | ORWPCE GETSVC | UTILITY | LOCATION |  | 
@@ -1290,6 +1313,8 @@ Other NC RPCs: 100 (18%)
 98. | TIU FIELD DOLMTEXT | UTILITY | FMUTILITY |  | 
 99. | TIU FIELD LIST ADD | UTILITY | REENTRANCY |  | 
 100. | TIU GET SITE PARAMETERS | READ | LOCATION |  | 
+
+
 
 
 
