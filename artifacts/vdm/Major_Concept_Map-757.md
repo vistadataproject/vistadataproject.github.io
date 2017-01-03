@@ -1,3 +1,7 @@
+---
+layout: default
+title: VDM documentation
+---
 
 ## [VDM](TableOfContent.md) --> Major_Concept_Map-757 
 

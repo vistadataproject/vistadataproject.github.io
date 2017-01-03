@@ -1,3 +1,7 @@
+---
+layout: default
+title: MVDM documentation
+---
 
 ## [MVDM](TableOfContent.md) --> Vital 
 

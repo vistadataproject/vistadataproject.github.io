@@ -1,3 +1,7 @@
+---
+layout: default
+title: VDM documentation
+---
 
 ## [VDM](TableOfContent.md) --> Ndc_upn-50_67 
 

@@ -1,3 +1,7 @@
+---
+layout: default
+title: VDM documentation
+---
 
 ## [VDM](TableOfContent.md) --> Pbm_Patient_Demographics-59_9 
 

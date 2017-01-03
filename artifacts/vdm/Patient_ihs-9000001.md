@@ -1,3 +1,7 @@
+---
+layout: default
+title: VDM documentation
+---
 
 ## [VDM](TableOfContent.md) --> Patient_ihs-9000001 
 

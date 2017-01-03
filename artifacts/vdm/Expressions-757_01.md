@@ -1,3 +1,7 @@
+---
+layout: default
+title: VDM documentation
+---
 
 ## [VDM](TableOfContent.md) --> Expressions-757_01 
 
