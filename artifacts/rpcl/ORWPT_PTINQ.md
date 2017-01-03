@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORWPT PTINQ 
+## [RPCL](TableOfContent.md) --> ORWPT PTINQ 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | GLOBAL ARRAY
  returnDescription | Returns formatted patient inquiry text for display in GUI environment.
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

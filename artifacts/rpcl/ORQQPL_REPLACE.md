@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL REPLACE 
+## [RPCL](TableOfContent.md) --> ORQQPL REPLACE 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

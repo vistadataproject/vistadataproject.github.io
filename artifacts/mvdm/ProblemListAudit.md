@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> ProblemListAudit 
+## [MVDM](TableOfContent.md) --> ProblemListAudit 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 125_8
  fromVDMListPerPatient | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

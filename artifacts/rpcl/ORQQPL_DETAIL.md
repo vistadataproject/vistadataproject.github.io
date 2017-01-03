@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL DETAIL 
+## [RPCL](TableOfContent.md) --> ORQQPL DETAIL 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | ARRAY
  returnDescription | String of detailed problem information delimited by \^\.  String includes:\\r
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

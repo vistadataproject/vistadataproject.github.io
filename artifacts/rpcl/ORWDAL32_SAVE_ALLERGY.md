@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORWDAL32 SAVE ALLERGY 
+## [RPCL](TableOfContent.md) --> ORWDAL32 SAVE ALLERGY 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
@@ -23,14 +23,14 @@
 | ORDFN | REFERENCE | true | Patient IEN | 25 |  | 
 | OREDITED | LIST | true | ARRAY OF VALUE STRINGS |  | [List Member](#for-id-oredited) | 
 
-###List Member Parameters
+### List Member Parameters
 
 
-####For ID OREDITED
+#### For ID OREDITED
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
-| GMRAGNT | REFERENCE | [{id:GMR_Allergies-120_82},{id:VA_Generic-50_6},{id:Drug-50},{id:Drug_Ingredients-50_416},{id:VA_Drug_Class-50_605}] | GNT - combination of reactant ^ gmr_allergy ex/ PENICILLIN^16;PSNDF(50.6, | reactant | \GMRAGNT\: \APPLES^208;GMRD(120.82,\ | 
+| GMRAGNT | REFERENCE | GMR_Allergies-120_82 VA_Generic-50_6 Drug-50 Drug_Ingredients-50_416 VA_Drug_Class-50_605  | GNT - combination of reactant ^ gmr_allergy ex/ PENICILLIN^16;PSNDF(50.6, | reactant | \GMRAGNT\: \APPLES^208;GMRD(120.82,\ | 
 | GMRANATR | ENUMERATION | <dl><dt>A</dt><dd>ALLERGY</dd><dt>P</dt><dd>PHARMACOLOGIC</dd><dt>U</dt><dd>UNKNOWN</dd></dl> | Mechanism | mechanism | \GMRANATR\: \A^Allergy\ | 
 | GMRATYPE | ENUMERATION | <dl><dt>D</dt><dd>DRUG</dd><dt>DF</dt><dd>DRUG, FOOD</dd><dt>F</dt><dd>FOOD</dd><dt>O</dt><dd>OTHER</dd></dl> | Allergy Type | allergyType | \GMRATYPE\: \F^Food\ | 
 | GMRAORIG | REFERENCE |  | Entered By |  | \GMRAORIG\: \57\ | 

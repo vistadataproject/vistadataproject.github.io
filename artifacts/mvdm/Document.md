@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Document 
+## [MVDM](TableOfContent.md) --> Document 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 8925 FILTER(!bound(1611))
  fromVDMListPerPatient | SELECT 8925 FILTER(.02=$PID&&!bound(1611))
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -37,14 +37,14 @@
 | isRemoved |  | BOOLEAN | Mapper |  |  |  | 
 | removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
 
-##SigningDetails 
+## SigningDetails 
 
  property | value 
 --- | --- 
  id | SigningDetails
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -54,14 +54,14 @@
 | signatureBlockTitle | Signature Block Title | STRING | signature_block_title |  |  |  | 
 | signatureMode | Signature Mode | ENUMERATION | signature_mode |  | <dl><dt>electronic</dt><dd>0</dd><dt>chart</dt><dd>1</dd></dl> |  | 
 
-##RemovalDetails 
+## RemovalDetails 
 
  property | value 
 --- | --- 
  id | RemovalDetails
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

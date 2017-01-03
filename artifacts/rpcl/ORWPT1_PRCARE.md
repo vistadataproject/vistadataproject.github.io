@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORWPT1 PRCARE 
+## [RPCL](TableOfContent.md) --> ORWPT1 PRCARE 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | Return primary care, inpatient, and mental health summary information.
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

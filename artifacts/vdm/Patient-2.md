@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Patient-2 
+## [VDM](TableOfContent.md) --> Patient-2 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | 
  description | The PATIENT file contains all the patients followed by the medical center/\rOutpatient clinic.  At a minimum each patient entry must have a NAME, DATE\rOF BIRTH and SOCIAL SECURITY NUMBER.  In order to add a new patient to the\rPATIENT file the user must also indicate whether or not the patient is\rrequesting to receive care as a VETERAN of the U.S. Armed Forces and\rspecify the TYPE of patient being added to the system.  For the most\rpart the information contained in this file is demographic in nature,\ri.e., address, employment, service history, etc., however data\rconcerning admissions, appointments,etc., is also stored in this file.\rThe ADMISSION sub-field is scheduled to be moved into the new PATIENT\rMOVEMENT file by the end of calendar year 1989.  Care should be used\rwhen removing a patient from the PATIENT file since virtually all\rother DHCP modules do utilize data from this file.  Of the many fields\rin the file you will note that many are preceeded by an asterisk.\rThose fields are scheduled to be removed from the file due to either\rlack of use or replacement by another field/file in the next release.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -22,7 +22,7 @@
 | occupation | .07 | Occupation | If applicable, enter this applicant's current occupation\r[1-30 characters]. | STRING |  |  |  | 
 | religious_preference | .08 | Religious Preference | Select from the available listing the religious preference of this\rapplicant. | POINTER |  |  | {id:Religion-13} | 
 | duplicate_status | .081 | Duplicate Status | This field is currently not being utilized.  It will be active when\rPatient Merge/Purge options are available to the user.  Duplicate\rStatus field will be defined at that time.\r| | ENUMERATION |  |  | <dl><dt>1</dt><dd>CHECK DUPLICATE RECORDS FILE</dd><dt>0</dt><dd>NO UNRESOLVED DUPLICATES</dd></dl> | 
-| patient_merged_to | .082 | Patient Merged To | This field is currently not being utilized.  It will be active when\rPatient Merge/Purge options are available to the user.  Patient Merged\rTo: field will be defined at that time.\r| | POINTER |  |  | {id:Patient-2} | 
+| patient_merged_to | .082 | Patient Merged To | This field is currently not being utilized.  It will be active when\rPatient Merge/Purge options are available to the user.  Patient Merged\rTo: field will be defined at that time.\r| | POINTER |  |  | [Patient-2](Patient-2.md) | 
 | check_for_duplicate | .083 | Check For Duplicate | This field is currently not being utilized.  It will be active when\rPatient Merge/Purge options are available to the user.  Check for\rDuplicate field will be defined at that time.\r| | BOOLEAN |  |  | {true:1} | 
 | social_security_number | .09 | Social Security Number | Answer with the individual's social security number.  Answer must be 9 \rnumbers in length. The SSN will be sent to the SSA for verification.  \rThis will be displayed next to the SSN.  Once an SSN has received a\rstatus of Verified, it is locked from user updating and a \VERIFIED\\rwill be displayed by the SSN field.  Only the Identity Management Data\rQUality Team are able to change a beneficiary's (veteran/non veteran)\rSSN.  If an Invalid per SSA status is received for the SSN, then an\r\INVALID\ will appear next to the invalid SSN of the individual.\rFacilities should make every effort to obtain the accurate SSN from the\rindividual for any invalid or pseudo SSN entry.\r \rIf a valid SSN is not known, then a \P\ will be entered at the SSN\rprompt for the system to automatically assign a Pseudo-SSN.  If a\rPseudo SSN is entered, a Reason for entering it will be required. | STRING |  | INDEXED |  | 
 | pseudo_ssn_reason | .0906 | Pseudo Ssn Reason | This field is used to document the reason the individual was assigned a \rpseudo SSN.  Based on your selection, the Pseudo SSN Report (Patient) \roption located in the Registration Menu can provide you a current \rreport of the reasons entered at this prompt.  The following reasons\rare available for selection:\r \rRefused to Provide - use this reason when the individual was asked for \rhis/her SSN and refused to provide the number.\r \rSSN Unknown/Follow-up required - use this reason when the individual\ris not available to ask/answer the request for SSN.  The facility\rshould initiate Follow-up activity to obtain the SSN.\r \rNo SSN Assigned - use this reason when the individual has not been\rassigned an SSN. This generally applies to spouse or dependents of\rveterans who are not US citizens and infrequently, non-citizen\rbeneficiaries. | ENUMERATION |  |  | <dl><dt>N</dt><dd>NO SSN ASSIGNED</dd><dt>S</dt><dd>SSN UNKNOWN/FOLLOW-UP REQUIRED</dd><dt>R</dt><dd>REFUSED TO PROVIDE</dd></dl> | 
@@ -30,16 +30,16 @@
 | remarks | .091 | Remarks | If so desired, you may enter a short remark about this applicant between\r3-60 characters.  The remark entered should be significant and tact should\rbe exercised since this field is viewable to virtually all other users who\rhave the ability to 'call up' a patient for any purpose. | STRING |  |  |  | 
 | place_of_birth_city | .092 | Place Of Birth [City] | Enter the city in which this applicant was born (or foreign\rcountry if born outside the U.S.) [2-20 characters]. | STRING |  |  |  | 
 | place_of_birth_state | .093 | Place Of Birth [State] | If the applicant was born within the U.S. select from the\ravailable listing the state in which s/he was born. | POINTER |  |  | {id:State-5} | 
-| who_entered_patient | .096 | Who Entered Patient | The name of the user who first entered this applicant into the patient\rfile. | POINTER |  |  | {id:New_Person-200} | 
+| who_entered_patient | .096 | Who Entered Patient | The name of the user who first entered this applicant into the patient\rfile. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_entered_into_file | .097 | Date Entered Into File | This field stores the date this patient was initially stored into the\rPATIENT file.  This is filled in automatically once a patient is\rsuccessfully added to the database. | DATE-TIME |  |  |  | 
 | how_was_patient_entered | .098 | How Was Patient Entered? | How was the patient entered into the system. | ENUMERATION |  |  | <dl><dt>1</dt><dd>10-10T REGISTRATION</dd></dl> | 
 | ward_location | .1 | Ward Location | The ward location on which this patient is currently residing if an \rinpatient [2-30 characters]. | STRING |  | INDEXED |  | 
 | roombed | .101 | Room-Bed | If desired, for this inpatient, enter the room and bed indicator to which\rs/he is assigned in 'ROOM-BED' format. | STRING |  | INDEXED |  | 
-| current_movement | .102 | Current Movement | This field contains the internal entry number of the PATIENT MOVEMENT\rfile denoting the most recent movement for an inpatient.  This field\ris only stored for current inpatients.  It must NOT be edited as this\rcould affect the integrity of many options within MAS and other packages.\rWhen displaying this field, the date/time of the most recent movement\rwill display. | POINTER |  |  | {id:Patient_Movement-405} | 
+| current_movement | .102 | Current Movement | This field contains the internal entry number of the PATIENT MOVEMENT\rfile denoting the most recent movement for an inpatient.  This field\ris only stored for current inpatients.  It must NOT be edited as this\rcould affect the integrity of many options within MAS and other packages.\rWhen displaying this field, the date/time of the most recent movement\rwill display. | POINTER |  |  | [Patient_Movement-405](Patient_Movement-405.md) | 
 | treating_specialty | .103 | Treating Specialty | From the available listing choose the treating specialty to which this\rinpatient is currently assigned. | POINTER |  | INDEXED | {id:Facility_Treating_Specialty-45_7} | 
-| provider | .104 | Provider | From the available listing select the provider who is currently treating\rthis patient. | POINTER |  | INDEXED | {id:New_Person-200} | 
-| attending_physician | .1041 | Attending Physician | This field contains the attending physician currently responsible for the\rcare of this patient.  This field is maintained automatically for all\rinpatients and must not be edited.  Once a patient is discharged, the\rdata in this field is removed. | POINTER |  | INDEXED | {id:New_Person-200} | 
-| current_admission | .105 | Current Admission | This field contains the internal entry number of the PATIENT MOVEMENT file\rdenoting the current admission for an inpatient.  This field is only\rstored for current inpatients.  It must NOT be edited as this could affect\rthe integrity of many options within MAS and other DHCP packages.  When\rdisplaying this field, the date/time of the current admission will be\rdisplayed. | POINTER |  | INDEXED | {id:Patient_Movement-405} | 
+| provider | .104 | Provider | From the available listing select the provider who is currently treating\rthis patient. | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
+| attending_physician | .1041 | Attending Physician | This field contains the attending physician currently responsible for the\rcare of this patient.  This field is maintained automatically for all\rinpatients and must not be edited.  Once a patient is discharged, the\rdata in this field is removed. | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
+| current_admission | .105 | Current Admission | This field contains the internal entry number of the PATIENT MOVEMENT file\rdenoting the current admission for an inpatient.  This field is only\rstored for current inpatients.  It must NOT be edited as this could affect\rthe integrity of many options within MAS and other DHCP packages.  When\rdisplaying this field, the date/time of the current admission will be\rdisplayed. | POINTER |  | INDEXED | [Patient_Movement-405](Patient_Movement-405.md) | 
 | last_dmms_episode_number | .106 | Last Dmms Episode Number | This field was added at the request of the DMMS package developed at the\rBirmingham ISC.  It will be utilized in a future release of that package. | NUMERIC |  |  |  | 
 | lodger_ward_location | .107 | Lodger Ward Location | The ward on which the patient currently resides if the patient is a lodger. | STRING |  |  |  | 
 | current_room | .108 | Current Room | This field contains a pointer to the ROOM-BED file denoting the current\rroom-bed in which this inpatient resides.  This field is filled in only\rfor inpatients.  It must NOT be edited as editing could adversely affect\rthe operation of the MAS package as well as other DHCP packages.  This\rfield is filled in automatically by the module. | POINTER |  |  | {id:RoomBed-405_4} | 
@@ -57,14 +57,14 @@
 | country | .1173 | Country | Enter the country where the patient's permanent address is located.\r \rIf entering an Army/Air Force Post Office (APO) or a Fleet Post Office \r(FPO) address select United States as the country. | POINTER |  |  | {id:Country_Code-779_004} | 
 | address_change_dt_tm | .118 | Address Change Dt/Tm | This field will hold the date and time of the last Address Update. | DATE-TIME |  |  |  | 
 | address_change_source | .119 | Address Change Source | This field will hold the source of the Last address change. | ENUMERATION |  |  | <dl><dt>USPS</dt><dd>USPS</dd><dt>VOA</dt><dd>VOA</dd><dt>VAMC</dt><dd>VAMC</dd><dt>HBSC</dt><dd>HBSC</dd><dt>BVA</dt><dd>BVA</dd><dt>LACS</dt><dd>LACS</dd><dt>HEC</dt><dd>HEC</dd><dt>NCOA</dt><dd>NCOA</dd><dt>VAINS</dt><dd>VAINS</dd></dl> | 
-| address_change_site | .12 | Address Change Site | This field will hold the Site that last changed this patient's address.  \rThis field is only populated when the Address Source is listed as VAMC. | POINTER |  |  | {id:Institution-4} | 
+| address_change_site | .12 | Address Change Site | This field will hold the Site that last changed this patient's address.  \rThis field is only populated when the Address Source is listed as VAMC. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | bad_address_indicator | .121 | Bad Address Indicator | The Bad Address Indicator field applies to the address at which the patient\rresides.  This field should be set as follows (if applicable):\r \r    \UNDELIVERABLE\ - Bad Address based on returned mail.\r    \HOMELESS\ - Patient is known to be homeless.\r    \OTHER\ - Other Bad Address Reason\r \rSetting this field will prevent a Bad Address from being shared with HEC\rand other VAMC facilities.\r \r \rOnce the Bad Address Indicator is set, incoming \newer\ addresses will\rautomatically remove the Bad Address Indicator, and allow the \updated\\raddress to be transmitted to HEC and other VAMC facilities. To manually\rremove the Bad Address Indicator enter the \@\ symbol. | ENUMERATION |  |  | <dl><dt>4</dt><dd>ADDRESS NOT FOUND</dd><dt>3</dt><dd>OTHER</dd><dt>1</dt><dd>UNDELIVERABLE</dd><dt>2</dt><dd>HOMELESS</dd></dl> | 
 | temporary_address_active | .12105 | Temporary Address Active? | Enter 'Y' if you wish to enter a temporary address for this applicant at\rthis time, or 'N' if not.  A 'NO' response will cause the temporary\raddress 'Start Date' and 'End Date' fields to be automatically deleted\rwhile all other temporary address data will remain on file for future\ruse. | BOOLEAN |  |  | {false:N,true:Y} | 
 | temporary_street_line_1 | .1211 | Temporary Street [Line 1] | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the first line of the temporary street address for this\rapplicant [2-30 characters] otherwise nothing may be entered.  This\rfield cannot be deleted as long as the need for a temporary address\ris indicated. | STRING |  |  |  | 
 | temporary_address_county | .12111 | Temporary Address County | If a state is entered for the temporary residence, enter the county in\rwhich that residence resides.  If a state does not exist for the temporary\raddress, a county can not be entered. | NUMERIC |  |  |  | 
 | temporary_zip4 | .12112 | Temporary Zip+4 | Answer with either the 5 digit format (e.g. 12345) or the nine digit\rformat (e.g. 12345-6789 or 123456789). | STRING |  |  |  | 
 | temporary_address_change_dt_tm | .12113 | Temporary Address Change Dt/Tm | This field will hold the date and time of the last Temporary Address\rUpdate. | DATE-TIME |  |  |  | 
-| temporary_address_change_site | .12114 | Temporary Address Change Site | This field will hold the Site that last changed this patient's temporary\raddress. | POINTER |  |  | {id:Institution-4} | 
+| temporary_address_change_site | .12114 | Temporary Address Change Site | This field will hold the Site that last changed this patient's temporary\raddress. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | temporary_street_line_2 | .1212 | Temporary Street [Line 2] | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the second line of the temporary street address [2-30\rcharacters], if necessary, otherwise nothing may be entered.  This\rfield may not be deleted as long as the need for a temporary\raddress is indicated. | STRING |  |  |  | 
 | temporary_street_line_3 | .1213 | Temporary Street [Line 3] | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the third line of the temporary street address [2-30\rcharacters], if necessary, otherwise nothing may be entered.\rThis field may not be deleted as long as the need for a temporary\raddress is indicated. | STRING |  |  |  | 
 | temporary_city | .1214 | Temporary City | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the city in which the temporary address lies [2-30 characters],\rotherwise nothing may be entered.  This field may not be deleted as\rlong as the need for a temporary address is indicated. | STRING |  |  |  | 
@@ -73,29 +73,29 @@
 | temporary_address_start_date | .1217 | Temporary Address Start Date | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the date on which the applicant will commence being contacted\rat the temporary address indicated, otherwise nothing may be\rentered.  This field may not be deleted as long as the need for a\rtemporary address is indicated. | DATE-TIME |  |  |  | 
 | temporary_address_end_date | .1218 | Temporary Address End Date | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the date as of which the applicant will no longer be contacted\rat that temporary address, otherwise nothing may be entered.  This\rfield may not be deleted as long as the need for a temporary\raddress is indicated. | DATE-TIME |  |  |  | 
 | temporary_phone_number | .1219 | Temporary Phone Number | If the WANT TO ENTER A TEMPORARY ADDRESS prompt is answered YES\renter the telephone number at which the applicant can be\rcontacted [4-20 characters] during his/her absence from permanent\rresidence, otherwise nothing may be entered.  This field may not\rbe deleted as long as the need for a temporary address is indicated. | STRING |  |  |  | 
-| address_change_user | .122 | Address Change User | The name of the user who has changed this patient's primary address. | POINTER |  |  | {id:New_Person-200} | 
+| address_change_user | .122 | Address Change User | The name of the user who has changed this patient's primary address. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | temporary_address_province | .1221 | Temporary Address Province | Enter a Province if the patient has provided one for his/her foreign\raddress.  \r \rThe entry can be alphanumeric and up to 20 characters in length. | STRING |  |  |  | 
 | temporary_address_postal_code | .1222 | Temporary Address Postal Code | Enter with patient's postal code if the patient has provided one for\rhis/her foreign address.\r \rThe entry can be alphanumeric and up to 10 characters in length. | STRING |  |  |  | 
 | temporary_address_country | .1223 | Temporary Address Country | Enter the country where the patient's temporary address is located.\r \rIf entering an Army/Air Force Post Office (APO) or a Fleet Post Office \r(FPO) address select United States as the country. | POINTER |  |  | {id:Country_Code-779_004} | 
 | phone_number_residence | .131 | Phone Number [Residence] | Enter the telephone number [4-20 characters] to this applicant's\rplace of residence. | STRING |  | INDEXED |  | 
 | cellular_number_change_source | .1311 | Cellular Number Change Source | This field will hold the source of the last Cellular number\rchange. | ENUMERATION |  |  | <dl><dt>HBSC</dt><dd>HBSC</dd><dt>VAMC</dt><dd>VAMC</dd><dt>VOA</dt><dd>VOA</dd><dt>HEC</dt><dd>HEC</dd></dl> | 
-| cellular_number_change_site | .13111 | Cellular Number Change Site | This field will hold the site that last changed this\rpatient's Cellular number.  This field is only populated\rwhen the Cellular Number Change Source is listed as VAMC. | POINTER |  |  | {id:Institution-4} | 
+| cellular_number_change_site | .13111 | Cellular Number Change Site | This field will hold the site that last changed this\rpatient's Cellular number.  This field is only populated\rwhen the Cellular Number Change Source is listed as VAMC. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | pager_number_change_dt_tm | .1312 | Pager Number Change Dt/Tm | This field will contain the date and time of the last\rPager number update. | DATE-TIME |  |  |  | 
 | pager_number_change_source | .1313 | Pager Number Change Source | This field will hold the source of the last Pager number\rchange. | ENUMERATION |  |  | <dl><dt>HBSC</dt><dd>HBSC</dd><dt>VAMC</dt><dd>VAMC</dd><dt>VOA</dt><dd>VOA</dd><dt>HEC</dt><dd>HEC</dd></dl> | 
-| pager_number_change_site | .1314 | Pager Number Change Site | This field will hold the site that last changed this\rpatient's Pager number.  This field is only populated\rwhen the Pager Number Change Source is listed as VAMC. | POINTER |  |  | {id:Institution-4} | 
+| pager_number_change_site | .1314 | Pager Number Change Site | This field will hold the site that last changed this\rpatient's Pager number.  This field is only populated\rwhen the Pager Number Change Source is listed as VAMC. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | confidential_phone_number | .1315 | Confidential Phone Number | If the 'Confidential Address Active' prompt is answered\rYES, enter the telephone number of the confidential\raddress at which the patient is located [4-20 characters]. | STRING |  |  |  | 
 | email_address_indicator | .1316 | Email Address Indicator | This field indicates whether or not the Veteran has an Email address. | BOOLEAN |  |  | {true:Y,false:N} | 
 | email_address_indicator_dt_tm | .1317 | Email Address Indicator Dt/Tm | This field contains the date and time of the last Email Address Indicator response. | DATE-TIME |  |  |  | 
 | phone_number_work | .132 | Phone Number [Work] | Enter the office phone number [4-20 characters] where this applicant\rcan be reached while employed, if employed. | STRING |  |  |  | 
 | residence_number_change_dt_tm | .1321 | Residence Number Change Dt/Tm | This field will contain the date and time of\rthe last Residence phone number update. | DATE-TIME |  |  |  | 
 | residence_number_change_source | .1322 | Residence Number Change Source | This field will hold the source of the last\rResidence phone number change. | ENUMERATION |  |  | <dl><dt>HBSC</dt><dd>HBSC</dd><dt>VAMC</dt><dd>VAMC</dd><dt>VOA</dt><dd>VOA</dd><dt>HEC</dt><dd>HEC</dd></dl> | 
-| residence_number_change_site | .1323 | Residence Number Change Site | This field will hold the site that last changed\rthis patient's Residence phone number.  This\rfield is only populated when the Residence\rNumber Change Source is listed as VAMC. | POINTER |  |  | {id:Institution-4} | 
+| residence_number_change_site | .1323 | Residence Number Change Site | This field will hold the site that last changed\rthis patient's Residence phone number.  This\rfield is only populated when the Residence\rNumber Change Source is listed as VAMC. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | email_address | .133 | Email Address |  | STRING |  |  |  | 
 | phone_number_cellular | .134 | Phone Number [Cellular] | Enter the telephone number [4-20 characters] to the applicant's\rmobile phone. | STRING |  |  |  | 
 | pager_number | .135 | Pager Number | Enter the applicant's pager number [4-20 characters]. | STRING |  |  |  | 
 | email_address_change_dt_tm | .136 | Email Address Change Dt/Tm | This field will contain the date and time of the last\rEMAIL address update. | DATE-TIME |  |  |  | 
 | email_address_change_source | .137 | Email Address Change Source | This field will hold the source of the last EMAIL address change. | ENUMERATION |  |  | <dl><dt>HBSC</dt><dd>HBSC</dd><dt>VAMC</dt><dd>VAMC</dd><dt>VOA</dt><dd>VOA</dd><dt>HEC</dt><dd>HEC</dd></dl> | 
-| email_address_change_site | .138 | Email Address Change Site | This field will hold the site that last changed this\rpatient's EMAIL address.  This field is only populated\rwhen the EMAIL Address Source is listed as VAMC. | POINTER |  |  | {id:Institution-4} | 
+| email_address_change_site | .138 | Email Address Change Site | This field will hold the site that last changed this\rpatient's EMAIL address.  This field is only populated\rwhen the EMAIL Address Source is listed as VAMC. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | cellular_number_change_dt_tm | .139 | Cellular Number Change Dt/Tm | This field will contain the date and time of the last\rCellular number update. | DATE-TIME |  |  |  | 
 | current_means_test_status | .14 | Current Means Test Status | This field is computed by the system.  It contains the current\rmeans test status for a patient. | POINTER |  | INDEXED | {id:Means_Test_Status-408_32} | 
 | confidential_address_category | .141 | Confidential Address Category | This is a multiple valued field containing the confidential address\rcategories for this applicant.   | [OBJECT] |  |  | [Confidential_Address_Category-2_141](#confidential_address_category-2_141)  | 
@@ -103,7 +103,7 @@
 | confidential_street_line_1 | .1411 | Confidential Street [Line 1] | If the 'Confidential Address Active' prompt is answered YES, the\ruser will be prompted for the first line of the confidential street\raddress.  This field cannot be deleted as long as the need for a\rconfidential address is indicated. | STRING |  |  |  | 
 | confidential_address_county | .14111 | Confidential Address County | If the 'Confidential Address Active' prompt is answered YES,\renter the county for the applicant's confidential address. | NUMERIC |  |  |  | 
 | confidential_addr_change_dt_tm | .14112 | Confidential Addr Change Dt/Tm | This field will hold the date and time of the last Confidential Address\rUpdate.\r \rAny change to the following Confidential Address fields will trigger an\rupdate: Confidential Street [Line 1], Confidential Street [Line 2],\rConfidential Street [Line 3], Confidential Address City, Confidential\rAddress State, Confidential Address Zip Code, Confidential Start Date,\rConfidential End Date, Confidential Address Active?, Confidential Address\rCounty, Confidential Addr Province, Confidential Addr Postal Code,\rConfidential Addr Country and Confidential Phone Number | DATE-TIME |  |  |  | 
-| confidential_addr_change_site | .14113 | Confidential Addr Change Site | This field will hold the Site that last changed this patient's\rconfidential address. | POINTER |  |  | {id:Institution-4} | 
+| confidential_addr_change_site | .14113 | Confidential Addr Change Site | This field will hold the Site that last changed this patient's\rconfidential address. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | confidential_addr_province | .14114 | Confidential Addr Province | Enter a Province if the patient has provided one for his/her foreign\raddress.  \r \rThe entry can be alphanumeric and up to 20 characters in length. | STRING |  |  |  | 
 | confidential_addr_postal_code | .14115 | Confidential Addr Postal Code | Enter with patient's postal code if the patient has provided one for\rhis/her foreign address.\r \rThe entry can be alphanumeric and up to 10 characters in length. | STRING |  |  |  | 
 | confidential_addr_country | .14116 | Confidential Addr Country | Enter the country where the patient's confidential address is located.\r \rIf entering an Army/Air Force Post Office (APO) or a Fleet Post Office \r(FPO) address select United States as the country. | POINTER |  |  | {id:Country_Code-779_004} | 
@@ -174,7 +174,7 @@
 | zip4_civil | .290012 | Zip+4 (Civil) | Enter the zip code of the address where the person responsible for\rhandling this patient's funds resides.  Answer with either the 5 digit \rformat (e.g. 12345) or the nine digit format (e.g. 12345-6789 or \r123456789). | STRING |  |  |  | 
 | zip4_va | .29013 | Zip+4 (Va) | If this patient has a VA guardian responsible for handling the patient's\rfunds, enter the guardian's zip code here.  Answer with either the 5 \rdigit format (e.g. 12345) or the nine digit format (e.g. 12345-6789 or \r123456789). | STRING |  |  |  | 
 | date_ruled_incompetent_va | .291 | Date Ruled Incompetent (Va) | Enter the date this patient was ruled to be incompetent to handle his\rVA funds.  The Date Ruled Incompetent cannot be after the Date of Death. | DATE-TIME |  |  |  | 
-| institution_va | .2911 | Institution (Va) | Enter the VA facility or institution responsible for this patient's VA\rfunds. | POINTER |  |  | {id:Institution-4} | 
+| institution_va | .2911 | Institution (Va) | Enter the VA facility or institution responsible for this patient's VA\rfunds. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | guardian_va | .2912 | Guardian (Va) | Enter the name of the VA representative responsible for this patient's\rfunds. | STRING |  |  |  | 
 | relationship_va | .2913 | Relationship (Va) | Enter the relationship to the patient of the VA representative responsible\rfor handling this patient's funds. | STRING |  |  |  | 
 | street_address_1_va | .2914 | Street Address 1 (Va) | Enter the first line of the street address of the VA representative\rresponsible for handling this patient's funds. | STRING |  |  |  | 
@@ -221,7 +221,7 @@
 | claim_folder_location | .312 | *Claim Folder Location | For this veteran applicant enter, if applicable, the location of\rhis/her VA claim folder [2-40 characters]. | STRING |  |  |  | 
 | insurance_type | .3121 | Insurance Type | From the available listing enter the type of insurance under which this\rapplicant is covered regardless of who holds the policy. | [OBJECT] |  |  | [Insurance_Type-2_312](#insurance_type-2_312)  | 
 | claim_number | .313 | Claim Number | If the applicant is a veteran enter his/her claim number as 7-8 numerics\ror by entering the characters 'SS' if his/her claim number is the same\ras his/her social security number.  Once eligibility has been verified\ronly users who hold the designated security key may enter/edit this field. | STRING |  |  |  | 
-| claim_folder_location-2-_314 | .314 | Claim Folder Location | This is the location of the patient's claim folder.  It must be an entry\rin the INSTITUTION File.\rValid facility types:\rRO           (Regional Office)\rRO&IC        (Regional Office and Insurance Center)\rRO-OC        (Regional Office - Outpatient Clinic)\rRPC          (Record Processing Center)\rM&ROC        (Medical and Regional Office Center)\rM&ROC (M&RO) (Medical and Regional Office Center) | POINTER |  |  | {id:Institution-4} | 
+| claim_folder_location-2-_314 | .314 | Claim Folder Location | This is the location of the patient's claim folder.  It must be an entry\rin the INSTITUTION File.\rValid facility types:\rRO           (Regional Office)\rRO&IC        (Regional Office and Insurance Center)\rRO-OC        (Regional Office - Outpatient Clinic)\rRPC          (Record Processing Center)\rM&ROC        (Medical and Regional Office Center)\rM&ROC (M&RO) (Medical and Regional Office Center) | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | covered_by_health_insurance | .3192 | Covered By Health Insurance? | Enter 'Y' if this applicant is covered by a health insurance policy\rregardless of who holds policy (applicant, spouse, employer, etc.),\r'N' if s/he isn't covered by any policy, or 'U' if unknown. | ENUMERATION |  |  | <dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl> | 
 | vietnam_service_indicated | .32101 | Vietnam Service Indicated? | For this veteran applicant enter 'Y' if s/he actually served in the\rRepublic of Vietnam, 'N' if not, or 'U' if unknown.  Once the service\rrecord has been verified only users who hold the designated security\rkey may enter/edit this field. | ENUMERATION |  |  | <dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl> | 
 | agent_orange_expos_indicated | .32102 | Agent Orange Expos. Indicated? | For this veteran applicant enter 'Y' if s/he was exposed to the chemical\ragent orange, 'N' if not, or 'U' if unknown.  Exposure cannot be claimed\runless the Period of Service (field .323) is answered VIETNAM ERA, which\rentails those serving in the Korean DMZ between January 1, 1968 and\rDecember 31, 1969 or Vietnam.\r \rOnce the service record has been verified only users who hold the\rdesignated security key may enter/edit this field. | ENUMERATION |  |  | <dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl> | 
@@ -318,11 +318,11 @@
 | dzip_code | .348 | D-Zip Code | If a designee is specified enter the zip code for the city in\rwhich s/he resides [5 numerics], otherwise nothing may be\rentered.  This field cannot be deleted as long as a designee\ris on file. | STRING |  |  |  | 
 | dphone_number | .349 | D-Phone Number | If a designee is specified enter the telephone number at which\rthat person may be reached [3-20 characters], otherwise nothing\rmay be entered.  This field cannot be deleted as long as a\rdesignee is on file. | STRING |  |  |  | 
 | date_of_death | .351 | Date Of Death | Enter the date the patient died.  Date needs to be a precise date, i.e. \ra day, month, and year MUST be included.\rDate of Death can not be prior to\r        P&T Effective Date\r        Date Ruled Incompetent (Civil and VA)\r        Date of Birth | DATE-TIME |  | INDEXED |  | 
-| death_entered_by | .352 | Death Entered By | This field records the date a patient's death was initially entered into\rthe DHCP system.  This field is created automatically by the MAS module\rwhen a date of death is entered either through the 'Death Entry' option or\rthrough the 'Discharge a Patient' option. | POINTER |  |  | {id:New_Person-200} | 
+| death_entered_by | .352 | Death Entered By | This field records the date a patient's death was initially entered into\rthe DHCP system.  This field is created automatically by the MAS module\rwhen a date of death is entered either through the 'Death Entry' option or\rthrough the 'Discharge a Patient' option. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | source_of_notification | .353 | Source Of Notification |  \rThis is a set of codes that represents who/what notified the VA of \rthe Date of Death. | ENUMERATION |  |  | <dl><dt>4</dt><dd>VBA</dd><dt>1</dt><dd>INPATIENT AT VAMC</dd><dt>2</dt><dd>NON-VA MEDICAL FACILITY</dd><dt>9</dt><dd>OTHER</dd><dt>8</dt><dd>NEXT OF KIN/FAMILY/FRIEND</dd><dt>5</dt><dd>VA INSURANCE</dd><dt>7</dt><dd>NCA</dd><dt>6</dt><dd>SSA</dd><dt>3</dt><dd>DEATH CERTIFICATE ON FILE</dd></dl> | 
 | date_of_death_last_updated | .354 | Date Of Death Last Updated | This is a date/time value that represents the date/time the date of death \rfield (.351) was last modified/entered/deleted. | DATE-TIME |  |  |  | 
-| last_edited_by | .355 | Last Edited By | This is the local user ID of the person that last made a modification to \rthe date of death (.351) field. | POINTER |  |  | {id:New_Person-200} | 
-| collateral_sponsors_name | .3601 | Collateral Sponsor'S Name | If this patient is a collateral responsible for picking up medications\ror information regarding another patient, that patient's name should be \rentered here.\r \rThis sponsor must be a veteran and must exist in the patient file. | POINTER |  |  | {id:Patient-2} | 
+| last_edited_by | .355 | Last Edited By | This is the local user ID of the person that last made a modification to \rthe date of death (.351) field. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| collateral_sponsors_name | .3601 | Collateral Sponsor'S Name | If this patient is a collateral responsible for picking up medications\ror information regarding another patient, that patient's name should be \rentered here.\r \rThis sponsor must be a veteran and must exist in the patient file. | POINTER |  |  | [Patient-2](Patient-2.md) | 
 | military_disability_retirement | .3602 | Military Disability Retirement |  | BOOLEAN |  |  | {false:0,true:1} | 
 | discharge_due_to_disability | .3603 | Discharge Due To Disability |  | BOOLEAN |  |  | {false:0,true:1} | 
 | primary_eligibility_code | .361 | Primary Eligibility Code | Select from the available listing the appropriate eligibility code for\rthis applicant.  For non-veteran applicants a wide variety of choices\rare available.  For veteran applicants the choices are screened [in the\rfollowing order] dependent on the responses to other prompts:\r   \r1.  If the SERVICE CONNECTED prompt (field .301) is answered YES\r    only the following two choices are available:\r    \r    a.  If the SERVICE CONNECTED PERCENTAGE prompt (field .302) entered\r        is 50% or greater 'SERVICE CONNECTED 50% TO 100%' can be\r        selected.\r   \r    b.  Otherwise, the percentage is assumed to be less than 50% and\r        only 'SC, LESS THAN 50%' may be entered.\r   \r2.  If the response to the WERE YOU A PRISONER OF WAR field (# .525)\r    is YES and the veteran is not service connected, you must select \r    PRISONER OF WAR as the eligibility code.\r   \r3.  If the response to the CURRENT PH INDICATOR field (#.531) \r    is YES and the veteran is not service connected and is not a Prisoner\r    of War, you must select PURPLE HEART RECIPIENT as the eligibility code.\r \r4.  If the veteran is receiving VA benefits, but does not meet the\r    criteria in items 1 and 2 above, then the following choices may\r    be presented for selection:\r \r    If RECEIVING A&A BENEFITS is answered YES, the eligibility code\r    AID & ATTENDANCE may be selected.\r \r    If the RECEIVING HOUSEBOUND BENEFITS is answered YES ,the eligibility\r    code HOUSEBOUND may be selected.\r \r    If the above two prompts were answered NO, but the RECEIVING A VA\r    PENSION prompt was answered YES, only the NSC, VA PENSION prompt\r    may be selected.\r \r5.  If none of the above pertain to this veteran, then the NSC eligibility\r    will be available for selection.\r \r**  Dependent on the birthdate of the applicant, the following two\r    eligibility codes may be displayed along with those shown in items\r    3 through 5 above:  WORLD WAR I and MEXICAN BORDER WAR.  These would\r    display for veterans not meeting the criteria in items 1 and 2, but\r    whose date of birth is prior to 1907. | POINTER |  |  | {id:Eligibility_Code-8} | 
@@ -331,9 +331,9 @@
 | eligibility_verif_source | .3613 | Eligibility Verif. Source | This field is used to restrict site ability to edit certain data elements when\rHEC has verified eligibility data. | ENUMERATION |  |  | <dl><dt>V</dt><dd>VISTA</dd><dt>H</dt><dd>HEC</dd></dl> | 
 | eligibility_interim_response | .3614 | Eligibility Interim Response | If an interim response has been received concerning this applicant's\religibility status enter the date received.  Only users who hold the\rdesignated security key may enter/edit this field. | DATE-TIME |  |  |  | 
 | eligibility_verif_method | .3615 | Eligibility Verif. Method | Enter the method in which the eligibility for this applicant was verified\r[between 2-50 characters].  Only users who hold the designated security\rkey may enter/edit this field. | STRING |  |  |  | 
-| eligibility_status_entered_by | .3616 | Eligibility Status Entered By | When eligibility is verified (ELIG STATUS=\VERIFIED\) the name of the\ruser who certified the verification. | POINTER |  |  | {id:New_Person-200} | 
+| eligibility_status_entered_by | .3616 | Eligibility Status Entered By | When eligibility is verified (ELIG STATUS=\VERIFIED\) the name of the\ruser who certified the verification. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | user_enrollee_valid_through | .3617 | User Enrollee Valid Through | This field contains the Fiscal Year that the veteran's User Enrollee \rStatus is valid through. This field is populated by the system, no user \rinput is required. | DATE-TIME |  |  |  | 
-| user_enrollee_site | .3618 | User Enrollee Site | This field contains the Site that determined the User Enrollee \rinformation for the Veteran. This field is populated by the system, no \ruser input is required. | POINTER |  |  | {id:Institution-4} | 
+| user_enrollee_site | .3618 | User Enrollee Site | This field contains the Site that determined the User Enrollee \rinformation for the Veteran. This field is populated by the system, no \ruser input is required. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | disability_ret_from_military | .362 | Disability Ret. From Military? |  | ENUMERATION |  |  | <dl><dt>2</dt><dd>YES, RECEIVING MILITARY RETIREMENT IN LIEU OF VA COMPENSATION</dd><dt>1</dt><dd>YES, RECEIVING MILITARY RETIREMENT</dd><dt>3</dt><dd>UNKNOWN</dd><dt>0</dt><dd>NO</dd></dl> | 
 | receiving_aa_benefits | .36205 | Receiving A&A Benefits? | For this veteran applicant enter 'Y' if s/he is on A&A, 'N' if not, or\r'U' if unknown.  Once monetary benefits have been verified only users\rwho hold the designated security key may enter/edit this field. | ENUMERATION |  |  | <dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl> | 
 | amount_of_aid__attendance | .3621 | Amount Of Aid & Attendance | For this veteran applicant who is receiving A&A benefits (ARE YOU IN\rRECEIPT OF A&A prompt must be answered YES) enter the amount received\r[numeric 0-99999].  Once monetary benefits are verified only users who\rhold the designated security key may enter/edit this field.  Any dollar\ramount on file cannot be deleted as long as receipt of A&A benefits\ris indicated.\r  \rf you wish to enter a monthly amount either preceed or follow the dollar\rfigure with an asterisk and I'll multiply it out for you. | NUMERIC |  |  |  | 
@@ -377,7 +377,7 @@
 | veteran_catastrophically_disabled | .39 | Veteran Catastrophically Disabled? | This field states whether or not the patient is a veteran who has been\rdetermined to meet the criteria for CATASTROPHICALLY DISABLED. | BOOLEAN |  |  | {false:N,true:Y} | 
 | decided_by | .391 | Decided By | The name of the VA staff physician who made the determination that the patient\rwas catastrophically disabled. | STRING |  |  |  | 
 | date_of_decision | .392 | Date Of Decision | The date the catastrophic disability determination was made. | DATE-TIME |  |  |  | 
-| facility_making_determination | .393 | Facility Making Determination | The VAMC that made the catastrophic disability determination. | POINTER |  |  | {id:Institution-4} | 
+| facility_making_determination | .393 | Facility Making Determination | The VAMC that made the catastrophic disability determination. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | review_date | .394 | Review Date | The date that a review to determine Catastrophic Disability was made. \rThis review may be a medical record review or physical exam review. | DATE-TIME |  |  |  | 
 | method_of_determination | .395 | Method Of Determination | Added in order to document the review method of how the decision\rto assign a CD status was determined.\r \rDetermination may be made by reviewing the veteran's medical record\ror by performing a physical examination of the veteran.\rIn the future, the capability to fully automate the record review\rprocess will be added to the system. | ENUMERATION |  |  | <dl><dt>3</dt><dd>PHYSICAL EXAMINATION</dd><dt>2</dt><dd>MEDICAL RECORD REVIEW</dd></dl> | 
 | date_veteran_requested_cd_eval | .3951 | Date Veteran Requested Cd Eval | Documents the date the veteran requested Catastrophically Disabled \revaluation. | DATE-TIME |  |  |  | 
@@ -402,7 +402,7 @@
 | current_ph_indicator | .531 | Current Ph Indicator | This field can be entered by the local site if currently null.  Subsequent\rediting can be done only by the HEC.  A response of 'Yes' can be entered \ronly if the patient is a veteran, | BOOLEAN |  | INDEXED | {false:N,true:Y} | 
 | current_purple_heart_status | .532 | Current Purple Heart Status | This field cannot be edited locally.  If Current Purple Heart Indicator is\rset to 'Yes' by the local site, a Current Purple Heart Status of 'Pending'\rwill be stuffed into the field.  Other editing or updating is done by the\rHEC. | ENUMERATION |  | INDEXED | <dl><dt>3</dt><dd>CONFIRMED</dd><dt>2</dt><dd>IN PROCESS</dd><dt>1</dt><dd>PENDING</dd></dl> | 
 | current_purple_heart_remarks | .533 | Current Purple Heart Remarks | This field cannot be edited locally.  If Current Purple Heart Indicator\risset to 'No' by the local site, a Current Purple Heart Remarks of 'VAMC'\rwill be stuffed into the field.  Other editing or updating is done by the\rHEC. | ENUMERATION |  |  | <dl><dt>6</dt><dd>UNDELIVERABLE MAIL</dd><dt>5</dt><dd>VAMC</dd><dt>3</dt><dd>ENTERED IN ERROR</dd><dt>1</dt><dd>UNACCEPTABLE DOCUMENTATION</dd><dt>2</dt><dd>NO DOCUMENTATION REC'D</dd><dt>4</dt><dd>UNSUPPORTED PURPLE HEART</dd></dl> | 
-| ph_division | .535 | Ph Division | When site enters a value for CURRENT PH Indicator, a prompt\rfor PH Division will appear.  This field will point to the\rINSTITUTION file (#4), and will hold the division where the\rPH request was initiated. | POINTER |  |  | {id:Institution-4} | 
+| ph_division | .535 | Ph Division | When site enters a value for CURRENT PH Indicator, a prompt\rfor PH Division will appear.  This field will point to the\rINSTITUTION file (#4), and will hold the division where the\rPH request was initiated. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | current_moh_indicator | .541 | Current Moh Indicator | This field cannot be edited in VistA.  It is set by the Z11 Upload from \rHEC.  A response of 'YES' or 'NO' is indicated only if the patient is a \rveteran. | BOOLEAN |  |  | {false:N,true:Y} | 
 | test_patient_indicator | .6 | Test Patient Indicator | This field is set by the 'ATP' cross reference on the Social Security Number \rfield (.09) when an SSN containing five leading zeros is entered. | BOOLEAN |  |  | {false:0,true:1} | 
 | alias | 1 | Alias | If this applicant is known by any name other than that entered in\rthe NAME field enter that/those other name(s) here.  Any entry\rto this field will be cross-referenced and the applicant may be\rcalled up using this alias. | [OBJECT] |  |  | [Alias-2_01](#alias-2_01)  | 
@@ -419,7 +419,7 @@
 | enrollment_clinic | 3 | Enrollment Clinic | This multiple field contains the data relating to clinic enrollments for\rthis patient. | [OBJECT] |  |  | [Enrollment_Clinic-2_001](#enrollment_clinic-2_001)  | 
 | ethnicity_information | 6 | Ethnicity Information |  | [OBJECT] |  |  | [Ethnicity_Information-2_06](#ethnicity_information-2_06)  | 
 | current_enrollment | 27.01 | Current Enrollment | The patient's current enrollment. | POINTER |  |  | {id:Patient_Enrollment-27_11} | 
-| preferred_facility | 27.02 | Preferred Facility | The facility that the patient chooses to designate as his preferred\rlocation for care.\rThe facility must have one of the following facility types:\r      CBOC         (Community Based Outpatient Clinic)\r      HCS          (Health Care System)\r      HEALTHCARE   (VA Boston Health Care System)\r      M&ROC        (Medical and Regional Office Center)\r      MOC          (Mobile Outpatient Clinic)\r      MORC         (Mobile Outreach Clinic)\r      NETWORK      (VA Healthcare Network Upstate NY)\r      NHC          (Nursing Home Care)\r      OC           (Outpatient Clinic - Independent)\r      OCMC         (Outpatient Clinic - Subordinate)\r      OCS          (Outpatient Clinic Substation)\r      OPC          (Out Patient Clinic)\r      ORC          (Outreach Clinic)\r      RO-OC        (Regional Office - Outpatient Clinic)\r      SATELLITE    (Satellite Outpatient Clinic)\r      SOC          (Satellite Outpatient Clinic)\r      VAMC         (VA Medical Center)\r      VANPH        (Neural Psychiatric Hospital)\r      VA ROSEBERG  (VA Roseburg Health Care System) | POINTER |  |  | {id:Institution-4} | 
+| preferred_facility | 27.02 | Preferred Facility | The facility that the patient chooses to designate as his preferred\rlocation for care.\rThe facility must have one of the following facility types:\r      CBOC         (Community Based Outpatient Clinic)\r      HCS          (Health Care System)\r      HEALTHCARE   (VA Boston Health Care System)\r      M&ROC        (Medical and Regional Office Center)\r      MOC          (Mobile Outpatient Clinic)\r      MORC         (Mobile Outreach Clinic)\r      NETWORK      (VA Healthcare Network Upstate NY)\r      NHC          (Nursing Home Care)\r      OC           (Outpatient Clinic - Independent)\r      OCMC         (Outpatient Clinic - Subordinate)\r      OCS          (Outpatient Clinic Substation)\r      OPC          (Out Patient Clinic)\r      ORC          (Outreach Clinic)\r      RO-OC        (Regional Office - Outpatient Clinic)\r      SATELLITE    (Satellite Outpatient Clinic)\r      SOC          (Satellite Outpatient Clinic)\r      VAMC         (VA Medical Center)\r      VANPH        (Neural Psychiatric Hospital)\r      VA ROSEBERG  (VA Roseburg Health Care System) | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | source_designation | 27.03 | Source Designation | Source designation contains the value of the place the Preferred Facility \rfield (#27.02) was assigned for the patient.  Source designation is \rautomatically assigned by the system.  The VistA system can only assign \ra Preferred Facility if the current Source Designation is VistA or \rPrimary Care Provider (PCP) Inactive. | ENUMERATION |  |  | <dl><dt>PI</dt><dd>PCP INACTIVE</dd><dt>V</dt><dd>VISTA</dd><dt>PA</dt><dd>PCP ACTIVE</dd><dt>E</dt><dd>ESR</dd></dl> | 
 | reactions | 53 | *Reactions |  | BOOLEAN |  |  | {false:N,true:Y} | 
 | heightcm | 57.1 | *Height(Cm) |  | NUMERIC |  |  |  | 
@@ -434,12 +434,12 @@
 | type-391 | 391 | Type | Enter the patient type for this patient.  This is selectable from the\rdistributed entries in the TYPE OF PATIENT file.  The type selected should\rbe the primary one selectable.  For example, if the patient is both an\rNSC veteran and an employee, the patient type should be NSC VETERAN, not\remployee.\r \rThis field is used by the registration screen processor to determine which\rscreens will be editable for this patient.  The selection of which screens\rcan be viewed for which types of patients can be made through the 'Patient\rType Update' option. | POINTER |  |  | {id:Type_Of_Patient-391} | 
 | condition | 401.3 | Condition | Enter 'S' if the patient is seriouslly ill and should be displayed on the\rSeriouslly Ill Roster.  Enter '@' to delete patient from seriouslly ill\rstatus. | ENUMERATION |  | INDEXED | <dl><dt>S</dt><dd>SERIOUSLY ILL</dd></dl> | 
 | date_entered_on_si_list | 401.4 | Date Entered On Si List | Enter the date the patient was placed on the Seriouslly Ill list. | DATE-TIME |  |  |  | 
-| current_pc_practitioner | 404.01 | *Current Pc Practitioner | This field stores the patient's Current Primary Care Practitioner. | POINTER |  |  | {id:New_Person-200} | 
+| current_pc_practitioner | 404.01 | *Current Pc Practitioner | This field stores the patient's Current Primary Care Practitioner. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | current_pc_team | 404.02 | *Current Pc Team | This field contains the patients's Primary Care Team. | POINTER |  |  | {id:Team-404_51} | 
 | ph_date_time_updated | 534 | Ph Date/Time Updated |  | [OBJECT] |  |  | [Ph_Date_Time_Updated-2_0534](#ph_date_time_updated-2_0534)  | 
 | integration_control_number | 991.01 | Integration Control Number | Machine to machine identifier for a patient. | NUMERIC |  | INDEXED |  | 
 | icn_checksum | 991.02 | Icn Checksum | This checksum is the calculated checksum for the Integration Control\rNumber. It verifies the integrity of the ICN. | STRING |  |  |  | 
-| coordinating_master_of_record | 991.03 | Coordinating Master Of Record | The coordinating site for the patient. | POINTER |  | INDEXED | {id:Institution-4} | 
+| coordinating_master_of_record | 991.03 | Coordinating Master Of Record | The coordinating site for the patient. | POINTER |  | INDEXED | [Institution-4](Institution-4.md) | 
 | locally_assigned_icn | 991.04 | Locally Assigned Icn | DESIGNATES THAT THE ICN BELONGING TO THIS PATIENT IS LOCAL | BOOLEAN |  | INDEXED | {true:1} | 
 | subscription_control_number | 991.05 | Subscription Control Number | This field points to a list of subscribers to this patient's data. For\rexample, see details of the MPI/PD messaging implementation. The subscriber\rlist is specific to this patient. Do not change the subscription control\rnumber without remembering to update the current subscriber list in file\r774 (SUBSCRIPTION CONTROL). Use only documented API calls to create a new\rsubscription control number for a patient. | POINTER |  | INDEXED | {id:Subscription_Control-774} | 
 | cmor_activity_score | 991.06 | Cmor Activity Score | This score is used to determine the Coordinating Master of Record. | NUMERIC |  |  |  | 
@@ -455,9 +455,9 @@
 | received_va_care_previously | 1010.15 | Received Va Care Previously? | Enter 'Y' if this veteran has previously received care in another VA\rfacility, otherwise enter 'N'. | BOOLEAN |  |  | {false:N,true:Y} | 
 | most_recent_date_of_care | 1010.151 | Most Recent Date Of Care | If this veteran has previously received care in another VA facility\renter the date of care in that facility. | DATE-TIME |  |  |  | 
 | appointment_request_date | 1010.1511 | Appointment Request Date | This field contains the date the VA enrolling a patient for the first time\rwas notified that the patient requests an appointment with a provider. | DATE-TIME |  | INDEXED |  | 
-| most_recent_location_of_care | 1010.152 | Most Recent Location Of Care | If this veteran have previously received care in another VA facility\rselect from the available listing the name of the facility (or facility\rnumber) in which care was rendered most recently. | POINTER |  |  | {id:Institution-4} | 
+| most_recent_location_of_care | 1010.152 | Most Recent Location Of Care | If this veteran have previously received care in another VA facility\rselect from the available listing the name of the facility (or facility\rnumber) in which care was rendered most recently. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | _2nd_most_recent_date_of_care | 1010.153 | 2Nd Most Recent Date Of Care | If this applicant has received care in more than one other VA facility\renter the date of care received in the next to most recent facility. | DATE-TIME |  |  |  | 
-| _2nd_most_recent_location | 1010.154 | 2Nd Most Recent Location | If this veteran has received care in more than one other VA facility\rselect from the available listing the name of the facility (or facility\rnumber) in which the next to most recent care was received. | POINTER |  |  | {id:Institution-4} | 
+| _2nd_most_recent_location | 1010.154 | 2Nd Most Recent Location | If this veteran has received care in more than one other VA facility\rselect from the available listing the name of the facility (or facility\rnumber) in which the next to most recent care was received. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | most_recent_1010ez | 1010.156 | Most Recent 1010Ez | This field was added via patch DG*5.3*597, distributed with EAS*1.0*51.\r  \rThe purpose of this field is to link the PATIENT file record with\rthe Veteran's latest 1010EZ Application to this site.  The 1010EZ\rdata is retained in 1010EZ HOLDING File (#712).  The internal entry\rnumber to file #712 is stored in the MOST RECENT 1010EZ field.\r   | POINTER |  |  | {id:_1010Ez_Holding-712} | 
 | combat_indicated_on_1010ez | 1010.157 | Combat Indicated On 1010Ez | This field was added via patch DG*5.3*597, distributed with EAS*1.0*51.\r \rThe purpose of this field is to store within the PATIENT file the\rapplicant's answer to the 1010EZ question:\r \r    DID YOU SERVE IN COMBAT AFTER 11/11/1998?\r \rThis field may contain any of the following:\r \r    0 for \NO\\r    1 for \YES\\r    null (i.e., not answered)\r  | BOOLEAN |  |  | {false:0,true:1} | 
 | disability_discharge_on_1010ez | 1010.158 | Disability Discharge On 1010Ez | This field was added via patch DG*5.3*597, distributed with EAS*1.0*51.\r \rThe purpose of this field is to store within the PATIENT file the\rapplicant's answer to the 1010EZ question:\r \rWAS DISCHARGE FROM MILITARY FOR A DISABILITY INCURRED OR\rAGGRAVATED IN THE LINE OF DUTY?\r \rThis field may contain any of the following:\r \r    0 for \NO\\r    1 for \YES\\r    null (i.e., not answered)\r  | BOOLEAN |  |  | {false:0,true:1} | 
@@ -467,9 +467,9 @@
 | appointment_request_comment | 1010.163 | Appointment Request Comment | This field is entered by the user through the new enrollee appointment\rrequest option. | STRING |  |  |  | 
 | date_comment_last_edited | 1010.164 | Date Comment Last Edited | This is the date appointment request comment was last edited. This field\ris updated by the computer whenever anyone edits the comment information. | DATE-TIME |  |  |  | 
 | fugitive_felon_flag | 1100.01 | Fugitive Felon Flag | This field is in support of Pub. L. 107-103, section 505, and is used to \rflag a patient who has a fugitive felon warrant outstanding.  This \rinformation will be provided to the appropriate personnel to enter.  \rAccess to this field requires the DGFFP ACCESS key.  This field should \rnot be updated directly, but should be entered through the appropriate \rFugitive Felon Program options. | BOOLEAN |  | INDEXED | {true:1} | 
-| fff_entered_by | 1100.02 | Fff Entered By | This field contains the user who entered the current Fugtitive Felon Flag\rfor this patient.  It is automatically entered when the FUGITIVE FELON\rFLAG field (#1100.01) is entered. | POINTER |  |  | {id:New_Person-200} | 
+| fff_entered_by | 1100.02 | Fff Entered By | This field contains the user who entered the current Fugtitive Felon Flag\rfor this patient.  It is automatically entered when the FUGITIVE FELON\rFLAG field (#1100.01) is entered. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | fff_date_entered | 1100.03 | Fff Date Entered | Date/Time the FUGITIVE FELON FLAG field (#1100.01) was entered.  This \rfield is automatically set when the FUGITIVE FELON FLAG field (#1100.01)\ris set. | DATE-TIME |  |  |  | 
-| fff_removed_by | 1100.04 | Fff Removed By | This field contains the user who removed the current Fugitive Felon Flag\rfor this patient.  It is automatically entered when the FUGITIVE FELON FLAG\rfield (#1100.01) is deleted. | POINTER |  |  | {id:New_Person-200} | 
+| fff_removed_by | 1100.04 | Fff Removed By | This field contains the user who removed the current Fugitive Felon Flag\rfor this patient.  It is automatically entered when the FUGITIVE FELON FLAG\rfield (#1100.01) is deleted. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | fff_date_removed | 1100.05 | Fff Date Removed | Date/Time the FUGITIVE FELON FLAG Field (#1100.01) was removed.  This \rfield is automatically set when the FUGITIVE FELON FLAG field (#1100.01)\ris deleted. | DATE-TIME |  |  |  | 
 | fff_removal_remarks | 1100.09 | Fff Removal Remarks | If the FFF flag has been cleared for this patient, this field contains a short reason as to why the flag was cleared.  This is a free text field which allows up to 80 characters to be entered. | STRING |  |  |  | 
 | appointment | 1900 | Appointment | This multiple contains information on appointments this patient has had or\ris scheduled to have.  This information includes the date/time of the\rappointment, the clinic, and the reason for the appointment. | [OBJECT] |  |  | [Appointment-2_98](#appointment-2_98)  | 
@@ -481,28 +481,28 @@
 | rank-2 |  | Rank | Enter the grade/rank of this operation desert shield patient. |  |  |  |  | 
 | network_identifier | 537025 | Network Identifier | This field holds the synonym values from the Network Health Exchange\rAuthorized Site file indicating where a particular patient has been found\rto have data. | STRING |  |  |  | 
 
-##Confidential_Address_Category-2_141 
+## Confidential_Address_Category-2_141 
 
  property | value 
 --- | --- 
  id | Confidential_Address_Category-2_141
  label | Confidential Address Category
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | confidential_address_category | .01 | Confidential Address Category | If the 'Confidential Address Active' prompt is answered YES, \rselect the confidential address category for this applicant's\rconfidential communications. | ENUMERATION |  | REQUIRED, INDEXED | <dl><dt>1</dt><dd>ELIGIBILITY/ENROLLMENT</dd><dt>4</dt><dd>MEDICAL RECORDS</dd><dt>2</dt><dd>APPOINTMENT/SCHEDULING</dd><dt>3</dt><dd>COPAYMENTS/VETERAN BILLING</dd><dt>5</dt><dd>ALL OTHERS</dd></dl> | 
 | confidential_category_active | 1 | Confidential Category Active | If the applicant's confidential communications for this category should\rbe sent to the confidential address, Confidential Category Active field\rshould be set to yes.  If not, select N or No. | BOOLEAN |  |  | {false:N,true:Y} | 
 
-##Insurance_Type-2_312 
+## Insurance_Type-2_312 
 
  property | value 
 --- | --- 
  id | Insurance_Type-2_312
  label | Insurance Type
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -511,11 +511,11 @@
 | coordination_of_benefits | .2 | Coordination Of Benefits |  | ENUMERATION |  |  | <dl><dt>1</dt><dd>PRIMARY</dd><dt>3</dt><dd>TERTIARY</dd><dt>2</dt><dd>SECONDARY</dd></dl> | 
 | subscriber_id | 1 | *Subscriber Id | Enter the Subscriber's Primary ID number.  This number is assigned\rby the payer and can be found on the subscriber's insurance card.\r \rThis field is scheduled for deletion in May 2015. | STRING |  |  |  | 
 | date_entered | 1.01 | Date Entered | This is the date this entry was added.  It will be created by the system\rwhenever a new policy is added.  Entries created prior the installation\rof IB v2.0 will not have an entry in this field. | DATE-TIME |  |  |  | 
-| entered_by | 1.02 | Entered By | This the user who added this entry.  It will be entered by the system\rwhenever a new policy is added.  Entries created prior the installation\rof IB v2.0 will not have an entry in this field. | POINTER |  |  | {id:New_Person-200} | 
+| entered_by | 1.02 | Entered By | This the user who added this entry.  It will be entered by the system\rwhenever a new policy is added.  Entries created prior the installation\rof IB v2.0 will not have an entry in this field. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_last_verified | 1.03 | Date Last Verified | Insurance coverage is generally verified by calling the insurer and\rrequesting an explanation of benefits.  When coverage has been\rverified the person verifying the coverage should use the options to\rverify the coverage in VISTA.  \r \rThis is the date that this policy for this patient was last verified \rwith the insurance company.  It is important to update the verification\rdate regularly so that other users will know how current the information\rin VISTA is. | DATE-TIME |  |  |  | 
-| verified_by | 1.04 | Verified By | This is the user that last contacted the insurance company to verify\rthe policy.  It is updated by using the appropriate DHCP options.\rIt is important to update the verification date and user so that other\rusers will know the insurance policy information is current. | POINTER |  |  | {id:New_Person-200} | 
+| verified_by | 1.04 | Verified By | This is the user that last contacted the insurance company to verify\rthe policy.  It is updated by using the appropriate DHCP options.\rIt is important to update the verification date and user so that other\rusers will know the insurance policy information is current. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_last_edited | 1.05 | Date Last Edited | This is the date this policy was last edited.  This field is updated by\rthe computer whenever anyone edits this patient's policy information. | DATE-TIME |  |  |  | 
-| last_edited_by | 1.06 | Last Edited By | This is the user that last edited the policy.  This field is updated by\rthe computer whenever anyone edits this patients policy information. | POINTER |  |  | {id:New_Person-200} | 
+| last_edited_by | 1.06 | Last Edited By | This is the user that last edited the policy.  This field is updated by\rthe computer whenever anyone edits this patients policy information. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | comment__patient_policy | 1.08 | Comment - Patient Policy | This is a place to record a short comment about this patients policy.\rIt is specific to this patient and to this policy.  The answer must be\r3 to 80 characters. | STRING |  |  |  | 
 | source_of_information | 1.09 | Source Of Information | Enter the last source of this information.\rIf the insurance information was obtained by patient interview, then\renter interview, etc.  If the information was initially or previously\robtained by one source but updated by another source, then enter the\rmost recent source of the information.\r \rThe data in this field will be initially set to INTERVIEW with IB v2.\rThe data may be passed to Accounts Receivable and/or the MCCR NDB.\r \rIf this field is being edited through the use of the pre-registration\rsoftware, the default for this field will be set to PRE-REGISTRATION. | POINTER |  |  | {id:Source_Of_Information-355_12} | 
 | date_of_source_of_information | 1.1 | Date Of Source Of Information |  | DATE-TIME |  |  |  | 
@@ -587,14 +587,14 @@
 | name_of_insured-2_312-17 | 17 | *Name Of Insured | Enter the name of the individual for which this insurance policy was\rissued.  If the patient and the insurance subscriber are the same,\rthen this field will be defaulted from the patient name field.\r \rThe name must contain a comma and be entered in Last,First format.\r \rThis field is scheduled for deletion in May 2015. | STRING |  |  |  | 
 | eligibility_benefit | 60 | Eligibility/Benefit | This multiple contains all of the eligibility and benefit data\rfor a specific insured person returned from the Payer. | [OBJECT] |  |  | {properties:[{description:This is a sequential number corresponding to the Set-ID for all\rof the eligibility/benefit (X.12 EB segments) segments coming\rinto VISTA.,datatype:NUMERIC,required:true,label:Eb Number,indexed:true,fmId:.01,id:eb_number},{description:This field contains a code identifying the eligibility status\rof the individual or the benefit returned by the Payer.,datatype:POINTER,label:Eligibility/Benefit Info,range:{id:X12_271_Eligibility_Benefit-365_011},fmId:.02,id:eligibility_benefit_info},{description:This field identifies the level of coverage of benefits.,datatype:POINTER,label:Coverage Level,range:{id:X12_271_Coverage_Level-365_012},fmId:.03,id:coverage_level},{description:This field is a code identifying the classification of service.,datatype:POINTER,label:*Service Type,range:{id:X12_271_Service_Type-365_013},fmId:.04,id:service_type},{description:This is a code identifying the type of insurance policy within\ra specific insurance program.,datatype:POINTER,label:Insurance Type,range:{id:X12_271_Insurance_Type-365_014},fmId:.05,id:insurance_type},{description:This code is a description or number that identifies the plan\ror coverage.,datatype:STRING,label:Plan Coverage Description,fmId:.06,id:plan_coverage_description},{description:This is a code for the time period category that determines\rfor how long the benefits are available.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:This field is populated if eligibility or benefit must be\rqualified by a monetary amount.,datatype:STRING,label:Monetary Amount,fmId:.08,id:monetary_amount},{description:This field is used if eligibility or benefit must be qualified\rby a percentage.,datatype:NUMERIC,label:Percent,fmId:.09,id:percent},{description:This field is used to identify the type of units that are being\rconveyed in the QUANTITY field (#.11).,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.1,id:quantity_qualifier},{description:This field number is used for the quantity value as qualified by\rthe QUANTITY QUALIFIER field.,datatype:STRING,label:Quantity,fmId:.11,id:quantity},{description:This field indicates that an authorization or certification\ris required per plan provisions.,datatype:POINTER,label:Authorization/Certification,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.12,id:authorization_certification},{description:This field indicates the plan network indicator.  A YES value indicates\rthe benefits identified are considered In-Plan-Network.  A NO value\rindicates that the benefits identified are considered \rOut-Of-Plan-Network.  A \U\ value indicates it is unknown whether the\rbenefits identified are part of the Plan Network.,datatype:POINTER,label:In Plan,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.13,id:in_plan},{description:Two character code describing procedure coding method.,datatype:POINTER,label:Procedure Coding Method,range:{id:X12_271_Procedure_Coding_Method-365_035},fmId:1.01,id:procedure_coding_method},{description:Identification code for the procedure.,datatype:STRING,label:Procedure Code,fmId:1.02,id:procedure_code},{description:Identifies special circumstances related to the procedure; first modifier.,datatype:STRING,label:Procedure Modifier 1,fmId:1.03,id:procedure_modifier_1},{description:Identifies special circumstances related to the procedure; second\rmodifier.,datatype:STRING,label:Procedure Modifier 2,fmId:1.04,id:procedure_modifier_2},{description:Identifies special circumstances related to the procedure; third modifier.,datatype:STRING,label:Procedure Modifier 3,fmId:1.05,id:procedure_modifier_3},{description:Identifies special circumstances related to the procedure; fourth\rmodifier.,datatype:STRING,label:Procedure Modifier 4,fmId:1.06,id:procedure_modifier_4},{description:This field contains any additional text about the eligibility\rbenefit information.  It is transcribed from X.12 271 MSG segments.,datatype:STRING,label:Notes,isWP:true,fmId:2,id:notes},{description:X12 Entity Identifier Code.,datatype:POINTER,label:Entity Id Code,range:{id:X12_271_Entity_Identifier_Code-365_022},fmId:3.01,id:entity_id_code},{description:Entity Type Qualifier.,datatype:POINTER,label:Entity Type,range:{id:X12_271_Entity_Type_Qualifier-365_043},fmId:3.02,id:entity_type},{description:Name of person or organization.,datatype:STRING,label:Name,fmId:3.03,id:name},{description:Entity identifier.,datatype:STRING,label:Entity Id,fmId:3.04,id:entity_id},{description:Code designating the system/method used for Identification.,datatype:POINTER,label:Entity Id Qualifier,range:{id:X12_271_Identification_Qualifier-365_023},fmId:3.05,id:entity_id_qualifier},{description:Benefit Related Entity's relationship to the patient.,datatype:POINTER,label:Entity Relationship Code,range:{id:X12_271_Entity_Relationship_Code-365_031},fmId:3.06,id:entity_relationship_code},{description:Entity address, line 1.,datatype:STRING,label:Address Line 1,fmId:4.01,id:address_line_1},{description:Entity address, line 2.,datatype:STRING,label:Address Line 2,fmId:4.02,id:address_line_2},{description:Entity address, city.,datatype:STRING,label:City,fmId:4.03,id:city},{description:Entity address, state or province code.,datatype:POINTER,label:State,range:{id:State-5},fmId:4.04,id:state},{description:Entity address, zip or postal code.,datatype:STRING,label:Zip,fmId:4.05,id:zip},{description:Entity address, country code.,datatype:STRING,label:Country Code,fmId:4.06,id:country_code},{description:Entity address, location identifier.,datatype:STRING,label:Location,fmId:4.07,id:location},{description:Entity address, location qualifier.,datatype:POINTER,label:Location Qualifier,range:{id:X12_271_Location_Qualifer-365_034},fmId:4.08,id:location_qualifier},{description:Entity address, country subdivision code.,datatype:STRING,label:Subdivision Code,fmId:4.09,id:subdivision_code},{description:Code identifying the type of provider.,datatype:POINTER,label:Provider Code,range:{id:X12_271_Provider_Code-365_024},fmId:5.01,id:provider_code},{description:Reference identifier.,datatype:STRING,label:Reference Id,fmId:5.02,id:reference_id},{description:Reference identifier type.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:5.03,id:reference_id_qualifier},{description:This multiple contains contact information for an eligibility/benefit\rentity.,datatype:[OBJECT],label:Contact Information,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Name of the contact.,datatype:STRING,label:Name,fmId:.02,id:name},{description:Phone, fax, email, etc.\r \rThis field is scheduled for deletion in May 2015.,datatype:STRING,label:*Communication Number,fmId:.03,id:communication_number},{description:Code describing type of communication number.,datatype:POINTER,label:Communication Qualifier,range:{id:X12_271_Contact_Qualifier-365_021},fmId:.04,id:communication_qualifier},{description:Phone, fax, email, URL,datatype:STRING,label:Communication Number,fmId:1,id:communication_number-2_3226-1}],fmId:2.3226,id:Contact_Information-2_3226,label:Contact Information},fmId:6,id:contact_information},{description:Healthcare services delivery multiple.,datatype:[OBJECT],label:Healthcare Services Delivery,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Numeric value of benefit quantity as qualified by QUANTITY QUALIFIER\rfield.,datatype:NUMERIC,label:Benefit Quantity,fmId:.02,id:benefit_quantity},{description:Benefit quantity qualifier.,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.03,id:quantity_qualifier},{description:Sampling frequency in terms of a modulus of the Unit of Measure. Qualified\rby UNITS OF MEASUREMENT field.,datatype:STRING,label:Sample Selection Modulus,fmId:.04,id:sample_selection_modulus},{description:Units of measurement for frequency of the benefits.,datatype:POINTER,label:Units Of Measurement,range:{id:X12_271_Units_Of_Measurement-365_029},fmId:.05,id:units_of_measurement},{description:Number of time periods as qualified by TIME PERIOD QUALIFIER field.,datatype:NUMERIC,label:Time Periods,fmId:.06,id:time_periods},{description:Code that defines a time period.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:Code that defines frequency of deliveries.,datatype:POINTER,label:Delivery Frequency,range:{id:X12_271_Delivery_Frequency_Code-365_025},fmId:.08,id:delivery_frequency},{description:Code that defines pattern of deliveries.,datatype:POINTER,label:Delivery Pattern,range:{id:X12_271_Delivery_Pattern-365_036},fmId:.09,id:delivery_pattern}],fmId:2.3227,id:Healthcare_Services_Delivery-2_3227,label:Healthcare Services Delivery},fmId:7,id:healthcare_services_delivery},{description:Subscriber dates multiple.,datatype:[OBJECT],label:Subscriber Dates,range:{properties:[{description:Sequential number of ZSD segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Date or range of dates.,datatype:STRING,label:Date,fmId:.02,id:date},{description:Code describing the type of date.,datatype:POINTER,label:Date Qualifier,range:{id:X12_271_Date_Qualifier-365_026},fmId:.03,id:date_qualifier},{description:Format of the date representation.,datatype:POINTER,label:Date Format,range:{id:X12_271_Date_Format_Qualifier-365_032},fmId:.04,id:date_format}],fmId:2.3228,id:Subscriber_Dates-2_3228,label:Subscriber Dates},fmId:8,id:subscriber_dates},{description:Additional subscriber information multiple.,datatype:[OBJECT],label:Subscriber Additional Info,range:{properties:[{description:Sequential number of ZII segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Place of service code.,datatype:POINTER,label:Place Of Service,range:{id:Place_Of_Service-353_1},fmId:.02,id:place_of_service},{description:Diagnosis code.,datatype:POINTER,label:Diagnosis,range:{id:Icd_Diagnosis-80},fmId:.03,id:diagnosis},{description:Additional information qualifier.,datatype:POINTER,label:Qualifier,range:{id:X12_271_Code_List_Qualifier-365_044},fmId:.04,id:qualifier},{description:Code that represents the nature of the patient injury.,datatype:POINTER,label:Nature Of Injury Code,range:{id:X12_271_Nature_Of_Injury_Codes-365_045},fmId:.05,id:nature_of_injury_code},{description:Specifies the situation or category to which the code applies.,datatype:STRING,label:Nature Of Injury Category,fmId:.06,id:nature_of_injury_category},{description:Describes the injured body part or parts.,datatype:STRING,label:Nature Of Injury Text,fmId:.07,id:nature_of_injury_text}],fmId:2.3229,id:Subscriber_Additional_Info-2_3229,label:Subscriber Additional Info},fmId:9,id:subscriber_additional_info},{description:Subscriber reference id multiple.,datatype:[OBJECT],label:Subscriber Reference Id,range:{properties:[{description:Sequential number of ZRF segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Reference id value.,datatype:STRING,label:Reference Id,fmId:.02,id:reference_id},{description:Code describing the type of reference id.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:.03,id:reference_id_qualifier},{description:Short description of reference id.,datatype:STRING,label:Description,fmId:.04,id:description}],fmId:2.32291,id:Subscriber_Reference_Id-2_32291,label:Subscriber Reference Id},fmId:10,id:subscriber_reference_id},{datatype:[POINTER],label:Service Types,range:{id:X12_271_Service_Type-365_013},fmId:11,id:service_types}],fmId:2.322,id:Eligibility_Benefit-2_322,label:Eligibility/Benefit} | 
 
-##Service_Oef_Or_Oif-2_3215 
+## Service_Oef_Or_Oif-2_3215 
 
  property | value 
 --- | --- 
  id | Service_Oef_Or_Oif-2_3215
  label | Service [Oef Or Oif]
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -603,16 +603,16 @@
 | oef_oif_to_date | .03 | Oef/Oif To Date | If the service indicated is OEF or UNKNOWN OEF/OIF, this date must be on\ror after 9/11/2001. If the service indicated is OIF, this date must be on\ror after 3/19/2003.\r \rThe meaning of this date depends on where the information was obtained\rfrom.  If the data came from the VIS, Environmental Medicine or FHIE\rsystems, this is the military pay end date for the assignment to\rthe OEF/OIF operation.  If it came from any other source, it is the date\rthe patient actually left the OEF/OIF area. | DATE-TIME |  |  |  | 
 | data_locked | .04 | Data Locked | This is a flag that indicates the data is 'locked' at the site and can't\rbe changed or deleted.  This flag is set to 1 if the source of the data\ris the HEC system. | BOOLEAN |  |  | {false:0,true:1} | 
 | recorded_date_time | .05 | Recorded Date/Time | This is a time stamp for when the data was last added/updated. | DATE-TIME |  |  |  | 
-| entered_by_site | .06 | Entered By Site | This is the facility where the data was originally entered.  If the\rdata's source was not from a facility, it will be assumed to be generated\rfrom HEC (CEV) and this field will be blank. | POINTER |  |  | {id:Institution-4} | 
+| entered_by_site | .06 | Entered By Site | This is the facility where the data was originally entered.  If the\rdata's source was not from a facility, it will be assumed to be generated\rfrom HEC (CEV) and this field will be blank. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 
-##Military_Service_Episode-2_3216 
+## Military_Service_Episode-2_3216 
 
  property | value 
 --- | --- 
  id | Military_Service_Episode-2_3216
  label | Military Service Episode
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -624,14 +624,14 @@
 | service_discharge_type | .06 | Service Discharge Type | For this veteran applicant, select from the available list the discharge\rtype which s/he received for this episode of military service.\r                                 \rIf the military service episode has been sent from the Health Eligibility\rCenter (HEC), the data will be locked and cannot be edited or deleted. | POINTER |  |  | {id:Type_Of_Discharge-25} | 
 | data_locked | .07 | Data Locked | When a military service episode is sent from HEC, the Data Locked field\rwill be set to '1' (YES).  The data in the military service episode can no\rlonger be changed or deleted. | BOOLEAN |  |  | {false:0,true:1} | 
 
-##Date_Of_Dental_Treatment-2_11 
+## Date_Of_Dental_Treatment-2_11 
 
  property | value 
 --- | --- 
  id | Date_Of_Dental_Treatment-2_11
  label | Date Of Dental Treatment
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -639,14 +639,14 @@
 | condition | 2 | Condition | Enter the patient's condition on the date in which they received dental\rtreatment.  Also enter the place of treatment and from whom the\rtreatment was received.  This field allows entry of 3-100 characters. | STRING |  |  |  | 
 | date_condition_first_noticed | 3 | Date Condition First Noticed | Enter the date the patient states s/he first noticed this dental\rcondition. | DATE-TIME |  |  |  | 
 
-##Rated_Disabilities_Va-2_04 
+## Rated_Disabilities_Va-2_04 
 
  property | value 
 --- | --- 
  id | Rated_Disabilities_Va-2_04
  label | Rated Disabilities (Va)
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -657,42 +657,42 @@
 | original_effective_date | 5 | Original Effective Date | Data will be stuffed from messages from the HEC.  This field indicates \rthe first date that this disability was evaluated. | DATE-TIME |  |  |  | 
 | current_effective_date | 6 | Current Effective Date | Data will be stuffed from messages from the HEC.  This field indicates \rthe most recent date that this disability was evaluated. | DATE-TIME |  |  |  | 
 
-##Service_Connected_Conditions-2_05 
+## Service_Connected_Conditions-2_05 
 
  property | value 
 --- | --- 
  id | Service_Connected_Conditions-2_05
  label | Service Connected Conditions
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | service_connected_conditions | .01 | Service Connected Conditions | Enter conditions as stated by applicant for which s/he claims service\rconnection. | STRING |  | REQUIRED |  | 
 | percentage | .02 | Percentage | Enter the percentage that the patient states this disability was rated\rat. | NUMERIC |  |  |  | 
 
-##Cd_Status_Procedures-2_397 
+## Cd_Status_Procedures-2_397 
 
  property | value 
 --- | --- 
  id | Cd_Status_Procedures-2_397
  label | Cd Status Procedures
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | cd_status_procedures | .01 | Cd Status Procedures | This is for storage of either CPT procedure or ICD procedure codes.  ICD \rcodes must be for the correct coding system, as determined by procedure \rdate and stored in file 27.17 piece 9. | POINTER |  | REQUIRED, INDEXED | {id:Catastrophic_Disability_Reasons-27_17} | 
 | affected_extremity | 1 | Affected Extremity | This is the affected extremity for this procedure. | ENUMERATION |  |  | <dl><dt>RLE</dt><dd>Right Lower Extremity</dd><dt>BLE</dt><dd>Bilateral Lower Extremity</dd><dt>LLE</dt><dd>Left Lower Extremity</dd><dt>LUE</dt><dd>Left Upper Extremity</dd><dt>BUE</dt><dd>Bilateral Upper Extremity</dd><dt>RUE</dt><dd>Right Upper Extremity</dd></dl> | 
 
-##Cd_Status_Conditions-2_398 
+## Cd_Status_Conditions-2_398 
 
  property | value 
 --- | --- 
  id | Cd_Status_Conditions-2_398
  label | Cd Status Conditions
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -700,14 +700,14 @@
 | score | 1 | Score | NOTE:  This field does not always contain the veteran's raw test\rscore.  Sometimes you must enter specific information about the\rscore that may apply to the determination of Catastrophic Disability.\rSee the help text above for more details. | NUMERIC |  |  |  | 
 | permanent_indicator | 2 | Permanent Indicator | This field contains the Permanent Indicator, which documents the \rCatastrophic Disability Conditions. | ENUMERATION |  |  | <dl><dt>3</dt><dd>UNKNOWN</dd><dt>1</dt><dd>PERMANENT</dd><dt>2</dt><dd>NOT PERMANENT</dd></dl> | 
 
-##Cd_History_Date-2_399 
+## Cd_History_Date-2_399 
 
  property | value 
 --- | --- 
  id | Cd_History_Date-2_399
  label | Cd History Date
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -715,7 +715,7 @@
 | veteran_catastrophically_disabled | .39 | Veteran Catastrophically Disabled? | Documents the Catastrophically Disabled status in the CD History. | BOOLEAN |  |  | {false:N,true:Y} | 
 | decided_by | .391 | Decided By | Captures a historical value of DECIDED BY (#.391) field in PATIENT file. | STRING |  |  |  | 
 | date_of_decision | .392 | Date Of Decision | Captures historical value of PATIENT field #.392 DATE OF DECISION. | DATE-TIME |  |  |  | 
-| facility_making_determination | .393 | Facility Making Determination | Captures a historical value of the FACILITY MAKING DETERMINATION field\r(#.393) of the PATIENT file. | POINTER |  |  | {id:Institution-4} | 
+| facility_making_determination | .393 | Facility Making Determination | Captures a historical value of the FACILITY MAKING DETERMINATION field\r(#.393) of the PATIENT file. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | review_date | .394 | Review Date | Captures a historical value of the PATIENT file's REVIEW DATE field\r(#.394). | DATE-TIME |  |  |  | 
 | method_of_determination | .395 | Method Of Determination | This sub-field stores the historical value of the PATIENT file's METHOD\rOF DETERMINATION field (#.395). | ENUMERATION |  |  | <dl><dt>1</dt><dd>AUTOMATED RECORD REVIEW</dd><dt>3</dt><dd>PHYSICAL EXAMINATION</dd><dt>2</dt><dd>MEDICAL RECORD REVIEW</dd></dl> | 
 | date_veteran_requested_cd_eval | .3951 | Date Veteran Requested Cd Eval | Documents the Date the Veteran Requested CD Evaluation for CD History. | DATE-TIME |  |  |  | 
@@ -723,14 +723,14 @@
 | date_veteran_was_notified | .3953 | Date Veteran Was Notified | Documents the date the Veteran was notified of the Catastrophically \rDisabled status for CD History. | DATE-TIME |  |  |  | 
 | cd_reason | .396 | Cd Reason | Documents the Catastrophically Disabled Reason for CD History. | [OBJECT] |  |  | {properties:[{description:This sub-field will contain pointers to the CD REASONS file (#27.17),\ras well as the supporting data stored in the CD STATUS DIAGNOSES (#.396),\rPROCEDURES (#.397) and CONDITIONS (#.398) fields.,datatype:POINTER,required:true,label:Cd Reason,range:{id:Catastrophic_Disability_Reasons-27_17},indexed:true,fmId:.01,id:cd_reason},{description:This is the extremity affected by the CD.,datatype:ENUMERATION,label:Affected Extremity,range:{RIGHT LOWER EXTREMITY:RLE,Bilateral Lower Extremity:BLE,LEFT LOWER EXTREMITY:LLE,LEFT UPPER EXTREMITY:LUE,Bilateral Upper Extremity:BLU,RIGHT UPPER EXTREMITY:RUE},fmId:1,id:affected_extremity},{description:This field stores a historical value for the SCORE subfield (#1) of the\rCD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:NUMERIC,label:Score,fmId:2,id:score},{description:This subfield stores a historical value of the PERMANENT INDICATOR subfield\r(#2) of the CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:ENUMERATION,label:Permanent Indicator,range:{UNKNOWN:3,PERMANENT:1,NOT PERMANENT:2},fmId:3,id:permanent_indicator}],fmId:2.409,id:Cd_Reason-2_409,label:Cd Reason} | 
 
-##Alias-2_01 
+## Alias-2_01 
 
  property | value 
 --- | --- 
  id | Alias-2_01
  label | Alias
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -738,57 +738,57 @@
 | alias_ssn | 1 | Alias Ssn | If the patient was also known under a name other than that listed in\rthe NAME field of the PATIENT file, enter the social security number\rused when the patient used this alias. | STRING |  |  |  | 
 | alias_components | 100.03 | Alias Components |  | POINTER |  |  | {id:Name_Components-20} | 
 
-##Race_Information-2_02 
+## Race_Information-2_02 
 
  property | value 
 --- | --- 
  id | Race_Information-2_02
  label | Race Information
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | race_information | .01 | Race Information | Patient's race | POINTER |  | REQUIRED, INDEXED | {id:Race-10} | 
 | method_of_collection | .02 | Method Of Collection | Method used to collect patient's race | POINTER |  |  | {id:Race_And_Ethnicity_Collection_Method-10_3} | 
 
-##Enrollment_Clinic-2_001 
+## Enrollment_Clinic-2_001 
 
  property | value 
 --- | --- 
  id | Enrollment_Clinic-2_001
  label | Enrollment Clinic
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| enrollment_clinic | .01 | Enrollment Clinic |  | POINTER |  | REQUIRED, INDEXED | {id:Hospital_Location-44} | 
+| enrollment_clinic | .01 | Enrollment Clinic |  | POINTER |  | REQUIRED, INDEXED | [Hospital_Location-44](Hospital_Location-44.md) | 
 | enrollment_data | 1 | Enrollment Data | This multiple contains the pertinant data relating to this patients\renrollment in this clinic.  Data contained in this multiple includes\rthe date the patient was enrolled, the date of discharge from the clinic\rand whether the patient was seen on an outpatient or ambulatory care basis. | [OBJECT] |  |  | {properties:[{description:Enter the date this patient was initially enrolled in this clinic.,datatype:DATE-TIME,required:true,label:Date Of Enrollment,fmId:.01,id:date_of_enrollment},{description:Enter O if the patient is being seen by this clinic on an outpatient\rbasis.  Enter A if the patient is being seen for ambulatory care.,datatype:ENUMERATION,label:Opt Or Ac,range:{OPT:O,AC:A},fmId:1,id:opt_or_ac},{description:This field contains the date this patient was discharged from this clinic.,datatype:DATE-TIME,label:Date Of Discharge,fmId:3,id:date_of_discharge},{description:If the patient has been discharged from this clinic, this field contains the\rreason the patient was discharged.  This is a free text field which\rallows up to 80 characters to be entered.,datatype:STRING,label:Reason For Discharge,fmId:4,id:reason_for_discharge},{description:Enter the date on which this patients enrollment in this particular\rclinic was last reviewed.,datatype:DATE-TIME,label:Review Date,fmId:5,id:review_date}],fmId:2.011,id:Enrollment_Data-2_011,label:Enrollment Data} | 
 | current_status | 2 | Current Status | This field will contain 'I' for inactive if this patient is no longer\renrolled in this clinic (patient has been discharged from the clinic). | ENUMERATION |  |  | <dl><dt>I</dt><dd>INACTIVE</dd></dl> | 
 
-##Ethnicity_Information-2_06 
+## Ethnicity_Information-2_06 
 
  property | value 
 --- | --- 
  id | Ethnicity_Information-2_06
  label | Ethnicity Information
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | ethnicity_information | .01 | Ethnicity Information | Patient's ethnicity | POINTER |  | REQUIRED, INDEXED | {id:Ethnicity-10_2} | 
 | method_of_collection | .02 | Method Of Collection | Method used to collect patient's ethnicity | POINTER |  |  | {id:Race_And_Ethnicity_Collection_Method-10_3} | 
 
-##Patient_Eligibilities-2_0361 
+## Patient_Eligibilities-2_0361 
 
  property | value 
 --- | --- 
  id | Patient_Eligibilities-2_0361
  label | Patient Eligibilities
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -796,14 +796,14 @@
 | long_id | .03 | Long Id | This field contains the patient's long ID associated with\rthe patient's ELIGIBILITY.  For most eligibilities this is the\rSocial Security Number.\r \rThis field is triggered by the 'ELIGILBILTY(#.01)' field.  It is\ruser defined only if this eligibility's id format allows this\ruser interaction as indicated by the 'PROMPT USER FOR ID?(#.02)'\rfield of the 'IDENTIFICATION FORMAT(#8.1)' file. | STRING |  |  |  | 
 | short_id | .04 | Short Id | This field contains the patient's short ID associated with\rthe patient's ELIGIBILITY.  For most eligibilities, this is the\rlast four digits of the Social Security Number.\r \rThis field is uneditable and triggered by the 'LONG ID(#.03)' field. | STRING |  |  |  | 
 
-##Ph_Date_Time_Updated-2_0534 
+## Ph_Date_Time_Updated-2_0534 
 
  property | value 
 --- | --- 
  id | Ph_Date_Time_Updated-2_0534
  label | Ph Date/Time Updated
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -813,30 +813,30 @@
 | ph_remarks | 3 | Ph Remarks | Field will be stuffed with CURRENT PURPLE HEART REMARKS field, if any, at\rtime of update. | ENUMERATION |  |  | <dl><dt>6</dt><dd>UNDELIVERABLE MAIL</dd><dt>5</dt><dd>VAMC</dd><dt>3</dt><dd>ENTERED IN ERROR</dd><dt>1</dt><dd>UNACCEPTABLE DOCUMENTATION</dd><dt>2</dt><dd>NO DOCUMENTATION REC'D</dd><dt>4</dt><dd>UNSUPPORTED PURPLE HEART</dd></dl> | 
 | ph_user | 4 | Ph User | Field will be stuffed with the user who updated PH information.  If\rlocal user, then the value will be the free text user name from the\rNEW PERSON file.  If updated by the HEC, then the value will be \r\HEC User\. | STRING |  |  |  | 
 
-##Icn_History-2_0992 
+## Icn_History-2_0992 
 
  property | value 
 --- | --- 
  id | Icn_History-2_0992
  label | Icn History
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | icn_history | .01 | Icn History | ICN History, to track changes in Integration Control Number for each\rpatient.  This will be used by mumps code to perform lookups when ICN\rcan't be found to see if it was used previously. | NUMERIC |  | REQUIRED |  | 
 | icn_checksum | 1 | Icn Checksum | ICN Checksum for ICN entered in multiple. | NUMERIC |  |  |  | 
-| cmor | 2 | Cmor | CMOR at the time of the ICN change. | POINTER |  |  | {id:Institution-4} | 
+| cmor | 2 | Cmor | CMOR at the time of the ICN change. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | date_time_of_change | 3 | Date/Time Of Change | Date/Time of change to the ICN. | DATE-TIME |  |  |  | 
 
-##Cmor_History-2_0993 
+## Cmor_History-2_0993 
 
  property | value 
 --- | --- 
  id | Cmor_History-2_0993
  label | Cmor History
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -845,14 +845,14 @@
 | cmor_score_calculation_date | 2 | Cmor Score Calculation Date | Date CMOR score was last calculated at time of change. | DATE-TIME |  |  |  | 
 | cmor_change_date | 3 | Cmor Change Date | Date CMOR was changed. | DATE-TIME |  |  |  | 
 
-##Disposition_LogIn_Date_Time-2_101 
+## Disposition_LogIn_Date_Time-2_101 
 
  property | value 
 --- | --- 
  id | Disposition_LogIn_Date_Time-2_101
  label | Disposition Log-In Date/Time
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -862,11 +862,11 @@
 | type_of_benefit_applied_for | 2 | Type Of Benefit Applied For | Enter the type of care this patient has applied for whether it be inpatient\r(dom, hospital, or nursing home) or outpatient (dental, or non-dental). | ENUMERATION |  |  | <dl><dt>3</dt><dd>OUTPATIENT MEDICAL</dd><dt>2</dt><dd>DOMICILIARY</dd><dt>1</dt><dd>HOSPITAL</dd><dt>4</dt><dd>OUTPATIENT DENTAL</dd><dt>5</dt><dd>NURSING HOME CARE</dd></dl> | 
 | type_of_care_applied_for | 2.1 | Type Of Care Applied For | Enter the type of care that the patient is requesting service for.  If\rthe patient will be receiving treatment for plastic surgery, dental care,\rsterilization, or pregnancy, enter that choice.  Otherwise, enter all\rother. | ENUMERATION |  |  | <dl><dt>3</dt><dd>STERILIZATION</dd><dt>4</dt><dd>PREGNANCY</dd><dt>1</dt><dd>DENTAL</dd><dt>2</dt><dd>PLASTIC SURGERY</dd><dt>5</dt><dd>ALL OTHER</dd></dl> | 
 | facility_applying_to | 3 | Facility Applying To | Enter the facility (division) at which this patient will be receiving\rcare.  This is a pointer to the MEDICAL CENTER DIVISION file. | POINTER |  |  | {id:Medical_Center_Division-40_8} | 
-| who_entered_10_10 | 4 | Who Entered 10/10 | The user who entered the registration (1010 application) for this patient\rwill automatically be stored in this field.  This field can be used for\rtracking purposes.  It should NOT be edited. | POINTER |  |  | {id:New_Person-200} | 
+| who_entered_10_10 | 4 | Who Entered 10/10 | The user who entered the registration (1010 application) for this patient\rwill automatically be stored in this field.  This field can be used for\rtracking purposes.  It should NOT be edited. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | log_out_date_time | 5 | Log Out Date Time | Enter in this field the date/time the patient was dispositioned. | DATE-TIME |  |  |  | 
 | disposition | 6 | Disposition | Enter the type of disposition this patient had.  Choose from the available\rlist whether the patient was scheduled for a future appointment, admitted\rto your facility or another facility, or was released from care without\rexam, for example.  Many other choices also exist. | POINTER |  |  | {id:Disposition-37} | 
 | reason_for_late_disposition | 8 | Reason For Late Disposition | As part of the 'MAS Parameter Entry/Edit' option, a site can determine how\rmay hours must elapse before a disposition is considered to be entered\rlate.  If the time between the registration (log-in) date/time and the\rdisposition (log-out) date/time is found to be more than the number of\rhours specified in the MAS parameters, the user will be prompted with\ra reason for the late disposition.  This is a pointer to the DISPOSITION\rLATE REASON file. | POINTER |  |  | {id:Disposition_Late_Reason-30} | 
-| who_dispositioned | 9 | Who Dispositioned | When a user dispositions a patient, the name of the user will automatically\rbe entered into this field.  This field can be used for tracking purposes\rat the site and should not be edited. | POINTER |  |  | {id:New_Person-200} | 
+| who_dispositioned | 9 | Who Dispositioned | When a user dispositions a patient, the name of the user will automatically\rbe entered into this field.  This field can be used for tracking purposes\rat the site and should not be edited. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | description_of_incident | 10 | Description Of Incident | If the patient was injured in an accident, a brief description (from 3-250\rcharacters) should be entered detailing what caused the injury. | STRING |  |  |  | 
 | eligible_for_medicaid | 12 | *Eligible For Medicaid | If this patient is eligible for medicaid, enter yes in this field.\rOtherwise, entere no.  This field is used for billing purposes. | BOOLEAN |  |  | {false:0,true:1} | 
 | registration_eligibility_code | 13 | Registration Eligibility Code | When a patient is registered, the user registering the patient will be\rasked for the patient's eligibility under which they are receiving care.\rThe default will be the primary eligibility code.  However, if the patient\ralso has other entitled eligibilities (employee, for example), one of\rthe other eligibilities may also be entered. | POINTER |  |  | {id:Eligibility_Code-8} | 
@@ -897,19 +897,19 @@
 | ods_at_registration | 11500.01 | Ods At Registration? | Enter yes if this patient was an ODS patient at the time of this registration.  Otherwise, respond no.\rthis registration.  Otherwise, respond no. | BOOLEAN |  |  | {false:0,true:1} | 
 | ods_registration_entry-2_101 |  | Ods Registration Entry | Enter the entry in the ODS REGISTRATIONS file which corresponds to this registration. |  |  |  |  | 
 
-##Appointment-2_98 
+## Appointment-2_98 
 
  property | value 
 --- | --- 
  id | Appointment-2_98
  label | Appointment
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | appointment_date_time | .001 | Appointment Date/Time | This displays date/time function as defined in file manager.  The\rdate/time of the appointment.\r| | IEN |  |  |  | 
-| clinic | .01 | Clinic |  | POINTER |  | REQUIRED | {id:Hospital_Location-44} | 
+| clinic | .01 | Clinic |  | POINTER |  | REQUIRED | [Hospital_Location-44](Hospital_Location-44.md) | 
 | status | 3 | Status | This field contains the current status of the patient's appointment.  If\rthe field is blank, it means the appointment has not been no-showed or\rcancelled and the patient was not an inpatient at the time of the\rappointment.  This field is set automatically by the scheduling module and\rmust NOT be edited. | ENUMERATION |  |  | <dl><dt>I</dt><dd>INPATIENT APPOINTMENT</dd><dt>NT</dt><dd>NO ACTION TAKEN</dd><dt>N</dt><dd>NO-SHOW</dd><dt>PCA</dt><dd>CANCELLED BY PATIENT & AUTO-REBOOK</dd><dt>NA</dt><dd>NO-SHOW & AUTO RE-BOOK</dd><dt>C</dt><dd>CANCELLED BY CLINIC</dd><dt>CA</dt><dd>CANCELLED BY CLINIC & AUTO RE-BOOK</dd><dt>PC</dt><dd>CANCELLED BY PATIENT</dd></dl> | 
 | lab_date_time | 5 | Lab Date/Time | If this patient is scheduled for laboratory tests in conjunction with this\rappointment, enter the date/time the patient should report to the lab for\rthese tests. | DATE-TIME |  |  |  | 
 | xray_date_time | 6 | X-Ray Date/Time | If this patient is scheduled for x-rays in conjunction with this\rappointment, enter the date/time the patient should report to radiology\rfor these x-rays. | DATE-TIME |  |  |  | 
@@ -922,12 +922,12 @@
 | number_of_collateral_seen | 11 | Number Of Collateral Seen | If this patient is a collateral, enter the number assigned to that\rcollateral. | NUMERIC |  |  |  | 
 | autorebooked_appt_date_time | 12 | Auto-Rebooked Appt. Date/Time | If this appointment was cancelled and automatically rebooked for a future\rdate, this field will contain the date/time for which this appointment\rwas rescheduled.  This field is created automatically by the scheduling\rmodule and should not be edited. | DATE-TIME |  |  |  | 
 | collateral_visit | 13 | Collateral Visit | If this patient was seen as a collateral for another patient, enter YES\rin this field.  Otherwise, enter NO. | BOOLEAN |  |  | {true:1} | 
-| noshow_cancelled_by | 14 | No-Show/Cancelled By | If this appointment was listed as a no-show and was that no-show was\rsubsequently cancelled, this field will contain the user that cancelled\rthe no-show.  This field is set automatically by the MAS module and should\rnot be edited. | POINTER |  |  | {id:New_Person-200} | 
+| noshow_cancelled_by | 14 | No-Show/Cancelled By | If this appointment was listed as a no-show and was that no-show was\rsubsequently cancelled, this field will contain the user that cancelled\rthe no-show.  This field is set automatically by the MAS module and should\rnot be edited. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | noshow_cancel_date_time | 15 | No-Show/Cancel Date/Time | If this appointment was listed as a no-show and that no-show was\rsubsequently cancelled, this field will contain the date/time the no-show\rwas cancelled.  This field is set automatically by the scheduling module\rand should not be edited. | DATE-TIME |  |  |  | 
 | cancellation_reason | 16 | Cancellation Reason | If this appointment was cancelled, this field will contain the reason the\rappointment was cancelled.  Choose from the available entries in the\rCANCELLATION REASONS file. | POINTER |  |  | {id:Cancellation_Reasons-409_2} | 
 | cancellation_remarks | 17 | Cancellation Remarks | If this appointment was cancelled, additional remarks as to the reason\rthe appointment was cancelled can be entered.  This is optional. | STRING |  |  |  | 
-| appt_cancelled | 18 | Appt. Cancelled | Field is set when user cancels another appointment set at the same time\rin another clinic for the same patient. This field reflects the clinic\rin which the patient had a scheduled appointment which was cancelled to\rset this appointment. | POINTER |  |  | {id:Hospital_Location-44} | 
-| data_entry_clerk | 19 | Data Entry Clerk | This field contains the name of the user that entered the appointment\rinto the scheduling system.  This field is created automatically by the\rscheduling module and should not be edited. | POINTER |  |  | {id:New_Person-200} | 
+| appt_cancelled | 18 | Appt. Cancelled | Field is set when user cancels another appointment set at the same time\rin another clinic for the same patient. This field reflects the clinic\rin which the patient had a scheduled appointment which was cancelled to\rset this appointment. | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
+| data_entry_clerk | 19 | Data Entry Clerk | This field contains the name of the user that entered the appointment\rinto the scheduling system.  This field is created automatically by the\rscheduling module and should not be edited. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_appt_made | 20 | Date Appt. Made | This field contains the date the appointment was entered into sheduling\rsystem.  This field is creatd automatically by the scheduling module and\rshould not be edited. | DATE-TIME |  |  |  | 
 | outpatient_encounter | 21 | Outpatient Encounter |  | POINTER |  |  | {id:Outpatient_Encounter-409_68} | 
 | encounter_forms_printed | 22 | Encounter Forms Printed | Used by the Print Manager to indicate that it has printed\rthe encounter forms and other reports required by the division and\rclinic for the appointment. | BOOLEAN |  |  | {false:0,true:1} | 
@@ -939,14 +939,14 @@
 | desired_date_of_appointment | 27 | Desired Date Of Appointment |  | DATE-TIME |  |  |  | 
 | followup_visit | 28 | Follow-Up Visit |  | BOOLEAN |  |  | {false:0,true:1} | 
 
-##Archived_Data-2_12 
+## Archived_Data-2_12 
 
  property | value 
 --- | --- 
  id | Archived_Data-2_12
  label | Archived Data
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

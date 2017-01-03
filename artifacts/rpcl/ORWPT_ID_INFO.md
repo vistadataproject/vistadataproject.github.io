@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORWPT ID INFO 
+## [RPCL](TableOfContent.md) --> ORWPT ID INFO 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | Returns identifying information for a patient.
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

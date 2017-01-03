@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> New_Person-200 
+## [VDM](TableOfContent.md) --> New_Person-200 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^VA(200,
  description | This file contains data on employees, users, practitioners, etc.\rwho were previously in Files 3,6,16 and others.\r \rDHCP packages must check with the KERNEL developers to see that\ra given number/namespace is clear for them to use.\r \rField numbers 53-59.9 reserved for Pharm.\r Nodes and X-ref 'PS*'.\rField numbers 70-79.9 reserved for Radiology\r Nodes and X-ref 'RA*'.\rField numbers 720-725 reserved for DSSM\r Nodes and X-ref 'EC*' and 'AEC*'.\rField numbers 740-749.9 reserved for QA\r Nodes and X-ref 'QA*'.\rField numbers 654-654.9 reserved for Social work\r Node 654 and X-ref 'SW*'.\rField numbers 500-500.9 reserved for mailman\r Node 500 and X-ref 'XM*' and 'AXM*'.\rField numbers 740-749.9 reserved for QA\r Nodes and X-ref 'QA*'.\rField numbers 910-910.9 reserved for Police Package\r Node and X-ref 'ESP'
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -65,7 +65,7 @@
 | current_degree_level | 12.1 | Current Degree Level | This is the current degree level upon entry into the current training\rprogram/residency at this VA medical facility. | POINTER |  |  | {id:Hl7_Degree-771_9} | 
 | program_of_study | 12.2 | Program Of Study | This is the discipline that best describes the trainee's current\rprogram of study at this VA medical facility. | POINTER |  |  | {id:Program_Of_Study-8932_2} | 
 | last_training_month__year | 12.3 | Last Training Month & Year | This is the MONTH and LAST year the trainee anticipates being in a\rtraining program at this VA medical facility. | STRING |  |  |  | 
-| vha_training_facility | 12.4 | Vha Training Facility |  | POINTER |  |  | {id:Institution-4} | 
+| vha_training_facility | 12.4 | Vha Training Facility |  | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | date_hl7_trainee_record_built | 12.5 | Date Hl7 Trainee Record Built | This is the date that the trainee information was built and sent to the\rOAA server. | DATE-TIME |  | INDEXED |  | 
 | clinical_core_trainee | 12.6 | Clinical Core Trainee | This field designates whether or not the person is an active Trainee. | BOOLEAN |  |  | {false:N,true:Y} | 
 | date_no_longer_trainee | 12.7 | Date No Longer Trainee | This is the date when a Registered Trainee is no longer to be considered\ran trainee.  This may be at the end of a rotation period or at the end VA\rtraining experience. | DATE-TIME |  |  |  | 
@@ -75,7 +75,7 @@
 | hinq_employee_number | 14.9 | Hinq Employee Number | The employee number associated with HINQ passwords from the DVB should\rbe entered here. | STRING |  | INDEXED |  | 
 | prohibited_times_for_signon | 15 | Prohibited Times For Sign-on | This is a pair of times within which the user will not be allowed\raccess to the computer.\rThey should be entered in Military format, for example 0900-1300 would\rprohibit signons from 9AM to 1PM each day. | STRING |  |  |  | 
 | division | 16 | Division | This is the one or more divisions that this user may sign-on and do\rwork for. | [OBJECT] |  |  | [Division-200_02](#division-200_02)  | 
-| delegate_of | 19 | Delegate Of | This field holds the name of the person who has delegated menu manager\rauthority to the user.  The user is thus the 'delegate of' the person\rnamed here. | POINTER |  |  | {id:New_Person-200} | 
+| delegate_of | 19 | Delegate Of | This field holds the name of the person who has delegated menu manager\rauthority to the user.  The user is thus the 'delegate of' the person\rnamed here. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | delegation_date | 19.1 | Delegation Date | This field records the data that the user became a delegate. | DATE-TIME |  |  |  | 
 | delegation_level | 19.2 | Delegation Level | This field records the level of delegation authority with respect to\rthe systems manager, level zero.  When the systems manager delegates\rauthority to someone else, that person will be at level one.  Levels\rare maintained so that lower level delegates cannot interfere with\rthe menus of higher level delegates. | NUMERIC |  |  |  | 
 | alert_date_time | 19.4 | Alert Date/time | This is a multiple field which is used to generate alerts to the users.\rThe data for alerts is filed by date and time. | [OBJECT] |  |  | [Alert_Date_Time-200_194](#alert_date_time-200_194)  | 
@@ -90,7 +90,7 @@
 | mail_code | 28 | Mail Code | This is the mail code for the new person. | STRING |  |  |  | 
 | service_section | 29 | Service/section | This is the name of the service or section for the new person. | POINTER |  | REQUIRED, INDEXED | {id:Service_section-49} | 
 | date_entered | 30 | Date Entered | This is the date on which the user was entered into the user file.\rIt is automatically inserted into the file by the ADD USER option. | DATE-TIME |  |  |  | 
-| creator | 31 | Creator | This is the name of the user who entered this user into the user file.\rIt is automatically set by the ADD USER option. | POINTER |  |  | {id:New_Person-200} | 
+| creator | 31 | Creator | This is the name of the user who entered this user into the user file.\rIt is automatically set by the ADD USER option. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | file_range | 31.1 | File Range | This field limits a user to a specific range of file numbers.  When\rcreating new files, only a number within this range can be assigned\rto the new file. | STRING |  |  |  | 
 | text_terminator | 31.2 | Text Terminator | If specified, the character string in this field will be used instead\rof a carriage return to mark the end of word-processing text.  It will\rbe used in all VA FileMan word-processing contexts, e.g. in mail\rmessages.  It can facilitate the uploading of files from a PC\renvironment.\r \rNote that the VA FileMan edit menu provides an option for temporarily\rspecifying a text terminator for that edit session only. | STRING |  |  |  | 
 | preferred_editor | 31.3 | Preferred Editor | If an entry exists in this field, then whenever a user edits data in a\rFileMan word-processing field, they will automatically be transferred into\rtheir preferred editor.  If this field is blank, then the default editor\rwill be either the FileMan screen editor when editing within ScreenMan\rformat, or the standard FileMan line editor in all other cases. | POINTER |  |  | {id:Alternate_Editor-1_2} | 
@@ -113,14 +113,14 @@
 | provider_class | 53.5 | Provider Class | This field is used to show the providers class. | POINTER |  |  | {id:Provider_Class-7} | 
 | provider_type | 53.6 | Provider Type | This field is used to show the type of provider (staff, fee, etc.) | ENUMERATION |  |  | <dl><dt>4</dt><dd>FEE BASIS</dd><dt>3</dt><dd>C & A</dd><dt>1</dt><dd>FULL TIME</dd><dt>2</dt><dd>PART TIME</dd><dt>5</dt><dd>HOUSE STAFF</dd></dl> | 
 | requires_cosigner | 53.7 | Requires Cosigner | This field is used to determine if the provider needs a cosigner. | BOOLEAN |  |  | {true:1} | 
-| usual_cosigner | 53.8 | Usual Cosigner | This field is used to show the usual cosigner for the provider. | POINTER |  |  | {id:New_Person-200} | 
+| usual_cosigner | 53.8 | Usual Cosigner | This field is used to show the usual cosigner for the provider. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | remarks | 53.9 | Remarks | This field is used to enter remarks and or comments about the provider. | STRING |  |  |  | 
 | nonva_prescriber | 53.91 | Non-va Prescriber | The Transitional Pharmacy Care Project (TPB) introduces fields 53.91 - \r53.96, to allow a NON-VA Physician to be added to the New Person file\r(#200), so that Outpatient Pharmacy could process medication prescribed by\rsuch physicians.\r \rA value of 1 indicates that this person is a NON-VA Physician. | BOOLEAN |  |  | {false:0,true:1} | 
 | tax_id | 53.92 | Tax Id | TAX ID of the NON-VA Physician's Private Clinic, where the prescription\rwas written. | STRING |  |  |  | 
 | exclusionary_check_performed | 53.93 | Exclusionary Check Performed | Department of Health and Human Services provides an exclusionary list of\rMedical Practitioners (providers excluded are those who are not allowed to\rreceive payment for government services due to various reasons). When\radding NON-VA Physicians, they must be checked against this list.\r \rA value of 1 indicates that an Exclusionary Check was performed for this\rphysician. | BOOLEAN |  |  | {true:1} | 
 | date_exclusionary_list_checked | 53.94 | Date Exclusionary List Checked | The date Exclusionary Check was performed. | DATE-TIME |  |  |  | 
 | on_exclusionary_list | 53.95 | On Exclusionary List | Was the NON-VA Physician on the Exclusionary Check List?\rA value of 1 indicates that the Physician was on the Exclusionary Check. | BOOLEAN |  |  | {false:0,true:1} | 
-| exclusionary_checked_by | 53.96 | Exclusionary Checked By | User ID of the person who made the entry. | POINTER |  |  | {id:New_Person-200} | 
+| exclusionary_checked_by | 53.96 | Exclusionary Checked By | User ID of the person who made the entry. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | licensing_state | 54.1 | Licensing State | This multiple contains credentialing information about a provider\rthat is used by the state. | [OBJECT] |  |  | [Licensing_State-200_541](#licensing_state-200_541)  | 
 | state_issuing_dea_number | 54.2 | State Issuing Dea Number | This mutiple contains the DEA# issued by a state in order to allow\rproviders to write medication orders for controlled medications. | [OBJECT] |  |  | [State_Issuing_Dea_Number-200_55](#state_issuing_dea_number-200_55)  | 
 | schedule_ii_narcotic | 55.1 | Schedule Ii Narcotic | This field is used to determine if the provider has privileges for \rSchedule II narcotic. | BOOLEAN |  |  | {false:0,true:1} | 
@@ -173,10 +173,10 @@
 | network_username | 501.1 | Network Username | This is the username that is used by the Windows Active Directory.\rIt should be 'VHA' + 3 char station ID + first 5 of last name + first\rcharacter of first name.\rHolders of the XUMGR key can override this. | STRING |  |  |  | 
 | subject_alternative_name | 501.2 | Subject Alternative Name | This is a name from the PIV card field SUBJECT ALTERNATIVE NAME\ralso known as USER PRINCIPLE NAME. \r \rThe subject alternative name extension allows identities to be bound\rto the subject of the certificate.  These identities may be included\rin addition to or in place of the identity in the subject field of\rthe certificate.  Subject alternative name is defined by an Internet \relectronic mail address.\r \rWhen the subjectAltName extension contains an Internet mail address,\rthe address MUST be stored in the rfc822Name.\r | STRING |  | INDEXED |  | 
 | social_worker_ | 654 | Social Worker ? | This field will be used to indicate if the user is a Social Worker.\rIt will also act as a screen for lookups. | BOOLEAN |  |  | {false:0,true:1} | 
-| immediate_supervisor | 654.1 | Immediate Supervisor | This field is used to indicate the immediate supervisor of the social worker. | POINTER |  | INDEXED | {id:New_Person-200} | 
+| immediate_supervisor | 654.1 | Immediate Supervisor | This field is used to indicate the immediate supervisor of the social worker. | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
 | position_title | 654.15 | Position/title | This field will be used to indicate the position/title of the social worker. | ENUMERATION |  |  | <dl><dt>4</dt><dd>SW COORDINATOR</dd><dt>3</dt><dd>SUPERVISOR</dd><dt>1</dt><dd>SW CHIEF</dd><dt>2</dt><dd>ASST. CHIEF</dd><dt>5</dt><dd>SOCIAL WORKER</dd><dt>10</dt><dd>VOLUNTEER</dd><dt>6</dt><dd>SW ASSOCIATE</dd><dt>9</dt><dd>STUDENT</dd><dt>8</dt><dd>SW CLERK/STENO</dd><dt>11</dt><dd>WOC</dd><dt>7</dt><dd>SECRETARY</dd></dl> | 
 | social_workers_number | 654.2 | Social Worker's Number | Unique number assigned to social worker by service.  Enter a number 01-999. | NUMERIC |  | INDEXED |  | 
-| surrogate | 654.3 | Surrogate | This field will be used to indicate a surrogate supervisor.  When this\rfield has data, the surrogate supervisor will have access to data pertaining\rto worker information for the surrogated supervisor. | POINTER |  | INDEXED | {id:New_Person-200} | 
+| surrogate | 654.3 | Surrogate | This field will be used to indicate a surrogate supervisor.  When this\rfield has data, the surrogate supervisor will have access to data pertaining\rto worker information for the surrogated supervisor. | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
 | dmms_units | 720 | Dmms Units | This multiple field contains the DMMS units to which this person has\raccess for entering data and generating reports. | [POINTER] |  |  | {id:Dss_Unit-724} | 
 | appointment_status | 747.11 | Appointment Status | Contains the Appointment Status for this person. | ENUMERATION |  |  | <dl><dt>1</dt><dd>FULL-TIME</dd><dt>5</dt><dd>RESIDENT</dd><dt>3</dt><dd>CONSULTING</dd><dt>4</dt><dd>CONTRACT</dd><dt>6</dt><dd>FEE BASIS, ON STATION</dd><dt>2</dt><dd>PART-TIME</dd><dt>9</dt><dd>OTHER</dd><dt>7</dt><dd>SPECIALTY FELLOW</dd><dt>8</dt><dd>WOC</dd></dl> | 
 | renew_date | 747.113 | Renew Date | Contains the Renewal Date for our General Privilege. | DATE-TIME |  |  |  | 
@@ -210,42 +210,42 @@
 | ess_people | 776000 | Ess People |  | STRING |  |  |  | 
 | ess_customer_id | 776001 | Ess Customer Id |  | STRING |  |  |  | 
 
-##User_Class-200_07 
+## User_Class-200_07 
 
  property | value 
 --- | --- 
  id | User_Class-200_07
  label | User Class
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | user_class | .01 | User Class |  | POINTER |  | REQUIRED, INDEXED | {id:User_Class-201} | 
 | isprimary | 2 | Isprimary | This field notes if this User Class is the primary User Class for this \ruser.  If returning just one User Class then this is the one to be \rreturned. | BOOLEAN |  |  | {false:1,true:0} | 
 
-##Division-200_02 
+## Division-200_02 
 
  property | value 
 --- | --- 
  id | Division-200_02
  label | Division
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| division | .01 | Division | The name of a Division that this user may sign on to. | POINTER |  | REQUIRED, INDEXED | {id:Institution-4} | 
+| division | .01 | Division | The name of a Division that this user may sign on to. | POINTER |  | REQUIRED, INDEXED | [Institution-4](Institution-4.md) | 
 | default | 1 | Default | This field is used to indicate that a particular division should be\rpresented to the user as a default when selecting a division.  This will\ronly affect users that have more than one division.\rA cross reference will only allow one entry to have this flag set. | BOOLEAN |  |  | {false:0,true:1} | 
 
-##Alert_Date_Time-200_194 
+## Alert_Date_Time-200_194 
 
  property | value 
 --- | --- 
  id | Alert_Date_Time-200_194
  label | Alert Date Time
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -261,58 +261,58 @@
 | first_data_piece | .1 | First Data Piece | This field and all following ^-separated fields are processed as a single\rentity and are returned in the variable XQADATA for use by the application\rwhich generated the alert.  The package may pass a series of variables\rusing any desired separator in the variable XQADATA at the time the alert\ris setup.  When the alert is processed the value of XQADATA is returned to\rthe application and may be used to establish parameters related to the\ralert without requiring interaction or provision of information by the\ruser.  In this way information related to patient entry number, specific\rinternal numbers for the desired data, etc may be stored and returned. | STRING |  |  |  | 
 | data_string | 1 | Data String |  | STRING |  |  |  | 
 
-##Delegated_Options-200_19 
+## Delegated_Options-200_19 
 
  property | value 
 --- | --- 
  id | Delegated_Options-200_19
  label | Delegated Options
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | delegated_options | .01 | Delegated Options | This field identifies which options this user may delegate to others. | POINTER |  | REQUIRED, INDEXED | {id:Option-19} | 
-| delegated_by | 1 | Delegated By | This field indicates who granted authority for this user to delegate\rthis option to others. | POINTER |  |  | {id:New_Person-200} | 
+| delegated_by | 1 | Delegated By | This field indicates who granted authority for this user to delegate\rthis option to others. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_delegated | 2 | Date Delegated | This field records the date when this option was added to the list\rof options this user may delegate to others. | DATE-TIME |  |  |  | 
 | editable | 3 | Editable | This field indicates whether this use is allowed to edit this option. | BOOLEAN |  |  | {false:1,true:0} | 
 
-##Menu_Template-200_198 
+## Menu_Template-200_198 
 
  property | value 
 --- | --- 
  id | Menu_Template-200_198
  label | Menu Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | menu_template | .01 | Menu Template |  | STRING |  | REQUIRED, INDEXED |  | 
 | pathway | 1 | Pathway | This multiple contains the information on the option sequence specified\rfor a given MENU TEMPLATE. | STRING |  |  |  | 
 
-##Uci-200_01 
+## Uci-200_01 
 
  property | value 
 --- | --- 
  id | Uci-200_01
  label | Uci
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | uci | .01 | Uci | This is one of a set of UCI's that this user may choose to work in\rat sign-on time. | STRING |  | REQUIRED, INDEXED |  | 
 | routines_rn1rn2 | 2 | Routines (rn1:rn2) | This is a list of routines that the user may choose to run when signing on\rto this UCI.  The routines are seperated by ':'s. | STRING |  |  |  | 
 
-##Accessible_File-200_032 
+## Accessible_File-200_032 
 
  property | value 
 --- | --- 
  id | Accessible_File-200_032
  label | Accessible File
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -325,14 +325,14 @@
 | write_access | 5 | Write Access | This field is a flag that, when set to 1, gives the user write access to\rthe file (in the .01 field) represented in this record. | BOOLEAN |  |  | {false:0,true:1} | 
 | audit_access | 6 | Audit Access | This field is a flag that, when set to 1, gives the user audit access to\rthe file (in the .01 field) represented in this record. | BOOLEAN |  |  | {false:0,true:1} | 
 
-##Effective_Date_time-200_042 
+## Effective_Date_time-200_042 
 
  property | value 
 --- | --- 
  id | Effective_Date_time-200_042
  label | Effective Date/time
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -340,46 +340,46 @@
 | status | .02 | Status | The Status of an NPI is either 'ACTIVE' or 'INACTIVE'. I 'ACTIVE' then \rthe NPI will be accessible by end-users to document a particular \rprovider. If 'INACTIVE', then the NPI will only be accessible by the \rapplication to display legacy data. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
 | npi | .03 | Npi | Each VHA Billable Practitioner should have applied for the NPI through\rCMS' National Plan and Provider Enumeration System (NPPES).  NPI\rConfirmation Letters are sent by CMS and indicate the NPI assigned.\rPractitioners may present their NPI Confirmation Letter as a source\rdocument to verify the accuracy of the NPI or you may contact your Local\rNPI Maintenance Team Leader for assistance. | STRING |  | REQUIRED, INDEXED |  | 
 
-##Keys-200_051 
+## Keys-200_051 
 
  property | value 
 --- | --- 
  id | Keys-200_051
  label | Keys
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | key | .01 | Key | This is a security key that this person holds. | POINTER |  | REQUIRED, INDEXED | {id:Security_Key-19_1} | 
-| given_by | 1 | Given By | This is a pointer to the person that entered this security  key into this\rpersons file. | POINTER |  |  | {id:New_Person-200} | 
+| given_by | 1 | Given By | This is a pointer to the person that entered this security  key into this\rpersons file. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_given | 2 | Date Given | This is the date that the security key was given to the person.\rThere is know history. | DATE-TIME |  |  |  | 
 | review_date | 3 | Review Date | This is the date after which the persons need for this security key should\rbe reviewed. | DATE-TIME |  |  |  | 
 
-##Delegated_Keys-200_052 
+## Delegated_Keys-200_052 
 
  property | value 
 --- | --- 
  id | Delegated_Keys-200_052
  label | Delegated Keys
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | delegated_key | .01 | Delegated Key | This is a security key that this person my allocate to another person. | POINTER |  | REQUIRED, INDEXED | {id:Security_Key-19_1} | 
-| delegated_by | 1 | Delegated By | This is the person that gave the security key that may be delegated. | POINTER |  |  | {id:New_Person-200} | 
+| delegated_by | 1 | Delegated By | This is the person that gave the security key that may be delegated. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_delegated | 2 | Date Delegated | This is the date that the security key was given to be delegated. | DATE-TIME |  |  |  | 
 | may_redelegate | 3 | May Re-delegate | Re-delegation means that the person has total control over the key,\rthe person may not only delegate the key to others but may also give\rothers the authorization to delegate it. | ENUMERATION |  |  | <dl><dt>1</dt><dd>YES</dd><dt>0</dt><dd>no</dd><dt>1</dt><dd>yes</dd><dt>0</dt><dd>NO</dd></dl> | 
 
-##Licensing_State-200_541 
+## Licensing_State-200_541 
 
  property | value 
 --- | --- 
  id | Licensing_State-200_541
  label | Licensing State
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -387,28 +387,28 @@
 | license_number | 1 | License Number | This is the licence number that was issued to a provider by the sate\rhe is licenced in. | STRING |  | REQUIRED |  | 
 | expiration_date | 2 | Expiration Date | This is the expiration date of the provider's licence issued by the state.\rby the state. | DATE-TIME |  | REQUIRED |  | 
 
-##State_Issuing_Dea_Number-200_55 
+## State_Issuing_Dea_Number-200_55 
 
  property | value 
 --- | --- 
  id | State_Issuing_Dea_Number-200_55
  label | State Issuing Dea Number
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | state_issuing_dea_number | .01 | State Issuing Dea Number | This is the state which has issued a State DEA# to a provider.  Not all\rstates require a seperate DEA # | POINTER |  | REQUIRED, INDEXED | {id:State-5} | 
 | state_dea_number | 1 | State Dea Number | This is the DEA # issued by an individual state, it is not required\rby all states and in some cases may be the same as the Federal\rDEA #. | STRING |  | REQUIRED |  | 
 
-##Cprs_Tab-200_010113 
+## Cprs_Tab-200_010113 
 
  property | value 
 --- | --- 
  id | Cprs_Tab-200_010113
  label | Cprs Tab
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -416,42 +416,42 @@
 | effective_date | .02 | Effective Date | This is the effective date of access to the CPRS tab. | DATE-TIME |  | REQUIRED |  | 
 | expiration_date | .03 | Expiration Date | This is the expiration date of access to the CPRS tab. | DATE-TIME |  |  |  | 
 
-##Secondary_Menu_Options-200_03 
+## Secondary_Menu_Options-200_03 
 
  property | value 
 --- | --- 
  id | Secondary_Menu_Options-200_03
  label | Secondary Menu Options
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | secondary_menu_options | .01 | Secondary Menu Options | This is an option which is merged with the users primary menu\rand XUCOMMAND option, giving the user this option on all of her/his\rmenus. | POINTER |  | REQUIRED, INDEXED | {id:Option-19} | 
 | synonym | 2 | Synonym | This is a user-specific synonym which may be used in addressing this\roption. | STRING |  |  |  | 
 
-##Personal_Diagnoses_List-200_0351 
+## Personal_Diagnoses_List-200_0351 
 
  property | value 
 --- | --- 
  id | Personal_Diagnoses_List-200_0351
  label | Personal Diagnoses List
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| diagnosis | .01 | Diagnosis | A diagnosis in the provider's preferred list. | POINTER |  | REQUIRED, INDEXED | {id:Icd_Diagnosis-80} | 
-| expression | 1 | Expression | This is the diagnosis code's Lexicon\rexpression as stored in the EXPRESSION file,\rfile # 757.01. | POINTER |  |  | {id:Expressions-757_01} | 
+| diagnosis | .01 | Diagnosis | A diagnosis in the provider's preferred list. | POINTER |  | REQUIRED, INDEXED | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
+| expression | 1 | Expression | This is the diagnosis code's Lexicon\rexpression as stored in the EXPRESSION file,\rfile # 757.01. | POINTER |  |  | [Expressions-757_01](Expressions-757_01.md) | 
 
-##Network_Address-200_005 
+## Network_Address-200_005 
 
  property | value 
 --- | --- 
  id | Network_Address-200_005
  label | Network Address
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -470,14 +470,14 @@
 | private_administrative_domain | 98 | Private Administrative Domain | For X.400 addresses this field is standard.  For mapping into the SMTP\rmail system (MailMan is an SMTP mail system.), this field is filled in\rwith a special string.  'DHCP' will be interpreted as \.VA.GOV\ for all\rDepartment of Veterans' Affairs SMTP systems.  If the address does have\r\DHCP' in this field, MailMan will try to deliver it to a VA site.  If\rthe address has anything else, MailMan will try to deliver to an X.400\rsystem as of 11/90.  Later there may be additional special PRMDs. | STRING |  |  |  | 
 | administrative_domain | 99 | Administrative Domain | The Administrative domain is the carrier of the electronic channels.  Some\rexamples of carriers in the US are US SPRINT, AT&T and MCI Communications.\rThis field is required only for X.400 addresses. | STRING |  |  |  | 
 
-##Visited_From-200_06 
+## Visited_From-200_06 
 
  property | value 
 --- | --- 
  id | Visited_From-200_06
  label | Visited From
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -488,14 +488,14 @@
 | last_visited | 4 | Last Visited | This field is updated each time a visitor arrives from the site in the .01\rfield. | DATE-TIME |  |  |  | 
 | phone_at_site | 5 | Phone At Site | This field may contain a phone number for the visitor at their home site.\rSince phone numbers are not always entered, this field may be blank. | STRING |  |  |  | 
 
-##Person_Class-200_05 
+## Person_Class-200_05 
 
  property | value 
 --- | --- 
  id | Person_Class-200_05
  label | Person Class
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -503,14 +503,14 @@
 | effective_date | 2 | Effective Date | This field is trigger by adding a new person class. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | expiration_date | 3 | Expiration Date | This field is the date after which this class becomes inactive.\rThis field must be not less than the EFFECTIVE DATE and not greater \rthan the DATE INACTIVATED field(#4) of the Person Class entry in the\rPERSON CLASS file(#8932.1).\r       \rIt will get triggered if a new Person Class is entered or someone\redits the field to inactivate the class. | DATE-TIME |  |  |  | 
 
-##Defined_Formats_For_Lm-200_0089832 
+## Defined_Formats_For_Lm-200_0089832 
 
  property | value 
 --- | --- 
  id | Defined_Formats_For_Lm-200_0089832
  label | Defined Formats For Lm
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -518,14 +518,14 @@
 | default | 1 | Default | If set to yes, this format line will be used as the default format line\rwhen using the screen editor.  If a document already has a format line\rdefined, then the document format will be used. | BOOLEAN |  | INDEXED | {false:n,true:y} | 
 | format_line | 2 | Format Line | This field stores the predefined format lines of the user. | STRING |  |  |  | 
 
-##Defined_Phrases_For_Lm-200_0089833 
+## Defined_Phrases_For_Lm-200_0089833 
 
  property | value 
 --- | --- 
  id | Defined_Phrases_For_Lm-200_0089833
  label | Defined Phrases For Lm
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

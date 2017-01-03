@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> VA_Generic-50_6 
+## [VDM](TableOfContent.md) --> VA_Generic-50_6 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^PSNDF(50.6,
  description | 
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

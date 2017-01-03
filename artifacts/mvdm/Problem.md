@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Problem 
+## [MVDM](TableOfContent.md) --> Problem 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 9000011 FILTER(1.02='P')
  fromVDMListPerPatient | SELECT 9000011 FILTER(.02=$PID&&1.02='P')
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -53,14 +53,14 @@
 | isRemoved | Removed | BOOLEAN | Mapper |  |  |  | 
 | audits | audits | [OBJECT] | Mapper |  | [Audits](#audits)  |  | 
 
-##Comments 
+## Comments 
 
  property | value 
 --- | --- 
  id | Comments
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -70,14 +70,14 @@
 | enteredBy | Entered By | STRING |  | $USERID |  |  | 
 | facility | Facility | POINTER |  | $FACILITYID | {id:Location-9999999_06} |  | 
 
-##Audits 
+## Audits 
 
  property | value 
 --- | --- 
  id | Audits
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

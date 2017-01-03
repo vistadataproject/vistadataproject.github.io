@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORWPT DIEDON 
+## [RPCL](TableOfContent.md) --> ORWPT DIEDON 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | Returns date of death if patient has expired.  Otherwise returns 0.
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> VA_Product-50_68 
+## [VDM](TableOfContent.md) --> VA_Product-50_68 
 
  property | value 
 --- | --- 
@@ -9,12 +9,12 @@
  location | ^PSNDF(50.68,
  description | Per VHA Directive 2005-044, this file has been \locked down\\rby Data Standardization (DS). The file definition (i.e. data dictionary)\rshall not be modified. All additions, changes and deletions to entries in\rthe file shall be done by Enterprise Reference Terminology (ERT) using the\rMaster File Server (MFS), provided by Common Services (CS). Creating and/or\rediting locally defined fields in the file are not permitted. Use of\rlocally defined fields that were created prior to VHA Directive\r2005-044 shall not be supported.\r \rThis file contains a list of available drug products.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | name | .01 | Name |  | STRING |  | REQUIRED, INDEXED |  | 
-| va_generic_name | .05 | VA Generic Name | VA GENERIC NAME | POINTER |  |  | {id:VA_Generic-50_6} | 
+| va_generic_name | .05 | VA Generic Name | VA GENERIC NAME | POINTER |  |  | [VA_Generic-50_6](VA_Generic-50_6.md) | 
 | dosage_form | 1 | Dosage Form | This is the dose form. | POINTER |  |  | {id:Dosage_Form-50_606} | 
 | strength | 2 | Strength | This is the strength. | STRING |  |  |  | 
 | units | 3 | Units | This is the unit of measure. | POINTER |  |  | {id:Drug_Units-50_607} | 
@@ -27,8 +27,8 @@
 | previous_gcnseqno | 12 | Previous Gcnseqno | This field contains the PREVIOUS GCNSEQNO code, which relates to mapping to\rPMIs and Warning Labels. Entries in this field are accomplished by the NDF\rData Manager mapping functions and shall not be edited. | NUMERIC |  |  |  | 
 | ndc_link_to_gcnseqno | 13 | Ndc Link To Gcnseqno | This field contains the NDC used to link to GCNSEQNO. Entries in this field\rare accomplished by the NDF Data Manager mapping functions and shall not be\redited. | STRING |  |  |  | 
 | active_ingredients | 14 | Active Ingredients |  | [OBJECT] |  |  | [Active_Ingredients-50_6814](#active_ingredients-50_6814)  | 
-| primary_va_drug_class | 15 | Primary VA Drug Class | This is the primary VA classification for this product. | POINTER |  |  | {id:VA_Drug_Class-50_605} | 
-| secondary_va_drug_class | 16 | Secondary VA Drug Class |  | [POINTER] |  |  | {id:VA_Drug_Class-50_605} | 
+| primary_va_drug_class | 15 | Primary VA Drug Class | This is the primary VA classification for this product. | POINTER |  |  | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | 
+| secondary_va_drug_class | 16 | Secondary VA Drug Class |  | [POINTER] |  |  | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | 
 | national_formulary_indicator | 17 | National Formulary Indicator | This field denoted whether this product is on the National Formulary. | BOOLEAN |  |  | {false:0,true:1} | 
 | national_formulary_restriction | 18 | National Formulary Restriction |  | STRING |  |  |  | 
 | cs_federal_schedule | 19 | Cs Federal Schedule | This is the Federal Schedule for controlled substances. | ENUMERATION |  |  | <dl><dt>1</dt><dd>Schedule I</dd><dt>2</dt><dd>Schedule II</dd><dt>3</dt><dd>Schedule III</dd><dt>2n</dt><dd>Schedule II Non-Narcotics</dd><dt>0</dt><dd>Unscheduled</dd><dt>4</dt><dd>Schedule IV</dd><dt>3n</dt><dd>Schedule III Non-Narcotics</dd><dt>5</dt><dd>Schedule V</dd></dl> | 
@@ -52,43 +52,43 @@
 | fda_med_guide | 100 | Fda Med Guide | This field contains the filename of the FDA Medication Guide associated\rwith this VA Product. This field can only be edited on the National \rDrug File Management System. | STRING |  |  |  | 
 | service_code | 2000 | Service Code | This field contains a Charge Description Master (CDM) Change Control board\rassigned Service Code. The value should be a number between 600001-699999. | NUMERIC |  |  |  | 
 
-##Active_Ingredients-50_6814 
+## Active_Ingredients-50_6814 
 
  property | value 
 --- | --- 
  id | Active_Ingredients-50_6814
  label | Active Ingredients
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| active_ingredients | .01 | Active Ingredients | This is a pointer to the drug ingredients file. | POINTER |  | REQUIRED | {id:Drug_Ingredients-50_416} | 
+| active_ingredients | .01 | Active Ingredients | This is a pointer to the drug ingredients file. | POINTER |  | REQUIRED | [Drug_Ingredients-50_416](Drug_Ingredients-50_416.md) | 
 | strength | 1 | Strength | This is the strength of the ingredient. | STRING |  |  |  | 
 | units | 2 | Units | This is the unit of measure. | POINTER |  |  | {id:Drug_Units-50_607} | 
 
-##Reduced_Copay-50_6845 
+## Reduced_Copay-50_6845 
 
  property | value 
 --- | --- 
  id | Reduced_Copay-50_6845
  label | Reduced Copay
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | start_date | .01 | Start Date | This is the effective date for the reduced co-pay for the VA Product. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | stop_date | .02 | Stop Date | This is the stop date for the reduced co-pay for the VA Product. If\rnot present, it indicates that the reduced co-pay applies from the \rstart date onwards. | DATE-TIME |  |  |  | 
 
-##Effective_Date_time-50_6899 
+## Effective_Date_time-50_6899 
 
  property | value 
 --- | --- 
  id | Effective_Date_time-50_6899
  label | Effective Date/time
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

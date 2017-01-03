@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Vital 
+## [MVDM](TableOfContent.md) --> Vital 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 120_5 FILTER(!bound(2))
  fromVDMListPerPatient | SELECT 120_5 FILTER(.02=$PID&&!bound(2))
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -34,14 +34,14 @@
 | removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
 | facility |  | POINTER | Mapper |  |  |  | 
 
-##RemovalDetails 
+## RemovalDetails 
 
  property | value 
 --- | --- 
  id | RemovalDetails
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

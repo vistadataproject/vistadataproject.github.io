@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Institution-4 
+## [VDM](TableOfContent.md) --> Institution-4 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^DIC(4,
  description | This file contains a listing of VA institutions.  It is cross-referenced\rby name and station number.  The Number field is no longer meaningful (it\rhad previously referenced the station number).
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -41,7 +41,7 @@
 | facility_dea_expiration_date | 52.1 | Facility Dea Expiration Date | This field contains the expiration date for DEA#. | DATE-TIME |  |  |  | 
 | domain | 60 | Domain | A pointer to the domain so the institution can be linked to a E-mail domain. | POINTER |  |  | {id:Domain-4_2} | 
 | agency_code | 95 | Agency Code | A code to identify the Government agency that this site belongs to.\rThis is a duplicate of the POINTER TO AGENCY field. | ENUMERATION |  |  | <dl><dt>V</dt><dd>VA</dd><dt>E</dt><dd>EHR</dd><dt>ARMY</dt><dd>ARMY</dd><dt>I</dt><dd>IHS</dd><dt>AF</dt><dd>AIR FORCE</dd><dt>O</dt><dd>OTHER</dd><dt>N</dt><dd>NAVY</dd><dt>USCG</dt><dd>COAST GUARD</dd></dl> | 
-| reporting_station | 96 | Reporting Station | This is a pointer back to the Institution file that indicates the\rsite that does the reporting to VACO. | POINTER |  |  | {id:Institution-4} | 
+| reporting_station | 96 | Reporting Station | This is a pointer back to the Institution file that indicates the\rsite that does the reporting to VACO. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | pointer_to_agency | 97 | Pointer To Agency | A pointer to a file that identifies the government agency that\rthis site belongs to.  Keep in sync with the Agency code field. | POINTER |  | REQUIRED | {id:Agency-4_11} | 
 | station_number | 99 | Station Number | This is the 3 digit station number plus any modifiers. | STRING |  |  |  | 
 | official_va_name | 100 | Official VA Name | This field holds the Offical VA name for this VA facility.\rThe value in this field should not be changed by the site. | STRING |  | INDEXED |  | 
@@ -51,43 +51,43 @@
 | history | 999.1 | History |  | [OBJECT] |  |  | [History-4_999](#history-4_999)  | 
 | identifier | 9999 | Identifier |  | [OBJECT] |  |  | [Identifier-4_9999](#identifier-4_9999)  | 
 
-##Contact-4_03 
+## Contact-4_03 
 
  property | value 
 --- | --- 
  id | Contact-4_03
  label | Contact
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | contact | .01 | Contact | The name of a contact at the site. | STRING |  | REQUIRED |  | 
-| area | .02 | Area | Pointer to the part of the site the contact works in. | POINTER |  |  | {id:Hospital_Location-44} | 
+| area | .02 | Area | Pointer to the part of the site the contact works in. | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
 | phone_number | .03 | Phone # | Telephone number. | STRING |  |  |  | 
 
-##Associations-4_014 
+## Associations-4_014 
 
  property | value 
 --- | --- 
  id | Associations-4_014
  label | Associations
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | associations | .01 | Associations | This multiple field is used to link groups if Institutions into\rassociations. | POINTER |  | REQUIRED, INDEXED | {id:Institution_Association_Types-4_05} | 
-| parent_of_association | 1 | Parent Of Association | This field points back to the Institution file to indicate the\rparent of the association. | POINTER |  |  | {id:Institution-4} | 
+| parent_of_association | 1 | Parent Of Association | This field points back to the Institution file to indicate the\rparent of the association. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 
-##Effective_Date_time-4_042 
+## Effective_Date_time-4_042 
 
  property | value 
 --- | --- 
  id | Effective_Date_time-4_042
  label | Effective Date/time
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -95,14 +95,14 @@
 | status | .02 | Status | The Status of an NPI is either 'ACTIVE' or 'INACTIVE'. I 'ACTIVE' then \rthe NPI will be accessible by end-users to document a particular provider.\rIf 'INACTIVE', then the NPI will only be accessible by the application to\rdisplay legacy data. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
 | npi | .03 | Npi | Unique National Provider ID. A unique meaningless integer assigned to\rproviders.  | STRING |  | REQUIRED, INDEXED |  | 
 
-##Taxonomy_Code-4_043 
+## Taxonomy_Code-4_043 
 
  property | value 
 --- | --- 
  id | Taxonomy_Code-4_043
  label | Taxonomy Code
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -110,33 +110,33 @@
 | primary_code | .02 | Primary Code | Only one code can be the primary taxonomy code for a provider. When a \rspecific taxonomy code is identified it is the primary code that will be \rthe default. | BOOLEAN |  | INDEXED | {false:0,true:1} | 
 | status | .03 | Status | If a taxonomy code listed for a provider is a currently active code (one \rthey use today), then the status should be marked with an 'A'. At times a\rprovider will no longer use a taxonomy code. This code will be marked with\ran 'I' for inactive. Codes should not be removed from a provider's list.\rThey should be activated or inactivated. | ENUMERATION |  |  | <dl><dt>A</dt><dd>ACTIVE</dd><dt>I</dt><dd>INACTIVE</dd></dl> | 
 
-##History-4_999 
+## History-4_999 
 
  property | value 
 --- | --- 
  id | History-4_999
  label | History
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | effective_date | .01 | Effective Date |  | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | name_changed_from | .02 | Name (changed From) |  | STRING |  | INDEXED |  | 
 | offical_va_name_changed_from | .03 | Offical VA Name (changed From) |  | STRING |  |  |  | 
-| realigned_to | .05 | Realigned To |  | POINTER |  | INDEXED | {id:Institution-4} | 
-| realigned_from | .06 | Realigned From |  | POINTER |  | INDEXED | {id:Institution-4} | 
+| realigned_to | .05 | Realigned To |  | POINTER |  | INDEXED | [Institution-4](Institution-4.md) | 
+| realigned_from | .06 | Realigned From |  | POINTER |  | INDEXED | [Institution-4](Institution-4.md) | 
 | deactivated_facility___sta_number | .07 | Deactivated Facility / Sta # |  | ENUMERATION |  |  | <dl><dt>1</dt><dd>DEACTIVATED</dd></dl> | 
 | activated_facility | .08 | Activated Facility |  | ENUMERATION |  |  | <dl><dt>1</dt><dd>ACTIVATED</dd></dl> | 
 
-##Identifier-4_9999 
+## Identifier-4_9999 
 
  property | value 
 --- | --- 
  id | Identifier-4_9999
  label | Identifier
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

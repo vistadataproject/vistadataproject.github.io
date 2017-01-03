@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Drug-50 
+## [VDM](TableOfContent.md) --> Drug-50 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^PSDRUG(
  description | 
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

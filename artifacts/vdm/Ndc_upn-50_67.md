@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Ndc_upn-50_67 
+## [VDM](TableOfContent.md) --> Ndc_upn-50_67 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^PSNDF(50.67,
  description | This file contains a list of National Drug Codes (NDCs) and Universal\rProduct Numbers (UPNs).
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -18,7 +18,7 @@
 | upn | 2 | Upn | This is the UPN (Universal Product Number) for this item. | STRING |  | INDEXED |  | 
 | manufacturer | 3 | Manufacturer | This is the manufacturer of this item. | POINTER |  |  | {id:Drug_Manufacturer-55_95} | 
 | trade_name | 4 | Trade Name | This is the trade name of this item. | STRING |  | INDEXED |  | 
-| va_product_name | 5 | VA Product Name | This is the VA Product associated with this item. | POINTER |  |  | {id:VA_Product-50_68} | 
+| va_product_name | 5 | VA Product Name | This is the VA Product associated with this item. | POINTER |  |  | [VA_Product-50_68](VA_Product-50_68.md) | 
 | route_of_administration | 6 | Route Of Administration |  | [STRING] |  |  |  | 
 | inactivation_date | 7 | Inactivation Date | This is the date when this item was made inactive. | DATE-TIME |  |  |  | 
 | package_size | 8 | Package Size | This is the package size. | POINTER |  |  | {id:Package_Size-50_609} | 

@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Drug_Ingredients-50_416 
+## [VDM](TableOfContent.md) --> Drug_Ingredients-50_416 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^PS(50.416,
  description | 
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

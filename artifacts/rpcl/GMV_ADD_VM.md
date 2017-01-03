@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> GMV ADD VM 
+## [RPCL](TableOfContent.md) --> GMV ADD VM 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

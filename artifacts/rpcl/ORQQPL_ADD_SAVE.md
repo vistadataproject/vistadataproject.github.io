@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL ADD SAVE 
+## [RPCL](TableOfContent.md) --> ORQQPL ADD SAVE 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
@@ -25,10 +25,10 @@
 | ADDARRAY | LIST | true | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET |  | [List Member](#for-id-addarray) | 
 | GMPSRCH | LITERAL |  |  | hypertension |  | 
 
-###List Member Parameters
+### List Member Parameters
 
 
-####For ID ADDARRAY
+#### For ID ADDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 

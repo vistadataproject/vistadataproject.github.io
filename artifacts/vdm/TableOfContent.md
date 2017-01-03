@@ -1,4 +1,4 @@
-##VDM Table of Content
+## VDM Table of Content
 
 1. [Adverse_Reaction_Assessment-120_86](Adverse_Reaction_Assessment-120_86.md) (0 contained)
 

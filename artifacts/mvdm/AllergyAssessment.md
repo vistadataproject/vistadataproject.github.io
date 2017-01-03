@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> AllergyAssessment 
+## [MVDM](TableOfContent.md) --> AllergyAssessment 
 
  property | value 
 --- | --- 
@@ -12,11 +12,11 @@
  fromVDMList | SELECT 120_86
  fromVDMListPerPatient | SELECT 120_86 FILTER(.01=$PID)
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
-| patient |  | POINTER | name |  | {id:Patient} | REQUIRED | 
+| patient |  | POINTER | name |  | [Patient](Patient.md) | REQUIRED | 
 | hasReactions |  | BOOLEAN | reaction_assessment | false |  | UPDATE | 
 | enteredBy |  | POINTER | assessing_user | $USERID | {id:Person} |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 

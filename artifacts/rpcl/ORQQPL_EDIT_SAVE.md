@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL EDIT SAVE 
+## [RPCL](TableOfContent.md) --> ORQQPL EDIT SAVE 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | SINGLE VALUE
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
@@ -26,10 +26,10 @@
 | EDARRAY | LIST | true | array used for indirect sets of GMPORIG() and GMPFLDS() |  | [List Member](#for-id-edarray) | 
 | GMPSRCH | LITERAL |  |  |  |  | 
 
-###List Member Parameters
+### List Member Parameters
 
 
-####For ID EDARRAY
+#### For ID EDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 

@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Adverse_Reaction_Reporting-120_85 
+## [VDM](TableOfContent.md) --> Adverse_Reaction_Reporting-120_85 
 
  property | value 
 --- | --- 
@@ -9,16 +9,16 @@
  location | ^GMR(120.85,
  description | This file contains all the data for an Observed Drug reaction.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date_time_of_event | .01 | Date/time Of Event | The date/time that this observed reaction occurred. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| patient | .02 | Patient | This field is the patient to whom this observed reaction occurred.\rThis field is a pointer to the Patient file. | POINTER |  | REQUIRED, INDEXED | {id:Patient-2} | 
-| related_reaction | .03 | Related Reaction | This is the related reaction in the Patient Allergies (120.8) file for\rthis event. | POINTER |  | REQUIRED, INDEXED | {id:Patient_Allergies-120_8} | 
-| observer | .5 | Observer | This field is the person who witnessed this reaction. | POINTER |  |  | {id:New_Person-200} | 
+| patient | .02 | Patient | This field is the patient to whom this observed reaction occurred.\rThis field is a pointer to the Patient file. | POINTER |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
+| related_reaction | .03 | Related Reaction | This is the related reaction in the Patient Allergies (120.8) file for\rthis event. | POINTER |  | REQUIRED, INDEXED | [Patient_Allergies-120_8](Patient_Allergies-120_8.md) | 
+| observer | .5 | Observer | This field is the person who witnessed this reaction. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_reported | 1.1 | Date Reported | This field is to track when a report is entered into this file. | DATE-TIME |  | INDEXED |  | 
-| reporting_user | 1.2 | Reporting User | This field is used to track the user who entered the reaction.  It is a\rpointer to File 200. | POINTER |  |  | {id:New_Person-200} | 
+| reporting_user | 1.2 | Reporting User | This field is used to track the user who entered the reaction.  It is a\rpointer to File 200. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | reactions | 2 | Reactions | A list of signs/symptoms observed for this reaction. | [OBJECT] |  |  | [Reactions-120_8502](#reactions-120_8502)  | 
 | suspected_agent | 3 | Suspected Agent | A list of suspected agents for this observed reaction. | [OBJECT] |  |  | [Suspected_Agent-120_8503](#suspected_agent-120_8503)  | 
 | relevant_test_lab_data | 4 | Relevant Test/lab Data | A list of all the relevant test/lab data for this observed reaction. | [OBJECT] |  |  | [Relevant_Test_lab_Data-120_8504](#relevant_test_lab_data-120_8504)  | 
@@ -76,29 +76,29 @@
 | _15_day_report | 64 | 15 Day Report | This field is to determine if the 15 Day Report has been completed. | BOOLEAN |  |  | {false:n,true:y} | 
 | report_type | 65 | Report Type | This is the type of report issued. | ENUMERATION |  |  | <dl><dt>f</dt><dd>FOLLOWUP</dd><dt>i</dt><dd>INITIAL</dd></dl> | 
 
-##Reactions-120_8502 
+## Reactions-120_8502 
 
  property | value 
 --- | --- 
  id | Reactions-120_8502
  label | Reactions
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | reactions | .01 | Reactions | One sign/symptom observed for this reaction. | POINTER |  | REQUIRED, INDEXED | {id:Sign_symptoms-120_83} | 
 | other_reaction | 1 | Other Reaction | If this sign/symptom cannot be found in the Sign/Symptoms (120.83) file,\rthen the free text of what the user typed in will be here, and the\rsigns/symptoms of OTHER REACTION will be the value of the REACTIONS field. | STRING |  |  |  | 
-| entered_by | 2 | Entered By | The person who entered this reaction into the system. | POINTER |  |  | {id:New_Person-200} | 
+| entered_by | 2 | Entered By | The person who entered this reaction into the system. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
-##Suspected_Agent-120_8503 
+## Suspected_Agent-120_8503 
 
  property | value 
 --- | --- 
  id | Suspected_Agent-120_8503
  label | Suspected Agent
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -123,14 +123,14 @@
 | like_question_number6 | 16 | Like Question #6 | This question determines if the reaction reappeared after the reactant was readministered.\rwas readministered. | BOOLEAN |  |  | {false:n,true:y} | 
 | likelihood | 17 | Likelihood | If this is an observed drug allergy/adverse reaction, then this is the\rlikelihood that this is an adverse reaction.  The data for this field is\rbased on an algorithm used by the FDA. | ENUMERATION |  |  | <dl><dt>1</dt><dd>REMOTE</dd><dt>2</dt><dd>POSSIBLE</dd><dt>4</dt><dd>HIGHLY PROBABLE</dd><dt>3</dt><dd>PROBABLE</dd></dl> | 
 
-##Relevant_Test_lab_Data-120_8504 
+## Relevant_Test_lab_Data-120_8504 
 
  property | value 
 --- | --- 
  id | Relevant_Test_lab_Data-120_8504
  label | Relevant Test/lab Data
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -138,14 +138,14 @@
 | results | 1 | Results | This field will contain the results for the particular test. | STRING |  |  |  | 
 | collection_d_t | 2 | Collection D/t | This field is the date the sample was collected from the patient. | DATE-TIME |  |  |  | 
 
-##Concomitant_Drugs-120_8513 
+## Concomitant_Drugs-120_8513 
 
  property | value 
 --- | --- 
  id | Concomitant_Drugs-120_8513
  label | Concomitant Drugs
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -155,14 +155,14 @@
 | last_fill_dt | 3 | Last Fill Dt | This field is the last date that this drug was filled. | DATE-TIME |  |  |  | 
 | sig | 4 | Sig | This file contains the SIG code that indicates how this drug is to be given. | STRING |  |  |  | 
 
-##Pt_Addendum-120_85315 
+## Pt_Addendum-120_85315 
 
  property | value 
 --- | --- 
  id | Pt_Addendum-120_85315
  label | P&t Addendum
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQVI VITALS 
+## [RPCL](TableOfContent.md) --> ORQQVI VITALS 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | ARRAY
  returnDescription | Array of patient most recent vitals within start and stop date/times.  \rIf no start and stop dates are indicated, the most recent are returned.\rVitals are returned in the format:\rvital ien^vital type^rate/value^date/time taken
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

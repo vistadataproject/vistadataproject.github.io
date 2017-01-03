@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Icd_Diagnosis-80 
+## [VDM](TableOfContent.md) --> Icd_Diagnosis-80 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^ICD9(
  description | ICD Diagnosis file #80 contains codes from the International \rClassification of Diseases (ICD) Clinical Modification (CM) \rprovided by the Centers for Medicare and Medicaid Services \r(CMS) and the National Center for Health Statistics (NCHS).\rThis file contains both the 9th (ICD-9-CM) and 10th (ICD-10-CM)\rRevisions.\r \rIf an entry needs to be added, modified or deleted, a patch will\rbe issued containing the change.\r \rThis table file should NOT be edited in anyway by the site.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -26,9 +26,9 @@
 | sex | 10 | Sex | This is a history of the Sex designation (Male/Female) for the \rdiagnosis and includes the Sex with the date it became effective. | [OBJECT] |  |  | [Sex-80_04](#sex-80_04)  | 
 | age_low | 11 | Age Low | This is a history of lowest age reasonable for\ra procedure and includes the lowest age and the\rdate it became effective.  | [OBJECT] |  |  | [Age_Low-80_011](#age_low-80_011)  | 
 | age_high | 12 | Age High | This is a history of highest age reasonable for\ra procedure and includes the highest age and the\rdate it became effective.  | [OBJECT] |  |  | [Age_High-80_012](#age_high-80_012)  | 
-| icd_codes_not_to_use_with | 20 | Icd Codes Not To Use With | This is a listing of ICD codes that cannot be used in conjunction\rwith this code. | [POINTER] |  |  | {id:Icd_Diagnosis-80} | 
-| icd_codes_required_with | 30 | Icd Codes Required With | This is a listing of ICD codes required when this code is used. | [POINTER] |  |  | {id:Icd_Diagnosis-80} | 
-| icd_codes_not_cc_with | 40 | Icd Codes Not Cc With | This is a listing of codes not considered as Complication/comorbidity\rwith this code. | [POINTER] |  |  | {id:Icd_Diagnosis-80} | 
+| icd_codes_not_to_use_with | 20 | Icd Codes Not To Use With | This is a listing of ICD codes that cannot be used in conjunction\rwith this code. | [POINTER] |  |  | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
+| icd_codes_required_with | 30 | Icd Codes Required With | This is a listing of ICD codes required when this code is used. | [POINTER] |  |  | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
+| icd_codes_not_cc_with | 40 | Icd Codes Not Cc With | This is a listing of codes not considered as Complication/comorbidity\rwith this code. | [POINTER] |  |  | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
 | status | 66 | Status | This multiple contains versioned information for an ICD code.\rA new entry is created whenever an ICD code's status is changed. | [OBJECT] |  |  | [Status-80_066](#status-80_066)  | 
 | diagnosis | 67 | Diagnosis | This is a history of the Diagnosis (short text) to include the date the \rtext was first used along with the text. | [OBJECT] |  |  | [Diagnosis-80_067](#diagnosis-80_067)  | 
 | description | 68 | Description | This is a history of the descriptive\rtext to include the date the text \rwas first used and the text used. | [OBJECT] |  |  | [Description-80_068](#description-80_068)  | 
@@ -37,84 +37,84 @@
 | drg_diagnosis_identifier_codes | 73 | Drg Diagnosis Identifier Codes | This is a listing of identifier codes used in\rthe DRG rules processing to determine DRG. | [POINTER] |  |  | {id:Drg_Diagnosis_Identifier_Codes-82} | 
 | complication_comorbidity | 103 | Complication/comorbidity | This is a history of the Complication/Comorbidity (CC) designation\rfor the diagnosis and includes the CC designation with the date \rit became effective.   | [OBJECT] |  |  | [Complication_comorbidity-80_0103](#complication_comorbidity-80_0103)  | 
 
-##Sex-80_04 
+## Sex-80_04 
 
  property | value 
 --- | --- 
  id | Sex-80_04
  label | Sex
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | sex_effective_date | .01 | Sex Effective Date | This is the date the Sex designation (F/M) became effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | sex | 1 | Sex | This is the sex designation for the diagnosis. | ENUMERATION |  |  | <dl><dt>M</dt><dd>MALE</dd><dt>N</dt><dd>N/A</dd><dt>F</dt><dd>FEMALE</dd></dl> | 
 
-##Age_Low-80_011 
+## Age_Low-80_011 
 
  property | value 
 --- | --- 
  id | Age_Low-80_011
  label | Age Low
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | age_low_effective_date | .01 | Age Low Effective Date | The date that the AGE LOW limit was effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | age_low | 1 | Age Low | This is the minimum age value for an age range for which\rthe code can be applied.  Blank otherwise. | NUMERIC |  |  |  | 
 
-##Age_High-80_012 
+## Age_High-80_012 
 
  property | value 
 --- | --- 
  id | Age_High-80_012
  label | Age High
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | age_high_effective_date | .01 | Age High Effective Date | The date that the AGE HIGH limit was effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | age_high | 1 | Age High | This is the maximun age value for an age range for which\rthe code can be applied.  Blank otherwise. | NUMERIC |  |  |  | 
 
-##Status-80_066 
+## Status-80_066 
 
  property | value 
 --- | --- 
  id | Status-80_066
  label | Status
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | status_effective_date | .01 | Status Effective Date | Date versioned information becomes/became effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | Status set to 1 when the code is active and 0 when the code\ris inactive. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
 
-##Diagnosis-80_067 
+## Diagnosis-80_067 
 
  property | value 
 --- | --- 
  id | Diagnosis-80_067
  label | Diagnosis
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | diagnosis_effective_date | .01 | Diagnosis Effective Date | This is the date the diagnosis text was first used. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | diagnosis | 1 | Diagnosis | This is the Diagnosis (short text). | STRING |  | REQUIRED |  | 
 
-##Description-80_068 
+## Description-80_068 
 
  property | value 
 --- | --- 
  id | Description-80_068
  label | Description
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -122,42 +122,42 @@
 | description | 1 | Description | This is the description (long text) that was in use on the effective \rdate. | STRING |  | REQUIRED |  | 
 | supplemental | 2 | Supplemental | This is a list of Supplemental keywords\rwhich should be included in the word \rindex to assist in look-up operations. | [STRING] |  |  |  | 
 
-##Drg_Grouper-80_071 
+## Drg_Grouper-80_071 
 
  property | value 
 --- | --- 
  id | Drg_Grouper-80_071
  label | Drg Grouper
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | drg_grouper_effective_date | .01 | Drg Grouper Effective Date | This field contains the effective date for the DRGs for a \rfiscal year.  It should normally be the first day of October\rof the fiscal year. Each year a new entry will be created and\rthe DRG's hierarchy will reside within this field. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | drg | 1 | Drg | This field contains all of the DRGs associated with the corresponding \rICD Diagnosis for the fiscal year indicated by the DRG Grouper \reffective date. | [POINTER] |  |  | {id:Drg-80_2} | 
 
-##Major_Diagnostic_Category-80_072 
+## Major_Diagnostic_Category-80_072 
 
  property | value 
 --- | --- 
  id | Major_Diagnostic_Category-80_072
  label | Major Diagnostic Category
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | mdc_effective_date | .01 | Mdc Effective Date | This is the date that the Major Diagnostic Categories became\reffective for this diagnosis.  This is normally the beginning\rof a fiscal year. | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | mdc | 1 | Mdc | This is a single Major Diagnostic Category code associated with the \rcorresponding ICD Diagnosis for the fiscal year indicated by the MCD\reffective date. | POINTER |  |  | {id:Major_Diagnostic_Category-80_3} | 
 
-##Complication_comorbidity-80_0103 
+## Complication_comorbidity-80_0103 
 
  property | value 
 --- | --- 
  id | Complication_comorbidity-80_0103
  label | Complication/comorbidity
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL PROBLEM LIST 
+## [RPCL](TableOfContent.md) --> ORQQPL PROBLEM LIST 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | ARRAY
  returnDescription | List of problems with comments
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

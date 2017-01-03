@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Gmrv_Vitals_Parameters-120_57 
+## [VDM](TableOfContent.md) --> Gmrv_Vitals_Parameters-120_57 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | 
  description | 
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

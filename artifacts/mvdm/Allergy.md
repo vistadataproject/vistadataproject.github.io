@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Allergy 
+## [MVDM](TableOfContent.md) --> Allergy 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 120_8 FILTER(!bound(22))
  fromVDMListPerPatient | SELECT 120_8 FILTER(.01=$PID&&!bound(22))
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -33,56 +33,56 @@
 | removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
 | comments | Comments | [OBJECT] | Mapper |  | [Comment](#comment)  | CREATE, UPDATE | 
 
-##ReactantDetails 
+## ReactantDetails 
 
  property | value 
 --- | --- 
  id | ReactantDetails
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | drugIngredients | Drug Ingredients | [POINTER] |  |  |  |  | 
 | drugClasses | Drug Classes | [POINTER] |  |  |  |  | 
 
-##Reaction 
+## Reaction 
 
  property | value 
 --- | --- 
  id | Reaction
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | reaction | Reaction | [POINTER] | reaction |  |  |  | 
 | dateTimeOccurred | Date/Time of Reaction | DATE-TIME | date_entered |  |  |  | 
 
-##IdBandMarked 
+## IdBandMarked 
 
  property | value 
 --- | --- 
  id | IdBandMarked
  label | Id Band Marked
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Date/Time | DATE-TIME | date_time | $NOW |  |  | 
 | enteredBy | User Entering | POINTER | user_entering | $USERID |  |  | 
 
-##RemovalDetails 
+## RemovalDetails 
 
  property | value 
 --- | --- 
  id | RemovalDetails
  label | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -90,14 +90,14 @@
 | enteredBy | Entered By | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-##Comment 
+## Comment 
 
  property | value 
 --- | --- 
  id | Comment
  label | Comment
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

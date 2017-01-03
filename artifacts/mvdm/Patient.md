@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Patient 
+## [MVDM](TableOfContent.md) --> Patient 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | SELECT 2
  fromVDMListPerPatient | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -481,28 +481,28 @@
 | patientRank |  |  | rank-2 |  |  |  | 
 | networkIdentifier |  | STRING | network_identifier |  |  |  | 
 
-##Confidential_Address_Category-2_141 
+## Confidential_Address_Category-2_141 
 
  property | value 
 --- | --- 
  id | Confidential_Address_Category-2_141
  label | Confidential Address Category
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | confidential_address_category | Confidential Address Category | ENUMERATION |  |  | <dl><dt>1</dt><dd>ELIGIBILITY/ENROLLMENT</dd><dt>4</dt><dd>MEDICAL RECORDS</dd><dt>2</dt><dd>APPOINTMENT/SCHEDULING</dd><dt>3</dt><dd>COPAYMENTS/VETERAN BILLING</dd><dt>5</dt><dd>ALL OTHERS</dd></dl> | REQUIRED, INDEXED | 
 | confidential_category_active | Confidential Category Active | BOOLEAN |  |  | {false:N,true:Y} |  | 
 
-##Insurance_Type-2_312 
+## Insurance_Type-2_312 
 
  property | value 
 --- | --- 
  id | Insurance_Type-2_312
  label | Insurance Type
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -587,14 +587,14 @@
 | name_of_insured-2_312-17 | *Name Of Insured | STRING |  |  |  |  | 
 | eligibility_benefit | Eligibility/Benefit | [OBJECT] |  |  | {properties:[{description:This is a sequential number corresponding to the Set-ID for all\rof the eligibility/benefit (X.12 EB segments) segments coming\rinto VISTA.,datatype:NUMERIC,required:true,label:Eb Number,indexed:true,fmId:.01,id:eb_number},{description:This field contains a code identifying the eligibility status\rof the individual or the benefit returned by the Payer.,datatype:POINTER,label:Eligibility/Benefit Info,range:{id:X12_271_Eligibility_Benefit-365_011},fmId:.02,id:eligibility_benefit_info},{description:This field identifies the level of coverage of benefits.,datatype:POINTER,label:Coverage Level,range:{id:X12_271_Coverage_Level-365_012},fmId:.03,id:coverage_level},{description:This field is a code identifying the classification of service.,datatype:POINTER,label:*Service Type,range:{id:X12_271_Service_Type-365_013},fmId:.04,id:service_type},{description:This is a code identifying the type of insurance policy within\ra specific insurance program.,datatype:POINTER,label:Insurance Type,range:{id:X12_271_Insurance_Type-365_014},fmId:.05,id:insurance_type},{description:This code is a description or number that identifies the plan\ror coverage.,datatype:STRING,label:Plan Coverage Description,fmId:.06,id:plan_coverage_description},{description:This is a code for the time period category that determines\rfor how long the benefits are available.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:This field is populated if eligibility or benefit must be\rqualified by a monetary amount.,datatype:STRING,label:Monetary Amount,fmId:.08,id:monetary_amount},{description:This field is used if eligibility or benefit must be qualified\rby a percentage.,datatype:NUMERIC,label:Percent,fmId:.09,id:percent},{description:This field is used to identify the type of units that are being\rconveyed in the QUANTITY field (#.11).,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.1,id:quantity_qualifier},{description:This field number is used for the quantity value as qualified by\rthe QUANTITY QUALIFIER field.,datatype:STRING,label:Quantity,fmId:.11,id:quantity},{description:This field indicates that an authorization or certification\ris required per plan provisions.,datatype:POINTER,label:Authorization/Certification,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.12,id:authorization_certification},{description:This field indicates the plan network indicator.  A YES value indicates\rthe benefits identified are considered In-Plan-Network.  A NO value\rindicates that the benefits identified are considered \rOut-Of-Plan-Network.  A \U\ value indicates it is unknown whether the\rbenefits identified are part of the Plan Network.,datatype:POINTER,label:In Plan,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.13,id:in_plan},{description:Two character code describing procedure coding method.,datatype:POINTER,label:Procedure Coding Method,range:{id:X12_271_Procedure_Coding_Method-365_035},fmId:1.01,id:procedure_coding_method},{description:Identification code for the procedure.,datatype:STRING,label:Procedure Code,fmId:1.02,id:procedure_code},{description:Identifies special circumstances related to the procedure; first modifier.,datatype:STRING,label:Procedure Modifier 1,fmId:1.03,id:procedure_modifier_1},{description:Identifies special circumstances related to the procedure; second\rmodifier.,datatype:STRING,label:Procedure Modifier 2,fmId:1.04,id:procedure_modifier_2},{description:Identifies special circumstances related to the procedure; third modifier.,datatype:STRING,label:Procedure Modifier 3,fmId:1.05,id:procedure_modifier_3},{description:Identifies special circumstances related to the procedure; fourth\rmodifier.,datatype:STRING,label:Procedure Modifier 4,fmId:1.06,id:procedure_modifier_4},{description:This field contains any additional text about the eligibility\rbenefit information.  It is transcribed from X.12 271 MSG segments.,datatype:STRING,label:Notes,isWP:true,fmId:2,id:notes},{description:X12 Entity Identifier Code.,datatype:POINTER,label:Entity Id Code,range:{id:X12_271_Entity_Identifier_Code-365_022},fmId:3.01,id:entity_id_code},{description:Entity Type Qualifier.,datatype:POINTER,label:Entity Type,range:{id:X12_271_Entity_Type_Qualifier-365_043},fmId:3.02,id:entity_type},{description:Name of person or organization.,datatype:STRING,label:Name,fmId:3.03,id:name},{description:Entity identifier.,datatype:STRING,label:Entity Id,fmId:3.04,id:entity_id},{description:Code designating the system/method used for Identification.,datatype:POINTER,label:Entity Id Qualifier,range:{id:X12_271_Identification_Qualifier-365_023},fmId:3.05,id:entity_id_qualifier},{description:Benefit Related Entity's relationship to the patient.,datatype:POINTER,label:Entity Relationship Code,range:{id:X12_271_Entity_Relationship_Code-365_031},fmId:3.06,id:entity_relationship_code},{description:Entity address, line 1.,datatype:STRING,label:Address Line 1,fmId:4.01,id:address_line_1},{description:Entity address, line 2.,datatype:STRING,label:Address Line 2,fmId:4.02,id:address_line_2},{description:Entity address, city.,datatype:STRING,label:City,fmId:4.03,id:city},{description:Entity address, state or province code.,datatype:POINTER,label:State,range:{id:State-5},fmId:4.04,id:state},{description:Entity address, zip or postal code.,datatype:STRING,label:Zip,fmId:4.05,id:zip},{description:Entity address, country code.,datatype:STRING,label:Country Code,fmId:4.06,id:country_code},{description:Entity address, location identifier.,datatype:STRING,label:Location,fmId:4.07,id:location},{description:Entity address, location qualifier.,datatype:POINTER,label:Location Qualifier,range:{id:X12_271_Location_Qualifer-365_034},fmId:4.08,id:location_qualifier},{description:Entity address, country subdivision code.,datatype:STRING,label:Subdivision Code,fmId:4.09,id:subdivision_code},{description:Code identifying the type of provider.,datatype:POINTER,label:Provider Code,range:{id:X12_271_Provider_Code-365_024},fmId:5.01,id:provider_code},{description:Reference identifier.,datatype:STRING,label:Reference Id,fmId:5.02,id:reference_id},{description:Reference identifier type.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:5.03,id:reference_id_qualifier},{description:This multiple contains contact information for an eligibility/benefit\rentity.,datatype:[OBJECT],label:Contact Information,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Name of the contact.,datatype:STRING,label:Name,fmId:.02,id:name},{description:Phone, fax, email, etc.\r \rThis field is scheduled for deletion in May 2015.,datatype:STRING,label:*Communication Number,fmId:.03,id:communication_number},{description:Code describing type of communication number.,datatype:POINTER,label:Communication Qualifier,range:{id:X12_271_Contact_Qualifier-365_021},fmId:.04,id:communication_qualifier},{description:Phone, fax, email, URL,datatype:STRING,label:Communication Number,fmId:1,id:communication_number-2_3226-1}],fmId:2.3226,id:Contact_Information-2_3226,label:Contact Information},fmId:6,id:contact_information},{description:Healthcare services delivery multiple.,datatype:[OBJECT],label:Healthcare Services Delivery,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Numeric value of benefit quantity as qualified by QUANTITY QUALIFIER\rfield.,datatype:NUMERIC,label:Benefit Quantity,fmId:.02,id:benefit_quantity},{description:Benefit quantity qualifier.,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.03,id:quantity_qualifier},{description:Sampling frequency in terms of a modulus of the Unit of Measure. Qualified\rby UNITS OF MEASUREMENT field.,datatype:STRING,label:Sample Selection Modulus,fmId:.04,id:sample_selection_modulus},{description:Units of measurement for frequency of the benefits.,datatype:POINTER,label:Units Of Measurement,range:{id:X12_271_Units_Of_Measurement-365_029},fmId:.05,id:units_of_measurement},{description:Number of time periods as qualified by TIME PERIOD QUALIFIER field.,datatype:NUMERIC,label:Time Periods,fmId:.06,id:time_periods},{description:Code that defines a time period.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:Code that defines frequency of deliveries.,datatype:POINTER,label:Delivery Frequency,range:{id:X12_271_Delivery_Frequency_Code-365_025},fmId:.08,id:delivery_frequency},{description:Code that defines pattern of deliveries.,datatype:POINTER,label:Delivery Pattern,range:{id:X12_271_Delivery_Pattern-365_036},fmId:.09,id:delivery_pattern}],fmId:2.3227,id:Healthcare_Services_Delivery-2_3227,label:Healthcare Services Delivery},fmId:7,id:healthcare_services_delivery},{description:Subscriber dates multiple.,datatype:[OBJECT],label:Subscriber Dates,range:{properties:[{description:Sequential number of ZSD segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Date or range of dates.,datatype:STRING,label:Date,fmId:.02,id:date},{description:Code describing the type of date.,datatype:POINTER,label:Date Qualifier,range:{id:X12_271_Date_Qualifier-365_026},fmId:.03,id:date_qualifier},{description:Format of the date representation.,datatype:POINTER,label:Date Format,range:{id:X12_271_Date_Format_Qualifier-365_032},fmId:.04,id:date_format}],fmId:2.3228,id:Subscriber_Dates-2_3228,label:Subscriber Dates},fmId:8,id:subscriber_dates},{description:Additional subscriber information multiple.,datatype:[OBJECT],label:Subscriber Additional Info,range:{properties:[{description:Sequential number of ZII segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Place of service code.,datatype:POINTER,label:Place Of Service,range:{id:Place_Of_Service-353_1},fmId:.02,id:place_of_service},{description:Diagnosis code.,datatype:POINTER,label:Diagnosis,range:{id:Icd_Diagnosis-80},fmId:.03,id:diagnosis},{description:Additional information qualifier.,datatype:POINTER,label:Qualifier,range:{id:X12_271_Code_List_Qualifier-365_044},fmId:.04,id:qualifier},{description:Code that represents the nature of the patient injury.,datatype:POINTER,label:Nature Of Injury Code,range:{id:X12_271_Nature_Of_Injury_Codes-365_045},fmId:.05,id:nature_of_injury_code},{description:Specifies the situation or category to which the code applies.,datatype:STRING,label:Nature Of Injury Category,fmId:.06,id:nature_of_injury_category},{description:Describes the injured body part or parts.,datatype:STRING,label:Nature Of Injury Text,fmId:.07,id:nature_of_injury_text}],fmId:2.3229,id:Subscriber_Additional_Info-2_3229,label:Subscriber Additional Info},fmId:9,id:subscriber_additional_info},{description:Subscriber reference id multiple.,datatype:[OBJECT],label:Subscriber Reference Id,range:{properties:[{description:Sequential number of ZRF segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Reference id value.,datatype:STRING,label:Reference Id,fmId:.02,id:reference_id},{description:Code describing the type of reference id.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:.03,id:reference_id_qualifier},{description:Short description of reference id.,datatype:STRING,label:Description,fmId:.04,id:description}],fmId:2.32291,id:Subscriber_Reference_Id-2_32291,label:Subscriber Reference Id},fmId:10,id:subscriber_reference_id},{datatype:[POINTER],label:Service Types,range:{id:X12_271_Service_Type-365_013},fmId:11,id:service_types}],fmId:2.322,id:Eligibility_Benefit-2_322,label:Eligibility/Benefit} |  | 
 
-##Service_Oef_Or_Oif-2_3215 
+## Service_Oef_Or_Oif-2_3215 
 
  property | value 
 --- | --- 
  id | Service_Oef_Or_Oif-2_3215
  label | Service [Oef Or Oif]
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -605,14 +605,14 @@
 | recorded_date_time | Recorded Date/Time | DATE-TIME |  |  |  |  | 
 | entered_by_site | Entered By Site | POINTER |  |  | {id:Institution-4} |  | 
 
-##Military_Service_Episode-2_3216 
+## Military_Service_Episode-2_3216 
 
  property | value 
 --- | --- 
  id | Military_Service_Episode-2_3216
  label | Military Service Episode
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -624,14 +624,14 @@
 | service_discharge_type | Service Discharge Type | POINTER |  |  | {id:Type_Of_Discharge-25} |  | 
 | data_locked | Data Locked | BOOLEAN |  |  | {false:0,true:1} |  | 
 
-##Date_Of_Dental_Treatment-2_11 
+## Date_Of_Dental_Treatment-2_11 
 
  property | value 
 --- | --- 
  id | Date_Of_Dental_Treatment-2_11
  label | Date Of Dental Treatment
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -639,14 +639,14 @@
 | condition | Condition | STRING |  |  |  |  | 
 | date_condition_first_noticed | Date Condition First Noticed | DATE-TIME |  |  |  |  | 
 
-##Rated_Disabilities_Va-2_04 
+## Rated_Disabilities_Va-2_04 
 
  property | value 
 --- | --- 
  id | Rated_Disabilities_Va-2_04
  label | Rated Disabilities (Va)
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -657,42 +657,42 @@
 | original_effective_date | Original Effective Date | DATE-TIME |  |  |  |  | 
 | current_effective_date | Current Effective Date | DATE-TIME |  |  |  |  | 
 
-##Service_Connected_Conditions-2_05 
+## Service_Connected_Conditions-2_05 
 
  property | value 
 --- | --- 
  id | Service_Connected_Conditions-2_05
  label | Service Connected Conditions
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | service_connected_conditions | Service Connected Conditions | STRING |  |  |  | REQUIRED | 
 | percentage | Percentage | NUMERIC |  |  |  |  | 
 
-##Cd_Status_Procedures-2_397 
+## Cd_Status_Procedures-2_397 
 
  property | value 
 --- | --- 
  id | Cd_Status_Procedures-2_397
  label | Cd Status Procedures
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | cd_status_procedures | Cd Status Procedures | POINTER |  |  | {id:Catastrophic_Disability_Reasons-27_17} | REQUIRED, INDEXED | 
 | affected_extremity | Affected Extremity | ENUMERATION |  |  | <dl><dt>RLE</dt><dd>Right Lower Extremity</dd><dt>BLE</dt><dd>Bilateral Lower Extremity</dd><dt>LLE</dt><dd>Left Lower Extremity</dd><dt>LUE</dt><dd>Left Upper Extremity</dd><dt>BUE</dt><dd>Bilateral Upper Extremity</dd><dt>RUE</dt><dd>Right Upper Extremity</dd></dl> |  | 
 
-##Cd_Status_Conditions-2_398 
+## Cd_Status_Conditions-2_398 
 
  property | value 
 --- | --- 
  id | Cd_Status_Conditions-2_398
  label | Cd Status Conditions
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -700,14 +700,14 @@
 | score | Score | NUMERIC |  |  |  |  | 
 | permanent_indicator | Permanent Indicator | ENUMERATION |  |  | <dl><dt>3</dt><dd>UNKNOWN</dd><dt>1</dt><dd>PERMANENT</dd><dt>2</dt><dd>NOT PERMANENT</dd></dl> |  | 
 
-##Cd_History_Date-2_399 
+## Cd_History_Date-2_399 
 
  property | value 
 --- | --- 
  id | Cd_History_Date-2_399
  label | Cd History Date
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -723,14 +723,14 @@
 | date_veteran_was_notified | Date Veteran Was Notified | DATE-TIME |  |  |  |  | 
 | cd_reason | Cd Reason | [OBJECT] |  |  | {properties:[{description:This sub-field will contain pointers to the CD REASONS file (#27.17),\ras well as the supporting data stored in the CD STATUS DIAGNOSES (#.396),\rPROCEDURES (#.397) and CONDITIONS (#.398) fields.,datatype:POINTER,required:true,label:Cd Reason,range:{id:Catastrophic_Disability_Reasons-27_17},indexed:true,fmId:.01,id:cd_reason},{description:This is the extremity affected by the CD.,datatype:ENUMERATION,label:Affected Extremity,range:{RIGHT LOWER EXTREMITY:RLE,Bilateral Lower Extremity:BLE,LEFT LOWER EXTREMITY:LLE,LEFT UPPER EXTREMITY:LUE,Bilateral Upper Extremity:BLU,RIGHT UPPER EXTREMITY:RUE},fmId:1,id:affected_extremity},{description:This field stores a historical value for the SCORE subfield (#1) of the\rCD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:NUMERIC,label:Score,fmId:2,id:score},{description:This subfield stores a historical value of the PERMANENT INDICATOR subfield\r(#2) of the CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:ENUMERATION,label:Permanent Indicator,range:{UNKNOWN:3,PERMANENT:1,NOT PERMANENT:2},fmId:3,id:permanent_indicator}],fmId:2.409,id:Cd_Reason-2_409,label:Cd Reason} |  | 
 
-##Alias-2_01 
+## Alias-2_01 
 
  property | value 
 --- | --- 
  id | Alias-2_01
  label | Alias
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -738,28 +738,28 @@
 | alias_ssn | Alias Ssn | STRING |  |  |  |  | 
 | alias_components | Alias Components | POINTER |  |  | {id:Name_Components-20} |  | 
 
-##Race_Information-2_02 
+## Race_Information-2_02 
 
  property | value 
 --- | --- 
  id | Race_Information-2_02
  label | Race Information
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | race_information | Race Information | POINTER |  |  | {id:Race-10} | REQUIRED, INDEXED | 
 | method_of_collection | Method Of Collection | POINTER |  |  | {id:Race_And_Ethnicity_Collection_Method-10_3} |  | 
 
-##Enrollment_Clinic-2_001 
+## Enrollment_Clinic-2_001 
 
  property | value 
 --- | --- 
  id | Enrollment_Clinic-2_001
  label | Enrollment Clinic
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -767,28 +767,28 @@
 | enrollment_data | Enrollment Data | [OBJECT] |  |  | {properties:[{description:Enter the date this patient was initially enrolled in this clinic.,datatype:DATE-TIME,required:true,label:Date Of Enrollment,fmId:.01,id:date_of_enrollment},{description:Enter O if the patient is being seen by this clinic on an outpatient\rbasis.  Enter A if the patient is being seen for ambulatory care.,datatype:ENUMERATION,label:Opt Or Ac,range:{OPT:O,AC:A},fmId:1,id:opt_or_ac},{description:This field contains the date this patient was discharged from this clinic.,datatype:DATE-TIME,label:Date Of Discharge,fmId:3,id:date_of_discharge},{description:If the patient has been discharged from this clinic, this field contains the\rreason the patient was discharged.  This is a free text field which\rallows up to 80 characters to be entered.,datatype:STRING,label:Reason For Discharge,fmId:4,id:reason_for_discharge},{description:Enter the date on which this patients enrollment in this particular\rclinic was last reviewed.,datatype:DATE-TIME,label:Review Date,fmId:5,id:review_date}],fmId:2.011,id:Enrollment_Data-2_011,label:Enrollment Data} |  | 
 | current_status | Current Status | ENUMERATION |  |  | <dl><dt>I</dt><dd>INACTIVE</dd></dl> |  | 
 
-##Ethnicity_Information-2_06 
+## Ethnicity_Information-2_06 
 
  property | value 
 --- | --- 
  id | Ethnicity_Information-2_06
  label | Ethnicity Information
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | ethnicity_information | Ethnicity Information | POINTER |  |  | {id:Ethnicity-10_2} | REQUIRED, INDEXED | 
 | method_of_collection | Method Of Collection | POINTER |  |  | {id:Race_And_Ethnicity_Collection_Method-10_3} |  | 
 
-##Patient_Eligibilities-2_0361 
+## Patient_Eligibilities-2_0361 
 
  property | value 
 --- | --- 
  id | Patient_Eligibilities-2_0361
  label | Patient Eligibilities
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -796,14 +796,14 @@
 | long_id | Long Id | STRING |  |  |  |  | 
 | short_id | Short Id | STRING |  |  |  |  | 
 
-##Ph_Date_Time_Updated-2_0534 
+## Ph_Date_Time_Updated-2_0534 
 
  property | value 
 --- | --- 
  id | Ph_Date_Time_Updated-2_0534
  label | Ph Date/Time Updated
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -813,14 +813,14 @@
 | ph_remarks | Ph Remarks | ENUMERATION |  |  | <dl><dt>6</dt><dd>UNDELIVERABLE MAIL</dd><dt>5</dt><dd>VAMC</dd><dt>3</dt><dd>ENTERED IN ERROR</dd><dt>1</dt><dd>UNACCEPTABLE DOCUMENTATION</dd><dt>2</dt><dd>NO DOCUMENTATION REC'D</dd><dt>4</dt><dd>UNSUPPORTED PURPLE HEART</dd></dl> |  | 
 | ph_user | Ph User | STRING |  |  |  |  | 
 
-##Icn_History-2_0992 
+## Icn_History-2_0992 
 
  property | value 
 --- | --- 
  id | Icn_History-2_0992
  label | Icn History
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -829,14 +829,14 @@
 | cmor | Cmor | POINTER |  |  | {id:Institution-4} |  | 
 | date_time_of_change | Date/Time Of Change | DATE-TIME |  |  |  |  | 
 
-##Cmor_History-2_0993 
+## Cmor_History-2_0993 
 
  property | value 
 --- | --- 
  id | Cmor_History-2_0993
  label | Cmor History
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -845,14 +845,14 @@
 | cmor_score_calculation_date | Cmor Score Calculation Date | DATE-TIME |  |  |  |  | 
 | cmor_change_date | Cmor Change Date | DATE-TIME |  |  |  |  | 
 
-##Disposition_LogIn_Date_Time-2_101 
+## Disposition_LogIn_Date_Time-2_101 
 
  property | value 
 --- | --- 
  id | Disposition_LogIn_Date_Time-2_101
  label | Disposition Log-In Date/Time
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -897,14 +897,14 @@
 | ods_at_registration | Ods At Registration? | BOOLEAN |  |  | {false:0,true:1} |  | 
 | ods_registration_entry-2_101 | Ods Registration Entry |  |  |  |  |  | 
 
-##Appointment-2_98 
+## Appointment-2_98 
 
  property | value 
 --- | --- 
  id | Appointment-2_98
  label | Appointment
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -939,14 +939,14 @@
 | desired_date_of_appointment | Desired Date Of Appointment | DATE-TIME |  |  |  |  | 
 | followup_visit | Follow-Up Visit | BOOLEAN |  |  | {false:0,true:1} |  | 
 
-##Archived_Data-2_12 
+## Archived_Data-2_12 
 
  property | value 
 --- | --- 
  id | Archived_Data-2_12
  label | Archived Data
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 

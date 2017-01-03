@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Hospital_Location-44 
+## [VDM](TableOfContent.md) --> Hospital_Location-44 
 
  property | value 
 --- | --- 
@@ -9,7 +9,7 @@
  location | ^SC(
  description | Contains locations found in the hospital (ie. Wards, Clinics)\r *********DO NOT RE-INDEX THIS FILE**********
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -17,9 +17,9 @@
 | abbreviation | 1 | Abbreviation | Abbreviation given by user to any ward, clinic, fileroom, operating\rroom or other location associated with the NAME. | STRING |  | INDEXED |  | 
 | type-2 | 2 | Type | Type of location assigned to entries into this file, i.e. Ward,\rClinic, Fileroom, Operating Room, Other. | ENUMERATION |  | REQUIRED | <dl><dt>N</dt><dd>NON-CLINIC STOP</dd><dt>M</dt><dd>MODULE</dd><dt>OR</dt><dd>OPERATING ROOM</dd><dt>Z</dt><dd>OTHER LOCATION</dd><dt>C</dt><dd>CLINIC</dd><dt>F</dt><dd>FILE AREA</dd><dt>I</dt><dd>IMAGING</dd><dt>W</dt><dd>WARD</dd></dl> | 
 | type_extension | 2.1 | Type Extension | Type extension of a location assigned to entries into this file\rto insure user is not allowed to use a previously designated\rWard Location as a Clinic Location for example. | POINTER |  | REQUIRED | {id:Location_Type-40_9} | 
-| institution | 3 | Institution | Institution name assigned to each entry in this file to identify\rwhere the specific location is. | POINTER |  |  | {id:Institution-4} | 
+| institution | 3 | Institution | Institution name assigned to each entry in this file to identify\rwhere the specific location is. | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | division | 3.5 | Division | Division name assigned to each entry in this file to identify\rwehre the specific location is.  There can be multiple divisions\rassigned to an Institution, but only one division per location. | POINTER |  |  | {id:Medical_Center_Division-40_8} | 
-| module | 4 | Module | Module or name of hospital location. | POINTER |  |  | {id:Hospital_Location-44} | 
+| module | 4 | Module | Module or name of hospital location. | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
 | default_device | 5 | Default Device | Default device to which information should print for a specific\rlocation.  This field is not currently being utilized. | STRING |  |  |  | 
 | disposition_action | 6 | Disposition Action | A disposition action associated with specific location, i.e.\r'0'= none; '1'=appointment record request; '2'=scheduling. | ENUMERATION |  |  | <dl><dt>2</dt><dd>SCHEDULING</dd><dt>0</dt><dd>NONE</dd><dt>1</dt><dd>APPOINTMENT REC REQ</dd></dl> | 
 | visit_location | 7 | Visit Location | Location of visit for specified entry. | STRING |  |  |  | 
@@ -33,7 +33,7 @@
 | synonym | 13 | Synonym | Synonym or shortened name associated with a specific location. | [STRING] |  |  |  | 
 | special_amis_stop | 14 | Special Amis Stop | Special AMIS stop associated with a specific location based on\rthe Service assigned. | ENUMERATION |  |  | <dl><dt>10</dt><dd>MENTAL HYGEINE</dd><dt>16</dt><dd>EMPLOYEE HEALTH</dd><dt>14</dt><dd>ALCOHOL TREATMENT</dd><dt>12</dt><dd>DAY HOSPITAL</dd><dt>15</dt><dd>EMERGENCY UNIT</dd><dt>13</dt><dd>DRUG DEPENDANCE</dd><dt>11</dt><dd>DAY TREATMENT</dd></dl> | 
 | category_of_visit | 15 | Category Of Visit | Category of visit associated with a specific location. | STRING |  |  |  | 
-| default_provider | 16 | Default Provider | Default provider or physician that is assigned to specific clinic. | POINTER |  |  | {id:New_Person-200} | 
+| default_provider | 16 | Default Provider | Default provider or physician that is assigned to specific clinic. | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | prohibited_terminal | 19 | Prohibited Terminal | Terminals that cannot be utilized from specific location. | [STRING] |  |  |  | 
 | agency | 23 | Agency | Agency associated with specific location, i.e. Veterans Affairs,\rDepartment of Defense, etc. | POINTER |  |  | {id:Agency-4_11} | 
 | ask_for_check_in_out_time | 24 | Ask For Check In/out Time | When checking in/out a patient for an appointment, should the\ruser be prompted for date and time?\r \rIf this field is set to 'YES', the user will be prompted\rfor the date and time.  The current date and time will be the\rdefault.\r \rIf this field is set to 'NO' or is not entered, the user will\rnot be prompted and the current date and time will automatically\rbe entered.\r \rIf an appointment is scheduled retroactively then the system\rwill use the date and time of the appointment as the check\rin/out time.  This date/time will either be entered automatically or\rused as a default, depending upon how this parameter is set. | BOOLEAN |  |  | {false:1,true:0} | 
@@ -57,7 +57,7 @@
 | variable_appntment_length | 1913 | Variable App'ntment Length | Does the clinic have variable appointment lengths?  Can, if length\rof appointment is 10 minutes, user make longer appointments in\rincrements of 10 at time of making appointment? | ENUMERATION |  |  | <dl><dt>V</dt><dd>YES, VARIABLE LENGTH</dd></dl> | 
 | hour_clinic_display_begins | 1914 | Hour Clinic Display Begins | The hour clinic will begin displaying availability (i.e. 8AM). | NUMERIC |  |  |  | 
 | hold_sc_slots_until_number_of_days | 1915 | Hold Sc Slots Until # Of Days | Should service connected slots be held open for a set number of\rdays?  Service connected veterans have priority over NSC veterans\rwhen scheduling appointments. | NUMERIC |  |  |  | 
-| principal_clinic | 1916 | Principal Clinic | Principal clinic or main clinic assigned to a specific location. | POINTER |  |  | {id:Hospital_Location-44} | 
+| principal_clinic | 1916 | Principal Clinic | Principal clinic or main clinic assigned to a specific location. | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
 | display_increments_per_hour | 1917 | Display Increments Per Hour |      This field SHOULD NOT BE EDITED when patterns have been established\rusing another increment per hour. Editing this field will cause \rexisting patterns to be erroneous and scheduling conflicts may also occur \rif the increments are changed. | ENUMERATION |  | REQUIRED | <dl><dt>4</dt><dd>15-MIN </dd><dt>2</dt><dd>30-MIN </dd><dt>3</dt><dd>20-MIN </dd><dt>1</dt><dd>60-MIN </dd><dt>6</dt><dd>10-MIN </dd></dl> | 
 | overbooks_day_maximum | 1918 | Overbooks/day Maximum | Number of allowable overbooks per day.  If overbooks are not allowed, the\rnumber should be set to zero. | NUMERIC |  | REQUIRED |  | 
 | schedule_on_holidays | 1918.5 | Schedule On Holidays? | Should the user be able to schedule appointments on holiday's for\rspecific location? | BOOLEAN |  |  | {true:Y} | 
@@ -88,7 +88,7 @@
 | record_request_priority | 2011 | *record Request Priority |  | NUMERIC |  |  |  | 
 | record_appointment_status | 2012 | *record Appointment Status |  | ENUMERATION |  |  | <dl></dl> | 
 | prohibit_access_to_clinic | 2500 | Prohibit Access To Clinic? | Should only privileged users have access to book to this clinic? | BOOLEAN |  |  | {true:Y} | 
-| privileged_user | 2501 | Privileged User | Privileged users set up to have access to book to clinic.\rOnce one privileged user is entered into this multiple, no other\ruser will have access to book to the clinic.  Each individual who\rshould have access to clinic must be entered one at a time. | [POINTER] |  |  | {id:New_Person-200} | 
+| privileged_user | 2501 | Privileged User | Privileged users set up to have access to book to clinic.\rOnce one privileged user is entered into this multiple, no other\ruser will have access to book to the clinic.  Each individual who\rshould have access to clinic must be entered one at a time. | [POINTER] |  |  | [New_Person-200](New_Person-200.md) | 
 | noncount_clinic_y_or_n | 2502 | Non-count Clinic? (y Or N) | Is this clinic to be a non-count clinic for workload purposes? OR\rAre visits to this clinic to be included in workload statistics? | BOOLEAN |  | REQUIRED | {false:N,true:Y} | 
 | include_on_file_room_lists | 2502.5 | Include On File Room Lists? | This field should contain a Yes if this is a non-count clinic that should\rbe included on the file room lists. | BOOLEAN |  |  | {false:1,true:0} | 
 | credit_stop_code | 2503 | Credit Stop Code | Appointments to this clinic will receive this stop code credit in addition\rto the 'normal' stop code credit if a stop code different from the 'normal'\rstop code for this clinic is entered here. | POINTER |  |  | {id:Clinic_Stop-40_7} | 
@@ -109,14 +109,14 @@
 | autofinish_rx_site | 22900 | Autofinish Rx Site | This field is a pointer to File#59, Outpatient Site, that this hospital \rlocation is associated with.  If this field is not set autofinishing of \rRx's for this hospital location will not take place. | POINTER |  |  | {id:Outpatient_Site-59} | 
 | autofinish_clinic_printer | 22901 | Autofinish Clinic Printer | Printer where autofinished Rx's will print for a particular clinic. | POINTER |  |  | {id:Device-3_5} | 
 
-##Appointment-44_001 
+## Appointment-44_001 
 
  property | value 
 --- | --- 
  id | Appointment-44_001
  label | Appointment
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -124,56 +124,56 @@
 | patient | 2 | Patient | Patient for whom this data relates. | [OBJECT] |  |  | {id:Patient-44_003,fmId:44.003,label:Patient,properties:[{id:patient,fmId:.01,label:Patient,description:Patient for whom appointment data relates.,datatype:POINTER,required:true,range:{id:Patient-2}},{id:length_of_appt,fmId:1,label:Length Of App't,description:Length of appointment in minutes (i.e. 15-60).,datatype:NUMERIC},{id:xray,fmId:2,label:Xray,description:X-ray  ordered in association with an appointment.,datatype:STRING},{id:other,fmId:3,label:Other,description:Any other tests ordered in association with an appointment,datatype:STRING},{id:ward_loc,fmId:4,label:Ward Loc,description:Ward location of patient if an inpatient at the time of appointment.,datatype:STRING},{id:data_entry_clerk,fmId:7,label:Data Entry Clerk,description:Clerk who entered the appointment.,datatype:POINTER,range:{id:New_Person-200}},{id:date_appointment_made,fmId:8,label:Date Appointment Made,description:Date/time appointment was placed into the package.,datatype:DATE-TIME},{id:overbook,fmId:9,label:Overbook,description:Was this appointment an overbook, or scheduled over the maximum number\rof appointments allowed for that day/slot.,datatype:ENUMERATION,range:{OVERBOOK:O}},{id:prior_xray_results_to_clinic,fmId:10,label:Prior X-ray Results To Clinic?,description:Are prior x-ray results required to be sent to clinic at time of\rappointment?,datatype:BOOLEAN,range:{true:Y}},{id:eligibility_of_visit,fmId:30,label:Eligibility Of Visit,description:This field was previously called NON-VETERAN VISIT ELIGIBILITY.  It now\rcontains the eligibility being used at the time of the appointment.  If\ra patient has Other Entitled Eligibilities (replaces Dual Status), the\rappointment options will prompt for eligibility and be set here.,datatype:POINTER,range:{id:Eligibility_Code-8}},{id:parent_record_request_number,fmId:200,label:Parent Record Request #,description:This field contains the request number from the record tracking system.\rIt will only have a request number if the clinic requires records\rfor an appointment and if the site is utilitizing the record tracking\rmodule.\r \rThe request number represents the 'parent' request for records. This\rparent request may then, in turn, indicate that more than one record \rrequest is associated with this appointment. For example, if the patient's\rmedical record has two volumes then there maybe a request issued for each\rvolume.\r \rThe request for volume 1 maybe the initial(parent) request and the\rrequest for the second volume would have volumes 1's request as its\rparent.\r \rAlso, requests for x-ray film folders, dental records etc. maybe linked\rto this parent request.,datatype:POINTER,range:{id:Requested_Records-190_1}},{id:check_in_user,fmId:302,label:Check In User,description:This field contains the user who checked in the patient\rfor the appointment.  It is automatically filled in when the\rCHECKED-IN field(#309) is entered.,datatype:POINTER,range:{id:New_Person-200}},{id:checked_out,fmId:303,label:Checked Out,description:This field contains the date and time the patient was checked out\rof the appointment.,datatype:DATE-TIME},{id:check_out_user,fmId:304,label:Check Out User,description:This field contains the user who checked out the patient\rfor the appointment.  It is automatically entered when the\rCHECKED OUT field(#303) is entered.,datatype:POINTER,range:{id:New_Person-200}},{id:check_in_entered,fmId:305,label:Check In Entered,description:Date and time that the 'check in' was entered into the system.\rThis field is automatically filled in when the CHECKED-IN(#309) field\ris entered.,datatype:DATE-TIME},{id:check_out_entered,fmId:306,label:Check Out Entered,description:Date and time that the 'check out' was entered into the system.\rThis field is automatically filled in when the CHECKED-OUT(#303) field\ris entered.,datatype:DATE-TIME},{id:checkedin,fmId:309,label:Checked-in,description:This field contains the date and time the patient was checked in\rfor the appointment.,datatype:DATE-TIME},{id:appointment_cancelled,fmId:310,label:Appointment Cancelled?,description:Was appointment cancelled?,datatype:ENUMERATION,range:{CANCELLED:C}},{id:consult_link,fmId:688,label:Consult Link,description:This field links the appointment to a consult.,datatype:POINTER,indexed:true,range:{id:Request_consultation-123}}]} | 
 | message | 1400 | Message | Message generated when clerk attempting to make appointment and\rpatient has appointment same day in another or same clinic to\ralert them of same. | STRING |  |  |  | 
 
-##Cancel_Date_time_Begin-44_05 
+## Cancel_Date_time_Begin-44_05 
 
  property | value 
 --- | --- 
  id | Cancel_Date_time_Begin-44_05
  label | Cancel Date/time Begin
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | cancel_date_time_begin | .01 | Cancel Date/time Begin | Date/time a clinic started cancellation period. | DATE-TIME |  | REQUIRED |  | 
 | cancel_ending_time | 1 | Cancel Ending Time | Date/time a clinic ended cancellation period. | STRING |  |  |  | 
 
-##Chart_Check-44_006 
+## Chart_Check-44_006 
 
  property | value 
 --- | --- 
  id | Chart_Check-44_006
  label | Chart Check
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date | .01 | Date | Date chart was checked for availability for this appointment. | DATE-TIME |  | REQUIRED |  | 
-| patient | 2 | Patient | Patient associated with appointment data. | [POINTER] |  |  | {id:Patient-2} | 
+| patient | 2 | Patient | Patient associated with appointment data. | [POINTER] |  |  | [Patient-2](Patient-2.md) | 
 
-##Availability-44_002 
+## Availability-44_002 
 
  property | value 
 --- | --- 
  id | Availability-44_002
  label | Availability
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | availability | .01 | Availability | Clinic availability information. | DATE-TIME |  | REQUIRED |  | 
 | schedule_time | 2 | Schedule Time | Time slots or pattern scheduled for a specific clinic. | [OBJECT] |  |  | {id:Schedule_Time-44_004,fmId:44.004,label:Schedule Time,properties:[{id:schedule_time,fmId:.01,label:Schedule Time,description:Time slots or pattern scheduled for a specific clinic.,datatype:STRING,required:true},{id:number_of_patients,fmId:1,label:Number Of Patients,description:Number of patients allowed to be booked for time slots.,datatype:NUMERIC}]} | 
 
-##Pattern-44_005 
+## Pattern-44_005 
 
  property | value 
 --- | --- 
  id | Pattern-44_005
  label | Pattern
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
@@ -181,154 +181,154 @@
 | current_availability | 1 | Current Availability | Current clinic availability.  What slots are and are not available\rfor specified clinic days. | STRING |  |  |  | 
 | special_availability_flag | 3 | Special Availability Flag | This node's existence indicates there is a 'special' availability set up\rfor this date and the master pattern for this date should be taken from\rthe \OST\ node with the same date, not the \T0\-\T6\ master pattern nodes. | DATE-TIME |  |  |  | 
 
-##Special_Pattern-44_0002 
+## Special_Pattern-44_0002 
 
  property | value 
 --- | --- 
  id | Special_Pattern-44_0002
  label | Special Pattern
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | pattern_date | .01 | Pattern Date | Date a particular pattern was established by user. | DATE-TIME |  | REQUIRED |  | 
 | original_availability | 1 | Original Availability | First or original availability pattern set up for a clinic. | STRING |  |  |  | 
 
-##Sunday_Template-44_06 
+## Sunday_Template-44_06 
 
  property | value 
 --- | --- 
  id | Sunday_Template-44_06
  label | Sunday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Sundays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Sunday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Sundays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up by user on specified date for Sundays.  All patterns\rstored. | STRING |  |  |  | 
 
-##Monday_Template-44_07 
+## Monday_Template-44_07 
 
  property | value 
 --- | --- 
  id | Monday_Template-44_07
  label | Monday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Mondays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Monday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Mondays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up by user for clinic for Mondays. | STRING |  |  |  | 
 
-##Tuesday_Template-44_08 
+## Tuesday_Template-44_08 
 
  property | value 
 --- | --- 
  id | Tuesday_Template-44_08
  label | Tuesday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Tuesdays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Tuesday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Tuesdays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master Pattern set up for clinic for Tuesdays. | STRING |  |  |  | 
 
-##Wednesday_Template-44_09 
+## Wednesday_Template-44_09 
 
  property | value 
 --- | --- 
  id | Wednesday_Template-44_09
  label | Wednesday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Wednesdays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Wednesday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Wednesdays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up for clinic for wednesdays. | STRING |  |  |  | 
 
-##Thursday_Template-44_008 
+## Thursday_Template-44_008 
 
  property | value 
 --- | --- 
  id | Thursday_Template-44_008
  label | Thursday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Thursdays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Thursday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Thursdays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up for clinic for thursdays. | STRING |  |  |  | 
 
-##Friday_Template-44_009 
+## Friday_Template-44_009 
 
  property | value 
 --- | --- 
  id | Friday_Template-44_009
  label | Friday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Fridays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Friday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Fridays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up for clinic for fridays. | STRING |  |  |  | 
 
-##Saturday_Template-44_0001 
+## Saturday_Template-44_0001 
 
  property | value 
 --- | --- 
  id | Saturday_Template-44_0001
  label | Saturday Template
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | limit_date | .01 | Limit Date | The pattern stored at this date is applicable for Saturdays from the previous\rentry's date up to but not including this date.  If there is no previous\rentry date, this date is the first Saturday when appointments may be made to\rthis clinic.  If the date equals 9999999, this pattern is effective\rindefinitely for Saturdays from the previous entry date. | NUMERIC |  | REQUIRED |  | 
 | master_pattern | 1 | Master Pattern | Master pattern set up for clinic for saturdays. | STRING |  |  |  | 
 
-##Provider-44_1 
+## Provider-44_1 
 
  property | value 
 --- | --- 
  id | Provider-44_1
  label | Provider
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| provider | .01 | Provider | Enter in this field the providers associated with this clinic.  These\rproviders will then be displayed when updating the provider through\rAppointment Management or Check Out to assist the user in entering\rthe correct provider. | POINTER |  | REQUIRED, INDEXED | {id:New_Person-200} | 
+| provider | .01 | Provider | Enter in this field the providers associated with this clinic.  These\rproviders will then be displayed when updating the provider through\rAppointment Management or Check Out to assist the user in entering\rthe correct provider. | POINTER |  | REQUIRED, INDEXED | [New_Person-200](New_Person-200.md) | 
 | default_provider | .02 | Default Provider | Enter 'YES' in this field if the provider is the default for this\rclinic.  Otherwise, enter 'NO'. | BOOLEAN |  |  | {false:1,true:0} | 
 
-##Diagnosis-44_11 
+## Diagnosis-44_11 
 
  property | value 
 --- | --- 
  id | Diagnosis-44_11
  label | Diagnosis
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| diagnosis | .01 | Diagnosis | This is a diagnosis associated with this clinic.  This diagnosis will\rbe displayed when updating the diagnosis through Appointment Management\ror Check Out to assist the user in entering the correct diagnosis. | POINTER |  | REQUIRED, INDEXED | {id:Icd_Diagnosis-80} | 
+| diagnosis | .01 | Diagnosis | This is a diagnosis associated with this clinic.  This diagnosis will\rbe displayed when updating the diagnosis through Appointment Management\ror Check Out to assist the user in entering the correct diagnosis. | POINTER |  | REQUIRED, INDEXED | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
 | default_diagnosis | .02 | Default Diagnosis | This field indicates whether or not this ICD code is this clinic's \rdefault diagnosis for an ICD version. Only one ICD code for an ICD version\rmay be the default code for a clinic. | BOOLEAN |  |  | {false:1,true:0} | 
 
-##Team_Positions-44_40457 
+## Team_Positions-44_40457 
 
  property | value 
 --- | --- 
  id | Team_Positions-44_40457
  label | Team Positions
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 

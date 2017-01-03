@@ -1,5 +1,5 @@
 
-##[MVDM](TableOfContent.md) --> Visit 
+## [MVDM](TableOfContent.md) --> Visit 
 
  property | value 
 --- | --- 
@@ -12,7 +12,7 @@
  fromVDMList | 
  fromVDMListPerPatient | 
 
-###Properties
+### Properties
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -22,7 +22,7 @@
 | dateTimeLastModified |  | DATE-TIME | date_last_modified | $NOW |  |  | 
 | dateTimeCheckedOut |  | DATE-TIME | check_out_datetime |  |  |  | 
 | enteredBy |  | POINTER | created_by_user | $USERID | {id:New_Person-200} |  | 
-| parentVisit |  | POINTER | parent_visit_link |  | {id:Visit} |  | 
+| parentVisit |  | POINTER | parent_visit_link |  | [Visit](Visit.md) |  | 
 | visitType |  | ENUMERATION | encounter_type |  | <dl><dt>P</dt><dd>PRIMARY</dd><dt>O</dt><dd>OCCASION OF SERVICE</dd><dt>S</dt><dd>STOP CODE</dd><dt>A</dt><dd>ANCILLARY</dd><dt>C</dt><dd>CREDIT STOP</dd></dl> |  | 
 | facility |  | POINTER | loc_of_encounter |  | {id:Location-9999999_06} |  | 
 | hospitalLocation |  | POINTER | hospital_location |  | {id:Hospital_Location-44} |  | 

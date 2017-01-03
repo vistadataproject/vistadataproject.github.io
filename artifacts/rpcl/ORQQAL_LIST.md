@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQAL LIST 
+## [RPCL](TableOfContent.md) --> ORQQAL LIST 
 
  property | value 
 --- | --- 
@@ -15,7 +15,7 @@
  returnType | ARRAY
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 

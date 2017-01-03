@@ -1,7 +1,7 @@
 
 
 
-##[RPCL](TableOfContent.md) --> ORQQPL UPDATE 
+## [RPCL](TableOfContent.md) --> ORQQPL UPDATE 
 
  property | value 
 --- | --- 
@@ -15,16 +15,16 @@
  returnType | ARRAY
  returnDescription | 
 
-###Input Parameters
+### Input Parameters
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
 | UPDARRAY | LIST | true | UPDATE ARRAY |  | [List Member](#for-id-updarray) | 
 
-###List Member Parameters
+### List Member Parameters
 
 
-####For ID UPDARRAY
+#### For ID UPDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 

@@ -1,5 +1,5 @@
 
-##[VDM](TableOfContent.md) --> Patient_ihs-9000001 
+## [VDM](TableOfContent.md) --> Patient_ihs-9000001 
 
  property | value 
 --- | --- 
@@ -9,22 +9,22 @@
  location | ^AUPNPAT(
  description | This file is IHS's primary patient data file.  The NAME (.01) field of this \rfile is a pointer to the VA's patient file (#2).  Fields in \rcommon between the two dictionaries actually exist only in the VA patient \rfile and are referenced by the IHS patient file as computed fields.  All \rother files containing patient data have backward pointers linking them to \rthis file.  The linkage is by patient name and the internal FileMan gener-\rated number of the ancillary file is the same number used in this file.\r   \rAll applications developed for the RPMS which require patient data will\rpoint to this file.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| name | .01 | Name | This field points to the Patient file (#2) and has the same internal\rnumber as that file.  Thus, the patient's name is the Patient file (#2)\rname. | POINTER |  | REQUIRED, INDEXED | {id:Patient-2} | 
+| name | .01 | Name | This field points to the Patient file (#2) and has the same internal\rnumber as that file.  Thus, the patient's name is the Patient file (#2)\rname. | POINTER |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
 | location_of_home | 1201 | Location Of Home | This is the directions to get to the patients home. | STRING |  |  |  | 
 | health_record_no | 4101 | Health Record No. | This multiple contains the different health record identifiers by facility.\rIHS uses a 6 character identifier.\rThe VA uses the social security number which may be up to 10 \rcharacters.   | [OBJECT] |  |  | [Health_Record_No-9000001_41](#health_record_no-9000001_41)  | 
 
-##Health_Record_No-9000001_41 
+## Health_Record_No-9000001_41 
 
  property | value 
 --- | --- 
  id | Health_Record_No-9000001_41
  label | Health Record No.
 
-###Properties
+### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
