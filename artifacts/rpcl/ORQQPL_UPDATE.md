@@ -32,7 +32,7 @@ title: RPCL documentation
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
 | DIAGNOSIS | REFERENCE |  | Diagnosis | diagnosis | ORARRAY(\DIAGNOSIS\)=\521774\ | 
-| STATUS | ENUMERATION | {::nomarkdown}<dl><dt>ACTIVE</dt><dd>A</dd><dt>INACTIVE</dt><dd>I</dd></dl>{:/} | Problem Status | problemStatus | ORARRAY(\STATUS\)=\I\ | 
+| STATUS | ENUMERATION | {::nomarkdown}<dl><dt>A</dt><dd>ACTIVE</dd><dt>I</dt><dd>INACTIVE</dd></dl>{:/} | Problem Status | problemStatus | ORARRAY(\STATUS\)=\I\ | 
 | ONSET | DATE |  | Date Of Onset | onsetDate | ORARRAY(\ONSET\)=\3160303.\ | 
 | LEXICON | REFERENCE |  | Problem | problem | ORARRAY(\LEXICON\)=\7647488\ | 
 | PROVIDER | REFERENCE |  | Recording Provider | enteredBy | ORARRAY(\PROVIDER\)=\57\ | 
