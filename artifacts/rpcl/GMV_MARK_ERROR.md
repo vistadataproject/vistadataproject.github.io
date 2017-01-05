@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | GMV_MARK_ERROR
  name | GMV MARK ERROR
- function | EN1^GMVDCSAV
- rpcType | CHANGE
+ description | This remote procedure call marks a selected vitals record in the GMRV\rVital Measurement (#120.5) file as entered-in-error.\r \rThis remote procedure call is documented in Integration Agreement 4414.
+ MUMPS implementation | EN1^GMVDCSAV
+ type | CHANGE
  complexity | MEDIUM
  uses | 
- description | This remote procedure call marks a selected vitals record in the GMRV\rVital Measurement (#120.5) file as entered-in-error.\r \rThis remote procedure call is documented in Integration Agreement 4414.
- returnType | SINGLE VALUE
- returnDescription | 
+ return type | SINGLE VALUE
+ return description | 
 
 ### Input Parameters
 

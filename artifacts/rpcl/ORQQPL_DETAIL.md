@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQPL_DETAIL
  name | ORQQPL DETAIL
- function | DETAIL^ORQQPL
- rpcType | UNSTRUCTURED READ
+ description | Function returns a string of detailed information for a problem.
+ MUMPS implementation | DETAIL^ORQQPL
+ type | UNSTRUCTURED READ
  complexity | HIGH
  uses | 
- description | Function returns a string of detailed information for a problem.
- returnType | ARRAY
- returnDescription | String of detailed problem information delimited by \^\.  String includes:\\r
+ return type | ARRAY
+ return description | String of detailed problem information delimited by \^\.  String includes:\\r
 
 ### Input Parameters
 

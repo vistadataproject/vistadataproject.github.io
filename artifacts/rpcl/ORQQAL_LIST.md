@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQAL_LIST
  name | ORQQAL LIST
- function | LIST^ORQQAL
- rpcType | READ_STRUCTURED
+ description | Returns a list of allergies for a patient.
+ MUMPS implementation | LIST^ORQQAL
+ type | READ_STRUCTURED
  complexity | LOW
  uses | 
- description | Returns a list of allergies for a patient.
- returnType | ARRAY
- returnDescription | 
+ return type | ARRAY
+ return description | 
 
 ### Input Parameters
 

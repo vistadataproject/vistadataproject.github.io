@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORWPT_PTINQ
  name | ORWPT PTINQ
- function | PTINQ^ORWPT
- rpcType | READ_UNSTRUCTURED
+ description | Returns formatted patient inquiry text for display in GUI environment.
+ MUMPS implementation | PTINQ^ORWPT
+ type | READ_UNSTRUCTURED
  complexity | 
  uses | 
- description | Returns formatted patient inquiry text for display in GUI environment.
- returnType | GLOBAL ARRAY
- returnDescription | Returns formatted patient inquiry text for display in GUI environment.
+ return type | GLOBAL ARRAY
+ return description | Returns formatted patient inquiry text for display in GUI environment.
 
 ### Input Parameters
 

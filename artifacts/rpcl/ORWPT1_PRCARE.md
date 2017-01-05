@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORWPT1_PRCARE
  name | ORWPT1 PRCARE
- function | PRCARE^ORWPT1
- rpcType | READ_STRUCTURED
+ description | Return primary care, inpatient, and mental health summary information.
+ MUMPS implementation | PRCARE^ORWPT1
+ type | READ_STRUCTURED
  complexity | 
  uses | 
- description | Return primary care, inpatient, and mental health summary information.
- returnType | SINGLE VALUE
- returnDescription | Return primary care, inpatient, and mental health summary information.
+ return type | SINGLE VALUE
+ return description | Return primary care, inpatient, and mental health summary information.
 
 ### Input Parameters
 

@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQPL_PROBLEM_LIST
  name | ORQQPL PROBLEM LIST
- function | PROBL^ORQQPL3
- rpcType | CHANGE
+ description | Problem list for CPRS GUI client
+ MUMPS implementation | PROBL^ORQQPL3
+ type | CHANGE
  complexity | HIGH
  uses | 
- description | Problem list for CPRS GUI client
- returnType | ARRAY
- returnDescription | List of problems with comments
+ return type | ARRAY
+ return description | List of problems with comments
 
 ### Input Parameters
 

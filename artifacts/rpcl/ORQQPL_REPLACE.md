@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQPL_REPLACE
  name | ORQQPL REPLACE
- function | REPLACE^ORQQPL2
- rpcType | CHANGE
+ description | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
+ MUMPS implementation | REPLACE^ORQQPL2
+ type | CHANGE
  complexity | MEDIUM
  uses | 
- description | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
- returnType | SINGLE VALUE
- returnDescription | 
+ return type | SINGLE VALUE
+ return description | 
 
 ### Input Parameters
 

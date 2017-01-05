@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORWPT_ID_INFO
  name | ORWPT ID INFO
- function | IDINFO^ORWPT
- rpcType | READ_STRUCTURED
+ description | Returns identifying information for a patient.
+ MUMPS implementation | IDINFO^ORWPT
+ type | READ_STRUCTURED
  complexity | 
  uses | 
- description | Returns identifying information for a patient.
- returnType | SINGLE VALUE
- returnDescription | Returns identifying information for a patient.
+ return type | SINGLE VALUE
+ return description | Returns identifying information for a patient.
 
 ### Input Parameters
 

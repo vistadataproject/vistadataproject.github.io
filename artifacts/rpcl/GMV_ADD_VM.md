@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | GMV_ADD_VM
  name | GMV ADD VM
- function | EN1^GMVDCSAV
- rpcType | CHANGE
+ description | This remote procedure call is used to enter a new Vital/Measurement record\rin the GMRV Vital Measurement file (#120.5).\r \rThis remote procedure call is documented in Integration Agreement 3996.
+ MUMPS implementation | EN1^GMVDCSAV
+ type | CHANGE
  complexity | MEDIUM
  uses | 
- description | This remote procedure call is used to enter a new Vital/Measurement record\rin the GMRV Vital Measurement file (#120.5).\r \rThis remote procedure call is documented in Integration Agreement 3996.
- returnType | SINGLE VALUE
- returnDescription | 
+ return type | SINGLE VALUE
+ return description | 
 
 ### Input Parameters
 

@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | OR_GET_COMBAT_VET
  name | OR GET COMBAT VET
- function | CV^ORMARKER
- rpcType | READ_STRUCTURED
+ description | 
+ MUMPS implementation | CV^ORMARKER
+ type | READ_STRUCTURED
  complexity | 
  uses | 
- description | 
- returnType | ARRAY
- returnDescription | 
+ return type | ARRAY
+ return description | 
 
 ### Input Parameters
 

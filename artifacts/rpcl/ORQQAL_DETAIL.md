@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQAL_DETAIL
  name | ORQQAL DETAIL
- function | DETAIL^ORQQAL
- rpcType | READ_UNSTRUCTURED
+ description | This function returns a string of information for a specific allergy/\radverse reaction.  Returned data is delimited by \^\ and includes:\rallergen/reactant, originator, originator title, verified/not verified, \robserved/historical,,type, observation date, severity, drug class, \rsymptoms/reactions (mulitple symptoms possible - delimited by \;\), \rcomments.
+ MUMPS implementation | DETAIL^ORQQAL
+ type | READ_UNSTRUCTURED
  complexity | MEDIUM
  uses | 
- description | This function returns a string of information for a specific allergy/\radverse reaction.  Returned data is delimited by \^\ and includes:\rallergen/reactant, originator, originator title, verified/not verified, \robserved/historical,,type, observation date, severity, drug class, \rsymptoms/reactions (mulitple symptoms possible - delimited by \;\), \rcomments.
- returnType | SINGLE VALUE
- returnDescription | 
+ return type | SINGLE VALUE
+ return description | 
 
 ### Input Parameters
 

@@ -9,15 +9,14 @@ title: RPCL documentation
 
  property | value 
 --- | --- 
- id | ORQQPL_DELETE
  name | ORQQPL DELETE
- function | DELETE^ORQQPL2
- rpcType | CHANGE
+ description | DELETES A PROBLEM
+ MUMPS implementation | DELETE^ORQQPL2
+ type | CHANGE
  complexity | MEDIUM
  uses | 
- description | DELETES A PROBLEM
- returnType | SINGLE VALUE
- returnDescription | 
+ return type | SINGLE VALUE
+ return description | 
 
 ### Input Parameters
 
