@@ -11,7 +11,7 @@ title: MVDM documentation
  label | 
  description | 
  fmIdForId | 9000010
- baseVDMClass | [Visit-9000010](../VDM/Visit-9000010.md)
+ baseVDMClass | [Visit-9000010](../vdm/Visit-9000010)
  fromVDMQueries | 
  fromVDMList | 
  fromVDMListPerPatient | 

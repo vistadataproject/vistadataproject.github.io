@@ -11,7 +11,7 @@ title: MVDM documentation
  label | Allergy Assessment
  description | 
  fmIdForId | 120.86
- baseVDMClass | [Adverse_Reaction_Assessment-120_86](../VDM/Adverse_Reaction_Assessment-120_86.md)
+ baseVDMClass | [Adverse_Reaction_Assessment-120_86](../vdm/Adverse_Reaction_Assessment-120_86)
  fromVDMQueries | [{vdmId:Adverse_Reaction_Assessment-120_86,query:DESCRIBE $ID}]
  fromVDMList | SELECT 120_86
  fromVDMListPerPatient | SELECT 120_86 FILTER(.01=$PID)

@@ -11,7 +11,7 @@ title: MVDM documentation
  label | Patient Vitals
  description | Contains patient vital information.
  fmIdForId | 120.5
- baseVDMClass | [Gmrv_Vital_Measurement-120_5](../VDM/Gmrv_Vital_Measurement-120_5.md)
+ baseVDMClass | [Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)
  fromVDMQueries | [{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]
  fromVDMList | SELECT 120_5 FILTER(!bound(2))
  fromVDMListPerPatient | SELECT 120_5 FILTER(.02=$PID&&!bound(2))

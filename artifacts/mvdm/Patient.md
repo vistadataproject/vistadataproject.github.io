@@ -11,7 +11,7 @@ title: MVDM documentation
  label | 
  description | 
  fmIdForId | 2
- baseVDMClass | [Patient-2](../VDM/Patient-2.md)
+ baseVDMClass | [Patient-2](../vdm/Patient-2)
  fromVDMQueries | [{vdmId:Patient-2,query:DESCRIBE $ID}]
  fromVDMList | SELECT 2
  fromVDMListPerPatient | 

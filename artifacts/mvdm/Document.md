@@ -11,7 +11,7 @@ title: MVDM documentation
  label | 
  description | 
  fmIdForId | 8925
- baseVDMClass | [Tiu_Document-8925](../VDM/Tiu_Document-8925.md)
+ baseVDMClass | [Tiu_Document-8925](../vdm/Tiu_Document-8925)
  fromVDMQueries | [{vdmId:Tiu_Document-8925,query:DESCRIBE $ID}]
  fromVDMList | SELECT 8925 FILTER(!bound(1611))
  fromVDMListPerPatient | SELECT 8925 FILTER(.02=$PID&&!bound(1611))

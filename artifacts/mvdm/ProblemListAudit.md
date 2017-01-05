@@ -11,7 +11,7 @@ title: MVDM documentation
  label | Problem List Audit
  description | Contains problem list audits
  fmIdForId | 125.8
- baseVDMClass | [Problem_List_Audit-125_8](../VDM/Problem_List_Audit-125_8.md)
+ baseVDMClass | [Problem_List_Audit-125_8](../vdm/Problem_List_Audit-125_8)
  fromVDMQueries | [{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]
  fromVDMList | SELECT 125_8
  fromVDMListPerPatient | 

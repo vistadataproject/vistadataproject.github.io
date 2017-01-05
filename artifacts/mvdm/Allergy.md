@@ -11,7 +11,7 @@ title: MVDM documentation
  label | Patient Allergies
  description | Contains patient allergy/adverse reaction information.
  fmIdForId | 120.8
- baseVDMClass | [Patient_Allergies-120_8](../VDM/Patient_Allergies-120_8.md)
+ baseVDMClass | [Patient_Allergies-120_8](../vdm/Patient_Allergies-120_8)
  fromVDMQueries | [{vdmId:Patient_Allergy-120_8,query:DESCRIBE $ID},{vdmId:Adverse_Reaction_Reporting-120_85,query:DESCRIBE 120_85 FILTER(.03=$ID)}]
  fromVDMList | SELECT 120_8 FILTER(!bound(22))
  fromVDMListPerPatient | SELECT 120_8 FILTER(.01=$PID&&!bound(22))

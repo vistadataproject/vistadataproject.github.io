@@ -11,7 +11,7 @@ title: MVDM documentation
  label | Patient Problems
  description | Contains patient problem information.
  fmIdForId | 9000011
- baseVDMClass | [Problem-9000011](../VDM/Problem-9000011.md)
+ baseVDMClass | [Problem-9000011](../vdm/Problem-9000011)
  fromVDMQueries | [{vdmId:Problem-9000011,query:DESCRIBE $ID},{vdmId:Problem_List_Audit-125_8,query:DESCRIBE 125_8 FILTER(.01=$ID)}]
  fromVDMList | SELECT 9000011 FILTER(1.02='P')
  fromVDMListPerPatient | SELECT 9000011 FILTER(.02=$PID&&1.02='P')
