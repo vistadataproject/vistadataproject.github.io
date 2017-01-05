@@ -56,7 +56,7 @@ title: MVDM documentation
 | enteredBy | Signed By | POINTER | signed_by |  | {id:New_Person-200} |  | 
 | signatureBlockName | Signature Block Name | STRING | signature_block_name |  |  |  | 
 | signatureBlockTitle | Signature Block Title | STRING | signature_block_title |  |  |  | 
-| signatureMode | Signature Mode | ENUMERATION | signature_mode |  | <dl><dt>electronic</dt><dd>0</dd><dt>chart</dt><dd>1</dd></dl> |  | 
+| signatureMode | Signature Mode | ENUMERATION | signature_mode |  | {::nomarkdown}<dl><dt>electronic</dt><dd>0</dd><dt>chart</dt><dd>1</dd></dl>{:/} |  | 
 
 ## RemovalDetails 
 
@@ -71,4 +71,4 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Date/Time Entered | DATE-TIME | deletion_date |  |  |  | 
 | enteredBy | Entered By | POINTER | deleted_by |  |  |  | 
-| reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | <dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl> |  | 
+| reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | 

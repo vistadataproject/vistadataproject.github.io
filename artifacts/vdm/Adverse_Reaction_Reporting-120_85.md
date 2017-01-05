@@ -39,7 +39,7 @@ title: VDM documentation
 | question_number10 | 12.2 | Question #10 | This field is to find out if this event required any intervention. | BOOLEAN |  |  | {false:n,true:y} | 
 | concomitant_drugs | 13 | Concomitant Drugs | A list of all drugs that may have been taken at the time of the reaction. | [OBJECT] |  |  | [Concomitant_Drugs-120_8513](#concomitant_drugs-120_8513)  | 
 | other_related_history | 14 | Other Related History | This field contains any other related event history for this reaction. | STRING |  |  |  | 
-| severity | 14.5 | Severity | This field indicates the severity of this reaction. | ENUMERATION |  |  | <dl><dt>1</dt><dd>MILD</dd><dt>2</dt><dd>MODERATE</dd><dt>3</dt><dd>SEVERE</dd></dl> | 
+| severity | 14.5 | Severity | This field indicates the severity of this reaction. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>MILD</dd><dt>2</dt><dd>MODERATE</dd><dt>3</dt><dd>SEVERE</dd></dl>{:/} | 
 | date_md_notified | 22 | Date Md Notified | This field contains the date the doctor was notified of this reaction. | DATE-TIME |  |  |  | 
 | fda_question_number1 | 23 | Fda Question #1 | This field determines if the reaction is considered serious. | BOOLEAN |  |  | {false:n,true:y} | 
 | fda_question_number2 | 24 | Fda Question #2 | This question determines whether this reaction is related to a new drug. | BOOLEAN |  |  | {false:n,true:y} | 
@@ -76,9 +76,9 @@ title: VDM documentation
 | ind_nda_number_for_support_drug | 60 | Ind/nda # For Support Drug | This is the IND/NDA # for support drug for the manufacturer. | STRING |  |  |  | 
 | mfr_control_number | 61 | Mfr Control # | This is the control number used by the manufacturer. | STRING |  |  |  | 
 | date_received_by_mfr | 62 | Date Received By Mfr | This is the date the report was received by the manufacturer. | DATE-TIME |  |  |  | 
-| report_source | 63 | Report Source | This is the source of the report. | [ENUMERATION] |  |  | <dl><dt>c</dt><dd>CONSUMER</dd><dt>s</dt><dd>STUDY</dd><dt>l</dt><dd>LITERATURE</dd><dt>h</dt><dd>HEALTH PROFESSIONAL</dd><dt>f</dt><dd>FOREIGN</dd></dl> | 
+| report_source | 63 | Report Source | This is the source of the report. | [ENUMERATION] |  |  | {::nomarkdown}<dl><dt>c</dt><dd>CONSUMER</dd><dt>s</dt><dd>STUDY</dd><dt>l</dt><dd>LITERATURE</dd><dt>h</dt><dd>HEALTH PROFESSIONAL</dd><dt>f</dt><dd>FOREIGN</dd></dl>{:/} | 
 | _15_day_report | 64 | 15 Day Report | This field is to determine if the 15 Day Report has been completed. | BOOLEAN |  |  | {false:n,true:y} | 
-| report_type | 65 | Report Type | This is the type of report issued. | ENUMERATION |  |  | <dl><dt>f</dt><dd>FOLLOWUP</dd><dt>i</dt><dd>INITIAL</dd></dl> | 
+| report_type | 65 | Report Type | This is the type of report issued. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>f</dt><dd>FOLLOWUP</dd><dt>i</dt><dd>INITIAL</dd></dl>{:/} | 
 
 ## Reactions-120_8502 
 
@@ -125,7 +125,7 @@ title: VDM documentation
 | like_question_number4 | 14 | Like Question #4 | This question determines whether the reactant was readministered. | BOOLEAN |  |  | {false:n,true:y} | 
 | like_question_number5 | 15 | Like Question #5 | This question determines whether the reaction could be due to the patient current clinical condition. | BOOLEAN |  |  | {false:n,true:y} | 
 | like_question_number6 | 16 | Like Question #6 | This question determines if the reaction reappeared after the reactant was readministered.\rwas readministered. | BOOLEAN |  |  | {false:n,true:y} | 
-| likelihood | 17 | Likelihood | If this is an observed drug allergy/adverse reaction, then this is the\rlikelihood that this is an adverse reaction.  The data for this field is\rbased on an algorithm used by the FDA. | ENUMERATION |  |  | <dl><dt>1</dt><dd>REMOTE</dd><dt>2</dt><dd>POSSIBLE</dd><dt>4</dt><dd>HIGHLY PROBABLE</dd><dt>3</dt><dd>PROBABLE</dd></dl> | 
+| likelihood | 17 | Likelihood | If this is an observed drug allergy/adverse reaction, then this is the\rlikelihood that this is an adverse reaction.  The data for this field is\rbased on an algorithm used by the FDA. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>REMOTE</dd><dt>2</dt><dd>POSSIBLE</dd><dt>4</dt><dd>HIGHLY PROBABLE</dd><dt>3</dt><dd>PROBABLE</dd></dl>{:/} | 
 
 ## Relevant_Test_lab_Data-120_8504 
 

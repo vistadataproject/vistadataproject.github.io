@@ -20,7 +20,7 @@ title: VDM documentation
 | code | .01 | Code | This is the five alphanumeric character code of the classification. | STRING |  | REQUIRED, INDEXED |  | 
 | classification | 1 | Classification | This is the name of the classification. | STRING |  |  |  | 
 | parent_class | 2 | Parent Class | This is the parent class. | POINTER |  | INDEXED | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | 
-| type-3 | 3 | Type | This is the type of the classification. | ENUMERATION |  |  | <dl><dt>0</dt><dd>MAJOR</dd><dt>2</dt><dd>SUB-CLASS</dd><dt>1</dt><dd>MINOR</dd></dl> | 
+| type-3 | 3 | Type | This is the type of the classification. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>0</dt><dd>MAJOR</dd><dt>2</dt><dd>SUB-CLASS</dd><dt>1</dt><dd>MINOR</dd></dl>{:/} | 
 | description | 4 | Description | This is a description of the classification. | STRING |  |  |  | 
 | master_entry_for_vuid | 99.98 | Master Entry For VUID | This field identifies the Master entry for a VUID associated with a Term/Concept. | BOOLEAN |  | REQUIRED | {false:0,true:1} | 
 | vuid | 99.99 | VUID | VHA Unique ID (VUID). A unique meaningless integer assigned to reference terms VHA wide. | STRING |  | REQUIRED, INDEXED |  | 
@@ -38,4 +38,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | effective_date_time | .01 | Effective Date/time | This is the date/time when the Status of the term was established. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| status | .02 | Status | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If the term 'ACTIVE', then the term will be accessible by end-users to document a particular  patient event. If 'INACTIVE', then the term will only be accessible by the application\rto display legacy data. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
+| status | .02 | Status | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If the term 'ACTIVE', then the term will be accessible by end-users to document a particular  patient event. If 'INACTIVE', then the term will only be accessible by the application\rto display legacy data. | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 

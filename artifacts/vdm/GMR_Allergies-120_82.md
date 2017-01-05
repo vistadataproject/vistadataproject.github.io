@@ -19,7 +19,7 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | name | .01 | Name | The name of the allergy/adverse reaction. | STRING |  | REQUIRED, INDEXED |  | 
 | allergy_type | 1 | Allergy Type | This field contains the type(s) for this allergy/adverse reaction .  The\ruser can enter the type(s) separated by commas, or the following codes:\rD=Drug, F=Food, O=Other.  If codes are used, do not use commas to separate\rmultiple codes.  Examples of valid entries are:  DRUG or DRUG, FOOD or D\ror DF or OTHER. | STRING |  | REQUIRED, INDEXED |  | 
-| national_allergy | 2 | National Allergy | Indicates whether this allergy was distributed with the national release\ror is a locally added allergy. | ENUMERATION |  |  | <dl><dt>1</dt><dd>NATIONAL ALLERGY</dd></dl> | 
+| national_allergy | 2 | National Allergy | Indicates whether this allergy was distributed with the national release\ror is a locally added allergy. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>NATIONAL ALLERGY</dd></dl>{:/} | 
 | synonym | 3 | Synonym | A list of synonyms that can also be used to look up this allergy. | [STRING] |  |  |  | 
 | drug_ingredients | 4 | Drug Ingredients | List of drug ingredients that comprise this particular allergy. | [POINTER] |  |  | [Drug_Ingredients-50_416](Drug_Ingredients-50_416.md) | 
 | va_drug_classes | 5 | VA Drug Classes | List of VA Drug classes that comprise this reactant. | [POINTER] |  |  | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | 
@@ -39,4 +39,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | effective_date_time | .01 | Effective Date/time | This is the date/time when the Status of the reference term\rwas established. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| status | .02 | Status | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'.  If\r'ACTIVE', then the term will be accessible by end-users to\rdocument a particular patient event.  If 'INACTIVE', then the term\rwill only be accessible by the application to display legacy data. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
+| status | .02 | Status | The Status of a reference term is either 'ACTIVE' or 'INACTIVE'.  If\r'ACTIVE', then the term will be accessible by end-users to\rdocument a particular patient event.  If 'INACTIVE', then the term\rwill only be accessible by the application to display legacy data. | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 

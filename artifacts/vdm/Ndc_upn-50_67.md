@@ -27,6 +27,6 @@ title: VDM documentation
 | inactivation_date | 7 | Inactivation Date | This is the date when this item was made inactive. | DATE-TIME |  |  |  | 
 | package_size | 8 | Package Size | This is the package size. | POINTER |  |  | {id:Package_Size-50_609} | 
 | package_type | 9 | Package Type | This is the package type. | POINTER |  |  | {id:Package_Type-50_608} | 
-| otx_rx_indicator | 10 | Otx/rx Indicator |  | ENUMERATION |  |  | <dl><dt>O</dt><dd>Over the counter</dd><dt>R</dt><dd>Prescription</dd></dl> | 
+| otx_rx_indicator | 10 | Otx/rx Indicator |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>O</dt><dd>Over the counter</dd><dt>R</dt><dd>Prescription</dd></dl>{:/} | 
 | previous_ndc | 11 | Previous Ndc |  | [STRING] |  |  |  | 
 | previous_upn | 12 | Previous Upn |  | [STRING] |  |  |  | 

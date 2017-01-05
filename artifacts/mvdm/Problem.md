@@ -29,10 +29,10 @@ title: MVDM documentation
 | providerNarrative | Provider Narrative | POINTER | provider_narrative |  |  | REQUIRED, CREATE, UPDATE | 
 | facility | Facility | POINTER | Mapper | $FACILITYID |  |  | 
 | enteredDate | Date Entered | DATE | date_entered | $NOW |  |  | 
-| problemStatus | Problem Status | ENUMERATION | status |  | <dl><dt>ACTIVE</dt><dd>0</dd><dt>INACTIVE</dt><dd>1</dd></dl> | REQUIRED, CREATE, UPDATE | 
+| problemStatus | Problem Status | ENUMERATION | status |  | {::nomarkdown}<dl><dt>ACTIVE</dt><dd>0</dd><dt>INACTIVE</dt><dd>1</dd></dl>{:/} | REQUIRED, CREATE, UPDATE | 
 | onsetDate | Date Of Onset | DATE | date_of_onset |  |  | CREATE, UPDATE | 
 | problem | Problem | POINTER | problem |  |  | INDEXED, CREATE, UPDATE | 
-| condition | Condition | ENUMERATION | condition |  | <dl><dt>TRANSCRIBED</dt><dd>0</dd><dt>PERMANENT</dt><dd>1</dd><dt>HIDDEN</dt><dd>2</dd></dl> | CREATE, UPDATE | 
+| condition | Condition | ENUMERATION | condition |  | {::nomarkdown}<dl><dt>TRANSCRIBED</dt><dd>0</dd><dt>PERMANENT</dt><dd>1</dd><dt>HIDDEN</dt><dd>2</dd></dl>{:/} | CREATE, UPDATE | 
 | enteredBy | Entered By | POINTER | entered_by | $USERID |  | UPDATE | 
 | responsibleProvider | Responsible Provider | POINTER | responsible_provider | $USERID |  | CREATE, UPDATE | 
 | resolvedDate | Date Resolved | DATE | date_resolved |  |  | UPDATE | 
@@ -41,7 +41,7 @@ title: MVDM documentation
 | isAgentOrangeExposure | Agent Orange Exposure | BOOLEAN | agent_orange_exposure |  |  | CREATE, UPDATE | 
 | isIonizingRadiationExposure | Ionizing Radiation Exposure | BOOLEAN | ionizing_radiation_exposure |  |  | CREATE, UPDATE | 
 | isPersianGulfExposure | Persian Gulf Exposure | BOOLEAN | persian_gulf_exposure |  |  | CREATE, UPDATE | 
-| priority | Priority | ENUMERATION | priority |  | <dl><dt>ACUTE</dt><dd>0</dd><dt>CHRONIC</dt><dd>1</dd></dl> | CREATE, UPDATE | 
+| priority | Priority | ENUMERATION | priority |  | {::nomarkdown}<dl><dt>ACUTE</dt><dd>0</dd><dt>CHRONIC</dt><dd>1</dd></dl>{:/} | CREATE, UPDATE | 
 | isHeadAndOrNeckCancer | Head And/Or Neck Cancer | BOOLEAN | head_and_or_neck_cancer |  |  | CREATE, UPDATE | 
 | isMilitarySexualTrauma | Military Sexual Trauma | BOOLEAN | military_sexual_trauma |  |  | CREATE, UPDATE | 
 | isCombatVeteran | Combat Veteran | BOOLEAN | combat_veteran |  |  | CREATE, UPDATE | 
@@ -50,7 +50,7 @@ title: MVDM documentation
 | snomedCTConceptValue | SNOMED CT Concept Value |  | Mapper |  |  |  | 
 | snomedCTConceptCode | SNOMED CT Concept Code | STRING | snomed_ct_concept_code |  |  | INDEXED, CREATE, UPDATE | 
 | snomedCTDesignationCode | SNOMED CT Designation Code | STRING | snomed_ct_designation_code |  |  | CREATE, UPDATE | 
-| uniqueNewTermRequested | Unique New Term Requested | ENUMERATION | Mapper |  | <dl><dt>false</dt><dd>0</dd><dt>true</dt><dd>1</dd></dl> | CREATE, UPDATE | 
+| uniqueNewTermRequested | Unique New Term Requested | ENUMERATION | Mapper |  | {::nomarkdown}<dl><dt>false</dt><dd>0</dd><dt>true</dt><dd>1</dd></dl>{:/} | CREATE, UPDATE | 
 | uniqueTermRequestComment | Unique Term Request Comment | STRING | unique_term_request_comment |  |  | CREATE, UPDATE | 
 | interestDate | Date Of Interest | DATE | date_of_interest | $NOW |  | CREATE, UPDATE | 
 | codingSystem | Coding System | STRING | coding_system |  |  | CREATE, UPDATE | 

@@ -23,10 +23,10 @@ title: VDM documentation
 | identifier | 1.2 | Identifier | This field contains Identifier codes providing more detail on \rthe DRG. | STRING |  |  |  | 
 | unacceptable_as_principal_dx | 1.3 | Unacceptable As Principal Dx | This field contains a flag indicating that this code is \runacceptable as the principal diagnosis. | BOOLEAN |  |  | {true:1} | 
 | mdc13 | 1.4 | Mdc13 | Field is set to 13 when the Major Diagnostic Code (MDC) \requals 13 (Female Reproductive System) | NUMERIC |  |  |  | 
-| mdc24 | 1.5 | Mdc24 | Code entry of body site of Multiple Significant Trauma. | ENUMERATION |  |  | <dl><dt>5</dt><dd>URINARY</dd><dt>1</dt><dd>HEAD</dd><dt>7</dt><dd>UPPER LIMB</dd><dt>2</dt><dd>CHEST</dd><dt>3</dt><dd>ABDOMEN</dd><dt>0</dt><dd>PRINCIPAL DX</dd><dt>6</dt><dd>PELVIS</dd><dt>4</dt><dd>KIDNEY</dd><dt>8</dt><dd>LOWER LIMB</dd></dl> | 
-| mdc25 | 1.6 | Mdc25 | Set of codes refers to type of HIV code or related condition. | ENUMERATION |  |  | <dl><dt>3</dt><dd>NON-MAJOR HIV CONDITION</dd><dt>2</dt><dd>MAJOR HIV CONDITION</dd><dt>1</dt><dd>HIV INFECTION</dd></dl> | 
+| mdc24 | 1.5 | Mdc24 | Code entry of body site of Multiple Significant Trauma. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>5</dt><dd>URINARY</dd><dt>1</dt><dd>HEAD</dd><dt>7</dt><dd>UPPER LIMB</dd><dt>2</dt><dd>CHEST</dd><dt>3</dt><dd>ABDOMEN</dd><dt>0</dt><dd>PRINCIPAL DX</dd><dt>6</dt><dd>PELVIS</dd><dt>4</dt><dd>KIDNEY</dd><dt>8</dt><dd>LOWER LIMB</dd></dl>{:/} | 
+| mdc25 | 1.6 | Mdc25 | Set of codes refers to type of HIV code or related condition. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>NON-MAJOR HIV CONDITION</dd><dt>2</dt><dd>MAJOR HIV CONDITION</dd><dt>1</dt><dd>HIV INFECTION</dd></dl>{:/} | 
 | icd_expanded | 1.7 | Icd Expanded | This field is a flag indicating that the ICD code was expanded \rby the VA (local code). | BOOLEAN |  |  | {false:0,true:1} | 
-| poa_exempt | 1.9 | Poa Exempt | The value in this field is used to determine\rwhether Present On Admission (POA) processing\rapplies to this code. | ENUMERATION |  |  | <dl><dt>0</dt><dd>Not POA Exempt</dd><dt>1</dt><dd>POA Exempt</dd></dl> | 
+| poa_exempt | 1.9 | Poa Exempt | The value in this field is used to determine\rwhether Present On Admission (POA) processing\rapplies to this code. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>0</dt><dd>Not POA Exempt</dd><dt>1</dt><dd>POA Exempt</dd></dl>{:/} | 
 | sex | 10 | Sex | This is a history of the Sex designation (Male/Female) for the \rdiagnosis and includes the Sex with the date it became effective. | [OBJECT] |  |  | [Sex-80_04](#sex-80_04)  | 
 | age_low | 11 | Age Low | This is a history of lowest age reasonable for\ra procedure and includes the lowest age and the\rdate it became effective.  | [OBJECT] |  |  | [Age_Low-80_011](#age_low-80_011)  | 
 | age_high | 12 | Age High | This is a history of highest age reasonable for\ra procedure and includes the highest age and the\rdate it became effective.  | [OBJECT] |  |  | [Age_High-80_012](#age_high-80_012)  | 
@@ -53,7 +53,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | sex_effective_date | .01 | Sex Effective Date | This is the date the Sex designation (F/M) became effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| sex | 1 | Sex | This is the sex designation for the diagnosis. | ENUMERATION |  |  | <dl><dt>M</dt><dd>MALE</dd><dt>N</dt><dd>N/A</dd><dt>F</dt><dd>FEMALE</dd></dl> | 
+| sex | 1 | Sex | This is the sex designation for the diagnosis. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>M</dt><dd>MALE</dd><dt>N</dt><dd>N/A</dd><dt>F</dt><dd>FEMALE</dd></dl>{:/} | 
 
 ## Age_Low-80_011 
 
@@ -95,7 +95,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | status_effective_date | .01 | Status Effective Date | Date versioned information becomes/became effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| status | .02 | Status | Status set to 1 when the code is active and 0 when the code\ris inactive. | ENUMERATION |  | REQUIRED | <dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl> | 
+| status | .02 | Status | Status set to 1 when the code is active and 0 when the code\ris inactive. | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
 ## Diagnosis-80_067 
 
@@ -166,5 +166,5 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | cc_effective_date | .01 | Cc Effective Date | This is the date that a Complication/Comorbidity (CC) designation\rbecame effective. | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| complication_comorbidity | 1 | Complication/comorbidity | This is the Complication/Comorbidity (CC) \rdesignation for the diagnosis.  It includes \rComplication/Comorbidity (CC), Major \rComplication/Comorbidity (MCC), Major \rComplication/Comorbidity when patient is \rdischarged alive and non-Complication/Comorbidity\r(no complications/cormorbidities) | ENUMERATION |  |  | <dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl> | 
-| primary | 2 | Primary | The value in this field is used to determine\rwhether CC/MCC value is taken from primary \rdiagnosis instead of the secondary diagnosis. | ENUMERATION |  |  | <dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl> | 
+| complication_comorbidity | 1 | Complication/comorbidity | This is the Complication/Comorbidity (CC) \rdesignation for the diagnosis.  It includes \rComplication/Comorbidity (CC), Major \rComplication/Comorbidity (MCC), Major \rComplication/Comorbidity when patient is \rdischarged alive and non-Complication/Comorbidity\r(no complications/cormorbidities) | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl>{:/} | 
+| primary | 2 | Primary | The value in this field is used to determine\rwhether CC/MCC value is taken from primary \rdiagnosis instead of the secondary diagnosis. | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl>{:/} | 

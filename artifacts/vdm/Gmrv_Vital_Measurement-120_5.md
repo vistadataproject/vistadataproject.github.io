@@ -41,5 +41,5 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| reason_entered_in_error | .01 | Reason Entered In Error | This field records the reason for entering the data in error. | ENUMERATION |  | REQUIRED | <dl><dt>2</dt><dd>INCORRECT READING</dd><dt>4</dt><dd>INVALID RECORD</dd><dt>1</dt><dd>INCORRECT DATE/TIME</dd><dt>3</dt><dd>INCORRECT PATIENT</dd></dl> | 
+| reason_entered_in_error | .01 | Reason Entered In Error | This field records the reason for entering the data in error. | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>2</dt><dd>INCORRECT READING</dd><dt>4</dt><dd>INVALID RECORD</dd><dt>1</dt><dd>INCORRECT DATE/TIME</dd><dt>3</dt><dd>INCORRECT PATIENT</dd></dl>{:/} | 
 | date_reason_entered_in_error | .02 | Date Reason Entered In Error |  | DATE-TIME |  |  |  | 
