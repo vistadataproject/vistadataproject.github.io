@@ -10,8 +10,9 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORWPT DIEDON
- description | Returns date of death if patient has expired.  Otherwise returns 0.
- MUMPS implementation | DIEDON^ORWPT
+ description | {::nomarkdown}Returns date of death if patient has expired.  Otherwise returns 0.{:/}
+ VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT%20DIEDON)&format=HTML)
+ MUMPS implementation | [DIEDON^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 
  uses | 
@@ -22,4 +23,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | true | Patient id (DFN) |  |  | 
+| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  |  | 

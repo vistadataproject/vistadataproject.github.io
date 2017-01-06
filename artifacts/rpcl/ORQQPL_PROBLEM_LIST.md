@@ -10,8 +10,9 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORQQPL PROBLEM LIST
- description | Problem list for CPRS GUI client
- MUMPS implementation | PROBL^ORQQPL3
+ description | {::nomarkdown}Problem list for CPRS GUI client{:/}
+ VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20PROBLEM%20LIST)&format=HTML)
+ MUMPS implementation | [PROBL^ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  type | CHANGE
  complexity | HIGH
  uses | 
@@ -22,6 +23,6 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
-| DFN | REFERENCE | true | Patient IEN | 25 |  | 
-| GMPSTAT | LITERAL |  | Problem status filter: A - active, I - inactive, B - Both active and inactive, R - removed | A |  | 
-| ORIDT | DATE |  | Problem date filter? This parameter is typically passed in as zero | 0 |  | 
+| DFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 |  | 
+| GMPSTAT | LITERAL |  | {::nomarkdown}Problem status filter: A - active, I - inactive, B - Both active and inactive, R - removed{:/} | A |  | 
+| ORIDT | DATE |  | {::nomarkdown}Problem date filter? This parameter is typically passed in as zero{:/} | 0 |  | 

@@ -10,8 +10,9 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORWPT LIST ALL
- description | Returns a set of patient names for use with a long list box.
- MUMPS implementation | LISTALL^ORWPT
+ description | {::nomarkdown}Returns a set of patient names for use with a long list box.{:/}
+ VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT%20LIST%20ALL)&format=HTML)
+ MUMPS implementation | [LISTALL^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 
  uses | 

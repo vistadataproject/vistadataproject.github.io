@@ -10,8 +10,9 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORWPT1 PRCARE
- description | Return primary care, inpatient, and mental health summary information.
- MUMPS implementation | PRCARE^ORWPT1
+ description | {::nomarkdown}Return primary care, inpatient, and mental health summary information.{:/}
+ VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT1%20PRCARE)&format=HTML)
+ MUMPS implementation | [PRCARE^ORWPT1](http://code.osehra.org/dox/Routine_ORWPT1_source.html)
  type | READ_STRUCTURED
  complexity | 
  uses | 
@@ -22,4 +23,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | true | Patient id (DFN) |  |  | 
+| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  |  | 

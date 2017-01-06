@@ -10,8 +10,9 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORWPT INPLOC
- description | Returns the patient's current location if an inpatient.
- MUMPS implementation | INPLOC^ORWPT
+ description | {::nomarkdown}Returns the patient's current location if an inpatient.{:/}
+ VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT%20INPLOC)&format=HTML)
+ MUMPS implementation | [INPLOC^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 
  uses | 
@@ -22,4 +23,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | listMemberParameters | 
 | --- | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | true | Patient id (DFN) |  |  | 
+| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  |  | 
