@@ -1,0 +1,30 @@
+---
+layout: default
+title: VDP Year 2 - CPRS RPC Interface, Authentication Slice Breakdown
+---
+
+
+# [All](bdStart) &#8594; Authentication (18)
+
+\# | Name
+--- | ---
+1. | DG SENSITIVE RECORD ACCESS
+2. | ORWU NPHASKEY
+3. | __XUS AV CODE__
+4. | XUS AV HELP
+5. | XUS CCOW VAULT PARAM
+6. | XUS CVC
+7. | XUS DIVISION GET
+8. | XUS DIVISION SET
+9. | XUS GET CCOW TOKEN
+10. | XUS GET TOKEN
+11. | XUS GET USER INFO
+12. | XUS INTRO MSG
+13. | XUS PKI GET UPN
+14. | XUS PKI SET UPN
+15. | __XUS SIGNON SETUP__
+16. | XWB CREATE CONTEXT
+17. | XWB GET BROKER INFO
+18. | __XWB IM HERE__
+
+
