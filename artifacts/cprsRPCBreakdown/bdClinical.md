@@ -4,7 +4,7 @@ title: VDP Year 2 - CPRS RPC Interface, Clinical Slice Breakdown
 ---
 
 
-# [All](cprsRPCInterfaceBD) &#8594; Clinical (417)
+# [All](bdStart) &#8594; Clinical (417)
 
 Category | Number
 --- | ---
