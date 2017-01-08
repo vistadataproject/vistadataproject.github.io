@@ -10,6 +10,7 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORWDAL32 SAVE ALLERGY
+ domain | Allergy
  description | {::nomarkdown}Add new allergy record{:/}
  VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWDAL32%20SAVE%20ALLERGY)&format=HTML)
  MUMPS implementation | [EDITSAVE^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
@@ -21,11 +22,11 @@ title: RPCL documentation
 
 ### Input Parameters
 
-| id | parameterType | required | description | example | listMemberParameters | 
-| --- | --- | --- | --- | --- | --- | 
-| ORALIEN | LITERAL | true | {::nomarkdown}Allergy IEN{:/} | 0 |  | 
-| ORDFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 |  | 
-| OREDITED | LIST | true | {::nomarkdown}ARRAY OF VALUE STRINGS{:/} |  | [UPDARRAY List](#for-id-oredited) | 
+| id | parameterType | required | description | example | 
+| --- | --- | --- | --- | --- | 
+| ORALIEN | LITERAL | true | {::nomarkdown}Allergy IEN{:/} | 0 | 
+| ORDFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 | 
+| OREDITED | LIST ([UPDARRAY](#for-id-oredited)) | true | {::nomarkdown}ARRAY OF VALUE STRINGS{:/} |  | 
 
 ### UPDARRAY List Parameter
 

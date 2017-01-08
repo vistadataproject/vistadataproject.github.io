@@ -10,6 +10,7 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORQQPL ADD SAVE
+ domain | Problem
  description | {::nomarkdown}Add new problem record{:/}
  VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20ADD%20SAVE)&format=HTML)
  MUMPS implementation | [ADDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
@@ -21,13 +22,13 @@ title: RPCL documentation
 
 ### Input Parameters
 
-| id | parameterType | required | description | example | listMemberParameters | 
-| --- | --- | --- | --- | --- | --- | 
-| GMPDFN | LITERAL | true |  | 25^CARTER,DAVID^0113^ |  | 
-| GMPROV | REFERENCE | true |  | 57 |  | 
-| GMPVAMC | REFERENCE | true |  | 2957 |  | 
-| ADDARRAY | LIST | true | {::nomarkdown}ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET{:/} |  | [UPDARRAY List](#for-id-addarray) | 
-| GMPSRCH | LITERAL |  |  | hypertension |  | 
+| id | parameterType | required | description | example | 
+| --- | --- | --- | --- | --- | 
+| GMPDFN | LITERAL | true |  | 25^CARTER,DAVID^0113^ | 
+| GMPROV | REFERENCE | true |  | 57 | 
+| GMPVAMC | REFERENCE | true |  | 2957 | 
+| ADDARRAY | LIST ([UPDARRAY](#for-id-addarray)) | true | {::nomarkdown}ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET{:/} |  | 
+| GMPSRCH | LITERAL |  |  | hypertension | 
 
 ### UPDARRAY List Parameter
 

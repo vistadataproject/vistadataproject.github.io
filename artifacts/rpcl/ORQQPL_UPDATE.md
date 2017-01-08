@@ -10,6 +10,7 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORQQPL UPDATE
+ domain | Problem
  description | {::nomarkdown}Updates problem record{:/}
  VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20UPDATE)&format=HTML)
  MUMPS implementation | [UPDATE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
@@ -21,9 +22,9 @@ title: RPCL documentation
 
 ### Input Parameters
 
-| id | parameterType | required | description | example | listMemberParameters | 
-| --- | --- | --- | --- | --- | --- | 
-| UPDARRAY | LIST | true | {::nomarkdown}UPDATE ARRAY{:/} |  | [UPDARRAY List](#for-id-updarray) | 
+| id | parameterType | required | description | example | 
+| --- | --- | --- | --- | --- | 
+| UPDARRAY | LIST ([UPDARRAY](#for-id-updarray)) | true | {::nomarkdown}UPDATE ARRAY{:/} |  | 
 
 ### UPDARRAY List Parameter
 

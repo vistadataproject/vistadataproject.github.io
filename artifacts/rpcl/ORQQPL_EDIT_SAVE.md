@@ -10,6 +10,7 @@ title: RPCL documentation
  property | value 
 --- | --- 
  name | ORQQPL EDIT SAVE
+ domain | Problem
  description | {::nomarkdown}Saves edited problem record{:/}
  VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20EDIT%20SAVE)&format=HTML)
  MUMPS implementation | [EDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
@@ -21,14 +22,14 @@ title: RPCL documentation
 
 ### Input Parameters
 
-| id | parameterType | required | description | example | listMemberParameters | 
-| --- | --- | --- | --- | --- | --- | 
-| GMPIFN | REFERENCE | true | {::nomarkdown}record ifn{:/} | 1 |  | 
-| GMPROV | REFERENCE | true | {::nomarkdown}provider{:/} | 57 |  | 
-| GMPVAMC | REFERENCE | true | {::nomarkdown}facility id{:/} | 2957 |  | 
-| UT | LITERAL | true | {::nomarkdown}GMPLUSER?{:/} | 1 |  | 
-| EDARRAY | LIST | true | {::nomarkdown}array used for indirect sets of GMPORIG() and GMPFLDS(){:/} |  | [UPDARRAY List](#for-id-edarray) | 
-| GMPSRCH | LITERAL |  |  |  |  | 
+| id | parameterType | required | description | example | 
+| --- | --- | --- | --- | --- | 
+| GMPIFN | REFERENCE | true | {::nomarkdown}record ifn{:/} | 1 | 
+| GMPROV | REFERENCE | true | {::nomarkdown}provider{:/} | 57 | 
+| GMPVAMC | REFERENCE | true | {::nomarkdown}facility id{:/} | 2957 | 
+| UT | LITERAL | true | {::nomarkdown}GMPLUSER?{:/} | 1 | 
+| EDARRAY | LIST ([UPDARRAY](#for-id-edarray)) | true | {::nomarkdown}array used for indirect sets of GMPORIG() and GMPFLDS(){:/} |  | 
+| GMPSRCH | LITERAL |  |  |  | 
 
 ### UPDARRAY List Parameter
 
