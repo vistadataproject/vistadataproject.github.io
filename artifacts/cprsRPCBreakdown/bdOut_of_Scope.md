@@ -4,7 +4,7 @@ title: VDP Year 2 - CPRS RPC Interface, Out of Scope Slice Breakdown
 ---
 
 
-# Out of Scope (60)
+# [All](bdStart) &#8594; Out of Scope (60)
 
 \# | Name | Category | Tags
 --- | --- | --- | ---
