@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL EDIT SAVE
  domain | Problem
  description | {::nomarkdown}Saves edited problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20EDIT%20SAVE)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL EDIT SAVE)
  MUMPS implementation | [EDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH

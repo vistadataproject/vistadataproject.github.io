@@ -12,7 +12,7 @@ title: RPCL documentation
  name | GMV ADD VM
  domain | Vital
  description | {::nomarkdown}This remote procedure call is used to enter a new Vital/Measurement record<br/>in the GMRV Vital Measurement file (#120.5).<br/> <br/>This remote procedure call is documented in Integration Agreement 3996.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DGMV%20ADD%20VM)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/GMV ADD VM)
  MUMPS implementation | [EN1^GMVDCSAV](http://code.osehra.org/dox/Routine_GMVDCSAV_source.html)
  type | CHANGE
  complexity | MEDIUM

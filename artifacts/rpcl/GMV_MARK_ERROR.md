@@ -12,7 +12,7 @@ title: RPCL documentation
  name | GMV MARK ERROR
  domain | Vital
  description | {::nomarkdown}This remote procedure call marks a selected vitals record in the GMRV<br/>Vital Measurement (#120.5) file as entered-in-error.<br/> <br/>This remote procedure call is documented in Integration Agreement 4414.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DGMV%20MARK%20ERROR)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/GMV MARK ERROR)
  MUMPS implementation | [EN1^GMVDCSAV](http://code.osehra.org/dox/Routine_GMVDCSAV_source.html)
  type | CHANGE
  complexity | MEDIUM

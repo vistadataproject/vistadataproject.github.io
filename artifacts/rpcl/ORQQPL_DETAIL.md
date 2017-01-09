@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL DETAIL
  domain | Problem
  description | {::nomarkdown}Function returns a string of detailed information for a problem.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20DETAIL)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL DETAIL)
  MUMPS implementation | [DETAIL^ORQQPL](http://code.osehra.org/dox/Routine_ORQQPL_source.html)
  type | UNSTRUCTURED READ
  complexity | HIGH

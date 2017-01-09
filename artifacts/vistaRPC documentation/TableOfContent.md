@@ -1,6 +1,6 @@
 ---
 layout: default
-title: RPCL documentation
+title: VISTA RPC documentation
 ---
 ## RPCL Table of Content
 

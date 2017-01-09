@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL PROBLEM LIST
  domain | Problem
  description | {::nomarkdown}Problem list for CPRS GUI client{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20PROBLEM%20LIST)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL PROBLEM LIST)
  MUMPS implementation | [PROBL^ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  type | CHANGE
  complexity | HIGH

@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL REPLACE
  domain | Problem
  description | {::nomarkdown}REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20REPLACE)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL REPLACE)
  MUMPS implementation | [REPLACE^ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
  type | CHANGE
  complexity | MEDIUM

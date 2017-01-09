@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQVI VITALS
  domain | Vital
  description | {::nomarkdown}Array of patient most recent vitals within start and stop date/times.  If<br/>no start and stop dates are indicated, the most recent are returned.<br/> <br/>If no start date is passed then the start date is 1 (i.e. before any<br/>dates).<br/> <br/>If no stop date is passed then the start date is also the stop date and if<br/>there is not start date then 9999999 is used as the stop date.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQVI%20VITALS)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQVI VITALS)
  MUMPS implementation | [](http://code.osehra.org/dox/Routine__source.html)
  type | READ STRUCTURED
  complexity | MEDIUM

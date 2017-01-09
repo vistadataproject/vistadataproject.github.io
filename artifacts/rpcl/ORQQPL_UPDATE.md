@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL UPDATE
  domain | Problem
  description | {::nomarkdown}Updates problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20UPDATE)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL UPDATE)
  MUMPS implementation | [UPDATE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH

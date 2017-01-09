@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL ADD SAVE
  domain | Problem
  description | {::nomarkdown}Add new problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQPL%20ADD%20SAVE)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL ADD SAVE)
  MUMPS implementation | [ADDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH

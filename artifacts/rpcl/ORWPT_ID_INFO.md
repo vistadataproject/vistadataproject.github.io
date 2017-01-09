@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORWPT ID INFO
  domain | Patient
  description | {::nomarkdown}Returns identifying information for a patient.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT%20ID%20INFO)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORWPT ID INFO)
  MUMPS implementation | [IDINFO^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 

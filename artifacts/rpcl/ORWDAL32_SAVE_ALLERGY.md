@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORWDAL32 SAVE ALLERGY
  domain | Allergy
  description | {::nomarkdown}Add new allergy record{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWDAL32%20SAVE%20ALLERGY)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORWDAL32 SAVE ALLERGY)
  MUMPS implementation | [EDITSAVE^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  type | CHANGE
  complexity | HIGH

@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQAL LIST
  domain | Allergy
  description | {::nomarkdown}Returns a list of allergies for a patient.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORQQAL%20LIST)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQAL LIST)
  MUMPS implementation | [LIST^ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
  type | READ_STRUCTURED
  complexity | LOW

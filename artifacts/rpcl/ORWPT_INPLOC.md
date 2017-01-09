@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORWPT INPLOC
  domain | Patient
  description | {::nomarkdown}Returns the patient's current location if an inpatient.{:/}
- VISTA (8994) description | [nodeVISTA 8994](http://localhost:9000/query?fmql=DESCRIBE%208994%20FILTER%20(.01%3DORWPT%20INPLOC)&format=HTML)
+ VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORWPT INPLOC)
  MUMPS implementation | [INPLOC^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 
