@@ -2,7 +2,7 @@
 layout: default
 title: VISTA RPC documentation
 ---
-## RPCL Table of Content
+## VISTA RPC Table of Content
 
 1. [GMV ADD VM](GMV ADD VM.md)
 
