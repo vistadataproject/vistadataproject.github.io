@@ -14,8 +14,3 @@ title: RPCL documentation
  routine-8994 | ORWDAL32
  return_value_type-8994 | SINGLE VALUE
  description-8994 | 
-
-### Input Parameters
-
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
