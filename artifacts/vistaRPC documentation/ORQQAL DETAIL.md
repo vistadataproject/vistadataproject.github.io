@@ -14,10 +14,9 @@ title: RPCL documentation
  routine-8994 | ORQQAL
  return_value_type-8994 | ARRAY
  description-8994 | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by \^\ and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by \;\), comments.
- input_parameter-8994 | [{id:8994_02-1_166,type:vs:Input_Parameter-8994_02,input_parameter-8994_02:ALLERGY ID,parameter_type-8994_02:LITERAL,maximum_data_length-8994_02:16,required-8994_02:true,description-8994_02:The record number of the allergy/adverse reaction from the PatientAllergies file (#120.8).}]
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | 
-| --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ALLERGY ID | LITERAL | 
+| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | ALLERGY ID | LITERAL | 16 | true | The record number of the allergy/adverse reaction from the PatientAllergies file (#120.8). | 
