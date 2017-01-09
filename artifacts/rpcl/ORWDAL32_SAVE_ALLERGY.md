@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWDAL32 SAVE ALLERGY 
+## [RPCL](TableOfContent.md) &#8594; ORWDAL32 SAVE ALLERGY 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | [EIE,NKA,CREATE]
  return type | SINGLE VALUE
  return description | 
+ Method comment | Save Edit/Add of an allergy/adverse reaction
+ Leading comment lines | following patch check is made via GUI RPC call to ORWU PATCH instead,I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q
 
 ### Input Parameters
 

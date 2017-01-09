@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT INPLOC 
+## [RPCL](TableOfContent.md) &#8594; ORWPT INPLOC 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | Returns the patient's current location if an inpatient.
+ Method comment | Return a patient's current location
 
 ### Input Parameters
 

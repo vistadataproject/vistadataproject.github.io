@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT LIST ALL 
+## [RPCL](TableOfContent.md) &#8594; ORWPT LIST ALL 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | Returns a set of patient names for use with a long list box.
+ Method comment | Return a bolus of patient names.  From is either Name or IEN^Name.
 
 ### Input Parameters
 

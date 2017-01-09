@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL EDIT SAVE 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL EDIT SAVE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | 
+ Method comment | SAVE EDITED RES
+ Leading comment lines | RETURN - boolean, 1 success, 0 failure,EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
 
 ### Input Parameters
 

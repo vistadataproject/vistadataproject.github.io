@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL REPLACE 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL REPLACE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | 
+ Method comment | replace problem on patient's list
+ Leading comment lines | taken from REPLACE^GMPLRPTR
 
 ### Input Parameters
 

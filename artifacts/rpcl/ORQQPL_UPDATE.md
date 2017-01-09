@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL UPDATE 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL UPDATE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | 
+ Method comment | UPDATE A PROBLEM RECORD
+ Leading comment lines | Does essentially same job as EDSAVE above, however does not handle edits to comments,or addition of multiple comments.,Use initially just for status updates.
 
 ### Input Parameters
 

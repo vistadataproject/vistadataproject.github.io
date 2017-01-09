@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> OR GET COMBAT VET 
+## [RPCL](TableOfContent.md) &#8594; OR GET COMBAT VET 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | 
+ Method comment | Combat Vet Marker
 
 ### Input Parameters
 

@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL ADD SAVE 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL ADD SAVE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | 
+ Method comment | SAVE NEW RECORD
+ Leading comment lines | RETURN - Problem IFN if success, 0 otherwise,ADDARRAY - array used for indirect sets of  GMPFLDS()
 
 ### Input Parameters
 

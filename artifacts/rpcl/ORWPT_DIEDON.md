@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT DIEDON 
+## [RPCL](TableOfContent.md) &#8594; ORWPT DIEDON 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | Returns date of death if patient has expired.  Otherwise returns 0.
+ Method comment | Check for a date of death
 
 ### Input Parameters
 

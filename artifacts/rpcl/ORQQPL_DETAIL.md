@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL DETAIL 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL DETAIL 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | String of detailed problem information delimited by \^\.  String includes:\\r
+ Method comment | RETURN DETAILED PROBLEM DATA
 
 ### Input Parameters
 

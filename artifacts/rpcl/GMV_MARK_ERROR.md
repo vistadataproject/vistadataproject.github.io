@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> GMV MARK ERROR 
+## [RPCL](TableOfContent.md) &#8594; GMV MARK ERROR 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | 
+ Method comment | GMV MARK ERROR [RPC entry point]
+ Leading comment lines | GMVDATA CONSISTS OF THE FOLLOWING DATA:,FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT,PATIENT^INVALID RECORD
 
 ### Input Parameters
 

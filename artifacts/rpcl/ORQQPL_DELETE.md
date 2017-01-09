@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL DELETE 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL DELETE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | 
+ Method comment | DELETE A PROBLEM
+ Leading comment lines | From GMPL1 - silent version
 
 ### Input Parameters
 

@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT1 PRCARE 
+## [RPCL](TableOfContent.md) &#8594; ORWPT1 PRCARE 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | Return primary care, inpatient, and mental health summary information.
+ Method comment | return Primary Care info for CPRS Header
+ Leading comment lines | Input - PATIENT = Patient DFN,Output - VAL = Primary Care Team^PCP^Attending^AP^MH Treatment Coordinator/MH Team^Inpatient Provider,for PCMM Web VAL = Primary Care Team/PCP/AP^^Attending^^MH Treatment Coordinator/MH Team^Inpatient Provider,Source of PACT/PCP data for CPRS is 404.41/.06 - 387,Other callers will get original data format,ICR #6042 - SCMC PCMM/R GET PRIMARY CARE SUMMARY 
 
 ### Input Parameters
 

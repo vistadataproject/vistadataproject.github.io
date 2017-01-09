@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT PTINQ 
+## [RPCL](TableOfContent.md) &#8594; ORWPT PTINQ 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | GLOBAL ARRAY
  return description | Returns formatted patient inquiry text for display in GUI environment.
+ Method comment | Return formatted pt inquiry report
 
 ### Input Parameters
 

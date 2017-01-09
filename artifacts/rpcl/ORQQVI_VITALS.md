@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQVI VITALS 
+## [RPCL](TableOfContent.md) &#8594; ORQQVI VITALS 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | Array of patient most recent vitals within start and stop date/times.  \rIf no start and stop dates are indicated, the most recent are returned.\rVitals are returned in the format:\rvital ien^vital type^rate/value^date/time taken
+ Method comment | return patient's most recent vital measurements
+ Leading comment lines | in date range,ORY: return variable, results are returned in the format:,vital measurement ien^vital type^rate^date/time taken,DFN: patient identifier from Patient File [#2],F1: starting date/time range,F2: ending date/time range
 
 ### Input Parameters
 

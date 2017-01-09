@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQAL LIST 
+## [RPCL](TableOfContent.md) &#8594; ORQQAL LIST 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | 
+ Method comment | RETURN PATIENT'S ALLERGY/ADVERSE REACTION INFO:
+ Leading comment lines | null:no allergy assessment, 0:no known allergies, 1:pt has allergies,if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien
 
 ### Input Parameters
 

@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORQQPL PROBLEM LIST 
+## [RPCL](TableOfContent.md) &#8594; ORQQPL PROBLEM LIST 
 
  property | value 
 --- | --- 
@@ -19,6 +19,7 @@ title: RPCL documentation
  uses | 
  return type | ARRAY
  return description | List of problems with comments
+ Method comment | GET LIST OF PATIENT PROBLEMS
 
 ### Input Parameters
 

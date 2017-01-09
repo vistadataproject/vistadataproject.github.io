@@ -5,7 +5,7 @@ title: RPCL documentation
 
 
 
-## [RPCL](TableOfContent.md) --> ORWPT ID INFO 
+## [RPCL](TableOfContent.md) &#8594; ORWPT ID INFO 
 
  property | value 
 --- | --- 
@@ -19,6 +19,8 @@ title: RPCL documentation
  uses | 
  return type | SINGLE VALUE
  return description | Returns identifying information for a patient.
+ Method comment | Return identifying information for a patient
+ Leading comment lines | PID^DOB^SEX^VET^SC%^WARD^RM-BED^NAME
 
 ### Input Parameters
 
