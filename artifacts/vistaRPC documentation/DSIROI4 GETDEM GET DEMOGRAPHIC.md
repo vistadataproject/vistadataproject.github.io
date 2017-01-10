@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; DSIROI4 GETDEM GET DEMOGRAPHIC 
+
+ property | value 
+--- | --- 
+ label | DSIROI4 GETDEM GET DEMOGRAPHIC
+ tag | GETDEM
+ routine | [DSIROI4](http://code.osehra.org/dox/Routine_DSIROI4_source.html)
+ return value type | ARRAY
+ description | Returns limited demographic data required for processing a request.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | IFN | LITERAL | 30 | true | IFN - Patient IFN. | 

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP SETREM 
+
+ property | value 
+--- | --- 
+ label | ORWTPP SETREM
+ tag | SETREM
+ routine | [ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
+ return value type | ARRAY
+ description | 

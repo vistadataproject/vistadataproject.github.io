@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORRHCR TAGDEF 
+
+ property | value 
+--- | --- 
+ label | ORRHCR TAGDEF
+ tag | TAGDEF
+ routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
+ return value type | ARRAY
+ description | Obtains a query definition based on the value of the TAG field.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | TAG | LITERAL |  | true | The value of the TAG field for an entry in the CPRS QUERY DEFINITION file. | 

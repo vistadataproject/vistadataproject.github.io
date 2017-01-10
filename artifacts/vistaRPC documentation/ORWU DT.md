@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWU DT 
+
+ property | value 
+--- | --- 
+ label | ORWU DT
+ tag | DT
+ routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+ return value type | SINGLE VALUE
+ description | Returns date in internal VA FileMan format.

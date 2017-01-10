@@ -9,8 +9,8 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORWDAL32 SAVE ALLERGY
- tag-8994 | EDITSAVE
- routine-8994 | ORWDAL32
- return_value_type-8994 | SINGLE VALUE
- description-8994 | 
+ label | ORWDAL32 SAVE ALLERGY
+ tag | EDITSAVE
+ routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
+ return value type | SINGLE VALUE
+ description | 

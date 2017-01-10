@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPR OCDESC 
+
+ property | value 
+--- | --- 
+ label | ORWTPR OCDESC
+ tag | OCDESC
+ routine | [ORWTPR](http://code.osehra.org/dox/Routine_ORWTPR_source.html)
+ return value type | ARRAY
+ description | 

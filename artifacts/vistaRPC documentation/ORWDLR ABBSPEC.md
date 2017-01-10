@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR ABBSPEC 
+
+ property | value 
+--- | --- 
+ label | ORWDLR ABBSPEC
+ tag | ABBSPEC
+ routine | [ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
+ return value type | ARRAY
+ description | Returns lab specimens that have an abbreviation (used as default list).

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXC DISPLAY 
+
+ property | value 
+--- | --- 
+ label | ORWDXC DISPLAY
+ tag | DISPLAY
+ routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
+ return value type | ARRAY
+ description | Return list of Order Checks for a FillerID (namespace).

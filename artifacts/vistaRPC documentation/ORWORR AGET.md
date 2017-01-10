@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWORR AGET 
+
+ property | value 
+--- | --- 
+ label | ORWORR AGET
+ tag | AGET
+ routine | [ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
+ return value type | GLOBAL ARRAY
+ description | Get an abbreviated order list for a patient in the format:     ^TMP(\ORR\,$J,ORLIST,n)=IFN^DGrp^ActTm

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWUH POPUP 
+
+ property | value 
+--- | --- 
+ label | ORWUH POPUP
+ tag | POPUP
+ routine | [ORWUH](http://code.osehra.org/dox/Routine_ORWUH_source.html)
+ return value type | ARRAY
+ description | Retrieves the \What's This\ text for a given control.

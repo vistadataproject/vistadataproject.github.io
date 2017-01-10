@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP GET DEFAULT PRINTER 
+
+ property | value 
+--- | --- 
+ label | ORWRP GET DEFAULT PRINTER
+ tag | GETDFPRT
+ routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
+ return value type | SINGLE VALUE
+ description | Returns default printer.

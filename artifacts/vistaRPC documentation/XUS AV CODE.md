@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; XUS AV CODE 
+
+ property | value 
+--- | --- 
+ label | XUS AV CODE
+ tag | VALIDAV
+ routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
+ return value type | ARRAY
+ description | This API checks if a ACCESS/VERIFY code pair is valid.It returns an array of values R(0)=DUZ if sign-on was OK, zero if not OK.R(1)=(0=OK, 1,2...=Can't sign-on for some reason).R(2)=verify needs changing.R(3)=Message.R(4)=0R(5)=count of the number of lines of text, zero if none.R(5+n)=message text.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | AVCODE | LITERAL | 60 | true | accessCode_\;\_verifyCode in unencrypted form. | 

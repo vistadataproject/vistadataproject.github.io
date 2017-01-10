@@ -1,0 +1,23 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; IBARXM TRANS DATA 
+
+ property | value 
+--- | --- 
+ label | IBARXM TRANS DATA
+ tag | TRANS
+ routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
+ return value type | SINGLE VALUE
+ description | This remote procedure is used to receive transaction information from aremote facility and reply with an acknowledgement.This RPC call does not send user data to remote side.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | IBD | LITERAL |  | true | This is the data sent by the remote treating facility to be filled infile 354.71. | 
+| vs:Input_Parameter-8994_02 | IBICN | LITERAL |  | true | This is the patient's ICN. | 

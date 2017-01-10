@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR32 LOAD 
+
+ property | value 
+--- | --- 
+ label | ORWDLR32 LOAD
+ tag | LOAD
+ routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
+ return value type | ARRAY
+ description | Return sample, specimen, & urgency info about a lab test.

@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; IBD VALIDATE USER 
+
+ property | value 
+--- | --- 
+ label | IBD VALIDATE USER
+ tag | VALIDAV
+ routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
+ return value type | SINGLE VALUE
+ description | This call is used to validate user information and for display on theShow User screen.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | IBDAV | LIST | 40 | true | validates that user is holder of specified security key. | 

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWORDG ALLTREE 
+
+ property | value 
+--- | --- 
+ label | ORWORDG ALLTREE
+ tag | ALLTREE
+ routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
+ return value type | ARRAY
+ description | Returns the tree for all display groups.

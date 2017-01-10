@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWU PATCH 
+
+ property | value 
+--- | --- 
+ label | ORWU PATCH
+ tag | PATCH
+ routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+ return value type | SINGLE VALUE
+ description | Returns a 1 if the specified patch is installed on the system, otherwisereturns a 0.

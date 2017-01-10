@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWMC PATIENT PROCEDURES1 
+
+ property | value 
+--- | --- 
+ label | ORWMC PATIENT PROCEDURES1
+ tag | PROD1
+ routine | [ORWMC](http://code.osehra.org/dox/Routine_ORWMC_source.html)
+ return value type | GLOBAL ARRAY
+ description | This remote procedure call returns a list of patient procedures for a specific patient.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 

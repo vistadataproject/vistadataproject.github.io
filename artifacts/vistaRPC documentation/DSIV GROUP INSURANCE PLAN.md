@@ -1,0 +1,24 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; DSIV GROUP INSURANCE PLAN 
+
+ property | value 
+--- | --- 
+ label | DSIV GROUP INSURANCE PLAN
+ tag | GRPPOL
+ routine | [DSIVIC](http://code.osehra.org/dox/Routine_DSIVIC_source.html)
+ return value type | ARRAY
+ description | Looks up Group Insurance Plan name and returns match or matchesor error message.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | NAME | LITERAL | 30 | true | Group Insurance Plan name to match. | 
+| vs:Input_Parameter-8994_02 | FIELDS | LITERAL | 245 |  | Field list to return in standard FileMan format.  Defaults to     \@;.03;.01I;.01\ | 
+| vs:Input_Parameter-8994_02 | VDT | LITERAL | 14 |  | Visit Date.Time for policy limitations (coverage) data.Defaults to TODAY. | 

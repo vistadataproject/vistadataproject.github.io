@@ -1,0 +1,27 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; DSIRRPT5 DEAD PATIENT REQUESTS 
+
+ property | value 
+--- | --- 
+ label | DSIRRPT5 DEAD PATIENT REQUESTS
+ tag | DEAD
+ routine | [DSIRRPT5](http://code.osehra.org/dox/Routine_DSIRRPT5_source.html)
+ return value type | GLOBAL ARRAY
+ description | This RPC will look for any ROI Plus request that was entered after the patient died.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | STDT | LITERAL | 7 | true | This is the start date in FileMan format. | 
+| vs:Input_Parameter-8994_02 | ENDT | LITERAL | 7 | true | This is the end date of the report. | 
+| vs:Input_Parameter-8994_02 | DIVL | LITERAL | 99 | true | Divisions - String of selected divisions delimited by '^' or null for allif the user holds the DSIR MDIV key | 
+| vs:Input_Parameter-8994_02 | SORT | LITERAL | 1 | true | P = Patient Name, D = Request Date (P - Default) | 
+| vs:Input_Parameter-8994_02 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run 1 = Schedule / 0 or Null= Run Immediately | 
+| vs:Input_Parameter-8994_02 | ESTART | LITERAL | 14 | true | Earliest time to start the scheduled task (FileMan Date/Time) | 

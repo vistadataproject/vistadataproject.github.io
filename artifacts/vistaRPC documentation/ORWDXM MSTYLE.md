@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXM MSTYLE 
+
+ property | value 
+--- | --- 
+ label | ORWDXM MSTYLE
+ tag | MSTYLE
+ routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
+ return value type | SINGLE VALUE
+ description | Return the menu style for the system.

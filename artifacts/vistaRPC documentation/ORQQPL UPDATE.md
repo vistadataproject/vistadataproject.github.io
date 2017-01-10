@@ -9,14 +9,14 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORQQPL UPDATE
- tag-8994 | UPDATE
- routine-8994 | ORQQPL1
- return_value_type-8994 | ARRAY
- description-8994 | Updates problem record
+ label | ORQQPL UPDATE
+ tag | UPDATE
+ routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
+ return value type | ARRAY
+ description | Updates problem record
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
+| type | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | --- | 
 | vs:Input_Parameter-8994_02 | UPDARRAY | LIST |  |  | UPDATE ARRAY | 

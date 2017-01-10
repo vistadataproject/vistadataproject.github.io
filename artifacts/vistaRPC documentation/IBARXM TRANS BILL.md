@@ -1,0 +1,24 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; IBARXM TRANS BILL 
+
+ property | value 
+--- | --- 
+ label | IBARXM TRANS BILL
+ tag | BILL
+ routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
+ return value type | SINGLE VALUE
+ description | This rpc will receive data that a charge should be created for a pharmacy copayment that had previously not been charged due to the patient reaching their copayment cap amount.This RPC call does not send user data to remote side.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | IBICN | LITERAL |  | true | This is the patient's ICN, to be used to identify the patient. | 
+| vs:Input_Parameter-8994_02 | IBT | LITERAL |  | true | This is the transaction number to bill. | 
+| vs:Input_Parameter-8994_02 | IBB | LITERAL |  | true | This is the amount to bill. | 

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWCV STOP 
+
+ property | value 
+--- | --- 
+ label | ORWCV STOP
+ tag | STOP
+ routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
+ return value type | SINGLE VALUE
+ description | RPC to stop retrieval of cover sheet information for CPRS GUI.

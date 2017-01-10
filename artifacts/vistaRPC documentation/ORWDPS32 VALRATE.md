@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS32 VALRATE 
+
+ property | value 
+--- | --- 
+ label | ORWDPS32 VALRATE
+ tag | VALRATE
+ routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
+ return value type | SINGLE VALUE
+ description | Return a 1 if IV rate text is valid, otherwise return 0.

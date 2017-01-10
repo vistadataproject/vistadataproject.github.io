@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPL PROVIDER LIST 
+
+ property | value 
+--- | --- 
+ label | ORQQPL PROVIDER LIST
+ tag | PROVSRCH
+ routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
+ return value type | ARRAY
+ description | RETURNS ARRAY OF PROVIDERS MATCHING INPUT

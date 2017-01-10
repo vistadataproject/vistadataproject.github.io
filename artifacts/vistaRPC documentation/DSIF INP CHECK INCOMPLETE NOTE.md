@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; DSIF INP CHECK INCOMPLETE NOTE 
+
+ property | value 
+--- | --- 
+ label | DSIF INP CHECK INCOMPLETE NOTE
+ tag | CHKINOT
+ routine | [DSIFNOT3](http://code.osehra.org/dox/Routine_DSIFNOT3_source.html)
+ return value type | SINGLE VALUE
+ description | This RPC will check to see if there is an incomplete 7078 for this patient.  If one exists then there cannot be a new request added.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | DFN | LITERAL | 99 | true | Patient File Pointer (File #2, Required) | 

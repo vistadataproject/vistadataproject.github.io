@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDFH CURISO 
+
+ property | value 
+--- | --- 
+ label | ORWDFH CURISO
+ tag | CURISO
+ routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
+ return value type | SINGLE VALUE
+ description | Return a patient's current isolation.

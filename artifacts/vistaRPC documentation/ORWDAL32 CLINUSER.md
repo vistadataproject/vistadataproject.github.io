@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDAL32 CLINUSER 
+
+ property | value 
+--- | --- 
+ label | ORWDAL32 CLINUSER
+ tag | CLINUSER
+ routine | [ORWDAL33](http://code.osehra.org/dox/Routine_ORWDAL33_source.html)
+ return value type | SINGLE VALUE
+ description | Determine if user can perform cover sheet allergy actions.

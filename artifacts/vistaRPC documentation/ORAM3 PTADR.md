@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORAM3 PTADR 
+
+ property | value 
+--- | --- 
+ label | ORAM3 PTADR
+ tag | PTADR
+ routine | [ORAM3](http://code.osehra.org/dox/Routine_ORAM3_source.html)
+ return value type | SINGLE VALUE
+ description | Retrieves contact information. Will also check for active temporary information.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 

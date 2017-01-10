@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; SPN PROSTHETICS ICNS 
+
+ property | value 
+--- | --- 
+ label | SPN PROSTHETICS ICNS
+ tag | COL
+ routine | [SPNJRPPR](http://code.osehra.org/dox/Routine_SPNJRPPR_source.html)
+ return value type | GLOBAL ARRAY
+ description | Returns list of ICNs of all patients with a given prosthetics device.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | DESC | LIST |  |  | List of descriptions of the prosthetic devices (array format) | 

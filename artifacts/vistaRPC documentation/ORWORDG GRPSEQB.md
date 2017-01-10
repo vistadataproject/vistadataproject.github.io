@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWORDG GRPSEQB 
+
+ property | value 
+--- | --- 
+ label | ORWORDG GRPSEQB
+ tag | GRPSEQB
+ routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
+ return value type | ARRAY
+ description | Returns expanded list of display groups.for the current site/user.

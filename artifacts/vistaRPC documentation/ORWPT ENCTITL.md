@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT ENCTITL 
+
+ property | value 
+--- | --- 
+ label | ORWPT ENCTITL
+ tag | ENCTITL
+ routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ return value type | SINGLE VALUE
+ description | Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME

@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; KMPD ROUTINE STATS 
+
+ property | value 
+--- | --- 
+ label | KMPD ROUTINE STATS
+ tag | ROUSTATS
+ routine | [KMPDU3](http://code.osehra.org/dox/Routine_KMPDU3_source.html)
+ return value type | ARRAY
+ description | Routine stats from file #8972.1 (CAPMAN ROUTINE STATS).
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 240 | true | Ien(s) for file #8972.1 (CAPMAN ROUTINE STATS).  If more than one Ien theneach will be seperated by a comma. Example: \12,98,38,123\ | 

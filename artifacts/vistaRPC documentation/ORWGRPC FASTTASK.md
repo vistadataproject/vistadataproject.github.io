@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC FASTTASK 
+
+ property | value 
+--- | --- 
+ label | ORWGRPC FASTTASK
+ tag | FASTTASK
+ routine | [ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
+ return value type | SINGLE VALUE
+ description | 

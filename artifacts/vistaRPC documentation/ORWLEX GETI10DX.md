@@ -1,0 +1,23 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWLEX GETI10DX 
+
+ property | value 
+--- | --- 
+ label | ORWLEX GETI10DX
+ tag | GETI10DX
+ routine | [ORWLEX](http://code.osehra.org/dox/Routine_ORWLEX_source.html)
+ return value type | ARRAY
+ description | This call wraps the Lexicon API $$DIAGSRCH^LEX10CS to satisfy the requirements of the ICD-10-CM diagnosis search.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | ORX | LITERAL |  | true | This is the search term. | 
+| vs:Input_Parameter-8994_02 | ORDT | LITERAL |  | true | Optional date (usually corresponding to the encounter date). Defaults to TODAY. | 

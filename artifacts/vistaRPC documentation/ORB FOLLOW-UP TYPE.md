@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORB FOLLOW-UP TYPE 
+
+ property | value 
+--- | --- 
+ label | ORB FOLLOW-UP TYPE
+ tag | TYPE
+ routine | [ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
+ return value type | SINGLE VALUE
+ description | Returns the follow-up action type for a notification as identified via thealert xqaid.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | XQAID | LITERAL | 32 | true | The identifier used by the Kernel Alert utility to uniquely identify analert/notification.  For OE/RR alerts the format is:\OR,<dfn>,<notif ien>;<notif date.time>\ | 

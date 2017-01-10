@@ -9,8 +9,8 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORWPT LIST ALL
- tag-8994 | LISTALL
- routine-8994 | ORWPT
- return_value_type-8994 | ARRAY
- description-8994 | Returns a set of patient names for use with a long list box.
+ label | ORWPT LIST ALL
+ tag | LISTALL
+ routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ return value type | ARRAY
+ description | Returns a set of patient names for use with a long list box.

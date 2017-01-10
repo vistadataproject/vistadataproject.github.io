@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS1 FORMALT 
+
+ property | value 
+--- | --- 
+ label | ORWDPS1 FORMALT
+ tag | FORMALT
+ routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
+ return value type | ARRAY
+ description | 

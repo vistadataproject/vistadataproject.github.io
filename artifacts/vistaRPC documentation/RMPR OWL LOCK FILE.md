@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; RMPR OWL LOCK FILE 
+
+ property | value 
+--- | --- 
+ label | RMPR OWL LOCK FILE
+ tag | OWLL
+ routine | [RMPRGULK](http://code.osehra.org/dox/Routine_RMPRGULK_source.html)
+ return value type | ARRAY
+ description |  
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | IEN | LITERAL | 50 | true |   | 

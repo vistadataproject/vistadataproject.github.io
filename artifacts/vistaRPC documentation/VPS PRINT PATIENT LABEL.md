@@ -1,0 +1,27 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; VPS PRINT PATIENT LABEL 
+
+ property | value 
+--- | --- 
+ label | VPS PRINT PATIENT LABEL
+ tag | PRINT
+ routine | [VPSRLBLS](http://code.osehra.org/dox/Routine_VPSRLBLS_source.html)
+ return value type | SINGLE VALUE
+ description | This RPC prints patient label using the standard VistAPrint Patient Label routine (DGPLBL).
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | VPSLOC | LITERAL | 1 | true | This is a flag to indicate to print routine to include ward locationor not. | 
+| vs:Input_Parameter-8994_02 | VPSLBCNT | LITERAL | 3 | true | This is label count to indicate to print routine how many duplicatelabels to print for the patient. | 
+| vs:Input_Parameter-8994_02 | VPSLPL | LITERAL | 2 | true | This is Lines/Label to indicate to print routine the maximum lines to print for each label. | 
+| vs:Input_Parameter-8994_02 | VPSIO | LITERAL | 50 | true | This is the device name where the label will be printed to. | 
+| vs:Input_Parameter-8994_02 | VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN,SSN,ICN,VIC/CAC | 
+| vs:Input_Parameter-8994_02 | VPSNUM | LITERAL | 50 | true | Patient ID. This could be SSN, DFN, VIC/CAC, ICN | 

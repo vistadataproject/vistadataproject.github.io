@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWDAL32 LOAD FOR EDIT 
+
+ property | value 
+--- | --- 
+ label | ORWDAL32 LOAD FOR EDIT
+ tag | EDITLOAD
+ routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
+ return value type | GLOBAL ARRAY
+ description | 

@@ -1,0 +1,16 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; XWB EGCHO MEMO 
+
+ property | value 
+--- | --- 
+ label | XWB EGCHO MEMO
+ tag | MEMO
+ routine | [XWBZ1](http://code.osehra.org/dox/Routine_XWBZ1_source.html)
+ return value type | GLOBAL ARRAY
+ description | This RPC accepts text from a client which it will send right back to theclient.  It exists for support of EGcho - Broker demonstration program.

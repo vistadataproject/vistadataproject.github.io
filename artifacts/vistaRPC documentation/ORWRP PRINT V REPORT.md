@@ -1,0 +1,25 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP PRINT V REPORT 
+
+ property | value 
+--- | --- 
+ label | ORWRP PRINT V REPORT
+ tag | PRINTV
+ routine | [ORWRPP1](http://code.osehra.org/dox/Routine_ORWRPP1_source.html)
+ return value type | SINGLE VALUE
+ description | This rpc is used to print a V type report on the Reports tab in CPRS
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | ORIO | LITERAL |  | true |  | 
+| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 
+| vs:Input_Parameter-8994_02 | HEADER | LITERAL |  |  |  | 
+| vs:Input_Parameter-8994_02 | REPORT | WORD PROCESSING |  |  |  | 

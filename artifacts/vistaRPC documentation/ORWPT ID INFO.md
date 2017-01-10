@@ -9,8 +9,8 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORWPT ID INFO
- tag-8994 | IDINFO
- routine-8994 | ORWPT
- return_value_type-8994 | SINGLE VALUE
- description-8994 | Returns identifying information for a patient.
+ label | ORWPT ID INFO
+ tag | IDINFO
+ routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ return value type | SINGLE VALUE
+ description | Returns identifying information for a patient.

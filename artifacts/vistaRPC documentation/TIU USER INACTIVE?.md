@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; TIU USER INACTIVE? 
+
+ property | value 
+--- | --- 
+ label | TIU USER INACTIVE?
+ tag | USRINACT
+ routine | [TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
+ return value type | SINGLE VALUE
+ description | RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | TIUUSR | LITERAL |  | true | This is the IEN of the user in the NEW PERSON file (#200). | 

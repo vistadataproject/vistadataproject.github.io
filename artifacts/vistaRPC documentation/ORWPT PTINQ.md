@@ -9,8 +9,8 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORWPT PTINQ
- tag-8994 | PTINQ
- routine-8994 | ORWPT
- return_value_type-8994 | GLOBAL ARRAY
- description-8994 | Returns formatted patient inquiry text for display in GUI environment.
+ label | ORWPT PTINQ
+ tag | PTINQ
+ routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ return value type | GLOBAL ARRAY
+ description | Returns formatted patient inquiry text for display in GUI environment.

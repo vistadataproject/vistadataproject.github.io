@@ -1,0 +1,25 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; XWB REMOTE RPC 
+
+ property | value 
+--- | --- 
+ label | XWB REMOTE RPC
+ tag | EN1
+ routine | [XWB2HL7](http://code.osehra.org/dox/Routine_XWB2HL7_source.html)
+ return value type | ARRAY
+ description | This is the RPC that is called to request that an application RPCbe run on a remote system.  The data is passed by HL7 to the remote systemas is the return value.   This RPC will return a HANDLE that can be used to check if the data hasbeen sent back from the remote system.  The HANDLE can be used in anotherRPC to check the status of the RPC.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | LOC | LITERAL | 30 | true | This is the Institution's station # to send the RPC to. | 
+| vs:Input_Parameter-8994_02 | RRPC | LITERAL | 30 | true | This is the name of the remote RPC to be run. | 
+| vs:Input_Parameter-8994_02 | IP1 | LITERAL |  |  | This is the first input parameter to the remote RPC. | 
+| vs:Input_Parameter-8994_02 | IP2 | LITERAL |  |  | This is the second input parameter to the remote RPC. | 

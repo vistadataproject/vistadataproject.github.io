@@ -1,0 +1,22 @@
+---
+layout: default
+title: VISTA RPC documentation
+---
+
+
+
+## [VISTA RPCs](TableOfContent.md) &#8594; DVBAB RESTRICTED LIST PATIENTS 
+
+ property | value 
+--- | --- 
+ label | DVBAB RESTRICTED LIST PATIENTS
+ tag | RSTLIST
+ routine | [DVBABFRM](http://code.osehra.org/dox/Routine_DVBABFRM_source.html)
+ return value type | GLOBAL ARRAY
+ description | Returns a list of restricted patients for CAPRI when in remote mode.
+
+### Input Parameters
+
+| type | input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | --- | 
+| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  |  |  | 
