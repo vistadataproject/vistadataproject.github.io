@@ -12,15 +12,13 @@ title: RPCL documentation
  name | ORQQPL UPDATE
  domain | Problem
  description | {::nomarkdown}Updates problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL UPDATE)
+ Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL UPDATE)
  MUMPS implementation | [UPDATE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH
  uses | 
  return type | ARRAY
  return description | 
- Method comment | UPDATE A PROBLEM RECORD
- Leading comment lines | Does essentially same job as EDSAVE above, however does not handle edits to comments,or addition of multiple comments.,Use initially just for status updates.
 
 ### Input Parameters
 
@@ -28,10 +26,7 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | 
 | UPDARRAY | LIST ([UPDARRAY](#for-id-updarray)) | true | {::nomarkdown}UPDATE ARRAY{:/} |  | 
 
-### UPDARRAY List Parameter
-
-
-#### For ID UPDARRAY
+#### UPDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
@@ -55,3 +50,8 @@ title: RPCL documentation
 | CODEDT | DATE |  | {::nomarkdown}Date Of Interest{:/} | interestDate | ORARRAY(\CODEDT\)=\3160725.\ | 
 | CODESYS | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | ORARRAY(\CODESYS\)=\10D\ | 
 | PROBLEM | REFERENCE |  | {::nomarkdown}Pointer to Problem #9000011{:/} |  | ORARRAY(\PROBLEM\)=\1\ | 
+
+
+
+
+ Generated on January 11th 2017, 7:16:21 am

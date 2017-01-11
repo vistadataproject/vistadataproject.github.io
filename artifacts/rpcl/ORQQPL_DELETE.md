@@ -12,15 +12,13 @@ title: RPCL documentation
  name | ORQQPL DELETE
  domain | Problem
  description | {::nomarkdown}DELETES A PROBLEM{:/}
- VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL DELETE)
+ Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL DELETE)
  MUMPS implementation | [DELETE^ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
  type | CHANGE
  complexity | MEDIUM
  uses | 
  return type | SINGLE VALUE
  return description | 
- Method comment | DELETE A PROBLEM
- Leading comment lines | From GMPL1 - silent version
 
 ### Input Parameters
 
@@ -30,3 +28,8 @@ title: RPCL documentation
 | GMPROV | REFERENCE | true | {::nomarkdown}provider{:/} | 57 | 
 | GMPVAMC | REFERENCE | true | {::nomarkdown}facility id{:/} | 2957 | 
 | REASON | LITERAL |  | {::nomarkdown}reason for removal{:/} |  | 
+
+
+
+
+ Generated on January 11th 2017, 7:16:21 am

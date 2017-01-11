@@ -12,15 +12,13 @@ title: RPCL documentation
  name | ORQQPL ADD SAVE
  domain | Problem
  description | {::nomarkdown}Add new problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL ADD SAVE)
+ Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL ADD SAVE)
  MUMPS implementation | [ADDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH
  uses | 
  return type | SINGLE VALUE
  return description | 
- Method comment | SAVE NEW RECORD
- Leading comment lines | RETURN - Problem IFN if success, 0 otherwise,ADDARRAY - array used for indirect sets of  GMPFLDS()
 
 ### Input Parameters
 
@@ -32,10 +30,7 @@ title: RPCL documentation
 | ADDARRAY | LIST ([UPDARRAY](#for-id-addarray)) | true | {::nomarkdown}ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET{:/} |  | 
 | GMPSRCH | LITERAL |  |  | hypertension | 
 
-### UPDARRAY List Parameter
-
-
-#### For ID ADDARRAY
+#### UPDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
@@ -71,3 +66,8 @@ title: RPCL documentation
 | 30 | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | GMPFLD(80202)=\10D^ICD-10-CM\ | 
 | 31 | WORD PROCESSING |  | {::nomarkdown}New Problem Comment{:/} | comments | GMPFLD(10,\NEW\,1)=\hypertension comment 1\ | 
 | $lastIndex | LITERAL |  | {::nomarkdown}Number of Problem Comments{:/} |  | GMPFLD(10,0)=\1\ | 
+
+
+
+
+ Generated on January 11th 2017, 7:16:21 am

@@ -12,15 +12,13 @@ title: RPCL documentation
  name | ORQQPL EDIT SAVE
  domain | Problem
  description | {::nomarkdown}Saves edited problem record{:/}
- VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL EDIT SAVE)
+ Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL EDIT SAVE)
  MUMPS implementation | [EDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH
  uses | 
  return type | SINGLE VALUE
  return description | 
- Method comment | SAVE EDITED RES
- Leading comment lines | RETURN - boolean, 1 success, 0 failure,EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
 
 ### Input Parameters
 
@@ -33,10 +31,7 @@ title: RPCL documentation
 | EDARRAY | LIST ([UPDARRAY](#for-id-edarray)) | true | {::nomarkdown}array used for indirect sets of GMPORIG() and GMPFLDS(){:/} |  | 
 | GMPSRCH | LITERAL |  |  |  | 
 
-### UPDARRAY List Parameter
-
-
-#### For ID EDARRAY
+#### UPDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
@@ -103,3 +98,8 @@ title: RPCL documentation
 |  | LITERAL |  | {::nomarkdown}Unique Term Request Comment{:/} | uniqueTermRequestComment | GMPORIG(80102)=\^\ | 
 |  | DATE |  | {::nomarkdown}Date Of Interest{:/} | interestDate | GMPORIG(80201)=\3160801^Aug 01 2016\ | 
 |  | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | GMPORIG(80202)=\10D^ICD-10-CM\ | 
+
+
+
+
+ Generated on January 11th 2017, 7:16:21 am
