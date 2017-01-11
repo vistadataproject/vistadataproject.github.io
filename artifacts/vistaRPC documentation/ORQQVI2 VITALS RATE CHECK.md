@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Leading comment lines | Extrinsic function to validate the,rate for a particular measurement,Input,Variables:  ORQTYPE=Type of measurement (abbreviation,(req.)  from PCE Device Interface Specification).,ORQRATE=Measurement rate to be validated.,(req.),ORQUNIT=Unit of measurement for rate, if specified.,(opt.),Return value:  1 if rate is valid.,0 if rate is invalid.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

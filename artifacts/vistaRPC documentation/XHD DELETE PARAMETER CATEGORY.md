@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PCAT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category to be deleted. | 
 | DELKIDS | LITERAL |  | true | This boolean flag indicates whether to delete all descendents of the parameter category in question. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

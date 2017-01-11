@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | MAGCONS | LITERAL | 30 | true |  This is the consult #.  The consult # is returned as a part of the Clinical Procedure Requests Query. | 
 | MAGVSTR | LITERAL | 30 | true |  Visit String, needed to create a New Tiu Note. Visit String is returned as part of the Query to get Patient Visits. The Query to get a list of patient visits, is done directly before this call from the Capture Workstation. | 
 | MAGCMP | LITERAL | 10 | true |  Flag:  tells to Complete (1) or Not Complete (0) the CP transaction.  If Not Complete, then this transaction is available on the CP User station to attach images to. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

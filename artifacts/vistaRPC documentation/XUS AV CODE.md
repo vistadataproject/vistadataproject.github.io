@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | AVCODE | LITERAL | 60 | true | accessCode_\;\_verifyCode in unencrypted form. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

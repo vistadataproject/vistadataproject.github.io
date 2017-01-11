@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PROVIDER IEN | LITERAL |  | true |  | 
 | ENCOUNTER DATE/TIME | LITERAL |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

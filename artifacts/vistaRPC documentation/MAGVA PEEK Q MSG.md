@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true | MAGPARAM(\QUEUE\) = IEN in file (#2006.927)MAGPARAM(\MESSAGE GROUP ID\) = value of the field \MESSAGE GROUP ID\                                                                   in file (#2006.927) or \*\ or \\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

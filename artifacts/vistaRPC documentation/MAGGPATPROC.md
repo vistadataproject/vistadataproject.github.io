@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGGZY | LITERAL | 245 | true | Input is '^' delimited string of info.Medicine SubSpecialty ^ Patient  ^ To Date ^ From DateIEN(^MCAR(697.2)  ^ DFN ^ TO DATE ^(FROM DATE def to TODAY) i.e.     \43^643^07/03/95\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

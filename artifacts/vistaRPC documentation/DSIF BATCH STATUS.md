@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | BATCH | LITERAL | 99 | true | Pass in Batch number not IEN.  Output:   (all dates in formatted FM date;External date FBOUT(0)=1 or -1^error message FBOUT(1)=Batch #^Obligation #^Type^Date opened^Clerk (Ien;name)            ^Date Supervisor closed FBOUT(2)=^Total $^Payment line count^Date finalized^Date Clerk           Closed^Date Transmitted^Person who completed(IEN;name)^Status FBOUT(3)=Station#^CNH batch(Y/N)^Batch exempt(Y/N)^Statistical Batch(Y/N) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DTM | LITERAL | 15 | true | Negative Date/Time of entry in Fileman format. | 
 | JOB | LITERAL | 15 | true | Job number of log entry. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

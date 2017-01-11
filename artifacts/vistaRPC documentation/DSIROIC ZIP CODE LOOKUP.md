@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PCODE | LITERAL | 10 | true | PCODE - required - 5 or 9 digit zip code - must be a string | 
 | ACTDATE | LITERAL | 7 | true | ACTDATE - optional - Fileman date for which the zip code must have beenactive - default is to ignore date sndn return all. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

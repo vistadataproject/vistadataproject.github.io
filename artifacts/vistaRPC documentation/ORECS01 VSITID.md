@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return Visit IEN ptr to #9000010
  Leading comment lines | VSTSTR=HospLoc;DateTime;Category;PtIEN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Returns all active events [of TYPE] from #100.5
  Leading comment lines | where TYPE=string containing any of the codes from the TYPE field
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

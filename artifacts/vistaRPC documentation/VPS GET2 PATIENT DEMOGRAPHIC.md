@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VPSNUM | LITERAL | 12 | true | Patient Social Security Number or Patient IEN. | 
 | VPSTYP | LITERAL | 10 | true | SSN or DFN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

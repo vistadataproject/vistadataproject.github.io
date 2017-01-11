@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | FBSUSC | LITERAL | 200 | true | Suspension comments | 
 | FBSUS | LITERAL | 100 | true | FBSUS=Amount suspended:(1)^date suspended:(2)^Suspend code:(3) | 
 | DSIFDATA | LIST | 255 | true |  ; DSIFDATA array (New fields added DSIF*3.2*2) ;  54^CONTRACT IEN (#54), if allowed for deletion \@\ can be passed ;  58^ATTENDING PROV NAME (#58) ;  59^ATTENDING PROV NPI (#59) ;  60^ATTENDING PROV TAXONOMY CODE (#60) ;  61^OPERATING PROV NAME (#61) ;  62^OPERATING PROV NPI (#62) ;  63^RENDERING PROV NAME (#63) ;  64^RENDERING PROV NPI (#64) ;  65^RENDERING PROV TAXONOMY CODE (#65) ;  66^SERVICING PROV NAME (#66) ;  67^SERVICING PROV NPI (#67) ;  68^REFERRING PROV NAME (#68) ;  69^REFERRING PROV NPI (#69) ;  73^LI RENDERING PROV NAME (#73)    (these are payment line specific) ;  74^LI RENDERING PROV NPI (#74) ;  75^LI RENDERING PROV TAXONOMY (#75) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

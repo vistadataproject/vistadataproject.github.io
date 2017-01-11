@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | STUDY MODALITY COUNTS | LIST | 16 |  | List of Name-Value pairs representing each modality and its count for the imported objects. | 
 | MEDIA LOG IEN | LITERAL | 10 | true | Unique identifier of an Importer II media import event. Used to cross-reference fields inthis file with specific source media in the MAGV IMPORT MEDIA LOG file (#2006.9422). | 
 | OBJFAIL | LITERAL | 6 |  | Count of requested objects which failed to be imported for this study. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | STANUM | LITERAL |  | true | This is the Station Number of the sending clinic | 
 | USRNAM | LITERAL | 32 | true | This is the name of the submitting user | 
 | USRSER | LITERAL |  | true | This is the name of the submitting user's service. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

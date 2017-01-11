@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUFROM | LITERAL |  | true | Value to begin patient list. | 
 | TIUDIR | LITERAL |  | true | Boolean value for list direction. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

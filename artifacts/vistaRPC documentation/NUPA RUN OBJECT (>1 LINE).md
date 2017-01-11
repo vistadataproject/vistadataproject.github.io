@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | The patient's DFN. | 
 | CODE | LITERAL |  | true | The code to xecute to obtain the data, such as S X=$$OBJECT^ROUTINE(). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

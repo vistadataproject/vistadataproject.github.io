@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | BPER | LITERAL |  |  | Beginning or low range percentage of service connection | 
 | EPER | LITERAL |  |  | Ending or high range percentage of service connection | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

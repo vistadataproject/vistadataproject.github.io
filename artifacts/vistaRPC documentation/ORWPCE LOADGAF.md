@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORINPUT | LIST |  |  | ORINPUT(\DFN\) = Patient DFN.ORINPUT(\LIMIT\) = Number of most recent GAF scores to retrieve. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

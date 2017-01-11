@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 15 | true | The first parameter is the patient ien (DFN) which is the ien tothe DENTAL PATIENT (#220) file. | 
 | PSPROV | LITERAL | 40 | true | The second, optional, parameter is the primary and secondary provideriens, in the format p1^p2^p3.  P3 is the Encounter Provider. | 
 | OMIT | LITERAL | 1 | true | A flag which determines whether omissions are allowed or required. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

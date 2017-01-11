@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Call conversion routine for pharmacy (both inpatient and outpatient)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

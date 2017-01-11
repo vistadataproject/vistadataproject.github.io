@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VAL | LITERAL | 50 | true | This is the lookup value for getting a list of CPT codes | 
 | DATE | LITERAL | 14 | true | This date is optional.  Default to TODAY.  Only CPT codes that were active as of this date will be included in the return list. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

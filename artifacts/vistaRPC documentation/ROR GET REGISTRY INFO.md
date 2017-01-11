@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | REGISTRY | LITERAL |  | true | The REGISTRY parameter should contain either a registry IEN or a registry name. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

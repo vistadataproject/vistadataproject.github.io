@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | TRANID | LITERAL | 50 | true | This is the transaction ID you passed to the VistA Imaging import API.  It must be in the format DSS;xxxxxx This is optional.  If it is not passed, then a transaction ID will be built from the APP parameter. | 
 | QUEUE | LITERAL | 20 | true | This is only required if you have successfully queued an import request to VistA Imaging.  VistA Imaging import API will return you a QUEUE number.  This is only required if you are adding a record to file 19606. | 
 | APP | LITERAL | 7 | true | This is optional only for DocManager.  For all othr DSS applications, this is required. DSS Product Prefixes for VistA Imaging:  Product Name                            Product Prefix  DocManager                              DM  CNT                                     CNT  Total Notes                             TNT  PFCS                                    PFCS  PTF                                     PTF  VRM                                     VRM  DRM                                     DRM  Dental Treatment Planner                DTP  TRM                                     TRM  PSS                                     PSS  ROI                                     ROI  MHTP                                    MHTP  Draeger                                 DRG  VistA Gateway/ProVation                 VGPRO  VistA Gateway/QuadraMed                 VGQM  VistA Gateway/Intisiq                   VGINQ  VistA Gateway/TheraDoc                  VGTHD | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

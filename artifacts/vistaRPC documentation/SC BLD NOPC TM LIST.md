@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMETER LIST | LIST | 512 | true | Pass in Team to be assigned to and effective date for search.Position to be assigned to is required for assign to position | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

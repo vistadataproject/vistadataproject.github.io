@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Get instructions for a given control
  Leading comment lines | ERROR
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

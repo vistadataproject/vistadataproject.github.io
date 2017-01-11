@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return message if data on the legacy system
  Leading comment lines | ORLST(0)=1 if data,  ORLST(n)=display message if data
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

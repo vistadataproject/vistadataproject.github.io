@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 245 | true | This is the Data that CPRS sends Imaging, in the windows messaging format.i.e. VISTA Messaging between applications.example : 'RPT^CPRS^29027^RA^i79029185.9998-1' | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

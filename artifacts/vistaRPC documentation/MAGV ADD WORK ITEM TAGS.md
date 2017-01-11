@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | STATUS | LITERAL |  |  | This is a list of expected statuses that the work item may have.  Ifthe work item does not have a status that matches one of the statusessupplied the tag will not be added. | 
 | UPDUSR | LITERAL |  |  | This is the user that updated the work item. | 
 | UPDAPP | LITERAL |  |  | This is the application that updated the work item. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

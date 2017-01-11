@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CONSULT ID | LITERAL | 16 | true | Consult IEN from Consults file (123). | 
 | CONSULT RECEIVER | LITERAL | 16 | true | Person receiving the consult, not necessarily the enterer of the action.Pointer to NEW PERSON file (200). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

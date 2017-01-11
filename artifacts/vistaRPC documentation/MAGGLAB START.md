@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | YEAR | LITERAL | 30 | true | Lab specimen year. | 
 | ACNUM | LITERAL | 60 | true | Lab accession number. | 
 | DFN | LITERAL |  |  | PATIENT'S DFN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

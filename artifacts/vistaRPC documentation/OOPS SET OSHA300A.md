@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | STA | LITERAL | 20 | true |  | 
 | DATA | LIST | 100 |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

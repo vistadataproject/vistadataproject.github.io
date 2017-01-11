@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
  return value type | SINGLE VALUE
  description | Returns the name of the user.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

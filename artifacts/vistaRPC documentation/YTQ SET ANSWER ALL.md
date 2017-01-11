@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI17](http://code.osehra.org/dox/Routine_YTQAPI17_source.html)
  return value type | ARRAY
  description | Saves all answers for an administration. Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

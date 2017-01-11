@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IFN | LITERAL | 30 | true | IFN - Patient IFN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

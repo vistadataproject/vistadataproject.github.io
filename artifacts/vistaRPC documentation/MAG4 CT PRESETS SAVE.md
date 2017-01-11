@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VALUE | LITERAL | 245 | true | This is the string of CT Presets.  | 
 | DATA | LITERAL | 245 | true |  DATA is a set of Flags that determine where the CT Presets will be saved. Either as CT PRESETS  or CT PRESETS 2 for Client versions 72 and later | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

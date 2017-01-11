@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGSDOFL](http://code.osehra.org/dox/Routine_MAGSDOFL_source.html)
  return value type | ARRAY
  description | LIST OFFLINE JB PLATTER(S)This Remote Procedure will provide the invoking client a list of allplatter names with Offline Images from OFFLINE IMAGES file (#2006.033).
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

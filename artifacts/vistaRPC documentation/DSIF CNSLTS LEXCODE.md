@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DSIFIEN | LITERAL |  | true | This is the Lexicon IEN you wish to know the code for. | 
 | DSIFAPP | LITERAL |  |  | This is the Lexicon application for which you are looking. I.e. ICD or CPT. | 
 | DSIFDT | LITERAL |  | true | This is the date you wish to look for the code; if you pass in nothing it assumes the current date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

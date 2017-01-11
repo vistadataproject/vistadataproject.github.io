@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [OOPSGUI3](http://code.osehra.org/dox/Routine_OOPSGUI3_source.html)
  return value type | ARRAY
  description | Call this to return a list of body parts from file ^OOPS(2261.1 that do nothave a numeric value in the code field.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

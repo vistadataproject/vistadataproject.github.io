@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGDTR06](http://code.osehra.org/dox/Routine_MAGDTR06_source.html)
  return value type | ARRAY
  description | This RPC returns the list of acquisition sites thatare defined for the reading site.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

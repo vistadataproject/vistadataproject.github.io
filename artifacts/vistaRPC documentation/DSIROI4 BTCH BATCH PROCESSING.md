@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | TYPE | LITERAL | 1 | true | The type of cloning (1=multi patient, 2=multi requestors) | 
 | IEN | LITERAL | 30 | true | The IEN of the request being cloned from 19620. | 
 | SELLIST | LIST | 60 | true | A list of requestors or patients as follows:   REQUESTOR IEN^REQUESTOR ADDRESS IEN   or   PATIENT IEN^PATIENT ADDRESS IEN^PATIENT ADDRESS IEN^ADDRESS TYPE           (PATIENT IEN MUST BE FULLY QUALIFIED) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

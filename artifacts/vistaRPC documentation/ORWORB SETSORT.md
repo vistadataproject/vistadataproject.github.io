@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | set notification sort method^direction for user
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

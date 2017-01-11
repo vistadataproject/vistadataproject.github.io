@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | COL | LITERAL | 245 | true | Format: ifn^C1,C2,C3,C4,C5,C6 ... Where ifn is the internal number of the report in file 101.24, and the2nd '^' piece is the columns separated by commas. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

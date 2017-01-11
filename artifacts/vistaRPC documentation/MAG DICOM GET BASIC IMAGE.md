@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | D0 | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005).This pointer identifies the image for which informationis being requested. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

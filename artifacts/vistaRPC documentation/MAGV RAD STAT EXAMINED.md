@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | MAGVUSRDV | LITERAL |  | true | User Logon Division of the person logged into the Importer II application. | 
 | RAIMGTYP | LITERAL |  | true | This is the radiology imaging type parameter | 
 | MAGVUSR | LITERAL |  | true | DUZ of the person logged into the Importer II application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

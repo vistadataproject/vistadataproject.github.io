@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORCIEN | REFERENCE | 255 | true | The clinician's internal ID number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

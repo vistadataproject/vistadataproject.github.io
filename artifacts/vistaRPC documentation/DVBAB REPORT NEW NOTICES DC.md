@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DVBADSNT](http://code.osehra.org/dox/Routine_DVBADSNT_source.html)
  return value type | GLOBAL ARRAY
  description | Broker-enabled version of option DVBA NOTICE/DISCHARGE PRINT, Print NewNotices of Discharge.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

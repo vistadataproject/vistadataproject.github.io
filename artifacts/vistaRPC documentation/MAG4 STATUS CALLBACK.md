@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | STATARR | LIST |  | true | This array has the following structure:STATARR(0)=\0^Error message\  or \1^Success\STATARR(1)=TrackingID      TrackingID was sent as a parameter by CP in the IMPORT() call.STATARR(2)=Queue Number     The Queue Number was returned to CP from the IMPORT() callSTATARR(3..n) If status is '0^ERROR message\ these remaining nodeswill contain further error information.  Intended for User Interventionand debugging purposes. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 16 | true | Patient internal entry number (in FILE #2). | 
 | FLDS | LITERAL | 80 | true | Contains the requested buffer entry fields that can be retrieved using Fileman (i.e. not an API call).  For example: \@;.01I;.02;.03;.04I;20.01;40.02;40.03;40.09;60.04\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

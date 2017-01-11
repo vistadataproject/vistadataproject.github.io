@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ACNUMB | LITERAL | 30 | true | The accession number in either a 'sss-mmddyy-xxxxx' or   'mmddyy-xxxxx' format | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

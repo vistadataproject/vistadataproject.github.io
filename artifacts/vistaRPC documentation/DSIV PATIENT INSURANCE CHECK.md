@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 20 | true | Patient Internal Entry Number. | 
 | DAYS | LITERAL | 10 | true | Number of days prior to today for last verified check (default=182). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | LRSS | LITERAL | 2 | true | AP Section | 
 | YEAR | LITERAL | 4 | true | Year | 
 | LRAN | LITERAL | 5 | true | Accession Number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

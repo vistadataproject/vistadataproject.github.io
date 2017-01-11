@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | This procedure will return help for a particular
  Leading comment lines | measurement type in an array.,Input,Variables:  ORQTYPE=Type of measurement (abbreviation,(req.)  from PCE Device Interface Specification).,ORQLST=Array root to store help text in
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

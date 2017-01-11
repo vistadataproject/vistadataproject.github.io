@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | NOASF | LITERAL |  |  | Set Asave Cross-reference? (Not used, leave blank) | 
 | DUZ | LITERAL |  |  | Internal ID of employee entering Progress Note | 
 | SPNSIG | LITERAL |  |  | Electronic Signature Code of employee | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

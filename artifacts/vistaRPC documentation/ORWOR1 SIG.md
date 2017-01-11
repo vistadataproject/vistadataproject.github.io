@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Store the signature.
  Leading comment lines | ID = orifn;action,X1 = Hash,X2 = Length of the array,X3 = Datafile (100),X4 = Provider DUZ,ORX5 = Array for the sig,X6 = CRLURL,X7 = DFN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

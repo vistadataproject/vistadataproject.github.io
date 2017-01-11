@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | ATTENTION OF | LITERAL | 16 |  | Person to whose attention the consult is being forwarded in thedestination service.  Pointer to NEW PERSON file, #200. | 
 | URGENCY | LITERAL | 16 |  | Urgency of the request, as defined in PROTOCOL file. | 
 | COMMENTS | LIST |  |  | Comments related to the forwarding action. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

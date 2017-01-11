@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 256 | true | CARET DELIMITED AS FOLLOWS:  ^01: ACTION ... \VR-RV\_ subset member from ACTION+1^MAGGTAU  ^02: RADFN .... IEN of PATIENT file (#2)  ^03: MAGIEN ... IEN of IMAGE file (#2005)  ^04: NIMGS .... VRad Image Count  ^05: REMOTE ... VRad Remote Read Flag  ^06: MAGJVRV .. VRad Version  ^07: USERCLS .. VRad User Class  ^08: VIXTXID .. VRad VIX Transaction ID | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

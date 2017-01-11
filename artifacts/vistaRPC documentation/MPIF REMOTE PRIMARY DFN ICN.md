@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SITE | LITERAL | 10 | true |  This is the site's station number ... a legacy station number can be passed. | 
 | DFN | LITERAL | 20 | true | This is a patient's internal IEN in the PATIENT file (#2).A legacy IEN can be passed along with a legacy station number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

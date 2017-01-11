@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | The patient ien (i.e., DFN). | 
 | ADMITDT | LITERAL |  | true | Date the patient was admitted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

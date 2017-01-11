@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | INPUT | LITERAL | 256 | true | This parameter (INPUT) contains the required IENs for filing a record.  If theStation IEN is passed in the record will be edited, if no Station IEN ispresent, a new Station subrecord will be created.  The format is:SITE IEN^SUBFILE #^STATION IEN | 
 | DATA | LITERAL | 256 | true | This parameter contains the data to be filed in the Station subfile. | 
 | FORM | LITERAL | 30 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

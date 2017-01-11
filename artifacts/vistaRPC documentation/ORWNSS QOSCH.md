@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Validate IM QO schedule
  Leading comment lines | QOID: Inpt Pharmacy QO
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

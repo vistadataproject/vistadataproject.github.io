@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  | true | The input parameter must contain the file,field and IEN of the record to bemodified. It must be in the formatFILE^FIELD^IEN. | 
 | DATA | LIST |  | true | This is the new text that will be inserted into the word processing field. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

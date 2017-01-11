@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   A  Enable abbreviation search. If PART contains 2     character abbreviation, the corresponding state     is returned. If the length of PART parameter is     not equal 2 or it does not contain a valid state     abbreviation then the regular search is performed.   B  Backwards. Traverses the index in the opposite     direction of normal traversal. | 
 | NUMBER | LITERAL |  |  | Maximum number of entries to return. A value of \*\ or no value in this parameter designates all entries that conform the criteria. | 
 | FROM | LITERAL |  |  | The index entry(s) from which to begin the list. Use the pieces of theResults[0] (starting from the second one) to continue the listing in thesubsequent procedure calls.  NOTE: The FROM value itself is not included in the      resulting list.  See description of the LIST^DIC for more details about the PART, NUMBERand FROM parameters. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

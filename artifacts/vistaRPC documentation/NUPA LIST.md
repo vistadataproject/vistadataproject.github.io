@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL |  | true | File number to list data from. | 
 | SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 
 | MULT | LITERAL |  | true | Subscript of a multiple to do the lookup on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

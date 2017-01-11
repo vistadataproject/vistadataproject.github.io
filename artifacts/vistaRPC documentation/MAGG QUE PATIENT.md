@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDFN | LITERAL | 30 | true | This is the patients DFN. | 
 | CODE | LITERAL | 10 | true |         ; CODE is a string code for which images to Queue        ;     [\A\ Abatract        ;     [\F\ Full Resolution        ;     [\B\ Big File | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

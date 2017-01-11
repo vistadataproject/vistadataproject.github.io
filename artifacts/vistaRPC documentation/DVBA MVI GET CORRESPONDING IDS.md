@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | SOURCE ID | LITERAL | 250 | true | This is the Integration Control Number (ICN) used to identify the patientthat is selected from the MVI SEARCH PERSON web service results.Format:  \1008523099V750710^NI^200M^USVHA^\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

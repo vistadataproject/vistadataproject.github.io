@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIRRPTR](http://code.osehra.org/dox/Routine_DSIRRPTR_source.html)
  return value type | GLOBAL ARRAY
  description | Retrieve all report information from the DSIR SCHEDULED REPORTS file for a given DUZ.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

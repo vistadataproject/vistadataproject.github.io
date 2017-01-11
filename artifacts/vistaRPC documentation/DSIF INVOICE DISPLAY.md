@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | BATCH | LITERAL | 20 | true | Batch IEN | 
 | INVOICE | LITERAL | 20 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

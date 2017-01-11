@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SELECT | LITERAL |  | true | User selection preference - 1=select, 0=ignore | 
 | IENPARAM | LITERAL |  | true | Pointer to User Parameter file 2006.5843 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

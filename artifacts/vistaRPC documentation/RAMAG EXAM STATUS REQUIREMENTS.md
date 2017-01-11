@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | RACTION | LITERAL | 1 | true | The RACTION parameter defines the action that is going to be performed on an exam/case record:   E  Examined (procedure has been performed,     images have been acquired)   C  Complete | 
 | RAIMGTYI | LITERAL |  | true | IEN of the imaging type in the IMAGING TYPE file (#79.2). | 
 | RAPROC | LITERAL |  |  | Radiology procedure IEN (file #71). This parameter is required todetermine exact nuclear medicine requirements (pieces of the Results[0]from 17 to 25). By default (+$G(RAPROC)=0), this remote procedure cannot examine theSUPPRESS RADIOPHARM PROMPT field (2) of the RAD/NUC MED PROCEDURES file(#71) and might indicate that some nuclear medicine data is required evenif it is not. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

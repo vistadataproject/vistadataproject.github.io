@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SDUZ | LITERAL |  | true | This is the DUZ of the supervisor accessing the Employee's data. | 
 | EMP | LITERAL |  | true | This is the Employee's name for which the sensitive date has been viewed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

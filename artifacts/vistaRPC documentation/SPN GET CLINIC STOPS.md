@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [SPNJRP4A](http://code.osehra.org/dox/Routine_SPNJRP4A_source.html)
  return value type | GLOBAL ARRAY
  description | Returns list of all clinic stops.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | GMVDT | LITERAL | 14 | true | The date/time to search from. The default is NOW. | 
 | GMVT | LITERAL | 5 | true | The vital type abbreviation as it appears in FILE 120.51, Field 1 (e.g., WT). | 
 | GMVFLAG | LITERAL | 1 | true | A flag to indicate if the search should look before or after the date/timespecified in the GMVDT value where 1 indicates before, 2 indicates afterand 0 indicates either direction. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

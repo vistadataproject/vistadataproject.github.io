@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | QLIST | LITERAL |  |  | Minimum number of results reported for a test to be listed | 
 | HIUSERS | LITERAL |  |  | Number of highest users to identify | 
 | PTLIST | LIST |  |  | PATIENTS DFN IN LIST FORMAT ICN^ICN^ICN^ICN^ICN........ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

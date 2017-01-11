@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 30 | true | If passed this will be the user to get the division info on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

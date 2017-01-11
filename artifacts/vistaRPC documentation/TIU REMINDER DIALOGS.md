@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Returns a list of all reminder dialogs usable in templates
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

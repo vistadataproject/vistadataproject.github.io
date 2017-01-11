@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER NUMBER | LITERAL | 20 | true | Internal entry number of the user (DUZ). | 
 | QUERY ID | LITERAL | 20 | true | Internal entry number of query template(#404.95) that the userselected as his/her default. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

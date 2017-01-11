@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGIEN | LITERAL | 10 | true | Image IEN | 
 | NTLOC | LITERAL | 5 | true | IEN of NETWORK LOCATION file (#2005.2) to be set in IMAGE file (#2005). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

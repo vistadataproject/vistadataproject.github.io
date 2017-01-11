@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return 1 if the order is pending a HOLD, 0 otherwise
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | Patient DFN | 
 | CODE | LITERAL |  | true | Instrument Name from file 601.71 | 
 | HANDLE | LITERAL |  | true | Unigue identifier of the GUI session. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

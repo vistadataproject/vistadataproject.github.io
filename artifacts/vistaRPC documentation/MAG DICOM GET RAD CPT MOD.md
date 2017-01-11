@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CPTMOD | LITERAL | 30 | true | This is the name of the CPT modifier. | 
 | MAGDT | LITERAL | 30 | true | This is the date used during the lookup process for screening'active' CPT modifiers. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

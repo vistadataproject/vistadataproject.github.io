@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | PATSROWS | LITERAL | 12 | true | Number of employees to return in each call. If not passed, the defaultvalue will be the next 10 matching employees. | 
 | PATSFRM0 | LITERAL | 35 | true | On the first call to this RPC, this parameter should be set to the emptystring \\. On subsequent calls to find more matches to the same lookup value, the parameter must be set to the \patsFrom0\ attribute value fromthe XML document output by the previous call. The attribute will contain the starting NAME value for the next search. | 
 | PATSFRM1 | LITERAL | 35 | true | On the first call to this RPC, this parameter should be set to the emptystring \\. On subsequent calls to find more matches to the same lookup value, the parameter must be set to the \patsFrom1\ attribute value fromthe XML document output by the previous call. The attribute will contain the starting IEN value for the next search. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

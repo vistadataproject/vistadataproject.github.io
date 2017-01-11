@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | RONUM | LITERAL |  | true | Regional Office number should be passed if youwish to consider only one specific Regional Officein the report. | 
 | REP | LITERAL | 1 | true | Pass 'A' for an A&A ReportPass 'P' for a Pension Report | 
 | DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

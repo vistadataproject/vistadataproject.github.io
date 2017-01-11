@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | The INPUT parameter has the format: IEN^CASE STATUS where IEN is the ASIST record IEN and CASE STATUS is the case status the claim should be changed to. | 
 | FLD58 | LITERAL | 80 |  | The parameter FLD58 is the text field Reason for Deletion if the case statushas been changed to deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PSBSCAN | LITERAL | 40 | true | PSBSCAN is the value that has been scanned or entered by the user. | 
 | PSBOTYP | LITERAL | 30 | true | Type of list:     Dispensed Drugs   = \UD\     IV Medications    = \IV\     Orderable Item    = \OIT\     Drug Class        = \VAC\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

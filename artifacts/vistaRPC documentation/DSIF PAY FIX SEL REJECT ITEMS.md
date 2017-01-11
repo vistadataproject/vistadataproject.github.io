@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | OLD BATCH | LITERAL | 35 | true | Old rejected batch number (IEN) | 
 | NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
 | LINES | LIST | 50 | true | Lines to re-initiate, format: passed in by a list/array  ;     B3 BATCHES: FBLINES(NUM) = PMT ID (N;N;N;N)                   FBLINES(NUM+n) = PMT ID#2, (ETC) ;     B9 BATCHES: FBLINES(NUM) = Invoice #1                   FBLINES(NUM+n) = INVOICE #2,  (ECT) Value of NUM must start with \1\! | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

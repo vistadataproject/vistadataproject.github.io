@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | ESTART | LITERAL | 15 | true | This is the earliest date and time to start running the report task if scheduled.  If not specified, the current date/time will be used.  | 
 | FRDT | LITERAL | 7 | true | Defines the low end of the billing dates to include in the report.  | 
 | TODT | LITERAL | 7 | true | Defines the high end of the billing dates to include in the report. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

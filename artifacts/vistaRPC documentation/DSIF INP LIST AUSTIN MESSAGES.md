@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FROM DATE | LITERAL | 7 | true | Date to start from in FM format. | 
 | STOP DATE | LITERAL | 7 | true | Date to stop listing messages in FM format (today - defaultif not entered). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | STDT | LITERAL |  |  | The STDT parameter defines the start date for the search of the events. Bydefault (if $G(STDT)'>0), the search starts from the earliest record ofthe ROR LOG file. | 
 | ENDT | LITERAL |  |  | The ENDT parameter defines the end date for the search of the events. Bydefault (if $G(ENDT)'>0), the search continues to the last record of theROR LOG file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

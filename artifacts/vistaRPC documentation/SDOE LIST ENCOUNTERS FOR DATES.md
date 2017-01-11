@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | BEGIN DATE/TIME | LITERAL |  | true | Beginning date and time in VA FileMan format.Time is optional. | 
 | END DATE/TIME | LITERAL |  | true | End date and time in VA FileMan format.Time is optional. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

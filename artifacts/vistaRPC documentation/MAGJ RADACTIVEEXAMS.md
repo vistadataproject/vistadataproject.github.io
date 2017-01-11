@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 50 | true | The input string supplies two parameters: LIST_TYPE ^ MODALITY  LIST_TYPE:  \U\--UNREAD Exams List; or,               \R\--RECENT Exams List               \ALL\--All Active Exams  MODALITY:   \ALL\--list for all modalities; or,              ABB[^ABB^...] where ABB is the Radiology Imaging Type                Abbreviation (Imaging Types will correspond to modalities) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

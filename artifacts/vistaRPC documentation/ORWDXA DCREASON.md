@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | ARRAY
  description | RPC to return a list of valid discontinuation reasons.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

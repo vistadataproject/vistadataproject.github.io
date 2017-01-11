@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | PSBPAR | LITERAL | 30 | true | The parameter as defined in file 8989.51. | 
 | PSBINS | LITERAL | 30 | true | The instance of the parameter that you want to return.  Defaults to 1. | 
 | PSBVAL | LITERAL | 80 | true | If setting a parameter this contains the data value to place in the parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

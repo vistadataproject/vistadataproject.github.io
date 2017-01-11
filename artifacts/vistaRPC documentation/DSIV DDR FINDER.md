@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | VALUE | LITERAL | 100 | true | Enter a value that will be used by FileMan for the lookup. This call does not support the .VALUE syntax allowed by FIND^DIC. | 
 | SCREEN | LITERAL | 250 | true | If you wish to use the DIC(\S\) equivalent then enter it here. | 
 | FLAGS | LITERAL | 20 | true | This is the FileMan FLAGS parameter used in the FILE^DIC API. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

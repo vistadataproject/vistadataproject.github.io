@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST |  | true | DATA(\DFN\), DATA(\LOC\) and DATA(\APDT\) are required. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

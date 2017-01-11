@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DIV | LITERAL | 6 | true | This is a pointer to the medical center division file (#40.8).  If it isnot passed then return data for the primary division as of that date. | 
 | DATE | LITERAL | 7 | true | This optional Fileman date only will be used to return division data ofthat date.  Default value if not passed is TODAY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

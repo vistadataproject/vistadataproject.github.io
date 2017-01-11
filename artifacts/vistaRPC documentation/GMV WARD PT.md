@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | GMRWARD | LITERAL | 30 | true | GMRWARD contains the name of ward from Ward Location file (#42). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

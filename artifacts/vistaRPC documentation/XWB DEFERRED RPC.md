@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | RPC | LITERAL | 30 | true | This parameter is the name of the RPC to be run in the background.  Thisfirst input parameter may include an optional version information aboutthe RPC, making the syntax like this: RPCname^RPCversion.  The optionalversion number will be placed in XWBAPVER when the RPC runs in thebackground. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

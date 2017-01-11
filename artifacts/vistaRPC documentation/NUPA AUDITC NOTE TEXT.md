@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | DFN of the patient. | 
 | STRING | LITERAL |  | true | Score, questions, and answers from the Audit-C. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

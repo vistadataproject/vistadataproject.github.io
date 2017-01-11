@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | TIUTYP | LITERAL |  | true | Pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1). | 
 | TIUDA | LITERAL |  | true | Pointer to the TIU DOCUMENT FILE (#8925).  References the document to beedited/signed. | 
 | USER | LITERAL |  | true | Optional parameter.  Pointer to the NEW PERSON FILE (#200).  Pass this in if author is NOT the current user (e.g., User is a transcriptionist. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

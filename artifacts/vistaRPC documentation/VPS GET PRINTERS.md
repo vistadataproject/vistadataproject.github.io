@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FROM | LITERAL | 50 | true | This input parameter is used to filter the output by returning result start with or start from (up to 20 printers). Example: Input Parameter \B\ will return all printers (up to 20) start *with* \B\Example: Input Parameter \B*\ will return all printers (up to 20) start *from* \B\ | 
 | DIR | LITERAL | 2 | true | This input parameter causes output result to be sorted in printer name ascending or descending order.Input Parameter: 1 (return printer names in ascending order)Input Parameter: -1 (return printer names in descending order) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

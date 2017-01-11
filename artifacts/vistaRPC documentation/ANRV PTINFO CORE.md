@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PTDFN | LITERAL | 40 | true | Patients Internal entry number. | 
 | RESULTS | LITERAL |  | true | Bolus of patient information. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

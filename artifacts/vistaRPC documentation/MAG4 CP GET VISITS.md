@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDFN | LITERAL | 30 | true | DFN of Patient | 
 | MAGCONS | LITERAL | 30 | true |  Consult Number, returned in the Query to get patient CP Requests. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

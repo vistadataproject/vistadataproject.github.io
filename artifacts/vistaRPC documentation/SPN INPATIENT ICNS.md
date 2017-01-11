@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FDATE | LITERAL |  |  | Date to begin Inpatient search | 
 | TDATE | LITERAL |  |  | Date to end Inpatient search | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

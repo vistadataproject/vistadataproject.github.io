@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PAT | LITERAL | 30 | true | A patient identifier which can be their DFN, Name, or SSN. | 
 | ISSSN | LITERAL | 1 | true | A boolean flag (0,1) which indicates whether or not the PAT value is a SSN value.  If a value is not passed, the flag defaults to 0. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

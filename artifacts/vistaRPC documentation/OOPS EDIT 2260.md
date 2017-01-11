@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  | true |  | 
 | ARR | LITERAL |  | true | This is an array of the sendparms created in Delphi to fill in the 2260. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | VAL3 | LIST |  | true | This is the text of the message  -  XMTEXT | 
 | VAL4 | LITERAL | 30 | true | This is the mail group name  -  MGN | 
 | VAL5 | LITERAL | 15 | true | This is the 2507 request number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DVBGUIV | LITERAL |  |  | Version # of CAPRI GUI.  Sets a variable DVBABVx so that the error trap will display what version of the client software the user was utilizing. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

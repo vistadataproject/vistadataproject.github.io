@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CLASS | LITERAL | 100 | true | \,\ Delimited list of Classes to get the list of Note Titles for. | 
 | MYLIST | LITERAL | 30 | true | If '1', then return list of 'Users' TIU Titles.If '0' or null, then return long list of titles. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

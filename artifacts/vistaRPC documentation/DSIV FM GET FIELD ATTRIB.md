@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FIELD | LITERAL | 30 | true |  This is the field number or the full name of the field | 
 | FLAG | LITERAL | 2 | true |  This is a flag controlling what will be returned. The default value is <null>.  FLAG can contain N. If FLAG contains N then do not return attributes whose value is <null> If FLAGS contains Z, then for WOrd Processing attributes, include   the zeroth node with the text | 
 | ATT | LIST | 30 | true |  This is a list of attributes to return.   List[n] := attribute name  where n=0,1,2,3,...  You can send List[0] := \*\ to get all field attributes | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

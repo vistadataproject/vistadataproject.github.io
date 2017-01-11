@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RQSTR | LITERAL |  | true | RQSTR - Pointer to the requestor file (19620.12) | 
 | ADDRPTR | LITERAL |  | true | ADDRPTR - Pointer to the address file (19620.92) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

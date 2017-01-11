@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | BILN | LITERAL | 999 | true | Internal Bill Number to file 19620.2 | 
 | AMNT | LITERAL | 999 | true | Payment amount - Numeric dollar value or 'W' to indicate fee is to be Waived | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

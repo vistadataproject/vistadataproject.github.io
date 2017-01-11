@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | SPNSEL | LITERAL |  |  | Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2 | 
 | SPNSTRT | LITERAL |  |  | Starting date range. | 
 | SPNEND | LITERAL |  |  | Ending date range. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

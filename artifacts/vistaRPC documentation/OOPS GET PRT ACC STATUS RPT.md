@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | This input parameter consists of the Start Date, End Date, and Station that the report should be run.  The Date/Time of Incident (field #4) is used in thedate criteria and the Station (field #13) is used for the Station.  The format is STARTDATE^ENDDATE^STATION IEN. | 
 | CALL | LITERAL | 10 | true | This input parameter contains the letter of the calling menu.  This will enable the name and SSN to be screened if the calling menu is the Union. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | CLINIC ID | LITERAL | 16 | true | The record number of the clinic from the Hospital Location File (#44). | 
 | START DATE | LITERAL | 16 |  | The start date of the clinic appointments to retrieve (not in FM format.) | 
 | STOP DATE | LITERAL | 16 |  | The stop date of the clinic appointments to retrieve (not in Fileman format.) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

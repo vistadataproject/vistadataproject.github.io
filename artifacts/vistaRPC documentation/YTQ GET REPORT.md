@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI9](http://code.osehra.org/dox/Routine_YTQAPI9_source.html)
  return value type | GLOBAL ARRAY
  description | Gets a report format from MH REPORTS file (#601.93)        Input: CODE as instrument name        Output:[DATA]^IENS of 601.93 vs [ERROR]                 LINE# ^ line text
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

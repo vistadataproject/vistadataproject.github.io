@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
  return value type | ARRAY
  description | Returns the number of patients scheduled in the Anticoagulation clinic perday for the next 30 days.  Only days with appointments are displayed.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

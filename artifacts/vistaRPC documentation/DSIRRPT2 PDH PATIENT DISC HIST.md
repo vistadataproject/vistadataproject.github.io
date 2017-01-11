@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
 | ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 
 | PNAME | LITERAL | 150 | true | Patient name spelled out as in the PATIENT file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

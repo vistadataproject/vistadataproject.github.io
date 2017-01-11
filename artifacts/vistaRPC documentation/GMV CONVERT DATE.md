@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | GMRDATE | LITERAL | 30 | true | GMRDATE is the user-supplied date/time text. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

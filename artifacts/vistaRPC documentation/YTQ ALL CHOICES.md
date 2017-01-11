@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI2](http://code.osehra.org/dox/Routine_YTQAPI2_source.html)
  return value type | ARRAY
  description | No input needed returns all choice id^sequnce^chice ifn^choice text.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

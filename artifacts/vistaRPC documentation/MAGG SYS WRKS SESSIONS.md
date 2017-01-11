@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 245 | true |  DATA is '^' delimited string       IEN Workstatin File ^  From Date ^ To DateIEN is from the Workstation file ^MAG(2006.81 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

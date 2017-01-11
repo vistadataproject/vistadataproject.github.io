@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TIUTYPE | LITERAL |  | true | This is a pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

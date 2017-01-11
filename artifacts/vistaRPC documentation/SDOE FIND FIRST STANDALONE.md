@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | BEGIN DATE/TIME | LITERAL |  | true | Beginning date and time in VA FileMan format.Time is optional. | 
 | END DATE/TIME | LITERAL |  | true | Ending date and time in VA FileMan format.Time is optional. | 
 | SEARCH FLAGS | LITERAL |  | true | This parameter allows developers to set specific flags that areused as an API searches encounter records. The flags indicate howthe API should function. Character  Description ---------  -----------     C      Use only completed encounters | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

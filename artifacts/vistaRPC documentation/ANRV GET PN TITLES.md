@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  return value type | ARRAY
  description | This API returns a list of Progress Notes Titles, including a SHORT LIST or preferred titles as defined by the user, and a LONG LIST of all titles defined at the site.  This has been added to the Blind Rehab software to allow the lookup of TIU Document Definitions to set as site parameters for the current institution.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

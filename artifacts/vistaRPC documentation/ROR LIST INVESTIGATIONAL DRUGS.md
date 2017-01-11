@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL |  | true | If equal to 1 this will work with the HEPC Registry.  If equal to 2 willwork with the HIV Registry | 
 | NUMBER | LITERAL |  | true | DEPRECATED | 
 | FROM | LITERAL |  | true | DEPRECATED | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

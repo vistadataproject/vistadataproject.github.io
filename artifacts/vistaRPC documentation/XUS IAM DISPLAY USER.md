@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DISPDUZ | LITERAL | 20 | true | DUZ (IEN) of user to be displayed. | 
 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

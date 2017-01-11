@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DEST | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005.2).This pointer identifies the network location for which theoperational status is being defined. | 
 | STATUS | LITERAL | 10 | true | The value of this parameter is a Boolean value that indicatesthe new operational status of the network location:   0 = off-line   1 = on-line | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

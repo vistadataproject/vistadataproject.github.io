@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | DNLEVENT | LITERAL | 30 | true | This is the event that triggered this entry to get created.  The events are MPI Resolve Mismatch, User input, TOOLKIT Resolve Duplicate, and KERNEL VERIFIED NOT A DUPLICATE. | 
 | DNLIDENTIFYINGLOCATION | LITERAL | 5 | true | This field contains the station# of the person that identified/triggered the DO NOT LINK request to be added. | 
 | INACT | LITERAL | 1 |  | This field will be used to pass whether the user/application wants the pairto be inactivated.  If you want the pair to be inactivated pass a Y foryes, otherwise leave blank. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

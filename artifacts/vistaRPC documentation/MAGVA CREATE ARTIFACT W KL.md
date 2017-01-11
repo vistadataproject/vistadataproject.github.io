@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT DESCRIPTOR\) MAGPARAM(\ARTIFACT TOKEN\) MAGPARAM(\CRC\) MAGPARAM(\CREATED BY\) MAGPARAM(\LAST ACCESS DATE/TIME\) MAGPARAM(\SIZE IN BYTES\) | 
 | KLIST | LIST |  | true |  Artifact KEYLIST values   KLIST(1) = First level Key   KLIST(2) = Second level Key   ...   KLIST(N) = N-th level Key | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

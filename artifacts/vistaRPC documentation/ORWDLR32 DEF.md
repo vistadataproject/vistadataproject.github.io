@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | For Event Delay Order,ALOC: Delay Event's default location,ADIV: Delay Event's default division,get dialog definition specific to lab
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

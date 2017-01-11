@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIFWHY | LITERAL |  |  | This is whether you want to return the list for display only, or for use in ordering or forwarding a request. | 
 | DSIFSYN | LITERAL | 1 |  | This is a boolean inputon whether you want the return to include synonyms: 1 = Yes, 0 No. | 
 | DSIFOIEN | LITERAL |  |  | This is the Consult IEN, and is optional. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

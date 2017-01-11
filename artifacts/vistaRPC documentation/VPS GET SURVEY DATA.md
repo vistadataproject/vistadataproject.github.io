@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | VPSTDT | LITERAL | 14 |  | Date To for filtering the results | 
 | VPSNUM | LITERAL | 4 |  | Maxumum number of occurrences to return. | 
 | VPSTYP | LITERAL | 7 | true | Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

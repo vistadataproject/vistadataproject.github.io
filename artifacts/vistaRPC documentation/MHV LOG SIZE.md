@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MHVUL1](http://code.osehra.org/dox/Routine_MHVUL1_source.html)
  return value type | SINGLE VALUE
  description | Returns information on size of MHV application log.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

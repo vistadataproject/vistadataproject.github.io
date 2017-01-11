@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 999 | true | The DATA input parameter represents a Lab Test name used to search for potential matches in file 60. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

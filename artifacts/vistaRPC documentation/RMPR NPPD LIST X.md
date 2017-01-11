@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR9LN1](http://code.osehra.org/dox/Routine_RMPR9LN1_source.html)
  return value type | GLOBAL ARRAY
  description | GUI REMOTE PROCEDURE, LIST NPPD DATA         ;RESULTS passed to broker in ^TMP($J,        ;delimited by \^\        ;piece 1 = DATA TO DISPLAY        ;piece 2 = FIELD NUMBER
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

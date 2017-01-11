@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAM1 | LITERAL |  | true | Patient internal entry number followed by date range for results. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 50 | true | Input value is the pointer to the RAD/NUC MED REPORTS file for the case;this pointer is referred to by the Radiology pkg variable RARPT. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

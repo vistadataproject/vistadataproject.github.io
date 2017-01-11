@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Set global to share DFN with other applications
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

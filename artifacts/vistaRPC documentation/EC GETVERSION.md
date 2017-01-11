@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ECARY | LITERAL |  | true | ECARY contains the option name and client version of the software. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

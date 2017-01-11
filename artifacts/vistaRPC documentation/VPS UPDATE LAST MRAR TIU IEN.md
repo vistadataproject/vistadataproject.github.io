@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | VPSNUM | LITERAL | 10 | true | This input parameter is the patient ID of the last MRAR record to be updated. Patient ID could be value of DFN, ICN, SSN, or VIC/CAC. | 
 | VPSTIEN | LITERAL | 10 | true | This input parameter is the TIU Document IEN which is the value to store in the TIU NOTE IEN field of the last MRAR record for the patient in VPSMRAR PDO File (#853.5). | 
 | VPSTYP | LITERAL | 7 | true | This input parameter is the Patient Type. Valid Value is DFN, SSN, VIC/CAC, or ICN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

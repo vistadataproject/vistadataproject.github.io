@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FLAG | LITERAL |  |  | BACK/FORE FLAG | 
 | NUM | LITERAL |  |  | MAX NUMBER OF LIST ELEMENTS | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

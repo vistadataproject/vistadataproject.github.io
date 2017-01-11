@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI7](http://code.osehra.org/dox/Routine_YTQAPI7_source.html)
  return value type | ARRAY
  description | Deletes a battery and all associated MH Battery COntents and MH Battery Users     Input: IEN as ien of file 601.77    Output Data vs Error
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

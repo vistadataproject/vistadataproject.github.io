@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIFDT | LITERAL |  | true | This is the date the consult was discontinued or denied. | 
 | DSIFACTM | LITERAL | 2 | true | Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied | 
 | DSIFCOM | LIST | 80 |  | The array of comments associated with the discontinue/deny for the consult. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

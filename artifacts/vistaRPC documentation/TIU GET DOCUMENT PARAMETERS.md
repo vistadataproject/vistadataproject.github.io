@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the record number of the document in the TIU DOCUMENT FILE(#8925). | 
 | TIUTYP | LITERAL |  | true | This is the record number of the Document Definition in the TIU DOCUMENTDEFINITION FILE (#8925.1).  e.g., TIUTYP=3 corresponds to the ClassProgress Notes, etc. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

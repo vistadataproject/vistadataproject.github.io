@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  | true | This required input parameter must contain the IEN and record number of thesubfile for witness information to be deleted. The input format is IEN^SUB. | 
 | OOPS CHANGE CAS |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

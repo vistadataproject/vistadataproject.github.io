@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [KMPDU6](http://code.osehra.org/dox/Routine_KMPDU6_source.html)
  return value type | ARRAY
  description | Return the names of active nodes.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

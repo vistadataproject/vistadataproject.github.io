@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAMS | LITERAL | 50 | true | Input string = UPDFLAG ^ RARPT ^ RADFN ^ RADTI ^ RACNI ^ UPDPSKEY             UPDFLAG = 1/0 -- 1 to perform update; else no update made             RARPT = pointer to Rad Exam Report file             RADFN,RADTI,RACNI = pointers to Rad Patient File for the exam            UPDPSKEY = 1 if updating Pres State or Key Image data | 
 | DATA | WORD PROCESSING | 120 | true | optional array of text containing Key Image and/orImage Presentation State data. The format of the messagecontained in DATA is:*IMAGEImage_IEN ^ KEY*PSPS_UID ^ KEYxml text lines 1xml text lines 2:N (as needed)*END_PS[*PS . . . *END_PS] (as many as for this image)*END_IMAGE[*IMAGE . . . *END_IMAGE] (as many as for the exam)*END | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

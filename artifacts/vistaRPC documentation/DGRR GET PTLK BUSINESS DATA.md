@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAM | LIST |  |  | PARAM(\PatientId_Type\) = DFN (default) or ICNPARAM(\PatientId\) = value for dfn or ICNPARAM(\UserId\) = DUZPARAM(\UserInstitution\) = division usage default to DUZ(2) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

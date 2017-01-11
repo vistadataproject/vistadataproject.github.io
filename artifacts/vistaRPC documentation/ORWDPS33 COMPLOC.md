@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ORID | LITERAL |  | true | This is the IEN of the original order from file 100 | 
 | LOC | LITERAL |  | true | This is the encounter location the order is being written for. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RMPR9DA | LITERAL | 50 | true | IEN OF 664.1 | 
 | SCR | LITERAL | 50 | true | Source of Procurement | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

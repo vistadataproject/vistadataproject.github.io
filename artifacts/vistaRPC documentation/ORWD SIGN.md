@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Sign orders (ORIFN;ACT^RELSTS^SIGSTS^NATR)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

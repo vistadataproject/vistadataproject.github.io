@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIFIEN | LITERAL |  | true | The IEN of the Consult you wish to unhide. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

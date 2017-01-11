@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | ICD | LITERAL | 35 | true | ICD = \ICD1;ICD2;ICD3:ICD4;ICD5\ [ICD1 is Mandatory - Primary Diagnosis] | 
 | PROC | LITERAL | 35 | true | PROC = \PROC1;PROC2;PROC3\  [PROC1 is mandatory, Primary procedure] | 
 | CHARGES | LITERAL | 35 | true | CHARGES = \Billed Charges;Amount Claimed\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

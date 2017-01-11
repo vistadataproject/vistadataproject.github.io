@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 30 | true | Internal Entry Number in the TIUFILE | 
 | TIUFILE | LITERAL | 10 | true |  IS - 8925   if we need to see if a Note is of a Document Class IS - 8925.1 if we need to see if a Title is of a Document Class | 
 | CLASS | LITERAL | 60 | true | Text Name of the Document Class   example: \ADVANCE DIRECTIVE\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

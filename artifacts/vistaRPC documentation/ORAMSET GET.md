@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CLINICLOC | LITERAL |  | true | This is the entry of the clinic in the HOSPITAL LOCATION FILE (#44), expressed in variable pointer format (e.g., \32;SC(\). | 
 | VISITDT | LITERAL |  | true | This is the date/time of the visit in Intenal VA FileMan format (e.g., 3140929.1400). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

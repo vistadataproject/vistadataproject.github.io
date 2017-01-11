@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | PSBRATE | LITERAL |  | true | PSBRATE presents the numeric value associated with this vital measurement. | 
 | PSBVTYPE | LITERAL |  | true | PSBVTYPE presents the type of measurement for this record and is a pointer to the GMRV VITAL TYPE File (#120.51) | 
 | PSBDTTKN | LITERAL |  | true | DTTKN   (o) Date/time (FileMan) measurment was taken.  The default is NOW. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

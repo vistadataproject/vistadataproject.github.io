@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PATIENT | LITERAL |  |  | This is the identifier to determine which patient to return data from. | 
 | PROCEDURE | LITERAL |  |  | This is the accession number used to determine which irradiation instancesto return. | 
 | PROCTYPE | LITERAL |  |  | This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

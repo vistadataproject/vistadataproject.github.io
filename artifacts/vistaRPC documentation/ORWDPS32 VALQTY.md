@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | validate a quantity, return 1 if valid, 0 if not
  Leading comment lines | to be compatible with LM, make sure X is integer from 1 to 240,this is based on the input transform from 52,7
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

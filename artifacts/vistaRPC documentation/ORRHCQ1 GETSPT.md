@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Start | LITERAL | 80 | true | Starting position, specified by Name!DFN.  For example:Winchester, Charles Emmerson!78390 | 
 | Length | LITERAL | 80 | true | Length of the return array from this routine. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

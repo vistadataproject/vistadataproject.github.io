@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ECARY | LITERAL |  |  | Optional input variable ECARY containing a status of:   STAT   - Active or inactive DSS Units (optional)            A-ctive (default), I-nactive, B-oth | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

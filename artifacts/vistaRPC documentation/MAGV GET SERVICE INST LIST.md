@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGVRS71](http://code.osehra.org/dox/Routine_MAGVRS71_source.html)
  return value type | ARRAY
  description | This remote procedure returns a list of all entries in the IMAGING SERVICE INSTITUTION file (#2005.8). Introduced in Patch MAG*3.0*34.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

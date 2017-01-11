@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | PTLIST | LIST |  |  | ICN^ICN^ICN | 
 | TDATE | LITERAL |  |  | Date to end collection.  mm/dd/yyyy. | 
 | HIUSERS | LITERAL |  |  | Number of highest users to identify:  (0-100) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

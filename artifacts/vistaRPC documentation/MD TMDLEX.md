@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MDSRCH | REFERENCE |  | true | This is the text typed in for the look-up. | 
 | MDAPP | REFERENCE |  | true | This is the application indicator.  It is either \CPT\ or \ICD\. | 
 | STUDY | LITERAL |  | true | This is a required field to obtain the Patient Study # which will be used to check the PCE visit date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

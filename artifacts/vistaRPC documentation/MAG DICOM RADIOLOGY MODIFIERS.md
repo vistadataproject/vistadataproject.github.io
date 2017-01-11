@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
  return value type | ARRAY
  description | This RPC returns a listing of entries from the PROCEDURES MODIFIER file (#71.2) sorted by Radiology' Imaging Type.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

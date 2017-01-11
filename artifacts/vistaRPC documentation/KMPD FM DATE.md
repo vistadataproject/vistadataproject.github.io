@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAM1 | LITERAL | 30 | true | User response to request for date: 'T'                                   'T-1'                                   01/02/00 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

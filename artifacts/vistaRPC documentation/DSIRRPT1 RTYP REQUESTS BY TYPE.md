@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | TYPS | LIST | 99 | true | This is an array of internal numbers to file 19620.61 DSIR TYPE OFREQUEST.  It is used for reporting criteria if no types are specifiedthen all types will be included in the report. | 
 | SCHED | LITERAL | 1 | true | Boolean flag that determines whether a report is scheduled or runimmedieately. 0 - Immediate  1 - Schedule. | 
 | ESTART | LITERAL | 14 | true | Earliest time to start the scheduled task.  Mmust be inFileMan date/timeformat. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | MAX | LITERAL | 7 | true | The maximum number of items to return per data type [optional]. | 
 | ITEM | LITERAL | 30 | true | The identifier of a single item to return [optional, but TYPE mustalso be defined when used]. | 
 | FILTER | LIST |  | true | List of name-value pairs, further refining the search. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

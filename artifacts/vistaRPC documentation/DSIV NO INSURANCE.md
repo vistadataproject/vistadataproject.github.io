@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | Contains the patient ien. | 
 | DATA | LIST | 80 | true | Contains the field and value to update for ICB file 354.  The format is DATA(field)=value.  Example is DATA(60)=3060328. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

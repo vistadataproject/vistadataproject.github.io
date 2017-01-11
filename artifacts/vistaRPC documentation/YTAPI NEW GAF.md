@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YSGAFAP1](http://code.osehra.org/dox/Routine_YSGAFAP1_source.html)
  return value type | ARRAY
  description | Allows entry of a new GAF rating. Input Required:        DFN  - Patient IEN        GAF - GAF Score (Axis 5)        DATE - Date/Time of Diagnosis        STAFF - Diagnosis By DUZOutput: only reports success vs. error        YSDATA(1)=[DATA] VS. YSDATA(1)=[ERROR]
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

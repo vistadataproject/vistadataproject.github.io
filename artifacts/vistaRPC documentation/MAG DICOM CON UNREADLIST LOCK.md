@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | LOCAL DUZ | LITERAL |  | true | DUZ of the Reader at reading site | 
 | READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
 | READER STATION | LITERAL |  |  | Reading Site's Station Number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

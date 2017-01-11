@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
  return value type | ARRAY
  description | Return available Divisions for reporting.  Must be in the ADIV cross reference on file 19620.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

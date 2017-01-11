@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PROV | LITERAL | 99 | true | This is the internal entry number of the New Person file (#200) of the person to be flagged as a sensitive provider in the ROI package. | 
 | DEL | LITERAL | 1 | true | This is a flag that if true will delete the record pointed to by parameter 1 from file 19620.94. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

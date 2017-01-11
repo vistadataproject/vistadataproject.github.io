@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | FWADJ | LITERAL |  | true | FEE WAIVER ADJUDICATED 0=TRUE, 1=FALSE | 
 | FWGRANT | LITERAL |  | true | FEE WAIVER GRANTED 0=TRUE, 1=FALSE | 
 | FWADJDT | LITERAL |  | true | FEE WAIVER ADJUDICATED DATE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

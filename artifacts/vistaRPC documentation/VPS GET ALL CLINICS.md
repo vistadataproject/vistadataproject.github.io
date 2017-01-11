@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   A  Include active locations (default)  B  Backwards. Traverses the index in the opposite     direction of normal traversal.  I  Include inactive locations | 
 | NUMBER | LITERAL |  |  | Maximum number of entries to return. A value of \*\ or no value in this parameter designates all entries | 
 | FROM | LITERAL |  |  | The index entry(s) from which to begin the list  ^01: From Name  ^02: From IEN For example, a FROM value of \VA\ would list entries following VA. You can use the 2nd and 3rd \^\- pieces of the @RESULT@(0) node to continue the listing in the subsequent procedure calls. NOTE: The FROM value itself is not included in the resulting listSee description of the LIST^DIC for more details about the PART, NUMBER, and FROM parameters. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

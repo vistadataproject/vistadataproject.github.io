@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return format mapping for a dialog
  Leading comment lines | Y(n): CtrlName^DlgPtr^FmtSeq^Fmt^Omit^Lead^Trail^Mult?^chd1~chd2~...
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | FIELD | LITERAL | 20 | true | This is field number of the word processing field | 
 | FLAGS | LITERAL | 10 | true | This is the FLAGS parameter for the WP^DIE call. | 
 | DATA | LIST | 250 | true | This is the text to be filed into the word processing field. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

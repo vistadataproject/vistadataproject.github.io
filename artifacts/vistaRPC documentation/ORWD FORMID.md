@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Returns the Dialog Form ID
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

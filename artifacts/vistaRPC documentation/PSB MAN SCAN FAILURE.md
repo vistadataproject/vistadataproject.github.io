@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PSBPARAM | LIST |  | true | Data to initiate scanning failure process.  Input: Only\^\piece that must be populated is #5 - scan type (\Wristband\/\Medication\)   i.e. - MUAS WUAS MKEY WKEY MSCN WSCN MMME Node (1) is to present \ tag ^ unique id \ if available for a medication \unable to scan\. Procedure will populate BCMA Unable To Scan Log (file#53.77) appropriately, and send off MailMan message if necessary. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

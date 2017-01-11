@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ORCIEN | REFERENCE | 255 | true | The clinician's internal ID number. | 
 | ORDXA | REFERENCE | 255 | true | Array of diagnoses codes to be deleted from the clinician's personaldx list. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

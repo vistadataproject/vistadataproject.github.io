@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | PATIENT IEN | 
 | DUZ2 | LITERAL |  | true | Institution file pointer | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

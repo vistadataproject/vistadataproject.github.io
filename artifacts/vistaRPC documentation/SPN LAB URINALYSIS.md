@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL |  | true | Internal entry number of the patient in the PATIENT file (#2). | 
 | CUTDATE | LITERAL |  | true | Data from the CUTDATE forward to the present date will be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

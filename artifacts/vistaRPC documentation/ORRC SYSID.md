@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORRCLNP](http://code.osehra.org/dox/Routine_ORRCLNP_source.html)
  return value type | SINGLE VALUE
  description | This RPC will return the system identifier as a prodcution system or not.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

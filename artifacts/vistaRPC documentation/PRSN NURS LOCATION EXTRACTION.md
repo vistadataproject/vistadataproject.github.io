@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PRSNDT | LITERAL | 15 | true | The PRSNDT is, in date format 'YYYYMMDD', for extracting all NURSLOCATIONS and their assocated Wards in File #211.4 that is active in anyone of the Day# (1-14) of the Pay Period of the PRSNDT. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

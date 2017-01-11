@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Note IEN | LITERAL | 20 | true | IEN of document in file 8925. | 
 | Chart Copy? | LITERAL | 2 |  | If true, print chart copy, else print work copy. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

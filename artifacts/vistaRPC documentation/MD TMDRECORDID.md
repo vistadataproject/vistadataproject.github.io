@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | IENS | LITERAL | 20 | true | Contains the IENS of the record being manipulated. | 
 | FLD | LITERAL | 10 | true | Contains field specifications for the record. | 
 | DATA | LITERAL | 30 | true | Contains any other needed information for the call. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

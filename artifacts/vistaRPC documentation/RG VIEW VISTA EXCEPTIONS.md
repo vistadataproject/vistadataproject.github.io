@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 32000 | true | Internal Entry Number for patient, in the PATIENT (#2) file, exceptionsare being requested for  If DFN is not passed, then ICN or SSN must be. | 
 | BRANGE | LITERAL | 7 | true | Beginning Date Range for exceptions to be in. | 
 | ERANGE | LITERAL | 7 | true | Ending Date Range for Exceptions to have been logged in. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

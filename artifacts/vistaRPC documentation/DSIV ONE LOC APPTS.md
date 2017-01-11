@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | SCREEN | LITERAL | 1 | true | Contains the type of appointment to screen out:  1=checked in (which also screens checked out appointments by default) or 2=checked out | 
 | NUMS | LITERAL | 9 | true | Contains the number of records to return for each call. | 
 | BUF | LITERAL | 1 | true | This field can be set to 1 to screen out (not return) appointments if there's an existing buffer entry for that patient. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

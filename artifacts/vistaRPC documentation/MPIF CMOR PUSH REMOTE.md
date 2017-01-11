@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL | 10 | true | ICN - not including the checksum | 
 | NCMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

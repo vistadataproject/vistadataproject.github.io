@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a bolus from the HOSPITAL LOCATION file
  Leading comment lines | .Return Array, Direction, Starting Text
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

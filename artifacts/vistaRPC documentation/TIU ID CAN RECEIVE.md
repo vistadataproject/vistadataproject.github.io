@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the IEN of the prospective ID Parent document in the TIU Documentfile. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

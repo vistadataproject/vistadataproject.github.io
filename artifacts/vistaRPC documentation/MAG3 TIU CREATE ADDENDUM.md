@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | MAGESBY | LITERAL | 90 | true |  The DUZ of the Signer (Defaults to DUZ) | 
 | MAGTEXT | LIST | 3200 | true | Array of Text to add to the New Note. | 
 | MAGDATE | LITERAL | 40 | true | The Date of the New TIU Note/Addendum | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

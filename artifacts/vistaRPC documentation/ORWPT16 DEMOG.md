@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Return common patient demographic info,NAME^SEX^DOB^SSN^WARDID^WARDNAME^RMBED^ADMITTIME^DIED ;^SC%^ELIGTYPE
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

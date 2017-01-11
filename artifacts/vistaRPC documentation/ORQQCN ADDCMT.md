@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | Comments | LIST | 80 | true | Array of comments in the form ARRAY(0)..ARRAY(n). | 
 | Alert | LITERAL | 5 | true | If '1', send an alert to the requesting provider.  Otherwise, don't. | 
 | Alert to | LITERAL | 80 | true | Contains pointers to NEW PERSON FILE (200) for those to receive alert forthis addition of a comment.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

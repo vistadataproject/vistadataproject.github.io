@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OPTION | LITERAL | 30 | true | See RPC description. | 
 | DATA | LITERAL | 250 | true | Required data for selected option. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

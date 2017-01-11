@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | PSTYPE | LITERAL |  | true | Code to determine the Dialog Type | 
 | DFN | LITERAL |  | true |  | 
 | LOCIEN | LITERAL |  | true | This will be set to the patient inpatient location IEN from file 44. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

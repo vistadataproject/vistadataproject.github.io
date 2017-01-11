@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | VENDOR | LITERAL | 35 | true | Vendor IEN (File 162) | 
 | DATE OF SERVICE | LITERAL | 7 | true | Fileman date of service | 
 | CPT | LITERAL | 10 | true | CPT code, (service provided) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

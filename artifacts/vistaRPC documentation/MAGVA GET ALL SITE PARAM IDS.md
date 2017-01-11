@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGVAG03](http://code.osehra.org/dox/Routine_MAGVAG03_source.html)
  return value type | ARRAY
  description | Returns site information from IMAGING SITE PARAMETERS file (#2006.1)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

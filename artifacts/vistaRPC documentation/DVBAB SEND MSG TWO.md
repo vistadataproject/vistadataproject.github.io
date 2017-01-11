@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DUZ | LITERAL |  |  | PERSON FILE DFN | 
 | RIEN | LITERAL |  |  | 2507 REQUEST IEN #396.3 | 
 | ELIST | LIST |  |  | 2507 EXAM LIST #396.4 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

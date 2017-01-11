@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | TIUDFN | LITERAL |  | true | This is the patient IEN. | 
 | TIUSEC | LITERAL |  | true | This BOOLEAN value allows sensitive patient data to be displayed or hidden. | 
 | TIUGHS | LITERAL |  | true | This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

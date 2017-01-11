@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Returns Template Access level of User
  Leading comment lines | Return Values:,0 = FULL ACCESS,1 = READ ONLY,2 = NO ACCESS,3 = SHARED TEMPLATES EDITOR - ACCESS PARAMETERS DO NOT APPLY
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

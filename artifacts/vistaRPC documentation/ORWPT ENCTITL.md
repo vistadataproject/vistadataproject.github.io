@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return external values for encounter
  Leading comment lines | LOCNAME^LOCABBR^ROOMBED^PROVNAME
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

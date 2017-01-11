@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | returns all collection samples,n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

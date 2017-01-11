@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | SERVICE | LITERAL | 12 | true | Service IEN. | 
 | LOCATION | LITERAL | 12 | true | Location IEN. | 
 | USERCLASS | LITERAL | 50 | true | User Class IENs separated by \^\. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

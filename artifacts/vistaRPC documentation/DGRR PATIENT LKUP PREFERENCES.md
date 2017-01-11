@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAM | LIST |  | true | PARAM(\stationNumber\) = station number for institution.  If not defined, RPC will return the package default values. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

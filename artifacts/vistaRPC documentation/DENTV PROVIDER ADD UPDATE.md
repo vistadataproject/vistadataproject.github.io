@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST |  | true | The input array contains the Dental Provider information to be added/updated into file 220.5.  The following fields are sent:  DATA(\PERSON\)=pointer to file 200 (PERSON)  DATA(\IEN\)=pointer to file 220.5 (only for update records)  DATA(\PROVNUM\)=8 character Dental Provider Number  DATA(\INACTIVE\)=-1 if inactive, else = 0. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

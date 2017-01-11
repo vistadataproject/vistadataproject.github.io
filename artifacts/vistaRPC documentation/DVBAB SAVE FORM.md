@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | DVBLINES | LIST |  | true |  | 
 | DVBLINECOUNT | LITERAL |  | true |  | 
 | DVBLINEN | LITERAL |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

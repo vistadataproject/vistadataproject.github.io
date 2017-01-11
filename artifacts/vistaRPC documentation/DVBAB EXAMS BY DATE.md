@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | BEGDT | LITERAL |  | true |  | 
 | ENDDT | LITERAL |  | true |  | 
 | DVBADLMTR | LITERAL | 1 | true | The delimiter indicates whether the report should be produced in a comma delimited format (.csv file) or not. DVBADLMTR=0 means report displays inplain text. DVBADLMTR=1 means report will be created as a .csv fileimportable to Excel. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

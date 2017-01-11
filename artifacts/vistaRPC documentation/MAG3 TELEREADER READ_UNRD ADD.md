@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MAGDA | LITERAL |  |  | An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA) | 
 | MAGCNT | LITERAL |  | true | Count of new images captured | 
 | MAGRIEN | LITERAL |  | true | a request/consult IEN in REQUEST/CONSULTATION file (#123) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

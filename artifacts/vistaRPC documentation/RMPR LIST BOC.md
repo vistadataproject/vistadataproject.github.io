@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR9AUT](http://code.osehra.org/dox/Routine_RMPR9AUT_source.html)
  return value type | ARRAY
  description | RPC to list all available Budget Object Code (BOC)'s for a given Cost Center
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

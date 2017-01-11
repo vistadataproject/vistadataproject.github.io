@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL |  | true | IEN of the care plan in file 1927.4. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

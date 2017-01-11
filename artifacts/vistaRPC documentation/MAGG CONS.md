@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGBAPI](http://code.osehra.org/dox/Routine_MAGBAPI_source.html)
  return value type | SINGLE VALUE
  description | This function returns the boolean value used to determinewhether the Imaging site is operating in the Consolidationmode.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PLACE | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2006.1)This pointer identifies the \place\ for which parameters areto be entered. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

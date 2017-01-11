@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CLERK | LITERAL | 30 | true | The IEN for file 2 which points at the desired ROI clerk. | 
 | BILLING | LITERAL | 1 | true | BILLING - The billing system is on (1) or off(0) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

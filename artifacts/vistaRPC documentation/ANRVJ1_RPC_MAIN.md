@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | OPTION | LITERAL | 10 | true | Routine Line tag you wish to call. | 
 | DFN | LITERAL |  | true | Parameter variable to be passed into routine tag. | 
 | DATA | LITERAL |  | true | Any additional parameters to be passed into the routine line tag. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VPSDFN | LITERAL | 9 | true | Patient ID (DFN) who enters the Clinical Survey Questionannire  | 
 | VPSDATA | LIST | 255 | true | Array of Data containing Clinical Survey Questionnaire to be stored in VistA. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

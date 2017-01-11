@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | Iterator | LITERAL | 80 | true | Iterator to tell the routine from which patient to perform the search. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

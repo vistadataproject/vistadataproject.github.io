@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FDATE | LITERAL |  |  | Date to start search from.   | 
 | TDATE | LITERAL |  |  | Date to end search at.   | 
 | HIUSERS | LITERAL |  |  | Number of patients with highest amount of orders to identify.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

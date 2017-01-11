@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return a list of DC reasons
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

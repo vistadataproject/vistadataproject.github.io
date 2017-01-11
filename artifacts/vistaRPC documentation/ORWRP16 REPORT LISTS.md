@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return lists for list boxes
  Leading comment lines | RPC: ORWRP REPORT LIST,See RPC definition for details on input and output parameters
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
  return value type | SINGLE VALUE
  description | Return station number the user is logged into^available IFCAP stationnumbers for the user^Station Name
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

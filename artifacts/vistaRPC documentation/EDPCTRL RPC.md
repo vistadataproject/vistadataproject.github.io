@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMS | LIST |  | true | This is a list of parameters that were passed to the Java middle tier via an HTTP Post message. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

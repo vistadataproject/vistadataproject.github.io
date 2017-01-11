@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return true if an order has been released
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

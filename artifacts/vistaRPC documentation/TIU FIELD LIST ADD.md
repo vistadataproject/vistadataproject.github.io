@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | XMLSET | LIST |  |  | Input in the format of XMLSET(1)=\<FIELD NAME=\12345\>\ | 
 | XMLIN | LIST |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

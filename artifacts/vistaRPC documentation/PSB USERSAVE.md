@@ -32,3 +32,8 @@ title: VISTA RPC documentation
 | PSBCV4 | LITERAL |  |  |  | 
 | PSBORMODE | LITERAL |  |  | Last Order mode per user upon exit of BCMA. This parameter is for the last Order Mode the user was using upon exiting BCMA.   Value  0    Inpatient order mode  1    Clinic order mdoe | 
 | PSBCLSRCH | LITERAL |  |  | Last Clinic Search text criteria entered per user.  This parameter contains two pieces of data delimited by a \/\.  First piece of data is the Clinic name search Prefix text and the second is the Clinic name contains search text. Example: AL-BLUE TEAM/CARDIAC | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

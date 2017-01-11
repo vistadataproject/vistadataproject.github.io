@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CODE | LITERAL | 5 | true | A Code containing A | F | B    if [ A  then Abstracts will be queued.   if [ F  then Full Resolution image will be queued   if [ B  then BIG file ( Xray 2k x 2k ) will be queued | 
 | MAGIEN | LITERAL | 20 | true | This is the IEN from Image File ^MAG(2005  to be queued. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

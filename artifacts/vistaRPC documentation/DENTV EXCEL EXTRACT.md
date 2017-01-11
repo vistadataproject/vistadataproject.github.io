@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 20 | true | Optional - if you wish to extract records for a particular patient, thenpass the ien of that patient. | 
 | FLG | LITERAL | 4 | true | Contains the string CFPO or any combination of that. C=complete txns (defaulted for old extract option) P=planned txns F=Findings O=Observed | 
 | STN | LITERAL | 10 | true | Contains the external facility ID (500, 500BZ, etc) for which the user wants extracted data.  If this field is null (not sent), then all facilities will be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

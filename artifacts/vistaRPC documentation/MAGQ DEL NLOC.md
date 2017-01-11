@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | Network location file entry | LITERAL | 30 | true | This is the Network Location file entry number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

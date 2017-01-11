@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TYP | LITERAL |  | true | Identifies the types of display fields to return.O=Orders, D=Documents, P=Patient, and V=Visits | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

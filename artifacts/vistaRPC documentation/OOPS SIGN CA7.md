@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 30 | true | This parameter contains the file number, field number and internal recordnumber for verifying and filing the electronic signature.  The expected formatis:  FILE^FIELD^IEN.  An Example being 2264^84^5. | 
 | SIGN | LITERAL | 30 | true | This parameter contains the encrypted electronic signature code. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DEF | LIST |  | true | This is the list of name-value pairs that represent a report definition. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

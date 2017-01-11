@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FILENAME | LITERAL |  | true | The filename. | 
 | FILE EXTENSION | LITERAL |  | true | The file extension. | 
 | NETWORK LOCATION | LITERAL |  | true | Current share network path being evaluated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

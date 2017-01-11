@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST | 256 | true | Contains a list with the PCE Visit and Primary Dx and/or Provider defined:DATA(1)=visit ien^visit dateDATA(n)=1^\POV\^dx ien^dx external^^descDATA(n)=1^\PRV\^provider ien(file 200)^provider name | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

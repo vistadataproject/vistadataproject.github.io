@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | INDEX | LITERAL | 50 | true | Enter the string of index names (separated by '^') which the search will transverse | 
 | SCREEN | LITERAL | 250 | true | If you wish to screen entries, then enter that executable M code. This is the same as DIC(\S\) | 
 | IDENTIFY | LITERAL | 50 | true | This is the IDENTIFIER parameter in LIST^DIC call | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

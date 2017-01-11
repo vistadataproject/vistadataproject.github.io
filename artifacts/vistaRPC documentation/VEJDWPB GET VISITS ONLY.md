@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | VECLIN | LIST |  | true |  VECLIN is a local array which contains a list of clinics to be used to screen appointment list.  Only those appointments in these clinics will be returned.    VECLIN - optional - passed by reference    VECLIN(#) = clinic name or ien | 
 | SCODE | LIST |  | true |  This is a list of 3-digit stop codes used to screen appointments returned.  Only those clinic locations whose stop code is in this list will be returned.     SCODE - optional - passed by reference    SCODE(#) = 3-digit stop code (lookup on C xref) | 
 | VEDIV | LIST |  | true |  This is a list of divisions to be used to screen appointments.  Only appointments in clinics for divisions in this list will be returned.      VEDIV - optional - passed by reference     VEDIV(#) = division name or ien | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

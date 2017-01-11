@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Call LES Api from inside CPRS for validating changed lab order
  Leading comment lines | FLDS = DFN^TEST^ORL^ORNP^ORDT,DFN:  Patient DFN (pointer to #2),TEST: Lab Test IFN (pointer to #101.43),ORL:  Patient Location (pointer to #44),ORNP: Provider IEN (pointer to #200),ORDT: Collection date/time (fileman format)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

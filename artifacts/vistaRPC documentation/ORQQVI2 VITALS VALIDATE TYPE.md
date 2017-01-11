@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Leading comment lines | This function returns one if ORQTYPE is a valid type abbrev.,from the PCE Device Interface Specification.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

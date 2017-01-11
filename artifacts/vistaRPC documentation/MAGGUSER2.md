@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGGWRKID | LITERAL | 240 | true | Workstation ID and Location from MAG.INI file section [SYS_SiteParam]. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ISIMO | LITERAL |  | true | This determine if the order is an IMO order. | 
 | ENCLOC | LITERAL |  | true | This passes the encounter location to the API. This is used for Admin Times. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

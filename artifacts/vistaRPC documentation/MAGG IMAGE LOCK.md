@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FLAGS | LITERAL |  |  | reserved | 
 | IMGLST | LIST |  | true | List of images that have to be locked. Images are referenced by their internal entry numbers (IENs) in the IMAGE (#2005) and IMAGE AUDIT(#2005.1) files. Example:   with RPCBroker.Param[1] do    begin      PType := list;      Mult[1] := '234';      Mult[2] := '789';    end; | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

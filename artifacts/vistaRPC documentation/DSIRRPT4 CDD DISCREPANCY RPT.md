@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | CLRK | LIST | 99 | true | Array where each element is equal to the DUZ of selected clerks.Optional - no entries passed will return all clerks for time period. | 
 | SCHED | LITERAL | 1 | true | Boolean flag that determines whether a report is scheduled or runimmedieately. 0 - Immediate  1 - Schedule. | 
 | ESTART | LITERAL | 15 | true | Earliest time to start the scheduled task.  Mmust be inFileMan date/timeformat. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

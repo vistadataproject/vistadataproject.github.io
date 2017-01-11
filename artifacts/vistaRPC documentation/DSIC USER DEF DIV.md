@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | XDUZ | LITERAL | 20 | true | This is the pointer to file 200 for the user for which to return the default division.  The default value is DUZ | 
 | SITE | LITERAL | 1 | true | This boolean flag (1 or 0) will be used if the user has no default division specified in the DIVISION multiple in file 200.  If no default division, then return the value from $$SITE^VASITE. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | INUM | LITERAL | 10 | true | The value of this parameter is either 0 (zero) or a positive integer number.This number identifies the sequence of the image within its series. | 
 | IMGUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies an image. | 
 | STUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies a study. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Sign
  Leading comment lines | DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code,ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

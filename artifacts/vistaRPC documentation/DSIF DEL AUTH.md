@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 35 | true | Pass in Patient File IEN (file #2)  | 
 | AUTHIEN | LITERAL | 25 | true | Authorization IEN to be deleted | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

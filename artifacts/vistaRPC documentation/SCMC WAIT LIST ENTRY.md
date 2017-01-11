@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [SCMCWAIT](http://code.osehra.org/dox/Routine_SCMCWAIT_source.html)
  return value type | ARRAY
  description | Place patient on Wait List
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

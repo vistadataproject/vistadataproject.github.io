@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | BEGDATE | LITERAL | 7 | true | Begining Date (Required : FileMan format) | 
 | ENDDATE | LITERAL | 7 | true | Ending Date (Required : FileMan format) | 
 | FBRT | LITERAL | 1 | true | Report Type (Optional : D = Detailed, S = Summary, Default = Summary) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

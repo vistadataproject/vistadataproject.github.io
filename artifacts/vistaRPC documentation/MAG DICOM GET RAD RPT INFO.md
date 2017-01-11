@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | D0 | LITERAL | 30 | true | The value of this parameter is a numeric value that identifiesthe current record in the Radiology Report table. | 
 | F | LITERAL | 30 | true | If the value of the first input parameter is equal to \O1\,the value of this parameter is either -1 or +1, indicatingthe traversal direction through the table.For the other values of the first input parameter, the valueis the fixed subscript between the highest level entry numberand the next level internal entry number. | 
 | D1 | LITERAL | 30 | true | The value of this parameter is the second-level FileMan internalentry number into the Radiology Report table. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

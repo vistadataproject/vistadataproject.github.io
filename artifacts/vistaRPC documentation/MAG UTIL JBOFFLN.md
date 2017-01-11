@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TXTLine | LITERAL | 256 | true | Text line in Offline Platter report.TXT | 
 | PLATTER | LITERAL | 256 | true | JUKEOX PLATTER NAME(LABEL) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

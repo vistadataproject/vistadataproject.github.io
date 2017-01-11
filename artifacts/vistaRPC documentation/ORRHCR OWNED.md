@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | RPT | LITERAL |  | true | The internal number of a report (entry in 102.21). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

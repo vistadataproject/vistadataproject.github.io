@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ITEMS | LIST |  | true | This is the list of ID's of each item to return details for, in the formXXX:### where XXX indicates the type of item and ### is the pointer tothe corresponding M file containing the data:    ORU = Orders file #100    DOC = TIU Documents file #8925 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

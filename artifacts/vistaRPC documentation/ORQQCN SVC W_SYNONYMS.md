@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | Purpose | LITERAL | 2 |  | 0 for display purposes, 1 to order or forward a consult. | 
 | Include Synonyms | LITERAL | 2 |  | 0 to exclude synonyms, 1 to include synonyms. | 
 | Consult IEN | LITERAL | 16 | true | OPTIONAL - Include pointer to file 123, the Consult Request file.  Used when forwarding a consult, and screening needs to be done to limit the list of services. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

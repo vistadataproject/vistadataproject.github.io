@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | END DATE | LITERAL | 16 | true |  | 
 | CONTEXT | LITERAL | 8 | true | Not yet implemented.  Reserved for future use. | 
 | MAX | LITERAL | 8 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

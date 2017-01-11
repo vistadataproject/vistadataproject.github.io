@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIV | LITERAL | 7 | true | Either a FileMan internal date, specifying the last date to purge,OR a number specifying how many days to keep. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

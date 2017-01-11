@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | PRTORD | LITERAL | 30 | true | Print Order IEN or Name if adding a new entry in the DSIR ROI PRINT ORDER File (#19620.702). | 
 | PRSEQ | LITERAL | 245 | true | Print Order Sequence as specified by the ROI Plus GUI application. | 
 | PRTIEN | LITERAL | 99 | true | Print Order IEN (Optional - if null a new entry will be created, for edit it is Required)This is the IEN for the entry in file 19620.702 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return SC conditions that may be selected
  Leading comment lines | VAL=SCallow^SCdflt;AOallow^AOdflt;IRallow^IRdflt;ECallow^ECdflt;,MSTallow^MSTdflt;HNCallow^HNCdflt;CVAllow^CVDflt;SHADAllow^SHADDflt
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

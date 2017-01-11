@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SSN | LITERAL | 9 | true | SSN for the patient that is to be sent to the MPI for ICN assignment.  Should there be more than one entry with that SSN, all will be sent. | 
 | DFN | LITERAL | 20 | true | DFN for patient to be SPI'd.  DFN or SSN should be used to find patient. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

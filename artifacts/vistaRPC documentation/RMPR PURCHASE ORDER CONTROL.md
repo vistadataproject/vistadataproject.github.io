@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR9PU](http://code.osehra.org/dox/Routine_RMPR9PU_source.html)
  return value type | GLOBAL ARRAY
  description | GUI Order controll processing.  Returns the list of all open pending consults from file 668.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

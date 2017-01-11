@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | DSIFALRT | LITERAL | 1 | true | Flag to signal that alerts are to be sent: 'N' - NO'Y' - YES | 
 | DSIFALTO | LITERAL | 80 |  | A list of comma delimited NEW PERSON FILE (200) iens who need to be alerted to the significant finding update for this consult. | 
 | DSIFDT | LITERAL |  | true | The date of the significant finding update. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAM1 | LITERAL | 8 | true | Routine name (limited to 8 characters). | 
 | PARAM2 | LIST | 240 | true | Array containing routine code. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

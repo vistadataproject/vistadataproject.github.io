@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAM1 | LITERAL | 30 | true | Routine name to search for (may contain an asterisk (*) for a list). | 
 | PARAM2 | LITERAL | 60 | true | Temporary global storage name.  Must be either ^TMP or ^UTILITY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

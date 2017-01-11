@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DIAG | LIST | 255 | true | Array of Orders and Clinical Indicators returned from CPRS | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

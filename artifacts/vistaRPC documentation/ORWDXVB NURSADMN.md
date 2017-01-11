@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Suppress Nursing Adiminstration Order Prompt
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

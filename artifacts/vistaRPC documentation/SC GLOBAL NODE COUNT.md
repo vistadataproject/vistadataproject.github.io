@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMETERS | LIST |  | true | Contains the subscript that indicates the global root, the cross reference, and the value to order on in the global. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

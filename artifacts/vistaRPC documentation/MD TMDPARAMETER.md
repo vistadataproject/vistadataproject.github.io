@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | PAR | LITERAL | 30 | true | A parameter is the actual name which values are stored under.  The name ofthe parameter must be namespaced and it must be unique.  Parameters can bedefined to store the typical package parameter data (e.g. the default addorder screen), but they can also be used to store GUI application screensettings a user has selected (e.g. font or window width).  When aparameter is defined, the entities, which may set that parameter, are alsodefined.  The definition of parameters is stored in the PARAMETERDEFINITION file (#8989.51).  NOTE: This utility restricts the parameter name to those in the ClinicalProcedures namespace (MD*). | 
 | INST | LITERAL | 30 | true | Most parameters will set instance to 1.  Instances are used when more thanone value may be assigned to a given entity/parameter combination.  Anexample of this would be lab collection times at a division.  A singledivision may have multiple collection times.  Each collection time wouldbe assigned a unique instance. | 
 | VAL | LITERAL | 80 | true | A value may be assigned to every parameter for the entities allowed in theparameter definition.  Values are stored in the PARAMETERS file (#8989.5).VAL may be passed in external or internal format.  If using internalformat for a pointer type parameter, VAL must be preceded with the grave(`) character.  If VAL is being assigned to a word processing parameter,the text is passed in the subordinate nodes of VAL (e.g. VAL(0-n)=Text). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

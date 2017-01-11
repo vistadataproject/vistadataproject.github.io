@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 10 | true | This is the internal entry number in file 228.1 to be deleted | 
 | REASON | LITERAL | 80 | true | You can provide a reason as to why this record was deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

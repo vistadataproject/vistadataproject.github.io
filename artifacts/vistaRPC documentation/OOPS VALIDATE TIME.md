@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IDT | LITERAL |  | true | This is the base date/time in external format. In the case of testingwhether one date is before another, this would be the \base\ date.  | 
 | PDT | LITERAL |  | true | This is the post date or benchmark date in external format.  In the example of testing if one date is earlier/less than another, this would be the latter date.  | 
 | FLAG | LITERAL |  | true | This input parm indicates the type of comparison to be done. -2 means PDT must be <  IDT (The DAY only)-1 means PDT must be <  IDT (The DAY&TIME)0 means PDT must be =  IDT (The DAY&TIME)1 means PDT must be >  IDT (The DAY&TIME)2 means PDT must be > IDT (The DAY only) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

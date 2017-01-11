@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MDRPCOT](http://code.osehra.org/dox/Routine_MDRPCOT_source.html)
  return value type | GLOBAL ARRAY
  description | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

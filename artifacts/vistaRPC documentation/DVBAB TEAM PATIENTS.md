@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TEAM ID | LITERAL | 16 | true | The record number from the OE/RR Team File (#100.21). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

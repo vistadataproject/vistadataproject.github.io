@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | VAL | LITERAL | 10 | true | This is the value passed to the parameter ORWRP ADHOC LOOKUP  0: Name  1: Abbreviation  2: Display Header | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

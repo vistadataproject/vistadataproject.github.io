@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Is code active on the given date?
  Leading comment lines | Remote procedure:  ORWPCE ACTIVE CODE,ORCODE = ICD or CPT code to be checked,ORAPP  = "ICD", "GMPX" or "CHP",ORDATE = Date to be checked (defaults to current date)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

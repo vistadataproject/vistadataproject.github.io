@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | IFN | LITERAL | 30 | true | Required if REF is a file (or subfile) numberIf REF is the top level file number, then IFN is the  IEN of the recordIf REF is a subdictionary number for a multiple, then  IFN must be the appropriate IENS for that multiple  level | 
 | FLAG | LITERAL | 2 | true | Flag for locking or unlocking  1: Lock -1: Unlock Defaults to 1 | 
 | FUN | LITERAL | 1 | true | Flag to indicate if the call is extrinsic or RPC   1: Extrinsic  0: RPC | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

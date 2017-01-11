@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CLINICAL REMINDER IEN | LITERAL | 16 | true | Array of clinical reminder iens [#811.9] to be checked. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

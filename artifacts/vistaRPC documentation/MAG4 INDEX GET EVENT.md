@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | CLS | LITERAL | 90 | true | This parameter is a ',' (comma) delimited string of classesonly those index types, that match a 'class' in the stringwill be returned in the array | 
 | FLGS | LITERAL | 40 | true | ;  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String | 
 | SPEC | LITERAL | 60 | true | This is a comma delimited list of Specialty/SubSpecialtiesOnly Procedure/Events that are associated with one of these will bereturned in the list.If a Procedure/Event is not associated with any Specialty/Subspecialtiesit is considered valid for all, and will be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

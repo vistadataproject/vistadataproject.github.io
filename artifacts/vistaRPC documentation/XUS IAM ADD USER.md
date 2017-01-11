@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | DOB | LITERAL | 20 | true | DOB field (#5) in the NEW PERSON file (#200) to match the user's Date of Birth. | 
 | STATION | LITERAL | 20 | true | DIVISION field (#.01) of the DIVISION multiple (#16) in the NEW PERSON file (#200). The name of a Division that this user may sign on to. The Division should be an active treating facility. | 
 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

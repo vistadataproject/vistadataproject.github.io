@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TIUDA | LIST |  | true | This is a list of records which are to be deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | TDATE | LITERAL |  |  | Date to end Outpatients search | 
 | CLINLST | LIST |  |  | List of Outpatient clinic stops  | 
 | ICNLST | LIST |  |  | List of ICNs to search from | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 250 | true | DATA - required - ~p2~p3~~~p6 p2 := required - parameter name p3 := optional - instance p6 := optional - format code - default=Q, anything else besides Q or                   <null> will be treated as code B | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

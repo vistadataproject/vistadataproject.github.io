@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
  return value type | SINGLE VALUE
  description | Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

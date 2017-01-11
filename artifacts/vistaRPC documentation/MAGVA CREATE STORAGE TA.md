@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT\) = Pointer to ARTIFACT file (#2006.916) MAGPARAM(\STORAGE PROVIDER\) = Pointer to STORAGE PROVIDER file (#2006.917) MAGPARAM(\SUCCEEDED\) = 0/1 MAGPARAM(\TRANSACTION TYPE\) =  MAGPARAM(\INITIATING APPLICATION\) =  | 
 | MAGMSG | LIST |  | true | MAGMSG(1..n) = MESSAGE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

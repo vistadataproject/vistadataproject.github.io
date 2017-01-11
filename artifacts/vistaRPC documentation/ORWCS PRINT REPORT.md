@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | DEVICE | LITERAL | 100 | true | Name of the device where the report should print.Format: <device name> ; <right margin> ; <page length>Right margin and page length are optional. | 
 | DFN | LITERAL | 20 | true | Internal entry number of entry in the Patient file. | 
 | CONSULT ID | LITERAL | 20 | true | Identification number of the consult. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

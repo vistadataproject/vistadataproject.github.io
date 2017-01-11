@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Return a visit given a patient, location, and date/time
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

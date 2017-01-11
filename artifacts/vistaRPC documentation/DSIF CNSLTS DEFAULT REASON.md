@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DSIFSVC | LITERAL |  | true | This is the IEN for the Consult Service. | 
 | DSIFDFN | LITERAL |  |  | This is the Patient DFN. | 
 | DSIFRES | LITERAL |  |  | This is the RESOLVE variable, which indicates boilerplates should be used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | BATCH IEN | LITERAL | 15 | true |  | 
 | REJECT LINES | LIST | 80 | true | B3 Batches: REJL(line)=Pmt ID^Invoice^reject reason (2-40 characters) B9 Batches: REJL(1)=Invoice^reject reason (2-40 characters)] PMT ID = Patient IEN;Vendor IEN;Date of Serice IEN;Service provided IEN | 
 | REJECT ALL | LITERAL | 1 | true | 1 (yes) 0 (no) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

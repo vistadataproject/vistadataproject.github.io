@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PATDFN | LITERAL |  | true |  | 
 | BUFIEN | LITERAL |  | true |  | 
 | DATE | LITERAL |  | true | DATE ENTERED | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

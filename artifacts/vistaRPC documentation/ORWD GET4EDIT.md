@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | return responses in format that can be used by dialog
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

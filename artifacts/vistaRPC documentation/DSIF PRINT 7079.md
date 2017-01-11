@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 30 | true |  | 
 | AUTHIEN | LITERAL | 30 | true |  | 
 | DEVICE | LITERAL | 80 | true | Pass in the VistA device name used to print the 7079. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

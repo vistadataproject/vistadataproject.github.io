@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | VSIT | LITERAL |  | true | This is the record number (IEN) of the VISIT in the VISIT FILE. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

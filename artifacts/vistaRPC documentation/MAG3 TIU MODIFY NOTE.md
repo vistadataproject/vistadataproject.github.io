@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | MAGES | LITERAL | 90 | true | The encrypted Electronic Signature | 
 | MAGESBY | LITERAL | 90 | true |  The DUZ of the Signer (Defaults to DUZ) | 
 | MAGTEXT | LIST | 3200 | true | Array of Text to add to the Note. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

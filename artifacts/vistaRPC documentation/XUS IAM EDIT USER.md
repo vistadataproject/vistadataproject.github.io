@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INARRY | LIST | 240 | true | The IAM RSD is unclear what the input data is or how it will be formatted. | 
 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ORAMDFN | LITERAL |  | true | Patient ID. | 
 | ORAMCL | LITERAL |  | true | This is the internal entry number of the Clinic in the Hospital Location File (#44). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

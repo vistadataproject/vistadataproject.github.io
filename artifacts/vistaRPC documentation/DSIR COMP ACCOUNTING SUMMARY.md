@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PATIENT | LITERAL | 99 | true | The DFN of the selected patient. | 
 | START DATE | LITERAL | 7 | true | This is the FileMan date to start the report.  If it is null the routine will start at the begining. | 
 | END DATE | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

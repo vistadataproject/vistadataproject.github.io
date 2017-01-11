@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
 | ORDERS | LIST |  | true | This is a list of order identifiers in the form ORV:order#;action#, whereorder# is the pointer to the Orders file #100 and action# is the IEN inthe Order Actions sub-file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

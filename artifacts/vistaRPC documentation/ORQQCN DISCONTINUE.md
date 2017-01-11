@@ -32,3 +32,8 @@ title: VISTA RPC documentation
 | DATE OF ACTION | LITERAL | 16 | true | Date of the discontinuance/denial of the consult. | 
 | ACTION TYPE | LITERAL | 16 | true | 'DC' for discontinue, 'DY' for deny | 
 | COMMENTS | WORD PROCESSING |  | true | Array of comments related to the discontinuance/denial of the consult. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

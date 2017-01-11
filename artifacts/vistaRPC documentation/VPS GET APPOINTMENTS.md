@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | VPSQUEUE | LITERAL | 3 | true | Unique Queue ID representing Vecna Appointment Queue. | 
 | VPSFRDT | LITERAL | 14 | true | Appointment From Date | 
 | VPSTODT | LITERAL | 14 | true | Appointment Through Date | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

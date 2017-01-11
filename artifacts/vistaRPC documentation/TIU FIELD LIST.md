@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Long list of Template Fields
  Leading comment lines | .Y=returned list, FROM=text to $O from, DIR=$O direction
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

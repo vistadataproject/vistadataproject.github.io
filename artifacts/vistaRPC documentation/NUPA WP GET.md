@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL |  | true | File to get the data from, in ^FILE(subscript, format. | 
 | IEN | LITERAL |  | true | Line number for the data to be put into, in number_\,\ formatsuch as \1,\. | 
 | NODE | LITERAL |  | true | Node in the global to pull the data from, such as node 2. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

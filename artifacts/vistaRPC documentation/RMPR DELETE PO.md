@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR9CA](http://code.osehra.org/dox/Routine_RMPR9CA_source.html)
  return value type | ARRAY
  description | RPC to delete record in file 664.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

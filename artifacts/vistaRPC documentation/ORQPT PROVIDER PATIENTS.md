@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | USER ID | LITERAL | 16 | true | The record number of the user/provider from the New Person File (#200) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

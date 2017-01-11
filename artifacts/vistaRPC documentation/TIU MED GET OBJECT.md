@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDFN | LITERAL |  | true | Patient IEN. | 
 | TIUOBJ | LITERAL |  | true | Name of the TIU Object. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

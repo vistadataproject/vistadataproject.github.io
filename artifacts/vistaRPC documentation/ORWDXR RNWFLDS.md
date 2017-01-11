@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return fields for renew action
  Leading comment lines | LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

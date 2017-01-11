@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return prompting info for generic dialog
  Leading comment lines | LST(n)=ID^REQ^HID^PROMPT^TYPE^DOMAIN^DEFAULT^IDFLT^HELP^XREF^SCR
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DSIFCIEN | LITERAL |  | true | This is the Consult IEN to which needs to be resubmitted. | 
 | DSIFEDIT | LIST |  | true | This is the array of comments associated with the resubmit request. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

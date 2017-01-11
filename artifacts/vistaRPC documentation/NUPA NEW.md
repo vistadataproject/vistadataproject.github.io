@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DIC | LITERAL |  | true | File to add the entry to. | 
 | ENTRY | LITERAL |  | true | Data to add to the file. | 
 | three | LITERAL |  | true | Not currently used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

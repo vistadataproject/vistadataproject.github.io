@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | STOP | LITERAL | 20 | true | The date/time at which to end searching for data [optional]. | 
 | MAX | LITERAL | 7 | true | The maximum number of items to return per data type [optional]. | 
 | ITEM | LITERAL | 30 | true | The identifier of a single item to return [optional, but TYPE mustalso be defined when used]. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

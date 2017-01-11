@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FROMDT | LITERAL | 7 | true | Pass in FM date of Authorizations to start search  | 
 | TODATE | LITERAL | 7 | true | Pass in FM date of Authorizations to end search | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

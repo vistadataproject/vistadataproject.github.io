@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return default patient list source (T, W, C, P, S)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

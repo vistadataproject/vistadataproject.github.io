@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL |  | true | File to insert the data into, in ^FILE(subscript, format. | 
 | LINE | LITERAL |  | true | Line number for the data to be put into, such as 1, 2, or 3. | 
 | DATA | LITERAL |  | true | Data (text) to insert into the global. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

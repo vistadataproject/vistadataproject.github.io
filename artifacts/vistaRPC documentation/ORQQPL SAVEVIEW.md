@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | GMPLVIEW | LITERAL | 64 | true | See field 125.nn of the NEW PERSON file for format of the first piece,related to inpatient/outpatient and clinics/services. Piece 2 is in the format 'a;b;c;d'. The first two ';' pieces are ignored.The third piece represents the status of the problems to be displayed(A,I,R,B) for Active, Inactive, Removed, and Both Active/Inactive.  The4th ';' piece is a 1 to show comments, and a 0 to hide comments.  Seeparameter ORCH CONTEXT PROBLEMS for description. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

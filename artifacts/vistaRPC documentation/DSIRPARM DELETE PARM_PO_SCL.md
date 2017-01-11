@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 99 | true | IEN to file specified in FIL parameter - Required | 
 | FIL | LITERAL | 9 | true | Decimal value of the file to delete entry - Required        19620.701 = DSIR FACILITY PARAMETERS        19620.702 = DSIR ROI PRINT ORDER        19620.703 = DSIR SENSITIVE CLINIC | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

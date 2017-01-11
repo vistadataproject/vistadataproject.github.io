@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SCANVAL | LITERAL | 30 | true | This is the data received from the client scanning the medication. | 
 | PSBDIEN | LITERAL |  | true | Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client. | 
 | PSBTAB | LITERAL | 20 | true | This is the current tab the user is on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

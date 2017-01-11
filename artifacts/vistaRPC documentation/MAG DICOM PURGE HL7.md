@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CUTOFF | LITERAL | 20 | true | The value of this parameter is a (FileMan) date.This date indicates the cut-off date before which all messagesare to be purged. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

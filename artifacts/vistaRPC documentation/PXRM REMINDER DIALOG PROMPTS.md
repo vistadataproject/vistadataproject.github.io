@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DIALOG ELEMENT IEN | LITERAL | 16 | true | Reminder dialog element identifier (ien) from REMINDER DIALOG file [#801.41] | 
 | CURRENT/HISTORICAL | LITERAL | 16 | true | Used only for taxonomy dialogs.   0 - Current Diagnosis/Procedure 1 - Historical Diagnosis/Procedure | 
 | DIALOG LINE CPT/POV | LITERAL | 3 | true | For taxonomy dialog the type of finding (POV/CPT) for this dialog line | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

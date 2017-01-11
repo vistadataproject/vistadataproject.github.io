@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAMS | LITERAL | 120 | true | TXID ^ DFN ^ DTI ^ CNI ^ RARPT ^ MAGIENTXID: Required; designates action to takeDFN...RARPT: standard Vistarad Exam Identifier string (keys to  RAD Exam file and Report file).MAGIEN: Image IEN to identify the exam (Image or Group ien OK) | 
 | DATA | LIST | 120 |  | List of image identifiers with optional Presentation State UIDsin format IMGIEN^PS_UID. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

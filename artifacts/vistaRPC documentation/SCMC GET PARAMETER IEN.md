@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [SCUTBK4](http://code.osehra.org/dox/Routine_SCUTBK4_source.html)
  return value type | SINGLE VALUE
  description | This RPC returns the IEN of the first and ONLY entry in the 404.91 parameterfile.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

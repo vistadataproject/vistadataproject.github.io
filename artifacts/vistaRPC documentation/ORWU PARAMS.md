@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return a list of parameter values
  Leading comment lines | call assumes current user, default entities, multiple instances
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

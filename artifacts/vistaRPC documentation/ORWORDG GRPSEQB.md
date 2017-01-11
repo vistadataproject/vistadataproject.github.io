@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Leading comment lines | Call GRPSEQ, format for broker:,Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

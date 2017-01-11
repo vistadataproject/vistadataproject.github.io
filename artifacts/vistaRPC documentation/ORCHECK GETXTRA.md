@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | get extra text for an order check
  Leading comment lines | ^TMP($J,"ORK XTRA TXT") stores the text of order checks that are longer than a single line (reminder order checks)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

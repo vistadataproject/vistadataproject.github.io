@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user,I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

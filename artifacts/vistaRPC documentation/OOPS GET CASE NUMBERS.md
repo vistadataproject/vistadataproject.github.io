@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | PSTAT | LITERAL |  |  | This parameter determines which PERSONNEL STATUS's should be included in thelookup criteria.  This parameter is determined by the user and the format isas follows:  PSTAT = #^#^#^#^#^    for every Personnel Status          0^            all personnel status's should be included          1^            employee          2^            volunteer          3^            contractor          4^            visitor          5^            other          6^            non-paid employee          7^            medical student          8^            nursing student          9^            other student         10^            resident physician | 
 | CALL | LITERAL |  |  | This parameter passes in the menu that the broker call was made from.  CALL = E  employee menu         S  supervisor menu         H  employee health menu         O  safety officer menu         W  workers comp menu         U  union menu | 
 | OPT | LITERAL |  |  | This parameter passes in the option that the broker call was made from, ifneeded.  It is required to determine which fields should be availble for editing in the CA1, CA2, and 2162 forms. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

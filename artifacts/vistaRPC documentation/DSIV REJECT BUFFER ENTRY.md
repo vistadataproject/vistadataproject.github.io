@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IBBUFDA | LITERAL | 16 | true | INSURANCE BUFFER file (#355.33) internal entry number to beprocessed (required). | 
 | IVMREPTR | LITERAL | 4 | true | Internal entry number in IVM REASONS FOR NOT UPLOADING INSURANCEfile (#301.91) if applicable. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

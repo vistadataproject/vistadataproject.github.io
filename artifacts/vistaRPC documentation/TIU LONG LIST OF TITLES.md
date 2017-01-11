@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | CLASS | LITERAL |  | true | This is a pointer to the CLASS in the Document Definition File (#8925.1)from which the application intends to allow selection of TITLES. | 
 | FROM | LITERAL |  | true | This is the reference title from which the longlist is scrolling. | 
 | DIR | LITERAL |  |  | This is the direction in which the longlist is scrolling from thereference title. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

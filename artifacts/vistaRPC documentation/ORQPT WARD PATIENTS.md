@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | WARD ID | LITERAL | 16 | true | The record number of the ward from the Ward Location File (#42). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | MEDTYPE | LITERAL | 16 | true | Media Type used to transport the objects:  Direct Import,  Network Import, Staged Media, DICOM Correct. | 
 | MEDVALID | LITERAL | 16 | true | Validation status of the media import event:    0 = VALID MEDIA -1 = DICOMDIR MISSING -2 = DICOMDIR INVALID | 
 | MEDVMSG | LITERAL | 220 | true | Description of the validation status of the media import event. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

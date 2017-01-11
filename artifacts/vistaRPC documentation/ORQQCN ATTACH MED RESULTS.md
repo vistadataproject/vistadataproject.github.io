@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | date |  |  |  |  | 
 | Resp Person | LITERAL | 16 |  | Pointer to file 200, for the person attaching the result. | 
 | Alerts to | LITERAL | 254 |  | Semicolon-delimited list of user DUZs to send alerts to for this action. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

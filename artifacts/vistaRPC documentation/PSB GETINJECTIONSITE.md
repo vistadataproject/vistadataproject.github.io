@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | TIME | LITERAL |  | true | A time range, in hours, to search backwards through the BCMA MEDICATION LOG file #53.79 for injection site data.  | 
 | MAX | LITERAL |  | true | The maximum number of injection site items to return within the Time Range specified. | 
 | PSBOI | LITERAL |  | true | Orderable Item IEN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

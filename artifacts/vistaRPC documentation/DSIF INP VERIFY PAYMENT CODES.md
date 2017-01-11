@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DSIFAUTH | LITERAL |  | true | This is the pointer to the 7078/583 you wish to verify the ICD Diagnosis and Procedure codes for. (Required). | 
 | DATA | LIST |  | true | This is the array of codes you wish to verify. The array should look like this: ; DATA(I)=DIAG or PROC or ADMIT^# (1-25)^External Value | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

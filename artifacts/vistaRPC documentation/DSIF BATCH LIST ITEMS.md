@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | BATCH | LITERAL | 99 | true | Pass in the number of an existing batch number (NOT IEN of Batch). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

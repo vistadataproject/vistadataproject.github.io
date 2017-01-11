@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RPTCODE | LITERAL |  | true | Code of the report (value of the CODE field of the report descriptor inthe ROR REPORT file). | 
 | TYPE | LITERAL |  |  | The TYPE parameter defines the type of requested stylesheet:   1  Report preview (default)  2  Comma-separated output  3  Printer output | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 50 | true | Patient IEN. | 
 | ORLST | LIST | 255 | true | List of Orders. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of theregistry parameters record in the ROR REGISTRY PARAMETERS file #798.1).The output list will contain log activities associated with the registrydefined by this parameter. | 
 | STDT | LITERAL |  |  | The STDT parameter defines the start date for the search of the log activities. By default (if $G(STDT)'>0), the search starts from the earliest record of the ROR LOG file. | 
 | ENDT | LITERAL |  |  | The ENDT parameter defines the end date for the search of the logactivities. By default (if $G(ENDT)'>0), the search continues to the lastrecord of the ROR LOG file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

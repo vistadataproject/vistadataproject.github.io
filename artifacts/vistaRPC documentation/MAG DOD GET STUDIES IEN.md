@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | REQDFN | LITERAL | 50 | true | This parameter is Patient Number who owns the images. | 
 | IMGLESS | LITERAL | 1 | true | This parameter is an indicator whether to get only Study-Level or include all images.Pass \1\ to get only Study-Level data.Pass null or empty string to include all images. | 
 | FLAGS | LITERAL | 1 | true | This parameter is an indicator whether to include or exclude \Deleted\ Images.Pass \D\ to include Deleted Images.Pass null or empty string to exclude Deleted Images | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

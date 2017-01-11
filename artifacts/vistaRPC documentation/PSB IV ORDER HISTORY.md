@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | Patients IEN number | 
 | PSBORD | LITERAL |  | true | Order number from Inpatient Medications | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

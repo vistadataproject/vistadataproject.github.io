@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true | MAGPARAM(\ACCESSION NUMBER\)MAGPARAM(\SITE\)MAGPARAM(\INSTRUMENT\)MAGPARAM(\TYPE\) = \STUDY\ or \SERIES\ or \SOP\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

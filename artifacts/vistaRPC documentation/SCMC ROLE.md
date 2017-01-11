@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SCPATCH | LITERAL | 60 | true | PatchVersion ^ ClientVersion | 
 | ROLE | LITERAL |  | true | ROLE^TEAM POSITION | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL |  | true | Optional pointer to the NEW PERSON FILE (#200). If user is unspecified the current user will be assumed. | 
 | DATE | LITERAL |  | true | Optional FileMan formatted date (time). If none is provided the current date is assumed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

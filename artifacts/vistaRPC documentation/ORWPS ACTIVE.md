@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | USER | LITERAL |  | true |  | 
 | VIEW | LITERAL |  | true |  | 
 | UPDATE | LITERAL |  | true | This parameter is use to determine if the parameter that stored the user view preference is updated. This should be set to 1 if called from CPRS and set to 0 if called from another application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

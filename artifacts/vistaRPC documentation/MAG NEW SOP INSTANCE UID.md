@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | OLD | LITERAL | 64 | true | The value of this parameter is a string.This value represents the original SOP Instance UID of an imagethat is to be exported. | 
 | NEW | LITERAL | 64 | true | The value of this parameter is a string.This value represents the new SOP Instance UID that is tobe assigned to the corrected image that is to be exported. | 
 | IMAGE | LITERAL | 10 | true | The value of this parameter is anumber. This number is a pointer that identifiesan image (pointer to file # 2005). When this parameter is specified, it identifies theimage to which the new UID is intended to be added. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

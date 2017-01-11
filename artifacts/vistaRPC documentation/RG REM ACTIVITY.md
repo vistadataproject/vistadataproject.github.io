@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL | 16 | true | Integration Control Number (ICN) for patient on whom data is requested. | 
 | SSN | LITERAL | 9 | true | Social Security Number (SSN) for patient on whom data is requested. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

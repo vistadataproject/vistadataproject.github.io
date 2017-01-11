@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PSBWHAT | LIST |  | true | B = Returns Build Version for packages by NamespaceP = Returns if Patch is installed | 
 | PSBDATA | LIST |  | true | Build/Package namespace (i.e. PSB) or Patch Number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

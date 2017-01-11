@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 99 | true | Internal Entry Number to file #19620.12 - DSIR NEW REQUESTOR | 
 | FLG | LITERAL | 1 | true | Inactive Flag (Optional 0 = Active, 1 = Inactive) [Default - 0] | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

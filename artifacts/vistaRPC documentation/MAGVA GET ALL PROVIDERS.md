@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGVAG01](http://code.osehra.org/dox/Routine_MAGVAG01_source.html)
  return value type | ARRAY
  description | Returns all records in STORAGE PPROVIDER file (#2006.917)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

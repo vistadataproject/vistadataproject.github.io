@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMETERS | LIST | 512 | true | This array contains the following parameters necessary to call VAL^DIE:    - \FILE\  - file number    - \IENS\  - internal entry numbers    - \IENS\  - internal entry numbers    - \VALUE\ - user input value | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

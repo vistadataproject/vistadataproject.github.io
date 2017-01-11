@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | GMPROV |  |  |  |  | 
 | GMPVAMC | LITERAL |  |  |  | 
 | ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

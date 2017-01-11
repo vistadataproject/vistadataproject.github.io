@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | FBIN | LIST | 999 | true | Pass in an array formatted as follows:  ; FBIN(.01)=BATCH NUMBER ; FBIN(1)=OBLIGATION NUMBER  (DO NOT SEND STATION NUMBER WITH OBLIGATION \500-C09045\, PASS ONLY \C09045\) ; FBIN(3)=DATE OPENED | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

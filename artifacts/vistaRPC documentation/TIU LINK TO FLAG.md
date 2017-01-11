@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | PRFIEN | LITERAL |  | true | Flag IEN (26.11 or 26.15) | 
 | ACTIENT | LITERAL |  | true | PRF Assignment History IEN (26.14) | 
 | DFN | LITERAL |  | true | Patient IEN (File 2) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

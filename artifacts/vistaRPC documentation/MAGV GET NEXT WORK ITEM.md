@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | UPDUSR | LITERAL |  |  | This is the user that has updated the work item entry. | 
 | UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item entry. | 
 | PLACID | LITERAL | 30 |  | The location name associated with the work item. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

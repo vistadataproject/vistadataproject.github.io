@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL |  | true | The only input is the IEN of the ASISTS case number you wish to retrieve Witness information from.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

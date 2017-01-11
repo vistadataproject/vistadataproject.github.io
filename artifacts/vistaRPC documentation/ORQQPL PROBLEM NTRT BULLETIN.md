@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORTERM | LITERAL | 255 | true | This is the unresolved term for which an NTRT Request should be filed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

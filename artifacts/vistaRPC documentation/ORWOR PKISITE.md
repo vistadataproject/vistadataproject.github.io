@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | RPC determines if PKI is turned on at the site
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

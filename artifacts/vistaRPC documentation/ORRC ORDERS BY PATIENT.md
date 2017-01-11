@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | DETAILS | LITERAL |  |  | This flag indicates whether to return the details with each order (true),or just the list of order ID's (false). | 
 | START | LITERAL |  | true | This is the date to start searching for orders, in the form YYYMMDDHHMMSS. | 
 | STOP | LITERAL |  | true | This is the date to stop searching for orders, in the form YYYMMDDHHMMSS. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

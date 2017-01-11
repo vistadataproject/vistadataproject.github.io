@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMS | LIST |  |  | PARAMS(\stationNumber\)=station number for division/institutionPARAMS(\maxNumberPatients\)=Number between 20 and 100PARAMS(\patientsPerPage\)=Number between 5 and 20PARAMS(\patientType\)=Disabled or EnabledPARAMS(\gender\)=Disabled or EnabledPARAMS(\primaryEligibility\)=Disabled or EnabledPARAMS(\roomBed\)=Disabled or EnabledPARAMS(\serviceConnected\)=Disabled or EnabledPARAMS(\veteranStatus\)=Disabled or EnabledPARAMS(\ward\)=Disabled or EnabledPARAMS(\veteranImage\)=Disabled or EnabledPARAMS(\veteranStatus\)=Disabled or EnabledPARAMS(\ward\)=Disabled or EnabledPARAMS(\veteranImage\)=Disabled or Enabled | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return the maximum number of refills
  Leading comment lines | PAT=Patient DFN, DRG=ptr50, SUP=days supply, OI=orderable item,VAL: maximum refills allowed
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

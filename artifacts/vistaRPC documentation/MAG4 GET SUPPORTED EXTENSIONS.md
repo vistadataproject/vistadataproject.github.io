@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGSFT](http://code.osehra.org/dox/Routine_MAGGSFT_source.html)
  return value type | ARRAY
  description | Returns a list of supported file extensions, used in Imaging.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | STATION NUMBER | LITERAL | 9 | true |  Station number lookup, using \D\ cross reference (FIELD 99) 1st, then by name field. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CPT | LITERAL | 7 | true | This is the cpt code name (.01) value in the CPT file (#81) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

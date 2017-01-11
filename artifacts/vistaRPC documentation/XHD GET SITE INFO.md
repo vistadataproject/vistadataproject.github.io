@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [XHDLSITE](http://code.osehra.org/dox/Routine_XHDLSITE_source.html)
  return value type | SINGLE VALUE
  description | Returns Division and Integration names and IDs.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

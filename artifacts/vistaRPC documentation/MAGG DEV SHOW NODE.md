@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NODE | LITERAL | 30 | true | This is the node of file ^MAG(2005,NODE to be displayed in the window. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

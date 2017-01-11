@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PROV | LITERAL | 32 | true | Provider IEN. | 
 | TYP | LITERAL | 1 | true | Type returns either S-system,U-user/provider,A-Both. | 
 | CAT | LITERAL | 1 | true | Category of the canned statements.1-Radiographic Findings2-Summary Assessment3-Treatment Plan4-Patient Education5-Disposition | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

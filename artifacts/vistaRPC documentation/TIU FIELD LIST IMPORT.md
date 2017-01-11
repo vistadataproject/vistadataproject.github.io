@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Calls the import process to import all of the fields in the
  Leading comment lines | ^TMP global for this process.  Result contains a list of NAME^X^RENAME,strings.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

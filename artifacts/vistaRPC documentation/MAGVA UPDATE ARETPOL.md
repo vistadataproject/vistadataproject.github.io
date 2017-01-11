@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\PK\) = IEN of record in  ARTIFACT RETENTION POLICY file (#2006.921) MAGPARAM(\ACTIVE\) = 0/1 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

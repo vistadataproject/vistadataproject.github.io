@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
  return value type | GLOBAL ARRAY
  description | Gets the possible responses for various components in the GUIs.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

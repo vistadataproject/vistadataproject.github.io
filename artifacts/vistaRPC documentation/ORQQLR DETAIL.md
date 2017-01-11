@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT | LITERAL | 16 | true | Patient identifier (DFN) from Patient File [#2] | 
 | ORDER NUMBER | LITERAL | 16 | true | OE/RR order number from the Orders file [#100]. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

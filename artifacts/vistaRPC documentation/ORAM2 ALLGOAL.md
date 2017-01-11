@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DAYS | LITERAL |  |  | NUMBER OF DAYS BACK TO INCLUDE A PT VISIT | 
 | CLINIC | LITERAL |  |  | IEN of Clinic in Hospital Location File. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

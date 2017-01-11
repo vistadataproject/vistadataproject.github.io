@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FBN | LITERAL | 10 | true | Batch IEN that needs to be reprocessed | 
 | FBACT | LITERAL | 1 | true | \R\ - Retransmit, \F\ - Reject | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

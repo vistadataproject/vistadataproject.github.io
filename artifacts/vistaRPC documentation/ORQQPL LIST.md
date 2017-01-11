@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT ID | LITERAL | 16 | true | The record number of the patient from the Patient FIle (#2). | 
 | STATUS | LITERAL | 2 |  | The status of the problems to retrieve. A = Active problems only, I = Inactive problems only, \\ or undefined = all problems regardless ofstatus. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

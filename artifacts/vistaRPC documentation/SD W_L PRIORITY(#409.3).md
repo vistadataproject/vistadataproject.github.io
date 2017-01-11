@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [SDWLRP3](http://code.osehra.org/dox/Routine_SDWLRP3_source.html)
  return value type | ARRAY
  description | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

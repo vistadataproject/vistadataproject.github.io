@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SEND | LIST | 200 | true | This is a list of name-value pairs of field names and exact match values. | 
 | FILE | LITERAL | 15 | true | This is the number of the FileMan file to be searched (e.g., 2005.61 forIMAGING PROCEDURE REFERENCE). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FUND CONTROL POINT | LITERAL | 99 | true | Pass in the control point used to return current obligations. | 
 | FBYEAR | LITERAL | 4 | true | Years to search for existing obligations, default is current year and last year.  If you input 3 it will display current year and go back 3 years. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

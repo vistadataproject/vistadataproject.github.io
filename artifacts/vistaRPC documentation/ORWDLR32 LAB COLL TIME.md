@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Collection Time | LITERAL | 16 | true | Valid FileMan data/time string to check whether it is a valid labcollect time. | 
 | Location | LITERAL | 16 | true | Pointer to Hospital Location | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | RETURNS LIST OF RADIOLOGISTS WHO MAY APPROVE A
  Leading comment lines | PROCEDURE WHEN REQUIRED
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

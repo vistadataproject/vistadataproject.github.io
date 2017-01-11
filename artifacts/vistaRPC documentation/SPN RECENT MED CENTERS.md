@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL |  |  | ICN of the patient to process | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

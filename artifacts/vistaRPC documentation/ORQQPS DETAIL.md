@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT ID | LITERAL | 16 | true | Patient identifier from Patient file [#2]. | 
 | MEDICATION ID | LITERAL | 20 | true | Medication identifier as drawn from the medication consdensed list (ORQQPSLIST).  The first piece of the condensed list.  E.g. 31945R;O, 231156U;I,944382P;O | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

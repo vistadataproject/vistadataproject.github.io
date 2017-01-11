@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
 | SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) is optional.  Default value is 0.  I SRC=1 then all level III codes to be returned. | 
 | DFN | LITERAL | 14 | true | This is a pointer to the PATIENT file.  It is not used at this time. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

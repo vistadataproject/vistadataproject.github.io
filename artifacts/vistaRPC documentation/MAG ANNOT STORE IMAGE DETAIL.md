@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | SOURCE | LITERAL | 30 | true | Source of annotation, e.g.: Clinic display/capture or VistARad | 
 | DELETION | LITERAL | 3 |  | Annotation was deleted by super user. | 
 | VERSION | LITERAL | 30 | true | IMAGE GEAR VERSION (TOOLS), e.g.: 'IG16.3' | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

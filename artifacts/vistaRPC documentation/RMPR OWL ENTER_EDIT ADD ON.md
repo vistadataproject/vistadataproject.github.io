@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR29MG](http://code.osehra.org/dox/Routine_RMPR29MG_source.html)
  return value type | ARRAY
  description | GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

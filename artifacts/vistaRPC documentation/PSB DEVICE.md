@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FROM | LITERAL |  |  | Text to $O from | 
 | DIR | LITERAL | 1 |  | $O Direction | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

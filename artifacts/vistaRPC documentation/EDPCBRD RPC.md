@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SESS | LITERAL |  | true | This identifies the user and site that are passed in from the Java middle tier.  In cases when the display board is running with a proxy user (in kiosk mode), the SSL configuration will determine the user and site. | 
 | PARAMS | LIST |  |  | This is a list of parameters that were passed to the Java middle tier via an HTTP Post message. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

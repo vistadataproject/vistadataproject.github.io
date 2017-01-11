@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PROV | LITERAL | 15 | true | The lookup value entered by the user to find all patients with the entered provider in the format p1^p2.  P1 is provider ID and p2 is provider type (P or S). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

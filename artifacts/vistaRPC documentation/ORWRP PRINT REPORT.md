@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | HEALTH SUMMARY TYPE | LITERAL | 20 | true | Internal entry number of entry in the HEALTH SUMMARY TYPEfile.This parameter is only required for Health Summary reports. | 
 | DATE RANGE | LITERAL | 5 | true | This parameter indicates the number of days from TODAYthat the report should search for information.This parameter is required for vital reports. | 
 | EXAM ID | LITERAL | 20 | true | Identification number of the exam. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | MSGTAGS | LIST |  |  | This is an array of tag names and values assigned to a work item. Tagnames and values may be used to look up a work item. | 
 | CRTUSER | LITERAL |  |  | This is the user that created the work item. | 
 | CRTAPP | LITERAL |  |  | This is the application that created the work item. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

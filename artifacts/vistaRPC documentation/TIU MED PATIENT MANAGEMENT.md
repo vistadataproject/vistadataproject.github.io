@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
  return value type | SINGLE VALUE
  description | Returns the user's level of patient importing via manual entry.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

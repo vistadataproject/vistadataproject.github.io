@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | REPORT | LITERAL | 60 | true | Report Name for file #8973.3 (CP REPORT). Either field #.01 (NAME) orfield #2.01 (DISPLAY NAME) can be used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

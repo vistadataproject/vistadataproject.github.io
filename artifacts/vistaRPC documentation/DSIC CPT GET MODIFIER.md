@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MOD | LITERAL | 5 | true | This is the ifn or name of the MODIFIER, file 81.3 | 
 | CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIFIEN | LITERAL |  | true | This is the Consult Service IEN you wish to retrieve Provisional Diagnosis requirements for. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

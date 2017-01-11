@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGTAU](http://code.osehra.org/dox/Routine_MAGGTAU_source.html)
  return value type | SINGLE VALUE
  description | Tracks the time of the Imaging session.Kills TMP globals, cleans up.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL | 1 | true | 1 equals HEPC Registry 2 equals HIV Registry | 
 | NUMBER | LITERAL | 10 | true | DEPRECATED | 
 | FROM | LITERAL | 10 | true | DEPRECATED | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

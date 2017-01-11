@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | MINCOST | LITERAL |  |  | Minimum dollar cost of procedures to display:  (0-999) | 
 | HIUSERS | LITERAL |  |  | Number of highest users to identify:  (0-100) | 
 | PTLIST | LIST |  |  | DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2726^2800^3504^3726^3793^4072 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

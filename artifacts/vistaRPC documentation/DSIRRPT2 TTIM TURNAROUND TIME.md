@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DIVL | LITERAL | 240 | true | This is a list of division numbers delimited with a ^. | 
 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
 | ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

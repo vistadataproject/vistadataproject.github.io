@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | AUOTLINK TYPE | LITERAL | 20 | true | Possible types of autolinks are the following: - Ward - Specialty - Room-Bed - Practitioner - Clinic | 
 | AUTOLINK IEN | LITERAL | 20 | true | Internal entry number of autoLink entity.For example, if the entity is a ward, this parameter containsthe entry number in the Ward Loaction file for the entity. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

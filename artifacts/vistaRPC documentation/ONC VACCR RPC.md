@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DATEUSED | LITERAL | 1 | true | DATEUSED specifies the date field which will be searched for casesto be extracted: 1 = DATE CASE COMPLETED2 = DATE CASE LAST CHANGED | 
 | START | LITERAL | 7 | true | This parameter specifies the start date of DATE parameter. | 
 | END | LITERAL | 7 | true | This parameter specifies the end date of DATE parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

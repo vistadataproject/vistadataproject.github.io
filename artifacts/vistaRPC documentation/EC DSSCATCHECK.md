@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ECARY | LITERAL |  | true | Variable ECARY contains the DSS Unit ien (file #724) that will be checked to determine if category exist. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

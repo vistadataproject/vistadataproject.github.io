@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | HOSTNAME | LITERAL |  | true | DICOM Gateway host name | 
 | LOCATION | LITERAL |  | true | Identifies the institution where this DICOM Gateway computer resides | 
 | MAGDATA | LIST |  | true | Data in DICOM GATEWAY MODALITY DICTIONARY file (#2006.912) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

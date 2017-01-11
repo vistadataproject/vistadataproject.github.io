@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CLIN | LITERAL | 30 | true | CLIN contains the name of the selected clinic from the Hospital Locationfile (#44). | 
 | BDATE | LITERAL | 30 | true | BDATE contains TODAY, TOMORROW, YESTERDAY, PAST WEEK or PAST MONTH. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

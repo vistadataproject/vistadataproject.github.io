@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ien | LITERAL | 1 | true | The internal entry number of the image entry to be removed. | 
 | IEN | LITERAL |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

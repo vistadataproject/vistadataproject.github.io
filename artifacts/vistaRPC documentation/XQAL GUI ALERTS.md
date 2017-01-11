@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST |  | true | This is the only input parameter into the ENTRY tag. DATA is subscripted,and the subscript contains the actual variable name (and may be a globalreference), while the value for the variable is the value associated withthat DATA element. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

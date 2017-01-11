@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return list of remote facilities for patient
  Leading comment lines | Check to see if CIRN PD/MPI installed
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

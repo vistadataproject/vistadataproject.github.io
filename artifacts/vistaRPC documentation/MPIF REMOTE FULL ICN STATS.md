@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MPIFFULL](http://code.osehra.org/dox/Routine_MPIFFULL_source.html)
  return value type | ARRAY
  description | This RPC will return the counts for National ICNs, Local ICNs, Merged records (-9 nodes), no ICNs, last run for remote ICN assignment and if full enumeration has completed.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FRDT | LITERAL | 7 | true | FRDT - From Date - FileMan Format - No time | 
 | TODT | LITERAL | 7 | true | TODT To Date - FileMan Format - No time | 
 | DIV | LITERAL | 15 | true | DIV - Division number/Location number - defaults to DUZ(2) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

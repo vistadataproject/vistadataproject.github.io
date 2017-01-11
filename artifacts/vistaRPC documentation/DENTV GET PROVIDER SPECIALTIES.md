@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DENTVRP5](http://code.osehra.org/dox/Routine_DENTVRP5_source.html)
  return value type | ARRAY
  description | Gets a list of all active Provider Specialties from file 220.52.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

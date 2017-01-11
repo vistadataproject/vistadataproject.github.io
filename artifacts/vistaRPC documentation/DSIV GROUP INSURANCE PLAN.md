@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | NAME | LITERAL | 30 | true | Group Insurance Plan name to match. | 
 | FIELDS | LITERAL | 245 |  | Field list to return in standard FileMan format.  Defaults to     \@;.03;.01I;.01\ | 
 | VDT | LITERAL | 14 |  | Visit Date.Time for policy limitations (coverage) data.Defaults to TODAY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

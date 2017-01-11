@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUTTL | LITERAL |  | true | TIU DOCUMENT DEFINITION (TITLE) IEN | 
 | DFN | LITERAL |  | true | Patient Pointer (file 2 IEN) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

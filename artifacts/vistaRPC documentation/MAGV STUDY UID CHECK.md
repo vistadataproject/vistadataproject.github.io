@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | SITE | LITERAL | 5 | true | SITE CODE (660) | 
 | INSTR | LITERAL | 30 | true | INSTRUMENT NAME | 
 | STUDYUID | LITERAL | 64 | true | STUDY UID | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

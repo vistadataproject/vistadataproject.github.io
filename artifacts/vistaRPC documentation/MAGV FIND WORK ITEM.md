@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | TAGS | LIST |  |  | This is an array of tag names and values. | 
 | STOPTAG | LITERAL |  |  | If this parameter is set then the tag list may be truncated. If a tagvalue matching the parameter value is returned then no more tags willbe returned. | 
 | MAXROWS | LITERAL |  |  | This parameter determines the number of work items to return.  If thisparameter is not set all matching work items will be sent.  If this parameteris defined it will determine the maximum number of work items to return | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

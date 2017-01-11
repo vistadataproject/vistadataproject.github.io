@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FEE PROGRAM | LITERAL | 3 | true |  | 
 | STARTDT | LITERAL | 7 | true | Start date to display batches, defaults to all batches if not entered | 
 | ENDDATE | LITERAL | 7 | true | Enter the end of the date rand\\ge to display default to all dates.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

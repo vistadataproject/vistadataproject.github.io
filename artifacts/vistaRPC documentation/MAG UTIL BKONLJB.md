@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPLAT | LITERAL | 15 | true | JB PLATTER LABEL(NAME) - UNDER OFFLINE IMAGES FILE (#2006.033) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

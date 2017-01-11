@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SINGLE | LITERAL | 256 | true | This parameter contains the file, field, and IEN of the data to be filed in the format FILE^FIELD^IEN. | 
 | DATA | LIST |  | true | This parameter contains the data to be filed in the multiple. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

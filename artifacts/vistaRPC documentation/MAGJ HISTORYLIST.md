@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAMS | LITERAL | 1 | true | TXID ^ TXDUZ ^ TXDIVTXID: Required; designates action to take: 1--Add entries; 2--Update/refresh data; 3--Delete entriesTXDUZ: Optional; if supplied, get data for another user (Read Only)TXDIV: Optional; if supplied, get data for another division (Read Only) | 
 | DATA | LIST | 30 |  | Exam ID \|\ Display data | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

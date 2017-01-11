@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGTKN | LITERAL | 256 | true | The Broker Security Enhancement (BSE) token to validate. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

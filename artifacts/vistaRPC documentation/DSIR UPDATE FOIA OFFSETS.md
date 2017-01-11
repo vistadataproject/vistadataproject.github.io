@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FOIA | LITERAL | 99 | true | This is the internal number from file 19620.3. | 
 | DATA | LIST | 99 | true | This is an array '^' delimited containing the following:         Field Number (File 19620.3) ^ Numeric Value to store Field numbers must be 100.02 thru 137.02 and all .02, the .01 fields are populated by the annual FOIA report. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

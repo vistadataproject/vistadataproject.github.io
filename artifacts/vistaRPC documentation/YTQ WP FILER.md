@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI1](http://code.osehra.org/dox/Routine_YTQAPI1_source.html)
  return value type | ARRAY
  description | Files single Word Processing Field.It REPLACES previous text if any with current text. Input:   FILEN= fileman file Number   IEN= internal record number (cannot create a new record)   FIELD= field to be modified (must be a WP field)   YS(1)= TEXT line 1   ...   YS(X)=TEXT line X Output:   [DATA] if no errors VS [ERROR]
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

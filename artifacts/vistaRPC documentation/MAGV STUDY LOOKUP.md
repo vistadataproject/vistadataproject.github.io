@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | PDOBDCM | LITERAL | 8 | true | Patient's Birth Date from DICOM header (0010,0030). | 
 | PSEXDCM | LITERAL | 1 | true | Patient's Sex from DICOM header (0010,0040). | 
 | PICNDCM | LITERAL | 16 | true | Patient's VA Integration Control Number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | ACTION | LITERAL | 1 | true | ACTION = 1 - Set DG Security Log entry         2 - Generate Sensitive Record Access bulletin         3 - Both | 
 | DFN | LITERAL |  | true | DFN = Patient (#2) file DFN | 
 | DGOPT | LITERAL |  | true | DGOPT = Option Name^Menu test         If not defined, OP^XQCHK identifies option or defaults to UNKNOWN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

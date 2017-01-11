@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | LOCATION | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

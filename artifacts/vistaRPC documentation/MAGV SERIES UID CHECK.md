@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | INSTR | LITERAL | 30 | true | INSTRUMENT NAME | 
 | STUDYUID | LITERAL | 64 | true | STUDY UID | 
 | SERIESUID | LITERAL | 64 | true | SERIES UID | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

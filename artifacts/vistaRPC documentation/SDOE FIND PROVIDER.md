@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ENCOUNTER IEN | LITERAL |  | true | This is the internal entry number of an entry in the OUTPATIENTENCOUNTER [#409.68 - ^SCE] file. | 
 | PRACTITIONER ID | LITERAL |  | true | This is the internal entry number of an entry in the NEW PERSON[#200 - ^VA(200)] file for a practitioner. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

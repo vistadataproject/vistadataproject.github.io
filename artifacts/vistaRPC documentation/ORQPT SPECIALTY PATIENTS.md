@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | SPECIALTY ID | LITERAL | 16 | true | The record number of the treating specialty from the Facility TreatingSpecialty File (#45.7). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

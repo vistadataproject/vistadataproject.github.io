@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL |  |  | The user to get the parameter for. | 
 | LOC | LITERAL |  |  | The Location to use when getting the parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

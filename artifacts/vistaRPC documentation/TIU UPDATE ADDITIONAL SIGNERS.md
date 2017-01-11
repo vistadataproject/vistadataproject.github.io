@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the record # (ien) of the document in file 8925. | 
 | TIULIST | LIST |  | true | This is the list of users, passed by reference, as shown below:        TIULIST(1)=213[^CASEY,BEN]       TIULIST(2)=73425[^HOWSER,DOOGEY]       TIULIST(3)=172[^WELBY,MARCUS] NOTE that names passed as second '^'-pieces are optional. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

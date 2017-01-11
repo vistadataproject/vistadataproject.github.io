@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAM1 | LITERAL | 240 | true | Ien(s) for file #8972.1 (CAPMAN ROUTINE STATS).  If more than one Ien theneach will be seperated by a comma. Example: \12,98,38,123\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

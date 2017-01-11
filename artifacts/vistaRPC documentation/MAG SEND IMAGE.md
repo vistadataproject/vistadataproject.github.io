@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | QREC | LITERAL | 3 | true | Record number of the destination queue (DOS/DICOM) | 
 | PRI | LITERAL | 4 | true | Priority | 
 | TYPE | LITERAL | 1 | true | Type of Image: 1:DOS, 2:DICOM | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | Patient DFN (ien). | 
 | DSIVPATP | LITERAL | 10 | true | Contains the pointer to the patient policy IEN from the Insurance Type multiple of the PATIENT file.  If sent, then the single eIV report for that policy will be returned, if not sent then all policy entries will be returned with any eIV report they might contain. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

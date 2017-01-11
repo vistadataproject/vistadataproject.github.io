@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 30 | true | This parameter consists of the File, Station, and IEN of the data element to bereturned in the results. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

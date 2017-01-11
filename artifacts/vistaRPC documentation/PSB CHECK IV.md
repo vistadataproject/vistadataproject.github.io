@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | Patient IENentry number (IEN) and a pointer to the PATIENT FILE (File#2 - ^DPT). | 
 | ORDIV | LIST |  | true | LIST OF ORDER NUMBERSto contain the output from PSB CHECK IV processing. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

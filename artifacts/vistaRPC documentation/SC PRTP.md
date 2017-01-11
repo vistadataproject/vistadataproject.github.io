@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPUT ARRAY | LIST | 512 | true | See RPC Description for values | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

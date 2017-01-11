@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | CLINSTP | LIST |  |  | List of Clinic Stops to search for. | 
 | SPECLTY | LIST |  |  | Type of Specialties to search for.  | 
 | HIUSERS | LITERAL |  |  | Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

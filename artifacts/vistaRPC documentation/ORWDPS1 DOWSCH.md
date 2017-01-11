@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true |  | 
 | LOCIEN | LITERAL |  | true | This is the Location IEN from file 44 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 9 | true | This is the internal entry number for file 228.1 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

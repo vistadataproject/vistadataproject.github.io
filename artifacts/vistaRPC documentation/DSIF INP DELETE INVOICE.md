@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 99 | true | Internal Entry Number for FEE BASIS INVOICE File #162.5 | 
 | BAT | LITERAL | 99 | true | Internal Entry Number for FEE BASIS BATCH File #161.7 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

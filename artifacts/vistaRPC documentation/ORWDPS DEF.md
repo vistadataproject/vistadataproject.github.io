@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORWDPS](http://code.osehra.org/dox/Routine_ORWDPS_source.html)
  return value type | ARRAY
  description | Loads dialog data (lists & defaults) for a pharmacy order (inpatient andoutpatient).
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

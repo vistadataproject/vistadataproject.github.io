@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 20 | true | Internal entry number of the report in 19620.35 | 
 | STFM | LITERAL | 99 | true | This is the Internal Number from the word processing multiple in file 19620.35 that was passed back as the last line sent in the small group return. | 
 | RECS | LITERAL | 6 | true | This is the max number of records from the report text to return. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | validate a schedule, return 1 if valid, 0 if not
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

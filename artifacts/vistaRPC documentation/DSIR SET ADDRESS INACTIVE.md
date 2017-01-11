@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ADRPTR | LITERAL |  | true | ADRPTR - IEN of ADDRESS (NUMERIC) | 
 | FLAGVAL | LITERAL | 1 | true | FLAGVAL - SET OF VALUES FOR THE INACTIVE FLAG.  ZERO(0) = ACTIVE AND ONE (1) = INACTIVE. (NUMERIC 0 OR 1) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

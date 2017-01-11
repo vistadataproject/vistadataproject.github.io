@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | POSTPORT | LITERAL | 5 |  | POST OFFICE EMAIL PORT | 
 | IMPORTER | LITERAL | 3 |  | Indicator to determine if DGW is using the IMPORTER.Contents are YES or NO. | 
 | LOCATION | LITERAL | 8 |  | DICOM GATEWAY LOCATION CODE(Site Location/Station number) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

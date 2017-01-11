@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TAG | LITERAL |  | true | The value of the TAG field for an entry in the CPRS QUERY DEFINITION file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

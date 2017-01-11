@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DEVICE | LITERAL | 45 | true |  | 
 | INPUT | LIST | 999 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

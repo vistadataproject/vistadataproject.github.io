@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [PRPFMR1](http://code.osehra.org/dox/Routine_PRPFMR1_source.html)
  return value type | GLOBAL ARRAY
  description | THIS USED FOR J2EE MIGRATION
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

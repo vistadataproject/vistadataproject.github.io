@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  |  |  | 
 | VISITDATE | LITERAL |  |  | This is the Date of Service (i.e., visit date) when the provider saw the patient. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

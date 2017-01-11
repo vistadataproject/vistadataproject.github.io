@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ROI | LITERAL | 10 | true | INPUT PARAMETER   ROI = REQUEST IEN | 
 | DTLS | LIST | 61 | true |  INPUT PARAMETER    DTLS = LAB LIST DETAILS - AN ARRAY OF LAB LIST TITLES       DTLS FORMAT:  #^LAB_TITLE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

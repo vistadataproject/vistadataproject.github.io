@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FIRST | LITERAL |  | true | The first record that has been requested by the listview control. | 
 | LAST | LITERAL |  | true | The last record number that has been requested by the listview control. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

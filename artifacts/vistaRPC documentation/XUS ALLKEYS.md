@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 10 | true | This is the IEN or DUZ of the user in question.If not passed in the RPC will user the current DUZ. | 
 | FLAG | LITERAL | 3 | true | Not in use at this time. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

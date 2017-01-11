@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RAOIEN | LITERAL |  | true | Pointer to Radiology Order File #75.1. | 
 | RAMLC | LITERAL |  | true | Pointer to Radiology Imaging Location File #79.1. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

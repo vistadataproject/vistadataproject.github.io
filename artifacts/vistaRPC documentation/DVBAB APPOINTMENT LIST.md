@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VAL1 | LITERAL | 10 | true | This is the DFN - the ien for the patient selected | 
 | VAL2 | LITERAL | 1 | true | This is CHOICE - valid input is A (for All appointments), F (for FutureAppointments, or P (for Past Appointments). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

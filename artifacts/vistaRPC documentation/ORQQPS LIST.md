@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | PATIENT ID | LITERAL | 16 | true | Patient id (DFN) from Patient File (#2). | 
 | START DATE/TIME | LITERAL | 16 | true | Start date/time in FileMan format indicating what date/time to beginlisting medications. | 
 | STOP DATE/TIME | LITERAL | 16 | true | Stop date/time in FileMan format indicating what date/time to end listingmedications. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

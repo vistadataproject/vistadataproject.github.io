@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Complete order (generic)
  Leading comment lines | N X S X=+$E($$NOW^XLFDT,1,12),D DATES^ORCSAVE2(+ORID,,X),D STATUS^ORCSAVE2(+ORID,2),validate ESCode
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

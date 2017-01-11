@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 10 | true | This parameter contains the internal record number for the case. | 
 | CALL | LITERAL | 1 | true | This parameter contains the letter that cooresponds to the menu that wasused to access the option passing in the data. | 
 | FORM | LITERAL | 10 | true | This paramter contains the type of form that is being accessed.  As of ASISTS version 2, patch 5, the only value expected is CA7. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NODE | LITERAL | 20 | true | This is the node to display.i.e. the IEN of the Image file ^MAG(2005 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

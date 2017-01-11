@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |    MAGPARAM(\STORAGE PROVIDER TYPE\)   MAGPARAM(\STORAGE PROVIDER PLACE\)   MAGPARAM(\ARCHIVE\)   MAGPARAM(\PRIMARY STORAGE\) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

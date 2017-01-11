@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TYP | LITERAL | 30 | true | This is optional.  If passed it should be either 1, 2, or 12If it is not passed, then this call will default to 12 For file 228,  If TYP=1, then only return the subcategory-1 names (field 5)  If TYP=2, then only return the subcategory-2 names (field 6)  If TYP=12, then return both subcategories' names | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

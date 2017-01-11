@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return a list of appointments
  Leading comment lines | APPTTIME^LOCIEN^LOCNAME^EXTSTATUS
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

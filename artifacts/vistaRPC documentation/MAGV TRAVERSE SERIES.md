@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 20 | true | This is the internal entry number of the entry on the IMAGE STUDY File (#2005.62) whose child entries on the IMAGE SERIES File (#2005.63) are to be traversed.IEN | 
 | DIR | LITERAL | 10 | true | This is the direction of traversal:  FIRST, NEXT, PREV, or LAST. | 
 | CHILDIEN | LITERAL | 10 | true | This is the internal entry number of the entry on the IMAGE SERIES File (#2005.63) from which to proceed.  It should be specified only for theNEXT or PREV traversal commands. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

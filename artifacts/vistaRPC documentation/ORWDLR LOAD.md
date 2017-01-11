@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Return sample, specimen, & urgency info about a lab test
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

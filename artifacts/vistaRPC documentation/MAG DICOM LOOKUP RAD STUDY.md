@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CASENUMB | LITERAL | 30 | true | The value of this parameter is a string. This value identifiesthe \case number\ for the study. The case number may be specifiedas a \date + case number\ or as just an integer number.In the former case, the date is formatted as \mmddyy\. | 
 | STUDYDAT | LITERAL | 20 | true | The value of this parameter is a (FileMan) date.This value represents the date on which the study took place. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

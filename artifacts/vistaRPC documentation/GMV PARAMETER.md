@@ -32,3 +32,8 @@ title: VISTA RPC documentation
 | PAR | LITERAL |  |  | The parameter value to use. See FILE 8989.51 for a list of parametervalues. This value must start with the letters \GMV\ (no quotes). | 
 | INST | LITERAL |  |  | The instance to use.  | 
 | VAL | LITERAL |  |  | The value assigned to a parameter. Values are stored in FILE 8989.5. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

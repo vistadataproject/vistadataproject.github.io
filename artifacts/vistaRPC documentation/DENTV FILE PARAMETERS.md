@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | PAR | LITERAL | 80 | true | Parameter is the name of the parameter that values are stored under. | 
 | INST | LITERAL | 80 | true | Instance is defaulted to 1 if not defined, otherwise it represents the next level where parameters are stored within the entity/parameter combination. | 
 | DATA | LIST | 250 | true | DATA is the value of the parameter, passed as a list to allow setting of word processing parameter data. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

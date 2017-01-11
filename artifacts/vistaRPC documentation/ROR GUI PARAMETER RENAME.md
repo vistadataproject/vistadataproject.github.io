@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | NAME | LITERAL | 30 | true | The NAME parameter defines the name of the GUI parameter. | 
 | OLDINST | LITERAL | 60 | true | Current instance name of the GUI parameter. | 
 | NEWINST | LITERAL | 60 | true | New instance name for the GUI parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

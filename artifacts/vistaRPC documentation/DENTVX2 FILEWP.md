@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | PAR | LITERAL | 250 | true | The word processing parameter you wish to file. | 
 | INST | LITERAL | 3 | true | Instance value of the filed parameter. | 
 | DATA | LIST | 250 | true | This is an array which contains the data to be stored in the parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

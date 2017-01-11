@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CAMERA | LITERAL | 30 | true | The name of the entry expected to be found in file CAMERA/EQUIP/RM (#78.6.) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

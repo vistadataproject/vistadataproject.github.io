@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 20 | true | Internal entry number of entry in the Patient file. | 
 | REPORT ID | LITERAL | 20 | true | Identification number of the desired report. | 
 | DATE RANGE | LITERAL | 5 | true | This parameter indicates the number of days from TODAYthat the report should search for information. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

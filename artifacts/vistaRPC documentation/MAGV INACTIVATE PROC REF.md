@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PROCIEN | LITERAL | 10 | true | This is the internal entry number of the requested procedure on the IMAGING PROCEDURE REFERENCE File (#2005.61). | 
 | PATIEN | LITERAL | 10 | true | This is the internal entry number on the IMAGING PATIENT REFERENCE File (#2005.6) of the patient reference with which this procedure reference is associated. | 
 | OVERRIDE | LITERAL | 3 |  | This parameter should be used with EXTREME CAUTION.  It suppresses the validation of the patient reference against the procedure reference with which it is associated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Returns text name(mixed-case) derived from IEN xref.
  Leading comment lines | GRE/2002,PKS-12/20/2002 Tag not presently used.,Y=Returned value, IEN=Internal number
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

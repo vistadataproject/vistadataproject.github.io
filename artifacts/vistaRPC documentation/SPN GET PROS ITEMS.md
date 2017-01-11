@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [SPNJRPPL](http://code.osehra.org/dox/Routine_SPNJRPPL_source.html)
  return value type | GLOBAL ARRAY
  description | Returns full list of prosthetic items.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

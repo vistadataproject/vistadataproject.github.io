@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | CCODE | LITERAL |  |  | CODE TO NOTE IF COMPLICATION IS MAJOR, MINOR OR BOTH | 
 | CTEXT | LITERAL |  |  | Carroted ('^') string of complication types/comments | 
 | CDATE | LITERAL |  |  | 'ENGLISH' DATE OF THE COMPLICATION;This is the date for the flow sheet to put the, probably historic, entry in the proper order in the flow sheet.  DATE/TIME stamp is in the file, but not visible in the flow sheet. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

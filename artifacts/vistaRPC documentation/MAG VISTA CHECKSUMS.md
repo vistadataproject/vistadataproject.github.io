@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGDBB | LITERAL | 100 | true | The value of this paramater is a string. This string is thee-mail address for the mailgroup in MailMan to which themessage with the checksums is to be sent. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

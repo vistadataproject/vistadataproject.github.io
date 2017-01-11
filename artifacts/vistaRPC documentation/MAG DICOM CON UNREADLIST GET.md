@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | LOCKTIME | LITERAL |  | true | AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT. | 
 | STATLIST | LITERAL |  |  | Status of entry to be retrieve (C, L, R, U, or W, in any combination) | 
 | READER STATION | LITERAL |  |  | Reading Site's Station Number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return menu contents for an order dialog
  Leading comment lines | LST(0)=name^# cols^path switch^^^ Key Variables (pieces 6-20),LST(n)=col^row^type^ien^formid^autoaccept^display text^mnemonic,^displayonly
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

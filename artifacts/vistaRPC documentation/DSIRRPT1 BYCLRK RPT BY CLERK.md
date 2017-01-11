@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | REQS | LIST | 99 | true | This is an array of clerk IENs.        (1-n)=IEN to file 200 | 
 | SCHED | LITERAL | 1 | true | Boolean flag that determines whether a report is scheduled or run immedieately. 0 - Immediate  1 - Schedule. | 
 | ESTART | LITERAL | 14 | true | Earliest time to start the scheduled task.  Mmust be inFileMan date/time format.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

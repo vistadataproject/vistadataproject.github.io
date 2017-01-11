@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OPTION | LITERAL | 8 | true | This is the routine tag that will be called to retrieve the data. | 
 | DATA | LITERAL | 50 | true | This is whatever data is needed by the subroutine to process the request for data. In many cases it will be a single value (e.g., patient id - DFN). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FLAG | LITERAL | 1 | true | FLAG = 0: Unreleased / 1: Released | 
 | DAYS | LITERAL | 7 | true | Show verified reports up to DAYS (# of days) ago | 
 | STAT | LITERAL | 5 | true | If non null, display the case if it has aconsultation for an interpreting station equal to the input. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

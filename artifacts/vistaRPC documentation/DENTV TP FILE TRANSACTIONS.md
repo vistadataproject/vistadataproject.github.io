@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST | 256 | true | See documentation in FILE^DENTVTPA | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [XHDPCAT](http://code.osehra.org/dox/Routine_XHDPCAT_source.html)
  return value type | SINGLE VALUE
  description | This call updates ParameterCategories.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

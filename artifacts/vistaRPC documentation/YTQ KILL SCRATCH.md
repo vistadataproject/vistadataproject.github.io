@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | Patient DFN | 
 | CODE | LITERAL |  | true | Name of instrument from file 601.71 | 
 | HANDLE | LITERAL |  | true | Unique identifer of GIU session | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

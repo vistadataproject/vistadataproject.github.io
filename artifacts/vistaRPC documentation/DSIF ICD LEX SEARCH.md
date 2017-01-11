@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | DSIFDT | LITERAL |  |  | This is the date you wish to check for codes. This input is not required, but if not passed in it defaults to today. | 
 | DSIFLL | LITERAL |  |  | This is the maximum length of the list you wish to be returned. The default value is 30 if nothing is passed in. | 
 | DSIFF | LITERAL |  |  | This is the Coding System View you wish to retrieve, the default is 10D (ICD-10-CM) if nothing is passed in. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

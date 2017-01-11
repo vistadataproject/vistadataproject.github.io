@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 245 | true | DATA = DATETIME^PSIEN^DFN^MCIEN A string of 4 pieces   DATETIME:  PROCEDURE DATE/TIME  REQPSIEN  : PROCEDURE INTERNAL NUMBER  ^MCAR(MCFILE,XDFN  :  PATIENT DFNMCIEN :  PROCEDURE FILE, INTERNAL NUMBER  ^MCAR(697.2,X | 
 | MAGARR | LIST |  | true | An array of images that are to be associated with the procedure. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

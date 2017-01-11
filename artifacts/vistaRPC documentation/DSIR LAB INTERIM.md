@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 50 | true | DFN - Patient Identifier | 
 | DATE1 | LITERAL | 7 | true | DATE1 - Start Date | 
 | DATE2 | LITERAL | 7 | true | DATE2 - End Date | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

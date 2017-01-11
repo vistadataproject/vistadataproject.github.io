@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | The value of this parameter is a pointer to ^DPT().This pointer identifies the patient for whom informationis being requested. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL | 20 | true | This is the number of the file (or subfile) for which the external format of the the field is desired. | 
 | FIELD | LITERAL | 20 | true | This is the field number for the file (or subfile) | 
 | VALUE | LITERAL | 250 | true | This is the internal Fileman format for the data stored at FILE,FIELD.  This does not require a record number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

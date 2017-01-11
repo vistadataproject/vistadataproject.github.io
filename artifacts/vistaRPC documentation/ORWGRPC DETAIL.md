@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | RPC - get all reports for types of data from items and date range
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return some prompt ids from #101.41
  Leading comment lines | treating specialty Id^attending provider id
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

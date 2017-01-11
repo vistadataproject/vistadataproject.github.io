@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | SBULL | LITERAL |  | true | A Y/N value which indicates whether a bulletin should be generated when the processing has completed. | 
 | DUZ | LITERAL |  | true | Identifies the individual in the NEW PERSON File (#200) who should recieve the bulletin generated. | 
 | DVBAPRTY | LITERAL | 4 | true | Priority of Exam code which inidicates which priorities to filter on.   AO   : Agent Orange   BDD  : Benefits Delivery at Discharge and Quick Start   IDES : Integrated Disability Evaluation System   ALL  : All Others (Original Report with all codes except those above) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

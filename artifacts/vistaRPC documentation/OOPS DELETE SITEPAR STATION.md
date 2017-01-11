@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | This parameter contains the Site Parameter IEN, the subfile number, and theIEN of the Station Subfile being deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

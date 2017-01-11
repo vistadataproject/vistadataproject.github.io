@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGSIUI](http://code.osehra.org/dox/Routine_MAGGSIUI_source.html)
  return value type | ARRAY
  description | This call returns the Array of Data from the Import Queue, given a QUEUE NumberCalled from Delphi and 'M'
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

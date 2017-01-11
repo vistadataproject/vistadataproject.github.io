@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return 1 if the order (ORID) is a controlled substance, 0 for non-controlled substance
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | ADUPN | LITERAL | 50 | true | Search on user Active Directory UPN. | 
 | SECID | LITERAL | 30 | true | Search on user Security ID. | 
 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

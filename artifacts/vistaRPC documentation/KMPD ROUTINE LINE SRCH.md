@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | ROUTINES | LIST | 60 | true | Array containg routine names to be searched.        array(\RoutineName\)=\\ | 
 | SEARCH TEXT | LITERAL | 245 | true | Text to search for. | 
 | GLOBAL | LITERAL | 60 | true | Temporary global storage for data.  Must be ^TMP or ^UTILITY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

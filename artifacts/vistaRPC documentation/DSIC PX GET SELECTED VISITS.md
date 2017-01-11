@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LIST | 256 | true | Setup up Parm.Mult['\sub\'] := value   or DATA(SUB)=value     sub     description  --------  ------------------------------------------------  DFN       pointer to the PATIENT file (#2)  SDT       in external format or FM format  EDT       in external format or FM format  LOC       pointer to Hospital Location (#44)  ENCTYPE   string of encounter types wanted set of codes from              ^DD(9000010,15003)  NENCTYPE  string of encounter types not wanted set of codes from              ^DD(9000010,15003)  SERVCAT   string of service categories to include set of codes from              ^DD(9000010,.07)  NSERVCAT  string of service categories not to include set of codes from              ^DD(9000010,.07)  MAX       maximum number of entries to return starting with end date and              going backwards | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

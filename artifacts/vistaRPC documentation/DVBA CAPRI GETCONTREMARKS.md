@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DVBEIEN | LITERAL |  | true | This is the Exam Ien to get the comments from | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

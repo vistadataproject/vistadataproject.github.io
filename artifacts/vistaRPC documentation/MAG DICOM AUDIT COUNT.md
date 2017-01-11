@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
 | MESSAGE | LITERAL | 30 | true | The value of this parameter is a text-string.This text value identifies the rubric for which a count isto be incremented. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

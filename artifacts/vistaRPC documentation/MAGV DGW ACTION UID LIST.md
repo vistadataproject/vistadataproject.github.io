@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MAGTYPE | LITERAL |  | true | Type (e.g. \SOP Class\) | 
 | MAGSUBT | LITERAL |  | true | Subtype (e.g. \Storage\) | 
 | MAGACT | LITERAL |  | true | Action Type (e.g. \Storage SCP\) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

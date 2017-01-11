@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return notification sort method^direction for user/division/system/pkg
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

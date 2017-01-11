@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 99 | true | Internal Entry Number to HOSPITAL LOCATION File #44 - Required | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Print data for remote sites
  Leading comment lines | RPC: ORWRP PRINT REMOTE REPORT
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

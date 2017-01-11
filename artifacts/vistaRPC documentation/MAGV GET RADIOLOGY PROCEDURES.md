@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | STATIONUM | LITERAL | 30 | true | This is the STATION NUMBER (#99) of an INSTITUTION file (#4) entryused for the query. | 
 | IENMAGLOC | LITERAL | 30 | true | IEN of an entry in the IMAGING LOCATIONS file (#79.1).will be filtered from the return array. | 
 | IENRAPROC | LITERAL | 30 | true | IEN of an entry in the RAD/NUC MED PROCEDURES file (#71). If present,restricts the output to the single procedure requested. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

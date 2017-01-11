@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | OROI | LITERAL |  | true |  | 
 | ORX | LITERAL |  | true |  | 
 | ORTYPE | LITERAL |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

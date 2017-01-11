@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | ARRAY | LIST |  | true | An array of information. | 
 | ARRAY2 | LIST |  | true | An array of information. | 
 | ARRAY3 | LIST |  | true | An array of information. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

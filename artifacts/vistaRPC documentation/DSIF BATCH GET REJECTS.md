@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIFPAY1](http://code.osehra.org/dox/Routine_DSIFPAY1_source.html)
  return value type | ARRAY
  description | No input.Display batches with rejects pending
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

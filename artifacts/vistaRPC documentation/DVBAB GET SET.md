@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DVBFIL | LITERAL |  | true | This paramater contains a valid file number. | 
 | DVBFLD | LITERAL |  | true | This parameter contains a field in the file passed as DVBFIL. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

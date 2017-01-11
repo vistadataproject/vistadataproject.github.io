@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI13](http://code.osehra.org/dox/Routine_YTQAPI13_source.html)
  return value type | ARRAY
  description | Exports a test to a Mailman message for sharing over the network. Input: Code as name of test to be exportedOutput: DATA vs ERROR
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

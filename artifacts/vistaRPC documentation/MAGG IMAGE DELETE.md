@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MAGIEN | LITERAL | 30 | true | Internal entry number in the IMAGE FM File.  ^MAG(2005 | 
 | MAGGRPDF | LITERAL | 1 | true | This is a Group Delete Flag1 or 0     1  =  Allow Group Delete     0  =  Do not Allow Group Deletes. | 
 | REASON | LITERAL | 60 | true | This is a free text description of the Reason for Deleting the Image. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

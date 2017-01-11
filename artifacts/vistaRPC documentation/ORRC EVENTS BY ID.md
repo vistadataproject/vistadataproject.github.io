@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | EVENTS | LIST |  | true | This is the list of alert IDs in the format \VST:\_ID where ID is thealert identifier as defined by Kernel (\OR,<patient>,<Notification ien>;<creator>;<date created>\) or the appointment time/location (\<date.time>;<location>\). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

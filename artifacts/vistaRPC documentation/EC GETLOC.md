@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ECARY | LITERAL |  |  | Input variable ECARY contains the following values:-   STAT   - Active, inactive or both (optional) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | FILNAM | LITERAL | 200 | true | The value of this parameter is a string.This string value represents the name of the image file at its(remote) location. | 
 | XMIT | LITERAL | 20 | true | The value of this parameter is a (FileMan-formatted) date/time value.This value represents the time-stamp for the moment when the transmissionof the image file started. | 
 | MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

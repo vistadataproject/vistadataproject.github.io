@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | IEN of patient in file 2. | 
 | CODE | LITERAL |  | true | Name of Instrument from file 601.71 | 
 | HANDLE | LITERAL |  | true | Unique identifer of the GUI session. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

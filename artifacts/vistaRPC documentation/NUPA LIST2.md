@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL |  | true | File number to list data from. | 
 | FILEDS | LITERAL |  | true | Other fields in format FILE^Field 1^Field 2 etc. | 
 | SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

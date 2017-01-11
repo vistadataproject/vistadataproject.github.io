@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | Contains the patient DFN | 
 | FLAG | LITERAL | 1 | true | 1=SET (set the index) 2=KILL (kill off current pt/prov index) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

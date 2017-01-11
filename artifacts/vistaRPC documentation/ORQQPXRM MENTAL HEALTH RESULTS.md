@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RESULT GROUP/ELEMENT | LITERAL | 16 | true | This is the pointer to the result group for the test. | 
 | TEST RESULTS | LITERAL | 16 | true | Field to pass contents of the YS array (R1,R2,DFN,DUZ,ADATE etc). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

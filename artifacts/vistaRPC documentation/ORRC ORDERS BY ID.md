@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORDERS | LIST |  | true | This is the list of order IDs in the form ORx:##, where x denotes the viewthat this order belongs to int he dashboard and ## is the pointer to theOrders file #100. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

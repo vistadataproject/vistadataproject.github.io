@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PATIENTNAME | LITERAL |  |  |  | 
 | VISITDATE |  |  |  |  | 
 | CLINICIEN |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

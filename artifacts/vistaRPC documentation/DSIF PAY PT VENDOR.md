@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 23 | true | Displays demographic information for all vendors in a patient payment record | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

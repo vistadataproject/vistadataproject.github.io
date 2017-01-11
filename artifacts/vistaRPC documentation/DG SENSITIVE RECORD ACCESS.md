@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | DFN = Patient (#2) file DFN. | 
 | DGMSG | LITERAL | 1 | true | DGMSG = 1 - if message should be generated when a user's SSN is undefined        0 - message will not be generated        If not defined, defaults to 1. | 
 | DGOPT | LITERAL |  | true | Contains Option name^Menu text for DG Security Log update. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

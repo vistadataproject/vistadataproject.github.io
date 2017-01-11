@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | save the bounds for a particular control
  Leading comment lines | NAM=frmName or frmName.ctrlName  VAL=left,top,width,height
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

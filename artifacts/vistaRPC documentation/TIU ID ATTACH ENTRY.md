@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the IEN of the Entry which is to be attached as the ID Child. | 
 | TIUDAD | LITERAL |  | true | This is the internal entry number of the TIU Document which is to be theID Parent to which the ID Entry is attached. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

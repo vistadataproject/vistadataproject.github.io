@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FBENDDT | LITERAL | 7 | true | Last Day of the Month for the report (Required, FileMan format) | 
 | FBK | LITERAL | 1 | true | Report Hospital Type (Required, 1 = Public Hospital, 2 = Private Hospital, 3 = Federal Hospital) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

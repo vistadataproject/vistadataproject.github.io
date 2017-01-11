@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | START | LITERAL |  | true | This is the date to start searching for appointments, in the formYYYYMMDDHHMMSS. | 
 | STOP | LITERAL |  | true | This is the date to stop searching for appointments, in the formYYYYMMDDHHMMSS. | 
 | DETAILS | LITERAL |  | true | This flag indicates whether to return the details or note text with eachappointment (true) or just the list of appointment ID's (false). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

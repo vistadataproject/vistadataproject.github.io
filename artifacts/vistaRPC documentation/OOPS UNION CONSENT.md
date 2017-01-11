@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL |  | true | This required input field must be a valid IEN in the 2260 file. Note, there isno validation check done on the IEN. | 
 | UNIREP | LITERAL |  | true | This required input parameter must be a valid DUZ of the Union Representativeselected to receive the Bulletin. Note, like the IEN input parm, no validation is done on the DUZ being passed.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

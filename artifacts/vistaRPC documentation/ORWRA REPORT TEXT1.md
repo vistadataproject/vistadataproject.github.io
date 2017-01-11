@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
 | EXAMID | LITERAL | 20 | true | Imaging exam ID. Format: Inverse FM date/time of Exam_-_Case IENExample: 7049175.8893-1 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

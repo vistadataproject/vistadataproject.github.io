@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGARRAY | LIST |  | true | Each item in the Array is an '^' delimited piece of information.in the format Field^Value  OR  ActionCode^value | 
 | ALL | LITERAL | 1 | true | All = 1 and All items in MAGARRAY will be validated.All = 0 and Validation stops after first item in MAGARRAY fails. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

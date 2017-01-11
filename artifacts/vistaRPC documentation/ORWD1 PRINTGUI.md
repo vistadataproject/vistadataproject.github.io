@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | File|Print orders from GUI
  Leading comment lines | ORRACT is set here to identify this as a manual reprint
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

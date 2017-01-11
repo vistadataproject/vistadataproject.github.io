@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ENTITY TYPE | LITERAL | 20 | true | This parameter indicates the entity type of the slecetion.The following types are possible:       DIVISION       TEAM       PRACTITIONER       ROLE       CLINIC       USER CLASS | 
 | INTERNAL ENTRY NUMBER | LITERAL | 20 | true | This parameter contains the internal entry number forthe entity. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

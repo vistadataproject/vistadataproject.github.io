@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | ADMDX | LITERAL | 45 | true | This is the admitting diagnosis of the veteran which is usually obtained from the person who called. | 
 | ATPHY | LITERAL | 30 | true | Attending Physician (Optional - Free Text) | 
 | ATPHPH | LITERAL | 20 | true | This field contains the phone number of the attending physician while the patient was residing in the non-VA facility. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

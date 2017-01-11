@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IBD | LITERAL |  | true | This is the data sent by the remote treating facility to be filled infile 354.71. | 
 | IBICN | LITERAL |  | true | This is the patient's ICN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

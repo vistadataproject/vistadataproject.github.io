@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Should workload requirement be skipped for this note's visit?
  Leading comment lines | RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS,1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 25 | true | IEN of file 7078 or 583. | 
 | FILE | LITERAL | 4 | true |  Must be \583\ (Unauthorized)     or \7078\ (CH) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

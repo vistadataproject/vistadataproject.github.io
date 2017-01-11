@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TOKEN | LITERAL |  | true | TOKEN = Artifact token | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

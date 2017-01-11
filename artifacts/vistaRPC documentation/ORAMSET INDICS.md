@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORAMSET](http://code.osehra.org/dox/Routine_ORAMSET_source.html)
  return value type | ARRAY
  description | This call populates the list of selectable indications for Anticoagulation therapy.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

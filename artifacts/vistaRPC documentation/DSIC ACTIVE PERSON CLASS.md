@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL | 15 | true | This is the user's DUZ value whose active person class is desired. | 
 | DATE | LITERAL | 14 | true | This is a Fileman date.time for the date to check for an active person class membership. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

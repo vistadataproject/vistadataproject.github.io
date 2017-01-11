@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Returns Default Templates for the current user
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

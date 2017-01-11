@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return list of teams for a system
  Leading comment lines | Also called under DBIA # 2692.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | DATA | LITERAL |  |  | Reserved for future use. | 
 | FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   D  Include only deleted images (file #2005.1)  E  Include only existing images (file #2005) By default, the \E\ value is assumed.  | 
 | PKG | LITERAL |  |  | Internal or external values of the PACKAGE INDEX field (40) of the file#2005 separated by commas. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

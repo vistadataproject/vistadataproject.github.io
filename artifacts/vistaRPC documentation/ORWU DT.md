@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Internal Fileman Date/Time
  Leading comment lines | change the '00:00' that could be passed so Fileman doesn't reject
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

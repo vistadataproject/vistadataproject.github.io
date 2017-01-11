@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IDentifier | LITERAL |  | true | This is the identifier for the order or document.Examples:  ORD:342132;1  or DOC:23423 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

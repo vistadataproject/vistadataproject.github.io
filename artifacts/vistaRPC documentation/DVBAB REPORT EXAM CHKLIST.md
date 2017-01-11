@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DVBAB4](http://code.osehra.org/dox/Routine_DVBAB4_source.html)
  return value type | ARRAY
  description | Generates an exam worksheet.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

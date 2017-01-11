@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  |  | This parameter passes the SSN entered in the Create Accident/Illness Report. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

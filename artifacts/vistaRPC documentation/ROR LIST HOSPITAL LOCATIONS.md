@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | FROM | LITERAL |  |  | The index entry(s) from which to begin the list  ^01: FromName  ^02: FromIEN For example, a FROM value of \VA\ would list entries following VA. You canuse the 2-nd and 3-rd \^\- pieces of the @RESULTS@(0) node to continue thelisting in the subsequent procedure calls. NOTE: The FROM value itself is not included in the      resulting list. See description of the LIST^DIC for more details about the PART, NUMBERand FROM parameters. | 
 | HLTYPES | LITERAL |  |  | List of location types separated by commas (internal values of the TYPEfield of the HOSPITAL LOCATION file):   C   Clinic  F   File Area  I   Imaging  M   Module  N   Non-Clinic Stop  OR  Operating Room  W   Ward  Z   Other Location Only locations of the types defined by this parameter are selected by the remote procedure. By default ($G(HLTYPES)=\\), all locations are selected. | 
 | DIVIEN | LITERAL |  |  | Division IEN. If this parameter is defined and greater than zero then onlythe locations associated with this division are selected. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

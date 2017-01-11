@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | BILN | LITERAL | 999 | true | Internal Entry Number to file 19620.2 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

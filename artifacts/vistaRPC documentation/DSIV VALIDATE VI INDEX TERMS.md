@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PROC | LITERAL | 50 | true | PROC is the Procedure/Event which is found in file ^MAG(2005.84) as fieldNAME. | 
 | TYPE | LITERAL | 40 | true | TYPE is the Type Index which is found in file ^MAG(2005.83) as field NAME. | 
 | SPEC | LITERAL | 30 | true | SPEC is the Specialty/SubSpecialty which is found in file ^MAG(2005.85) as field NAME. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

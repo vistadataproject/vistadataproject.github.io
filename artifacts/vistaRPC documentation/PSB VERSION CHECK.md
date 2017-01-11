@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [PSBRPC3](http://code.osehra.org/dox/Routine_PSBRPC3_source.html)
  return value type | ARRAY
  description | This RPC is called at startup. No parameters are passed.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

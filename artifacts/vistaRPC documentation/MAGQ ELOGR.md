@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | NULL |  |  | true | No input parameter is defined. | 
 | LIMIT | LITERAL | 5 | true | This value is used to control the array size. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Check conjunction for renew.
  Leading comment lines | All conjunctioni = "And" return 1,Has a "Then" return 0
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

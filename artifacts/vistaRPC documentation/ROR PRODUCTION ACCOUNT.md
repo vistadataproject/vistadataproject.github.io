@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
  return value type | ARRAY
  description | This RPC checks if the current account is a production one.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

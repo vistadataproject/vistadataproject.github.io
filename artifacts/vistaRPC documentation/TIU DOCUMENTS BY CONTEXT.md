@@ -37,3 +37,8 @@ title: VISTA RPC documentation
 | SEQUENCE | LITERAL |  | true | This is the sequence by reference date/time (A=ascending (OLDEST FIRST),D=descending (NEWEST FIRST)) in which the user would like the listreturned. | 
 | SHOWADD | LITERAL |  | true | This BOOLEAN parameter determines whether addenda will be included in thereturn array, when their parent documents are identified by the searchcriteria, and vice versa. Also if SHOWADD is TRUE (1), the \+\ at thebeginning of the return text will be omitted (since it offers onlyredundant information). | 
 | INCUND | LITERAL |  | true | Optional Boolean parameter determines whether Undictated and Untranscribed documents should be returned along with Unsigneddocuments, when the CONTEXT is passed as 2. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

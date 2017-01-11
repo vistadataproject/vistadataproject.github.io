@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TASK | LITERAL |  | true | A valid task number should be assigned to the TASK parameter. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

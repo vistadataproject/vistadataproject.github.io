@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGFILE | LITERAL | 90 | true | The full path and file name of the Image accessed. | 
 | MAGIEN | LITERAL | 30 | true | The Internal entry number in file MAG(2005.   | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

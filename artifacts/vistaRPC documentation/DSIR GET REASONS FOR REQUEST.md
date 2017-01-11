@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
  return value type | ARRAY
  description | Retrieve entries from file 19620.31 DSIR REQUEST REASON.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

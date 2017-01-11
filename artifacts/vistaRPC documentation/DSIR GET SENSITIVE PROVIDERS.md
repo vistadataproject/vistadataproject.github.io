@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROI8](http://code.osehra.org/dox/Routine_DSIROI8_source.html)
  return value type | GLOBAL ARRAY
  description | This RPC returns a list of all persons flagged as sensitive in the ROI package.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

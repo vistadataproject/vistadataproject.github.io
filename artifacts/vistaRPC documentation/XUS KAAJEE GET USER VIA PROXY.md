@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | CLIENT-IP | LITERAL |  | true | IP address of the client workstation used for logging (signon log) and IP blocking (failed access attempts).  Also, this IP address is used to validate ccow token submitted. | 
 | SERVER-NM | LITERAL |  | true | Identifying name for the calling application or server used for logging (signon log) | 
 | CCOWTOK | LITERAL |  | true | Value of ccow token passed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

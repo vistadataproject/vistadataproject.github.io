@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DIV | LITERAL | 99 | true | List of one or more divisions for which data will be reported.  I omitted, the clerk's DUZ(2) will be used. | 
 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
 | ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

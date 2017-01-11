@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIFALRT | LITERAL | 1 |  | This is the indiciation that alerts should be sent to someone. 1 means yes. | 
 | DSIFALTO | LITERAL |  |  | Contains pointers to NEW PERSON FILE (200) for those to receive alert for this addition of a comment. | 
 | DSIFORDT | LITERAL |  |  | This is the date of the Comment is added to the Consult. If not passed in, defaults to NOW^XLFDT. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

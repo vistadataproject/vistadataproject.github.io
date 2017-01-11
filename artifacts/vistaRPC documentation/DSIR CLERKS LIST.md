@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
  return value type | GLOBAL ARRAY
  description | This RPC compiles a list of ROI clerks in file 19620 ROI INSTANCE.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

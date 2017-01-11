@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR29RG](http://code.osehra.org/dox/Routine_RMPR29RG_source.html)
  return value type | ARRAY
  description | Purchase Order Information to be printed from a PC Device Fax/Printer 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

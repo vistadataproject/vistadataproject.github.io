@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT ID | LITERAL | 16 | true | Patient identifier from the patient file [#2] | 
 | REMINDER ARRAY | LIST | 16 | true | List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

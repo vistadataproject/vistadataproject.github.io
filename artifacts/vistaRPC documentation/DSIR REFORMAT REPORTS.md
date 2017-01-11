@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | FOOTER COUNT | LITERAL | 9 | true | This parameter tells the RPC how many lines are footer text. | 
 | OLD LINE COUNT | LITERAL | 9 | true | This parameter is needed for the RPC to know many lines per page are in the incoming report. | 
 | INCOMING (OLD) REPORT | LIST |  | true | This is the array of the old report to be reformatted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

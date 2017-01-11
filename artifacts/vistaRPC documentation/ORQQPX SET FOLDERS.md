@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORFLDRS | LITERAL |  | true | String containing a one character code for each folder visible in thereminder tree structure of the CPRS GUI.Visible Folder Codes are:  D=Due  A=Applicable  N=Not Applicable  E=Evaluated  O=Other | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

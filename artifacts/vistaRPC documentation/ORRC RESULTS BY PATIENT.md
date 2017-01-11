@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
 | PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
 | RESULTS | LITERAL |  | true | This flag indicates whether to return the results with each order (true)or just the list of order ID's (false). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI14](http://code.osehra.org/dox/Routine_YTQAPI14_source.html)
  return value type | ARRAY
  description | This API evaluates wheher one of 3 conditions is meet for the stored ASI in file Addiction Severity Index (#604).   Input: IENS as iens for 604 Output: 1^OK TO SIGN         0^MISSING REQUIRED FIELDS         2^A G12 RECORD  Missing fields are listed in YSDATA(3...x)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

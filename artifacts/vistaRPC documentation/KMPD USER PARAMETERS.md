@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DUZ | LITERAL | 35 | true | User's DUZ. | 
 | TYPE | LITERAL | 5 | true | Type of call: 1 - get option info              2 - set option info | 
 | OPTION | LIST | 256 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

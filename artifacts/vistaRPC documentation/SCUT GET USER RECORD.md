@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DUZ NUMBER | LITERAL | 20 | true | Internal entry number of the user. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

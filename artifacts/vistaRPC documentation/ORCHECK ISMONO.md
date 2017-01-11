@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | returns 1 if there is monograph data for the orderchecks being presented to the user
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

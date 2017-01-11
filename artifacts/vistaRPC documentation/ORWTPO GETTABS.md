@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | RPC
  Leading comment lines | get tab names for patient chart
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

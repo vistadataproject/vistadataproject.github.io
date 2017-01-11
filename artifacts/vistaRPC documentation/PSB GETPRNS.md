@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | Patient IEN number. | 
 | PSBORD | LITERAL |  | true | Order number from Inpatient Medications. If order number is passed then returns all PRN effectiveness not documented for that order. If order number is NOT passed, then returns all PRN effectiveness not documented for that patient. | 
 | PSBSIOPI | LITERAL | 1 | true | This parameter is a true/false flag (1/0).  If true use the new SI/OP Wpfields and return data in the Results array to the GUI Client. The field is not required, so a null will convert into a 0, for false,making this backwards compatible. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

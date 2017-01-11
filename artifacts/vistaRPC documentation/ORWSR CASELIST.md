@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | dfn | LITERAL | 32 | true | Patient DFN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

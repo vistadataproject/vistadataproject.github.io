@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return 1 if schedule is required
  Leading comment lines | OI=orderable item, RTE=ptr route, DRG=ptr dispense drug
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

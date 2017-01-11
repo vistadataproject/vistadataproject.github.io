@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
  return value type | ARRAY
  description | Input parameter is any string that a user would normally enter to look up apatient.Output is an array of DFN^PATIENT NAME^SSN^DOB.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

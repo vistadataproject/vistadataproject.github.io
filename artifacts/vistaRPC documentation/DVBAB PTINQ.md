@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
  return value type | GLOBAL ARRAY
  description | Returns a patient inquiry text report.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

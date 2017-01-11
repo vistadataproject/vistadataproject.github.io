@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return Visible Reminder Folders
  Leading comment lines | Codes: D=Due, A=Applicable, N=Not Applicable, E=Evaluated, O=Other
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

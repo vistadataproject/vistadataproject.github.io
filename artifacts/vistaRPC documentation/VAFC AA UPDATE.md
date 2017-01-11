@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ARRAA | LIST | 2000 | true | ARRAA may contain the following values:The values are passed into this RPC from the Master Patient Index (MPI).      ARRAA(\HL7V2_4\)= value for HL7V2_4 (#.02) field AND/OR     ARRAA(\HL7V3_0\)= value for HL7V3_0 (#.03) field     ARRAA(\SOURCEID\)= value for DEFAULT SOURCE ID TYPE (#.04) field | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

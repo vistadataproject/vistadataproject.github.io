@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARCHIVE DURATION TRIGGER\) MAGPARAM(\ARCHIVE DURATION YEARS\) MAGPARAM(\BUSINESS KEY\) MAGPARAM(\DISPLAY NAME\) MAGPARAM(\MINIMUM ARCHIVE COPIES\) MAGPARAM(\MINIMUM OFFSITE COPIES\) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

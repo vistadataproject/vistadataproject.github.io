@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DUMMY | LITERAL | 1 | true | When this input parameter is set to the letter \P\, only wards that have patients will be returned. Otherwise, all active wards will be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | SERVICE | LITERAL | 16 |  |  | 
 | PATIENT DFN | LITERAL | 32 |  |  | 
 | RESOLVE | LITERAL | 2 |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

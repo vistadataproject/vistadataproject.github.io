@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [XHDX](http://code.osehra.org/dox/Routine_XHDX_source.html)
  return value type | ARRAY
  description | This returns the list of perspective id's that should be visible for thecurrent user.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

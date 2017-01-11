@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGIEN | LITERAL | 30 | true | Internal entry number in the Image File (^MAG(2005)) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

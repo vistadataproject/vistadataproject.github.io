@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Place a quick order without verify step
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

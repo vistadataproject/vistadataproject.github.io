@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | USER ID | LITERAL | 16 | true | The record number of the user (DUZ) from the New Person File (#200). | 
 | START DATE | LITERAL | 16 |  | The start date of the period to retrieve notifications for the user in Fileman format. | 
 | STOP DATE | LITERAL | 16 |  | The stop date of the period to retrieve notifications for the user inFileman format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

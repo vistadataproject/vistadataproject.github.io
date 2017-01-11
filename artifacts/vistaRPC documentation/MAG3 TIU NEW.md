@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | MAGTEXT | LIST | 3200 | true | Array of Text to add to the New Note. | 
 | MAGDATE | LITERAL | 40 | true | Date of the Note. For New Notes. | 
 | MAGCNSLT | LITERAL | 30 | true | DA of Consult to Link this note to. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

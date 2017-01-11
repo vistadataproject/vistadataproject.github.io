@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGDTR06](http://code.osehra.org/dox/Routine_MAGDTR06_source.html)
  return value type | ARRAY
  description | Return the sites and diagnostic specialties for the tele reader.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

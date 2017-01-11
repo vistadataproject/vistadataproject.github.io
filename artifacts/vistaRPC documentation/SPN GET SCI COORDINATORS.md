@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CPSRCH | LITERAL |  |  | Partial name search of coordinator(s)  (optional parameter) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | REPORT TYPE | LITERAL |  | true |  | 
 | REPORT STRING | LITERAL |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

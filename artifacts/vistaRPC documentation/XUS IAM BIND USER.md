@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SECID | LITERAL | 40 | true | Unique Security ID [SecID, assigned by Identity and Access Management] | 
 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Binding Application | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

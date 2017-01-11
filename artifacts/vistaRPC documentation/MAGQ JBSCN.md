@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | START | LIST | 32 | true | This is the starting IEN for the BP Verifier session. | 
 | STOP | LITERAL | 32 | true | This is the ending IEN for the BP Verifier session. | 
 | AUTO | LITERAL | 1 | true | When set this will allow the BP Verifier session to terminate automatically. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

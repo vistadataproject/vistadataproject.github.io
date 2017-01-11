@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DENTV | LIST |  | true | This should be a list of \CATEGORY^SORT ORDER^IEN\ for all of the canned comments for the provider. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

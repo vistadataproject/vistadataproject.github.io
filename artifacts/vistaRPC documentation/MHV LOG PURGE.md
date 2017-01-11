@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DTM | LITERAL | 15 | true | Purge Date/Time.Default is Today - 7. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

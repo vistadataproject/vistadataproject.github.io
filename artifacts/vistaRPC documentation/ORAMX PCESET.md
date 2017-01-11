@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  |  | The IEN of the Patient in the Patient File (#2). | 
 | DATA1 | LITERAL |  |  | Data string from the Anticoagulation Management Program. | 
 | HOSLOC | LITERAL |  |  | Visit location from the Hospital Location File. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

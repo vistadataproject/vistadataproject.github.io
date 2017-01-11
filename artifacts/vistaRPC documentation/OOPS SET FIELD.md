@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  | true | Contains the IEN of the record and the field number to be modified in file 2260.The format for the IEN and field number is IEN^FIELDNUM. | 
 | VALUE | LITERAL |  | true | The VALUE parm should be the external value that you want to set for the fieldspecified in the INPUT parm. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

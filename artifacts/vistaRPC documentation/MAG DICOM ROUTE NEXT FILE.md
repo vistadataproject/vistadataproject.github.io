@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | PRIOR | LITERAL | 30 | true | The value of this parameter is an integer number (> 0).This number establishes the priority of the new entry in its queue. | 
 | MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 
 | DESTS | LIST |  | true | This parameter is an array containing the list of destinationsthat is being served by the current transmitter.The values in this array each are string with two pieces of data,separated by a caret (\^\). The first piece describes the transmission mechanism:  1 = regular copy  2 = DICOM copy The second piece is a pointer. When the first piece is equalto 1, this pointer points to table # 2005.2 (Network Location);when the first piece is equal to 2, this pointer points totable # 2006.585 (User Application). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

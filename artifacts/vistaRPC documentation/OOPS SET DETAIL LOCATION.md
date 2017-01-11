@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARM1 | LITERAL | 30 | true |  | 
 | DATA | LIST | 40 | true | This parameter contains a list of detail locations for a specificlocation and station (from the Site Parameter file). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

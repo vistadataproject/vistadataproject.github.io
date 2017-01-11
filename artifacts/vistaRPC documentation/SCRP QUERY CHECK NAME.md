@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | QUERY NAME | LITERAL | 30 | true | Name of the query that needs to be checked for existence. | 
 | USER | LITERAL | 30 | true | Internal entry number of user that the query namewill be assoicated with, usually DUZ. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

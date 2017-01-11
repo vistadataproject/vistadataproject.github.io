@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | EDT | LITERAL | 30 | true | Contains the end date of the report. | 
 | DSIVHNDL | LITERAL | 50 | true | Contains the handle for the background job.  This is the ^XTMP global node where the report status and data will reside. | 
 | DSIVLOCS | LIST | 30 | true | Contains a list of clinics to return for the report.  The exception report will still gather appointments for all locations (except inactive, and \ZZ\ locations), but will only return the selected ones. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

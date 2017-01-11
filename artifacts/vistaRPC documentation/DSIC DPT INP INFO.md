@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 15 | true | This is the pointer value to the PATIENT file (i.e., DFN) | 
 | DATE | LITERAL | 13 | true | This is the Fileman format, date only, for which you wish to retrieve inpatient movement information.  If it is not passed, then the program will use NOW as the date. | 
 | LODGE | LITERAL | 1 | true | This is a Boolean flag (1 or 0 or <null>).  If LODGE=1 then allow for lodger type admissions.  If not, exclude lodger type admissions from the search.  The default value is <null>, exclude lodger admisssions. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

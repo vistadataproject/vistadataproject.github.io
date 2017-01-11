@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CODE | LITERAL | 10 | true | The procedure code (external format) you wish to lookup (file #80.1). | 
 | DATE | LITERAL | 12 | true | The date you wish to check the code against code set versioning. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

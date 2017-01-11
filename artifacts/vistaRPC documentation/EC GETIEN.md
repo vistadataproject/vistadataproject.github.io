@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ecary |  |  |  |  | 
 | ECARY | LITERAL |  | true | Input variable ECARY contains the following elements     1.  FIL  - File number     2.  TXT  - .01 description | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

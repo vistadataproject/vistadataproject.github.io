@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CLNAME | LITERAL |  | true | This is the name (ASCII LITERAL) of the Class for which the callingapplication needs an IEN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

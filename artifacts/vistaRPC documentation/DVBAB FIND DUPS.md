@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | NAM | LITERAL |  |  | Name of possible patient | 
 | DOB | LITERAL | 7 |  | Date of Birth of possible patient | 
 | SSN | LITERAL | 10 |  | Social Security Number of possible patient | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

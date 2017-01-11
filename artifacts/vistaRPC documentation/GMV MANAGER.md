@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OPTION | LITERAL | 10 | true | Routine tag line in GMVRPCM to call. | 
 | DATA | LITERAL | 100 | true | Other data as required for the call. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

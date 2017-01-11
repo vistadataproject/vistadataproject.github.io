@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return encounter for an associated note
  Leading comment lines | LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT,LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

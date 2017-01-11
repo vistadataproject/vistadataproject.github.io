@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 245 | true | '^' delimited string contains the following:'^' piece     description   1   ACCESS TYPE -  A|B|C|D|E   2   USER        -  DUZ   3   IMAGE       -  MAGIEN   4   USER INTERFACE SOFTWARE   - STRING   5   PATIENT     -  DFN   6   IMAGE COUNT   7   ADDITIONAL DATA | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

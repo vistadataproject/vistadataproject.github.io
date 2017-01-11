@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGDRPC1](http://code.osehra.org/dox/Routine_MAGDRPC1_source.html)
  return value type | SINGLE VALUE
  description | Return the $J process id of the RPC backend
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

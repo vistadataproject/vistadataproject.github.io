@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | APPNAME | LITERAL | 64 |  | This is the application name of the application whose event is being audited. | 
 | MESSAGE | LITERAL | 250 |  | This is the message associated with the audit event. | 
 | DATA | LIST | 129 |  | This is a list of data attribute names and associated values to be includedin the audit event log. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

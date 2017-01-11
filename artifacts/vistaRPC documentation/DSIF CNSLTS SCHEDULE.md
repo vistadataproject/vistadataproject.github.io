@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | DSIFALRT | LITERAL |  | true | This determines whether or not Alerts should be sent with this update. 1 = Yes. | 
 | DSIFALTO | LITERAL |  |  | This is the array of alert recipient IENs. | 
 | DSIFCOM | LIST |  |  | This is the array of comments to be added to this action.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

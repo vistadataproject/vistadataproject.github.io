@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | NOTIFY | LITERAL | 2 | true | A message will be sent to the G.MAG_SERVER mail group if this value is set to '1' and if the share space does not meet the lower limit as establishedby the PERCENT SERVER RESERVE (#11) in the SITE PARAMETER FILE (#2006.1). | 
 | BP OS | LITERAL | 99 | true | This is the Microsoft Windows operating system name and version. | 
 | BPWS | LITERAL | 99 | true | This is the Background Processor network computer name. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

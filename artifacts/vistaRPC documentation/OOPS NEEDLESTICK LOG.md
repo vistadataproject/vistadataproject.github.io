@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | This parameter consists of 4 parts, the Start Date and End Date for the report, the Station(s) to be included on the report, and whether or not to include names on the report.  The parameter format is STARTDATE^ENDDATE^STATION^Y (or 'N'o).  | 
 | CALL | LITERAL | 30 | true | This parameter will indicate which menu the report was called from. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

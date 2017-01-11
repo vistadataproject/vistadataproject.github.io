@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | STATIEN | LITERAL |  | true | This is a required parm and it has to be a valid IEN for a station stored in DIC(4  Institution file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

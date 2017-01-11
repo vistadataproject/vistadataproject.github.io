@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | FRM | LITERAL | 40 | true | Input the pointer to the encounter form file or the unique name of theencounter form | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

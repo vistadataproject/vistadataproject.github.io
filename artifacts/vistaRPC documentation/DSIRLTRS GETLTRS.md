@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 99 | true | Internal Entry Number to File 19620.15 (DSIR NATIONAL LETTERS) or 19620.16 (DSIR LOCAL LETTERS) (Required) | 
 | LOCAL | LITERAL | 1 | true | File indicator (0 - National [Default], 1 - Local) (Optional) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Admin users
  Leading comment lines | Administrative complete action
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

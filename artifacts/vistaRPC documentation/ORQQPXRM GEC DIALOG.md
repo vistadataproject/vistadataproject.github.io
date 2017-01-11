@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | Patient DFN | 
 | Visit | LITERAL |  | true | This is the Visit Encounter String | 
 | NOTEIEN | LITERAL |  | true | NOTEIEN is the progress Note IEN in file 8925. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DAYS | LITERAL | 3 | true | The retention days | 
 | SITE | LITERAL | 30 | true | Site Number | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

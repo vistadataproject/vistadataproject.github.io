@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
  return value type | ARRAY
  description | The ROR GET SERVER TIME remiote procedure returns the current date/time from the VistA server.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

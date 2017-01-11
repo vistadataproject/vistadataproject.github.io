@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Is valid GN location? 1: true 0: false
  Leading comment lines | .ORY=returned list, ORFROM=text to $O from, DIR=$O direction.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

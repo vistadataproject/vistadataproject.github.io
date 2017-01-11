@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80) | 
 | CDT | LITERAL | 14 | true | This is the date to be used to check if the code was active as of that date. The default value is TODAY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

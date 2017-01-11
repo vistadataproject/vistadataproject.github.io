@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | EXT | LITERAL |  | true | The image file extension to be updated. | 
 | IEN | LITERAL |  | true | Image file internal entry number to be updated. | 
 | Device | LITERAL |  | true | 'NET' or 'JB' to specify which Image system reference to update. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

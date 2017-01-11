@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DSIFVAL | LITERAL |  | true | This is the text or code you wish to search Lexicon for. | 
 | DSIFAPP | LITERAL |  | true | This is the type of search you want to perform: CPT or ICD. Null searches all of Lexicon | 
 | DSIFDT | LITERAL |  | true | This is the date you want to do the Lexicon search for. If nothing is passed, it uses the current date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

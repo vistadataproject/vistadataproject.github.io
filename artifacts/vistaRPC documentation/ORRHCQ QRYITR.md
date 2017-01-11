@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORRITR | LITERAL |  | true | Iterator used to get the next patient in the query. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

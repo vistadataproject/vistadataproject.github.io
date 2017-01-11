@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | START DATE/TIME | LITERAL | 16 | true | Start date/time to return visits and appointments.  In internal FileMan format. | 
 | STOP DATE/TIME | LITERAL | 16 | true | Stop date/time to return visits and appointments. In internal FileMan format. | 
 | DUMMY | LITERAL | 16 | true | This is a dummy parameter so the Broker won't crash.appointments for this location only will be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

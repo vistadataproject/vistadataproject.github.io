@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 30 | true | Patient DFN ^ #_YRS_LIMIT ^ #_EXAMS_LIMIT #_YRS_LIMIT -- optional; an integer value, used to limit the returned listto include only exams within the most recent # of years specified #_EXAMS_LIMIT -- optiona; integer value to limit the number of listentries returned | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

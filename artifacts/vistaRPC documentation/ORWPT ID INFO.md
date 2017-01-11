@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return identifying information for a patient
  Leading comment lines | PID^DOB^SEX^VET^SC%^WARD^RM-BED^NAME
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

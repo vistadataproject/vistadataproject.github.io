@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return default hospital location ^SC( for PTEVT ptr #100.2
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\PK\) = IEN  MAGPARAM(\SYNCHRONOUS\) = 0/1 MAGPARAM(\OFFSITE\) = 0/1 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

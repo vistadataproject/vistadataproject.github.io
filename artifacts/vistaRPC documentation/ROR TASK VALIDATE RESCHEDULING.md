@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SCHCODE | LITERAL |  | true | Rescheduling code (\1D\, \1M\, \D@12:00\, etc). | 
 | SCHDT | LITERAL |  |  | Date when a task is scheduled to run for the first time (FileMan). By default (if $G(SCHDT)'>0), the current date/time is used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

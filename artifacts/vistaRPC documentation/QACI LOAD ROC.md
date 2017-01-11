@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PATSLIST | LIST |  | true | If defined, contains a list of ROC numbers for the previous group of ROCsthat was migrated from VistA to the Oracle table.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

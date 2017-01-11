@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDFN | LITERAL | 30 | true | Patient's DFN. | 
 | MAX | LITERAL | 4 | true | The maximum number of images to return. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

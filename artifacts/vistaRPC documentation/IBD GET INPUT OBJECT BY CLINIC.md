@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CLINIC | LITERAL | 30 | true | This is the pointer to file 44 or a unique clinic name. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

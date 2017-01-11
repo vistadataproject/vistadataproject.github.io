@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the table from which information is retrieved. | 
 | D0 | LITERAL | 30 | true | The value of this parameter is a number. This value is theinternal entry number in the table from which information is retrieved. | 
 | FIELD | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the field in the table from which information is retrieved. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

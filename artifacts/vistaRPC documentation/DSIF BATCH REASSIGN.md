@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | OLD USER | LITERAL | 30 | true | DUZ of Existing user that batch is assigned to currently. | 
 | New User | LITERAL | 30 | true | DUZ of user to reassign batch to. | 
 | Batch | LITERAL | 30 | true | Batch IEn to reassign | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

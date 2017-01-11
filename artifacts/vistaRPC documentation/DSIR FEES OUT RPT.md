@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DIVISIONS | LITERAL | 999 | true | This is a variable '^' delimited containing selected Divisions from whichthe user may see data. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

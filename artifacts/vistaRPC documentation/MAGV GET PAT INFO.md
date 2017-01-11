@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PATREFIEN | LITERAL | 10 | true | This is the internal entry number of the patient reference on the IMAGING PATIENT REFERENCE File (#2005.6). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | KLIST | LIST |  | true | KLIST(1) = First Key KLIST(2) = Second Key ... KLIST(N) = N-th Key | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

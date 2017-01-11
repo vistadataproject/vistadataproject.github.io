@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | EMAIL | LITERAL | 100 | true | The value of this optional parameter is a string that representsan e-mail address. This e-mail address is used to transmit amessage when there are images that cannot be enqueued. | 
 | PRIORITY | LITERAL | 10 | true | The value of this parameter is a positive integer number.This value indicates the relative priority of an entry in thetransmission queue. A higher number indicates a higher priority.The default value of this optional parameter is 500. | 
 | JBTOHD | LITERAL | 10 | true | The value of this parameter is a boolean switch that indicateswhether or not a copy of the image file(s) is to be made onRAID. A true value indicates that a copy on magnetic storageis to be made, a false value indicates that no such copy isto be made. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | LIST OF AUTOLINKS | LIST |  | true | List of entities autolinked to the team.Each subscript in the array will have the following structure:Piece--------1- AutoLink Display Text2- Autolink Type3- AutoLink Entity IENNormally, the display text value is the .01 field but when more identifyinginformation is needed, then this string could contain more. | 
 | TEAM | LITERAL | 20 | true | Pointer to entry in Team file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

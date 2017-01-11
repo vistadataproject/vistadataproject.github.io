@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL |  | true | INPUT PARAMETER - IEN = INTERNAL ENTRY NUMBER FOR FILE 19620 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

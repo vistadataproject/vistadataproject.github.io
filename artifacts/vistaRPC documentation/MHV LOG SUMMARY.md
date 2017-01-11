@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MHVUL2](http://code.osehra.org/dox/Routine_MHVUL2_source.html)
  return value type | GLOBAL ARRAY
  description | Retrieve MHV application log summary.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

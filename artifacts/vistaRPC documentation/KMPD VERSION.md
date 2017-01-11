@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [KMPDU5](http://code.osehra.org/dox/Routine_KMPDU5_source.html)
  return value type | ARRAY
  description | Get version number for CM Developer Tools application.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

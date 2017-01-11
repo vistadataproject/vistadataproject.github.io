@@ -32,3 +32,8 @@ title: VISTA RPC documentation
 | FLAG | LITERAL | 16 | true | Flag identifying the context of the orders to be retreived. | 
 | STARTDATE | LITERAL | 16 | true | The startdate for the order search in 'T' or Fileman format.Startdate is only considered when FLAG is '1' (return all orders). | 
 | STOPDATE | LITERAL | 16 | true | The stopdate for the order search in 'T' or Fileman format.Stopdate is only considered when FLAG is '1' (return all orders). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TYPE | LITERAL | 16 | true | Type of RPC call to be performed | 
 | INPUT | LITERAL | 16 | true | Input parameters | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

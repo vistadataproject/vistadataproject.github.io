@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PATIENT | LITERAL | 16 | true | Patient identifier from patient file [#2]. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

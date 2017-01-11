@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Get all data in one call and let the GUI divide it up
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

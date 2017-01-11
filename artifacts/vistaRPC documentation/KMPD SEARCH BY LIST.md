@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | LISTTYPE | LITERAL | 5 | true | 2 - client name3 - ip address | 
 | SUBSCRIPT | LITERAL | 30 | true | Subscript (free text)Ex: \ORWCV\ | 
 | DATAGLOBAL | LITERAL | 30 | true | Global containing data.Ex: ^TMP($J) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

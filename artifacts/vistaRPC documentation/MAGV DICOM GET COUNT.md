@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MACHID | LITERAL | 24 |  | The machine ID to be matched to the machine ID in the DICOM FAILEDIMAGES (#2006.575) file. | 
 | SERVTYPE | LITERAL | 20 |  | The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

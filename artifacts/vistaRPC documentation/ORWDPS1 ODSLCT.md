@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return default lists for dialog
  Leading comment lines | PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient)
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

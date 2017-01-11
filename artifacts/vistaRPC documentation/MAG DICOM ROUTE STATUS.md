@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | D0 | LITERAL | 30 | true | The value of this parameter is a pointer to an entry in theTransmission Queue (^MAGQUEUE(2006.035,D0)).The status of this entry in the Transmission Queue will beupdated by this RPC. | 
 | STATUS | LITERAL | 30 | true | The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\. | 
 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

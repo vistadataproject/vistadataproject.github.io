@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE NUMBER | LITERAL | 20 | true | File number for the file to which the potential duplicate records belong. For example, if the two potential duplicate entries are on the PATIENT file, this value is set to 2. | 
 | TO_IEN | LITERAL | 14 | true | Internal Entry Number (IEN) of one of the potential duplicate records. For example, this could be a DFN from the PATIENT file (file #2). | 
 | FROM_IEN | LITERAL | 14 | true | Internal Entry Number (IEN) of one of the potential duplicate records. For example, this could be a DFN from the PATIENT file (file #2). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

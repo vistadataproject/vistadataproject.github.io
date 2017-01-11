@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | Consult IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

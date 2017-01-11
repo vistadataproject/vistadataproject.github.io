@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OFFSET | LITERAL | 100 | true | The value of this parameter is a string. The first time this Remote Procedure is called for a certain\master file\, the value of this parameter must be empty. Each next time this Remote Procedure is called for the same\master file\, the value of this parameter must be copied fromthe return array, so that the Remote Procedure will continuewhere it left off in the previous call. | 
 | MAX | LITERAL | 15 | true | The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

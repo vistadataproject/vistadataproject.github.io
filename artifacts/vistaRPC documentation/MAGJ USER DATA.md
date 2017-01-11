@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PARAMS | LITERAL | 100 | true | TXID ^ SYSUPDAT ^ TXDUZ ^ TXDIVTXID: Transaction ID--identifies the type of transaction being requested;TXDUZ: Optional; DUZ value for retrieving another users stored data.  E.g., allow User X to see User Y's Hanging ProtocolsTXDIV: Optional; DIVision value for viewing data stored from other divisions. | 
 | DATA | WORD PROCESSING | 240 |  | Optional Block of text sent from the client side; has structure as follows *LABEL Label Value 0:N lines of text associated with Label Value *ENDNote: multiple sequences of the above may be included. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

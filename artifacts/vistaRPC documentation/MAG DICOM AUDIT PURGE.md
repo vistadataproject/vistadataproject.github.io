@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FILENUM | LITERAL | 20 | true | The value of this parameter is a number. This number identifiesthe FileMan table that is to be purged. | 
 | DATE | LITERAL | 20 | true | The value of this parameter is a (FileMan formatted) date.Data generated before this date will be purged from the currentFileMan table. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

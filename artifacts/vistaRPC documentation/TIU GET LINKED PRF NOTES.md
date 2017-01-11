@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | PTDFN | LITERAL |  | true | Patient IEN in Patient file | 
 | TIUTTL | LITERAL |  | true | PRF Title IEN in file 8925.1 | 
 | REVORDER | LITERAL | 1 | true | Optional.  Boolean flag, with 1 indicating to subscript the list of notesin reverse chronological order.  Default is chronological order. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

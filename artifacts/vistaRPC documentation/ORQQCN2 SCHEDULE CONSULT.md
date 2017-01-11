@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | Send alerts? | LITERAL | 2 | true |  | 
 | Send alerts to | LITERAL | 100 | true | \;\ separated list of alert recipients - pointers to file 200. | 
 | Comments | LIST |  |  | Array of comments to be added with this action. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

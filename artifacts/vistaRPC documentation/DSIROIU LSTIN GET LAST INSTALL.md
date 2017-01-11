@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROIU](http://code.osehra.org/dox/Routine_DSIROIU_source.html)
  return value type | SINGLE VALUE
  description | This RPC call returns the latest BUILD name installed in the DSIR package. 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

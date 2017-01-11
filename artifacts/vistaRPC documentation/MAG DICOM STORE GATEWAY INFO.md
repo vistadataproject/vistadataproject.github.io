@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | LOCATION | LITERAL | 10 | true | The value of this parameter is a pointer to the Institution file (#4).The location being pointed to is the one for which the DICOM Gatewayoperates. | 
 | FILES | LIST | 32000 | true | This parameter is an array.The entries in this array contain information about fileson the DICOM Gateway.For each file, a timestamp (most recent modification) andthe full path+file name is included. | 
 | VERSION | LIST | 32000 | true | This parameter is an array.The entries in this array contain information about theversion stamps of the various executables in the DICOMGateway application.For each component, a timestamp (most recent modification)and the full path+file name is included. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

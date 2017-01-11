@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 245 | true |  | 
 | DFN | LITERAL |  |  | DFN OF PATIENT | 
 | ICN | LITERAL |  |  | ICN OF PATIENT | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

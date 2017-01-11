@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | TYPE | LITERAL |  | true | External value of TYPE field (#2006.941,1) | 
 | SUBTYPE | LITERAL |  | true | External value of SUBTYPE field (#2006.941,2) | 
 | STATUS | LITERAL |  | true | External value of STATUS field (#2006.941,3) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

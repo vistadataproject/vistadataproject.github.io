@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | Input: the patient's internal entry number (IEN) from file #2. Only one DFN is allowed to be passed in, required. | 
 | VPSCST | LITERAL | 1 | true | Input: the call status code, either 'C' (Connected) or 'X' (Change Information), required. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

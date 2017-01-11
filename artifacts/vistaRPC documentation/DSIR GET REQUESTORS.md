@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PREF | LITERAL | 30 | true | PREF - FIRST PART OF THE REQUESTOR NAME(S) BEING SEARCHED FOR | 
 | STYP | LITERAL | 1 | true | STYP - \L\ - USE THE \AC\ INDEX FOR LAST NAME         \C\ - USE THE \AD\ INDEX FOR CORPORATE NAME | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

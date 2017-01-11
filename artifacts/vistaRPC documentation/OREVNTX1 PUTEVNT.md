@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Save new patient delayed events to file 100.2
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

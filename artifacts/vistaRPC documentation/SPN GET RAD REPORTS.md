@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | EXAM | LITERAL |  | true |  | 
 | EXAM_TYPE | LITERAL |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

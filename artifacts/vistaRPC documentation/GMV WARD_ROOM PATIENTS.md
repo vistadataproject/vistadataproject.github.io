@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | GMVWRD | LITERAL | 60 | true | Name of the ward (e.g., 2EAST). | 
 | GMVRLST | LITERAL | 150 | true | The room numbers of the ward separated by comma (e.g., 200,210,220). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

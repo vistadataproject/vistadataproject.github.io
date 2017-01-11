@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL | 20 | true | The Flags Parameter can contain'C' for images captured on the Capture Workstationand/or'I' for images captured throught the Import API.  If the parameter is null it defaults to 'CI'. | 
 | FROMDATE | LITERAL | 20 | true | The earliest Date to search for users. | 
 | TODATE | LITERAL | 20 | true | The latest Date to search for users. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

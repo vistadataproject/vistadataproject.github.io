@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MACHID | LITERAL | 30 | true | This is the hostname of the DICOM Imaging Gateway running the Importer application. | 
 | FILEPATH | LITERAL | 30 | true | This is the path of the DICOM image file being deleted. | 
 | IMAGEUID | LITERAL | 30 | true | This is the image's SOP Instance UID. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

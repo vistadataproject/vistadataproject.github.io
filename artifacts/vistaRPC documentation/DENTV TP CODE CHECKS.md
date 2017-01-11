@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | VISDT | LITERAL |  | true | Contains the visit date to be used to look back for codes.  A visit date=0 means to only check the current session data, not the historical records. | 
 | PROV | LITERAL | 30 | true | Contains the provider (DUZ) to be used to check compliance. | 
 | DATA | LIST | 10 | true | Contains an array of the current session's completed procedures as DATA(n)=ADA Code | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | RESULTS | LITERAL |  | true | Results passed back to calling application | 
 | PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
 | STATUS | LITERAL | 50 | true | Whether Inpatient or Outpatient. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

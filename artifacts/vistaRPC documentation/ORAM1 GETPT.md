@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
  return value type | ARRAY
  description | Returns list of patients from Anticoagulation Flowsheet file (#103).
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

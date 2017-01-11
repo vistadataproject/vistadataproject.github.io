@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | CDT | LITERAL | 14 | true | This date will be sued to check if the code was active as of that date. Default is today. | 
 | FUN | LITERAL | 1 | true | This flag will allow for the RPC to be used as an intrensic function. This value is not needed for GUI calls. | 
 | SYS | LITERAL | 2 | true | This is the ICD coding system you wish to use. 1  = ICD-9 Diagnosis2  = ICD-9 Procedure30 = ICD-10 Diagnosis (Default)31 = ICD-10 Procedure | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | XDUZ | LITERAL | 1 | true | This is a pointer to the NEW PERSON file. | 
 | RDV | LITERAL | 1 | true | This is a Boolean flag (1 or 0) indicating whether or not remote data view (or visitors) should be allowed as a provider. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

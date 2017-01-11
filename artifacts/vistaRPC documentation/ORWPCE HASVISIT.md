@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  |  | Patient DFN. | 
 | ORLOC | LITERAL |  |  | Hospital Location. | 
 | ORDTE | LITERAL |  |  | Visit Date | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

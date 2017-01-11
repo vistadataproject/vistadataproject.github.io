@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | STATION | LITERAL | 30 | true | The value of this parameter is a text string (upper case only).This string uniquely identifies the \station name\ of theDICOM Gateway that is reporting its version information. | 
 | VERSION | LITERAL | 30 | true | The value of this parameter is a text string.This text string represents the version identification for theversion of the DICOM Gateway software that is running on the currentcomputer. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

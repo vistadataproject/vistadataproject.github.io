@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSICDM](http://code.osehra.org/dox/Routine_DSICDM_source.html)
  return value type | SINGLE VALUE
  description | This will check whether or not the current VistA system supports VistA Imagings import API.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

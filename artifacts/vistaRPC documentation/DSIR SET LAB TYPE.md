@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ROI | LITERAL | 10 | true | INPUT PARAMETER   ROI = REQUEST IEN | 
 | TYP | LITERAL | 2 | true | INPUT PARAMETER    TYP = SELECTED LAB TYPE - A NUMERIC VALUE >= 0 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

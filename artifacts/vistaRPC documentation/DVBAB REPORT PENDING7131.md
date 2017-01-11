@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SELDIV | LITERAL |  | true |  | 
 | DIV | LITERAL |  | true |  | 
 | DVBADLMTR | LITERAL | 1 | true | This parameter is used to indicate whether the report will create a plain text format or a comma delimited output format. DVBADLMTR=0 means report will be in plain text and DVBADLMTR=1 means create output in comma delimited format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

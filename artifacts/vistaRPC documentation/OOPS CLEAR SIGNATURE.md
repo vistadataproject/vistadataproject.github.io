@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 20 | true |  | 
 | FORM | LITERAL | 10 | true |  | 
 | CALL | LITERAL | 5 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

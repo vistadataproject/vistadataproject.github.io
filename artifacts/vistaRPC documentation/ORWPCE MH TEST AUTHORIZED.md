@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TEST | LITERAL |  |  | MENTAL HEALTH TEST NAME | 
 | USER | LITERAL |  |  | The user giving the test. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

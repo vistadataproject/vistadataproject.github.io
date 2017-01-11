@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIVRPT | LITERAL | 2 | true | Report type: C=Clinic, U=User, CU=Clinic and User, UC=User and Clinic | 
 | DSIVHNDL | LITERAL | 30 | true | Handle for the background job and XTMP global that contains the report status and data. | 
 | DSIVLOCS | LIST | 30 | true | Contains an optional list of locations to include or exclude from the report. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

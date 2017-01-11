@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | NARR | LITERAL |  | true | This is the narrative entered for the Dx. | 
 | CODE | LITERAL |  | true | This is the ICD code. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

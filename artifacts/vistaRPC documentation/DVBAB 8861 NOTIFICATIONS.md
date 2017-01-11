@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 5 | true | IEN of the request. | 
 | STAT | LITERAL | 9 | true | Status of Form 8861 request. This determines what message is sent and to whom. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

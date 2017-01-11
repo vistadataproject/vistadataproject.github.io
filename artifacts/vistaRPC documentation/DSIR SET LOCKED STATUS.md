@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | EDDT | LITERAL | 99 | true | This is the internal number of the entry in 19620.3 | 
 | LSTAT | LITERAL | 1 | true | This is the lock status 0 = Unlock, 1 = Lock | 
 | IEN | LITERAL | 3 | true | Internal Entry Number - Required | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

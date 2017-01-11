@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
  return value type | ARRAY
  description | Returns list of 'MAG DESCRIPTIVE CATEGORIES'.  i.e., NAME^IEN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

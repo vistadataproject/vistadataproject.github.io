@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | EDATE | LITERAL |  | true | Ending date in a date range to use for retrieving results for the report. | 
 | DVBAH | LITERAL |  | true | Defines the scope of the report:  'H' indicates HOSPITAL  'D' indicates DOM | 
 | DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 20 | true | The value of this parameter is the VA-defined DFN patient identifier.This is the internal entry number for the patient at the local hospital. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PAT | LITERAL | 20 | true | PAT = fully qualified patient pointer    Examples:   \125325;DPT(\              \152;DSIR(19620.96,\, | 
 | FRDT | LITERAL | 7 | true | FRDT is the starting date which will be reported on.  FILEMAN date format - 3101225 = Dec 25,2010 | 
 | TODT | LITERAL | 20 | true | TODT is the ending date which will be reported on.This is an optional field and if not provided, the current date will be used. FILEMAN date format - 3101225 = Dec 25,2010 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

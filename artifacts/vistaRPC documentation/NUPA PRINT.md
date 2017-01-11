@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ZTIO | LITERAL |  | true | Printer to print to. | 
 | ARRAY | LIST |  | true | Array of data to print, in format  ARRAY(1), ARRAY(2), etc. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

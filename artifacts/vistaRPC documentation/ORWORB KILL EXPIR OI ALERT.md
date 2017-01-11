@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Patient DFN | LITERAL | 32 | true | Patient DFN | 
 | Alert type | LITERAL | 8 | true | Pointer to type of alert in the OE/RR NOTIFICATIONS file (100.9). This caneither be of type FLAGGED OI EXPIRING - INPT (#64) or FLAGGED OI EXPIRING- OUTPT (#65). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

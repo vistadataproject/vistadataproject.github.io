@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | MSG | LITERAL | 30 | true | The value of this parameter is an integer number.This value is \one less than\ the number of the first log-entryto be returned. | 
 | MAX | LITERAL | 30 | true | The value of this parameter is an integer number.This value is the maximum number of log-entriesto be returned. | 
 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

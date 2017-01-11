@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | alert user (ORDUZ) when order (ORID) resulted
  Leading comment lines | if no user passed, use ordering provider:
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

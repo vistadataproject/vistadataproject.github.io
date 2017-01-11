@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   B  Backwards. Traverses the index in the opposite     direction of normal traversal   G  Retrive generic drugs (from file #50.6).     Otherwise, list of dispensed drugs (from     file #50) is retrived. | 
 | NUMBER | LITERAL |  |  | Deprecated.parameter designates all entries. | 
 | FROM | LITERAL |  |  | Deprecated.   ^01: FromName   ^02: FromIEN   For example, a FROM value of \XA\ would list entries following XA. You canuse the 2-nd and 3-rd \^\- pieces of the Results[0] to continue thelisting in the subsequent procedure calls.   NOTE: The FROM value itself is not included in the      resulting list.   See description of the LIST^DIC for more details about the PART, NUMBER and FROM parameters. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

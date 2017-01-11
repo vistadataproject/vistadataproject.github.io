@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 20 | true |  Internal entry number of entry in the Patient file. | 
 | REPORT ID | LITERAL | 20 | true |  Identification number of the desired report. | 
 | HANDLE | LIST |  |  | List of remote handles to print for. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

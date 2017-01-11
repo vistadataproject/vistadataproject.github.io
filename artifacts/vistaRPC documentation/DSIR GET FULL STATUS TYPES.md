@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ACT | LITERAL | 1 | true | ACT - INDICATED IF A STATUS IS ACTIVE (1) OR INACTIVE (0). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

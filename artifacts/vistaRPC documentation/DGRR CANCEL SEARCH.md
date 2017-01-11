@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | JOB | LITERAL | 99 | true | JOB = A unique JOB ID used to cancel a VistA search. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

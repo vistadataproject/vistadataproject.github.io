@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  |  |  | 
 | DATE | LITERAL |  |  | Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed. | 
 | RTEXT | LITERAL |  |  | Actual carrot ('^') deliminated text (by line) of the reminder. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

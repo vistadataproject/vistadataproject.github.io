@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DPTX | LITERAL | 255 | true | This should be the entire input from either the Magnetic Strip or theBarcode. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

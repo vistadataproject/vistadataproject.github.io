@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Set Digital Text data into file 100 & return the array
  Leading comment lines | ORDER = ORIFN;ACTION,ORDEA = Schedule of Drug (2-5),ORSIGNER = DUZ of signer
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

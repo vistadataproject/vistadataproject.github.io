@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [XWBZ1](http://code.osehra.org/dox/Routine_XWBZ1_source.html)
  return value type | GLOBAL ARRAY
  description | This RPC brings back a lot of meaningless data to the client.  It exists forsupport of EGcho - Broker demonstration program.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

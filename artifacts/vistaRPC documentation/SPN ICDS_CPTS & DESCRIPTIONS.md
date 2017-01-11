@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL |  |  | Individual Patient's ICN  | 
 | SPNCUTDT | LITERAL |  |  | Date to start search from.   | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

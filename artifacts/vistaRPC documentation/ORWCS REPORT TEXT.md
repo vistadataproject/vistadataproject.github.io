@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
 | CONSULT ID | LITERAL | 20 | true | Consult ID.Format: Internal entry number to REQUEST/CONSULTATION file (#123)Example: 1000 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FROM | LITERAL |  | true | Starting name for cross reference | 
 | DIR | LITERAL |  | true | Direction for $ORDER | 
 | XREF | LITERAL |  | true | Identifies the SET xref to use in the orderable item file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PSBWARD | LITERAL | 1 | true | ^1=Ward name^2=IEN of ward as in file 53.66 | 
 | PSBPARS | LITERAL | 1 | true | IV type - \A\ for Additive          \P\ for Piggyback          \H\ for Hyperal          \C\ for Chemo          \S\ for Syringe          \S\ for Syringe ^2-^16 Setting     1 for Warning     2 for Non-Verify     3 for Invalid | 
 | PSBDIV | LITERAL | 1 | true | ^1=IEN of division as in the Ward Location file (File #42) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

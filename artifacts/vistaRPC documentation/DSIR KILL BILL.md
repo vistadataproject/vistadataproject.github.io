@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | BILL IEN | LITERAL | 9999 | true | Internal Number to file 19620.2 DISR BILLS. | 
 | ADMIN OVERRIDE | LITERAL | 1 | true | This is a set of codes 0 = No, 1 = Yes to override the checking for any payments and delete the bill and all payments. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

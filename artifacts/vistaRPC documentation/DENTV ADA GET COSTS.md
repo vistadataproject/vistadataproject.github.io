@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DENTVRP3](http://code.osehra.org/dox/Routine_DENTVRP3_source.html)
  return value type | GLOBAL ARRAY
  description | Returns all entries in file 228 and their cost fields.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

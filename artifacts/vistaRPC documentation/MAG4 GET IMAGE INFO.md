@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 30 | true | Image File internal entry number. | 
 | FLAGS | LITERAL |  | true | Flags that control the execution (can be combined):\D\  Deleted Image Information is relevant | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

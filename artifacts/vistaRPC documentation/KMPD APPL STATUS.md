@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | APPLICATION | LITERAL | 5 | true | \H\ - hl7\R\ - rum\S\ - sagg\T\ - timing | 
 | GLOBAL | LITERAL | 30 | true | Global in which to store data.  Ex: ^TMP($J) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

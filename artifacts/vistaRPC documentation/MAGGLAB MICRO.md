@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGTLB](http://code.osehra.org/dox/Routine_MAGGTLB_source.html)
  return value type | ARRAY
  description | ;The line tag MICRO is used for selection of Microscopic Objective.An array of entries in the Microscopic Objective file are returned.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

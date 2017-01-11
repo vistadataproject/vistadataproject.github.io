@@ -35,3 +35,8 @@ title: VISTA RPC documentation
 | AUTHSVC | LIST | 80 | true | Authorized Services (Word Processing - Default text from Site Parameter file 161.4 field #28) Array passed must be: AUTHSVC(1)= (text), with additional lines if needed AUTHSVC(2)= (text line 2), etc. | 
 | REFPROV | LITERAL | 99 | true | Referring Provider (Optional - Pointer to file 200 NEW PERSON) | 
 | CNTIEN | LITERAL | 25 | true | Contract IEN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

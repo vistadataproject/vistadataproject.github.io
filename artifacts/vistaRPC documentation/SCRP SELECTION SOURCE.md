@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | REPORT NAME | LITERAL | 50 | true | Name of the report. | 
 | SEARCH TEXT | LITERAL | 50 | true | This parameter contains the free-text entered bythe user that is compared to the entity entry's nameto filter out possible choices. If null, thenall valid entries are presented to the user. | 
 | SELECTIONS | LIST |  | true | This array contains all of the selections already madeby the user for the current query template. This listof selections is then used to filter out possible selectionsfor the current 'entity type' being requested.For example, often the report criteria requires one ormore teams must be selected. However, the team must bein one of the divisions already selected by the user.In this case, the user's division selections areused to filter out inapproiate teams during a teamarray build. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

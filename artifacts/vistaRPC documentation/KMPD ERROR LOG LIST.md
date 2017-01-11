@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PARAM1 | LITERAL | 60 | true | Internal entry for file #3.075 (ERROR LOG).  This value will be $P($H,\,\). | 
 | SCREEN | LITERAL | 254 | true | Screen for ERROR TYPE. | 
 | DATAGLOBAL | LITERAL | 60 | true | Return global for data (^TMP($J). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

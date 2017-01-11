@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Kill global data using passed global root value.
  Leading comment lines | Variables used:,ORJ    = Job number to use in ^TMP global root.,ORROOT = Root of ^TMP global to kill.,Y      = Returned RPC value.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

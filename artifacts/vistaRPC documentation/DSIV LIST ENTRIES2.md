@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | FLDS | LITERAL | 100 | true | Field list (optional).  If not specified .01I;.01 are returned. | 
 | NUMS | LITERAL | 10 | true |  Contains the maximum number of entries to return per rpc call. If not defined, then all entries will be returned (backward compatible). | 
 | MORE | LITERAL | 1 | true |  Used with the NUMS parameter, More=0 means first call to rpc, More'=0 means get the next 'set' of NUMS records.  The data will end with a record = $END$ to tell the gui that there are no more records. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

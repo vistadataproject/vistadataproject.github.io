@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | STDT | LITERAL | 7 | true | Start Date - Required (FileMan Date Format) | 
 | ENDT | LITERAL | 7 | true | End Date - Optional (FileMan Date Format - Default to current day) | 
 | DATA | LIST | 254 | true | Array as returned from RPC: ORQQPS LIST - Optional | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

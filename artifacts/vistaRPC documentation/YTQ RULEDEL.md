@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI7](http://code.osehra.org/dox/Routine_YTQAPI7_source.html)
  return value type | ARRAY
  description | Deletes a rule and all associated skips and instrument rules   Input: IEN as ien of file 601.82   Output Data vs Error
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

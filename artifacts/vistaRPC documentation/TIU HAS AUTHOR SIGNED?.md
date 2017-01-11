@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the TIU Document IEN. | 
 | TIUUSR | LITERAL |  | true | This is the DUZ of the user attempting to sign. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

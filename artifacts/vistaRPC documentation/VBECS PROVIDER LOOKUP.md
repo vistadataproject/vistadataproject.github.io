@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DIV | LITERAL | 8 | true | Input DIV = DIVISION (Station Number) | 
 | DATA | LITERAL | 99 | true | Input DATA = Name of provider used to perform search in file 200. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

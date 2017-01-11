@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | RPC - get patient items in date range for a type
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

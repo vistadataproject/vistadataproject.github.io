@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OLD BATCH | LITERAL | 35 | true | Old Batch IEN | 
 | NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

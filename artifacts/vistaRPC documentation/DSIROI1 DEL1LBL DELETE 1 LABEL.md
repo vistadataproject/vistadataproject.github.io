@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | CIEN | LITERAL | 20 | true | Clerk ID is the IEN from file 200 for the requesting clerk. | 
 | RIEN | LITERAL | 20 | true | RIEN is the Requestor IEN.  This points to file 19620.12 | 
 | AIEN | LITERAL | 20 | true | AIEN is the IEN of the address record.  This points at file 19620.92. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

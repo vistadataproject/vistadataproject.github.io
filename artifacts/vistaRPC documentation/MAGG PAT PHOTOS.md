@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGDFN | LITERAL | 30 | true | This is the DFN of the patient in question. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

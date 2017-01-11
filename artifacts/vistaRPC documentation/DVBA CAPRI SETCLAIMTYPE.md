@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | REQIEN | LITERAL |  | true | This is the valid 2507 Request IEN | 
 | ARRAYCT | LIST |  | true | This is the list of Claim Types to be set to the valid 2507 Request | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

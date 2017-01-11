@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | HANDLE | LITERAL | 30 | true | This is the HANDLE from the XWB REMOTE RPC. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

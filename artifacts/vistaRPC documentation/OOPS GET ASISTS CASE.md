@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NAME | LITERAL | 100 | true | This input parameter contains the Name of the person involved in an ASISTS claim that the lookup is being performed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

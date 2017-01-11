@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL | 250 | true | NAME_\~\_SSN_\~\_NTNAME_\~\_PHONE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

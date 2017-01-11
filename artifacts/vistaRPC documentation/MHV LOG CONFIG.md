@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | UPDATE | LIST | 32000 | true | Configuration parameters to update     UPDATE(\STATE\) - Flag 0/1                      On or Off    UPDATE(\PURGE\) - Purge Date/Time                      Fileman date/time                      Default 30 days from Today    UPDATE(\LEVEL\) - Logging level                      Error, Trace, Debug, Name                      Default - Trace    UPDATE(\NAMES\) - Caret delimited list of log entry namesUPDATE(\AUTOPURGE\) - Flag 0/1                      Default - 0 Off     UPDATE(\DAYS\) - Number of Days to keep | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

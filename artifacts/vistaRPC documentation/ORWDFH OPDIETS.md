@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return a list of up to 5 outpatient diets from file 119.9
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

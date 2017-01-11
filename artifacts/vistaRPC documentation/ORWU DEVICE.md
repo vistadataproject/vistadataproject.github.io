@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a subset of entries from the Device file
  Leading comment lines | .LST(n)=IEN;Name^DisplayName^Location^RMar^PLen,FROM=text to $O from, DIR=$O direction
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

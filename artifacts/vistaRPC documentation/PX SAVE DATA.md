@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | LOC | LITERAL | 40 | true | This is the hospital location. This is not used when the information is from an outside source. | 
 | PKGNAME | LITERAL | 60 | true | The package name that is sending the data to PCE. This should be the full package name, such as PATIENT CARE ENCOUNTERS.  | 
 | SRC | LITERAL | 60 | true | The source of the data - such as VLER E-HEALTH EXCHANGE. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

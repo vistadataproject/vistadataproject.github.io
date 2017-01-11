@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | OLDAYS | LITERAL | 3 | true | This is the Oldest age (ie 1 day) if DVBCSORT=A (age).  This goes withERDAYS (earliest age - ie 30 days).  ERDAYS must be < OLDAYS | 
 | ADIVNUM | LITERAL | 3 | true | This is the regional office number - this is required only if DVBCSORT=R,otherwise send as null. | 
 | ELTYP | LITERAL | 1 | true | This is the elapsed time.  Values are C (calendar days - default) or W(workdays).  If DVBCSORT=A,S, or V - this must not be null. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

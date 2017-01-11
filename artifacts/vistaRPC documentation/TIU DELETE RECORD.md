@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | Record number of TIU Document to be deleted. | 
 | TIURSN | LITERAL |  | true | This optional parameter specifies the reason for deletion (i.e., PrivacyAct, or Administrative Action). It only needs to be passed if the document has already been signed, and the user is still authorized to delete therecord. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

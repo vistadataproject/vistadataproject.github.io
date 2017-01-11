@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\DURATION IN MILLISECONDS\) =  MAGPARAM(\ENDPOINT PLACE\) = Pointer to IMAGING SITE PARAMETERS file (#2006.1) MAGPARAM(\STORAGE PROVIDER\) = Pointer to STORAGE PROVIDER file (#2006.917) MAGPARAM(\SIZE IN BYTES\) =  MAGPARAM(\START DATE/TIME\) =  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

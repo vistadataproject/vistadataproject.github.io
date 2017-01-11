@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DVBAETYP | LITERAL | 1 | true | The type of cryptography action to execute: 1: Encryption or 2: Decryption. | 
 | DVBAIVAL | LITERAL | 999 | true | The single or '^' delimited string value(s) to perform the cryptography action on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

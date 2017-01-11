@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPU | LIST | 512 | true | The parameters are DFN, Beginning date range, Ending date range, and Team | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

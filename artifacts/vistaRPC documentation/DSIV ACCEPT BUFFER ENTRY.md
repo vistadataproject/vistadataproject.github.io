@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | IVMREPTR | LITERAL | 4 | true | Internal entry number in IVM REASONS FOR NOT UPLOADING INSURANCEfile (#301.91) if applicable. | 
 | DSIVAUDT | LITERAL | 10 | true | Internal entry number in File #19625.  Used when filing COMMENT fields. | 
 | IBDATA | LITERAL | 100 | true | IBDATA array containts the following variables and data in an array e.g. IBDATA(1)=\IBINSDA^1002\      IBDATA(2)=\INGRPDA^\      IBINSDA=File 36 IEN if not adding new entryIBGRPDA=File 355.3 IEN if not adding new entryIBPOLDA=File 2.312 IEN if not adding new entryIBMVINS=Type for INSURANCE 1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVGRP=Type for GROUP     1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVPOL=Type for POLICY    1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBNEWINS=Add new INSURANCE COMPANY flag (non-zero means add)IBNEWGRP=Add new GROUP INSURANCE PLAN flag (non-zero means add)IBNEWPOL=Add new patient insurance policy (non-zero means add)IVMREPTR=File 301.91 IEN if applicable (IVM REASONS FOR NOT UPLOADING..)DSIVAUDT=File 19625 IEN if updating pt policy or group plan COMMENTIBELIG=to copy eIV report to pt elig/benefits 0=no,1=yes | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

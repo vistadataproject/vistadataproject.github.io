@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ZYx | LITERAL | 30 | true | '^' delimited string    FILE NUM ^ NUM TO RETURN ^ TEXT TO MATCH ^  ^ SCREEN ($P 5-99) | 
 | MAGGLKP |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PAT | LITERAL | 35 | true | This is any lookup value for a patient (name, SSN, DFN, etc.) | 
 | ISSSN | LITERAL | 1 | true | This is a Boolean flag.  If 1, then the PAT lookup value is the patient's SSN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

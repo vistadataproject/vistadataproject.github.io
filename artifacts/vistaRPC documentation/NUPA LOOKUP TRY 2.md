@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [NUPAAS1](http://code.osehra.org/dox/Routine_NUPAAS1_source.html)
  return value type | GLOBAL ARRAY
  description | Not currently used.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

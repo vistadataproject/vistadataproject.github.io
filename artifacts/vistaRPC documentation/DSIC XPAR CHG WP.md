@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 250 | true | DATA - required - p1~p2~p3  p1 := optional - entity - if not passed, set to \SYS\ for                   current user.  p2 := required - parameter name  p3 := optional - instance (default is 1) RETURN PARAMETER DESCRIPTION: Returns \1^\ on success        \-1^Error Message\ on failure | 
 | ARRAY | LIST | 250 | true | This is an array of the text to be stored in the parameter. Format is: ARRAY(1)=1st line of TextARRAY(2)=2nd line of TextARRAY(n)=nth line of Text ARRAY(n)=\\ to store blank lines for formatting, such as paragraph             separation. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

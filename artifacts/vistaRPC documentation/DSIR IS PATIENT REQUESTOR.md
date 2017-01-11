@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | FULLY QUALIFIED POINTER TO ^DPT OR ^DSIR(19520.96 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT ID | LITERAL | 16 | true | Patient Identifier from Patient file [#2] | 
 | HOSPITAL LOCATION | LITERAL | 16 | true | Patient's HOSPITAL LOCATION [#44]. May be null. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

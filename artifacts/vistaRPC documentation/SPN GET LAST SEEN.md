@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICNLST | LIST |  |  | An array list of Integration Control Numbers of patients in the PATIENT file (#2).  Format: ICNLST(1)=1001000001, ICNLST(2)=1001000002, etc. | 
 | DAYS | LITERAL |  |  | The number of days back from current date to begin search from. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

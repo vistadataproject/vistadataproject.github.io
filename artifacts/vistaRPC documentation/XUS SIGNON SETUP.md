@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | RPC. XUS SIGNON SETUP - IA #1632 (API IA #4054)
  Leading comment lines | sets up environment for GUI signon
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

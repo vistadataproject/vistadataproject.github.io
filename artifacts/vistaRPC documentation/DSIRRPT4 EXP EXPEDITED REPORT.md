@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DIV | LITERAL | 12 | true | This is an optional division number.  If not provided, DUZ(2) is used. | 
 | SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the report should be scheduled. | 
 | ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

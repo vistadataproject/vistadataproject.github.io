@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return default start and stop dates for clinics in form start^stop
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

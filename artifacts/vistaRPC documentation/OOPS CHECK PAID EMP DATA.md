@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 25 | true | The input parameter, IEN, contains the record identifier for the ASISTS claimthat is being validated. | 
 | INPUT | LITERAL | 25 | true | Parameter INPUT is the FORM name and IEN of OOPS(2260 claim number that needsto be checked. The input format is:FORM^IEN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

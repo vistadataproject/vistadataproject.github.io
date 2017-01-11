@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDFN | LITERAL | 30 | true | DFN of Patient | 
 | PROC | LITERAL | 10 | true |  IEN from file 702.01 if just ome procedure desired, but it defaults to all. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

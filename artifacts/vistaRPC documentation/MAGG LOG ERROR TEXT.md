@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TEXT | LIST |  | true | This is the list of text to insert. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

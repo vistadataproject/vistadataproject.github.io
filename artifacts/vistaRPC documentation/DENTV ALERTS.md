@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 30 | true | The patient ien to look up Dental Alerts in file 220. | 
 | ALERTS | LIST | 30 | true | List of Alert text entries to be added to the dental patient, e.g.:Sedation PremedTravel Issue | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

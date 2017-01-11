@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | StartFrom | LITERAL | 24 | true | Starting service for the returned list, full or partial name. | 
 | Direction | LITERAL | 4 | true | Direction of the lookup. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

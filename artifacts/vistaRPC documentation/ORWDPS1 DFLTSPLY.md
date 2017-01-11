@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return days supply given quantity
  Leading comment lines | VAL: default days supply
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

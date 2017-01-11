@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 20 | true | This is the IEN of the request whose reqyestor is being checked for an outstanding balance. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

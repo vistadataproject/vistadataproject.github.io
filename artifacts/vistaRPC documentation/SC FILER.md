@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | EDIT RESULTS | LIST | 512 | true | Results of editing to be placed in FDA array by broker. | 
 | EDIT MODE | LITERAL | 3 | true | Is processing in edit or add data mode. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

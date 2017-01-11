@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | EDATE | LITERAL |  | true | Ending date in a date range to use for retrieving results for the report. | 
 | ADTYPE | LITERAL |  | true | Valid discharge code values:  'A' - Recieving A&A  'P' - Pension  'S' - Service Connected  'L' - All discharge types | 
 | DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PSBHDR | LITERAL |  | true | Contains the IEN or +1 up-arrow transaction.  See RPC description. | 
 | PSBREC | LIST |  | true | See description. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

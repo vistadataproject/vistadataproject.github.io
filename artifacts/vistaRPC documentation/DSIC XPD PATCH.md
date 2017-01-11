@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PKG | LITERAL | 50 | true | This is the name of the patch, e.g., LR*5.2*98.  This invokes the Kernel API.  As such it expects a PACKAGE file entry whose PREFIX field value is equal to the first '*' piece of the inputted patch name (e.g, LR).  This will work for DSI applications, but not for VEJD. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

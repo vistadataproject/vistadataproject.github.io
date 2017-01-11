@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | LVL | LITERAL |  |  | Parameter Level setting | 
 | CLASS | LITERAL |  |  | Optional User Class IEN if level is CLASS | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

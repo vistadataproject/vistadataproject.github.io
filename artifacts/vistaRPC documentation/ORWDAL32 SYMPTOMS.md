@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a subset of symptoms
  Leading comment lines | .Return Array, Starting Text, Direction
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

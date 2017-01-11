@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | RECIPIENT | LITERAL | 64 | true | DUZ (file 200 ien) of the person to receive the forwarded alert. | 
 | TYPE | LITERAL | 16 | true | The type of message to be forwarded.  \A\ indicates an alert is to be forwarded. | 
 | COMMENT | LITERAL | 255 |  | The comment (optional) to be forwarded with the alert. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

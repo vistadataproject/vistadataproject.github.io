@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MDCPMSG | LITERAL |  | true | This is the ien of the message in file 772. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

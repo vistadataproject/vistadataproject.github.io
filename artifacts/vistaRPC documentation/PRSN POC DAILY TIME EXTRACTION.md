@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PRSNSEQ | LITERAL | 15 | true | Any records in POC DAILY ACTIVITY EXTRACTION File (#451.7) with a sequencenumber greater than this value shall be returned, in sequence.  The numberof records returned shall not exceed the value passed in parameterPRSNREC. | 
 | PRSNREC | LITERAL | 15 | true | This is the Maximum number of records to be returned. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | OPT | LITERAL | 5 | true | This parameter will be either CA1 or CA2 to indicate which type of claim isrequesting the NOI codes. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

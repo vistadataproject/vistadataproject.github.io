@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDA | LITERAL | 30 | true | This is the Image File entry Internal number. | 
 | TIUDA | LITERAL | 30 | true | This is the TIU internal number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

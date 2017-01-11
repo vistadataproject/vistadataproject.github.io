@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VEJDIFN | LITERAL | 16 | true | IFN OF CURRENT ROI REQUEST | 
 | VEJDDATS | LIST |  | true | ARRAY OF:   ITEMS IN FILEMAN INTERNAL DATE/TIME FORMAT1) Medications From^Medications To2) Vitals From^Vitals To3) Radiology From^Radiology To4) Immunology From^Immunology To5) Consults From^Consults To6) Postings From^Postings To7) Discharge Summaries From^Discharge Summaries To8) Progress Notes From^Progress Notes To | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

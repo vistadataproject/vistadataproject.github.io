@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL |  | true | The network location file (#2005.2) internal entry number of the recordto be updated.  | 
 | SPACE | LITERAL |  | true | The amount of space available for copying images. | 
 | SIZE | LITERAL |  | true | The disk capacity of the network share. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

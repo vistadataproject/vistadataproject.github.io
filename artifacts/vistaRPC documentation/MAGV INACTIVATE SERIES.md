@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SERIEN | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 
 | STUDYIEN | LITERAL |  |  | The IEN of the related study entry. | 
 | OVERRIDE | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

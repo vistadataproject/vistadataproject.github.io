@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NLOCIEN | LITERAL |  | true | NLOCIEN = IEN in NETWORK LOCATION file (#2005.2)  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

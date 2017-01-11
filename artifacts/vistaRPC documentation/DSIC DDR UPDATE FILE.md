@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FILE | LITERAL | 20 | true | This is the number of the file for which a new record is to be added | 
 | DATA | LIST | 250 | true | This is a list of fields which will have data for filing with the new record.  Obviously the .01 field must be present.  Format of data array:  DATA(field#)=internal value   On the GUI side, Param.List['field#']= value | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

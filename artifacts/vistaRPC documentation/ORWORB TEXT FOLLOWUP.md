@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
 | NOTIFICATION | LITERAL | 20 | true | Internal entry number of notification in the OE/RR Notification file[^OR(100.9]. | 
 | XQADATA | LITERAL | 255 | true | Optional data used in some follow-up actions. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

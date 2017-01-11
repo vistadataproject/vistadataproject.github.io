@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
  return value type | ARRAY
  description | This remote procedure will return the local site parameters in an array.  Thereare no input parameters.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

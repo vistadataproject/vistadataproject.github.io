@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | IENS | LITERAL | 40 | true | This is the IENS parameter to the FILE^DIE call.   If you are filing data to a file at top level fields, then IENS must be <null>.   If you are filing data to a subfile entry then IENS must be properly defined. | 
 | FLAGS | LITERAL | 10 | true | This is the FLAGS parameter used when invoking FILE^DIE.If no value is passed, then the default value is \KE\ | 
 | DATA | LIST | 250 | true | This is an array of fields in format:  DATA(field_num)=value  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

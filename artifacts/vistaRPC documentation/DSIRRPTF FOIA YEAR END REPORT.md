@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | QUICK | LITERAL | 1 | true | 0 - Calculate the report and save the results if report for a fiscal year1 - Return the stored results of the report for a fiscal year2 - Return the combined stored results and user add ins for a fiscal year | 
 | SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the reportshould be scheduled. | 
 | ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

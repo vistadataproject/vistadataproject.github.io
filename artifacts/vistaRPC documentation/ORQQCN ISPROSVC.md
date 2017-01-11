@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | IS THIS SERVICE PART OF CONSULTS-PROSTHETICS INTERFACE, wat/OR*3*280
  Leading comment lines | GMRCIEN - IEN of selected service
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

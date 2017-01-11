@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | VEJDDATA | LIST | 240 | true | For detailed escription of the array setup see documentation in theroutine. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIFCNS | LITERAL |  | true | This is the Consult IEN you wish to check the user's access for. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

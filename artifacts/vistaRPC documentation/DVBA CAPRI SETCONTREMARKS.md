@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | TEXT | WORD PROCESSING | 32000 | true | The is the text from the contractor remarks. They will be stored in thenew word processing field #103 of the 2507 EXAM file 396.4 | 
 | RETURN | LITERAL | 1 | true | Returns a '1' if remarks are successfully set and a '0' if the remarks arenot set. | 
 | EIEN | LIST | 512 | true | The is the 2507 EXAM ID from the 2507 EXAM file 396.4. The remarkssent to the contractor are stored in the new word processing field #103 ofthe 2507 EXAM file 396.4. The 2507 EXAMs are connected to the 2507 REQUESTfile via a pointer. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

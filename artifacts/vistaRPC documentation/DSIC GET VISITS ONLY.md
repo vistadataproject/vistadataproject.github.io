@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | ZLOC | LIST | 15 | true | Kept for backward compatibility.  Do not use.  See SCR parameter. Optional - you can look for visits for specific locations (file 44).  TheZLOC array is expected to be in the format ZLOC(ien)=\\ where ien is thepointer to file 44. | 
 | CAT | LITERAL | 1 | true | This flag controls whether service categories should be screened or not.It is optional, the default value is to screen entries. I +CAT then do not screen entries.I '$G(CAT) then screen entries to exclude those whose service category isE,D,X,N, or C | 
 | SCR | LIST | 250 | true | SCR - optional - added 7/3/2002 - sgm      passed by reference      format:  SCR(subscript) = code ^ value   where               code = C for hospital location #44                      D for medical center division #40.8                      S for 3-digit stop code from file 40.7 (not ien)               value = for codes C,D - any unique lookup value or ien                       for code S - 3-digit stop code (not ien to 40.7) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | PHYPH | LITERAL | 20 | true | Attending Physicians Phone Number (Optional - Free Text 3 to 20 Characters) | 
 | TOC | LITERAL | 1 | true | Type of Contact (Optional - T : Telephone, P - Personal) | 
 | REFPROV | LITERAL | 25 | true | Referring provider, pointer to file 200.  \@\ can be passed in for deletion. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

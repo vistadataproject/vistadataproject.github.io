@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT RETENTION POLICY\)  = A pointer to ARTIFACT RETENTION POLICY file (#2006.921) MAGPARAM(\ARTIFACT INSTANCE\)   = A pointer to ARTIFACT INSTANCE file (#2006.918) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

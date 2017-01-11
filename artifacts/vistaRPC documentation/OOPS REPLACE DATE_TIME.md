@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DATE | LITERAL |  |  | This is the date to be validated and reformatted. | 
 | FLAG | LITERAL |  |  | This is a control flag for assuring a valid date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

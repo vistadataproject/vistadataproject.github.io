@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | 1: is complex order 0: is not
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VAL | LITERAL | 50 | true | This is the lookup value to find matches in file 200. | 
 | SCR | LIST | 250 | true | This RPC will return a list of active users. You may wish additional screening to occur. For example, return all active users matching SMITHwho also own a particular security key.  Acceptable format of SCR():   SCR(n) = KEY^<security key name>   SCR(n) = PARM^<parameter name>^<parameter instance>   SCR(n) = M^<return text>^<executable M code that sets $T> | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

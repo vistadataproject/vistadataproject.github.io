@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | D1 | LITERAL | 20 | true | The value of this optional parameter is a pointer into theIMAGE multiple of the DICOM IMAGE OUTPUT file (#2006.574). If this paramater is omitted,this RPC will find the first (if any) image in this file for thecurrent study to betransmitted. If this parameter is specified, its value is intendedto be the \D1\ value for the most recent image transmitted, and thisRPC will find the next (if any) image to be transmitted. | 
 | SENT | LIST | 10000 | true | This parameter is an array. Each element of this arraycontains internal entry numbers that identify an entryin the send-queue that has been transmitted successfully.The RPC will use the contents of this array to removeentries from the queue that have been transmitted. | 
 | CHECK | LITERAL | 5 | true | The value of this parameter is a boolean value.When the value of this parameter is non-zero (true),the RPC will not mark the queue entry as being \in transmission\.This feature is used when the RPC is being called for thesole purpose of deternining whether or not there areany entries in the queue. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

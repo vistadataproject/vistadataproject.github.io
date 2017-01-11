@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FMDT | LITERAL | 14 | true | Date insured (default is today). | 
 | FILTER | LITERAL | 8 | true | Status codes specifying results to be included or excluded. | 
 | FIELDS | LITERAL | 80 | true | List of fields to be returned (default is all). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

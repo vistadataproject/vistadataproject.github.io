@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIFCSLT | LIST |  | true | This is a list/array of IENs that need to be removed from the FBCS Consult Tracking file (#19655). Example: DSIFCNSLTS(1)=4523DSIFCNSLTS(2)=3452DSIFCNSLTS(3)=5234 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

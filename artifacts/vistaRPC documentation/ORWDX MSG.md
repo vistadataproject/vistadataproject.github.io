@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Msg text for orderable item
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

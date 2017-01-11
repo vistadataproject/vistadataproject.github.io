@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DUPLICATE/ORPHAN | LITERAL | 99 | true | This is the pointer to file 19620.12 of the entry to replace/delete. | 
 | REPOINT TO | LITERAL | 99 | true | When this parameter is passed it will become the new requestor in place of the pointer passed in parameter 1. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

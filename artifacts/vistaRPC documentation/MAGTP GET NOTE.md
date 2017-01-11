@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | LRAC | LITERAL | 14 | true | Accession Code for the case | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

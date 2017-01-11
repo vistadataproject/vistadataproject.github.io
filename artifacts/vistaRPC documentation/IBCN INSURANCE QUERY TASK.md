@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IBICN | LITERAL | 50 | true | This is the patient's ICN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

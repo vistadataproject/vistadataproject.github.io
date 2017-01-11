@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Patient | LITERAL | 16 | true | Patient identifier (DFN) from File #2 (Patient). | 
 | Visit | LITERAL | 16 | true | Visit identifier. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

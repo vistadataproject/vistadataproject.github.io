@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Service IEN | LITERAL | 16 | true | Service IEN in file 123.5. | 
 | Patient ID | LITERAL | 32 | true | Patient DFN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

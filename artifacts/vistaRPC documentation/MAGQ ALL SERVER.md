@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | null |  |  |  | No input parameter required. | 
 | GROUP | LITERAL | 16 | true | This value should be either \GROUP\ or \ALL\ to differentiatebetween a Current Write Group Update and an All share update. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

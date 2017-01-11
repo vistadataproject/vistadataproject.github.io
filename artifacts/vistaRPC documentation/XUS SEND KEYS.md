@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  return value type | ARRAY
  description | Returns an array of strings that are used in the hashing algorithm.The strings that are returned are picked up from Z^XUSRB.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

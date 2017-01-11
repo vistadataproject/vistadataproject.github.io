@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IEN | LITERAL | 20 | true | Internal entry number of the report to delete in file 19620.35 | 
 | WEP | LITERAL | 1 | true | This is a flag to delete the report with extreme prejudice. 0 = No, 1 = Yes, Defaults to 0. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

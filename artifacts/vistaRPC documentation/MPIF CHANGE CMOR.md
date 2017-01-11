@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | CMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR | 
 | SSN | LITERAL | 9 | true | Social Security Number for the patient that is to be changed.  SSN willonly be used if ICN is not found to check if the problem is with the AICNx-ref on the ICN field. | 
 | A08 | LITERAL | 1 | true | This field will serve as a flag to note whether or not an A08 update message should be triggered. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

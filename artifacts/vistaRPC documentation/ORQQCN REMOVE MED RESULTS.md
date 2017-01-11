@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | Med Result | LITERAL | 24 | true | Variable pointer to medicine result. | 
 | Date | LITERAL | 16 |  | Date the result was removed. | 
 | Resp Person | LITERAL | 16 |  | Pointer to file 200 for the person removing the result. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

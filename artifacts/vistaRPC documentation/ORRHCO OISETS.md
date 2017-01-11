@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORRHCO](http://code.osehra.org/dox/Routine_ORRHCO_source.html)
  return value type | ARRAY
  description | Returns the list of sets available for listing orderable items.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

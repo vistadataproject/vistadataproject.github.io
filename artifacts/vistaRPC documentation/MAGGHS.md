@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGGZ | LITERAL | 30 | true | ; MAGGZ    ->   DFN  ^  HS Type (IEN)The patient's DFN and the health summary type's internal entry number(IEN). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

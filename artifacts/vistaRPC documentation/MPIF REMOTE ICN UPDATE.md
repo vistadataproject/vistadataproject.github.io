@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | CHECK | LITERAL | 6 | true |  CHECKSUM for the patient to be stored in field 991.02 | 
 | CMOR | LITERAL | 3 | true |  Station Number to be stored as the CMOR in field 991.03. | 
 | A08 | LITERAL | 1 | true | If an A08 message needs to be sent this flag should be set to 1. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

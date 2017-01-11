@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | RESULTS | LITERAL |  | true | Subrecord text. | 
 | SUBREC | LITERAL | 50 | true | Subrecord IEN that is going to be returned. | 
 | TOPREC | LITERAL | 50 | true | Top record of the sub record to return. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

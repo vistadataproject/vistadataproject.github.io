@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ecary | LITERAL |  |  |  | 
 | ECARY | LITERAL |  |  | Status of A-ctive, I-nactive or B-oth. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a subset of active diets, including NPO
  Leading comment lines | Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

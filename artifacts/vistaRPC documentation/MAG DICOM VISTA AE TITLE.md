@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SERVICE | LITERAL | 20 | true | The value of this parameter is a string. This stringidentifies a DICOM DIMSE Service.The procedure will validate that the specified ApplicationEntity is permitted to perform the service specified inthis parameter. | 
 | ROLE | LITERAL | 3 | true | The value of this parameter is a string. This string shouldbe equal to either \SCU\ (Service Class User) or\SCP\ (Service Class Provider).The procedure will validate that the specified ApplicationEntity is permitted to operate in the specified role. | 
 | LOCATION | LITERAL | 6 | true | The value of this parameter is a string.  This string is compared tothe appropriate value in the INSTITUTION File (#4).This is needed to return the appropriate AETitle that represents aspecific division. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

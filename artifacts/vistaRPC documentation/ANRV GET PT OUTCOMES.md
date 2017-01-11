@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | RESULTS | LITERAL |  | true | Results of inquiry, includes top record and sub record status and IEN. | 
 | PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

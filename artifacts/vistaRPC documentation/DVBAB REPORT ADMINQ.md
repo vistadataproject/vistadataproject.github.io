@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | ROYESNO | LITERAL |  |  | 'Y' indicates to screen by RONUM.Note: In the M code, the variable is referenced as RO vs ROYESNO. | 
 | RONUM | LITERAL |  |  | Screens RO number on report. Regional Office Station # when ROYESNO is 'Y', otherwise 0. | 
 | DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

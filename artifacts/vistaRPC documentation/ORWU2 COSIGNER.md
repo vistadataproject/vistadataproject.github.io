@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | ORFROM | LITERAL |  |  | Starting name for this set. | 
 | ORTIUTYP | LITERAL |  | true | is + of the 0 node of the 8925 docmt | 
 | ORTIUDA | LITERAL |  | true | This is the record # of the TIU Document in file 8925. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | LOC | LITERAL | 60 | true | NURS LOCATION file (#211.4) ien. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

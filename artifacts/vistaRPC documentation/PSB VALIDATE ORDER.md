@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | PSBORSTS | LITERAL |  | true | Current order status on the VDL> | 
 | PSBRMV |  |  | true | Action the user is trying to take. | 
 | psbdien |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | FBSITE | LITERAL | 10 | true | Site number that exists in file 161.4, field 27 (pointer to file #4) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

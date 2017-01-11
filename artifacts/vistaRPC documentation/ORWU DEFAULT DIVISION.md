@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return user's default division, if specified.
  Leading comment lines | Variables used:,ORDD   = Default division.,ORDIV  = Division holder variable.,ORGOOD = Flag for successful default division found.,ORIEN  = IEN of user.,ORZ    = Memory array storage variable.,ORZERR = Error storage for LIST^DIC call.,Y      = Returned value.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

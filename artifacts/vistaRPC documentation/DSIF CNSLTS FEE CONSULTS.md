@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIFLIEN | LITERAL | 15 |  | The IEN to the last consult returned by a previous call to this RPC. Ifpassed, must be passed with the LAST DATE parameter, and the RPC willreturn the next 50 consults beginning with the consult listed prior to this one (returns in reverse chronological order). If not passed,the RPC will return the first 50 consults in the list in reverse chronological order. | 
 | DSIFSCR | LITERAL | 1 | true | If passed, determines which form of screening should be used to determinewhether the user can view the selected service. If not passed (or passedas \\), no screening will be performed. Allowed values are:   N - Consult Notification screen   U - Consult Parameter screening by user precedence | 
 | DSIFSTAT | LITERAL |  | true | This input should be the status of the Consults you wish to be returned. Currently, the only supported statuses are: Active and Pending. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

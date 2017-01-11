@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | SORT | LITERAL | 1 | true | P = Patient Name, D = Request Date (P - Default) | 
 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run 1 = Schedule / 0 or Null= Run Immediately | 
 | ESTART | LITERAL | 14 | true | Earliest time to start the scheduled task (FileMan Date/Time) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

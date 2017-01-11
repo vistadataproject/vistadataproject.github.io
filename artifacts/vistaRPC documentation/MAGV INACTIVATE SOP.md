@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SOPIEN | LITERAL |  |  | The IEN of the SOP entry to be inactivated. | 
 | SERIEN | LITERAL |  |  | The IEN of the related series IEN. | 
 | OVERRIDE | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

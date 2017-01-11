@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | NEWNAM | LITERAL | 20 | true | The value of this parameter is a string that identifiesthe current DICOM Gateway.This value corresponds to the one that is to be enteredin the VistA database. | 
 | OLDLOC | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is expectedto be the one currently stored in the VistA database. | 
 | NEWLOC | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is to be enteredin the VistA database. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

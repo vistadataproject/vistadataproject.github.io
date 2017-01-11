@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | FIELD | LITERAL | 32 | true | The desired field attribute. | 
 | FLAG | LITERAL | 32 | true |  | 
 | ATTR | LITERAL | 32 | true | The field attribute desired. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

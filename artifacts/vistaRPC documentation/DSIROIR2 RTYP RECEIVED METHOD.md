@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SDATE | LITERAL |  | true | SDATE - start date.  This is the date to begin pulling data for the report. | 
 | EDATE | LITERAL |  |  | EDATE - end date.  This is the last date to be used when pulling report data. | 
 | DIVL | LITERAL |  |  | DIVL  - List of selected divisions - NULL means all divisions | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

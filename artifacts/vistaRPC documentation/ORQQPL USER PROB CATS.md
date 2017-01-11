@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DUZ | LITERAL |  |  | USER ID | 
 | CLINIC | LITERAL |  |  | IFN OF CLINIC | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

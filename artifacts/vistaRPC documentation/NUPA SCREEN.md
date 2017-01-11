@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CODE | LITERAL |  | true | Code to execute.  If you set variable NUPa to a result, it will be pulled back into the assessment GUI. Code can be: S NUPA=$$D(^DPT(DFN)) D TAG^ROUTINE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

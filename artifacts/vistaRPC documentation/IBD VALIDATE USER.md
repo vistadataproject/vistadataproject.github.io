@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IBDAV | LIST | 40 | true | validates that user is holder of specified security key. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

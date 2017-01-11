@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | IMIEN | LITERAL | 30 | true | IMIEN - ^MAG(2005,IMIEN image captured. | 
 | DATA | LITERAL | 245 | true | ;DATA - stain^micro obj^Pt name^ssn^date/time^acc#^Pathologist^specimendesc.^lab section^dfn^lrdfn^lri^spec ien^field#^global root e.g. ^LR(1,\SP\,7069 758,.1,1   ;DATA is the result of START^MAGGTLB (the specimen variable during the   ;image capture window).   ;Will return a single value on filing success. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

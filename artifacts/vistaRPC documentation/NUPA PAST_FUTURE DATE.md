@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VAR 1 | LITERAL | 30 | true | The date you want to check.  Should be in \7/7/11@12:30:00 PM\ format. | 
 | VAR 2 | LITERAL | 1 | true | Variable should be set to \P\ if you want to see if the date is in the past, or set it to \F\ if you want to see if it's in the future. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

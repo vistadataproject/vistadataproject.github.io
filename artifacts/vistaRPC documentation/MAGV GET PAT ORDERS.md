@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | ORDER TYPE | LITERAL | 3 | true | Free text as \CON\ for Consult Orders, \RAD\ for Radiology Orders. | 
 | ORDER DATE FILTER START | LITERAL | 8 | true | A date formatted as MMDDYYYY. | 
 | ORDER DATE FILTER END | LITERAL | 8 | true | A date formatted as MMDDYYYY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

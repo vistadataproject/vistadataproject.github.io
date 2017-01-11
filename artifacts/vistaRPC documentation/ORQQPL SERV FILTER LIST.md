@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | GET FILTERED LIST OF INPATIENT SERVICES
  Leading comment lines | RETURN NAMES FOR LIST OF IEN PASSED IN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

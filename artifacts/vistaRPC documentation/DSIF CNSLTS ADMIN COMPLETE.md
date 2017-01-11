@@ -26,3 +26,8 @@ title: VISTA RPC documentation
 | DSIFALRT | LITERAL | 1 | true | Flag to determine if alerts need to be sent: 'N' - No'Y' - Yes | 
 | DSIFALTO | LITERAL |  |  | List of NEW PERSON FILE (200) iens, semi-colon delimited for who needs to be alerted by the updates to this consult. | 
 | DSIFDT | LITERAL |  | true | Date of the administrative complete. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

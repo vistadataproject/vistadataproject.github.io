@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return list of surgery reports for reports tab
  Leading comment lines | I '$$PATCH^XPDUTL("SR*3.0*100") D NOTYET(.ORY)  Q
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | get total count of progress notes
  Leading comment lines | ^TIU(8925,"ACLPT",3) refers to progress notes class
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

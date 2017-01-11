@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NAME | LITERAL | 256 |  | This parameter contains the name or partial name of the employee being lookedup. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

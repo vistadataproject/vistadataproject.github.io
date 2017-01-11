@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROIC](http://code.osehra.org/dox/Routine_DSIROIC_source.html)
  return value type | GLOBAL ARRAY
  description | Gets state information from file 5.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

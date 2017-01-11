@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Save Edit/Add of an allergy/adverse reaction
  Leading comment lines | following patch check is made via GUI RPC call to ORWU PATCH instead,I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

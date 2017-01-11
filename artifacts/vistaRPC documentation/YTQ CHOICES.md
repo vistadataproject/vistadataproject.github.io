@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI](http://code.osehra.org/dox/Routine_YTQAPI_source.html)
  return value type | ARRAY
  description | Returns Choice all for an instrument.  ;input: CODE as test name        ;output: 601.75(1) CHOICETYPE ID^SEQUENCE^CHOICE IFN^CHOICE TEXT
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

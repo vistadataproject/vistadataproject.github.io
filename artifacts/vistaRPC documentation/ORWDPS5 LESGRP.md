@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return all of the orders' display groups LES checked
  Leading comment lines | LES will check the orders belonging to the following display group,1.  LAB/LABORATORY  ORDERS,2.  BLOOD BANK      ORDERS,3.  CHEMISTRY       ORDERS
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

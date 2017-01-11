@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | NUMBER | LITERAL |  |  | Maximum number of entries to return. A value of \*\ or no value in this parameter designates all entries. | 
 | FROM | LITERAL |  |  | The index entry(s) from which to begin the list   ^01: FromName   ^02: FromIEN  For example, a FROM value of \18\ would list entries following 18. You canuse the 2-nd and 3-rd \^\- pieces of the Results[0] to continue thelisting in the subsequent procedure calls.  NOTE: The FROM value itself is not included in the      resulting list.  See description of the LIST^DIC for more details about the PART, NUMBER and FROM parameters. | 
 | DATE | LITERAL |  |  | Date for the code set versioning. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

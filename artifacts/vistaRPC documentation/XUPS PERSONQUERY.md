@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | XUPSMNM | LITERAL | 3 | true |  | 
 | XUPSDATE | LITERAL | 8 | true |  | 
 | XUPSVPID | LITERAL |  | true | Required if lookup by VPID. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

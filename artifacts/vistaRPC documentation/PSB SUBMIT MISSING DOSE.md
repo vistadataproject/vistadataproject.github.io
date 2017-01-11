@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | PSBSCHD | LITERAL |  | true | Medication Schedule. | 
 | PSBCLIN | LITERAL | 30 | true | Clinic Name | 
 | PSBCLNIEN | LITERAL |  | true | Clinic pointer to the HOSPITAL LOCATION file (#44) for a clinic submitting a missing dose request. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

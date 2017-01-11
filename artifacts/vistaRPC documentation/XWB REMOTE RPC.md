@@ -31,3 +31,8 @@ title: VISTA RPC documentation
 | RRPC | LITERAL | 30 | true | This is the name of the remote RPC to be run. | 
 | IP1 | LITERAL |  |  | This is the first input parameter to the remote RPC. | 
 | IP2 | LITERAL |  |  | This is the second input parameter to the remote RPC. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

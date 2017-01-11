@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IBICN | LITERAL |  | true | This is the patient's ICN, to be used to identify the patient. | 
 | IBT | LITERAL |  | true | This is the transaction number to bill. | 
 | IBB | LITERAL |  | true | This is the amount to bill. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | ZIP | LITERAL | 9 | true |  | 
 | VENDOR IEN | LITERAL | 35 | true |  | 
 | TYPE OF SERVICE | LITERAL | 12 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

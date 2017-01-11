@@ -33,3 +33,8 @@ title: VISTA RPC documentation
 | PENDISP | LITERAL | 1 | true | Pending Disposition (Optional)                      \\ for none;                      '1' FOR FOLLOW-UP/NOT STABLE;                      '2' FOR AWAITING DISCHARGE/TRANSFER;) | 
 | AUTHSVC | LIST | 200 | true | WP Array, must start with a value of (1)=[text] | 
 | CONTRACT IEN | LITERAL | 25 | true | IEN of the FEE BASIS CONTRACT file (Optional) If contract is allowed to be deleted, pass in \@\ for IEN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

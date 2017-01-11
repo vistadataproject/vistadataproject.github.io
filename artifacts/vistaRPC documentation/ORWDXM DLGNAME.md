@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return name(s) of dialog & base dialog given IEN
  Leading comment lines | VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | NODE | LITERAL | 30 | true | This is the IEN in the Image File. | 
 | FLAGS | LITERAL | 100 | true | This is the Flags parameter used in the call to GETS^DIQ.  If this is null, then the default of \IERN\ is used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

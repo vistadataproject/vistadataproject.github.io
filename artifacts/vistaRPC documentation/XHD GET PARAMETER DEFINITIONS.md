@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FROM | LITERAL |  | true | This is the definition from which the list should begin (i.e., inclusive bound). | 
 | DIR | LITERAL |  | true | OPTIONAL parameter. This is the DIRECTION from the origin in which the definitions will be retrieved. Pass \+1\ to indicate ascending order, or \-1\ to indicate descending order).  DEFAULT: \+1\ or ascending order. | 
 | SIZE | LITERAL |  | true | This is the number of definitions that should be returned with each invocation of the call. DEFAULT: 44. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

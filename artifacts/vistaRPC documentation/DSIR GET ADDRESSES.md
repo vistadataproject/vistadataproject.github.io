@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PATIENT REQUESTOR | LITERAL |  | true | RQSTR - Pointer to Patient or Requestor  examples:    \3;DSIR(19620.96,\    \41;DSIR(19620.12,\    \441;DPT(\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

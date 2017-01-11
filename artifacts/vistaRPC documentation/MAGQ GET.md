@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ACTION | LITERAL |  | true | The background processor queue type(JBTOHD,JUKEBOX,DELETE,ABSTRACT,ROUTING). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

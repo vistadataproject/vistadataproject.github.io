@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | BEFORE | LITERAL | 7 | true | The FM date that the message should be sent BEFORE. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

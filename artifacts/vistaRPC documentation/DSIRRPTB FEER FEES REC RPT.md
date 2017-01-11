@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DIVL | LITERAL | 200 | true | This can be one or more division numbers delimeted by \^\. I not provided,the default division for the person requesting the report is used. | 
 | SCHED | LITERAL | 1 | true | Boolean value to determine if the report is to be scheduled.  If notprovided a zero is assumed and the report will run immediately withoutgoing through the task manager. | 
 | ESTART | LITERAL | 15 | true | This is the earliest date and time to start running the report task ifscheduled.  If not specified, the current date/time will be used. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

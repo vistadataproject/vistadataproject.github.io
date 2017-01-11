@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | 25 | true | Patient IEN | 
 | AUTH IEN | LITERAL | 25 | true | Internal Number of the Authorization | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

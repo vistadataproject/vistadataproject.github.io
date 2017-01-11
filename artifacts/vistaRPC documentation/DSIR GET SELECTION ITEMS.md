@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROIAH](http://code.osehra.org/dox/Routine_DSIROIAH_source.html)
  return value type | ARRAY
  description | THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

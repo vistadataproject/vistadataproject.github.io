@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | If Pt's current data match selected event
  Leading comment lines | DFN: patient DFN,EVT: ptr to #100.5
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

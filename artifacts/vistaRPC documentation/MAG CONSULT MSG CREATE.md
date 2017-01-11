@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGDUZ | LITERAL | 255 | true | DUZ number for sender of message | 
 | TXT | LIST | 32000 | true | Message to be sent; $END$; Recipient list | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | FIELD | LITERAL |  | true | The field number to file data into, in numeric format. | 
 | VALUE | LITERAL |  | true | The value to save to the field. | 
 | SLASHES | LITERAL |  | true | The number of slashes for the DIE call, typically 3 or 4. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | UIDLIST | LIST | 30 | true | This is a list of UIDs to be evaluated. | 
 | LEVEL | LITERAL |  | true | The value is either STUDY or SOP instance UID. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | YSASDA | LITERAL | 30 | true | YSASDA is a pointer to the Addiction Severity Index file (#604). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

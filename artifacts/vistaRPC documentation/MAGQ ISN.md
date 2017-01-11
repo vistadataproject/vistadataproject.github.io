@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILENAME | LITERAL | 8 | true | This is the filename and extension which has file size variance. | 
 | Network source file size. | LITERAL | 1 | true | This is the bite integer which represents the size property. | 
 | Jukebox size | LITERAL | 1 | true | This is the Jukebox file size integer property. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

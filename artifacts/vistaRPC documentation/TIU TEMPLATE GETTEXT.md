@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true |  | 
 | VSTR | LITERAL |  | true |  | 
 | TIUX | LIST |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of theregistry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
 | TYPE | LITERAL |  | true | The TYPE parameter defines type of the items that should be extracted:   3  Lab Groups  4  Drug Groups See description of the TYPE field (.02) of the ROR LIST ITEM file (#799.1)for more details.for more details. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

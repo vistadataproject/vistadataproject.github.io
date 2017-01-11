@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Returns PtEvtID ptr #100.2 if patient already has delayed orders
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

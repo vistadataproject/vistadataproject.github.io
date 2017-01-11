@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Consult ID | LITERAL | 16 | true | Internal file number of consult in file 123. | 
 | Request type | LITERAL | 30 | true | Consult or procedure.  Pointer to PROTOCOL file 101.  Value iseither 'GMRCOR CONSULT' or 'GMRCOR REQUEST'. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

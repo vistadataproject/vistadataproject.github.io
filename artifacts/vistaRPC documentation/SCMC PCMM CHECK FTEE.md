@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | SCPATCH | LITERAL | 60 | true | PatchVersion ^ ClientVersion | 
 | TPIEN | LITERAL |  | true | POSITION ASSIGNMENT HISTORY IEN ^ FTEE VALUE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

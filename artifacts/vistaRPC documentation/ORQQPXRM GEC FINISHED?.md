@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | This is the Patient DFN | 
 | FIN | LITERAL |  | true | Fin is a 1 or 0 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI11](http://code.osehra.org/dox/Routine_YTQAPI11_source.html)
  return value type | ARRAY
  description | Save results to MH Results (601.92). Use only for completed tests.      Input: AD as administration ID   Output : DATA vs ERROR     
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

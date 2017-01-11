@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
  return value type | ARRAY
  description | Returns a list of selectable options from which a user can choose a daterange for appointments.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

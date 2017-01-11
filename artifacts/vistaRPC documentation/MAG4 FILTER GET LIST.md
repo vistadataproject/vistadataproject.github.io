@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL | 40 | true | This is DUZ, if \\ is sent, then the RPC retrieves the Public filters. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

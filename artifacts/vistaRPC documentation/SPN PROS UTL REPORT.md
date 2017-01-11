@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | ICNLIST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN...) | 
 | FDATE | LITERAL |  |  | Date to start collection from: (mm/dd/yyyy) | 
 | TDATE | LITERAL |  |  | Date to end collection: (mm/dd/yyyy)   | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

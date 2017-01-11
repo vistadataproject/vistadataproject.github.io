@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
  return value type | ARRAY
  description | This remote procedure call returns a list of reports,Health Summary types and date ranges that can be displayedat the workstation. There are no input parameters for this RPC.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

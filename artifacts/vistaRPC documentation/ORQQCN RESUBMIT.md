@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ConsultID | LITERAL | 16 | true |  | 
 | ChangeArray | LIST |  | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

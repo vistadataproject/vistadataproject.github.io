@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
 | ORDERS | LIST |  | true | This is the list of order ID's whose results may be acknowledged, in theform \ORR:###^1\ where ### is the order number from file #100 and thesecond ^-piece is either 1 or 0 if the order was acknowledged. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

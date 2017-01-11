@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL | 20 | true | This is the number of the file (or subfile) which has that field. | 
 | FIELD | LITERAL | 15 | true | This is the field number for the data to be converted to external. | 
 | VALUE | LITERAL | 100 | true | This is the value in internal Fileman format to be converted to external format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

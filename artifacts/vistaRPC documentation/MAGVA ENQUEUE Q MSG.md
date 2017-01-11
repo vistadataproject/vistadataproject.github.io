@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true | MAGPARAM(\EXPIRATION DATETIME\) MAGPARAM(\EARLIEST DELIVERY DATE/TIME\) MAGPARAM(\PRIORITY\) = 1..99 MAGPARAM(\QUEUE\) = Pointer to QUEUE file (#2006.927) MAGPARAM(\MESSAGE GROUP ID\) = value of the field \MESSAGE GROUP ID\                                 in QUEUE file (#2006.927) or \*\ or \\ | 
 | MAGMSG | LIST |  | true | MAGMSG(1..n)= MESSAGE | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

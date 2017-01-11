@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 |   X | LITERAL | 30 | true | User input to date/time field  | 
 | INDT | LITERAL | 30 | true | This is the Date to be converted in External or Internal Format. | 
 | NOFDT | LITERAL | 1 | true | This is a Flag to tell if Future Dates are allowed.The defaults is 0, so Future Dates Are Allowed.If 1, then NOFDT is true and NO Future Dates are Allowed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

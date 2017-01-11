@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DSIFDAT | LITERAL | 7 | true |   Enter the to date (in FM format) to restrict the number of records  returned.    Example: If you enter 3100501 the RPC will return all authorizations up  to May 1, 2010.    This field can also be used in conjunction with DSIFFDAT to produce a  specific time period in which authorizations to be returned. | 
 | DSIFFDAT | LITERAL | 7 | true |  Enter a from date (in FM format) to limit the authorizations returned.    Example: If you enter 3090101 it will only return authorizations between  today and January 1, 2009. | 
 | DSIF AUTHLIST |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

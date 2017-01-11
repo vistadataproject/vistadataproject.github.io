@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGGTU6](http://code.osehra.org/dox/Routine_MAGGTU6_source.html)
  return value type | SINGLE VALUE
  description | Returns environment variables from VistA server
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

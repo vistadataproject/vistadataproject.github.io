@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a bolus of orderable items
  Leading comment lines | .Return Array, Cross Reference (S.xxx), Direction, Starting Text
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

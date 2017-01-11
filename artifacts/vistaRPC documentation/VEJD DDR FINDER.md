@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | VEJDIENS | LITERAL |  | true | This is the IENS through which you wish to search for the value VEJDVAL.If you are searching the top level of a file, this should be null.  Seethe FileMan Programmers manual for instructions on constructing IENSstrings. | 
 | VEJDFELD | LITERAL |  | true | This is an ^ (or \;\) delimited list of fields that you wish returned fromeach entry that matches the lookup conditions that you have specified. | 
 | VEJDNUM | LITERAL |  | true | This is the maximum number of entries to be returned.  Defaults to allentries matching the lookup value (VEJDVAL). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

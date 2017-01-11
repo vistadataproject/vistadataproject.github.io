@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
  return value type | SINGLE VALUE
  description | Retruns a new invoice number from GETNXI^FBAAUTL
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

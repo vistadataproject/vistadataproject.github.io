@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | SUBSCRIPT | LITERAL | 60 | true | Timing subscript - free text         example: \ORWCV\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

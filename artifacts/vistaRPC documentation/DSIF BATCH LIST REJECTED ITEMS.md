@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | FROM | LITERAL | 7 | true | Date beginning from | 
 | TODATE | LITERAL | 7 | true | Until date | 
 | FBFROM |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | 
  return value type | 
  description | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

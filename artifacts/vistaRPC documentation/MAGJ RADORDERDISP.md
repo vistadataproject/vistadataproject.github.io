@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 40 | true | Input is pointers to the Radiology exam--Can be either the RARPT value (pointer to the Rad Reports file), or thevalues of RADFN, RADTI, RACNI (pointers to the Rad Patient File).   Format is:  RADFN^RADTI^RACNI^RARPT | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

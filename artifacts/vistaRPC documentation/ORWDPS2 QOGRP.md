@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Leading comment lines | If quick order belong to Inpatient Med Order Group: return 1,Otherwise, return 0
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

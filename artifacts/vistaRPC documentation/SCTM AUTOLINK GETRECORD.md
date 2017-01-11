@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TEAM | LITERAL | 50 | true | Pointer to entry in Team file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

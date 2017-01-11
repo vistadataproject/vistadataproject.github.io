@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | INFO | LITERAL |  | true | This is the Name, Street, City, State, Zip, and Date of Witness Signature. Itmust be in format... NAME^STREET^CITY^STATE^ZIP^DATESIGNED | 
 | CMNT |  |  |  |  | 
 | COMMENT | LITERAL | 256 | true | The input will be a string containing the comment to be added/associated withthe witness record created.  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

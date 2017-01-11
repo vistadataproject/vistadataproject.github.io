@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | RPC - check if user can edit public views and settings
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

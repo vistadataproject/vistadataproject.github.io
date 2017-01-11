@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | FB7078 | LITERAL | 99 | true | Internal Entry Number to file 162.4 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

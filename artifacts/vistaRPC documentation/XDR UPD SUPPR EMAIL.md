@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FILE NUMBER | LITERAL | 20 | true | File number for the file that is the .01 field of a record in the DUPLICATE RESOLUTION file. This is the record that is to be updated by this RPC. | 
 | VALUE | LITERAL | 1 | true | Must be set to 1 or 0. This value will be put into the SUPPRESS NEW DUP EMAIL field. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

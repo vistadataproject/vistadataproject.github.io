@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | orwdev | LITERAL | 32 |  | chart device^label device^requisition device^work copy device All are pointers to the DEVICE file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

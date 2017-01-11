@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of theregistry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
 | FLAGS | LITERAL |  |  | Flags that control the execution (can be combined):   I  Include inactive field definitions | 
 | LOCK | LITERAL |  |  | Lock the local fields before loading the data and leave them locked. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

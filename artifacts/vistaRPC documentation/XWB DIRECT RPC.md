@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | LOC | LITERAL | 30 | true | This is the Institution's station # to send the RPC to. | 
 | RRPC | LITERAL | 30 | true | This is the name of the remote RPC to be run. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

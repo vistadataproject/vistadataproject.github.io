@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | FILE | LITERAL | 20 | true | This is the file (or subfile) number upon which the lookup will be done | 
 | IENS | LITERAL | 50 | true | This is the standard IENS parameter when FIND1^DIC is invoked.  It is only needed if the lookup is on a multiple instead of the parent file. | 
 | VALUE | LITERAL | 250 | true | This is the value in external format used for the lookup.lookup. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

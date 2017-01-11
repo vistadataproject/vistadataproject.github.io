@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DPAT | LITERAL |  | true |  | 
 | ACT | LITERAL |  | true | ACT is used to tell the RPC which process to run:ACT=1 means you want to process a clean slate.ACT=-1 means you want to undo a clean slate. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

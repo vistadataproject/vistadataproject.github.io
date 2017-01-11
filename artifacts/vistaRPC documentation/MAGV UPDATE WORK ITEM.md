@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | MESSAGE | LITERAL |  |  | This is the message that is associated with the work item. | 
 | UPDUSR | LITERAL |  |  | This is the user that has updated the work item. | 
 | UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | VPSNUM | LITERAL | 30 | true | Patient ID. This parameter value could be SSN, DFN, ICN, or VIC/CAC based on Patient ID Type. | 
 | VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Value is SSN, DFN, ICN, or VIC/CAC | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

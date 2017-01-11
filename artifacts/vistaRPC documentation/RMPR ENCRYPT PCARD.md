@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | RMPRPCD | LITERAL | 255 |  |  | 
 | DUZ | LITERAL | 6 |  |  | 
 | RMPRA | LITERAL | 30 |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

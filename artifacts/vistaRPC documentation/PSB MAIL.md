@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PSBCMD | LITERAL | 30 | true | The type of action being attempted:        \CREATE\        \APPEND\        \SUBJECT\        \SENDTO\        \EXECUTE\ | 
 | PSBDATA | REFERENCE | 80 | true | The text to be acted on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

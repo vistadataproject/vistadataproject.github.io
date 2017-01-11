@@ -27,3 +27,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | IEN of record to delete. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

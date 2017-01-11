@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ROI INSTANCE NUMBER | LITERAL |  | true |  | 
 | STATUS CODE | LITERAL | 1 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

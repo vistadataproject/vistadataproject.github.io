@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ZIPCODE | LITERAL | 9 | true | 5 OR 9 DIGIT ZIP CODE | 
 | ACTDATE | LITERAL | 7 | true | Active date in internal Fileman format.  If this parameter is passed, then only return zip code demographics for ones which were active as of the inputted date. If it is not passed, then return zip code info regardless of active status. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

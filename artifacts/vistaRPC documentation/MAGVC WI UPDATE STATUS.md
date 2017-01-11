@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | WIIEN | LITERAL |  | true | This is the IEN of the MAG WORK ITEM file (#2006.941) entry to be modified. | 
 | STATNEW | LITERAL |  |  | This is the external form of the new STATUS in the MAG WORK ITEM STATUS file(#2006.9413). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

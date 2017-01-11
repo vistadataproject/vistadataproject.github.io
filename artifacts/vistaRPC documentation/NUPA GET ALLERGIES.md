@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | dfn |  |  |  |  | 
 | DFN | LITERAL | 99 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

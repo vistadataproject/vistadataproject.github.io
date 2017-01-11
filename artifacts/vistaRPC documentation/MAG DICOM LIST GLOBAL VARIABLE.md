@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | WILD | LITERAL | 255 | true | The value of this parameter is a string that constitutesa wild-card for traversing a global variable. | 
 | MAX | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe maximum number of name/value pairs to be returned. | 
 | START | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe the point in the global variable traversal where thereport is to be resumed. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

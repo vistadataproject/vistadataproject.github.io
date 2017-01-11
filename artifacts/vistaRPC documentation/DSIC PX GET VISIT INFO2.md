@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 20 | true | DATA = p1^p2   where  p1 = visit ien or visit's ID -  required       p2 = return format            I := internal values            E := external values            B := both internal and external formats - default | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

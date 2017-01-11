@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DENTVTP1](http://code.osehra.org/dox/Routine_DENTVTP1_source.html)
  return value type | GLOBAL ARRAY
  description | This returns the ADA table (file 228) for the Discus Treatment Planning system.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

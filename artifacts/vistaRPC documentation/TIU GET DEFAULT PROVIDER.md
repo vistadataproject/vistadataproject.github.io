@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | HLOC | LITERAL |  | true | Pointer to the Hospital Location File (#44). | 
 | USER | LITERAL |  | true | Optional Pointer to the New Person File (#200) identifying the Author. If nothing is passed, the current user will be assumed. | 
 | TIUIEN | LITERAL |  | true | This is the Record # (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

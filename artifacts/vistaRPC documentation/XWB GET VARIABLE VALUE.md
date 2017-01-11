@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | returns value of passed in variable
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

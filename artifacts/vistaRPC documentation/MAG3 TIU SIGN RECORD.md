@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | MAGTIUDA | LITERAL | 60 | true | The TIU Document IEN from File ^TIU(8925 | 
 | MAGES | LITERAL | 60 | true | The users encrypted Electronic Signature. | 
 | MAGESBY | LITERAL | 30 | true | The DUZ of the Signer (defaults to Partition Variable: DUZ) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

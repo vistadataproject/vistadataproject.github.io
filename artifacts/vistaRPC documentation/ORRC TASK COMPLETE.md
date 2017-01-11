@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
 | TASKS | LIST |  | true | This is a list of task identifiers in the form TSK:##, where ## is thepointer to the Patient Task file #102.3. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

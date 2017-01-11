@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FBOLDB | LITERAL | 10 | true | Batch IEN of the batch that held the line items that were rejected. | 
 | FBNEWB | LITERAL | 10 | true | Batch IEN of the batch that will hold the re-initiated line items. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

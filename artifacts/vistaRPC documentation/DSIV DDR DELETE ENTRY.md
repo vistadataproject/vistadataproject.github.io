@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FILE | LITERAL | 20 | true | This is the number of the file or subfile of the record to be deleted | 
 | IENS | LITERAL | 50 | true | This is the Fileman IENS input parameter.  Its value must be applicable to the file or subfile for which a record is being deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

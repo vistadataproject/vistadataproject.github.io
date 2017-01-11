@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | SVC | LITERAL |  |  | Initial Service Connection Category. | 
 | LOC | LITERAL |  |  | Pointer to the hospital location. | 
 | INP | LITERAL |  |  | Patient Status0 = Outpatient1 = Inpatient | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

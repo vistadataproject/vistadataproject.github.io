@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | DFN of patient - IEN from DPT( | 
 | IEN | LITERAL |  | true | This is the pointer to the 509850.9 fileUsed in the Audiogram Enter/Edit program | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

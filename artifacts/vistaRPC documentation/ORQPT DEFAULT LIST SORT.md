@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return user's default sort.
  Leading comment lines | SLC/PKS - 4/6/2001
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

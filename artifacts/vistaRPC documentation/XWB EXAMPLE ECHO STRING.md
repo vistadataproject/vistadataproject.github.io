@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INP | LITERAL | 255 |  |  | 
 | STR | LITERAL |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

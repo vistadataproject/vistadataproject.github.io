@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI9](http://code.osehra.org/dox/Routine_YTQAPI9_source.html)
  return value type | ARRAY
  description | Allows Psychological test editor to save test data in IENS under 100000for national distribution.         input: NATIONAL as Yes or No        output: YSPROG=1
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

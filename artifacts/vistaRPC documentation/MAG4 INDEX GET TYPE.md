@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | CLS | LITERAL | 160 | true | This parameter is a ',' (comma) delimited string of classes.only those index types, that match a 'class' in the string willbe returned in the result array. | 
 | FLGS | LITERAL | 40 | true | ;  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

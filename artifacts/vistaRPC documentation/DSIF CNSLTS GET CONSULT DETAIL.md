@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DSIFCSLT | LITERAL |  | true | This is the Consult IEN (file #123) where the information is needed to be returned in a discrete format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

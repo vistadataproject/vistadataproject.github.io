@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Get FILTERED LIST OF CLINICS
  Leading comment lines | RETURN NAMES FOR LIST OF CLINICS PASSED IN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

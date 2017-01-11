@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | RASTDRPT | LITERAL |  | true | IEN of an entry in the STANDARD REPORTS file (#74.1). | 
 | RADXPRIM | LITERAL |  | true | IEN of an entry in the DIAGNOSTIC CODES file (#78.3). This will be theexam's Primary Diagnostic Code via the RAMISC parameter 'PRIMDXCODE'. | 
 | RADXSCND | LIST |  | true | One or more IENs of entries in the DIAGNOSTIC CODES file (#78.3). Thesewill be the exam's Secondary Diagnostic Codes via the RAMISC parameter'SECDXCODE'. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | does EVT has delayed orders?
  Leading comment lines | 1 if Patient DFN has delayed orders for EVT,2 if Parent/Sibling event has delayed orders,0 if No delayed orders for EVT
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

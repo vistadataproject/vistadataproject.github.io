@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
  Leading comment lines | C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.,.Y=returned list, ORFROM=text to $O from, DIR=$O direction.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

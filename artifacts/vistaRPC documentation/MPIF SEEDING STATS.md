@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MPIFSEED](http://code.osehra.org/dox/Routine_MPIFSEED_source.html)
  return value type | ARRAY
  description | This RPC will return the stats on the seeding process, including when the next seeding job is scheduled to run
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

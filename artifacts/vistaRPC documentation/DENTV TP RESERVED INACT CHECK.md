@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DENTIEN | LITERAL |  | true | This input value must be the IEN for the record contained in the DENTAL TP RESERVE (#228.7) file. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

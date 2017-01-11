@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DVBABURL](http://code.osehra.org/dox/Routine_DVBABURL_source.html)
  return value type | SINGLE VALUE
  description | This remote procedure retrieves the username, password, and token value passed to the Virtual VA web service.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

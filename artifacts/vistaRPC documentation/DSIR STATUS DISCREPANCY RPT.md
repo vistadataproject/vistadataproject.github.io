@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | START DATE | LITERAL | 7 | true | FileMan format start date. | 
 | END DATE | LITERAL | 7 | true | FileMan end date. Optional - defaults to current date. | 
 | CLERK(S) | LIST | 99 | true | Array where each element is equal to the DUZ of selected clerks.  Optional - no entries passed will return all clerks for time period. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

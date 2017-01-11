@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TYP | LITERAL | 30 | true | This is the subcategory name from file 228 that was retrieved by usingthe DENTV GET CATEGORIES rpc. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

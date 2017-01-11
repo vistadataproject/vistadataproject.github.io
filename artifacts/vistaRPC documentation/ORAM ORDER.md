@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | ORQO | LITERAL |  | true | This is the internal entry number of the Quick Order to be placed (for either INR or CBC) in the Order Dialog file #101.41. | 
 | ORLOC | LITERAL |  | true | This is the internal entry number of the ordering location in the Hospital Location file (#42). | 
 | ORCDT | LITERAL |  | true | This is the expected Collection Date/Time of the lab test being ordered, in external date/time format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

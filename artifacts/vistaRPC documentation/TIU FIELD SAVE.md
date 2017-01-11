@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA |  |  |  | IEN of dialog field, if any | 
 | TIUX | LIST |  |  | Data to save in template field | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

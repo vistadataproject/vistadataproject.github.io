@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | NUMBER | LITERAL | 30 | true | The value of this parameter is a number that identifies astudy. Such a number would be a date-case number for a Radiologystudy, or just a number for a Consult.The value of this parameter may also be a string that consists ofa \tick-mark\ (`), followed by the internal entry number ofan image. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

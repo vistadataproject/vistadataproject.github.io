@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of theregistry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
 | RORDFN | LITERAL |  | true | A valid patient IEN (DFN) should be assigned to the RORDFN parameter. | 
 | FORCE | LITERAL |  |  | Deprecatedrecord will be deleted from the registry even if some data has been sent to the AAC already. BE VERY CAREFUL WITH THIS! | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

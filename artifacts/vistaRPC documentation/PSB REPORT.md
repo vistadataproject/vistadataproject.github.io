@@ -45,3 +45,8 @@ title: VISTA RPC documentation
 | PSB24 | LITERAL | 1 | true | Reserved parameter 24 for future use. | 
 | PSBCLLIST | LIST | 90 | true | LIST ARRAY FOR CLINICS | 
 | PSBDIV | LITERAL |  | true | Division | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

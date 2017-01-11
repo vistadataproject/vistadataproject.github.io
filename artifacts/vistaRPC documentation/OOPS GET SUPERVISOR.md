@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | NAME | LITERAL | 256 | true | This is the name or the partial name of the individual being looked up. | 
 | CASESSN | LITERAL | 15 | true | This is the SSN for the Person Involved in the case.  It will be used to assurethat the Supervisor for the case is not the same as the Person Involved. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

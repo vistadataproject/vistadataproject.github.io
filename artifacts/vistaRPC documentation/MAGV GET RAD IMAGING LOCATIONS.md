@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGVIMRA](http://code.osehra.org/dox/Routine_MAGVIMRA_source.html)
  return value type | ARRAY
  description | Returns some fields from the IMAGING LOCATIONS file (#79.1) with XML tags.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

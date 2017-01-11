@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | check if the current user has an active PIN lock
  Leading comment lines | ORY=1 if there is an active lock and ORY=0 if no active lock
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

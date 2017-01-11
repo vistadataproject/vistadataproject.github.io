@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | P6
  Leading comment lines | Entry point for XWB IM HERE remote procedure
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

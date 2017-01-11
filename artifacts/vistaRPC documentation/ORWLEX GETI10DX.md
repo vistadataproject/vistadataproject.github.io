@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ORX | LITERAL |  | true | This is the search term. | 
 | ORDT | LITERAL |  | true | Optional date (usually corresponding to the encounter date). Defaults to TODAY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

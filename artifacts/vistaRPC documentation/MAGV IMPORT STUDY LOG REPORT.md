@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | REPORT | LITERAL |  | true | An index value for the report to be exported. | 
 | STARTDT | LITERAL | 8 | true | The date, as YYYYMMDD, from which to start the query. If null, defaults to date of the earliest record. | 
 | STOPDT | LITERAL | 8 | true | The date, as YYYYMMDD, bracketing the end of the query. If null, defaults to TODAY. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

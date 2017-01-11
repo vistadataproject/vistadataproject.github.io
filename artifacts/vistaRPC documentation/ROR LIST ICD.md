@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | FROM | LITERAL |  |  | The index entry(s) from which to begin the list   ^01: FromName   ^02: FromIEN  For example, a FROM value of \18\ would list entries following 18. You canuse the 2-nd and 3-rd \^\- pieces of the Results[0] to continue thelisting in the subsequent procedure calls.  NOTE: The FROM value itself is not included in the      resulting list.  See description of the LIST^DIC for more details about the PART, NUMBER and FROM parameters. | 
 | DATE | LITERAL |  |  | Date for the code set versioning. | 
 | ICDTYPE | LITERAL |  | true | Flag that controls whether ICD-9 or ICD-10 codes are searched.  ICD9  -  For ICD-9 codes search  ICD10 -  For ICD-10 codes search | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

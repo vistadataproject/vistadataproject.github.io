@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | TTL SEARCH | LITERAL | 30 | true | Time-To-Load Search criteria:        1: User Name        2: Client Name        3: IP Address        4: All Items | 
 | SECONDS | LITERAL | 10 | true | Threshold seconds. | 
 | HOUR | LITERAL | 30 | true | Hour | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

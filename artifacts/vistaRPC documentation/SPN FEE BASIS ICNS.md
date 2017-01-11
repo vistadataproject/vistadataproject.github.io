@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | FDATE | LITERAL |  |  | Date to begin Fee Basis search. | 
 | TDATE | LITERAL |  |  | Date to end Fee Basis search. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

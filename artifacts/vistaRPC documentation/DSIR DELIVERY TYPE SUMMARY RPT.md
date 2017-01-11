@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | SDATE | LITERAL | 7 | true | SDATE - Optional - Report start date in Fileman format. | 
 | EDATE | LITERAL | 7 | true | EDATE - Optional - Report end date in Fileman format. | 
 | DIVL | LITERAL | 150 | true | DIVL  - Optional - List of selected divisions - NULL means all divisions. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

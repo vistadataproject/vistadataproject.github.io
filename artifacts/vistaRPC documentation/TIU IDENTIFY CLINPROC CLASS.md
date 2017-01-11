@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | RPC that gets the CLINICAL PROCEDURES TIU Document
  Leading comment lines | Definition file (#8925.1) IEN,Input  -- None,Output -- Y        TIU Document Definition file (#8925.1) IEN
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

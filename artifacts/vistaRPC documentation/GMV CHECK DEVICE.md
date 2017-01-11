@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | GMVIEN | LITERAL |  | true | The value to begin the search in the Device file (#3.5). Can be null. | 
 | GMVDIR | LITERAL | 1 | true | Direction of the search (1 = forward, -1 = backwards).If DIR is null, then set to 1. | 
 | GMVRMAR | LITERAL |  | true | Right margin as a single number or range (e.g, 80, 132 or \80-132\). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

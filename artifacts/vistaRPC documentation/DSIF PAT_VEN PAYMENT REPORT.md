@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | FBEDATE | LITERAL | 7 | true | Ending Date for report (FileMan Format) | 
 | FB1725R | LITERAL | 1 | true | Mill-Bill indicator only used if PROGS passes in Fee Programs with internal numbers 2, 3 or 6. M - include only 38 U.S.C. 1725 claimsN - exclude 38 U.S.C. 1725 claimsA - All | 
 | PROGS | LIST | 99 | true | List of Fee Programs to include on report (Multi-piece IEN ^ Name) (IEN is pointer to file 161.8 FEE PROGRAMS, the user should only be allowed to select active programs.) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DIRECTION | LITERAL | 2 | true | The string LO or HI | 
 | ARRAY | LIST |  |  | The array of numbers.  Pass using . syntaxX(12)=\\,X(23)=\\,... for example | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 32 | true |  | 
 | TERM | LITERAL | 32 | true |  | 
 | TEXT | LITERAL | 64 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

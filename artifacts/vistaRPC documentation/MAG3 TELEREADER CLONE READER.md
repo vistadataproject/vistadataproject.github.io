@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MAGFROM | LITERAL |  | true | Source reader (a pointer to NEW PERSON file (#200)) to be cloned. | 
 | MAGTO | LIST |  | true | An array with target readers (pointers to NEW PERSON file (#200)). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

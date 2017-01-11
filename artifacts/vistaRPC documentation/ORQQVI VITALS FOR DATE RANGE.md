@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | PATIENT ID | LITERAL | 16 | true | Patient id (DFN) from Patient File (#2). | 
 | START DATE/TIME | LITERAL | 16 |  | Start date/time for vital retrieval in Fileman format. | 
 | STOP DATE/TIME | LITERAL | 16 |  | Stop date/time for vital retrieval in Fileman format. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

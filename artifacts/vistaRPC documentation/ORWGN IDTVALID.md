@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CSYS | LITERAL | 4 | true | Abbreviated text for Coding System | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

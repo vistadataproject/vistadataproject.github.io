@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | WS Name | LITERAL | 3 | true | This is the tree letter BP Workstation name. | 
 | jbscan | LITERAL | 5 | true | 'jbscan' literal. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

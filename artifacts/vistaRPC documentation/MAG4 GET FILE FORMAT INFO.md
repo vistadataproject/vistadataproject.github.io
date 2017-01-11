@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGEXT | LITERAL | 10 | true | This is the file Format. (The file extension)examples: JPG, TGA, DOC, HTM | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

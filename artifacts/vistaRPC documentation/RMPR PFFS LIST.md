@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DATE1 | LITERAL | 50 | true | The Fileman date to start the query.  The begining date. | 
 | DATE2 | LITERAL | 50 | true | The Fileman date to end the query.  The ending date. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

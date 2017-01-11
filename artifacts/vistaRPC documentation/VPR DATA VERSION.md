@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [VPRD](http://code.osehra.org/dox/Routine_VPRD_source.html)
  return value type | SINGLE VALUE
  description | This RPC returns the current version of the XML returned by the RPC'VPR GET PATIENT DATA.'
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | CLASSNAM | LITERAL |  |  | Is the Document class name in file TIU DOCUMENT DEFINITION. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

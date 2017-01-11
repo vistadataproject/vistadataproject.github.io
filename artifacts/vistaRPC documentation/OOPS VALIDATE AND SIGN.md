@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | This parameter contains the IEN of the record being filed, the form (CA1 orCA2), and the Field number that will trigger the data validation to be performed on the fields in the form.The format for this parameter is: IEN^FORM^FIELD^WCFLAG. | 
 | SIGN | LITERAL | 256 | true | This parameter passes in the text to be encrypted, validated, and used as theelectronic signature. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

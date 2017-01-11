@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | Filenamd | LITERAL | 30 | true | Name of the Image file to be evaluated hashing. | 
 | Network location file pointer. | LITERAL | 999 | true | This reference is used to determine whether hashing is enabledon the target network location. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

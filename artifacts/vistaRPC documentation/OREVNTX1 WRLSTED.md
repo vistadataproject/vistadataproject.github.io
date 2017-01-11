@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return list of dialogs for writing event delayed orders
  Leading comment lines | .Y(n): DlgName^ListBox Text
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

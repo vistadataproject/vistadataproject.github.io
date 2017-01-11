@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PSBWARD | LITERAL | 10 | true | The IEN of the ward from file 53.66 or the word 'ALL'. | 
 | PSBIVPT | LITERAL | 1 | true | The IV type - 'A' for Additive              'P' for Piggyback              'H' for Hyperal              'C' for Chemo              'S' for Syringe | 
 | PSBDIV | LITERAL | 1 | true | ^1=IEN of division as in the Ward Location file (File #42) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

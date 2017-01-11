@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
  return value type | SINGLE VALUE
  description | Returns the count of sensitive patients left to evaluate after a mainquery iteration run.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

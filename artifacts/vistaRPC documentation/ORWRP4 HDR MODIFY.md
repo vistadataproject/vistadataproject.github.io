@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | HANDLE | LITERAL | 30 | true | Remote Broker ID needed to find data in ^XTMP(HANDLE,\D\, | 
 | ID  | LITERAL | 30 | true | Report ID found in field .02 of file 101.24 | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

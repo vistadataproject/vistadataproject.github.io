@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMETERS | LIST | 512 |  | This array contains the following parameter necessary fora Lock command:|TAB|- NODE - the global node that needs to be locked/unlocked|TAB|- LOCKMODE - the operation to be done, Lock or Unlock|TAB|- TIMEOUT - integer representing the number of seconds during whichthe system attempts to lock or unlock a node before returning control tothe program . | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGPARAM | LIST |  | true |  MAGPARAM(\PK\) = PK (IEN) of the record in ARTIFACT INSTANCE file (#2006.918) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | Patient IEN number. | 
 | PSBOI | LITERAL |  | true | Orderable Item # | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

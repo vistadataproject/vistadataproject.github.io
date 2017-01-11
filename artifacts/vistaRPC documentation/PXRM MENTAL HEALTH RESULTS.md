@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TEST RESULTS | LITERAL | 16 | true | Dummy field to represent results. Probably needs to pass contents of theYS array (R1,R2,DFN,DUZ,ADATE etc). | 
 | RESULT GROUP/ELEMENT | LITERAL | 16 | true | This is the pointer to the result group for the test. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | IEN | LITERAL | 25 | true | This is the IEN for the ASISTS record that is being modified. | 
 | CALLER | LITERAL | 10 | true | This is the menu that originated the call. | 
 | FORM | LITERAL | 10 | true | This is the form type which can be 2162, CA1, or CA2.  However, the only formever expected with this call is a CA1. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

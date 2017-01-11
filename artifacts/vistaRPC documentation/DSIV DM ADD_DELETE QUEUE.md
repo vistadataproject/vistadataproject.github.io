@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | QUEUE | LITERAL | 20 | true | This is only required if you have successfully queued an import request to VistA Imaging.  VistA Imaging import API will return you a QUEUE number.  This is only required if you are adding a record to file 19606. | 
 | APP | LITERAL | 7 | true | This is optional only for DocManager.  For all othr DSS applications, this is required. DSS Product Prefixes for VistA Imaging:  Product Name                            Product Prefix  DocManager                              DM  CNT                                     CNT  Total Notes                             TNT  PFCS                                    PFCS  PTF                                     PTF  VRM                                     VRM  DRM                                     DRM  Dental Treatment Planner                DTP  TRM                                     TRM  PSS                                     PSS  ROI                                     ROI  MHTP                                    MHTP  Draeger                                 DRG  VistA Gateway/ProVation                 VGPRO  VistA Gateway/QuadraMed                 VGQM  VistA Gateway/Intisiq                   VGINQ  VistA Gateway/TheraDoc                  VGTHD | 
 | TIU | LITERAL | 12 | true | This field contains the pointer to the TIU DOCUMENT (#8925) file if the image has an associated note. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

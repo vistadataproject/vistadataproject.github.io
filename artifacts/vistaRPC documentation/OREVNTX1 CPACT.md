@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return True/False to display active orders for copy
  Leading comment lines | EVT ptr to #100.5
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ICN | LITERAL | 16 | true | This is the Integration Control Number of the patient for whom data is requested. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

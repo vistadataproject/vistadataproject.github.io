@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | OPTION | LITERAL | 30 | true | Currently set to EXECUTE as the only option. | 
 | RTN | LITERAL | 30 | true | Contains the routine to produce the output.  Currently to client producesthis parameter in the form of TAG^ROUTINE(needed parameters) to simplifythe calling process. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [YTQAPI3](http://code.osehra.org/dox/Routine_YTQAPI3_source.html)
  return value type | ARRAY
  description | Return: Battery Name^ Instrumentordered Battery Name and then by sequence.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

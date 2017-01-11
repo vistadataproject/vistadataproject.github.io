@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RORUTL11](http://code.osehra.org/dox/Routine_RORUTL11_source.html)
  return value type | SINGLE VALUE
  description | Used by CCR to return an agreed-upon version number to the GUI application.  The GUI will analyze the version number and display a message if the client and server are out of sync.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

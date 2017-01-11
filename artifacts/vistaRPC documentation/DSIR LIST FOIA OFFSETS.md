@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [DSIROI8](http://code.osehra.org/dox/Routine_DSIROI8_source.html)
  return value type | ARRAY
  description | This RPC gets IENS for 19620.3 and returns them through areferenced local array along with the fiscal year end date and the division: IEN^ENDDATE^DIVISION
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

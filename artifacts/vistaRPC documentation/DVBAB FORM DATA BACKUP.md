@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DVBIEN | LITERAL |  |  | The IEN of the template for which a backup is being created | 
 | LISTBOX TEXT | LITERAL | 50 | true | Option field to allow the user to enter custom text to be attached to the saved data.  Displayed in the listbox on the GUI side. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

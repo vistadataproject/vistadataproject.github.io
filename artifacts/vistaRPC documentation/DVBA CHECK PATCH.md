@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DVBPATCH | LITERAL | 20 | true | This parameter contains the patch designation (ex. DVBA*2.7*142). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | VPSAPPTS | LITERAL | 225 | true | Input: string that represents the appt(s) to be checked in.  Since more than one appt can be checked-in, each appt consists of the DFN, CLINIC ien, and appt date/timestamp.  Each appt is delimited by \;\ and the 3 pieces of data are separated by \-\.   All 3 data elements in the appt representation are required input.Syntax:           input=DFN_\-\_clinic IEN_\-\_date/timestamp of scheduled appt_\;\ example of data string (represents 2 appts):          \308165-1218-3120420.1215;308165-4569-3120420.1030\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

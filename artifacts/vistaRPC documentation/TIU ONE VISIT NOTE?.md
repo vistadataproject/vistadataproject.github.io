@@ -30,3 +30,8 @@ title: VISTA RPC documentation
 | TIUDOC | LITERAL |  | true | This is the TIU document type. | 
 | TIUDFN | LITERAL |  | true | This is the patient's internal entry number (DFN). | 
 | TIUVISIT | LITERAL |  | true | This is the patient's visit internal entry number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

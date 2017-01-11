@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [MAGROI01](http://code.osehra.org/dox/Routine_MAGROI01_source.html)
  return value type | ARRAY
  description | GET LIST OF TRANSMIT DESTINATIONS TO QUEUE DICOM IMAGES
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | ENT | LITERAL | 30 | true | Entity Name   SYS = System | 
 | PAR | LITERAL | 30 | true | The name of the stored parameter from which you wish to obtain word processing fields. | 
 | INST | LITERAL | 30 | true | This is the instance of the parameter you wish to return. If no value is passed, it will default to 1. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

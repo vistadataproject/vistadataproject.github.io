@@ -29,3 +29,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PTDFN | LITERAL |  | true | Patient IEN in Patient file | 
 | FLAGID | LITERAL |  | true | The unique number for a particular Active Record Flag returned by $$GETACT^DGPFAPI.  See IA #3860.  See also GETFLAG^ORPRF. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | FNDVALUE | LITERAL | 60 | true | The carat delimited lookup.  Each piece is the same as the subscript in the index. | 
 | XREF | LITERAL | 30 | true | The subscriber specified cross reference for the lookup. | 
 | SCREEN | LITERAL | 30 | true | The subscriber specified DIC(\S\) logic for the lookup. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

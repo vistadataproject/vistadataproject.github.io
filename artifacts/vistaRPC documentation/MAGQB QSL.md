@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | QUEUE TYPE | LITERAL | 256 | true | This defines the queue type to be reset. | 
 | IEN | LITERAL | 256 | true | This is the QUEUE file (#2006.03) internal entry number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

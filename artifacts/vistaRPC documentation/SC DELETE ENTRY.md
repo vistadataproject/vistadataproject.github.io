@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | PARAMETERS | LIST |  | true | Contains subscripts that indicate global root and entry number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | generic user information for seeding VistaUser object.
  Leading comment lines | Entry point for 'XUS GET USER INFO' RPC
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

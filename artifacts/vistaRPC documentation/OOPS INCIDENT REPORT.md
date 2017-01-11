@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | ENDDT | LITERAL | 30 | true | This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included. | 
 | LTNTT | LITERAL | 30 | true | This parameter will determine whether or not Lost Time claims should be included on the report. | 
 | STAT | LITERAL | 256 | true | This parameter will determine whether to run the report for all stations ora single station. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Return a set of names from the NEW PERSON file.
  Leading comment lines | SLC/PKS: Code moved to ORWU1 on 12/3/2002.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

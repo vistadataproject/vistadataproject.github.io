@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | TYPE | LITERAL | 32 |  | ALL or select storage type \MAG\ or \WORM\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

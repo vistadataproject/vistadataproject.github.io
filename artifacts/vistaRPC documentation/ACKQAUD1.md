@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL |  | true | The internal number in the PATIENT file (#2). | 
 | IEN | LITERAL |  | true | Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

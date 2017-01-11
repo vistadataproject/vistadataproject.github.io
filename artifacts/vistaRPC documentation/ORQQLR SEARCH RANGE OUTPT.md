@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return lab results search date range for an outpatient
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

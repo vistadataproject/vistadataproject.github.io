@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | VPSIO | LITERAL | 50 | true | This is the device name where the label will be printed to. | 
 | VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN,SSN,ICN,VIC/CAC | 
 | VPSNUM | LITERAL | 50 | true | Patient ID. This could be SSN, DFN, VIC/CAC, ICN | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

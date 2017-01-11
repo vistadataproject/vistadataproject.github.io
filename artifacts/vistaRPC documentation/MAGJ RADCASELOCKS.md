@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DATA | LITERAL | 70 | true | Input string = OPEN FLAG ^ RADFN ^ RADTI ^ RACNI ^ RARPT      OPEN_FLAG = 3: Reserve-to-Lock; 4: Lock-to-Reserve; 5: Lock/Take      RADFN,RADTI,RACNI,RARPT = pointers to Rad Patient File for the exam | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

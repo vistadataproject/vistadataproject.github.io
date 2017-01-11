@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [PRCH7PA4](http://code.osehra.org/dox/Routine_PRCH7PA4_source.html)
  return value type | ARRAY
  description | RPC to check user authorization for a Fund Control Point
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

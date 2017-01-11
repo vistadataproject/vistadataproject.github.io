@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | procedure
  Leading comment lines | Return a list of admissions
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

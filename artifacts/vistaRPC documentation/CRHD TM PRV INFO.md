@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [CRHD10](http://code.osehra.org/dox/Routine_CRHD10_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

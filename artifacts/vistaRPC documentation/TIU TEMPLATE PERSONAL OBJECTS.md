@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Returns the list of Patient Data Objects that are
  Leading comment lines | allowed to be used in Personal Templates
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

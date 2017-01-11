@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | RESULTS | LITERAL |  | true |  | 
 | FROM | LITERAL | 50 | true |  | 
 | DIR | LITERAL | 50 | true |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

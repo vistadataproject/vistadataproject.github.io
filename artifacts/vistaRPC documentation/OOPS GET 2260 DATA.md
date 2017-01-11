@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL |  | true | The input parameter must include the ASISTS IEN and the form type of datato be retrieved. These parameters must be separated by the caret character. Ie.165^2162.Valid form values are CA1, CA2, or 2162. | 
 | PERS |  |  |  |  | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

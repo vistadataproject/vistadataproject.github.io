@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | TYPE OF LIST | LITERAL | 1 | true | \P\  : Get list by patient\C\  : Get list by clerk\O\  : Get all open or pending requests. Defaults to all requests for a given status | 
 | STATUS | LITERAL | 8 | true | \A\  : Get only the appealed requests of this type\O\  : Get only the open requests of this type\C\  : \          \ closed \                \\P\  : \          \ pending \               \\N\  : \          \ Other Nondisclosures    \\E\  : \          \ entered in error \      \\X\  : \          \ cancelled \             \\*\  : Get all types | 
 | PATIENT/CLERK ID | LITERAL | 99 | true | DFN of patient or IEN of clerk. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

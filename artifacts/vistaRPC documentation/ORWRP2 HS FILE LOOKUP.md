@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | FILE | LITERAL |  | true | This is the file number for the entries to be used to populate the combobox. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

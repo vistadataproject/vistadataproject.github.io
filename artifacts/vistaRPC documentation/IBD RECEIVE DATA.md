@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | IBDF | LIST | 245 | true | See routine IBDFRPC4 for details of required variables.  See routinesIBDFDE* for examples of use. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

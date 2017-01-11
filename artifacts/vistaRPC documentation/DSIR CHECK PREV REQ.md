@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | PATIENT | LITERAL | 999 | true | This is the DFN of the patient. | 
 | REQUESTOR | LITERAL | 999 | true | This is the IEN of the requestor in file 19620.12 DSIR NEW REQUESTOR. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

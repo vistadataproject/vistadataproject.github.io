@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL |  | true | Patient pointer. | 
 | RARPT1 | LITERAL |  | true | ^RARPT pointer - origin of search.  Next one is before it or after it. | 
 | DIR | LITERAL |  | true | Direction to transverse ^RADPT (increasing or decreasing report number).1 = increasing report number, -1 = decreasing report number. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

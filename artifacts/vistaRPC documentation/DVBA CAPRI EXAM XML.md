@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | DAS | LITERAL | 250 | true | DAS is the XML DAS Conformation message | 
 | DATTIM | LITERAL |  | true | DATTIM is the XML Transmission Date/Time | 
 | XML | LIST |  | true | XML is the array list format of the template being stored | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

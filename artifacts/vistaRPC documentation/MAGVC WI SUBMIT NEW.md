@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MSGTAGS | LIST |  |  | This is an array of tag names and values describing the work item andits child objects. | 
 | STAT | LITERAL |  | true | The STAT flag, set to 1, initiates a query before returning data. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | returns TRUE if the person has the security key
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | DFN | LITERAL | 99 | true | Patient File Pointer (File #2, Required) | 
 | FBBEGDT | LITERAL | 14 | true | From Date to check (FM format, Required) | 
 | FBENDDT | LITERAL | 14 | true | To Date (FM format, Optional) | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

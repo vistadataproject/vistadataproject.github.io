@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | DIV | LITERAL | 12 | true | The DIV input parameter representd the Division (Station Number) where the results were obtained.NOTE:  This parameter is for future use. | 
 | TESTS | LITERAL | 999 | true | An array of Laboratory Test IENs used to search for results.  TESTS(1)=\3536\  TESTS(2)=\4090\ | 
 | PATS | LITERAL | 999 | true | An array of Patient IENs used to search for Lab test results.  PATS(1)=\495943\  PATS(2)=\39282\ | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

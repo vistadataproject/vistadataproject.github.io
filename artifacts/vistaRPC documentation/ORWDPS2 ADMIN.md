@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | return administration time info
  Leading comment lines | REC: StartText^StartTime^Duration^FirstAdmin
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

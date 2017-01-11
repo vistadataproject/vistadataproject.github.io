@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | MAGGZY | LITERAL | 10 |  | Not using this input for any processing in Version 2.5It might be used for a future version.Kept in the parameter list, for backward compatibility.---If MAGGZY=1, then add procedure PRINT NAME (full name) in output. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

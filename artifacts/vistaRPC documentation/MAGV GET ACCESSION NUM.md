@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | PATREFIEN | LITERAL | 10 | true | This is the internal entry number of the entry on the IMAGING PATIENT REFERENCE File (#2005.6) with which the procedure reference is associated. | 
 | PROCREFIEN | LITERAL | 10 | true | This is the procedure's internal entry number on the IMAGING PROCEDUREREFERENCE File (#2005.61). | 
 | OVERRIDE | LITERAL | 3 | true | This parameter should be used with EXTREME CAUTION.  If set TRUE(nonzero), will suppress the validation of the procedure reference IENagainst the patient reference IEN. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

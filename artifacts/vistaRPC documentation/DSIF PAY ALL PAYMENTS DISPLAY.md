@@ -23,3 +23,8 @@ title: VISTA RPC documentation
 | VENDOR IEN | LITERAL | 25 | true |  | 
 | DATE OF SERVICE | LITERAL | 7 | true | Date of service FM format (optional) **Unless you enter a CPT code, then it is required! | 
 | CPT | LITERAL | 12 | true | CPT code, external value. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

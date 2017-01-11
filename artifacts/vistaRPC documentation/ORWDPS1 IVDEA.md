@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | only be called for an outpaitent and IV dialog
  Leading comment lines | OI: IV Orderable Item,OITYPE: A:ADDITIVE  S:SOLUTION
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

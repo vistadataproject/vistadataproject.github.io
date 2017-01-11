@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | RES | LITERAL | 256 | true | CALL TO GET A BSE TOKEN FOR AUTHENTICATING REMOTE VISTA USER | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

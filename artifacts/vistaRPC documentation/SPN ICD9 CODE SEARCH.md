@@ -25,3 +25,8 @@ title: VISTA RPC documentation
 | PATTYP | LITERAL |  |  | (1) Patients in SCI Registry only (2) All Patients | 
 | SPNANS | LITERAL |  |  | (1) Range of Codes (2) Individual codes | 
 | CODES | LIST |  |  | The list or range of ICD codes | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

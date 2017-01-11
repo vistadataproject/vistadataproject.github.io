@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | DA number | LITERAL |  | true | The internal number of the report to be deleted. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

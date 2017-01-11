@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | MAGCMP | LITERAL | 10 | true | This is the Complete Flag that Clinical Procedures doesn't deal with.  It is always '2' which indicates a 'Complete' transaction.Request listing.  (CPLIST^GMRCCP) | 
 | MAGTIU | LITERAL | 30 | true | The TIUDA of the Note associated with the Consult.  This TIUDA is produced by a call to ITIU^MDAPI | 
 | MAGCMP | LITERAL | 10 | true | This is the Complete Flag that Clinical Procedures doesn't deal with.It is always '2' which indicates a 'Complete' transaction. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

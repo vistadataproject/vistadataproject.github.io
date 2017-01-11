@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | TIUDA | LITERAL |  | true | This is the record number (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 
 | IMGDA | LITERAL |  | true | This is the record number (IEN) of the document in the IMAGE FILE (#2005). | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

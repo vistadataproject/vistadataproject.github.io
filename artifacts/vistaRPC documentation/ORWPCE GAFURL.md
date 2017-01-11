@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Returns the MH GAF Web Page URL
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | return 1 if DEA check fails for this provider
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

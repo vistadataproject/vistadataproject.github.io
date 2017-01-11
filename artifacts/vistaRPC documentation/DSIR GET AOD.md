@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | AODIEN | LITERAL | 20 | true | AODIEN = The request IEN for which you want an Accounting of Disclosure. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

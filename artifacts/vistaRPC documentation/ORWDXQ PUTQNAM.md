@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 --- | --- 
  Method comment | Save display name for a quick order dialog
  Leading comment lines | see if DLG used QNAM as display text (quit if so),otherwise save in ORWDQ DISPLAY NAME
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

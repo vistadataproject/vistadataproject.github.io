@@ -14,3 +14,8 @@ title: VISTA RPC documentation
  routine | [RMPR29WO](http://code.osehra.org/dox/Routine_RMPR29WO_source.html)
  return value type | GLOBAL ARRAY
  description | GUI Order controll processing.  Returns the list of all open pending Work Orders from file 664.1.
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

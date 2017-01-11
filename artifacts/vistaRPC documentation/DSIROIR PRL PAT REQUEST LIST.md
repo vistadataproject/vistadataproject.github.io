@@ -22,3 +22,8 @@ title: VISTA RPC documentation
 | STDT | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
 | ENDT | LITERAL | 7 | true | The last date to searc for a request IEN for the selected patient. | 
 | PAT | LITERAL | 99 | true | DFN of the selected patient. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

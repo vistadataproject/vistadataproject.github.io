@@ -28,3 +28,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | ORLST | LIST | 255 | true | List of Order IENs | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

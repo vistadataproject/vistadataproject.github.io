@@ -20,3 +20,8 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | INPUT | LITERAL | 256 | true | This input parameter contains the IEN of the Site Parameter File (#2262), theSite Parameter Name, and the District Office.  The format is:IEN^SITE NAME^DISTRICT OFFICE NAME. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

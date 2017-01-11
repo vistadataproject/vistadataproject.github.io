@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | START DATE | LITERAL | 7 | true | The date used to start the search for entries to check for bogus exemption data. | 
 | END DATE | LITERAL | 7 | true | The date to stop the search.  Defaults to the current day. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

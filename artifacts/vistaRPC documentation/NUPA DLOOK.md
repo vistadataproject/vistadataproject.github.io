@@ -24,3 +24,8 @@ title: VISTA RPC documentation
 | TYPE | LITERAL |  | true | Type of file to lookup - variable pointer or date. | 
 | SCR | LITERAL |  | true | Fileman screen for the lookup. | 
 | IND | LITERAL |  | true | Index to lookup the data on. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | ICNLST | LITERAL |  |  | List of patient's ICNs (ICN^ICN^ICN^ICN^ICN...) | 
 | ACTDATE | LITERAL |  |  | Date to begin ADT entry search from. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am

@@ -21,3 +21,8 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | MDCPMSG | LITERAL | 250 | true | This is the IFN of the HL7 message in the CLIO_HL7_LOG file. | 
 | MDCPTEXT | LITERAL | 250 | true | This is the text to add to the CLIO_HL7_LOG file.  Note that this text will completely overwrite the text that was already in the reason field. | 
+
+
+
+
+Generated on January 11th 2017, 6:34:23 am
