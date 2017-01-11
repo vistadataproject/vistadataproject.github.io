@@ -9,17 +9,30 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORQQPL ADD SAVE
- tag-8994 | ADDSAVE
- routine-8994 | ORQQPL1
- return_value_type-8994 | SINGLE VALUE
- description-8994 | Add new problem record
+ label | ORQQPL ADD SAVE
+ tag | ADDSAVE
+ routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
+ return value type | SINGLE VALUE
+ description | Add new problem record
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | SAVE NEW RECORD
+ Leading comment lines | RETURN - Problem IFN if success, 0 otherwise,ADDARRAY - array used for indirect sets of  GMPFLDS()
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMPDFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | GMPROV |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | GMPVAMC | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMPDFN | LITERAL |  |  |  | 
+| GMPROV |  |  |  |  | 
+| GMPVAMC | LITERAL |  |  |  | 
+| ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:42 am

@@ -9,14 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | GMV MARK ERROR
- tag-8994 | ERROR
- routine-8994 | GMVUTL1
- return_value_type-8994 | SINGLE VALUE
- description-8994 | This remote procedure call marks a selected vitals record in the GMRVVital Measurement (#120.5) file as entered-in-error. This remote procedure call is documented in Integration Agreement 4414.
+ label | GMV MARK ERROR
+ tag | ERROR
+ routine | [GMVUTL1](http://code.osehra.org/dox/Routine_GMVUTL1_source.html)
+ return value type | SINGLE VALUE
+ description | This remote procedure call marks a selected vitals record in the GMRVVital Measurement (#120.5) file as entered-in-error. This remote procedure call is documented in Integration Agreement 4414.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV MARK ERROR [RPC entry point]
+ Leading comment lines | GMVDATA CONSISTS OF THE FOLLOWING DATA:,FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT,PATIENT^INVALID RECORD
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVDATA | LITERAL | 60 | true | GMVDATA contains the following information:  piece1^piece2^piece3  where piece1 = FILE 120.5 IEN        piece2 = FILE 200 IEN (i.e., DUZ)       piece3 = A single value to indicate the reason for the error.                1 = INCORRECT DATE/TIME, 2 = INCORRECT READING, 3 =                INCORRECT PATIENT and 4 = INVALID RECORD | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVDATA | LITERAL | 60 | true | GMVDATA contains the following information:  piece1^piece2^piece3  where piece1 = FILE 120.5 IEN        piece2 = FILE 200 IEN (i.e., DUZ)       piece3 = A single value to indicate the reason for the error.                1 = INCORRECT DATE/TIME, 2 = INCORRECT READING, 3 =                INCORRECT PATIENT and 4 = INVALID RECORD | 
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:43 am

@@ -9,14 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORQQAL DETAIL
- tag-8994 | DETAIL
- routine-8994 | ORQQAL
- return_value_type-8994 | ARRAY
- description-8994 | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by \^\ and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by \;\), comments.
+ label | ORQQAL DETAIL
+ tag | DETAIL
+ routine | [ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
+ return value type | ARRAY
+ description | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by \^\ and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by \;\), comments.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN DETAILED ALLERGY INFO FOR SPECIFIED ALLERGIC REACTION:
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ALLERGY ID | LITERAL | 16 | true | The record number of the allergy/adverse reaction from the PatientAllergies file (#120.8). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ALLERGY ID | LITERAL | 16 | true | The record number of the allergy/adverse reaction from the PatientAllergies file (#120.8). | 
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:42 am

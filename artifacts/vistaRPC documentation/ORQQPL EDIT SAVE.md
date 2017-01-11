@@ -9,16 +9,29 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORQQPL EDIT SAVE
- tag-8994 | EDSAVE
- routine-8994 | ORQQPL1
- return_value_type-8994 | SINGLE VALUE
- description-8994 | sAVES EDITED PROBLEM RECORD
+ label | ORQQPL EDIT SAVE
+ tag | EDSAVE
+ routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
+ return value type | SINGLE VALUE
+ description | sAVES EDITED PROBLEM RECORD
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | SAVE EDITED RES
+ Leading comment lines | RETURN - boolean, 1 success, 0 failure,EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IFN | LITERAL |  |  | RECORD IFN | 
-| vs:Input_Parameter-8994_02 | PROV | LITERAL |  |  | PROBLEM RESP PROVIDER | 
-| vs:Input_Parameter-8994_02 | VAMC | LITERAL |  |  | FACILITY ID | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IFN | LITERAL |  |  | RECORD IFN | 
+| PROV | LITERAL |  |  | PROBLEM RESP PROVIDER | 
+| VAMC | LITERAL |  |  | FACILITY ID | 
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:42 am

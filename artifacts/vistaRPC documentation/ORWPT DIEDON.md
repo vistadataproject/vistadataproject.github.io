@@ -9,8 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORWPT DIEDON
- tag-8994 | DIEDON
- routine-8994 | ORWPT
- return_value_type-8994 | SINGLE VALUE
- description-8994 | Returns date of death if patient has expired.  Otherwise returns 0.
+ label | ORWPT DIEDON
+ tag | DIEDON
+ routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ return value type | SINGLE VALUE
+ description | Returns date of death if patient has expired.  Otherwise returns 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Check for a date of death
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:42 am

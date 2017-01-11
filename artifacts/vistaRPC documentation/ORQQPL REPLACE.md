@@ -9,14 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | ORQQPL REPLACE
- tag-8994 | REPLACE
- routine-8994 | ORQQPL2
- return_value_type-8994 | SINGLE VALUE
- description-8994 | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
+ label | ORQQPL REPLACE
+ tag | REPLACE
+ routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
+ return value type | SINGLE VALUE
+ description | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | replace problem on patient's list
+ Leading comment lines | taken from REPLACE^GMPLRPTR
 
 ### Input Parameters
 
-| type | input_parameter-8994_02 | parameter_type-8994_02 | maximum_data_length-8994_02 | required-8994_02 | description-8994_02 | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IFN | LITERAL |  |  | IFN OF PROBLEM | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IFN | LITERAL |  |  | IFN OF PROBLEM | 
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:42 am

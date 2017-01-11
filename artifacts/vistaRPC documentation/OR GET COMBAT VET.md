@@ -9,8 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- name-8994 | OR GET COMBAT VET
- tag-8994 | CV
- routine-8994 | ORMARKER
- return_value_type-8994 | ARRAY
- description-8994 | 
+ label | OR GET COMBAT VET
+ tag | CV
+ routine | [ORMARKER](http://code.osehra.org/dox/Routine_ORMARKER_source.html)
+ return value type | ARRAY
+ description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Combat Vet Marker
+
+
+
+
+ ###### Generated on January 11th 2017, 6:39:43 am
