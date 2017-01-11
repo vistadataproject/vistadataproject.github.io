@@ -409,7 +409,7 @@ U6 | OREVNTX1 DELDFLT | __CHANGE__ |  [DELDFLT^OREVNTX1](http://code.osehra.org/
 U7 | OREVNTX1 DFLTEVT | READ |  [DFLTEVT^OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html) | PVIFN | 5 | PARAMETER |  | 
 U8 | OREVNTX1 SETDFLT | __CHANGE__ |  [SETDFLT^OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html) | EVT | 5 | PARAMETER | 100.5 | 
 U9 | OREVNTX1 TYPEXT | READ |  [TYPEXT^OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html) | DFN, EVT | 2 | - |  | 
-U10 | OREVNTX1 WRLSTED | READ |  [WRLSTED^OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html) | LOC, EVTID | &nbsp; | PARAMETER | 101.41 | 
+U10 | OREVNTX1 WRLSTED | READ |  [WRLSTED^OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html) | LOC, EVTID | &nbsp; | PARAMETER | 101.41 | ORWOR WRITE ORDERS LIST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 U11 | ORQORB SORT | READ |  [SORT^ORQORB](http://code.osehra.org/dox/Routine_ORQORB_source.html) | &nbsp; | 1 | PARAMETER |  | ORB SORT METHOD
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
