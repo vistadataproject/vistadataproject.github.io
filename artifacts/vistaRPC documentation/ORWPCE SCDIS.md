@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | ARRAY
  description | Returns service connected percentage and rated disabilities for a patient.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return service connected % and rated disabilities

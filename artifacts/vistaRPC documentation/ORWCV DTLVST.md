@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  return value type | ARRAY
  description | This API returns the text of a progress note or discharge summary relatedto a visit/appointment.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return progress notes / discharge summary

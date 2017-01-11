@@ -14,3 +14,9 @@ title: VISTA RPC documentation
  routine | [YSGAFAPI](http://code.osehra.org/dox/Routine_YSGAFAPI_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 

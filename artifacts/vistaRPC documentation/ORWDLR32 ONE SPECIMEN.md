@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns IEN^NAME of requested a TOPOGRAPHY FIELD (file #61) entry.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return one specimen
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

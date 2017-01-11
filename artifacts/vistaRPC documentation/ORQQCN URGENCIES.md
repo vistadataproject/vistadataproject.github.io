@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of applicable urgencies from PROTOCOL file 101,given a ConsultIEN and type.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | new urgency from 101.42
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

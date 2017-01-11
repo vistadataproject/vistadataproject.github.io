@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the value of the ORWPCE ASK ENCOUNTER UPDATE parameter.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns ORWPCE ASK ENCOUNTER UPDATE parameter value
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

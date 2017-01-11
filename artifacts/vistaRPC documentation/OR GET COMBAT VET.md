@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORMARKER](http://code.osehra.org/dox/Routine_ORMARKER_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Combat Vet Marker

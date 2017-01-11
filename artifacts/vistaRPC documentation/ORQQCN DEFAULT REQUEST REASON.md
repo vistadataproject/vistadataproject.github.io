@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return default reason for request for service
+ Leading comment lines | ORSVC=pointer to file 123.5,ORDFN=patient, if RESOLVE=1,RESOLVE=1 to resolve boilerplate, 0 to not resolve
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

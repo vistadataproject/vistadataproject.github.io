@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns information for a specific CPT Code.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns info for a specific CPT Modifier
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  return value type | ARRAY
  description | This RPC is used as part of Kernel to allow the user to change thereverify code.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | change VC, Return 0 = success

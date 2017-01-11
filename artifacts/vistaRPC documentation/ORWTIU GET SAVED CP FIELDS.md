@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given a TIU document of the clinical procedures class, return the author, title, cosigner, procedure summary code, date/time of procedure, and reference date, as stored on the server.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Checks required CP fields before signature
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

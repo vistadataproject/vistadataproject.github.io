@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORCDLR2](http://code.osehra.org/dox/Routine_ORCDLR2_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | ck list of ORDERS for labs w/invalid coll times

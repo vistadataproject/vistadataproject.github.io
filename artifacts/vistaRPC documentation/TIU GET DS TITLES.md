@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get list of DS Titles

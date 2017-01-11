@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | sAVES EDITED PROBLEM RECORD
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | SAVE EDITED RES
+ Leading comment lines | RETURN - boolean, 1 success, 0 failure,EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

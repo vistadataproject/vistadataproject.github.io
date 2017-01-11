@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | SINGLE VALUE
  description | Returns 1 if action is valid for an order, otherwise 0^error.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | Return 1 if action is valid for this order, otherwise 0^error

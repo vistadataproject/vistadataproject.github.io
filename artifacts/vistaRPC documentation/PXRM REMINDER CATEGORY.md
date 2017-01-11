@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | List reminders and categories in display order for a reminder category.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get category information
+ Leading comment lines | Input parameter Category ien [#811.7]
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

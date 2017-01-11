@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure call returns the observation date/time and reading of the record closest to the date/time specified for the patient and vitaltype.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV CLOSEST READING [RPC entry point]
+ Leading comment lines | Get nearest reading to date(/time) provided,Input:  GMVDFN - DFN (required),GMVDT - FileMan date/time (optional),Default is NOW,GMVT - Vital Type abbreviation, FILE 120.51, Field 1 (required),GMVFLAG - Where to look (optional),0 = either before or after GMVDT  (default),1 = before GMVDT,2 = after GMVDT,Output: RESULT - piece1^piece2,where piece1 = date/time of reading (FileMan internal format),piece2 = reading,If no records found piece 1 = -2,and piece 2 = message text                     ,If an error was encountered piece1 = -1,and piece2 = error message
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

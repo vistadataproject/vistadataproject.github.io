@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | ARRAY
  description | Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | List of dlgs for writing orders

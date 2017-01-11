@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Forwards a consult to a subservice of the forwarding service, as definedin file 123.5
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Forward consult/request to another service
+ Leading comment lines | GMRCO - IEN of consult from File 123,GMRCSS - Service to which consult is being forwarded,GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200,GMRCURGI - Urgency of the request,GMRCORNP - Person who is responsible for forwarding the consult,ORCOM is the comments array explaining the forwarding action,passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

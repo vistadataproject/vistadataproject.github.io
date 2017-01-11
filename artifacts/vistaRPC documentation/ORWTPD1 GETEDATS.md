@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get user's (all levels) Encounter app't date range params.

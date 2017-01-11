@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | ARRAY
  description | Returns list based on lexicon look-up.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return list after lexicon lookup

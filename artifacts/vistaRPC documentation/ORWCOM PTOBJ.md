@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
  return value type | SINGLE VALUE
  description | Returns COM Object entries from  different parameters.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns Patient COM Object

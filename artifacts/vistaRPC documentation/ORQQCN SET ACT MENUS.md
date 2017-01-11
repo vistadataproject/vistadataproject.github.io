@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Based on the IEN of the consult passed in, returns a string representingvarious facets of the user's access level for that consult and service.This allows dynamic enabling/disabling of GUI menus based on the user'sability to act on that particular consult.  
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | set action menus in GUI based on service of selected consult
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

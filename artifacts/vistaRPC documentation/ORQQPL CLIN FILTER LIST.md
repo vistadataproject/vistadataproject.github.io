@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  return value type | ARRAY
  description | rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get FILTERED LIST OF CLINICS
+ Leading comment lines | RETURN NAMES FOR LIST OF CLINICS PASSED IN

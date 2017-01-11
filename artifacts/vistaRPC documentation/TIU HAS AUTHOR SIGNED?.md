@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Boolean RPC returns a value of 0 if the author has not signed and the user attempting to sign is the expected co-signer.  Returns a 1 if the author has signed or the user attempting to sign is NOT the expected co-signer.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Has Author signed?
+ Leading comment lines | if TIUY =,0 = Author has NOT signed & TIUUSR = Expected Cosigner,1 = Author HAS signed or TIUUSR '= Expected Cosigner
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

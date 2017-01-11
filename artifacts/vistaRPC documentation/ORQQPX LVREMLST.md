@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns Cover Sheet reminder settings
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns cover sheet reminders at a specified level
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

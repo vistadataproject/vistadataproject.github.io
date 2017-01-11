@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  return value type | ARRAY
  description | Returns list of Statement/Reasons for Non-VA medication orders.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return Non-VA Med Statement/Reasons

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns TRUE is the passed in reminder dialog is allowed to be used ina TIU Template.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns TRUE if the passed in Reminder Dialog IEN is
+ Leading comment lines | Allowed to be used as a TIU Template
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  return value type | ARRAY
  description | This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | report list for labs tab
+ Leading comment lines | RPC: ORWRP LAB REPORT LIST

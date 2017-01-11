@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given a Consult IEN in file 123, return a formatted list item for thatsingle consult only, in the same format as returned by ORQQCN LIST.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list item for the selected consult only
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

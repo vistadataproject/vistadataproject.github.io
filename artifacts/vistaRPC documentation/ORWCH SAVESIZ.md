@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  return value type | SINGLE VALUE
  description | This RPC saves the size (bounds) for a particular CPRS GUI control.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save the bounds for a particular control
+ Leading comment lines | NAM=frmName or frmName.ctrlName  VAL=left,top,width,height

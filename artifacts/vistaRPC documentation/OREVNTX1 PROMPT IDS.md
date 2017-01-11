@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return some prompt ids from #101.41
+ Leading comment lines | treating specialty Id^attending provider id

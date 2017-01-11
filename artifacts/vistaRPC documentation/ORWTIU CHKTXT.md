@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Check for existence of text in TIU(8925,TIUDA, either in \TEXT\ or \TEMP\ nodes, before allowing signature.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Checks for presence of text before signature
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

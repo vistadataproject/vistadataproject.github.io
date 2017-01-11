@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  return value type | ARRAY
  description | Return doses for an orderable item.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return doses for an orderable item  -  TEST ONLY

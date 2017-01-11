@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns array of subtopics for any given education topic
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3079
+ Leading comment lines | ORQQPXRM EDUCATION SUMMARY
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

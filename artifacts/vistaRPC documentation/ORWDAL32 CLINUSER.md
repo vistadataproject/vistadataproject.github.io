@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDAL33](http://code.osehra.org/dox/Routine_ORWDAL33_source.html)
  return value type | SINGLE VALUE
  description | Determine if user can perform cover sheet allergy actions.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | can user mark allergy as entered in error

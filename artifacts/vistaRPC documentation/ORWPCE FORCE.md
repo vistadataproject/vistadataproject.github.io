@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the value of the ORWPCE FORCE GUI PCE ENTRY parameter.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Retrieve FORCE GUI PCE Entry for a given User/Location
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

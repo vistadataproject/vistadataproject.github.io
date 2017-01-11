@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Returns the global reference for a particular file number.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return global reference for file number

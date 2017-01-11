@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This remote procedure call returns a list on consult reports for aspecific patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | RPC: ORWCS LIST OF CONSULT REPORTS,See RPC definition for details on input and output parameters
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

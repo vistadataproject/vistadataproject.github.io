@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Deletes an entry in the Template Field (8927.1) file.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Call ^DIK to remove a Template Field
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

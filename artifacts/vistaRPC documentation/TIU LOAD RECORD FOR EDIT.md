@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This RPC loads the return array with data in a format consistent with thatrequired by the TIU UPDATE RECORD API.  It should be invoked when the userinvokes the Edit action, to load the dialog for editing the document.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get data in preparation for editing a record
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This BOOLEAN RPC evaluates the question of whether a particular documentmay be attached as an entry to an Interdisciplinary Note (i.e., can thisdocument be an ID Child?).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Can this document be attached as an ID Child
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

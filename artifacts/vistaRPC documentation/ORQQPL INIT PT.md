@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | returns death indicator, sc and exposures
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GET PATIENT PARAMETERS
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

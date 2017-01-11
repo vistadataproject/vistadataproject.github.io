@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Wrapper for the TFL^VAFCTFU1 routine, which returns all the treatingfacilities for a given patient DFN.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a list from the TFL^VAFCTFU1 call
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

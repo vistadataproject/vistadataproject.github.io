@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | If quick order belong to Inpatient Med Order Group: return 1,Otherwise, return 0

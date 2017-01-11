@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns resolved boilerplate form CONSULT SERIVCES file (123.5) reflectingthe service's prerequisites for ordering a consult.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns prequisites for ordering
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC looks at data returned from the HDR and makes any modificationsnecessary to make the data compatible with CPRS Reports.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Extract/Modify data from the HDR
+ Leading comment lines | HANDLE=Remote Broker ID in ^XTMP(HANDLE,"D",,ID=Report ID found in field .02 file 101.24
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

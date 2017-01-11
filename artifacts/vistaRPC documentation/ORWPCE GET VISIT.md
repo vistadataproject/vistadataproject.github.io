@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | SINGLE VALUE
  description | Returns the visit IEN.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get the visit IEN

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns data for one collection sample in the format:     n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return data for one colelction sample
+ Leading comment lines | n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

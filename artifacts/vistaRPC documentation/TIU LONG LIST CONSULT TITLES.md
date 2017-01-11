@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC serves data to a longlist of selectable TITLES for CONSULTS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Handle long list of titles for CONSULTS
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

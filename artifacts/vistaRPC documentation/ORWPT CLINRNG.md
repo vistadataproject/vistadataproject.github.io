@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | ARRAY
  description | Returns a list of selectable options from which a user can choose a daterange for appointments.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return date ranges for clinic appointments

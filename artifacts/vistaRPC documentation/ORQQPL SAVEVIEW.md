@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Saves preferred view (inpatient/outpatient) and list of preferredclinics/services to NEW PERSON file, field 125.nn.  Also sets value ofparameter [ORCH CONTEXT PROBLEMS], which controls the default status ofthe problems shown, as well as whether comments should be displayed.Preferences take effect for both GUI and List Manager, and can be changedfrom either interface.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save new view in File #200/Field #125
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
  return value type | ARRAY
  description | This RPC returns a value for use with the CCOW vault.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return ap

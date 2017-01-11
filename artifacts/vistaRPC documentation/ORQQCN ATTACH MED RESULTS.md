@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Allows a med result to be attached to a procedure request.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Attach a medicine result to a consult
+ Leading comment lines | GMRCO - Internal file number of consult from File 123,GMRCRSLT - pointer to medicine result,GMRCAD - Date/Time Consult was resulted.,GMRCORNP - Provider who attached the result to the consult,ORALTO - array of alert recipient IENs
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

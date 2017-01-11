@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  return value type | SINGLE VALUE
  description | Delete order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete order

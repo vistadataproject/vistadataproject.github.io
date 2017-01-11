@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns "MHV" if patient has My HealtheVet data
+ Leading comment lines | Ouput Variable,ORY = 0      if patient does not have My HealtheVet (MHV) data,= "MHV"  if patient does have My HealtheVet data   
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

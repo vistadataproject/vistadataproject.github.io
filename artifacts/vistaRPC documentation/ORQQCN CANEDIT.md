@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns indication of whether a consult/procedure request can beresubmitted.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return whether consult can be edited and resubmitted
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

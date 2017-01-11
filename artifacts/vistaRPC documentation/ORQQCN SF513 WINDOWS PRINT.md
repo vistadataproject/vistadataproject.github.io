@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  return value type | GLOBAL ARRAY
  description | Print consults Standard Form 513 to Windows device from GUI application.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Print SF513 to Windows device from GUI

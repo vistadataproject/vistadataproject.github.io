@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  return value type | ARRAY
  description | Returns a list of labs to display on the CPRS GUI cover sheet for apatient.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return labs for patient

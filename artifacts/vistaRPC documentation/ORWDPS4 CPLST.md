@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
  return value type | ARRAY
  description | Get co-pay ralated questions
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get CP questions

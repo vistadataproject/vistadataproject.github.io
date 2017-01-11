@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns progress note text based on the results of the test.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | DBIA 3080
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

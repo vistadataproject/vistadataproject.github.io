@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Boolean RPC simply evaluates whether the current user requirescosignature for TIU DOCUMENTS, and returns a 1 if true, or a 0 if false.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Evaluate cosignature requirement
+ Leading comment lines | Initialize return value
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

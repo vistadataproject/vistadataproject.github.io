@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given an XQAID, return XQADATA for an alert.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return XQADATA for an alert
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

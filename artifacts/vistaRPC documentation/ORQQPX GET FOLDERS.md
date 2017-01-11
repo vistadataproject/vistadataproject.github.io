@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  return value type | SINGLE VALUE
  description | Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return Visible Reminder Folders
+ Leading comment lines | Codes: D=Due, A=Applicable, N=Not Applicable, E=Evaluated, O=Other

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns a list of consult requests for a patient within optional date rangeand optional service.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return patient's consult requests between start date and stop date for the service and status indicated:
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

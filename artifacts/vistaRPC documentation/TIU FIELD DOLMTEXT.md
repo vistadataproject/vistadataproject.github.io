@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Reads through an array of text and converts all entries of templatefields to their assocaited List Manager text values.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | finds Template Fields and replaces with LM Text
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

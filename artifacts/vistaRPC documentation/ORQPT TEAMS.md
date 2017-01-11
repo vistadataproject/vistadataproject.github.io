@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORQPTQ1](http://code.osehra.org/dox/Routine_ORQPTQ1_source.html)
  return value type | ARRAY
  description | Function returns a list of teams.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return list of teams for a system
+ Leading comment lines | Also called under DBIA # 2692.

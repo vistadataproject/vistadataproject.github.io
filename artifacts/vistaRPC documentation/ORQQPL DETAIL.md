@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns a string of detailed information for a problem.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN DETAILED PROBLEM DATA
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

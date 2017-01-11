@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | SINGLE VALUE
  description | Saves PCE information entered into CPRS GUI.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save PCE information

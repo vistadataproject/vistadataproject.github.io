@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This function returns a string of information for a specific allergy/adverse reaction.  Returned data is delimited by \^\ and includes:allergen/reactant, originator, originator title, verified/not verified, observed/historical,<blank>,type, observation date, severity, drug class, symptoms/reactions (mulitple symptoms possible - delimited by \;\), comments.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN DETAILED ALLERGY INFO FOR SPECIFIED ALLERGIC REACTION:
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

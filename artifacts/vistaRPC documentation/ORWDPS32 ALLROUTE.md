@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  return value type | ARRAY
  description | Returns a list of all available medication routes.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns a list of all available med routes

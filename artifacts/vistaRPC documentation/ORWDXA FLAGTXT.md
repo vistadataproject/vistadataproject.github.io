@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | ARRAY
  description | Return text associated with a particular flagged order (reason for flag).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | flag reason

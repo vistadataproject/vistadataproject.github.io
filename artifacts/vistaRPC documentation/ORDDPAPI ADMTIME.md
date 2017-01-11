@@ -14,3 +14,9 @@ title: VISTA RPC documentation
  routine | [ORDDPAPI](http://code.osehra.org/dox/Routine_ORDDPAPI_source.html)
  return value type | WORD PROCESSING
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 

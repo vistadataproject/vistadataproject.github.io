@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  return value type | ARRAY
  description | Return prompting information for a generic dialog in the format:    LST(n)=ID^REQ^HID^PROMPT^TYPE^DOMAIN^DEFAULT^IDFLT^HELP
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return prompting info for generic dialog
+ Leading comment lines | LST(n)=ID^REQ^HID^PROMPT^TYPE^DOMAIN^DEFAULT^IDFLT^HELP^XREF^SCR

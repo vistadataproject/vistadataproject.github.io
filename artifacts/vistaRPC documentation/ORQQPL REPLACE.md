@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | replace problem on patient's list
+ Leading comment lines | taken from REPLACE^GMPLRPTR
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

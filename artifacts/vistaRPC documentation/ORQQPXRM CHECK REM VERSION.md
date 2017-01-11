@@ -14,3 +14,9 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 

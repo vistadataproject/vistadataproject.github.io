@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This Remote Procedure returns the parameters by which a given documentor document type is to be processed.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get document parameters for GUI
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

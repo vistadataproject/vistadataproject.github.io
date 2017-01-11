@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of Divisions and User Classes for a specific User.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns List of User Divisions and ASU Classes
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | ARRAY
  description | Returns the last selected patient by the defined user.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return top for all patients list (last selected for now)

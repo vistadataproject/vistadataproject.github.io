@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns type of location (C,W)

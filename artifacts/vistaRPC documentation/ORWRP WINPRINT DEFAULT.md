@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  return value type | SINGLE VALUE
  description | Returns whether the Windows printer is set as the default for the user. 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Windows printer as default?

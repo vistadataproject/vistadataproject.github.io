@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS5](http://code.osehra.org/dox/Routine_ORWDPS5_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | True: is verbal or telephoned or policy order

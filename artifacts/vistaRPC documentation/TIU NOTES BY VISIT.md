@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This API gets lists of Progress Notes by visit from TIU.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Gets list of Notes
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

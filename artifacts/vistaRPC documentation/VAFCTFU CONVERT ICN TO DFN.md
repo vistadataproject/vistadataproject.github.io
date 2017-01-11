@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given a patient Integration Control Number (ICN), this will returnthe patient Internal Entry Number (IEN) from the PATIENT file (#2).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

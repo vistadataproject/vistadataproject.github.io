@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC is used to retrieve the Status (8925.6 IEN) of a TIU DOCUMENT.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC Gets the status of TIU Doc TIUIEN
+ Leading comment lines | Returns STATIEN^STATNAME
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

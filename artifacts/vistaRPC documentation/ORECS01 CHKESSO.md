@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | 1=ESSO installed on site  0=not installed

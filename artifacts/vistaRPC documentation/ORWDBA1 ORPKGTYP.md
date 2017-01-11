@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Array of Order Package Types
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Build BA supported packages array
+ Leading comment lines | GMRC=Prosthetics, LR=Lab, PSO=Pharmacy, RA=Radiology
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

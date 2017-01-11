@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | set a PIN lock on the current user

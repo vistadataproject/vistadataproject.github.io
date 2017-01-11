@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  return value type | SINGLE VALUE
  description | Returns the method for sorting GUI alert display.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return notification sort method^direction for user/division/system/pkg

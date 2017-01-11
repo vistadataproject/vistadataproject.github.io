@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns true if the user has access to the specified menu option.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns TRUE if the user has access to a menu option
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

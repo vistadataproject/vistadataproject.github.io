@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Deletes TIU Document records...Evaluates authorization.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | delete document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

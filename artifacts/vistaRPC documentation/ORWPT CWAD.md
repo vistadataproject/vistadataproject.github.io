@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the CWAD flag(s) for a patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns CWAD flags for a patient
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

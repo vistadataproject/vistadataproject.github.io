@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Returns current version of package or namespace
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return version of package or namespace

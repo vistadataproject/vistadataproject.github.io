@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Stores test result responses from a reminder dialog.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3080
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

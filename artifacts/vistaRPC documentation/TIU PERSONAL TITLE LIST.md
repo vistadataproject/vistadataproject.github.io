@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This Remote Procedure returns the user's list of preferred titles for agiven class of documents, along with the default title, if specified.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get personal list for a user
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

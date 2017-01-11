@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  return value type | GLOBAL ARRAY
  description | This remote procedure call returns a list of reports,Health Summary types and date ranges that can be displayedat the workstation.There are no input parameters fo this rpc.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return lists for list boxes
+ Leading comment lines | RPC: ORWRP REPORT LIST,See RPC definition for details on input and output parameters

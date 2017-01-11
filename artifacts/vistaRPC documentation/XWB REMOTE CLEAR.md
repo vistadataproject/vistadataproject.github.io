@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC is used to CLEAR the data under a HANDLE in the ^XTMP global.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Clear the data under a handle
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

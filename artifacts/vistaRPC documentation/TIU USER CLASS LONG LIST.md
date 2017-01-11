@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Long List of User Classes
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Long List of Active User Classes
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

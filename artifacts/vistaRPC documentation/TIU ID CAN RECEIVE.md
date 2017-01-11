@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This BOOLEAN RPC evaluates the question of whether a particular documentmay receive an entry as an Interdisciplinary Parent Note (i.e., can thisdocument be an ID Parent?).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Can this document receive an ID Child?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

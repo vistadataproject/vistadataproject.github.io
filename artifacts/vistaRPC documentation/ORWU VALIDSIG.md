@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Validates a broker encrypted electronic signature.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns TRUE if valid electronic signature

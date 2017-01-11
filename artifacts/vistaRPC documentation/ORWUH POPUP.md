@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWUH](http://code.osehra.org/dox/Routine_ORWUH_source.html)
  return value type | ARRAY
  description | Retrieves the \What's This\ text for a given control.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get instructions for a given control
+ Leading comment lines | ERROR

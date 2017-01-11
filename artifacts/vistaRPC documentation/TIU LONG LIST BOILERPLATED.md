@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Used by the GUI to supply a long list of boilerplated titles.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Long list of titles with boilerplate
+ Leading comment lines | .Y=returned list, FROM=text to $O from, DIR=$O direction,
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

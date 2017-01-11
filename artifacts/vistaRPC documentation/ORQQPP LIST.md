@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of active Patient Postings for a patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return pt's patient posting list
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

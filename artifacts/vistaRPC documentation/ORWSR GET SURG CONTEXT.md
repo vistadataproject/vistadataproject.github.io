@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns current Notes view context for user

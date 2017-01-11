@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
  return value type | SINGLE VALUE
  description | get system or package level default setting for all repors.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Retrieve sys/pkg level default time/occ setting

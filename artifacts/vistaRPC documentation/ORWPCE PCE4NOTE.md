@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPCE3](http://code.osehra.org/dox/Routine_ORWPCE3_source.html)
  return value type | ARRAY
  description | Returns the encounter information for an associated note in the format: LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPTLST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return encounter for an associated note
+ Leading comment lines | LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT,LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)

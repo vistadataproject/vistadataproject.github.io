@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  return value type | SINGLE VALUE
  description | This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Collection Time Default Parameter Value

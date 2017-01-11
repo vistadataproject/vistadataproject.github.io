@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Does user has permission to access GN?

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is user inactive?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

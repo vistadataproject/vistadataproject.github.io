@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | ARRAY
  description | RPC to discontinue, cancel, or delete an existing order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Discontinue/Cancel/Delete order

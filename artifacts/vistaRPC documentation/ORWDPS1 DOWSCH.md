@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC returns a list of schedule that have a frequency defined and the frequency is less then or equal to 1440 minutes
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return all schedules
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Array of Order ID's and SC.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC for compiling appropriate TxF's
+ Leading comment lines | RPC titled ORWDBA1 SCLST,Y       =    Returned value,DFN     =    Patient IEN,ORLST   =    List of orders,call for BA/TF
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

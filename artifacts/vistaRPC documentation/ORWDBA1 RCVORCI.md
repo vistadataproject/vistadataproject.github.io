@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Receive Order Entry Billing Aware data from CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Receive order related Clinical Indicators & Diagnoses from GUI
+ Leading comment lines | Store data in ^OR(100,ODN,5.1) & ^OR(100,0DN,5.2)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

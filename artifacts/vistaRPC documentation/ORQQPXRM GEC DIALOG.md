@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will evaluate the Reminder Dialogs as the Finish button is clickfor the GEC Project. THis RPC will return an error messages if the fourGEC Reminder Dialogs are done out of order.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

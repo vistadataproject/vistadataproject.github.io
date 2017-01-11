@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  return value type | SINGLE VALUE
  description | Returns the IEN for a route if the name is valid.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | validates route name & returns IEN + abbreviation

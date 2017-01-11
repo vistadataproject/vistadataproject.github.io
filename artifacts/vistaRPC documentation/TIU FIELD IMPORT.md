@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Imports Template Fields from XML format
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Call layer for IMPORT2
+ Leading comment lines | compatibility and extend the IMPORT function to optionally ,specify saving the template field.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

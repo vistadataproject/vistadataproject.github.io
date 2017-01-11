@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns a list of problems for a patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return pt's problem list in format: ien^description^
+ Leading comment lines | ICD^onset^last modified^SC^SpExp,STATUS = status of problems to return: (A)CTIVE, (I)NACTIVE, ("")ALL
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

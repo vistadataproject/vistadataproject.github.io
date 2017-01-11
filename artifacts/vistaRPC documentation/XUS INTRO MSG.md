@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  return value type | WORD PROCESSING
  description | This RPC returns the INTRO message from the KERNEL SYSTEM PARAMETERS file.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return INTRO TEXT.

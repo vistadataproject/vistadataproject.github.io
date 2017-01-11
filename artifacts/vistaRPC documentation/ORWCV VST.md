@@ -14,3 +14,9 @@ title: VISTA RPC documentation
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  return value type | ARRAY
  description | This RPC returns a list of appointments and admissions for a patient basedon parameters that define the beginning and ending range for CPRS GUI.
+
+
+### Method description
+
+ property | value 
+--- | --- 

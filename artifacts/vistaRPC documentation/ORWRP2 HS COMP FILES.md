@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC gets a list of files to select from for the ADHOC Health Summary.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Files to select from for a component
+ Leading comment lines | RPC => ORWRP2 HS COMP FILES
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

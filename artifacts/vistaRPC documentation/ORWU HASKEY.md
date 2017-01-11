@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Returns 1 if a user holds a security key, otherwise 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns TRUE if the user possesses the security key

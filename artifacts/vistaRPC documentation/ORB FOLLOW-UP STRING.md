@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This function returns a string of follow-up data.  Content of the data varies by notification.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
+ Leading comment lines | called by ORB FOLLOW-UP api:
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

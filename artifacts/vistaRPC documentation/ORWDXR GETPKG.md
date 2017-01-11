@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get package for an order

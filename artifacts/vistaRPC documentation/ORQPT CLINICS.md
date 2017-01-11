@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  return value type | ARRAY
  description | Function returns a list of clinics.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN LIST OF CLINICS

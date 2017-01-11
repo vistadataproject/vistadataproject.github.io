@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | SINGLE VALUE
  description | RPC which receives a key name and returns a 1 if the user holds the key,otherwise a 0 is returned.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns 1 if user possesses the key

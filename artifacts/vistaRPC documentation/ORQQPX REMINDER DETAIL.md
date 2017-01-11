@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the details of a clinical reminder.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return detail for a pt's clinical reminder
+ Leading comment lines | ORY - return array,ORPT - patient DFN,ORIEN - clinical reminder (811.9 ien)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

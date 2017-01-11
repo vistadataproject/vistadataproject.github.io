@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of medicine results that can be attached to a procedure.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return available med results for proc request
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

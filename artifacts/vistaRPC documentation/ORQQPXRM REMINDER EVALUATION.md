@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3078
+ Leading comment lines | ORQQPXRM REMINDERS APPLICABLE
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

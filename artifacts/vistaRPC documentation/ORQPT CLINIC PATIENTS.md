@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns patients with appointments at a clinic between start and stop dates
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN LIST OF PTS W/CLINIC APPT W/IN BEGINNING AND END DATES
+ Leading comment lines | PKS-8/2003: Modified for new scheduling pkg APIs.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

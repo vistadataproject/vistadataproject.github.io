@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Allows addition of a comment to a consult request/consult without changingits status. Optionally, allows sending of an alert to the requestingprovider and others.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Add comment to existing consult without changing status
+ Leading comment lines | ORIEN - IEN of consult from File 123,ORERR - return array for results/errors,ORCOM is the comments array to be added,passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.,ORALRT - should alerts be sent to anyone?,ORALTO - array of alert recipient IENs
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

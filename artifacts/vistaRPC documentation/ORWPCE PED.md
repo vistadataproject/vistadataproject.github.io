@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | ARRAY
  description | Returns list of education topics for a clinic.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get list of education topices for clinic

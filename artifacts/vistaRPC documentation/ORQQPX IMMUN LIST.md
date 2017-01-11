@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of patient immunizations.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return pt's immunization list:
+ Leading comment lines | id^name^date/time^reaction^inverse d/t
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

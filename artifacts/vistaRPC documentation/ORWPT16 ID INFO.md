@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return identifying information for a patient
+ Leading comment lines | PID^DOB^AGE^SEX^SC%^TYPE^WARD^RM-BED^NAME

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP1](http://code.osehra.org/dox/Routine_ORWRP1_source.html)
  return value type | GLOBAL ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | list nutritional assessments

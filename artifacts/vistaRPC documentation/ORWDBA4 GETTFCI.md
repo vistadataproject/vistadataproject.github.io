@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Treatment Factors Clinical Indicators
+ Leading comment lines | Input Variable:,ORIEN    Order Internal Entry Number (array variable),Ouput Variable:,Y        Y(AI)=Order_IEN^Treatment_Factors^ICD9^ICD9_Description,There can be up to 4 ICD9 codes and thier descriptions,ICD901^DESC01^ICD902^DESC02^ICD903^DESC03^ICD904^DESC04,Local Variables:,AI       Array Index,CI       Clinical Index,TF       Treatment Factors,TFCI     Treatment Factors Clinical Indicators
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

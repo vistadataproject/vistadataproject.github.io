@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | This function returns one if ORQTYPE is a valid type abbrev.,from the PCE Device Interface Specification.

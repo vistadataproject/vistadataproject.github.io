@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
  return value type | SINGLE VALUE
  description | Returns order dialog information for a new medication.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return order dialog info for New Medication

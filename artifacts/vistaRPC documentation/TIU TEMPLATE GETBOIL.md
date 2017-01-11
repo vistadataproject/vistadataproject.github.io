@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns a Template's Unexpanded Boilerplate Text
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

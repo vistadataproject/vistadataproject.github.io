@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This is the RPC that is called to request that an application RPCbe run on a remote system.  The data is passed by HL7 to the remote systemas is the return value.   This RPC will return a HANDLE that can be used to check if the data hasbeen sent back from the remote system.  The HANDLE can be used in anotherRPC to check the status of the RPC.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Call a remote RPC
+ Leading comment lines | with 1-10 parameters.,(This reworked EN1 emtry point replaces the original EN1 entry point,,which was renamed OLDEN1.)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

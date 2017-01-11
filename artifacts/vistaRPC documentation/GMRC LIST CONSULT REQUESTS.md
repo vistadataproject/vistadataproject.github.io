@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will return a list of active and pending consult requests toassociate a result with.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get consult list and return in GMRCY for GUI
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

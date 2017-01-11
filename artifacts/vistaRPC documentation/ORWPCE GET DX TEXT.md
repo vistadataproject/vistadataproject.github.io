@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Resolves the preferred expanded form of the Diagnosis text for the encounter pane on the notes tab.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC to resolve Dx Text for PCE view
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  return value type | SINGLE VALUE
  description | Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | OK to order OP Meals from this location

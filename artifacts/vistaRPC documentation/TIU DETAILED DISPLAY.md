@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Gets details for display of a given record.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC for DT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

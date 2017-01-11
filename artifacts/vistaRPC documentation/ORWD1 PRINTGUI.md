@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  return value type | SINGLE VALUE
  description | RPC used by CPRS GUI to print orders to a designated print device.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | File|Print orders from GUI
+ Leading comment lines | ORRACT is set here to identify this as a manual reprint

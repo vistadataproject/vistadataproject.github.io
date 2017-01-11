@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a subset of symptoms
+ Leading comment lines | .Return Array, Starting Text, Direction

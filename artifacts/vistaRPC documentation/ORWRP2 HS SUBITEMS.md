@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Subitems for a Test Panel
+ Leading comment lines | RPC => ORWRP2 HS SUBITEMS
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

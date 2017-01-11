@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  return value type | SINGLE VALUE
  description | Prints service copies only (used when user says \Don't Print\ for theother copies).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | print service copies only

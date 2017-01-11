@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
  return value type | ARRAY
  description | Return sample, specimen, & urgency info about a lab test.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | Return sample, specimen, & urgency info about a lab test

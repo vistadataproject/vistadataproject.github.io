@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC determines if PKI is turned on at the site

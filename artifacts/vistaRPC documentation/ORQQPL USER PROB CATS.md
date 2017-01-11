@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | rETURNS ARRAY OF CATEGORIES FOR USER TO SELECT FROM
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get user category list
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

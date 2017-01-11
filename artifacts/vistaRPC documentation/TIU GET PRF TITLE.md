@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns IEN of the TIU Note Title in file 8925.1 which is associatedwith given flag for given patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
+ Leading comment lines | Receives TIUY by ref; passes back,TIUY = TitleIEN^Title,0 if no title is associated or flg assignmt is not active,Requires PTDFN,Requires FLAGID - identifier for particular flag assignment,for patient PTDFN. Set as subscript in GETACT^DGPFAPI.,See GETFLG^ORPRF.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

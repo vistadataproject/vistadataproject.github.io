@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return Visit IEN ptr to #9000010
+ Leading comment lines | VSTSTR=HospLoc;DateTime;Category;PtIEN

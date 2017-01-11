@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return requested start time
+ Leading comment lines | VAL: FirstAdmin time

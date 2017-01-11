@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
  return value type | ARRAY
  description | Returns lab specimens that have an abbreviation (used as default list).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | returns specimens with abbreviation (uses 'E' xref)

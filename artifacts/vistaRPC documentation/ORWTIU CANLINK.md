@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description |  Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Can the title be an ID child?
+ Leading comment lines | DBIA #2322
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

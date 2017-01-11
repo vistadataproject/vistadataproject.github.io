@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  return value type | ARRAY
  description | Returns a list of valid treating specialities.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of treating specialties

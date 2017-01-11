@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This rpc renews an alert.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | renew/restore an alert/notification
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

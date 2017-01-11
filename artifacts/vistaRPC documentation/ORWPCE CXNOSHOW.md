@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Should workload requirement be skipped for this note's visit?
+ Leading comment lines | RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS,1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC

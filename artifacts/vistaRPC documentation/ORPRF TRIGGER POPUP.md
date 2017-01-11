@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns 1 if popup flag display should be triggered for given patient uponpatient selection. If not, returns 0. Does not require clean-up aftercalling it since it does not set arrays or globals.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Should the flag display pop up upon patient selection
+ Leading comment lines | for patient PTDFN?,As of 1/10/06, returns POPUP as:,1 if pt has any active flags, either Cat I or Cat II,0 otherwise
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

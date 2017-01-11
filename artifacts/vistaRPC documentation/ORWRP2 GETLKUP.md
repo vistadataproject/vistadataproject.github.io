@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  return value type | SINGLE VALUE
  description | This gets the last Adhoc Health Summary lookup used by a user in CPRS.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Adhoc lookup selection

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Return list of surgery cases for a patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN LIST OF SURGERY CASES FOR A PATIENT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

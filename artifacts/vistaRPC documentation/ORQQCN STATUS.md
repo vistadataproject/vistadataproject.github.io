@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  return value type | ARRAY
  description | Returns a list of consult statuses currently in use, as reflected in the\AC\ XREF of ^GMR(123.1.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns a list of statuses currently in use

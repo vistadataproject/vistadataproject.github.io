@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | VERIFY A TRANSCRIBED PROBLEM
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | verify a transcribed problem
+ Leading comment lines | RETURN:  ;(consistent with UPDATE function),SUCCESS:,RETURN>0, RETURN(0)="",FAILURE:,RETURN<0, RETURN(0)=verbose error message
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORIMO](http://code.osehra.org/dox/Routine_ORIMO_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is it a clinical location

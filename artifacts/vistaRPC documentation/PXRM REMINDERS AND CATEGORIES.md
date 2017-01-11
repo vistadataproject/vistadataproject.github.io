@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [PXRMRPCD](http://code.osehra.org/dox/Routine_PXRMRPCD_source.html)
  return value type | ARRAY
  description | Returns list of reminders and categories.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Selectable reminders and categories

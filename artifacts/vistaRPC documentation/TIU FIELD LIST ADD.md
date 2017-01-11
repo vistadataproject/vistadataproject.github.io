@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Takes in the XML string, in the format XMLSET(1)=\ <TEMPLATE_FIELDS>\ and merges them with the global ^TMP(\TIUFLDXML\,$J).  If the subscript is 1,then it KILLs the global before it merges.  This routine is used so verylarge lists of fields can be processed without many calls to the database.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RESETS/UPDATES THE TMP("TIUFLDXML",$J) GLOBAL
+ Leading comment lines | WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED,AS 1, THE PROGRAM CLEARS THE TMP GLOBAL FIRST.  RETURNS "1" IF,THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

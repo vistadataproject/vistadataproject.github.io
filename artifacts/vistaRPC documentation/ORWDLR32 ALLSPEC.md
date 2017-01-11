@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  return value type | ARRAY
  description | Returns a list of specimens from the TOPOGRAPHY FIELD file (#61).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a set of specimens from topography file

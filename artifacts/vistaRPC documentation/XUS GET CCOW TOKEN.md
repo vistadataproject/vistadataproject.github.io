@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
  return value type | ARRAY
  description | This RPC gets a token to save in the CCOW context to aid in sign-on.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | rpc. CCOW Auto Signon Handle

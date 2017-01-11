@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure call converts a user-supplied date/time into VAFileMan's internal and external date format. This remote procedure call is documented in Integration Agreement 4353.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV CONVERT DATE [RPC entry point]
+ Leading comment lines | INPUT VARIABLE:,GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER,OUTPUT VARIABLE:,RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

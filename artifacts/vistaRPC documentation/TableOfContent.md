@@ -3,7 +3,7 @@ layout: default
 title: VISTA RPC documentation
 ---
 ## VISTA 8994 RPC Definitions
-Generated from file 8994 in VISTA
+Generated from file 8994 of VISTA and a parse of MUMPS code used to implemented RPCs
 
 1. [ACKQAUD1](ACKQAUD1.md)
 

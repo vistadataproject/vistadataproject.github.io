@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Saves Parameter Level settings.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save cover sheet reminders at a specified level
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

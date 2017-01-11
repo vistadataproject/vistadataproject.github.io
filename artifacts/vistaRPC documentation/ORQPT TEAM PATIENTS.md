@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns an array of patients on a team.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN LIST OF PATIENTS IN A TEAM
+ Leading comment lines | Also called under DBIA # 2692.,If TMPFLAG passed and = TRUE, code expects a "^TMP(xxx",global root string passed in ORY, and builds the returned ,list in that global instead of to a memory array.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

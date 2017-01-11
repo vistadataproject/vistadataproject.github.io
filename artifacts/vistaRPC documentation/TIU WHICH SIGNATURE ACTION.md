@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC infers whether the user is trying to sign or cosign the docuementin question, and indicates which ASU ACTION the GUI should pass to the TIUAUTHORIZATION RPC.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Evaluate/return whether signature or cosignature
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

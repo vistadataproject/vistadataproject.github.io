@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  return value type | SINGLE VALUE
  description | Check to see if user is allowed to order STAT orders through VBECS.Checks users with parameter: OR VBECS STAT USER
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Allow stat for ORES ORELSE users

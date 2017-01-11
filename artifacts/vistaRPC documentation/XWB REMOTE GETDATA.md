@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will return an ARRAY with what ever data has been sent back fromthe remote site.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return the data under a handle
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

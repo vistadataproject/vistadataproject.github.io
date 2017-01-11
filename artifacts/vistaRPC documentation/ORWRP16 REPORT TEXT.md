@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return report text
+ Leading comment lines | RPC: ORWRP REPORT TEXT,See RPC definition for details on input and output parameters
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

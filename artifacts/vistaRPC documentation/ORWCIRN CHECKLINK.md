@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
  return value type | SINGLE VALUE
  description | Check to see if HL7 TCP link is active.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Check for active HL7 TCP link on local system

@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  return value type | ARRAY
  description | Returns a list or Patient Data Objects allowed in Personal Templates.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns the list of Patient Data Objects that are
+ Leading comment lines | allowed to be used in Personal Templates

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  return value type | GLOBAL ARRAY
  description | Returns results of a CPRS order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return results of order identified by ID

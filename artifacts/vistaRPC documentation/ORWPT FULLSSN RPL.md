@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Given an SSN in the format 999999999(P), return a list of matching patients based on Restricted Patient List.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list matching Full SSN, but from RPL only.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

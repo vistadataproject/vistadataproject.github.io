@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns default lists for order dialogs in CPRS GUI.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return def lists for dialog
+ Leading comment lines | PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

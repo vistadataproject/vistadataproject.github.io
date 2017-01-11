@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | ARRAY
  description | Saves an order.  The order is passed in ORDIALOG format.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | Save order

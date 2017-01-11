@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Should OpTop be displayed on signature?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

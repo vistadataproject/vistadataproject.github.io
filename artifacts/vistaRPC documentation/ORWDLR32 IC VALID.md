@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Determines whether the suplied time is a valid lab immediate collect time.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is the time a valid immediate collect time?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return report text
+ Leading comment lines | ROOT=Output in ^TMP("ORDATA",$J),DFN=Patient DFN ; ICN for remote sites,RPTID=Unique report ID_";"_Remote ID_"~"_HSComponent for listview (ent;rtn;0;MaxOcc) or text (ent;rtn;#component;MaxOcc),HSTYPE=Health Sum Type,DTRANGE=# days back from today,EXAMID=Rad exam ID,ALPHA=Start date,OMEGA=End date,RPC: ORWRP REPORT TEXT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

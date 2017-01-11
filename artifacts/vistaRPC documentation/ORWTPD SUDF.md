@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
  return value type | SINGLE VALUE
  description | Set user level default time/occ limits for all reports
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Set user default for all CPRS reports

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns detailed information regarding an order.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return details of ORID (shell to kill VIDEO subs)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

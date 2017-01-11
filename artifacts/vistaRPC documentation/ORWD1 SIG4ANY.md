@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  return value type | SINGLE VALUE
  description | Returns true if any orders in the list require a signature.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return 1 if any order requires a signature

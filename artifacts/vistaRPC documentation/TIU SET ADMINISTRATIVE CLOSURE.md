@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure sets the file attributes necessary to close adocument by administrative action (either manually or by scanning a paperdocument that doesn't require the signature of an author as a typical TIUDocument would).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Post Administrative Closure Information
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

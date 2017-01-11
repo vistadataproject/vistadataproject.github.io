@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC serves data to a longlist of selectable Titles for CLINICALPROCEDURES.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC that serves data to a longlist of selectable Titles
+ Leading comment lines | Input  -- FROM     Reference Title from which the longlist is,scrolling,DIR      Direction from which the longlist is scrolling,from the reference Title  (Optional- default 1),Output -- Y        An array of the 44 nearest Titles to that indicated,by the user in the direction passed by the longlist,component
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

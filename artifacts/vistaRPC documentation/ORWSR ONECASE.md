@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Given a TIU document IEN, return the surgical case record and all otherdocuments related to the case, for display in the GUI treeview.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Given a TIU document, return the case and related documents
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

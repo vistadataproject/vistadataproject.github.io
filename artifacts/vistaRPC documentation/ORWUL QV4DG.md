@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return the quick order list, given a display group name

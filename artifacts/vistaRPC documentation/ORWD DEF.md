@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | ARRAY
  description | Returns the formatting definition for an ordering dialog from the ORDERDIALOG file (101.41).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return format mapping for a dialog
+ Leading comment lines | Y(n): CtrlName^DlgPtr^FmtSeq^Fmt^Omit^Lead^Trail^Mult?^chd1~chd2~...

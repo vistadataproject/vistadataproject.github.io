@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will create or update the items for a Group, Class, or Root.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Change ITEMs of a group, class, or root
+ Leading comment lines | Receives:,TIUDA=IEN of TEMPLATE record,TIUX(SEQ)=IEN of item,Returns:,SUCCESS(SEQ)=IEN of item if successful, or,0^ Explanatory message if not
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

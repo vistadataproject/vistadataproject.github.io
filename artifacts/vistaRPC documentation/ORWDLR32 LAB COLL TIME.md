@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Is the given time a routine lab collection time for the given location?
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is this a routine lab collect time for this location?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

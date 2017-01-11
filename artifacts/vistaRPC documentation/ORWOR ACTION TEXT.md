@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return detail action information

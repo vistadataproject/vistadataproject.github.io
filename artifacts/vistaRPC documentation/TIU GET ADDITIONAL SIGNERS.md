@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the list of additional signers currently identified for a givenTIU document.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC to Get list of extra signers for a document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

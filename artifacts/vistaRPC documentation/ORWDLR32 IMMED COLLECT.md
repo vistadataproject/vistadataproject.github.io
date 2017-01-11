@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  return value type | ARRAY
  description | Returns help text showing lab immediate collect times for the user'sdivision.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return help screen showing immediate collect times

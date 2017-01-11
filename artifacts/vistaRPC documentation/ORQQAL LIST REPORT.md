@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of allergens, severity and signs/symptoms in a reportformat which can be used in a \detailed\ display.  This RPC was set upto support the listing of allergies when selected from the Patient Postingslist.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN PT'S ALLERGY/ADVERSE REACTION INFO IN REPORT FORMAT:
+ Leading comment lines | null:no allergy assessment, 0:no known allergies, 1:pt has allergies,if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

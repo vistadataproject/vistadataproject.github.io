@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC accepts a list of persons, and adds them as additional signersfor the document identified by the first parameter.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Add list of Add'l Signers for a TIU Document
+ Leading comment lines | TIULIST(TIUI) [By Ref] = array of users to add/remove as signers,TIUDA                  = IEN in ^TIU(8925,
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

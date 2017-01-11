@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | BOOLEAN RPC which evaluates whether the title indicated is that of aconsult.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

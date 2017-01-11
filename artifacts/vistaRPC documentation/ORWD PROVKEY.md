@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | SINGLE VALUE
  description | Returns 1 if the users possesses the PROVIDER key.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns 1 if user possesses the provider key

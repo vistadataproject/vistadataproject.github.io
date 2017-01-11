@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Boolean RPC to evaulate if note has a corresponding visit.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Check for a 1 time only doc
+ Leading comment lines | TIUY    =    return value,= 0 if can add more than one or none already exist,= 1 if cannot add more than one and one already exists,DOCTYP  =    Pointer to ^TUI(8925.1,   TIU DOCUMENT DEFINITION,DFN     =    Patient IEN,VISIT   =    Visit String "LOC;VDATE;VTYP"
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

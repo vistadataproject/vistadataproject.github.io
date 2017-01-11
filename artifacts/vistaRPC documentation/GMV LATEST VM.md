@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This remote procedure call retrieves the latest vital records for a givenpatient. This remote procedure call is documented in Integration Agreement 4358.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV LATEST VM [RPC entry point]
+ Leading comment lines | RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN),IN RESULT ARRAY.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

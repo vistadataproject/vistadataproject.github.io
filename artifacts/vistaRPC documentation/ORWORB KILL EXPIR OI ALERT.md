@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Evaluate expiring flagged orderable item orders. If none remain, killcurrent alert for current user.  Kill for other users if alert so defined.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete expiring flagged OI notification if no flagged expiring OI remaining
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

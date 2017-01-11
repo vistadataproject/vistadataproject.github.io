@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the date search range in number of days (e.g. 2) to begin the search before today. For example, a value of 2 would indicate to limit thesearch between two days and today. Limited to inpatients.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return lab results search date range for an inpatient
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

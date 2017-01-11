@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
  return value type | SINGLE VALUE
  description | Validates a numeric entry.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return error if invalid number

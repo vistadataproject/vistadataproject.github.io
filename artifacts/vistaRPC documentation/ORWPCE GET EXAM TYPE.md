@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | ARRAY
  description | Returns the list of active exam types.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get the list of active exams

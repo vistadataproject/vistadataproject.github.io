@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC buffers the transmittal of text (i.e., the body of TIU Documents)from the Client to the Server. It allows documents of indefinite size tobe filed, without risk of an allocate error on the M Server.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save Text - use Buffered I/O
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

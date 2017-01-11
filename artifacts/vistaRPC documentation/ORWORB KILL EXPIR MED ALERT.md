@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Evaluate expiring med orders.  If none remain, kill current alert forcurrent user.  Kill for other users if alert so defined.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete expiring meds notification if no expiring meds remaining
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
  return value type | SINGLE VALUE
  description | Make default time/occ setting take action on each report
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Make default setting take action for each report

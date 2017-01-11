@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns discharge summary for a visit.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return discharge summary for a patient's visit
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is justification required for deletion?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

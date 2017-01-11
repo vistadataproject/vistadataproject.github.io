@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  return value type | ARRAY
  description | Get sequence order of Diagnostic Tests for selection.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get sequence order of Diagnostic tests

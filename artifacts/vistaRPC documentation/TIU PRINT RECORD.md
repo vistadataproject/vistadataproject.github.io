@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Allows Printing of TIU Documents on demand.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Remote Procedure to print a record
+ Leading comment lines | TIUFLAG > 1 Chart Copy, TIUFLAG = 2 Electronically signed Chart Copy,TIUWIN = 1 Windows printer, 0 or "" VistA printer
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC is used to set the SUBJECT ALTERNATIVE NAME in the New Person #(200) file field 501.2. 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Set the SUBJECT ALTERNATIVE NAME from the PIV card. -p580
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Set global to share DFN with other applications

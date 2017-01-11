@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | RETURN PROBLEM AUDIT HISTORY
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GET AUDIT HISTORY
+ Leading comment lines | taken from EN^GMPLDISP
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC allows the calling application to evaluate privilege to performany ASU-mediated action on a TIU document.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Boolean function to evaluate privilege
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

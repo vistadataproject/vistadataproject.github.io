@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will attach a a document as an Interdisciplinary (ID) entry to anID Parent document.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Attach TIUDA as ID Child entry to TIUDAD
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

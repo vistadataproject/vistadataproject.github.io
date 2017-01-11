@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDGX](http://code.osehra.org/dox/Routine_ORWDGX_source.html)
  return value type | ARRAY
  description | Loads dialog data (lists & defaults) for a vitals order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return dialog definition for vitals/measurements

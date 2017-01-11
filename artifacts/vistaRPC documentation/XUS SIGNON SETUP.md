@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  return value type | ARRAY
  description | Establishes environment necessary for DHCP sign-on
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC. XUS SIGNON SETUP - IA #1632 (API IA #4054)
+ Leading comment lines | sets up environment for GUI signon

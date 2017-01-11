@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXR01](http://code.osehra.org/dox/Routine_ORWDXR01_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | ORY=1: is "PSO SUPPLY" dialog

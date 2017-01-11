@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | CIDC RPCRETURNS 1 IF PATIENT HAS BILLABLE INSURANCERETURNS 0 IF PATIENT DOES NOT HAVE BILLABLE INSURANCE
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return 0 if don't ask (no ins) or 1 to ask CIDC quest (yes ins)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

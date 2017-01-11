@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Unlock pt not by this session

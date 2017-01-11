@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will return a 0 if the patient location is the same location as the original order. It will return a 1 if the location is different.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns array for given mental health instrument
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

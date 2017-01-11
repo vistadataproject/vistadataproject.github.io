@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns TRUE if user is a Template Editor
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

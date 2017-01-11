@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXM3](http://code.osehra.org/dox/Routine_ORWDXM3_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | True: is unit dose quick order

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This RPC is used to build the ADHOC Health Summary from an array ofpre-selected health summary components.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Build Report from array of Components passed in COMPS
+ Leading comment lines | RPC => ORWRP2 HS REPORT TEXT,ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

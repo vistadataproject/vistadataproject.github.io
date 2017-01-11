@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  return value type | ARRAY
  description | gET LIST OF AVAILABLE SERVICES
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GET LIST OF SERVICES

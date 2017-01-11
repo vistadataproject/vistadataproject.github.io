@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | DELETES A PROBLEM
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DELETE A PROBLEM
+ Leading comment lines | From GMPL1 - silent version
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

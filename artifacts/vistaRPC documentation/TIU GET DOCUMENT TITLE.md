@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure returns the pointer to the TIU DOCUMENT DEFINITIONFILE that corresponds to the TITLE of the document identified in the TIUDAparameter.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get the title from a TIU Document Record
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

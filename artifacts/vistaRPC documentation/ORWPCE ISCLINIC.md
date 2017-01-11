@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns TRUE if location is a Clinic.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns TRUE if location is a clinic
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

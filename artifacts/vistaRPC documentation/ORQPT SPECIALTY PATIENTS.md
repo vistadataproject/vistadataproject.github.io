@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns an array of patients linked to a treating specialty.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN LIST OF PATIENTS LINKED TO A TREATING SPECIALTY
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

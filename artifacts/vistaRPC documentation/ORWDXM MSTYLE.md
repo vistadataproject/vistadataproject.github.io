@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  return value type | SINGLE VALUE
  description | Return the menu style for the system.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return the menu style for the system

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  return value type | WORD PROCESSING
  description | returns the provider/patient info that must be displayed when signing a controlled substance order(s)
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns the provider/patient info that must be displayed when signing controlled substance orders

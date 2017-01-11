@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Given a text string, return a list of possible matches from severaldifferent sources.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of partial matches  
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

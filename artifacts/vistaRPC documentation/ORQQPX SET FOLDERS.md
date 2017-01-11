@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Sets the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Sets Visible Reminder Folders for the current user
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

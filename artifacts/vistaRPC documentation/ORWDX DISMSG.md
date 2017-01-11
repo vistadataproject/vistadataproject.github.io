@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | SINGLE VALUE
  description | Returns disabled message for an ordering dialog.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Disabled mge for ordering dlg

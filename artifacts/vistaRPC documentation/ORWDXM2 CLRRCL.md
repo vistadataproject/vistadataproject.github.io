@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXM2](http://code.osehra.org/dox/Routine_ORWDXM2_source.html)
  return value type | SINGLE VALUE
  description | Clear ORECALL.  Used by CPRS GUI to clean up ^TMP(\ORECALL\,$J) and^TMP(\ORWDXMQ\,$J).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | clear ORECALL

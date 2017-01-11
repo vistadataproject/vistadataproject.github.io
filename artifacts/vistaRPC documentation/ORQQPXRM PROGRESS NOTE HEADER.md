@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns header text to be inserted in each progress note.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3080
+ Leading comment lines | ORQQPXRM REMINDERS UNEVALUATED
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

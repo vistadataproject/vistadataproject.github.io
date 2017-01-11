@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWU1](http://code.osehra.org/dox/Routine_ORWU1_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns text name(mixed-case) derived from IEN xref.
+ Leading comment lines | GRE/2002,PKS-12/20/2002 Tag not presently used.,Y=Returned value, IEN=Internal number

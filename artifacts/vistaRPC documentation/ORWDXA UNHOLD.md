@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | ARRAY
  description | RPC to remove a particular order from hold status.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Release order from hold

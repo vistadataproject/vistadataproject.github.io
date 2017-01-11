@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | ARRAY
  description | Returns a list of items for the CPRS GUI Tools menu.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns a list of items for the Tools menu

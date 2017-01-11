@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  return value type | SINGLE VALUE
  description | Returns a date in internal Fileman format.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns internal Fileman Date/Time

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the policy name for a veteran with VA Advantage. If the veteran does not have VA Advantage the return value will be 0.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | Returns primary insurance policy name if VAA or TriCare
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

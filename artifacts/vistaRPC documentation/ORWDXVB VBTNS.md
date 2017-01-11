@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC to get Days back to check for Type & Screen order

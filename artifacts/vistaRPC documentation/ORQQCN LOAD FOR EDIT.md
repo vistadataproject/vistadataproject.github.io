@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Given a consult IEN, returns the current values of that record's fields.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Load a cancelled consult/procedure for editing
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

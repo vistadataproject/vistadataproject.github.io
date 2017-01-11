@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  return value type | ARRAY
  description | Returns expanded list of display groups.for the current site/user.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | Call GRPSEQ, format for broker:,Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name

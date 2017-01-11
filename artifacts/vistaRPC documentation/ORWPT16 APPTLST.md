@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | Return a list of appointments

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Updates problem record
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | UPDATE A PROBLEM RECORD
+ Leading comment lines | Does essentially same job as EDSAVE above, however does not handle edits to comments,or addition of multiple comments.,Use initially just for status updates.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

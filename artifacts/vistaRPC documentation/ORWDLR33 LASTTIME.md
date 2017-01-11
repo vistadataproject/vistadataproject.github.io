@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  return value type | SINGLE VALUE
  description | When entering quick orders from an order menu, the ^TMP(\ORECALL\,$J)array contains the last responses entered.  This RPC allows retrieval ofthe previous order's collection time from that array.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get last collection time used from ^TMP("ORECALL",$J) array

@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This RPC will return the Radiology/Lab Report for a WH Procedure
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

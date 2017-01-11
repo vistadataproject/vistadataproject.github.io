@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
  return value type | SINGLE VALUE
  description | RPC to submit a request for a refill.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Refill Request

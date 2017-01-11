@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Get a list from clinical lexicon for display in list or combo box
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get candidate Problems from LEX file
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

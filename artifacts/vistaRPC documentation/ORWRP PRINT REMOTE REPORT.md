@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description |  This rpc is used to print a remote report on the Report tab in CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Print data for remote sites
+ Leading comment lines | RPC: ORWRP PRINT REMOTE REPORT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

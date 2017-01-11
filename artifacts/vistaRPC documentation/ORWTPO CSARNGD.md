@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC
+ Leading comment lines | get start, stop defaults

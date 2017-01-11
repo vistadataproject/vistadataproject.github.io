@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Web addresses for selected reminder
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3078
+ Leading comment lines | PXRM REMINDER DIALOG (TIU)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

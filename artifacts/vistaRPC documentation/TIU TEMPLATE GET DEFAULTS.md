@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  return value type | SINGLE VALUE
  description | Returns Default Template Settings
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns Default Templates for the current user

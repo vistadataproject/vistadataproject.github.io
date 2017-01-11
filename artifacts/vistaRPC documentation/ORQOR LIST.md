@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of patient orders.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return list of patient orders
+ Leading comment lines | return PATIENT's orders for a display GROUP of type FLAG,between start (ORSDT) and end dates (OREDT),dates can be in Fileman or T, T-14 formats
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

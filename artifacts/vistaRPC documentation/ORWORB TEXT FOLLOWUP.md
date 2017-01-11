@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns text for notifications/alerts with a simple text message follow-upaction.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Follow-up for text messages
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

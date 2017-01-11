@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | SINGLE VALUE
  description | Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Check for sensitive pt
+ Leading comment lines | SENSITIVE

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  return value type | GLOBAL ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | show admin history for a med  (RV)

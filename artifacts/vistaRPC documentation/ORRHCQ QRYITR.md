@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Executes the query for a patient.  An iterator is passed in, in the format:   ListSource Subscript ^ DFN ^ Item# The value returned includes the records found and the next iterator:   PtSearched ^ RecordCount ^ ListSource Subscript ^ NextDFN ^ Next Item#
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Do query for the current iterator
+ Leading comment lines | VAL=PtSearched^RecordsFound^Iterator
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

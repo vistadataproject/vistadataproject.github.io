@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of excluded PCE entries
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns list of excluded PCE data elements
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

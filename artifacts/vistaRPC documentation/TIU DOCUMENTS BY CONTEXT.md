@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns lists of TIU Documents that satisfy the following search criteria: 1 - signed documents (all)   2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | main
+ Leading comment lines | --- Call with:  TIUY     - RETURN ARRAY pass by reference,CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1,CONTEXT  - 1=All Signed (by PT),,- 2="Unsigned (by PT&(AUTHOR!TANSCRIBER)),- 3="Uncosigned (by PT&EXPECTED COSIGNER,- 4="Signed notes (by PT&selected author),- 5="Signed notes (by PT&date range),DFN      - Pointer to Patient (#2),[EARLY]   - FM date/time to begin search,[LATE]    - FM date/time to end search,[PERSON]  - Pointer to file 200 (DUZ if not passed),[OCCLIM]  - Occurrence Limit (optional),[SEQUENCE]- "A"=ascending (Regular date/time),- "D"=descending (Reverse date/time) (dflt),[INCUND]  - Boolean: include undictated & untranscribed
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

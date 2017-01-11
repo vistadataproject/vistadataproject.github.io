@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will return the status of a remote RPC.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC call to check a handle status
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC generates a bulletin to the OR CAC Mail Group, indicating that an unresolved term needs to be requested using the New Term Rapid Turnaround website at http://hdrmul7.aac.domain.ext:7151/ntrt/.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Send NTRT Request bulletin to CAC mailgroup
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

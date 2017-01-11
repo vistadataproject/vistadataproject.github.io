@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  return value type | SINGLE VALUE
  description | Returns TRUE if the new cover sheet parameters are to be used.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns status of 

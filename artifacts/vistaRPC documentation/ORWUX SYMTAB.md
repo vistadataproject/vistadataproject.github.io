@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWUX](http://code.osehra.org/dox/Routine_ORWUX_source.html)
  return value type | GLOBAL ARRAY
  description | Returns the contents of the current session's symbol table.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return the current symbol table

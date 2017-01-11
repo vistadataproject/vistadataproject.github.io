@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
  return value type | ARRAY
  description | Returns a list of all active COM objects
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns list of all active COM objects

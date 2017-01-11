@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Remote Procedure Call (RPC) will add an entry to the DG SECURITY LOG(#38.1) file and/or generate the sensitive record access bulletindepending on the value in ACTION input parameter.  If ACTION parameter notdefined, defaults to update DG Security Log file and generate SensitiveRecord Access mail message.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC/API entry point for log entry and message generation
+ Leading comment lines | Input parameters:  ,DFN    = Patient file DFN,DGOPT  = Option name^Menu text (Optional),ACTION = 1 - Set DG Security Log entry, 2 - Generate mail ,message, 3 - Both (Optional - Defaults to both),Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value),0 - Required variable undefined
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

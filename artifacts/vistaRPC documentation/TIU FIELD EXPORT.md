@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Exports Template Fields in XML format
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Exports Template Fields as XML
+ Leading comment lines | FLDS should be an array of Template Field names, not IENs
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

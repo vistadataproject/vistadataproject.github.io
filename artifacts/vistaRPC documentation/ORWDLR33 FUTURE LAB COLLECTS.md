@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the number of days in the future to allow Lab Collects.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get # of days for future Lab Collects
+ Leading comment lines | For Event Delay Order,--ORLOC Event default location,--ORDIV Event default division
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

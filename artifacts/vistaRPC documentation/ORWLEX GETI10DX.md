@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This call wraps the Lexicon API $$DIAGSRCH^LEX10CS to satisfy the requirements of the ICD-10-CM diagnosis search.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC ORWLEX GET10DX
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

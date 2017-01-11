@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return default lists for dialog
+ Leading comment lines | PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient)

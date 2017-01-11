@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Pass back data to be file in the Women's Health Package file 790.1.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

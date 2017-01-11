@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
  return value type | SINGLE VALUE
  description | Returns the digital signature of an existing order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Digital Signature

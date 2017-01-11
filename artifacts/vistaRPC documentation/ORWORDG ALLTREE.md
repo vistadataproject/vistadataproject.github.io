@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  return value type | ARRAY
  description | Returns the tree for all display groups.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return the tree for all display groups

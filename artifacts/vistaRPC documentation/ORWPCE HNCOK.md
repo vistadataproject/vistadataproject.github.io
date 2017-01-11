@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | SINGLE VALUE
  description | Returns TRUE if the Head and/or Neck Cancer patches have been installed
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns true if Head and/or Neck Cancer is enabled

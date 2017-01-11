@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964)
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is the location a non-count clinic? (DBIA #964)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

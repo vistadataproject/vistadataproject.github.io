@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  return value type | SINGLE VALUE
  description | This RPC checks the value of the parameter OR VBECS DIAGNOSTIC PANEL 1STto determine the location of the Diagnostic and Component panels on theVBECS order dialog.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Switch the location of the Diagnostic and Component panels on VBECS Order Dialog

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return OERR order number for consult/procedure
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

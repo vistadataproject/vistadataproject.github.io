@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC Takes as input 8925.1 IEN
+ Leading comment lines | and checks if it is a PRF title,Cf ISPFTTL^TIUPRFL. which is a FUNCTION
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

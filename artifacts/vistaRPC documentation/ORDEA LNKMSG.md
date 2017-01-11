@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  return value type | WORD PROCESSING
  description | Returns the text of the OR DEA PIV LINK MSG parameter.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | message to display after successful PIV link for admin contact person

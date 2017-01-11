@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | SINGLE VALUE
  description | This RPC returns the ICD-10 implementation date in FM Date/Time format.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get ICD-10 Implementation Date

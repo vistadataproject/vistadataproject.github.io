@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  return value type | ARRAY
  description | Returns the text of an existing order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get text of an order

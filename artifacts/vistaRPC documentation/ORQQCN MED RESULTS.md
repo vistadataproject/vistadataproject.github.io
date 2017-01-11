@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns a display of Medicine Package results, followed by any TIUresults.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns Medicine results plus TIU results
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  return value type | ARRAY
  description | Get sequence order of Blood Components for selection.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get sequence order of Blood Components

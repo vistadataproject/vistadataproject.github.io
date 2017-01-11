@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  return value type | ARRAY
  description | Returns defaults for pharmacy orderable items.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | rtn for defaults for pharm OI

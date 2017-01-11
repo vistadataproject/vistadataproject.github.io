@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  return value type | ARRAY
  description | Return list of Order Checks for a FillerID (namespace).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of Order Checks for a FillerID (namespace)

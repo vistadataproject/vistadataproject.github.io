@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns TRUE of the indicated clinic is a mental health clinic.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | See if this is a mental health clinic
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

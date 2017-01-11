@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This API Supports the application of the user's electronic signature to aTIU document while evaluating authorization, and validating the user'selectronic signature.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | API for /es/
+ Leading comment lines | For backward compatibility,Use SIGN^TIUSRVP2 now, please
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  return value type | ARRAY
  description | Place a quick order in CPRS GUI without the verify step.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Place a quick order without verify step

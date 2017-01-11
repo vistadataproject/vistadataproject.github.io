@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Saves Template Default Settings
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Saves Default Templates for the user
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

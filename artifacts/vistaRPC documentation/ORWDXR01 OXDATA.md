@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXR01](http://code.osehra.org/dox/Routine_ORWDXR01_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return orderable item data for order check usage

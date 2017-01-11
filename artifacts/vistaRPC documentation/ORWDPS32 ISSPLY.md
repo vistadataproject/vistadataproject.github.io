@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  return value type | SINGLE VALUE
  description | Return 1 if orderable item is a supply, otherwise return 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return true if orderable item is a supply

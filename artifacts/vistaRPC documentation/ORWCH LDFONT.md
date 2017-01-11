@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | load the user's preferred font size

@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
  return value type | ARRAY
  description | Get lab order dialog definition.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | procedure
+ Leading comment lines | For Event Delay Order,ALOC: Delay Event's default location,ADIV: Delay Event's default division,get dialog definition specific to lab

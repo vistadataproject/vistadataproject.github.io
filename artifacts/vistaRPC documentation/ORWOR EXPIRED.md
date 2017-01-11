@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  return value type | SINGLE VALUE
  description | Returns the Fileman Date/Time to begin searching for expired orders.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return FM date/time to begin search for expired orders

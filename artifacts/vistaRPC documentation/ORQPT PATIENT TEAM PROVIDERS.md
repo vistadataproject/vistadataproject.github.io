@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns a list of providers linked to a patient via teams.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return list of providers linked to a patient via teams
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

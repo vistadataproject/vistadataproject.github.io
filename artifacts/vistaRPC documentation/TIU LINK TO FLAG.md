@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC is used to link a Progress Note to a Patient Record Flag
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC Link TIU Doc TIUIEN to
+ Leading comment lines | the PRF action
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

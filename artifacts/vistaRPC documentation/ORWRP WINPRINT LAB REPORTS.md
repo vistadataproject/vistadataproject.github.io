@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRPL](http://code.osehra.org/dox/Routine_ORWRPL_source.html)
  return value type | GLOBAL ARRAY
  description | Prints text from CPRS GUI to a windows printer.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Windows device print

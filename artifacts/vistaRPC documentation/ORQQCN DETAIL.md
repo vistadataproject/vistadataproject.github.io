@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns formatted detailed information regarding the consult request,including result report if available.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return formatted consult request details (plus result note if available):
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

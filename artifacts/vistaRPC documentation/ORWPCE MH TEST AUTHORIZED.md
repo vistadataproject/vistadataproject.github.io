@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Indicates if a given mental health test can be given by the given user.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Indicates that user can score test
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

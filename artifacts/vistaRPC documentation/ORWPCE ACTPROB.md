@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Build list of active problems for patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get list of patient's active problems
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

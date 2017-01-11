@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

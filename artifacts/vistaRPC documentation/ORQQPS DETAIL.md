@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the details of a medication order.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return detailed information for a drug
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

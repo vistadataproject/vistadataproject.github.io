@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  return value type | SINGLE VALUE
  description | Sets the GUI alert sort method for the user.  This is set when a user clicks on the GUI alert columns to change the display sorting.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | set notification sort method^direction for user

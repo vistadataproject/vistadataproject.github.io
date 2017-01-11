@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | SINGLE VALUE
  description | RPC to attempt to lock patient for ordering (returns 1 if successful or 0if unsuccessful).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Attempt to lock pt for ordering

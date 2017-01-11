@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the follow-up action type for a notification as identified via thealert xqaid.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return notif follow-up action type
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

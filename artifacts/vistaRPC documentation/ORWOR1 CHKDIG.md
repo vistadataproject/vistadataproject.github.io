@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
  return value type | SINGLE VALUE
  description | Returns true if an order requires a digital signature.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Check if Digital Signature is required

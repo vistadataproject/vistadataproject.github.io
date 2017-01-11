@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This remote procedure call returns a list of patient procedures for a specific patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return procedures
+ Leading comment lines | RPC: ORWMC PROCEDURES,See RPC definition for details on input and output parameters
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | For a list of reminders [#811.9] returns same list with status to indicateif an active dialog exists for the reminder.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3080
+ Leading comment lines | ORQQPXRM REMINDER EVALUATION
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns notifications for current user.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return current user's notifications across all patients
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

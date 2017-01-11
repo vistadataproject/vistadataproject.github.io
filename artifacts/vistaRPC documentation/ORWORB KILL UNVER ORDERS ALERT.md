@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete UNVERIFIED ORDER notification if none remaining within current admission/30 days

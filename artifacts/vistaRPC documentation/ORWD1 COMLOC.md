@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  return value type | SINGLE VALUE
  description | Returns true if all orders in a list have a common ordering location.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return common location for orders in list, if any

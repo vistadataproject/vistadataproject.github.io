@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | SINGLE VALUE
  description | Return the IEN for Requesting Physician Cancelled reason.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return IEN for Req Phys Cancelled reason

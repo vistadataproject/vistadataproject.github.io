@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the passed array with the second piece set to 0 or 1.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns true if there are any mapped CPT Codes
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

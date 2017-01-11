@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  return value type | ARRAY
  description | Returns default values and list sets for Allergy ordering dialog.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get dialog data for allergies

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns dialog information when NEW CONSULT/PROCEDURE is selected fromthe consults tab.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return order dialog info for New Consult OR PROCEDURE
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

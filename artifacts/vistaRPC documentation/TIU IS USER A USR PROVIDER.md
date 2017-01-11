@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Boolean RPC returns TRUE if the user was a member of USR CLASS PROVIDER on the date specified.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is USER a USR CLASS provider?
+ Leading comment lines | Checks USR CLASS PROVIDER only,DATE must not include time
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

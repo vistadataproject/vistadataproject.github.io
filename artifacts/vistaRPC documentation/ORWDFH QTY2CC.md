@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  return value type | SINGLE VALUE
  description | Returns cc's given a product, strength, and quantity.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return cc's given a product, strength, & quantity

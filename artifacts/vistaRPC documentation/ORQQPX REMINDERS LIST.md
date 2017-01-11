@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of clinical reminders.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return pt's currently due PCE clinical reminders
+ Leading comment lines | in the format file 811.9 ien^reminder print name^date due^last occur.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

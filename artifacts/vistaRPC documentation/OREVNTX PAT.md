@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [OREVNTX](http://code.osehra.org/dox/Routine_OREVNTX_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns currently delayed events for patient DFN

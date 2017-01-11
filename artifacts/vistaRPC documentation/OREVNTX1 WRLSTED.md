@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of dialogs for writing event delayed orders
+ Leading comment lines | .Y(n): DlgName^ListBox Text

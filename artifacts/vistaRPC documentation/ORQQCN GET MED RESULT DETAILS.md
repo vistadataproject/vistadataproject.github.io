@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Detailed display of medicine results.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Detailed display of a med result
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return Event information based on EVT ptr #100.5
+ Leading comment lines | EVT    ptr #100.5

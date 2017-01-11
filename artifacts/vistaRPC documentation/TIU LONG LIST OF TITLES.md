@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC serves data to a longlist of selectable TITLES by CLASS.  e.g.,passing the class PROGRESS NOTES will return active Progress Notes titleswhich the current user is authorized to enter notes under.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | long list of titles for a class
+ Leading comment lines | .Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,,DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

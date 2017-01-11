@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Validates date/time entry and returns value of Y from %DT call.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Validate date/time

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Unlocks a template.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Unlock Template
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

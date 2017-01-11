@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Performs many functions for the Manager module. This remote procedure call is documented in Integration Agreement 4360.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | [Procedure] Main RPC call tag
+ Leading comment lines | RPC: [GMV MANAGER],Input parameters,1. RESULTS [Reference/Required] RPC Return array,2. OPTION [Literal/Required] RPC Option to execute,3. DATA [Literal/Required] Other data as required for call
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

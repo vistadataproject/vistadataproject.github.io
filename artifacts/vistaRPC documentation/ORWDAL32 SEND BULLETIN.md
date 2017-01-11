@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Send bulletin if user attempts free-text entry

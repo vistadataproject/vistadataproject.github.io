@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | The rpc forwards an alert.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | forward a notification
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

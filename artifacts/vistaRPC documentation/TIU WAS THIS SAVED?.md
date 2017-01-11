@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Boolean Remote Procedure will evaluate whether a given document wascommitted to the database, or whether the user who last edited it wasdisconnected.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Was the document committed to the database?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

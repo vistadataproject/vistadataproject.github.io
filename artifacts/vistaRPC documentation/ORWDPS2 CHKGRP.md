@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | Inpatient Med Order Group or Clin Meds Group: return 1,If order belong to Outpatient Med Order Grpoup: return 2,Otherwise, return 0

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Array of patient most recent vitals within start and stop date/times.  Ifno start and stop dates are indicated, the most recent are returned. If no start date is passed then the start date is 1 (i.e. before anydates). If no stop date is passed then the start date is also the stop date and ifthere is not start date then 9999999 is used as the stop date.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return patient's most recent vital measurements
+ Leading comment lines | in date range,ORY: return variable, results are returned in the format:,vital measurement ien^vital type^rate^date/time taken,DFN: patient identifier from Patient File [#2],F1: starting date/time range,F2: ending date/time range
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  return value type | SINGLE VALUE
  description | Returns TRUE if text generated from a reminder dialog, when processinga reminder, is to be inserted at the current cursor location, ratherthan at the bottom of the note.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns status of ORQQPX REMINDER TEXT AT CURSOR

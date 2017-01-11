@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given orderable item IEN, return pointer to file 123.3
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return pointer to file 123.3 given orderable item
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

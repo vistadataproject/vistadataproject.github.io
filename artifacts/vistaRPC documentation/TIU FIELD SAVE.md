@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Saves a single Template Field
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save Template Field
+ Leading comment lines | Input:,TIUDA=IEN of TEMPLATE record,TIUX(SEQ)=IEN of item,Output:,SUCCESS=IEN of item if successful, or,0^ Explanatory message if not
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

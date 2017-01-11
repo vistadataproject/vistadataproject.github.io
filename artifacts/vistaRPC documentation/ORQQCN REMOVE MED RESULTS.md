@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Allows removal of medicine results from a  procedure.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Remove a medicine result from a consult
+ Leading comment lines | GMRCO - Internal file number of consult from File 123,GMRCRSLT - pointer to medicine result,GMRCAD - Date/Time medicine result was removed,GMRCORNP - Provider who removed the result from the consult
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

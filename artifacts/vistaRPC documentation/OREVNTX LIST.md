@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [OREVNTX](http://code.osehra.org/dox/Routine_OREVNTX_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns all processed events for patient DFN as
+ Leading comment lines | ORY(#) = PatEvtIEN ^ Display Text ^ EvtDateTime,in reverse chronological order

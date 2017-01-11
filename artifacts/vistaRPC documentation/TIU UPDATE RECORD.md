@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This API updates the record named in the TIUDA parameter, with theinformation contained in the TIUX(Field #) array.  The body of themodified TIU document should be passed in the TIUX(\TEXT\,i,0) subscript,where i is the line number (i.e., the \TEXT\ node should be ready to MERGEwith a word processing field).  Any filing errors which may occur will bereturned in the single valued ERR parameter (which is passed byreference).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Update existing Document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

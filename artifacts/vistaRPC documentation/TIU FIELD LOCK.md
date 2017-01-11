@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Locks a template field record for editing
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Lock Template Field
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

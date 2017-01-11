@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | True: OI of the order is for both UD and IV

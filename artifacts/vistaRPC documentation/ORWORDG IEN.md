@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  return value type | SINGLE VALUE
  description | Returns IEN of a display group.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return IEN for a display group

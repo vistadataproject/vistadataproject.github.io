@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURNS LIST OF RADIOLOGISTS WHO MAY APPROVE A
+ Leading comment lines | PROCEDURE WHEN REQUIRED

@@ -14,3 +14,9 @@ title: VISTA RPC documentation
  routine | [ORQQVI](http://code.osehra.org/dox/Routine_ORQQVI_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 

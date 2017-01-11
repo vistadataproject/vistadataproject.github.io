@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return 1 if the order (ORID) is a controlled substance, 0 for non-controlled substance

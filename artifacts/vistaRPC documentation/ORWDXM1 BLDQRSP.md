@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Build responses for an order Input:      1   2    3    4   5   6    7    8        11-20FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change Output:LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrpLST(n)=verify text or rejection text
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Build responses for an order
+ Leading comment lines | LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrp,LST(n)=verify or reject text,ORIT= ptr to 101.41 for quick order, 100 for copy,1 2 3 4 5 6 7 8 11-20,FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...,ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change,!! SHOULD CHECK for PRE-CPRS ORDERS (treat as text?)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

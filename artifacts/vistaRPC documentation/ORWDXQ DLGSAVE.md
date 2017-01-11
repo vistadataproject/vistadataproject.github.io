@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  return value type | SINGLE VALUE
  description | Return IEN of new or existing quick order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return IEN of new or existing quick order

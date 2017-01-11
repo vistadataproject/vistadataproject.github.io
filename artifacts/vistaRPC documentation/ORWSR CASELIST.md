@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns a list of all surgery cases for a patient, without documents asreturned by ORWSR LIST.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | retrieve list of cases, but no documents
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

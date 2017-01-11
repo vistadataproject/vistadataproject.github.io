@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This rpc is used to print a consult report on the Consult tabin CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | print report entry point
+ Leading comment lines | RPC: ORWCS PRINT REPORT,See RPC definition for details on input and output parameters
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

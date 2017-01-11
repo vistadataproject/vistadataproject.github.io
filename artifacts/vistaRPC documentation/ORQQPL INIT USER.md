@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns user parameters for problem list
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | INITIALIZE FOR NEW USER
+ Leading comment lines | taken from INIT^GMPLMGR,leave GMPLUSER on symbol table - is evaluated in EDITSAVE
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns list of education topics for a reminder
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3079
+ Leading comment lines | ORQQPXRM EDUCATION TOPIC
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  return value type | SINGLE VALUE
  description | Auto unflag orders/delete alert.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | auto-unflag orders?/delete alert

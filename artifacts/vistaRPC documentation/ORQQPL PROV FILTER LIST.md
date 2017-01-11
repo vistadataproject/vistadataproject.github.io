@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | RETURNS A LIST OF PROVIDERS CORRESPONDING TO INPUT ARRAY OF IEN
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GET LIST OF RESPONSIBLE PROVIDERS FROM PRBLM LIST
+ Leading comment lines | RETURN - aa list of responsible providers from which to select for filtering,INP - array of problem list providers to select from
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

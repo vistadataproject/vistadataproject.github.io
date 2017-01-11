@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC serves data to a longlist of selectable TITLES for the classnamed in the CLNAME parameter.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | long list SURGICAL REPORT titles
+ Leading comment lines | CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)",depending on context
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  return value type | SINGLE VALUE
  description | Return pharmacy-related service connected eligibility for a patient.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return service connected eligibility for patient

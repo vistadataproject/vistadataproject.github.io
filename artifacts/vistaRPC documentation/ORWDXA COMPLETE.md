@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | ARRAY
  description | Complete an order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Complete order (generic)
+ Leading comment lines | N X S X=+$E($$NOW^XLFDT,1,12),D DATES^ORCSAVE2(+ORID,,X),D STATUS^ORCSAVE2(+ORID,2),validate ESCode

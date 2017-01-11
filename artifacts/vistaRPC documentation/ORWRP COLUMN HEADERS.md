@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Get list of Column headers for a ListView type report from file 101.24.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get Column headers for ListView
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

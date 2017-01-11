@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Because the combo box on the Consults order dialog needs to include ashortlist at the top, a call was needed that returned the list of consultsservices alphabetically as a long list.  This is it.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a set of consult services in long list format
+ Leading comment lines | .ORY=returned list, FROM=text to $O from, DIR=$O direction,
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

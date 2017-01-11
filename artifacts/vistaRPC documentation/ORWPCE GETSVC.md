@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Calculates the correct service category.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns the correct Service Connected Category
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

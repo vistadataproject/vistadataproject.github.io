@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Check patient's unsigned orders, and kill unsigned orders alert for thisuser if no unsigned orders remain for his/her signature.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete unsigned order alerts if no unsigned orders remaining
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

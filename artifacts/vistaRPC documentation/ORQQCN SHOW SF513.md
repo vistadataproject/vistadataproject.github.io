@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  return value type | GLOBAL ARRAY
  description | Returns text of consults standard form 513 for display in GUI application.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | CONSULTS SF513 DISPLAY IN GUI

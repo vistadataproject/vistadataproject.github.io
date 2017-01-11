@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Problem list for CPRS GUI client
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GET LIST OF PATIENT PROBLEMS
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

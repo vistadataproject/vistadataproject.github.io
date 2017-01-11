@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWU1](http://code.osehra.org/dox/Routine_ORWU1_source.html)
  return value type | ARRAY
  description | Returns a list of Clinics, Wards, and \Other\ category entries from the HOSPITAL LOCATION (#44) file.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
+ Leading comment lines | C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.,.Y=returned list, ORFROM=text to $O from, DIR=$O direction.

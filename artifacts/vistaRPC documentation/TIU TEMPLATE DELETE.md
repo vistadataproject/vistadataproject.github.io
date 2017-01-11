@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will delete orphan entries in the Template file (i.e., onlythose entries that have been removed from any Groups, Classes, Personalor Shared Root entries).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Delete TEMPLATES
+ Leading comment lines | Pass TIUDA as array of record numbers to be deleted by reference,SUCCESS will be returned as the actual number of templates deleted
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

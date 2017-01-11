@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This RPC will load the boilerplate text associated with the selectedtitle, and execute the methods for any objects embedded in the boilerplatetext.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Shell for boilerplate RPC
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns all children of a non-Template Node
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

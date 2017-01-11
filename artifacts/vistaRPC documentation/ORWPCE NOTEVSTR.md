@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | SINGLE VALUE
  description | Returns VISIT LOCATION;EPISODE BEGIN DATE;VISIT TYPE from the TIU DOCUMENTfile.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return the VSTR^AUTHOR for a note

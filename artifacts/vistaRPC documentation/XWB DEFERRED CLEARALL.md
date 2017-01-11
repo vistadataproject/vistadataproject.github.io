@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XWBDRPC](http://code.osehra.org/dox/Routine_XWBDRPC_source.html)
  return value type | ARRAY
  description | This RPC is used to CLEAR all the data known to this job in the ^XTMPglobal.  Makes use of the list in ^TMP(\XWBHDL\,$J,handle).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Clear ALL the data for this job.

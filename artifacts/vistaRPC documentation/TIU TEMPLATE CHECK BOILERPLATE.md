@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will evaluate boilerplate passed in the input array, checking tosee whether any of the embedded objects are inactive, faulty, orambiguous.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Checks objects in boilerplate text.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

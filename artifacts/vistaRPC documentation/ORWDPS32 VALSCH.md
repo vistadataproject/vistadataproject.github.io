@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  return value type | SINGLE VALUE
  description | Validate a schedule and return a 1 if it is valid, otherwise return 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | validate a schedule, return 1 if valid, 0 if not

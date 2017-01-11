@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the details of a clinical reminder
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3078
+ Leading comment lines | ORQQPXRM REMINDER INQUIRY
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

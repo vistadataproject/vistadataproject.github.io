@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This API returns lists of Discharge Summaries by visit.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Gets list of Summaries
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

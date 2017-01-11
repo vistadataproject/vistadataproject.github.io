@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  return value type | SINGLE VALUE
  description | Returns default printer.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns default printer for user

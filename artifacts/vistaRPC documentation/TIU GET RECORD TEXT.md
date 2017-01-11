@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This RPC will get the textual portion of a TIU Document Record.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Build ^TMP("TIUVIEW",$J,
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

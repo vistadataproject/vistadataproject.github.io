@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | 
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get template root info
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

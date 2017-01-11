@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Sets and retrieves parameter values used by the graphical user interface. This remote procedure call is documented in Integration Agreement 4367.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | [Procedure] Main RPC Hit Point
+ Leading comment lines | RPC: [GMV PARAMETER],Requires that the parameter name in PAR,be in the GMV namespace.,Input parameters,1. RESULTS [Literal/Required] No description,2. OPTION [Literal/Required] No description,3. ENT [Literal/Required] No description,4. PAR [Literal/Required] No description,5. INST [Literal/Required] No description,6. VAL [Literal/Required] No description
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

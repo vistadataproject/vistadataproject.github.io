@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Remote Procedure returns the variable pointer to the REQUESTINGPACKAGE REFERENCE (File #8925, Field #1405). This would be the record inthe Requesting Package (e.g., Consult/Request Tracking or Surgery) forwhich the resulting document has been entered in TIU.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get the Request (field #1405) for a document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

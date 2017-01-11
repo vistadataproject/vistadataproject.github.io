@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This rpc is used to print a report on the Labs tabin CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | print report entry point
+ Leading comment lines | See RPC definition for details on input and output parameters
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This call returns an up to date laboratory cumulative report for a given patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return cumulative report
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Returns a 1 if the specified patch is installed on the system, otherwisereturns a 0.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return 1 if patch X is installed

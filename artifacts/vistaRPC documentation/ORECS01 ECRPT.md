@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  return value type | GLOBAL ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | EC report

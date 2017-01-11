@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  return value type | GLOBAL ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC - get all graph views

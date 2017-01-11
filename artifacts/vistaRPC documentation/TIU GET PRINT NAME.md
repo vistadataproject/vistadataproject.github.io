@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Remote Procedure receives a pointer to the TIU DOCUMENT DEFINITIONFILE (#8925.1) and returns a string containing the Print Name of thecorresponding Document Definition.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Print Name of a Document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

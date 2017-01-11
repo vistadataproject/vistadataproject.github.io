@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  return value type | SINGLE VALUE
  description | Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | For inpatient meds, check restrictions

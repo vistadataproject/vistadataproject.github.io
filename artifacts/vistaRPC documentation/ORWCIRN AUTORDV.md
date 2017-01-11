@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
  return value type | SINGLE VALUE
  description | Get parameter value for ORWRP CIRN AUTOMATIC.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get parameter value for ORWRP CIRN AUTOMATIC

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  return value type | SINGLE VALUE
  description | Returns \1\ if TIU*1.0*100 is installed, \0\ otherwise.  This lets theCPRS GUI enable or disable the Interdisciplinary Notes functionality untilthe server is ready.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is ID Notes installed?

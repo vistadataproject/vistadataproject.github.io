@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Function returns a list of a patient's medications.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return pt's condensed medication list
+ Leading comment lines | id^nameform^stop date^route^schedule/infusion rate^refills remaining
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

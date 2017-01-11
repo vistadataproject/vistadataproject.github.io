@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  return value type | ARRAY
  description | This RPC returns an array of ADHOC Health Summary subcomponents.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get subitems from a predefined Adhoc component

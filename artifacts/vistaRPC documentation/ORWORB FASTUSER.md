@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  return value type | GLOBAL ARRAY
  description | Function returns notifications for current user.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return current user's notifications across all patients

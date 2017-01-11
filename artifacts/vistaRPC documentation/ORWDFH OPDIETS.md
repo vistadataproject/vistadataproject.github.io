@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a list of up to 5 outpatient diets from file 119.9

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  return value type | SINGLE VALUE
  description | Return the FillerID (namespace) for a dialog.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return the FillerID (namespace) for a dialog

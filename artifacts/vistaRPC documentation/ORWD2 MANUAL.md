@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWD2](http://code.osehra.org/dox/Routine_ORWD2_source.html)
  return value type | SINGLE VALUE
  description | Returns device information for manual prints done via CPRS GUI.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return device info for manual prints

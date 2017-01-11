@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of lab collect times for a date and location.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of lab collect times for a date and location
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

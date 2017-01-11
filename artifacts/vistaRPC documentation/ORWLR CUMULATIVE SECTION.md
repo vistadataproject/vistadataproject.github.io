@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This rpc retrieves the part of the lab cumulative report selected by the user on the Labs tab.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return cum report text
+ Leading comment lines | RPC: ORWLR REPORT TEXT
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

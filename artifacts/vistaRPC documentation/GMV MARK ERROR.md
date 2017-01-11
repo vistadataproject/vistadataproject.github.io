@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This remote procedure call marks a selected vitals record in the GMRVVital Measurement (#120.5) file as entered-in-error. This remote procedure call is documented in Integration Agreement 4414.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV MARK ERROR [RPC entry point]
+ Leading comment lines | GMVDATA CONSISTS OF THE FOLLOWING DATA:,FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT,PATIENT^INVALID RECORD
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

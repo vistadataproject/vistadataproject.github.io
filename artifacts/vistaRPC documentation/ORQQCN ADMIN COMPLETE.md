@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Admin users
+ Leading comment lines | Administrative complete action

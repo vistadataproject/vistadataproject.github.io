@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
  return value type | SINGLE VALUE
  description | Gets the current date and time from the server. This remote procedure call is documented in Integration Agreement 4355.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Gets current time

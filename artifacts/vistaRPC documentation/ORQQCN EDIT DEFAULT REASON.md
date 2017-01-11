@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Return value (see details there) determines if and when the consults'reason for request' can be edited.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Allow editing of reason for request?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

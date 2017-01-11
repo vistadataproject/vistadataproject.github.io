@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This call will remove an ID Entry from an Interdisciplinary Note.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Detach TIUDA from its ID Parent
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

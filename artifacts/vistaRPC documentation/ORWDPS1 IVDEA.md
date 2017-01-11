@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | only be called for an outpaitent and IV dialog
+ Leading comment lines | OI: IV Orderable Item,OITYPE: A:ADDITIVE  S:SOLUTION

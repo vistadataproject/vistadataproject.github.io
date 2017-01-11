@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | BOOLEAN RPC to evaluate user's privilege to modify the expected cosigner, given the current status of the document, and the user's role with respect to it.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Evaluate/return whether user can change cosigner
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

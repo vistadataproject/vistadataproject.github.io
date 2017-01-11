@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Saves a GAF Score.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save new GAF score
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

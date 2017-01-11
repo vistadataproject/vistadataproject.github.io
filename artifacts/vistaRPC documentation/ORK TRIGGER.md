@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This function returns a list of order check messages.  
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | initiate order checking
+ Leading comment lines | ORKY: array of returned msgs in format: ornum^orderchk ien^clin danger^msg,ORKDFN: patient dfn,ORKA: array of order information in the format:,orderable item ien|,display group-filler app|,nat'l id^nat'l text^nat'l code sys^local id^local text^local code sys|,effective d/t|,order number|,filler data (LR: specimen ien, PS: meds prev ordered during this session in format med1^med2^...),ORKMODE: mode/event trigger (DISPLAY,SELECT,ACCEPT,SESSION,ALL,NOTIF),PS: meds previously ordered during this session med1^med2^...,OROIL: array containing the order info passed in (oly for ACCEPT mode),ORDODSG: flag that denotes if dosage checks should be performed,1 for perform dosage checks,0 for do not perform dosage checks
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

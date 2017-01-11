@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  return value type | ARRAY
  description | Loads dialog data (lists & defaults) for a radiology order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get dialog data for radiology

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | This Remote Procedure returns the list of documents associated with agiven Request (e.g., Consult Request, or Surgical Case).
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get TIU Documents for a given Consult or
+ Leading comment lines | Surgical Case
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

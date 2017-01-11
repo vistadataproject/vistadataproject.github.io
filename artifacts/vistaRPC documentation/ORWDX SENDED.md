@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | ARRAY
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Release EDOs to svc

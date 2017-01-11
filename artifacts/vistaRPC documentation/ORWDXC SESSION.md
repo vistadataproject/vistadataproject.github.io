@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  return value type | ARRAY
  description | Return list of order checks on release of order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return list of Order Checks on Release Order

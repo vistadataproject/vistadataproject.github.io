@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given a TIU document IEN, return the information required to construct alistbox item for that single document.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return single listbox item for document
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

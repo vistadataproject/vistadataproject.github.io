@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | SINGLE VALUE
  description | Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return external values for encounter
+ Leading comment lines | LOCNAME^LOCABBR^ROOMBED^PROVNAME

@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | ARRAY
  description | Returns a list of appointments for a patient (for visit selection).
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return a list of appointments
+ Leading comment lines | APPTTIME^LOCIEN^LOCNAME^EXTSTATUS

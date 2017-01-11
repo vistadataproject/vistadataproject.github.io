@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  return value type | SINGLE VALUE
  description | This RPC loads the size (bounds) for a particular CPRS GUI control. 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return the bounds for a particular control

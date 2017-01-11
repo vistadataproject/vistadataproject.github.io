@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  return value type | GLOBAL ARRAY
  description | This RPC returns the list of TIU OBJECTS that the current user may selectfrom.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get the list of active objects

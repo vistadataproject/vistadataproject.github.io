@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Given an SSN in the format 999999999(P), return a list of matchingpatients.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a list of patients matching full SSN entered
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

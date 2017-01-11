@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns array of user specific problems to select from
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get user problem list for given group
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

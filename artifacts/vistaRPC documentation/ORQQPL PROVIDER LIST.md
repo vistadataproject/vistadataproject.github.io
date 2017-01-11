@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  return value type | ARRAY
  description | RETURNS ARRAY OF PROVIDERS MATCHING INPUT
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get candidate Rroviders from person file

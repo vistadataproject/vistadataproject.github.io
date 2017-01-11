@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  return value type | GLOBAL ARRAY
  description | Return patient's Blood Bank information.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get all data in one call and let the GUI divide it up

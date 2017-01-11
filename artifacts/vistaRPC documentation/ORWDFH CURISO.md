@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  return value type | SINGLE VALUE
  description | Return a patient's current isolation.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a patient's current isolation

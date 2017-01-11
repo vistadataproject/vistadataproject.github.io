@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | rpc. Auto Signon Handle

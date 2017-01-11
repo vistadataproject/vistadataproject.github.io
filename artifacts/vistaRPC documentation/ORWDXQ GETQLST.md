@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  return value type | ARRAY
  description | Return quick list for a display group.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return quick list for a display group

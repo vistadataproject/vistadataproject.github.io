@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWCV1](http://code.osehra.org/dox/Routine_ORWCV1_source.html)
  return value type | ARRAY
  description | This remote procedure call returns a list of Cover Sheet reports,There are no input parameters fo this rpc.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return data for coversheet
+ Leading comment lines | RPC: ORWCV1 COVERSHEET LIST

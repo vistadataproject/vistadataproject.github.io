@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  return value type | SINGLE VALUE
  description | Returns E if order checking enabled, otherwise D.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | returns E if order checking enabled, otherwise D

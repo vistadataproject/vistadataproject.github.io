@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | ARRAY
  description | Returns a set of patient names for use with a long list box.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return a bolus of patient names.  From is either Name or IEN^Name.

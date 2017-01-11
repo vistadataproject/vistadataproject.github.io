@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Return array of default fields and original fields - GMPFLD() and GMPORIG()
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | LOAD  EDIT ARRAYS
+ Leading comment lines | DA=problem IFN
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

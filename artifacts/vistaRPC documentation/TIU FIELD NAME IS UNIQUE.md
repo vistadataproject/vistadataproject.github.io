@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns TRUE if the template field name is unique
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Is Name Unique?
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

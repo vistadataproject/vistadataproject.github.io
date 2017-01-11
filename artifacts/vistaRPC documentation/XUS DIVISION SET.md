@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC is used to set the user's selected Division in DUZ(2) duringsign-on.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Set users Division
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQQXQA](http://code.osehra.org/dox/Routine_ORQQXQA_source.html)
  return value type | ARRAY
  description | Returns mail groups in a system.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return mail groups in a system

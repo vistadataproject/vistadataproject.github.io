@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This RPC will return a list of divisions of a user.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get Division data
+ Leading comment lines | IEN is userid (DUZ or username) for future use.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

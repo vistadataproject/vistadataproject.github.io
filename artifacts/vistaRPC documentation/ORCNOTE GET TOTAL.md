@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORCNOTE](http://code.osehra.org/dox/Routine_ORCNOTE_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get total count of progress notes
+ Leading comment lines | ^TIU(8925,"ACLPT",3) refers to progress notes class

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | SINGLE VALUE
  description | Returns the GAF Scale Rating Form URL
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns the MH GAF Web Page URL

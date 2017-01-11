@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  return value type | SINGLE VALUE
  description | Save quick order list.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save quick list

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of comments associated with a problem IEN.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return comments for a problem - MULTI-DIVISIONAL
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns the progress notes based on patient and visit identifier.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return progress notes for a patient's visit
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

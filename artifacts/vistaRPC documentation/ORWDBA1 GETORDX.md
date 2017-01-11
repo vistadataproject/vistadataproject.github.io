@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | ARRAY OF DIAGNOSES ASSOCIATED WITH AN ORDER
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Retrieve Diagnoses for an order - RPC
+ Leading comment lines | Input:,ORIEN    Order Internal ID#,Output:,Y        Array of Diagnoses (Dx) - Y(#)=#^DxInt#^ICD9^DxDesc^TxF,Variables used:,CT       Counter for # of Dx related to order,DXIEN    Dx internal ID,DXN      Internal (to ^OR(100)) sequence # for Dx storage,DXREC    Dx record from Order file,DXV      Dx description,ICD9     External ICD9 #,TXFACTRS Treatment Factors (TxF)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

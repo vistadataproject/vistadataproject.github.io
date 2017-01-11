@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Detailed description of reminder
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | DBIA 3080
+ Leading comment lines | ORQQPXRM REMINDER WEB
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

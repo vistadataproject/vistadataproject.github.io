@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of CPT Modifiers for a given CPT Code.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return CPT Modifiers for a CPT Code
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

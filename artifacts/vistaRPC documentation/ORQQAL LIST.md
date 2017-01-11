@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns a list of allergies for a patient.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RETURN PATIENT'S ALLERGY/ADVERSE REACTION INFO:
+ Leading comment lines | null:no allergy assessment, 0:no known allergies, 1:pt has allergies,if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

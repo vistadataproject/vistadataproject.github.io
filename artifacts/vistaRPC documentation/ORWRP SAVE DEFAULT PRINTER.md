@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  return value type | SINGLE VALUE
  description | Saves printer as user's default printer.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Save new default printer for user

@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the implementation date of the coding system passed in
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns Implementation date of the ICD code set
+ Leading comment lines | CSYS = System abbreviation for the coding system
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

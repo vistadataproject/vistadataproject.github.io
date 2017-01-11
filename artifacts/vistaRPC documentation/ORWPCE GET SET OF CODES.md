@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  return value type | ARRAY
  description | Returns values for a set of codes given a file and field number.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | gets set of codes
+ Leading comment lines | ORWLST(n)=code^text for code

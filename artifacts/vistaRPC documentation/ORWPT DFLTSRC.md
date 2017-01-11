@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | SINGLE VALUE
  description | Return user's default patient list source.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return default patient list source (T, W, C, P, S)

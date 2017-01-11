@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns listing of a patient's active inpatient and outpatientmedications.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | retrieve active inpatient & outpatient meds
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

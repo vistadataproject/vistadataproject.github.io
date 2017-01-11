@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns list of all CPRS lookup categories and associated reminders
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

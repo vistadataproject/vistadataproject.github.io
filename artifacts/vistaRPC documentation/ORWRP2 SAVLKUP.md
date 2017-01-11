@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This saves the last Adhoc Health Summary lookup used by a user in CPRS.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save Adhoc lookup selection
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,12 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

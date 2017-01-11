@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  return value type | ARRAY
  description | Returns instructions on entering new access/verify codes.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | send access/verify code instructions.

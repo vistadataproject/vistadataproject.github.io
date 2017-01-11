@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Receive external ICD9 number and return IEN
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return IEN for an ICD9 code (RPC: ORWDBA7 GETIEN9)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

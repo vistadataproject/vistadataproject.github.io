@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  return value type | SINGLE VALUE
  description | Set order to send an alert when the order is resulted.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | alert user (ORDUZ) when order (ORID) resulted
+ Leading comment lines | if no user passed, use ordering provider:

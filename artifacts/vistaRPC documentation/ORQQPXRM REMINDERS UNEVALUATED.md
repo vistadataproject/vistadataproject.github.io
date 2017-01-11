@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Returns list of CPRS reminders for patient/location (no evaluation isdone)
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Leading comment lines | D LIST^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078,ORQQPXRM MENTAL HEALTH
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

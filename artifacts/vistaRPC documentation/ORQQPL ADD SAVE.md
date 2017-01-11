@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Add new problem record
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | SAVE NEW RECORD
+ Leading comment lines | RETURN - Problem IFN if success, 0 otherwise,ADDARRAY - array used for indirect sets of  GMPFLDS()
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

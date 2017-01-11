@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | SINGLE VALUE
  description | Saves user's preference for default list source.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save new default patient list settings (X=type^ien^sdt

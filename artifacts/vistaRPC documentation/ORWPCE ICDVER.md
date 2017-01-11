@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the ICD coding system version to be used for diagnosis look-up, asof a particular date of interest.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get ICD codeset version (i.e., ICD-9-CM or ICD-10-CM)
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

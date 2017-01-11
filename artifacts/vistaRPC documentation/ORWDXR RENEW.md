@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  return value type | ARRAY
  description | Renew an existing order.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Renew an order

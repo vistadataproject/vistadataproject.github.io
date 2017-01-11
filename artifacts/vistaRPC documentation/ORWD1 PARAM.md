@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns the prompt and device parameters for Automated order prints
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns in 'Y' the print parameters
+ Leading comment lines | Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device,Device Params returned in internal;external format, the rest are internal,CC=Chart Copy,L=Label,R=Requisitions,WC=Work Copy,'Prompt for' values (internal):,0 for no prompts- chart copy is automatically generated.,1 to prompt for chart copy and ask which printer should be used.,2 to prompt for chart copy and automatically print to the,printer defined in the CHART COPY PRINT DEVICE field.,* don't print.,LOC=Ptr to location ^SC(LOC,
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

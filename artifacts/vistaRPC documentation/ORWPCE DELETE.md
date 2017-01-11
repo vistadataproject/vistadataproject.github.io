@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | SINGLE VALUE
  description | Delete PCE information related to a note being deleted.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | delete PCE info when deleting a note

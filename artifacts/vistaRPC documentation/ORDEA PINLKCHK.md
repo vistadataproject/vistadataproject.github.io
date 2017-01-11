@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | check if the current user has an active PIN lock
+ Leading comment lines | ORY=1 if there is an active lock and ORY=0 if no active lock

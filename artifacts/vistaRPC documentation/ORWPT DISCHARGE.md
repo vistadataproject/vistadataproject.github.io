@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Given a patient and an admission date, return the discharge date/time.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get discharge movement information
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

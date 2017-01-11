@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | GLOBAL ARRAY
  description | Returns a formatted global of a TIU document for output to a Windows printdevice.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | TIU print to windows printer
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

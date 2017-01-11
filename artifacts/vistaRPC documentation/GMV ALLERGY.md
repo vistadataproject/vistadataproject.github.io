@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | This remote procedure call retrieves the patient's allergy information. This remote procedure call is documented in Integration Agreement 4350.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | GMV ALLERGY [RPC entry point]
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

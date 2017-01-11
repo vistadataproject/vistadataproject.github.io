@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This Remote Procedure allows the creation of addenda to TIU Documents.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Create addendum
+ Leading comment lines | For backward compatibility,Use MAKEADD^TIUSRVP2 now, please
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

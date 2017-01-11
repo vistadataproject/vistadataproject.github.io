@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  return value type | ARRAY
  description | Returns a list of exams for a clinic.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | get list of exams for clinic

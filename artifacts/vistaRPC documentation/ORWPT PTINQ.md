@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  return value type | GLOBAL ARRAY
  description | Returns formatted patient inquiry text for display in GUI environment.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Return formatted pt inquiry report

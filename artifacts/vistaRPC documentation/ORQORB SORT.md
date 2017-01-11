@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQORB](http://code.osehra.org/dox/Routine_ORQORB_source.html)
  return value type | SINGLE VALUE
  description | Returns the notification sort method for user/division/system/pkg.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return notification sort method for user/division/system/pkg

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  return value type | ARRAY
  description | Returns a null list.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | return a null list

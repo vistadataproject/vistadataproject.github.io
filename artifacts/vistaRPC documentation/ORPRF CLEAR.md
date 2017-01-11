@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Clear up the temp global

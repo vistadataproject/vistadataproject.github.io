@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will decrement the lock on a given TIU Document Record, identifiedby the TIUDA input parameter. The return value will always be 0.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Decrement Lock on a TIU Document record
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

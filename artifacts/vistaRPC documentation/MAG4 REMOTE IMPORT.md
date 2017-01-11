@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Called from MS Windows Application.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | RPC [MAG4 REMOTE IMPORT]
+ Leading comment lines | Import Images from a Windows App, by sending an array.
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
  return value type | SINGLE VALUE
  description | 
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | delete monograph data

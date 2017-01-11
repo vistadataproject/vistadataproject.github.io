@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
  return value type | SINGLE VALUE
  description | Returns a users DEA number.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Get user DEA

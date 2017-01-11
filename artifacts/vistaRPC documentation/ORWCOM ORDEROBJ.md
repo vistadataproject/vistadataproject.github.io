@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns COM Objects for order accept
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns Accept Order COM Object
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

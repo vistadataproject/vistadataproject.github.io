@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC will issue an incremental LOCK on the record identified by theTIUDA parameter, returning an integer truth value indicating successor failure in obtaining the LOCK.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Bid for lock on a TIU Document record
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

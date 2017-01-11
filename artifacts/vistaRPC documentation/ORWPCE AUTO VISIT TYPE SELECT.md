@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns TRUE if visit type should be automatically selected.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Returns TRUE if automatic selection of Visit Type
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | ARRAY
  description | Given a Consult ID from file 123, return the zero node to the client forloading into a consult record in RESULTS[0].  If the consult has anyassociated TIU records (completion, addenda) these will be returned inRESULTS[i..j].
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Retrieve a complete consult record
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

@@ -15,6 +15,13 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | This RPC saves the column width sizes for reports in CPRS for the user.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | save report column sizing information
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 

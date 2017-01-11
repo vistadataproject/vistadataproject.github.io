@@ -14,3 +14,11 @@ title: VISTA RPC documentation
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  return value type | SINGLE VALUE
  description | Returns date in internal VA FileMan format.
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Internal Fileman Date/Time
+ Leading comment lines | change the '00:00' that could be passed so Fileman doesn't reject

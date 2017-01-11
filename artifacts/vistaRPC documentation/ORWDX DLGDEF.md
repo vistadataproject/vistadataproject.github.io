@@ -14,3 +14,10 @@ title: VISTA RPC documentation
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  return value type | ARRAY
  description | Return format information for an order dialog in the format:   LST(n): PrmtID^PrmtIEN^FmtSeq^Fmt^Omit^Lead^Trail^NwLn^Wrap^Chld^IsChld
+
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Format mapping for a dlg

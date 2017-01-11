@@ -15,6 +15,14 @@ title: VISTA RPC documentation
  return value type | SINGLE VALUE
  description | Returns a YES or NO response to indicate if the Dynamic Link Library (DLL)file should be used. This remote procedure call is documented in Integration Agreement 4420.
 
+
+### Method description
+
+ property | value 
+--- | --- 
+ Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
+ Leading comment lines | RESULT = variable name to return check,GMVX = dll name and version date/time,Returns yes or no  
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
