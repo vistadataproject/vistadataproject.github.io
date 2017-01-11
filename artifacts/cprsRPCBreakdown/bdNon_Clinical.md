@@ -8,7 +8,7 @@ title: VDP Year 2 - CPRS RPC Interface, Non Clinical Slice Breakdown
 
 
 
-Non Clinical RPCs don't effect a patient's medical record and come in three flavors ...
+Non Clinical RPCs don't effect a patient's medical record. In a phrase, they mainly 'get file data and parameter settings' and as they don't access patient data, their use needn't be monitored as closely as the Clinical RPCs - they don't involve HIPAA sensitive information. They come in three flavors ...
 
 Name | Number
 --- | ---
