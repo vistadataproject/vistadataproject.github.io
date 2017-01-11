@@ -12,15 +12,13 @@ title: RPCL documentation
  name | ORWDAL32 SAVE ALLERGY
  domain | Allergy
  description | {::nomarkdown}Add new allergy record{:/}
- VISTA (8994) description | [nodeVISTA 8994](../vistaRPC documentation/ORWDAL32 SAVE ALLERGY)
+ Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORWDAL32 SAVE ALLERGY)
  MUMPS implementation | [EDITSAVE^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  type | CHANGE
  complexity | HIGH
  uses | [EIE,NKA,CREATE]
  return type | SINGLE VALUE
  return description | 
- Method comment | Save Edit/Add of an allergy/adverse reaction
- Leading comment lines | following patch check is made via GUI RPC call to ORWU PATCH instead,I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q
 
 ### Input Parameters
 
@@ -30,10 +28,7 @@ title: RPCL documentation
 | ORDFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 | 
 | OREDITED | LIST ([UPDARRAY](#for-id-oredited)) | true | {::nomarkdown}ARRAY OF VALUE STRINGS{:/} |  | 
 
-### UPDARRAY List Parameter
-
-
-#### For ID OREDITED
+#### UPDARRAY
 
 | key | parameterType | range | description | mvdmProperty | example | 
 | --- | --- | --- | --- | --- | --- | 
@@ -53,3 +48,8 @@ title: RPCL documentation
 | GMRAERRDT | DATE-TIME |  | {::nomarkdown}Date Entered in Error{:/} |  | \GMRAERRDT\: \3160926.163633\ | 
 | GMRAERRCMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRAERRCMTS\: [\a comment about the error\, \here is another line\] | 
 | GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | 
+
+
+
+
+ Generated on January 11th 2017, 7:16:21 am
