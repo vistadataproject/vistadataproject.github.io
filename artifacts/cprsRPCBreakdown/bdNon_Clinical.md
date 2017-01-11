@@ -4,7 +4,7 @@ title: VDP Year 2 - CPRS RPC Interface, Non Clinical Slice Breakdown
 ---
 
 
-# [All](bdStart) &#8594; Non Clinical (555)
+# [All](bdStart) &#8594; Non Clinical (562)
 
 
 
@@ -12,21 +12,21 @@ Non Clinical RPCs come in three flavors ...
 
 Name | Number
 --- | ---
-[Knowledge](#knowledge-276) | 276 (49.7%)
-[User](#user-179) | 179 (32.3%)
-[Other](#other-100) | 100 (18%)
+[Knowledge](#knowledge-278) | 278 (49.5%)
+[User](#user-184) | 184 (32.7%)
+[Other](#other-100) | 100 (17.8%)
 
 
 
 
-### Knowledge (276)
+### Knowledge (278)
 
 Retrieving (and limited changing) of __user-independent, non clinical data__. Most take data from FileMan/VDM directly.
 
 Category | Number
 --- | ---
 CHANGE | 12 (4.3%)
-READ | 258 (93.5%)
+READ | 260 (93.5%)
 UTILITY | 6 (2.2%)
 
 
@@ -232,7 +232,7 @@ K150 | ORWGN MAXFRQ | READ |  [MAXFRQ^ORWGN](http://code.osehra.org/dox/Routine_
 K151 | ORWGRPC CLASS | READ |  [CLASS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | TYPE | 2 | - |  | 
 K152 | ORWGRPC RPTPARAM | READ |  [RPTPARAM^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | IEN | 1 | - | 101.24 | 
 K153 | ORWGRPC TAX | READ |  [TAX^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | ALL, REMTAX | 2 | - |  | 
-K154 | ORWGRPC TESTSPEC | READ |  [TESTSPEC^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 2 | - |  | 
+K154 | ORWGRPC TESTSPEC | READ |  [TESTSPEC^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 2 | - | 60 | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 K155 | ORWLRR ALLTESTS | READ |  [ALLTESTS^ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html) | FROM, DIR | 1 | - | 60 | 
 K156 | ORWLRR ATESTS | READ |  [ATESTS^ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html) | TEST | 1 | - | 60 | 
@@ -250,7 +250,7 @@ K165 | ORWOR VWSET | __CHANGE__ |  [VWSET^ORWOR](http://code.osehra.org/dox/Rout
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 K166 | ORWORDG ALLTREE | READ |  [ALLTREE^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | &nbsp; | 4 | - | 100.98 | 
 K167 | ORWORDG GRPSEQB | READ |  [GRPSEQB^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | &nbsp; | 4 | PARAMETER | 100.98 | ORWOR CATEGORY SEQUENCE
-K168 | ORWORDG IEN | READ |  [IEN^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | X | 2 | IEN-LOOKUP |  | 
+K168 | ORWORDG IEN | READ |  [IEN^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | X | 2 | IEN-LOOKUP | 100.98 | 
 K169 | ORWORDG MAPSEQ | READ |  [MAPSEQ^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | &nbsp; | 4 | PARAMETER | 100.98 | 
 K170 | ORWORDG REVSTS | READ |  [REVSTS^ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html) | &nbsp; | 1 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -316,7 +316,7 @@ K217 | ORWTPR OCDESC | READ |  [OCDESC^ORWTPR](http://code.osehra.org/dox/Routin
 K218 | ORWU DEVICE | READ |  [DEVICE^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html) | FROM, DIR | 16 | - |  | 
 K219 | ORWU PATCH | READ |  [PATCH^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html) | X | 1 | - | 9.4 | 
 K220 | ORWU VERSION | READ |  [VERSION^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html) | X | 1 | - | 9.4 | 
-K221 | ORWU VERSRV | READ |  [VERSRV^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html) | X, CLVER | 12 | - |  | 
+K221 | ORWU VERSRV | READ |  [VERSRV^ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html) | X, CLVER | 12 | - | 19 | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 K222 | ORWU16 DEVICE | READ |  [DEVICE^ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html) | &nbsp; | 5 | LIST | 3.5 | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -376,18 +376,22 @@ K273 | TIU TEMPLATE PERSONAL OBJECTS | READ |  [PERSOBJS^TIUSRVT2](http://code.o
 K274 | TIU TEMPLATE SET DEFAULTS | __CHANGE__ |  [SETDFLT^TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html) | SETTINGS | 3 | PARAMETER |  | TIU DEFAULT TEMPLATES
 K275 | TIU TEMPLATE SET ITEMS | __CHANGE__ |  [SETITEMS^TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html) | TIUDA, TIUX | 7 | - |  | 
 K276 | TIU USER CLASS LONG LIST | READ |  [CLSLIST^TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html) | FROM, DIR | 4 | - | 8930 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+K277 | XUS INTRO MSG | READ |  [INTRO^XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html) | &nbsp; | 1 | - | 8993.3 | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+K278 | XWB GET BROKER INFO | READ |  [BRKRINFO^XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html) | &nbsp; | 1 | - | 8989.3 | 
 
 
-### User (179)
+### User (184)
 
 Retrieving (and limited changing) of __user-specific, non clinical data__.
-Many - 82 (45.8%) - involve PARAMETER setting or getting.
+Many - 82 (44.6%) - involve PARAMETER setting or getting.
 
 Category | Number
 --- | ---
-CHANGE | 38 (21.2%)
-READ | 130 (72.6%)
-UTILITY | 11 (6.1%)
+CHANGE | 40 (21.7%)
+READ | 133 (72.3%)
+UTILITY | 11 (6%)
 
 
 
@@ -487,7 +491,7 @@ U65 | ORWDXVB STATALOW | READ |  [STATALOW^ORWDXVB](http://code.osehra.org/dox/R
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 U66 | ORWGN AUTHUSR | READ |  [AUTHUSR^ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html) | &nbsp; | 2 | PARAMETER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-U67 | ORWGRPC ALLVIEWS | READ |  [ALLVIEWS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | VIEW, USER | 2 | - |  | 
+U67 | ORWGRPC ALLVIEWS | READ |  [ALLVIEWS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | VIEW, USER | 2 | - |  | ORWG GRAPH VIEW
 U68 | ORWGRPC DELVIEWS | __CHANGE__ |  [DELVIEWS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | NAME, PUBLIC | 2 | PARAMETER |  | 
 U69 | ORWGRPC PUBLIC | READ |  [PUBLIC^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 1 | PARAMETER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -617,6 +621,12 @@ U176 | TIU PERSONAL TITLE LIST | READ |  [PERSLIST^TIUSRVD](http://code.osehra.o
 U177 | TIU REQUIRES COSIGNATURE | READ |  [REQCOS^TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html) | TIUTYP, TIUDA, TIUSER, TIUDT | 6 | IS-A |  | 
 U178 | TIU TEMPLATE ACCESS LEVEL | READ |  [TACCESS^TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html) | ROOT, USER, LOC | 24 | PARAMETER |  | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
 U179 | TIU USER INACTIVE? | READ |  [USRINACT^TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html) | TIUDA | 1 | IS-A |  | 
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+U180 | XUS DIVISION GET | READ |  [DIVGET^XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html) | IEN | 7 | - | 200 | 
+U181 | XUS DIVISION SET | __CHANGE__ |  [DIVSET^XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html) | DIV | 6 | - |  | 
+U182 | XUS GET USER INFO | READ |  [USERINFO^XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html) | &nbsp; | 14 | - | 200 | 
+U183 | XUS PKI GET UPN | READ |  [GETUPN^XUSER2](http://code.osehra.org/dox/Routine_XUSER2_source.html) | &nbsp; | 1 | - | 200 | 
+U184 | XUS PKI SET UPN | __CHANGE__ |  [SETUPN^XUSER2](http://code.osehra.org/dox/Routine_XUSER2_source.html) | V | 3 | - | 200 | 
 
 
 ### Other (100)
@@ -706,7 +716,7 @@ O46 | ORWDXVB3 SWPANEL | READ |  [SWPANEL^ORWDXVB3](http://code.osehra.org/dox/R
 O47 | ORWGN GNLOC | READ |  [GNLOC^ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html) | ORFROM, DIR | 13 | IS-A, PARAMETER |  | OR GN LOCATIONS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 O48 | ORWGRPC GETDATES | UTILITY |  [GETDATES^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | REPORTID | 2 | PARAMETER | 101.24 | ORWRP TIME/OCC LIMITS INDV
-O49 | ORWGRPC GETPREF | UTILITY |  [GETPREF^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 2 | FMUTILITY, PARAMETER |  | 
+O49 | ORWGRPC GETPREF | UTILITY |  [GETPREF^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 2 | FMUTILITY, PARAMETER |  | ORWG GRAPH SETTING
 O50 | ORWGRPC GETSIZE | UTILITY |  [GETSIZE^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | &nbsp; | 2 | FMUTILITY, PARAMETER |  | 
 O51 | ORWGRPC GETVIEWS | UTILITY |  [GETVIEWS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | ALL, PUBLIC, EXT, USER | 2 | FMUTILITY, PARAMETER |  | 
 O52 | ORWGRPC SETPREF | __CHANGE__ |  [SETPREF^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | SETTING, PUBLIC | 2 | PARAMETER |  | 
