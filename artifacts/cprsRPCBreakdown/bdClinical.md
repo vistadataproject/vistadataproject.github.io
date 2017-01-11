@@ -348,7 +348,7 @@ UTILITY | 50 (12%)
 268. | ORWGRPC ITEMDATA | READ |  [ITEMDATA^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | ITEM, START, DFN | 2 | - |  | 
 269. | ORWGRPC ITEMS | READ |  [ITEMS^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | DFN, TYPE | 2 | - |  | 
 270. | ORWGRPC LOOKUP | READ |  [LOOKUP^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | INFO, FROM, DIR | 1 | - |  | 
-271. | ORWGRPC TYPES | READ |  [TYPES^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | DFN, SUB | 3 | - |  | 
+271. | ORWGRPC TYPES | READ |  [TYPES^ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html) | DFN, SUB | 3 | PXRMINDX, QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 272. | ORWLR CUMULATIVE REPORT | UTILITY |  [CUM^ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html) | DFN, DAYS, ALPHA, OMEGA | 17 | - |  | 
 273. | ORWLR CUMULATIVE SECTION | READ |  [RPT^ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html) | DFN, RPTID, DTRANGE, SECTION | 12 | - |  | 

@@ -4,7 +4,7 @@ title: VDP Year 2 - CPRS RPC Interface, Authentication Slice Breakdown
 ---
 
 
-# [All](bdStart) &#8594; Authentication (18)
+# [All](bdStart) &#8594; Authentication (11)
 
 \# | Name
 --- | ---
@@ -14,17 +14,10 @@ title: VDP Year 2 - CPRS RPC Interface, Authentication Slice Breakdown
 4. | XUS AV HELP
 5. | XUS CCOW VAULT PARAM
 6. | XUS CVC
-7. | XUS DIVISION GET
-8. | XUS DIVISION SET
-9. | XUS GET CCOW TOKEN
-10. | XUS GET TOKEN
-11. | XUS GET USER INFO
-12. | XUS INTRO MSG
-13. | XUS PKI GET UPN
-14. | XUS PKI SET UPN
-15. | __XUS SIGNON SETUP__
-16. | XWB CREATE CONTEXT
-17. | XWB GET BROKER INFO
-18. | __XWB IM HERE__
+7. | XUS GET CCOW TOKEN
+8. | XUS GET TOKEN
+9. | __XUS SIGNON SETUP__
+10. | XWB CREATE CONTEXT
+11. | __XWB IM HERE__
 
 
