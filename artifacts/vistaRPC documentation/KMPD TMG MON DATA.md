@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MONITOR START TIME | LITERAL | 25 | true | Time the Timing Monitor started, in internal fileman format. This will be used to determine the Running Time (how long the system monitor has been running for this user. If not defined then $$NOW^XLFDT will be used. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MONITOR START TIME | LITERAL | 25 | true | Time the Timing Monitor started, in internal fileman format. This will be used to determine the Running Time (how long the system monitor has been running for this user. If not defined then $$NOW^XLFDT will be used. | 

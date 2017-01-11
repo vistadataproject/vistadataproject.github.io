@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDBB | LITERAL | 100 | true | The value of this paramater is a string. This string is thee-mail address for the mailgroup in MailMan to which themessage with the checksums is to be sent. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDBB | LITERAL | 100 | true | The value of this paramater is a string. This string is thee-mail address for the mailgroup in MailMan to which themessage with the checksums is to be sent. | 

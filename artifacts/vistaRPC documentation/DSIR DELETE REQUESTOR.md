@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DUPLICATE/ORPHAN | LITERAL | 99 | true | This is the pointer to file 19620.12 of the entry to replace/delete. | 
-| vs:Input_Parameter-8994_02 | REPOINT TO | LITERAL | 99 | true | When this parameter is passed it will become the new requestor in place of the pointer passed in parameter 1. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DUPLICATE/ORPHAN | LITERAL | 99 | true | This is the pointer to file 19620.12 of the entry to replace/delete. | 
+| REPOINT TO | LITERAL | 99 | true | When this parameter is passed it will become the new requestor in place of the pointer passed in parameter 1. | 

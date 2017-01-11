@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIALOG IEN | LITERAL | 16 | true | Reminder Dialog ien from #801.41 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIALOG IEN | LITERAL | 16 | true | Reminder Dialog ien from #801.41 | 

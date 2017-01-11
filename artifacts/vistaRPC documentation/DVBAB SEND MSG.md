@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VAL1 | LITERAL | 8 | true | This is the cancelling users DUZ. | 
-| vs:Input_Parameter-8994_02 | VAL2 | LITERAL | 45 | true | This is the Subjecto of the message - XMSUB | 
-| vs:Input_Parameter-8994_02 | VAL3 | LIST |  | true | This is the text of the message  -  XMTEXT | 
-| vs:Input_Parameter-8994_02 | VAL4 | LITERAL | 30 | true | This is the mail group name  -  MGN | 
-| vs:Input_Parameter-8994_02 | VAL5 | LITERAL | 15 | true | This is the 2507 request number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VAL1 | LITERAL | 8 | true | This is the cancelling users DUZ. | 
+| VAL2 | LITERAL | 45 | true | This is the Subjecto of the message - XMSUB | 
+| VAL3 | LIST |  | true | This is the text of the message  -  XMTEXT | 
+| VAL4 | LITERAL | 30 | true | This is the mail group name  -  MGN | 
+| VAL5 | LITERAL | 15 | true | This is the 2507 request number | 

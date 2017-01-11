@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OPTION | LITERAL | 10 | true | Routine Line tag you wish to call. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Parameter variable to be passed into routine tag. | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL |  | true | Any additional parameters to be passed into the routine line tag. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OPTION | LITERAL | 10 | true | Routine Line tag you wish to call. | 
+| DFN | LITERAL |  | true | Parameter variable to be passed into routine tag. | 
+| DATA | LITERAL |  | true | Any additional parameters to be passed into the routine line tag. | 

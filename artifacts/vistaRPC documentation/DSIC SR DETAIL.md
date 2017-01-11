@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSISRTN | LITERAL | 20 | true | This is the internal file number from file 130, i.e., CASE# | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 4 | true | Optional parameter - string of characters indicating which reports to return:  FLAG[\O\ - return Operation Report       \A\ - return Anesthesia Report       \N\ - return Nurse's Report       \P\ - return Procedure Report (NON-OR) Default to FLAG=\OA\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSISRTN | LITERAL | 20 | true | This is the internal file number from file 130, i.e., CASE# | 
+| FLAG | LITERAL | 4 | true | Optional parameter - string of characters indicating which reports to return:  FLAG[\O\ - return Operation Report       \A\ - return Anesthesia Report       \N\ - return Nurse's Report       \P\ - return Procedure Report (NON-OR) Default to FLAG=\OA\ | 

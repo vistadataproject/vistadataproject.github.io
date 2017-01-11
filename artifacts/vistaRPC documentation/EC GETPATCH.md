@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ECARY | LITERAL |  | true | Input a patch number, ex. EC*2.0*28. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ECARY | LITERAL |  | true | Input a patch number, ex. EC*2.0*28. | 

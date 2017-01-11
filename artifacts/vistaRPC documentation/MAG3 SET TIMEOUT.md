@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGAPP | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | MAGTIME | LITERAL |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGAPP | LITERAL |  | true |  | 
+| MAGTIME | LITERAL |  | true |  | 

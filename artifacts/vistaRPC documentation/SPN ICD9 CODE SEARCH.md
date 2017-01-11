@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICNLST | LIST |  |  | Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...) | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | The admission starting date | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | The Admission ending date | 
-| vs:Input_Parameter-8994_02 | PATTYP | LITERAL |  |  | (1) Patients in SCI Registry only (2) All Patients | 
-| vs:Input_Parameter-8994_02 | SPNANS | LITERAL |  |  | (1) Range of Codes (2) Individual codes | 
-| vs:Input_Parameter-8994_02 | CODES | LIST |  |  | The list or range of ICD codes | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICNLST | LIST |  |  | Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...) | 
+| FDATE | LITERAL |  |  | The admission starting date | 
+| TDATE | LITERAL |  |  | The Admission ending date | 
+| PATTYP | LITERAL |  |  | (1) Patients in SCI Registry only (2) All Patients | 
+| SPNANS | LITERAL |  |  | (1) Range of Codes (2) Individual codes | 
+| CODES | LIST |  |  | The list or range of ICD codes | 

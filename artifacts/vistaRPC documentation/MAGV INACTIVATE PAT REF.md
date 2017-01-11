@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIEN | LITERAL | 10 | true | This is the internal entry number of the record to be inactivated on the IMAGING PATIENT REFERENCE File (#2005.6). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIEN | LITERAL | 10 | true | This is the internal entry number of the record to be inactivated on the IMAGING PATIENT REFERENCE File (#2005.6). | 

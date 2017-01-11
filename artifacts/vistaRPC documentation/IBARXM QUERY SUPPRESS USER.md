@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IBM | LITERAL | 7 | true | This is in fileman format the month/year for which the request is being made. | 
-| vs:Input_Parameter-8994_02 | IBICN | LITERAL | 40 | true | This is the patient's ICN for reference to any VistA database. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IBM | LITERAL | 7 | true | This is in fileman format the month/year for which the request is being made. | 
+| IBICN | LITERAL | 40 | true | This is the patient's ICN for reference to any VistA database. | 

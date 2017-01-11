@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REGIEN | LITERAL |  |  | The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1).  The tasks associated with the provided registry will be returned by the procere. By default ($G(REGIEN)'>0), all tasks are returned. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  |  | The TYPE parameter defines which tasks (1-Generic, 2-Report) are returnedby the procedure. See the description of the TYPE field (.02) of the RORTASK file (#798.8) for more details.  By default ($G(TYPE)'>0), all tasks are retrieved. | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  |  | A user IEN (DUZ) can be assigned to the USER parameter. Only tasksscheduled by this user are retrieved by the procedure. By default ($G(USER)'>0), it utilizes the current user's DUZ. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REGIEN | LITERAL |  |  | The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1).  The tasks associated with the provided registry will be returned by the procere. By default ($G(REGIEN)'>0), all tasks are returned. | 
+| TYPE | LITERAL |  |  | The TYPE parameter defines which tasks (1-Generic, 2-Report) are returnedby the procedure. See the description of the TYPE field (.02) of the RORTASK file (#798.8) for more details.  By default ($G(TYPE)'>0), all tasks are retrieved. | 
+| USER | LITERAL |  |  | A user IEN (DUZ) can be assigned to the USER parameter. Only tasksscheduled by this user are retrieved by the procedure. By default ($G(USER)'>0), it utilizes the current user's DUZ. | 

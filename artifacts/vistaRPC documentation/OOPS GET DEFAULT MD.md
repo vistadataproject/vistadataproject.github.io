@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This input value must be a valid IEN from the ASISTS 2260 file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | This input value must be a valid IEN from the ASISTS 2260 file. | 

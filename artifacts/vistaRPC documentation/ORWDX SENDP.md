@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | orwdev | LITERAL | 32 |  | chart device^label device^requisition device^work copy device All are pointers to the DEVICE file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| orwdev | LITERAL | 32 |  | chart device^label device^requisition device^work copy device All are pointers to the DEVICE file. | 

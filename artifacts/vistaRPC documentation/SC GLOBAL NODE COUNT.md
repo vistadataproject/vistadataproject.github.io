@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAMETERS | LIST |  | true | Contains the subscript that indicates the global root, the cross reference, and the value to order on in the global. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAMETERS | LIST |  | true | Contains the subscript that indicates the global root, the cross reference, and the value to order on in the global. | 

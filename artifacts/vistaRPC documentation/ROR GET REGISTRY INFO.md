@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REGISTRY | LITERAL |  | true | The REGISTRY parameter should contain either a registry IEN or a registry name. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REGISTRY | LITERAL |  | true | The REGISTRY parameter should contain either a registry IEN or a registry name. | 

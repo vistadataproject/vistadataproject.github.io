@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MENTAL HEALTH INSTRUMENT | LITERAL | 16 | true | Name of the mental health instrument | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MENTAL HEALTH INSTRUMENT | LITERAL | 16 | true | Name of the mental health instrument | 

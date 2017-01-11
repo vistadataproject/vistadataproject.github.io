@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBHDR | LITERAL |  | true | Contains the IEN or +1 up-arrow transaction.  See RPC description. | 
-| vs:Input_Parameter-8994_02 | PSBREC | LIST |  | true | See description. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBHDR | LITERAL |  | true | Contains the IEN or +1 up-arrow transaction.  See RPC description. | 
+| PSBREC | LIST |  | true | See description. | 

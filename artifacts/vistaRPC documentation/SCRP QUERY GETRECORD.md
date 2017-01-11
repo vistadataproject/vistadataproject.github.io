@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | QUERY ID | LITERAL | 20 | true | Internal entry number of the report query template definitionfrom file 404.95 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| QUERY ID | LITERAL | 20 | true | Internal entry number of the report query template definitionfrom file 404.95 | 

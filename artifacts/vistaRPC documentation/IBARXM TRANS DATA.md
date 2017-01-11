@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IBD | LITERAL |  | true | This is the data sent by the remote treating facility to be filled infile 354.71. | 
-| vs:Input_Parameter-8994_02 | IBICN | LITERAL |  | true | This is the patient's ICN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IBD | LITERAL |  | true | This is the data sent by the remote treating facility to be filled infile 354.71. | 
+| IBICN | LITERAL |  | true | This is the patient's ICN. | 

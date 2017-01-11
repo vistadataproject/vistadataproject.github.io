@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ISIMO | LITERAL |  | true | This determine if the order is an IMO order. | 
-| vs:Input_Parameter-8994_02 | ENCLOC | LITERAL |  | true | This passes the encounter location to the API. This is used for Admin Times. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ISIMO | LITERAL |  | true | This determine if the order is an IMO order. | 
+| ENCLOC | LITERAL |  | true | This passes the encounter location to the API. This is used for Admin Times. | 

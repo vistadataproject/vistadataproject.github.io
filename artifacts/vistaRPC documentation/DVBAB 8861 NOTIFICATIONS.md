@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 5 | true | IEN of the request. | 
-| vs:Input_Parameter-8994_02 | STAT | LITERAL | 9 | true | Status of Form 8861 request. This determines what message is sent and to whom. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 5 | true | IEN of the request. | 
+| STAT | LITERAL | 9 | true | Status of Form 8861 request. This determines what message is sent and to whom. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RES | LITERAL | 256 | true | CALL TO GET A BSE TOKEN FOR AUTHENTICATING REMOTE VISTA USER | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RES | LITERAL | 256 | true | CALL TO GET A BSE TOKEN FOR AUTHENTICATING REMOTE VISTA USER | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | null |  |  |  | No input parameter required. | 
-| vs:Input_Parameter-8994_02 | GROUP | LITERAL | 16 | true | This value should be either \GROUP\ or \ALL\ to differentiatebetween a Current Write Group Update and an All share update. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| null |  |  |  | No input parameter required. | 
+| GROUP | LITERAL | 16 | true | This value should be either \GROUP\ or \ALL\ to differentiatebetween a Current Write Group Update and an All share update. | 

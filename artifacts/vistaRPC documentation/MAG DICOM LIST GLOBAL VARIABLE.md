@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | WILD | LITERAL | 255 | true | The value of this parameter is a string that constitutesa wild-card for traversing a global variable. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe maximum number of name/value pairs to be returned. | 
-| vs:Input_Parameter-8994_02 | START | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe the point in the global variable traversal where thereport is to be resumed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| WILD | LITERAL | 255 | true | The value of this parameter is a string that constitutesa wild-card for traversing a global variable. | 
+| MAX | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe maximum number of name/value pairs to be returned. | 
+| START | LITERAL | 10 | true | The value of this parameter is an integer value that specifiesthe the point in the global variable traversal where thereport is to be resumed. | 

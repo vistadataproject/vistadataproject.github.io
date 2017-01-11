@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OLD USER | LITERAL | 30 | true | DUZ of Existing user that batch is assigned to currently. | 
-| vs:Input_Parameter-8994_02 | New User | LITERAL | 30 | true | DUZ of user to reassign batch to. | 
-| vs:Input_Parameter-8994_02 | Batch | LITERAL | 30 | true | Batch IEn to reassign | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OLD USER | LITERAL | 30 | true | DUZ of Existing user that batch is assigned to currently. | 
+| New User | LITERAL | 30 | true | DUZ of user to reassign batch to. | 
+| Batch | LITERAL | 30 | true | Batch IEn to reassign | 

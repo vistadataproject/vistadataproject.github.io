@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSNUM | LITERAL | 25 | true | Patient ID such as the patient SSN OR DFN OR ICN OR VIC/CAC | 
-| vs:Input_Parameter-8994_02 | VPSTYP | LITERAL | 7 | true | Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC | 
-| vs:Input_Parameter-8994_02 | VPSCAT | LIST | 20 | true | Input Format:  VPSCAT(SEQ#)=CATEGORY;FROMDATE:THROUGH DATEExample input parameter :    VPSCAT(1)=1;3140101:3141231 <- returns Appointments start from 1/1/2014 through 12/31/2014   VPSCAT(2)=2;3140601:3140630 <- returns Lab Orders start from 6/1/2014 through 6/30/2014   VPSCAT(3)=3                 <- returns all consults   VPSCAT(4)=6                 <- returns Patient Demographics Valid Categories:   1 - Appointment (With Date Range option)   2 - Lab Orders (With Date Range option)   3 - Consults   4 - Radiology (With Date Range option)   5 - Problem   6 - Patient demographics | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSNUM | LITERAL | 25 | true | Patient ID such as the patient SSN OR DFN OR ICN OR VIC/CAC | 
+| VPSTYP | LITERAL | 7 | true | Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC | 
+| VPSCAT | LIST | 20 | true | Input Format:  VPSCAT(SEQ#)=CATEGORY;FROMDATE:THROUGH DATEExample input parameter :    VPSCAT(1)=1;3140101:3141231 <- returns Appointments start from 1/1/2014 through 12/31/2014   VPSCAT(2)=2;3140601:3140630 <- returns Lab Orders start from 6/1/2014 through 6/30/2014   VPSCAT(3)=3                 <- returns all consults   VPSCAT(4)=6                 <- returns Patient Demographics Valid Categories:   1 - Appointment (With Date Range option)   2 - Lab Orders (With Date Range option)   3 - Consults   4 - Radiology (With Date Range option)   5 - Problem   6 - Patient demographics | 

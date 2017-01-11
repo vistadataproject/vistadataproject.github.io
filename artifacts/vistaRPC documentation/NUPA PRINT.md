@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ZTIO | LITERAL |  | true | Printer to print to. | 
-| vs:Input_Parameter-8994_02 | ARRAY | LIST |  | true | Array of data to print, in format  ARRAY(1), ARRAY(2), etc. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ZTIO | LITERAL |  | true | Printer to print to. | 
+| ARRAY | LIST |  | true | Array of data to print, in format  ARRAY(1), ARRAY(2), etc. | 

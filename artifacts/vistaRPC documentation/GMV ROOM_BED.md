@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMRWARD | LITERAL | 30 | true | GMRWARD is a MAS ward name from the Ward Location file (#42). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMRWARD | LITERAL | 30 | true | GMRWARD is a MAS ward name from the Ward Location file (#42). | 

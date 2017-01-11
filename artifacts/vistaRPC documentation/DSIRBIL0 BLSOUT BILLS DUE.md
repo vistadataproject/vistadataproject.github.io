@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | This is a pointer to the ROI Instance file (19620).  It can point to any request that is requested by the desired requestor. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 20 | true | This is a pointer to the ROI Instance file (19620).  It can point to any request that is requested by the desired requestor. | 

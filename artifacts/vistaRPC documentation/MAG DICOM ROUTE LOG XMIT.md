@@ -17,12 +17,12 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | QUEUE | LITERAL | 20 | true | The value of this parameter is a pointer to ^MAGQUEUE(2006.035).This pointer identifies the queue-entry that caused the transmission.The value of this pointer will be used to retrieve the time-stampwhen the entry was made into the queue and the internal entry numberof the image involved. | 
-| vs:Input_Parameter-8994_02 | DEST | LITERAL | 64 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imageswere to be transmitted. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL | 30 | true | The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\. | 
-| vs:Input_Parameter-8994_02 | FILNAM | LITERAL | 200 | true | The value of this parameter is a string.This string value represents the name of the image file at its(remote) location. | 
-| vs:Input_Parameter-8994_02 | XMIT | LITERAL | 20 | true | The value of this parameter is a (FileMan-formatted) date/time value.This value represents the time-stamp for the moment when the transmissionof the image file started. | 
-| vs:Input_Parameter-8994_02 | MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| QUEUE | LITERAL | 20 | true | The value of this parameter is a pointer to ^MAGQUEUE(2006.035).This pointer identifies the queue-entry that caused the transmission.The value of this pointer will be used to retrieve the time-stampwhen the entry was made into the queue and the internal entry numberof the image involved. | 
+| DEST | LITERAL | 64 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imageswere to be transmitted. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| STATUS | LITERAL | 30 | true | The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\. | 
+| FILNAM | LITERAL | 200 | true | The value of this parameter is a string.This string value represents the name of the image file at its(remote) location. | 
+| XMIT | LITERAL | 20 | true | The value of this parameter is a (FileMan-formatted) date/time value.This value represents the time-stamp for the moment when the transmissionof the image file started. | 
+| MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 

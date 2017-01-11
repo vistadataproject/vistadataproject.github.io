@@ -17,13 +17,13 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  |  | This is the type of work item.  Work item types are stored in theWORKLIST file (#2006.9412). | 
-| vs:Input_Parameter-8994_02 | SUBTYPE | LITERAL |  |  | This is the subtype of the work item. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL |  |  | This is the current status of the work item. | 
-| vs:Input_Parameter-8994_02 | PLACEID | LITERAL |  |  | This is a place ID of a work item.  The place ID is an entry in theINSTITUTION file (#4). | 
-| vs:Input_Parameter-8994_02 | PRIORITY | LITERAL |  |  | This is the numeric priority given to a work item. | 
-| vs:Input_Parameter-8994_02 | TAGS | LIST |  |  | This is an array of tag names and values. | 
-| vs:Input_Parameter-8994_02 | STOPTAG | LITERAL |  |  | If this parameter is set then the tag list may be truncated. If a tagvalue matching the parameter value is returned then no more tags willbe returned. | 
-| vs:Input_Parameter-8994_02 | MAXROWS | LITERAL |  |  | This parameter determines the number of work items to return.  If thisparameter is not set all matching work items will be sent.  If this parameteris defined it will determine the maximum number of work items to return | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL |  |  | This is the type of work item.  Work item types are stored in theWORKLIST file (#2006.9412). | 
+| SUBTYPE | LITERAL |  |  | This is the subtype of the work item. | 
+| STATUS | LITERAL |  |  | This is the current status of the work item. | 
+| PLACEID | LITERAL |  |  | This is a place ID of a work item.  The place ID is an entry in theINSTITUTION file (#4). | 
+| PRIORITY | LITERAL |  |  | This is the numeric priority given to a work item. | 
+| TAGS | LIST |  |  | This is an array of tag names and values. | 
+| STOPTAG | LITERAL |  |  | If this parameter is set then the tag list may be truncated. If a tagvalue matching the parameter value is returned then no more tags willbe returned. | 
+| MAXROWS | LITERAL |  |  | This parameter determines the number of work items to return.  If thisparameter is not set all matching work items will be sent.  If this parameteris defined it will determine the maximum number of work items to return | 

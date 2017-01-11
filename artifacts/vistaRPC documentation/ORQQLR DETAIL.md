@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL | 16 | true | Patient identifier (DFN) from Patient File [#2] | 
-| vs:Input_Parameter-8994_02 | ORDER NUMBER | LITERAL | 16 | true | OE/RR order number from the Orders file [#100]. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL | 16 | true | Patient identifier (DFN) from Patient File [#2] | 
+| ORDER NUMBER | LITERAL | 16 | true | OE/RR order number from the Orders file [#100]. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ROI | LITERAL | 10 | true | INPUT PARAMETER   ROI = REQUEST IEN | 
-| vs:Input_Parameter-8994_02 | DTLS | LIST | 61 | true |  INPUT PARAMETER    DTLS = LAB LIST DETAILS - AN ARRAY OF LAB LIST TITLES       DTLS FORMAT:  #^LAB_TITLE | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ROI | LITERAL | 10 | true | INPUT PARAMETER   ROI = REQUEST IEN | 
+| DTLS | LIST | 61 | true |  INPUT PARAMETER    DTLS = LAB LIST DETAILS - AN ARRAY OF LAB LIST TITLES       DTLS FORMAT:  #^LAB_TITLE | 

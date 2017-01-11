@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ESIG | LITERAL | 20 | true | This is the encrypted electronic signature entered by the user on theImaging window. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ESIG | LITERAL | 20 | true | This is the encrypted electronic signature entered by the user on theImaging window. | 

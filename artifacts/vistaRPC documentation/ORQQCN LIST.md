@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL | 16 | true | Patient DFN from File #2 (Patient File.) | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 16 |  | Optional start date to begin the search. | 
-| vs:Input_Parameter-8994_02 | STOP DATE | LITERAL | 16 |  | Optional stop date to end the search. | 
-| vs:Input_Parameter-8994_02 | SERVICE | LITERAL | 16 |  | Optional consulting service from the Request Service file (#123.5). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL | 16 | true | Patient DFN from File #2 (Patient File.) | 
+| START DATE | LITERAL | 16 |  | Optional start date to begin the search. | 
+| STOP DATE | LITERAL | 16 |  | Optional stop date to end the search. | 
+| SERVICE | LITERAL | 16 |  | Optional consulting service from the Request Service file (#123.5). | 

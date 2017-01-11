@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SOPIEN | LITERAL |  |  | The IEN of the IMAGE SOP INSTANCE file (#2005.64) to be used in the RPC function. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SOPIEN | LITERAL |  |  | The IEN of the IMAGE SOP INSTANCE file (#2005.64) to be used in the RPC function. | 

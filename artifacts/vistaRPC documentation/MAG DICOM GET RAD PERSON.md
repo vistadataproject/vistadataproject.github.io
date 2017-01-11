@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLASS | LITERAL | 30 | true | This is the RAD/NUC classification used to correlate matching entries.Input value: T (technologist), R (resident), S (staff), or C (clerk).  | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 30 | true | This is the name to be used in the lookup process. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLASS | LITERAL | 30 | true | This is the RAD/NUC classification used to correlate matching entries.Input value: T (technologist), R (resident), S (staff), or C (clerk).  | 
+| NAME | LITERAL | 30 | true | This is the name to be used in the lookup process. | 

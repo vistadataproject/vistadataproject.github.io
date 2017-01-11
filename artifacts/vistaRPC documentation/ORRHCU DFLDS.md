@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYP | LITERAL |  | true | Identifies the types of display fields to return.O=Orders, D=Documents, P=Patient, and V=Visits | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYP | LITERAL |  | true | Identifies the types of display fields to return.O=Orders, D=Documents, P=Patient, and V=Visits | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 245 | true | Global to list.  This can be an entire global (^DPT) or subscript(^DPT(25,). | 
-| vs:Input_Parameter-8994_02 | PARAM2 | LITERAL | 245 | true | Starting global node.  If this is a continuation of a global list, thenthis will be the starting point.  If the call is for the first time, thenthis should be set to null (\\). | 
-| vs:Input_Parameter-8994_02 | PARAM3 | LITERAL | 245 | true | Number of lines to fill before quiting. | 
-| vs:Input_Parameter-8994_02 | LINE LENGTH | LITERAL | 10 | true | Lenght of line before line-break. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM1 | LITERAL | 245 | true | Global to list.  This can be an entire global (^DPT) or subscript(^DPT(25,). | 
+| PARAM2 | LITERAL | 245 | true | Starting global node.  If this is a continuation of a global list, thenthis will be the starting point.  If the call is for the first time, thenthis should be set to null (\\). | 
+| PARAM3 | LITERAL | 245 | true | Number of lines to fill before quiting. | 
+| LINE LENGTH | LITERAL | 10 | true | Lenght of line before line-break. | 

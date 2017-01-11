@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HANDLE | LITERAL | 30 | true | The HANDLE from the XWB REMOTE RPC call. It is used to link the call tothe data. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HANDLE | LITERAL | 30 | true | The HANDLE from the XWB REMOTE RPC call. It is used to link the call tothe data. | 

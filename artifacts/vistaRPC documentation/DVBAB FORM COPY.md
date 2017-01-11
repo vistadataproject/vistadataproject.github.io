@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DVBAB1 | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | DVBAB2 | LITERAL |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DVBAB1 | LITERAL |  | true |  | 
+| DVBAB2 | LITERAL |  | true |  | 

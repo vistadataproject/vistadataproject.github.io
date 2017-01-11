@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | YSASDA | LITERAL | 30 | true | YSASDA is a pointer to the Addiction Severity Index file (#604). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| YSASDA | LITERAL | 30 | true | YSASDA is a pointer to the Addiction Severity Index file (#604). | 

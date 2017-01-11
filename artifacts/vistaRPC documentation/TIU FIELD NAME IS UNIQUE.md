@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL |  | true | Template Field Name. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  |  | Optional IEN of existing field | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL |  | true | Template Field Name. | 
+| IEN | LITERAL |  |  | Optional IEN of existing field | 

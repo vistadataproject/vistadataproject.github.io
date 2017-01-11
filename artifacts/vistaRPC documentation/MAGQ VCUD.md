@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Pointer | LITERAL | 256 | true | This is the network location file IEN. | 
-| vs:Input_Parameter-8994_02 | Extension | LITERAL | 3 | true | This is the image file extension of the file whose network reference is inneed of updating. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 256 | true | This is the IMAGE file (#2005) internal entry number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Pointer | LITERAL | 256 | true | This is the network location file IEN. | 
+| Extension | LITERAL | 3 | true | This is the image file extension of the file whose network reference is inneed of updating. | 
+| IEN | LITERAL | 256 | true | This is the IMAGE file (#2005) internal entry number. | 

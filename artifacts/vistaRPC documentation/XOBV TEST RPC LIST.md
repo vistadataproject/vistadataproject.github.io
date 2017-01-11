@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PREFIX | LITERAL | 20 | true | This parameter indicates the starting characters for the RPCs desired. (ie. the namespace prefix) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PREFIX | LITERAL | 20 | true | This parameter indicates the starting characters for the RPCs desired. (ie. the namespace prefix) | 

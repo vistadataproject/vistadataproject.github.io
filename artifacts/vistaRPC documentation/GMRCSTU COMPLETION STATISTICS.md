@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SERVICE | REFERENCE |  | true | The service or grouper to create the list for.  The default if none ispassed is \1\ for ALL SERVICES. | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 7 | true | This is the start date range for the report or \ALL\ for all dates.  Thedefault if none is passed is \ALL\ and the END DATE will not be used. | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 7 | true | This is the ending date range for the report.  Not used if the START DATEis \ALL\ for all dates. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SERVICE | REFERENCE |  | true | The service or grouper to create the list for.  The default if none ispassed is \1\ for ALL SERVICES. | 
+| START DATE | LITERAL | 7 | true | This is the start date range for the report or \ALL\ for all dates.  Thedefault if none is passed is \ALL\ and the END DATE will not be used. | 
+| END DATE | LITERAL | 7 | true | This is the ending date range for the report.  Not used if the START DATEis \ALL\ for all dates. | 

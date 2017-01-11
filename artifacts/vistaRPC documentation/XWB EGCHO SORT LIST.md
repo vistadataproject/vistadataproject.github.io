@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIRECTION | LITERAL | 2 | true | The string LO or HI | 
-| vs:Input_Parameter-8994_02 | ARRAY | LIST |  |  | The array of numbers.  Pass using . syntaxX(12)=\\,X(23)=\\,... for example | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIRECTION | LITERAL | 2 | true | The string LO or HI | 
+| ARRAY | LIST |  |  | The array of numbers.  Pass using . syntaxX(12)=\\,X(23)=\\,... for example | 

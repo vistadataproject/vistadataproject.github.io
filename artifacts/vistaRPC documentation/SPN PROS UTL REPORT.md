@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICNLIST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN...) | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | Date to start collection from: (mm/dd/yyyy) | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | Date to end collection: (mm/dd/yyyy)   | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICNLIST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN...) | 
+| FDATE | LITERAL |  |  | Date to start collection from: (mm/dd/yyyy) | 
+| TDATE | LITERAL |  |  | Date to end collection: (mm/dd/yyyy)   | 

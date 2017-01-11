@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFNLST | LIST |  |  | Patients DFN in list format (DFN^DFN^DFN^DFN^DFN...) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFNLST | LIST |  |  | Patients DFN in list format (DFN^DFN^DFN^DFN^DFN...) | 

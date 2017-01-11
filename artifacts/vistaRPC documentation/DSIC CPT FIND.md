@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VAL | LITERAL | 50 | true | This is the lookup value for getting a list of CPT codes | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 14 | true | This date is optional.  Default to TODAY.  Only CPT codes that were active as of this date will be included in the return list. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VAL | LITERAL | 50 | true | This is the lookup value for getting a list of CPT codes | 
+| DATE | LITERAL | 14 | true | This date is optional.  Default to TODAY.  Only CPT codes that were active as of this date will be included in the return list. | 

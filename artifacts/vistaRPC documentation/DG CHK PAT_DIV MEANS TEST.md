@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | PATIENT IEN | 
-| vs:Input_Parameter-8994_02 | DUZ2 | LITERAL |  | true | Institution file pointer | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | PATIENT IEN | 
+| DUZ2 | LITERAL |  | true | Institution file pointer | 

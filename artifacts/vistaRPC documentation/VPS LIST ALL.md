@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL | 30 | true | Contains the patient's name or contains the patient's file #2 IEN andname. Name part of the input may be a partial or full name.  Examples:  \DOE,J\  OR \99999^DOE,J\. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL | 2 | true | The value of DIR can be 1 or -1.  This parameter determines the $ORDER search direction, 1 is ascending and -1 is descending. | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL | 30 | true | FORM is the 'Start With' or 'List From' input parametr. This is **NOT** a 'Prefixed by' input parameter.This is a required field and can have two different formats. 1. FORM  = PATIENT NAME. This format will return a batch of 44 patient records in patient name order start with PATIENT NAME. This is *NOT* a 'Prefixed by' input parameter. Any records in that batch including patient names *not* prefixed by the FORM will be included. 2. FORM = LAST IEN^LAST PATIENT NAME. This format is to provide a caller to get the next batch of 44 records. The list returned will NOT include the LAST PATIENT NAME. Commonly, RPC caller will set LAST IEN^LAST PATIENT NAME with the last record returned in the previous RPC call. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL | 2 | true | Input parameter DIR determines the order of the output array returned. Thevalue is either 1 (ascending order = default value) or -1 (descending order). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROM | LITERAL | 30 | true | Contains the patient's name or contains the patient's file #2 IEN andname. Name part of the input may be a partial or full name.  Examples:  \DOE,J\  OR \99999^DOE,J\. | 
+| DIR | LITERAL | 2 | true | The value of DIR can be 1 or -1.  This parameter determines the $ORDER search direction, 1 is ascending and -1 is descending. | 
+| FROM | LITERAL | 30 | true | FORM is the 'Start With' or 'List From' input parametr. This is **NOT** a 'Prefixed by' input parameter.This is a required field and can have two different formats. 1. FORM  = PATIENT NAME. This format will return a batch of 44 patient records in patient name order start with PATIENT NAME. This is *NOT* a 'Prefixed by' input parameter. Any records in that batch including patient names *not* prefixed by the FORM will be included. 2. FORM = LAST IEN^LAST PATIENT NAME. This format is to provide a caller to get the next batch of 44 records. The list returned will NOT include the LAST PATIENT NAME. Commonly, RPC caller will set LAST IEN^LAST PATIENT NAME with the last record returned in the previous RPC call. | 
+| DIR | LITERAL | 2 | true | Input parameter DIR determines the order of the output array returned. Thevalue is either 1 (ascending order = default value) or -1 (descending order). | 

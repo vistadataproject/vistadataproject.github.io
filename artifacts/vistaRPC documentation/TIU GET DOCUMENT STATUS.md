@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUIEN | LITERAL |  | true | TIU DOCUMENT IEN (8925) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUIEN | LITERAL |  | true | TIU DOCUMENT IEN (8925) | 

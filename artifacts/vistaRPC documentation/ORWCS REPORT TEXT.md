@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
-| vs:Input_Parameter-8994_02 | CONSULT ID | LITERAL | 20 | true | Consult ID.Format: Internal entry number to REQUEST/CONSULTATION file (#123)Example: 1000 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
+| CONSULT ID | LITERAL | 20 | true | Consult ID.Format: Internal entry number to REQUEST/CONSULTATION file (#123)Example: 1000 | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL |  |  | This is the date to be validated and reformatted. | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL |  |  | This is a control flag for assuring a valid date. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATE | LITERAL |  |  | This is the date to be validated and reformatted. | 
+| FLAG | LITERAL |  |  | This is a control flag for assuring a valid date. | 

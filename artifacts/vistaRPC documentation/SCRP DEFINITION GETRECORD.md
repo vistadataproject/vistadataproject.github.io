@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REPORT ENTRY | LITERAL | 20 | true | Internal entry number of the report definition from file 404.92. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REPORT ENTRY | LITERAL | 20 | true | Internal entry number of the report definition from file 404.92. | 

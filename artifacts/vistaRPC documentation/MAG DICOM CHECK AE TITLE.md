@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TITLE | LITERAL | 16 | true | The value of this parameter is a string. This string isconstrained by the definition in the DICOM Standardfor the \title\ of an Application Entity, that is: non-emptyand at most 16 characters in length. | 
-| vs:Input_Parameter-8994_02 | SERVICE | LITERAL | 20 | true | The value of this parameter is a string. This stringidentifies a DICOM DIMSE Service.The procedure will validate that the specified ApplicationEntity is permitted to perform the service specified inthis parameter. | 
-| vs:Input_Parameter-8994_02 | ROLE | LITERAL | 3 | true | The value of this parameter is a string. This string shouldbe equal to either \SCU\ (Service Class User) or\SCP\ (Service Class Provider).The procedure will validate that the specified ApplicationEntity is permitted to operate in the specified role. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 6 | true | The value of this parameter is a string.  This string should be equal to a value from the INSTITUTION File (#4).  This is needed to return the appropriate AETitle. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TITLE | LITERAL | 16 | true | The value of this parameter is a string. This string isconstrained by the definition in the DICOM Standardfor the \title\ of an Application Entity, that is: non-emptyand at most 16 characters in length. | 
+| SERVICE | LITERAL | 20 | true | The value of this parameter is a string. This stringidentifies a DICOM DIMSE Service.The procedure will validate that the specified ApplicationEntity is permitted to perform the service specified inthis parameter. | 
+| ROLE | LITERAL | 3 | true | The value of this parameter is a string. This string shouldbe equal to either \SCU\ (Service Class User) or\SCP\ (Service Class Provider).The procedure will validate that the specified ApplicationEntity is permitted to operate in the specified role. | 
+| LOCATION | LITERAL | 6 | true | The value of this parameter is a string.  This string should be equal to a value from the INSTITUTION File (#4).  This is needed to return the appropriate AETitle. | 

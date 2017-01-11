@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VNAME | LITERAL | 50 | true | This is the standard VistA person name in the format Last,First M | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VNAME | LITERAL | 50 | true | This is the standard VistA person name in the format Last,First M | 

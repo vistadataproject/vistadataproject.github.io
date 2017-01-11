@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Lock/Unlock Flag | LITERAL | 1 | true | Lock/Unlock Flag | 
-| vs:Input_Parameter-8994_02 | AP Section | LITERAL | 2 | true | AP Section | 
-| vs:Input_Parameter-8994_02 | Year | LITERAL | 4 | true | Year | 
-| vs:Input_Parameter-8994_02 | Access Number | LITERAL | 5 | true | Access Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Lock/Unlock Flag | LITERAL | 1 | true | Lock/Unlock Flag | 
+| AP Section | LITERAL | 2 | true | AP Section | 
+| Year | LITERAL | 4 | true | Year | 
+| Access Number | LITERAL | 5 | true | Access Number | 

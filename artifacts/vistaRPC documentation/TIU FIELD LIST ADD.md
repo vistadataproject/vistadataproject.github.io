@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XMLSET | LIST |  |  | Input in the format of XMLSET(1)=\<FIELD NAME=\12345\>\ | 
-| vs:Input_Parameter-8994_02 | XMLIN | LIST |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XMLSET | LIST |  |  | Input in the format of XMLSET(1)=\<FIELD NAME=\12345\>\ | 
+| XMLIN | LIST |  |  |  | 

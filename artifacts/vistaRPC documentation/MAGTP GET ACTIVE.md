@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 1 | true | FLAG = 0: Unreleased / 1: Released | 
-| vs:Input_Parameter-8994_02 | DAYS | LITERAL | 7 | true | Show verified reports up to DAYS (# of days) ago | 
-| vs:Input_Parameter-8994_02 | STAT | LITERAL | 5 | true | If non null, display the case if it has aconsultation for an interpreting station equal to the input. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FLAG | LITERAL | 1 | true | FLAG = 0: Unreleased / 1: Released | 
+| DAYS | LITERAL | 7 | true | Show verified reports up to DAYS (# of days) ago | 
+| STAT | LITERAL | 5 | true | If non null, display the case if it has aconsultation for an interpreting station equal to the input. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVDATA | LITERAL | 60 | true | GMVDATA consists of 4 pieces of data:  piece1^piece2^piece3^piece4  where piece1 = File 2 IEN (i.e., DFN)       piece2 = Start date/time for search (FileMan internal format)       piece3 = End date/time for search (FileMan internal format)       piece4 = 0 (zero) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVDATA | LITERAL | 60 | true | GMVDATA consists of 4 pieces of data:  piece1^piece2^piece3^piece4  where piece1 = File 2 IEN (i.e., DFN)       piece2 = Start date/time for search (FileMan internal format)       piece3 = End date/time for search (FileMan internal format)       piece4 = 0 (zero) | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORIO | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | HEADER | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | REPORT | WORD PROCESSING |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORIO | LITERAL |  | true |  | 
+| DFN | LITERAL |  |  |  | 
+| HEADER | LITERAL |  |  |  | 
+| REPORT | WORD PROCESSING |  |  |  | 

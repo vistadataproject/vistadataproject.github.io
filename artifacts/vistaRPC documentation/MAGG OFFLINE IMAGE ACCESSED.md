@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGFILE | LITERAL | 90 | true | The full path and file name of the Image accessed. | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 30 | true | The Internal entry number in file MAG(2005.   | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGFILE | LITERAL | 90 | true | The full path and file name of the Image accessed. | 
+| MAGIEN | LITERAL | 30 | true | The Internal entry number in file MAG(2005.   | 

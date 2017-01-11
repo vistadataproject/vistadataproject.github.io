@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 10 | true | This is the internal entry number in file 228.1 to be deleted | 
-| vs:Input_Parameter-8994_02 | REASON | LITERAL | 80 | true | You can provide a reason as to why this record was deleted. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 10 | true | This is the internal entry number in file 228.1 to be deleted | 
+| REASON | LITERAL | 80 | true | You can provide a reason as to why this record was deleted. | 

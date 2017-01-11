@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGARRAY | LIST |  | true | This is the image data list in the formA(i)=field number^field value   orA(i)=action code^value | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGARRAY | LIST |  | true | This is the image data list in the formA(i)=field number^field value   orA(i)=action code^value | 

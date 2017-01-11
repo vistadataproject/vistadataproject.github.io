@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIVISIONS | LITERAL | 999 | true | This is a variable '^' delimited containing selected Divisions from whichthe user may see data. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIVISIONS | LITERAL | 999 | true | This is a variable '^' delimited containing selected Divisions from whichthe user may see data. | 

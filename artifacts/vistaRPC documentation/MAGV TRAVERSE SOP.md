@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | This is the internal entry number of the entry on the IMAGE SERIES File (#2005.63) whose child entries on the IMAGE SOP INSTANCE File (#2005.64) are to be traversed. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL | 10 | true | This is the direction of traversal:  FIRST, NEXT, PREV, or LAST. | 
-| vs:Input_Parameter-8994_02 | CHILDIEN | LITERAL | 10 |  | This is the internal entry number of the entry on the IMAGE SOP INSTANCE File (#2005.64) from which to proceed.  It should be specified only forthe NEXT and PREV traversal commands. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 20 | true | This is the internal entry number of the entry on the IMAGE SERIES File (#2005.63) whose child entries on the IMAGE SOP INSTANCE File (#2005.64) are to be traversed. | 
+| DIR | LITERAL | 10 | true | This is the direction of traversal:  FIRST, NEXT, PREV, or LAST. | 
+| CHILDIEN | LITERAL | 10 |  | This is the internal entry number of the entry on the IMAGE SOP INSTANCE File (#2005.64) from which to proceed.  It should be specified only forthe NEXT and PREV traversal commands. | 

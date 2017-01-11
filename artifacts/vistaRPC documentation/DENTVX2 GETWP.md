@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ENT | LITERAL | 30 | true | Entity Name   SYS = System | 
-| vs:Input_Parameter-8994_02 | PAR | LITERAL | 30 | true | The name of the stored parameter from which you wish to obtain word processing fields. | 
-| vs:Input_Parameter-8994_02 | INST | LITERAL | 30 | true | This is the instance of the parameter you wish to return. If no value is passed, it will default to 1. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ENT | LITERAL | 30 | true | Entity Name   SYS = System | 
+| PAR | LITERAL | 30 | true | The name of the stored parameter from which you wish to obtain word processing fields. | 
+| INST | LITERAL | 30 | true | This is the instance of the parameter you wish to return. If no value is passed, it will default to 1. | 

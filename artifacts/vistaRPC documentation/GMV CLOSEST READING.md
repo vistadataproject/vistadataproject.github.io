@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVDFN | LITERAL | 12 | true | A pointer to the Patient (#2) file (i.e., DFN). | 
-| vs:Input_Parameter-8994_02 | GMVDT | LITERAL | 14 | true | The date/time to search from. The default is NOW. | 
-| vs:Input_Parameter-8994_02 | GMVT | LITERAL | 5 | true | The vital type abbreviation as it appears in FILE 120.51, Field 1 (e.g., WT). | 
-| vs:Input_Parameter-8994_02 | GMVFLAG | LITERAL | 1 | true | A flag to indicate if the search should look before or after the date/timespecified in the GMVDT value where 1 indicates before, 2 indicates afterand 0 indicates either direction. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVDFN | LITERAL | 12 | true | A pointer to the Patient (#2) file (i.e., DFN). | 
+| GMVDT | LITERAL | 14 | true | The date/time to search from. The default is NOW. | 
+| GMVT | LITERAL | 5 | true | The vital type abbreviation as it appears in FILE 120.51, Field 1 (e.g., WT). | 
+| GMVFLAG | LITERAL | 1 | true | A flag to indicate if the search should look before or after the date/timespecified in the GMVDT value where 1 indicates before, 2 indicates afterand 0 indicates either direction. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the record number of the document in the TIU DOCUMENT FILE(#8925). | 
-| vs:Input_Parameter-8994_02 | TIUTYP | LITERAL |  | true | This is the record number of the Document Definition in the TIU DOCUMENTDEFINITION FILE (#8925.1).  e.g., TIUTYP=3 corresponds to the ClassProgress Notes, etc. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This is the record number of the document in the TIU DOCUMENT FILE(#8925). | 
+| TIUTYP | LITERAL |  | true | This is the record number of the Document Definition in the TIU DOCUMENTDEFINITION FILE (#8925.1).  e.g., TIUTYP=3 corresponds to the ClassProgress Notes, etc. | 

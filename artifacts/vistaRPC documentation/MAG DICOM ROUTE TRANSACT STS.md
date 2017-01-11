@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TRANSID | LITERAL | 30 | true | The value of this parameter is a string that uniquely definesa transaction in the routing queue. A transaction in this contextis a number of files that was queued up as a group. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TRANSID | LITERAL | 30 | true | The value of this parameter is a string that uniquely definesa transaction in the routing queue. A transaction in this contextis a number of files that was queued up as a group. | 

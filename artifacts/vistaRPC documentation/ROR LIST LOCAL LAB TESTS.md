@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
-| vs:Input_Parameter-8994_02 | GROUP | LITERAL |  |  | If this parameter is defined and not zero, it should contain a valid codeof the Lab Group. In this case, only the tests associated with this groupwill be returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
+| GROUP | LITERAL |  |  | If this parameter is defined and not zero, it should contain a valid codeof the Lab Group. In this case, only the tests associated with this groupwill be returned. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ROI INSTANCE NUMBER | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | STATUS CODE | LITERAL | 1 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ROI INSTANCE NUMBER | LITERAL |  | true |  | 
+| STATUS CODE | LITERAL | 1 | true |  | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 15 | true | This is a patient's ICN value (either local or national).national or local ICN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL | 15 | true | This is a patient's ICN value (either local or national).national or local ICN. | 

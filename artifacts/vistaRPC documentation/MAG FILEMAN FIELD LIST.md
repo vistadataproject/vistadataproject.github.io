@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
-| vs:Input_Parameter-8994_02 | ORDER | LITERAL | 1 | true | This is the desired return order for the field list:  either A for alpha or N for numeric. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
+| ORDER | LITERAL | 1 | true | This is the desired return order for the field list:  either A for alpha or N for numeric. | 

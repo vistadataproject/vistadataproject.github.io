@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XDUZ | LITERAL | 1 | true | This is a pointer to the NEW PERSON file. | 
-| vs:Input_Parameter-8994_02 | RDV | LITERAL | 1 | true | This is a Boolean flag (1 or 0) indicating whether or not remote data view (or visitors) should be allowed as a provider. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XDUZ | LITERAL | 1 | true | This is a pointer to the NEW PERSON file. | 
+| RDV | LITERAL | 1 | true | This is a Boolean flag (1 or 0) indicating whether or not remote data view (or visitors) should be allowed as a provider. | 

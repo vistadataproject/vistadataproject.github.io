@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RESULTS | LITERAL |  | true | Results of inquiry, includes top record and sub record status and IEN. | 
-| vs:Input_Parameter-8994_02 | PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RESULTS | LITERAL |  | true | Results of inquiry, includes top record and sub record status and IEN. | 
+| PTDFN | LITERAL | 50 | true | Patients internal entry number. | 

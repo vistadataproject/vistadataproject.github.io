@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TAG | LITERAL |  | true | The value of the TAG field for an entry in the CPRS QUERY DEFINITION file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TAG | LITERAL |  | true | The value of the TAG field for an entry in the CPRS QUERY DEFINITION file. | 

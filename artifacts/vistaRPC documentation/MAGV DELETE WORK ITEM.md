@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ITEMID | LITERAL |  |  | This is the item ID that uniquely identifies the work item to be deleted. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ITEMID | LITERAL |  |  | This is the item ID that uniquely identifies the work item to be deleted. | 

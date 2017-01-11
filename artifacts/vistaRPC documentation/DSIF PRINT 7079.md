@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 30 | true |  | 
-| vs:Input_Parameter-8994_02 | AUTHIEN | LITERAL | 30 | true |  | 
-| vs:Input_Parameter-8994_02 | DEVICE | LITERAL | 80 | true | Pass in the VistA device name used to print the 7079. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 30 | true |  | 
+| AUTHIEN | LITERAL | 30 | true |  | 
+| DEVICE | LITERAL | 80 | true | Pass in the VistA device name used to print the 7079. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 30 | true | The value of this parameter is a string that indicatesthe type of information that is requested:  \O1\:   Next or Previous report pointer at highest level  \O2\:   Next pointer at deeper level  \G1\:   Data record at highest level  \G2\:   Data record at deeper level | 
-| vs:Input_Parameter-8994_02 | D0 | LITERAL | 30 | true | The value of this parameter is a numeric value that identifiesthe current record in the Radiology Report table. | 
-| vs:Input_Parameter-8994_02 | F | LITERAL | 30 | true | If the value of the first input parameter is equal to \O1\,the value of this parameter is either -1 or +1, indicatingthe traversal direction through the table.For the other values of the first input parameter, the valueis the fixed subscript between the highest level entry numberand the next level internal entry number. | 
-| vs:Input_Parameter-8994_02 | D1 | LITERAL | 30 | true | The value of this parameter is the second-level FileMan internalentry number into the Radiology Report table. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL | 30 | true | The value of this parameter is a string that indicatesthe type of information that is requested:  \O1\:   Next or Previous report pointer at highest level  \O2\:   Next pointer at deeper level  \G1\:   Data record at highest level  \G2\:   Data record at deeper level | 
+| D0 | LITERAL | 30 | true | The value of this parameter is a numeric value that identifiesthe current record in the Radiology Report table. | 
+| F | LITERAL | 30 | true | If the value of the first input parameter is equal to \O1\,the value of this parameter is either -1 or +1, indicatingthe traversal direction through the table.For the other values of the first input parameter, the valueis the fixed subscript between the highest level entry numberand the next level internal entry number. | 
+| D1 | LITERAL | 30 | true | The value of this parameter is the second-level FileMan internalentry number into the Radiology Report table. | 

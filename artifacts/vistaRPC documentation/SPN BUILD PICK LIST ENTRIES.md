@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  | true | The value for this parameter must be either CLINIC, PROS, NDC, or LAB. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL |  | true | The value for this parameter must be either CLINIC, PROS, NDC, or LAB. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STDT | LITERAL |  |  | The STDT parameter defines the start date for the search of the events. Bydefault (if $G(STDT)'>0), the search starts from the earliest record ofthe ROR LOG file. | 
-| vs:Input_Parameter-8994_02 | ENDT | LITERAL |  |  | The ENDT parameter defines the end date for the search of the events. Bydefault (if $G(ENDT)'>0), the search continues to the last record of theROR LOG file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STDT | LITERAL |  |  | The STDT parameter defines the start date for the search of the events. Bydefault (if $G(STDT)'>0), the search starts from the earliest record ofthe ROR LOG file. | 
+| ENDT | LITERAL |  |  | The ENDT parameter defines the end date for the search of the events. Bydefault (if $G(ENDT)'>0), the search continues to the last record of theROR LOG file. | 

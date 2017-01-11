@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CONSULT IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CONSULT IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 

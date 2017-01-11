@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | EDDT | LITERAL | 99 | true | This is the internal number of the entry in 19620.3 | 
-| vs:Input_Parameter-8994_02 | LSTAT | LITERAL | 1 | true | This is the lock status 0 = Unlock, 1 = Lock | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 3 | true | Internal Entry Number - Required | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| EDDT | LITERAL | 99 | true | This is the internal number of the entry in 19620.3 | 
+| LSTAT | LITERAL | 1 | true | This is the lock status 0 = Unlock, 1 = Lock | 
+| IEN | LITERAL | 3 | true | Internal Entry Number - Required | 

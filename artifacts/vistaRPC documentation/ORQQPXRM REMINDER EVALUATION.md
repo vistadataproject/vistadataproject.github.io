@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ID | LITERAL | 16 | true | Patient identifier from the patient file [#2] | 
-| vs:Input_Parameter-8994_02 | REMINDER ARRAY | LIST | 16 | true | List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ID | LITERAL | 16 | true | Patient identifier from the patient file [#2] | 
+| REMINDER ARRAY | LIST | 16 | true | List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc | 

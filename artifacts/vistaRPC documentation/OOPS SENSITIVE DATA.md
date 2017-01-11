@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDUZ | LITERAL |  | true | This is the DUZ of the supervisor accessing the Employee's data. | 
-| vs:Input_Parameter-8994_02 | EMP | LITERAL |  | true | This is the Employee's name for which the sensitive date has been viewed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDUZ | LITERAL |  | true | This is the DUZ of the supervisor accessing the Employee's data. | 
+| EMP | LITERAL |  | true | This is the Employee's name for which the sensitive date has been viewed. | 

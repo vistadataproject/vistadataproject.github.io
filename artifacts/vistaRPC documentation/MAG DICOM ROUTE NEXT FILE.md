@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
-| vs:Input_Parameter-8994_02 | DEST | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imagesare to be transmitted. | 
-| vs:Input_Parameter-8994_02 | PRIOR | LITERAL | 30 | true | The value of this parameter is an integer number (> 0).This number establishes the priority of the new entry in its queue. | 
-| vs:Input_Parameter-8994_02 | MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 
-| vs:Input_Parameter-8994_02 | DESTS | LIST |  | true | This parameter is an array containing the list of destinationsthat is being served by the current transmitter.The values in this array each are string with two pieces of data,separated by a caret (\^\). The first piece describes the transmission mechanism:  1 = regular copy  2 = DICOM copy The second piece is a pointer. When the first piece is equalto 1, this pointer points to table # 2005.2 (Network Location);when the first piece is equal to 2, this pointer points totable # 2006.585 (User Application). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| DEST | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imagesare to be transmitted. | 
+| PRIOR | LITERAL | 30 | true | The value of this parameter is an integer number (> 0).This number establishes the priority of the new entry in its queue. | 
+| MECH | LITERAL | 10 | true | The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy | 
+| DESTS | LIST |  | true | This parameter is an array containing the list of destinationsthat is being served by the current transmitter.The values in this array each are string with two pieces of data,separated by a caret (\^\). The first piece describes the transmission mechanism:  1 = regular copy  2 = DICOM copy The second piece is a pointer. When the first piece is equalto 1, this pointer points to table # 2005.2 (Network Location);when the first piece is equal to 2, this pointer points totable # 2006.585 (User Application). | 

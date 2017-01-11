@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RNAME | LITERAL | 30 | true | RNAME - (OPTIONAL) REPORT NAME FOR A SPECIFIC REPORT | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RNAME | LITERAL | 30 | true | RNAME - (OPTIONAL) REPORT NAME FOR A SPECIFIC REPORT | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBACC | LITERAL |  | true | Access Code | 
-| vs:Input_Parameter-8994_02 | PSBVER | LITERAL |  | true | Verify Code. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBACC | LITERAL |  | true | Access Code | 
+| PSBVER | LITERAL |  | true | Verify Code. | 

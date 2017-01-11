@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the IEN of the document in the TIU DOCUMENT FILE (#8925). | 
-| vs:Input_Parameter-8994_02 | MODE | LITERAL |  | true | This is the alphabetic code for the manner in which the document wasclosed (i.e., \S\ for Scanned Document, or \M\ for Manual Closure). Optional: Defaults to \S\. | 
-| vs:Input_Parameter-8994_02 | PERSON | LITERAL |  | true | This is the IEN in the NEW PERSON file (#200) of the person who closed thedocument. Optional: Defaults to DUZ (i.e., the current user). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This is the IEN of the document in the TIU DOCUMENT FILE (#8925). | 
+| MODE | LITERAL |  | true | This is the alphabetic code for the manner in which the document wasclosed (i.e., \S\ for Scanned Document, or \M\ for Manual Closure). Optional: Defaults to \S\. | 
+| PERSON | LITERAL |  | true | This is the IEN in the NEW PERSON file (#200) of the person who closed thedocument. Optional: Defaults to DUZ (i.e., the current user). | 

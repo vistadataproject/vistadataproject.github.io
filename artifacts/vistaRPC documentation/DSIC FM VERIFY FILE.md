@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 30 | true | This is number of the file (or subfile) or the full name of the file that you wish to verify. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 30 | true | This is number of the file (or subfile) or the full name of the file that you wish to verify. | 

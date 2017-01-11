@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORAMDFN | LITERAL |  | true | Patient ID. | 
-| vs:Input_Parameter-8994_02 | ORAMCL | LITERAL |  | true | This is the internal entry number of the Clinic in the Hospital Location File (#44). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORAMDFN | LITERAL |  | true | Patient ID. | 
+| ORAMCL | LITERAL |  | true | This is the internal entry number of the Clinic in the Hospital Location File (#44). | 

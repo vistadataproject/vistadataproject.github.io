@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This it the record number (IEN) in the TIU DOCUMENT FILE (#8925) for therecord which has been electronically signed. | 
-| vs:Input_Parameter-8994_02 | TIUX | LITERAL | 245 | true | This is the network-encrypted string of what the user entered as his/herelectronic signature code.  The SIGN API will call Kernel to validate thesignature code, determine the user's role and privilege with respect tothe document in question, and apply the signature to the document, ifappropriate. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This it the record number (IEN) in the TIU DOCUMENT FILE (#8925) for therecord which has been electronically signed. | 
+| TIUX | LITERAL | 245 | true | This is the network-encrypted string of what the user entered as his/herelectronic signature code.  The SIGN API will call Kernel to validate thesignature code, determine the user's role and privilege with respect tothe document in question, and apply the signature to the document, ifappropriate. | 

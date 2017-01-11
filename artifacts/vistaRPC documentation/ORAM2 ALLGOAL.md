@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DAYS | LITERAL |  |  | NUMBER OF DAYS BACK TO INCLUDE A PT VISIT | 
-| vs:Input_Parameter-8994_02 | CLINIC | LITERAL |  |  | IEN of Clinic in Hospital Location File. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DAYS | LITERAL |  |  | NUMBER OF DAYS BACK TO INCLUDE A PT VISIT | 
+| CLINIC | LITERAL |  |  | IEN of Clinic in Hospital Location File. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATE1 | LITERAL | 50 | true | The Fileman date to start the query.  The begining date. | 
-| vs:Input_Parameter-8994_02 | DATE2 | LITERAL | 50 | true | The Fileman date to end the query.  The ending date. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATE1 | LITERAL | 50 | true | The Fileman date to start the query.  The begining date. | 
+| DATE2 | LITERAL | 50 | true | The Fileman date to end the query.  The ending date. | 

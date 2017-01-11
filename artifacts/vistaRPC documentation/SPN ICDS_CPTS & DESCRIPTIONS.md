@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL |  |  | Individual Patient's ICN  | 
-| vs:Input_Parameter-8994_02 | SPNCUTDT | LITERAL |  |  | Date to start search from.   | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL |  |  | Individual Patient's ICN  | 
+| SPNCUTDT | LITERAL |  |  | Date to start search from.   | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 30 | true | This can be the file number or the full name of the file.  For subfiles, it must be the subfile number. | 
-| vs:Input_Parameter-8994_02 | FIELD | LITERAL | 30 | true | This is the field number or the full name of the field | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 2 | true | This is a flag controlling what will be returned.The default value is <null>.  FLAG can contain N.If FLAG contains N then do not return attributes whose value is <null>If FLAGS contains Z, then for WOrd Processing attributes, include  the zeroth node with the text | 
-| vs:Input_Parameter-8994_02 | ATT | LIST | 30 | true | This is a list of attributes to return.  List[n] := attribute name  where n=0,1,2,3,... You can send List[0] := \*\ to get all field attributes | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 30 | true | This can be the file number or the full name of the file.  For subfiles, it must be the subfile number. | 
+| FIELD | LITERAL | 30 | true | This is the field number or the full name of the field | 
+| FLAG | LITERAL | 2 | true | This is a flag controlling what will be returned.The default value is <null>.  FLAG can contain N.If FLAG contains N then do not return attributes whose value is <null>If FLAGS contains Z, then for WOrd Processing attributes, include  the zeroth node with the text | 
+| ATT | LIST | 30 | true | This is a list of attributes to return.  List[n] := attribute name  where n=0,1,2,3,... You can send List[0] := \*\ to get all field attributes | 

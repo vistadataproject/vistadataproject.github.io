@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
-| vs:Input_Parameter-8994_02 | DEST | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imageswere transmitted. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 30 | true | The value of this parameter is an integer number.This number specifies the maximum number of names of files thatis to be returned per call to this RPC. | 
-| vs:Input_Parameter-8994_02 | DONE | LIST |  | true | This parameter is an array. The values in this array (if any)are obtained in an earlier call to this same RPC.Each call to this RPC returns a list of files to be purgedat the remote location, and each subsequent call to this RPCshould provide (through this parameter) the list of files thathave been successfully purged. In the VistA system, a cross-referenceis maintained that indicates which files are to be purged when,and the information from this parameter array is used to clean outthis cross-reference. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| DEST | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imageswere transmitted. | 
+| MAX | LITERAL | 30 | true | The value of this parameter is an integer number.This number specifies the maximum number of names of files thatis to be returned per call to this RPC. | 
+| DONE | LIST |  | true | This parameter is an array. The values in this array (if any)are obtained in an earlier call to this same RPC.Each call to this RPC returns a list of files to be purgedat the remote location, and each subsequent call to this RPCshould provide (through this parameter) the list of files thathave been successfully purged. In the VistA system, a cross-referenceis maintained that indicates which files are to be purged when,and the information from this parameter array is used to clean outthis cross-reference. | 

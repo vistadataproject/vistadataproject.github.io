@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Collection Time | LITERAL | 16 | true | Valid FileMan data/time string to check whether it is a valid labcollect time. | 
-| vs:Input_Parameter-8994_02 | Location | LITERAL | 16 | true | Pointer to Hospital Location | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Collection Time | LITERAL | 16 | true | Valid FileMan data/time string to check whether it is a valid labcollect time. | 
+| Location | LITERAL | 16 | true | Pointer to Hospital Location | 

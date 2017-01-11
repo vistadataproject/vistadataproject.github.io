@@ -17,13 +17,13 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IMAGE | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005).This pointer identifies the image that is to be transmitted. | 
-| vs:Input_Parameter-8994_02 | DESTINAT | LITERAL | 20 | true | The value of this field is the name of the DICOM SOP Class Providerto which the images are to be transmitted. This name mustoccur in the User Application List file (#2006.585). | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
-| vs:Input_Parameter-8994_02 | ACCESSIO | LITERAL | 20 | true | The value of this optional parameter is the accession numberfor the study. | 
-| vs:Input_Parameter-8994_02 | REASON | LITERAL | 100 | true | The value of this optional parameter is a string that representsthe reason for the transmission of the image.This reason will be stored in ^MAG(2006.95) (IMAGE ACCESS LOG). | 
-| vs:Input_Parameter-8994_02 | EMAIL | LITERAL | 100 | true | The value of this optional parameter is a string that representsan e-mail address. This e-mail address is used to transmit amessage when there are images that cannot be enqueued. | 
-| vs:Input_Parameter-8994_02 | PRIORITY | LITERAL | 10 | true | The value of this parameter is a positive integer number.This value indicates the relative priority of an entry in thetransmission queue. A higher number indicates a higher priority.The default value of this optional parameter is 500. | 
-| vs:Input_Parameter-8994_02 | JBTOHD | LITERAL | 10 | true | The value of this parameter is a boolean switch that indicateswhether or not a copy of the image file(s) is to be made onRAID. A true value indicates that a copy on magnetic storageis to be made, a false value indicates that no such copy isto be made. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IMAGE | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005).This pointer identifies the image that is to be transmitted. | 
+| DESTINAT | LITERAL | 20 | true | The value of this field is the name of the DICOM SOP Class Providerto which the images are to be transmitted. This name mustoccur in the User Application List file (#2006.585). | 
+| LOCATION | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| ACCESSIO | LITERAL | 20 | true | The value of this optional parameter is the accession numberfor the study. | 
+| REASON | LITERAL | 100 | true | The value of this optional parameter is a string that representsthe reason for the transmission of the image.This reason will be stored in ^MAG(2006.95) (IMAGE ACCESS LOG). | 
+| EMAIL | LITERAL | 100 | true | The value of this optional parameter is a string that representsan e-mail address. This e-mail address is used to transmit amessage when there are images that cannot be enqueued. | 
+| PRIORITY | LITERAL | 10 | true | The value of this parameter is a positive integer number.This value indicates the relative priority of an entry in thetransmission queue. A higher number indicates a higher priority.The default value of this optional parameter is 500. | 
+| JBTOHD | LITERAL | 10 | true | The value of this parameter is a boolean switch that indicateswhether or not a copy of the image file(s) is to be made onRAID. A true value indicates that a copy on magnetic storageis to be made, a false value indicates that no such copy isto be made. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER ID | LITERAL | 16 | true | The record number of the user/provider from the New Person File (#200) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER ID | LITERAL | 16 | true | The record number of the user/provider from the New Person File (#200) | 

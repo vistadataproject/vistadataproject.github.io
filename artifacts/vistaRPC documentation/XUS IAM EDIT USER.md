@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INARRY | LIST | 240 | true | The IAM RSD is unclear what the input data is or how it will be formatted. | 
-| vs:Input_Parameter-8994_02 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INARRY | LIST | 240 | true | The IAM RSD is unclear what the input data is or how it will be formatted. | 
+| AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 

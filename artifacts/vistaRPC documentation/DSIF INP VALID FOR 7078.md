@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REQ | LITERAL | 99 | true | Internal Number of Request (Required, Pointer to file 162.2) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REQ | LITERAL | 99 | true | Internal Number of Request (Required, Pointer to file 162.2) | 

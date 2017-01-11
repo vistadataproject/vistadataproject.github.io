@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TXTLine | LITERAL | 256 | true | Text line in Offline Platter report.TXT | 
-| vs:Input_Parameter-8994_02 | PLATTER | LITERAL | 256 | true | JUKEOX PLATTER NAME(LABEL) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TXTLine | LITERAL | 256 | true | Text line in Offline Platter report.TXT | 
+| PLATTER | LITERAL | 256 | true | JUKEOX PLATTER NAME(LABEL) | 

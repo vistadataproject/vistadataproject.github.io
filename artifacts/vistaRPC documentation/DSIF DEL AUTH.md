@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 35 | true | Pass in Patient File IEN (file #2)  | 
-| vs:Input_Parameter-8994_02 | AUTHIEN | LITERAL | 25 | true | Authorization IEN to be deleted | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 35 | true | Pass in Patient File IEN (file #2)  | 
+| AUTHIEN | LITERAL | 25 | true | Authorization IEN to be deleted | 

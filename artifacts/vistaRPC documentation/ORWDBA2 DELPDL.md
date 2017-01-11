@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORCIEN | REFERENCE | 255 | true | The clinician's internal ID number. | 
-| vs:Input_Parameter-8994_02 | ORDXA | REFERENCE | 255 | true | Array of diagnoses codes to be deleted from the clinician's personaldx list. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORCIEN | REFERENCE | 255 | true | The clinician's internal ID number. | 
+| ORDXA | REFERENCE | 255 | true | Array of diagnoses codes to be deleted from the clinician's personaldx list. | 

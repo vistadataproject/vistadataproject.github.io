@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INST | LITERAL | 99 | true | Pointer to the DSIR FACILITY PARAMETERS File (#19620.701) same as INSTITUTION File (#4). | 
-| vs:Input_Parameter-8994_02 | PRTORD | LITERAL | 30 | true | Print Order IEN or Name if adding a new entry in the DSIR ROI PRINT ORDER File (#19620.702). | 
-| vs:Input_Parameter-8994_02 | PRSEQ | LITERAL | 245 | true | Print Order Sequence as specified by the ROI Plus GUI application. | 
-| vs:Input_Parameter-8994_02 | PRTIEN | LITERAL | 99 | true | Print Order IEN (Optional - if null a new entry will be created, for edit it is Required)This is the IEN for the entry in file 19620.702 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INST | LITERAL | 99 | true | Pointer to the DSIR FACILITY PARAMETERS File (#19620.701) same as INSTITUTION File (#4). | 
+| PRTORD | LITERAL | 30 | true | Print Order IEN or Name if adding a new entry in the DSIR ROI PRINT ORDER File (#19620.702). | 
+| PRSEQ | LITERAL | 245 | true | Print Order Sequence as specified by the ROI Plus GUI application. | 
+| PRTIEN | LITERAL | 99 | true | Print Order IEN (Optional - if null a new entry will be created, for edit it is Required)This is the IEN for the entry in file 19620.702 | 

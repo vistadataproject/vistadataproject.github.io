@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FNumber | LITERAL |  | true | File number for the entry. | 
-| vs:Input_Parameter-8994_02 | IDLST | LIST |  | true | A list of internal entry numbers. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FNumber | LITERAL |  | true | File number for the entry. | 
+| IDLST | LIST |  | true | A list of internal entry numbers. | 

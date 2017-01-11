@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SCANVAL | LITERAL | 30 | true | This is the data received from the client scanning the medication. | 
-| vs:Input_Parameter-8994_02 | PSBDIEN | LITERAL |  | true | Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client. | 
-| vs:Input_Parameter-8994_02 | PSBTAB | LITERAL | 20 | true | This is the current tab the user is on. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SCANVAL | LITERAL | 30 | true | This is the data received from the client scanning the medication. | 
+| PSBDIEN | LITERAL |  | true | Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client. | 
+| PSBTAB | LITERAL | 20 | true | This is the current tab the user is on. | 

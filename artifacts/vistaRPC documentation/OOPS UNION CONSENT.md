@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This required input field must be a valid IEN in the 2260 file. Note, there isno validation check done on the IEN. | 
-| vs:Input_Parameter-8994_02 | UNIREP | LITERAL |  | true | This required input parameter must be a valid DUZ of the Union Representativeselected to receive the Bulletin. Note, like the IEN input parm, no validation is done on the DUZ being passed.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | This required input field must be a valid IEN in the 2260 file. Note, there isno validation check done on the IEN. | 
+| UNIREP | LITERAL |  | true | This required input parameter must be a valid DUZ of the Union Representativeselected to receive the Bulletin. Note, like the IEN input parm, no validation is done on the DUZ being passed.  | 

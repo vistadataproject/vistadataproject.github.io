@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XDUZ | LITERAL | 20 | true | This is the pointer to file 200 for the user for which to return thedefault division.  The default value is DUZ | 
-| vs:Input_Parameter-8994_02 | SITE | LITERAL | 1 | true | This boolean flag (1 or 0) will be used if the user has no defaultdivision specified in the DIVISION multiple in file 200.  If no defaultdivision, then return the value from $$SITE^VASITE. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XDUZ | LITERAL | 20 | true | This is the pointer to file 200 for the user for which to return thedefault division.  The default value is DUZ | 
+| SITE | LITERAL | 1 | true | This boolean flag (1 or 0) will be used if the user has no defaultdivision specified in the DIVISION multiple in file 200.  If no defaultdivision, then return the value from $$SITE^VASITE. | 

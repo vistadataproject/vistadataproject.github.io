@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SERIEN | LITERAL |  |  | The internal entry number of the study in the IMAGE SERIESFile (#2005.63). | 
-| vs:Input_Parameter-8994_02 | STUDYIEN |  |  |  | The internal entry number of the related STUDY in the IMAGE STUDYfile (#2005.62). | 
-| vs:Input_Parameter-8994_02 | OVERRIDE | LITERAL |  |  | This parameter overrides parent IEN checking. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SERIEN | LITERAL |  |  | The internal entry number of the study in the IMAGE SERIESFile (#2005.63). | 
+| STUDYIEN |  |  |  | The internal entry number of the related STUDY in the IMAGE STUDYfile (#2005.62). | 
+| OVERRIDE | LITERAL |  |  | This parameter overrides parent IEN checking. | 

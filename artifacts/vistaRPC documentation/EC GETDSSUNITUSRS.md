@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ECARY | LITERAL | 30 | true | DSS unit IEN must be passed in as input parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ECARY | LITERAL | 30 | true | DSS unit IEN must be passed in as input parameter. | 

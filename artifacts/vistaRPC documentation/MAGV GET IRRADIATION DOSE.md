@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL |  |  | This is the identifier to determine which patient to return data from. | 
-| vs:Input_Parameter-8994_02 | PROCEDURE | LITERAL |  |  | This is the accession number used to determine which irradiation instancesto return. | 
-| vs:Input_Parameter-8994_02 | PROCTYPE | LITERAL |  |  | This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL |  |  | This is the identifier to determine which patient to return data from. | 
+| PROCEDURE | LITERAL |  |  | This is the accession number used to determine which irradiation instancesto return. | 
+| PROCTYPE | LITERAL |  |  | This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SEED | LITERAL | 60 | true | The value of this parameter is a string that consists of threepieces, separated by a caret. The first piece represents the EXAM DATE, the secondpiece represents the Patient Number (DFN) and  the thirdpiece represents the final internal entry number in theRadiology Patient file (D2). The RPC will start looking through the \AR\ cross-reference,based on the specified \seed\ value, and will return thefirst pointer to a Radiology report that it encounters. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL | 20 | true | The value of this parameter is a string that indicates the directionin which the RPC will traverse the \AR\ cross-reference.A value that starts with the letter \A\ will cause an\ascending\ traversal.A value that starts with the letter \D\ will cause a\descending\ traversal. When this parameter is not specified, \ascending\ traversal will take place. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SEED | LITERAL | 60 | true | The value of this parameter is a string that consists of threepieces, separated by a caret. The first piece represents the EXAM DATE, the secondpiece represents the Patient Number (DFN) and  the thirdpiece represents the final internal entry number in theRadiology Patient file (D2). The RPC will start looking through the \AR\ cross-reference,based on the specified \seed\ value, and will return thefirst pointer to a Radiology report that it encounters. | 
+| DIR | LITERAL | 20 | true | The value of this parameter is a string that indicates the directionin which the RPC will traverse the \AR\ cross-reference.A value that starts with the letter \A\ will cause an\ascending\ traversal.A value that starts with the letter \D\ will cause a\descending\ traversal. When this parameter is not specified, \ascending\ traversal will take place. | 

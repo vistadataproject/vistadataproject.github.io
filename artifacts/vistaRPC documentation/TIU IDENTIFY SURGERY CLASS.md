@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLNAME | LITERAL |  | true | This is the name (ASCII LITERAL) of the Class for which the callingapplication needs an IEN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLNAME | LITERAL |  | true | This is the name (ASCII LITERAL) of the Class for which the callingapplication needs an IEN. | 

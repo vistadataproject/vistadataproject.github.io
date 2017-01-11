@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | DFN of patient - IEN from DPT( | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This is the pointer to the 509850.9 fileUsed in the Audiogram Enter/Edit program | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | DFN of patient - IEN from DPT( | 
+| IEN | LITERAL |  | true | This is the pointer to the 509850.9 fileUsed in the Audiogram Enter/Edit program | 

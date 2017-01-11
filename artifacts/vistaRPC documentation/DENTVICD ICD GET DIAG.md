@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80) | 
-| vs:Input_Parameter-8994_02 | CDT | LITERAL | 14 | true | This is the date to be used to check if the code was active as of that date. The default value is TODAY. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80) | 
+| CDT | LITERAL | 14 | true | This is the date to be used to check if the code was active as of that date. The default value is TODAY. | 

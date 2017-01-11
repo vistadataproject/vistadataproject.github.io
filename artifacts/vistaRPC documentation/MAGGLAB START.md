@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SECT | LITERAL | 60 | true | Lab section, i.e. SP, CY, etc. | 
-| vs:Input_Parameter-8994_02 | YEAR | LITERAL | 30 | true | Lab specimen year. | 
-| vs:Input_Parameter-8994_02 | ACNUM | LITERAL | 60 | true | Lab accession number. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  | PATIENT'S DFN | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SECT | LITERAL | 60 | true | Lab section, i.e. SP, CY, etc. | 
+| YEAR | LITERAL | 30 | true | Lab specimen year. | 
+| ACNUM | LITERAL | 60 | true | Lab accession number. | 
+| DFN | LITERAL |  |  | PATIENT'S DFN | 

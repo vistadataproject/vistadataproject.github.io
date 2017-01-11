@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLS | LITERAL | 90 | true | This parameter is a ',' (comma) delimited string of classesonly those specialties that match a 'class' in the stringwill be listed in the result array. | 
-| vs:Input_Parameter-8994_02 | EVENT | LITERAL | 50 | true | This is a ','(comma) delimited string of Procedure/Eventsonly those Specialties associated with one of these Proc/Events will be listed in the output. | 
-| vs:Input_Parameter-8994_02 | FLGS | LITERAL | 40 | true | ;  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String;     4 INSP: Include Specialty in the OutPut String | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLS | LITERAL | 90 | true | This parameter is a ',' (comma) delimited string of classesonly those specialties that match a 'class' in the stringwill be listed in the result array. | 
+| EVENT | LITERAL | 50 | true | This is a ','(comma) delimited string of Procedure/Eventsonly those Specialties associated with one of these Proc/Events will be listed in the output. | 
+| FLGS | LITERAL | 40 | true | ;  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String;     4 INSP: Include Specialty in the OutPut String | 

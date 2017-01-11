@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TEAM ID | LITERAL | 16 | true | The record number from the OE/RR Team File (#100.21). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TEAM ID | LITERAL | 16 | true | The record number from the OE/RR Team File (#100.21). | 

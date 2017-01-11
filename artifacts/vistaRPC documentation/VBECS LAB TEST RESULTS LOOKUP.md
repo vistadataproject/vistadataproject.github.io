@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDATE | LITERAL |  | true | The SDATE input parameter represents the start date used to search for Laboratory test results in the Lab API RR^LR7OR1. | 
-| vs:Input_Parameter-8994_02 | EDATE | LITERAL | 30 | true | The EDATE input parameter represents the end date to search for Laboratory test results in the Lab API RR^LR7OR1. | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 12 | true | The DIV input parameter representd the Division (Station Number) where the results were obtained.NOTE:  This parameter is for future use. | 
-| vs:Input_Parameter-8994_02 | TESTS | LITERAL | 999 | true | An array of Laboratory Test IENs used to search for results.  TESTS(1)=\3536\  TESTS(2)=\4090\ | 
-| vs:Input_Parameter-8994_02 | PATS | LITERAL | 999 | true | An array of Patient IENs used to search for Lab test results.  PATS(1)=\495943\  PATS(2)=\39282\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDATE | LITERAL |  | true | The SDATE input parameter represents the start date used to search for Laboratory test results in the Lab API RR^LR7OR1. | 
+| EDATE | LITERAL | 30 | true | The EDATE input parameter represents the end date to search for Laboratory test results in the Lab API RR^LR7OR1. | 
+| DIV | LITERAL | 12 | true | The DIV input parameter representd the Division (Station Number) where the results were obtained.NOTE:  This parameter is for future use. | 
+| TESTS | LITERAL | 999 | true | An array of Laboratory Test IENs used to search for results.  TESTS(1)=\3536\  TESTS(2)=\4090\ | 
+| PATS | LITERAL | 999 | true | An array of Patient IENs used to search for Lab test results.  PATS(1)=\495943\  PATS(2)=\39282\ | 

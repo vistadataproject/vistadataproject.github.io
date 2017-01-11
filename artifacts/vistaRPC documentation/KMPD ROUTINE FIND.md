@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 30 | true | Routine name to search for (may contain an asterisk (*) for a list). | 
-| vs:Input_Parameter-8994_02 | PARAM2 | LITERAL | 60 | true | Temporary global storage name.  Must be either ^TMP or ^UTILITY. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM1 | LITERAL | 30 | true | Routine name to search for (may contain an asterisk (*) for a list). | 
+| PARAM2 | LITERAL | 60 | true | Temporary global storage name.  Must be either ^TMP or ^UTILITY. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NLOCIEN | LITERAL |  | true | NLOCIEN = IEN in NETWORK LOCATION file (#2005.2)  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NLOCIEN | LITERAL |  | true | NLOCIEN = IEN in NETWORK LOCATION file (#2005.2)  | 

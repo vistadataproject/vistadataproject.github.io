@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORTERM | LITERAL | 255 | true | This is the unresolved term for which an NTRT Request should be filed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORTERM | LITERAL | 255 | true | This is the unresolved term for which an NTRT Request should be filed. | 

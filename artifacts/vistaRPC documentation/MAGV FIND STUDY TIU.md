@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STYIEN | LITERAL | 15 | true | This is an internal entry number on the IMAGE STUDY File (#2005.63). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STYIEN | LITERAL | 15 | true | This is an internal entry number on the IMAGE STUDY File (#2005.63). | 

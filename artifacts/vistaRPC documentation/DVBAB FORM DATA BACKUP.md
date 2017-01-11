@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DVBIEN | LITERAL |  |  | The IEN of the template for which a backup is being created | 
-| vs:Input_Parameter-8994_02 | LISTBOX TEXT | LITERAL | 50 | true | Option field to allow the user to enter custom text to be attached to the saved data.  Displayed in the listbox on the GUI side. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DVBIEN | LITERAL |  |  | The IEN of the template for which a backup is being created | 
+| LISTBOX TEXT | LITERAL | 50 | true | Option field to allow the user to enter custom text to be attached to the saved data.  Displayed in the listbox on the GUI side. | 

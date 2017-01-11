@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VBLRO | LITERAL | 20 | true | Input VBLRO = The Lab Order number received in Blood Bank with an orderfrom CPRS.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VBLRO | LITERAL | 20 | true | Input VBLRO = The Lab Order number received in Blood Bank with an orderfrom CPRS.  | 

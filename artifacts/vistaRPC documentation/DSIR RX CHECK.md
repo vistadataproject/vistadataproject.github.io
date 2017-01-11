@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STDT | LITERAL | 7 | true | Start Date - Required (FileMan Date Format) | 
-| vs:Input_Parameter-8994_02 | ENDT | LITERAL | 7 | true | End Date - Optional (FileMan Date Format - Default to current day) | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 254 | true | Array as returned from RPC: ORQQPS LIST - Optional | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STDT | LITERAL | 7 | true | Start Date - Required (FileMan Date Format) | 
+| ENDT | LITERAL | 7 | true | End Date - Optional (FileMan Date Format - Default to current day) | 
+| DATA | LIST | 254 | true | Array as returned from RPC: ORQQPS LIST - Optional | 

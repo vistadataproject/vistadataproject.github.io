@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAM | LITERAL |  |  | Name of possible patient | 
-| vs:Input_Parameter-8994_02 | DOB | LITERAL | 7 |  | Date of Birth of possible patient | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 10 |  | Social Security Number of possible patient | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAM | LITERAL |  |  | Name of possible patient | 
+| DOB | LITERAL | 7 |  | Date of Birth of possible patient | 
+| SSN | LITERAL | 10 |  | Social Security Number of possible patient | 

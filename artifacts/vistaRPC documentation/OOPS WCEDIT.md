@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 25 | true | This is the IEN for the ASISTS record that is being modified. | 
-| vs:Input_Parameter-8994_02 | CALLER | LITERAL | 10 | true | This is the menu that originated the call. | 
-| vs:Input_Parameter-8994_02 | FORM | LITERAL | 10 | true | This is the form type which can be 2162, CA1, or CA2.  However, the only formever expected with this call is a CA1. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 25 | true | This is the IEN for the ASISTS record that is being modified. | 
+| CALLER | LITERAL | 10 | true | This is the menu that originated the call. | 
+| FORM | LITERAL | 10 | true | This is the form type which can be 2162, CA1, or CA2.  However, the only formever expected with this call is a CA1. | 

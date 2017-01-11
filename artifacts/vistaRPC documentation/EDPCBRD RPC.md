@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SESS | LITERAL |  | true | This identifies the user and site that are passed in from the Java middle tier.  In cases when the display board is running with a proxy user (in kiosk mode), the SSL configuration will determine the user and site. | 
-| vs:Input_Parameter-8994_02 | PARAMS | LIST |  |  | This is a list of parameters that were passed to the Java middle tier via an HTTP Post message. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SESS | LITERAL |  | true | This identifies the user and site that are passed in from the Java middle tier.  In cases when the display board is running with a proxy user (in kiosk mode), the SSL configuration will determine the user and site. | 
+| PARAMS | LIST |  |  | This is a list of parameters that were passed to the Java middle tier via an HTTP Post message. | 

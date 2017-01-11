@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 8 | true | Routine name (limited to 8 characters). | 
-| vs:Input_Parameter-8994_02 | PARAM2 | LIST | 240 | true | Array containing routine code. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM1 | LITERAL | 8 | true | Routine name (limited to 8 characters). | 
+| PARAM2 | LIST | 240 | true | Array containing routine code. | 

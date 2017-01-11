@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IENS | LITERAL | 16 | true | INSURANCE BUFFER file internal entry number or IENS. | 
-| vs:Input_Parameter-8994_02 | FIELDS | LITERAL | 240 | true | Field list (optional).  Default is all top-level fields. | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL | 16 | true | Flags (optional).  Default is external format, omit empty fields. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IENS | LITERAL | 16 | true | INSURANCE BUFFER file internal entry number or IENS. | 
+| FIELDS | LITERAL | 240 | true | Field list (optional).  Default is all top-level fields. | 
+| FLAGS | LITERAL | 16 | true | Flags (optional).  Default is external format, omit empty fields. | 

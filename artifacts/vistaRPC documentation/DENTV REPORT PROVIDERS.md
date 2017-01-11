@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STN | LITERAL | 10 | true | Pass if you wish to sort providers by station. | 
-| vs:Input_Parameter-8994_02 | ACT | LITERAL | 10 | true | Pass this flag if you wish to screen for only active providers. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STN | LITERAL | 10 | true | Pass if you wish to sort providers by station. | 
+| ACT | LITERAL | 10 | true | Pass this flag if you wish to screen for only active providers. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PROCATTS | LIST | 300 | true | Input parameters are name-value pairs sent as successive integersubscripts in an array that should be passed in by reference as the secondargument to entry point FINDPROC^MAGVRS07.  The first argument should bean array name (passed by reference) that will contain the returned value. The values passed in should be in the format <fname>`<value>, where<fname> is a field name in the IMAGING PROCEDURE REFERENCE File(#2005.61) and <value> is the value to which the record's attributeshould be equal.  If multiple values are passed in, they will be ANDed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PROCATTS | LIST | 300 | true | Input parameters are name-value pairs sent as successive integersubscripts in an array that should be passed in by reference as the secondargument to entry point FINDPROC^MAGVRS07.  The first argument should bean array name (passed by reference) that will contain the returned value. The values passed in should be in the format <fname>`<value>, where<fname> is a field name in the IMAGING PROCEDURE REFERENCE File(#2005.61) and <value> is the value to which the record's attributeshould be equal.  If multiple values are passed in, they will be ANDed. | 

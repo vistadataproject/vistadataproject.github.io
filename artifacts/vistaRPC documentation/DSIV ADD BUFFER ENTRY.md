@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Patient internal entry number. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 1 | true | \M\ for Medicare, \X\ for all other insurance (default). | 
-| vs:Input_Parameter-8994_02 | INSCO | LITERAL | 30 | true | Insurance company name.  Required for non-Medicare insurance.Not required for Medicare type. | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 80 | true | Array of keyword^value pairs for Medicare type entry orField number^value pairs for other insurance type entries.For example, SOURCE is a required value.  For non-Medicareentries this could be specified as DATA(1)=\.03^1\, meaningsource=interview. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | Patient internal entry number. | 
+| TYPE | LITERAL | 1 | true | \M\ for Medicare, \X\ for all other insurance (default). | 
+| INSCO | LITERAL | 30 | true | Insurance company name.  Required for non-Medicare insurance.Not required for Medicare type. | 
+| DATA | LIST | 80 | true | Array of keyword^value pairs for Medicare type entry orField number^value pairs for other insurance type entries.For example, SOURCE is a required value.  For non-Medicareentries this could be specified as DATA(1)=\.03^1\, meaningsource=interview. | 

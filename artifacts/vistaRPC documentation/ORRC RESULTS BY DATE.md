@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
-| vs:Input_Parameter-8994_02 | START | LITERAL |  | true | This is the date to start searching for orders, in the form YYYYMMDDHHMMSS. | 
-| vs:Input_Parameter-8994_02 | STOP | LITERAL |  | true | This is the date to stop searching for orders, in the form YYYYMMDDHHMMSS. | 
-| vs:Input_Parameter-8994_02 | RESULTS | LITERAL |  | true | This flag indicates whether to return the results with each order (true)or just the list of order ID's (false). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
+| USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
+| START | LITERAL |  | true | This is the date to start searching for orders, in the form YYYYMMDDHHMMSS. | 
+| STOP | LITERAL |  | true | This is the date to stop searching for orders, in the form YYYYMMDDHHMMSS. | 
+| RESULTS | LITERAL |  | true | This flag indicates whether to return the results with each order (true)or just the list of order ID's (false). | 

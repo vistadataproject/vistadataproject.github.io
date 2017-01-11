@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STATIEN | LITERAL |  | true | This is a required parm and it has to be a valid IEN for a station stored in DIC(4  Institution file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STATIEN | LITERAL |  | true | This is a required parm and it has to be a valid IEN for a station stored in DIC(4  Institution file. | 

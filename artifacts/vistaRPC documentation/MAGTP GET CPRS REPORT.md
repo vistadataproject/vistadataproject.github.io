@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LRSS | LITERAL | 2 | true | AP Section | 
-| vs:Input_Parameter-8994_02 | YEAR | LITERAL | 4 | true | Year | 
-| vs:Input_Parameter-8994_02 | LRAN | LITERAL | 5 | true | Accession Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LRSS | LITERAL | 2 | true | AP Section | 
+| YEAR | LITERAL | 4 | true | Year | 
+| LRAN | LITERAL | 5 | true | Accession Number | 

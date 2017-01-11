@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 16 | true | Integration Control Number (ICN) for patient on whom data is requested. | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true | Social Security Number (SSN) for patient on whom data is requested. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL | 16 | true | Integration Control Number (ICN) for patient on whom data is requested. | 
+| SSN | LITERAL | 9 | true | Social Security Number (SSN) for patient on whom data is requested. | 

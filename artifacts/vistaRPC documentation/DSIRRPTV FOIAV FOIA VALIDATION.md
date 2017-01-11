@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FRDT | LITERAL | 7 | true | Start date for report data. | 
-| vs:Input_Parameter-8994_02 | TODT | LITERAL | 7 | true | Last date for reporting. | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 99 | true | List of one or more divisions for which data will be reported.  I omitted, the clerk's DUZ(2) will be used. | 
-| vs:Input_Parameter-8994_02 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
-| vs:Input_Parameter-8994_02 | ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FRDT | LITERAL | 7 | true | Start date for report data. | 
+| TODT | LITERAL | 7 | true | Last date for reporting. | 
+| DIV | LITERAL | 99 | true | List of one or more divisions for which data will be reported.  I omitted, the clerk's DUZ(2) will be used. | 
+| SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
+| ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 

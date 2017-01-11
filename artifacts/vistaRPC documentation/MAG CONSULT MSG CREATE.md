@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDUZ | LITERAL | 255 | true | DUZ number for sender of message | 
-| vs:Input_Parameter-8994_02 | TXT | LIST | 32000 | true | Message to be sent; $END$; Recipient list | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDUZ | LITERAL | 255 | true | DUZ number for sender of message | 
+| TXT | LIST | 32000 | true | Message to be sent; $END$; Recipient list | 

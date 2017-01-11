@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NUMBER | LITERAL | 10 | true | number of entries to be sent during each running of the seeding process. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NUMBER | LITERAL | 10 | true | number of entries to be sent during each running of the seeding process. | 

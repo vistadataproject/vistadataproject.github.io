@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
-| vs:Input_Parameter-8994_02 | ORDERS | LIST |  | true | This is the list of order ID's whose results may be acknowledged, in theform \ORR:###^1\ where ### is the order number from file #100 and thesecond ^-piece is either 1 or 0 if the order was acknowledged. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
+| ORDERS | LIST |  | true | This is the list of order ID's whose results may be acknowledged, in theform \ORR:###^1\ where ### is the order number from file #100 and thesecond ^-piece is either 1 or 0 if the order was acknowledged. | 

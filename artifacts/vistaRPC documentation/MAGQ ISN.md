@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILENAME | LITERAL | 8 | true | This is the filename and extension which has file size variance. | 
-| vs:Input_Parameter-8994_02 | Network source file size. | LITERAL | 1 | true | This is the bite integer which represents the size property. | 
-| vs:Input_Parameter-8994_02 | Jukebox size | LITERAL | 1 | true | This is the Jukebox file size integer property. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILENAME | LITERAL | 8 | true | This is the filename and extension which has file size variance. | 
+| Network source file size. | LITERAL | 1 | true | This is the bite integer which represents the size property. | 
+| Jukebox size | LITERAL | 1 | true | This is the Jukebox file size integer property. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TEST | LITERAL |  |  | This is the pointer value to the Laboratory Test (#60) file of the panelto be expanded. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TEST | LITERAL |  |  | This is the pointer value to the Laboratory Test (#60) file of the panelto be expanded. | 

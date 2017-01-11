@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
-| vs:Input_Parameter-8994_02 | FIELDNO | LITERAL | 20 | true | This is the field within the specified FileMan file or subfile for which attributes are being requested. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
+| FIELDNO | LITERAL | 20 | true | This is the field within the specified FileMan file or subfile for which attributes are being requested. | 

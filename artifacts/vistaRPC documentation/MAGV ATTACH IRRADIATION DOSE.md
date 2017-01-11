@@ -17,12 +17,12 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL |  |  | This is the patient identifier. | 
-| vs:Input_Parameter-8994_02 | PROCEDURE | LITERAL |  |  | This is the accession number of the procedure related to the irradiation dosage instance. | 
-| vs:Input_Parameter-8994_02 | STUDY UID | LITERAL |  |  | This is the study UID related to the irradiation dosage instance. | 
-| vs:Input_Parameter-8994_02 | IRRADIATION INSTANCE UID | LITERAL |  |  | This is the irradiation instance UID of a CT irradiation dosage instance. | 
-| vs:Input_Parameter-8994_02 | ATTRIBUTES | LIST |  |  |   Input parameters are name-value pairs sent as successive integer subscripts in an array that should be passed in by reference.    The values passed in should be in the format <fname>`<value>, where <fname> is a field name and <value> is the value to which that field should be set. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  |  | This is the type of irradiation instance - \CT\ or \FLUORO\. | 
-| vs:Input_Parameter-8994_02 | SERUID | LITERAL |  |  | This is the series UID related to the irradiation dosage instance. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL |  |  | This is the patient identifier. | 
+| PROCEDURE | LITERAL |  |  | This is the accession number of the procedure related to the irradiation dosage instance. | 
+| STUDY UID | LITERAL |  |  | This is the study UID related to the irradiation dosage instance. | 
+| IRRADIATION INSTANCE UID | LITERAL |  |  | This is the irradiation instance UID of a CT irradiation dosage instance. | 
+| ATTRIBUTES | LIST |  |  |   Input parameters are name-value pairs sent as successive integer subscripts in an array that should be passed in by reference.    The values passed in should be in the format <fname>`<value>, where <fname> is a field name and <value> is the value to which that field should be set. | 
+| TYPE | LITERAL |  |  | This is the type of irradiation instance - \CT\ or \FLUORO\. | 
+| SERUID | LITERAL |  |  | This is the series UID related to the irradiation dosage instance. | 

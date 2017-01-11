@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 30 | true | This is the name or the IFN for a Parameter Definition.  Pass this value only if you wish to retrieve the data for one specific Parameter Definition. | 
-| vs:Input_Parameter-8994_02 | PREFIX | LITERAL | 20 | true | This is the namespace or the leading characters for the Parameter Definitions you wished to be returned.  For example, PREFIX=\DSIC\ will return all DSIC Kernel Parameter Definitions. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL | 30 | true | This is the name or the IFN for a Parameter Definition.  Pass this value only if you wish to retrieve the data for one specific Parameter Definition. | 
+| PREFIX | LITERAL | 20 | true | This is the namespace or the leading characters for the Parameter Definitions you wished to be returned.  For example, PREFIX=\DSIC\ will return all DSIC Kernel Parameter Definitions. | 

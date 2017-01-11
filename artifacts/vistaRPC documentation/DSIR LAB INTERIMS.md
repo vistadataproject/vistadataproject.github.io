@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 50 | true | DFN - Patient Identifier | 
-| vs:Input_Parameter-8994_02 | DATE1 | LITERAL | 7 | true | DATE1 - Start date in FILEMAN format | 
-| vs:Input_Parameter-8994_02 | DATE2 | LITERAL | 7 | true | DATE2 - End date in FILEMAN format | 
-| vs:Input_Parameter-8994_02 | ORTESTS | LIST |  | true | ORTESTS - List of tests to look up | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 50 | true | DFN - Patient Identifier | 
+| DATE1 | LITERAL | 7 | true | DATE1 - Start date in FILEMAN format | 
+| DATE2 | LITERAL | 7 | true | DATE2 - End date in FILEMAN format | 
+| ORTESTS | LIST |  | true | ORTESTS - List of tests to look up | 

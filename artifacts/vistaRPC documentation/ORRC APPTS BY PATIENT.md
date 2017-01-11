@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
-| vs:Input_Parameter-8994_02 | START | LITERAL |  | true | This is the date to start searching for appointments, in the formYYYYMMDDHHMMSS. | 
-| vs:Input_Parameter-8994_02 | STOP | LITERAL |  | true | This is the date to stop searching for appointments, in the formYYYYMMDDHHMMSS. | 
-| vs:Input_Parameter-8994_02 | DETAILS | LITERAL |  | true | This flag indicates whether to return the details or note text with eachappointment (true) or just the list of appointment ID's (false). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
+| START | LITERAL |  | true | This is the date to start searching for appointments, in the formYYYYMMDDHHMMSS. | 
+| STOP | LITERAL |  | true | This is the date to stop searching for appointments, in the formYYYYMMDDHHMMSS. | 
+| DETAILS | LITERAL |  | true | This flag indicates whether to return the details or note text with eachappointment (true) or just the list of appointment ID's (false). | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the IEN of the Entry which is to be attached as the ID Child. | 
-| vs:Input_Parameter-8994_02 | TIUDAD | LITERAL |  | true | This is the internal entry number of the TIU Document which is to be theID Parent to which the ID Entry is attached. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This is the IEN of the Entry which is to be attached as the ID Child. | 
+| TIUDAD | LITERAL |  | true | This is the internal entry number of the TIU Document which is to be theID Parent to which the ID Entry is attached. | 

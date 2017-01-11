@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL | 15 | true | This is the user's DUZ value whose active person class is desired. | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 14 | true | This is a Fileman date.time for the date to check for an active person class membership. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL | 15 | true | This is the user's DUZ value whose active person class is desired. | 
+| DATE | LITERAL | 14 | true | This is a Fileman date.time for the date to check for an active person class membership. | 

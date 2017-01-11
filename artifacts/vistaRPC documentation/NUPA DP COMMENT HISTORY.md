@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | The IEN of the Care Plan from file 1927.4. | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL |  | true | Flag to determine whether to return the latest comment for each Discharge Planning issue, or the entire set of Discharge Planning comments for theCare Plan. FLAG=1 - Entire set of Discharge Planning commentsFLAG=2 - Latest comment for each Discharge Planning issue | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | The IEN of the Care Plan from file 1927.4. | 
+| FLAG | LITERAL |  | true | Flag to determine whether to return the latest comment for each Discharge Planning issue, or the entire set of Discharge Planning comments for theCare Plan. FLAG=1 - Entire set of Discharge Planning commentsFLAG=2 - Latest comment for each Discharge Planning issue | 

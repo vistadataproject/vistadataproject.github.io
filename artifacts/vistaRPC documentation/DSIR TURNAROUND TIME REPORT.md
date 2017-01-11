@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLERK | LITERAL | 99 | true | This is the DUZ of the selected clerk. | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 7 | true | This is the FileMan date to start the report.  If null the process will start at the earilest date on file. | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 7 | true | This is the FileMan date the report runs through.  If null the current day is used as the end date. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLERK | LITERAL | 99 | true | This is the DUZ of the selected clerk. | 
+| START DATE | LITERAL | 7 | true | This is the FileMan date to start the report.  If null the process will start at the earilest date on file. | 
+| END DATE | LITERAL | 7 | true | This is the FileMan date the report runs through.  If null the current day is used as the end date. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 20 | true | This is the file number of the DSS file which has a .01 DINUM'd field | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | This is the ien of the pointed to file.  If the .01 field is not a pointer field then this parameter should not be passed when trying to add a new entry to the file. | 
-| vs:Input_Parameter-8994_02 | VAL | LITERAL | 80 | true | This is the external value of the .01 field.   If the .01 field is a pointer field, then this would be some external lookup value for the pointed to file.   If the .01 field is not a pointer, then this must numeric. | 
-| vs:Input_Parameter-8994_02 | IENS | LITERAL | 30 | true | This field is only valid if you are trying to add a DINUM'd value to a multiple in the FILE.  The syntax of iens is ,S1,S2,S3,   See M programmers for precise syntax to use if you need this. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 20 | true | This is the file number of the DSS file which has a .01 DINUM'd field | 
+| IEN | LITERAL | 20 | true | This is the ien of the pointed to file.  If the .01 field is not a pointer field then this parameter should not be passed when trying to add a new entry to the file. | 
+| VAL | LITERAL | 80 | true | This is the external value of the .01 field.   If the .01 field is a pointer field, then this would be some external lookup value for the pointed to file.   If the .01 field is not a pointer, then this must numeric. | 
+| IENS | LITERAL | 30 | true | This field is only valid if you are trying to add a DINUM'd value to a multiple in the FILE.  The syntax of iens is ,S1,S2,S3,   See M programmers for precise syntax to use if you need this. | 

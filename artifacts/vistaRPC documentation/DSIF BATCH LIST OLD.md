@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBFROM | LITERAL | 7 | true | FBFROM - From date (optional) | 
-| vs:Input_Parameter-8994_02 | FBTO | LITERAL | 7 | true | FBTO - To date (optional) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBFROM | LITERAL | 7 | true | FBFROM - From date (optional) | 
+| FBTO | LITERAL | 7 | true | FBTO - To date (optional) | 

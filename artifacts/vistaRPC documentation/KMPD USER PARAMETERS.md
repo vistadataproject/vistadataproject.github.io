@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL | 35 | true | User's DUZ. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 5 | true | Type of call: 1 - get option info              2 - set option info | 
-| vs:Input_Parameter-8994_02 | OPTION | LIST | 256 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DUZ | LITERAL | 35 | true | User's DUZ. | 
+| TYPE | LITERAL | 5 | true | Type of call: 1 - get option info              2 - set option info | 
+| OPTION | LIST | 256 | true |  | 

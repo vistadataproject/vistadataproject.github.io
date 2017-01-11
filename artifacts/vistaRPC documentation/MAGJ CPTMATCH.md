@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 20 | true | CPT Code ^ Matching CriteriaMAtching Criteria is a number, 1:n, to indicate basis for matching: 1--Similar CPT; 2--Body Part; 3--Body Part & Modality | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 20 | true | CPT Code ^ Matching CriteriaMAtching Criteria is a number, 1:n, to indicate basis for matching: 1--Similar CPT; 2--Body Part; 3--Body Part & Modality | 

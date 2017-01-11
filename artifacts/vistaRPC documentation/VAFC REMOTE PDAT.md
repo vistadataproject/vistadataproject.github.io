@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 16 | true | This should be the ICN without the 'V' or the checksum. | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL | 16 | true | This should be the ICN without the 'V' or the checksum. | 
+| SSN | LITERAL | 9 | true |  | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IDentifier | LITERAL |  | true | This is the identifier for the order or document.Examples:  ORD:342132;1  or DOC:23423 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IDentifier | LITERAL |  | true | This is the identifier for the order or document.Examples:  ORD:342132;1  or DOC:23423 | 

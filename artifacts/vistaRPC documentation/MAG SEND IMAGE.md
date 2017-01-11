@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 7 | true | IEN of the image to send | 
-| vs:Input_Parameter-8994_02 | QREC | LITERAL | 3 | true | Record number of the destination queue (DOS/DICOM) | 
-| vs:Input_Parameter-8994_02 | PRI | LITERAL | 4 | true | Priority | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 1 | true | Type of Image: 1:DOS, 2:DICOM | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGIEN | LITERAL | 7 | true | IEN of the image to send | 
+| QREC | LITERAL | 3 | true | Record number of the destination queue (DOS/DICOM) | 
+| PRI | LITERAL | 4 | true | Priority | 
+| TYPE | LITERAL | 1 | true | Type of Image: 1:DOS, 2:DICOM | 

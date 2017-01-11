@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DENTV | LIST | 255 | true | This is the comment information that must be entered to save/update the record.     DENTV(\PROV\) - Provider IEN     DENTV(\TYP\) - 1: system, 2: user     DENTV(\CAT\) - 1:radio,2:summary,3:treatment,4:educ,5:disp     DENTV(n) - n number of records for the WP field (the comment)     DENTV(\IEN\) - IEN is only used to updated an existing, null means                     add. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DENTV | LIST | 255 | true | This is the comment information that must be entered to save/update the record.     DENTV(\PROV\) - Provider IEN     DENTV(\TYP\) - 1: system, 2: user     DENTV(\CAT\) - 1:radio,2:summary,3:treatment,4:educ,5:disp     DENTV(n) - n number of records for the WP field (the comment)     DENTV(\IEN\) - IEN is only used to updated an existing, null means                     add. | 

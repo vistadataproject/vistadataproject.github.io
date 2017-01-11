@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACTION | LITERAL | 1 | true | ACTION = 1 - Set DG Security Log entry         2 - Generate Sensitive Record Access bulletin         3 - Both | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | DFN = Patient (#2) file DFN | 
-| vs:Input_Parameter-8994_02 | DGOPT | LITERAL |  | true | DGOPT = Option Name^Menu test         If not defined, OP^XQCHK identifies option or defaults to UNKNOWN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACTION | LITERAL | 1 | true | ACTION = 1 - Set DG Security Log entry         2 - Generate Sensitive Record Access bulletin         3 - Both | 
+| DFN | LITERAL |  | true | DFN = Patient (#2) file DFN | 
+| DGOPT | LITERAL |  | true | DGOPT = Option Name^Menu test         If not defined, OP^XQCHK identifies option or defaults to UNKNOWN. | 

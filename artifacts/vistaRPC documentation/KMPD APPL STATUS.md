@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | APPLICATION | LITERAL | 5 | true | \H\ - hl7\R\ - rum\S\ - sagg\T\ - timing | 
-| vs:Input_Parameter-8994_02 | GLOBAL | LITERAL | 30 | true | Global in which to store data.  Ex: ^TMP($J) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| APPLICATION | LITERAL | 5 | true | \H\ - hl7\R\ - rum\S\ - sagg\T\ - timing | 
+| GLOBAL | LITERAL | 30 | true | Global in which to store data.  Ex: ^TMP($J) | 

@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | patient id | LITERAL | 32 | true |  | 
-| vs:Input_Parameter-8994_02 | BEGIN DATE | LITERAL | 16 | true |  | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 16 | true |  | 
-| vs:Input_Parameter-8994_02 | CONTEXT | LITERAL | 8 | true | Not yet implemented.  Reserved for future use. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 8 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| patient id | LITERAL | 32 | true |  | 
+| BEGIN DATE | LITERAL | 16 | true |  | 
+| END DATE | LITERAL | 16 | true |  | 
+| CONTEXT | LITERAL | 8 | true | Not yet implemented.  Reserved for future use. | 
+| MAX | LITERAL | 8 | true |  | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NODE | LITERAL | 30 | true | This is the IEN in the Image File. | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL | 100 | true | This is the Flags parameter used in the call to GETS^DIQ.  If this is null, then the default of \IERN\ is used. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NODE | LITERAL | 30 | true | This is the IEN in the Image File. | 
+| FLAGS | LITERAL | 100 | true | This is the Flags parameter used in the call to GETS^DIQ.  If this is null, then the default of \IERN\ is used. | 

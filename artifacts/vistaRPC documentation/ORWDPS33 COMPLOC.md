@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORID | LITERAL |  | true | This is the IEN of the original order from file 100 | 
-| vs:Input_Parameter-8994_02 | LOC | LITERAL |  | true | This is the encounter location the order is being written for. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORID | LITERAL |  | true | This is the IEN of the original order from file 100 | 
+| LOC | LITERAL |  | true | This is the encounter location the order is being written for. | 

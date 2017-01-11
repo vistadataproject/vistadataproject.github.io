@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 256 |  | This input parameter contains the name of the individual to look up and inthe New Person file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL | 256 |  | This input parameter contains the name of the individual to look up and inthe New Person file. | 

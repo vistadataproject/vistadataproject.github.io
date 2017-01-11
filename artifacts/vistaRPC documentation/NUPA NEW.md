@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIC | LITERAL |  | true | File to add the entry to. | 
-| vs:Input_Parameter-8994_02 | ENTRY | LITERAL |  | true | Data to add to the file. | 
-| vs:Input_Parameter-8994_02 | three | LITERAL |  | true | Not currently used. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIC | LITERAL |  | true | File to add the entry to. | 
+| ENTRY | LITERAL |  | true | Data to add to the file. | 
+| three | LITERAL |  | true | Not currently used. | 

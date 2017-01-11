@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROMDT | LITERAL | 7 | true | Pass in FM date of Authorizations to start search  | 
-| vs:Input_Parameter-8994_02 | TODATE | LITERAL | 7 | true | Pass in FM date of Authorizations to end search | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROMDT | LITERAL | 7 | true | Pass in FM date of Authorizations to start search  | 
+| TODATE | LITERAL | 7 | true | Pass in FM date of Authorizations to end search | 

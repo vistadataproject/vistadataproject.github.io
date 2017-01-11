@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ENTITY | LITERAL | 30 | true | The ENTITY parameter defines the context that the parameter value isassociated with.  The values that are used most often are the \USR\ (user settings) and \PKG\ (package settings).  See the DBIA #2263 for more details. | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 30 | true | The NAME parameter defines the name of the GUI parameter. | 
-| vs:Input_Parameter-8994_02 | OLDINST | LITERAL | 60 | true | Current instance name of the GUI parameter. | 
-| vs:Input_Parameter-8994_02 | NEWINST | LITERAL | 60 | true | New instance name for the GUI parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ENTITY | LITERAL | 30 | true | The ENTITY parameter defines the context that the parameter value isassociated with.  The values that are used most often are the \USR\ (user settings) and \PKG\ (package settings).  See the DBIA #2263 for more details. | 
+| NAME | LITERAL | 30 | true | The NAME parameter defines the name of the GUI parameter. | 
+| OLDINST | LITERAL | 60 | true | Current instance name of the GUI parameter. | 
+| NEWINST | LITERAL | 60 | true | New instance name for the GUI parameter. | 

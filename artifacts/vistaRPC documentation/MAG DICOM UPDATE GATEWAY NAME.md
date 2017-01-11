@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OLDNAM | LITERAL | 30 | true | The value of this parameter is a string that identifiesthe current DICOM Gateway.This value corresponds to the one that is expectedto be the one currently stored in the VistA database. | 
-| vs:Input_Parameter-8994_02 | NEWNAM | LITERAL | 20 | true | The value of this parameter is a string that identifiesthe current DICOM Gateway.This value corresponds to the one that is to be enteredin the VistA database. | 
-| vs:Input_Parameter-8994_02 | OLDLOC | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is expectedto be the one currently stored in the VistA database. | 
-| vs:Input_Parameter-8994_02 | NEWLOC | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is to be enteredin the VistA database. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OLDNAM | LITERAL | 30 | true | The value of this parameter is a string that identifiesthe current DICOM Gateway.This value corresponds to the one that is expectedto be the one currently stored in the VistA database. | 
+| NEWNAM | LITERAL | 20 | true | The value of this parameter is a string that identifiesthe current DICOM Gateway.This value corresponds to the one that is to be enteredin the VistA database. | 
+| OLDLOC | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is expectedto be the one currently stored in the VistA database. | 
+| NEWLOC | LITERAL | 20 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is to be enteredin the VistA database. | 

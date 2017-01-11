@@ -17,13 +17,13 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | UNREAD LIST POINTER | LITERAL |  | true | A pointer to TELEREADER READ/UNREAD LIST file (#2006.5849) | 
-| vs:Input_Parameter-8994_02 | LOCK FLAG | LITERAL |  | true | LOCK FLAG = 1 TO CREATE THE LOCKLOCK FLAG = 0 TO REMOVE THE LOCK | 
-| vs:Input_Parameter-8994_02 | FULL NAME | LITERAL |  | true | FULL NAME OF READER (LAST,FIRST FORMAT) | 
-| vs:Input_Parameter-8994_02 | NAME ABBREVIATION | LITERAL |  | true | INITIALS FOR THE READER | 
-| vs:Input_Parameter-8994_02 | REMOTE DUZ | LITERAL |  | true | DUZ of the Reader at acquisition site | 
-| vs:Input_Parameter-8994_02 | LOCAL DUZ | LITERAL |  | true | DUZ of the Reader at reading site | 
-| vs:Input_Parameter-8994_02 | READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
-| vs:Input_Parameter-8994_02 | READER STATION | LITERAL |  |  | Reading Site's Station Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| UNREAD LIST POINTER | LITERAL |  | true | A pointer to TELEREADER READ/UNREAD LIST file (#2006.5849) | 
+| LOCK FLAG | LITERAL |  | true | LOCK FLAG = 1 TO CREATE THE LOCKLOCK FLAG = 0 TO REMOVE THE LOCK | 
+| FULL NAME | LITERAL |  | true | FULL NAME OF READER (LAST,FIRST FORMAT) | 
+| NAME ABBREVIATION | LITERAL |  | true | INITIALS FOR THE READER | 
+| REMOTE DUZ | LITERAL |  | true | DUZ of the Reader at acquisition site | 
+| LOCAL DUZ | LITERAL |  | true | DUZ of the Reader at reading site | 
+| READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
+| READER STATION | LITERAL |  |  | Reading Site's Station Number | 

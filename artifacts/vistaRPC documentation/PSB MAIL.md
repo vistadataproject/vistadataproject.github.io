@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBCMD | LITERAL | 30 | true | The type of action being attempted:        \CREATE\        \APPEND\        \SUBJECT\        \SENDTO\        \EXECUTE\ | 
-| vs:Input_Parameter-8994_02 | PSBDATA | REFERENCE | 80 | true | The text to be acted on. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBCMD | LITERAL | 30 | true | The type of action being attempted:        \CREATE\        \APPEND\        \SUBJECT\        \SENDTO\        \EXECUTE\ | 
+| PSBDATA | REFERENCE | 80 | true | The text to be acted on. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 50 | true | Patient IEN. | 
-| vs:Input_Parameter-8994_02 | ORLST | LIST | 255 | true | List of Orders. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 50 | true | Patient IEN. | 
+| ORLST | LIST | 255 | true | List of Orders. | 

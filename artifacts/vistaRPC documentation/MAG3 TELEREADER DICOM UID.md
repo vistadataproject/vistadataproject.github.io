@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true | MAGPARAM - array with input values           MAGPARAM(\TYPE\)= Type UID - \STUDY\, \SERIES\, \SOP\           MAGPARAM(\ACNUM\)= Accession number - Patient consult ID           MAGPARAM(\DFN\)= Patient DFN | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true | MAGPARAM - array with input values           MAGPARAM(\TYPE\)= Type UID - \STUDY\, \SERIES\, \SOP\           MAGPARAM(\ACNUM\)= Accession number - Patient consult ID           MAGPARAM(\DFN\)= Patient DFN | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DVBFIL | LITERAL |  | true | This paramater contains a valid file number. | 
-| vs:Input_Parameter-8994_02 | DVBFLD | LITERAL |  | true | This parameter contains a field in the file passed as DVBFIL. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DVBFIL | LITERAL |  | true | This paramater contains a valid file number. | 
+| DVBFLD | LITERAL |  | true | This parameter contains a field in the file passed as DVBFIL. | 

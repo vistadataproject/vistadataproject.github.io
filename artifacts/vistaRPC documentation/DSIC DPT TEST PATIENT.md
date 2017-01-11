@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PAT | LITERAL | 35 | true | This is any lookup value for a patient (name, SSN, DFN, etc.) | 
-| vs:Input_Parameter-8994_02 | ISSSN | LITERAL | 1 | true | This is a Boolean flag.  If 1, then the PAT lookup value is the patient's SSN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PAT | LITERAL | 35 | true | This is any lookup value for a patient (name, SSN, DFN, etc.) | 
+| ISSSN | LITERAL | 1 | true | This is a Boolean flag.  If 1, then the PAT lookup value is the patient's SSN. | 

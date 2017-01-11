@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 256 | true | This is the name or the partial name of the individual being looked up. | 
-| vs:Input_Parameter-8994_02 | CASESSN | LITERAL | 15 | true | This is the SSN for the Person Involved in the case.  It will be used to assurethat the Supervisor for the case is not the same as the Person Involved. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL | 256 | true | This is the name or the partial name of the individual being looked up. | 
+| CASESSN | LITERAL | 15 | true | This is the SSN for the Person Involved in the case.  It will be used to assurethat the Supervisor for the case is not the same as the Person Involved. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TEST | LITERAL |  |  | MENTAL HEALTH TEST NAME | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  |  | The user giving the test. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TEST | LITERAL |  |  | MENTAL HEALTH TEST NAME | 
+| USER | LITERAL |  |  | The user giving the test. | 

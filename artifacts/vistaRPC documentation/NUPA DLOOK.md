@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL |  | true | File number to do the lookup on. | 
-| vs:Input_Parameter-8994_02 | VAL | LITERAL |  | true | Value to lookup. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  | true | Type of file to lookup - variable pointer or date. | 
-| vs:Input_Parameter-8994_02 | SCR | LITERAL |  | true | Fileman screen for the lookup. | 
-| vs:Input_Parameter-8994_02 | IND | LITERAL |  | true | Index to lookup the data on. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL |  | true | File number to do the lookup on. | 
+| VAL | LITERAL |  | true | Value to lookup. | 
+| TYPE | LITERAL |  | true | Type of file to lookup - variable pointer or date. | 
+| SCR | LITERAL |  | true | Fileman screen for the lookup. | 
+| IND | LITERAL |  | true | Index to lookup the data on. | 

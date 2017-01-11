@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LITERAL |  | true | This required input parameter must contain the IEN and record number of thesubfile for witness information to be deleted. The input format is IEN^SUB. | 
-| vs:Input_Parameter-8994_02 | OOPS CHANGE CAS |  |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LITERAL |  | true | This required input parameter must contain the IEN and record number of thesubfile for witness information to be deleted. The input format is IEN^SUB. | 
+| OOPS CHANGE CAS |  |  |  |  | 

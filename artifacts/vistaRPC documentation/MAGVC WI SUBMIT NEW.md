@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MSGTAGS | LIST |  |  | This is an array of tag names and values describing the work item andits child objects. | 
-| vs:Input_Parameter-8994_02 | STAT | LITERAL |  | true | The STAT flag, set to 1, initiates a query before returning data. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MSGTAGS | LIST |  |  | This is an array of tag names and values describing the work item andits child objects. | 
+| STAT | LITERAL |  | true | The STAT flag, set to 1, initiates a query before returning data. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDFN | LITERAL | 30 | true | Patient's DFN. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 4 | true | The maximum number of images to return. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDFN | LITERAL | 30 | true | Patient's DFN. | 
+| MAX | LITERAL | 4 | true | The maximum number of images to return. | 

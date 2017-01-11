@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL |  | true | File number to list data from. | 
-| vs:Input_Parameter-8994_02 | FILEDS | LITERAL |  | true | Other fields in format FILE^Field 1^Field 2 etc. | 
-| vs:Input_Parameter-8994_02 | SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL |  | true | File number to list data from. | 
+| FILEDS | LITERAL |  | true | Other fields in format FILE^Field 1^Field 2 etc. | 
+| SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 

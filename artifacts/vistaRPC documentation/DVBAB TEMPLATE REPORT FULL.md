@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STRTDT | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | ENDDT | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | DVBDLMT | LITERAL |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STRTDT | LITERAL |  |  |  | 
+| ENDDT | LITERAL |  |  |  | 
+| DVBDLMT | LITERAL |  |  |  | 

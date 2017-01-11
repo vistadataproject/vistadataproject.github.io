@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SING | LITERAL | 256 | true | The IEN of the ASISTS case to have an Amendment created for is passed in. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SING | LITERAL | 256 | true | The IEN of the ASISTS case to have an Amendment created for is passed in. | 

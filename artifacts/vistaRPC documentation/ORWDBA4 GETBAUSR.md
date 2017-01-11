@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORCIEN | REFERENCE | 255 | true | This is the interanl ID number of the clinicial who is being checked for the value of the Enable Billing Awareness Parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORCIEN | REFERENCE | 255 | true | This is the interanl ID number of the clinicial who is being checked for the value of the Enable Billing Awareness Parameter. | 

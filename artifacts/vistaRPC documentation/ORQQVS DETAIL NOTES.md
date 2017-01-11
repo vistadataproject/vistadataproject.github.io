@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Patient DFN | LITERAL | 16 | true | Patient identifier (DFN) from File #2 (Patient). | 
-| vs:Input_Parameter-8994_02 | Visit | LITERAL | 16 | true | Visit identifier. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Patient DFN | LITERAL | 16 | true | Patient identifier (DFN) from File #2 (Patient). | 
+| Visit | LITERAL | 16 | true | Visit identifier. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUFROM | LITERAL |  | true | Value to begin patient list. | 
-| vs:Input_Parameter-8994_02 | TIUDIR | LITERAL |  | true | Boolean value for list direction. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUFROM | LITERAL |  | true | Value to begin patient list. | 
+| TIUDIR | LITERAL |  | true | Boolean value for list direction. | 

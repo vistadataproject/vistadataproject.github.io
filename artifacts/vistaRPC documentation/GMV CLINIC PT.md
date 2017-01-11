@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLIN | LITERAL | 30 | true | CLIN contains the name of the selected clinic from the Hospital Locationfile (#44). | 
-| vs:Input_Parameter-8994_02 | BDATE | LITERAL | 30 | true | BDATE contains TODAY, TOMORROW, YESTERDAY, PAST WEEK or PAST MONTH. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLIN | LITERAL | 30 | true | CLIN contains the name of the selected clinic from the Hospital Locationfile (#44). | 
+| BDATE | LITERAL | 30 | true | BDATE contains TODAY, TOMORROW, YESTERDAY, PAST WEEK or PAST MONTH. | 

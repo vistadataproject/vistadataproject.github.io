@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VALUE | LITERAL | 16 | true | The VALUE can come in as 'I.ICN', 'S.SSN', 'D.DFN'or 'P.NAME' | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true |  | 
-| vs:Input_Parameter-8994_02 | SDT | LITERAL | 30 | true |  | 
-| vs:Input_Parameter-8994_02 | EDT | LITERAL | 30 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VALUE | LITERAL | 16 | true | The VALUE can come in as 'I.ICN', 'S.SSN', 'D.DFN'or 'P.NAME' | 
+| SSN | LITERAL | 9 | true |  | 
+| SDT | LITERAL | 30 | true |  | 
+| EDT | LITERAL | 30 | true |  | 

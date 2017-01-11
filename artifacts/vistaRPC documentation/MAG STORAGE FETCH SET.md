@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 10 | true | Image IEN | 
-| vs:Input_Parameter-8994_02 | NTLOC | LITERAL | 5 | true | IEN of NETWORK LOCATION file (#2005.2) to be set in IMAGE file (#2005). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGIEN | LITERAL | 10 | true | Image IEN | 
+| NTLOC | LITERAL | 5 | true | IEN of NETWORK LOCATION file (#2005.2) to be set in IMAGE file (#2005). | 

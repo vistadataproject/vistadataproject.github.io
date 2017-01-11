@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PERSON | LITERAL | 40 | true | This parameter contains either the employee's name or employee's socialsecurity number.  Using this parameter a list of all the CA-7's for thisindividual will be returned.  | 
-| vs:Input_Parameter-8994_02 | CALL | LITERAL | 20 | true | This parameter contains the file number and the menu that called this brokercall.  The menu the broker is called from helps determine which cases canbe returned in the list.  If from the employee menu, then only cases for thatemployee are included, if from the WC menu, then all the CA-7's for the personwhose name is passed in. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PERSON | LITERAL | 40 | true | This parameter contains either the employee's name or employee's socialsecurity number.  Using this parameter a list of all the CA-7's for thisindividual will be returned.  | 
+| CALL | LITERAL | 20 | true | This parameter contains the file number and the menu that called this brokercall.  The menu the broker is called from helps determine which cases canbe returned in the list.  If from the employee menu, then only cases for thatemployee are included, if from the WC menu, then all the CA-7's for the personwhose name is passed in. | 

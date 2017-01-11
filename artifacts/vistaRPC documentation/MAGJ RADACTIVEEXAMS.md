@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 50 | true | The input string supplies two parameters: LIST_TYPE ^ MODALITY  LIST_TYPE:  \U\--UNREAD Exams List; or,               \R\--RECENT Exams List               \ALL\--All Active Exams  MODALITY:   \ALL\--list for all modalities; or,              ABB[^ABB^...] where ABB is the Radiology Imaging Type                Abbreviation (Imaging Types will correspond to modalities) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 50 | true | The input string supplies two parameters: LIST_TYPE ^ MODALITY  LIST_TYPE:  \U\--UNREAD Exams List; or,               \R\--RECENT Exams List               \ALL\--All Active Exams  MODALITY:   \ALL\--list for all modalities; or,              ABB[^ABB^...] where ABB is the Radiology Imaging Type                Abbreviation (Imaging Types will correspond to modalities) | 

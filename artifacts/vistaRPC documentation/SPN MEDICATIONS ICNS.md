@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | Date to begin Medications search | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | Date to end Medications search | 
-| vs:Input_Parameter-8994_02 | VADC | LITERAL |  |  | VA Drug Class list (array format) | 
-| vs:Input_Parameter-8994_02 | ICNLST | LITERAL |  |  | List of ICNs to search from | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FDATE | LITERAL |  |  | Date to begin Medications search | 
+| TDATE | LITERAL |  |  | Date to end Medications search | 
+| VADC | LITERAL |  |  | VA Drug Class list (array format) | 
+| ICNLST | LITERAL |  |  | List of ICNs to search from | 

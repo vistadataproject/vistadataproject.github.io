@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | D0 | LITERAL | 30 | true | The value of this parameter is a pointer to an entry in theTransmission Queue (^MAGQUEUE(2006.035,D0)).The status of this entry in the Transmission Queue will beupdated by this RPC. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL | 30 | true | The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| D0 | LITERAL | 30 | true | The value of this parameter is a pointer to an entry in theTransmission Queue (^MAGQUEUE(2006.035,D0)).The status of this entry in the Transmission Queue will beupdated by this RPC. | 
+| STATUS | LITERAL | 30 | true | The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Vista Patient Identifier | LITERAL | 255 | true | Vista Patient Identifier will be the PATIENT (#2) file IEN (aka DFN). Example: DFN=\7168937\ | 
-| vs:Input_Parameter-8994_02 | DOD Identifier | LITERAL | 255 | true | The DOD Identifier will be EDIPI data with the following format:  Id^IdType^AssigningAuthority^AssigningFacility  Example: EDIPI=\852043888^NI^USDOD^200DOD\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Vista Patient Identifier | LITERAL | 255 | true | Vista Patient Identifier will be the PATIENT (#2) file IEN (aka DFN). Example: DFN=\7168937\ | 
+| DOD Identifier | LITERAL | 255 | true | The DOD Identifier will be EDIPI data with the following format:  Id^IdType^AssigningAuthority^AssigningFacility  Example: EDIPI=\852043888^NI^USDOD^200DOD\ | 

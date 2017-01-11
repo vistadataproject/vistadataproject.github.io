@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLASS | LITERAL |  | true | This is a pointer to the CLASS in the Document Definition File (#8925.1)from which the application intends to allow selection of TITLES. | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL |  | true | This is the reference title from which the longlist is scrolling. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL |  |  | This is the direction in which the longlist is scrolling from thereference title. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLASS | LITERAL |  | true | This is a pointer to the CLASS in the Document Definition File (#8925.1)from which the application intends to allow selection of TITLES. | 
+| FROM | LITERAL |  | true | This is the reference title from which the longlist is scrolling. | 
+| DIR | LITERAL |  |  | This is the direction in which the longlist is scrolling from thereference title. | 

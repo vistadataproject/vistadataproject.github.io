@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SUBSCRIPT | LITERAL | 60 | true | Timing subscript - free text         example: \ORWCV\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SUBSCRIPT | LITERAL | 60 | true | Timing subscript - free text         example: \ORWCV\ | 

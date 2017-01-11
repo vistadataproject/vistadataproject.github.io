@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CONSULT ID | LITERAL | 16 | true | Internal file number of the consult/request. | 
-| vs:Input_Parameter-8994_02 | PROVIDER ID | LITERAL | 16 | true | Internal file number of the person discontinuing/denying the consult.Points to NEW PERSON file (#200) | 
-| vs:Input_Parameter-8994_02 | DATE OF ACTION | LITERAL | 16 | true | Date of the discontinuance/denial of the consult. | 
-| vs:Input_Parameter-8994_02 | ACTION TYPE | LITERAL | 16 | true | 'DC' for discontinue, 'DY' for deny | 
-| vs:Input_Parameter-8994_02 | COMMENTS | WORD PROCESSING |  | true | Array of comments related to the discontinuance/denial of the consult. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CONSULT ID | LITERAL | 16 | true | Internal file number of the consult/request. | 
+| PROVIDER ID | LITERAL | 16 | true | Internal file number of the person discontinuing/denying the consult.Points to NEW PERSON file (#200) | 
+| DATE OF ACTION | LITERAL | 16 | true | Date of the discontinuance/denial of the consult. | 
+| ACTION TYPE | LITERAL | 16 | true | 'DC' for discontinue, 'DY' for deny | 
+| COMMENTS | WORD PROCESSING |  | true | Array of comments related to the discontinuance/denial of the consult. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Patient IEN number. | 
-| vs:Input_Parameter-8994_02 | TIME | LITERAL |  | true | A time range, in hours, to search backwards through the BCMA MEDICATION LOG file #53.79 for injection site data.  | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL |  | true | The maximum number of injection site items to return within the Time Range specified. | 
-| vs:Input_Parameter-8994_02 | PSBOI | LITERAL |  | true | Orderable Item IEN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | Patient IEN number. | 
+| TIME | LITERAL |  | true | A time range, in hours, to search backwards through the BCMA MEDICATION LOG file #53.79 for injection site data.  | 
+| MAX | LITERAL |  | true | The maximum number of injection site items to return within the Time Range specified. | 
+| PSBOI | LITERAL |  | true | Orderable Item IEN. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PROV | LITERAL |  | true | The provider DUZ that is to be checked. | 
-| vs:Input_Parameter-8994_02 | DENTDAT | LITERAL |  |  | This is the date used to determine the providers class (in case a historical lookup is required). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PROV | LITERAL |  | true | The provider DUZ that is to be checked. | 
+| DENTDAT | LITERAL |  |  | This is the date used to determine the providers class (in case a historical lookup is required). | 

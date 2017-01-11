@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PLACE | LITERAL | 4 | true | This is the reference to the Site Parameter file to which the BP Servers are assigned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PLACE | LITERAL | 4 | true | This is the reference to the Site Parameter file to which the BP Servers are assigned. | 

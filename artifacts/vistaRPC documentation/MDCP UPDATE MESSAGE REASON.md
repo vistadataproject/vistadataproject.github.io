@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MDCPMSG | LITERAL | 250 | true | This is the IFN of the HL7 message in the CLIO_HL7_LOG file. | 
-| vs:Input_Parameter-8994_02 | MDCPTEXT | LITERAL | 250 | true | This is the text to add to the CLIO_HL7_LOG file.  Note that this text will completely overwrite the text that was already in the reason field. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MDCPMSG | LITERAL | 250 | true | This is the IFN of the HL7 message in the CLIO_HL7_LOG file. | 
+| MDCPTEXT | LITERAL | 250 | true | This is the text to add to the CLIO_HL7_LOG file.  Note that this text will completely overwrite the text that was already in the reason field. | 

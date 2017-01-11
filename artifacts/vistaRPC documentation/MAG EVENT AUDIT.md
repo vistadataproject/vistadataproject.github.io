@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | EVENT | LITERAL | 30 | true | This is the event being audited.  It must be a valid entry on the IMAGING EVENT ACTION File (#2006.931). | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL | 64 |  | This is the host name of the host machine whose event is being audited. | 
-| vs:Input_Parameter-8994_02 | APPNAME | LITERAL | 64 |  | This is the application name of the application whose event is being audited. | 
-| vs:Input_Parameter-8994_02 | MESSAGE | LITERAL | 250 |  | This is the message associated with the audit event. | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 129 |  | This is a list of data attribute names and associated values to be includedin the audit event log. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| EVENT | LITERAL | 30 | true | This is the event being audited.  It must be a valid entry on the IMAGING EVENT ACTION File (#2006.931). | 
+| HOSTNAME | LITERAL | 64 |  | This is the host name of the host machine whose event is being audited. | 
+| APPNAME | LITERAL | 64 |  | This is the application name of the application whose event is being audited. | 
+| MESSAGE | LITERAL | 250 |  | This is the message associated with the audit event. | 
+| DATA | LIST | 129 |  | This is a list of data attribute names and associated values to be includedin the audit event log. | 

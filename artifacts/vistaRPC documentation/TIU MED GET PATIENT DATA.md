@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDFN | LITERAL |  | true | This is the patient IEN. | 
-| vs:Input_Parameter-8994_02 | TIUSEC | LITERAL |  | true | This BOOLEAN value allows sensitive patient data to be displayed or hidden. | 
-| vs:Input_Parameter-8994_02 | TIUGHS | LITERAL |  | true | This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDFN | LITERAL |  | true | This is the patient IEN. | 
+| TIUSEC | LITERAL |  | true | This BOOLEAN value allows sensitive patient data to be displayed or hidden. | 
+| TIUGHS | LITERAL |  | true | This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data. | 

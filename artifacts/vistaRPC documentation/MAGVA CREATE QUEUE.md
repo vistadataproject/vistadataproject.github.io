@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true |  MAGPARAM(\NAME\) MAGPARAM(\ACTIVE\) = 0/1 MAGPARAM(\QUEUE TYPE\) MAGPARAM(\NUM RETRIES\) MAGPARAM(\RETRY DELAY IN SECONDS\) MAGPARAM(\TRIGGER DELAY IN SECONDS\) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true |  MAGPARAM(\NAME\) MAGPARAM(\ACTIVE\) = 0/1 MAGPARAM(\QUEUE TYPE\) MAGPARAM(\NUM RETRIES\) MAGPARAM(\RETRY DELAY IN SECONDS\) MAGPARAM(\TRIGGER DELAY IN SECONDS\) | 

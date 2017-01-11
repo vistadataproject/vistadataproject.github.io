@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLASS | LITERAL | 100 | true | \,\ Delimited list of Classes to get the list of Note Titles for. | 
-| vs:Input_Parameter-8994_02 | MYLIST | LITERAL | 30 | true | If '1', then return list of 'Users' TIU Titles.If '0' or null, then return long list of titles. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLASS | LITERAL | 100 | true | \,\ Delimited list of Classes to get the list of Note Titles for. | 
+| MYLIST | LITERAL | 30 | true | If '1', then return list of 'Users' TIU Titles.If '0' or null, then return long list of titles. | 

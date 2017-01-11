@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACNUMB | LITERAL | 30 | true | The accession number in either a 'sss-mmddyy-xxxxx' or   'mmddyy-xxxxx' format | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACNUMB | LITERAL | 30 | true | The accession number in either a 'sss-mmddyy-xxxxx' or   'mmddyy-xxxxx' format | 

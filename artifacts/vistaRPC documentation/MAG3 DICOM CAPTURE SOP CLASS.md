@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGSOP | LITERAL |  | true | MAGSOP = SOP type (e.g. \TELEDERM\) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGSOP | LITERAL |  | true | MAGSOP = SOP type (e.g. \TELEDERM\) | 

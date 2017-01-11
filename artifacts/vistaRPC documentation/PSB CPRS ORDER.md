@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBHDR | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | PSBREC | LIST |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBHDR | LITERAL |  | true |  | 
+| PSBREC | LIST |  | true |  | 

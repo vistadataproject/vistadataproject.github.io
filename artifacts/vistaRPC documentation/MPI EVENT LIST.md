@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SOURCEID | LITERAL | 200 | true | This parameter is a list of ICN/VPID's that IMDQ Toolkit will provide toget a listing of all of the related LINK and DO NOT LINK events.  Theformat of this parameter is as follows: ICNLIST - LIST OF ICN'S  Format:A comma delimited list of Source IDs, each Source ID in the format: ICN/VPID|SourceSytemID|SourceAssigningAuthority|IDType  Example: 1001170718V338193|200M|USVHA|NI,101178194V591076|200M|USVHA|NI,1008521877V768382|200M|USVHA|NI,1008522314V828468|200M|USVHA|NI | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SOURCEID | LITERAL | 200 | true | This parameter is a list of ICN/VPID's that IMDQ Toolkit will provide toget a listing of all of the related LINK and DO NOT LINK events.  Theformat of this parameter is as follows: ICNLIST - LIST OF ICN'S  Format:A comma delimited list of Source IDs, each Source ID in the format: ICN/VPID|SourceSytemID|SourceAssigningAuthority|IDType  Example: 1001170718V338193|200M|USVHA|NI,101178194V591076|200M|USVHA|NI,1008521877V768382|200M|USVHA|NI,1008522314V828468|200M|USVHA|NI | 

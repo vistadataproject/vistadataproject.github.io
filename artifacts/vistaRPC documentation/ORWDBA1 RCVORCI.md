@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIAG | LIST | 255 | true | Array of Orders and Clinical Indicators returned from CPRS | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIAG | LIST | 255 | true | Array of Orders and Clinical Indicators returned from CPRS | 

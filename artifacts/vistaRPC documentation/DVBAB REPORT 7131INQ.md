@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ZDFN | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | RECIEN | LITERAL |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ZDFN | LITERAL |  | true |  | 
+| RECIEN | LITERAL |  | true |  | 

@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 35 | true | Search on user name. | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true | Search on user Social Security Number (SSN). The user calling this RPCmust hold the XUSHOWSSN Security Key to search using SSN. | 
-| vs:Input_Parameter-8994_02 | DOB | LITERAL | 15 | true | Search on user Date of Birth (DOB). The user calling this RPC must hold the XUSHOWSSN Security Key to search using DOB. | 
-| vs:Input_Parameter-8994_02 | ADUPN | LITERAL | 50 | true | Search on user Active Directory UPN. | 
-| vs:Input_Parameter-8994_02 | SECID | LITERAL | 30 | true | Search on user Security ID. | 
-| vs:Input_Parameter-8994_02 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL | 35 | true | Search on user name. | 
+| SSN | LITERAL | 9 | true | Search on user Social Security Number (SSN). The user calling this RPCmust hold the XUSHOWSSN Security Key to search using SSN. | 
+| DOB | LITERAL | 15 | true | Search on user Date of Birth (DOB). The user calling this RPC must hold the XUSHOWSSN Security Key to search using DOB. | 
+| ADUPN | LITERAL | 50 | true | Search on user Active Directory UPN. | 
+| SECID | LITERAL | 30 | true | Search on user Security ID. | 
+| AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 

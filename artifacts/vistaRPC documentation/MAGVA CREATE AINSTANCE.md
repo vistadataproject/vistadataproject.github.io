@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT\) MAGPARAM(\STORAGE PROVIDER\) MAGPARAM(\FILEREF\) MAGPARAM(\DISK VOLUME\) MAGPARAM(\FILEPATH\) | 
-| vs:Input_Parameter-8994_02 | MAGURL | LIST |  | true | MAGURL(1..n) = URL value  URL value is split in individual records in MAGURL | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT\) MAGPARAM(\STORAGE PROVIDER\) MAGPARAM(\FILEREF\) MAGPARAM(\DISK VOLUME\) MAGPARAM(\FILEPATH\) | 
+| MAGURL | LIST |  | true | MAGURL(1..n) = URL value  URL value is split in individual records in MAGURL | 

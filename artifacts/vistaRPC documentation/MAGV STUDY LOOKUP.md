@@ -17,12 +17,12 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CASENUMB | LITERAL | 16 | true | CASENUMB = ACCESSION NUMBER PASSED FROM THE CLIENT. | 
-| vs:Input_Parameter-8994_02 | IMGSVC | LITERAL | 3 | true | RAD OR CON.  No other entries are allowed. | 
-| vs:Input_Parameter-8994_02 | PNAMEDCM | LITERAL | 64 | true | Patient's Name from the DICOM header (0010,0010). | 
-| vs:Input_Parameter-8994_02 | PIDDCM | LITERAL | 64 | true | Patient ID from DICOM header (0010,0020). | 
-| vs:Input_Parameter-8994_02 | PDOBDCM | LITERAL | 8 | true | Patient's Birth Date from DICOM header (0010,0030). | 
-| vs:Input_Parameter-8994_02 | PSEXDCM | LITERAL | 1 | true | Patient's Sex from DICOM header (0010,0040). | 
-| vs:Input_Parameter-8994_02 | PICNDCM | LITERAL | 16 | true | Patient's VA Integration Control Number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CASENUMB | LITERAL | 16 | true | CASENUMB = ACCESSION NUMBER PASSED FROM THE CLIENT. | 
+| IMGSVC | LITERAL | 3 | true | RAD OR CON.  No other entries are allowed. | 
+| PNAMEDCM | LITERAL | 64 | true | Patient's Name from the DICOM header (0010,0010). | 
+| PIDDCM | LITERAL | 64 | true | Patient ID from DICOM header (0010,0020). | 
+| PDOBDCM | LITERAL | 8 | true | Patient's Birth Date from DICOM header (0010,0030). | 
+| PSEXDCM | LITERAL | 1 | true | Patient's Sex from DICOM header (0010,0040). | 
+| PICNDCM | LITERAL | 16 | true | Patient's VA Integration Control Number. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACT | LITERAL | 1 | true | ACT - INDICATED IF A STATUS IS ACTIVE (1) OR INACTIVE (0). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACT | LITERAL | 1 | true | ACT - INDICATED IF A STATUS IS ACTIVE (1) OR INACTIVE (0). | 

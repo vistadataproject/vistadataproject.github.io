@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OFFSET | LITERAL | 100 | true | The value of this parameter is a string. The first time this Remote Procedure is called for a certain\master file\, the value of this parameter must be empty. Each next time this Remote Procedure is called for the same\master file\, the value of this parameter must be copied fromthe return array, so that the Remote Procedure will continuewhere it left off in the previous call. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 15 | true | The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OFFSET | LITERAL | 100 | true | The value of this parameter is a string. The first time this Remote Procedure is called for a certain\master file\, the value of this parameter must be empty. Each next time this Remote Procedure is called for the same\master file\, the value of this parameter must be copied fromthe return array, so that the Remote Procedure will continuewhere it left off in the previous call. | 
+| MAX | LITERAL | 15 | true | The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure. | 

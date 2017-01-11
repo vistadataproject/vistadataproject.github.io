@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | APPNAME | LITERAL |  | true | This is the Application Name (AE NAME) to lookup. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL |  |  | This is the location used to filter the DICOM AE SECURITY MATRIX entries. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| APPNAME | LITERAL |  | true | This is the Application Name (AE NAME) to lookup. | 
+| LOCATION | LITERAL |  |  | This is the location used to filter the DICOM AE SECURITY MATRIX entries. | 

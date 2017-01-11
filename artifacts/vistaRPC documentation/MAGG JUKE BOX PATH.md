@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 30 | true | MAGIEN is IEN number in IMAGE file (#2005) or IMAGE AUDIT file (#2005.1) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGIEN | LITERAL | 30 | true | MAGIEN is IEN number in IMAGE file (#2005) or IMAGE AUDIT file (#2005.1) | 

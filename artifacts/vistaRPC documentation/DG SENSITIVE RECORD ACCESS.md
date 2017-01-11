@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | DFN = Patient (#2) file DFN. | 
-| vs:Input_Parameter-8994_02 | DGMSG | LITERAL | 1 | true | DGMSG = 1 - if message should be generated when a user's SSN is undefined        0 - message will not be generated        If not defined, defaults to 1. | 
-| vs:Input_Parameter-8994_02 | DGOPT | LITERAL |  | true | Contains Option name^Menu text for DG Security Log update. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | DFN = Patient (#2) file DFN. | 
+| DGMSG | LITERAL | 1 | true | DGMSG = 1 - if message should be generated when a user's SSN is undefined        0 - message will not be generated        If not defined, defaults to 1. | 
+| DGOPT | LITERAL |  | true | Contains Option name^Menu text for DG Security Log update. | 

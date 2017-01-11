@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 20 | true | Input is 1 or 0;  1=screen for remote only; 0=no screen applied | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 20 | true | Input is 1 or 0;  1=screen for remote only; 0=no screen applied | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ENT | LIST |  | true | Input Array: Note text on each line | 
-| vs:Input_Parameter-8994_02 | LRAC | LITERAL | 14 | true | Accession Code for the case | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ENT | LIST |  | true | Input Array: Note text on each line | 
+| LRAC | LITERAL | 14 | true | Accession Code for the case | 

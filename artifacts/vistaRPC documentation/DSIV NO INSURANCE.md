@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 30 | true | Contains the patient ien. | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 80 | true | Contains the field and value to update for ICB file 354.  The format is DATA(field)=value.  Example is DATA(60)=3060328. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 30 | true | Contains the patient ien. | 
+| DATA | LIST | 80 | true | Contains the field and value to update for ICB file 354.  The format is DATA(field)=value.  Example is DATA(60)=3060328. | 

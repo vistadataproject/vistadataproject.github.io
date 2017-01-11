@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MENU | LITERAL | 5 | true | The value of this parameter is a numeric value. This value indicateswhether or not the procedure is called from the VistA menu.When called from the menu (the value of this parameter is TRUE),status information is displayed interactively as the procedureis active.When called as a Remote Procedure (the value of this parameteris FALSE), only a status code is returned to the client and nointeractive output is generated. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MENU | LITERAL | 5 | true | The value of this parameter is a numeric value. This value indicateswhether or not the procedure is called from the VistA menu.When called from the menu (the value of this parameter is TRUE),status information is displayed interactively as the procedureis active.When called as a Remote Procedure (the value of this parameteris FALSE), only a status code is returned to the client and nointeractive output is generated. | 

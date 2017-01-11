@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 36 | true | DATE for IMAGE file (#2005) IEN search by Image Saved Date | 
-| vs:Input_Parameter-8994_02 | LIMIT | LITERAL |  |  | LIMIT - 0: LIMIT ONE YEAR RANGE        1: NONE | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATE | LITERAL | 36 | true | DATE for IMAGE file (#2005) IEN search by Image Saved Date | 
+| LIMIT | LITERAL |  |  | LIMIT - 0: LIMIT ONE YEAR RANGE        1: NONE | 

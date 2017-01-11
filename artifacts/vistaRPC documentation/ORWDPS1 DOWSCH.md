@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | LOCIEN | LITERAL |  | true | This is the Location IEN from file 44 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true |  | 
+| LOCIEN | LITERAL |  | true | This is the Location IEN from file 44 | 

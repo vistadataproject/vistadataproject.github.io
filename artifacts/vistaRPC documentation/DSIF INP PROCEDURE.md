@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CODE | LITERAL | 10 | true | The procedure code (external format) you wish to lookup (file #80.1). | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 12 | true | The date you wish to check the code against code set versioning. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CODE | LITERAL | 10 | true | The procedure code (external format) you wish to lookup (file #80.1). | 
+| DATE | LITERAL | 12 | true | The date you wish to check the code against code set versioning. | 

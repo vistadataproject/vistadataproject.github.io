@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 30 | true | This is the IEN of the Image Group in MAG(2005 file. | 
-| vs:Input_Parameter-8994_02 | CODE | LITERAL | 10 | true |         ; CODE is a string code for which images to Queue        ;     [\A\ Abatract        ;     [\F\ Full Resolution        ;     [\B\ Big File | 
-| vs:Input_Parameter-8994_02 | QCODE | LITERAL | 10 | true |  QCODE is a QUEUE code.  If = 1 then this is a prefetch | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGIEN | LITERAL | 30 | true | This is the IEN of the Image Group in MAG(2005 file. | 
+| CODE | LITERAL | 10 | true |         ; CODE is a string code for which images to Queue        ;     [\A\ Abatract        ;     [\F\ Full Resolution        ;     [\B\ Big File | 
+| QCODE | LITERAL | 10 | true |  QCODE is a QUEUE code.  If = 1 then this is a prefetch | 

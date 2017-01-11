@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  | true | External value of TYPE field (#2006.941,1) | 
-| vs:Input_Parameter-8994_02 | SUBTYPE | LITERAL |  | true | External value of SUBTYPE field (#2006.941,2) | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL |  | true | External value of STATUS field (#2006.941,3) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL |  | true | External value of TYPE field (#2006.941,1) | 
+| SUBTYPE | LITERAL |  | true | External value of SUBTYPE field (#2006.941,2) | 
+| STATUS | LITERAL |  | true | External value of STATUS field (#2006.941,3) | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 60 | true | Ien in format \MultipleIen,Ien\ for file #3.075 (ERROR LOG). | 
-| vs:Input_Parameter-8994_02 | PARAM2 | LITERAL | 60 | true | Temporary global storage.  This must be either ^TMP or ^UTILITY. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM1 | LITERAL | 60 | true | Ien in format \MultipleIen,Ien\ for file #3.075 (ERROR LOG). | 
+| PARAM2 | LITERAL | 60 | true | Temporary global storage.  This must be either ^TMP or ^UTILITY. | 

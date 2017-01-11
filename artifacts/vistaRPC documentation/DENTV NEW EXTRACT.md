@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LIST | 30 | true | This is the input array for queuing the Dental Extract.  The following input format is required:    DATA(\STARTDT\)=Start Date MM/DD/YYYY    DATA(\ENDDT\)=End Date MM/DD/YYYY    DATA(\RUNDTTM\)=Run Date/Time (task date) MM/DD/YYYY@HH:MM:SS    DATA(\FILE\)=folder/file location, e.g. C:\\Temp\\Extract.txt    DATA(\IPADX\)=IP address    DATA(\PORT\)=Port#    DATA(\PROVIEN\)=optional Provider IENs p1^p2^p3, etc    DATA(\FORMAT\)=0 for excel, 1 for access    DATA(\TXNS\)=optional CPFO or any combination of transaction statuses                     (compl/plan/find/obs)    DATA(\STN\)=optional facility | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LIST | 30 | true | This is the input array for queuing the Dental Extract.  The following input format is required:    DATA(\STARTDT\)=Start Date MM/DD/YYYY    DATA(\ENDDT\)=End Date MM/DD/YYYY    DATA(\RUNDTTM\)=Run Date/Time (task date) MM/DD/YYYY@HH:MM:SS    DATA(\FILE\)=folder/file location, e.g. C:\\Temp\\Extract.txt    DATA(\IPADX\)=IP address    DATA(\PORT\)=Port#    DATA(\PROVIEN\)=optional Provider IENs p1^p2^p3, etc    DATA(\FORMAT\)=0 for excel, 1 for access    DATA(\TXNS\)=optional CPFO or any combination of transaction statuses                     (compl/plan/find/obs)    DATA(\STN\)=optional facility | 

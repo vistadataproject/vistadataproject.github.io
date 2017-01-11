@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 256 | true | Contains a list with the PCE Visit and Primary Dx and/or Provider defined:DATA(1)=visit ien^visit dateDATA(n)=1^\POV\^dx ien^dx external^^descDATA(n)=1^\PRV\^provider ien(file 200)^provider name | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LIST | 256 | true | Contains a list with the PCE Visit and Primary Dx and/or Provider defined:DATA(1)=visit ien^visit dateDATA(n)=1^\POV\^dx ien^dx external^^descDATA(n)=1^\PRV\^provider ien(file 200)^provider name | 

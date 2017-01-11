@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | REQUEST IEN | LITERAL | 99 | true | IEN of entry in file 19620 ROI INSTANCE. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| REQUEST IEN | LITERAL | 99 | true | IEN of entry in file 19620 ROI INSTANCE. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL |  | true | This is a string of ^-delimited attributes of a new task, in the form  Subject^Created^ByWhom^Patient^Priority^Due^Completed^ByWhom^Itemswhere Subject   = Text subject of task      Created   = date task was created, as YYYYMMDDHHMMSS      ByWhom    = user who created task, as pointer to #200      Patient   = patient that task is for, as pointer to #2      Priority  = H, M, or L      Due       = date task is due to be completed, as YYYMMDD[HHMM]      Completed = date task was completed as, YYYYMMDDHHMM      ByWhom    = user who completed task, as pointer to #200      Items     = linked items as ID,ID,...,ID where ID is XXX:### as                  DOC:### = documents in #8925                  ORR:### = order results in #100 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL |  | true | This is a string of ^-delimited attributes of a new task, in the form  Subject^Created^ByWhom^Patient^Priority^Due^Completed^ByWhom^Itemswhere Subject   = Text subject of task      Created   = date task was created, as YYYYMMDDHHMMSS      ByWhom    = user who created task, as pointer to #200      Patient   = patient that task is for, as pointer to #2      Priority  = H, M, or L      Due       = date task is due to be completed, as YYYMMDD[HHMM]      Completed = date task was completed as, YYYYMMDDHHMM      ByWhom    = user who completed task, as pointer to #200      Items     = linked items as ID,ID,...,ID where ID is XXX:### as                  DOC:### = documents in #8925                  ORR:### = order results in #100 | 

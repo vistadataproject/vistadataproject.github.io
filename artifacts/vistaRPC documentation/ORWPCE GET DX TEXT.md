@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NARR | LITERAL |  | true | This is the narrative entered for the Dx. | 
-| vs:Input_Parameter-8994_02 | CODE | LITERAL |  | true | This is the ICD code. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NARR | LITERAL |  | true | This is the narrative entered for the Dx. | 
+| CODE | LITERAL |  | true | This is the ICD code. | 

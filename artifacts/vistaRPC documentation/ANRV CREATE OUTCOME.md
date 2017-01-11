@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RESULTS | LITERAL |  | true | Results passed back to calling application | 
-| vs:Input_Parameter-8994_02 | PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL | 50 | true | Whether Inpatient or Outpatient. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RESULTS | LITERAL |  | true | Results passed back to calling application | 
+| PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
+| STATUS | LITERAL | 50 | true | Whether Inpatient or Outpatient. | 

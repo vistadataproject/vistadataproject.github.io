@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PROCIEN | LITERAL | 10 | true | This is the internal entry number of the requested procedure on the IMAGING PROCEDURE REFERENCE File (#2005.61). | 
-| vs:Input_Parameter-8994_02 | PATIEN | LITERAL | 10 | true | This is the internal entry number on the IMAGING PATIENT REFERENCE File (#2005.6) of the patient reference with which this procedure reference is associated. | 
-| vs:Input_Parameter-8994_02 | OVERRIDE | LITERAL | 3 |  | This parameter should be used with EXTREME CAUTION.  It suppresses the validation of the patient reference against the procedure reference with which it is associated. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PROCIEN | LITERAL | 10 | true | This is the internal entry number of the requested procedure on the IMAGING PROCEDURE REFERENCE File (#2005.61). | 
+| PATIEN | LITERAL | 10 | true | This is the internal entry number on the IMAGING PATIENT REFERENCE File (#2005.6) of the patient reference with which this procedure reference is associated. | 
+| OVERRIDE | LITERAL | 3 |  | This parameter should be used with EXTREME CAUTION.  It suppresses the validation of the patient reference against the procedure reference with which it is associated. | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STATIONUM | LITERAL | 30 | true | This is the STATION NUMBER (#99) of an INSTITUTION file (#4) entryused for the query. | 
-| vs:Input_Parameter-8994_02 | IENMAGLOC | LITERAL | 30 | true | IEN of an entry in the IMAGING LOCATIONS file (#79.1).will be filtered from the return array. | 
-| vs:Input_Parameter-8994_02 | IENRAPROC | LITERAL | 30 | true | IEN of an entry in the RAD/NUC MED PROCEDURES file (#71). If present,restricts the output to the single procedure requested. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STATIONUM | LITERAL | 30 | true | This is the STATION NUMBER (#99) of an INSTITUTION file (#4) entryused for the query. | 
+| IENMAGLOC | LITERAL | 30 | true | IEN of an entry in the IMAGING LOCATIONS file (#79.1).will be filtered from the return array. | 
+| IENRAPROC | LITERAL | 30 | true | IEN of an entry in the RAD/NUC MED PROCEDURES file (#71). If present,restricts the output to the single procedure requested. | 

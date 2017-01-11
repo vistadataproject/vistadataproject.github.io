@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CPT | LITERAL | 7 | true | This is the cpt code name (.01) value in the CPT file (#81) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CPT | LITERAL | 7 | true | This is the cpt code name (.01) value in the CPT file (#81) | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ecary |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | ECARY | LITERAL |  | true | Input variable ECARY contains the following elements     1.  FIL  - File number     2.  TXT  - .01 description | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ecary |  |  |  |  | 
+| ECARY | LITERAL |  | true | Input variable ECARY contains the following elements     1.  FIL  - File number     2.  TXT  - .01 description | 

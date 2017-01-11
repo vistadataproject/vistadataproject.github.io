@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HLOC | LITERAL |  | true | Pointer to the Hospital Location File (#44). | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | Optional Pointer to the New Person File (#200) identifying the Author. If nothing is passed, the current user will be assumed. | 
-| vs:Input_Parameter-8994_02 | TIUIEN | LITERAL |  | true | This is the Record # (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HLOC | LITERAL |  | true | Pointer to the Hospital Location File (#44). | 
+| USER | LITERAL |  | true | Optional Pointer to the New Person File (#200) identifying the Author. If nothing is passed, the current user will be assumed. | 
+| TIUIEN | LITERAL |  | true | This is the Record # (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 

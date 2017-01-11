@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFCSLT | LITERAL |  | true | This is the IEN of the Consult you wish to delete (hide) from being returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFCSLT | LITERAL |  | true | This is the IEN of the Consult you wish to delete (hide) from being returned. | 

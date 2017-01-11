@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM1 | LITERAL | 30 | true | Date in internal fileman format or \*\ for all dates in file #3.075 (ERRORLOG). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM1 | LITERAL | 30 | true | Date in internal fileman format or \*\ for all dates in file #3.075 (ERRORLOG). | 

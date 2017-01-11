@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLINICNAME | LITERAL | 70 | true | The input would represent a full or partial name of a given clinic. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLINICNAME | LITERAL | 70 | true | The input would represent a full or partial name of a given clinic. | 

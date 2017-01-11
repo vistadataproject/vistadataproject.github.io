@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DENTV | LIST |  | true | This should be a list of \CATEGORY^SORT ORDER^IEN\ for all of the canned comments for the provider. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DENTV | LIST |  | true | This should be a list of \CATEGORY^SORT ORDER^IEN\ for all of the canned comments for the provider. | 

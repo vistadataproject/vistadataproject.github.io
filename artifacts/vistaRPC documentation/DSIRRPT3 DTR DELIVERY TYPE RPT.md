@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FRDT | LITERAL | 15 | true | This is the field tht identifies the eariest received date for the report. | 
-| vs:Input_Parameter-8994_02 | TODT | LITERAL | 15 | true | This is the field tht identifies the latest received date for the report. | 
-| vs:Input_Parameter-8994_02 | DIVL | LITERAL | 200 | true | This is an optional list of division numbers delimited with a ^. | 
-| vs:Input_Parameter-8994_02 | SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the report should be scheduled.  | 
-| vs:Input_Parameter-8994_02 | ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FRDT | LITERAL | 15 | true | This is the field tht identifies the eariest received date for the report. | 
+| TODT | LITERAL | 15 | true | This is the field tht identifies the latest received date for the report. | 
+| DIVL | LITERAL | 200 | true | This is an optional list of division numbers delimited with a ^. | 
+| SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the report should be scheduled.  | 
+| ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled.  | 

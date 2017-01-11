@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TAG | LIST |  |  | This is the parameter containing the tag name and the tag value for thework item. | 
-| vs:Input_Parameter-8994_02 | ITEM ID | LITERAL |  |  | This is the item ID of the entry in the MAG WORK ITEM file (#2006.941) thattags will be added to. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL |  |  | This is a list of expected statuses that the work item may have.  Ifthe work item does not have a status that matches one of the statusessupplied the tag will not be added. | 
-| vs:Input_Parameter-8994_02 | UPDUSR | LITERAL |  |  | This is the user that updated the work item. | 
-| vs:Input_Parameter-8994_02 | UPDAPP | LITERAL |  |  | This is the application that updated the work item. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TAG | LIST |  |  | This is the parameter containing the tag name and the tag value for thework item. | 
+| ITEM ID | LITERAL |  |  | This is the item ID of the entry in the MAG WORK ITEM file (#2006.941) thattags will be added to. | 
+| STATUS | LITERAL |  |  | This is a list of expected statuses that the work item may have.  Ifthe work item does not have a status that matches one of the statusessupplied the tag will not be added. | 
+| UPDUSR | LITERAL |  |  | This is the user that updated the work item. | 
+| UPDAPP | LITERAL |  |  | This is the application that updated the work item. | 

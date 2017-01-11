@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBESIG | LITERAL |  | true | Data typed in by the user, which validates the E-SIG. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBESIG | LITERAL |  | true | Data typed in by the user, which validates the E-SIG. | 

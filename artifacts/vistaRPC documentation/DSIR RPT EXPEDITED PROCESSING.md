@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FRDT | LITERAL | 7 | true | FRDT - From Date - FileMan Format - No time | 
-| vs:Input_Parameter-8994_02 | TODT | LITERAL | 7 | true | TODT To Date - FileMan Format - No time | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 15 | true | DIV - Division number/Location number - defaults to DUZ(2) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FRDT | LITERAL | 7 | true | FRDT - From Date - FileMan Format - No time | 
+| TODT | LITERAL | 7 | true | TODT To Date - FileMan Format - No time | 
+| DIV | LITERAL | 15 | true | DIV - Division number/Location number - defaults to DUZ(2) | 

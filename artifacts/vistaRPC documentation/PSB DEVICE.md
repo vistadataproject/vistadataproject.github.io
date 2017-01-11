@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL |  |  | Text to $O from | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL | 1 |  | $O Direction | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROM | LITERAL |  |  | Text to $O from | 
+| DIR | LITERAL | 1 |  | $O Direction | 

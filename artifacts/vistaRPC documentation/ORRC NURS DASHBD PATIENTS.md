@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
-| vs:Input_Parameter-8994_02 | LIST | LIST |  | true | These are the lists from which to return patients with data, in the form \type:ien:clinic start:clinic stop\ where  Provider list = \p:<ien in New Person file #200>\OE/RR Team list = \t:<ien in OE/RR List file #100.21>\ Specialty list = \s:<ien in Facility Treating Specialty file #45.7>\      Ward list = \w:<ien in Ward Location file #42>\    Clinic list = \c:<ien in Hospital Location file #44>:<Start>:<Stop>\                    where Start and Stop are FileMan-compatible dates | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
+| LIST | LIST |  | true | These are the lists from which to return patients with data, in the form \type:ien:clinic start:clinic stop\ where  Provider list = \p:<ien in New Person file #200>\OE/RR Team list = \t:<ien in OE/RR List file #100.21>\ Specialty list = \s:<ien in Facility Treating Specialty file #45.7>\      Ward list = \w:<ien in Ward Location file #42>\    Clinic list = \c:<ien in Hospital Location file #44>:<Start>:<Stop>\                    where Start and Stop are FileMan-compatible dates | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Filenamd | LITERAL | 30 | true | Name of the Image file to be evaluated hashing. | 
-| vs:Input_Parameter-8994_02 | Network location file pointer. | LITERAL | 999 | true | This reference is used to determine whether hashing is enabledon the target network location. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Filenamd | LITERAL | 30 | true | Name of the Image file to be evaluated hashing. | 
+| Network location file pointer. | LITERAL | 999 | true | This reference is used to determine whether hashing is enabledon the target network location. | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ID | LITERAL | 16 | true | The record number of the patient from the Patient File (#2). | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 16 |  | Start date for retrieving patient notifications in Fileman format. | 
-| vs:Input_Parameter-8994_02 | STOP DATE | LITERAL | 16 |  | Stop date for retrieving patient notifications in Fileman format. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ID | LITERAL | 16 | true | The record number of the patient from the Patient File (#2). | 
+| START DATE | LITERAL | 16 |  | Start date for retrieving patient notifications in Fileman format. | 
+| STOP DATE | LITERAL | 16 |  | Stop date for retrieving patient notifications in Fileman format. | 

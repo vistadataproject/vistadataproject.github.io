@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | PROVIDERID |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | VAMC |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | REASON | LITERAL |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IFN | LITERAL |  |  |  | 
+| PROVIDERID |  |  |  |  | 
+| VAMC |  |  |  |  | 
+| REASON | LITERAL |  |  |  | 

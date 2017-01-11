@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAM | LIST | 99 | true | PARAM(\TYPE\)=\ward\ returns a list of wardsPARAM(\TYPE\)=\clinic\ returns a list of clinicsPARAM(\TYPE\)=\provider\ returns a list of providersPARAM(\VALUE\)=Beginning value or null to start at the beginning               or end of the file.PARAM(\MAXNUM\)=Number of entries to be returned.  Defaults to                traversing forward. If MAXNUM contains a negative                number, traverses through the file backwards. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAM | LIST | 99 | true | PARAM(\TYPE\)=\ward\ returns a list of wardsPARAM(\TYPE\)=\clinic\ returns a list of clinicsPARAM(\TYPE\)=\provider\ returns a list of providersPARAM(\VALUE\)=Beginning value or null to start at the beginning               or end of the file.PARAM(\MAXNUM\)=Number of entries to be returned.  Defaults to                traversing forward. If MAXNUM contains a negative                number, traverses through the file backwards. | 

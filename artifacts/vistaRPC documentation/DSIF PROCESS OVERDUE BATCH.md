@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBN | LITERAL | 10 | true | Batch IEN | 
-| vs:Input_Parameter-8994_02 | FBACT | LITERAL | 1 | true | \R\- Retransmit\F\- Reject | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBN | LITERAL | 10 | true | Batch IEN | 
+| FBACT | LITERAL | 1 | true | \R\- Retransmit\F\- Reject | 

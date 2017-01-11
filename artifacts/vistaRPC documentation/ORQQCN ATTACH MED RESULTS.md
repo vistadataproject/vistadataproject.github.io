@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Consult IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
-| vs:Input_Parameter-8994_02 | Result pointer | LITERAL | 24 | true | Variable pointer to medicine result. | 
-| vs:Input_Parameter-8994_02 | Date | LITERAL | 16 | true | Date the result was attached. | 
-| vs:Input_Parameter-8994_02 | date |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | Resp Person | LITERAL | 16 |  | Pointer to file 200, for the person attaching the result. | 
-| vs:Input_Parameter-8994_02 | Alerts to | LITERAL | 254 |  | Semicolon-delimited list of user DUZs to send alerts to for this action. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Consult IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
+| Result pointer | LITERAL | 24 | true | Variable pointer to medicine result. | 
+| Date | LITERAL | 16 | true | Date the result was attached. | 
+| date |  |  |  |  | 
+| Resp Person | LITERAL | 16 |  | Pointer to file 200, for the person attaching the result. | 
+| Alerts to | LITERAL | 254 |  | Semicolon-delimited list of user DUZs to send alerts to for this action. | 

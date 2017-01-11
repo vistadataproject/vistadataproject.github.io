@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFCIEN | LITERAL |  | true | This is the Consult IEN to which needs to be resubmitted. | 
-| vs:Input_Parameter-8994_02 | DSIFEDIT | LIST |  | true | This is the array of comments associated with the resubmit request. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFCIEN | LITERAL |  | true | This is the Consult IEN to which needs to be resubmitted. | 
+| DSIFEDIT | LIST |  | true | This is the array of comments associated with the resubmit request. | 

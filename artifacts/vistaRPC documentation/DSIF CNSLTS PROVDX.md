@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFIEN | LITERAL |  | true | This is the Consult Service IEN you wish to retrieve Provisional Diagnosis requirements for. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFIEN | LITERAL |  | true | This is the Consult Service IEN you wish to retrieve Provisional Diagnosis requirements for. | 

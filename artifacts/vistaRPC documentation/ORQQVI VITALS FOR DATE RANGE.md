@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ID | LITERAL | 16 | true | Patient id (DFN) from Patient File (#2). | 
-| vs:Input_Parameter-8994_02 | START DATE/TIME | LITERAL | 16 |  | Start date/time for vital retrieval in Fileman format. | 
-| vs:Input_Parameter-8994_02 | STOP DATE/TIME | LITERAL | 16 |  | Stop date/time for vital retrieval in Fileman format. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ID | LITERAL | 16 | true | Patient id (DFN) from Patient File (#2). | 
+| START DATE/TIME | LITERAL | 16 |  | Start date/time for vital retrieval in Fileman format. | 
+| STOP DATE/TIME | LITERAL | 16 |  | Stop date/time for vital retrieval in Fileman format. | 

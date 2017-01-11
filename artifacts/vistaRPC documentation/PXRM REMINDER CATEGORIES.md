@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ID | LITERAL | 16 | true | Patient Identifier from Patient file [#2] | 
-| vs:Input_Parameter-8994_02 | HOSPITAL LOCATION | LITERAL | 16 | true | Patient's HOSPITAL LOCATION [#44]. May be null. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ID | LITERAL | 16 | true | Patient Identifier from Patient file [#2] | 
+| HOSPITAL LOCATION | LITERAL | 16 | true | Patient's HOSPITAL LOCATION [#44]. May be null. | 

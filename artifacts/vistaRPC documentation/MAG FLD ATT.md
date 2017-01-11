@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 32 | true | The file number that contains the desired attribute. | 
-| vs:Input_Parameter-8994_02 | FIELD | LITERAL | 32 | true | The desired field attribute. | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 32 | true |  | 
-| vs:Input_Parameter-8994_02 | ATTR | LITERAL | 32 | true | The field attribute desired. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 32 | true | The file number that contains the desired attribute. | 
+| FIELD | LITERAL | 32 | true | The desired field attribute. | 
+| FLAG | LITERAL | 32 | true |  | 
+| ATTR | LITERAL | 32 | true | The field attribute desired. | 

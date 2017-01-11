@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SCPATCH | LITERAL | 60 | true | PatchVersion ^ ClientVersion | 
-| vs:Input_Parameter-8994_02 | ROLE | LITERAL |  | true | ROLE^TEAM POSITION | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SCPATCH | LITERAL | 60 | true | PatchVersion ^ ClientVersion | 
+| ROLE | LITERAL |  | true | ROLE^TEAM POSITION | 

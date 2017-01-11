@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSDFN | LITERAL | 30 | true | The patient DFN which is to be used in processing the changes and updatingthe associated patient record in the PATIENT file (#2). | 
-| vs:Input_Parameter-8994_02 | VPSLST | LIST |  | true | Local array where each field that is to be updated in the PATIENT file (#2) is assigned as a string to the data element in the array along with the field value.input structure:  LocalArray(n)=field label^data  where n is an incremental number and field label^data  are literal values | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSDFN | LITERAL | 30 | true | The patient DFN which is to be used in processing the changes and updatingthe associated patient record in the PATIENT file (#2). | 
+| VPSLST | LIST |  | true | Local array where each field that is to be updated in the PATIENT file (#2) is assigned as a string to the data element in the array along with the field value.input structure:  LocalArray(n)=field label^data  where n is an incremental number and field label^data  are literal values | 

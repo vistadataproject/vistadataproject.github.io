@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DISPDUZ | LITERAL | 20 | true | DUZ (IEN) of user to be displayed. | 
-| vs:Input_Parameter-8994_02 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DISPDUZ | LITERAL | 20 | true | DUZ (IEN) of user to be displayed. | 
+| AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Provisioning Application. | 

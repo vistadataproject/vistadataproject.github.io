@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PTDFN | LITERAL |  | true | Patient IEN in Patient file | 
-| vs:Input_Parameter-8994_02 | TIUTTL | LITERAL |  | true | PRF Title IEN in file 8925.1 | 
-| vs:Input_Parameter-8994_02 | REVORDER | LITERAL | 1 | true | Optional.  Boolean flag, with 1 indicating to subscript the list of notesin reverse chronological order.  Default is chronological order. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PTDFN | LITERAL |  | true | Patient IEN in Patient file | 
+| TIUTTL | LITERAL |  | true | PRF Title IEN in file 8925.1 | 
+| REVORDER | LITERAL | 1 | true | Optional.  Boolean flag, with 1 indicating to subscript the list of notesin reverse chronological order.  Default is chronological order. | 

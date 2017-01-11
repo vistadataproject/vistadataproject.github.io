@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | The internal number in the PATIENT file (#2). | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | The internal number in the PATIENT file (#2). | 
+| IEN | LITERAL |  | true | Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9). | 

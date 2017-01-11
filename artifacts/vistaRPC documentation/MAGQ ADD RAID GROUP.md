@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NUMBER | LITERAL | 99 | true | This value determines the number of RAID groups to be added to the sitesNetwork Location file (#2005.2). | 
-| vs:Input_Parameter-8994_02 | PLACE | LITERAL | 99 |  | This is the place value, an entry in the IMAGING SITE PARAMETER (#2006.1)file, for the RAID group entry being defined. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NUMBER | LITERAL | 99 | true | This value determines the number of RAID groups to be added to the sitesNetwork Location file (#2005.2). | 
+| PLACE | LITERAL | 99 |  | This is the place value, an entry in the IMAGING SITE PARAMETER (#2006.1)file, for the RAID group entry being defined. | 

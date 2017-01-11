@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGTYPE | LITERAL |  | true | Type (e.g. \SOP Class\) | 
-| vs:Input_Parameter-8994_02 | MAGSUBT | LITERAL |  | true | Subtype (e.g. \Storage\) | 
-| vs:Input_Parameter-8994_02 | MAGACT | LITERAL |  | true | Action Type (e.g. \Storage SCP\) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGTYPE | LITERAL |  | true | Type (e.g. \SOP Class\) | 
+| MAGSUBT | LITERAL |  | true | Subtype (e.g. \Storage\) | 
+| MAGACT | LITERAL |  | true | Action Type (e.g. \Storage SCP\) | 

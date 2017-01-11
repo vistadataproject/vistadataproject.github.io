@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDA | LITERAL |  | true | MAGDA = IEN in ARTIFACT KEYLIST file (#2006.913) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDA | LITERAL |  | true | MAGDA = IEN in ARTIFACT KEYLIST file (#2006.913) | 

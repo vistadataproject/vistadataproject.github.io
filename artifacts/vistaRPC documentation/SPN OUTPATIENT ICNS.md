@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | Date to begin Outpatients search | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | Date to end Outpatients search | 
-| vs:Input_Parameter-8994_02 | CLINLST | LIST |  |  | List of Outpatient clinic stops  | 
-| vs:Input_Parameter-8994_02 | ICNLST | LIST |  |  | List of ICNs to search from | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FDATE | LITERAL |  |  | Date to begin Outpatients search | 
+| TDATE | LITERAL |  |  | Date to end Outpatients search | 
+| CLINLST | LIST |  |  | List of Outpatient clinic stops  | 
+| ICNLST | LIST |  |  | List of ICNs to search from | 

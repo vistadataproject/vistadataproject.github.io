@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT REQUESTOR | LITERAL |  | true | RQSTR - Pointer to Patient or Requestor  examples:    \3;DSIR(19620.96,\    \41;DSIR(19620.12,\    \441;DPT(\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT REQUESTOR | LITERAL |  | true | RQSTR - Pointer to Patient or Requestor  examples:    \3;DSIR(19620.96,\    \41;DSIR(19620.12,\    \441;DPT(\ | 

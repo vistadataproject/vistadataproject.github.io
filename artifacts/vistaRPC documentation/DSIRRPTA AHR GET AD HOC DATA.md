@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INARRAY | LIST | 200 | true | Input Parameter(s) - ARRAY AS FOLLOWS:  \FIELD1_IEN^FIELD2_IEN^...^FIELDn_IEN       (REQUIRED-VARIABLE NUMBER OF FIELDS)  FILTER/SELECTION FIELDS (OPTIONAL)  \F1\^F1_IEN^F1_VALUE  \F2\^F2_IEN^F1_VALUE  \F3\^F3_IEN^F1_VALUE  DATE RANGE FIELDS (OPTIONAL)  \R1\^R1_IEN^F1_VALUE1^F1_VALUE2  \R2\^R2_IEN^R2_VALUE2^R2_VALUE2^[\A\|\O\] (\A\=And \O\=Or)  SORT FIELDS (OPTIONAL)  \S1\^S1_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING)  \S2\^S2_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING)  \S3\^S3_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING) | 
-| vs:Input_Parameter-8994_02 | SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the reportshould be scheduled. | 
-| vs:Input_Parameter-8994_02 | ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INARRAY | LIST | 200 | true | Input Parameter(s) - ARRAY AS FOLLOWS:  \FIELD1_IEN^FIELD2_IEN^...^FIELDn_IEN       (REQUIRED-VARIABLE NUMBER OF FIELDS)  FILTER/SELECTION FIELDS (OPTIONAL)  \F1\^F1_IEN^F1_VALUE  \F2\^F2_IEN^F1_VALUE  \F3\^F3_IEN^F1_VALUE  DATE RANGE FIELDS (OPTIONAL)  \R1\^R1_IEN^F1_VALUE1^F1_VALUE2  \R2\^R2_IEN^R2_VALUE2^R2_VALUE2^[\A\|\O\] (\A\=And \O\=Or)  SORT FIELDS (OPTIONAL)  \S1\^S1_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING)  \S2\^S2_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING)  \S3\^S3_IEN^[\A\|\D\] (\A - ASCENDING IS THE DEFAULT, \D\ - DESCENDING) | 
+| SCHED | LITERAL | 1 | true | This is an optional boolean field to indicate whether of not the reportshould be scheduled. | 
+| ESTART | LITERAL | 15 | true | This is the earliest start time for a task to launch if the report isscheduled. | 

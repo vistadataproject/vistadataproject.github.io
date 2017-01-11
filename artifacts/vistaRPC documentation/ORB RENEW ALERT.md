@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XQAID | LITERAL | 255 | true | XQAID is the unique identifier used by Kernel Alerts to process and take actions on alerts. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XQAID | LITERAL | 255 | true | XQAID is the unique identifier used by Kernel Alerts to process and take actions on alerts. | 

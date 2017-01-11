@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DEST | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005.2).This pointer identifies the network location for which theoperational status is being defined. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL | 10 | true | The value of this parameter is a Boolean value that indicatesthe new operational status of the network location:   0 = off-line   1 = on-line | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DEST | LITERAL | 30 | true | The value of this parameter is a pointer to ^MAG(2005.2).This pointer identifies the network location for which theoperational status is being defined. | 
+| STATUS | LITERAL | 10 | true | The value of this parameter is a Boolean value that indicatesthe new operational status of the network location:   0 = off-line   1 = on-line | 

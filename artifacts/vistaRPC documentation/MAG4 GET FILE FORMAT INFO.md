@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGEXT | LITERAL | 10 | true | This is the file Format. (The file extension)examples: JPG, TGA, DOC, HTM | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGEXT | LITERAL | 10 | true | This is the file Format. (The file extension)examples: JPG, TGA, DOC, HTM | 

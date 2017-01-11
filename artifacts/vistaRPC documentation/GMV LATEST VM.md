@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMRDFN | LITERAL | 10 | true | GMRDFN variable is a pointer to the Patient (#2) file (i.e., DFN). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMRDFN | LITERAL | 10 | true | GMRDFN variable is a pointer to the Patient (#2) file (i.e., DFN). | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT FORMAT\) MAGPARAM(\ARTIFACT TYPE\) MAGPARAM(\FILE EXTENSION\) MAGPARAM(\ACTIVE\) MAGPARAM(\RETENTION POLICY\) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT FORMAT\) MAGPARAM(\ARTIFACT TYPE\) MAGPARAM(\FILE EXTENSION\) MAGPARAM(\ACTIVE\) MAGPARAM(\RETENTION POLICY\) | 

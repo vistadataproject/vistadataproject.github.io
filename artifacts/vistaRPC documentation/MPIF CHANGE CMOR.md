@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 10 | true | ICN - not including the checksum | 
-| vs:Input_Parameter-8994_02 | CMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true | Social Security Number for the patient that is to be changed.  SSN willonly be used if ICN is not found to check if the problem is with the AICNx-ref on the ICN field. | 
-| vs:Input_Parameter-8994_02 | A08 | LITERAL | 1 | true | This field will serve as a flag to note whether or not an A08 update message should be triggered. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL | 10 | true | ICN - not including the checksum | 
+| CMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR | 
+| SSN | LITERAL | 9 | true | Social Security Number for the patient that is to be changed.  SSN willonly be used if ICN is not found to check if the problem is with the AICNx-ref on the ICN field. | 
+| A08 | LITERAL | 1 | true | This field will serve as a flag to note whether or not an A08 update message should be triggered. | 

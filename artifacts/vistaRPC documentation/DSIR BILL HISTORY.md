@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | BILL IEN | LITERAL | 999 | true | This is the internal entry number into file 19620.2. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| BILL IEN | LITERAL | 999 | true | This is the internal entry number into file 19620.2. | 

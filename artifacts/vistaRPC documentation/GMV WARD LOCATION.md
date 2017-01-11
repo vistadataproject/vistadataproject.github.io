@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DUMMY | LITERAL | 1 | true | When this input parameter is set to the letter \P\, only wards that have patients will be returned. Otherwise, all active wards will be returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DUMMY | LITERAL | 1 | true | When this input parameter is set to the letter \P\, only wards that have patients will be returned. Otherwise, all active wards will be returned. | 

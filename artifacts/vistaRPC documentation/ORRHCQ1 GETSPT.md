@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Start | LITERAL | 80 | true | Starting position, specified by Name!DFN.  For example:Winchester, Charles Emmerson!78390 | 
-| vs:Input_Parameter-8994_02 | Length | LITERAL | 80 | true | Length of the return array from this routine. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Start | LITERAL | 80 | true | Starting position, specified by Name!DFN.  For example:Winchester, Charles Emmerson!78390 | 
+| Length | LITERAL | 80 | true | Length of the return array from this routine. | 

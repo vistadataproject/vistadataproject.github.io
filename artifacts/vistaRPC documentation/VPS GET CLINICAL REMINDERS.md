@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 12 | true | Patient IEN. | 
-| vs:Input_Parameter-8994_02 | DIVISION | LITERAL | 12 | true | Division IEN. | 
-| vs:Input_Parameter-8994_02 | SERVICE | LITERAL | 12 | true | Service IEN. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 12 | true | Location IEN. | 
-| vs:Input_Parameter-8994_02 | USERCLASS | LITERAL | 50 | true | User Class IENs separated by \^\. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 12 | true | Patient IEN. | 
+| DIVISION | LITERAL | 12 | true | Division IEN. | 
+| SERVICE | LITERAL | 12 | true | Service IEN. | 
+| LOCATION | LITERAL | 12 | true | Location IEN. | 
+| USERCLASS | LITERAL | 50 | true | User Class IENs separated by \^\. | 

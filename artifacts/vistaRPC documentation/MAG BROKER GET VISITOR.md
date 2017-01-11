@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGTKN | LITERAL | 256 | true | The Broker Security Enhancement (BSE) token to validate. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGTKN | LITERAL | 256 | true | The Broker Security Enhancement (BSE) token to validate. | 

@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  | true | This is the IEN of the related work list entry in the MAG WORK ITEM file (#2006.941). | 
-| vs:Input_Parameter-8994_02 | EXPSTAT | LITERAL |  | true | This is the expected status of the work item.  If the work item does not have the expected status the work item elements will not be  returned and the work item status will not be updated. | 
-| vs:Input_Parameter-8994_02 | NEWSTAT | LITERAL |  | true | This is the new status to be filed in the work item. | 
-| vs:Input_Parameter-8994_02 | UPDUSR | LITERAL |  |  | This is the user that has updated the work item entry. | 
-| vs:Input_Parameter-8994_02 | UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item entry. | 
-| vs:Input_Parameter-8994_02 | PLACID | LITERAL | 30 |  | The location name associated with the work item. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL |  | true | This is the IEN of the related work list entry in the MAG WORK ITEM file (#2006.941). | 
+| EXPSTAT | LITERAL |  | true | This is the expected status of the work item.  If the work item does not have the expected status the work item elements will not be  returned and the work item status will not be updated. | 
+| NEWSTAT | LITERAL |  | true | This is the new status to be filed in the work item. | 
+| UPDUSR | LITERAL |  |  | This is the user that has updated the work item entry. | 
+| UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item entry. | 
+| PLACID | LITERAL | 30 |  | The location name associated with the work item. | 

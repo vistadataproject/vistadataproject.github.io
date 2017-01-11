@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ien | LITERAL | 1 | true | The internal entry number of the image entry to be removed. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ien | LITERAL | 1 | true | The internal entry number of the image entry to be removed. | 
+| IEN | LITERAL |  | true |  | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSICD | LIST | 20 | true | DSICD(n) = p1^p2  for n=0,1,2,3,...  where  p1 := \V\ if this is the VISIT ifn, or VISIT field#  p2 := VISIT ifn (if p1=\V\), or format code (if p1=field#)        Format codes:  I:internal  E:external  B:both  DSICD(n) = V^ifn is required | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSICD | LIST | 20 | true | DSICD(n) = p1^p2  for n=0,1,2,3,...  where  p1 := \V\ if this is the VISIT ifn, or VISIT field#  p2 := VISIT ifn (if p1=\V\), or format code (if p1=field#)        Format codes:  I:internal  E:external  B:both  DSICD(n) = V^ifn is required | 

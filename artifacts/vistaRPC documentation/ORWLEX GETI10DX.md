@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORX | LITERAL |  | true | This is the search term. | 
-| vs:Input_Parameter-8994_02 | ORDT | LITERAL |  | true | Optional date (usually corresponding to the encounter date). Defaults to TODAY. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORX | LITERAL |  | true | This is the search term. | 
+| ORDT | LITERAL |  | true | Optional date (usually corresponding to the encounter date). Defaults to TODAY. | 

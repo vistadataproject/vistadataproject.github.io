@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 80 | true |  DATA = DFN ^ APPT ^ LOC ^ VST where  DFN = required - pointer to the Patient file (2) APPT = optional/required - FM date/time for the visit or the scheduled        appointment.  If VST passed, then APPT is optional  LOC = required - either the name of the location (file 44) or the        pointer to file 44  VST = optional/required - pointer to Visit file (#9000010)        If APPT passed, then VST is optional   You must send either APPT or VST or both. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 80 | true |  DATA = DFN ^ APPT ^ LOC ^ VST where  DFN = required - pointer to the Patient file (2) APPT = optional/required - FM date/time for the visit or the scheduled        appointment.  If VST passed, then APPT is optional  LOC = required - either the name of the location (file 44) or the        pointer to file 44  VST = optional/required - pointer to Visit file (#9000010)        If APPT passed, then VST is optional   You must send either APPT or VST or both. | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TITLE | LITERAL |  | true | This is a pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1), whichidentifies the title of the document to be loaded. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | This is the pointer to the patient for whom the document is being entered. | 
-| vs:Input_Parameter-8994_02 | VSTRING | LITERAL |  | true | This optional parameter is the visit string, formatted as:HLOC;VISIT_DATE;SVC_CATIt's necessary when objects included in the boilerplate are sensitive to the attributes of the visit (e.g., the object VISIT DATE). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TITLE | LITERAL |  | true | This is a pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1), whichidentifies the title of the document to be loaded. | 
+| DFN | LITERAL |  | true | This is the pointer to the patient for whom the document is being entered. | 
+| VSTRING | LITERAL |  | true | This optional parameter is the visit string, formatted as:HLOC;VISIT_DATE;SVC_CATIt's necessary when objects included in the boilerplate are sensitive to the attributes of the visit (e.g., the object VISIT DATE). | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MDCPMSG | LITERAL |  | true | The IFN of the message in the CP RESULT REPORT file. | 
-| vs:Input_Parameter-8994_02 | MDCPSTAT | LITERAL | 1 | true | The status to which to change the file entry referenced by the first parameter.  Check the data dictionary for field .09 to get a list of valid codes.  This parameter must be in internal format. | 
-| vs:Input_Parameter-8994_02 | MDCPDFN | LITERAL |  | true | This is the IFN of the patient in file 2, if available. | 
-| vs:Input_Parameter-8994_02 | MDCPISCR | LITERAL |  | true | If MDCPDFN is set, this tells the linetag that MDCPDFN is a correction, not the original DFN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MDCPMSG | LITERAL |  | true | The IFN of the message in the CP RESULT REPORT file. | 
+| MDCPSTAT | LITERAL | 1 | true | The status to which to change the file entry referenced by the first parameter.  Check the data dictionary for field .09 to get a list of valid codes.  This parameter must be in internal format. | 
+| MDCPDFN | LITERAL |  | true | This is the IFN of the patient in file 2, if available. | 
+| MDCPISCR | LITERAL |  | true | If MDCPDFN is set, this tells the linetag that MDCPDFN is a correction, not the original DFN. | 

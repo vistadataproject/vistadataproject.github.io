@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IBICN | LITERAL |  | true | This is the patient's ICN, to be used to identify the patient. | 
-| vs:Input_Parameter-8994_02 | IBT | LITERAL |  | true | This is the transaction number to bill. | 
-| vs:Input_Parameter-8994_02 | IBB | LITERAL |  | true | This is the amount to bill. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IBICN | LITERAL |  | true | This is the patient's ICN, to be used to identify the patient. | 
+| IBT | LITERAL |  | true | This is the transaction number to bill. | 
+| IBB | LITERAL |  | true | This is the amount to bill. | 

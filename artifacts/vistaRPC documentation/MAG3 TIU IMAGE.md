@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDA | LITERAL | 30 | true | This is the Image File entry Internal number. | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL | 30 | true | This is the TIU internal number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDA | LITERAL | 30 | true | This is the Image File entry Internal number. | 
+| TIUDA | LITERAL | 30 | true | This is the TIU internal number. | 

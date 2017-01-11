@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DENTL | LIST | 30 | true | DENTL(\StartDate\) - optional - start date in FM format - default = 0DENTL(\EndDate\)   - optional - end date in FM format  - default = todayDENTL(\Patient\)   - required - pointer to PATIENT file | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DENTL | LIST | 30 | true | DENTL(\StartDate\) - optional - start date in FM format - default = 0DENTL(\EndDate\)   - optional - end date in FM format  - default = todayDENTL(\Patient\)   - required - pointer to PATIENT file | 

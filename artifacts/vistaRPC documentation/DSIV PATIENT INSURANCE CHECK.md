@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Patient Internal Entry Number. | 
-| vs:Input_Parameter-8994_02 | DAYS | LITERAL | 10 | true | Number of days prior to today for last verified check (default=182). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | Patient Internal Entry Number. | 
+| DAYS | LITERAL | 10 | true | Number of days prior to today for last verified check (default=182). | 

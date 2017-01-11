@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XDUZ | LITERAL | 15 | true | This is a pointer value to the NEW PERSON file. | 
-| vs:Input_Parameter-8994_02 | DSISCR | LIST | 250 | true | You may pass additional screening criteria to be checked.  For a user to be returned, all screening criteria must be true in addition to being Active. Allowable formats of DSISCR(n) = flag^val1^val2^val3^..  check for security key    KEY^security key name  check for parameter      PARM^ parameter name^parameter instance  execute M code    M^<return message>^<executable M code which sets $T> | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XDUZ | LITERAL | 15 | true | This is a pointer value to the NEW PERSON file. | 
+| DSISCR | LIST | 250 | true | You may pass additional screening criteria to be checked.  For a user to be returned, all screening criteria must be true in addition to being Active. Allowable formats of DSISCR(n) = flag^val1^val2^val3^..  check for security key    KEY^security key name  check for parameter      PARM^ parameter name^parameter instance  execute M code    M^<return message>^<executable M code which sets $T> | 

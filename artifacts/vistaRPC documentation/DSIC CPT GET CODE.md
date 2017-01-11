@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CODE | LITERAL | 7 | true | This is the CPT, HCPCS, or level III code in either internal or external format. | 
-| vs:Input_Parameter-8994_02 | CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
-| vs:Input_Parameter-8994_02 | SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) is optional.  Default value is 0.  I SRC=1 then all level III codes to be returned. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 14 | true | This is a pointer to the PATIENT file.  It is not used at this time. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CODE | LITERAL | 7 | true | This is the CPT, HCPCS, or level III code in either internal or external format. | 
+| CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
+| SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) is optional.  Default value is 0.  I SRC=1 then all level III codes to be returned. | 
+| DFN | LITERAL | 14 | true | This is a pointer to the PATIENT file.  It is not used at this time. | 

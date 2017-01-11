@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | place | LITERAL | 999 | true | This field represents the internal entry number of the site parameter file, #2006.1. | 
-| vs:Input_Parameter-8994_02 | QUEUE | LITERAL | 33 | true | This is the queue entry to be updated by this method. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| place | LITERAL | 999 | true | This field represents the internal entry number of the site parameter file, #2006.1. | 
+| QUEUE | LITERAL | 33 | true | This is the queue entry to be updated by this method. | 

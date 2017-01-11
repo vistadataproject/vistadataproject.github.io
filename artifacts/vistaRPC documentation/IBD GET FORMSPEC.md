@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FORMTYPE | LITERAL | 20 | true | Input the form type number from the top of the form, (the left mostnumber) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FORMTYPE | LITERAL | 20 | true | Input the form type number from the top of the form, (the left mostnumber) | 

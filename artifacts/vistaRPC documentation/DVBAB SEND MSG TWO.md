@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  |  | PERSON FILE DFN | 
-| vs:Input_Parameter-8994_02 | RIEN | LITERAL |  |  | 2507 REQUEST IEN #396.3 | 
-| vs:Input_Parameter-8994_02 | ELIST | LIST |  |  | 2507 EXAM LIST #396.4 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DUZ | LITERAL |  |  | PERSON FILE DFN | 
+| RIEN | LITERAL |  |  | 2507 REQUEST IEN #396.3 | 
+| ELIST | LIST |  |  | 2507 EXAM LIST #396.4 | 

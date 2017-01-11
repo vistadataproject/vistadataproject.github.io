@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL |  | true | Internal entry number of the patient in the PATIENT file (#2). | 
-| vs:Input_Parameter-8994_02 | CUTDATE | LITERAL |  | true | Data from the CUTDATE forward to the present date will be returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL |  | true | Internal entry number of the patient in the PATIENT file (#2). | 
+| CUTDATE | LITERAL |  | true | Data from the CUTDATE forward to the present date will be returned. | 

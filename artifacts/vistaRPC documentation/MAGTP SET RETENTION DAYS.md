@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DAYS | LITERAL | 3 | true | The retention days | 
-| vs:Input_Parameter-8994_02 | SITE | LITERAL | 30 | true | Site Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DAYS | LITERAL | 3 | true | The retention days | 
+| SITE | LITERAL | 30 | true | Site Number | 

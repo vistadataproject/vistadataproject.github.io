@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | DATE TO START FROM | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | DATE TO END AT | 
-| vs:Input_Parameter-8994_02 | QLIST | LITERAL |  |  | Minimum number of results reported for a test to be listed | 
-| vs:Input_Parameter-8994_02 | HIUSERS | LITERAL |  |  | Number of highest users to identify | 
-| vs:Input_Parameter-8994_02 | PTLIST | LIST |  |  | PATIENTS DFN IN LIST FORMAT ICN^ICN^ICN^ICN^ICN........ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FDATE | LITERAL |  |  | DATE TO START FROM | 
+| TDATE | LITERAL |  |  | DATE TO END AT | 
+| QLIST | LITERAL |  |  | Minimum number of results reported for a test to be listed | 
+| HIUSERS | LITERAL |  |  | Number of highest users to identify | 
+| PTLIST | LIST |  |  | PATIENTS DFN IN LIST FORMAT ICN^ICN^ICN^ICN^ICN........ | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGFROM | LITERAL |  | true | Source reader (a pointer to NEW PERSON file (#200)) to be cloned. | 
-| vs:Input_Parameter-8994_02 | MAGTO | LIST |  | true | An array with target readers (pointers to NEW PERSON file (#200)). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGFROM | LITERAL |  | true | Source reader (a pointer to NEW PERSON file (#200)) to be cloned. | 
+| MAGTO | LIST |  | true | An array with target readers (pointers to NEW PERSON file (#200)). | 

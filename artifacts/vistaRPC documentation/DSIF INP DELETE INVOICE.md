@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 99 | true | Internal Entry Number for FEE BASIS INVOICE File #162.5 | 
-| vs:Input_Parameter-8994_02 | BAT | LITERAL | 99 | true | Internal Entry Number for FEE BASIS BATCH File #161.7 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 99 | true | Internal Entry Number for FEE BASIS INVOICE File #162.5 | 
+| BAT | LITERAL | 99 | true | Internal Entry Number for FEE BASIS BATCH File #161.7 | 

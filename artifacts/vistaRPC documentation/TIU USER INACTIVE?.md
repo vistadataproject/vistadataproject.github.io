@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUUSR | LITERAL |  | true | This is the IEN of the user in the NEW PERSON file (#200). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUUSR | LITERAL |  | true | This is the IEN of the user in the NEW PERSON file (#200). | 

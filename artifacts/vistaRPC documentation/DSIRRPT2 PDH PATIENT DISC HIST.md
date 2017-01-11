@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PAT | LITERAL | 20 | true | PAT = fully qualified patient pointer   Examples:   \125325;DPT(\              \152;DSIR(19620.96,\, | 
-| vs:Input_Parameter-8994_02 | FRDT | LITERAL | 7 | true | FRDT is the starting date which will be reported on. FILEMAN date format - 3101225 = Dec 25,2010 | 
-| vs:Input_Parameter-8994_02 | TODT | LITERAL | 7 | true | TODT is the ending date which will be reported on.This is an optional field and if not provided, the current date will beused. FILEMAN date format - 3101225 = Dec 25,2010 | 
-| vs:Input_Parameter-8994_02 | SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
-| vs:Input_Parameter-8994_02 | ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 
-| vs:Input_Parameter-8994_02 | PNAME | LITERAL | 150 | true | Patient name spelled out as in the PATIENT file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PAT | LITERAL | 20 | true | PAT = fully qualified patient pointer   Examples:   \125325;DPT(\              \152;DSIR(19620.96,\, | 
+| FRDT | LITERAL | 7 | true | FRDT is the starting date which will be reported on. FILEMAN date format - 3101225 = Dec 25,2010 | 
+| TODT | LITERAL | 7 | true | TODT is the ending date which will be reported on.This is an optional field and if not provided, the current date will beused. FILEMAN date format - 3101225 = Dec 25,2010 | 
+| SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
+| ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task. | 
+| PNAME | LITERAL | 150 | true | Patient name spelled out as in the PATIENT file. | 

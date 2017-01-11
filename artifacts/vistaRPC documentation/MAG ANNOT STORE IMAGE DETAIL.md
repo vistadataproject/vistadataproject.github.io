@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 30 | true | IEN is the IMAGE file (#2005) internal entry number, be used to save the annotation data. | 
-| vs:Input_Parameter-8994_02 | XML | WORD PROCESSING | 256 | true | Annotation data in XML format | 
-| vs:Input_Parameter-8994_02 | SOURCE | LITERAL | 30 | true | Source of annotation, e.g.: Clinic display/capture or VistARad | 
-| vs:Input_Parameter-8994_02 | DELETION | LITERAL | 3 |  | Annotation was deleted by super user. | 
-| vs:Input_Parameter-8994_02 | VERSION | LITERAL | 30 | true | IMAGE GEAR VERSION (TOOLS), e.g.: 'IG16.3' | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 30 | true | IEN is the IMAGE file (#2005) internal entry number, be used to save the annotation data. | 
+| XML | WORD PROCESSING | 256 | true | Annotation data in XML format | 
+| SOURCE | LITERAL | 30 | true | Source of annotation, e.g.: Clinic display/capture or VistARad | 
+| DELETION | LITERAL | 3 |  | Annotation was deleted by super user. | 
+| VERSION | LITERAL | 30 | true | IMAGE GEAR VERSION (TOOLS), e.g.: 'IG16.3' | 

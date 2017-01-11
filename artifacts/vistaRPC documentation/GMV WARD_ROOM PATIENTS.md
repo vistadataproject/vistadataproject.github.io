@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVWRD | LITERAL | 60 | true | Name of the ward (e.g., 2EAST). | 
-| vs:Input_Parameter-8994_02 | GMVRLST | LITERAL | 150 | true | The room numbers of the ward separated by comma (e.g., 200,210,220). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVWRD | LITERAL | 60 | true | Name of the ward (e.g., 2EAST). | 
+| GMVRLST | LITERAL | 150 | true | The room numbers of the ward separated by comma (e.g., 200,210,220). | 

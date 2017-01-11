@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | QRY | LIST |  | true | This contains a list of name-value pairs that will used by the queryroutines.  The name-value pairs identify the search items and anyconstraints (time ranges, etc.) that should be placed on the query. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| QRY | LIST |  | true | This contains a list of name-value pairs that will used by the queryroutines.  The name-value pairs identify the search items and anyconstraints (time ranges, etc.) that should be placed on the query. | 

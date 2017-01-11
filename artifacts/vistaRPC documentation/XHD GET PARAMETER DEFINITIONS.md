@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL |  | true | This is the definition from which the list should begin (i.e., inclusive bound). | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL |  | true | OPTIONAL parameter. This is the DIRECTION from the origin in which the definitions will be retrieved. Pass \+1\ to indicate ascending order, or \-1\ to indicate descending order).  DEFAULT: \+1\ or ascending order. | 
-| vs:Input_Parameter-8994_02 | SIZE | LITERAL |  | true | This is the number of definitions that should be returned with each invocation of the call. DEFAULT: 44. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROM | LITERAL |  | true | This is the definition from which the list should begin (i.e., inclusive bound). | 
+| DIR | LITERAL |  | true | OPTIONAL parameter. This is the DIRECTION from the origin in which the definitions will be retrieved. Pass \+1\ to indicate ascending order, or \-1\ to indicate descending order).  DEFAULT: \+1\ or ascending order. | 
+| SIZE | LITERAL |  | true | This is the number of definitions that should be returned with each invocation of the call. DEFAULT: 44. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLASSNAM | LITERAL |  |  | Is the Document class name in file TIU DOCUMENT DEFINITION. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLASSNAM | LITERAL |  |  | Is the Document class name in file TIU DOCUMENT DEFINITION. | 

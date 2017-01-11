@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CPTMOD | LITERAL | 30 | true | This is the name of the CPT modifier. | 
-| vs:Input_Parameter-8994_02 | MAGDT | LITERAL | 30 | true | This is the date used during the lookup process for screening'active' CPT modifiers. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CPTMOD | LITERAL | 30 | true | This is the name of the CPT modifier. | 
+| MAGDT | LITERAL | 30 | true | This is the date used during the lookup process for screening'active' CPT modifiers. | 

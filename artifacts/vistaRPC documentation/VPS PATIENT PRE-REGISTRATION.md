@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 30 | true | Input: the patient's internal entry number (IEN) from file #2. Only one DFN is allowed to be passed in, required. | 
-| vs:Input_Parameter-8994_02 | VPSCST | LITERAL | 1 | true | Input: the call status code, either 'C' (Connected) or 'X' (Change Information), required. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 30 | true | Input: the patient's internal entry number (IEN) from file #2. Only one DFN is allowed to be passed in, required. | 
+| VPSCST | LITERAL | 1 | true | Input: the call status code, either 'C' (Connected) or 'X' (Change Information), required. | 

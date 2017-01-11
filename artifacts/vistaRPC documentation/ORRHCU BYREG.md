@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAM | LITERAL |  | true | The name of the registry. | 
-| vs:Input_Parameter-8994_02 | MOD | LITERAL |  | true | The mode by which the registry should be accessed (active, inactive, both). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAM | LITERAL |  | true | The name of the registry. | 
+| MOD | LITERAL |  | true | The mode by which the registry should be accessed (active, inactive, both). | 

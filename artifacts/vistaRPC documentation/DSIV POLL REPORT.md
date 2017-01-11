@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIVHNDL | LITERAL | 50 | true | Contains the Handle returned by the kick-off rpc call DSIV EXCEPTION REPORT2.  This is the ^XTMP global node where the report status and data reside. | 
-| vs:Input_Parameter-8994_02 | CNT | LITERAL | 10 | true | Contains the count (#) of records to return for each call to the rpc. | 
-| vs:Input_Parameter-8994_02 | MORE | LITERAL | 1 | true | Contains a flag (MORE=1) when there were more records than parameter 2 (CNT) to supress the header for the subsequent calls to get data.The first call to the rpc should NOT include the MORE=1 parameter.  Send MORE=9 to kill the report data in ^XTMP global if the user no longer wants to get it. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIVHNDL | LITERAL | 50 | true | Contains the Handle returned by the kick-off rpc call DSIV EXCEPTION REPORT2.  This is the ^XTMP global node where the report status and data reside. | 
+| CNT | LITERAL | 10 | true | Contains the count (#) of records to return for each call to the rpc. | 
+| MORE | LITERAL | 1 | true | Contains a flag (MORE=1) when there were more records than parameter 2 (CNT) to supress the header for the subsequent calls to get data.The first call to the rpc should NOT include the MORE=1 parameter.  Send MORE=9 to kill the report data in ^XTMP global if the user no longer wants to get it. | 

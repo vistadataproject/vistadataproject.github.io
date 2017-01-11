@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL |  |  | Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed. | 
-| vs:Input_Parameter-8994_02 | RTEXT | LITERAL |  |  | Actual carrot ('^') deliminated text (by line) of the reminder. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  |  |  | 
+| DATE | LITERAL |  |  | Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed. | 
+| RTEXT | LITERAL |  |  | Actual carrot ('^') deliminated text (by line) of the reminder. | 

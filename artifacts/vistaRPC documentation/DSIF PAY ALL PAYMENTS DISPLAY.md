@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true |  | 
-| vs:Input_Parameter-8994_02 | VENDOR IEN | LITERAL | 25 | true |  | 
-| vs:Input_Parameter-8994_02 | DATE OF SERVICE | LITERAL | 7 | true | Date of service FM format (optional) **Unless you enter a CPT code, then it is required! | 
-| vs:Input_Parameter-8994_02 | CPT | LITERAL | 12 | true | CPT code, external value. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true |  | 
+| VENDOR IEN | LITERAL | 25 | true |  | 
+| DATE OF SERVICE | LITERAL | 7 | true | Date of service FM format (optional) **Unless you enter a CPT code, then it is required! | 
+| CPT | LITERAL | 12 | true | CPT code, external value. | 

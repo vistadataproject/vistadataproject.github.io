@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SEND | LIST | 200 | true | This is a list of name-value pairs of field names and exact match values. | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 15 | true | This is the number of the FileMan file to be searched (e.g., 2005.61 forIMAGING PROCEDURE REFERENCE). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SEND | LIST | 200 | true | This is a list of name-value pairs of field names and exact match values. | 
+| FILE | LITERAL | 15 | true | This is the number of the FileMan file to be searched (e.g., 2005.61 forIMAGING PROCEDURE REFERENCE). | 

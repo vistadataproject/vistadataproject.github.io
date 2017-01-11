@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMPDFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | GMPROV |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | GMPVAMC | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMPDFN | LITERAL |  |  |  | 
+| GMPROV |  |  |  |  | 
+| GMPVAMC | LITERAL |  |  |  | 
+| ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 

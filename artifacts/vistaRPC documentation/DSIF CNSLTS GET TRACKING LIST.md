@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFSVC | LITERAL |  | true | This input parameter is the Service/Specialty IEN for the service in which you want a list of Consult details returned. | 
-| vs:Input_Parameter-8994_02 | DSIFLIEN | LITERAL |  |  | This is the last IEN returned, if the list contains more than 100records. By passing in this value, which should be the last IEN returned in a previous call, it will grab the next 100 records, or until there are no additional records. | 
-| vs:Input_Parameter-8994_02 | DSIFSCR | LITERAL |  |  |  If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFSVC | LITERAL |  | true | This input parameter is the Service/Specialty IEN for the service in which you want a list of Consult details returned. | 
+| DSIFLIEN | LITERAL |  |  | This is the last IEN returned, if the list contains more than 100records. By passing in this value, which should be the last IEN returned in a previous call, it will grab the next 100 records, or until there are no additional records. | 
+| DSIFSCR | LITERAL |  |  |  If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence | 

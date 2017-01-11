@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | This is patient pointer from file 2 for which to retrieve cases. | 
-| vs:Input_Parameter-8994_02 | ALPHA | LITERAL | 14 | true | This is the starting date.time in Fileman format for retrieving surgical cases.  Default value is 1/1/2000 | 
-| vs:Input_Parameter-8994_02 | OMEGA | LITERAL | 14 | true | This is a Fileman date.time  It is the ending date for surgical cases.  The default value is TODAY | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | This is patient pointer from file 2 for which to retrieve cases. | 
+| ALPHA | LITERAL | 14 | true | This is the starting date.time in Fileman format for retrieving surgical cases.  Default value is 1/1/2000 | 
+| OMEGA | LITERAL | 14 | true | This is a Fileman date.time  It is the ending date for surgical cases.  The default value is TODAY | 

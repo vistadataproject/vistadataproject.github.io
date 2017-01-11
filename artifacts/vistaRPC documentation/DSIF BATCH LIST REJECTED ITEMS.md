@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBBAT | LITERAL | 10 | true | Batch IEN or number IEN;NUMBER | 
-| vs:Input_Parameter-8994_02 | FBTYPE | LITERAL | 2 | true | Batch type (required) | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL | 7 | true | Date beginning from | 
-| vs:Input_Parameter-8994_02 | TODATE | LITERAL | 7 | true | Until date | 
-| vs:Input_Parameter-8994_02 | FBFROM |  |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBBAT | LITERAL | 10 | true | Batch IEN or number IEN;NUMBER | 
+| FBTYPE | LITERAL | 2 | true | Batch type (required) | 
+| FROM | LITERAL | 7 | true | Date beginning from | 
+| TODATE | LITERAL | 7 | true | Until date | 
+| FBFROM |  |  |  |  | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL |  |  | The HOSTNAME is the corresponding DICOM Gateway.  If HOSTNAME is blank all settings will be returned | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HOSTNAME | LITERAL |  |  | The HOSTNAME is the corresponding DICOM Gateway.  If HOSTNAME is blank all settings will be returned | 

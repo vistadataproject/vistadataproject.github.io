@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IDT | LITERAL |  | true | This is the base date/time in external format. In the case of testingwhether one date is before another, this would be the \base\ date.  | 
-| vs:Input_Parameter-8994_02 | PDT | LITERAL |  | true | This is the post date or benchmark date in external format.  In the example of testing if one date is earlier/less than another, this would be the latter date.  | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL |  | true | This input parm indicates the type of comparison to be done. -2 means PDT must be <  IDT (The DAY only)-1 means PDT must be <  IDT (The DAY&TIME)0 means PDT must be =  IDT (The DAY&TIME)1 means PDT must be >  IDT (The DAY&TIME)2 means PDT must be > IDT (The DAY only) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IDT | LITERAL |  | true | This is the base date/time in external format. In the case of testingwhether one date is before another, this would be the \base\ date.  | 
+| PDT | LITERAL |  | true | This is the post date or benchmark date in external format.  In the example of testing if one date is earlier/less than another, this would be the latter date.  | 
+| FLAG | LITERAL |  | true | This input parm indicates the type of comparison to be done. -2 means PDT must be <  IDT (The DAY only)-1 means PDT must be <  IDT (The DAY&TIME)0 means PDT must be =  IDT (The DAY&TIME)1 means PDT must be >  IDT (The DAY&TIME)2 means PDT must be > IDT (The DAY only) | 

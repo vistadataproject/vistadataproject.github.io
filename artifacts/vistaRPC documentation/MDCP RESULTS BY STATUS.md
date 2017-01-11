@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MDCPSTAT | LITERAL | 1 | true | This is the EXTERNAL representation of the status to be used to generate the list of IENs. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MDCPSTAT | LITERAL | 1 | true | This is the EXTERNAL representation of the status to be used to generate the list of IENs. | 

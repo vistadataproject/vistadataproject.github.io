@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VAL | LITERAL | 50 | true | This is the lookup value to find matches in file 200 | 
-| vs:Input_Parameter-8994_02 | SCR | LIST | 250 | true | This RPC will return a list of active users.  You may wish additional screening to occur.  For example, return all active users matching SMITH who also own a particular security key.  Acceptable format of SCR():  SCR(n) = KEY^<security key name>  SCR(n) = PARM^<parameter name>^<parameter instance>  SCR(n) = M^<return text>^<executable M code that sets $T> | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VAL | LITERAL | 50 | true | This is the lookup value to find matches in file 200 | 
+| SCR | LIST | 250 | true | This RPC will return a list of active users.  You may wish additional screening to occur.  For example, return all active users matching SMITH who also own a particular security key.  Acceptable format of SCR():  SCR(n) = KEY^<security key name>  SCR(n) = PARM^<parameter name>^<parameter instance>  SCR(n) = M^<return text>^<executable M code that sets $T> | 

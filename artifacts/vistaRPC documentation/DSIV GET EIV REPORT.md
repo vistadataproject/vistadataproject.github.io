@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | BUFFER | LITERAL | 30 | true | Insurance Buffer IEN (file 355.33). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| BUFFER | LITERAL | 30 | true | Insurance Buffer IEN (file 355.33). | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DVBAETYP | LITERAL | 1 | true | The type of cryptography action to execute: 1: Encryption or 2: Decryption. | 
-| vs:Input_Parameter-8994_02 | DVBAIVAL | LITERAL | 999 | true | The single or '^' delimited string value(s) to perform the cryptography action on. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DVBAETYP | LITERAL | 1 | true | The type of cryptography action to execute: 1: Encryption or 2: Decryption. | 
+| DVBAIVAL | LITERAL | 999 | true | The single or '^' delimited string value(s) to perform the cryptography action on. | 

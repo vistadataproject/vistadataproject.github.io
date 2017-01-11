@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 7 | true | FileMan format start date. | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 7 | true | FileMan end date. Optional - defaults to current date. | 
-| vs:Input_Parameter-8994_02 | CLERK(S) | LIST | 99 | true | Array where each element is equal to the DUZ of selected clerks.  Optional - no entries passed will return all clerks for time period. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| START DATE | LITERAL | 7 | true | FileMan format start date. | 
+| END DATE | LITERAL | 7 | true | FileMan end date. Optional - defaults to current date. | 
+| CLERK(S) | LIST | 99 | true | Array where each element is equal to the DUZ of selected clerks.  Optional - no entries passed will return all clerks for time period. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | dialog type | LITERAL | 1 | true | \C\ for consult, \P\ for procedure | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| dialog type | LITERAL | 1 | true | \C\ for consult, \P\ for procedure | 

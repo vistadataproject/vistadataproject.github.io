@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVTYPE | LITERAL | 55 | true | GMVTYPE = Name of Vital Type (from FILE 120.51) (e.g., WEIGHT) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVTYPE | LITERAL | 55 | true | GMVTYPE = Name of Vital Type (from FILE 120.51) (e.g., WEIGHT) | 

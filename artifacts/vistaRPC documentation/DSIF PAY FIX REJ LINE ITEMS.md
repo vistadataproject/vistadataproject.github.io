@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBOLDB | LITERAL | 10 | true | Batch IEN of the batch that held the line items that were rejected. | 
-| vs:Input_Parameter-8994_02 | FBNEWB | LITERAL | 10 | true | Batch IEN of the batch that will hold the re-initiated line items. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBOLDB | LITERAL | 10 | true | Batch IEN of the batch that held the line items that were rejected. | 
+| FBNEWB | LITERAL | 10 | true | Batch IEN of the batch that will hold the re-initiated line items. | 

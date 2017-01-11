@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RAOIEN | LITERAL |  | true | Pointer to Radiology Order File #75.1. | 
-| vs:Input_Parameter-8994_02 | RAMLC | LITERAL |  | true | Pointer to Radiology Imaging Location File #79.1. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RAOIEN | LITERAL |  | true | Pointer to Radiology Order File #75.1. | 
+| RAMLC | LITERAL |  | true | Pointer to Radiology Imaging Location File #79.1. | 

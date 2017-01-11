@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OPTION | LITERAL | 30 | true | See description of RPC. | 
-| vs:Input_Parameter-8994_02 | DDNUM | LITERAL | 10 | true | Contains the Data Dictionary number of the item being manipulated. | 
-| vs:Input_Parameter-8994_02 | IENS | LITERAL | 20 | true | Contains the IENS of the record being manipulated. | 
-| vs:Input_Parameter-8994_02 | FLD | LITERAL | 10 | true | Contains field specifications for the record. | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 30 | true | Contains any other needed information for the call. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OPTION | LITERAL | 30 | true | See description of RPC. | 
+| DDNUM | LITERAL | 10 | true | Contains the Data Dictionary number of the item being manipulated. | 
+| IENS | LITERAL | 20 | true | Contains the IENS of the record being manipulated. | 
+| FLD | LITERAL | 10 | true | Contains field specifications for the record. | 
+| DATA | LITERAL | 30 | true | Contains any other needed information for the call. | 

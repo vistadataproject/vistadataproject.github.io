@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGGZ | LITERAL | 30 | true | ; MAGGZ    ->   DFN  ^  HS Type (IEN)The patient's DFN and the health summary type's internal entry number(IEN). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGGZ | LITERAL | 30 | true | ; MAGGZ    ->   DFN  ^  HS Type (IEN)The patient's DFN and the health summary type's internal entry number(IEN). | 

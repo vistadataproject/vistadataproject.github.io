@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LITERAL | 256 | true | This parameter (INPUT) contains the required IENs for filing a record.  If theStation IEN is passed in the record will be edited, if no Station IEN ispresent, a new Station subrecord will be created.  The format is:SITE IEN^SUBFILE #^STATION IEN | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 256 | true | This parameter contains the data to be filed in the Station subfile. | 
-| vs:Input_Parameter-8994_02 | FORM | LITERAL | 30 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LITERAL | 256 | true | This parameter (INPUT) contains the required IENs for filing a record.  If theStation IEN is passed in the record will be edited, if no Station IEN ispresent, a new Station subrecord will be created.  The format is:SITE IEN^SUBFILE #^STATION IEN | 
+| DATA | LITERAL | 256 | true | This parameter contains the data to be filed in the Station subfile. | 
+| FORM | LITERAL | 30 | true |  | 

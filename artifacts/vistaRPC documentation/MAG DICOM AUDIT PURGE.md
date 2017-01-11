@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILENUM | LITERAL | 20 | true | The value of this parameter is a number. This number identifiesthe FileMan table that is to be purged. | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 20 | true | The value of this parameter is a (FileMan formatted) date.Data generated before this date will be purged from the currentFileMan table. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILENUM | LITERAL | 20 | true | The value of this parameter is a number. This number identifiesthe FileMan table that is to be purged. | 
+| DATE | LITERAL | 20 | true | The value of this parameter is a (FileMan formatted) date.Data generated before this date will be purged from the currentFileMan table. | 

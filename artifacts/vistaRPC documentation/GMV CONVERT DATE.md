@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMRDATE | LITERAL | 30 | true | GMRDATE is the user-supplied date/time text. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMRDATE | LITERAL | 30 | true | GMRDATE is the user-supplied date/time text. | 

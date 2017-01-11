@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBCMD | LITERAL | 6 | true | Contains the command to perform against the system parameters.GETPAR: Get a single instance of a parameterGETLST: Get all instances of a multiple valued parameterSETPAR: Set a single instance of a parameterCLRLST: Clear all instances of parameters in a list | 
-| vs:Input_Parameter-8994_02 | PSBENT | LITERAL | 30 | true | Contains the entity to act upon.  Usually \###;DIC(4,\ for division. | 
-| vs:Input_Parameter-8994_02 | PSBPAR | LITERAL | 30 | true | The parameter as defined in file 8989.51. | 
-| vs:Input_Parameter-8994_02 | PSBINS | LITERAL | 30 | true | The instance of the parameter that you want to return.  Defaults to 1. | 
-| vs:Input_Parameter-8994_02 | PSBVAL | LITERAL | 80 | true | If setting a parameter this contains the data value to place in the parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBCMD | LITERAL | 6 | true | Contains the command to perform against the system parameters.GETPAR: Get a single instance of a parameterGETLST: Get all instances of a multiple valued parameterSETPAR: Set a single instance of a parameterCLRLST: Clear all instances of parameters in a list | 
+| PSBENT | LITERAL | 30 | true | Contains the entity to act upon.  Usually \###;DIC(4,\ for division. | 
+| PSBPAR | LITERAL | 30 | true | The parameter as defined in file 8989.51. | 
+| PSBINS | LITERAL | 30 | true | The instance of the parameter that you want to return.  Defaults to 1. | 
+| PSBVAL | LITERAL | 80 | true | If setting a parameter this contains the data value to place in the parameter. | 

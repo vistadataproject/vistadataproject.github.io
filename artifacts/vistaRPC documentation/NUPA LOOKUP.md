@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAMETERS | LIST |  | true | Array of format: PAR(\F\)=The file to do the lookup on.PAR(\V\)=The value to lookup.PAR(\FD\)=Fields to return data from.PAR(\IND\)=Indexes to do the lookup on.PAR(\NUM\)=Number of results to return.PAR(\SCR\)=The fileman lookup screen. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAMETERS | LIST |  | true | Array of format: PAR(\F\)=The file to do the lookup on.PAR(\V\)=The value to lookup.PAR(\FD\)=Fields to return data from.PAR(\IND\)=Indexes to do the lookup on.PAR(\NUM\)=Number of results to return.PAR(\SCR\)=The fileman lookup screen. | 

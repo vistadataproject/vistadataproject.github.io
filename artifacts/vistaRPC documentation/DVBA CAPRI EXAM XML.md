@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | EXAMIEN | LITERAL | 30 | true | 2507 Exam IEN | 
-| vs:Input_Parameter-8994_02 | DAS | LITERAL | 250 | true | DAS is the XML DAS Conformation message | 
-| vs:Input_Parameter-8994_02 | DATTIM | LITERAL |  | true | DATTIM is the XML Transmission Date/Time | 
-| vs:Input_Parameter-8994_02 | XML | LIST |  | true | XML is the array list format of the template being stored | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| EXAMIEN | LITERAL | 30 | true | 2507 Exam IEN | 
+| DAS | LITERAL | 250 | true | DAS is the XML DAS Conformation message | 
+| DATTIM | LITERAL |  | true | DATTIM is the XML Transmission Date/Time | 
+| XML | LIST |  | true | XML is the array list format of the template being stored | 

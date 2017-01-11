@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be discontinued. | 
-| vs:Input_Parameter-8994_02 | DSIFPROV | LITERAL |  | true | Provider who Discontinued or Denied consult. | 
-| vs:Input_Parameter-8994_02 | DSIFDT | LITERAL |  | true | This is the date the consult was discontinued or denied. | 
-| vs:Input_Parameter-8994_02 | DSIFACTM | LITERAL | 2 | true | Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied | 
-| vs:Input_Parameter-8994_02 | DSIFCOM | LIST | 80 |  | The array of comments associated with the discontinue/deny for the consult. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be discontinued. | 
+| DSIFPROV | LITERAL |  | true | Provider who Discontinued or Denied consult. | 
+| DSIFDT | LITERAL |  | true | This is the date the consult was discontinued or denied. | 
+| DSIFACTM | LITERAL | 2 | true | Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied | 
+| DSIFCOM | LIST | 80 |  | The array of comments associated with the discontinue/deny for the consult. | 

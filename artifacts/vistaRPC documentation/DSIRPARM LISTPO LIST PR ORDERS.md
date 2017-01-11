@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INST | LITERAL | 99 | true | Facility IEN to DSIR FACILITY PARAMETERS File (#19620.701). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INST | LITERAL | 99 | true | Facility IEN to DSIR FACILITY PARAMETERS File (#19620.701). | 

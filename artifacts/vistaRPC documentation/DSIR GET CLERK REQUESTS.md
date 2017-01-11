@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLERK | LITERAL | 30 | true | The IEN for file 2 which points at the desired ROI clerk. | 
-| vs:Input_Parameter-8994_02 | BILLING | LITERAL | 1 | true | BILLING - The billing system is on (1) or off(0) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLERK | LITERAL | 30 | true | The IEN for file 2 which points at the desired ROI clerk. | 
+| BILLING | LITERAL | 1 | true | BILLING - The billing system is on (1) or off(0) | 

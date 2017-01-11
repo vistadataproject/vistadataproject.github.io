@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUTYP | LITERAL |  | true | Pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1). | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | Pointer to the TIU DOCUMENT FILE (#8925).  References the document to beedited/signed. | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | Optional parameter.  Pointer to the NEW PERSON FILE (#200).  Pass this in if author is NOT the current user (e.g., User is a transcriptionist. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUTYP | LITERAL |  | true | Pointer to the TIU DOCUMENT DEFINITION FILE (#8925.1). | 
+| TIUDA | LITERAL |  | true | Pointer to the TIU DOCUMENT FILE (#8925).  References the document to beedited/signed. | 
+| USER | LITERAL |  | true | Optional parameter.  Pointer to the NEW PERSON FILE (#200).  Pass this in if author is NOT the current user (e.g., User is a transcriptionist. | 

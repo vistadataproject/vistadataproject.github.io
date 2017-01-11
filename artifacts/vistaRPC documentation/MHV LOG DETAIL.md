@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DTM | LITERAL | 15 | true | Negative Date/Time of entry in Fileman format. | 
-| vs:Input_Parameter-8994_02 | JOB | LITERAL | 15 | true | Job number of log entry. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DTM | LITERAL | 15 | true | Negative Date/Time of entry in Fileman format. | 
+| JOB | LITERAL | 15 | true | Job number of log entry. | 

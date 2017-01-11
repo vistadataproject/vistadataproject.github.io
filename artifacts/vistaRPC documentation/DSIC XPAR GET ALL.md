@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 250 | true | DATA - required - ~p2~p3~~~p6 p2 := required - parameter name p3 := optional - instance p6 := optional - format code - default=Q, anything else besides Q or                   <null> will be treated as code B | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 250 | true | DATA - required - ~p2~p3~~~p6 p2 := required - parameter name p3 := optional - instance p6 := optional - format code - default=Q, anything else besides Q or                   <null> will be treated as code B | 

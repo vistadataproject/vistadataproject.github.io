@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL | 20 | true | The Flags Parameter can contain'C' for images captured on the Capture Workstationand/or'I' for images captured throught the Import API.  If the parameter is null it defaults to 'CI'. | 
-| vs:Input_Parameter-8994_02 | FROMDATE | LITERAL | 20 | true | The earliest Date to search for users. | 
-| vs:Input_Parameter-8994_02 | TODATE | LITERAL | 20 | true | The latest Date to search for users. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FLAGS | LITERAL | 20 | true | The Flags Parameter can contain'C' for images captured on the Capture Workstationand/or'I' for images captured throught the Import API.  If the parameter is null it defaults to 'CI'. | 
+| FROMDATE | LITERAL | 20 | true | The earliest Date to search for users. | 
+| TODATE | LITERAL | 20 | true | The latest Date to search for users. | 

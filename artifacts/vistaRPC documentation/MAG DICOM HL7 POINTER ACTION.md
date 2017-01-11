@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACTION | LITERAL | 30 | true | The value of this parameter is a string that specifies the actionto be taken by the remote procedure.Currently, valid actions are \GetDate\ and \DatePtr\. | 
-| vs:Input_Parameter-8994_02 | VALUE | LITERAL | 30 | true | The value of this parameter is a string. The meaning of thisstring depends on the value of parameter ACTION.When ACTION=\GetDate\, the value of this parameter is interpretedas a pointer to the HL7 message for which the date is to beretrieved.When ACTION=\DatePtr\, the value of this parameter is interpretedas the date for which a pointer to the first HL7 message thatoccurred on or past that date is to be retrieved. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACTION | LITERAL | 30 | true | The value of this parameter is a string that specifies the actionto be taken by the remote procedure.Currently, valid actions are \GetDate\ and \DatePtr\. | 
+| VALUE | LITERAL | 30 | true | The value of this parameter is a string. The meaning of thisstring depends on the value of parameter ACTION.When ACTION=\GetDate\, the value of this parameter is interpretedas a pointer to the HL7 message for which the date is to beretrieved.When ACTION=\DatePtr\, the value of this parameter is interpretedas the date for which a pointer to the first HL7 message thatoccurred on or past that date is to be retrieved. | 

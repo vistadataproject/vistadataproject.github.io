@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBENDDT | LITERAL | 7 | true | Last Day of the Month for the report (Required, FileMan format) | 
-| vs:Input_Parameter-8994_02 | FBK | LITERAL | 1 | true | Report Hospital Type (Required, 1 = Public Hospital, 2 = Private Hospital, 3 = Federal Hospital) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBENDDT | LITERAL | 7 | true | Last Day of the Month for the report (Required, FileMan format) | 
+| FBK | LITERAL | 1 | true | Report Hospital Type (Required, 1 = Public Hospital, 2 = Private Hospital, 3 = Federal Hospital) | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  | The IEN of the Patient in the Patient File (#2). | 
-| vs:Input_Parameter-8994_02 | DATA1 | LITERAL |  |  | Data string from the Anticoagulation Management Program. | 
-| vs:Input_Parameter-8994_02 | HOSLOC | LITERAL |  |  | Visit location from the Hospital Location File. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  |  | The IEN of the Patient in the Patient File (#2). | 
+| DATA1 | LITERAL |  |  | Data string from the Anticoagulation Management Program. | 
+| HOSLOC | LITERAL |  |  | Visit location from the Hospital Location File. | 

@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FNUM | LITERAL | 30 | true | The file number of the content table. | 
-| vs:Input_Parameter-8994_02 | IENS | LITERAL | 30 | true | The IENS of the main level or subfile level of the content table. | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL | 30 | true | The FIND1^DIC lookup options. | 
-| vs:Input_Parameter-8994_02 | FNDVALUE | LITERAL | 60 | true | The carat delimited lookup.  Each piece is the same as the subscript in the index. | 
-| vs:Input_Parameter-8994_02 | XREF | LITERAL | 30 | true | The subscriber specified cross reference for the lookup. | 
-| vs:Input_Parameter-8994_02 | SCREEN | LITERAL | 30 | true | The subscriber specified DIC(\S\) logic for the lookup. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FNUM | LITERAL | 30 | true | The file number of the content table. | 
+| IENS | LITERAL | 30 | true | The IENS of the main level or subfile level of the content table. | 
+| FLAGS | LITERAL | 30 | true | The FIND1^DIC lookup options. | 
+| FNDVALUE | LITERAL | 60 | true | The carat delimited lookup.  Each piece is the same as the subscript in the index. | 
+| XREF | LITERAL | 30 | true | The subscriber specified cross reference for the lookup. | 
+| SCREEN | LITERAL | 30 | true | The subscriber specified DIC(\S\) logic for the lookup. | 

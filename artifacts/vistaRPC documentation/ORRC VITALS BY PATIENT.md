@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
-| vs:Input_Parameter-8994_02 | START | LITERAL |  | true | This is the date to start searching for vitals, in the form YYYYMMDDHHMMSS;if no date range is specified, up to 5 sets of measurements will be returned. | 
-| vs:Input_Parameter-8994_02 | STOP | LITERAL |  | true | This is the date to stop searching for vitals, in the form YYYYMMDDHHMMSS;if no date range is specified, up to 5 sets of measurements will bereturned. | 
-| vs:Input_Parameter-8994_02 | DETAILS | LITERAL |  | true | This flag indicates whether to return the details of each vital signtaken (true), or just the list of measurement set IDs (false). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
+| START | LITERAL |  | true | This is the date to start searching for vitals, in the form YYYYMMDDHHMMSS;if no date range is specified, up to 5 sets of measurements will be returned. | 
+| STOP | LITERAL |  | true | This is the date to stop searching for vitals, in the form YYYYMMDDHHMMSS;if no date range is specified, up to 5 sets of measurements will bereturned. | 
+| DETAILS | LITERAL |  | true | This flag indicates whether to return the details of each vital signtaken (true), or just the list of measurement set IDs (false). | 

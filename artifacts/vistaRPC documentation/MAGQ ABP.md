@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | WORKSTAT | LITERAL | 30 | true | This value is the actual workstation name as specified bythe network operating system.  It is identical to the fieldin the VISTA workstation file (#2006.8) named WRKS COMPUTERNAME (#50). | 
-| vs:Input_Parameter-8994_02 | PROCESS | LITERAL | 8 | true | This value is by design either \B-PROC\ or \Purge\ and is used to renamethe VISTA Job name on DSM systems.  This value has the last two IP octetconcatenated to it for easy identification for system management purposes.It is also displayed in the title bar of the workstation process form.of the workstation process form. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| WORKSTAT | LITERAL | 30 | true | This value is the actual workstation name as specified bythe network operating system.  It is identical to the fieldin the VISTA workstation file (#2006.8) named WRKS COMPUTERNAME (#50). | 
+| PROCESS | LITERAL | 8 | true | This value is by design either \B-PROC\ or \Purge\ and is used to renamethe VISTA Job name on DSM systems.  This value has the last two IP octetconcatenated to it for easy identification for system management purposes.It is also displayed in the title bar of the workstation process form.of the workstation process form. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  |  | The user to check the parameter for. | 
-| vs:Input_Parameter-8994_02 | LOC | LITERAL |  |  | Location to use in checking the parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL |  |  | The user to check the parameter for. | 
+| LOC | LITERAL |  |  | Location to use in checking the parameter. | 

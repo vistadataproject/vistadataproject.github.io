@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OLD | LITERAL | 64 | true | The value of this parameter is a string.This value represents the original SOP Instance UID of an imagethat is to be exported. | 
-| vs:Input_Parameter-8994_02 | NEW | LITERAL | 64 | true | The value of this parameter is a string.This value represents the new SOP Instance UID that is tobe assigned to the corrected image that is to be exported. | 
-| vs:Input_Parameter-8994_02 | IMAGE | LITERAL | 10 | true | The value of this parameter is anumber. This number is a pointer that identifiesan image (pointer to file # 2005). When this parameter is specified, it identifies theimage to which the new UID is intended to be added. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OLD | LITERAL | 64 | true | The value of this parameter is a string.This value represents the original SOP Instance UID of an imagethat is to be exported. | 
+| NEW | LITERAL | 64 | true | The value of this parameter is a string.This value represents the new SOP Instance UID that is tobe assigned to the corrected image that is to be exported. | 
+| IMAGE | LITERAL | 10 | true | The value of this parameter is anumber. This number is a pointer that identifiesan image (pointer to file # 2005). When this parameter is specified, it identifies theimage to which the new UID is intended to be added. | 

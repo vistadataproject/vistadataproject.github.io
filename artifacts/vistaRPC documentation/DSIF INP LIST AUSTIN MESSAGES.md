@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROM DATE | LITERAL | 7 | true | Date to start from in FM format. | 
-| vs:Input_Parameter-8994_02 | STOP DATE | LITERAL | 7 | true | Date to stop listing messages in FM format (today - defaultif not entered). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROM DATE | LITERAL | 7 | true | Date to start from in FM format. | 
+| STOP DATE | LITERAL | 7 | true | Date to stop listing messages in FM format (today - defaultif not entered). | 

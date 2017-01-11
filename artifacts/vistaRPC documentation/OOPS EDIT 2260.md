@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | ARR | LITERAL |  | true | This is an array of the sendparms created in Delphi to fill in the 2260. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LITERAL |  | true |  | 
+| ARR | LITERAL |  | true | This is an array of the sendparms created in Delphi to fill in the 2260. | 

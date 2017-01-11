@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 10 | true | ICN - not including the checksum | 
-| vs:Input_Parameter-8994_02 | NCMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICN | LITERAL | 10 | true | ICN - not including the checksum | 
+| NCMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR. | 

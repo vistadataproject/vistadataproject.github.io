@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIE | LITERAL |  | true | The file to save data to, in regular fileman format. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | The DA variable for the DIE call, in regular fileman format. | 
-| vs:Input_Parameter-8994_02 | FIELD | LITERAL |  | true | The field number to file data into, in numeric format. | 
-| vs:Input_Parameter-8994_02 | VALUE | LITERAL |  | true | The value to save to the field. | 
-| vs:Input_Parameter-8994_02 | SLASHES | LITERAL |  | true | The number of slashes for the DIE call, typically 3 or 4. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIE | LITERAL |  | true | The file to save data to, in regular fileman format. | 
+| IEN | LITERAL |  | true | The DA variable for the DIE call, in regular fileman format. | 
+| FIELD | LITERAL |  | true | The field number to file data into, in numeric format. | 
+| VALUE | LITERAL |  | true | The value to save to the field. | 
+| SLASHES | LITERAL |  | true | The number of slashes for the DIE call, typically 3 or 4. | 

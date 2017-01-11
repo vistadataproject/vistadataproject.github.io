@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ID | LITERAL | 16 | true | Patient ID (DFN) from Patient File [#2]. | 
-| vs:Input_Parameter-8994_02 | START DATE/TIME | LITERAL | 16 | true | Start date/time to return visits and appointments.  In internal FileMan format. | 
-| vs:Input_Parameter-8994_02 | STOP DATE/TIME | LITERAL | 16 | true | Stop date/time to return visits and appointments. In internal FileMan format. | 
-| vs:Input_Parameter-8994_02 | DUMMY | LITERAL | 16 | true | This is a dummy parameter so the Broker won't crash.appointments for this location only will be returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ID | LITERAL | 16 | true | Patient ID (DFN) from Patient File [#2]. | 
+| START DATE/TIME | LITERAL | 16 | true | Start date/time to return visits and appointments.  In internal FileMan format. | 
+| STOP DATE/TIME | LITERAL | 16 | true | Stop date/time to return visits and appointments. In internal FileMan format. | 
+| DUMMY | LITERAL | 16 | true | This is a dummy parameter so the Broker won't crash.appointments for this location only will be returned. | 

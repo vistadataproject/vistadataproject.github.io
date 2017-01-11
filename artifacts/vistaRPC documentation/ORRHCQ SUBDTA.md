@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FIRST | LITERAL |  | true | The first record that has been requested by the listview control. | 
-| vs:Input_Parameter-8994_02 | LAST | LITERAL |  | true | The last record number that has been requested by the listview control. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FIRST | LITERAL |  | true | The first record that has been requested by the listview control. | 
+| LAST | LITERAL |  | true | The last record number that has been requested by the listview control. | 

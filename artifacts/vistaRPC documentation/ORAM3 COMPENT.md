@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | CCODE | LITERAL |  |  | CODE TO NOTE IF COMPLICATION IS MAJOR, MINOR OR BOTH | 
-| vs:Input_Parameter-8994_02 | CTEXT | LITERAL |  |  | Carroted ('^') string of complication types/comments | 
-| vs:Input_Parameter-8994_02 | CDATE | LITERAL |  |  | 'ENGLISH' DATE OF THE COMPLICATION;This is the date for the flow sheet to put the, probably historic, entry in the proper order in the flow sheet.  DATE/TIME stamp is in the file, but not visible in the flow sheet. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  |  |  | 
+| DUZ | LITERAL |  |  |  | 
+| CCODE | LITERAL |  |  | CODE TO NOTE IF COMPLICATION IS MAJOR, MINOR OR BOTH | 
+| CTEXT | LITERAL |  |  | Carroted ('^') string of complication types/comments | 
+| CDATE | LITERAL |  |  | 'ENGLISH' DATE OF THE COMPLICATION;This is the date for the flow sheet to put the, probably historic, entry in the proper order in the flow sheet.  DATE/TIME stamp is in the file, but not visible in the flow sheet. | 

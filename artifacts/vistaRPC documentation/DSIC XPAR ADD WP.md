@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 250 | true | DATA - required - p1~p2~p3  p1 := optional - entity - if not passed, defaults to SYS for current                             user.   p2 := required - parameter name  p3 := optional - instance (defaults to 1) | 
-| vs:Input_Parameter-8994_02 | ARRAY | LIST | 250 | true | Array of text to add to the parameter where:   ARRAY(0) = 1st line of text  ARRAY(1) = 2nd line of text  ARRAY(n) = nth line of text  ARRAY(n)=\\ to store blank lines of text, such as paragraph separation. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 250 | true | DATA - required - p1~p2~p3  p1 := optional - entity - if not passed, defaults to SYS for current                             user.   p2 := required - parameter name  p3 := optional - instance (defaults to 1) | 
+| ARRAY | LIST | 250 | true | Array of text to add to the parameter where:   ARRAY(0) = 1st line of text  ARRAY(1) = 2nd line of text  ARRAY(n) = nth line of text  ARRAY(n)=\\ to store blank lines of text, such as paragraph separation. | 

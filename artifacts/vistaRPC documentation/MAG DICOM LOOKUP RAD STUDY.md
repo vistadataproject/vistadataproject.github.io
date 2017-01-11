@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CASENUMB | LITERAL | 30 | true | The value of this parameter is a string. This value identifiesthe \case number\ for the study. The case number may be specifiedas a \date + case number\ or as just an integer number.In the former case, the date is formatted as \mmddyy\. | 
-| vs:Input_Parameter-8994_02 | STUDYDAT | LITERAL | 20 | true | The value of this parameter is a (FileMan) date.This value represents the date on which the study took place. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CASENUMB | LITERAL | 30 | true | The value of this parameter is a string. This value identifiesthe \case number\ for the study. The case number may be specifiedas a \date + case number\ or as just an integer number.In the former case, the date is formatted as \mmddyy\. | 
+| STUDYDAT | LITERAL | 20 | true | The value of this parameter is a (FileMan) date.This value represents the date on which the study took place. | 

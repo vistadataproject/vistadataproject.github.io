@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ITEMS | LITERAL |  | true | This parameter can be only one of two values:  LINES     - RPC will return a number of lines  KILOBYTES - RPC will return a number of kilobytes of data | 
-| vs:Input_Parameter-8994_02 | QUANTITY | LITERAL |  |  | Either a number of lines or a number of kilobytes to send back. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ITEMS | LITERAL |  | true | This parameter can be only one of two values:  LINES     - RPC will return a number of lines  KILOBYTES - RPC will return a number of kilobytes of data | 
+| QUANTITY | LITERAL |  |  | Either a number of lines or a number of kilobytes to send back. | 

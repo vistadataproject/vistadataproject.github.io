@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  |  | IEN of the Note. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  | Patient DFN. | 
-| vs:Input_Parameter-8994_02 | ORLOC | LITERAL |  |  | Hospital Location. | 
-| vs:Input_Parameter-8994_02 | ORDTE | LITERAL |  |  | Visit Date | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  |  | IEN of the Note. | 
+| DFN | LITERAL |  |  | Patient DFN. | 
+| ORLOC | LITERAL |  |  | Hospital Location. | 
+| ORDTE | LITERAL |  |  | Visit Date | 

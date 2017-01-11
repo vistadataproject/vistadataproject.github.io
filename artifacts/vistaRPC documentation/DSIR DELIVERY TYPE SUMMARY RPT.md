@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDATE | LITERAL | 7 | true | SDATE - Optional - Report start date in Fileman format. | 
-| vs:Input_Parameter-8994_02 | EDATE | LITERAL | 7 | true | EDATE - Optional - Report end date in Fileman format. | 
-| vs:Input_Parameter-8994_02 | DIVL | LITERAL | 150 | true | DIVL  - Optional - List of selected divisions - NULL means all divisions. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDATE | LITERAL | 7 | true | SDATE - Optional - Report start date in Fileman format. | 
+| EDATE | LITERAL | 7 | true | EDATE - Optional - Report end date in Fileman format. | 
+| DIVL | LITERAL | 150 | true | DIVL  - Optional - List of selected divisions - NULL means all divisions. | 

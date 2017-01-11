@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICNLST | LIST |  |  | A list of Integration Control Numbers of patients in the PATIENT file (#2)in the following format: (ICN^ICN^ICN^ICN^ICN...) | 
-| vs:Input_Parameter-8994_02 | SPNSEL | LITERAL |  |  | Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2 | 
-| vs:Input_Parameter-8994_02 | SPNSTRT | LITERAL |  |  | Starting date range. | 
-| vs:Input_Parameter-8994_02 | SPNEND | LITERAL |  |  | Ending date range. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICNLST | LIST |  |  | A list of Integration Control Numbers of patients in the PATIENT file (#2)in the following format: (ICN^ICN^ICN^ICN^ICN...) | 
+| SPNSEL | LITERAL |  |  | Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2 | 
+| SPNSTRT | LITERAL |  |  | Starting date range. | 
+| SPNEND | LITERAL |  |  | Ending date range. | 

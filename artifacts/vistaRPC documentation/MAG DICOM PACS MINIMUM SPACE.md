@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | D0 | LITERAL | 30 | true | The value of this parameter is a pointer to the ImagingSite Parameter Table (#2006.1). For non-consolidated sites, this value is always equal to 1 . For consolidated sites, this pointer identifies the \place\for which information is to be retrieved. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| D0 | LITERAL | 30 | true | The value of this parameter is a pointer to the ImagingSite Parameter Table (#2006.1). For non-consolidated sites, this value is always equal to 1 . For consolidated sites, this pointer identifies the \place\for which information is to be retrieved. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLINICAL REMINDER IEN | LITERAL | 16 | true | Array of clinical reminder iens [#811.9] to be checked. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLINICAL REMINDER IEN | LITERAL | 16 | true | Array of clinical reminder iens [#811.9] to be checked. | 

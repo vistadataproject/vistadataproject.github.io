@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGVDUZ | LITERAL | 16 | true | DUZ of the user importing the media. | 
-| vs:Input_Parameter-8994_02 | MAGVWKST | LITERAL | 30 | true | Computer name of the workstation used for the media import event. | 
-| vs:Input_Parameter-8994_02 | MEDTYPE | LITERAL | 16 | true | Media Type used to transport the objects:  Direct Import,  Network Import, Staged Media, DICOM Correct. | 
-| vs:Input_Parameter-8994_02 | MEDVALID | LITERAL | 16 | true | Validation status of the media import event:    0 = VALID MEDIA -1 = DICOMDIR MISSING -2 = DICOMDIR INVALID | 
-| vs:Input_Parameter-8994_02 | MEDVMSG | LITERAL | 220 | true | Description of the validation status of the media import event. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGVDUZ | LITERAL | 16 | true | DUZ of the user importing the media. | 
+| MAGVWKST | LITERAL | 30 | true | Computer name of the workstation used for the media import event. | 
+| MEDTYPE | LITERAL | 16 | true | Media Type used to transport the objects:  Direct Import,  Network Import, Staged Media, DICOM Correct. | 
+| MEDVALID | LITERAL | 16 | true | Validation status of the media import event:    0 = VALID MEDIA -1 = DICOMDIR MISSING -2 = DICOMDIR INVALID | 
+| MEDVMSG | LITERAL | 220 | true | Description of the validation status of the media import event. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Consult ID | LITERAL | 16 | true | Internal entry number of the consults request in file 123,REQUESTS/CONSULTS. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Consult ID | LITERAL | 16 | true | Internal entry number of the consults request in file 123,REQUESTS/CONSULTS. | 

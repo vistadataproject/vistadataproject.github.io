@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL | 30 |  | NAME OF DICOM GATEWAY COMPUTER | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HOSTNAME | LITERAL | 30 |  | NAME OF DICOM GATEWAY COMPUTER | 

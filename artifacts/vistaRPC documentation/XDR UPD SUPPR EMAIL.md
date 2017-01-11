@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE NUMBER | LITERAL | 20 | true | File number for the file that is the .01 field of a record in the DUPLICATE RESOLUTION file. This is the record that is to be updated by this RPC. | 
-| vs:Input_Parameter-8994_02 | VALUE | LITERAL | 1 | true | Must be set to 1 or 0. This value will be put into the SUPPRESS NEW DUP EMAIL field. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE NUMBER | LITERAL | 20 | true | File number for the file that is the .01 field of a record in the DUPLICATE RESOLUTION file. This is the record that is to be updated by this RPC. | 
+| VALUE | LITERAL | 1 | true | Must be set to 1 or 0. This value will be put into the SUPPRESS NEW DUP EMAIL field. | 

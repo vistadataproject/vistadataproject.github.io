@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VSIT | LITERAL |  | true | This is the record number (IEN) of the VISIT in the VISIT FILE. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VSIT | LITERAL |  | true | This is the record number (IEN) of the VISIT in the VISIT FILE. | 

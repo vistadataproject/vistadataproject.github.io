@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 30 | true | Image File internal entry number. | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL |  | true | Flags that control the execution (can be combined):\D\  Deleted Image Information is relevant | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 30 | true | Image File internal entry number. | 
+| FLAGS | LITERAL |  | true | Flags that control the execution (can be combined):\D\  Deleted Image Information is relevant | 

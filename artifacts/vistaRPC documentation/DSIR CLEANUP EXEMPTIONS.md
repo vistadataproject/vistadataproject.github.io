@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 7 | true | The date used to start the search for entries to check for bogus exemption data. | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 7 | true | The date to stop the search.  Defaults to the current day. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| START DATE | LITERAL | 7 | true | The date used to start the search for entries to check for bogus exemption data. | 
+| END DATE | LITERAL | 7 | true | The date to stop the search.  Defaults to the current day. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RESULT | REFERENCE | 30 | true | This is the RPC return array variable. | 
-| vs:Input_Parameter-8994_02 | OPTION | LITERAL | 30 | true | Contains the appropriate method to perform within this RPC call. Options are:  SELECT: Performs a select of the supplied DFN (param 3) and returns the           notices and warnings for the DFN   LOGSEC: Logs a security entry in the DG SECURITY LOG file. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 12 | true | Contains the DFN of the patient to process in the SELECT or LOGSEC method of param 2. | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 80 | true | Used to pass in the option name to DGSEC when logging against the DG SECURITY LOG file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RESULT | REFERENCE | 30 | true | This is the RPC return array variable. | 
+| OPTION | LITERAL | 30 | true | Contains the appropriate method to perform within this RPC call. Options are:  SELECT: Performs a select of the supplied DFN (param 3) and returns the           notices and warnings for the DFN   LOGSEC: Logs a security entry in the DG SECURITY LOG file. | 
+| DFN | LITERAL | 12 | true | Contains the DFN of the patient to process in the SELECT or LOGSEC method of param 2. | 
+| DATA | LITERAL | 80 | true | Used to pass in the option name to DGSEC when logging against the DG SECURITY LOG file. | 

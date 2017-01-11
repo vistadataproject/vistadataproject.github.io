@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAMS | LITERAL | 100 | true | TXID ^ SYSUPDAT ^ TXDUZ ^ TXDIVTXID: Transaction ID--identifies the type of transaction being requested;TXDUZ: Optional; DUZ value for retrieving another users stored data.  E.g., allow User X to see User Y's Hanging ProtocolsTXDIV: Optional; DIVision value for viewing data stored from other divisions. | 
-| vs:Input_Parameter-8994_02 | DATA | WORD PROCESSING | 240 |  | Optional Block of text sent from the client side; has structure as follows *LABEL Label Value 0:N lines of text associated with Label Value *ENDNote: multiple sequences of the above may be included. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAMS | LITERAL | 100 | true | TXID ^ SYSUPDAT ^ TXDUZ ^ TXDIVTXID: Transaction ID--identifies the type of transaction being requested;TXDUZ: Optional; DUZ value for retrieving another users stored data.  E.g., allow User X to see User Y's Hanging ProtocolsTXDIV: Optional; DIVision value for viewing data stored from other divisions. | 
+| DATA | WORD PROCESSING | 240 |  | Optional Block of text sent from the client side; has structure as follows *LABEL Label Value 0:N lines of text associated with Label Value *ENDNote: multiple sequences of the above may be included. | 

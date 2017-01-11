@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | BEGDATE | LITERAL | 7 | true | Begining Date (Required : FileMan format) | 
-| vs:Input_Parameter-8994_02 | ENDDATE | LITERAL | 7 | true | Ending Date (Required : FileMan format) | 
-| vs:Input_Parameter-8994_02 | FBRT | LITERAL | 1 | true | Report Type (Optional : D = Detailed, S = Summary, Default = Summary) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| BEGDATE | LITERAL | 7 | true | Begining Date (Required : FileMan format) | 
+| ENDDATE | LITERAL | 7 | true | Ending Date (Required : FileMan format) | 
+| FBRT | LITERAL | 1 | true | Report Type (Optional : D = Detailed, S = Summary, Default = Summary) | 

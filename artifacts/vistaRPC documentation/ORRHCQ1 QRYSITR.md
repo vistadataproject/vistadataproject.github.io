@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ITERATOR | LITERAL | 80 | true | Iterator that was returned from the last call to this routine. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ITERATOR | LITERAL | 80 | true | Iterator that was returned from the last call to this routine. | 

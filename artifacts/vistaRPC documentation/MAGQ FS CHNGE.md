@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | null |  |  |  | No input parameter required. | 
-| vs:Input_Parameter-8994_02 | NOTIFY | LITERAL | 2 | true | A message will be sent to the G.MAG_SERVER mail group if this value is set to '1' and if the share space does not meet the lower limit as establishedby the PERCENT SERVER RESERVE (#11) in the SITE PARAMETER FILE (#2006.1). | 
-| vs:Input_Parameter-8994_02 | BP OS | LITERAL | 99 | true | This is the Microsoft Windows operating system name and version. | 
-| vs:Input_Parameter-8994_02 | BPWS | LITERAL | 99 | true | This is the Background Processor network computer name. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| null |  |  |  | No input parameter required. | 
+| NOTIFY | LITERAL | 2 | true | A message will be sent to the G.MAG_SERVER mail group if this value is set to '1' and if the share space does not meet the lower limit as establishedby the PERCENT SERVER RESERVE (#11) in the SITE PARAMETER FILE (#2006.1). | 
+| BP OS | LITERAL | 99 | true | This is the Microsoft Windows operating system name and version. | 
+| BPWS | LITERAL | 99 | true | This is the Background Processor network computer name. | 

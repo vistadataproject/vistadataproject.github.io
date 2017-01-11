@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | StartFrom | LITERAL | 24 | true | Starting service for the returned list, full or partial name. | 
-| vs:Input_Parameter-8994_02 | Direction | LITERAL | 4 | true | Direction of the lookup. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| StartFrom | LITERAL | 24 | true | Starting service for the returned list, full or partial name. | 
+| Direction | LITERAL | 4 | true | Direction of the lookup. | 

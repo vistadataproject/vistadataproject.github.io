@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDA | LITERAL |  |  | An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA) | 
-| vs:Input_Parameter-8994_02 | MAGCNT | LITERAL |  | true | Count of new images captured | 
-| vs:Input_Parameter-8994_02 | MAGRIEN | LITERAL |  | true | a request/consult IEN in REQUEST/CONSULTATION file (#123) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDA | LITERAL |  |  | An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA) | 
+| MAGCNT | LITERAL |  | true | Count of new images captured | 
+| MAGRIEN | LITERAL |  | true | a request/consult IEN in REQUEST/CONSULTATION file (#123) | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILEPATH | LITERAL |  | true | The computer name and directory path of the file. | 
-| vs:Input_Parameter-8994_02 | FILENAME | LITERAL |  | true | The filename. | 
-| vs:Input_Parameter-8994_02 | FILE EXTENSION | LITERAL |  | true | The file extension. | 
-| vs:Input_Parameter-8994_02 | NETWORK LOCATION | LITERAL |  | true | Current share network path being evaluated. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILEPATH | LITERAL |  | true | The computer name and directory path of the file. | 
+| FILENAME | LITERAL |  | true | The filename. | 
+| FILE EXTENSION | LITERAL |  | true | The file extension. | 
+| NETWORK LOCATION | LITERAL |  | true | Current share network path being evaluated. | 

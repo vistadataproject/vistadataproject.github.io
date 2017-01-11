@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DXCODE | LITERAL | 30 | true | This is the diagnostic name to be used in the lookup process. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DXCODE | LITERAL | 30 | true | This is the diagnostic name to be used in the lookup process. | 

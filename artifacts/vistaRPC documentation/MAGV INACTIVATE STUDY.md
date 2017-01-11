@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STUDYIEN | LITERAL |  |  | The IEN of the study entry to be inactivated. | 
-| vs:Input_Parameter-8994_02 | PROCIEN | LITERAL |  |  | The IEN of the related procedure reference. | 
-| vs:Input_Parameter-8994_02 | OVERRIDE | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STUDYIEN | LITERAL |  |  | The IEN of the study entry to be inactivated. | 
+| PROCIEN | LITERAL |  |  | The IEN of the related procedure reference. | 
+| OVERRIDE | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 

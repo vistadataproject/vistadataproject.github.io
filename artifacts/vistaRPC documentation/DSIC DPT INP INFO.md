@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 15 | true | This is the pointer value to the PATIENT file (i.e., DFN) | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 13 | true | This is the Fileman format, date only, for which you wish to retrieve inpatient movement information.  If it is not passed, then the program will use NOW as the date. | 
-| vs:Input_Parameter-8994_02 | LODGE | LITERAL | 1 | true | This is a Boolean flag (1 or 0 or <null>).  If LODGE=1 then allow for lodger type admissions.  If not, exclude lodger type admissions from the search.  The default value is <null>, exclude lodger admisssions. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 15 | true | This is the pointer value to the PATIENT file (i.e., DFN) | 
+| DATE | LITERAL | 13 | true | This is the Fileman format, date only, for which you wish to retrieve inpatient movement information.  If it is not passed, then the program will use NOW as the date. | 
+| LODGE | LITERAL | 1 | true | This is a Boolean flag (1 or 0 or <null>).  If LODGE=1 then allow for lodger type admissions.  If not, exclude lodger type admissions from the search.  The default value is <null>, exclude lodger admisssions. | 

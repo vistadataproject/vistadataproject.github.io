@@ -17,13 +17,13 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 12 | true | This is the pointer value to the Patient file | 
-| vs:Input_Parameter-8994_02 | BEG | LITERAL | 14 | true | Optional - this is the starting date for the search in internal filemandate/time format of the visit.  If not passed, then a date of T-365 willbe used. | 
-| vs:Input_Parameter-8994_02 | END | LITERAL | 14 | true | Optional - this is the ending date/time for the search in internal filemanformat.  If not passed, then a date of DT+.5 will be used. | 
-| vs:Input_Parameter-8994_02 | ZLOC | LIST | 15 | true | Optional - you can look for visits for specific locations (file 44).  TheLC array is expected to be in the format LC(ien)=\\ where ien is thepointer to file 44. | 
-| vs:Input_Parameter-8994_02 | CAT | LITERAL | 1 | true | This flag controls whether service categories should be screened or not.It is optional, the default value is to screen entries. I +CAT then do not screen entries.I '$G(CAT) then do not return entries whose service category is E,D,X,N,or C | 
-| vs:Input_Parameter-8994_02 | VECLIN | LIST |  | true |  VECLIN is a local array which contains a list of clinics to be used to screen appointment list.  Only those appointments in these clinics will be returned.    VECLIN - optional - passed by reference    VECLIN(#) = clinic name or ien | 
-| vs:Input_Parameter-8994_02 | SCODE | LIST |  | true |  This is a list of 3-digit stop codes used to screen appointments returned.  Only those clinic locations whose stop code is in this list will be returned.     SCODE - optional - passed by reference    SCODE(#) = 3-digit stop code (lookup on C xref) | 
-| vs:Input_Parameter-8994_02 | VEDIV | LIST |  | true |  This is a list of divisions to be used to screen appointments.  Only appointments in clinics for divisions in this list will be returned.      VEDIV - optional - passed by reference     VEDIV(#) = division name or ien | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 12 | true | This is the pointer value to the Patient file | 
+| BEG | LITERAL | 14 | true | Optional - this is the starting date for the search in internal filemandate/time format of the visit.  If not passed, then a date of T-365 willbe used. | 
+| END | LITERAL | 14 | true | Optional - this is the ending date/time for the search in internal filemanformat.  If not passed, then a date of DT+.5 will be used. | 
+| ZLOC | LIST | 15 | true | Optional - you can look for visits for specific locations (file 44).  TheLC array is expected to be in the format LC(ien)=\\ where ien is thepointer to file 44. | 
+| CAT | LITERAL | 1 | true | This flag controls whether service categories should be screened or not.It is optional, the default value is to screen entries. I +CAT then do not screen entries.I '$G(CAT) then do not return entries whose service category is E,D,X,N,or C | 
+| VECLIN | LIST |  | true |  VECLIN is a local array which contains a list of clinics to be used to screen appointment list.  Only those appointments in these clinics will be returned.    VECLIN - optional - passed by reference    VECLIN(#) = clinic name or ien | 
+| SCODE | LIST |  | true |  This is a list of 3-digit stop codes used to screen appointments returned.  Only those clinic locations whose stop code is in this list will be returned.     SCODE - optional - passed by reference    SCODE(#) = 3-digit stop code (lookup on C xref) | 
+| VEDIV | LIST |  | true |  This is a list of divisions to be used to screen appointments.  Only appointments in clinics for divisions in this list will be returned.      VEDIV - optional - passed by reference     VEDIV(#) = division name or ien | 

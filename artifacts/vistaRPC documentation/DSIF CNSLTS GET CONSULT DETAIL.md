@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFCSLT | LITERAL |  | true | This is the Consult IEN (file #123) where the information is needed to be returned in a discrete format. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFCSLT | LITERAL |  | true | This is the Consult IEN (file #123) where the information is needed to be returned in a discrete format. | 

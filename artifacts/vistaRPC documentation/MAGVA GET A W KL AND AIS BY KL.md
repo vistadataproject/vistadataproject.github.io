@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | KLIST | LIST |  | true |  KLIST(1) = First level Key KLIST(2) = Second level Key   ... KLIST(N) = N-th level Key Any level is optional | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| KLIST | LIST |  | true |  KLIST(1) = First level Key KLIST(2) = Second level Key   ... KLIST(N) = N-th level Key Any level is optional | 

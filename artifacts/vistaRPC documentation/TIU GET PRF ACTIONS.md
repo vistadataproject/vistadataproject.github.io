@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUTTL | LITERAL |  | true | TIU DOCUMENT DEFINITION (TITLE) IEN | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Patient Pointer (file 2 IEN) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUTTL | LITERAL |  | true | TIU DOCUMENT DEFINITION (TITLE) IEN | 
+| DFN | LITERAL |  | true | Patient Pointer (file 2 IEN) | 

@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RADPT | LITERAL |  | true | IEN of the Patient in the RAD/NUC MED PATIENT file (#70). | 
-| vs:Input_Parameter-8994_02 | RAEXAM1 | LITERAL |  | true | IEN of the REGISTERED EXAMS multiple (sub file #70.02). | 
-| vs:Input_Parameter-8994_02 | RAEXAM2 | LITERAL |  | true | IEN in the EXAMINATIONS multiple (sub-file #70.03). | 
-| vs:Input_Parameter-8994_02 | MAGVUSRDV | LITERAL |  | true | User Logon Division of the person logged into the Importer II application. | 
-| vs:Input_Parameter-8994_02 | RAIMGTYP | LITERAL |  | true | This is the radiology imaging type parameter | 
-| vs:Input_Parameter-8994_02 | MAGVUSR | LITERAL |  | true | DUZ of the person logged into the Importer II application. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RADPT | LITERAL |  | true | IEN of the Patient in the RAD/NUC MED PATIENT file (#70). | 
+| RAEXAM1 | LITERAL |  | true | IEN of the REGISTERED EXAMS multiple (sub file #70.02). | 
+| RAEXAM2 | LITERAL |  | true | IEN in the EXAMINATIONS multiple (sub-file #70.03). | 
+| MAGVUSRDV | LITERAL |  | true | User Logon Division of the person logged into the Importer II application. | 
+| RAIMGTYP | LITERAL |  | true | This is the radiology imaging type parameter | 
+| MAGVUSR | LITERAL |  | true | DUZ of the person logged into the Importer II application. | 

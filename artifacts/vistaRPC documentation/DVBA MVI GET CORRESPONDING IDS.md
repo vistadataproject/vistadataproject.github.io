@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SOURCE ID | LITERAL | 250 | true | This is the Integration Control Number (ICN) used to identify the patientthat is selected from the MVI SEARCH PERSON web service results.Format:  \1008523099V750710^NI^200M^USVHA^\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SOURCE ID | LITERAL | 250 | true | This is the Integration Control Number (ICN) used to identify the patientthat is selected from the MVI SEARCH PERSON web service results.Format:  \1008523099V750710^NI^200M^USVHA^\ | 

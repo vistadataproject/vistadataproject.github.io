@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
-| vs:Input_Parameter-8994_02 | NOTIFICATION | LITERAL | 20 | true | Internal entry number of notification in the OE/RR Notification file[^OR(100.9]. | 
-| vs:Input_Parameter-8994_02 | XQADATA | LITERAL | 255 | true | Optional data used in some follow-up actions. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
+| NOTIFICATION | LITERAL | 20 | true | Internal entry number of notification in the OE/RR Notification file[^OR(100.9]. | 
+| XQADATA | LITERAL | 255 | true | Optional data used in some follow-up actions. | 

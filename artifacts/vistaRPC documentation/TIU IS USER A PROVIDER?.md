@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true | Optional pointer to the NEW PERSON FILE (#200). If user is unspecified the current user will be assumed. | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL |  | true | Optional FileMan formatted date (time). If none is provided the current date is assumed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL |  | true | Optional pointer to the NEW PERSON FILE (#200). If user is unspecified the current user will be assumed. | 
+| DATE | LITERAL |  | true | Optional FileMan formatted date (time). If none is provided the current date is assumed. | 

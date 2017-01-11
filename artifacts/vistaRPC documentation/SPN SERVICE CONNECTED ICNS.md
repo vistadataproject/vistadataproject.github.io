@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | BPER | LITERAL |  |  | Beginning or low range percentage of service connection | 
-| vs:Input_Parameter-8994_02 | EPER | LITERAL |  |  | Ending or high range percentage of service connection | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| BPER | LITERAL |  |  | Beginning or low range percentage of service connection | 
+| EPER | LITERAL |  |  | Ending or high range percentage of service connection | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PCAT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category. | 
-| vs:Input_Parameter-8994_02 | PARENT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category's parent. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PCAT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category. | 
+| PARENT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category's parent. | 

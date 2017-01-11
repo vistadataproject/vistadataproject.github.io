@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL |  | true | Starting name for cross reference | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL |  | true | Direction for $ORDER | 
-| vs:Input_Parameter-8994_02 | XREF | LITERAL |  | true | Identifies the SET xref to use in the orderable item file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FROM | LITERAL |  | true | Starting name for cross reference | 
+| DIR | LITERAL |  | true | Direction for $ORDER | 
+| XREF | LITERAL |  | true | Identifies the SET xref to use in the orderable item file. | 

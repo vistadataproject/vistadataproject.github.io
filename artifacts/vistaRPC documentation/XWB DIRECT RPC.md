@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LOC | LITERAL | 30 | true | This is the Institution's station # to send the RPC to. | 
-| vs:Input_Parameter-8994_02 | RRPC | LITERAL | 30 | true | This is the name of the remote RPC to be run. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LOC | LITERAL | 30 | true | This is the Institution's station # to send the RPC to. | 
+| RRPC | LITERAL | 30 | true | This is the name of the remote RPC to be run. | 

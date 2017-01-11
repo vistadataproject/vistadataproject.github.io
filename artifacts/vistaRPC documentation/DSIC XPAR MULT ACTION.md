@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSICLIST | LIST | 250 | true | DSICLIST - required - p1^p2^p3^p4^p5^p6^p7  where For p1 - p6 see the equivalent DSIC XPAR xxxxxx RPC definition to see which p1 - p6 are required for the action requested   p1 := entity - default to USR  p2 := parameter name  p3 := instance  p4 := value  p5 := new instance value  p6 := format for GET1 call  p7 := action to be taken - must be ADD, CHG, or DEL        if p7 = \ADD\ then for this list element perform ADD function        if p7 = \CHG\ then for this list element perform change value                 for a parameter/entity/instance        if p7 = \DEL\ then for this list element perform delete of                of a parameter/entity/instance | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSICLIST | LIST | 250 | true | DSICLIST - required - p1^p2^p3^p4^p5^p6^p7  where For p1 - p6 see the equivalent DSIC XPAR xxxxxx RPC definition to see which p1 - p6 are required for the action requested   p1 := entity - default to USR  p2 := parameter name  p3 := instance  p4 := value  p5 := new instance value  p6 := format for GET1 call  p7 := action to be taken - must be ADD, CHG, or DEL        if p7 = \ADD\ then for this list element perform ADD function        if p7 = \CHG\ then for this list element perform change value                 for a parameter/entity/instance        if p7 = \DEL\ then for this list element perform delete of                of a parameter/entity/instance | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SINGLE | LITERAL | 256 | true | This parameter contains the file, field, and IEN of the data to be filed in the format FILE^FIELD^IEN. | 
-| vs:Input_Parameter-8994_02 | DATA | LIST |  | true | This parameter contains the data to be filed in the multiple. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SINGLE | LITERAL | 256 | true | This parameter contains the file, field, and IEN of the data to be filed in the format FILE^FIELD^IEN. | 
+| DATA | LIST |  | true | This parameter contains the data to be filed in the multiple. | 

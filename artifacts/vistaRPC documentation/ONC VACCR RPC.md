@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATEUSED | LITERAL | 1 | true | DATEUSED specifies the date field which will be searched for casesto be extracted: 1 = DATE CASE COMPLETED2 = DATE CASE LAST CHANGED | 
-| vs:Input_Parameter-8994_02 | START | LITERAL | 7 | true | This parameter specifies the start date of DATE parameter. | 
-| vs:Input_Parameter-8994_02 | END | LITERAL | 7 | true | This parameter specifies the end date of DATE parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATEUSED | LITERAL | 1 | true | DATEUSED specifies the date field which will be searched for casesto be extracted: 1 = DATE CASE COMPLETED2 = DATE CASE LAST CHANGED | 
+| START | LITERAL | 7 | true | This parameter specifies the start date of DATE parameter. | 
+| END | LITERAL | 7 | true | This parameter specifies the end date of DATE parameter. | 

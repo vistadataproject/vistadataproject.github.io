@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL | 30 | true | The value of this parameter is a string.This string must be the \hostname\ of the computer that isbeing used to operate the DICOM Gateway for which informationis to be returned. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HOSTNAME | LITERAL | 30 | true | The value of this parameter is a string.This string must be the \hostname\ of the computer that isbeing used to operate the DICOM Gateway for which informationis to be returned. | 

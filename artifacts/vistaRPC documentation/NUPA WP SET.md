@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL |  | true | File to insert the data into, in ^FILE(subscript, format. | 
-| vs:Input_Parameter-8994_02 | LINE | LITERAL |  | true | Line number for the data to be put into, such as 1, 2, or 3. | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL |  | true | Data (text) to insert into the global. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL |  | true | File to insert the data into, in ^FILE(subscript, format. | 
+| LINE | LITERAL |  | true | Line number for the data to be put into, such as 1, 2, or 3. | 
+| DATA | LITERAL |  | true | Data (text) to insert into the global. | 

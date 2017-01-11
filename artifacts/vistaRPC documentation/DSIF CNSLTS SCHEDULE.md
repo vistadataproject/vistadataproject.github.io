@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFIEN | LITERAL |  | true | This is the IEN for the Consult you wish to update. | 
-| vs:Input_Parameter-8994_02 | DSIFNP | LITERAL |  |  | This is the IEN/DUZ for the provider making the requested change. | 
-| vs:Input_Parameter-8994_02 | DSIFORDT | LITERAL |  | true | This is the Date/Time the Consult was scheduled. | 
-| vs:Input_Parameter-8994_02 | DSIFALRT | LITERAL |  | true | This determines whether or not Alerts should be sent with this update. 1 = Yes. | 
-| vs:Input_Parameter-8994_02 | DSIFALTO | LITERAL |  |  | This is the array of alert recipient IENs. | 
-| vs:Input_Parameter-8994_02 | DSIFCOM | LIST |  |  | This is the array of comments to be added to this action.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFIEN | LITERAL |  | true | This is the IEN for the Consult you wish to update. | 
+| DSIFNP | LITERAL |  |  | This is the IEN/DUZ for the provider making the requested change. | 
+| DSIFORDT | LITERAL |  | true | This is the Date/Time the Consult was scheduled. | 
+| DSIFALRT | LITERAL |  | true | This determines whether or not Alerts should be sent with this update. 1 = Yes. | 
+| DSIFALTO | LITERAL |  |  | This is the array of alert recipient IENs. | 
+| DSIFCOM | LIST |  |  | This is the array of comments to be added to this action.  | 

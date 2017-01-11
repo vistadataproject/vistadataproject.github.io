@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLINIC ID | LITERAL | 16 | true | The record number of the clinic from the Hospital Location File (#44). | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 16 |  | The start date of the clinic appointments to retrieve (not in FM format.) | 
-| vs:Input_Parameter-8994_02 | STOP DATE | LITERAL | 16 |  | The stop date of the clinic appointments to retrieve (not in Fileman format.) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLINIC ID | LITERAL | 16 | true | The record number of the clinic from the Hospital Location File (#44). | 
+| START DATE | LITERAL | 16 |  | The start date of the clinic appointments to retrieve (not in FM format.) | 
+| STOP DATE | LITERAL | 16 |  | The stop date of the clinic appointments to retrieve (not in Fileman format.) | 

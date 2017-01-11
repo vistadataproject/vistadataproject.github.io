@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | This is the internal number of the patient in the PATIENT file (#2). | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This is the internal number of the record in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
-| vs:Input_Parameter-8994_02 | STANUM | LITERAL |  | true | This is the Station Number of the sending clinic | 
-| vs:Input_Parameter-8994_02 | USRNAM | LITERAL | 32 | true | This is the name of the submitting user | 
-| vs:Input_Parameter-8994_02 | USRSER | LITERAL |  | true | This is the name of the submitting user's service. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | This is the internal number of the patient in the PATIENT file (#2). | 
+| IEN | LITERAL |  | true | This is the internal number of the record in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
+| STANUM | LITERAL |  | true | This is the Station Number of the sending clinic | 
+| USRNAM | LITERAL | 32 | true | This is the name of the submitting user | 
+| USRSER | LITERAL |  | true | This is the name of the submitting user's service. | 

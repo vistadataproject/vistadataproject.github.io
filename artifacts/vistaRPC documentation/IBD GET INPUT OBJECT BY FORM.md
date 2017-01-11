@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FRM | LITERAL | 40 | true | Input the pointer to the encounter form file or the unique name of theencounter form | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FRM | LITERAL | 40 | true | Input the pointer to the encounter form file or the unique name of theencounter form | 

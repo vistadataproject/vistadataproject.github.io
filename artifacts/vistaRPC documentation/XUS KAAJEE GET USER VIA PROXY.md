@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CLIENT-IP | LITERAL |  | true | IP address of the client workstation used for logging (signon log) and IP blocking (failed access attempts).  Also, this IP address is used to validate ccow token submitted. | 
-| vs:Input_Parameter-8994_02 | SERVER-NM | LITERAL |  | true | Identifying name for the calling application or server used for logging (signon log) | 
-| vs:Input_Parameter-8994_02 | CCOWTOK | LITERAL |  | true | Value of ccow token passed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CLIENT-IP | LITERAL |  | true | IP address of the client workstation used for logging (signon log) and IP blocking (failed access attempts).  Also, this IP address is used to validate ccow token submitted. | 
+| SERVER-NM | LITERAL |  | true | Identifying name for the calling application or server used for logging (signon log) | 
+| CCOWTOK | LITERAL |  | true | Value of ccow token passed. | 

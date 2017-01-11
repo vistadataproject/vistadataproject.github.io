@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAMNAM | LITERAL | 30 | true | When An Administrator of VetLink Kiosk system made anyconfiguration changes, the changes were made against this Kiosk Group or Clinic | 
-| vs:Input_Parameter-8994_02 | PARAMETERS | LIST |  |  | A subscripted array that represents the list of parameter changes to the VetLink's Kiosk Configuration.Each element in the subscripted array is constructed as:PARAMETERS(n) = field label^field value        where   n           : an incremental number that acts as an index                field label : the name of VistA Field Name                field value : the parameter value to be stored in VistA | 
-| vs:Input_Parameter-8994_02 | PARAMTYP | LITERAL | 1 | true | This parameter contains either 'K' for KIOSK GROUP or 'C' for CLINIC. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAMNAM | LITERAL | 30 | true | When An Administrator of VetLink Kiosk system made anyconfiguration changes, the changes were made against this Kiosk Group or Clinic | 
+| PARAMETERS | LIST |  |  | A subscripted array that represents the list of parameter changes to the VetLink's Kiosk Configuration.Each element in the subscripted array is constructed as:PARAMETERS(n) = field label^field value        where   n           : an incremental number that acts as an index                field label : the name of VistA Field Name                field value : the parameter value to be stored in VistA | 
+| PARAMTYP | LITERAL | 1 | true | This parameter contains either 'K' for KIOSK GROUP or 'C' for CLINIC. | 

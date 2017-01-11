@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBREC | LIST |  | true | PSBREC  (array)(0)     determines  \lookup\ function         \PTLKUP\  (patient file (#2) lookup)        \ADMLKUP\  (administration lookup)        \SELECTAD\ (process selected administration. (1)     values to use for the lookup.  (DFN for the ADMLKUP)        \SELECTAD\ must present the PSBIEN value        of the user-chosen administration.(2)     search date for ADMLKUP | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBREC | LIST |  | true | PSBREC  (array)(0)     determines  \lookup\ function         \PTLKUP\  (patient file (#2) lookup)        \ADMLKUP\  (administration lookup)        \SELECTAD\ (process selected administration. (1)     values to use for the lookup.  (DFN for the ADMLKUP)        \SELECTAD\ must present the PSBIEN value        of the user-chosen administration.(2)     search date for ADMLKUP | 

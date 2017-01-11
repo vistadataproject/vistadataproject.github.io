@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CODE | LITERAL | 7 | true | This is the CPT, HCPCS, or level III code in either internal or external format. | 
-| vs:Input_Parameter-8994_02 | CDT | LITERAL | 14 | true | This date in internal Fileman format is optional.Other acceptable input values: 0                               TODAY, NOW, or <null> for today's date If CDT is 0 then both active and inactive modifiers will be returned.Else, only return modifiers active as of that date. | 
-| vs:Input_Parameter-8994_02 | SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) indicates whether or not level III codes should be returned | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 14 | true | This is the ien to the PATIENT file.  It is not used at this time. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CODE | LITERAL | 7 | true | This is the CPT, HCPCS, or level III code in either internal or external format. | 
+| CDT | LITERAL | 14 | true | This date in internal Fileman format is optional.Other acceptable input values: 0                               TODAY, NOW, or <null> for today's date If CDT is 0 then both active and inactive modifiers will be returned.Else, only return modifiers active as of that date. | 
+| SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) indicates whether or not level III codes should be returned | 
+| DFN | LITERAL | 14 | true | This is the ien to the PATIENT file.  It is not used at this time. | 

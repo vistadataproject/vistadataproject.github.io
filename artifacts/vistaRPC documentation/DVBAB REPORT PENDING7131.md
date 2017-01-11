@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SELDIV | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | DVBADLMTR | LITERAL | 1 | true | This parameter is used to indicate whether the report will create a plain text format or a comma delimited output format. DVBADLMTR=0 means report will be in plain text and DVBADLMTR=1 means create output in comma delimited format. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SELDIV | LITERAL |  | true |  | 
+| DIV | LITERAL |  | true |  | 
+| DVBADLMTR | LITERAL | 1 | true | This parameter is used to indicate whether the report will create a plain text format or a comma delimited output format. DVBADLMTR=0 means report will be in plain text and DVBADLMTR=1 means create output in comma delimited format. | 

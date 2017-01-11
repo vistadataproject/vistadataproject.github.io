@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBSITE | LITERAL | 10 | true | Site number that exists in file 161.4, field 27 (pointer to file #4) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBSITE | LITERAL | 10 | true | Site number that exists in file 161.4, field 27 (pointer to file #4) | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Patient IEN number. | 
-| vs:Input_Parameter-8994_02 | PSBORD | LITERAL |  | true | Order number from Inpatient Medications. If order number is passed then returns all PRN effectiveness not documented for that order. If order number is NOT passed, then returns all PRN effectiveness not documented for that patient. | 
-| vs:Input_Parameter-8994_02 | PSBSIOPI | LITERAL | 1 | true | This parameter is a true/false flag (1/0).  If true use the new SI/OP Wpfields and return data in the Results array to the GUI Client. The field is not required, so a null will convert into a 0, for false,making this backwards compatible. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | Patient IEN number. | 
+| PSBORD | LITERAL |  | true | Order number from Inpatient Medications. If order number is passed then returns all PRN effectiveness not documented for that order. If order number is NOT passed, then returns all PRN effectiveness not documented for that patient. | 
+| PSBSIOPI | LITERAL | 1 | true | This parameter is a true/false flag (1/0).  If true use the new SI/OP Wpfields and return data in the Results array to the GUI Client. The field is not required, so a null will convert into a 0, for false,making this backwards compatible. | 

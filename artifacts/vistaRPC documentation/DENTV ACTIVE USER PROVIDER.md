@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VAL | LITERAL | 50 | true | The lookup value entered by the user to find matches against the NEW USER file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VAL | LITERAL | 50 | true | The lookup value entered by the user to find matches against the NEW USER file. | 

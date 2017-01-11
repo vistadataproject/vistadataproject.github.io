@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL | 40 | true | This is DUZ, if \\ is sent, then the RPC retrieves the Public filters. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL | 40 | true | This is DUZ, if \\ is sent, then the RPC retrieves the Public filters. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Start With | LITERAL | 32 |  | Which service in the hierarchy to begin with. | 
-| vs:Input_Parameter-8994_02 | Purpose | LITERAL | 2 |  | 0 for display purposes, 1 to order or forward a consult. | 
-| vs:Input_Parameter-8994_02 | Include Synonyms | LITERAL | 2 |  | 0 to exclude synonyms, 1 to include synonyms. | 
-| vs:Input_Parameter-8994_02 | Consult IEN | LITERAL | 16 | true | OPTIONAL - Include pointer to file 123, the Consult Request file.  Used when forwarding a consult, and screening needs to be done to limit the list of services. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Start With | LITERAL | 32 |  | Which service in the hierarchy to begin with. | 
+| Purpose | LITERAL | 2 |  | 0 for display purposes, 1 to order or forward a consult. | 
+| Include Synonyms | LITERAL | 2 |  | 0 to exclude synonyms, 1 to include synonyms. | 
+| Consult IEN | LITERAL | 16 | true | OPTIONAL - Include pointer to file 123, the Consult Request file.  Used when forwarding a consult, and screening needs to be done to limit the list of services. | 

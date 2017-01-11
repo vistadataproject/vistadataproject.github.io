@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FORMID | LITERAL | 40 | true | This is the form id printed at the top of the encounter form, and shouldmatch and internal entry number from the FORM TRACKING file (357.96). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FORMID | LITERAL | 40 | true | This is the form id printed at the top of the encounter form, and shouldmatch and internal entry number from the FORM TRACKING file (357.96). | 

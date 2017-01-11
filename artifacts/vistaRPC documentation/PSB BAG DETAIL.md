@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBUID | LITERAL |  | true | IV unique ID number. | 
-| vs:Input_Parameter-8994_02 | PSBORD | LITERAL |  | true | IPM order number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBUID | LITERAL |  | true | IV unique ID number. | 
+| PSBORD | LITERAL |  | true | IPM order number | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | BDATE | LITERAL |  | true | Beginning date in a date range to use for retrieving results for the report. | 
-| vs:Input_Parameter-8994_02 | EDATE | LITERAL |  | true | Ending date in a date range to use for retrieving results for the report. | 
-| vs:Input_Parameter-8994_02 | DVBAH | LITERAL |  | true | Defines the scope of the report:  'H' indicates HOSPITAL  'D' indicates DOM | 
-| vs:Input_Parameter-8994_02 | DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| BDATE | LITERAL |  | true | Beginning date in a date range to use for retrieving results for the report. | 
+| EDATE | LITERAL |  | true | Ending date in a date range to use for retrieving results for the report. | 
+| DVBAH | LITERAL |  | true | Defines the scope of the report:  'H' indicates HOSPITAL  'D' indicates DOM | 
+| DVBADLMTR | LITERAL |  | true | This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated. | 

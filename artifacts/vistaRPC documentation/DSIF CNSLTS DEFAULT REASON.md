@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFSVC | LITERAL |  | true | This is the IEN for the Consult Service. | 
-| vs:Input_Parameter-8994_02 | DSIFDFN | LITERAL |  |  | This is the Patient DFN. | 
-| vs:Input_Parameter-8994_02 | DSIFRES | LITERAL |  |  | This is the RESOLVE variable, which indicates boilerplates should be used. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFSVC | LITERAL |  | true | This is the IEN for the Consult Service. | 
+| DSIFDFN | LITERAL |  |  | This is the Patient DFN. | 
+| DSIFRES | LITERAL |  |  | This is the RESOLVE variable, which indicates boilerplates should be used. | 

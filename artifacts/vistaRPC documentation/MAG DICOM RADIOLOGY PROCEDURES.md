@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 30 | true | This is the division used during the lookup process. | 
-| vs:Input_Parameter-8994_02 | FILTER | LITERAL | 30 | true | If this parameter is set to \1\ procedure types of \B\road and \P\arent will be filtered from the return array. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIV | LITERAL | 30 | true | This is the division used during the lookup process. | 
+| FILTER | LITERAL | 30 | true | If this parameter is set to \1\ procedure types of \B\road and \P\arent will be filtered from the return array. | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CIEN | LITERAL | 20 | true | Clerk ID is the IEN from file 200 for the requesting clerk. | 
-| vs:Input_Parameter-8994_02 | RIEN | LITERAL | 20 | true | RIEN is the Requestor IEN.  This points to file 19620.12 | 
-| vs:Input_Parameter-8994_02 | AIEN | LITERAL | 20 | true | AIEN is the IEN of the address record.  This points at file 19620.92. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CIEN | LITERAL | 20 | true | Clerk ID is the IEN from file 200 for the requesting clerk. | 
+| RIEN | LITERAL | 20 | true | RIEN is the Requestor IEN.  This points to file 19620.12 | 
+| AIEN | LITERAL | 20 | true | AIEN is the IEN of the address record.  This points at file 19620.92. | 

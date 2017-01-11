@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT ICN | LITERAL | 30 | true | PATIENTS ICN NUMBER FROM ^DPT(DFN). | 
-| vs:Input_Parameter-8994_02 | CLAIM DATE | LITERAL | 15 | true | BENEFICIARY TRAVEL CLAIM DATE (NOT THE CURRENT DATE). | 
-| vs:Input_Parameter-8994_02 | DGBTRET | REFERENCE |  | true | THE ARRAY THE DATA WILL BE RETURNED IN. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT ICN | LITERAL | 30 | true | PATIENTS ICN NUMBER FROM ^DPT(DFN). | 
+| CLAIM DATE | LITERAL | 15 | true | BENEFICIARY TRAVEL CLAIM DATE (NOT THE CURRENT DATE). | 
+| DGBTRET | REFERENCE |  | true | THE ARRAY THE DATA WILL BE RETURNED IN. | 

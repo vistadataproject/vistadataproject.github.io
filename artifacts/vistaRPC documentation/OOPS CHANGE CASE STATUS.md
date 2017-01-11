@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LITERAL | 256 | true | The INPUT parameter has the format: IEN^CASE STATUS where IEN is the ASIST record IEN and CASE STATUS is the case status the claim should be changed to. | 
-| vs:Input_Parameter-8994_02 | FLD58 | LITERAL | 80 |  | The parameter FLD58 is the text field Reason for Deletion if the case statushas been changed to deleted. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LITERAL | 256 | true | The INPUT parameter has the format: IEN^CASE STATUS where IEN is the ASIST record IEN and CASE STATUS is the case status the claim should be changed to. | 
+| FLD58 | LITERAL | 80 |  | The parameter FLD58 is the text field Reason for Deletion if the case statushas been changed to deleted. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGDUZ | LITERAL |  |  | Internal ID of a user that has previously queued an Image Statistics Report.The default value is the current user DUZ. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGDUZ | LITERAL |  |  | Internal ID of a user that has previously queued an Image Statistics Report.The default value is the current user DUZ. | 

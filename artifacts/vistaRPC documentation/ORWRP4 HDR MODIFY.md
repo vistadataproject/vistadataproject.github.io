@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HANDLE | LITERAL | 30 | true | Remote Broker ID needed to find data in ^XTMP(HANDLE,\D\, | 
-| vs:Input_Parameter-8994_02 | ID  | LITERAL | 30 | true | Report ID found in field .02 of file 101.24 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HANDLE | LITERAL | 30 | true | Remote Broker ID needed to find data in ^XTMP(HANDLE,\D\, | 
+| ID  | LITERAL | 30 | true | Report ID found in field .02 of file 101.24 | 

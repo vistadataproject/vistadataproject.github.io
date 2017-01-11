@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NAME | LITERAL | 30 | true | The value of this parameter is a string.This string identifies the destination to which one or moreimages is or are to be transmitted. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NAME | LITERAL | 30 | true | The value of this parameter is a string.This string identifies the destination to which one or moreimages is or are to be transmitted. | 

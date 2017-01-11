@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FB7078 | LITERAL | 15 | true | IEN of 7078. | 
-| vs:Input_Parameter-8994_02 | DEVICE | LITERAL | 20 | true | VistA Print device | 
-| vs:Input_Parameter-8994_02 | OFFICIAL | LITERAL | 55 | true |  | 
-| vs:Input_Parameter-8994_02 | TITLE | LITERAL | 55 | true |  | 
-| vs:Input_Parameter-8994_02 | COPIES | LITERAL | 1 | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FB7078 | LITERAL | 15 | true | IEN of 7078. | 
+| DEVICE | LITERAL | 20 | true | VistA Print device | 
+| OFFICIAL | LITERAL | 55 | true |  | 
+| TITLE | LITERAL | 55 | true |  | 
+| COPIES | LITERAL | 1 | true |  | 

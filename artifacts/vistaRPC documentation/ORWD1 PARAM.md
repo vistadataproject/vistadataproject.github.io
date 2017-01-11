@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LOC | LITERAL | 1 | true | Pointer to the Hospital location file where the prints are generatedfrom. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LOC | LITERAL | 1 | true | Pointer to the Hospital location file where the prints are generatedfrom. | 

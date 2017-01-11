@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SCHEDULING PARAMETER ENTRY | LITERAL | 512 | true |  | 
-| vs:Input_Parameter-8994_02 | SIN |  |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SCHEDULING PARAMETER ENTRY | LITERAL | 512 | true |  | 
+| SIN |  |  |  |  | 

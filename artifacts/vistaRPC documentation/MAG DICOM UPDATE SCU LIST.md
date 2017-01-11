@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | APP | LIST | 10000 | true | This parameter is an array. Each element of thisarray must contain 7 non-empty values, separated by carets (\^\):  1: Service Application Name  2: Service Provider Application Entity Title  3: IP Address  4: Port Number  5: Gateway System Title  6: Gateway Application Entity Title  7: Gateway Location Pointer (#4) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| APP | LIST | 10000 | true | This parameter is an array. Each element of thisarray must contain 7 non-empty values, separated by carets (\^\):  1: Service Application Name  2: Service Provider Application Entity Title  3: IP Address  4: Port Number  5: Gateway System Title  6: Gateway Application Entity Title  7: Gateway Location Pointer (#4) | 

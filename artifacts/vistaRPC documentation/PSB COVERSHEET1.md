@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | DFN is the internal entity number per the patient file (file #2). | 
-| vs:Input_Parameter-8994_02 | HRSBACK | LITERAL |  | true | HRSBACK - (optional) The number of hours in the past the coversheet will supply order information for.  [default is 24 hours] | 
-| vs:Input_Parameter-8994_02 | PSBSIOPI | LITERAL | 1 | true |  This parameter is a true/false flag (1/0).  If true use the new SI/OP Wp fields and return data in the Results array to the GUI Client.   The field is not required, so a null will convert into a 0, for false, making this backwards compatible. | 
-| vs:Input_Parameter-8994_02 | PSBCLINORD | LITERAL | 1 | true | This parameter is a True/False flag (1/0).  If true, then return onlyClinic Orders and not Inpatient Medication orders to BCMA, else if false,return only Inpatient Medication orders to BCMA. The field is not required, so a null will convert into a 0, for a defaultfalse value, making this backwards compatible. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | DFN is the internal entity number per the patient file (file #2). | 
+| HRSBACK | LITERAL |  | true | HRSBACK - (optional) The number of hours in the past the coversheet will supply order information for.  [default is 24 hours] | 
+| PSBSIOPI | LITERAL | 1 | true |  This parameter is a true/false flag (1/0).  If true use the new SI/OP Wp fields and return data in the Results array to the GUI Client.   The field is not required, so a null will convert into a 0, for false, making this backwards compatible. | 
+| PSBCLINORD | LITERAL | 1 | true | This parameter is a True/False flag (1/0).  If true, then return onlyClinic Orders and not Inpatient Medication orders to BCMA, else if false,return only Inpatient Medication orders to BCMA. The field is not required, so a null will convert into a 0, for a defaultfalse value, making this backwards compatible. | 

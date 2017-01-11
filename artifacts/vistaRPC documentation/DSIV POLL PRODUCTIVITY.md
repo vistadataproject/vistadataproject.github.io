@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIVHNDL | LITERAL | 50 | true | Contains the Handle returned by the kick-off rpc (or sent by the GUI) to uniquely identify a report instance running in the background. | 
-| vs:Input_Parameter-8994_02 | CNT | LITERAL | 10 | true | The number of records to return for each call of the rpc.  This is used to avoid broker timeouts for reports with a lot of data. | 
-| vs:Input_Parameter-8994_02 | MORE | LITERAL | 1 | true | MORE=1 when subsequent calls are made to the rpc to return the next \CNT\ (count) of rows of report data.  The GUI may send MORE=9 to terminate the report and have the M code kill the ^XTMP global as it is no longer needed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIVHNDL | LITERAL | 50 | true | Contains the Handle returned by the kick-off rpc (or sent by the GUI) to uniquely identify a report instance running in the background. | 
+| CNT | LITERAL | 10 | true | The number of records to return for each call of the rpc.  This is used to avoid broker timeouts for reports with a lot of data. | 
+| MORE | LITERAL | 1 | true | MORE=1 when subsequent calls are made to the rpc to return the next \CNT\ (count) of rows of report data.  The GUI may send MORE=9 to terminate the report and have the M code kill the ^XTMP global as it is no longer needed. | 

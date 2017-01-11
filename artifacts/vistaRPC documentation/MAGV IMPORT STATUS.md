@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | UIDS | LIST |  |  | This is a list of Study, Series, and SOP UIDs delimited by \`\.  TheUIDs will be used to check if an instance has been filed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| UIDS | LIST |  |  | This is a list of Study, Series, and SOP UIDs delimited by \`\.  TheUIDs will be used to check if an instance has been filed. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 10 | true | This is the IEN or DUZ of the user in question.If not passed in the RPC will user the current DUZ. | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 3 | true | Not in use at this time. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 10 | true | This is the IEN or DUZ of the user in question.If not passed in the RPC will user the current DUZ. | 
+| FLAG | LITERAL | 3 | true | Not in use at this time. | 

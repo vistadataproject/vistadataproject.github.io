@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 50 | true | List of Radiology Exam pointers.  Each entry in the list contains:    RADFN ^ RADTI ^ RACNI ^ RARPT | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LIST | 50 | true | List of Radiology Exam pointers.  Each entry in the list contains:    RADFN ^ RADTI ^ RACNI ^ RARPT | 

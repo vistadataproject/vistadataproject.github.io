@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSNUM | LITERAL | 12 | true | Patient Social Security Number or Patient IEN. | 
-| vs:Input_Parameter-8994_02 | VPSTYP | LITERAL | 10 | true | SSN or DFN | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSNUM | LITERAL | 12 | true | Patient Social Security Number or Patient IEN. | 
+| VPSTYP | LITERAL | 10 | true | SSN or DFN | 

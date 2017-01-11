@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IBDF | LIST | 245 | true | See routine IBDFRPC4 for details of required variables.  See routinesIBDFDE* for examples of use. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IBDF | LIST | 245 | true | See routine IBDFRPC4 for details of required variables.  See routinesIBDFDE* for examples of use. | 

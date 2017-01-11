@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NULL |  |  | true | No input parameter is defined. | 
-| vs:Input_Parameter-8994_02 | LIMIT | LITERAL | 5 | true | This value is used to control the array size. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NULL |  |  | true | No input parameter is defined. | 
+| LIMIT | LITERAL | 5 | true | This value is used to control the array size. | 

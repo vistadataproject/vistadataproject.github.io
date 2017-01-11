@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDOC | LITERAL |  | true | This is the TIU document type. | 
-| vs:Input_Parameter-8994_02 | TIUDFN | LITERAL |  | true | This is the patient's internal entry number (DFN). | 
-| vs:Input_Parameter-8994_02 | TIUVISIT | LITERAL |  | true | This is the patient's visit internal entry number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDOC | LITERAL |  | true | This is the TIU document type. | 
+| TIUDFN | LITERAL |  | true | This is the patient's internal entry number (DFN). | 
+| TIUVISIT | LITERAL |  | true | This is the patient's visit internal entry number. | 

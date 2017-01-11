@@ -17,13 +17,13 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL |  |  | This is the type of WORK ITEM created (i.e. DICOM Correct). | 
-| vs:Input_Parameter-8994_02 | SUBTYPE | LITERAL |  |  | This is the subtype of a work item. | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL |  |  | This is the initial status given to a work item. | 
-| vs:Input_Parameter-8994_02 | PLACEID | LITERAL |  |  | This is the place ID number of a work item. | 
-| vs:Input_Parameter-8994_02 | PRIORITY | LITERAL |  |  | This is the numeric priority given to a work item. | 
-| vs:Input_Parameter-8994_02 | MSGTAGS | LIST |  |  | This is an array of tag names and values assigned to a work item. Tagnames and values may be used to look up a work item. | 
-| vs:Input_Parameter-8994_02 | CRTUSER | LITERAL |  |  | This is the user that created the work item. | 
-| vs:Input_Parameter-8994_02 | CRTAPP | LITERAL |  |  | This is the application that created the work item. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL |  |  | This is the type of WORK ITEM created (i.e. DICOM Correct). | 
+| SUBTYPE | LITERAL |  |  | This is the subtype of a work item. | 
+| STATUS | LITERAL |  |  | This is the initial status given to a work item. | 
+| PLACEID | LITERAL |  |  | This is the place ID number of a work item. | 
+| PRIORITY | LITERAL |  |  | This is the numeric priority given to a work item. | 
+| MSGTAGS | LIST |  |  | This is an array of tag names and values assigned to a work item. Tagnames and values may be used to look up a work item. | 
+| CRTUSER | LITERAL |  |  | This is the user that created the work item. | 
+| CRTAPP | LITERAL |  |  | This is the application that created the work item. | 

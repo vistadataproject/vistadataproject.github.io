@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 6 | true | This is a pointer to the medical center division file (#40.8).  If it isnot passed then return data for the primary division as of that date. | 
-| vs:Input_Parameter-8994_02 | DATE | LITERAL | 7 | true | This optional Fileman date only will be used to return division data ofthat date.  Default value if not passed is TODAY. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIV | LITERAL | 6 | true | This is a pointer to the medical center division file (#40.8).  If it isnot passed then return data for the primary division as of that date. | 
+| DATE | LITERAL | 7 | true | This optional Fileman date only will be used to return division data ofthat date.  Default value if not passed is TODAY. | 

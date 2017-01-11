@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORCIEN | REFERENCE | 255 | true | This is the clinician's internal ID number. | 
-| vs:Input_Parameter-8994_02 | ORPTIEN | REFERENCE | 255 | true | This is the patient's internal ID number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORCIEN | REFERENCE | 255 | true | This is the clinician's internal ID number. | 
+| ORPTIEN | REFERENCE | 255 | true | This is the patient's internal ID number. | 

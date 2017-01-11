@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PTFNUMBER | LITERAL |  | true | The Patient Treatment IFN (.001 of the #45 file record)  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PTFNUMBER | LITERAL |  | true | The Patient Treatment IFN (.001 of the #45 file record)  | 

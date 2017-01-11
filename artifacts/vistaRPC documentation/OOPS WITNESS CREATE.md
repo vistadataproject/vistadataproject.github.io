@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This is the IEN for the case in file 2260 that is having the witness info created. | 
-| vs:Input_Parameter-8994_02 | INFO | LITERAL |  | true | This is the Name, Street, City, State, Zip, and Date of Witness Signature. Itmust be in format... NAME^STREET^CITY^STATE^ZIP^DATESIGNED | 
-| vs:Input_Parameter-8994_02 | CMNT |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | COMMENT | LITERAL | 256 | true | The input will be a string containing the comment to be added/associated withthe witness record created.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | This is the IEN for the case in file 2260 that is having the witness info created. | 
+| INFO | LITERAL |  | true | This is the Name, Street, City, State, Zip, and Date of Witness Signature. Itmust be in format... NAME^STREET^CITY^STATE^ZIP^DATESIGNED | 
+| CMNT |  |  |  |  | 
+| COMMENT | LITERAL | 256 | true | The input will be a string containing the comment to be added/associated withthe witness record created.  | 

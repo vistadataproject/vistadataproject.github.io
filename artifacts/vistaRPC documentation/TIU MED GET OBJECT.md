@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDFN | LITERAL |  | true | Patient IEN. | 
-| vs:Input_Parameter-8994_02 | TIUOBJ | LITERAL |  | true | Name of the TIU Object. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDFN | LITERAL |  | true | Patient IEN. | 
+| TIUOBJ | LITERAL |  | true | Name of the TIU Object. | 

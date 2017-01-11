@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PARAMS | LITERAL | 50 | true | Input string = UPDFLAG ^ RARPT ^ RADFN ^ RADTI ^ RACNI ^ UPDPSKEY             UPDFLAG = 1/0 -- 1 to perform update; else no update made             RARPT = pointer to Rad Exam Report file             RADFN,RADTI,RACNI = pointers to Rad Patient File for the exam            UPDPSKEY = 1 if updating Pres State or Key Image data | 
-| vs:Input_Parameter-8994_02 | DATA | WORD PROCESSING | 120 | true | optional array of text containing Key Image and/orImage Presentation State data. The format of the messagecontained in DATA is:*IMAGEImage_IEN ^ KEY*PSPS_UID ^ KEYxml text lines 1xml text lines 2:N (as needed)*END_PS[*PS . . . *END_PS] (as many as for this image)*END_IMAGE[*IMAGE . . . *END_IMAGE] (as many as for the exam)*END | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PARAMS | LITERAL | 50 | true | Input string = UPDFLAG ^ RARPT ^ RADFN ^ RADTI ^ RACNI ^ UPDPSKEY             UPDFLAG = 1/0 -- 1 to perform update; else no update made             RARPT = pointer to Rad Exam Report file             RADFN,RADTI,RACNI = pointers to Rad Patient File for the exam            UPDPSKEY = 1 if updating Pres State or Key Image data | 
+| DATA | WORD PROCESSING | 120 | true | optional array of text containing Key Image and/orImage Presentation State data. The format of the messagecontained in DATA is:*IMAGEImage_IEN ^ KEY*PSPS_UID ^ KEYxml text lines 1xml text lines 2:N (as needed)*END_PS[*PS . . . *END_PS] (as many as for this image)*END_IMAGE[*IMAGE . . . *END_IMAGE] (as many as for the exam)*END | 

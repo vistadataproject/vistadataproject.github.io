@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBWHAT | LIST |  | true | B = Returns Build Version for packages by NamespaceP = Returns if Patch is installed | 
-| vs:Input_Parameter-8994_02 | PSBDATA | LIST |  | true | Build/Package namespace (i.e. PSB) or Patch Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBWHAT | LIST |  | true | B = Returns Build Version for packages by NamespaceP = Returns if Patch is installed | 
+| PSBDATA | LIST |  | true | Build/Package namespace (i.e. PSB) or Patch Number | 

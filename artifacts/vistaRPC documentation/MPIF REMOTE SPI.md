@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SSN | LITERAL | 9 | true | SSN for the patient that is to be sent to the MPI for ICN assignment.  Should there be more than one entry with that SSN, all will be sent. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | DFN for patient to be SPI'd.  DFN or SSN should be used to find patient. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SSN | LITERAL | 9 | true | SSN for the patient that is to be sent to the MPI for ICN assignment.  Should there be more than one entry with that SSN, all will be sent. | 
+| DFN | LITERAL | 20 | true | DFN for patient to be SPI'd.  DFN or SSN should be used to find patient. | 

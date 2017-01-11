@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IMAGE | LITERAL | 20 | true | The value of this parameter is a pointer to the IMAGE file (#2005).This pointer identifies the image for which information is to beupdated. | 
-| vs:Input_Parameter-8994_02 | SERIES | LITERAL | 64 | true | The value of this parameter is a string. This string, if non-empty,is the SERIES UID for the image specified. The format and meaning of a SERIES UID is specified in the DICOMstandard. | 
-| vs:Input_Parameter-8994_02 | SNUM | LITERAL | 10 | true | The value of this parameter is either 0 (zero) or a positive integer number.This number identifies the sequence of a series within a study. | 
-| vs:Input_Parameter-8994_02 | INUM | LITERAL | 10 | true | The value of this parameter is either 0 (zero) or a positive integer number.This number identifies the sequence of the image within its series. | 
-| vs:Input_Parameter-8994_02 | IMGUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies an image. | 
-| vs:Input_Parameter-8994_02 | STUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies a study. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IMAGE | LITERAL | 20 | true | The value of this parameter is a pointer to the IMAGE file (#2005).This pointer identifies the image for which information is to beupdated. | 
+| SERIES | LITERAL | 64 | true | The value of this parameter is a string. This string, if non-empty,is the SERIES UID for the image specified. The format and meaning of a SERIES UID is specified in the DICOMstandard. | 
+| SNUM | LITERAL | 10 | true | The value of this parameter is either 0 (zero) or a positive integer number.This number identifies the sequence of a series within a study. | 
+| INUM | LITERAL | 10 | true | The value of this parameter is either 0 (zero) or a positive integer number.This number identifies the sequence of the image within its series. | 
+| IMGUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies an image. | 
+| STUID | LITERAL | 64 | true | The value of this parameter is a string. This string meets theconstraints of a DICOM Unique Identifier. This identifier uniquely identifies a study. | 

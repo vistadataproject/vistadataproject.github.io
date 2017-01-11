@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFPUR | LITERAL | 1 | true | This is the purpose for the service list: 0 - Display only1 - Forward or Order | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFPUR | LITERAL | 1 | true | This is the purpose for the service list: 0 - Display only1 - Forward or Order | 

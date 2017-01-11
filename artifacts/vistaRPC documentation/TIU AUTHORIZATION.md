@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the record number (IEN) of the document in file 8925. | 
-| vs:Input_Parameter-8994_02 | TIUACT | LITERAL |  | true | This is the ASU ACTION (.01 field from file 8930.8) which is to beperformed by the calling application (e.g., EDIT RECORD, SIGNATURE, COPY,etc.).  To function appropriately, only valid actions may be passed. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This is the record number (IEN) of the document in file 8925. | 
+| TIUACT | LITERAL |  | true | This is the ASU ACTION (.01 field from file 8930.8) which is to beperformed by the calling application (e.g., EDIT RECORD, SIGNATURE, COPY,etc.).  To function appropriately, only valid actions may be passed. | 

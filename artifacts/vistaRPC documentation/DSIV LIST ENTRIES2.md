@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDT | LITERAL | 14 | true | Start date in FileMan internal format. | 
-| vs:Input_Parameter-8994_02 | EDT | LITERAL | 14 | true | Inclusive end date in FileMan internal format (optional). | 
-| vs:Input_Parameter-8994_02 | FLDS | LITERAL | 100 | true | Field list (optional).  If not specified .01I;.01 are returned. | 
-| vs:Input_Parameter-8994_02 | NUMS | LITERAL | 10 | true |  Contains the maximum number of entries to return per rpc call. If not defined, then all entries will be returned (backward compatible). | 
-| vs:Input_Parameter-8994_02 | MORE | LITERAL | 1 | true |  Used with the NUMS parameter, More=0 means first call to rpc, More'=0 means get the next 'set' of NUMS records.  The data will end with a record = $END$ to tell the gui that there are no more records. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDT | LITERAL | 14 | true | Start date in FileMan internal format. | 
+| EDT | LITERAL | 14 | true | Inclusive end date in FileMan internal format (optional). | 
+| FLDS | LITERAL | 100 | true | Field list (optional).  If not specified .01I;.01 are returned. | 
+| NUMS | LITERAL | 10 | true |  Contains the maximum number of entries to return per rpc call. If not defined, then all entries will be returned (backward compatible). | 
+| MORE | LITERAL | 1 | true |  Used with the NUMS parameter, More=0 means first call to rpc, More'=0 means get the next 'set' of NUMS records.  The data will end with a record = $END$ to tell the gui that there are no more records. | 

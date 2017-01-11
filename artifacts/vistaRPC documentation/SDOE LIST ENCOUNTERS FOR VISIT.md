@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VISIT IEN | LITERAL |  | true | This is the internal entry number of an entry in theVISIT [#9000010 - ^AUPNVSIT] file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VISIT IEN | LITERAL |  | true | This is the internal entry number of an entry in theVISIT [#9000010 - ^AUPNVSIT] file. | 

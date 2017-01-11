@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | CONSULT ID | LITERAL | 16 | true | Consult IEN from file 123 | 
-| vs:Input_Parameter-8994_02 | TO SERVICE | LITERAL | 16 | true | Service to which the consult is to be forwarded.  Pointer to file 123.5 | 
-| vs:Input_Parameter-8994_02 | FORWARDER | LITERAL | 16 | true | Person performing the forwarding action.  If null, defaults to user DUZ.Points to NEW PERSON file, #200. | 
-| vs:Input_Parameter-8994_02 | ATTENTION OF | LITERAL | 16 |  | Person to whose attention the consult is being forwarded in thedestination service.  Pointer to NEW PERSON file, #200. | 
-| vs:Input_Parameter-8994_02 | URGENCY | LITERAL | 16 |  | Urgency of the request, as defined in PROTOCOL file. | 
-| vs:Input_Parameter-8994_02 | COMMENTS | LIST |  |  | Comments related to the forwarding action. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| CONSULT ID | LITERAL | 16 | true | Consult IEN from file 123 | 
+| TO SERVICE | LITERAL | 16 | true | Service to which the consult is to be forwarded.  Pointer to file 123.5 | 
+| FORWARDER | LITERAL | 16 | true | Person performing the forwarding action.  If null, defaults to user DUZ.Points to NEW PERSON file, #200. | 
+| ATTENTION OF | LITERAL | 16 |  | Person to whose attention the consult is being forwarded in thedestination service.  Pointer to NEW PERSON file, #200. | 
+| URGENCY | LITERAL | 16 |  | Urgency of the request, as defined in PROTOCOL file. | 
+| COMMENTS | LIST |  |  | Comments related to the forwarding action. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true |  MAGPARAM(\DURATION IN MILLISECONDS\) =  MAGPARAM(\ENDPOINT PLACE\) = Pointer to IMAGING SITE PARAMETERS file (#2006.1) MAGPARAM(\STORAGE PROVIDER\) = Pointer to STORAGE PROVIDER file (#2006.917) MAGPARAM(\SIZE IN BYTES\) =  MAGPARAM(\START DATE/TIME\) =  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true |  MAGPARAM(\DURATION IN MILLISECONDS\) =  MAGPARAM(\ENDPOINT PLACE\) = Pointer to IMAGING SITE PARAMETERS file (#2006.1) MAGPARAM(\STORAGE PROVIDER\) = Pointer to STORAGE PROVIDER file (#2006.917) MAGPARAM(\SIZE IN BYTES\) =  MAGPARAM(\START DATE/TIME\) =  | 

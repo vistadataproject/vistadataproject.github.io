@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | START DATE | LITERAL | 7 | true | FileMan date to start report. | 
-| vs:Input_Parameter-8994_02 | END DATE | LITERAL | 7 | true | FileMan date to report through, defaults to current day. | 
-| vs:Input_Parameter-8994_02 | DIVISION(S) | LITERAL | 999 | true | '^' delimited string of internal division numbers to use for multi-divisional reporting. If string is null only the division of the user or all if user holds the DSIR MDIV key. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| START DATE | LITERAL | 7 | true | FileMan date to start report. | 
+| END DATE | LITERAL | 7 | true | FileMan date to report through, defaults to current day. | 
+| DIVISION(S) | LITERAL | 999 | true | '^' delimited string of internal division numbers to use for multi-divisional reporting. If string is null only the division of the user or all if user holds the DSIR MDIV key. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | This is the Reminder Definition IEN or the Reminder Dialog IEN | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Patient DFN | 
-| vs:Input_Parameter-8994_02 | Visit | LITERAL |  | true | This is the Visit Encounter String | 
-| vs:Input_Parameter-8994_02 | NOTEIEN | LITERAL |  | true | NOTEIEN is the progress Note IEN in file 8925. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | This is the Reminder Definition IEN or the Reminder Dialog IEN | 
+| DFN | LITERAL |  | true | Patient DFN | 
+| Visit | LITERAL |  | true | This is the Visit Encounter String | 
+| NOTEIEN | LITERAL |  | true | NOTEIEN is the progress Note IEN in file 8925. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGPARAM | LIST |  | true |  MAGPARAM(\ARCHIVE DURATION TRIGGER\) MAGPARAM(\ARCHIVE DURATION YEARS\) MAGPARAM(\BUSINESS KEY\) MAGPARAM(\DISPLAY NAME\) MAGPARAM(\MINIMUM ARCHIVE COPIES\) MAGPARAM(\MINIMUM OFFSITE COPIES\) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGPARAM | LIST |  | true |  MAGPARAM(\ARCHIVE DURATION TRIGGER\) MAGPARAM(\ARCHIVE DURATION YEARS\) MAGPARAM(\BUSINESS KEY\) MAGPARAM(\DISPLAY NAME\) MAGPARAM(\MINIMUM ARCHIVE COPIES\) MAGPARAM(\MINIMUM OFFSITE COPIES\) | 

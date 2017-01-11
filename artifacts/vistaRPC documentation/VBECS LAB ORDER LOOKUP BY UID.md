@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VBUID | LITERAL | 20 | true | Input VBUID = The specimen UID received in Blood Bank associated with aLab Testaused to identify the Lab Order. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VBUID | LITERAL | 20 | true | Input VBUID = The specimen UID received in Blood Bank associated with aLab Testaused to identify the Lab Order. | 

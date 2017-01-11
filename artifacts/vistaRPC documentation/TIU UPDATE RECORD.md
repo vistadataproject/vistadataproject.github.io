@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ERR | LITERAL |  |  | This is the return parameter, which is passed by reference.  If an erroroccurs, it will be a pointer to the FM dialog file followed by the integer1 in the second \^\-piece (e.g., 8925001^1). | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the record # (IEN) of the TIU Document in file #8925. | 
-| vs:Input_Parameter-8994_02 | TIUX | LIST |  | true | This is the input array which contains the data to be filed in themodified document.  It should look something like this: TIUX(.02)=45678TIUX(1301)=2960703.104556TIUX(1302)=293764TIUX(\TEXT\,1,0)=\The patient is a 70 year old WHITE MALE, who presentedto the ONCOLOGY CLINIC\TIUX(\TEXT\,2,0)=\On JULY 3, 1996@10:00 AM, with the chief complaint ofNECK PAIN...\ | 
-| vs:Input_Parameter-8994_02 | SUPPRESS | LITERAL |  | true | This BOOLEAN Flag is passed in to suppress the call to the COMMIT CODE forthe TIU DOCUMENT in question (i.e., SUPPRESS=1 ==> don't execute commitcode; SUPPRESS=0 or UNDEFINED ==> DO execute commit code). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ERR | LITERAL |  |  | This is the return parameter, which is passed by reference.  If an erroroccurs, it will be a pointer to the FM dialog file followed by the integer1 in the second \^\-piece (e.g., 8925001^1). | 
+| TIUDA | LITERAL |  | true | This is the record # (IEN) of the TIU Document in file #8925. | 
+| TIUX | LIST |  | true | This is the input array which contains the data to be filed in themodified document.  It should look something like this: TIUX(.02)=45678TIUX(1301)=2960703.104556TIUX(1302)=293764TIUX(\TEXT\,1,0)=\The patient is a 70 year old WHITE MALE, who presentedto the ONCOLOGY CLINIC\TIUX(\TEXT\,2,0)=\On JULY 3, 1996@10:00 AM, with the chief complaint ofNECK PAIN...\ | 
+| SUPPRESS | LITERAL |  | true | This BOOLEAN Flag is passed in to suppress the call to the COMMIT CODE forthe TIU DOCUMENT in question (i.e., SUPPRESS=1 ==> don't execute commitcode; SUPPRESS=0 or UNDEFINED ==> DO execute commit code). | 

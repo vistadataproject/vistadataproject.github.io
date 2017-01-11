@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PKG | LITERAL | 50 | true | This is the full name of the PACKAGE file entry or the namespace for thatpackage. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PKG | LITERAL | 50 | true | This is the full name of the PACKAGE file entry or the namespace for thatpackage. | 

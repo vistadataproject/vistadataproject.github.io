@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 245 | true |  DATA is '^' delimited string       IEN Workstatin File ^  From Date ^ To DateIEN is from the Workstation file ^MAG(2006.81 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DATA | LITERAL | 245 | true |  DATA is '^' delimited string       IEN Workstatin File ^  From Date ^ To DateIEN is from the Workstation file ^MAG(2006.81 | 

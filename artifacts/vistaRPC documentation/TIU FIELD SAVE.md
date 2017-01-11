@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA |  |  |  | IEN of dialog field, if any | 
-| vs:Input_Parameter-8994_02 | TIUX | LIST |  |  | Data to save in template field | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA |  |  |  | IEN of dialog field, if any | 
+| TIUX | LIST |  |  | Data to save in template field | 

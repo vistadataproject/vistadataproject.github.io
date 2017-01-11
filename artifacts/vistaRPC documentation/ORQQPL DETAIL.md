@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PROBLEM ID | LITERAL | 16 | true | The record number of the problem from the Problem File (#9000011). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PROBLEM ID | LITERAL | 16 | true | The record number of the problem from the Problem File (#9000011). | 

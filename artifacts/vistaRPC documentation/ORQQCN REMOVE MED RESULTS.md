@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Consult IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
-| vs:Input_Parameter-8994_02 | Med Result | LITERAL | 24 | true | Variable pointer to medicine result. | 
-| vs:Input_Parameter-8994_02 | Date | LITERAL | 16 |  | Date the result was removed. | 
-| vs:Input_Parameter-8994_02 | Resp Person | LITERAL | 16 |  | Pointer to file 200 for the person removing the result. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Consult IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
+| Med Result | LITERAL | 24 | true | Variable pointer to medicine result. | 
+| Date | LITERAL | 16 |  | Date the result was removed. | 
+| Resp Person | LITERAL | 16 |  | Pointer to file 200 for the person removing the result. | 

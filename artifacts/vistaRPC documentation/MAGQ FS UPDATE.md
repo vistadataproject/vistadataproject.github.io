@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | The network location file (#2005.2) internal entry number of the recordto be updated.  | 
-| vs:Input_Parameter-8994_02 | SPACE | LITERAL |  | true | The amount of space available for copying images. | 
-| vs:Input_Parameter-8994_02 | SIZE | LITERAL |  | true | The disk capacity of the network share. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL |  | true | The network location file (#2005.2) internal entry number of the recordto be updated.  | 
+| SPACE | LITERAL |  | true | The amount of space available for copying images. | 
+| SIZE | LITERAL |  | true | The disk capacity of the network share. | 

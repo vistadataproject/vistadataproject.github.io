@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Note IEN | LITERAL | 20 | true | IEN of document in file 8925. | 
-| vs:Input_Parameter-8994_02 | Chart Copy? | LITERAL | 2 |  | If true, print chart copy, else print work copy. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Note IEN | LITERAL | 20 | true | IEN of document in file 8925. | 
+| Chart Copy? | LITERAL | 2 |  | If true, print chart copy, else print work copy. | 

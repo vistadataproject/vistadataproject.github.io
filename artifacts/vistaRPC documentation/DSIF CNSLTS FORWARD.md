@@ -17,12 +17,12 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be forwarded. | 
-| vs:Input_Parameter-8994_02 | DSIFSVC | LITERAL |  | true | This is the Service to which the consult is being forwarded. | 
-| vs:Input_Parameter-8994_02 | DSIFPROV | LITERAL |  | true | This is the provider responsible for forwarding the consult. | 
-| vs:Input_Parameter-8994_02 | DSIFATTN | LITERAL |  |  | This is the provider whose attention the consult is sent to. Not required. | 
-| vs:Input_Parameter-8994_02 | DSIFURG | LITERAL |  | true | This is the urgency of the request. | 
-| vs:Input_Parameter-8994_02 | DSIFDT | LITERAL |  | true | This is the actual date and time of activity. | 
-| vs:Input_Parameter-8994_02 | DSIFCOM | LIST |  | true | This is the comments associated with the forward consult request. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be forwarded. | 
+| DSIFSVC | LITERAL |  | true | This is the Service to which the consult is being forwarded. | 
+| DSIFPROV | LITERAL |  | true | This is the provider responsible for forwarding the consult. | 
+| DSIFATTN | LITERAL |  |  | This is the provider whose attention the consult is sent to. Not required. | 
+| DSIFURG | LITERAL |  | true | This is the urgency of the request. | 
+| DSIFDT | LITERAL |  | true | This is the actual date and time of activity. | 
+| DSIFCOM | LIST |  | true | This is the comments associated with the forward consult request. | 

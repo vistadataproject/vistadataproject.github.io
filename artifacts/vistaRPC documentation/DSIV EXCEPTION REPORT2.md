@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDT | LITERAL | 30 | true | Contains the start date for the report. | 
-| vs:Input_Parameter-8994_02 | EDT | LITERAL | 30 | true | Contains the end date of the report. | 
-| vs:Input_Parameter-8994_02 | DSIVHNDL | LITERAL | 50 | true | Contains the handle for the background job.  This is the ^XTMP global node where the report status and data will reside. | 
-| vs:Input_Parameter-8994_02 | DSIVLOCS | LIST | 30 | true | Contains a list of clinics to return for the report.  The exception report will still gather appointments for all locations (except inactive, and \ZZ\ locations), but will only return the selected ones. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDT | LITERAL | 30 | true | Contains the start date for the report. | 
+| EDT | LITERAL | 30 | true | Contains the end date of the report. | 
+| DSIVHNDL | LITERAL | 50 | true | Contains the handle for the background job.  This is the ^XTMP global node where the report status and data will reside. | 
+| DSIVLOCS | LIST | 30 | true | Contains a list of clinics to return for the report.  The exception report will still gather appointments for all locations (except inactive, and \ZZ\ locations), but will only return the selected ones. | 

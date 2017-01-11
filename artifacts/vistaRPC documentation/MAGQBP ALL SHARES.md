@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 8 | true | This value is used to determine if there is a screen intended for members of the Next RAID Group.\ALL\ performs no screen.\AUTO\ will screen for members of the Next RAID group. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TYPE | LITERAL | 8 | true | This value is used to determine if there is a screen intended for members of the Next RAID Group.\ALL\ performs no screen.\AUTO\ will screen for members of the Next RAID group. | 

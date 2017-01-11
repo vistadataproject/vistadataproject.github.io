@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGIEN | LITERAL | 30 | true | Internal entry number of IMAGE file been annotated (#2005) | 
-| vs:Input_Parameter-8994_02 | LAYIEN | LITERAL | 10 |  | Internal entry number of ANNOTATION IMAGE LAYER in #2005.002 saved layer(s) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGIEN | LITERAL | 30 | true | Internal entry number of IMAGE file been annotated (#2005) | 
+| LAYIEN | LITERAL | 10 |  | Internal entry number of ANNOTATION IMAGE LAYER in #2005.002 saved layer(s) | 

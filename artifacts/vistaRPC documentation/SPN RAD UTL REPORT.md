@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | DATE TO START COLLECTING DATA FROM | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | DATE TO COLLECT DATA UP TO | 
-| vs:Input_Parameter-8994_02 | MINPROC | LITERAL |  |  | Minimum number of procedures to display:  (1-99999) | 
-| vs:Input_Parameter-8994_02 | MINCOST | LITERAL |  |  | Minimum dollar cost of procedures to display:  (0-999) | 
-| vs:Input_Parameter-8994_02 | HIUSERS | LITERAL |  |  | Number of highest users to identify:  (0-100) | 
-| vs:Input_Parameter-8994_02 | PTLIST | LIST |  |  | DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2726^2800^3504^3726^3793^4072 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FDATE | LITERAL |  |  | DATE TO START COLLECTING DATA FROM | 
+| TDATE | LITERAL |  |  | DATE TO COLLECT DATA UP TO | 
+| MINPROC | LITERAL |  |  | Minimum number of procedures to display:  (1-99999) | 
+| MINCOST | LITERAL |  |  | Minimum dollar cost of procedures to display:  (0-999) | 
+| HIUSERS | LITERAL |  |  | Number of highest users to identify:  (0-100) | 
+| PTLIST | LIST |  |  | DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2726^2800^3504^3726^3793^4072 | 

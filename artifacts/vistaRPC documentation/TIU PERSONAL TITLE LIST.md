@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  | true | This is the user's ID number (Pointer to file 200). | 
-| vs:Input_Parameter-8994_02 | CLASS | LITERAL |  |  | This is the Class of Documents (Pointer to file 8925.1) from which thetitle is to be selected. | 
-| vs:Input_Parameter-8994_02 | INDEX | LITERAL |  | true | This is the array subscript from which to begin incrementing (in the eventthat the preferred list is to be appended to an existing array). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DUZ | LITERAL |  | true | This is the user's ID number (Pointer to file 200). | 
+| CLASS | LITERAL |  |  | This is the Class of Documents (Pointer to file 8925.1) from which thetitle is to be selected. | 
+| INDEX | LITERAL |  | true | This is the array subscript from which to begin incrementing (in the eventthat the preferred list is to be appended to an existing array). | 

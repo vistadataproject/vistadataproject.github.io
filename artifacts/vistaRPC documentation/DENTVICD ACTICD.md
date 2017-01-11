@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80 - ^ICD9) | 
-| vs:Input_Parameter-8994_02 | CDT | LITERAL | 14 | true | This date will be sued to check if the code was active as of that date. Default is today. | 
-| vs:Input_Parameter-8994_02 | FUN | LITERAL | 1 | true | This flag will allow for the RPC to be used as an intrensic function. This value is not needed for GUI calls. | 
-| vs:Input_Parameter-8994_02 | SYS | LITERAL | 2 | true | This is the ICD coding system you wish to use. 1  = ICD-9 Diagnosis2  = ICD-9 Procedure30 = ICD-10 Diagnosis (Default)31 = ICD-10 Procedure | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80 - ^ICD9) | 
+| CDT | LITERAL | 14 | true | This date will be sued to check if the code was active as of that date. Default is today. | 
+| FUN | LITERAL | 1 | true | This flag will allow for the RPC to be used as an intrensic function. This value is not needed for GUI calls. | 
+| SYS | LITERAL | 2 | true | This is the ICD coding system you wish to use. 1  = ICD-9 Diagnosis2  = ICD-9 Procedure30 = ICD-10 Diagnosis (Default)31 = ICD-10 Procedure | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STATUS | LITERAL | 20 | true | Status to search: 'C' FOR CLERK CLOSED;'S' FOR SUPERVISOR CLOSED;'O' FOR OPEN;'T' FOR TRANSMITTED;'V' FOR VOUCHERED;'P' FOR FORWARDED TO PRICER;'A' FORASSIGNED PRICE;'R' FOR REVIEWED AFTER PRICER;'F' FOR CENTRAL FEE ACCEPTED Delimited by \^\, multiple status can be entered: \C^S^R\ | 
-| vs:Input_Parameter-8994_02 | FEE PROGRAM | LITERAL | 3 | true |  | 
-| vs:Input_Parameter-8994_02 | STARTDT | LITERAL | 7 | true | Start date to display batches, defaults to all batches if not entered | 
-| vs:Input_Parameter-8994_02 | ENDDATE | LITERAL | 7 | true | Enter the end of the date rand\\ge to display default to all dates.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STATUS | LITERAL | 20 | true | Status to search: 'C' FOR CLERK CLOSED;'S' FOR SUPERVISOR CLOSED;'O' FOR OPEN;'T' FOR TRANSMITTED;'V' FOR VOUCHERED;'P' FOR FORWARDED TO PRICER;'A' FORASSIGNED PRICE;'R' FOR REVIEWED AFTER PRICER;'F' FOR CENTRAL FEE ACCEPTED Delimited by \^\, multiple status can be entered: \C^S^R\ | 
+| FEE PROGRAM | LITERAL | 3 | true |  | 
+| STARTDT | LITERAL | 7 | true | Start date to display batches, defaults to all batches if not entered | 
+| ENDDATE | LITERAL | 7 | true | Enter the end of the date rand\\ge to display default to all dates.  | 

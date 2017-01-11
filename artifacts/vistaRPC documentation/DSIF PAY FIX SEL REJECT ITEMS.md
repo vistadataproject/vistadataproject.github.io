@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT IEN | LITERAL | 35 | true | Patient IEN | 
-| vs:Input_Parameter-8994_02 | OLD BATCH | LITERAL | 35 | true | Old rejected batch number (IEN) | 
-| vs:Input_Parameter-8994_02 | NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
-| vs:Input_Parameter-8994_02 | LINES | LIST | 50 | true | Lines to re-initiate, format: passed in by a list/array  ;     B3 BATCHES: FBLINES(NUM) = PMT ID (N;N;N;N)                   FBLINES(NUM+n) = PMT ID#2, (ETC) ;     B9 BATCHES: FBLINES(NUM) = Invoice #1                   FBLINES(NUM+n) = INVOICE #2,  (ECT) Value of NUM must start with \1\! | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT IEN | LITERAL | 35 | true | Patient IEN | 
+| OLD BATCH | LITERAL | 35 | true | Old rejected batch number (IEN) | 
+| NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
+| LINES | LIST | 50 | true | Lines to re-initiate, format: passed in by a list/array  ;     B3 BATCHES: FBLINES(NUM) = PMT ID (N;N;N;N)                   FBLINES(NUM+n) = PMT ID#2, (ETC) ;     B9 BATCHES: FBLINES(NUM) = Invoice #1                   FBLINES(NUM+n) = INVOICE #2,  (ECT) Value of NUM must start with \1\! | 

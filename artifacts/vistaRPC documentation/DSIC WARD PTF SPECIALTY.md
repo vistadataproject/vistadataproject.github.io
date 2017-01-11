@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | WARD | LITERAL | 30 | true | This is the name of the ward or a pointer number to the WARD file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| WARD | LITERAL | 30 | true | This is the name of the ward or a pointer number to the WARD file. | 

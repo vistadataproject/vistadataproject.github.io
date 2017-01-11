@@ -17,17 +17,17 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 99 | true | Internal Entry Number to file 162.2 (Enter mode when false, Edit mode when true) | 
-| vs:Input_Parameter-8994_02 | REQDT | LITERAL | 14 | true | Request Date/Time (Required on enter, optional on edit) | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 99 | true | Patient IEN (Required on enter, optional on edit) | 
-| vs:Input_Parameter-8994_02 | VEN | LITERAL | 99 | true | Vendor IEN (Required on enter, optional on edit) | 
-| vs:Input_Parameter-8994_02 | WHO | LITERAL | 30 | true | Person Who Called (Optional - Free Text 3 to 30 Characters) | 
-| vs:Input_Parameter-8994_02 | ADMDT | LITERAL | 14 | true | Admission Date/Time (Required on enter, optional on edit) | 
-| vs:Input_Parameter-8994_02 | AUTHDT | LITERAL | 14 | true | Authorized From Date/Time (Optional - Default is ADMDT) | 
-| vs:Input_Parameter-8994_02 | ADMDX | LITERAL | 45 | true | Admitting Diagnosis (Optional - Free Text 3 to 45 Characters) | 
-| vs:Input_Parameter-8994_02 | ATPHY | LITERAL | 30 | true | Attending Physician (Optional - Free Text 3 to 30 Characters) | 
-| vs:Input_Parameter-8994_02 | PHYPH | LITERAL | 20 | true | Attending Physicians Phone Number (Optional - Free Text 3 to 20 Characters) | 
-| vs:Input_Parameter-8994_02 | TOC | LITERAL | 1 | true | Type of Contact (Optional - T : Telephone, P - Personal) | 
-| vs:Input_Parameter-8994_02 | REFPROV | LITERAL | 25 | true | Referring provider, pointer to file 200.  \@\ can be passed in for deletion. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 99 | true | Internal Entry Number to file 162.2 (Enter mode when false, Edit mode when true) | 
+| REQDT | LITERAL | 14 | true | Request Date/Time (Required on enter, optional on edit) | 
+| DFN | LITERAL | 99 | true | Patient IEN (Required on enter, optional on edit) | 
+| VEN | LITERAL | 99 | true | Vendor IEN (Required on enter, optional on edit) | 
+| WHO | LITERAL | 30 | true | Person Who Called (Optional - Free Text 3 to 30 Characters) | 
+| ADMDT | LITERAL | 14 | true | Admission Date/Time (Required on enter, optional on edit) | 
+| AUTHDT | LITERAL | 14 | true | Authorized From Date/Time (Optional - Default is ADMDT) | 
+| ADMDX | LITERAL | 45 | true | Admitting Diagnosis (Optional - Free Text 3 to 45 Characters) | 
+| ATPHY | LITERAL | 30 | true | Attending Physician (Optional - Free Text 3 to 30 Characters) | 
+| PHYPH | LITERAL | 20 | true | Attending Physicians Phone Number (Optional - Free Text 3 to 20 Characters) | 
+| TOC | LITERAL | 1 | true | Type of Contact (Optional - T : Telephone, P - Personal) | 
+| REFPROV | LITERAL | 25 | true | Referring provider, pointer to file 200.  \@\ can be passed in for deletion. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  |  | User IEN in the NEW PERSON file. By default (if $G(USER)'>0), the DUZ isused). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER | LITERAL |  |  | User IEN in the NEW PERSON file. By default (if $G(USER)'>0), the DUZ isused). | 

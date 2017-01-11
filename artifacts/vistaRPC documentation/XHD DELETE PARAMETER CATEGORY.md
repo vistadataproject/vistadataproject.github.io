@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PCAT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category to be deleted. | 
-| vs:Input_Parameter-8994_02 | DELKIDS | LITERAL |  | true | This boolean flag indicates whether to delete all descendents of the parameter category in question. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PCAT | LITERAL |  | true | This is the record number (i.e., IEN) of the parameter category to be deleted. | 
+| DELKIDS | LITERAL |  | true | This boolean flag indicates whether to delete all descendents of the parameter category in question. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 20 | true | This is the number of the file for which a new record is to be added | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 250 | true | This is a list of fields which will have data for filing with the new record.  Obviously the .01 field must be present.  Format of data array:  DATA(field#)=internal value   On the GUI side, Param.List['field#']= value | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 20 | true | This is the number of the file for which a new record is to be added | 
+| DATA | LIST | 250 | true | This is a list of fields which will have data for filing with the new record.  Obviously the .01 field must be present.  Format of data array:  DATA(field#)=internal value   On the GUI side, Param.List['field#']= value | 

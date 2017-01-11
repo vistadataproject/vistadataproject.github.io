@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LIST | LITERAL | 256 |  | This input parameter is an array containing the data elements collected inCreate Accident/Illness Report. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LIST | LITERAL | 256 |  | This input parameter is an array containing the data elements collected inCreate Accident/Illness Report. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DIV | LITERAL | 8 | true | Input DIV = DIVISION (Station Number) | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 99 | true | Input DATA = Name of provider used to perform search in file 200. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DIV | LITERAL | 8 | true | Input DIV = DIVISION (Station Number) | 
+| DATA | LITERAL | 99 | true | Input DATA = Name of provider used to perform search in file 200. | 

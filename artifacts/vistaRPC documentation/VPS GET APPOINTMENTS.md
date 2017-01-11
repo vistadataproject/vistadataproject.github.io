@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSQUEUE | LITERAL | 3 | true | Unique Queue ID representing Vecna Appointment Queue. | 
-| vs:Input_Parameter-8994_02 | VPSFRDT | LITERAL | 14 | true | Appointment From Date | 
-| vs:Input_Parameter-8994_02 | VPSTODT | LITERAL | 14 | true | Appointment Through Date | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSQUEUE | LITERAL | 3 | true | Unique Queue ID representing Vecna Appointment Queue. | 
+| VPSFRDT | LITERAL | 14 | true | Appointment From Date | 
+| VPSTODT | LITERAL | 14 | true | Appointment Through Date | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | Consult ID | LITERAL | 16 | true | Internal file number of consult in file 123. | 
-| vs:Input_Parameter-8994_02 | Request type | LITERAL | 30 | true | Consult or procedure.  Pointer to PROTOCOL file 101.  Value iseither 'GMRCOR CONSULT' or 'GMRCOR REQUEST'. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| Consult ID | LITERAL | 16 | true | Internal file number of consult in file 123. | 
+| Request type | LITERAL | 30 | true | Consult or procedure.  Pointer to PROTOCOL file 101.  Value iseither 'GMRCOR CONSULT' or 'GMRCOR REQUEST'. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PART | LITERAL | 30 | true | The partial match restriction | 
-| vs:Input_Parameter-8994_02 | FLAGS | LITERAL | 1 | true | 1 equals HEPC Registry 2 equals HIV Registry | 
-| vs:Input_Parameter-8994_02 | NUMBER | LITERAL | 10 | true | DEPRECATED | 
-| vs:Input_Parameter-8994_02 | FROM | LITERAL | 10 | true | DEPRECATED | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PART | LITERAL | 30 | true | The partial match restriction | 
+| FLAGS | LITERAL | 1 | true | 1 equals HEPC Registry 2 equals HIV Registry | 
+| NUMBER | LITERAL | 10 | true | DEPRECATED | 
+| FROM | LITERAL | 10 | true | DEPRECATED | 

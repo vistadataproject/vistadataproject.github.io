@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | UPTO | LITERAL | 20 | true | The value of this parameter is a (FileMan-formatted) date/time value.This value represents the date before which all entries are to bepurged from the Transmission Queue. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| UPTO | LITERAL | 20 | true | The value of this parameter is a (FileMan-formatted) date/time value.This value represents the date before which all entries are to bepurged from the Transmission Queue. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 

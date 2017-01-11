@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PRINTER | LITERAL | 30 | true | Name of the printer where report should print. | 
-| vs:Input_Parameter-8994_02 | RUN DATE | LITERAL | 20 | true | Date report should be printed. | 
-| vs:Input_Parameter-8994_02 | TIME | LITERAL | 20 | true | Time of day report should be printed. | 
-| vs:Input_Parameter-8994_02 | QUERY DEFINITION | LIST |  | true | This parameter contains the complete definition of the querytemplate. The format of the definition data is defined bythe TScQryDef.BuildQuery method on the client. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PRINTER | LITERAL | 30 | true | Name of the printer where report should print. | 
+| RUN DATE | LITERAL | 20 | true | Date report should be printed. | 
+| TIME | LITERAL | 20 | true | Time of day report should be printed. | 
+| QUERY DEFINITION | LIST |  | true | This parameter contains the complete definition of the querytemplate. The format of the definition data is defined bythe TScQryDef.BuildQuery method on the client. | 

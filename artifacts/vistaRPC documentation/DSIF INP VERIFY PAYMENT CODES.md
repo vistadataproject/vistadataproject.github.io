@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFAUTH | LITERAL |  | true | This is the pointer to the 7078/583 you wish to verify the ICD Diagnosis and Procedure codes for. (Required). | 
-| vs:Input_Parameter-8994_02 | DATA | LIST |  | true | This is the array of codes you wish to verify. The array should look like this: ; DATA(I)=DIAG or PROC or ADMIT^# (1-25)^External Value | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFAUTH | LITERAL |  | true | This is the pointer to the 7078/583 you wish to verify the ICD Diagnosis and Procedure codes for. (Required). | 
+| DATA | LIST |  | true | This is the array of codes you wish to verify. The array should look like this: ; DATA(I)=DIAG or PROC or ADMIT^# (1-25)^External Value | 

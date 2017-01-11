@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SVC | LITERAL |  |  | Initial Service Connection Category. | 
-| vs:Input_Parameter-8994_02 | LOC | LITERAL |  |  | Pointer to the hospital location. | 
-| vs:Input_Parameter-8994_02 | INP | LITERAL |  |  | Patient Status0 = Outpatient1 = Inpatient | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SVC | LITERAL |  |  | Initial Service Connection Category. | 
+| LOC | LITERAL |  |  | Pointer to the hospital location. | 
+| INP | LITERAL |  |  | Patient Status0 = Outpatient1 = Inpatient | 

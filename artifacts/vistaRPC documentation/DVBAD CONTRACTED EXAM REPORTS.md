@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DVBARTYP | LITERAL | 1 | true | The type of contracted exam report to execute: D: Detailed, S: Summary, or T: Timeliness. | 
-| vs:Input_Parameter-8994_02 | DVBAFLTRS | LIST |  | true | Optional parameter that allows filtering the contracted exam results. The filters include DATE, a date range, CONTRACTOR, IEN of specific contractor, PENDING, referred exams only and SORT for grouping results by contractor or request date/time (Used for Detailed Reports Only). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DVBARTYP | LITERAL | 1 | true | The type of contracted exam report to execute: D: Detailed, S: Summary, or T: Timeliness. | 
+| DVBAFLTRS | LIST |  | true | Optional parameter that allows filtering the contracted exam results. The filters include DATE, a date range, CONTRACTOR, IEN of specific contractor, PENDING, referred exams only and SORT for grouping results by contractor or request date/time (Used for Detailed Reports Only). | 

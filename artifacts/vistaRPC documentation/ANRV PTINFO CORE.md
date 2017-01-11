@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PTDFN | LITERAL | 40 | true | Patients Internal entry number. | 
-| vs:Input_Parameter-8994_02 | RESULTS | LITERAL |  | true | Bolus of patient information. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PTDFN | LITERAL | 40 | true | Patients Internal entry number. | 
+| RESULTS | LITERAL |  | true | Bolus of patient information. | 

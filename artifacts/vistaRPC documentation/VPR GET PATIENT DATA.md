@@ -17,12 +17,12 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 20 | true | Internal entry number from Patient file #2[optionally DFN;ICN for remote calls] | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 100 | true | The kind(s) of data to return, which may include:  demographics;reactions;problems;vitals;labs;meds;  immunizations;visits;appointments;documents;  procedures;consults | 
-| vs:Input_Parameter-8994_02 | START | LITERAL | 20 | true | The date/time from which to begin searching for data [optional]. | 
-| vs:Input_Parameter-8994_02 | STOP | LITERAL | 20 | true | The date/time at which to end searching for data [optional]. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 7 | true | The maximum number of items to return per data type [optional]. | 
-| vs:Input_Parameter-8994_02 | ITEM | LITERAL | 30 | true | The identifier of a single item to return [optional, but TYPE mustalso be defined when used]. | 
-| vs:Input_Parameter-8994_02 | FILTER | LIST |  | true | List of name-value pairs, further refining the search. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 20 | true | Internal entry number from Patient file #2[optionally DFN;ICN for remote calls] | 
+| TYPE | LITERAL | 100 | true | The kind(s) of data to return, which may include:  demographics;reactions;problems;vitals;labs;meds;  immunizations;visits;appointments;documents;  procedures;consults | 
+| START | LITERAL | 20 | true | The date/time from which to begin searching for data [optional]. | 
+| STOP | LITERAL | 20 | true | The date/time at which to end searching for data [optional]. | 
+| MAX | LITERAL | 7 | true | The maximum number of items to return per data type [optional]. | 
+| ITEM | LITERAL | 30 | true | The identifier of a single item to return [optional, but TYPE mustalso be defined when used]. | 
+| FILTER | LIST |  | true | List of name-value pairs, further refining the search. | 

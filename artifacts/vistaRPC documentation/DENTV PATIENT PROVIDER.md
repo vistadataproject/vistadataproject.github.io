@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 30 | true | Contains the patient DFN | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL | 1 | true | 1=SET (set the index) 2=KILL (kill off current pt/prov index) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 30 | true | Contains the patient DFN | 
+| FLAG | LITERAL | 1 | true | 1=SET (set the index) 2=KILL (kill off current pt/prov index) | 

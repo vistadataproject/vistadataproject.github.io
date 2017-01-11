@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OPTION | LITERAL | 30 | true | Currently set to EXECUTE as the only option. | 
-| vs:Input_Parameter-8994_02 | RTN | LITERAL | 30 | true | Contains the routine to produce the output.  Currently to client producesthis parameter in the form of TAG^ROUTINE(needed parameters) to simplifythe calling process. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OPTION | LITERAL | 30 | true | Currently set to EXECUTE as the only option. | 
+| RTN | LITERAL | 30 | true | Contains the routine to produce the output.  Currently to client producesthis parameter in the form of TAG^ROUTINE(needed parameters) to simplifythe calling process. | 

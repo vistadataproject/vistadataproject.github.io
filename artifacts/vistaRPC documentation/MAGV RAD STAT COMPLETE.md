@@ -17,14 +17,14 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RADPT | LITERAL |  | true | IEN of the patient in the RAD/NUC MED PATIENT File (#70). | 
-| vs:Input_Parameter-8994_02 | RAEXAM1 | LITERAL |  | true | IEN in the REGISTERED EXAMS multiple (sub-file #70.02). | 
-| vs:Input_Parameter-8994_02 | RAEXAM2 | LITERAL |  | true | IEN in the EXAMINATIONS multiple (sub-file #70.03). | 
-| vs:Input_Parameter-8994_02 | MAGVUSR | LITERAL |  |  | DUZ of the person logged into the Importer II application. | 
-| vs:Input_Parameter-8994_02 | MAGVUSRDV | LITERAL |  | true | User Logon Division of the person logged into the Importer II application. | 
-| vs:Input_Parameter-8994_02 | RAIMTYP | LITERAL |  | true | This is the radiology image type. | 
-| vs:Input_Parameter-8994_02 | RASTDRPT | LITERAL |  | true | IEN of an entry in the STANDARD REPORTS file (#74.1). | 
-| vs:Input_Parameter-8994_02 | RADXPRIM | LITERAL |  | true | IEN of an entry in the DIAGNOSTIC CODES file (#78.3). This will be theexam's Primary Diagnostic Code via the RAMISC parameter 'PRIMDXCODE'. | 
-| vs:Input_Parameter-8994_02 | RADXSCND | LIST |  | true | One or more IENs of entries in the DIAGNOSTIC CODES file (#78.3). Thesewill be the exam's Secondary Diagnostic Codes via the RAMISC parameter'SECDXCODE'. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RADPT | LITERAL |  | true | IEN of the patient in the RAD/NUC MED PATIENT File (#70). | 
+| RAEXAM1 | LITERAL |  | true | IEN in the REGISTERED EXAMS multiple (sub-file #70.02). | 
+| RAEXAM2 | LITERAL |  | true | IEN in the EXAMINATIONS multiple (sub-file #70.03). | 
+| MAGVUSR | LITERAL |  |  | DUZ of the person logged into the Importer II application. | 
+| MAGVUSRDV | LITERAL |  | true | User Logon Division of the person logged into the Importer II application. | 
+| RAIMTYP | LITERAL |  | true | This is the radiology image type. | 
+| RASTDRPT | LITERAL |  | true | IEN of an entry in the STANDARD REPORTS file (#74.1). | 
+| RADXPRIM | LITERAL |  | true | IEN of an entry in the DIAGNOSTIC CODES file (#78.3). This will be theexam's Primary Diagnostic Code via the RAMISC parameter 'PRIMDXCODE'. | 
+| RADXSCND | LIST |  | true | One or more IENs of entries in the DIAGNOSTIC CODES file (#78.3). Thesewill be the exam's Secondary Diagnostic Codes via the RAMISC parameter'SECDXCODE'. | 

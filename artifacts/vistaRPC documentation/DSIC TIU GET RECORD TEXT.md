@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIEN | LITERAL | 15 | true | Internal record number for file 8925 [IEN or IFN]. | 
-| vs:Input_Parameter-8994_02 | ACTION | LITERAL | 10 | true | This parameter is not well documented within TIU.  So for this RPC, do not pass a value at this time.  The default value is \VIEW\. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIEN | LITERAL | 15 | true | Internal record number for file 8925 [IEN or IFN]. | 
+| ACTION | LITERAL | 10 | true | This parameter is not well documented within TIU.  So for this RPC, do not pass a value at this time.  The default value is \VIEW\. | 

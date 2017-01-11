@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | QUEUE TYPE | LITERAL | 256 | true | This defines the queue type to be reset. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 256 | true | This is the QUEUE file (#2006.03) internal entry number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| QUEUE TYPE | LITERAL | 256 | true | This defines the queue type to be reset. | 
+| IEN | LITERAL | 256 | true | This is the QUEUE file (#2006.03) internal entry number. | 

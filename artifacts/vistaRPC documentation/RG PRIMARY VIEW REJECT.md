@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SITE | LITERAL | 10 | true | This is the requesting site's station number. | 
-| vs:Input_Parameter-8994_02 | ICN | LITERAL | 16 | true | This is the Integration Control Number of the patient for whom data is requested. | 
-| vs:Input_Parameter-8994_02 | EXCEPTION DATE | LITERAL | 25 | true | The date/time of the exception will be used as the begin date for the report data extraction. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SITE | LITERAL | 10 | true | This is the requesting site's station number. | 
+| ICN | LITERAL | 16 | true | This is the Integration Control Number of the patient for whom data is requested. | 
+| EXCEPTION DATE | LITERAL | 25 | true | The date/time of the exception will be used as the begin date for the report data extraction. | 

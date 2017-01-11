@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ENTITY TYPE | LITERAL | 20 | true | This parameter indicates the entity type of the slecetion.The following types are possible:       DIVISION       TEAM       PRACTITIONER       ROLE       CLINIC       USER CLASS | 
-| vs:Input_Parameter-8994_02 | REPORT ID | LITERAL | 20 | true | Internal entry number of the report definition.Each report has a differenrt set of criteria thatthe query specification must meet. This affectswhich entity entries are allowed to be chosen bythe user. | 
-| vs:Input_Parameter-8994_02 | REPORT NAME | LITERAL | 50 | true | Name of the report. | 
-| vs:Input_Parameter-8994_02 | SEARCH TEXT | LITERAL | 50 | true | This parameter contains the free-text entered bythe user that is compared to the entity entry's nameto filter out possible choices. If null, thenall valid entries are presented to the user. | 
-| vs:Input_Parameter-8994_02 | SELECTIONS | LIST |  | true | This array contains all of the selections already madeby the user for the current query template. This listof selections is then used to filter out possible selectionsfor the current 'entity type' being requested.For example, often the report criteria requires one ormore teams must be selected. However, the team must bein one of the divisions already selected by the user.In this case, the user's division selections areused to filter out inapproiate teams during a teamarray build. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ENTITY TYPE | LITERAL | 20 | true | This parameter indicates the entity type of the slecetion.The following types are possible:       DIVISION       TEAM       PRACTITIONER       ROLE       CLINIC       USER CLASS | 
+| REPORT ID | LITERAL | 20 | true | Internal entry number of the report definition.Each report has a differenrt set of criteria thatthe query specification must meet. This affectswhich entity entries are allowed to be chosen bythe user. | 
+| REPORT NAME | LITERAL | 50 | true | Name of the report. | 
+| SEARCH TEXT | LITERAL | 50 | true | This parameter contains the free-text entered bythe user that is compared to the entity entry's nameto filter out possible choices. If null, thenall valid entries are presented to the user. | 
+| SELECTIONS | LIST |  | true | This array contains all of the selections already madeby the user for the current query template. This listof selections is then used to filter out possible selectionsfor the current 'entity type' being requested.For example, often the report criteria requires one ormore teams must be selected. However, the team must bein one of the divisions already selected by the user.In this case, the user's division selections areused to filter out inapproiate teams during a teamarray build. | 

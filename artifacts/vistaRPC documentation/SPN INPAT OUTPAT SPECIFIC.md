@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ICNLST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN)  | 
-| vs:Input_Parameter-8994_02 | FDATE | LITERAL |  |  | Date to start search from.   | 
-| vs:Input_Parameter-8994_02 | TDATE | LITERAL |  |  | Date to end search at.   | 
-| vs:Input_Parameter-8994_02 | CLINSTP | LIST |  |  | List of Clinic Stops to search for. | 
-| vs:Input_Parameter-8994_02 | SPECLTY | LIST |  |  | Type of Specialties to search for.  | 
-| vs:Input_Parameter-8994_02 | HIUSERS | LITERAL |  |  | Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ICNLST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN)  | 
+| FDATE | LITERAL |  |  | Date to start search from.   | 
+| TDATE | LITERAL |  |  | Date to end search at.   | 
+| CLINSTP | LIST |  |  | List of Clinic Stops to search for. | 
+| SPECLTY | LIST |  |  | Type of Specialties to search for.  | 
+| HIUSERS | LITERAL |  |  | Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data.  | 

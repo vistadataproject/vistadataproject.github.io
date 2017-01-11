@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATIENT | LITERAL | 999 | true | This is the DFN of the patient. | 
-| vs:Input_Parameter-8994_02 | REQUESTOR | LITERAL | 999 | true | This is the IEN of the requestor in file 19620.12 DSIR NEW REQUESTOR. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATIENT | LITERAL | 999 | true | This is the DFN of the patient. | 
+| REQUESTOR | LITERAL | 999 | true | This is the IEN of the requestor in file 19620.12 DSIR NEW REQUESTOR. | 

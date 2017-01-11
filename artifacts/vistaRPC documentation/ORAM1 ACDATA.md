@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | VISITDATE | LITERAL |  |  | This is the Date of Service (i.e., visit date) when the provider saw the patient. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  |  |  | 
+| VISITDATE | LITERAL |  |  | This is the Date of Service (i.e., visit date) when the provider saw the patient. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | WIIEN | LITERAL |  | true | This is the IEN of the requested entry in the MAG WORK ITEM file (#2006.941). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| WIIEN | LITERAL |  | true | This is the IEN of the requested entry in the MAG WORK ITEM file (#2006.941). | 

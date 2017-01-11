@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVCAT | LITERAL | 45 | true | GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVCAT | LITERAL | 45 | true | GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD) | 

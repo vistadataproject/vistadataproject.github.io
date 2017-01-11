@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RQSTR | LITERAL |  | true | RQSTR - Pointer to the requestor file (19620.12) | 
-| vs:Input_Parameter-8994_02 | ADDRPTR | LITERAL |  | true | ADDRPTR - Pointer to the address file (19620.92) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RQSTR | LITERAL |  | true | RQSTR - Pointer to the requestor file (19620.12) | 
+| ADDRPTR | LITERAL |  | true | ADDRPTR - Pointer to the address file (19620.92) | 

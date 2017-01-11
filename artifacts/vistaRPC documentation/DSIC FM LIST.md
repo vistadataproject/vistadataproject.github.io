@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LIST | 250 | true | The INPUT(n) = tag^value  where  tag = LIST^DIC input parameter name such as        FILE  IENS  FIELDS  FLAGS  NUMBER  INDEX  FROM  PART  SCREEN  value = value for that input parameter The INDEX variable consists only of a single index name. For those input parameters that allow an array, you can pass that array in the tag such as FROM(2)^lookup value | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LIST | 250 | true | The INPUT(n) = tag^value  where  tag = LIST^DIC input parameter name such as        FILE  IENS  FIELDS  FLAGS  NUMBER  INDEX  FROM  PART  SCREEN  value = value for that input parameter The INDEX variable consists only of a single index name. For those input parameters that allow an array, you can pass that array in the tag such as FROM(2)^lookup value | 

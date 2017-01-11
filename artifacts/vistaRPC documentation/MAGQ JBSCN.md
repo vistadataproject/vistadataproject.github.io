@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 256 | true | This value is the initial $Order value applied to the Image file. | 
-| vs:Input_Parameter-8994_02 | START | LIST | 32 | true | This is the starting IEN for the BP Verifier session. | 
-| vs:Input_Parameter-8994_02 | STOP | LITERAL | 32 | true | This is the ending IEN for the BP Verifier session. | 
-| vs:Input_Parameter-8994_02 | AUTO | LITERAL | 1 | true | When set this will allow the BP Verifier session to terminate automatically. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 256 | true | This value is the initial $Order value applied to the Image file. | 
+| START | LIST | 32 | true | This is the starting IEN for the BP Verifier session. | 
+| STOP | LITERAL | 32 | true | This is the ending IEN for the BP Verifier session. | 
+| AUTO | LITERAL | 1 | true | When set this will allow the BP Verifier session to terminate automatically. | 

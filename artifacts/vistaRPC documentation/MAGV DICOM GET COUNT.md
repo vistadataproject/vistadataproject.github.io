@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MACHID | LITERAL | 24 |  | The machine ID to be matched to the machine ID in the DICOM FAILEDIMAGES (#2006.575) file. | 
-| vs:Input_Parameter-8994_02 | SERVTYPE | LITERAL | 20 |  | The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MACHID | LITERAL | 24 |  | The machine ID to be matched to the machine ID in the DICOM FAILEDIMAGES (#2006.575) file. | 
+| SERVTYPE | LITERAL | 20 |  | The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file. | 

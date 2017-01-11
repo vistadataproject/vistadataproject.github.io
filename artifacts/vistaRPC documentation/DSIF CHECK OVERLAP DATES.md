@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 99 | true | Patient File Pointer (File #2, Required) | 
-| vs:Input_Parameter-8994_02 | FBBEGDT | LITERAL | 14 | true | From Date to check (FM format, Required) | 
-| vs:Input_Parameter-8994_02 | FBENDDT | LITERAL | 14 | true | To Date (FM format, Optional) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 99 | true | Patient File Pointer (File #2, Required) | 
+| FBBEGDT | LITERAL | 14 | true | From Date to check (FM format, Required) | 
+| FBENDDT | LITERAL | 14 | true | To Date (FM format, Optional) | 

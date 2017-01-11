@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SDATE | LITERAL | 30 | true | The SDATE input parameters represents the start date required by the Pharmacy API OCL^PSOORRL. | 
-| vs:Input_Parameter-8994_02 | EDATE | LITERAL | 30 | true | The EDATE input parameter represents the end date required by the Pharmacy API OCL^PSOORRL. | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 15 | true | The VistA Patient file (#2) Internal Entry Number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SDATE | LITERAL | 30 | true | The SDATE input parameters represents the start date required by the Pharmacy API OCL^PSOORRL. | 
+| EDATE | LITERAL | 30 | true | The EDATE input parameter represents the end date required by the Pharmacy API OCL^PSOORRL. | 
+| DFN | LITERAL | 15 | true | The VistA Patient file (#2) Internal Entry Number. | 

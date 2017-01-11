@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OPTION | LITERAL | 10 | true | Routine tag line to call in GMVRPCU. | 
-| vs:Input_Parameter-8994_02 | DATA | LITERAL | 100 | true | Other data as required for the call. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OPTION | LITERAL | 10 | true | Routine tag line to call in GMVRPCU. | 
+| DATA | LITERAL | 100 | true | Other data as required for the call. | 

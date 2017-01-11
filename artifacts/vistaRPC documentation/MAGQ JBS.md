@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | WS Name | LITERAL | 3 | true | This is the tree letter BP Workstation name. | 
-| vs:Input_Parameter-8994_02 | jbscan | LITERAL | 5 | true | 'jbscan' literal. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| WS Name | LITERAL | 3 | true | This is the tree letter BP Workstation name. | 
+| jbscan | LITERAL | 5 | true | 'jbscan' literal. | 

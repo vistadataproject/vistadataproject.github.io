@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | QUERY NAME | LITERAL | 30 | true | Name of the query that needs to be checked for existence. | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL | 30 | true | Internal entry number of user that the query namewill be assoicated with, usually DUZ. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| QUERY NAME | LITERAL | 30 | true | Name of the query that needs to be checked for existence. | 
+| USER | LITERAL | 30 | true | Internal entry number of user that the query namewill be assoicated with, usually DUZ. | 

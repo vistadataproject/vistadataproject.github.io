@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSIFROOT |  |  |  |  | 
-| vs:Input_Parameter-8994_02 | DSIFSTRT | LITERAL |  | true | This is the Service IEN you wish to start building the return list from. | 
-| vs:Input_Parameter-8994_02 | DSIFWHY | LITERAL |  |  | This is whether you want to return the list for display only, or for use in ordering or forwarding a request. | 
-| vs:Input_Parameter-8994_02 | DSIFSYN | LITERAL | 1 |  | This is a boolean inputon whether you want the return to include synonyms: 1 = Yes, 0 No. | 
-| vs:Input_Parameter-8994_02 | DSIFOIEN | LITERAL |  |  | This is the Consult IEN, and is optional. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSIFROOT |  |  |  |  | 
+| DSIFSTRT | LITERAL |  | true | This is the Service IEN you wish to start building the return list from. | 
+| DSIFWHY | LITERAL |  |  | This is whether you want to return the list for display only, or for use in ordering or forwarding a request. | 
+| DSIFSYN | LITERAL | 1 |  | This is a boolean inputon whether you want the return to include synonyms: 1 = Yes, 0 No. | 
+| DSIFOIEN | LITERAL |  |  | This is the Consult IEN, and is optional. | 

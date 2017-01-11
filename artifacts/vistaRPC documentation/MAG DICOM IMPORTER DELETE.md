@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MACHID | LITERAL | 30 | true | This is the hostname of the DICOM Imaging Gateway running the Importer application. | 
-| vs:Input_Parameter-8994_02 | FILEPATH | LITERAL | 30 | true | This is the path of the DICOM image file being deleted. | 
-| vs:Input_Parameter-8994_02 | IMAGEUID | LITERAL | 30 | true | This is the image's SOP Instance UID. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MACHID | LITERAL | 30 | true | This is the hostname of the DICOM Imaging Gateway running the Importer application. | 
+| FILEPATH | LITERAL | 30 | true | This is the path of the DICOM image file being deleted. | 
+| IMAGEUID | LITERAL | 30 | true | This is the image's SOP Instance UID. | 

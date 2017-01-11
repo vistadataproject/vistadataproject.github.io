@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DAYS | LITERAL | 10 | true | The value of this parameter is an integer number.This value represents the number of days for which informationwill be retained. When this parameter is omitted, or when its value is less than 1,the retention periods for the destinations of the individual image filesin question will be used as default values. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DAYS | LITERAL | 10 | true | The value of this parameter is an integer number.This value represents the number of days for which informationwill be retained. When this parameter is omitted, or when its value is less than 1,the retention periods for the destinations of the individual image filesin question will be used as default values. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 

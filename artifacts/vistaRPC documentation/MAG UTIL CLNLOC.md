@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 6 | true | NETWORK LOCATION IEN | 
-| vs:Input_Parameter-8994_02 | PLACE | LITERAL | 2 | true | PLACE OF IMAGE SITE PARAMETERS | 
-| vs:Input_Parameter-8994_02 | STEP | LITERAL |  | true | Used to create chunks of data(iens) for processing.  This is used to eliminate Broker timeouts during processing. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 6 | true | NETWORK LOCATION IEN | 
+| PLACE | LITERAL | 2 | true | PLACE OF IMAGE SITE PARAMETERS | 
+| STEP | LITERAL |  | true | Used to create chunks of data(iens) for processing.  This is used to eliminate Broker timeouts during processing. | 

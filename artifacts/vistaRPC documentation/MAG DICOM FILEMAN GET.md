@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the table from which information is retrieved. | 
-| vs:Input_Parameter-8994_02 | D0 | LITERAL | 30 | true | The value of this parameter is a number. This value is theinternal entry number in the table from which information is retrieved. | 
-| vs:Input_Parameter-8994_02 | FIELD | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the field in the table from which information is retrieved. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the table from which information is retrieved. | 
+| D0 | LITERAL | 30 | true | The value of this parameter is a number. This value is theinternal entry number in the table from which information is retrieved. | 
+| FIELD | LITERAL | 30 | true | The value of this parameter is a number. This value is the(FileMan) number of the field in the table from which information is retrieved. | 

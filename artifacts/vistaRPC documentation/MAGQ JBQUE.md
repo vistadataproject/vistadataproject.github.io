@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 256 | true | This is the internal entry of either the Image file (#2005) or the Image Audit file (#2005.1) of the Image to be queued.. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 256 | true | This is the internal entry of either the Image file (#2005) or the Image Audit file (#2005.1) of the Image to be queued.. | 

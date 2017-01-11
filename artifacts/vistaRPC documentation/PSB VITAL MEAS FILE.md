@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBDFN | LITERAL |  | true | PSBDFN presents the Pointer to the PATIENT File (#2) of the patient for whom this vital measurement data was entered. | 
-| vs:Input_Parameter-8994_02 | PSBRATE | LITERAL |  | true | PSBRATE presents the numeric value associated with this vital measurement. | 
-| vs:Input_Parameter-8994_02 | PSBVTYPE | LITERAL |  | true | PSBVTYPE presents the type of measurement for this record and is a pointer to the GMRV VITAL TYPE File (#120.51) | 
-| vs:Input_Parameter-8994_02 | PSBDTTKN | LITERAL |  | true | DTTKN   (o) Date/time (FileMan) measurment was taken.  The default is NOW. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBDFN | LITERAL |  | true | PSBDFN presents the Pointer to the PATIENT File (#2) of the patient for whom this vital measurement data was entered. | 
+| PSBRATE | LITERAL |  | true | PSBRATE presents the numeric value associated with this vital measurement. | 
+| PSBVTYPE | LITERAL |  | true | PSBVTYPE presents the type of measurement for this record and is a pointer to the GMRV VITAL TYPE File (#120.51) | 
+| PSBDTTKN | LITERAL |  | true | DTTKN   (o) Date/time (FileMan) measurment was taken.  The default is NOW. | 

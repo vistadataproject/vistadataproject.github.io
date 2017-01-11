@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | Internal entry number of the report in 19620.35 | 
-| vs:Input_Parameter-8994_02 | STFM | LITERAL | 99 | true | This is the Internal Number from the word processing multiple in file 19620.35 that was passed back as the last line sent in the small group return. | 
-| vs:Input_Parameter-8994_02 | RECS | LITERAL | 6 | true | This is the max number of records from the report text to return. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 20 | true | Internal entry number of the report in 19620.35 | 
+| STFM | LITERAL | 99 | true | This is the Internal Number from the word processing multiple in file 19620.35 that was passed back as the last line sent in the small group return. | 
+| RECS | LITERAL | 6 | true | This is the max number of records from the report text to return. | 

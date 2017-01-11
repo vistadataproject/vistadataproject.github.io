@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSID | LITERAL | 30 | true | String literal containing patient's last name initial and last 4-digits ofthe SSN i.e., \T9999\. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSID | LITERAL | 30 | true | String literal containing patient's last name initial and last 4-digits ofthe SSN i.e., \T9999\. | 

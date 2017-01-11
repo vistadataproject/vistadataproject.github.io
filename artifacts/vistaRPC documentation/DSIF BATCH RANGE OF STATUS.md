@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RANGE | LITERAL | 99 | true | Input range of batch numbers in the format of n-nnn (or a single batch)  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RANGE | LITERAL | 99 | true | Input range of batch numbers in the format of n-nnn (or a single batch)  | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL | 25 | true | Patient IEN | 
-| vs:Input_Parameter-8994_02 | AUTH IEN | LITERAL | 25 | true | Internal Number of the Authorization | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL | 25 | true | Patient IEN | 
+| AUTH IEN | LITERAL | 25 | true | Internal Number of the Authorization | 

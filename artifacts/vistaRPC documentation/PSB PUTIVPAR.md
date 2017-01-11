@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBWARD | LITERAL | 1 | true | ^1=Ward name^2=IEN of ward as in file 53.66 | 
-| vs:Input_Parameter-8994_02 | PSBPARS | LITERAL | 1 | true | IV type - \A\ for Additive          \P\ for Piggyback          \H\ for Hyperal          \C\ for Chemo          \S\ for Syringe          \S\ for Syringe ^2-^16 Setting     1 for Warning     2 for Non-Verify     3 for Invalid | 
-| vs:Input_Parameter-8994_02 | PSBDIV | LITERAL | 1 | true | ^1=IEN of division as in the Ward Location file (File #42) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBWARD | LITERAL | 1 | true | ^1=Ward name^2=IEN of ward as in file 53.66 | 
+| PSBPARS | LITERAL | 1 | true | IV type - \A\ for Additive          \P\ for Piggyback          \H\ for Hyperal          \C\ for Chemo          \S\ for Syringe          \S\ for Syringe ^2-^16 Setting     1 for Warning     2 for Non-Verify     3 for Invalid | 
+| PSBDIV | LITERAL | 1 | true | ^1=IEN of division as in the Ward Location file (File #42) | 

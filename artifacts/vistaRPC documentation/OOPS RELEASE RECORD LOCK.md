@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | This input parameter contains the ASISTS Internal Record Number that will beused to attempt to unlock a previously locked record. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 20 | true | This input parameter contains the ASISTS Internal Record Number that will beused to attempt to unlock a previously locked record. | 

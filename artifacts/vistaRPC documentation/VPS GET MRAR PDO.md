@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSNUM | LITERAL | 30 | true | Patient ID. This parameter value could be SSN, DFN, ICN, or VIC/CAC based on Patient ID Type. | 
-| vs:Input_Parameter-8994_02 | VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Value is SSN, DFN, ICN, or VIC/CAC | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSNUM | LITERAL | 30 | true | Patient ID. This parameter value could be SSN, DFN, ICN, or VIC/CAC based on Patient ID Type. | 
+| VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Value is SSN, DFN, ICN, or VIC/CAC | 

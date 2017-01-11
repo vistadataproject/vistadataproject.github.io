@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL | 30 | true | The value of this parameter is a string. This string is the\host name\ of a computer. Many sites follow the standardto use names like VHAxxxabcde, where xxx is a three-letterabbreviation for the name of the site, and abcde is theactual name of the computer. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HOSTNAME | LITERAL | 30 | true | The value of this parameter is a string. This string is the\host name\ of a computer. Many sites follow the standardto use names like VHAxxxabcde, where xxx is a three-letterabbreviation for the name of the site, and abcde is theactual name of the computer. | 

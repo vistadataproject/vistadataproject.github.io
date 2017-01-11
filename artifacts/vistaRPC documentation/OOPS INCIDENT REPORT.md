@@ -17,11 +17,11 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | RPTTYP | LITERAL | 256 | true | This will determine which report will be run.  Report types are Type of Incident,Occupation Code, Characterization of Injury, Service, Body Parts, Day of Week,and Time of Day. | 
-| vs:Input_Parameter-8994_02 | CSTAT | LITERAL | 10 | true | This parameter determines which cases to include: Open, Closed, or Both Openand Closed. | 
-| vs:Input_Parameter-8994_02 | STDT | LITERAL | 30 | true | This parameter contains the start date of the report.  Those cases whose Dateof Occurrence is greater than or equal to the Start date will be included. | 
-| vs:Input_Parameter-8994_02 | ENDDT | LITERAL | 30 | true | This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included. | 
-| vs:Input_Parameter-8994_02 | LTNTT | LITERAL | 30 | true | This parameter will determine whether or not Lost Time claims should be included on the report. | 
-| vs:Input_Parameter-8994_02 | STAT | LITERAL | 256 | true | This parameter will determine whether to run the report for all stations ora single station. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| RPTTYP | LITERAL | 256 | true | This will determine which report will be run.  Report types are Type of Incident,Occupation Code, Characterization of Injury, Service, Body Parts, Day of Week,and Time of Day. | 
+| CSTAT | LITERAL | 10 | true | This parameter determines which cases to include: Open, Closed, or Both Openand Closed. | 
+| STDT | LITERAL | 30 | true | This parameter contains the start date of the report.  Those cases whose Dateof Occurrence is greater than or equal to the Start date will be included. | 
+| ENDDT | LITERAL | 30 | true | This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included. | 
+| LTNTT | LITERAL | 30 | true | This parameter will determine whether or not Lost Time claims should be included on the report. | 
+| STAT | LITERAL | 256 | true | This parameter will determine whether to run the report for all stations ora single station. | 

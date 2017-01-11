@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 20 | true | The IEN (Internal Entry Number) is the location within the file where the data is to be filed. | 
-| vs:Input_Parameter-8994_02 | TYPE | LITERAL | 1 | true |  TYPE    - Must be \C\, \I\, \A\, OR \R\ as follows:           Regular comments (19620,.31)(C)           Internal Comments (19620,.32)(I)            Annotations (19620.98,100)(A)           Released Document Comment (19620.1,1)(R) | 
-| vs:Input_Parameter-8994_02 | STRLIST | LIST | 9999 | true | STRLIST - List (ARRAY) of lines to be filed | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 20 | true | The IEN (Internal Entry Number) is the location within the file where the data is to be filed. | 
+| TYPE | LITERAL | 1 | true |  TYPE    - Must be \C\, \I\, \A\, OR \R\ as follows:           Regular comments (19620,.31)(C)           Internal Comments (19620,.32)(I)            Annotations (19620.98,100)(A)           Released Document Comment (19620.1,1)(R) | 
+| STRLIST | LIST | 9999 | true | STRLIST - List (ARRAY) of lines to be filed | 

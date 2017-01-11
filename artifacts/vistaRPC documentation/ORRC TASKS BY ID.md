@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TASKS | LIST |  | true | This is the list of task identifiers, as TSK:## where ## is the pointerto file #102.3 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TASKS | LIST |  | true | This is the list of task identifiers, as TSK:## where ## is the pointerto file #102.3 | 

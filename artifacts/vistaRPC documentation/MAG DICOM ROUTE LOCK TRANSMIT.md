@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | D0 | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imagesare to be transmitted. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
-| vs:Input_Parameter-8994_02 | PLUSMIN | LITERAL | 10 | true | The value of this parameter is a number. When the value of thisnumber is zero, this RPC will perform one (decremental) unLOCK;when the value of this number is nonzero, this RPC will attemptto perform one (incremental) LOCK with a time-out of zero seconds. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| D0 | LITERAL | 30 | true | The value of this parameter is a pointer to either ^MAG(2005.2)or ^MAGDICOM(2006.585).This pointer identifies the destination to which the imagesare to be transmitted. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| PLUSMIN | LITERAL | 10 | true | The value of this parameter is a number. When the value of thisnumber is zero, this RPC will perform one (decremental) unLOCK;when the value of this number is nonzero, this RPC will attemptto perform one (incremental) LOCK with a time-out of zero seconds. | 

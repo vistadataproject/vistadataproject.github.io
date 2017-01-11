@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL |  | true | File to get the data from, in ^FILE(subscript, format. | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL |  | true | Line number for the data to be put into, in number_\,\ formatsuch as \1,\. | 
-| vs:Input_Parameter-8994_02 | NODE | LITERAL |  | true | Node in the global to pull the data from, such as node 2. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL |  | true | File to get the data from, in ^FILE(subscript, format. | 
+| IEN | LITERAL |  | true | Line number for the data to be put into, in number_\,\ formatsuch as \1,\. | 
+| NODE | LITERAL |  | true | Node in the global to pull the data from, such as node 2. | 

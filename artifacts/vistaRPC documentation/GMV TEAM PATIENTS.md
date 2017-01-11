@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | GMVTEAM | LITERAL | 30 | true | GMVTEAM is the internal entry number of the selected team (File 100.21). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| GMVTEAM | LITERAL | 30 | true | GMVTEAM is the internal entry number of the selected team (File 100.21). | 

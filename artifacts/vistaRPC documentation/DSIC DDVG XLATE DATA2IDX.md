@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FILE | LITERAL | 20 | true | This is the file (or subfile) number upon which the lookup will be done | 
-| vs:Input_Parameter-8994_02 | IENS | LITERAL | 50 | true | This is the standard IENS parameter when FIND1^DIC is invoked.  It is only needed if the lookup is on a multiple instead of the parent file. | 
-| vs:Input_Parameter-8994_02 | VALUE | LITERAL | 250 | true | This is the value in external format used for the lookup.lookup. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FILE | LITERAL | 20 | true | This is the file (or subfile) number upon which the lookup will be done | 
+| IENS | LITERAL | 50 | true | This is the standard IENS parameter when FIND1^DIC is invoked.  It is only needed if the lookup is on a multiple instead of the parent file. | 
+| VALUE | LITERAL | 250 | true | This is the value in external format used for the lookup.lookup. | 

@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TASK | LITERAL | 30 | true | The value of this parameter is a pointer to a TaskMan task.This RPC will return log-information for the specified task. | 
-| vs:Input_Parameter-8994_02 | MSG | LITERAL | 30 | true | The value of this parameter is an integer number.This value is \one less than\ the number of the first log-entryto be returned. | 
-| vs:Input_Parameter-8994_02 | MAX | LITERAL | 30 | true | The value of this parameter is an integer number.This value is the maximum number of log-entriesto be returned. | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TASK | LITERAL | 30 | true | The value of this parameter is a pointer to a TaskMan task.This RPC will return log-information for the specified task. | 
+| MSG | LITERAL | 30 | true | The value of this parameter is an integer number.This value is \one less than\ the number of the first log-entryto be returned. | 
+| MAX | LITERAL | 30 | true | The value of this parameter is an integer number.This value is the maximum number of log-entriesto be returned. | 
+| LOCATION | LITERAL | 30 | true | The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location at which images were acquired. | 

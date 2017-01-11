@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FLTIEN | LITERAL | 245 | true | This is the filter ien in the IMAGE LIST FILTERS file. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FLTIEN | LITERAL | 245 | true | This is the filter ien in the IMAGE LIST FILTERS file. | 

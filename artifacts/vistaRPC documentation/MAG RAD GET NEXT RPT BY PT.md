@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DFN | LITERAL |  | true | Patient pointer. | 
-| vs:Input_Parameter-8994_02 | RARPT1 | LITERAL |  | true | ^RARPT pointer - origin of search.  Next one is before it or after it. | 
-| vs:Input_Parameter-8994_02 | DIR | LITERAL |  | true | Direction to transverse ^RADPT (increasing or decreasing report number).1 = increasing report number, -1 = decreasing report number. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DFN | LITERAL |  | true | Patient pointer. | 
+| RARPT1 | LITERAL |  | true | ^RARPT pointer - origin of search.  Next one is before it or after it. | 
+| DIR | LITERAL |  | true | Direction to transverse ^RADPT (increasing or decreasing report number).1 = increasing report number, -1 = decreasing report number. | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | XHDDA | LITERAL |  | true | This is the IEN of the parameter in the Parameter Definition File (#8989.51). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| XHDDA | LITERAL |  | true | This is the IEN of the parameter in the Parameter Definition File (#8989.51). | 

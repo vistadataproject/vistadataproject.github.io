@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SELECT | LITERAL |  | true | User selection preference - 1=select, 0=ignore | 
-| vs:Input_Parameter-8994_02 | IENPARAM | LITERAL |  | true | Pointer to User Parameter file 2006.5843 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SELECT | LITERAL |  | true | User selection preference - 1=select, 0=ignore | 
+| IENPARAM | LITERAL |  | true | Pointer to User Parameter file 2006.5843 | 

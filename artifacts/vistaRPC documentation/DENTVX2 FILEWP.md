@@ -17,9 +17,9 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ENT | LITERAL | 3 | true | Entity you wish to assign this Word Processing parameter to. | 
-| vs:Input_Parameter-8994_02 | PAR | LITERAL | 250 | true | The word processing parameter you wish to file. | 
-| vs:Input_Parameter-8994_02 | INST | LITERAL | 3 | true | Instance value of the filed parameter. | 
-| vs:Input_Parameter-8994_02 | DATA | LIST | 250 | true | This is an array which contains the data to be stored in the parameter. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ENT | LITERAL | 3 | true | Entity you wish to assign this Word Processing parameter to. | 
+| PAR | LITERAL | 250 | true | The word processing parameter you wish to file. | 
+| INST | LITERAL | 3 | true | Instance value of the filed parameter. | 
+| DATA | LIST | 250 | true | This is an array which contains the data to be stored in the parameter. | 

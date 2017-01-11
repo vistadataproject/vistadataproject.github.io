@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PSBSCAN | LITERAL | 40 | true | PSBSCAN is the value that has been scanned or entered by the user. | 
-| vs:Input_Parameter-8994_02 | PSBOTYP | LITERAL | 30 | true | Type of list:     Dispensed Drugs   = \UD\     IV Medications    = \IV\     Orderable Item    = \OIT\     Drug Class        = \VAC\ | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PSBSCAN | LITERAL | 40 | true | PSBSCAN is the value that has been scanned or entered by the user. | 
+| PSBOTYP | LITERAL | 30 | true | Type of list:     Dispensed Drugs   = \UD\     IV Medications    = \IV\     Orderable Item    = \OIT\     Drug Class        = \VAC\ | 

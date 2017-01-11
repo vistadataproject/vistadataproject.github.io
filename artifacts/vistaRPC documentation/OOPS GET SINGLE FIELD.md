@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | IEN | LITERAL | 30 | true | This parameter is the internal record number of the file that the data elementwill be extracted from. | 
-| vs:Input_Parameter-8994_02 | FLD | LITERAL | 50 | true | This parameter contains the file and field number where the data element shouldbe extracted from in the format FILE NUMBER^FIELD NUMBER.  An example wouldbe 2260^119.  This would 'pull' field 119 from the ASISTS Accident ReportingFile (#2260). | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| IEN | LITERAL | 30 | true | This parameter is the internal record number of the file that the data elementwill be extracted from. | 
+| FLD | LITERAL | 50 | true | This parameter contains the file and field number where the data element shouldbe extracted from in the format FILE NUMBER^FIELD NUMBER.  An example wouldbe 2260^119.  This would 'pull' field 119 from the ASISTS Accident ReportingFile (#2260). | 

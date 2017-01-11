@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ROOT | LITERAL |  | true |  | 
-| vs:Input_Parameter-8994_02 | USER | LITERAL |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ROOT | LITERAL |  | true |  | 
+| USER | LITERAL |  | true |  | 

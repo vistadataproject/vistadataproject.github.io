@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | VPSIO | LITERAL | 50 | true | This is the device name where the wristband label to print on. | 
-| vs:Input_Parameter-8994_02 | VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN, SSN, ICN, VIC/CAC | 
-| vs:Input_Parameter-8994_02 | VPSNUM | LITERAL | 50 | true | Patient ID. This could be DFN, SSN, ICN, VIC/CAC | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| VPSIO | LITERAL | 50 | true | This is the device name where the wristband label to print on. | 
+| VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN, SSN, ICN, VIC/CAC | 
+| VPSNUM | LITERAL | 50 | true | Patient ID. This could be DFN, SSN, ICN, VIC/CAC | 

@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ECARY | LITERAL |  |  | ECARY will be sent with two delimited pieces of information.     DFN    - patient's IEN    LOC    - (optional) IEN of the location to filter visits/appts | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ECARY | LITERAL |  |  | ECARY will be sent with two delimited pieces of information.     DFN    - patient's IEN    LOC    - (optional) IEN of the location to filter visits/appts | 

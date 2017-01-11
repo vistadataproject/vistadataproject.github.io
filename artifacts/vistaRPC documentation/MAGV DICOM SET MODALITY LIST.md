@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | HOSTNAME | LITERAL |  | true | DICOM Gateway host name | 
-| vs:Input_Parameter-8994_02 | LOCATION | LITERAL |  | true | Identifies the institution where this DICOM Gateway computer resides | 
-| vs:Input_Parameter-8994_02 | MAGDATA | LIST |  | true | Data in DICOM GATEWAY MODALITY DICTIONARY file (#2006.912) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| HOSTNAME | LITERAL |  | true | DICOM Gateway host name | 
+| LOCATION | LITERAL |  | true | Identifies the institution where this DICOM Gateway computer resides | 
+| MAGDATA | LIST |  | true | Data in DICOM GATEWAY MODALITY DICTIONARY file (#2006.912) | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | INPUT | LITERAL | 256 | true | This input parameter contains the IEN and Witness Number for the Witnessbeing entered.  It is in the format: IEN^WIT. | 
-| vs:Input_Parameter-8994_02 | INFO | LITERAL | 256 |  | This input parameter contains the address information for the witness. It isin the format: NAME^STREET^CITY^STATE^ZIP^DATE SIGNED. | 
-| vs:Input_Parameter-8994_02 | CMNT | LITERAL | 256 |  | This input parameter contains the text for the Witness Comment. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| INPUT | LITERAL | 256 | true | This input parameter contains the IEN and Witness Number for the Witnessbeing entered.  It is in the format: IEN^WIT. | 
+| INFO | LITERAL | 256 |  | This input parameter contains the address information for the witness. It isin the format: NAME^STREET^CITY^STATE^ZIP^DATE SIGNED. | 
+| CMNT | LITERAL | 256 |  | This input parameter contains the text for the Witness Comment. | 

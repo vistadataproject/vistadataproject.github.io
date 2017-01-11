@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORDATE | LITERAL |  |  | Fileman date that the user will be required to be active on. (optional) | 
-| vs:Input_Parameter-8994_02 | ORDIR | LITERAL |  | true | Direction to move through the #200 x-ref with $O. | 
-| vs:Input_Parameter-8994_02 | ORFROM | LITERAL |  |  | Starting name for this set. | 
-| vs:Input_Parameter-8994_02 | ORTIUTYP | LITERAL |  | true | is + of the 0 node of the 8925 docmt | 
-| vs:Input_Parameter-8994_02 | ORTIUDA | LITERAL |  | true | This is the record # of the TIU Document in file 8925. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORDATE | LITERAL |  |  | Fileman date that the user will be required to be active on. (optional) | 
+| ORDIR | LITERAL |  | true | Direction to move through the #200 x-ref with $O. | 
+| ORFROM | LITERAL |  |  | Starting name for this set. | 
+| ORTIUTYP | LITERAL |  | true | is + of the 0 node of the 8925 docmt | 
+| ORTIUDA | LITERAL |  | true | This is the record # of the TIU Document in file 8925. | 

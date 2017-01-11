@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | MAGVER | LITERAL | 100 | true | The Imaging Version to be checked.  In the format   MAG*3.0*59   or   3.0.59 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| MAGVER | LITERAL | 100 | true | The Imaging Version to be checked.  In the format   MAG*3.0*59   or   3.0.59 | 

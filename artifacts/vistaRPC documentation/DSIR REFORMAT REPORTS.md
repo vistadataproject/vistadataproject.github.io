@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | NEW REPORT LENGTH | LITERAL | 9 | true | This is the number of lines to format the old report into. | 
-| vs:Input_Parameter-8994_02 | HEADER COUNT | LITERAL | 9 | true | This is the number of line at the top of the report that are considered to be headers.  The RPC will always take the first x number of lines as header, this parameter is that x.   | 
-| vs:Input_Parameter-8994_02 | FOOTER COUNT | LITERAL | 9 | true | This parameter tells the RPC how many lines are footer text. | 
-| vs:Input_Parameter-8994_02 | OLD LINE COUNT | LITERAL | 9 | true | This parameter is needed for the RPC to know many lines per page are in the incoming report. | 
-| vs:Input_Parameter-8994_02 | INCOMING (OLD) REPORT | LIST |  | true | This is the array of the old report to be reformatted. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| NEW REPORT LENGTH | LITERAL | 9 | true | This is the number of lines to format the old report into. | 
+| HEADER COUNT | LITERAL | 9 | true | This is the number of line at the top of the report that are considered to be headers.  The RPC will always take the first x number of lines as header, this parameter is that x.   | 
+| FOOTER COUNT | LITERAL | 9 | true | This parameter tells the RPC how many lines are footer text. | 
+| OLD LINE COUNT | LITERAL | 9 | true | This parameter is needed for the RPC to know many lines per page are in the incoming report. | 
+| INCOMING (OLD) REPORT | LIST |  | true | This is the array of the old report to be reformatted. | 

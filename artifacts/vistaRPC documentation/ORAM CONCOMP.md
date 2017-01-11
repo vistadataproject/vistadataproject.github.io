@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ORAMCNUM | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | ORAMNUM | LITERAL |  |  |  | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  |  |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ORAMCNUM | LITERAL |  |  |  | 
+| ORAMNUM | LITERAL |  |  |  | 
+| DUZ | LITERAL |  |  |  | 

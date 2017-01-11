@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | UPN | LITERAL | 50 | true | This is the SUBJECT ALTERNATIVE NAME from the PIV card. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| UPN | LITERAL | 50 | true | This is the SUBJECT ALTERNATIVE NAME from the PIV card. | 

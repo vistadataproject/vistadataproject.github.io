@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | TIUDA | LITERAL |  | true | This is the record # (ien) of the document in file 8925. | 
-| vs:Input_Parameter-8994_02 | TIULIST | LIST |  | true | This is the list of users, passed by reference, as shown below:        TIULIST(1)=213[^CASEY,BEN]       TIULIST(2)=73425[^HOWSER,DOOGEY]       TIULIST(3)=172[^WELBY,MARCUS] NOTE that names passed as second '^'-pieces are optional. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| TIUDA | LITERAL |  | true | This is the record # (ien) of the document in file 8925. | 
+| TIULIST | LIST |  | true | This is the list of users, passed by reference, as shown below:        TIULIST(1)=213[^CASEY,BEN]       TIULIST(2)=73425[^HOWSER,DOOGEY]       TIULIST(3)=172[^WELBY,MARCUS] NOTE that names passed as second '^'-pieces are optional. | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | LISTTYPE | LITERAL | 5 | true | 2 - client name3 - ip address | 
-| vs:Input_Parameter-8994_02 | SUBSCRIPT | LITERAL | 30 | true | Subscript (free text)Ex: \ORWCV\ | 
-| vs:Input_Parameter-8994_02 | DATAGLOBAL | LITERAL | 30 | true | Global containing data.Ex: ^TMP($J) | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| LISTTYPE | LITERAL | 5 | true | 2 - client name3 - ip address | 
+| SUBSCRIPT | LITERAL | 30 | true | Subscript (free text)Ex: \ORWCV\ | 
+| DATAGLOBAL | LITERAL | 30 | true | Global containing data.Ex: ^TMP($J) | 

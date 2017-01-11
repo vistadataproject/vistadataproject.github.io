@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ConsultID | LITERAL | 16 | true |  | 
-| vs:Input_Parameter-8994_02 | ChangeArray | LIST |  | true |  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ConsultID | LITERAL | 16 | true |  | 
+| ChangeArray | LIST |  | true |  | 

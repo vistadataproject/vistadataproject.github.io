@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | SECID | LITERAL | 40 | true | Unique Security ID [SecID, assigned by Identity and Access Management] | 
-| vs:Input_Parameter-8994_02 | AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Binding Application | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| SECID | LITERAL | 40 | true | Unique Security ID [SecID, assigned by Identity and Access Management] | 
+| AUTHCODE | LITERAL | 80 | true | Security Phrase for IAM Binding Application | 

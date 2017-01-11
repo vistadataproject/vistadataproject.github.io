@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | USER NUMBER | LITERAL | 20 | true | Internal entry number of the user (DUZ). | 
-| vs:Input_Parameter-8994_02 | QUERY ID | LITERAL | 20 | true | Internal entry number of query template(#404.95) that the userselected as his/her default. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| USER NUMBER | LITERAL | 20 | true | Internal entry number of the user (DUZ). | 
+| QUERY ID | LITERAL | 20 | true | Internal entry number of query template(#404.95) that the userselected as his/her default. | 

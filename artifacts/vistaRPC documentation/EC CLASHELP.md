@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ECARY | LITERAL |  | true | Input key ECARY consist of the following pieces:-ECDFN  - Patient DFN from file (#2)ECKY   - Key to provide help on.  Example ECKY='SC' provides help on service         connection. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ECARY | LITERAL |  | true | Input key ECARY consist of the following pieces:-ECDFN  - Patient DFN from file (#2)ECKY   - Key to provide help on.  Example ECKY='SC' provides help on service         connection. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FNM | LITERAL |  | true | This is the name of the column that should be used as the sort key. | 
-| vs:Input_Parameter-8994_02 | FWD | LITERAL |  | true | This is boolean true if the sort should be ascending, false if descending. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FNM | LITERAL |  | true | This is the name of the column that should be used as the sort key. | 
+| FWD | LITERAL |  | true | This is boolean true if the sort should be ascending, false if descending. | 

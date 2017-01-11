@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACTION | LITERAL | 256 | true | LOGACT calls ACTION^MAGGTAU to log action.        ; ACTIONS LOGGED        ; LOGON - Session StartTime     LOGOFF - Session End Time        ; IMG   - Image accessed        PAT    - Patient Accessed        ; CAP   - Image Captured        MOD    - Image entry modified        ;        ; ACTION is \^\ delimited string        ; $P(1) is code ( see above )   $P(2) is DFN        ; $P(3) is Image IEN | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACTION | LITERAL | 256 | true | LOGACT calls ACTION^MAGGTAU to log action.        ; ACTIONS LOGGED        ; LOGON - Session StartTime     LOGOFF - Session End Time        ; IMG   - Image accessed        PAT    - Patient Accessed        ; CAP   - Image Captured        MOD    - Image entry modified        ;        ; ACTION is \^\ delimited string        ; $P(1) is code ( see above )   $P(2) is DFN        ; $P(3) is Image IEN | 

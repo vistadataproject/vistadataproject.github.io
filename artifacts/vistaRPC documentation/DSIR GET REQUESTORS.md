@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PREF | LITERAL | 30 | true | PREF - FIRST PART OF THE REQUESTOR NAME(S) BEING SEARCHED FOR | 
-| vs:Input_Parameter-8994_02 | STYP | LITERAL | 1 | true | STYP - \L\ - USE THE \AC\ INDEX FOR LAST NAME         \C\ - USE THE \AD\ INDEX FOR CORPORATE NAME | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PREF | LITERAL | 30 | true | PREF - FIRST PART OF THE REQUESTOR NAME(S) BEING SEARCHED FOR | 
+| STYP | LITERAL | 1 | true | STYP - \L\ - USE THE \AC\ INDEX FOR LAST NAME         \C\ - USE THE \AD\ INDEX FOR CORPORATE NAME | 

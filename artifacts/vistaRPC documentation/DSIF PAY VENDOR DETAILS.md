@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FBDA | LITERAL | 23 | true | IEN of the Vendor in file Fee Basis Vendor File | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FBDA | LITERAL | 23 | true | IEN of the Vendor in file Fee Basis Vendor File | 

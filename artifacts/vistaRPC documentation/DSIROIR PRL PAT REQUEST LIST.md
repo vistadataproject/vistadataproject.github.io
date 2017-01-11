@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | STDT | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
-| vs:Input_Parameter-8994_02 | ENDT | LITERAL | 7 | true | The last date to searc for a request IEN for the selected patient. | 
-| vs:Input_Parameter-8994_02 | PAT | LITERAL | 99 | true | DFN of the selected patient. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| STDT | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
+| ENDT | LITERAL | 7 | true | The last date to searc for a request IEN for the selected patient. | 
+| PAT | LITERAL | 99 | true | DFN of the selected patient. | 

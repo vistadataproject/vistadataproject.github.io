@@ -17,6 +17,6 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | PATSLIST | LIST |  | true | If defined, contains a list of ROC numbers for the previous group of ROCsthat was migrated from VistA to the Oracle table.  | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| PATSLIST | LIST |  | true | If defined, contains a list of ROC numbers for the previous group of ROCsthat was migrated from VistA to the Oracle table.  | 

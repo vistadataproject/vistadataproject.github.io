@@ -17,14 +17,14 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ACQSITE | LITERAL |  | true | Acquisition Station Number | 
-| vs:Input_Parameter-8994_02 | SPECIALITY INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR SPECIALTY/SUBSPECIALTY file (#2005.84) | 
-| vs:Input_Parameter-8994_02 | PROCEDURE INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR PROCEDURE/EVENT file (2005.85) - this is a comma-delimited list | 
-| vs:Input_Parameter-8994_02 | TIMESTAMP | LITERAL |  | true | Fileman date/time to begin sequential search | 
-| vs:Input_Parameter-8994_02 | DUZ | LITERAL |  | true | User's DUZ at the Reading Site | 
-| vs:Input_Parameter-8994_02 | READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
-| vs:Input_Parameter-8994_02 | LOCKTIME | LITERAL |  | true | AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT. | 
-| vs:Input_Parameter-8994_02 | STATLIST | LITERAL |  |  | Status of entry to be retrieve (C, L, R, U, or W, in any combination) | 
-| vs:Input_Parameter-8994_02 | READER STATION | LITERAL |  |  | Reading Site's Station Number | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ACQSITE | LITERAL |  | true | Acquisition Station Number | 
+| SPECIALITY INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR SPECIALTY/SUBSPECIALTY file (#2005.84) | 
+| PROCEDURE INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR PROCEDURE/EVENT file (2005.85) - this is a comma-delimited list | 
+| TIMESTAMP | LITERAL |  | true | Fileman date/time to begin sequential search | 
+| DUZ | LITERAL |  | true | User's DUZ at the Reading Site | 
+| READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
+| LOCKTIME | LITERAL |  | true | AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT. | 
+| STATLIST | LITERAL |  |  | Status of entry to be retrieve (C, L, R, U, or W, in any combination) | 
+| READER STATION | LITERAL |  |  | Reading Site's Station Number | 

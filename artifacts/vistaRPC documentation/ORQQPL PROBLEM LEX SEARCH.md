@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | FLAG | LITERAL |  |  | BACK/FORE FLAG | 
-| vs:Input_Parameter-8994_02 | NUM | LITERAL |  |  | MAX NUMBER OF LIST ELEMENTS | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| FLAG | LITERAL |  |  | BACK/FORE FLAG | 
+| NUM | LITERAL |  |  | MAX NUMBER OF LIST ELEMENTS | 

@@ -17,8 +17,8 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | DSICVP | LITERAL | 30 | true | This is a Fileman Variable Pointer value to be used for looking up documents associated with it.  This parameter is optional.  However, if this parameter is not passed, then then REC parameter will be required. | 
-| vs:Input_Parameter-8994_02 | SEQ | LITERAL | 1 | true | This optional single character flag indicates the date order for the list of documents to return.  D - return list in descending order, i.e., newest note first  A - return list in ascending order, i.e., oldest note first | 
-| vs:Input_Parameter-8994_02 | REC | LITERAL | 20 | true | This parameter is optional.  However, if the DSICVP parameter is not passed, then this parameter must be passed.  This parameter allows the GUI to get a list of documents without having to pass the explicit Fileman Variable Pointer syntax.  The format of REC is code^ien. The following are the only allowed codes:  S - get documents associated with surgery case # from file 130 Example:  S^234 - get all TIU notes associated with surgical case# 234 | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| DSICVP | LITERAL | 30 | true | This is a Fileman Variable Pointer value to be used for looking up documents associated with it.  This parameter is optional.  However, if this parameter is not passed, then then REC parameter will be required. | 
+| SEQ | LITERAL | 1 | true | This optional single character flag indicates the date order for the list of documents to return.  D - return list in descending order, i.e., newest note first  A - return list in ascending order, i.e., oldest note first | 
+| REC | LITERAL | 20 | true | This parameter is optional.  However, if the DSICVP parameter is not passed, then this parameter must be passed.  This parameter allows the GUI to get a list of documents without having to pass the explicit Fileman Variable Pointer syntax.  The format of REC is code^ien. The following are the only allowed codes:  S - get documents associated with surgery case # from file 130 Example:  S^234 - get all TIU notes associated with surgical case# 234 | 

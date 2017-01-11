@@ -17,10 +17,10 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | ITEMID | LITERAL | 12 |  | This is the item ID used to uniquely identify a work item. | 
-| vs:Input_Parameter-8994_02 | EXPSTAT | LITERAL |  |  | This is the expected status of the work item.  If the work item doesnot have the expected status the work item elements will not bereturned and the work item status will not be updated. | 
-| vs:Input_Parameter-8994_02 | NEWSTAT | LITERAL |  |  | This is the new status to be filed in the work item. | 
-| vs:Input_Parameter-8994_02 | UPDUSR | LITERAL |  |  | This is the user that has updated the work item entry. | 
-| vs:Input_Parameter-8994_02 | UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item entry. | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| ITEMID | LITERAL | 12 |  | This is the item ID used to uniquely identify a work item. | 
+| EXPSTAT | LITERAL |  |  | This is the expected status of the work item.  If the work item doesnot have the expected status the work item elements will not bereturned and the work item status will not be updated. | 
+| NEWSTAT | LITERAL |  |  | This is the new status to be filed in the work item. | 
+| UPDUSR | LITERAL |  |  | This is the user that has updated the work item entry. | 
+| UPDAPP | LITERAL |  |  | This is the application/service that has updated the work item entry. | 

@@ -17,7 +17,7 @@ title: VISTA RPC documentation
 
 ### Input Parameters
 
-| type | input parameter | parameter type | maximum data length | required | description | 
-| --- | --- | --- | --- | --- | --- | 
-| vs:Input_Parameter-8994_02 | OLD BATCH | LITERAL | 35 | true | Old Batch IEN | 
-| vs:Input_Parameter-8994_02 | NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
+| input parameter | parameter type | maximum data length | required | description | 
+| --- | --- | --- | --- | --- | 
+| OLD BATCH | LITERAL | 35 | true | Old Batch IEN | 
+| NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
