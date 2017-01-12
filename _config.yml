@@ -4,7 +4,7 @@ permalink:           /blog/:title
 
 # Setup
 title:               VISTA Data Project 
-tagline:             Secure Read and Write for VA VISTA Data
+tagline:             Secure Read and Write Interface for VA VISTA
 url:                 http://vistadataproject.info
 paginate:            1
 baseurl:             ""
