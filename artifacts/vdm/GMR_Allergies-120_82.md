@@ -3,36 +3,6 @@ layout: default
 title: VDM documentation
 ---
 
-## [VDM](TableOfContent.md) &#8594; Drug_Ingredients-50_416 
-
- property | value 
---- | --- 
- id | Drug_Ingredients-50_416
- fmId | 50.416
- label | Drug Ingredients
- location | ^PS(50.416,
- description | 
-
-## [VDM](TableOfContent.md) &#8594; Drug-50 
-
- property | value 
---- | --- 
- id | Drug-50
- fmId | 50
- label | Drug
- location | ^PSDRUG(
- description | 
-
-## [VDM](TableOfContent.md) &#8594; VA_Generic-50_6 
-
- property | value 
---- | --- 
- id | VA_Generic-50_6
- fmId | 50.6
- label | VA Generic
- location | ^PSNDF(50.6,
- description | 
-
 ## [VDM](TableOfContent.md) &#8594; GMR_Allergies-120_82 
 
  property | value 
@@ -74,4 +44,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:21:34 am
+ Generated on January 12th 2017, 6:30:19 am

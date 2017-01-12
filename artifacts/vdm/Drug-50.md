@@ -3,7 +3,7 @@ layout: default
 title: VDM documentation
 ---
 
-## [VDM](TableOfContent.md) --> Drug-50 
+## [VDM](TableOfContent.md) &#8594; Drug-50 
 
  property | value 
 --- | --- 
@@ -13,7 +13,7 @@ title: VDM documentation
  location | ^PSDRUG(
  description | 
 
-### Properties
 
-| id | fmId | label | description | datatype | location | attributes | range | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
+
+
+ Generated on January 12th 2017, 6:30:19 am

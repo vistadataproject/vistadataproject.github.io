@@ -3,7 +3,7 @@ layout: default
 title: VDM documentation
 ---
 
-## [VDM](TableOfContent.md) --> Drug_Ingredients-50_416 
+## [VDM](TableOfContent.md) &#8594; Drug_Ingredients-50_416 
 
  property | value 
 --- | --- 
@@ -13,7 +13,7 @@ title: VDM documentation
  location | ^PS(50.416,
  description | 
 
-### Properties
 
-| id | fmId | label | description | datatype | location | attributes | range | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
+
+
+ Generated on January 12th 2017, 6:30:19 am
