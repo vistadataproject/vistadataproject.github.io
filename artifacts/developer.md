@@ -11,5 +11,5 @@ title: developer documentation
 
 3. [rpcL](rpcl/TableOfContent.md)
 
-4. [8994 RPC](vistaRPC documentation/TableOfContent.md)
+4. [VA RPC](vistaRPC documentation/TableOfContent.md)
 
