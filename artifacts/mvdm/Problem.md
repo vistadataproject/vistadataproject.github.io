@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> Problem 
+## [MVDM](TableOfContent.md) &#8594; Problem 
 
  property | value 
 --- | --- 
@@ -20,14 +20,14 @@ title: MVDM documentation
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
-| name | name | STRING | Mapper |  |  | CREATE, UPDATE | 
+| name | name | STRING |  |  |  | CREATE, UPDATE | 
 | uniqueId | Unique Identifier | NUMERIC | nmbr |  |  |  | 
 | diagnosis | Diagnosis | POINTER | diagnosis |  |  | REQUIRED, INDEXED, CREATE, UPDATE | 
-| icdd | icdd | STRING | Mapper |  |  | CREATE, UPDATE | 
-| patient | Patient | POINTER | Mapper | $PATIENTID |  | INDEXED | 
+| icdd | icdd | STRING |  |  |  | CREATE, UPDATE | 
+| patient | Patient | POINTER |  | $PATIENTID |  | INDEXED | 
 | lastModifiedDate | Date Last Modified | DATE-TIME | date_last_modified | $NOW |  | CREATE, UPDATE | 
 | providerNarrative | Provider Narrative | POINTER | provider_narrative |  |  | REQUIRED, CREATE, UPDATE | 
-| facility | Facility | POINTER | Mapper | $FACILITYID |  |  | 
+| facility | Facility | POINTER |  | $FACILITYID |  |  | 
 | enteredDate | Date Entered | DATE | date_entered | $NOW |  |  | 
 | problemStatus | Problem Status | ENUMERATION | status |  | {::nomarkdown}<dl><dt>ACTIVE</dt><dd>0</dd><dt>INACTIVE</dt><dd>1</dd></dl>{:/} | REQUIRED, CREATE, UPDATE | 
 | onsetDate | Date Of Onset | DATE | date_of_onset |  |  | CREATE, UPDATE | 
@@ -46,16 +46,16 @@ title: MVDM documentation
 | isMilitarySexualTrauma | Military Sexual Trauma | BOOLEAN | military_sexual_trauma |  |  | CREATE, UPDATE | 
 | isCombatVeteran | Combat Veteran | BOOLEAN | combat_veteran |  |  | CREATE, UPDATE | 
 | isShipboardHazardDefense | Shipboard Hazard & Defense | BOOLEAN | shipboard_hazard__defense |  |  | CREATE, UPDATE | 
-| comments | Comments | [OBJECT] | Mapper |  | [Comments](#comments)  | CREATE, UPDATE | 
-| snomedCTConceptValue | SNOMED CT Concept Value |  | Mapper |  |  |  | 
+| comments | Comments | [OBJECT] |  |  | [Comments](#comments)  | CREATE, UPDATE | 
+| snomedCTConceptValue | SNOMED CT Concept Value |  |  |  |  |  | 
 | snomedCTConceptCode | SNOMED CT Concept Code | STRING | snomed_ct_concept_code |  |  | INDEXED, CREATE, UPDATE | 
 | snomedCTDesignationCode | SNOMED CT Designation Code | STRING | snomed_ct_designation_code |  |  | CREATE, UPDATE | 
-| uniqueNewTermRequested | Unique New Term Requested | ENUMERATION | Mapper |  | {::nomarkdown}<dl><dt>false</dt><dd>0</dd><dt>true</dt><dd>1</dd></dl>{:/} | CREATE, UPDATE | 
+| uniqueNewTermRequested | Unique New Term Requested | ENUMERATION |  |  | {::nomarkdown}<dl><dt>false</dt><dd>0</dd><dt>true</dt><dd>1</dd></dl>{:/} | CREATE, UPDATE | 
 | uniqueTermRequestComment | Unique Term Request Comment | STRING | unique_term_request_comment |  |  | CREATE, UPDATE | 
 | interestDate | Date Of Interest | DATE | date_of_interest | $NOW |  | CREATE, UPDATE | 
 | codingSystem | Coding System | STRING | coding_system |  |  | CREATE, UPDATE | 
-| isRemoved | Removed | BOOLEAN | Mapper |  |  |  | 
-| audits | audits | [OBJECT] | Mapper |  | [Audits](#audits)  |  | 
+| isRemoved | Removed | BOOLEAN |  |  |  |  | 
+| audits | audits | [OBJECT] |  |  | [Audits](#audits)  |  | 
 
 ## Comments 
 
@@ -95,3 +95,8 @@ title: MVDM documentation
 | reason | Reason for change | STRING |  |  |  |  | 
 | requestingProvider | Requesting provider | POINTER |  |  |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING |  |  |  |  | 
+
+
+
+
+ Generated on January 12th 2017, 5:52:24 am
