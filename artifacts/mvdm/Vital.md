@@ -34,7 +34,7 @@ title: MVDM documentation
 | metricValue | metricValue | STRING |  |  |  |  | 
 | supplementalO2 | Supplemental O2 | STRING | supplemental_o2 |  |  |  | 
 | qualifier | Qualifier | [POINTER] | qualifier |  |  |  | 
-| isRemoved | Removed | BOOLEAN | entered_in_error |  |  |  | 
+| isRemoved | Removed | BOOLEAN | entered_in_error |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
 | facility |  | POINTER |  |  |  |  | 
 
@@ -56,4 +56,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:52:24 am
+ Generated on January 12th 2017, 5:58:29 am

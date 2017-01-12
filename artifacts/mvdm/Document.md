@@ -36,9 +36,9 @@ title: MVDM documentation
 | referenceDate | Reference Date | DATE-TIME | reference_date | $NOW |  |  | 
 | releaseDateTime | Release Date/Time | DATE-TIME | release_date_time | $NOW |  |  | 
 | expectedSigner | Expected Signer | POINTER | expected_signer | $USERID | {id:New_Person-200} |  | 
-| isSigned |  | BOOLEAN |  |  |  |  | 
+| isSigned |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | signingDetails |  | OBJECT |  |  | [SigningDetails](#signingdetails)  |  | 
-| isRemoved |  | BOOLEAN |  |  |  |  | 
+| isRemoved |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
 
 ## SigningDetails 
@@ -76,4 +76,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:52:24 am
+ Generated on January 12th 2017, 5:58:29 am

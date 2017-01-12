@@ -30,7 +30,7 @@ title: MVDM documentation
 | religiousPreference |  | POINTER | religious_preference |  | {id:Religion-13} |  | 
 | duplicateStatus |  | ENUMERATION | duplicate_status |  | {::nomarkdown}<dl><dt>1</dt><dd>CHECK DUPLICATE RECORDS FILE</dd><dt>0</dt><dd>NO UNRESOLVED DUPLICATES</dd></dl>{:/} |  | 
 | patientMergedTo |  | POINTER | patient_merged_to |  | {id:Patient-2} |  | 
-| isCheckForDuplicate |  | BOOLEAN | check_for_duplicate |  | {true:1} |  | 
+| isCheckForDuplicate |  | BOOLEAN | check_for_duplicate |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | socialSecurityNumber |  | STRING | social_security_number |  |  |  | 
 | pseudoSsnReason |  | ENUMERATION | pseudo_ssn_reason |  | {::nomarkdown}<dl><dt>N</dt><dd>NO SSN ASSIGNED</dd><dt>S</dt><dd>SSN UNKNOWN/FOLLOW-UP REQUIRED</dd><dt>R</dt><dd>REFUSED TO PROVIDE</dd></dl>{:/} |  | 
 | ssnVerificationStatus |  | ENUMERATION | ssn_verification_status |  | {::nomarkdown}<dl><dt>4</dt><dd>VERIFIED</dd><dt>2</dt><dd>INVALID</dd></dl>{:/} |  | 
@@ -50,7 +50,7 @@ title: MVDM documentation
 | lastDmmsEpisodeNumber |  | NUMERIC | last_dmms_episode_number |  |  |  | 
 | lodgerWardLocation |  | STRING | lodger_ward_location |  |  |  | 
 | currentRoom |  | POINTER | current_room |  | {id:RoomBed-405_4} |  | 
-| excludeFromFacilityDir |  | BOOLEAN | exclude_from_facility_dir |  | {false:0,true:1} |  | 
+| excludeFromFacilityDir |  | BOOLEAN | exclude_from_facility_dir |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | streetAddressLine1 |  | STRING | street_address_line_1 |  |  |  | 
 | zip4 |  | STRING | zip4 |  |  |  | 
 | streetAddressLine2 |  | STRING | street_address_line_2 |  |  |  | 
@@ -66,7 +66,7 @@ title: MVDM documentation
 | addressChangeSource |  | ENUMERATION | address_change_source |  | {::nomarkdown}<dl><dt>USPS</dt><dd>USPS</dd><dt>VOA</dt><dd>VOA</dd><dt>VAMC</dt><dd>VAMC</dd><dt>HBSC</dt><dd>HBSC</dd><dt>BVA</dt><dd>BVA</dd><dt>LACS</dt><dd>LACS</dd><dt>HEC</dt><dd>HEC</dd><dt>NCOA</dt><dd>NCOA</dd><dt>VAINS</dt><dd>VAINS</dd></dl>{:/} |  | 
 | addressChangeSite |  | POINTER | address_change_site |  | {id:Institution-4} |  | 
 | badAddressIndicator |  | ENUMERATION | bad_address_indicator |  | {::nomarkdown}<dl><dt>4</dt><dd>ADDRESS NOT FOUND</dd><dt>3</dt><dd>OTHER</dd><dt>1</dt><dd>UNDELIVERABLE</dd><dt>2</dt><dd>HOMELESS</dd></dl>{:/} |  | 
-| temporaryAddressActive |  | BOOLEAN | temporary_address_active |  | {false:N,true:Y} |  | 
+| temporaryAddressActive |  | BOOLEAN | temporary_address_active |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | temporaryStreetLine1 |  | STRING | temporary_street_line_1 |  |  |  | 
 | temporaryAddressCounty |  | NUMERIC | temporary_address_county |  |  |  | 
 | temporaryZip4 |  | STRING | temporary_zip4 |  |  |  | 
@@ -104,7 +104,7 @@ title: MVDM documentation
 | cellularNumberChangeDtTm |  | DATE-TIME | cellular_number_change_dt_tm |  |  |  | 
 | currentMeansTestStatus |  | POINTER | current_means_test_status |  | {id:Means_Test_Status-408_32} |  | 
 | confidentialAddressCategory |  | [OBJECT] | confidential_address_category |  | [Confidential_Address_Category-2_141](#confidential_address_category-2_141)  |  | 
-| confidentialAddressActive |  | BOOLEAN | confidential_address_active |  | {false:N,true:Y} |  | 
+| confidentialAddressActive |  | BOOLEAN | confidential_address_active |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | confidentialStreetLine1 |  | STRING | confidential_street_line_1 |  |  |  | 
 | confidentialAddressCounty |  | NUMERIC | confidential_address_county |  |  |  | 
 | confidentialAddrChangeDtTm |  | DATE-TIME | confidential_addr_change_dt_tm |  |  |  | 
@@ -137,7 +137,7 @@ title: MVDM documentation
 | k2workPhoneNumber |  | STRING | k2work_phone_number |  |  |  | 
 | secondaryNokChangeDateTime |  | DATE-TIME | secondary_nok_change_date_time |  |  |  | 
 | krelationshipToPatient |  | STRING | krelationship_to_patient |  |  |  | 
-| kaddressSameAsPatients |  | BOOLEAN | kaddress_same_as_patients |  | {false:N,true:Y} |  | 
+| kaddressSameAsPatients |  | BOOLEAN | kaddress_same_as_patients |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | kstreetAddressLine1 |  | STRING | kstreet_address_line_1 |  |  |  | 
 | kstreetAddressLine2 |  | STRING | kstreet_address_line_2 |  |  |  | 
 | kstreetAddressLine3 |  | STRING | kstreet_address_line_3 |  |  |  | 
@@ -147,7 +147,7 @@ title: MVDM documentation
 | kphoneNumber |  | STRING | kphone_number |  |  |  | 
 | k2nameOfSecondaryNok |  | STRING | k2name_of_secondary_nok |  |  |  | 
 | k2relationshipToPatient |  | STRING | k2relationship_to_patient |  |  |  | 
-| k2addressSameAsPatients |  | BOOLEAN | k2address_same_as_patients |  | {false:N,true:Y} |  | 
+| k2addressSameAsPatients |  | BOOLEAN | k2address_same_as_patients |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | k2streetAddressLine1 |  | STRING | k2street_address_line_1 |  |  |  | 
 | k2streetAddressLine2 |  | STRING | k2street_address_line_2 |  |  |  | 
 | k2streetAddressLine3 |  | STRING | k2street_address_line_3 |  |  |  | 
@@ -198,16 +198,16 @@ title: MVDM documentation
 | stateCivil |  | POINTER | state_civil |  | {id:State-5} |  | 
 | zipCivil |  | STRING | zip_civil |  |  |  | 
 | phoneCivil |  | STRING | phone_civil |  |  |  | 
-| ratedIncompetent |  | BOOLEAN | rated_incompetent |  | {false:0,true:1} |  | 
-| isServiceConnected |  | BOOLEAN | service_connected |  | {false:N,true:Y} |  | 
+| ratedIncompetent |  | BOOLEAN | rated_incompetent |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| isServiceConnected |  | BOOLEAN | service_connected |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | scAwardDate |  | DATE-TIME | sc_award_date |  |  |  | 
 | ptEffectiveDate |  | DATE-TIME | pt_effective_date |  |  |  | 
 | effDateCombinedScEval |  | DATE-TIME | eff_date_combined_sc_eval |  |  |  | 
 | serviceConnectedPercentage |  | NUMERIC | service_connected_percentage |  |  |  | 
 | receivingVaDisability |  | ENUMERATION | receiving_va_disability |  | {::nomarkdown}<dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl>{:/} |  | 
 | amountOfVaDisability |  | NUMERIC | amount_of_va_disability |  |  |  | 
-| pt |  | BOOLEAN | pt |  | {false:N,true:Y} |  | 
-| unemployable |  | BOOLEAN | unemployable |  | {false:N,true:Y} |  | 
+| pt |  | BOOLEAN | pt |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
+| unemployable |  | BOOLEAN | unemployable |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | monetaryBenVerifyDate |  | DATE-TIME | monetary_ben_verify_date |  |  |  | 
 | ineligibleReason |  | STRING | ineligible_reason |  |  |  | 
 | agencyAlliedCountry |  | POINTER | agency_allied_country |  | {id:Other_Federal_Agency-35} |  | 
@@ -215,7 +215,7 @@ title: MVDM documentation
 | employerName |  | STRING | employer_name |  |  |  | 
 | employmentStatus |  | ENUMERATION | employment_status |  | {::nomarkdown}<dl><dt>2</dt><dd>EMPLOYED PART TIME</dd><dt>4</dt><dd>SELF EMPLOYED</dd><dt>5</dt><dd>RETIRED</dd><dt>9</dt><dd>UNKNOWN</dd><dt>3</dt><dd>NOT EMPLOYED</dd><dt>1</dt><dd>EMPLOYED FULL TIME</dd><dt>6</dt><dd>ACTIVE MILITARY DUTY</dd></dl>{:/} |  | 
 | dateOfRetirement |  | DATE-TIME | date_of_retirement |  |  |  | 
-| governmentAgency |  | BOOLEAN | government_agency |  | {false:N,true:Y} |  | 
+| governmentAgency |  | BOOLEAN | government_agency |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | employerStreetLine1 |  | STRING | employer_street_line_1 |  |  |  | 
 | employerStreetLine2 |  | STRING | employer_street_line_2 |  |  |  | 
 | employerStreetLine3 |  | STRING | employer_street_line_3 |  |  |  | 
@@ -238,7 +238,7 @@ title: MVDM documentation
 | agentOrangeExamDate |  | DATE-TIME | agent_orange_exam_date |  |  |  | 
 | agentOrangeRegistrationNumber |  | NUMERIC | agent_orange_registration_number |  |  |  | 
 | radiationRegistrationDate |  | DATE-TIME | radiation_registration_date |  |  |  | 
-| proj112Shad |  | BOOLEAN | proj_112_shad |  | {false:0,true:1} |  | 
+| proj112Shad |  | BOOLEAN | proj_112_shad |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | radiationExposureMethod |  | ENUMERATION | radiation_exposure_method |  | {::nomarkdown}<dl><dt>4</dt><dd>H/N AND ATMOSPHERIC TESTING</dd><dt>7</dt><dd>OTHER</dd><dt>2</dt><dd>HIROSHIMA/NAGASAKI</dd><dt>6</dt><dd>EXPOSURE AT NUCLEAR FACILITY</dd><dt>5</dt><dd>UNDERGROUND NUCLEAR TESTING</dd><dt>3</dt><dd>ATMOSPHERIC NUCLEAR TESTING</dd></dl>{:/} |  | 
 | agentOrangeExposureLocation |  | ENUMERATION | agent_orange_exposure_location |  | {::nomarkdown}<dl><dt>V</dt><dd>VIETNAM</dd><dt>O</dt><dd>OTHER</dd><dt>K</dt><dd>KOREAN DMZ</dd></dl>{:/} |  | 
 | filipinoVeteranProof |  | ENUMERATION | filipino_veteran_proof |  | {::nomarkdown}<dl><dt>NO</dt><dd>NO PROOF</dd><dt>BA</dt><dd>REPORT OF BIRTH ABROAD OF US CITIZEN</dd><dt>BC</dt><dd>US BIRTH CERTIFICATE</dd><dt>PR</dt><dd>VERIFICATION OF PERMANENT RESIDENCY</dd><dt>VA</dt><dd>VA COMPENSATION AT FULL DOLLAR RATE</dd><dt>PP</dt><dd>US PASSPORT</dd><dt>NA</dt><dd>VERIFICATION OF NATURALIZATION</dd></dl>{:/} |  | 
@@ -272,7 +272,7 @@ title: MVDM documentation
 | serviceEntryDateLast |  | DATE-TIME | service_entry_date_last |  |  |  | 
 | serviceSeparationDateLast |  | DATE-TIME | service_separation_date_last |  |  |  | 
 | serviceNumberLast |  | STRING | service_number_last |  |  |  | 
-| serviceSecondEpisode |  | BOOLEAN | service_second_episode |  | {false:N,true:Y} |  | 
+| serviceSecondEpisode |  | BOOLEAN | service_second_episode |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | serviceDischargeTypeNtl |  | POINTER | service_discharge_type_ntl |  | {id:Type_Of_Discharge-25} |  | 
 | serviceBranchNtl |  | POINTER | service_branch_ntl |  | {id:Branch_Of_Service-23} |  | 
 | serviceComponentLast |  | ENUMERATION | service_component_last |  | {::nomarkdown}<dl><dt>V</dt><dd>ACTIVATED RESERVE</dd><dt>G</dt><dd>ACTIVATED NG</dd><dt>R</dt><dd>REGULAR</dd></dl>{:/} |  | 
@@ -281,7 +281,7 @@ title: MVDM documentation
 | serviceEntryDateNtl |  | DATE-TIME | service_entry_date_ntl |  |  |  | 
 | serviceSeparationDateNtl |  | DATE-TIME | service_separation_date_ntl |  |  |  | 
 | serviceNumberNtl |  | STRING | service_number_ntl |  |  |  | 
-| serviceThirdEpisode |  | BOOLEAN | service_third_episode |  | {false:N,true:Y} |  | 
+| serviceThirdEpisode |  | BOOLEAN | service_third_episode |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | serviceDischargeTypeNntl |  | POINTER | service_discharge_type_nntl |  | {id:Type_Of_Discharge-25} |  | 
 | serviceBranchNntl |  | POINTER | service_branch_nntl |  | {id:Branch_Of_Service-23} |  | 
 | serviceEntryDateNntl |  | DATE-TIME | service_entry_date_nntl |  |  |  | 
@@ -289,7 +289,7 @@ title: MVDM documentation
 | serviceNumberNntl |  | STRING | service_number_nntl |  |  |  | 
 | eworkPhoneNumber |  | STRING | ework_phone_number |  |  |  | 
 | econtactChangeDateTime |  | DATE-TIME | econtact_change_date_time |  |  |  | 
-| eemerContactSameAsNok |  | BOOLEAN | eemer_contact_same_as_nok |  | {false:N,true:Y} |  | 
+| eemerContactSameAsNok |  | BOOLEAN | eemer_contact_same_as_nok |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | ename |  | STRING | ename |  |  |  | 
 | e2workPhoneNumber |  | STRING | e2work_phone_number |  |  |  | 
 | e2nameOfSecondaryContact |  | STRING | e2name_of_secondary_contact |  |  |  | 
@@ -311,7 +311,7 @@ title: MVDM documentation
 | ezipCode |  | STRING | ezip_code |  |  |  | 
 | ephoneNumber |  | STRING | ephone_number |  |  |  | 
 | dworkPhoneNumber |  | STRING | dwork_phone_number |  |  |  | 
-| ddesigneeSameAsNok |  | BOOLEAN | ddesignee_same_as_nok |  | {false:N,true:Y} |  | 
+| ddesigneeSameAsNok |  | BOOLEAN | ddesignee_same_as_nok |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | dnameOfDesignee |  | STRING | dname_of_designee |  |  |  | 
 | designeeChangeDateTime |  | DATE-TIME | designee_change_date_time |  |  |  | 
 | drelationshipToPatient |  | STRING | drelationship_to_patient |  |  |  | 
@@ -328,8 +328,8 @@ title: MVDM documentation
 | dateOfDeathLastUpdated |  | DATE-TIME | date_of_death_last_updated |  |  |  | 
 | lastEditedBy |  | POINTER | last_edited_by |  | {id:New_Person-200} |  | 
 | collateralSponsorsName |  | POINTER | collateral_sponsors_name |  | {id:Patient-2} |  | 
-| militaryDisabilityRetirement |  | BOOLEAN | military_disability_retirement |  | {false:0,true:1} |  | 
-| dischargeDueToDisability |  | BOOLEAN | discharge_due_to_disability |  | {false:0,true:1} |  | 
+| militaryDisabilityRetirement |  | BOOLEAN | military_disability_retirement |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| dischargeDueToDisability |  | BOOLEAN | discharge_due_to_disability |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | primaryEligibilityCode |  | POINTER | primary_eligibility_code |  | {id:Eligibility_Code-8} |  | 
 | eligibilityStatus |  | ENUMERATION | eligibility_status |  | {::nomarkdown}<dl><dt>P</dt><dd>PENDING VERIFICATION</dd><dt>R</dt><dd>PENDING RE-VERIFICATION</dd><dt>V</dt><dd>VERIFIED</dd></dl>{:/} |  | 
 | eligibilityStatusDate |  | DATE-TIME | eligibility_status_date |  |  |  | 
@@ -360,12 +360,12 @@ title: MVDM documentation
 | totalAnnualVaCheckAmount |  | NUMERIC | total_annual_va_check_amount |  |  |  | 
 | primaryLongId |  | STRING | primary_long_id |  |  |  | 
 | primaryShortId |  | STRING | primary_short_id |  |  |  | 
-| serviceDentalInjury |  | BOOLEAN | service_dental_injury |  | {false:N,true:Y} |  | 
-| serviceTeethExtracted |  | BOOLEAN | service_teeth_extracted |  | {false:N,true:Y} |  | 
+| serviceDentalInjury |  | BOOLEAN | service_dental_injury |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
+| serviceTeethExtracted |  | BOOLEAN | service_teeth_extracted |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | dateOfDentalTreatment |  | [OBJECT] | date_of_dental_treatment |  | [Date_Of_Dental_Treatment-2_11](#date_of_dental_treatment-2_11)  |  | 
 | ratedDisabilitiesVa |  | [OBJECT] | rated_disabilities_va |  | [Rated_Disabilities_Va-2_04](#rated_disabilities_va-2_04)  |  | 
 | serviceConnectedConditions |  | [OBJECT] | service_connected_conditions |  | [Service_Connected_Conditions-2_05](#service_connected_conditions-2_05)  |  | 
-| eligibleForMedicaid |  | BOOLEAN | eligible_for_medicaid |  | {false:0,true:1} |  | 
+| eligibleForMedicaid |  | BOOLEAN | eligible_for_medicaid |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | dateMedicaidLastAsked |  | DATE-TIME | date_medicaid_last_asked |  |  |  | 
 | medicaidNumber |  | STRING | medicaid_number |  |  |  | 
 | pensionAwardEffectiveDate |  | DATE-TIME | pension_award_effective_date |  |  |  | 
@@ -375,11 +375,11 @@ title: MVDM documentation
 | pensionTerminatedReason2 |  | POINTER | pension_terminated_reason_2 |  | {id:Pension_Award_Reasons-27_18} |  | 
 | pensionTerminatedReason3 |  | POINTER | pension_terminated_reason_3 |  | {id:Pension_Award_Reasons-27_18} |  | 
 | pensionTerminatedReason4 |  | POINTER | pension_terminated_reason_4 |  | {id:Pension_Award_Reasons-27_18} |  | 
-| classIiDentalIndicator |  | BOOLEAN | class_ii_dental_indicator |  | {false:N,true:Y} |  | 
+| classIiDentalIndicator |  | BOOLEAN | class_ii_dental_indicator |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | dentalApplDueBeforeDate |  | DATE-TIME | dental_appl_due_before_date |  |  |  | 
-| pensionIndicatorLock |  | BOOLEAN | pension_indicator_lock |  | {false:N,true:Y} |  | 
-| pensionAwardLock |  | BOOLEAN | pension_award_lock |  | {false:N,true:Y} |  | 
-| veteranCatastrophicallyDisabled |  | BOOLEAN | veteran_catastrophically_disabled |  | {false:N,true:Y} |  | 
+| pensionIndicatorLock |  | BOOLEAN | pension_indicator_lock |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
+| pensionAwardLock |  | BOOLEAN | pension_award_lock |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
+| veteranCatastrophicallyDisabled |  | BOOLEAN | veteran_catastrophically_disabled |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | decidedBy |  | STRING | decided_by |  |  |  | 
 | dateOfDecision |  | DATE-TIME | date_of_decision |  |  |  | 
 | facilityMakingDetermination |  | POINTER | facility_making_determination |  | {id:Institution-4} |  | 
@@ -398,18 +398,18 @@ title: MVDM documentation
 | powFromDate |  | DATE-TIME | pow_from_date |  |  |  | 
 | powToDate |  | DATE-TIME | pow_to_date |  |  |  | 
 | powStatusVerified |  | DATE-TIME | pow_status_verified |  |  |  | 
-| combatServiceIndicated |  | BOOLEAN | combat_service_indicated |  | {false:N,true:Y} |  | 
+| combatServiceIndicated |  | BOOLEAN | combat_service_indicated |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | combatServiceLocation |  | POINTER | combat_service_location |  | {id:Pow_Period-22} |  | 
 | combatFromDate |  | DATE-TIME | combat_from_date |  |  |  | 
 | combatToDate |  | DATE-TIME | combat_to_date |  |  |  | 
 | combatVeteranEndDate |  | DATE-TIME | combat_veteran_end_date |  |  |  | 
 | cvDateEdited |  | DATE-TIME | cv_date_edited |  |  |  | 
-| currentPhIndicator |  | BOOLEAN | current_ph_indicator |  | {false:N,true:Y} |  | 
+| currentPhIndicator |  | BOOLEAN | current_ph_indicator |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | currentPurpleHeartStatus |  | ENUMERATION | current_purple_heart_status |  | {::nomarkdown}<dl><dt>3</dt><dd>CONFIRMED</dd><dt>2</dt><dd>IN PROCESS</dd><dt>1</dt><dd>PENDING</dd></dl>{:/} |  | 
 | currentPurpleHeartRemarks |  | ENUMERATION | current_purple_heart_remarks |  | {::nomarkdown}<dl><dt>6</dt><dd>UNDELIVERABLE MAIL</dd><dt>5</dt><dd>VAMC</dd><dt>3</dt><dd>ENTERED IN ERROR</dd><dt>1</dt><dd>UNACCEPTABLE DOCUMENTATION</dd><dt>2</dt><dd>NO DOCUMENTATION REC'D</dd><dt>4</dt><dd>UNSUPPORTED PURPLE HEART</dd></dl>{:/} |  | 
 | phDivision |  | POINTER | ph_division |  | {id:Institution-4} |  | 
-| currentMohIndicator |  | BOOLEAN | current_moh_indicator |  | {false:N,true:Y} |  | 
-| isTestPatient |  | BOOLEAN | test_patient_indicator |  | {false:0,true:1} |  | 
+| currentMohIndicator |  | BOOLEAN | current_moh_indicator |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
+| isTestPatient |  | BOOLEAN | test_patient_indicator |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | alias |  | [OBJECT] | alias |  | [Alias-2_01](#alias-2_01)  |  | 
 | knameComponents |  | POINTER | kname_components |  | {id:Name_Components-20} |  | 
 | k2nameComponents |  | POINTER | k2name_components |  | {id:Name_Components-20} |  | 
@@ -425,13 +425,13 @@ title: MVDM documentation
 | currentEnrollment |  | POINTER | current_enrollment |  | {id:Patient_Enrollment-27_11} |  | 
 | preferredFacility |  | POINTER | preferred_facility |  | {id:Institution-4} |  | 
 | sourceDesignation |  | ENUMERATION | source_designation |  | {::nomarkdown}<dl><dt>PI</dt><dd>PCP INACTIVE</dd><dt>V</dt><dd>VISTA</dd><dt>PA</dt><dd>PCP ACTIVE</dd><dt>E</dt><dd>ESR</dd></dl>{:/} |  | 
-| reactions |  | BOOLEAN | reactions |  | {false:N,true:Y} |  | 
+| reactions |  | BOOLEAN | reactions |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | heightcm |  | NUMERIC | heightcm |  |  |  | 
 | weightkg |  | NUMERIC | weightkg |  |  |  | 
 | spinalCordInjury |  | ENUMERATION | spinal_cord_injury |  | {::nomarkdown}<dl><dt>4</dt><dd>QUADRIPLEGIA-NONTRAUMATIC</dd><dt>2</dt><dd>QUADRIPLEGIA-TRAUMATIC</dd><dt>X</dt><dd>NOT APPLICABLE</dd><dt>1</dt><dd>PARAPLEGIA-TRAUMATIC</dd><dt>3</dt><dd>PARAPLEGIA-NONTRAUMATIC</dd></dl>{:/} |  | 
 | laboratoryReference |  | POINTER | laboratory_reference |  | {id:Lab_Data-63} |  | 
 | labReferralRef |  | POINTER | lab_referral_ref |  | {id:Referral_Patient-67} |  | 
-| cnhCurrent |  | BOOLEAN | cnh_current |  | {false:N,true:Y} |  | 
+| cnhCurrent |  | BOOLEAN | cnh_current |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | dentalClassification |  | POINTER | dental_classification |  | {id:Dental_Classification-220_2} |  | 
 | dentalEligibilityExpiration |  | DATE-TIME | dental_eligibility_expiration |  |  |  | 
 | patientEligibilities |  | [OBJECT] | patient_eligibilities |  | [Patient_Eligibilities-2_0361](#patient_eligibilities-2_0361)  |  | 
@@ -444,7 +444,7 @@ title: MVDM documentation
 | integrationControlNumber |  | NUMERIC | integration_control_number |  |  |  | 
 | icnChecksum |  | STRING | icn_checksum |  |  |  | 
 | coordinatingMasterOfRecord |  | POINTER | coordinating_master_of_record |  | {id:Institution-4} |  | 
-| locallyAssignedIcn |  | BOOLEAN | locally_assigned_icn |  | {true:1} |  | 
+| locallyAssignedIcn |  | BOOLEAN | locally_assigned_icn |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | subscriptionControlNumber |  | POINTER | subscription_control_number |  | {id:Subscription_Control-774} |  | 
 | cmorActivityScore |  | NUMERIC | cmor_activity_score |  |  |  | 
 | scoreCalculationDate |  | DATE-TIME | score_calculation_date |  |  |  | 
@@ -456,30 +456,30 @@ title: MVDM documentation
 | cmorHistory |  | [OBJECT] | cmor_history |  | [Cmor_History-2_0993](#cmor_history-2_0993)  |  | 
 | multipleBirthIndicator |  | ENUMERATION | multiple_birth_indicator |  | {::nomarkdown}<dl><dt>Y</dt><dd>*MULTIPLE BIRTH*</dd><dt>N</dt><dd>NO</dd></dl>{:/} |  | 
 | dispositionLoginDateTime |  | [OBJECT] | disposition_login_date_time |  | [Disposition_LogIn_Date_Time-2_101](#disposition_login_date_time-2_101)  |  | 
-| receivedVaCarePreviously |  | BOOLEAN | received_va_care_previously |  | {false:N,true:Y} |  | 
+| receivedVaCarePreviously |  | BOOLEAN | received_va_care_previously |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | mostRecentDateOfCare |  | DATE-TIME | most_recent_date_of_care |  |  |  | 
 | appointmentRequestDate |  | DATE-TIME | appointment_request_date |  |  |  | 
 | mostRecentLocationOfCare |  | POINTER | most_recent_location_of_care |  | {id:Institution-4} |  | 
 | 2ndMostRecentDateOfCare |  | DATE-TIME | _2nd_most_recent_date_of_care |  |  |  | 
 | 2ndMostRecentLocation |  | POINTER | _2nd_most_recent_location |  | {id:Institution-4} |  | 
 | mostRecent1010ez |  | POINTER | most_recent_1010ez |  | {id:_1010Ez_Holding-712} |  | 
-| combatIndicatedOn1010ez |  | BOOLEAN | combat_indicated_on_1010ez |  | {false:0,true:1} |  | 
-| disabilityDischargeOn1010ez |  | BOOLEAN | disability_discharge_on_1010ez |  | {false:0,true:1} |  | 
-| appointmentRequestOn1010ez |  | BOOLEAN | appointment_request_on_1010ez |  | {false:0,true:1} |  | 
+| combatIndicatedOn1010ez |  | BOOLEAN | combat_indicated_on_1010ez |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| disabilityDischargeOn1010ez |  | BOOLEAN | disability_discharge_on_1010ez |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| appointmentRequestOn1010ez |  | BOOLEAN | appointment_request_on_1010ez |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | appointmentRequestStatus |  | ENUMERATION | appointment_request_status |  | {::nomarkdown}<dl><dt>C</dt><dd>CANCELLED</dd><dt>I</dt><dd>IN PROCESS/VETERAN CONTACTED</dd><dt>F</dt><dd>FILLED</dd><dt>E</dt><dd>EWL</dd></dl>{:/} |  | 
 | dateStatusLastEdited |  | DATE-TIME | date_status_last_edited |  |  |  | 
 | appointmentRequestComment |  | STRING | appointment_request_comment |  |  |  | 
 | dateCommentLastEdited |  | DATE-TIME | date_comment_last_edited |  |  |  | 
-| fugitiveFelonFlag |  | BOOLEAN | fugitive_felon_flag |  | {true:1} |  | 
+| fugitiveFelonFlag |  | BOOLEAN | fugitive_felon_flag |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | fffEnteredBy |  | POINTER | fff_entered_by |  | {id:New_Person-200} |  | 
 | fffDateEntered |  | DATE-TIME | fff_date_entered |  |  |  | 
 | fffRemovedBy |  | POINTER | fff_removed_by |  | {id:New_Person-200} |  | 
 | fffDateRemoved |  | DATE-TIME | fff_date_removed |  |  |  | 
 | fffRemovalRemarks |  | STRING | fff_removal_remarks |  |  |  | 
 | appointment |  | [OBJECT] | appointment |  | [Appointment-2_98](#appointment-2_98)  |  | 
-| isVeteran |  | BOOLEAN | veteran_y_n |  | {false:N,true:Y} |  | 
+| isVeteran |  | BOOLEAN | veteran_y_n |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | archivedData |  | [OBJECT] | archived_data |  | [Archived_Data-2_12](#archived_data-2_12)  |  | 
-| vtsPatientFlag |  | BOOLEAN | vts_patient_flag |  | {false:0,true:1} |  | 
+| vtsPatientFlag |  | BOOLEAN | vts_patient_flag |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | initialOdsTreatmentReceived |  | DATE-TIME | initial_ods_treatment_received |  |  |  | 
 | recalledToActiveDuty |  | ENUMERATION | recalled_to_active_duty |  | {::nomarkdown}<dl><dt>1</dt><dd>NATIONAL GUARD</dd><dt>2</dt><dd>RESERVES</dd><dt>0</dt><dd>NO</dd></dl>{:/} |  | 
 | patientRank |  |  | rank-2 |  |  |  | 
@@ -497,7 +497,7 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | confidential_address_category | Confidential Address Category | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>ELIGIBILITY/ENROLLMENT</dd><dt>4</dt><dd>MEDICAL RECORDS</dd><dt>2</dt><dd>APPOINTMENT/SCHEDULING</dd><dt>3</dt><dd>COPAYMENTS/VETERAN BILLING</dd><dt>5</dt><dd>ALL OTHERS</dd></dl>{:/} | REQUIRED, INDEXED | 
-| confidential_category_active | Confidential Category Active | BOOLEAN |  |  | {false:N,true:Y} |  | 
+| confidential_category_active | Confidential Category Active | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 
 ## Insurance_Type-2_312 
 
@@ -524,7 +524,7 @@ title: MVDM documentation
 | source_of_information | Source Of Information | POINTER |  |  | {id:Source_Of_Information-355_12} |  | 
 | date_of_source_of_information | Date Of Source Of Information | DATE-TIME |  |  |  |  | 
 | group_number | *Group Number | STRING |  |  |  |  | 
-| send_bill_to_employer | Send Bill To Employer | BOOLEAN |  |  | {false:0,true:1} |  | 
+| send_bill_to_employer | Send Bill To Employer | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | subscribers_employer_name | Subscriber'S Employer Name | STRING |  |  |  |  | 
 | employer_claims_street_address | Employer Claims Street Address | STRING |  |  |  |  | 
 | employ_claim_st_address_line_2 | Employ Claim St Address Line 2 | STRING |  |  |  |  | 
@@ -533,14 +533,14 @@ title: MVDM documentation
 | employer_claims_state | Employer Claims State | POINTER |  |  | {id:State-5} |  | 
 | employer_claims_zip_code | Employer Claims Zip Code | STRING |  |  |  |  | 
 | employer_claims_phone | Employer Claims Phone | STRING |  |  |  |  | 
-| esghp | Esghp | BOOLEAN |  |  | {false:0,true:1} |  | 
+| esghp | Esghp | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | employment_status | Employment Status | ENUMERATION |  |  | {::nomarkdown}<dl><dt>4</dt><dd>SELF EMPLOYED</dd><dt>2</dt><dd>PART TIME</dd><dt>5</dt><dd>RETIRED</dd><dt>9</dt><dd>UNKNOWN</dd><dt>3</dt><dd>NOT EMPLOYED</dd><dt>1</dt><dd>FULL TIME</dd><dt>6</dt><dd>ACTIVE MILITARY</dd></dl>{:/} |  | 
 | retirement_date | Retirement Date | DATE-TIME |  |  |  |  | 
 | insurance_expiration_date | Insurance Expiration Date | DATE-TIME |  |  |  |  | 
 | insureds_dob | Insured'S Dob | DATE-TIME |  |  |  |  | 
 | insureds_branch | Insured'S Branch | POINTER |  |  | {id:Branch_Of_Service-23} |  | 
 | insureds_rank | Insured'S Rank | STRING |  |  |  |  | 
-| policy_not_billable | Policy Not Billable | BOOLEAN |  |  | {false:0,true:1} |  | 
+| policy_not_billable | Policy Not Billable | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | insureds_ssn | Insured'S Ssn | STRING |  |  |  |  | 
 | insureds_street_1 | Insured'S Street 1 | STRING |  |  |  |  | 
 | insureds_street_2 | Insured'S Street 2 | STRING |  |  |  |  | 
@@ -554,7 +554,7 @@ title: MVDM documentation
 | primary_care_provider | Primary Care Provider | STRING |  |  |  |  | 
 | primary_provider_phone | Primary Provider Phone | STRING |  |  |  |  | 
 | pt_relationship__hipaa | Pt. Relationship - Hipaa | ENUMERATION |  |  | {::nomarkdown}<dl><dt>41</dt><dd>INJURED PLAINTIFF</dd><dt>39</dt><dd>ORGAN DONOR</dd><dt>18</dt><dd>SELF</dd><dt>19</dt><dd>CHILD</dd><dt>33</dt><dd>FATHER</dd><dt>29</dt><dd>SIGNIFICANT OTHER</dd><dt>32</dt><dd>MOTHER</dd><dt>20</dt><dd>EMPLOYEE</dd><dt>01</dt><dd>SPOUSE</dd><dt>53</dt><dd>LIFE PARTNER</dd><dt>G8</dt><dd>OTHER RELATIONSHIP</dd></dl>{:/} |  | 
-| eiv_autoupdate | Eiv Auto-Update | BOOLEAN |  |  | {false:0,true:1} |  | 
+| eiv_autoupdate | Eiv Auto-Update | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | pharmacy_relationship_code | Pharmacy Relationship Code | POINTER |  |  | {id:Bps_Ncpdp_Patient_Relationship_Code-9002313_19} |  | 
 | pharmacy_person_code | Pharmacy Person Code | STRING |  |  |  |  | 
 | patient_id | Patient Id | STRING |  |  |  |  | 
@@ -605,7 +605,7 @@ title: MVDM documentation
 | location_of_service | Location Of Service | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>UNKNOWN OEF/OIF</dd><dt>1</dt><dd>OIF</dd><dt>2</dt><dd>OEF</dd></dl>{:/} | REQUIRED, INDEXED | 
 | oef_oif_from_date | Oef/Oif From Date | DATE-TIME |  |  |  |  | 
 | oef_oif_to_date | Oef/Oif To Date | DATE-TIME |  |  |  |  | 
-| data_locked | Data Locked | BOOLEAN |  |  | {false:0,true:1} |  | 
+| data_locked | Data Locked | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | recorded_date_time | Recorded Date/Time | DATE-TIME |  |  |  |  | 
 | entered_by_site | Entered By Site | POINTER |  |  | {id:Institution-4} |  | 
 
@@ -626,7 +626,7 @@ title: MVDM documentation
 | service_component | Service Component | ENUMERATION |  |  | {::nomarkdown}<dl><dt>V</dt><dd>ACTIVATED RESERVE</dd><dt>G</dt><dd>ACTIVATED NG</dd><dt>R</dt><dd>REGULAR</dd></dl>{:/} |  | 
 | service_number | Service Number | STRING |  |  |  |  | 
 | service_discharge_type | Service Discharge Type | POINTER |  |  | {id:Type_Of_Discharge-25} |  | 
-| data_locked | Data Locked | BOOLEAN |  |  | {false:0,true:1} |  | 
+| data_locked | Data Locked | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 
 ## Date_Of_Dental_Treatment-2_11 
 
@@ -656,7 +656,7 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | rated_disabilities_va | Rated Disabilities (Va) | POINTER |  |  | {id:Disability_Condition-31} | REQUIRED | 
 | disability_ | Disability % | NUMERIC |  |  |  |  | 
-| service_connected | Service Connected | BOOLEAN |  |  | {false:0,true:1} |  | 
+| service_connected | Service Connected | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | extremity_affected | Extremity Affected | ENUMERATION |  |  | {::nomarkdown}<dl><dt>RU</dt><dd>RIGHT UPPER</dd><dt>LL</dt><dd>LEFT LOWER</dd><dt>BL</dt><dd>BOTH LOWER</dd><dt>LU</dt><dd>LEFT UPPER</dd><dt>RL</dt><dd>RIGHT LOWER</dd><dt>BU</dt><dd>BOTH UPPER</dd></dl>{:/} |  | 
 | original_effective_date | Original Effective Date | DATE-TIME |  |  |  |  | 
 | current_effective_date | Current Effective Date | DATE-TIME |  |  |  |  | 
@@ -716,7 +716,7 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | cd_history_date | Cd History Date | DATE-TIME |  |  |  | REQUIRED, INDEXED | 
-| veteran_catastrophically_disabled | Veteran Catastrophically Disabled? | BOOLEAN |  |  | {false:N,true:Y} |  | 
+| veteran_catastrophically_disabled | Veteran Catastrophically Disabled? | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | decided_by | Decided By | STRING |  |  |  |  | 
 | date_of_decision | Date Of Decision | DATE-TIME |  |  |  |  | 
 | facility_making_determination | Facility Making Determination | POINTER |  |  | {id:Institution-4} |  | 
@@ -812,7 +812,7 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | ph_date_time_updated | Ph Date/Time Updated | DATE-TIME |  |  |  | REQUIRED, INDEXED | 
-| ph | Ph? | BOOLEAN |  |  | {false:N,true:Y} |  | 
+| ph | Ph? | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | ph_status | Ph Status | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>CONFIRMED</dd><dt>2</dt><dd>IN PROCESS</dd><dt>1</dt><dd>PENDING</dd></dl>{:/} |  | 
 | ph_remarks | Ph Remarks | ENUMERATION |  |  | {::nomarkdown}<dl><dt>6</dt><dd>UNDELIVERABLE MAIL</dd><dt>5</dt><dd>VAMC</dd><dt>3</dt><dd>ENTERED IN ERROR</dd><dt>1</dt><dd>UNACCEPTABLE DOCUMENTATION</dd><dt>2</dt><dd>NO DOCUMENTATION REC'D</dd><dt>4</dt><dd>UNSUPPORTED PURPLE HEART</dd></dl>{:/} |  | 
 | ph_user | Ph User | STRING |  |  |  |  | 
@@ -861,7 +861,7 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | log_in_date_time | Log In Date/Time | DATE-TIME |  |  |  | REQUIRED, INDEXED | 
-| _1010t_registration | 10-10T Registration | BOOLEAN |  |  | {false:0,true:1} |  | 
+| _1010t_registration | 10-10T Registration | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | status | Status | ENUMERATION |  |  | {::nomarkdown}<dl><dt>2</dt><dd>APPLICATION WITHOUT EXAM</dd><dt>0</dt><dd>10/10 VISIT</dd><dt>1</dt><dd>UNSCHEDULED</dd></dl>{:/} |  | 
 | type_of_benefit_applied_for | Type Of Benefit Applied For | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>OUTPATIENT MEDICAL</dd><dt>2</dt><dd>DOMICILIARY</dd><dt>1</dt><dd>HOSPITAL</dd><dt>4</dt><dd>OUTPATIENT DENTAL</dd><dt>5</dt><dd>NURSING HOME CARE</dd></dl>{:/} |  | 
 | type_of_care_applied_for | Type Of Care Applied For | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>STERILIZATION</dd><dt>4</dt><dd>PREGNANCY</dd><dt>1</dt><dd>DENTAL</dd><dt>2</dt><dd>PLASTIC SURGERY</dd><dt>5</dt><dd>ALL OTHER</dd></dl>{:/} |  | 
@@ -872,21 +872,21 @@ title: MVDM documentation
 | reason_for_late_disposition | Reason For Late Disposition | POINTER |  |  | {id:Disposition_Late_Reason-30} |  | 
 | who_dispositioned | Who Dispositioned | POINTER |  |  | {id:New_Person-200} |  | 
 | description_of_incident | Description Of Incident | STRING |  |  |  |  | 
-| eligible_for_medicaid | *Eligible For Medicaid | BOOLEAN |  |  | {false:0,true:1} |  | 
+| eligible_for_medicaid | *Eligible For Medicaid | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | registration_eligibility_code | Registration Eligibility Code | POINTER |  |  | {id:Eligibility_Code-8} |  | 
-| elig_verified_at_registration | Elig Verified At Registration | BOOLEAN |  |  | {false:0,true:1} |  | 
-| sc_at_registration | Sc At Registration | BOOLEAN |  |  | {false:0,true:1} |  | 
+| elig_verified_at_registration | Elig Verified At Registration | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| sc_at_registration | Sc At Registration | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | sc_at_registration-2_101-16 | Sc% At Registration | NUMERIC |  |  |  |  | 
 | amis_420_segment | Amis 420 Segment | POINTER |  |  | {id:Amis_Segment-391_1} |  | 
 | outpatient_encounter | Outpatient Encounter | POINTER |  |  | {id:Outpatient_Encounter-409_68} |  | 
 | encounter_conversion_status | Encounter Conversion Status | ENUMERATION |  |  | {::nomarkdown}<dl><dt>0</dt><dd>NOT CONVERTED</dd><dt>1</dt><dd>CONVERTED</dd></dl>{:/} |  | 
 | need_related_to_occupation | Need Related To Occupation | ENUMERATION |  |  | {::nomarkdown}<dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl>{:/} |  | 
-| workmens_comp_claim_filed | Workmen'S Comp Claim Filed | BOOLEAN |  |  | {false:N,true:Y} |  | 
+| workmens_comp_claim_filed | Workmen'S Comp Claim Filed | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | workmens_comp_claim_number | Workmen'S Comp Claim Number | STRING |  |  |  |  | 
 | need_related_to_an_accident | Need Related To An Accident | ENUMERATION |  |  | {::nomarkdown}<dl><dt>U</dt><dd>UNKNOWN</dd><dt>Y</dt><dd>YES</dd><dt>N</dt><dd>NO</dd></dl>{:/} |  | 
 | injury_caused_by | Injury Caused By | STRING |  |  |  |  | 
 | injuring_parties_insurance | Injuring Parties Insurance | POINTER |  |  | {id:Insurance_Company-36} |  | 
-| filed_against_injuring_party | Filed Against Injuring Party | BOOLEAN |  |  | {false:N,true:Y} |  | 
+| filed_against_injuring_party | Filed Against Injuring Party | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | attorneys_name | Attorney'S Name | STRING |  |  |  |  | 
 | aaddress_1 | A-Address 1 | STRING |  |  |  |  | 
 | aaddress_2 | A-Address 2 | STRING |  |  |  |  | 
@@ -898,7 +898,7 @@ title: MVDM documentation
 | azip4 | A-Zip+4 | STRING |  |  |  |  | 
 | active | Active | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd></dl>{:/} | INDEXED | 
 | attorneys_name_components | Attorney'S Name Components | POINTER |  |  | {id:Name_Components-20} |  | 
-| ods_at_registration | Ods At Registration? | BOOLEAN |  |  | {false:0,true:1} |  | 
+| ods_at_registration | Ods At Registration? | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | ods_registration_entry-2_101 | Ods Registration Entry |  |  |  |  |  | 
 
 ## Appointment-2_98 
@@ -918,14 +918,14 @@ title: MVDM documentation
 | lab_date_time | Lab Date/Time | DATE-TIME |  |  |  |  | 
 | xray_date_time | X-Ray Date/Time | DATE-TIME |  |  |  |  | 
 | ekg_date_time | Ekg Date/Time | DATE-TIME |  |  |  |  | 
-| routing_slip_printed | Routing Slip Printed | BOOLEAN |  |  | {true:Y} |  | 
+| routing_slip_printed | Routing Slip Printed | BOOLEAN |  |  | {::nomarkdown}<dl><dt>Y</dt><dd>true</dd></dl>{:/} |  | 
 | routing_slip_print_date | Routing Slip Print Date | DATE-TIME |  |  |  |  | 
 | purpose_of_visit | Purpose Of Visit | ENUMERATION |  |  | {::nomarkdown}<dl><dt>2</dt><dd>10-10</dd><dt>4</dt><dd>UNSCHED. VISIT</dd><dt>1</dt><dd>C&P</dd><dt>3</dt><dd>SCHEDULED VISIT</dd></dl>{:/} |  | 
 | appointment_type | Appointment Type | POINTER |  |  | {id:Appointment_Type-409_1} |  | 
 | special_survey_disposition | Special Survey Disposition | NUMERIC |  |  |  |  | 
 | number_of_collateral_seen | Number Of Collateral Seen | NUMERIC |  |  |  |  | 
 | autorebooked_appt_date_time | Auto-Rebooked Appt. Date/Time | DATE-TIME |  |  |  |  | 
-| collateral_visit | Collateral Visit | BOOLEAN |  |  | {true:1} |  | 
+| collateral_visit | Collateral Visit | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | noshow_cancelled_by | No-Show/Cancelled By | POINTER |  |  | {id:New_Person-200} |  | 
 | noshow_cancel_date_time | No-Show/Cancel Date/Time | DATE-TIME |  |  |  |  | 
 | cancellation_reason | Cancellation Reason | POINTER |  |  | {id:Cancellation_Reasons-409_2} |  | 
@@ -934,14 +934,14 @@ title: MVDM documentation
 | data_entry_clerk | Data Entry Clerk | POINTER |  |  | {id:New_Person-200} |  | 
 | date_appt_made | Date Appt. Made | DATE-TIME |  |  |  |  | 
 | outpatient_encounter | Outpatient Encounter | POINTER |  |  | {id:Outpatient_Encounter-409_68} |  | 
-| encounter_forms_printed | Encounter Forms Printed | BOOLEAN |  |  | {false:0,true:1} |  | 
-| encounter_forms_as_addons | Encounter Forms As Add-Ons | BOOLEAN |  |  | {false:0,true:1} |  | 
+| encounter_forms_printed | Encounter Forms Printed | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
+| encounter_forms_as_addons | Encounter Forms As Add-Ons | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 | encounter_conversion_status | Encounter Conversion Status | ENUMERATION |  |  | {::nomarkdown}<dl><dt>0</dt><dd>NOT CONVERTED</dd><dt>1</dt><dd>CONVERTED</dd></dl>{:/} |  | 
 | appointment_type_subcategory | Appointment Type Sub-Category | POINTER |  |  | {id:Sharing_Agreement_SubCategory-35_2} |  | 
 | scheduling_request_type | Scheduling Request Type | ENUMERATION |  |  | {::nomarkdown}<dl><dt>A</dt><dd>AUTO REBOOK</dd><dt>M</dt><dd>MULTIPLE APPT. BOOKING</dd><dt>C</dt><dd>OTHER THAN 'NEXT AVA.' (CLINICIAN REQ.)</dd><dt>N</dt><dd>'NEXT AVAILABLE' APPT.</dd><dt>P</dt><dd>OTHER THAN 'NEXT AVA.' (PATIENT REQ.)</dd><dt>W</dt><dd>WALKIN APPT.</dd><dt>O</dt><dd>OTHER THAN 'NEXT AVA.' APPT.</dd></dl>{:/} |  | 
 | next_ava_appt_indicator | Next Ava. Appt. Indicator | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>'NEXT AVA.' APPT. INDICATED BY USER</dd><dt>2</dt><dd>'NEXT AVA.' APPT. INDICATED BY CALCULATION</dd><dt>0</dt><dd>NOT INDICATED TO BE A 'NEXT AVA.' APPT.</dd><dt>3</dt><dd>'NEXT AVA.' APPT. INDICATED BY USER & CALCULATION</dd></dl>{:/} |  | 
 | desired_date_of_appointment | Desired Date Of Appointment | DATE-TIME |  |  |  |  | 
-| followup_visit | Follow-Up Visit | BOOLEAN |  |  | {false:0,true:1} |  | 
+| followup_visit | Follow-Up Visit | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} |  | 
 
 ## Archived_Data-2_12 
 
@@ -960,4 +960,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:52:24 am
+ Generated on January 12th 2017, 5:58:29 am

@@ -33,7 +33,7 @@ title: MVDM documentation
 | allergySeverity |  | ENUMERATION | Adverse_Reaction_Reporting-120_85:severity |  | {::nomarkdown}<dl><dt>MILD</dt><dd>0</dd><dt>MODERATE</dt><dd>1</dd><dt>SEVERE</dt><dd>2</dd></dl>{:/} |  | 
 | dateOccurred |  | DATE | Adverse_Reaction_Reporting-120_85:date_time_of_event |  |  |  | 
 | idBandMarked | Id Band Marked | [OBJECT] | id_band_marked |  | [IdBandMarked](#idbandmarked)  | CREATE, UPDATE | 
-| isRemoved | Removed | BOOLEAN | entered_in_error |  |  |  | 
+| isRemoved | Removed | BOOLEAN | entered_in_error |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
 | comments | Comments | [OBJECT] |  |  | [Comment](#comment)  | CREATE, UPDATE | 
 
@@ -112,4 +112,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:52:23 am
+ Generated on January 12th 2017, 5:58:29 am

@@ -37,15 +37,15 @@ title: MVDM documentation
 | responsibleProvider | Responsible Provider | POINTER | responsible_provider | $USERID |  | CREATE, UPDATE | 
 | resolvedDate | Date Resolved | DATE | date_resolved |  |  | UPDATE | 
 | clinic | Clinic | POINTER | clinic |  |  | CREATE, UPDATE | 
-| isServiceConnected | Service Connected | BOOLEAN | service_connected |  |  | CREATE, UPDATE | 
-| isAgentOrangeExposure | Agent Orange Exposure | BOOLEAN | agent_orange_exposure |  |  | CREATE, UPDATE | 
-| isIonizingRadiationExposure | Ionizing Radiation Exposure | BOOLEAN | ionizing_radiation_exposure |  |  | CREATE, UPDATE | 
-| isPersianGulfExposure | Persian Gulf Exposure | BOOLEAN | persian_gulf_exposure |  |  | CREATE, UPDATE | 
+| isServiceConnected | Service Connected | BOOLEAN | service_connected |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isAgentOrangeExposure | Agent Orange Exposure | BOOLEAN | agent_orange_exposure |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isIonizingRadiationExposure | Ionizing Radiation Exposure | BOOLEAN | ionizing_radiation_exposure |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isPersianGulfExposure | Persian Gulf Exposure | BOOLEAN | persian_gulf_exposure |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
 | priority | Priority | ENUMERATION | priority |  | {::nomarkdown}<dl><dt>ACUTE</dt><dd>0</dd><dt>CHRONIC</dt><dd>1</dd></dl>{:/} | CREATE, UPDATE | 
-| isHeadAndOrNeckCancer | Head And/Or Neck Cancer | BOOLEAN | head_and_or_neck_cancer |  |  | CREATE, UPDATE | 
-| isMilitarySexualTrauma | Military Sexual Trauma | BOOLEAN | military_sexual_trauma |  |  | CREATE, UPDATE | 
-| isCombatVeteran | Combat Veteran | BOOLEAN | combat_veteran |  |  | CREATE, UPDATE | 
-| isShipboardHazardDefense | Shipboard Hazard & Defense | BOOLEAN | shipboard_hazard__defense |  |  | CREATE, UPDATE | 
+| isHeadAndOrNeckCancer | Head And/Or Neck Cancer | BOOLEAN | head_and_or_neck_cancer |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isMilitarySexualTrauma | Military Sexual Trauma | BOOLEAN | military_sexual_trauma |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isCombatVeteran | Combat Veteran | BOOLEAN | combat_veteran |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
+| isShipboardHazardDefense | Shipboard Hazard & Defense | BOOLEAN | shipboard_hazard__defense |  | {::nomarkdown}<dl></dl>{:/} | CREATE, UPDATE | 
 | comments | Comments | [OBJECT] |  |  | [Comments](#comments)  | CREATE, UPDATE | 
 | snomedCTConceptValue | SNOMED CT Concept Value |  |  |  |  |  | 
 | snomedCTConceptCode | SNOMED CT Concept Code | STRING | snomed_ct_concept_code |  |  | INDEXED, CREATE, UPDATE | 
@@ -54,7 +54,7 @@ title: MVDM documentation
 | uniqueTermRequestComment | Unique Term Request Comment | STRING | unique_term_request_comment |  |  | CREATE, UPDATE | 
 | interestDate | Date Of Interest | DATE | date_of_interest | $NOW |  | CREATE, UPDATE | 
 | codingSystem | Coding System | STRING | coding_system |  |  | CREATE, UPDATE | 
-| isRemoved | Removed | BOOLEAN |  |  |  |  | 
+| isRemoved | Removed | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | audits | audits | [OBJECT] |  |  | [Audits](#audits)  |  | 
 
 ## Comments 
@@ -99,4 +99,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:52:24 am
+ Generated on January 12th 2017, 5:58:29 am
