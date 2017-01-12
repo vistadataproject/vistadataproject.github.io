@@ -3,7 +3,7 @@ layout: default
 title: VDM documentation
 ---
 
-## [VDM](TableOfContent.md) --> Gmrv_Vitals_Parameters-120_57 
+## [VDM](TableOfContent.md) &#8594; Gmrv_Vitals_Parameters-120_57 
 
  property | value 
 --- | --- 
@@ -21,8 +21,8 @@ title: VDM documentation
 | quick_order_protocol_counter | 1 |  |  | NUMERIC |  |  |  | 
 | gmrv_initialization_switch | 1.3 |  |  | NUMERIC |  |  |  | 
 | stop_date_default | 2 |  |  | NUMERIC |  |  |  | 
-| cancel_on_ward_transfer | 3 |  |  | BOOLEAN |  |  |  | 
-| cancel_on_service_transfer | 4 |  |  | BOOLEAN |  |  |  | 
+| cancel_on_ward_transfer | 3 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
+| cancel_on_service_transfer | 4 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
 | abnormal_temperature__high | 5.1 |  |  | NUMERIC |  |  |  | 
 | abnormal_temperature__low | 5.2 |  |  | NUMERIC |  |  |  | 
 | abnormal_pulse__high | 5.3 |  |  | NUMERIC |  |  |  | 
@@ -36,6 +36,11 @@ title: VDM documentation
 | abnormal_cvp__high | 6.1 |  |  | NUMERIC |  |  |  | 
 | abnormal_cvp__low | 6.2 |  |  | NUMERIC |  |  |  | 
 | abnormal_o2_saturation__low | 6.3 |  |  | NUMERIC |  |  |  | 
-| phase_i_completed | 999 |  |  | BOOLEAN |  |  |  | 
-| phase_ii_completed | 999.1 |  |  | BOOLEAN |  |  |  | 
+| phase_i_completed | 999 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
+| phase_ii_completed | 999.1 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
 | phase_ii_last_record | 999.2 |  |  | NUMERIC |  |  |  | 
+
+
+
+
+ Generated on January 12th 2017, 6:21:34 am

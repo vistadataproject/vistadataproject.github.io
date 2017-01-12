@@ -9,7 +9,7 @@ title: MVDM documentation
 --- | --- 
  id | Allergy
  label | Patient Allergies
- description | Contains patient allergy/adverse reaction information.
+ description | {::nomarkdown}Contains patient allergy/adverse reaction information.{:/}
  fmIdForId | 120.8
  baseVDMClass | [Patient_Allergies-120_8](../vdm/Patient_Allergies-120_8)
  fromVDMQueries | [{vdmId:Patient_Allergy-120_8,query:DESCRIBE $ID},{vdmId:Adverse_Reaction_Reporting-120_85,query:DESCRIBE 120_85 FILTER(.03=$ID)}]
@@ -112,4 +112,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:58:29 am
+ Generated on January 12th 2017, 6:21:30 am

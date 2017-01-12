@@ -9,7 +9,7 @@ title: MVDM documentation
 --- | --- 
  id | Vital
  label | Patient Vitals
- description | Contains patient vital information.
+ description | {::nomarkdown}Contains patient vital information.{:/}
  fmIdForId | 120.5
  baseVDMClass | [Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)
  fromVDMQueries | [{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]
@@ -56,4 +56,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 5:58:29 am
+ Generated on January 12th 2017, 6:21:30 am
