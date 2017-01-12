@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> Document 
+## [MVDM](TableOfContent.md) &#8594; Document 
 
  property | value 
 --- | --- 
@@ -36,10 +36,10 @@ title: MVDM documentation
 | referenceDate | Reference Date | DATE-TIME | reference_date | $NOW |  |  | 
 | releaseDateTime | Release Date/Time | DATE-TIME | release_date_time | $NOW |  |  | 
 | expectedSigner | Expected Signer | POINTER | expected_signer | $USERID | {id:New_Person-200} |  | 
-| isSigned |  | BOOLEAN | Mapper |  |  |  | 
-| signingDetails |  | OBJECT | Mapper |  | [SigningDetails](#signingdetails)  |  | 
-| isRemoved |  | BOOLEAN | Mapper |  |  |  | 
-| removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
+| isSigned |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| signingDetails |  | OBJECT |  |  | [SigningDetails](#signingdetails)  |  | 
+| isRemoved |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
 
 ## SigningDetails 
 
@@ -72,3 +72,8 @@ title: MVDM documentation
 | dateTimeEntered | Date/Time Entered | DATE-TIME | deletion_date |  |  |  | 
 | enteredBy | Entered By | POINTER | deleted_by |  |  |  | 
 | reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | 
+
+
+
+
+ Generated on January 12th 2017, 5:58:29 am

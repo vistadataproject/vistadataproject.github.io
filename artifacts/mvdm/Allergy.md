@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> Allergy 
+## [MVDM](TableOfContent.md) &#8594; Allergy 
 
  property | value 
 --- | --- 
@@ -21,21 +21,21 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | patient | Patient | POINTER | patient | $PATIENTID |  |  | 
-| reactant | Reactant | POINTER | Mapper |  |  | REQUIRED | 
-| reactantDetails |  | OBJECT | Mapper |  | [ReactantDetails](#reactantdetails)  |  | 
-| allergyType | Allergy Type | ENUMERATION | Mapper |  | {::nomarkdown}<dl><dt>DRUG</dt><dd>0</dd><dt>DRUG, FOOD</dt><dd>1</dd><dt>FOOD</dt><dd>2</dd><dt>OTHER</dt><dd>3</dd></dl>{:/} | REQUIRED | 
+| reactant | Reactant | POINTER |  |  |  | REQUIRED | 
+| reactantDetails |  | OBJECT |  |  | [ReactantDetails](#reactantdetails)  |  | 
+| allergyType | Allergy Type | ENUMERATION |  |  | {::nomarkdown}<dl><dt>DRUG</dt><dd>0</dd><dt>DRUG, FOOD</dt><dd>1</dd><dt>FOOD</dt><dd>2</dd><dt>OTHER</dt><dd>3</dd></dl>{:/} | REQUIRED | 
 | mechanism | Mechanism | ENUMERATION | mechanism |  | {::nomarkdown}<dl><dt>ALLERGY</dt><dd>0</dd><dt>PHARMACOLOGIC</dt><dd>1</dd><dt>UNKNOWN</dt><dd>2</dd></dl>{:/} | REQUIRED | 
 | dateTimeEntered | Origination Date/Time | DATE-TIME | origination_date_time | $NOW |  |  | 
 | enteredBy | Originator | POINTER | originator | $USERID |  |  | 
-| enteredAtFacility | Facility where entered | POINTER | Mapper |  |  |  | 
+| enteredAtFacility | Facility where entered | POINTER |  |  |  |  | 
 | observedOrHistorical | Observed/Historical | ENUMERATION | observed_historical |  | {::nomarkdown}<dl><dt>OBSERVED</dt><dd>0</dd><dt>HISTORICAL</dt><dd>1</dd></dl>{:/} | REQUIRED | 
 | reactions | Reactions | [OBJECT] | reactions |  | [Reaction](#reaction)  |  | 
 | allergySeverity |  | ENUMERATION | Adverse_Reaction_Reporting-120_85:severity |  | {::nomarkdown}<dl><dt>MILD</dt><dd>0</dd><dt>MODERATE</dt><dd>1</dd><dt>SEVERE</dt><dd>2</dd></dl>{:/} |  | 
 | dateOccurred |  | DATE | Adverse_Reaction_Reporting-120_85:date_time_of_event |  |  |  | 
 | idBandMarked | Id Band Marked | [OBJECT] | id_band_marked |  | [IdBandMarked](#idbandmarked)  | CREATE, UPDATE | 
-| isRemoved | Removed | BOOLEAN | entered_in_error |  |  |  | 
-| removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
-| comments | Comments | [OBJECT] | Mapper |  | [Comment](#comment)  | CREATE, UPDATE | 
+| isRemoved | Removed | BOOLEAN | entered_in_error |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
+| comments | Comments | [OBJECT] |  |  | [Comment](#comment)  | CREATE, UPDATE | 
 
 ## ReactantDetails 
 
@@ -108,3 +108,8 @@ title: MVDM documentation
 | dateTimeEntered | Date/Time Comment Entered | DATE-TIME |  | $NOW |  |  | 
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
+
+
+
+
+ Generated on January 12th 2017, 5:58:29 am

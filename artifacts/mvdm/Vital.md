@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> Vital 
+## [MVDM](TableOfContent.md) &#8594; Vital 
 
  property | value 
 --- | --- 
@@ -27,16 +27,16 @@ title: MVDM documentation
 | hospitalLocation | Hospital Location | POINTER | hospital_location |  |  | REQUIRED | 
 | enteredBy | Entered By | POINTER | entered_by | $USERID |  |  | 
 | value | Value | STRING | rate |  |  | REQUIRED | 
-| units | Units | STRING | Mapper |  |  |  | 
-| high | High | STRING | Mapper |  |  |  | 
-| low | Low | STRING | Mapper |  |  |  | 
-| metricUnits | metricUnits | STRING | Mapper |  |  |  | 
-| metricValue | metricValue | STRING | Mapper |  |  |  | 
+| units | Units | STRING |  |  |  |  | 
+| high | High | STRING |  |  |  |  | 
+| low | Low | STRING |  |  |  |  | 
+| metricUnits | metricUnits | STRING |  |  |  |  | 
+| metricValue | metricValue | STRING |  |  |  |  | 
 | supplementalO2 | Supplemental O2 | STRING | supplemental_o2 |  |  |  | 
 | qualifier | Qualifier | [POINTER] | qualifier |  |  |  | 
-| isRemoved | Removed | BOOLEAN | entered_in_error |  |  |  | 
-| removalDetails |  | OBJECT | Mapper |  | [RemovalDetails](#removaldetails)  |  | 
-| facility |  | POINTER | Mapper |  |  |  | 
+| isRemoved | Removed | BOOLEAN | entered_in_error |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| removalDetails |  | OBJECT |  |  | [RemovalDetails](#removaldetails)  |  | 
+| facility |  | POINTER |  |  |  |  | 
 
 ## RemovalDetails 
 
@@ -52,3 +52,8 @@ title: MVDM documentation
 | dateTimeEntered | Date/Time Entered | DATE-TIME |  | $NOW |  |  | 
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
+
+
+
+
+ Generated on January 12th 2017, 5:58:29 am

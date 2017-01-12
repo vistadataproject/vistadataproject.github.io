@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> AllergyAssessment 
+## [MVDM](TableOfContent.md) &#8594; AllergyAssessment 
 
  property | value 
 --- | --- 
@@ -21,6 +21,11 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | patient |  | POINTER | name |  | [Patient](Patient.md) | REQUIRED | 
-| hasReactions |  | BOOLEAN | reaction_assessment | false |  | UPDATE | 
+| hasReactions |  | BOOLEAN | reaction_assessment | false | {::nomarkdown}<dl></dl>{:/} | UPDATE | 
 | enteredBy |  | POINTER | assessing_user | $USERID | {id:Person} |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
+
+
+
+
+ Generated on January 12th 2017, 5:58:29 am

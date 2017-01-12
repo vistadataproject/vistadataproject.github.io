@@ -3,7 +3,7 @@ layout: default
 title: MVDM documentation
 ---
 
-## [MVDM](TableOfContent.md) --> Visit 
+## [MVDM](TableOfContent.md) &#8594; Visit 
 
  property | value 
 --- | --- 
@@ -38,14 +38,14 @@ title: MVDM documentation
 | pfssAccount |  | POINTER | pfss_account_reference |  | {id:Pfss_Account-375} |  | 
 | visitId |  | STRING | visit_id |  |  |  | 
 | patientInOrOut |  | ENUMERATION | patient_status_in_out |  | {::nomarkdown}<dl><dt>1</dt><dd>IN</dd><dt>0</dt><dd>OUT</dd></dl>{:/} |  | 
-| isServiceConnected |  | BOOLEAN | service_connected |  |  |  | 
-| agentOrangeExposure |  | BOOLEAN | agent_orange_exposure |  |  |  | 
-| ionizingRadiationExposure |  | BOOLEAN | ionizing_radiation_exposure |  |  |  | 
-| swAsiaConditions |  | BOOLEAN | sw_asia_conditions |  |  |  | 
-| militarySexualTrauma |  | BOOLEAN | military_sexual_trauma |  |  |  | 
-| headAndOrNeckCancer |  | BOOLEAN | head_and_or_neck_cancer |  |  |  | 
-| combatVeteran |  | BOOLEAN | combat_veteran |  |  |  | 
-| proj112Shad |  | BOOLEAN | proj_112_shad |  |  |  | 
+| isServiceConnected |  | BOOLEAN | service_connected |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| agentOrangeExposure |  | BOOLEAN | agent_orange_exposure |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| ionizingRadiationExposure |  | BOOLEAN | ionizing_radiation_exposure |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| swAsiaConditions |  | BOOLEAN | sw_asia_conditions |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| militarySexualTrauma |  | BOOLEAN | military_sexual_trauma |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| headAndOrNeckCancer |  | BOOLEAN | head_and_or_neck_cancer |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| combatVeteran |  | BOOLEAN | combat_veteran |  | {::nomarkdown}<dl></dl>{:/} |  | 
+| proj112Shad |  | BOOLEAN | proj_112_shad |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | serviceConnectionEditFlag |  | ENUMERATION | service_connection_edit_flag |  | {::nomarkdown}<dl><dt>0</dt><dd>EDITABLE</dd><dt>1</dt><dd>NOT EDITABLE</dd></dl>{:/} |  | 
 | agentOrangeEditFlag |  | ENUMERATION | agent_orange_edit_flag |  | {::nomarkdown}<dl><dt>0</dt><dd>EDITABLE</dd><dt>1</dt><dd>NOT EDITABLE</dd></dl>{:/} |  | 
 | ionizingRadiationEditFlag |  | ENUMERATION | ionizing_radiation_edit_flag |  | {::nomarkdown}<dl><dt>0</dt><dd>EDITABLE</dd><dt>1</dt><dd>NOT EDITABLE</dd></dl>{:/} |  | 
@@ -59,3 +59,8 @@ title: MVDM documentation
 | protocolUsedToEnter |  | POINTER | protocol |  | {id:Protocol-101} |  | 
 | enteredWithPackage |  | POINTER | package |  | {id:Package-9_4} |  | 
 | enteredWithPCEDataSource |  | POINTER | data_source |  | {id:Pce_Data_Source-839_7} |  | 
+
+
+
+
+ Generated on January 12th 2017, 5:58:29 am
