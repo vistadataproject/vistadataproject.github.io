@@ -28,7 +28,29 @@ title: RPCL documentation
 | PROBLEM_ID | REFERENCE | true | {::nomarkdown}The record number of the problem from the Problem File (#9000011).{:/} | 1 | 
 | ID | LITERAL |  | {::nomarkdown}undocumented parameter, source code marks this as ID but never used in M code{:/} |  | 
 
+#### Example return value
+
+Fatty liver (SCT 197321007)
+         SNOMED-CT: Steatosis of liver
+ Primary ICD-10-CM: R69.   [ILLNESS, UNSPECIFIED]
+ 
+        Onset: 
+       Status: ACTIVE/CHRONIC
+      SC Cond: UNKNOWN
+     Exposure: None
+ 
+     Provider: ALEXANDER,ROBERT
+       Clinic: CLInicD
+ 
+     Recorded: 11/8/16, by ALEXANDER,ROBERT
+      Entered: 11/8/16, by ALEXANDER,ROBERT
+      Updated: 11/8/16
+ 
+ 
+----------- Audit History -----------
+11/8/16:  IMMEDIACY changed by ALEXANDER,ROBERT from ACUTE to CHRONIC
 
 
 
- Generated on January 11th 2017, 7:16:21 am
+
+ Generated on January 12th 2017, 6:57:40 am

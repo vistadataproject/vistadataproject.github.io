@@ -28,7 +28,27 @@ title: RPCL documentation
 | ALLERGY_ID | REFERENCE | true | {::nomarkdown}The record number of the allergy/adverse reaction from the Patient<br/>Allergies file (#120.8).{:/} | 4 | 
 | ALLERGY_ID | REFERENCE | true | {::nomarkdown}The record number of the allergy/adverse reaction from the Patient<br/>Allergies file (#120.8).{:/} | 4 | 
 
+#### Example return value
+
+    Causative agent: ACETAMINOPHEN/CODEINE
+ Nature of Reaction: Adverse Reaction
+
+     Signs/symptoms: CHEST PAIN
+                     HIVES
+
+         Originator: ALEXANDER,ROBERT
+         Originated: Feb 18, 2016@17:05
+ Obs dates/severity: MAR 01, 2016
+
+           Verified: <auto-verified>
+Observed/Historical: Observed
+
+Comments:
+   NOV 06, 2016@03:18 by ORIGINATOR
+don't give the guy this med! 
 
 
 
- Generated on January 11th 2017, 7:16:21 am
+
+
+ Generated on January 12th 2017, 6:57:40 am

@@ -3,7 +3,7 @@ layout: default
 title: VDM documentation
 ---
 
-## [VDM](TableOfContent.md) --> Major_Concept_Map-757 
+## [VDM](TableOfContent.md) &#8594; Major_Concept_Map-757 
 
  property | value 
 --- | --- 
@@ -11,12 +11,17 @@ title: VDM documentation
  fmId | 757
  label | Major Concept Map
  location | ^LEX(757,
- description | This file is a map of Major Concepts within the Lexicon Utility and\rcontained in the expression file (#757.01).  While the primary purpose \rof this file is for file maintenance, it also supports various other \rfunctions such as the display of classification codes by linking concepts\rto codes and the ability to filter out unwanted search responses by linking\rconcepts to semantic classes and types.
+ description | {::nomarkdown}This file is a map of Major Concepts within the Lexicon Utility and<br/>contained in the expression file (#757.01).  While the primary purpose <br/>of this file is for file maintenance, it also supports various other <br/>functions such as the display of classification codes by linking concepts<br/>to codes and the ability to filter out unwanted search responses by linking<br/>concepts to semantic classes and types.{:/}
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| expression | .01 | Expression | Pointer to the clinical expression in the Expression file (#757.01) which \rrepresents the preferred term for the Major Concept. | POINTER |  | REQUIRED, INDEXED | [Expressions-757_01](Expressions-757_01.md) | 
-| group | 1 | Group | This field is intended to provide applications the ability to group terms by\rcategories, such as Cardiovascular, Pulmonary, etc. | POINTER |  |  | [Expressions-757_01](Expressions-757_01.md) | 
-| group-2 | 2 | Group | This field is for future use.  It is intended to provide applications the\rability to group terms by clinical category (not provided by UMLS), such\ras cardiovascular, pulmonary etc. | STRING |  |  |  | 
+| expression | .01 | Expression | {::nomarkdown}Pointer to the clinical expression in the Expression file (#757.01) which <br/>represents the preferred term for the Major Concept.{:/} | POINTER |  | REQUIRED, INDEXED | [Expressions-757_01](Expressions-757_01.md) | 
+| group | 1 | Group | {::nomarkdown}This field is intended to provide applications the ability to group terms by<br/>categories, such as Cardiovascular, Pulmonary, etc.{:/} | POINTER |  |  | [Expressions-757_01](Expressions-757_01.md) | 
+| group-2 | 2 | Group | {::nomarkdown}This field is for future use.  It is intended to provide applications the<br/>ability to group terms by clinical category (not provided by UMLS), such<br/>as cardiovascular, pulmonary etc.{:/} | STRING |  |  |  | 
+
+
+
+
+ Generated on January 12th 2017, 6:30:19 am
