@@ -25,12 +25,12 @@ We won't consider Print services and other system administration issues in VDP a
 13. | [ORWCIRN FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN FACLIST) | UTILITY | DFN, LOCATION, MPI, PARAMETER
 14. | [ORWCS PRINT REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCS PRINT REPORT) | UTILITY | PRINT
 15. | [ORWD1 PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 PARAM) | READ | PARAMETER, PRINT
-16. | [ORWD1 PRINTGUI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 PRINTGUI) | UTILITY | PRINT
+16. | [ORWD1 PRINTGUI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 PRINTGUI) | UTILITY | FILE, PRINT
 17. | [ORWD1 RVPRINT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 RVPRINT) | UTILITY | PRINT
 18. | [ORWD1 SVONLY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 SVONLY) | UTILITY | PRINT
-19. | [ORWD2 MANUAL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD2 MANUAL) | READ | PRINT
-20. | [ORWDLR OIPARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR OIPARAM) | READ | DEPRECATED
-21. | [ORWDPS1 CHK94](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS1 CHK94) | UTILITY | IS-A, PATCH
+19. | [ORWD2 MANUAL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD2 MANUAL) | READ | FILE, PRINT
+20. | [ORWDLR OIPARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR OIPARAM) | READ | DEPRECATED, FILE
+21. | [ORWDPS1 CHK94](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS1 CHK94) | UTILITY | FILE, IS-A, PATCH
 22. | [ORWDPS5 LESAPI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS5 LESAPI) | READ | DFN, NOT OSEHRA
 23. | [ORWDX SENDP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SENDP) | CHANGE | DFN, PRINT
 24. | [ORWDX1 UNDCORIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 UNDCORIG) | CHANGE | BUG, DFN
@@ -62,7 +62,7 @@ We won't consider Print services and other system administration issues in VDP a
 50. | [ORWUXT LST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUXT LST) | READ | HARD CODED
 51. | [ORWUXT REF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUXT REF) | READ | HARD CODED
 52. | [ORWUXT VAL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUXT VAL) | READ | HARD CODED
-53. | [TIU PRINT RECORD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU PRINT RECORD) | UTILITY | PRINT
+53. | [TIU PRINT RECORD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU PRINT RECORD) | UTILITY | FILE, PRINT
 54. | [XWB DEFERRED CLEARALL](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB DEFERRED CLEARALL) | UTILITY | REENTRANT, REMOTE
 55. | [XWB DIRECT RPC](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB DIRECT RPC) | UTILITY | HL7, REMOTE
 56. | [XWB GET VARIABLE VALUE](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB GET VARIABLE VALUE) | UTILITY | GLOBAL, JLV, SECURITY HOLE

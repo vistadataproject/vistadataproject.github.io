@@ -9,8 +9,8 @@ title: VDP Year 2 - CPRS RPC Interface Breakdown TOC
 
 Name | Number
 --- | ---
-[Clinical](bdClinical) | 417 (39.7%)
-[Non Clinical](bdNon_Clinical) | 562 (53.5%)
+[Clinical](bdClinical) | 418 (39.8%)
+[Non Clinical](bdNon_Clinical) | 561 (53.4%)
 [Authentication](bdAuthentication) | 11 (1%)
 [Out of Scope](bdOut_of_Scope) | 60 (5.7%)
 
