@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 if order requires a signature
+ Input Parameters | {::nomarkdown}ANORDER{:/}
+ Lines | ```
+ S REQ=0
+ I +$P($G(^OR(100,+ANORDER,0)),U,16) S REQ=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

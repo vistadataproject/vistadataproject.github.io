@@ -21,6 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is the location a non-count clinic? (DBIA #964)
+ Input Parameters | {::nomarkdown}ORLOC{:/}
+ Lines | ```
+ Q:'ORLOC
+ S ORY=$S($P($G(^SC(ORLOC,0)),U,17)="Y":1,1:0)
+```
 
 ### Input Parameters
 
@@ -31,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

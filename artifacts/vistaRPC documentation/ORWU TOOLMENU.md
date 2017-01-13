@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns a list of items for the Tools menu
+ Lines | ```
+ N ANENT
+ S ANENT="ALL^"_$S($G(^VA(200,DUZ,5)):"^SRV.`"_+$G(^(5)),1:"")
+ D GETLST^XPAR(.ORLST,ANENT,"ORWT TOOLS MENU","N")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

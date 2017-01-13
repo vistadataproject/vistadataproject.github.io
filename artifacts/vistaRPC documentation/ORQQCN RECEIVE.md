@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Receive the consult into the service
+ Input Parameters | {::nomarkdown}GMRCO<br/>GMRCORNP<br/>GMRCAD<br/>ORCOM{:/}
+ Lines | ```
+ S Y=$$RC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,.ORCOM)```
  Leading comment lines | {::nomarkdown}GMRCO - The internal file number of the consult from File 123<br/>GMRCORNP - internal file number of the person receiving the request into the service<br/>GMRCAD - date/time consult received into the service<br/>ORCOM - Array containing comments related to receipt of the consult.<br/>Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is optional when consult is received.{:/}
 
 ### Input Parameters
@@ -33,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

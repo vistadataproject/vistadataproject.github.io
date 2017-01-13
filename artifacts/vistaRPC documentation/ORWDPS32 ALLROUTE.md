@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns a list of all available med routes
+ Lines | ```
+ N I,X,ILST
+ S ILST=0
+ K ^TMP($J,"ORWDPS32 ALLROUTE")
+ D ALL^PSS51P2(,"??",,,"ORWDPS32 ALLROUTE")
+ S I=0 F  S I=$O(^TMP($J,"ORWDPS32 ALLROUTE",I)) Q:'I  D
+ . I +$P(^TMP($J,"ORWDPS32 ALLROUTE",I,3),U)>0 S LST($$NXT)=I_U_^TMP($J,"ORWDPS32 ALLROUTE",I,.01)_U_^TMP($J,"ORWDPS32 ALLROUTE",I,1)
+ K ^TMP($J,"ORWDPS32 ALLROUTE")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

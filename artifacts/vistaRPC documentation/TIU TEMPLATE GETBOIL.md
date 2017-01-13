@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns a Template's Unexpanded Boilerplate Text
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ N IDX,LINE,TYPE
+ K ^TMP("TIU TEMPLATE",$J)
+ S TIUY=$NA(^TMP("TIU TEMPLATE",$J))
+ S (IDX,LINE)=0
+ S TYPE=$P($G(^TIU(8927,TIUDA,0)),U,3)
+ I (TYPE="T")!(TYPE="G") D
+ .F  S LINE=$O(^TIU(8927,TIUDA,2,LINE)) Q:'LINE  D
+ ..S IDX=IDX+1
+ ..S ^TMP("TIU TEMPLATE",$J,IDX)=$G(^TIU(8927,TIUDA,2,LINE,0))```
 
 ### Input Parameters
 
@@ -31,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

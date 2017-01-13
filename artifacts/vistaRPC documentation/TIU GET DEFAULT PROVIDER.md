@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get default primary provider
+ Input Parameters | {::nomarkdown}HLOC<br/>USER<br/>TIUDT<br/>TIUIEN{:/}
+ Lines | ```
+ N TIUSPRM,TIUDDOC,TIUAUTH
+ D SITEPARM(.TIUSPRM)
+ S TIUDDOC=+$P(TIUSPRM,U,8)
+ S TIUAUTH=$S((+$G(USER)!('+$G(TIUIEN))):0,1:+$P($G(^TIU(8925,+$G(TIUIEN),12)),U,2))
+ S USER=$S(+$G(USER):+$G(USER),+$G(TIUAUTH):+$G(TIUAUTH),1:DUZ)
+ S TIUDT=$S(+$G(TIUDT):+$G(TIUDT),1:DT)
+ S TIUY=$S(TIUDDOC=1:$$DFLTDOC^TIUPXAPI(HLOC),TIUDDOC=2:$$CURDOC(USER),1:"0^")```
 
 ### Input Parameters
 
@@ -33,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Micro Report RPC
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2{:/}
+ Lines | ```
+ N ROOT
+ S ROOT=$$SET()
+ I $$REMOTE(.DFN,.ROOT) D MICRO^LR7OGM(.ORY,DFN,DATE1,DATE2)
+ D CLEAN(.ORY,.ROOT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

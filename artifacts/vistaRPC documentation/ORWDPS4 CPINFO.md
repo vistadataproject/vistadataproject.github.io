@@ -21,8 +21,19 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save reponses to CP questions
+ Input Parameters | {::nomarkdown}ORINFO{:/}
+ Lines | ```
+ Q:'$D(ORINFO)
+ N ORIFN,ORI,ORX,ANS S ORI=0
+ F  S ORI=$O(ORINFO(ORI)) Q:'ORI  D
+ .S ORIFN=$P($P(ORINFO(ORI),U,1),";",1)
+ .S ANS=$P(ORINFO(ORI),U,2)
+ .D REFMT(.ORX,ANS)
+ .D SC^ORCSAVE2(.ORX,ORIFN)
+ S Y=1
+ K ORIFN,ORX,ORI,ANS```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

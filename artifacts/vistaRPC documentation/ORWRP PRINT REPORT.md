@@ -21,6 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print report entry point
+ Input Parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORRPTID<br/>ORHSTYPE<br/>ORDTRNG<br/>OREXAMID<br/>ORCOMP<br/>ORALPHA<br/>OROMEGA{:/}
+ Lines | ```
+ N ORHSTAG
+ S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")
+ IF '$$CHK() G PRINTQ
+ N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ZTIO
+ S ZTIO=ORIO,ZTDTH=$H
+ S ZTDESC="Report Print"
+ S ZTRTN="DEQUE^ORWRPP"
+ F I="ORDFN","ORRPTID","ORHSTYPE","ORDTRNG","OREXAMID","DUZ(","ORCOMP(","ORALPHA","OROMEGA","ORHSTAG" S ZTSAVE(I)=""
+ D ^%ZTLOAD
+ I $D(ZTSK) D
+ . S ORY="0^Report queued. (Task #"_ZTSK_")"
+ E  D
+ . S ORY="99^Task Rejected."```
  Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -37,4 +52,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

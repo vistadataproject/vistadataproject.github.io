@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Indicates that user can score test
+ Input Parameters | {::nomarkdown}TEST<br/>USER{:/}
+ Lines | ```
+ N ORYS,ORANS
+ I $T(PRIVL^YTAPI5)="" S ORY=1 Q
+ S ORY=0
+ S ORYS("CODE")=TEST
+ S ORYS("STAFF")=USER
+ D PRIVL^YTAPI5(.ORANS,.ORYS)
+ I $G(ORANS(1))="[DATA]" S ORY=+$P($G(ORANS(2)),U,1)```
 
 ### Input Parameters
 
@@ -32,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

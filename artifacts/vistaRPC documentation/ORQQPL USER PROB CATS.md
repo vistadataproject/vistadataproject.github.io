@@ -21,6 +21,20 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get user category list
+ Input Parameters | {::nomarkdown}ORDUZ<br/>CLIN{:/}
+ Lines | ```
+ N GSEQ,GCNT,GROUP,HDR,IFN,LCNT,ITEM,TG,GMPLSLST
+ S TG=$NAME(TMP) ; put list in local
+ K @TG
+ S (GSEQ,GCNT,LCNT)=0
+ S GMPLSLST=$$GETUSLST(DUZ,CLIN) ; get approp list for user
+ F  S GSEQ=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ)) Q:GSEQ'>0  D
+ . S IFN=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ,0)) Q:IFN'>0
+ . S ITEM=$G(^GMPL(125.1,IFN,0))
+ . S GROUP=+$P(ITEM,U,3)
+ . S HDR=GROUP_U_$P(ITEM,U,4,5)
+ . S GCNT=GCNT+1
+ . S @TG@(GCNT)=HDR ; put category into temp global```
 
 ### Input Parameters
 
@@ -32,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

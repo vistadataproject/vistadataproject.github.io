@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}CLASS{:/}
+ Lines | ```
+ D GETTD^ORWTPN(.VALUE,CLASS,DUZ)```
  Leading comment lines | {::nomarkdown}get default title for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

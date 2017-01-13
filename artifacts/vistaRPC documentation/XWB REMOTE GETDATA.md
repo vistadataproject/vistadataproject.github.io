@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return the data under a handle
+ Input Parameters | {::nomarkdown}HDL{:/}
+ Lines | ```
+ N I,N,RD,WRAP S RET="" K ^TMP($J,"XWB")
+ I $G(HDL)="" S RET(0)="-1^Bad Handle" Q
+ S N=$$CHKHDL^XWBDRPC(HDL) I N<1 S RET(0)=N Q
+ I N'["Done" S RET(0)="-1^Not DONE" Q
+ S N=(^XTMP(HDL,"CNT")>100)
+ S I=0,RD=$S(N:$NA(^TMP($J,"XWB")),1:"RET")
+ I N S RET=$NA(^TMP($J,"XWB")),I=$$RTRNFMT^XWBLIB(4) ;Make return a global
+ I N M ^TMP($J,"XWB")=^XTMP(HDL,"D")
+ I 'N F  S RET(I)=$G(^XTMP(HDL,"D",I)),I=$O(^XTMP(HDL,"D",I)) Q:I'>0```
 
 ### Input Parameters
 
@@ -31,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

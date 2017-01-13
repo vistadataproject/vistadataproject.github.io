@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns current view context for user
+ Input Parameters | {::nomarkdown}ORUSER{:/}
+ Lines | ```
+ S Y=$$GET^XPAR("ALL","ORCH CONTEXT CONSULTS",1)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

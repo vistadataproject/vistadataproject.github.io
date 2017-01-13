@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Follow-up for text messages
+ Input Parameters | {::nomarkdown}DFN<br/>NOTIF<br/>XQADATA{:/}
+ Lines | ```
+ I NOTIF=67 D CHGRAD```
 
 ### Input Parameters
 
@@ -33,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

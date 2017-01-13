@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get ICD codeset version (i.e., ICD-9-CM or ICD-10-CM)
+ Input Parameters | {::nomarkdown}ORDT{:/}
+ Lines | ```
+ S ORDT=+$G(ORDT) S:'ORDT ORDT=DT
+ S RESULT="ICD^ICD-9-CM"
+ G:'$L($T(IMPDATE^LEXU)) ICDVERX
+ I +$$IMPDATE^LEXU("10D")'>ORDT S RESULT="10D^ICD-10-CM"```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

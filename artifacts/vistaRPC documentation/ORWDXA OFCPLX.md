@@ -21,8 +21,30 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | is ORID child of PRTORDER
+ Input Parameters | {::nomarkdown}ORID<br/>PRTORDER{:/}
+ Lines | ```
+ N NUMCHDS,NOWID,NOWVAL,X3,ORDA,ISNOW
+ Q:'$D(^OR(100,+ORID,0))
+ S ISNOW=0
+ D ISNOW^ORWDXR(.ISNOW,+ORID)
+ Q:ISNOW
+ N PKG
+ S PKG=$P($G(^OR(100,+ORID,0)),U,14)
+ S PKG=$$NMSP^ORCD(PKG)
+ I PKG'="PS" Q
+ I $L($G(^OR(100,+ORID,3))),('$L($P(^(3),U,9))) Q
+ S (NUMCHDS,NOWID,NOWVAL,X3,ORDA)=0
+ S PRTORDER=+$P(^(3),U,9)
+ S X3=$G(^OR(100,PRTORDER,3)),ORDA=$P(X3,U,7)
+ S PRTORDER=PRTORDER_";"_ORDA
+ S NUMCHDS=$P($G(^OR(100,+PRTORDER,2,0)),U,4)
+ I NUMCHDS>2 S ORY="COMPLEX-PSI"_U_PRTORDER
+ S:$D(^OR(100,+PRTORDER,4.5,"ID","NOW")) NOWID=$O(^("NOW",0))
+ S:NOWID NOWVAL=$G(^OR(100,+PRTORDER,4.5,NOWID,1))
+ I NOWVAL=1 Q
+ E  S ORY="COMPLEX-PSI"_U_PRTORDER```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

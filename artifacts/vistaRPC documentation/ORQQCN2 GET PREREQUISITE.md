@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns prequisites for ordering
+ Input Parameters | {::nomarkdown}ORSVC<br/>ORDFN{:/}
+ Lines | ```
+ Q:(+$G(ORSVC)=0)!(+$G(ORDFN)=0)
+ S ORY=$NA(^TMP("ORPREREQ",$J))
+ D PREREQ^GMRCUTL1(.ORY,ORSVC,ORDFN,0)  ;0=RESOLVE OBJECTS
+ K @ORY@(0)```
 
 ### Input Parameters
 
@@ -32,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

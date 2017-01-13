@@ -21,6 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | retrieve list of cases, but no documents
+ Input Parameters | {::nomarkdown}ORDFN{:/}
+ Lines | ```
+ Q:'$$PATCH^XPDUTL("SR*3.0*100")
+ Q:'+ORDFN
+ N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0
+ S ORY=$NA(^TMP("ORLIST",$J))
+ D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)
+ S I=0
+ F  S I=$O(@ORY@(I)) Q:+I=0  D
+ . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2)```
 
 ### Input Parameters
 
@@ -31,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

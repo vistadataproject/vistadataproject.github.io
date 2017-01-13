@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return order dialog info for New Medication
+ Input Parameters | {::nomarkdown}INPAT{:/}
+ Lines | ```
+ N DGRP,ID,IEN,TXT,TYP,X,X0,X5
+ I INPAT S X=$$GET^XPAR("ALL","ORWDX NEW MED","i","I")
+ E  S X=$$GET^XPAR("ALL","ORWDX NEW MED","o","I")
+ S IEN=+X,X0=$G(^ORD(101.41,IEN,0)),X5=$G(^(5))
+ S TYP=$P(X0,U,4),DGRP=+$P(X0,U,5),ID=+$P(X5,U,5),TXT=$P(X5,U,4)
+ S Y=IEN_";"_ID_";"_DGRP_";"_TYP_U_TXT```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

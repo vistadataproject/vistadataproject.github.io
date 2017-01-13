@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get patient items in date range for a type
+ Input Parameters | {::nomarkdown}OLDEST<br/>NEWEST<br/>FNUM<br/>DFN{:/}
+ Lines | ```
+ D DATEITEM^ORWGAPI("ORWGRPC",OLDEST,NEWEST,FNUM,DFN)
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

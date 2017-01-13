@@ -21,9 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GET FILTERED LIST OF INPATIENT SERVICES
+ Input Parameters | {::nomarkdown}INP{:/}
+ Lines | ```
+ N I,S
+ S S=""
+ F I=1:1 S S=$O(INP(S)) Q:S=""  D
+ . I INP(S)'="",$G(^DIC(49,INP(S),0))'="" D  Q  ; get next
+ .. S RETURN(I)=INP(S)_U_$P(^DIC(49,INP(S),0),U,1)
+```
  Leading comment lines | {::nomarkdown}RETURN NAMES FOR LIST OF IEN PASSED IN{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

@@ -15,6 +15,17 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns array for given mental health instrument{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}OTEST{:/}
+ Lines | ```
+ D MH^PXRMRPCC(.ORY,OTEST)  ; DBIA 3080
+ S ORY(0)=0
+ I $$PATCH^XPDUTL("YS*5.01*85") S ORY(0)=1```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

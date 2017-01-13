@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Given a TIU document, return the case and related documents
+ Input Parameters | {::nomarkdown}ORTIUDA{:/}
+ Lines | ```
+ Q:'$$PATCH^XPDUTL("SR*3.0*100")!(+$G(ORTIUDA)=0)
+ N ORCASE
+ D GET1405^TIUSRVR(.ORCASE,ORTIUDA)
+ I +ORCASE'>0 S ORY=ORCASE Q
+ D GETONE(.ORY,+ORCASE)```
 
 ### Input Parameters
 
@@ -31,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

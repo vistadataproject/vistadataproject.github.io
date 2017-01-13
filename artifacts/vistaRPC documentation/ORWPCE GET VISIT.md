@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get the visit IEN
+ Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>VSITSTR{:/}
+ Lines | ```
+ I +$G(IEN)<1 D  I 1
+ .S VISIT=$$GETENC^PXAPI(DFN,$P(VSITSTR,";",2),$P(VSITSTR,";"))
+ E  S VISIT=$P(^TIU(8925,IEN,0),U,3)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

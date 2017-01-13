@@ -21,6 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | long list SURGICAL REPORT titles
+ Input Parameters | {::nomarkdown}FROM<br/>DIR<br/>CLNAME{:/}
+ Lines | ```
+ N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")
+ S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0
+ D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```
  Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>depending on context{:/}
 
 ### Input Parameters
@@ -34,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

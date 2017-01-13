@@ -21,6 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | TIU print to windows printer
+ Input Parameters | {::nomarkdown}ORDA<br/>ORFLG{:/}
+ Lines | ```
+ N ZTQUEUED,ORHFS,ORSUB,ORIO,ORSTATUS,ROOT,ORERR,ORWIN,ORHANDLE
+ N IOM,IOSL,IOST,IOF,IOT,IOS
+ S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS",ORWIN=1,ORHANDLE="ORWTIU"
+ S ORY=$NA(^TMP(ORSUB,$J,1))
+ S ORHFS=$$HFS^ORWRP()
+ D HFSOPEN^ORWRP(ORHANDLE,ORHFS,"W")
+ I POP D  Q
+ . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file for TIU print")
+ D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")
+ N $ETRAP,$ESTACK
+ S $ETRAP="D ERR^ORWRP Q"
+ U IO
+ D RPC^TIUPD(.ORERR,ORDA,ORIO,ORFLG,ORWIN)
+ D HFSCLOSE^ORWRP(ORHANDLE,ORHFS)```
 
 ### Input Parameters
 
@@ -32,4 +48,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

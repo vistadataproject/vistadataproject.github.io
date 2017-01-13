@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC Gets the status of TIU Doc TIUIEN
+ Input Parameters | {::nomarkdown}TIUIEN{:/}
+ Lines | ```
+ N TIUTTL
+ S TIUTTL=+$G(^TIU(8925,TIUIEN,0))
+ I 'TIUTTL S TIUY="0^Document does not exist" Q
+ S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)
+ S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1)```
  Leading comment lines | {::nomarkdown}Returns STATIEN^STATNAME{:/}
 
 ### Input Parameters
@@ -32,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all data (non-lab) set up on patient
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ D FASTDATA^ORWGAPI(.DATA,DFN)```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

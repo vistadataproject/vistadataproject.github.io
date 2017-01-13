@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns status of 
+ Lines | ```
+ N SRV,ORERR,ORTMP
+ S ORY=0,SRV=$$GET1^DIQ(200,DUZ,29,"I")
+ D GETLST^XPAR(.ORTMP,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX NEW REMINDER PARAMS","Q",.ORERR)
+ I +ORTMP S ORY=$P($G(ORTMP(1)),U,2)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

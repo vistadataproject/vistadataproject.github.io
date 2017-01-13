@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return detail for a pt's clinical reminder
+ Input Parameters | {::nomarkdown}ORPT<br/>ORIEN{:/}
+ Lines | ```
+ K ^TMP("PXRHM",$J)
+ D MAIN^PXRM(ORPT,ORIEN,5)     ; 5 returns all reminder info
+ N CR,I,J,ORTXT S I=1
+ S ORTXT="",ORTXT=$O(^TMP("PXRHM",$J,ORIEN,ORTXT)) Q:ORTXT=""  D
+ .S J=0 F  S J=$O(^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J)) Q:J=""  D
+ ..S ORY(I)=^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J),I=I+1
+ K ^TMP("PXRHM",$J)```
  Leading comment lines | {::nomarkdown}ORY - return array<br/>ORPT - patient DFN<br/>ORIEN - clinical reminder (811.9 ien){:/}
 
 ### Input Parameters
@@ -33,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

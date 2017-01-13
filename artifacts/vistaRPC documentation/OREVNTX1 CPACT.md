@@ -21,9 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return True/False to display active orders for copy
+ Input Parameters | {::nomarkdown}EVT{:/}
+ Lines | ```
+ Q:'EVT
+ S ORY=0
+ Q:'$D(^ORD(100.5,EVT,0))
+ S ORY=$P(^ORD(100.5,EVT,0),U,11)```
  Leading comment lines | {::nomarkdown}EVT ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | is Surgery ES patch installed?
+ Lines | ```
+ S ORY=$$PATCH^XPDUTL("SR*3.0*100")
+ Q:+ORY=0
+ S ORY=$$GET^XPAR("ALL","ORWOR SHOW SURGERY TAB",1)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

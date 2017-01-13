@@ -21,9 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
+ Input Parameters | {::nomarkdown}ORFROM<br/>DIR{:/}
+ Lines | ```
+ N I,IEN,CNT S I=0,CNT=44
+ F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.
+ . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D
+ . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))
+ . . S I=I+1,Y(I)=IEN_"^"_ORFROM
+```
  Leading comment lines | {::nomarkdown}C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.<br/>.Y=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

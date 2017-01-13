@@ -21,6 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save cover sheet reminders at a specified level
+ Input Parameters | {::nomarkdown}LVL<br/>CLASS<br/>DATA{:/}
+ Lines | ```
+ N ORERR,PARAM,I
+ I LVL="CLASS" D  I 1
+ .S PARAM="ORQQPX COVER SHEET REM CLASSES"
+ .S LVL="SYS"
+ .D DEL^XPAR(LVL,PARAM,"`"_CLASS,.ORERR)
+ .D EN^XPAR(LVL,PARAM,"`"_CLASS,.DATA,.ORERR)
+ E  D
+ .S PARAM="ORQQPX COVER SHEET REMINDERS"
+ .D NDEL^XPAR(LVL,PARAM,.ORERR)
+ .S I=0
+ .F  S I=$O(DATA(I)) Q:'I  D
+ ..D EN^XPAR(LVL,PARAM,$P(DATA(I),U,1),$P(DATA(I),U,2),.ORERR)
+ S ORY=1```
 
 ### Input Parameters
 
@@ -33,4 +48,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

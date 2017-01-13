@@ -15,6 +15,15 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Additional prompts for a given dialog element{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORDLG<br/>ORDCUR<br/>ORFTYP{:/}
+ Lines | ```
+ D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -26,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

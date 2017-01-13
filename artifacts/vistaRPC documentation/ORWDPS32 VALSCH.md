@@ -21,8 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | validate a schedule, return 1 if valid, 0 if not
+ Input Parameters | {::nomarkdown}X<br/>PSTYPE{:/}
+ Lines | ```
+ I '$L($T(EN^PSSGSGUI)) S OK=-1 Q
+ I $E($T(EN^PSSGSGUI),1,4)="EN(X" D
+ . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))
+ . K X S:$D(ORX) X=ORX
+ E  D
+ . D EN^PSSGSGUI
+ S OK=$S($D(X):1,1:0)
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

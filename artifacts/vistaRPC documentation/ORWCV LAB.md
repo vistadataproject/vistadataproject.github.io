@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return labs for patient
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ D:$L($T(STRT2^AWCMCPR1)) STRT2^AWCMCPR1
+ D LIST^ORQOR1(.LST,DFN,"LAB",4,"T-"_$$RNGLAB(DFN),"T","AW",1)
+ D:$L($T(END^AWCMCPR1)) END^AWCMCPR1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

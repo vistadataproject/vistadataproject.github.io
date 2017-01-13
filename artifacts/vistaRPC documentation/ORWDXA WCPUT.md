@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set ward comments
+ Input Parameters | {::nomarkdown}ORID<br/>WCLST{:/}
+ Lines | ```
+ N DIERR,ERRLST,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)
+ D WP^DIE(100.008,ACT_","_ORIFN_",",50,"","WCLST","ERRLST")
+ S ERR="" I $D(DIERR) S ERR="An error occurred while saving comments."```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

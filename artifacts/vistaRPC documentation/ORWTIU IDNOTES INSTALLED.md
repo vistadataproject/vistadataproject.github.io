@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is ID Notes installed?
+ Lines | ```
+ S ORY=$$PATCH^XPDUTL("TIU*1.0*100")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

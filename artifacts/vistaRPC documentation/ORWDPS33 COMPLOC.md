@@ -15,6 +15,16 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC will return a 0 if the patient location is the same location as the original order. It will return a 1 if the location is different.{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORID<br/>LOC{:/}
+ Lines | ```
+ S ORY=0
+ I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -25,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

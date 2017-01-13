@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a list from the TFL^VAFCTFU1 call
+ Input Parameters | {::nomarkdown}ORDFN{:/}
+ Lines | ```
+ D TFL^VAFCTFU1(.ORY,ORDFN)
+```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}VALUE{:/}
+ Lines | ```
+ D ADDLIST^ORWTPT(.OK,VALUE,DUZ)```
  Leading comment lines | {::nomarkdown}adds current user to a team{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Does user has permission to access GN?
+ Lines | ```
+ S ORY=0
+ I $D(^XUSEC("OR GN ACCESS",DUZ)) S ORY=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

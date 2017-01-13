@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return IEN for Req Phys Cancelled reason
+ Lines | ```
+ S VAL=$O(^ORD(100.03,"S","REQ",0))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

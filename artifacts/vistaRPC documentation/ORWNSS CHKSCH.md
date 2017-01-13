@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Validate schedule
+ Input Parameters | {::nomarkdown}SCH{:/}
+ Lines | ```
+ Q:SCH=""
+ D VALSCH^ORWDPS33(.ORY,SCH,"I")
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

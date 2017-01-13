@@ -21,6 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DBIA 3079
+ Input Parameters | {::nomarkdown}OREDU{:/}
  Leading comment lines | {::nomarkdown}ORQQPXRM PROGRESS NOTE HEADER{:/}
 
 ### Input Parameters
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

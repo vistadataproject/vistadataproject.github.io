@@ -21,6 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GMV ALLERGY [RPC entry point]
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ N GMRAL,GMVALG,GN D EN1^GMRADPT M GMVALG=GMRAL
+ I $O(GMVALG(0))'>0 D  Q
+ . I $G(GMVALG)="" S RESULT(1)="No Allergy Assessment"
+ . I $G(GMVALG)=0 S RESULT(1)="No Known Allergies"
+ . Q
+ S GN=1,RESULT(1)="This patient has the following allergy(ies): ",GN(1)=0 F  S GN(1)=$O(GMVALG(GN(1))) Q:GN(1)'>0  D
+ . S GN=GN+1,RESULT(GN)=$P($G(GMVALG(GN(1))),U,2)
+```
 
 ### Input Parameters
 
@@ -31,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

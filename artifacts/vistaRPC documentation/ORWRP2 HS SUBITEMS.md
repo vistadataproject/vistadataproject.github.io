@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Subitems for a Test Panel
+ Input Parameters | {::nomarkdown}ORTEST{:/}
+ Lines | ```
+ D SUBITEM^GMTSADH5(.ORY,ORTEST)```
  Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS SUBITEMS{:/}
 
 ### Input Parameters
@@ -32,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

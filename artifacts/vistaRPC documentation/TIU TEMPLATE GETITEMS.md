@@ -21,6 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns all children of a non-Template Node
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ N IDX,ITEM,SEQ,ITEMNODE
+ K ^TMP("TIU TEMPLATE",$J)
+ S TIUY=$NA(^TMP("TIU TEMPLATE",$J))
+ I $P($G(^TIU(8927,TIUDA,0)),U,3)'="T" D
+ .S (IDX,SEQ)=0
+ .F  S SEQ=$O(^TIU(8927,TIUDA,10,"B",SEQ)) Q:'SEQ  D
+ ..S ITEM=0
+ ..F  S ITEM=$O(^TIU(8927,TIUDA,10,"B",SEQ,ITEM)) Q:'ITEM  D
+ ...S ITEMNODE=$G(^TIU(8927,TIUDA,10,ITEM,0))
+ ...D ADDNODE(.IDX,$P(ITEMNODE,U,2))```
 
 ### Input Parameters
 
@@ -31,4 +43,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

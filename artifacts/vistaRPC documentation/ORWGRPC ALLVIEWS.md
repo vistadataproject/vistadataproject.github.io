@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all graph views
+ Input Parameters | {::nomarkdown}VIEW<br/>USER{:/}
+ Lines | ```
+ D ALLVIEWS^ORWGAPI("ORWGRPC",+$G(VIEW),+$G(USER))
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load Template Field by Name
+ Input Parameters | {::nomarkdown}FLD{:/}
+ Lines | ```
+ N FLDIEN S FLDIEN=""
+ Q:$G(FLD)']""
+ D GETFLD(.TIUY,FLD,0,.FLDIEN)
+ I +FLDIEN S TIUY(.05)=FLDIEN```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

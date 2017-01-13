@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return detailed flag info for flag FLAGID
+ Input Parameters | {::nomarkdown}PTDFN<br/>FLAGID{:/}
+ Lines | ```
+ I '$D(^TMP("ORPRF",$J,FLAGID)) Q
+ N IX,CNT
+ S (IX,CNT)=0
+ F  S IX=$O(^TMP("ORPRF",$J,FLAGID,IX)) Q:'IX  D
+ . S CNT=CNT+1,ORY(CNT)=$G(^TMP("ORPRF",$J,FLAGID,IX))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

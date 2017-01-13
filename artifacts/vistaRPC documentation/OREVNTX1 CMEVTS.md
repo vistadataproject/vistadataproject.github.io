@@ -21,8 +21,20 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return common event list
+ Input Parameters | {::nomarkdown}CLOC{:/}
+ Lines | ```
+ N IDX,X0,X,LOC
+ S:CLOC>0 LOC=CLOC
+ S IDX=0,ORY=""
+ D GETLST^OREV3(.ORY)
+ F  S IDX=$O(ORY(IDX)) Q:'IDX  D
+ . S X0=""
+ . S:$L($G(^ORD(100.5,+ORY(IDX),0))) X0=$G(^(0))
+ . I '$L($P(X0,U,2)) D
+ .. S X=$P(X0,U,12) S:X $P(X0,U,2)=$P($G(^ORD(100.5,+X,0)),U,2)
+ . S:$L(X0) ORY(IDX)=+ORY(IDX)_U_X0```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

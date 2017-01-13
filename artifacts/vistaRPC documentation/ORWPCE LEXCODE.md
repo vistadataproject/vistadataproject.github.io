@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return code for a lexicon entry
+ Input Parameters | {::nomarkdown}IEN<br/>APP<br/>ORDATE{:/}
+ Lines | ```
+ S VAL=""
+ S:'+$G(ORDATE) ORDATE=DT
+ I APP="ICD"!(APP="10D") S VAL=$$ONE^LEXU(IEN,ORDATE,APP)_U_$S(APP="ICD":"ICD-9-CM",1:"ICD-10-CM")
+ I APP="CPT"!(APP="CHP") S VAL=$$CPTONE^LEXU(IEN,ORDATE)_U_"CPT-4"
+ I $P(VAL,U)="",(APP="CHP") S VAL=$$CPCONE^LEXU(IEN,ORDATE)_U_"HCPCS"```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

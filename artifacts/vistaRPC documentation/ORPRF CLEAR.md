@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Clear up the temp global
+ Lines | ```
+ K ^TMP("ORPRF",$J)
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

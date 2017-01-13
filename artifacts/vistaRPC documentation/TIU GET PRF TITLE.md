@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
+ Input Parameters | {::nomarkdown}PTDFN<br/>FLAGID{:/}
+ Lines | ```
+ N PRFARR K TIUY S TIUY=0
+ Q:'$G(PTDFN)  Q:'$G(FLAGID)
+ S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info
+ Q:'TIUY
+ S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))
+ I TIUY'>0 S TIUY=0```
  Leading comment lines | {::nomarkdown}Receives TIUY by ref; passes back<br/>TIUY = TitleIEN^Title<br/>0 if no title is associated or flg assignmt is not active<br/>Requires PTDFN<br/>Requires FLAGID - identifier for particular flag assignment<br/>for patient PTDFN. Set as subscript in GETACT^DGPFAPI.<br/>See GETFLG^ORPRF.{:/}
 
 ### Input Parameters
@@ -33,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

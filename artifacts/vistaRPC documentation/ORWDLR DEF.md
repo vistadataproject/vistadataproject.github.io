@@ -21,9 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}ALOC{:/}
+ Lines | ```
+ S ILST=0
+ S LST($$NXT)="~Collection Times" D COLLTM
+ S LST($$NXT)="~Send Patient Times" D SENDTM
+ S LST($$NXT)="~Default Urgency="_$$DEFURG^LR7OR3
+ S LST($$NXT)="~Schedules" D SCHED
+ S LST($$NXT)="~Common" D COMMON```
  Leading comment lines | {::nomarkdown}get dialog definition specific to lab{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

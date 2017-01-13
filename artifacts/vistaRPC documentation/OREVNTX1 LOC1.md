@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default hospital location ^SC( for EVT ptr #100.5
+ Input Parameters | {::nomarkdown}EVT{:/}
+ Lines | ```
+ Q:'+EVT
+ S ORY=+$P($G(^ORD(100.5,+EVT,0)),U,9) S:ORY<1 ORY=+$G(ORL)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

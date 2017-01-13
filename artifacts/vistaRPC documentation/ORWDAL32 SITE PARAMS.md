@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return GMRA Site Params
+ Lines | ```
+ N GMRASITE
+ D SITE^GMRAUTL
+ S ORY=$G(^GMRD(120.84,GMRASITE,0))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

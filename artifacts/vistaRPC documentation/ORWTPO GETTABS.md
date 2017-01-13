@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | ```
+ K VALUES
+ D PDSET^ORWTPUP("ORCH INITIAL TAB",.VALUES)```
  Leading comment lines | {::nomarkdown}get tab names for patient chart{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

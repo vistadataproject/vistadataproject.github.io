@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print orders from review/sign actions
+ Input Parameters | {::nomarkdown}HLOC<br/>ORWDEV<br/>PRTLST{:/}
+ Lines | ```
+ D PRINTS(.PRTLST,HLOC,ORWDEV) S OK=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

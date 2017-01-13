@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to get Days back to check for Type & Screen order
+ Lines | ```
+ S RETURN=$$GET^XPAR("ALL","ORWDXVB VBECS TNS CHECK",1,"I")```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

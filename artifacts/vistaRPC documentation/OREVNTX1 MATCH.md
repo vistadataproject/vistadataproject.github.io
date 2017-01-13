@@ -21,9 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | If Pt's current data match selected event
+ Input Parameters | {::nomarkdown}DFN<br/>EVT{:/}
+ Lines | ```
+ S ORY=0
+ Q:('+DFN)!('+EVT)
+ S ORY=$$MATCH^OREVNT(DFN,EVT)
+ N TS,TSNM
+ S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))
+ S TSNM=$P($G(^DIC(45.7,TS,0)),U)
+ S:ORY ORY=ORY_U_TSNM```
  Leading comment lines | {::nomarkdown}DFN: patient DFN<br/>EVT: ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

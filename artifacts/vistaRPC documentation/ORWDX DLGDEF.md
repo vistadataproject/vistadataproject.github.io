@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Format mapping for a dlg
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | ```
+ D DLGDEF^ORWDX1(.LST,.DLG)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

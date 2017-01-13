@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}LISTNAME<br/>ORVIZ{:/}
+ Lines | ```
+ D NEWLIST^ORWTPL(.VAL,LISTNAME,DUZ,$G(ORVIZ))```
  Leading comment lines | {::nomarkdown}set current user's new personal list{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

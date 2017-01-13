@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Gets current time
+ Input Parameters | {::nomarkdown}P2{:/}
+ Lines | ```
+ S RESULT=$$NOW^XLFDT()
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

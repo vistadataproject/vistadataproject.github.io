@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get list of treatments for clinic
+ Input Parameters | {::nomarkdown}CLINIC{:/}
+ Lines | ```
+ D GETLST^IBDF18A(CLINIC,"PX SELECT TREATMENTS","LST")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

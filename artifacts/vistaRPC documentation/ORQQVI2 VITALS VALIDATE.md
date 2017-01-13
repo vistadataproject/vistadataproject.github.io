@@ -20,9 +20,17 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORQDATA{:/}
+ Lines | ```
+ N ORVITALS,ORQVIT
+ K ORRETURN
+ S ORRETURN(0)=1
+ D PREVITAL(.ORRETURN,.ORVITALS,.ORQVIT,.ORQDATA)
+ D VALIDATE^GMRVPCE0(.ORVITALS)
+ D POSTVIT(.ORRETURN,.ORQVIT,.ORVITALS)```
  Leading comment lines | {::nomarkdown}Given the array ORQDATA passed in by PCE Device Interface whose<br/>format is described in the PCE Device Interface documentation, this<br/>procedure will validate the Vitals data.  If the data is invalid,<br/>the procedure will return the errors in the form given above.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

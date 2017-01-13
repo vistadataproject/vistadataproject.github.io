@@ -21,6 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return all schedules
+ Input Parameters | {::nomarkdown}DFN<br/>LOCIEN{:/}
+ Lines | ```
+ N CNT,FREQ,ILST,ORARRAY,WIEN
+ S WIEN=$$WARDIEN^ORWDPS32(+$G(LOCIEN))
+ D SCHED^PSS51P1(WIEN,.ORARRAY)
+ S ILST=0
+ S CNT=0 F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D
+ .S NODE=$G(ORARRAY(CNT))
+ .I $P(NODE,U,4)="C" D
+ ..K ^TMP($J,"ORWDPS1 DOWSCH")
+ ..D ZERO^PSS51P1($P(NODE,U),,,,"ORWDPS1 DOWSCH")
+ ..S FREQ=$G(^TMP($J,"ORWDPS1 DOWSCH",$P(NODE,U),2))
+ ..K ^TMP($J,"ORWDPS1 DOWSCH")
+ ..I +FREQ=0 Q
+ ..I +FREQ>1440 Q
+ ..S ILST=ILST+1,LST(ILST)=$P(ORARRAY(CNT),U,2,5)```
 
 ### Input Parameters
 
@@ -32,4 +48,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

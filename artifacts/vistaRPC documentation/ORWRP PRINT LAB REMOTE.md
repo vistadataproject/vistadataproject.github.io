@@ -21,9 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Print data for remote sites
+ Input Parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>RPTID<br/>ORHANDS{:/}
+ Lines | ```
+ N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I
+ S ZTIO=ORIO,ZTDTH=$H
+ S ZTDESC="Remote Lab Report Print"
+ S ZTRTN="DEQUE^ORWRPL"
+ F I="ORDFN","RPTID","ORHANDS(" S ZTSAVE(I)=""
+ D ^%ZTLOAD
+ I $D(ZTSK) D
+ . S ORY="0^Report queued. (Task #"_ZTSK_")"
+ E  D
+ . S ORY="99^Task Rejected."```
  Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT REMOTE REPORT{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

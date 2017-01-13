@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Lab test description info
+ Input Parameters | {::nomarkdown}ORTEST{:/}
+ Lines | ```
+ I '$L($T(ONE^LR7OR4)) S ORY(1)="Missing lab API (part of patch LR*5.2*256)" Q
+ D ONE^LR7OR4(.ORY,.ORTEST)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Template Description
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ I (TIUDA>0),$D(^TIU(8927,TIUDA,5)) D
+ .N IDX,CNT S (IDX,CNT)=0
+ .F  S IDX=$O(^TIU(8927,TIUDA,5,IDX)) Q:IDX'>0  D
+ ..S CNT=CNT+1,TIUY(CNT)=^TIU(8927,TIUDA,5,IDX,0)```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

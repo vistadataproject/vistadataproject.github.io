@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to resolve Dx Text for PCE view
+ Input Parameters | {::nomarkdown}NARR<br/>CODE{:/}
+ Lines | ```
+ S ORY=$$SETNARR(NARR,CODE)```
 
 ### Input Parameters
 
@@ -32,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get back the orderable item IEN
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ S ORIFN=+ORIFN
+ S Y=$$VALUE^ORCSAVE2(ORIFN,"ORDERABLE")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

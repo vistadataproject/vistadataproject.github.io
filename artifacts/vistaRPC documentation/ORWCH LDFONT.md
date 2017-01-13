@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | load the user's preferred font size
+ Input Parameters | {::nomarkdown}NAM{:/}
+ Lines | ```
+ S VAL=$$GET^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,"I")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

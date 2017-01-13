@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 or 0 if PTEVT completed or not
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | ```
+ Q:'+PTEVT
+ S ORY=$$COMP^OREVNTX(+PTEVT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GMV GET VITAL TYPE IEN [RPC entry point]
+ Input Parameters | {::nomarkdown}GMVTYPE{:/}
+ Lines | ```
+ I GMVTYPE="" S RESULT=-1 Q
+ S RESULT=+$O(^GMRD(120.51,"B",GMVTYPE,0))```
  Leading comment lines | {::nomarkdown}Input:<br/>RESULT = variable name to hold result<br/>GMVTYPE = Name of Vital Type (from FILE 120.51) (e.g., WEIGHT)<br/>Output: Returns the IEN if GMVTYPE exists in FILE 120.51<br/>else returns -1{:/}
 
 ### Input Parameters
@@ -32,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

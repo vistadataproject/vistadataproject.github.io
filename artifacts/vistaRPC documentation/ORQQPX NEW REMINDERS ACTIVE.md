@@ -21,8 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return true if Interactive Reminders are active
+ Lines | ```
+ S ORY=0
+ I $T(APPL^PXRMRPCA)'="",+$G(DUZ) D
+ . N SRV
+ . ;S SRV=$P($G(^VA(200,DUZ,5)),U)
+ . S SRV=$$GET1^DIQ(200,DUZ,29,"I")
+ . S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","PXRM GUI REMINDERS ACTIVE",1,"Q")
+ . I +ORY S ORY=1
+ . E  S ORY=0```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

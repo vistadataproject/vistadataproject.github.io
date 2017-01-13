@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | ```
+ D GETOTHER^ORWTPO(.INFO,DUZ)```
  Leading comment lines | {::nomarkdown}get user's other parameter settings{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

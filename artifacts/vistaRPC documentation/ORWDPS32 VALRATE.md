@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return "1" (true) if IV rate text is valid
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ I $E($RE($$UPPER^ORWDPS32(X)),1,5)="RH/LM"  S X=$E(X,1,$L(X)-5)
+ S X=$$TRIM^ORWDPS32(X)
+ D ORINF^PSIVSP S VAL=$G(X) ;S OK=$S($D(X):1,1:0)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

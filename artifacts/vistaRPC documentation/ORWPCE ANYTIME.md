@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns status of the ORWPCE ANYTIME ENCOUNTERS parameter
+ Lines | ```
+ N SRV
+ S SRV=$P($G(^VA(200,DUZ,5)),U)
+ S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE ANYTIME ENCOUNTERS",1,"Q")
+ I +ORY S ORY=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

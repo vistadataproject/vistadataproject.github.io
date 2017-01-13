@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return event default dialog IEN
+ Input Parameters | {::nomarkdown}EVTID{:/}
+ Lines | ```
+ S ORY=0
+ S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)
+ Q:'$D(^ORD(100.5,+EVTID,0))
+ S ORY=$P(^ORD(100.5,+EVTID,0),U,4)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

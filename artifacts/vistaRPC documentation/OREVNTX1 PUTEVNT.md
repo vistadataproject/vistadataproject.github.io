@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save new patient delayed events to file 100.2
+ Input Parameters | {::nomarkdown}DFN<br/>EVT<br/>ORIFN{:/}
+ Lines | ```
+ S ORY=$$NEW^OREVNT(DFN,EVT,ORIFN)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

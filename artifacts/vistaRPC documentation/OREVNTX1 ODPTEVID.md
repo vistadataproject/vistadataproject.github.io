@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return PtEvtID based on the ORID
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | ```
+ Q:'$D(^OR(100,+ORID,0))
+ S ORY=$P($G(^OR(100,+ORID,0)),U,17)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

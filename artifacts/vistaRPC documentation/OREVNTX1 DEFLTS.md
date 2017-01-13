@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default specialty for EVTID(#100.5)
+ Input Parameters | {::nomarkdown}EVTID{:/}
+ Lines | ```
+ Q:'+EVTID
+ N PRTEVT
+ S PRTEVT=0
+ S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)
+ I PRTEVT>0 S EVTID=PRTEVT
+ S ORY=$$DEFTS^ORCDADT(EVTID)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,19 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DELETE A PROBLEM
+ Input Parameters | {::nomarkdown}GMPIFN<br/>GMPROV<br/>GMPVAMC<br/>REASON{:/}
+ Lines | ```
+ N CHNGE
+ I REASON'="" D
+ . S GMPFLD(10,"NEW",1)=REASON
+ . D NEWNOTE^GMPLSAVE
+ S CHNGE=GMPIFN_"^1.02^"_$$HTFM^XLFDT($H)
+ S CHNGE=CHNGE_U_DUZ_"^P^H^Deleted^"_+$G(GMPROV)
+ S $P(^AUPNPROB(GMPIFN,1),U,2)="H"
+ S RESULT=1
+ D AUDIT^GMPLX(CHNGE,"")
+ D DTMOD^GMPLX(GMPIFN)
+ K GMPFLD```
  Leading comment lines | {::nomarkdown}From GMPL1 - silent version{:/}
 
 ### Input Parameters
@@ -35,4 +48,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return pointer to file 123.3 given orderable item
+ Input Parameters | {::nomarkdown}ORDITM{:/}
+ Lines | ```
+ S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2)```
 
 ### Input Parameters
 
@@ -31,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

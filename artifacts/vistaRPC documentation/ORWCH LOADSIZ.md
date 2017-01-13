@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return the bounds for a particular control
+ Input Parameters | {::nomarkdown}NAM{:/}
+ Lines | ```
+ I NAM="" S VAL="" Q
+ S VAL=$$GET^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,"I")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

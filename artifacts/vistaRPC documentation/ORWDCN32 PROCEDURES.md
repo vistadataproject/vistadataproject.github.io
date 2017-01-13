@@ -21,6 +21,19 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a subset of orderable procedures
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | ```
+ N I,IEN,CNT,X,DTXT,ORID,ORSVCCNT S I=0,CNT=44
+ F  Q:I'<CNT  S FROM=$O(^ORD(101.43,"S.PROC",FROM),DIR) Q:FROM=""  D
+ . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.PROC",FROM,IEN)) Q:'IEN  D
+ . . S X=^ORD(101.43,"S.PROC",FROM,IEN)
+ . . I +$P(X,U,3),$P(X,U,3)<$$NOW^XLFDT Q  ;ICR 10103
+ . . S ORID=$P($G(^ORD(101.43,IEN,0)),U,2)
+ . . ;I $P($G(^ORD(101,ORIEN,0)),U,3)'="" Q   ; Removed for v14
+ . . D GETSVC^GMRCPR0(.ORSVCCNT,ORID) Q:+ORSVCCNT=0  ;ICR 2982
+ . . S I=I+1
+ . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)_U_ORID
+ . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4)_U_ORID```
  Leading comment lines | {::nomarkdown}.Return Array, Starting Text, Direction<br/>^ORD(101.43,"S.PROC",UpperCase,DA)=Mne^MixedCase^InactvDt^.01IfMne<br/>Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name{:/}
 
 ### Input Parameters
@@ -33,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

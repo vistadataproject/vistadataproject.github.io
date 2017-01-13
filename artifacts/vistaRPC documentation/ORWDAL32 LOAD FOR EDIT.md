@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load an allergy/adverse reaction for editing
+ Input Parameters | {::nomarkdown}ORALIEN{:/}
+ Lines | ```
+ Q:+$G(ORALIEN)=0
+ N ORNODE,I
+ S ORNODE=$NAME(^TMP("GMRA",$J)),I=0
+ D GETREC^GMRAGUI(ORALIEN,ORNODE)
+ S Y=ORNODE```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return IEN for a display group
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ S VAL=$O(^ORD(100.98,"B",X,0))
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

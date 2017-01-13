@@ -21,9 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | gets set of codes
+ Input Parameters | {::nomarkdown}ORWFILE<br/>ORWFIELD<br/>ORWNULL{:/}
+ Lines | ```
+ N ORWPCE,ORWPCEL,ORWPCEC,ORWPCELO,ORWPCEHI,ORWPCECD,ORWPCET
+ S ORWPCELO="abcdefghijklmnopqrstuvwxyz"
+ S ORWPCEHI="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ D FIELD^DID(ORWFILE,ORWFIELD,"","POINTER","ORWPCE","ORWPCE")
+ S ORWPCEL=$L(ORWPCE("POINTER"),";")-1
+ F ORWPCEC=1:1:ORWPCEL D
+ . S ORWPCECD=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",1)
+ . S ORWPCET=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",2)
+ . S ORWLST(ORWPCEC)=ORWPCECD_"^"_$E(ORWPCET)_$TR($E(ORWPCET,2,99),ORWPCEHI,ORWPCELO)
+ S:$G(ORWNULL) ORWLST(0)="@^(None selected)"```
  Leading comment lines | {::nomarkdown}ORWLST(n)=code^text for code{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get package for an order
+ Input Parameters | {::nomarkdown}IFN{:/}
+ Lines | ```
+ N ORDERID,PKGID
+ Q:+IFN<1
+ S ORDERID=+IFN,Y=""
+ S PKGID=$P(^OR(100,ORDERID,0),U,14)
+ S:PKGID>0 Y=$P(^DIC(9.4,PKGID,0),U,2)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

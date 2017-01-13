@@ -21,6 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | new urgency from 101.42
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ Q:+$G(GMRCO)=0
+ N GMRCURG,X,GMRCCSLT,GMRCPROC,GMRCTYPE,GMRCPROT
+ S GMRCCSLT=$O(^ORD(101,"B","GMRCOR CONSULT",0))
+ S GMRCPROC=$O(^ORD(101,"B","GMRCOR REQUEST",0))
+ S GMRCTYPE=$P(^GMR(123,+GMRCO,0),"^",17)
+ I $P(^GMR(123,+GMRCO,0),"^",18)["I" D
+ . S X=$S(GMRCTYPE=GMRCCSLT:"S.GMRCT",1:"S.GMRCR")
+ E  S X="S.GMRCO"
+ S GMRCURG=""
+ F I=1:1  S GMRCURG=$O(^ORD(101.42,X,GMRCURG)) Q:GMRCURG=""  D
+ .S GMRCPROT=$O(^ORD(101,"B","GMRCURGENCY - "_GMRCURG,0))
+ .S Y(I)=GMRCPROT_U_GMRCURG
+ .;S Y(I)=$O(^ORD(101.42,X,GMRCURG,0))_U_GMRCURG```
 
 ### Input Parameters
 
@@ -32,4 +47,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

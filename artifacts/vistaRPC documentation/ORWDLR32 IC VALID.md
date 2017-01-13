@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is the time a valid immediate collect time?
+ Input Parameters | {::nomarkdown}ORTIME{:/}
+ Lines | ```
+ S ORTIME=$P(ORTIME,".",1)_"."_$E($P(ORTIME,".",2),1,4)
+ S ORY=$$VALID^LR7OV4(DUZ(2),ORTIME)```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return name(s) of dialog & base dialog given IEN
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | ```
+ N INT,EXT,BIEN,BNAM
+ S INT=$P($G(^ORD(101.41,DLG,0)),U),EXT=$P($G(^(0)),U,2)
+ S BNAM=INT,BIEN=DLG
+ I $P(^ORD(101.41,DLG,0),U,4)="Q" D
+ . N DGRP S DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP
+ . S BIEN=$$DEFDLG^ORWDXQ(DGRP),BNAM=$P(^ORD(101.41,BIEN,0),U)
+ S VAL=INT_U_EXT_U_BIEN_U_BNAM```
  Leading comment lines | {::nomarkdown}VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

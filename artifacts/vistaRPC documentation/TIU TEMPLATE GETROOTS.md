@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get template root info
+ Input Parameters | {::nomarkdown}USER{:/}
+ Lines | ```
+ N IDX,TYPE
+ I +$G(USER) D ADDNODE(.IDX,$O(^TIU(8927,"AROOT",USER,0)),1)
+ F TYPE="R","TF","CF","OF" D
+ .D ADDNODE(.IDX,$O(^TIU(8927,"AROOT",$$ROOTIDX^TIUDDT(TYPE),0)),1)```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

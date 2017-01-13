@@ -21,8 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return the FormID for a dialog
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | ```
+ S VAL=+$P($G(^ORD(101.41,DLG,5)),U,5) Q:VAL
+ I $P($G(^ORD(101.41,DLG,0)),U,4)="Q" D
+ . N DGRP S DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP
+ . S DLG=$$DEFDLG^ORWDXQ(DGRP) Q:'DLG
+ . S VAL=+$P($G(^ORD(101.41,DLG,5)),U,5)
+ I 'VAL,$P($G(^ORD(101.41,DLG,0)),U,7)=$O(^DIC(9.4,"C","OR",0)) D
+ . S VAL=152  ; use generic "on the fly" form```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

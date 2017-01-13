@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return global reference for file number
+ Input Parameters | {::nomarkdown}FN{:/}
+ Lines | ```
+ S VAL="" Q:'FN
+ S VAL=$$ROOT^DILFD(+FN)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

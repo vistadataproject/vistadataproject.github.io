@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Digital Signature
+ Input Parameters | {::nomarkdown}ORDER{:/}
+ Lines | ```
+ N IFN,ACTION
+ S SIG=0,IFN=+ORDER,ACTION=$P(ORDER,";",2)
+ I +$P($G(^OR(100,+IFN,8,+ACTION,2)),U,3) S SIG=$P(^(2),"^",3)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return external form of pointer
+ Input Parameters | {::nomarkdown}IEN<br/>FN{:/}
+ Lines | ```
+ N REF S REF=$G(^DIC(FN,0,"GL")),VAL=""
+ I $L(REF),+IEN S VAL=$P($G(@(REF_IEN_",0)")),U)```
  Leading comment lines | {::nomarkdown}IEN=internal number, FN=file number{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

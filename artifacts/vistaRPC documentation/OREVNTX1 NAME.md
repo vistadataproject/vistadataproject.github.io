@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Event name from #100.5, given PTEVT ptr #100.2
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | ```
+ I PTEVT'>0 S ORY="" Q
+ S ORY=$$NAME^OREVNTX(PTEVT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -15,6 +15,15 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORIEN{:/}
+ Lines | ```
+ S $P(^OR(100,+ORIEN,6),U,9)=1```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

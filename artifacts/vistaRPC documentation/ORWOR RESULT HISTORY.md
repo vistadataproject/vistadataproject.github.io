@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return result history of associated tests identified by ID
+ Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
+ Lines | ```
+ K ^TMP("ORXPND",$J)
+ N ORESULTS,ORVP,LCNT
+ S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("
+ D ORDHIST^ORWOR2
+ K ^TMP("ORXPND",$J,"VIDEO")
+ S REF=$NA(^TMP("ORXPND",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

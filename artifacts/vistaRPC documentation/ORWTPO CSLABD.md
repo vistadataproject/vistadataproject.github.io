@@ -21,9 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | ```
+ N RNG
+ S INFO=""
+ F RNG="INPT","OUTPT" D
+ .S INFO=INFO_$$GET^XPAR("DIV^SYS^PKG","ORQQLR DATE RANGE "_RNG,1,"I")_U```
  Leading comment lines | {::nomarkdown}get lab defaults{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

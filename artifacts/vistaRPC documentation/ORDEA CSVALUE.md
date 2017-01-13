@@ -21,8 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return 1 if the order (ORID) is a controlled substance, 0 for non-controlled substance
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | ```
+ N OROI,ORPSTYPE,ORRXDG
+ S ORY=0,ORPSTYPE=""
+ S OROI=$$OI^ORQOR2(+ORID)
+ S ORRXDG=$$DGRX^ORQOR2(+ORID)
+ I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"
+ I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"
+ I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"
+ I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"
+ I ORRXDG="PHARMACY" S ORPSTYPE="O"
+ Q:ORPSTYPE=""
+ D CSCHECK(.ORY,OROI,ORPSTYPE)
+ S ORY=+ORY```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

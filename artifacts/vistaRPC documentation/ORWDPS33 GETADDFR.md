@@ -15,6 +15,19 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}OIIEN{:/}
+ Lines | ```
+ N PSOI,TEMP
+ S ORY=""
+ S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)
+ S TEMP=$$IV^PSSDSAPA(PSOI)
+ S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I")```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

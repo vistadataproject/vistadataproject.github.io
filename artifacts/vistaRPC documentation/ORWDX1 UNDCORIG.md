@@ -15,6 +15,16 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORYARR{:/}
+ Lines | ```
+ N CNT
+ S CNT=0 F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0  S $P(^OR(100,+ORYARR(CNT),6),U,9)=0```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

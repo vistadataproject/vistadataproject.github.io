@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC determines if PKI is turned on at the site
+ Lines | ```
+ N ORPKIS,ORSITE,IEN
+ S RETURN=0
+ Q:'$L($T(STORESIG^XUSSPKI))  ;Check for Kernel piece
+ Q:'$L($T(OIDEA^PSSOPKI))  ;Check for Pharmacy piece
+ S ORPKIS=0,ORSITE=+$$SITE^VASITE() I $D(^ORD(100.7,"B",ORSITE)) D
+ . S IEN=$O(^ORD(100.7,"B",ORSITE,"")),ORPKIS=$P(^ORD(100.7,IEN,0),"^",2)
+ I ORPKIS S RETURN=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

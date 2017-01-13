@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get discharge movement information
+ Input Parameters | {::nomarkdown}DFN<br/>ADMITDT{:/}
+ Lines | ```
+ N VAIP
+ I +$G(ADMITDT)=0 S Y=DT Q
+ S VAIP("D")=ADMITDT D 52^VADPT
+ I +VAIP(17)=0 S Y=DT Q
+ S Y=+VAIP(17,1)```
 
 ### Input Parameters
 
@@ -32,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

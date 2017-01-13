@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | ```
+ S INFO=$$GET^XPAR("SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORCH CONTEXT REPORTS")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

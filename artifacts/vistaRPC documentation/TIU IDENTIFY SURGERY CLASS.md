@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to identify class 
+ Input Parameters | {::nomarkdown}CLNAME{:/}
+ Lines | ```
+ S CLNAME=$G(CLNAME,"SURGICAL REPORTS")
+ S Y=$$CLASS^TIUSROI(CLNAME)```
  Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"{:/}
 
 ### Input Parameters
@@ -32,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

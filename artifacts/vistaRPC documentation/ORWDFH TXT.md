@@ -21,8 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return text of current & future diets for a patient
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ S LST(1)="Current Diet:  "_$$DIET^ORCDFH(DFN)
+ N FUTLST D FUT(.FUTLST,DFN) I $D(FUTLST)>1 D
+ . S LST(2)="Future Diet Orders:",ILST=2
+ . S I=0 F  S I=$O(FUTLST(I)) Q:'I  D
+ . . S X=$$FMTE^XLFDT(I,2)_"  "_$P(FUTLST(I),U,2)
+ . . S LST(ILST)=$S(ILST=2:"Future Diet Orders:  "_X,1:"   "_X)
+ . . S ILST=ILST+1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

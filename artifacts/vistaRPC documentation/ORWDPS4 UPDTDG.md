@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Update Inpt order for outpatient DG to Inpt DG
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | ```
+ Q:'$D(^OR(100,+ORID,0))
+ N UDDG
+ S UDDG=$O(^ORD(100.98,"B","UD RX",0))
+ S $P(^OR(100,+ORID,0),U,11)=UDDG```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

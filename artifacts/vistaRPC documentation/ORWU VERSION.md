@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return version of package or namespace
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ S VAL=$$VERSION^XPDUTL(X)```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Can the title be an ID child?
+ Input Parameters | {::nomarkdown}ORTITLE{:/}
+ Lines | ```
+ S ORY=$$CANLINK^TIULP(ORTITLE)```
  Leading comment lines | {::nomarkdown}DBIA #2322{:/}
 
 ### Input Parameters
@@ -32,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

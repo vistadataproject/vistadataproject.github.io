@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | set action menus in GUI based on service of selected consult
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ Q:+$G(GMRCO)=0
+ N ORFLG
+ S Y=0
+ D CPRS^GMRCACTM(GMRCO,1)
+ Q:'$D(ORFLG(GMRCO))
+ S Y=ORFLG(GMRCO)```
 
 ### Input Parameters
 
@@ -31,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

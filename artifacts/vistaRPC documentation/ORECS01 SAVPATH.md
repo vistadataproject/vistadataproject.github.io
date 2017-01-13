@@ -21,8 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save user's ECS path
+ Input Parameters | {::nomarkdown}ECPATH{:/}
+ Lines | ```
+ N IX,VAL,NM,HADIT,LST,INST,LAST
+ S (IX,HADIT,INST,LAST)=0,(VAL,NM)=""
+ D GETLST^XPAR(.LST,DUZ_";VA(200,","ORWT TOOLS MENU")
+ S LAST=+$G(LST(LST))
+ F  S IX=$O(LST(IX)) Q:('IX)!HADIT  D
+ . S NM=$P($P(LST(IX),U,2),"=",1)
+ . I $$UP^XLFSTR(NM)="EVENT CAPTURE INTERFACE" S HADIT=$P(LST(IX),U)
+ S $P(ECPATH,"=",2)=$C(34)_$P(ECPATH,"=",2)_$C(34)
+ S ORY=$P(ECPATH,"=",2)
+ D:HADIT CHG^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",HADIT,ECPATH)
+ D:'HADIT ADD^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",LAST+1,ECPATH)
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

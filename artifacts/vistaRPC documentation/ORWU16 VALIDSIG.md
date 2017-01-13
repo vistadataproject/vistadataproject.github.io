@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ S X=$$DECRYP^XUSRB1(X),ESOK=0
+ D HASH^XUSHSHP
+ I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

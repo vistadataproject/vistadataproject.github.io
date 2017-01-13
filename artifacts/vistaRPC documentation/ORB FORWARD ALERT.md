@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | forward a notification
+ Input Parameters | {::nomarkdown}ORBLST<br/>ORBRECIP<br/>ORBTYPE<br/>ORBCOMNT{:/}
+ Lines | ```
+ I ORBLST="" S ORY=0 Q
+ S ORBLST(1)=ORBLST
+ D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)
+ S ORY=1```
 
 ### Input Parameters
 
@@ -34,4 +40,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

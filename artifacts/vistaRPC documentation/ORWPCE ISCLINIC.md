@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns TRUE if location is a clinic
+ Input Parameters | {::nomarkdown}ORLOC{:/}
+ Lines | ```
+ N ORTYP
+ S ORY=0
+ S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")
+ I (ORTYP="C")!(ORTYP="M") S ORY=1```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

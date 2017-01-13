@@ -15,6 +15,19 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ N TEMP
+ S ORY=""
+ I $G(^DPT(DFN,.1))="" Q
+ S TEMP=^DPT(DFN,.1)
+ S ORY=TEMP_U_+$G(^DIC(42,+$O(^DIC(42,"B",TEMP,0)),44))```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC [MAG4 REMOTE IMPORT]
+ Input Parameters | {::nomarkdown}MAGDATA{:/}
+ Lines | ```
+ I ($D(MAGDATA)<10) S MAGRY(0)="0^Missing Data Array !." Q
+ N I,J,ICT,DCT,MAGIX,IMAGES,ERR,X,Z
+ S (ERR,ICT,DCT)=0
+ S I="" F  S I=$O(MAGDATA(I)) Q:I=""  S X=MAGDATA(I) D  Q:ERR
+ . S Z=$P(X,U)
+ . I (X="")!(Z="") S MAGRY(0)="0^INVALID Data in Input Array: Node "_I_"="""_X_"",ERR=1 Q
+ . I Z="IMAGE" S ICT=ICT+1,IMAGES(ICT)=$P(X,U,2,99) Q
+ . S DCT=DCT+1,MAGIX(Z)=$P(X,U,2,99)
+ I 'ERR D IMPORT(.MAGRY,.IMAGES,.MAGIX)```
  Leading comment lines | {::nomarkdown}Import Images from a Windows App, by sending an array.{:/}
 
 ### Input Parameters
@@ -32,4 +43,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get the list of active objects
+ Lines | ```
+ N TIUDA,TIUD0,TIUI
+ S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIU OBJECTS",$J)) K @TIUY
+ F  S TIUDA=$O(^TIU(8925.1,"AT","O",TIUDA)) Q:+TIUDA'>0  D
+ . S TIUD0=$G(^TIU(8925.1,TIUDA,0)) Q:'+$$CANPICK^TIULP(+TIUDA)
+ . S TIUI=TIUI+1
+ . S @TIUY@(TIUI)=TIUDA_U_$P(TIUD0,U,1,3)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

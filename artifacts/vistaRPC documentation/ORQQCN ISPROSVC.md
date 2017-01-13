@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | IS THIS SERVICE PART OF CONSULTS-PROSTHETICS INTERFACE, wat/OR*3*280
+ Input Parameters | {::nomarkdown}GMRCIEN{:/}
+ Lines | ```
+ I $G(^GMR(123.5,$G(GMRCIEN),"INT"))=1 S ORY=1```
  Leading comment lines | {::nomarkdown}GMRCIEN - IEN of selected service{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

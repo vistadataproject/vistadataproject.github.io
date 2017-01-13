@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | long list of titles for a class
+ Input Parameters | {::nomarkdown}CLASS<br/>FROM<br/>DIR<br/>IDNOTE{:/}
+ Lines | ```
+ N I,DA,CNT S I=0,CNT=44,DIR=$G(DIR,1)
+ F  Q:I'<CNT  S FROM=$O(^TIU(8925.1,"ACL",CLASS,FROM),DIR) Q:FROM=""  D
+ . S DA=0
+ . F  Q:I'<CNT  S DA=$O(^TIU(8925.1,"ACL",CLASS,FROM,DA)) Q:+DA'>0  D
+ . . I $S(+$$CANENTR^TIULP(DA)'>0:1,+$$CANPICK^TIULP(DA)'>0:1,1:0) Q
+ . . I +$L($T(CANLINK^TIULP)),+$G(IDNOTE),(+$$CANLINK^TIULP(DA)'>0) Q
+ . . S I=I+1,Y(I)=DA_"^"_FROM```
  Leading comment lines | {::nomarkdown}.Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,<br/>DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
 
 ### Input Parameters
@@ -34,4 +43,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

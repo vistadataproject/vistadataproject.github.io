@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Should the flag display pop up upon patient selection
+ Input Parameters | {::nomarkdown}PTDFN{:/}
+ Lines | ```
+ N PRFARR
+ S POPUP=$S($$GETACT^DGPFAPI(PTDFN,"PRFARR"):1,1:0)```
  Leading comment lines | {::nomarkdown}for patient PTDFN?<br/>As of 1/10/06, returns POPUP as:<br/>1 if pt has any active flags, either Cat I or Cat II<br/>0 otherwise{:/}
 
 ### Input Parameters
@@ -32,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Send bulletin if user attempts free-text entry
+ Input Parameters | {::nomarkdown}ORDUZ<br/>ORDFN<br/>ORTEXT<br/>ORCMTS{:/}
+ Lines | ```
+ I '$D(ORCMTS) D
+ . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT)
+ E  D
+ . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT,.ORCMTS)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

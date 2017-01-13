@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Terminate PTEvt
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | ```
+ Q:'PTEVT
+ D DONE^OREVNTX(PTEVT)
+ D ACTLOG^OREVNTX(PTEVT,"MN")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

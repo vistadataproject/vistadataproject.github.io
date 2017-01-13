@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | show details for a med order
+ Input Parameters | {::nomarkdown}DFN<br/>ID{:/}
+ Lines | ```
+ K ^TMP("ORXPND",$J)
+ N LCNT,ORVP
+ S LCNT=0,ORVP=DFN_";DPT("
+ D MEDS^ORCXPND1
+ S ROOT=$NA(^TMP("ORXPND",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

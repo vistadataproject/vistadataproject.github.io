@@ -15,6 +15,15 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC will evaluate the Reminder Dialogs as the Finish button is clickfor the GEC Project. THis RPC will return an error messages if the fourGEC Reminder Dialogs are done out of order.{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>VISIT<br/>NOTEIEN{:/}
+ Lines | ```
+ D API^PXRMGECU(.ORRESULT,IEN,DFN,VISIT,1,NOTEIEN)```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -27,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

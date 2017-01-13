@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return current treating specialty
+ Input Parameters | {::nomarkdown}PTIFN{:/}
+ Lines | ```
+ Q:'PTIFN
+ N SPEC S SPEC=$$PT^DGPMOBS(PTIFN),ORY=""
+ I SPEC'<0 S ORY=$P(SPEC,U,3)_U_$P(SPEC,U,2)_U_$P(SPEC,U) ;name^ien^obs flag```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

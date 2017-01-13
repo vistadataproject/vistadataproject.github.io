@@ -21,9 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a bolus from the HOSPITAL LOCATION file
+ Input Parameters | {::nomarkdown}DIR<br/>FROM{:/}
+ Lines | ```
+ N I,IEN,CNT S CNT=44
+ I DIR=0 D  ; Forward direction
+ . F I=1:1:CNT S FROM=$O(^SC("B",FROM)) Q:FROM=""  D
+ . . S IEN=$O(^SC("B",FROM,0))
+ . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM
+ . I $G(Y(CNT))="" S Y(I)=""
+ I DIR=1 D  ; Reverse direction
+ . F I=1:1:CNT S FROM=$O(^SC("B",FROM),-1) Q:FROM=""  D
+ . . S IEN=$O(^SC("B",FROM,0))
+ . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM```
  Leading comment lines | {::nomarkdown}.Return Array, Direction, Starting Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

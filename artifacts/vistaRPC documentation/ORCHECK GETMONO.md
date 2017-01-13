@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a monograph
+ Input Parameters | {::nomarkdown}ORMONO{:/}
+ Lines | ```
+ Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))
+ K ^TMP($J,"ORMONORPC")
+ M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")
+ K ^TMP($J,"ORMONORPC",0)
+ S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

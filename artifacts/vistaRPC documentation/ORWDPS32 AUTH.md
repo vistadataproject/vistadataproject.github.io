@@ -21,8 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | For inpatient meds, check restrictions
+ Input Parameters | {::nomarkdown}PRV<br/>ORDLOG{:/}
+ Lines | ```
+ N NAME,AUTH,INACT,X,ORSDLOG,ORDL,A,IFN S VAL=0
+ S NAME=$P($G(^VA(200,PRV,20)),U,2) S:'$L(NAME) NAME=$P(^(0),U)
+ S X=$G(^VA(200,PRV,"PS")),AUTH=$P(X,U),INACT=$P(X,U,4)
+ S ORDLOG=$G(ORDLOG),ORDL=""
+ I ORDLOG?1"X".E S IFN=$E(ORDLOG,2,99),A=$P($G(^OR(100,+IFN,0)),"^",5) I $P(A,";",2)'=101.41 S ORDLOG=""
+ I ORDLOG]"" S A=$P($G(^ORD(101.41,ORDLOG,0)),"^",5) I A]"" S ORDL=$P($G(^ORD(100.98,A,0)),"^",4)
+ S ORSDLOG=$O(^ORD(101.41,"B","PSO SUPPLY",""))
+ I 'AUTH!(INACT&(DT>INACT)) D  Q
+ . I $G(ORDL)=ORSDLOG,$D(^XUSEC("ORSUPPLY",DUZ)) Q
+ . S VAL="1^"_NAME_" is not authorized to write medication orders."
+ I $D(^XUSEC("OREMAS",DUZ)),'$$GET^XPAR("ALL","OR OREMAS MED ORDERS") D  Q
+ . S VAL="1^OREMAS key holders may not enter medication orders."```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get consult list and return in GMRCY for GUI
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ N GMRCI
+ I '+$G(DFN) S GMRCY(0)=0
+ D GETCONSL(DFN,1) ;1=returns GUI format in GMRCY array
+ S GMRCY(0)=+$G(GMRCI)```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

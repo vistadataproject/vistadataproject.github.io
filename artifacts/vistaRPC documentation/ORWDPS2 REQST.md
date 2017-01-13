@@ -21,9 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return requested start time
+ Input Parameters | {::nomarkdown}DFN<br/>SCH<br/>OI<br/>LOC<br/>TXT{:/}
+ Lines | ```
+ S VAL=""
+ Q:'$L($G(SCH))  Q:'$G(OI)
+ S OI=+$P($G(^ORD(101.43,+OI,0)),U,2)
+ S LOC=+$G(^SC(LOC,42))
+ S VAL=$P($$RESOLVE^PSJORPOE(DFN,SCH,OI,TXT,LOC),U,2)```
  Leading comment lines | {::nomarkdown}VAL: FirstAdmin time{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

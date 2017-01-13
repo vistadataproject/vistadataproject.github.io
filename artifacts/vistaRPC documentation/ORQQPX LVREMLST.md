@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns cover sheet reminders at a specified level
+ Input Parameters | {::nomarkdown}LVL<br/>CLASS{:/}
+ Lines | ```
+ D REMACCUM(.ORY,LVL,"Q","",$G(CLASS))```
 
 ### Input Parameters
 
@@ -32,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

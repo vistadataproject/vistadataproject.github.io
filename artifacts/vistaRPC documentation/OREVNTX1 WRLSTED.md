@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return list of dialogs for writing event delayed orders
+ Input Parameters | {::nomarkdown}LOC<br/>EVTID{:/}
  Leading comment lines | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

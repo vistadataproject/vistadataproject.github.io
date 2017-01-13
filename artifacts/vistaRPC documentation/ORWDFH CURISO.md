@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a patient's current isolation
+ Input Parameters | {::nomarkdown}ORVP{:/}
+ Lines | ```
+ S ORVP=ORVP_";DPT(" S VAL=$P($$IP^ORMBLD,U,2)
+ I '$L(VAL) S VAL="<none>"```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

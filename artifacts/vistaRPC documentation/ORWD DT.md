@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns internal Fileman Date/Time
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ N %DT S %DT="TS" D ^%DT```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

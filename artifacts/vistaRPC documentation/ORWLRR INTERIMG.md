@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DIR<br/>FORMAT{:/}
+ Lines | ```
+ D INTERIMG^LR7OGM(.ORY,DFN,DATE1,DIR,$G(FORMAT,1))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

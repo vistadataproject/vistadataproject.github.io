@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get text of an order
+ Input Parameters | {::nomarkdown}IFN{:/}
+ Lines | ```
+ I $L(IFN,";")=1 S IFN=IFN_";1"
+ D TEXT^ORQ12(.LST,IFN,255)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get order fields TEMP
+ Input Parameters | {::nomarkdown}TXTVW<br/>ORYD<br/>IFNLST{:/}
+ Lines | ```
+ G GET41```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

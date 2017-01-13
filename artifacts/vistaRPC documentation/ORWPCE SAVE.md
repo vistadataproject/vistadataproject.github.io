@@ -21,8 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save PCE information
+ Input Parameters | {::nomarkdown}PCELIST<br/>NOTEIEN<br/>ORLOC{:/}
+ Lines | ```
+ N VSTR,GMPLUSER
+ N ZTIO,ZTRTN,ZTDTH,ZTSAVE,ZTDESC,ZTSYNC,ZTSK
+ S VSTR=$P(PCELIST(1),U,4) K ^TMP("ORWPCE",$J,VSTR)
+ M ^TMP("ORWPCE",$J,VSTR)=PCELIST
+ S GMPLUSER=$$CLINUSER^ORQQPL1(DUZ),NOTEIEN=+$G(NOTEIEN)
+ S ZTIO="ORW/PXAPI RESOURCE",ZTRTN="DQSAVE^ORWPCE1",ZTDTH=$H
+ S ZTSAVE("PCELIST(")="",ZTDESC="Data from CPRS to PCE"
+ S ZTSAVE("GMPLUSER")="",ZTSAVE("NOTEIEN")="",ZTSAVE("DUZ")=""
+ I VSTR'["E" S ZTSYNC="ORW"_VSTR
+ S ZTSAVE("ORLOC")=""
+ D ^%ZTLOAD I '$D(ZTSK) D DQSAVE^ORWPCE1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Does patient PTDFN has flags
+ Input Parameters | {::nomarkdown}PTDFN{:/}
+ Lines | ```
+ I '$L($TEXT(GETACT^DGPFAPI)) S ORY=0 Q
+ N IDY,PRFARR,CAT1
+ K ^TMP("ORPRF",$J)
+ S ORY=$$GETACT^DGPFAPI(PTDFN,"PRFARR")
+ Q:'ORY
+ D FMT(.@("PRFARR")) ; Sets ^TMP("ORPRF"
+ S IDY=0 F  S IDY=$O(^TMP("ORPRF",$J,IDY)) Q:'IDY  D
+ . S ORY(IDY)=IDY_U_$G(^TMP("ORPRF",$J,IDY,"FLAG"))
+ . S CAT1=0
+ . I $G(^TMP("ORPRF",$J,IDY,"CATEGORY"))="I (NATIONAL)" S CAT1=1
+ . S ORY(IDY)=ORY(IDY)_U_CAT1```
  Leading comment lines | {::nomarkdown}DBIA 3860: $$GETACT^DGPFAPI(PTDFN,.FLGDATA)<br/>Returns array ORY listing active assigned flags<br/>Array ORY has form:<br/>ORY(flagID) = flagID^flagname,CAT1<br/>where CAT1 is 1 if flag is cat 1, 0 if cat 2<br/>ORY = Num of items returned in array ORY = num of flags{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

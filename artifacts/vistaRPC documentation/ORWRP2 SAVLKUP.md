@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save Adhoc lookup selection
+ Input Parameters | {::nomarkdown}VAL{:/}
+ Lines | ```
+ N ORERR
+ S OK=""
+ D EN^XPAR(DUZ_";VA(200,","ORWRP ADHOC LOOKUP",1,VAL,.ORERR)
+ I ORERR S OK=VAL_":"_ORERR```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

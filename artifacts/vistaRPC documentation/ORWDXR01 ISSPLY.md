@@ -20,9 +20,17 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}DLGID<br/>QODLG{:/}
+ Lines | ```
+ S ORY=""
+ Q:'$D(^ORD(101.41,DLGID,0))
+ I 'QODLG,($P(^ORD(101.41,DLGID,0),U)="PSO SUPPLY") S ORY=1
+ I QODLG D
+ . N SPLYDG S SPLYDG=$O(^ORD(100.98,"B","SPLY",0))
+ . I $P(^ORD(101.41,DLGID,0),U,5)=SPLYDG S ORY=1```
  Leading comment lines | {::nomarkdown}ORY=1: is "PSO SUPPLY" dialog{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

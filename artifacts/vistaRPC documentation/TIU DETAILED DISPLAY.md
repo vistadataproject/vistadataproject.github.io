@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC for DT
+ Input Parameters | {::nomarkdown}TIUDA<br/>REASSIGN{:/}
+ Lines | ```
+ N VALMAR,TIUGDATA,TIUGWHOL K ^TMP("TIUAUDIT",$J)
+ S TIUY=$NA(^TMP("TIUAUDIT",$J))
+ D GET(TIUDA,1,+$G(REASSIGN))
+ K ^TMP("VALM VIDEO",$J)```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

@@ -21,6 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GET LIST OF PATIENT PROBLEMS
+ Input Parameters | {::nomarkdown}DFN<br/>CONTEXT<br/>ORIDT{:/}
+ Lines | ```
+ N DIWL,DIWR,DIWF
+ N ST,ORI,ORX
+ S ORIDT=$G(ORIDT,DT)
+ S (LCNT,NUM)=0
+ S DIWL=1,DIWR=48,DIWF="C48"
+ S CONTEXT=";;"_$G(CONTEXT)
+ I CONTEXT=";;" S CONTEXT=";;A"
+ S ST=$P(CONTEXT,";",3)
+ I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only
+ I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here
+ I ROOT(0)<1 D
+ . S LCNT=1
+ . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"```
 
 ### Input Parameters
 
@@ -31,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns TRUE if user is a Template Editor
+ Input Parameters | {::nomarkdown}ROOT<br/>USER{:/}
+ Lines | ```
+ N CLASS,TIUERR
+ S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)
+ I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"
+ E  D
+ .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)
+ .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR```
 
 ### Input Parameters
 
@@ -32,4 +40,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns TRUE if the user has access to a menu option
+ Input Parameters | {::nomarkdown}OPTION{:/}
+ Lines | ```
+ S VAL=+$$ACCESS^XQCHK(DUZ,OPTION)
+ I VAL'>0 S VAL=0
+ E  S VAL=1```
 
 ### Input Parameters
 
@@ -31,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

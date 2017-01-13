@@ -21,8 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is it an IV quick order
+ Input Parameters | {::nomarkdown}DLGID{:/}
+ Lines | ```
+ S ORY=0
+ Q:'$D(^ORD(101.41,DLGID,0))
+ N IVGRP,DLGTYP,DLGGRP
+ S IVGRP=$O(^ORD(100.98,"B","IV RX",0))
+ S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)
+ S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)
+ I (DLGTYP="Q"),(DLGGRP=IVGRP) S ORY=1
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

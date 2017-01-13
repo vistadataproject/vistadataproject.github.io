@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get site parameters for GUI
+ Lines | ```
+ N TIUPRM0,TIUPRM1
+ D SETPARM^TIULE
+ S TIUY=TIUPRM0```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

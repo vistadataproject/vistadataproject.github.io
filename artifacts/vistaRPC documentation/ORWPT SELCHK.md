@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check for sensitive pt
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ S REC=$$EN1^ORQPT2(DFN)```
  Leading comment lines | {::nomarkdown}SENSITIVE{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

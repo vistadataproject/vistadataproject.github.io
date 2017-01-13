@@ -20,6 +20,18 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORDATE<br/>ORTIUTYP<br/>ORTIUDA{:/}
+ Lines | ```
+ N ORDD,ORDIV,ORDUP,ORGOOD,ORI,ORIEN1,ORIEN2,ORLAST,ORMAX,ORMRK,ORMULTI,ORPREV,ORSRV,ORTTL,ORERR
+ S ORI=0,ORMAX=44,(ORLAST,ORPREV)="",ORDATE=$G(ORDATE) ;ORKEY=$G(ORKEY)
+ I +$G(ORTIUDA) S ORTIUTYP=+$G(^TIU(8925,+$G(ORTIUDA),0))
+ S ORMULTI=$$ALL^VASITE ; IA# 10112.  Do once at beginning of call.
+ F  Q:ORI'<ORMAX  S ORFROM=$O(^VA(200,"AUSER",ORFROM),ORDIR) Q:ORFROM=""  D
+ .S ORIEN1=""
+ .F  S ORIEN1=$O(^VA(200,"AUSER",ORFROM,ORIEN1),ORDIR) Q:'ORIEN1  D
+ ..;
+ ..I '$$PROVIDER^XUSER(ORIEN1,1) Q   ; Terminated? 
+ ..I '$$ISA^USRLM(+ORIEN1,"PROVIDER",.ORERR,ORDATE) Q  ;(USR PROVIDER CLASS CHECK?)```
  Leading comment lines | {::nomarkdown}(Set up for the DC Summary)<br/>(to use TIU doc requirments and USR PROVIDER)<br/>PARAMS from ORWU2 COSIGNER RPC call:<br/>.ORY=returned list.<br/>ORFROM=Starting name for this set.  <br/>ORDIR=Direction to move through the x-ref with $O.  <br/>ORDATE=Checks for an USR PROVIDER on this date (optional).<br/>ORTIUTYP is + of the 0 node of the 8925 docmt.  <br/>ORTIUDA is the docmt IEN,{:/}
 
 ### Input Parameters
@@ -35,4 +47,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

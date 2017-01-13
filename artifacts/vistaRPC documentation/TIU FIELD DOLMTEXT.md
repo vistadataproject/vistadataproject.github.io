@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | finds Template Fields and replaces with LM Text
+ Input Parameters | {::nomarkdown}TIULIST{:/}
+ Lines | ```
+ N I,LINE
+ S I=0
+ F  S I=$O(TIULIST(I)) Q:'I  D
+ . S TIUY(I)=$$DOLMLINE(TIULIST(I,0))```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

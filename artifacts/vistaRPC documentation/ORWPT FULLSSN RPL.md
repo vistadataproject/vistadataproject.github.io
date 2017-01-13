@@ -21,6 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return list matching Full SSN, but from RPL only.
+ Input Parameters | {::nomarkdown}ID{:/}
+ Lines | ```
+ N ORRPL,ORCNT,ORPT,ORLPT,ORPIEN
+ S ORRPL=$G(^VA(200,DUZ,101))
+ S ORRPL=$P(ORRPL,U,2)
+ I (('ORRPL)!(ORRPL="")) S LST(0)="" Q
+ S (ORCNT,ORPT)=0
+ F  S ORPT=$O(^DPT("SSN",ID,ORPT)) Q:'ORPT  D
+ .S ORLPT=0
+ .F  S ORLPT=$O(^OR(100.21,ORRPL,10,ORLPT)) Q:'ORLPT  D
+ ..S ORPIEN=+$G(^OR(100.21,ORRPL,10,ORLPT,0))
+ ..I ((ORPIEN<0)!(ORPIEN="")) Q
+ ..I (ORPIEN'=ORPT) Q
+ ..S ORCNT=ORCNT+1
+ ..S LST(ORCNT)=ORPIEN_U_$P(^DPT(ORPIEN,0),U)_U_$$DOB^DPTLK1(ORPIEN,2)_U_$$SSN^DPTLK1(ORPIEN) ; DG249.```
 
 ### Input Parameters
 
@@ -31,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

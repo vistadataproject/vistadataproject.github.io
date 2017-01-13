@@ -21,9 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | validate a quantity, return 1 if valid, 0 if not
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | ```
+ K:(+X'>0)!(+X>99999999)!(X'?.8N.1".".2N)!($L(X)>12) X
+ S OK=$S($D(X):1,1:0)```
  Leading comment lines | {::nomarkdown}to be compatible with LM, make sure X is integer from 1 to 240<br/>this is based on the input transform from 52,7{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

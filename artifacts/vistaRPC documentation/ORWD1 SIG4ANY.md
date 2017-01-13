@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 if any order requires a signature
+ Input Parameters | {::nomarkdown}ORDERS{:/}
+ Lines | ```
+ N I
+ S I=0,REQ=0
+ F  S I=$O(ORDERS(I)) Q:'I  D  Q:REQ
+ . I +$P($G(^OR(100,+ORDERS(I),0)),U,16) S REQ=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

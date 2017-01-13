@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return event prompt IEN for OR GTX EVENT
+ Input Parameters | {::nomarkdown}PRTNM{:/}
+ Lines | ```
+ S:$D(^ORD(101.41,"B","OR GTX EVENT")) ORY=$O(^("OR GTX EVENT",0))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return default lists for vitals dialog
+ Lines | ```
+ N ILST S ILST=0
+ S LST($$NXT)="~Measurements" D MEAS
+ S LST($$NXT)="~Schedules"    D SCHED```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

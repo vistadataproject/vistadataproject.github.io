@@ -21,8 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return pre-existing patient instruct
+ Input Parameters | {::nomarkdown}ODIFN{:/}
+ Lines | ```
+ N IDNUM,IDPI
+ S (IDNUM,IDPI)=0,VAL=""
+ I '$D(^OR(100,ODIFN,4.5,"ID","PI")) S VAL="" Q
+ F  S IDNUM=$O(^OR(100,ODIFN,4.5,"ID","PI",IDNUM)) Q:'IDNUM  D
+ . F  S IDPI=$O(^OR(100,ODIFN,4.5,IDNUM,2,IDPI)) Q:'IDPI  D
+ .. S VAL=VAL_^OR(100,ODIFN,4.5,IDNUM,2,IDPI,0)
+ K IDNUM,IDPI```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

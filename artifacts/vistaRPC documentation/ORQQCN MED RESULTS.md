@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Medicine results plus TIU results
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ S ORY=$NA(^TMP("ORRSLT",$J))
+ D RT^GMRCGUIA(GMRCO,ORY)```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

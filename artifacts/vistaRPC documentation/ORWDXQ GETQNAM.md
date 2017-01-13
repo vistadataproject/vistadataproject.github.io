@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return current quick name
+ Input Parameters | {::nomarkdown}CRC{:/}
+ Lines | ```
+ N ROOT S ROOT="ORWDQ "_CRC,VAL=""
+ I '$D(^ORD(101.41,"B",ROOT)) Q
+ S DLG=$O(^ORD(101.41,"B",ROOT,0))
+ I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

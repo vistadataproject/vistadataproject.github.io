@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ S VAL=0```
  Leading comment lines | {::nomarkdown}Call conversion routine for pharmacy (both inpatient and outpatient){:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

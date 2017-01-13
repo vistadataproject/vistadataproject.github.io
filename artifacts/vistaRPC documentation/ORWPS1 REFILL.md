@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Refill Request
+ Input Parameters | {::nomarkdown}ORDERID<br/>REFLOC<br/>ORVP<br/>ORNP<br/>ORL{:/}
+ Lines | ```
+ S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)
+ D REF^ORMBLDPS(ORDERID,REFLOC)
+ S Y=""
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

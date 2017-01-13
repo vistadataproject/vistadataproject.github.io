@@ -21,6 +21,20 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | SAVE NEW RECORD
+ Input Parameters | {::nomarkdown}GMPDFN<br/>GMPROV<br/>GMPVAMC<br/>ADDARRAY<br/>GMPSRCH{:/}
+ Lines | ```
+ N DA,GMPFLD,GMPORIG,S
+ S GMPSRCH=$G(GMPSRCH)
+ S RETURN=0 ;
+ L +^AUPNPROB(0):10
+ Q:'$T  ; bail out if no lock
+ S S=""
+ F  S S=$O(ADDARRAY(S)) Q:S=""  D
+ . S @ADDARRAY(S)
+ D NEW^GMPLSAVE
+ S RETURN=DA
+ L -^AUPNPROB(0)
+ S RETURN=1```
  Leading comment lines | {::nomarkdown}RETURN - Problem IFN if success, 0 otherwise<br/>ADDARRAY - array used for indirect sets of  GMPFLDS(){:/}
 
 ### Input Parameters
@@ -35,4 +49,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

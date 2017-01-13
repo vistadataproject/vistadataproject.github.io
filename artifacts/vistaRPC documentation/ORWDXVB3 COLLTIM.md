@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Collection Time Default Parameter Value
+ Lines | ```
+ S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I")```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return default lists for dialog
+ Input Parameters | {::nomarkdown}PSTYPE<br/>DFN<br/>LOC{:/}
+ Lines | ```
+ N ILST S ILST=0
+ S ILST=ILST+1,LST(ILST)="~Priority" D PRIOR
+ S ILST=ILST+1,LST(ILST)="~DispMsg"
+ S ILST=ILST+1,LST(ILST)="d"_$$DISPMSG
+ I PSTYPE="O" D                                ; Outpatient
+ . S ILST=ILST+1,LST(ILST)="~Refills"
+ . S ILST=ILST+1,LST(ILST)="d0^0"
+ . S ILST=ILST+1,LST(ILST)="~Pickup"
+ . S ILST=ILST+1,LST(ILST)="d"_$$DEFPICK($G(LOC))
+ . ; S ILST=ILST+1,LST(ILST)="~Supply"
+ . ; S ILST=ILST+1,LST(ILST)="d^"_$$DEFSPLY(DFN)```
  Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient){:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

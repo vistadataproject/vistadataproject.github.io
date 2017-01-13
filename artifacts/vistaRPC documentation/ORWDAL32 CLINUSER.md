@@ -21,8 +21,25 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | can user mark allergy as entered in error
+ Lines | ```
+ N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE
+ S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC
+ I Y=-1 S ORY=0 Q  ;Parameter not found so quit
+ S PRM=+Y
+ S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q
+ D ENVAL^XPAR(.ORLST,PRM)
+ I ORLST>0 D
+ . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D
+ . . Q:ORX'["USR(8930"
+ . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)
+ . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)
+ . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))
+ S ORY=$G(VALUE)
+ I ORY'="" Q
+ S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q
+ S ORY=0 Q```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

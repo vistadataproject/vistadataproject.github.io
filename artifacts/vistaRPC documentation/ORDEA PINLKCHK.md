@@ -21,9 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | check if the current user has an active PIN lock
+ Lines | ```
+ S ORY=0
+ Q:'$D(^XTMP("OR DEA PIN LOCK",DUZ))
+ N ORDIFF
+ S ORDIFF=$$FMDIFF^XLFDT($$NOW^XLFDT,$G(^XTMP("OR DEA PIN LOCK",DUZ)),2)
+ I ORDIFF<900 S ORY=1```
  Leading comment lines | {::nomarkdown}ORY=1 if there is an active lock and ORY=0 if no active lock{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

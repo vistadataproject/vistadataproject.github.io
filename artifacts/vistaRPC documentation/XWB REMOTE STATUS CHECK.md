@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC call to check a handle status
+ Input Parameters | {::nomarkdown}HDL{:/}
+ Lines | ```
+ N S,M,Z
+ I $G(HDL)="" S RET(0)="-1^Bad Handle" Q
+ S RET(0)=$$CHKHDL^XWBDRPC(HDL),S=$$GETNODE(HDL,"MSGID")
+ I RET(0)'["Done",$L(S) D  S $P(RET(1),"^",3)=Z
+ . S RET(1)=$$MSGSTAT^HLUTIL(S),M=+RET(1),Z=""
+ . I M=1 S Z=$S($P(RET(1),"^",5)>1:"NOT first in queue",1:"First in queue")
+ . I M=1.5 S Z="Opening connection"_$S($P(RET(1),"^",6):", open failed "_$P(RET(1),"^",6)_" times.",1:"")
+ . I M=1.7 S Z="Sent, awaiting responce"
+ . I M=2 S Z="Awaiting application ACK"```
 
 ### Input Parameters
 
@@ -31,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

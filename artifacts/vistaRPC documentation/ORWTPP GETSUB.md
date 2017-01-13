@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | ```
+ D GETSUB^ORWTPN(.VALUE,DUZ)```
  Leading comment lines | {::nomarkdown}get Ask for Subject on notes for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

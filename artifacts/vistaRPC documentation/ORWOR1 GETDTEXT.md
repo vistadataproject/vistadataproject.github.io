@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get External Text
+ Input Parameters | {::nomarkdown}ORDER{:/}
+ Lines | ```
+ N IFN,ACTION
+ S IFN=+ORDER,ACTION=$P(ORDER,";",2),I=0
+ F  S I=$O(^OR(100,+IFN,8,+ACTION,.2,I)) Q:'I  S TEXT(I)=^(I,0)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

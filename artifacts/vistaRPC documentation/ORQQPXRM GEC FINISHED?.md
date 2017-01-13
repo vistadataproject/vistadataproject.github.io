@@ -15,6 +15,15 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC pass a boolean value to PXRMGECU{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}DFN<br/>FIN{:/}
+ Lines | ```
+ D FINISHED^PXRMGECU(DFN,FIN)```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -25,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

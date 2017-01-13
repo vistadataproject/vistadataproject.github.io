@@ -21,9 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}IFN{:/}
+ Lines | ```
+ I 'IFN Q
+ N ACT,IDX,X0,X3,X8,PRV,ID,LN,TXT,STRT,STOP,CSTS,ACTID,ORIGVIEW,ORYD,TXTVW,DEA ;PKI
+ S IDX=0,LST=0,ORYD=0
+ S X0=$G(^OR(100,+IFN,0)),X3=$G(^(3))
+ S ACT=$S($P(IFN,";",2):$P(IFN,";",2),$P(X3,U,7):$P(X3,U,7),1:1)
+ S IFN=+IFN,X8=$G(^OR(100,IFN,8,ACT,0))```
  Leading comment lines | {::nomarkdown}get fields for single order<br/>.LST(n)=described above in GET<br/>IFN=internal entry # for order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get # of days for future Lab Collects
+ Input Parameters | {::nomarkdown}ORLOC<br/>ORDIV{:/}
+ Lines | ```
+ S ORDY=0
+ Q:'$D(^XTV(8989.51,"B","LR LAB COLLECT FUTURE"))
+ I $G(ORDIV) S ORDY=+$$GET^XPAR(+$G(ORLOC)_";SC("_"^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","LR LAB COLLECT FUTURE",1,"I")
+ E  S ORDY=+$$GET^XPAR(+$G(ORLOC)_";SC("_"^DIV^SYS^PKG","LR LAB COLLECT FUTURE",1,"I")```
  Leading comment lines | {::nomarkdown}For Event Delay Order<br/>--ORLOC Event default location<br/>--ORDIV Event default division{:/}
 
 ### Input Parameters
@@ -32,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

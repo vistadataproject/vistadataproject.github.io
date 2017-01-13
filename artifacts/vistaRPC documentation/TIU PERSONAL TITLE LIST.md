@@ -21,6 +21,33 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get personal list for a user
+ Input Parameters | {::nomarkdown}DUZ<br/>CLASS<br/>TIUC<br/>TIUFLG{:/}
+ Lines | ```
+ N TIUI,TIUDA,TIUDFLT,INLST
+ S TIUDA=+$O(^TIU(8925.98,"AC",DUZ,CLASS,0))
+ Q:+TIUDA'>0
+ I +$G(TIUFLG) S TIUC=1,TIUY(TIUC)="~SHORT LIST"
+ S TIUI=0,TIUC=+$G(TIUC)
+ F  S TIUI=$O(^TIU(8925.98,TIUDA,10,TIUI)) Q:+TIUI'>0  D
+ . N TIUPL,TIUTNM,TIUDTYP,TIUSEQ
+ . S TIUPL=$G(^TIU(8925.98,TIUDA,10,TIUI,0))
+ . S TIUDTYP=$P(TIUPL,U)
+ . I $S(+$$CANENTR^TIULP(TIUDTYP)'>0:1,+$$CANPICK^TIULP(TIUDTYP)'>0:1,1:0) Q
+ . S TIUTNM=$S($P(TIUPL,U,3)]"":$P(TIUPL,U,3),1:$$PNAME^TIULC1(+TIUDTYP))
+ . S TIUSEQ=+$P(TIUPL,U,2),TIUC=+$G(TIUC)+1
+ . S TIUSEQ=$S(+TIUSEQ:$S('$D(TIUY(TIUSEQ)):TIUSEQ,1:(TIUSEQ+1)),1:TIUC)
+ . S TIUY(TIUSEQ)="i"_TIUDTYP_U_TIUTNM,TIUC=+TIUSEQ
+ I +$G(TIUFLG) Q
+ S TIUDFLT=$$PERSDOC^TIULE(DUZ,+CLASS)
+ S (TIUI,TIUC)=0
+ F  S TIUI=$O(TIUY(TIUI)) Q:+TIUI'>0  D
+ . S TIUC=TIUI
+ . I +TIUDFLT,($P($G(TIUY(TIUI)),U)=("i"_+TIUDFLT)) S $P(TIUDFLT,U,2)=$P(TIUY(TIUI),U,2),INLST=TIUI
+ I +TIUDFLT D
+ . ;if default isn't in list, append it as an item
+ . I '$G(INLST) S TIUC=+$G(TIUC)+1,TIUY(TIUC)="i"_TIUDFLT
+ . ;otherwise, just append as default
+ . S TIUC=+$G(TIUC)+1,TIUY(TIUC)="d"_TIUDFLT```
 
 ### Input Parameters
 
@@ -33,4 +60,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

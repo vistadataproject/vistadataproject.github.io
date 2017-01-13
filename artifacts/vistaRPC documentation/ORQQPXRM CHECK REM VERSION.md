@@ -16,6 +16,14 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Lines | ```
+ S ORLIST=$$VERSION^XPDUTL("PXRM")```
 
 
- Generated on January 13th 2017, 6:44:47 am
+
+
+ Generated on January 13th 2017, 6:55:29 am

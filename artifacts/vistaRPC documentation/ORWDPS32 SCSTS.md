@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return service connected eligibility for patient
+ Input Parameters | {::nomarkdown}ORVP<br/>ORDRUG{:/}
+ Lines | ```
+ N ORWP94 S ORWP94=$O(^ORD(101.41,"AB","PS MEDS",0))>0
+ I $L($T(SC^PSOCP)),$$SC^PSOCP(+ORVP,+$G(ORDRUG)) S VAL=0 G XSCSTS
+ I 'ORWP94,(+$$RXST^IBARXEU(+ORVP)>0) S VAL=0 G XSCSTS
+ S VAL=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

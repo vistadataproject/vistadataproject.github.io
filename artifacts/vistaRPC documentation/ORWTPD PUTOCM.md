@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set value of "ORCH CONTEXT MEDS"
+ Input Parameters | {::nomarkdown}ORVAL{:/}
+ Lines | ```
+ I '$L(ORVAL) D DEL^XPAR("USR.`"_DUZ,"ORCH CONTEXT MEDS",1) Q
+ N ORERR S ORERR=""
+ D EN^XPAR(DUZ_";VA(200,","ORCH CONTEXT MEDS",1,ORVAL,.ORERR)
+ S ORY=ORERR
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

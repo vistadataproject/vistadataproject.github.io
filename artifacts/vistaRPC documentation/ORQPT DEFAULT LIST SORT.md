@@ -21,9 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return user's default sort.
+ Lines | ```
+ N ORSORT,ORSECT,ORPARAM
+ I ('$D(DUZ)) S Y="Unable to determine DUZ." Q
+ S ORSECT=$G(^VA(200,DUZ,5))
+ I +ORSECT>0 S ORSECT=$P(ORSECT,U)
+ S Y="A" ; Default of "Alpha" sort.
+ S ORPARAM="ORLP DEFAULT LIST ORDER"
+ S ORSORT=$$GET^XPAR("USR^SRV.`"_$G(ORSECT)_"^DIV^SYS^PKG",ORPARAM,1,"I")
+ I (ORSORT'="") S Y=ORSORT```
  Leading comment lines | {::nomarkdown}SLC/PKS - 4/6/2001{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

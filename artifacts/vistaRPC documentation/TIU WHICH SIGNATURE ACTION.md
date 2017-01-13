@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Evaluate/return whether signature or cosignature
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ N TIUD0,TIUD12,TIUSTAT,SIGNER,COSIGNER,XTRASGNR
+ S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUD12=$G(^TIU(8925,+TIUDA,12))
+ S SIGNER=$P(TIUD12,U,4),COSIGNER=$P(TIUD12,U,8)
+ I (DUZ'=SIGNER),(DUZ'=COSIGNER) S XTRASGNR=+$O(^TIU(8925.7,"AE",+TIUDA,+DUZ,0))
+ I '$G(XTRASGNR) S XTRASGNR=$$ASURG^TIUADSIG(TIUDA)
+ S TIUSTAT=+$P(TIUD0,U,5)
+ S TIUY=$S(TIUSTAT'>5:"SIGNATURE",+$G(XTRASGNR):"SIGNATURE",1:"COSIGNATURE")```
 
 ### Input Parameters
 
@@ -31,4 +40,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

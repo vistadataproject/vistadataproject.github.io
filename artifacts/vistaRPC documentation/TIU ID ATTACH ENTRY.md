@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Attach TIUDA as ID Child entry to TIUDAD
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUDAD{:/}
+ Lines | ```
+ N TIUX
+ S TIUX(2101)=TIUDAD
+ D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)
+ D AUDLINK^TIUGR1(TIUDA,"a",TIUDAD)
+ D SENDID^TIUALRT1(TIUDA)```
 
 ### Input Parameters
 
@@ -32,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

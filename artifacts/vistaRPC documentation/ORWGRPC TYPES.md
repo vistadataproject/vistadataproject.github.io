@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all the types of data on a patient (SUB=1, gets subtypes, DFN=0 gets all types), 
+ Input Parameters | {::nomarkdown}DFN<br/>SUB{:/}
+ Lines | ```
+ D TYPES^ORWGAPI("ORWGRPC",DFN,+$G(SUB))
+ S TYPES=$NA(^TMP("ORWGRPC",$J))
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

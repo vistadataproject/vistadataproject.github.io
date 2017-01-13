@@ -21,6 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get Column headers for ListView
+ Input Parameters | {::nomarkdown}IFN{:/}
+ Lines | ```
+ N I,J,X,VAL
+ Q:'$G(IFN)
+ S I=0,ROOT=$NA(ROOT)
+ F  S I=$O(^ORD(101.24,IFN,3,"C",I)) Q:'I  D
+ . S VAL=$$GET^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",IFN,"I"),J=0
+ . F  S J=$O(^ORD(101.24,IFN,3,"C",I,J)) Q:'J  I $D(^ORD(101.24,IFN,3,J)) S X=^(J,0) D
+ .. I $L(VAL),$P(VAL,",",I) S $P(X,"^",10)=$P(VAL,",",I)
+ .. D SETITEM(.ROOT,X)```
 
 ### Input Parameters
 
@@ -31,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

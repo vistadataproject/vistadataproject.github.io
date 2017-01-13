@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | True: OI of the order is for both UD and IV
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ N OI
+ S (OI,ORY)=0
+ S OI=+$O(^OR(100,+$G(ORIFN),.1,"B",0)) Q:OI<1
+ I $O(^ORD(101.43,OI,9,"B","IVM RX",0)) S ORY=1
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

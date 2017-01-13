@@ -21,6 +21,26 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Add list of Add'l Signers for a TIU Document
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIULIST{:/}
+ Lines | ```
+ N TIUI S TIUI=0
+ F  S TIUI=$O(TIULIST(TIUI)) Q:+TIUI'>0  D
+ . N DA,DIC,DLAYGO,DIE,DR,X,Y
+ . N TIUSIG,TIUSN ;TIU*1.0*255
+ . ; if current user is already an additional signer, and current user
+ . ; is NOT being removed as an additional signer, then QUIT
+ . I +$O(^TIU(8925.7,"AE",TIUDA,+TIULIST(TIUI),0)),($P(TIULIST(TIUI),U,3)'="REMOVE") Q
+ . ; if current user is being removed as a cosigner, then remove him
+ . ; TIU*255 Quit if attempting to remove someone who already signed
+ . ;I $P(TIULIST(TIUI),U,3)="REMOVE" D REMSIGNR(TIUDA,+TIULIST(TIUI)) Q
+ . S TIUSIG=$O(^TIU(8925.7,"AE",TIUDA,+TIULIST(TIUI),0)) S:$G(TIUSIG) TIUSN=$P($G(^TIU(8925.7,TIUSIG,0)),"^",4)
+ . Q:$G(TIUSN)  I $P(TIULIST(TIUI),U,3)="REMOVE" D REMSIGNR(TIUDA,+TIULIST(TIUI)) Q
+ . ; otherwise, add the current user as an additional signer
+ . S X=""""_"`"_TIUDA_"""",(DIC,DLAYGO)=8925.7,DIC(0)="LX" D ^DIC Q:+Y'>0
+ . S DIE=DIC,TIUY=$G(TIUY)_$S($G(TIUY)]"":U,1:"")_+TIULIST(TIUI)
+ . S DR=".02////"_0_";.03////"_+$G(TIULIST(TIUI))
+ . D ^DIE
+ . D SEND^TIUALRT(TIUDA)```
  Leading comment lines | {::nomarkdown}TIULIST(TIUI) [By Ref] = array of users to add/remove as signers<br/>TIUDA                  = IEN in ^TIU(8925,{:/}
 
 ### Input Parameters
@@ -33,4 +53,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

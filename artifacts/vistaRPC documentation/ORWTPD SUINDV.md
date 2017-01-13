@@ -21,9 +21,18 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set user individual time/occ setting
+ Input Parameters | {::nomarkdown}RPTS<br/>VALUE{:/}
+ Lines | ```
+ I $L(RPTS)=0 Q
+ N ORERR,RPTID,P1,P7 S ORERR=0
+ S (P1,P7)=""
+ F I=1:1:$L(RPTS,"^") S RPTID=$P(RPTS,U,I) D
+ . S P1=$P($G(^ORD(101.24,RPTID,0)),U),P7=$P($G(^(0)),U,7)
+ . I "02345"[P7,(P1'="ORRP IMAGING") D DEL^XPAR("USR.`"_DUZ,"ORWRP TIME/OCC LIMITS INDV",RPTID,.ORERR) Q
+ . D EN^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS INDV",RPTID,VALUE,.ORERR)```
  Leading comment lines | {::nomarkdown}RPTS format: RPTIen^RPTIen^RPTIen such as 1^2^3{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

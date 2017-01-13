@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | retrieve set values from dd for discharge summary urgency
+ Lines | ```
+ N TIUDD,TIUI,TIUX
+ D FIELD^DID(8925,.09,"","POINTER","TIUDD")
+ F TIUI=1:1 S TIUX=$P(TIUDD("POINTER"),";",TIUI) Q:TIUX=""   S TIUY(TIUI)=$TR(TIUX,":","^")```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

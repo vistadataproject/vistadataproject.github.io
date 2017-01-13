@@ -16,6 +16,16 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORIFN<br/>HASH<br/>OHINFO{:/}
+ Lines | ```
+ N IENS
+ D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO)```
 
 
- Generated on January 13th 2017, 6:44:48 am
+
+
+ Generated on January 13th 2017, 6:55:29 am

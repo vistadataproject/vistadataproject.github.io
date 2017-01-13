@@ -21,9 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to retrieve the status of the Billing Awareness software
+ Lines | ```
+ S Y=$D(^XPD(9.7,"B","PX CLINICAL INDICATOR DATA CAPTURE 1.0"))
+ Q:'Y
+ S Y=$$CHKPS1^ORWDBA5```
  Leading comment lines | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)<br/>Check for installation of CIDC ancillary build{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

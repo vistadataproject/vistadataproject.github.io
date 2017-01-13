@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call ^DIK to remove a Template Field
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ N DIK,DA
+ S DA=+TIUDA
+ D UNLOCK(.TIUY,.TIUDA)
+ S DIK="^TIU(8927.1," D ^DIK
+ S TIUY=1```
 
 ### Input Parameters
 
@@ -31,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

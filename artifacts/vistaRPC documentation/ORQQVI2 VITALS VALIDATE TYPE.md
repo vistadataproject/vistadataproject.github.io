@@ -20,9 +20,13 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORQTYPE{:/}
+ Lines | ```
+ S ORRETURN=$$VMTYPES^GMRVPCE0(ORQTYPE)
+```
  Leading comment lines | {::nomarkdown}This function returns one if ORQTYPE is a valid type abbrev.<br/>from the PCE Device Interface Specification.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

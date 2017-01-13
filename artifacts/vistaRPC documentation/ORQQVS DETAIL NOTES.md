@@ -21,6 +21,27 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return progress notes for a patient's visit
+ Input Parameters | {::nomarkdown}ORPT<br/>ORVIEN{:/}
+ Lines | ```
+ N ORTY,ORY,TDT,ORVI
+ S TDT=0
+ K ^TMP("TIULIST",$J)  ;DBIA 2812
+ D NOTES^TIUSRVLV(.ORY,ORVIEN)  ;DBIA 2812
+ I '+$O(^TMP("TIULIST",$J,0)) D  Q
+ . S ORVY(1)="No Progress Notes for this visit."
+ S ORVI=1
+ F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D
+ . N SEQ,TIEN S SEQ=0
+ . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D
+ . . N TSEQ K ^TMP("TIUVIEW",$J)  ;DBIA 2944
+ . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)
+ . . D TGET^TIUSRVR1(.ORTY,TIEN)  ;DBIA 2944
+ . . S TSEQ=0
+ . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D
+ . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1
+ . . S ORVY(ORVI)=" ",ORVI=ORVI+1
+ . . S ORVY(ORVI)=" ",ORVI=ORVI+1
+ K ^TMP("TIULIST",$J)```
 
 ### Input Parameters
 
@@ -32,4 +53,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

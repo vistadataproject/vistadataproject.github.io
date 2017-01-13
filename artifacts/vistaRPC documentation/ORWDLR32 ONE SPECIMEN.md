@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return one specimen
+ Input Parameters | {::nomarkdown}IEN{:/}
+ Lines | ```
+ Q:(+$G(IEN)=0)!('$D(^LAB(61,IEN,0)))
+ S LST=IEN_U_$P(^LAB(61,IEN,0),U,1)```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

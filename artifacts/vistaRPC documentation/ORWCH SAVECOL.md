@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save report column sizing information
+ Input Parameters | {::nomarkdown}COL{:/}
+ Lines | ```
+ N NAM,VAL,ORERR
+ S OK="",NAM=$P(COL,"^"),VAL=$P(COL,"^",2)
+ D EN^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",NAM,VAL,.ORERR)
+ I ORERR S OK=COL_":"_ORERR```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete Patient Event in #100.2
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | ```
+ Q:'+PTEVT
+ D CANCEL^OREVNTX(PTEVT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

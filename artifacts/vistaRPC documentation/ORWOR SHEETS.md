@@ -21,8 +21,24 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Order Sheets for a patient
+ Input Parameters | {::nomarkdown}ORVP{:/}
+ Lines | ```
+ N ELST,ETYP,ORIFN,TS,I
+ S ORVP=ORVP_";DPT("
+ S ETYP="" F  S ETYP=$O(^OR(100,"AEVNT",ORVP,ETYP)) Q:ETYP=""  D
+ . S ORIFN=0 F  S ORIFN=$O(^OR(100,"AEVNT",ORVP,ETYP,ORIFN)) Q:'ORIFN  D
+ . . I (ETYP="A")!(ETYP="T") S ELST(ETYP,$P($G(^OR(100,+ORIFN,0)),U,13))=""
+ S LST(1)="C;O^Current View",I=1
+ S TS="" F  S TS=$O(ELST("A",TS)) Q:TS=""  D
+ . S I=I+1,LST(I)="A;"_TS_U_"Admit to "_$P($G(^DIC(45.7,TS,0)),U)
+ S I=I+1,LST(I)="A;-1^Admit..."
+ S TS="" F  S TS=$O(ELST("T",TS)) Q:TS=""  D
+ . S I=I+1,LST(I)="T;"_TS_U_"Transfer to "_$P($G(^DIC(45.7,TS,0)),U)
+ I $L($G(^DPT(+ORVP,.1))) D
+ . S I=I+1,LST(I)="T;-1^Transfer..."
+ . S I=I+1,LST(I)="D;0^Discharge"```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

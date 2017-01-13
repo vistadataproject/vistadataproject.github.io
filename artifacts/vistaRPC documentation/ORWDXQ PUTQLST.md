@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save quick list
+ Input Parameters | {::nomarkdown}DG<br/>QLST{:/}
+ Lines | ```
+ N PNM
+ S PNM="ORWDQ USR"_DUZ_" "_$P(^ORD(100.98,DG,0),U,3)
+ D QVSAVE^ORWUL(.VAL,PNM,.QLST)
+ D EN^XPAR(DUZ_";VA(200,","ORWDQ QUICK VIEW","`"_DG,PNM)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

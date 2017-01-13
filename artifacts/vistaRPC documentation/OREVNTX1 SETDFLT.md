@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set personal default event
+ Input Parameters | {::nomarkdown}EVT{:/}
+ Lines | ```
+ N ERR,VAL S ERR=""
+ Q:'$D(^ORD(100.5,EVT,0))
+ S VAL=$P(^ORD(100.5,EVT,0),U)
+ D EN^XPAR(DUZ_";VA(200,","OREVNT DEFAULT",1,VAL,ERR)
+ S ORY=ERR```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

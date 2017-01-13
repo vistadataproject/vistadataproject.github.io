@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | CONSULTS SF513 DISPLAY IN GUI
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ D GUI^GMRCP5(.ORY,GMRCO)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

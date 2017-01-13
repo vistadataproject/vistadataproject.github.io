@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Order status
+ Input Parameters | {::nomarkdown}ORDID{:/}
+ Lines | ```
+ Q:'+ORDID
+ Q:'$D(^OR(100,+ORDID,0))
+ S ORY=$P($G(^OR(100,+ORDID,3)),U,3)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

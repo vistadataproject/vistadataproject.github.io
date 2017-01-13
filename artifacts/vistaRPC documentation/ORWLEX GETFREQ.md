@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call $$FREQ^LEXU to fetch the frequency of use of keywords contained in search string
+ Input Parameters | {::nomarkdown}ORSRCHTX{:/}
+ Lines | ```
+ S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679
+```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

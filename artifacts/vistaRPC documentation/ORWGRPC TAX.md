@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get reminder taxonomies
+ Input Parameters | {::nomarkdown}ALL<br/>REMTAX{:/}
+ Lines | ```
+ D TAX^ORWGAPI("ORWGRPC",+$G(ALL),.REMTAX)
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

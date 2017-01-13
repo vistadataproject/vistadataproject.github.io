@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Validate date/time entry
+ Input Parameters | {::nomarkdown}X<br/>%DT{:/}
+ Lines | ```
+ S:'$D(%DT) %DT="TX" D ^%DT```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

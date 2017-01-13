@@ -21,8 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | load consult info
+ Input Parameters | {::nomarkdown}WHY{:/}
+ Lines | ```
+ N ILST,NAM,IEN,X
+ S ILST=0
+ S LST($$NXT)="~ShortList" D SHORT
+ I WHY="C" D
+ . S LST($$NXT)="~Inpt Cslt Urgencies" D INCURG
+ I WHY="P" D
+ . S LST($$NXT)="~Inpt Proc Urgencies" D INPURG
+ S LST($$NXT)="~Outpt Urgencies" D OUTURG
+ S LST($$NXT)="~Inpt Place" D INPLACE
+ S LST($$NXT)="~Outpt Place" D OUTPLACE
+ S LST($$NXT)="~Clin Ind Date" D CID```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | list nutritional assessments
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ N OK,I,X,SITE
+ K ^TMP($J,"FHADT")
+ S OK=$$FHWORADT^FHWORA(DFN)
+ S I=0,SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)_";"_$P(SITE,"^",3)
+ F  S I=$O(^TMP($J,"FHADT",DFN,I)) Q:'I  S X=SITE_U_I_U_^(I),^(I)=X
+ S ROOT=$NA(^TMP($J,"FHADT",DFN))```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

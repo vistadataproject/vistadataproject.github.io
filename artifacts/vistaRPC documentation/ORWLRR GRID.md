@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>SPEC<br/>TESTS{:/}
+ Lines | ```
+ D GRID^ORWLRRG(.ORY,DFN,DATE1,DATE2,SPEC,.TESTS)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

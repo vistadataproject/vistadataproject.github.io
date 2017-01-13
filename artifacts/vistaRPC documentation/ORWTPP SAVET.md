@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}CLASS<br/>DEFAULT<br/>VALUES{:/}
+ Lines | ```
+ D SAVET^ORWTPN(.OK,CLASS,DEFAULT,.VALUES,DUZ)```
  Leading comment lines | {::nomarkdown}save titles for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

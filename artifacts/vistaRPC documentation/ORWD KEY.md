@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns 1 if user possesses the key
+ Input Parameters | {::nomarkdown}KEYNAME<br/>USERID{:/}
+ Lines | ```
+ S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

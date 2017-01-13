@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return true if an order has been released
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ N STS S STS=$P(^OR(100,+ORIFN,3),U,3)
+ S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

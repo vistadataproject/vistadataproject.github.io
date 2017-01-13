@@ -16,6 +16,18 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}DFN<br/>NOTEIEN{:/}
+ Lines | ```
+ N VSTR,NOTEDATE
+ D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)
+ Q:$P(VSTR,";",2)=""
+ D FASTVIT(.ORY,DFN,$P(VSTR,";",2))```
 
 
- Generated on January 13th 2017, 6:44:47 am
+
+
+ Generated on January 13th 2017, 6:55:29 am

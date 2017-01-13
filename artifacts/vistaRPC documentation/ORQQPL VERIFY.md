@@ -21,6 +21,24 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | verify a transcribed problem
+ Input Parameters | {::nomarkdown}GMPIFN{:/}
+ Lines | ```
+ N NOW,CHNGE
+ S NOW=$$HTFM^XLFDT($H)
+ I $P(^AUPNPROB(GMPIFN,1),U,2)'="T" D  Q  ; BAIL OUT - ALREADY VERIFIED
+ . S RETURN=-1
+ . S RETURN(0)="Problem Already Verified"
+ L +^AUPNPROB(GMPIFN,0):10
+ I '$T D  Q  ; BAIL OUT - NO LOCK
+ . S RETURN=-1
+ . S RETURN(0)="Record in use. Try again in a few moments"
+ S $P(^AUPNPROB(GMPIFN,1),U,2)="P"
+ S CHNGE=GMPIFN_"^1.02^"_NOW_U_DUZ_"^T^P^Verified^"_DUZ
+ D AUDIT^GMPLX(CHNGE,"")
+ D DTMOD^GMPLX(GMPIFN)
+ L -^AUPNPROB(GMPIFN,0)
+ S RETURN=1
+ S RETURN(0)=""```
  Leading comment lines | {::nomarkdown}RETURN:  ;(consistent with UPDATE function)<br/>SUCCESS:<br/>RETURN>0, RETURN(0)=""<br/>FAILURE:<br/>RETURN<0, RETURN(0)=verbose error message{:/}
 
 ### Input Parameters
@@ -32,4 +50,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

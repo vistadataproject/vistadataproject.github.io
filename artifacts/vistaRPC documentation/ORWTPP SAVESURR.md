@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}INFO{:/}
+ Lines | ```
+ D SAVESURR^ORWTPR(.OK,INFO,DUZ)```
  Leading comment lines | {::nomarkdown}save current user's surrogate info{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Display grp pointer for a dlg
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | ```
+ S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm
+ S VAL=$P($G(^ORD(101.41,DLG,0)),U,5)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

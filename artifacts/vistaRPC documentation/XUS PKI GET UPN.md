@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get SUBJECT ALTERNATIVE NAME for PIV card check. -p580
+ Lines | ```
+ S RET=$P($G(^VA(200,DUZ,501)),U,2)```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

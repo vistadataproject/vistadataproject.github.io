@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns in 'Y' the print parameters
+ Input Parameters | {::nomarkdown}LOC{:/}
+ Lines | ```
+ Q:'$G(LOC)
+ S Y=$$BLDIT(LOC)```
  Leading comment lines | {::nomarkdown}Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device<br/>Device Params returned in internal;external format, the rest are internal<br/>CC=Chart Copy<br/>L=Label<br/>R=Requisitions<br/>WC=Work Copy<br/>'Prompt for' values (internal):<br/>0 for no prompts- chart copy is automatically generated.<br/>1 to prompt for chart copy and ask which printer should be used.<br/>2 to prompt for chart copy and automatically print to the<br/>printer defined in the CHART COPY PRINT DEVICE field.<br/>* don't print.<br/>LOC=Ptr to location ^SC(LOC,{:/}
 
 ### Input Parameters
@@ -32,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

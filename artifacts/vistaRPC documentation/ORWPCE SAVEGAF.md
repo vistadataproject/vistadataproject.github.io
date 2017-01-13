@@ -21,6 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save new GAF score
+ Input Parameters | {::nomarkdown}ORINPUT{:/}
+ Lines | ```
+ N ORDATA
+ D ENT^YSGAFAP1(.ORDATA,.ORINPUT)
+ S ORY=($G(ORDATA(1))="[DATA]")```
 
 ### Input Parameters
 
@@ -31,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,23 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return list of patient orders
+ Input Parameters | {::nomarkdown}PATIENT<br/>GROUP<br/>FLAG<br/>ORSDT<br/>OREDT<br/>ORXREF<br/>GETKID{:/}
+ Lines | ```
+ N GIEN S GIEN=""
+ I $L($G(ORSDT)) D DT^DILF("T",ORSDT,.ORSDT,"","")
+ I $L($G(OREDT)) D DT^DILF("T",OREDT,.OREDT,"","")
+ I (ORSDT=-1)!(OREDT=-1) S ORY(1)="^Error in date range." Q
+ S PATIENT=PATIENT_";DPT("
+ S:$L($G(GROUP)) GIEN=$O(^ORD(100.98,"B",GROUP,GIEN))
+ K ^TMP("ORR",$J)
+ D EN^ORQ1(PATIENT,GIEN,FLAG,"",ORSDT,OREDT,1,0,$G(ORXREF),$G(GETKID))
+ N J,HOR,SEQ,X S J=1,HOR=0,SEQ=0
+ S HOR=$O(^TMP("ORR",$J,HOR)) Q:+HOR<1
+ F  S SEQ=$O(^TMP("ORR",$J,HOR,SEQ)) Q:+SEQ<1  D
+ .S X=^TMP("ORR",$J,HOR,SEQ)
+ .S ORY(J)=$P(X,U)_U_$E(^TMP("ORR",$J,HOR,SEQ,"TX",1),1,60)_U_$P(X,U,4)_U_$P(X,U,6),J=J+1
+ K ^TMP("ORR",$J)
+ S:+$G(ORY(1))<1 ORY(1)="^No orders found."```
  Leading comment lines | {::nomarkdown}return PATIENT's orders for a display GROUP of type FLAG<br/>between start (ORSDT) and end dates (OREDT)<br/>dates can be in Fileman or T, T-14 formats{:/}
 
 ### Input Parameters
@@ -36,4 +53,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

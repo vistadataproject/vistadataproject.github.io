@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return list item for the selected consult only
+ Input Parameters | {::nomarkdown}GMRCIEN{:/}
+ Lines | ```
+ N ORPT,X0,GMRCOER,SEQ,SEQ0
+ Q:+$G(GMRCIEN)=0
+ S X0=$G(^GMR(123,GMRCIEN,0)) I 'X0 S Y="-1^Consult not found" Q
+ S ORPT=$P(X0,U,2) I '$G(ORPT) S Y="-1^Patient not found" Q
+ S GMRCOER=2,SEQ=""
+ D OER^GMRCSLM1(ORPT,"","","","",GMRCOER)
+ F  S SEQ=$O(^TMP("GMRCR",$J,"CS",SEQ)) Q:SEQ=""!(SEQ?1A.E)  I SEQ>0 D
+ .S SEQ0=^TMP("GMRCR",$J,"CS",SEQ,0) I $P(SEQ0,U,1)=GMRCIEN S Y=SEQ0 Q
+ K ^TMP("GMRCR",$J)```
 
 ### Input Parameters
 
@@ -31,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

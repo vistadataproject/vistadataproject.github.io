@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get subitems from a predefined Adhoc component
+ Input Parameters | {::nomarkdown}ORSUB{:/}
+ Lines | ```
+ I '$L($T(COMPSUB^GMTSADH5)) Q
+ D COMPSUB^GMTSADH5(.ORY,ORSUB)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

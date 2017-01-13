@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default for refill location
+ Lines | ```
+ I $D(^PSX(550,"C")) S Y="M"
+ E  S Y="W"```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

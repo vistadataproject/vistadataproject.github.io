@@ -21,6 +21,43 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return report text
+ Input Parameters | {::nomarkdown}DFN<br/>RPTID<br/>HSTYPE<br/>DTRANGE<br/>EXAMID<br/>ALPHA<br/>OMEGA{:/}
+ Lines | ```
+ N X,X0,X2,X4,I,J,ENT,RTN,ID,REMOTE,GO,OUT,MAX,SITE,ORFHIE,%ZIS,HSTAG,DIRECT,TAB
+ K ^TMP("ORDATA",$J)
+ S TAB="R"
+ I $E(RPTID,1,2)="L:" S TAB="L",RPTID=$P(RPTID,":",2,999) ;an ID beginning with "L:" forces TAB to LAB - "L:" added in GUI code
+ S HSTAG=$P($G(RPTID),"~",2),RPTID=$P($G(RPTID),"~"),ROOT=$NA(^TMP("ORDATA",$J,1)),REMOTE=+$P(RPTID,";",2),RPTID=$P($P(RPTID,";"),":")
+ I 'REMOTE S DFN=+DFN ;DFN = DFN;ICN for remote calls
+ S I=0,X0="",X2="",X4="",SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)_";"_$P(SITE,"^",3)
+ F  S I=$O(^ORD(101.24,"AC",I)) Q:I=""  S J=0 F  S J=$O(^ORD(101.24,"AC",I,J)) Q:'J  D
+ . I $P($G(^ORD(101.24,J,0)),"^",2)=RPTID,$P(^(0),"^",8)=TAB S X0=^(0),X2=$G(^(2)),ORFHIE=$G(^(4)),DIRECT=$P(ORFHIE,"^",4),X4=$P(ORFHIE,"^",2),ORFHIE=$P(ORFHIE,"^",3)
+ I '$L(X0) D NOTYET(.ROOT) Q
+ S RTN=$P(X0,"^",5),ENT=$P(X0,"^",6)
+ I '$L(RTN)!'$L(ENT) D NOTYET(.ROOT) Q
+ I '$L($T(@(ENT_"^"_RTN))) D NOTYET(.ROOT) Q
+ I $G(ALPHA) D
+ . N X1,X2
+ . S X=ALPHA
+ . S X1=ALPHA,X2=$G(OMEGA) D:X2 ^%DTC ;X returned, # of days diff
+ . I X<0 S X=X*(-1)
+ . I X4,X>X4 S:ALPHA>OMEGA OMEGA=$$FMADD^XLFDT(ALPHA,-X4) S:ALPHA'>OMEGA ALPHA=$$FMADD^XLFDT(OMEGA,-X4) S DTRANGE=""
+ I X4,$G(DTRANGE)>X4 S DTRANGE=X4,ALPHA=""
+ I $L($G(DTRANGE)),'$G(ALPHA) S ALPHA=$$FMADD^XLFDT(DT,-DTRANGE),OMEGA=DT_".235959"
+ I $G(OMEGA),$E(OMEGA,8)'="." S OMEGA=OMEGA_".235959"
+ S ID=$G(HSTAG),$P(ID,";",5,10)=SITE_";"_$P(X2,"^",8)_";"_$P(X2,"^",9)_";"_RPTID_";"_$G(DIRECT) ;HDRHX CHANGE
+ I $L($P($G(HSTAG),";",4)) S MAX=$P(HSTAG,";",4)
+ I $L($G(HSTYPE)) M ID=HSTYPE
+ I $L($G(EXAMID)) M ID=EXAMID
+ S OUT=ENT_"^"_RTN_"(.ROOT,DFN,.ID,.ALPHA,.OMEGA,.DTRANGE,.REMOTE,.MAX,.ORFHIE)"
+ I REMOTE S GO=0 D  Q:'GO
+ . I '$L($T(GETDFN^MPIF001)) D SETITEM(.ROOT,"MPI routines missing on remote system ("_SITE_")") S GO=0 Q
+ . S ICN=+$P(DFN,";",2),DFN=+$$GETDFN^MPIF001(ICN)
+ . I DFN<0 D SETITEM(.ROOT,"Patient not found on remote system ("_SITE_")") S GO=0 Q
+ . S GO=+$P(X0,"^",3)
+ . I 'GO D SETITEM(.ROOT,"Remote access not available for this report ("_SITE_")")
+ S %ZIS="0N"
+ D @OUT```
  Leading comment lines | {::nomarkdown}ROOT=Output in ^TMP("ORDATA",$J)<br/>DFN=Patient DFN ; ICN for remote sites<br/>RPTID=Unique report ID_";"_Remote ID_"~"_HSComponent for listview (ent;rtn;0;MaxOcc) or text (ent;rtn;#component;MaxOcc)<br/>HSTYPE=Health Sum Type<br/>DTRANGE=# days back from today<br/>EXAMID=Rad exam ID<br/>ALPHA=Start date<br/>OMEGA=End date<br/>RPC: ORWRP REPORT TEXT{:/}
 
 ### Input Parameters
@@ -36,4 +73,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

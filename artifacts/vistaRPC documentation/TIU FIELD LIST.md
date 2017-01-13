@@ -21,9 +21,20 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Long list of Template Fields
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | ```
+ N I,DA,CNT,TIUD0,NODE
+ S I=0,CNT=80,DIR=$G(DIR,1)
+ F  Q:I'<CNT  S FROM=$O(^TIU(8927.1,"B",FROM),DIR) Q:FROM=""  D
+ . S DA=0
+ . F  Q:I'<CNT  S DA=$O(^TIU(8927.1,"B",FROM,DA)) Q:+DA'>0  D
+ .. S I=I+1,Y(I)=DA_U_FROM
+ .. S NODE=$G(^TIU(8927.1,DA,0))
+ .. I +$P(NODE,U,3) S Y(I)=Y(I)_" <Inactive>"
+ .. S Y(I)=Y(I)_U_$P(NODE,U,2)_U_$P(NODE,U,8)_U_$P(NODE,U,16)```
  Leading comment lines | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

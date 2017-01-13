@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 0 if don't ask (no ins) or 1 to ask CIDC quest (yes ins)
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | ```
+ S Y=$$CIDC^IBBAPI(DFN)```
 
 ### Input Parameters
 
@@ -31,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

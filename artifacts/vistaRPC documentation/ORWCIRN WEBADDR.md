@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get VistaWeb Address
+ Input Parameters | {::nomarkdown}PATID{:/}
+ Lines | ```
+ S ORY=$$GET^XPAR("ALL","ORWRP VISTAWEB ADDRESS",1,"I")
+ I ORY="" S ORY="https://vistaweb.domain.ext" Q
+ I ORY="https://vistaweb.domain.ext" Q
+ S ORY=ORY_"?q9gtw0="_$P($$SITE^VASITE,"^",3)_"&xqi4z="_PATID_"&yiicf="_DUZ```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

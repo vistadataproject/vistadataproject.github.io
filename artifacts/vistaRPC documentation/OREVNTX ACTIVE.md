@@ -21,9 +21,20 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns all active events [of TYPE] from #100.5
+ Input Parameters | {::nomarkdown}TYPE{:/}
+ Lines | ```
+ N NM,IEN,CNT,X0,X S CNT=0,TYPE=$G(TYPE)
+ S NM="" F  S NM=$O(^ORD(100.5,"C",NM)) Q:NM=""  D
+ . S IEN=0 F  S IEN=+$O(^ORD(100.5,"C",NM,IEN)) Q:IEN<1  D
+ .. S X0=$G(^ORD(100.5,IEN,0)) I '$L($P(X0,U,2)) D  ;Child event
+ ... S X=$P(X0,U,12) S:X $P(X0,U,2)=$P($G(^ORD(100.5,+X,0)),U,2)
+ .. I $L(TYPE),TYPE'[$P(X0,U,2) Q
+ .. Q:$O(^ORD(100.5,"DAD",IEN,0))  ;Parent event
+ .. S CNT=CNT+1,ORY(CNT)=IEN_U_X0
+ S:CNT ORY(0)=CNT```
  Leading comment lines | {::nomarkdown}where TYPE=string containing any of the codes from the TYPE field{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 if it's a pass event
+ Input Parameters | {::nomarkdown}EVTID<br/>EVTTYPE{:/}
+ Lines | ```
+ S ORY=$P($G(^ORD(100.5,+EVTID,0)),U,7)
+ I EVTTYPE="T",ORY,ORY<4 S ORY=1
+ E  S ORY=0```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

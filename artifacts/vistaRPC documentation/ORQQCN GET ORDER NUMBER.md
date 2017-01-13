@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return OERR order number for consult/procedure
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ I +$G(GMRCO)=0 S Y="-1" Q
+ S Y=$$ORIFN^GMRCUTL1(GMRCO)```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

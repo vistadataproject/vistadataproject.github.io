@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Change order's event
+ Input Parameters | {::nomarkdown}NEWEVT<br/>ORIDS{:/}
+ Lines | ```
+ N ORI
+ S ORI=0
+ F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D
+ . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a set of names from the NEW PERSON file.
+ Input Parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORKEY<br/>ORDATE<br/>ORVIZ<br/>ORALL{:/}
+ Lines | ```
+ D NP1^ORWU1```
  Leading comment lines | {::nomarkdown}SLC/PKS: Code moved to ORWU1 on 12/3/2002.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

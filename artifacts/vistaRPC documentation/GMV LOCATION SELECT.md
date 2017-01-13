@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | [Procedure] Main RPC call tag
+ Input Parameters | {::nomarkdown}OPTION<br/>DATA{:/}
+ Lines | ```
+ S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS
+ D:$T(@OPTION)]"" @OPTION
+ S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"
+ D CLEAN^DILF,KVAR^VADPT```
  Leading comment lines | {::nomarkdown}RPC: [GMV LOCATION SELECT]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
 
 ### Input Parameters
@@ -33,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

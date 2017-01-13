@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a calculated stop date
+ Input Parameters | {::nomarkdown}X2{:/}
+ Lines | ```
+ N X1,X
+ S X1=DT D C^%DTC S VAL=X
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

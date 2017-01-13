@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load a cancelled consult/procedure for editing
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | ```
+ Q:+$G(GMRCO)=0
+ N ORNODE,I
+ S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0
+ D SEND^GMRCGUIC(GMRCO,ORNODE)
+ S Y=ORNODE
+```
 
 ### Input Parameters
 
@@ -31,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

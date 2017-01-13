@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default reason for request for service
+ Input Parameters | {::nomarkdown}ORSVC<br/>ORDFN<br/>RESOLVE{:/}
+ Lines | ```
+ Q:+$G(ORSVC)=0
+ I +RESOLVE,(+$G(ORDFN)=0) Q
+ S ORY=$NA(^TMP("ORREQ",$J))
+ S:$G(RESOLVE)="" RESOLVE=0
+ D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)
+ K @ORY@(0)```
  Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 ### Input Parameters
@@ -34,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get file entries for Combobox
+ Input Parameters | {::nomarkdown}ORFILE<br/>ORFROM<br/>ORDIR{:/}
+ Lines | ```
+ D FILESEL^GMTSADH5(.OROOT,ORFILE,ORFROM,ORDIR)```
  Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS FILE LOOKUP{:/}
 
 ### Input Parameters
@@ -32,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

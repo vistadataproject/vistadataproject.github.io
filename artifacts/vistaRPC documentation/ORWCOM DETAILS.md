@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Details about a specific COM Object
+ Input Parameters | {::nomarkdown}ID{:/}
+ Lines | ```
+ N NODE
+ S ORY=0
+ I +ID D
+ .S NODE=$G(^ORD(101.15,+ID,0))
+ .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

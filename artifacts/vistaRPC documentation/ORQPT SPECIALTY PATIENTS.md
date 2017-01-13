@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN LIST OF PATIENTS LINKED TO A TREATING SPECIALTY
+ Input Parameters | {::nomarkdown}SPEC{:/}
+ Lines | ```
+ I +$G(SPEC)<1 S Y(1)="^No specialty identified" Q 
+ N ORI,DFN
+ S ORI=1,DFN=0
+ F  S DFN=$O(^DPT("ATR",SPEC,DFN)) Q:DFN'>0  S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^"),ORI=ORI+1
+ S:+$G(Y(1))<1 Y(1)="^No patients found."```
 
 ### Input Parameters
 
@@ -31,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

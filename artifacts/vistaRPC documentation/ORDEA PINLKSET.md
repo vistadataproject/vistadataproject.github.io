@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | set a PIN lock on the current user
+ Lines | ```
+ S ^XTMP("OR DEA PIN LOCK",0)=$$FMADD^XLFDT($$NOW^XLFDT,2)_U_$$NOW^XLFDT
+ S ^XTMP("OR DEA PIN LOCK",DUZ)=$$NOW^XLFDT
+ S ORY=^XTMP("OR DEA PIN LOCK",DUZ)```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

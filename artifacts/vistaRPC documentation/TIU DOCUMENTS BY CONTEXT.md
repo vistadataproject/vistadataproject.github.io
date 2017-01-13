@@ -21,6 +21,38 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | main
+ Input Parameters | {::nomarkdown}CLASS<br/>CONTEXT<br/>DFN<br/>EARLY<br/>LATE<br/>PERSON<br/>OCCLIM<br/>SEQUENCE<br/>SHOWADD<br/>INCUND{:/}
+ Lines | ```
+ S TIUY=$NA(^TMP("TIUR",$J))
+ K @TIUY
+ I $G(CONTEXT)'>0 Q
+ I $G(CLASS)'>0 Q
+ I $G(CONTEXT)=1 D STRT1^AWCMCPR1 ; TIU*1.0*181
+ S:+$G(EARLY)'>0!(+$G(CONTEXT)=1) EARLY=0
+ S:+$G(LATE)'>0!(+$G(CONTEXT)=1) LATE=5000000
+ I EARLY>LATE D SWAP(.EARLY,.LATE)
+ I $L(LATE,".")=1 D EXPRANGE(.EARLY,.LATE)
+ S:+$G(PERSON)'>0 PERSON=DUZ
+ S:$G(SEQUENCE)']"" SEQUENCE="D"
+ S:+$G(OCCLIM)'>0 OCCLIM=9999999
+ S DFN=+$G(DFN)
+ S EARLY=9999999-EARLY,LATE=9999999-LATE ; CHANGE TO REVERSE DATES
+ I CONTEXT=1!(CONTEXT=5) D  G CTXQ
+ . D ACLPT(.TIUY,CLASS,DFN,LATE,EARLY,OCCLIM,SEQUENCE)
+ I CONTEXT=2 D  G CTXQ
+ . I DFN>0 D  Q
+ . . D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))
+ . F  S DFN=$O(^TIU(8925,"ACLAU",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))
+ I CONTEXT=3 D  G CTXQ
+ . I DFN>0 D  Q
+ . . D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)
+ . F  S DFN=$O(^TIU(8925,"ACLEC",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)
+ I CONTEXT=4 D  G CTXQ
+ . I DFN>0 D  Q
+ . . ;VMP OIFO BAY PINES;ELR;TIU*1.0*194 REMOVED EXECUTION OF ACLSB & ADDED APTCL
+ . . ;D ACLSB(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)
+ . . D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)
+ . F  S DFN=$O(^TIU(8925,"APTCL",DFN)) Q:DFN'>0  D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)```
  Leading comment lines | {::nomarkdown}--- Call with:  TIUY     - RETURN ARRAY pass by reference<br/>CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1<br/>CONTEXT  - 1=All Signed (by PT),<br/>- 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))<br/>- 3="Uncosigned (by PT&EXPECTED COSIGNER<br/>- 4="Signed notes (by PT&selected author)<br/>- 5="Signed notes (by PT&date range)<br/>DFN      - Pointer to Patient (#2)<br/>[EARLY]   - FM date/time to begin search<br/>[LATE]    - FM date/time to end search<br/>[PERSON]  - Pointer to file 200 (DUZ if not passed)<br/>[OCCLIM]  - Occurrence Limit (optional)<br/>[SEQUENCE]- "A"=ascending (Regular date/time)<br/>- "D"=descending (Reverse date/time) (dflt)<br/>[INCUND]  - Boolean: include undictated & untranscribed{:/}
 
 ### Input Parameters
@@ -41,4 +73,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

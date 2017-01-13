@@ -21,6 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Implementation date of the ICD code set
+ Input Parameters | {::nomarkdown}CSYS{:/}
+ Lines | ```
+ K IDATE
+ I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q
+ S IDATE=$$IMPDATE^LEXU(CSYS)```
  Leading comment lines | {::nomarkdown}CSYS = System abbreviation for the coding system{:/}
 
 ### Input Parameters
@@ -32,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

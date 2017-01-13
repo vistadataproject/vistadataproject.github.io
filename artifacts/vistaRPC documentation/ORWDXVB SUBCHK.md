@@ -21,8 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check to see if selected test is a Blood Component or a Diagnostic Test
+ Input Parameters | {::nomarkdown}TSTNM{:/}
+ Lines | ```
+ S OROOT=""
+ Q:'$L($G(TSTNM))
+ I $O(^ORD(101.43,"S.VBT",TSTNM,0)) S OROOT="t"
+ I $O(^ORD(101.43,"S.VBC",TSTNM,0)) S OROOT="c"```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

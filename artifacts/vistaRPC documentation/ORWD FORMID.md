@@ -21,9 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ N X
+ S VAL=0,X=$P(^OR(100,+ORIFN,0),U,5)
+ Q:$P(X,";",2)'="ORD(101.41,"
+ S VAL=+$P($G(^ORD(101.41,+X,5)),U,5)```
  Leading comment lines | {::nomarkdown}Returns the Dialog Form ID{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

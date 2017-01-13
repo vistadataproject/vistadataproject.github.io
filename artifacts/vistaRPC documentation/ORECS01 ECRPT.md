@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | EC report
+ Input Parameters | {::nomarkdown}ORECARY{:/}
+ Lines | ```
+ Q:'$D(ORECARY)
+ D RPTEN^ECRRPC(.ORY,.ORECARY)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

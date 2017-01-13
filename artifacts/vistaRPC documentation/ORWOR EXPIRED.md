@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return FM date/time to begin search for expired orders
+ Lines | ```
+ N HRS
+ S HRS=$$GET^XPAR("ALL","ORWOR EXPIRED ORDERS",1,"I")
+ S ORY=$$FMADD^XLFDT($$NOW^XLFDT,"","-"_HRS,"","")
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

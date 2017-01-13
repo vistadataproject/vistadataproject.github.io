@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Schedule consult and change status
+ Input Parameters | {::nomarkdown}ORIEN<br/>ORNP<br/>ORDATE<br/>ORALRT<br/>ORALTO<br/>ORCOM{:/}
+ Lines | ```
+ N ORAD,ORDUZ,X
+ S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT)
+ S:+$G(ORNP)=0 ORNP=DUZ
+ I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q
+ I $G(ORALRT)=1 D
+ .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""
+ S ORERR=$$SCH^GMRCGUIB(ORIEN,ORNP,ORAD,.ORDUZ,.ORCOM)```
  Leading comment lines | {::nomarkdown}ORERR - return array for results/errors<br/>ORIEN - IEN of consult from File 123<br/>ORNP - Provider who Scheduled consult<br/>ORDATE - Date/Time Consult was scheduled.<br/>ORALRT - should alerts be sent to anyone?<br/>ORALTO - array of alert recipient IENs<br/>ORCOM is the comments array to be added<br/>passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
 
 ### Input Parameters
@@ -37,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return SC conditions that may be selected
+ Input Parameters | {::nomarkdown}DFN<br/>ATM<br/>LOC<br/>VST{:/}
+ Lines | ```
+ N ORX,S S S=";"
+ D SCCOND^PXUTLSCC(DFN,ATM,LOC,$G(VST),.ORX)
+ S VAL=$G(ORX("SC"))_S_$G(ORX("AO"))_S_$G(ORX("IR"))_S_$G(ORX("EC"))_S_$G(ORX("MST"))_S_$G(ORX("HNC"))_S_$G(ORX("CV"))_S_$G(ORX("SHAD"))```
  Leading comment lines | {::nomarkdown}VAL=SCallow^SCdflt;AOallow^AOdflt;IRallow^IRdflt;ECallow^ECdflt;<br/>MSTallow^MSTdflt;HNCallow^HNCdflt;CVAllow^CVDflt;SHADAllow^SHADDflt{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

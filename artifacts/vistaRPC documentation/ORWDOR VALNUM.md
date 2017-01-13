@@ -21,8 +21,19 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return error if invalid number
+ Input Parameters | {::nomarkdown}X<br/>DOM{:/}
+ Lines | ```
+ N LOW,HIGH,DEC
+ S LOW=$P(DOM,":"),HIGH=$P(DOM,":",2),DEC=$P(DOM,":",3),ERR=0
+ I $L($P(X,"."))>24 S ERR="1^Exceeded maximum number of 24 characters" Q
+ I X'?.1"-".N.1".".N S ERR="1^Entry must be numeric" Q
+ I X>HIGH!(X<LOW) S ERR="1^Out of Range - value must be between "_LOW_" and "_HIGH_" inclusive" Q
+ I $L($P(+X,".",2))>DEC D
+ . I DEC=0 S ERR="1^No decimal places allowed"
+ . E  I DEC=1 S ERR="1^Only one decimal place allowed"
+ . E  S ERR="1^No more than "_DEC_" decimal places allowed"```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

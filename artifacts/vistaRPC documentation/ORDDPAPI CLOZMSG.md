@@ -16,6 +16,17 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Lines | ```
+ N ERR,I
+ D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)
+ S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))
+```
 
 
- Generated on January 13th 2017, 6:44:48 am
+
+
+ Generated on January 13th 2017, 6:55:29 am

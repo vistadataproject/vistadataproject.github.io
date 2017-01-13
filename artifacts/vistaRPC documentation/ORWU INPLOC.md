@@ -21,9 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a set of wards from HOSPITAL LOCATION
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | ```
+ N I,IEN,CNT S I=0,CNT=44
+ F  Q:I'<CNT  S FROM=$O(^SC("B",FROM),DIR) Q:FROM=""  D  ; IA# 10040.
+ . S IEN="" F  S IEN=$O(^SC("B",FROM,IEN),DIR) Q:'IEN  D
+ . . I ($P($G(^SC(IEN,0)),U,3)'="W") Q
+ . . I '$$ACTLOC(IEN) Q
+ . . S I=I+1,Y(I)=IEN_"^"_FROM```
  Leading comment lines | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction,{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

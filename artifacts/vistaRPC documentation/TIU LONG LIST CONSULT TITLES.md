@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Handle long list of titles for CONSULTS
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | ```
+ N CLASS S CLASS=+$$CLASS^TIUCNSLT Q:+CLASS'>0
+ D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```
 
 ### Input Parameters
 
@@ -32,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

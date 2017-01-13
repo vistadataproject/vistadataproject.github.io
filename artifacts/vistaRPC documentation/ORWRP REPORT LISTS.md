@@ -21,9 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | report lists for reports tab
+ Lines | ```
+ N EOF,ROOT
+ S EOF="$$END",ROOT=$NA(LST)
+ K @ROOT
+ D GETRPTS(.ROOT,.EOF) ; -report list
+ D GETHS(.ROOT,.EOF) ; -health summary types
+ D GETDT(.ROOT,.EOF) ; -date ranges```
  Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

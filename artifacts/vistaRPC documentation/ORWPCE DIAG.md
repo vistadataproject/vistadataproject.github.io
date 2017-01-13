@@ -21,8 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get list of diagnoses for clinic
+ Input Parameters | {::nomarkdown}CLINIC<br/>ORDATE{:/}
+ Lines | ```
+ N ORI S ORI=0
+ S:'+$G(ORDATE) ORDATE=DT
+ D GETLST^IBDF18A(CLINIC,"DG SELECT ICD DIAGNOSIS CODES","LST",,,,ORDATE)
+ F  S ORI=$O(LST(ORI)) Q:+ORI'>0  D
+ . I $P(LST(ORI),U)]"" S $P(LST(ORI),U,10)=$$VLTD^ICDEX($$CODEBA^ICDEX($P(LST(ORI),U),80),DT)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

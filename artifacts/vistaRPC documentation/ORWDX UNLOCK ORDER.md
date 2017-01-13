@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Unlock order
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ D UNLK1^ORX2(ORIFN) S OK=1```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

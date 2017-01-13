@@ -21,6 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print report entry point
+ Input Parameters | {::nomarkdown}ORIO<br/>DFN<br/>ORID{:/}
+ Lines | ```
+ IF '$$CHK() G PRINTQ
+ N TASKDATA
+ S TASKDATA("DESC")="Consult Report Print"
+ S TASKDATA("RTN")="DEQUE^ORWCSP"
+ D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA)```
  Leading comment lines | {::nomarkdown}RPC: ORWCS PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -34,4 +41,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

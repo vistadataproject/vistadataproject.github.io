@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Calls the import process to import all of the fields in the
+ Lines | ```
+ D IMPORT2^TIUSRVF(.RESULT,"^TMP(""TIUFLDXML"",$J)",1)
+```
  Leading comment lines | {::nomarkdown}^TMP global for this process.  Result contains a list of NAME^X^RENAME<br/>strings.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

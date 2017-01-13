@@ -21,6 +21,23 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Can this document be attached as an ID Child
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ N TITLEDA,PARENTDA
+ S TITLEDA=+$G(^TIU(8925,TIUDA,0))
+ I TITLEDA'>0 S TIUY="0^Document #"_TIUDA_" does not exist." Q
+ S PARENTDA=+$G(^TIU(8925,TIUDA,21))
+ S TIUY=$$POSSPRNT^TIULP(TITLEDA)
+ I +TIUY S TIUY="-1"_U_$P(TIUY,U,2) Q
+ I +$$ISCWAD^TIULX(TITLEDA) D  Q
+ . S TIUY="0^ CWAD Documents may not be Attached as Interdisciplinary Entries."
+ I +$$ISA^TIULX(TITLEDA,+$$CLASS^TIUCNSLT) D  Q
+ . S TIUY="0^ Consult Results may not be Attached as Interdisciplinary Entries."
+ S TIUY=$$CANDO^TIULP(TIUDA,"ATTACH TO ID NOTE")
+ I PARENTDA D  ; action must be "detach"
+ . I 'TIUY S TIUY="0^ You may not detach this note from an interdisciplinary note." Q
+ . S TIUY=$$CANDO^TIULP(PARENTDA,"ATTACH ID ENTRY")
+ . I 'TIUY S TIUY="0^ You may not detach this note from its interdisciplinary note."```
 
 ### Input Parameters
 
@@ -31,4 +48,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

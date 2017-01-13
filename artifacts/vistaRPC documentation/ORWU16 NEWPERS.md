@@ -21,9 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a bolus from the NEW PERSON file
+ Input Parameters | {::nomarkdown}DIR<br/>FROM<br/>KEY{:/}
+ Lines | ```
+ N I,IEN,CNT S CNT=44,KEY=$G(KEY)
+ I DIR=0 D  ; Forward direction
+ . F I=1:1:CNT S FROM=$O(^VA(200,"B",FROM)) Q:FROM=""  D
+ . . S IEN=$O(^VA(200,"B",FROM,0)) I $L(KEY),'$D(^XUSEC(KEY,IEN)) Q
+ . . S Y(I)=IEN_"^"_FROM
+ . I $G(Y(CNT))="" S Y(I)=""
+ I DIR=1 D  ; Reverse direction
+ . F I=1:1:CNT S FROM=$O(^VA(200,"B",FROM),-1) Q:FROM=""  D
+ . . S IEN=$O(^VA(200,"B",FROM,0)) I $L(KEY),'$D(^XUSEC(KEY,IEN)) Q
+ . . S Y(I)=IEN_"^"_FROM```
  Leading comment lines | {::nomarkdown}.Return Array, Direction, Starting Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

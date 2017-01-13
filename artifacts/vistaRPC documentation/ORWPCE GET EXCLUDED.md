@@ -21,6 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns list of excluded PCE data elements
+ Input Parameters | {::nomarkdown}LOC<br/>TYPE{:/}
+ Lines | ```
+ N SRV,PARAM
+ S PARAM=$S(TYPE=1:"IMMUNIZATIONS",TYPE=2:"SKIN TESTS",TYPE=3:"PATIENT ED",TYPE=4:"HEALTH FACTORS",TYPE=5:"EXAMS",1:"")
+ Q:PARAM=""
+ S SRV=$P($G(^VA(200,DUZ,5)),U)
+ S PARAM="ORWPCE EXCLUDE "_PARAM
+ D GETLST^XPAR(.ORY,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG",PARAM,"Q",.ORERR)```
 
 ### Input Parameters
 
@@ -32,4 +40,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

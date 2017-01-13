@@ -21,9 +21,34 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return dietetics parameters for a patient at a location
+ Input Parameters | {::nomarkdown}ORVP<br/>ORLOC{:/}
+ Lines | ```
+ Q:'+ORVP
+ N X,IEN,CURTM
+ S ORVP=+ORVP_";DPT(",ORLOC=+ORLOC
+ S CURTM=$$NOW^XLFDT
+ I +$G(^SC(ORLOC,42)) S ORLOC=$G(^SC(ORLOC,42))_";DIC(42"
+ E  S ORLOC=ORLOC_";SC("
+ D EN1^FHWOR8(ORLOC,.ORLST)
+ S:'$D(ORLST(1)) ORLST(1)="" S:'$D(ORLST(2)) ORLST(2)="" ;p375 corrected array return for missing/invalid location
+ I '$L($G(ORLST(3))) S ORLST(3)="TCD" ;p375 changed default from "T" to "TCD" 
+ S $P(ORLST(3),U,2)=$O(^ORD(101.43,"S.DIET","REGULAR",0))
+ S $P(ORLST(3),U,3)=$O(^ORD(101.43,"S.DIET","NPO",0))
+ S $P(ORLST(3),U,4)=$O(^ORD(101.43,"S.E/L T","EARLY TRAY",0))
+ S $P(ORLST(3),U,5)=$O(^ORD(101.43,"S.E/L T","LATE TRAY",0))
+ N TF S TF=$$CURRENT^ORCDFH("TF") I $L(TF,";")=1 S TF=TF_";1"
+ I TF,'$$FUTURE^ORCDFH("EFFECTIVE DATE/TIME") S $P(ORLST(3),U,6)=TF
+ I $$VERSION^XPDUTL("FH")>5 D
+ . S ORLST(4)=$$MAXDAYS^FHOMAPI(ORLOC)
+ . D DIETLST^FHOMAPI Q:'$G(FHDIET(1))
+ . S IEN=$O(^ORD(101.43,"ID",$P(FHDIET(1),U,1)_";99FHD",0)) Q:+IEN=0
+ . S X=^ORD(101.43,"S.DIET",$P(FHDIET(1),U,2),IEN)
+ . I +$P(X,U,3),$P(X,U,3)<CURTM Q
+ . I $P($G(^ORD(101.43,IEN,"FH")),U)'="D",($P($G(^(0)),U)'="NPO") Q
+ . S ORLST(5)=+$G(IEN)```
  Leading comment lines | {::nomarkdown}ORLOC: hospital location ptr to ^SC #44<br/>ORLST(1)=EB1^EB2^EB3^LB1^LB2^LB3^EN1^EN2^...LE2^LE3<br/>ORLST(2)=BAB^BAE^NAB^NAE^EAB^EAE^BegB^BegN^BegE^Bagged<br/>ORLST(3)=type of service^RegIEN^NPOIEN^EarlyIEN^LateIEN^TFIFN<br/>ORLST(4)=max days in future for outpatient recurring meals<br/>ORLST(5)=default outpatient diet{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

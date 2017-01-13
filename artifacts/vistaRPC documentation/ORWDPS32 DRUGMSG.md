@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return any message associated with a dispense drug
+ Input Parameters | {::nomarkdown}IEN{:/}
+ Lines | ```
+ N X S X=$$ENDCM^PSJORUTL(IEN)
+ S VAL=$P(X,U,2)_U_$P(X,U,4)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

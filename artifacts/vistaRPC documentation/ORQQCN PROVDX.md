@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return provisional dx prompting info for service
+ Input Parameters | {::nomarkdown}ORIEN{:/}
+ Lines | ```
+ S ORY=$$PROVDX^GMRCUTL1(ORIEN)```
 
 ### Input Parameters
 
@@ -31,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

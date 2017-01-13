@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return parent patient event from #100.2
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | ```
+ Q:'+PTEVT
+ S ORY=""
+ S:$L($G(^ORE(100.2,PTEVT,1))) ORY=$P(^(1),U,5)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

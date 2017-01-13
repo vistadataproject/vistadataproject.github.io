@@ -21,6 +21,16 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete expiring flagged OI notification if no flagged expiring OI remaining
+ Input Parameters | {::nomarkdown}ORDFN<br/>ORNIFN{:/}
+ Lines | ```
+ N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")
+ D AGET^ORWORR(.ORLST,ORDFN,5,ORDG)
+ Q:+(@ORLST@(.1))  ;more left
+ N XQAKILL,ORVP
+ S ORVP=ORDFN_";DPT("
+ S XQAKILL=$$XQAKILL^ORB3F1(ORNIFN) ; flagged expiring OI notifications
+ I $D(XQAID) D DELETE^XQALERT
+ I '$D(XQAID) S XQAID=$P($G(^ORD(100.9,ORNIFN,0)),U,2)_","_+ORVP_","_ORNIFN D DELETEA^XQALERT K XQAID```
 
 ### Input Parameters
 
@@ -32,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

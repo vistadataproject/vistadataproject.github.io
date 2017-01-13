@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Should OpTop be displayed on signature?
+ Input Parameters | {::nomarkdown}ORCASE{:/}
+ Lines | ```
+ I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q
+ S ORY=$$OPTOP^SROESTV(+ORCASE)```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,9 +21,14 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | alert user (ORDUZ) when order (ORID) resulted
+ Input Parameters | {::nomarkdown}ORID<br/>ORDUZ{:/}
+ Lines | ```
+ I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)
+ I $L($G(ORDUZ))<1 S ORDUZ=DUZ
+ S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ```
  Leading comment lines | {::nomarkdown}if no user passed, use ordering provider:{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

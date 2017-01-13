@@ -21,6 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | SAVE EDITED RES
+ Input Parameters | {::nomarkdown}GMPIFN<br/>GMPROV<br/>GMPVAMC<br/>UT<br/>EDARRAY<br/>GMPSRCH{:/}
+ Lines | ```
+ N GMPFLD,GMPORIG,S,GMPLUSER
+ S GMPSRCH=$G(GMPSRCH)
+ S RETURN=1 ; initialize for success
+ I UT S GMPLUSER=1
+ S S=""
+ F  S S=$O(EDARRAY(S)) Q:S=""  D
+ . S @EDARRAY(S)
+ I $D(GMPFLD(10,"NEW"))>9 D  I 'RETURN Q  ; Bail Out if no lock
+ . L +^AUPNPROB(GMPIFN,11):10  ; given bogus nature of this lock, should be able to get
+ . I '$T S RETURN=0
+ D EN^GMPLSAVE  ; save the data
+ K GMPFLD,GMPORIG
+ L -^AUPNPROB(GMPIFN,11)  ; free this instance of lock (in case it was set)
+ S RETURN=1```
  Leading comment lines | {::nomarkdown}RETURN - boolean, 1 success, 0 failure<br/>EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS(){:/}
 
 ### Input Parameters
@@ -34,4 +50,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

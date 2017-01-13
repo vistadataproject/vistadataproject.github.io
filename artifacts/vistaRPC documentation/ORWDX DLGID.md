@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return dlg IEN for order
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | ```
+ S VAL=$P(^OR(100,+ORIFN,0),U,5)
+ S VAL=$S($P(VAL,";",2)="ORD(101.41,":+VAL,1:0)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

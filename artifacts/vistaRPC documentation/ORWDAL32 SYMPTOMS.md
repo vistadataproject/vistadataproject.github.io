@@ -21,9 +21,22 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a subset of symptoms
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | ```
+ N I,IEN,CNT,X,NAME,SUB S I=0,CNT=44 ;233
+ K ^TMP($J,"SIGNS") ;233
+ M ^TMP($J,"SIGNS","B")=^GMRD(120.83,"B") ;233
+ S SYN="" F  S SYN=$O(^GMRD(120.83,"D",SYN)) Q:SYN=""  S SUB=0 F  S SUB=$O(^GMRD(120.83,"D",SYN,SUB)) Q:'+SUB  D  ;233
+ .S NAME=$P(^GMRD(120.83,SUB,0),U) S ^TMP($J,"SIGNS","B",(SYN_$C(9)_"<"_NAME_">"_U_NAME),SUB)="" ;233
+ F  Q:I'<CNT  S FROM=$O(^TMP($J,"SIGNS","B",FROM),DIR) Q:FROM=""  D  ;233
+ . I FROM="OTHER REACTION" Q  ;Don't send this entry
+ . S IEN=0 F  S IEN=$O(^TMP($J,"SIGNS","B",FROM,IEN)) Q:'IEN  D  ;233
+ . . I $L($T(SCREEN^XTID)) I $$SCREEN^XTID(120.83,.01,IEN_",") Q  ;233 Is term active
+ . . S I=I+1
+ . . S Y(I)=IEN_U_FROM```
  Leading comment lines | {::nomarkdown}.Return Array, Starting Text, Direction{:/}
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

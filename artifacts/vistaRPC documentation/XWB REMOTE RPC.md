@@ -21,6 +21,17 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call a remote RPC
+ Input Parameters | {::nomarkdown}LOC<br/>RPC<br/>RPCVER<br/>P1<br/>P2<br/>P3<br/>P4<br/>P5<br/>P6<br/>P7<br/>P8<br/>P9<br/>P10{:/}
+ Lines | ```
+ N I,INX,N,PMAX,RPCIEN,X,XWBDVER,XWBESSO,XWBHDL,XWBHL7,XWBMSG
+ N XWBPAR,XWBPCNT,XWBSEC,ZTDESC,ZTDTH,ZTIO,ZTRTN,ZTSAVE,ZTSK
+ D SETUP(1) I $G(RET(1))'="" QUIT  ;->
+ S ZTSAVE("*")="",ZTRTN="DEQ^XWB2HL7C",ZTDTH=$H,ZTIO=""
+ S ZTDESC="RPC Broker queued call from EN1~XWB2HL7"
+ D ^%ZTLOAD
+ I $G(ZTSK)'>0 S RET(0)="-1^Failed to task" QUIT  ;->
+ S RET(0)=XWBHDL
+ D SETNODE^XWBDRPC(XWBHDL,"TASK",ZTSK)```
  Leading comment lines | {::nomarkdown}with 1-10 parameters.<br/>(This reworked EN1 emtry point replaces the original EN1 entry point,<br/>which was renamed OLDEN1.){:/}
 
 ### Input Parameters
@@ -35,4 +46,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

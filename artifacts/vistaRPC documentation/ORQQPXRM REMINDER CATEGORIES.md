@@ -15,6 +15,15 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns list of all CPRS lookup categories and associated reminders{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
+ Lines | ```
+ D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -25,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

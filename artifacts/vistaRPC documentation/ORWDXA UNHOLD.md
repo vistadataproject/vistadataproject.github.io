@@ -21,8 +21,13 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Release order from hold
+ Input Parameters | {::nomarkdown}ORID<br/>ORNP{:/}
+ Lines | ```
+ N ACTDA
+ S ACTDA=$$ACTION^ORCSAVE("RL",+ORID,ORNP)
+ D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

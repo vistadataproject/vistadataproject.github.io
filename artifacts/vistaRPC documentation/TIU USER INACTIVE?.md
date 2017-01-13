@@ -21,6 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is user inactive?
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I")```
 
 ### Input Parameters
 
@@ -31,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

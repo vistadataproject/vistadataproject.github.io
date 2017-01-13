@@ -21,6 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Decrement Lock on a TIU Document record
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | ```
+ L -^TIU(8925,+TIUDA) S ERR=0
+```
 
 ### Input Parameters
 
@@ -31,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

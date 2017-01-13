@@ -21,6 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
+ Input Parameters | {::nomarkdown}TITLE{:/}
+ Lines | ```
+ N TIUCLASS
+ S TIUCLASS=+$$CLASS
+ I +TIUCLASS'>0 S TIUY=0 Q
+ S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
 
 ### Input Parameters
 
@@ -31,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:28 am

@@ -15,6 +15,17 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Dialog for a given dialog ien.{:/}
 
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORDLG<br/>DFN{:/}
+ Lines | ```
+ D DIALOG^PXRMRPCD(.ORY,ORDLG,DFN)
+ I $P($G(ORY(1)),U)=-1 Q
+ S ORY(0)=0_U_+$P($G(^PXRMD(801.41,ORDLG,0)),U,17)```
+
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -24,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

@@ -21,8 +21,12 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get data of an item on patient (glucose results)
+ Input Parameters | {::nomarkdown}ITEM<br/>START<br/>DFN{:/}
+ Lines | ```
+ D ITEMDATA^ORWGAPI("ORWGRPC",ITEM,START,DFN)
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 6:44:48 am
+ Generated on January 13th 2017, 6:55:29 am

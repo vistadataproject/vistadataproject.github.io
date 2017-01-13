@@ -21,8 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | clear ORECALL
+ Lines | ```
+ S OK=1
+ K ^TMP("ORECALL",$J),^TMP("ORWDXMQ",$J)```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

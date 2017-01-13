@@ -21,6 +21,19 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return def lists for dialog
+ Input Parameters | {::nomarkdown}PSTYPE<br/>DFN<br/>LOCIEN{:/}
+ Lines | ```
+ N ILST S ILST=0
+ I PSTYPE="F" D  Q                       ; IV Fluids
+ . S LST($$NXT)="~ShortList"  D SHORT
+ . S LST($$NXT)="~Priorities" D PRIOR
+ . ;S LST($$NXT)="~Schedules"  D SCHED(LOCIEN)
+ . S LST($$NXT)="~Route" D IVROUTE
+ S LST($$NXT)="~ShortList"  D SHORT      ; Unit Dose & Outpt
+ S LST($$NXT)="~Priorities" D PRIOR
+ I PSTYPE="O" D                          ; Outpt
+ . S LST($$NXT)="~Pickup"   D PICKUP
+ . S LST($$NXT)="~SCStatus" D SCLIST```
  Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt){:/}
 
 ### Input Parameters
@@ -34,4 +47,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

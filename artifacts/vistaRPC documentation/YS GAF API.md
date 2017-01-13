@@ -16,6 +16,21 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}YS{:/}
+ Lines | ```
+ N YSBEG,YSEND,YSLIMIT
+ K YSDATA
+ D PARSE(.YS)
+ I DFN'>0 S YSDATA(1)="[ERROR]",YSDATA(2)="No dfn" Q
+ S YSDATA(1)="[DATA]"
+ S N=1
+ D HXLP```
 
 
- Generated on January 13th 2017, 6:44:47 am
+
+
+ Generated on January 13th 2017, 6:55:29 am

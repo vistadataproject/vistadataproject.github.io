@@ -21,6 +21,15 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Change ITEMs of a group, class, or root
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
+ Lines | ```
+ N TIUI S TIUI=0
+ D CLRITMS(TIUDA) ; Remove ITEMS
+ F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D
+ . N TIUITEM,TIUSUCC
+ . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI
+ . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)
+ . S SUCCESS(TIUI)=TIUSUCC```
  Leading comment lines | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
 
 ### Input Parameters
@@ -33,4 +42,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am

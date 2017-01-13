@@ -21,8 +21,21 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | True: is verbal or telephoned or policy order
+ Input Parameters | {::nomarkdown}ODIEN{:/}
+ Lines | ```
+ S ORY=0
+ Q:'$D(^OR(100,+ODIEN,0))
+ N VERB,TEL,POL,LSTACT,NATR
+ S (VERB,TEL,POL,LSTACT)=0,NATR=""
+ S VERB=$O(^ORD(100.02,"B","VERBAL",0))
+ S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))
+ S POL=$O(^ORD(100.02,"B","POLICY",0))
+ S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)
+ S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)
+ I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1
+```
 
 
 
 
- Generated on January 13th 2017, 6:44:47 am
+ Generated on January 13th 2017, 6:55:29 am
