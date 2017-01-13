@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR VWGET
- tag | VWGET
+ label | {::nomarkdown}ORWOR VWGET{:/}
+ tag | {::nomarkdown}VWGET{:/}
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
- return value type | SINGLE VALUE
- description | Retrieves the user's default view for the orders tab.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Retrieves the user's default view for the orders tab.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

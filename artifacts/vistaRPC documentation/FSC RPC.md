@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | FSC RPC
- tag | RPC
+ label | {::nomarkdown}FSC RPC{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [FSCRPX](http://code.osehra.org/dox/Routine_FSCRPX_source.html)
- return value type | GLOBAL ARRAY
- description | NOIS remote procedure entry. All RPCs for NOIS route through this entry.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}NOIS remote procedure entry. All RPCs for NOIS route through this entry.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

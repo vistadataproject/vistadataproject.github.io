@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV UPDATE SUBFILE MULT
- tag | ADDUPD
+ label | {::nomarkdown}DSIV UPDATE SUBFILE MULT{:/}
+ tag | {::nomarkdown}ADDUPD{:/}
  routine | [DSIVIC2](http://code.osehra.org/dox/Routine_DSIVIC2_source.html)
- return value type | ARRAY
- description | Allows editing of multiple entries in a FileMan multiple at one time.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Allows editing of multiple entries in a FileMan multiple at one time.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 20 | true | Contains the file# to add/edit data. | 
-| IEN | LITERAL | 30 | true | Contains the IEN of the entry to add/edit. | 
-| DATA | LIST | 50 | true | Array holding entries for adding:   DATA(n)=$START   DATA(n)=field^value   DATA(n)=field^value   DATA(n)=$END  for updating:    DATA(n)=$START    DATA(n)=SubfieldIEN^field^value    DATA(n)=SubfieldIEN^field^value    DATA(n)=$END  | 
-| FLAG | LITERAL | 1 | true | FLAG=0 to add entries to a multiple,FLAG=1 to update entries in a multiple. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the file# to add/edit data.{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the IEN of the entry to add/edit.{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array holding entries for adding:   DATA(n)=$START   DATA(n)=field^value   DATA(n)=field^value   DATA(n)=$END  for updating:    DATA(n)=$START    DATA(n)=SubfieldIEN^field^value    DATA(n)=SubfieldIEN^field^value    DATA(n)=$END {:/} | 
+| {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FLAG=0 to add entries to a multiple,FLAG=1 to update entries in a multiple.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

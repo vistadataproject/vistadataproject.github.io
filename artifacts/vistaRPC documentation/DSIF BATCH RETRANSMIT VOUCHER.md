@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH RETRANSMIT VOUCHER
- tag | VOUCH
+ label | {::nomarkdown}DSIF BATCH RETRANSMIT VOUCHER{:/}
+ tag | {::nomarkdown}VOUCH{:/}
  routine | [DSIFBAT9](http://code.osehra.org/dox/Routine_DSIFBAT9_source.html)
- return value type | SINGLE VALUE
- description |  ; Input : FBN: batch IEN ; Output: FBOUT: returns 1 and success message if successful, -1 and error message if failed
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown} ; Input : FBN: batch IEN ; Output: FBOUT: returns 1 and success message if successful, -1 and error message if failed{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBN | LITERAL | 9 | true | Batch IEN | 
+| {::nomarkdown}FBN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV CONVERT DATE
- tag | GETDT
+ label | {::nomarkdown}GMV CONVERT DATE{:/}
+ tag | {::nomarkdown}GETDT{:/}
  routine | [GMVGETQ](http://code.osehra.org/dox/Routine_GMVGETQ_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure call converts a user-supplied date/time into VAFileMan's internal and external date format. This remote procedure call is documented in Integration Agreement 4353.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure call converts a user-supplied date/time into VAFileMan's internal and external date format. This remote procedure call is documented in Integration Agreement 4353.{:/}
 
 
 ### Method description
@@ -21,15 +21,18 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | GMV CONVERT DATE [RPC entry point]
- Leading comment lines | INPUT VARIABLE:,GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER,OUTPUT VARIABLE:,RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME
+ Leading comment lines | INPUT VARIABLE:
+GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER
+OUTPUT VARIABLE:
+RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMRDATE | LITERAL | 30 | true | GMRDATE is the user-supplied date/time text. | 
+| {::nomarkdown}GMRDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMRDATE is the user-supplied date/time text.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM HCT
- tag | HCT
+ label | {::nomarkdown}ORAM HCT{:/}
+ tag | {::nomarkdown}HCT{:/}
  routine | [ORAM](http://code.osehra.org/dox/Routine_ORAM_source.html)
- return value type | SINGLE VALUE
- description | Returns the patient's most recent Hematocrit (HCT).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the patient's most recent Hematocrit (HCT).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

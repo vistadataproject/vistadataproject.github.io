@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD SIGN
- tag | SIGN
+ label | {::nomarkdown}ORWD SIGN{:/}
+ tag | {::nomarkdown}SIGN{:/}
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
- return value type | ARRAY
- description | Changes signature status on a list of orders and optionally releases theorders to their respective services.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Changes signature status on a list of orders and optionally releases theorders to their respective services.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

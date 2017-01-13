@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY VENDOR DETAILS
- tag | VENDISP
+ label | {::nomarkdown}DSIF PAY VENDOR DETAILS{:/}
+ tag | {::nomarkdown}VENDISP{:/}
  routine | [DSIFPAY0](http://code.osehra.org/dox/Routine_DSIFPAY0_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBDA | LITERAL | 23 | true | IEN of the Vendor in file Fee Basis Vendor File | 
+| {::nomarkdown}FBDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}23{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the Vendor in file Fee Basis Vendor File{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

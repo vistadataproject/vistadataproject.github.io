@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH OPEN USER
- tag | USERBATS
+ label | {::nomarkdown}DSIF BATCH OPEN USER{:/}
+ tag | {::nomarkdown}USERBATS{:/}
  routine | [DSIFPAY0](http://code.osehra.org/dox/Routine_DSIFPAY0_source.html)
- return value type | ARRAY
- description | Returns splash screen of open batches identical to the routine ^FBAASTA
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns splash screen of open batches identical to the routine ^FBAASTA{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL | 45 | true | User IEN for open batches | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} | {::nomarkdown}User IEN for open batches{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

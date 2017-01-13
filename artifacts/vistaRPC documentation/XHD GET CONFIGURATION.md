@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD GET CONFIGURATION
- tag | GETTREE
+ label | {::nomarkdown}XHD GET CONFIGURATION{:/}
+ tag | {::nomarkdown}GETTREE{:/}
  routine | [XHDPTREE](http://code.osehra.org/dox/Routine_XHDPTREE_source.html)
- return value type | GLOBAL ARRAY
- description | Returns Configuration tree as XML in the following format:
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns Configuration tree as XML in the following format:{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MODULEID | LITERAL |  | true | This is the module id for the module in question. | 
+| {::nomarkdown}MODULEID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the module id for the module in question.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

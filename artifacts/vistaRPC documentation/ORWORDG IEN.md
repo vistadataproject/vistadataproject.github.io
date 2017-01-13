@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORDG IEN
- tag | IEN
+ label | {::nomarkdown}ORWORDG IEN{:/}
+ tag | {::nomarkdown}IEN{:/}
  routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
- return value type | SINGLE VALUE
- description | Returns IEN of a display group.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns IEN of a display group.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

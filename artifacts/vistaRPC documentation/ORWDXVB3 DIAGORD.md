@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB3 DIAGORD
- tag | DIAGORD
+ label | {::nomarkdown}ORWDXVB3 DIAGORD{:/}
+ tag | {::nomarkdown}DIAGORD{:/}
  routine | [ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
- return value type | ARRAY
- description | Get sequence order of Diagnostic Tests for selection.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get sequence order of Diagnostic Tests for selection.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

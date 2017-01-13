@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL AUDIT HIST
- tag | HIST
+ label | {::nomarkdown}ORQQPL AUDIT HIST{:/}
+ tag | {::nomarkdown}HIST{:/}
  routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
- return value type | ARRAY
- description | RETURN PROBLEM AUDIT HISTORY
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURN PROBLEM AUDIT HISTORY{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMPIFN | LITERAL |  |  | INTERNAL FILE NUMBER FOR PROBLEM | 
+| {::nomarkdown}GMPIFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}INTERNAL FILE NUMBER FOR PROBLEM{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

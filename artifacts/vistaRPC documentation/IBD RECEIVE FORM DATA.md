@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD RECEIVE FORM DATA
- tag | RECV
+ label | {::nomarkdown}IBD RECEIVE FORM DATA{:/}
+ tag | {::nomarkdown}RECV{:/}
  routine | [IBDFBK2](http://code.osehra.org/dox/Routine_IBDFBK2_source.html)
- return value type | ARRAY
- description | This RPC is to be used by the AICS workstation software only.  It acceptsdata in the format returned by the scanning software and converts thedata in the format expected by PCE and passes the data to PCE.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is to be used by the AICS workstation software only.  It acceptsdata in the format returned by the scanning software and converts thedata in the format expected by PCE and passes the data to PCE.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FORMDATA | LIST | 245 | true | This is the input data. | 
+| {::nomarkdown}FORMDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the input data.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

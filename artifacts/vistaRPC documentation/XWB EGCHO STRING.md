@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB EGCHO STRING
- tag | ECHO1
+ label | {::nomarkdown}XWB EGCHO STRING{:/}
+ tag | {::nomarkdown}ECHO1{:/}
  routine | [XWBZ1](http://code.osehra.org/dox/Routine_XWBZ1_source.html)
- return value type | SINGLE VALUE
- description | This RPC receives a string which will be sent right back to the client.It exists for support of EGcho - Broker demonstration program.to run d ECHO^XWBZ1(something)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC receives a string which will be sent right back to the client.It exists for support of EGcho - Broker demonstration program.to run d ECHO^XWBZ1(something){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INP | LITERAL | 255 |  |  | 
+| {::nomarkdown}INP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDCN32 DEF
- tag | DEF
+ label | {::nomarkdown}ORWDCN32 DEF{:/}
+ tag | {::nomarkdown}DEF{:/}
  routine | [ORWDCN32](http://code.osehra.org/dox/Routine_ORWDCN32_source.html)
- return value type | ARRAY
- description | Load dialog data (lists & defaults) for a consult order. (32-BIT)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Load dialog data (lists & defaults) for a consult order. (32-BIT){:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

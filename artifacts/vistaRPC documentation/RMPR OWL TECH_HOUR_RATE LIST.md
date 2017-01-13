@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL TECH_HOUR_RATE LIST
- tag | EN
+ label | {::nomarkdown}RMPR OWL TECH_HOUR_RATE LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR29L2](http://code.osehra.org/dox/Routine_RMPR29L2_source.html)
- return value type | GLOBAL ARRAY
- description | GUI Order controll processing.  Returns Technision, Hours, Rate,664.2 IEN,DUZ from file# 664.3. .
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}GUI Order controll processing.  Returns Technision, Hours, Rate,664.2 IEN,DUZ from file# 664.3. .{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

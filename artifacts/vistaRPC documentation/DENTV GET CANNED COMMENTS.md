@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET CANNED COMMENTS
- tag | GET
+ label | {::nomarkdown}DENTV GET CANNED COMMENTS{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [DENTVCC](http://code.osehra.org/dox/Routine_DENTVCC_source.html)
- return value type | ARRAY
- description | Returns the canned comments by provider, system, or both. The maximum number returned is 12. This limit is set by the GUI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the canned comments by provider, system, or both. The maximum number returned is 12. This limit is set by the GUI.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PROV | LITERAL | 32 | true | Provider IEN. | 
-| TYP | LITERAL | 1 | true | Type returns either S-system,U-user/provider,A-Both. | 
-| CAT | LITERAL | 1 | true | Category of the canned statements.1-Radiographic Findings2-Summary Assessment3-Treatment Plan4-Patient Education5-Disposition | 
+| {::nomarkdown}PROV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Provider IEN.{:/} | 
+| {::nomarkdown}TYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Type returns either S-system,U-user/provider,A-Both.{:/} | 
+| {::nomarkdown}CAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Category of the canned statements.1-Radiographic Findings2-Summary Assessment3-Treatment Plan4-Patient Education5-Disposition{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

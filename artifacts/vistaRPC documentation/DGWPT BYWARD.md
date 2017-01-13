@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DGWPT BYWARD
- tag | BYWARD
+ label | {::nomarkdown}DGWPT BYWARD{:/}
+ tag | {::nomarkdown}BYWARD{:/}
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
- return value type | ARRAY
- description | Returns a list of patients currently residing on a specified wardlocation.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients currently residing on a specified wardlocation.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

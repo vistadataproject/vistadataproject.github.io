@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORB GETSORT
- tag | GETSORT
+ label | {::nomarkdown}ORWORB GETSORT{:/}
+ tag | {::nomarkdown}GETSORT{:/}
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
- return value type | SINGLE VALUE
- description | Returns the method for sorting GUI alert display.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the method for sorting GUI alert display.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTAPI GET INCOMPLETE
- tag | GETINC
+ label | {::nomarkdown}YTAPI GET INCOMPLETE{:/}
+ tag | {::nomarkdown}GETINC{:/}
  routine | [YTAPI7](http://code.osehra.org/dox/Routine_YTAPI7_source.html)
- return value type | ARRAY
- description | API to retrive partially completed psychological tests. Input Required: DFN ;ien of file 2 Patient                YSCODE ; code for entry in file 601 Psycholgical TestingOutput:        YSDATA(1)=[DATA]        YSDATA(2)=INSTRUMENT^DATE ENTERED^DATE ADMINISTERED CLERICALLY^NEXT ITEM^VALID RESPONSE STRING^CLERK TEST^ORDERED BY^DATE BEGUN        YSDATA(3)=responses 1-200        YSDATA(4)=responses 201-400        YSDATA(5)=responses 401-600
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}API to retrive partially completed psychological tests. Input Required: DFN ;ien of file 2 Patient                YSCODE ; code for entry in file 601 Psycholgical TestingOutput:        YSDATA(1)=[DATA]        YSDATA(2)=INSTRUMENT^DATE ENTERED^DATE ADMINISTERED CLERICALLY^NEXT ITEM^VALID RESPONSE STRING^CLERK TEST^ORDERED BY^DATE BEGUN        YSDATA(3)=responses 1-200        YSDATA(4)=responses 201-400        YSDATA(5)=responses 401-600{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

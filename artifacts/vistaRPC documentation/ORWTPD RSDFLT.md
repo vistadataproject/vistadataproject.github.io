@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD RSDFLT
- tag | RSDFLT
+ label | {::nomarkdown}ORWTPD RSDFLT{:/}
+ tag | {::nomarkdown}RSDFLT{:/}
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
- return value type | SINGLE VALUE
- description | get system or package level default setting for all repors.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}get system or package level default setting for all repors.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

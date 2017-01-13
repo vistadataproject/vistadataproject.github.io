@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG UTIL DT2IEN
- tag | DTRANGE
+ label | {::nomarkdown}MAG UTIL DT2IEN{:/}
+ tag | {::nomarkdown}DTRANGE{:/}
  routine | [MAGSHEC](http://code.osehra.org/dox/Routine_MAGSHEC_source.html)
- return value type | ARRAY
- description | This Remote Procedure uses a date range to find an IEN in the IMAGE File (#2005)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure uses a date range to find an IEN in the IMAGE File (#2005){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATE | LITERAL | 36 | true | DATE for IMAGE file (#2005) IEN search by Image Saved Date | 
-| LIMIT | LITERAL |  |  | LIMIT - 0: LIMIT ONE YEAR RANGE        1: NONE | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}36{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATE for IMAGE file (#2005) IEN search by Image Saved Date{:/} | 
+| {::nomarkdown}LIMIT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}LIMIT - 0: LIMIT ONE YEAR RANGE        1: NONE{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

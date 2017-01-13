@@ -9,29 +9,29 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB SUBMIT MISSING DOSE
- tag | RPC
+ label | {::nomarkdown}PSB SUBMIT MISSING DOSE{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [PSBMD](http://code.osehra.org/dox/Routine_PSBMD_source.html)
- return value type | ARRAY
- description | Allows the client to submit a missing dose interactively.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Allows the client to submit a missing dose interactively.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBDFN | LITERAL |  | true | Patient DFN (IEN) | 
-| PSBDRUG | LITERAL |  | true | This is the IEN of the drug from File #50. | 
-| PSBDOSE | LITERAL |  |  | Dosage. | 
-| PSBRSN | LITERAL |  | true | Missing Dose reason. INTERNALLY-STORED CODE: 1   WILL STAND FOR: DROPPEDINTERNALLY-STORED CODE: 2   WILL STAND FOR: EMPTY PACKAGEINTERNALLY-STORED CODE: 3   WILL STAND FOR: NOT AVAILABLEINTERNALLY-STORED CODE: 4   WILL STAND FOR: WRONG DOSE/DRUG DELIVERED | 
-| PSBADMIN | LITERAL |  | true | Administration time of the medication. | 
-| PSBNEED | LITERAL |  | true | Needed date/time of the medication | 
-| PSBUID | LITERAL |  | true | Unique ID of an IV bag if it's an IV order. | 
-| PSBON | LITERAL |  | true | Order Number | 
-| PSBSCHD | LITERAL |  | true | Medication Schedule. | 
-| PSBCLIN | LITERAL | 30 | true | Clinic Name | 
-| PSBCLNIEN | LITERAL |  | true | Clinic pointer to the HOSPITAL LOCATION file (#44) for a clinic submitting a missing dose request. | 
+| {::nomarkdown}PSBDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN (IEN){:/} | 
+| {::nomarkdown}PSBDRUG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the drug from File #50.{:/} | 
+| {::nomarkdown}PSBDOSE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Dosage.{:/} | 
+| {::nomarkdown}PSBRSN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Missing Dose reason. INTERNALLY-STORED CODE: 1   WILL STAND FOR: DROPPEDINTERNALLY-STORED CODE: 2   WILL STAND FOR: EMPTY PACKAGEINTERNALLY-STORED CODE: 3   WILL STAND FOR: NOT AVAILABLEINTERNALLY-STORED CODE: 4   WILL STAND FOR: WRONG DOSE/DRUG DELIVERED{:/} | 
+| {::nomarkdown}PSBADMIN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Administration time of the medication.{:/} | 
+| {::nomarkdown}PSBNEED{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Needed date/time of the medication{:/} | 
+| {::nomarkdown}PSBUID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Unique ID of an IV bag if it's an IV order.{:/} | 
+| {::nomarkdown}PSBON{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Order Number{:/} | 
+| {::nomarkdown}PSBSCHD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Medication Schedule.{:/} | 
+| {::nomarkdown}PSBCLIN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinic Name{:/} | 
+| {::nomarkdown}PSBCLNIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Clinic pointer to the HOSPITAL LOCATION file (#44) for a clinic submitting a missing dose request.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN OUTPATIENT ICNS
- tag | COL
+ label | {::nomarkdown}SPN OUTPATIENT ICNS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPOP](http://code.osehra.org/dox/Routine_SPNJRPOP_source.html)
- return value type | GLOBAL ARRAY
- description | Returns list of ICNs of all outpatient visits during a given date range and clinic list.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns list of ICNs of all outpatient visits during a given date range and clinic list.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FDATE | LITERAL |  |  | Date to begin Outpatients search | 
-| TDATE | LITERAL |  |  | Date to end Outpatients search | 
-| CLINLST | LIST |  |  | List of Outpatient clinic stops  | 
-| ICNLST | LIST |  |  | List of ICNs to search from | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to begin Outpatients search{:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end Outpatients search{:/} | 
+| {::nomarkdown}CLINLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of Outpatient clinic stops {:/} | 
+| {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of ICNs to search from{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

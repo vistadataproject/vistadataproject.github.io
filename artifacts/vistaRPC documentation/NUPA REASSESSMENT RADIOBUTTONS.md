@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA REASSESSMENT RADIOBUTTONS
- tag | RAOK
+ label | {::nomarkdown}NUPA REASSESSMENT RADIOBUTTONS{:/}
+ tag | {::nomarkdown}RAOK{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | SINGLE VALUE
- description | Determines if the nurse can do a partial reassessment.  If response is true, these radiobuttons appear on the initial reassessment screen. 1. Medical/Surgical update reassessment (full reassessment completedpreviously on current shift) 2. Critical Care update reassessment (full reassessment completedpreviously on current shift 3. Mental Health update reassessment (full reassessment completedpreviously on current shift)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Determines if the nurse can do a partial reassessment.  If response is true, these radiobuttons appear on the initial reassessment screen. 1. Medical/Surgical update reassessment (full reassessment completedpreviously on current shift) 2. Critical Care update reassessment (full reassessment completedpreviously on current shift 3. Mental Health update reassessment (full reassessment completedpreviously on current shift){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient's DFN. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

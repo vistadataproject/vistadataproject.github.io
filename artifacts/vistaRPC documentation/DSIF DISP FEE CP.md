@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF DISP FEE CP
- tag | FBCP
+ label | {::nomarkdown}DSIF DISP FEE CP{:/}
+ tag | {::nomarkdown}FBCP{:/}
  routine | [DSIFBAT5](http://code.osehra.org/dox/Routine_DSIFBAT5_source.html)
- return value type | GLOBAL ARRAY
- description |  Return a list of existing Control Points that the user has access to
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown} Return a list of existing Control Points that the user has access to{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBSITE | LITERAL | 10 | true | Site number that exists in file 161.4, field 27 (pointer to file #4) | 
+| {::nomarkdown}FBSITE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Site number that exists in file 161.4, field 27 (pointer to file #4){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

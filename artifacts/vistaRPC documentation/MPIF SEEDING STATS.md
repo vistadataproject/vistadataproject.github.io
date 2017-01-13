@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF SEEDING STATS
- tag | STATS
+ label | {::nomarkdown}MPIF SEEDING STATS{:/}
+ tag | {::nomarkdown}STATS{:/}
  routine | [MPIFSEED](http://code.osehra.org/dox/Routine_MPIFSEED_source.html)
- return value type | ARRAY
- description | This RPC will return the stats on the seeding process, including when the next seeding job is scheduled to run
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC will return the stats on the seeding process, including when the next seeding job is scheduled to run{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

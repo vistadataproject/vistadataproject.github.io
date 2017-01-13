@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROI4 EDOCS ELECT DOC CHECK
- tag | EDOCS
+ label | {::nomarkdown}DSIROI4 EDOCS ELECT DOC CHECK{:/}
+ tag | {::nomarkdown}EDOCS{:/}
  routine | [DSIROI4](http://code.osehra.org/dox/Routine_DSIROI4_source.html)
- return value type | SINGLE VALUE
- description | Test a request to see if it has any electronic documents attached.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Test a request to see if it has any electronic documents attached.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 30 | true | THIS IS THE IEN OF THE REQUEST BEING TESTED FOR E-DOCS. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}THIS IS THE IEN OF THE REQUEST BEING TESTED FOR E-DOCS.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

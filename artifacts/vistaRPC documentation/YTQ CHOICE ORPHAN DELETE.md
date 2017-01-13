@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ CHOICE ORPHAN DELETE
- tag | ORPHCH
+ label | {::nomarkdown}YTQ CHOICE ORPHAN DELETE{:/}
+ tag | {::nomarkdown}ORPHCH{:/}
  routine | [YTQAPI4](http://code.osehra.org/dox/Routine_YTQAPI4_source.html)
- return value type | ARRAY
- description | This API will remove all choices (601.75) that are not part of a CHOICETYPE (601.751) It is suggested that API YTQ CHOICETYPE ORPHAN DELETE will be run before the API.          INPUT none        OUTPUT list of choices deleted
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This API will remove all choices (601.75) that are not part of a CHOICETYPE (601.751) It is suggested that API YTQ CHOICETYPE ORPHAN DELETE will be run before the API.          INPUT none        OUTPUT list of choices deleted{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

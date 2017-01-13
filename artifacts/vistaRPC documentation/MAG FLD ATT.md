@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG FLD ATT
- tag | DDLF
+ label | {::nomarkdown}MAG FLD ATT{:/}
+ tag | {::nomarkdown}DDLF{:/}
  routine | [MAGQBUT4](http://code.osehra.org/dox/Routine_MAGQBUT4_source.html)
- return value type | ARRAY
- description | This RPC returns a list of field attributes.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of field attributes.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 32 | true | The file number that contains the desired attribute. | 
-| FIELD | LITERAL | 32 | true | The desired field attribute. | 
-| FLAG | LITERAL | 32 | true |  | 
-| ATTR | LITERAL | 32 | true | The field attribute desired. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The file number that contains the desired attribute.{:/} | 
+| {::nomarkdown}FIELD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The desired field attribute.{:/} | 
+| {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}ATTR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The field attribute desired.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

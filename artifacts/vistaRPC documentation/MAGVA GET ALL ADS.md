@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET ALL ADS
- tag | GETAD
+ label | {::nomarkdown}MAGVA GET ALL ADS{:/}
+ tag | {::nomarkdown}GETAD{:/}
  routine | [MAGVAG01](http://code.osehra.org/dox/Routine_MAGVAG01_source.html)
- return value type | ARRAY
- description | Returns all records in ARTIFACT DESCRIPTOR file (#2006.915)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all records in ARTIFACT DESCRIPTOR file (#2006.915){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

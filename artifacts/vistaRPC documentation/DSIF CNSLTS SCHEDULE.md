@@ -9,24 +9,24 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS SCHEDULE
- tag | SCH
+ label | {::nomarkdown}DSIF CNSLTS SCHEDULE{:/}
+ tag | {::nomarkdown}SCH{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | This RPC updates a Consult with the action of Scheduled. Cloned from ORQQCN SCH
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC updates a Consult with the action of Scheduled. Cloned from ORQQCN SCH{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFIEN | LITERAL |  | true | This is the IEN for the Consult you wish to update. | 
-| DSIFNP | LITERAL |  |  | This is the IEN/DUZ for the provider making the requested change. | 
-| DSIFORDT | LITERAL |  | true | This is the Date/Time the Consult was scheduled. | 
-| DSIFALRT | LITERAL |  | true | This determines whether or not Alerts should be sent with this update. 1 = Yes. | 
-| DSIFALTO | LITERAL |  |  | This is the array of alert recipient IENs. | 
-| DSIFCOM | LIST |  |  | This is the array of comments to be added to this action.  | 
+| {::nomarkdown}DSIFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN for the Consult you wish to update.{:/} | 
+| {::nomarkdown}DSIFNP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the IEN/DUZ for the provider making the requested change.{:/} | 
+| {::nomarkdown}DSIFORDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Date/Time the Consult was scheduled.{:/} | 
+| {::nomarkdown}DSIFALRT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This determines whether or not Alerts should be sent with this update. 1 = Yes.{:/} | 
+| {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the array of alert recipient IENs.{:/} | 
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is the array of comments to be added to this action. {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

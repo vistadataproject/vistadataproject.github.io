@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP GET ADA TABLE
- tag | ADA
+ label | {::nomarkdown}DENTV TP GET ADA TABLE{:/}
+ tag | {::nomarkdown}ADA{:/}
  routine | [DENTVTP1](http://code.osehra.org/dox/Routine_DENTVTP1_source.html)
- return value type | GLOBAL ARRAY
- description | This returns the ADA table (file 228) for the Discus Treatment Planning system.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This returns the ADA table (file 228) for the Discus Treatment Planning system.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

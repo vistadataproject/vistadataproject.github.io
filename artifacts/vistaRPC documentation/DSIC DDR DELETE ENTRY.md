@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC DDR DELETE ENTRY
- tag | KILL
+ label | {::nomarkdown}DSIC DDR DELETE ENTRY{:/}
+ tag | {::nomarkdown}KILL{:/}
  routine | [DSICDDR0](http://code.osehra.org/dox/Routine_DSICDDR0_source.html)
- return value type | ARRAY
- description | This will delete a record from a file or subfile.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This will delete a record from a file or subfile.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 20 | true | This is the number of the file or subfile of the record to be deleted | 
-| IENS | LITERAL | 50 | true | This is the Fileman IENS input parameter.  Its value must be applicable to the file or subfile for which a record is being deleted. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of the file or subfile of the record to be deleted{:/} | 
+| {::nomarkdown}IENS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Fileman IENS input parameter.  Its value must be applicable to the file or subfile for which a record is being deleted.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

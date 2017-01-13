@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP2 HS COMP FILES
- tag | FILES
+ label | {::nomarkdown}ORWRP2 HS COMP FILES{:/}
+ tag | {::nomarkdown}FILES{:/}
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
- return value type | ARRAY
- description | This RPC gets a list of files to select from for the ADHOC Health Summary.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC gets a list of files to select from for the ADHOC Health Summary.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| COMP | LITERAL |  | true |  | 
+| {::nomarkdown}COMP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA COMPLETE
- tag | COMPLETE
+ label | {::nomarkdown}ORWDXA COMPLETE{:/}
+ tag | {::nomarkdown}COMPLETE{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | Complete an order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Complete an order.{:/}
 
 
 ### Method description
@@ -21,9 +21,12 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Complete order (generic)
- Leading comment lines | N X S X=+$E($$NOW^XLFDT,1,12),D DATES^ORCSAVE2(+ORID,,X),D STATUS^ORCSAVE2(+ORID,2),validate ESCode
+ Leading comment lines | N X S X=+$E($$NOW^XLFDT,1,12)
+D DATES^ORCSAVE2(+ORID,,X)
+D STATUS^ORCSAVE2(+ORID,2)
+validate ESCode
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

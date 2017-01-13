@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD GET ALL PCE DATA
- tag | GETALL
+ label | {::nomarkdown}IBD GET ALL PCE DATA{:/}
+ tag | {::nomarkdown}GETALL{:/}
  routine | [IBDFRPC5](http://code.osehra.org/dox/Routine_IBDFRPC5_source.html)
- return value type | ARRAY
- description | This RPC is used to retrieve all data in PCE for a particlar encounterformatted for display in a memo component.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to retrieve all data in PCE for a particlar encounterformatted for display in a memo component.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBDATA | LIST | 80 | true |  | 
+| {::nomarkdown}IBDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

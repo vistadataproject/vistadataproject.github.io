@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS4 ISUDIV
- tag | ISUDIV
+ label | {::nomarkdown}ORWDPS4 ISUDIV{:/}
+ tag | {::nomarkdown}ISUDIV{:/}
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

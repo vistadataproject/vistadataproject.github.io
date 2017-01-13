@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU CREATE ADDENDUM RECORD
- tag | MAKEADD
+ label | {::nomarkdown}TIU CREATE ADDENDUM RECORD{:/}
+ tag | {::nomarkdown}MAKEADD{:/}
  routine | [TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
- return value type | SINGLE VALUE
- description | This Remote Procedure allows the creation of addenda to TIU Documents.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This Remote Procedure allows the creation of addenda to TIU Documents.{:/}
 
 
 ### Method description
@@ -21,16 +21,17 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Create addendum
- Leading comment lines | For backward compatibility,Use MAKEADD^TIUSRVP2 now, please
+ Leading comment lines | For backward compatibility
+Use MAKEADD^TIUSRVP2 now, please
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | This is the record number of the parent document in file 8925. | 
-| TIUX | LIST |  | true | This is a local input array containing the data to be filed for theaddendum record, formatted as described for the TIU UPDATE RECORD RPC. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number of the parent document in file 8925.{:/} | 
+| {::nomarkdown}TIUX{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a local input array containing the data to be filed for theaddendum record, formatted as described for the TIU UPDATE RECORD RPC.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

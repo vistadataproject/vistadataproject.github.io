@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD LIST
- tag | LIST
+ label | {::nomarkdown}TIU FIELD LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
- return value type | ARRAY
- description | Returns long list array of template fields
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns long list array of template fields{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

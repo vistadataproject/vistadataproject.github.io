@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA UPDATE PROVAVAILTY
- tag | UPDPA
+ label | {::nomarkdown}MAGVA UPDATE PROVAVAILTY{:/}
+ tag | {::nomarkdown}UPDPA{:/}
  routine | [MAGVAU01](http://code.osehra.org/dox/Routine_MAGVAU01_source.html)
- return value type | SINGLE VALUE
- description | Update PROVIDER AVAILABILITY file (#2006.924)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Update PROVIDER AVAILABILITY file (#2006.924){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  MAGPARAM(\PK\) = IEN  MAGPARAM(\START TIME\) MAGPARAM(\END TIME\) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\PK\) = IEN  MAGPARAM(\START TIME\) MAGPARAM(\END TIME\){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

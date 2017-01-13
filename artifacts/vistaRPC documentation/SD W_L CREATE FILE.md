@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SD W_L CREATE FILE
- tag | INPUT
+ label | {::nomarkdown}SD W_L CREATE FILE{:/}
+ tag | {::nomarkdown}INPUT{:/}
  routine | [SDWLRP1](http://code.osehra.org/dox/Routine_SDWLRP1_source.html)
- return value type | ARRAY
- description | This RPC creates a Patient Wait List file for PCMM (GUI).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC creates a Patient Wait List file for PCMM (GUI).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

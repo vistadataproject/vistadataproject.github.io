@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR GUI PARAMETER RENAME
- tag | RENPARM
+ label | {::nomarkdown}ROR GUI PARAMETER RENAME{:/}
+ tag | {::nomarkdown}RENPARM{:/}
  routine | [RORRP038](http://code.osehra.org/dox/Routine_RORRP038_source.html)
- return value type | ARRAY
- description | The ROR GUI PARAMETER RENAME remote procedure renames the instance of the parameter.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The ROR GUI PARAMETER RENAME remote procedure renames the instance of the parameter.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENTITY | LITERAL | 30 | true | The ENTITY parameter defines the context that the parameter value isassociated with.  The values that are used most often are the \USR\ (user settings) and \PKG\ (package settings).  See the DBIA #2263 for more details. | 
-| NAME | LITERAL | 30 | true | The NAME parameter defines the name of the GUI parameter. | 
-| OLDINST | LITERAL | 60 | true | Current instance name of the GUI parameter. | 
-| NEWINST | LITERAL | 60 | true | New instance name for the GUI parameter. | 
+| {::nomarkdown}ENTITY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The ENTITY parameter defines the context that the parameter value isassociated with.  The values that are used most often are the \USR\ (user settings) and \PKG\ (package settings).  See the DBIA #2263 for more details.{:/} | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The NAME parameter defines the name of the GUI parameter.{:/} | 
+| {::nomarkdown}OLDINST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Current instance name of the GUI parameter.{:/} | 
+| {::nomarkdown}NEWINST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}New instance name for the GUI parameter.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

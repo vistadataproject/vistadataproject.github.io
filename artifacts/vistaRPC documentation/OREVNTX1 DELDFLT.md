@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 DELDFLT
- tag | DELDFLT
+ label | {::nomarkdown}OREVNTX1 DELDFLT{:/}
+ tag | {::nomarkdown}DELDFLT{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

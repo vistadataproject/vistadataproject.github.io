@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY FIX REJ LINE ITEMS
- tag | REALL
+ label | {::nomarkdown}DSIF PAY FIX REJ LINE ITEMS{:/}
+ tag | {::nomarkdown}REALL{:/}
  routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBOLDB | LITERAL | 10 | true | Batch IEN of the batch that held the line items that were rejected. | 
-| FBNEWB | LITERAL | 10 | true | Batch IEN of the batch that will hold the re-initiated line items. | 
+| {::nomarkdown}FBOLDB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN of the batch that held the line items that were rejected.{:/} | 
+| {::nomarkdown}FBNEWB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN of the batch that will hold the re-initiated line items.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD APPL STATUS
- tag | STATUS
+ label | {::nomarkdown}KMPD APPL STATUS{:/}
+ tag | {::nomarkdown}STATUS{:/}
  routine | [KMPDU6](http://code.osehra.org/dox/Routine_KMPDU6_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the status for cm applications: HL7                                        RUM                                        SAGG                                        TIMING
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the status for cm applications: HL7                                        RUM                                        SAGG                                        TIMING{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| APPLICATION | LITERAL | 5 | true | \H\ - hl7\R\ - rum\S\ - sagg\T\ - timing | 
-| GLOBAL | LITERAL | 30 | true | Global in which to store data.  Ex: ^TMP($J) | 
+| {::nomarkdown}APPLICATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}\H\ - hl7\R\ - rum\S\ - sagg\T\ - timing{:/} | 
+| {::nomarkdown}GLOBAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Global in which to store data.  Ex: ^TMP($J){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

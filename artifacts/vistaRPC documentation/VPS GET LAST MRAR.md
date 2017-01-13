@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET LAST MRAR
- tag | GET
+ label | {::nomarkdown}VPS GET LAST MRAR{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [VPSMRAR9](http://code.osehra.org/dox/Routine_VPSMRAR9_source.html)
- return value type | ARRAY
- description | Given Patient ID (in ID/Type pair), this RPC return the last Medication and Allergy Review data for the patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Given Patient ID (in ID/Type pair), this RPC return the last Medication and Allergy Review data for the patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSNUM | LITERAL | 30 | true | This is the Patient ID based on Patient ID Type. The value could be the SSN, ICN or VIC/CAC number. ICN, DFN, or VIC/CAC | 
-| VPSTYP | LITERAL | 7 | true | This is the Patient ID Type. Valid type is DFN, SSN, ICN, or VIC/CAC. | 
+| {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Patient ID based on Patient ID Type. The value could be the SSN, ICN or VIC/CAC number. ICN, DFN, or VIC/CAC{:/} | 
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Patient ID Type. Valid type is DFN, SSN, ICN, or VIC/CAC.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

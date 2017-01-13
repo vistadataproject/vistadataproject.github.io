@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA INP MEDS LIST
- tag | IM
+ label | {::nomarkdown}NUPA INP MEDS LIST{:/}
+ tag | {::nomarkdown}IM{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the Inpatient med list for the patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the Inpatient med list for the patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient's DFN. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

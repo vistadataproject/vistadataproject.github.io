@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGDDR GETS ENTRY DATA
- tag | GETSC
+ label | {::nomarkdown}MAGDDR GETS ENTRY DATA{:/}
+ tag | {::nomarkdown}GETSC{:/}
  routine | [MAGDDR](http://code.osehra.org/dox/Routine_MAGDDR_source.html)
- return value type | ARRAY
- description | Calls database server at GETS^DIQ
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Calls database server at GETS^DIQ{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDDR | LIST |  | true | GETS ATTRIBUTES | 
+| {::nomarkdown}MAGDDR{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}GETS ATTRIBUTES{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

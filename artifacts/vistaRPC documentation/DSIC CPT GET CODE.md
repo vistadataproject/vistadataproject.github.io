@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC CPT GET CODE
- tag | CPT
+ label | {::nomarkdown}DSIC CPT GET CODE{:/}
+ tag | {::nomarkdown}CPT{:/}
  routine | [DSICCPT](http://code.osehra.org/dox/Routine_DSICCPT_source.html)
- return value type | SINGLE VALUE
- description | This returns various information about a specific CPT code.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This returns various information about a specific CPT code.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CODE | LITERAL | 7 | true | This is the CPT, HCPCS, or level III code in either internal or external format. | 
-| CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
-| SRC | LITERAL | 1 | true | This Boolean flag (1 or 0) is optional.  Default value is 0.  I SRC=1 then all level III codes to be returned. | 
-| DFN | LITERAL | 14 | true | This is a pointer to the PATIENT file.  It is not used at this time. | 
+| {::nomarkdown}CODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the CPT, HCPCS, or level III code in either internal or external format.{:/} | 
+| {::nomarkdown}CDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date.{:/} | 
+| {::nomarkdown}SRC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This Boolean flag (1 or 0) is optional.  Default value is 0.  I SRC=1 then all level III codes to be returned.{:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a pointer to the PATIENT file.  It is not used at this time.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

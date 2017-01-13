@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS CLEAR SIGNATURE
- tag | CSIGN
+ label | {::nomarkdown}OOPS CLEAR SIGNATURE{:/}
+ tag | {::nomarkdown}CSIGN{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | SINGLE VALUE
- description | This broker call clears the signature from the ASISTS case for Form and discipline (calling menu).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This broker call clears the signature from the ASISTS case for Form and discipline (calling menu).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 20 | true |  | 
-| FORM | LITERAL | 10 | true |  | 
-| CALL | LITERAL | 5 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}FORM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}CALL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

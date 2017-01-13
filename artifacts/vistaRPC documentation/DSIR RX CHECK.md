@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR RX CHECK
- tag | RXEN
+ label | {::nomarkdown}DSIR RX CHECK{:/}
+ tag | {::nomarkdown}RXEN{:/}
  routine | [DSIROI9](http://code.osehra.org/dox/Routine_DSIROI9_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will take the data returned from ORQQPS LIST and check the FILL DATE of the PRESCRIPTION to validate the value falls between the date range specified.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will take the data returned from ORQQPS LIST and check the FILL DATE of the PRESCRIPTION to validate the value falls between the date range specified.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STDT | LITERAL | 7 | true | Start Date - Required (FileMan Date Format) | 
-| ENDT | LITERAL | 7 | true | End Date - Optional (FileMan Date Format - Default to current day) | 
-| DATA | LIST | 254 | true | Array as returned from RPC: ORQQPS LIST - Optional | 
+| {::nomarkdown}STDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Start Date - Required (FileMan Date Format){:/} | 
+| {::nomarkdown}ENDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}End Date - Optional (FileMan Date Format - Default to current day){:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}254{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array as returned from RPC: ORQQPS LIST - Optional{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR LIST BOC
- tag | ENE
+ label | {::nomarkdown}RMPR LIST BOC{:/}
+ tag | {::nomarkdown}ENE{:/}
  routine | [RMPR9AUT](http://code.osehra.org/dox/Routine_RMPR9AUT_source.html)
- return value type | ARRAY
- description | RPC to list all available Budget Object Code (BOC)'s for a given Cost Center
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to list all available Budget Object Code (BOC)'s for a given Cost Center{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

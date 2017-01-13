@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORB FOLLOW-UP STRING
- tag | GUI
+ label | {::nomarkdown}ORB FOLLOW-UP STRING{:/}
+ tag | {::nomarkdown}GUI{:/}
  routine | [ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
- return value type | SINGLE VALUE
- description | This function returns a string of follow-up data.  Content of the data varies by notification.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This function returns a string of follow-up data.  Content of the data varies by notification.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| XQAID | LITERAL | 32 | true | The identifier used by the Kernel Alert utility to uniquely identify analert/notification.  For OE/RR alerts the format is:\OR,<dfn>,<notif ien>;<notif date.time>\ | 
+| {::nomarkdown}XQAID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The identifier used by the Kernel Alert utility to uniquely identify analert/notification.  For OE/RR alerts the format is:\OR,<dfn>,<notif ien>;<notif date.time>\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM2 REMIND
- tag | REMIND
+ label | {::nomarkdown}ORAM2 REMIND{:/}
+ tag | {::nomarkdown}REMIND{:/}
  routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
- return value type | SINGLE VALUE
- description | Sets date and text for ACM Reminder (can also be set as part of a completevisit entry).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sets date and text for ACM Reminder (can also be set as part of a completevisit entry).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
-| DATE | LITERAL |  |  | Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed. | 
-| RTEXT | LITERAL |  |  | Actual carrot ('^') deliminated text (by line) of the reminder. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed.{:/} | 
+| {::nomarkdown}RTEXT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Actual carrot ('^') deliminated text (by line) of the reminder.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

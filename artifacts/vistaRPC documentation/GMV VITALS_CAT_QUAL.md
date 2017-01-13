@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV VITALS_CAT_QUAL
- tag | GETVITAL
+ label | {::nomarkdown}GMV VITALS_CAT_QUAL{:/}
+ tag | {::nomarkdown}GETVITAL{:/}
  routine | [GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
- return value type | ARRAY
- description | Returns all qualifier information for the vital types selected. This remote procedure call is documented in Integration Agreement 4359.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all qualifier information for the vital types selected. This remote procedure call is documented in Integration Agreement 4359.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMVLIST | LITERAL | 60 | true | A list of vital type abbreviations (FILE 120.51, Field 1) separated byup-arrows (e.g., \HT^WT\ for height and weight). When the value is null,all qualifier information will be returned for all vital types. | 
+| {::nomarkdown}GMVLIST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A list of vital type abbreviations (FILE 120.51, Field 1) separated byup-arrows (e.g., \HT^WT\ for height and weight). When the value is null,all qualifier information will be returned for all vital types.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

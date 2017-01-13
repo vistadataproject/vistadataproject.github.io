@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS2 QOGRP
- tag | QOGRP
+ label | {::nomarkdown}ORWDPS2 QOGRP{:/}
+ tag | {::nomarkdown}QOGRP{:/}
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -20,9 +20,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- Leading comment lines | If quick order belong to Inpatient Med Order Group: return 1,Otherwise, return 0
+ Leading comment lines | If quick order belong to Inpatient Med Order Group: return 1
+Otherwise, return 0
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

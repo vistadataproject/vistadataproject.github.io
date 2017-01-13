@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQBP UPDATE
- tag | PGEUD
+ label | {::nomarkdown}MAGQBP UPDATE{:/}
+ tag | {::nomarkdown}PGEUD{:/}
  routine | [MAGQBPG2](http://code.osehra.org/dox/Routine_MAGQBPG2_source.html)
- return value type | SINGLE VALUE
- description | Nulls the appropriate magnetic network location reference.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Nulls the appropriate magnetic network location reference.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILENAME | LITERAL |  | true | The Image file name to be updated. | 
-| EXT | LITERAL |  | true | The image file extension to be updated. | 
-| IEN | LITERAL |  | true | Image file internal entry number to be updated. | 
-| Device | LITERAL |  | true | 'NET' or 'JB' to specify which Image system reference to update. | 
+| {::nomarkdown}FILENAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The Image file name to be updated.{:/} | 
+| {::nomarkdown}EXT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The image file extension to be updated.{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Image file internal entry number to be updated.{:/} | 
+| {::nomarkdown}Device{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}'NET' or 'JB' to specify which Image system reference to update.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

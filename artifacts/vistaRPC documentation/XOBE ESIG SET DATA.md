@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBE ESIG SET DATA
- tag | SETDATA
+ label | {::nomarkdown}XOBE ESIG SET DATA{:/}
+ tag | {::nomarkdown}SETDATA{:/}
  routine | [XOBESIG](http://code.osehra.org/dox/Routine_XOBESIG_source.html)
- return value type | ARRAY
- description | Saves the electronic signature block-related data in the NEW PERSON file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Saves the electronic signature block-related data in the NEW PERSON file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VALUES | LIST |  |  |  | 
+| {::nomarkdown}VALUES{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

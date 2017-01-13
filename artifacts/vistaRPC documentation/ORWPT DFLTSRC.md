@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT DFLTSRC
- tag | DFLTSRC
+ label | {::nomarkdown}ORWPT DFLTSRC{:/}
+ tag | {::nomarkdown}DFLTSRC{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | SINGLE VALUE
- description | Return user's default patient list source.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return user's default patient list source.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

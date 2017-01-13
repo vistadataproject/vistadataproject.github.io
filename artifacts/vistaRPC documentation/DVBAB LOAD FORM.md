@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB LOAD FORM
- tag | LOAD
+ label | {::nomarkdown}DVBAB LOAD FORM{:/}
+ tag | {::nomarkdown}LOAD{:/}
  routine | [DVBABFRM](http://code.osehra.org/dox/Routine_DVBABFRM_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DVBIEN | LITERAL |  | true | IEN of the form data to retrieve. | 
+| {::nomarkdown}DVBIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the form data to retrieve.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

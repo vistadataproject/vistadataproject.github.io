@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM1 UNLOCK
- tag | UNLOCK
+ label | {::nomarkdown}ORAM1 UNLOCK{:/}
+ tag | {::nomarkdown}UNLOCK{:/}
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
- return value type | SINGLE VALUE
- description | Unlocks a patient's record in the Anticoagulation Flowsheet file (#103).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Unlocks a patient's record in the Anticoagulation Flowsheet file (#103).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

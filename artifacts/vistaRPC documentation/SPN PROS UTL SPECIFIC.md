@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN PROS UTL SPECIFIC
- tag | COL
+ label | {::nomarkdown}SPN PROS UTL SPECIFIC{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPP2](http://code.osehra.org/dox/Routine_SPNJRPP2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns detailed information for delivered prosthetics items for a list of given patients (based on the ICN) based on a date range, and prosthetic item list.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns detailed information for delivered prosthetics items for a list of given patients (based on the ICN) based on a date range, and prosthetic item list.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLIST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN...) | 
-| FDATE | LITERAL |  |  | Date to start search from.   | 
-| TDATE | LITERAL |  |  | Date to end search at.   | 
-| ITEMS | LIST |  |  | Array that has the prosthetic item names | 
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patient's ICN in string format (ICN^ICN^ICN^ICN...){:/} | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to start search from.  {:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end search at.  {:/} | 
+| {::nomarkdown}ITEMS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Array that has the prosthetic item names{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

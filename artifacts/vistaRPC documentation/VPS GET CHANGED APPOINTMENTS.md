@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET CHANGED APPOINTMENTS
- tag | GETCHG
+ label | {::nomarkdown}VPS GET CHANGED APPOINTMENTS{:/}
+ tag | {::nomarkdown}GETCHG{:/}
  routine | [VPSAPPT2](http://code.osehra.org/dox/Routine_VPSAPPT2_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will only return new, modified, or deleted appointments and should be called periodically by VetLink to update the appointment queue.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will only return new, modified, or deleted appointments and should be called periodically by VetLink to update the appointment queue.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSQUEUE | LITERAL | 3 | true | Unique Queue ID representing Vecna Appointment Queue. | 
+| {::nomarkdown}VPSQUEUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Unique Queue ID representing Vecna Appointment Queue.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

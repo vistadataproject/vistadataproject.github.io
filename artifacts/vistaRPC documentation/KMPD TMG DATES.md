@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD TMG DATES
- tag | TMGDATES
+ label | {::nomarkdown}KMPD TMG DATES{:/}
+ tag | {::nomarkdown}TMGDATES{:/}
  routine | [KMPDU7](http://code.osehra.org/dox/Routine_KMPDU7_source.html)
- return value type | ARRAY
- description | Return Timing dates in format:         array(0)=FMStartDate^ExtStartDate^FMEndDate^ExtEndDate        array(1)=FMDate^ExtDate        array(2)=FMDate^ExtDate        array(...)=...
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return Timing dates in format:         array(0)=FMStartDate^ExtStartDate^FMEndDate^ExtEndDate        array(1)=FMDate^ExtDate        array(2)=FMDate^ExtDate        array(...)=...{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SUBSCRIPT | LITERAL | 60 | true | Timing subscript - free text         example: \ORWCV\ | 
+| {::nomarkdown}SUBSCRIPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Timing subscript - free text         example: \ORWCV\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

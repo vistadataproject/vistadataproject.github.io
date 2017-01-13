@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL ENTER_EDIT ADD ON
- tag | EN
+ label | {::nomarkdown}RMPR OWL ENTER_EDIT ADD ON{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR29MG](http://code.osehra.org/dox/Routine_RMPR29MG_source.html)
- return value type | ARRAY
- description | GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

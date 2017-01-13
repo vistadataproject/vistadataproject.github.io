@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA UNHOLD
- tag | UNHOLD
+ label | {::nomarkdown}ORWDXA UNHOLD{:/}
+ tag | {::nomarkdown}UNHOLD{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | RPC to remove a particular order from hold status.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to remove a particular order from hold status.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

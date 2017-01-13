@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET DFN
- tag | GETDFN
+ label | {::nomarkdown}VPS GET DFN{:/}
+ tag | {::nomarkdown}GETDFN{:/}
  routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
- return value type | SINGLE VALUE
- description | Called by the Vetlink Kiosk system.  Patient SSN is the input value.  Returns patient DFN associated with SSN on record.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Called by the Vetlink Kiosk system.  Patient SSN is the input value.  Returns patient DFN associated with SSN on record.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSSN | LITERAL | 12 | true |  | 
+| {::nomarkdown}VPSSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

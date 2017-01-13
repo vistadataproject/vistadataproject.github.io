@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA PRINT
- tag | P
+ label | {::nomarkdown}NUPA PRINT{:/}
+ tag | {::nomarkdown}P{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Prints an array to a printer
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Prints an array to a printer{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ZTIO | LITERAL |  | true | Printer to print to. | 
-| ARRAY | LIST |  | true | Array of data to print, in format  ARRAY(1), ARRAY(2), etc. | 
+| {::nomarkdown}ZTIO{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Printer to print to.{:/} | 
+| {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Array of data to print, in format  ARRAY(1), ARRAY(2), etc.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

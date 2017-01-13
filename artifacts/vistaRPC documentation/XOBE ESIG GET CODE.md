@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBE ESIG GET CODE
- tag | GETCODE
+ label | {::nomarkdown}XOBE ESIG GET CODE{:/}
+ tag | {::nomarkdown}GETCODE{:/}
  routine | [XOBESIG](http://code.osehra.org/dox/Routine_XOBESIG_source.html)
- return value type | SINGLE VALUE
- description | Returns the electronic signature code for the user from the NEW PERSONfile.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the electronic signature code for the user from the NEW PERSONfile.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

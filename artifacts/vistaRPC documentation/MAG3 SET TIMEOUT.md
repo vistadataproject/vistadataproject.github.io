@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 SET TIMEOUT
- tag | TIMEOUT
+ label | {::nomarkdown}MAG3 SET TIMEOUT{:/}
+ tag | {::nomarkdown}TIMEOUT{:/}
  routine | [MAGNTLRS](http://code.osehra.org/dox/Routine_MAGNTLRS_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGAPP | LITERAL |  | true |  | 
-| MAGTIME | LITERAL |  | true |  | 
+| {::nomarkdown}MAGAPP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}MAGTIME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

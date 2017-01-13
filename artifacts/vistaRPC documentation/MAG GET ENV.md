@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG GET ENV
- tag | GETENV
+ label | {::nomarkdown}MAG GET ENV{:/}
+ tag | {::nomarkdown}GETENV{:/}
  routine | [MAGGTU6](http://code.osehra.org/dox/Routine_MAGGTU6_source.html)
- return value type | SINGLE VALUE
- description | Returns environment variables from VistA server
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns environment variables from VistA server{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

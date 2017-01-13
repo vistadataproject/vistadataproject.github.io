@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP DISP DISPLAY
- tag | DISP
+ label | {::nomarkdown}DSIF INP DISP DISPLAY{:/}
+ tag | {::nomarkdown}DISP{:/}
  routine | [DSIFINP0](http://code.osehra.org/dox/Routine_DSIFINP0_source.html)
- return value type | GLOBAL ARRAY
- description | Returns inpatient waiting disposition
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns inpatient waiting disposition{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

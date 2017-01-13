@@ -60,7 +60,7 @@ title: VDM documentation
 | reporter_address2 | 45 | Reporter Address2 | {::nomarkdown}Line two of the address of the person filling out the report.{:/} | STRING |  |  |  | 
 | reporter_address3 | 46 | Reporter Address3 | {::nomarkdown}Line three of the address of the person filling out the report.{:/} | STRING |  |  |  | 
 | reporter_city | 47 | Reporter City | {::nomarkdown}The city where the person lives who is filling out the report.{:/} | STRING |  |  |  | 
-| reporter_state | 48 | Reporter State | {::nomarkdown}The state where the reporter resides.{:/} | POINTER |  |  | {id:State-5} | 
+| reporter_state | 48 | Reporter State | {::nomarkdown}The state where the reporter resides.{:/} | POINTER |  |  | State-5 | 
 | reporter_zip | 49 | Reporter ZIP | {::nomarkdown}This is the zip code of the person filling out the report.{:/} | STRING |  |  |  | 
 | reporter_phone | 50 | Reporter Phone | {::nomarkdown}This is the phone number of the person who is filling out the report.{:/} | STRING |  |  |  | 
 | rpt_question_number1 | 51 | Rpt Question #1 | {::nomarkdown}This field determines if the reporter is a health care provider.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
@@ -71,7 +71,7 @@ title: VDM documentation
 | mfr_address_number2 | 55 | Mfr Address #2 | {::nomarkdown}This is address line two for the manufacturer.{:/} | STRING |  |  |  | 
 | mfr_address_number3 | 56 | Mfr Address #3 | {::nomarkdown}This is address line three for the manufacturer.{:/} | STRING |  |  |  | 
 | mfr_city | 57 | Mfr City | {::nomarkdown}This is the city of the manufacturer.{:/} | STRING |  |  |  | 
-| mfr_state | 58 | Mfr State | {::nomarkdown}This is the state where the manufacturer is located.{:/} | POINTER |  |  | {id:State-5} | 
+| mfr_state | 58 | Mfr State | {::nomarkdown}This is the state where the manufacturer is located.{:/} | POINTER |  |  | State-5 | 
 | mfr_zip | 59 | Mfr ZIP | {::nomarkdown}This is the Zip Code of the manufacturer.{:/} | STRING |  |  |  | 
 | ind_nda_number_for_support_drug | 60 | Ind/nda # For Support Drug | {::nomarkdown}This is the IND/NDA # for support drug for the manufacturer.{:/} | STRING |  |  |  | 
 | mfr_control_number | 61 | Mfr Control # | {::nomarkdown}This is the control number used by the manufacturer.{:/} | STRING |  |  |  | 
@@ -91,7 +91,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| reactions | .01 | Reactions | {::nomarkdown}One sign/symptom observed for this reaction.{:/} | POINTER |  | REQUIRED, INDEXED | {id:Sign_symptoms-120_83} | 
+| reactions | .01 | Reactions | {::nomarkdown}One sign/symptom observed for this reaction.{:/} | POINTER |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
 | other_reaction | 1 | Other Reaction | {::nomarkdown}If this sign/symptom cannot be found in the Sign/Symptoms (120.83) file,<br/>then the free text of what the user typed in will be here, and the<br/>signs/symptoms of OTHER REACTION will be the value of the REACTIONS field.{:/} | STRING |  |  |  | 
 | entered_by | 2 | Entered By | {::nomarkdown}The person who entered this reaction into the system.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
@@ -176,4 +176,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 5:52:20 am

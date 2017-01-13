@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS SIGNON SETUP
- tag | SETUP
+ label | {::nomarkdown}XUS SIGNON SETUP{:/}
+ tag | {::nomarkdown}SETUP{:/}
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
- return value type | ARRAY
- description | Establishes environment necessary for DHCP sign-on
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Establishes environment necessary for DHCP sign-on{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

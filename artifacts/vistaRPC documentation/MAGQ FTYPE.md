@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ FTYPE
- tag | FTYPE
+ label | {::nomarkdown}MAGQ FTYPE{:/}
+ tag | {::nomarkdown}FTYPE{:/}
  routine | [MAGQBUT5](http://code.osehra.org/dox/Routine_MAGQBUT5_source.html)
- return value type | ARRAY
- description | This RPC returns an array of file types which the background processorwill use to move files from magnetic to jukebox and back for thisVista installation.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns an array of file types which the background processorwill use to move files from magnetic to jukebox and back for thisVista installation.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NULL |  |  | true | No input parameter required. | 
+| {::nomarkdown}NULL{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}No input parameter required.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

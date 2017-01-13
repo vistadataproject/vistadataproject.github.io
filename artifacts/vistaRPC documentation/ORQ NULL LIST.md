@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQ NULL LIST
- tag | NLIST
+ label | {::nomarkdown}ORQ NULL LIST{:/}
+ tag | {::nomarkdown}NLIST{:/}
  routine | [ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
- return value type | ARRAY
- description | Returns a null list.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a null list.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP PRINT V REPORT
- tag | PRINTV
+ label | {::nomarkdown}ORWRP PRINT V REPORT{:/}
+ tag | {::nomarkdown}PRINTV{:/}
  routine | [ORWRPP1](http://code.osehra.org/dox/Routine_ORWRPP1_source.html)
- return value type | SINGLE VALUE
- description | This rpc is used to print a V type report on the Reports tab in CPRS
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This rpc is used to print a V type report on the Reports tab in CPRS{:/}
 
 
 ### Method description
@@ -27,12 +27,12 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORIO | LITERAL |  | true |  | 
-| DFN | LITERAL |  |  |  | 
-| HEADER | LITERAL |  |  |  | 
-| REPORT | WORD PROCESSING |  |  |  | 
+| {::nomarkdown}ORIO{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}HEADER{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}REPORT{:/} | {::nomarkdown}WORD PROCESSING{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

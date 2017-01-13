@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX GET HIST LOCATIONS
- tag | HISTLOC
+ label | {::nomarkdown}ORQQPX GET HIST LOCATIONS{:/}
+ tag | {::nomarkdown}HISTLOC{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of historical locations from the LOCATION file(#9999999.06).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of historical locations from the LOCATION file(#9999999.06).{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

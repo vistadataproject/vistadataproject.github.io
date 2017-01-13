@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ IMPORT
- tag | IMPORT
+ label | {::nomarkdown}YTQ IMPORT{:/}
+ tag | {::nomarkdown}IMPORT{:/}
  routine | [YTQAPI12](http://code.osehra.org/dox/Routine_YTQAPI12_source.html)
- return value type | ARRAY
- description | Used to import a test description into the VISTA database froma mailman message created by the export function. Input: Message as message number from file 3.9Output: DATA vs ERROR
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Used to import a test description into the VISTA database froma mailman message created by the export function. Input: Message as message number from file 3.9Output: DATA vs ERROR{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

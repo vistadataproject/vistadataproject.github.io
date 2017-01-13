@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DOCUMENTS FOR REQUEST
- tag | GETDOCS
+ label | {::nomarkdown}TIU GET DOCUMENTS FOR REQUEST{:/}
+ tag | {::nomarkdown}GETDOCS{:/}
  routine | [TIUSRVLR](http://code.osehra.org/dox/Routine_TIUSRVLR_source.html)
- return value type | GLOBAL ARRAY
- description | This Remote Procedure returns the list of documents associated with agiven Request (e.g., Consult Request, or Surgical Case).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure returns the list of documents associated with agiven Request (e.g., Consult Request, or Surgical Case).{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OVP | LITERAL |  | true | This is the variable pointer (e.g., \12745;GMR(123,\ or \14672;SRF(\) thatidentifies the record in the requesting application. | 
+| {::nomarkdown}OVP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the variable pointer (e.g., \12745;GMR(123,\ or \14672;SRF(\) thatidentifies the record in the requesting application.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

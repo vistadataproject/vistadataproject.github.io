@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE MHTESTOK
- tag | MHTESTOK
+ label | {::nomarkdown}ORWPCE MHTESTOK{:/}
+ tag | {::nomarkdown}MHTESTOK{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE if all supporing code is in place for Mental Health Tests.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE if all supporing code is in place for Mental Health Tests.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

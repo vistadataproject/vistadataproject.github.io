@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR COMP ACCOUNTING SUMMARY
- tag | CAS
+ label | {::nomarkdown}DSIR COMP ACCOUNTING SUMMARY{:/}
+ tag | {::nomarkdown}CAS{:/}
  routine | [DSIROIR1](http://code.osehra.org/dox/Routine_DSIROIR1_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC returns a list of all internal entry numbers from file 19620 for a specified patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of all internal entry numbers from file 19620 for a specified patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT | LITERAL | 99 | true | The DFN of the selected patient. | 
-| START DATE | LITERAL | 7 | true | This is the FileMan date to start the report.  If it is null the routine will start at the begining. | 
-| END DATE | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
+| {::nomarkdown}PATIENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The DFN of the selected patient.{:/} | 
+| {::nomarkdown}START DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the FileMan date to start the report.  If it is null the routine will start at the begining.{:/} | 
+| {::nomarkdown}END DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

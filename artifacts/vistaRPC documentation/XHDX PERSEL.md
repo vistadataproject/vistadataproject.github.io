@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHDX PERSEL
- tag | PERSEL
+ label | {::nomarkdown}XHDX PERSEL{:/}
+ tag | {::nomarkdown}PERSEL{:/}
  routine | [XHDX](http://code.osehra.org/dox/Routine_XHDX_source.html)
- return value type | ARRAY
- description | This returns the list of perspective id's that should be visible for thecurrent user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This returns the list of perspective id's that should be visible for thecurrent user.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

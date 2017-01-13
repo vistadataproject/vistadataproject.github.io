@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV MONITOR QUEUE
- tag | QUE
+ label | {::nomarkdown}DENTV MONITOR QUEUE{:/}
+ tag | {::nomarkdown}QUE{:/}
  routine | [DENTVM1](http://code.osehra.org/dox/Routine_DENTVM1_source.html)
- return value type | SINGLE VALUE
- description | Queues a TaskMan job to run patient dental (e.g.) Fluoride, Monitor(s).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Queues a TaskMan job to run patient dental (e.g.) Fluoride, Monitor(s).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | Contains the patient pointer (DFN). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the patient pointer (DFN).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS2 CHKGRP
- tag | CHKGRP
+ label | {::nomarkdown}ORWDPS2 CHKGRP{:/}
+ tag | {::nomarkdown}CHKGRP{:/}
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -20,9 +20,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- Leading comment lines | Inpatient Med Order Group or Clin Meds Group: return 1,If order belong to Outpatient Med Order Grpoup: return 2,Otherwise, return 0
+ Leading comment lines | Inpatient Med Order Group or Clin Meds Group: return 1
+If order belong to Outpatient Med Order Grpoup: return 2
+Otherwise, return 0
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

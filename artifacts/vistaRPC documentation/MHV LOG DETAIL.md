@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG DETAIL
- tag | LOGDET
+ label | {::nomarkdown}MHV LOG DETAIL{:/}
+ tag | {::nomarkdown}LOGDET{:/}
  routine | [MHVUL2](http://code.osehra.org/dox/Routine_MHVUL2_source.html)
- return value type | GLOBAL ARRAY
- description | Retrieve an MHV application log entry.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Retrieve an MHV application log entry.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DTM | LITERAL | 15 | true | Negative Date/Time of entry in Fileman format. | 
-| JOB | LITERAL | 15 | true | Job number of log entry. | 
+| {::nomarkdown}DTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Negative Date/Time of entry in Fileman format.{:/} | 
+| {::nomarkdown}JOB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Job number of log entry.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU SUMMARIES
- tag | SUMMARY
+ label | {::nomarkdown}TIU SUMMARIES{:/}
+ tag | {::nomarkdown}SUMMARY{:/}
  routine | [TIUSRVLO](http://code.osehra.org/dox/Routine_TIUSRVLO_source.html)
- return value type | GLOBAL ARRAY
- description | This API gets lists of Discharge Summaries for a patient, with optional parameters for STATUS, EARLY DATE/TIME, and LATE DATE/TIME.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This API gets lists of Discharge Summaries for a patient, with optional parameters for STATUS, EARLY DATE/TIME, and LATE DATE/TIME.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | This is the pointer to the patient file. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the patient file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

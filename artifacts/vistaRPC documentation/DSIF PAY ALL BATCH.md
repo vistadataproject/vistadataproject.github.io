@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY ALL BATCH
- tag | ALLPAYB
+ label | {::nomarkdown}DSIF PAY ALL BATCH{:/}
+ tag | {::nomarkdown}ALLPAYB{:/}
  routine | [DSIFPAY1](http://code.osehra.org/dox/Routine_DSIFPAY1_source.html)
- return value type | ARRAY
- description | Return all payments in a batch IEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return all payments in a batch IEN{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH IEN | LITERAL | 20 | true |  | 
+| {::nomarkdown}BATCH IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

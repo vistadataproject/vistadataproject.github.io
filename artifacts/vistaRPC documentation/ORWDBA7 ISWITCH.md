@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDBA7 ISWITCH
- tag | ISWITCH
+ label | {::nomarkdown}ORWDBA7 ISWITCH{:/}
+ tag | {::nomarkdown}ISWITCH{:/}
  routine | [ORWDBA7](http://code.osehra.org/dox/Routine_ORWDBA7_source.html)
- return value type | SINGLE VALUE
- description | CIDC RPCRETURNS 1 IF PATIENT HAS BILLABLE INSURANCERETURNS 0 IF PATIENT DOES NOT HAVE BILLABLE INSURANCE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}CIDC RPCRETURNS 1 IF PATIENT HAS BILLABLE INSURANCERETURNS 0 IF PATIENT DOES NOT HAVE BILLABLE INSURANCE{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 14 | true | PATIENT'S IEN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PATIENT'S IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

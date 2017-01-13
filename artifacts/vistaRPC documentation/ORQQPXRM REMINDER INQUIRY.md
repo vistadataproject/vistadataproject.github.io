@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM REMINDER INQUIRY
- tag | RES
+ label | {::nomarkdown}ORQQPXRM REMINDER INQUIRY{:/}
+ tag | {::nomarkdown}RES{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Detailed description of reminder
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Detailed description of reminder{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINICAL REMINDER ID | LITERAL | 16 | true | Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9] | 
+| {::nomarkdown}CLINICAL REMINDER ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

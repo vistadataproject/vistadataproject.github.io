@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE AUTO VISIT TYPE SELECT
- tag | AUTOVSIT
+ label | {::nomarkdown}ORWPCE AUTO VISIT TYPE SELECT{:/}
+ tag | {::nomarkdown}AUTOVSIT{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE if visit type should be automatically selected.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE if visit type should be automatically selected.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LOC | LITERAL |  |  | Location. | 
+| {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Location.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

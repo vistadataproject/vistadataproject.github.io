@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD GETDFLT
- tag | GETDFLT
+ label | {::nomarkdown}ORWTPD GETDFLT{:/}
+ tag | {::nomarkdown}GETDFLT{:/}
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
- return value type | SINGLE VALUE
- description | get default setting for all reports(time/occ limits)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}get default setting for all reports(time/occ limits){:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

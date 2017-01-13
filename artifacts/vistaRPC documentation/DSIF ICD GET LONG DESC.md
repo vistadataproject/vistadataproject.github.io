@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF ICD GET LONG DESC
- tag | LD
+ label | {::nomarkdown}DSIF ICD GET LONG DESC{:/}
+ tag | {::nomarkdown}LD{:/}
  routine | [DSIFICD](http://code.osehra.org/dox/Routine_DSIFICD_source.html)
- return value type | SINGLE VALUE
- description | This RPC will return the long description (max 245 characters) for the specified code.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will return the long description (max 245 characters) for the specified code.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFVAL | LITERAL |  | true | This is the internal value of the code you wish to lookup. This input is required. | 
-| DSIFFIL | LITERAL |  | true | This is the file you wish to search. This input is required. Ex.  80 - Diagnosis     80.1 - Procedure | 
-| DSIFDT | LITERAL |  |  | This is the date you wish to search to apply code set versioning. This input is optional, if no date is passed the date will default to today. | 
+| {::nomarkdown}DSIFVAL{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal value of the code you wish to lookup. This input is required.{:/} | 
+| {::nomarkdown}DSIFFIL{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the file you wish to search. This input is required. Ex.  80 - Diagnosis     80.1 - Procedure{:/} | 
+| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the date you wish to search to apply code set versioning. This input is optional, if no date is passed the date will default to today.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

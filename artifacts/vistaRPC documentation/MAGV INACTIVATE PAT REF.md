@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV INACTIVATE PAT REF
- tag | INPAT
+ label | {::nomarkdown}MAGV INACTIVATE PAT REF{:/}
+ tag | {::nomarkdown}INPAT{:/}
  routine | [MAGVRS06](http://code.osehra.org/dox/Routine_MAGVRS06_source.html)
- return value type | ARRAY
- description | This RPC inactivates an entry on the IMAGING PATIENT REFERENCE File (#2005.6)..
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC inactivates an entry on the IMAGING PATIENT REFERENCE File (#2005.6)..{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIEN | LITERAL | 10 | true | This is the internal entry number of the record to be inactivated on the IMAGING PATIENT REFERENCE File (#2005.6). | 
+| {::nomarkdown}PATIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of the record to be inactivated on the IMAGING PATIENT REFERENCE File (#2005.6).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

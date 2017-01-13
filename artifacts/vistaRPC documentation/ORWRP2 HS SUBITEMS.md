@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP2 HS SUBITEMS
- tag | SUBITEM
+ label | {::nomarkdown}ORWRP2 HS SUBITEMS{:/}
+ tag | {::nomarkdown}SUBITEM{:/}
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
- return value type | ARRAY
- description | This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEST | LITERAL |  |  | This is the pointer value to the Laboratory Test (#60) file of the panelto be expanded. | 
+| {::nomarkdown}TEST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the pointer value to the Laboratory Test (#60) file of the panelto be expanded.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

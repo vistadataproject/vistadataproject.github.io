@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ ADMINS BOTH
- tag | ADMINS
+ label | {::nomarkdown}YTQ ADMINS BOTH{:/}
+ tag | {::nomarkdown}ADMINS{:/}
  routine | [YTQAPI5](http://code.osehra.org/dox/Routine_YTQAPI5_source.html)
- return value type | ARRAY
- description |  Returns all testing administrations for a specified patient.Returns data from 601.84, 601.2 and 601.4. This is new and legacy data.  input : DFN        COMPLETE: Y for all completed admins, N for all incompletes                   (Reqiured) output: Administration ID D^Instrument Name^Date Given^Date Saved        ^Orderer^Admin.By^Signed^# Answers^R_Privl        ^Is Legacy^INSTRUMENT id 601.71^Test IENS 601^Is copyright        ^Location IENS         This does NOT return ASI or GAF data.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Returns all testing administrations for a specified patient.Returns data from 601.84, 601.2 and 601.4. This is new and legacy data.  input : DFN        COMPLETE: Y for all completed admins, N for all incompletes                   (Reqiured) output: Administration ID D^Instrument Name^Date Given^Date Saved        ^Orderer^Admin.By^Signed^# Answers^R_Privl        ^Is Legacy^INSTRUMENT id 601.71^Test IENS 601^Is copyright        ^Location IENS         This does NOT return ASI or GAF data.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

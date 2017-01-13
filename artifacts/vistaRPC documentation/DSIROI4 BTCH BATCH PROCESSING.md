@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROI4 BTCH BATCH PROCESSING
- tag | BTCH
+ label | {::nomarkdown}DSIROI4 BTCH BATCH PROCESSING{:/}
+ tag | {::nomarkdown}BTCH{:/}
  routine | [DSIROI4](http://code.osehra.org/dox/Routine_DSIROI4_source.html)
- return value type | SINGLE VALUE
- description | This RPC clones requests in a batch manner.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC clones requests in a batch manner.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TYPE | LITERAL | 1 | true | The type of cloning (1=multi patient, 2=multi requestors) | 
-| IEN | LITERAL | 30 | true | The IEN of the request being cloned from 19620. | 
-| SELLIST | LIST | 60 | true | A list of requestors or patients as follows:   REQUESTOR IEN^REQUESTOR ADDRESS IEN   or   PATIENT IEN^PATIENT ADDRESS IEN^PATIENT ADDRESS IEN^ADDRESS TYPE           (PATIENT IEN MUST BE FULLY QUALIFIED) | 
+| {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The type of cloning (1=multi patient, 2=multi requestors){:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The IEN of the request being cloned from 19620.{:/} | 
+| {::nomarkdown}SELLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A list of requestors or patients as follows:   REQUESTOR IEN^REQUESTOR ADDRESS IEN   or   PATIENT IEN^PATIENT ADDRESS IEN^PATIENT ADDRESS IEN^ADDRESS TYPE           (PATIENT IEN MUST BE FULLY QUALIFIED){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

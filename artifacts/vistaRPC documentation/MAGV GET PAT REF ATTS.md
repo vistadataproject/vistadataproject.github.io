@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET PAT REF ATTS
- tag | GETPATA
+ label | {::nomarkdown}MAGV GET PAT REF ATTS{:/}
+ tag | {::nomarkdown}GETPATA{:/}
  routine | [MAGVRS08](http://code.osehra.org/dox/Routine_MAGVRS08_source.html)
- return value type | ARRAY
- description | Returns patient attributes given the IEN on the IMAGING PATIENT REFERENCE File (#2005.6).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns patient attributes given the IEN on the IMAGING PATIENT REFERENCE File (#2005.6).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIEN | LITERAL | 128 | true | The internal entry number of the patient on the IMAGING PATIENT REFERENCE File (#2005.6). | 
+| {::nomarkdown}PATIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}128{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The internal entry number of the patient on the IMAGING PATIENT REFERENCE File (#2005.6).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

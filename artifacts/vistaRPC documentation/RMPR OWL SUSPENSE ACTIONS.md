@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL SUSPENSE ACTIONS
- tag | EN
+ label | {::nomarkdown}RMPR OWL SUSPENSE ACTIONS{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR29CA](http://code.osehra.org/dox/Routine_RMPR29CA_source.html)
- return value type | ARRAY
- description | Remote Procedure  for Work Order Actions.  The first 2 will be:Post complete notePost initial action
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Remote Procedure  for Work Order Actions.  The first 2 will be:Post complete notePost initial action{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RMPRTXT | LIST | 1 |  |  | 
+| {::nomarkdown}RMPRTXT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}1{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

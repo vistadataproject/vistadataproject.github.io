@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB CCOW
- tag | CCOW
+ label | {::nomarkdown}DVBAB CCOW{:/}
+ tag | {::nomarkdown}CCOW{:/}
  routine | [DVBABFRM](http://code.osehra.org/dox/Routine_DVBABFRM_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure encapsulates the supported calls $$SITE^VASITEand $$PROD^XUPROD. Paramater TYPE     1 = Pass back local station number ($$SITE^VASITE)     2 = Pass back whether production account or not ($$PROD^XUPROD)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure encapsulates the supported calls $$SITE^VASITEand $$PROD^XUPROD. Paramater TYPE     1 = Pass back local station number ($$SITE^VASITE)     2 = Pass back whether production account or not ($$PROD^XUPROD){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INFOTYPE | LITERAL |  | true |  | 
-| TYPE |  |  |  |  | 
+| {::nomarkdown}INFOTYPE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}TYPE{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET DETAIL LOCATION
- tag | GETDLOC
+ label | {::nomarkdown}OOPS GET DETAIL LOCATION{:/}
+ tag | {::nomarkdown}GETDLOC{:/}
  routine | [OOPSGUIS](http://code.osehra.org/dox/Routine_OOPSGUIS_source.html)
- return value type | GLOBAL ARRAY
- description | This broker call returns the entries in the Detail Location sub file inthe ASISTS SETTING OF INJURY File (#2261.4).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This broker call returns the entries in the Detail Location sub file inthe ASISTS SETTING OF INJURY File (#2261.4).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 30 | true | This parameter consists of the File, Station, and IEN of the data element to bereturned in the results. | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter consists of the File, Station, and IEN of the data element to bereturned in the results.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

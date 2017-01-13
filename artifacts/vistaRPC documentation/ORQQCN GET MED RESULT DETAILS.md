@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN GET MED RESULT DETAILS
- tag | DISPMED
+ label | {::nomarkdown}ORQQCN GET MED RESULT DETAILS{:/}
+ tag | {::nomarkdown}DISPMED{:/}
  routine | [ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
- return value type | ARRAY
- description | Detailed display of medicine results.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Detailed display of medicine results.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Medicine result pointer | LITERAL | 24 | true | Variable pointer to medicine result. | 
+| {::nomarkdown}Medicine result pointer{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}24{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Variable pointer to medicine result.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

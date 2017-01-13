@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG UTIL JBOFFLN
- tag | LINE
+ label | {::nomarkdown}MAG UTIL JBOFFLN{:/}
+ tag | {::nomarkdown}LINE{:/}
  routine | [MAGSDOFL](http://code.osehra.org/dox/Routine_MAGSDOFL_source.html)
- return value type | ARRAY
- description | Track Offline JukeBox images | Take Image files Offline This Remote Prcedure will add the new entry in MAGQUEUE(2006.033).The platter volume name will be used to index with IMAGE file IEN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Track Offline JukeBox images | Take Image files Offline This Remote Prcedure will add the new entry in MAGQUEUE(2006.033).The platter volume name will be used to index with IMAGE file IEN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TXTLine | LITERAL | 256 | true | Text line in Offline Platter report.TXT | 
-| PLATTER | LITERAL | 256 | true | JUKEOX PLATTER NAME(LABEL) | 
+| {::nomarkdown}TXTLine{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Text line in Offline Platter report.TXT{:/} | 
+| {::nomarkdown}PLATTER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}JUKEOX PLATTER NAME(LABEL){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

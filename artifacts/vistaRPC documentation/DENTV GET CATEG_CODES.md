@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET CATEG_CODES
- tag | CATC
+ label | {::nomarkdown}DENTV GET CATEG_CODES{:/}
+ tag | {::nomarkdown}CATC{:/}
  routine | [DENTVRP1](http://code.osehra.org/dox/Routine_DENTVRP1_source.html)
- return value type | GLOBAL ARRAY
- description | This works in conjunction with the DENTV GET CATEGORIES rpc.  You passthe subcategory name and this call will return the array of cpt codesassociated with that subcategory name. end description update 6-23-2003
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This works in conjunction with the DENTV GET CATEGORIES rpc.  You passthe subcategory name and this call will return the array of cpt codesassociated with that subcategory name. end description update 6-23-2003{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TYP | LITERAL | 30 | true | This is the subcategory name from file 228 that was retrieved by usingthe DENTV GET CATEGORIES rpc. | 
+| {::nomarkdown}TYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the subcategory name from file 228 that was retrieved by usingthe DENTV GET CATEGORIES rpc.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

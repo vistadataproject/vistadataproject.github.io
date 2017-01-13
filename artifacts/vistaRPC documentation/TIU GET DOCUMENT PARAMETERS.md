@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DOCUMENT PARAMETERS
- tag | DOCPARM
+ label | {::nomarkdown}TIU GET DOCUMENT PARAMETERS{:/}
+ tag | {::nomarkdown}DOCPARM{:/}
  routine | [TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
- return value type | ARRAY
- description | This Remote Procedure returns the parameters by which a given documentor document type is to be processed.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure returns the parameters by which a given documentor document type is to be processed.{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | This is the record number of the document in the TIU DOCUMENT FILE(#8925). | 
-| TIUTYP | LITERAL |  | true | This is the record number of the Document Definition in the TIU DOCUMENTDEFINITION FILE (#8925.1).  e.g., TIUTYP=3 corresponds to the ClassProgress Notes, etc. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number of the document in the TIU DOCUMENT FILE(#8925).{:/} | 
+| {::nomarkdown}TIUTYP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number of the Document Definition in the TIU DOCUMENTDEFINITION FILE (#8925.1).  e.g., TIUTYP=3 corresponds to the ClassProgress Notes, etc.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

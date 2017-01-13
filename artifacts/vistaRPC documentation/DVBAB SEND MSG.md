@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB SEND MSG
- tag | MSG
+ label | {::nomarkdown}DVBAB SEND MSG{:/}
+ tag | {::nomarkdown}MSG{:/}
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
- return value type | SINGLE VALUE
- description | Used to generate e-mail messages for specific CAPRI actions, such aschanging a C&P exam request.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to generate e-mail messages for specific CAPRI actions, such aschanging a C&P exam request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VAL1 | LITERAL | 8 | true | This is the cancelling users DUZ. | 
-| VAL2 | LITERAL | 45 | true | This is the Subjecto of the message - XMSUB | 
-| VAL3 | LIST |  | true | This is the text of the message  -  XMTEXT | 
-| VAL4 | LITERAL | 30 | true | This is the mail group name  -  MGN | 
-| VAL5 | LITERAL | 15 | true | This is the 2507 request number | 
+| {::nomarkdown}VAL1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the cancelling users DUZ.{:/} | 
+| {::nomarkdown}VAL2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Subjecto of the message - XMSUB{:/} | 
+| {::nomarkdown}VAL3{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the text of the message  -  XMTEXT{:/} | 
+| {::nomarkdown}VAL4{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the mail group name  -  MGN{:/} | 
+| {::nomarkdown}VAL5{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the 2507 request number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB PTINQ
- tag | PTINQ
+ label | {::nomarkdown}DVBAB PTINQ{:/}
+ tag | {::nomarkdown}PTINQ{:/}
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a patient inquiry text report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a patient inquiry text report.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

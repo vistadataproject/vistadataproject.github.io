@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU REM DLG OK AS TEMPLATE
- tag | REMDLGOK
+ label | {::nomarkdown}TIU REM DLG OK AS TEMPLATE{:/}
+ tag | {::nomarkdown}REMDLGOK{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE is the passed in reminder dialog is allowed to be used ina TIU Template.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE is the passed in reminder dialog is allowed to be used ina TIU Template.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUIEN | LITERAL |  |  | Reminder Dialog IEN. | 
+| {::nomarkdown}TIUIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reminder Dialog IEN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

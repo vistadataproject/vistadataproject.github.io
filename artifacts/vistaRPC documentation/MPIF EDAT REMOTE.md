@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF EDAT REMOTE
- tag | MPIEDAT
+ label | {::nomarkdown}MPIF EDAT REMOTE{:/}
+ tag | {::nomarkdown}MPIEDAT{:/}
  routine | [MPIRPC](http://code.osehra.org/dox/Routine_MPIRPC_source.html)
- return value type | ARRAY
- description | MPI Extended Patient data inquiry for Display Only Query. ICN needs to be passed in.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}MPI Extended Patient data inquiry for Display Only Query. ICN needs to be passed in.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 16 | true | ICN for patient requesting data on. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICN for patient requesting data on.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

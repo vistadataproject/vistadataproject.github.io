@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS4 CPINFO
- tag | CPINFO
+ label | {::nomarkdown}ORWDPS4 CPINFO{:/}
+ tag | {::nomarkdown}CPINFO{:/}
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
- return value type | SINGLE VALUE
- description | Save outpatient med order co-pay information.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Save outpatient med order co-pay information.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

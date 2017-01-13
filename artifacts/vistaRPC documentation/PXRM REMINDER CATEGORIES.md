@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM REMINDER CATEGORIES
- tag | CATEGORY
+ label | {::nomarkdown}PXRM REMINDER CATEGORIES{:/}
+ tag | {::nomarkdown}CATEGORY{:/}
  routine | [PXRMRPCA](http://code.osehra.org/dox/Routine_PXRMRPCA_source.html)
- return value type | ARRAY
- description | Returns list of all CPRS lookup categories and associated reminders
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of all CPRS lookup categories and associated reminders{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | Patient Identifier from Patient file [#2] | 
-| HOSPITAL LOCATION | LITERAL | 16 | true | Patient's HOSPITAL LOCATION [#44]. May be null. | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient Identifier from Patient file [#2]{:/} | 
+| {::nomarkdown}HOSPITAL LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient's HOSPITAL LOCATION [#44]. May be null.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR CPRS DISPLAY
- tag | EN
+ label | {::nomarkdown}RMPR CPRS DISPLAY{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9EPD](http://code.osehra.org/dox/Routine_RMPR9EPD_source.html)
- return value type | ARRAY
- description | GUI CPRS SUSPENSE DETAIL DISPLAY. PASS THE IEN OF FILE 668 RETURN RESULTS:  RESUTLS()=^TMP(\GMRCR\,
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI CPRS SUSPENSE DETAIL DISPLAY. PASS THE IEN OF FILE 668 RETURN RESULTS:  RESUTLS()=^TMP(\GMRCR\,{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN FIND CONSULT
- tag | FINDCSLT
+ label | {::nomarkdown}ORQQCN FIND CONSULT{:/}
+ tag | {::nomarkdown}FINDCSLT{:/}
  routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
- return value type | SINGLE VALUE
- description | Given a Consult IEN in file 123, return a formatted list item for thatsingle consult only, in the same format as returned by ORQQCN LIST.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Given a Consult IEN in file 123, return a formatted list item for thatsingle consult only, in the same format as returned by ORQQCN LIST.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMRCO | LITERAL | 16 | true |  | 
+| {::nomarkdown}GMRCO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

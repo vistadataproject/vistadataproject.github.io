@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET DIVISIONS
- tag | GETDIVS
+ label | {::nomarkdown}DSIR GET DIVISIONS{:/}
+ tag | {::nomarkdown}GETDIVS{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | ARRAY
- description | Return available Divisions for reporting.  Must be in the ADIV cross reference on file 19620.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return available Divisions for reporting.  Must be in the ADIV cross reference on file 19620.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

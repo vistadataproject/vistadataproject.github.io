@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET FAC SHORT LIST
- tag | STA
+ label | {::nomarkdown}OOPS GET FAC SHORT LIST{:/}
+ tag | {::nomarkdown}STA{:/}
  routine | [OOPSGUIS](http://code.osehra.org/dox/Routine_OOPSGUIS_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

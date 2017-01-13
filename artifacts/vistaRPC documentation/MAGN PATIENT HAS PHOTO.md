@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGN PATIENT HAS PHOTO
- tag | RPHASPHT
+ label | {::nomarkdown}MAGN PATIENT HAS PHOTO{:/}
+ tag | {::nomarkdown}RPHASPHT{:/}
  routine | [MAGNVIC](http://code.osehra.org/dox/Routine_MAGNVIC_source.html)
- return value type | SINGLE VALUE
- description | Checks if photo image exists for a patient
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Checks if photo image exists for a patient{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDFN | LITERAL |  | true | Patient DFN | 
+| {::nomarkdown}MAGDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

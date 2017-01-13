@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU REMOVE LINK TO IMAGE
- tag | DELIMAGE
+ label | {::nomarkdown}TIU REMOVE LINK TO IMAGE{:/}
+ tag | {::nomarkdown}DELIMAGE{:/}
  routine | [TIUSRVPL](http://code.osehra.org/dox/Routine_TIUSRVPL_source.html)
- return value type | SINGLE VALUE
- description | This RPC will remove a link between a document and an image. Only valid links may be removed.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will remove a link between a document and an image. Only valid links may be removed.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | This is the record number (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 
-| IMGDA | LITERAL |  | true | This is the record number (IEN) of the document in the IMAGE FILE (#2005). | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) of the document in the TIU DOCUMENT FILE(#8925).{:/} | 
+| {::nomarkdown}IMGDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) of the document in the IMAGE FILE (#2005).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

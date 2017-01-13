@@ -9,19 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YS GAF API
- tag | GAFHX
+ label | {::nomarkdown}YS GAF API{:/}
+ tag | {::nomarkdown}GAFHX{:/}
  routine | [YSGAFAPI](http://code.osehra.org/dox/Routine_YSGAFAPI_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
-### Method description
-
- property | value 
---- | --- 
 
 
-
-
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

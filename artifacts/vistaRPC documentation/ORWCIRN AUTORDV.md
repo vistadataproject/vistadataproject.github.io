@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCIRN AUTORDV
- tag | AUTORDV
+ label | {::nomarkdown}ORWCIRN AUTORDV{:/}
+ tag | {::nomarkdown}AUTORDV{:/}
  routine | [ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
- return value type | SINGLE VALUE
- description | Get parameter value for ORWRP CIRN AUTOMATIC.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Get parameter value for ORWRP CIRN AUTOMATIC.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

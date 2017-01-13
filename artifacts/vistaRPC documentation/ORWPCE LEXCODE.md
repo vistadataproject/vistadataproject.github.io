@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE LEXCODE
- tag | LEXCODE
+ label | {::nomarkdown}ORWPCE LEXCODE{:/}
+ tag | {::nomarkdown}LEXCODE{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | SINGLE VALUE
- description | Returns a code associated with a lexicon entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a code associated with a lexicon entry.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET2 PATIENT DEMOGRAPHIC
- tag | GETDATA2
+ label | {::nomarkdown}VPS GET2 PATIENT DEMOGRAPHIC{:/}
+ tag | {::nomarkdown}GETDATA2{:/}
  routine | [VPSRPC1](http://code.osehra.org/dox/Routine_VPSRPC1_source.html)
- return value type | ARRAY
- description | Called by the Vetlink Kiosk system. The RPC will accept two input parameters which are the patient SSN or DFN and the patient type. The RPC returns the patient demographics,insurance, and up-coming appointments.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Called by the Vetlink Kiosk system. The RPC will accept two input parameters which are the patient SSN or DFN and the patient type. The RPC returns the patient demographics,insurance, and up-coming appointments.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSNUM | LITERAL | 12 | true | Patient Social Security Number or Patient IEN. | 
-| VPSTYP | LITERAL | 10 | true | SSN or DFN | 
+| {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient Social Security Number or Patient IEN.{:/} | 
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}SSN or DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DS URGENCIES
- tag | URGENCY
+ label | {::nomarkdown}TIU GET DS URGENCIES{:/}
+ tag | {::nomarkdown}URGENCY{:/}
  routine | [TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
- return value type | ARRAY
- description | Returns a set of discharge summary urgencies for use in a long list box.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a set of discharge summary urgencies for use in a long list box.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAYMENT HISTORY
- tag | LIST
+ label | {::nomarkdown}DSIF PAYMENT HISTORY{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [DSIFRPT2](http://code.osehra.org/dox/Routine_DSIFRPT2_source.html)
- return value type | GLOBAL ARRAY
- description | This is an RPC version of the LIST PAYMENT HISTORY option in the Fee Basis application.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This is an RPC version of the LIST PAYMENT HISTORY option in the Fee Basis application.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 99 | true | This is the Internal Entry Number to the Patient File #2. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Internal Entry Number to the Patient File #2.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

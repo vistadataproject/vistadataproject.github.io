@@ -9,26 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX1 STCHANGE
- tag | STCHANGE
+ label | {::nomarkdown}ORWDX1 STCHANGE{:/}
+ tag | {::nomarkdown}STCHANGE{:/}
  routine | [ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
-
-
-### Method description
-
- property | value 
---- | --- 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
-| ORYARR | LIST |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}ORYARR{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

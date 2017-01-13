@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET AD HOC REPORT
- tag | GETRPT
+ label | {::nomarkdown}DSIR GET AD HOC REPORT{:/}
+ tag | {::nomarkdown}GETRPT{:/}
  routine | [DSIROIAH](http://code.osehra.org/dox/Routine_DSIROIAH_source.html)
- return value type | ARRAY
- description | Returns all of the definition parameters for a selected report. 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all of the definition parameters for a selected report. {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RPT | LITERAL | 30 | true | THIS IS REPORT IEN YOU WANT TO RETRIEVE. | 
+| {::nomarkdown}RPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}THIS IS REPORT IEN YOU WANT TO RETRIEVE.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

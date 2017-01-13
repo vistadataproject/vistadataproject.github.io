@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN INPATIENT ICNS
- tag | COL
+ label | {::nomarkdown}SPN INPATIENT ICNS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPIP](http://code.osehra.org/dox/Routine_SPNJRPIP_source.html)
- return value type | GLOBAL ARRAY
- description | Returns list of ICNs of all Inpatients during a given date range...used as input for SCI filtered reports.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns list of ICNs of all Inpatients during a given date range...used as input for SCI filtered reports.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FDATE | LITERAL |  |  | Date to begin Inpatient search | 
-| TDATE | LITERAL |  |  | Date to end Inpatient search | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to begin Inpatient search{:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end Inpatient search{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

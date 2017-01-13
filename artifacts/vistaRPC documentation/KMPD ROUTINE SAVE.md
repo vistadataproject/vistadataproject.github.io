@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD ROUTINE SAVE
- tag | ROUSAVE
+ label | {::nomarkdown}KMPD ROUTINE SAVE{:/}
+ tag | {::nomarkdown}ROUSAVE{:/}
  routine | [KMPDU3](http://code.osehra.org/dox/Routine_KMPDU3_source.html)
- return value type | ARRAY
- description | Save Routine.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Save Routine.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAM1 | LITERAL | 8 | true | Routine name (limited to 8 characters). | 
-| PARAM2 | LIST | 240 | true | Array containing routine code. | 
+| {::nomarkdown}PARAM1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Routine name (limited to 8 characters).{:/} | 
+| {::nomarkdown}PARAM2{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array containing routine code.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

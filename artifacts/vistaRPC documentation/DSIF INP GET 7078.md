@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP GET 7078
- tag | GET7078
+ label | {::nomarkdown}DSIF INP GET 7078{:/}
+ tag | {::nomarkdown}GET7078{:/}
  routine | [DSIFINP0](http://code.osehra.org/dox/Routine_DSIFINP0_source.html)
- return value type | SINGLE VALUE
- description | Pass in 7078 IEN. 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Pass in 7078 IEN. {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DPT | LITERAL | 25 | true |  | 
-| IEN | LITERAL | 10 | true |  | 
+| {::nomarkdown}DPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

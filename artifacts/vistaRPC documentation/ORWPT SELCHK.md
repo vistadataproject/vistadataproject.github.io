@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT SELCHK
- tag | SELCHK
+ label | {::nomarkdown}ORWPT SELCHK{:/}
+ tag | {::nomarkdown}SELCHK{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | SINGLE VALUE
- description | Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

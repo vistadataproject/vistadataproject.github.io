@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB SUBCHK
- tag | SUBCHK
+ label | {::nomarkdown}ORWDXVB SUBCHK{:/}
+ tag | {::nomarkdown}SUBCHK{:/}
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
- return value type | SINGLE VALUE
- description | Check to see if selected test is a Blood Component or a Diagnostic Test.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Check to see if selected test is a Blood Component or a Diagnostic Test.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

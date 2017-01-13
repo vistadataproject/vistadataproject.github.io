@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD GET SITE INFO
- tag | SITE
+ label | {::nomarkdown}XHD GET SITE INFO{:/}
+ tag | {::nomarkdown}SITE{:/}
  routine | [XHDLSITE](http://code.osehra.org/dox/Routine_XHDLSITE_source.html)
- return value type | SINGLE VALUE
- description | Returns Division and Integration names and IDs.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns Division and Integration names and IDs.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

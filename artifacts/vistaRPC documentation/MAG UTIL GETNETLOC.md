@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG UTIL GETNETLOC
- tag | SHARE
+ label | {::nomarkdown}MAG UTIL GETNETLOC{:/}
+ tag | {::nomarkdown}SHARE{:/}
  routine | [MAGSDEL5](http://code.osehra.org/dox/Routine_MAGSDEL5_source.html)
- return value type | ARRAY
- description | Returns a list of entries in the NETWORK LOCATION file(#2005.2).The RPC will return each NETWORK LOCATION data along with its OPERATIONAL STATUS (offline/online), PHYSICAL REFERENCE, HASH SUBDIRECTORY,SITE, PLACE info ...etc.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of entries in the NETWORK LOCATION file(#2005.2).The RPC will return each NETWORK LOCATION data along with its OPERATIONAL STATUS (offline/online), PHYSICAL REFERENCE, HASH SUBDIRECTORY,SITE, PLACE info ...etc.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TYPE | LITERAL | 32 |  | ALL or select storage type \MAG\ or \WORM\ | 
+| {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} |  | {::nomarkdown}ALL or select storage type \MAG\ or \WORM\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR STOP
- tag | STOP
+ label | {::nomarkdown}ORWDLR STOP{:/}
+ tag | {::nomarkdown}STOP{:/}
  routine | [ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
- return value type | SINGLE VALUE
- description | Calculates a stop date (for lab orders with schedules).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Calculates a stop date (for lab orders with schedules).{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

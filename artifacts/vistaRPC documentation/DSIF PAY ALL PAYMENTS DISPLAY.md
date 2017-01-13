@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY ALL PAYMENTS DISPLAY
- tag | EN1
+ label | {::nomarkdown}DSIF PAY ALL PAYMENTS DISPLAY{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
- return value type | ARRAY
- description | Input DFN and Vendor IEN, to get a list of existing payments.Optional parameters are Date of service (FM date) and CPT IEN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Input DFN and Vendor IEN, to get a list of existing payments.Optional parameters are Date of service (FM date) and CPT IEN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true |  | 
-| VENDOR IEN | LITERAL | 25 | true |  | 
-| DATE OF SERVICE | LITERAL | 7 | true | Date of service FM format (optional) **Unless you enter a CPT code, then it is required! | 
-| CPT | LITERAL | 12 | true | CPT code, external value. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}VENDOR IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DATE OF SERVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date of service FM format (optional) **Unless you enter a CPT code, then it is required!{:/} | 
+| {::nomarkdown}CPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CPT code, external value.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DS TITLES
- tag | SUMMARY
+ label | {::nomarkdown}TIU GET DS TITLES{:/}
+ tag | {::nomarkdown}SUMMARY{:/}
  routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

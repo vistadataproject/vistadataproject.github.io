@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC XPD LAST INSTALL
- tag | RLAST
+ label | {::nomarkdown}DSIC XPD LAST INSTALL{:/}
+ tag | {::nomarkdown}RLAST{:/}
  routine | [DSICXPDU](http://code.osehra.org/dox/Routine_DSICXPDU_source.html)
- return value type | SINGLE VALUE
- description | This returns the latest installed version of a KIDS build.  It gets the data from the INSTALL file.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This returns the latest installed version of a KIDS build.  It gets the data from the INSTALL file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PKG | LITERAL | 50 | true | This is the name (.01 field value) from the INSTALL file. The VA naming convention for KIDS builds:  <name><space><version> for a whole package  name*version*patch for a patch PKG can be the full name KIDS BUILD file name, or it can just be the name portion of the KIDS BUILD file name | 
+| {::nomarkdown}PKG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name (.01 field value) from the INSTALL file. The VA naming convention for KIDS builds:  <name><space><version> for a whole package  name*version*patch for a patch PKG can be the full name KIDS BUILD file name, or it can just be the name portion of the KIDS BUILD file name{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

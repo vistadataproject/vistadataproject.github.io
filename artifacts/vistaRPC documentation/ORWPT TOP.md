@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT TOP
- tag | TOP
+ label | {::nomarkdown}ORWPT TOP{:/}
+ tag | {::nomarkdown}TOP{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns the last selected patient by the defined user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the last selected patient by the defined user.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP WINPRINT DEFAULT
- tag | WINDFLT
+ label | {::nomarkdown}ORWRP WINPRINT DEFAULT{:/}
+ tag | {::nomarkdown}WINDFLT{:/}
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
- return value type | SINGLE VALUE
- description | Returns whether the Windows printer is set as the default for the user. 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns whether the Windows printer is set as the default for the user. {:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

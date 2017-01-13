@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG OFFLINE IMAGE ACCESSED
- tag | MAIL
+ label | {::nomarkdown}MAGG OFFLINE IMAGE ACCESSED{:/}
+ tag | {::nomarkdown}MAIL{:/}
  routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
- return value type | SINGLE VALUE
- description | This sends a message when an image has been accessed from a Jukeboxplatter that is offline, as determined by having an entry in the file ^MAGQUEUE(2006.033.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This sends a message when an image has been accessed from a Jukeboxplatter that is offline, as determined by having an entry in the file ^MAGQUEUE(2006.033.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGFILE | LITERAL | 90 | true | The full path and file name of the Image accessed. | 
-| MAGIEN | LITERAL | 30 | true | The Internal entry number in file MAG(2005.   | 
+| {::nomarkdown}MAGFILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The full path and file name of the Image accessed.{:/} | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Internal entry number in file MAG(2005.  {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU CLINLOC
- tag | CLINLOC
+ label | {::nomarkdown}ORWU CLINLOC{:/}
+ tag | {::nomarkdown}CLINLOC{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | ARRAY
- description | Returns a list of clinics from the HOSPITAL LOCATION file (#44).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of clinics from the HOSPITAL LOCATION file (#44).{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

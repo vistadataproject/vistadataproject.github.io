@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF STATIONS
- tag | STATNUM
+ label | {::nomarkdown}DSIF STATIONS{:/}
+ tag | {::nomarkdown}STATNUM{:/}
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
- return value type | SINGLE VALUE
- description | Return station number the user is logged into^available IFCAP stationnumbers for the user^Station Name
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return station number the user is logged into^available IFCAP stationnumbers for the user^Station Name{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

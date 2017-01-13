@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DDR LISTER
- tag | LISTC
+ label | {::nomarkdown}DDR LISTER{:/}
+ tag | {::nomarkdown}LISTC{:/}
  routine | [DDR](http://code.osehra.org/dox/Routine_DDR_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}LIST ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

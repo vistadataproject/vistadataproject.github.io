@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 VALRATE
- tag | VALRATE
+ label | {::nomarkdown}ORWDPS32 VALRATE{:/}
+ tag | {::nomarkdown}VALRATE{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | SINGLE VALUE
- description | Return a 1 if IV rate text is valid, otherwise return 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return a 1 if IV rate text is valid, otherwise return 0.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

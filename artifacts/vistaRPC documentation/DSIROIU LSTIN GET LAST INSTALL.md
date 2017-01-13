@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROIU LSTIN GET LAST INSTALL
- tag | LSTIN
+ label | {::nomarkdown}DSIROIU LSTIN GET LAST INSTALL{:/}
+ tag | {::nomarkdown}LSTIN{:/}
  routine | [DSIROIU](http://code.osehra.org/dox/Routine_DSIROIU_source.html)
- return value type | SINGLE VALUE
- description | This RPC call returns the latest BUILD name installed in the DSIR package. 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC call returns the latest BUILD name installed in the DSIR package. {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

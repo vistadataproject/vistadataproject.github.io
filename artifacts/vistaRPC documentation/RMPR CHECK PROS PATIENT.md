@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR CHECK PROS PATIENT
- tag | EN1
+ label | {::nomarkdown}RMPR CHECK PROS PATIENT{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [RMPR9CPP](http://code.osehra.org/dox/Routine_RMPR9CPP_source.html)
- return value type | ARRAY
- description |  
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |   | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown} {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

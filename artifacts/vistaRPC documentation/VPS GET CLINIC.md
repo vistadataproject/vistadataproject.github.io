@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET CLINIC
- tag | GETCLN
+ label | {::nomarkdown}VPS GET CLINIC{:/}
+ tag | {::nomarkdown}GETCLN{:/}
  routine | [VPSRPC1](http://code.osehra.org/dox/Routine_VPSRPC1_source.html)
- return value type | ARRAY
- description | Called by the Vetlink Kiosk system.  The RPC will accept a single inputvalue representing the name of the clinic (full or partial name); and theoutput produced will be an array that returns all the possible matches forthe clinic (one to many clinics).  Values returned will be the name of theclinic and the ien of the clinic.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Called by the Vetlink Kiosk system.  The RPC will accept a single inputvalue representing the name of the clinic (full or partial name); and theoutput produced will be an array that returns all the possible matches forthe clinic (one to many clinics).  Values returned will be the name of theclinic and the ien of the clinic.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINICNAME | LITERAL | 70 | true | The input would represent a full or partial name of a given clinic. | 
+| {::nomarkdown}CLINICNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}70{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input would represent a full or partial name of a given clinic.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

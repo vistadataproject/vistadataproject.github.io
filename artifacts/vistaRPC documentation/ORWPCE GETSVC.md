@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE GETSVC
- tag | GETSVC
+ label | {::nomarkdown}ORWPCE GETSVC{:/}
+ tag | {::nomarkdown}GETSVC{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | SINGLE VALUE
- description | Calculates the correct service category.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Calculates the correct service category.{:/}
 
 
 ### Method description
@@ -26,11 +26,11 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SVC | LITERAL |  |  | Initial Service Connection Category. | 
-| LOC | LITERAL |  |  | Pointer to the hospital location. | 
-| INP | LITERAL |  |  | Patient Status0 = Outpatient1 = Inpatient | 
+| {::nomarkdown}SVC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Initial Service Connection Category.{:/} | 
+| {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Pointer to the hospital location.{:/} | 
+| {::nomarkdown}INP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Patient Status0 = Outpatient1 = Inpatient{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

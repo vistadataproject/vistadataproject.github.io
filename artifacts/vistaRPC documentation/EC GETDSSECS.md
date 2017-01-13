@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETDSSECS
- tag | DSSECS
+ label | {::nomarkdown}EC GETDSSECS{:/}
+ tag | {::nomarkdown}DSSECS{:/}
  routine | [ECUMRPC](http://code.osehra.org/dox/Routine_ECUMRPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of Event Code Screen from EC EVENT CODE CREENS FILE #720.3based on a DSS Unit and location.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of Event Code Screen from EC EVENT CODE CREENS FILE #720.3based on a DSS Unit and location.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input variable ECARY contains the value for DSS Unit    ECD   - DSS Unit IEN    ECL   - Location | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable ECARY contains the value for DSS Unit    ECD   - DSS Unit IEN    ECL   - Location{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC DM CHECK
- tag | IMPCK
+ label | {::nomarkdown}DSIC DM CHECK{:/}
+ tag | {::nomarkdown}IMPCK{:/}
  routine | [DSICDM](http://code.osehra.org/dox/Routine_DSICDM_source.html)
- return value type | SINGLE VALUE
- description | This will check whether or not the current VistA system supports VistA Imagings import API.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will check whether or not the current VistA system supports VistA Imagings import API.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

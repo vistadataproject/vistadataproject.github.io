@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC BLD REASSIGN PAT LIST
- tag | PTLSTBLD
+ label | {::nomarkdown}SCMC BLD REASSIGN PAT LIST{:/}
+ tag | {::nomarkdown}PTLSTBLD{:/}
  routine | [SCMRBK](http://code.osehra.org/dox/Routine_SCMRBK_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SCVAL | LITERAL | 512 | true |  | 
+| {::nomarkdown}SCVAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

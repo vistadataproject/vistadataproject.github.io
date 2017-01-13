@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDFH DIETS
- tag | DIETS
+ label | {::nomarkdown}ORWDFH DIETS{:/}
+ tag | {::nomarkdown}DIETS{:/}
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
- return value type | ARRAY
- description | Returns active diets (including NPO) in the format:      IEN^NAME   or IEN^SYNONYM <NAME>^NAME
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns active diets (including NPO) in the format:      IEN^NAME   or IEN^SYNONYM <NAME>^NAME{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

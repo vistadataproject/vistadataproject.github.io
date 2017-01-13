@@ -9,26 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM MHDLL
- tag | MHDLL
+ label | {::nomarkdown}ORQQPXRM MHDLL{:/}
+ tag | {::nomarkdown}MHDLL{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
-
-
-### Method description
-
- property | value 
---- | --- 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true |  | 
-| INPUTS | LITERAL |  | true |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}INPUTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

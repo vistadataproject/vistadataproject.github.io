@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP PAYMENT LIST
- tag | LOOKUP
+ label | {::nomarkdown}DSIF INP PAYMENT LIST{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [DSIFEP1](http://code.osehra.org/dox/Routine_DSIFEP1_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC returns a list of all entries in file 162.5 for a given entry in 7078.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of all entries in file 162.5 for a given entry in 7078.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FB7078 | LITERAL | 99 | true | Internal Entry Number to file 162.4 | 
+| {::nomarkdown}FB7078{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number to file 162.4{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

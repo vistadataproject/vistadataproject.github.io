@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUL QVSUB
- tag | QVSUB
+ label | {::nomarkdown}ORWUL QVSUB{:/}
+ tag | {::nomarkdown}QVSUB{:/}
  routine | [ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

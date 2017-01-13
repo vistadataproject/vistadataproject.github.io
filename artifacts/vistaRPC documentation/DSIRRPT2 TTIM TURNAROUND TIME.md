@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIRRPT2 TTIM TURNAROUND TIME
- tag | TAT
+ label | {::nomarkdown}DSIRRPT2 TTIM TURNAROUND TIME{:/}
+ tag | {::nomarkdown}TAT{:/}
  routine | [DSIRRPT2](http://code.osehra.org/dox/Routine_DSIRRPT2_source.html)
- return value type | GLOBAL ARRAY
- description | RPC for scheduling the Turnaround Time Report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}RPC for scheduling the Turnaround Time Report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FRDT | LITERAL | 7 | true | This is the lower date range for the report based on date received.  | 
-| TODT | LITERAL | 7 | true | This is the upper date range for the report based on date received. | 
-| DIVL | LITERAL | 240 | true | This is a list of division numbers delimited with a ^. | 
-| SCHED | LITERAL | 1 | true | Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately | 
-| ESTART | LITERAL | 15 | true | Earliet time to start the scheaduled task | 
+| {::nomarkdown}FRDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the lower date range for the report based on date received. {:/} | 
+| {::nomarkdown}TODT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the upper date range for the report based on date received.{:/} | 
+| {::nomarkdown}DIVL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a list of division numbers delimited with a ^.{:/} | 
+| {::nomarkdown}SCHED{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Schedule - Boolean for scheduled or immediate run           1 = Schedule / 0 or Null = Run Immediately{:/} | 
+| {::nomarkdown}ESTART{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Earliet time to start the scheaduled task{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

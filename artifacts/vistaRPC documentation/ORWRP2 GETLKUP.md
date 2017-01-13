@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP2 GETLKUP
- tag | GETLKUP
+ label | {::nomarkdown}ORWRP2 GETLKUP{:/}
+ tag | {::nomarkdown}GETLKUP{:/}
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
- return value type | SINGLE VALUE
- description | This gets the last Adhoc Health Summary lookup used by a user in CPRS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This gets the last Adhoc Health Summary lookup used by a user in CPRS.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

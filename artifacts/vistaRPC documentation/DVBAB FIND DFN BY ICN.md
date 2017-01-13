@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB FIND DFN BY ICN
- tag | ICN
+ label | {::nomarkdown}DVBAB FIND DFN BY ICN{:/}
+ tag | {::nomarkdown}ICN{:/}
  routine | [DVBABDOD](http://code.osehra.org/dox/Routine_DVBABDOD_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure call returns the patient's DFN associated with the ICN passed to the RPC.  The DFN is the internal entry number in the Patient (#2) file.  The RPC is designed specifically for the FHIE VistA server not the local VAMC facilities.  It is distributed nationally with the CAPRI application to keep the remote procedures and the DVBA CAPRI GUI option consistent on all systems using CAPRI.  Please do not use.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call returns the patient's DFN associated with the ICN passed to the RPC.  The DFN is the internal entry number in the Patient (#2) file.  The RPC is designed specifically for the FHIE VistA server not the local VAMC facilities.  It is distributed nationally with the CAPRI application to keep the remote procedures and the DVBA CAPRI GUI option consistent on all systems using CAPRI.  Please do not use.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  | true | INTEGRATION CONTROL NUMBER | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}INTEGRATION CONTROL NUMBER{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

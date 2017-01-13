@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV IMPORT STUDY LOG REPORT
- tag | IMPLOGEX
+ label | {::nomarkdown}MAGV IMPORT STUDY LOG REPORT{:/}
+ tag | {::nomarkdown}IMPLOGEX{:/}
  routine | [MAGVIM03](http://code.osehra.org/dox/Routine_MAGVIM03_source.html)
- return value type | GLOBAL ARRAY
- description | Exports data from the MAGV IMPORT STUDY LOG file (#2006.9421) as formatted reports.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Exports data from the MAGV IMPORT STUDY LOG file (#2006.9421) as formatted reports.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REPORT | LITERAL |  | true | An index value for the report to be exported. | 
-| STARTDT | LITERAL | 8 | true | The date, as YYYYMMDD, from which to start the query. If null, defaults to date of the earliest record. | 
-| STOPDT | LITERAL | 8 | true | The date, as YYYYMMDD, bracketing the end of the query. If null, defaults to TODAY. | 
+| {::nomarkdown}REPORT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}An index value for the report to be exported.{:/} | 
+| {::nomarkdown}STARTDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The date, as YYYYMMDD, from which to start the query. If null, defaults to date of the earliest record.{:/} | 
+| {::nomarkdown}STOPDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The date, as YYYYMMDD, bracketing the end of the query. If null, defaults to TODAY.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

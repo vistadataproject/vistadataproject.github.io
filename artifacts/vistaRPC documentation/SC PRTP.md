@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC PRTP
- tag | PRTP
+ label | {::nomarkdown}SC PRTP{:/}
+ tag | {::nomarkdown}PRTP{:/}
  routine | [SCUTBK1](http://code.osehra.org/dox/Routine_SCUTBK1_source.html)
- return value type | SINGLE VALUE
- description | Returns the currently active staff member for a position.  Send inPosition Ien and date range, returns name and ien from New Personfile.  SC(\IEN\)=ien  SC(\BEGIN\)=begining date for check  SC(\END\)=ending date for check
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the currently active staff member for a position.  Send inPosition Ien and date range, returns name and ien from New Personfile.  SC(\IEN\)=ien  SC(\BEGIN\)=begining date for check  SC(\END\)=ending date for check{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT ARRAY | LIST | 512 | true | See RPC Description for values | 
+| {::nomarkdown}INPUT ARRAY{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} | {::nomarkdown}See RPC Description for values{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

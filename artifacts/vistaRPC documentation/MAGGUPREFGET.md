@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGUPREFGET
- tag | GET
+ label | {::nomarkdown}MAGGUPREFGET{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [MAGGTUP](http://code.osehra.org/dox/Routine_MAGGTUP_source.html)
- return value type | ARRAY
- description | Returns the user preferences for the Imaging Display windows.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the user preferences for the Imaging Display windows.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

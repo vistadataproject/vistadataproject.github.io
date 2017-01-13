@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD EXPORT
- tag | EXPORT
+ label | {::nomarkdown}TIU FIELD EXPORT{:/}
+ tag | {::nomarkdown}EXPORT{:/}
  routine | [TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
- return value type | ARRAY
- description | Exports Template Fields in XML format
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Exports Template Fields in XML format{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FLDS | LIST |  |  | List of template field names to export. | 
+| {::nomarkdown}FLDS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of template field names to export.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

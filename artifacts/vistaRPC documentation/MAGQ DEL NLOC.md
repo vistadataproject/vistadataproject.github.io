@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ DEL NLOC
- tag | RLOCA
+ label | {::nomarkdown}MAGQ DEL NLOC{:/}
+ tag | {::nomarkdown}RLOCA{:/}
  routine | [MAGQBU6A](http://code.osehra.org/dox/Routine_MAGQBU6A_source.html)
- return value type | SINGLE VALUE
- description | This is used to remove Network Location entriesand requires the user to have the MAG SYS key.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This is used to remove Network Location entriesand requires the user to have the MAG SYS key.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Network location file entry | LITERAL | 30 | true | This is the Network Location file entry number. | 
+| {::nomarkdown}Network location file entry{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Network Location file entry number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS KAAJEE LOGOUT
- tag | SIGNOFF
+ label | {::nomarkdown}XUS KAAJEE LOGOUT{:/}
+ tag | {::nomarkdown}SIGNOFF{:/}
  routine | [XUSKAAJ](http://code.osehra.org/dox/Routine_XUSKAAJ_source.html)
- return value type | SINGLE VALUE
- description | This RPC calls the LOUT^XUSCLEAN tag to mark a KAAJEE-signed-on user'sentry in the sign-on log as signed off.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC calls the LOUT^XUSCLEAN tag to mark a KAAJEE-signed-on user'sentry in the sign-on log as signed off.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SIGNON-LOG-DA | LITERAL | 1 | true | The DA (IEN) of the user's signon log entry. | 
+| {::nomarkdown}SIGNON-LOG-DA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The DA (IEN) of the user's signon log entry.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

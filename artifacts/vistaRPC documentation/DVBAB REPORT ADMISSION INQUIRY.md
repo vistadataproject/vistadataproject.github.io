@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB REPORT ADMISSION INQUIRY
- tag | ENBROKER
+ label | {::nomarkdown}DVBAB REPORT ADMISSION INQUIRY{:/}
+ tag | {::nomarkdown}ENBROKER{:/}
  routine | [DVBAADRP](http://code.osehra.org/dox/Routine_DVBAADRP_source.html)
- return value type | ARRAY
- description | Returns display text indicating when the report was last run
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns display text indicating when the report was last run{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

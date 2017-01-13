@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE I10IMPDT
- tag | I10IMPDT
+ label | {::nomarkdown}ORWPCE I10IMPDT{:/}
+ tag | {::nomarkdown}I10IMPDT{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns the ICD-10 implementation date in FM Date/Time format.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns the ICD-10 implementation date in FM Date/Time format.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

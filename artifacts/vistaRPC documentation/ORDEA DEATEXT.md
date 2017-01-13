@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORDEA DEATEXT
- tag | DEATEXT
+ label | {::nomarkdown}ORDEA DEATEXT{:/}
+ tag | {::nomarkdown}DEATEXT{:/}
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
- return value type | WORD PROCESSING
- description | Returns the text to show on the signature dialog mandated by DEA for when a controlled substance order is selected to be signed.
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
+ description | {::nomarkdown}Returns the text to show on the signature dialog mandated by DEA for when a controlled substance order is selected to be signed.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

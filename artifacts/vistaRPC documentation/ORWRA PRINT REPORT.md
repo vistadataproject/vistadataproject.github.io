@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRA PRINT REPORT
- tag | PRINT
+ label | {::nomarkdown}ORWRA PRINT REPORT{:/}
+ tag | {::nomarkdown}PRINT{:/}
  routine | [ORWRAP](http://code.osehra.org/dox/Routine_ORWRAP_source.html)
- return value type | SINGLE VALUE
- description | This rpc is used to print an imaging report on the Imaging tabin CPRS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This rpc is used to print an imaging report on the Imaging tabin CPRS.{:/}
 
 
 ### Method description
@@ -21,17 +21,18 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | print report entry point
- Leading comment lines | RPC: ORWRA PRINT REPORT,See RPC definition for details on input and output parameters
+ Leading comment lines | RPC: ORWRA PRINT REPORT
+See RPC definition for details on input and output parameters
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DEVICE | LITERAL | 100 | true | Name of the device where the report should print.Format: <device name> ; <right margin> ; <page length>Right margin and page length are optional. | 
-| DFN | LITERAL | 20 | true | Internal entry number of entry in the Patient file. | 
-| EXAM ID | LITERAL | 20 | true | Identification number of the imaging exam. | 
+| {::nomarkdown}DEVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of the device where the report should print.Format: <device name> ; <right margin> ; <page length>Right margin and page length are optional.{:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of entry in the Patient file.{:/} | 
+| {::nomarkdown}EXAM ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Identification number of the imaging exam.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

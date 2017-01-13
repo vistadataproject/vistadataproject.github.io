@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORECS01 VSITID
- tag | VSITID
+ label | {::nomarkdown}ORECS01 VSITID{:/}
+ tag | {::nomarkdown}VSITID{:/}
  routine | [ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

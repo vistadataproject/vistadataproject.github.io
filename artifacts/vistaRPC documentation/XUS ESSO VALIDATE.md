@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS ESSO VALIDATE
- tag | ESSO
+ label | {::nomarkdown}XUS ESSO VALIDATE{:/}
+ tag | {::nomarkdown}ESSO{:/}
  routine | [XUESSO3](http://code.osehra.org/dox/Routine_XUESSO3_source.html)
- return value type | ARRAY
- description | This API/RPC uses the VA Identity and Access Management (IAM) SAML tokendefinition version 1.2 attributes from a SAML token for user sign-on.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This API/RPC uses the VA Identity and Access Management (IAM) SAML tokendefinition version 1.2 attributes from a SAML token for user sign-on.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DOC | LITERAL | 30 | true | Input:   DOC = Closed reference to global root containing XML document                (loaded STS SAML Token). See $$EN^MXMLDOM instructions in               the VistA Kernel Developers Guide for required format of               the DOC global. | 
+| {::nomarkdown}DOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input:   DOC = Closed reference to global root containing XML document                (loaded STS SAML Token). See $$EN^MXMLDOM instructions in               the VistA Kernel Developers Guide for required format of               the DOC global.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

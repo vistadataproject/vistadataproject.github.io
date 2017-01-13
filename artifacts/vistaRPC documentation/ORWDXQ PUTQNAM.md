@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXQ PUTQNAM
- tag | PUTQNAM
+ label | {::nomarkdown}ORWDXQ PUTQNAM{:/}
+ tag | {::nomarkdown}PUTQNAM{:/}
  routine | [ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
- return value type | SINGLE VALUE
- description | Save display name for quick order dialog.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Save display name for quick order dialog.{:/}
 
 
 ### Method description
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Save display name for a quick order dialog
- Leading comment lines | see if DLG used QNAM as display text (quit if so),otherwise save in ORWDQ DISPLAY NAME
+ Leading comment lines | see if DLG used QNAM as display text (quit if so)
+otherwise save in ORWDQ DISPLAY NAME
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

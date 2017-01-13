@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXM DLGNAME
- tag | DLGNAME
+ label | {::nomarkdown}ORWDXM DLGNAME{:/}
+ tag | {::nomarkdown}DLGNAME{:/}
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
- return value type | SINGLE VALUE
- description | Return name(s) of dialog & base dialog given IEN in format:        VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return name(s) of dialog & base dialog given IEN in format:        VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

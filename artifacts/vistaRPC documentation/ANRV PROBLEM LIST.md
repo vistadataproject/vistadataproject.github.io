@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV PROBLEM LIST
- tag | LIST
+ label | {::nomarkdown}ANRV PROBLEM LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [ORQQPL](http://code.osehra.org/dox/Routine_ORQQPL_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STATUS | LITERAL | 2 |  |  | 
+| {::nomarkdown}STATUS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

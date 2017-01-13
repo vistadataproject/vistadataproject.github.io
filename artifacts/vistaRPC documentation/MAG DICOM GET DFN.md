@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET DFN
- tag | GETDFN
+ label | {::nomarkdown}MAG DICOM GET DFN{:/}
+ tag | {::nomarkdown}GETDFN{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | SINGLE VALUE
- description | Given an ICN, it returns the DFN.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Given an ICN, it returns the DFN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  | true | Integration Control Number | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Integration Control Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

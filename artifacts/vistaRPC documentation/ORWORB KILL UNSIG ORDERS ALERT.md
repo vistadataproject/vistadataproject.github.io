@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORB KILL UNSIG ORDERS ALERT
- tag | KILUNSNO
+ label | {::nomarkdown}ORWORB KILL UNSIG ORDERS ALERT{:/}
+ tag | {::nomarkdown}KILUNSNO{:/}
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
- return value type | SINGLE VALUE
- description | Check patient's unsigned orders, and kill unsigned orders alert for thisuser if no unsigned orders remain for his/her signature.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Check patient's unsigned orders, and kill unsigned orders alert for thisuser if no unsigned orders remain for his/her signature.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Patient DFN | LITERAL | 16 | true |  | 
+| {::nomarkdown}Patient DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

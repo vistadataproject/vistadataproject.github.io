@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP ADD ROC
- tag | ADD
+ label | {::nomarkdown}DSIF INP ADD ROC{:/}
+ tag | {::nomarkdown}ADD{:/}
  routine | [DSIFROC](http://code.osehra.org/dox/Routine_DSIFROC_source.html)
- return value type | SINGLE VALUE
- description | This RPC duplicates the logic of the FBCH ADD ROC input template for file 161.5.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC duplicates the logic of the FBCH ADD ROC input template for file 161.5.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 99 | true | Internal Entry Number of Contact/Fee Notification (Required - Pointer to file 162.2/161.5) | 
-| DTOCT | LITERAL | 12 | true | Date & Time of Contact (Required - FileMan Date/Time) | 
-| NARR | LIST | 999 | true | Narrative (Optional - Word Processing Array) | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number of Contact/Fee Notification (Required - Pointer to file 162.2/161.5){:/} | 
+| {::nomarkdown}DTOCT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date & Time of Contact (Required - FileMan Date/Time){:/} | 
+| {::nomarkdown}NARR{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Narrative (Optional - Word Processing Array){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

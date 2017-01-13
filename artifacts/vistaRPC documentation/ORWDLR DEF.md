@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR DEF
- tag | DEF
+ label | {::nomarkdown}ORWDLR DEF{:/}
+ tag | {::nomarkdown}DEF{:/}
  routine | [ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
- return value type | ARRAY
- description | Loads dialog data (lists & defaults) for a lab order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Loads dialog data (lists & defaults) for a lab order.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

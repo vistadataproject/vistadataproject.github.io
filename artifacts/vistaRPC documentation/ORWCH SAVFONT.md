@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCH SAVFONT
- tag | SAVFONT
+ label | {::nomarkdown}ORWCH SAVFONT{:/}
+ tag | {::nomarkdown}SAVFONT{:/}
  routine | [ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
- return value type | SINGLE VALUE
- description | Saves the user's preferred font.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves the user's preferred font.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

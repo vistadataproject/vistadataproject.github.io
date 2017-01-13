@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC PAT ASGN MAILMAN
- tag | PTASGMM
+ label | {::nomarkdown}SC PAT ASGN MAILMAN{:/}
+ tag | {::nomarkdown}PTASGMM{:/}
  routine | [SCUTBK10](http://code.osehra.org/dox/Routine_SCUTBK10_source.html)
- return value type | SINGLE VALUE
- description | Builds the before and after status for a single patient assignment toeither a team or a position, and fires off a mailman message.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Builds the before and after status for a single patient assignment toeither a team or a position, and fires off a mailman message.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VALUE | LITERAL | 512 | true |  | 
+| {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR PC PO PRINT
- tag | PRT
+ label | {::nomarkdown}RMPR PC PO PRINT{:/}
+ tag | {::nomarkdown}PRT{:/}
  routine | [RMPR9P21](http://code.osehra.org/dox/Routine_RMPR9P21_source.html)
- return value type | ARRAY
- description | Purchase Order Information to be printed from a PC Device Fax/Printer 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Purchase Order Information to be printed from a PC Device Fax/Printer {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET ALL RETPOLS
- tag | GETRP
+ label | {::nomarkdown}MAGVA GET ALL RETPOLS{:/}
+ tag | {::nomarkdown}GETRP{:/}
  routine | [MAGVAG01](http://code.osehra.org/dox/Routine_MAGVAG01_source.html)
- return value type | ARRAY
- description |  Returns all records in RETENTION POLICY file (#2006.914)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Returns all records in RETENTION POLICY file (#2006.914){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF AUTHLIST
- tag | AUTHLIST
+ label | {::nomarkdown}DSIF AUTHLIST{:/}
+ tag | {::nomarkdown}AUTHLIST{:/}
  routine | [DSIFENA2](http://code.osehra.org/dox/Routine_DSIFENA2_source.html)
- return value type | GLOBAL ARRAY
- description | Pass in IEN (DFN), return list of current authorizations or -1^Not a valid patient or -1^Not a valid patient
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Pass in IEN (DFN), return list of current authorizations or -1^Not a valid patient or -1^Not a valid patient{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | Pass in Patient File IEN (file #2)  | 
-| FLAG | LITERAL | 1 | true |     FLAG=\\ OR \0\ Outpatient authorizations only (excludes Unauthorized)    FLAG=\1\ Inpatient auths onlY    FLAG=\2\ Both Outpt, Inpt. & Unauthorized | 
-| DSIFDAT | LITERAL | 7 | true |   Enter the to date (in FM format) to restrict the number of records  returned.    Example: If you enter 3100501 the RPC will return all authorizations up  to May 1, 2010.    This field can also be used in conjunction with DSIFFDAT to produce a  specific time period in which authorizations to be returned. | 
-| DSIFFDAT | LITERAL | 7 | true |  Enter a from date (in FM format) to limit the authorizations returned.    Example: If you enter 3090101 it will only return authorizations between  today and January 1, 2009. | 
-| DSIF AUTHLIST |  |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in Patient File IEN (file #2) {:/} | 
+| {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}    FLAG=\\ OR \0\ Outpatient authorizations only (excludes Unauthorized)    FLAG=\1\ Inpatient auths onlY    FLAG=\2\ Both Outpt, Inpt. & Unauthorized{:/} | 
+| {::nomarkdown}DSIFDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}  Enter the to date (in FM format) to restrict the number of records  returned.    Example: If you enter 3100501 the RPC will return all authorizations up  to May 1, 2010.    This field can also be used in conjunction with DSIFFDAT to produce a  specific time period in which authorizations to be returned.{:/} | 
+| {::nomarkdown}DSIFFDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Enter a from date (in FM format) to limit the authorizations returned.    Example: If you enter 3090101 it will only return authorizations between  today and January 1, 2009.{:/} | 
+| {::nomarkdown}DSIF AUTHLIST{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

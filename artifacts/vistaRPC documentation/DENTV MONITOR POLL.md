@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV MONITOR POLL
- tag | POLL
+ label | {::nomarkdown}DENTV MONITOR POLL{:/}
+ tag | {::nomarkdown}POLL{:/}
  routine | [DENTVM1](http://code.osehra.org/dox/Routine_DENTVM1_source.html)
- return value type | ARRAY
- description | See if the monitor background job has finished and if so, get theresults from the DENTAL PATIENT (#220) file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}See if the monitor background job has finished and if so, get theresults from the DENTAL PATIENT (#220) file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | Contains the patient pointer (DFN). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the patient pointer (DFN).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 IC VALID
- tag | ICVALID
+ label | {::nomarkdown}ORWDLR32 IC VALID{:/}
+ tag | {::nomarkdown}ICVALID{:/}
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
- return value type | SINGLE VALUE
- description | Determines whether the suplied time is a valid lab immediate collect time.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Determines whether the suplied time is a valid lab immediate collect time.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIME | LITERAL | 20 | true |  | 
+| {::nomarkdown}TIME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

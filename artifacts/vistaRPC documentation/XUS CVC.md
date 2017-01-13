@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS CVC
- tag | CVC
+ label | {::nomarkdown}XUS CVC{:/}
+ tag | {::nomarkdown}CVC{:/}
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
- return value type | ARRAY
- description | This RPC is used as part of Kernel to allow the user to change thereverify code.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used as part of Kernel to allow the user to change thereverify code.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

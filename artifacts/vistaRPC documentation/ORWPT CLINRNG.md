@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT CLINRNG
- tag | CLINRNG
+ label | {::nomarkdown}ORWPT CLINRNG{:/}
+ tag | {::nomarkdown}CLINRNG{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns a list of selectable options from which a user can choose a daterange for appointments.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of selectable options from which a user can choose a daterange for appointments.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

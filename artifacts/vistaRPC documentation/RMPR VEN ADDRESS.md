@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR VEN ADDRESS
- tag | EN1
+ label | {::nomarkdown}RMPR VEN ADDRESS{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [RMPR9AI](http://code.osehra.org/dox/Routine_RMPR9AI_source.html)
- return value type | ARRAY
- description | Dispaly vendor address, phone and fax number
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Dispaly vendor address, phone and fax number{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

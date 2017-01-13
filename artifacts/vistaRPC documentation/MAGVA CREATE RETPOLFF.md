@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA CREATE RETPOLFF
- tag | ADDARPF
+ label | {::nomarkdown}MAGVA CREATE RETPOLFF{:/}
+ tag | {::nomarkdown}ADDARPF{:/}
  routine | [MAGVAC01](http://code.osehra.org/dox/Routine_MAGVAC01_source.html)
- return value type | SINGLE VALUE
- description | Add a new record to RETENTION POLICY FULFILLMENT file (#2006.922)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Add a new record to RETENTION POLICY FULFILLMENT file (#2006.922){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT RETENTION POLICY\)  = A pointer to ARTIFACT RETENTION POLICY file (#2006.921) MAGPARAM(\ARTIFACT INSTANCE\)   = A pointer to ARTIFACT INSTANCE file (#2006.918) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARTIFACT RETENTION POLICY\)  = A pointer to ARTIFACT RETENTION POLICY file (#2006.921) MAGPARAM(\ARTIFACT INSTANCE\)   = A pointer to ARTIFACT INSTANCE file (#2006.918){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ EXPORT
- tag | EXPORT
+ label | {::nomarkdown}YTQ EXPORT{:/}
+ tag | {::nomarkdown}EXPORT{:/}
  routine | [YTQAPI13](http://code.osehra.org/dox/Routine_YTQAPI13_source.html)
- return value type | ARRAY
- description | Exports a test to a Mailman message for sharing over the network. Input: Code as name of test to be exportedOutput: DATA vs ERROR
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Exports a test to a Mailman message for sharing over the network. Input: Code as name of test to be exportedOutput: DATA vs ERROR{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP HOSPITAL COST RPT
- tag | COSTRPT
+ label | {::nomarkdown}DSIF INP HOSPITAL COST RPT{:/}
+ tag | {::nomarkdown}COSTRPT{:/}
  routine | [DSIFRPT0](http://code.osehra.org/dox/Routine_DSIFRPT0_source.html)
- return value type | GLOBAL ARRAY
- description | This is an RPC version of the CIVIL HOSPITAL COST REPORT as found in routines FBCHCR anc FBCHCR1.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This is an RPC version of the CIVIL HOSPITAL COST REPORT as found in routines FBCHCR anc FBCHCR1.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BEGDATE | LITERAL | 7 | true | Begining Date (Required : FileMan format) | 
-| ENDDATE | LITERAL | 7 | true | Ending Date (Required : FileMan format) | 
-| FBRT | LITERAL | 1 | true | Report Type (Optional : D = Detailed, S = Summary, Default = Summary) | 
+| {::nomarkdown}BEGDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Begining Date (Required : FileMan format){:/} | 
+| {::nomarkdown}ENDDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Ending Date (Required : FileMan format){:/} | 
+| {::nomarkdown}FBRT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Report Type (Optional : D = Detailed, S = Summary, Default = Summary){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

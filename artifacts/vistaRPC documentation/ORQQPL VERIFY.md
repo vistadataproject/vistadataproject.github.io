@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL VERIFY
- tag | VERIFY
+ label | {::nomarkdown}ORQQPL VERIFY{:/}
+ tag | {::nomarkdown}VERIFY{:/}
  routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
- return value type | SINGLE VALUE
- description | VERIFY A TRANSCRIBED PROBLEM
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}VERIFY A TRANSCRIBED PROBLEM{:/}
 
 
 ### Method description
@@ -21,15 +21,19 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | verify a transcribed problem
- Leading comment lines | RETURN:  ;(consistent with UPDATE function),SUCCESS:,RETURN>0, RETURN(0)="",FAILURE:,RETURN<0, RETURN(0)=verbose error message
+ Leading comment lines | RETURN:  ;(consistent with UPDATE function)
+SUCCESS:
+RETURN>0, RETURN(0)=""
+FAILURE:
+RETURN<0, RETURN(0)=verbose error message
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMPIFN | LITERAL |  |  | PROBLEM IFN | 
+| {::nomarkdown}GMPIFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}PROBLEM IFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

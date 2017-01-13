@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPR GET PATIENT DATA JSON
- tag | GET
+ label | {::nomarkdown}VPR GET PATIENT DATA JSON{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [VPRDJ](http://code.osehra.org/dox/Routine_VPRDJ_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC retrieves the requested data from VistA, and returns it in^TMP(\VPR\,$J,n) as JSON.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC retrieves the requested data from VistA, and returns it in^TMP(\VPR\,$J,n) as JSON.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILTER | LIST |  | true | List of name-value pairs defining the search. | 
+| {::nomarkdown}FILTER{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}List of name-value pairs defining the search.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

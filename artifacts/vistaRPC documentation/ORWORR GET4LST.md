@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORR GET4LST
- tag | GET4V11
+ label | {::nomarkdown}ORWORR GET4LST{:/}
+ tag | {::nomarkdown}GET4V11{:/}
  routine | [ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
- return value type | ARRAY
- description | Returns the order fields for a list of orders.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the order fields for a list of orders.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

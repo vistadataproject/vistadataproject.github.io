@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA VALID
- tag | VALID
+ label | {::nomarkdown}ORWDXA VALID{:/}
+ tag | {::nomarkdown}VALID{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | SINGLE VALUE
- description | Returns an error message if the selected action is not valid for aparticular CPRS GUI order.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns an error message if the selected action is not valid for aparticular CPRS GUI order.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

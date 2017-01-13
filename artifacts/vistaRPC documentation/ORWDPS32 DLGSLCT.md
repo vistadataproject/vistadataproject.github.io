@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 DLGSLCT
- tag | DLGSLCT
+ label | {::nomarkdown}ORWDPS32 DLGSLCT{:/}
+ tag | {::nomarkdown}DLGSLCT{:/}
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
- return value type | ARRAY
- description | Returns default lists for order dialogs in CPRS GUI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns default lists for order dialogs in CPRS GUI.{:/}
 
 
 ### Method description
@@ -27,11 +27,11 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSTYPE | LITERAL |  | true | Code to determine the Dialog Type | 
-| DFN | LITERAL |  | true |  | 
-| LOCIEN | LITERAL |  | true | This will be set to the patient inpatient location IEN from file 44. | 
+| {::nomarkdown}PSTYPE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Code to determine the Dialog Type{:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}LOCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This will be set to the patient inpatient location IEN from file 44.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

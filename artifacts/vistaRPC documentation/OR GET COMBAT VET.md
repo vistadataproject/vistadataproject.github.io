@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OR GET COMBAT VET
- tag | CV
+ label | {::nomarkdown}OR GET COMBAT VET{:/}
+ tag | {::nomarkdown}CV{:/}
  routine | [ORMARKER](http://code.osehra.org/dox/Routine_ORMARKER_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

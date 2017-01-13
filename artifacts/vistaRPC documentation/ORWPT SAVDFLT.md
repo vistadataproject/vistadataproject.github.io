@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT SAVDFLT
- tag | SAVDFLT
+ label | {::nomarkdown}ORWPT SAVDFLT{:/}
+ tag | {::nomarkdown}SAVDFLT{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | SINGLE VALUE
- description | Saves user's preference for default list source.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves user's preference for default list source.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

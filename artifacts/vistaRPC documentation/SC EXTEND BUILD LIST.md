@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC EXTEND BUILD LIST
- tag | EXTEND
+ label | {::nomarkdown}SC EXTEND BUILD LIST{:/}
+ tag | {::nomarkdown}EXTEND{:/}
  routine | [SCMCTSK1](http://code.osehra.org/dox/Routine_SCMCTSK1_source.html)
- return value type | ARRAY
- description | Return list of patients by position that will be inactive in next 60 days
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of patients by position that will be inactive in next 60 days{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEAM | LITERAL |  | true | Internal Team Number | 
+| {::nomarkdown}TEAM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal Team Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

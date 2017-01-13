@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP GET NOTE
- tag | GETNOTE
+ label | {::nomarkdown}MAGTP GET NOTE{:/}
+ tag | {::nomarkdown}GETNOTE{:/}
  routine | [MAGTP014](http://code.osehra.org/dox/Routine_MAGTP014_source.html)
- return value type | ARRAY
- description | Retrieve the text of a note attached to a specified case.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Retrieve the text of a note attached to a specified case.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LRAC | LITERAL | 14 | true | Accession Code for the case | 
+| {::nomarkdown}LRAC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Accession Code for the case{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

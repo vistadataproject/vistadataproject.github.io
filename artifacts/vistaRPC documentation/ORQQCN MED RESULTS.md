@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN MED RESULTS
- tag | MEDRSLT
+ label | {::nomarkdown}ORQQCN MED RESULTS{:/}
+ tag | {::nomarkdown}MEDRSLT{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a display of Medicine Package results, followed by any TIUresults.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a display of Medicine Package results, followed by any TIUresults.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Consult ID | LITERAL | 16 | true | Internal entry number of the consults request in file 123,REQUESTS/CONSULTS. | 
+| {::nomarkdown}Consult ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of the consults request in file 123,REQUESTS/CONSULTS.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

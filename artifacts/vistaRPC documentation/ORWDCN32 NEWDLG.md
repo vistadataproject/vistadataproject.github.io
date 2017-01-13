@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDCN32 NEWDLG
- tag | NEWDLG
+ label | {::nomarkdown}ORWDCN32 NEWDLG{:/}
+ tag | {::nomarkdown}NEWDLG{:/}
  routine | [ORWDCN32](http://code.osehra.org/dox/Routine_ORWDCN32_source.html)
- return value type | SINGLE VALUE
- description | Returns dialog information when NEW CONSULT/PROCEDURE is selected fromthe consults tab.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns dialog information when NEW CONSULT/PROCEDURE is selected fromthe consults tab.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| dialog type | LITERAL | 1 | true | \C\ for consult, \P\ for procedure | 
+| {::nomarkdown}dialog type{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}\C\ for consult, \P\ for procedure{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

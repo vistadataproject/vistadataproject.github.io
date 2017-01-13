@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQVI2 VITALS VAL & STORE
- tag | VALSTORE
+ label | {::nomarkdown}ORQQVI2 VITALS VAL & STORE{:/}
+ tag | {::nomarkdown}VALSTORE{:/}
  routine | [ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

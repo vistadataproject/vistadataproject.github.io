@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDAL32 CLINUSER
- tag | CLINUSER
+ label | {::nomarkdown}ORWDAL32 CLINUSER{:/}
+ tag | {::nomarkdown}CLINUSER{:/}
  routine | [ORWDAL33](http://code.osehra.org/dox/Routine_ORWDAL33_source.html)
- return value type | SINGLE VALUE
- description | Determine if user can perform cover sheet allergy actions.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Determine if user can perform cover sheet allergy actions.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

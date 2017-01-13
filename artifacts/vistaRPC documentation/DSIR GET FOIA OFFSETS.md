@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET FOIA OFFSETS
- tag | GETFOIA
+ label | {::nomarkdown}DSIR GET FOIA OFFSETS{:/}
+ tag | {::nomarkdown}GETFOIA{:/}
  routine | [DSIROI8](http://code.osehra.org/dox/Routine_DSIROI8_source.html)
- return value type | ARRAY
- description | GIVEN IEN (FISCAL YEAR END) THIS SUBROUTINE LOOKS UP THE RECORD AND RETURNS THE REPORT HISTORY DETAILS AND REPORT COUNT VALUES.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GIVEN IEN (FISCAL YEAR END) THIS SUBROUTINE LOOKS UP THE RECORD AND RETURNS THE REPORT HISTORY DETAILS AND REPORT COUNT VALUES.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 3 | true | Internal Entry Number - Required1700. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number - Required1700.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

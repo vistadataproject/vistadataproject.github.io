@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ TSLIST
- tag | TSLIST
+ label | {::nomarkdown}YTQ TSLIST{:/}
+ tag | {::nomarkdown}TSLIST{:/}
  routine | [YTQAPI](http://code.osehra.org/dox/Routine_YTQAPI_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of tests and surveys from 601.71.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of tests and surveys from 601.71.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| none |  |  |  |  | 
+| {::nomarkdown}none{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

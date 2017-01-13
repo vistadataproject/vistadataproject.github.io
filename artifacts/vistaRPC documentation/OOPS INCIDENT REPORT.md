@@ -9,24 +9,24 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS INCIDENT REPORT
- tag | ENT
+ label | {::nomarkdown}OOPS INCIDENT REPORT{:/}
+ tag | {::nomarkdown}ENT{:/}
  routine | [OOPSGUIT](http://code.osehra.org/dox/Routine_OOPSGUIT_source.html)
- return value type | ARRAY
- description | This broker call returns the data for creating the Type of Incident reports.This report provides information on different Types of incidents. 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This broker call returns the data for creating the Type of Incident reports.This report provides information on different Types of incidents. {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RPTTYP | LITERAL | 256 | true | This will determine which report will be run.  Report types are Type of Incident,Occupation Code, Characterization of Injury, Service, Body Parts, Day of Week,and Time of Day. | 
-| CSTAT | LITERAL | 10 | true | This parameter determines which cases to include: Open, Closed, or Both Openand Closed. | 
-| STDT | LITERAL | 30 | true | This parameter contains the start date of the report.  Those cases whose Dateof Occurrence is greater than or equal to the Start date will be included. | 
-| ENDDT | LITERAL | 30 | true | This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included. | 
-| LTNTT | LITERAL | 30 | true | This parameter will determine whether or not Lost Time claims should be included on the report. | 
-| STAT | LITERAL | 256 | true | This parameter will determine whether to run the report for all stations ora single station. | 
+| {::nomarkdown}RPTTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This will determine which report will be run.  Report types are Type of Incident,Occupation Code, Characterization of Injury, Service, Body Parts, Day of Week,and Time of Day.{:/} | 
+| {::nomarkdown}CSTAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter determines which cases to include: Open, Closed, or Both Openand Closed.{:/} | 
+| {::nomarkdown}STDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the start date of the report.  Those cases whose Dateof Occurrence is greater than or equal to the Start date will be included.{:/} | 
+| {::nomarkdown}ENDDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included.{:/} | 
+| {::nomarkdown}LTNTT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will determine whether or not Lost Time claims should be included on the report.{:/} | 
+| {::nomarkdown}STAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will determine whether to run the report for all stations ora single station.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

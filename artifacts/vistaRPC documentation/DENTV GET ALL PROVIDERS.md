@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET ALL PROVIDERS
- tag | PROV
+ label | {::nomarkdown}DENTV GET ALL PROVIDERS{:/}
+ tag | {::nomarkdown}PROV{:/}
  routine | [DENTVRP5](http://code.osehra.org/dox/Routine_DENTVRP5_source.html)
- return value type | GLOBAL ARRAY
- description | Gets all providers (including inactive) for edit purposes.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Gets all providers (including inactive) for edit purposes.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

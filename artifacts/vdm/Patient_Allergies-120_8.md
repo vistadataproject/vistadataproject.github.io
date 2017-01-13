@@ -19,7 +19,7 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | patient | .01 | Patient | {::nomarkdown}This is the patient to whom this allergy/adverse reaction pertains.{:/} | POINTER |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
 | reactant | .02 | Reactant | {::nomarkdown}This is the agent to which the patient had this reaction.  This is the <br/>name of the reactant and will be the result of a look up on either the GMR<br/>Allergies (120.82), National Drug (50.6), Drug Ingredients (50.416), <br/>Local Drug (50) or VA Drug Class (50.605) files.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| gmr_allergy | 1 | GMR Allergy | {::nomarkdown}This field is a variable pointer to help relate this allergy to some<br/>record in one of the files to which this field points.  The files that are<br/>pointed to are the GMR Allergies (120.82) file, National Drug (50.6) file,<br/>Drug (50) file, Drug Ingredients (50.416) file and VA Drug Class<br/>(50.605) file.{:/} | POINTER |  |  | [{id:GMR_Allergies-120_82},{id:VA_Generic-50_6},{id:Drug-50},{id:Drug_Ingredients-50_416},{id:VA_Drug_Class-50_605}] | 
+| gmr_allergy | 1 | GMR Allergy | {::nomarkdown}This field is a variable pointer to help relate this allergy to some<br/>record in one of the files to which this field points.  The files that are<br/>pointed to are the GMR Allergies (120.82) file, National Drug (50.6) file,<br/>Drug (50) file, Drug Ingredients (50.416) file and VA Drug Class<br/>(50.605) file.{:/} | POINTER |  |  | undefined | 
 | drug_ingredients | 2 | Drug Ingredients | {::nomarkdown}List of drug ingredients to which patient had reaction for this<br/>allergy/adverse reaction.{:/} | [POINTER] |  |  | {id:Drug_Ingredients-50_416} | 
 | drug_classes | 3 | Drug Classes | {::nomarkdown}List of VA drug classes to which patient had reaction for this<br/>allergy/adverse reaction.{:/} | [POINTER] |  |  | {id:VA_Drug_Class-50_605} | 
 | allergy_type | 3.1 | Allergy Type | {::nomarkdown}This field contains the type(s) for this causative agent.  The user can<br/>enter the type(s) separated by commas, or the following codes:  D=Drug,<br/>F=Food, O=Other.  If codes are used, do not use commas to separate multiple<br/>codes.  Examples of valid entries are:  DRUG or DRUG, FOOD or D or DF or<br/>OTHER.{:/} | STRING |  | REQUIRED |  | 
@@ -51,7 +51,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| reaction | .01 | Reaction | {::nomarkdown}One of the reactions for this allergy/adverse reaction.{:/} | POINTER |  | REQUIRED, INDEXED | {id:Sign_symptoms-120_83} | 
+| reaction | .01 | Reaction | {::nomarkdown}One of the reactions for this allergy/adverse reaction.{:/} | POINTER |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
 | other_reaction | 1 | Other Reaction | {::nomarkdown}If this reaction cannot be found in the Sign/Symptoms (120.83) file, then<br/>the free text of what the user typed in will be here, and the GMR Reaction<br/>of OTHER will be the value of the Name field.<br/> <br/>Once the SIGNS/SYMPTOMS file is standardized then this field will<br/>no longer be needed as all entries will appear in file 120.83 and<br/>free text entries will no longer be allowed.{:/} | STRING |  |  |  | 
 | entered_by | 2 | Entered By | {::nomarkdown}The person who entered this reaction into the system.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_entered | 3 | Date Entered | {::nomarkdown}This is where the user would enter the date that the reaction<br/>(Sign/Symptom) occurred or was entered into the computer.{:/} | DATE-TIME |  |  |  | 
@@ -103,4 +103,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 5:52:20 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDBA7 GETIEN9
- tag | GETIEN9
+ label | {::nomarkdown}ORWDBA7 GETIEN9{:/}
+ tag | {::nomarkdown}GETIEN9{:/}
  routine | [ORWDBA7](http://code.osehra.org/dox/Routine_ORWDBA7_source.html)
- return value type | SINGLE VALUE
- description | Receive external ICD9 number and return IEN
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Receive external ICD9 number and return IEN{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICD9 | LIST | 9 | true | External ICD9 number | 
+| {::nomarkdown}ICD9{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}External ICD9 number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

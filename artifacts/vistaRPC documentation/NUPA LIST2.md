@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA LIST2
- tag | LIST2
+ label | {::nomarkdown}NUPA LIST2{:/}
+ tag | {::nomarkdown}LIST2{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | GLOBAL ARRAY
- description | List of all entries from a file including other fields.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}List of all entries from a file including other fields.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL |  | true | File number to list data from. | 
-| FILEDS | LITERAL |  | true | Other fields in format FILE^Field 1^Field 2 etc. | 
-| SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}File number to list data from.{:/} | 
+| {::nomarkdown}FILEDS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Other fields in format FILE^Field 1^Field 2 etc.{:/} | 
+| {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fileman screen for the lookup.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

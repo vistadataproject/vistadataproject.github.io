@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET NET LOC DETAILS
- tag | GETNLOCD
+ label | {::nomarkdown}MAGVA GET NET LOC DETAILS{:/}
+ tag | {::nomarkdown}GETNLOCD{:/}
  routine | [MAGVAG03](http://code.osehra.org/dox/Routine_MAGVAG03_source.html)
- return value type | ARRAY
- description |  Returns PHYSICAL REFERENCE (WRITE LOCATION) by IEN in NETWORK LOCATION file (#2005.2)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Returns PHYSICAL REFERENCE (WRITE LOCATION) by IEN in NETWORK LOCATION file (#2005.2){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NLOCIEN | LITERAL |  | true | NLOCIEN = IEN in NETWORK LOCATION file (#2005.2)  | 
+| {::nomarkdown}NLOCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}NLOCIEN = IEN in NETWORK LOCATION file (#2005.2) {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

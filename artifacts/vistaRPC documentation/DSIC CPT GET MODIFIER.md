@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC CPT GET MODIFIER
- tag | MOD
+ label | {::nomarkdown}DSIC CPT GET MODIFIER{:/}
+ tag | {::nomarkdown}MOD{:/}
  routine | [DSICCPT](http://code.osehra.org/dox/Routine_DSICCPT_source.html)
- return value type | SINGLE VALUE
- description | This returns basic information for a MODIFIER, file 81.3
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This returns basic information for a MODIFIER, file 81.3{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MOD | LITERAL | 5 | true | This is the ifn or name of the MODIFIER, file 81.3 | 
-| CDT | LITERAL | 14 | true | This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. | 
+| {::nomarkdown}MOD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the ifn or name of the MODIFIER, file 81.3{:/} | 
+| {::nomarkdown}CDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

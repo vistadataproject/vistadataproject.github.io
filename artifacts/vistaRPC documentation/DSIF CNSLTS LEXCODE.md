@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS LEXCODE
- tag | LEXCODE
+ label | {::nomarkdown}DSIF CNSLTS LEXCODE{:/}
+ tag | {::nomarkdown}LEXCODE{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | Returns the Lexicon code for a given IEN.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the Lexicon code for a given IEN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFIEN | LITERAL |  | true | This is the Lexicon IEN you wish to know the code for. | 
-| DSIFAPP | LITERAL |  |  | This is the Lexicon application for which you are looking. I.e. ICD or CPT. | 
-| DSIFDT | LITERAL |  | true | This is the date you wish to look for the code; if you pass in nothing it assumes the current date. | 
+| {::nomarkdown}DSIFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Lexicon IEN you wish to know the code for.{:/} | 
+| {::nomarkdown}DSIFAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the Lexicon application for which you are looking. I.e. ICD or CPT.{:/} | 
+| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date you wish to look for the code; if you pass in nothing it assumes the current date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

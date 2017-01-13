@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL WORK ORDER LIST
- tag | EN
+ label | {::nomarkdown}RMPR OWL WORK ORDER LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR29WO](http://code.osehra.org/dox/Routine_RMPR29WO_source.html)
- return value type | GLOBAL ARRAY
- description | GUI Order controll processing.  Returns the list of all open pending Work Orders from file 664.1.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}GUI Order controll processing.  Returns the list of all open pending Work Orders from file 664.1.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

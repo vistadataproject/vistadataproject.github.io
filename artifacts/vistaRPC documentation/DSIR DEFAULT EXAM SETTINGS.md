@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR DEFAULT EXAM SETTINGS
- tag | GETDEF
+ label | {::nomarkdown}DSIR DEFAULT EXAM SETTINGS{:/}
+ tag | {::nomarkdown}GETDEF{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns the default settings for the display of imaging exams onthe reports tab.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns the default settings for the display of imaging exams onthe reports tab.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

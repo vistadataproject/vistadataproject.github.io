@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIRPARM GETPO GET PRINT ORDER
- tag | GETPO
+ label | {::nomarkdown}DSIRPARM GETPO GET PRINT ORDER{:/}
+ tag | {::nomarkdown}GETPO{:/}
  routine | [DSIRPARM](http://code.osehra.org/dox/Routine_DSIRPARM_source.html)
- return value type | SINGLE VALUE
- description | This RPC will return the document Print Order for the specified ROI type and facility.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will return the document Print Order for the specified ROI type and facility.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PRTORD | LITERAL | 30 | true | Print Order Name or IEN to DSIR ROI PRINT ORDER file 19620.702. | 
-| INST | LITERAL | 99 | true | Facility IEN to file 19620.701 - Optional if PRTORD is IEN, Required if PRTORD is Free Text. | 
+| {::nomarkdown}PRTORD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Print Order Name or IEN to DSIR ROI PRINT ORDER file 19620.702.{:/} | 
+| {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Facility IEN to file 19620.701 - Optional if PRTORD is IEN, Required if PRTORD is Free Text.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

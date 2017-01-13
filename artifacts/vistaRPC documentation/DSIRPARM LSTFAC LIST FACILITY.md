@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIRPARM LSTFAC LIST FACILITY
- tag | LSTFAC
+ label | {::nomarkdown}DSIRPARM LSTFAC LIST FACILITY{:/}
+ tag | {::nomarkdown}LSTFAC{:/}
  routine | [DSIRPARM](http://code.osehra.org/dox/Routine_DSIRPARM_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return a list of facilities with defined parameter settings in the DSIR FACILITY PARAMETERS (#19620.701).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return a list of facilities with defined parameter settings in the DSIR FACILITY PARAMETERS (#19620.701).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

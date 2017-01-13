@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ACKQAUD1
- tag | START
+ label | {::nomarkdown}ACKQAUD1{:/}
+ tag | {::nomarkdown}START{:/}
  routine | [ACKQAG01](http://code.osehra.org/dox/Routine_ACKQAG01_source.html)
- return value type | ARRAY
- description | This RPC gets the audiogram data for the selected entryin the Audiometric Exam Data file 509850.9 and returnsit to the calling program in the array ACKQARR()This is for the Audiometric Display only.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC gets the audiogram data for the selected entryin the Audiometric Exam Data file 509850.9 and returnsit to the calling program in the array ACKQARR()This is for the Audiometric Display only.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | The internal number in the PATIENT file (#2). | 
-| IEN | LITERAL |  | true | Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The internal number in the PATIENT file (#2).{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

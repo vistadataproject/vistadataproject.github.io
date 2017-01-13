@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC LISTER
- tag | LISTC
+ label | {::nomarkdown}SC LISTER{:/}
+ tag | {::nomarkdown}LISTC{:/}
  routine | [SCUTBK](http://code.osehra.org/dox/Routine_SCUTBK_source.html)
- return value type | ARRAY
- description | Per LIST^DIC(), returns the starting location, number of records to retrieve, file to retrieve them from, and index to use.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Per LIST^DIC(), returns the starting location, number of records to retrieve, file to retrieve them from, and index to use.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}LIST ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

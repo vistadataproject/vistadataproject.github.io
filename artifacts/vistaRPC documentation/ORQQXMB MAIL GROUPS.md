@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQXMB MAIL GROUPS
- tag | MAILG
+ label | {::nomarkdown}ORQQXMB MAIL GROUPS{:/}
+ tag | {::nomarkdown}MAILG{:/}
  routine | [ORQQXQA](http://code.osehra.org/dox/Routine_ORQQXQA_source.html)
- return value type | ARRAY
- description | Returns mail groups in a system.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns mail groups in a system.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

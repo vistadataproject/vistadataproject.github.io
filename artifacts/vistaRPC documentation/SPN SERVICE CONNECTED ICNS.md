@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN SERVICE CONNECTED ICNS
- tag | COL
+ label | {::nomarkdown}SPN SERVICE CONNECTED ICNS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPSC](http://code.osehra.org/dox/Routine_SPNJRPSC_source.html)
- return value type | GLOBAL ARRAY
- description |    Returns list of ICNs of all patients with a service connection percentage within the range given.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}   Returns list of ICNs of all patients with a service connection percentage within the range given.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BPER | LITERAL |  |  | Beginning or low range percentage of service connection | 
-| EPER | LITERAL |  |  | Ending or high range percentage of service connection | 
+| {::nomarkdown}BPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Beginning or low range percentage of service connection{:/} | 
+| {::nomarkdown}EPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending or high range percentage of service connection{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

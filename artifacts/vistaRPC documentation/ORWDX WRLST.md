@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX WRLST
- tag | WRLST
+ label | {::nomarkdown}ORWDX WRLST{:/}
+ tag | {::nomarkdown}WRLST{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | ARRAY
- description | Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

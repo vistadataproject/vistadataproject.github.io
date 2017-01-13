@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR SEND PURCHASE ORDER
- tag | GUI
+ label | {::nomarkdown}RMPR SEND PURCHASE ORDER{:/}
+ tag | {::nomarkdown}GUI{:/}
  routine | [RMPR121B](http://code.osehra.org/dox/Routine_RMPR121B_source.html)
- return value type | SINGLE VALUE
- description | This will pass the array from Kernel Broker to CoreFLS to createa Patient po.  After checking for E-Sig.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will pass the array from Kernel Broker to CoreFLS to createa Patient po.  After checking for E-Sig.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

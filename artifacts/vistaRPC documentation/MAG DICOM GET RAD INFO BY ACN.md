@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET RAD INFO BY ACN
- tag | ACNUMB
+ label | {::nomarkdown}MAG DICOM GET RAD INFO BY ACN{:/}
+ tag | {::nomarkdown}ACNUMB{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | SINGLE VALUE
- description | This RPC takes the Accession Number and returns the first radiology study that matches it.  This RPC uses $$ACCFIND^RAAPI() to get this information.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC takes the Accession Number and returns the first radiology study that matches it.  This RPC uses $$ACCFIND^RAAPI() to get this information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ACNUMB | LITERAL | 30 | true | The accession number in either a 'sss-mmddyy-xxxxx' or   'mmddyy-xxxxx' format | 
+| {::nomarkdown}ACNUMB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The accession number in either a 'sss-mmddyy-xxxxx' or   'mmddyy-xxxxx' format{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP PUT PREFERENCES
- tag | PUTUPREF
+ label | {::nomarkdown}MAGTP PUT PREFERENCES{:/}
+ tag | {::nomarkdown}PUTUPREF{:/}
  routine | [MAGTP011](http://code.osehra.org/dox/Routine_MAGTP011_source.html)
- return value type | ARRAY
- description | Set the user's setting/configuration preferences in XML format in the configuration file (#2006.13)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Set the user's setting/configuration preferences in XML format in the configuration file (#2006.13){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENT | LIST |  | true | Input array:First Line:      DUZ^LABELFollowing Lines: One XML line of textIf DUZ is null, default to current DUZ | 
+| {::nomarkdown}ENT{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input array:First Line:      DUZ^LABELFollowing Lines: One XML line of textIf DUZ is null, default to current DUZ{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

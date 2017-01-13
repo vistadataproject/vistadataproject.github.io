@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX NEW COVER SHEET REMS
- tag | REMLIST
+ label | {::nomarkdown}ORQQPX NEW COVER SHEET REMS{:/}
+ tag | {::nomarkdown}REMLIST{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | ARRAY
- description | Returns a list of reminders for cover sheet evaluation.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of reminders for cover sheet evaluation.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LOC | LITERAL |  |  | Location | 
+| {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Location{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

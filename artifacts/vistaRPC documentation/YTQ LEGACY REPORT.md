@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ LEGACY REPORT
- tag | LEGACY
+ label | {::nomarkdown}YTQ LEGACY REPORT{:/}
+ tag | {::nomarkdown}LEGACY{:/}
  routine | [YTQAPI8](http://code.osehra.org/dox/Routine_YTQAPI8_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

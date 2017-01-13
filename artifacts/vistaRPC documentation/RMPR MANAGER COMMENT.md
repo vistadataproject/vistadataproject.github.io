@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR MANAGER COMMENT
- tag | MGR
+ label | {::nomarkdown}RMPR MANAGER COMMENT{:/}
+ tag | {::nomarkdown}MGR{:/}
  routine | [RMPRESI](http://code.osehra.org/dox/Routine_RMPRESI_source.html)
- return value type | ARRAY
- description | RPC call to get the Manager Comment from file 669.9.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC call to get the Manager Comment from file 669.9.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

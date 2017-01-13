@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCQ1 GETSLN
- tag | GETSLN
+ label | {::nomarkdown}ORRHCQ1 GETSLN{:/}
+ tag | {::nomarkdown}GETSLN{:/}
  routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
- return value type | ARRAY
- description | When a query executes, the sensitive patients are saved off before theyare evaluated, along with the sensitive information gathered fromthe routine PTSEC^DGSEC4.  This RPC returns the sensitive message textfor the given patient when this query attempted to query their record.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}When a query executes, the sensitive patients are saved off before theyare evaluated, along with the sensitive information gathered fromthe routine PTSEC^DGSEC4.  This RPC returns the sensitive message textfor the given patient when this query attempted to query their record.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 80 | true | DFN of the sensitive patient. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN of the sensitive patient.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

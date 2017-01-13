@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ JBQUE
- tag | JBQUE
+ label | {::nomarkdown}MAGQ JBQUE{:/}
+ tag | {::nomarkdown}JBQUE{:/}
  routine | [MAGQBUT2](http://code.osehra.org/dox/Routine_MAGQBUT2_source.html)
- return value type | SINGLE VALUE
- description | This RPC generates a JUKEBOX queue.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC generates a JUKEBOX queue.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 256 | true | This is the internal entry of either the Image file (#2005) or the Image Audit file (#2005.1) of the Image to be queued.. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry of either the Image file (#2005) or the Image Audit file (#2005.1) of the Image to be queued..{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

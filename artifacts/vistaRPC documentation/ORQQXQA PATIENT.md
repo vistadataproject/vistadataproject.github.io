@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQXQA PATIENT
- tag | PATIENT
+ label | {::nomarkdown}ORQQXQA PATIENT{:/}
+ tag | {::nomarkdown}PATIENT{:/}
  routine | [ORQQXQA](http://code.osehra.org/dox/Routine_ORQQXQA_source.html)
- return value type | ARRAY
- description | Function returns a list of notifications for a patient for the current user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Function returns a list of notifications for a patient for the current user.{:/}
 
 
 ### Method description
@@ -26,11 +26,11 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | The record number of the patient from the Patient File (#2). | 
-| START DATE | LITERAL | 16 |  | Start date for retrieving patient notifications in Fileman format. | 
-| STOP DATE | LITERAL | 16 |  | Stop date for retrieving patient notifications in Fileman format. | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The record number of the patient from the Patient File (#2).{:/} | 
+| {::nomarkdown}START DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}Start date for retrieving patient notifications in Fileman format.{:/} | 
+| {::nomarkdown}STOP DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}Stop date for retrieving patient notifications in Fileman format.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

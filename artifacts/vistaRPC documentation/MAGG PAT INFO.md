@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG PAT INFO
- tag | INFO
+ label | {::nomarkdown}MAGG PAT INFO{:/}
+ tag | {::nomarkdown}INFO{:/}
  routine | [MAGGTPT1](http://code.osehra.org/dox/Routine_MAGGTPT1_source.html)
- return value type | SINGLE VALUE
- description | Returns a string of '^' delimited pieces of patient information.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a string of '^' delimited pieces of patient information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL | 90 | true |     DATA:  MAGDFN ^ NOLOG ^ ISICN       MAGDFN -- Patient DFN       NOLOG  -- 0/1; if 1, then do NOT update the Session log       ISICN  -- 0/1  if 1, then this is an ICN,       FLAGS  -- \D\ Include Deleted images    if 0 (default) this is a DFN ; Patch 41 | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}    DATA:  MAGDFN ^ NOLOG ^ ISICN       MAGDFN -- Patient DFN       NOLOG  -- 0/1; if 1, then do NOT update the Session log       ISICN  -- 0/1  if 1, then this is an ICN,       FLAGS  -- \D\ Include Deleted images    if 0 (default) this is a DFN ; Patch 41{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

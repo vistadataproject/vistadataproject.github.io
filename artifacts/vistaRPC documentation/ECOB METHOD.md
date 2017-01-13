@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ECOB METHOD
- tag | METHOD
+ label | {::nomarkdown}ECOB METHOD{:/}
+ tag | {::nomarkdown}METHOD{:/}
  routine | [ECOBUF](http://code.osehra.org/dox/Routine_ECOBUF_source.html)
- return value type | ARRAY
- description | An RPC to manipulate VistA objects.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}An RPC to manipulate VistA objects.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ARGUMENT | LITERAL | 32000 | true | Argument = [handle].[method].[parameters] | 
+| {::nomarkdown}ARGUMENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Argument = [handle].[method].[parameters]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

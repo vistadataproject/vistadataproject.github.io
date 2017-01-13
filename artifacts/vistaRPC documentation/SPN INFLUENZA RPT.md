@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN INFLUENZA RPT
- tag | COL
+ label | {::nomarkdown}SPN INFLUENZA RPT{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNRPCW](http://code.osehra.org/dox/Routine_SPNRPCW_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  |  | 
-| SDATE | LITERAL |  |  |  | 
-| EDATE | LITERAL |  |  |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}SDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

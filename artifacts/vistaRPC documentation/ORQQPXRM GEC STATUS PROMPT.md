@@ -9,25 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM GEC STATUS PROMPT
- tag | GECP
+ label | {::nomarkdown}ORQQPXRM GEC STATUS PROMPT{:/}
+ tag | {::nomarkdown}GECP{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

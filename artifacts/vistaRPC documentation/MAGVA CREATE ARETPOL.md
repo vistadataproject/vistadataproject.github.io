@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA CREATE ARETPOL
- tag | ADDARP
+ label | {::nomarkdown}MAGVA CREATE ARETPOL{:/}
+ tag | {::nomarkdown}ADDARP{:/}
  routine | [MAGVAC01](http://code.osehra.org/dox/Routine_MAGVAC01_source.html)
- return value type | SINGLE VALUE
- description | Create a new record in Artifact Retention Policy file (#2006.921).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Create a new record in Artifact Retention Policy file (#2006.921).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  MAGPARAM(\ARTIFACT\)           = A pointer to ARTIFACT file (#2006.916) MAGPARAM(\RETENTION POLICY\)   = A pointer to RETENTION POLICY file (#2006.914) MAGPARAM(\SATISFIED DATE/TIME\) = DateTime in IDF format (YYYYMMDD.HHMMSS) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARTIFACT\)           = A pointer to ARTIFACT file (#2006.916) MAGPARAM(\RETENTION POLICY\)   = A pointer to RETENTION POLICY file (#2006.914) MAGPARAM(\SATISFIED DATE/TIME\) = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

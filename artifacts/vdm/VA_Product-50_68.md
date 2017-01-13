@@ -19,14 +19,14 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | name | .01 | Name |  | STRING |  | REQUIRED, INDEXED |  | 
 | va_generic_name | .05 | VA Generic Name | {::nomarkdown}VA GENERIC NAME{:/} | POINTER |  |  | [VA_Generic-50_6](VA_Generic-50_6.md) | 
-| dosage_form | 1 | Dosage Form | {::nomarkdown}This is the dose form.{:/} | POINTER |  |  | {id:Dosage_Form-50_606} | 
+| dosage_form | 1 | Dosage Form | {::nomarkdown}This is the dose form.{:/} | POINTER |  |  | Dosage_Form-50_606 | 
 | strength | 2 | Strength | {::nomarkdown}This is the strength.{:/} | STRING |  |  |  | 
-| units | 3 | Units | {::nomarkdown}This is the unit of measure.{:/} | POINTER |  |  | {id:Drug_Units-50_607} | 
+| units | 3 | Units | {::nomarkdown}This is the unit of measure.{:/} | POINTER |  |  | Drug_Units-50_607 | 
 | national_formulary_name | 4 | National Formulary Name | {::nomarkdown}This is the National Formulary Name for this product.  In most cases<br/>it will be comprised of the VA Generic Name and Dosage Form.{:/} | STRING |  |  |  | 
 | va_print_name | 5 | VA Print Name | {::nomarkdown}This is the VA Print Name.{:/} | STRING |  |  |  | 
 | va_product_identifier | 6 | VA Product Identifier | {::nomarkdown}This is the VA Product Identifier.{:/} | STRING |  | INDEXED |  | 
 | transmit_to_cmop | 7 | Transmit To Cmop | {::nomarkdown}This flag is used for CMOP purposes.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
-| va_dispense_unit | 8 | VA Dispense Unit | {::nomarkdown}This is the VA Dispense Unit.{:/} | POINTER |  |  | {id:VA_Dispense_Unit-50_64} | 
+| va_dispense_unit | 8 | VA Dispense Unit | {::nomarkdown}This is the VA Dispense Unit.{:/} | POINTER |  |  | VA_Dispense_Unit-50_64 | 
 | gcnseqno | 11 | Gcnseqno | {::nomarkdown}This contains the GCNSEQNO code, which relates to mapping PMIs and<br/>Warning Labels. Entries in this field are accomplished by the NDF Data<br/>Manager mapping functions and shall not be edited.{:/} | NUMERIC |  |  |  | 
 | previous_gcnseqno | 12 | Previous Gcnseqno | {::nomarkdown}This field contains the PREVIOUS GCNSEQNO code, which relates to mapping to<br/>PMIs and Warning Labels. Entries in this field are accomplished by the NDF<br/>Data Manager mapping functions and shall not be edited.{:/} | NUMERIC |  |  |  | 
 | ndc_link_to_gcnseqno | 13 | Ndc Link To Gcnseqno | {::nomarkdown}This field contains the NDC used to link to GCNSEQNO. Entries in this field<br/>are accomplished by the NDF Data Manager mapping functions and shall not be<br/>edited.{:/} | STRING |  |  |  | 
@@ -69,7 +69,7 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | active_ingredients | .01 | Active Ingredients | {::nomarkdown}This is a pointer to the drug ingredients file.{:/} | POINTER |  | REQUIRED | [Drug_Ingredients-50_416](Drug_Ingredients-50_416.md) | 
 | strength | 1 | Strength | {::nomarkdown}This is the strength of the ingredient.{:/} | STRING |  |  |  | 
-| units | 2 | Units | {::nomarkdown}This is the unit of measure.{:/} | POINTER |  |  | {id:Drug_Units-50_607} | 
+| units | 2 | Units | {::nomarkdown}This is the unit of measure.{:/} | POINTER |  |  | Drug_Units-50_607 | 
 
 ## <a name="Reduced_Copay-50_6845"></a>Reduced_Copay-50_6845 
 
@@ -102,4 +102,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 5:52:20 am

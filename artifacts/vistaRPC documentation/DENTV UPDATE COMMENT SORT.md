@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV UPDATE COMMENT SORT
- tag | UPDATE
+ label | {::nomarkdown}DENTV UPDATE COMMENT SORT{:/}
+ tag | {::nomarkdown}UPDATE{:/}
  routine | [DENTVCC](http://code.osehra.org/dox/Routine_DENTVCC_source.html)
- return value type | SINGLE VALUE
- description | This will re-sort a providers canned comments within a category. It will return a 1^Successful or -1^Unsuccessful.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will re-sort a providers canned comments within a category. It will return a 1^Successful or -1^Unsuccessful.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DENTV | LIST |  | true | This should be a list of \CATEGORY^SORT ORDER^IEN\ for all of the canned comments for the provider. | 
+| {::nomarkdown}DENTV{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This should be a list of \CATEGORY^SORT ORDER^IEN\ for all of the canned comments for the provider.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

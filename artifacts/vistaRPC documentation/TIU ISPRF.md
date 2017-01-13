@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU ISPRF
- tag | ISPRFTTL
+ label | {::nomarkdown}TIU ISPRF{:/}
+ tag | {::nomarkdown}ISPRFTTL{:/}
  routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
- return value type | SINGLE VALUE
- description | This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.{:/}
 
 
 ### Method description
@@ -21,15 +21,16 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | RPC Takes as input 8925.1 IEN
- Leading comment lines | and checks if it is a PRF title,Cf ISPFTTL^TIUPRFL. which is a FUNCTION
+ Leading comment lines | and checks if it is a PRF title
+Cf ISPFTTL^TIUPRFL. which is a FUNCTION
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUTTL | LITERAL |  | true | TIU DOCUMENT TITLE IEN | 
+| {::nomarkdown}TIUTTL{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TIU DOCUMENT TITLE IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

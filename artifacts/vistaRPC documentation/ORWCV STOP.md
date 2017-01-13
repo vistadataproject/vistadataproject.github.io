@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCV STOP
- tag | STOP
+ label | {::nomarkdown}ORWCV STOP{:/}
+ tag | {::nomarkdown}STOP{:/}
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
- return value type | SINGLE VALUE
- description | RPC to stop retrieval of cover sheet information for CPRS GUI.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to stop retrieval of cover sheet information for CPRS GUI.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

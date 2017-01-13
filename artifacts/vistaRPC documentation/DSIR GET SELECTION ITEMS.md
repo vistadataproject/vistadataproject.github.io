@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET SELECTION ITEMS
- tag | GETSELS
+ label | {::nomarkdown}DSIR GET SELECTION ITEMS{:/}
+ tag | {::nomarkdown}GETSELS{:/}
  routine | [DSIROIAH](http://code.osehra.org/dox/Routine_DSIROIAH_source.html)
- return value type | ARRAY
- description | THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

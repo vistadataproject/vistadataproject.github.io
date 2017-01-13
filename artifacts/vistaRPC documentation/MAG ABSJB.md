@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG ABSJB
- tag | ABSJB
+ label | {::nomarkdown}MAG ABSJB{:/}
+ tag | {::nomarkdown}ABSJB{:/}
  routine | [MAGGTU71](http://code.osehra.org/dox/Routine_MAGGTU71_source.html)
- return value type | SINGLE VALUE
- description | Sets queue entry to create abstract and/or copy to jukebox.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sets queue entry to create abstract and/or copy to jukebox.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL | 255 | true | Pointer to image file | 
-| DATA | LITERAL | 200 | true | $P(1) IEN.  Set an Abstract Queue for the IEN.           - Abstract will be created.$p(2) IEN. Set a JukeBox Queue for the IEN.           - Image will be copied from Jukebox. | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pointer to image file{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}$P(1) IEN.  Set an Abstract Queue for the IEN.           - Abstract will be created.$p(2) IEN. Set a JukeBox Queue for the IEN.           - Image will be copied from Jukebox.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

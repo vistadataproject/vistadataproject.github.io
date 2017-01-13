@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET ORIG IMAGE FILE
- tag | GETORIG
+ label | {::nomarkdown}MAGV GET ORIG IMAGE FILE{:/}
+ tag | {::nomarkdown}GETORIG{:/}
  routine | [MAGVRS24](http://code.osehra.org/dox/Routine_MAGVRS24_source.html)
- return value type | ARRAY
- description | This RPC returns an array of image file IENs associated with aSOP instance.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns an array of image file IENs associated with aSOP instance.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SOPIEN | LITERAL |  |  | The IEN of the IMAGE SOP INSTANCE file (#2005.64) to be used in the RPC function. | 
+| {::nomarkdown}SOPIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the IMAGE SOP INSTANCE file (#2005.64) to be used in the RPC function.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

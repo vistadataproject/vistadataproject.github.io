@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV FEE BASIS LIST
- tag | LIST
+ label | {::nomarkdown}DENTV FEE BASIS LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [DENTVFB](http://code.osehra.org/dox/Routine_DENTVFB_source.html)
- return value type | ARRAY
- description | This RPC gets a list of DENTAL FEE BASIS EXTRACT (#228.5) records fora specified patient.  The input is a single value, patient id (DFN).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC gets a list of DENTAL FEE BASIS EXTRACT (#228.5) records fora specified patient.  The input is a single value, patient id (DFN).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 30 | true | The input value is a single patient id (DFN). | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input value is a single patient id (DFN).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

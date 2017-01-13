@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF VERIFY FB
- tag | VER
+ label | {::nomarkdown}DSIF VERIFY FB{:/}
+ tag | {::nomarkdown}VER{:/}
  routine | [DSIFENA1](http://code.osehra.org/dox/Routine_DSIFENA1_source.html)
- return value type | SINGLE VALUE
- description | Used ot verify a Fee Basis patient is eligible.Pass in DFN, Output1 OR {0 = not verified} OR {-1 - error}^DishonorableDischarge^Agent orange only 1st piece codes: '1' VERIFIED PROCEED                 '0' NOT VERIFED                 '-1' ERROR^MESSAGE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used ot verify a Fee Basis patient is eligible.Pass in DFN, Output1 OR {0 = not verified} OR {-1 - error}^DishonorableDischarge^Agent orange only 1st piece codes: '1' VERIFIED PROCEED                 '0' NOT VERIFED                 '-1' ERROR^MESSAGE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 50 | true | Pass in IEN of the Patient File (DFN) | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in IEN of the Patient File (DFN){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

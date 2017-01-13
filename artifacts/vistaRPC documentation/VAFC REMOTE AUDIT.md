@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VAFC REMOTE AUDIT
- tag | AUDIT
+ label | {::nomarkdown}VAFC REMOTE AUDIT{:/}
+ tag | {::nomarkdown}AUDIT{:/}
  routine | [VAFCRPC](http://code.osehra.org/dox/Routine_VAFCRPC_source.html)
- return value type | ARRAY
- description | This Remote Procedure Call will allow users to pull an audit reportfrom a remote site.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure Call will allow users to pull an audit reportfrom a remote site.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VALUE | LITERAL | 16 | true | The VALUE can come in as 'I.ICN', 'S.SSN', 'D.DFN'or 'P.NAME' | 
-| SSN | LITERAL | 9 | true |  | 
-| SDT | LITERAL | 30 | true |  | 
-| EDT | LITERAL | 30 | true |  | 
+| {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The VALUE can come in as 'I.ICN', 'S.SSN', 'D.DFN'or 'P.NAME'{:/} | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}SDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}EDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

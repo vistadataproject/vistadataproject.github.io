@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWSR IS NON-OR PROCEDURE
- tag | ISNONOR
+ label | {::nomarkdown}ORWSR IS NON-OR PROCEDURE{:/}
+ tag | {::nomarkdown}ISNONOR{:/}
  routine | [ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CASE IEN | LITERAL | 16 | true |  | 
+| {::nomarkdown}CASE IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

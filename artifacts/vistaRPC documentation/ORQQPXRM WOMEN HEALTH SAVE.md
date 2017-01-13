@@ -9,25 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM WOMEN HEALTH SAVE
- tag | WH
+ label | {::nomarkdown}ORQQPXRM WOMEN HEALTH SAVE{:/}
+ tag | {::nomarkdown}WH{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Pass back data to be file in the Women's Health Package file 790.1.
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Pass back data to be file in the Women's Health Package file 790.1.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| WH RESULT | LIST |  | true |  | 
+| {::nomarkdown}WH RESULT{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT CLINIC PATIENTS
- tag | CLINPTS
+ label | {::nomarkdown}ORQPT CLINIC PATIENTS{:/}
+ tag | {::nomarkdown}CLINPTS{:/}
  routine | [ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
- return value type | ARRAY
- description | Returns patients with appointments at a clinic between start and stop dates
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns patients with appointments at a clinic between start and stop dates{:/}
 
 
 ### Method description
@@ -27,11 +27,11 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINIC ID | LITERAL | 16 | true | The record number of the clinic from the Hospital Location File (#44). | 
-| START DATE | LITERAL | 16 |  | The start date of the clinic appointments to retrieve (not in FM format.) | 
-| STOP DATE | LITERAL | 16 |  | The stop date of the clinic appointments to retrieve (not in Fileman format.) | 
+| {::nomarkdown}CLINIC ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The record number of the clinic from the Hospital Location File (#44).{:/} | 
+| {::nomarkdown}START DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}The start date of the clinic appointments to retrieve (not in FM format.){:/} | 
+| {::nomarkdown}STOP DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}The stop date of the clinic appointments to retrieve (not in Fileman format.){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

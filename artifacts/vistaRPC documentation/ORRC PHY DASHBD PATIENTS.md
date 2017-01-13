@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRC PHY DASHBD PATIENTS
- tag | EN
+ label | {::nomarkdown}ORRC PHY DASHBD PATIENTS{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [ORRCDPT](http://code.osehra.org/dox/Routine_ORRCDPT_source.html)
- return value type | GLOBAL ARRAY
- description | This call returns a list of patients with recent activity (new resultsor ADT movements) or items that need attention (tasks that are due orunsigned orders and notes) for the specified user.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This call returns a list of patients with recent activity (new resultsor ADT movements) or items that need attention (tasks that are due orunsigned orders and notes) for the specified user.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the user in the New Person file #200.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

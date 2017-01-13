@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT DISCHARGE
- tag | DISCHRG
+ label | {::nomarkdown}ORWPT DISCHARGE{:/}
+ tag | {::nomarkdown}DISCHRG{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | SINGLE VALUE
- description | Given a patient and an admission date, return the discharge date/time.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Given a patient and an admission date, return the discharge date/time.{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | The patient ien (i.e., DFN). | 
-| ADMITDT | LITERAL |  | true | Date the patient was admitted. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The patient ien (i.e., DFN).{:/} | 
+| {::nomarkdown}ADMITDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Date the patient was admitted.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

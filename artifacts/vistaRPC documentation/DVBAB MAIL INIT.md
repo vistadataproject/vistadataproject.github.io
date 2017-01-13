@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB MAIL INIT
- tag | INIT
+ label | {::nomarkdown}DVBAB MAIL INIT{:/}
+ tag | {::nomarkdown}INIT{:/}
  routine | [DVBAB3](http://code.osehra.org/dox/Routine_DVBAB3_source.html)
- return value type | SINGLE VALUE
- description | Init Mailman variables.Return string:e-mail address^
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Init Mailman variables.Return string:e-mail address^{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCQ1 GETCNT
- tag | GETCNT
+ label | {::nomarkdown}ORRHCQ1 GETCNT{:/}
+ tag | {::nomarkdown}GETCNT{:/}
  routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
- return value type | SINGLE VALUE
- description | Returns the count of sensitive patients left to evaluate after a mainquery iteration run.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the count of sensitive patients left to evaluate after a mainquery iteration run.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

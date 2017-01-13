@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET SCI COORDINATORS
- tag | COL
+ label | {::nomarkdown}SPN GET SCI COORDINATORS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPCC](http://code.osehra.org/dox/Routine_SPNJRPCC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns SCI Coordinator Providers from New Person file.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns SCI Coordinator Providers from New Person file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CPSRCH | LITERAL |  |  | Partial name search of coordinator(s)  (optional parameter) | 
+| {::nomarkdown}CPSRCH{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Partial name search of coordinator(s)  (optional parameter){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

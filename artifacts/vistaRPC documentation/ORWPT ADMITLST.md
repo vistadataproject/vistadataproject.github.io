@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT ADMITLST
- tag | ADMITLST
+ label | {::nomarkdown}ORWPT ADMITLST{:/}
+ tag | {::nomarkdown}ADMITLST{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns a list of admissions for a patient (for visit selection).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of admissions for a patient (for visit selection).{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

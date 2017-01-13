@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP NEW 7078 OBLIGATION
- tag | NEWOBL
+ label | {::nomarkdown}DSIF INP NEW 7078 OBLIGATION{:/}
+ tag | {::nomarkdown}NEWOBL{:/}
  routine | [DSIFNOT4](http://code.osehra.org/dox/Routine_DSIFNOT4_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FB VENDOR IEN | LITERAL | 25 | true |  | 
-| FM ADMIT DATE | LITERAL | 12 | true |  | 
-| PATIENT IEN | LITERAL | 25 | true |  | 
-| FUND CONTROL POINT | LITERAL | 6 | true |  | 
-| OBLIGATION NUMBER | LITERAL | 8 | true |  | 
-| NOTIFICATION IEN | LITERAL | 15 | true | IEN to file 162.2 (Notification) | 
-| EST AMOUNT | LITERAL | 15 | true | Estimated amount of 7078 Obligation. | 
+| {::nomarkdown}FB VENDOR IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}FM ADMIT DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}PATIENT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}FUND CONTROL POINT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}OBLIGATION NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}NOTIFICATION IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN to file 162.2 (Notification){:/} | 
+| {::nomarkdown}EST AMOUNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Estimated amount of 7078 Obligation.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

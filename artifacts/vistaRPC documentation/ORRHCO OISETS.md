@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCO OISETS
- tag | OISETS
+ label | {::nomarkdown}ORRHCO OISETS{:/}
+ tag | {::nomarkdown}OISETS{:/}
  routine | [ORRHCO](http://code.osehra.org/dox/Routine_ORRHCO_source.html)
- return value type | ARRAY
- description | Returns the list of sets available for listing orderable items.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the list of sets available for listing orderable items.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

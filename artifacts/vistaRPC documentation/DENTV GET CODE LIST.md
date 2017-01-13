@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET CODE LIST
- tag | LIST
+ label | {::nomarkdown}DENTV GET CODE LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [DENTVRP1](http://code.osehra.org/dox/Routine_DENTVRP1_source.html)
- return value type | GLOBAL ARRAY
- description | This call will return all ADA CPT codes which match the inputted string.You can pass the cpt code name or a string, like 'surf'.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This call will return all ADA CPT codes which match the inputted string.You can pass the cpt code name or a string, like 'surf'.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VAL | LITERAL | 30 | true | This is the string of characters that will be used in a Fileman lookup onthe ADA code file (#228).  You may send either the ada code name or astring of characters, like 'surface' | 
-| DATE | LITERAL | 7 | true | This is the visit date for which you wish to retreive a list of ICD diagnosis codes. | 
+| {::nomarkdown}VAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the string of characters that will be used in a Fileman lookup onthe ADA code file (#228).  You may send either the ada code name or astring of characters, like 'surface'{:/} | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the visit date for which you wish to retreive a list of ICD diagnosis codes.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

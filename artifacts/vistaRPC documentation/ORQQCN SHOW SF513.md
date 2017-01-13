@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN SHOW SF513
- tag | SHOW513
+ label | {::nomarkdown}ORQQCN SHOW SF513{:/}
+ tag | {::nomarkdown}SHOW513{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns text of consults standard form 513 for display in GUI application.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns text of consults standard form 513 for display in GUI application.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

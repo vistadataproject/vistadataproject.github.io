@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTVICD ICD GET DIAG
- tag | ICD
+ label | {::nomarkdown}DENTVICD ICD GET DIAG{:/}
+ tag | {::nomarkdown}ICD{:/}
  routine | [DENTVICD](http://code.osehra.org/dox/Routine_DENTVICD_source.html)
- return value type | SINGLE VALUE
- description | This will return specific information for a diagnosis code
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will return specific information for a diagnosis code{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VICD | LITERAL | 7 | true | This is the IEN or .01 field value from the DIAGNOSIS file (#80) | 
-| CDT | LITERAL | 14 | true | This is the date to be used to check if the code was active as of that date. The default value is TODAY. | 
+| {::nomarkdown}VICD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN or .01 field value from the DIAGNOSIS file (#80){:/} | 
+| {::nomarkdown}CDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to be used to check if the code was active as of that date. The default value is TODAY.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

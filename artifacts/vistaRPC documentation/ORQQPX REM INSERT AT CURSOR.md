@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX REM INSERT AT CURSOR
- tag | INSCURS
+ label | {::nomarkdown}ORQQPX REM INSERT AT CURSOR{:/}
+ tag | {::nomarkdown}INSCURS{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE if text generated from a reminder dialog, when processinga reminder, is to be inserted at the current cursor location, ratherthan at the bottom of the note.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE if text generated from a reminder dialog, when processinga reminder, is to be inserted at the current cursor location, ratherthan at the bottom of the note.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

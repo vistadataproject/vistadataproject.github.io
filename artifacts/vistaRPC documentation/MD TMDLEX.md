@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MD TMDLEX
- tag | LEX
+ label | {::nomarkdown}MD TMDLEX{:/}
+ tag | {::nomarkdown}LEX{:/}
  routine | [MDRPCW1](http://code.osehra.org/dox/Routine_MDRPCW1_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return a list of CPT or ICD for a search typed in.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return a list of CPT or ICD for a search typed in.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MDSRCH | REFERENCE |  | true | This is the text typed in for the look-up. | 
-| MDAPP | REFERENCE |  | true | This is the application indicator.  It is either \CPT\ or \ICD\. | 
-| STUDY | LITERAL |  | true | This is a required field to obtain the Patient Study # which will be used to check the PCE visit date. | 
+| {::nomarkdown}MDSRCH{:/} | {::nomarkdown}REFERENCE{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the text typed in for the look-up.{:/} | 
+| {::nomarkdown}MDAPP{:/} | {::nomarkdown}REFERENCE{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the application indicator.  It is either \CPT\ or \ICD\.{:/} | 
+| {::nomarkdown}STUDY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a required field to obtain the Patient Study # which will be used to check the PCE visit date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

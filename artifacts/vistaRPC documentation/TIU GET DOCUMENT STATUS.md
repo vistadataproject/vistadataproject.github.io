@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DOCUMENT STATUS
- tag | GETSTAT
+ label | {::nomarkdown}TIU GET DOCUMENT STATUS{:/}
+ tag | {::nomarkdown}GETSTAT{:/}
  routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
- return value type | SINGLE VALUE
- description | This RPC is used to retrieve the Status (8925.6 IEN) of a TIU DOCUMENT.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is used to retrieve the Status (8925.6 IEN) of a TIU DOCUMENT.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUIEN | LITERAL |  | true | TIU DOCUMENT IEN (8925) | 
+| {::nomarkdown}TIUIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TIU DOCUMENT IEN (8925){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM1 TERASE
- tag | TERASE
+ label | {::nomarkdown}ORAM1 TERASE{:/}
+ tag | {::nomarkdown}TERASE{:/}
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
- return value type | SINGLE VALUE
- description | Removes a patient from the Anticoagulation Team List.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Removes a patient from the Anticoagulation Team List.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
-| COMP | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}COMP{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

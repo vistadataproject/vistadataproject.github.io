@@ -9,20 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX SAVE
- tag | SAVE
+ label | {::nomarkdown}ORWDX SAVE{:/}
+ tag | {::nomarkdown}SAVE{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | ARRAY
- description | Save the order by passing in the following information:        ORVP=DFN        ORNP=Provider        ORL=Location        DLG=Order Dialog,        ORDG=Display Group        ORIT=Quick Order Dialog,        ORIFN=null if new order        ORDIALOG=Response List
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Save the order by passing in the following information:        ORVP=DFN        ORNP=Provider        ORL=Location        DLG=Order Dialog,        ORDG=Display Group        ORIT=Quick Order Dialog,        ORIFN=null if new order        ORDIALOG=Response List{:/}
 
 
 ### Method description
 
  property | value 
 --- | --- 
- Leading comment lines | ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,,ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment
+ Leading comment lines | ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,
+ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

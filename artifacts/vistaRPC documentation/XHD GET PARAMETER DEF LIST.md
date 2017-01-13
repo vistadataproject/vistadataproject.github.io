@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD GET PARAMETER DEF LIST
- tag | GETALL
+ label | {::nomarkdown}XHD GET PARAMETER DEF LIST{:/}
+ tag | {::nomarkdown}GETALL{:/}
  routine | [XHDPDEF](http://code.osehra.org/dox/Routine_XHDPDEF_source.html)
- return value type | GLOBAL ARRAY
- description | Gets all parameter definitions as a list with IEN^NAME^DISPLAY NAME in each node of the return array.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Gets all parameter definitions as a list with IEN^NAME^DISPLAY NAME in each node of the return array.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

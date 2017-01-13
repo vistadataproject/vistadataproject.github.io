@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD VALIDATE USER
- tag | VALIDAV
+ label | {::nomarkdown}IBD VALIDATE USER{:/}
+ tag | {::nomarkdown}VALIDAV{:/}
  routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
- return value type | SINGLE VALUE
- description | This call is used to validate user information and for display on theShow User screen.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This call is used to validate user information and for display on theShow User screen.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBDAV | LIST | 40 | true | validates that user is holder of specified security key. | 
+| {::nomarkdown}IBDAV{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}validates that user is holder of specified security key.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

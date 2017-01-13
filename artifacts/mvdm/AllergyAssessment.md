@@ -22,10 +22,10 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | patient |  | POINTER | name |  | [Patient](Patient.md) | REQUIRED | 
 | hasReactions |  | BOOLEAN | reaction_assessment | false | {::nomarkdown}<dl></dl>{:/} | UPDATE | 
-| enteredBy |  | POINTER | assessing_user | $USERID | {id:Person} |  | 
+| enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
 
 
 
 
- Generated on January 12th 2017, 6:21:30 am
+ Generated on January 13th 2017, 5:52:24 am

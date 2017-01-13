@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTRP INSTRUMENT REPORT
- tag | INTRMNT
+ label | {::nomarkdown}YTRP INSTRUMENT REPORT{:/}
+ tag | {::nomarkdown}INTRMNT{:/}
  routine | [YTRPWRP](http://code.osehra.org/dox/Routine_YTRPWRP_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure allows staff to print out psychological tests andinterview reports.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure allows staff to print out psychological tests andinterview reports.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| YSDFN | LITERAL | 30 | true | YSDFN is a pointer to the Patient file #2. | 
-| YSXT | LITERAL | 60 | true | This varible contains \Test Completion Date,Name of the test\, for example3000721,223.The Name of the test and Completion Date are field 0.1 and field 1 of thePsych Instrument Patient file #601.2. | 
+| {::nomarkdown}YSDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}YSDFN is a pointer to the Patient file #2.{:/} | 
+| {::nomarkdown}YSXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This varible contains \Test Completion Date,Name of the test\, for example3000721,223.The Name of the test and Completion Date are field 0.1 and field 1 of thePsych Instrument Patient file #601.2.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

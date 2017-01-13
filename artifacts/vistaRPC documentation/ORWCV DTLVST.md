@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCV DTLVST
- tag | DTLVST
+ label | {::nomarkdown}ORWCV DTLVST{:/}
+ tag | {::nomarkdown}DTLVST{:/}
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
- return value type | ARRAY
- description | This API returns the text of a progress note or discharge summary relatedto a visit/appointment.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This API returns the text of a progress note or discharge summary relatedto a visit/appointment.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

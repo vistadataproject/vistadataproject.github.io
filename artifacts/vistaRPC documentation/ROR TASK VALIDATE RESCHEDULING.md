@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR TASK VALIDATE RESCHEDULING
- tag | VALIDSCH
+ label | {::nomarkdown}ROR TASK VALIDATE RESCHEDULING{:/}
+ tag | {::nomarkdown}VALIDSCH{:/}
  routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
- return value type | ARRAY
- description | The ROR TASK VALIDATE RESCHEDULING remote procedure validates the rescheduling code and returns the next date/time to run.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The ROR TASK VALIDATE RESCHEDULING remote procedure validates the rescheduling code and returns the next date/time to run.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SCHCODE | LITERAL |  | true | Rescheduling code (\1D\, \1M\, \D@12:00\, etc). | 
-| SCHDT | LITERAL |  |  | Date when a task is scheduled to run for the first time (FileMan). By default (if $G(SCHDT)'>0), the current date/time is used. | 
+| {::nomarkdown}SCHCODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Rescheduling code (\1D\, \1M\, \D@12:00\, etc).{:/} | 
+| {::nomarkdown}SCHDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date when a task is scheduled to run for the first time (FileMan). By default (if $G(SCHDT)'>0), the current date/time is used.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

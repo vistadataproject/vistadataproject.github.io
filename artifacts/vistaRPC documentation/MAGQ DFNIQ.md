@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ DFNIQ
- tag | DFNIQ
+ label | {::nomarkdown}MAGQ DFNIQ{:/}
+ tag | {::nomarkdown}DFNIQ{:/}
  routine | [MAGQBPG1](http://code.osehra.org/dox/Routine_MAGQBPG1_source.html)
- return value type | SINGLE VALUE
- description | This provides a method of sending a Patient DFN VistA mail message from client methods.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This provides a method of sending a Patient DFN VistA mail message from client methods.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL |  | true | This is the message content that is sent if the Send Flag is set. | 
-| PLACE | LITERAL | 1 | true | This is the internal entry number of the site parameter file that designates the local Imaging configuration from which this messageis addressed. | 
-| SEND | LITERAL | 1 | true | If this is the last line of the message and if this value is set to\1\ then the message will be sent. | 
-| APPLICATION | LITERAL | 36 | true | This value is set to the application that has created this message. | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the message content that is sent if the Send Flag is set.{:/} | 
+| {::nomarkdown}PLACE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of the site parameter file that designates the local Imaging configuration from which this messageis addressed.{:/} | 
+| {::nomarkdown}SEND{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If this is the last line of the message and if this value is set to\1\ then the message will be sent.{:/} | 
+| {::nomarkdown}APPLICATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}36{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value is set to the application that has created this message.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

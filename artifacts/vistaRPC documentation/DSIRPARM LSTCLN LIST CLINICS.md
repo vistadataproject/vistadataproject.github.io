@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIRPARM LSTCLN LIST CLINICS
- tag | LSTCLN
+ label | {::nomarkdown}DSIRPARM LSTCLN LIST CLINICS{:/}
+ tag | {::nomarkdown}LSTCLN{:/}
  routine | [DSIRPARM](http://code.osehra.org/dox/Routine_DSIRPARM_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return a list of all the clinics that the ROI department has flagged as sensitive for their disclosure purposes.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return a list of all the clinics that the ROI department has flagged as sensitive for their disclosure purposes.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

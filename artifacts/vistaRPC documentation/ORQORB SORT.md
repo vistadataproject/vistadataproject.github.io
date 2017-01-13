@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQORB SORT
- tag | SORT
+ label | {::nomarkdown}ORQORB SORT{:/}
+ tag | {::nomarkdown}SORT{:/}
  routine | [ORQORB](http://code.osehra.org/dox/Routine_ORQORB_source.html)
- return value type | SINGLE VALUE
- description | Returns the notification sort method for user/division/system/pkg.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the notification sort method for user/division/system/pkg.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

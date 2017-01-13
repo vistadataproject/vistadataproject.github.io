@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCQ SUBDTA
- tag | SUBDTA
+ label | {::nomarkdown}ORRHCQ SUBDTA{:/}
+ tag | {::nomarkdown}SUBDTA{:/}
  routine | [ORRHCQ](http://code.osehra.org/dox/Routine_ORRHCQ_source.html)
- return value type | ARRAY
- description | Returns name-value pairs that represent columns for a subset of records.The list view in the GUI posts an event for which records it needs todisplay.  This call obtains the data for those records.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns name-value pairs that represent columns for a subset of records.The list view in the GUI posts an event for which records it needs todisplay.  This call obtains the data for those records.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FIRST | LITERAL |  | true | The first record that has been requested by the listview control. | 
-| LAST | LITERAL |  | true | The last record number that has been requested by the listview control. | 
+| {::nomarkdown}FIRST{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The first record that has been requested by the listview control.{:/} | 
+| {::nomarkdown}LAST{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The last record number that has been requested by the listview control.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

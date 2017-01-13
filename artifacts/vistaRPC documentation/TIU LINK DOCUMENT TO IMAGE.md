@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU LINK DOCUMENT TO IMAGE
- tag | PUTIMAGE
+ label | {::nomarkdown}TIU LINK DOCUMENT TO IMAGE{:/}
+ tag | {::nomarkdown}PUTIMAGE{:/}
  routine | [TIUSRVPL](http://code.osehra.org/dox/Routine_TIUSRVPL_source.html)
- return value type | SINGLE VALUE
- description | This RPC links a document with an image. It will support a many-to-manyassociation between documents and images.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC links a document with an image. It will support a many-to-manyassociation between documents and images.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | This is the record number (IEN) of the document in the TIU DOCUMENT FILE(#8925). | 
-| IMGDA | LITERAL |  | true | This is the record number (IEN) of the document in the IMAGE FILE (#2005). | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) of the document in the TIU DOCUMENT FILE(#8925).{:/} | 
+| {::nomarkdown}IMGDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) of the document in the IMAGE FILE (#2005).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

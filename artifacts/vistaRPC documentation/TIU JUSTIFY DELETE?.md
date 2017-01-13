@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU JUSTIFY DELETE?
- tag | NEEDJUST
+ label | {::nomarkdown}TIU JUSTIFY DELETE?{:/}
+ tag | {::nomarkdown}NEEDJUST{:/}
  routine | [TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
- return value type | SINGLE VALUE
- description | BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  |  | This is the record number (IEN) of the document in file 8925. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the record number (IEN) of the document in file 8925.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

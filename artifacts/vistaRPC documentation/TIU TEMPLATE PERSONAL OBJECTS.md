@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE PERSONAL OBJECTS
- tag | PERSOBJS
+ label | {::nomarkdown}TIU TEMPLATE PERSONAL OBJECTS{:/}
+ tag | {::nomarkdown}PERSOBJS{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | ARRAY
- description | Returns a list or Patient Data Objects allowed in Personal Templates.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list or Patient Data Objects allowed in Personal Templates.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

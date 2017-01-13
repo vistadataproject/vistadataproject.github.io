@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB SERVER CLOCK VARIANCE
- tag | CLOCK
+ label | {::nomarkdown}PSB SERVER CLOCK VARIANCE{:/}
+ tag | {::nomarkdown}CLOCK{:/}
  routine | [PSBUTL](http://code.osehra.org/dox/Routine_PSBUTL_source.html)
- return value type | ARRAY
- description | Client date/time in external FileMan format. Returns the variance from theserver to the client in minutes.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Client date/time in external FileMan format. Returns the variance from theserver to the client in minutes.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBX | LITERAL |  | true | Client date/time in external fileman format. | 
+| {::nomarkdown}PSBX{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Client date/time in external fileman format.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

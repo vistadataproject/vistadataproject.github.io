@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAMX CONSULT
- tag | CONSULT
+ label | {::nomarkdown}ORAMX CONSULT{:/}
+ tag | {::nomarkdown}CONSULT{:/}
  routine | [ORAMX](http://code.osehra.org/dox/Routine_ORAMX_source.html)
- return value type | ARRAY
- description | Send DFN and the name of the Consult Service (from the ORAM CONSULT REQUEST SERVICE parameter). Returns pending and active consults which meetthose criteria.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Send DFN and the name of the Consult Service (from the ORAM CONSULT REQUEST SERVICE parameter). Returns pending and active consults which meetthose criteria.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
-| CNAME | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}CNAME{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

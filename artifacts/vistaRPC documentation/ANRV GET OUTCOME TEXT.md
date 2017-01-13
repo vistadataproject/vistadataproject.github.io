@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV GET OUTCOME TEXT
- tag | GETTXT
+ label | {::nomarkdown}ANRV GET OUTCOME TEXT{:/}
+ tag | {::nomarkdown}GETTXT{:/}
  routine | [ANRVOB](http://code.osehra.org/dox/Routine_ANRVOB_source.html)
- return value type | ARRAY
- description | Returns subrecord text.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns subrecord text.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RESULTS | LITERAL |  | true | Subrecord text. | 
-| SUBREC | LITERAL | 50 | true | Subrecord IEN that is going to be returned. | 
-| TOPREC | LITERAL | 50 | true | Top record of the sub record to return. | 
+| {::nomarkdown}RESULTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Subrecord text.{:/} | 
+| {::nomarkdown}SUBREC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Subrecord IEN that is going to be returned.{:/} | 
+| {::nomarkdown}TOPREC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Top record of the sub record to return.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

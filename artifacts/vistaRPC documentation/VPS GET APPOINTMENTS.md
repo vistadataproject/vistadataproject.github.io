@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET APPOINTMENTS
- tag | GET
+ label | {::nomarkdown}VPS GET APPOINTMENTS{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [VPSAPPT](http://code.osehra.org/dox/Routine_VPSAPPT_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return appointments for a given data range for a specific Appointment Queue. This RPC will refresh an existing queue with the current appointments and typically need to be called only once a day.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return appointments for a given data range for a specific Appointment Queue. This RPC will refresh an existing queue with the current appointments and typically need to be called only once a day.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSQUEUE | LITERAL | 3 | true | Unique Queue ID representing Vecna Appointment Queue. | 
-| VPSFRDT | LITERAL | 14 | true | Appointment From Date | 
-| VPSTODT | LITERAL | 14 | true | Appointment Through Date | 
+| {::nomarkdown}VPSQUEUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Unique Queue ID representing Vecna Appointment Queue.{:/} | 
+| {::nomarkdown}VPSFRDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Appointment From Date{:/} | 
+| {::nomarkdown}VPSTODT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Appointment Through Date{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

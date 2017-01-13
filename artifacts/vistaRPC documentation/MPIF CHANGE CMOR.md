@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF CHANGE CMOR
- tag | RCCMOR
+ label | {::nomarkdown}MPIF CHANGE CMOR{:/}
+ tag | {::nomarkdown}RCCMOR{:/}
  routine | [MPIFRPC](http://code.osehra.org/dox/Routine_MPIFRPC_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure call (RPC) allows the changing/updating of the COORDINATING MASTER OF RECORD (#991.03) field in the PATIENT (#2) file for a specific patient. An A08 Update message can also be triggered.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure call (RPC) allows the changing/updating of the COORDINATING MASTER OF RECORD (#991.03) field in the PATIENT (#2) file for a specific patient. An A08 Update message can also be triggered.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 10 | true | ICN - not including the checksum | 
-| CMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR | 
-| SSN | LITERAL | 9 | true | Social Security Number for the patient that is to be changed.  SSN willonly be used if ICN is not found to check if the problem is with the AICNx-ref on the ICN field. | 
-| A08 | LITERAL | 1 | true | This field will serve as a flag to note whether or not an A08 update message should be triggered. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICN - not including the checksum{:/} | 
+| {::nomarkdown}CMOR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The station number of the site that is to become the CMOR{:/} | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Social Security Number for the patient that is to be changed.  SSN willonly be used if ICN is not found to check if the problem is with the AICNx-ref on the ICN field.{:/} | 
+| {::nomarkdown}A08{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field will serve as a flag to note whether or not an A08 update message should be triggered.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

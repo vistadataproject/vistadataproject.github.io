@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPP GETTU
- tag | GETTU
+ label | {::nomarkdown}ORWTPP GETTU{:/}
+ tag | {::nomarkdown}GETTU{:/}
  routine | [ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

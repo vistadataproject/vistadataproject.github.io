@@ -9,29 +9,29 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV IMPORT STUDY LOG STORE
- tag | IMPLOGIN
+ label | {::nomarkdown}MAGV IMPORT STUDY LOG STORE{:/}
+ tag | {::nomarkdown}IMPLOGIN{:/}
  routine | [MAGVIM03](http://code.osehra.org/dox/Routine_MAGVIM03_source.html)
- return value type | ARRAY
- description | Collects study-level data for objects imported by Imaging Importer II application (MAG*3.0*118).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Collects study-level data for objects imported by Imaging Importer II application (MAG*3.0*118).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL | 7 |  | DUZ of Importer II user who reconciled artifacts to this study. | 
-| USER LOCATION | LITERAL | 6 |  | Logon site, location, or division of the user who reconciled artifacts to this study. | 
-| PATIENT DFN | LITERAL | 9 |  | DFN of the Patient to whose study the imported artifacts were reconciled. | 
-| ACCESSION NUMBER | LITERAL | 24 |  | Accession Number of the study to which the imported artifacts were reconciled. | 
-| STUDY INSTANCE UID | LITERAL | 64 |  | STUDY INSTANCE UID of the study to which the imported artifacts were reconciled.DICOM STANDARD IDENTIFIER: (0020,000D) | 
-| STUDY ORIGINATING LOCATION | LITERAL | 30 |  | Location where the imported study was performed. | 
-| ASSOCIATED STUDY TYPE | LITERAL | 12 |  | RADiology, CONsult, LABoratory, etc. of the study to which the imported artifacts were reconciled. | 
-| STUDY SERIES COUNT | LITERAL | 7 |  | Number of series comprising this study. | 
-| STUDY MODALITY COUNTS | LIST | 16 |  | List of Name-Value pairs representing each modality and its count for the imported objects. | 
-| MEDIA LOG IEN | LITERAL | 10 | true | Unique identifier of an Importer II media import event. Used to cross-reference fields inthis file with specific source media in the MAGV IMPORT MEDIA LOG file (#2006.9422). | 
-| OBJFAIL | LITERAL | 6 |  | Count of requested objects which failed to be imported for this study. | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} |  | {::nomarkdown}DUZ of Importer II user who reconciled artifacts to this study.{:/} | 
+| {::nomarkdown}USER LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} |  | {::nomarkdown}Logon site, location, or division of the user who reconciled artifacts to this study.{:/} | 
+| {::nomarkdown}PATIENT DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} |  | {::nomarkdown}DFN of the Patient to whose study the imported artifacts were reconciled.{:/} | 
+| {::nomarkdown}ACCESSION NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}24{:/} |  | {::nomarkdown}Accession Number of the study to which the imported artifacts were reconciled.{:/} | 
+| {::nomarkdown}STUDY INSTANCE UID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}64{:/} |  | {::nomarkdown}STUDY INSTANCE UID of the study to which the imported artifacts were reconciled.DICOM STANDARD IDENTIFIER: (0020,000D){:/} | 
+| {::nomarkdown}STUDY ORIGINATING LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} |  | {::nomarkdown}Location where the imported study was performed.{:/} | 
+| {::nomarkdown}ASSOCIATED STUDY TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} |  | {::nomarkdown}RADiology, CONsult, LABoratory, etc. of the study to which the imported artifacts were reconciled.{:/} | 
+| {::nomarkdown}STUDY SERIES COUNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} |  | {::nomarkdown}Number of series comprising this study.{:/} | 
+| {::nomarkdown}STUDY MODALITY COUNTS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}List of Name-Value pairs representing each modality and its count for the imported objects.{:/} | 
+| {::nomarkdown}MEDIA LOG IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Unique identifier of an Importer II media import event. Used to cross-reference fields inthis file with specific source media in the MAGV IMPORT MEDIA LOG file (#2006.9422).{:/} | 
+| {::nomarkdown}OBJFAIL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} |  | {::nomarkdown}Count of requested objects which failed to be imported for this study.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

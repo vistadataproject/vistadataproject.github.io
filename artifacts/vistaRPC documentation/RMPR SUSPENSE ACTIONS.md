@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR SUSPENSE ACTIONS
- tag | EN
+ label | {::nomarkdown}RMPR SUSPENSE ACTIONS{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9CA](http://code.osehra.org/dox/Routine_RMPR9CA_source.html)
- return value type | ARRAY
- description | Remote Procedure for Purchasing Actions.  The firs 2 will be:Post complete notePost initial action
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Remote Procedure for Purchasing Actions.  The firs 2 will be:Post complete notePost initial action{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RMPRTXT | LIST | 1 |  |  | 
+| {::nomarkdown}RMPRTXT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}1{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

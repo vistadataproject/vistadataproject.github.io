@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH REASSIGN
- tag | REASSIGN
+ label | {::nomarkdown}DSIF BATCH REASSIGN{:/}
+ tag | {::nomarkdown}REASSIGN{:/}
  routine | [DSIFBAT4](http://code.osehra.org/dox/Routine_DSIFBAT4_source.html)
- return value type | SINGLE VALUE
- description | Used to reassign an open batch from one user to a second user, must have the FBAASUPERVISOR key to use.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to reassign an open batch from one user to a second user, must have the FBAASUPERVISOR key to use.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OLD USER | LITERAL | 30 | true | DUZ of Existing user that batch is assigned to currently. | 
-| New User | LITERAL | 30 | true | DUZ of user to reassign batch to. | 
-| Batch | LITERAL | 30 | true | Batch IEn to reassign | 
+| {::nomarkdown}OLD USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DUZ of Existing user that batch is assigned to currently.{:/} | 
+| {::nomarkdown}New User{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DUZ of user to reassign batch to.{:/} | 
+| {::nomarkdown}Batch{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEn to reassign{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

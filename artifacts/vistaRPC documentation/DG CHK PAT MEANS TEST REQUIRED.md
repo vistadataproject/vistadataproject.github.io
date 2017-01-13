@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DG CHK PAT MEANS TEST REQUIRED
- tag | GUIMT
+ label | {::nomarkdown}DG CHK PAT MEANS TEST REQUIRED{:/}
+ tag | {::nomarkdown}GUIMT{:/}
  routine | [DPTLK6](http://code.osehra.org/dox/Routine_DPTLK6_source.html)
- return value type | SINGLE VALUE
- description | CHECKS WHETHER MEANS TEST IS REQUIRED FOR PATIENTRETURNS 1 OR 0
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}CHECKS WHETHER MEANS TEST IS REQUIRED FOR PATIENTRETURNS 1 OR 0{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | PATIENT FILE IEN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PATIENT FILE IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

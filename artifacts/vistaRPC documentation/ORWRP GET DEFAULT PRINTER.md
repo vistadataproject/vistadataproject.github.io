@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP GET DEFAULT PRINTER
- tag | GETDFPRT
+ label | {::nomarkdown}ORWRP GET DEFAULT PRINTER{:/}
+ tag | {::nomarkdown}GETDFPRT{:/}
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
- return value type | SINGLE VALUE
- description | Returns default printer.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns default printer.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM REMINDER WEB
- tag | WEB
+ label | {::nomarkdown}PXRM REMINDER WEB{:/}
+ tag | {::nomarkdown}WEB{:/}
  routine | [PXRMRPCA](http://code.osehra.org/dox/Routine_PXRMRPCA_source.html)
- return value type | ARRAY
- description | Web addresses for selected reminder
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Web addresses for selected reminder{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINICAL REMINDER ID | LITERAL | 16 | true | Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9] | 
+| {::nomarkdown}CLINICAL REMINDER ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

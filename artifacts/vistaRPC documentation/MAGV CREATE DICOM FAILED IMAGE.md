@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV CREATE DICOM FAILED IMAGE
- tag | DCRCTSET
+ label | {::nomarkdown}MAGV CREATE DICOM FAILED IMAGE{:/}
+ tag | {::nomarkdown}DCRCTSET{:/}
  routine | [MAGVRS51](http://code.osehra.org/dox/Routine_MAGVRS51_source.html)
- return value type | SINGLE VALUE
- description | This RPC creates an entry in the DICOM FAILED IMAGES File (#2006.575).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC creates an entry in the DICOM FAILED IMAGES File (#2006.575).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ATTS | LIST |  |  | Input parameters are name-value pairs sent as successive integersubscripts in an array that should be passed in by reference as the secondargument to entry point DCRCTSET^MAGVRS51.  The first argument willcontain the returned value in an array that should also be passed byreference. The values passed in should be in the format <fname>`<value>, where<fname> is a field name in the DICOM FAILED IMAGES File (#2006.575) and <value> is the value to which that field should be set. | 
+| {::nomarkdown}ATTS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Input parameters are name-value pairs sent as successive integersubscripts in an array that should be passed in by reference as the secondargument to entry point DCRCTSET^MAGVRS51.  The first argument willcontain the returned value in an array that should also be passed byreference. The values passed in should be in the format <fname>`<value>, where<fname> is a field name in the DICOM FAILED IMAGES File (#2006.575) and <value> is the value to which that field should be set.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

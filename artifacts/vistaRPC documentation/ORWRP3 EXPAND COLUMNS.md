@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP3 EXPAND COLUMNS
- tag | LIST
+ label | {::nomarkdown}ORWRP3 EXPAND COLUMNS{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [ORWRP3](http://code.osehra.org/dox/Routine_ORWRP3_source.html)
- return value type | ARRAY
- description | This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB FORM DATA BACKUP DELETE
- tag | DELETE
+ label | {::nomarkdown}DVBAB FORM DATA BACKUP DELETE{:/}
+ tag | {::nomarkdown}DELETE{:/}
  routine | [DVBABFRM](http://code.osehra.org/dox/Routine_DVBABFRM_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | IEN in file 396.17 | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN in file 396.17{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

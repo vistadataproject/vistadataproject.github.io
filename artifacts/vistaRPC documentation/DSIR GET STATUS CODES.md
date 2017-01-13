@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET STATUS CODES
- tag | STCODES
+ label | {::nomarkdown}DSIR GET STATUS CODES{:/}
+ tag | {::nomarkdown}STCODES{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ACTVONLY | LITERAL | 1 | true | ACTVONLY = 1 for only active statuses, 0 for all statuses. | 
+| {::nomarkdown}ACTVONLY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ACTVONLY = 1 for only active statuses, 0 for all statuses.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

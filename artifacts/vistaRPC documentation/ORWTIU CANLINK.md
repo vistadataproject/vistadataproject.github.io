@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTIU CANLINK
- tag | CANLINK
+ label | {::nomarkdown}ORWTIU CANLINK{:/}
+ tag | {::nomarkdown}CANLINK{:/}
  routine | [ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
- return value type | SINGLE VALUE
- description |  Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown} Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TITLE | LITERAL | 16 | true |  | 
+| {::nomarkdown}TITLE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

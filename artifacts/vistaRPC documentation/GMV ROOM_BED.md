@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV ROOM_BED
- tag | ROOMBED
+ label | {::nomarkdown}GMV ROOM_BED{:/}
+ tag | {::nomarkdown}ROOMBED{:/}
  routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
- return value type | GLOBAL ARRAY
- description | This procedure extracts room/bed information from Room-Bed file (#405.4)for a given MAS ward.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This procedure extracts room/bed information from Room-Bed file (#405.4)for a given MAS ward.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMRWARD | LITERAL | 30 | true | GMRWARD is a MAS ward name from the Ward Location file (#42). | 
+| {::nomarkdown}GMRWARD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMRWARD is a MAS ward name from the Ward Location file (#42).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ CHOICEIDENT
- tag | IDENTAE
+ label | {::nomarkdown}YTQ CHOICEIDENT{:/}
+ tag | {::nomarkdown}IDENTAE{:/}
  routine | [YTQAPI4](http://code.osehra.org/dox/Routine_YTQAPI4_source.html)
- return value type | ARRAY
- description | Add enter choiceIdentifiers IN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Add enter choiceIdentifiers IN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

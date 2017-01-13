@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETPRODEFS
- tag | PRDEFS
+ label | {::nomarkdown}EC GETPRODEFS{:/}
+ tag | {::nomarkdown}PRDEFS{:/}
  routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
- return value type | SINGLE VALUE
- description | This broker entry point returns the defaults for procedure data entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This broker entry point returns the defaults for procedure data entry.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input value, ECARY, contains the following values separated by \^\     ECL  - Location IEN     ECD  - DSS Unit IEN     ECC  - Category IEN     ECP  - Procedure IEN | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input value, ECARY, contains the following values separated by \^\     ECL  - Location IEN     ECD  - DSS Unit IEN     ECC  - Category IEN     ECP  - Procedure IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

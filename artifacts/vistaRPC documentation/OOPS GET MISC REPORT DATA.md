@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET MISC REPORT DATA
- tag | ENT
+ label | {::nomarkdown}OOPS GET MISC REPORT DATA{:/}
+ tag | {::nomarkdown}ENT{:/}
  routine | [OOPSGUIR](http://code.osehra.org/dox/Routine_OOPSGUIR_source.html)
- return value type | GLOBAL ARRAY
- description | This broker call will return data to generate reports on the Delphi Clientside.  It is a generic call that needs the start date, end date, stationnumber (or A for all stations), and the report call or name.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This broker call will return data to generate reports on the Delphi Clientside.  It is a generic call that needs the start date, end date, stationnumber (or A for all stations), and the report call or name.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 255 | true |  | 
-| REPORT | LITERAL | 40 | true |  | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}REPORT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

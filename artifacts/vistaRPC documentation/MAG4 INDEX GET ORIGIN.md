@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 INDEX GET ORIGIN
- tag | IGO
+ label | {::nomarkdown}MAG4 INDEX GET ORIGIN{:/}
+ tag | {::nomarkdown}IGO{:/}
  routine | [MAGSIXGT](http://code.osehra.org/dox/Routine_MAGSIXGT_source.html)
- return value type | ARRAY
- description | This call will return an array of INDEX ORIGIN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call will return an array of INDEX ORIGIN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS CCOW VAULT PARAM
- tag | CCOWPC
+ label | {::nomarkdown}XUS CCOW VAULT PARAM{:/}
+ tag | {::nomarkdown}CCOWPC{:/}
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
- return value type | ARRAY
- description | This RPC returns a value for use with the CCOW vault.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a value for use with the CCOW vault.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN RX UTILIZATION SPECIFIC
- tag | RPC
+ label | {::nomarkdown}SPN RX UTILIZATION SPECIFIC{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [SPNLRS7](http://code.osehra.org/dox/Routine_SPNLRS7_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FDATE | LITERAL |  |  |  | 
-| TDATE | LITERAL |  |  |  | 
-| HIUSERS | LITERAL |  |  |  | 
-| VALUES | LIST |  |  |  | 
-| PTLIST | LITERAL |  |  |  | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}VALUES{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG VERIFY ESIG
- tag | ESIG
+ label | {::nomarkdown}MAGG VERIFY ESIG{:/}
+ tag | {::nomarkdown}ESIG{:/}
  routine | [MAGQLOG](http://code.osehra.org/dox/Routine_MAGQLOG_source.html)
- return value type | SINGLE VALUE
- description | Verifies the Electronic signature of the current user.  Uses 'DUZ' defined in the partition.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Verifies the Electronic signature of the current user.  Uses 'DUZ' defined in the partition.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ESIG | LITERAL | 20 | true | This is the encrypted electronic signature entered by the user on theImaging window. | 
+| {::nomarkdown}ESIG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the encrypted electronic signature entered by the user on theImaging window.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

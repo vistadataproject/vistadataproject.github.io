@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCUT SET USER QUERY DEFAULT
- tag | SETDEF
+ label | {::nomarkdown}SCUT SET USER QUERY DEFAULT{:/}
+ tag | {::nomarkdown}SETDEF{:/}
  routine | [SCUTBK3](http://code.osehra.org/dox/Routine_SCUTBK3_source.html)
- return value type | ARRAY
- description | This RPC is used to set or change the user's defualt PCMMquery template.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to set or change the user's defualt PCMMquery template.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER NUMBER | LITERAL | 20 | true | Internal entry number of the user (DUZ). | 
-| QUERY ID | LITERAL | 20 | true | Internal entry number of query template(#404.95) that the userselected as his/her default. | 
+| {::nomarkdown}USER NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of the user (DUZ).{:/} | 
+| {::nomarkdown}QUERY ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of query template(#404.95) that the userselected as his/her default.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

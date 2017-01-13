@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC FILE NUMBER
- tag | FILENOC
+ label | {::nomarkdown}SC FILE NUMBER{:/}
+ tag | {::nomarkdown}FILENOC{:/}
  routine | [SCUTBK1](http://code.osehra.org/dox/Routine_SCUTBK1_source.html)
- return value type | SINGLE VALUE
- description | Broker callback to get file number.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Broker callback to get file number.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE NAME | LITERAL | 50 | true |  | 
+| {::nomarkdown}FILE NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

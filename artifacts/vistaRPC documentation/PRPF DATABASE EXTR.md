@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PRPF DATABASE EXTR
- tag | RPC
+ label | {::nomarkdown}PRPF DATABASE EXTR{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [PRPFMR1](http://code.osehra.org/dox/Routine_PRPFMR1_source.html)
- return value type | GLOBAL ARRAY
- description | THIS USED FOR J2EE MIGRATION
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}THIS USED FOR J2EE MIGRATION{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

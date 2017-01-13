@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMIM FIM PARAMETER
- tag | PRM
+ label | {::nomarkdown}RMIM FIM PARAMETER{:/}
+ tag | {::nomarkdown}PRM{:/}
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
- return value type | ARRAY
- description | This remote procedure will return the local site parameters in an array.  Thereare no input parameters.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure will return the local site parameters in an array.  Thereare no input parameters.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

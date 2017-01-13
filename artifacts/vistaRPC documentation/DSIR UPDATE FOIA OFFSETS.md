@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR UPDATE FOIA OFFSETS
- tag | MANUFOIA
+ label | {::nomarkdown}DSIR UPDATE FOIA OFFSETS{:/}
+ tag | {::nomarkdown}MANUFOIA{:/}
  routine | [DSIROI8](http://code.osehra.org/dox/Routine_DSIROI8_source.html)
- return value type | SINGLE VALUE
- description | This RPC updates the manually entered offsets for the annual FOIA report.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC updates the manually entered offsets for the annual FOIA report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FOIA | LITERAL | 99 | true | This is the internal number from file 19620.3. | 
-| DATA | LIST | 99 | true | This is an array '^' delimited containing the following:         Field Number (File 19620.3) ^ Numeric Value to store Field numbers must be 100.02 thru 137.02 and all .02, the .01 fields are populated by the annual FOIA report. | 
+| {::nomarkdown}FOIA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal number from file 19620.3.{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is an array '^' delimited containing the following:         Field Number (File 19620.3) ^ Numeric Value to store Field numbers must be 100.02 thru 137.02 and all .02, the .01 fields are populated by the annual FOIA report.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

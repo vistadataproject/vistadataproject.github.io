@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET DOC COUNT BY VISIT
- tag | DOCCNT
+ label | {::nomarkdown}TIU GET DOC COUNT BY VISIT{:/}
+ tag | {::nomarkdown}DOCCNT{:/}
  routine | [TIUSRVLV](http://code.osehra.org/dox/Routine_TIUSRVLV_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure returns the number of documents that are linked to a particular visit.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure returns the number of documents that are linked to a particular visit.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VSIT | LITERAL |  | true | This is the record number (IEN) of the VISIT in the VISIT FILE. | 
+| {::nomarkdown}VSIT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) of the VISIT in the VISIT FILE.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

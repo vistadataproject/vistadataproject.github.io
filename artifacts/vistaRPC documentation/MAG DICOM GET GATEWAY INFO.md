@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET GATEWAY INFO
- tag | GETINFO
+ label | {::nomarkdown}MAG DICOM GET GATEWAY INFO{:/}
+ tag | {::nomarkdown}GETINFO{:/}
  routine | [MAGDQR05](http://code.osehra.org/dox/Routine_MAGDQR05_source.html)
- return value type | ARRAY
- description | This Remote Procedure returns information about aDICOM Gateway.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure returns information about aDICOM Gateway.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOSTNAME | LITERAL | 30 | true | The value of this parameter is a string.This string must be the \hostname\ of the computer that isbeing used to operate the DICOM Gateway for which informationis to be returned. | 
+| {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string.This string must be the \hostname\ of the computer that isbeing used to operate the DICOM Gateway for which informationis to be returned.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

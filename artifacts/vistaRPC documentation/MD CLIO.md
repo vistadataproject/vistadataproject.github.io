@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MD CLIO
- tag | RPC
+ label | {::nomarkdown}MD CLIO{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [MDCLIO](http://code.osehra.org/dox/Routine_MDCLIO_source.html)
- return value type | GLOBAL ARRAY
- description | This is the primary RPC called by the CliO engine for normal command processing.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This is the primary RPC called by the CliO engine for normal command processing.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

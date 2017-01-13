@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR PRODUCTION ACCOUNT
- tag | PROD
+ label | {::nomarkdown}ROR PRODUCTION ACCOUNT{:/}
+ tag | {::nomarkdown}PROD{:/}
  routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
- return value type | ARRAY
- description | This RPC checks if the current account is a production one.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC checks if the current account is a production one.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

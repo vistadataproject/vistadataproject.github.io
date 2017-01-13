@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ TSLIST1
- tag | TSLIST1
+ label | {::nomarkdown}YTQ TSLIST1{:/}
+ tag | {::nomarkdown}TSLIST1{:/}
  routine | [YTQAPI](http://code.osehra.org/dox/Routine_YTQAPI_source.html)
- return value type | ARRAY
- description | Returns a delimited list, one field per line of all fields in 601.71 for a specified entry.FIELD LABEL ^ FIELD VALUE
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a delimited list, one field per line of all fields in 601.71 for a specified entry.FIELD LABEL ^ FIELD VALUE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CODE |  | 50 | true | .01 entry IN 601.71 | 
+| {::nomarkdown}CODE{:/} |  | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}.01 entry IN 601.71{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

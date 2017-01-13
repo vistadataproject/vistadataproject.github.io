@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS FORWARD
- tag | FWRD
+ label | {::nomarkdown}DSIF CNSLTS FORWARD{:/}
+ tag | {::nomarkdown}FWRD{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | This RPC allows for a Consult to be forwarded to a different Service. Cloned from ORQQCN FORWARD
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC allows for a Consult to be forwarded to a different Service. Cloned from ORQQCN FORWARD{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be forwarded. | 
-| DSIFSVC | LITERAL |  | true | This is the Service to which the consult is being forwarded. | 
-| DSIFPROV | LITERAL |  | true | This is the provider responsible for forwarding the consult. | 
-| DSIFATTN | LITERAL |  |  | This is the provider whose attention the consult is sent to. Not required. | 
-| DSIFURG | LITERAL |  | true | This is the urgency of the request. | 
-| DSIFDT | LITERAL |  | true | This is the actual date and time of activity. | 
-| DSIFCOM | LIST |  | true | This is the comments associated with the forward consult request. | 
+| {::nomarkdown}DSIFCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN that needs to be forwarded.{:/} | 
+| {::nomarkdown}DSIFSVC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Service to which the consult is being forwarded.{:/} | 
+| {::nomarkdown}DSIFPROV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the provider responsible for forwarding the consult.{:/} | 
+| {::nomarkdown}DSIFATTN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the provider whose attention the consult is sent to. Not required.{:/} | 
+| {::nomarkdown}DSIFURG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the urgency of the request.{:/} | 
+| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the actual date and time of activity.{:/} | 
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the comments associated with the forward consult request.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

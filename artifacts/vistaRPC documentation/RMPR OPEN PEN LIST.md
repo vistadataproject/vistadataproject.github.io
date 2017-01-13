@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OPEN PEN LIST
- tag | EN
+ label | {::nomarkdown}RMPR OPEN PEN LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9LST](http://code.osehra.org/dox/Routine_RMPR9LST_source.html)
- return value type | GLOBAL ARRAY
- description | T his procedure retrieves the list of the main purchasing grid, file (3668).No Input Parameters besides SITE needed.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}T his procedure retrieves the list of the main purchasing grid, file (3668).No Input Parameters besides SITE needed.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

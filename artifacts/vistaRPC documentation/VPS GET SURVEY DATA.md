@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET SURVEY DATA
- tag | GETRPC
+ label | {::nomarkdown}VPS GET SURVEY DATA{:/}
+ tag | {::nomarkdown}GETRPC{:/}
  routine | [VPSSRVY2](http://code.osehra.org/dox/Routine_VPSSRVY2_source.html)
- return value type | GLOBAL ARRAY
- description | Retrieves an array containing the patient's Clinical Survey information.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Retrieves an array containing the patient's Clinical Survey information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSPID | LITERAL | 25 | true | Patient ID such as the patient SSN OR DFN OR ICN OR VIC/CACfor whom the Clinical Questionnaire information is beingrequested. | 
-| VPSQIEN | LITERAL | 9 |  | Questionnaire IEN for filtering the results. | 
-| VPSQNM | LITERAL | 60 |  | Questionnaire Name for filtering the results. | 
-| VPSFDT | LITERAL | 14 |  | Date From for filtering the results | 
-| VPSTDT | LITERAL | 14 |  | Date To for filtering the results | 
-| VPSNUM | LITERAL | 4 |  | Maxumum number of occurrences to return. | 
-| VPSTYP | LITERAL | 7 | true | Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC. | 
+| {::nomarkdown}VPSPID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID such as the patient SSN OR DFN OR ICN OR VIC/CACfor whom the Clinical Questionnaire information is beingrequested.{:/} | 
+| {::nomarkdown}VPSQIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} |  | {::nomarkdown}Questionnaire IEN for filtering the results.{:/} | 
+| {::nomarkdown}VPSQNM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} |  | {::nomarkdown}Questionnaire Name for filtering the results.{:/} | 
+| {::nomarkdown}VPSFDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} |  | {::nomarkdown}Date From for filtering the results{:/} | 
+| {::nomarkdown}VPSTDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} |  | {::nomarkdown}Date To for filtering the results{:/} | 
+| {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} |  | {::nomarkdown}Maxumum number of occurrences to return.{:/} | 
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

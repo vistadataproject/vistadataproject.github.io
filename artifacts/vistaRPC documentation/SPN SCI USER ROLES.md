@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN SCI USER ROLES
- tag | COL
+ label | {::nomarkdown}SPN SCI USER ROLES{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPSR](http://code.osehra.org/dox/Routine_SPNJRPSR_source.html)
- return value type | GLOBAL ARRAY
- description | Returns SCI Roles for all SCI NEW PERSON entries.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns SCI Roles for all SCI NEW PERSON entries.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

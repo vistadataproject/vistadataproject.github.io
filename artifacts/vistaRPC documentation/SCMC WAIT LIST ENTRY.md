@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC WAIT LIST ENTRY
- tag | WAIT
+ label | {::nomarkdown}SCMC WAIT LIST ENTRY{:/}
+ tag | {::nomarkdown}WAIT{:/}
  routine | [SCMCWAIT](http://code.osehra.org/dox/Routine_SCMCWAIT_source.html)
- return value type | ARRAY
- description | Place patient on Wait List
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Place patient on Wait List{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

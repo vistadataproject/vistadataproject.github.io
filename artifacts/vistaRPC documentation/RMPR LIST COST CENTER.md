@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR LIST COST CENTER
- tag | END
+ label | {::nomarkdown}RMPR LIST COST CENTER{:/}
+ tag | {::nomarkdown}END{:/}
  routine | [RMPR9AUT](http://code.osehra.org/dox/Routine_RMPR9AUT_source.html)
- return value type | ARRAY
- description | RPC to list all available Cost Center(s) for a given fud control point.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to list all available Cost Center(s) for a given fud control point.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

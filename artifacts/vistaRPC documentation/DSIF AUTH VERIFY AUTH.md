@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF AUTH VERIFY AUTH
- tag | VERIFY
+ label | {::nomarkdown}DSIF AUTH VERIFY AUTH{:/}
+ tag | {::nomarkdown}VERIFY{:/}
  routine | [DSIFENA3](http://code.osehra.org/dox/Routine_DSIFENA3_source.html)
- return value type | SINGLE VALUE
- description | Look to see if a patient has a valid authorization and if it has payments against it.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Look to see if a patient has a valid authorization and if it has payments against it.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 25 | true | Patient IEN | 
-| AUTH IEN | LITERAL | 25 | true | Internal Number of the Authorization | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN{:/} | 
+| {::nomarkdown}AUTH IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Number of the Authorization{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

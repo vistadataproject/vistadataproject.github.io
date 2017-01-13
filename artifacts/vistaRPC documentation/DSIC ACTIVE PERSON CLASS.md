@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC ACTIVE PERSON CLASS
- tag | PER
+ label | {::nomarkdown}DSIC ACTIVE PERSON CLASS{:/}
+ tag | {::nomarkdown}PER{:/}
  routine | [DSICDUZ](http://code.osehra.org/dox/Routine_DSICDUZ_source.html)
- return value type | SINGLE VALUE
- description | This will return a user's active person class for a given date.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will return a user's active person class for a given date.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL | 15 | true | This is the user's DUZ value whose active person class is desired. | 
-| DATE | LITERAL | 14 | true | This is a Fileman date.time for the date to check for an active person class membership. | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the user's DUZ value whose active person class is desired.{:/} | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a Fileman date.time for the date to check for an active person class membership.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

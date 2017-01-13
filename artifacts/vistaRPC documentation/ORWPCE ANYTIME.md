@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE ANYTIME
- tag | ANYTIME
+ label | {::nomarkdown}ORWPCE ANYTIME{:/}
+ tag | {::nomarkdown}ANYTIME{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE if encounters can be entered at any time
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE if encounters can be entered at any time{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

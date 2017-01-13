@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET COVER PAGE INFO
- tag | CP
+ label | {::nomarkdown}DENTV GET COVER PAGE INFO{:/}
+ tag | {::nomarkdown}CP{:/}
  routine | [DENTVTP0](http://code.osehra.org/dox/Routine_DENTVTP0_source.html)
- return value type | GLOBAL ARRAY
- description | Returns demographic, case management and recent dental activity data for the Cover Page in DRM Plus.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns demographic, case management and recent dental activity data for the Cover Page in DRM Plus.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | Contains the patient dfn. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the patient dfn.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MD TMDENCOUNTER
- tag | GETENC
+ label | {::nomarkdown}MD TMDENCOUNTER{:/}
+ tag | {::nomarkdown}GETENC{:/}
  routine | [MDRPCW1](http://code.osehra.org/dox/Routine_MDRPCW1_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure will return the existing data in an encounter.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure will return the existing data in an encounter.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STUDY | REFERENCE |  | true | This is the CP Study internal entry number. | 
+| {::nomarkdown}STUDY{:/} | {::nomarkdown}REFERENCE{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the CP Study internal entry number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

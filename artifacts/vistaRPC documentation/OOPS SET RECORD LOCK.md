@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS SET RECORD LOCK
- tag | SETLCK
+ label | {::nomarkdown}OOPS SET RECORD LOCK{:/}
+ tag | {::nomarkdown}SETLCK{:/}
  routine | [OOPSGUI3](http://code.osehra.org/dox/Routine_OOPSGUI3_source.html)
- return value type | SINGLE VALUE
- description | This broker call attempt to lock the record and if not successful, returns a message indicating that the record is in use by another user.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This broker call attempt to lock the record and if not successful, returns a message indicating that the record is in use by another user.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 20 | true | This is the ASISTS Internal Record Number that will be used to lock the record. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the ASISTS Internal Record Number that will be used to lock the record.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

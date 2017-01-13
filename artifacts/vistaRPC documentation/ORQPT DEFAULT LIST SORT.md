@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT DEFAULT LIST SORT
- tag | DEFSORT
+ label | {::nomarkdown}ORQPT DEFAULT LIST SORT{:/}
+ tag | {::nomarkdown}DEFSORT{:/}
  routine | [ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
- return value type | SINGLE VALUE
- description | Returns the current user's default patient selection list SORT ORDERsetting.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the current user's default patient selection list SORT ORDERsetting.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

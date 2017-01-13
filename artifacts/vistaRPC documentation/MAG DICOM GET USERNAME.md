@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET USERNAME
- tag | USERNAME
+ label | {::nomarkdown}MAG DICOM GET USERNAME{:/}
+ tag | {::nomarkdown}USERNAME{:/}
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
- return value type | SINGLE VALUE
- description | Returns the name of the user.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the name of the user.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

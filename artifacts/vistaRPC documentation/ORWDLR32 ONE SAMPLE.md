@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 ONE SAMPLE
- tag | ONESAMP
+ label | {::nomarkdown}ORWDLR32 ONE SAMPLE{:/}
+ tag | {::nomarkdown}ONESAMP{:/}
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
- return value type | ARRAY
- description | Returns data for one collection sample in the format:     n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns data for one collection sample in the format:     n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| COLL SAMP IEN | LITERAL | 32 | true |  | 
+| {::nomarkdown}COLL SAMP IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

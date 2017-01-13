@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH EDIT
- tag | EDITBAT
+ label | {::nomarkdown}DSIF BATCH EDIT{:/}
+ tag | {::nomarkdown}EDITBAT{:/}
  routine | [DSIFBAT4](http://code.osehra.org/dox/Routine_DSIFBAT4_source.html)
- return value type | SINGLE VALUE
- description | Used to edit an existing batch in Fee BasisReturns 1^edit successfull or-1^error message
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to edit an existing batch in Fee BasisReturns 1^edit successfull or-1^error message{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBIN | LIST | 999 | true | Pass in an array formatted as follows:  ; FBIN(.01)=BATCH NUMBER ; FBIN(1)=OBLIGATION NUMBER  (DO NOT SEND STATION NUMBER WITH OBLIGATION \500-C09045\, PASS ONLY \C09045\) ; FBIN(3)=DATE OPENED | 
+| {::nomarkdown}FBIN{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in an array formatted as follows:  ; FBIN(.01)=BATCH NUMBER ; FBIN(1)=OBLIGATION NUMBER  (DO NOT SEND STATION NUMBER WITH OBLIGATION \500-C09045\, PASS ONLY \C09045\) ; FBIN(3)=DATE OPENED{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

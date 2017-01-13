@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA NEW IF NONE
- tag | NEWN
+ label | {::nomarkdown}NUPA NEW IF NONE{:/}
+ tag | {::nomarkdown}NEWN{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Adds a new entry to a file, if that entry did not previously exist.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Adds a new entry to a file, if that entry did not previously exist.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIC | LITERAL |  | true | File to add the entry to. | 
-| ENTRY | LITERAL |  | true | Entry to add to the file. | 
-| SCREEN | LITERAL |  | true | Lookup screen. | 
+| {::nomarkdown}DIC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}File to add the entry to.{:/} | 
+| {::nomarkdown}ENTRY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Entry to add to the file.{:/} | 
+| {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Lookup screen.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

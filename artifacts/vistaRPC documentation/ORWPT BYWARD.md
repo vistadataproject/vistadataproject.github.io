@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT BYWARD
- tag | BYWARD
+ label | {::nomarkdown}ORWPT BYWARD{:/}
+ tag | {::nomarkdown}BYWARD{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns a list of patients currently residing on a specified wardlocation.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients currently residing on a specified wardlocation.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

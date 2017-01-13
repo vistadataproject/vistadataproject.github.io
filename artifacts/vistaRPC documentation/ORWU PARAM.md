@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU PARAM
- tag | PARAM
+ label | {::nomarkdown}ORWU PARAM{:/}
+ tag | {::nomarkdown}PARAM{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | SINGLE VALUE
- description | Simple call to return a parameter value.  The call assumes the currentuser, 'defaultable' entities, and one instance.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Simple call to return a parameter value.  The call assumes the currentuser, 'defaultable' entities, and one instance.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

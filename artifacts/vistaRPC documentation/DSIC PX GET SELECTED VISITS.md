@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC PX GET SELECTED VISITS
- tag | SEL
+ label | {::nomarkdown}DSIC PX GET SELECTED VISITS{:/}
+ tag | {::nomarkdown}SEL{:/}
  routine | [DSICPX3](http://code.osehra.org/dox/Routine_DSICPX3_source.html)
- return value type | GLOBAL ARRAY
- description | This will return information on selected visits for a patient based upon the screening factors.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This will return information on selected visits for a patient based upon the screening factors.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LIST | 256 | true | Setup up Parm.Mult['\sub\'] := value   or DATA(SUB)=value     sub     description  --------  ------------------------------------------------  DFN       pointer to the PATIENT file (#2)  SDT       in external format or FM format  EDT       in external format or FM format  LOC       pointer to Hospital Location (#44)  ENCTYPE   string of encounter types wanted set of codes from              ^DD(9000010,15003)  NENCTYPE  string of encounter types not wanted set of codes from              ^DD(9000010,15003)  SERVCAT   string of service categories to include set of codes from              ^DD(9000010,.07)  NSERVCAT  string of service categories not to include set of codes from              ^DD(9000010,.07)  MAX       maximum number of entries to return starting with end date and              going backwards | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Setup up Parm.Mult['\sub\'] := value   or DATA(SUB)=value     sub     description  --------  ------------------------------------------------  DFN       pointer to the PATIENT file (#2)  SDT       in external format or FM format  EDT       in external format or FM format  LOC       pointer to Hospital Location (#44)  ENCTYPE   string of encounter types wanted set of codes from              ^DD(9000010,15003)  NENCTYPE  string of encounter types not wanted set of codes from              ^DD(9000010,15003)  SERVCAT   string of service categories to include set of codes from              ^DD(9000010,.07)  NSERVCAT  string of service categories not to include set of codes from              ^DD(9000010,.07)  MAX       maximum number of entries to return starting with end date and              going backwards{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD USER PARAMETERS
- tag | USRPARAM
+ label | {::nomarkdown}KMPD USER PARAMETERS{:/}
+ tag | {::nomarkdown}USRPARAM{:/}
  routine | [KMPDU6](http://code.osehra.org/dox/Routine_KMPDU6_source.html)
- return value type | ARRAY
- description | Set/Get gui option info.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Set/Get gui option info.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DUZ | LITERAL | 35 | true | User's DUZ. | 
-| TYPE | LITERAL | 5 | true | Type of call: 1 - get option info              2 - set option info | 
-| OPTION | LIST | 256 | true |  | 
+| {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}User's DUZ.{:/} | 
+| {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Type of call: 1 - get option info              2 - set option info{:/} | 
+| {::nomarkdown}OPTION{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

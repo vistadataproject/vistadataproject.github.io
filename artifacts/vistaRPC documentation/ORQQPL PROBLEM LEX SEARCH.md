@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL PROBLEM LEX SEARCH
- tag | LEXSRCH
+ label | {::nomarkdown}ORQQPL PROBLEM LEX SEARCH{:/}
+ tag | {::nomarkdown}LEXSRCH{:/}
  routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
- return value type | ARRAY
- description | Get a list from clinical lexicon for display in list or combo box
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get a list from clinical lexicon for display in list or combo box{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FLAG | LITERAL |  |  | BACK/FORE FLAG | 
-| NUM | LITERAL |  |  | MAX NUMBER OF LIST ELEMENTS | 
+| {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}BACK/FORE FLAG{:/} | 
+| {::nomarkdown}NUM{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}MAX NUMBER OF LIST ELEMENTS{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

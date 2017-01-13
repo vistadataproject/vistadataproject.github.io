@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM EDUCATION TOPIC
- tag | EDU
+ label | {::nomarkdown}PXRM EDUCATION TOPIC{:/}
+ tag | {::nomarkdown}EDU{:/}
  routine | [PXRMRPCB](http://code.osehra.org/dox/Routine_PXRMRPCB_source.html)
- return value type | ARRAY
- description |  Detailed description of education topic
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Detailed description of education topic{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| EDUCATION TOPIC ID | LITERAL | 16 | true | Education topic (ien) from EDUCATION TOPIC file [#9999999.09] | 
+| {::nomarkdown}EDUCATION TOPIC ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Education topic (ien) from EDUCATION TOPIC file [#9999999.09]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

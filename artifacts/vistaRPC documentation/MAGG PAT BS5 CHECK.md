@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG PAT BS5 CHECK
- tag | BS5CHK
+ label | {::nomarkdown}MAGG PAT BS5 CHECK{:/}
+ tag | {::nomarkdown}BS5CHK{:/}
  routine | [MAGGTPT1](http://code.osehra.org/dox/Routine_MAGGTPT1_source.html)
- return value type | ARRAY
- description | This RPC calls the GUIBS5A^DPTLK6 API.  To return a list of Patients ifany match the Last Name and Last 4 SSN of the input DFN.It is the Similiar Patient Check.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC calls the GUIBS5A^DPTLK6 API.  To return a list of Patients ifany match the Last Name and Last 4 SSN of the input DFN.It is the Similiar Patient Check.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDFN | LITERAL | 30 | true | DFN of Patient to check. | 
+| {::nomarkdown}MAGDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN of Patient to check.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

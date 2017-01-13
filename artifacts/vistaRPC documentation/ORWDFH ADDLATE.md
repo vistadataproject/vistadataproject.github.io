@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDFH ADDLATE
- tag | ADDLATE
+ label | {::nomarkdown}ORWDFH ADDLATE{:/}
+ tag | {::nomarkdown}ADDLATE{:/}
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
- return value type | ARRAY
- description | RPC to add a late tray diet order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to add a late tray diet order.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

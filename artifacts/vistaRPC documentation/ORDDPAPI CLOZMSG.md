@@ -9,19 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORDDPAPI CLOZMSG
- tag | CLOZMSG
+ label | {::nomarkdown}ORDDPAPI CLOZMSG{:/}
+ tag | {::nomarkdown}CLOZMSG{:/}
  routine | [ORDDPAPI](http://code.osehra.org/dox/Routine_ORDDPAPI_source.html)
- return value type | WORD PROCESSING
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
  description | 
 
 
-### Method description
-
- property | value 
---- | --- 
 
 
-
-
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

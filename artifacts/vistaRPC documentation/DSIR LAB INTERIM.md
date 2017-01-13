@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR LAB INTERIM
- tag | INTERIM
+ label | {::nomarkdown}DSIR LAB INTERIM{:/}
+ tag | {::nomarkdown}INTERIM{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 50 | true | DFN - Patient Identifier | 
-| DATE1 | LITERAL | 7 | true | DATE1 - Start Date | 
-| DATE2 | LITERAL | 7 | true | DATE2 - End Date | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN - Patient Identifier{:/} | 
+| {::nomarkdown}DATE1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATE1 - Start Date{:/} | 
+| {::nomarkdown}DATE2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATE2 - End Date{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

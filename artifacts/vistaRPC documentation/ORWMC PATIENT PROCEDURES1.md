@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWMC PATIENT PROCEDURES1
- tag | PROD1
+ label | {::nomarkdown}ORWMC PATIENT PROCEDURES1{:/}
+ tag | {::nomarkdown}PROD1{:/}
  routine | [ORWMC](http://code.osehra.org/dox/Routine_ORWMC_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure call returns a list of patient procedures for a specific patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call returns a list of patient procedures for a specific patient.{:/}
 
 
 ### Method description
@@ -21,15 +21,16 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return procedures
- Leading comment lines | RPC: ORWMC PROCEDURES,See RPC definition for details on input and output parameters
+ Leading comment lines | RPC: ORWMC PROCEDURES
+See RPC definition for details on input and output parameters
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of patient in the Patient file [^DPT].{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG GET TIMEOUT
- tag | TIMEOUT
+ label | {::nomarkdown}MAGG GET TIMEOUT{:/}
+ tag | {::nomarkdown}TIMEOUT{:/}
  routine | [MAGGTU6](http://code.osehra.org/dox/Routine_MAGGTU6_source.html)
- return value type | SINGLE VALUE
- description | Called by imaging application to get the Site defined timeout for the Imaging applications. Accepted input is \DISPLAY\, \CAPTURE\, \VISTARAD\, \TELEREADER\,or \IMPORTER\.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Called by imaging application to get the Site defined timeout for the Imaging applications. Accepted input is \DISPLAY\, \CAPTURE\, \VISTARAD\, \TELEREADER\,or \IMPORTER\.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| APP | LITERAL | 255 | true | Either \DISPLAY\, \CAPTURE\, \VISTARAD\, \TELEREADER\,or \IMPORTER\. | 
+| {::nomarkdown}APP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Either \DISPLAY\, \CAPTURE\, \VISTARAD\, \TELEREADER\,or \IMPORTER\.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ GET ADMINISTRATIONS
- tag | ADMINS
+ label | {::nomarkdown}YTQ GET ADMINISTRATIONS{:/}
+ tag | {::nomarkdown}ADMINS{:/}
  routine | [YTQAPI2](http://code.osehra.org/dox/Routine_YTQAPI2_source.html)
- return value type | ARRAY
- description | Returns all MH Administrations for a specified patient.  input : DFN output:AdministrationID=InstrumentName^DateGiven^DateSaved^OrderedBy^AdministeredBy^Signed^IsComplete^NumberOfQuestionsAnswered
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all MH Administrations for a specified patient.  input : DFN output:AdministrationID=InstrumentName^DateGiven^DateSaved^OrderedBy^AdministeredBy^Signed^IsComplete^NumberOfQuestionsAnswered{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

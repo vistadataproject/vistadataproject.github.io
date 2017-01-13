@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ KEYS
- tag | KEY
+ label | {::nomarkdown}YTQ KEYS{:/}
+ tag | {::nomarkdown}KEY{:/}
  routine | [YTQAPI7](http://code.osehra.org/dox/Routine_YTQAPI7_source.html)
- return value type | GLOBAL ARRAY
- description | Get all keys for a specified test           input: CODE as TEST name           output:SCALE=ScaleName^scale Id                        KEY=Question ID^Target^Value^Key Ien 
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Get all keys for a specified test           input: CODE as TEST name           output:SCALE=ScaleName^scale Id                        KEY=Question ID^Target^Value^Key Ien {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

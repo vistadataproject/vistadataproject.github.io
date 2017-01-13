@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL PROVIDER LIST
- tag | PROVSRCH
+ label | {::nomarkdown}ORQQPL PROVIDER LIST{:/}
+ tag | {::nomarkdown}PROVSRCH{:/}
  routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
- return value type | ARRAY
- description | RETURNS ARRAY OF PROVIDERS MATCHING INPUT
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURNS ARRAY OF PROVIDERS MATCHING INPUT{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

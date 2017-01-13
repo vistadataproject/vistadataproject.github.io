@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV GETS
- tag | GETS
+ label | {::nomarkdown}DSIV GETS{:/}
+ tag | {::nomarkdown}GETS{:/}
  routine | [DSIVIC](http://code.osehra.org/dox/Routine_DSIVIC_source.html)
- return value type | ARRAY
- description | Returns details of INSURANCE BUFFER file entry.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns details of INSURANCE BUFFER file entry.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IENS | LITERAL | 16 | true | INSURANCE BUFFER file internal entry number or IENS. | 
-| FIELDS | LITERAL | 240 | true | Field list (optional).  Default is all top-level fields. | 
-| FLAGS | LITERAL | 16 | true | Flags (optional).  Default is external format, omit empty fields. | 
+| {::nomarkdown}IENS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INSURANCE BUFFER file internal entry number or IENS.{:/} | 
+| {::nomarkdown}FIELDS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Field list (optional).  Default is all top-level fields.{:/} | 
+| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flags (optional).  Default is external format, omit empty fields.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

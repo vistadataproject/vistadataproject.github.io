@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR ADD NONCOMP PAT
- tag | ADDNCPR
+ label | {::nomarkdown}DSIR ADD NONCOMP PAT{:/}
+ tag | {::nomarkdown}ADDNCPR{:/}
  routine | [DSIROI0](http://code.osehra.org/dox/Routine_DSIROI0_source.html)
- return value type | ARRAY
- description | Routine for adding or updating an non-computerized patient for ROI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Routine for adding or updating an non-computerized patient for ROI.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAME | LITERAL | 30 | true | This is the patient name. | 
-| SSN | LITERAL | 11 | true | This is the patient Social Security Number | 
-| DOB | LITERAL | 7 | true | This is the date of birth used for unique identification.patient file and the dsir noncomputerized record patient file. | 
-| OVRD | LITERAL | 1 | true | This is a flag (0 or 1) to override/bypass the lookups into xrefs.  If true the RPC will laygo into file 19620.96 without checking for duplicates. | 
-| NCPIEN | LITERAL | 99 | true | This is the desired IEN. If this exists then it is an update not an add. | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient name.{:/} | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}11{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient Social Security Number{:/} | 
+| {::nomarkdown}DOB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the date of birth used for unique identification.patient file and the dsir noncomputerized record patient file.{:/} | 
+| {::nomarkdown}OVRD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a flag (0 or 1) to override/bypass the lookups into xrefs.  If true the RPC will laygo into file 19620.96 without checking for duplicates.{:/} | 
+| {::nomarkdown}NCPIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the desired IEN. If this exists then it is an update not an add.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

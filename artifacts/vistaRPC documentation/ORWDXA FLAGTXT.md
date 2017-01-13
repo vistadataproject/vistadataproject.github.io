@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA FLAGTXT
- tag | FLAGTXT
+ label | {::nomarkdown}ORWDXA FLAGTXT{:/}
+ tag | {::nomarkdown}FLAGTXT{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | Return text associated with a particular flagged order (reason for flag).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return text associated with a particular flagged order (reason for flag).{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

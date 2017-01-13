@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL USER PROB CATS
- tag | CAT
+ label | {::nomarkdown}ORQQPL USER PROB CATS{:/}
+ tag | {::nomarkdown}CAT{:/}
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
- return value type | ARRAY
- description | rETURNS ARRAY OF CATEGORIES FOR USER TO SELECT FROM
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}rETURNS ARRAY OF CATEGORIES FOR USER TO SELECT FROM{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DUZ | LITERAL |  |  | USER ID | 
-| CLINIC | LITERAL |  |  | IFN OF CLINIC | 
+| {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}USER ID{:/} | 
+| {::nomarkdown}CLINIC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IFN OF CLINIC{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

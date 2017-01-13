@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA GET PRESSURE ULCERS
- tag | UL
+ label | {::nomarkdown}NUPA GET PRESSURE ULCERS{:/}
+ tag | {::nomarkdown}UL{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns information on the patient's pressure ulcers for this care plan.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns information on the patient's pressure ulcers for this care plan.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | IEN of the care plan in file 1927.4. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the care plan in file 1927.4.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

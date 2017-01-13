@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB NURS WARDLIST
- tag | NWLIST
+ label | {::nomarkdown}PSB NURS WARDLIST{:/}
+ tag | {::nomarkdown}NWLIST{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | This will return a list of active ward from the NURS LOCATION, file 211.4.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This will return a list of active ward from the NURS LOCATION, file 211.4.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| none |  |  |  |  | 
+| {::nomarkdown}none{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

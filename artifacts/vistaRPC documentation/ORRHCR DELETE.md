@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCR DELETE
- tag | DELETE
+ label | {::nomarkdown}ORRHCR DELETE{:/}
+ tag | {::nomarkdown}DELETE{:/}
  routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
- return value type | SINGLE VALUE
- description | Deletes a user-owned report
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Deletes a user-owned report{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DA number | LITERAL |  | true | The internal number of the report to be deleted. | 
+| {::nomarkdown}DA number{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The internal number of the report to be deleted.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

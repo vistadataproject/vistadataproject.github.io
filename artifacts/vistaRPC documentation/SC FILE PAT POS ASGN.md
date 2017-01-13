@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC FILE PAT POS ASGN
- tag | POSFILE
+ label | {::nomarkdown}SC FILE PAT POS ASGN{:/}
+ tag | {::nomarkdown}POSFILE{:/}
  routine | [SCMCBK](http://code.osehra.org/dox/Routine_SCMCBK_source.html)
- return value type | ARRAY
- description | File patient position assignments in ^TMP(\SC PATIENT LIST\,DFN) globalfor later processing
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}File patient position assignments in ^TMP(\SC PATIENT LIST\,DFN) globalfor later processing{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}LIST ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

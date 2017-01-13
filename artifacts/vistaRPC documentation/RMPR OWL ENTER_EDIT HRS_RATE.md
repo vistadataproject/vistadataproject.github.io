@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL ENTER_EDIT HRS_RATE
- tag | EN2
+ label | {::nomarkdown}RMPR OWL ENTER_EDIT HRS_RATE{:/}
+ tag | {::nomarkdown}EN2{:/}
  routine | [RMPR29MG](http://code.osehra.org/dox/Routine_RMPR29MG_source.html)
- return value type | ARRAY
- description | GUI Order controll processing.  ENTER/EDITTechnisions, Rate of Labor and Hours to 664.3 for the associated work order..
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI Order controll processing.  ENTER/EDITTechnisions, Rate of Labor and Hours to 664.3 for the associated work order..{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

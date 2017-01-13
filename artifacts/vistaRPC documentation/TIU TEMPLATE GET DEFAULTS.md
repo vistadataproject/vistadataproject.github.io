@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE GET DEFAULTS
- tag | GETDFLT
+ label | {::nomarkdown}TIU TEMPLATE GET DEFAULTS{:/}
+ tag | {::nomarkdown}GETDFLT{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | SINGLE VALUE
- description | Returns Default Template Settings
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns Default Template Settings{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

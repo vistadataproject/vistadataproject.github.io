@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN COMM DISCHARGES
- tag | COL
+ label | {::nomarkdown}SPN COMM DISCHARGES{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPCD](http://code.osehra.org/dox/Routine_SPNJRPCD_source.html)
- return value type | GLOBAL ARRAY
- description | Returns Discharge to Community report information.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns Discharge to Community report information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLIST | LIST |  |  | Patient's ICN in list format (ICN^ICN^ICN^ICN^ICN...) | 
-| FDATE | LITERAL |  |  | Date to begin search with. | 
-| TDATE | LITERAL |  |  | Date to end search at. | 
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patient's ICN in list format (ICN^ICN^ICN^ICN^ICN...){:/} | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to begin search with.{:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end search at.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

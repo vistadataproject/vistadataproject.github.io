@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCOM ORDEROBJ
- tag | ORDEROBJ
+ label | {::nomarkdown}ORWCOM ORDEROBJ{:/}
+ tag | {::nomarkdown}ORDEROBJ{:/}
  routine | [ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
- return value type | SINGLE VALUE
- description | Returns COM Objects for order accept
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns COM Objects for order accept{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORGRP | LITERAL |  |  | Display Group IEN | 
+| {::nomarkdown}ORGRP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Display Group IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

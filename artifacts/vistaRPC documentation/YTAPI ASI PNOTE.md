@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTAPI ASI PNOTE
- tag | ASIPN
+ label | {::nomarkdown}YTAPI ASI PNOTE{:/}
+ tag | {::nomarkdown}ASIPN{:/}
  routine | [YTAPI9](http://code.osehra.org/dox/Routine_YTAPI9_source.html)
- return value type | ARRAY
- description | This API creates a Pnote in TIU based on the ASI report.Input required: IEN of file 604, Addiction Severity Index.Output is only to show success or failure of the operation. YSDATA(1)=[DATA]/[ERROR]YSDATA(2)=OK Progress Note created/No Pnote entered
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This API creates a Pnote in TIU based on the ASI report.Input required: IEN of file 604, Addiction Severity Index.Output is only to show success or failure of the operation. YSDATA(1)=[DATA]/[ERROR]YSDATA(2)=OK Progress Note created/No Pnote entered{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

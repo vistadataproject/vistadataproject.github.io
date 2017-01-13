@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC AUTO INACTIVATION RPT
- tag | EN
+ label | {::nomarkdown}SCMC AUTO INACTIVATION RPT{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [SCMCTSKG](http://code.osehra.org/dox/Routine_SCMCTSKG_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

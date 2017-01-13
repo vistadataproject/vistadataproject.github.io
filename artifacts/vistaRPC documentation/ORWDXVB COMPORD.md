@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB COMPORD
- tag | COMPORD
+ label | {::nomarkdown}ORWDXVB COMPORD{:/}
+ tag | {::nomarkdown}COMPORD{:/}
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
- return value type | ARRAY
- description | Get sequence order of Blood Components for selection.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get sequence order of Blood Components for selection.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

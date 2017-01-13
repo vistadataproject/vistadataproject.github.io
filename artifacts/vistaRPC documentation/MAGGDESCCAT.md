@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGDESCCAT
- tag | CATEGORY
+ label | {::nomarkdown}MAGGDESCCAT{:/}
+ tag | {::nomarkdown}CATEGORY{:/}
  routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
- return value type | ARRAY
- description | Returns list of 'MAG DESCRIPTIVE CATEGORIES'.  i.e., NAME^IEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of 'MAG DESCRIPTIVE CATEGORIES'.  i.e., NAME^IEN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

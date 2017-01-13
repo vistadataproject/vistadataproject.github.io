@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQVS DETAIL SUMMARY
- tag | DETSUM
+ label | {::nomarkdown}ORQQVS DETAIL SUMMARY{:/}
+ tag | {::nomarkdown}DETSUM{:/}
  routine | [ORQQVS](http://code.osehra.org/dox/Routine_ORQQVS_source.html)
- return value type | ARRAY
- description | Returns discharge summary for a visit.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns discharge summary for a visit.{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Patient | LITERAL | 16 | true | Patient identifier (DFN) from File #2 (Patient). | 
-| Visit | LITERAL | 16 | true | Visit identifier. | 
+| {::nomarkdown}Patient{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier (DFN) from File #2 (Patient).{:/} | 
+| {::nomarkdown}Visit{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Visit identifier.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

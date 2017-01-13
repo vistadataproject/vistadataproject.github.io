@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV XPAR DEL ALL
- tag | DELALL
+ label | {::nomarkdown}DSIV XPAR DEL ALL{:/}
+ tag | {::nomarkdown}DELALL{:/}
  routine | [DSIVXPR1](http://code.osehra.org/dox/Routine_DSIVXPR1_source.html)
- return value type | SINGLE VALUE
- description | This is used to delete the value for all instances of a parameter for agiven entity
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This is used to delete the value for all instances of a parameter for agiven entity{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL | 250 | true | DATA - required - p1~p2 p1 := optional - entity(s) - if not passed, set to \USR\ for                  current user p2 := required - parameter name | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA - required - p1~p2 p1 := optional - entity(s) - if not passed, set to \USR\ for                  current user p2 := required - parameter name{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC FTEE BUILD LIST
- tag | FTEE
+ label | {::nomarkdown}SC FTEE BUILD LIST{:/}
+ tag | {::nomarkdown}FTEE{:/}
  routine | [SCMCTSK](http://code.osehra.org/dox/Routine_SCMCTSK_source.html)
- return value type | ARRAY
- description | Return List of Positions and FTEE values for  Active Team
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return List of Positions and FTEE values for  Active Team{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEAM | LITERAL |  | true | Internal Team Number | 
+| {::nomarkdown}TEAM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal Team Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

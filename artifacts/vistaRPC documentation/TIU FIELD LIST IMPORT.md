@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD LIST IMPORT
- tag | LIMPORT
+ label | {::nomarkdown}TIU FIELD LIST IMPORT{:/}
+ tag | {::nomarkdown}LIMPORT{:/}
  routine | [TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
- return value type | ARRAY
- description | Calls the import process for a pre-loaded (into ^TMP) list of templatefields.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Calls the import process for a pre-loaded (into ^TMP) list of templatefields.{:/}
 
 
 ### Method description
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Calls the import process to import all of the fields in the
- Leading comment lines | ^TMP global for this process.  Result contains a list of NAME^X^RENAME,strings.
+ Leading comment lines | ^TMP global for this process.  Result contains a list of NAME^X^RENAME
+strings.
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

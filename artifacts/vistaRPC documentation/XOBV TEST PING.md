@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBV TEST PING
- tag | PINGRP
+ label | {::nomarkdown}XOBV TEST PING{:/}
+ tag | {::nomarkdown}PINGRP{:/}
  routine | [XOBVLT](http://code.osehra.org/dox/Routine_XOBVLT_source.html)
- return value type | SINGLE VALUE
- description | This simple RPC takes no input and returns a success message. This is the primary mechanism to test whether the client successfully connects toan M server using VistALink.                                      This RPC is used as part of the test and learning application distributedas part of VistALink.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This simple RPC takes no input and returns a success message. This is the primary mechanism to test whether the client successfully connects toan M server using VistALink.                                      This RPC is used as part of the test and learning application distributedas part of VistALink.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

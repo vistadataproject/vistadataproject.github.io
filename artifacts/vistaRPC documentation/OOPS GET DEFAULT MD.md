@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET DEFAULT MD
- tag | DEFMD
+ label | {::nomarkdown}OOPS GET DEFAULT MD{:/}
+ tag | {::nomarkdown}DEFMD{:/}
  routine | [OOPSGUI2](http://code.osehra.org/dox/Routine_OOPSGUI2_source.html)
- return value type | ARRAY
- description | This call will return the Default Medical Doctor information based on an IENin the ASISTS 2260 file being passed in. The information returned is from thefile 2262.  
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call will return the Default Medical Doctor information based on an IENin the ASISTS 2260 file being passed in. The information returned is from thefile 2262.  {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | This input value must be a valid IEN from the ASISTS 2260 file. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This input value must be a valid IEN from the ASISTS 2260 file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

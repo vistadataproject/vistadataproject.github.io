@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM IMPORTER DELETE
- tag | DELETE
+ label | {::nomarkdown}MAG DICOM IMPORTER DELETE{:/}
+ tag | {::nomarkdown}DELETE{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | ARRAY
- description | This RPC is used by the DICOM Gateway to delete an entry in file IMPORTABLEDICOM OBJECTS (#2006.5752).  The entry to be deleted must match the Hostname,OLDPATH (Gateway), and the image UID.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used by the DICOM Gateway to delete an entry in file IMPORTABLEDICOM OBJECTS (#2006.5752).  The entry to be deleted must match the Hostname,OLDPATH (Gateway), and the image UID.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MACHID | LITERAL | 30 | true | This is the hostname of the DICOM Imaging Gateway running the Importer application. | 
-| FILEPATH | LITERAL | 30 | true | This is the path of the DICOM image file being deleted. | 
-| IMAGEUID | LITERAL | 30 | true | This is the image's SOP Instance UID. | 
+| {::nomarkdown}MACHID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the hostname of the DICOM Imaging Gateway running the Importer application.{:/} | 
+| {::nomarkdown}FILEPATH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the path of the DICOM image file being deleted.{:/} | 
+| {::nomarkdown}IMAGEUID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the image's SOP Instance UID.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

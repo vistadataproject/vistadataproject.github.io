@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWLR REPORT LISTS
- tag | LIST
+ label | {::nomarkdown}ORWLR REPORT LISTS{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure call returns a list of lab cumulative sections,and date ranges that can be displayed at the workstation.There are no input parameters fo this rpc.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call returns a list of lab cumulative sections,and date ranges that can be displayed at the workstation.There are no input parameters fo this rpc.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

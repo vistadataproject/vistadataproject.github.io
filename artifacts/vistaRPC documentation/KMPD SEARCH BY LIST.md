@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD SEARCH BY LIST
- tag | SBLIST
+ label | {::nomarkdown}KMPD SEARCH BY LIST{:/}
+ tag | {::nomarkdown}SBLIST{:/}
  routine | [KMPDU7](http://code.osehra.org/dox/Routine_KMPDU7_source.html)
- return value type | GLOBAL ARRAY
- description | Search By list.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Search By list.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LISTTYPE | LITERAL | 5 | true | 2 - client name3 - ip address | 
-| SUBSCRIPT | LITERAL | 30 | true | Subscript (free text)Ex: \ORWCV\ | 
-| DATAGLOBAL | LITERAL | 30 | true | Global containing data.Ex: ^TMP($J) | 
+| {::nomarkdown}LISTTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}2 - client name3 - ip address{:/} | 
+| {::nomarkdown}SUBSCRIPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Subscript (free text)Ex: \ORWCV\{:/} | 
+| {::nomarkdown}DATAGLOBAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Global containing data.Ex: ^TMP($J){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

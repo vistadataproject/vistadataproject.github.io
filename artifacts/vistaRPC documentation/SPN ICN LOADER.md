@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN ICN LOADER
- tag | COL
+ label | {::nomarkdown}SPN ICN LOADER{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPIL](http://code.osehra.org/dox/Routine_SPNJRPIL_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the appropriate ICNs for every DFN that is requested. 
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the appropriate ICNs for every DFN that is requested. {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFNLST | LIST |  |  | Patients DFN in list format (DFN^DFN^DFN^DFN^DFN...) | 
+| {::nomarkdown}DFNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patients DFN in list format (DFN^DFN^DFN^DFN^DFN...){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

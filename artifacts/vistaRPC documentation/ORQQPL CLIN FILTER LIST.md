@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL CLIN FILTER LIST
- tag | GETCLIN
+ label | {::nomarkdown}ORQQPL CLIN FILTER LIST{:/}
+ tag | {::nomarkdown}GETCLIN{:/}
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
- return value type | ARRAY
- description | rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

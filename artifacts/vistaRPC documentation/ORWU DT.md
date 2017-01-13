@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU DT
- tag | DT
+ label | {::nomarkdown}ORWU DT{:/}
+ tag | {::nomarkdown}DT{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | SINGLE VALUE
- description | Returns date in internal VA FileMan format.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns date in internal VA FileMan format.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

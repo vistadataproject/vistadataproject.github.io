@@ -9,27 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM DIALOG PROMPTS
- tag | PROMPT
+ label | {::nomarkdown}ORQQPXRM DIALOG PROMPTS{:/}
+ tag | {::nomarkdown}PROMPT{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Additional prompts for a given dialog element
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Additional prompts for a given dialog element{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIALOG ELEMENT IEN | LITERAL | 16 | true | Reminder dialog element identifier (ien) from REMINDER DIALOG file[#801.41] | 
-| CURRENT/HISTORICAL | LITERAL | 16 |  | Used only for taxonomy dialogs.     0 - Current Diagnosis/Procedure  1 - Historical Diagnosis/Procedure | 
-| DIALOG LINE CPT/POV | LITERAL | 3 |  | For taxonomy dialog the type of finding (POV/CPT) for this dialog line | 
+| {::nomarkdown}DIALOG ELEMENT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reminder dialog element identifier (ien) from REMINDER DIALOG file[#801.41]{:/} | 
+| {::nomarkdown}CURRENT/HISTORICAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}Used only for taxonomy dialogs.     0 - Current Diagnosis/Procedure  1 - Historical Diagnosis/Procedure{:/} | 
+| {::nomarkdown}DIALOG LINE CPT/POV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} |  | {::nomarkdown}For taxonomy dialog the type of finding (POV/CPT) for this dialog line{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

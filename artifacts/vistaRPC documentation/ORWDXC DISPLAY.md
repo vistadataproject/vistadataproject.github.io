@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXC DISPLAY
- tag | DISPLAY
+ label | {::nomarkdown}ORWDXC DISPLAY{:/}
+ tag | {::nomarkdown}DISPLAY{:/}
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
- return value type | ARRAY
- description | Return list of Order Checks for a FillerID (namespace).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of Order Checks for a FillerID (namespace).{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

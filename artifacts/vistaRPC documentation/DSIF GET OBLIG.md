@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF GET OBLIG
- tag | GETOBLIG
+ label | {::nomarkdown}DSIF GET OBLIG{:/}
+ tag | {::nomarkdown}GETOBLIG{:/}
  routine | [DSIFBAT5](http://code.osehra.org/dox/Routine_DSIFBAT5_source.html)
- return value type | GLOBAL ARRAY
- description | Used to return a list of obligations based upon Control point and number of years past to return.  Example, control point 038 with 2 years, will return all obligations from control point 038 from today - two years to today on error returns -1^error message
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Used to return a list of obligations based upon Control point and number of years past to return.  Example, control point 038 with 2 years, will return all obligations from control point 038 from today - two years to today on error returns -1^error message{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FUND CONTROL POINT | LITERAL | 99 | true | Pass in the control point used to return current obligations. | 
-| FBYEAR | LITERAL | 4 | true | Years to search for existing obligations, default is current year and last year.  If you input 3 it will display current year and go back 3 years. | 
+| {::nomarkdown}FUND CONTROL POINT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in the control point used to return current obligations.{:/} | 
+| {::nomarkdown}FBYEAR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Years to search for existing obligations, default is current year and last year.  If you input 3 it will display current year and go back 3 years.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

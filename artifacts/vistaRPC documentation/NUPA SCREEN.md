@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA SCREEN
- tag | SCREEN
+ label | {::nomarkdown}NUPA SCREEN{:/}
+ tag | {::nomarkdown}SCREEN{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Allows M code to be executed from inside a Delphi program.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Allows M code to be executed from inside a Delphi program.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CODE | LITERAL |  | true | Code to execute.  If you set variable NUPa to a result, it will be pulled back into the assessment GUI. Code can be: S NUPA=$$D(^DPT(DFN)) D TAG^ROUTINE | 
+| {::nomarkdown}CODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Code to execute.  If you set variable NUPa to a result, it will be pulled back into the assessment GUI. Code can be: S NUPA=$$D(^DPT(DFN)) D TAG^ROUTINE{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

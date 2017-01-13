@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG ON
- tag | LOGON
+ label | {::nomarkdown}MHV LOG ON{:/}
+ tag | {::nomarkdown}LOGON{:/}
  routine | [MHVUL1](http://code.osehra.org/dox/Routine_MHVUL1_source.html)
- return value type | SINGLE VALUE
- description | Turns on MHV application logging.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Turns on MHV application logging.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DTM | LITERAL | 15 | true | Purge Date/Time.Defaults to Today + 30. | 
+| {::nomarkdown}DTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Purge Date/Time.Defaults to Today + 30.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

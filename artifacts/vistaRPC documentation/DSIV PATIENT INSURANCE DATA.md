@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV PATIENT INSURANCE DATA
- tag | INSUR
+ label | {::nomarkdown}DSIV PATIENT INSURANCE DATA{:/}
+ tag | {::nomarkdown}INSUR{:/}
  routine | [DSIVIC3](http://code.osehra.org/dox/Routine_DSIVIC3_source.html)
- return value type | ARRAY
- description | Wraps $$INSUR^IBBAPI to return insurance data for patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Wraps $$INSUR^IBBAPI to return insurance data for patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | Patient internal entry number. | 
-| FMDT | LITERAL | 14 | true | Date insured (default is today). | 
-| FILTER | LITERAL | 8 | true | Status codes specifying results to be included or excluded. | 
-| FIELDS | LITERAL | 80 | true | List of fields to be returned (default is all). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient internal entry number.{:/} | 
+| {::nomarkdown}FMDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date insured (default is today).{:/} | 
+| {::nomarkdown}FILTER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Status codes specifying results to be included or excluded.{:/} | 
+| {::nomarkdown}FIELDS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of fields to be returned (default is all).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

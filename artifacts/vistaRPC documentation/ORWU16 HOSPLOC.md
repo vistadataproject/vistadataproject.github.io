@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU16 HOSPLOC
- tag | HOSPLOC
+ label | {::nomarkdown}ORWU16 HOSPLOC{:/}
+ tag | {::nomarkdown}HOSPLOC{:/}
  routine | [ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

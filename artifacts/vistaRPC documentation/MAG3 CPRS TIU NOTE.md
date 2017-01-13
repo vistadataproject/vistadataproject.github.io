@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 CPRS TIU NOTE
- tag | IMAGES
+ label | {::nomarkdown}MAG3 CPRS TIU NOTE{:/}
+ tag | {::nomarkdown}IMAGES{:/}
  routine | [MAGGNTI](http://code.osehra.org/dox/Routine_MAGGNTI_source.html)
- return value type | ARRAY
- description | Returns a list of all images for a TIU document.for a TIU document
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all images for a TIU document.for a TIU document{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL | 30 | true | Internal entry number of document i.e.  ^TIU(8925,TIUDA | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of document i.e.  ^TIU(8925,TIUDA{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

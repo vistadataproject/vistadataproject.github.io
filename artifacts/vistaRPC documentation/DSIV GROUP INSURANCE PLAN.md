@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV GROUP INSURANCE PLAN
- tag | GRPPOL
+ label | {::nomarkdown}DSIV GROUP INSURANCE PLAN{:/}
+ tag | {::nomarkdown}GRPPOL{:/}
  routine | [DSIVIC](http://code.osehra.org/dox/Routine_DSIVIC_source.html)
- return value type | ARRAY
- description | Looks up Group Insurance Plan name and returns match or matchesor error message.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Looks up Group Insurance Plan name and returns match or matchesor error message.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAME | LITERAL | 30 | true | Group Insurance Plan name to match. | 
-| FIELDS | LITERAL | 245 |  | Field list to return in standard FileMan format.  Defaults to     \@;.03;.01I;.01\ | 
-| VDT | LITERAL | 14 |  | Visit Date.Time for policy limitations (coverage) data.Defaults to TODAY. | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Group Insurance Plan name to match.{:/} | 
+| {::nomarkdown}FIELDS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} |  | {::nomarkdown}Field list to return in standard FileMan format.  Defaults to     \@;.03;.01I;.01\{:/} | 
+| {::nomarkdown}VDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} |  | {::nomarkdown}Visit Date.Time for policy limitations (coverage) data.Defaults to TODAY.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

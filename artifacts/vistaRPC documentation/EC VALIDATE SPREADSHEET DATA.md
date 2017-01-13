@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC VALIDATE SPREADSHEET DATA
- tag | IN
+ label | {::nomarkdown}EC VALIDATE SPREADSHEET DATA{:/}
+ tag | {::nomarkdown}IN{:/}
  routine | [ECV1RPC](http://code.osehra.org/dox/Routine_ECV1RPC_source.html)
- return value type | ARRAY
- description | This RPC validates EC spreadsheet data and returns an array containing error messages
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC validates EC spreadsheet data and returns an array containing error messages{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECDATA | LITERAL |  | true | This is a row of data in the spreadsheet | 
+| {::nomarkdown}ECDATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a row of data in the spreadsheet{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

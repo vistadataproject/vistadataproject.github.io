@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DDR FILER
- tag | FILEC
+ label | {::nomarkdown}DDR FILER{:/}
+ tag | {::nomarkdown}FILEC{:/}
  routine | [DDR3](http://code.osehra.org/dox/Routine_DDR3_source.html)
- return value type | ARRAY
- description | Generic call to file edits into FM file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Generic call to file edits into FM file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| EDIT RESULTS | LIST | 512 | true | Results of editing to be placed in FDA array by broker. | 
-| EDIT MODE | LITERAL | 3 | true | Is processing in edit or add data mode. | 
+| {::nomarkdown}EDIT RESULTS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Results of editing to be placed in FDA array by broker.{:/} | 
+| {::nomarkdown}EDIT MODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Is processing in edit or add data mode.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,7 +9,7 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS DELETE SITEP STATION
+ label | {::nomarkdown}OOPS DELETE SITEP STATION{:/}
  tag | 
  routine | 
  return value type | 
@@ -18,4 +18,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

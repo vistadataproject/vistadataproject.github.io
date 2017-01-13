@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROIR PRL PAT REQUEST LIST
- tag | PRL
+ label | {::nomarkdown}DSIROIR PRL PAT REQUEST LIST{:/}
+ tag | {::nomarkdown}PRL{:/}
  routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC returns a list of all internal entry numbers from file 19620 for a specified patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of all internal entry numbers from file 19620 for a specified patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STDT | LITERAL | 7 | true | This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date. | 
-| ENDT | LITERAL | 7 | true | The last date to searc for a request IEN for the selected patient. | 
-| PAT | LITERAL | 99 | true | DFN of the selected patient. | 
+| {::nomarkdown}STDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the FileMan date the report should stop counting.  If null the report will count all records from the start date thru the current date.{:/} | 
+| {::nomarkdown}ENDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The last date to searc for a request IEN for the selected patient.{:/} | 
+| {::nomarkdown}PAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN of the selected patient.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

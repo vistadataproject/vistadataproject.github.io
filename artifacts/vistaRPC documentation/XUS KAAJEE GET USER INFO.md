@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS KAAJEE GET USER INFO
- tag | USERINFO
+ label | {::nomarkdown}XUS KAAJEE GET USER INFO{:/}
+ tag | {::nomarkdown}USERINFO{:/}
  routine | [XUSKAAJ](http://code.osehra.org/dox/Routine_XUSKAAJ_source.html)
- return value type | ARRAY
- description | Returns a variety of information needed for the KAAJEE logon.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a variety of information needed for the KAAJEE logon.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLIENT-IP | LITERAL |  | true | IP address of the client workstation, used for logging (signon log)and IP blocking (failed access attempts). | 
-| SERVER-NM | LITERAL |  | true | Identifying name for the calling application or server,used for logging (signon log). | 
+| {::nomarkdown}CLIENT-IP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IP address of the client workstation, used for logging (signon log)and IP blocking (failed access attempts).{:/} | 
+| {::nomarkdown}SERVER-NM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifying name for the calling application or server,used for logging (signon log).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

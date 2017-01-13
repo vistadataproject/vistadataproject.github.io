@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI LISTSPCLCONSID
- tag | LSTSC
+ label | {::nomarkdown}DVBA CAPRI LISTSPCLCONSID{:/}
+ tag | {::nomarkdown}LSTSC{:/}
  routine | [DVBACPR1](http://code.osehra.org/dox/Routine_DVBACPR1_source.html)
- return value type | ARRAY
- description | This RPC returns an array (listing) of valid special considerations that can be linked to a 2507 request.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns an array (listing) of valid special considerations that can be linked to a 2507 request.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

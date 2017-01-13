@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU DETAILED DISPLAY
- tag | RPC
+ label | {::nomarkdown}TIU DETAILED DISPLAY{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [TIUSRV](http://code.osehra.org/dox/Routine_TIUSRV_source.html)
- return value type | GLOBAL ARRAY
- description | Gets details for display of a given record.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Gets details for display of a given record.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | This is the record number (IEN) in the TIU Document File (#8925). | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (IEN) in the TIU Document File (#8925).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EDPGLOB RPC
- tag | RPC
+ label | {::nomarkdown}EDPGLOB RPC{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [EDPGLOB](http://code.osehra.org/dox/Routine_EDPGLOB_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC acts as the \front controller\ for laboratory data calls. The RPC uses the parameters passed in to gather lab data for a given patient, and return the data in XML format.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC acts as the \front controller\ for laboratory data calls. The RPC uses the parameters passed in to gather lab data for a given patient, and return the data in XML format.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAMS | LIST |  | true |  | 
-| PARAMS2 | LIST |  | true |  | 
+| {::nomarkdown}PARAMS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}PARAMS2{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

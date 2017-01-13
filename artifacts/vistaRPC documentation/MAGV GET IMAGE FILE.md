@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET IMAGE FILE
- tag | GETFILE
+ label | {::nomarkdown}MAGV GET IMAGE FILE{:/}
+ tag | {::nomarkdown}GETFILE{:/}
  routine | [MAGVRS31](http://code.osehra.org/dox/Routine_MAGVRS31_source.html)
- return value type | ARRAY
- description | Returns image attributes given the IEN of the IMAGE INSTANCE FILE (#2005.65).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns image attributes given the IEN of the IMAGE INSTANCE FILE (#2005.65).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILEIEN | LITERAL |  |  | The IEN of the IMAGE INSTANCE FILE (#2005.65) entry to be retrieved. | 
-| SOPIEN | LITERAL |  |  | The IEN of the parent IMAGE SOP INSTANCE file (#2005.64) entry. | 
-| OVERRIDE | LITERAL |  |  | If the OVERRIDE flag is set to 1 the RPC will not check the validity of thePARENT IEN. | 
+| {::nomarkdown}FILEIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the IMAGE INSTANCE FILE (#2005.65) entry to be retrieved.{:/} | 
+| {::nomarkdown}SOPIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the parent IMAGE SOP INSTANCE file (#2005.64) entry.{:/} | 
+| {::nomarkdown}OVERRIDE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}If the OVERRIDE flag is set to 1 the RPC will not check the validity of thePARENT IEN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

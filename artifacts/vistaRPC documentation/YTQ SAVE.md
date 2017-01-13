@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ SAVE
- tag | EDAD
+ label | {::nomarkdown}YTQ SAVE{:/}
+ tag | {::nomarkdown}EDAD{:/}
  routine | [YTQAPI1](http://code.osehra.org/dox/Routine_YTQAPI1_source.html)
- return value type | ARRAY
- description | Generic proceedure to add or edit a MH file entry  Input: YS(\FILEN\)=File Number          (i.e. the file# for administrations would be 601.84)        YS(\IEN\)= : the internal number of the record you want to edit.Leave blank if creating a new record. If creating a new record you mustsend .01^NEW for those MH files using the New input transform.        YS(1)=FIELD #^Value^[3rd piece is 1 if you need to bypass             validation (use only if approved by developer)        :        :        YS(x)=YS(1)=FIELD #^Value^[3rd piece] Output: YSDATA(1)=[DATA] or [ERROR]
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Generic proceedure to add or edit a MH file entry  Input: YS(\FILEN\)=File Number          (i.e. the file# for administrations would be 601.84)        YS(\IEN\)= : the internal number of the record you want to edit.Leave blank if creating a new record. If creating a new record you mustsend .01^NEW for those MH files using the New input transform.        YS(1)=FIELD #^Value^[3rd piece is 1 if you need to bypass             validation (use only if approved by developer)        :        :        YS(x)=YS(1)=FIELD #^Value^[3rd piece] Output: YSDATA(1)=[DATA] or [ERROR]{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

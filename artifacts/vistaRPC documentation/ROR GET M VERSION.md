@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR GET M VERSION
- tag | VERSRV
+ label | {::nomarkdown}ROR GET M VERSION{:/}
+ tag | {::nomarkdown}VERSRV{:/}
  routine | [RORUTL11](http://code.osehra.org/dox/Routine_RORUTL11_source.html)
- return value type | SINGLE VALUE
- description | Used by CCR to return an agreed-upon version number to the GUI application.  The GUI will analyze the version number and display a message if the client and server are out of sync.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used by CCR to return an agreed-upon version number to the GUI application.  The GUI will analyze the version number and display a message if the client and server are out of sync.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

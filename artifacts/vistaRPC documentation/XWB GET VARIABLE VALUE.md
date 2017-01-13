@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB GET VARIABLE VALUE
- tag | VARVAL
+ label | {::nomarkdown}XWB GET VARIABLE VALUE{:/}
+ tag | {::nomarkdown}VARVAL{:/}
  routine | [XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
- return value type | SINGLE VALUE
- description | This RPC accepts the name of a variable which will be evaluated and itsvalue returned to the server.  For example, this RPC may be called witha parameter like DUZ which will be returned as 123456.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC accepts the name of a variable which will be evaluated and itsvalue returned to the server.  For example, this RPC may be called witha parameter like DUZ which will be returned as 123456.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

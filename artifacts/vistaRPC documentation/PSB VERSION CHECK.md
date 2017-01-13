@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB VERSION CHECK
- tag | GUICHK
+ label | {::nomarkdown}PSB VERSION CHECK{:/}
+ tag | {::nomarkdown}GUICHK{:/}
  routine | [PSBRPC3](http://code.osehra.org/dox/Routine_PSBRPC3_source.html)
- return value type | ARRAY
- description | This RPC is called at startup. No parameters are passed.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is called at startup. No parameters are passed.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

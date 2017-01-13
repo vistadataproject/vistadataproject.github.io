@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDOR LKSCRN
- tag | LKSCRN
+ label | {::nomarkdown}ORWDOR LKSCRN{:/}
+ tag | {::nomarkdown}LKSCRN{:/}
  routine | [ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
- return value type | ARRAY
- description | Does a lookup similar to GENERIC^ORWU.  Also allows passing of a referenceto a screen in the Order Dialog file to screen to lookup.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Does a lookup similar to GENERIC^ORWU.  Also allows passing of a referenceto a screen in the Order Dialog file to screen to lookup.{:/}
 
 
 ### Method description
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
 --- | --- 
  Method comment | Return a set of entries from xref in REF
- Leading comment lines | .Y=returned list, FROM=text to $O from, DIR=$O direction,,REF=subscript indirection global ref including xref,,GBL=standard FM global ref, SCR=reference to screen in 101.41
+ Leading comment lines | .Y=returned list, FROM=text to $O from, DIR=$O direction,
+REF=subscript indirection global ref including xref,
+GBL=standard FM global ref, SCR=reference to screen in 101.41
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

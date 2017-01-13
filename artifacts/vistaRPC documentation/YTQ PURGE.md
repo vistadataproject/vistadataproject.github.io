@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ PURGE
- tag | PURGE
+ label | {::nomarkdown}YTQ PURGE{:/}
+ tag | {::nomarkdown}PURGE{:/}
  routine | [YTQAPI3](http://code.osehra.org/dox/Routine_YTQAPI3_source.html)
- return value type | ARRAY
- description | Deletes a specific record from a specific file. Works only at top level and does not check pointers or del node. Take care using this API  Input: FILEN (file #)       IEN (internal record #)  Output: conformation only
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Deletes a specific record from a specific file. Works only at top level and does not check pointers or del node. Take care using this API  Input: FILEN (file #)       IEN (internal record #)  Output: conformation only{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

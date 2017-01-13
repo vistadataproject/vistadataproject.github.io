@@ -9,25 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX1 UNDCORIG
- tag | UNDCORIG
+ label | {::nomarkdown}ORWDX1 UNDCORIG{:/}
+ tag | {::nomarkdown}UNDCORIG{:/}
  routine | [ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
-
-
-### Method description
-
- property | value 
---- | --- 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORYARR | LIST |  |  |  | 
+| {::nomarkdown}ORYARR{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

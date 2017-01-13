@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN MEANS & ELIGIBILITY
- tag | COL
+ label | {::nomarkdown}SPN MEANS & ELIGIBILITY{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPE2](http://code.osehra.org/dox/Routine_SPNJRPE2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns list of current Means and Eligibility for all requested patients
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns list of current Means and Eligibility for all requested patients{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLIST | LITERAL |  |  | List of patient ICNs to process | 
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of patient ICNs to process{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

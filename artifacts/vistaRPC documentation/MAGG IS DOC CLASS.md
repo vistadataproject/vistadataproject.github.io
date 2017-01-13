@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG IS DOC CLASS
- tag | ISDOCCL
+ label | {::nomarkdown}MAGG IS DOC CLASS{:/}
+ tag | {::nomarkdown}ISDOCCL{:/}
  routine | [MAGGNTI](http://code.osehra.org/dox/Routine_MAGGNTI_source.html)
- return value type | SINGLE VALUE
- description | Checks to see if IEN of TIU Files 8925 or 8925.1 is of a certain Doc Class
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Checks to see if IEN of TIU Files 8925 or 8925.1 is of a certain Doc Class{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 30 | true | Internal Entry Number in the TIUFILE | 
-| TIUFILE | LITERAL | 10 | true |  IS - 8925   if we need to see if a Note is of a Document Class IS - 8925.1 if we need to see if a Title is of a Document Class | 
-| CLASS | LITERAL | 60 | true | Text Name of the Document Class   example: \ADVANCE DIRECTIVE\ | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number in the TIUFILE{:/} | 
+| {::nomarkdown}TIUFILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown} IS - 8925   if we need to see if a Note is of a Document Class IS - 8925.1 if we need to see if a Title is of a Document Class{:/} | 
+| {::nomarkdown}CLASS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Text Name of the Document Class   example: \ADVANCE DIRECTIVE\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

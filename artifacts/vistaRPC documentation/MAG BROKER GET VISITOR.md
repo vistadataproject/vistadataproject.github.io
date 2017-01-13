@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG BROKER GET VISITOR
- tag | BSEXP
+ label | {::nomarkdown}MAG BROKER GET VISITOR{:/}
+ tag | {::nomarkdown}BSEXP{:/}
  routine | [MAGS2BSE](http://code.osehra.org/dox/Routine_MAGS2BSE_source.html)
- return value type | SINGLE VALUE
- description | Wraps code underlying RPC: XUS GET VISITOR to check for expired authentication token.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Wraps code underlying RPC: XUS GET VISITOR to check for expired authentication token.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGTKN | LITERAL | 256 | true | The Broker Security Enhancement (BSE) token to validate. | 
+| {::nomarkdown}MAGTKN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Broker Security Enhancement (BSE) token to validate.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

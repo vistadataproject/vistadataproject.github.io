@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR1 GETDEA
- tag | GETDEA
+ label | {::nomarkdown}ORWOR1 GETDEA{:/}
+ tag | {::nomarkdown}GETDEA{:/}
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
- return value type | SINGLE VALUE
- description | Returns a users DEA number.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a users DEA number.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

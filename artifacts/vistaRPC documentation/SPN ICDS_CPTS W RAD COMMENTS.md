@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN ICDS_CPTS W RAD COMMENTS
- tag | COL
+ label | {::nomarkdown}SPN ICDS_CPTS W RAD COMMENTS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPIW](http://code.osehra.org/dox/Routine_SPNJRPIW_source.html)
- return value type | GLOBAL ARRAY
- description | Returns ICD/CPT Codes with Radiology Comments for a given patient based on the ICN and a cutoff date.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns ICD/CPT Codes with Radiology Comments for a given patient based on the ICN and a cutoff date.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  | Individual patient's ICN. | 
-| SPNCUTDT | LITERAL |  |  | Date to start search from.   | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Individual patient's ICN.{:/} | 
+| {::nomarkdown}SPNCUTDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to start search from.  {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

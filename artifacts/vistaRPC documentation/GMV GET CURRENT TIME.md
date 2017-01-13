@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV GET CURRENT TIME
- tag | TIME
+ label | {::nomarkdown}GMV GET CURRENT TIME{:/}
+ tag | {::nomarkdown}TIME{:/}
  routine | [GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
- return value type | SINGLE VALUE
- description | Gets the current date and time from the server. This remote procedure call is documented in Integration Agreement 4355.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Gets the current date and time from the server. This remote procedure call is documented in Integration Agreement 4355.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

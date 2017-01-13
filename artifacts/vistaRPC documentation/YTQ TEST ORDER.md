@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ TEST ORDER
- tag | SNDBUL
+ label | {::nomarkdown}YTQ TEST ORDER{:/}
+ tag | {::nomarkdown}SNDBUL{:/}
  routine | [YTQAPI7](http://code.osehra.org/dox/Routine_YTQAPI7_source.html)
- return value type | ARRAY
- description | Send message to psych test ordering clinician Input: DFN as patient ien      : ORD as ordered for (in duz form)     : TEST1 as name of test ordered (required;string)     :TEST2-TEST10 as name of other tests ordered (optional but in       order;string) Output: [DATA] VS [ERROR]     
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Send message to psych test ordering clinician Input: DFN as patient ien      : ORD as ordered for (in duz form)     : TEST1 as name of test ordered (required;string)     :TEST2-TEST10 as name of other tests ordered (optional but in       order;string) Output: [DATA] VS [ERROR]     {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

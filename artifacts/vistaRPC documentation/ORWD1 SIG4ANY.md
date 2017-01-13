@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD1 SIG4ANY
- tag | SIG4ANY
+ label | {::nomarkdown}ORWD1 SIG4ANY{:/}
+ tag | {::nomarkdown}SIG4ANY{:/}
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
- return value type | SINGLE VALUE
- description | Returns true if any orders in the list require a signature.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns true if any orders in the list require a signature.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

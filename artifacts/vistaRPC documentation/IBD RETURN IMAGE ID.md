@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD RETURN IMAGE ID
- tag | IMAGEID
+ label | {::nomarkdown}IBD RETURN IMAGE ID{:/}
+ tag | {::nomarkdown}IMAGEID{:/}
  routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
- return value type | SINGLE VALUE
- description | Returns a numeric between 1 and 9999999 that is used as part of the filename to store the next unknown image as.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a numeric between 1 and 9999999 that is used as part of the filename to store the next unknown image as.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

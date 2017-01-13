@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS AV HELP
- tag | AVHELP
+ label | {::nomarkdown}XUS AV HELP{:/}
+ tag | {::nomarkdown}AVHELP{:/}
  routine | [XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
- return value type | ARRAY
- description | Returns instructions on entering new access/verify codes.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns instructions on entering new access/verify codes.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

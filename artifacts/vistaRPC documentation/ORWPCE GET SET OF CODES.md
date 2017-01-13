@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE GET SET OF CODES
- tag | GETSET
+ label | {::nomarkdown}ORWPCE GET SET OF CODES{:/}
+ tag | {::nomarkdown}GETSET{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | ARRAY
- description | Returns values for a set of codes given a file and field number.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns values for a set of codes given a file and field number.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDFH CURISO
- tag | CURISO
+ label | {::nomarkdown}ORWDFH CURISO{:/}
+ tag | {::nomarkdown}CURISO{:/}
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
- return value type | SINGLE VALUE
- description | Return a patient's current isolation.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return a patient's current isolation.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

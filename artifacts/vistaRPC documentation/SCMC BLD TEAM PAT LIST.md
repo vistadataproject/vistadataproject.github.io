@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC BLD TEAM PAT LIST
- tag | PTTMLST
+ label | {::nomarkdown}SCMC BLD TEAM PAT LIST{:/}
+ tag | {::nomarkdown}PTTMLST{:/}
  routine | [SCMRBK](http://code.osehra.org/dox/Routine_SCMRBK_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}LIST ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV PTINFO CORE
- tag | PINF
+ label | {::nomarkdown}ANRV PTINFO CORE{:/}
+ tag | {::nomarkdown}PINF{:/}
  routine | [ANRVOA](http://code.osehra.org/dox/Routine_ANRVOA_source.html)
- return value type | SINGLE VALUE
- description | Returns patient information for verification.  Must be changed eventuallyto include current Sensitive Patient Check.(TO DO).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns patient information for verification.  Must be changed eventuallyto include current Sensitive Patient Check.(TO DO).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PTDFN | LITERAL | 40 | true | Patients Internal entry number. | 
-| RESULTS | LITERAL |  | true | Bolus of patient information. | 
+| {::nomarkdown}PTDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patients Internal entry number.{:/} | 
+| {::nomarkdown}RESULTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Bolus of patient information.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

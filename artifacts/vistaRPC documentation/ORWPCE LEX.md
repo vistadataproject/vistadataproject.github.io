@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE LEX
- tag | LEX
+ label | {::nomarkdown}ORWPCE LEX{:/}
+ tag | {::nomarkdown}LEX{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | ARRAY
- description | Returns list based on lexicon look-up.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list based on lexicon look-up.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

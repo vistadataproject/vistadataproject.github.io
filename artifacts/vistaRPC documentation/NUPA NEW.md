@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA NEW
- tag | NEW
+ label | {::nomarkdown}NUPA NEW{:/}
+ tag | {::nomarkdown}NEW{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Adds a new entry to a file.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Adds a new entry to a file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIC | LITERAL |  | true | File to add the entry to. | 
-| ENTRY | LITERAL |  | true | Data to add to the file. | 
-| three | LITERAL |  | true | Not currently used. | 
+| {::nomarkdown}DIC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}File to add the entry to.{:/} | 
+| {::nomarkdown}ENTRY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Data to add to the file.{:/} | 
+| {::nomarkdown}three{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Not currently used.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCU BYREG
- tag | BYREG
+ label | {::nomarkdown}ORRHCU BYREG{:/}
+ tag | {::nomarkdown}BYREG{:/}
  routine | [ORRHCU](http://code.osehra.org/dox/Routine_ORRHCU_source.html)
- return value type | ARRAY
- description | Returns a list of patients listed in a patient registry.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients listed in a patient registry.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAM | LITERAL |  | true | The name of the registry. | 
-| MOD | LITERAL |  | true | The mode by which the registry should be accessed (active, inactive, both). | 
+| {::nomarkdown}NAM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The name of the registry.{:/} | 
+| {::nomarkdown}MOD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The mode by which the registry should be accessed (active, inactive, both).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

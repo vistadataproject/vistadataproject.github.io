@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 VALROUTE
- tag | VALROUTE
+ label | {::nomarkdown}ORWDPS32 VALROUTE{:/}
+ tag | {::nomarkdown}VALROUTE{:/}
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
- return value type | SINGLE VALUE
- description | Returns the IEN for a route if the name is valid.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the IEN for a route if the name is valid.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

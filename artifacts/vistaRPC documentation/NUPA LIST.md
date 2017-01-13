@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA LIST
- tag | LIST
+ label | {::nomarkdown}NUPA LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of all entries in a file (.01 field only).  You can specifya screen, in regular Fileman format.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all entries in a file (.01 field only).  You can specifya screen, in regular Fileman format.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL |  | true | File number to list data from. | 
-| SCREEN | LITERAL |  | true | Fileman screen for the lookup. | 
-| MULT | LITERAL |  | true | Subscript of a multiple to do the lookup on. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}File number to list data from.{:/} | 
+| {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fileman screen for the lookup.{:/} | 
+| {::nomarkdown}MULT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Subscript of a multiple to do the lookup on.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

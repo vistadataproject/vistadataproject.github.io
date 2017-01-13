@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE IMM
- tag | IMM
+ label | {::nomarkdown}ORWPCE IMM{:/}
+ tag | {::nomarkdown}IMM{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | ARRAY
- description | Returns a list of immunizations for a clinic.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of immunizations for a clinic.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

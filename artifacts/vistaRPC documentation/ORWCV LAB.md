@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCV LAB
- tag | LAB
+ label | {::nomarkdown}ORWCV LAB{:/}
+ tag | {::nomarkdown}LAB{:/}
  routine | [ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
- return value type | ARRAY
- description | Returns a list of labs to display on the CPRS GUI cover sheet for apatient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of labs to display on the CPRS GUI cover sheet for apatient.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

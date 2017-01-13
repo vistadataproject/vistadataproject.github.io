@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV DGW MODALITY LIST
- tag | MODALITY
+ label | {::nomarkdown}MAGV DGW MODALITY LIST{:/}
+ tag | {::nomarkdown}MODALITY{:/}
  routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
- return value type | ARRAY
- description | Return list of Modalities in DGWfrom MODALITY TYPE DICTIONARY file (#2006.582)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of Modalities in DGWfrom MODALITY TYPE DICTIONARY file (#2006.582){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOSTNAME | LITERAL |  |  | If HOSTNAME is blank all setting will be returned | 
+| {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}If HOSTNAME is blank all setting will be returned{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

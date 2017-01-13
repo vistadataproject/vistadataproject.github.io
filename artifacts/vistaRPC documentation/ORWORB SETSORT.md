@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORB SETSORT
- tag | SETSORT
+ label | {::nomarkdown}ORWORB SETSORT{:/}
+ tag | {::nomarkdown}SETSORT{:/}
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
- return value type | SINGLE VALUE
- description | Sets the GUI alert sort method for the user.  This is set when a user clicks on the GUI alert columns to change the display sorting.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sets the GUI alert sort method for the user.  This is set when a user clicks on the GUI alert columns to change the display sorting.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

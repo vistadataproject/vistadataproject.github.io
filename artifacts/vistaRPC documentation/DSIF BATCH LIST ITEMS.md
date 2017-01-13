@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH LIST ITEMS
- tag | LISTBAT
+ label | {::nomarkdown}DSIF BATCH LIST ITEMS{:/}
+ tag | {::nomarkdown}LISTBAT{:/}
  routine | [DSIFBAT2](http://code.osehra.org/dox/Routine_DSIFBAT2_source.html)
- return value type | GLOBAL ARRAY
- description | Used to display batch items from Fee Basis batch items.on error returns -1^error message
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Used to display batch items from Fee Basis batch items.on error returns -1^error message{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH | LITERAL | 99 | true | Pass in the number of an existing batch number (NOT IEN of Batch). | 
+| {::nomarkdown}BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in the number of an existing batch number (NOT IEN of Batch).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

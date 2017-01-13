@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY CREATE INVOICE
- tag | NEWINV
+ label | {::nomarkdown}DSIF PAY CREATE INVOICE{:/}
+ tag | {::nomarkdown}NEWINV{:/}
  routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
- return value type | SINGLE VALUE
- description | Retruns a new invoice number from GETNXI^FBAAUTL
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Retruns a new invoice number from GETNXI^FBAAUTL{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

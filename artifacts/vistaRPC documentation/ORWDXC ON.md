@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXC ON
- tag | ON
+ label | {::nomarkdown}ORWDXC ON{:/}
+ tag | {::nomarkdown}ON{:/}
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
- return value type | SINGLE VALUE
- description | Returns E if order checking enabled, otherwise D.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns E if order checking enabled, otherwise D.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

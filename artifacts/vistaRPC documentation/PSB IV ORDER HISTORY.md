@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB IV ORDER HISTORY
- tag | GETOHIST
+ label | {::nomarkdown}PSB IV ORDER HISTORY{:/}
+ tag | {::nomarkdown}GETOHIST{:/}
  routine | [PSBRPC2](http://code.osehra.org/dox/Routine_PSBRPC2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns individual detailed bag history.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns individual detailed bag history.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patients IEN number | 
-| PSBORD | LITERAL |  | true | Order number from Inpatient Medications | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patients IEN number{:/} | 
+| {::nomarkdown}PSBORD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Order number from Inpatient Medications{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE LOADGAF
- tag | LOADGAF
+ label | {::nomarkdown}ORWPCE LOADGAF{:/}
+ tag | {::nomarkdown}LOADGAF{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | ARRAY
- description | Returns a list of GAF Scores
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of GAF Scores{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORINPUT | LIST |  |  | ORINPUT(\DFN\) = Patient DFN.ORINPUT(\LIMIT\) = Number of most recent GAF scores to retrieve. | 
+| {::nomarkdown}ORINPUT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ORINPUT(\DFN\) = Patient DFN.ORINPUT(\LIMIT\) = Number of most recent GAF scores to retrieve.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS PKI SET UPN
- tag | SETUPN
+ label | {::nomarkdown}XUS PKI SET UPN{:/}
+ tag | {::nomarkdown}SETUPN{:/}
  routine | [XUSER2](http://code.osehra.org/dox/Routine_XUSER2_source.html)
- return value type | SINGLE VALUE
- description | This RPC is used to set the SUBJECT ALTERNATIVE NAME in the New Person #(200) file field 501.2. 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is used to set the SUBJECT ALTERNATIVE NAME in the New Person #(200) file field 501.2. {:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| UPN | LITERAL | 50 | true | This is the SUBJECT ALTERNATIVE NAME from the PIV card. | 
+| {::nomarkdown}UPN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the SUBJECT ALTERNATIVE NAME from the PIV card.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

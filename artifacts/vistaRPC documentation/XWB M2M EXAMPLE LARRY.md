@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB M2M EXAMPLE LARRY
- tag | LARRYRP
+ label | {::nomarkdown}XWB M2M EXAMPLE LARRY{:/}
+ tag | {::nomarkdown}LARRYRP{:/}
  routine | [XWBM2MT](http://code.osehra.org/dox/Routine_XWBM2MT_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ARRAY | LIST |  |  |  | 
+| {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

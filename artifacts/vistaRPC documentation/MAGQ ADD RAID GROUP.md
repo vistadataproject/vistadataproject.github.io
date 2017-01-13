@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ ADD RAID GROUP
- tag | ADDRG
+ label | {::nomarkdown}MAGQ ADD RAID GROUP{:/}
+ tag | {::nomarkdown}ADDRG{:/}
  routine | [MAGQBUT5](http://code.osehra.org/dox/Routine_MAGQBUT5_source.html)
- return value type | SINGLE VALUE
- description | This is used to create the next RAID group for the Network Locationfile (#2005.2).  It will generate a group name that includes the sites namespace and the next logical sequence number.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This is used to create the next RAID group for the Network Locationfile (#2005.2).  It will generate a group name that includes the sites namespace and the next logical sequence number.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NUMBER | LITERAL | 99 | true | This value determines the number of RAID groups to be added to the sitesNetwork Location file (#2005.2). | 
-| PLACE | LITERAL | 99 |  | This is the place value, an entry in the IMAGING SITE PARAMETER (#2006.1)file, for the RAID group entry being defined. | 
+| {::nomarkdown}NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value determines the number of RAID groups to be added to the sitesNetwork Location file (#2005.2).{:/} | 
+| {::nomarkdown}PLACE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} |  | {::nomarkdown}This is the place value, an entry in the IMAGING SITE PARAMETER (#2006.1)file, for the RAID group entry being defined.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR SET LAB TYPE
- tag | STLABTYP
+ label | {::nomarkdown}DSIR SET LAB TYPE{:/}
+ tag | {::nomarkdown}STLABTYP{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | SINGLE VALUE
- description | Routine for setting the requested lab type for a given request.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Routine for setting the requested lab type for a given request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ROI | LITERAL | 10 | true | INPUT PARAMETER   ROI = REQUEST IEN | 
-| TYP | LITERAL | 2 | true | INPUT PARAMETER    TYP = SELECTED LAB TYPE - A NUMERIC VALUE >= 0 | 
+| {::nomarkdown}ROI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INPUT PARAMETER   ROI = REQUEST IEN{:/} | 
+| {::nomarkdown}TYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INPUT PARAMETER    TYP = SELECTED LAB TYPE - A NUMERIC VALUE >= 0{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

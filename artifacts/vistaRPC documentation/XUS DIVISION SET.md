@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS DIVISION SET
- tag | DIVSET
+ label | {::nomarkdown}XUS DIVISION SET{:/}
+ tag | {::nomarkdown}DIVSET{:/}
  routine | [XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
- return value type | SINGLE VALUE
- description | This RPC is used to set the user's selected Division in DUZ(2) duringsign-on.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is used to set the user's selected Division in DUZ(2) duringsign-on.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIV | LITERAL | 12 | true |  | 
+| {::nomarkdown}DIV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

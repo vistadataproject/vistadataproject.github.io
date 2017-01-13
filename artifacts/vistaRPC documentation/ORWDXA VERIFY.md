@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA VERIFY
- tag | VERIFY
+ label | {::nomarkdown}ORWDXA VERIFY{:/}
+ tag | {::nomarkdown}VERIFY{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | Verify an order via CPRS GUI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Verify an order via CPRS GUI.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

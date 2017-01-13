@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SD W_L RETRIVE TM POS(404.57)
- tag | OUTSP
+ label | {::nomarkdown}SD W_L RETRIVE TM POS(404.57){:/}
+ tag | {::nomarkdown}OUTSP{:/}
  routine | [SDWLRP2](http://code.osehra.org/dox/Routine_SDWLRP2_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP GET OLD ENCOUNTERS
- tag | ENC
+ label | {::nomarkdown}DENTV TP GET OLD ENCOUNTERS{:/}
+ tag | {::nomarkdown}ENC{:/}
  routine | [DENTVTP5](http://code.osehra.org/dox/Routine_DENTVTP5_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of all complete and/or terminated encounters for a selected patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all complete and/or terminated encounters for a selected patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 30 | true | Input parameter is the patient DFN. | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input parameter is the patient DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

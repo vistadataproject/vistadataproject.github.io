@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG PAT IMAGES
- tag | IMAGES
+ label | {::nomarkdown}MAGG PAT IMAGES{:/}
+ tag | {::nomarkdown}IMAGES{:/}
  routine | [MAGGTIG](http://code.osehra.org/dox/Routine_MAGGTIG_source.html)
- return value type | ARRAY
- description | This returns the full list of images for a patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This returns the full list of images for a patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDFN | LITERAL | 20 | true | This is DFN of patient. | 
+| {::nomarkdown}MAGDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is DFN of patient.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

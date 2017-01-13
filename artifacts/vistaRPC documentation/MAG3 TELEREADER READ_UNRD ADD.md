@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TELEREADER READ_UNRD ADD
- tag | FILE
+ label | {::nomarkdown}MAG3 TELEREADER READ_UNRD ADD{:/}
+ tag | {::nomarkdown}FILE{:/}
  routine | [MAGNGMR](http://code.osehra.org/dox/Routine_MAGNGMR_source.html)
- return value type | SINGLE VALUE
- description | Add a consult and image pointers toUnread/Read List file (#2006.5849)and DICOM GMRC TEMP LIST file (#2006.5839)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Add a consult and image pointers toUnread/Read List file (#2006.5849)and DICOM GMRC TEMP LIST file (#2006.5839){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDA | LITERAL |  |  | An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA) | 
-| MAGCNT | LITERAL |  | true | Count of new images captured | 
-| MAGRIEN | LITERAL |  | true | a request/consult IEN in REQUEST/CONSULTATION file (#123) | 
+| {::nomarkdown}MAGDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA){:/} | 
+| {::nomarkdown}MAGCNT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Count of new images captured{:/} | 
+| {::nomarkdown}MAGRIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}a request/consult IEN in REQUEST/CONSULTATION file (#123){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

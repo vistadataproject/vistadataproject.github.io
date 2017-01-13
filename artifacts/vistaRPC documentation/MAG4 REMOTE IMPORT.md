@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 REMOTE IMPORT
- tag | REMOTE
+ label | {::nomarkdown}MAG4 REMOTE IMPORT{:/}
+ tag | {::nomarkdown}REMOTE{:/}
  routine | [MAGGSIUI](http://code.osehra.org/dox/Routine_MAGGSIUI_source.html)
- return value type | ARRAY
- description | Called from MS Windows Application.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Called from MS Windows Application.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDATA | LIST |  | true | This is the array of data needed to Import the Image(s)Format is sequential array of \Data Node^Data\i.e.   MAGDATA(1)=\PXPKG^8925\       MAGDATA(2)=\PXIEN^443\       MAGDATA(3)=\IMAGE^\\\\SERVER\\SHARE\\FILENAME.EXT^Description\ | 
+| {::nomarkdown}MAGDATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the array of data needed to Import the Image(s)Format is sequential array of \Data Node^Data\i.e.   MAGDATA(1)=\PXPKG^8925\       MAGDATA(2)=\PXIEN^443\       MAGDATA(3)=\IMAGE^\\\\SERVER\\SHARE\\FILENAME.EXT^Description\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET CLERK REQUESTS
- tag | GETTODAY
+ label | {::nomarkdown}DSIR GET CLERK REQUESTS{:/}
+ tag | {::nomarkdown}GETTODAY{:/}
  routine | [DSIROI](http://code.osehra.org/dox/Routine_DSIROI_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC returns all open/pending requests for a given clerk.  This is used to populate the today screen.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC returns all open/pending requests for a given clerk.  This is used to populate the today screen.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLERK | LITERAL | 30 | true | The IEN for file 2 which points at the desired ROI clerk. | 
-| BILLING | LITERAL | 1 | true | BILLING - The billing system is on (1) or off(0) | 
+| {::nomarkdown}CLERK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The IEN for file 2 which points at the desired ROI clerk.{:/} | 
+| {::nomarkdown}BILLING{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}BILLING - The billing system is on (1) or off(0){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

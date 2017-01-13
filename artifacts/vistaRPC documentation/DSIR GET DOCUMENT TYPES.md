@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET DOCUMENT TYPES
- tag | GETTYPE
+ label | {::nomarkdown}DSIR GET DOCUMENT TYPES{:/}
+ tag | {::nomarkdown}GETTYPE{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | ARRAY
- description | Retrieve entries from file 19620.4 DSIR DOCUMENT TYPES
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Retrieve entries from file 19620.4 DSIR DOCUMENT TYPES{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

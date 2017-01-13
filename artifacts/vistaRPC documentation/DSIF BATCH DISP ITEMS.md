@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH DISP ITEMS
- tag | BATDISP
+ label | {::nomarkdown}DSIF BATCH DISP ITEMS{:/}
+ tag | {::nomarkdown}BATDISP{:/}
  routine | [DSIFBAT4](http://code.osehra.org/dox/Routine_DSIFBAT4_source.html)
- return value type | ARRAY
- description | Returns exsiting items in a batch to use to edit an existing batch
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns exsiting items in a batch to use to edit an existing batch{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH IEN | LITERAL | 35 | true |  | 
+| {::nomarkdown}BATCH IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

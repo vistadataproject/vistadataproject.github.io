@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORDEA PINLKSET
- tag | PINLKSET
+ label | {::nomarkdown}ORDEA PINLKSET{:/}
+ tag | {::nomarkdown}PINLKSET{:/}
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

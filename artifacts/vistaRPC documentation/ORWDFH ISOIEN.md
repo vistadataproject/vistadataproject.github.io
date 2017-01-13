@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDFH ISOIEN
- tag | ISOIEN
+ label | {::nomarkdown}ORWDFH ISOIEN{:/}
+ tag | {::nomarkdown}ISOIEN{:/}
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
- return value type | SINGLE VALUE
- description | Returns the IEN for the Isolation/Precaution orderable item.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the IEN for the Isolation/Precaution orderable item.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

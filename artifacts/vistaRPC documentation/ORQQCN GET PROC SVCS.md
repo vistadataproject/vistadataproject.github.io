@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN GET PROC SVCS
- tag | PROCSVCS
+ label | {::nomarkdown}ORQQCN GET PROC SVCS{:/}
+ tag | {::nomarkdown}PROCSVCS{:/}
  routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
- return value type | ARRAY
- description | Given an orderable item from the S.PROC XREF in 101.43, return theConsults service from 123.5 that can perform the procedure.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Given an orderable item from the S.PROC XREF in 101.43, return theConsults service from 123.5 that can perform the procedure.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORDERABLE ITEM ID | LITERAL | 16 | true |  | 
+| {::nomarkdown}ORDERABLE ITEM ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

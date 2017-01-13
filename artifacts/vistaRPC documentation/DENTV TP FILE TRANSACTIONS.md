@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP FILE TRANSACTIONS
- tag | FILE
+ label | {::nomarkdown}DENTV TP FILE TRANSACTIONS{:/}
+ tag | {::nomarkdown}FILE{:/}
  routine | [DENTVTPA](http://code.osehra.org/dox/Routine_DENTVTPA_source.html)
- return value type | ARRAY
- description | This will file transaction data types to file 228.2.  It will also create the DAS record (#221) if appropriate.  It will also file data to PCE if appropriate.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This will file transaction data types to file 228.2.  It will also create the DAS record (#221) if appropriate.  It will also file data to PCE if appropriate.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LIST | 256 | true | See documentation in FILE^DENTVTPA | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}See documentation in FILE^DENTVTPA{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

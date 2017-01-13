@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETECSPROCS
- tag | PROC
+ label | {::nomarkdown}EC GETECSPROCS{:/}
+ tag | {::nomarkdown}PROC{:/}
  routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns an array of procedures for an Event Code screen (file #720.3). Eventcode screens are based on location, DSS unit and Category.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns an array of procedures for an Event Code screen (file #720.3). Eventcode screens are based on location, DSS unit and Category.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input variable ECARY contains the following values separated by up-arrow.  1.  ECL  - Location IEN  2.  ECD  - DSS Unit IEN  3.  ECC  - Category IEN | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable ECARY contains the following values separated by up-arrow.  1.  ECL  - Location IEN  2.  ECD  - DSS Unit IEN  3.  ECC  - Category IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

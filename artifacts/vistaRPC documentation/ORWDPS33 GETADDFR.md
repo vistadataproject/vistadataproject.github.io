@@ -9,25 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS33 GETADDFR
- tag | GETADDFR
+ label | {::nomarkdown}ORWDPS33 GETADDFR{:/}
+ tag | {::nomarkdown}GETADDFR{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | SINGLE VALUE
- description | This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC takes an Additive Orderable ITEM IEN and it returns the defaultadditive frequency defined to the additive file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OIIEN | LITERAL |  | true | OIIEN = Orderable IEN from file 101.43. | 
+| {::nomarkdown}OIIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}OIIEN = Orderable IEN from file 101.43.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

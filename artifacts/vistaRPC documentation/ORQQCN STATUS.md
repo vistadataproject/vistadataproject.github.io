@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN STATUS
- tag | STATUS
+ label | {::nomarkdown}ORQQCN STATUS{:/}
+ tag | {::nomarkdown}STATUS{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | ARRAY
- description | Returns a list of consult statuses currently in use, as reflected in the\AC\ XREF of ^GMR(123.1.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of consult statuses currently in use, as reflected in the\AC\ XREF of ^GMR(123.1.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

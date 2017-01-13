@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB MAXDAYS
- tag | MAX
+ label | {::nomarkdown}PSB MAXDAYS{:/}
+ tag | {::nomarkdown}MAX{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | This RPC returns the maximum number of days a user can view or print the MAH report. This parameter is set using CPRS and is call ORRP BCMA MAH.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns the maximum number of days a user can view or print the MAH report. This parameter is set using CPRS and is call ORRP BCMA MAH.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

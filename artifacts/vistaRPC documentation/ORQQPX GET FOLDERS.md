@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX GET FOLDERS
- tag | GETFLDRS
+ label | {::nomarkdown}ORQQPX GET FOLDERS{:/}
+ tag | {::nomarkdown}GETFLDRS{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | SINGLE VALUE
- description | Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

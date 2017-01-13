@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB REMOTE STATUS CHECK
- tag | RPCCHK
+ label | {::nomarkdown}XWB REMOTE STATUS CHECK{:/}
+ tag | {::nomarkdown}RPCCHK{:/}
  routine | [XWB2HL7](http://code.osehra.org/dox/Routine_XWB2HL7_source.html)
- return value type | ARRAY
- description | This RPC will return the status of a remote RPC.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC will return the status of a remote RPC.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HANDLE | LITERAL | 30 | true | This is the handle used to check the status of the remote RPC. | 
+| {::nomarkdown}HANDLE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the handle used to check the status of the remote RPC.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

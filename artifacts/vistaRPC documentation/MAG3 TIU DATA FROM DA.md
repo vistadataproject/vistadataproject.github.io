@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TIU DATA FROM DA
- tag | DATA
+ label | {::nomarkdown}MAG3 TIU DATA FROM DA{:/}
+ tag | {::nomarkdown}DATA{:/}
  routine | [MAGGNTI](http://code.osehra.org/dox/Routine_MAGGNTI_source.html)
- return value type | SINGLE VALUE
- description | get TIU data from the TIUDA.Returns Document Type, and Document Date/Time
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}get TIU data from the TIUDA.Returns Document Type, and Document Date/Time{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL | 30 | true | This is the internal number in the TIU Document file. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal number in the TIU Document file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

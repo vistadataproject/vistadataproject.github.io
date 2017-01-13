@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV ALLERGY
- tag | ALLERGY
+ label | {::nomarkdown}GMV ALLERGY{:/}
+ tag | {::nomarkdown}ALLERGY{:/}
  routine | [GMVUTL3](http://code.osehra.org/dox/Routine_GMVUTL3_source.html)
- return value type | ARRAY
- description | This remote procedure call retrieves the patient's allergy information. This remote procedure call is documented in Integration Agreement 4350.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call retrieves the patient's allergy information. This remote procedure call is documented in Integration Agreement 4350.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | DFN is a pointer to the PATIENT file (#2). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN is a pointer to the PATIENT file (#2).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

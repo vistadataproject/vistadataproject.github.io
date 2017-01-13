@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TIU IMAGE
- tag | FILE
+ label | {::nomarkdown}MAG3 TIU IMAGE{:/}
+ tag | {::nomarkdown}FILE{:/}
  routine | [MAGGNTI](http://code.osehra.org/dox/Routine_MAGGNTI_source.html)
- return value type | SINGLE VALUE
- description | Files the TIU pointer in Imaging and the Imaging Pointer in TIU.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Files the TIU pointer in Imaging and the Imaging Pointer in TIU.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDA | LITERAL | 30 | true | This is the Image File entry Internal number. | 
-| TIUDA | LITERAL | 30 | true | This is the TIU internal number. | 
+| {::nomarkdown}MAGDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Image File entry Internal number.{:/} | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the TIU internal number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

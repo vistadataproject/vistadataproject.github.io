@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA LOOKUP TRY 2
- tag | LK
+ label | {::nomarkdown}NUPA LOOKUP TRY 2{:/}
+ tag | {::nomarkdown}LK{:/}
  routine | [NUPAAS1](http://code.osehra.org/dox/Routine_NUPAAS1_source.html)
- return value type | GLOBAL ARRAY
- description | Not currently used.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Not currently used.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

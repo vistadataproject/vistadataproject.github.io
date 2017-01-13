@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD UPDATE PARAMETER CATEGORY
- tag | UPDATE
+ label | {::nomarkdown}XHD UPDATE PARAMETER CATEGORY{:/}
+ tag | {::nomarkdown}UPDATE{:/}
  routine | [XHDPCAT](http://code.osehra.org/dox/Routine_XHDPCAT_source.html)
- return value type | SINGLE VALUE
- description | This call updates ParameterCategories.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This call updates ParameterCategories.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM MENTAL HEALTH
- tag | MH
+ label | {::nomarkdown}PXRM MENTAL HEALTH{:/}
+ tag | {::nomarkdown}MH{:/}
  routine | [PXRMRPCC](http://code.osehra.org/dox/Routine_PXRMRPCC_source.html)
- return value type | ARRAY
- description | Returns array for given mental health instrument
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns array for given mental health instrument{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MENTAL HEALTH INSTRUMENT | LITERAL | 16 | true | Name of the mental health instrument | 
+| {::nomarkdown}MENTAL HEALTH INSTRUMENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of the mental health instrument{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

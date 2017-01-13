@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP2 COMPABV
- tag | COMPABV
+ label | {::nomarkdown}ORWRP2 COMPABV{:/}
+ tag | {::nomarkdown}COMPABV{:/}
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
- return value type | ARRAY
- description | This RPC returns an array of the ADHOC Health Summary components by abbreviation.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns an array of the ADHOC Health Summary components by abbreviation.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

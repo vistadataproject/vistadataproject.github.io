@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU NOTES BY VISIT
- tag | NOTES
+ label | {::nomarkdown}TIU NOTES BY VISIT{:/}
+ tag | {::nomarkdown}NOTES{:/}
  routine | [TIUSRVLV](http://code.osehra.org/dox/Routine_TIUSRVLV_source.html)
- return value type | GLOBAL ARRAY
- description | This API gets lists of Progress Notes by visit from TIU.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This API gets lists of Progress Notes by visit from TIU.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VISIT | LITERAL | 20 | true | This is the pointer to the VISIT File. | 
+| {::nomarkdown}VISIT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the VISIT File.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

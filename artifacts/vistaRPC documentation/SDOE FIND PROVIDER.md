@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SDOE FIND PROVIDER
- tag | FINDPRV
+ label | {::nomarkdown}SDOE FIND PROVIDER{:/}
+ tag | {::nomarkdown}FINDPRV{:/}
  routine | [SDOERPC](http://code.osehra.org/dox/Routine_SDOERPC_source.html)
- return value type | SINGLE VALUE
- description | This Remote Procedure Call (RPC) returns a boolean indicatoron whether a specific provider is associated with an encounter.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This Remote Procedure Call (RPC) returns a boolean indicatoron whether a specific provider is associated with an encounter.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENCOUNTER IEN | LITERAL |  | true | This is the internal entry number of an entry in the OUTPATIENTENCOUNTER [#409.68 - ^SCE] file. | 
-| PRACTITIONER ID | LITERAL |  | true | This is the internal entry number of an entry in the NEW PERSON[#200 - ^VA(200)] file for a practitioner. | 
+| {::nomarkdown}ENCOUNTER IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of an entry in the OUTPATIENTENCOUNTER [#409.68 - ^SCE] file.{:/} | 
+| {::nomarkdown}PRACTITIONER ID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of an entry in the NEW PERSON[#200 - ^VA(200)] file for a practitioner.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS4 CPLST
- tag | CPLST
+ label | {::nomarkdown}ORWDPS4 CPLST{:/}
+ tag | {::nomarkdown}CPLST{:/}
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
- return value type | ARRAY
- description | Get co-pay ralated questions
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get co-pay ralated questions{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

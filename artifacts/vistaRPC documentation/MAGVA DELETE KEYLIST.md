@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA DELETE KEYLIST
- tag | DELKL
+ label | {::nomarkdown}MAGVA DELETE KEYLIST{:/}
+ tag | {::nomarkdown}DELKL{:/}
  routine | [MAGVAKL1](http://code.osehra.org/dox/Routine_MAGVAKL1_source.html)
- return value type | SINGLE VALUE
- description | Delete a record in KEYLIST file (#2006.913) by IEN
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Delete a record in KEYLIST file (#2006.913) by IEN{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDA | LITERAL |  | true |  MAGDA= IEN | 
+| {::nomarkdown}MAGDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGDA= IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

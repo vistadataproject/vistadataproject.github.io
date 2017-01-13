@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV INACTIVATE SOP
- tag | INSOP
+ label | {::nomarkdown}MAGV INACTIVATE SOP{:/}
+ tag | {::nomarkdown}INSOP{:/}
  routine | [MAGVRS24](http://code.osehra.org/dox/Routine_MAGVRS24_source.html)
- return value type | ARRAY
- description | This RPC inactivates a SOP INSTANCE entry in the IMAGE SOP INSTANCE file (#2005.64).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC inactivates a SOP INSTANCE entry in the IMAGE SOP INSTANCE file (#2005.64).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SOPIEN | LITERAL |  |  | The IEN of the SOP entry to be inactivated. | 
-| SERIEN | LITERAL |  |  | The IEN of the related series IEN. | 
-| OVERRIDE | LITERAL |  |  | If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation. | 
+| {::nomarkdown}SOPIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the SOP entry to be inactivated.{:/} | 
+| {::nomarkdown}SERIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the related series IEN.{:/} | 
+| {::nomarkdown}OVERRIDE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}If set to 1 this flag prevents the checking of the parent procedurereference prior to inactivation.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

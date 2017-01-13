@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPP LIST
- tag | LIST
+ label | {::nomarkdown}ORQQPP LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [ORQQPP](http://code.osehra.org/dox/Routine_ORQQPP_source.html)
- return value type | ARRAY
- description | Returns a list of active Patient Postings for a patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of active Patient Postings for a patient.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | Patient ID (DFN) from Patient File [#2]. | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID (DFN) from Patient File [#2].{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

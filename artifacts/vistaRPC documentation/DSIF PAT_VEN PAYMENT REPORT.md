@@ -9,24 +9,24 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAT_VEN PAYMENT REPORT
- tag | EN
+ label | {::nomarkdown}DSIF PAT_VEN PAYMENT REPORT{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [DSIFRPT3](http://code.osehra.org/dox/Routine_DSIFRPT3_source.html)
- return value type | GLOBAL ARRAY
- description | This is an RPC version of the FBPAY routines.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This is an RPC version of the FBPAY routines.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBSORT | LITERAL | 1 | true | Sort Indicator (1 = Patient, 0 = Vendor - Default = 0) | 
-| FBIEN | LITERAL | 99 | true | Patient/Vendor Internal Entry Number (File 161/161.2 respectively) | 
-| FBBDATE | LITERAL | 7 | true | Begining Date for report (FileMan Format) | 
-| FBEDATE | LITERAL | 7 | true | Ending Date for report (FileMan Format) | 
-| FB1725R | LITERAL | 1 | true | Mill-Bill indicator only used if PROGS passes in Fee Programs with internal numbers 2, 3 or 6. M - include only 38 U.S.C. 1725 claimsN - exclude 38 U.S.C. 1725 claimsA - All | 
-| PROGS | LIST | 99 | true | List of Fee Programs to include on report (Multi-piece IEN ^ Name) (IEN is pointer to file 161.8 FEE PROGRAMS, the user should only be allowed to select active programs.) | 
+| {::nomarkdown}FBSORT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Sort Indicator (1 = Patient, 0 = Vendor - Default = 0){:/} | 
+| {::nomarkdown}FBIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient/Vendor Internal Entry Number (File 161/161.2 respectively){:/} | 
+| {::nomarkdown}FBBDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Begining Date for report (FileMan Format){:/} | 
+| {::nomarkdown}FBEDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Ending Date for report (FileMan Format){:/} | 
+| {::nomarkdown}FB1725R{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Mill-Bill indicator only used if PROGS passes in Fee Programs with internal numbers 2, 3 or 6. M - include only 38 U.S.C. 1725 claimsN - exclude 38 U.S.C. 1725 claimsA - All{:/} | 
+| {::nomarkdown}PROGS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of Fee Programs to include on report (Multi-piece IEN ^ Name) (IEN is pointer to file 161.8 FEE PROGRAMS, the user should only be allowed to select active programs.){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

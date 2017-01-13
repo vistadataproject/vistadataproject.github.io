@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET DOCUMENTS
- tag | GETITEMS
+ label | {::nomarkdown}DSIR GET DOCUMENTS{:/}
+ tag | {::nomarkdown}GETITEMS{:/}
  routine | [DSIROI2](http://code.osehra.org/dox/Routine_DSIROI2_source.html)
- return value type | GLOBAL ARRAY
- description | Get a list of all documents for a request.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Get a list of all documents for a request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REQUEST IEN | LITERAL | 99 | true | IEN of entry in file 19620 ROI INSTANCE. | 
+| {::nomarkdown}REQUEST IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of entry in file 19620 ROI INSTANCE.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

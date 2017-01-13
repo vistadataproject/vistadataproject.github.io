@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET NOI CODE
- tag | GETNOI
+ label | {::nomarkdown}OOPS GET NOI CODE{:/}
+ tag | {::nomarkdown}GETNOI{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | ARRAY
- description | This broker call returns the listing of NOI codes.  If the claim is a CA1 thenonly codes begining with T are returned, if the claim is a CA2 only codes thatdo not begin with a T are returned.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This broker call returns the listing of NOI codes.  If the claim is a CA1 thenonly codes begining with T are returned, if the claim is a CA2 only codes thatdo not begin with a T are returned.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OPT | LITERAL | 5 | true | This parameter will be either CA1 or CA2 to indicate which type of claim isrequesting the NOI codes. | 
+| {::nomarkdown}OPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will be either CA1 or CA2 to indicate which type of claim isrequesting the NOI codes.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

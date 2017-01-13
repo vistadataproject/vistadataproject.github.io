@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG PURGE
- tag | LOGPRG
+ label | {::nomarkdown}MHV LOG PURGE{:/}
+ tag | {::nomarkdown}LOGPRG{:/}
  routine | [MHVUL1](http://code.osehra.org/dox/Routine_MHVUL1_source.html)
- return value type | SINGLE VALUE
- description | Purge MHV application log.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Purge MHV application log.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DTM | LITERAL | 15 | true | Purge Date/Time.Default is Today - 7. | 
+| {::nomarkdown}DTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Purge Date/Time.Default is Today - 7.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

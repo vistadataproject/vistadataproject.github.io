@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM3 PTADR
- tag | PTADR
+ label | {::nomarkdown}ORAM3 PTADR{:/}
+ tag | {::nomarkdown}PTADR{:/}
  routine | [ORAM3](http://code.osehra.org/dox/Routine_ORAM3_source.html)
- return value type | SINGLE VALUE
- description | Retrieves contact information. Will also check for active temporary information.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Retrieves contact information. Will also check for active temporary information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

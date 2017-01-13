@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC UPDATE PROBLEM
- tag | UPDATE
+ label | {::nomarkdown}DSIC UPDATE PROBLEM{:/}
+ tag | {::nomarkdown}UPDATE{:/}
  routine | [DSICPL](http://code.osehra.org/dox/Routine_DSICPL_source.html)
- return value type | SINGLE VALUE
- description | This will update an existing problem
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will update an existing problem{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LIST | 240 | true | For detailed description of array format, see documentation in routine. | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}For detailed description of array format, see documentation in routine.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

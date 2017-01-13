@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET SPEC CODES
- tag | COL
+ label | {::nomarkdown}SPN GET SPEC CODES{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPC7](http://code.osehra.org/dox/Routine_SPNJRPC7_source.html)
- return value type | GLOBAL ARRAY
- description | Returns full list of Specialty PTF codes.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns full list of Specialty PTF codes.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SPEC | LITERAL |  |  | (not used) | 
+| {::nomarkdown}SPEC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(not used){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

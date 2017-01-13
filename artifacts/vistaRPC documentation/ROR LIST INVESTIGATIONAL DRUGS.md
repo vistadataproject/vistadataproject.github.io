@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR LIST INVESTIGATIONAL DRUGS
- tag | RORINV
+ label | {::nomarkdown}ROR LIST INVESTIGATIONAL DRUGS{:/}
+ tag | {::nomarkdown}RORINV{:/}
  routine | [RORRP017](http://code.osehra.org/dox/Routine_RORRP017_source.html)
- return value type | GLOBAL ARRAY
- description | [ROR LIST INVESTIGATIONAL DRUGS] returns a list of drugs that areclassified as investigational in file ^PS(50.605 and have a drug classof IN140 for HEPC or IN150 for HIV
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}[ROR LIST INVESTIGATIONAL DRUGS] returns a list of drugs that areclassified as investigational in file ^PS(50.605 and have a drug classof IN140 for HEPC or IN150 for HIV{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PART | LITERAL |  | true | A string that is passed in to filter the number of drugs returned.If the string is ?? then the call will return all drugs that qualify. | 
-| FLAGS | LITERAL |  | true | If equal to 1 this will work with the HEPC Registry.  If equal to 2 willwork with the HIV Registry | 
-| NUMBER | LITERAL |  | true | DEPRECATED | 
-| FROM | LITERAL |  | true | DEPRECATED | 
+| {::nomarkdown}PART{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A string that is passed in to filter the number of drugs returned.If the string is ?? then the call will return all drugs that qualify.{:/} | 
+| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}If equal to 1 this will work with the HEPC Registry.  If equal to 2 willwork with the HIV Registry{:/} | 
+| {::nomarkdown}NUMBER{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DEPRECATED{:/} | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DEPRECATED{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

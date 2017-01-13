@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP GET LAST STATUS
- tag | LST
+ label | {::nomarkdown}DENTV TP GET LAST STATUS{:/}
+ tag | {::nomarkdown}LST{:/}
  routine | [DENTVTP5](http://code.osehra.org/dox/Routine_DENTVTP5_source.html)
- return value type | SINGLE VALUE
- description | Sends back the status of the last, non-deleted, encounter.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sends back the status of the last, non-deleted, encounter.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | Contains the patient dfn (ien). | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the patient dfn (ien).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

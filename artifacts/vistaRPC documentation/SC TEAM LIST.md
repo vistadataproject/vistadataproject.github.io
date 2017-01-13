@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC TEAM LIST
- tag | TMLST
+ label | {::nomarkdown}SC TEAM LIST{:/}
+ tag | {::nomarkdown}TMLST{:/}
  routine | [SCUTBK11](http://code.osehra.org/dox/Routine_SCUTBK11_source.html)
- return value type | ARRAY
- description | Returns a list of teams the patient is currently assigned to.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of teams the patient is currently assigned to.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}LIST ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

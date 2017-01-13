@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM1 PTENTER
- tag | PTENTER
+ label | {::nomarkdown}ORAM1 PTENTER{:/}
+ tag | {::nomarkdown}PTENTER{:/}
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
- return value type | SINGLE VALUE
- description | Adds a new patient to the Anticoagulation Flowsheet file (#103).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Adds a new patient to the Anticoagulation Flowsheet file (#103).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

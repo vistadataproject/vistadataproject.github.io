@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD DATA ELEMENTS
- tag | ELEMENTS
+ label | {::nomarkdown}KMPD DATA ELEMENTS{:/}
+ tag | {::nomarkdown}ELEMENTS{:/}
  routine | [KMPDU6](http://code.osehra.org/dox/Routine_KMPDU6_source.html)
- return value type | ARRAY
- description | Return list of Data Elements in format: piece^name example 5^M Commands
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of Data Elements in format: piece^name example 5^M Commands{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

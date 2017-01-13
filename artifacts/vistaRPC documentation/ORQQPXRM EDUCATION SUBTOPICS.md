@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM EDUCATION SUBTOPICS
- tag | EDS
+ label | {::nomarkdown}ORQQPXRM EDUCATION SUBTOPICS{:/}
+ tag | {::nomarkdown}EDS{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Returns array of subtopics for any given education topic
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns array of subtopics for any given education topic{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| EDUCATION TOPIC ID | LITERAL | 16 | true | Education topic (ien) from EDUCATION TOPIC file [#9999999.09] | 
+| {::nomarkdown}EDUCATION TOPIC ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Education topic (ien) from EDUCATION TOPIC file [#9999999.09]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

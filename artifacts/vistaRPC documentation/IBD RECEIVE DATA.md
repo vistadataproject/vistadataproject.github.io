@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD RECEIVE DATA
- tag | SEND
+ label | {::nomarkdown}IBD RECEIVE DATA{:/}
+ tag | {::nomarkdown}SEND{:/}
  routine | [IBDFRPC4](http://code.osehra.org/dox/Routine_IBDFRPC4_source.html)
- return value type | ARRAY
- description | This call is the public RPC for developers to input data from anencounter form to AICS for processing to PCE.  See routine IBDFRPC4for detailed description of variables.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call is the public RPC for developers to input data from anencounter form to AICS for processing to PCE.  See routine IBDFRPC4for detailed description of variables.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBDF | LIST | 245 | true | See routine IBDFRPC4 for details of required variables.  See routinesIBDFDE* for examples of use. | 
+| {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}See routine IBDFRPC4 for details of required variables.  See routinesIBDFDE* for examples of use.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

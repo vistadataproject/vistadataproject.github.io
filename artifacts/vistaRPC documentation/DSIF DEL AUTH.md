@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF DEL AUTH
- tag | DEL
+ label | {::nomarkdown}DSIF DEL AUTH{:/}
+ tag | {::nomarkdown}DEL{:/}
  routine | [DSIFENA3](http://code.osehra.org/dox/Routine_DSIFENA3_source.html)
- return value type | SINGLE VALUE
- description | Used to delete an existing authorization in Fee Basis.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to delete an existing authorization in Fee Basis.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 35 | true | Pass in Patient File IEN (file #2)  | 
-| AUTHIEN | LITERAL | 25 | true | Authorization IEN to be deleted | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in Patient File IEN (file #2) {:/} | 
+| {::nomarkdown}AUTHIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Authorization IEN to be deleted{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC PC PROVIDER
- tag | PC
+ label | {::nomarkdown}SC PC PROVIDER{:/}
+ tag | {::nomarkdown}PC{:/}
  routine | [SCMCWAIT](http://code.osehra.org/dox/Routine_SCMCWAIT_source.html)
- return value type | ARRAY
- description | Send provider entry return 1 or zero if eligible to be Primary Care
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Send provider entry return 1 or zero if eligible to be Primary Care{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PROV | LITERAL |  |  | Internal file 200 provider entry | 
+| {::nomarkdown}PROV{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal file 200 provider entry{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

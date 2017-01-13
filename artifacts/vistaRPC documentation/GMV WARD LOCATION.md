@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV WARD LOCATION
- tag | WARDLOC
+ label | {::nomarkdown}GMV WARD LOCATION{:/}
+ tag | {::nomarkdown}WARDLOC{:/}
  routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
- return value type | GLOBAL ARRAY
- description | This procedure extracts MAS ward locations from the Ward Location file(#42). Note: No other Input Parameters besides RESULT needed.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This procedure extracts MAS ward locations from the Ward Location file(#42). Note: No other Input Parameters besides RESULT needed.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DUMMY | LITERAL | 1 | true | When this input parameter is set to the letter \P\, only wards that have patients will be returned. Otherwise, all active wards will be returned. | 
+| {::nomarkdown}DUMMY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}When this input parameter is set to the letter \P\, only wards that have patients will be returned. Otherwise, all active wards will be returned.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

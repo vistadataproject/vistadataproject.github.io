@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC PRECEPTOR MOVE - LIST
- tag | LISTPREC
+ label | {::nomarkdown}SCMC PRECEPTOR MOVE - LIST{:/}
+ tag | {::nomarkdown}LISTPREC{:/}
  routine | [SCMCPREC](http://code.osehra.org/dox/Routine_SCMCPREC_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

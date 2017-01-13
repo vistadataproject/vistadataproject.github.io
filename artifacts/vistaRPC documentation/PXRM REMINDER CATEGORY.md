@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM REMINDER CATEGORY
- tag | CATEGORY
+ label | {::nomarkdown}PXRM REMINDER CATEGORY{:/}
+ tag | {::nomarkdown}CATEGORY{:/}
  routine | [PXRMRPCD](http://code.osehra.org/dox/Routine_PXRMRPCD_source.html)
- return value type | ARRAY
- description | List reminders and categories in display order for a reminder category.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}List reminders and categories in display order for a reminder category.{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CATEGORY | LITERAL | 16 | true | Category ien [#811.7] | 
+| {::nomarkdown}CATEGORY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Category ien [#811.7]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ FIRST WP
- tag | FIRSTWP
+ label | {::nomarkdown}YTQ FIRST WP{:/}
+ tag | {::nomarkdown}FIRSTWP{:/}
  routine | [YTQAPI3](http://code.osehra.org/dox/Routine_YTQAPI3_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the first line only of a WP field        ;Input: FILEN(file number), FIELD (WP filed #)        ;Ouput IEN^WP Text line 1
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the first line only of a WP field        ;Input: FILEN(file number), FIELD (WP filed #)        ;Ouput IEN^WP Text line 1{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXR ISREL
- tag | ISREL
+ label | {::nomarkdown}ORWDXR ISREL{:/}
+ tag | {::nomarkdown}ISREL{:/}
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
- return value type | SINGLE VALUE
- description | Return 1 if an order has been released, otherwise return 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return 1 if an order has been released, otherwise return 0.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

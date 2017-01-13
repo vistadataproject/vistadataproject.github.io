@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXR RNWFLDS
- tag | RNWFLDS
+ label | {::nomarkdown}ORWDXR RNWFLDS{:/}
+ tag | {::nomarkdown}RNWFLDS{:/}
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
- return value type | ARRAY
- description | Return fields for renew action in format:    LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return fields for renew action in format:    LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

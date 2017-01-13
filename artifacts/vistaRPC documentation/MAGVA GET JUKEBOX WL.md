@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET JUKEBOX WL
- tag | GETJBXWL
+ label | {::nomarkdown}MAGVA GET JUKEBOX WL{:/}
+ tag | {::nomarkdown}GETJBXWL{:/}
  routine | [MAGVAG03](http://code.osehra.org/dox/Routine_MAGVAG03_source.html)
- return value type | ARRAY
- description | Returns Jukebox Write Location by Station number or Institution IEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns Jukebox Write Location by Station number or Institution IEN{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  MAGPARAM(\STATION NUMBER\) = STATION NUMBER field (#4,99) in INSTITUTION file (#4) or MAGPARAM(\INSTITUTION IEN\) = IEN in INSTITUTION file (#4) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\STATION NUMBER\) = STATION NUMBER field (#4,99) in INSTITUTION file (#4) or MAGPARAM(\INSTITUTION IEN\) = IEN in INSTITUTION file (#4){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWSR SHOW SURG TAB
- tag | SHOWSURG
+ label | {::nomarkdown}ORWSR SHOW SURG TAB{:/}
+ tag | {::nomarkdown}SHOWSURG{:/}
  routine | [ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
- return value type | SINGLE VALUE
- description | Check for presence of SR*3.0*100 (Surgery Electronic Signature) patch, andalso for parameter value.  If both TRUE, surgery tab will be displayed inCPRS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Check for presence of SR*3.0*100 (Surgery Electronic Signature) patch, andalso for parameter value.  If both TRUE, surgery tab will be displayed inCPRS.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

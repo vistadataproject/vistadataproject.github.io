@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD KEY
- tag | KEY
+ label | {::nomarkdown}ORWD KEY{:/}
+ tag | {::nomarkdown}KEY{:/}
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
- return value type | SINGLE VALUE
- description | RPC which receives a key name and returns a 1 if the user holds the key,otherwise a 0 is returned.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC which receives a key name and returns a 1 if the user holds the key,otherwise a 0 is returned.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

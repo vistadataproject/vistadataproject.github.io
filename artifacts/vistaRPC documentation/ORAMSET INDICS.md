@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAMSET INDICS
- tag | INDICS
+ label | {::nomarkdown}ORAMSET INDICS{:/}
+ tag | {::nomarkdown}INDICS{:/}
  routine | [ORAMSET](http://code.osehra.org/dox/Routine_ORAMSET_source.html)
- return value type | ARRAY
- description | This call populates the list of selectable indications for Anticoagulation therapy.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call populates the list of selectable indications for Anticoagulation therapy.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

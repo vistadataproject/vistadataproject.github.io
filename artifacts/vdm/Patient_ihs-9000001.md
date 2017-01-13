@@ -32,7 +32,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| health_record_fac | .01 | Health Record Fac | {::nomarkdown}This field is a pointer to the LOCATION file.  The internal pointer<br/>is forced into the third subscript for the 9000001.41 subfile.  This<br/>allows easy lookup by health record number for the logged on<br/>location (facility).<br/> <br/>The complete subscript for 9000001.41 will be (DFN,41,facility pointer,0).{:/} | POINTER |  | REQUIRED | {id:Location-9999999_06} | 
+| health_record_fac | .01 | Health Record Fac | {::nomarkdown}This field is a pointer to the LOCATION file.  The internal pointer<br/>is forced into the third subscript for the 9000001.41 subfile.  This<br/>allows easy lookup by health record number for the logged on<br/>location (facility).<br/> <br/>The complete subscript for 9000001.41 will be (DFN,41,facility pointer,0).{:/} | POINTER |  | REQUIRED | Location-9999999_06 | 
 | health_record_no | .02 | Health Record No. | {::nomarkdown}This field is used to represent the health record number related to a<br/>facility.<br/> <br/>IHS uses a 6 character whole number.<br/> <br/>VA uses the patient SSN from the Patient File (2).{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | date_inactivated_deleted | .03 | Date Inactivated/deleted | {::nomarkdown}This is date that the patients entry was inactivated.{:/} | DATE-TIME |  |  |  | 
 | record_status | .05 | Record Status | {::nomarkdown}This field is used by the IHS Multi-Facility Integration (MFI) package<br/>to determine whether to stop integrating data at a facility for a <br/>particular patient and location facility.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>D</dt><dd>DELETED</dd><dt>I</dt><dd>INACTIVATED</dd><dt>M</dt><dd>MERGED</dd></dl>{:/} | 
@@ -41,4 +41,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 5:52:20 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT LIST ALL
- tag | LISTALL
+ label | {::nomarkdown}ORWPT LIST ALL{:/}
+ tag | {::nomarkdown}LISTALL{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns a set of patient names for use with a long list box.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a set of patient names for use with a long list box.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

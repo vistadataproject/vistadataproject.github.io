@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR PURCHASE ORDER CONTROL
- tag | EN
+ label | {::nomarkdown}RMPR PURCHASE ORDER CONTROL{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9PU](http://code.osehra.org/dox/Routine_RMPR9PU_source.html)
- return value type | GLOBAL ARRAY
- description | GUI Order controll processing.  Returns the list of all open pending consults from file 668.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}GUI Order controll processing.  Returns the list of all open pending consults from file 668.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

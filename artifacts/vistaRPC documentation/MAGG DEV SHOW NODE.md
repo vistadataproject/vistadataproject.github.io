@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG DEV SHOW NODE
- tag | MAG
+ label | {::nomarkdown}MAGG DEV SHOW NODE{:/}
+ tag | {::nomarkdown}MAG{:/}
  routine | [MAGGTSYS](http://code.osehra.org/dox/Routine_MAGGTSYS_source.html)
- return value type | GLOBAL ARRAY
- description | For help in development and testing.It returns the NODE from Imaging file to view in raw form.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}For help in development and testing.It returns the NODE from Imaging file to view in raw form.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NODE | LITERAL | 30 | true | This is the node of file ^MAG(2005,NODE to be displayed in the window. | 
+| {::nomarkdown}NODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the node of file ^MAG(2005,NODE to be displayed in the window.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

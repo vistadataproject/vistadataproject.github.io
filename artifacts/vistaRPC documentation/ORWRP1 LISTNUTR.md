@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP1 LISTNUTR
- tag | LISTNUTR
+ label | {::nomarkdown}ORWRP1 LISTNUTR{:/}
+ tag | {::nomarkdown}LISTNUTR{:/}
  routine | [ORWRP1](http://code.osehra.org/dox/Routine_ORWRP1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

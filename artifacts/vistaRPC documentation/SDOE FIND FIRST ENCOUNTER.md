@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SDOE FIND FIRST ENCOUNTER
- tag | EXOE
+ label | {::nomarkdown}SDOE FIND FIRST ENCOUNTER{:/}
+ tag | {::nomarkdown}EXOE{:/}
  routine | [SDOERPC](http://code.osehra.org/dox/Routine_SDOERPC_source.html)
- return value type | SINGLE VALUE
- description | This Remote Procedure Call (RPC) returns the internal entry numberof an OUTPATIENT ENCOUNTER file (#409.68) entry for the first encounterfor a patient in a specified date range.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This Remote Procedure Call (RPC) returns the internal entry numberof an OUTPATIENT ENCOUNTER file (#409.68) entry for the first encounterfor a patient in a specified date range.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL |  | true | This is the internal entry number of an entry in the PATIENT [#2 - ^DPT] file. | 
-| BEGIN DATE/TIME | LITERAL |  | true | Beginning date and time in VA FileMan format.Time is optional. | 
-| END DATE/TIME | LITERAL |  | true | End date and time in VA FileMan format.Time is optional. | 
-| SEARCH FLAGS | LITERAL |  | true | This parameter allows developers to set specific flags that areused as an API searches encounter records. The flags indicate howthe API should function. Character  Description ---------  -----------     C      Use only completed encounters | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of an entry in the PATIENT [#2 - ^DPT] file.{:/} | 
+| {::nomarkdown}BEGIN DATE/TIME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Beginning date and time in VA FileMan format.Time is optional.{:/} | 
+| {::nomarkdown}END DATE/TIME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}End date and time in VA FileMan format.Time is optional.{:/} | 
+| {::nomarkdown}SEARCH FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This parameter allows developers to set specific flags that areused as an API searches encounter records. The flags indicate howthe API should function. Character  Description ---------  -----------     C      Use only completed encounters{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

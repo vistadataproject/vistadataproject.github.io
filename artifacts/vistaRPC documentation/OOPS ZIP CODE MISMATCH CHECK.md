@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS ZIP CODE MISMATCH CHECK
- tag | ZIPCHK
+ label | {::nomarkdown}OOPS ZIP CODE MISMATCH CHECK{:/}
+ tag | {::nomarkdown}ZIPCHK{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | SINGLE VALUE
- description | This broker call will take the Zip Code and State Name and validate that theZip Code exists and is valid for the State.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This broker call will take the Zip Code and State Name and validate that theZip Code exists and is valid for the State.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL | 50 | true | This parameter will contain the Zip Code and the State name to validate in theformat ZIPCODE^STATENAME. The zip code will be validated to ensure that itexists and then will obtain the State from the zip code file and check itagainst the cooresponding State entered by the user. | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will contain the Zip Code and the State name to validate in theformat ZIPCODE^STATENAME. The zip code will be validated to ensure that itexists and then will obtain the State from the zip code file and check itagainst the cooresponding State entered by the user.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

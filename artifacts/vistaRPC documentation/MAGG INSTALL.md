@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG INSTALL
- tag | GPACHX
+ label | {::nomarkdown}MAGG INSTALL{:/}
+ tag | {::nomarkdown}GPACHX{:/}
  routine | [MAGQBUT4](http://code.osehra.org/dox/Routine_MAGQBUT4_source.html)
- return value type | ARRAY
- description | This is a list of all Image package installs on the host system.This list comes from the Install file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This is a list of all Image package installs on the host system.This list comes from the Install file.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

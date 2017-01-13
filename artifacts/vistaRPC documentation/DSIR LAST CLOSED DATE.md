@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR LAST CLOSED DATE
- tag | CLDTL
+ label | {::nomarkdown}DSIR LAST CLOSED DATE{:/}
+ tag | {::nomarkdown}CLDTL{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns the latest effective date a request was closed.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns the latest effective date a request was closed.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ROI | LITERAL | 999 | true | This is the pointer to file 19620. | 
+| {::nomarkdown}ROI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to file 19620.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

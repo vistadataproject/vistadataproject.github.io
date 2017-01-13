@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP CENSUS REPORT
- tag | CENSUS
+ label | {::nomarkdown}DSIF INP CENSUS REPORT{:/}
+ tag | {::nomarkdown}CENSUS{:/}
  routine | [DSIFRPT](http://code.osehra.org/dox/Routine_DSIFRPT_source.html)
- return value type | GLOBAL ARRAY
- description | This is an RPC version of the FBCNHCEN routine to produce the Fee Basis Census Report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This is an RPC version of the FBCNHCEN routine to produce the Fee Basis Census Report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBDT | LITERAL | 7 | true | Census Date in FileMan format. | 
+| {::nomarkdown}FBDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Census Date in FileMan format.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

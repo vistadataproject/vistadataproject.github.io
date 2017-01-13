@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD1 PUTCSRNG
- tag | PUTCSRNG
+ label | {::nomarkdown}ORWTPD1 PUTCSRNG{:/}
+ tag | {::nomarkdown}PUTCSRNG{:/}
  routine | [ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

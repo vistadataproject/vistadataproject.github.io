@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET SUPERVISOR
- tag | SUPER
+ label | {::nomarkdown}OOPS GET SUPERVISOR{:/}
+ tag | {::nomarkdown}SUPER{:/}
  routine | [OOPSGUI4](http://code.osehra.org/dox/Routine_OOPSGUI4_source.html)
- return value type | ARRAY
- description | This call looks up the Supervisor from the new person file.  The IEN of theclaim is passed in to make sure that the person involved is not the supervisor.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call looks up the Supervisor from the new person file.  The IEN of theclaim is passed in to make sure that the person involved is not the supervisor.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAME | LITERAL | 256 | true | This is the name or the partial name of the individual being looked up. | 
-| CASESSN | LITERAL | 15 | true | This is the SSN for the Person Involved in the case.  It will be used to assurethat the Supervisor for the case is not the same as the Person Involved. | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name or the partial name of the individual being looked up.{:/} | 
+| {::nomarkdown}CASESSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the SSN for the Person Involved in the case.  It will be used to assurethat the Supervisor for the case is not the same as the Person Involved.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

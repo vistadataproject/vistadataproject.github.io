@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN2 GET PREREQUISITE
- tag | PREREQ
+ label | {::nomarkdown}ORQQCN2 GET PREREQUISITE{:/}
+ tag | {::nomarkdown}PREREQ{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns resolved boilerplate form CONSULT SERIVCES file (123.5) reflectingthe service's prerequisites for ordering a consult.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns resolved boilerplate form CONSULT SERIVCES file (123.5) reflectingthe service's prerequisites for ordering a consult.{:/}
 
 
 ### Method description
@@ -26,10 +26,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Service IEN | LITERAL | 16 | true | Service IEN in file 123.5. | 
-| Patient ID | LITERAL | 32 | true | Patient DFN. | 
+| {::nomarkdown}Service IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Service IEN in file 123.5.{:/} | 
+| {::nomarkdown}Patient ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

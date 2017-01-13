@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR CRITICAL COM
- tag | EN
+ label | {::nomarkdown}RMPR CRITICAL COM{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9S6](http://code.osehra.org/dox/Routine_RMPR9S6_source.html)
- return value type | ARRAY
- description | GUI 2319 Critical Comment Tab 6. PASS IEN OF FILE 668 RETURN RESULTS ARRAY FROM FILE 665 CRITICAL COMMENTS FIELD. RESUTLS()=ONE LINE AT A TIME OF THE WORD PROCESSING FIELD. ONE LINE TO INFINITE.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI 2319 Critical Comment Tab 6. PASS IEN OF FILE 668 RETURN RESULTS ARRAY FROM FILE 665 CRITICAL COMMENTS FIELD. RESUTLS()=ONE LINE AT A TIME OF THE WORD PROCESSING FIELD. ONE LINE TO INFINITE.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

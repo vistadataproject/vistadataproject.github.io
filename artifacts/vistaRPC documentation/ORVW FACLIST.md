@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORVW FACLIST
- tag | FACLIST
+ label | {::nomarkdown}ORVW FACLIST{:/}
+ tag | {::nomarkdown}FACLIST{:/}
  routine | [ORVW](http://code.osehra.org/dox/Routine_ORVW_source.html)
- return value type | ARRAY
- description | Wrapper for the TFL^VAFCTFU1 routine, which returns all the treatingfacilities for a given patient DFN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Wrapper for the TFL^VAFCTFU1 routine, which returns all the treatingfacilities for a given patient DFN.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient DFN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

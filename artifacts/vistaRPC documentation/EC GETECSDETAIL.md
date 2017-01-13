@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETECSDETAIL
- tag | ECSDTLS
+ label | {::nomarkdown}EC GETECSDETAIL{:/}
+ tag | {::nomarkdown}ECSDTLS{:/}
  routine | [ECUMRPC](http://code.osehra.org/dox/Routine_ECUMRPC_source.html)
- return value type | SINGLE VALUE
- description | Returns details on a specific Event Code Screen from the EC EVENT CODE SCREENSFILE #720.3.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns details on a specific Event Code Screen from the EC EVENT CODE SCREENSFILE #720.3.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | The input parameter ECARY contains the Event code screen IEN. | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input parameter ECARY contains the Event code screen IEN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

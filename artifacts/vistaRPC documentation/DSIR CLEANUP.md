@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR CLEANUP
- tag | CLEANUP
+ label | {::nomarkdown}DSIR CLEANUP{:/}
+ tag | {::nomarkdown}CLEANUP{:/}
  routine | [DSIROI2](http://code.osehra.org/dox/Routine_DSIROI2_source.html)
- return value type | SINGLE VALUE
- description | This RPC kills global nodes TMP(\DSIROI\,$J) and TMP(\DSIRVAL\,$J).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC kills global nodes TMP(\DSIROI\,$J) and TMP(\DSIRVAL\,$J).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

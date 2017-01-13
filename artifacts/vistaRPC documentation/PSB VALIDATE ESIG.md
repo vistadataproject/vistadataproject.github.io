@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB VALIDATE ESIG
- tag | ESIG
+ label | {::nomarkdown}PSB VALIDATE ESIG{:/}
+ tag | {::nomarkdown}ESIG{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | Validate the data in PSBESIG against the user currently signed on (DUZ)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Validate the data in PSBESIG against the user currently signed on (DUZ){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBESIG | LITERAL |  | true | Data typed in by the user, which validates the E-SIG. | 
+| {::nomarkdown}PSBESIG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Data typed in by the user, which validates the E-SIG.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

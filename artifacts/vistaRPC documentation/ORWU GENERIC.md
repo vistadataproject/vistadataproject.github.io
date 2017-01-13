@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU GENERIC
- tag | GENERIC
+ label | {::nomarkdown}ORWU GENERIC{:/}
+ tag | {::nomarkdown}GENERIC{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | ARRAY
- description | Returns a list of entries from a cross-reference passed in.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of entries from a cross-reference passed in.{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

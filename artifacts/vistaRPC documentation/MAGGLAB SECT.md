@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGLAB SECT
- tag | SECT
+ label | {::nomarkdown}MAGGLAB SECT{:/}
+ tag | {::nomarkdown}SECT{:/}
  routine | [MAGGTLB](http://code.osehra.org/dox/Routine_MAGGTLB_source.html)
- return value type | ARRAY
- description | This call returns a list of Lab Sections to the calling app.The line tag SECT is used for selection of the Laboratory sectionBuild Pathology selection from file 68 accordingly to user's division
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call returns a list of Lab Sections to the calling app.The line tag SECT is used for selection of the Laboratory sectionBuild Pathology selection from file 68 accordingly to user's division{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

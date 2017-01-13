@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXM AUTOACK
- tag | AUTOACK
+ label | {::nomarkdown}ORWDXM AUTOACK{:/}
+ tag | {::nomarkdown}AUTOACK{:/}
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
- return value type | ARRAY
- description | Place a quick order in CPRS GUI without the verify step.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Place a quick order in CPRS GUI without the verify step.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

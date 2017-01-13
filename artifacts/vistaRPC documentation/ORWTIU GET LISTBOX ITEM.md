@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTIU GET LISTBOX ITEM
- tag | GTLSTITM
+ label | {::nomarkdown}ORWTIU GET LISTBOX ITEM{:/}
+ tag | {::nomarkdown}GTLSTITM{:/}
  routine | [ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
- return value type | SINGLE VALUE
- description | Given a TIU document IEN, return the information required to construct alistbox item for that single document.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Given a TIU document IEN, return the information required to construct alistbox item for that single document.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Documemnt IEN | LITERAL | 32 | true |  | 
+| {::nomarkdown}Documemnt IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

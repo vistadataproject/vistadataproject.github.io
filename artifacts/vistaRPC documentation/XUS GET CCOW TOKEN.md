@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS GET CCOW TOKEN
- tag | CCOW
+ label | {::nomarkdown}XUS GET CCOW TOKEN{:/}
+ tag | {::nomarkdown}CCOW{:/}
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
- return value type | ARRAY
- description | This RPC gets a token to save in the CCOW context to aid in sign-on.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC gets a token to save in the CCOW context to aid in sign-on.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

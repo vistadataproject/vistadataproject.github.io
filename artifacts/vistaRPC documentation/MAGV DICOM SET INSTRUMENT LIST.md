@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV DICOM SET INSTRUMENT LIST
- tag | SETINSTR
+ label | {::nomarkdown}MAGV DICOM SET INSTRUMENT LIST{:/}
+ tag | {::nomarkdown}SETINSTR{:/}
  routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
- return value type | SINGLE VALUE
- description | Update DICOM GATEWAY INSTRUMENT DICTIONARY file (#2006.911)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Update DICOM GATEWAY INSTRUMENT DICTIONARY file (#2006.911){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOSTNAME | LITERAL |  | true | DICOM Gateway host name | 
-| LOCATION | LITERAL |  | true | Identifies the institution where this DICOM Gateway computer resides | 
-| MAGDATA | LIST |  | true | Data in DICOM GATEWAY INSTRUMENT DICTIONARY file (#2006.911) | 
+| {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DICOM Gateway host name{:/} | 
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the institution where this DICOM Gateway computer resides{:/} | 
+| {::nomarkdown}MAGDATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Data in DICOM GATEWAY INSTRUMENT DICTIONARY file (#2006.911){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

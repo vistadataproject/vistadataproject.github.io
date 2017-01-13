@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR PRIORTY REPORT
- tag | PRIRTY
+ label | {::nomarkdown}DSIR PRIORTY REPORT{:/}
+ tag | {::nomarkdown}PRIRTY{:/}
  routine | [DSIROIR2](http://code.osehra.org/dox/Routine_DSIROIR2_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC returns the data for the High Priority Request Report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC returns the data for the High Priority Request Report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| START DATE | LITERAL | 7 | true | FileMan date to start report. | 
-| END DATE | LITERAL | 7 | true | FileMan date to report through, defaults to current day. | 
-| DIVISION(S) | LITERAL | 999 | true | '^' delimited string of internal division numbers to use for multi-divisional reporting. If string is null only the division of the user or all if user holds the DSIR MDIV key. | 
+| {::nomarkdown}START DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FileMan date to start report.{:/} | 
+| {::nomarkdown}END DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FileMan date to report through, defaults to current day.{:/} | 
+| {::nomarkdown}DIVISION(S){:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}'^' delimited string of internal division numbers to use for multi-divisional reporting. If string is null only the division of the user or all if user holds the DSIR MDIV key.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

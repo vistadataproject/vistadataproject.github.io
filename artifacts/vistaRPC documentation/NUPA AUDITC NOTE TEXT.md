@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA AUDITC NOTE TEXT
- tag | ACNOTE
+ label | {::nomarkdown}NUPA AUDITC NOTE TEXT{:/}
+ tag | {::nomarkdown}ACNOTE{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | ARRAY
- description | Saves an Audit-C note for the patient.  Uses the last administration from file 601.84.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Saves an Audit-C note for the patient.  Uses the last administration from file 601.84.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | DFN of the patient. | 
-| STRING | LITERAL |  | true | Score, questions, and answers from the Audit-C. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DFN of the patient.{:/} | 
+| {::nomarkdown}STRING{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Score, questions, and answers from the Audit-C.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

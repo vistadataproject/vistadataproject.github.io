@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ DELETE SCALES AND GROUP
- tag | DELSG
+ label | {::nomarkdown}YTQ DELETE SCALES AND GROUP{:/}
+ tag | {::nomarkdown}DELSG{:/}
  routine | [YTQAPI8](http://code.osehra.org/dox/Routine_YTQAPI8_source.html)
- return value type | ARRAY
- description | ****Use with Care***Deletes a ScaleGroup and ALL its scales!  Input : ID as ien of MH Scalegroups (601.86)Output: Data vs Error
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}****Use with Care***Deletes a ScaleGroup and ALL its scales!  Input : ID as ien of MH Scalegroups (601.86)Output: Data vs Error{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

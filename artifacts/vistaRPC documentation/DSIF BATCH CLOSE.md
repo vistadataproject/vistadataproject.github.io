@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH CLOSE
- tag | CLOSEBAT
+ label | {::nomarkdown}DSIF BATCH CLOSE{:/}
+ tag | {::nomarkdown}CLOSEBAT{:/}
  routine | [DSIFBAT1](http://code.osehra.org/dox/Routine_DSIFBAT1_source.html)
- return value type | GLOBAL ARRAY
- description | Used to close an open batch for Fee Basis
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Used to close an open batch for Fee Basis{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH NUMBER | LITERAL | 99 | true | Pass in IEN of batch number | 
+| {::nomarkdown}BATCH NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in IEN of batch number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

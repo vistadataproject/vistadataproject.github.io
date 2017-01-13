@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET KEYLIST
- tag | GETKL
+ label | {::nomarkdown}MAGVA GET KEYLIST{:/}
+ tag | {::nomarkdown}GETKL{:/}
  routine | [MAGVAKL1](http://code.osehra.org/dox/Routine_MAGVAKL1_source.html)
- return value type | ARRAY
- description |  Returns a key list by IEN in ARTIFACT KEYLIST file (#2006.913)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Returns a key list by IEN in ARTIFACT KEYLIST file (#2006.913){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDA | LITERAL |  | true | MAGDA = IEN in ARTIFACT KEYLIST file (#2006.913) | 
+| {::nomarkdown}MAGDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}MAGDA = IEN in ARTIFACT KEYLIST file (#2006.913){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

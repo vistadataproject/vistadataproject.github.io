@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDRA DEF
- tag | DEF
+ label | {::nomarkdown}ORWDRA DEF{:/}
+ tag | {::nomarkdown}DEF{:/}
  routine | [ORWDRA](http://code.osehra.org/dox/Routine_ORWDRA_source.html)
- return value type | ARRAY
- description | Loads dialog data (lists & defaults) for a radiology order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Loads dialog data (lists & defaults) for a radiology order.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

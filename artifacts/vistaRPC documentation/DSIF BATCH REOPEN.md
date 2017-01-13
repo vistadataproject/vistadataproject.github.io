@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH REOPEN
- tag | REOPENB
+ label | {::nomarkdown}DSIF BATCH REOPEN{:/}
+ tag | {::nomarkdown}REOPENB{:/}
  routine | [DSIFBAT1](http://code.osehra.org/dox/Routine_DSIFBAT1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH | LITERAL | 35 | true | Enter bacth number, not IEN | 
+| {::nomarkdown}BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Enter bacth number, not IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

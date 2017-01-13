@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE GETLINK
- tag | GETLINK
+ label | {::nomarkdown}TIU TEMPLATE GETLINK{:/}
+ tag | {::nomarkdown}GETLINK{:/}
  routine | [TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
- return value type | SINGLE VALUE
- description | Returns template linked to a specific title or reason for request.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns template linked to a specific title or reason for request.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

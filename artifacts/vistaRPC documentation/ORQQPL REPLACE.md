@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL REPLACE
- tag | REPLACE
+ label | {::nomarkdown}ORQQPL REPLACE{:/}
+ tag | {::nomarkdown}REPLACE{:/}
  routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
- return value type | SINGLE VALUE
- description | REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED{:/}
 
 
 ### Method description
@@ -27,9 +27,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IFN | LITERAL |  |  | IFN OF PROBLEM | 
+| {::nomarkdown}IFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IFN OF PROBLEM{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

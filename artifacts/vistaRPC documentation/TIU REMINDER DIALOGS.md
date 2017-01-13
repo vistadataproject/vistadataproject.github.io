@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU REMINDER DIALOGS
- tag | REMDLGS
+ label | {::nomarkdown}TIU REMINDER DIALOGS{:/}
+ tag | {::nomarkdown}REMDLGS{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | ARRAY
- description | Returns a list of reminder dialogs allowed for use as Templates.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of reminder dialogs allowed for use as Templates.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

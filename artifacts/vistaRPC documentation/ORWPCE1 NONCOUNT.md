@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE1 NONCOUNT
- tag | NONCOUNT
+ label | {::nomarkdown}ORWPCE1 NONCOUNT{:/}
+ tag | {::nomarkdown}NONCOUNT{:/}
  routine | [ORWPCE1](http://code.osehra.org/dox/Routine_ORWPCE1_source.html)
- return value type | SINGLE VALUE
- description | Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964){:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORLOC | LITERAL |  |  | Pointer to file 44. | 
+| {::nomarkdown}ORLOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Pointer to file 44.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

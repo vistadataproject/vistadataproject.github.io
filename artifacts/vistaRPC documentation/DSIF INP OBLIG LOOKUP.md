@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP OBLIG LOOKUP
- tag | OBLLIST
+ label | {::nomarkdown}DSIF INP OBLIG LOOKUP{:/}
+ tag | {::nomarkdown}OBLLIST{:/}
  routine | [DSIFINP0](http://code.osehra.org/dox/Routine_DSIFINP0_source.html)
- return value type | GLOBAL ARRAY
- description | Input Control Point, return obligations and amounts
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Input Control Point, return obligations and amounts{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FCP | LITERAL | 5 | true |  | 
+| {::nomarkdown}FCP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC BLD PAT APT LIST
- tag | PTAPBLD
+ label | {::nomarkdown}SC BLD PAT APT LIST{:/}
+ tag | {::nomarkdown}PTAPBLD{:/}
  routine | [SCMCBK](http://code.osehra.org/dox/Routine_SCMCBK_source.html)
- return value type | SINGLE VALUE
- description | Builds a list of patients for a selected clinic by appointment date range.This list is stored in ^TMP($J,\SCAPP\,n)=DFN.  List is in alphabeticalorder.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Builds a list of patients for a selected clinic by appointment date range.This list is stored in ^TMP($J,\SCAPP\,n)=DFN.  List is in alphabeticalorder.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAMETER LIST | LIST | 512 | true |  | 
+| {::nomarkdown}PARAMETER LIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

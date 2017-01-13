@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD DOLMTEXT
- tag | DOLMTEXT
+ label | {::nomarkdown}TIU FIELD DOLMTEXT{:/}
+ tag | {::nomarkdown}DOLMTEXT{:/}
  routine | [TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
- return value type | ARRAY
- description | Reads through an array of text and converts all entries of templatefields to their assocaited List Manager text values.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Reads through an array of text and converts all entries of templatefields to their assocaited List Manager text values.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIULIST | LIST |  |  | Input text to search for template fields. | 
+| {::nomarkdown}TIULIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Input text to search for template fields.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

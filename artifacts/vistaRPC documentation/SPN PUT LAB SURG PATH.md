@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN PUT LAB SURG PATH
- tag | COL
+ label | {::nomarkdown}SPN PUT LAB SURG PATH{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNRPCN](http://code.osehra.org/dox/Routine_SPNRPCN_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  |  | 
-| CUTDATE | LITERAL |  |  |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}CUTDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

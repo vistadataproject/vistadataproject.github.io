@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR KILL BILL
- tag | KILLBILL
+ label | {::nomarkdown}DSIR KILL BILL{:/}
+ tag | {::nomarkdown}KILLBILL{:/}
  routine | [DSIRBIL0](http://code.osehra.org/dox/Routine_DSIRBIL0_source.html)
- return value type | SINGLE VALUE
- description | This RPC will delete a bill and all related entries in the DSIR BILL HISTORY and DSIR BILL TRACKING files.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will delete a bill and all related entries in the DSIR BILL HISTORY and DSIR BILL TRACKING files.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BILL IEN | LITERAL | 9999 | true | Internal Number to file 19620.2 DISR BILLS. | 
-| ADMIN OVERRIDE | LITERAL | 1 | true | This is a set of codes 0 = No, 1 = Yes to override the checking for any payments and delete the bill and all payments. | 
+| {::nomarkdown}BILL IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Number to file 19620.2 DISR BILLS.{:/} | 
+| {::nomarkdown}ADMIN OVERRIDE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a set of codes 0 = No, 1 = Yes to override the checking for any payments and delete the bill and all payments.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

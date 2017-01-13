@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB EXAMPLE WPTEXT
- tag | WPTEXT
+ label | {::nomarkdown}XWB EXAMPLE WPTEXT{:/}
+ tag | {::nomarkdown}WPTEXT{:/}
  routine | [XWBEXMPL](http://code.osehra.org/dox/Routine_XWBEXMPL_source.html)
- return value type | WORD PROCESSING
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

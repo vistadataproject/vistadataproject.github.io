@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI EXAM LINK TIU
- tag | LINK
+ label | {::nomarkdown}DVBA CAPRI EXAM LINK TIU{:/}
+ tag | {::nomarkdown}LINK{:/}
  routine | [DVBAXML](http://code.osehra.org/dox/Routine_DVBAXML_source.html)
- return value type | SINGLE VALUE
- description | Links an exam in CAPRI TEMPLATES #396.17 to TIU DOCUMENT #8925
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Links an exam in CAPRI TEMPLATES #396.17 to TIU DOCUMENT #8925{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| EXAMIEN | LITERAL |  | true | the exam ien in CAPRI TEMPLATES #396.17 | 
-| TIUIEN | LITERAL |  | true | the tiu ien in TIU DOCUMENT #8925 | 
+| {::nomarkdown}EXAMIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}the exam ien in CAPRI TEMPLATES #396.17{:/} | 
+| {::nomarkdown}TIUIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}the tiu ien in TIU DOCUMENT #8925{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

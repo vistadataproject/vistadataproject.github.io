@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCR OWNED
- tag | OWNED
+ label | {::nomarkdown}ORRHCR OWNED{:/}
+ tag | {::nomarkdown}OWNED{:/}
  routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
- return value type | SINGLE VALUE
- description | Returns true if the current user owns this report.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns true if the current user owns this report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RPT | LITERAL |  | true | The internal number of a report (entry in 102.21). | 
+| {::nomarkdown}RPT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The internal number of a report (entry in 102.21).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

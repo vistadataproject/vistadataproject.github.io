@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV FIND ENTRIES
- tag | FIND
+ label | {::nomarkdown}DSIV FIND ENTRIES{:/}
+ tag | {::nomarkdown}FIND{:/}
  routine | [DSIVIC](http://code.osehra.org/dox/Routine_DSIVIC_source.html)
- return value type | ARRAY
- description | Returns unprocessed INSURANCE BUFFER file entries for a given patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns unprocessed INSURANCE BUFFER file entries for a given patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 16 | true | Patient internal entry number (in FILE #2). | 
-| FLDS | LITERAL | 80 | true | Contains the requested buffer entry fields that can be retrieved using Fileman (i.e. not an API call).  For example: \@;.01I;.02;.03;.04I;20.01;40.02;40.03;40.09;60.04\ | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient internal entry number (in FILE #2).{:/} | 
+| {::nomarkdown}FLDS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the requested buffer entry fields that can be retrieved using Fileman (i.e. not an API call).  For example: \@;.01I;.02;.03;.04I;20.01;40.02;40.03;40.09;60.04\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

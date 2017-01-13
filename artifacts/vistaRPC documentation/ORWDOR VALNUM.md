@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDOR VALNUM
- tag | VALNUM
+ label | {::nomarkdown}ORWDOR VALNUM{:/}
+ tag | {::nomarkdown}VALNUM{:/}
  routine | [ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
- return value type | SINGLE VALUE
- description | Validates a numeric entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Validates a numeric entry.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

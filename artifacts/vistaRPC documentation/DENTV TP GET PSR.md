@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP GET PSR
- tag | PSR
+ label | {::nomarkdown}DENTV TP GET PSR{:/}
+ tag | {::nomarkdown}PSR{:/}
  routine | [DENTVTP3](http://code.osehra.org/dox/Routine_DENTVTP3_source.html)
- return value type | GLOBAL ARRAY
- description | Returns all of the PSR type records from the Treatment Plan Transaction/Exam file (#228.2) for a particular patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns all of the PSR type records from the Treatment Plan Transaction/Exam file (#228.2) for a particular patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | This is a pointer to the PATIENT file. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a pointer to the PATIENT file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

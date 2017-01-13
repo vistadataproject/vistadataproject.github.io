@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM INR
- tag | INR
+ label | {::nomarkdown}ORAM INR{:/}
+ tag | {::nomarkdown}INR{:/}
  routine | [ORAM](http://code.osehra.org/dox/Routine_ORAM_source.html)
- return value type | ARRAY
- description | Returns last 6 months of INR values and dates.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns last 6 months of INR values and dates.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

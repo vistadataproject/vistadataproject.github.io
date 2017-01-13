@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD GET PARAMETER DEFINITION
- tag | GETXML
+ label | {::nomarkdown}XHD GET PARAMETER DEFINITION{:/}
+ tag | {::nomarkdown}GETXML{:/}
  routine | [XHDPDEF](http://code.osehra.org/dox/Routine_XHDPDEF_source.html)
- return value type | GLOBAL ARRAY
- description | This call returns an XML representation of a Parameter Definition.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This call returns an XML representation of a Parameter Definition.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| XHDDA | LITERAL |  | true | This is the IEN of the parameter in the Parameter Definition File (#8989.51). | 
+| {::nomarkdown}XHDDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the parameter in the Parameter Definition File (#8989.51).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

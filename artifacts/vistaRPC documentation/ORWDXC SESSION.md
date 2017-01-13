@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXC SESSION
- tag | SESSION
+ label | {::nomarkdown}ORWDXC SESSION{:/}
+ tag | {::nomarkdown}SESSION{:/}
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
- return value type | ARRAY
- description | Return list of order checks on release of order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of order checks on release of order.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

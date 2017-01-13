@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR FIRST CLOSED DATE
- tag | CLDT1
+ label | {::nomarkdown}DSIR FIRST CLOSED DATE{:/}
+ tag | {::nomarkdown}CLDT1{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | SINGLE VALUE
- description | Returns the date the request was placed into a closed status.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the date the request was placed into a closed status.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ROI | LITERAL | 999 | true | This is the pointer to file 19620. | 
+| {::nomarkdown}ROI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to file 19620.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

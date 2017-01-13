@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR LOG MESSAGE DETAILS
- tag | EN3
+ label | {::nomarkdown}ROR LOG MESSAGE DETAILS{:/}
+ tag | {::nomarkdown}EN3{:/}
  routine | [RORRP7](http://code.osehra.org/dox/Routine_RORRP7_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RORIEN | LITERAL |  | true |  | 
+| {::nomarkdown}RORIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 DRUGMSG
- tag | DRUGMSG
+ label | {::nomarkdown}ORWDPS32 DRUGMSG{:/}
+ tag | {::nomarkdown}DRUGMSG{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | SINGLE VALUE
- description | Return message text that is associated with a dispense drug.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return message text that is associated with a dispense drug.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

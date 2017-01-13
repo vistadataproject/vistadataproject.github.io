@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM1 LOCK
- tag | LOCK
+ label | {::nomarkdown}ORAM1 LOCK{:/}
+ tag | {::nomarkdown}LOCK{:/}
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
- return value type | SINGLE VALUE
- description | Sets lock in Anticoagulation Flowsheet file (#103) so that only one personcan edit a given patient's record at a time.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sets lock in Anticoagulation Flowsheet file (#103) so that only one personcan edit a given patient's record at a time.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL |  |  |  | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE ALL TITLES
- tag | TITLELST
+ label | {::nomarkdown}TIU TEMPLATE ALL TITLES{:/}
+ tag | {::nomarkdown}TITLELST{:/}
  routine | [TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
- return value type | ARRAY
- description | Returns a long list of all active titles.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a long list of all active titles.{:/}
 
 
 ### Method description
@@ -27,10 +27,10 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM | LITERAL |  |  |  | 
-| DIR | LITERAL |  |  |  | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

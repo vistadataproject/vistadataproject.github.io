@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU LINK TO FLAG
- tag | LINK
+ label | {::nomarkdown}TIU LINK TO FLAG{:/}
+ tag | {::nomarkdown}LINK{:/}
  routine | [TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
- return value type | SINGLE VALUE
- description | This RPC is used to link a Progress Note to a Patient Record Flag
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is used to link a Progress Note to a Patient Record Flag{:/}
 
 
 ### Method description
@@ -27,12 +27,12 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUIEN | LITERAL |  | true | TIU DOCUMENT IEN (8925) | 
-| PRFIEN | LITERAL |  | true | Flag IEN (26.11 or 26.15) | 
-| ACTIENT | LITERAL |  | true | PRF Assignment History IEN (26.14) | 
-| DFN | LITERAL |  | true | Patient IEN (File 2) | 
+| {::nomarkdown}TIUIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TIU DOCUMENT IEN (8925){:/} | 
+| {::nomarkdown}PRFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Flag IEN (26.11 or 26.15){:/} | 
+| {::nomarkdown}ACTIENT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PRF Assignment History IEN (26.14){:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN (File 2){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

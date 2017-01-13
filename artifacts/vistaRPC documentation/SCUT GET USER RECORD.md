@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCUT GET USER RECORD
- tag | GETUSER
+ label | {::nomarkdown}SCUT GET USER RECORD{:/}
+ tag | {::nomarkdown}GETUSER{:/}
  routine | [SCUTBK3](http://code.osehra.org/dox/Routine_SCUTBK3_source.html)
- return value type | ARRAY
- description | This RPC returns user related data often needed by schedulingmodules. The data returned is used to set instance variablesfor the TScUser object type on the client.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns user related data often needed by schedulingmodules. The data returned is used to set instance variablesfor the TScUser object type on the client.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DUZ NUMBER | LITERAL | 20 | true | Internal entry number of the user. | 
+| {::nomarkdown}DUZ NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of the user.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

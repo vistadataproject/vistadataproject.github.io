@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 IMMED COLLECT
- tag | IMMCOLL
+ label | {::nomarkdown}ORWDLR32 IMMED COLLECT{:/}
+ tag | {::nomarkdown}IMMCOLL{:/}
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
- return value type | ARRAY
- description | Returns help text showing lab immediate collect times for the user'sdivision.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns help text showing lab immediate collect times for the user'sdivision.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

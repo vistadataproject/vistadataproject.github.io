@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS CAN EDIT
- tag | CANEDIT
+ label | {::nomarkdown}DSIF CNSLTS CAN EDIT{:/}
+ tag | {::nomarkdown}CANEDIT{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | RPC to determine whether a consult can be edited. Cloned from ORQQCN CAN EDIT
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to determine whether a consult can be edited. Cloned from ORQQCN CAN EDIT{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCIEN | LITERAL |  | true | This is the Consult IEN to check to determine if it can be edited. | 
+| {::nomarkdown}DSIFCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN to check to determine if it can be edited.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

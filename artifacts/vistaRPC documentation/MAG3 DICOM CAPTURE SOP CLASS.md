@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 DICOM CAPTURE SOP CLASS
- tag | GSOPCLAS
+ label | {::nomarkdown}MAG3 DICOM CAPTURE SOP CLASS{:/}
+ tag | {::nomarkdown}GSOPCLAS{:/}
  routine | [MAGNDCMC](http://code.osehra.org/dox/Routine_MAGNDCMC_source.html)
- return value type | SINGLE VALUE
- description | Returns SOP CLASS UID per SOP type  (e.g. \TELEDERM\)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns SOP CLASS UID per SOP type  (e.g. \TELEDERM\){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGSOP | LITERAL |  | true | MAGSOP = SOP type (e.g. \TELEDERM\) | 
+| {::nomarkdown}MAGSOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}MAGSOP = SOP type (e.g. \TELEDERM\){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

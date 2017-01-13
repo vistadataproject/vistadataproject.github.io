@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC FM VERIFY FILE
- tag | VFILE
+ label | {::nomarkdown}DSIC FM VERIFY FILE{:/}
+ tag | {::nomarkdown}VFILE{:/}
  routine | [DSICFM06](http://code.osehra.org/dox/Routine_DSICFM06_source.html)
- return value type | SINGLE VALUE
- description | This will verify whether or not a file exists.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will verify whether or not a file exists.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 30 | true | This is number of the file (or subfile) or the full name of the file that you wish to verify. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is number of the file (or subfile) or the full name of the file that you wish to verify.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

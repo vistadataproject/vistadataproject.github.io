@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBCN INSURANCE QUERY TASK
- tag | RPC
+ label | {::nomarkdown}IBCN INSURANCE QUERY TASK{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [IBCNRDV](http://code.osehra.org/dox/Routine_IBCNRDV_source.html)
- return value type | ARRAY
- description | This does a remote query on the insurance information. This is the one that used during tasked jobs to avoid user data exchange.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This does a remote query on the insurance information. This is the one that used during tasked jobs to avoid user data exchange.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBICN | LITERAL | 50 | true | This is the patient's ICN. | 
+| {::nomarkdown}IBICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient's ICN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET REASONS FOR REQUEST
- tag | GETREAS
+ label | {::nomarkdown}DSIR GET REASONS FOR REQUEST{:/}
+ tag | {::nomarkdown}GETREAS{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | ARRAY
- description | Retrieve entries from file 19620.31 DSIR REQUEST REASON.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Retrieve entries from file 19620.31 DSIR REQUEST REASON.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

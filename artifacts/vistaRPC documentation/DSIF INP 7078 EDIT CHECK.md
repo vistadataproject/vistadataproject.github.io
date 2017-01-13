@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP 7078 EDIT CHECK
- tag | EDTCHK
+ label | {::nomarkdown}DSIF INP 7078 EDIT CHECK{:/}
+ tag | {::nomarkdown}EDTCHK{:/}
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
- return value type | SINGLE VALUE
- description | This RPC is used to see if there is at least one payment on file for a given 7078.  This is needed by the GUI so it won't allow the user to edit a 7078 if a payment exists.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is used to see if there is at least one payment on file for a given 7078.  This is needed by the GUI so it won't allow the user to edit a 7078 if a payment exists.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 99 | true | Internal Entry Number for 7078 | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number for 7078{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

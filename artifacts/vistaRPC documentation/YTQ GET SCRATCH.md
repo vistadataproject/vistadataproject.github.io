@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ GET SCRATCH
- tag | GETSCR
+ label | {::nomarkdown}YTQ GET SCRATCH{:/}
+ tag | {::nomarkdown}GETSCR{:/}
  routine | [YTQPXRM8](http://code.osehra.org/dox/Routine_YTQPXRM8_source.html)
- return value type | GLOBAL ARRAY
- description | Returns data from the scratch file for thr MHA3 Clinical reminders DLL.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns data from the scratch file for thr MHA3 Clinical reminders DLL.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient DFN | 
-| CODE | LITERAL |  | true | Instrument Name from file 601.71 | 
-| HANDLE | LITERAL |  | true | Unigue identifier of the GUI session. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
+| {::nomarkdown}CODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Instrument Name from file 601.71{:/} | 
+| {::nomarkdown}HANDLE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Unigue identifier of the GUI session.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

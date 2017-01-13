@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROI1 PRINTLBL PRINT LABELS
- tag | PRINTLBL
+ label | {::nomarkdown}DSIROI1 PRINTLBL PRINT LABELS{:/}
+ tag | {::nomarkdown}PRINTLBL{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | GLOBAL ARRAY
- description | This procedure returns a clerk's batch labels for printing.vels
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This procedure returns a clerk's batch labels for printing.vels{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CIEN | LITERAL | 20 | true | This is the IEN for file 200 for the requesting clerk. | 
+| {::nomarkdown}CIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN for file 200 for the requesting clerk.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

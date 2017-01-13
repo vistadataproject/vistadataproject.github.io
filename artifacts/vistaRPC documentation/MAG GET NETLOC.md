@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG GET NETLOC
- tag | SHARE
+ label | {::nomarkdown}MAG GET NETLOC{:/}
+ tag | {::nomarkdown}SHARE{:/}
  routine | [MAGGTU6](http://code.osehra.org/dox/Routine_MAGGTU6_source.html)
- return value type | ARRAY
- description | Returns a list of all entries in the Network Location file (2005.2).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all entries in the Network Location file (2005.2).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

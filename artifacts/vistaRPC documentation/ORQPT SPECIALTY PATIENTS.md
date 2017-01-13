@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT SPECIALTY PATIENTS
- tag | SPECPTS
+ label | {::nomarkdown}ORQPT SPECIALTY PATIENTS{:/}
+ tag | {::nomarkdown}SPECPTS{:/}
  routine | [ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
- return value type | ARRAY
- description | Function returns an array of patients linked to a treating specialty.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Function returns an array of patients linked to a treating specialty.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SPECIALTY ID | LITERAL | 16 | true | The record number of the treating specialty from the Facility TreatingSpecialty File (#45.7). | 
+| {::nomarkdown}SPECIALTY ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The record number of the treating specialty from the Facility TreatingSpecialty File (#45.7).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

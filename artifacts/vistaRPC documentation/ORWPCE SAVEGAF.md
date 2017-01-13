@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE SAVEGAF
- tag | SAVEGAF
+ label | {::nomarkdown}ORWPCE SAVEGAF{:/}
+ tag | {::nomarkdown}SAVEGAF{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
- description | Saves a GAF Score.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves a GAF Score.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORINPUT | LIST |  |  | ORINPUT(\DFN\) = Patient IENORINPUT(\GAF\) = GAF ScoreORINPUT(\DATE\) = Date/Time of DiagnosisORINPUT(\STAFF\) = Diagnosis By DUZ | 
+| {::nomarkdown}ORINPUT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ORINPUT(\DFN\) = Patient IENORINPUT(\GAF\) = GAF ScoreORINPUT(\DATE\) = Date/Time of DiagnosisORINPUT(\STAFF\) = Diagnosis By DUZ{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

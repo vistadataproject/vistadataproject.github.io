@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB EXAMPLE ECHO STRING
- tag | ECHOSTR
+ label | {::nomarkdown}XWB EXAMPLE ECHO STRING{:/}
+ tag | {::nomarkdown}ECHOSTR{:/}
  routine | [XWBEXMPL](http://code.osehra.org/dox/Routine_XWBEXMPL_source.html)
- return value type | SINGLE VALUE
- description | This RPC receives a string which will be sent right back to the client.It exists for support of RPC Broker Example program.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC receives a string which will be sent right back to the client.It exists for support of RPC Broker Example program.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INP | LITERAL | 255 |  |  | 
-| STR | LITERAL |  |  |  | 
+| {::nomarkdown}INP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} |  |  | 
+| {::nomarkdown}STR{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

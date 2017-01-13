@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC DELETE ENTRY
- tag | DIKC
+ label | {::nomarkdown}SC DELETE ENTRY{:/}
+ tag | {::nomarkdown}DIKC{:/}
  routine | [SCUTBK1](http://code.osehra.org/dox/Routine_SCUTBK1_source.html)
- return value type | SINGLE VALUE
- description | Allows file entry deletion via FileMan ^DIK call.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Allows file entry deletion via FileMan ^DIK call.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAMETERS | LIST |  | true | Contains subscripts that indicate global root and entry number. | 
+| {::nomarkdown}PARAMETERS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Contains subscripts that indicate global root and entry number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

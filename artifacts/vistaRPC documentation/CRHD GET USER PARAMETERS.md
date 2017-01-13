@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD GET USER PARAMETERS
- tag | GETIT
+ label | {::nomarkdown}CRHD GET USER PARAMETERS{:/}
+ tag | {::nomarkdown}GETIT{:/}
  routine | [CRHD11](http://code.osehra.org/dox/Routine_CRHD11_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

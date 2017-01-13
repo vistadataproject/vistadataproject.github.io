@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET SITE PARAMETERS
- tag | SITEPARM
+ label | {::nomarkdown}TIU GET SITE PARAMETERS{:/}
+ tag | {::nomarkdown}SITEPARM{:/}
  routine | [TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns the TIU Parameters for the Division the user is logged in to.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns the TIU Parameters for the Division the user is logged in to.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

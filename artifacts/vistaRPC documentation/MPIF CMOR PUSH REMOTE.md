@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF CMOR PUSH REMOTE
- tag | EN
+ label | {::nomarkdown}MPIF CMOR PUSH REMOTE{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [MPIFRCMP](http://code.osehra.org/dox/Routine_MPIFRCMP_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure call (RPC) allows the DQ team to remotely create a change of CMOR push.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure call (RPC) allows the DQ team to remotely create a change of CMOR push.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 10 | true | ICN - not including the checksum | 
-| NCMOR | LITERAL | 3 | true | The station number of the site that is to become the CMOR. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICN - not including the checksum{:/} | 
+| {::nomarkdown}NCMOR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The station number of the site that is to become the CMOR.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

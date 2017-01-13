@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG IMAGE INFO
- tag | IMAGEINF
+ label | {::nomarkdown}MAGG IMAGE INFO{:/}
+ tag | {::nomarkdown}IMAGEINF{:/}
  routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
- return value type | ARRAY
- description | Returns information on 1 Image
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns information on 1 Image{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 30 | true | internal entry number in IMAGE file  ^MAG(2005,IEN | 
-| NOQACHK | LITERAL | 4 | true | If this flag is sent with a value of 1, then the QA check willnot be run.  Image information will be returned even if it is animage of Questionable Integrity.This is used when deleting an Image, but the user needs to seeinformation that may have been blocked otherwise. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}internal entry number in IMAGE file  ^MAG(2005,IEN{:/} | 
+| {::nomarkdown}NOQACHK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If this flag is sent with a value of 1, then the QA check willnot be run.  Image information will be returned even if it is animage of Questionable Integrity.This is used when deleting an Image, but the user needs to seeinformation that may have been blocked otherwise.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

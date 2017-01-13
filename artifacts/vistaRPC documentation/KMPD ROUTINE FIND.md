@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD ROUTINE FIND
- tag | ROUFIND
+ label | {::nomarkdown}KMPD ROUTINE FIND{:/}
+ tag | {::nomarkdown}ROUFIND{:/}
  routine | [KMPDU2](http://code.osehra.org/dox/Routine_KMPDU2_source.html)
- return value type | GLOBAL ARRAY
- description | Return list of routine names.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Return list of routine names.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAM1 | LITERAL | 30 | true | Routine name to search for (may contain an asterisk (*) for a list). | 
-| PARAM2 | LITERAL | 60 | true | Temporary global storage name.  Must be either ^TMP or ^UTILITY. | 
+| {::nomarkdown}PARAM1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Routine name to search for (may contain an asterisk (*) for a list).{:/} | 
+| {::nomarkdown}PARAM2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Temporary global storage name.  Must be either ^TMP or ^UTILITY.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

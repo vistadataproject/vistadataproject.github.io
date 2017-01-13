@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG LOG ERROR TEXT
- tag | LOGERROR
+ label | {::nomarkdown}MAGG LOG ERROR TEXT{:/}
+ tag | {::nomarkdown}LOGERROR{:/}
  routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
- return value type | SINGLE VALUE
- description | This call inserts text into the Error field of the IMAGING WINDOWSSESSION FILE.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This call inserts text into the Error field of the IMAGING WINDOWSSESSION FILE.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEXT | LIST |  | true | This is the list of text to insert. | 
+| {::nomarkdown}TEXT{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of text to insert.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

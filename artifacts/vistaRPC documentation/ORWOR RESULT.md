@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR RESULT
- tag | RESULT
+ label | {::nomarkdown}ORWOR RESULT{:/}
+ tag | {::nomarkdown}RESULT{:/}
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
- return value type | GLOBAL ARRAY
- description | Returns results of a CPRS order.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns results of a CPRS order.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

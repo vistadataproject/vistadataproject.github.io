@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CPT CR DISPLAY
- tag | CPT
+ label | {::nomarkdown}DSIF CPT CR DISPLAY{:/}
+ tag | {::nomarkdown}CPT{:/}
  routine | [DSIFPAY0](http://code.osehra.org/dox/Routine_DSIFPAY0_source.html)
- return value type | ARRAY
- description | Returns a list of the CPT notification (same as ^VACPT).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of the CPT notification (same as ^VACPT).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

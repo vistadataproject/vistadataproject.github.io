@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC DPT TEST PATIENT
- tag | TEST
+ label | {::nomarkdown}DSIC DPT TEST PATIENT{:/}
+ tag | {::nomarkdown}TEST{:/}
  routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
- return value type | SINGLE VALUE
- description | This will return a Boolean value indicating whether or not the patient record is a test patient or a real patient.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will return a Boolean value indicating whether or not the patient record is a test patient or a real patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PAT | LITERAL | 35 | true | This is any lookup value for a patient (name, SSN, DFN, etc.) | 
-| ISSSN | LITERAL | 1 | true | This is a Boolean flag.  If 1, then the PAT lookup value is the patient's SSN. | 
+| {::nomarkdown}PAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is any lookup value for a patient (name, SSN, DFN, etc.){:/} | 
+| {::nomarkdown}ISSSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a Boolean flag.  If 1, then the PAT lookup value is the patient's SSN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

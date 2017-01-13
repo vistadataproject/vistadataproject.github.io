@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM CON GET TELE READER
- tag | GETREAD
+ label | {::nomarkdown}MAG DICOM CON GET TELE READER{:/}
+ tag | {::nomarkdown}GETREAD{:/}
  routine | [MAGDTR06](http://code.osehra.org/dox/Routine_MAGDTR06_source.html)
- return value type | ARRAY
- description | Return the sites and diagnostic specialties for the tele reader.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return the sites and diagnostic specialties for the tele reader.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX AGAIN
- tag | AGAIN
+ label | {::nomarkdown}ORWDX AGAIN{:/}
+ tag | {::nomarkdown}AGAIN{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | SINGLE VALUE
- description | Returns a 1 if the dialog should be kept for another order, otherwise 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns a 1 if the dialog should be kept for another order, otherwise 0.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGLAB START
- tag | START
+ label | {::nomarkdown}MAGGLAB START{:/}
+ tag | {::nomarkdown}START{:/}
  routine | [MAGGTLB](http://code.osehra.org/dox/Routine_MAGGTLB_source.html)
- return value type | ARRAY
- description | ;The line tag START is used for selection of the specimen that the image relates to. This line tag will require a lab section (Autopsy/ Gross, Autopsy/Microscopic, EM, Surgical Path, or Cytology),the Accession year, and either an Accession # or Autopsy #.  Based onthis information it will return an array of specimens for selection.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown};The line tag START is used for selection of the specimen that the image relates to. This line tag will require a lab section (Autopsy/ Gross, Autopsy/Microscopic, EM, Surgical Path, or Cytology),the Accession year, and either an Accession # or Autopsy #.  Based onthis information it will return an array of specimens for selection.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SECT | LITERAL | 60 | true | Lab section, i.e. SP, CY, etc. | 
-| YEAR | LITERAL | 30 | true | Lab specimen year. | 
-| ACNUM | LITERAL | 60 | true | Lab accession number. | 
-| DFN | LITERAL |  |  | PATIENT'S DFN | 
+| {::nomarkdown}SECT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Lab section, i.e. SP, CY, etc.{:/} | 
+| {::nomarkdown}YEAR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Lab specimen year.{:/} | 
+| {::nomarkdown}ACNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Lab accession number.{:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}PATIENT'S DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

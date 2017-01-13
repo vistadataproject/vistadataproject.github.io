@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP SAVE DEFAULT PRINTER
- tag | SAVDFPRT
+ label | {::nomarkdown}ORWRP SAVE DEFAULT PRINTER{:/}
+ tag | {::nomarkdown}SAVDFPRT{:/}
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
- return value type | SINGLE VALUE
- description | Saves printer as user's default printer.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves printer as user's default printer.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

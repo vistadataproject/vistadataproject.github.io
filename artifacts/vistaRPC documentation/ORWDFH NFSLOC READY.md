@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDFH NFSLOC READY
- tag | OPLOCOK
+ label | {::nomarkdown}ORWDFH NFSLOC READY{:/}
+ tag | {::nomarkdown}OPLOCOK{:/}
  routine | [ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
- return value type | SINGLE VALUE
- description | Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

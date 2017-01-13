@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV FIND SOP BY UID
- tag | FINDSOP
+ label | {::nomarkdown}MAGV FIND SOP BY UID{:/}
+ tag | {::nomarkdown}FINDSOP{:/}
  routine | [MAGVRS21](http://code.osehra.org/dox/Routine_MAGVRS21_source.html)
- return value type | SINGLE VALUE
- description | This RPC looks up SOPs by SOP UID.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC looks up SOPs by SOP UID.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SOPUID | LITERAL |  |  | The SOP UID used to look up the series. | 
+| {::nomarkdown}SOPUID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The SOP UID used to look up the series.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

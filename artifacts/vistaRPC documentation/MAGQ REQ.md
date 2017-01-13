@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ REQ
- tag | REQUE
+ label | {::nomarkdown}MAGQ REQ{:/}
+ tag | {::nomarkdown}REQUE{:/}
  routine | [MAGQBTM](http://code.osehra.org/dox/Routine_MAGQBTM_source.html)
- return value type | SINGLE VALUE
- description | Requeues a process which failed.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Requeues a process which failed.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | Internal Entry Number of the Vista Imaging Queue file (#2006.03) of theentry to be requeued. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number of the Vista Imaging Queue file (#2006.03) of theentry to be requeued.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

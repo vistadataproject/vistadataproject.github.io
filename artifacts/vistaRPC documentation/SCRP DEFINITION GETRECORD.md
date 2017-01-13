@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCRP DEFINITION GETRECORD
- tag | GETREC
+ label | {::nomarkdown}SCRP DEFINITION GETRECORD{:/}
+ tag | {::nomarkdown}GETREC{:/}
  routine | [SCRPBK](http://code.osehra.org/dox/Routine_SCRPBK_source.html)
- return value type | ARRAY
- description | This RPC returns a scheduling report definition as definedin file 404.92.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a scheduling report definition as definedin file 404.92.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REPORT ENTRY | LITERAL | 20 | true | Internal entry number of the report definition from file 404.92. | 
+| {::nomarkdown}REPORT ENTRY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of the report definition from file 404.92.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

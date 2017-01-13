@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE GET DESCRIPTION
- tag | GETDESC
+ label | {::nomarkdown}TIU TEMPLATE GET DESCRIPTION{:/}
+ tag | {::nomarkdown}GETDESC{:/}
  routine | [TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
- return value type | ARRAY
- description | Returns a Template's Description
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a Template's Description{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  |  | Template IEN | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Template IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD SUINDV
- tag | SUINDV
+ label | {::nomarkdown}ORWTPD SUINDV{:/}
+ tag | {::nomarkdown}SUINDV{:/}
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
- return value type | SINGLE VALUE
- description | set user level individual report's time/occ setting
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}set user level individual report's time/occ setting{:/}
 
 
 ### Method description
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

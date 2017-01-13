@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWSR CASELIST
- tag | CASELIST
+ label | {::nomarkdown}ORWSR CASELIST{:/}
+ tag | {::nomarkdown}CASELIST{:/}
  routine | [ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of all surgery cases for a patient, without documents asreturned by ORWSR LIST.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all surgery cases for a patient, without documents asreturned by ORWSR LIST.{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| dfn | LITERAL | 32 | true | Patient DFN | 
+| {::nomarkdown}dfn{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

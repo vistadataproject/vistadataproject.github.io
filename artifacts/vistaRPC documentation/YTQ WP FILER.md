@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ WP FILER
- tag | WPED
+ label | {::nomarkdown}YTQ WP FILER{:/}
+ tag | {::nomarkdown}WPED{:/}
  routine | [YTQAPI1](http://code.osehra.org/dox/Routine_YTQAPI1_source.html)
- return value type | ARRAY
- description | Files single Word Processing Field.It REPLACES previous text if any with current text. Input:   FILEN= fileman file Number   IEN= internal record number (cannot create a new record)   FIELD= field to be modified (must be a WP field)   YS(1)= TEXT line 1   ...   YS(X)=TEXT line X Output:   [DATA] if no errors VS [ERROR]
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Files single Word Processing Field.It REPLACES previous text if any with current text. Input:   FILEN= fileman file Number   IEN= internal record number (cannot create a new record)   FIELD= field to be modified (must be a WP field)   YS(1)= TEXT line 1   ...   YS(X)=TEXT line X Output:   [DATA] if no errors VS [ERROR]{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

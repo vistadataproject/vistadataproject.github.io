@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC XUTIL NAME COMPONENT
- tag | NAMECOM
+ label | {::nomarkdown}DSIC XUTIL NAME COMPONENT{:/}
+ tag | {::nomarkdown}NAMECOM{:/}
  routine | [DSICDPT](http://code.osehra.org/dox/Routine_DSICDPT_source.html)
- return value type | SINGLE VALUE
- description | This will take a standard VistA person name in the format Last,First M and return the individual name components.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will take a standard VistA person name in the format Last,First M and return the individual name components.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VNAME | LITERAL | 50 | true | This is the standard VistA person name in the format Last,First M | 
+| {::nomarkdown}VNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the standard VistA person name in the format Last,First M{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

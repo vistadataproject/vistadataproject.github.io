@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DG CHK MEANS TEST DIV DISPLAY
- tag | GUIDMT
+ label | {::nomarkdown}DG CHK MEANS TEST DIV DISPLAY{:/}
+ tag | {::nomarkdown}GUIDMT{:/}
  routine | [DPTLK6](http://code.osehra.org/dox/Routine_DPTLK6_source.html)
- return value type | ARRAY
- description | CHECKS DIVISION FILE FOR DIV USER IS IN IF MEANS TEST REQUIRED IS SET TO YESRETURNS 1 IN 1ST STRING AND MEANS TEST TEXT  IN 2ND AND 3RD STRING (IF ANY) OTHERWISE RETURNS 0 IN 1ST STRING
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}CHECKS DIVISION FILE FOR DIV USER IS IN IF MEANS TEST REQUIRED IS SET TO YESRETURNS 1 IN 1ST STRING AND MEANS TEST TEXT  IN 2ND AND 3RD STRING (IF ANY) OTHERWISE RETURNS 0 IN 1ST STRING{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DUZ2 | LITERAL |  | true | Institution file pointer | 
+| {::nomarkdown}DUZ2{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Institution file pointer{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

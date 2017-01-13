@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SD W_L CREATE DISPOSITION
- tag | INPUTD
+ label | {::nomarkdown}SD W_L CREATE DISPOSITION{:/}
+ tag | {::nomarkdown}INPUTD{:/}
  routine | [SDWLRP1](http://code.osehra.org/dox/Routine_SDWLRP1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR FEES OUT RPT
- tag | FEESOUT
+ label | {::nomarkdown}DSIR FEES OUT RPT{:/}
+ tag | {::nomarkdown}FEESOUT{:/}
  routine | [DSIRBIR0](http://code.osehra.org/dox/Routine_DSIRBIR0_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC produces the data for the Fees Outstanding Report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC produces the data for the Fees Outstanding Report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIVISIONS | LITERAL | 999 | true | This is a variable '^' delimited containing selected Divisions from whichthe user may see data. | 
+| {::nomarkdown}DIVISIONS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a variable '^' delimited containing selected Divisions from whichthe user may see data.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

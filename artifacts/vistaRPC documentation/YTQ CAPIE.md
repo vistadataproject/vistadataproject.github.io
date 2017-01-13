@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ CAPIE
- tag | CAPIE
+ label | {::nomarkdown}YTQ CAPIE{:/}
+ tag | {::nomarkdown}CAPIE{:/}
  routine | [YTQAPI1](http://code.osehra.org/dox/Routine_YTQAPI1_source.html)
- return value type | GLOBAL ARRAY
- description | Returns array of data from specified file and IENSINPUT: FILEN as number       FIELDS \**\ or a field Number       IENS as internal record number (no comma)OUTPUT: Field #(;subfield)^ Field label ^ internal data ^ [external data] ifdifferent
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns array of data from specified file and IENSINPUT: FILEN as number       FIELDS \**\ or a field Number       IENS as internal record number (no comma)OUTPUT: Field #(;subfield)^ Field label ^ internal data ^ [external data] ifdifferent{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

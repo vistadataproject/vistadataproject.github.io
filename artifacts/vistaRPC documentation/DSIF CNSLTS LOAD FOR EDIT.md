@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS LOAD FOR EDIT
- tag | LOFED
+ label | {::nomarkdown}DSIF CNSLTS LOAD FOR EDIT{:/}
+ tag | {::nomarkdown}LOFED{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC loads a Consult so that it can be edited. Cloned from ORQQCN LOAD FOR EDIT
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC loads a Consult so that it can be edited. Cloned from ORQQCN LOAD FOR EDIT{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCIEN | LITERAL |  | true | This is the Consult IEN to which needs to be loaded. | 
+| {::nomarkdown}DSIFCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN to which needs to be loaded.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

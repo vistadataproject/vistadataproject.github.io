@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETPROVIDER
- tag | PRVDER
+ label | {::nomarkdown}EC GETPROVIDER{:/}
+ tag | {::nomarkdown}PRVDER{:/}
  routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns an array of valid providers based on a procedure date.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns an array of valid providers based on a procedure date.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input variable ECARY contains the procedure date. | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable ECARY contains the procedure date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

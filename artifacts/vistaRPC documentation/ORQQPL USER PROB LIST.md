@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL USER PROB LIST
- tag | PROB
+ label | {::nomarkdown}ORQQPL USER PROB LIST{:/}
+ tag | {::nomarkdown}PROB{:/}
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
- return value type | ARRAY
- description | Returns array of user specific problems to select from
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns array of user specific problems to select from{:/}
 
 
 ### Method description
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Category | LITERAL |  |  | IFN of problem category | 
+| {::nomarkdown}Category{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IFN of problem category{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 5:52:13 am

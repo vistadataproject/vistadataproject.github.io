@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS LAST5
- tag | LAST5
+ label | {::nomarkdown}VPS LAST5{:/}
+ tag | {::nomarkdown}LAST5{:/}
  routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
- return value type | ARRAY
- description |  Returns a list of patients matching LastNameInitial_Last4SSN based onRestricted Patient List.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Returns a list of patients matching LastNameInitial_Last4SSN based onRestricted Patient List.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSID | LITERAL | 30 | true | String literal containing patient's last name initial and last 4-digits ofthe SSN i.e., \T9999\. | 
+| {::nomarkdown}VPSID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}String literal containing patient's last name initial and last 4-digits ofthe SSN i.e., \T9999\.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

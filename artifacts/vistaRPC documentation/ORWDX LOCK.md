@@ -9,11 +9,11 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX LOCK
- tag | LOCK
+ label | {::nomarkdown}ORWDX LOCK{:/}
+ tag | {::nomarkdown}LOCK{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | SINGLE VALUE
- description | RPC to attempt to lock patient for ordering (returns 1 if successful or 0if unsuccessful).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to attempt to lock patient for ordering (returns 1 if successful or 0if unsuccessful).{:/}
 
 
 ### Method description
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

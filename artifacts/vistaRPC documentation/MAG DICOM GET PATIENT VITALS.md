@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET PATIENT VITALS
- tag | GETPAT
+ label | {::nomarkdown}MAG DICOM GET PATIENT VITALS{:/}
+ tag | {::nomarkdown}GETPAT{:/}
  routine | [MAGDHWR](http://code.osehra.org/dox/Routine_MAGDHWR_source.html)
- return value type | ARRAY
- description | This Remote Procedure returns some information about a patient.At this time, the values returned are   VIP-code   Height   WeightThis list may be extended in the future.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure returns some information about a patient.At this time, the values returned are   VIP-code   Height   WeightThis list may be extended in the future.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | The value of this parameter is the VA-defined DFN patient identifier.This is the internal entry number for the patient at the local hospital. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is the VA-defined DFN patient identifier.This is the internal entry number for the patient at the local hospital.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

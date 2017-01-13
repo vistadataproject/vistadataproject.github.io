@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS RESUBMIT
- tag | RESUB
+ label | {::nomarkdown}DSIF CNSLTS RESUBMIT{:/}
+ tag | {::nomarkdown}RESUB{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | This RPC allows for a consult to be resubmitted. Cloned from ORQQCN RESUBMIT
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC allows for a consult to be resubmitted. Cloned from ORQQCN RESUBMIT{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCIEN | LITERAL |  | true | This is the Consult IEN to which needs to be resubmitted. | 
-| DSIFEDIT | LIST |  | true | This is the array of comments associated with the resubmit request. | 
+| {::nomarkdown}DSIFCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN to which needs to be resubmitted.{:/} | 
+| {::nomarkdown}DSIFEDIT{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the array of comments associated with the resubmit request.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

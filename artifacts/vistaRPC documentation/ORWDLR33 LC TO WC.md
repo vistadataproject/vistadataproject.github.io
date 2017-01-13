@@ -9,10 +9,10 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR33 LC TO WC
- tag | LCTOWC
+ label | {::nomarkdown}ORWDLR33 LC TO WC{:/}
+ tag | {::nomarkdown}LCTOWC{:/}
  routine | [ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
@@ -26,9 +26,9 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LOCATION | LITERAL | 32 | true |  | 
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG IMAGE DELETE
- tag | IMAGEDEL
+ label | {::nomarkdown}MAGG IMAGE DELETE{:/}
+ tag | {::nomarkdown}IMAGEDEL{:/}
  routine | [MAGGTID](http://code.osehra.org/dox/Routine_MAGGTID_source.html)
- return value type | ARRAY
- description | Deletes Image entry from Image file, ^MAG(2005 and Image File from disk.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Deletes Image entry from Image file, ^MAG(2005 and Image File from disk.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL | 30 | true | Internal entry number in the IMAGE FM File.  ^MAG(2005 | 
-| MAGGRPDF | LITERAL | 1 | true | This is a Group Delete Flag1 or 0     1  =  Allow Group Delete     0  =  Do not Allow Group Deletes. | 
-| REASON | LITERAL | 60 | true | This is a free text description of the Reason for Deleting the Image. | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number in the IMAGE FM File.  ^MAG(2005{:/} | 
+| {::nomarkdown}MAGGRPDF{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a Group Delete Flag1 or 0     1  =  Allow Group Delete     0  =  Do not Allow Group Deletes.{:/} | 
+| {::nomarkdown}REASON{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a free text description of the Reason for Deleting the Image.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am

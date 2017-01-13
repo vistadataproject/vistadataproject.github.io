@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETECLOC
- tag | ECLOC
+ label | {::nomarkdown}EC GETECLOC{:/}
+ tag | {::nomarkdown}ECLOC{:/}
  routine | [ECUMRPC](http://code.osehra.org/dox/Routine_ECUMRPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns an array with all active Event Capture locations from file #4.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns an array with all active Event Capture locations from file #4.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 5:52:13 am
