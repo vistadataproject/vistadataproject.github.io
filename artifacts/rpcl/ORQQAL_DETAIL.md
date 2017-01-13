@@ -30,6 +30,7 @@ title: RPCL documentation
 
 #### Example return value
 
+```
     Causative agent: ACETAMINOPHEN/CODEINE
  Nature of Reaction: Adverse Reaction
 
@@ -47,8 +48,10 @@ Comments:
    NOV 06, 2016@03:18 by ORIGINATOR
 don't give the guy this med! 
 
+```
 
 
 
 
- Generated on January 12th 2017, 6:57:40 am
+
+ Generated on January 13th 2017, 5:57:30 am
