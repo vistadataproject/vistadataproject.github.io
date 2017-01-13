@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save reponses to CP questions
  Input Parameters | {::nomarkdown}ORINFO{:/}
- Lines | ```{::nomarkdown} Q:'$D(ORINFO)<br/> N ORIFN,ORI,ORX,ANS S ORI=0<br/> F  S ORI=$O(ORINFO(ORI)) Q:'ORI  D<br/> .S ORIFN=$P($P(ORINFO(ORI),U,1),";",1)<br/> .S ANS=$P(ORINFO(ORI),U,2)<br/> .D REFMT(.ORX,ANS)<br/> .D SC^ORCSAVE2(.ORX,ORIFN)<br/> S Y=1<br/> K ORIFN,ORX,ORI,ANS```{:/}
+ Lines | {::nomarkdown} Q:'$D(ORINFO)<br/> N ORIFN,ORI,ORX,ANS S ORI=0<br/> F  S ORI=$O(ORINFO(ORI)) Q:'ORI  D<br/> .S ORIFN=$P($P(ORINFO(ORI),U,1),";",1)<br/> .S ANS=$P(ORINFO(ORI),U,2)<br/> .D REFMT(.ORX,ANS)<br/> .D SC^ORCSAVE2(.ORX,ORIFN)<br/> S Y=1<br/> K ORIFN,ORX,ORI,ANS{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

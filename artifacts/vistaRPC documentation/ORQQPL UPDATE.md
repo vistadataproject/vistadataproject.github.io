@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | UPDATE A PROBLEM RECORD
  Input Parameters | {::nomarkdown}UPDARRAY{:/}
- Lines | ```{::nomarkdown} N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br/> S S=""<br/> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br/> . S @UPDARRAY(S)<br/> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br/> S ORRETURN(1)=ORRETURN(0) ; error text<br/> S ORRETURN(0)=ORRETURN ; gmpdfn<br/> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need```{:/}
+ Lines | {::nomarkdown} N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br/> S S=""<br/> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br/> . S @UPDARRAY(S)<br/> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br/> S ORRETURN(1)=ORRETURN(0) ; error text<br/> S ORRETURN(0)=ORRETURN ; gmpdfn<br/> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need{:/}
  Leading comment lines | {::nomarkdown}Does essentially same job as EDSAVE above, however does not handle edits to comments<br/>or addition of multiple comments.<br/>Use initially just for status updates.{:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

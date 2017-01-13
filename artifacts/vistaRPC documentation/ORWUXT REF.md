@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a global reference
  Input Parameters | {::nomarkdown}P1<br/>P2<br/>P3{:/}
- Lines | ```{::nomarkdown}```{:/}
+ Lines | {::nomarkdown}{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

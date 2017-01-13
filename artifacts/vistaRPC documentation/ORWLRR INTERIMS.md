@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | from Remote Procedure file
  Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>ORTESTS{:/}
- Lines | ```{::nomarkdown} D INTERIMS^LR7OGM(.ORY,DFN,DATE1,DATE2,.ORTESTS)```{:/}
+ Lines | {::nomarkdown} D INTERIMS^LR7OGM(.ORY,DFN,DATE1,DATE2,.ORTESTS){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return Event information based on EVT ptr #100.5
  Input Parameters | {::nomarkdown}EVT{:/}
- Lines | ```{::nomarkdown} Q:'+EVT<br/> N EVTTYPE,EVTNAME,EVTDISP,EVTDLG,PRTEVT<br/> S (EVTDLG,PRTEVT)=0<br/> S PRTEVT=$P(^ORD(100.5,+EVT,0),U,12)<br/> I PRTEVT>0 S EVTTYPE=$P(^ORD(100.5,PRTEVT,0),U,2)<br/> E  S EVTTYPE=$P(^ORD(100.5,+EVT,0),U,2)<br/> S EVTNAME=$P($G(^ORD(100.5,+EVT,0)),U,1)<br/> S EVTDISP=$P($G(^ORD(100.5,+EVT,0)),U,8)<br/> S EVTDLG=$P($G(^ORD(100.5,+EVT,0)),U,4)<br/> S ORY=EVTTYPE_U_EVT_U_EVTNAME_U_EVTDISP_U_EVTDLG```{:/}
+ Lines | {::nomarkdown} Q:'+EVT<br/> N EVTTYPE,EVTNAME,EVTDISP,EVTDLG,PRTEVT<br/> S (EVTDLG,PRTEVT)=0<br/> S PRTEVT=$P(^ORD(100.5,+EVT,0),U,12)<br/> I PRTEVT>0 S EVTTYPE=$P(^ORD(100.5,PRTEVT,0),U,2)<br/> E  S EVTTYPE=$P(^ORD(100.5,+EVT,0),U,2)<br/> S EVTNAME=$P($G(^ORD(100.5,+EVT,0)),U,1)<br/> S EVTDISP=$P($G(^ORD(100.5,+EVT,0)),U,8)<br/> S EVTDLG=$P($G(^ORD(100.5,+EVT,0)),U,4)<br/> S ORY=EVTTYPE_U_EVT_U_EVTNAME_U_EVTDISP_U_EVTDLG{:/}
  Leading comment lines | {::nomarkdown}EVT    ptr #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

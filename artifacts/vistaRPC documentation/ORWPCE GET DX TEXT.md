@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC to resolve Dx Text for PCE view
  Input Parameters | {::nomarkdown}NARR<br/>CODE{:/}
- Lines | ```{::nomarkdown} S ORY=$$SETNARR(NARR,CODE)```{:/}
+ Lines | {::nomarkdown} S ORY=$$SETNARR(NARR,CODE){:/}
 
 ### Input Parameters
 
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -21,7 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ICN{:/}
- Lines | ```{::nomarkdown} S RESULT=$$GETDFN^MPIF001(ICN)```{:/}
+ Lines | {::nomarkdown} S RESULT=$$GETDFN^MPIF001(ICN){:/}
 
 ### Input Parameters
 
@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

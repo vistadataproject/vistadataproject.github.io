@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
  Input Parameters | {::nomarkdown}ORFROM<br/>DIR{:/}
- Lines | ```{::nomarkdown} N I,IEN,CNT S I=0,CNT=44<br/> F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.<br/> . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D<br/> . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))<br/> . . S I=I+1,Y(I)=IEN_"^"_ORFROM<br/>```{:/}
+ Lines | {::nomarkdown} N I,IEN,CNT S I=0,CNT=44<br/> F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.<br/> . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D<br/> . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))<br/> . . S I=I+1,Y(I)=IEN_"^"_ORFROM<br/>{:/}
  Leading comment lines | {::nomarkdown}C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.<br/>.Y=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

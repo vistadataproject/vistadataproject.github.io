@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns status of the ORWPCE ANYTIME ENCOUNTERS parameter
- Lines | ```{::nomarkdown} N SRV<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE ANYTIME ENCOUNTERS",1,"Q")<br/> I +ORY S ORY=1```{:/}
+ Lines | {::nomarkdown} N SRV<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE ANYTIME ENCOUNTERS",1,"Q")<br/> I +ORY S ORY=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

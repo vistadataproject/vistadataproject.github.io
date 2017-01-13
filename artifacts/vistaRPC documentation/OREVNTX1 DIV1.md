@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return division for EVT ptr #100.5
  Input Parameters | {::nomarkdown}EVT{:/}
- Lines | ```{::nomarkdown} Q:'+EVT<br/> S ORY=+$P($G(^ORD(100.5,+EVT,0)),U,3) S:ORY<1 ORY=+$G(DUZ(2))```{:/}
+ Lines | {::nomarkdown} Q:'+EVT<br/> S ORY=+$P($G(^ORD(100.5,+EVT,0)),U,3) S:ORY<1 ORY=+$G(DUZ(2)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

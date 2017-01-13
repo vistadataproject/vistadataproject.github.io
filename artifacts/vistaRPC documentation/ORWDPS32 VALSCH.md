@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | validate a schedule, return 1 if valid, 0 if not
  Input Parameters | {::nomarkdown}X<br/>PSTYPE{:/}
- Lines | ```{::nomarkdown} I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br/> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br/> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br/> . K X S:$D(ORX) X=ORX<br/> E  D<br/> . D EN^PSSGSGUI<br/> S OK=$S($D(X):1,1:0)<br/>```{:/}
+ Lines | {::nomarkdown} I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br/> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br/> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br/> . K X S:$D(ORX) X=ORX<br/> E  D<br/> . D EN^PSSGSGUI<br/> S OK=$S($D(X):1,1:0)<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

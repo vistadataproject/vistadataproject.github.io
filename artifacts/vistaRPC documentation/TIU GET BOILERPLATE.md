@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns a Titles Boilerplate
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```{::nomarkdown} Q:+$G(IEN)'>0<br/> N I,IDX<br/> S (I,IDX)=0<br/> F  S IDX=$O(^TIU(8925.1,IEN,"DFLT",IDX)) Q:+IDX=0  D<br/> .S I=I+1<br/> .S Y(I)=^TIU(8925.1,IEN,"DFLT",IDX,0)```{:/}
+ Lines | {::nomarkdown} Q:+$G(IEN)'>0<br/> N I,IDX<br/> S (I,IDX)=0<br/> F  S IDX=$O(^TIU(8925.1,IEN,"DFLT",IDX)) Q:+IDX=0  D<br/> .S I=I+1<br/> .S Y(I)=^TIU(8925.1,IEN,"DFLT",IDX,0){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

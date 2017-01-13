@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get site parameters for GUI
- Lines | ```{::nomarkdown} N TIUPRM0,TIUPRM1<br/> D SETPARM^TIULE<br/> S TIUY=TIUPRM0```{:/}
+ Lines | {::nomarkdown} N TIUPRM0,TIUPRM1<br/> D SETPARM^TIULE<br/> S TIUY=TIUPRM0{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

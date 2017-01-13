@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return single listbox item for document
  Input Parameters | {::nomarkdown}ORTIUDA{:/}
- Lines | ```{::nomarkdown} Q:+$G(ORTIUDA)=0<br/> S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA)```{:/}
+ Lines | {::nomarkdown} Q:+$G(ORTIUDA)=0<br/> S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

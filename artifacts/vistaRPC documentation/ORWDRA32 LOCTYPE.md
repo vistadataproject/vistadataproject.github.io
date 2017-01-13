@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns type of location (C,W)
  Input Parameters | {::nomarkdown}ORLOC{:/}
- Lines | ```{::nomarkdown} S Y=-1<br/> Q:$G(ORLOC)=""<br/> S Y=$P($G(^SC(+$G(ORLOC),0)),U,3)<br/>```{:/}
+ Lines | {::nomarkdown} S Y=-1<br/> Q:$G(ORLOC)=""<br/> S Y=$P($G(^SC(+$G(ORLOC),0)),U,3)<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

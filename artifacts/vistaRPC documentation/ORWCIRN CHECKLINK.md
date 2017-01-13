@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check for active HL7 TCP link on local system
- Lines | ```{::nomarkdown} S ORY=$$STAT^HLCSLM```{:/}
+ Lines | {::nomarkdown} S ORY=$$STAT^HLCSLM{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

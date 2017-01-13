@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC/API entry point for log entry and message generation
  Input Parameters | {::nomarkdown}DFN<br/>DGOPT<br/>ACTION{:/}
- Lines | ```{::nomarkdown} I $G(DFN)="" S RESULT=0 Q<br/> I $G(DUZ)="" S RESULT=0 Q<br/> S DGOPT=$G(DGOPT)<br/> I $G(ACTION)="" S ACTION=3<br/> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br/> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br/> S RESULT=1```{:/}
+ Lines | {::nomarkdown} I $G(DFN)="" S RESULT=0 Q<br/> I $G(DUZ)="" S RESULT=0 Q<br/> S DGOPT=$G(DGOPT)<br/> I $G(ACTION)="" S ACTION=3<br/> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br/> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br/> S RESULT=1{:/}
  Leading comment lines | {::nomarkdown}Input parameters:  <br/>DFN    = Patient file DFN<br/>DGOPT  = Option name^Menu text (Optional)<br/>ACTION = 1 - Set DG Security Log entry, 2 - Generate mail <br/>message, 3 - Both (Optional - Defaults to both)<br/>Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value)<br/>0 - Required variable undefined{:/}
 
 ### Input Parameters
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get subitems from a predefined Adhoc component
  Input Parameters | {::nomarkdown}ORSUB{:/}
- Lines | ```{::nomarkdown} I '$L($T(COMPSUB^GMTSADH5)) Q<br/> D COMPSUB^GMTSADH5(.ORY,ORSUB)```{:/}
+ Lines | {::nomarkdown} I '$L($T(COMPSUB^GMTSADH5)) Q<br/> D COMPSUB^GMTSADH5(.ORY,ORSUB){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

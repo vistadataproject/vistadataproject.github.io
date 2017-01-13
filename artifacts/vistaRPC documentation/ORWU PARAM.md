@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a parameter value for a user
  Input Parameters | {::nomarkdown}APARAM{:/}
- Lines | ```{::nomarkdown} S VAL=$$GET^XPAR("ALL",APARAM,1,"I")```{:/}
+ Lines | {::nomarkdown} S VAL=$$GET^XPAR("ALL",APARAM,1,"I"){:/}
  Leading comment lines | {::nomarkdown}call assumes current user, default entities, single instance{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

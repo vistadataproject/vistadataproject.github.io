@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}INFO{:/}
- Lines | ```{::nomarkdown} D SAVENOTO^ORWTPR(.OK,INFO,DUZ)```{:/}
+ Lines | {::nomarkdown} D SAVENOTO^ORWTPR(.OK,INFO,DUZ){:/}
  Leading comment lines | {::nomarkdown}save current user's notification info{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

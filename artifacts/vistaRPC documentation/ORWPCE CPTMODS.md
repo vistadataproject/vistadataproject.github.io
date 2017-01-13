@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return CPT Modifiers for a CPT Code
  Input Parameters | {::nomarkdown}ORCPTCOD<br/>ORDATE{:/}
- Lines | ```{::nomarkdown} N ORM,ORIDX,ORI,MODNAME<br/> S:'+$G(ORDATE) ORDATE=DT<br/> I +($$CODM^ICPTCOD(ORCPTCOD,$NA(ORM),0,ORDATE)),+$D(ORM) D<br/> . S ORIDX="",ORI=0<br/> . F  S ORIDX=$O(ORM(ORIDX)) Q:(ORIDX="")  D<br/> . . S ORI=ORI+1,MODNAME=$P(ORM(ORIDX),U,1)<br/> . . S LST(MODNAME_ORI)=$P(ORM(ORIDX),U,2)_U_MODNAME_U_ORIDX```{:/}
+ Lines | {::nomarkdown} N ORM,ORIDX,ORI,MODNAME<br/> S:'+$G(ORDATE) ORDATE=DT<br/> I +($$CODM^ICPTCOD(ORCPTCOD,$NA(ORM),0,ORDATE)),+$D(ORM) D<br/> . S ORIDX="",ORI=0<br/> . F  S ORIDX=$O(ORM(ORIDX)) Q:(ORIDX="")  D<br/> . . S ORI=ORI+1,MODNAME=$P(ORM(ORIDX),U,1)<br/> . . S LST(MODNAME_ORI)=$P(ORM(ORIDX),U,2)_U_MODNAME_U_ORIDX{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

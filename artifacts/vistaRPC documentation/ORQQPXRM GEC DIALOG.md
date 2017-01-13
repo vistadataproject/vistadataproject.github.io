@@ -21,7 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>VISIT<br/>NOTEIEN{:/}
- Lines | ```{::nomarkdown} D API^PXRMGECU(.ORRESULT,IEN,DFN,VISIT,1,NOTEIEN)```{:/}
+ Lines | {::nomarkdown} D API^PXRMGECU(.ORRESULT,IEN,DFN,VISIT,1,NOTEIEN){:/}
 
 ### Input Parameters
 
@@ -35,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

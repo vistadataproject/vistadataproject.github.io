@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Call $$FREQ^LEXU to fetch the frequency of use of keywords contained in search string
  Input Parameters | {::nomarkdown}ORSRCHTX{:/}
- Lines | ```{::nomarkdown} S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679<br/>```{:/}
+ Lines | {::nomarkdown} S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679<br/>{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

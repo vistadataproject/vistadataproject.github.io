@@ -20,9 +20,9 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Lines | ```{::nomarkdown} N ERR,I<br/> D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)<br/> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))<br/>```{:/}
+ Lines | {::nomarkdown} N ERR,I<br/> D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)<br/> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}MAX<br/>START<br/>STOP{:/}
- Lines | ```{::nomarkdown} D SETIMG^ORWTPO(.OK,MAX,START,STOP,DUZ)```{:/}
+ Lines | {::nomarkdown} D SETIMG^ORWTPO(.OK,MAX,START,STOP,DUZ){:/}
  Leading comment lines | {::nomarkdown}save current user's image report defaults{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

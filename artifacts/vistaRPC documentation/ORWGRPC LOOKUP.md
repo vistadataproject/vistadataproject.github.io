@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get item names for long lookup
  Input Parameters | {::nomarkdown}INFO<br/>FROM<br/>DIR{:/}
- Lines | ```{::nomarkdown} D LOOKUP^ORWGAPI(.VAL,INFO,.FROM,DIR)```{:/}
+ Lines | {::nomarkdown} D LOOKUP^ORWGAPI(.VAL,INFO,.FROM,DIR){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

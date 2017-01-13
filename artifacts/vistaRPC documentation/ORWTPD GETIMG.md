@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get Image (local only) Time/Occ
  Input Parameters | {::nomarkdown}RPT{:/}
- Lines | ```{::nomarkdown} N IMGID,BEG,END,MAX<br/> S IMGID=0,Y=""<br/> S IMGID=$O(^ORD(101.24,"B","ORRP IMAGING",0))<br/> D GETINDV(.Y,IMGID)<br/> I $L(Y) D<br/> . S BEG=$$DT^ORCHTAB1($P(Y,";"))<br/> . S END=$$DT^ORCHTAB1($P(Y,";",2))<br/> . S MAX=$P(Y,";",3)<br/> . S Y=BEG_"^"_END_"^"_MAX<br/> I Y="" D GETDEF^ORWRA(.Y)```{:/}
+ Lines | {::nomarkdown} N IMGID,BEG,END,MAX<br/> S IMGID=0,Y=""<br/> S IMGID=$O(^ORD(101.24,"B","ORRP IMAGING",0))<br/> D GETINDV(.Y,IMGID)<br/> I $L(Y) D<br/> . S BEG=$$DT^ORCHTAB1($P(Y,";"))<br/> . S END=$$DT^ORCHTAB1($P(Y,";",2))<br/> . S MAX=$P(Y,";",3)<br/> . S Y=BEG_"^"_END_"^"_MAX<br/> I Y="" D GETDEF^ORWRA(.Y){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

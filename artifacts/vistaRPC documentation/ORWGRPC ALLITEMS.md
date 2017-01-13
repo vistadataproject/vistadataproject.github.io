@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get all items of data on patient (procedures, tests, codes,..)
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```{::nomarkdown} D ALLITEMS^ORWGAPI("ORWGRPC",DFN)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D ALLITEMS^ORWGAPI("ORWGRPC",DFN)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns Accept Order COM Object
  Input Parameters | {::nomarkdown}ORGRP{:/}
- Lines | ```{::nomarkdown} D GETOBJ(.ORY,"ORWCOM ORDER ACCEPTED",ORGRP)```{:/}
+ Lines | {::nomarkdown} D GETOBJ(.ORY,"ORWCOM ORDER ACCEPTED",ORGRP){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

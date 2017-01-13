@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | (NOT USED)
  Input Parameters | {::nomarkdown}QO{:/}
- Lines | ```{::nomarkdown} D LOADRSP(.LST,QO)```{:/}
+ Lines | {::nomarkdown} D LOADRSP(.LST,QO){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a bolus of patient names.  From is either Name or IEN^Name.
  Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Lines | ```{::nomarkdown} N I,IEN,CNT,FROMIEN,ORIDNAME S CNT=44,I=0,FROMIEN=0<br/> I $P(FROM,U,2)'="" S FROMIEN=$P(FROM,U,1),FROM=$O(^DPT("B",$P(FROM,U,2)),-DIR)<br/> F  S FROM=$O(^DPT("B",FROM),DIR) Q:FROM=""  D  Q:I=CNT<br/> . S IEN=FROMIEN,FROMIEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . S ORIDNAME=""<br/> . . S ORIDNAME=$G(^DPT(IEN,0)) ; Get zero node name.<br/> . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . S I=I+1 S Y(I)=IEN_U_FROM_U_U_U_U_$P(ORIDNAME,U) ;_"^"_X ; _"^"_X1  ;"   ("_X_")"```{:/}
+ Lines | {::nomarkdown} N I,IEN,CNT,FROMIEN,ORIDNAME S CNT=44,I=0,FROMIEN=0<br/> I $P(FROM,U,2)'="" S FROMIEN=$P(FROM,U,1),FROM=$O(^DPT("B",$P(FROM,U,2)),-DIR)<br/> F  S FROM=$O(^DPT("B",FROM),DIR) Q:FROM=""  D  Q:I=CNT<br/> . S IEN=FROMIEN,FROMIEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . S ORIDNAME=""<br/> . . S ORIDNAME=$G(^DPT(IEN,0)) ; Get zero node name.<br/> . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . S I=I+1 S Y(I)=IEN_U_FROM_U_U_U_U_$P(ORIDNAME,U) ;_"^"_X ; _"^"_X1  ;"   ("_X_")"{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

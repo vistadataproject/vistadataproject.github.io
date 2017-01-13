@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns Details about a specific COM Object
  Input Parameters | {::nomarkdown}ID{:/}
- Lines | ```{::nomarkdown} N NODE<br/> S ORY=0<br/> I +ID D<br/> .S NODE=$G(^ORD(101.15,+ID,0))<br/> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE```{:/}
+ Lines | {::nomarkdown} N NODE<br/> S ORY=0<br/> I +ID D<br/> .S NODE=$G(^ORD(101.15,+ID,0))<br/> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

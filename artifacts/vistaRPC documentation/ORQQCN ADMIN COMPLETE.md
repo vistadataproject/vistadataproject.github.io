@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Admin users
  Input Parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORRESP<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
- Lines | ```{::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete```{:/}
+ Lines | {::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete{:/}
  Leading comment lines | {::nomarkdown}Administrative complete action{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

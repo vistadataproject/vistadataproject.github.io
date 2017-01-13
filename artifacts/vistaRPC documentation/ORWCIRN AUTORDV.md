@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get parameter value for ORWRP CIRN AUTOMATIC
- Lines | ```{::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWRP CIRN AUTOMATIC",1,"I")```{:/}
+ Lines | {::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWRP CIRN AUTOMATIC",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

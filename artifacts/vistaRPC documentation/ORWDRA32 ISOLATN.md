@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is patient on isolation procedures?
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```{::nomarkdown} N ORVP<br/> S ORVP=DFN_";DPT("<br/> S Y=$$IP^ORMBLD```{:/}
+ Lines | {::nomarkdown} N ORVP<br/> S ORVP=DFN_";DPT("<br/> S Y=$$IP^ORMBLD{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

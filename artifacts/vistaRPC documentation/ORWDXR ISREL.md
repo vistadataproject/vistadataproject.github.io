@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return true if an order has been released
  Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | ```{::nomarkdown} N STS S STS=$P(^OR(100,+ORIFN,3),U,3)<br/> S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order```{:/}
+ Lines | {::nomarkdown} N STS S STS=$P(^OR(100,+ORIFN,3),U,3)<br/> S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

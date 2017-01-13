@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get all items set up on patient
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```{::nomarkdown} D FASTITEM^ORWGAPI(.ITEMS,DFN)```{:/}
+ Lines | {::nomarkdown} D FASTITEM^ORWGAPI(.ITEMS,DFN){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

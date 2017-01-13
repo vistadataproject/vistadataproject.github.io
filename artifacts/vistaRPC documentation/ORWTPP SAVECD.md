@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}INFO{:/}
- Lines | ```{::nomarkdown} D SAVECD^ORWTPL(.OK,INFO,DUZ)```{:/}
+ Lines | {::nomarkdown} D SAVECD^ORWTPL(.OK,INFO,DUZ){:/}
  Leading comment lines | {::nomarkdown}save current user's clinic defaults{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

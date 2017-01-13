@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get list of DS Titles
- Lines | ```{::nomarkdown} D LIST(.TIUY,244)```{:/}
+ Lines | {::nomarkdown} D LIST(.TIUY,244){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

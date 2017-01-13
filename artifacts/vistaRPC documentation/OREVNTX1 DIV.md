@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return division for PTEVT ptr #100.2
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```{::nomarkdown} Q:'+PTEVT<br/> S ORY=$$DIV^OREVNTX(PTEVT)```{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> S ORY=$$DIV^OREVNTX(PTEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

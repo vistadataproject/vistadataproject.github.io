@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return 1 if the order is pending a HOLD, 0 otherwise
  Input Parameters | {::nomarkdown}ORID{:/}
- Lines | ```{::nomarkdown} S ORY=0<br/> N ORLSTACT S ORLSTACT=$O(^OR(100,+ORID,8,"A"),-1)<br/> I $P(^OR(100,+ORID,8,ORLSTACT,0),U,2)="HD" S ORY=1```{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> N ORLSTACT S ORLSTACT=$O(^OR(100,+ORID,8,"A"),-1)<br/> I $P(^OR(100,+ORID,8,ORLSTACT,0),U,2)="HD" S ORY=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

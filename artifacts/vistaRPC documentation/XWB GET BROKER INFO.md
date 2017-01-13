@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | P6
- Lines | ```{::nomarkdown} S RESULT(0)=$$BAT^XUPARAM```{:/}
+ Lines | {::nomarkdown} S RESULT(0)=$$BAT^XUPARAM{:/}
  Leading comment lines | {::nomarkdown}Entry point for XWB GET BROKER INFO RPC.<br/>R(0) = Length of handler read timeout{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | returns order message for this consult/procedure orderable
  Input Parameters | {::nomarkdown}ORDITM{:/}
- Lines | ```{::nomarkdown} N I<br/> S I=0 F  S I=$O(^ORD(101.43,ORDITM,8,I)) Q:I'>0  S Y(I)=^(I,0)```{:/}
+ Lines | {::nomarkdown} N I<br/> S I=0 F  S I=$O(^ORD(101.43,ORDITM,8,I)) Q:I'>0  S Y(I)=^(I,0){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

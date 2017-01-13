@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC Gets the status of TIU Doc TIUIEN
  Input Parameters | {::nomarkdown}TIUIEN{:/}
- Lines | ```{::nomarkdown} N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)<br/> S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1)```{:/}
+ Lines | {::nomarkdown} N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)<br/> S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1){:/}
  Leading comment lines | {::nomarkdown}Returns STATIEN^STATNAME{:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

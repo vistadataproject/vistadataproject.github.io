@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Can this document receive an ID Child?
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} S TIUY=$$CANDO^TIULP(TIUDA,"ATTACH ID ENTRY")```{:/}
+ Lines | {::nomarkdown} S TIUY=$$CANDO^TIULP(TIUDA,"ATTACH ID ENTRY"){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

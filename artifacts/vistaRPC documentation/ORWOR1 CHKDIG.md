@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check if Digital Signature is required
  Input Parameters | {::nomarkdown}ORDER{:/}
- Lines | ```{::nomarkdown} N IFN,ACTION<br/> S REQ=0,IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> I +$P($G(^OR(100,+IFN,8,+ACTION,2)),U,5) S REQ=1```{:/}
+ Lines | {::nomarkdown} N IFN,ACTION<br/> S REQ=0,IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> I +$P($G(^OR(100,+IFN,8,+ACTION,2)),U,5) S REQ=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

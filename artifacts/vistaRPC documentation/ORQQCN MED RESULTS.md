@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns Medicine results plus TIU results
  Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | ```{::nomarkdown} S ORY=$NA(^TMP("ORRSLT",$J))<br/> D RT^GMRCGUIA(GMRCO,ORY)```{:/}
+ Lines | {::nomarkdown} S ORY=$NA(^TMP("ORRSLT",$J))<br/> D RT^GMRCGUIA(GMRCO,ORY){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

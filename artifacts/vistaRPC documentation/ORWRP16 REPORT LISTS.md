@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return lists for list boxes
- Lines | ```{::nomarkdown} N EOF<br/> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br/> K @ROOT<br/> D GETRPTS(.ROOT,.EOF)<br/> D GETHS(.ROOT,.EOF)<br/> D GETDT(.ROOT,.EOF)```{:/}
+ Lines | {::nomarkdown} N EOF<br/> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br/> K @ROOT<br/> D GETRPTS(.ROOT,.EOF)<br/> D GETHS(.ROOT,.EOF)<br/> D GETDT(.ROOT,.EOF){:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST<br/>See RPC definition for details on input and output parameters{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

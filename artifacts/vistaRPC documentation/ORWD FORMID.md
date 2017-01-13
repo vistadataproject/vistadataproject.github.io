@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | procedure
  Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | ```{::nomarkdown} N X<br/> S VAL=0,X=$P(^OR(100,+ORIFN,0),U,5)<br/> Q:$P(X,";",2)'="ORD(101.41,"<br/> S VAL=+$P($G(^ORD(101.41,+X,5)),U,5)```{:/}
+ Lines | {::nomarkdown} N X<br/> S VAL=0,X=$P(^OR(100,+ORIFN,0),U,5)<br/> Q:$P(X,";",2)'="ORD(101.41,"<br/> S VAL=+$P($G(^ORD(101.41,+X,5)),U,5){:/}
  Leading comment lines | {::nomarkdown}Returns the Dialog Form ID{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

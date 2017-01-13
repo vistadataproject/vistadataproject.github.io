@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | can user mark allergy as entered in error
- Lines | ```{::nomarkdown} N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE<br/> S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC<br/> I Y=-1 S ORY=0 Q  ;Parameter not found so quit<br/> S PRM=+Y<br/> S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q<br/> D ENVAL^XPAR(.ORLST,PRM)<br/> I ORLST>0 D<br/> . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D<br/> . . Q:ORX'["USR(8930"<br/> . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))<br/> S ORY=$G(VALUE)<br/> I ORY'="" Q<br/> S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q<br/> S ORY=0 Q```{:/}
+ Lines | {::nomarkdown} N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE<br/> S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC<br/> I Y=-1 S ORY=0 Q  ;Parameter not found so quit<br/> S PRM=+Y<br/> S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q<br/> D ENVAL^XPAR(.ORLST,PRM)<br/> I ORLST>0 D<br/> . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D<br/> . . Q:ORX'["USR(8930"<br/> . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))<br/> S ORY=$G(VALUE)<br/> I ORY'="" Q<br/> S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q<br/> S ORY=0 Q{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

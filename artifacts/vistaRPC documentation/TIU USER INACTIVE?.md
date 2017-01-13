@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is user inactive?
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I")```{:/}
+ Lines | {::nomarkdown} S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I"){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return IEN of new or existing quick order
  Input Parameters | {::nomarkdown}CRC<br/>DNAME<br/>DGRP<br/>RSP{:/}
- Lines | ```{::nomarkdown} N ROOT,NM,IEN<br/> S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))<br/> I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1<br/> E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1<br/> E  D<br/> . D UPDQNAME^ORCMEDT8(IEN)<br/> . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)<br/> . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP)```{:/}
+ Lines | {::nomarkdown} N ROOT,NM,IEN<br/> S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))<br/> I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1<br/> E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1<br/> E  D<br/> . D UPDQNAME^ORCMEDT8(IEN)<br/> . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)<br/> . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

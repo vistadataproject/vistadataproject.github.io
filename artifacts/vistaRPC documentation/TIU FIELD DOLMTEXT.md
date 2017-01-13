@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | finds Template Fields and replaces with LM Text
  Input Parameters | {::nomarkdown}TIULIST{:/}
- Lines | ```{::nomarkdown} N I,LINE<br/> S I=0<br/> F  S I=$O(TIULIST(I)) Q:'I  D<br/> . S TIUY(I)=$$DOLMLINE(TIULIST(I,0))```{:/}
+ Lines | {::nomarkdown} N I,LINE<br/> S I=0<br/> F  S I=$O(TIULIST(I)) Q:'I  D<br/> . S TIUY(I)=$$DOLMLINE(TIULIST(I,0)){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

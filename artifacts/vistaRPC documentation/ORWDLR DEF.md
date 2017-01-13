@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | procedure
  Input Parameters | {::nomarkdown}ALOC{:/}
- Lines | ```{::nomarkdown} S ILST=0<br/> S LST($$NXT)="~Collection Times" D COLLTM<br/> S LST($$NXT)="~Send Patient Times" D SENDTM<br/> S LST($$NXT)="~Default Urgency="_$$DEFURG^LR7OR3<br/> S LST($$NXT)="~Schedules" D SCHED<br/> S LST($$NXT)="~Common" D COMMON```{:/}
+ Lines | {::nomarkdown} S ILST=0<br/> S LST($$NXT)="~Collection Times" D COLLTM<br/> S LST($$NXT)="~Send Patient Times" D SENDTM<br/> S LST($$NXT)="~Default Urgency="_$$DEFURG^LR7OR3<br/> S LST($$NXT)="~Schedules" D SCHED<br/> S LST($$NXT)="~Common" D COMMON{:/}
  Leading comment lines | {::nomarkdown}get dialog definition specific to lab{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

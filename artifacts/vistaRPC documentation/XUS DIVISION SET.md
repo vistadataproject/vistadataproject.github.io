@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Set users Division
  Input Parameters | {::nomarkdown}DIV{:/}
- Lines | ```{::nomarkdown} S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX",$G(DIV))<br/> Q:DIV'>0<br/> N X<br/> I '$D(^VA(200,DUZ,2,DIV,0)) Q<br/> S RET=1 ;1=set, 0=not set<br/> D UPDIV(+DIV) ;Update Sign-on log```{:/}
+ Lines | {::nomarkdown} S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX",$G(DIV))<br/> Q:DIV'>0<br/> N X<br/> I '$D(^VA(200,DUZ,2,DIV,0)) Q<br/> S RET=1 ;1=set, 0=not set<br/> D UPDIV(+DIV) ;Update Sign-on log{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

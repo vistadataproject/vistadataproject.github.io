@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a list of formulary alternatives for dose
  Input Parameters | {::nomarkdown}DDRUG<br/>CUROI<br/>PSTYPE{:/}
- Lines | ```{::nomarkdown} N I,OI,ORWLST,ILST S ILST=0<br/> D ENRFA^PSJORUTL(DDRUG,PSTYPE,.ORWLST)<br/> S I=0 F  S I=$O(ORWLST(I)) Q:'I  D<br/> . S OI=+$O(^ORD(101.43,"ID",+$P(ORWLST(I),U,4)_";99PSP",0))<br/> . I OI,OI'=CUROI S ILST=ILST+1,LST(ILST)=OI_U_$P(^ORD(101.43,OI,0),U)```{:/}
+ Lines | {::nomarkdown} N I,OI,ORWLST,ILST S ILST=0<br/> D ENRFA^PSJORUTL(DDRUG,PSTYPE,.ORWLST)<br/> S I=0 F  S I=$O(ORWLST(I)) Q:'I  D<br/> . S OI=+$O(^ORD(101.43,"ID",+$P(ORWLST(I),U,4)_";99PSP",0))<br/> . I OI,OI'=CUROI S ILST=ILST+1,LST(ILST)=OI_U_$P(^ORD(101.43,OI,0),U){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

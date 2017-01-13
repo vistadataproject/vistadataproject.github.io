@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC Takes as input 8925.1 IEN
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} N TIUCAT1,TIUCAT2,TIUD1<br/> S TIUY=0,TIUD1=""<br/> S TIUCAT1=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT I","DC")<br/> S TIUCAT2=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT II","DC")<br/> S TIUD1=$O(^TIU(8925.1,"AD",TIUDA,TIUD1))<br/> I TIUD1=TIUCAT1!(TIUD1=TIUCAT2) S TIUY=1<br/>```{:/}
+ Lines | {::nomarkdown} N TIUCAT1,TIUCAT2,TIUD1<br/> S TIUY=0,TIUD1=""<br/> S TIUCAT1=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT I","DC")<br/> S TIUCAT2=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT II","DC")<br/> S TIUD1=$O(^TIU(8925.1,"AD",TIUDA,TIUD1))<br/> I TIUD1=TIUCAT1!(TIUD1=TIUCAT2) S TIUY=1<br/>{:/}
  Leading comment lines | {::nomarkdown}and checks if it is a PRF title<br/>Cf ISPFTTL^TIUPRFL. which is a FUNCTION{:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return lists for list boxes
- Lines | ```{::nomarkdown} N EOF<br/> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br/> K @OROOT<br/> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br/> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges```{:/}
+ Lines | {::nomarkdown} N EOF<br/> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br/> K @OROOT<br/> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br/> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWLR REPORT LIST{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

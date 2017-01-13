@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}CLASS{:/}
- Lines | ```{::nomarkdown} D GETTU^ORWTPN(.VALUES,CLASS,DUZ)```{:/}
+ Lines | {::nomarkdown} D GETTU^ORWTPN(.VALUES,CLASS,DUZ){:/}
  Leading comment lines | {::nomarkdown}get titles for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

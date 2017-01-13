@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return 1 if it's a pass event
  Input Parameters | {::nomarkdown}PTEVTID<br/>EVTTYPE{:/}
- Lines | ```{::nomarkdown} S ORY=$$EVT^OREVNTX(PTEVTID)<br/> S ORY=$P($G(^ORD(100.5,+ORY,0)),U,7)<br/> I EVTTYPE="T",ORY,ORY<4 S ORY=1<br/> E  S ORY=0```{:/}
+ Lines | {::nomarkdown} S ORY=$$EVT^OREVNTX(PTEVTID)<br/> S ORY=$P($G(^ORD(100.5,+ORY,0)),U,7)<br/> I EVTTYPE="T",ORY,ORY<4 S ORY=1<br/> E  S ORY=0{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

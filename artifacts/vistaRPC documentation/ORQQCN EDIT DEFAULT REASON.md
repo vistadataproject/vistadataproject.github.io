@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Allow editing of reason for request?
  Input Parameters | {::nomarkdown}ORSVC{:/}
- Lines | ```{::nomarkdown} S ORY=$$REAF^GMRCDRFR(ORSVC)```{:/}
+ Lines | {::nomarkdown} S ORY=$$REAF^GMRCDRFR(ORSVC){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

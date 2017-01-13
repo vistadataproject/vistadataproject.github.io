@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Windows device print
  Input Parameters | {::nomarkdown}ORDFN<br/>RPTID<br/>ORDAYSBK<br/>ORTESTS<br/>ORALPHA<br/>OROMEGA{:/}
- Lines | ```{::nomarkdown} N ZTQUEUED,ORHFS,ORSUB,ROOT,ORIO<br/> N IOM,IOSL,IOST,IOF,IOT,IOS<br/> S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS"<br/> S ORTEXT=$NA(^TMP(ORSUB,$J,1))<br/> I '$$CHK() S @ORTEXT@(0)=ORY G PRINTWQ<br/> S ORHFS=$$HFS^ORWRP()<br/> D HFSOPEN^ORWRP("ORWRP",ORHFS,"W")<br/> I POP D  Q<br/> . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file")<br/> D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")<br/> N $ETRAP,$ESTACK<br/> S $ETRAP="D ERR^ORWRP Q"<br/> U IO<br/> D DEQUE<br/> D HFSCLOSE^ORWRP("ORWRP",ORHFS)```{:/}
+ Lines | {::nomarkdown} N ZTQUEUED,ORHFS,ORSUB,ROOT,ORIO<br/> N IOM,IOSL,IOST,IOF,IOT,IOS<br/> S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS"<br/> S ORTEXT=$NA(^TMP(ORSUB,$J,1))<br/> I '$$CHK() S @ORTEXT@(0)=ORY G PRINTWQ<br/> S ORHFS=$$HFS^ORWRP()<br/> D HFSOPEN^ORWRP("ORWRP",ORHFS,"W")<br/> I POP D  Q<br/> . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file")<br/> D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")<br/> N $ETRAP,$ESTACK<br/> S $ETRAP="D ERR^ORWRP Q"<br/> U IO<br/> D DEQUE<br/> D HFSCLOSE^ORWRP("ORWRP",ORHFS){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

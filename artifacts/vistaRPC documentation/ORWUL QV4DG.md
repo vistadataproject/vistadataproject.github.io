@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return the quick order list, given a display group name
  Input Parameters | {::nomarkdown}DGRP{:/}
- Lines | ```{::nomarkdown} N NM<br/> S VAL="0^0"<br/> I 'DGRP S DGRP=+$O(^ORD(100.98,"B",DGRP,0))<br/> S NM=$$GET^XPAR("ALL","ORWDQ QUICK VIEW",DGRP,"I")<br/> Q:'$L(NM)<br/> D QV4NM(.VAL,NM)```{:/}
+ Lines | {::nomarkdown} N NM<br/> S VAL="0^0"<br/> I 'DGRP S DGRP=+$O(^ORD(100.98,"B",DGRP,0))<br/> S NM=$$GET^XPAR("ALL","ORWDQ QUICK VIEW",DGRP,"I")<br/> Q:'$L(NM)<br/> D QV4NM(.VAL,NM){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

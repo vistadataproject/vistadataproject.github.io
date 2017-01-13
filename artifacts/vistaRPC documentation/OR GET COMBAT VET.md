@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Combat Vet Marker
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```{::nomarkdown} N CVE S CVE=$$CVEDT^DGCV(DFN)<br/> I ($P(CVE,"^",1)'=1)!($P(CVE,"^",3)=0) S RVAL(0)="NOTCV" Q<br/> N VASV<br/> D SVC^VADPT<br/> S RVAL(0)=""<br/> I $D(VASV(6,1))=1 S RVAL(0)=VASV(6,1)<br/> S RVAL(1)=""<br/> I $D(VASV(6,3))=1 S RVAL(1)=VASV(6,3)<br/> S RVAL(2)=""<br/> I $D(VASV(6,5))=1 S RVAL(2)=VASV(6,5)<br/> S RVAL(3)=""<br/> I $D(VASV(10,1))=1 S RVAL(3)=VASV(10,1)<br/> S RVAL(4)=""<br/> I (VASV(11)>0)!(VASV(12)>0)!(VASV(13)>0) S RVAL(4)="OEF/OIF"<br/> S RVAL(5)=""<br/> S RVAL(6)=""<br/> S RVAL(7)=""<br/> D KVA^VADPT<br/>```{:/}
+ Lines | {::nomarkdown} N CVE S CVE=$$CVEDT^DGCV(DFN)<br/> I ($P(CVE,"^",1)'=1)!($P(CVE,"^",3)=0) S RVAL(0)="NOTCV" Q<br/> N VASV<br/> D SVC^VADPT<br/> S RVAL(0)=""<br/> I $D(VASV(6,1))=1 S RVAL(0)=VASV(6,1)<br/> S RVAL(1)=""<br/> I $D(VASV(6,3))=1 S RVAL(1)=VASV(6,3)<br/> S RVAL(2)=""<br/> I $D(VASV(6,5))=1 S RVAL(2)=VASV(6,5)<br/> S RVAL(3)=""<br/> I $D(VASV(10,1))=1 S RVAL(3)=VASV(10,1)<br/> S RVAL(4)=""<br/> I (VASV(11)>0)!(VASV(12)>0)!(VASV(13)>0) S RVAL(4)="OEF/OIF"<br/> S RVAL(5)=""<br/> S RVAL(6)=""<br/> S RVAL(7)=""<br/> D KVA^VADPT<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

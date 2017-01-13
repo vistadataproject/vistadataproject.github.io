@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
- Lines | ```{::nomarkdown} N X,IEN,ILST S ILST=0<br/> S X="" F  S X=$O(^LAB(61,"E",X)) Q:X=""  S IEN=$O(^(X,0)) D<br/> . S LST($$NXT)=IEN_U_$P(^LAB(61,IEN,0),U,1)```{:/}
+ Lines | {::nomarkdown} N X,IEN,ILST S ILST=0<br/> S X="" F  S X=$O(^LAB(61,"E",X)) Q:X=""  S IEN=$O(^(X,0)) D<br/> . S LST($$NXT)=IEN_U_$P(^LAB(61,IEN,0),U,1){:/}
  Leading comment lines | {::nomarkdown}returns specimens with abbreviation (uses 'E' xref){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return pre-existing patient instruct
  Input Parameters | {::nomarkdown}ODIFN{:/}
- Lines | ```{::nomarkdown} N IDNUM,IDPI<br/> S (IDNUM,IDPI)=0,VAL=""<br/> I '$D(^OR(100,ODIFN,4.5,"ID","PI")) S VAL="" Q<br/> F  S IDNUM=$O(^OR(100,ODIFN,4.5,"ID","PI",IDNUM)) Q:'IDNUM  D<br/> . F  S IDPI=$O(^OR(100,ODIFN,4.5,IDNUM,2,IDPI)) Q:'IDPI  D<br/> .. S VAL=VAL_^OR(100,ODIFN,4.5,IDNUM,2,IDPI,0)<br/> K IDNUM,IDPI```{:/}
+ Lines | {::nomarkdown} N IDNUM,IDPI<br/> S (IDNUM,IDPI)=0,VAL=""<br/> I '$D(^OR(100,ODIFN,4.5,"ID","PI")) S VAL="" Q<br/> F  S IDNUM=$O(^OR(100,ODIFN,4.5,"ID","PI",IDNUM)) Q:'IDNUM  D<br/> . F  S IDPI=$O(^OR(100,ODIFN,4.5,IDNUM,2,IDPI)) Q:'IDPI  D<br/> .. S VAL=VAL_^OR(100,ODIFN,4.5,IDNUM,2,IDPI,0)<br/> K IDNUM,IDPI{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

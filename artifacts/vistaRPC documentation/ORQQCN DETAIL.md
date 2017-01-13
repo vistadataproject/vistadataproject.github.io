@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return formatted consult request details (plus result note if available):
  Input Parameters | {::nomarkdown}CONSULT{:/}
- Lines | ```{::nomarkdown} N GMRCOER<br/> S GMRCOER=2<br/> S ORQY=$NA(^TMP("GMRCR",$J,"DT"))<br/> D DT^GMRCSLM2(CONSULT)<br/>```{:/}
+ Lines | {::nomarkdown} N GMRCOER<br/> S GMRCOER=2<br/> S ORQY=$NA(^TMP("GMRCR",$J,"DT"))<br/> D DT^GMRCSLM2(CONSULT)<br/>{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

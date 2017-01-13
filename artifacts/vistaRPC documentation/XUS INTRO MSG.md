@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return INTRO TEXT.
- Lines | ```{::nomarkdown} D INTRO^XUS1A("RET")```{:/}
+ Lines | {::nomarkdown} D INTRO^XUS1A("RET"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

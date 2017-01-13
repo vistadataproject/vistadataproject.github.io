@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Validate schedule
  Input Parameters | {::nomarkdown}SCH{:/}
- Lines | ```{::nomarkdown} Q:SCH=""<br/> D VALSCH^ORWDPS33(.ORY,SCH,"I")<br/>```{:/}
+ Lines | {::nomarkdown} Q:SCH=""<br/> D VALSCH^ORWDPS33(.ORY,SCH,"I")<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

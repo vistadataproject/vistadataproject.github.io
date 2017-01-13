@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get personal list for a user
  Input Parameters | {::nomarkdown}DUZ<br/>CLASS<br/>TIUC<br/>TIUFLG{:/}
- Lines | ```{::nomarkdown} N TIUI,TIUDA,TIUDFLT,INLST<br/> S TIUDA=+$O(^TIU(8925.98,"AC",DUZ,CLASS,0))<br/> Q:+TIUDA'>0<br/> I +$G(TIUFLG) S TIUC=1,TIUY(TIUC)="~SHORT LIST"<br/> S TIUI=0,TIUC=+$G(TIUC)<br/> F  S TIUI=$O(^TIU(8925.98,TIUDA,10,TIUI)) Q:+TIUI'>0  D<br/> . N TIUPL,TIUTNM,TIUDTYP,TIUSEQ<br/> . S TIUPL=$G(^TIU(8925.98,TIUDA,10,TIUI,0))<br/> . S TIUDTYP=$P(TIUPL,U)<br/> . I $S(+$$CANENTR^TIULP(TIUDTYP)'>0:1,+$$CANPICK^TIULP(TIUDTYP)'>0:1,1:0) Q<br/> . S TIUTNM=$S($P(TIUPL,U,3)]"":$P(TIUPL,U,3),1:$$PNAME^TIULC1(+TIUDTYP))<br/> . S TIUSEQ=+$P(TIUPL,U,2),TIUC=+$G(TIUC)+1<br/> . S TIUSEQ=$S(+TIUSEQ:$S('$D(TIUY(TIUSEQ)):TIUSEQ,1:(TIUSEQ+1)),1:TIUC)<br/> . S TIUY(TIUSEQ)="i"_TIUDTYP_U_TIUTNM,TIUC=+TIUSEQ<br/> I +$G(TIUFLG) Q<br/> S TIUDFLT=$$PERSDOC^TIULE(DUZ,+CLASS)<br/> S (TIUI,TIUC)=0<br/> F  S TIUI=$O(TIUY(TIUI)) Q:+TIUI'>0  D<br/> . S TIUC=TIUI<br/> . I +TIUDFLT,($P($G(TIUY(TIUI)),U)=("i"_+TIUDFLT)) S $P(TIUDFLT,U,2)=$P(TIUY(TIUI),U,2),INLST=TIUI<br/> I +TIUDFLT D<br/> . ;if default isn't in list, append it as an item<br/> . I '$G(INLST) S TIUC=+$G(TIUC)+1,TIUY(TIUC)="i"_TIUDFLT<br/> . ;otherwise, just append as default<br/> . S TIUC=+$G(TIUC)+1,TIUY(TIUC)="d"_TIUDFLT```{:/}
+ Lines | {::nomarkdown} N TIUI,TIUDA,TIUDFLT,INLST<br/> S TIUDA=+$O(^TIU(8925.98,"AC",DUZ,CLASS,0))<br/> Q:+TIUDA'>0<br/> I +$G(TIUFLG) S TIUC=1,TIUY(TIUC)="~SHORT LIST"<br/> S TIUI=0,TIUC=+$G(TIUC)<br/> F  S TIUI=$O(^TIU(8925.98,TIUDA,10,TIUI)) Q:+TIUI'>0  D<br/> . N TIUPL,TIUTNM,TIUDTYP,TIUSEQ<br/> . S TIUPL=$G(^TIU(8925.98,TIUDA,10,TIUI,0))<br/> . S TIUDTYP=$P(TIUPL,U)<br/> . I $S(+$$CANENTR^TIULP(TIUDTYP)'>0:1,+$$CANPICK^TIULP(TIUDTYP)'>0:1,1:0) Q<br/> . S TIUTNM=$S($P(TIUPL,U,3)]"":$P(TIUPL,U,3),1:$$PNAME^TIULC1(+TIUDTYP))<br/> . S TIUSEQ=+$P(TIUPL,U,2),TIUC=+$G(TIUC)+1<br/> . S TIUSEQ=$S(+TIUSEQ:$S('$D(TIUY(TIUSEQ)):TIUSEQ,1:(TIUSEQ+1)),1:TIUC)<br/> . S TIUY(TIUSEQ)="i"_TIUDTYP_U_TIUTNM,TIUC=+TIUSEQ<br/> I +$G(TIUFLG) Q<br/> S TIUDFLT=$$PERSDOC^TIULE(DUZ,+CLASS)<br/> S (TIUI,TIUC)=0<br/> F  S TIUI=$O(TIUY(TIUI)) Q:+TIUI'>0  D<br/> . S TIUC=TIUI<br/> . I +TIUDFLT,($P($G(TIUY(TIUI)),U)=("i"_+TIUDFLT)) S $P(TIUDFLT,U,2)=$P(TIUY(TIUI),U,2),INLST=TIUI<br/> I +TIUDFLT D<br/> . ;if default isn't in list, append it as an item<br/> . I '$G(INLST) S TIUC=+$G(TIUC)+1,TIUY(TIUC)="i"_TIUDFLT<br/> . ;otherwise, just append as default<br/> . S TIUC=+$G(TIUC)+1,TIUY(TIUC)="d"_TIUDFLT{:/}
 
 ### Input Parameters
 
@@ -35,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

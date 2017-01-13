@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return whether consult can be edited and resubmitted
  Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | ```{::nomarkdown} S Y=$$EDRESOK^GMRCEDT2(GMRCO)```{:/}
+ Lines | {::nomarkdown} S Y=$$EDRESOK^GMRCEDT2(GMRCO){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

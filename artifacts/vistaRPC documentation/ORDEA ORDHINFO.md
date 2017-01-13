@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORIFN<br/>HASH<br/>OHINFO{:/}
- Lines | ```{::nomarkdown} N IENS<br/> D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO)```{:/}
+ Lines | {::nomarkdown} N IENS<br/> D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

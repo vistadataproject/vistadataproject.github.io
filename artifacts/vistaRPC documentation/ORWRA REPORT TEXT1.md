@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return imaging report
  Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ALPHA<br/>OMEGA<br/>DTRANGE<br/>REMOTE<br/>ORMAX<br/>ORFHIE{:/}
- Lines | ```{::nomarkdown} D RPT(.ROOT,.DFN,.ORID,.ALPHA,.OMEGA,.DTRANGE,.REMOTE,.ORMAX,.ORFHIE)```{:/}
+ Lines | {::nomarkdown} D RPT(.ROOT,.DFN,.ORID,.ALPHA,.OMEGA,.DTRANGE,.REMOTE,.ORMAX,.ORFHIE){:/}
 
 ### Input Parameters
 
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

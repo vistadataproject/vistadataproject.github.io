@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns the mandatory dea text to show when a user checks a controlled substance order to be signed on the signature dialog
- Lines | ```{::nomarkdown} N I,ORTY<br/> D GETWP^XPAR(.ORTY,"SYS","OR DEA TEXT")<br/> S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0)```{:/}
+ Lines | {::nomarkdown} N I,ORTY<br/> D GETWP^XPAR(.ORTY,"SYS","OR DEA TEXT")<br/> S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

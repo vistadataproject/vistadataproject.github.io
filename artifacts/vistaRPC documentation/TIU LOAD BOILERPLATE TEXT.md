@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Shell for boilerplate RPC
  Input Parameters | {::nomarkdown}TITLE<br/>DFN<br/>VSTR{:/}
- Lines | ```{::nomarkdown} K ^TMP("TIUBOIL",$J)<br/> D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))<br/> K ^TMP("TIUBOIL",$J,0)```{:/}
+ Lines | {::nomarkdown} K ^TMP("TIUBOIL",$J)<br/> D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))<br/> K ^TMP("TIUBOIL",$J,0){:/}
 
 ### Input Parameters
 
@@ -35,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

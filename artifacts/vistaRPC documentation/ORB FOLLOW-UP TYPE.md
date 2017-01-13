@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return notif follow-up action type
  Input Parameters | {::nomarkdown}ORXQAID{:/}
- Lines | ```{::nomarkdown} N NIEN<br/> S NIEN=$P($P(ORXQAID,";"),",",3)<br/> S ORBY=$G(^ORD(100.9,NIEN,3))<br/> I ORBY="" S ORBY="INFO^"<br/> E  S ORBY=$P(ORBY,U,2)```{:/}
+ Lines | {::nomarkdown} N NIEN<br/> S NIEN=$P($P(ORXQAID,";"),",",3)<br/> S ORBY=$G(^ORD(100.9,NIEN,3))<br/> I ORBY="" S ORBY="INFO^"<br/> E  S ORBY=$P(ORBY,U,2){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

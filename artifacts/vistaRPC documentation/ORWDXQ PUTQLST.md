@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save quick list
  Input Parameters | {::nomarkdown}DG<br/>QLST{:/}
- Lines | ```{::nomarkdown} N PNM<br/> S PNM="ORWDQ USR"_DUZ_" "_$P(^ORD(100.98,DG,0),U,3)<br/> D QVSAVE^ORWUL(.VAL,PNM,.QLST)<br/> D EN^XPAR(DUZ_";VA(200,","ORWDQ QUICK VIEW","`"_DG,PNM)```{:/}
+ Lines | {::nomarkdown} N PNM<br/> S PNM="ORWDQ USR"_DUZ_" "_$P(^ORD(100.98,DG,0),U,3)<br/> D QVSAVE^ORWUL(.VAL,PNM,.QLST)<br/> D EN^XPAR(DUZ_";VA(200,","ORWDQ QUICK VIEW","`"_DG,PNM){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

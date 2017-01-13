@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return default lists for vitals dialog
- Lines | ```{::nomarkdown} N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEAS<br/> S LST($$NXT)="~Schedules"    D SCHED```{:/}
+ Lines | {::nomarkdown} N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEAS<br/> S LST($$NXT)="~Schedules"    D SCHED{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

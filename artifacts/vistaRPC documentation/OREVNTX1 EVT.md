@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return Event ptr #100.5, given PTEVT ptr #100.2
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```{::nomarkdown} Q:'+PTEVT<br/> S ORY=$$EVT^OREVNTX(PTEVT)```{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> S ORY=$$EVT^OREVNTX(PTEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

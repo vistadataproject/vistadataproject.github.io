@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return GMRA Site Params
- Lines | ```{::nomarkdown} N GMRASITE<br/> D SITE^GMRAUTL<br/> S ORY=$G(^GMRD(120.84,GMRASITE,0))```{:/}
+ Lines | {::nomarkdown} N GMRASITE<br/> D SITE^GMRAUTL<br/> S ORY=$G(^GMRD(120.84,GMRASITE,0)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

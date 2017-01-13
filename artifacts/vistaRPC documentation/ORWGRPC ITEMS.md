@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get items of a type of data on patient (lab tests)
  Input Parameters | {::nomarkdown}DFN<br/>TYPE{:/}
- Lines | ```{::nomarkdown} D ITEMS^ORWGAPI("ORWGRPC",DFN,TYPE)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D ITEMS^ORWGAPI("ORWGRPC",DFN,TYPE)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

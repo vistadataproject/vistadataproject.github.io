@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Set value of "ORCH CONTEXT MEDS"
  Input Parameters | {::nomarkdown}ORVAL{:/}
- Lines | ```{::nomarkdown} I '$L(ORVAL) D DEL^XPAR("USR.`"_DUZ,"ORCH CONTEXT MEDS",1) Q<br/> N ORERR S ORERR=""<br/> D EN^XPAR(DUZ_";VA(200,","ORCH CONTEXT MEDS",1,ORVAL,.ORERR)<br/> S ORY=ORERR<br/>```{:/}
+ Lines | {::nomarkdown} I '$L(ORVAL) D DEL^XPAR("USR.`"_DUZ,"ORCH CONTEXT MEDS",1) Q<br/> N ORERR S ORERR=""<br/> D EN^XPAR(DUZ_";VA(200,","ORCH CONTEXT MEDS",1,ORVAL,.ORERR)<br/> S ORY=ORERR<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

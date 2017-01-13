@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Detach TIUDA from its ID Parent
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} N TIUX,IDDAD<br/> I '+$G(^TIU(8925,TIUDA,21)) D  Q<br/> . S TIUY="0^Record #"_TIUDA_" is NOT an ID Entry."<br/> S IDDAD=+$G(^TIU(8925,TIUDA,21))<br/> S TIUX(2101)="@"<br/> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br/> D AUDLINK^TIUGR1(TIUDA,"d",IDDAD)<br/> D IDDEL^TIUALRT1(TIUDA)```{:/}
+ Lines | {::nomarkdown} N TIUX,IDDAD<br/> I '+$G(^TIU(8925,TIUDA,21)) D  Q<br/> . S TIUY="0^Record #"_TIUDA_" is NOT an ID Entry."<br/> S IDDAD=+$G(^TIU(8925,TIUDA,21))<br/> S TIUX(2101)="@"<br/> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br/> D AUDLINK^TIUGR1(TIUDA,"d",IDDAD)<br/> D IDDEL^TIUALRT1(TIUDA){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

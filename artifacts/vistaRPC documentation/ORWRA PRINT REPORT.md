@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | print report entry point
  Input Parameters | {::nomarkdown}ORIO<br/>DFN<br/>ORID{:/}
- Lines | ```{::nomarkdown} IF '$$CHK^ORWCSP() G PRINTQ<br/> N TASKDATA<br/> S TASKDATA("DESC")="Imaging Report Print"<br/> S TASKDATA("RTN")="DEQUE^ORWRAP"<br/> D TASK^ORWCSP(.ORY,.ORIO,.DFN,.ORID,.TASKDATA)```{:/}
+ Lines | {::nomarkdown} IF '$$CHK^ORWCSP() G PRINTQ<br/> N TASKDATA<br/> S TASKDATA("DESC")="Imaging Report Print"<br/> S TASKDATA("RTN")="DEQUE^ORWRAP"<br/> D TASK^ORWCSP(.ORY,.ORIO,.DFN,.ORID,.TASKDATA){:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRA PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

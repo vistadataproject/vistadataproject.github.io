@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Gets list of Notes
  Input Parameters | {::nomarkdown}DFN<br/>EARLY<br/>LATE<br/>ROOTFLAG{:/}
- Lines | ```{::nomarkdown} I $S(+$G(DFN)'>0:1,'$D(^DPT(+$G(DFN),0)):1,1:0) Q<br/> D LIST(.TIUY,3,DFN,$G(EARLY),$G(LATE),$G(ROOTFLAG))```{:/}
+ Lines | {::nomarkdown} I $S(+$G(DFN)'>0:1,'$D(^DPT(+$G(DFN),0)):1,1:0) Q<br/> D LIST(.TIUY,3,DFN,$G(EARLY),$G(LATE),$G(ROOTFLAG)){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

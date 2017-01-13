@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get ICD-10 Implementation Date
- Lines | ```{::nomarkdown} S RESULT=""<br/> G:'$L($T(IMPDATE^LEXU)) I10IMPX<br/> S RESULT=$$IMPDATE^LEXU("10D")```{:/}
+ Lines | {::nomarkdown} S RESULT=""<br/> G:'$L($T(IMPDATE^LEXU)) I10IMPX<br/> S RESULT=$$IMPDATE^LEXU("10D"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return 1 if DEA check fails for this provider
  Input Parameters | {::nomarkdown}OI<br/>ORNP<br/>PSTYPE{:/}
- Lines | ```{::nomarkdown} N DEAFLG,PSOI,TPKG,RT,DETFLG,DETPRO<br/> S FAIL=0,TPKG=$P($G(^ORD(101.43,+$G(OI),0)),U,2)<br/> Q:TPKG'["PS"<br/> S PSOI=+TPKG Q:PSOI'>0<br/> S DETFLAG=$$OIDETOX^PSSOPKI(PSOI,PSTYPE)<br/> S DETPRO=$$DETOX^XUSER(+$G(ORNP))<br/> I DETFLAG,DETPRO="" S FAIL=3 Q<br/> I DETFLAG,DETPRO>0 S Y=DETPRO X ^DD("DD") S FAIL="5^"_Y Q<br/> S DEAFLG=$P($$OIDEA^PSSOPKI(PSOI,PSTYPE),";",2) Q:DEAFLG'>0<br/> I DEAFLG=1 S FAIL=6 Q<br/> S RT=$$SDEA^XUSER(,+$G(ORNP),DEAFLG) I RT=1 S FAIL=1<br/> I RT=2 S FAIL="2^"_$$UP^XLFSTR(DEAFLG)<br/> I RT?1"4".E S FAIL=RT```{:/}
+ Lines | {::nomarkdown} N DEAFLG,PSOI,TPKG,RT,DETFLG,DETPRO<br/> S FAIL=0,TPKG=$P($G(^ORD(101.43,+$G(OI),0)),U,2)<br/> Q:TPKG'["PS"<br/> S PSOI=+TPKG Q:PSOI'>0<br/> S DETFLAG=$$OIDETOX^PSSOPKI(PSOI,PSTYPE)<br/> S DETPRO=$$DETOX^XUSER(+$G(ORNP))<br/> I DETFLAG,DETPRO="" S FAIL=3 Q<br/> I DETFLAG,DETPRO>0 S Y=DETPRO X ^DD("DD") S FAIL="5^"_Y Q<br/> S DEAFLG=$P($$OIDEA^PSSOPKI(PSOI,PSTYPE),";",2) Q:DEAFLG'>0<br/> I DEAFLG=1 S FAIL=6 Q<br/> S RT=$$SDEA^XUSER(,+$G(ORNP),DEAFLG) I RT=1 S FAIL=1<br/> I RT=2 S FAIL="2^"_$$UP^XLFSTR(DEAFLG)<br/> I RT?1"4".E S FAIL=RT{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

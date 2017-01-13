@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return 1 in VAL if note still needs a CPT code
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```{::nomarkdown} S VAL=+$P(^TIU(8925,IEN,0),U,11)```{:/}
+ Lines | {::nomarkdown} S VAL=+$P(^TIU(8925,IEN,0),U,11){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

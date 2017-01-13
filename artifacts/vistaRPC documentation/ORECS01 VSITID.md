@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return Visit IEN ptr to #9000010
  Input Parameters | {::nomarkdown}VSTSTR{:/}
- Lines | ```{::nomarkdown} N DTREF,PTID<br/> S ORY=0<br/> S DTREF=9999999-$P($P(VSTSTR,";",2),".")_"."_$P($P(VSTSTR,";",2),".",2)<br/> S PTID=+$P(VSTSTR,";",4)<br/> S:$D(^AUPNVSIT("AA",PTID,DTREF)) ORY=$O(^(DTREF,0))```{:/}
+ Lines | {::nomarkdown} N DTREF,PTID<br/> S ORY=0<br/> S DTREF=9999999-$P($P(VSTSTR,";",2),".")_"."_$P($P(VSTSTR,";",2),".",2)<br/> S PTID=+$P(VSTSTR,";",4)<br/> S:$D(^AUPNVSIT("AA",PTID,DTREF)) ORY=$O(^(DTREF,0)){:/}
  Leading comment lines | {::nomarkdown}VSTSTR=HospLoc;DateTime;Category;PtIEN{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

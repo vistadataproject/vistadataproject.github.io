@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | returns TRUE if the user possesses the security key
  Input Parameters | {::nomarkdown}KEY{:/}
- Lines | ```{::nomarkdown} S VAL=''$D(^XUSEC(KEY,DUZ))```{:/}
+ Lines | {::nomarkdown} S VAL=''$D(^XUSEC(KEY,DUZ)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

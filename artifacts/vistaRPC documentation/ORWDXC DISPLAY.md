@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return list of Order Checks for a FillerID (namespace)
  Input Parameters | {::nomarkdown}DFN<br/>FID{:/}
- Lines | ```{::nomarkdown} N I,ORX,ORY<br/> S ORX=1,ORX(1)="|"_FID<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")<br/> S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4)```{:/}
+ Lines | {::nomarkdown} N I,ORX,ORY<br/> S ORX=1,ORX(1)="|"_FID<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")<br/> S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

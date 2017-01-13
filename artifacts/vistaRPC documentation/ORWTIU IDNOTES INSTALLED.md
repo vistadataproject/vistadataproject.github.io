@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is ID Notes installed?
- Lines | ```{::nomarkdown} S ORY=$$PATCH^XPDUTL("TIU*1.0*100")```{:/}
+ Lines | {::nomarkdown} S ORY=$$PATCH^XPDUTL("TIU*1.0*100"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

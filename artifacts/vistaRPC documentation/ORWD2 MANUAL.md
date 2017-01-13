@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return device info for manual prints
  Input Parameters | {::nomarkdown}LOC<br/>ORDERS{:/}
- Lines | ```{::nomarkdown} N DOCHT,DOLBL,DOREQ,DOWRK,ORDERID,I<br/> N PRMTCHT,PRMTLBL,PRMTREQ,PRMTWRK  ; (so undefined for DEFDEV call)<br/> S (DOCHT,DOLBL,DOREQ,DOWRK,I,J)=0,LOC=+LOC_";SC("<br/> N BBPKG S BBPKG=+$O(^DIC(9.4,"B","VBECS",0))<br/> D INSRTBB(.ORDERS) ; insert any blood bank child lab orders into ORDERS array<br/> F  S I=$O(ORDERS(I)) Q:'I  D  Q:DOCHT&DOLBL&DOREQ&DOWRK<br/> . S ORDERID=$P(ORDERS(I),U)<br/> . I $$HASFMTC,$$NOTBB(+ORDERS(I)) S DOCHT=1<br/> . I $$HASFMTL S DOLBL=1<br/> . I $$HASFMTR S DOREQ=1<br/> . I $$HASFMTW,$$NOTBB(+ORDERS(I)) S DOWRK=1<br/> S REC=$$DEFDEV```{:/}
+ Lines | {::nomarkdown} N DOCHT,DOLBL,DOREQ,DOWRK,ORDERID,I<br/> N PRMTCHT,PRMTLBL,PRMTREQ,PRMTWRK  ; (so undefined for DEFDEV call)<br/> S (DOCHT,DOLBL,DOREQ,DOWRK,I,J)=0,LOC=+LOC_";SC("<br/> N BBPKG S BBPKG=+$O(^DIC(9.4,"B","VBECS",0))<br/> D INSRTBB(.ORDERS) ; insert any blood bank child lab orders into ORDERS array<br/> F  S I=$O(ORDERS(I)) Q:'I  D  Q:DOCHT&DOLBL&DOREQ&DOWRK<br/> . S ORDERID=$P(ORDERS(I),U)<br/> . I $$HASFMTC,$$NOTBB(+ORDERS(I)) S DOCHT=1<br/> . I $$HASFMTL S DOLBL=1<br/> . I $$HASFMTR S DOREQ=1<br/> . I $$HASFMTW,$$NOTBB(+ORDERS(I)) S DOWRK=1<br/> S REC=$$DEFDEV{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Display grp pointer for name
  Input Parameters | {::nomarkdown}NM{:/}
- Lines | ```{::nomarkdown} S VAL=$O(^ORD(100.98,"B",NM,0))```{:/}
+ Lines | {::nomarkdown} S VAL=$O(^ORD(100.98,"B",NM,0)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

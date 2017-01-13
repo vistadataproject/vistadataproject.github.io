@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | If Pt's current data match selected event
  Input Parameters | {::nomarkdown}DFN<br/>EVT{:/}
- Lines | ```{::nomarkdown} S ORY=0<br/> Q:('+DFN)!('+EVT)<br/> S ORY=$$MATCH^OREVNT(DFN,EVT)<br/> N TS,TSNM<br/> S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))<br/> S TSNM=$P($G(^DIC(45.7,TS,0)),U)<br/> S:ORY ORY=ORY_U_TSNM```{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> Q:('+DFN)!('+EVT)<br/> S ORY=$$MATCH^OREVNT(DFN,EVT)<br/> N TS,TSNM<br/> S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))<br/> S TSNM=$P($G(^DIC(45.7,TS,0)),U)<br/> S:ORY ORY=ORY_U_TSNM{:/}
  Leading comment lines | {::nomarkdown}DFN: patient DFN<br/>EVT: ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

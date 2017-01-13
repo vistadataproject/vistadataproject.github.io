@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default for refill location
- Lines | ```{::nomarkdown} I $D(^PSX(550,"C")) S Y="M"<br/> E  S Y="W"```{:/}
+ Lines | {::nomarkdown} I $D(^PSX(550,"C")) S Y="M"<br/> E  S Y="W"{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

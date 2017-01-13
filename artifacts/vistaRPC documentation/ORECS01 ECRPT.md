@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | EC report
  Input Parameters | {::nomarkdown}ORECARY{:/}
- Lines | ```{::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY)```{:/}
+ Lines | {::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to identify class CONSULTS
- Lines | ```{::nomarkdown} S Y=$$CLASS^TIUCNSLT```{:/}
+ Lines | {::nomarkdown} S Y=$$CLASS^TIUCNSLT{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

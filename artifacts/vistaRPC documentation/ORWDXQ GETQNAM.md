@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return current quick name
  Input Parameters | {::nomarkdown}CRC{:/}
- Lines | ```{::nomarkdown} N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br/> I '$D(^ORD(101.41,"B",ROOT)) Q<br/> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br/> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2)```{:/}
+ Lines | {::nomarkdown} N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br/> I '$D(^ORD(101.41,"B",ROOT)) Q<br/> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br/> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return PtEvtID based on the ORID
  Input Parameters | {::nomarkdown}ORID{:/}
- Lines | ```{::nomarkdown} Q:'$D(^OR(100,+ORID,0))<br/> S ORY=$P($G(^OR(100,+ORID,0)),U,17)```{:/}
+ Lines | {::nomarkdown} Q:'$D(^OR(100,+ORID,0))<br/> S ORY=$P($G(^OR(100,+ORID,0)),U,17){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

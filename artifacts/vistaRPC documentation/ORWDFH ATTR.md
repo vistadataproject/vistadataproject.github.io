@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return OI^Text^Type^Precedence^AskExpire for a diet
  Input Parameters | {::nomarkdown}OI{:/}
- Lines | ```{::nomarkdown} I $G(^ORD(101.43,OI,.1)),^(.1)'>$$NOW^XLFDT S REC="0^"_$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore." Q<br/> S REC=OI_U_$P($G(^ORD(101.43,OI,0)),U)_U_$G(^("FH"))```{:/}
+ Lines | {::nomarkdown} I $G(^ORD(101.43,OI,.1)),^(.1)'>$$NOW^XLFDT S REC="0^"_$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore." Q<br/> S REC=OI_U_$P($G(^ORD(101.43,OI,0)),U)_U_$G(^("FH")){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

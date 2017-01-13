@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - set graph positions and sizes
  Input Parameters | {::nomarkdown}VAL{:/}
- Lines | ```{::nomarkdown} D SETSIZE^ORWGAPI("ORWGRPC",.VAL)<br/> S ERR=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D SETSIZE^ORWGAPI("ORWGRPC",.VAL)<br/> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

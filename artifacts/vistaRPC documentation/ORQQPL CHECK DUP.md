@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check for duplicate problem
  Input Parameters | {::nomarkdown}DFN<br/>TERM<br/>TEXT{:/}
- Lines | ```{::nomarkdown} S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br/> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br/> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12)```{:/}
+ Lines | {::nomarkdown} S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br/> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br/> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12){:/}
 
 ### Input Parameters
 
@@ -35,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

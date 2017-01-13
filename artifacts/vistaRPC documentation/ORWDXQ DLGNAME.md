@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return display name for a dialog (DELETE??)
  Input Parameters | {::nomarkdown}INAME{:/}
- Lines | ```{::nomarkdown} N IEN S IEN=$O(^ORD(101.41,"B",INAME,0))<br/> S VAL=$P($G(^ORD(101.41,IEN,5)),U,4)```{:/}
+ Lines | {::nomarkdown} N IEN S IEN=$O(^ORD(101.41,"B",INAME,0))<br/> S VAL=$P($G(^ORD(101.41,IEN,5)),U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

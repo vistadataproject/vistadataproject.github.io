@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Kill global data using passed global root value.
  Input Parameters | {::nomarkdown}ORJ{:/}
- Lines | ```{::nomarkdown} N ORROOT<br/> S Y=1                                     ; Initialize.<br/> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br/> S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.<br/> K @ORROOT                                 ; Kill global data.<br/>```{:/}
+ Lines | {::nomarkdown} N ORROOT<br/> S Y=1                                     ; Initialize.<br/> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br/> S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.<br/> K @ORROOT                                 ; Kill global data.<br/>{:/}
  Leading comment lines | {::nomarkdown}Variables used:<br/>ORJ    = Job number to use in ^TMP global root.<br/>ORROOT = Root of ^TMP global to kill.<br/>Y      = Returned RPC value.{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

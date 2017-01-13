@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return top for all patients list (last selected for now)
- Lines | ```{::nomarkdown} N IEN<br/> S IEN=$G(^DISV(DUZ,"^DPT("))<br/> I IEN S LST(1)=IEN_U_$P($G(^DPT(IEN,0)),U)```{:/}
+ Lines | {::nomarkdown} N IEN<br/> S IEN=$G(^DISV(DUZ,"^DPT("))<br/> I IEN S LST(1)=IEN_U_$P($G(^DPT(IEN,0)),U){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

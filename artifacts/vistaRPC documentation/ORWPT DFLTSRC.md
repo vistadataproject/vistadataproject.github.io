@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return default patient list source (T, W, C, P, S)
- Lines | ```{::nomarkdown} N SRV S SRV=+$G(^VA(200,DUZ,5))<br/> S VAL=$$GET^XPAR("ALL^SRV.`"_SRV,"ORLP DEFAULT LIST SOURCE")```{:/}
+ Lines | {::nomarkdown} N SRV S SRV=+$G(^VA(200,DUZ,5))<br/> S VAL=$$GET^XPAR("ALL^SRV.`"_SRV,"ORLP DEFAULT LIST SOURCE"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

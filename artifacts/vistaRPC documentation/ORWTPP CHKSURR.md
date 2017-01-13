@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}SURR{:/}
- Lines | ```{::nomarkdown} S OK=$$CHKSURR^ORWTPUA(DUZ,SURR)```{:/}
+ Lines | {::nomarkdown} S OK=$$CHKSURR^ORWTPUA(DUZ,SURR){:/}
  Leading comment lines | {::nomarkdown}check if current user's surrogate is valid{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

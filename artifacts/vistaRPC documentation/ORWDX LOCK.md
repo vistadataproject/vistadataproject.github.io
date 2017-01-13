@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Attempt to lock pt for ordering
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```{::nomarkdown} S OK=$$LOCK^ORX2(DFN)```{:/}
+ Lines | {::nomarkdown} S OK=$$LOCK^ORX2(DFN){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

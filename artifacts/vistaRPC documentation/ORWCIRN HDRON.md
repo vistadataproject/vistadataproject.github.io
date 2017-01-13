@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get parameter value for ORWRP HDR ON
- Lines | ```{::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWRP HDR ON",1,"I")<br/>```{:/}
+ Lines | {::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWRP HDR ON",1,"I")<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

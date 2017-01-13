@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Unlock Template Field
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} L -^TIU(8927.1,TIUDA,0)<br/> S TIUY=1```{:/}
+ Lines | {::nomarkdown} L -^TIU(8927.1,TIUDA,0)<br/> S TIUY=1{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

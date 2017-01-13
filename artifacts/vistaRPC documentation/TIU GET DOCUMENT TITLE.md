@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get the title from a TIU Document Record
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} S TIUY=+$G(^TIU(8925,+TIUDA,0))```{:/}
+ Lines | {::nomarkdown} S TIUY=+$G(^TIU(8925,+TIUDA,0)){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

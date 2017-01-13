@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Patient COM Object
- Lines | ```{::nomarkdown} D GETOBJ(.ORY,"ORWCOM PATIENT SELECTED",1)```{:/}
+ Lines | {::nomarkdown} D GETOBJ(.ORY,"ORWCOM PATIENT SELECTED",1){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

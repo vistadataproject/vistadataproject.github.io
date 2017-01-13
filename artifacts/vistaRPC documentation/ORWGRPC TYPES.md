@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get all the types of data on a patient (SUB=1, gets subtypes, DFN=0 gets all types), 
  Input Parameters | {::nomarkdown}DFN<br/>SUB{:/}
- Lines | ```{::nomarkdown} D TYPES^ORWGAPI("ORWGRPC",DFN,+$G(SUB))<br/> S TYPES=$NA(^TMP("ORWGRPC",$J))<br/>```{:/}
+ Lines | {::nomarkdown} D TYPES^ORWGAPI("ORWGRPC",DFN,+$G(SUB))<br/> S TYPES=$NA(^TMP("ORWGRPC",$J))<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | returns TRUE if valid electronic signature
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```{::nomarkdown} S X=$$DECRYP^XUSRB1(X),ESOK=0                   ; network encrypted<br/> D HASH^XUSHSHP<br/> I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1```{:/}
+ Lines | {::nomarkdown} S X=$$DECRYP^XUSRB1(X),ESOK=0                   ; network encrypted<br/> D HASH^XUSHSHP<br/> I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

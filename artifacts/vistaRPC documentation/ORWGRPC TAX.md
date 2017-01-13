@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get reminder taxonomies
  Input Parameters | {::nomarkdown}ALL<br/>REMTAX{:/}
- Lines | ```{::nomarkdown} D TAX^ORWGAPI("ORWGRPC",+$G(ALL),.REMTAX)<br/> S DATA=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D TAX^ORWGAPI("ORWGRPC",+$G(ALL),.REMTAX)<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

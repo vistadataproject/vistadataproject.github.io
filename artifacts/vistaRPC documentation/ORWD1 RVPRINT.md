@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | print orders from review/sign actions
  Input Parameters | {::nomarkdown}HLOC<br/>ORWDEV<br/>PRTLST{:/}
- Lines | ```{::nomarkdown} D PRINTS(.PRTLST,HLOC,ORWDEV) S OK=1```{:/}
+ Lines | {::nomarkdown} D PRINTS(.PRTLST,HLOC,ORWDEV) S OK=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

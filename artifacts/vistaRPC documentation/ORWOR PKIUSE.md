@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC determines user can use PKI Digital Signature
- Lines | ```{::nomarkdown} N ORPKIU<br/> S RETURN=0<br/> S ORPKIU=0 I $D(^ORD(100.7,"C",DUZ)) S ORPKIU=1<br/> I ORPKIU S RETURN=1```{:/}
+ Lines | {::nomarkdown} N ORPKIU<br/> S RETURN=0<br/> S ORPKIU=0 I $D(^ORD(100.7,"C",DUZ)) S ORPKIU=1<br/> I ORPKIU S RETURN=1{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

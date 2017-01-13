@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get the visit IEN
  Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>VSITSTR{:/}
- Lines | ```{::nomarkdown} I +$G(IEN)<1 D  I 1<br/> .S VISIT=$$GETENC^PXAPI(DFN,$P(VSITSTR,";",2),$P(VSITSTR,";"))<br/> E  S VISIT=$P(^TIU(8925,IEN,0),U,3)```{:/}
+ Lines | {::nomarkdown} I +$G(IEN)<1 D  I 1<br/> .S VISIT=$$GETENC^PXAPI(DFN,$P(VSITSTR,";",2),$P(VSITSTR,";"))<br/> E  S VISIT=$P(^TIU(8925,IEN,0),U,3){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

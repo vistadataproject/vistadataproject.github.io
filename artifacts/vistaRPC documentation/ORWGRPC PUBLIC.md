@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - check if user can edit public views and settings
- Lines | ```{::nomarkdown} S VAL=$$PUBLIC^ORWGAPI(DUZ)```{:/}
+ Lines | {::nomarkdown} S VAL=$$PUBLIC^ORWGAPI(DUZ){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

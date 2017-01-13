@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | For Non-VA meds, check restrictions
  Input Parameters | {::nomarkdown}PRV{:/}
- Lines | ```{::nomarkdown} N NAME,AUTH,INACT,X S VAL=0<br/> I $D(^XUSEC("OREMAS",DUZ)),$$GET^XPAR("ALL","OR OREMAS NON-VA MED ORDERS")=2 Q<br/> I $D(^XUSEC("OREMAS",DUZ)),'$$GET^XPAR("ALL","OR OREMAS NON-VA MED ORDERS") D  Q<br/> . S VAL="1^OREMAS key holders may not enter non-VA medication orders."<br/> S NAME=$P($G(^VA(200,PRV,20)),U,2) S:'$L(NAME) NAME=$P(^(0),U)<br/> S X=$G(^VA(200,PRV,"PS")),AUTH=$P(X,U),INACT=$P(X,U,4)<br/> I 'AUTH!(INACT&(DT>INACT)) D  Q<br/> . S VAL="1^"_NAME_" is not authorized to write medication orders."```{:/}
+ Lines | {::nomarkdown} N NAME,AUTH,INACT,X S VAL=0<br/> I $D(^XUSEC("OREMAS",DUZ)),$$GET^XPAR("ALL","OR OREMAS NON-VA MED ORDERS")=2 Q<br/> I $D(^XUSEC("OREMAS",DUZ)),'$$GET^XPAR("ALL","OR OREMAS NON-VA MED ORDERS") D  Q<br/> . S VAL="1^OREMAS key holders may not enter non-VA medication orders."<br/> S NAME=$P($G(^VA(200,PRV,20)),U,2) S:'$L(NAME) NAME=$P(^(0),U)<br/> S X=$G(^VA(200,PRV,"PS")),AUTH=$P(X,U),INACT=$P(X,U,4)<br/> I 'AUTH!(INACT&(DT>INACT)) D  Q<br/> . S VAL="1^"_NAME_" is not authorized to write medication orders."{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

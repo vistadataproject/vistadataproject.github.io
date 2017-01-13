@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | set up all data and items on patient
  Input Parameters | {::nomarkdown}DFN<br/>OLDDFN{:/}
- Lines | ```{::nomarkdown} D FASTTASK^ORWGAPI(.STATUS,DFN,$G(OLDDFN))```{:/}
+ Lines | {::nomarkdown} D FASTTASK^ORWGAPI(.STATUS,DFN,$G(OLDDFN)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

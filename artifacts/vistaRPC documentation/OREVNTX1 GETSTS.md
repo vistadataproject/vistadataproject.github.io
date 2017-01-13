@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return Order status
  Input Parameters | {::nomarkdown}ORDID{:/}
- Lines | ```{::nomarkdown} Q:'+ORDID<br/> Q:'$D(^OR(100,+ORDID,0))<br/> S ORY=$P($G(^OR(100,+ORDID,3)),U,3)```{:/}
+ Lines | {::nomarkdown} Q:'+ORDID<br/> Q:'$D(^OR(100,+ORDID,0))<br/> S ORY=$P($G(^OR(100,+ORDID,3)),U,3){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

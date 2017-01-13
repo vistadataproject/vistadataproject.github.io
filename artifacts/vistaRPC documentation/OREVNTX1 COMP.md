@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return 1 or 0 if PTEVT completed or not
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```{::nomarkdown} Q:'+PTEVT<br/> S ORY=$$COMP^OREVNTX(+PTEVT)```{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> S ORY=$$COMP^OREVNTX(+PTEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check if Drug Schedule
  Input Parameters | {::nomarkdown}ORDER{:/}
- Lines | ```{::nomarkdown} N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> S Y=$P($G(^OR(100,+IFN,8,+ACTION,2)),U,4)```{:/}
+ Lines | {::nomarkdown} N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> S Y=$P($G(^OR(100,+IFN,8,+ACTION,2)),U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

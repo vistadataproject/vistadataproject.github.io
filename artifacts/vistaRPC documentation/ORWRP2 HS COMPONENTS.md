@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get ADHOC sub components (FILE 142.1)
- Lines | ```{::nomarkdown} D COMP^GMTSADH5(.ORY)```{:/}
+ Lines | {::nomarkdown} D COMP^GMTSADH5(.ORY){:/}
  Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS COMPONENTS<br/>Y(i)=(1)I;IFN^(2)Component Name [Abb]^(3)Occ Limit^(4)Time Limit^(5)Header Name^<br/>(6)Hosp Loc Disp^(7)ICD Text Disp^(8)Prov Narr Disp^(9)Summary Order{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

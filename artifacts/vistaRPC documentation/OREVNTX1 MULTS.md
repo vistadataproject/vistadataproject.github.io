@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return specialty list for the EVTID(#100.5)
  Input Parameters | {::nomarkdown}EVTID{:/}
- Lines | ```{::nomarkdown} Q:'+EVTID<br/> N I,CNT,X,Y S (I,CNT)=0<br/> N PRTEVT<br/> S PRTEVT=0<br/> S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)<br/> I PRTEVT>0 S EVTID=PRTEVT<br/> F  S I=$O(^ORD(100.5,+$G(EVTID),"TS",I)) Q:I<1  S X=+$G(^(I,0)) D<br/> . S Y=$$GET1^DIQ(45.7,X_",",.01)<br/> . S CNT=CNT+1,ORY(CNT)=X_U_Y```{:/}
+ Lines | {::nomarkdown} Q:'+EVTID<br/> N I,CNT,X,Y S (I,CNT)=0<br/> N PRTEVT<br/> S PRTEVT=0<br/> S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)<br/> I PRTEVT>0 S EVTID=PRTEVT<br/> F  S I=$O(^ORD(100.5,+$G(EVTID),"TS",I)) Q:I<1  S X=+$G(^(I,0)) D<br/> . S Y=$$GET1^DIQ(45.7,X_",",.01)<br/> . S CNT=CNT+1,ORY(CNT)=X_U_Y{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

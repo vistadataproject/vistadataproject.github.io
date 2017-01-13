@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns "MHV" if patient has My HealtheVet data
  Input Parameters | {::nomarkdown}ORDFN{:/}
- Lines | ```{::nomarkdown} N I,ORX<br/> S ORY=0<br/> D TFL^VAFCTFU1(.ORX,ORDFN)       ; DBIA #2990<br/> S I=0 F  S I=$O(ORX(I)) Q:'I  D<br/> .;pt has MHV treat fac (200MH) and event reason wasn't "discharge" (3):<br/> .I $P(ORX(I),U)="200MH",$P(ORX(I),U,4)'=3 D<br/> ..S $P(ORY,U)="MHV",$P(ORY,U,2)="Patient has data in My HealtheVet"<br/>```{:/}
+ Lines | {::nomarkdown} N I,ORX<br/> S ORY=0<br/> D TFL^VAFCTFU1(.ORX,ORDFN)       ; DBIA #2990<br/> S I=0 F  S I=$O(ORX(I)) Q:'I  D<br/> .;pt has MHV treat fac (200MH) and event reason wasn't "discharge" (3):<br/> .I $P(ORX(I),U)="200MH",$P(ORX(I),U,4)'=3 D<br/> ..S $P(ORY,U)="MHV",$P(ORY,U,2)="Patient has data in My HealtheVet"<br/>{:/}
  Leading comment lines | {::nomarkdown}Ouput Variable<br/>ORY = 0      if patient does not have My HealtheVet (MHV) data<br/>= "MHV"  if patient does have My HealtheVet data   {:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

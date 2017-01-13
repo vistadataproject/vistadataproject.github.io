@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get document parameters for GUI
  Input Parameters | {::nomarkdown}TIUDA<br/>TIUTYP{:/}
- Lines | ```{::nomarkdown} I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+TIUDA,0))<br/> I '+$G(TIUTYP) S TIUY(0)="" Q<br/> D DOCPRM^TIULC1(TIUTYP,.TIUY,$G(TIUDA))<br/> I '$D(TIUY) S TIUY(0)=""```{:/}
+ Lines | {::nomarkdown} I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+TIUDA,0))<br/> I '+$G(TIUTYP) S TIUY(0)="" Q<br/> D DOCPRM^TIULC1(TIUTYP,.TIUY,$G(TIUDA))<br/> I '$D(TIUY) S TIUY(0)=""{:/}
 
 ### Input Parameters
 
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

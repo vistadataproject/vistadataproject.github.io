@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | get list of health factors for clinic
  Input Parameters | {::nomarkdown}CLINIC{:/}
- Lines | ```{::nomarkdown} D GETLST^IBDF18A(CLINIC,"PX SELECT HEALTH FACTORS","LST")```{:/}
+ Lines | {::nomarkdown} D GETLST^IBDF18A(CLINIC,"PX SELECT HEALTH FACTORS","LST"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

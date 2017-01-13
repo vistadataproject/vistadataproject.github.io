@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return ap
- Lines | ```{::nomarkdown} N I,XU4<br/> S RET(0)="" I '$$BROKER^XWBLIB Q<br/> D GETLST^XPAR(.XU4,"SYS","XUS CCOW VAULT PARAM","Q")<br/> F I=0,1 S RET(I)=$P($G(XU4(I+1)),"^",2,99)```{:/}
+ Lines | {::nomarkdown} N I,XU4<br/> S RET(0)="" I '$$BROKER^XWBLIB Q<br/> D GETLST^XPAR(.XU4,"SYS","XUS CCOW VAULT PARAM","Q")<br/> F I=0,1 S RET(I)=$P($G(XU4(I+1)),"^",2,99){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

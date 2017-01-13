@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a list of parameter values
  Input Parameters | {::nomarkdown}APARAM{:/}
- Lines | ```{::nomarkdown} D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q")```{:/}
+ Lines | {::nomarkdown} D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q"){:/}
  Leading comment lines | {::nomarkdown}call assumes current user, default entities, multiple instances{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

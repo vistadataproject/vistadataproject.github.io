@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | load consult info    
- Lines | ```{::nomarkdown} N ILST,NAM,IEN,X<br/> S ILST=0<br/> S LST($$NXT)="~Services" D SRVC<br/> S LST($$NXT)="~Inpt Urgencies" D INURG<br/> S LST($$NXT)="~Outpt Urgencies" D OUTURG<br/> S LST($$NXT)="~Inpt Place" D INPLACE<br/> S LST($$NXT)="~Outpt Place" D OUTPLACE```{:/}
+ Lines | {::nomarkdown} N ILST,NAM,IEN,X<br/> S ILST=0<br/> S LST($$NXT)="~Services" D SRVC<br/> S LST($$NXT)="~Inpt Urgencies" D INURG<br/> S LST($$NXT)="~Outpt Urgencies" D OUTURG<br/> S LST($$NXT)="~Inpt Place" D INPLACE<br/> S LST($$NXT)="~Outpt Place" D OUTPLACE{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

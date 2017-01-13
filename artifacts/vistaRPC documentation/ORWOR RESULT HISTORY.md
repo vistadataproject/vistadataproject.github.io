@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return result history of associated tests identified by ID
  Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
- Lines | ```{::nomarkdown} K ^TMP("ORXPND",$J)<br/> N ORESULTS,ORVP,LCNT<br/> S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br/> D ORDHIST^ORWOR2<br/> K ^TMP("ORXPND",$J,"VIDEO")<br/> S REF=$NA(^TMP("ORXPND",$J))```{:/}
+ Lines | {::nomarkdown} K ^TMP("ORXPND",$J)<br/> N ORESULTS,ORVP,LCNT<br/> S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br/> D ORDHIST^ORWOR2<br/> K ^TMP("ORXPND",$J,"VIDEO")<br/> S REF=$NA(^TMP("ORXPND",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

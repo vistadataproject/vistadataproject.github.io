@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}VALUE{:/}
- Lines | ```{::nomarkdown} D REMLIST^ORWTPT(.OK,VALUE,DUZ)```{:/}
+ Lines | {::nomarkdown} D REMLIST^ORWTPT(.OK,VALUE,DUZ){:/}
  Leading comment lines | {::nomarkdown}removes current user from a team{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

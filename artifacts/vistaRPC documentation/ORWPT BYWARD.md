@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a list of patients in a ward
  Input Parameters | {::nomarkdown}WARD{:/}
- Lines | ```{::nomarkdown} N ILST,DFN<br/> I +$G(WARD)<1 S LST(1)="^No ward identified" Q<br/> S (ILST,DFN)=0<br/> S WARD=$P(^DIC(42,WARD,0),"^")   ;DBIA #36<br/> F  S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0  D<br/> . S ILST=ILST+1,LST(ILST)=+DFN_U_$P(^DPT(+DFN,0),U)_U_$G(^DPT(+DFN,.101))<br/> I ILST<1 S LST(1)="^No patients found."```{:/}
+ Lines | {::nomarkdown} N ILST,DFN<br/> I +$G(WARD)<1 S LST(1)="^No ward identified" Q<br/> S (ILST,DFN)=0<br/> S WARD=$P(^DIC(42,WARD,0),"^")   ;DBIA #36<br/> F  S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0  D<br/> . S ILST=ILST+1,LST(ILST)=+DFN_U_$P(^DPT(+DFN,0),U)_U_$G(^DPT(+DFN,.101))<br/> I ILST<1 S LST(1)="^No patients found."{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

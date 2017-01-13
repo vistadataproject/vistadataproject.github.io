@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save new default printer for user
  Input Parameters | {::nomarkdown}ORDEV{:/}
- Lines | ```{::nomarkdown} N ORPAR,ORERR,ORWINDEF<br/> Q:$L(ORDEV)=0<br/> S ORPAR="ORWDP WINPRINT DEFAULT"<br/> I ORDEV="WIN" S ORWINDEF="Y"<br/> E  S ORWINDEF="N"<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> Q:ORDEV="WIN"<br/> S ORPAR="ORWDP DEFAULT PRINTER",ORDEV="`"_ORDEV<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/>```{:/}
+ Lines | {::nomarkdown} N ORPAR,ORERR,ORWINDEF<br/> Q:$L(ORDEV)=0<br/> S ORPAR="ORWDP WINPRINT DEFAULT"<br/> I ORDEV="WIN" S ORWINDEF="Y"<br/> E  S ORWINDEF="N"<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> Q:ORDEV="WIN"<br/> S ORPAR="ORWDP DEFAULT PRINTER",ORDEV="`"_ORDEV<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}YS{:/}
- Lines | ```{::nomarkdown} N YSBEG,YSEND,YSLIMIT<br/> K YSDATA<br/> D PARSE(.YS)<br/> I DFN'>0 S YSDATA(1)="[ERROR]",YSDATA(2)="No dfn" Q<br/> S YSDATA(1)="[DATA]"<br/> S N=1<br/> D HXLP```{:/}
+ Lines | {::nomarkdown} N YSBEG,YSEND,YSLIMIT<br/> K YSDATA<br/> D PARSE(.YS)<br/> I DFN'>0 S YSDATA(1)="[ERROR]",YSDATA(2)="No dfn" Q<br/> S YSDATA(1)="[DATA]"<br/> S N=1<br/> D HXLP{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

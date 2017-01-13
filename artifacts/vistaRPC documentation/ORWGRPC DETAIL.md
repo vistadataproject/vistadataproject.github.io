@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get all reports for types of data from items and date range
  Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>VAL<br/>COMP{:/}
- Lines | ```{::nomarkdown} D DETAIL^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,.VAL,$G(COMP))<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D DETAIL^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,.VAL,$G(COMP))<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

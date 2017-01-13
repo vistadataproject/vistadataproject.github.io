@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return default hospital location ^SC( for PTEVT ptr #100.2
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```{::nomarkdown} Q:'+PTEVT<br/> S ORY=$$LOC^OREVNTX(PTEVT)<br/> S ORY=+ORY```{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> S ORY=$$LOC^OREVNTX(PTEVT)<br/> S ORY=+ORY{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

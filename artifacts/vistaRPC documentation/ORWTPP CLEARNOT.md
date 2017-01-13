@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
- Lines | ```{::nomarkdown} D CLEARNOT^ORWTPR(.OK,DUZ)```{:/}
+ Lines | {::nomarkdown} D CLEARNOT^ORWTPR(.OK,DUZ){:/}
  Leading comment lines | {::nomarkdown}clear current user's notifications{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

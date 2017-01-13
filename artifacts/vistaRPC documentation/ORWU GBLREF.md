@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return global reference for file number
  Input Parameters | {::nomarkdown}FN{:/}
- Lines | ```{::nomarkdown} S VAL="" Q:'FN<br/> S VAL=$$ROOT^DILFD(+FN)```{:/}
+ Lines | {::nomarkdown} S VAL="" Q:'FN<br/> S VAL=$$ROOT^DILFD(+FN){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

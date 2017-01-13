@@ -21,7 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}OIIEN{:/}
- Lines | ```{::nomarkdown} N PSOI,TEMP<br/> S ORY=""<br/> S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)<br/> S TEMP=$$IV^PSSDSAPA(PSOI)<br/> S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I")```{:/}
+ Lines | {::nomarkdown} N PSOI,TEMP<br/> S ORY=""<br/> S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)<br/> S TEMP=$$IV^PSSDSAPA(PSOI)<br/> S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I"){:/}
 
 ### Input Parameters
 
@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

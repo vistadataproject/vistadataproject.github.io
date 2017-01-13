@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a bolus of patient names
  Input Parameters | {::nomarkdown}DIR<br/>FROM{:/}
- Lines | ```{::nomarkdown} N I,IEN,CNT S CNT=44,I=0<br/> I DIR=0 D  ; Forward direction<br/> . F  S FROM=$O(^DPT("B",FROM)) Q:FROM=""  D  Q:I=CNT<br/> . . S IEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . . ; S X=$P($G(^DPT(IEN,0)),"^",9)<br/> . . . ; S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br/> . . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . . S I=I+1 S Y(I)=IEN_"^"_FROM ;_"^"_X ; _"^"_X1  ;"   ("_X_")"<br/> . I $G(Y(CNT))="" S I=I+1,Y(I)=""<br/> I DIR=1 D  ; Reverse direction<br/> . F  S FROM=$O(^DPT("B",FROM),-1) Q:FROM=""  D  Q:I=CNT<br/> . . S IEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . . ; S X=$P($G(^DPT(IEN,0)),"^",9)<br/> . . . ; S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br/> . . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . . S I=I+1 S Y(I)=IEN_"^"_FROM ;_"^"_X ; _"^"_X1  ;"   ("_X_")"```{:/}
+ Lines | {::nomarkdown} N I,IEN,CNT S CNT=44,I=0<br/> I DIR=0 D  ; Forward direction<br/> . F  S FROM=$O(^DPT("B",FROM)) Q:FROM=""  D  Q:I=CNT<br/> . . S IEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . . ; S X=$P($G(^DPT(IEN,0)),"^",9)<br/> . . . ; S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br/> . . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . . S I=I+1 S Y(I)=IEN_"^"_FROM ;_"^"_X ; _"^"_X1  ;"   ("_X_")"<br/> . I $G(Y(CNT))="" S I=I+1,Y(I)=""<br/> I DIR=1 D  ; Reverse direction<br/> . F  S FROM=$O(^DPT("B",FROM),-1) Q:FROM=""  D  Q:I=CNT<br/> . . S IEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br/> . . . ; S X=$P($G(^DPT(IEN,0)),"^",9)<br/> . . . ; S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br/> . . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br/> . . . S I=I+1 S Y(I)=IEN_"^"_FROM ;_"^"_X ; _"^"_X1  ;"   ("_X_")"{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

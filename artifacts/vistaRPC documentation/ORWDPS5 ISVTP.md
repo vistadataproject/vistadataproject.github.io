@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | True: is verbal or telephoned or policy order
  Input Parameters | {::nomarkdown}ODIEN{:/}
- Lines | ```{::nomarkdown} S ORY=0<br/> Q:'$D(^OR(100,+ODIEN,0))<br/> N VERB,TEL,POL,LSTACT,NATR<br/> S (VERB,TEL,POL,LSTACT)=0,NATR=""<br/> S VERB=$O(^ORD(100.02,"B","VERBAL",0))<br/> S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))<br/> S POL=$O(^ORD(100.02,"B","POLICY",0))<br/> S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)<br/> S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)<br/> I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1<br/>```{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> Q:'$D(^OR(100,+ODIEN,0))<br/> N VERB,TEL,POL,LSTACT,NATR<br/> S (VERB,TEL,POL,LSTACT)=0,NATR=""<br/> S VERB=$O(^ORD(100.02,"B","VERBAL",0))<br/> S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))<br/> S POL=$O(^ORD(100.02,"B","POLICY",0))<br/> S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)<br/> S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)<br/> I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

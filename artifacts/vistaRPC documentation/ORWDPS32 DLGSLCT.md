@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return def lists for dialog
  Input Parameters | {::nomarkdown}PSTYPE<br/>DFN<br/>LOCIEN{:/}
- Lines | ```{::nomarkdown} N ILST S ILST=0<br/> I PSTYPE="F" D  Q                       ; IV Fluids<br/> . S LST($$NXT)="~ShortList"  D SHORT<br/> . S LST($$NXT)="~Priorities" D PRIOR<br/> . ;S LST($$NXT)="~Schedules"  D SCHED(LOCIEN)<br/> . S LST($$NXT)="~Route" D IVROUTE<br/> S LST($$NXT)="~ShortList"  D SHORT      ; Unit Dose & Outpt<br/> S LST($$NXT)="~Priorities" D PRIOR<br/> I PSTYPE="O" D                          ; Outpt<br/> . S LST($$NXT)="~Pickup"   D PICKUP<br/> . S LST($$NXT)="~SCStatus" D SCLIST```{:/}
+ Lines | {::nomarkdown} N ILST S ILST=0<br/> I PSTYPE="F" D  Q                       ; IV Fluids<br/> . S LST($$NXT)="~ShortList"  D SHORT<br/> . S LST($$NXT)="~Priorities" D PRIOR<br/> . ;S LST($$NXT)="~Schedules"  D SCHED(LOCIEN)<br/> . S LST($$NXT)="~Route" D IVROUTE<br/> S LST($$NXT)="~ShortList"  D SHORT      ; Unit Dose & Outpt<br/> S LST($$NXT)="~Priorities" D PRIOR<br/> I PSTYPE="O" D                          ; Outpt<br/> . S LST($$NXT)="~Pickup"   D PICKUP<br/> . S LST($$NXT)="~SCStatus" D SCLIST{:/}
  Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt){:/}
 
 ### Input Parameters
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

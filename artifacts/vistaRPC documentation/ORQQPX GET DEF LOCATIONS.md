@@ -21,7 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Default Outside Locations
- Lines | ```{::nomarkdown} N SRV,ORERR<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D GETLST^XPAR(.ORDEFLOC,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX DEFAULT LOCATIONS","Q",.ORERR)```{:/}
+ Lines | {::nomarkdown} N SRV,ORERR<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D GETLST^XPAR(.ORDEFLOC,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX DEFAULT LOCATIONS","Q",.ORERR){:/}
 
 ### Input Parameters
 
@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns the letter text for the purpose of
  Input Parameters | {::nomarkdown}WVIEN{:/}
- Lines | ```{::nomarkdown} I '$G(WVIEN) S RESULT(0)="-1^Purpose IEN not greater than 0" Q<br/> I '$D(^WV(790.404,WVIEN,0)) D  Q<br/> .S RESULT(0)="-1^No such purpose of notification"<br/> .Q<br/> I '$O(^WV(790.404,WVIEN,1,0)) D  Q<br/> .S RESULT(0)="-1^No letter defined for this purpose"<br/> .Q<br/> N WVCNT,WVLOOP<br/> S RESULT(0)="",(WVCNT,WVLOOP)=0<br/> F  S WVLOOP=$O(^WV(790.404,WVIEN,1,WVLOOP)) Q:'WVLOOP  D<br/> .S WVCNT=WVCNT+1<br/> .S RESULT(WVCNT)=$G(^WV(790.404,WVIEN,1,WVLOOP,0))<br/> .Q```{:/}
+ Lines | {::nomarkdown} I '$G(WVIEN) S RESULT(0)="-1^Purpose IEN not greater than 0" Q<br/> I '$D(^WV(790.404,WVIEN,0)) D  Q<br/> .S RESULT(0)="-1^No such purpose of notification"<br/> .Q<br/> I '$O(^WV(790.404,WVIEN,1,0)) D  Q<br/> .S RESULT(0)="-1^No letter defined for this purpose"<br/> .Q<br/> N WVCNT,WVLOOP<br/> S RESULT(0)="",(WVCNT,WVLOOP)=0<br/> F  S WVLOOP=$O(^WV(790.404,WVIEN,1,WVLOOP)) Q:'WVLOOP  D<br/> .S WVCNT=WVCNT+1<br/> .S RESULT(WVCNT)=$G(^WV(790.404,WVIEN,1,WVLOOP,0))<br/> .Q{:/}
  Leading comment lines | {::nomarkdown}notification<br/>Input: RESULT - array name to return data in [required]<br/>WVIEN - FILE 790.404 IEN [required]<br/>Output: RESULT(0)=First line of letter text   <OR><br/>-1^error message<br/>RESULT(n)= remaining lines of letter text{:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

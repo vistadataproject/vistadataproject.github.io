@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return SC conditions that may be selected
  Input Parameters | {::nomarkdown}DFN<br/>ATM<br/>LOC<br/>VST{:/}
- Lines | ```{::nomarkdown} N ORX,S S S=";"<br/> D SCCOND^PXUTLSCC(DFN,ATM,LOC,$G(VST),.ORX)<br/> S VAL=$G(ORX("SC"))_S_$G(ORX("AO"))_S_$G(ORX("IR"))_S_$G(ORX("EC"))_S_$G(ORX("MST"))_S_$G(ORX("HNC"))_S_$G(ORX("CV"))_S_$G(ORX("SHAD"))```{:/}
+ Lines | {::nomarkdown} N ORX,S S S=";"<br/> D SCCOND^PXUTLSCC(DFN,ATM,LOC,$G(VST),.ORX)<br/> S VAL=$G(ORX("SC"))_S_$G(ORX("AO"))_S_$G(ORX("IR"))_S_$G(ORX("EC"))_S_$G(ORX("MST"))_S_$G(ORX("HNC"))_S_$G(ORX("CV"))_S_$G(ORX("SHAD")){:/}
  Leading comment lines | {::nomarkdown}VAL=SCallow^SCdflt;AOallow^AOdflt;IRallow^IRdflt;ECallow^ECdflt;<br/>MSTallow^MSTdflt;HNCallow^HNCdflt;CVAllow^CVDflt;SHADAllow^SHADDflt{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

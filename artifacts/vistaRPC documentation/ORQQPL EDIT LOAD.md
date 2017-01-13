@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | LOAD  EDIT ARRAYS
  Input Parameters | {::nomarkdown}DA{:/}
- Lines | ```{::nomarkdown} N I,GMPFLD,GMPORIG,GMPL<br/> D GETFLDS^GMPLEDT3(DA)<br/> S I=0<br/> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br/> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br/> K GMPFLD,GMPORIG,GMPL  ; should not have to do this```{:/}
+ Lines | {::nomarkdown} N I,GMPFLD,GMPORIG,GMPL<br/> D GETFLDS^GMPLEDT3(DA)<br/> S I=0<br/> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br/> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br/> K GMPFLD,GMPORIG,GMPL  ; should not have to do this{:/}
  Leading comment lines | {::nomarkdown}DA=problem IFN{:/}
 
 ### Input Parameters
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

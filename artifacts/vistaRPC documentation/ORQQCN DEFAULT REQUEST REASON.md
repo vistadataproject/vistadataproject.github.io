@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return default reason for request for service
  Input Parameters | {::nomarkdown}ORSVC<br/>ORDFN<br/>RESOLVE{:/}
- Lines | ```{::nomarkdown} Q:+$G(ORSVC)=0<br/> I +RESOLVE,(+$G(ORDFN)=0) Q<br/> S ORY=$NA(^TMP("ORREQ",$J))<br/> S:$G(RESOLVE)="" RESOLVE=0<br/> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br/> K @ORY@(0)```{:/}
+ Lines | {::nomarkdown} Q:+$G(ORSVC)=0<br/> I +RESOLVE,(+$G(ORDFN)=0) Q<br/> S ORY=$NA(^TMP("ORREQ",$J))<br/> S:$G(RESOLVE)="" RESOLVE=0<br/> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br/> K @ORY@(0){:/}
  Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 ### Input Parameters
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

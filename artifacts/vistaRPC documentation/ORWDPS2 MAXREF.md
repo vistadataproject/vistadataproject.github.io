@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return the maximum number of refills
  Input Parameters | {::nomarkdown}PAT<br/>DRG<br/>SUP<br/>OI<br/>OUT{:/}
- Lines | ```{::nomarkdown} N ORWX<br/> S ORWX("PATIENT")=PAT<br/> I $G(DRG) S ORWX("DRUG")=+DRG<br/> I $G(SUP) S ORWX("DAYS SUPPLY")=SUP<br/> I $G(OI)  S ORWX("ITEM")=+$P(^ORD(101.43,+OI,0),U,2)<br/> I $G(OUT) S ORWX("DISCHARGE")=1<br/> D MAX^PSOSIGDS(.ORWX)<br/> S VAL=$G(ORWX("MAX"))```{:/}
+ Lines | {::nomarkdown} N ORWX<br/> S ORWX("PATIENT")=PAT<br/> I $G(DRG) S ORWX("DRUG")=+DRG<br/> I $G(SUP) S ORWX("DAYS SUPPLY")=SUP<br/> I $G(OI)  S ORWX("ITEM")=+$P(^ORD(101.43,+OI,0),U,2)<br/> I $G(OUT) S ORWX("DISCHARGE")=1<br/> D MAX^PSOSIGDS(.ORWX)<br/> S VAL=$G(ORWX("MAX")){:/}
  Leading comment lines | {::nomarkdown}PAT=Patient DFN, DRG=ptr50, SUP=days supply, OI=orderable item<br/>VAL: maximum refills allowed{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

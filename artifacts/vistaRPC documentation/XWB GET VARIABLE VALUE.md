@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | returns value of passed in variable
  Input Parameters | {::nomarkdown}VARIABLE{:/}
- Lines | ```{::nomarkdown} S RESULT=VARIABLE ;can do this with the REFERENCE type parameter```{:/}
+ Lines | {::nomarkdown} S RESULT=VARIABLE ;can do this with the REFERENCE type parameter{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Evaluate/return whether user can change cosigner
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```{::nomarkdown} S TIUY=$$MAYCHNG^TIURA1(TIUDA)```{:/}
+ Lines | {::nomarkdown} S TIUY=$$MAYCHNG^TIURA1(TIUDA){:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

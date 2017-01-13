@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return index of item beginning with FROM
  Input Parameters | {::nomarkdown}IEN<br/>FROM{:/}
- Lines | ```{::nomarkdown} N I,X<br/> S VAL=0<br/> S X=$O(^ORD(101.44,IEN,20,"C",FROM))<br/> I '$L(X) Q<br/> S I=$O(^ORD(101.44,IEN,20,"C",X,0))<br/> Q:'I<br/> S VAL=+I_U_X```{:/}
+ Lines | {::nomarkdown} N I,X<br/> S VAL=0<br/> S X=$O(^ORD(101.44,IEN,20,"C",FROM))<br/> I '$L(X) Q<br/> S I=$O(^ORD(101.44,IEN,20,"C",X,0))<br/> Q:'I<br/> S VAL=+I_U_X{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a calculated stop date
  Input Parameters | {::nomarkdown}X2{:/}
- Lines | ```{::nomarkdown} N X1,X<br/> S X1=DT D C^%DTC S VAL=X<br/>```{:/}
+ Lines | {::nomarkdown} N X1,X<br/> S X1=DT D C^%DTC S VAL=X<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

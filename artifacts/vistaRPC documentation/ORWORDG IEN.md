@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return IEN for a display group
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```{::nomarkdown} S VAL=$O(^ORD(100.98,"B",X,0))<br/>```{:/}
+ Lines | {::nomarkdown} S VAL=$O(^ORD(100.98,"B",X,0))<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

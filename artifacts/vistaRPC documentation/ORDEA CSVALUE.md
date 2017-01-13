@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return 1 if the order (ORID) is a controlled substance, 0 for non-controlled substance
  Input Parameters | {::nomarkdown}ORID{:/}
- Lines | ```{::nomarkdown} N OROI,ORPSTYPE,ORRXDG<br/> S ORY=0,ORPSTYPE=""<br/> S OROI=$$OI^ORQOR2(+ORID)<br/> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br/> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br/> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br/> Q:ORPSTYPE=""<br/> D CSCHECK(.ORY,OROI,ORPSTYPE)<br/> S ORY=+ORY```{:/}
+ Lines | {::nomarkdown} N OROI,ORPSTYPE,ORRXDG<br/> S ORY=0,ORPSTYPE=""<br/> S OROI=$$OI^ORQOR2(+ORID)<br/> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br/> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br/> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br/> Q:ORPSTYPE=""<br/> D CSCHECK(.ORY,OROI,ORPSTYPE)<br/> S ORY=+ORY{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

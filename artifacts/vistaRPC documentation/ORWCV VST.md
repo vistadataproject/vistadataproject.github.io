@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}DFN<br/>BEG<br/>END<br/>SKIP{:/}
- Lines | ```{::nomarkdown} N ERR,ERRMSG<br/> S ERR=0 ; kludge to return errors<br/> Q:'$G(DFN)<br/> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br/> I ERR K ORVISIT S ORVISIT(1)=ERRMSG```{:/}
+ Lines | {::nomarkdown} N ERR,ERRMSG<br/> S ERR=0 ; kludge to return errors<br/> Q:'$G(DFN)<br/> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br/> I ERR K ORVISIT S ORVISIT(1)=ERRMSG{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return 1 if schedule is required
  Input Parameters | {::nomarkdown}OI<br/>RTE<br/>DRG{:/}
- Lines | ```{::nomarkdown} S VAL=1<br/> Q:'$G(OI)  Q:'$G(RTE)<br/> S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG))```{:/}
+ Lines | {::nomarkdown} S VAL=1<br/> Q:'$G(OI)  Q:'$G(RTE)<br/> S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG)){:/}
  Leading comment lines | {::nomarkdown}OI=orderable item, RTE=ptr route, DRG=ptr dispense drug{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

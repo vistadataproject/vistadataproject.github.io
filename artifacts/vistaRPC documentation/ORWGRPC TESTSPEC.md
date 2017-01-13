@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get test/spec info on all lab tests
- Lines | ```{::nomarkdown} D TESTSPEC^ORWGAPI("ORWGRPC")<br/> S DATA=$NA(^TMP("ORWGRPC",$J))```{:/}
+ Lines | {::nomarkdown} D TESTSPEC^ORWGAPI("ORWGRPC")<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

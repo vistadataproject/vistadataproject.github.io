@@ -21,9 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return the menu style for the system
- Lines | ```{::nomarkdown} S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I")```{:/}
+ Lines | {::nomarkdown} S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

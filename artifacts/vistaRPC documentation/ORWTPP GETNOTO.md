@@ -21,10 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
- Lines | ```{::nomarkdown} D GETNOTO^ORWTPR(.INFO,DUZ)```{:/}
+ Lines | {::nomarkdown} D GETNOTO^ORWTPR(.INFO,DUZ){:/}
  Leading comment lines | {::nomarkdown}get current user's other info for notifications{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -21,7 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORRESULT{:/}
- Lines | ```{::nomarkdown} D WH^PXRMRPCC(.ORY,.ORRESULT) Q```{:/}
+ Lines | {::nomarkdown} D WH^PXRMRPCC(.ORY,.ORRESULT) Q{:/}
 
 ### Input Parameters
 
@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

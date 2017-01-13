@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Has visit or is stand alone
  Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>ORLOC<br/>ORDTE{:/}
- Lines | ```{::nomarkdown} N ORVISIT<br/> S ORY=-1<br/> I +$G(IEN)>0 S ORVISIT=+$P($G(^TIU(8925,+IEN,0)),U,3)<br/> I +$G(ORVISIT)'>0 S ORVISIT=$$GETENC^PXAPI(DFN,ORDTE,ORLOC)<br/> I +$G(ORVISIT)>0 S ORY=$$VST2APPT^PXAPI(ORVISIT)```{:/}
+ Lines | {::nomarkdown} N ORVISIT<br/> S ORY=-1<br/> I +$G(IEN)>0 S ORVISIT=+$P($G(^TIU(8925,+IEN,0)),U,3)<br/> I +$G(ORVISIT)'>0 S ORVISIT=$$GETENC^PXAPI(DFN,ORDTE,ORLOC)<br/> I +$G(ORVISIT)>0 S ORY=$$VST2APPT^PXAPI(ORVISIT){:/}
 
 ### Input Parameters
 
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:27 am

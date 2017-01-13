@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return version of package or namespace
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```{::nomarkdown} S VAL=$$VERSION^XPDUTL(X)```{:/}
+ Lines | {::nomarkdown} S VAL=$$VERSION^XPDUTL(X){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

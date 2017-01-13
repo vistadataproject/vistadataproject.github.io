@@ -22,10 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | save the bounds for a particular control
  Input Parameters | {::nomarkdown}NAM<br/>VAL{:/}
- Lines | ```{::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR)```{:/}
+ Lines | {::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR){:/}
  Leading comment lines | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

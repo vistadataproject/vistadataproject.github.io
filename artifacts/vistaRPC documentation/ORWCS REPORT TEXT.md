@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | retrieve report text
  Input Parameters | {::nomarkdown}DFN<br/>ORID{:/}
- Lines | ```{::nomarkdown} S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0<br/> D DT^GMRCSLM2(ORID)```{:/}
+ Lines | {::nomarkdown} S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0<br/> D DT^GMRCSLM2(ORID){:/}
  Leading comment lines | {::nomarkdown}RPC: ORWCS REPORT TEXT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -35,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

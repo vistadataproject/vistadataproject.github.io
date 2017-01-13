@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get External Text
  Input Parameters | {::nomarkdown}ORDER{:/}
- Lines | ```{::nomarkdown} N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2),I=0<br/> F  S I=$O(^OR(100,+IFN,8,+ACTION,.2,I)) Q:'I  S TEXT(I)=^(I,0)```{:/}
+ Lines | {::nomarkdown} N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2),I=0<br/> F  S I=$O(^OR(100,+IFN,8,+ACTION,.2,I)) Q:'I  S TEXT(I)=^(I,0){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | SAVE NEW RECORD
  Input Parameters | {::nomarkdown}GMPDFN<br/>GMPROV<br/>GMPVAMC<br/>ADDARRAY<br/>GMPSRCH{:/}
- Lines | ```{::nomarkdown} N DA,GMPFLD,GMPORIG,S<br/> S GMPSRCH=$G(GMPSRCH)<br/> S RETURN=0 ;<br/> L +^AUPNPROB(0):10<br/> Q:'$T  ; bail out if no lock<br/> S S=""<br/> F  S S=$O(ADDARRAY(S)) Q:S=""  D<br/> . S @ADDARRAY(S)<br/> D NEW^GMPLSAVE<br/> S RETURN=DA<br/> L -^AUPNPROB(0)<br/> S RETURN=1```{:/}
+ Lines | {::nomarkdown} N DA,GMPFLD,GMPORIG,S<br/> S GMPSRCH=$G(GMPSRCH)<br/> S RETURN=0 ;<br/> L +^AUPNPROB(0):10<br/> Q:'$T  ; bail out if no lock<br/> S S=""<br/> F  S S=$O(ADDARRAY(S)) Q:S=""  D<br/> . S @ADDARRAY(S)<br/> D NEW^GMPLSAVE<br/> S RETURN=DA<br/> L -^AUPNPROB(0)<br/> S RETURN=1{:/}
  Leading comment lines | {::nomarkdown}RETURN - Problem IFN if success, 0 otherwise<br/>ADDARRAY - array used for indirect sets of  GMPFLDS(){:/}
 
 ### Input Parameters
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am

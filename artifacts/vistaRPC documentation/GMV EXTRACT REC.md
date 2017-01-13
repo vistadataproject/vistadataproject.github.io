@@ -22,7 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GMV EXTRACT REC [RPC entry point]
  Input Parameters | {::nomarkdown}GMRVDATA{:/}
- Lines | ```{::nomarkdown} N DFN,GMVEND,GMVSTART,GMVTYPE<br/> S DFN=+$P(GMRVDATA,U,1),GMVEND=+$P(GMRVDATA,U,2),GMVSTART=$P(GMRVDATA,U,4),GMVTYPE=$P(GMRVDATA,U,3)<br/> K ^TMP($J,"GRPC")<br/> S:GMVEND="" GMVEND=$$NOW^XLFDT()<br/> I $P(GMVEND,".",2)'>0 S GMVEND=$P(GMVEND,".",1)_".235959"<br/> I GMVSTART="" S GMVSTART=0<br/> S:GMVTYPE'="" GMVTYPE(1)=$P(^GMRD(120.51,$O(^GMRD(120.51,"C",GMVTYPE,0)),0),"^")<br/> D EN1^GMVGETD1<br/> I '$D(^TMP($J,"GRPC")) S ^TMP($J,"GRPC",1)="0^NO "_$S(GMVTYPE'="":GMVTYPE(1),1:"VITALS/MEASUREMENTS ")_" ENTERED WITHIN THIS PERIOD"<br/> S RESULT=$NA(^TMP($J,"GRPC"))<br/> K GMRDT,GMRVARY,GMRVITY,GMRVX,GMRZZ```{:/}
+ Lines | {::nomarkdown} N DFN,GMVEND,GMVSTART,GMVTYPE<br/> S DFN=+$P(GMRVDATA,U,1),GMVEND=+$P(GMRVDATA,U,2),GMVSTART=$P(GMRVDATA,U,4),GMVTYPE=$P(GMRVDATA,U,3)<br/> K ^TMP($J,"GRPC")<br/> S:GMVEND="" GMVEND=$$NOW^XLFDT()<br/> I $P(GMVEND,".",2)'>0 S GMVEND=$P(GMVEND,".",1)_".235959"<br/> I GMVSTART="" S GMVSTART=0<br/> S:GMVTYPE'="" GMVTYPE(1)=$P(^GMRD(120.51,$O(^GMRD(120.51,"C",GMVTYPE,0)),0),"^")<br/> D EN1^GMVGETD1<br/> I '$D(^TMP($J,"GRPC")) S ^TMP($J,"GRPC",1)="0^NO "_$S(GMVTYPE'="":GMVTYPE(1),1:"VITALS/MEASUREMENTS ")_" ENTERED WITHIN THIS PERIOD"<br/> S RESULT=$NA(^TMP($J,"GRPC"))<br/> K GMRDT,GMRVARY,GMRVITY,GMRVX,GMRZZ{:/}
  Leading comment lines | {::nomarkdown}Returns data particular patient and date/time range in RESULT<br/>GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN{:/}
 
 ### Input Parameters
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:11:27 am
+ Generated on January 13th 2017, 7:15:28 am

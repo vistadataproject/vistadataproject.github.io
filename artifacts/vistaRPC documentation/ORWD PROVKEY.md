@@ -22,9 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns 1 if user possesses the provider key
  Input Parameters | {::nomarkdown}USERID{:/}
- Lines | ```{::nomarkdown} N NAM S NAM=$P(^VA(200,USERID,0),U,1)<br/> S VAL=$D(^VA(200,"AK.PROVIDER",NAM,USERID))```{:/}
+ Lines | {::nomarkdown} N NAM S NAM=$P(^VA(200,USERID,0),U,1)<br/> S VAL=$D(^VA(200,"AK.PROVIDER",NAM,USERID)){:/}
 
 
 
 
- Generated on January 13th 2017, 7:11:26 am
+ Generated on January 13th 2017, 7:15:27 am
