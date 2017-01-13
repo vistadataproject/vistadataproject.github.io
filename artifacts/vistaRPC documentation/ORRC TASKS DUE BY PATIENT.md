@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORRC TASKS DUE BY PATIENT 
+## [RPCs](TableOfContent.md) &#8594; ORRC TASKS DUE BY PATIENT 
 
  property | value 
 --- | --- 
@@ -24,4 +24,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:47 am

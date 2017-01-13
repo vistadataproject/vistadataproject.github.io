@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR32 ONE SAMPLE 
+## [RPCs](TableOfContent.md) &#8594; ORWDLR32 ONE SAMPLE 
 
  property | value 
 --- | --- 
@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:47 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU WHICH SIGNATURE ACTION 
+## [RPCs](TableOfContent.md) &#8594; TIU WHICH SIGNATURE ACTION 
 
  property | value 
 --- | --- 
@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:47 am

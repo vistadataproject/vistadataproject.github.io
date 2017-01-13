@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR33 LC TO WC 
+## [RPCs](TableOfContent.md) &#8594; ORWDLR33 LC TO WC 
 
  property | value 
 --- | --- 
@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:48 am

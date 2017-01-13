@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; MAGV ATTACH PAT PROC REF 
+## [RPCs](TableOfContent.md) &#8594; MAGV ATTACH PAT PROC REF 
 
  property | value 
 --- | --- 
@@ -24,4 +24,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:48 am

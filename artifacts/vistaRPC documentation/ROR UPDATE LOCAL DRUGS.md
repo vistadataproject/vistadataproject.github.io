@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ROR UPDATE LOCAL DRUGS 
+## [RPCs](TableOfContent.md) &#8594; ROR UPDATE LOCAL DRUGS 
 
  property | value 
 --- | --- 
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:47 am

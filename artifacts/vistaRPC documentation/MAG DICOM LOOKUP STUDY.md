@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; MAG DICOM LOOKUP STUDY 
+## [RPCs](TableOfContent.md) &#8594; MAG DICOM LOOKUP STUDY 
 
  property | value 
 --- | --- 
@@ -24,4 +24,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 6:44:47 am
