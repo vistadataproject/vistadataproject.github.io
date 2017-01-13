@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | validate a quantity, return 1 if valid, 0 if not
- Leading comment lines | to be compatible with LM, make sure X is integer from 1 to 240
-this is based on the input transform from 52,7
+
+ Leading comment lines | {::nomarkdown}to be compatible with LM, make sure X is integer from 1 to 240
+this is based on the input transform from 52,7{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

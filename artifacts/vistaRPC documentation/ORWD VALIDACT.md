@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Return 1 if action is valid for this order, otherwise 0^error
+
+ Leading comment lines | {::nomarkdown}Return 1 if action is valid for this order, otherwise 0^error{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

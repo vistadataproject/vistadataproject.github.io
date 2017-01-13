@@ -19,8 +19,8 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | (Set up for the DC Summary)
+ --- | --- 
+ Leading comment lines | {::nomarkdown}(Set up for the DC Summary)
 (to use TIU doc requirments and USR PROVIDER)
 PARAMS from ORWU2 COSIGNER RPC call:
 .ORY=returned list.
@@ -28,7 +28,7 @@ ORFROM=Starting name for this set.
 ORDIR=Direction to move through the x-ref with $O.  
 ORDATE=Checks for an USR PROVIDER on this date (optional).
 ORTIUTYP is + of the 0 node of the 8925 docmt.  
-ORTIUDA is the docmt IEN,
+ORTIUDA is the docmt IEN,{:/}
 
 ### Input Parameters
 
@@ -43,4 +43,4 @@ ORTIUDA is the docmt IEN,
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

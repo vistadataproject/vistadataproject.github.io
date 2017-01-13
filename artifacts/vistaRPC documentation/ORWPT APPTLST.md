@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return a list of appointments
- Leading comment lines | APPTTIME^LOCIEN^LOCNAME^EXTSTATUS
+
+ Leading comment lines | {::nomarkdown}APPTTIME^LOCIEN^LOCNAME^EXTSTATUS{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | This procedure will return help for a particular
- Leading comment lines | measurement type in an array.
+
+ Leading comment lines | {::nomarkdown}measurement type in an array.
 Input
 Variables:  ORQTYPE=Type of measurement (abbreviation
 (req.)  from PCE Device Interface Specification).
-ORQLST=Array root to store help text in
+ORQLST=Array root to store help text in{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

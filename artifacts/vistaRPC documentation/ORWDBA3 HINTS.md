@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return HINTS for ORBA Treatment Factors - used by Delphi
- Leading comment lines | The hints returned in the Y array will be used in the CPRS GUI and
+
+ Leading comment lines | {::nomarkdown}The hints returned in the Y array will be used in the CPRS GUI and
 displayed on fly-over of the cursor over the TxF text in the window
 Input
 <none>
@@ -35,9 +36,9 @@ ORTFIEN = the IEN for the TxF in the Help Frame (^DIC(9.2)) file
 TF      = TxF acronym
 TFLN    = TxF text line number, e.g., ^DIC(9.2,ORTFIEN,1,TFLN,0)
 TFS     = string of TxF acronyms
-TFV     = TxF description/text
+TFV     = TxF description/text{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

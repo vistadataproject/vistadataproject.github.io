@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return imaging report
- Leading comment lines | RPC: ORWRA REPORT TEXT
+
+ Leading comment lines | {::nomarkdown}RPC: ORWRA REPORT TEXT
 See RPC definition for details on input and output parameters
--- init locals and globals
+-- init locals and globals{:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ See RPC definition for details on input and output parameters
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

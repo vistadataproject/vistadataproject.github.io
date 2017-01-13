@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RESETS/UPDATES THE TMP("TIUFLDXML",$J) GLOBAL
- Leading comment lines | WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED
+
+ Leading comment lines | {::nomarkdown}WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED
 AS 1, THE PROGRAM CLEARS THE TMP GLOBAL FIRST.  RETURNS "1" IF
-THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.
+THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.{:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

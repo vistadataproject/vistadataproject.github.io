@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Set user individual time/occ setting
- Leading comment lines | RPTS format: RPTIen^RPTIen^RPTIen such as 1^2^3
+
+ Leading comment lines | {::nomarkdown}RPTS format: RPTIen^RPTIen^RPTIen such as 1^2^3{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

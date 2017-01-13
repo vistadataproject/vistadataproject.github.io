@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return pt's condensed medication list
- Leading comment lines | id^nameform^stop date^route^schedule/infusion rate^refills remaining
+
+ Leading comment lines | {::nomarkdown}id^nameform^stop date^route^schedule/infusion rate^refills remaining{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

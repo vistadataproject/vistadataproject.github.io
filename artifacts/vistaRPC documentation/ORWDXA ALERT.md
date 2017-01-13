@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | alert user (ORDUZ) when order (ORID) resulted
- Leading comment lines | if no user passed, use ordering provider:
+
+ Leading comment lines | {::nomarkdown}if no user passed, use ordering provider:{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

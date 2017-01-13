@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Check conjunction for renew.
- Leading comment lines | All conjunctioni = "And" return 1
-Has a "Then" return 0
+
+ Leading comment lines | {::nomarkdown}All conjunctioni = "And" return 1
+Has a "Then" return 0{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

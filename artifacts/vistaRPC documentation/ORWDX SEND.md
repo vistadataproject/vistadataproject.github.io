@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Sign
- Leading comment lines | DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code
-ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order
+
+ Leading comment lines | {::nomarkdown}DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code
+ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

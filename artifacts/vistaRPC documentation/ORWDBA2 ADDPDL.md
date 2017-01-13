@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Add to Personal Diagnosis List
- Leading comment lines | Add a new personal diagnosis list or new ICD9 code to an existing
+
+ Leading comment lines | {::nomarkdown}Add a new personal diagnosis list or new ICD9 code to an existing
 personal diagnosis list for a clinician. It will filter out duplicate
 entries before updating an existing PDL.
 Input Variables:
@@ -38,7 +39,7 @@ FDXR         Found Diagnoses Records Array
 FDXRI        Found Diagnoses Records Array Index
 IEN          Internal Entry Number
 PDL          Personal Diagnoses List Array
-PDLI         Personal Diagnoses List Array Index
+PDLI         Personal Diagnoses List Array Index{:/}
 
 ### Input Parameters
 
@@ -50,4 +51,4 @@ PDLI         Personal Diagnoses List Array Index
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

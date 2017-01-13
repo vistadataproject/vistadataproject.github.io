@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return a parameter value for a user
- Leading comment lines | call assumes current user, default entities, single instance
+
+ Leading comment lines | {::nomarkdown}call assumes current user, default entities, single instance{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

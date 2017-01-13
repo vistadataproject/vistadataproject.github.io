@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
- Leading comment lines | C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.
-.Y=returned list, ORFROM=text to $O from, DIR=$O direction.
+
+ Leading comment lines | {::nomarkdown}C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.
+.Y=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

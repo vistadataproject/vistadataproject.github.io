@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | only be called for an outpaitent and IV dialog
- Leading comment lines | OI: IV Orderable Item
-OITYPE: A:ADDITIVE  S:SOLUTION
+
+ Leading comment lines | {::nomarkdown}OI: IV Orderable Item
+OITYPE: A:ADDITIVE  S:SOLUTION{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

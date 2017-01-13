@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return procedures
- Leading comment lines | RPC: ORWMC PROCEDURES
-See RPC definition for details on input and output parameters
+
+ Leading comment lines | {::nomarkdown}RPC: ORWMC PROCEDURES
+See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ See RPC definition for details on input and output parameters
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

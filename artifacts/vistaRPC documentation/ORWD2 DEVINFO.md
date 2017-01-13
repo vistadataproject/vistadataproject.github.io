@@ -19,16 +19,17 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return device info when signing/releasing orders
- Leading comment lines | Y(0)=Prompt Chart ^ Prompt Label ^ Prompt Requisition ^ Prompt Work
+
+ Leading comment lines | {::nomarkdown}Y(0)=Prompt Chart ^ Prompt Label ^ Prompt Requisition ^ Prompt Work
 ^ Chart Device ^ Label Device ^ Requisition Device ^ Work Device
 for Prompt X: *=no print, 0=autoprint, 1=prompt&dev 2=prompt only 
 Y(n)=ORIFN;ACT ^ Chart ^ Label ^ Requisition ^ Service ^ Work
 LOC=location (ptr 44), NATR=nature of order (ptr 100.02)
-ORDERS=ORIFN;ACT ^ R | S | E (released, signed, error)
+ORDERS=ORIFN;ACT ^ R | S | E (released, signed, error){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return pt's problem list in format: ien^description^
- Leading comment lines | ICD^onset^last modified^SC^SpExp
-STATUS = status of problems to return: (A)CTIVE, (I)NACTIVE, ("")ALL
+
+ Leading comment lines | {::nomarkdown}ICD^onset^last modified^SC^SpExp
+STATUS = status of problems to return: (A)CTIVE, (I)NACTIVE, ("")ALL{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ STATUS = status of problems to return: (A)CTIVE, (I)NACTIVE, ("")ALL
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

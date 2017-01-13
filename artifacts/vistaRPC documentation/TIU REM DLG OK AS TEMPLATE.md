@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns TRUE if the passed in Reminder Dialog IEN is
- Leading comment lines | Allowed to be used as a TIU Template
+
+ Leading comment lines | {::nomarkdown}Allowed to be used as a TIU Template{:/}
 
 ### Input Parameters
 
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

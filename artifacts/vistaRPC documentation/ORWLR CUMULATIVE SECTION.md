@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return cum report text
- Leading comment lines | RPC: ORWLR REPORT TEXT
+
+ Leading comment lines | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,9 +19,9 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | D LIST^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078
-ORQQPXRM MENTAL HEALTH
+ --- | --- 
+ Leading comment lines | {::nomarkdown}D LIST^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078
+ORQQPXRM MENTAL HEALTH{:/}
 
 ### Input Parameters
 
@@ -33,4 +33,4 @@ ORQQPXRM MENTAL HEALTH
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

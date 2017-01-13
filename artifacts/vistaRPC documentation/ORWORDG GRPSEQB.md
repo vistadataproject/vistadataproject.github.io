@@ -19,11 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | Call GRPSEQ, format for broker:
-Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name
+ --- | --- 
+ Leading comment lines | {::nomarkdown}Call GRPSEQ, format for broker:
+Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

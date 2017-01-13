@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns the list of Patient Data Objects that are
- Leading comment lines | allowed to be used in Personal Templates
+
+ Leading comment lines | {::nomarkdown}allowed to be used in Personal Templates{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

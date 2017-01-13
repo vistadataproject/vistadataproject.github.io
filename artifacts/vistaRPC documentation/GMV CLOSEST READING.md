@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GMV CLOSEST READING [RPC entry point]
- Leading comment lines | Get nearest reading to date(/time) provided
+
+ Leading comment lines | {::nomarkdown}Get nearest reading to date(/time) provided
 Input:  GMVDFN - DFN (required)
 GMVDT - FileMan date/time (optional)
 Default is NOW
@@ -36,7 +37,7 @@ piece2 = reading
 If no records found piece 1 = -2
 and piece 2 = message text                     
 If an error was encountered piece1 = -1
-and piece2 = error message
+and piece2 = error message{:/}
 
 ### Input Parameters
 
@@ -50,4 +51,4 @@ and piece2 = error message
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

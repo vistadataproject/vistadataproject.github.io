@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | returns specimens with abbreviation (uses 'E' xref)
+
+ Leading comment lines | {::nomarkdown}returns specimens with abbreviation (uses 'E' xref){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

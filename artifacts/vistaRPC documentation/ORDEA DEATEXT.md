@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | returns the mandatory dea text to show when a user checks a controlled substance order to be signed on the signature dialog
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+
+ Generated on January 13th 2017, 6:15:57 am

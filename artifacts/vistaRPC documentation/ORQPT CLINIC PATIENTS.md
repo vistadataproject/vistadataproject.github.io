@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RETURN LIST OF PTS W/CLINIC APPT W/IN BEGINNING AND END DATES
- Leading comment lines | PKS-8/2003: Modified for new scheduling pkg APIs.
+
+ Leading comment lines | {::nomarkdown}PKS-8/2003: Modified for new scheduling pkg APIs.{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Receive order related Clinical Indicators & Diagnoses from GUI
- Leading comment lines | Store data in ^OR(100,ODN,5.1) & ^OR(100,0DN,5.2)
+
+ Leading comment lines | {::nomarkdown}Store data in ^OR(100,ODN,5.1) & ^OR(100,0DN,5.2){:/}
 
 ### Input Parameters
 
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

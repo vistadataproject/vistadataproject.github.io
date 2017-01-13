@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return True/False to display active orders for copy
- Leading comment lines | EVT ptr to #100.5
+
+ Leading comment lines | {::nomarkdown}EVT ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

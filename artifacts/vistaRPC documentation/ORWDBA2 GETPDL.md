@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Personal Diagnosis List
- Leading comment lines | This gets the clinician's personal diagnosis list. Using the personal
+
+ Leading comment lines | {::nomarkdown}This gets the clinician's personal diagnosis list. Using the personal
 diagnosis list, builds and returns an array variable with the ICD9
 codes and descriptions stored in the ICD DIAGNOSIS file, # 80.
 Flagging any inactive ICD9 code with a "#".
@@ -40,7 +41,7 @@ DXI       Diagnosis Inactive Flag
 EM        Error Message
 ICD9      ICD9 code (for GUI)
 IEN       Internal Entry Number
-RF        Record Found
+RF        Record Found{:/}
 
 ### Input Parameters
 
@@ -51,4 +52,4 @@ RF        Record Found
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

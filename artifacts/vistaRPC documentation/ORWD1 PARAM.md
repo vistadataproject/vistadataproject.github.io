@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns in 'Y' the print parameters
- Leading comment lines | Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device
+
+ Leading comment lines | {::nomarkdown}Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device
 Device Params returned in internal;external format, the rest are internal
 CC=Chart Copy
 L=Label
@@ -33,7 +34,7 @@ WC=Work Copy
 2 to prompt for chart copy and automatically print to the
 printer defined in the CHART COPY PRINT DEVICE field.
 * don't print.
-LOC=Ptr to location ^SC(LOC,
+LOC=Ptr to location ^SC(LOC,{:/}
 
 ### Input Parameters
 
@@ -44,4 +45,4 @@ LOC=Ptr to location ^SC(LOC,
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

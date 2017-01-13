@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | If Pt's current data match selected event
- Leading comment lines | DFN: patient DFN
-EVT: ptr to #100.5
+
+ Leading comment lines | {::nomarkdown}DFN: patient DFN
+EVT: ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

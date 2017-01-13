@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | P6
- Leading comment lines | Entry point for XWB GET BROKER INFO RPC.
-R(0) = Length of handler read timeout
+
+ Leading comment lines | {::nomarkdown}Entry point for XWB GET BROKER INFO RPC.
+R(0) = Length of handler read timeout{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

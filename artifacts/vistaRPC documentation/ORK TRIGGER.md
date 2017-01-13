@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | initiate order checking
- Leading comment lines | ORKY: array of returned msgs in format: ornum^orderchk ien^clin danger^msg
+
+ Leading comment lines | {::nomarkdown}ORKY: array of returned msgs in format: ornum^orderchk ien^clin danger^msg
 ORKDFN: patient dfn
 ORKA: array of order information in the format:
 orderable item ien|
@@ -35,7 +36,7 @@ PS: meds previously ordered during this session med1^med2^...
 OROIL: array containing the order info passed in (oly for ACCEPT mode)
 ORDODSG: flag that denotes if dosage checks should be performed
 1 for perform dosage checks
-0 for do not perform dosage checks
+0 for do not perform dosage checks{:/}
 
 ### Input Parameters
 
@@ -48,4 +49,4 @@ ORDODSG: flag that denotes if dosage checks should be performed
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return list of dialogs for writing event delayed orders
- Leading comment lines | .Y(n): DlgName^ListBox Text
+
+ Leading comment lines | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

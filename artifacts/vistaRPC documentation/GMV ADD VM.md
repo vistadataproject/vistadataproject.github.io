@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GMV ADD VM [RPC entry point]
- Leading comment lines | Saves vitals data
+
+ Leading comment lines | {::nomarkdown}Saves vitals data
 GMVDATA has the following data:
 piece1^piece2^piece3^piece4^piece5
 where:
@@ -36,7 +37,7 @@ qualifier (File 120.52) internal entry numbers separated by
 colons (e.g., 547*50:65)
 Example:
 > S GMVDATA="3051011.1635^134^1;120/80;^67^87*2:38:50:75"
-> D EN1^GMVDCSAV(.RESULT,GMVDATA)
+> D EN1^GMVDCSAV(.RESULT,GMVDATA){:/}
 
 ### Input Parameters
 
@@ -47,4 +48,4 @@ Example:
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

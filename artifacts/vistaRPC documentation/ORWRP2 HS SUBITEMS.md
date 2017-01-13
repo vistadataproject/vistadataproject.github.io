@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Subitems for a Test Panel
- Leading comment lines | RPC => ORWRP2 HS SUBITEMS
+
+ Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS SUBITEMS{:/}
 
 ### Input Parameters
 
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Is user a provider?
- Leading comment lines | Checks USR CLASS PROVIDER AND 200 Person Class
-DATE must not include time (for ISA^USRLM)
+
+ Leading comment lines | {::nomarkdown}Checks USR CLASS PROVIDER AND 200 Person Class
+DATE must not include time (for ISA^USRLM){:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ DATE must not include time (for ISA^USRLM)
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

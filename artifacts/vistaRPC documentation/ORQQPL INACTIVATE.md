@@ -19,13 +19,14 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | inactivate a problem
- Leading comment lines | RETURN:  ;(consistent with UPDATE function)
+
+ Leading comment lines | {::nomarkdown}RETURN:  ;(consistent with UPDATE function)
 SUCCESS:
 RETURN>0, RETURN(0)=""
 FAILURE:
-RETURN<0, RETURN(0)=verbose error message
+RETURN<0, RETURN(0)=verbose error message{:/}
 
 ### Input Parameters
 
@@ -36,4 +37,4 @@ RETURN<0, RETURN(0)=verbose error message
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

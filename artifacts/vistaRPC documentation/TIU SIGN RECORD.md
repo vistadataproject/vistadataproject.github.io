@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | API for /es/
- Leading comment lines | For backward compatibility
-Use SIGN^TIUSRVP2 now, please
+
+ Leading comment lines | {::nomarkdown}For backward compatibility
+Use SIGN^TIUSRVP2 now, please{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ Use SIGN^TIUSRVP2 now, please
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

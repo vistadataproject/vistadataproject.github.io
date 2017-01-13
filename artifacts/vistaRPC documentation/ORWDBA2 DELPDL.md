@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Delete from Personal Diagnosis List
- Leading comment lines | Delete a selected diagnosis code or group of diagnoses codes from a
+
+ Leading comment lines | {::nomarkdown}Delete a selected diagnosis code or group of diagnoses codes from a
 Clinician's Personal DX List.
 Input Variables:
 ORCIEN    Clinician Internal ID number
@@ -33,7 +34,7 @@ DXI       Diagnosis code array index
 EM        Error Message
 FDA       FileMan Data Array
 IEN       Interanl Entry Number
-RF        Record Found
+RF        Record Found{:/}
 
 ### Input Parameters
 
@@ -45,4 +46,4 @@ RF        Record Found
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

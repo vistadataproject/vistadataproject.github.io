@@ -19,16 +19,17 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Schedule consult and change status
- Leading comment lines | ORERR - return array for results/errors
+
+ Leading comment lines | {::nomarkdown}ORERR - return array for results/errors
 ORIEN - IEN of consult from File 123
 ORNP - Provider who Scheduled consult
 ORDATE - Date/Time Consult was scheduled.
 ORALRT - should alerts be sent to anyone?
 ORALTO - array of alert recipient IENs
 ORCOM is the comments array to be added
-passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.
+passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
 
 ### Input Parameters
 
@@ -44,4 +45,4 @@ passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

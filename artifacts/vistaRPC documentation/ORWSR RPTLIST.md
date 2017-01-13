@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return list of surgery reports for reports tab
- Leading comment lines | I '$$PATCH^XPDUTL("SR*3.0*100") D NOTYET(.ORY)  Q
+
+ Leading comment lines | {::nomarkdown}I '$$PATCH^XPDUTL("SR*3.0*100") D NOTYET(.ORY)  Q{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

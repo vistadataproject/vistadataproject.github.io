@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | SAVE EDITED RES
- Leading comment lines | RETURN - boolean, 1 success, 0 failure
-EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
+
+ Leading comment lines | {::nomarkdown}RETURN - boolean, 1 success, 0 failure
+EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS(){:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

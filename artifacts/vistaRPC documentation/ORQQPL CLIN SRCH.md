@@ -19,14 +19,15 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get LIST OF CLINICS
- Leading comment lines | Note: This comes from CLIN^ORQPTQ2, where it was commented out in place of
+
+ Leading comment lines | {::nomarkdown}Note: This comes from CLIN^ORQPTQ2, where it was commented out in place of
 a call to ^XPAR. I would have just used CLIN^ORQPTQ2, but it didn't work - at
 least on SLC OEX directory.
-X has no purpose other than to satisfy apparent rpc and tcallv requirement for args
+X has no purpose other than to satisfy apparent rpc and tcallv requirement for args{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return list after lexicon lookup
- Leading comment lines | Call with: X           (Required) The search text entered by the user
+
+ Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user
 [VIEW]      (Optional) The Lexicon VIEW parameter (Defaults to
 Problem List Subset (i.e., "PLS")
 [ORDATE]    (Optional) the date of interest (Defaults to TODAY)
@@ -30,9 +31,9 @@ include synonyms for SNOMED CT Concepts
 (Defaults to 0 (FALSE))
 Returns: LST=gvn of ^TMP("ORLEX",$J), which contains search result set as:
 ^TMP("ORLEX",$J,1..n)=LEXIEN^PREFTEXT^ICDCODE(S)^ICDIEN^CODESYS^CONCEPTID^DESIGID^ICDVER^PARENTSUBSCRIPT
-^TMP("ORLEX",$J,n+1)="<n> matches found"
+^TMP("ORLEX",$J,n+1)="<n> matches found"{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

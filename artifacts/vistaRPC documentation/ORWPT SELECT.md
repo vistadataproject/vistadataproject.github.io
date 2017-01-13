@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Selects patient & returns key information
- Leading comment lines | 1    2   3   4    5      6    7    8       9       10      11  12
+
+ Leading comment lines | {::nomarkdown}1    2   3   4    5      6    7    8       9       10      11  12
 NAME^SEX^DOB^SSN^LOCIEN^LOCNM^RMBD^CWAD^SENSITIVE^ADMITTED^CONV^SC^
 13  14  15  16  17
 SC%^ICN^AGE^TS^TSSVC
-for CCOW (RV - 2/27/03)  name="-1", location=error message
+for CCOW (RV - 2/27/03)  name="-1", location=error message{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

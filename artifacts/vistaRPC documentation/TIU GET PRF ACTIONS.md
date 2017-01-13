@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC Gets PRF Action info
- Leading comment lines | "Action" is shorthand for Assignment History entry
+
+ Leading comment lines | {::nomarkdown}"Action" is shorthand for Assignment History entry
 Returns data in the following format for each Action:
 TIUY(ACTID) =
 FLAGNAME^ASSGNIEN^ACTIONNAME^ACTIONIEN^ACTIONDATEI^ACTIONDATEE^TIUIEN
@@ -31,7 +32,7 @@ Returns linkable actions (whether linked or not) for Patient DFN
 and flag assoc w/ TIUTTL.
 Excludes UNLINKABLE actions = Entered in Error actions (EIE) or
 actions taken prior to an EIE action.
-Erroneous and EIE actions may be for the wrong patient, etc.
+Erroneous and EIE actions may be for the wrong patient, etc.{:/}
 
 ### Input Parameters
 
@@ -43,4 +44,4 @@ Erroneous and EIE actions may be for the wrong patient, etc.
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

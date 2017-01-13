@@ -19,13 +19,14 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | get fields for single order
+
+ Leading comment lines | {::nomarkdown}get fields for single order
 .LST(n)=described above in GET
-IFN=internal entry # for order
+IFN=internal entry # for order{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

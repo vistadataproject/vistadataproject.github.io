@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | [Procedure] Main RPC Hit Point
- Leading comment lines | RPC: [GMV PARAMETER]
+
+ Leading comment lines | {::nomarkdown}RPC: [GMV PARAMETER]
 Requires that the parameter name in PAR
 be in the GMV namespace.
 Input parameters
@@ -30,7 +31,7 @@ Input parameters
 3. ENT [Literal/Required] No description
 4. PAR [Literal/Required] No description
 5. INST [Literal/Required] No description
-6. VAL [Literal/Required] No description
+6. VAL [Literal/Required] No description{:/}
 
 ### Input Parameters
 
@@ -45,4 +46,4 @@ Input parameters
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

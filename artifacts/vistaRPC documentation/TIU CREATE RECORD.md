@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | New Document
- Leading comment lines | SUCCESS = (by ref) TIU DOCUMENT # (PTR to 8925)
+
+ Leading comment lines | {::nomarkdown}SUCCESS = (by ref) TIU DOCUMENT # (PTR to 8925)
 = 0^Explanatory message if no SUCCESS
 DFN     = Patient (#2)
 TITLE   = TIU Document Definition (#8925.1)
@@ -30,7 +31,7 @@ TITLE   = TIU Document Definition (#8925.1)
 [VSIT]  = Visit file ien (#9000010)
 [VSTR]  = Visit string (i.e., VLOC;VDT;VTYPE)
 [NOASF] = if 1=Do Not Set ASAVE cross-reference
-TIUX    = (by ref) array containing field data and document body
+TIUX    = (by ref) array containing field data and document body{:/}
 
 ### Input Parameters
 
@@ -49,4 +50,4 @@ TIUX    = (by ref) array containing field data and document body
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

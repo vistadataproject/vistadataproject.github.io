@@ -19,12 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | Inpatient Med Order Group or Clin Meds Group: return 1
+ --- | --- 
+ Leading comment lines | {::nomarkdown}Inpatient Med Order Group or Clin Meds Group: return 1
 If order belong to Outpatient Med Order Grpoup: return 2
-Otherwise, return 0
+Otherwise, return 0{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

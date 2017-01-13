@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | SAVE NEW RECORD
- Leading comment lines | RETURN - Problem IFN if success, 0 otherwise
-ADDARRAY - array used for indirect sets of  GMPFLDS()
+
+ Leading comment lines | {::nomarkdown}RETURN - Problem IFN if success, 0 otherwise
+ADDARRAY - array used for indirect sets of  GMPFLDS(){:/}
 
 ### Input Parameters
 
@@ -36,4 +37,4 @@ ADDARRAY - array used for indirect sets of  GMPFLDS()
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

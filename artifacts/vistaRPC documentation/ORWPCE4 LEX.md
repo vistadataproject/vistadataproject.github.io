@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return list after lexicon lookup
- Leading comment lines | Call with: X           (Required) The search text entered by the user
+
+ Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user
 APP         (Required) The Lexicon APP parameter (e.g., "GMPX"
 for Problem List Subset, "10D" for ICD-10-CM, etc.
 [ORDATE]    (Optional) the date of interest (Defaults to TODAY - should
@@ -34,9 +35,9 @@ of SCT, extended search is ICD (or 10D after impl.)
 include synonyms for SNOMED CT Concepts
 (Defaults to 0 (FALSE))
 Returns: LST=local array name passed by ref, which contains search result set as:
-<lvn>(1..n)=LEXIEN^PREFTEXT^CODESYS^CONCEPTID^ICDVER^DESIGID^PARENTSUBSCRIPT
+<lvn>(1..n)=LEXIEN^PREFTEXT^CODESYS^CONCEPTID^ICDVER^DESIGID^PARENTSUBSCRIPT{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

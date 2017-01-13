@@ -19,17 +19,18 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return Primary Care Detail information
- Leading comment lines | Input - PATIENT = Patient DFN
+
+ Leading comment lines | {::nomarkdown}Input - PATIENT = Patient DFN
 Output - LST = Array of Patient Team Assignment Details
 Source of data for CPRS is now a web service call to PCMM Web - 387
 Other callers will get original data format
 ICR #6027 - SCMC PCMM/R GET PRIMARY CARE DETAILS
 new for PCMM Web requirements
-RPC Broker sets XQCY0 to the caller's context
+RPC Broker sets XQCY0 to the caller's context{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

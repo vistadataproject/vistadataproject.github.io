@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Return sample, specimen, & urgency info about a lab test
+
+ Leading comment lines | {::nomarkdown}Return sample, specimen, & urgency info about a lab test{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

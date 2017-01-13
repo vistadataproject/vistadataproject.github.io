@@ -19,16 +19,17 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return patient's vital measurements taken between start date/time and end date/time
- Leading comment lines | ORY: return variable, results are returned in the format:
+
+ Leading comment lines | {::nomarkdown}ORY: return variable, results are returned in the format:
 vital measurement ien^vital type^date/time taken^rate
 DFN: patient identifier from Patient File [#2]
 ORSDT: start date/time in Fileman format
 OREDT: end date/time in Fileman format
 DBIA for PXRMINDX(120.5 is 4290
 DBIA for ^GMVPXRM is 3647
-DBIA for ^GMRVUT0 is 1446
+DBIA for ^GMRVUT0 is 1446{:/}
 
 ### Input Parameters
 
@@ -41,4 +42,4 @@ DBIA for ^GMRVUT0 is 1446
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

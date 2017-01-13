@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Make global restricted pt. array from Team List.
- Leading comment lines | Variables used:
+
+ Leading comment lines | {::nomarkdown}Variables used:
 ORDFN   = Holder for patient DFN.
 ORJ     = Holds $J value.
 ORREAD  = Holder for ^TMP root to kill.
@@ -29,9 +30,9 @@ ORRET   = Returned value from function call.
 ORROOT  = ^TMP root to pass.
 ORTL    = Team List IEN.
 ORX     = Working variable used in $ORDER statement.
-Y       = Returned value (same as ORJ).
+Y       = Returned value (same as ORJ).{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

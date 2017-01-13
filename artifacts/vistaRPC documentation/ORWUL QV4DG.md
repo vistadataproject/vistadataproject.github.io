@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return the quick order list, given a display group name
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+
+ Generated on January 13th 2017, 6:15:57 am

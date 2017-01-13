@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | long list SURGICAL REPORT titles
- Leading comment lines | CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"
-depending on context
+
+ Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"
+depending on context{:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ depending on context
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

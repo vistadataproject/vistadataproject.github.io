@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | report lists for reports tab
- Leading comment lines | RPC: ORWRP REPORT LIST
+
+ Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

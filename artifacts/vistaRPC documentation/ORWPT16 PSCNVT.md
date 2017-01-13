@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Call conversion routine for pharmacy (both inpatient and outpatient)
+
+ Leading comment lines | {::nomarkdown}Call conversion routine for pharmacy (both inpatient and outpatient){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

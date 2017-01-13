@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | LOAD  EDIT ARRAYS
- Leading comment lines | DA=problem IFN
+
+ Leading comment lines | {::nomarkdown}DA=problem IFN{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

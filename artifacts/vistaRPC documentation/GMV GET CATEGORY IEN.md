@@ -19,13 +19,14 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GMV GET CATEGORY IEN [RPC entry point]
- Leading comment lines | Input
+
+ Leading comment lines | {::nomarkdown}Input
 RESULT = variable name to hold result
 GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)
 Output: Returns the IEN if GMVTYPE exists in FILE 120.53
-else returns -1
+else returns -1{:/}
 
 ### Input Parameters
 
@@ -36,4 +37,4 @@ else returns -1
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

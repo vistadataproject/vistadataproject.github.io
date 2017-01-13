@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a subset of orderable items
- Leading comment lines | .Return Array, Starting Text, Direction, Cross Reference (S.xxx)
+
+ Leading comment lines | {::nomarkdown}.Return Array, Starting Text, Direction, Cross Reference (S.xxx){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

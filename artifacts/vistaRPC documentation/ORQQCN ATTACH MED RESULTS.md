@@ -19,13 +19,14 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Attach a medicine result to a consult
- Leading comment lines | GMRCO - Internal file number of consult from File 123
+
+ Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123
 GMRCRSLT - pointer to medicine result
 GMRCAD - Date/Time Consult was resulted.
 GMRCORNP - Provider who attached the result to the consult
-ORALTO - array of alert recipient IENs
+ORALTO - array of alert recipient IENs{:/}
 
 ### Input Parameters
 
@@ -41,4 +42,4 @@ ORALTO - array of alert recipient IENs
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

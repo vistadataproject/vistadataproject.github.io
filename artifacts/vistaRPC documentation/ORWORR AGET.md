@@ -19,14 +19,15 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get abbrev. event delayed order list for patient
- Leading comment lines | returns ^TMP("ORR",$J,ORLIST,n)=IFN^DGrp^ActTm
+
+ Leading comment lines | {::nomarkdown}returns ^TMP("ORR",$J,ORLIST,n)=IFN^DGrp^ActTm
 see input parameters above
 -- from ORWORR
--- section uses ORQ1 to get orders list rather than XGET --
+-- section uses ORQ1 to get orders list rather than XGET --{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

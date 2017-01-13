@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC. XUS SIGNON SETUP - IA #1632 (API IA #4054)
- Leading comment lines | sets up environment for GUI signon
+
+ Leading comment lines | {::nomarkdown}sets up environment for GUI signon{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

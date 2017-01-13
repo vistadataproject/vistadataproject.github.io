@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
- Leading comment lines | Receives TIUY by ref; passes back
+
+ Leading comment lines | {::nomarkdown}Receives TIUY by ref; passes back
 TIUY = TitleIEN^Title
 0 if no title is associated or flg assignmt is not active
 Requires PTDFN
 Requires FLAGID - identifier for particular flag assignment
 for patient PTDFN. Set as subscript in GETACT^DGPFAPI.
-See GETFLG^ORPRF.
+See GETFLG^ORPRF.{:/}
 
 ### Input Parameters
 
@@ -39,4 +40,4 @@ See GETFLG^ORPRF.
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Forward consult/request to another service
- Leading comment lines | GMRCO - IEN of consult from File 123
+
+ Leading comment lines | {::nomarkdown}GMRCO - IEN of consult from File 123
 GMRCSS - Service to which consult is being forwarded
 GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200
 GMRCURGI - Urgency of the request
 GMRCORNP - Person who is responsible for forwarding the consult
 ORCOM is the comments array explaining the forwarding action
-passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.
+passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
 
 ### Input Parameters
 
@@ -43,4 +44,4 @@ passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return any message associated with a dispense drug
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+
+ Generated on January 13th 2017, 6:15:57 am

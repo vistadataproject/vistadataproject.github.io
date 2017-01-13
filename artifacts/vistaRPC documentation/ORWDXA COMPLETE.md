@@ -19,14 +19,15 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Complete order (generic)
- Leading comment lines | N X S X=+$E($$NOW^XLFDT,1,12)
+
+ Leading comment lines | {::nomarkdown}N X S X=+$E($$NOW^XLFDT,1,12)
 D DATES^ORCSAVE2(+ORID,,X)
 D STATUS^ORCSAVE2(+ORID,2)
-validate ESCode
+validate ESCode{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

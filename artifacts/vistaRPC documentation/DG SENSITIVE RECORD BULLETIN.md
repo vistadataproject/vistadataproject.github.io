@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC/API entry point for log entry and message generation
- Leading comment lines | Input parameters:  
+
+ Leading comment lines | {::nomarkdown}Input parameters:  
 DFN    = Patient file DFN
 DGOPT  = Option name^Menu text (Optional)
 ACTION = 1 - Set DG Security Log entry, 2 - Generate mail 
 message, 3 - Both (Optional - Defaults to both)
 Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value)
-0 - Required variable undefined
+0 - Required variable undefined{:/}
 
 ### Input Parameters
 
@@ -40,4 +41,4 @@ Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

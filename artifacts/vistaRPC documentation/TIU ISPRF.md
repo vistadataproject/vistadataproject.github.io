@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC Takes as input 8925.1 IEN
- Leading comment lines | and checks if it is a PRF title
-Cf ISPFTTL^TIUPRFL. which is a FUNCTION
+
+ Leading comment lines | {::nomarkdown}and checks if it is a PRF title
+Cf ISPFTTL^TIUPRFL. which is a FUNCTION{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ Cf ISPFTTL^TIUPRFL. which is a FUNCTION
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

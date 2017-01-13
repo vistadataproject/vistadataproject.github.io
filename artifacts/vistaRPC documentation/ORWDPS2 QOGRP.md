@@ -19,11 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | If quick order belong to Inpatient Med Order Group: return 1
-Otherwise, return 0
+ --- | --- 
+ Leading comment lines | {::nomarkdown}If quick order belong to Inpatient Med Order Group: return 1
+Otherwise, return 0{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

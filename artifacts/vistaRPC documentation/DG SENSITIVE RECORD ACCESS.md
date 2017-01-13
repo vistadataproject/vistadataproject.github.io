@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC/API entry point for patient sensitive & record access checks
- Leading comment lines | Output array (Required)
+
+ Leading comment lines | {::nomarkdown}Output array (Required)
 RESULT(1)= -1-RPC/API failed
 Required variable not defined
 0-No display/action required
@@ -39,7 +40,7 @@ SSN not defined
 RESULT(2-10) = error or display messages
 Input parameters: DFN = Patient file entry (Required)
 DGMSG = If 1, generate message (optional)
-DGOPT  = Option name^Menu text (Optional)
+DGOPT  = Option name^Menu text (Optional){:/}
 
 ### Input Parameters
 
@@ -52,4 +53,4 @@ DGOPT  = Option name^Menu text (Optional)
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

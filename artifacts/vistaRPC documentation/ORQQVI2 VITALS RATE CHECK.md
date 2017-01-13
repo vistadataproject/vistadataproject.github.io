@@ -19,8 +19,8 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | Extrinsic function to validate the
+ --- | --- 
+ Leading comment lines | {::nomarkdown}Extrinsic function to validate the
 rate for a particular measurement
 Input
 Variables:  ORQTYPE=Type of measurement (abbreviation
@@ -30,9 +30,9 @@ ORQRATE=Measurement rate to be validated.
 ORQUNIT=Unit of measurement for rate, if specified.
 (opt.)
 Return value:  1 if rate is valid.
-0 if rate is invalid.
+0 if rate is invalid.{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return pt's currently due PCE clinical reminders
- Leading comment lines | in the format file 811.9 ien^reminder print name^date due^last occur.
+
+ Leading comment lines | {::nomarkdown}in the format file 811.9 ien^reminder print name^date due^last occur.{:/}
 
 ### Input Parameters
 
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

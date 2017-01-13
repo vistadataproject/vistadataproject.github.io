@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Read disk-based patient array from TMP.
- Leading comment lines | Variables used:
+
+ Leading comment lines | {::nomarkdown}Variables used:
 ORCNT   = Counter variable.
 ORDIR   = Direction to move through list.
 ORFROM  = Starting point from which to move through list.
@@ -30,9 +31,9 @@ ORIEN   = Record IEN holder.
 ORJ     = Job number to use in ^TMP global root.
 ORROOT  = ^TMP global file root.
 ORZ     = Temporary value holder.
-Y       = Returned array.
+Y       = Returned array.{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

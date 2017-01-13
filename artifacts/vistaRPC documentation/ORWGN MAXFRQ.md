@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Checks if frequency of search term is greater than
- Leading comment lines | max ICD-10 setting
+
+ Leading comment lines | {::nomarkdown}max ICD-10 setting
 Input Value: ORTRM = Search term to look up
 Return Value: 2 pieces (first piece is 0 or 1, second piece is
 occurrance frequency of search term)
@@ -29,7 +30,7 @@ First piece:
 0 - Search term frequency is less than
 maximum return
 1 - Search term frequency is greater
-than maximum return
+than maximum return{:/}
 
 ### Input Parameters
 
@@ -40,4 +41,4 @@ than maximum return
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

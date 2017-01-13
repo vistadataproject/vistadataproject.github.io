@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return identifying information for a patient
- Leading comment lines | PID^DOB^AGE^SEX^SC%^TYPE^WARD^RM-BED^NAME
+
+ Leading comment lines | {::nomarkdown}PID^DOB^AGE^SEX^SC%^TYPE^WARD^RM-BED^NAME{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

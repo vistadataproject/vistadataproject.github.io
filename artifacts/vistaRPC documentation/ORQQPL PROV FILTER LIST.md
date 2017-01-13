@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GET LIST OF RESPONSIBLE PROVIDERS FROM PRBLM LIST
- Leading comment lines | RETURN - aa list of responsible providers from which to select for filtering
-INP - array of problem list providers to select from
+
+ Leading comment lines | {::nomarkdown}RETURN - aa list of responsible providers from which to select for filtering
+INP - array of problem list providers to select from{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ INP - array of problem list providers to select from
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

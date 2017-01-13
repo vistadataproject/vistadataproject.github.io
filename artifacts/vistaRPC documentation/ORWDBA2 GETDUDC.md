@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Day's Unique Diagnoses Codes
- Leading comment lines | Gets all the unique ICD9 codes for the orders placed today by the
+
+ Leading comment lines | {::nomarkdown}Gets all the unique ICD9 codes for the orders placed today by the
 clinician for this patient. Using the ICD9 codes it builds an array
 variable with the ICD9 code, its description from the ICD DIAGNOSIS
 file, #80. Flagging any inactive ICD9 codes with a "#".
@@ -48,7 +49,7 @@ OREM      Order Error Message
 ORIEN     Order Internal Entry Number
 ORRF      Order Record Found
 RCODI     Reverse Cronological Order Date Index
-SUBFILE   Subfile Number
+SUBFILE   Subfile Number{:/}
 
 ### Input Parameters
 
@@ -60,4 +61,4 @@ SUBFILE   Subfile Number
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

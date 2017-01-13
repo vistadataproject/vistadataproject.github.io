@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Sign orders (ORIFN;ACT^RELSTS^SIGSTS^NATR)
+
+ Leading comment lines | {::nomarkdown}Sign orders (ORIFN;ACT^RELSTS^SIGSTS^NATR){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

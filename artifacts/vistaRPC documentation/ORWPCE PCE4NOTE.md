@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return encounter for an associated note
- Leading comment lines | LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT
-LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+
+ Leading comment lines | {::nomarkdown}LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT
+LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns list of consult service for current
- Leading comment lines | context, screening for inactive, groupers, and tracking
-PURPOSE: Display=0, Forward=1, Order=1
+
+ Leading comment lines | {::nomarkdown}context, screening for inactive, groupers, and tracking
+PURPOSE: Display=0, Forward=1, Order=1{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ PURPOSE: Display=0, Forward=1, Order=1
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return some prompt ids from #101.41
- Leading comment lines | treating specialty Id^attending provider id
+
+ Leading comment lines | {::nomarkdown}treating specialty Id^attending provider id{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

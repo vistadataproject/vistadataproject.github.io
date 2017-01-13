@@ -19,12 +19,13 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Should the flag display pop up upon patient selection
- Leading comment lines | for patient PTDFN?
+
+ Leading comment lines | {::nomarkdown}for patient PTDFN?
 As of 1/10/06, returns POPUP as:
 1 if pt has any active flags, either Cat I or Cat II
-0 otherwise
+0 otherwise{:/}
 
 ### Input Parameters
 
@@ -35,4 +36,4 @@ As of 1/10/06, returns POPUP as:
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

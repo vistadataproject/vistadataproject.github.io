@@ -19,14 +19,15 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns the letter text for the purpose of
- Leading comment lines | notification
+
+ Leading comment lines | {::nomarkdown}notification
 Input: RESULT - array name to return data in [required]
 WVIEN - FILE 790.404 IEN [required]
 Output: RESULT(0)=First line of letter text   <OR>
 -1^error message
-RESULT(n)= remaining lines of letter text
+RESULT(n)= remaining lines of letter text{:/}
 
 ### Input Parameters
 
@@ -37,4 +38,4 @@ RESULT(n)= remaining lines of letter text
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

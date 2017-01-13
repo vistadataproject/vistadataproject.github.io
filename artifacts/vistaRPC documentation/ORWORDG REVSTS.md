@@ -19,13 +19,14 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return the status flags available for review orders
- Leading comment lines | N I,X,T S ILST=0
+
+ Leading comment lines | {::nomarkdown}N I,X,T S ILST=0
 F I=1:1 S T="ORDSTS+"_I_"^ORCHANG2" S X=$T(@T) Q:$P(X,";",4)="ZZZZ"  D
-. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4)
+. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4){:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

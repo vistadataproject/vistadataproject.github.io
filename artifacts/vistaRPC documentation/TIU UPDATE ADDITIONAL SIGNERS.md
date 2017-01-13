@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Add list of Add'l Signers for a TIU Document
- Leading comment lines | TIULIST(TIUI) [By Ref] = array of users to add/remove as signers
-TIUDA                  = IEN in ^TIU(8925,
+
+ Leading comment lines | {::nomarkdown}TIULIST(TIUI) [By Ref] = array of users to add/remove as signers
+TIUDA                  = IEN in ^TIU(8925,{:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ TIUDA                  = IEN in ^TIU(8925,
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

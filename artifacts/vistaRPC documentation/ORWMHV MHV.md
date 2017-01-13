@@ -19,11 +19,12 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns "MHV" if patient has My HealtheVet data
- Leading comment lines | Ouput Variable
+
+ Leading comment lines | {::nomarkdown}Ouput Variable
 ORY = 0      if patient does not have My HealtheVet (MHV) data
-= "MHV"  if patient does have My HealtheVet data   
+= "MHV"  if patient does have My HealtheVet data   {:/}
 
 ### Input Parameters
 
@@ -34,4 +35,4 @@ ORY = 0      if patient does not have My HealtheVet (MHV) data
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

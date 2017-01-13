@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Retrieve Diagnoses for an order - RPC
- Leading comment lines | Input:
+
+ Leading comment lines | {::nomarkdown}Input:
 ORIEN    Order Internal ID#
 Output:
 Y        Array of Diagnoses (Dx) - Y(#)=#^DxInt#^ICD9^DxDesc^TxF
@@ -32,7 +33,7 @@ DXN      Internal (to ^OR(100)) sequence # for Dx storage
 DXREC    Dx record from Order file
 DXV      Dx description
 ICD9     External ICD9 #
-TXFACTRS Treatment Factors (TxF)
+TXFACTRS Treatment Factors (TxF){:/}
 
 ### Input Parameters
 
@@ -43,4 +44,4 @@ TXFACTRS Treatment Factors (TxF)
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

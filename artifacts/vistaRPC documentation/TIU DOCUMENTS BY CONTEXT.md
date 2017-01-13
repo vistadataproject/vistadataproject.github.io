@@ -19,9 +19,10 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | main
- Leading comment lines | --- Call with:  TIUY     - RETURN ARRAY pass by reference
+
+ Leading comment lines | {::nomarkdown}--- Call with:  TIUY     - RETURN ARRAY pass by reference
 CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1
 CONTEXT  - 1=All Signed (by PT),
 - 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))
@@ -35,7 +36,7 @@ DFN      - Pointer to Patient (#2)
 [OCCLIM]  - Occurrence Limit (optional)
 [SEQUENCE]- "A"=ascending (Regular date/time)
 - "D"=descending (Reverse date/time) (dflt)
-[INCUND]  - Boolean: include undictated & untranscribed
+[INCUND]  - Boolean: include undictated & untranscribed{:/}
 
 ### Input Parameters
 
@@ -55,4 +56,4 @@ DFN      - Pointer to Patient (#2)
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

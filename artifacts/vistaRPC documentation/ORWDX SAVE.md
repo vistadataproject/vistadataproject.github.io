@@ -19,11 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,
-ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment
+ --- | --- 
+ Leading comment lines | {::nomarkdown}ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,
+ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

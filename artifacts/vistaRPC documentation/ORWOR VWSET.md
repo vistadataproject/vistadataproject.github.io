@@ -19,18 +19,19 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Set the preferred view for orders
- Leading comment lines | VIEW:  semi-colon delimited record
+
+ Leading comment lines | {::nomarkdown}VIEW:  semi-colon delimited record
 1 - Relative From Date/Time or ""
 2 - Relative Thru Date/Time or ""
 3 - Filter
 4 - Display Group Pointer
 5 - Format (preserve for list manager)
 6 - chronological display (R or F)
-7 - sort by display group
+7 - sort by display group{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

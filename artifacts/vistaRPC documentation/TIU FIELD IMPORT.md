@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Call layer for IMPORT2
- Leading comment lines | compatibility and extend the IMPORT function to optionally 
-specify saving the template field.
+
+ Leading comment lines | {::nomarkdown}compatibility and extend the IMPORT function to optionally 
+specify saving the template field.{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ specify saving the template field.
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

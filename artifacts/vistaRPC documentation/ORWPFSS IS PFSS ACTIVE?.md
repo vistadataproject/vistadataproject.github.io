@@ -19,15 +19,16 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Is PFSS active for this system/user/etc?
- Leading comment lines | RPC called by Delphi to determine if passing visit string
+
+ Leading comment lines | {::nomarkdown}RPC called by Delphi to determine if passing visit string
 1 = PFSS active - pass visit string with order
 0 = PFSS not active - do not pass visit string
 $$SWSTAT^IBBAPI() WILL BE RELEASED IN IB*2*286, as per E.Zeigler
-Check for IB patch
+Check for IB patch{:/}
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

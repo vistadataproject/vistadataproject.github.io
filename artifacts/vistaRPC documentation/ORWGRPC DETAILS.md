@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC - get report for type of data for a date or date range
 
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+
+ Generated on January 13th 2017, 6:15:57 am

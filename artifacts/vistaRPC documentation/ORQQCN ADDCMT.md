@@ -19,14 +19,15 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Add comment to existing consult without changing status
- Leading comment lines | ORIEN - IEN of consult from File 123
+
+ Leading comment lines | {::nomarkdown}ORIEN - IEN of consult from File 123
 ORERR - return array for results/errors
 ORCOM is the comments array to be added
 passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.
 ORALRT - should alerts be sent to anyone?
-ORALTO - array of alert recipient IENs
+ORALTO - array of alert recipient IENs{:/}
 
 ### Input Parameters
 
@@ -40,4 +41,4 @@ ORALTO - array of alert recipient IENs
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

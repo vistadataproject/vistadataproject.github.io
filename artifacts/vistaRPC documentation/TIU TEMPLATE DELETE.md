@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Delete TEMPLATES
- Leading comment lines | Pass TIUDA as array of record numbers to be deleted by reference
-SUCCESS will be returned as the actual number of templates deleted
+
+ Leading comment lines | {::nomarkdown}Pass TIUDA as array of record numbers to be deleted by reference
+SUCCESS will be returned as the actual number of templates deleted{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ SUCCESS will be returned as the actual number of templates deleted
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am

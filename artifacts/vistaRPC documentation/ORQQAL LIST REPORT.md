@@ -19,10 +19,11 @@ title: VISTA RPC documentation
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RETURN PT'S ALLERGY/ADVERSE REACTION INFO IN REPORT FORMAT:
- Leading comment lines | null:no allergy assessment, 0:no known allergies, 1:pt has allergies
-if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien
+
+ Leading comment lines | {::nomarkdown}null:no allergy assessment, 0:no known allergies, 1:pt has allergies
+if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien{:/}
 
 ### Input Parameters
 
@@ -33,4 +34,4 @@ if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien
 
 
 
- Generated on January 13th 2017, 5:52:13 am
+ Generated on January 13th 2017, 6:15:57 am
