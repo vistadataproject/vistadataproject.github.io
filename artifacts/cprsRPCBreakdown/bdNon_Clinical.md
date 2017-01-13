@@ -21,6 +21,10 @@ __Note__: this three way breakdown may change to a simpler, more IT-centric, 'PA
 
 
 
+These RPCs access at least 119 parameters and 83 files.
+
+
+
 ### Knowledge (274)
 
 Retrieving (and limited changing) of __user-independent, non clinical data__. Most take data from FileMan/VDM directly and this data drives the system and effects the kinds of care it can provide.
@@ -644,8 +648,8 @@ CHANGE | 5 (5.1%)
 READ | 53 (53.5%)
 UTILITY | 41 (41.4%)
 
-\# | Name | Category | Tags
---- | --- | --- | ---
+
+
 \# | Name | Category | Method | Args | Lines | Tags | Files | Parameters
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 O1 | [GMV CONVERT DATE](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV CONVERT DATE) | UTILITY |  [GETDT^GMVGETQ](http://code.osehra.org/dox/Routine_GMVGETQ_source.html) | GMRDATE | 4 | ALLJS, HARD CODED, RPCLOCKER |  | 
