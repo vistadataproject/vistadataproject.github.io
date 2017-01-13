@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWGN MAXFRQ
- tag | MAXFRQ
+ label | {::nomarkdown}ORWGN MAXFRQ{:/}
+ tag | {::nomarkdown}MAXFRQ{:/}
  routine | [ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
- return value type | SINGLE VALUE
- description | This RPC checks if the frequency of an ICD-10 search term is than the maximum allowed ICD-10 return values.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC checks if the frequency of an ICD-10 search term is than the maximum allowed ICD-10 return values.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Checks if frequency of search term is greater than
- Leading comment lines | max ICD-10 setting,Input Value: ORTRM = Search term to look up,Return Value: 2 pieces (first piece is 0 or 1, second piece is,occurrance frequency of search term),First piece:,0 - Search term frequency is less than,maximum return,1 - Search term frequency is greater,than maximum return
+ Leading comment lines | {::nomarkdown}max ICD-10 setting<br/>Input Value: ORTRM = Search term to look up<br/>Return Value: 2 pieces (first piece is 0 or 1, second piece is<br/>occurrance frequency of search term)<br/>First piece:<br/>0 - Search term frequency is less than<br/>maximum return<br/>1 - Search term frequency is greater<br/>than maximum return{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORTRM | LITERAL | 99 | true | This is the search term to be looked up. | 
+| {::nomarkdown}ORTRM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the search term to be looked up.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

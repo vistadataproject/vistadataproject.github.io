@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD2 MANUAL
- tag | MANUAL
+ label | {::nomarkdown}ORWD2 MANUAL{:/}
+ tag | {::nomarkdown}MANUAL{:/}
  routine | [ORWD2](http://code.osehra.org/dox/Routine_ORWD2_source.html)
- return value type | SINGLE VALUE
- description | Returns device information for manual prints done via CPRS GUI.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns device information for manual prints done via CPRS GUI.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return device info for manual prints
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

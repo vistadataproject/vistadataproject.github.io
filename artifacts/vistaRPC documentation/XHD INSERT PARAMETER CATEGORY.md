@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD INSERT PARAMETER CATEGORY
- tag | INSERT
+ label | {::nomarkdown}XHD INSERT PARAMETER CATEGORY{:/}
+ tag | {::nomarkdown}INSERT{:/}
  routine | [XHDPCAT](http://code.osehra.org/dox/Routine_XHDPCAT_source.html)
- return value type | SINGLE VALUE
- description | Inserts new parameter categories.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Inserts new parameter categories.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAMS | LIST |  | true | This is the list of fields, subscripted by Field Name. | 
+| {::nomarkdown}PARAMS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of fields, subscripted by Field Name.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV XPD VERSION
- tag | VERSION
+ label | {::nomarkdown}DSIV XPD VERSION{:/}
+ tag | {::nomarkdown}VERSION{:/}
  routine | [DSIVXPDU](http://code.osehra.org/dox/Routine_DSIVXPDU_source.html)
- return value type | SINGLE VALUE
- description | This will use the Kernel API to determine the current version of anapplication.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will use the Kernel API to determine the current version of anapplication.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PKG | LITERAL | 50 | true | This is the full name of the PACKAGE file entry or the namespace for thatpackage. | 
+| {::nomarkdown}PKG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the full name of the PACKAGE file entry or the namespace for thatpackage.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

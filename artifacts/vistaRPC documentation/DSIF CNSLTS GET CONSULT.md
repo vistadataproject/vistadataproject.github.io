@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS GET CONSULT
- tag | GET
+ label | {::nomarkdown}DSIF CNSLTS GET CONSULT{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [DSIFCNS](http://code.osehra.org/dox/Routine_DSIFCNS_source.html)
- return value type | SINGLE VALUE
- description | This RPC will return details for a single Consult that uses the same format as DSIF CNSLTS FEE CONSULTS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will return details for a single Consult that uses the same format as DSIF CNSLTS FEE CONSULTS.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFIEN | LITERAL |  | true | This is the Consult IEN that the details are requested of. | 
+| {::nomarkdown}DSIFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN that the details are requested of.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

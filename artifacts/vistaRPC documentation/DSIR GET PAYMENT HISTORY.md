@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET PAYMENT HISTORY
- tag | GETHIST
+ label | {::nomarkdown}DSIR GET PAYMENT HISTORY{:/}
+ tag | {::nomarkdown}GETHIST{:/}
  routine | [DSIRBIL](http://code.osehra.org/dox/Routine_DSIRBIL_source.html)
- return value type | ARRAY
- description | This RPC is used to return the payment history records for an ROI bill.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to return the payment history records for an ROI bill.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BILN | LITERAL | 999 | true | Internal Entry Number to file 19620.2 | 
+| {::nomarkdown}BILN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number to file 19620.2{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

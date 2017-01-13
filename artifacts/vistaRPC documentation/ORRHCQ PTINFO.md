@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCQ PTINFO
- tag | PTINFO
+ label | {::nomarkdown}ORRHCQ PTINFO{:/}
+ tag | {::nomarkdown}PTINFO{:/}
  routine | [ORRHCQ](http://code.osehra.org/dox/Routine_ORRHCQ_source.html)
- return value type | SINGLE VALUE
- description | Returns patient identifying information to display in the bar above thedetailed display.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns patient identifying information to display in the bar above thedetailed display.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IDentifier | LITERAL |  | true | This is the identifier for the order or document.Examples:  ORD:342132;1  or DOC:23423 | 
+| {::nomarkdown}IDentifier{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the identifier for the order or document.Examples:  ORD:342132;1  or DOC:23423{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

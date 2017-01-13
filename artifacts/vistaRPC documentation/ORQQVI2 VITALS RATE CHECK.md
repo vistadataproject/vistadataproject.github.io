@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQVI2 VITALS RATE CHECK
- tag | RATECHK
+ label | {::nomarkdown}ORQQVI2 VITALS RATE CHECK{:/}
+ tag | {::nomarkdown}RATECHK{:/}
  routine | [ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | Extrinsic function to validate the,rate for a particular measurement,Input,Variables:  ORQTYPE=Type of measurement (abbreviation,(req.)  from PCE Device Interface Specification).,ORQRATE=Measurement rate to be validated.,(req.),ORQUNIT=Unit of measurement for rate, if specified.,(opt.),Return value:  1 if rate is valid.,0 if rate is invalid.
+ --- | --- 
+ Leading comment lines | {::nomarkdown}Extrinsic function to validate the<br/>rate for a particular measurement<br/>Input<br/>Variables:  ORQTYPE=Type of measurement (abbreviation<br/>(req.)  from PCE Device Interface Specification).<br/>ORQRATE=Measurement rate to be validated.<br/>(req.)<br/>ORQUNIT=Unit of measurement for rate, if specified.<br/>(opt.)<br/>Return value:  1 if rate is valid.<br/>0 if rate is invalid.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

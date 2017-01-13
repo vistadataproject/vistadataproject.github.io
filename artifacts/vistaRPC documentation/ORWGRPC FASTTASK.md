@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWGRPC FASTTASK
- tag | FASTTASK
+ label | {::nomarkdown}ORWGRPC FASTTASK{:/}
+ tag | {::nomarkdown}FASTTASK{:/}
  routine | [ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | set up all data and items on patient
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

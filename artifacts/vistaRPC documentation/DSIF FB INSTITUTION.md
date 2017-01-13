@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF FB INSTITUTION
- tag | GETINST
+ label | {::nomarkdown}DSIF FB INSTITUTION{:/}
+ tag | {::nomarkdown}GETINST{:/}
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
- return value type | GLOBAL ARRAY
- description | Input Station number, return all populated fields in file #4.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Input Station number, return all populated fields in file #4.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STATION NUMBER | LITERAL | 9 | true |  Station number lookup, using \D\ cross reference (FIELD 99) 1st, then by name field. | 
+| {::nomarkdown}STATION NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Station number lookup, using \D\ cross reference (FIELD 99) 1st, then by name field.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS1 SCHALL
- tag | SCHALL
+ label | {::nomarkdown}ORWDPS1 SCHALL{:/}
+ tag | {::nomarkdown}SCHALL{:/}
  routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return all schedules
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient DFN | 
-| LOCIEN | LITERAL |  | true | This is the inpatient location IEN from file 44, if a location is not defined for the patient the value will be zero. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
+| {::nomarkdown}LOCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the inpatient location IEN from file 44, if a location is not defined for the patient the value will be zero.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

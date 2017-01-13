@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS DIVISION GET
- tag | DIVGET
+ label | {::nomarkdown}XUS DIVISION GET{:/}
+ tag | {::nomarkdown}DIVGET{:/}
  routine | [XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
- return value type | ARRAY
- description | This RPC will return a list of divisions of a user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC will return a list of divisions of a user.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Division data
- Leading comment lines | IEN is userid (DUZ or username) for future use.
+ Leading comment lines | {::nomarkdown}IEN is userid (DUZ or username) for future use.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 30 | true | If passed this will be the user to get the division info on. | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If passed this will be the user to get the division info on.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

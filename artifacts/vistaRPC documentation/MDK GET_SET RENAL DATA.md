@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MDK GET_SET RENAL DATA
- tag | RPC
+ label | {::nomarkdown}MDK GET_SET RENAL DATA{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [MDKRPC2](http://code.osehra.org/dox/Routine_MDKRPC2_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

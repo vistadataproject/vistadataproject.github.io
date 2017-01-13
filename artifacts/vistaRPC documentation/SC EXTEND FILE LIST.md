@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC EXTEND FILE LIST
- tag | FILE
+ label | {::nomarkdown}SC EXTEND FILE LIST{:/}
+ tag | {::nomarkdown}FILE{:/}
  routine | [SCMCTSK1](http://code.osehra.org/dox/Routine_SCMCTSK1_source.html)
- return value type | SINGLE VALUE
- description | File FTEE value
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}File FTEE value{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LIST |  |  |  | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

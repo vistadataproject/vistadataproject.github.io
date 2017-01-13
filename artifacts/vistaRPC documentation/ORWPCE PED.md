@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE PED
- tag | PED
+ label | {::nomarkdown}ORWPCE PED{:/}
+ tag | {::nomarkdown}PED{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | ARRAY
- description | Returns list of education topics for a clinic.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of education topics for a clinic.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | get list of education topices for clinic
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

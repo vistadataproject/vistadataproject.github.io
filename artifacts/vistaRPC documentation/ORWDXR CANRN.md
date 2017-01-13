@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXR CANRN
- tag | CANRN
+ label | {::nomarkdown}ORWDXR CANRN{:/}
+ tag | {::nomarkdown}CANRN{:/}
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Check conjunction for renew.
- Leading comment lines | All conjunctioni = "And" return 1,Has a "Then" return 0
+ Leading comment lines | {::nomarkdown}All conjunctioni = "And" return 1<br/>Has a "Then" return 0{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU GET RECORD TEXT
- tag | TGET
+ label | {::nomarkdown}TIU GET RECORD TEXT{:/}
+ tag | {::nomarkdown}TGET{:/}
  routine | [TIUSRVR1](http://code.osehra.org/dox/Routine_TIUSRVR1_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will get the textual portion of a TIU Document Record.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will get the textual portion of a TIU Document Record.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Build ^TMP("TIUVIEW",$J,
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL | 10 | true |  | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

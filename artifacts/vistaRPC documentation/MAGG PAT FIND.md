@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG PAT FIND
- tag | FIND
+ label | {::nomarkdown}MAGG PAT FIND{:/}
+ tag | {::nomarkdown}FIND{:/}
  routine | [MAGGTPT1](http://code.osehra.org/dox/Routine_MAGGTPT1_source.html)
- return value type | ARRAY
- description | Patient Lookup uses FIND^DIC
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Patient Lookup uses FIND^DIC{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ZYx | LITERAL | 30 | true | '^' delimited string    FILE NUM ^ NUM TO RETURN ^ TEXT TO MATCH ^  ^ SCREEN ($P 5-99) | 
-| MAGGLKP |  |  |  |  | 
+| {::nomarkdown}ZYx{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}'^' delimited string    FILE NUM ^ NUM TO RETURN ^ TEXT TO MATCH ^  ^ SCREEN ($P 5-99){:/} | 
+| {::nomarkdown}MAGGLKP{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

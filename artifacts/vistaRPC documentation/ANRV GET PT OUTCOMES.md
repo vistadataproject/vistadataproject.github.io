@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV GET PT OUTCOMES
- tag | GETREC
+ label | {::nomarkdown}ANRV GET PT OUTCOMES{:/}
+ tag | {::nomarkdown}GETREC{:/}
  routine | [ANRVOB](http://code.osehra.org/dox/Routine_ANRVOB_source.html)
- return value type | ARRAY
- description | Returns top level IEN and sub record IEN plus statuses.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns top level IEN and sub record IEN plus statuses.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RESULTS | LITERAL |  | true | Results of inquiry, includes top record and sub record status and IEN. | 
-| PTDFN | LITERAL | 50 | true | Patients internal entry number. | 
+| {::nomarkdown}RESULTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Results of inquiry, includes top record and sub record status and IEN.{:/} | 
+| {::nomarkdown}PTDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patients internal entry number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

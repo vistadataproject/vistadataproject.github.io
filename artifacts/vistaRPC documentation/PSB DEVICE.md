@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB DEVICE
- tag | DEVICE
+ label | {::nomarkdown}PSB DEVICE{:/}
+ tag | {::nomarkdown}DEVICE{:/}
  routine | [PSBRPC1](http://code.osehra.org/dox/Routine_PSBRPC1_source.html)
- return value type | ARRAY
- description | Allows user to select a Printer from the GUI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Allows user to select a Printer from the GUI.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM | LITERAL |  |  | Text to $O from | 
-| DIR | LITERAL | 1 |  | $O Direction | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Text to $O from{:/} | 
+| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} |  | {::nomarkdown}$O Direction{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

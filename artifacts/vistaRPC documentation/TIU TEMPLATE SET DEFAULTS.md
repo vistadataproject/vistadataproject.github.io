@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE SET DEFAULTS
- tag | SETDFLT
+ label | {::nomarkdown}TIU TEMPLATE SET DEFAULTS{:/}
+ tag | {::nomarkdown}SETDFLT{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | SINGLE VALUE
- description | Saves Template Default Settings
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves Template Default Settings{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Saves Default Templates for the user
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SETTINGS | LITERAL |  |  |  | 
+| {::nomarkdown}SETTINGS{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

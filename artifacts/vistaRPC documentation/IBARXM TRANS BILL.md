@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBARXM TRANS BILL
- tag | BILL
+ label | {::nomarkdown}IBARXM TRANS BILL{:/}
+ tag | {::nomarkdown}BILL{:/}
  routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
- return value type | SINGLE VALUE
- description | This rpc will receive data that a charge should be created for a pharmacy copayment that had previously not been charged due to the patient reaching their copayment cap amount.This RPC call does not send user data to remote side.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This rpc will receive data that a charge should be created for a pharmacy copayment that had previously not been charged due to the patient reaching their copayment cap amount.This RPC call does not send user data to remote side.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBICN | LITERAL |  | true | This is the patient's ICN, to be used to identify the patient. | 
-| IBT | LITERAL |  | true | This is the transaction number to bill. | 
-| IBB | LITERAL |  | true | This is the amount to bill. | 
+| {::nomarkdown}IBICN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient's ICN, to be used to identify the patient.{:/} | 
+| {::nomarkdown}IBT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the transaction number to bill.{:/} | 
+| {::nomarkdown}IBB{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the amount to bill.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

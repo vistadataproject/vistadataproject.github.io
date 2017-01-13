@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP PRINT WINDOWS REMOTE
- tag | PRINTWR
+ label | {::nomarkdown}ORWRP PRINT WINDOWS REMOTE{:/}
+ tag | {::nomarkdown}PRINTWR{:/}
  routine | [ORWRPP](http://code.osehra.org/dox/Routine_ORWRPP_source.html)
- return value type | GLOBAL ARRAY
- description |  Prints CPRS GUI information to windows printer.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown} Prints CPRS GUI information to windows printer.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Windows Remote device print
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

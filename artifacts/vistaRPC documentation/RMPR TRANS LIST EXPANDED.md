@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR TRANS LIST EXPANDED
- tag | EN
+ label | {::nomarkdown}RMPR TRANS LIST EXPANDED{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9S4E](http://code.osehra.org/dox/Routine_RMPR9S4E_source.html)
- return value type | ARRAY
- description | GUI 2319 Expansion of Screen 4 Transaction list.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI 2319 Expansion of Screen 4 Transaction list.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | The internal entry number of file # 660. | 
-| IEN |  |  |  |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The internal entry number of file # 660.{:/} | 
+| {::nomarkdown}IEN{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

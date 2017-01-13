@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 CP GET VISITS
- tag | VISITS
+ label | {::nomarkdown}MAG4 CP GET VISITS{:/}
+ tag | {::nomarkdown}VISITS{:/}
  routine | [MAGGSCP](http://code.osehra.org/dox/Routine_MAGGSCP_source.html)
- return value type | ARRAY
- description |  This RPC call simply call a CP Routine that lists visits for a patient. Imaging prompts the user with this list when a Visit String is needed by CP to create a Note.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} This RPC call simply call a CP Routine that lists visits for a patient. Imaging prompts the user with this list when a Visit String is needed by CP to create a Note.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDFN | LITERAL | 30 | true | DFN of Patient | 
-| MAGCONS | LITERAL | 30 | true |  Consult Number, returned in the Query to get patient CP Requests. | 
+| {::nomarkdown}MAGDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN of Patient{:/} | 
+| {::nomarkdown}MAGCONS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Consult Number, returned in the Query to get patient CP Requests.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

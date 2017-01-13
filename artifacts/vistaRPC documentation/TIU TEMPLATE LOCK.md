@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU TEMPLATE LOCK
- tag | LOCK
+ label | {::nomarkdown}TIU TEMPLATE LOCK{:/}
+ tag | {::nomarkdown}LOCK{:/}
  routine | [TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
- return value type | SINGLE VALUE
- description | Locks Template
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Locks Template{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Lock Template
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  |  | IEN of template to lock. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IEN of template to lock.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH RELEASE
- tag | RELBAT
+ label | {::nomarkdown}DSIF BATCH RELEASE{:/}
+ tag | {::nomarkdown}RELBAT{:/}
  routine | [DSIFBAT3](http://code.osehra.org/dox/Routine_DSIFBAT3_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH NUMBER | LITERAL | 19 | true |  | 
+| {::nomarkdown}BATCH NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}19{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

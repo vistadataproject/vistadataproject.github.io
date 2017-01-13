@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWGN GNLOC
- tag | GNLOC
+ label | {::nomarkdown}ORWGN GNLOC{:/}
+ tag | {::nomarkdown}GNLOC{:/}
  routine | [ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Is valid GN location? 1: true 0: false
- Leading comment lines | .ORY=returned list, ORFROM=text to $O from, DIR=$O direction.
+ Leading comment lines | {::nomarkdown}.ORY=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

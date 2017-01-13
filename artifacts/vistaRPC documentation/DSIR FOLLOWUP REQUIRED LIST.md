@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR FOLLOWUP REQUIRED LIST
- tag | GETFOLLW
+ label | {::nomarkdown}DSIR FOLLOWUP REQUIRED LIST{:/}
+ tag | {::nomarkdown}GETFOLLW{:/}
  routine | [DSIROI2](http://code.osehra.org/dox/Routine_DSIROI2_source.html)
- return value type | ARRAY
- description | This RPC finds any entries in file 19620 ROI INSTANCE that require a follow up letter.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC finds any entries in file 19620 ROI INSTANCE that require a follow up letter.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

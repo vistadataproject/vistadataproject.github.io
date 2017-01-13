@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE GETMOD
- tag | GETMOD
+ label | {::nomarkdown}ORWPCE GETMOD{:/}
+ tag | {::nomarkdown}GETMOD{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | SINGLE VALUE
- description | Returns information for a specific CPT Code.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns information for a specific CPT Code.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns info for a specific CPT Modifier
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MODIEN | LITERAL |  | true | CPT MODIFIER IEN | 
+| {::nomarkdown}MODIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}CPT MODIFIER IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

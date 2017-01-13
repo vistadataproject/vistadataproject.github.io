@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF GENERIC PRICER
- tag | GENERIC
+ label | {::nomarkdown}DSIF GENERIC PRICER{:/}
+ tag | {::nomarkdown}GENERIC{:/}
  routine | [DSIFINP3](http://code.osehra.org/dox/Routine_DSIFINP3_source.html)
- return value type | SINGLE VALUE
- description | Used to build a transaction to send to the Austin Pricer systemthis data will NOT be stored anywhere. It serves only as a tool todetermine reimbursement rates.  
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to build a transaction to send to the Austin Pricer systemthis data will NOT be stored anywhere. It serves only as a tool todetermine reimbursement rates.  {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAME | LITERAL | 75 | true | NAME = \Lastname,Firstname MI;DOB (date);SSN;SEX\     Date format - \01151966\ [MMDDYYYY] | 
-| VENDAT | LITERAL | 55 | true | VENDAT = \Vendor name;Medicare ID;State (VistA Abreviation 2 Alpha)\ | 
-| ADMDAT | LITERAL | 35 | true | ADMDAT = \Admission date;Discharge date;Admitting Authority IEN;Disposition code IEN\  Date format - \01151966\ [MMDDYYYY] | 
-| REIMB | LITERAL | 2 | true | REIMB = \Patient Reimbursement (0/1);Payment by Medicare or Other Federal Agency (0/1)\ | 
-| ICD | LITERAL | 35 | true | ICD = \ICD1;ICD2;ICD3:ICD4;ICD5\ [ICD1 is Mandatory - Primary Diagnosis] | 
-| PROC | LITERAL | 35 | true | PROC = \PROC1;PROC2;PROC3\  [PROC1 is mandatory, Primary procedure] | 
-| CHARGES | LITERAL | 35 | true | CHARGES = \Billed Charges;Amount Claimed\ | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}75{:/} | {::nomarkdown}true{:/} | {::nomarkdown}NAME = \Lastname,Firstname MI;DOB (date);SSN;SEX\     Date format - \01151966\ [MMDDYYYY]{:/} | 
+| {::nomarkdown}VENDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}55{:/} | {::nomarkdown}true{:/} | {::nomarkdown}VENDAT = \Vendor name;Medicare ID;State (VistA Abreviation 2 Alpha)\{:/} | 
+| {::nomarkdown}ADMDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ADMDAT = \Admission date;Discharge date;Admitting Authority IEN;Disposition code IEN\  Date format - \01151966\ [MMDDYYYY]{:/} | 
+| {::nomarkdown}REIMB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}REIMB = \Patient Reimbursement (0/1);Payment by Medicare or Other Federal Agency (0/1)\{:/} | 
+| {::nomarkdown}ICD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICD = \ICD1;ICD2;ICD3:ICD4;ICD5\ [ICD1 is Mandatory - Primary Diagnosis]{:/} | 
+| {::nomarkdown}PROC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PROC = \PROC1;PROC2;PROC3\  [PROC1 is mandatory, Primary procedure]{:/} | 
+| {::nomarkdown}CHARGES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CHARGES = \Billed Charges;Amount Claimed\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

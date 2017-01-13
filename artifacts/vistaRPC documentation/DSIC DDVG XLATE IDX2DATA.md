@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC DDVG XLATE IDX2DATA
- tag | XLATE1
+ label | {::nomarkdown}DSIC DDVG XLATE IDX2DATA{:/}
+ tag | {::nomarkdown}XLATE1{:/}
  routine | [DSICDDR4](http://code.osehra.org/dox/Routine_DSICDDR4_source.html)
- return value type | ARRAY
- description | This will return the external format for an internal Fileman field value
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This will return the external format for an internal Fileman field value{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 20 | true | This is the number of the file (or subfile) for which the external format of the the field is desired. | 
-| FIELD | LITERAL | 20 | true | This is the field number for the file (or subfile) | 
-| VALUE | LITERAL | 250 | true | This is the internal Fileman format for the data stored at FILE,FIELD.  This does not require a record number. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of the file (or subfile) for which the external format of the the field is desired.{:/} | 
+| {::nomarkdown}FIELD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the field number for the file (or subfile){:/} | 
+| {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal Fileman format for the data stored at FILE,FIELD.  This does not require a record number.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

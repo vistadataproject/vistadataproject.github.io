@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MD TMDOUTPUT
- tag | RPC
+ label | {::nomarkdown}MD TMDOUTPUT{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [MDRPCOO](http://code.osehra.org/dox/Routine_MDRPCOO_source.html)
- return value type | GLOBAL ARRAY
- description | Manages the output of VistA data to the client via the default HFS device.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Manages the output of VistA data to the client via the default HFS device.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OPTION | LITERAL | 30 | true | Currently set to EXECUTE as the only option. | 
-| RTN | LITERAL | 30 | true | Contains the routine to produce the output.  Currently to client producesthis parameter in the form of TAG^ROUTINE(needed parameters) to simplifythe calling process. | 
+| {::nomarkdown}OPTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Currently set to EXECUTE as the only option.{:/} | 
+| {::nomarkdown}RTN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the routine to produce the output.  Currently to client producesthis parameter in the form of TAG^ROUTINE(needed parameters) to simplifythe calling process.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

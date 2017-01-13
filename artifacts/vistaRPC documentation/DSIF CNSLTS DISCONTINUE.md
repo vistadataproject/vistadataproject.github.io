@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS DISCONTINUE
- tag | DISCON
+ label | {::nomarkdown}DSIF CNSLTS DISCONTINUE{:/}
+ tag | {::nomarkdown}DISCON{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | This RPC allows for the discontinuing of a selected Consult. Cloned from ORQQCN DISCONTINUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC allows for the discontinuing of a selected Consult. Cloned from ORQQCN DISCONTINUE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCIEN | LITERAL |  | true | This is the Consult IEN that needs to be discontinued. | 
-| DSIFPROV | LITERAL |  | true | Provider who Discontinued or Denied consult. | 
-| DSIFDT | LITERAL |  | true | This is the date the consult was discontinued or denied. | 
-| DSIFACTM | LITERAL | 2 | true | Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied | 
-| DSIFCOM | LIST | 80 |  | The array of comments associated with the discontinue/deny for the consult. | 
+| {::nomarkdown}DSIFCIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Consult IEN that needs to be discontinued.{:/} | 
+| {::nomarkdown}DSIFPROV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Provider who Discontinued or Denied consult.{:/} | 
+| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date the consult was discontinued or denied.{:/} | 
+| {::nomarkdown}DSIFACTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied{:/} | 
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}The array of comments associated with the discontinue/deny for the consult.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

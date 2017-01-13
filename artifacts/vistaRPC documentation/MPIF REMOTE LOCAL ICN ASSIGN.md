@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF REMOTE LOCAL ICN ASSIGN
- tag | LOCALIA
+ label | {::nomarkdown}MPIF REMOTE LOCAL ICN ASSIGN{:/}
+ tag | {::nomarkdown}LOCALIA{:/}
  routine | [MPIFFULL](http://code.osehra.org/dox/Routine_MPIFFULL_source.html)
- return value type | ARRAY
- description | This RPC is to support assignment of local ICNs to the next X number of patients that don't have an ICN already and aren't a merged record (-9 node).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is to support assignment of local ICNs to the next X number of patients that don't have an ICN already and aren't a merged record (-9 node).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOWM | LITERAL | 32 | true | Number of patients to get a local ICN assigned | 
+| {::nomarkdown}HOWM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Number of patients to get a local ICN assigned{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

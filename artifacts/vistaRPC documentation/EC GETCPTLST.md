@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETCPTLST
- tag | CPTFND
+ label | {::nomarkdown}EC GETCPTLST{:/}
+ tag | {::nomarkdown}CPTFND{:/}
  routine | [ECUMRPC2](http://code.osehra.org/dox/Routine_ECUMRPC2_source.html)
- return value type | GLOBAL ARRAY
- description | Performs a search on a CPT string and returns an array list of matches from file #81.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Performs a search on a CPT string and returns an array list of matches from file #81.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | CPT search string. | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}CPT search string.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

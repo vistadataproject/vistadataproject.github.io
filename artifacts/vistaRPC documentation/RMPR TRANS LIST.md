@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR TRANS LIST
- tag | EN
+ label | {::nomarkdown}RMPR TRANS LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9S4](http://code.osehra.org/dox/Routine_RMPR9S4_source.html)
- return value type | ARRAY
- description | GUI 2319 Appliance Transaction List Tab 4.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI 2319 Appliance Transaction List Tab 4.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 VALIDATE DATA
- tag | VAL
+ label | {::nomarkdown}MAG4 VALIDATE DATA{:/}
+ tag | {::nomarkdown}VAL{:/}
  routine | [MAGGSIV](http://code.osehra.org/dox/Routine_MAGGSIV_source.html)
- return value type | ARRAY
- description | Validates the Image Data Array
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Validates the Image Data Array{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGARRAY | LIST |  | true | Each item in the Array is an '^' delimited piece of information.in the format Field^Value  OR  ActionCode^value | 
-| ALL | LITERAL | 1 | true | All = 1 and All items in MAGARRAY will be validated.All = 0 and Validation stops after first item in MAGARRAY fails. | 
+| {::nomarkdown}MAGARRAY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Each item in the Array is an '^' delimited piece of information.in the format Field^Value  OR  ActionCode^value{:/} | 
+| {::nomarkdown}ALL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}All = 1 and All items in MAGARRAY will be validated.All = 0 and Validation stops after first item in MAGARRAY fails.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

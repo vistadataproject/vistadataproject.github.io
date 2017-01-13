@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 FORMALT
- tag | FORMALT
+ label | {::nomarkdown}ORWDPS32 FORMALT{:/}
+ tag | {::nomarkdown}FORMALT{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | ARRAY
- description | Return a list of formulary alternatives.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return a list of formulary alternatives.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return a list of formulary alternatives
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

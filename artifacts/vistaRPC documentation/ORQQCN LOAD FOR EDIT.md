@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN LOAD FOR EDIT
- tag | EDITLOAD
+ label | {::nomarkdown}ORQQCN LOAD FOR EDIT{:/}
+ tag | {::nomarkdown}EDITLOAD{:/}
  routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
- return value type | GLOBAL ARRAY
- description | Given a consult IEN, returns the current values of that record's fields.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Given a consult IEN, returns the current values of that record's fields.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Load a cancelled consult/procedure for editing
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Consult IEN | LITERAL | 16 | true |  | 
+| {::nomarkdown}Consult IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

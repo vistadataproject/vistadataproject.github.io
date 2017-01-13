@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN PHARMACY UTL REPORT
- tag | RPC
+ label | {::nomarkdown}SPN PHARMACY UTL REPORT{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [SPNLRL7](http://code.osehra.org/dox/Routine_SPNLRL7_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FDATE | LITERAL |  |  | Date to start from.  mm/dd/yyyy. | 
-| COST | LITERAL |  |  | Value must be either ACTUAL OR CURRENT. | 
-| MINCOST | LITERAL |  |  | Minimum dollar cost of dispensed fills to display:  (0-9999999) | 
-| MINFILL | LITERAL |  |  | Minimum number of fills to display:  (1-999999) | 
-| PTLIST | LIST |  |  | ICN^ICN^ICN | 
-| TDATE | LITERAL |  |  | Date to end collection.  mm/dd/yyyy. | 
-| HIUSERS | LITERAL |  |  | Number of highest users to identify:  (0-100) | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to start from.  mm/dd/yyyy.{:/} | 
+| {::nomarkdown}COST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Value must be either ACTUAL OR CURRENT.{:/} | 
+| {::nomarkdown}MINCOST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Minimum dollar cost of dispensed fills to display:  (0-9999999){:/} | 
+| {::nomarkdown}MINFILL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Minimum number of fills to display:  (1-999999){:/} | 
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ICN^ICN^ICN{:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end collection.  mm/dd/yyyy.{:/} | 
+| {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Number of highest users to identify:  (0-100){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

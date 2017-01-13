@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU16 DEVICE
- tag | DEVICE
+ label | {::nomarkdown}ORWU16 DEVICE{:/}
+ tag | {::nomarkdown}DEVICE{:/}
  routine | [ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a list of devices
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

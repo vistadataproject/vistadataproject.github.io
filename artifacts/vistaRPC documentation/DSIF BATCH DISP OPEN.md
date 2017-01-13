@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH DISP OPEN
- tag | DISOPENB
+ label | {::nomarkdown}DSIF BATCH DISP OPEN{:/}
+ tag | {::nomarkdown}DISOPENB{:/}
  routine | [DSIFBAT1](http://code.osehra.org/dox/Routine_DSIFBAT1_source.html)
- return value type | ARRAY
- description | Show open Fee Basis batchesor-1^error message -1^error message 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Show open Fee Basis batchesor-1^error message -1^error message {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TYPE | LITERAL | 2 | true |  | 
+| {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

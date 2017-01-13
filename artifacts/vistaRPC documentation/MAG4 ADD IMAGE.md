@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 ADD IMAGE
- tag | ADD
+ label | {::nomarkdown}MAG4 ADD IMAGE{:/}
+ tag | {::nomarkdown}ADD{:/}
  routine | [MAGGSIA](http://code.osehra.org/dox/Routine_MAGGSIA_source.html)
- return value type | ARRAY
- description | Adds a new entry to the IMAGE File ^MAG(2005
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Adds a new entry to the IMAGE File ^MAG(2005{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGARRAY | LIST |  | true | This is the image data list in the formA(i)=field number^field value   orA(i)=action code^value | 
+| {::nomarkdown}MAGARRAY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the image data list in the formA(i)=field number^field value   orA(i)=action code^value{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

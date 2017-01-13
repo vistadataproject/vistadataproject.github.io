@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT16 GETVSIT
- tag | GETVSIT
+ label | {::nomarkdown}ORWPT16 GETVSIT{:/}
+ tag | {::nomarkdown}GETVSIT{:/}
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Return a visit given a patient, location, and date/time
+ Leading comment lines | {::nomarkdown}Return a visit given a patient, location, and date/time{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGLAB MICRO
- tag | MICRO
+ label | {::nomarkdown}MAGGLAB MICRO{:/}
+ tag | {::nomarkdown}MICRO{:/}
  routine | [MAGGTLB](http://code.osehra.org/dox/Routine_MAGGTLB_source.html)
- return value type | ARRAY
- description | ;The line tag MICRO is used for selection of Microscopic Objective.An array of entries in the Microscopic Objective file are returned.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown};The line tag MICRO is used for selection of Microscopic Objective.An array of entries in the Microscopic Objective file are returned.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

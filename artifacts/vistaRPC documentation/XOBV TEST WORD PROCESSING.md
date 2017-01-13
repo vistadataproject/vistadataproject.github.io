@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBV TEST WORD PROCESSING
- tag | WPRP
+ label | {::nomarkdown}XOBV TEST WORD PROCESSING{:/}
+ tag | {::nomarkdown}WPRP{:/}
  routine | [XOBVLT](http://code.osehra.org/dox/Routine_XOBVLT_source.html)
- return value type | WORD PROCESSING
- description | This simple RPC takes no input parameters and returns a 'chunk' of text.This RPC is used to test whether VistALink properly transports 'chunks' oftext. This RPC is used as part of the test and learning application distributedas part of VistALink.
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
+ description | {::nomarkdown}This simple RPC takes no input parameters and returns a 'chunk' of text.This RPC is used to test whether VistALink properly transports 'chunks' oftext. This RPC is used as part of the test and learning application distributedas part of VistALink.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

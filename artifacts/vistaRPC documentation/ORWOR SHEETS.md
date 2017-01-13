@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR SHEETS
- tag | SHEETS
+ label | {::nomarkdown}ORWOR SHEETS{:/}
+ tag | {::nomarkdown}SHEETS{:/}
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
- return value type | ARRAY
- description | Returns order sheets for a patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns order sheets for a patient.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return Order Sheets for a patient
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

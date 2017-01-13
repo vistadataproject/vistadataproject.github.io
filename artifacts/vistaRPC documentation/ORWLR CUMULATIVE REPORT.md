@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWLR CUMULATIVE REPORT
- tag | CUM
+ label | {::nomarkdown}ORWLR CUMULATIVE REPORT{:/}
+ tag | {::nomarkdown}CUM{:/}
  routine | [ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
- return value type | GLOBAL ARRAY
- description | This call returns an up to date laboratory cumulative report for a given patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This call returns an up to date laboratory cumulative report for a given patient.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return cumulative report
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | This parameter identifies the patient for whom the lab cumulative report should be obtained. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter identifies the patient for whom the lab cumulative report should be obtained.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

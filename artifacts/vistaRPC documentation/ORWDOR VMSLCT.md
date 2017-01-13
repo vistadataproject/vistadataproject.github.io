@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDOR VMSLCT
- tag | VMSLCT
+ label | {::nomarkdown}ORWDOR VMSLCT{:/}
+ tag | {::nomarkdown}VMSLCT{:/}
  routine | [ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
- return value type | ARRAY
- description | Returns the default list for the vitals order dialog in CPRS GUI.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the default list for the vitals order dialog in CPRS GUI.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return default lists for vitals dialog
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

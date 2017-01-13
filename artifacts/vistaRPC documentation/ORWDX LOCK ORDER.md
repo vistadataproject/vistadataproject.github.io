@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX LOCK ORDER
- tag | LOCKORD
+ label | {::nomarkdown}ORWDX LOCK ORDER{:/}
+ tag | {::nomarkdown}LOCKORD{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | SINGLE VALUE
- description | RPC to attempt to lock a specific order.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to attempt to lock a specific order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Attempt to lock order
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

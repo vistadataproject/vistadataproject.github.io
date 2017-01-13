@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA FIND KEYLIST
- tag | FINDKEYS
+ label | {::nomarkdown}MAGVA FIND KEYLIST{:/}
+ tag | {::nomarkdown}FINDKEYS{:/}
  routine | [MAGVAKL1](http://code.osehra.org/dox/Routine_MAGVAKL1_source.html)
- return value type | ARRAY
- description | Return a list with all KEYS IENS that meet the keys provided
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return a list with all KEYS IENS that meet the keys provided{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| KLIST | LIST |  | true | KLIST(1) = First Key KLIST(2) = Second Key ... KLIST(N) = N-th Key | 
+| {::nomarkdown}KLIST{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}KLIST(1) = First Key KLIST(2) = Second Key ... KLIST(N) = N-th Key{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

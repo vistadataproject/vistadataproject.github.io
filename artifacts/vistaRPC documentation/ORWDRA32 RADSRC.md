@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDRA32 RADSRC
- tag | RADSRC
+ label | {::nomarkdown}ORWDRA32 RADSRC{:/}
+ tag | {::nomarkdown}RADSRC{:/}
  routine | [ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return list of available contract/sharing/research sources
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWSR GET SURG CONTEXT
- tag | GTSURCTX
+ label | {::nomarkdown}ORWSR GET SURG CONTEXT{:/}
+ tag | {::nomarkdown}GTSURCTX{:/}
  routine | [ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns current Notes view context for user
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

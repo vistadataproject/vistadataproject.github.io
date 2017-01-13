@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCQ1 QSITR
- tag | QSITR
+ label | {::nomarkdown}ORRHCQ1 QSITR{:/}
+ tag | {::nomarkdown}QSITR{:/}
  routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
- return value type | SINGLE VALUE
- description | Iterates through sensitive patients identified in a query tool report.Screens patients based on report criteria, and reports sensitivepatients as necessary.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Iterates through sensitive patients identified in a query tool report.Screens patients based on report criteria, and reports sensitivepatients as necessary.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Iterator | LITERAL | 80 | true | Iterator to tell the routine from which patient to perform the search. | 
+| {::nomarkdown}Iterator{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Iterator to tell the routine from which patient to perform the search.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

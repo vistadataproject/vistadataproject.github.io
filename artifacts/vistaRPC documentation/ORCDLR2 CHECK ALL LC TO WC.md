@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORCDLR2 CHECK ALL LC TO WC
- tag | GUI
+ label | {::nomarkdown}ORCDLR2 CHECK ALL LC TO WC{:/}
+ tag | {::nomarkdown}GUI{:/}
  routine | [ORCDLR2](http://code.osehra.org/dox/Routine_ORCDLR2_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | ck list of ORDERS for labs w/invalid coll times
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

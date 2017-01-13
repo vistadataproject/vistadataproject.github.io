@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD GET FORMSPEC GLOBAL
- tag | GETFS1
+ label | {::nomarkdown}IBD GET FORMSPEC GLOBAL{:/}
+ tag | {::nomarkdown}GETFS1{:/}
  routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBDF | LIST | 30 | true | This will contain the form id and version of paper keyboard | 
+| {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This will contain the form id and version of paper keyboard{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

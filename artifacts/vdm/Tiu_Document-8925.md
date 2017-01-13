@@ -17,11 +17,11 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| document_type | .01 | Document Type | {::nomarkdown}This field points to the Tiu Document Definition file, whose entry defines<br/>the components of the document and various parameters for the document's<br/>behavior.{:/} | POINTER |  | REQUIRED, INDEXED | {id:Tiu_Document_Definition-8925_1} | 
+| document_type | .01 | Document Type | {::nomarkdown}This field points to the Tiu Document Definition file, whose entry defines<br/>the components of the document and various parameters for the document's<br/>behavior.{:/} | POINTER |  | REQUIRED, INDEXED | Tiu_Document_Definition-8925_1 | 
 | patient | .02 | Patient | {::nomarkdown}This field contains a pointer to the patient file.{:/} | POINTER |  | INDEXED | [Patient_ihs-9000001](Patient_ihs-9000001.md) | 
 | visit | .03 | Visit |  | POINTER |  | INDEXED | [Visit-9000010](Visit-9000010.md) | 
-| parent_document_type | .04 | Parent Document Type | {::nomarkdown}This field points to the immediate parent class or document type to which the<br/>current record belongs.  For example, when the current document has the type <br/>SOAP - GENERAL NOTE, this field will point to PROGRESS NOTE, as the parent <br/>class to which SOAP Notes belong, whereas, if the current record is a <br/>SUBJECTIVE component, then this field will point to SOAP - GENERAL NOTE as <br/>the parent document type to which the component belongs.{:/} | POINTER |  |  | {id:Tiu_Document_Definition-8925_1} | 
-| status | .05 | Status | {::nomarkdown}This field is intended to accommodate the status of a given report.{:/} | POINTER |  |  | {id:Tiu_Status-8925_6} | 
+| parent_document_type | .04 | Parent Document Type | {::nomarkdown}This field points to the immediate parent class or document type to which the<br/>current record belongs.  For example, when the current document has the type <br/>SOAP - GENERAL NOTE, this field will point to PROGRESS NOTE, as the parent <br/>class to which SOAP Notes belong, whereas, if the current record is a <br/>SUBJECTIVE component, then this field will point to SOAP - GENERAL NOTE as <br/>the parent document type to which the component belongs.{:/} | POINTER |  |  | Tiu_Document_Definition-8925_1 | 
+| status | .05 | Status | {::nomarkdown}This field is intended to accommodate the status of a given report.{:/} | POINTER |  |  | Tiu_Status-8925_6 | 
 | parent | .06 | Parent | {::nomarkdown}In the event that the current report is an addendum or replacement, or is<br/>a component of a report, this field points to the original report.{:/} | POINTER |  | INDEXED | [Tiu_Document-8925](Tiu_Document-8925.md) | 
 | episode_begin_date_time | .07 | Episode Begin Date/time | {::nomarkdown}This is the date/time at which the treatment episode associated with this<br/>document was initiated (e.g., Amission date/time for a discharge summary,<br/>Visit date/time for a clinic note, Transfer date/time for an interim<br/>summary).  Time is optional.{:/} | DATE-TIME |  |  |  | 
 | episode_end_date_time | .08 | Episode End Date/time | {::nomarkdown}This is the ending date/time for the treatment episode associated with<br/>this document (e.g., .  Time is optional.{:/} | DATE-TIME |  |  |  | 
@@ -34,14 +34,14 @@ title: VDM documentation
 | edit_text_buffer | 3 | Edit Text Buffer | {::nomarkdown}This field provides a temporary holding place for the body of a report to<br/>prevent inadvertant record deletion or corruption in a manner independent<br/>of the user's preferred editor.{:/} | STRING |  |  |  | 
 | entry_date_time | 1201 | Entry Date/time | {::nomarkdown}This is the date/time at which the document was originally entered into<br/>the database.{:/} | DATE-TIME |  | INDEXED |  | 
 | author_dictator | 1202 | Author/dictator | {::nomarkdown} <br/>This is the person who composed or dictated the document.{:/} | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
-| clinic | 1203 | Clinic | {::nomarkdown}This is the stop code to which the document is to be credited (e.g., if the <br/>document is a progress note documenting an encounter which took place in the <br/>Admitting/Screening Clinic, then select the corresponding stop code, etc.).<br/>{:/} | POINTER |  |  | {id:Clinic_Stop-40_7} | 
+| clinic | 1203 | Clinic | {::nomarkdown}This is the stop code to which the document is to be credited (e.g., if the <br/>document is a progress note documenting an encounter which took place in the <br/>Admitting/Screening Clinic, then select the corresponding stop code, etc.).<br/>{:/} | POINTER |  |  | Clinic_Stop-40_7 | 
 | expected_signer | 1204 | Expected Signer | {::nomarkdown}This is the person who is expected to enter the first-line signature for<br/>the document.  Ordinarily, this would be the author.  One case in which<br/>this would differ would be in the case of a Discharge Summary, when the<br/>author's signature is NOT required.  Then, the attending physician would<br/>be the expected signer.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | hospital_location | 1205 | Hospital Location | {::nomarkdown}This is the location (WARD or CLINIC) associated with the document.{:/} | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
-| service_credit_stop | 1206 | Service Credit Stop | {::nomarkdown}This is the attending physician of record, who is ultimately responsible<br/>for the care of the patient, and the accurate documentation of the care<br/>episode.{:/} | POINTER |  |  | {id:Clinic_Stop-40_7} | 
+| service_credit_stop | 1206 | Service Credit Stop | {::nomarkdown}This is the attending physician of record, who is ultimately responsible<br/>for the care of the patient, and the accurate documentation of the care<br/>episode.{:/} | POINTER |  |  | Clinic_Stop-40_7 | 
 | secondary_visit | 1207 | Secondary Visit |  | POINTER |  |  | [Visit-9000010](Visit-9000010.md) | 
 | expected_cosigner | 1208 | Expected Cosigner |  | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
 | attending_physician | 1209 | Attending Physician |  | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
-| order_number | 1210 | Order Number | {::nomarkdown}This is the Order which was acted on to produce the result reported in the <br/>current document.{:/} | POINTER |  |  | {id:Order-100} | 
+| order_number | 1210 | Order Number | {::nomarkdown}This is the Order which was acted on to produce the result reported in the <br/>current document.{:/} | POINTER |  |  | Order-100 | 
 | visit_location | 1211 | Visit Location | {::nomarkdown}This is the location at which the visit/admission occurred.  As distinct <br/>from the HOSPITAL LOCATION field, which represents the location at the time <br/>the document was written, this is the location for the visit/admission with <br/>which the note is associated.{:/} | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
 | division | 1212 | Division | {::nomarkdown}This field contains the institution associated with the document. It is <br/>extracted from the document's hospital location if known; otherwise it is <br/>extracted from the user's log-on division.{:/} | POINTER |  |  | [Institution-4](Institution-4.md) | 
 | reference_date | 1301 | Reference Date | {::nomarkdown}This is the Date (and time) by which the clinician will reference the <br/>document.  For Progress Notes, this will likely be the date of the <br/>provider's encounter with the patient.  For Discharge Summaries, it will <br/>correspond to the Discharge Date of the Admission referenced in the <br/>document.  (If there is no Discharge Date when dictated, it will <br/>correspond to the dictation date of the record instead.)<br/>In all cases, this is the date by which the document will be referenced<br/>and sorted.{:/} | DATE-TIME |  | INDEXED |  | 
@@ -53,10 +53,10 @@ title: VDM documentation
 | dictation_date | 1307 | Dictation Date | {::nomarkdown}This is the date (and time) on which the document was dictated by its <br/>author.  In the event that a document originates by dictation, we recommend <br/>that the REFERENCE DATE for the document be defaulted to dictation date, as <br/>the author will be able to identify the document by the date on which s/he <br/>dictated it.{:/} | DATE-TIME |  |  |  | 
 | suspense_date_time | 1308 | Suspense Date/time | {::nomarkdown}This is the date (and time) on which the document will be removed from<br/>public view.  It is currently used only for Patient Postings, although it<br/>may be generalized for use with other document types, if appropriate.{:/} | DATE-TIME |  |  |  | 
 | patient_movement_record | 1401 | Patient Movement Record |  | POINTER |  |  | [Patient_Movement-405](Patient_Movement-405.md) | 
-| treating_specialty | 1402 | Treating Specialty |  | POINTER |  | INDEXED | {id:Facility_Treating_Specialty-45_7} | 
-| irt_record | 1403 | Irt Record |  | POINTER |  |  | {id:Incomplete_Records-393} | 
-| service | 1404 | Service |  | POINTER |  | INDEXED | {id:Service_section-49} | 
-| requesting_package_reference | 1405 | Requesting Package Reference | {::nomarkdown}This field allows a linkage to be maintained between the TIU Document and<br/>the DHCP Package for which it was generated.{:/} | POINTER |  | INDEXED | [{id:Request_consultation-123},{id:Surgery-130}] | 
+| treating_specialty | 1402 | Treating Specialty |  | POINTER |  | INDEXED | Facility_Treating_Specialty-45_7 | 
+| irt_record | 1403 | Irt Record |  | POINTER |  |  | Incomplete_Records-393 | 
+| service | 1404 | Service |  | POINTER |  | INDEXED | Service_section-49 | 
+| requesting_package_reference | 1405 | Requesting Package Reference | {::nomarkdown}This field allows a linkage to be maintained between the TIU Document and<br/>the DHCP Package for which it was generated.{:/} | POINTER |  | INDEXED | undefined | 
 | retracted_original | 1406 | Retracted Original | {::nomarkdown}This self-refering pointer identifies the original document which was <br/>retracted in error to produce this record.{:/} | POINTER |  |  | [Tiu_Document-8925](Tiu_Document-8925.md) | 
 | signature_date_time | 1501 | Signature Date/time |  | DATE-TIME |  |  |  | 
 | signed_by | 1502 | Signed By |  | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
@@ -94,4 +94,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 6:16:11 am

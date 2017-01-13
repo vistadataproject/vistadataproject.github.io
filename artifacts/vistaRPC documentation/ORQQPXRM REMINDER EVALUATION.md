@@ -9,28 +9,28 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM REMINDER EVALUATION
- tag | ALIST
+ label | {::nomarkdown}ORQQPXRM REMINDER EVALUATION{:/}
+ tag | {::nomarkdown}ALIST{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | DBIA 3078
- Leading comment lines | ORQQPXRM REMINDERS APPLICABLE
+ Leading comment lines | {::nomarkdown}ORQQPXRM REMINDERS APPLICABLE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | Patient identifier from the patient file [#2] | 
-| REMINDER ARRAY | LIST | 16 | true | List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier from the patient file [#2]{:/} | 
+| {::nomarkdown}REMINDER ARRAY{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

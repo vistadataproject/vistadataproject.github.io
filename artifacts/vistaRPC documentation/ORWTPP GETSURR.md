@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPP GETSURR
- tag | GETSURR
+ label | {::nomarkdown}ORWTPP GETSURR{:/}
+ tag | {::nomarkdown}GETSURR{:/}
  routine | [ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC
- Leading comment lines | get current user's surrogate info
+ Leading comment lines | {::nomarkdown}get current user's surrogate info{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

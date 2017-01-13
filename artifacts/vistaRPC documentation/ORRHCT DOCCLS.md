@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCT DOCCLS
- tag | DOCCLS
+ label | {::nomarkdown}ORRHCT DOCCLS{:/}
+ tag | {::nomarkdown}DOCCLS{:/}
  routine | [ORRHCT](http://code.osehra.org/dox/Routine_ORRHCT_source.html)
- return value type | ARRAY
- description | Returns a list of document classes.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of document classes.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

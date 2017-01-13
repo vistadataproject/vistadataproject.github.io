@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET HOSP LOCATION
- tag | GETLOC
+ label | {::nomarkdown}MAG DICOM GET HOSP LOCATION{:/}
+ tag | {::nomarkdown}GETLOC{:/}
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
- return value type | ARRAY
- description | Return a list of matching hospital locations
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return a list of matching hospital locations{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LOCATION | LITERAL | 30 | true | Hospital location to look up. | 
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Hospital location to look up.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

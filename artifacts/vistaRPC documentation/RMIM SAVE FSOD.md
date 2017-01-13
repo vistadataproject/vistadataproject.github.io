@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMIM SAVE FSOD
- tag | SAV
+ label | {::nomarkdown}RMIM SAVE FSOD{:/}
+ tag | {::nomarkdown}SAV{:/}
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ARRAY | LIST |  |  |  | 
+| {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

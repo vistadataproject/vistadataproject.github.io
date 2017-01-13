@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR LOAD
- tag | LOAD
+ label | {::nomarkdown}ORWDLR LOAD{:/}
+ tag | {::nomarkdown}LOAD{:/}
  routine | [ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
- return value type | ARRAY
- description | Loads sample, specimen, and urgency information for a given lab test.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Loads sample, specimen, and urgency information for a given lab test.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Return sample, specimen, & urgency info about a lab test
+ Leading comment lines | {::nomarkdown}Return sample, specimen, & urgency info about a lab test{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

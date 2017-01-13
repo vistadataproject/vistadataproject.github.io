@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB INST LIST
- tag | INSTLIST
+ label | {::nomarkdown}DVBAB INST LIST{:/}
+ tag | {::nomarkdown}INSTLIST{:/}
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of Institutions.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of Institutions.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

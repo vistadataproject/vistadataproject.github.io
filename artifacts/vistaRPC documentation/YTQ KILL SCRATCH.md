@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ KILL SCRATCH
- tag | KILLSCR
+ label | {::nomarkdown}YTQ KILL SCRATCH{:/}
+ tag | {::nomarkdown}KILLSCR{:/}
  routine | [YTQPXRM8](http://code.osehra.org/dox/Routine_YTQPXRM8_source.html)
- return value type | ARRAY
- description | Delete entires from the scratch file when a clinical reminder is saved.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Delete entires from the scratch file when a clinical reminder is saved.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient DFN | 
-| CODE | LITERAL |  | true | Name of instrument from file 601.71 | 
-| HANDLE | LITERAL |  | true | Unique identifer of GIU session | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
+| {::nomarkdown}CODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Name of instrument from file 601.71{:/} | 
+| {::nomarkdown}HANDLE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Unique identifer of GIU session{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

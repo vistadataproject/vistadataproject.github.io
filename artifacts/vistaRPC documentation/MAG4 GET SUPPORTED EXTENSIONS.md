@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 GET SUPPORTED EXTENSIONS
- tag | LIST
+ label | {::nomarkdown}MAG4 GET SUPPORTED EXTENSIONS{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [MAGGSFT](http://code.osehra.org/dox/Routine_MAGGSFT_source.html)
- return value type | ARRAY
- description | Returns a list of supported file extensions, used in Imaging.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of supported file extensions, used in Imaging.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

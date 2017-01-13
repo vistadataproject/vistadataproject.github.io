@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDAL32 ALLERGY MATCH
- tag | ALLSRCH
+ label | {::nomarkdown}ORWDAL32 ALLERGY MATCH{:/}
+ tag | {::nomarkdown}ALLSRCH{:/}
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
- return value type | ARRAY
- description | Given a text string, return a list of possible matches from severaldifferent sources.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Given a text string, return a list of possible matches from severaldifferent sources.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return list of partial matches  
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| user input string | LITERAL | 32 | true |  | 
+| {::nomarkdown}user input string{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

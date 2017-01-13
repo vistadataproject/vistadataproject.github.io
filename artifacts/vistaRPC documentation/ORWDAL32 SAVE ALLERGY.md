@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDAL32 SAVE ALLERGY
- tag | EDITSAVE
+ label | {::nomarkdown}ORWDAL32 SAVE ALLERGY{:/}
+ tag | {::nomarkdown}EDITSAVE{:/}
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Save Edit/Add of an allergy/adverse reaction
- Leading comment lines | following patch check is made via GUI RPC call to ORWU PATCH instead,I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q
+ Leading comment lines | {::nomarkdown}following patch check is made via GUI RPC call to ORWU PATCH instead<br/>I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

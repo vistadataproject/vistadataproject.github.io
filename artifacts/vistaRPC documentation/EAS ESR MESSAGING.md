@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EAS ESR MESSAGING
- tag | TAG
+ label | {::nomarkdown}EAS ESR MESSAGING{:/}
+ tag | {::nomarkdown}TAG{:/}
  routine | [EAS1071A](http://code.osehra.org/dox/Routine_EAS1071A_source.html)
- return value type | ARRAY
- description | This is a stub RPC to trigger dual messaging changes on Vista Sites
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This is a stub RPC to trigger dual messaging changes on Vista Sites{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MODE | LITERAL | 16 | true |  | 
+| {::nomarkdown}MODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

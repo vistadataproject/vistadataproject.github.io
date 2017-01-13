@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF SSN DUPS
- tag | TOSITE
+ label | {::nomarkdown}MPIF SSN DUPS{:/}
+ tag | {::nomarkdown}TOSITE{:/}
  routine | [MPIFDUPS](http://code.osehra.org/dox/Routine_MPIFDUPS_source.html)
- return value type | SINGLE VALUE
- description | This RPC will be used by the data management teams' stat report to searchfor multiple SSNs with differnt ICNs from the same site.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will be used by the data management teams' stat report to searchfor multiple SSNs with differnt ICNs from the same site.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ARRAY | LIST | 100 | true |  | 
+| {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

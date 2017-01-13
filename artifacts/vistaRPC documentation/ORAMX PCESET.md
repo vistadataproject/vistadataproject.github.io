@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAMX PCESET
- tag | PCESET
+ label | {::nomarkdown}ORAMX PCESET{:/}
+ tag | {::nomarkdown}PCESET{:/}
  routine | [ORAMX](http://code.osehra.org/dox/Routine_ORAMX_source.html)
- return value type | SINGLE VALUE
- description | Checks for service connection, etc, for PCE data call or files PCE data.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Checks for service connection, etc, for PCE data call or files PCE data.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  | The IEN of the Patient in the Patient File (#2). | 
-| DATA1 | LITERAL |  |  | Data string from the Anticoagulation Management Program. | 
-| HOSLOC | LITERAL |  |  | Visit location from the Hospital Location File. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The IEN of the Patient in the Patient File (#2).{:/} | 
+| {::nomarkdown}DATA1{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Data string from the Anticoagulation Management Program.{:/} | 
+| {::nomarkdown}HOSLOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Visit location from the Hospital Location File.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

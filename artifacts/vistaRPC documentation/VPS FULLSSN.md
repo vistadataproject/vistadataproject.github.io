@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS FULLSSN
- tag | FULLSSN
+ label | {::nomarkdown}VPS FULLSSN{:/}
+ tag | {::nomarkdown}FULLSSN{:/}
  routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
- return value type | ARRAY
- description | Returns a list of patients with SSNs that match the value stored in ID.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients with SSNs that match the value stored in ID.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SSN | LITERAL | 10 | true | Patient's 9-digit SSN value. | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient's 9-digit SSN value.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

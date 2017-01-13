@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV XPAR ADD
- tag | ADD
+ label | {::nomarkdown}DSIV XPAR ADD{:/}
+ tag | {::nomarkdown}ADD{:/}
  routine | [DSIVXPR2](http://code.osehra.org/dox/Routine_DSIVXPR2_source.html)
- return value type | SINGLE VALUE
- description | This RPC will add a new parameter value for an entity.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will add a new parameter value for an entity.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL | 250 | true | This string has different pieces for adding a new parameter for an entity DATA - required - p1~p2~p3~p4  p1 := optional - entity(s) - if not passed, set to \USR\ for                   current user  p2 := required - parameter name  p3 := optional - instance  p4 := required - value | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This string has different pieces for adding a new parameter for an entity DATA - required - p1~p2~p3~p4  p1 := optional - entity(s) - if not passed, set to \USR\ for                   current user  p2 := required - parameter name  p3 := optional - instance  p4 := required - value{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

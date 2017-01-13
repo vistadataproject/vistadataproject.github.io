@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN PAIN VITALS
- tag | EN
+ label | {::nomarkdown}SPN PAIN VITALS{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [SPNRPC5](http://code.osehra.org/dox/Routine_SPNRPC5_source.html)
- return value type | SINGLE VALUE
- description | Returns the patient's most recent Pain Vitals from file GMR(120.5.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the patient's most recent Pain Vitals from file GMR(120.5.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  | true |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

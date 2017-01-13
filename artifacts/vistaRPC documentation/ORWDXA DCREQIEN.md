@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA DCREQIEN
- tag | DCREQIEN
+ label | {::nomarkdown}ORWDXA DCREQIEN{:/}
+ tag | {::nomarkdown}DCREQIEN{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | SINGLE VALUE
- description | Return the IEN for Requesting Physician Cancelled reason.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return the IEN for Requesting Physician Cancelled reason.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return IEN for Req Phys Cancelled reason
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

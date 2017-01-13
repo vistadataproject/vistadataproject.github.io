@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP LAB REPORT LISTS
- tag | LABLIST
+ label | {::nomarkdown}ORWRP LAB REPORT LISTS{:/}
+ tag | {::nomarkdown}LABLIST{:/}
  routine | [ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
- return value type | ARRAY
- description | This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call returns a list of lab reports,There are no input parameters fo this rpc.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | report list for labs tab
- Leading comment lines | RPC: ORWRP LAB REPORT LIST
+ Leading comment lines | {::nomarkdown}RPC: ORWRP LAB REPORT LIST{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

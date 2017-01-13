@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA REMINDERS MANUAL
- tag | REM2
+ label | {::nomarkdown}NUPA REMINDERS MANUAL{:/}
+ tag | {::nomarkdown}REM2{:/}
  routine | [NUPABCL1](http://code.osehra.org/dox/Routine_NUPABCL1_source.html)
- return value type | ARRAY
- description | Manual gathering of reminders for a patient.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Manual gathering of reminders for a patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | The patient's DFN. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

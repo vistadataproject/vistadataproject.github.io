@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR ADD ITEM
- tag | EN
+ label | {::nomarkdown}RMPR ADD ITEM{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9AI](http://code.osehra.org/dox/Routine_RMPR9AI_source.html)
- return value type | ARRAY
- description | RPC to send purchasing information to file 666 GUI PURCHASING FILE.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to send purchasing information to file 666 GUI PURCHASING FILE.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG UTIL LSTOFLJB
- tag | LISTOFL
+ label | {::nomarkdown}MAG UTIL LSTOFLJB{:/}
+ tag | {::nomarkdown}LISTOFL{:/}
  routine | [MAGSDOFL](http://code.osehra.org/dox/Routine_MAGSDOFL_source.html)
- return value type | ARRAY
- description | LIST OFFLINE JB PLATTER(S)This Remote Procedure will provide the invoking client a list of allplatter names with Offline Images from OFFLINE IMAGES file (#2006.033).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}LIST OFFLINE JB PLATTER(S)This Remote Procedure will provide the invoking client a list of allplatter names with Offline Images from OFFLINE IMAGES file (#2006.033).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

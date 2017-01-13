@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORPRF GETFLG
- tag | GETFLG
+ label | {::nomarkdown}ORPRF GETFLG{:/}
+ tag | {::nomarkdown}GETFLG{:/}
  routine | [ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return detailed flag info for flag FLAGID
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL PROB COMMENTS
- tag | GETCOMM
+ label | {::nomarkdown}ORQQPL PROB COMMENTS{:/}
+ tag | {::nomarkdown}GETCOMM{:/}
  routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
- return value type | ARRAY
- description | Returns a list of comments associated with a problem IEN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of comments associated with a problem IEN.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return comments for a problem - MULTI-DIVISIONAL
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Problem IEN | LITERAL | 16 | true |  | 
+| {::nomarkdown}Problem IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

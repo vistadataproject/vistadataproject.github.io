@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM EDUCATION SUMMARY
- tag | EDL
+ label | {::nomarkdown}ORQQPXRM EDUCATION SUMMARY{:/}
+ tag | {::nomarkdown}EDL{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Returns list of education topics for a reminder
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of education topics for a reminder{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | DBIA 3079
- Leading comment lines | ORQQPXRM EDUCATION TOPIC
+ Leading comment lines | {::nomarkdown}ORQQPXRM EDUCATION TOPIC{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINICAL REMINDER ID | LITERAL | 16 | true | Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9] | 
+| {::nomarkdown}CLINICAL REMINDER ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

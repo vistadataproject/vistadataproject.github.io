@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR GET REGISTRY INFO
- tag | REGINFO
+ label | {::nomarkdown}ROR GET REGISTRY INFO{:/}
+ tag | {::nomarkdown}REGINFO{:/}
  routine | [RORRP014](http://code.osehra.org/dox/Routine_RORRP014_source.html)
- return value type | ARRAY
- description | The ROR GET REGISTRY INFO remote procedure returns basic information aboutthe registry.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The ROR GET REGISTRY INFO remote procedure returns basic information aboutthe registry.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REGISTRY | LITERAL |  | true | The REGISTRY parameter should contain either a registry IEN or a registry name. | 
+| {::nomarkdown}REGISTRY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The REGISTRY parameter should contain either a registry IEN or a registry name.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

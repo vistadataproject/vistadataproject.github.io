@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB RPC LIST
- tag | APILIST
+ label | {::nomarkdown}XWB RPC LIST{:/}
+ tag | {::nomarkdown}APILIST{:/}
  routine | [XWBFM](http://code.osehra.org/dox/Routine_XWBFM_source.html)
- return value type | ARRAY
- description | Returns a list of remote procedures from the REMOTE PROCEDURE file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of remote procedures from the REMOTE PROCEDURE file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| START | LITERAL |  |  |  | 
+| {::nomarkdown}START{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

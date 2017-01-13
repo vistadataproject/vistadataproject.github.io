@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR CLINIC ENROLLMENT
- tag | EN
+ label | {::nomarkdown}RMPR CLINIC ENROLLMENT{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9CE](http://code.osehra.org/dox/Routine_RMPR9CE_source.html)
- return value type | ARRAY
- description | This procedure supplies the Clinic Enrollment data for TAB 2 of the GUI 2319. Example of RESULTS  RESULTS(0)=CLINICRESULTS(1)=DATE ENROLLEDRESULTS(2)=OPT OR ACRESULTS(3)=STARTS OVER WITH NEXT CLINIC
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This procedure supplies the Clinic Enrollment data for TAB 2 of the GUI 2319. Example of RESULTS  RESULTS(0)=CLINICRESULTS(1)=DATE ENROLLEDRESULTS(2)=OPT OR ACRESULTS(3)=STARTS OVER WITH NEXT CLINIC{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

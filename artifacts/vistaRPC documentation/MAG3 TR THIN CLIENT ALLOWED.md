@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TR THIN CLIENT ALLOWED
- tag | TCALLOW
+ label | {::nomarkdown}MAG3 TR THIN CLIENT ALLOWED{:/}
+ tag | {::nomarkdown}TCALLOW{:/}
  routine | [MAGNTLR3](http://code.osehra.org/dox/Routine_MAGNTLR3_source.html)
- return value type | SINGLE VALUE
- description | Check for thin client settings by User (DUZ)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Check for thin client settings by User (DUZ){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

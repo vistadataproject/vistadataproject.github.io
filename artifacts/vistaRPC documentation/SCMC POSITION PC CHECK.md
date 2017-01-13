@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCMC POSITION PC CHECK
- tag | POSCHK
+ label | {::nomarkdown}SCMC POSITION PC CHECK{:/}
+ tag | {::nomarkdown}POSCHK{:/}
  routine | [SCMCTSK1](http://code.osehra.org/dox/Routine_SCMCTSK1_source.html)
- return value type | SINGLE VALUE
- description | On position setup check if consistent assignment
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}On position setup check if consistent assignment{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TPIEN | LITERAL |  | true | TEAM POSITION ENTRY | 
+| {::nomarkdown}TPIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TEAM POSITION ENTRY{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

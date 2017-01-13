@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN GET ORDER NUMBER
- tag | GETORDER
+ label | {::nomarkdown}ORQQCN GET ORDER NUMBER{:/}
+ tag | {::nomarkdown}GETORDER{:/}
  routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return OERR order number for consult/procedure
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Consult ID | LITERAL | 16 | true |  | 
+| {::nomarkdown}Consult ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

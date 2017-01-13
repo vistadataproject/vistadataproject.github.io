@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCU COLTYP
- tag | COLTYP
+ label | {::nomarkdown}ORRHCU COLTYP{:/}
+ tag | {::nomarkdown}COLTYP{:/}
  routine | [ORRHCU](http://code.osehra.org/dox/Routine_ORRHCU_source.html)
- return value type | ARRAY
- description | Returns the sort types for the list of columns passed in.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the sort types for the list of columns passed in.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SRC | LIST |  | true | List of column names. | 
+| {::nomarkdown}SRC{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}List of column names.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

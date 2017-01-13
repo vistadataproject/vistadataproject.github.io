@@ -9,27 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS33 IVDOSFRM
- tag | IVDOSFRM
+ label | {::nomarkdown}ORWDPS33 IVDOSFRM{:/}
+ tag | {::nomarkdown}IVDOSFRM{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
-
-
-### Method description
-
- property | value 
---- | --- 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORDERIDS | LIST |  | true |  | 
-| DEFAULTS | LITERAL |  | true |  | 
-| ALLIV | LITERAL |  | true |  | 
+| {::nomarkdown}ORDERIDS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DEFAULTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}ALLIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

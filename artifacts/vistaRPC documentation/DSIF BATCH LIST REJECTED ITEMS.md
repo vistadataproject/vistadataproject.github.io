@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF BATCH LIST REJECTED ITEMS
- tag | LSTREJ
+ label | {::nomarkdown}DSIF BATCH LIST REJECTED ITEMS{:/}
+ tag | {::nomarkdown}LSTREJ{:/}
  routine | [DSIFLRJ](http://code.osehra.org/dox/Routine_DSIFLRJ_source.html)
- return value type | GLOBAL ARRAY
- description |  ; Input: Batch # (IEN, if passed in as \nnn;\) ; Output: ;    ; If B9 ;    ; ^TMP($J,\DSIFLRJ\,1)=ien of 162.5 invoice file ; ; If B3 ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ;
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown} ; Input: Batch # (IEN, if passed in as \nnn;\) ; Output: ;    ; If B9 ;    ; ^TMP($J,\DSIFLRJ\,1)=ien of 162.5 invoice file ; ; If B3 ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ;{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FBBAT | LITERAL | 10 | true | Batch IEN or number IEN;NUMBER | 
-| FBTYPE | LITERAL | 2 | true | Batch type (required) | 
-| FROM | LITERAL | 7 | true | Date beginning from | 
-| TODATE | LITERAL | 7 | true | Until date | 
-| FBFROM |  |  |  |  | 
+| {::nomarkdown}FBBAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN or number IEN;NUMBER{:/} | 
+| {::nomarkdown}FBTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch type (required){:/} | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date beginning from{:/} | 
+| {::nomarkdown}TODATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Until date{:/} | 
+| {::nomarkdown}FBFROM{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

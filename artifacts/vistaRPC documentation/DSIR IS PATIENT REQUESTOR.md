@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR IS PATIENT REQUESTOR
- tag | ISREQSTR
+ label | {::nomarkdown}DSIR IS PATIENT REQUESTOR{:/}
+ tag | {::nomarkdown}ISREQSTR{:/}
  routine | [DSIROI3](http://code.osehra.org/dox/Routine_DSIROI3_source.html)
- return value type | SINGLE VALUE
- description |  TEST FOR AN ENTRY IN THE \DPATIENT\ INDEX IN THE REQUESTOR FILE (^DSIR(19620.12))
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown} TEST FOR AN ENTRY IN THE \DPATIENT\ INDEX IN THE REQUESTOR FILE (^DSIR(19620.12)){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | FULLY QUALIFIED POINTER TO ^DPT OR ^DSIR(19520.96 | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FULLY QUALIFIED POINTER TO ^DPT OR ^DSIR(19520.96{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORDEA SIGINFO
- tag | SIGINFO
+ label | {::nomarkdown}ORDEA SIGINFO{:/}
+ tag | {::nomarkdown}SIGINFO{:/}
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
- return value type | WORD PROCESSING
- description | returns the provider/patient info that must be displayed when signing a controlled substance order(s)
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
+ description | {::nomarkdown}returns the provider/patient info that must be displayed when signing a controlled substance order(s){:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | returns the provider/patient info that must be displayed when signing controlled substance orders
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

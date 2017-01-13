@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM REMINDERS AND CATEGORIES
- tag | SEL
+ label | {::nomarkdown}PXRM REMINDERS AND CATEGORIES{:/}
+ tag | {::nomarkdown}SEL{:/}
  routine | [PXRMRPCD](http://code.osehra.org/dox/Routine_PXRMRPCD_source.html)
- return value type | ARRAY
- description | Returns list of reminders and categories.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of reminders and categories.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Selectable reminders and categories
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

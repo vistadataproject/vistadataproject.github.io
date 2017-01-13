@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXR RENEW
- tag | RENEW
+ label | {::nomarkdown}ORWDXR RENEW{:/}
+ tag | {::nomarkdown}RENEW{:/}
  routine | [ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
- return value type | ARRAY
- description | Renew an existing order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Renew an existing order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Renew an order
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

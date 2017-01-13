@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU MED LIST ALL
- tag | LISTALL
+ label | {::nomarkdown}TIU MED LIST ALL{:/}
+ tag | {::nomarkdown}LISTALL{:/}
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
- return value type | ARRAY
- description | Returns a list of patients for selection.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients for selection.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUFROM | LITERAL |  | true | Value to begin patient list. | 
-| TIUDIR | LITERAL |  | true | Boolean value for list direction. | 
+| {::nomarkdown}TIUFROM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Value to begin patient list.{:/} | 
+| {::nomarkdown}TIUDIR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Boolean value for list direction.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

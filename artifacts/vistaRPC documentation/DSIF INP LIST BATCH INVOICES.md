@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP LIST BATCH INVOICES
- tag | LSTINV
+ label | {::nomarkdown}DSIF INP LIST BATCH INVOICES{:/}
+ tag | {::nomarkdown}LSTINV{:/}
  routine | [DSIFEP](http://code.osehra.org/dox/Routine_DSIFEP_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return the IEN's to the FEE BASIS INVOICE File #162.5.  These a derived from the \AC\ index for a given Batch IEN.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return the IEN's to the FEE BASIS INVOICE File #162.5.  These a derived from the \AC\ index for a given Batch IEN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 99 | true | Internal Entry Number of FEE BASIS BATCH File #161.7 | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number of FEE BASIS BATCH File #161.7{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

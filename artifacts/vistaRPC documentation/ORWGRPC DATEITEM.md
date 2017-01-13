@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWGRPC DATEITEM
- tag | DATEITEM
+ label | {::nomarkdown}ORWGRPC DATEITEM{:/}
+ tag | {::nomarkdown}DATEITEM{:/}
  routine | [ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC - get patient items in date range for a type
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

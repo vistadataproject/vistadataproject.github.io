@@ -9,19 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM MST UPDATE
- tag | MST
+ label | {::nomarkdown}ORQQPXRM MST UPDATE{:/}
+ tag | {::nomarkdown}MST{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | SINGLE VALUE
- description | Saves MST data
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves MST data{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

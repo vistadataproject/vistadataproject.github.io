@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV REJECT BUFFER ENTRY
- tag | REJECT
+ label | {::nomarkdown}DSIV REJECT BUFFER ENTRY{:/}
+ tag | {::nomarkdown}REJECT{:/}
  routine | [DSIVICR](http://code.osehra.org/dox/Routine_DSIVICR_source.html)
- return value type | SINGLE VALUE
- description | Processes INSURANCE BUFFER file entry to STATUS=REJECT.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Processes INSURANCE BUFFER file entry to STATUS=REJECT.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBBUFDA | LITERAL | 16 | true | INSURANCE BUFFER file (#355.33) internal entry number to beprocessed (required). | 
-| IVMREPTR | LITERAL | 4 | true | Internal entry number in IVM REASONS FOR NOT UPLOADING INSURANCEfile (#301.91) if applicable. | 
+| {::nomarkdown}IBBUFDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INSURANCE BUFFER file (#355.33) internal entry number to beprocessed (required).{:/} | 
+| {::nomarkdown}IVMREPTR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number in IVM REASONS FOR NOT UPLOADING INSURANCEfile (#301.91) if applicable.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

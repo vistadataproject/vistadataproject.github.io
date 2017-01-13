@@ -9,30 +9,30 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL ADD SAVE
- tag | ADDSAVE
+ label | {::nomarkdown}ORQQPL ADD SAVE{:/}
+ tag | {::nomarkdown}ADDSAVE{:/}
  routine | [ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
- return value type | SINGLE VALUE
- description | Add new problem record
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Add new problem record{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | SAVE NEW RECORD
- Leading comment lines | RETURN - Problem IFN if success, 0 otherwise,ADDARRAY - array used for indirect sets of  GMPFLDS()
+ Leading comment lines | {::nomarkdown}RETURN - Problem IFN if success, 0 otherwise<br/>ADDARRAY - array used for indirect sets of  GMPFLDS(){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMPDFN | LITERAL |  |  |  | 
-| GMPROV |  |  |  |  | 
-| GMPVAMC | LITERAL |  |  |  | 
-| ADDARRAY | LIST |  |  | ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET | 
+| {::nomarkdown}GMPDFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}GMPROV{:/} |  |  |  |  | 
+| {::nomarkdown}GMPVAMC{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}ADDARRAY{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ARRAY OF GMPFLD()=VALUE STRINGS FOR INDIRECT SET{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF SEARCH
- tag | SEARCH
+ label | {::nomarkdown}DSIF SEARCH{:/}
+ tag | {::nomarkdown}SEARCH{:/}
  routine | [DSIFENA4](http://code.osehra.org/dox/Routine_DSIFENA4_source.html)
- return value type | ARRAY
- description | Used to search Fee Basis authorizations based on from and to dates.on error returns-1^error message
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Used to search Fee Basis authorizations based on from and to dates.on error returns-1^error message{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROMDT | LITERAL | 7 | true | Pass in FM date of Authorizations to start search  | 
-| TODATE | LITERAL | 7 | true | Pass in FM date of Authorizations to end search | 
+| {::nomarkdown}FROMDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in FM date of Authorizations to start search {:/} | 
+| {::nomarkdown}TODATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in FM date of Authorizations to end search{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

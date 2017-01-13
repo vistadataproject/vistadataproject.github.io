@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPT ATEAMS
- tag | ATEAMS
+ label | {::nomarkdown}ORWTPT ATEAMS{:/}
+ tag | {::nomarkdown}ATEAMS{:/}
  routine | [ORWTPT](http://code.osehra.org/dox/Routine_ORWTPT_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC
- Leading comment lines | all teams available to subscribe to
+ Leading comment lines | {::nomarkdown}all teams available to subscribe to{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

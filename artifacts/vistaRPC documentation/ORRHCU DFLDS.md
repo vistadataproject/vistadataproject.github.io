@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCU DFLDS
- tag | DFLDS
+ label | {::nomarkdown}ORRHCU DFLDS{:/}
+ tag | {::nomarkdown}DFLDS{:/}
  routine | [ORRHCU](http://code.osehra.org/dox/Routine_ORRHCU_source.html)
- return value type | ARRAY
- description | Returns a list of name-value pairs that represent the display fields thatare available based on the search items selected.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of name-value pairs that represent the display fields thatare available based on the search items selected.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TYP | LITERAL |  | true | Identifies the types of display fields to return.O=Orders, D=Documents, P=Patient, and V=Visits | 
+| {::nomarkdown}TYP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the types of display fields to return.O=Orders, D=Documents, P=Patient, and V=Visits{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

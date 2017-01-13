@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE GAFURL
- tag | GAFURL
+ label | {::nomarkdown}ORWPCE GAFURL{:/}
+ tag | {::nomarkdown}GAFURL{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
- description | Returns the GAF Scale Rating Form URL
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the GAF Scale Rating Form URL{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns the MH GAF Web Page URL
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

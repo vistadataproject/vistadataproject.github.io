@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB SET DIVISION
- tag | DUZ2
+ label | {::nomarkdown}DVBAB SET DIVISION{:/}
+ tag | {::nomarkdown}DUZ2{:/}
  routine | [DVBAB84](http://code.osehra.org/dox/Routine_DVBAB84_source.html)
- return value type | SINGLE VALUE
- description | Set the Division
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Set the Division{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NUM | LITERAL |  | true | The Station Number | 
+| {::nomarkdown}NUM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The Station Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS INPT
- tag | INPT
+ label | {::nomarkdown}ORWDPS INPT{:/}
+ tag | {::nomarkdown}INPT{:/}
  routine | [ORWDPS](http://code.osehra.org/dox/Routine_ORWDPS_source.html)
- return value type | SINGLE VALUE
- description | Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

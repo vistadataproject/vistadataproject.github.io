@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 AUTH
- tag | AUTH
+ label | {::nomarkdown}ORWDPS32 AUTH{:/}
+ tag | {::nomarkdown}AUTH{:/}
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
- return value type | SINGLE VALUE
- description | Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text {:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | For inpatient meds, check restrictions
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INVOICE DISPLAY
- tag | INVDISP
+ label | {::nomarkdown}DSIF INVOICE DISPLAY{:/}
+ tag | {::nomarkdown}INVDISP{:/}
  routine | [DSIFINP4](http://code.osehra.org/dox/Routine_DSIFINP4_source.html)
- return value type | GLOBAL ARRAY
- description | Enter Batch or Invoice number
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Enter Batch or Invoice number{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATCH | LITERAL | 20 | true | Batch IEN | 
-| INVOICE | LITERAL | 20 | true |  | 
+| {::nomarkdown}BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN{:/} | 
+| {::nomarkdown}INVOICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

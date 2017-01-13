@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB RESULTS
- tag | RESULTS
+ label | {::nomarkdown}ORWDXVB RESULTS{:/}
+ tag | {::nomarkdown}RESULTS{:/}
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
- return value type | GLOBAL ARRAY
- description | Return patient's Lab Test Results associated with Blood Bank orderrequest.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Return patient's Lab Test Results associated with Blood Bank orderrequest.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get test results
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

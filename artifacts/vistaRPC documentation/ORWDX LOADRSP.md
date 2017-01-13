@@ -9,28 +9,28 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX LOADRSP
- tag | LOADRSP
+ label | {::nomarkdown}ORWDX LOADRSP{:/}
+ tag | {::nomarkdown}LOADRSP{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Load responses from 101.41 or 100
- Leading comment lines | RSPID:  C123456;1-3243 = cached copy,   134-3234 = cached quick,X123456;1      = change order,  134      = quick dialog
+ Leading comment lines | {::nomarkdown}RSPID:  C123456;1-3243 = cached copy,   134-3234 = cached quick<br/>X123456;1      = change order,  134      = quick dialog{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RSPID | LITERAL |  |  |  | 
-| TRANS | LITERAL |  |  |  | 
+| {::nomarkdown}RSPID{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}TRANS{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

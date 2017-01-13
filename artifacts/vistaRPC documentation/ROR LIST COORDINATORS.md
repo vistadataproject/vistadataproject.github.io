@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR LIST COORDINATORS
- tag | RCLIST
+ label | {::nomarkdown}ROR LIST COORDINATORS{:/}
+ tag | {::nomarkdown}RCLIST{:/}
  routine | [RORRP023](http://code.osehra.org/dox/Routine_RORRP023_source.html)
- return value type | GLOBAL ARRAY
- description | The ROR LIST COORDINATORS remote procedure returns a list of registry coordinators. The list is retrieved from the COORDINATOR multiple (14) ofthe ROR REGISTRY PARAMETERS file (#798.1).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}The ROR LIST COORDINATORS remote procedure returns a list of registry coordinators. The list is retrieved from the COORDINATOR multiple (14) ofthe ROR REGISTRY PARAMETERS file (#798.1).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REGIEN | LITERAL |  | true | The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1). | 
+| {::nomarkdown}REGIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,24 +9,24 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN ICD9 CODE SEARCH
- tag | COL
+ label | {::nomarkdown}SPN ICD9 CODE SEARCH{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPC9](http://code.osehra.org/dox/Routine_SPNJRPC9_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a patient's ICD9 Code history for a list of given patients (based on the ICN), date range, and a list of ICD codes desired to be searched.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a patient's ICD9 Code history for a list of given patients (based on the ICN), date range, and a list of ICD codes desired to be searched.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLST | LIST |  |  | Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...) | 
-| FDATE | LITERAL |  |  | The admission starting date | 
-| TDATE | LITERAL |  |  | The Admission ending date | 
-| PATTYP | LITERAL |  |  | (1) Patients in SCI Registry only (2) All Patients | 
-| SPNANS | LITERAL |  |  | (1) Range of Codes (2) Individual codes | 
-| CODES | LIST |  |  | The list or range of ICD codes | 
+| {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...){:/} | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The admission starting date{:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The Admission ending date{:/} | 
+| {::nomarkdown}PATTYP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(1) Patients in SCI Registry only (2) All Patients{:/} | 
+| {::nomarkdown}SPNANS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(1) Range of Codes (2) Individual codes{:/} | 
+| {::nomarkdown}CODES{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}The list or range of ICD codes{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

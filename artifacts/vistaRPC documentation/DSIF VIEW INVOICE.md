@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF VIEW INVOICE
- tag | INDISP
+ label | {::nomarkdown}DSIF VIEW INVOICE{:/}
+ tag | {::nomarkdown}INDISP{:/}
  routine | [DSIFPAY7](http://code.osehra.org/dox/Routine_DSIFPAY7_source.html)
- return value type | GLOBAL ARRAY
- description | An RPC used to display all fields of file 162.5
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}An RPC used to display all fields of file 162.5{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 16 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

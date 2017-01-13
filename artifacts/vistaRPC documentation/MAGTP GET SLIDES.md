@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP GET SLIDES
- tag | GETSD
+ label | {::nomarkdown}MAGTP GET SLIDES{:/}
+ tag | {::nomarkdown}GETSD{:/}
  routine | [MAGTP004](http://code.osehra.org/dox/Routine_MAGTP004_source.html)
- return value type | ARRAY
- description | Get Specimen, Smear Prep/Block and Stain/Procedure/Slide infofor a specified case
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get Specimen, Smear Prep/Block and Stain/Procedure/Slide infofor a specified case{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| AP Section | LITERAL | 2 | true | AP Section | 
-| Year | LITERAL | 4 | true | Year | 
-| Access Number | LITERAL | 5 | true | Access Number | 
+| {::nomarkdown}AP Section{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}AP Section{:/} | 
+| {::nomarkdown}Year{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Year{:/} | 
+| {::nomarkdown}Access Number{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Access Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

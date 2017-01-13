@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF EXT PDAT REMOTE
- tag | PATINFO
+ label | {::nomarkdown}MPIF EXT PDAT REMOTE{:/}
+ tag | {::nomarkdown}PATINFO{:/}
  routine | [MPIFEXT2](http://code.osehra.org/dox/Routine_MPIFEXT2_source.html)
- return value type | ARRAY
- description | Extended PDAT call remote.  ICN or SSN can be passed.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Extended PDAT call remote.  ICN or SSN can be passed.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 16 | true | ICN for patient requesting data on. | 
-| SSN | LITERAL | 9 | true | SSN for patient data to be returned on. | 
-| RPC | LITERAL | 1 | true |  | 
-| EXIST | LITERAL | 1 | true | If there is no value or 0 is passed, then a new request for data should be made.  If there is a 1 passed, then if there is an existing request in the ^XTMP(\MPIF EXT PDAT\,ICN/SSN,SITE) global, then that request should be used to return the data -- request had already been made. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICN for patient requesting data on.{:/} | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}SSN for patient data to be returned on.{:/} | 
+| {::nomarkdown}RPC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}EXIST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If there is no value or 0 is passed, then a new request for data should be made.  If there is a 1 passed, then if there is an existing request in the ^XTMP(\MPIF EXT PDAT\,ICN/SSN,SITE) global, then that request should be used to return the data -- request had already been made.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

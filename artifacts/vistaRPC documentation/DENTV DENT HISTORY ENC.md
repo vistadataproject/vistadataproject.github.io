@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV DENT HISTORY ENC
- tag | ENC
+ label | {::nomarkdown}DENTV DENT HISTORY ENC{:/}
+ tag | {::nomarkdown}ENC{:/}
  routine | [DENTVRH](http://code.osehra.org/dox/Routine_DENTVRH_source.html)
- return value type | ARRAY
- description | This will return the dental encounter data for a given record in file228.1
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This will return the dental encounter data for a given record in file228.1{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 9 | true | This is the internal entry number for file 228.1 | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number for file 228.1{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG JUKE BOX PATH
- tag | JB
+ label | {::nomarkdown}MAGG JUKE BOX PATH{:/}
+ tag | {::nomarkdown}JB{:/}
  routine | [MAGGUJB](http://code.osehra.org/dox/Routine_MAGGUJB_source.html)
- return value type | SINGLE VALUE
- description | Returns the Juke Box path to an image.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the Juke Box path to an image.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL | 30 | true | MAGIEN is IEN number in IMAGE file (#2005) or IMAGE AUDIT file (#2005.1) | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}MAGIEN is IEN number in IMAGE file (#2005) or IMAGE AUDIT file (#2005.1){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

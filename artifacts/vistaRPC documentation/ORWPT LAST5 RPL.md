@@ -9,19 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT LAST5 RPL
- tag | LAST5RPL
+ label | {::nomarkdown}ORWPT LAST5 RPL{:/}
+ tag | {::nomarkdown}LAST5RPL{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns a list of patients matching the string of Last Name Initial_Last 4 SSN (Initial/Last 4 look-up based on Restricted Patient List).
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients matching the string of Last Name Initial_Last 4 SSN (Initial/Last 4 look-up based on Restricted Patient List).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

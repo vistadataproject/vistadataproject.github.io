@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 VALQTY
- tag | VALQTY
+ label | {::nomarkdown}ORWDPS32 VALQTY{:/}
+ tag | {::nomarkdown}VALQTY{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | SINGLE VALUE
- description | Validate a medication quantity and return a 1 if it is valid, otherwisereturn 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Validate a medication quantity and return a 1 if it is valid, otherwisereturn 0.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | validate a quantity, return 1 if valid, 0 if not
- Leading comment lines | to be compatible with LM, make sure X is integer from 1 to 240,this is based on the input transform from 52,7
+ Leading comment lines | {::nomarkdown}to be compatible with LM, make sure X is integer from 1 to 240<br/>this is based on the input transform from 52,7{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

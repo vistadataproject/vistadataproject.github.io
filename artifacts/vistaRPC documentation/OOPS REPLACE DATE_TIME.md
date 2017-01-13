@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS REPLACE DATE_TIME
- tag | DTFC
+ label | {::nomarkdown}OOPS REPLACE DATE_TIME{:/}
+ tag | {::nomarkdown}DTFC{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | SINGLE VALUE
- description | This call assures the date and/or time is a valid and reformats it.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This call assures the date and/or time is a valid and reformats it.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATE | LITERAL |  |  | This is the date to be validated and reformatted. | 
-| FLAG | LITERAL |  |  | This is a control flag for assuring a valid date. | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the date to be validated and reformatted.{:/} | 
+| {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is a control flag for assuring a valid date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

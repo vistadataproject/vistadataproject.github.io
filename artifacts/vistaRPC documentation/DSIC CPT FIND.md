@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC CPT FIND
- tag | FIND
+ label | {::nomarkdown}DSIC CPT FIND{:/}
+ tag | {::nomarkdown}FIND{:/}
  routine | [DSICCPT](http://code.osehra.org/dox/Routine_DSICCPT_source.html)
- return value type | GLOBAL ARRAY
- description | For a lookup value, this will return a list of CPT codes matching that lookup value.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}For a lookup value, this will return a list of CPT codes matching that lookup value.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VAL | LITERAL | 50 | true | This is the lookup value for getting a list of CPT codes | 
-| DATE | LITERAL | 14 | true | This date is optional.  Default to TODAY.  Only CPT codes that were active as of this date will be included in the return list. | 
+| {::nomarkdown}VAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the lookup value for getting a list of CPT codes{:/} | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This date is optional.  Default to TODAY.  Only CPT codes that were active as of this date will be included in the return list.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

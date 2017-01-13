@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU16 USERINFO
- tag | USERINFO
+ label | {::nomarkdown}ORWU16 USERINFO{:/}
+ tag | {::nomarkdown}USERINFO{:/}
  routine | [ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
- return value type | SINGLE VALUE
- description | Returns information about the current user in the format:     DUZ^NAME^USRCLS^CANSIGN^ISPROVIDER^ORDERROLE^NOORDER^DTIME^CD
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns information about the current user in the format:     DUZ^NAME^USRCLS^CANSIGN^ISPROVIDER^ORDERROLE^NOORDER^DTIME^CD{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user,I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****
+ Leading comment lines | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user<br/>I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

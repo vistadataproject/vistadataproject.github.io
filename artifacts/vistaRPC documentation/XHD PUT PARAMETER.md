@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XHD PUT PARAMETER
- tag | PUT
+ label | {::nomarkdown}XHD PUT PARAMETER{:/}
+ tag | {::nomarkdown}PUT{:/}
  routine | [XHDPARAM](http://code.osehra.org/dox/Routine_XHDPARAM_source.html)
- return value type | SINGLE VALUE
- description | Call PUT^XPAR or PUTWP^XPAR to file a given parameter.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Call PUT^XPAR or PUTWP^XPAR to file a given parameter.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| KEY | LITERAL |  | true | This is the key for the parameter. | 
-| VALUE | LIST |  | true | This is the value of the parameter. | 
+| {::nomarkdown}KEY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the key for the parameter.{:/} | 
+| {::nomarkdown}VALUE{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the value of the parameter.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

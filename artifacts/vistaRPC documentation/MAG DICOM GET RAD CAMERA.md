@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET RAD CAMERA
- tag | CAMERA
+ label | {::nomarkdown}MAG DICOM GET RAD CAMERA{:/}
+ tag | {::nomarkdown}CAMERA{:/}
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
- return value type | ARRAY
- description | Used to find an entry in file CAMERA/EQUIP/RM (#78.6)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Used to find an entry in file CAMERA/EQUIP/RM (#78.6){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CAMERA | LITERAL | 30 | true | The name of the entry expected to be found in file CAMERA/EQUIP/RM (#78.6.) | 
+| {::nomarkdown}CAMERA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The name of the entry expected to be found in file CAMERA/EQUIP/RM (#78.6.){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

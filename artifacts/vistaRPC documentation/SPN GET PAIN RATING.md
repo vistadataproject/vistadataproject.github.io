@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET PAIN RATING
- tag | COL
+ label | {::nomarkdown}SPN GET PAIN RATING{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPCP](http://code.osehra.org/dox/Routine_SPNJRPCP_source.html)
- return value type | ARRAY
- description | Returns most recent Vitals Pain Rating (based on the ICN).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns most recent Vitals Pain Rating (based on the ICN).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  | Individual patient's ICN. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Individual patient's ICN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

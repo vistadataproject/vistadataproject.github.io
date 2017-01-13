@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORCHECK GETXTRA
- tag | GETXTRA
+ label | {::nomarkdown}ORCHECK GETXTRA{:/}
+ tag | {::nomarkdown}GETXTRA{:/}
  routine | [ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | get extra text for an order check
- Leading comment lines | ^TMP($J,"ORK XTRA TXT") stores the text of order checks that are longer than a single line (reminder order checks)
+ Leading comment lines | {::nomarkdown}^TMP($J,"ORK XTRA TXT") stores the text of order checks that are longer than a single line (reminder order checks){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCR SAVDEF
- tag | SAVDEF
+ label | {::nomarkdown}ORRHCR SAVDEF{:/}
+ tag | {::nomarkdown}SAVDEF{:/}
  routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
- return value type | SINGLE VALUE
- description | Accepts a set of name-value pairs that describe a newly created customreport.  This creates a new entry in CPRS QUERY DEFINITION.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Accepts a set of name-value pairs that describe a newly created customreport.  This creates a new entry in CPRS QUERY DEFINITION.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DEF | LIST |  | true | This is the list of name-value pairs that represent a report definition. | 
+| {::nomarkdown}DEF{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of name-value pairs that represent a report definition.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

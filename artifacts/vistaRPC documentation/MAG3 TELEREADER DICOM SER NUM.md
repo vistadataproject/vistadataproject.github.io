@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TELEREADER DICOM SER NUM
- tag | GETSRNUM
+ label | {::nomarkdown}MAG3 TELEREADER DICOM SER NUM{:/}
+ tag | {::nomarkdown}GETSRNUM{:/}
  routine | [MAGNGMR](http://code.osehra.org/dox/Routine_MAGNGMR_source.html)
- return value type | SINGLE VALUE
- description | Generates DICOM Series Number
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Generates DICOM Series Number{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

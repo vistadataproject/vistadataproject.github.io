@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD LOCK
- tag | LOCK
+ label | {::nomarkdown}TIU FIELD LOCK{:/}
+ tag | {::nomarkdown}LOCK{:/}
  routine | [TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
- return value type | SINGLE VALUE
- description | Locks a template field record for editing
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Locks a template field record for editing{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Lock Template Field
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA | LITERAL |  | true | IEN of Template Field. | 
+| {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of Template Field.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

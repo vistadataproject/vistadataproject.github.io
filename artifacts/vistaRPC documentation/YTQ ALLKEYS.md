@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ ALLKEYS
- tag | ALLKEYS
+ label | {::nomarkdown}YTQ ALLKEYS{:/}
+ tag | {::nomarkdown}ALLKEYS{:/}
  routine | [YTQPXRM5](http://code.osehra.org/dox/Routine_YTQPXRM5_source.html)
- return value type | ARRAY
- description | Returns all security keys for a specified user. input IEN as internal of file 200 [optional/DUZ]  
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all security keys for a specified user. input IEN as internal of file 200 [optional/DUZ]  {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

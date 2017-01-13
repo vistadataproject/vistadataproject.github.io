@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRCQLPT PTDFN
- tag | PTDFN
+ label | {::nomarkdown}ORRCQLPT PTDFN{:/}
+ tag | {::nomarkdown}PTDFN{:/}
  routine | [ORRCQLPT](http://code.osehra.org/dox/Routine_ORRCQLPT_source.html)
- return value type | SINGLE VALUE
- description | RETURNS THE DFN GIVEN A REPORT LINE IDENTIFIER
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RETURNS THE DFN GIVEN A REPORT LINE IDENTIFIER{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OID | LITERAL |  | true | QUERY REPORT LINE IDENTIFIER | 
+| {::nomarkdown}OID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}QUERY REPORT LINE IDENTIFIER{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

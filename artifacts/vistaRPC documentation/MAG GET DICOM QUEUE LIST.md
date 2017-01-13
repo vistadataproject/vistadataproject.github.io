@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG GET DICOM QUEUE LIST
- tag | GETDCLST
+ label | {::nomarkdown}MAG GET DICOM QUEUE LIST{:/}
+ tag | {::nomarkdown}GETDCLST{:/}
  routine | [MAGROI01](http://code.osehra.org/dox/Routine_MAGROI01_source.html)
- return value type | ARRAY
- description | GET LIST OF TRANSMIT DESTINATIONS TO QUEUE DICOM IMAGES
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GET LIST OF TRANSMIT DESTINATIONS TO QUEUE DICOM IMAGES{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

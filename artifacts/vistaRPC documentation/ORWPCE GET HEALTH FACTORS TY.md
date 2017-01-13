@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE GET HEALTH FACTORS TY
- tag | HFTYPE
+ label | {::nomarkdown}ORWPCE GET HEALTH FACTORS TY{:/}
+ tag | {::nomarkdown}HFTYPE{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | ARRAY
- description | Returns a list of active health factor types.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of active health factor types.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | get the list of active  health factors
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

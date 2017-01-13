@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA CAREPLAN PROBS
- tag | PICP
+ label | {::nomarkdown}NUPA CAREPLAN PROBS{:/}
+ tag | {::nomarkdown}PICP{:/}
  routine | [NUPABCL1](http://code.osehra.org/dox/Routine_NUPABCL1_source.html)
- return value type | GLOBAL ARRAY
- description | Provides a list of the problems and interventions for a patient's careplan for the current admission.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Provides a list of the problems and interventions for a patient's careplan for the current admission.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DA  | LITERAL |  | true | IEN of the Care Plan from file 1927.4. | 
+| {::nomarkdown}DA {:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the Care Plan from file 1927.4.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

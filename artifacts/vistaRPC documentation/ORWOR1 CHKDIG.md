@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR1 CHKDIG
- tag | CHKDIG
+ label | {::nomarkdown}ORWOR1 CHKDIG{:/}
+ tag | {::nomarkdown}CHKDIG{:/}
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
- return value type | SINGLE VALUE
- description | Returns true if an order requires a digital signature.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns true if an order requires a digital signature.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Check if Digital Signature is required
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAMSET GETCLINS
- tag | GETCLINS
+ label | {::nomarkdown}ORAMSET GETCLINS{:/}
+ tag | {::nomarkdown}GETCLINS{:/}
  routine | [ORAMSET](http://code.osehra.org/dox/Routine_ORAMSET_source.html)
- return value type | ARRAY
- description | This RPC fetches the list of Clinic Names from the configuration of the Anticoagulation Management Application.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC fetches the list of Clinic Names from the configuration of the Anticoagulation Management Application.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

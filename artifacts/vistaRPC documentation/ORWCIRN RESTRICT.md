@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCIRN RESTRICT
- tag | RESTRICT
+ label | {::nomarkdown}ORWCIRN RESTRICT{:/}
+ tag | {::nomarkdown}RESTRICT{:/}
  routine | [ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
- return value type | ARRAY
- description | This RPC checks for sensitive patients on a remote system.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC checks for sensitive patients on a remote system.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATID | LITERAL |  | true | PATID = DFN;ICN | 
+| {::nomarkdown}PATID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PATID = DFN;ICN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

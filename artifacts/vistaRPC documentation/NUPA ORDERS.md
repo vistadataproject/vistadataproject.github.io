@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA ORDERS
- tag | APO
+ label | {::nomarkdown}NUPA ORDERS{:/}
+ tag | {::nomarkdown}APO{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | GLOBAL ARRAY
- description | Provides a list of Active/pending orders for the patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Provides a list of Active/pending orders for the patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | The patient's DFN. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

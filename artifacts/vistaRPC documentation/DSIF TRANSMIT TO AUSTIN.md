@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF TRANSMIT TO AUSTIN
- tag | TRANSMIT
+ label | {::nomarkdown}DSIF TRANSMIT TO AUSTIN{:/}
+ tag | {::nomarkdown}TRANSMIT{:/}
  routine | [DSIFPAY5](http://code.osehra.org/dox/Routine_DSIFPAY5_source.html)
- return value type | GLOBAL ARRAY
- description | Triggers batches to be transmitted to Austin.  Same as VistA menu: FBAA QUEUE DATA FOR TRANS
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Triggers batches to be transmitted to Austin.  Same as VistA menu: FBAA QUEUE DATA FOR TRANS{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

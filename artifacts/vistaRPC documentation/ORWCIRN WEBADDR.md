@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCIRN WEBADDR
- tag | WEBADDR
+ label | {::nomarkdown}ORWCIRN WEBADDR{:/}
+ tag | {::nomarkdown}WEBADDR{:/}
  routine | [ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
- return value type | SINGLE VALUE
- description | Get VistaWeb Web Address.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Get VistaWeb Web Address.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get VistaWeb Address
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

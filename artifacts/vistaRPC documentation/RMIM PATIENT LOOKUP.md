@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMIM PATIENT LOOKUP
- tag | PL
+ label | {::nomarkdown}RMIM PATIENT LOOKUP{:/}
+ tag | {::nomarkdown}PL{:/}
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
- return value type | ARRAY
- description | Input parameter is any string that a user would normally enter to look up apatient.Output is an array of DFN^PATIENT NAME^SSN^DOB.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Input parameter is any string that a user would normally enter to look up apatient.Output is an array of DFN^PATIENT NAME^SSN^DOB.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

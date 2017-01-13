@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET ARTIFACT W KL
- tag | GAKLT
+ label | {::nomarkdown}MAGVA GET ARTIFACT W KL{:/}
+ tag | {::nomarkdown}GAKLT{:/}
  routine | [MAGVAG02](http://code.osehra.org/dox/Routine_MAGVAG02_source.html)
- return value type | ARRAY
- description |  Get artifact values with key list from ARTIFACT file (#2006.916) & ARTIFACT KEYLIST file (#2006.913) by artifact token
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} Get artifact values with key list from ARTIFACT file (#2006.916) & ARTIFACT KEYLIST file (#2006.913) by artifact token{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TOKEN | LITERAL |  | true | TOKEN = Artifact token | 
+| {::nomarkdown}TOKEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TOKEN = Artifact token{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

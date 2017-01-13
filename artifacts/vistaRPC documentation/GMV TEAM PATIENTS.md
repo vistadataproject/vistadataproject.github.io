@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV TEAM PATIENTS
- tag | TEAMPT
+ label | {::nomarkdown}GMV TEAM PATIENTS{:/}
+ tag | {::nomarkdown}TEAMPT{:/}
  routine | [GMVUTL3](http://code.osehra.org/dox/Routine_GMVUTL3_source.html)
- return value type | ARRAY
- description | This procedure retrieves patients assigned to a given team.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This procedure retrieves patients assigned to a given team.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMVTEAM | LITERAL | 30 | true | GMVTEAM is the internal entry number of the selected team (File 100.21). | 
+| {::nomarkdown}GMVTEAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMVTEAM is the internal entry number of the selected team (File 100.21).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

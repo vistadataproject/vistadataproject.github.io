@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE CPTREQD
- tag | CPTREQD
+ label | {::nomarkdown}ORWPCE CPTREQD{:/}
+ tag | {::nomarkdown}CPTREQD{:/}
  routine | [ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
- return value type | SINGLE VALUE
- description | Returns 1 if TIU DOCUMENT file entry needs a CPT code.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns 1 if TIU DOCUMENT file entry needs a CPT code.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return 1 in VAL if note still needs a CPT code
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

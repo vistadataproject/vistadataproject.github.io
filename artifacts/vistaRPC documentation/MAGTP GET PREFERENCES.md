@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP GET PREFERENCES
- tag | GETUPREF
+ label | {::nomarkdown}MAGTP GET PREFERENCES{:/}
+ tag | {::nomarkdown}GETUPREF{:/}
  routine | [MAGTP011](http://code.osehra.org/dox/Routine_MAGTP011_source.html)
- return value type | ARRAY
- description | Get the user's setting/configuration preferences in XML format from the configuration file (#2006.13)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get the user's setting/configuration preferences in XML format from the configuration file (#2006.13){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENT | LITERAL | 30 | true | DUZ^LABELDUZ of user whose preferences are to be retrievedLABEL of preference sectionIf DUZ is null, default to current DUZ | 
+| {::nomarkdown}ENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DUZ^LABELDUZ of user whose preferences are to be retrievedLABEL of preference sectionIf DUZ is null, default to current DUZ{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

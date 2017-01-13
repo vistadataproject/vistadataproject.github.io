@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU DIV AND CLASS INFO
- tag | USERINFO
+ label | {::nomarkdown}TIU DIV AND CLASS INFO{:/}
+ tag | {::nomarkdown}USERINFO{:/}
  routine | [TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
- return value type | ARRAY
- description | Returns a list of Divisions and User Classes for a specific User.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of Divisions and User Classes for a specific User.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns List of User Divisions and ASU Classes
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER |  |  |  |  | 
+| {::nomarkdown}USER{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

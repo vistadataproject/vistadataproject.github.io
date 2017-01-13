@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 ALLROUTE
- tag | ALLROUTE
+ label | {::nomarkdown}ORWDPS32 ALLROUTE{:/}
+ tag | {::nomarkdown}ALLROUTE{:/}
  routine | [ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
- return value type | ARRAY
- description | Returns a list of all available medication routes.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all available medication routes.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | returns a list of all available med routes
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

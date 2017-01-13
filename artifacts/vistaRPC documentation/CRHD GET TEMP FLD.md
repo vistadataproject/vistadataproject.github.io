@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD GET TEMP FLD
- tag | GTEMPTXT
+ label | {::nomarkdown}CRHD GET TEMP FLD{:/}
+ tag | {::nomarkdown}GTEMPTXT{:/}
  routine | [CRHD3](http://code.osehra.org/dox/Routine_CRHD3_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FLDNAME | LITERAL |  |  |  | 
-| USER | LITERAL |  |  |  | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}FLDNAME{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

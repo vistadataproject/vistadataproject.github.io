@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD ERROR LOG LIST
- tag | ERRLIST
+ label | {::nomarkdown}KMPD ERROR LOG LIST{:/}
+ tag | {::nomarkdown}ERRLIST{:/}
  routine | [KMPDU3](http://code.osehra.org/dox/Routine_KMPDU3_source.html)
- return value type | GLOBAL ARRAY
- description | Return a list of errors for a certain date from file #3.075 (ERROR LOG).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Return a list of errors for a certain date from file #3.075 (ERROR LOG).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAM1 | LITERAL | 60 | true | Internal entry for file #3.075 (ERROR LOG).  This value will be $P($H,\,\). | 
-| SCREEN | LITERAL | 254 | true | Screen for ERROR TYPE. | 
-| DATAGLOBAL | LITERAL | 60 | true | Return global for data (^TMP($J). | 
+| {::nomarkdown}PARAM1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry for file #3.075 (ERROR LOG).  This value will be $P($H,\,\).{:/} | 
+| {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}254{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Screen for ERROR TYPE.{:/} | 
+| {::nomarkdown}DATAGLOBAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Return global for data (^TMP($J).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

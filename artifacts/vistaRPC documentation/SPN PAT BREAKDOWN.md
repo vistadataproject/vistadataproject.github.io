@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN PAT BREAKDOWN
- tag | COL
+ label | {::nomarkdown}SPN PAT BREAKDOWN{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPC5](http://code.osehra.org/dox/Routine_SPNJRPC5_source.html)
- return value type | GLOBAL ARRAY
- description | Returns breakdown of patient statistics for a list of given patients (based on the ICN) based on a date range, if provided.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns breakdown of patient statistics for a list of given patients (based on the ICN) based on a date range, if provided.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLIST | LIST |  |  | Patient's ICN in string format (ICN^ICN^ICN^ICN)  | 
-| FDATE | LITERAL |  |  | (Optional) Date to start search from.   | 
-| TDATE | LITERAL |  |  | (Optional) Date to end search at.   | 
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patient's ICN in string format (ICN^ICN^ICN^ICN) {:/} | 
+| {::nomarkdown}FDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(Optional) Date to start search from.  {:/} | 
+| {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(Optional) Date to end search at.  {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

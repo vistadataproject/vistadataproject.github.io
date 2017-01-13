@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD GET IMAGING
- tag | IMAGING
+ label | {::nomarkdown}CRHD GET IMAGING{:/}
+ tag | {::nomarkdown}IMAGING{:/}
  routine | [CRHDUT](http://code.osehra.org/dox/Routine_CRHDUT_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

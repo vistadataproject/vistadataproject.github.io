@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTIU WINPRINT NOTE
- tag | PRINTW
+ label | {::nomarkdown}ORWTIU WINPRINT NOTE{:/}
+ tag | {::nomarkdown}PRINTW{:/}
  routine | [ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a formatted global of a TIU document for output to a Windows printdevice.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a formatted global of a TIU document for output to a Windows printdevice.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | TIU print to windows printer
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Note IEN | LITERAL | 20 | true | IEN of document in file 8925. | 
-| Chart Copy? | LITERAL | 2 |  | If true, print chart copy, else print work copy. | 
+| {::nomarkdown}Note IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of document in file 8925.{:/} | 
+| {::nomarkdown}Chart Copy?{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} |  | {::nomarkdown}If true, print chart copy, else print work copy.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

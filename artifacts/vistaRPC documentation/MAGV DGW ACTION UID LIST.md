@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV DGW ACTION UID LIST
- tag | ACTUIDS
+ label | {::nomarkdown}MAGV DGW ACTION UID LIST{:/}
+ tag | {::nomarkdown}ACTUIDS{:/}
  routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
- return value type | ARRAY
- description | Return list of UIDfrom DICOM UID SPECIFIC ACTION file (#2006.539)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list of UIDfrom DICOM UID SPECIFIC ACTION file (#2006.539){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGTYPE | LITERAL |  | true | Type (e.g. \SOP Class\) | 
-| MAGSUBT | LITERAL |  | true | Subtype (e.g. \Storage\) | 
-| MAGACT | LITERAL |  | true | Action Type (e.g. \Storage SCP\) | 
+| {::nomarkdown}MAGTYPE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Type (e.g. \SOP Class\){:/} | 
+| {::nomarkdown}MAGSUBT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Subtype (e.g. \Storage\){:/} | 
+| {::nomarkdown}MAGACT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Action Type (e.g. \Storage SCP\){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

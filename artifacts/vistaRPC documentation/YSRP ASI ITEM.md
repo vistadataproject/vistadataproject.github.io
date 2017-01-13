@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YSRP ASI ITEM
- tag | ASIITM
+ label | {::nomarkdown}YSRP ASI ITEM{:/}
+ tag | {::nomarkdown}ASIITM{:/}
  routine | [YSASRPWP](http://code.osehra.org/dox/Routine_YSASRPWP_source.html)
- return value type | GLOBAL ARRAY
- description | This procedure prints the selected Addiction Severity Index in a captionedformat.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This procedure prints the selected Addiction Severity Index in a captionedformat.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| YSASDA | LITERAL | 30 | true | YSASDA is a pointer to the Addiction Severity Index file (#604). | 
+| {::nomarkdown}YSASDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}YSASDA is a pointer to the Addiction Severity Index file (#604).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

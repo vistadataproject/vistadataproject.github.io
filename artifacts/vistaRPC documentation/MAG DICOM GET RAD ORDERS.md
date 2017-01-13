@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET RAD ORDERS
- tag | ORDERS
+ label | {::nomarkdown}MAG DICOM GET RAD ORDERS{:/}
+ tag | {::nomarkdown}ORDERS{:/}
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
- return value type | ARRAY
- description | Return a list of radiology orders for a patient
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return a list of radiology orders for a patient{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Standard pointer to PATIENT file #2. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Standard pointer to PATIENT file #2.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

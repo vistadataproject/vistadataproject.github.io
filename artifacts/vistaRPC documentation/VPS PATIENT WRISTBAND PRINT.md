@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS PATIENT WRISTBAND PRINT
- tag | PRINT
+ label | {::nomarkdown}VPS PATIENT WRISTBAND PRINT{:/}
+ tag | {::nomarkdown}PRINT{:/}
  routine | [VPSWRIST](http://code.osehra.org/dox/Routine_VPSWRIST_source.html)
- return value type | SINGLE VALUE
- description | This RPC prints patient wristband to VistA printer using VistA standard patPatient Wristband Print routine (DGPWB).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC prints patient wristband to VistA printer using VistA standard patPatient Wristband Print routine (DGPWB).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSIO | LITERAL | 50 | true | This is the device name where the wristband label to print on. | 
-| VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN, SSN, ICN, VIC/CAC | 
-| VPSNUM | LITERAL | 50 | true | Patient ID. This could be DFN, SSN, ICN, VIC/CAC | 
+| {::nomarkdown}VPSIO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the device name where the wristband label to print on.{:/} | 
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID Type. Valid Input parameter: DFN, SSN, ICN, VIC/CAC{:/} | 
+| {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID. This could be DFN, SSN, ICN, VIC/CAC{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

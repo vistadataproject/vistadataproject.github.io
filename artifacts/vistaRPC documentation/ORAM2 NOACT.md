@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM2 NOACT
- tag | NOACT
+ label | {::nomarkdown}ORAM2 NOACT{:/}
+ tag | {::nomarkdown}NOACT{:/}
  routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
- return value type | ARRAY
- description | Checks Anticoagulation Flowsheet file (#103) for patients not seen withinthe user-specified number of days.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Checks Anticoagulation Flowsheet file (#103) for patients not seen withinthe user-specified number of days.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DAYS | LITERAL |  |  |  | 
+| {::nomarkdown}DAYS{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

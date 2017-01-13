@@ -9,28 +9,28 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD SAVE
- tag | SAVE
+ label | {::nomarkdown}TIU FIELD SAVE{:/}
+ tag | {::nomarkdown}SAVE{:/}
  routine | [TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
- return value type | SINGLE VALUE
- description | Saves a single Template Field
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves a single Template Field{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Save Template Field
- Leading comment lines | Input:,TIUDA=IEN of TEMPLATE record,TIUX(SEQ)=IEN of item,Output:,SUCCESS=IEN of item if successful, or,0^ Explanatory message if not
+ Leading comment lines | {::nomarkdown}Input:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Output:<br/>SUCCESS=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDA |  |  |  | IEN of dialog field, if any | 
-| TIUX | LIST |  |  | Data to save in template field | 
+| {::nomarkdown}TIUDA{:/} |  |  |  | {::nomarkdown}IEN of dialog field, if any{:/} | 
+| {::nomarkdown}TIUX{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Data to save in template field{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

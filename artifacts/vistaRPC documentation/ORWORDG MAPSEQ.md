@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORDG MAPSEQ
- tag | MAPSEQ
+ label | {::nomarkdown}ORWORDG MAPSEQ{:/}
+ tag | {::nomarkdown}MAPSEQ{:/}
  routine | [ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | similar to GRPSEQB, for 32bit
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

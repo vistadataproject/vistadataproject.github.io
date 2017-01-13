@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS SVCTREE
- tag | SVCTREE
+ label | {::nomarkdown}DSIF CNSLTS SVCTREE{:/}
+ tag | {::nomarkdown}SVCTREE{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | ARRAY
- description | This RPC returns a list of Consult Services. Cloned from ORQQCN SVCTREE.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of Consult Services. Cloned from ORQQCN SVCTREE.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFPUR | LITERAL | 1 | true | This is the purpose for the service list: 0 - Display only1 - Forward or Order | 
+| {::nomarkdown}DSIFPUR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the purpose for the service list: 0 - Display only1 - Forward or Order{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

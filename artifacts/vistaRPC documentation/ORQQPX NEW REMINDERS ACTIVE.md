@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX NEW REMINDERS ACTIVE
- tag | NEWACTIV
+ label | {::nomarkdown}ORQQPX NEW REMINDERS ACTIVE{:/}
+ tag | {::nomarkdown}NEWACTIV{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | SINGLE VALUE
- description | Return 1 if Interactive Reminders are active, otherwise return 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return 1 if Interactive Reminders are active, otherwise return 0.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return true if Interactive Reminders are active
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

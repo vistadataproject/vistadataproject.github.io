@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIROI GETREQST GET REQUEST
- tag | GETREQST
+ label | {::nomarkdown}DSIROI GETREQST GET REQUEST{:/}
+ tag | {::nomarkdown}GETREQST{:/}
  routine | [DSIROI](http://code.osehra.org/dox/Routine_DSIROI_source.html)
- return value type | ARRAY
- description | This RPC invokes the GETS^DIQ api to retrieve all the data for a given IEN in file 19620 (DSIR ROI INSTANCE).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC invokes the GETS^DIQ api to retrieve all the data for a given IEN in file 19620 (DSIR ROI INSTANCE).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | This is the internal entry number of the requeted request.  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number of the requeted request. {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

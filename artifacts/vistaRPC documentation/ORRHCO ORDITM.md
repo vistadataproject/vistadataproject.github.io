@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCO ORDITM
- tag | ORDITM
+ label | {::nomarkdown}ORRHCO ORDITM{:/}
+ tag | {::nomarkdown}ORDITM{:/}
  routine | [ORRHCO](http://code.osehra.org/dox/Routine_ORRHCO_source.html)
- return value type | ARRAY
- description | Returns a subset of orderable items for use in a long list box.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a subset of orderable items for use in a long list box.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM | LITERAL |  | true | Starting name for cross reference | 
-| DIR | LITERAL |  | true | Direction for $ORDER | 
-| XREF | LITERAL |  | true | Identifies the SET xref to use in the orderable item file. | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Starting name for cross reference{:/} | 
+| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Direction for $ORDER{:/} | 
+| {::nomarkdown}XREF{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the SET xref to use in the orderable item file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

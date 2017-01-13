@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA GET COMPONENTS
- tag | GC
+ label | {::nomarkdown}NUPA GET COMPONENTS{:/}
+ tag | {::nomarkdown}GC{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | GLOBAL ARRAY
- description | Gets the possible responses for various components in the GUIs.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Gets the possible responses for various components in the GUIs.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

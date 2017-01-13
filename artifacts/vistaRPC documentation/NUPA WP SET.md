@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA WP SET
- tag | WPSET
+ label | {::nomarkdown}NUPA WP SET{:/}
+ tag | {::nomarkdown}WPSET{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Sets data into a word processing field.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sets data into a word processing field.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL |  | true | File to insert the data into, in ^FILE(subscript, format. | 
-| LINE | LITERAL |  | true | Line number for the data to be put into, such as 1, 2, or 3. | 
-| DATA | LITERAL |  | true | Data (text) to insert into the global. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}File to insert the data into, in ^FILE(subscript, format.{:/} | 
+| {::nomarkdown}LINE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Line number for the data to be put into, such as 1, 2, or 3.{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Data (text) to insert into the global.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

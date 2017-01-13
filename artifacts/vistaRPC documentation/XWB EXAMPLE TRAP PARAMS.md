@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB EXAMPLE TRAP PARAMS
- tag | ERRTRAP
+ label | {::nomarkdown}XWB EXAMPLE TRAP PARAMS{:/}
+ tag | {::nomarkdown}ERRTRAP{:/}
  routine | [XWBEXMPL](http://code.osehra.org/dox/Routine_XWBEXMPL_source.html)
- return value type | SINGLE VALUE
- description | This RPC is for testing use only. It calls the Error Trap to save off thesymbol table for debuging. The call accepts up to 9 parameters that are labeled P1 to P9.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC is for testing use only. It calls the Error Trap to save off thesymbol table for debuging. The call accepts up to 9 parameters that are labeled P1 to P9.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

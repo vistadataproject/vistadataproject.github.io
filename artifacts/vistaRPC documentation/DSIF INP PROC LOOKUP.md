@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP PROC LOOKUP
- tag | LOOKUP
+ label | {::nomarkdown}DSIF INP PROC LOOKUP{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [DSIFINP1](http://code.osehra.org/dox/Routine_DSIFINP1_source.html)
- return value type | GLOBAL ARRAY
- description | Pass in text for a lookup of Procedure codes (File #80.1)
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Pass in text for a lookup of Procedure codes (File #80.1){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEXT | LITERAL | 55 | true |  | 
-| NUMBER | LITERAL | 3 | true | Enter number of values to return for the lookup. | 
+| {::nomarkdown}TEXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}55{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Enter number of values to return for the lookup.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

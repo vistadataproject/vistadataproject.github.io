@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB SCANMED
- tag | SCANMED
+ label | {::nomarkdown}PSB SCANMED{:/}
+ tag | {::nomarkdown}SCANMED{:/}
  routine | [PSBRPC2](http://code.osehra.org/dox/Routine_PSBRPC2_source.html)
- return value type | ARRAY
- description | Takes the scanned valued from the medication and does a lookup on file 50 for an exact match.  If more than one or less than one entry are found for the lookup an error is returned to the client.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Takes the scanned valued from the medication and does a lookup on file 50 for an exact match.  If more than one or less than one entry are found for the lookup an error is returned to the client.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SCANVAL | LITERAL | 30 | true | This is the data received from the client scanning the medication. | 
-| PSBDIEN | LITERAL |  | true | Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client. | 
-| PSBTAB | LITERAL | 20 | true | This is the current tab the user is on. | 
+| {::nomarkdown}SCANVAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the data received from the client scanning the medication.{:/} | 
+| {::nomarkdown}PSBDIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client.{:/} | 
+| {::nomarkdown}PSBTAB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the current tab the user is on.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG IMAGE LOCK
- tag | LOCKIMG
+ label | {::nomarkdown}MAGG IMAGE LOCK{:/}
+ tag | {::nomarkdown}LOCKIMG{:/}
  routine | [MAGGA04](http://code.osehra.org/dox/Routine_MAGGA04_source.html)
- return value type | ARRAY
- description | This remote procedure locks one or more images. If several images are passed, then either all or none of them are locked.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure locks one or more images. If several images are passed, then either all or none of them are locked.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FLAGS | LITERAL |  |  | reserved | 
-| IMGLST | LIST |  | true | List of images that have to be locked. Images are referenced by their internal entry numbers (IENs) in the IMAGE (#2005) and IMAGE AUDIT(#2005.1) files. Example:   with RPCBroker.Param[1] do    begin      PType := list;      Mult[1] := '234';      Mult[2] := '789';    end; | 
+| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}reserved{:/} | 
+| {::nomarkdown}IMGLST{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}List of images that have to be locked. Images are referenced by their internal entry numbers (IENs) in the IMAGE (#2005) and IMAGE AUDIT(#2005.1) files. Example:   with RPCBroker.Param[1] do    begin      PType := list;      Mult[1] := '234';      Mult[2] := '789';    end;{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

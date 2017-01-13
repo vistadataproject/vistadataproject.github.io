@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 CMEVTS
- tag | CMEVTS
+ label | {::nomarkdown}OREVNTX1 CMEVTS{:/}
+ tag | {::nomarkdown}CMEVTS{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return common event list
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

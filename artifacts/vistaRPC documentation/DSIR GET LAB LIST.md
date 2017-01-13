@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET LAB LIST
- tag | GTLABLST
+ label | {::nomarkdown}DSIR GET LAB LIST{:/}
+ tag | {::nomarkdown}GTLABLST{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | ARRAY
- description | This routine returns a list of labs that have been selected for a given request.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This routine returns a list of labs that have been selected for a given request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ROI | LITERAL | 10 | true |  INPUT PARAMETER    ROI = REQUEST IEN | 
+| {::nomarkdown}ROI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown} INPUT PARAMETER    ROI = REQUEST IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

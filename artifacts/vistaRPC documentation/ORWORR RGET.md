@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORR RGET
- tag | RGET
+ label | {::nomarkdown}ORWORR RGET{:/}
+ tag | {::nomarkdown}RGET{:/}
  routine | [ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Orders of AutoDC/Release Event
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

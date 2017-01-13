@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS1 ODSLCT
- tag | ODSLCT
+ label | {::nomarkdown}ORWDPS1 ODSLCT{:/}
+ tag | {::nomarkdown}ODSLCT{:/}
  routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return default lists for dialog
- Leading comment lines | PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient)
+ Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

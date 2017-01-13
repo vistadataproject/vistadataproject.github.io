@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD1 GETCSDEF
- tag | GETCSDEF
+ label | {::nomarkdown}ORWTPD1 GETCSDEF{:/}
+ tag | {::nomarkdown}GETCSDEF{:/}
  routine | [ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Div/Sys/Pkg Cover Sheet default range parameters.
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

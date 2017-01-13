@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXQ GETQLST
- tag | GETQLST
+ label | {::nomarkdown}ORWDXQ GETQLST{:/}
+ tag | {::nomarkdown}GETQLST{:/}
  routine | [ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
- return value type | ARRAY
- description | Return quick list for a display group.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return quick list for a display group.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return quick list for a display group
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

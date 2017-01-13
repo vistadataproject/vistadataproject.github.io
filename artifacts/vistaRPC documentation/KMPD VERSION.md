@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD VERSION
- tag | VERSION
+ label | {::nomarkdown}KMPD VERSION{:/}
+ tag | {::nomarkdown}VERSION{:/}
  routine | [KMPDU5](http://code.osehra.org/dox/Routine_KMPDU5_source.html)
- return value type | ARRAY
- description | Get version number for CM Developer Tools application.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get version number for CM Developer Tools application.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

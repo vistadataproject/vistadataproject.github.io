@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUXT REF
- tag | REF
+ label | {::nomarkdown}ORWUXT REF{:/}
+ tag | {::nomarkdown}REF{:/}
  routine | [ORWUXT](http://code.osehra.org/dox/Routine_ORWUXT_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return a global reference
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

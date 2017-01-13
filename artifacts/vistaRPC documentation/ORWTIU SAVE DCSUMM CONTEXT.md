@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTIU SAVE DCSUMM CONTEXT
- tag | SVDCCTX
+ label | {::nomarkdown}ORWTIU SAVE DCSUMM CONTEXT{:/}
+ tag | {::nomarkdown}SVDCCTX{:/}
  routine | [ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Save new DC Summary view preferences for user
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

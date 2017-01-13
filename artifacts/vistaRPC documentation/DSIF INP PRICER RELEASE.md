@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP PRICER RELEASE
- tag | PRICER
+ label | {::nomarkdown}DSIF INP PRICER RELEASE{:/}
+ tag | {::nomarkdown}PRICER{:/}
  routine | [DSIFBAT7](http://code.osehra.org/dox/Routine_DSIFBAT7_source.html)
- return value type | SINGLE VALUE
- description | RPC to release a CH (B9) batch to the pricer.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to release a CH (B9) batch to the pricer.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BATNUM | LITERAL | 25 | true |  | 
+| {::nomarkdown}BATNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

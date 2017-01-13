@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT16 ID INFO
- tag | IDINFO
+ label | {::nomarkdown}ORWPT16 ID INFO{:/}
+ tag | {::nomarkdown}IDINFO{:/}
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return identifying information for a patient
- Leading comment lines | PID^DOB^AGE^SEX^SC%^TYPE^WARD^RM-BED^NAME
+ Leading comment lines | {::nomarkdown}PID^DOB^AGE^SEX^SC%^TYPE^WARD^RM-BED^NAME{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

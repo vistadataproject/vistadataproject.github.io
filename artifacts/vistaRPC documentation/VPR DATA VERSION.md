@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPR DATA VERSION
- tag | VERSION
+ label | {::nomarkdown}VPR DATA VERSION{:/}
+ tag | {::nomarkdown}VERSION{:/}
  routine | [VPRD](http://code.osehra.org/dox/Routine_VPRD_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns the current version of the XML returned by the RPC'VPR GET PATIENT DATA.'
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns the current version of the XML returned by the RPC'VPR GET PATIENT DATA.'{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

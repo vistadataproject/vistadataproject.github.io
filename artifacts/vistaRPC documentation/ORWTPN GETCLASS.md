@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPN GETCLASS
- tag | GETCLASS
+ label | {::nomarkdown}ORWTPN GETCLASS{:/}
+ tag | {::nomarkdown}GETCLASS{:/}
  routine | [ORWTPN](http://code.osehra.org/dox/Routine_ORWTPN_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC
- Leading comment lines | get available document classes
+ Leading comment lines | {::nomarkdown}get available document classes{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

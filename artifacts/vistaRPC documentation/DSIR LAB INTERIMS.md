@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR LAB INTERIMS
- tag | INTERIMS
+ label | {::nomarkdown}DSIR LAB INTERIMS{:/}
+ tag | {::nomarkdown}INTERIMS{:/}
  routine | [DSIROI1](http://code.osehra.org/dox/Routine_DSIROI1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 50 | true | DFN - Patient Identifier | 
-| DATE1 | LITERAL | 7 | true | DATE1 - Start date in FILEMAN format | 
-| DATE2 | LITERAL | 7 | true | DATE2 - End date in FILEMAN format | 
-| ORTESTS | LIST |  | true | ORTESTS - List of tests to look up | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN - Patient Identifier{:/} | 
+| {::nomarkdown}DATE1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATE1 - Start date in FILEMAN format{:/} | 
+| {::nomarkdown}DATE2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATE2 - End date in FILEMAN format{:/} | 
+| {::nomarkdown}ORTESTS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}ORTESTS - List of tests to look up{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

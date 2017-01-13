@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU SUMMARIES BY VISIT
- tag | SUMMARY
+ label | {::nomarkdown}TIU SUMMARIES BY VISIT{:/}
+ tag | {::nomarkdown}SUMMARY{:/}
  routine | [TIUSRVLV](http://code.osehra.org/dox/Routine_TIUSRVLV_source.html)
- return value type | GLOBAL ARRAY
- description | This API returns lists of Discharge Summaries by visit.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This API returns lists of Discharge Summaries by visit.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Gets list of Summaries
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VISIT | LITERAL | 20 | true | This is the pointer to the visit file. | 
+| {::nomarkdown}VISIT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the visit file.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

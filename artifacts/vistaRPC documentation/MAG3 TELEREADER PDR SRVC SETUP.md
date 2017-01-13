@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TELEREADER PDR SRVC SETUP
- tag | UPSRVC
+ label | {::nomarkdown}MAG3 TELEREADER PDR SRVC SETUP{:/}
+ tag | {::nomarkdown}UPSRVC{:/}
  routine | [MAGNTLRS](http://code.osehra.org/dox/Routine_MAGNTLRS_source.html)
- return value type | SINGLE VALUE
- description | Add/Update/Delete a service in DICOM HEALTHCARE PROVIDER SERVICE file (#2006.5831)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Add/Update/Delete a service in DICOM HEALTHCARE PROVIDER SERVICE file (#2006.5831){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

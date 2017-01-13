@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPP REMLIST
- tag | REMLIST
+ label | {::nomarkdown}ORWTPP REMLIST{:/}
+ tag | {::nomarkdown}REMLIST{:/}
  routine | [ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC
- Leading comment lines | removes current user from a team
+ Leading comment lines | {::nomarkdown}removes current user from a team{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

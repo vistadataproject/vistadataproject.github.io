@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV GET ICB AUDIT
- tag | GETIEN
+ label | {::nomarkdown}DSIV GET ICB AUDIT{:/}
+ tag | {::nomarkdown}GETIEN{:/}
  routine | [DSIVIC2](http://code.osehra.org/dox/Routine_DSIVIC2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATDFN | LITERAL |  | true |  | 
-| BUFIEN | LITERAL |  | true |  | 
-| DATE | LITERAL |  | true | DATE ENTERED | 
+| {::nomarkdown}PATDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}BUFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DATE ENTERED{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

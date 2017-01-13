@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUBCMA USERINFO
- tag | USERINFO
+ label | {::nomarkdown}ORWUBCMA USERINFO{:/}
+ tag | {::nomarkdown}USERINFO{:/}
  routine | [ORWUBCMA](http://code.osehra.org/dox/Routine_ORWUBCMA_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ORWDPS5 |  |  |  |  | 
+| {::nomarkdown}ORWDPS5{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

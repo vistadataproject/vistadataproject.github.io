@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXM FORMID
- tag | FORMID
+ label | {::nomarkdown}ORWDXM FORMID{:/}
+ tag | {::nomarkdown}FORMID{:/}
  routine | [ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
- return value type | SINGLE VALUE
- description | Return the FormID for a dialog entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return the FormID for a dialog entry.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return the FormID for a dialog
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

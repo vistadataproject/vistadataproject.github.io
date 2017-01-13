@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 CPACT
- tag | CPACT
+ label | {::nomarkdown}OREVNTX1 CPACT{:/}
+ tag | {::nomarkdown}CPACT{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return True/False to display active orders for copy
- Leading comment lines | EVT ptr to #100.5
+ Leading comment lines | {::nomarkdown}EVT ptr to #100.5{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

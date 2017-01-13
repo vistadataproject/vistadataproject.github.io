@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGGLAB STAIN
- tag | STAIN
+ label | {::nomarkdown}MAGGLAB STAIN{:/}
+ tag | {::nomarkdown}STAIN{:/}
  routine | [MAGGTLB](http://code.osehra.org/dox/Routine_MAGGTLB_source.html)
- return value type | ARRAY
- description | The line tag STAIN is used for selection of Histological stainSend array of entries in file 2005.4, Image Histological Stain
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The line tag STAIN is used for selection of Histological stainSend array of entries in file 2005.4, Image Histological Stain{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

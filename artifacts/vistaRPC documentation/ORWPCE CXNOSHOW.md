@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE CXNOSHOW
- tag | CXNOSHOW
+ label | {::nomarkdown}ORWPCE CXNOSHOW{:/}
+ tag | {::nomarkdown}CXNOSHOW{:/}
  routine | [ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Should workload requirement be skipped for this note's visit?
- Leading comment lines | RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS,1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC
+ Leading comment lines | {::nomarkdown}RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS<br/>1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

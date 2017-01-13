@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR DIS LIST
- tag | EN
+ label | {::nomarkdown}RMPR DIS LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9DM1](http://code.osehra.org/dox/Routine_RMPR9DM1_source.html)
- return value type | ARRAY
- description | GUI 2319 MAS DISABILITY AND PERCENT. PASS IEN OF FILE 668. RETURN RESULTS FROM FILE #2. RESULTS()=DISABILITY DESCRIPTION^%^SC YESorNO.One line or multiple lines.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI 2319 MAS DISABILITY AND PERCENT. PASS IEN OF FILE 668. RETURN RESULTS FROM FILE #2. RESULTS()=DISABILITY DESCRIPTION^%^SC YESorNO.One line or multiple lines.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

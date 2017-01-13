@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT READ RPL
- tag | RPLREAD
+ label | {::nomarkdown}ORQPT READ RPL{:/}
+ tag | {::nomarkdown}RPLREAD{:/}
  routine | [ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
- return value type | ARRAY
- description | Passes global reference and other parameters, and receives a list of patients (up to 44 maximum) with IENs, for use in scrolling a Long List Box (LLB) componenet.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Passes global reference and other parameters, and receives a list of patients (up to 44 maximum) with IENs, for use in scrolling a Long List Box (LLB) componenet.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Read disk-based patient array from TMP.
- Leading comment lines | Variables used:,ORCNT   = Counter variable.,ORDIR   = Direction to move through list.,ORFROM  = Starting point from which to move through list.,ORI     = Counter variable.,ORIEN   = Record IEN holder.,ORJ     = Job number to use in ^TMP global root.,ORROOT  = ^TMP global file root.,ORZ     = Temporary value holder.,Y       = Returned array.
+ Leading comment lines | {::nomarkdown}Variables used:<br/>ORCNT   = Counter variable.<br/>ORDIR   = Direction to move through list.<br/>ORFROM  = Starting point from which to move through list.<br/>ORI     = Counter variable.<br/>ORIEN   = Record IEN holder.<br/>ORJ     = Job number to use in ^TMP global root.<br/>ORROOT  = ^TMP global file root.<br/>ORZ     = Temporary value holder.<br/>Y       = Returned array.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

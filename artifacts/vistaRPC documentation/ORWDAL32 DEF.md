@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDAL32 DEF
- tag | DEF
+ label | {::nomarkdown}ORWDAL32 DEF{:/}
+ tag | {::nomarkdown}DEF{:/}
  routine | [ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
- return value type | ARRAY
- description | Returns default values and list sets for Allergy ordering dialog.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns default values and list sets for Allergy ordering dialog.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get dialog data for allergies
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

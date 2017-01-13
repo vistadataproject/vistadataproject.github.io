@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM RADIOLOGY MODIFIERS
- tag | MOD
+ label | {::nomarkdown}MAG DICOM RADIOLOGY MODIFIERS{:/}
+ tag | {::nomarkdown}MOD{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | ARRAY
- description | This RPC returns a listing of entries from the PROCEDURES MODIFIER file (#71.2) sorted by Radiology' Imaging Type.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a listing of entries from the PROCEDURES MODIFIER file (#71.2) sorted by Radiology' Imaging Type.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG SUMMARY
- tag | LOGSUM
+ label | {::nomarkdown}MHV LOG SUMMARY{:/}
+ tag | {::nomarkdown}LOGSUM{:/}
  routine | [MHVUL2](http://code.osehra.org/dox/Routine_MHVUL2_source.html)
- return value type | GLOBAL ARRAY
- description | Retrieve MHV application log summary.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Retrieve MHV application log summary.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

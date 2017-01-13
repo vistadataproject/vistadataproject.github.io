@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET DGW CONFIG
- tag | GETGWCFG
+ label | {::nomarkdown}MAGV GET DGW CONFIG{:/}
+ tag | {::nomarkdown}GETGWCFG{:/}
  routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
- return value type | SINGLE VALUE
- description | Get DICOM Gateway configuration settings from the MAGV GATEWAYCONFIGURATION File (#2006.9191).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Get DICOM Gateway configuration settings from the MAGV GATEWAYCONFIGURATION File (#2006.9191).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOSTNAME | LITERAL | 30 |  | NAME OF DICOM GATEWAY COMPUTER | 
+| {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} |  | {::nomarkdown}NAME OF DICOM GATEWAY COMPUTER{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

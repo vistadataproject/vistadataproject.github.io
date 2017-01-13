@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD TMG STATUS
- tag | TMGSTAT
+ label | {::nomarkdown}KMPD TMG STATUS{:/}
+ tag | {::nomarkdown}TMGSTAT{:/}
  routine | [KMPDU7](http://code.osehra.org/dox/Routine_KMPDU7_source.html)
- return value type | ARRAY
- description | Timing Monitor status.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Timing Monitor status.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

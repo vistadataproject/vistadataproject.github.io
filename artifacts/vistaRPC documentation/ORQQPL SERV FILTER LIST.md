@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL SERV FILTER LIST
- tag | GETSRVC
+ label | {::nomarkdown}ORQQPL SERV FILTER LIST{:/}
+ tag | {::nomarkdown}GETSRVC{:/}
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
- return value type | ARRAY
- description | RETURNS ARRAY OF IEN^NAME FOR INPUT ARRAY OF IEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURNS ARRAY OF IEN^NAME FOR INPUT ARRAY OF IEN{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GET FILTERED LIST OF INPATIENT SERVICES
- Leading comment lines | RETURN NAMES FOR LIST OF IEN PASSED IN
+ Leading comment lines | {::nomarkdown}RETURN NAMES FOR LIST OF IEN PASSED IN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

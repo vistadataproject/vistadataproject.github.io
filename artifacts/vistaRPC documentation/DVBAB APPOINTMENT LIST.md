@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB APPOINTMENT LIST
- tag | DPA
+ label | {::nomarkdown}DVBAB APPOINTMENT LIST{:/}
+ tag | {::nomarkdown}DPA{:/}
  routine | [DVBAB1B](http://code.osehra.org/dox/Routine_DVBAB1B_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of past, future or all appointments.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of past, future or all appointments.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VAL1 | LITERAL | 10 | true | This is the DFN - the ien for the patient selected | 
-| VAL2 | LITERAL | 1 | true | This is CHOICE - valid input is A (for All appointments), F (for FutureAppointments, or P (for Past Appointments). | 
+| {::nomarkdown}VAL1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the DFN - the ien for the patient selected{:/} | 
+| {::nomarkdown}VAL2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is CHOICE - valid input is A (for All appointments), F (for FutureAppointments, or P (for Past Appointments).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

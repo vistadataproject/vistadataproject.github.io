@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU MED GET PATIENT LISTS
- tag | PLISTS
+ label | {::nomarkdown}TIU MED GET PATIENT LISTS{:/}
+ tag | {::nomarkdown}PLISTS{:/}
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
- return value type | ARRAY
- description | Returns a list of personal patient lists for the current user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of personal patient lists for the current user.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

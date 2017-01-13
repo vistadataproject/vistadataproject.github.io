@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS WITNESS EDIT
- tag | EDTWITN
+ label | {::nomarkdown}OOPS WITNESS EDIT{:/}
+ tag | {::nomarkdown}EDTWITN{:/}
  routine | [OOPSGUI2](http://code.osehra.org/dox/Routine_OOPSGUI2_source.html)
- return value type | ARRAY
- description | This broker call files any changes entered on an existing Witness.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This broker call files any changes entered on an existing Witness.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 256 | true | This input parameter contains the IEN and Witness Number for the Witnessbeing entered.  It is in the format: IEN^WIT. | 
-| INFO | LITERAL | 256 |  | This input parameter contains the address information for the witness. It isin the format: NAME^STREET^CITY^STATE^ZIP^DATE SIGNED. | 
-| CMNT | LITERAL | 256 |  | This input parameter contains the text for the Witness Comment. | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This input parameter contains the IEN and Witness Number for the Witnessbeing entered.  It is in the format: IEN^WIT.{:/} | 
+| {::nomarkdown}INFO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter contains the address information for the witness. It isin the format: NAME^STREET^CITY^STATE^ZIP^DATE SIGNED.{:/} | 
+| {::nomarkdown}CMNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter contains the text for the Witness Comment.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

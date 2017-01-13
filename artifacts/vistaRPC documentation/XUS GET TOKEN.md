@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUS GET TOKEN
- tag | ASH
+ label | {::nomarkdown}XUS GET TOKEN{:/}
+ tag | {::nomarkdown}ASH{:/}
  routine | [XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | rpc. Auto Signon Handle
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

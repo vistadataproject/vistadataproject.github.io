@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD ACTDF
- tag | ACTDF
+ label | {::nomarkdown}ORWTPD ACTDF{:/}
+ tag | {::nomarkdown}ACTDF{:/}
  routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
- return value type | SINGLE VALUE
- description | Make default time/occ setting take action on each report
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Make default time/occ setting take action on each report{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Make default setting take action for each report
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

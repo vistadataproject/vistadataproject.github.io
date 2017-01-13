@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VAFCTFU GET TREATING LIST
- tag | TFL
+ label | {::nomarkdown}VAFCTFU GET TREATING LIST{:/}
+ tag | {::nomarkdown}TFL{:/}
  routine | [VAFCTFU1](http://code.osehra.org/dox/Routine_VAFCTFU1_source.html)
- return value type | WORD PROCESSING
- description | Given a patient DFN, this will return a list of treating facilities.
+ return value type | {::nomarkdown}WORD PROCESSING{:/}
+ description | {::nomarkdown}Given a patient DFN, this will return a list of treating facilities.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Patient DFN. | LITERAL | 255 | true | Patient DFN from PATIENT file (#2). | 
+| {::nomarkdown}Patient DFN.{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN from PATIENT file (#2).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

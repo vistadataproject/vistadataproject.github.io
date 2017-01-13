@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCR RPTLST
- tag | RPTLST
+ label | {::nomarkdown}ORRHCR RPTLST{:/}
+ tag | {::nomarkdown}RPTLST{:/}
  routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
- return value type | ARRAY
- description | Returns the list of reports that are available to a specific user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the list of reports that are available to a specific user.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

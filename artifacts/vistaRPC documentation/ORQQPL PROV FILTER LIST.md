@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL PROV FILTER LIST
- tag | GETRPRV
+ label | {::nomarkdown}ORQQPL PROV FILTER LIST{:/}
+ tag | {::nomarkdown}GETRPRV{:/}
  routine | [ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
- return value type | ARRAY
- description | RETURNS A LIST OF PROVIDERS CORRESPONDING TO INPUT ARRAY OF IEN
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURNS A LIST OF PROVIDERS CORRESPONDING TO INPUT ARRAY OF IEN{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GET LIST OF RESPONSIBLE PROVIDERS FROM PRBLM LIST
- Leading comment lines | RETURN - aa list of responsible providers from which to select for filtering,INP - array of problem list providers to select from
+ Leading comment lines | {::nomarkdown}RETURN - aa list of responsible providers from which to select for filtering<br/>INP - array of problem list providers to select from{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INP | LIST |  |  | ARRAY OF PROVIDER IEN | 
+| {::nomarkdown}INP{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ARRAY OF PROVIDER IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

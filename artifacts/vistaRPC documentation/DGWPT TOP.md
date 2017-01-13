@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DGWPT TOP
- tag | TOP
+ label | {::nomarkdown}DGWPT TOP{:/}
+ tag | {::nomarkdown}TOP{:/}
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
- return value type | ARRAY
- description | Returns the last selected patient by the defined user.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the last selected patient by the defined user.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

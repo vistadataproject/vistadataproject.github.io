@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ACKQROESD
- tag | STARTD
+ label | {::nomarkdown}ACKQROESD{:/}
+ tag | {::nomarkdown}STARTD{:/}
  routine | [ACKQAG05](http://code.osehra.org/dox/Routine_ACKQAG05_source.html)
- return value type | SINGLE VALUE
- description | This is the RPC used to setup and send a deletion of an audiogram to the DDc when a deletion is processed on the home system for an audiogram that has been sent to the DDC.  It is triggered by the mDelete.OnClick action from the Enter/Edit program ACKQROES3E.EXE.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This is the RPC used to setup and send a deletion of an audiogram to the DDc when a deletion is processed on the home system for an audiogram that has been sent to the DDC.  It is triggered by the mDelete.OnClick action from the Enter/Edit program ACKQROES3E.EXE.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | This is the internal number of the patient in the PATIENT file (#2). | 
-| IEN | LITERAL |  | true | This is the internal number of the record in the AUDIOMETRIC EXAM DATA file (#509850.9). | 
-| STANUM | LITERAL |  | true | This is the Station Number of the sending clinic | 
-| USRNAM | LITERAL | 32 | true | This is the name of the submitting user | 
-| USRSER | LITERAL |  | true | This is the name of the submitting user's service. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal number of the patient in the PATIENT file (#2).{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal number of the record in the AUDIOMETRIC EXAM DATA file (#509850.9).{:/} | 
+| {::nomarkdown}STANUM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Station Number of the sending clinic{:/} | 
+| {::nomarkdown}USRNAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the submitting user{:/} | 
+| {::nomarkdown}USRSER{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the submitting user's service.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

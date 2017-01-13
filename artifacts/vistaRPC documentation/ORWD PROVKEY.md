@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD PROVKEY
- tag | PROVKEY
+ label | {::nomarkdown}ORWD PROVKEY{:/}
+ tag | {::nomarkdown}PROVKEY{:/}
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
- return value type | SINGLE VALUE
- description | Returns 1 if the users possesses the PROVIDER key.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns 1 if the users possesses the PROVIDER key.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns 1 if user possesses the provider key
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

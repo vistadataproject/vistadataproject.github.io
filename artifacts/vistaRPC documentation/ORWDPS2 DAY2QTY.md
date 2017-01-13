@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS2 DAY2QTY
- tag | DAY2QTY
+ label | {::nomarkdown}ORWDPS2 DAY2QTY{:/}
+ tag | {::nomarkdown}DAY2QTY{:/}
  routine | [ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return qty for days supply
- Leading comment lines | VAL: quantity
+ Leading comment lines | {::nomarkdown}VAL: quantity{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

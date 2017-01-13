@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET MAILING ADDRESS
- tag | COL
+ label | {::nomarkdown}SPN GET MAILING ADDRESS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPC8](http://code.osehra.org/dox/Routine_SPNJRPC8_source.html)
- return value type | GLOBAL ARRAY
- description | Returns current mailing addresses for a list of given patients (based on the ICN).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns current mailing addresses for a list of given patients (based on the ICN).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLIST | LIST |  |  | Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...) | 
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Patient's ICNs in list format (ICN^ICN^ICN^ICN^ICN...){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

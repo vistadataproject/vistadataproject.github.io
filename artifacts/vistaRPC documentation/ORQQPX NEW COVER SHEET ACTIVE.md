@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX NEW COVER SHEET ACTIVE
- tag | NEWCVOK
+ label | {::nomarkdown}ORQQPX NEW COVER SHEET ACTIVE{:/}
+ tag | {::nomarkdown}NEWCVOK{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | SINGLE VALUE
- description | Returns TRUE if the new cover sheet parameters are to be used.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns TRUE if the new cover sheet parameters are to be used.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns status of 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

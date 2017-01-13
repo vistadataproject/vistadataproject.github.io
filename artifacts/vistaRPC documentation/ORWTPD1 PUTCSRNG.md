@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD1 PUTCSRNG
- tag | PUTCSRNG
+ label | {::nomarkdown}ORWTPD1 PUTCSRNG{:/}
+ tag | {::nomarkdown}PUTCSRNG{:/}
  routine | [ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Save user's Cover Sheet data range defaults.
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

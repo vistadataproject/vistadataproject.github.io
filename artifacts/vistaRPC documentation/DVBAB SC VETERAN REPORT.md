@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB SC VETERAN REPORT
- tag | EN
+ label | {::nomarkdown}DVBAB SC VETERAN REPORT{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [DVBAB4](http://code.osehra.org/dox/Routine_DVBAB4_source.html)
- return value type | ARRAY
- description | Generates a service-connected veterans report.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Generates a service-connected veterans report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT1 | LITERAL |  | true | START DATE | 
-| INPUT2 | LITERAL |  | true | STOP DATE | 
+| {::nomarkdown}INPUT1{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}START DATE{:/} | 
+| {::nomarkdown}INPUT2{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}STOP DATE{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

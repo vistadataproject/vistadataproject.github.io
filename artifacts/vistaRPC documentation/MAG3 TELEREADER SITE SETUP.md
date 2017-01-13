@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 TELEREADER SITE SETUP
- tag | USITE
+ label | {::nomarkdown}MAG3 TELEREADER SITE SETUP{:/}
+ tag | {::nomarkdown}USITE{:/}
  routine | [MAGNTLRS](http://code.osehra.org/dox/Routine_MAGNTLRS_source.html)
- return value type | SINGLE VALUE
- description |  Add/Update/Delete a site in TELEREADER ACQUISITION SITE file (#2006.5842)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown} Add/Update/Delete a site in TELEREADER ACQUISITION SITE file (#2006.5842){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

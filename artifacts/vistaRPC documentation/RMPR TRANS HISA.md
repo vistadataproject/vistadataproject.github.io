@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR TRANS HISA
- tag | EN
+ label | {::nomarkdown}RMPR TRANS HISA{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9S7](http://code.osehra.org/dox/Routine_RMPR9S7_source.html)
- return value type | ARRAY
- description | GUI 2319 HISA information Tab 7. PASS IEN OF FILE 668. RETURNED RESUTLS 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}GUI 2319 HISA information Tab 7. PASS IEN OF FILE 668. RETURNED RESUTLS {:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

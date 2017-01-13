@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTAPI NEW ASI
- tag | ADDER
+ label | {::nomarkdown}YTAPI NEW ASI{:/}
+ tag | {::nomarkdown}ADDER{:/}
  routine | [YTAPI8](http://code.osehra.org/dox/Routine_YTAPI8_source.html)
- return value type | ARRAY
- description | This remote procedure allows new entries to be added to the ADDICTION SEVERITYINDEX file (#604). Input required: noneOutput:YSDATA(1)=[DATA]YSDATA(2)= IEN created in file 604
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure allows new entries to be added to the ADDICTION SEVERITYINDEX file (#604). Input required: noneOutput:YSDATA(1)=[DATA]YSDATA(2)= IEN created in file 604{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

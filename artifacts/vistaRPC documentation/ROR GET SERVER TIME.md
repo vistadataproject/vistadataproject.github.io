@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR GET SERVER TIME
- tag | GETSRVDT
+ label | {::nomarkdown}ROR GET SERVER TIME{:/}
+ tag | {::nomarkdown}GETSRVDT{:/}
  routine | [RORRP012](http://code.osehra.org/dox/Routine_RORRP012_source.html)
- return value type | ARRAY
- description | The ROR GET SERVER TIME remiote procedure returns the current date/time from the VistA server.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The ROR GET SERVER TIME remiote procedure returns the current date/time from the VistA server.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

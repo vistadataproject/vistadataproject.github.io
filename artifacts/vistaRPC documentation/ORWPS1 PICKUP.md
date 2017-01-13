@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPS1 PICKUP
- tag | PICKUP
+ label | {::nomarkdown}ORWPS1 PICKUP{:/}
+ tag | {::nomarkdown}PICKUP{:/}
  routine | [ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
- return value type | SINGLE VALUE
- description | Returns default for refill location (mail or window).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns default for refill location (mail or window).{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return default for refill location
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF INACTIVATE
- tag | INACT
+ label | {::nomarkdown}MPIF INACTIVATE{:/}
+ tag | {::nomarkdown}INACT{:/}
  routine | [MPIFRPC](http://code.osehra.org/dox/Routine_MPIFRPC_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure call (RPC) allows the remote inactivation of a patient from the MPI at a specific site.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure call (RPC) allows the remote inactivation of a patient from the MPI at a specific site.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 16 | true | ICN to be inactivated | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICN to be inactivated{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

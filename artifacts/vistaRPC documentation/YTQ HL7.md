@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ HL7
- tag | HL7
+ label | {::nomarkdown}YTQ HL7{:/}
+ tag | {::nomarkdown}HL7{:/}
  routine | [YTQHL7](http://code.osehra.org/dox/Routine_YTQHL7_source.html)
- return value type | ARRAY
- description | Sends HL7 Message to national database.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Sends HL7 Message to national database.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| AD  | LITERAL |  | true | IEN of MH Administration file 601.84 | 
+| {::nomarkdown}AD {:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of MH Administration file 601.84{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

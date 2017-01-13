@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 ONE SPECIMEN
- tag | ONESPEC
+ label | {::nomarkdown}ORWDLR32 ONE SPECIMEN{:/}
+ tag | {::nomarkdown}ONESPEC{:/}
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
- return value type | SINGLE VALUE
- description | Returns IEN^NAME of requested a TOPOGRAPHY FIELD (file #61) entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns IEN^NAME of requested a TOPOGRAPHY FIELD (file #61) entry.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return one specimen
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SPECIMEN IEN | LITERAL | 32 | true |  | 
+| {::nomarkdown}SPECIMEN IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

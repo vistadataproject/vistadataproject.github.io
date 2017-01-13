@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XU REBUILD MENU TREE
- tag | REBUILD
+ label | {::nomarkdown}XU REBUILD MENU TREE{:/}
+ tag | {::nomarkdown}REBUILD{:/}
  routine | [XQ84](http://code.osehra.org/dox/Routine_XQ84_source.html)
- return value type | SINGLE VALUE
- description | This API rebuilds the menu trees and display nodes for a single user (DUZ). It returns 0 if unsuccessful, 1 if successful.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This API rebuilds the menu trees and display nodes for a single user (DUZ). It returns 0 if unsuccessful, 1 if successful.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

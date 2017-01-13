@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY PAYMENT DISPLAY
- tag | DISPAY
+ label | {::nomarkdown}DSIF PAY PAYMENT DISPLAY{:/}
+ tag | {::nomarkdown}DISPAY{:/}
  routine | [DSIFPAY1](http://code.osehra.org/dox/Routine_DSIFPAY1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 35 | true | Patient IEN (File 161) | 
-| VENDOR | LITERAL | 35 | true | Vendor IEN (File 162) | 
-| DATE OF SERVICE | LITERAL | 7 | true | Fileman date of service | 
-| CPT | LITERAL | 10 | true | CPT code, (service provided) | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN (File 161){:/} | 
+| {::nomarkdown}VENDOR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Vendor IEN (File 162){:/} | 
+| {::nomarkdown}DATE OF SERVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Fileman date of service{:/} | 
+| {::nomarkdown}CPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CPT code, (service provided){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

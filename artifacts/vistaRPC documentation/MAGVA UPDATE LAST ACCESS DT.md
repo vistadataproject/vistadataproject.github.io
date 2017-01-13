@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA UPDATE LAST ACCESS DT
- tag | UPDLADT
+ label | {::nomarkdown}MAGVA UPDATE LAST ACCESS DT{:/}
+ tag | {::nomarkdown}UPDLADT{:/}
  routine | [MAGVAU01](http://code.osehra.org/dox/Routine_MAGVAU01_source.html)
- return value type | SINGLE VALUE
- description |  Set the Last Access Date/Time to current date/time for artifact instance records in ARTIFACT INSTANCE file (#2006.918) and ARTIFACT file (#2006.916)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown} Set the Last Access Date/Time to current date/time for artifact instance records in ARTIFACT INSTANCE file (#2006.918) and ARTIFACT file (#2006.916){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |  MAGPARAM(\PK\) = PK (IEN) of the record in ARTIFACT INSTANCE file (#2006.918) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\PK\) = PK (IEN) of the record in ARTIFACT INSTANCE file (#2006.918){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

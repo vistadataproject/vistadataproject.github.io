@@ -9,30 +9,30 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPL DELETE
- tag | DELETE
+ label | {::nomarkdown}ORQQPL DELETE{:/}
+ tag | {::nomarkdown}DELETE{:/}
  routine | [ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
- return value type | SINGLE VALUE
- description | DELETES A PROBLEM
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}DELETES A PROBLEM{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | DELETE A PROBLEM
- Leading comment lines | From GMPL1 - silent version
+ Leading comment lines | {::nomarkdown}From GMPL1 - silent version{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IFN | LITERAL |  |  |  | 
-| PROVIDERID |  |  |  |  | 
-| VAMC |  |  |  |  | 
-| REASON | LITERAL |  |  |  | 
+| {::nomarkdown}IFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}PROVIDERID{:/} |  |  |  |  | 
+| {::nomarkdown}VAMC{:/} |  |  |  |  | 
+| {::nomarkdown}REASON{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

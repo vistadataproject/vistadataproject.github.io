@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGG SYS WRKS DISPLAY
- tag | WRKS
+ label | {::nomarkdown}MAGG SYS WRKS DISPLAY{:/}
+ tag | {::nomarkdown}WRKS{:/}
  routine | [MAGGTSY](http://code.osehra.org/dox/Routine_MAGGTSY_source.html)
- return value type | GLOBAL ARRAY
- description | Utilites for Imaging system manager.RPC Call for MAGSYS utility. List of Workstation Information.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Utilites for Imaging system manager.RPC Call for MAGSYS utility. List of Workstation Information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ZYx | LITERAL | 60 | true | the Computer Name running MAGSYS. | 
+| {::nomarkdown}ZYx{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}the Computer Name running MAGSYS.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

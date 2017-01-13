@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB INCREASE EXAM COUNT
- tag | INCEXAM
+ label | {::nomarkdown}DVBAB INCREASE EXAM COUNT{:/}
+ tag | {::nomarkdown}INCEXAM{:/}
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
- return value type | SINGLE VALUE
- description | Used to record the number of exams pending for a specified patient.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to record the number of exams pending for a specified patient.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

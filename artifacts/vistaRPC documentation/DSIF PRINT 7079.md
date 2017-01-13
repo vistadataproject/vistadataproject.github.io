@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PRINT 7079
- tag | PRINT
+ label | {::nomarkdown}DSIF PRINT 7079{:/}
+ tag | {::nomarkdown}PRINT{:/}
  routine | [DSIFENA4](http://code.osehra.org/dox/Routine_DSIFENA4_source.html)
- return value type | SINGLE VALUE
- description | Used to print an existing 7079 from Fee Basis.on error returns-1^error message
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Used to print an existing 7079 from Fee Basis.on error returns-1^error message{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true |  | 
-| AUTHIEN | LITERAL | 30 | true |  | 
-| DEVICE | LITERAL | 80 | true | Pass in the VistA device name used to print the 7079. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}AUTHIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DEVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in the VistA device name used to print the 7079.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

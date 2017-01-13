@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU USER INACTIVE?
- tag | USRINACT
+ label | {::nomarkdown}TIU USER INACTIVE?{:/}
+ tag | {::nomarkdown}USRINACT{:/}
  routine | [TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
- return value type | SINGLE VALUE
- description | RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Is user inactive?
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUUSR | LITERAL |  | true | This is the IEN of the user in the NEW PERSON file (#200). | 
+| {::nomarkdown}TIUUSR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the user in the NEW PERSON file (#200).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

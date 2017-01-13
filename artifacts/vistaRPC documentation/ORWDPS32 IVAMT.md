@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 IVAMT
- tag | IVAMT
+ label | {::nomarkdown}ORWDPS32 IVAMT{:/}
+ tag | {::nomarkdown}IVAMT{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | SINGLE VALUE
- description | Returns return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV solutions.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns return UNITS^AMOUNT ^AMOUNT^AMOUNT... for IV solutions.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV soln
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

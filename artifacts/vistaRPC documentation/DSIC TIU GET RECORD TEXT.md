@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIC TIU GET RECORD TEXT
- tag | TEXT
+ label | {::nomarkdown}DSIC TIU GET RECORD TEXT{:/}
+ tag | {::nomarkdown}TEXT{:/}
  routine | [DSICTIU1](http://code.osehra.org/dox/Routine_DSICTIU1_source.html)
- return value type | GLOBAL ARRAY
- description | This was mainly written to allow one M routine to get the text of any signed progress note.  This function is exposed to the GUI.  However, GUI applications should use the TIU get document RPC in lieu of this RPC in most cases.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This was mainly written to allow one M routine to get the text of any signed progress note.  This function is exposed to the GUI.  However, GUI applications should use the TIU get document RPC in lieu of this RPC in most cases.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIEN | LITERAL | 15 | true | Internal record number for file 8925 [IEN or IFN]. | 
-| ACTION | LITERAL | 10 | true | This parameter is not well documented within TIU.  So for this RPC, do not pass a value at this time.  The default value is \VIEW\. | 
+| {::nomarkdown}DSIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal record number for file 8925 [IEN or IFN].{:/} | 
+| {::nomarkdown}ACTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is not well documented within TIU.  So for this RPC, do not pass a value at this time.  The default value is \VIEW\.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

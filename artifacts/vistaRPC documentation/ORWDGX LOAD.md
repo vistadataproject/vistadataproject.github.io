@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDGX LOAD
- tag | LOAD
+ label | {::nomarkdown}ORWDGX LOAD{:/}
+ tag | {::nomarkdown}LOAD{:/}
  routine | [ORWDGX](http://code.osehra.org/dox/Routine_ORWDGX_source.html)
- return value type | ARRAY
- description | Loads a list of activities for an activity order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Loads a list of activities for an activity order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Load a list of activity orders
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

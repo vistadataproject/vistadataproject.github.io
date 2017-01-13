@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB REPORT 7131INQ
- tag | STRT
+ label | {::nomarkdown}DVBAB REPORT 7131INQ{:/}
+ tag | {::nomarkdown}STRT{:/}
  routine | [DVBAB71](http://code.osehra.org/dox/Routine_DVBAB71_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a 7131 inquiry report.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a 7131 inquiry report.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ZDFN | LITERAL |  | true |  | 
-| RECIEN | LITERAL |  | true |  | 
+| {::nomarkdown}ZDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}RECIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

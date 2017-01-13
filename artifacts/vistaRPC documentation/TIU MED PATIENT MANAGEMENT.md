@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU MED PATIENT MANAGEMENT
- tag | PATMAN
+ label | {::nomarkdown}TIU MED PATIENT MANAGEMENT{:/}
+ tag | {::nomarkdown}PATMAN{:/}
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
- return value type | SINGLE VALUE
- description | Returns the user's level of patient importing via manual entry.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the user's level of patient importing via manual entry.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

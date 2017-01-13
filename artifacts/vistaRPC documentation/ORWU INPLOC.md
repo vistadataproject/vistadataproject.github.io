@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU INPLOC
- tag | INPLOC
+ label | {::nomarkdown}ORWU INPLOC{:/}
+ tag | {::nomarkdown}INPLOC{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | ARRAY
- description | Returns a list of wards from the HOSPITAL LOCATION file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of wards from the HOSPITAL LOCATION file.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a set of wards from HOSPITAL LOCATION
- Leading comment lines | .Y=returned list, FROM=text to $O from, DIR=$O direction,
+ Leading comment lines | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction,{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

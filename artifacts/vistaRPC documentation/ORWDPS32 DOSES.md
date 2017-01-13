@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS32 DOSES
- tag | DOSES
+ label | {::nomarkdown}ORWDPS32 DOSES{:/}
+ tag | {::nomarkdown}DOSES{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- return value type | ARRAY
- description | Return doses for an orderable item.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return doses for an orderable item.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return doses for an orderable item  -  TEST ONLY
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

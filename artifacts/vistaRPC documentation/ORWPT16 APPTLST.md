@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT16 APPTLST
- tag | APPTLST
+ label | {::nomarkdown}ORWPT16 APPTLST{:/}
+ tag | {::nomarkdown}APPTLST{:/}
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | Return a list of appointments
+ Leading comment lines | {::nomarkdown}Return a list of appointments{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

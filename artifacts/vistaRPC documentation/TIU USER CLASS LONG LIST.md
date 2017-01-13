@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU USER CLASS LONG LIST
- tag | CLSLIST
+ label | {::nomarkdown}TIU USER CLASS LONG LIST{:/}
+ tag | {::nomarkdown}CLSLIST{:/}
  routine | [TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
- return value type | ARRAY
- description | Long List of User Classes
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Long List of User Classes{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Long List of Active User Classes
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM |  |  |  |  | 
-| DIR |  |  |  |  | 
+| {::nomarkdown}FROM{:/} |  |  |  |  | 
+| {::nomarkdown}DIR{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

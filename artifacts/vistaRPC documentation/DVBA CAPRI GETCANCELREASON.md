@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI GETCANCELREASON
- tag | CANRSN
+ label | {::nomarkdown}DVBA CAPRI GETCANCELREASON{:/}
+ tag | {::nomarkdown}CANRSN{:/}
  routine | [DVBCANRS](http://code.osehra.org/dox/Routine_DVBCANRS_source.html)
- return value type | ARRAY
- description | This returns an array of active 2507 EXAM Cancellation Reasons. New active reasons added with Patch DVB*2.7*189. Old list of cancellation reasons set to inactive.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This returns an array of active 2507 EXAM Cancellation Reasons. New active reasons added with Patch DVB*2.7*189. Old list of cancellation reasons set to inactive.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST | LIST |  | true | THE ARRAY OF ACTIVE REASONS | 
+| {::nomarkdown}LIST{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}THE ARRAY OF ACTIVE REASONS{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

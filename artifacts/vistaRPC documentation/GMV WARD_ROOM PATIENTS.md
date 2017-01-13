@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV WARD_ROOM PATIENTS
- tag | ROOMPT
+ label | {::nomarkdown}GMV WARD_ROOM PATIENTS{:/}
+ tag | {::nomarkdown}ROOMPT{:/}
  routine | [GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
- return value type | ARRAY
- description | Returns a list of patients in the ward and rooms specified.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients in the ward and rooms specified.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMVWRD | LITERAL | 60 | true | Name of the ward (e.g., 2EAST). | 
-| GMVRLST | LITERAL | 150 | true | The room numbers of the ward separated by comma (e.g., 200,210,220). | 
+| {::nomarkdown}GMVWRD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of the ward (e.g., 2EAST).{:/} | 
+| {::nomarkdown}GMVRLST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}150{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The room numbers of the ward separated by comma (e.g., 200,210,220).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

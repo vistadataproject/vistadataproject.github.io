@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP AUTHORIZATION LIST
- tag | AUTH
+ label | {::nomarkdown}DSIF INP AUTHORIZATION LIST{:/}
+ tag | {::nomarkdown}AUTH{:/}
  routine | [DSIFEP](http://code.osehra.org/dox/Routine_DSIFEP_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC will return a list of Authorizations from the FEE BASIS PATIENT File #161.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC will return a list of Authorizations from the FEE BASIS PATIENT File #161.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 99 | true | Pointer to FEE BASIS PATIENT File #161 | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pointer to FEE BASIS PATIENT File #161{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

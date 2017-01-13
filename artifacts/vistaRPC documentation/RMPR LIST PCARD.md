@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR LIST PCARD
- tag | ENA
+ label | {::nomarkdown}RMPR LIST PCARD{:/}
+ tag | {::nomarkdown}ENA{:/}
  routine | [RMPR9AUT](http://code.osehra.org/dox/Routine_RMPR9AUT_source.html)
- return value type | ARRAY
- description | RPC to pass all the credit card numbers of a user.  Only credit card numers that belong to a user or surrogate user will be passed by this rpc.number that belongs to a user or surrogate user will be passed by thisRPC.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to pass all the credit card numbers of a user.  Only credit card numers that belong to a user or surrogate user will be passed by this rpc.number that belongs to a user or surrogate user will be passed by thisRPC.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

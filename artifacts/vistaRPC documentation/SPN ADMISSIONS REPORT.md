@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN ADMISSIONS REPORT
- tag | EN1
+ label | {::nomarkdown}SPN ADMISSIONS REPORT{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [SPNRPC13](http://code.osehra.org/dox/Routine_SPNRPC13_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STDATE | LITERAL |  |  |  | 
-| ENDATE | LITERAL |  |  |  | 
-| PTLIST | LIST |  |  |  | 
+| {::nomarkdown}STDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}ENDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

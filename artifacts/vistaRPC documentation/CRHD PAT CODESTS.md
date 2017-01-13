@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD PAT CODESTS
- tag | CODESTS
+ label | {::nomarkdown}CRHD PAT CODESTS{:/}
+ tag | {::nomarkdown}CODESTS{:/}
  routine | [CRHD](http://code.osehra.org/dox/Routine_CRHD_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STR | LITERAL |  |  |  | 
+| {::nomarkdown}STR{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

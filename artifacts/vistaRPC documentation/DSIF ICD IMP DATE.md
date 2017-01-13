@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF ICD IMP DATE
- tag | IMPDATE
+ label | {::nomarkdown}DSIF ICD IMP DATE{:/}
+ tag | {::nomarkdown}IMPDATE{:/}
  routine | [DSIFICD](http://code.osehra.org/dox/Routine_DSIFICD_source.html)
- return value type | SINGLE VALUE
- description | This RPC will retrieve the ICD code system implementation date.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will retrieve the ICD code system implementation date.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFSYS | LITERAL |  | true | This is the coding system abbreviation from VistA. This parameter is required.     Input:     DSIFSYS   Coding System               1 OR \ICD\ = ICD-9-CM              2 OR \ICP\ = ICD-9-PCS             30 OR \10D\ = ICD-10-CM             31 OR \10P\ = ICD-10-PCS | 
+| {::nomarkdown}DSIFSYS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the coding system abbreviation from VistA. This parameter is required.     Input:     DSIFSYS   Coding System               1 OR \ICD\ = ICD-9-CM              2 OR \ICP\ = ICD-9-PCS             30 OR \10D\ = ICD-10-CM             31 OR \10P\ = ICD-10-PCS{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

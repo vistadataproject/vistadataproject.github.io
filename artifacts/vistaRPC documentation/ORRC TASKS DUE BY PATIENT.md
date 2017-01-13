@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRC TASKS DUE BY PATIENT
- tag | DUE
+ label | {::nomarkdown}ORRC TASKS DUE BY PATIENT{:/}
+ tag | {::nomarkdown}DUE{:/}
  routine | [ORRCTSK](http://code.osehra.org/dox/Routine_ORRCTSK_source.html)
- return value type | ARRAY
- description | This call returns a list of tasks for a patient that are now due.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call returns a list of tasks for a patient that are now due.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT | LITERAL |  | true | This is the pointer to the patient in the Patient file #2. | 
+| {::nomarkdown}PATIENT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the patient in the Patient file #2.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

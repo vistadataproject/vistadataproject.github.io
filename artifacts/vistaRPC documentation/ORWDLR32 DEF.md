@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 DEF
- tag | DEF
+ label | {::nomarkdown}ORWDLR32 DEF{:/}
+ tag | {::nomarkdown}DEF{:/}
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
- return value type | ARRAY
- description | Get lab order dialog definition.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get lab order dialog definition.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | For Event Delay Order,ALOC: Delay Event's default location,ADIV: Delay Event's default division,get dialog definition specific to lab
+ Leading comment lines | {::nomarkdown}For Event Delay Order<br/>ALOC: Delay Event's default location<br/>ADIV: Delay Event's default division<br/>get dialog definition specific to lab{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU IS THIS A CLINPROC?
- tag | ISCP
+ label | {::nomarkdown}TIU IS THIS A CLINPROC?{:/}
+ tag | {::nomarkdown}ISCP{:/}
  routine | [TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
- return value type | SINGLE VALUE
- description | This RPC evaluates whether or not a Title is under theCLINICAL PROCEDURES Class.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC evaluates whether or not a Title is under theCLINICAL PROCEDURES Class.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC that evaluates whether or not a Title is under
- Leading comment lines | the CLINICAL PROCEDURES Class,Input  -- TITLE    TIU Document Definition file (#8925.1) IEN,(May be Document Class instead of Title.),Output -- TIUY     1=True and 0=False
+ Leading comment lines | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TITLE | LITERAL |  | true | This is the TIU Document file (#8925.1) IEN for the Title selected. | 
+| {::nomarkdown}TITLE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the TIU Document file (#8925.1) IEN for the Title selected.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

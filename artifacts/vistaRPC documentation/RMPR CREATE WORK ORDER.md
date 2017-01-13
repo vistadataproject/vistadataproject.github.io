@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR CREATE WORK ORDER
- tag | CR
+ label | {::nomarkdown}RMPR CREATE WORK ORDER{:/}
+ tag | {::nomarkdown}CR{:/}
  routine | [RMPR29GU](http://code.osehra.org/dox/Routine_RMPR29GU_source.html)
- return value type | ARRAY
- description |  
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RMPR9DA | LITERAL | 50 | true | IEN OF 664.1 | 
-| SCR | LITERAL | 50 | true | Source of Procurement | 
+| {::nomarkdown}RMPR9DA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN OF 664.1{:/} | 
+| {::nomarkdown}SCR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Source of Procurement{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ RULEDEL
- tag | RULEDEL
+ label | {::nomarkdown}YTQ RULEDEL{:/}
+ tag | {::nomarkdown}RULEDEL{:/}
  routine | [YTQAPI7](http://code.osehra.org/dox/Routine_YTQAPI7_source.html)
- return value type | ARRAY
- description | Deletes a rule and all associated skips and instrument rules   Input: IEN as ien of file 601.82   Output Data vs Error
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Deletes a rule and all associated skips and instrument rules   Input: IEN as ien of file 601.82   Output Data vs Error{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

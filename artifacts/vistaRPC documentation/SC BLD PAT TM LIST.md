@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC BLD PAT TM LIST
- tag | PTTMBLD
+ label | {::nomarkdown}SC BLD PAT TM LIST{:/}
+ tag | {::nomarkdown}PTTMBLD{:/}
  routine | [SCMCBK](http://code.osehra.org/dox/Routine_SCMCBK_source.html)
- return value type | SINGLE VALUE
- description | Builds a list of patients who are assigned to the selected team.  formatof the list is ^TMP($J,\SCTEAM\,n)=DFN.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Builds a list of patients who are assigned to the selected team.  formatof the list is ^TMP($J,\SCTEAM\,n)=DFN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PARAMETER LIST | LIST | 512 | true |  | 
+| {::nomarkdown}PARAMETER LIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

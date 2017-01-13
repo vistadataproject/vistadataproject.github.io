@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXC DELORD
- tag | DELORD
+ label | {::nomarkdown}ORWDXC DELORD{:/}
+ tag | {::nomarkdown}DELORD{:/}
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
- return value type | SINGLE VALUE
- description | Delete order.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Delete order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Delete order
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

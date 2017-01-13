@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV GET CATEGORY IEN
- tag | CATEGORY
+ label | {::nomarkdown}GMV GET CATEGORY IEN{:/}
+ tag | {::nomarkdown}CATEGORY{:/}
  routine | [GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
- return value type | SINGLE VALUE
- description | Returns the IEN if the value is found in the GMRV VITAL CATEGORY (#120.53)file. This remote procedure call is documented in Integration Agreement 4354.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the IEN if the value is found in the GMRV VITAL CATEGORY (#120.53)file. This remote procedure call is documented in Integration Agreement 4354.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GMV GET CATEGORY IEN [RPC entry point]
- Leading comment lines | Input,RESULT = variable name to hold result,GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD),Output: Returns the IEN if GMVTYPE exists in FILE 120.53,else returns -1
+ Leading comment lines | {::nomarkdown}Input<br/>RESULT = variable name to hold result<br/>GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/>Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>else returns -1{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMVCAT | LITERAL | 45 | true | GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD) | 
+| {::nomarkdown}GMVCAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

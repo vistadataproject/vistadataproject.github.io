@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB DEFERRED STATUS
- tag | RPCCHK
+ label | {::nomarkdown}XWB DEFERRED STATUS{:/}
+ tag | {::nomarkdown}RPCCHK{:/}
  routine | [XWBDRPC](http://code.osehra.org/dox/Routine_XWBDRPC_source.html)
- return value type | ARRAY
- description | This RPC will return the status of a deferred RPC.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC will return the status of a deferred RPC.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HANDLE | LITERAL | 30 | true | The handle returned from the XWB DEFERRED RPC. | 
+| {::nomarkdown}HANDLE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The handle returned from the XWB DEFERRED RPC.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

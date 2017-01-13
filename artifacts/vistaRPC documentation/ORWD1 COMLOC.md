@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD1 COMLOC
- tag | COMLOC
+ label | {::nomarkdown}ORWD1 COMLOC{:/}
+ tag | {::nomarkdown}COMLOC{:/}
  routine | [ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
- return value type | SINGLE VALUE
- description | Returns true if all orders in a list have a common ordering location.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns true if all orders in a list have a common ordering location.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return common location for orders in list, if any
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

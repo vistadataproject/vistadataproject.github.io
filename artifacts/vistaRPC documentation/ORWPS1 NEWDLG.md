@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPS1 NEWDLG
- tag | NEWDLG
+ label | {::nomarkdown}ORWPS1 NEWDLG{:/}
+ tag | {::nomarkdown}NEWDLG{:/}
  routine | [ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
- return value type | SINGLE VALUE
- description | Returns order dialog information for a new medication.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns order dialog information for a new medication.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return order dialog info for New Medication
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

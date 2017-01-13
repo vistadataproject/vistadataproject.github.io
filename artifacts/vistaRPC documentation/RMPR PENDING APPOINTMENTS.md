@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR PENDING APPOINTMENTS
- tag | EN
+ label | {::nomarkdown}RMPR PENDING APPOINTMENTS{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9PA](http://code.osehra.org/dox/Routine_RMPR9PA_source.html)
- return value type | ARRAY
- description | This procedure supplies the Pending Appointment data for TAB 2 of the GUI 2319. Pass IEN to Prosthetic Suspense (#668) Returned  RESULTS Array:RESULTS(0)=DATE/TIME^CLINIC^STATUS^TYPE
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This procedure supplies the Pending Appointment data for TAB 2 of the GUI 2319. Pass IEN to Prosthetic Suspense (#668) Returned  RESULTS Array:RESULTS(0)=DATE/TIME^CLINIC^STATUS^TYPE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 180 | true |  | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}180{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

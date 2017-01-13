@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET PAT ORDERS
- tag | GETORD
+ label | {::nomarkdown}MAGV GET PAT ORDERS{:/}
+ tag | {::nomarkdown}GETORD{:/}
  routine | [MAGVIM02](http://code.osehra.org/dox/Routine_MAGVIM02_source.html)
- return value type | ARRAY
- description | Returns an array of CONsult or RADiology orders for an inputENTERPRISE PATIENT IDENTIFIER.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns an array of CONsult or RADiology orders for an inputENTERPRISE PATIENT IDENTIFIER.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENTERPRISE PATIENT ID | LITERAL | 999 | true | ENTERPRISE PATIENT ID. | 
-| PATIENT ID TYPE | LITERAL | 1 | true | Single character per ID TYPE field (#.03) of theIMAGING PATIENT REFERENCE file (#2005.6). | 
-| PATIENT ID ASSIGNING AUTHORITY | LITERAL | 1 | true | Single character per ASSIGNING AUTHORITY field (#.02) of theIMAGING PATIENT REFERENCE file (#2005.6). | 
-| PATIENT ID CREATING ENTITY | LITERAL | 30 | true | Free text per CREATING ENTITY field (#.04) of the IMAGING PATIENT REFERENCE file (#2005.6). | 
-| ORDER TYPE | LITERAL | 3 | true | Free text as \CON\ for Consult Orders, \RAD\ for Radiology Orders. | 
-| ORDER DATE FILTER START | LITERAL | 8 | true | A date formatted as MMDDYYYY. | 
-| ORDER DATE FILTER END | LITERAL | 8 | true | A date formatted as MMDDYYYY. | 
+| {::nomarkdown}ENTERPRISE PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ENTERPRISE PATIENT ID.{:/} | 
+| {::nomarkdown}PATIENT ID TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Single character per ID TYPE field (#.03) of theIMAGING PATIENT REFERENCE file (#2005.6).{:/} | 
+| {::nomarkdown}PATIENT ID ASSIGNING AUTHORITY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Single character per ASSIGNING AUTHORITY field (#.02) of theIMAGING PATIENT REFERENCE file (#2005.6).{:/} | 
+| {::nomarkdown}PATIENT ID CREATING ENTITY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Free text per CREATING ENTITY field (#.04) of the IMAGING PATIENT REFERENCE file (#2005.6).{:/} | 
+| {::nomarkdown}ORDER TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Free text as \CON\ for Consult Orders, \RAD\ for Radiology Orders.{:/} | 
+| {::nomarkdown}ORDER DATE FILTER START{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A date formatted as MMDDYYYY.{:/} | 
+| {::nomarkdown}ORDER DATE FILTER END{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A date formatted as MMDDYYYY.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

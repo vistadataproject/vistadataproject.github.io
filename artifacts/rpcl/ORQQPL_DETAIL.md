@@ -30,6 +30,7 @@ title: RPCL documentation
 
 #### Example return value
 
+```
 Fatty liver (SCT 197321007)
          SNOMED-CT: Steatosis of liver
  Primary ICD-10-CM: R69.   [ILLNESS, UNSPECIFIED]
@@ -49,8 +50,10 @@ Fatty liver (SCT 197321007)
  
 ----------- Audit History -----------
 11/8/16:  IMMEDIACY changed by ALEXANDER,ROBERT from ACUTE to CHRONIC
+```
 
 
 
 
- Generated on January 12th 2017, 6:57:40 am
+
+ Generated on January 13th 2017, 6:16:09 am

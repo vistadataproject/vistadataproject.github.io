@@ -9,29 +9,29 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN DEFAULT REQUEST REASON
- tag | DEFRFREQ
+ label | {::nomarkdown}ORQQCN DEFAULT REQUEST REASON{:/}
+ tag | {::nomarkdown}DEFRFREQ{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return default reason for request for service
- Leading comment lines | ORSVC=pointer to file 123.5,ORDFN=patient, if RESOLVE=1,RESOLVE=1 to resolve boilerplate, 0 to not resolve
+ Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SERVICE | LITERAL | 16 |  |  | 
-| PATIENT DFN | LITERAL | 32 |  |  | 
-| RESOLVE | LITERAL | 2 |  |  | 
+| {::nomarkdown}SERVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  |  | 
+| {::nomarkdown}PATIENT DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} |  |  | 
+| {::nomarkdown}RESOLVE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

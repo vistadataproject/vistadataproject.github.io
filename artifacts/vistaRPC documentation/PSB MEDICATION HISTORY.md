@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB MEDICATION HISTORY
- tag | HISTORY
+ label | {::nomarkdown}PSB MEDICATION HISTORY{:/}
+ tag | {::nomarkdown}HISTORY{:/}
  routine | [PSBMLHS](http://code.osehra.org/dox/Routine_PSBMLHS_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the history of a medication for a patient from the orderable item.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the history of a medication for a patient from the orderable item.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | Patient IEN number. | 
-| PSBOI | LITERAL |  | true | Orderable Item # | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN number.{:/} | 
+| {::nomarkdown}PSBOI{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Orderable Item #{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

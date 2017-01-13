@@ -9,28 +9,28 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB VALIDATE ORDER
- tag | EN
+ label | {::nomarkdown}PSB VALIDATE ORDER{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [PSBVDLVL](http://code.osehra.org/dox/Routine_PSBVDLVL_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 10 | true | Patient IEN | 
-| PSBIEN | LITERAL |  | true | Medication Order Number | 
-| PSBTYPE | LITERAL | 2 | true | Order Type U for unit dose orderV for IV order | 
-| PSBADMIN | LITERAL |  | true | Administration date/time, if one is present. | 
-| PSBTAB | LITERAL | 10 | true | Medication tab the order is on. | 
-| PSBUID | LITERAL |  | true | The actual scan value. | 
-| PSBASTS | LITERAL |  | true | Current scan status of the VDL of the medication. | 
-| PSBORSTS | LITERAL |  | true | Current order status on the VDL> | 
-| PSBRMV |  |  | true | Action the user is trying to take. | 
-| psbdien |  |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN{:/} | 
+| {::nomarkdown}PSBIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Medication Order Number{:/} | 
+| {::nomarkdown}PSBTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Order Type U for unit dose orderV for IV order{:/} | 
+| {::nomarkdown}PSBADMIN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Administration date/time, if one is present.{:/} | 
+| {::nomarkdown}PSBTAB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Medication tab the order is on.{:/} | 
+| {::nomarkdown}PSBUID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The actual scan value.{:/} | 
+| {::nomarkdown}PSBASTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Current scan status of the VDL of the medication.{:/} | 
+| {::nomarkdown}PSBORSTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Current order status on the VDL>{:/} | 
+| {::nomarkdown}PSBRMV{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}Action the user is trying to take.{:/} | 
+| {::nomarkdown}psbdien{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

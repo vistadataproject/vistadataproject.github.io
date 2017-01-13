@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORECS01 VSITID
- tag | VSITID
+ label | {::nomarkdown}ORECS01 VSITID{:/}
+ tag | {::nomarkdown}VSITID{:/}
  routine | [ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return Visit IEN ptr to #9000010
- Leading comment lines | VSTSTR=HospLoc;DateTime;Category;PtIEN
+ Leading comment lines | {::nomarkdown}VSTSTR=HospLoc;DateTime;Category;PtIEN{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

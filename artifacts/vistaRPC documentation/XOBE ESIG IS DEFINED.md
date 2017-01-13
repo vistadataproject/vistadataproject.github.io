@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBE ESIG IS DEFINED
- tag | ISDEF
+ label | {::nomarkdown}XOBE ESIG IS DEFINED{:/}
+ tag | {::nomarkdown}ISDEF{:/}
  routine | [XOBESIG](http://code.osehra.org/dox/Routine_XOBESIG_source.html)
- return value type | SINGLE VALUE
- description | Returns whether the user currently has an Electronic Signature Code defined. Returns 0 if the e-sig code is null, 1 otherwise.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns whether the user currently has an Electronic Signature Code defined. Returns 0 if the e-sig code is null, 1 otherwise.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

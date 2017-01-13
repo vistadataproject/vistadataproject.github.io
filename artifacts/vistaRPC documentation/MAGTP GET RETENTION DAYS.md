@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP GET RETENTION DAYS
- tag | GETRTDAY
+ label | {::nomarkdown}MAGTP GET RETENTION DAYS{:/}
+ tag | {::nomarkdown}GETRTDAY{:/}
  routine | [MAGTP014](http://code.osehra.org/dox/Routine_MAGTP014_source.html)
- return value type | ARRAY
- description | Get the retention days of TELEPATHOLOGY unread worklsit for a site.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get the retention days of TELEPATHOLOGY unread worklsit for a site.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SITE | LITERAL | 30 | true | SITE NUMBER | 
+| {::nomarkdown}SITE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}SITE NUMBER{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

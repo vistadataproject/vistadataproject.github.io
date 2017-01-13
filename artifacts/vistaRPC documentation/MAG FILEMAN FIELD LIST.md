@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG FILEMAN FIELD LIST
- tag | FIELDLST
+ label | {::nomarkdown}MAG FILEMAN FIELD LIST{:/}
+ tag | {::nomarkdown}FIELDLST{:/}
  routine | [MAGUFFLL](http://code.osehra.org/dox/Routine_MAGUFFLL_source.html)
- return value type | ARRAY
- description | This remote procedure returns a list of fields from a FileMan file or subfile in either alpha or numeric order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure returns a list of fields from a FileMan file or subfile in either alpha or numeric order.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
-| ORDER | LITERAL | 1 | true | This is the desired return order for the field list:  either A for alpha or N for numeric. | 
+| {::nomarkdown}FILENO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of a FileMan file or subfile.{:/} | 
+| {::nomarkdown}ORDER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the desired return order for the field list:  either A for alpha or N for numeric.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

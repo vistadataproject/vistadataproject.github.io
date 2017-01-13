@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCU DFLDMAP
- tag | DFLDMAP
+ label | {::nomarkdown}ORRHCU DFLDMAP{:/}
+ tag | {::nomarkdown}DFLDMAP{:/}
  routine | [ORRHCU](http://code.osehra.org/dox/Routine_ORRHCU_source.html)
- return value type | ARRAY
- description | Returns a mapping from criteria categories to display field categories
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a mapping from criteria categories to display field categories{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

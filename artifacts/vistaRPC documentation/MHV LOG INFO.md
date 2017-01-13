@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG INFO
- tag | LOGINFO
+ label | {::nomarkdown}MHV LOG INFO{:/}
+ tag | {::nomarkdown}LOGINFO{:/}
  routine | [MHVUL1](http://code.osehra.org/dox/Routine_MHVUL1_source.html)
- return value type | ARRAY
- description | Returns information on MHV application logging settings.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns information on MHV application logging settings.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

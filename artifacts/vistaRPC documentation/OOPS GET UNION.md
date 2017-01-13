@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS GET UNION
- tag | UNIGET
+ label | {::nomarkdown}OOPS GET UNION{:/}
+ tag | {::nomarkdown}UNIGET{:/}
  routine | [OOPSGUI6](http://code.osehra.org/dox/Routine_OOPSGUI6_source.html)
- return value type | ARRAY
- description | This call retrieves a listing of all Unions.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call retrieves a listing of all Unions.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

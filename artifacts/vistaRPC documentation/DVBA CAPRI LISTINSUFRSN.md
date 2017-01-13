@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI LISTINSUFRSN
- tag | LSTIR
+ label | {::nomarkdown}DVBA CAPRI LISTINSUFRSN{:/}
+ tag | {::nomarkdown}LSTIR{:/}
  routine | [DVBACPR1](http://code.osehra.org/dox/Routine_DVBACPR1_source.html)
- return value type | ARRAY
- description | This RPC returns a list (array) of valid Insufficient Reasons that can be linked to a 2507 exam.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list (array) of valid Insufficient Reasons that can be linked to a 2507 exam.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

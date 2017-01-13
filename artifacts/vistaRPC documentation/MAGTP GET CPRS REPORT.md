@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGTP GET CPRS REPORT
- tag | GETREP
+ label | {::nomarkdown}MAGTP GET CPRS REPORT{:/}
+ tag | {::nomarkdown}GETREP{:/}
  routine | [MAGTP007](http://code.osehra.org/dox/Routine_MAGTP007_source.html)
- return value type | ARRAY
- description | Get lab info for a case (ex.: SP 12 2). The layout is similar to the one in CPRS.The original code has been used by RPC call ORWRP REPORT TEXT.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get lab info for a case (ex.: SP 12 2). The layout is similar to the one in CPRS.The original code has been used by RPC call ORWRP REPORT TEXT.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LRSS | LITERAL | 2 | true | AP Section | 
-| YEAR | LITERAL | 4 | true | Year | 
-| LRAN | LITERAL | 5 | true | Accession Number | 
+| {::nomarkdown}LRSS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}AP Section{:/} | 
+| {::nomarkdown}YEAR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Year{:/} | 
+| {::nomarkdown}LRAN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Accession Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

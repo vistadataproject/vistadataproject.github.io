@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF UNA GET REASONS
- tag | GETVAL
+ label | {::nomarkdown}DSIF UNA GET REASONS{:/}
+ tag | {::nomarkdown}GETVAL{:/}
  routine | [DSIFUCEN](http://code.osehra.org/dox/Routine_DSIFUCEN_source.html)
- return value type | GLOBAL ARRAY
- description | Get values from 162.93, using API: DISP9^FBUCUTL5(162.93)
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Get values from 162.93, using API: DISP9^FBUCUTL5(162.93){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

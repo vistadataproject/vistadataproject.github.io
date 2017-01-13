@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA GET ALL PROVAVAILS
- tag | GETPA
+ label | {::nomarkdown}MAGVA GET ALL PROVAVAILS{:/}
+ tag | {::nomarkdown}GETPA{:/}
  routine | [MAGVAG01](http://code.osehra.org/dox/Routine_MAGVAG01_source.html)
- return value type | ARRAY
- description | Returns all records in STORAGE PROVIDER AVAILABILITY file (#2006.924).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns all records in STORAGE PROVIDER AVAILABILITY file (#2006.924).{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

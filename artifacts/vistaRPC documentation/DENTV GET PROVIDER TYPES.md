@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV GET PROVIDER TYPES
- tag | TYPE
+ label | {::nomarkdown}DENTV GET PROVIDER TYPES{:/}
+ tag | {::nomarkdown}TYPE{:/}
  routine | [DENTVRP5](http://code.osehra.org/dox/Routine_DENTVRP5_source.html)
- return value type | ARRAY
- description | Gets a list of Provider Types from the DENTAL PROVIDER TYPE (220.51)file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Gets a list of Provider Types from the DENTAL PROVIDER TYPE (220.51)file.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM RADIOLOGY PROCEDURES
- tag | PROC
+ label | {::nomarkdown}MAG DICOM RADIOLOGY PROCEDURES{:/}
+ tag | {::nomarkdown}PROC{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | ARRAY
- description | This RPC returns a list of Radiology Procedures for 'no-credit' Imaginglocations within a given division.If the division does not have any 'no-credit' Imaging locations defined,the results will return an error message indicating the problem.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list of Radiology Procedures for 'no-credit' Imaginglocations within a given division.If the division does not have any 'no-credit' Imaging locations defined,the results will return an error message indicating the problem.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIV | LITERAL | 30 | true | This is the division used during the lookup process. | 
-| FILTER | LITERAL | 30 | true | If this parameter is set to \1\ procedure types of \B\road and \P\arent will be filtered from the return array. | 
+| {::nomarkdown}DIV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the division used during the lookup process.{:/} | 
+| {::nomarkdown}FILTER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If this parameter is set to \1\ procedure types of \B\road and \P\arent will be filtered from the return array.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETPATELIG
- tag | ELIG
+ label | {::nomarkdown}EC GETPATELIG{:/}
+ tag | {::nomarkdown}ELIG{:/}
  routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of patient eligibilities.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patient eligibilities.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input variable, ECARY contains the patient IEN (#2). | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable, ECARY contains the patient IEN (#2).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

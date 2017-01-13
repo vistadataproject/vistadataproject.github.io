@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB MOB DRUG LIST
- tag | OILST
+ label | {::nomarkdown}PSB MOB DRUG LIST{:/}
+ tag | {::nomarkdown}OILST{:/}
  routine | [PSBRPCMO](http://code.osehra.org/dox/Routine_PSBRPCMO_source.html)
- return value type | ARRAY
- description | Used by the BCMA/CPRS Med Order Button to return an array of drug.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Used by the BCMA/CPRS Med Order Button to return an array of drug.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBSCAN | LITERAL | 40 | true | PSBSCAN is the value that has been scanned or entered by the user. | 
-| PSBOTYP | LITERAL | 30 | true | Type of list:     Dispensed Drugs   = \UD\     IV Medications    = \IV\     Orderable Item    = \OIT\     Drug Class        = \VAC\ | 
+| {::nomarkdown}PSBSCAN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PSBSCAN is the value that has been scanned or entered by the user.{:/} | 
+| {::nomarkdown}PSBOTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Type of list:     Dispensed Drugs   = \UD\     IV Medications    = \IV\     Orderable Item    = \OIT\     Drug Class        = \VAC\{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA ALERT
- tag | ALERT
+ label | {::nomarkdown}ORWDXA ALERT{:/}
+ tag | {::nomarkdown}ALERT{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | SINGLE VALUE
- description | Set order to send an alert when the order is resulted.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Set order to send an alert when the order is resulted.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | alert user (ORDUZ) when order (ORID) resulted
- Leading comment lines | if no user passed, use ordering provider:
+ Leading comment lines | {::nomarkdown}if no user passed, use ordering provider:{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRC RESULTS ACKNOWLEDGE
- tag | ACK
+ label | {::nomarkdown}ORRC RESULTS ACKNOWLEDGE{:/}
+ tag | {::nomarkdown}ACK{:/}
  routine | [ORRCACK](http://code.osehra.org/dox/Routine_ORRCACK_source.html)
- return value type | ARRAY
- description | This call will mark new results as being acknowledged by the user; itwill return a true or false value for each order ID if successfully saved.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This call will mark new results as being acknowledged by the user; itwill return a true or false value for each order ID if successfully saved.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL |  | true | This is the pointer to the user in the New Person file #200. | 
-| ORDERS | LIST |  | true | This is the list of order ID's whose results may be acknowledged, in theform \ORR:###^1\ where ### is the order number from file #100 and thesecond ^-piece is either 1 or 0 if the order was acknowledged. | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the user in the New Person file #200.{:/} | 
+| {::nomarkdown}ORDERS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of order ID's whose results may be acknowledged, in theform \ORR:###^1\ where ### is the order number from file #100 and thesecond ^-piece is either 1 or 0 if the order was acknowledged.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

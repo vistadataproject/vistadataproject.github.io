@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET FUTURE APPTS
- tag | COL
+ label | {::nomarkdown}SPN GET FUTURE APPTS{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPC2](http://code.osehra.org/dox/Routine_SPNJRPC2_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a listing of patients with appointment informationif they are scheduled for an appointment during the requested date range.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a listing of patients with appointment informationif they are scheduled for an appointment during the requested date range.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLST | LIST |  |  | A list of Integration Control Numbers of patients in the PATIENT file (#2)in the following format: (ICN^ICN^ICN^ICN^ICN...) | 
-| SPNSEL | LITERAL |  |  | Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2 | 
-| SPNSTRT | LITERAL |  |  | Starting date range. | 
-| SPNEND | LITERAL |  |  | Ending date range. | 
+| {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}A list of Integration Control Numbers of patients in the PATIENT file (#2)in the following format: (ICN^ICN^ICN^ICN^ICN...){:/} | 
+| {::nomarkdown}SPNSEL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2{:/} | 
+| {::nomarkdown}SPNSTRT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Starting date range.{:/} | 
+| {::nomarkdown}SPNEND{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending date range.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

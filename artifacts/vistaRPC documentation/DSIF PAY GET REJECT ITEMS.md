@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY GET REJECT ITEMS
- tag | GETREJ
+ label | {::nomarkdown}DSIF PAY GET REJECT ITEMS{:/}
+ tag | {::nomarkdown}GETREJ{:/}
  routine | [DSIFPAY6](http://code.osehra.org/dox/Routine_DSIFPAY6_source.html)
- return value type | GLOBAL ARRAY
- description | Returns a list of rejects sorted by rejected Batches
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns a list of rejects sorted by rejected Batches{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

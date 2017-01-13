@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR OWL LOCK FILE
- tag | OWLL
+ label | {::nomarkdown}RMPR OWL LOCK FILE{:/}
+ tag | {::nomarkdown}OWLL{:/}
  routine | [RMPRGULK](http://code.osehra.org/dox/Routine_RMPRGULK_source.html)
- return value type | ARRAY
- description |  
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} {:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL | 50 | true |   | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown} {:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

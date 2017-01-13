@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORR GETTXT
- tag | GETTXT
+ label | {::nomarkdown}ORWORR GETTXT{:/}
+ tag | {::nomarkdown}GETTXT{:/}
  routine | [ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
- return value type | ARRAY
- description | Returns the text of an existing order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the text of an existing order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | get text of an order
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

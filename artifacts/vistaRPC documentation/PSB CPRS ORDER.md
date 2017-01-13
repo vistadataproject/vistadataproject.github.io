@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB CPRS ORDER
- tag | ORDER
+ label | {::nomarkdown}PSB CPRS ORDER{:/}
+ tag | {::nomarkdown}ORDER{:/}
  routine | [PSBRPCMO](http://code.osehra.org/dox/Routine_PSBRPCMO_source.html)
- return value type | ARRAY
- description | This RPC sets results of a Med Order Button transaction in a global for Inpatient Pharmacy to pick up.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC sets results of a Med Order Button transaction in a global for Inpatient Pharmacy to pick up.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBHDR | LITERAL |  | true |  | 
-| PSBREC | LIST |  | true |  | 
+| {::nomarkdown}PSBHDR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}PSBREC{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

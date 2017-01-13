@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPCE PCE4NOTE
- tag | PCE4NOTE
+ label | {::nomarkdown}ORWPCE PCE4NOTE{:/}
+ tag | {::nomarkdown}PCE4NOTE{:/}
  routine | [ORWPCE3](http://code.osehra.org/dox/Routine_ORWPCE3_source.html)
- return value type | ARRAY
- description | Returns the encounter information for an associated note in the format: LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPTLST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the encounter information for an associated note in the format: LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPTLST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv){:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return encounter for an associated note
- Leading comment lines | LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT,LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv)
+ Leading comment lines | {::nomarkdown}LST(1)=HDR^AllowEdit^CPTRequired^VStr^Author^hasCPT<br/>LST(n)=TYP+^CODE^CAT^NARR^QUAL1^QUAL2 (QUAL1=Primary!Qty, QUAL2=Prv){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

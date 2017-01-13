@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DDR GET DD HELP
- tag | GETHLPC
+ label | {::nomarkdown}DDR GET DD HELP{:/}
+ tag | {::nomarkdown}GETHLPC{:/}
  routine | [DDR2](http://code.osehra.org/dox/Routine_DDR2_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

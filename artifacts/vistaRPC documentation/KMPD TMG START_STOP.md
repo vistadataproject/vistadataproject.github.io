@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD TMG START_STOP
- tag | TMGSST
+ label | {::nomarkdown}KMPD TMG START_STOP{:/}
+ tag | {::nomarkdown}TMGSST{:/}
  routine | [KMPDU7](http://code.osehra.org/dox/Routine_KMPDU7_source.html)
- return value type | ARRAY
- description | Start/Stop Timing Monitor.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Start/Stop Timing Monitor.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| START/STOP | LITERAL | 8 | true | 0 - stop1 - start | 
+| {::nomarkdown}START/STOP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}0 - stop1 - start{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

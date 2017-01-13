@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGJ GET TREATING LIST
- tag | FACLIST
+ label | {::nomarkdown}MAGJ GET TREATING LIST{:/}
+ tag | {::nomarkdown}FACLIST{:/}
  routine | [MAGJLST1](http://code.osehra.org/dox/Routine_MAGJLST1_source.html)
- return value type | ARRAY
- description | Get Treating Facility List for a patient.  This RPC merely callsthe subroutine used for the VAFCTFU GET TREATING LIST rpc.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Get Treating Facility List for a patient.  This RPC merely callsthe subroutine used for the VAFCTFU GET TREATING LIST rpc.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | Patient DFN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

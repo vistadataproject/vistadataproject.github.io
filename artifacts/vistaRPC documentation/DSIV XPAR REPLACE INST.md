@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV XPAR REPLACE INST
- tag | REPL
+ label | {::nomarkdown}DSIV XPAR REPLACE INST{:/}
+ tag | {::nomarkdown}REPL{:/}
  routine | [DSIVXPR1](http://code.osehra.org/dox/Routine_DSIVXPR1_source.html)
- return value type | SINGLE VALUE
- description | For an existing entity/parameter/instance, this will change the value ofthat instance
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}For an existing entity/parameter/instance, this will change the value ofthat instance{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATA | LITERAL | 250 | true | DATA = p1~p2~p3~~p5  where  p1 - entity - optional - defaults to \USR\  p2 - parameter - required  p3 - instance - required - current instance value  p5 - required - replacement value for current instance | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA = p1~p2~p3~~p5  where  p1 - entity - optional - defaults to \USR\  p2 - parameter - required  p3 - instance - required - current instance value  p5 - required - replacement value for current instance{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

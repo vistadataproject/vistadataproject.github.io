@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX IMMUN LIST
- tag | IMMLIST
+ label | {::nomarkdown}ORQQPX IMMUN LIST{:/}
+ tag | {::nomarkdown}IMMLIST{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | ARRAY
- description | Returns a list of patient immunizations.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patient immunizations.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return pt's immunization list:
- Leading comment lines | id^name^date/time^reaction^inverse d/t
+ Leading comment lines | {::nomarkdown}id^name^date/time^reaction^inverse d/t{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | Patient identifier (DFN) from patient file [#2]. | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier (DFN) from patient file [#2].{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

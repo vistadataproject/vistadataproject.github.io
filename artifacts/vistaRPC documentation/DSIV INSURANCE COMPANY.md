@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV INSURANCE COMPANY
- tag | INSCO
+ label | {::nomarkdown}DSIV INSURANCE COMPANY{:/}
+ tag | {::nomarkdown}INSCO{:/}
  routine | [DSIVIC](http://code.osehra.org/dox/Routine_DSIVIC_source.html)
- return value type | ARRAY
- description | Looks up insurance company name and returns match or matches or error message.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Looks up insurance company name and returns match or matches or error message.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NAME | LITERAL | 30 | true | Insurance company name to match. | 
+| {::nomarkdown}NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Insurance company name to match.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

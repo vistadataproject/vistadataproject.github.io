@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGVA CREATE PROVIDER
- tag | ADDPRV
+ label | {::nomarkdown}MAGVA CREATE PROVIDER{:/}
+ tag | {::nomarkdown}ADDPRV{:/}
  routine | [MAGVAC01](http://code.osehra.org/dox/Routine_MAGVAC01_source.html)
- return value type | SINGLE VALUE
- description | Add a Storage Provider record to file STORAGE PROVIDER (#2006.917)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Add a Storage Provider record to file STORAGE PROVIDER (#2006.917){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGPARAM | LIST |  | true |    MAGPARAM(\STORAGE PROVIDER TYPE\)   MAGPARAM(\STORAGE PROVIDER PLACE\)   MAGPARAM(\ARCHIVE\)   MAGPARAM(\PRIMARY STORAGE\) | 
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}   MAGPARAM(\STORAGE PROVIDER TYPE\)   MAGPARAM(\STORAGE PROVIDER PLACE\)   MAGPARAM(\ARCHIVE\)   MAGPARAM(\PRIMARY STORAGE\){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

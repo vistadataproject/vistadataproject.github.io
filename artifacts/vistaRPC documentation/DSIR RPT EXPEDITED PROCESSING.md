@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR RPT EXPEDITED PROCESSING
- tag | EXPRPT
+ label | {::nomarkdown}DSIR RPT EXPEDITED PROCESSING{:/}
+ tag | {::nomarkdown}EXPRPT{:/}
  routine | [DSIROIR](http://code.osehra.org/dox/Routine_DSIROIR_source.html)
- return value type | GLOBAL ARRAY
- description | THIS CALL PROVIDES DATA FOR THE EXPEDITED PROCESSING REPORT IN ROI
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}THIS CALL PROVIDES DATA FOR THE EXPEDITED PROCESSING REPORT IN ROI{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FRDT | LITERAL | 7 | true | FRDT - From Date - FileMan Format - No time | 
-| TODT | LITERAL | 7 | true | TODT To Date - FileMan Format - No time | 
-| DIV | LITERAL | 15 | true | DIV - Division number/Location number - defaults to DUZ(2) | 
+| {::nomarkdown}FRDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FRDT - From Date - FileMan Format - No time{:/} | 
+| {::nomarkdown}TODT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TODT To Date - FileMan Format - No time{:/} | 
+| {::nomarkdown}DIV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DIV - Division number/Location number - defaults to DUZ(2){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

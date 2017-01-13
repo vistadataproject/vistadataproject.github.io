@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC ACTIVE POSITION ASSIGNMENTS
- tag | ACTPOS
+ label | {::nomarkdown}SC ACTIVE POSITION ASSIGNMENTS{:/}
+ tag | {::nomarkdown}ACTPOS{:/}
  routine | [SCUTBK4](http://code.osehra.org/dox/Routine_SCUTBK4_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC is used to obtain the active positions associated with a patientteam assignment.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to obtain the active positions associated with a patientteam assignment.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPU | LIST | 512 | true | The parameters are DFN, Beginning date range, Ending date range, and Team | 
+| {::nomarkdown}INPU{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The parameters are DFN, Beginning date range, Ending date range, and Team{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

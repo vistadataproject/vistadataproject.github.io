@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB NOTE TITLES
- tag | NOTETL
+ label | {::nomarkdown}DVBAB NOTE TITLES{:/}
+ tag | {::nomarkdown}NOTETL{:/}
  routine | [DVBABTIU](http://code.osehra.org/dox/Routine_DVBABTIU_source.html)
- return value type | ARRAY
- description | Returns list of note titles from TIU in formatname+\  \+type+\  \+status
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of note titles from TIU in formatname+\  \+type+\  \+status{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

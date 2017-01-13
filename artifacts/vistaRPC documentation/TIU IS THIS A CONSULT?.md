@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU IS THIS A CONSULT?
- tag | ISCNSLT
+ label | {::nomarkdown}TIU IS THIS A CONSULT?{:/}
+ tag | {::nomarkdown}ISCNSLT{:/}
  routine | [TIUCNSLT](http://code.osehra.org/dox/Routine_TIUCNSLT_source.html)
- return value type | SINGLE VALUE
- description | BOOLEAN RPC which evaluates whether the title indicated is that of aconsult.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}BOOLEAN RPC which evaluates whether the title indicated is that of aconsult.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TITLE | LITERAL |  |  | This is the record number in file 8925.1 for the title selected. | 
+| {::nomarkdown}TITLE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the record number in file 8925.1 for the title selected.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

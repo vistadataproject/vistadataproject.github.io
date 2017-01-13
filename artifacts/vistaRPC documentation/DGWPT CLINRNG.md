@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DGWPT CLINRNG
- tag | CLINRNG
+ label | {::nomarkdown}DGWPT CLINRNG{:/}
+ tag | {::nomarkdown}CLINRNG{:/}
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
- return value type | ARRAY
- description | Returns a list of selectable options from which a user can choose a daterange for appointments.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of selectable options from which a user can choose a daterange for appointments.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

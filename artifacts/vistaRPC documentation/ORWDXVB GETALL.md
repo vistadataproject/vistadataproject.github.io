@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB GETALL
- tag | GETALL
+ label | {::nomarkdown}ORWDXVB GETALL{:/}
+ tag | {::nomarkdown}GETALL{:/}
  routine | [ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
- return value type | GLOBAL ARRAY
- description | Return patient's Blood Bank information.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Return patient's Blood Bank information.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get all data in one call and let the GUI divide it up
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU VALDT
- tag | VALDT
+ label | {::nomarkdown}ORWU VALDT{:/}
+ tag | {::nomarkdown}VALDT{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | SINGLE VALUE
- description | Validates date/time entry and returns value of Y from %DT call.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Validates date/time entry and returns value of Y from %DT call.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Validate date/time
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ROR GET USER INFO
- tag | USERINFO
+ label | {::nomarkdown}ROR GET USER INFO{:/}
+ tag | {::nomarkdown}USERINFO{:/}
  routine | [RORRP024](http://code.osehra.org/dox/Routine_RORRP024_source.html)
- return value type | ARRAY
- description | The ROR GET USER INFO remote procedure returns basic information about theuser.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}The ROR GET USER INFO remote procedure returns basic information about theuser.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL |  |  | User IEN in the NEW PERSON file. By default (if $G(USER)'>0), the DUZ isused). | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}User IEN in the NEW PERSON file. By default (if $G(USER)'>0), the DUZ isused).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

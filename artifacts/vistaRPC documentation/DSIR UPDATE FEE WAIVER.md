@@ -9,25 +9,25 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR UPDATE FEE WAIVER
- tag | UPDATEFW
+ label | {::nomarkdown}DSIR UPDATE FEE WAIVER{:/}
+ tag | {::nomarkdown}UPDATEFW{:/}
  routine | [DSIRBIL0](http://code.osehra.org/dox/Routine_DSIRBIL0_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IEN | LITERAL |  | true | IEN FROM 19620 (ROI INSTANCE FILE) | 
-| FWCLERK | LITERAL |  | true | ID FROM FILE 200 (NEW PERSON FILE) | 
-| FWRQST | LITERAL |  | true | FEE WAIVER REQUESTED 0=TRUE, 1=FALSE | 
-| FWRQSTDT | LITERAL |  | true | FEE WAIVER REQUESTED DATE | 
-| FWADJ | LITERAL |  | true | FEE WAIVER ADJUDICATED 0=TRUE, 1=FALSE | 
-| FWGRANT | LITERAL |  | true | FEE WAIVER GRANTED 0=TRUE, 1=FALSE | 
-| FWADJDT | LITERAL |  | true | FEE WAIVER ADJUDICATED DATE | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN FROM 19620 (ROI INSTANCE FILE){:/} | 
+| {::nomarkdown}FWCLERK{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}ID FROM FILE 200 (NEW PERSON FILE){:/} | 
+| {::nomarkdown}FWRQST{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER REQUESTED 0=TRUE, 1=FALSE{:/} | 
+| {::nomarkdown}FWRQSTDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER REQUESTED DATE{:/} | 
+| {::nomarkdown}FWADJ{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED 0=TRUE, 1=FALSE{:/} | 
+| {::nomarkdown}FWGRANT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER GRANTED 0=TRUE, 1=FALSE{:/} | 
+| {::nomarkdown}FWADJDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED DATE{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

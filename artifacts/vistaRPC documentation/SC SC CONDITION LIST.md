@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC SC CONDITION LIST
- tag | SCLI
+ label | {::nomarkdown}SC SC CONDITION LIST{:/}
+ tag | {::nomarkdown}SCLI{:/}
  routine | [SCMCWAIT](http://code.osehra.org/dox/Routine_SCMCWAIT_source.html)
- return value type | ARRAY
- description | Return conditions of Patient
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return conditions of Patient{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SC  | LIST |  |  |  | 
+| {::nomarkdown}SC {:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

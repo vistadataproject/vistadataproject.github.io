@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS CREATE AMENDMENT
- tag | AMEND
+ label | {::nomarkdown}OOPS CREATE AMENDMENT{:/}
+ tag | {::nomarkdown}AMEND{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | SINGLE VALUE
- description | Files an Amendment for the selected case in ASISTS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Files an Amendment for the selected case in ASISTS.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SING | LITERAL | 256 | true | The IEN of the ASISTS case to have an Amendment created for is passed in. | 
+| {::nomarkdown}SING{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The IEN of the ASISTS case to have an Amendment created for is passed in.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

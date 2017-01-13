@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV SET RECORD STATUS
- tag | UPREC
+ label | {::nomarkdown}ANRV SET RECORD STATUS{:/}
+ tag | {::nomarkdown}UPREC{:/}
  routine | [ANRVOB](http://code.osehra.org/dox/Routine_ANRVOB_source.html)
- return value type | SINGLE VALUE
- description | Updates the status of the top level Outcome record.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Updates the status of the top level Outcome record.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

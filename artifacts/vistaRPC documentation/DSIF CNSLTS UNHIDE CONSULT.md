@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS UNHIDE CONSULT
- tag | UNHIDE
+ label | {::nomarkdown}DSIF CNSLTS UNHIDE CONSULT{:/}
+ tag | {::nomarkdown}UNHIDE{:/}
  routine | [DSIFCNS](http://code.osehra.org/dox/Routine_DSIFCNS_source.html)
- return value type | SINGLE VALUE
- description | This RPC will unhide a Consult hidden in the FBCS Consult Tracking (#19655) file.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will unhide a Consult hidden in the FBCS Consult Tracking (#19655) file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFIEN | LITERAL |  | true | The IEN of the Consult you wish to unhide. | 
+| {::nomarkdown}DSIFIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The IEN of the Consult you wish to unhide.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

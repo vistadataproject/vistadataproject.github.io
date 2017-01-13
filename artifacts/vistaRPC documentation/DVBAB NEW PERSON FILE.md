@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB NEW PERSON FILE
- tag | START
+ label | {::nomarkdown}DVBAB NEW PERSON FILE{:/}
+ tag | {::nomarkdown}START{:/}
  routine | [DVBAB84](http://code.osehra.org/dox/Routine_DVBAB84_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

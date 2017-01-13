@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM3 PTFONE
- tag | PTFONE
+ label | {::nomarkdown}ORAM3 PTFONE{:/}
+ tag | {::nomarkdown}PTFONE{:/}
  routine | [ORAM3](http://code.osehra.org/dox/Routine_ORAM3_source.html)
- return value type | SINGLE VALUE
- description | Gets home phone^work phone for the patient in question.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Gets home phone^work phone for the patient in question.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

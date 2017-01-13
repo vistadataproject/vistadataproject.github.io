@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG3 DICOM CAPTURE GE LIST
- tag | GGELIST
+ label | {::nomarkdown}MAG3 DICOM CAPTURE GE LIST{:/}
+ tag | {::nomarkdown}GGELIST{:/}
  routine | [MAGNDCMC](http://code.osehra.org/dox/Routine_MAGNDCMC_source.html)
- return value type | ARRAY
- description | Return all records in IMAGING DICOM FIELDS file (#2005.71)per SOP type  (e.g \TELEDERM\)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return all records in IMAGING DICOM FIELDS file (#2005.71)per SOP type  (e.g \TELEDERM\){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGSOP | LITERAL |  | true | SOP type (e.g \TELEDERM\) | 
+| {::nomarkdown}MAGSOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}SOP type (e.g \TELEDERM\){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

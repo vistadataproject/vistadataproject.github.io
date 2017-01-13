@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB LOCK
- tag | LOCK
+ label | {::nomarkdown}PSB LOCK{:/}
+ tag | {::nomarkdown}LOCK{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | LOCKING NO LONGER USED AS OF PATCH 7.  INCLUDED FOR BACKWARD COMPATABILITYWITH GUI.  CALL WILL BE REMOVED IN PATCH 8.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}LOCKING NO LONGER USED AS OF PATCH 7.  INCLUDED FOR BACKWARD COMPATABILITYWITH GUI.  CALL WILL BE REMOVED IN PATCH 8.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

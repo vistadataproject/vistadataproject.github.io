@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MHV LOG OFF
- tag | LOGOFF
+ label | {::nomarkdown}MHV LOG OFF{:/}
+ tag | {::nomarkdown}LOGOFF{:/}
  routine | [MHVUL1](http://code.osehra.org/dox/Routine_MHVUL1_source.html)
- return value type | SINGLE VALUE
- description | Turns off MHV application logging.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Turns off MHV application logging.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ LEGCR
- tag | LEGCR
+ label | {::nomarkdown}YTQ LEGCR{:/}
+ tag | {::nomarkdown}LEGCR{:/}
  routine | [YTQAPI9](http://code.osehra.org/dox/Routine_YTQAPI9_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

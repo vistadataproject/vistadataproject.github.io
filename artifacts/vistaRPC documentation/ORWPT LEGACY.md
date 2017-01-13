@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT LEGACY
- tag | LEGACY
+ label | {::nomarkdown}ORWPT LEGACY{:/}
+ tag | {::nomarkdown}LEGACY{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | ARRAY
- description | Returns message if patient has data on a legacy system.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns message if patient has data on a legacy system.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return message if data on the legacy system
- Leading comment lines | ORLST(0)=1 if data,  ORLST(n)=display message if data
+ Leading comment lines | {::nomarkdown}ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

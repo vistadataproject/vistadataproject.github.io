@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XWB EGCHO LIST
- tag | LIST
+ label | {::nomarkdown}XWB EGCHO LIST{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [XWBZ1](http://code.osehra.org/dox/Routine_XWBZ1_source.html)
- return value type | ARRAY
- description | This RPC brings back a small list of elements to the client.  It exists forsupport of EGcho - Broker demonstration program.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC brings back a small list of elements to the client.  It exists forsupport of EGcho - Broker demonstration program.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

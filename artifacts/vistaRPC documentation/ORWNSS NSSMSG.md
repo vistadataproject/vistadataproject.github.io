@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWNSS NSSMSG
- tag | NSSMSG
+ label | {::nomarkdown}ORWNSS NSSMSG{:/}
+ tag | {::nomarkdown}NSSMSG{:/}
  routine | [ORWNSS](http://code.osehra.org/dox/Routine_ORWNSS_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Retrieve site message for None-Standard Schedule
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

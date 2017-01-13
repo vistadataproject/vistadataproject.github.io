@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ SKIP
- tag | SKIPPED
+ label | {::nomarkdown}YTQ SKIP{:/}
+ tag | {::nomarkdown}SKIPPED{:/}
  routine | [YTQAPI](http://code.osehra.org/dox/Routine_YTQAPI_source.html)
- return value type | ARRAY
- description | INPUT: CODE as MH TEST SURVEY nameOUTPUT: QuestionID^SkippedQuestionIDordered by QuestionID,SkippedQuestionID
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}INPUT: CODE as MH TEST SURVEY nameOUTPUT: QuestionID^SkippedQuestionIDordered by QuestionID,SkippedQuestionID{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

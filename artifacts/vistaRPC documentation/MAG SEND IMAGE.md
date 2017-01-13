@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG SEND IMAGE
- tag | MAGSEND
+ label | {::nomarkdown}MAG SEND IMAGE{:/}
+ tag | {::nomarkdown}MAGSEND{:/}
  routine | [MAGROI01](http://code.osehra.org/dox/Routine_MAGROI01_source.html)
- return value type | ARRAY
- description | QUEUE IMAGE TO A DESTINATION
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}QUEUE IMAGE TO A DESTINATION{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL | 7 | true | IEN of the image to send | 
-| QREC | LITERAL | 3 | true | Record number of the destination queue (DOS/DICOM) | 
-| PRI | LITERAL | 4 | true | Priority | 
-| TYPE | LITERAL | 1 | true | Type of Image: 1:DOS, 2:DICOM | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the image to send{:/} | 
+| {::nomarkdown}QREC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Record number of the destination queue (DOS/DICOM){:/} | 
+| {::nomarkdown}PRI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Priority{:/} | 
+| {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Type of Image: 1:DOS, 2:DICOM{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

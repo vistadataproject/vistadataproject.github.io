@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ JH RPT
- tag | JHRPT
+ label | {::nomarkdown}MAGQ JH RPT{:/}
+ tag | {::nomarkdown}JHRPT{:/}
  routine | [MAGQBJHR](http://code.osehra.org/dox/Routine_MAGQBJHR_source.html)
- return value type | ARRAY
- description | Reports on the current set of Jukebox to harddisk (JBTOHD) processes (Who,queued, what patients, when, and workstation logons)
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Reports on the current set of Jukebox to harddisk (JBTOHD) processes (Who,queued, what patients, when, and workstation logons){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| null |  |  | true | No input parameter is defined for this procedure. | 
+| {::nomarkdown}null{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}No input parameter is defined for this procedure.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQVS DETAIL NOTES
- tag | DETNOTE
+ label | {::nomarkdown}ORQQVS DETAIL NOTES{:/}
+ tag | {::nomarkdown}DETNOTE{:/}
  routine | [ORQQVS](http://code.osehra.org/dox/Routine_ORQQVS_source.html)
- return value type | ARRAY
- description | Returns the progress notes based on patient and visit identifier.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the progress notes based on patient and visit identifier.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return progress notes for a patient's visit
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Patient DFN | LITERAL | 16 | true | Patient identifier (DFN) from File #2 (Patient). | 
-| Visit | LITERAL | 16 | true | Visit identifier. | 
+| {::nomarkdown}Patient DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier (DFN) from File #2 (Patient).{:/} | 
+| {::nomarkdown}Visit{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Visit identifier.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

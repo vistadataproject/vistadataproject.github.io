@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU MED GET PATIENT DATA
- tag | GETPATDT
+ label | {::nomarkdown}TIU MED GET PATIENT DATA{:/}
+ tag | {::nomarkdown}GETPATDT{:/}
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
- return value type | ARRAY
- description | Returns patient data.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns patient data.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUDFN | LITERAL |  | true | This is the patient IEN. | 
-| TIUSEC | LITERAL |  | true | This BOOLEAN value allows sensitive patient data to be displayed or hidden. | 
-| TIUGHS | LITERAL |  | true | This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data. | 
+| {::nomarkdown}TIUDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient IEN.{:/} | 
+| {::nomarkdown}TIUSEC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This BOOLEAN value allows sensitive patient data to be displayed or hidden.{:/} | 
+| {::nomarkdown}TIUGHS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET REPORT LIST
- tag | RPTLIST
+ label | {::nomarkdown}DSIR GET REPORT LIST{:/}
+ tag | {::nomarkdown}RPTLIST{:/}
  routine | [DSIROIAH](http://code.osehra.org/dox/Routine_DSIROIAH_source.html)
- return value type | ARRAY
- description | RETURNS A LIST OR REPORT NAMES AND THEIR IENS OR A SINGLE REPORT AND IT'S IEN IF A REPORT NAME IS PASSED IN THE OPTIONAL PARAMETER.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURNS A LIST OR REPORT NAMES AND THEIR IENS OR A SINGLE REPORT AND IT'S IEN IF A REPORT NAME IS PASSED IN THE OPTIONAL PARAMETER.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RNAME | LITERAL | 30 | true | RNAME - (OPTIONAL) REPORT NAME FOR A SPECIFIC REPORT | 
+| {::nomarkdown}RNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}RNAME - (OPTIONAL) REPORT NAME FOR A SPECIFIC REPORT{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

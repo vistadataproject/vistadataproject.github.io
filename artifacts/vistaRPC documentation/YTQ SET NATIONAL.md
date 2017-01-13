@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ SET NATIONAL
- tag | NATSET
+ label | {::nomarkdown}YTQ SET NATIONAL{:/}
+ tag | {::nomarkdown}NATSET{:/}
  routine | [YTQAPI9](http://code.osehra.org/dox/Routine_YTQAPI9_source.html)
- return value type | ARRAY
- description | Allows Psychological test editor to save test data in IENS under 100000for national distribution.         input: NATIONAL as Yes or No        output: YSPROG=1
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Allows Psychological test editor to save test data in IENS under 100000for national distribution.         input: NATIONAL as Yes or No        output: YSPROG=1{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

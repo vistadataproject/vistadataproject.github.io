@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF VEN GET ACTIVE CONTRACTS
- tag | VENCNT
+ label | {::nomarkdown}DSIF VEN GET ACTIVE CONTRACTS{:/}
+ tag | {::nomarkdown}VENCNT{:/}
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
- return value type | GLOBAL ARRAY
- description | Pulls a list of Active Contracts from file 161.43
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Pulls a list of Active Contracts from file 161.43{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VENDOR IEN | LITERAL | 30 | true |  | 
+| {::nomarkdown}VENDOR IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

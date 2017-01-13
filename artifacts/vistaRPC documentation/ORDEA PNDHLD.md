@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORDEA PNDHLD
- tag | PNDHLD
+ label | {::nomarkdown}ORDEA PNDHLD{:/}
+ tag | {::nomarkdown}PNDHLD{:/}
  routine | [ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return 1 if the order is pending a HOLD, 0 otherwise
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

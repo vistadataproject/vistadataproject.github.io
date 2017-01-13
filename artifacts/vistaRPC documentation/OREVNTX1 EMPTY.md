@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 EMPTY
- tag | EMPTY
+ label | {::nomarkdown}OREVNTX1 EMPTY{:/}
+ tag | {::nomarkdown}EMPTY{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return 1 if PTEVT doesn't have any orders
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

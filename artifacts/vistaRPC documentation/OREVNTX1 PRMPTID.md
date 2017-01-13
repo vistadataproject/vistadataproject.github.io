@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 PRMPTID
- tag | PRMPTID
+ label | {::nomarkdown}OREVNTX1 PRMPTID{:/}
+ tag | {::nomarkdown}PRMPTID{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return event prompt IEN for OR GTX EVENT
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN MAILMAN NOTIFICATION
- tag | MAIL
+ label | {::nomarkdown}SPN MAILMAN NOTIFICATION{:/}
+ tag | {::nomarkdown}MAIL{:/}
  routine | [SPNJRPML](http://code.osehra.org/dox/Routine_SPNJRPML_source.html)
- return value type | SINGLE VALUE
- description | Sends admit/discharge/transfer mailman notifications to individual or group Mailman email addresses
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Sends admit/discharge/transfer mailman notifications to individual or group Mailman email addresses{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM | LITERAL |  |  | DUZ of the user initiating the notification  | 
-| SUBJECT | LITERAL |  |  | Subject of mailman notification | 
-| PAR | LITERAL |  |  | Four options, set to 1 if chosen (1^1^1^1):                            PIECE 1 - Priority                            PIECE 2 - Information only                            PIECE 3 - Confirmation required                            PIECE 4 - Copy in 'IN' basket | 
-| TEXT | LIST |  |  | An array format TEXT(1...n) containing the email message in 1 or more lines (limit to 80 chars per line) | 
-| MLTO | LIST |  |  | An array format MLTO(1...n) containing the recipients of the email in,     and the recipient can be in the form of mail group names and/or     employee names. | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}DUZ of the user initiating the notification {:/} | 
+| {::nomarkdown}SUBJECT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Subject of mailman notification{:/} | 
+| {::nomarkdown}PAR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Four options, set to 1 if chosen (1^1^1^1):                            PIECE 1 - Priority                            PIECE 2 - Information only                            PIECE 3 - Confirmation required                            PIECE 4 - Copy in 'IN' basket{:/} | 
+| {::nomarkdown}TEXT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format TEXT(1...n) containing the email message in 1 or more lines (limit to 80 chars per line){:/} | 
+| {::nomarkdown}MLTO{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format MLTO(1...n) containing the recipients of the email in,     and the recipient can be in the form of mail group names and/or     employee names.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

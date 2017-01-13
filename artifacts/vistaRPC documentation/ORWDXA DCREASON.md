@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA DCREASON
- tag | DCREASON
+ label | {::nomarkdown}ORWDXA DCREASON{:/}
+ tag | {::nomarkdown}DCREASON{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | RPC to return a list of valid discontinuation reasons.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to return a list of valid discontinuation reasons.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

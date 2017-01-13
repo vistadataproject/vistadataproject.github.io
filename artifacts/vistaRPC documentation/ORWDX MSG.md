@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX MSG
- tag | MSG
+ label | {::nomarkdown}ORWDX MSG{:/}
+ tag | {::nomarkdown}MSG{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | ARRAY
- description | Return message text for an orderable item.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return message text for an orderable item.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Msg text for orderable item
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

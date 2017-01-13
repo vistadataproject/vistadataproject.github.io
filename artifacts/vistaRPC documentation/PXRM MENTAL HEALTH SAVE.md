@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM MENTAL HEALTH SAVE
- tag | MHS
+ label | {::nomarkdown}PXRM MENTAL HEALTH SAVE{:/}
+ tag | {::nomarkdown}MHS{:/}
  routine | [PXRMRPCC](http://code.osehra.org/dox/Routine_PXRMRPCC_source.html)
- return value type | ARRAY
- description | Stores test result responses from a reminder dialog.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Stores test result responses from a reminder dialog.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEST RESULTS | LITERAL | 16 | true | Test results. Needs to pass contents of the YS array (R1,R2,DFN,DUZ,ADATEetc). | 
+| {::nomarkdown}TEST RESULTS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Test results. Needs to pass contents of the YS array (R1,R2,DFN,DUZ,ADATEetc).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD GET TEAM PHONE NUMBERS
- tag | TEAMMEM
+ label | {::nomarkdown}CRHD GET TEAM PHONE NUMBERS{:/}
+ tag | {::nomarkdown}TEAMMEM{:/}
  routine | [CRHD7](http://code.osehra.org/dox/Routine_CRHD7_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

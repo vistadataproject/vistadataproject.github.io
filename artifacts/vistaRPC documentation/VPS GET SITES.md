@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS GET SITES
- tag | GETSITES
+ label | {::nomarkdown}VPS GET SITES{:/}
+ tag | {::nomarkdown}GETSITES{:/}
  routine | [VPSRPC5](http://code.osehra.org/dox/Routine_VPSRPC5_source.html)
- return value type | ARRAY
- description | Called by the Vetlink Kiosk system.  Patient SSN is the input value.  Return value is a list of treating facilities associated with the patient given the SSN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Called by the Vetlink Kiosk system.  Patient SSN is the input value.  Return value is a list of treating facilities associated with the patient given the SSN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSSN | LITERAL | 12 | true | Patient SSN | 
+| {::nomarkdown}VPSSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient SSN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VEJDWPB UPDATE PROBLEM
- tag | UPDATE
+ label | {::nomarkdown}VEJDWPB UPDATE PROBLEM{:/}
+ tag | {::nomarkdown}UPDATE{:/}
  routine | [VEJDWPB0](http://code.osehra.org/dox/Routine_VEJDWPB0_source.html)
- return value type | SINGLE VALUE
- description | This will update an existing problem using the D UPDATE^GMPLUTL(.VEJDRETN,.VEJDDATA) call
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This will update an existing problem using the D UPDATE^GMPLUTL(.VEJDRETN,.VEJDDATA) call{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VEJDDATA | LIST | 240 | true | For detailed description of array format, see documentation in routine. | 
+| {::nomarkdown}VEJDDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}For detailed description of array format, see documentation in routine.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

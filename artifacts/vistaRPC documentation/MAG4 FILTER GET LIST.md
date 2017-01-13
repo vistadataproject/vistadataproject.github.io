@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 FILTER GET LIST
- tag | GETLIST
+ label | {::nomarkdown}MAG4 FILTER GET LIST{:/}
+ tag | {::nomarkdown}GETLIST{:/}
  routine | [MAGGSFLT](http://code.osehra.org/dox/Routine_MAGGSFLT_source.html)
- return value type | ARRAY
- description | Returns a list of Image FiltersEither for a specific user (Private filters)or Public filters.Some Public filters are distributed with the installation.Public filters can also be created by the Imaging site manager.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of Image FiltersEither for a specific user (Private filters)or Public filters.Some Public filters are distributed with the installation.Public filters can also be created by the Imaging site manager.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| USER | LITERAL | 40 | true | This is DUZ, if \\ is sent, then the RPC retrieves the Public filters. | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is DUZ, if \\ is sent, then the RPC retrieves the Public filters.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

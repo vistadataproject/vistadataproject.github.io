@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT DEFAULT PATIENT LIST
- tag | DEFLIST
+ label | {::nomarkdown}ORQPT DEFAULT PATIENT LIST{:/}
+ tag | {::nomarkdown}DEFLIST{:/}
  routine | [ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
- return value type | GLOBAL ARRAY
- description | Function returns the current user's default patient list.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Function returns the current user's default patient list.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return current user's default patient list
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

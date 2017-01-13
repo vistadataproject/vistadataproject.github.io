@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDLR32 ABBSPEC
- tag | ABBSPEC
+ label | {::nomarkdown}ORWDLR32 ABBSPEC{:/}
+ tag | {::nomarkdown}ABBSPEC{:/}
  routine | [ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
- return value type | ARRAY
- description | Returns a list of lab specimens with abbreviations.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of lab specimens with abbreviations.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | returns specimens with abbreviation (uses 'E' xref)
+ Leading comment lines | {::nomarkdown}returns specimens with abbreviation (uses 'E' xref){:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA GET CAREPLAN DA
- tag | CPID
+ label | {::nomarkdown}NUPA GET CAREPLAN DA{:/}
+ tag | {::nomarkdown}CPID{:/}
  routine | [NUPABCL1](http://code.osehra.org/dox/Routine_NUPABCL1_source.html)
- return value type | SINGLE VALUE
- description | Gets the DA of the latest care plan, or creates a new one if none on file since the last admission.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Gets the DA of the latest care plan, or creates a new one if none on file since the last admission.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 99 | true | Patient's DFN. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

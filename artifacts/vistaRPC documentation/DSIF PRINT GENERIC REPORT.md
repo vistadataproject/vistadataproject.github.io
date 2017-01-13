@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PRINT GENERIC REPORT
- tag | PRINTGEN
+ label | {::nomarkdown}DSIF PRINT GENERIC REPORT{:/}
+ tag | {::nomarkdown}PRINTGEN{:/}
  routine | [DSIFENA5](http://code.osehra.org/dox/Routine_DSIFENA5_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DEVICE | LITERAL | 45 | true |  | 
-| INPUT | LIST | 999 | true |  | 
+| {::nomarkdown}DEVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

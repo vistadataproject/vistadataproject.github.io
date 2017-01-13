@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | KMPD RUM ENV
- tag | RUMENV
+ label | {::nomarkdown}KMPD RUM ENV{:/}
+ tag | {::nomarkdown}RUMENV{:/}
  routine | [KMPDU6](http://code.osehra.org/dox/Routine_KMPDU6_source.html)
- return value type | ARRAY
- description | RUM environment.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RUM environment.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

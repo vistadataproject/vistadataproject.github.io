@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV DDR WP FILER
- tag | WP
+ label | {::nomarkdown}DSIV DDR WP FILER{:/}
+ tag | {::nomarkdown}WP{:/}
  routine | [DSIVDDR0](http://code.osehra.org/dox/Routine_DSIVDDR0_source.html)
- return value type | ARRAY
- description |  This will file the text into the specified word processing field.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} This will file the text into the specified word processing field.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILE | LITERAL | 20 | true |  This is the file (or subfile) number for which the word processing field belongs. | 
-| IENS | LITERAL | 50 | true |  This is the appropriate Fileman DBS IENS for filing the word processing field | 
-| FIELD | LITERAL | 20 | true | This is field number of the word processing field | 
-| FLAGS | LITERAL | 10 | true |  This is the FLAGS parameter for the WP^DIE call. | 
-| DATA | LIST | 250 | true |  This is the text to be filed into the word processing field. | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is the file (or subfile) number for which the word processing field belongs.{:/} | 
+| {::nomarkdown}IENS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is the appropriate Fileman DBS IENS for filing the word processing field{:/} | 
+| {::nomarkdown}FIELD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is field number of the word processing field{:/} | 
+| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is the FLAGS parameter for the WP^DIE call.{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is the text to be filed into the word processing field.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

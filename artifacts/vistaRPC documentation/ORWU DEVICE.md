@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU DEVICE
- tag | DEVICE
+ label | {::nomarkdown}ORWU DEVICE{:/}
+ tag | {::nomarkdown}DEVICE{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | ARRAY
- description | Returns a list of print devices.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of print devices.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a subset of entries from the Device file
- Leading comment lines | .LST(n)=IEN;Name^DisplayName^Location^RMar^PLen,FROM=text to $O from, DIR=$O direction
+ Leading comment lines | {::nomarkdown}.LST(n)=IEN;Name^DisplayName^Location^RMar^PLen<br/>FROM=text to $O from, DIR=$O direction{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

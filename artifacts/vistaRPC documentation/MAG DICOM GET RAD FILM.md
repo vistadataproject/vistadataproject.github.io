@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET RAD FILM
- tag | FILM
+ label | {::nomarkdown}MAG DICOM GET RAD FILM{:/}
+ tag | {::nomarkdown}FILM{:/}
  routine | [MAGDRPCB](http://code.osehra.org/dox/Routine_MAGDRPCB_source.html)
- return value type | ARRAY
- description | This RPC is used to find an entry in the FILM SIZE file (#78.4).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to find an entry in the FILM SIZE file (#78.4).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILM | LITERAL | 30 | true | This is the name of the film size to be used in the lookup process. | 
+| {::nomarkdown}FILM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the film size to be used in the lookup process.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

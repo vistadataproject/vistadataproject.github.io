@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWLRR CHART
- tag | CHART
+ label | {::nomarkdown}ORWLRR CHART{:/}
+ tag | {::nomarkdown}CHART{:/}
  routine | [ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | from Remote Procedure file
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

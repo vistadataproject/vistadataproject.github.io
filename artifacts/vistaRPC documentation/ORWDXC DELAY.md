@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXC DELAY
- tag | DELAY
+ label | {::nomarkdown}ORWDXC DELAY{:/}
+ tag | {::nomarkdown}DELAY{:/}
  routine | [ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
- return value type | ARRAY
- description | Return list or order checks on accept delayed orders.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return list or order checks on accept delayed orders.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return list of Order Checks on Accept Delayed
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

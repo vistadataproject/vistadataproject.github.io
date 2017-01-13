@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT WARDRMBED
- tag | WRB
+ label | {::nomarkdown}ORQPT WARDRMBED{:/}
+ tag | {::nomarkdown}WRB{:/}
  routine | [ORQPTQ3](http://code.osehra.org/dox/Routine_ORQPTQ3_source.html)
- return value type | SINGLE VALUE
- description | Returns the ward, room-bed for a patient.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the ward, room-bed for a patient.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return patient's ward, room-bed: ward ien^ward name room-bed
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT ID | LITERAL | 16 | true | Patient identifier (DFN) from file #2 | 
+| {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier (DFN) from file #2{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQPT TEAMS
- tag | TEAMS
+ label | {::nomarkdown}ORQPT TEAMS{:/}
+ tag | {::nomarkdown}TEAMS{:/}
  routine | [ORQPTQ1](http://code.osehra.org/dox/Routine_ORQPTQ1_source.html)
- return value type | ARRAY
- description | Function returns a list of teams.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Function returns a list of teams.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return list of teams for a system
- Leading comment lines | Also called under DBIA # 2692.
+ Leading comment lines | {::nomarkdown}Also called under DBIA # 2692.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

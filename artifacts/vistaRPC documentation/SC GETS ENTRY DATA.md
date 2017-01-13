@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC GETS ENTRY DATA
- tag | GETSC
+ label | {::nomarkdown}SC GETS ENTRY DATA{:/}
+ tag | {::nomarkdown}GETSC{:/}
  routine | [SCUTBK2](http://code.osehra.org/dox/Routine_SCUTBK2_source.html)
- return value type | ARRAY
- description | Calls database server at GETS^DIQ.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Calls database server at GETS^DIQ.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GETS ATTRIBUTES | LIST | 512 | true |  | 
+| {::nomarkdown}GETS ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

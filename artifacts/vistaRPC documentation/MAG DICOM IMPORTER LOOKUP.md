@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM IMPORTER LOOKUP
- tag | LOOKUP
+ label | {::nomarkdown}MAG DICOM IMPORTER LOOKUP{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [MAGDRPCA](http://code.osehra.org/dox/Routine_MAGDRPCA_source.html)
- return value type | SINGLE VALUE
- description | Return information about the image.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return information about the image.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL |  | true | The Internal Entry Number of the image entry in file 2005. | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The Internal Entry Number of the image entry in file 2005.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

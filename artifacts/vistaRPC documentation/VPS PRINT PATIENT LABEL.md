@@ -9,24 +9,24 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VPS PRINT PATIENT LABEL
- tag | PRINT
+ label | {::nomarkdown}VPS PRINT PATIENT LABEL{:/}
+ tag | {::nomarkdown}PRINT{:/}
  routine | [VPSRLBLS](http://code.osehra.org/dox/Routine_VPSRLBLS_source.html)
- return value type | SINGLE VALUE
- description | This RPC prints patient label using the standard VistAPrint Patient Label routine (DGPLBL).
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC prints patient label using the standard VistAPrint Patient Label routine (DGPLBL).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VPSLOC | LITERAL | 1 | true | This is a flag to indicate to print routine to include ward locationor not. | 
-| VPSLBCNT | LITERAL | 3 | true | This is label count to indicate to print routine how many duplicatelabels to print for the patient. | 
-| VPSLPL | LITERAL | 2 | true | This is Lines/Label to indicate to print routine the maximum lines to print for each label. | 
-| VPSIO | LITERAL | 50 | true | This is the device name where the label will be printed to. | 
-| VPSTYP | LITERAL | 7 | true | Patient ID Type. Valid Input parameter: DFN,SSN,ICN,VIC/CAC | 
-| VPSNUM | LITERAL | 50 | true | Patient ID. This could be SSN, DFN, VIC/CAC, ICN | 
+| {::nomarkdown}VPSLOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a flag to indicate to print routine to include ward locationor not.{:/} | 
+| {::nomarkdown}VPSLBCNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is label count to indicate to print routine how many duplicatelabels to print for the patient.{:/} | 
+| {::nomarkdown}VPSLPL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is Lines/Label to indicate to print routine the maximum lines to print for each label.{:/} | 
+| {::nomarkdown}VPSIO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the device name where the label will be printed to.{:/} | 
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID Type. Valid Input parameter: DFN,SSN,ICN,VIC/CAC{:/} | 
+| {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID. This could be SSN, DFN, VIC/CAC, ICN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT ENCTITL
- tag | ENCTITL
+ label | {::nomarkdown}ORWPT ENCTITL{:/}
+ tag | {::nomarkdown}ENCTITL{:/}
  routine | [ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
- return value type | SINGLE VALUE
- description | Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return external values for encounter
- Leading comment lines | LOCNAME^LOCABBR^ROOMBED^PROVNAME
+ Leading comment lines | {::nomarkdown}LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

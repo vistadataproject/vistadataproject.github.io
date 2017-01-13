@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM EDUCATION SUMMARY
- tag | EDL
+ label | {::nomarkdown}PXRM EDUCATION SUMMARY{:/}
+ tag | {::nomarkdown}EDL{:/}
  routine | [PXRMRPCB](http://code.osehra.org/dox/Routine_PXRMRPCB_source.html)
- return value type | ARRAY
- description | Returns list of education topics for a reminder
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns list of education topics for a reminder{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CLINICAL REMINDER ID | LITERAL | 16 | true | Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9]1.9] | 
+| {::nomarkdown}CLINICAL REMINDER ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinical reminder (ien) from CLINICAL REMINDER DEFINITION file [#811.9]1.9]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

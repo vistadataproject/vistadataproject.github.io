@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQBP PARM
- tag | PGEPAR
+ label | {::nomarkdown}MAGQBP PARM{:/}
+ tag | {::nomarkdown}PGEPAR{:/}
  routine | [MAGQBPG2](http://code.osehra.org/dox/Routine_MAGQBPG2_source.html)
- return value type | SINGLE VALUE
- description | Site Purge parameter fetch.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Site Purge parameter fetch.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NULL |  |  | true | No input parameter required. | 
+| {::nomarkdown}NULL{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}No input parameter required.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

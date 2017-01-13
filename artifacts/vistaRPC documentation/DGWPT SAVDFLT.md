@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DGWPT SAVDFLT
- tag | SAVDFLT
+ label | {::nomarkdown}DGWPT SAVDFLT{:/}
+ tag | {::nomarkdown}SAVDFLT{:/}
  routine | [DGWPT](http://code.osehra.org/dox/Routine_DGWPT_source.html)
- return value type | SINGLE VALUE
- description | Saves user's preference for default list source.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Saves user's preference for default list source.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

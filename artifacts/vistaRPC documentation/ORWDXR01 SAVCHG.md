@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXR01 SAVCHG
- tag | SAVCHG
+ label | {::nomarkdown}ORWDXR01 SAVCHG{:/}
+ tag | {::nomarkdown}SAVCHG{:/}
  routine | [ORWDXR01](http://code.osehra.org/dox/Routine_ORWDXR01_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | save new changes on the unreleased unsigned renewed order
+ --- | --- 
+ Leading comment lines | {::nomarkdown}save new changes on the unreleased unsigned renewed order{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

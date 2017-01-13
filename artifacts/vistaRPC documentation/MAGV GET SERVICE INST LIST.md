@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET SERVICE INST LIST
- tag | GETSILST
+ label | {::nomarkdown}MAGV GET SERVICE INST LIST{:/}
+ tag | {::nomarkdown}GETSILST{:/}
  routine | [MAGVRS71](http://code.osehra.org/dox/Routine_MAGVRS71_source.html)
- return value type | ARRAY
- description | This remote procedure returns a list of all entries in the IMAGING SERVICE INSTITUTION file (#2005.8). Introduced in Patch MAG*3.0*34.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure returns a list of all entries in the IMAGING SERVICE INSTITUTION file (#2005.8). Introduced in Patch MAG*3.0*34.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

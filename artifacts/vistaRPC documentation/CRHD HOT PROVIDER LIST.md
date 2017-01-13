@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | CRHD HOT PROVIDER LIST
- tag | HODLIST
+ label | {::nomarkdown}CRHD HOT PROVIDER LIST{:/}
+ tag | {::nomarkdown}HODLIST{:/}
  routine | [CRHD9](http://code.osehra.org/dox/Routine_CRHD9_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

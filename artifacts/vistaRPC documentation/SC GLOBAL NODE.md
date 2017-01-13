@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SC GLOBAL NODE
- tag | NODEC
+ label | {::nomarkdown}SC GLOBAL NODE{:/}
+ tag | {::nomarkdown}NODEC{:/}
  routine | [SCUTBK1](http://code.osehra.org/dox/Routine_SCUTBK1_source.html)
- return value type | SINGLE VALUE
- description | Call to pass back a global node.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Call to pass back a global node.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GLOBAL NODE | LITERAL | 512 | true |  | 
+| {::nomarkdown}GLOBAL NODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

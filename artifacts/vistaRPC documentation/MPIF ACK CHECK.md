@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MPIF ACK CHECK
- tag | EN
+ label | {::nomarkdown}MPIF ACK CHECK{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [MPIFACHK](http://code.osehra.org/dox/Routine_MPIFACHK_source.html)
- return value type | SINGLE VALUE
- description | This RPC will check to see if there are any messages on the sites before date BEFORE that haven't received the application level ack back.  If so, regenerate that message to the MPI.   If a message is generated 1 will be returned, otherwise 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will check to see if there are any messages on the sites before date BEFORE that haven't received the application level ack back.  If so, regenerate that message to the MPI.   If a message is generated 1 will be returned, otherwise 0.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| BEFORE | LITERAL | 7 | true | The FM date that the message should be sent BEFORE. | 
+| {::nomarkdown}BEFORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The FM date that the message should be sent BEFORE.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

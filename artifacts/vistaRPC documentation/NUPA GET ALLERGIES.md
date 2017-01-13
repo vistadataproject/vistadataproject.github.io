@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA GET ALLERGIES
- tag | ALG
+ label | {::nomarkdown}NUPA GET ALLERGIES{:/}
+ tag | {::nomarkdown}ALG{:/}
  routine | [NUPABCL2](http://code.osehra.org/dox/Routine_NUPABCL2_source.html)
- return value type | ARRAY
- description | Returns the patient's allergies.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the patient's allergies.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| dfn |  |  |  |  | 
-| DFN | LITERAL | 99 | true |  | 
+| {::nomarkdown}dfn{:/} |  |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

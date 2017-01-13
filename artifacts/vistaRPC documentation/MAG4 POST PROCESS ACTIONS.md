@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 POST PROCESS ACTIONS
- tag | POSTACT
+ label | {::nomarkdown}MAG4 POST PROCESS ACTIONS{:/}
+ tag | {::nomarkdown}POSTACT{:/}
  routine | [MAGGSPP](http://code.osehra.org/dox/Routine_MAGGSPP_source.html)
- return value type | ARRAY
- description |  This is call to perform any post processing action required on  a newly saved image of this type.  post processing (for now) is  determined by the IMAGE INDEX FOR TYPES file.  If this image  points to an entry in that file that has Action turned ON, then  the TAG^ROUTINE will be called with the Image IEN.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown} This is call to perform any post processing action required on  a newly saved image of this type.  post processing (for now) is  determined by the IMAGE INDEX FOR TYPES file.  If this image  points to an entry in that file that has Action turned ON, then  the TAG^ROUTINE will be called with the Image IEN.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGIEN | LITERAL | 30 | true | Internal entry number in the Image File (^MAG(2005)) | 
+| {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number in the Image File (^MAG(2005)){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

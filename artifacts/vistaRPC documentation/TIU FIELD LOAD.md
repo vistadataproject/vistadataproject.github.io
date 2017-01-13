@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU FIELD LOAD
- tag | LOAD
+ label | {::nomarkdown}TIU FIELD LOAD{:/}
+ tag | {::nomarkdown}LOAD{:/}
  routine | [TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
- return value type | ARRAY
- description | Returns a single Template Field object
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a single Template Field object{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Load Template Field by Name
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FLD | LITERAL |  | true | Template Field Name | 
+| {::nomarkdown}FLD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Template Field Name{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

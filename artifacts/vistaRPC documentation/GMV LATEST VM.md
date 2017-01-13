@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | GMV LATEST VM
- tag | GETLAT
+ label | {::nomarkdown}GMV LATEST VM{:/}
+ tag | {::nomarkdown}GETLAT{:/}
  routine | [GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure call retrieves the latest vital records for a givenpatient. This remote procedure call is documented in Integration Agreement 4358.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call retrieves the latest vital records for a givenpatient. This remote procedure call is documented in Integration Agreement 4358.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | GMV LATEST VM [RPC entry point]
- Leading comment lines | RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN),IN RESULT ARRAY.
+ Leading comment lines | {::nomarkdown}RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/>IN RESULT ARRAY.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| GMRDFN | LITERAL | 10 | true | GMRDFN variable is a pointer to the Patient (#2) file (i.e., DFN). | 
+| {::nomarkdown}GMRDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMRDFN variable is a pointer to the Patient (#2) file (i.e., DFN).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

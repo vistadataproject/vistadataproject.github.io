@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB CHECK CREDENTIALS
- tag | CHKCRED
+ label | {::nomarkdown}DVBAB CHECK CREDENTIALS{:/}
+ tag | {::nomarkdown}CHKCRED{:/}
  routine | [DVBAB1](http://code.osehra.org/dox/Routine_DVBAB1_source.html)
- return value type | SINGLE VALUE
- description | Verifies the user has been granted access to AMIE II/CAPRI
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Verifies the user has been granted access to AMIE II/CAPRI{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

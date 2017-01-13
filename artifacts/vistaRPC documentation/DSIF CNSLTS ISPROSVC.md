@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF CNSLTS ISPROSVC
- tag | ISPRO
+ label | {::nomarkdown}DSIF CNSLTS ISPROSVC{:/}
+ tag | {::nomarkdown}ISPRO{:/}
  routine | [DSIFCNS1](http://code.osehra.org/dox/Routine_DSIFCNS1_source.html)
- return value type | SINGLE VALUE
- description | This RPC will return whether the specified Consult Service is part of the Consults-Prosthetics Interface. Cloned from ORQQCN ISPROSVC
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will return whether the specified Consult Service is part of the Consults-Prosthetics Interface. Cloned from ORQQCN ISPROSVC{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DSIFCNS | LITERAL |  | true | This is the IEN for the Consult Service you wish to inquire about. | 
+| {::nomarkdown}DSIFCNS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN for the Consult Service you wish to inquire about.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

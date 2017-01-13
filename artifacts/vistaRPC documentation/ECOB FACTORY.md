@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ECOB FACTORY
- tag | FACTORY
+ label | {::nomarkdown}ECOB FACTORY{:/}
+ tag | {::nomarkdown}FACTORY{:/}
  routine | [ECOBUF](http://code.osehra.org/dox/Routine_ECOBUF_source.html)
- return value type | ARRAY
- description | An RPC to construct(get a handle to) or destroy VistA objects.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}An RPC to construct(get a handle to) or destroy VistA objects.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ARGUMENT | LITERAL | 32000 | true | Constructor Argument = Constructor.[class name].[namespace]Destructor Argument = Destructor.[handle].[class name] | 
+| {::nomarkdown}ARGUMENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Constructor Argument = Constructor.[class name].[namespace]Destructor Argument = Destructor.[handle].[class name]{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

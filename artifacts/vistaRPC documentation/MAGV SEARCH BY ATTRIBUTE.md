@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV SEARCH BY ATTRIBUTE
- tag | FINDBYAT
+ label | {::nomarkdown}MAGV SEARCH BY ATTRIBUTE{:/}
+ tag | {::nomarkdown}FINDBYAT{:/}
  routine | [MAGVRS42](http://code.osehra.org/dox/Routine_MAGVRS42_source.html)
- return value type | ARRAY
- description | This remote procedure accepts an array of one or more name-value pairsof FileMan field names and exact match values, and returns a list ofinternal entry numbers of matching entries.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure accepts an array of one or more name-value pairsof FileMan field names and exact match values, and returns a list ofinternal entry numbers of matching entries.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SEND | LIST | 200 | true | This is a list of name-value pairs of field names and exact match values. | 
-| FILE | LITERAL | 15 | true | This is the number of the FileMan file to be searched (e.g., 2005.61 forIMAGING PROCEDURE REFERENCE). | 
+| {::nomarkdown}SEND{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a list of name-value pairs of field names and exact match values.{:/} | 
+| {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of the FileMan file to be searched (e.g., 2005.61 forIMAGING PROCEDURE REFERENCE).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

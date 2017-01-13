@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV DICOM SET MODALITY LIST
- tag | SETMODAL
+ label | {::nomarkdown}MAGV DICOM SET MODALITY LIST{:/}
+ tag | {::nomarkdown}SETMODAL{:/}
  routine | [MAGVDGWP](http://code.osehra.org/dox/Routine_MAGVDGWP_source.html)
- return value type | SINGLE VALUE
- description | Update DICOM GATEWAY MODALITY DICTIONARY file (#2006.912)from MODALITY TYPE DICTIONARY FILE (#2006.582)
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Update DICOM GATEWAY MODALITY DICTIONARY file (#2006.912)from MODALITY TYPE DICTIONARY FILE (#2006.582){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| HOSTNAME | LITERAL |  | true | DICOM Gateway host name | 
-| LOCATION | LITERAL |  | true | Identifies the institution where this DICOM Gateway computer resides | 
-| MAGDATA | LIST |  | true | Data in DICOM GATEWAY MODALITY DICTIONARY file (#2006.912) | 
+| {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DICOM Gateway host name{:/} | 
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the institution where this DICOM Gateway computer resides{:/} | 
+| {::nomarkdown}MAGDATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Data in DICOM GATEWAY MODALITY DICTIONARY file (#2006.912){:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

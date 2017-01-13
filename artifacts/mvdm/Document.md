@@ -20,22 +20,22 @@ title: MVDM documentation
 
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
-| patient | Patient | POINTER | patient |  | {id:Patient_IHS-9000001} | REQUIRED | 
-| documentType | Document Type | POINTER | document_type |  | {id:Tiu_Document_Definition-8925_1} | REQUIRED | 
-| parentDocumentType | Parent Document Type | POINTER | parent_document_type |  | {id:Tiu_Document_Definition-8925_1} |  | 
-| visit | Visit | POINTER | visit |  | {id:Visit-9000010} | REQUIRED, INDEXED | 
+| patient | Patient | POINTER | patient |  | Patient_IHS-9000001 | REQUIRED | 
+| documentType | Document Type | POINTER | document_type |  | Tiu_Document_Definition-8925_1 | REQUIRED | 
+| parentDocumentType | Parent Document Type | POINTER | parent_document_type |  | Tiu_Document_Definition-8925_1 |  | 
+| visit | Visit | POINTER | visit |  | Visit-9000010 | REQUIRED, INDEXED | 
 | visitType | Visit Type | STRING | visit_type |  |  | CREATE | 
-| status | Status | POINTER | status | {id:8925_6-5,label:UNSIGNED} | {id:Tiu_Status-8925_6} |  | 
+| status | Status | POINTER | status | {id:8925_6-5,label:UNSIGNED} | Tiu_Status-8925_6 |  | 
 | text | Report Text | STRING | report_text |  |  | REQUIRED | 
 | dateTimeEntered | Entry Date/Time | DATE-TIME | entry_date_time | $NOW |  |  | 
 | enteredBy | Entered By | POINTER | entered_by | $USERID |  |  | 
-| authorDictator | Author/Dictator | POINTER | author_dictator | $USERID | {id:New_Person-200} | INDEXED | 
-| facility | Division | POINTER | division | $FACILITYID | {id:Institution-4} |  | 
-| hospitalLocation |  | POINTER | hospital_location |  | {id:Hospital_Location-44} |  | 
-| service | Service | POINTER | service |  | {id:Service_Section-49} |  | 
+| authorDictator | Author/Dictator | POINTER | author_dictator | $USERID | New_Person-200 | INDEXED | 
+| facility | Division | POINTER | division | $FACILITYID | Institution-4 |  | 
+| hospitalLocation |  | POINTER | hospital_location |  | Hospital_Location-44 |  | 
+| service | Service | POINTER | service |  | Service_Section-49 |  | 
 | referenceDate | Reference Date | DATE-TIME | reference_date | $NOW |  |  | 
 | releaseDateTime | Release Date/Time | DATE-TIME | release_date_time | $NOW |  |  | 
-| expectedSigner | Expected Signer | POINTER | expected_signer | $USERID | {id:New_Person-200} |  | 
+| expectedSigner | Expected Signer | POINTER | expected_signer | $USERID | New_Person-200 |  | 
 | isSigned |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
 | signingDetails |  | OBJECT |  |  | [SigningDetails](#signingdetails)  |  | 
 | isRemoved |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} |  | 
@@ -53,7 +53,7 @@ title: MVDM documentation
 | id | label | datatype | fromVDM | default | range | attributes | 
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Signature Date/Time | DATE-TIME | signature_date_time |  |  |  | 
-| enteredBy | Signed By | POINTER | signed_by |  | {id:New_Person-200} |  | 
+| enteredBy | Signed By | POINTER | signed_by |  | New_Person-200 |  | 
 | signatureBlockName | Signature Block Name | STRING | signature_block_name |  |  |  | 
 | signatureBlockTitle | Signature Block Title | STRING | signature_block_title |  |  |  | 
 | signatureMode | Signature Mode | ENUMERATION | signature_mode |  | {::nomarkdown}<dl><dt>electronic</dt><dd>0</dd><dt>chart</dt><dd>1</dd></dl>{:/} |  | 
@@ -76,4 +76,4 @@ title: MVDM documentation
 
 
 
- Generated on January 12th 2017, 6:21:30 am
+ Generated on January 13th 2017, 6:16:06 am

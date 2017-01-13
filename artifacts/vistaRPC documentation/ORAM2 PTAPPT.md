@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM2 PTAPPT
- tag | PTAPPT
+ label | {::nomarkdown}ORAM2 PTAPPT{:/}
+ tag | {::nomarkdown}PTAPPT{:/}
  routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
- return value type | ARRAY
- description | Returns the number of patients scheduled in the Anticoagulation clinic perday for the next 30 days.  Only days with appointments are displayed.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the number of patients scheduled in the Anticoagulation clinic perday for the next 30 days.  Only days with appointments are displayed.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

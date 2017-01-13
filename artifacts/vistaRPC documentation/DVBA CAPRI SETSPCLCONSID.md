@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI SETSPCLCONSID
- tag | SETSC
+ label | {::nomarkdown}DVBA CAPRI SETSPCLCONSID{:/}
+ tag | {::nomarkdown}SETSC{:/}
  routine | [DVBACPR1](http://code.osehra.org/dox/Routine_DVBACPR1_source.html)
- return value type | SINGLE VALUE
- description | This RPC sets the passed-in special considerations and links them to the passed-in 2507 request.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC sets the passed-in special considerations and links them to the passed-in 2507 request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| 2507 REQUEST IEN | LITERAL |  | true |  | 
-| SPECIAL CONSIDERATION LIST | LIST |  | true |  | 
+| {::nomarkdown}2507 REQUEST IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}SPECIAL CONSIDERATION LIST{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

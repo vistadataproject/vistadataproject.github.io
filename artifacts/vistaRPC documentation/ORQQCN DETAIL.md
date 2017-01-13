@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN DETAIL
- tag | DETAIL
+ label | {::nomarkdown}ORQQCN DETAIL{:/}
+ tag | {::nomarkdown}DETAIL{:/}
  routine | [ORQQCN](http://code.osehra.org/dox/Routine_ORQQCN_source.html)
- return value type | GLOBAL ARRAY
- description | Returns formatted detailed information regarding the consult request,including result report if available.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns formatted detailed information regarding the consult request,including result report if available.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return formatted consult request details (plus result note if available):
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CONSULT ID | LITERAL | 16 | true | Consult ID or identifier | 
+| {::nomarkdown}CONSULT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Consult ID or identifier{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

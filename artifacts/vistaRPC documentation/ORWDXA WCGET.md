@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA WCGET
- tag | WCGET
+ label | {::nomarkdown}ORWDXA WCGET{:/}
+ tag | {::nomarkdown}WCGET{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | Return ward comments for an order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return ward comments for an order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | ward comments
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

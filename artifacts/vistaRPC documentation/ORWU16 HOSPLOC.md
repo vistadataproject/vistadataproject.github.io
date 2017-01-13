@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU16 HOSPLOC
- tag | HOSPLOC
+ label | {::nomarkdown}ORWU16 HOSPLOC{:/}
+ tag | {::nomarkdown}HOSPLOC{:/}
  routine | [ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a bolus from the HOSPITAL LOCATION file
- Leading comment lines | .Return Array, Direction, Starting Text
+ Leading comment lines | {::nomarkdown}.Return Array, Direction, Starting Text{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

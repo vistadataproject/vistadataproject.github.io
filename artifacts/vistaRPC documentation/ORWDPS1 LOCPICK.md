@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS1 LOCPICK
- tag | LOCPICK
+ label | {::nomarkdown}ORWDPS1 LOCPICK{:/}
+ tag | {::nomarkdown}LOCPICK{:/}
  routine | [ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return default Location level routing
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

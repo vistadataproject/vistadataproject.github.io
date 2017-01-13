@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCS LIST OF CONSULT REPORTS
- tag | LIST
+ label | {::nomarkdown}ORWCS LIST OF CONSULT REPORTS{:/}
+ tag | {::nomarkdown}LIST{:/}
  routine | [ORWCS](http://code.osehra.org/dox/Routine_ORWCS_source.html)
- return value type | GLOBAL ARRAY
- description | This remote procedure call returns a list on consult reports for aspecific patient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This remote procedure call returns a list on consult reports for aspecific patient.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
- Leading comment lines | RPC: ORWCS LIST OF CONSULT REPORTS,See RPC definition for details on input and output parameters
+ --- | --- 
+ Leading comment lines | {::nomarkdown}RPC: ORWCS LIST OF CONSULT REPORTS<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 20 | true | Internal entry number of patient in the Patient file [^DPT]. | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of patient in the Patient file [^DPT].{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

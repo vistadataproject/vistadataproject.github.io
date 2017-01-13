@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET DOC DATES
- tag | GETDATES
+ label | {::nomarkdown}DSIR GET DOC DATES{:/}
+ tag | {::nomarkdown}GETDATES{:/}
  routine | [DSIROI3](http://code.osehra.org/dox/Routine_DSIROI3_source.html)
- return value type | ARRAY
- description | RETURNS AN ARRAY OF DATES FOR USE IN SCREENING CLINICAL DOCUMENTS
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RETURNS AN ARRAY OF DATES FOR USE IN SCREENING CLINICAL DOCUMENTS{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REQUEST IEN | LITERAL | 16 | true | IFN OF CURRENT ROI REQUEST | 
+| {::nomarkdown}REQUEST IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IFN OF CURRENT ROI REQUEST{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

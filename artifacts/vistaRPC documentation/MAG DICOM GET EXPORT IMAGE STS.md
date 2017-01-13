@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET EXPORT IMAGE STS
- tag | LOOKUP
+ label | {::nomarkdown}MAG DICOM GET EXPORT IMAGE STS{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [MAGDIWDV](http://code.osehra.org/dox/Routine_MAGDIWDV_source.html)
- return value type | ARRAY
- description | Return a list of the studies in the DICOM OBJECT EXPORT file (#2006.574),along with the status of the transmission.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return a list of the studies in the DICOM OBJECT EXPORT file (#2006.574),along with the status of the transmission.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

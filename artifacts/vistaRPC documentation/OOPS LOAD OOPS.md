@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS LOAD OOPS
- tag | LOAD
+ label | {::nomarkdown}OOPS LOAD OOPS{:/}
+ tag | {::nomarkdown}LOAD{:/}
  routine | [OOPSGUI4](http://code.osehra.org/dox/Routine_OOPSGUI4_source.html)
- return value type | ARRAY
- description | This broker call files data entered in the Create Accident/Illness ReportOption.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This broker call files data entered in the Create Accident/Illness ReportOption.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LIST | LITERAL | 256 |  | This input parameter is an array containing the data elements collected inCreate Accident/Illness Report. | 
+| {::nomarkdown}LIST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter is an array containing the data elements collected inCreate Accident/Illness Report.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

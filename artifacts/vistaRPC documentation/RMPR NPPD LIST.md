@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | RMPR NPPD LIST
- tag | EN
+ label | {::nomarkdown}RMPR NPPD LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [RMPR9LNP](http://code.osehra.org/dox/Routine_RMPR9LNP_source.html)
- return value type | GLOBAL ARRAY
- description | GUI REMOTE PROCEDURE, LIST NPPD DATA         ;RESULTS passed to broker in ^TMP($J,        ;delimited by \^\        ;piece 1 = ENTRY DATE        ;piece 2 = PATIENT NAME        ;piece 3 = PSAS HCPCS with * if hcpcs has Calculation Flag        ;piece 4 = QTY        ;piece 5 = VENDOR        ;piece 6 = INITIAL ACTION DATE        ;piece 7 = TOTAL COST        ;piece 8 = DESCRIPTION        ;piece 9 = INITIATOR        ;piece 10 = NPPD LINE BEFORE GROUPER        ;piece 11 = STATION        ;piece 12 = GROUPER NUMBER        ;piece 13 = FORM REQUESTED ON        ;piece 14 = TYPE OF TRANSACTION        ;piece 15 = SSN        ;piece 16 = IEN TO FILE 660        ;piece 17 = HCPCS SHORT DESCRIPTION        ;piece 18 = SOURCE
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}GUI REMOTE PROCEDURE, LIST NPPD DATA         ;RESULTS passed to broker in ^TMP($J,        ;delimited by \^\        ;piece 1 = ENTRY DATE        ;piece 2 = PATIENT NAME        ;piece 3 = PSAS HCPCS with * if hcpcs has Calculation Flag        ;piece 4 = QTY        ;piece 5 = VENDOR        ;piece 6 = INITIAL ACTION DATE        ;piece 7 = TOTAL COST        ;piece 8 = DESCRIPTION        ;piece 9 = INITIATOR        ;piece 10 = NPPD LINE BEFORE GROUPER        ;piece 11 = STATION        ;piece 12 = GROUPER NUMBER        ;piece 13 = FORM REQUESTED ON        ;piece 14 = TYPE OF TRANSACTION        ;piece 15 = SSN        ;piece 16 = IEN TO FILE 660        ;piece 17 = HCPCS SHORT DESCRIPTION        ;piece 18 = SOURCE{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATE1 | LITERAL | 50 | true | The Fileman date to start the query.  The begining date. | 
-| DATE2 | LITERAL | 50 | true | The Fileman date to end the query.  The ending date. | 
+| {::nomarkdown}DATE1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Fileman date to start the query.  The begining date.{:/} | 
+| {::nomarkdown}DATE2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Fileman date to end the query.  The ending date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

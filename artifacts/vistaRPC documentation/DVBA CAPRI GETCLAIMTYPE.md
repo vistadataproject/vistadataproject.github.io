@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBA CAPRI GETCLAIMTYPE
- tag | GETCT
+ label | {::nomarkdown}DVBA CAPRI GETCLAIMTYPE{:/}
+ tag | {::nomarkdown}GETCT{:/}
  routine | [DVBACPR1](http://code.osehra.org/dox/Routine_DVBACPR1_source.html)
- return value type | ARRAY
- description | This RPC returns a list (array) of Claim Types associated with a valid 2507 Request
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns a list (array) of Claim Types associated with a valid 2507 Request{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| REQIEN | LITERAL |  | true | This is the valid 2507 Request IEN | 
+| {::nomarkdown}REQIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the valid 2507 Request IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX1 MATCH
- tag | MATCH
+ label | {::nomarkdown}OREVNTX1 MATCH{:/}
+ tag | {::nomarkdown}MATCH{:/}
  routine | [OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | If Pt's current data match selected event
- Leading comment lines | DFN: patient DFN,EVT: ptr to #100.5
+ Leading comment lines | {::nomarkdown}DFN: patient DFN<br/>EVT: ptr to #100.5{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

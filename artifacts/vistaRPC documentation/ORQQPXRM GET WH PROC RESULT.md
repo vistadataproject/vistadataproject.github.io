@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM GET WH PROC RESULT
- tag | DX
+ label | {::nomarkdown}ORQQPXRM GET WH PROC RESULT{:/}
+ tag | {::nomarkdown}DX{:/}
  routine | [PXRMWOBJ](http://code.osehra.org/dox/Routine_PXRMWOBJ_source.html)
- return value type | ARRAY
- description | Return correct values for a WH procedure populate a combo box in ReminderDialog.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return correct values for a WH procedure populate a combo box in ReminderDialog.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STRING | LITERAL | 1 | true |  | 
+| {::nomarkdown}STRING{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

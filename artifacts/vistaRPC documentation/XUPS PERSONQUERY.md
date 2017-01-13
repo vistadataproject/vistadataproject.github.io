@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XUPS PERSONQUERY
- tag | EN1
+ label | {::nomarkdown}XUPS PERSONQUERY{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [XUPSQRY](http://code.osehra.org/dox/Routine_XUPSQRY_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| XUPSLNAM | LITERAL | 25 | true | Required if lookup by name. | 
-| XUPSFNAM | LITERAL | 15 | true |  | 
-| XUPSSSN | LITERAL | 9 | true |  | 
-| XUPSPROV | LITERAL | 1 | true |  | 
-| XUPSSTN | LITERAL | 6 | true |  | 
-| XUPSMNM | LITERAL | 3 | true |  | 
-| XUPSDATE | LITERAL | 8 | true |  | 
-| XUPSVPID | LITERAL |  | true | Required if lookup by VPID. | 
+| {::nomarkdown}XUPSLNAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Required if lookup by name.{:/} | 
+| {::nomarkdown}XUPSFNAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSSSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSPROV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSSTN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSMNM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}XUPSVPID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Required if lookup by VPID.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

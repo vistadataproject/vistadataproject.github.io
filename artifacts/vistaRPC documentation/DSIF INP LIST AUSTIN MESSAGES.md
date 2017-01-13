@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP LIST AUSTIN MESSAGES
- tag | LISTMESS
+ label | {::nomarkdown}DSIF INP LIST AUSTIN MESSAGES{:/}
+ tag | {::nomarkdown}LISTMESS{:/}
  routine | [DSIFPAY6](http://code.osehra.org/dox/Routine_DSIFPAY6_source.html)
- return value type | GLOBAL ARRAY
- description | Retrieve a list of Austin messages for Pricer adjustments.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Retrieve a list of Austin messages for Pricer adjustments.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FROM DATE | LITERAL | 7 | true | Date to start from in FM format. | 
-| STOP DATE | LITERAL | 7 | true | Date to stop listing messages in FM format (today - defaultif not entered). | 
+| {::nomarkdown}FROM DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date to start from in FM format.{:/} | 
+| {::nomarkdown}STOP DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date to stop listing messages in FM format (today - defaultif not entered).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

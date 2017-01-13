@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU HASKEY
- tag | HASKEY
+ label | {::nomarkdown}ORWU HASKEY{:/}
+ tag | {::nomarkdown}HASKEY{:/}
  routine | [ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
- return value type | SINGLE VALUE
- description | Returns 1 if a user holds a security key, otherwise 0.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns 1 if a user holds a security key, otherwise 0.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | returns TRUE if the user possesses the security key
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

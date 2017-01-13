@@ -9,26 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPXRM GEC FINISHED?
- tag | GECF
+ label | {::nomarkdown}ORQQPXRM GEC FINISHED?{:/}
+ tag | {::nomarkdown}GECF{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | SINGLE VALUE
- description | This RPC pass a boolean value to PXRMGECU
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC pass a boolean value to PXRMGECU{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | This is the Patient DFN | 
-| FIN | LITERAL |  | true | Fin is a 1 or 0 | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Patient DFN{:/} | 
+| {::nomarkdown}FIN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fin is a 1 or 0{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

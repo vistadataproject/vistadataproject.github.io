@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX LVREMLST
- tag | LVREMLST
+ label | {::nomarkdown}ORQQPX LVREMLST{:/}
+ tag | {::nomarkdown}LVREMLST{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | ARRAY
- description | Returns Cover Sheet reminder settings
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns Cover Sheet reminder settings{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns cover sheet reminders at a specified level
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LVL | LITERAL |  |  | Parameter Level setting | 
-| CLASS | LITERAL |  |  | Optional User Class IEN if level is CLASS | 
+| {::nomarkdown}LVL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Parameter Level setting{:/} | 
+| {::nomarkdown}CLASS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Optional User Class IEN if level is CLASS{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETIEN
- tag | FNDIEN
+ label | {::nomarkdown}EC GETIEN{:/}
+ tag | {::nomarkdown}FNDIEN{:/}
  routine | [ECUURPC](http://code.osehra.org/dox/Routine_ECUURPC_source.html)
- return value type | SINGLE VALUE
- description | Returns the IEN from a file.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the IEN from a file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ecary |  |  |  |  | 
-| ECARY | LITERAL |  | true | Input variable ECARY contains the following elements     1.  FIL  - File number     2.  TXT  - .01 description | 
+| {::nomarkdown}ecary{:/} |  |  |  |  | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable ECARY contains the following elements     1.  FIL  - File number     2.  TXT  - .01 description{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

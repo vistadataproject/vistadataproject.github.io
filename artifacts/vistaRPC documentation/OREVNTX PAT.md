@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX PAT
- tag | PAT
+ label | {::nomarkdown}OREVNTX PAT{:/}
+ tag | {::nomarkdown}PAT{:/}
  routine | [OREVNTX](http://code.osehra.org/dox/Routine_OREVNTX_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns currently delayed events for patient DFN
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

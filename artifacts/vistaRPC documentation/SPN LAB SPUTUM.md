@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN LAB SPUTUM
- tag | COL
+ label | {::nomarkdown}SPN LAB SPUTUM{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNRPCA1](http://code.osehra.org/dox/Routine_SPNRPCA1_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  |  | 
-| SDATE | LITERAL |  |  |  | 
-| EDATE | LITERAL |  |  |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}SDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

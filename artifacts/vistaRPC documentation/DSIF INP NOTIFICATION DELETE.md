@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF INP NOTIFICATION DELETE
- tag | DELNOTF
+ label | {::nomarkdown}DSIF INP NOTIFICATION DELETE{:/}
+ tag | {::nomarkdown}DELNOTF{:/}
  routine | [DSIFINP1](http://code.osehra.org/dox/Routine_DSIFINP1_source.html)
- return value type | SINGLE VALUE
- description | Delete notificatio and ROC if 7078 pointer not present
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Delete notificatio and ROC if 7078 pointer not present{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| NOTEIEN | LITERAL | 20 | true |  | 
+| {::nomarkdown}NOTEIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

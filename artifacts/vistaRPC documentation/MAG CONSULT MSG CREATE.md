@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG CONSULT MSG CREATE
- tag | MSG
+ label | {::nomarkdown}MAG CONSULT MSG CREATE{:/}
+ tag | {::nomarkdown}MSG{:/}
  routine | [MAGMAPI](http://code.osehra.org/dox/Routine_MAGMAPI_source.html)
- return value type | SINGLE VALUE
- description | Piece1=0 if failurePiece1=1 if successful  Note: you must create the mail group IMAGE TELECONSULT (RADIOLOGY) and      add members to recieve the consult notification mail message.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Piece1=0 if failurePiece1=1 if successful  Note: you must create the mail group IMAGE TELECONSULT (RADIOLOGY) and      add members to recieve the consult notification mail message.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGDUZ | LITERAL | 255 | true | DUZ number for sender of message | 
-| TXT | LIST | 32000 | true | Message to be sent; $END$; Recipient list | 
+| {::nomarkdown}MAGDUZ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DUZ number for sender of message{:/} | 
+| {::nomarkdown}TXT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Message to be sent; $END$; Recipient list{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

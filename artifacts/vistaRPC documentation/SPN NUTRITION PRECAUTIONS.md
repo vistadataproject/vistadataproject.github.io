@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN NUTRITION PRECAUTIONS
- tag | RPC
+ label | {::nomarkdown}SPN NUTRITION PRECAUTIONS{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [SPNRPC03](http://code.osehra.org/dox/Routine_SPNRPC03_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SDATE | LITERAL |  |  |  | 
-| EDATE | LITERAL |  |  |  | 
-| ICN | LITERAL |  |  |  | 
+| {::nomarkdown}SDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

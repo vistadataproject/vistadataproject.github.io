@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORAM2 TEAMCHK
- tag | TEAMCHK
+ label | {::nomarkdown}ORAM2 TEAMCHK{:/}
+ tag | {::nomarkdown}TEAMCHK{:/}
  routine | [ORAM2](http://code.osehra.org/dox/Routine_ORAM2_source.html)
- return value type | ARRAY
- description | Checks list of teams to be sure they are in the OE/RR LIST file (#100.21),and returns the IEN and Clinic Name.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Checks list of teams to be sure they are in the OE/RR LIST file (#100.21),and returns the IEN and Clinic Name.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TEAMS | LIST |  |  |  | 
+| {::nomarkdown}TEAMS{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

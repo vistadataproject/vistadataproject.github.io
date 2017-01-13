@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG BROKER SECURITY
- tag | BSE
+ label | {::nomarkdown}MAG BROKER SECURITY{:/}
+ tag | {::nomarkdown}BSE{:/}
  routine | [MAGS2BSE](http://code.osehra.org/dox/Routine_MAGS2BSE_source.html)
- return value type | SINGLE VALUE
- description | CALL BSE(BROKER SECURITY ENHANCEMENT) - XUS SET VISITOR, RETURN A BSE TOKEN
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}CALL BSE(BROKER SECURITY ENHANCEMENT) - XUS SET VISITOR, RETURN A BSE TOKEN{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RES | LITERAL | 256 | true | CALL TO GET A BSE TOKEN FOR AUTHENTICATING REMOTE VISTA USER | 
+| {::nomarkdown}RES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CALL TO GET A BSE TOKEN FOR AUTHENTICATING REMOTE VISTA USER{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

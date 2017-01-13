@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | VAFC REMOTE PDAT
- tag | PDAT
+ label | {::nomarkdown}VAFC REMOTE PDAT{:/}
+ tag | {::nomarkdown}PDAT{:/}
  routine | [VAFCRPC](http://code.osehra.org/dox/Routine_VAFCRPC_source.html)
- return value type | ARRAY
- description | This Remote Procedure Call will return the text Patient MPI/PD Data Inquiry report to a remote site.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This Remote Procedure Call will return the text Patient MPI/PD Data Inquiry report to a remote site.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL | 16 | true | This should be the ICN without the 'V' or the checksum. | 
-| SSN | LITERAL | 9 | true |  | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This should be the ICN without the 'V' or the checksum.{:/} | 
+| {::nomarkdown}SSN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

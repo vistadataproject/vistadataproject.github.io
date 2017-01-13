@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBD STORE WORKSTATION ERROR
- tag | WSERR
+ label | {::nomarkdown}IBD STORE WORKSTATION ERROR{:/}
+ tag | {::nomarkdown}WSERR{:/}
  routine | [IBDFBK1](http://code.osehra.org/dox/Routine_IBDFBK1_source.html)
- return value type | SINGLE VALUE
- description | This call back is used by AICS to log entries in the AICS ERROR AND WARNINGFILE when the recognition of a form is canceled or otherwise interrupted.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This call back is used by AICS to log entries in the AICS ERROR AND WARNINGFILE when the recognition of a form is canceled or otherwise interrupted.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FORMID | LIST | 40 | true |  | 
+| {::nomarkdown}FORMID{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM CON UNREADLIST GET
- tag | LOOKUP
+ label | {::nomarkdown}MAG DICOM CON UNREADLIST GET{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [MAGDTR05](http://code.osehra.org/dox/Routine_MAGDTR05_source.html)
- return value type | ARRAY
- description | Per VHA Directive 2004-038, this RPC should not be modified.+---------------------------------------------------------------+| Property of the US Government.                                || No permission to copy or redistribute this software is given. || Use of unreleased versions of this software requires the user || to execute a written test agreement with the VistA Imaging    || Development Office of the Department of Veterans Affairs,     || telephone (301) 734-0100.                                     || The Food and Drug Administration classifies this software as  || a medical device.  As such, it may not be changed in any way. || Modifications to this software may result in an adulterated   || medical device under 21CFR820, the use of which is considered || to be a violation of US Federal Statutes.                     |+---------------------------------------------------------------+ Retrieve records in TELEREADER READ/UNREAD LIST file (#2006.5849).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Per VHA Directive 2004-038, this RPC should not be modified.+---------------------------------------------------------------+ Property of the US Government.                                 No permission to copy or redistribute this software is given.  Use of unreleased versions of this software requires the user  to execute a written test agreement with the VistA Imaging     Development Office of the Department of Veterans Affairs,      telephone (301) 734-0100.                                      The Food and Drug Administration classifies this software as   a medical device.  As such, it may not be changed in any way.  Modifications to this software may result in an adulterated    medical device under 21CFR820, the use of which is considered  to be a violation of US Federal Statutes.                     +---------------------------------------------------------------+ Retrieve records in TELEREADER READ/UNREAD LIST file (#2006.5849).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ACQSITE | LITERAL |  | true | Acquisition Station Number | 
-| SPECIALITY INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR SPECIALTY/SUBSPECIALTY file (#2005.84) | 
-| PROCEDURE INDEX | LITERAL |  | true | A pointer to IMAGE INDEX FOR PROCEDURE/EVENT file (2005.85) - this is a comma-delimited list | 
-| TIMESTAMP | LITERAL |  | true | Fileman date/time to begin sequential search | 
-| DUZ | LITERAL |  | true | User's DUZ at the Reading Site | 
-| READER SITE | LITERAL |  | true | Reading Site pointer to INSTITUTION file (#4) | 
-| LOCKTIME | LITERAL |  | true | AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT. | 
-| STATLIST | LITERAL |  |  | Status of entry to be retrieve (C, L, R, U, or W, in any combination) | 
-| READER STATION | LITERAL |  |  | Reading Site's Station Number | 
+| {::nomarkdown}ACQSITE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Acquisition Station Number{:/} | 
+| {::nomarkdown}SPECIALITY INDEX{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A pointer to IMAGE INDEX FOR SPECIALTY/SUBSPECIALTY file (#2005.84){:/} | 
+| {::nomarkdown}PROCEDURE INDEX{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A pointer to IMAGE INDEX FOR PROCEDURE/EVENT file (2005.85) - this is a comma-delimited list{:/} | 
+| {::nomarkdown}TIMESTAMP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fileman date/time to begin sequential search{:/} | 
+| {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}User's DUZ at the Reading Site{:/} | 
+| {::nomarkdown}READER SITE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Reading Site pointer to INSTITUTION file (#4){:/} | 
+| {::nomarkdown}LOCKTIME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT.{:/} | 
+| {::nomarkdown}STATLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Status of entry to be retrieve (C, L, R, U, or W, in any combination){:/} | 
+| {::nomarkdown}READER STATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reading Site's Station Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

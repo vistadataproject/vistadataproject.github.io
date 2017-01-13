@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUX SYMTAB
- tag | SYMTAB
+ label | {::nomarkdown}ORWUX SYMTAB{:/}
+ tag | {::nomarkdown}SYMTAB{:/}
  routine | [ORWUX](http://code.osehra.org/dox/Routine_ORWUX_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the contents of the current session's symbol table.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the contents of the current session's symbol table.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return the current symbol table
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ GET
- tag | GETQUE
+ label | {::nomarkdown}MAGQ GET{:/}
+ tag | {::nomarkdown}GETQUE{:/}
  routine | [MAGQBTM](http://code.osehra.org/dox/Routine_MAGQBTM_source.html)
- return value type | SINGLE VALUE
- description | Returns parameters for the next queue process for the specified type.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns parameters for the next queue process for the specified type.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ACTION | LITERAL |  | true | The background processor queue type(JBTOHD,JUKEBOX,DELETE,ABSTRACT,ROUTING). | 
+| {::nomarkdown}ACTION{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The background processor queue type(JBTOHD,JUKEBOX,DELETE,ABSTRACT,ROUTING).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

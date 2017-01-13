@@ -18,8 +18,8 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | code_number | .01 | Code Number | {::nomarkdown}ICD-9 or ICD-10 Code{:/} | STRING |  | REQUIRED |  | 
-| coding_system | 1.1 | Coding System | {::nomarkdown}This is the coding system to which the code belongs.{:/} | POINTER |  |  | {id:Icd_Coding_Systems-80_4} | 
-| pdx_exclusion_code | 1.11 | Pdx Exclusion Code | {::nomarkdown}This is a Primary Diagnosis Exclusion Code <br/>(file #82.13) containing a list of Diagnosis <br/>codes that, when used as the primary diagnosis<br/>code with this code will cause the CC <br/>(Complication/Comorbidity) to be zero (meaning<br/>\no CC\).  {:/} | POINTER |  |  | {id:Drg_Cc_Exclusions-82_13} | 
+| coding_system | 1.1 | Coding System | {::nomarkdown}This is the coding system to which the code belongs.{:/} | POINTER |  |  | Icd_Coding_Systems-80_4 | 
+| pdx_exclusion_code | 1.11 | Pdx Exclusion Code | {::nomarkdown}This is a Primary Diagnosis Exclusion Code <br/>(file #82.13) containing a list of Diagnosis <br/>codes that, when used as the primary diagnosis<br/>code with this code will cause the CC <br/>(Complication/Comorbidity) to be zero (meaning<br/>\no CC\).  {:/} | POINTER |  |  | Drg_Cc_Exclusions-82_13 | 
 | identifier | 1.2 | Identifier | {::nomarkdown}This field contains Identifier codes providing more detail on <br/>the DRG.{:/} | STRING |  |  |  | 
 | unacceptable_as_principal_dx | 1.3 | Unacceptable As Principal Dx | {::nomarkdown}This field contains a flag indicating that this code is <br/>unacceptable as the principal diagnosis.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 | mdc13 | 1.4 | Mdc13 | {::nomarkdown}Field is set to 13 when the Major Diagnostic Code (MDC) <br/>equals 13 (Female Reproductive System){:/} | NUMERIC |  |  |  | 
@@ -38,7 +38,7 @@ title: VDM documentation
 | description | 68 | Description | {::nomarkdown}This is a history of the descriptive<br/>text to include the date the text <br/>was first used and the text used.{:/} | [OBJECT] |  |  | [Description-80_068](#Description-80_068)  | 
 | drg_grouper | 71 | Drg Grouper | {::nomarkdown}This field sets the effective date for the DRGs for a given fiscal year. <br/>It should normally be the first day of October of the fiscal year. Each<br/>year a new entry will be created and the DRG's hierachy will reside within<br/>this field.{:/} | [OBJECT] |  |  | [Drg_Grouper-80_071](#Drg_Grouper-80_071)  | 
 | major_diagnostic_category | 72 | Major Diagnostic Category | {::nomarkdown}This is a listing of Major Diagnostic Categories (MDC) associated<br/>with this ICD Diagnosis by fiscal year.{:/} | [OBJECT] |  |  | [Major_Diagnostic_Category-80_072](#Major_Diagnostic_Category-80_072)  | 
-| drg_diagnosis_identifier_codes | 73 | Drg Diagnosis Identifier Codes | {::nomarkdown}This is a listing of identifier codes used in<br/>the DRG rules processing to determine DRG.{:/} | [POINTER] |  |  | {id:Drg_Diagnosis_Identifier_Codes-82} | 
+| drg_diagnosis_identifier_codes | 73 | Drg Diagnosis Identifier Codes | {::nomarkdown}This is a listing of identifier codes used in<br/>the DRG rules processing to determine DRG.{:/} | [POINTER] |  |  | Drg_Diagnosis_Identifier_Codes-82 | 
 | complication_comorbidity | 103 | Complication/comorbidity | {::nomarkdown}This is a history of the Complication/Comorbidity (CC) designation<br/>for the diagnosis and includes the CC designation with the date <br/>it became effective.  {:/} | [OBJECT] |  |  | [Complication_comorbidity-80_0103](#Complication_comorbidity-80_0103)  | 
 
 ## <a name="Sex-80_04"></a>Sex-80_04 
@@ -138,7 +138,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | drg_grouper_effective_date | .01 | Drg Grouper Effective Date | {::nomarkdown}This field contains the effective date for the DRGs for a <br/>fiscal year.  It should normally be the first day of October<br/>of the fiscal year. Each year a new entry will be created and<br/>the DRG's hierarchy will reside within this field.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| drg | 1 | Drg | {::nomarkdown}This field contains all of the DRGs associated with the corresponding <br/>ICD Diagnosis for the fiscal year indicated by the DRG Grouper <br/>effective date.{:/} | [POINTER] |  |  | {id:Drg-80_2} | 
+| drg | 1 | Drg | {::nomarkdown}This field contains all of the DRGs associated with the corresponding <br/>ICD Diagnosis for the fiscal year indicated by the DRG Grouper <br/>effective date.{:/} | [POINTER] |  |  | Drg-80_2 | 
 
 ## <a name="Major_Diagnostic_Category-80_072"></a>Major_Diagnostic_Category-80_072 
 
@@ -152,7 +152,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | mdc_effective_date | .01 | Mdc Effective Date | {::nomarkdown}This is the date that the Major Diagnostic Categories became<br/>effective for this diagnosis.  This is normally the beginning<br/>of a fiscal year.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| mdc | 1 | Mdc | {::nomarkdown}This is a single Major Diagnostic Category code associated with the <br/>corresponding ICD Diagnosis for the fiscal year indicated by the MCD<br/>effective date.{:/} | POINTER |  |  | {id:Major_Diagnostic_Category-80_3} | 
+| mdc | 1 | Mdc | {::nomarkdown}This is a single Major Diagnostic Category code associated with the <br/>corresponding ICD Diagnosis for the fiscal year indicated by the MCD<br/>effective date.{:/} | POINTER |  |  | Major_Diagnostic_Category-80_3 | 
 
 ## <a name="Complication_comorbidity-80_0103"></a>Complication_comorbidity-80_0103 
 
@@ -172,4 +172,4 @@ title: VDM documentation
 
 
 
- Generated on January 12th 2017, 6:30:19 am
+ Generated on January 13th 2017, 6:16:11 am

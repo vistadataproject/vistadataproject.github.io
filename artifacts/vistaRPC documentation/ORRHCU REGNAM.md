@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCU REGNAM
- tag | REGNAM
+ label | {::nomarkdown}ORRHCU REGNAM{:/}
+ tag | {::nomarkdown}REGNAM{:/}
  routine | [ORRHCU](http://code.osehra.org/dox/Routine_ORRHCU_source.html)
- return value type | SINGLE VALUE
- description | Returns the full name of a registry given the abbreviated name.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the full name of a registry given the abbreviated name.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IDentifier | LITERAL |  | true | The abbreviated name that identifies the registry. | 
+| {::nomarkdown}IDentifier{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The abbreviated name that identifies the registry.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,25 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PXRM REMINDER DIALOG (TIU)
- tag | TDIALOG
+ label | {::nomarkdown}PXRM REMINDER DIALOG (TIU){:/}
+ tag | {::nomarkdown}TDIALOG{:/}
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- return value type | ARRAY
- description | Dialog for a given dialog ien.
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Dialog for a given dialog ien.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIALOG IEN | LITERAL | 16 | true | Reminder Dialog ien from #801.41 | 
+| {::nomarkdown}DIALOG IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reminder Dialog ien from #801.41{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

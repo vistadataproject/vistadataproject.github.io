@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PRPF DATABASE DIAG
- tag | RPC
+ label | {::nomarkdown}PRPF DATABASE DIAG{:/}
+ tag | {::nomarkdown}RPC{:/}
  routine | [PRPFDR3](http://code.osehra.org/dox/Routine_PRPFDR3_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PRPFRPC | REFERENCE | 100 | true |  | 
+| {::nomarkdown}PRPFRPC{:/} | {::nomarkdown}REFERENCE{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

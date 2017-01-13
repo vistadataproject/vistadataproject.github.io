@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | YTQ SET ANSWER ALL
- tag | SAVEALL
+ label | {::nomarkdown}YTQ SET ANSWER ALL{:/}
+ tag | {::nomarkdown}SAVEALL{:/}
  routine | [YTQAPI17](http://code.osehra.org/dox/Routine_YTQAPI17_source.html)
- return value type | ARRAY
- description | Saves all answers for an administration. Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Saves all answers for an administration. Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

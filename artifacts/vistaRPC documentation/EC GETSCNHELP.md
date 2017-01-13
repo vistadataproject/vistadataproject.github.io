@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC GETSCNHELP
- tag | ECHELP
+ label | {::nomarkdown}EC GETSCNHELP{:/}
+ tag | {::nomarkdown}ECHELP{:/}
  routine | [ECUURPC](http://code.osehra.org/dox/Routine_ECUURPC_source.html)
- return value type | GLOBAL ARRAY
- description | Returns the entries from the HELP FILE #9.2 based on a help frame.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns the entries from the HELP FILE #9.2 based on a help frame.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | Input variable ECARY contains the Help Frame Name. | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Input variable ECARY contains the Help Frame Name.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

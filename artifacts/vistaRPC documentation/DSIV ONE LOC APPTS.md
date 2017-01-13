@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIV ONE LOC APPTS
- tag | RQONELOC
+ label | {::nomarkdown}DSIV ONE LOC APPTS{:/}
+ tag | {::nomarkdown}RQONELOC{:/}
  routine | [DSIVIC5](http://code.osehra.org/dox/Routine_DSIVIC5_source.html)
- return value type | GLOBAL ARRAY
- description | Request all appointments for one hospital location with insurance flag, check-in user, check-out user, and manual patient flag.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Request all appointments for one hospital location with insurance flag, check-in user, check-out user, and manual patient flag.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MORE | LITERAL | 1 | true | Contains a 1 if this is a second call to the rpc to get more records.  Used with the NUMS field to get sets of data and not overwhelm the broker or timeout. | 
-| LOCIEN | LITERAL | 16 | true | Hospital Location IEN | 
-| SDT | LITERAL | 16 | true | FileMan Start date.time (optional) | 
-| EDT | LITERAL | 16 | true | FileMan End date.time (optional) | 
-| DAYS | LITERAL | 10 | true | Number of days prior to today for last verified check (default=182) | 
-| SCREEN | LITERAL | 1 | true | Contains the type of appointment to screen out:  1=checked in (which also screens checked out appointments by default) or 2=checked out | 
-| NUMS | LITERAL | 9 | true | Contains the number of records to return for each call. | 
-| BUF | LITERAL | 1 | true | This field can be set to 1 to screen out (not return) appointments if there's an existing buffer entry for that patient. | 
+| {::nomarkdown}MORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains a 1 if this is a second call to the rpc to get more records.  Used with the NUMS field to get sets of data and not overwhelm the broker or timeout.{:/} | 
+| {::nomarkdown}LOCIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Hospital Location IEN{:/} | 
+| {::nomarkdown}SDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FileMan Start date.time (optional){:/} | 
+| {::nomarkdown}EDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FileMan End date.time (optional){:/} | 
+| {::nomarkdown}DAYS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Number of days prior to today for last verified check (default=182){:/} | 
+| {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the type of appointment to screen out:  1=checked in (which also screens checked out appointments by default) or 2=checked out{:/} | 
+| {::nomarkdown}NUMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the number of records to return for each call.{:/} | 
+| {::nomarkdown}BUF{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field can be set to 1 to screen out (not return) appointments if there's an existing buffer entry for that patient.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

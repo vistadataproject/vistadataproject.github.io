@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG FILEMAN FIELD ATTS
- tag | FIELDATT
+ label | {::nomarkdown}MAG FILEMAN FIELD ATTS{:/}
+ tag | {::nomarkdown}FIELDATT{:/}
  routine | [MAGUFFLA](http://code.osehra.org/dox/Routine_MAGUFFLA_source.html)
- return value type | ARRAY
- description | This remote procedure returns a list of attributes and attribute values for a field in a FileMan file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This remote procedure returns a list of attributes and attribute values for a field in a FileMan file.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| FILENO | LITERAL | 20 | true | This is the number of a FileMan file or subfile. | 
-| FIELDNO | LITERAL | 20 | true | This is the field within the specified FileMan file or subfile for which attributes are being requested. | 
+| {::nomarkdown}FILENO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of a FileMan file or subfile.{:/} | 
+| {::nomarkdown}FIELDNO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the field within the specified FileMan file or subfile for which attributes are being requested.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

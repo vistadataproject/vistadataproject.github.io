@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA FILE
- tag | FILE
+ label | {::nomarkdown}NUPA FILE{:/}
+ tag | {::nomarkdown}FILE{:/}
  routine | [NUPABCL](http://code.osehra.org/dox/Routine_NUPABCL_source.html)
- return value type | SINGLE VALUE
- description | Files data into Fileman files.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Files data into Fileman files.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DIE | LITERAL |  | true | The file to save data to, in regular fileman format. | 
-| IEN | LITERAL |  | true | The DA variable for the DIE call, in regular fileman format. | 
-| FIELD | LITERAL |  | true | The field number to file data into, in numeric format. | 
-| VALUE | LITERAL |  | true | The value to save to the field. | 
-| SLASHES | LITERAL |  | true | The number of slashes for the DIE call, typically 3 or 4. | 
+| {::nomarkdown}DIE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The file to save data to, in regular fileman format.{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The DA variable for the DIE call, in regular fileman format.{:/} | 
+| {::nomarkdown}FIELD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The field number to file data into, in numeric format.{:/} | 
+| {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The value to save to the field.{:/} | 
+| {::nomarkdown}SLASHES{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The number of slashes for the DIE call, typically 3 or 4.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

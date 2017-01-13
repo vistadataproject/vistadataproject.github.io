@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM GET PROCESS ID
- tag | GETPID
+ label | {::nomarkdown}MAG DICOM GET PROCESS ID{:/}
+ tag | {::nomarkdown}GETPID{:/}
  routine | [MAGDRPC1](http://code.osehra.org/dox/Routine_MAGDRPC1_source.html)
- return value type | SINGLE VALUE
- description | Return the $J process id of the RPC backend
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Return the $J process id of the RPC backend{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS APPROVE SIGN FOR EMPLOYEE
- tag | EN1
+ label | {::nomarkdown}OOPS APPROVE SIGN FOR EMPLOYEE{:/}
+ tag | {::nomarkdown}EN1{:/}
  routine | [OOPSGUI8](http://code.osehra.org/dox/Routine_OOPSGUI8_source.html)
- return value type | ARRAY
- description | This broker call will determine whether the individual can approve theWorkers' Comp person being able to sign for the employee if accessed from theSafety or Employee Health menus.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This broker call will determine whether the individual can approve theWorkers' Comp person being able to sign for the employee if accessed from theSafety or Employee Health menus.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| INPUT | LITERAL | 256 | true | This parameter contains the IEN of the ASISTS record to be evaluated and thecalling menu in the format IEN^CALLING MENU. | 
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the IEN of the ASISTS record to be evaluated and thecalling menu in the format IEN^CALLING MENU.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

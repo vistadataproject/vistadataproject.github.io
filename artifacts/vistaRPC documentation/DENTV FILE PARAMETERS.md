@@ -9,22 +9,22 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV FILE PARAMETERS
- tag | PAR
+ label | {::nomarkdown}DENTV FILE PARAMETERS{:/}
+ tag | {::nomarkdown}PAR{:/}
  routine | [DENTVTP0](http://code.osehra.org/dox/Routine_DENTVTP0_source.html)
- return value type | SINGLE VALUE
- description | This RPC allows the Dental software to file word processing type parameters.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC allows the Dental software to file word processing type parameters.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ENT | LITERAL | 80 | true | Entity is the level where the parameter is stored (USR, PKG, SYS), etc. | 
-| PAR | LITERAL | 80 | true | Parameter is the name of the parameter that values are stored under. | 
-| INST | LITERAL | 80 | true | Instance is defaulted to 1 if not defined, otherwise it represents the next level where parameters are stored within the entity/parameter combination. | 
-| DATA | LIST | 250 | true | DATA is the value of the parameter, passed as a list to allow setting of word processing parameter data. | 
+| {::nomarkdown}ENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Entity is the level where the parameter is stored (USR, PKG, SYS), etc.{:/} | 
+| {::nomarkdown}PAR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Parameter is the name of the parameter that values are stored under.{:/} | 
+| {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Instance is defaulted to 1 if not defined, otherwise it represents the next level where parameters are stored within the entity/parameter combination.{:/} | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA is the value of the parameter, passed as a list to allow setting of word processing parameter data.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

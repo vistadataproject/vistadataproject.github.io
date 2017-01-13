@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ANRV GET PTALL
- tag | LISTALL
+ label | {::nomarkdown}ANRV GET PTALL{:/}
+ tag | {::nomarkdown}LISTALL{:/}
  routine | [ANRVOA](http://code.osehra.org/dox/Routine_ANRVOA_source.html)
- return value type | ARRAY
- description | Returns a list of all patients beginning with(x), from(x), to(x)direction.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all patients beginning with(x), from(x), to(x)direction.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| RESULTS | LITERAL |  | true |  | 
-| FROM | LITERAL | 50 | true |  | 
-| DIR | LITERAL | 50 | true |  | 
+| {::nomarkdown}RESULTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

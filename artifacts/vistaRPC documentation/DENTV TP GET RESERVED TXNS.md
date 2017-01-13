@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DENTV TP GET RESERVED TXNS
- tag | GET
+ label | {::nomarkdown}DENTV TP GET RESERVED TXNS{:/}
+ tag | {::nomarkdown}GET{:/}
  routine | [DENTVTP7](http://code.osehra.org/dox/Routine_DENTVTP7_source.html)
- return value type | GLOBAL ARRAY
- description | Returns all reserved transactions for a particular Dental provider andpatient.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns all reserved transactions for a particular Dental provider andpatient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PROV | LITERAL | 30 | true | Provider IEN from file 200. | 
-| DFN | LITERAL | 30 | true | Patient DFN from file 2. | 
+| {::nomarkdown}PROV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Provider IEN from file 200.{:/} | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN from file 2.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

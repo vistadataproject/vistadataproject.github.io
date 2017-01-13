@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB TEMPLATE DEFINITION
- tag | DEFINE
+ label | {::nomarkdown}DVBAB TEMPLATE DEFINITION{:/}
+ tag | {::nomarkdown}DEFINE{:/}
  routine | [DVBABFRM](http://code.osehra.org/dox/Routine_DVBABFRM_source.html)
- return value type | GLOBAL ARRAY
- description | C&P Worksheet Templates are made of 3 files:  a form definition, a code definition, and a script definition. Set DVBIEN to the internal entry number of the form Set DVBTYPE to the definition you want:         1= Form, 2=Script, 3=Report
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}C&P Worksheet Templates are made of 3 files:  a form definition, a code definition, and a script definition. Set DVBIEN to the internal entry number of the form Set DVBTYPE to the definition you want:         1= Form, 2=Script, 3=Report{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DVBIEN | LITERAL |  | true |  | 
-| DVBTYPE | LITERAL |  | true |  | 
+| {::nomarkdown}DVBIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DVBTYPE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

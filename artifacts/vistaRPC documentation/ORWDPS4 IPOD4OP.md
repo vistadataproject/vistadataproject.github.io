@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDPS4 IPOD4OP
- tag | IPOD4OP
+ label | {::nomarkdown}ORWDPS4 IPOD4OP{:/}
+ tag | {::nomarkdown}IPOD4OP{:/}
  routine | [ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | True: is an Inpt (IV OI) order on an OutPatient
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

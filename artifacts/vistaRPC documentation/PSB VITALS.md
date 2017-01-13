@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB VITALS
- tag | VITALS
+ label | {::nomarkdown}PSB VITALS{:/}
+ tag | {::nomarkdown}VITALS{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | Passes array of Vital entries - Temp,Pulse,Resp,BP,Pain in the last 7 days
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Passes array of Vital entries - Temp,Pulse,Resp,BP,Pain in the last 7 days{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 30 | true | Patient IEN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

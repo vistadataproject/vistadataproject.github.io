@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQPX GET DEF LOCATIONS
- tag | GETDEFOL
+ label | {::nomarkdown}ORQQPX GET DEF LOCATIONS{:/}
+ tag | {::nomarkdown}GETDEFOL{:/}
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
- return value type | ARRAY
- description | Returns the contents of the ORQQPX DEFAULT LOCATIONS parameter.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the contents of the ORQQPX DEFAULT LOCATIONS parameter.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return Default Outside Locations
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| LOC | LITERAL |  |  | Current Location. | 
+| {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Current Location.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

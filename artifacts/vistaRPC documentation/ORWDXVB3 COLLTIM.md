@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXVB3 COLLTIM
- tag | COLLTIM
+ label | {::nomarkdown}ORWDXVB3 COLLTIM{:/}
+ tag | {::nomarkdown}COLLTIM{:/}
  routine | [ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
- return value type | SINGLE VALUE
- description | This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Collection Time Default Parameter Value
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

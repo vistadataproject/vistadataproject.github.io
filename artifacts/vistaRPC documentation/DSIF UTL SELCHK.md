@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF UTL SELCHK
- tag | SELCHK
+ label | {::nomarkdown}DSIF UTL SELCHK{:/}
+ tag | {::nomarkdown}SELCHK{:/}
  routine | [DSIFUTL](http://code.osehra.org/dox/Routine_DSIFUTL_source.html)
- return value type | SINGLE VALUE
- description | Check for sensitive patient.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Check for sensitive patient.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true | INPUT PARAMETER   DFN - PATIENT DFN | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}INPUT PARAMETER   DFN - PATIENT DFN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

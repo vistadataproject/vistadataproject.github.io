@@ -9,26 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX1 ORDMATCH
- tag | ORDMATCH
+ label | {::nomarkdown}ORWDX1 ORDMATCH{:/}
+ tag | {::nomarkdown}ORDMATCH{:/}
  routine | [ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
- return value type | SINGLE VALUE
- description | This RPC will accept a list of orders and each order status, if one of the order does not have a status it will return a false value.
-
-
-### Method description
-
- property | value 
---- | --- 
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC will accept a list of orders and each order status, if one of the order does not have a status it will return a false value.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  | true |  | 
-| ORYARR | LIST |  | true |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}ORYARR{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

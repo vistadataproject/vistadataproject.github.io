@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB GET VISIT INFO
- tag | VISIT
+ label | {::nomarkdown}DVBAB GET VISIT INFO{:/}
+ tag | {::nomarkdown}VISIT{:/}
  routine | [DVBABTIU](http://code.osehra.org/dox/Routine_DVBABTIU_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENTNAME | LITERAL |  |  |  | 
-| VISITDATE |  |  |  |  | 
-| CLINICIEN |  |  |  |  | 
+| {::nomarkdown}PATIENTNAME{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}VISITDATE{:/} |  |  |  |  | 
+| {::nomarkdown}CLINICIEN{:/} |  |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

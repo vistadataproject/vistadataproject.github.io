@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | TIU MED LAST5
- tag | LAST5
+ label | {::nomarkdown}TIU MED LAST5{:/}
+ tag | {::nomarkdown}LAST5{:/}
  routine | [TIUMED1](http://code.osehra.org/dox/Routine_TIUMED1_source.html)
- return value type | ARRAY
- description | Returns a list of patients that match an A9999 identifier.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of patients that match an A9999 identifier.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| TIUID | LITERAL |  | true |  | 
+| {::nomarkdown}TIUID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

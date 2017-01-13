@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET ADT DATA
- tag | COL
+ label | {::nomarkdown}SPN GET ADT DATA{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPPM](http://code.osehra.org/dox/Routine_SPNJRPPM_source.html)
- return value type | GLOBAL ARRAY
- description | Returns ADT Patient Movement entries for the requested date(s).
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Returns ADT Patient Movement entries for the requested date(s).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICNLST | LITERAL |  |  | List of patient's ICNs (ICN^ICN^ICN^ICN^ICN...) | 
-| ACTDATE | LITERAL |  |  | Date to begin ADT entry search from. | 
+| {::nomarkdown}ICNLST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of patient's ICNs (ICN^ICN^ICN^ICN^ICN...){:/} | 
+| {::nomarkdown}ACTDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to begin ADT entry search from.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

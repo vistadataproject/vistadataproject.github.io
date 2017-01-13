@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY READMAIL
- tag | MAIL
+ label | {::nomarkdown}DSIF PAY READMAIL{:/}
+ tag | {::nomarkdown}MAIL{:/}
  routine | [DSIFPAY6](http://code.osehra.org/dox/Routine_DSIFPAY6_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MESSAGE IEN | LITERAL | 99 | true |  | 
+| {::nomarkdown}MESSAGE IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

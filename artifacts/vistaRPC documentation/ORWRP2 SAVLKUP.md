@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWRP2 SAVLKUP
- tag | SAVLKUP
+ label | {::nomarkdown}ORWRP2 SAVLKUP{:/}
+ tag | {::nomarkdown}SAVLKUP{:/}
  routine | [ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
- return value type | SINGLE VALUE
- description | This saves the last Adhoc Health Summary lookup used by a user in CPRS.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This saves the last Adhoc Health Summary lookup used by a user in CPRS.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | save Adhoc lookup selection
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| VAL | LITERAL | 10 | true | This is the value passed to the parameter ORWRP ADHOC LOOKUP  0: Name  1: Abbreviation  2: Display Header | 
+| {::nomarkdown}VAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the value passed to the parameter ORWRP ADHOC LOOKUP  0: Name  1: Abbreviation  2: Display Header{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

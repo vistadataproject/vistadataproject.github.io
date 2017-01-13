@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | IBARXM TRANS DATA
- tag | TRANS
+ label | {::nomarkdown}IBARXM TRANS DATA{:/}
+ tag | {::nomarkdown}TRANS{:/}
  routine | [IBARXMR](http://code.osehra.org/dox/Routine_IBARXMR_source.html)
- return value type | SINGLE VALUE
- description | This remote procedure is used to receive transaction information from aremote facility and reply with an acknowledgement.This RPC call does not send user data to remote side.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This remote procedure is used to receive transaction information from aremote facility and reply with an acknowledgement.This RPC call does not send user data to remote side.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| IBD | LITERAL |  | true | This is the data sent by the remote treating facility to be filled infile 354.71. | 
-| IBICN | LITERAL |  | true | This is the patient's ICN. | 
+| {::nomarkdown}IBD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the data sent by the remote treating facility to be filled infile 354.71.{:/} | 
+| {::nomarkdown}IBICN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the patient's ICN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

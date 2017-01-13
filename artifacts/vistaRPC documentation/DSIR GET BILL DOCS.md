@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET BILL DOCS
- tag | GETDOCS
+ label | {::nomarkdown}DSIR GET BILL DOCS{:/}
+ tag | {::nomarkdown}GETDOCS{:/}
  routine | [DSIRBIL](http://code.osehra.org/dox/Routine_DSIRBIL_source.html)
- return value type | GLOBAL ARRAY
- description | This RPC is used to get a list of document types and internal number of documents that were previously release under the type of patient/veteran.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}This RPC is used to get a list of document types and internal number of documents that were previously release under the type of patient/veteran.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | 999 | true | Patient Internal Number | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient Internal Number{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

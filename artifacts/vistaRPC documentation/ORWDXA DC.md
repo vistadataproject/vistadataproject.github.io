@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDXA DC
- tag | DC
+ label | {::nomarkdown}ORWDXA DC{:/}
+ tag | {::nomarkdown}DC{:/}
  routine | [ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
- return value type | ARRAY
- description | RPC to discontinue, cancel, or delete an existing order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}RPC to discontinue, cancel, or delete an existing order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Discontinue/Cancel/Delete order
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

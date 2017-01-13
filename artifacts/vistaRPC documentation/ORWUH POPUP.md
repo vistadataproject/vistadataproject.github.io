@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUH POPUP
- tag | POPUP
+ label | {::nomarkdown}ORWUH POPUP{:/}
+ tag | {::nomarkdown}POPUP{:/}
  routine | [ORWUH](http://code.osehra.org/dox/Routine_ORWUH_source.html)
- return value type | ARRAY
- description | Retrieves the \What's This\ text for a given control.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Retrieves the \What's This\ text for a given control.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get instructions for a given control
- Leading comment lines | ERROR
+ Leading comment lines | {::nomarkdown}ERROR{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

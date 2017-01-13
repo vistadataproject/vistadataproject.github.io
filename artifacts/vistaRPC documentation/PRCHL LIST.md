@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PRCHL LIST
- tag | EN
+ label | {::nomarkdown}PRCHL LIST{:/}
+ tag | {::nomarkdown}EN{:/}
  routine | [PRCHL4](http://code.osehra.org/dox/Routine_PRCHL4_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DATE1 | LITERAL | 50 | true | The Fileman date to start the query.  The beginning date. | 
-| DATE2 | LITERAL | 50 | true | The Fileman date to end the query.  The ending date. | 
+| {::nomarkdown}DATE1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Fileman date to start the query.  The beginning date.{:/} | 
+| {::nomarkdown}DATE2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Fileman date to end the query.  The ending date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

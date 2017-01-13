@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR TSALL
- tag | TSALL
+ label | {::nomarkdown}ORWOR TSALL{:/}
+ tag | {::nomarkdown}TSALL{:/}
  routine | [ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
- return value type | ARRAY
- description | Returns a list of valid treating specialities.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of valid treating specialities.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return list of treating specialties
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

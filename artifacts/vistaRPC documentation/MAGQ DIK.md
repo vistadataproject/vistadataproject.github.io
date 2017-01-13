@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ DIK
- tag | DELETE
+ label | {::nomarkdown}MAGQ DIK{:/}
+ tag | {::nomarkdown}DELETE{:/}
  routine | [MAGGTID](http://code.osehra.org/dox/Routine_MAGGTID_source.html)
- return value type | ARRAY
- description | This procedure will remove an image file entry and cleanup references to it.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This procedure will remove an image file entry and cleanup references to it.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ien | LITERAL | 1 | true | The internal entry number of the image entry to be removed. | 
-| IEN | LITERAL |  | true |  | 
+| {::nomarkdown}ien{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The internal entry number of the image entry to be removed.{:/} | 
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

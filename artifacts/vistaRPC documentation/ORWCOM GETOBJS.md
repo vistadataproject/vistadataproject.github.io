@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWCOM GETOBJS
- tag | GETOBJS
+ label | {::nomarkdown}ORWCOM GETOBJS{:/}
+ tag | {::nomarkdown}GETOBJS{:/}
  routine | [ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
- return value type | ARRAY
- description | Returns a list of all active COM objects
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all active COM objects{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns list of all active COM objects
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

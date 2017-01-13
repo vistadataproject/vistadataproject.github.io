@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SCRP QUERY CHECK NAME
- tag | NAME
+ label | {::nomarkdown}SCRP QUERY CHECK NAME{:/}
+ tag | {::nomarkdown}NAME{:/}
  routine | [SCRPBK2](http://code.osehra.org/dox/Routine_SCRPBK2_source.html)
- return value type | ARRAY
- description | This RPC checks to see if the user already has a querywith the name being passed in as part of the RPC.If there is already a query with the same name, the RPCpasses back the internal entry number of the RPC, otherwisethe RPC passes back a 0.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC checks to see if the user already has a querywith the name being passed in as part of the RPC.If there is already a query with the same name, the RPCpasses back the internal entry number of the RPC, otherwisethe RPC passes back a 0.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| QUERY NAME | LITERAL | 30 | true | Name of the query that needs to be checked for existence. | 
-| USER | LITERAL | 30 | true | Internal entry number of user that the query namewill be assoicated with, usually DUZ. | 
+| {::nomarkdown}QUERY NAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of the query that needs to be checked for existence.{:/} | 
+| {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of user that the query namewill be assoicated with, usually DUZ.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

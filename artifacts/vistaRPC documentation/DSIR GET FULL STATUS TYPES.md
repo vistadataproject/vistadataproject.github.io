@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIR GET FULL STATUS TYPES
- tag | GETSTDSP
+ label | {::nomarkdown}DSIR GET FULL STATUS TYPES{:/}
+ tag | {::nomarkdown}GETSTDSP{:/}
  routine | [DSIROI6](http://code.osehra.org/dox/Routine_DSIROI6_source.html)
- return value type | ARRAY
- description | THIS RPC RETURNS THE CONTENTS OF THE STATUS CODE FILE (^DSIR(19620.41))
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}THIS RPC RETURNS THE CONTENTS OF THE STATUS CODE FILE (^DSIR(19620.41)){:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ACT | LITERAL | 1 | true | ACT - INDICATED IF A STATUS IS ACTIVE (1) OR INACTIVE (0). | 
+| {::nomarkdown}ACT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ACT - INDICATED IF A STATUS IS ACTIVE (1) OR INACTIVE (0).{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

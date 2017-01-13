@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | SPN GET ENROLLMENT
- tag | COL
+ label | {::nomarkdown}SPN GET ENROLLMENT{:/}
+ tag | {::nomarkdown}COL{:/}
  routine | [SPNJRPCE](http://code.osehra.org/dox/Routine_SPNJRPCE_source.html)
- return value type | ARRAY
- description | Returns most recent Eligibility Enrollment Application information.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns most recent Eligibility Enrollment Application information.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ICN | LITERAL |  |  | Individual patient's ICN. | 
+| {::nomarkdown}ICN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Individual patient's ICN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

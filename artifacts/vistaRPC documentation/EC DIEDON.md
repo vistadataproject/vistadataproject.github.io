@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | EC DIEDON
- tag | ECDOD
+ label | {::nomarkdown}EC DIEDON{:/}
+ tag | {::nomarkdown}ECDOD{:/}
  routine | [ECUERPC2](http://code.osehra.org/dox/Routine_ECUERPC2_source.html)
- return value type | SINGLE VALUE
- description | This RPC returns a patient's date of death.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This RPC returns a patient's date of death.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| ECARY | LITERAL |  | true | The input variable ECARY contains the patient's DFN. | 
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input variable ECARY contains the patient's DFN.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWUL QV4DG
- tag | QV4DG
+ label | {::nomarkdown}ORWUL QV4DG{:/}
+ tag | {::nomarkdown}QV4DG{:/}
  routine | [ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return the quick order list, given a display group name
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

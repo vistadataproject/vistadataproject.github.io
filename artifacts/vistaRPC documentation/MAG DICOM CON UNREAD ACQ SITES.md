@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG DICOM CON UNREAD ACQ SITES
- tag | GETSITES
+ label | {::nomarkdown}MAG DICOM CON UNREAD ACQ SITES{:/}
+ tag | {::nomarkdown}GETSITES{:/}
  routine | [MAGDTR06](http://code.osehra.org/dox/Routine_MAGDTR06_source.html)
- return value type | ARRAY
- description | This RPC returns the list of acquisition sites thatare defined for the reading site.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}This RPC returns the list of acquisition sites thatare defined for the reading site.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

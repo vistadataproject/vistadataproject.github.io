@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DSIF PAY FIX ALL REJ ITEMS
- tag | ALLMEDR
+ label | {::nomarkdown}DSIF PAY FIX ALL REJ ITEMS{:/}
+ tag | {::nomarkdown}ALLMEDR{:/}
  routine | [DSIFPAY2](http://code.osehra.org/dox/Routine_DSIFPAY2_source.html)
- return value type | GLOBAL ARRAY
- description | re-initiate all rejected line items in medical (B3) type batch
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}re-initiate all rejected line items in medical (B3) type batch{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| OLD BATCH | LITERAL | 35 | true | Old Batch IEN | 
-| NEW BATCH | LITERAL | 35 | true | New Batch IEN | 
+| {::nomarkdown}OLD BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Old Batch IEN{:/} | 
+| {::nomarkdown}NEW BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}New Batch IEN{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWPT16 LOOKUP
- tag | LOOKUP
+ label | {::nomarkdown}ORWPT16 LOOKUP{:/}
+ tag | {::nomarkdown}LOOKUP{:/}
  routine | [ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return a set of patient names
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAG4 VERSION STATUS
- tag | VERSTAT
+ label | {::nomarkdown}MAG4 VERSION STATUS{:/}
+ tag | {::nomarkdown}VERSTAT{:/}
  routine | [MAGGTU4](http://code.osehra.org/dox/Routine_MAGGTU4_source.html)
- return value type | SINGLE VALUE
- description | RPC to evaluate the status of an Imaging Version.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}RPC to evaluate the status of an Imaging Version.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| MAGVER | LITERAL | 100 | true | The Imaging Version to be checked.  In the format   MAG*3.0*59   or   3.0.59 | 
+| {::nomarkdown}MAGVER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Imaging Version to be checked.  In the format   MAG*3.0*59   or   3.0.59{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

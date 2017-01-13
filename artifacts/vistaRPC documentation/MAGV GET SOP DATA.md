@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGV GET SOP DATA
- tag | GETSOP
+ label | {::nomarkdown}MAGV GET SOP DATA{:/}
+ tag | {::nomarkdown}GETSOP{:/}
  routine | [MAGVRS24](http://code.osehra.org/dox/Routine_MAGVRS24_source.html)
- return value type | ARRAY
- description | Returns SOP attributes given the IEN on the IMAGE SOP DATAFile (#2005.64).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns SOP attributes given the IEN on the IMAGE SOP DATAFile (#2005.64).{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| SOPIEN | LITERAL |  |  | The internal entry number of the study in the IMAGE SOP INSTANCE File (#2005.64). | 
-| SERIEN | LITERAL |  |  | The internal entry number of the study in the IMAGE SERIES File (#2005.63). | 
-| OVERRIDE | LITERAL |  |  | This parameter overrides parent IEN checking. | 
+| {::nomarkdown}SOPIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The internal entry number of the study in the IMAGE SOP INSTANCE File (#2005.64).{:/} | 
+| {::nomarkdown}SERIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The internal entry number of the study in the IMAGE SERIES File (#2005.63).{:/} | 
+| {::nomarkdown}OVERRIDE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This parameter overrides parent IEN checking.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORPRF CLEAR
- tag | CLEAR
+ label | {::nomarkdown}ORPRF CLEAR{:/}
+ tag | {::nomarkdown}CLEAR{:/}
  routine | [ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Clear up the temp global
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

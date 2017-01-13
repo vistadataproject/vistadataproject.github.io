@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | DVBAB REPORT CPDETAILS
- tag | STRT
+ label | {::nomarkdown}DVBAB REPORT CPDETAILS{:/}
+ tag | {::nomarkdown}STRT{:/}
  routine | [DVBAB70](http://code.osehra.org/dox/Routine_DVBAB70_source.html)
- return value type | ARRAY
- description | Returns a detailed summary of a specific C&P request.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a detailed summary of a specific C&P request.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL |  |  |  | 
-| ZREQDA | LITERAL |  |  |  | 
+| {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+| {::nomarkdown}ZREQDA{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

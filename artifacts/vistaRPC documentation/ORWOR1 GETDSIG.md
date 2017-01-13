@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWOR1 GETDSIG
- tag | GETDSIG
+ label | {::nomarkdown}ORWOR1 GETDSIG{:/}
+ tag | {::nomarkdown}GETDSIG{:/}
  routine | [ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
- return value type | SINGLE VALUE
- description | Returns the digital signature of an existing order.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns the digital signature of an existing order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Get Digital Signature
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

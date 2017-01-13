@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | XOBE ESIG GET DATA
- tag | GETDATA
+ label | {::nomarkdown}XOBE ESIG GET DATA{:/}
+ tag | {::nomarkdown}GETDATA{:/}
  routine | [XOBESIG](http://code.osehra.org/dox/Routine_XOBESIG_source.html)
- return value type | ARRAY
- description | Returns the data for the electronic signature block-related  fields from the NEW PERSON file.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the data for the electronic signature block-related  fields from the NEW PERSON file.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

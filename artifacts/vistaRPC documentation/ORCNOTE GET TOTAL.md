@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORCNOTE GET TOTAL
- tag | GETTOT
+ label | {::nomarkdown}ORCNOTE GET TOTAL{:/}
+ tag | {::nomarkdown}GETTOT{:/}
  routine | [ORCNOTE](http://code.osehra.org/dox/Routine_ORCNOTE_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | get total count of progress notes
- Leading comment lines | ^TIU(8925,"ACLPT",3) refers to progress notes class
+ Leading comment lines | {::nomarkdown}^TIU(8925,"ACLPT",3) refers to progress notes class{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDX DLGQUIK
- tag | DLGQUIK
+ label | {::nomarkdown}ORWDX DLGQUIK{:/}
+ tag | {::nomarkdown}DLGQUIK{:/}
  routine | [ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
- return value type | ARRAY
- description | Return responses for a quick order (no longer used).
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Return responses for a quick order (no longer used).{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | (NOT USED)
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

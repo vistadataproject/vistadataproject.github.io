@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OREVNTX ACTIVE
- tag | ACTIVE
+ label | {::nomarkdown}OREVNTX ACTIVE{:/}
+ tag | {::nomarkdown}ACTIVE{:/}
  routine | [OREVNTX](http://code.osehra.org/dox/Routine_OREVNTX_source.html)
- return value type | ARRAY
+ return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns all active events [of TYPE] from #100.5
- Leading comment lines | where TYPE=string containing any of the codes from the TYPE field
+ Leading comment lines | {::nomarkdown}where TYPE=string containing any of the codes from the TYPE field{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

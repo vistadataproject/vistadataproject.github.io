@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORB KILL EXPIR MED ALERT
- tag | KILEXMED
+ label | {::nomarkdown}ORWORB KILL EXPIR MED ALERT{:/}
+ tag | {::nomarkdown}KILEXMED{:/}
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
- return value type | SINGLE VALUE
- description | Evaluate expiring med orders.  If none remain, kill current alert forcurrent user.  Kill for other users if alert so defined.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Evaluate expiring med orders.  If none remain, kill current alert forcurrent user.  Kill for other users if alert so defined.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Delete expiring meds notification if no expiring meds remaining
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| Patient DFN | LITERAL | 32 | true |  | 
+| {::nomarkdown}Patient DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWGRPC DELVIEWS
- tag | DELVIEWS
+ label | {::nomarkdown}ORWGRPC DELVIEWS{:/}
+ tag | {::nomarkdown}DELVIEWS{:/}
  routine | [ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
- return value type | GLOBAL ARRAY
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | RPC - delete a graph view
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

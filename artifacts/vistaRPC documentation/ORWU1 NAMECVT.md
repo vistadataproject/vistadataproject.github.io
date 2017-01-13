@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWU1 NAMECVT
- tag | NAMECVT
+ label | {::nomarkdown}ORWU1 NAMECVT{:/}
+ tag | {::nomarkdown}NAMECVT{:/}
  routine | [ORWU1](http://code.osehra.org/dox/Routine_ORWU1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns text name(mixed-case) derived from IEN xref.
- Leading comment lines | GRE/2002,PKS-12/20/2002 Tag not presently used.,Y=Returned value, IEN=Internal number
+ Leading comment lines | {::nomarkdown}GRE/2002<br/>PKS-12/20/2002 Tag not presently used.<br/>Y=Returned value, IEN=Internal number{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,27 +9,27 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN UNRESOLVED
- tag | UNRSLVD
+ label | {::nomarkdown}ORQQCN UNRESOLVED{:/}
+ tag | {::nomarkdown}UNRSLVD{:/}
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
- return value type | SINGLE VALUE
- description | Returns 1 if current user has unresolved consults for current patient, 0 if not.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}Returns 1 if current user has unresolved consults for current patient, 0 if not.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns true if unresolved consults for user/pt
- Leading comment lines | S ORY=0,Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0,S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473,Q
+ Leading comment lines | {::nomarkdown}S ORY=0<br/>Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0<br/>S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/>Q{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PATIENT DFN | LITERAL | 32 | true |  | 
+| {::nomarkdown}PATIENT DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

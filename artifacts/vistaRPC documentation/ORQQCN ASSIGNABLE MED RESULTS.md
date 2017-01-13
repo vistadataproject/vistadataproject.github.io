@@ -9,26 +9,26 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORQQCN ASSIGNABLE MED RESULTS
- tag | GETMED
+ label | {::nomarkdown}ORQQCN ASSIGNABLE MED RESULTS{:/}
+ tag | {::nomarkdown}GETMED{:/}
  routine | [ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
- return value type | ARRAY
- description | Returns a list of medicine results that can be attached to a procedure.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of medicine results that can be attached to a procedure.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Return available med results for proc request
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| CONSULT IEN | LITERAL | 16 | true | Consult (procedure) IEN in file 123. | 
+| {::nomarkdown}CONSULT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Consult (procedure) IEN in file 123.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

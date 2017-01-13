@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWDRA32 LOCTYPE
- tag | LOCTYPE
+ label | {::nomarkdown}ORWDRA32 LOCTYPE{:/}
+ tag | {::nomarkdown}LOCTYPE{:/}
  routine | [ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Returns type of location (C,W)
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,23 +9,23 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | MAGQ QRNGE
- tag | QRNGE
+ label | {::nomarkdown}MAGQ QRNGE{:/}
+ tag | {::nomarkdown}QRNGE{:/}
  routine | [MAGQBUT5](http://code.osehra.org/dox/Routine_MAGQBUT5_source.html)
- return value type | SINGLE VALUE
- description | This procedure is to either delete or re-queue a range of Vista ImagingBackground Processor queues.  The process parameter determines the action.
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
+ description | {::nomarkdown}This procedure is to either delete or re-queue a range of Vista ImagingBackground Processor queues.  The process parameter determines the action.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| QUEUE | LITERAL | 15 | true | This determines the queue type that will be processed. | 
-| PROCESS | LITERAL | 15 | true | This determines whether the queue will be requeued or deleted.  Avalue of \DEL\ will designate a delete and a value of \REQ\ willdesignate a requeue. | 
-| START | LITERAL | 15 | true | This value will determine the start of the range of Queue file (#2006.03) entries that will be processed. | 
-| STOP | LITERAL | 15 | true | This will determine the last Queue file entry that will be processed. | 
-| PLACE | LITERAL | 15 | true | This value designates the Imaging site parameter entryfor which the queues to be processed are associated. | 
+| {::nomarkdown}QUEUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This determines the queue type that will be processed.{:/} | 
+| {::nomarkdown}PROCESS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This determines whether the queue will be requeued or deleted.  Avalue of \DEL\ will designate a delete and a value of \REQ\ willdesignate a requeue.{:/} | 
+| {::nomarkdown}START{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value will determine the start of the range of Queue file (#2006.03) entries that will be processed.{:/} | 
+| {::nomarkdown}STOP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This will determine the last Queue file entry that will be processed.{:/} | 
+| {::nomarkdown}PLACE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value designates the Imaging site parameter entryfor which the queues to be processed are associated.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWORB FASTUSER
- tag | FASTUSER
+ label | {::nomarkdown}ORWORB FASTUSER{:/}
+ tag | {::nomarkdown}FASTUSER{:/}
  routine | [ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
- return value type | GLOBAL ARRAY
- description | Function returns notifications for current user.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Function returns notifications for current user.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | return current user's notifications across all patients
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

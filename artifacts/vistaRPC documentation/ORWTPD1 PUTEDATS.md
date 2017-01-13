@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWTPD1 PUTEDATS
- tag | PUTEDATS
+ label | {::nomarkdown}ORWTPD1 PUTEDATS{:/}
+ tag | {::nomarkdown}PUTEDATS{:/}
  routine | [ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | Save Encounter app't date range params at user level.
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -9,21 +9,21 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORWD GET4EDIT
- tag | GET4EDIT
+ label | {::nomarkdown}ORWD GET4EDIT{:/}
+ tag | {::nomarkdown}GET4EDIT{:/}
  routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
- return value type | ARRAY
- description | Returns the responses for an already existing order.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns the responses for an already existing order.{:/}
 
 
 ### Method description
 
  property | value 
---- | --- 
+ --- | --- 
  Method comment | procedure
- Leading comment lines | return responses in format that can be used by dialog
+ Leading comment lines | {::nomarkdown}return responses in format that can be used by dialog{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:03 am
+ Generated on January 13th 2017, 6:24:32 am

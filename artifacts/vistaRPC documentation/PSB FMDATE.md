@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | PSB FMDATE
- tag | FMDATE
+ label | {::nomarkdown}PSB FMDATE{:/}
+ tag | {::nomarkdown}FMDATE{:/}
  routine | [PSBRPC](http://code.osehra.org/dox/Routine_PSBRPC_source.html)
- return value type | ARRAY
- description | Used to validate Fileman dates.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Used to validate Fileman dates.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| PSBVAL | LITERAL | 30 | true | The user supplied input for a date. | 
+| {::nomarkdown}PSBVAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The user supplied input for a date.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

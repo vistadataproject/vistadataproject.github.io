@@ -9,20 +9,20 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | OOPS SET OSHA300A
- tag | OSHA300
+ label | {::nomarkdown}OOPS SET OSHA300A{:/}
+ tag | {::nomarkdown}OSHA300{:/}
  routine | [OOPSGUIC](http://code.osehra.org/dox/Routine_OOPSGUIC_source.html)
- return value type | SINGLE VALUE
+ return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| STA | LITERAL | 20 | true |  | 
-| DATA | LIST | 100 |  |  | 
+| {::nomarkdown}STA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} |  | 
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}100{:/} |  |  | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

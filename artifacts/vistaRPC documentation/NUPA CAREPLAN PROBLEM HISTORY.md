@@ -9,19 +9,19 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | NUPA CAREPLAN PROBLEM HISTORY
- tag | HIST
+ label | {::nomarkdown}NUPA CAREPLAN PROBLEM HISTORY{:/}
+ tag | {::nomarkdown}HIST{:/}
  routine | [NUPABCL1](http://code.osehra.org/dox/Routine_NUPABCL1_source.html)
- return value type | GLOBAL ARRAY
- description | Provides the history for a selected problem & intervention in a patient's care plan for the current admission.
+ return value type | {::nomarkdown}GLOBAL ARRAY{:/}
+ description | {::nomarkdown}Provides the history for a selected problem & intervention in a patient's care plan for the current admission.{:/}
 
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| DA  | LITERAL |  | true | Three piece variable.  Pieces are: 1. IEN of problem from file 1927.2. 2. IEN of intervention from file 1927.24. 3. IEN of the Care Plan from file 1927.4. | 
+| {::nomarkdown}DA {:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Three piece variable.  Pieces are: 1. IEN of problem from file 1927.2. 2. IEN of intervention from file 1927.24. 3. IEN of the Care Plan from file 1927.4.{:/} | 
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am

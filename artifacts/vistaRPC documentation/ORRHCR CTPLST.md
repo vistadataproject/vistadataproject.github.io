@@ -9,13 +9,13 @@ title: VISTA RPC documentation
 
  property | value 
 --- | --- 
- label | ORRHCR CTPLST
- tag | CTPLST
+ label | {::nomarkdown}ORRHCR CTPLST{:/}
+ tag | {::nomarkdown}CTPLST{:/}
  routine | [ORRHCR](http://code.osehra.org/dox/Routine_ORRHCR_source.html)
- return value type | ARRAY
- description | Returns a list of all criteria that are available as query constraintsand the parent search items each criterion is associated with.
+ return value type | {::nomarkdown}ARRAY{:/}
+ description | {::nomarkdown}Returns a list of all criteria that are available as query constraintsand the parent search items each criterion is associated with.{:/}
 
 
 
 
- Generated on January 11th 2017, 7:15:04 am
+ Generated on January 13th 2017, 6:24:32 am
