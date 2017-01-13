@@ -21,13 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete user's default setting 
- Lines | ```
- N ORERR S ORERR=""
- D NDEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS INDV",.ORERR)
- D DEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS ALL",1,.ORERR)
- K ORERR```
+ Lines | ```{::nomarkdown} N ORERR S ORERR=""<br/> D NDEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS INDV",.ORERR)<br/> D DEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS ALL",1,.ORERR)<br/> K ORERR```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Delete default release event
  Input Parameters | {::nomarkdown}PVIFN{:/}
- Lines | ```
- Q:'PVIFN
- N ORERR
- S ORERR=""
- D DEL^XPAR(PVIFN_";VA(200,","OREVNT DEFAULT",1,.ORERR)```
+ Lines | ```{::nomarkdown} Q:'PVIFN<br/> N ORERR<br/> S ORERR=""<br/> D DEL^XPAR(PVIFN_";VA(200,","OREVNT DEFAULT",1,.ORERR)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

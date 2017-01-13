@@ -20,14 +20,10 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Lines | ```
- N C,I,X
- D GRPSEQ(.X)
- S C=0,I=0
- F  S I=$O(X(I)) Q:I=""  S C=C+1,Y(C)=I_U_X(I)```
+ Lines | ```{::nomarkdown} N C,I,X<br/> D GRPSEQ(.X)<br/> S C=0,I=0<br/> F  S I=$O(X(I)) Q:I=""  S C=C+1,Y(C)=I_U_X(I)```{:/}
  Leading comment lines | {::nomarkdown}Call GRPSEQ, format for broker:<br/>Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

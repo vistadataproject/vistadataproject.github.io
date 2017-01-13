@@ -22,21 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return list of Order Checks on Release Order
  Input Parameters | {::nomarkdown}ORVP<br/>ORLST{:/}
- Lines | ```
- K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")
- N ORES,ORCHECK
- S ORVP=+ORVP_";DPT("
- S I=0 F  S I=$O(ORLST(I)) Q:'I  D
- . I +$P(ORLST(I),";",2)'=1 Q  ; order not new
- . I $P(ORLST(I),U,3)="0" Q    ; order not being released
- . S ORES($P(ORLST(I),U))=""
- D SESSION^ORCHECK
- D OPOS(+ORVP)
- D CHK2LST
- D CHECKIT(.LST)
- K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")```
+ Lines | ```{::nomarkdown} K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")<br/> N ORES,ORCHECK<br/> S ORVP=+ORVP_";DPT("<br/> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br/> . I +$P(ORLST(I),";",2)'=1 Q  ; order not new<br/> . I $P(ORLST(I),U,3)="0" Q    ; order not being released<br/> . S ORES($P(ORLST(I),U))=""<br/> D SESSION^ORCHECK<br/> D OPOS(+ORVP)<br/> D CHK2LST<br/> D CHECKIT(.LST)<br/> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

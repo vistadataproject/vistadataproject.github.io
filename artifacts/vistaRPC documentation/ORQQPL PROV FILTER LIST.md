@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GET LIST OF RESPONSIBLE PROVIDERS FROM PRBLM LIST
  Input Parameters | {::nomarkdown}INP{:/}
- Lines | ```
- N S
- S S=""
- F I=1:1 S S=$O(INP(S)) Q:S=""  D
- . I INP(S)'="",$G(^VA(200,INP(S),0))'="" D  Q  ; get next
- .. S RETURN(I)=INP(S)_U_$P(^VA(200,INP(S),0),U)
- S RETURN(0)="-1"_U_"<None recorded>" ; return empty provider```
+ Lines | ```{::nomarkdown} N S<br/> S S=""<br/> F I=1:1 S S=$O(INP(S)) Q:S=""  D<br/> . I INP(S)'="",$G(^VA(200,INP(S),0))'="" D  Q  ; get next<br/> .. S RETURN(I)=INP(S)_U_$P(^VA(200,INP(S),0),U)<br/> S RETURN(0)="-1"_U_"<None recorded>" ; return empty provider```{:/}
  Leading comment lines | {::nomarkdown}RETURN - aa list of responsible providers from which to select for filtering<br/>INP - array of problem list providers to select from{:/}
 
 ### Input Parameters
@@ -40,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,8 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | get if provider is active or not
  Input Parameters | {::nomarkdown}ORWPROV<br/>ORWDT{:/}
- Lines | ```
- S ORRETURN=$$ACTIVPRV^PXAPI(ORWPROV,ORWDT)```
+ Lines | ```{::nomarkdown} S ORRETURN=$$ACTIVPRV^PXAPI(ORWPROV,ORWDT)```{:/}
 
 ### Input Parameters
 
@@ -35,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

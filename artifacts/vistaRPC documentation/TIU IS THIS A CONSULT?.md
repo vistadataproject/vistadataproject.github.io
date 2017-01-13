@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
  Input Parameters | {::nomarkdown}TITLE{:/}
- Lines | ```
- N TIUCLASS
- S TIUCLASS=+$$CLASS
- I +TIUCLASS'>0 S TIUY=0 Q
- S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
+ Lines | ```{::nomarkdown} N TIUCLASS<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 Q<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{:/}
 
 ### Input Parameters
 
@@ -37,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

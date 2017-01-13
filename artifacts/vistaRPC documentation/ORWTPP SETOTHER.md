@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}INFO{:/}
- Lines | ```
- D SETOTHER^ORWTPO(.OK,INFO,DUZ)```
+ Lines | ```{::nomarkdown} D SETOTHER^ORWTPO(.OK,INFO,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}set current user's other parameter settings{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get Unit/Dose Order Form ID
  Input Parameters | {::nomarkdown}INFO{:/}
- Lines | ```
- S Y=$O(^ORD(101.41,"B","PSJ OR PAT OE",0))
- S:$L(Y)<1 Y=0```
+ Lines | ```{::nomarkdown} S Y=$O(^ORD(101.41,"B","PSJ OR PAT OE",0))<br/> S:$L(Y)<1 Y=0```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

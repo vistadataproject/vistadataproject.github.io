@@ -21,14 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN LIST OF ACTIVE WARDS
- Lines | ```
- N I,IEN,NAME,D0
- S I=1,NAME=""
- F  S NAME=$O(^DIC(42,"B",NAME)) Q:NAME=""  S IEN=$O(^(NAME,0)) D
- . S D0=IEN D WIN^DGPMDDCF
- . I X=0 S Y(I)=IEN_"^"_NAME,I=I+1```
+ Lines | ```{::nomarkdown} N I,IEN,NAME,D0<br/> S I=1,NAME=""<br/> F  S NAME=$O(^DIC(42,"B",NAME)) Q:NAME=""  S IEN=$O(^(NAME,0)) D<br/> . S D0=IEN D WIN^DGPMDDCF<br/> . I X=0 S Y(I)=IEN_"^"_NAME,I=I+1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

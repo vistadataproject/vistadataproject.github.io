@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - return PARAM1^PARAM2 for graph report
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```
- S VAL=$$RPTPARAM^ORWGAPI(IEN)```
+ Lines | ```{::nomarkdown} S VAL=$$RPTPARAM^ORWGAPI(IEN)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

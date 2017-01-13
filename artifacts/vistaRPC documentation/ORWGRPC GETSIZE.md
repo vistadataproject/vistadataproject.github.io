@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get graph positions and sizes
- Lines | ```
- D GETSIZE^ORWGAPI("ORWGRPC")
- S DATA=$NA(^TMP("ORWGRPC",$J))```
+ Lines | ```{::nomarkdown} D GETSIZE^ORWGAPI("ORWGRPC")<br/> S DATA=$NA(^TMP("ORWGRPC",$J))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,20 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GET LIST OF PATIENT PROBLEMS
  Input Parameters | {::nomarkdown}DFN<br/>CONTEXT<br/>ORIDT{:/}
- Lines | ```
- N DIWL,DIWR,DIWF
- N ST,ORI,ORX
- S ORIDT=$G(ORIDT,DT)
- S (LCNT,NUM)=0
- S DIWL=1,DIWR=48,DIWF="C48"
- S CONTEXT=";;"_$G(CONTEXT)
- I CONTEXT=";;" S CONTEXT=";;A"
- S ST=$P(CONTEXT,";",3)
- I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only
- I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here
- I ROOT(0)<1 D
- . S LCNT=1
- . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"```
+ Lines | ```{::nomarkdown} N DIWL,DIWR,DIWF<br/> N ST,ORI,ORX<br/> S ORIDT=$G(ORIDT,DT)<br/> S (LCNT,NUM)=0<br/> S DIWL=1,DIWR=48,DIWF="C48"<br/> S CONTEXT=";;"_$G(CONTEXT)<br/> I CONTEXT=";;" S CONTEXT=";;A"<br/> S ST=$P(CONTEXT,";",3)<br/> I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only<br/> I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here<br/> I ROOT(0)<1 D<br/> . S LCNT=1<br/> . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"```{:/}
 
 ### Input Parameters
 
@@ -46,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

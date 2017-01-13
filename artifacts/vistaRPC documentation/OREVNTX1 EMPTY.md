@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return 1 if PTEVT doesn't have any orders
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```
- Q:'+PTEVT
- S ORY=$$EMPTY^OREVNTX(PTEVT)```
+ Lines | ```{::nomarkdown} Q:'+PTEVT<br/> S ORY=$$EMPTY^OREVNTX(PTEVT)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

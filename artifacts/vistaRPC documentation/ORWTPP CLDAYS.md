@@ -21,11 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
- Lines | ```
- D CLDAYS^ORWTPL(.INFO,DUZ)```
+ Lines | ```{::nomarkdown} D CLDAYS^ORWTPL(.INFO,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}get current user's clinic defaults{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

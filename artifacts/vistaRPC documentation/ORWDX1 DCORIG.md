@@ -21,8 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORIEN{:/}
- Lines | ```
- S $P(^OR(100,+ORIEN,6),U,9)=1```
+ Lines | ```{::nomarkdown} S $P(^OR(100,+ORIEN,6),U,9)=1```{:/}
 
 ### Input Parameters
 
@@ -33,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

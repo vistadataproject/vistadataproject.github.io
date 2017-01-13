@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return notification sort method for user/division/system/pkg
- Lines | ```
- S ORY=$$GET^XPAR("USR^DIV^SYS^PKG","ORB SORT METHOD",1,"I")```
+ Lines | ```{::nomarkdown} S ORY=$$GET^XPAR("USR^DIV^SYS^PKG","ORB SORT METHOD",1,"I")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

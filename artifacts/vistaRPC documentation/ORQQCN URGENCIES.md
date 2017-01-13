@@ -22,20 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | new urgency from 101.42
  Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | ```
- Q:+$G(GMRCO)=0
- N GMRCURG,X,GMRCCSLT,GMRCPROC,GMRCTYPE,GMRCPROT
- S GMRCCSLT=$O(^ORD(101,"B","GMRCOR CONSULT",0))
- S GMRCPROC=$O(^ORD(101,"B","GMRCOR REQUEST",0))
- S GMRCTYPE=$P(^GMR(123,+GMRCO,0),"^",17)
- I $P(^GMR(123,+GMRCO,0),"^",18)["I" D
- . S X=$S(GMRCTYPE=GMRCCSLT:"S.GMRCT",1:"S.GMRCR")
- E  S X="S.GMRCO"
- S GMRCURG=""
- F I=1:1  S GMRCURG=$O(^ORD(101.42,X,GMRCURG)) Q:GMRCURG=""  D
- .S GMRCPROT=$O(^ORD(101,"B","GMRCURGENCY - "_GMRCURG,0))
- .S Y(I)=GMRCPROT_U_GMRCURG
- .;S Y(I)=$O(^ORD(101.42,X,GMRCURG,0))_U_GMRCURG```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCO)=0<br/> N GMRCURG,X,GMRCCSLT,GMRCPROC,GMRCTYPE,GMRCPROT<br/> S GMRCCSLT=$O(^ORD(101,"B","GMRCOR CONSULT",0))<br/> S GMRCPROC=$O(^ORD(101,"B","GMRCOR REQUEST",0))<br/> S GMRCTYPE=$P(^GMR(123,+GMRCO,0),"^",17)<br/> I $P(^GMR(123,+GMRCO,0),"^",18)["I" D<br/> . S X=$S(GMRCTYPE=GMRCCSLT:"S.GMRCT",1:"S.GMRCR")<br/> E  S X="S.GMRCO"<br/> S GMRCURG=""<br/> F I=1:1  S GMRCURG=$O(^ORD(101.42,X,GMRCURG)) Q:GMRCURG=""  D<br/> .S GMRCPROT=$O(^ORD(101,"B","GMRCURGENCY - "_GMRCURG,0))<br/> .S Y(I)=GMRCPROT_U_GMRCURG<br/> .;S Y(I)=$O(^ORD(101.42,X,GMRCURG,0))_U_GMRCURG```{:/}
 
 ### Input Parameters
 
@@ -47,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

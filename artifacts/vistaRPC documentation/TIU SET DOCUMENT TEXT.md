@@ -22,35 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save Text - use Buffered I/O
  Input Parameters | {::nomarkdown}TIUDA<br/>TIUX<br/>SUPPRESS{:/}
- Lines | ```
- N PAGES,PAGE S TIUY=0,SUPPRESS=$G(SUPPRESS,0)
- I $S(+$G(TIUDA)'>0:1,'$D(^TIU(8925,+TIUDA,0)):1,1:0) D  Q
- . S TIUY="0^0^0^Attempt to file data in a Nonexistent Entry."
- . D ERROR(TIUY)
- S PAGE=$P($G(TIUX("HDR")),U),PAGES=$P($G(TIUX("HDR")),U,2)
- I $S('PAGE:1,'PAGES:1,1:0) D  Q
- . S TIUY="0^0^0^Invalid text block header"
- . D ERROR(TIUY)
- I PAGE=1 K ^TIU(8925,+TIUDA,"TEMP")
- M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT")
- I 'SUPPRESS,(PAGE=PAGES),$D(^TIU(8925,TIUDA,"TEMP")) D
- . N TIUC,TIUI,TIU,TIUD12,TIUAU,TIUEC S (TIUC,TIUI)=0
- . F  S TIUI=$O(^TIU(8925,TIUDA,"TEMP",TIUI)) Q:+TIUI'>0  D
- . . S TIUC=TIUC+1
- . I TIUC>0 S ^TIU(8925,TIUDA,"TEMP",0)="^^"_TIUC_U_TIUC_U_DT_"^^"
- . D GETTIU^TIULD(.TIU,TIUDA)
- . K ^TIU(8925,TIUDA,"TEXT")
- . S TIUC=0 F  S TIUC=$O(^TIU(8925,"DAD",TIUDA,TIUC)) Q:+TIUC'>0  D
- . . I +$$ISADDNDM^TIULC1(+TIUC) Q
- . . K ^TIU(8925,+TIUC,"TEXT")
- . D MERGTEXT^TIUEDI1(+TIUDA,.TIU)
- . K ^TIU(8925,TIUDA,"TEMP")
- . ; If user is neither author or expected cosigner, file VBC Line count
- . S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUAU=$P(TIUD12,U,2),TIUEC=$P(TIUD12,U,8)
- . I (TIUAU]""),(DUZ'=TIUAU) D
- . . I (TIUEC]""),(DUZ=TIUEC) Q
- . . D LINES(TIUDA)
- S TIUY=TIUDA_U_PAGE_U_PAGES```
+ Lines | ```{::nomarkdown} N PAGES,PAGE S TIUY=0,SUPPRESS=$G(SUPPRESS,0)<br/> I $S(+$G(TIUDA)'>0:1,'$D(^TIU(8925,+TIUDA,0)):1,1:0) D  Q<br/> . S TIUY="0^0^0^Attempt to file data in a Nonexistent Entry."<br/> . D ERROR(TIUY)<br/> S PAGE=$P($G(TIUX("HDR")),U),PAGES=$P($G(TIUX("HDR")),U,2)<br/> I $S('PAGE:1,'PAGES:1,1:0) D  Q<br/> . S TIUY="0^0^0^Invalid text block header"<br/> . D ERROR(TIUY)<br/> I PAGE=1 K ^TIU(8925,+TIUDA,"TEMP")<br/> M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT")<br/> I 'SUPPRESS,(PAGE=PAGES),$D(^TIU(8925,TIUDA,"TEMP")) D<br/> . N TIUC,TIUI,TIU,TIUD12,TIUAU,TIUEC S (TIUC,TIUI)=0<br/> . F  S TIUI=$O(^TIU(8925,TIUDA,"TEMP",TIUI)) Q:+TIUI'>0  D<br/> . . S TIUC=TIUC+1<br/> . I TIUC>0 S ^TIU(8925,TIUDA,"TEMP",0)="^^"_TIUC_U_TIUC_U_DT_"^^"<br/> . D GETTIU^TIULD(.TIU,TIUDA)<br/> . K ^TIU(8925,TIUDA,"TEXT")<br/> . S TIUC=0 F  S TIUC=$O(^TIU(8925,"DAD",TIUDA,TIUC)) Q:+TIUC'>0  D<br/> . . I +$$ISADDNDM^TIULC1(+TIUC) Q<br/> . . K ^TIU(8925,+TIUC,"TEXT")<br/> . D MERGTEXT^TIUEDI1(+TIUDA,.TIU)<br/> . K ^TIU(8925,TIUDA,"TEMP")<br/> . ; If user is neither author or expected cosigner, file VBC Line count<br/> . S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUAU=$P(TIUD12,U,2),TIUEC=$P(TIUD12,U,8)<br/> . I (TIUAU]""),(DUZ'=TIUAU) D<br/> . . I (TIUEC]""),(DUZ=TIUEC) Q<br/> . . D LINES(TIUDA)<br/> S TIUY=TIUDA_U_PAGE_U_PAGES```{:/}
 
 ### Input Parameters
 
@@ -63,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

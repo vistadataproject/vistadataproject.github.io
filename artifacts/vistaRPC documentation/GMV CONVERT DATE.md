@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GMV CONVERT DATE [RPC entry point]
  Input Parameters | {::nomarkdown}GMRDATE{:/}
- Lines | ```
- N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)
- I $G(GDATE)'>0 S RESULT="" Q
- I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q
- S RESULT=$G(GDATE)_"^"_$G(GDATE(0))```
+ Lines | ```{::nomarkdown} N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)<br/> I $G(GDATE)'>0 S RESULT="" Q<br/> I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q<br/> S RESULT=$G(GDATE)_"^"_$G(GDATE(0))```{:/}
  Leading comment lines | {::nomarkdown}INPUT VARIABLE:<br/>GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER<br/>OUTPUT VARIABLE:<br/>RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME{:/}
 
 ### Input Parameters
@@ -38,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

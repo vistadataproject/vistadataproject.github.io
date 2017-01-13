@@ -22,19 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return subset of personal owners
  Input Parameters | {::nomarkdown}TIUFROM<br/>DIR{:/}
- Lines | ```
- N FILE,IENS,FIELDS,FLAGS,NUMBER,TIUPART,INDEX,SCREEN,ID,TIU,TIUERR
- S FILE=200,FIELDS="@;.01",FLAGS="PB",INDEX="B",NUMBER=44
- S (IENS,TIUPART,ID,TIU,TIUERR)=""
- I DIR=1 S FLAGS="P"
- S SCREEN="I $O(^TIU(8927,""AROOT"",Y,0))"
- D LIST^DIC(FILE,IENS,FIELDS,FLAGS,NUMBER,.TIUFROM,.TIUPART,INDEX,SCREEN,ID,"TIU","TIUERR")
- K TIU("DILIST",0)
- N DA,I
- S DA="",I=0
- F  S DA=$O(TIU("DILIST",DA),DIR) Q:'DA  D
- . S I=I+1
- . S TIUY(I)=$G(TIU("DILIST",DA,0))```
+ Lines | ```{::nomarkdown} N FILE,IENS,FIELDS,FLAGS,NUMBER,TIUPART,INDEX,SCREEN,ID,TIU,TIUERR<br/> S FILE=200,FIELDS="@;.01",FLAGS="PB",INDEX="B",NUMBER=44<br/> S (IENS,TIUPART,ID,TIU,TIUERR)=""<br/> I DIR=1 S FLAGS="P"<br/> S SCREEN="I $O(^TIU(8927,""AROOT"",Y,0))"<br/> D LIST^DIC(FILE,IENS,FIELDS,FLAGS,NUMBER,.TIUFROM,.TIUPART,INDEX,SCREEN,ID,"TIU","TIUERR")<br/> K TIU("DILIST",0)<br/> N DA,I<br/> S DA="",I=0<br/> F  S DA=$O(TIU("DILIST",DA),DIR) Q:'DA  D<br/> . S I=I+1<br/> . S TIUY(I)=$G(TIU("DILIST",DA,0))```{:/}
 
 ### Input Parameters
 
@@ -46,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

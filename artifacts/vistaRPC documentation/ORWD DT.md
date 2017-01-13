@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns internal Fileman Date/Time
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```
- N %DT S %DT="TS" D ^%DT```
+ Lines | ```{::nomarkdown} N %DT S %DT="TS" D ^%DT```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

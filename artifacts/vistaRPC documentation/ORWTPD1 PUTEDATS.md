@@ -22,19 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save Encounter app't date range params at user level.
  Input Parameters | {::nomarkdown}Y{:/}
- Lines | ```
- N ORSTART,ORSTOP,ORUSER
- S OK=1,ORUSER=DUZ
- S ORSTART=$P(Y,U,1)
- S ORSTOP=$P(Y,U,2)
- I ORSTART="" S ORSTART=0
- I ORSTOP="" S ORSTOP=0
- I ORSTART>999 S ORSTART=999
- I ORSTOP>999 S ORSTART=999
- D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)
- D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP)```
+ Lines | ```{::nomarkdown} N ORSTART,ORSTOP,ORUSER<br/> S OK=1,ORUSER=DUZ<br/> S ORSTART=$P(Y,U,1)<br/> S ORSTOP=$P(Y,U,2)<br/> I ORSTART="" S ORSTART=0<br/> I ORSTOP="" S ORSTOP=0<br/> I ORSTART>999 S ORSTART=999<br/> I ORSTOP>999 S ORSTART=999<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

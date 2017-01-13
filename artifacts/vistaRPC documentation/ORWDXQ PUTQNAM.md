@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save display name for a quick order dialog
  Input Parameters | {::nomarkdown}DLG<br/>QNAM{:/}
- Lines | ```
-```
+ Lines | ```{::nomarkdown}```{:/}
  Leading comment lines | {::nomarkdown}see if DLG used QNAM as display text (quit if so)<br/>otherwise save in ORWDQ DISPLAY NAME{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

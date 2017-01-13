@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return help screen showing immediate collect times
- Lines | ```
- D SHOW^LR7OV4(DUZ(2),.ORY)```
+ Lines | ```{::nomarkdown} D SHOW^LR7OV4(DUZ(2),.ORY)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

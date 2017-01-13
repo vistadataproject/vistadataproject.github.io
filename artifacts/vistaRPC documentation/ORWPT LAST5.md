@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a list of patients matching A9999 identifiers
  Input Parameters | {::nomarkdown}ID{:/}
- Lines | ```
- N I,IEN,XREF
- S (I,IEN)=0,XREF=$S($L(ID)=5:"BS5",1:"BS")
- F  S IEN=$O(^DPT(XREF,ID,IEN)) Q:'IEN  D
- . S I=I+1,LST(I)=IEN_U_$P(^DPT(IEN,0),U)_U_$$DOB^DPTLK1(IEN,2)_U_$$SSN^DPTLK1(IEN)  ; DG249```
+ Lines | ```{::nomarkdown} N I,IEN,XREF<br/> S (I,IEN)=0,XREF=$S($L(ID)=5:"BS5",1:"BS")<br/> F  S IEN=$O(^DPT(XREF,ID,IEN)) Q:'IEN  D<br/> . S I=I+1,LST(I)=IEN_U_$P(^DPT(IEN,0),U)_U_$$DOB^DPTLK1(IEN,2)_U_$$SSN^DPTLK1(IEN)  ; DG249```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

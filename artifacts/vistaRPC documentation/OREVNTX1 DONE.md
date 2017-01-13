@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Terminate PTEvt
  Input Parameters | {::nomarkdown}PTEVT{:/}
- Lines | ```
- Q:'PTEVT
- D DONE^OREVNTX(PTEVT)
- D ACTLOG^OREVNTX(PTEVT,"MN")```
+ Lines | ```{::nomarkdown} Q:'PTEVT<br/> D DONE^OREVNTX(PTEVT)<br/> D ACTLOG^OREVNTX(PTEVT,"MN")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

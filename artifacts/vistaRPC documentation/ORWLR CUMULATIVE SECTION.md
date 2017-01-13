@@ -22,19 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return cum report text
  Input Parameters | {::nomarkdown}DFN<br/>RPTID<br/>DTRANGE<br/>SECTION{:/}
- Lines | ```
- IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ
- . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))
- N LINES,ORSUB
- K ^TMP("ORLABDATA",$J)
- D CUMB(DFN,RPTID,DTRANGE)
- S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)
- IF LINES<241 D
- . S OROOT=$NA(^TMP("LRC",$J))
- . S @OROOT@(.001)="1^1"
- ELSE  D
- . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))
- . D BUILD```
+ Lines | ```{::nomarkdown} IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br/> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br/> N LINES,ORSUB<br/> K ^TMP("ORLABDATA",$J)<br/> D CUMB(DFN,RPTID,DTRANGE)<br/> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br/> IF LINES<241 D<br/> . S OROOT=$NA(^TMP("LRC",$J))<br/> . S @OROOT@(.001)="1^1"<br/> ELSE  D<br/> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br/> . D BUILD```{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
 
 ### Input Parameters
@@ -49,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

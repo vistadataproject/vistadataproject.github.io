@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}OTEST{:/}
- Lines | ```
- D MH^PXRMRPCC(.ORY,OTEST)  ; DBIA 3080
- S ORY(0)=0
- I $$PATCH^XPDUTL("YS*5.01*85") S ORY(0)=1```
+ Lines | ```{::nomarkdown} D MH^PXRMRPCC(.ORY,OTEST)  ; DBIA 3080<br/> S ORY(0)=0<br/> I $$PATCH^XPDUTL("YS*5.01*85") S ORY(0)=1```{:/}
 
 ### Input Parameters
 
@@ -35,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Clear ALL the data for this job.
- Lines | ```
- N X
- S X="" F  S X=$O(^TMP("XWBHDL",$J,X)) Q:X=""  D CLEAR(.RET,X)```
+ Lines | ```{::nomarkdown} N X<br/> S X="" F  S X=$O(^TMP("XWBHDL",$J,X)) Q:X=""  D CLEAR(.RET,X)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

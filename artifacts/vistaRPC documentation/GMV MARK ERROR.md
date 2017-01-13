@@ -22,15 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GMV MARK ERROR [RPC entry point]
  Input Parameters | {::nomarkdown}GMVDATA{:/}
- Lines | ```
- N GMVFDA,GMVIEN,GMVIENS
- I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q
- S GMVIENS=(+GMVDATA)_","
- S GMVFDA(120.5,GMVIENS,2)=1
- S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)
- S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)
- D UPDATE^DIE("","GMVFDA","GMVIEN")
- S RESULT="OK"```
+ Lines | ```{::nomarkdown} N GMVFDA,GMVIEN,GMVIENS<br/> I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q<br/> S GMVIENS=(+GMVDATA)_","<br/> S GMVFDA(120.5,GMVIENS,2)=1<br/> S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)<br/> S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)<br/> D UPDATE^DIE("","GMVFDA","GMVIEN")<br/> S RESULT="OK"```{:/}
  Leading comment lines | {::nomarkdown}GMVDATA CONSISTS OF THE FOLLOWING DATA:<br/>FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT<br/>PATIENT^INVALID RECORD{:/}
 
 ### Input Parameters
@@ -42,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

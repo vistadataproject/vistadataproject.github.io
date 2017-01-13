@@ -22,14 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | get the list of active immunizations
  Input Parameters | {::nomarkdown}ORDT{:/}
- Lines | ```
- N IEN,CNT,BINDEX S (IEN,CNT,BINDEX)=0
- S:'$G(ORDT) ORDT=DT
- F  S BINDEX=$O(^AUTTIMM("B",BINDEX)) Q:BINDEX']""  F  S IEN=$O(^(BINDEX,IEN)) Q:'+IEN  D
- . I $D(^AUTTIMM(IEN,0))#2,+$P(^(0),"^",7)=0 S CNT=CNT+1,ORWLST(CNT)=IEN_"^"_$P(^(0),"^")
- . ;I $D(^AUTTIMM(IEN,0))#2,+$$SCREEN^XTID(9999999.14,,IEN,ORDT)=0 S CNT=CNT+1,ORWLST(CNT)=IEN_"^"_$P(^(0),"^")```
+ Lines | ```{::nomarkdown} N IEN,CNT,BINDEX S (IEN,CNT,BINDEX)=0<br/> S:'$G(ORDT) ORDT=DT<br/> F  S BINDEX=$O(^AUTTIMM("B",BINDEX)) Q:BINDEX']""  F  S IEN=$O(^(BINDEX,IEN)) Q:'+IEN  D<br/> . I $D(^AUTTIMM(IEN,0))#2,+$P(^(0),"^",7)=0 S CNT=CNT+1,ORWLST(CNT)=IEN_"^"_$P(^(0),"^")<br/> . ;I $D(^AUTTIMM(IEN,0))#2,+$$SCREEN^XTID(9999999.14,,IEN,ORDT)=0 S CNT=CNT+1,ORWLST(CNT)=IEN_"^"_$P(^(0),"^")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

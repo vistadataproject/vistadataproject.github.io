@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Attach a medicine result to a consult
  Input Parameters | {::nomarkdown}GMRCO<br/>GMRCRSLT<br/>GMRCAD<br/>GMRCORNP<br/>ORALTO{:/}
- Lines | ```
- Q:+$G(GMRCO)=0
- N ORDUZ,X,I
- I $G(ORALTO)'="" D
- .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""
- D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ)```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCO)=0<br/> N ORDUZ,X,I<br/> I $G(ORALTO)'="" D<br/> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br/> D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ)```{:/}
  Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time Consult was resulted.<br/>GMRCORNP - Provider who attached the result to the consult<br/>ORALTO - array of alert recipient IENs{:/}
 
 ### Input Parameters
@@ -44,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

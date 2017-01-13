@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | 1=ESSO installed on site  0=not installed
  Input Parameters | {::nomarkdown}CHK{:/}
- Lines | ```
- S ORY=$$PATCH^XPDUTL("XWB*1.1*26")```
+ Lines | ```{::nomarkdown} S ORY=$$PATCH^XPDUTL("XWB*1.1*26")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

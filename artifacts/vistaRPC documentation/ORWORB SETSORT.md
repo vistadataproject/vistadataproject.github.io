@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | set notification sort method^direction for user
  Input Parameters | {::nomarkdown}SORT<br/>DIR{:/}
- Lines | ```
- D EN^XPAR(DUZ_";VA(200,","ORB SORT METHOD",1,SORT,.ORERR)
- I $L($G(DIR)) D EN^XPAR(DUZ_";VA(200,","ORB SORT DIRECTION",1,DIR,.ORERR)
-```
+ Lines | ```{::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORB SORT METHOD",1,SORT,.ORERR)<br/> I $L($G(DIR)) D EN^XPAR(DUZ_";VA(200,","ORB SORT DIRECTION",1,DIR,.ORERR)<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

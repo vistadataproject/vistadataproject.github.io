@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save new GAF score
  Input Parameters | {::nomarkdown}ORINPUT{:/}
- Lines | ```
- N ORDATA
- D ENT^YSGAFAP1(.ORDATA,.ORINPUT)
- S ORY=($G(ORDATA(1))="[DATA]")```
+ Lines | ```{::nomarkdown} N ORDATA<br/> D ENT^YSGAFAP1(.ORDATA,.ORINPUT)<br/> S ORY=($G(ORDATA(1))="[DATA]")```{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

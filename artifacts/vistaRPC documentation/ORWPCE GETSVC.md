@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns the correct Service Connected Category
  Input Parameters | {::nomarkdown}SVC<br/>LOC<br/>INP{:/}
- Lines | ```
- N DSS,ORWSVC
- S DSS=$P($G(^SC(+LOC,0)),U,7)
- Q:'+DSS
- M ORWSVC=SVC
- S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225```
+ Lines | ```{::nomarkdown} N DSS,ORWSVC<br/> S DSS=$P($G(^SC(+LOC,0)),U,7)<br/> Q:'+DSS<br/> M ORWSVC=SVC<br/> S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225```{:/}
 
 ### Input Parameters
 
@@ -40,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

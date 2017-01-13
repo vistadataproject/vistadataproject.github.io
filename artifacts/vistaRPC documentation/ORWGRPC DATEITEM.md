@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get patient items in date range for a type
  Input Parameters | {::nomarkdown}OLDEST<br/>NEWEST<br/>FNUM<br/>DFN{:/}
- Lines | ```
- D DATEITEM^ORWGAPI("ORWGRPC",OLDEST,NEWEST,FNUM,DFN)
- S DATA=$NA(^TMP("ORWGRPC",$J))```
+ Lines | ```{::nomarkdown} D DATEITEM^ORWGAPI("ORWGRPC",OLDEST,NEWEST,FNUM,DFN)<br/> S DATA=$NA(^TMP("ORWGRPC",$J))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return formatted pt inquiry report
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- K ^TMP("ORDATA",$J,1)
- D DGINQ^ORCXPND1(DFN)
- S REF=$NA(^TMP("ORDATA",$J,1))```
+ Lines | ```{::nomarkdown} K ^TMP("ORDATA",$J,1)<br/> D DGINQ^ORCXPND1(DFN)<br/> S REF=$NA(^TMP("ORDATA",$J,1))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

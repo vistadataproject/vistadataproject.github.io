@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC for compiling appropriate TxF's
  Input Parameters | {::nomarkdown}DFN<br/>ORLST{:/}
- Lines | ```
- N GMRCPROS,ORD,ORI,ORPKG
- D CPLSTBA(.Y,DFN,.ORLST)```
+ Lines | ```{::nomarkdown} N GMRCPROS,ORD,ORI,ORPKG<br/> D CPLSTBA(.Y,DFN,.ORLST)```{:/}
  Leading comment lines | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
 
 ### Input Parameters
@@ -37,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

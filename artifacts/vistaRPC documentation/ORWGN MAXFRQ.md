@@ -22,16 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Checks if frequency of search term is greater than
  Input Parameters | {::nomarkdown}ORTRM{:/}
- Lines | ```
- N ORMAX,ORFRQ
- S ORY=0
- I ORTRM="" Q  ;if search term not sent in, then quit
- S ORMAX=+$$MAX^LEXU("10D")
- I ORMAX=0 S ORMAX=20000  ;if Max value not set, default to 20,000
- S ORFRQ=+$$FREQ^LEXU(ORTRM)
- I ORFRQ'>ORMAX Q  ;if frequency not greater than Max value
- S ORY="1^"_ORFRQ
-```
+ Lines | ```{::nomarkdown} N ORMAX,ORFRQ<br/> S ORY=0<br/> I ORTRM="" Q  ;if search term not sent in, then quit<br/> S ORMAX=+$$MAX^LEXU("10D")<br/> I ORMAX=0 S ORMAX=20000  ;if Max value not set, default to 20,000<br/> S ORFRQ=+$$FREQ^LEXU(ORTRM)<br/> I ORFRQ'>ORMAX Q  ;if frequency not greater than Max value<br/> S ORY="1^"_ORFRQ<br/>```{:/}
  Leading comment lines | {::nomarkdown}max ICD-10 setting<br/>Input Value: ORTRM = Search term to look up<br/>Return Value: 2 pieces (first piece is 0 or 1, second piece is<br/>occurrance frequency of search term)<br/>First piece:<br/>0 - Search term frequency is less than<br/>maximum return<br/>1 - Search term frequency is greater<br/>than maximum return{:/}
 
 ### Input Parameters
@@ -43,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

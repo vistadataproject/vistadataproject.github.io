@@ -22,22 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns TRUE if the passed in Reminder Dialog IEN is
  Input Parameters | {::nomarkdown}TIUIEN{:/}
- Lines | ```
- N TIULST,SRV
- S TIUY=-1
- I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q
- I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410
- S TIUY=1
- D RDACCUM(.TIULST,"USR","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- S SRV=$$GETSRV(DUZ)
- D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- D RDACCUM(.TIULST,"DIV","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- D RDACCUM(.TIULST,"SYS","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- S TIUY=0```
+ Lines | ```{::nomarkdown} N TIULST,SRV<br/> S TIUY=-1<br/> I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q<br/> I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410<br/> S TIUY=1<br/> D RDACCUM(.TIULST,"USR","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> S SRV=$$GETSRV(DUZ)<br/> D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> D RDACCUM(.TIULST,"DIV","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> D RDACCUM(.TIULST,"SYS","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> S TIUY=0```{:/}
  Leading comment lines | {::nomarkdown}Allowed to be used as a TIU Template{:/}
 
 ### Input Parameters
@@ -49,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

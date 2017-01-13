@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Refill Request
  Input Parameters | {::nomarkdown}ORDERID<br/>REFLOC<br/>ORVP<br/>ORNP<br/>ORL{:/}
- Lines | ```
- S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)
- D REF^ORMBLDPS(ORDERID,REFLOC)
- S Y=""
-```
+ Lines | ```{::nomarkdown} S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br/> D REF^ORMBLDPS(ORDERID,REFLOC)<br/> S Y=""<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -21,17 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns the list of Patient Data Objects that are
- Lines | ```
- N SRV
- K TIUY
- D OBJACCUM(.TIUY,"USR")
- S SRV=$$GETSRV(DUZ)
- I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))
- D OBJACCUM(.TIUY,"DIV")
- D OBJACCUM(.TIUY,"SYS")```
+ Lines | ```{::nomarkdown} N SRV<br/> K TIUY<br/> D OBJACCUM(.TIUY,"USR")<br/> S SRV=$$GETSRV(DUZ)<br/> I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))<br/> D OBJACCUM(.TIUY,"DIV")<br/> D OBJACCUM(.TIUY,"SYS")```{:/}
  Leading comment lines | {::nomarkdown}allowed to be used in Personal Templates{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

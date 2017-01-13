@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return dialog definition for vitals/measurements
- Lines | ```
- N ILST S ILST=0
- S LST($$NXT)="~Measurements" D MEASURE
- S LST($$NXT)="~Schedules" D VMSCHED```
+ Lines | ```{::nomarkdown} N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEASURE<br/> S LST($$NXT)="~Schedules" D VMSCHED```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

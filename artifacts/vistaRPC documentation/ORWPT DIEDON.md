@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check for a date of death
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- S VAL=+$G(^DPT(DFN,.35))```
+ Lines | ```{::nomarkdown} S VAL=+$G(^DPT(DFN,.35))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

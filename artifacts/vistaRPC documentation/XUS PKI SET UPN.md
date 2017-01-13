@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Set the SUBJECT ALTERNATIVE NAME from the PIV card. -p580
  Input Parameters | {::nomarkdown}V{:/}
- Lines | ```
- N FDA,ERR
- S RET=0,FDA(200,DUZ_",",501.2)=V
- D FILE^DIE("KE","FDA","ERR") I '$D(ERR) S RET=1```
+ Lines | ```{::nomarkdown} N FDA,ERR<br/> S RET=0,FDA(200,DUZ_",",501.2)=V<br/> D FILE^DIE("KE","FDA","ERR") I '$D(ERR) S RET=1```{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

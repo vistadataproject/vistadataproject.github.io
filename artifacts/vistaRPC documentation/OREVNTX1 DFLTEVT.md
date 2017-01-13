@@ -22,14 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return default release event based on provider IFN
  Input Parameters | {::nomarkdown}PVIFN{:/}
- Lines | ```
- N CMEVTLST,IDX
- S CMEVTLST="",IDX=0
- D GETLST^OREV3(.CMEVTLST)
- F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D
- . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q```
+ Lines | ```{::nomarkdown} N CMEVTLST,IDX<br/> S CMEVTLST="",IDX=0<br/> D GETLST^OREV3(.CMEVTLST)<br/> F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D<br/> . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

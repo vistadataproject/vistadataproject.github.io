@@ -21,17 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Make default setting take action for each report
- Lines | ```
- N IND,DFLT,VALUE,X,X0,X4,MAX,DFLT1
- S DFLT=$$GET^XPAR("USR.`"_DUZ_"^DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I")
- S IND=0,X=$P($P(DFLT,";"),"-",2)
- F  S IND=$O(^ORD(101.24,IND)) Q:'IND  S X0=$G(^(IND,0)),X4=$G(^(4)) D
- . I $P(X0,"^",8)="R",$P(X0,"^",12)'="M" D
- .. S MAX=$P(X4,"^",2),DFLT1=DFLT
- .. I MAX,X,X>MAX S DFLT1="T-"_MAX_";"_$P(DFLT,";",2,99)
- .. D SUINDV(.Y,IND,DFLT1)```
+ Lines | ```{::nomarkdown} N IND,DFLT,VALUE,X,X0,X4,MAX,DFLT1<br/> S DFLT=$$GET^XPAR("USR.`"_DUZ_"^DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I")<br/> S IND=0,X=$P($P(DFLT,";"),"-",2)<br/> F  S IND=$O(^ORD(101.24,IND)) Q:'IND  S X0=$G(^(IND,0)),X4=$G(^(4)) D<br/> . I $P(X0,"^",8)="R",$P(X0,"^",12)'="M" D<br/> .. S MAX=$P(X4,"^",2),DFLT1=DFLT<br/> .. I MAX,X,X>MAX S DFLT1="T-"_MAX_";"_$P(DFLT,";",2,99)<br/> .. D SUINDV(.Y,IND,DFLT1)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -21,8 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
- Lines | ```
- D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078```
+ Lines | ```{::nomarkdown} D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078```{:/}
 
 ### Input Parameters
 
@@ -34,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

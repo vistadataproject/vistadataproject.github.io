@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Gets current time
  Input Parameters | {::nomarkdown}P2{:/}
- Lines | ```
- S RESULT=$$NOW^XLFDT()
-```
+ Lines | ```{::nomarkdown} S RESULT=$$NOW^XLFDT()<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

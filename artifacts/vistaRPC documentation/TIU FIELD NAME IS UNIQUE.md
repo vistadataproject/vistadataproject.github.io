@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is Name Unique?
  Input Parameters | {::nomarkdown}NAME<br/>IEN{:/}
- Lines | ```
- N FLD
- S FLD=+$O(^TIU(8927.1,"B",NAME,0))
- I +FLD,FLD'=IEN S TIUY=0
- E  S TIUY=1```
+ Lines | ```{::nomarkdown} N FLD<br/> S FLD=+$O(^TIU(8927.1,"B",NAME,0))<br/> I +FLD,FLD'=IEN S TIUY=0<br/> E  S TIUY=1```{:/}
 
 ### Input Parameters
 
@@ -38,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

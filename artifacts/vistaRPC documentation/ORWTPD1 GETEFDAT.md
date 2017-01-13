@@ -21,16 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get non-user level Encounter appointment date range params.
- Lines | ```
- N ORSTART,ORSTOP
- S INFO=""
- S ORSTART=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT START",1,"I")
- I 'ORSTART S ORSTART=60
- S ORSTOP=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT STOP",1,"I")
- I 'ORSTOP S ORSTOP=0
- S INFO=ORSTART_U_ORSTOP```
+ Lines | ```{::nomarkdown} N ORSTART,ORSTOP<br/> S INFO=""<br/> S ORSTART=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT START",1,"I")<br/> I 'ORSTART S ORSTART=60<br/> S ORSTOP=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT STOP",1,"I")<br/> I 'ORSTOP S ORSTOP=0<br/> S INFO=ORSTART_U_ORSTOP```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

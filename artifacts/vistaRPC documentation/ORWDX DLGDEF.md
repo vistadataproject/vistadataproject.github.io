@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Format mapping for a dlg
  Input Parameters | {::nomarkdown}DLG{:/}
- Lines | ```
- D DLGDEF^ORWDX1(.LST,.DLG)```
+ Lines | ```{::nomarkdown} D DLGDEF^ORWDX1(.LST,.DLG)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,22 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | procedure
  Input Parameters | {::nomarkdown}DFN<br/>ORNP<br/>LOC<br/>DLG<br/>ORWDACT<br/>RSP{:/}
- Lines | ```
- N ORDIALOG,ORL,ORVP,ORIFN,ORDUZ,ORSTS,ORDG,OREVENT,ORCAT,ORDA
- I $P(^ORD(101.41,+DLG,0),U)="PSO OERR" S ORCAT="O"
- I $P(^ORD(101.41,+DLG,0),U)="PSJ OR PAT OE" S ORCAT="I"
- S ORVP=DFN_";DPT(",ORL(2)=LOC_";SC(",ORL=ORL(2)
- D GETDLG^ORCD(DLG)
- M ORDIALOG=RSP S ORDIALOG=DLG
- I ORWDACT="N" D
- . D EN^ORCSAVE
- . S Y="" I ORIFN D GETBYIFN^ORWORR(.Y,ORIFN)
- I $P(ORWDACT,U,1)="E" D
- . S ORIFN=+$P(ORWDACT,U,2) D XX^ORCSAVE
- . S Y="" S ORIFN=+$P(ORWDACT,U,2)_";"_ORDA D GETBYIFN^ORWORR(.Y,ORIFN)```
+ Lines | ```{::nomarkdown} N ORDIALOG,ORL,ORVP,ORIFN,ORDUZ,ORSTS,ORDG,OREVENT,ORCAT,ORDA<br/> I $P(^ORD(101.41,+DLG,0),U)="PSO OERR" S ORCAT="O"<br/> I $P(^ORD(101.41,+DLG,0),U)="PSJ OR PAT OE" S ORCAT="I"<br/> S ORVP=DFN_";DPT(",ORL(2)=LOC_";SC(",ORL=ORL(2)<br/> D GETDLG^ORCD(DLG)<br/> M ORDIALOG=RSP S ORDIALOG=DLG<br/> I ORWDACT="N" D<br/> . D EN^ORCSAVE<br/> . S Y="" I ORIFN D GETBYIFN^ORWORR(.Y,ORIFN)<br/> I $P(ORWDACT,U,1)="E" D<br/> . S ORIFN=+$P(ORWDACT,U,2) D XX^ORCSAVE<br/> . S Y="" S ORIFN=+$P(ORWDACT,U,2)_";"_ORDA D GETBYIFN^ORWORR(.Y,ORIFN)```{:/}
  Leading comment lines | {::nomarkdown}Save order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}LISTNUM{:/}
- Lines | ```
- D DELLIST^ORWTPL(.OK,LISTNUM,DUZ)```
+ Lines | ```{::nomarkdown} D DELLIST^ORWTPL(.OK,LISTNUM,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}delete current user's personal list{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

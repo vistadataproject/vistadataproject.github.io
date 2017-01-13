@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GET LIST OF SERVICES
  Input Parameters | {::nomarkdown}FROM<br/>DIR<br/>ALL{:/}
- Lines | ```
- N I,IEN,CNT S I=0,CNT=44
- F  Q:I=CNT  S FROM=$O(^DIC(49,"B",FROM),DIR) Q:FROM=""  D
- . S IEN=$O(^DIC(49,"B",FROM,0)) I '$G(ALL),$P(^DIC(49,IEN,0),U,9)'="C" Q
- . S I=I+1,Y(I)=IEN_"^"_FROM```
+ Lines | ```{::nomarkdown} N I,IEN,CNT S I=0,CNT=44<br/> F  Q:I=CNT  S FROM=$O(^DIC(49,"B",FROM),DIR) Q:FROM=""  D<br/> . S IEN=$O(^DIC(49,"B",FROM,0)) I '$G(ALL),$P(^DIC(49,IEN,0),U,9)'="C" Q<br/> . S I=I+1,Y(I)=IEN_"^"_FROM```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

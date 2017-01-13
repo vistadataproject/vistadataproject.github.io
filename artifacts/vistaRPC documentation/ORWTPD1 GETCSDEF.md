@@ -21,17 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Div/Sys/Pkg Cover Sheet default range parameters.
- Lines | ```
- N ORVAL
- S ORVAL=""
- S ORVAL=$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE START",1,"I")
- S ORVAL=$$CHKRNG(ORVAL,999)
- S INFO=ORVAL_U,ORVAL=""
- S ORVAL=$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE STOP",1,"I")
- S ORVAL=$$CHKRNG(ORVAL,999)
- S INFO=INFO_ORVAL```
+ Lines | ```{::nomarkdown} N ORVAL<br/> S ORVAL=""<br/> S ORVAL=$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE START",1,"I")<br/> S ORVAL=$$CHKRNG(ORVAL,999)<br/> S INFO=ORVAL_U,ORVAL=""<br/> S ORVAL=$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE STOP",1,"I")<br/> S ORVAL=$$CHKRNG(ORVAL,999)<br/> S INFO=INFO_ORVAL```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

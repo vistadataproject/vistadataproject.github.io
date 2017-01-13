@@ -21,11 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | P6
- Lines | ```
- S RESULT=1```
+ Lines | ```{::nomarkdown} S RESULT=1```{:/}
  Leading comment lines | {::nomarkdown}Entry point for XWB IM HERE remote procedure{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

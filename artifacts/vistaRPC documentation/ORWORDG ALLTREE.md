@@ -21,13 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return the tree for all display groups
- Lines | ```
- N ROOT,ILST
- S ILST=0,ROOT=$O(^ORD(100.98,"B","ALL",0))
- S ILST=ILST+1,LST(ILST)=ROOT_U_"ALL SERVICES^0^+"
- D LSTCHLD(ROOT)```
+ Lines | ```{::nomarkdown} N ROOT,ILST<br/> S ILST=0,ROOT=$O(^ORD(100.98,"B","ALL",0))<br/> S ILST=ILST+1,LST(ILST)=ROOT_U_"ALL SERVICES^0^+"<br/> D LSTCHLD(ROOT)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | send access/verify code instructions.
- Lines | ```
- S RET(0)=$$AVHLPTXT^XUS2()```
+ Lines | ```{::nomarkdown} S RET(0)=$$AVHLPTXT^XUS2()```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

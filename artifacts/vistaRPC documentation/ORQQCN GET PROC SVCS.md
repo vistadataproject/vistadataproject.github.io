@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a list of services for a procedure
  Input Parameters | {::nomarkdown}ORDITM{:/}
- Lines | ```
- N PROCIEN
- S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)
- D GETSVC^GMRCPR0(.ORY,PROCIEN)```
+ Lines | ```{::nomarkdown} N PROCIEN<br/> S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)<br/> D GETSVC^GMRCPR0(.ORY,PROCIEN)```{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

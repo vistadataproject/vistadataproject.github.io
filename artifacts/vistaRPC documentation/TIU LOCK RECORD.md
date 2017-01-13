@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Bid for lock on a TIU Document record
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```
- L +^TIU(8925,+TIUDA):1 I  S ERR=0
- E  S ERR="1^ Another session has this record locked."```
+ Lines | ```{::nomarkdown} L +^TIU(8925,+TIUDA):1 I  S ERR=0<br/> E  S ERR="1^ Another session has this record locked."```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

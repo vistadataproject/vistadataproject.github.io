@@ -21,16 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get dialog data for allergies
- Lines | ```
- N ILST,I,X S ILST=0
- S LST($$NXT)="~Allergy Types" D ALLGYTYP
- S LST($$NXT)="~Reactions" D ALLGYTYP
- S LST($$NXT)="~Nature of Reaction" D NATREACT
- S LST($$NXT)="~Top Ten" D TOPTEN
- S LST($$NXT)="~Observ/Hist" D OBSHIST
- S LST($$NXT)="~Severity" D SEVERITY```
+ Lines | ```{::nomarkdown} N ILST,I,X S ILST=0<br/> S LST($$NXT)="~Allergy Types" D ALLGYTYP<br/> S LST($$NXT)="~Reactions" D ALLGYTYP<br/> S LST($$NXT)="~Nature of Reaction" D NATREACT<br/> S LST($$NXT)="~Top Ten" D TOPTEN<br/> S LST($$NXT)="~Observ/Hist" D OBSHIST<br/> S LST($$NXT)="~Severity" D SEVERITY```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

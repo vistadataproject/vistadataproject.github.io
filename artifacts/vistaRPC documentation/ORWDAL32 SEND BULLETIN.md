@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Send bulletin if user attempts free-text entry
  Input Parameters | {::nomarkdown}ORDUZ<br/>ORDFN<br/>ORTEXT<br/>ORCMTS{:/}
- Lines | ```
- I '$D(ORCMTS) D
- . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT)
- E  D
- . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT,.ORCMTS)```
+ Lines | ```{::nomarkdown} I '$D(ORCMTS) D<br/> . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT)<br/> E  D<br/> . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT,.ORCMTS)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

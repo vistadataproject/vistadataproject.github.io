@@ -21,8 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- S RESULT=$$STATUS^PXRMGECU(DFN)```
+ Lines | ```{::nomarkdown} S RESULT=$$STATUS^PXRMGECU(DFN)```{:/}
 
 ### Input Parameters
 
@@ -33,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

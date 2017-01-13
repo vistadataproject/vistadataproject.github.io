@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return 1 if patch X is installed
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```
- S VAL=$$PATCH^XPDUTL(X)```
+ Lines | ```{::nomarkdown} S VAL=$$PATCH^XPDUTL(X)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

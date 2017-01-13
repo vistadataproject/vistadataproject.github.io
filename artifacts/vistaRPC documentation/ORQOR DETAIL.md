@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return details of ORID (shell to kill VIDEO subs)
  Input Parameters | {::nomarkdown}ORID<br/>DFN{:/}
- Lines | ```
- Q:'+ORID
- I $G(DFN) N ORVP S ORVP=DFN_";DPT("
- S LST="^TMP(""ORTXT"",$J)"
- D DETAIL^ORQ2(.LST,ORID)
- K @LST@("VIDEO")
- S LST=$NA(^TMP("ORTXT",$J)),@LST=""```
+ Lines | ```{::nomarkdown} Q:'+ORID<br/> I $G(DFN) N ORVP S ORVP=DFN_";DPT("<br/> S LST="^TMP(""ORTXT"",$J)"<br/> D DETAIL^ORQ2(.LST,ORID)<br/> K @LST@("VIDEO")<br/> S LST=$NA(^TMP("ORTXT",$J)),@LST=""```{:/}
 
 ### Input Parameters
 
@@ -39,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

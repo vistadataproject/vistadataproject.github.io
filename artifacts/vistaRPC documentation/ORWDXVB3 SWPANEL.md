@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Switch the location of the Diagnostic and Component panels on VBECS Order Dialog
- Lines | ```
- S OROOT=+$$GET^XPAR("ALL","OR VBECS DIAGNOSTIC PANEL 1ST",1,"I")
-```
+ Lines | ```{::nomarkdown} S OROOT=+$$GET^XPAR("ALL","OR VBECS DIAGNOSTIC PANEL 1ST",1,"I")<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

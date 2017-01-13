@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is USER a USR CLASS provider?
  Input Parameters | {::nomarkdown}USER<br/>DATE{:/}
- Lines | ```
- N TIUERR
- S USER=$G(USER,DUZ)
- S DATE=$G(DATE,DT),TIUY=0
- I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324```
+ Lines | ```{::nomarkdown} N TIUERR<br/> S USER=$G(USER,DUZ)<br/> S DATE=$G(DATE,DT),TIUY=0<br/> I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324```{:/}
  Leading comment lines | {::nomarkdown}Checks USR CLASS PROVIDER only<br/>DATE must not include time{:/}
 
 ### Input Parameters
@@ -39,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

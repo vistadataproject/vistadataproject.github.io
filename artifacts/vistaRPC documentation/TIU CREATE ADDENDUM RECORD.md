@@ -22,8 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Create addendum
  Input Parameters | {::nomarkdown}TIUDA<br/>TIUX<br/>SUPPRESS{:/}
- Lines | ```
- D MAKEADD^TIUSRVP2(.TIUDADD,TIUDA,.TIUX,+$G(SUPPRESS))```
+ Lines | ```{::nomarkdown} D MAKEADD^TIUSRVP2(.TIUDADD,TIUDA,.TIUX,+$G(SUPPRESS))```{:/}
  Leading comment lines | {::nomarkdown}For backward compatibility<br/>Use MAKEADD^TIUSRVP2 now, please{:/}
 
 ### Input Parameters
@@ -36,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

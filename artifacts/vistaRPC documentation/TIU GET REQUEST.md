@@ -22,17 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get the Request (field #1405) for a document
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```
- N TIUDAD,TIUTYP,TIU1405
- I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q
- S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)
- I $P(^TIU(8925,TIUDA,0),U,6)'="" D
- . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)
- . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)
- I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q
- S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)
- I '+TIU1405 S TIUY="-1^No Request found for this document" Q
- S TIUY=TIU1405```
+ Lines | ```{::nomarkdown} N TIUDAD,TIUTYP,TIU1405<br/> I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q<br/> S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)<br/> I $P(^TIU(8925,TIUDA,0),U,6)'="" D<br/> . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)<br/> . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)<br/> I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q<br/> S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)<br/> I '+TIU1405 S TIUY="-1^No Request found for this document" Q<br/> S TIUY=TIU1405```{:/}
 
 ### Input Parameters
 
@@ -43,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

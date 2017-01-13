@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get list for Reports & Labs Tab Treeview
  Input Parameters | {::nomarkdown}TAB{:/}
- Lines | ```
- N ROOT
- S ROOT=$NA(LST)
- K @ROOT
- D TRY1(.ROOT,$G(TAB))```
+ Lines | ```{::nomarkdown} N ROOT<br/> S ROOT=$NA(LST)<br/> K @ROOT<br/> D TRY1(.ROOT,$G(TAB))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

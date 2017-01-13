@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - delete a graph view
  Input Parameters | {::nomarkdown}NAME<br/>PUBLIC{:/}
- Lines | ```
- D DELVIEWS^ORWGAPI("ORWGRPC",NAME,+$G(PUBLIC))
- S ERR=$NA(^TMP("ORWGRPC",$J))```
+ Lines | ```{::nomarkdown} D DELVIEWS^ORWGAPI("ORWGRPC",NAME,+$G(PUBLIC))<br/> S ERR=$NA(^TMP("ORWGRPC",$J))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

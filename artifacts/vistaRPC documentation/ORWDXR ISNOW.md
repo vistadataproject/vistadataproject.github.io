@@ -22,16 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is first time now order?
  Input Parameters | {::nomarkdown}ORID{:/}
- Lines | ```
- N SCH
- Q:'$D(^OR(100,+ORID,0))
- S SCH=""
- S SCH=$O(^OR(100,+ORID,4.5,"ID","SCHEDULE",0))
- S:SCH SCH=$G(^OR(100,+ORID,4.5,SCH,1))
- S:SCH="NOW" ORY=1
-```
+ Lines | ```{::nomarkdown} N SCH<br/> Q:'$D(^OR(100,+ORID,0))<br/> S SCH=""<br/> S SCH=$O(^OR(100,+ORID,4.5,"ID","SCHEDULE",0))<br/> S:SCH SCH=$G(^OR(100,+ORID,4.5,SCH,1))<br/> S:SCH="NOW" ORY=1<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

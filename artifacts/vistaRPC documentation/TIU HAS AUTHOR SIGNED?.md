@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Has Author signed?
  Input Parameters | {::nomarkdown}TIUDA<br/>TIUUSR{:/}
- Lines | ```
- N TIUD12,TIUD15
- S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))
- S TIUY=1
- D:$P(TIUD12,U,8)=TIUUSR  Q
- . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0```
+ Lines | ```{::nomarkdown} N TIUD12,TIUD15<br/> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))<br/> S TIUY=1<br/> D:$P(TIUD12,U,8)=TIUUSR  Q<br/> . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0```{:/}
  Leading comment lines | {::nomarkdown}if TIUY =<br/>0 = Author has NOT signed & TIUUSR = Expected Cosigner<br/>1 = Author HAS signed or TIUUSR '= Expected Cosigner{:/}
 
 ### Input Parameters
@@ -40,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns 1 if there is monograph data for the orderchecks being presented to the user
- Lines | ```
- S ORY=0
- Q:'$$PATCH^XPDUTL("OR*3.0*272")
- I $D(^TMP($J,"ORMONOGRAPH")) S ORY=1```
+ Lines | ```{::nomarkdown} S ORY=0<br/> Q:'$$PATCH^XPDUTL("OR*3.0*272")<br/> I $D(^TMP($J,"ORMONOGRAPH")) S ORY=1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

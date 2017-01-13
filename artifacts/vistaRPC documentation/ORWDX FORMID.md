@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Base dlg FormID for an order
  Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | ```
- N DLG
- S VAL=0,DLG=$P(^OR(100,+ORIFN,0),U,5)
- Q:$P(DLG,";",2)'="ORD(101.41,"
- D FORMID^ORWDXM(.VAL,+DLG)```
+ Lines | ```{::nomarkdown} N DLG<br/> S VAL=0,DLG=$P(^OR(100,+ORIFN,0),U,5)<br/> Q:$P(DLG,";",2)'="ORD(101.41,"<br/> D FORMID^ORWDXM(.VAL,+DLG)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

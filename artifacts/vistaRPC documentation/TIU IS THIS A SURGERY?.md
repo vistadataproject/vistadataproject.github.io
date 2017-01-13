@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Boolean RPC to evaluate whether TITLE is a SURGERY REPORT
  Input Parameters | {::nomarkdown}TITLE{:/}
- Lines | ```
- N TIUCLASS,TIUI S TIUY=0
- F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0
- . S TIUCLASS=+$$CLASS(TIUI)
- . I +TIUCLASS'>0 Q
- . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
+ Lines | ```{::nomarkdown} N TIUCLASS,TIUI S TIUY=0<br/> F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0<br/> . S TIUCLASS=+$$CLASS(TIUI)<br/> . I +TIUCLASS'>0 Q<br/> . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{:/}
 
 ### Input Parameters
 
@@ -38,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

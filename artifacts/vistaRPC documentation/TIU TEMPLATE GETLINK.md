@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns template linked to title or reason for request
  Input Parameters | {::nomarkdown}LINK{:/}
- Lines | ```
- N IDX
- S ORY="",IDX=$O(^TIU(8927,"AL",LINK,0))
- I +IDX,$P($G(^TIU(8927,IDX,0)),U,4)'="I" S ORY=$$NODEDATA^TIUSRVT(IDX)```
+ Lines | ```{::nomarkdown} N IDX<br/> S ORY="",IDX=$O(^TIU(8927,"AL",LINK,0))<br/> I +IDX,$P($G(^TIU(8927,IDX,0)),U,4)'="I" S ORY=$$NODEDATA^TIUSRVT(IDX)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return any message associated with a dispense drug
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```
- N X S X=$$ENDCM^PSJORUTL(IEN)
- S VAL=$P(X,U,2)_U_$P(X,U,4)```
+ Lines | ```{::nomarkdown} N X S X=$$ENDCM^PSJORUTL(IEN)<br/> S VAL=$P(X,U,2)_U_$P(X,U,4)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

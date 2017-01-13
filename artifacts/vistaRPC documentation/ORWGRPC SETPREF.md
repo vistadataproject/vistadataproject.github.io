@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - set a graph setting
  Input Parameters | {::nomarkdown}SETTING<br/>PUBLIC{:/}
- Lines | ```
- D SETPREF^ORWGAPI("ORWGRPC",SETTING,+$G(PUBLIC))
- S ERR=$NA(^TMP("ORWGRPC",$J))```
+ Lines | ```{::nomarkdown} D SETPREF^ORWGAPI("ORWGRPC",SETTING,+$G(PUBLIC))<br/> S ERR=$NA(^TMP("ORWGRPC",$J))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Checks for presence of text before signature
  Input Parameters | {::nomarkdown}ORTIUDA{:/}
- Lines | ```
- S ORY='$$EMPTYDOC^TIULF(ORTIUDA)  ;DBIA #4426
-```
+ Lines | ```{::nomarkdown} S ORY='$$EMPTYDOC^TIULF(ORTIUDA)  ;DBIA #4426<br/>```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

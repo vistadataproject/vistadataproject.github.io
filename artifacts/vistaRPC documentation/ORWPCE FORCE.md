@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Retrieve FORCE GUI PCE Entry for a given User/Location
  Input Parameters | {::nomarkdown}USER<br/>LOC{:/}
- Lines | ```
- N SRV,ORTMP,ORERR
- S USER=$G(USER,DUZ)
- S SRV=$P($G(^VA(200,USER,5)),U)
- D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE FORCE PCE ENTRY","Q",.ORERR)
- S ORY=+$P($G(ORTMP(1)),U,2)```
+ Lines | ```{::nomarkdown} N SRV,ORTMP,ORERR<br/> S USER=$G(USER,DUZ)<br/> S SRV=$P($G(^VA(200,USER,5)),U)<br/> D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE FORCE PCE ENTRY","Q",.ORERR)<br/> S ORY=+$P($G(ORTMP(1)),U,2)```{:/}
 
 ### Input Parameters
 
@@ -39,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

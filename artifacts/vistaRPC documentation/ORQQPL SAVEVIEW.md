@@ -22,15 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | save new view in File #200/Field #125
  Input Parameters | {::nomarkdown}GMPLVIEW{:/}
- Lines | ```
- N TMP
- Q:'$D(GMPLVIEW)
- S TMP=$P($G(^VA(200,DUZ,125)),U,2,999)
- S ^VA(200,DUZ,125)=$P(GMPLVIEW,U,1)_U_TMP
- S TMP=$$GET^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1)
- I TMP'="" D  Q
- . D CHG^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))
- D ADD^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))```
+ Lines | ```{::nomarkdown} N TMP<br/> Q:'$D(GMPLVIEW)<br/> S TMP=$P($G(^VA(200,DUZ,125)),U,2,999)<br/> S ^VA(200,DUZ,125)=$P(GMPLVIEW,U,1)_U_TMP<br/> S TMP=$$GET^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1)<br/> I TMP'="" D  Q<br/> . D CHG^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))<br/> D ADD^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))```{:/}
 
 ### Input Parameters
 
@@ -41,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

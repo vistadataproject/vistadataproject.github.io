@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Sets Visible Reminder Folders for the current user
  Input Parameters | {::nomarkdown}ORFLDRS{:/}
- Lines | ```
- N ORERR
- D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)
- S ORY=1```
+ Lines | ```{::nomarkdown} N ORERR<br/> D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)<br/> S ORY=1```{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

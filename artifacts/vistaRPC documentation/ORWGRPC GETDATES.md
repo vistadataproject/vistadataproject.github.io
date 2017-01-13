@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC - get graph date range
  Input Parameters | {::nomarkdown}REPORTID{:/}
- Lines | ```
- D GETDATES^ORWGAPI("ORWGRPC",$G(REPORTID))
- S DATA=$NA(^TMP("ORWGRPC",$J))```
+ Lines | ```{::nomarkdown} D GETDATES^ORWGAPI("ORWGRPC",$G(REPORTID))<br/> S DATA=$NA(^TMP("ORWGRPC",$J))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

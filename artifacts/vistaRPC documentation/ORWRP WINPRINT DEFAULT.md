@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Windows printer as default?
- Lines | ```
- S ORY=+$$GET^XPAR("ALL","ORWDP WINPRINT DEFAULT")```
+ Lines | ```{::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWDP WINPRINT DEFAULT")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,8 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return imaging exams
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- D GET(1)```
+ Lines | ```{::nomarkdown} D GET(1)```{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRA IMAGING EXAMS1<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -35,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

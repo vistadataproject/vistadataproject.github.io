@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return true if orderable item is IV medication
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```
- S VAL=0
- I $P($G(^ORD(101.43,IEN,"PS")),U)=2 S VAL=1```
+ Lines | ```{::nomarkdown} S VAL=0<br/> I $P($G(^ORD(101.43,IEN,"PS")),U)=2 S VAL=1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

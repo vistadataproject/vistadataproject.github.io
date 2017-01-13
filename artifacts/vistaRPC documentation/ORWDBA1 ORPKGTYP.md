@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Build BA supported packages array
  Input Parameters | {::nomarkdown}ORLST{:/}
- Lines | ```
- N OIREC,OIV,OIVN
- F I=1:1 S ORPKG=$P("GMRC;LR;PSO;RA",";",I) Q:ORPKG=""  D
- . S ORPKG(+$O(^DIC(9.4,"C",ORPKG,0)))=ORPKG  ; ^DIC(9.4) is package file
- S GMRCPROS=+$O(^DIC(9.4,"C","GMRC",0))
- D ORPKG1(.Y,.ORLST)```
+ Lines | ```{::nomarkdown} N OIREC,OIV,OIVN<br/> F I=1:1 S ORPKG=$P("GMRC;LR;PSO;RA",";",I) Q:ORPKG=""  D<br/> . S ORPKG(+$O(^DIC(9.4,"C",ORPKG,0)))=ORPKG  ; ^DIC(9.4) is package file<br/> S GMRCPROS=+$O(^DIC(9.4,"C","GMRC",0))<br/> D ORPKG1(.Y,.ORLST)```{:/}
  Leading comment lines | {::nomarkdown}GMRC=Prosthetics, LR=Lab, PSO=Pharmacy, RA=Radiology{:/}
 
 ### Input Parameters
@@ -39,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

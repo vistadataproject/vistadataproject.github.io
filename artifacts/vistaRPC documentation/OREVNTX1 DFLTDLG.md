@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return event default dialog IEN
  Input Parameters | {::nomarkdown}EVTID{:/}
- Lines | ```
- S ORY=0
- S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)
- Q:'$D(^ORD(100.5,+EVTID,0))
- S ORY=$P(^ORD(100.5,+EVTID,0),U,4)```
+ Lines | ```{::nomarkdown} S ORY=0<br/> S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)<br/> Q:'$D(^ORD(100.5,+EVTID,0))<br/> S ORY=$P(^ORD(100.5,+EVTID,0),U,4)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

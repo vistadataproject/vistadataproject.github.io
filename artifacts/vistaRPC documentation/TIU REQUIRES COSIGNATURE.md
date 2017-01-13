@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Evaluate cosignature requirement
  Input Parameters | {::nomarkdown}TIUTYP<br/>TIUDA<br/>TIUSER<br/>TIUDT{:/}
- Lines | ```
- N TIUDPRM
- S TIUY=0
- I +$G(TIUTYP)'>0,'+$G(TIUDA) Q
- I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))
- S:'+$G(TIUSER) TIUSER=+$G(DUZ)
- S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),"."))```
+ Lines | ```{::nomarkdown} N TIUDPRM<br/> S TIUY=0<br/> I +$G(TIUTYP)'>0,'+$G(TIUDA) Q<br/> I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))<br/> S:'+$G(TIUSER) TIUSER=+$G(DUZ)<br/> S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),"."))```{:/}
  Leading comment lines | {::nomarkdown}Initialize return value{:/}
 
 ### Input Parameters
@@ -42,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

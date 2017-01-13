@@ -22,20 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return patient's consult requests between start date and stop date for the service and status indicated:
  Input Parameters | {::nomarkdown}ORPT<br/>ORSDT<br/>OREDT<br/>ORSERV<br/>ORSTATUS{:/}
- Lines | ```
- N I,J,SITE,SEQ,DIFF,ORSRV,ORLOC,GMRCOER
- S J=1,SEQ="",GMRCOER=2
- S:'$L($G(ORSDT)) ORSDT=""
- S:'$L($G(OREDT)) OREDT=""
- S:'$L($G(ORSERV))!(+$G(ORSERV)=0) ORSERV=""
- S:'$L($G(ORSTATUS)) ORSTATUS="" ;ALL STATI
- K ^TMP("GMRCR",$J)
- S ORY=$NA(^TMP("ORQQCN",$J,"CS"))
- D OER^GMRCSLM1(ORPT,ORSERV,ORSDT,OREDT,ORSTATUS,GMRCOER)
- M @ORY=^TMP("GMRCR",$J,"CS")
- K @ORY@("AD")
- K @ORY@(0)
- K ^TMP("GMRCR",$J)```
+ Lines | ```{::nomarkdown} N I,J,SITE,SEQ,DIFF,ORSRV,ORLOC,GMRCOER<br/> S J=1,SEQ="",GMRCOER=2<br/> S:'$L($G(ORSDT)) ORSDT=""<br/> S:'$L($G(OREDT)) OREDT=""<br/> S:'$L($G(ORSERV))!(+$G(ORSERV)=0) ORSERV=""<br/> S:'$L($G(ORSTATUS)) ORSTATUS="" ;ALL STATI<br/> K ^TMP("GMRCR",$J)<br/> S ORY=$NA(^TMP("ORQQCN",$J,"CS"))<br/> D OER^GMRCSLM1(ORPT,ORSERV,ORSDT,OREDT,ORSTATUS,GMRCOER)<br/> M @ORY=^TMP("GMRCR",$J,"CS")<br/> K @ORY@("AD")<br/> K @ORY@(0)<br/> K ^TMP("GMRCR",$J)```{:/}
 
 ### Input Parameters
 
@@ -49,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

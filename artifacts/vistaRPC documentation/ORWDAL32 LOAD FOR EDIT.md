@@ -22,14 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Load an allergy/adverse reaction for editing
  Input Parameters | {::nomarkdown}ORALIEN{:/}
- Lines | ```
- Q:+$G(ORALIEN)=0
- N ORNODE,I
- S ORNODE=$NAME(^TMP("GMRA",$J)),I=0
- D GETREC^GMRAGUI(ORALIEN,ORNODE)
- S Y=ORNODE```
+ Lines | ```{::nomarkdown} Q:+$G(ORALIEN)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRA",$J)),I=0<br/> D GETREC^GMRAGUI(ORALIEN,ORNODE)<br/> S Y=ORNODE```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

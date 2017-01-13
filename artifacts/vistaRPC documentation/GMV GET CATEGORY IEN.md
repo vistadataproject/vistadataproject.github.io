@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GMV GET CATEGORY IEN [RPC entry point]
  Input Parameters | {::nomarkdown}GMVCAT{:/}
- Lines | ```
- I GMVCAT="" S RESULT=-1 Q
- S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0))```
+ Lines | ```{::nomarkdown} I GMVCAT="" S RESULT=-1 Q<br/> S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0))```{:/}
  Leading comment lines | {::nomarkdown}Input<br/>RESULT = variable name to hold result<br/>GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/>Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>else returns -1{:/}
 
 ### Input Parameters
@@ -36,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

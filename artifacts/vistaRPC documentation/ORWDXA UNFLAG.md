@@ -22,16 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Unflag order
  Input Parameters | {::nomarkdown}ORIFN<br/>OREASON{:/}
- Lines | ```
- N DA,ORB,ORNP,ORVP,ORPS
- S DA=$P(ORIFN,";",2),ORVP=+$P(^OR(100,+ORIFN,0),U,2)
- S $P(^OR(100,+ORIFN,8,DA,3),U)=0,$P(^(3),U,6,8)=+$E($$NOW^XLFDT,1,12)_U_DUZ_U_OREASON D MSG^ORCFLAG(ORIFN)
- S $P(^OR(100,+ORIFN,3),U)=$$NOW^XLFDT  ; Last Activity
- S ORNP=+$P($G(^OR(100,+ORIFN,8,DA,0)),U,3)
- S ORB=+ORVP_U_+ORIFN_U_ORNP_"^0" D EN^OCXOERR(ORB) ; notification
- D GETBYIFN^ORWORR(.REC,ORIFN)```
+ Lines | ```{::nomarkdown} N DA,ORB,ORNP,ORVP,ORPS<br/> S DA=$P(ORIFN,";",2),ORVP=+$P(^OR(100,+ORIFN,0),U,2)<br/> S $P(^OR(100,+ORIFN,8,DA,3),U)=0,$P(^(3),U,6,8)=+$E($$NOW^XLFDT,1,12)_U_DUZ_U_OREASON D MSG^ORCFLAG(ORIFN)<br/> S $P(^OR(100,+ORIFN,3),U)=$$NOW^XLFDT  ; Last Activity<br/> S ORNP=+$P($G(^OR(100,+ORIFN,8,DA,0)),U,3)<br/> S ORB=+ORVP_U_+ORIFN_U_ORNP_"^0" D EN^OCXOERR(ORB) ; notification<br/> D GETBYIFN^ORWORR(.REC,ORIFN)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

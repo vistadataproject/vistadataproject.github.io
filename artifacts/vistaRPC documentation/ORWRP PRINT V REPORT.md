@@ -22,17 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Print data for remote sites
  Input Parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORHEAD<br/>ORRPT{:/}
- Lines | ```
- N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG
- S ZTIO=ORIO,ZTDTH=$H
- S ZTDESC="Remote V Report Print"
- S ZTRTN="GETVTYPE^ORWRPP1"
- F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""
- D ^%ZTLOAD
- I $D(ZTSK) D
- . S ORY="0^Report queued. (Task #"_ZTSK_")"
- E  D
- . S ORY="99^Task Rejected."```
+ Lines | ```{::nomarkdown} N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="Remote V Report Print"<br/> S ZTRTN="GETVTYPE^ORWRPP1"<br/> F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."```{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT V REPORT{:/}
 
 ### Input Parameters
@@ -47,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

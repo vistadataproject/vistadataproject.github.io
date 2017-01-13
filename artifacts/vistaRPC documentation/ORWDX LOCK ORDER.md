@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Attempt to lock order
  Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | ```
- S OK=$$LOCK1^ORX2(ORIFN)```
+ Lines | ```{::nomarkdown} S OK=$$LOCK1^ORX2(ORIFN)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

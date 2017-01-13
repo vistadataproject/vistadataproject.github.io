@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Validate date/time entry
  Input Parameters | {::nomarkdown}X<br/>%DT{:/}
- Lines | ```
- S:'$D(%DT) %DT="TX" D ^%DT```
+ Lines | ```{::nomarkdown} S:'$D(%DT) %DT="TX" D ^%DT```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

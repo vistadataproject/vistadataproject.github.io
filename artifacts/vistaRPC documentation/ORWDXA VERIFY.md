@@ -22,17 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Verify order
  Input Parameters | {::nomarkdown}ORID<br/>ESCODE<br/>ORVER{:/}
- Lines | ```
- S ORVER=$G(ORVER,$S($D(^XUSEC("ORELSE",DUZ)):"N",$D(^XUSEC("OREMAS",DUZ)):"C",1:U))
- I ORVER'=U D
- . N ORIFN,ORES,ORI
- . ; VERIFY any replaced orders:
- . S ORIFN=ORID,ORES(ORIFN)="" D REPLCD^ORCACT1
- . S ORI="" F  S ORI=$O(ORES(ORI)) Q:ORI=""  D EN^ORCSEND(ORI,"VR","",""),UNLK1^ORX2(+ORI):ORI'=ORID ;ORID locked prior
- D GETBYIFN^ORWORR(.REC,ORID)```
+ Lines | ```{::nomarkdown} S ORVER=$G(ORVER,$S($D(^XUSEC("ORELSE",DUZ)):"N",$D(^XUSEC("OREMAS",DUZ)):"C",1:U))<br/> I ORVER'=U D<br/> . N ORIFN,ORES,ORI<br/> . ; VERIFY any replaced orders:<br/> . S ORIFN=ORID,ORES(ORIFN)="" D REPLCD^ORCACT1<br/> . S ORI="" F  S ORI=$O(ORES(ORI)) Q:ORI=""  D EN^ORCSEND(ORI,"VR","",""),UNLK1^ORX2(+ORI):ORI'=ORID ;ORID locked prior<br/> D GETBYIFN^ORWORR(.REC,ORID)```{:/}
  Leading comment lines | {::nomarkdown}validate ESCode{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

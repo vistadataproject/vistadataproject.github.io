@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Detailed display of a med result
  Input Parameters | {::nomarkdown}GMRCRES{:/}
- Lines | ```
- Q:+$G(GMRCRES)=0
- D DISPMED^GMRCGUIU(GMRCRES,.ORY)
-```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCRES)=0<br/> D DISPMED^GMRCGUIU(GMRCRES,.ORY)<br/>```{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

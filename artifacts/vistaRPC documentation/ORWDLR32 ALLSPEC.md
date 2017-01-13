@@ -22,16 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a set of specimens from topography file
  Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Lines | ```
- N I,IEN,CNT,A,%,NOW,B
- D NOW^%DTC S NOW=$P(%,".")
- S I=0,CNT=44
- F  Q:I'<CNT  S FROM=$O(^LAB(61,"B",FROM),DIR) Q:FROM=""  D
- . S IEN=0 F  S IEN=$O(^LAB(61,"B",FROM,IEN)) Q:'IEN  D
- . . S A=$G(^LAB(61,IEN,64.91)) S B=$P(A,"^",3) I B]"",B'>NOW Q
- . . S I=I+1,Y(I)=IEN_U_FROM_"  ("_$P($G(^LAB(61,IEN,0)),U,2)_")"```
+ Lines | ```{::nomarkdown} N I,IEN,CNT,A,%,NOW,B<br/> D NOW^%DTC S NOW=$P(%,".")<br/> S I=0,CNT=44<br/> F  Q:I'<CNT  S FROM=$O(^LAB(61,"B",FROM),DIR) Q:FROM=""  D<br/> . S IEN=0 F  S IEN=$O(^LAB(61,"B",FROM,IEN)) Q:'IEN  D<br/> . . S A=$G(^LAB(61,IEN,64.91)) S B=$P(A,"^",3) I B]"",B'>NOW Q<br/> . . S I=I+1,Y(I)=IEN_U_FROM_"  ("_$P($G(^LAB(61,IEN,0)),U,2)_")"```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

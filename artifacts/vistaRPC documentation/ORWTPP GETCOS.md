@@ -22,12 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}FROM<br/>DIR<br/>VISITORS{:/}
- Lines | ```
- I '$G(VISITORS) S VISITORS=""
- D GETCOS^ORWTPN(.VALUES,DUZ,FROM,DIR,VISITORS)```
+ Lines | ```{::nomarkdown} I '$G(VISITORS) S VISITORS=""<br/> D GETCOS^ORWTPN(.VALUES,DUZ,FROM,DIR,VISITORS)```{:/}
  Leading comment lines | {::nomarkdown}get elgible cosigners for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

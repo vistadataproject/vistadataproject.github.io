@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | message to display after successful PIV link for admin contact person
- Lines | ```
- N I,ORTY
- D GETWP^XPAR(.ORTY,"DIV^SYS^PKG","OR DEA PIV LINK MSG")
- S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0)```
+ Lines | ```{::nomarkdown} N I,ORTY<br/> D GETWP^XPAR(.ORTY,"DIV^SYS^PKG","OR DEA PIV LINK MSG")<br/> S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

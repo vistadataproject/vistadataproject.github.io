@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save order checks for session
  Input Parameters | {::nomarkdown}ORVP<br/>RSN<br/>LST{:/}
- Lines | ```
- N ORCHECK,ORIFN S OK=1
- D LST2CHK
- I $L(RSN)>0 S ORCHECK("OK")=RSN
- S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2```
+ Lines | ```{::nomarkdown} N ORCHECK,ORIFN S OK=1<br/> D LST2CHK<br/> I $L(RSN)>0 S ORCHECK("OK")=RSN<br/> S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

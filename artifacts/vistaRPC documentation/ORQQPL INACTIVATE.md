@@ -22,23 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | inactivate a problem
  Input Parameters | {::nomarkdown}GMPIFN{:/}
- Lines | ```
- N NOW,CHNGE
- S NOW=$$HTFM^XLFDT($H)
- I $P(^AUPNPROB(GMPIFN,0),U,12)'="A" D  Q  ; BAIL OUT - ALREADY INACTIVE
- . S RETURN=-1
- . S RETURN(0)="Problem Already Inactive"
- L +^AUPNPROB(GMPIFN,0):10
- I '$T D  Q  ; BAIL OUT - NO LOCK
- . S RETURN=-1
- . S RETURN(0)="Record in use. Try again in a few moments"
- S $P(^AUPNPROB(GMPIFN,0),U,12)="I"
- S CHNGE=GMPIFN_"^.12^"_NOW_U_DUZ_"^A^I^Inactivated^"_DUZ
- D AUDIT^GMPLX(CHNGE,"")
- D DTMOD^GMPLX(GMPIFN)
- L -^AUPNPROB(GMPIFN,0)
- S RETURN=1
- S RETURN(0)=""```
+ Lines | ```{::nomarkdown} N NOW,CHNGE<br/> S NOW=$$HTFM^XLFDT($H)<br/> I $P(^AUPNPROB(GMPIFN,0),U,12)'="A" D  Q  ; BAIL OUT - ALREADY INACTIVE<br/> . S RETURN=-1<br/> . S RETURN(0)="Problem Already Inactive"<br/> L +^AUPNPROB(GMPIFN,0):10<br/> I '$T D  Q  ; BAIL OUT - NO LOCK<br/> . S RETURN=-1<br/> . S RETURN(0)="Record in use. Try again in a few moments"<br/> S $P(^AUPNPROB(GMPIFN,0),U,12)="I"<br/> S CHNGE=GMPIFN_"^.12^"_NOW_U_DUZ_"^A^I^Inactivated^"_DUZ<br/> D AUDIT^GMPLX(CHNGE,"")<br/> D DTMOD^GMPLX(GMPIFN)<br/> L -^AUPNPROB(GMPIFN,0)<br/> S RETURN=1<br/> S RETURN(0)=""```{:/}
  Leading comment lines | {::nomarkdown}RETURN:  ;(consistent with UPDATE function)<br/>SUCCESS:<br/>RETURN>0, RETURN(0)=""<br/>FAILURE:<br/>RETURN<0, RETURN(0)=verbose error message{:/}
 
 ### Input Parameters
@@ -50,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

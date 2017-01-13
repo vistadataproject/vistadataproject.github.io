@@ -22,27 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Send NTRT Request bulletin to CAC mailgroup
  Input Parameters | {::nomarkdown}ORTERM<br/>ORNP<br/>ORPT<br/>ORCOMM{:/}
- Lines | ```
- N ORSITE,ORSVC,ORUSER,OREQSTR,OREQSVC,ORDGRP,XMB,XMDUZ,XMY
- D USERINFO^XUSRB2(.ORUSER) S ORSITE=$G(ORUSER(3)),ORSVC=$G(ORUSER(5))
- S OREQSTR=$S(DUZ'=ORNP:ORUSER(2)_" for "_$$NAME^XUSER(ORNP),1:ORUSER(2))
- S OREQSVC=$P($$SERVICE^GMPLX1(ORNP,1),U,2)
- S ORSVC=$S(ORSVC=OREQSVC:ORSVC,1:ORSVC_"/"_OREQSVC)
- S:ORSITE']"" ORSITE=$$SITE^VASITE
- I '$L(ORTERM) S ORY="0^Empty String - a valid term must be sent." Q
- I '+$G(DUZ)!'$D(^VA(200,+$G(DUZ))) S ORY="0^A valid user must be identified." Q
- S XMB="OR PROBLEM NTRT BULLETIN"
- S XMDUZ="OR PROBLEM NTRT BULLETIN"
- S ORDGRP=$$GET^XPAR("DIV.`"_DUZ(2),"OR PROBLEM NTRT BY DIVISION",1,"E")
- S:ORDGRP]"" XMY("G."_ORDGRP)=""
- S XMB(1)=ORTERM
- S XMB(2)=$$FMTE^XLFDT($E(($$NOW^XLFDT),1,12),2)
- S XMB(3)=OREQSTR
- S XMB(4)=ORSVC
- S XMB(5)=$P(ORSITE,U,2)_"("_$P(ORSITE,U,3)_")"
- S XMB(6)=$G(ORPT,"")
- S XMB(7)=$G(ORCOMM,"None")
- D ^XMB,KILL^XM S ORY=1```
+ Lines | ```{::nomarkdown} N ORSITE,ORSVC,ORUSER,OREQSTR,OREQSVC,ORDGRP,XMB,XMDUZ,XMY<br/> D USERINFO^XUSRB2(.ORUSER) S ORSITE=$G(ORUSER(3)),ORSVC=$G(ORUSER(5))<br/> S OREQSTR=$S(DUZ'=ORNP:ORUSER(2)_" for "_$$NAME^XUSER(ORNP),1:ORUSER(2))<br/> S OREQSVC=$P($$SERVICE^GMPLX1(ORNP,1),U,2)<br/> S ORSVC=$S(ORSVC=OREQSVC:ORSVC,1:ORSVC_"/"_OREQSVC)<br/> S:ORSITE']"" ORSITE=$$SITE^VASITE<br/> I '$L(ORTERM) S ORY="0^Empty String - a valid term must be sent." Q<br/> I '+$G(DUZ)!'$D(^VA(200,+$G(DUZ))) S ORY="0^A valid user must be identified." Q<br/> S XMB="OR PROBLEM NTRT BULLETIN"<br/> S XMDUZ="OR PROBLEM NTRT BULLETIN"<br/> S ORDGRP=$$GET^XPAR("DIV.`"_DUZ(2),"OR PROBLEM NTRT BY DIVISION",1,"E")<br/> S:ORDGRP]"" XMY("G."_ORDGRP)=""<br/> S XMB(1)=ORTERM<br/> S XMB(2)=$$FMTE^XLFDT($E(($$NOW^XLFDT),1,12),2)<br/> S XMB(3)=OREQSTR<br/> S XMB(4)=ORSVC<br/> S XMB(5)=$P(ORSITE,U,2)_"("_$P(ORSITE,U,3)_")"<br/> S XMB(6)=$G(ORPT,"")<br/> S XMB(7)=$G(ORCOMM,"None")<br/> D ^XMB,KILL^XM S ORY=1```{:/}
 
 ### Input Parameters
 
@@ -53,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

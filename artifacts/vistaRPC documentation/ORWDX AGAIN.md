@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return true to keep dlg for another order
  Input Parameters | {::nomarkdown}DLG{:/}
- Lines | ```
- S VAL=''$P($G(^ORD(101.41,DLG,0)),U,9)```
+ Lines | ```{::nomarkdown} S VAL=''$P($G(^ORD(101.41,DLG,0)),U,9)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

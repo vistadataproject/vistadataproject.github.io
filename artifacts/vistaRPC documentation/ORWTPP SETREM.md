@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}VALUES{:/}
- Lines | ```
- D SETREM^ORWTPR(.OK,.VALUES,DUZ)```
+ Lines | ```{::nomarkdown} D SETREM^ORWTPR(.OK,.VALUES,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}set current user's reminders{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

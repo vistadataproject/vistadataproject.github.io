@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Remove a medicine result from a consult
  Input Parameters | {::nomarkdown}GMRCO<br/>GMRCRSLT<br/>GMRCAD<br/>GMRCORNP{:/}
- Lines | ```
- Q:+$G(GMRCO)=0
- D REMOVE^GMRCDIS(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP)```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCO)=0<br/> D REMOVE^GMRCDIS(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP)```{:/}
  Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time medicine result was removed<br/>GMRCORNP - Provider who removed the result from the consult{:/}
 
 ### Input Parameters
@@ -39,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RESETS/UPDATES THE TMP("TIUFLDXML",$J) GLOBAL
  Input Parameters | {::nomarkdown}IN{:/}
- Lines | ```
- N X
- S X=0
- S X=$O(IN(X))
- I +X=1 K ^TMP("TIUFLDXML",$J)
- M ^TMP("TIUFLDXML",$J)=IN
- S RESULT(1)=1```
+ Lines | ```{::nomarkdown} N X<br/> S X=0<br/> S X=$O(IN(X))<br/> I +X=1 K ^TMP("TIUFLDXML",$J)<br/> M ^TMP("TIUFLDXML",$J)=IN<br/> S RESULT(1)=1```{:/}
  Leading comment lines | {::nomarkdown}WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED<br/>AS 1, THE PROGRAM CLEARS THE TMP GLOBAL FIRST.  RETURNS "1" IF<br/>THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.{:/}
 
 ### Input Parameters
@@ -41,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

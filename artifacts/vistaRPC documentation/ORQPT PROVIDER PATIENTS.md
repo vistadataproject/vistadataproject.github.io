@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RETURN LIST OF PATIENTS LINKED TO A PRIMARY PROVIDER
  Input Parameters | {::nomarkdown}PROV{:/}
- Lines | ```
- I +$G(PROV)<1 S Y(1)="^No provider identified" Q
- N ORI,DFN
- S ORI=1,DFN=0
- F  S DFN=$O(^DPT("APR",PROV,DFN)) Q:DFN'>0  S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^"),ORI=ORI+1
- S:+$G(Y(1))<1 Y(1)="^No patients found."```
+ Lines | ```{::nomarkdown} I +$G(PROV)<1 S Y(1)="^No provider identified" Q<br/> N ORI,DFN<br/> S ORI=1,DFN=0<br/> F  S DFN=$O(^DPT("APR",PROV,DFN)) Q:DFN'>0  S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^"),ORI=ORI+1<br/> S:+$G(Y(1))<1 Y(1)="^No patients found."```{:/}
 
 ### Input Parameters
 
@@ -38,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

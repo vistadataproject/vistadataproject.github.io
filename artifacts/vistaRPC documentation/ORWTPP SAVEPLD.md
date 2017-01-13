@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}INFO{:/}
- Lines | ```
- D SAVEPLD^ORWTPL(.OK,INFO,DUZ)```
+ Lines | ```{::nomarkdown} D SAVEPLD^ORWTPL(.OK,INFO,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}save current user's list selection defaults{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

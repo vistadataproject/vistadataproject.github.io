@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Do query for the current iterator
  Input Parameters | {::nomarkdown}ORRITR{:/}
- Lines | ```
- S VAL=$$PTSCRN($P(ORRITR,";",2))
- I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))
- S $P(VAL,U,3)=$$NXTITER(ORRITR)```
+ Lines | ```{::nomarkdown} S VAL=$$PTSCRN($P(ORRITR,";",2))<br/> I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))<br/> S $P(VAL,U,3)=$$NXTITER(ORRITR)```{:/}
  Leading comment lines | {::nomarkdown}VAL=PtSearched^RecordsFound^Iterator{:/}
 
 ### Input Parameters
@@ -37,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

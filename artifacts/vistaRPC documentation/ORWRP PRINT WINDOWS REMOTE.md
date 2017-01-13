@@ -22,23 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Windows Remote device print
  Input Parameters | {::nomarkdown}ORDFN<br/>ORRPTID<br/>ORHANDS{:/}
- Lines | ```
- N ZTQUEUED,ORHFS,ORSUB,ROOT,ORIO,ORHANDLE,ORWINDEV
- N IOM,IOSL,IOST,IOF,IOT,IOS,ORHSTAG,POP
- S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")
- S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS",ORTEXT=$NA(^TMP(ORSUB,$J,1)),ORHANDLE="ORWRP"
- S ORHFS=$$HFS^ORWRP(),ORWINDEV=1 ;Flag for printing to windows device
- D HFSOPEN^ORWRP(ORHANDLE,ORHFS,"W")
- I POP D  Q
- . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file")
- D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")
- N $ETRAP,$ESTACK
- S $ETRAP="D ERR^ORWRP Q"
- U IO
- D DEQUE
- D HFSCLOSE^ORWRP(ORHANDLE,ORHFS)```
+ Lines | ```{::nomarkdown} N ZTQUEUED,ORHFS,ORSUB,ROOT,ORIO,ORHANDLE,ORWINDEV<br/> N IOM,IOSL,IOST,IOF,IOT,IOS,ORHSTAG,POP<br/> S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")<br/> S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS",ORTEXT=$NA(^TMP(ORSUB,$J,1)),ORHANDLE="ORWRP"<br/> S ORHFS=$$HFS^ORWRP(),ORWINDEV=1 ;Flag for printing to windows device<br/> D HFSOPEN^ORWRP(ORHANDLE,ORHFS,"W")<br/> I POP D  Q<br/> . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file")<br/> D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")<br/> N $ETRAP,$ESTACK<br/> S $ETRAP="D ERR^ORWRP Q"<br/> U IO<br/> D DEQUE<br/> D HFSCLOSE^ORWRP(ORHANDLE,ORHFS)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

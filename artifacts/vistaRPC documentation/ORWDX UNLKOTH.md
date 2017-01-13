@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Unlock pt not by this session
  Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | ```
- K ^XTMP("ORPTLK-"_ORIFN) S OK=1
-```
+ Lines | ```{::nomarkdown} K ^XTMP("ORPTLK-"_ORIFN) S OK=1<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC Link TIU Doc TIUIEN to
  Input Parameters | {::nomarkdown}TIUIEN<br/>ASSGNDA<br/>ACTIEN<br/>DFN{:/}
- Lines | ```
- N TIUTTL
- S TIUTTL=+$G(^TIU(8925,TIUIEN,0))
- I 'TIUTTL S TIUY="0^Document does not exist" Q
- D UNLINK^TIUPRF1(TIUIEN)
- S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN)```
+ Lines | ```{::nomarkdown} N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> D UNLINK^TIUPRF1(TIUIEN)<br/> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN)```{:/}
  Leading comment lines | {::nomarkdown}the PRF action{:/}
 
 ### Input Parameters
@@ -42,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

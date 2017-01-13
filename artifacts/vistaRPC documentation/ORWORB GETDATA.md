@@ -22,16 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return XQADATA for an alert
  Input Parameters | {::nomarkdown}XQAID{:/}
- Lines | ```
- N SHOWADD
- S ORY=""
- Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))
- D GETACT^XQALERT(XQAID)
- S ORY=XQADATA
- I ($E(XQAID,1,3)="TIU"),(+ORY>0) D
- . S SHOWADD=1
- . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)
- K XQAID,XQADATA,XQAOPT,XQAROU```
+ Lines | ```{::nomarkdown} N SHOWADD<br/> S ORY=""<br/> Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))<br/> D GETACT^XQALERT(XQAID)<br/> S ORY=XQADATA<br/> I ($E(XQAID,1,3)="TIU"),(+ORY>0) D<br/> . S SHOWADD=1<br/> . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)<br/> K XQAID,XQADATA,XQAOPT,XQAROU```{:/}
 
 ### Input Parameters
 
@@ -42,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

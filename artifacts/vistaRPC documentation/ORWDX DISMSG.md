@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Disabled mge for ordering dlg
  Input Parameters | {::nomarkdown}IEN{:/}
- Lines | ```
- S VAL=$P($G(^ORD(101.41,+IEN,0)),U,3)```
+ Lines | ```{::nomarkdown} S VAL=$P($G(^ORD(101.41,+IEN,0)),U,3)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

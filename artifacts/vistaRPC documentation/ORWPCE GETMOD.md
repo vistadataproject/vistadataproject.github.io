@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns info for a specific CPT Modifier
  Input Parameters | {::nomarkdown}ORMODIEN<br/>ORDATE{:/}
- Lines | ```
- N ORDATA
- S:'+$G(ORDATE) ORDATE=DT
- S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)
- I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2)```
+ Lines | ```{::nomarkdown} N ORDATA<br/> S:'+$G(ORDATE) ORDATE=DT<br/> S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)<br/> I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2)```{:/}
 
 ### Input Parameters
 
@@ -37,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

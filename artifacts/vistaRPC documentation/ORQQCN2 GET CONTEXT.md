@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Returns current view context for user
  Input Parameters | {::nomarkdown}ORUSER{:/}
- Lines | ```
- S Y=$$GET^XPAR("ALL","ORCH CONTEXT CONSULTS",1)```
+ Lines | ```{::nomarkdown} S Y=$$GET^XPAR("ALL","ORCH CONTEXT CONSULTS",1)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,15 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Exports Template Fields as XML
  Input Parameters | {::nomarkdown}FLDS{:/}
- Lines | ```
- N I,IEN
- K TIUXML
- D ADD(.TIUXML,"<TEMPLATE_FIELDS>",0)
- S I=0
- F  S I=$O(FLDS(I)) Q:I'>0  D
- . S IEN=$O(^TIU(8927.1,"B",FLDS(I),0))
- . I +IEN D ADDXML(.TIUXML,IEN)
- D ADD(.TIUXML,"</TEMPLATE_FIELDS>",0)```
+ Lines | ```{::nomarkdown} N I,IEN<br/> K TIUXML<br/> D ADD(.TIUXML,"<TEMPLATE_FIELDS>",0)<br/> S I=0<br/> F  S I=$O(FLDS(I)) Q:I'>0  D<br/> . S IEN=$O(^TIU(8927.1,"B",FLDS(I),0))<br/> . I +IEN D ADDXML(.TIUXML,IEN)<br/> D ADD(.TIUXML,"</TEMPLATE_FIELDS>",0)```{:/}
  Leading comment lines | {::nomarkdown}FLDS should be an array of Template Field names, not IENs{:/}
 
 ### Input Parameters
@@ -42,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

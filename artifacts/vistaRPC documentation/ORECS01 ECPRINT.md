@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Print ECS report to Device
  Input Parameters | {::nomarkdown}ORECARY{:/}
- Lines | ```
- Q:'$D(ORECARY)
- D RPTEN^ECRRPC(.ORY,.ORECARY)```
+ Lines | ```{::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

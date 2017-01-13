@@ -22,22 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return list of Order Checks on Accept Delayed
  Input Parameters | {::nomarkdown}DFN<br/>FID<br/>STRT<br/>ORL<br/>OIL{:/}
- Lines | ```
- K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")
- N X,Y,ORCHECK,ORI,ORX,ORY,%DT
- S ORL=ORL_";SC(",X=STRT,STRT=""
- D:X="AM" AM^ORCSAVE2 D:X="NEXT" NEXT^ORCSAVE2
- I $L(X) S %DT="FTX" D ^%DT S:Y'>0 Y="" S STRT=Y
- S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D
- . S ORX=ORX+1
- . S ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_$$USID(OIL(ORI))_"|"_STRT
- . I $P(OIL(ORI),U,2)="LR" S $P(ORX(ORX),"|",6)=$P(OIL(ORI),U,3)
- D EN^ORKCHK(.ORY,DFN,.ORX,"ALL",.OIL)
- I $D(ORY) D RETURN^ORCHECK   ; expects ORY, ORCHECK
- D CHK2LST
- K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")```
+ Lines | ```{::nomarkdown} K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")<br/> N X,Y,ORCHECK,ORI,ORX,ORY,%DT<br/> S ORL=ORL_";SC(",X=STRT,STRT=""<br/> D:X="AM" AM^ORCSAVE2 D:X="NEXT" NEXT^ORCSAVE2<br/> I $L(X) S %DT="FTX" D ^%DT S:Y'>0 Y="" S STRT=Y<br/> S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D<br/> . S ORX=ORX+1<br/> . S ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_$$USID(OIL(ORI))_"|"_STRT<br/> . I $P(OIL(ORI),U,2)="LR" S $P(ORX(ORX),"|",6)=$P(OIL(ORI),U,3)<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"ALL",.OIL)<br/> I $D(ORY) D RETURN^ORCHECK   ; expects ORY, ORCHECK<br/> D CHK2LST<br/> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

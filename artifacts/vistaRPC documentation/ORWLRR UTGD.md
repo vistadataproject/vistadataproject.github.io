@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | from Remote Procedure file
  Input Parameters | {::nomarkdown}TGRP{:/}
- Lines | ```
- D UTGD^LR7OGO(.ORY,TGRP)```
+ Lines | ```{::nomarkdown} D UTGD^LR7OGO(.ORY,TGRP)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

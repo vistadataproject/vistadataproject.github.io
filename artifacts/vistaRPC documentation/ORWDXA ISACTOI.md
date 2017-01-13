@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is ord item active?
  Input Parameters | {::nomarkdown}OI{:/}
- Lines | ```
- I $G(^ORD(101.43,+OI,.1)),^(.1)'>$$NOW^XLFDT D
- . S ORY=$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore."```
+ Lines | ```{::nomarkdown} I $G(^ORD(101.43,+OI,.1)),^(.1)'>$$NOW^XLFDT D<br/> . S ORY=$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore."```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

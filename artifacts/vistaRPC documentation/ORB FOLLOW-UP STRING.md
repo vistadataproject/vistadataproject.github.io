@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
  Input Parameters | {::nomarkdown}ORXQAID{:/}
- Lines | ```
- S ORENVIR="GUI"
- D PROCESS```
+ Lines | ```{::nomarkdown} S ORENVIR="GUI"<br/> D PROCESS```{:/}
  Leading comment lines | {::nomarkdown}called by ORB FOLLOW-UP api:{:/}
 
 ### Input Parameters
@@ -36,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

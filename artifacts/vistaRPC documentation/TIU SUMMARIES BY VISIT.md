@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Gets list of Summaries
  Input Parameters | {::nomarkdown}VISIT<br/>STATUS{:/}
- Lines | ```
- I $S(+$G(VISIT)'>0:1,'$D(^AUPNVSIT(+$G(VISIT),0)):1,1:0) Q
- D LIST(.TIUY,VISIT,244,$G(STATUS))```
+ Lines | ```{::nomarkdown} I $S(+$G(VISIT)'>0:1,'$D(^AUPNVSIT(+$G(VISIT),0)):1,1:0) Q<br/> D LIST(.TIUY,VISIT,244,$G(STATUS))```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Interim Report RPC (All Tests by Date)
  Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2{:/}
- Lines | ```
- N ROOT
- S ROOT=$$SET()
- I $$REMOTE(.DFN,.ROOT) D INTERIM^LR7OGM(.ORY,DFN,DATE1,DATE2)
- D CLEAN(.ORY,.ROOT)```
+ Lines | ```{::nomarkdown} N ROOT<br/> S ROOT=$$SET()<br/> I $$REMOTE(.DFN,.ROOT) D INTERIM^LR7OGM(.ORY,DFN,DATE1,DATE2)<br/> D CLEAN(.ORY,.ROOT)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

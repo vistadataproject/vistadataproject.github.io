@@ -22,8 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get user's personal preferences
  Input Parameters | {::nomarkdown}USER{:/}
- Lines | ```
- S TIUY=$$PERSPRF^TIULE(USER)```
+ Lines | ```{::nomarkdown} S TIUY=$$PERSPRF^TIULE(USER)```{:/}
  Leading comment lines | {::nomarkdown}Call with TIUY (by ref)<br/>USER is pointer to file 200<br/>Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^{:/}
 
 ### Input Parameters
@@ -35,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

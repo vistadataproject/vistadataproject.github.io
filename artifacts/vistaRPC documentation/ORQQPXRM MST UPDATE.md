@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORPT<br/>ORDATE<br/>ORSTAT<br/>ORPROV<br/>ORFTYP<br/>ORFIEN<br/>ORRES{:/}
- Lines | ```
- D MST^PXRMRPCC(.ORY,ORPT,ORDATE,ORSTAT,ORPROV,ORFTYP,ORFIEN,ORRES) Q```
+ Lines | ```{::nomarkdown} D MST^PXRMRPCC(.ORY,ORPT,ORDATE,ORSTAT,ORPROV,ORFTYP,ORFIEN,ORRES) Q```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

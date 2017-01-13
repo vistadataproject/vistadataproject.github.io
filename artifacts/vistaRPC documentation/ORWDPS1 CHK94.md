@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return 1 if patch 94 has been installed
- Lines | ```
- S VAL=0
- I $O(^ORD(101.41,"B","PS MEDS",0)) S VAL=1```
+ Lines | ```{::nomarkdown} S VAL=0<br/> I $O(^ORD(101.41,"B","PS MEDS",0)) S VAL=1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

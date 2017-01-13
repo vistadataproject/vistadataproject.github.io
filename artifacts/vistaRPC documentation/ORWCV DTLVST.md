@@ -22,22 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return progress notes / discharge summary
  Input Parameters | {::nomarkdown}DFN<br/>IEN<br/>APPTINFO{:/}
- Lines | ```
- N VISIT
- I $P(APPTINFO,";")="A" D  Q
- . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)
- I $P(APPTINFO,";")="V" D  Q
- . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)
- I $P(APPTINFO,";")="I" D  Q
- . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETSUM^ORQQVS(.RPT,DFN,VISIT)
- . K ^TMP("PXKENC",$J)
- I $P(APPTINFO,";")="R" D RCDTL^SDRROR```
+ Lines | ```{::nomarkdown} N VISIT<br/> I $P(APPTINFO,";")="A" D  Q<br/> . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="V" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="I" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETSUM^ORQQVS(.RPT,DFN,VISIT)<br/> . K ^TMP("PXKENC",$J)<br/> I $P(APPTINFO,";")="R" D RCDTL^SDRROR```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

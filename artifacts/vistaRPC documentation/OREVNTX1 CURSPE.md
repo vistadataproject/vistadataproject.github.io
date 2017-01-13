@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return current treating specialty
  Input Parameters | {::nomarkdown}PTIFN{:/}
- Lines | ```
- Q:'PTIFN
- N SPEC S SPEC=$$PT^DGPMOBS(PTIFN),ORY=""
- I SPEC'<0 S ORY=$P(SPEC,U,3)_U_$P(SPEC,U,2)_U_$P(SPEC,U) ;name^ien^obs flag```
+ Lines | ```{::nomarkdown} Q:'PTIFN<br/> N SPEC S SPEC=$$PT^DGPMOBS(PTIFN),ORY=""<br/> I SPEC'<0 S ORY=$P(SPEC,U,3)_U_$P(SPEC,U,2)_U_$P(SPEC,U) ;name^ien^obs flag```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORID<br/>LOC{:/}
- Lines | ```
- S ORY=0
- I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1```
+ Lines | ```{::nomarkdown} S ORY=0<br/> I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

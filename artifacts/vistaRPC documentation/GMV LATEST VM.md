@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GMV LATEST VM [RPC entry point]
  Input Parameters | {::nomarkdown}GMRDFN{:/}
- Lines | ```
- K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)
- S RESULT=$NA(^TMP($J,"GRPC"))```
+ Lines | ```{::nomarkdown} K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)<br/> S RESULT=$NA(^TMP($J,"GRPC"))```{:/}
  Leading comment lines | {::nomarkdown}RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/>IN RESULT ARRAY.{:/}
 
 ### Input Parameters
@@ -36,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

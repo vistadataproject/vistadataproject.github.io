@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return available med results for proc request
  Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | ```
- Q:+$G(GMRCO)=0
- D GETMED^GMRCGUIU(GMRCO,.ORY)```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCO)=0<br/> D GETMED^GMRCGUIU(GMRCO,.ORY)```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

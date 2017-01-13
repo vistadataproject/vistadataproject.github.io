@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Print SF513 to VistA device from GUI
  Input Parameters | {::nomarkdown}GMRCO<br/>GMRCCHT<br/>GMRCDEV{:/}
- Lines | ```
- N ORSTATUS
- D EN^GMRCP5(GMRCO,GMRCCHT,GMRCDEV,.ORSTATUS)
- S Y=ORSTATUS```
+ Lines | ```{::nomarkdown} N ORSTATUS<br/> D EN^GMRCP5(GMRCO,GMRCCHT,GMRCDEV,.ORSTATUS)<br/> S Y=ORSTATUS```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

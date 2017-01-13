@@ -22,21 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Save user's ECS path
  Input Parameters | {::nomarkdown}ECPATH{:/}
- Lines | ```
- N IX,VAL,NM,HADIT,LST,INST,LAST
- S (IX,HADIT,INST,LAST)=0,(VAL,NM)=""
- D GETLST^XPAR(.LST,DUZ_";VA(200,","ORWT TOOLS MENU")
- S LAST=+$G(LST(LST))
- F  S IX=$O(LST(IX)) Q:('IX)!HADIT  D
- . S NM=$P($P(LST(IX),U,2),"=",1)
- . I $$UP^XLFSTR(NM)="EVENT CAPTURE INTERFACE" S HADIT=$P(LST(IX),U)
- S $P(ECPATH,"=",2)=$C(34)_$P(ECPATH,"=",2)_$C(34)
- S ORY=$P(ECPATH,"=",2)
- D:HADIT CHG^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",HADIT,ECPATH)
- D:'HADIT ADD^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",LAST+1,ECPATH)
-```
+ Lines | ```{::nomarkdown} N IX,VAL,NM,HADIT,LST,INST,LAST<br/> S (IX,HADIT,INST,LAST)=0,(VAL,NM)=""<br/> D GETLST^XPAR(.LST,DUZ_";VA(200,","ORWT TOOLS MENU")<br/> S LAST=+$G(LST(LST))<br/> F  S IX=$O(LST(IX)) Q:('IX)!HADIT  D<br/> . S NM=$P($P(LST(IX),U,2),"=",1)<br/> . I $$UP^XLFSTR(NM)="EVENT CAPTURE INTERFACE" S HADIT=$P(LST(IX),U)<br/> S $P(ECPATH,"=",2)=$C(34)_$P(ECPATH,"=",2)_$C(34)<br/> S ORY=$P(ECPATH,"=",2)<br/> D:HADIT CHG^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",HADIT,ECPATH)<br/> D:'HADIT ADD^XPAR(DUZ_";VA(200,","ORWT TOOLS MENU",LAST+1,ECPATH)<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

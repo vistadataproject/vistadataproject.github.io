@@ -22,15 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check if QO has a ROUTE defined
  Input Parameters | {::nomarkdown}QOID{:/}
- Lines | ```
- N ROUTID
- S Y=0,ROUTID=0
- S ROUTID=$O(^ORD(101.41,"B","OR GTX ROUTING",0))
- Q:'ROUTID
- Q:'$D(^ORD(101.41,+QOID))
- I $D(^ORD(101.41,+QOID,6,"D",ROUTID)) S Y=1```
+ Lines | ```{::nomarkdown} N ROUTID<br/> S Y=0,ROUTID=0<br/> S ROUTID=$O(^ORD(101.41,"B","OR GTX ROUTING",0))<br/> Q:'ROUTID<br/> Q:'$D(^ORD(101.41,+QOID))<br/> I $D(^ORD(101.41,+QOID,6,"D",ROUTID)) S Y=1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

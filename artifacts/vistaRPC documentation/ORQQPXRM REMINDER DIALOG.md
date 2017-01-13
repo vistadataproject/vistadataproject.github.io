@@ -21,12 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}ORREM<br/>DFN{:/}
- Lines | ```
- N DIEN
- D DIALOG^PXRMRPCC(.ORY,ORREM,DFN)
- I $P($G(ORY(1)),U)=-1 Q
- S DIEN=$G(^PXD(811.9,ORREM,51))
- S ORY(0)=0_U_+$P($G(^PXRMD(801.41,DIEN,0)),U,17)```
+ Lines | ```{::nomarkdown} N DIEN<br/> D DIALOG^PXRMRPCC(.ORY,ORREM,DFN)<br/> I $P($G(ORY(1)),U)=-1 Q<br/> S DIEN=$G(^PXD(811.9,ORREM,51))<br/> S ORY(0)=0_U_+$P($G(^PXRMD(801.41,DIEN,0)),U,17)```{:/}
  Leading comment lines | {::nomarkdown}DBIA 3080{:/}
 
 ### Input Parameters
@@ -38,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

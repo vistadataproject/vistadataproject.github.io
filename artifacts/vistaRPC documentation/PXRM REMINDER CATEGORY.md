@@ -22,37 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get category information
  Input Parameters | {::nomarkdown}CIEN{:/}
- Lines | ```
- N DATA,IC,IEN,NAME,PNAME,RIEN,SEQ,SUB,TEMP,USAGE
- S IC=0
- S NAME=$G(^PXRMD(811.7,CIEN,0)) I NAME="" Q
- S SUB=0 K TEMP
- F  S SUB=$O(^PXRMD(811.7,CIEN,2,SUB)) Q:SUB=""  D
- .S DATA=$G(^PXRMD(811.7,CIEN,2,SUB,0)) Q:DATA=""
- .S RIEN=$P(DATA,U) Q:'RIEN
- .S SEQ=$P(DATA,U,2)_0
- .;Include only CPRS reminders
- .S USAGE=$P($G(^PXD(811.9,RIEN,100)),U,4) I USAGE'["C",USAGE'["*" Q
- .I USAGE["L"!(USAGE["O") Q
- .;Skip inactive reminders
- .S DATA=$G(^PXD(811.9,RIEN,0)) Q:DATA=""  Q:$P(DATA,U,6)
- .S NAME=$P(DATA,U) I NAME="" S NAME="Unknown"
- .;or printname
- .S PNAME=$P(DATA,U,3)
- .S TEMP(SEQ)=RIEN_U_NAME_U_PNAME
- S SEQ=""
- F  S SEQ=$O(TEMP(SEQ)) Q:SEQ=""  D
- .S IC=IC+1,ORY(IC)="R"_U_TEMP(SEQ)
- S SUB=0 K TEMP
- F  S SUB=$O(^PXRMD(811.7,CIEN,10,SUB)) Q:SUB=""  D
- .S DATA=$G(^PXRMD(811.7,CIEN,10,SUB,0)) Q:DATA=""
- .S IEN=$P(DATA,U) Q:'IEN
- .S SEQ=$P(DATA,U,2),TEMP(SEQ)=IEN
- S SEQ=""
- F  S SEQ=$O(TEMP(SEQ)) Q:SEQ=""  D
- .S SUB=TEMP(SEQ) Q:'SUB
- .S NAME=$P($G(^PXRMD(811.7,SUB,0)),U) Q:NAME=""
- .S IC=IC+1,ORY(IC)="C"_U_SUB_U_NAME```
+ Lines | ```{::nomarkdown} N DATA,IC,IEN,NAME,PNAME,RIEN,SEQ,SUB,TEMP,USAGE<br/> S IC=0<br/> S NAME=$G(^PXRMD(811.7,CIEN,0)) I NAME="" Q<br/> S SUB=0 K TEMP<br/> F  S SUB=$O(^PXRMD(811.7,CIEN,2,SUB)) Q:SUB=""  D<br/> .S DATA=$G(^PXRMD(811.7,CIEN,2,SUB,0)) Q:DATA=""<br/> .S RIEN=$P(DATA,U) Q:'RIEN<br/> .S SEQ=$P(DATA,U,2)_0<br/> .;Include only CPRS reminders<br/> .S USAGE=$P($G(^PXD(811.9,RIEN,100)),U,4) I USAGE'["C",USAGE'["*" Q<br/> .I USAGE["L"!(USAGE["O") Q<br/> .;Skip inactive reminders<br/> .S DATA=$G(^PXD(811.9,RIEN,0)) Q:DATA=""  Q:$P(DATA,U,6)<br/> .S NAME=$P(DATA,U) I NAME="" S NAME="Unknown"<br/> .;or printname<br/> .S PNAME=$P(DATA,U,3)<br/> .S TEMP(SEQ)=RIEN_U_NAME_U_PNAME<br/> S SEQ=""<br/> F  S SEQ=$O(TEMP(SEQ)) Q:SEQ=""  D<br/> .S IC=IC+1,ORY(IC)="R"_U_TEMP(SEQ)<br/> S SUB=0 K TEMP<br/> F  S SUB=$O(^PXRMD(811.7,CIEN,10,SUB)) Q:SUB=""  D<br/> .S DATA=$G(^PXRMD(811.7,CIEN,10,SUB,0)) Q:DATA=""<br/> .S IEN=$P(DATA,U) Q:'IEN<br/> .S SEQ=$P(DATA,U,2),TEMP(SEQ)=IEN<br/> S SEQ=""<br/> F  S SEQ=$O(TEMP(SEQ)) Q:SEQ=""  D<br/> .S SUB=TEMP(SEQ) Q:'SUB<br/> .S NAME=$P($G(^PXRMD(811.7,SUB,0)),U) Q:NAME=""<br/> .S IC=IC+1,ORY(IC)="C"_U_SUB_U_NAME```{:/}
  Leading comment lines | {::nomarkdown}Input parameter Category ien [#811.7]{:/}
 
 ### Input Parameters
@@ -64,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

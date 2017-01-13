@@ -22,14 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return list of available contract/sharing/research sources
  Input Parameters | {::nomarkdown}SRCTYPE{:/}
- Lines | ```
- S ORX=0
- F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D
- . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)
- . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q
- . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1)```
+ Lines | ```{::nomarkdown} S ORX=0<br/> F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D<br/> . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)<br/> . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q<br/> . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

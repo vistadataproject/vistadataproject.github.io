@@ -22,15 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return comments for a problem - MULTI-DIVISIONAL
  Input Parameters | {::nomarkdown}PIFN{:/}
- Lines | ```
- N FAC,NIFN,NOTE,NOTECNT
- S NOTECNT=0,FAC=0
- F  S FAC=$O(^AUPNPROB(PIFN,11,FAC)) Q:+FAC'>0  D
- . S NIFN=0
- . F  S NIFN=$O(^AUPNPROB(PIFN,11,FAC,11,NIFN)) Q:NIFN'>0  D
- . . Q:$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,4)'="A"
- . . S NOTE=$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,3)
- . . S NOTECNT=NOTECNT+1,ORY(NOTECNT)=NOTE```
+ Lines | ```{::nomarkdown} N FAC,NIFN,NOTE,NOTECNT<br/> S NOTECNT=0,FAC=0<br/> F  S FAC=$O(^AUPNPROB(PIFN,11,FAC)) Q:+FAC'>0  D<br/> . S NIFN=0<br/> . F  S NIFN=$O(^AUPNPROB(PIFN,11,FAC,11,NIFN)) Q:NIFN'>0  D<br/> . . Q:$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,4)'="A"<br/> . . S NOTE=$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,3)<br/> . . S NOTECNT=NOTECNT+1,ORY(NOTECNT)=NOTE```{:/}
 
 ### Input Parameters
 
@@ -41,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

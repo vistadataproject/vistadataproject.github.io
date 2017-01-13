@@ -22,16 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a patient's current location
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- N X
- S X=$G(^DPT(DFN,.102)),REC=0
- I X S X=$P($G(^DGPM(X,0)),U,6)
- I X S REC=+$G(^DIC(42,X,44))
- I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)
- I X S X=$P($G(^DIC(42,X,0)),U,3)
- S $P(REC,U,3)=X```
+ Lines | ```{::nomarkdown} N X<br/> S X=$G(^DPT(DFN,.102)),REC=0<br/> I X S X=$P($G(^DGPM(X,0)),U,6)<br/> I X S REC=+$G(^DIC(42,X,44))<br/> I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)<br/> I X S X=$P($G(^DIC(42,X,0)),U,3)<br/> S $P(REC,U,3)=X```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

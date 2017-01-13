@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | 1: user can manual release delayed orders 0: can't
  Input Parameters | {::nomarkdown}USER{:/}
- Lines | ```
- S ORY=$$CANREL^OREV3```
+ Lines | ```{::nomarkdown} S ORY=$$CANREL^OREV3```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

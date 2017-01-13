@@ -22,8 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get Print Name of a Document
  Input Parameters | {::nomarkdown}TIUTYPE{:/}
- Lines | ```
- S TIUY=$$PNAME^TIULC1(TIUTYPE)```
+ Lines | ```{::nomarkdown} S TIUY=$$PNAME^TIULC1(TIUTYPE)```{:/}
 
 ### Input Parameters
 
@@ -34,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

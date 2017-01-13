@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | OK to order OP Meals from this location
  Input Parameters | {::nomarkdown}ORLOC{:/}
- Lines | ```
- I 'ORLOC S ORY=0 Q
- S ORY=$S($L($$NFSLOC^FHOMAPI(ORLOC))>0:1,1:0)
-```
+ Lines | ```{::nomarkdown} I 'ORLOC S ORY=0 Q<br/> S ORY=$S($L($$NFSLOC^FHOMAPI(ORLOC))>0:1,1:0)<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

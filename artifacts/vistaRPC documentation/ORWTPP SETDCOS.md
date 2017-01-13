@@ -22,11 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC
  Input Parameters | {::nomarkdown}VALUE{:/}
- Lines | ```
- D SETDCOS^ORWTPN(.OK,VALUE,DUZ)```
+ Lines | ```{::nomarkdown} D SETDCOS^ORWTPN(.OK,VALUE,DUZ)```{:/}
  Leading comment lines | {::nomarkdown}set default cosigner for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

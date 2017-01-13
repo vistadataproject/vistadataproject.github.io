@@ -22,18 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Was the document committed to the database?
  Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | ```
- N TIUD12,TIUD13,TIUEBY,TIUAUT,TIUECS S TIUY=1
- S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD13=$G(^(13))
- S TIUEBY=$P(TIUD13,U,2),TIUAUT=$P(TIUD12,U,2),TIUECS=$P(TIUD12,U,8)
- I $D(^TIU(8925,"ASAVE",+DUZ,TIUDA)) D  Q
- . S TIUY="0^You appear to have been disconnected..."
- I DUZ'=TIUEBY,(TIUEBY'=TIUAUT),$D(^TIU(8925,"ASAVE",+TIUEBY,TIUDA)) D  Q
- . S TIUY="0^The transcriber appears to have been disconnected..."
- I DUZ'=TIUAUT,$D(^TIU(8925,"ASAVE",+TIUAUT,TIUDA)) D  Q
- . S TIUY="0^The author appears to have been disconnected..."
- I DUZ'=TIUECS,$D(^TIU(8925,"ASAVE",+TIUECS,TIUDA)) D  Q
- . S TIUY="0^The expected cosigner appears to have been disconnected..."```
+ Lines | ```{::nomarkdown} N TIUD12,TIUD13,TIUEBY,TIUAUT,TIUECS S TIUY=1<br/> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD13=$G(^(13))<br/> S TIUEBY=$P(TIUD13,U,2),TIUAUT=$P(TIUD12,U,2),TIUECS=$P(TIUD12,U,8)<br/> I $D(^TIU(8925,"ASAVE",+DUZ,TIUDA)) D  Q<br/> . S TIUY="0^You appear to have been disconnected..."<br/> I DUZ'=TIUEBY,(TIUEBY'=TIUAUT),$D(^TIU(8925,"ASAVE",+TIUEBY,TIUDA)) D  Q<br/> . S TIUY="0^The transcriber appears to have been disconnected..."<br/> I DUZ'=TIUAUT,$D(^TIU(8925,"ASAVE",+TIUAUT,TIUDA)) D  Q<br/> . S TIUY="0^The author appears to have been disconnected..."<br/> I DUZ'=TIUECS,$D(^TIU(8925,"ASAVE",+TIUECS,TIUDA)) D  Q<br/> . S TIUY="0^The expected cosigner appears to have been disconnected..."```{:/}
 
 ### Input Parameters
 
@@ -44,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

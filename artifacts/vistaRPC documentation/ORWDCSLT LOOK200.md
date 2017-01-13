@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Lookup a person in 200
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```
- S VAL=$$FIND1^DIC(200,"","",X)
-```
+ Lines | ```{::nomarkdown} S VAL=$$FIND1^DIC(200,"","",X)<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

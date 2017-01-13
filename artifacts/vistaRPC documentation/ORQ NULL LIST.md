@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a null list
- Lines | ```
- S ORQY(1)=""
-```
+ Lines | ```{::nomarkdown} S ORQY(1)=""<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

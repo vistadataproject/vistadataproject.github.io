@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return text instructing user when LC changed to WC on accept/release
  Input Parameters | {::nomarkdown}ORLOC{:/}
- Lines | ```
- N ORDIV,ORSVC
- S ORDIV=DUZ(2)
- S ORSVC=+$G(^VA(200,DUZ,5))
- I ORSVC S ORTXT=$$GET^XPAR(+$G(ORLOC)_";SC("_"^"_+$G(ORSVC)_";DIC(49,^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","ORWLR LC CHANGED TO WC",1,"I")
- E  S ORTXT=$$GET^XPAR(+$G(ORLOC)_";SC("_"^SVC^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","ORWLR LC CHANGED TO WC",1,"I")
-```
+ Lines | ```{::nomarkdown} N ORDIV,ORSVC<br/> S ORDIV=DUZ(2)<br/> S ORSVC=+$G(^VA(200,DUZ,5))<br/> I ORSVC S ORTXT=$$GET^XPAR(+$G(ORLOC)_";SC("_"^"_+$G(ORSVC)_";DIC(49,^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","ORWLR LC CHANGED TO WC",1,"I")<br/> E  S ORTXT=$$GET^XPAR(+$G(ORLOC)_";SC("_"^SVC^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","ORWLR LC CHANGED TO WC",1,"I")<br/>```{:/}
 
 ### Input Parameters
 
@@ -39,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

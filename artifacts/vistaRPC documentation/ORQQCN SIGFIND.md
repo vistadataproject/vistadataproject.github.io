@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Significant findings
  Input Parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
- Lines | ```
- S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION```
+ Lines | ```{::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

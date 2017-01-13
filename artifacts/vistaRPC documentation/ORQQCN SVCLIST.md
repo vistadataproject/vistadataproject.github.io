@@ -22,15 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return a set of consult services in long list format
  Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Lines | ```
- N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR
- S I=0,CNT=44,ORSVC=""
- D SVCTREE^ORQQCN2(.Y,1)
- F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D
- . S ORTMP(ORSVC)=Y(I)
- F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D
- . S ORSTR=ORTMP(FROM)
- . S ORY(I)=ORSTR```
+ Lines | ```{::nomarkdown} N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br/> S I=0,CNT=44,ORSVC=""<br/> D SVCTREE^ORQQCN2(.Y,1)<br/> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br/> . S ORTMP(ORSVC)=Y(I)<br/> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br/> . S ORSTR=ORTMP(FROM)<br/> . S ORY(I)=ORSTR```{:/}
  Leading comment lines | {::nomarkdown}.ORY=returned list, FROM=text to $O from, DIR=$O direction,{:/}
 
 ### Input Parameters
@@ -43,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

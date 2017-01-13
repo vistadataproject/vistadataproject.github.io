@@ -22,10 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Is user a provider?
  Input Parameters | {::nomarkdown}USER<br/>DATE{:/}
- Lines | ```
- S USER=$G(USER,DUZ)
- S DATE=$G(DATE,DT)
- S TIUY=$$PROVIDER^TIUPXAP1(USER,DATE)```
+ Lines | ```{::nomarkdown} S USER=$G(USER,DUZ)<br/> S DATE=$G(DATE,DT)<br/> S TIUY=$$PROVIDER^TIUPXAP1(USER,DATE)```{:/}
  Leading comment lines | {::nomarkdown}Checks USR CLASS PROVIDER AND 200 Person Class<br/>DATE must not include time (for ISA^USRLM){:/}
 
 ### Input Parameters
@@ -38,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

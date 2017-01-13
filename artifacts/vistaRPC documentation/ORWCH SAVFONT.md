@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | save the user's preferred font size
  Input Parameters | {::nomarkdown}VAL{:/}
- Lines | ```
- D EN^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,VAL,.ORERR)```
+ Lines | ```{::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,VAL,.ORERR)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

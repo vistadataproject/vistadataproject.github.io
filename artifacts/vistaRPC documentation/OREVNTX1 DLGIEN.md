@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return Order Dialog IEN based on name
  Input Parameters | {::nomarkdown}DLGNAME{:/}
- Lines | ```
- Q:'$D(^ORD(101.41,"B",DLGNAME))
- S ORY=$O(^ORD(101.41,"B",DLGNAME,0))```
+ Lines | ```{::nomarkdown} Q:'$D(^ORD(101.41,"B",DLGNAME))<br/> S ORY=$O(^ORD(101.41,"B",DLGNAME,0))```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

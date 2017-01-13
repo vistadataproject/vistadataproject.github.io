@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get user's division
  Input Parameters | {::nomarkdown}USR{:/}
- Lines | ```
- S ORY=0
- S:$G(DUZ(2)) ORY=DUZ(2)```
+ Lines | ```{::nomarkdown} S ORY=0<br/> S:$G(DUZ(2)) ORY=DUZ(2)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

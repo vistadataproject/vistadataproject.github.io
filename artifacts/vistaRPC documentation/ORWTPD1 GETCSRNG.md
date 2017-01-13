@@ -21,19 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get user's Cover Sheet date range defaults.
- Lines | ```
- N ORSRV,ORUSER,ORVAL
- S ORUSER=DUZ
- S ORVAL=""
- S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U) ; Get S/S.
- S ORVAL=$$GET^XPAR("USR.`"_ORUSER_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQCSDR CS RANGE START",1,"I")
- S ORVAL=$$CHKRNG(ORVAL,999)
- S VAL=ORVAL_U,ORVAL=""
- S ORVAL=$$GET^XPAR("USR.`"_ORUSER_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQCSDR CS RANGE STOP",1,"I")
- S ORVAL=$$CHKRNG(ORVAL,999)
- S VAL=VAL_ORVAL```
+ Lines | ```{::nomarkdown} N ORSRV,ORUSER,ORVAL<br/> S ORUSER=DUZ<br/> S ORVAL=""<br/> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U) ; Get S/S.<br/> S ORVAL=$$GET^XPAR("USR.`"_ORUSER_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQCSDR CS RANGE START",1,"I")<br/> S ORVAL=$$CHKRNG(ORVAL,999)<br/> S VAL=ORVAL_U,ORVAL=""<br/> S ORVAL=$$GET^XPAR("USR.`"_ORUSER_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQCSDR CS RANGE STOP",1,"I")<br/> S ORVAL=$$CHKRNG(ORVAL,999)<br/> S VAL=VAL_ORVAL```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC FOR SITEVAL
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```
- S RET=$$SITEVAL```
+ Lines | ```{::nomarkdown} S RET=$$SITEVAL```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Unlock pt for ordering
  Input Parameters | {::nomarkdown}DFN{:/}
- Lines | ```
- D UNLOCK^ORX2(DFN) S OK=1```
+ Lines | ```{::nomarkdown} D UNLOCK^ORX2(DFN) S OK=1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,14 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return a monograph
  Input Parameters | {::nomarkdown}ORMONO{:/}
- Lines | ```
- Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))
- K ^TMP($J,"ORMONORPC")
- M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")
- K ^TMP($J,"ORMONORPC",0)
- S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""```
+ Lines | ```{::nomarkdown} Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))<br/> K ^TMP($J,"ORMONORPC")<br/> M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")<br/> K ^TMP($J,"ORMONORPC",0)<br/> S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

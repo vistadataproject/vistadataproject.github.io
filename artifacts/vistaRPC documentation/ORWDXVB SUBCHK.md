@@ -22,13 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Check to see if selected test is a Blood Component or a Diagnostic Test
  Input Parameters | {::nomarkdown}TSTNM{:/}
- Lines | ```
- S OROOT=""
- Q:'$L($G(TSTNM))
- I $O(^ORD(101.43,"S.VBT",TSTNM,0)) S OROOT="t"
- I $O(^ORD(101.43,"S.VBC",TSTNM,0)) S OROOT="c"```
+ Lines | ```{::nomarkdown} S OROOT=""<br/> Q:'$L($G(TSTNM))<br/> I $O(^ORD(101.43,"S.VBT",TSTNM,0)) S OROOT="t"<br/> I $O(^ORD(101.43,"S.VBC",TSTNM,0)) S OROOT="c"```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

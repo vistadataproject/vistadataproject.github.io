@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Default Templates for the current user
- Lines | ```
- N TIUTMP,TIUERR
- D GETLST^XPAR(.TIUTMP,"USR","TIU DEFAULT TEMPLATES","Q",.TIUERR) ;2263
- S TIUY=$P($G(TIUTMP(1)),U,2)```
+ Lines | ```{::nomarkdown} N TIUTMP,TIUERR<br/> D GETLST^XPAR(.TIUTMP,"USR","TIU DEFAULT TEMPLATES","Q",.TIUERR) ;2263<br/> S TIUY=$P($G(TIUTMP(1)),U,2)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | from Remote Procedure file
  Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>SPEC<br/>TEST{:/}
- Lines | ```
- D CHART^LR7OGC(.ORY,DFN,DATE1,DATE2,SPEC,TEST)```
+ Lines | ```{::nomarkdown} D CHART^LR7OGC(.ORY,DFN,DATE1,DATE2,SPEC,TEST)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -21,14 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return lab results search date range for an outpatient
- Lines | ```
- N DIFF,SDT,EDT,ORSRV
- S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)
- S DIFF=$$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE OUTPT",1,"E")
- S:+$G(DIFF)<1 DIFF=14  ;if no default defined use 14 days
- S ORY=DIFF```
+ Lines | ```{::nomarkdown} N DIFF,SDT,EDT,ORSRV<br/> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)<br/> S DIFF=$$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE OUTPT",1,"E")<br/> S:+$G(DIFF)<1 DIFF=14  ;if no default defined use 14 days<br/> S ORY=DIFF```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

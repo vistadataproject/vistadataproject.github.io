@@ -22,11 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | renew/restore an alert/notification
  Input Parameters | {::nomarkdown}XQAID{:/}
- Lines | ```
- Q:$L($G(XQAID))<1
- K XQAKILL
- I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100
- S ORY=1```
+ Lines | ```{::nomarkdown} Q:$L($G(XQAID))<1<br/> K XQAKILL<br/> I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100<br/> S ORY=1```{:/}
 
 ### Input Parameters
 
@@ -37,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

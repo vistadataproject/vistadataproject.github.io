@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | See if this is a mental health clinic
  Input Parameters | {::nomarkdown}ORIEN{:/}
- Lines | ```
- I $T(MHCLIN^SDUTL2)="" S ORY=1
- E  S ORY=$$MHCLIN^SDUTL2(ORIEN)```
+ Lines | ```{::nomarkdown} I $T(MHCLIN^SDUTL2)="" S ORY=1<br/> E  S ORY=$$MHCLIN^SDUTL2(ORIEN)```{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

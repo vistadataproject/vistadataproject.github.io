@@ -22,26 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return progress notes for a patient's visit
  Input Parameters | {::nomarkdown}ORPT<br/>ORVIEN{:/}
- Lines | ```
- N ORTY,ORY,TDT,ORVI
- S TDT=0
- K ^TMP("TIULIST",$J)  ;DBIA 2812
- D NOTES^TIUSRVLV(.ORY,ORVIEN)  ;DBIA 2812
- I '+$O(^TMP("TIULIST",$J,0)) D  Q
- . S ORVY(1)="No Progress Notes for this visit."
- S ORVI=1
- F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D
- . N SEQ,TIEN S SEQ=0
- . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D
- . . N TSEQ K ^TMP("TIUVIEW",$J)  ;DBIA 2944
- . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)
- . . D TGET^TIUSRVR1(.ORTY,TIEN)  ;DBIA 2944
- . . S TSEQ=0
- . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D
- . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1
- . . S ORVY(ORVI)=" ",ORVI=ORVI+1
- . . S ORVY(ORVI)=" ",ORVI=ORVI+1
- K ^TMP("TIULIST",$J)```
+ Lines | ```{::nomarkdown} N ORTY,ORY,TDT,ORVI<br/> S TDT=0<br/> K ^TMP("TIULIST",$J)  ;DBIA 2812<br/> D NOTES^TIUSRVLV(.ORY,ORVIEN)  ;DBIA 2812<br/> I '+$O(^TMP("TIULIST",$J,0)) D  Q<br/> . S ORVY(1)="No Progress Notes for this visit."<br/> S ORVI=1<br/> F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D<br/> . N SEQ,TIEN S SEQ=0<br/> . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D<br/> . . N TSEQ K ^TMP("TIUVIEW",$J)  ;DBIA 2944<br/> . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)<br/> . . D TGET^TIUSRVR1(.ORTY,TIEN)  ;DBIA 2944<br/> . . S TSEQ=0<br/> . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D<br/> . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1<br/> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br/> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br/> K ^TMP("TIULIST",$J)```{:/}
 
 ### Input Parameters
 
@@ -53,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

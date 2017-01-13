@@ -21,8 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Input Parameters | {::nomarkdown}RESULT<br/>ORES{:/}
- Lines | ```
- D MHR^PXRMRPCC(.ORY,RESULT,.ORES)```
+ Lines | ```{::nomarkdown} D MHR^PXRMRPCC(.ORY,RESULT,.ORES)```{:/}
  Leading comment lines | {::nomarkdown}DBIA 3080{:/}
 
 ### Input Parameters
@@ -35,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

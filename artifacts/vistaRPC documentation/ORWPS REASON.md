@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Non-VA Med Statement/Reasons
- Lines | ```
- N ORE
- D GETLST^XPAR(.ORY,"ALL","ORWD NONVA REASON","E")
-```
+ Lines | ```{::nomarkdown} N ORE<br/> D GETLST^XPAR(.ORY,"ALL","ORWD NONVA REASON","E")<br/>```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

@@ -22,9 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | GUI RPC CALL
  Input Parameters | {::nomarkdown}ORCIEN{:/}
- Lines | ```
- S Y=$$GET^XPAR(ORCIEN_";VA(200,","OR BILLING AWARENESS BY USER",1,"Q")
-```
+ Lines | ```{::nomarkdown} S Y=$$GET^XPAR(ORCIEN_";VA(200,","OR BILLING AWARENESS BY USER",1,"Q")<br/>```{:/}
  Leading comment lines | {::nomarkdown}Get Billing Awareness By User parameter value<br/>Gets and returns the value of the Enabled Billing Awareness By User<br/>parameter assigned to a provider.<br/>Input Variable:<br/>ORCIEN    Ordering Clinician's Internal Entry Number<br/>Output Variable:<br/>Y         Parameter value, 1 if enabled, 0 if disabled{:/}
 
 ### Input Parameters
@@ -36,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

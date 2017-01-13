@@ -21,14 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get last collection time used from ^TMP("ORECALL",$J) array
- Lines | ```
- N ORDIALOG,ORTYPE,ORTIME
- S ORDIALOG=$O(^ORD(101.41,"B","LR OTHER LAB TESTS",0))
- S ORTYPE=$O(^ORD(101.41,"B","OR GTX COLLECTION TYPE",0))
- S ORTIME=$O(^ORD(101.41,"B","OR GTX START DATE/TIME",0))
- S ORY=$$RECALL^ORCD(ORTYPE,1)_U_$$RECALL^ORCD(ORTIME,1)```
+ Lines | ```{::nomarkdown} N ORDIALOG,ORTYPE,ORTIME<br/> S ORDIALOG=$O(^ORD(101.41,"B","LR OTHER LAB TESTS",0))<br/> S ORTYPE=$O(^ORD(101.41,"B","OR GTX COLLECTION TYPE",0))<br/> S ORTIME=$O(^ORD(101.41,"B","OR GTX START DATE/TIME",0))<br/> S ORY=$$RECALL^ORCD(ORTYPE,1)_U_$$RECALL^ORCD(ORTIME,1)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

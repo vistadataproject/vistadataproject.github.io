@@ -22,23 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get data in preparation for editing a record
  Input Parameters | {::nomarkdown}TIUDA<br/>DR{:/}
- Lines | ```
- N CANEDIT,ERR,D0,DIQ2,TIUARR,TIUF,TIUI
- I +$D(^TIU(8925,TIUDA,"TEMP")),'+$$IFTEXT() D MERGTEXT(TIUDA)
- K ^TMP("TIUEDIT",$J),^TMP("TIULQ",$J)
- S TIUY=$NA(^TMP("TIUEDIT",$J)),TIUARR=$NA(^TMP("TIULQ",$J))
- S CANEDIT=$$CANDO^TIULP(TIUDA,"EDIT RECORD")
- I +CANEDIT'>0 S ^TMP("TIUEDIT",$J,0)="~"_$P(CANEDIT,U,2) Q
- D EXTRACT^TIULQ(TIUDA,TIUARR,.ERR,$G(DR),"",1,"IE",1)
- I $D(ERR) M TIUY=ERR Q
- S TIUF=0
- F  S TIUF=$O(@TIUARR@(TIUDA,TIUF)) Q:+TIUF'>0  D
- . S ^TMP("TIUEDIT",$J,TIUF)=TIUF_U_@TIUARR@(TIUDA,TIUF,"I")_U_@TIUARR@(TIUDA,TIUF,"E")
- S TIUI=0
- F  S TIUI=$O(@TIUARR@(TIUDA,"TEXT",TIUI)) Q:+TIUI'>0  D
- . S ^TMP("TIUEDIT",$J,"TEXT",TIUI)=$G(@TIUARR@(TIUDA,"TEXT",TIUI,0))
- S ^TMP("TIUEDIT",$J,"TEXT",0)="$TXT",^TIU(8925,"ASAVE",DUZ,TIUDA)=""
- K @TIUARR```
+ Lines | ```{::nomarkdown} N CANEDIT,ERR,D0,DIQ2,TIUARR,TIUF,TIUI<br/> I +$D(^TIU(8925,TIUDA,"TEMP")),'+$$IFTEXT() D MERGTEXT(TIUDA)<br/> K ^TMP("TIUEDIT",$J),^TMP("TIULQ",$J)<br/> S TIUY=$NA(^TMP("TIUEDIT",$J)),TIUARR=$NA(^TMP("TIULQ",$J))<br/> S CANEDIT=$$CANDO^TIULP(TIUDA,"EDIT RECORD")<br/> I +CANEDIT'>0 S ^TMP("TIUEDIT",$J,0)="~"_$P(CANEDIT,U,2) Q<br/> D EXTRACT^TIULQ(TIUDA,TIUARR,.ERR,$G(DR),"",1,"IE",1)<br/> I $D(ERR) M TIUY=ERR Q<br/> S TIUF=0<br/> F  S TIUF=$O(@TIUARR@(TIUDA,TIUF)) Q:+TIUF'>0  D<br/> . S ^TMP("TIUEDIT",$J,TIUF)=TIUF_U_@TIUARR@(TIUDA,TIUF,"I")_U_@TIUARR@(TIUDA,TIUF,"E")<br/> S TIUI=0<br/> F  S TIUI=$O(@TIUARR@(TIUDA,"TEXT",TIUI)) Q:+TIUI'>0  D<br/> . S ^TMP("TIUEDIT",$J,"TEXT",TIUI)=$G(@TIUARR@(TIUDA,"TEXT",TIUI,0))<br/> S ^TMP("TIUEDIT",$J,"TEXT",0)="$TXT",^TIU(8925,"ASAVE",DUZ,TIUDA)=""<br/> K @TIUARR```{:/}
 
 ### Input Parameters
 
@@ -50,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

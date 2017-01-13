@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Place order on hold
  Input Parameters | {::nomarkdown}ORID<br/>ORNP{:/}
- Lines | ```
- N ACTDA
- S ACTDA=$$ACTION^ORCSAVE("HD",+ORID,ORNP)
- D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA)```
+ Lines | ```{::nomarkdown} N ACTDA<br/> S ACTDA=$$ACTION^ORCSAVE("HD",+ORID,ORNP)<br/> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,12 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | RPC that evaluates whether or not a Title is under
  Input Parameters | {::nomarkdown}TITLE{:/}
- Lines | ```
- N TIUCLASS
- I +$G(TITLE)'>0 S TIUY=0 G ISCPQ
- S TIUCLASS=+$$CLASS
- I +TIUCLASS'>0 S TIUY=0 G ISCPQ
- S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
+ Lines | ```{::nomarkdown} N TIUCLASS<br/> I +$G(TITLE)'>0 S TIUY=0 G ISCPQ<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 G ISCPQ<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{:/}
  Leading comment lines | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
 
 ### Input Parameters
@@ -39,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

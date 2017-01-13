@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | save new default patient list settings (X=type^ien^sdt
  Input Parameters | {::nomarkdown}X{:/}
- Lines | ```
- G SAVDFLT^ORWPT1```
+ Lines | ```{::nomarkdown} G SAVDFLT^ORWPT1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

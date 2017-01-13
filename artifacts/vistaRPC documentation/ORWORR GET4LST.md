@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | get order fields TEMP
  Input Parameters | {::nomarkdown}TXTVW<br/>ORYD<br/>IFNLST{:/}
- Lines | ```
- G GET41```
+ Lines | ```{::nomarkdown} G GET41```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -22,14 +22,10 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Should workload requirement be skipped for this note's visit?
  Input Parameters | {::nomarkdown}ORDOCIEN{:/}
- Lines | ```
- N ORTIU
- D DOCPARM^TIUSRVP1(.ORTIU,ORDOCIEN)          ; DBIA #4331
- S ORY=+$$CHKWKL^TIUPXAP2(ORDOCIEN,ORTIU(0))  ; DBIA #4332
-```
+ Lines | ```{::nomarkdown} N ORTIU<br/> D DOCPARM^TIUSRVP1(.ORTIU,ORDOCIEN)          ; DBIA #4331<br/> S ORY=+$$CHKWKL^TIUPXAP2(ORDOCIEN,ORTIU(0))  ; DBIA #4332<br/>```{:/}
  Leading comment lines | {::nomarkdown}RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS<br/>1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

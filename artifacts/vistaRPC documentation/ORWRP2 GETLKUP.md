@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Adhoc lookup selection
- Lines | ```
- S ORY=$$GET^XPAR("ALL","ORWRP ADHOC LOOKUP",1,"I")```
+ Lines | ```{::nomarkdown} S ORY=$$GET^XPAR("ALL","ORWRP ADHOC LOOKUP",1,"I")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

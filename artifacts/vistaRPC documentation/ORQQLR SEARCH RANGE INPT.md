@@ -22,17 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | return lab results search date range for an inpatient
  Input Parameters | {::nomarkdown}ORPT{:/}
- Lines | ```
- N DIFF,SDT,EDT,ORSRV,ORLOC
- I +$G(ORPT)>0 D
- .N DFN S DFN=ORPT,VA200="" D OERR^VADPT
- .I +$G(VAIN(4))>0 S ORLOC=+$G(^DIC(42,+$G(VAIN(4)),44))
- .K VA200,VAIN
- S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)
- S DIFF=$$GET^XPAR("USR^LOC.`"_$G(ORLOC)_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE INPT",1,"E")
- S:+$G(DIFF)<1 DIFF=2  ;if no default defined use 2 days
- S ORY=DIFF
-```
+ Lines | ```{::nomarkdown} N DIFF,SDT,EDT,ORSRV,ORLOC<br/> I +$G(ORPT)>0 D<br/> .N DFN S DFN=ORPT,VA200="" D OERR^VADPT<br/> .I +$G(VAIN(4))>0 S ORLOC=+$G(^DIC(42,+$G(VAIN(4)),44))<br/> .K VA200,VAIN<br/> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)<br/> S DIFF=$$GET^XPAR("USR^LOC.`"_$G(ORLOC)_"^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE INPT",1,"E")<br/> S:+$G(DIFF)<1 DIFF=2  ;if no default defined use 2 days<br/> S ORY=DIFF<br/>```{:/}
 
 ### Input Parameters
 
@@ -43,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

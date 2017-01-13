@@ -22,19 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get candidate Rroviders from person file
  Input Parameters | {::nomarkdown}FLAG<br/>N<br/>FROM<br/>PART{:/}
- Lines | ```
- N LV,NS,RV,IEN
- S RV=$NAME(LV("DILIST","ID"))
- IF +$G(N)=0 S N=50
- S FLAG=$G(FLAG),N=$G(N),FROM=$G(FROM),PART=$G(PART)
- D LIST^DIC(200,"",".01;1",FLAG,N,FROM,PART,"","","","LV")
- S NS=""
- F  S NS=$O(LV("DILIST",1,NS)) Q:NS=""  D
- . S IEN=""
- . S IEN=$O(^VA(200,"B",@RV@(NS,.01),IEN)) ; compliments of PROV^ORQPTQ
- . S LST(NS)=IEN_U_@RV@(NS,.01)  ; initials_U_@RV@(NS,1)```
+ Lines | ```{::nomarkdown} N LV,NS,RV,IEN<br/> S RV=$NAME(LV("DILIST","ID"))<br/> IF +$G(N)=0 S N=50<br/> S FLAG=$G(FLAG),N=$G(N),FROM=$G(FROM),PART=$G(PART)<br/> D LIST^DIC(200,"",".01;1",FLAG,N,FROM,PART,"","","","LV")<br/> S NS=""<br/> F  S NS=$O(LV("DILIST",1,NS)) Q:NS=""  D<br/> . S IEN=""<br/> . S IEN=$O(^VA(200,"B",@RV@(NS,.01),IEN)) ; compliments of PROV^ORQPTQ<br/> . S LST(NS)=IEN_U_@RV@(NS,.01)  ; initials_U_@RV@(NS,1)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:28 am
+ Generated on January 13th 2017, 7:11:26 am

@@ -21,16 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns a list of all reminder dialogs usable in templates
- Lines | ```
- N SRV
- K TIUY
- D RDACCUM(.TIUY,"USR","N")
- S SRV=$$GETSRV(DUZ)
- D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")
- D RDACCUM(.TIUY,"DIV","N")
- D RDACCUM(.TIUY,"SYS","N")```
+ Lines | ```{::nomarkdown} N SRV<br/> K TIUY<br/> D RDACCUM(.TIUY,"USR","N")<br/> S SRV=$$GETSRV(DUZ)<br/> D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")<br/> D RDACCUM(.TIUY,"DIV","N")<br/> D RDACCUM(.TIUY,"SYS","N")```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

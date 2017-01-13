@@ -22,12 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Set global to share DFN with other applications
  Input Parameters | {::nomarkdown}IP<br/>HWND<br/>DFN{:/}
- Lines | ```
- K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)
- K ^TMP("ORWDXMQ",$J)
- S ^TMP("ORWCHART",$J,IP,HWND)=DFN```
+ Lines | ```{::nomarkdown} K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)<br/> K ^TMP("ORWDXMQ",$J)<br/> S ^TMP("ORWCHART",$J,IP,HWND)=DFN```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

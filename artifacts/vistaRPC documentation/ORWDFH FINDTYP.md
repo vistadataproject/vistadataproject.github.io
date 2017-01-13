@@ -22,11 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Return type of dietetics order based on display group
  Input Parameters | {::nomarkdown}DGRP{:/}
- Lines | ```
- S VAL=$P($G(^ORD(100.98,DGRP,0)),U,3)
- S:VAL="D AO" VAL="A" S VAL=$E(VAL)```
+ Lines | ```{::nomarkdown} S VAL=$P($G(^ORD(100.98,DGRP,0)),U,3)<br/> S:VAL="D AO" VAL="A" S VAL=$E(VAL)```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am

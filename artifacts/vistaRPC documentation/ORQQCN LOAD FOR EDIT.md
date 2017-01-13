@@ -22,13 +22,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Load a cancelled consult/procedure for editing
  Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | ```
- Q:+$G(GMRCO)=0
- N ORNODE,I
- S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0
- D SEND^GMRCGUIC(GMRCO,ORNODE)
- S Y=ORNODE
-```
+ Lines | ```{::nomarkdown} Q:+$G(GMRCO)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0<br/> D SEND^GMRCGUIC(GMRCO,ORNODE)<br/> S Y=ORNODE<br/>```{:/}
 
 ### Input Parameters
 
@@ -39,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:27 am

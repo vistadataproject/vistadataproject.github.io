@@ -22,10 +22,9 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | List of dlgs for writing orders
  Input Parameters | {::nomarkdown}LOC{:/}
- Lines | ```
- G WRLST1^ORWDX1```
+ Lines | ```{::nomarkdown} G WRLST1^ORWDX1```{:/}
 
 
 
 
- Generated on January 13th 2017, 6:55:29 am
+ Generated on January 13th 2017, 7:11:26 am
