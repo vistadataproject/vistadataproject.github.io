@@ -21,11 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GMV CONVERT DATE [RPC entry point]
-
- Leading comment lines | {::nomarkdown}INPUT VARIABLE:
-GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER
-OUTPUT VARIABLE:
-RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME{:/}
+ Leading comment lines | {::nomarkdown}INPUT VARIABLE:<br/>GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER<br/>OUTPUT VARIABLE:<br/>RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME{:/}
 
 ### Input Parameters
 
@@ -36,4 +32,4 @@ RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -22,7 +22,6 @@ title: VISTA RPC documentation
  --- | --- 
  Method comment | Get ICD codeset version (i.e., ICD-9-CM or ICD-10-CM)
 
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,4 +31,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

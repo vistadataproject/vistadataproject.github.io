@@ -21,11 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC that evaluates whether or not a Title is under
-
- Leading comment lines | {::nomarkdown}the CLINICAL PROCEDURES Class
-Input  -- TITLE    TIU Document Definition file (#8925.1) IEN
-(May be Document Class instead of Title.)
-Output -- TIUY     1=True and 0=False{:/}
+ Leading comment lines | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
 
 ### Input Parameters
 
@@ -36,4 +32,4 @@ Output -- TIUY     1=True and 0=False{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,7 +21,6 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return def lists for dialog
-
  Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt){:/}
 
 ### Input Parameters
@@ -35,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

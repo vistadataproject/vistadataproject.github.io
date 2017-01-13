@@ -21,13 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
-
- Leading comment lines | {::nomarkdown}For Event Delay Order
-ALOC: Delay Event's default location
-ADIV: Delay Event's default division
-get dialog definition specific to lab{:/}
+ Leading comment lines | {::nomarkdown}For Event Delay Order<br/>ALOC: Delay Event's default location<br/>ADIV: Delay Event's default division<br/>get dialog definition specific to lab{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

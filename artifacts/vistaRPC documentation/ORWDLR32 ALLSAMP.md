@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
-
- Leading comment lines | {::nomarkdown}returns all collection samples
-n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName{:/}
+ Leading comment lines | {::nomarkdown}returns all collection samples<br/>n^SampIEN^SampName^SpecPtr^TubeTop^^^LabCollect^^SpecName{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

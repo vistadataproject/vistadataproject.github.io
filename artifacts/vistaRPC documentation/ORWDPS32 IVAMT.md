@@ -13,7 +13,7 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}IVAMT{:/}
  routine | [ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}Returns return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV solutions.{:/}
+ description | {::nomarkdown}Returns return UNITS^AMOUNT ^AMOUNT^AMOUNT... for IV solutions.{:/}
 
 
 ### Method description
@@ -25,5 +25,4 @@ title: VISTA RPC documentation
 
 
 
-
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

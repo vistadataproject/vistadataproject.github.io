@@ -13,7 +13,7 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}TIUDA{:/}
  routine | [MAGGSCP](http://code.osehra.org/dox/Routine_MAGGSCP_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown} Imaging Capture workstation calls this RPC to get a TIU IEN to attach images to. This call simply calls a CP API, which accepts DFN, Consult #, Visit String (optional), Complete|Do not Complete the | transaction.{:/}
+ description | {::nomarkdown} Imaging Capture workstation calls this RPC to get a TIU IEN to attach images to. This call simply calls a CP API, which accepts DFN, Consult #, Visit String (optional), CompleteDo not Complete the  transaction.{:/}
 
 ### Input Parameters
 
@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

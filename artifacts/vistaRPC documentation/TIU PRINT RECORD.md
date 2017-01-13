@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Remote Procedure to print a record
-
- Leading comment lines | {::nomarkdown}TIUFLAG > 1 Chart Copy, TIUFLAG = 2 Electronically signed Chart Copy
-TIUWIN = 1 Windows printer, 0 or "" VistA printer{:/}
+ Leading comment lines | {::nomarkdown}TIUFLAG > 1 Chart Copy, TIUFLAG = 2 Electronically signed Chart Copy<br/>TIUWIN = 1 Windows printer, 0 or "" VistA printer{:/}
 
 ### Input Parameters
 
@@ -36,4 +34,4 @@ TIUWIN = 1 Windows printer, 0 or "" VistA printer{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

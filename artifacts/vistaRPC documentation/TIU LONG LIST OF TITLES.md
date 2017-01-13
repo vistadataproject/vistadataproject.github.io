@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | long list of titles for a class
-
- Leading comment lines | {::nomarkdown}.Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,
-DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
+ Leading comment lines | {::nomarkdown}.Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,<br/>DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
 
 ### Input Parameters
 
@@ -36,4 +34,4 @@ DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

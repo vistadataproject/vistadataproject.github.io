@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GET FILTERED LIST OF INPATIENT SERVICES
-
  Leading comment lines | {::nomarkdown}RETURN NAMES FOR LIST OF IEN PASSED IN{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

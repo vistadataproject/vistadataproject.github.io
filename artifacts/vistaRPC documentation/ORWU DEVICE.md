@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a subset of entries from the Device file
-
- Leading comment lines | {::nomarkdown}.LST(n)=IEN;Name^DisplayName^Location^RMar^PLen
-FROM=text to $O from, DIR=$O direction{:/}
+ Leading comment lines | {::nomarkdown}.LST(n)=IEN;Name^DisplayName^Location^RMar^PLen<br/>FROM=text to $O from, DIR=$O direction{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

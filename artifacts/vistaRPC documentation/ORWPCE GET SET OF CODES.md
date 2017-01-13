@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | gets set of codes
-
  Leading comment lines | {::nomarkdown}ORWLST(n)=code^text for code{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

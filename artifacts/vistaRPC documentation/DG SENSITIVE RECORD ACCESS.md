@@ -21,26 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC/API entry point for patient sensitive & record access checks
-
- Leading comment lines | {::nomarkdown}Output array (Required)
-RESULT(1)= -1-RPC/API failed
-Required variable not defined
-0-No display/action required
-Not accessing own, employee, or sensitive record
-1-Display warning message
-Sensitive and DG SENSITIVITY key holder
-or Employee and DG SECURITY OFFICER key holder
-2-Display warning message/require OK to continue
-Sensitive and not a DG SENSITIVITY key holder
-Employee and not a DG SECURITY OFFICER key holder
-3-Access to record denied
-Accessing own record
-4-Access to Patient (#2) file records denied
-SSN not defined
-RESULT(2-10) = error or display messages
-Input parameters: DFN = Patient file entry (Required)
-DGMSG = If 1, generate message (optional)
-DGOPT  = Option name^Menu text (Optional){:/}
+ Leading comment lines | {::nomarkdown}Output array (Required)<br/>RESULT(1)= -1-RPC/API failed<br/>Required variable not defined<br/>0-No display/action required<br/>Not accessing own, employee, or sensitive record<br/>1-Display warning message<br/>Sensitive and DG SENSITIVITY key holder<br/>or Employee and DG SECURITY OFFICER key holder<br/>2-Display warning message/require OK to continue<br/>Sensitive and not a DG SENSITIVITY key holder<br/>Employee and not a DG SECURITY OFFICER key holder<br/>3-Access to record denied<br/>Accessing own record<br/>4-Access to Patient (#2) file records denied<br/>SSN not defined<br/>RESULT(2-10) = error or display messages<br/>Input parameters: DFN = Patient file entry (Required)<br/>DGMSG = If 1, generate message (optional)<br/>DGOPT  = Option name^Menu text (Optional){:/}
 
 ### Input Parameters
 
@@ -53,4 +34,4 @@ DGOPT  = Option name^Menu text (Optional){:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

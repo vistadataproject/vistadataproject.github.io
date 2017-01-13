@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default reason for request for service
-
- Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5
-ORDFN=patient, if RESOLVE=1
-RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
+ Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 ### Input Parameters
 
@@ -37,4 +34,4 @@ RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

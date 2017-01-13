@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | check if the current user has an active PIN lock
-
  Leading comment lines | {::nomarkdown}ORY=1 if there is an active lock and ORY=0 if no active lock{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

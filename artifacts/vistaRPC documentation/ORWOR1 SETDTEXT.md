@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set Digital Text data into file 100 & return the array
-
- Leading comment lines | {::nomarkdown}ORDER = ORIFN;ACTION
-ORDEA = Schedule of Drug (2-5)
-ORSIGNER = DUZ of signer{:/}
+ Leading comment lines | {::nomarkdown}ORDER = ORIFN;ACTION<br/>ORDEA = Schedule of Drug (2-5)<br/>ORSIGNER = DUZ of signer{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

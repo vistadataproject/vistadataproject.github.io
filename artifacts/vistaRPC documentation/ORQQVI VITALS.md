@@ -21,13 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return patient's most recent vital measurements
-
- Leading comment lines | {::nomarkdown}in date range
-ORY: return variable, results are returned in the format:
-vital measurement ien^vital type^rate^date/time taken
-DFN: patient identifier from Patient File [#2]
-F1: starting date/time range
-F2: ending date/time range{:/}
+ Leading comment lines | {::nomarkdown}in date range<br/>ORY: return variable, results are returned in the format:<br/>vital measurement ien^vital type^rate^date/time taken<br/>DFN: patient identifier from Patient File [#2]<br/>F1: starting date/time range<br/>F2: ending date/time range{:/}
 
 ### Input Parameters
 
@@ -40,4 +34,4 @@ F2: ending date/time range{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

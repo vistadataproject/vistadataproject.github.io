@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | UPDATE A PROBLEM RECORD
-
- Leading comment lines | {::nomarkdown}Does essentially same job as EDSAVE above, however does not handle edits to comments
-or addition of multiple comments.
-Use initially just for status updates.{:/}
+ Leading comment lines | {::nomarkdown}Does essentially same job as EDSAVE above, however does not handle edits to comments<br/>or addition of multiple comments.<br/>Use initially just for status updates.{:/}
 
 ### Input Parameters
 
@@ -35,4 +32,4 @@ Use initially just for status updates.{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

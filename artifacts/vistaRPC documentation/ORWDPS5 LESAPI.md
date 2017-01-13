@@ -21,15 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call LES Api from inside CPRS for validating changed lab order
-
- Leading comment lines | {::nomarkdown}FLDS = DFN^TEST^ORL^ORNP^ORDT
-DFN:  Patient DFN (pointer to #2)
-TEST: Lab Test IFN (pointer to #101.43)
-ORL:  Patient Location (pointer to #44)
-ORNP: Provider IEN (pointer to #200)
-ORDT: Collection date/time (fileman format){:/}
+ Leading comment lines | {::nomarkdown}FLDS = DFN^TEST^ORL^ORNP^ORDT<br/>DFN:  Patient DFN (pointer to #2)<br/>TEST: Lab Test IFN (pointer to #101.43)<br/>ORL:  Patient Location (pointer to #44)<br/>ORNP: Provider IEN (pointer to #200)<br/>ORDT: Collection date/time (fileman format){:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Has Author signed?
-
- Leading comment lines | {::nomarkdown}if TIUY =
-0 = Author has NOT signed & TIUUSR = Expected Cosigner
-1 = Author HAS signed or TIUUSR '= Expected Cosigner{:/}
+ Leading comment lines | {::nomarkdown}if TIUY =<br/>0 = Author has NOT signed & TIUUSR = Expected Cosigner<br/>1 = Author HAS signed or TIUUSR '= Expected Cosigner{:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

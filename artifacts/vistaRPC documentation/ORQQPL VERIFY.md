@@ -21,12 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | verify a transcribed problem
-
- Leading comment lines | {::nomarkdown}RETURN:  ;(consistent with UPDATE function)
-SUCCESS:
-RETURN>0, RETURN(0)=""
-FAILURE:
-RETURN<0, RETURN(0)=verbose error message{:/}
+ Leading comment lines | {::nomarkdown}RETURN:  ;(consistent with UPDATE function)<br/>SUCCESS:<br/>RETURN>0, RETURN(0)=""<br/>FAILURE:<br/>RETURN<0, RETURN(0)=verbose error message{:/}
 
 ### Input Parameters
 
@@ -37,4 +32,4 @@ RETURN<0, RETURN(0)=verbose error message{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

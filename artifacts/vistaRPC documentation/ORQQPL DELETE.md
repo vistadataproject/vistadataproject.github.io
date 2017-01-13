@@ -21,7 +21,6 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DELETE A PROBLEM
-
  Leading comment lines | {::nomarkdown}From GMPL1 - silent version{:/}
 
 ### Input Parameters
@@ -36,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

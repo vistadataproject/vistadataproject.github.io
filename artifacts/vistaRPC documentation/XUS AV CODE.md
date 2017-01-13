@@ -21,11 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC. XUS CVC - IA #6296
-
- Leading comment lines | {::nomarkdown}Check a users access
-Return R(0)=DUZ, R(1)=(0=OK, 1,2...=Can't sign-on for some reason)
-R(2)=verify needs changing, R(3)=Message, R(4)=0, R(5)=msg cnt, R(5+n)
-R(R(5)+6)=# div user must select from, R(R(5)+6+n)=div{:/}
+ Leading comment lines | {::nomarkdown}Check a users access<br/>Return R(0)=DUZ, R(1)=(0=OK, 1,2...=Can't sign-on for some reason)<br/>R(2)=verify needs changing, R(3)=Message, R(4)=0, R(5)=msg cnt, R(5+n)<br/>R(R(5)+6)=# div user must select from, R(R(5)+6+n)=div{:/}
 
 ### Input Parameters
 
@@ -36,4 +32,4 @@ R(R(5)+6)=# div user must select from, R(R(5)+6+n)=div{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

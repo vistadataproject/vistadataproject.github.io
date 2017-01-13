@@ -21,22 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | main
-
- Leading comment lines | {::nomarkdown}--- Call with:  TIUY     - RETURN ARRAY pass by reference
-CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1
-CONTEXT  - 1=All Signed (by PT),
-- 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))
-- 3="Uncosigned (by PT&EXPECTED COSIGNER
-- 4="Signed notes (by PT&selected author)
-- 5="Signed notes (by PT&date range)
-DFN      - Pointer to Patient (#2)
-[EARLY]   - FM date/time to begin search
-[LATE]    - FM date/time to end search
-[PERSON]  - Pointer to file 200 (DUZ if not passed)
-[OCCLIM]  - Occurrence Limit (optional)
-[SEQUENCE]- "A"=ascending (Regular date/time)
-- "D"=descending (Reverse date/time) (dflt)
-[INCUND]  - Boolean: include undictated & untranscribed{:/}
+ Leading comment lines | {::nomarkdown}--- Call with:  TIUY     - RETURN ARRAY pass by reference<br/>CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1<br/>CONTEXT  - 1=All Signed (by PT),<br/>- 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))<br/>- 3="Uncosigned (by PT&EXPECTED COSIGNER<br/>- 4="Signed notes (by PT&selected author)<br/>- 5="Signed notes (by PT&date range)<br/>DFN      - Pointer to Patient (#2)<br/>[EARLY]   - FM date/time to begin search<br/>[LATE]    - FM date/time to end search<br/>[PERSON]  - Pointer to file 200 (DUZ if not passed)<br/>[OCCLIM]  - Occurrence Limit (optional)<br/>[SEQUENCE]- "A"=ascending (Regular date/time)<br/>- "D"=descending (Reverse date/time) (dflt)<br/>[INCUND]  - Boolean: include undictated & untranscribed{:/}
 
 ### Input Parameters
 
@@ -56,4 +41,4 @@ DFN      - Pointer to Patient (#2)
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

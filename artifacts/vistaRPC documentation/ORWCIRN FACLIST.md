@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return list of remote facilities for patient
-
  Leading comment lines | {::nomarkdown}Check to see if CIRN PD/MPI installed{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

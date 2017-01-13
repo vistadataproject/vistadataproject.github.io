@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | generic user information for seeding VistaUser object.
-
  Leading comment lines | {::nomarkdown}Entry point for 'XUS GET USER INFO' RPC{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

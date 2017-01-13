@@ -21,12 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | [Procedure] Main RPC call tag
-
- Leading comment lines | {::nomarkdown}RPC: [GMV USER]
-Input parameters
-1. RESULTS [Reference/Required] RPC Return array
-2. OPTION [Literal/Required] RPC Option to execute
-3. DATA [Literal/Required] Other data as required for call{:/}
+ Leading comment lines | {::nomarkdown}RPC: [GMV USER]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
 
 ### Input Parameters
 
@@ -38,4 +33,4 @@ Input parameters
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

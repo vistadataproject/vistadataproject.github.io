@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
-
- Leading comment lines | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user
-I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
+ Leading comment lines | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user<br/>I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

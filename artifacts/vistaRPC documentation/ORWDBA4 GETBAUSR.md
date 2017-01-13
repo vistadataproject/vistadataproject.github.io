@@ -21,14 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GUI RPC CALL
-
- Leading comment lines | {::nomarkdown}Get Billing Awareness By User parameter value
-Gets and returns the value of the Enabled Billing Awareness By User
-parameter assigned to a provider.
-Input Variable:
-ORCIEN    Ordering Clinician's Internal Entry Number
-Output Variable:
-Y         Parameter value, 1 if enabled, 0 if disabled{:/}
+ Leading comment lines | {::nomarkdown}Get Billing Awareness By User parameter value<br/>Gets and returns the value of the Enabled Billing Awareness By User<br/>parameter assigned to a provider.<br/>Input Variable:<br/>ORCIEN    Ordering Clinician's Internal Entry Number<br/>Output Variable:<br/>Y         Parameter value, 1 if enabled, 0 if disabled{:/}
 
 ### Input Parameters
 
@@ -39,4 +32,4 @@ Y         Parameter value, 1 if enabled, 0 if disabled{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a set of entries from xref in REF
-
- Leading comment lines | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction,
-REF=subscript indirection global ref including xref,
-GBL=standard FM global ref, SCR=reference to screen in 101.41{:/}
+ Leading comment lines | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction,<br/>REF=subscript indirection global ref including xref,<br/>GBL=standard FM global ref, SCR=reference to screen in 101.41{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

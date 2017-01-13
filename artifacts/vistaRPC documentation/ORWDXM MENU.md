@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return menu contents for an order dialog
-
- Leading comment lines | {::nomarkdown}LST(0)=name^# cols^path switch^^^ Key Variables (pieces 6-20)
-LST(n)=col^row^type^ien^formid^autoaccept^display text^mnemonic
-^displayonly{:/}
+ Leading comment lines | {::nomarkdown}LST(0)=name^# cols^path switch^^^ Key Variables (pieces 6-20)<br/>LST(n)=col^row^type^ien^formid^autoaccept^display text^mnemonic<br/>^displayonly{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

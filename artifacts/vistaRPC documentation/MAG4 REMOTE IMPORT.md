@@ -21,7 +21,6 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC [MAG4 REMOTE IMPORT]
-
  Leading comment lines | {::nomarkdown}Import Images from a Windows App, by sending an array.{:/}
 
 ### Input Parameters
@@ -33,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

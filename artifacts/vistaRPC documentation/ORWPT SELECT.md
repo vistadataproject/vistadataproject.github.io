@@ -21,14 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Selects patient & returns key information
-
- Leading comment lines | {::nomarkdown}1    2   3   4    5      6    7    8       9       10      11  12
-NAME^SEX^DOB^SSN^LOCIEN^LOCNM^RMBD^CWAD^SENSITIVE^ADMITTED^CONV^SC^
-13  14  15  16  17
-SC%^ICN^AGE^TS^TSSVC
-for CCOW (RV - 2/27/03)  name="-1", location=error message{:/}
+ Leading comment lines | {::nomarkdown}1    2   3   4    5      6    7    8       9       10      11  12<br/>NAME^SEX^DOB^SSN^LOCIEN^LOCNM^RMBD^CWAD^SENSITIVE^ADMITTED^CONV^SC^<br/>13  14  15  16  17<br/>SC%^ICN^AGE^TS^TSSVC<br/>for CCOW (RV - 2/27/03)  name="-1", location=error message{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

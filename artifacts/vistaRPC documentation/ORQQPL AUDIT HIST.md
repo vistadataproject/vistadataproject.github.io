@@ -21,7 +21,6 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GET AUDIT HISTORY
-
  Leading comment lines | {::nomarkdown}taken from EN^GMPLDISP{:/}
 
 ### Input Parameters
@@ -33,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

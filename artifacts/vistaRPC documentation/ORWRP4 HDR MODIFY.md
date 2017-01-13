@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Extract/Modify data from the HDR
-
- Leading comment lines | {::nomarkdown}HANDLE=Remote Broker ID in ^XTMP(HANDLE,"D",
-ID=Report ID found in field .02 file 101.24{:/}
+ Leading comment lines | {::nomarkdown}HANDLE=Remote Broker ID in ^XTMP(HANDLE,"D",<br/>ID=Report ID found in field .02 file 101.24{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ ID=Report ID found in field .02 file 101.24{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

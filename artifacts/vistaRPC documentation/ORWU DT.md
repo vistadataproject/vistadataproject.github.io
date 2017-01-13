@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Internal Fileman Date/Time
-
  Leading comment lines | {::nomarkdown}change the '00:00' that could be passed so Fileman doesn't reject{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

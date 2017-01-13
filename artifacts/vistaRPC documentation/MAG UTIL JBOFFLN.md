@@ -13,7 +13,7 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}LINE{:/}
  routine | [MAGSDOFL](http://code.osehra.org/dox/Routine_MAGSDOFL_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Track Offline JukeBox images | Take Image files Offline This Remote Prcedure will add the new entry in MAGQUEUE(2006.033).The platter volume name will be used to index with IMAGE file IEN.{:/}
+ description | {::nomarkdown}Track Offline JukeBox images  Take Image files Offline This Remote Prcedure will add the new entry in MAGQUEUE(2006.033).The platter volume name will be used to index with IMAGE file IEN.{:/}
 
 ### Input Parameters
 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

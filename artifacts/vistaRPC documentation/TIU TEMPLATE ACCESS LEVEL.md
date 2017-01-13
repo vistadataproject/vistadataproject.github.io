@@ -21,14 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Template Access level of User
-
- Leading comment lines | {::nomarkdown}Return Values:
-0 = FULL ACCESS
-1 = READ ONLY
-2 = NO ACCESS
-3 = SHARED TEMPLATES EDITOR - ACCESS PARAMETERS DO NOT APPLY{:/}
+ Leading comment lines | {::nomarkdown}Return Values:<br/>0 = FULL ACCESS<br/>1 = READ ONLY<br/>2 = NO ACCESS<br/>3 = SHARED TEMPLATES EDITOR - ACCESS PARAMETERS DO NOT APPLY{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

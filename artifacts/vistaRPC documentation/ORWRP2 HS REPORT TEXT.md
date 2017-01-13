@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Build Report from array of Components passed in COMPS
-
- Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS REPORT TEXT
-ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA){:/}
+ Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS REPORT TEXT<br/>ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA){:/}
 
 ### Input Parameters
 
@@ -34,4 +32,4 @@ ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,D
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

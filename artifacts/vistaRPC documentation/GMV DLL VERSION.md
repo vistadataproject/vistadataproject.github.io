@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
-
- Leading comment lines | {::nomarkdown}RESULT = variable name to return check
-GMVX = dll name and version date/time
-Returns yes or no  {:/}
+ Leading comment lines | {::nomarkdown}RESULT = variable name to return check<br/>GMVX = dll name and version date/time<br/>Returns yes or no  {:/}
 
 ### Input Parameters
 
@@ -35,4 +32,4 @@ Returns yes or no  {:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

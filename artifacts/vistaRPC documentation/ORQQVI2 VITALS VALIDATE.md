@@ -20,12 +20,9 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Leading comment lines | {::nomarkdown}Given the array ORQDATA passed in by PCE Device Interface whose
-format is described in the PCE Device Interface documentation, this
-procedure will validate the Vitals data.  If the data is invalid,
-the procedure will return the errors in the form given above.{:/}
+ Leading comment lines | {::nomarkdown}Given the array ORQDATA passed in by PCE Device Interface whose<br/>format is described in the PCE Device Interface documentation, this<br/>procedure will validate the Vitals data.  If the data is invalid,<br/>the procedure will return the errors in the form given above.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

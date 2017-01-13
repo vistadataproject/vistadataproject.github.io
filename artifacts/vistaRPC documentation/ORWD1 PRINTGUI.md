@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | File|Print orders from GUI
-
  Leading comment lines | {::nomarkdown}ORRACT is set here to identify this as a manual reprint{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

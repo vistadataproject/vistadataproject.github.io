@@ -21,13 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check for a 1 time only doc
-
- Leading comment lines | {::nomarkdown}TIUY    =    return value
-= 0 if can add more than one or none already exist
-= 1 if cannot add more than one and one already exists
-DOCTYP  =    Pointer to ^TUI(8925.1,   TIU DOCUMENT DEFINITION
-DFN     =    Patient IEN
-VISIT   =    Visit String "LOC;VDATE;VTYP"{:/}
+ Leading comment lines | {::nomarkdown}TIUY    =    return value<br/>= 0 if can add more than one or none already exist<br/>= 1 if cannot add more than one and one already exists<br/>DOCTYP  =    Pointer to ^TUI(8925.1,   TIU DOCUMENT DEFINITION<br/>DFN     =    Patient IEN<br/>VISIT   =    Visit String "LOC;VDATE;VTYP"{:/}
 
 ### Input Parameters
 
@@ -40,4 +34,4 @@ VISIT   =    Visit String "LOC;VDATE;VTYP"{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

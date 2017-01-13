@@ -21,13 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Change ITEMs of a group, class, or root
-
- Leading comment lines | {::nomarkdown}Receives:
-TIUDA=IEN of TEMPLATE record
-TIUX(SEQ)=IEN of item
-Returns:
-SUCCESS(SEQ)=IEN of item if successful, or
-0^ Explanatory message if not{:/}
+ Leading comment lines | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
 
 ### Input Parameters
 
@@ -39,4 +33,4 @@ SUCCESS(SEQ)=IEN of item if successful, or
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

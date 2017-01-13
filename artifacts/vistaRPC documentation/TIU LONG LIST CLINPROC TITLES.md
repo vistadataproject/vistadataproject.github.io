@@ -21,14 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC that serves data to a longlist of selectable Titles
-
- Leading comment lines | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is
-scrolling
-DIR      Direction from which the longlist is scrolling
-from the reference Title  (Optional- default 1)
-Output -- Y        An array of the 44 nearest Titles to that indicated
-by the user in the direction passed by the longlist
-component{:/}
+ Leading comment lines | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is<br/>scrolling<br/>DIR      Direction from which the longlist is scrolling<br/>from the reference Title  (Optional- default 1)<br/>Output -- Y        An array of the 44 nearest Titles to that indicated<br/>by the user in the direction passed by the longlist<br/>component{:/}
 
 ### Input Parameters
 
@@ -40,4 +33,4 @@ component{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

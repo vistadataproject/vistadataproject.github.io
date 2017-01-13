@@ -21,7 +21,6 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
-
  Leading comment lines | {::nomarkdown}called by ORB FOLLOW-UP api:{:/}
 
 ### Input Parameters
@@ -33,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return external values for encounter
-
  Leading comment lines | {::nomarkdown}LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

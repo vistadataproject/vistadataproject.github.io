@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
-
- Leading comment lines | {::nomarkdown}get fields for single order
-.LST(n)=described above in GET
-IFN=internal entry # for order{:/}
+ Leading comment lines | {::nomarkdown}get fields for single order<br/>.LST(n)=described above in GET<br/>IFN=internal entry # for order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

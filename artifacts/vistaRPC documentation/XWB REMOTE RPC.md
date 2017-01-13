@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call a remote RPC
-
- Leading comment lines | {::nomarkdown}with 1-10 parameters.
-(This reworked EN1 emtry point replaces the original EN1 entry point,
-which was renamed OLDEN1.){:/}
+ Leading comment lines | {::nomarkdown}with 1-10 parameters.<br/>(This reworked EN1 emtry point replaces the original EN1 entry point,<br/>which was renamed OLDEN1.){:/}
 
 ### Input Parameters
 
@@ -38,4 +35,4 @@ which was renamed OLDEN1.){:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

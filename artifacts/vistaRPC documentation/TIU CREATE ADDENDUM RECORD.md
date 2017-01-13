@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Create addendum
-
- Leading comment lines | {::nomarkdown}For backward compatibility
-Use MAKEADD^TIUSRVP2 now, please{:/}
+ Leading comment lines | {::nomarkdown}For backward compatibility<br/>Use MAKEADD^TIUSRVP2 now, please{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ Use MAKEADD^TIUSRVP2 now, please{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

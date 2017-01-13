@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return list of patient orders
-
- Leading comment lines | {::nomarkdown}return PATIENT's orders for a display GROUP of type FLAG
-between start (ORSDT) and end dates (OREDT)
-dates can be in Fileman or T, T-14 formats{:/}
+ Leading comment lines | {::nomarkdown}return PATIENT's orders for a display GROUP of type FLAG<br/>between start (ORSDT) and end dates (OREDT)<br/>dates can be in Fileman or T, T-14 formats{:/}
 
 ### Input Parameters
 
@@ -39,4 +36,4 @@ dates can be in Fileman or T, T-14 formats{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

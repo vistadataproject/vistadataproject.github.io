@@ -21,17 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return user's default division, if specified.
-
- Leading comment lines | {::nomarkdown}Variables used:
-ORDD   = Default division.
-ORDIV  = Division holder variable.
-ORGOOD = Flag for successful default division found.
-ORIEN  = IEN of user.
-ORZ    = Memory array storage variable.
-ORZERR = Error storage for LIST^DIC call.
-Y      = Returned value.{:/}
+ Leading comment lines | {::nomarkdown}Variables used:<br/>ORDD   = Default division.<br/>ORDIV  = Division holder variable.<br/>ORGOOD = Flag for successful default division found.<br/>ORIEN  = IEN of user.<br/>ORZ    = Memory array storage variable.<br/>ORZERR = Error storage for LIST^DIC call.<br/>Y      = Returned value.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

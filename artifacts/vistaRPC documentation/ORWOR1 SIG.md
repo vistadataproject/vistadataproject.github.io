@@ -21,17 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Store the signature.
-
- Leading comment lines | {::nomarkdown}ID = orifn;action
-X1 = Hash
-X2 = Length of the array
-X3 = Datafile (100)
-X4 = Provider DUZ
-ORX5 = Array for the sig
-X6 = CRLURL
-X7 = DFN{:/}
+ Leading comment lines | {::nomarkdown}ID = orifn;action<br/>X1 = Hash<br/>X2 = Length of the array<br/>X3 = Datafile (100)<br/>X4 = Provider DUZ<br/>ORX5 = Array for the sig<br/>X6 = CRLURL<br/>X7 = DFN{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

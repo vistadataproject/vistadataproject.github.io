@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return fields for renew action
-
  Leading comment lines | {::nomarkdown}LST(0)=RenewType^Start^Stop^Refills^Pickup  LST(n)=Comments{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,13 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is code active on the given date?
-
- Leading comment lines | {::nomarkdown}Remote procedure:  ORWPCE ACTIVE CODE
-ORCODE = ICD or CPT code to be checked
-ORAPP  = "ICD", "GMPX" or "CHP"
-ORDATE = Date to be checked (defaults to current date){:/}
+ Leading comment lines | {::nomarkdown}Remote procedure:  ORWPCE ACTIVE CODE<br/>ORCODE = ICD or CPT code to be checked<br/>ORAPP  = "ICD", "GMPX" or "CHP"<br/>ORDATE = Date to be checked (defaults to current date){:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

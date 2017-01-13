@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print report entry point
-
- Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT REPORT
-See RPC definition for details on input and output parameters{:/}
+ Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
 
@@ -39,4 +37,4 @@ See RPC definition for details on input and output parameters{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

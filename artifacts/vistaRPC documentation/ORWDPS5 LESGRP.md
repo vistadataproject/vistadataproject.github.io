@@ -21,13 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return all of the orders' display groups LES checked
-
- Leading comment lines | {::nomarkdown}LES will check the orders belonging to the following display group
-1.  LAB/LABORATORY  ORDERS
-2.  BLOOD BANK      ORDERS
-3.  CHEMISTRY       ORDERS{:/}
+ Leading comment lines | {::nomarkdown}LES will check the orders belonging to the following display group<br/>1.  LAB/LABORATORY  ORDERS<br/>2.  BLOOD BANK      ORDERS<br/>3.  CHEMISTRY       ORDERS{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

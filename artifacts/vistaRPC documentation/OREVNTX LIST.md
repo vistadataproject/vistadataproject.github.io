@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns all processed events for patient DFN as
-
- Leading comment lines | {::nomarkdown}ORY(#) = PatEvtIEN ^ Display Text ^ EvtDateTime
-in reverse chronological order{:/}
+ Leading comment lines | {::nomarkdown}ORY(#) = PatEvtIEN ^ Display Text ^ EvtDateTime<br/>in reverse chronological order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

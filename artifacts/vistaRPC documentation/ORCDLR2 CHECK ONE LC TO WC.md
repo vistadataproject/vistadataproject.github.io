@@ -21,18 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get child times, validate LC/IC
-
- Leading comment lines | {::nomarkdown}ORL   = Hospital Location file #44 vptr
-ORIFN = Orders file #100 ien
-or
-DATE  = Start date.time or "AM" or "NEXT"
-TYPE  = LC or I
-SCH   = Administration Schedule file #51.1 ien
-DUR   = # or "X"_#
-Will quit if OREVENT exists <can't check delayed orders>
-Returns ORY(n) = child start.time ^ 1 or 0 ^ [error message]{:/}
+ Leading comment lines | {::nomarkdown}ORL   = Hospital Location file #44 vptr<br/>ORIFN = Orders file #100 ien<br/>or<br/>DATE  = Start date.time or "AM" or "NEXT"<br/>TYPE  = LC or I<br/>SCH   = Administration Schedule file #51.1 ien<br/>DUR   = # or "X"_#<br/>Will quit if OREVENT exists <can't check delayed orders><br/>Returns ORY(n) = child start.time ^ 1 or 0 ^ [error message]{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

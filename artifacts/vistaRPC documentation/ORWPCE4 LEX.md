@@ -21,23 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return list after lexicon lookup
-
- Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user
-APP         (Required) The Lexicon APP parameter (e.g., "GMPX"
-for Problem List Subset, "10D" for ICD-10-CM, etc.
-[ORDATE]    (Optional) the date of interest (Defaults to TODAY - should
-be passed as DATE OF SERVICE if not TODAY)
-[ORXTND]    (Optional) Boolean flag specifying whether or not to
-use an extended search (Initial search is PL Subset
-of SCT, extended search is ICD (or 10D after impl.)
-(Defaults to 0 (FALSE))
-[ORINCSYN]  (Optional) Boolean flag specifying whether or not to
-include synonyms for SNOMED CT Concepts
-(Defaults to 0 (FALSE))
-Returns: LST=local array name passed by ref, which contains search result set as:
-<lvn>(1..n)=LEXIEN^PREFTEXT^CODESYS^CONCEPTID^ICDVER^DESIGID^PARENTSUBSCRIPT{:/}
+ Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user<br/>APP         (Required) The Lexicon APP parameter (e.g., "GMPX"<br/>for Problem List Subset, "10D" for ICD-10-CM, etc.<br/>[ORDATE]    (Optional) the date of interest (Defaults to TODAY - should<br/>be passed as DATE OF SERVICE if not TODAY)<br/>[ORXTND]    (Optional) Boolean flag specifying whether or not to<br/>use an extended search (Initial search is PL Subset<br/>of SCT, extended search is ICD (or 10D after impl.)<br/>(Defaults to 0 (FALSE))<br/>[ORINCSYN]  (Optional) Boolean flag specifying whether or not to<br/>include synonyms for SNOMED CT Concepts<br/>(Defaults to 0 (FALSE))<br/>Returns: LST=local array name passed by ref, which contains search result set as:<br/><lvn>(1..n)=LEXIEN^PREFTEXT^CODESYS^CONCEPTID^ICDVER^DESIGID^PARENTSUBSCRIPT{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

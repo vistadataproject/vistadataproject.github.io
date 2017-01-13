@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Should workload requirement be skipped for this note's visit?
-
- Leading comment lines | {::nomarkdown}RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS
-1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
+ Leading comment lines | {::nomarkdown}RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS<br/>1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

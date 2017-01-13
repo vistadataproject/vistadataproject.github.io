@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to retrieve the status of the Billing Awareness software
-
- Leading comment lines | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)
-Check for installation of CIDC ancillary build{:/}
+ Leading comment lines | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)<br/>Check for installation of CIDC ancillary build{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

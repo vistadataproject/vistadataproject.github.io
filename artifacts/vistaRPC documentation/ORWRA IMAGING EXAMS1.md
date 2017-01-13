@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return imaging exams
-
- Leading comment lines | {::nomarkdown}RPC: ORWRA IMAGING EXAMS1
-See RPC definition for details on input and output parameters{:/}
+ Leading comment lines | {::nomarkdown}RPC: ORWRA IMAGING EXAMS1<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
 
@@ -34,4 +32,4 @@ See RPC definition for details on input and output parameters{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

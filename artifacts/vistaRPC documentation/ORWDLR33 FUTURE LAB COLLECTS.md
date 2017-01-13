@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get # of days for future Lab Collects
-
- Leading comment lines | {::nomarkdown}For Event Delay Order
---ORLOC Event default location
---ORDIV Event default division{:/}
+ Leading comment lines | {::nomarkdown}For Event Delay Order<br/>--ORLOC Event default location<br/>--ORDIV Event default division{:/}
 
 ### Input Parameters
 
@@ -35,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

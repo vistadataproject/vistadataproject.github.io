@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GMV MARK ERROR [RPC entry point]
-
- Leading comment lines | {::nomarkdown}GMVDATA CONSISTS OF THE FOLLOWING DATA:
-FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT
-PATIENT^INVALID RECORD{:/}
+ Leading comment lines | {::nomarkdown}GMVDATA CONSISTS OF THE FOLLOWING DATA:<br/>FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT<br/>PATIENT^INVALID RECORD{:/}
 
 ### Input Parameters
 
@@ -35,4 +32,4 @@ PATIENT^INVALID RECORD{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,11 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns true if unresolved consults for user/pt
-
- Leading comment lines | {::nomarkdown}S ORY=0
-Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0
-S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473
-Q{:/}
+ Leading comment lines | {::nomarkdown}S ORY=0<br/>Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0<br/>S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/>Q{:/}
 
 ### Input Parameters
 
@@ -36,4 +32,4 @@ Q{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

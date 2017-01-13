@@ -21,16 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Input: <None>
-
- Leading comment lines | {::nomarkdown}Output: RESULT (see below for description)
-Similar to IMPORT^TIUSRVF; takes and parses XML fields to
-see if they have a matching field in the database.  Also resolves self
-referencing fields, and updates the XML.  Returns RESULT, which is a 
-list of fields in format ORIGINAL_FIELD_NAME^CODE^NEW_FIELD_NAME.
-If the CODE is 1 or 2, then the NEW_FIELD_NAME is blank.  If the CODE
-is 0, then the NEW_FIELD_NAME has the renamed field name.  In that 
-case, the XML has been updated with the new name where ever the 
-original name had occurred.{:/}
+ Leading comment lines | {::nomarkdown}Output: RESULT (see below for description)<br/>Similar to IMPORT^TIUSRVF; takes and parses XML fields to<br/>see if they have a matching field in the database.  Also resolves self<br/>referencing fields, and updates the XML.  Returns RESULT, which is a <br/>list of fields in format ORIGINAL_FIELD_NAME^CODE^NEW_FIELD_NAME.<br/>If the CODE is 1 or 2, then the NEW_FIELD_NAME is blank.  If the CODE<br/>is 0, then the NEW_FIELD_NAME has the renamed field name.  In that <br/>case, the XML has been updated with the new name where ever the <br/>original name had occurred.{:/}
 
 ### Input Parameters
 
@@ -41,4 +32,4 @@ original name had occurred.{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

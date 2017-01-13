@@ -21,16 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return report text
-
- Leading comment lines | {::nomarkdown}ROOT=Output in ^TMP("ORDATA",$J)
-DFN=Patient DFN ; ICN for remote sites
-RPTID=Unique report ID_";"_Remote ID_"~"_HSComponent for listview (ent;rtn;0;MaxOcc) or text (ent;rtn;#component;MaxOcc)
-HSTYPE=Health Sum Type
-DTRANGE=# days back from today
-EXAMID=Rad exam ID
-ALPHA=Start date
-OMEGA=End date
-RPC: ORWRP REPORT TEXT{:/}
+ Leading comment lines | {::nomarkdown}ROOT=Output in ^TMP("ORDATA",$J)<br/>DFN=Patient DFN ; ICN for remote sites<br/>RPTID=Unique report ID_";"_Remote ID_"~"_HSComponent for listview (ent;rtn;0;MaxOcc) or text (ent;rtn;#component;MaxOcc)<br/>HSTYPE=Health Sum Type<br/>DTRANGE=# days back from today<br/>EXAMID=Rad exam ID<br/>ALPHA=Start date<br/>OMEGA=End date<br/>RPC: ORWRP REPORT TEXT{:/}
 
 ### Input Parameters
 
@@ -45,4 +36,4 @@ RPC: ORWRP REPORT TEXT{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

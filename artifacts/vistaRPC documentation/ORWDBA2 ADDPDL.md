@@ -21,25 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Add to Personal Diagnosis List
-
- Leading comment lines | {::nomarkdown}Add a new personal diagnosis list or new ICD9 code to an existing
-personal diagnosis list for a clinician. It will filter out duplicate
-entries before updating an existing PDL.
-Input Variables:
-ORCIEN       Clinician Internal Entry Number
-ORDXA        Array of dx codes to be added to personal dx list
-format: ORDXA(#)=ICD9_Code^Lexicon_Expression_IEN
-Output Variable:
-Y            Return value, 1 successful, 0 unsuccessful
-Local Variables:
-DXI          Diagnosis Array Index
-DXIEN        Diagnosis Code Internal Entry Number
-EM           Error Message
-FDXR         Found Diagnoses Records Array
-FDXRI        Found Diagnoses Records Array Index
-IEN          Internal Entry Number
-PDL          Personal Diagnoses List Array
-PDLI         Personal Diagnoses List Array Index{:/}
+ Leading comment lines | {::nomarkdown}Add a new personal diagnosis list or new ICD9 code to an existing<br/>personal diagnosis list for a clinician. It will filter out duplicate<br/>entries before updating an existing PDL.<br/>Input Variables:<br/>ORCIEN       Clinician Internal Entry Number<br/>ORDXA        Array of dx codes to be added to personal dx list<br/>format: ORDXA(#)=ICD9_Code^Lexicon_Expression_IEN<br/>Output Variable:<br/>Y            Return value, 1 successful, 0 unsuccessful<br/>Local Variables:<br/>DXI          Diagnosis Array Index<br/>DXIEN        Diagnosis Code Internal Entry Number<br/>EM           Error Message<br/>FDXR         Found Diagnoses Records Array<br/>FDXRI        Found Diagnoses Records Array Index<br/>IEN          Internal Entry Number<br/>PDL          Personal Diagnoses List Array<br/>PDLI         Personal Diagnoses List Array Index{:/}
 
 ### Input Parameters
 
@@ -51,4 +33,4 @@ PDLI         Personal Diagnoses List Array Index{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

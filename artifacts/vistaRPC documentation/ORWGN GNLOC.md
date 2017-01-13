@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is valid GN location? 1: true 0: false
-
  Leading comment lines | {::nomarkdown}.ORY=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

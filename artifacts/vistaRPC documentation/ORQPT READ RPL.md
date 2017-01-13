@@ -21,19 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Read disk-based patient array from TMP.
-
- Leading comment lines | {::nomarkdown}Variables used:
-ORCNT   = Counter variable.
-ORDIR   = Direction to move through list.
-ORFROM  = Starting point from which to move through list.
-ORI     = Counter variable.
-ORIEN   = Record IEN holder.
-ORJ     = Job number to use in ^TMP global root.
-ORROOT  = ^TMP global file root.
-ORZ     = Temporary value holder.
-Y       = Returned array.{:/}
+ Leading comment lines | {::nomarkdown}Variables used:<br/>ORCNT   = Counter variable.<br/>ORDIR   = Direction to move through list.<br/>ORFROM  = Starting point from which to move through list.<br/>ORI     = Counter variable.<br/>ORIEN   = Record IEN holder.<br/>ORJ     = Job number to use in ^TMP global root.<br/>ORROOT  = ^TMP global file root.<br/>ORZ     = Temporary value holder.<br/>Y       = Returned array.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

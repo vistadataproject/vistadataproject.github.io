@@ -20,10 +20,9 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Leading comment lines | {::nomarkdown}ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,
-ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment{:/}
+ Leading comment lines | {::nomarkdown}ORVP=DFN, ORNP=Provider, ORL=Location, DLG=Order Dialog,<br/>ORDG=Display Group, ORIT=Quick Order Dialog, ORAPPT=Appointment{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

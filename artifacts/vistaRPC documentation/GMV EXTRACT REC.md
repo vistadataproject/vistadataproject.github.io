@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GMV EXTRACT REC [RPC entry point]
-
- Leading comment lines | {::nomarkdown}Returns data particular patient and date/time range in RESULT
-GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN{:/}
+ Leading comment lines | {::nomarkdown}Returns data particular patient and date/time range in RESULT<br/>GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN{:/}
 
 ### Input Parameters
 
@@ -34,4 +32,4 @@ GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

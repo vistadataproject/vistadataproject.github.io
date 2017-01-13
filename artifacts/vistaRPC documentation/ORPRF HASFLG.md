@@ -21,15 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Does patient PTDFN has flags
-
- Leading comment lines | {::nomarkdown}DBIA 3860: $$GETACT^DGPFAPI(PTDFN,.FLGDATA)
-Returns array ORY listing active assigned flags
-Array ORY has form:
-ORY(flagID) = flagID^flagname,CAT1
-where CAT1 is 1 if flag is cat 1, 0 if cat 2
-ORY = Num of items returned in array ORY = num of flags{:/}
+ Leading comment lines | {::nomarkdown}DBIA 3860: $$GETACT^DGPFAPI(PTDFN,.FLGDATA)<br/>Returns array ORY listing active assigned flags<br/>Array ORY has form:<br/>ORY(flagID) = flagID^flagname,CAT1<br/>where CAT1 is 1 if flag is cat 1, 0 if cat 2<br/>ORY = Num of items returned in array ORY = num of flags{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

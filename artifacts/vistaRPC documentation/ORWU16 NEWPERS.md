@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a bolus from the NEW PERSON file
-
  Leading comment lines | {::nomarkdown}.Return Array, Direction, Starting Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

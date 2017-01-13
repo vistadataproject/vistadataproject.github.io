@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Visit IEN ptr to #9000010
-
  Leading comment lines | {::nomarkdown}VSTSTR=HospLoc;DateTime;Category;PtIEN{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

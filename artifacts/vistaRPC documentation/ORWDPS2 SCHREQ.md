@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return 1 if schedule is required
-
  Leading comment lines | {::nomarkdown}OI=orderable item, RTE=ptr route, DRG=ptr dispense drug{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

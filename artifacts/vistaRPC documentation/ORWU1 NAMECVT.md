@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns text name(mixed-case) derived from IEN xref.
-
- Leading comment lines | {::nomarkdown}GRE/2002
-PKS-12/20/2002 Tag not presently used.
-Y=Returned value, IEN=Internal number{:/}
+ Leading comment lines | {::nomarkdown}GRE/2002<br/>PKS-12/20/2002 Tag not presently used.<br/>Y=Returned value, IEN=Internal number{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

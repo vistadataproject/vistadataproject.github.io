@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save Edit/Add of an allergy/adverse reaction
-
- Leading comment lines | {::nomarkdown}following patch check is made via GUI RPC call to ORWU PATCH instead
-I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q{:/}
+ Leading comment lines | {::nomarkdown}following patch check is made via GUI RPC call to ORWU PATCH instead<br/>I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -20,15 +20,7 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Leading comment lines | {::nomarkdown}(Set up for the DC Summary)
-(to use TIU doc requirments and USR PROVIDER)
-PARAMS from ORWU2 COSIGNER RPC call:
-.ORY=returned list.
-ORFROM=Starting name for this set.  
-ORDIR=Direction to move through the x-ref with $O.  
-ORDATE=Checks for an USR PROVIDER on this date (optional).
-ORTIUTYP is + of the 0 node of the 8925 docmt.  
-ORTIUDA is the docmt IEN,{:/}
+ Leading comment lines | {::nomarkdown}(Set up for the DC Summary)<br/>(to use TIU doc requirments and USR PROVIDER)<br/>PARAMS from ORWU2 COSIGNER RPC call:<br/>.ORY=returned list.<br/>ORFROM=Starting name for this set.  <br/>ORDIR=Direction to move through the x-ref with $O.  <br/>ORDATE=Checks for an USR PROVIDER on this date (optional).<br/>ORTIUTYP is + of the 0 node of the 8925 docmt.  <br/>ORTIUDA is the docmt IEN,{:/}
 
 ### Input Parameters
 
@@ -43,4 +35,4 @@ ORTIUDA is the docmt IEN,{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

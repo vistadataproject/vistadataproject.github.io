@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save the bounds for a particular control
-
  Leading comment lines | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

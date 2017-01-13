@@ -20,8 +20,7 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
- Leading comment lines | {::nomarkdown}D APPL^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078
-ORQQPXRM REMINDER CATEGORIES{:/}
+ Leading comment lines | {::nomarkdown}D APPL^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078<br/>ORQQPXRM REMINDER CATEGORIES{:/}
 
 ### Input Parameters
 
@@ -33,4 +32,4 @@ ORQQPXRM REMINDER CATEGORIES{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

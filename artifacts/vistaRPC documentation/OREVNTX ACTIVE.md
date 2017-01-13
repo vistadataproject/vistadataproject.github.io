@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns all active events [of TYPE] from #100.5
-
  Leading comment lines | {::nomarkdown}where TYPE=string containing any of the codes from the TYPE field{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

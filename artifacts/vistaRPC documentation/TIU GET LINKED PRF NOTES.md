@@ -21,20 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC gets SIGNED, LINKED PRF
-
- Leading comment lines | {::nomarkdown}notes titled TIUTTL for patient PTDFN
-Excludes Notes linked to Entered in Error (EIE) actions and
-notes linked to Erroneous actions (actions taken prior to
-EIE actions).
-Receives TIUY by ref; passes back
-TIUY = # of notes
-TIUY([Reverse][Incremented]InternalNoteDate) =
-NoteIEN^ActionName^ExternalNoteDate^AuthorName
-Requires PTDFN,TIUTTL
-Includes status Uncosigned, Completed, & Amended only.
-Optional REVERSE - Boolean Flag:
-1 - Sort notes by reverse chronological order
-0 (default) - Sort notes by chronological order{:/}
+ Leading comment lines | {::nomarkdown}notes titled TIUTTL for patient PTDFN<br/>Excludes Notes linked to Entered in Error (EIE) actions and<br/>notes linked to Erroneous actions (actions taken prior to<br/>EIE actions).<br/>Receives TIUY by ref; passes back<br/>TIUY = # of notes<br/>TIUY([Reverse][Incremented]InternalNoteDate) =<br/>NoteIEN^ActionName^ExternalNoteDate^AuthorName<br/>Requires PTDFN,TIUTTL<br/>Includes status Uncosigned, Completed, & Amended only.<br/>Optional REVERSE - Boolean Flag:<br/>1 - Sort notes by reverse chronological order<br/>0 (default) - Sort notes by chronological order{:/}
 
 ### Input Parameters
 
@@ -47,4 +34,4 @@ Optional REVERSE - Boolean Flag:
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,12 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC for compiling appropriate TxF's
-
- Leading comment lines | {::nomarkdown}RPC titled ORWDBA1 SCLST
-Y       =    Returned value
-DFN     =    Patient IEN
-ORLST   =    List of orders
-call for BA/TF{:/}
+ Leading comment lines | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
 
 ### Input Parameters
 
@@ -38,4 +33,4 @@ call for BA/TF{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

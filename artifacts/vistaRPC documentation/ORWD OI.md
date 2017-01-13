@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a bolus of orderable items
-
  Leading comment lines | {::nomarkdown}.Return Array, Cross Reference (S.xxx), Direction, Starting Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

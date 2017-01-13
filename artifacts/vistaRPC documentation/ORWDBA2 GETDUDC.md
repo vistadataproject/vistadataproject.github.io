@@ -21,35 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Day's Unique Diagnoses Codes
-
- Leading comment lines | {::nomarkdown}Gets all the unique ICD9 codes for the orders placed today by the
-clinician for this patient. Using the ICD9 codes it builds an array
-variable with the ICD9 code, its description from the ICD DIAGNOSIS
-file, #80. Flagging any inactive ICD9 codes with a "#".
-Input Variables:
-ORCIEN    Clinician's internal ID number
-ORPTIEN   Patient's internal ID number
-Output Variable:
-Y         Array of ICD9 codes and descriptions
-Y(#)=ICD9_code^DX_Description^DX_Inactive
-If inactive # in third piece
-If active null in third piece
-Local Variables:
-CKDATE    Check Date (stops loop)
-DXC       Diagnosis Code (for sorting)
-DXD       Diagnosis Description
-DXI       Diagnosis Inactive Flag
-DXIEN     Diagnosis Internal Entry Number
-ICD9      ICD9 code (for GUI display)
-IEN       Internal Entry Number
-OBJORD    Object of Order
-ORDATE    Order Date
-ORDG      Order Group (ACT index variable)
-OREM      Order Error Message
-ORIEN     Order Internal Entry Number
-ORRF      Order Record Found
-RCODI     Reverse Cronological Order Date Index
-SUBFILE   Subfile Number{:/}
+ Leading comment lines | {::nomarkdown}Gets all the unique ICD9 codes for the orders placed today by the<br/>clinician for this patient. Using the ICD9 codes it builds an array<br/>variable with the ICD9 code, its description from the ICD DIAGNOSIS<br/>file, #80. Flagging any inactive ICD9 codes with a "#".<br/>Input Variables:<br/>ORCIEN    Clinician's internal ID number<br/>ORPTIEN   Patient's internal ID number<br/>Output Variable:<br/>Y         Array of ICD9 codes and descriptions<br/>Y(#)=ICD9_code^DX_Description^DX_Inactive<br/>If inactive # in third piece<br/>If active null in third piece<br/>Local Variables:<br/>CKDATE    Check Date (stops loop)<br/>DXC       Diagnosis Code (for sorting)<br/>DXD       Diagnosis Description<br/>DXI       Diagnosis Inactive Flag<br/>DXIEN     Diagnosis Internal Entry Number<br/>ICD9      ICD9 code (for GUI display)<br/>IEN       Internal Entry Number<br/>OBJORD    Object of Order<br/>ORDATE    Order Date<br/>ORDG      Order Group (ACT index variable)<br/>OREM      Order Error Message<br/>ORIEN     Order Internal Entry Number<br/>ORRF      Order Record Found<br/>RCODI     Reverse Cronological Order Date Index<br/>SUBFILE   Subfile Number{:/}
 
 ### Input Parameters
 
@@ -61,4 +33,4 @@ SUBFILE   Subfile Number{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | does EVT has delayed orders?
-
- Leading comment lines | {::nomarkdown}1 if Patient DFN has delayed orders for EVT
-2 if Parent/Sibling event has delayed orders
-0 if No delayed orders for EVT{:/}
+ Leading comment lines | {::nomarkdown}1 if Patient DFN has delayed orders for EVT<br/>2 if Parent/Sibling event has delayed orders<br/>0 if No delayed orders for EVT{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

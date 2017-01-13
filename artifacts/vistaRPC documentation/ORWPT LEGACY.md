@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return message if data on the legacy system
-
  Leading comment lines | {::nomarkdown}ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

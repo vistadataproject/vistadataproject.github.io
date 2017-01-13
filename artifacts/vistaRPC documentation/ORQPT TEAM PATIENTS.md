@@ -21,11 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN LIST OF PATIENTS IN A TEAM
-
- Leading comment lines | {::nomarkdown}Also called under DBIA # 2692.
-If TMPFLAG passed and = TRUE, code expects a "^TMP(xxx"
-global root string passed in ORY, and builds the returned 
-list in that global instead of to a memory array.{:/}
+ Leading comment lines | {::nomarkdown}Also called under DBIA # 2692.<br/>If TMPFLAG passed and = TRUE, code expects a "^TMP(xxx"<br/>global root string passed in ORY, and builds the returned <br/>list in that global instead of to a memory array.{:/}
 
 ### Input Parameters
 
@@ -36,4 +32,4 @@ list in that global instead of to a memory array.{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

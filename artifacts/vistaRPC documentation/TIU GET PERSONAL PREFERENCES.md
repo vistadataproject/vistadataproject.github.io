@@ -21,13 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get user's personal preferences
-
- Leading comment lines | {::nomarkdown}Call with TIUY (by ref)
-USER is pointer to file 200
-Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^
-==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT
-==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER
-==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^{:/}
+ Leading comment lines | {::nomarkdown}Call with TIUY (by ref)<br/>USER is pointer to file 200<br/>Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^{:/}
 
 ### Input Parameters
 
@@ -38,4 +32,4 @@ Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

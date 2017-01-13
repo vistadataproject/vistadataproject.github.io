@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Calls the import process to import all of the fields in the
-
- Leading comment lines | {::nomarkdown}^TMP global for this process.  Result contains a list of NAME^X^RENAME
-strings.{:/}
+ Leading comment lines | {::nomarkdown}^TMP global for this process.  Result contains a list of NAME^X^RENAME<br/>strings.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

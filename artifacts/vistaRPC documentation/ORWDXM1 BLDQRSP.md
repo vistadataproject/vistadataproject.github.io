@@ -21,14 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Build responses for an order
-
- Leading comment lines | {::nomarkdown}LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrp
-LST(n)=verify or reject text
-ORIT= ptr to 101.41 for quick order, 100 for copy
-1 2 3 4 5 6 7 8 11-20
-FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...
-ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change
-!! SHOULD CHECK for PRE-CPRS ORDERS (treat as text?){:/}
+ Leading comment lines | {::nomarkdown}LST=QuickLevel^ResponseID(ORIT;$H)^Dialog^Type^FormID^DGrp<br/>LST(n)=verify or reject text<br/>ORIT= ptr to 101.41 for quick order, 100 for copy<br/>1 2 3 4 5 6 7 8 11-20<br/>FLDS=DFN^LOC^ORNP^INPT^SEX^AGE^EVENT^SC%^^^Key Variables...<br/>ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change<br/>!! SHOULD CHECK for PRE-CPRS ORDERS (treat as text?){:/}
 
 ### Input Parameters
 
@@ -40,4 +33,4 @@ ORIT=+ORIT: ptr to 101.41, $E(ORIT)=C: copy $E(ORIT)=X: change
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

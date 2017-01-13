@@ -21,19 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return list after lexicon lookup
-
- Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user
-[VIEW]      (Optional) The Lexicon VIEW parameter (Defaults to
-Problem List Subset (i.e., "PLS")
-[ORDATE]    (Optional) the date of interest (Defaults to TODAY)
-[ORINCSYN]  (Optional) Boolean flag specifying whether or not to
-include synonyms for SNOMED CT Concepts
-(Defaults to 0 (FALSE))
-Returns: LST=gvn of ^TMP("ORLEX",$J), which contains search result set as:
-^TMP("ORLEX",$J,1..n)=LEXIEN^PREFTEXT^ICDCODE(S)^ICDIEN^CODESYS^CONCEPTID^DESIGID^ICDVER^PARENTSUBSCRIPT
-^TMP("ORLEX",$J,n+1)="<n> matches found"{:/}
+ Leading comment lines | {::nomarkdown}Call with: X           (Required) The search text entered by the user<br/>[VIEW]      (Optional) The Lexicon VIEW parameter (Defaults to<br/>Problem List Subset (i.e., "PLS")<br/>[ORDATE]    (Optional) the date of interest (Defaults to TODAY)<br/>[ORINCSYN]  (Optional) Boolean flag specifying whether or not to<br/>include synonyms for SNOMED CT Concepts<br/>(Defaults to 0 (FALSE))<br/>Returns: LST=gvn of ^TMP("ORLEX",$J), which contains search result set as:<br/>^TMP("ORLEX",$J,1..n)=LEXIEN^PREFTEXT^ICDCODE(S)^ICDIEN^CODESYS^CONCEPTID^DESIGID^ICDVER^PARENTSUBSCRIPT<br/>^TMP("ORLEX",$J,n+1)="<n> matches found"{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

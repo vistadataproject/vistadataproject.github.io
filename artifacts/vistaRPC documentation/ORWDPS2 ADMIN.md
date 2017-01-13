@@ -21,10 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return administration time info
-
  Leading comment lines | {::nomarkdown}REC: StartText^StartTime^Duration^FirstAdmin{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

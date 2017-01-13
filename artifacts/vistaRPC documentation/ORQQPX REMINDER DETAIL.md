@@ -21,10 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return detail for a pt's clinical reminder
-
- Leading comment lines | {::nomarkdown}ORY - return array
-ORPT - patient DFN
-ORIEN - clinical reminder (811.9 ien){:/}
+ Leading comment lines | {::nomarkdown}ORY - return array<br/>ORPT - patient DFN<br/>ORIEN - clinical reminder (811.9 ien){:/}
 
 ### Input Parameters
 
@@ -36,4 +33,4 @@ ORIEN - clinical reminder (811.9 ien){:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

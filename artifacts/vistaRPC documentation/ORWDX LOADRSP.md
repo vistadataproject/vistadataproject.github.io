@@ -21,9 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load responses from 101.41 or 100
-
- Leading comment lines | {::nomarkdown}RSPID:  C123456;1-3243 = cached copy,   134-3234 = cached quick
-X123456;1      = change order,  134      = quick dialog{:/}
+ Leading comment lines | {::nomarkdown}RSPID:  C123456;1-3243 = cached copy,   134-3234 = cached quick<br/>X123456;1      = change order,  134      = quick dialog{:/}
 
 ### Input Parameters
 
@@ -35,4 +33,4 @@ X123456;1      = change order,  134      = quick dialog{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

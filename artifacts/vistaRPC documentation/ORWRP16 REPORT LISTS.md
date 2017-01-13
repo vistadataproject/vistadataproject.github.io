@@ -21,11 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return lists for list boxes
-
- Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST
-See RPC definition for details on input and output parameters{:/}
+ Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST<br/>See RPC definition for details on input and output parameters{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

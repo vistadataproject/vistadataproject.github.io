@@ -21,12 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC that gets the CLINICAL PROCEDURES TIU Document
-
- Leading comment lines | {::nomarkdown}Definition file (#8925.1) IEN
-Input  -- None
-Output -- Y        TIU Document Definition file (#8925.1) IEN{:/}
+ Leading comment lines | {::nomarkdown}Definition file (#8925.1) IEN<br/>Input  -- None<br/>Output -- Y        TIU Document Definition file (#8925.1) IEN{:/}
 
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am

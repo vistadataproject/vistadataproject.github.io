@@ -21,18 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Treatment Factors Clinical Indicators
-
- Leading comment lines | {::nomarkdown}Input Variable:
-ORIEN    Order Internal Entry Number (array variable)
-Ouput Variable:
-Y        Y(AI)=Order_IEN^Treatment_Factors^ICD9^ICD9_Description
-There can be up to 4 ICD9 codes and thier descriptions
-ICD901^DESC01^ICD902^DESC02^ICD903^DESC03^ICD904^DESC04
-Local Variables:
-AI       Array Index
-CI       Clinical Index
-TF       Treatment Factors
-TFCI     Treatment Factors Clinical Indicators{:/}
+ Leading comment lines | {::nomarkdown}Input Variable:<br/>ORIEN    Order Internal Entry Number (array variable)<br/>Ouput Variable:<br/>Y        Y(AI)=Order_IEN^Treatment_Factors^ICD9^ICD9_Description<br/>There can be up to 4 ICD9 codes and thier descriptions<br/>ICD901^DESC01^ICD902^DESC02^ICD903^DESC03^ICD904^DESC04<br/>Local Variables:<br/>AI       Array Index<br/>CI       Clinical Index<br/>TF       Treatment Factors<br/>TFCI     Treatment Factors Clinical Indicators{:/}
 
 ### Input Parameters
 
@@ -43,4 +32,4 @@ TFCI     Treatment Factors Clinical Indicators{:/}
 
 
 
- Generated on January 13th 2017, 6:15:57 am
+ Generated on January 13th 2017, 6:24:32 am
