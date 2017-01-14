@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWTIU CANLINK 
+## [RPCs](TableOfContent.md) &#8594; ORWTIU CANLINK 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,14 +20,14 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown} Given a title, call CANLINK^TIULP to determine whether this title can use linked as an Interdisciplinary child note. dbia #2322{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TITLE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -34,4 +35,6 @@ title: VISTA RPC documentation
  Method comment | Can the title be an ID child?
  First comment | {::nomarkdown}DBIA #2322{:/}
  Input parameters | {::nomarkdown}ORTITLE{:/}
- Code | ```  S ORY=$$CANLINK^TIULP(ORTITLE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=$$CANLINK^TIULP(ORTITLE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

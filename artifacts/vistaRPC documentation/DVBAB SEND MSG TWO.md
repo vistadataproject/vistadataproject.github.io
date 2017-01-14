@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAB SEND MSG TWO 
+## [RPCs](TableOfContent.md) &#8594; DVBAB SEND MSG TWO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,10 +20,12 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}THIS RPC IS THE SECOND FOR THE CAPRI MSG 2507 EXAMTHIS ONE PRODUCES A MESSAGE FOR EACH EXAM THAT IS COMPLETED{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}PERSON FILE DFN{:/} | 
 | {::nomarkdown}RIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}2507 REQUEST IEN #396.3{:/} | 
-| {::nomarkdown}ELIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}2507 EXAM LIST #396.4{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ELIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}2507 EXAM LIST #396.4{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

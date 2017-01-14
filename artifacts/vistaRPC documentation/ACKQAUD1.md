@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ACKQAUD1 
+## [RPCs](TableOfContent.md) &#8594; ACKQAUD1 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC gets the audiogram data for the selected entryin the Audiometric Exam Data file 509850.9 and returnsit to the calling program in the array ACKQARR()This is for the Audiometric Display only.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The internal number in the PATIENT file (#2).{:/} | 
-| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Internal number in the AUDIOMETRIC EXAM DATA file (#509850.9).{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

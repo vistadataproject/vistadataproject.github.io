@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGQBP UPDATE 
+## [RPCs](TableOfContent.md) &#8594; MAGQBP UPDATE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,11 +20,13 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Nulls the appropriate magnetic network location reference.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}FILENAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The Image file name to be updated.{:/} | 
 | {::nomarkdown}EXT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The image file extension to be updated.{:/} | 
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Image file internal entry number to be updated.{:/} | 
-| {::nomarkdown}Device{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}'NET' or 'JB' to specify which Image system reference to update.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}Device{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}'NET' or 'JB' to specify which Image system reference to update.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXM3 ISUDQO 
+## [RPCs](TableOfContent.md) &#8594; ORWDXM3 ISUDQO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ISUDQO^[ORWDXM3](http://code.osehra.org/dox/Routine_ORWDXM3_source.html)
  Method comment | True: is unit dose quick order
  Input parameters | {::nomarkdown}DLGID{:/}
- Code | ```  S ORY=0<br/> Q:'$D(^ORD(101.41,DLGID,0))<br/> N CLODGRP,CLIVDGRP,UDGRP1,UDGRP2,DLGTYP,DLGGRP<br/> S UDGRP1=$O(^ORD(100.98,"B","UD RX",0))<br/> S UDGRP2=$O(^ORD(100.98,"B","I RX",0))<br/> S CLODGRP=$O(^ORD(100.98,"B","CLINIC MEDICATIONS",""))<br/> S CLIVDGRP=$O(^ORD(100.98,"B","CLINIC INFUSIONS",""))<br/> S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)<br/> S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)<br/> I (DLGTYP="Q"),((DLGGRP=UDGRP1)!(DLGGRP=UDGRP2)!(DLGGRP=CLODGRP)!(DLGGRP=CLIVDGRP)) S ORY=1<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^ORD(101.41,DLGID,0))<br> N CLODGRP,CLIVDGRP,UDGRP1,UDGRP2,DLGTYP,DLGGRP<br> S UDGRP1=$O(^ORD(100.98,"B","UD RX",0))<br> S UDGRP2=$O(^ORD(100.98,"B","I RX",0))<br> S CLODGRP=$O(^ORD(100.98,"B","CLINIC MEDICATIONS",""))<br> S CLIVDGRP=$O(^ORD(100.98,"B","CLINIC INFUSIONS",""))<br> S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)<br> S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)<br> I (DLGTYP="Q"),((DLGGRP=UDGRP1)!(DLGGRP=UDGRP2)!(DLGGRP=CLODGRP)!(DLGGRP=CLIVDGRP)) S ORY=1<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

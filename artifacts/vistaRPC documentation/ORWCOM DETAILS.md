@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWCOM DETAILS 
+## [RPCs](TableOfContent.md) &#8594; ORWCOM DETAILS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns details of COM object when passed in COM IEN.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | DETAILS^[ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
  Method comment | Returns Details about a specific COM Object
  Input parameters | {::nomarkdown}ID{:/}
- Code | ```  N NODE<br/> S ORY=0<br/> I +ID D<br/> .S NODE=$G(^ORD(101.15,+ID,0))<br/> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N NODE<br> S ORY=0<br> I +ID D<br> .S NODE=$G(^ORD(101.15,+ID,0))<br> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

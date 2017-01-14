@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIV ACCEPT BUFFER ENTRY 
+## [RPCs](TableOfContent.md) &#8594; DSIV ACCEPT BUFFER ENTRY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Processes INSURANCE BUFFER file entry to insurance filesand patient insurance type multiple.  Marks buffer entrySTATUS=ACCEPTED.  This RPC should perform the same actionsas the List Manager \Accept\ action.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -36,4 +37,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}IBNEWPOL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag indicating that a new entry should be created in theINSURANCE TYPE subfile (#2.312).  1=TRUE (Create new entry)0=FALSE (Default - Do not create new entry).{:/} | 
 | {::nomarkdown}IVMREPTR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number in IVM REASONS FOR NOT UPLOADING INSURANCEfile (#301.91) if applicable.{:/} | 
 | {::nomarkdown}DSIVAUDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number in File #19625.  Used when filing COMMENT fields.{:/} | 
-| {::nomarkdown}IBDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IBDATA array containts the following variables and data in an array e.g. IBDATA(1)=\IBINSDA^1002\      IBDATA(2)=\INGRPDA^\      IBINSDA=File 36 IEN if not adding new entryIBGRPDA=File 355.3 IEN if not adding new entryIBPOLDA=File 2.312 IEN if not adding new entryIBMVINS=Type for INSURANCE 1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVGRP=Type for GROUP     1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVPOL=Type for POLICY    1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBNEWINS=Add new INSURANCE COMPANY flag (non-zero means add)IBNEWGRP=Add new GROUP INSURANCE PLAN flag (non-zero means add)IBNEWPOL=Add new patient insurance policy (non-zero means add)IVMREPTR=File 301.91 IEN if applicable (IVM REASONS FOR NOT UPLOADING..)DSIVAUDT=File 19625 IEN if updating pt policy or group plan COMMENTIBELIG=to copy eIV report to pt elig/benefits 0=no,1=yes{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}IBDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IBDATA array containts the following variables and data in an array e.g. IBDATA(1)=\IBINSDA^1002\      IBDATA(2)=\INGRPDA^\      IBINSDA=File 36 IEN if not adding new entryIBGRPDA=File 355.3 IEN if not adding new entryIBPOLDA=File 2.312 IEN if not adding new entryIBMVINS=Type for INSURANCE 1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVGRP=Type for GROUP     1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBMVPOL=Type for POLICY    1=Merge, 2=Overwrite, 3=Replace, 4=(n/a)IBNEWINS=Add new INSURANCE COMPANY flag (non-zero means add)IBNEWGRP=Add new GROUP INSURANCE PLAN flag (non-zero means add)IBNEWPOL=Add new patient insurance policy (non-zero means add)IVMREPTR=File 301.91 IEN if applicable (IVM REASONS FOR NOT UPLOADING..)DSIVAUDT=File 19625 IEN if updating pt policy or group plan COMMENTIBELIG=to copy eIV report to pt elig/benefits 0=no,1=yes{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

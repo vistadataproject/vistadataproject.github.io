@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OOPS INCIDENT REPORT 
+## [RPCs](TableOfContent.md) &#8594; OOPS INCIDENT REPORT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This broker call returns the data for creating the Type of Incident reports.This report provides information on different Types of incidents. {:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}STDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the start date of the report.  Those cases whose Dateof Occurrence is greater than or equal to the Start date will be included.{:/} | 
 | {::nomarkdown}ENDDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the end date of the report.  Those cases whose Dateof Occurrence is less than or equal to the End date will be included.{:/} | 
 | {::nomarkdown}LTNTT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will determine whether or not Lost Time claims should be included on the report.{:/} | 
-| {::nomarkdown}STAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will determine whether to run the report for all stations ora single station.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}STAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter will determine whether to run the report for all stations ora single station.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

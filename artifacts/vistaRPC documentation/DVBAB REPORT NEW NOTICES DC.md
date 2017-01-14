@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAB REPORT NEW NOTICES DC 
+## [RPCs](TableOfContent.md) &#8594; DVBAB REPORT NEW NOTICES DC 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}ENBROKER{:/}
  routine | [DVBADSNT](http://code.osehra.org/dox/Routine_DVBADSNT_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
- description | {::nomarkdown}Broker-enabled version of option DVBA NOTICE/DISCHARGE PRINT, Print NewNotices of Discharge.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Broker-enabled version of option DVBA NOTICE/DISCHARGE PRINT, Print NewNotices of Discharge.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

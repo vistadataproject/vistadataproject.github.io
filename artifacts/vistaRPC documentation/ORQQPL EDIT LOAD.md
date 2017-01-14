@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQPL EDIT LOAD 
+## [RPCs](TableOfContent.md) &#8594; ORQQPL EDIT LOAD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Return array of default fields and original fields - GMPFLD() and GMPORIG(){:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,7 +29,7 @@ title: VISTA RPC documentation
 | {::nomarkdown}vamc{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -36,4 +37,6 @@ title: VISTA RPC documentation
  Method comment | LOAD  EDIT ARRAYS
  First comment | {::nomarkdown}DA=problem IFN{:/}
  Input parameters | {::nomarkdown}DA{:/}
- Code | ```  N I,GMPFLD,GMPORIG,GMPL<br/> D GETFLDS^GMPLEDT3(DA)<br/> S I=0<br/> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br/> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br/> K GMPFLD,GMPORIG,GMPL  ; should not have to do this```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N I,GMPFLD,GMPORIG,GMPL<br> D GETFLDS^GMPLEDT3(DA)<br> S I=0<br> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br> K GMPFLD,GMPORIG,GMPL  ; should not have to do this{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

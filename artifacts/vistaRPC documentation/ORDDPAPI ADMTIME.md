@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORDDPAPI ADMTIME 
+## [RPCs](TableOfContent.md) &#8594; ORDDPAPI ADMTIME 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,9 +21,11 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ADMTIME^[ORDDPAPI](http://code.osehra.org/dox/Routine_ORDDPAPI_source.html)
- Code | ```  N ERR,I<br/> D GETWP^XPAR(.X,"SYS","OR ADMIN TIME HELP TEXT",,.ERR)<br/> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N ERR,I<br> D GETWP^XPAR(.X,"SYS","OR ADMIN TIME HELP TEXT",,.ERR)<br> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

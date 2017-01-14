@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT TEXT 
+## [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT TEXT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This rpc retrieves the report text for a report selected onthe Report tab.the report format on the roll 'n scroll version of CPRS.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -30,12 +31,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}REPORT SECTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter specifics which portion of the report should beretrieved.If REPORT SECTION equals 0 then the entire report is re-compiled and thefirst section is passed back. If the report is large then it isnecessary to divide it into sections. Currently, each section cannot be more than be more than 20,000 characters{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | RPT^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return report text
  First comment | {::nomarkdown}RPC: ORWRP REPORT TEXT<br/>See RPC definition for details on input and output parameters{:/}
- Input parameters | {::nomarkdown}DFN<br/>RPTID<br/>HSTYPE<br/>DTRANGE<br/>SECTION{:/}
- Code | ```  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ<br/> . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))<br/> K ^TMP("ORDATA",$J)<br/> S ROOT=$NA(^TMP("ORDATA",$J,1))<br/> IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ<br/> IF RPTID=2 D BL(DFN) G RPTQ<br/> IF RPTID=3 D PATH(DFN) G RPTQ<br/> IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ<br/> IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ<br/> IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ<br/> D NOTYET(.ROOT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}DFN<br>RPTID<br>HSTYPE<br>DTRANGE<br>SECTION{:/}
+ Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ<br> . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))<br> K ^TMP("ORDATA",$J)<br> S ROOT=$NA(^TMP("ORDATA",$J,1))<br> IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ<br> IF RPTID=2 D BL(DFN) G RPTQ<br> IF RPTID=3 D PATH(DFN) G RPTQ<br> IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ<br> IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ<br> IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ<br> D NOTYET(.ROOT){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

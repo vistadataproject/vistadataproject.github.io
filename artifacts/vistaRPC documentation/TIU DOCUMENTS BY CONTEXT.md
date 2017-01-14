@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU DOCUMENTS BY CONTEXT 
+## [RPCs](TableOfContent.md) &#8594; TIU DOCUMENTS BY CONTEXT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns lists of TIU Documents that satisfy the following search criteria: 1 - signed documents (all)   2 - unsigned documents  3 - uncosigned documents4 - signed documents/author5 - signed documents/date range{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -35,12 +36,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}INCUND{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Optional Boolean parameter determines whether Undictated and Untranscribed documents should be returned along with Unsigneddocuments, when the CONTEXT is passed as 2.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CONTEXT^[TIUSRVLO](http://code.osehra.org/dox/Routine_TIUSRVLO_source.html)
  Method comment | main
  First comment | {::nomarkdown}--- Call with:  TIUY     - RETURN ARRAY pass by reference<br/>CLASS    - Pointer to TIU DOCUMENT DEFINITION #8925.1<br/>CONTEXT  - 1=All Signed (by PT),<br/>- 2="Unsigned (by PT&(AUTHOR!TANSCRIBER))<br/>- 3="Uncosigned (by PT&EXPECTED COSIGNER<br/>- 4="Signed notes (by PT&selected author)<br/>- 5="Signed notes (by PT&date range)<br/>DFN      - Pointer to Patient (#2)<br/>[EARLY]   - FM date/time to begin search<br/>[LATE]    - FM date/time to end search<br/>[PERSON]  - Pointer to file 200 (DUZ if not passed)<br/>[OCCLIM]  - Occurrence Limit (optional)<br/>[SEQUENCE]- "A"=ascending (Regular date/time)<br/>- "D"=descending (Reverse date/time) (dflt)<br/>[INCUND]  - Boolean: include undictated & untranscribed{:/}
- Input parameters | {::nomarkdown}CLASS<br/>CONTEXT<br/>DFN<br/>EARLY<br/>LATE<br/>PERSON<br/>OCCLIM<br/>SEQUENCE<br/>SHOWADD<br/>INCUND{:/}
- Code | ```  S TIUY=$NA(^TMP("TIUR",$J))<br/> K @TIUY<br/> I $G(CONTEXT)'>0 Q<br/> I $G(CLASS)'>0 Q<br/> I $G(CONTEXT)=1 D STRT1^AWCMCPR1 ; TIU*1.0*181<br/> S:+$G(EARLY)'>0!(+$G(CONTEXT)=1) EARLY=0<br/> S:+$G(LATE)'>0!(+$G(CONTEXT)=1) LATE=5000000<br/> I EARLY>LATE D SWAP(.EARLY,.LATE)<br/> I $L(LATE,".")=1 D EXPRANGE(.EARLY,.LATE)<br/> S:+$G(PERSON)'>0 PERSON=DUZ<br/> S:$G(SEQUENCE)']"" SEQUENCE="D"<br/> S:+$G(OCCLIM)'>0 OCCLIM=9999999<br/> S DFN=+$G(DFN)<br/> S EARLY=9999999-EARLY,LATE=9999999-LATE ; CHANGE TO REVERSE DATES<br/> I CONTEXT=1!(CONTEXT=5) D  G CTXQ<br/> . D ACLPT(.TIUY,CLASS,DFN,LATE,EARLY,OCCLIM,SEQUENCE)<br/> I CONTEXT=2 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br/> . F  S DFN=$O(^TIU(8925,"ACLAU",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br/> I CONTEXT=3 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . F  S DFN=$O(^TIU(8925,"ACLEC",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> I CONTEXT=4 D  G CTXQ<br/> . I DFN>0 D  Q<br/> . . ;VMP OIFO BAY PINES;ELR;TIU*1.0*194 REMOVED EXECUTION OF ACLSB & ADDED APTCL<br/> . . ;D ACLSB(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . . D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br/> . F  S DFN=$O(^TIU(8925,"APTCL",DFN)) Q:DFN'>0  D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}CLASS<br>CONTEXT<br>DFN<br>EARLY<br>LATE<br>PERSON<br>OCCLIM<br>SEQUENCE<br>SHOWADD<br>INCUND{:/}
+ Code | {::nomarkdown}  S TIUY=$NA(^TMP("TIUR",$J))<br> K @TIUY<br> I $G(CONTEXT)'>0 Q<br> I $G(CLASS)'>0 Q<br> I $G(CONTEXT)=1 D STRT1^AWCMCPR1 ; TIU*1.0*181<br> S:+$G(EARLY)'>0!(+$G(CONTEXT)=1) EARLY=0<br> S:+$G(LATE)'>0!(+$G(CONTEXT)=1) LATE=5000000<br> I EARLY>LATE D SWAP(.EARLY,.LATE)<br> I $L(LATE,".")=1 D EXPRANGE(.EARLY,.LATE)<br> S:+$G(PERSON)'>0 PERSON=DUZ<br> S:$G(SEQUENCE)']"" SEQUENCE="D"<br> S:+$G(OCCLIM)'>0 OCCLIM=9999999<br> S DFN=+$G(DFN)<br> S EARLY=9999999-EARLY,LATE=9999999-LATE ; CHANGE TO REVERSE DATES<br> I CONTEXT=1!(CONTEXT=5) D  G CTXQ<br> . D ACLPT(.TIUY,CLASS,DFN,LATE,EARLY,OCCLIM,SEQUENCE)<br> I CONTEXT=2 D  G CTXQ<br> . I DFN>0 D  Q<br> . . D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br> . F  S DFN=$O(^TIU(8925,"ACLAU",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLAU(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE,$G(INCUND))<br> I CONTEXT=3 D  G CTXQ<br> . I DFN>0 D  Q<br> . . D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br> . F  S DFN=$O(^TIU(8925,"ACLEC",CLASS,PERSON,DFN)) Q:DFN'>0  D ACLEC(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br> I CONTEXT=4 D  G CTXQ<br> . I DFN>0 D  Q<br> . . ;VMP OIFO BAY PINES;ELR;TIU*1.0*194 REMOVED EXECUTION OF ACLSB & ADDED APTCL<br> . . ;D ACLSB(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br> . . D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE)<br> . F  S DFN=$O(^TIU(8925,"APTCL",DFN)) Q:DFN'>0  D APTCL^TIUSRVLP(.TIUY,CLASS,PERSON,DFN,LATE,EARLY,SEQUENCE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

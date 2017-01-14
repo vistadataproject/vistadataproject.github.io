@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQCN ASSIGNABLE MED RESULTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN ASSIGNABLE MED RESULTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns a list of medicine results that can be attached to a procedure.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}CONSULT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Consult (procedure) IEN in file 123.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETMED^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | Return available med results for proc request
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  Q:+$G(GMRCO)=0<br/> D GETMED^GMRCGUIU(GMRCO,.ORY)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> D GETMED^GMRCGUIU(GMRCO,.ORY){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

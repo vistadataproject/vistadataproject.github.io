@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAB AMIS REPORT 
+## [RPCs](TableOfContent.md) &#8594; DVBAB AMIS REPORT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns an AMIS report for specified search criteria.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}RONUM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is an optional parameter that has 2 optional pieces:      REGIONAL OFFICE^DIVISIONIf this parameter is defined, then the report logic will filter the results by the Regional Office number passed and/or Division. Regional Office should always be included in the 1st '^' delimited piece and the Division should always be included in the 2nd '^' delimited piece if values are to be passed. If the 1st '^' delimited piece is undefined, null or 0 then results for all Regional Offices (RO) will be returned. If Division is undefined, null or 0, then results for all Divisions will be returned.{:/} | 
 | {::nomarkdown}SBULL{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A Y/N value which indicates whether a bulletin should be generated when the processing has completed.{:/} | 
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the individual in the NEW PERSON File (#200) who should recieve the bulletin generated.{:/} | 
-| {::nomarkdown}DVBAPRTY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Priority of Exam code which inidicates which priorities to filter on.   AO   : Agent Orange   BDD  : Benefits Delivery at Discharge and Quick Start   IDES : Integrated Disability Evaluation System   ALL  : All Others (Original Report with all codes except those above){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DVBAPRTY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Priority of Exam code which inidicates which priorities to filter on.   AO   : Agent Orange   BDD  : Benefits Delivery at Discharge and Quick Start   IDES : Integrated Disability Evaluation System   ALL  : All Others (Original Report with all codes except those above){:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

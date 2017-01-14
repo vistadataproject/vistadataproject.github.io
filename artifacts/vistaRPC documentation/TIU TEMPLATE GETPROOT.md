@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETPROOT 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETPROOT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETPROOT^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Get personal template root info only
  Input parameters | {::nomarkdown}USER{:/}
- Code | ```  N IDX<br/> I +$G(USER) D ADDNODE(.IDX,$O(^TIU(8927,"AROOT",USER,0)),1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N IDX<br> I +$G(USER) D ADDNODE(.IDX,$O(^TIU(8927,"AROOT",USER,0)),1){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

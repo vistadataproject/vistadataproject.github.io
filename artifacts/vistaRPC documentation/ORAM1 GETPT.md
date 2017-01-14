@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORAM1 GETPT 
+## [RPCs](TableOfContent.md) &#8594; ORAM1 GETPT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETPT{:/}
  routine | [ORAM1](http://code.osehra.org/dox/Routine_ORAM1_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Returns list of patients from Anticoagulation Flowsheet file (#103).{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Returns list of patients from Anticoagulation Flowsheet file (#103).{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

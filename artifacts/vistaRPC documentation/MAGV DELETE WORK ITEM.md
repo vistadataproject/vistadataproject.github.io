@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGV DELETE WORK ITEM 
+## [RPCs](TableOfContent.md) &#8594; MAGV DELETE WORK ITEM 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC deletes a single entry in the MAG WORK ITEM file (#2006.941).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}ITEMID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the item ID that uniquely identifies the work item to be deleted.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ITEMID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the item ID that uniquely identifies the work item to be deleted.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

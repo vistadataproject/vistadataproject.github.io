@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OOPS GET INSTITUTIONS 
+## [RPCs](TableOfContent.md) &#8594; OOPS GET INSTITUTIONS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETINST{:/}
  routine | [OOPSGUI7](http://code.osehra.org/dox/Routine_OOPSGUI7_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
- description | {::nomarkdown}This broker call will retrieve all the stations from the INSTITUTION(#4) file.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}This broker call will retrieve all the stations from the INSTITUTION(#4) file.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

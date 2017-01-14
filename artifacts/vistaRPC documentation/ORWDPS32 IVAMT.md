@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS32 IVAMT 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 IVAMT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns return UNITS^AMOUNT ^AMOUNT^AMOUNT... for IV solutions.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | IVAMT^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return UNITS^AMOUNT |^AMOUNT^AMOUNT...| for IV soln
- Input parameters | {::nomarkdown}OI<br/>ORWTYP{:/}
- Code | ```  N I,PSOI,ORWY,AMT<br/> S PSOI=+$P($G(^ORD(101.43,OI,0)),U,2)_ORWTYP,VAL=""<br/> D ENVOL^PSJORUT2(PSOI,.ORWY)<br/> I ORWTYP="B" D<br/> . S I=0 F  S I=$O(ORWY(I)) Q:I'>0  S AMT(+ORWY(I))="" D<br/> . . I ORWY(I)<1 D  ;SBR<br/> . . . K AMT(+ORWY(I))<br/> . . . S AMT(0_+ORWY(I))=""<br/> . S AMT=0,VAL="ML" F  S AMT=$O(AMT(AMT)) Q:AMT'>0  S VAL=VAL_U_AMT<br/> I ORWTYP="A" D<br/> . S I=+$O(ORWY(0)) S VAL=$P($G(ORWY(I)),U,2)<br/> . I '$L(VAL) S VAL="ML^LITER^MCG^MG^GM^UNITS^IU^MEQ^MM^MU^THOUU^MG-PE^NANOGRAM^MMOL"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}OI<br>ORWTYP{:/}
+ Code | {::nomarkdown}  N I,PSOI,ORWY,AMT<br> S PSOI=+$P($G(^ORD(101.43,OI,0)),U,2)_ORWTYP,VAL=""<br> D ENVOL^PSJORUT2(PSOI,.ORWY)<br> I ORWTYP="B" D<br> . S I=0 F  S I=$O(ORWY(I)) Q:I'>0  S AMT(+ORWY(I))="" D<br> . . I ORWY(I)<1 D  ;SBR<br> . . . K AMT(+ORWY(I))<br> . . . S AMT(0_+ORWY(I))=""<br> . S AMT=0,VAL="ML" F  S AMT=$O(AMT(AMT)) Q:AMT'>0  S VAL=VAL_U_AMT<br> I ORWTYP="A" D<br> . S I=+$O(ORWY(0)) S VAL=$P($G(ORWY(I)),U,2)<br> . I '$L(VAL) S VAL="ML^LITER^MCG^MG^GM^UNITS^IU^MEQ^MM^MU^THOUU^MG-PE^NANOGRAM^MMOL"{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

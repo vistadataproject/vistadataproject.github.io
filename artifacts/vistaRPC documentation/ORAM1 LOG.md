@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORAM1 LOG 
+## [RPCs](TableOfContent.md) &#8594; ORAM1 LOG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Updates Anticoagulation Flowsheet file (#103) and adds log entry.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}FSARRAY{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
-| {::nomarkdown}COMP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}COMP=0 Will remove this entry's complication indication code (instead of1= Major Bleed, 2=Clot, 3=Minor Bleed), the original complicatons will stay in the file, but they will no longer be visible or considered in reports based on the COMPLICATION code (104).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}COMP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}COMP=0 Will remove this entry's complication indication code (instead of1= Major Bleed, 2=Clot, 3=Minor Bleed), the original complicatons will stay in the file, but they will no longer be visible or considered in reports based on the COMPLICATION code (104).{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

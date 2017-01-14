@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWORR RGET 
+## [RPCs](TableOfContent.md) &#8594; ORWORR RGET 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | RGET^[ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  Method comment | Orders of AutoDC/Release Event
- Input parameters | {::nomarkdown}DFN<br/>FILTER<br/>GROUPS<br/>DTFROM<br/>DTTHRU<br/>EVENT{:/}
- Code | ```  N EVTDCREL<br/> S EVTDCREL="TRUE"<br/> D AGET(.REF,DFN,FILTER,GROUPS,DTFROM,DTTHRU,EVENT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}DFN<br>FILTER<br>GROUPS<br>DTFROM<br>DTTHRU<br>EVENT{:/}
+ Code | {::nomarkdown}  N EVTDCREL<br> S EVTDCREL="TRUE"<br> D AGET(.REF,DFN,FILTER,GROUPS,DTFROM,DTTHRU,EVENT){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

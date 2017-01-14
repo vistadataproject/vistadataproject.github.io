@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAD CONTRACTED EXAM REPORTS 
+## [RPCs](TableOfContent.md) &#8594; DVBAD CONTRACTED EXAM REPORTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Allows demTRAN (GUI) to execute the Detailed, Summary and Timeliness contracted exam reports.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DVBARTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The type of contracted exam report to execute: D: Detailed, S: Summary, or T: Timeliness.{:/} | 
-| {::nomarkdown}DVBAFLTRS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Optional parameter that allows filtering the contracted exam results. The filters include DATE, a date range, CONTRACTOR, IEN of specific contractor, PENDING, referred exams only and SORT for grouping results by contractor or request date/time (Used for Detailed Reports Only).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DVBAFLTRS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Optional parameter that allows filtering the contracted exam results. The filters include DATE, a date range, CONTRACTOR, IEN of specific contractor, PENDING, referred exams only and SORT for grouping results by contractor or request date/time (Used for Detailed Reports Only).{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

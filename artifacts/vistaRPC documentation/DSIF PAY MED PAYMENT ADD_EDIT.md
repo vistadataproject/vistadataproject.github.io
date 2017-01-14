@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF PAY MED PAYMENT ADD_EDIT 
+## [RPCs](TableOfContent.md) &#8594; DSIF PAY MED PAYMENT ADD_EDIT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Use to add/edit Medical Payment data{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -31,4 +32,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}ADJUSTMENTS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ADJUSTMENTS=IEN of adjustment:(1)^IEN Adjustment Group:(2)^Adjustment amount:(3)^ [may repeat]{:/} | 
 | {::nomarkdown}FBSUSC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Suspension comments{:/} | 
 | {::nomarkdown}FBSUS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FBSUS=Amount suspended:(1)^date suspended:(2)^Suspend code:(3){:/} | 
-| {::nomarkdown}DSIFDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown} ; DSIFDATA array (New fields added DSIF*3.2*2) ;  54^CONTRACT IEN (#54), if allowed for deletion \@\ can be passed ;  58^ATTENDING PROV NAME (#58) ;  59^ATTENDING PROV NPI (#59) ;  60^ATTENDING PROV TAXONOMY CODE (#60) ;  61^OPERATING PROV NAME (#61) ;  62^OPERATING PROV NPI (#62) ;  63^RENDERING PROV NAME (#63) ;  64^RENDERING PROV NPI (#64) ;  65^RENDERING PROV TAXONOMY CODE (#65) ;  66^SERVICING PROV NAME (#66) ;  67^SERVICING PROV NPI (#67) ;  68^REFERRING PROV NAME (#68) ;  69^REFERRING PROV NPI (#69) ;  73^LI RENDERING PROV NAME (#73)    (these are payment line specific) ;  74^LI RENDERING PROV NPI (#74) ;  75^LI RENDERING PROV TAXONOMY (#75){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DSIFDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown} ; DSIFDATA array (New fields added DSIF*3.2*2) ;  54^CONTRACT IEN (#54), if allowed for deletion \@\ can be passed ;  58^ATTENDING PROV NAME (#58) ;  59^ATTENDING PROV NPI (#59) ;  60^ATTENDING PROV TAXONOMY CODE (#60) ;  61^OPERATING PROV NAME (#61) ;  62^OPERATING PROV NPI (#62) ;  63^RENDERING PROV NAME (#63) ;  64^RENDERING PROV NPI (#64) ;  65^RENDERING PROV TAXONOMY CODE (#65) ;  66^SERVICING PROV NAME (#66) ;  67^SERVICING PROV NPI (#67) ;  68^REFERRING PROV NAME (#68) ;  69^REFERRING PROV NPI (#69) ;  73^LI RENDERING PROV NAME (#73)    (these are payment line specific) ;  74^LI RENDERING PROV NPI (#74) ;  75^LI RENDERING PROV TAXONOMY (#75){:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

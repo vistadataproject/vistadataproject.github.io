@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGV GET PAT ORDERS 
+## [RPCs](TableOfContent.md) &#8594; MAGV GET PAT ORDERS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns an array of CONsult or RADiology orders for an inputENTERPRISE PATIENT IDENTIFIER.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -29,4 +30,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}PATIENT ID CREATING ENTITY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Free text per CREATING ENTITY field (#.04) of the IMAGING PATIENT REFERENCE file (#2005.6).{:/} | 
 | {::nomarkdown}ORDER TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Free text as \CON\ for Consult Orders, \RAD\ for Radiology Orders.{:/} | 
 | {::nomarkdown}ORDER DATE FILTER START{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A date formatted as MMDDYYYY.{:/} | 
-| {::nomarkdown}ORDER DATE FILTER END{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A date formatted as MMDDYYYY.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ORDER DATE FILTER END{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A date formatted as MMDDYYYY.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

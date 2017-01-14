@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXM MSTYLE 
+## [RPCs](TableOfContent.md) &#8594; ORWDXM MSTYLE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return the menu style for the system.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | MSTYLE^[ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  Method comment | Return the menu style for the system
- Code | ```  S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I"){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

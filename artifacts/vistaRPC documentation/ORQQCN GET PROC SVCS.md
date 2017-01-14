@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC SVCS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC SVCS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Given an orderable item from the S.PROC XREF in 101.43, return theConsults service from 123.5 that can perform the procedure.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ORDERABLE ITEM ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PROCSVCS^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return a list of services for a procedure
  Input parameters | {::nomarkdown}ORDITM{:/}
- Code | ```  N PROCIEN<br/> S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)<br/> D GETSVC^GMRCPR0(.ORY,PROCIEN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N PROCIEN<br> S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)<br> D GETSVC^GMRCPR0(.ORY,PROCIEN){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

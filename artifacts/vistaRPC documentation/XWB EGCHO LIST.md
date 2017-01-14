@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; XWB EGCHO LIST 
+## [RPCs](TableOfContent.md) &#8594; XWB EGCHO LIST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}LIST{:/}
  routine | [XWBZ1](http://code.osehra.org/dox/Routine_XWBZ1_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}This RPC brings back a small list of elements to the client.  It exists forsupport of EGcho - Broker demonstration program.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ description | {::nomarkdown}This RPC brings back a small list of elements to the client.  It exists forsupport of EGcho - Broker demonstration program.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

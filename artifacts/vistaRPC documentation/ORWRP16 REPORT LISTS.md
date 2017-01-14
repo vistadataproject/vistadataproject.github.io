@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT LISTS 
+## [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT LISTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This remote procedure call returns a list of reports,Health Summary types and date ranges that can be displayedat the workstation.There are no input parameters fo this rpc.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | LIST^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return lists for list boxes
  First comment | {::nomarkdown}RPC: ORWRP REPORT LIST<br/>See RPC definition for details on input and output parameters{:/}
- Code | ```  N EOF<br/> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br/> K @ROOT<br/> D GETRPTS(.ROOT,.EOF)<br/> D GETHS(.ROOT,.EOF)<br/> D GETDT(.ROOT,.EOF)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N EOF<br> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br> K @ROOT<br> D GETRPTS(.ROOT,.EOF)<br> D GETHS(.ROOT,.EOF)<br> D GETDT(.ROOT,.EOF){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

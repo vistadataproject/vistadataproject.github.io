@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWPT BYWARD 
+## [RPCs](TableOfContent.md) &#8594; ORWPT BYWARD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of patients currently residing on a specified wardlocation.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | BYWARD^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Return a list of patients in a ward
  Input parameters | {::nomarkdown}WARD{:/}
- Code | ```  N ILST,DFN<br/> I +$G(WARD)<1 S LST(1)="^No ward identified" Q<br/> S (ILST,DFN)=0<br/> S WARD=$P(^DIC(42,WARD,0),"^")   ;DBIA #36<br/> F  S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0  D<br/> . S ILST=ILST+1,LST(ILST)=+DFN_U_$P(^DPT(+DFN,0),U)_U_$G(^DPT(+DFN,.101))<br/> I ILST<1 S LST(1)="^No patients found."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N ILST,DFN<br> I +$G(WARD)<1 S LST(1)="^No ward identified" Q<br> S (ILST,DFN)=0<br> S WARD=$P(^DIC(42,WARD,0),"^")   ;DBIA #36<br> F  S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0  D<br> . S ILST=ILST+1,LST(ILST)=+DFN_U_$P(^DPT(+DFN,0),U)_U_$G(^DPT(+DFN,.101))<br> I ILST<1 S LST(1)="^No patients found."{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAG3 TELEREADER READ_UNRD ADD 
+## [RPCs](TableOfContent.md) &#8594; MAG3 TELEREADER READ_UNRD ADD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,10 +20,12 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Add a consult and image pointers toUnread/Read List file (#2006.5849)and DICOM GMRC TEMP LIST file (#2006.5839){:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}An image IEN in IMAGE file (#2005) - ^MAG(2005,MAGDA){:/} | 
 | {::nomarkdown}MAGCNT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Count of new images captured{:/} | 
-| {::nomarkdown}MAGRIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}a request/consult IEN in REQUEST/CONSULTATION file (#123){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}MAGRIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}a request/consult IEN in REQUEST/CONSULTATION file (#123){:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

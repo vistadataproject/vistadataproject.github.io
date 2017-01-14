@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMG 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | INTERIMG^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
- Input parameters | {::nomarkdown}DFN<br/>DATE1<br/>DIR<br/>FORMAT{:/}
- Code | ```  D INTERIMG^LR7OGM(.ORY,DFN,DATE1,DIR,$G(FORMAT,1))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}DFN<br>DATE1<br>DIR<br>FORMAT{:/}
+ Code | {::nomarkdown}  D INTERIMG^LR7OGM(.ORY,DFN,DATE1,DIR,$G(FORMAT,1)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXA UNHOLD 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA UNHOLD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to remove a particular order from hold status.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | UNHOLD^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Release order from hold
- Input parameters | {::nomarkdown}ORID<br/>ORNP{:/}
- Code | ```  N ACTDA<br/> S ACTDA=$$ACTION^ORCSAVE("RL",+ORID,ORNP)<br/> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}ORID<br>ORNP{:/}
+ Code | {::nomarkdown}  N ACTDA<br> S ACTDA=$$ACTION^ORCSAVE("RL",+ORID,ORNP)<br> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

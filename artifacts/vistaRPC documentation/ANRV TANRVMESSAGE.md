@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ANRV TANRVMESSAGE 
+## [RPCs](TableOfContent.md) &#8594; ANRV TANRVMESSAGE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Create's and sends completed VIST Outcomes to the national mailgroup to populate the national database.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}ANRVCMD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}1> CREATE       Initializes message.2> APPEND       Add message text.3> SUBJECT      Give the message a subject.4> SENDTO       e-mail address to send message to.5> EXECUTE      Send the message using VistA Mail.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ANRVCMD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}1> CREATE       Initializes message.2> APPEND       Add message text.3> SUBJECT      Give the message a subject.4> SENDTO       e-mail address to send message to.5> EXECUTE      Send the message using VistA Mail.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

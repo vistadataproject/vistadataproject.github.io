@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWGRPC SETPREF 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC SETPREF 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | SETPREF^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - set a graph setting
- Input parameters | {::nomarkdown}SETTING<br/>PUBLIC{:/}
- Code | ```  D SETPREF^ORWGAPI("ORWGRPC",SETTING,+$G(PUBLIC))<br/> S ERR=$NA(^TMP("ORWGRPC",$J))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}SETTING<br>PUBLIC{:/}
+ Code | {::nomarkdown}  D SETPREF^ORWGAPI("ORWGRPC",SETTING,+$G(PUBLIC))<br> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

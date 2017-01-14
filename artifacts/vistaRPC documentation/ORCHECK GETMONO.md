@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORCHECK GETMONO 
+## [RPCs](TableOfContent.md) &#8594; ORCHECK GETMONO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETMONO^[ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
  Method comment | return a monograph
  Input parameters | {::nomarkdown}ORMONO{:/}
- Code | ```  Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))<br/> K ^TMP($J,"ORMONORPC")<br/> M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")<br/> K ^TMP($J,"ORMONORPC",0)<br/> S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))<br> K ^TMP($J,"ORMONORPC")<br> M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")<br> K ^TMP($J,"ORMONORPC",0)<br> S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDX1 PATWARD 
+## [RPCs](TableOfContent.md) &#8594; ORWDX1 PATWARD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,17 +20,19 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PATWARD^[ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N TEMP<br/> S ORY=""<br/> I $G(^DPT(DFN,.1))="" Q<br/> S TEMP=^DPT(DFN,.1)<br/> S ORY=TEMP_U_+$G(^DIC(42,+$O(^DIC(42,"B",TEMP,0)),44))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N TEMP<br> S ORY=""<br> I $G(^DPT(DFN,.1))="" Q<br> S TEMP=^DPT(DFN,.1)<br> S ORY=TEMP_U_+$G(^DIC(42,+$O(^DIC(42,"B",TEMP,0)),44)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

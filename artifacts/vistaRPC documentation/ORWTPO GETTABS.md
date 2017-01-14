@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWTPO GETTABS 
+## [RPCs](TableOfContent.md) &#8594; ORWTPO GETTABS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETTABS^[ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
  Method comment | RPC
  First comment | {::nomarkdown}get tab names for patient chart{:/}
- Code | ```  K VALUES<br/> D PDSET^ORWTPUP("ORCH INITIAL TAB",.VALUES)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  K VALUES<br> D PDSET^ORWTPUP("ORCH INITIAL TAB",.VALUES){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

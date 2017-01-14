@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG PROMPTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG PROMPTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Additional prompts for a given dialog element{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,10 +29,12 @@ title: VISTA RPC documentation
 | {::nomarkdown}DIALOG LINE CPT/POV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} |  | {::nomarkdown}For taxonomy dialog the type of finding (POV/CPT) for this dialog line{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PROMPT^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- Input parameters | {::nomarkdown}ORDLG<br/>ORDCUR<br/>ORFTYP{:/}
- Code | ```  D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}ORDLG<br>ORDCUR<br>ORFTYP{:/}
+ Code | {::nomarkdown}  D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGVA CREATE ARETPOL 
+## [RPCs](TableOfContent.md) &#8594; MAGVA CREATE ARETPOL 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Create a new record in Artifact Retention Policy file (#2006.921).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARTIFACT\)           = A pointer to ARTIFACT file (#2006.916) MAGPARAM(\RETENTION POLICY\)   = A pointer to RETENTION POLICY file (#2006.914) MAGPARAM(\SATISFIED DATE/TIME\) = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARTIFACT\)           = A pointer to ARTIFACT file (#2006.916) MAGPARAM(\RETENTION POLICY\)   = A pointer to RETENTION POLICY file (#2006.914) MAGPARAM(\SATISFIED DATE/TIME\) = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

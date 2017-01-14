@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS INPT 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS INPT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}INPT{:/}
  routine | [ORWDPS](http://code.osehra.org/dox/Routine_ORWDPS_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ description | {::nomarkdown}Checks restrictions for entering inpatient meds.  If no restrictions, a 0is returned.  If there is a restriction, it is returned in the format:     1^restriction text{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

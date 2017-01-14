@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGGUSER2 
+## [RPCs](TableOfContent.md) &#8594; MAGGUSER2 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns Array of info about user, and site settings.the user's security keys for later applications.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}MAGGWRKID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Workstation ID and Location from MAG.INI file section [SYS_SiteParam].{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}MAGGWRKID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Workstation ID and Location from MAG.INI file section [SYS_SiteParam].{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

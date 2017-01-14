@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY SURGERY CLASS 
+## [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY SURGERY CLASS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,14 +20,14 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC returns the record number of the class identified by the CLNAMEparameter in the TIU DOCUMENT DEFINITION file (#8925.1).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}CLNAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the name (ASCII LITERAL) of the Class for which the callingapplication needs an IEN.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -34,4 +35,6 @@ title: VISTA RPC documentation
  Method comment | RPC to identify class 
  First comment | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"{:/}
  Input parameters | {::nomarkdown}CLNAME{:/}
- Code | ```  S CLNAME=$G(CLNAME,"SURGICAL REPORTS")<br/> S Y=$$CLASS^TIUSROI(CLNAME)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S CLNAME=$G(CLNAME,"SURGICAL REPORTS")<br> S Y=$$CLASS^TIUSROI(CLNAME){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

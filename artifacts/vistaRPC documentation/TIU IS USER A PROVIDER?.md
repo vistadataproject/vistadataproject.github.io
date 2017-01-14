@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU IS USER A PROVIDER? 
+## [RPCs](TableOfContent.md) &#8594; TIU IS USER A PROVIDER? 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This Boolean RPC returns TRUE if the user was a known provider on the date specified.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,12 +28,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Optional FileMan formatted date (time). If none is provided the current date is assumed.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ISAPROV^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Is user a provider?
  First comment | {::nomarkdown}Checks USR CLASS PROVIDER AND 200 Person Class<br/>DATE must not include time (for ISA^USRLM){:/}
- Input parameters | {::nomarkdown}USER<br/>DATE{:/}
- Code | ```  S USER=$G(USER,DUZ)<br/> S DATE=$G(DATE,DT)<br/> S TIUY=$$PROVIDER^TIUPXAP1(USER,DATE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}USER<br>DATE{:/}
+ Code | {::nomarkdown}  S USER=$G(USER,DUZ)<br> S DATE=$G(DATE,DT)<br> S TIUY=$$PROVIDER^TIUPXAP1(USER,DATE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

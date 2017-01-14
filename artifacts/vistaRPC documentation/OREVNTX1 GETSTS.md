@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OREVNTX1 GETSTS 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 GETSTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETSTS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Order status
  Input parameters | {::nomarkdown}ORDID{:/}
- Code | ```  Q:'+ORDID<br/> Q:'$D(^OR(100,+ORDID,0))<br/> S ORY=$P($G(^OR(100,+ORDID,3)),U,3)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  Q:'+ORDID<br> Q:'$D(^OR(100,+ORDID,0))<br> S ORY=$P($G(^OR(100,+ORDID,3)),U,3){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

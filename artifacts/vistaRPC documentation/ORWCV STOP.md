@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWCV STOP 
+## [RPCs](TableOfContent.md) &#8594; ORWCV STOP 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to stop retrieval of cover sheet information for CPRS GUI.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | STOP^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  Method comment | stop cover sheet data retrieval
- Input parameters | {::nomarkdown}DFN<br/>IP<br/>HWND{:/}
- Code | ```  S NODE="ORWCV "_IP_"-"_HWND_"-"_DFN,ILST=0,DONE=0<br/> S ^XTMP(NODE,"STOP")=1,OK=1<br/> L +^XTMP(NODE):$S($G(DILOCKTM)>0:DILOCKTM,1:5)<br/> I $G(^XTMP(NODE,"DONE")) K ^XTMP(NODE)<br/> L -^XTMP(NODE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}DFN<br>IP<br>HWND{:/}
+ Code | {::nomarkdown}  S NODE="ORWCV "_IP_"-"_HWND_"-"_DFN,ILST=0,DONE=0<br> S ^XTMP(NODE,"STOP")=1,OK=1<br> L +^XTMP(NODE):$S($G(DILOCKTM)>0:DILOCKTM,1:5)<br> I $G(^XTMP(NODE,"DONE")) K ^XTMP(NODE)<br> L -^XTMP(NODE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

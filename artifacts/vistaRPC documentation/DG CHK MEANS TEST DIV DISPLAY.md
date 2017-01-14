@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DG CHK MEANS TEST DIV DISPLAY 
+## [RPCs](TableOfContent.md) &#8594; DG CHK MEANS TEST DIV DISPLAY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}CHECKS DIVISION FILE FOR DIV USER IS IN IF MEANS TEST REQUIRED IS SET TO YESRETURNS 1 IN 1ST STRING AND MEANS TEST TEXT  IN 2ND AND 3RD STRING (IF ANY) OTHERWISE RETURNS 0 IN 1ST STRING{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DUZ2{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Institution file pointer{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+| {::nomarkdown}DUZ2{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Institution file pointer{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

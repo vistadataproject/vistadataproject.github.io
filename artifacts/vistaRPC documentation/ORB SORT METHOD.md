@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORB SORT METHOD 
+## [RPCs](TableOfContent.md) &#8594; ORB SORT METHOD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the default sort method for notification display based on the precedence USER, DIVISION, SYSTEM, PACKAGE.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | SORT^[ORQORB](http://code.osehra.org/dox/Routine_ORQORB_source.html)
  Method comment | return notification sort method for user/division/system/pkg
- Code | ```  S ORY=$$GET^XPAR("USR^DIV^SYS^PKG","ORB SORT METHOD",1,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=$$GET^XPAR("USR^DIV^SYS^PKG","ORB SORT METHOD",1,"I"){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

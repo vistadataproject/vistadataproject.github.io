@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU GET DS TITLES 
+## [RPCs](TableOfContent.md) &#8594; TIU GET DS TITLES 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | SUMMARY^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | Get list of DS Titles
- Code | ```  D LIST(.TIUY,244)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  D LIST(.TIUY,244){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

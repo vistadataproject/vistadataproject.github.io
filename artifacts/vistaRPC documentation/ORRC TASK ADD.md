@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORRC TASK ADD 
+## [RPCs](TableOfContent.md) &#8594; ORRC TASK ADD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This call will accept data to create a new entry in the Patient Taskfile #102.3 and return the new identifier.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a string of ^-delimited attributes of a new task, in the form  Subject^Created^ByWhom^Patient^Priority^Due^Completed^ByWhom^Itemswhere Subject   = Text subject of task      Created   = date task was created, as YYYYMMDDHHMMSS      ByWhom    = user who created task, as pointer to #200      Patient   = patient that task is for, as pointer to #2      Priority  = H, M, or L      Due       = date task is due to be completed, as YYYMMDD[HHMM]      Completed = date task was completed as, YYYYMMDDHHMM      ByWhom    = user who completed task, as pointer to #200      Items     = linked items as ID,ID,...,ID where ID is XXX:### as                  DOC:### = documents in #8925                  ORR:### = order results in #100{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a string of ^-delimited attributes of a new task, in the form  Subject^Created^ByWhom^Patient^Priority^Due^Completed^ByWhom^Itemswhere Subject   = Text subject of task      Created   = date task was created, as YYYYMMDDHHMMSS      ByWhom    = user who created task, as pointer to #200      Patient   = patient that task is for, as pointer to #2      Priority  = H, M, or L      Due       = date task is due to be completed, as YYYMMDD[HHMM]      Completed = date task was completed as, YYYYMMDDHHMM      ByWhom    = user who completed task, as pointer to #200      Items     = linked items as ID,ID,...,ID where ID is XXX:### as                  DOC:### = documents in #8925                  ORR:### = order results in #100{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

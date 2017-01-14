@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DENTV TP FILE EXAM TRANSACTION 
+## [RPCs](TableOfContent.md) &#8594; DENTV TP FILE EXAM TRANSACTION 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Files the new exam template modal data (OHA,PAR,OCC,TMJ) into a record in 228.2 of type 5:EXAM Input variables:  SAVE DATA IN (FILED/UNFILED) ************************************** DATA(\FLAG\)= ACTION FLAG, A OR BLANK FOR ADD, M FOR MODIFY DATA(\DPAT\)= Patient IEN DATA(\PROV\)= Provider IEN DATA(\DATE\)= Date of transaction DATA(\OHA\)=CI PLAQUE INDEX^CARIES RISK^ORAL HYGIENE^XEROSTOMIA DATA(\OCC\)=MANDIBULAR^OPEN BITE^CROSS BITE^LEFT MOLAR RELAT^RIGHT MOLAR RELAT^LEFT CUSPID RELAT^RIGHT CUSPID RELAT^OVERBITE^OVERJET DATA(\PAR\)=BRUXING^CLENCHING^HISTORY^ DATA(\PARWP\,N)=PARAFUNCTIONAL HABIT NOTES (WORD PROCESSING) DATA(\PARC\)=ATTRITION^ABRASION^EROSION^HYPERTROPHY^OBSERVED^FACETED^ABFRACTION DATA(\PARCWP\,N)=PARAFUNCTIONAL HABITS CLINICAL FINDINGS NOTES (WORD PROCESSING) DATA(\TMJ\)=TRAUMA^SPONT PAIN^POPPING^CLICKING^PAIN OPENING^PAIN CHEWING^LIMITED OPENING^ DATA(\TMJWP\,N)=TMJ OTHER NOTES (WORD PROCESSING) DATA(\TMJC\)=MAX INCISAL OPENING^LEFT LATERAL^RIGHT LATERAL^CF POPPING^CF CLICKING^CF PAIN^DEVIATION^ DATA(\TMJCWP\,N)=TMJ CF NOTES (WORD PROCESSING) DATA(\SOCH\)=PAT REP SOCH^SH CIGARETTES^CIGARETTE QUANTITY^CIGARETTE FREQUENCY^CIGARETTE YEARS^SH PIPE/CIGAR^PIPE QUANTITY^PIPE FREQUENCY^PIPE YEARS^SH SMOKELESS^SMOKELESS QUANTITY^SMOKELESS FREQUENCY^SMOKELESS YEARS^SHALCOHOL^ALCOHOL QUANTITY^ALOCHOL FREQUENCY^ALCOHOL YEARS^ DATA(\SHDA\)=SH DRUG ABUSE^SH DRUG ABUSE DESCRIPTION^ DATA(\SHWP\,N)=SH NOTES (WORD PROCESSING)  Return variables:  1^Successful message -1^Error Message{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}See documentation in FILEX^DENTVTPA.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}See documentation in FILEX^DENTVTPA.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETLINK 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETLINK 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns template linked to a specific title or reason for request.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETLINK^[TIUSRVT1](http://code.osehra.org/dox/Routine_TIUSRVT1_source.html)
  Method comment | Returns template linked to title or reason for request
  Input parameters | {::nomarkdown}LINK{:/}
- Code | ```  N IDX<br/> S ORY="",IDX=$O(^TIU(8927,"AL",LINK,0))<br/> I +IDX,$P($G(^TIU(8927,IDX,0)),U,4)'="I" S ORY=$$NODEDATA^TIUSRVT(IDX)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N IDX<br> S ORY="",IDX=$O(^TIU(8927,"AL",LINK,0))<br> I +IDX,$P($G(^TIU(8927,IDX,0)),U,4)'="I" S ORY=$$NODEDATA^TIUSRVT(IDX){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

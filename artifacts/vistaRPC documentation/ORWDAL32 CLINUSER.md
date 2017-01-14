@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDAL32 CLINUSER 
+## [RPCs](TableOfContent.md) &#8594; ORWDAL32 CLINUSER 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Determine if user can perform cover sheet allergy actions.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CLINUSER^[ORWDAL33](http://code.osehra.org/dox/Routine_ORWDAL33_source.html)
  Method comment | can user mark allergy as entered in error
- Code | ```  N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE<br/> S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC<br/> I Y=-1 S ORY=0 Q  ;Parameter not found so quit<br/> S PRM=+Y<br/> S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q<br/> D ENVAL^XPAR(.ORLST,PRM)<br/> I ORLST>0 D<br/> . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D<br/> . . Q:ORX'["USR(8930"<br/> . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))<br/> S ORY=$G(VALUE)<br/> I ORY'="" Q<br/> S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q<br/> S ORY=0 Q```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE<br> S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC<br> I Y=-1 S ORY=0 Q  ;Parameter not found so quit<br> S PRM=+Y<br> S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q<br> D ENVAL^XPAR(.ORLST,PRM)<br> I ORLST>0 D<br> . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D<br> . . Q:ORX'["USR(8930"<br> . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)<br> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)<br> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))<br> S ORY=$G(VALUE)<br> I ORY'="" Q<br> S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q<br> S ORY=0 Q{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

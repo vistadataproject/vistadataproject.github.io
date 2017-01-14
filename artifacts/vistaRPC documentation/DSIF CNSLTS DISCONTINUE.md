@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS DISCONTINUE 
+## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS DISCONTINUE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC allows for the discontinuing of a selected Consult. Cloned from ORQQCN DISCONTINUE{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,4 +28,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFPROV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Provider who Discontinued or Denied consult.{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date the consult was discontinued or denied.{:/} | 
 | {::nomarkdown}DSIFACTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied{:/} | 
-| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}The array of comments associated with the discontinue/deny for the consult.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}The array of comments associated with the discontinue/deny for the consult.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

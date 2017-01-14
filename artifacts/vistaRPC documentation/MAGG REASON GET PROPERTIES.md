@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGG REASON GET PROPERTIES 
+## [RPCs](TableOfContent.md) &#8594; MAGG REASON GET PROPERTIES 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This remote procedure returns the reason properties from the MAG REASONfile (#2005.88){:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}RSNID{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifier of the reason: Internal Entry Number of the record in the MAGREASON file (#2005.88) or the reason code (see the FLAGS parameter).{:/} | 
-| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control execution (can be combined):   C  By default, value of the RSNID parameter is treated as     the reason IEN. If this flag is provided, then the reason     code should be passed as the value of the RSNID.   F  Include full details (description text). By default, only     the summary data is returned.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control execution (can be combined):   C  By default, value of the RSNID parameter is treated as     the reason IEN. If this flag is provided, then the reason     code should be passed as the value of the RSNID.   F  Include full details (description text). By default, only     the summary data is returned.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; XWB IM HERE 
+## [RPCs](TableOfContent.md) &#8594; XWB IM HERE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a simple value to the client.  Used to establish continued existence of the client to the server: resets the server READ timeout.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | IMHERE^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | P6
  First comment | {::nomarkdown}Entry point for XWB IM HERE remote procedure{:/}
- Code | ```  S RESULT=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S RESULT=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

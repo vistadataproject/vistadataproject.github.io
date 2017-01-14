@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWU NPHASKEY 
+## [RPCs](TableOfContent.md) &#8594; ORWU NPHASKEY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a 1 if a specified user holds a specified key, otherwise returns0.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | NPHASKEY^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns TRUE if the person has the security key
- Input parameters | {::nomarkdown}NP<br/>KEY{:/}
- Code | ```  S VAL=''$D(^XUSEC(KEY,NP))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}NP<br>KEY{:/}
+ Code | {::nomarkdown}  S VAL=''$D(^XUSEC(KEY,NP)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

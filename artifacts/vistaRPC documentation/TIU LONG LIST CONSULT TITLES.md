@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU LONG LIST CONSULT TITLES 
+## [RPCs](TableOfContent.md) &#8594; TIU LONG LIST CONSULT TITLES 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC serves data to a longlist of selectable TITLES for CONSULTS.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,11 +28,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the direction in which the longlist is scrolling from thereference title.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | LNGCNSLT^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | Handle long list of titles for CONSULTS
- Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N CLASS S CLASS=+$$CLASS^TIUCNSLT Q:+CLASS'>0<br/> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}FROM<br>DIR{:/}
+ Code | {::nomarkdown}  N CLASS S CLASS=+$$CLASS^TIUCNSLT Q:+CLASS'>0<br> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

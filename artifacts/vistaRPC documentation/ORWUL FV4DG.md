@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWUL FV4DG 
+## [RPCs](TableOfContent.md) &#8594; ORWUL FV4DG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | FV4DG^[ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
  Method comment | return the current full list & item count
  Input parameters | {::nomarkdown}DGNM{:/}
- Code | ```  S VAL=$O(^ORD(101.44,"B","ORWDSET "_DGNM,0))<br/> I 'VAL D<br/> . N UPDTIME,ATTEMPT<br/> . S UPDTIME=$G(^ORD(101.43,"AH","S."_DGNM)),ATTEMPT=0<br/> . I UPDTIME="" S UPDTIME=$H,^ORD(101.43,"AH","S."_DGNM)=UPDTIME<br/> . D FVBLD<br/> . S VAL=$O(^ORD(101.44,"B","ORWDSET "_DGNM,0))<br/> I ($P(^ORD(101.44,+VAL,0),U,6)'=$G(^ORD(101.43,"AH","S."_DGNM))) D<br/> . ; -- see if a task is already queued to rebuild this<br/> . L +^XTMP("ORWDSET "_DGNM):2 E  Q<br/> . N ZTSK S ZTSK=+$G(^XTMP("ORWDSET "_DGNM,"TASK"))<br/> . I ZTSK D ISQED^%ZTLOAD S ZTSK=+ZTSK(0)<br/> . I ZTSK L -^XTMP("ORWDSET "_DGNM) Q<br/> . ; -- create a task to rebuild the list<br/> . D FVBLDQ(DGNM)<br/> . L -^XTMP("ORWDSET "_DGNM)<br/> S $P(VAL,U,2)=$P($G(^ORD(101.44,+VAL,20,0)),U,4)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S VAL=$O(^ORD(101.44,"B","ORWDSET "_DGNM,0))<br> I 'VAL D<br> . N UPDTIME,ATTEMPT<br> . S UPDTIME=$G(^ORD(101.43,"AH","S."_DGNM)),ATTEMPT=0<br> . I UPDTIME="" S UPDTIME=$H,^ORD(101.43,"AH","S."_DGNM)=UPDTIME<br> . D FVBLD<br> . S VAL=$O(^ORD(101.44,"B","ORWDSET "_DGNM,0))<br> I ($P(^ORD(101.44,+VAL,0),U,6)'=$G(^ORD(101.43,"AH","S."_DGNM))) D<br> . ; -- see if a task is already queued to rebuild this<br> . L +^XTMP("ORWDSET "_DGNM):2 E  Q<br> . N ZTSK S ZTSK=+$G(^XTMP("ORWDSET "_DGNM,"TASK"))<br> . I ZTSK D ISQED^%ZTLOAD S ZTSK=+ZTSK(0)<br> . I ZTSK L -^XTMP("ORWDSET "_DGNM) Q<br> . ; -- create a task to rebuild the list<br> . D FVBLDQ(DGNM)<br> . L -^XTMP("ORWDSET "_DGNM)<br> S $P(VAL,U,2)=$P($G(^ORD(101.44,+VAL,20,0)),U,4){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

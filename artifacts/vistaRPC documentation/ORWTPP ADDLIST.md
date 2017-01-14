@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWTPP ADDLIST 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP ADDLIST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,7 +21,7 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}adds current user to a team{:/}
  Input parameters | {::nomarkdown}VALUE{:/}
- Code | ```  D ADDLIST^ORWTPT(.OK,VALUE,DUZ)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  D ADDLIST^ORWTPT(.OK,VALUE,DUZ){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

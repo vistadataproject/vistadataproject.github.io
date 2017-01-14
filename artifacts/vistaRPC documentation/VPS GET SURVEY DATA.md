@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; VPS GET SURVEY DATA 
+## [RPCs](TableOfContent.md) &#8594; VPS GET SURVEY DATA 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Retrieves an array containing the patient's Clinical Survey information.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -29,4 +30,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}VPSFDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} |  | {::nomarkdown}Date From for filtering the results{:/} | 
 | {::nomarkdown}VPSTDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} |  | {::nomarkdown}Date To for filtering the results{:/} | 
 | {::nomarkdown}VPSNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} |  | {::nomarkdown}Maxumum number of occurrences to return.{:/} | 
-| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID TYPE such as SSN or DFN OR ICN OR VIC/CAC.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

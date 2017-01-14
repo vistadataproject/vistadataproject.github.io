@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWCIRN CHECKLINK 
+## [RPCs](TableOfContent.md) &#8594; ORWCIRN CHECKLINK 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Check to see if HL7 TCP link is active.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CHKLNK^[ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
  Method comment | Check for active HL7 TCP link on local system
- Code | ```  S ORY=$$STAT^HLCSLM```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=$$STAT^HLCSLM{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

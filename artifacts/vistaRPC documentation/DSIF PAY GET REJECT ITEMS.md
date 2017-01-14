@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF PAY GET REJECT ITEMS 
+## [RPCs](TableOfContent.md) &#8594; DSIF PAY GET REJECT ITEMS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETREJ{:/}
  routine | [DSIFPAY6](http://code.osehra.org/dox/Routine_DSIFPAY6_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
- description | {::nomarkdown}Returns a list of rejects sorted by rejected Batches{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Returns a list of rejects sorted by rejected Batches{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

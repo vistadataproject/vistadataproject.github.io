@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWU VALIDSIG 
+## [RPCs](TableOfContent.md) &#8594; ORWU VALIDSIG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Validates a broker encrypted electronic signature.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VALIDSIG^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns TRUE if valid electronic signature
  Input parameters | {::nomarkdown}X{:/}
- Code | ```  S X=$$DECRYP^XUSRB1(X),ESOK=0                   ; network encrypted<br/> D HASH^XUSHSHP<br/> I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S X=$$DECRYP^XUSRB1(X),ESOK=0                   ; network encrypted<br> D HASH^XUSHSHP<br> I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

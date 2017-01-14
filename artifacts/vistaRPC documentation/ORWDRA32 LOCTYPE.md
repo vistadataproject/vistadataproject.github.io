@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDRA32 LOCTYPE 
+## [RPCs](TableOfContent.md) &#8594; ORWDRA32 LOCTYPE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | LOCTYPE^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | Returns type of location (C,W)
  Input parameters | {::nomarkdown}ORLOC{:/}
- Code | ```  S Y=-1<br/> Q:$G(ORLOC)=""<br/> S Y=$P($G(^SC(+$G(ORLOC),0)),U,3)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S Y=-1<br> Q:$G(ORLOC)=""<br> S Y=$P($G(^SC(+$G(ORLOC),0)),U,3)<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

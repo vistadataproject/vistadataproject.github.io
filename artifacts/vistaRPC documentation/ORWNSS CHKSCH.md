@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWNSS CHKSCH 
+## [RPCs](TableOfContent.md) &#8594; ORWNSS CHKSCH 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CHKSCH^[ORWNSS](http://code.osehra.org/dox/Routine_ORWNSS_source.html)
  Method comment | Validate schedule
  Input parameters | {::nomarkdown}SCH{:/}
- Code | ```  Q:SCH=""<br/> D VALSCH^ORWDPS33(.ORY,SCH,"I")<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  Q:SCH=""<br> D VALSCH^ORWDPS33(.ORY,SCH,"I")<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

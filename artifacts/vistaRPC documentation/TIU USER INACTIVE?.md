@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU USER INACTIVE? 
+## [RPCs](TableOfContent.md) &#8594; TIU USER INACTIVE? 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}RPC evaluates user's DIUSER status and termination status when selected.Returns 0 if active        1 if inactive{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TIUUSR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the user in the NEW PERSON file (#200).{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | USRINACT^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Is user inactive?
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I"){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

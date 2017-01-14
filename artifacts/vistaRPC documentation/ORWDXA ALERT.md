@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXA ALERT 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA ALERT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,12 +21,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Set order to send an alert when the order is resulted.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ALERT^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | alert user (ORDUZ) when order (ORID) resulted
  First comment | {::nomarkdown}if no user passed, use ordering provider:{:/}
- Input parameters | {::nomarkdown}ORID<br/>ORDUZ{:/}
- Code | ```  I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)<br/> I $L($G(ORDUZ))<1 S ORDUZ=DUZ<br/> S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}ORID<br>ORDUZ{:/}
+ Code | {::nomarkdown}  I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)<br> I $L($G(ORDUZ))<1 S ORDUZ=DUZ<br> S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

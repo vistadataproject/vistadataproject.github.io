@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OOPS DELETE WITNESS 
+## [RPCs](TableOfContent.md) &#8594; OOPS DELETE WITNESS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This broker call will delete witness information from the \CA1W\ node in file 2260 based on the IEN and sub file id passed in.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This required input parameter must contain the IEN and record number of thesubfile for witness information to be deleted. The input format is IEN^SUB.{:/} | 
-| {::nomarkdown}OOPS CHANGE CAS{:/} |  |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}OOPS CHANGE CAS{:/} |  |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

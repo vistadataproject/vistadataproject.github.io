@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDFH NFSLOC READY 
+## [RPCs](TableOfContent.md) &#8594; ORWDFH NFSLOC READY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return '1' if hospital location has been entered in NUTRITION LOCATION file for outpatient meal ordering.Return '0' if not yet entered.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | OPLOCOK^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | OK to order OP Meals from this location
  Input parameters | {::nomarkdown}ORLOC{:/}
- Code | ```  I 'ORLOC S ORY=0 Q<br/> S ORY=$S($L($$NFSLOC^FHOMAPI(ORLOC))>0:1,1:0)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  I 'ORLOC S ORY=0 Q<br> S ORY=$S($L($$NFSLOC^FHOMAPI(ORLOC))>0:1,1:0)<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

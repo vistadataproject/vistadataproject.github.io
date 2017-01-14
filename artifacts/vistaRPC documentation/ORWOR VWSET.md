@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWOR VWSET 
+## [RPCs](TableOfContent.md) &#8594; ORWOR VWSET 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,7 +21,7 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Sets the default view on the orders tab for the user.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
  Method comment | Set the preferred view for orders
  First comment | {::nomarkdown}VIEW:  semi-colon delimited record<br/>1 - Relative From Date/Time or ""<br/>2 - Relative Thru Date/Time or ""<br/>3 - Filter<br/>4 - Display Group Pointer<br/>5 - Format (preserve for list manager)<br/>6 - chronological display (R or F)<br/>7 - sort by display group{:/}
  Input parameters | {::nomarkdown}VIEW{:/}
- Code | ```  N FMT<br/> S $P(VIEW,";",4)=$P($G(^ORD(100.98,+$P(VIEW,";",4),0)),U,3)<br/> S FMT=$P($$GET^XPAR("ALL","ORCH CONTEXT ORDERS",1,"I"),";",5)<br/> S:'$L(FMT) FMT="L" S $P(VIEW,";",5)=FMT<br/> D EN^XPAR(DUZ_";VA(200,","ORCH CONTEXT ORDERS",1,VIEW,.ORERR)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N FMT<br> S $P(VIEW,";",4)=$P($G(^ORD(100.98,+$P(VIEW,";",4),0)),U,3)<br> S FMT=$P($$GET^XPAR("ALL","ORCH CONTEXT ORDERS",1,"I"),";",5)<br> S:'$L(FMT) FMT="L" S $P(VIEW,";",5)=FMT<br> D EN^XPAR(DUZ_";VA(200,","ORCH CONTEXT ORDERS",1,VIEW,.ORERR){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

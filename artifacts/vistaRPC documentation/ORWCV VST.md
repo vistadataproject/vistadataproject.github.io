@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWCV VST 
+## [RPCs](TableOfContent.md) &#8594; ORWCV VST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns a list of appointments and admissions for a patient basedon parameters that define the beginning and ending range for CPRS GUI.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VST1^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
- Input parameters | {::nomarkdown}DFN<br/>BEG<br/>END<br/>SKIP{:/}
- Code | ```  N ERR,ERRMSG<br/> S ERR=0 ; kludge to return errors<br/> Q:'$G(DFN)<br/> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br/> I ERR K ORVISIT S ORVISIT(1)=ERRMSG```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}DFN<br>BEG<br>END<br>SKIP{:/}
+ Code | {::nomarkdown}  N ERR,ERRMSG<br> S ERR=0 ; kludge to return errors<br> Q:'$G(DFN)<br> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br> I ERR K ORVISIT S ORVISIT(1)=ERRMSG{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; PSB REPORT 
+## [RPCs](TableOfContent.md) &#8594; PSB REPORT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Return the text for the specified report and the user has the option to print the reports.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -48,4 +49,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSB23{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reserved parameter 23 for future use.{:/} | 
 | {::nomarkdown}PSB24{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reserved parameter 24 for future use.{:/} | 
 | {::nomarkdown}PSBCLLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}LIST ARRAY FOR CLINICS{:/} | 
-| {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+| {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

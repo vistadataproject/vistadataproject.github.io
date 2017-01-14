@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OR GET COMBAT VET 
+## [RPCs](TableOfContent.md) &#8594; OR GET COMBAT VET 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CV^[ORMARKER](http://code.osehra.org/dox/Routine_ORMARKER_source.html)
  Method comment | Combat Vet Marker
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N CVE S CVE=$$CVEDT^DGCV(DFN)<br/> I ($P(CVE,"^",1)'=1)!($P(CVE,"^",3)=0) S RVAL(0)="NOTCV" Q<br/> N VASV<br/> D SVC^VADPT<br/> S RVAL(0)=""<br/> I $D(VASV(6,1))=1 S RVAL(0)=VASV(6,1)<br/> S RVAL(1)=""<br/> I $D(VASV(6,3))=1 S RVAL(1)=VASV(6,3)<br/> S RVAL(2)=""<br/> I $D(VASV(6,5))=1 S RVAL(2)=VASV(6,5)<br/> S RVAL(3)=""<br/> I $D(VASV(10,1))=1 S RVAL(3)=VASV(10,1)<br/> S RVAL(4)=""<br/> I (VASV(11)>0)!(VASV(12)>0)!(VASV(13)>0) S RVAL(4)="OEF/OIF"<br/> S RVAL(5)=""<br/> S RVAL(6)=""<br/> S RVAL(7)=""<br/> D KVA^VADPT<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N CVE S CVE=$$CVEDT^DGCV(DFN)<br> I ($P(CVE,"^",1)'=1)!($P(CVE,"^",3)=0) S RVAL(0)="NOTCV" Q<br> N VASV<br> D SVC^VADPT<br> S RVAL(0)=""<br> I $D(VASV(6,1))=1 S RVAL(0)=VASV(6,1)<br> S RVAL(1)=""<br> I $D(VASV(6,3))=1 S RVAL(1)=VASV(6,3)<br> S RVAL(2)=""<br> I $D(VASV(6,5))=1 S RVAL(2)=VASV(6,5)<br> S RVAL(3)=""<br> I $D(VASV(10,1))=1 S RVAL(3)=VASV(10,1)<br> S RVAL(4)=""<br> I (VASV(11)>0)!(VASV(12)>0)!(VASV(13)>0) S RVAL(4)="OEF/OIF"<br> S RVAL(5)=""<br> S RVAL(6)=""<br> S RVAL(7)=""<br> D KVA^VADPT<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

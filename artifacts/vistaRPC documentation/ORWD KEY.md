@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWD KEY 
+## [RPCs](TableOfContent.md) &#8594; ORWD KEY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC which receives a key name and returns a 1 if the user holds the key,otherwise a 0 is returned.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | KEY^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Returns 1 if user possesses the key
- Input parameters | {::nomarkdown}KEYNAME<br/>USERID{:/}
- Code | ```  S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}KEYNAME<br>USERID{:/}
+ Code | {::nomarkdown}  S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; SPN PROGRESS NOTES WRAPPER 
+## [RPCs](TableOfContent.md) &#8594; SPN PROGRESS NOTES WRAPPER 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Submits progress note to VistA and returns a confirmation or error message, if problem occurred.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -33,4 +34,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}SUPPRESS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Suppress execution of Commit Action? (Not used, leave blank){:/} | 
 | {::nomarkdown}NOASF{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Set Asave Cross-reference? (Not used, leave blank){:/} | 
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal ID of employee entering Progress Note{:/} | 
-| {::nomarkdown}SPNSIG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Electronic Signature Code of employee{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}SPNSIG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Electronic Signature Code of employee{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

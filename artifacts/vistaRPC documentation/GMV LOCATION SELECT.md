@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; GMV LOCATION SELECT 
+## [RPCs](TableOfContent.md) &#8594; GMV LOCATION SELECT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Select a hospital location by name, from a patient appointment or from apatient admission. Can also generate a list of active clinics. This remote procedure is documented in Integration Agreement 4461.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,12 +28,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Other data as required for the call.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | RPC^[GMVRPCHL](http://code.osehra.org/dox/Routine_GMVRPCHL_source.html)
  Method comment | [Procedure] Main RPC call tag
  First comment | {::nomarkdown}RPC: [GMV LOCATION SELECT]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
- Input parameters | {::nomarkdown}OPTION<br/>DATA{:/}
- Code | ```  S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS<br/> D:$T(@OPTION)]"" @OPTION<br/> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br/> D CLEAN^DILF,KVAR^VADPT```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}OPTION<br>DATA{:/}
+ Code | {::nomarkdown}  S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS<br> D:$T(@OPTION)]"" @OPTION<br> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br> D CLEAN^DILF,KVAR^VADPT{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

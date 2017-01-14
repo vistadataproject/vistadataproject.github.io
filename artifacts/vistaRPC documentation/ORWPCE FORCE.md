@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWPCE FORCE 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE FORCE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the value of the ORWPCE FORCE GUI PCE ENTRY parameter.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,11 +28,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Location to use in checking the parameter.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | FORCE^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Retrieve FORCE GUI PCE Entry for a given User/Location
- Input parameters | {::nomarkdown}USER<br/>LOC{:/}
- Code | ```  N SRV,ORTMP,ORERR<br/> S USER=$G(USER,DUZ)<br/> S SRV=$P($G(^VA(200,USER,5)),U)<br/> D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE FORCE PCE ENTRY","Q",.ORERR)<br/> S ORY=+$P($G(ORTMP(1)),U,2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}USER<br>LOC{:/}
+ Code | {::nomarkdown}  N SRV,ORTMP,ORERR<br> S USER=$G(USER,DUZ)<br> S SRV=$P($G(^VA(200,USER,5)),U)<br> D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE FORCE PCE ENTRY","Q",.ORERR)<br> S ORY=+$P($G(ORTMP(1)),U,2){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

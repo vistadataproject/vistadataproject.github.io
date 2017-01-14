@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAG4 DATA FROM IMPORT QUEUE 
+## [RPCs](TableOfContent.md) &#8594; MAG4 DATA FROM IMPORT QUEUE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETARR{:/}
  routine | [MAGGSIUI](http://code.osehra.org/dox/Routine_MAGGSIUI_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}This call returns the Array of Data from the Import Queue, given a QUEUE NumberCalled from Delphi and 'M'{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}This call returns the Array of Data from the Import Queue, given a QUEUE NumberCalled from Delphi and 'M'{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

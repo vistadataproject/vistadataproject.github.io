@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWRP WINPRINT DEFAULT 
+## [RPCs](TableOfContent.md) &#8594; ORWRP WINPRINT DEFAULT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns whether the Windows printer is set as the default for the user. {:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | WINDFLT^[ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  Method comment | Windows printer as default?
- Code | ```  S ORY=+$$GET^XPAR("ALL","ORWDP WINPRINT DEFAULT")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=+$$GET^XPAR("ALL","ORWDP WINPRINT DEFAULT"){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDBA2 DELPDL 
+## [RPCs](TableOfContent.md) &#8594; ORWDBA2 DELPDL 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Delete a selected diagnosis code from a Clinician's Personal DX List. The personal dx list is stored in CPRS Diagnosis Provider file, file # 5000017.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,12 +28,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORDXA{:/} | {::nomarkdown}REFERENCE{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array of diagnoses codes to be deleted from the clinician's personaldx list.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | DELPDL^[ORWDBA2](http://code.osehra.org/dox/Routine_ORWDBA2_source.html)
  Method comment | Delete from Personal Diagnosis List
  First comment | {::nomarkdown}Delete a selected diagnosis code or group of diagnoses codes from a<br/>Clinician's Personal DX List.<br/>Input Variables:<br/>ORCIEN    Clinician Internal ID number<br/>ORDXA     Array of dx codes to be deleted from personal dx list<br/>Output Variable:<br/>Y         Return value, 1 successful, 0 unsuccessful<br/>Local Variables:<br/>DXI       Diagnosis code array index<br/>EM        Error Message<br/>FDA       FileMan Data Array<br/>IEN       Interanl Entry Number<br/>RF        Record Found{:/}
- Input parameters | {::nomarkdown}ORCIEN<br/>ORDXA{:/}
- Code | ```  N DXI,EM,FDA,IEN,RF<br/> D GETS^DIQ(200,ORCIEN,"351*,","","RF","EM")<br/> I $D(RF)=0 S Y=0 Q<br/> S IEN="" F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br/> .S DXI="" F  S DXI=$O(ORDXA(DXI)) Q:DXI=""  D<br/> .. I RF(200.0351,IEN,.01)=ORDXA(DXI) D<br/> ... D FDA^DILF(200.0351,IEN,.01,"","@","FDA","EM")<br/> ... D FILE^DIE("","FDA","EM")<br/> S Y=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}ORCIEN<br>ORDXA{:/}
+ Code | {::nomarkdown}  N DXI,EM,FDA,IEN,RF<br> D GETS^DIQ(200,ORCIEN,"351*,","","RF","EM")<br> I $D(RF)=0 S Y=0 Q<br> S IEN="" F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br> .S DXI="" F  S DXI=$O(ORDXA(DXI)) Q:DXI=""  D<br> .. I RF(200.0351,IEN,.01)=ORDXA(DXI) D<br> ... D FDA^DILF(200.0351,IEN,.01,"","@","FDA","EM")<br> ... D FILE^DIE("","FDA","EM")<br> S Y=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

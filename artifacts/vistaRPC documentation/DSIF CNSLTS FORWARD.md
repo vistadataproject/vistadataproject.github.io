@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS FORWARD 
+## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS FORWARD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC allows for a Consult to be forwarded to a different Service. Cloned from ORQQCN FORWARD{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -29,4 +30,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFATTN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the provider whose attention the consult is sent to. Not required.{:/} | 
 | {::nomarkdown}DSIFURG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the urgency of the request.{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the actual date and time of activity.{:/} | 
-| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the comments associated with the forward consult request.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the comments associated with the forward consult request.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

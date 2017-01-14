@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORRC ORDERS BY PATIENT 
+## [RPCs](TableOfContent.md) &#8594; ORRC ORDERS BY PATIENT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This call returns a list of orders for a patient by various views.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the pointer to the user in the New Person file #200; it is requiredfor Unsigned Orders.{:/} | 
 | {::nomarkdown}DETAILS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This flag indicates whether to return the details with each order (true),or just the list of order ID's (false).{:/} | 
 | {::nomarkdown}START{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to start searching for orders, in the form YYYMMDDHHMMSS.{:/} | 
-| {::nomarkdown}STOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to stop searching for orders, in the form YYYMMDDHHMMSS.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}STOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to stop searching for orders, in the form YYYMMDDHHMMSS.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

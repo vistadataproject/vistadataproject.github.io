@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; YTQ CHOICETYPE DELETE 
+## [RPCs](TableOfContent.md) &#8594; YTQ CHOICETYPE DELETE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}CTDEL{:/}
  routine | [YTQAPI4](http://code.osehra.org/dox/Routine_YTQAPI4_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}This API will safely delete all 601.751 enteries of the choicetype presented. This API will not allow deletions of Choicetypes referrefd to in the MH Question file (601.72)         Input: CHOICETYPE        Output: DELETED if sucessful                LIST OF question iens if in use{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}This API will safely delete all 601.751 enteries of the choicetype presented. This API will not allow deletions of Choicetypes referrefd to in the MH Question file (601.72)         Input: CHOICETYPE        Output: DELETED if sucessful                LIST OF question iens if in use{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

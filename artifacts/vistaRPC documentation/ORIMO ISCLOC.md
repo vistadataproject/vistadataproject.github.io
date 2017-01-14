@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORIMO ISCLOC 
+## [RPCs](TableOfContent.md) &#8594; ORIMO ISCLOC 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ISCLOC^[ORIMO](http://code.osehra.org/dox/Routine_ORIMO_source.html)
  Method comment | Is it a clinical location
  Input parameters | {::nomarkdown}ALOC{:/}
- Code | ```  S ORY=0<br/> Q:'$D(^SC(+ALOC,0))<br/> I $P(^SC(+ALOC,0),U,3)="C" S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^SC(+ALOC,0))<br> I $P(^SC(+ALOC,0),U,3)="C" S ORY=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

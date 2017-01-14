@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIRPARM ENPO UPDATE PR ORD 
+## [RPCs](TableOfContent.md) &#8594; DSIRPARM ENPO UPDATE PR ORD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,11 +20,13 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC is used to enter/edit the default Print Order of documents released by each facility specified in the DSIR FACILITY PARAMETERS File (#19620.701).  This data is stored in the DSIR ROI PRINT ORDER File (#19620.702).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pointer to the DSIR FACILITY PARAMETERS File (#19620.701) same as INSTITUTION File (#4).{:/} | 
 | {::nomarkdown}PRTORD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Print Order IEN or Name if adding a new entry in the DSIR ROI PRINT ORDER File (#19620.702).{:/} | 
 | {::nomarkdown}PRSEQ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Print Order Sequence as specified by the ROI Plus GUI application.{:/} | 
-| {::nomarkdown}PRTIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Print Order IEN (Optional - if null a new entry will be created, for edit it is Required)This is the IEN for the entry in file 19620.702{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}PRTIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Print Order IEN (Optional - if null a new entry will be created, for edit it is Required)This is the IEN for the entry in file 19620.702{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

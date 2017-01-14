@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; YTQ TSLIST1 
+## [RPCs](TableOfContent.md) &#8594; YTQ TSLIST1 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns a delimited list, one field per line of all fields in 601.71 for a specified entry.FIELD LABEL ^ FIELD VALUE{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}CODE{:/} |  | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}.01 entry IN 601.71{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}CODE{:/} |  | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}.01 entry IN 601.71{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

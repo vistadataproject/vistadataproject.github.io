@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDOR VMSLCT 
+## [RPCs](TableOfContent.md) &#8594; ORWDOR VMSLCT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the default list for the vitals order dialog in CPRS GUI.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VMSLCT^[ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
  Method comment | return default lists for vitals dialog
- Code | ```  N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEAS<br/> S LST($$NXT)="~Schedules"    D SCHED```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N ILST S ILST=0<br> S LST($$NXT)="~Measurements" D MEAS<br> S LST($$NXT)="~Schedules"    D SCHED{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

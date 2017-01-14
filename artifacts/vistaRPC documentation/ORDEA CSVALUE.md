@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORDEA CSVALUE 
+## [RPCs](TableOfContent.md) &#8594; ORDEA CSVALUE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CSVALUE^[ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  Method comment | return 1 if the order (ORID) is a controlled substance, 0 for non-controlled substance
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  N OROI,ORPSTYPE,ORRXDG<br/> S ORY=0,ORPSTYPE=""<br/> S OROI=$$OI^ORQOR2(+ORID)<br/> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br/> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br/> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br/> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br/> Q:ORPSTYPE=""<br/> D CSCHECK(.ORY,OROI,ORPSTYPE)<br/> S ORY=+ORY```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N OROI,ORPSTYPE,ORRXDG<br> S ORY=0,ORPSTYPE=""<br> S OROI=$$OI^ORQOR2(+ORID)<br> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br> Q:ORPSTYPE=""<br> D CSCHECK(.ORY,OROI,ORPSTYPE)<br> S ORY=+ORY{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

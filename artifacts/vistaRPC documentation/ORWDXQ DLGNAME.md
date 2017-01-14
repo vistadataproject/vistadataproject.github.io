@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXQ DLGNAME 
+## [RPCs](TableOfContent.md) &#8594; ORWDXQ DLGNAME 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return display name for a dialog.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | DLGNAME^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Return display name for a dialog (DELETE??)
  Input parameters | {::nomarkdown}INAME{:/}
- Code | ```  N IEN S IEN=$O(^ORD(101.41,"B",INAME,0))<br/> S VAL=$P($G(^ORD(101.41,IEN,5)),U,4)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N IEN S IEN=$O(^ORD(101.41,"B",INAME,0))<br> S VAL=$P($G(^ORD(101.41,IEN,5)),U,4){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

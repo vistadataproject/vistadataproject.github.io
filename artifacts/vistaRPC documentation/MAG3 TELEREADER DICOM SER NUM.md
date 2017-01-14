@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAG3 TELEREADER DICOM SER NUM 
+## [RPCs](TableOfContent.md) &#8594; MAG3 TELEREADER DICOM SER NUM 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETSRNUM{:/}
  routine | [MAGNGMR](http://code.osehra.org/dox/Routine_MAGNGMR_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}Generates DICOM Series Number{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Generates DICOM Series Number{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

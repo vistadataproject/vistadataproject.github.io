@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; XUS CCOW VAULT PARAM 
+## [RPCs](TableOfContent.md) &#8594; XUS CCOW VAULT PARAM 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns a value for use with the CCOW vault.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CCOWPC^[XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
  Method comment | Return ap
- Code | ```  N I,XU4<br/> S RET(0)="" I '$$BROKER^XWBLIB Q<br/> D GETLST^XPAR(.XU4,"SYS","XUS CCOW VAULT PARAM","Q")<br/> F I=0,1 S RET(I)=$P($G(XU4(I+1)),"^",2,99)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N I,XU4<br> S RET(0)="" I '$$BROKER^XWBLIB Q<br> D GETLST^XPAR(.XU4,"SYS","XUS CCOW VAULT PARAM","Q")<br> F I=0,1 S RET(I)=$P($G(XU4(I+1)),"^",2,99){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

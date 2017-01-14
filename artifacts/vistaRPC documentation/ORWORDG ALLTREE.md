@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWORDG ALLTREE 
+## [RPCs](TableOfContent.md) &#8594; ORWORDG ALLTREE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the tree for all display groups.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ALLTREE^[ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  Method comment | Return the tree for all display groups
- Code | ```  N ROOT,ILST<br/> S ILST=0,ROOT=$O(^ORD(100.98,"B","ALL",0))<br/> S ILST=ILST+1,LST(ILST)=ROOT_U_"ALL SERVICES^0^+"<br/> D LSTCHLD(ROOT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N ROOT,ILST<br> S ILST=0,ROOT=$O(^ORD(100.98,"B","ALL",0))<br> S ILST=ILST+1,LST(ILST)=ROOT_U_"ALL SERVICES^0^+"<br> D LSTCHLD(ROOT){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

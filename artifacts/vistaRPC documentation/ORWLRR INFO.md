@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWLRR INFO 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR INFO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return lab test description information.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | INFO^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | Get Lab test description info
  Input parameters | {::nomarkdown}ORTEST{:/}
- Code | ```  I '$L($T(ONE^LR7OR4)) S ORY(1)="Missing lab API (part of patch LR*5.2*256)" Q<br/> D ONE^LR7OR4(.ORY,.ORTEST)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  I '$L($T(ONE^LR7OR4)) S ORY(1)="Missing lab API (part of patch LR*5.2*256)" Q<br> D ONE^LR7OR4(.ORY,.ORTEST){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

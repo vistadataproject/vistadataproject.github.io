@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWLR REPORT LISTS 
+## [RPCs](TableOfContent.md) &#8594; ORWLR REPORT LISTS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This remote procedure call returns a list of lab cumulative sections,and date ranges that can be displayed at the workstation.There are no input parameters fo this rpc.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | LIST^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return lists for list boxes
  First comment | {::nomarkdown}RPC: ORWLR REPORT LIST{:/}
- Code | ```  N EOF<br/> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br/> K @OROOT<br/> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br/> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N EOF<br> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br> K @OROOT<br> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

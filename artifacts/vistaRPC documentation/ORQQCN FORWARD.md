@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQCN FORWARD 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN FORWARD 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Forwards a consult to a subservice of the forwarding service, as definedin file 123.5{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -31,12 +32,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}COMMENTS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Comments related to the forwarding action.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | FR^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Forward consult/request to another service
  First comment | {::nomarkdown}GMRCO - IEN of consult from File 123<br/>GMRCSS - Service to which consult is being forwarded<br/>GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200<br/>GMRCURGI - Urgency of the request<br/>GMRCORNP - Person who is responsible for forwarding the consult<br/>ORCOM is the comments array explaining the forwarding action<br/>passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
- Input parameters | {::nomarkdown}GMRCO<br/>GMRCSS<br/>GMRCORNP<br/>GMRCATTN<br/>GMRCURGI<br/>ORDATE<br/>ORCOM{:/}
- Code | ```  S:+$G(GMRCATTN)=0 GMRCATTN=""<br/> S Y=$$FR^GMRCGUIA(GMRCO,GMRCSS,GMRCORNP,GMRCATTN,GMRCURGI,.ORCOM,ORDATE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}GMRCO<br>GMRCSS<br>GMRCORNP<br>GMRCATTN<br>GMRCURGI<br>ORDATE<br>ORCOM{:/}
+ Code | {::nomarkdown}  S:+$G(GMRCATTN)=0 GMRCATTN=""<br> S Y=$$FR^GMRCGUIA(GMRCO,GMRCSS,GMRCORNP,GMRCATTN,GMRCURGI,.ORCOM,ORDATE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

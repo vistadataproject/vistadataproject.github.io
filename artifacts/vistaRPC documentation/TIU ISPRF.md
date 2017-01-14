@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU ISPRF 
+## [RPCs](TableOfContent.md) &#8594; TIU ISPRF 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,14 +20,14 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC is to check to see if the passed in TIU DOCUMENT TITLE IEN is a Patient Record Flag TITLE.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TIUTTL{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}TIU DOCUMENT TITLE IEN{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -34,4 +35,6 @@ title: VISTA RPC documentation
  Method comment | RPC Takes as input 8925.1 IEN
  First comment | {::nomarkdown}and checks if it is a PRF title<br/>Cf ISPFTTL^TIUPRFL. which is a FUNCTION{:/}
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUCAT1,TIUCAT2,TIUD1<br/> S TIUY=0,TIUD1=""<br/> S TIUCAT1=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT I","DC")<br/> S TIUCAT2=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT II","DC")<br/> S TIUD1=$O(^TIU(8925.1,"AD",TIUDA,TIUD1))<br/> I TIUD1=TIUCAT1!(TIUD1=TIUCAT2) S TIUY=1<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N TIUCAT1,TIUCAT2,TIUD1<br> S TIUY=0,TIUD1=""<br> S TIUCAT1=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT I","DC")<br> S TIUCAT2=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT II","DC")<br> S TIUD1=$O(^TIU(8925.1,"AD",TIUDA,TIUD1))<br> I TIUD1=TIUCAT1!(TIUD1=TIUCAT2) S TIUY=1<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

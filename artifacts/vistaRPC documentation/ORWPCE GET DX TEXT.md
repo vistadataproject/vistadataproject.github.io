@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWPCE GET DX TEXT 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GET DX TEXT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Resolves the preferred expanded form of the Diagnosis text for the encounter pane on the notes tab.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,11 +28,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}CODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the ICD code.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | GETDXTXT^[ORWPCE3](http://code.osehra.org/dox/Routine_ORWPCE3_source.html)
  Method comment | RPC to resolve Dx Text for PCE view
- Input parameters | {::nomarkdown}NARR<br/>CODE{:/}
- Code | ```  S ORY=$$SETNARR(NARR,CODE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}NARR<br>CODE{:/}
+ Code | {::nomarkdown}  S ORY=$$SETNARR(NARR,CODE){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

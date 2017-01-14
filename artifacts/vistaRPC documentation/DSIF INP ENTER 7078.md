@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF INP ENTER 7078 
+## [RPCs](TableOfContent.md) &#8594; DSIF INP ENTER 7078 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC enters a 7078, updates the FEE BASIS PATIENT FILE, and calls IFCAP to post the 1358.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -38,4 +39,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}PCRC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Potential Cost Recovery Case (Required Yes/No - Y : Yes, N : No [DEFAULT = N]){:/} | 
 | {::nomarkdown}AUTHSVC{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Authorized Services (Word Processing - Default text from Site Parameter file 161.4 field #28) Array passed must be: AUTHSVC(1)= (text), with additional lines if needed AUTHSVC(2)= (text line 2), etc.{:/} | 
 | {::nomarkdown}REFPROV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Referring Provider (Optional - Pointer to file 200 NEW PERSON){:/} | 
-| {::nomarkdown}CNTIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contract IEN{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}CNTIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contract IEN{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

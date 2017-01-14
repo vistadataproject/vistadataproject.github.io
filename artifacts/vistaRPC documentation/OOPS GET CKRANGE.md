@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OOPS GET CKRANGE 
+## [RPCs](TableOfContent.md) &#8594; OOPS GET CKRANGE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This broker call is used to return an array which holds the integer values stored in the field included in the input parameter. Currently in ASISTS, the fields that are evaluated/returned via this broker are:140 Regular Work Schedule for CA1244 Regular Work Schedule for CA2{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input parameter must contain the file, field and IEN to retrieve therequested informationd. The format of the input parmameter must be FILE^FIELD^IEN.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input parameter must contain the file, field and IEN to retrieve therequested informationd. The format of the input parmameter must be FILE^FIELD^IEN.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

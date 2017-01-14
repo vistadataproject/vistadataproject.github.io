@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTEVT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTEVT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | DFLTEVT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return default release event based on provider IFN
  Input parameters | {::nomarkdown}PVIFN{:/}
- Code | ```  N CMEVTLST,IDX<br/> S CMEVTLST="",IDX=0<br/> D GETLST^OREV3(.CMEVTLST)<br/> F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D<br/> . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N CMEVTLST,IDX<br> S CMEVTLST="",IDX=0<br> D GETLST^OREV3(.CMEVTLST)<br> F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D<br> . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

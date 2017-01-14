@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF BATCH LIST REJECTED ITEMS 
+## [RPCs](TableOfContent.md) &#8594; DSIF BATCH LIST REJECTED ITEMS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown} ; Input: Batch # (IEN, if passed in as \nnn;\) ; Output: ;    ; If B9 ;    ; ^TMP($J,\DSIFLRJ\,1)=ien of 162.5 invoice file ; ; If B3 ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ; ; ^TMP($J,\DSIFLRJ\,x)=ien of 162 payment file.  (may be multiple lines rejected) ;{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,4 +28,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}FBTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch type (required){:/} | 
 | {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Date beginning from{:/} | 
 | {::nomarkdown}TODATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Until date{:/} | 
-| {::nomarkdown}FBFROM{:/} |  |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}FBFROM{:/} |  |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

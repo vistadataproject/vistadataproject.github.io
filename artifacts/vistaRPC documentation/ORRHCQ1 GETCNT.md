@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORRHCQ1 GETCNT 
+## [RPCs](TableOfContent.md) &#8594; ORRHCQ1 GETCNT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETCNT{:/}
  routine | [ORRHCQ1](http://code.osehra.org/dox/Routine_ORRHCQ1_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}Returns the count of sensitive patients left to evaluate after a mainquery iteration run.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Returns the count of sensitive patients left to evaluate after a mainquery iteration run.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAG DICOM GET EXPORT IMAGE STS 
+## [RPCs](TableOfContent.md) &#8594; MAG DICOM GET EXPORT IMAGE STS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}LOOKUP{:/}
  routine | [MAGDIWDV](http://code.osehra.org/dox/Routine_MAGDIWDV_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Return a list of the studies in the DICOM OBJECT EXPORT file (#2006.574),along with the status of the transmission.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Return a list of the studies in the DICOM OBJECT EXPORT file (#2006.574),along with the status of the transmission.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

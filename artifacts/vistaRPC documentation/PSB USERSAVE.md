@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; PSB USERSAVE 
+## [RPCs](TableOfContent.md) &#8594; PSB USERSAVE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Save the users current window settings for the next session.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -35,4 +36,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBCV3{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}PSBCV4{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}PSBORMODE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Last Order mode per user upon exit of BCMA. This parameter is for the last Order Mode the user was using upon exiting BCMA.   Value  0    Inpatient order mode  1    Clinic order mdoe{:/} | 
-| {::nomarkdown}PSBCLSRCH{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Last Clinic Search text criteria entered per user.  This parameter contains two pieces of data delimited by a \/\.  First piece of data is the Clinic name search Prefix text and the second is the Clinic name contains search text. Example: AL-BLUE TEAM/CARDIAC{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+| {::nomarkdown}PSBCLSRCH{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Last Clinic Search text criteria entered per user.  This parameter contains two pieces of data delimited by a \/\.  First piece of data is the Clinic name search Prefix text and the second is the Clinic name contains search text. Example: AL-BLUE TEAM/CARDIAC{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

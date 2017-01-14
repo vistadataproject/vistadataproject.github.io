@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF ICD IMP DATE 
+## [RPCs](TableOfContent.md) &#8594; DSIF ICD IMP DATE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC will retrieve the ICD code system implementation date.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DSIFSYS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the coding system abbreviation from VistA. This parameter is required.     Input:     DSIFSYS   Coding System               1 OR \ICD\ = ICD-9-CM              2 OR \ICP\ = ICD-9-PCS             30 OR \10D\ = ICD-10-CM             31 OR \10P\ = ICD-10-PCS{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DSIFSYS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the coding system abbreviation from VistA. This parameter is required.     Input:     DSIFSYS   Coding System               1 OR \ICD\ = ICD-9-CM              2 OR \ICP\ = ICD-9-PCS             30 OR \10D\ = ICD-10-CM             31 OR \10P\ = ICD-10-PCS{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

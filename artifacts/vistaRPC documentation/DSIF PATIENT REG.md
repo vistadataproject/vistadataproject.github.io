@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF PATIENT REG 
+## [RPCs](TableOfContent.md) &#8594; DSIF PATIENT REG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC will add entries to file 162.2 FEE NOTIFICATION/REQUEST FILE.  The logic was taken from routine: FBCHREQ* and edit template FBCH ENTER REQUEST.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -31,4 +32,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number to file 162.2 FEE NOTIFICATION/REQUEST (Optional - Null = Add, Value = Edit). This field is only used for editting an existing record.{:/} | 
 | {::nomarkdown}ADMDX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the admitting diagnosis of the veteran which is usually obtained from the person who called.{:/} | 
 | {::nomarkdown}ATPHY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Attending Physician (Optional - Free Text){:/} | 
-| {::nomarkdown}ATPHPH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field contains the phone number of the attending physician while the patient was residing in the non-VA facility.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ATPHPH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field contains the phone number of the attending physician while the patient was residing in the non-VA facility.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWRP PRINT V REPORT 
+## [RPCs](TableOfContent.md) &#8594; ORWRP PRINT V REPORT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This rpc is used to print a V type report on the Reports tab in CPRS{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -29,12 +30,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}REPORT{:/} | {::nomarkdown}WORD PROCESSING{:/} |  |  |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PRINTV^[ORWRPP1](http://code.osehra.org/dox/Routine_ORWRPP1_source.html)
  Method comment | Print data for remote sites
  First comment | {::nomarkdown}RPC: ORWRP PRINT V REPORT{:/}
- Input parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORHEAD<br/>ORRPT{:/}
- Code | ```  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="Remote V Report Print"<br/> S ZTRTN="GETVTYPE^ORWRPP1"<br/> F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>ORHEAD<br>ORRPT{:/}
+ Code | {::nomarkdown}  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="Remote V Report Print"<br> S ZTRTN="GETVTYPE^ORWRPP1"<br> F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

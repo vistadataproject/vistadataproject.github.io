@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDXA DCREQIEN 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA DCREQIEN 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return the IEN for Requesting Physician Cancelled reason.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | DCREQIEN^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Return IEN for Req Phys Cancelled reason
- Code | ```  S VAL=$O(^ORD(100.03,"S","REQ",0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S VAL=$O(^ORD(100.03,"S","REQ",0)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

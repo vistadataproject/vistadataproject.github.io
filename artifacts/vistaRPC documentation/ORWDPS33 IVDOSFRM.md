@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS33 IVDOSFRM 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS33 IVDOSFRM 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | 
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -28,10 +29,12 @@ title: VISTA RPC documentation
 | {::nomarkdown}ALLIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | IVDOSFRM^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- Input parameters | {::nomarkdown}ORDERIDS<br/>ALLIV{:/}
- Code | ```  N ORARRAY,CNT,CNT1,OI,POI<br/> S OI="",CNT=0,CNT1=0<br/> F  S OI=$O(ORDERIDS(OI)) Q:OI'>0  D<br/> .S POI=+$P($G(^ORD(101.43,$G(ORDERIDS(OI)),0)),U,2) Q:POI'>0<br/> .S CNT=CNT+1<br/> .S ORARRAY(CNT)=POI<br/> I CNT=0 Q<br/> S ORARRAY(0)=CNT<br/> D START1^PSSJORDF(.ORARRAY,ALLIV)<br/> S CNT="" F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br/> .S CNT1=CNT1+1,LST(CNT1)=$G(ORARRAY(CNT))<br/> K ^TMP("PSJMR",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}ORDERIDS<br>ALLIV{:/}
+ Code | {::nomarkdown}  N ORARRAY,CNT,CNT1,OI,POI<br> S OI="",CNT=0,CNT1=0<br> F  S OI=$O(ORDERIDS(OI)) Q:OI'>0  D<br> .S POI=+$P($G(^ORD(101.43,$G(ORDERIDS(OI)),0)),U,2) Q:POI'>0<br> .S CNT=CNT+1<br> .S ORARRAY(CNT)=POI<br> I CNT=0 Q<br> S ORARRAY(0)=CNT<br> D START1^PSSJORDF(.ORARRAY,ALLIV)<br> S CNT="" F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br> .S CNT1=CNT1+1,LST(CNT1)=$G(ORARRAY(CNT))<br> K ^TMP("PSJMR",$J){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

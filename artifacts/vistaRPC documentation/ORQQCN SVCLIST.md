@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQCN SVCLIST 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN SVCLIST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Because the combo box on the Consults order dialog needs to include ashortlist at the top, a call was needed that returned the list of consultsservices alphabetically as a long list.  This is it.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,12 +28,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}Direction{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Direction of the lookup.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | SVCLIST^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Return a set of consult services in long list format
  First comment | {::nomarkdown}.ORY=returned list, FROM=text to $O from, DIR=$O direction,{:/}
- Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br/> S I=0,CNT=44,ORSVC=""<br/> D SVCTREE^ORQQCN2(.Y,1)<br/> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br/> . S ORTMP(ORSVC)=Y(I)<br/> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br/> . S ORSTR=ORTMP(FROM)<br/> . S ORY(I)=ORSTR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}FROM<br>DIR{:/}
+ Code | {::nomarkdown}  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br> S I=0,CNT=44,ORSVC=""<br> D SVCTREE^ORQQCN2(.Y,1)<br> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br> . S ORTMP(ORSVC)=Y(I)<br> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br> . S ORSTR=ORTMP(FROM)<br> . S ORY(I)=ORSTR{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

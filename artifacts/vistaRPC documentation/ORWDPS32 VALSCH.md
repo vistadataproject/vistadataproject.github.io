@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS32 VALSCH 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 VALSCH 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Validate a schedule and return a 1 if it is valid, otherwise return 0.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VALSCH^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | validate a schedule, return 1 if valid, 0 if not
- Input parameters | {::nomarkdown}X<br/>PSTYPE{:/}
- Code | ```  I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br/> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br/> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br/> . K X S:$D(ORX) X=ORX<br/> E  D<br/> . D EN^PSSGSGUI<br/> S OK=$S($D(X):1,1:0)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Input parameters | {::nomarkdown}X<br>PSTYPE{:/}
+ Code | {::nomarkdown}  I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br> . K X S:$D(ORX) X=ORX<br> E  D<br> . D EN^PSSGSGUI<br> S OK=$S($D(X):1,1:0)<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

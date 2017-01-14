@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; YTQ SET ANSWER 
+## [RPCs](TableOfContent.md) &#8594; YTQ SET ANSWER 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}SETANS{:/}
  routine | [YTQAPI2](http://code.osehra.org/dox/Routine_YTQAPI2_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Save an answer to a specified MH Question of a specified MH Administration. Input: AD as MH adminisration ID       QN as MH Question ID       YS(1) as Answer 1       .       .       .       YS(N) as Answer N{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Save an answer to a specified MH Question of a specified MH Administration. Input: AD as MH adminisration ID       QN as MH Question ID       YS(1) as Answer 1       .       .       .       YS(N) as Answer N{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

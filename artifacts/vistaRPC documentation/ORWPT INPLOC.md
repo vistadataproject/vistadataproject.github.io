@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWPT INPLOC 
+## [RPCs](TableOfContent.md) &#8594; ORWPT INPLOC 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the patient's current location if an inpatient.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | INPLOC^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Return a patient's current location
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N X<br/> S X=$G(^DPT(DFN,.102)),REC=0<br/> I X S X=$P($G(^DGPM(X,0)),U,6)<br/> I X S REC=+$G(^DIC(42,X,44))<br/> I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)<br/> I X S X=$P($G(^DIC(42,X,0)),U,3)<br/> S $P(REC,U,3)=X```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N X<br> S X=$G(^DPT(DFN,.102)),REC=0<br> I X S X=$P($G(^DGPM(X,0)),U,6)<br> I X S REC=+$G(^DIC(42,X,44))<br> I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)<br> I X S X=$P($G(^DIC(42,X,0)),U,3)<br> S $P(REC,U,3)=X{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

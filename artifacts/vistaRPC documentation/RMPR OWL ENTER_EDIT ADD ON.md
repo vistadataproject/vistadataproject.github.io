@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; RMPR OWL ENTER_EDIT ADD ON 
+## [RPCs](TableOfContent.md) &#8594; RMPR OWL ENTER_EDIT ADD ON 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}EN{:/}
  routine | [RMPR29MG](http://code.osehra.org/dox/Routine_RMPR29MG_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}GUI Order controll processing.  ENTER/EDITAdd On's from material multipleof 664.2..{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

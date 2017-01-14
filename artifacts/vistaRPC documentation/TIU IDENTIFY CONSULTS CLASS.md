@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY CONSULTS CLASS 
+## [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY CONSULTS CLASS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns the record number of the class CONSULTS in the TIUDOCUMENT DEFINITION file (#8925.1).{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CNSLCLAS^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | RPC to identify class CONSULTS
- Code | ```  S Y=$$CLASS^TIUCNSLT```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S Y=$$CLASS^TIUCNSLT{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

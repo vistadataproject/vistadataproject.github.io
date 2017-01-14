@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAB TEMPLATE REPORT FULL 
+## [RPCs](TableOfContent.md) &#8594; DVBAB TEMPLATE REPORT FULL 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,10 +20,12 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns report of exam templates, including current status{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}STRTDT{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}ENDDT{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
-| {::nomarkdown}DVBDLMT{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DVBDLMT{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

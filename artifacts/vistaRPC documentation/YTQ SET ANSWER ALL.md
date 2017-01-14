@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; YTQ SET ANSWER ALL 
+## [RPCs](TableOfContent.md) &#8594; YTQ SET ANSWER ALL 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}SAVEALL{:/}
  routine | [YTQAPI17](http://code.osehra.org/dox/Routine_YTQAPI17_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Saves all answers for an administration. Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Saves all answers for an administration. Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

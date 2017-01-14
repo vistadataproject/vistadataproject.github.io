@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DVBAB MAIL INIT 
+## [RPCs](TableOfContent.md) &#8594; DVBAB MAIL INIT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}INIT{:/}
  routine | [DVBAB3](http://code.osehra.org/dox/Routine_DVBAB3_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}Init Mailman variables.Return string:e-mail address^{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Init Mailman variables.Return string:e-mail address^{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

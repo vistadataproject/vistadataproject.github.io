@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENT SUBS 
+## [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENT SUBS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns an array of ADHOC Health Summary subcomponents.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | COMPSUB^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get subitems from a predefined Adhoc component
  Input parameters | {::nomarkdown}ORSUB{:/}
- Code | ```  I '$L($T(COMPSUB^GMTSADH5)) Q<br/> D COMPSUB^GMTSADH5(.ORY,ORSUB)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  I '$L($T(COMPSUB^GMTSADH5)) Q<br> D COMPSUB^GMTSADH5(.ORY,ORSUB){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

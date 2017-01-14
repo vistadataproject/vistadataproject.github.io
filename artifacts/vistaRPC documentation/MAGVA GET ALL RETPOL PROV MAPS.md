@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGVA GET ALL RETPOL PROV MAPS 
+## [RPCs](TableOfContent.md) &#8594; MAGVA GET ALL RETPOL PROV MAPS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}GETRPPM{:/}
  routine | [MAGVAG01](http://code.osehra.org/dox/Routine_MAGVAG01_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Returns all records in RETENTION POLICY STORAGE PROVIDER MAP file (#2006.923){:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Returns all records in RETENTION POLICY STORAGE PROVIDER MAP file (#2006.923){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

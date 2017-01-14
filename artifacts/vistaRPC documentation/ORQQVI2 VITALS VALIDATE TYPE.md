@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS VALIDATE TYPE 
+## [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS VALIDATE TYPE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VMTYPES^[ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
  First comment | {::nomarkdown}This function returns one if ORQTYPE is a valid type abbrev.<br/>from the PCE Device Interface Specification.{:/}
  Input parameters | {::nomarkdown}ORQTYPE{:/}
- Code | ```  S ORRETURN=$$VMTYPES^GMRVPCE0(ORQTYPE)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S ORRETURN=$$VMTYPES^GMRVPCE0(ORQTYPE)<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

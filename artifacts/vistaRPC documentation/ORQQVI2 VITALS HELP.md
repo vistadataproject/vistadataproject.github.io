@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS HELP 
+## [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS HELP 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,7 +21,7 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
  Method comment | This procedure will return help for a particular
  First comment | {::nomarkdown}measurement type in an array.<br/>Input<br/>Variables:  ORQTYPE=Type of measurement (abbreviation<br/>(req.)  from PCE Device Interface Specification).<br/>ORQLST=Array root to store help text in{:/}
  Input parameters | {::nomarkdown}ORQTYPE{:/}
- Code | ```  D HELP^GMRVPCE0(ORQTYPE,"ORQLST")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  D HELP^GMRVPCE0(ORQTYPE,"ORQLST"){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWORDG IEN 
+## [RPCs](TableOfContent.md) &#8594; ORWORDG IEN 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns IEN of a display group.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | IEN^[ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  Method comment | Return IEN for a display group
  Input parameters | {::nomarkdown}X{:/}
- Code | ```  S VAL=$O(^ORD(100.98,"B",X,0))<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S VAL=$O(^ORD(100.98,"B",X,0))<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

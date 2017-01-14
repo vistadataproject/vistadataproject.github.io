@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDAL32 LOAD FOR EDIT 
+## [RPCs](TableOfContent.md) &#8594; ORWDAL32 LOAD FOR EDIT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | EDITLOAD^[ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  Method comment | Load an allergy/adverse reaction for editing
  Input parameters | {::nomarkdown}ORALIEN{:/}
- Code | ```  Q:+$G(ORALIEN)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRA",$J)),I=0<br/> D GETREC^GMRAGUI(ORALIEN,ORNODE)<br/> S Y=ORNODE```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  Q:+$G(ORALIEN)=0<br> N ORNODE,I<br> S ORNODE=$NAME(^TMP("GMRA",$J)),I=0<br> D GETREC^GMRAGUI(ORALIEN,ORNODE)<br> S Y=ORNODE{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

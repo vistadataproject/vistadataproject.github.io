@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; IBD GET PAST APPT LIST 
+## [RPCs](TableOfContent.md) &#8594; IBD GET PAST APPT LIST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC can be used to return a list of appointments for a patient.  Itdefaults to returning the past 1 year's kept appointments.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Requires the variable IBDF(\DFN\) be set to the patient internal entry number.IBDF(\F\) is the from date (defaults to t-1year)IBDF(\T\) is the to date (defaults to t@midnight)IBDF(\W\) is the types of appointments to return, see SDA^VAPDT{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+| {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Requires the variable IBDF(\DFN\) be set to the patient internal entry number.IBDF(\F\) is the from date (defaults to t-1year)IBDF(\T\) is the to date (defaults to t@midnight)IBDF(\W\) is the types of appointments to return, see SDA^VAPDT{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

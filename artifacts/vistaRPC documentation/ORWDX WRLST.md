@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDX WRLST 
+## [RPCs](TableOfContent.md) &#8594; ORWDX WRLST 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return list of dialogs for writing orders in format:        Y(n)=DlgName^ListBox Text{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | WRLST^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | List of dlgs for writing orders
  Input parameters | {::nomarkdown}LOC{:/}
- Code | ```  G WRLST1^ORWDX1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  G WRLST1^ORWDX1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

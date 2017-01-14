@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC IEN 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC IEN 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Given orderable item IEN, return pointer to file 123.3{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}orderable item{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PROCIEN^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return pointer to file 123.3 given orderable item
  Input parameters | {::nomarkdown}ORDITM{:/}
- Code | ```  S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU JUSTIFY DELETE? 
+## [RPCs](TableOfContent.md) &#8594; TIU JUSTIFY DELETE? 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,18 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}BOOLEAN RPC that evaluates wheter a justification is required for deletion (e.g., deletion is authorized, but the document has been signed, etc.).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the record number (IEN) of the document in file 8925.{:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | NEEDJUST^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Is justification required for deletion?
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUD0 S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUY=0<br/> I +$P(TIUD0,U,5)'<6 S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N TIUD0 S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUY=0<br> I +$P(TIUD0,U,5)'<6 S TIUY=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

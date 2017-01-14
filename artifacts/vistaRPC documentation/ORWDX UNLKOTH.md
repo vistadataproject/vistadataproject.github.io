@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDX UNLKOTH 
+## [RPCs](TableOfContent.md) &#8594; ORWDX UNLKOTH 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | UNLKOTH^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Unlock pt not by this session
  Input parameters | {::nomarkdown}ORIFN{:/}
- Code | ```  K ^XTMP("ORPTLK-"_ORIFN) S OK=1<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  K ^XTMP("ORPTLK-"_ORIFN) S OK=1<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

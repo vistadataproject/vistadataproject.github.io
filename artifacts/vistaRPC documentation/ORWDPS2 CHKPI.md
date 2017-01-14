@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS2 CHKPI 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS2 CHKPI 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CHKPI^[ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  Method comment | return pre-existing patient instruct
  Input parameters | {::nomarkdown}ODIFN{:/}
- Code | ```  N IDNUM,IDPI<br/> S (IDNUM,IDPI)=0,VAL=""<br/> I '$D(^OR(100,ODIFN,4.5,"ID","PI")) S VAL="" Q<br/> F  S IDNUM=$O(^OR(100,ODIFN,4.5,"ID","PI",IDNUM)) Q:'IDNUM  D<br/> . F  S IDPI=$O(^OR(100,ODIFN,4.5,IDNUM,2,IDPI)) Q:'IDPI  D<br/> .. S VAL=VAL_^OR(100,ODIFN,4.5,IDNUM,2,IDPI,0)<br/> K IDNUM,IDPI```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N IDNUM,IDPI<br> S (IDNUM,IDPI)=0,VAL=""<br> I '$D(^OR(100,ODIFN,4.5,"ID","PI")) S VAL="" Q<br> F  S IDNUM=$O(^OR(100,ODIFN,4.5,"ID","PI",IDNUM)) Q:'IDNUM  D<br> . F  S IDPI=$O(^OR(100,ODIFN,4.5,IDNUM,2,IDPI)) Q:'IDPI  D<br> .. S VAL=VAL_^OR(100,ODIFN,4.5,IDNUM,2,IDPI,0)<br> K IDNUM,IDPI{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

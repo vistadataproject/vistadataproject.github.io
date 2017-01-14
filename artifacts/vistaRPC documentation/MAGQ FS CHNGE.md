@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGQ FS CHNGE 
+## [RPCs](TableOfContent.md) &#8594; MAGQ FS CHNGE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,11 +20,13 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Finds the available network file server with the most space, changes the current write space pointer and returns the IEN.The candidate list requires the following criteria:ONLINEtype: MAGpath does not contain: \:\NON-ROUTER{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}null{:/} |  |  |  | {::nomarkdown}No input parameter required.{:/} | 
 | {::nomarkdown}NOTIFY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A message will be sent to the G.MAG_SERVER mail group if this value is set to '1' and if the share space does not meet the lower limit as establishedby the PERCENT SERVER RESERVE (#11) in the SITE PARAMETER FILE (#2006.1).{:/} | 
 | {::nomarkdown}BP OS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Microsoft Windows operating system name and version.{:/} | 
-| {::nomarkdown}BPWS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Background Processor network computer name.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}BPWS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Background Processor network computer name.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

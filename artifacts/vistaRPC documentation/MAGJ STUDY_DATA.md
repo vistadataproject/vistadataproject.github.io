@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; MAGJ STUDY_DATA 
+## [RPCs](TableOfContent.md) &#8594; MAGJ STUDY_DATA 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,9 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}  +---------------------------------------------------------------+   Property of the US Government.                                   No permission to copy or redistribute this software is given.    Use of unreleased versions of this software requires the user    to execute a written test agreement with the VistA Imaging       Development Office of the Department of Veterans Affairs,        telephone (301) 734-0100.                                                                                                         The Food and Drug Administration classifies this software as     a medical device.  As such, it may not be changed in any way.    Modifications to this software may result in an adulterated      medical device under 21CFR820, the use of which is considered    to be a violation of US Federal Statutes.                       +---------------------------------------------------------------+ This rpc is used to obtain various study and/or image data.  The datais stored in blocks of free-text (word-processing) in XML format createdby the Vistarad Client.Current data items include: Key Images; Presentation State data.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}120{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TXID ^ DFN ^ DTI ^ CNI ^ RARPT ^ MAGIENTXID: Required; designates action to takeDFN...RARPT: standard Vistarad Exam Identifier string (keys to  RAD Exam file and Report file).MAGIEN: Image IEN to identify the exam (Image or Group ien OK){:/} | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}120{:/} |  | {::nomarkdown}List of image identifiers with optional Presentation State UIDsin format IMGIEN^PS_UID.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}120{:/} |  | {::nomarkdown}List of image identifiers with optional Presentation State UIDsin format IMGIEN^PS_UID.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; SPN MEANS & ELIGIBILITY 
+## [RPCs](TableOfContent.md) &#8594; SPN MEANS & ELIGIBILITY 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns list of current Means and Eligibility for all requested patients{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of patient ICNs to process{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ICNLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of patient ICNs to process{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

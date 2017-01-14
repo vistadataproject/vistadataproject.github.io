@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; DSIF INP EDIT 7078 
+## [RPCs](TableOfContent.md) &#8594; DSIF INP EDIT 7078 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC allows the update of certain fields in the 7078 and FEE PATIENT files.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -36,4 +37,6 @@ title: VISTA RPC documentation
 | {::nomarkdown}REFPROV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Referring Provider (Optional - Pointer to file 200 NEW PERSON){:/} | 
 | {::nomarkdown}PENDISP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pending Disposition (Optional)                      \\ for none;                      '1' FOR FOLLOW-UP/NOT STABLE;                      '2' FOR AWAITING DISCHARGE/TRANSFER;){:/} | 
 | {::nomarkdown}AUTHSVC{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}WP Array, must start with a value of (1)=[text]{:/} | 
-| {::nomarkdown}CONTRACT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the FEE BASIS CONTRACT file (Optional) If contract is allowed to be deleted, pass in \@\ for IEN{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}CONTRACT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the FEE BASIS CONTRACT file (Optional) If contract is allowed to be deleted, pass in \@\ for IEN{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

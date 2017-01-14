@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; TIU LINK TO FLAG 
+## [RPCs](TableOfContent.md) &#8594; TIU LINK TO FLAG 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC is used to link a Progress Note to a Patient Record Flag{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -29,12 +30,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient IEN (File 2){:/} | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | LINK^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Link TIU Doc TIUIEN to
  First comment | {::nomarkdown}the PRF action{:/}
- Input parameters | {::nomarkdown}TIUIEN<br/>ASSGNDA<br/>ACTIEN<br/>DFN{:/}
- Code | ```  N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> D UNLINK^TIUPRF1(TIUIEN)<br/> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}TIUIEN<br>ASSGNDA<br>ACTIEN<br>DFN{:/}
+ Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> D UNLINK^TIUPRF1(TIUIEN)<br> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

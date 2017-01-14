@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORECS01 VSITID 
+## [RPCs](TableOfContent.md) &#8594; ORECS01 VSITID 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,7 +21,7 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
@@ -28,4 +29,6 @@ title: VISTA RPC documentation
  Method comment | Return Visit IEN ptr to #9000010
  First comment | {::nomarkdown}VSTSTR=HospLoc;DateTime;Category;PtIEN{:/}
  Input parameters | {::nomarkdown}VSTSTR{:/}
- Code | ```  N DTREF,PTID<br/> S ORY=0<br/> S DTREF=9999999-$P($P(VSTSTR,";",2),".")_"."_$P($P(VSTSTR,";",2),".",2)<br/> S PTID=+$P(VSTSTR,";",4)<br/> S:$D(^AUPNVSIT("AA",PTID,DTREF)) ORY=$O(^(DTREF,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  N DTREF,PTID<br> S ORY=0<br> S DTREF=9999999-$P($P(VSTSTR,";",2),".")_"."_$P($P(VSTSTR,";",2),".",2)<br> S PTID=+$P(VSTSTR,";",4)<br> S:$D(^AUPNVSIT("AA",PTID,DTREF)) ORY=$O(^(DTREF,0)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

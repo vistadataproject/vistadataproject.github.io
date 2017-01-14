@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWUL QVIDX 
+## [RPCs](TableOfContent.md) &#8594; ORWUL QVIDX 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | QVIDX^[ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
  Method comment | return index of item beginning with FROM
- Input parameters | {::nomarkdown}IEN<br/>FROM{:/}
- Code | ```  N I,X<br/> S VAL=0<br/> S X=$O(^ORD(101.44,IEN,10,"C",FROM))<br/> I '$L(X) Q<br/> S I=$O(^ORD(101.44,IEN,10,"C",X,0))<br/> Q:'I<br/> S:'$$QODIS(IEN,I) VAL=+I_U_X```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Input parameters | {::nomarkdown}IEN<br>FROM{:/}
+ Code | {::nomarkdown}  N I,X<br> S VAL=0<br> S X=$O(^ORD(101.44,IEN,10,"C",FROM))<br> I '$L(X) Q<br> S I=$O(^ORD(101.44,IEN,10,"C",X,0))<br> Q:'I<br> S:'$$QODIS(IEN,I) VAL=+I_U_X{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; RMIM PATIENT LOOKUP 
+## [RPCs](TableOfContent.md) &#8594; RMIM PATIENT LOOKUP 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -17,4 +18,6 @@ title: VISTA RPC documentation
  tag | {::nomarkdown}PL{:/}
  routine | [RMIMRP](http://code.osehra.org/dox/Routine_RMIMRP_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Input parameter is any string that a user would normally enter to look up apatient.Output is an array of DFN^PATIENT NAME^SSN^DOB.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ description | {::nomarkdown}Input parameter is any string that a user would normally enter to look up apatient.Output is an array of DFN^PATIENT NAME^SSN^DOB.{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

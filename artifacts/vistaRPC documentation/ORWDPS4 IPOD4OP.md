@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDPS4 IPOD4OP 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS4 IPOD4OP 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | IPOD4OP^[ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
  Method comment | True: is an Inpt (IV OI) order on an OutPatient
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  Q:'$D(^OR(100,+ORID,0))<br/> S ORY=0<br/> N APKG,ADLG,ADG,APTCLS,RXDG,UDDLG,IPPKG<br/> S (RXDG,UDDLG,IPPKG)=0<br/> S RXDG=+$O(^ORD(100.98,"B","O RX",0))<br/> S UDDLG=+$O(^ORD(101.41,"B","PSJ OR PAT OE",0))<br/> S IPPKG=+$O(^DIC(9.4,"B","INPATIENT MEDICATIONS",0))<br/> S ADLG=+$P($G(^OR(100,+ORID,0)),U,5)<br/> S ADG=$P($G(^OR(100,+ORID,0)),U,11)<br/> S APKG=$P($G(^OR(100,+ORID,0)),U,14)<br/> S APTCLS=$P($G(^OR(100,+ORID,0)),U,12)<br/> I ADG=RXDG,(ADLG=UDDLG),(APKG=IPPKG),(APTCLS="I") S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  Q:'$D(^OR(100,+ORID,0))<br> S ORY=0<br> N APKG,ADLG,ADG,APTCLS,RXDG,UDDLG,IPPKG<br> S (RXDG,UDDLG,IPPKG)=0<br> S RXDG=+$O(^ORD(100.98,"B","O RX",0))<br> S UDDLG=+$O(^ORD(101.41,"B","PSJ OR PAT OE",0))<br> S IPPKG=+$O(^DIC(9.4,"B","INPATIENT MEDICATIONS",0))<br> S ADLG=+$P($G(^OR(100,+ORID,0)),U,5)<br> S ADG=$P($G(^OR(100,+ORID,0)),U,11)<br> S APKG=$P($G(^OR(100,+ORID,0)),U,14)<br> S APTCLS=$P($G(^OR(100,+ORID,0)),U,12)<br> I ADG=RXDG,(ADLG=UDDLG),(APKG=IPPKG),(APTCLS="I") S ORY=1{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORIMO ISIVQO 
+## [RPCs](TableOfContent.md) &#8594; ORIMO ISIVQO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ISIVQO^[ORIMO](http://code.osehra.org/dox/Routine_ORIMO_source.html)
  Method comment | Is it an IV quick order
  Input parameters | {::nomarkdown}DLGID{:/}
- Code | ```  S ORY=0<br/> Q:'$D(^ORD(101.41,DLGID,0))<br/> N IVGRP,DLGTYP,DLGGRP<br/> S IVGRP=$O(^ORD(100.98,"B","IV RX",0))<br/> S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)<br/> S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)<br/> I (DLGTYP="Q"),(DLGGRP=IVGRP) S ORY=1<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^ORD(101.41,DLGID,0))<br> N IVGRP,DLGTYP,DLGGRP<br> S IVGRP=$O(^ORD(100.98,"B","IV RX",0))<br> S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)<br> S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)<br> I (DLGTYP="Q"),(DLGGRP=IVGRP) S ORY=1<br>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

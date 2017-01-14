@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ROR UPDATE LOCAL FIELDS 
+## [RPCs](TableOfContent.md) &#8594; ROR UPDATE LOCAL FIELDS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,10 +20,12 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}The ROR UPDATE LOCAL FIELDS remote procedure updates a list ofregistry-specific field definitions in the the ROR LOCAL FIELD file(#799.53).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}REGIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The REGIEN parameter should contain a valid registry IEN (IEN of the registry parameters record in the ROR REGISTRY PARAMETERS file #798.1).{:/} | 
 | {::nomarkdown}CANCEL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Cancel the update and unlock the local fields.{:/} | 
-| {::nomarkdown}LFLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Reference to a local variable that contains a list of local fields.   LFLST[i]              Local Field Descriptor                          ^01: IEN                          ^02: Name                          ^03: Inactivation Date (FileMan)                          ^04: Description{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}LFLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Reference to a local variable that contains a list of local fields.   LFLST[i]              Local Field Descriptor                          ^01: IEN                          ^02: Name                          ^03: Inactivation Date (FileMan)                          ^04: Description{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

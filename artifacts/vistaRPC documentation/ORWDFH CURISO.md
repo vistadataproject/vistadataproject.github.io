@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWDFH CURISO 
+## [RPCs](TableOfContent.md) &#8594; ORWDFH CURISO 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return a patient's current isolation.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | CURISO^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return a patient's current isolation
  Input parameters | {::nomarkdown}ORVP{:/}
- Code | ```  S ORVP=ORVP_";DPT(" S VAL=$P($$IP^ORMBLD,U,2)<br/> I '$L(VAL) S VAL="<none>"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S ORVP=ORVP_";DPT(" S VAL=$P($$IP^ORMBLD,U,2)<br> I '$L(VAL) S VAL="<none>"{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

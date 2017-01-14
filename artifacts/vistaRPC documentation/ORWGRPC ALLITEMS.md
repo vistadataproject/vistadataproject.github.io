@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWGRPC ALLITEMS 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC ALLITEMS 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | ALLITEMS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all items of data on patient (procedures, tests, codes,..)
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  D ALLITEMS^ORWGAPI("ORWGRPC",DFN)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+ Code | {::nomarkdown}  D ALLITEMS^ORWGAPI("ORWGRPC",DFN)<br> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

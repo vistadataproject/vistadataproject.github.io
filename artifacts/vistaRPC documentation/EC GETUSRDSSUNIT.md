@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; EC GETUSRDSSUNIT 
+## [RPCs](TableOfContent.md) &#8594; EC GETUSRDSSUNIT 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns an array of DSS units for which the user has access.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input variable ECARY contains a value from the location or New Person file.   1. ECL   - Location IEN, #4(if define gives User's DSS units for a location)   2. ECDUZ - New Person IEN, #200 (if define gives list of DSS Units available              to user){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input variable ECARY contains a value from the location or New Person file.   1. ECL   - Location IEN, #4(if define gives User's DSS units for a location)   2. ECDUZ - New Person IEN, #200 (if define gives list of DSS Units available              to user){:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

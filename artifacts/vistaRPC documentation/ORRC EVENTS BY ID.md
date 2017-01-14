@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORRC EVENTS BY ID 
+## [RPCs](TableOfContent.md) &#8594; ORRC EVENTS BY ID 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This call returns the text of the documents associated with the eventsin the ID list passed in.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}EVENTS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of alert IDs in the format \VST:\_ID where ID is thealert identifier as defined by Kernel (\OR,<patient>,<Notification ien>;<creator>;<date created>\) or the appointment time/location (\<date.time>;<location>\).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}EVENTS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of alert IDs in the format \VST:\_ID where ID is thealert identifier as defined by Kernel (\OR,<patient>,<Notification ien>;<creator>;<date created>\) or the appointment time/location (\<date.time>;<location>\).{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

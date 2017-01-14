@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWCH SAVEALL 
+## [RPCs](TableOfContent.md) &#8594; ORWCH SAVEALL 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC saves the sizing related CPRS GUI chart parameters for theuser.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | SAVEALL^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | save the list of sizing information
  Input parameters | {::nomarkdown}LST{:/}
- Code | ```  N I,TYP,NAM,VAL,PAR,ORERR<br/> S (I,OK)="" F  S I=$O(LST(I)) Q:'I  D<br/> . S TYP=$P(LST(I),U),NAM=$P(LST(I),U,2),VAL=$P(LST(I),U,3)<br/> . S PAR="ORWCH "_$S(TYP="B":"BOUNDS",TYP="W":"WIDTH",TYP="C":"COLUMNS")<br/> . D EN^XPAR(DUZ_";VA(200,",PAR,NAM,VAL,.ORERR)<br/> . I ORERR S OK=OK_LST(I)_":"_ORERR_U<br/> K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)<br/> K ^TMP("ORWDXMQ",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  N I,TYP,NAM,VAL,PAR,ORERR<br> S (I,OK)="" F  S I=$O(LST(I)) Q:'I  D<br> . S TYP=$P(LST(I),U),NAM=$P(LST(I),U,2),VAL=$P(LST(I),U,3)<br> . S PAR="ORWCH "_$S(TYP="B":"BOUNDS",TYP="W":"WIDTH",TYP="C":"COLUMNS")<br> . D EN^XPAR(DUZ_";VA(200,",PAR,NAM,VAL,.ORERR)<br> . I ORERR S OK=OK_LST(I)_":"_ORERR_U<br> K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)<br> K ^TMP("ORWDXMQ",$J){:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

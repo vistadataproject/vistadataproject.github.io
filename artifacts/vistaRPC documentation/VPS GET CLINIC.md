@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; VPS GET CLINIC 
+## [RPCs](TableOfContent.md) &#8594; VPS GET CLINIC 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -19,8 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Called by the Vetlink Kiosk system.  The RPC will accept a single inputvalue representing the name of the clinic (full or partial name); and theoutput produced will be an array that returns all the possible matches forthe clinic (one to many clinics).  Values returned will be the name of theclinic and the ien of the clinic.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}CLINICNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}70{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input would represent a full or partial name of a given clinic.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}
+| {::nomarkdown}CLINICNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}70{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input would represent a full or partial name of a given clinic.{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

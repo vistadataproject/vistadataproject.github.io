@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; ORWPS1 PICKUP 
+## [RPCs](TableOfContent.md) &#8594; ORWPS1 PICKUP 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,10 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns default for refill location (mail or window).{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | PICKUP^[ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
  Method comment | Return default for refill location
- Code | ```  I $D(^PSX(550,"C")) S Y="M"<br/> E  S Y="W"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  I $D(^PSX(550,"C")) S Y="M"<br> E  S Y="W"{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

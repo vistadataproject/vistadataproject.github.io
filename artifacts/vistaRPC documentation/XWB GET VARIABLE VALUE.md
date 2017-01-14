@@ -5,10 +5,11 @@ title: VISTA RPC documentation
 
 
 
-# [RPCs](TableOfContent.md) &#8594; XWB GET VARIABLE VALUE 
+## [RPCs](TableOfContent.md) &#8594; XWB GET VARIABLE VALUE 
 
 
- ## VISTA File 8994 
+
+### VISTA File 8994 
 
 
  property | value 
@@ -20,11 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC accepts the name of a variable which will be evaluated and itsvalue returned to the server.  For example, this RPC may be called witha parameter like DUZ which will be returned as 123456.{:/}
 
 
-## MUMPS Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
  Method | VARVAL^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | returns value of passed in variable
  Input parameters | {::nomarkdown}VARIABLE{:/}
- Code | ```  S RESULT=VARIABLE ;can do this with the REFERENCE type parameter```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
+ Code | {::nomarkdown}  S RESULT=VARIABLE ;can do this with the REFERENCE type parameter{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
