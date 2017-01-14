@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF PAY SCHEDULE 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF PAY SCHEDULE{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Get pay schedule amounts by CPT, Modifiers and Zip code{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -26,7 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VENDOR IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} |  | 
 | {::nomarkdown}TYPE OF SERVICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}12{:/} | {::nomarkdown}true{:/} |  | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

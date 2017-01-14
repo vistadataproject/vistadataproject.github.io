@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIC PX GET VISIT INFO2 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC PX GET VISIT INFO2{:/}
@@ -15,13 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Return all field values for a visit in internal or external format or both.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA = p1^p2   where  p1 = visit ien or visit's ID -  required       p2 = return format            I := internal values            E := external values            B := both internal and external formats - default{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

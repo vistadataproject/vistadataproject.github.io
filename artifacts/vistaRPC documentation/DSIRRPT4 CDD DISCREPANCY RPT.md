@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIRRPT4 CDD DISCREPANCY RPT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIRRPT4 CDD DISCREPANCY RPT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC returns data from the DSIR STATUS HISTORY file to review whichrequest are being entered as closed on one day yet the status date is aprevious date.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SCHED{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Boolean flag that determines whether a report is scheduled or runimmedieately. 0 - Immediate  1 - Schedule.{:/} | 
 | {::nomarkdown}ESTART{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Earliest time to start the scheduled task.  Mmust be inFileMan date/timeformat.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIV DATE CONVERT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIV DATE CONVERT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This will take a date in any format and convert it to any other format.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}OUTFMT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Optional - this param controls the format of the returned value for external date value only.  OUTFMT can contain only a single digit plus optional alpha characters.  If OUTFMT = \\ - then return mmm dd, yyyy@hh:mm:ss - default           contains 1 -       mmm dd, yyyy@hh:mm:ss - default                    2 -       mm/dd/yy@hh:mm:ss [no leading zeros]                    3 -       dd/mm/yy@hh:mm:ss [no leading zeros]                    4 -       yy/mm/dd@hh:mm:ss [no leading zeros]                    5 -       mm/dd/yyyy@hh:mm:ss [no leading zeros]                    6 -       dd/mm/yyyy@hh:mm:ss [no leading zeros]                    7 -       yyyy/mm/dd@hh:mm:ss [no leading zeros]                    D -       return date only                    F -       output with leading blanks                    S -       force seconds in outputs                    Z -       pad months and days with leading zeros                    P -  output time in ' hh:mm:ss am/pm'{:/} | 
 | {::nomarkdown}TIMEFMT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Optional - controls what portion of the time part of the date will be returned.  Default value is M  If TIMEFMT = H, then return only hours            = M, then return only hour:minute            = S, then return seconds{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

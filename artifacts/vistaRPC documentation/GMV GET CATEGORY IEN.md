@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; GMV GET CATEGORY IEN 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV GET CATEGORY IEN{:/}
@@ -15,23 +20,21 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the IEN if the value is found in the GMRV VITAL CATEGORY (#120.53)file. This remote procedure call is documented in Integration Agreement 4354.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | GMV GET CATEGORY IEN [RPC entry point]
- Input Parameters | {::nomarkdown}GMVCAT{:/}
- Lines | {::nomarkdown} I GMVCAT="" S RESULT=-1 Q<br/> S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0)){:/}
- Leading comment lines | {::nomarkdown}Input<br/>RESULT = variable name to hold result<br/>GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/>Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>else returns -1{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}GMVCAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}45{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD){:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | CATEGORY^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
+ Method comment | GMV GET CATEGORY IEN [RPC entry point]
+ First comment | {::nomarkdown}Input<br/>RESULT = variable name to hold result<br/>GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/>Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>else returns -1{:/}
+ Input parameters | {::nomarkdown}GMVCAT{:/}
+ Code | {::nomarkdown}  I GMVCAT="" S RESULT=-1 Q<br> S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0)){:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

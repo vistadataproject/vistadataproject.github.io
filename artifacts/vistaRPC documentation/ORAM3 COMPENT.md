@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORAM3 COMPENT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORAM3 COMPENT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Enters complication note into the Anticoagulation Flowsheet file (#103).Can also be entered as part of a complete visit entry.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CTEXT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Carroted ('^') string of complication types/comments{:/} | 
 | {::nomarkdown}CDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}'ENGLISH' DATE OF THE COMPLICATION;This is the date for the flow sheet to put the, probably historic, entry in the proper order in the flow sheet.  DATE/TIME stamp is in the file, but not visible in the flow sheet.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

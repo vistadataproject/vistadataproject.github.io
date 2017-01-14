@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQCN SIGFIND 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN SIGFIND{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SIGFIND^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Significant findings
- Input Parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
- Lines | {::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION{:/}
+ Input parameters | {::nomarkdown}ORIEN<br>ORFL<br>ORCOM<br>ORALRT<br>ORALTO<br>ORDATE{:/}
+ Code | {::nomarkdown}  S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

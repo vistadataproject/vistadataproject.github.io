@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWGRPC ALLVIEWS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC ALLVIEWS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ALLVIEWS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all graph views
- Input Parameters | {::nomarkdown}VIEW<br/>USER{:/}
- Lines | {::nomarkdown} D ALLVIEWS^ORWGAPI("ORWGRPC",+$G(VIEW),+$G(USER))<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
+ Input parameters | {::nomarkdown}VIEW<br>USER{:/}
+ Code | {::nomarkdown}  D ALLVIEWS^ORWGAPI("ORWGRPC",+$G(VIEW),+$G(USER))<br> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPCE VISIT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE VISIT{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of visit types for a clinic.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | VISIT^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | get list of visit types for clinic
- Input Parameters | {::nomarkdown}CLINIC<br/>ORDATE{:/}
- Lines | {::nomarkdown} S:'+$G(ORDATE) ORDATE=DT<br/> D GETLST^IBDF18A(CLINIC,"DG SELECT VISIT TYPE CPT PROCEDURES","LST",,,,ORDATE){:/}
+ Input parameters | {::nomarkdown}CLINIC<br>ORDATE{:/}
+ Code | {::nomarkdown}  S:'+$G(ORDATE) ORDATE=DT<br> D GETLST^IBDF18A(CLINIC,"DG SELECT VISIT TYPE CPT PROCEDURES","LST",,,,ORDATE){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

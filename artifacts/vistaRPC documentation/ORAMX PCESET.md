@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORAMX PCESET 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORAMX PCESET{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Checks for service connection, etc, for PCE data call or files PCE data.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -23,7 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATA1{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Data string from the Anticoagulation Management Program.{:/} | 
 | {::nomarkdown}HOSLOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Visit location from the Hospital Location File.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

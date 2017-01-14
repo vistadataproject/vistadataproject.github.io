@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENTS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 HS COMPONENTS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns an array of the ADHOC Health Summary components.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | COMP^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get ADHOC sub components (FILE 142.1)
- Lines | {::nomarkdown} D COMP^GMTSADH5(.ORY){:/}
- Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS COMPONENTS<br/>Y(i)=(1)I;IFN^(2)Component Name [Abb]^(3)Occ Limit^(4)Time Limit^(5)Header Name^<br/>(6)Hosp Loc Disp^(7)ICD Text Disp^(8)Prov Narr Disp^(9)Summary Order{:/}
+ First comment | {::nomarkdown}RPC => ORWRP2 HS COMPONENTS<br/>Y(i)=(1)I;IFN^(2)Component Name [Abb]^(3)Occ Limit^(4)Time Limit^(5)Header Name^<br/>(6)Hosp Loc Disp^(7)ICD Text Disp^(8)Prov Narr Disp^(9)Summary Order{:/}
+ Code | {::nomarkdown}  D COMP^GMTSADH5(.ORY){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

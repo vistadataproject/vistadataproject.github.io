@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXQ GETQNAM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXQ GETQNAM{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return current quick order name.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETQNAM^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Return current quick name
- Input Parameters | {::nomarkdown}CRC{:/}
- Lines | {::nomarkdown} N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br/> I '$D(^ORD(101.41,"B",ROOT)) Q<br/> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br/> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2){:/}
+ Input parameters | {::nomarkdown}CRC{:/}
+ Code | {::nomarkdown}  N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br> I '$D(^ORD(101.41,"B",ROOT)) Q<br> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

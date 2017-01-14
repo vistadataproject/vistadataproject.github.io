@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPCE MH TEST AUTHORIZED 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE MH TEST AUTHORIZED{:/}
@@ -15,16 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Indicates if a given mental health test can be given by the given user.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Indicates that user can score test
- Input Parameters | {::nomarkdown}TEST<br/>USER{:/}
- Lines | {::nomarkdown} N ORYS,ORANS<br/> I $T(PRIVL^YTAPI5)="" S ORY=1 Q<br/> S ORY=0<br/> S ORYS("CODE")=TEST<br/> S ORYS("STAFF")=USER<br/> D PRIVL^YTAPI5(.ORANS,.ORYS)<br/> I $G(ORANS(1))="[DATA]" S ORY=+$P($G(ORANS(2)),U,1){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -32,6 +28,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The user giving the test.{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | MHATHRZD^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
+ Method comment | Indicates that user can score test
+ Input parameters | {::nomarkdown}TEST<br>USER{:/}
+ Code | {::nomarkdown}  N ORYS,ORANS<br> I $T(PRIVL^YTAPI5)="" S ORY=1 Q<br> S ORY=0<br> S ORYS("CODE")=TEST<br> S ORYS("STAFF")=USER<br> D PRIVL^YTAPI5(.ORANS,.ORYS)<br> I $G(ORANS(1))="[DATA]" S ORY=+$P($G(ORANS(2)),U,1){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

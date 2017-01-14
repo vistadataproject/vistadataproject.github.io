@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLRR INTERIMS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | INTERIMS^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
- Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>ORTESTS{:/}
- Lines | {::nomarkdown} D INTERIMS^LR7OGM(.ORY,DFN,DATE1,DATE2,.ORTESTS){:/}
+ Input parameters | {::nomarkdown}DFN<br>DATE1<br>DATE2<br>ORTESTS{:/}
+ Code | {::nomarkdown}  D INTERIMS^LR7OGM(.ORY,DFN,DATE1,DATE2,.ORTESTS){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

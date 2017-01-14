@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS SVC W_SYNONYMS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS SVC W_SYNONYMS{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC returns a list of Services with synonyms. Cloned from ORQQCN SVC W/SYNONYMS.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFSYN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} |  | {::nomarkdown}This is a boolean inputon whether you want the return to include synonyms: 1 = Yes, 0 No.{:/} | 
 | {::nomarkdown}DSIFOIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the Consult IEN, and is optional.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

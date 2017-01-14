@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXA FLAG 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA FLAG{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Flag an existing order.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | FLAG^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Flag order
- Input Parameters | {::nomarkdown}ORIFN<br/>OREASON<br/>ORNP{:/}
- Lines | {::nomarkdown} N ORB,ORVP,DA,ORPS<br/> D BULLETIN<br/> S DA=$P(ORIFN,";",2),ORVP=+$P(^OR(100,+ORIFN,0),U,2)<br/> K ^OR(100,+ORIFN,8,DA,3) S ^(3)="1^"_$G(XMZ)_U_+$E($$NOW^XLFDT,1,12)_U_DUZ_U_OREASON_$S($G(ORNP):"^^^^"_+ORNP,1:"")<br/> D KILL^XM,MSG^ORCFLAG(ORIFN)<br/> S $P(^OR(100,+ORIFN,3),U)=$$NOW^XLFDT ; Last Activity<br/> I +$G(ORNP)<1 S ORNP=+$P($G(^OR(100,+ORIFN,8,DA,0)),U,3)<br/> S ORB=+ORVP_U_+ORIFN_U_ORNP_"^1" D EN^OCXOERR(ORB) ; notification<br/> D GETBYIFN^ORWORR(.REC,ORIFN){:/}
+ Input parameters | {::nomarkdown}ORIFN<br>OREASON<br>ORNP{:/}
+ Code | {::nomarkdown}  N ORB,ORVP,DA,ORPS<br> D BULLETIN<br> S DA=$P(ORIFN,";",2),ORVP=+$P(^OR(100,+ORIFN,0),U,2)<br> K ^OR(100,+ORIFN,8,DA,3) S ^(3)="1^"_$G(XMZ)_U_+$E($$NOW^XLFDT,1,12)_U_DUZ_U_OREASON_$S($G(ORNP):"^^^^"_+ORNP,1:"")<br> D KILL^XM,MSG^ORCFLAG(ORIFN)<br> S $P(^OR(100,+ORIFN,3),U)=$$NOW^XLFDT ; Last Activity<br> I +$G(ORNP)<1 S ORNP=+$P($G(^OR(100,+ORIFN,8,DA,0)),U,3)<br> S ORB=+ORVP_U_+ORIFN_U_ORNP_"^1" D EN^OCXOERR(ORB) ; notification<br> D GETBYIFN^ORWORR(.REC,ORIFN){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

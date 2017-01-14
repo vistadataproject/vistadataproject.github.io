@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MD TMDPARAMETER 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MD TMDPARAMETER{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Used to set/retrieve/modify parameters in the Kernel ToolKit PARAMETERS(XPAR) files. RPC is called as follows: Param[0] := OPTIONParam[1] := EntityParam[2] := Parameter nameParam[3] := InstanceParam[4] := Value{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Most parameters will set instance to 1.  Instances are used when more thanone value may be assigned to a given entity/parameter combination.  Anexample of this would be lab collection times at a division.  A singledivision may have multiple collection times.  Each collection time wouldbe assigned a unique instance.{:/} | 
 | {::nomarkdown}VAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}A value may be assigned to every parameter for the entities allowed in theparameter definition.  Values are stored in the PARAMETERS file (#8989.5).VAL may be passed in external or internal format.  If using internalformat for a pointer type parameter, VAL must be preceded with the grave(`) character.  If VAL is being assigned to a word processing parameter,the text is passed in the subordinate nodes of VAL (e.g. VAL(0-n)=Text).{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

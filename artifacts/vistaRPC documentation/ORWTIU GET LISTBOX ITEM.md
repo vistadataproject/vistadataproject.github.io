@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTIU GET LISTBOX ITEM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU GET LISTBOX ITEM{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Given a TIU document IEN, return the information required to construct alistbox item for that single document.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return single listbox item for document
- Input Parameters | {::nomarkdown}ORTIUDA{:/}
- Lines | {::nomarkdown} Q:+$G(ORTIUDA)=0<br/> S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}Documemnt IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} |  | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | GTLSTITM^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
+ Method comment | Return single listbox item for document
+ Input parameters | {::nomarkdown}ORTIUDA{:/}
+ Code | {::nomarkdown}  Q:+$G(ORTIUDA)=0<br> S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

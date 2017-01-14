@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MAG DICOM ROUTE LOG XMIT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG DICOM ROUTE LOG XMIT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown} +---------------------------------------------------------------+  Property of the US Government.                                  No permission to copy or redistribute this software is given.   Use of unreleased versions of this software requires the user   to execute a written test agreement with the VistA Imaging      Development Office of the Department of Veterans Affairs,       telephone (301) 734-0100.                                                                                                       The Food and Drug Administration classifies this software as    a medical device.  As such, it may not be changed in any way.   Modifications to this software may result in an adulterated     medical device under 21CFR820, the use of which is considered   to be a violation of US Federal Statutes.                      +---------------------------------------------------------------+ When a file has been routed, information needs to be kept aboutthe fact that a copy has been made. In order to log thisinformation, the routing transmitter will call this RPC. This RPC will take care of all logging of statistics that isneeded after a file has been transmitted. There are six inputparameters: the internal entry number of the queue entry (D0),the internal entry number of the destination to which it wastransmitted (DEST) and the internal entry number of the locationfrom which it was transmitted (LOCATION). The input parameter(STATUS) is equal to either \SENT\ or \FAILED\, depending on theoutcome of the transmission. The value of the input-parameter TOis the name of the file at its destination (later to be used forpurging the file). The value of the parameter XMIT is thetimestamp of the start of the transmission.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,7 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}XMIT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a (FileMan-formatted) date/time value.This value represents the time-stamp for the moment when the transmissionof the image file started.{:/} | 
 | {::nomarkdown}MECH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

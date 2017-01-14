@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; VPS WRITE MRAR PDO 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}VPS WRITE MRAR PDO{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Called by the Vetlink Kiosk system.  The RPC will accept 4 input parameters; and will return output when processing completes or ends with an exception.  Vetlink Kiosk has the Medication Review Allergy Review modules where a  veteran can review and make changes to his medicationsand any allergies.  The MRAR can also be facilitated by a provider.  Thelocal arrays identify the field to be updated along with the respectivedata changes and serves to the RPC.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -24,7 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VPSINTFC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Interface Module.'S' represents Staff-facing Interface Module'P' represents Patient-facing Interface Module{:/} | 
 | {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID Type. Valid Values for this parameter are SSN, DFN, ICN, orVIC/CAC.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

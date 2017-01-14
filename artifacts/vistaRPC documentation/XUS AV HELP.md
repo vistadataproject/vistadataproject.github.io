@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; XUS AV HELP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS AV HELP{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns instructions on entering new access/verify codes.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | AVHELP^[XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  Method comment | send access/verify code instructions.
- Lines | {::nomarkdown} S RET(0)=$$AVHLPTXT^XUS2(){:/}
+ Code | {::nomarkdown}  S RET(0)=$$AVHLPTXT^XUS2(){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

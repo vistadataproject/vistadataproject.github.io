@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; QACV PERSON LOOKUP VLH 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}QACV PERSON LOOKUP VLH{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Pass the name of an employee formatted as \last_name,first_name\.  The routine does a lister call on the VistA NEW PERSON file (200) to findthe next set of records that match the name. Partial name lookup issupported. For example, \Sm\ will find all \Smiths\ and Smurfs, \Sm,J\will find \Smith,Joe\, and \Smurf,Jimmy\. The routine returns the IEN, name components, title and mail code for theperson(s) who match the lookup value, in XML format. In addition, the XMLdata contains a flag indicating whether there are more matching records toreturn. If it is set to 1, then the caller can make another call to getthe next 'N' records. The XML data also contains a 'next name' and 'nextIEN' value. This is used to tell the FileMan Lister where to start lookingon subsequent calls, in order to return the next N records. These two'from' values must be passed as input parameters to subsequent calls.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -24,7 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PATSFRM0{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}On the first call to this RPC, this parameter should be set to the emptystring \\. On subsequent calls to find more matches to the same lookup value, the parameter must be set to the \patsFrom0\ attribute value fromthe XML document output by the previous call. The attribute will contain the starting NAME value for the next search.{:/} | 
 | {::nomarkdown}PATSFRM1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}On the first call to this RPC, this parameter should be set to the emptystring \\. On subsequent calls to find more matches to the same lookup value, the parameter must be set to the \patsFrom1\ attribute value fromthe XML document output by the previous call. The attribute will contain the starting IEN value for the next search.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

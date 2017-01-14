@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXC ON 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC ON{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns E if order checking enabled, otherwise D.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ON^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | returns E if order checking enabled, otherwise D
- Lines | {::nomarkdown} S VAL=$$GET^XPAR("DIV^SYS^PKG","ORK SYSTEM ENABLE/DISABLE"){:/}
+ Code | {::nomarkdown}  S VAL=$$GET^XPAR("DIV^SYS^PKG","ORK SYSTEM ENABLE/DISABLE"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

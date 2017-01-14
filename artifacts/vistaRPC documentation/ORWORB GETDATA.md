@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWORB GETDATA 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB GETDATA{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Given an XQAID, return XQADATA for an alert.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | return XQADATA for an alert
- Input Parameters | {::nomarkdown}XQAID{:/}
- Lines | {::nomarkdown} N SHOWADD<br/> S ORY=""<br/> Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))<br/> D GETACT^XQALERT(XQAID)<br/> S ORY=XQADATA<br/> I ($E(XQAID,1,3)="TIU"),(+ORY>0) D<br/> . S SHOWADD=1<br/> . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)<br/> K XQAID,XQADATA,XQAOPT,XQAROU{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}XQAID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} |  | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | GETDATA^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
+ Method comment | return XQADATA for an alert
+ Input parameters | {::nomarkdown}XQAID{:/}
+ Code | {::nomarkdown}  N SHOWADD<br> S ORY=""<br> Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))<br> D GETACT^XQALERT(XQAID)<br> S ORY=XQADATA<br> I ($E(XQAID,1,3)="TIU"),(+ORY>0) D<br> . S SHOWADD=1<br> . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)<br> K XQAID,XQADATA,XQAOPT,XQAROU{:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWCV DTLVST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCV DTLVST{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This API returns the text of a progress note or discharge summary relatedto a visit/appointment.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DTLVST^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  Method comment | return progress notes / discharge summary
- Input Parameters | {::nomarkdown}DFN<br/>IEN<br/>APPTINFO{:/}
- Lines | {::nomarkdown} N VISIT<br/> I $P(APPTINFO,";")="A" D  Q<br/> . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="V" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="I" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETSUM^ORQQVS(.RPT,DFN,VISIT)<br/> . K ^TMP("PXKENC",$J)<br/> I $P(APPTINFO,";")="R" D RCDTL^SDRROR{:/}
+ Input parameters | {::nomarkdown}DFN<br>IEN<br>APPTINFO{:/}
+ Code | {::nomarkdown}  N VISIT<br> I $P(APPTINFO,";")="A" D  Q<br> . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br> I $P(APPTINFO,";")="V" D  Q<br> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br> I $P(APPTINFO,";")="I" D  Q<br> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETSUM^ORQQVS(.RPT,DFN,VISIT)<br> . K ^TMP("PXKENC",$J)<br> I $P(APPTINFO,";")="R" D RCDTL^SDRROR{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

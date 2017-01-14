@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS SIG FIND 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS SIG FIND{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC allows for Significant Findings updates to be added to a Consult. Cloned from ORQQCN SIG FIND{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -26,7 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}A list of comma delimited NEW PERSON FILE (200) iens who need to be alerted to the significant finding update for this consult.{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The date of the significant finding update.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

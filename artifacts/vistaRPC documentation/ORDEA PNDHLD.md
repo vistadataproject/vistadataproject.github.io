@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORDEA PNDHLD 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORDEA PNDHLD{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PNDHLD^[ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  Method comment | return 1 if the order is pending a HOLD, 0 otherwise
- Input Parameters | {::nomarkdown}ORID{:/}
- Lines | {::nomarkdown} S ORY=0<br/> N ORLSTACT S ORLSTACT=$O(^OR(100,+ORID,8,"A"),-1)<br/> I $P(^OR(100,+ORID,8,ORLSTACT,0),U,2)="HD" S ORY=1{:/}
+ Input parameters | {::nomarkdown}ORID{:/}
+ Code | {::nomarkdown}  S ORY=0<br> N ORLSTACT S ORLSTACT=$O(^OR(100,+ORID,8,"A"),-1)<br> I $P(^OR(100,+ORID,8,ORLSTACT,0),U,2)="HD" S ORY=1{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

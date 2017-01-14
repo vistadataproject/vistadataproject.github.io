@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWGRPC DELVIEWS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC DELVIEWS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DELVIEWS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - delete a graph view
- Input Parameters | {::nomarkdown}NAME<br/>PUBLIC{:/}
- Lines | {::nomarkdown} D DELVIEWS^ORWGAPI("ORWGRPC",NAME,+$G(PUBLIC))<br/> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
+ Input parameters | {::nomarkdown}NAME<br>PUBLIC{:/}
+ Code | {::nomarkdown}  D DELVIEWS^ORWGAPI("ORWGRPC",NAME,+$G(PUBLIC))<br> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

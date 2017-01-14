@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWU VERSION 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU VERSION{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns current version of package or namespace{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | VERSION^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return version of package or namespace
- Input Parameters | {::nomarkdown}X{:/}
- Lines | {::nomarkdown} S VAL=$$VERSION^XPDUTL(X){:/}
+ Input parameters | {::nomarkdown}X{:/}
+ Code | {::nomarkdown}  S VAL=$$VERSION^XPDUTL(X){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

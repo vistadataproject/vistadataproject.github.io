@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDX DGRP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX DGRP{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the display group pointer for an order dialog.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DGRP^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Display grp pointer for a dlg
- Input Parameters | {::nomarkdown}DLG{:/}
- Lines | {::nomarkdown} S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm<br/> S VAL=$P($G(^ORD(101.41,DLG,0)),U,5){:/}
+ Input parameters | {::nomarkdown}DLG{:/}
+ Code | {::nomarkdown}  S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm<br> S VAL=$P($G(^ORD(101.41,DLG,0)),U,5){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

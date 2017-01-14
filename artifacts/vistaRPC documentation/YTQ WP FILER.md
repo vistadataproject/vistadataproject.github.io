@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTQ WP FILER 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTQ WP FILER{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Files single Word Processing Field.It REPLACES previous text if any with current text. Input:   FILEN= fileman file Number   IEN= internal record number (cannot create a new record)   FIELD= field to be modified (must be a WP field)   YS(1)= TEXT line 1   ...   YS(X)=TEXT line X Output:   [DATA] if no errors VS [ERROR]{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

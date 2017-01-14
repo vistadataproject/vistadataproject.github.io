@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; TIU GET PN TITLES 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET PN TITLES{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This API returns a list of Progress Notes Titles, including a SHORT LISTof preferred titles as defined by the user, and a LONG LIST of all titlesdefined at the site.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | NOTES^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | Get list of PN Titles
- Lines | {::nomarkdown} D LIST(.TIUY,3){:/}
+ Code | {::nomarkdown}  D LIST(.TIUY,3){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

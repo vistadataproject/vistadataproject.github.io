@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; SPN MAILMAN NOTIFICATION 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN MAILMAN NOTIFICATION{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Sends admit/discharge/transfer mailman notifications to individual or group Mailman email addresses{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TEXT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format TEXT(1...n) containing the email message in 1 or more lines (limit to 80 chars per line){:/} | 
 | {::nomarkdown}MLTO{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format MLTO(1...n) containing the recipients of the email in,     and the recipient can be in the form of mail group names and/or     employee names.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

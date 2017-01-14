@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXR ISNOW 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXR ISNOW{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ISNOW^[ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  Method comment | Is first time now order?
- Input Parameters | {::nomarkdown}ORID{:/}
- Lines | {::nomarkdown} N SCH<br/> Q:'$D(^OR(100,+ORID,0))<br/> S SCH=""<br/> S SCH=$O(^OR(100,+ORID,4.5,"ID","SCHEDULE",0))<br/> S:SCH SCH=$G(^OR(100,+ORID,4.5,SCH,1))<br/> S:SCH="NOW" ORY=1<br/>{:/}
+ Input parameters | {::nomarkdown}ORID{:/}
+ Code | {::nomarkdown}  N SCH<br> Q:'$D(^OR(100,+ORID,0))<br> S SCH=""<br> S SCH=$O(^OR(100,+ORID,4.5,"ID","SCHEDULE",0))<br> S:SCH SCH=$G(^OR(100,+ORID,4.5,SCH,1))<br> S:SCH="NOW" ORY=1<br>{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

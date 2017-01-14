@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; TIU LONG LIST CLINPROC TITLES 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LONG LIST CLINPROC TITLES{:/}
@@ -15,17 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC serves data to a longlist of selectable Titles for CLINICALPROCEDURES.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | RPC that serves data to a longlist of selectable Titles
- Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Lines | {::nomarkdown} N TIUCLASS<br/> I '$D(FROM) G LNGCPQ<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 G LNGCPQ<br/> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1)){:/}
- Leading comment lines | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is<br/>scrolling<br/>DIR      Direction from which the longlist is scrolling<br/>from the reference Title  (Optional- default 1)<br/>Output -- Y        An array of the 44 nearest Titles to that indicated<br/>by the user in the direction passed by the longlist<br/>component{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -33,6 +28,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the direction in which the longlist is scrolling from thereference Title.{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | LNGCP^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
+ Method comment | RPC that serves data to a longlist of selectable Titles
+ First comment | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is<br/>scrolling<br/>DIR      Direction from which the longlist is scrolling<br/>from the reference Title  (Optional- default 1)<br/>Output -- Y        An array of the 44 nearest Titles to that indicated<br/>by the user in the direction passed by the longlist<br/>component{:/}
+ Input parameters | {::nomarkdown}FROM<br>DIR{:/}
+ Code | {::nomarkdown}  N TIUCLASS<br> I '$D(FROM) G LNGCPQ<br> S TIUCLASS=+$$CLASS<br> I +TIUCLASS'>0 G LNGCPQ<br> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1)){:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

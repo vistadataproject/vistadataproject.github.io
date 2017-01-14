@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWORB TEXT FOLLOWUP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB TEXT FOLLOWUP{:/}
@@ -15,16 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns text for notifications/alerts with a simple text message follow-upaction.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Follow-up for text messages
- Input Parameters | {::nomarkdown}DFN<br/>NOTIF<br/>XQADATA{:/}
- Lines | {::nomarkdown} I NOTIF=67 D CHGRAD{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -33,6 +29,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}XQADATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional data used in some follow-up actions.{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | TXTFUP^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
+ Method comment | Follow-up for text messages
+ Input parameters | {::nomarkdown}DFN<br>NOTIF<br>XQADATA{:/}
+ Code | {::nomarkdown}  I NOTIF=67 D CHGRAD{:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

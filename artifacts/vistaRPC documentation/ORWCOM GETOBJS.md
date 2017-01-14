@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWCOM GETOBJS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCOM GETOBJS{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of all active COM objects{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETOBJS^[ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
  Method comment | Returns list of all active COM objects
- Lines | {::nomarkdown} N I,J,IDX,NODE<br/> S I="",IDX=0<br/> F  S I=$O(^ORD(101.15,"B",I)) Q:I=""  D<br/> .S J=$O(^ORD(101.15,"B",I,0)) Q:'+J<br/> .S NODE=$G(^ORD(101.15,J,0))<br/> .I $P(NODE,U,3)'="I" D<br/> ..S IDX=IDX+1<br/> ..S ORY(IDX)=J_U_NODE<br/>{:/}
+ Code | {::nomarkdown}  N I,J,IDX,NODE<br> S I="",IDX=0<br> F  S I=$O(^ORD(101.15,"B",I)) Q:I=""  D<br> .S J=$O(^ORD(101.15,"B",I,0)) Q:'+J<br> .S NODE=$G(^ORD(101.15,J,0))<br> .I $P(NODE,U,3)'="I" D<br> ..S IDX=IDX+1<br> ..S ORY(IDX)=J_U_NODE<br>{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

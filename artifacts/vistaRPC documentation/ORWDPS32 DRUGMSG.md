@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDPS32 DRUGMSG 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS32 DRUGMSG{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return message text that is associated with a dispense drug.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DRUGMSG^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return any message associated with a dispense drug
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} N X S X=$$ENDCM^PSJORUTL(IEN)<br/> S VAL=$P(X,U,2)_U_$P(X,U,4){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | {::nomarkdown}  N X S X=$$ENDCM^PSJORUTL(IEN)<br> S VAL=$P(X,U,2)_U_$P(X,U,4){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

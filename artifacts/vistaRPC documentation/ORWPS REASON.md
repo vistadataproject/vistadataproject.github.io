@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPS REASON 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPS REASON{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns list of Statement/Reasons for Non-VA medication orders.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | REASON^[ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  Method comment | Return Non-VA Med Statement/Reasons
- Lines | {::nomarkdown} N ORE<br/> D GETLST^XPAR(.ORY,"ALL","ORWD NONVA REASON","E")<br/>{:/}
+ Code | {::nomarkdown}  N ORE<br> D GETLST^XPAR(.ORY,"ALL","ORWD NONVA REASON","E")<br>{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

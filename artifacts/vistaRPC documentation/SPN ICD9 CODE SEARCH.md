@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; SPN ICD9 CODE SEARCH 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN ICD9 CODE SEARCH{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns a patient's ICD9 Code history for a list of given patients (based on the ICN), date range, and a list of ICD codes desired to be searched.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -26,7 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SPNANS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(1) Range of Codes (2) Individual codes{:/} | 
 | {::nomarkdown}CODES{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}The list or range of ICD codes{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

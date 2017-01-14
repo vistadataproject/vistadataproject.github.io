@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWU16 USERINFO 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU16 USERINFO{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns information about the current user in the format:     DUZ^NAME^USRCLS^CANSIGN^ISPROVIDER^ORDERROLE^NOORDER^DTIME^CD{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | USERINFO^[ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
  Method comment | procedure
- Lines | {::nomarkdown} S Y=DUZ_U_$P(^VA(200,DUZ,0),U,1)<br/> S $P(Y,U,3)=$S($D(^XUSEC("ORES",DUZ)):3,$D(^XUSEC("ORELSE",DUZ)):2,$D(^XUSEC("OREMAS",DUZ)):1,1:0)<br/> S $P(Y,U,4)=$D(^XUSEC("PROVIDER",DUZ))#10{:/}
- Leading comment lines | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user<br/>I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
+ First comment | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user<br/>I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
+ Code | {::nomarkdown}  S Y=DUZ_U_$P(^VA(200,DUZ,0),U,1)<br> S $P(Y,U,3)=$S($D(^XUSEC("ORES",DUZ)):3,$D(^XUSEC("ORELSE",DUZ)):2,$D(^XUSEC("OREMAS",DUZ)):1,1:0)<br> S $P(Y,U,4)=$D(^XUSEC("PROVIDER",DUZ))#10{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

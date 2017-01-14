@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWLR CUMULATIVE SECTION 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLR CUMULATIVE SECTION{:/}
@@ -15,17 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This rpc retrieves the part of the lab cumulative report selected by the user on the Labs tab.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | return cum report text
- Input Parameters | {::nomarkdown}DFN<br/>RPTID<br/>DTRANGE<br/>SECTION{:/}
- Lines | {::nomarkdown} IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br/> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br/> N LINES,ORSUB<br/> K ^TMP("ORLABDATA",$J)<br/> D CUMB(DFN,RPTID,DTRANGE)<br/> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br/> IF LINES<241 D<br/> . S OROOT=$NA(^TMP("LRC",$J))<br/> . S @OROOT@(.001)="1^1"<br/> ELSE  D<br/> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br/> . D BUILD{:/}
- Leading comment lines | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -35,6 +30,14 @@ title: VISTA RPC documentation
 | {::nomarkdown}REPORT SECTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter specifics which section of the lab cumulative partshould be retrieved. (An example of a part is 'Miscellaneous Tests'.)If REPORT SECTION equals 0 then the entire part is re-compiled and thefirst section is passed back. If the part is large then it isnecessary to divide it into sections. Currently, each section cannot be more than be more than 20,000 characters{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | RPT^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
+ Method comment | return cum report text
+ First comment | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
+ Input parameters | {::nomarkdown}DFN<br>RPTID<br>DTRANGE<br>SECTION{:/}
+ Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br> N LINES,ORSUB<br> K ^TMP("ORLABDATA",$J)<br> D CUMB(DFN,RPTID,DTRANGE)<br> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br> IF LINES<241 D<br> . S OROOT=$NA(^TMP("LRC",$J))<br> . S @OROOT@(.001)="1^1"<br> ELSE  D<br> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br> . D BUILD{:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

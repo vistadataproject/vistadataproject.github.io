@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDBA7 GETIEN9 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA7 GETIEN9{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Receive external ICD9 number and return IEN{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return IEN for an ICD9 code (RPC: ORWDBA7 GETIEN9)
- Input Parameters | {::nomarkdown}ICD9{:/}
- Lines | {::nomarkdown} S Y=+$$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DT){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ICD9{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}External ICD9 number{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | GETIEN9^[ORWDBA7](http://code.osehra.org/dox/Routine_ORWDBA7_source.html)
+ Method comment | Return IEN for an ICD9 code (RPC: ORWDBA7 GETIEN9)
+ Input parameters | {::nomarkdown}ICD9{:/}
+ Code | {::nomarkdown}  S Y=+$$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DT){:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

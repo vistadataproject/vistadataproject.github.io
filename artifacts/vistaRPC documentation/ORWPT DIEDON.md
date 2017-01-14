@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPT DIEDON 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT DIEDON{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns date of death if patient has expired.  Otherwise returns 0.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DIEDON^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Check for a date of death
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S VAL=+$G(^DPT(DFN,.35)){:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | {::nomarkdown}  S VAL=+$G(^DPT(DFN,.35)){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

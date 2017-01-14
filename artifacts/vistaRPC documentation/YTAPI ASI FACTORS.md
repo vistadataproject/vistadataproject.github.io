@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTAPI ASI FACTORS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTAPI ASI FACTORS{:/}
@@ -15,13 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Input IEN of file 604, Addiction Severity IndexReturns the 5 factor scores for an ASI in the following format: YSDATA(1)=[DATA]YSDATA(2)=ALCOHOL^FACTOR SCORE^T SCORE..YSDATA(6)=LEGAL^FACTOR SCORE^T SCORE{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}IEN{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}An IEN for file 604 \Addiction Severity Index\.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

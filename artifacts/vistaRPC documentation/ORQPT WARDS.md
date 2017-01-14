@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQPT WARDS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT WARDS{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Function returns a list of wards.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | WARD^[ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  Method comment | RETURN LIST OF ACTIVE WARDS
- Lines | {::nomarkdown} N I,IEN,NAME,D0<br/> S I=1,NAME=""<br/> F  S NAME=$O(^DIC(42,"B",NAME)) Q:NAME=""  S IEN=$O(^(NAME,0)) D<br/> . S D0=IEN D WIN^DGPMDDCF<br/> . I X=0 S Y(I)=IEN_"^"_NAME,I=I+1{:/}
+ Code | {::nomarkdown}  N I,IEN,NAME,D0<br> S I=1,NAME=""<br> F  S NAME=$O(^DIC(42,"B",NAME)) Q:NAME=""  S IEN=$O(^(NAME,0)) D<br> . S D0=IEN D WIN^DGPMDDCF<br> . I X=0 S Y(I)=IEN_"^"_NAME,I=I+1{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWGRPC RPTPARAM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC RPTPARAM{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | RPTPARAM^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - return PARAM1^PARAM2 for graph report
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} S VAL=$$RPTPARAM^ORWGAPI(IEN){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | {::nomarkdown}  S VAL=$$RPTPARAM^ORWGAPI(IEN){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

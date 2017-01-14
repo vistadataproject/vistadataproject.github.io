@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQPX SET FOLDERS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX SET FOLDERS{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Sets the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Sets Visible Reminder Folders for the current user
- Input Parameters | {::nomarkdown}ORFLDRS{:/}
- Lines | {::nomarkdown} N ORERR<br/> D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)<br/> S ORY=1{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ORFLDRS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}String containing a one character code for each folder visible in thereminder tree structure of the CPRS GUI.Visible Folder Codes are:  D=Due  A=Applicable  N=Not Applicable  E=Evaluated  O=Other{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | SETFLDRS^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
+ Method comment | Sets Visible Reminder Folders for the current user
+ Input parameters | {::nomarkdown}ORFLDRS{:/}
+ Code | {::nomarkdown}  N ORERR<br> D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)<br> S ORY=1{:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

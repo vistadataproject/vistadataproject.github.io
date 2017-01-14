@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS ADMIN COMPLETE 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS ADMIN COMPLETE{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC allows for the admin completion of the selected Consult. Cloned from ORQQCN ADMIN COMPLETE{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,7 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of NEW PERSON FILE (200) iens, semi-colon delimited for who needs to be alerted by the updates to this consult.{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Date of the administrative complete.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

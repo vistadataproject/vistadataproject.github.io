@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTPP CLEARNOT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP CLEARNOT{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CLEARNOT^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} D CLEARNOT^ORWTPR(.OK,DUZ){:/}
- Leading comment lines | {::nomarkdown}clear current user's notifications{:/}
+ First comment | {::nomarkdown}clear current user's notifications{:/}
+ Code | {::nomarkdown}  D CLEARNOT^ORWTPR(.OK,DUZ){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

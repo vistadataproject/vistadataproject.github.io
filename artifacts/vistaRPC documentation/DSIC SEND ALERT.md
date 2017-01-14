@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIC SEND ALERT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC SEND ALERT{:/}
@@ -15,13 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}RPC to send an alert{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DATA() is the input data to be passed to the Kernel's alert processor.Prior to 10/1/2003 the subscripts of DATA() were numeric.Since 10/1/2003 the subscripts should be strings.  No one should be using the numeric subscripts after 10/1/2003. For detailed description of the input array, see the routine DSICXQA. End description as of 10/1/2003                  alert should not be deleted for user        (4) = XQA(recipient)=\\ - at least one recipient required        (5) = XQA(recipient)=\\ - optional - additional recipient        (6,...) = XQA(additional recipients){:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

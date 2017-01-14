@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWRP2 GETLKUP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 GETLKUP{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This gets the last Adhoc Health Summary lookup used by a user in CPRS.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETLKUP^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get Adhoc lookup selection
- Lines | {::nomarkdown} S ORY=$$GET^XPAR("ALL","ORWRP ADHOC LOOKUP",1,"I"){:/}
+ Code | {::nomarkdown}  S ORY=$$GET^XPAR("ALL","ORWRP ADHOC LOOKUP",1,"I"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

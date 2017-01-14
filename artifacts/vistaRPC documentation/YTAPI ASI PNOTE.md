@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTAPI ASI PNOTE 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTAPI ASI PNOTE{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API creates a Pnote in TIU based on the ASI report.Input required: IEN of file 604, Addiction Severity Index.Output is only to show success or failure of the operation. YSDATA(1)=[DATA]/[ERROR]YSDATA(2)=OK Progress Note created/No Pnote entered{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

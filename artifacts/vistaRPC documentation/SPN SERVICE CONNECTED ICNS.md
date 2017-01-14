@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; SPN SERVICE CONNECTED ICNS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN SERVICE CONNECTED ICNS{:/}
@@ -15,14 +20,11 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}   Returns list of ICNs of all patients with a service connection percentage within the range given.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}BPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Beginning or low range percentage of service connection{:/} | 
 | {::nomarkdown}EPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending or high range percentage of service connection{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

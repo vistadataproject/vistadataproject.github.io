@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MAGV GET PAT REF ATTS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV GET PAT REF ATTS{:/}
@@ -15,13 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns patient attributes given the IEN on the IMAGING PATIENT REFERENCE File (#2005.6).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PATIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}128{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The internal entry number of the patient on the IMAGING PATIENT REFERENCE File (#2005.6).{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORVW FACLIST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORVW FACLIST{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Wrapper for the TFL^VAFCTFU1 routine, which returns all the treatingfacilities for a given patient DFN.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return a list from the TFL^VAFCTFU1 call
- Input Parameters | {::nomarkdown}ORDFN{:/}
- Lines | {::nomarkdown} D TFL^VAFCTFU1(.ORY,ORDFN)<br/>{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient DFN{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | FACLIST^[ORVW](http://code.osehra.org/dox/Routine_ORVW_source.html)
+ Method comment | Return a list from the TFL^VAFCTFU1 call
+ Input parameters | {::nomarkdown}ORDFN{:/}
+ Code | {::nomarkdown}  D TFL^VAFCTFU1(.ORY,ORDFN)<br>{:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

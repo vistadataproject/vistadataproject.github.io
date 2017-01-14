@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDBA1 BASTATUS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA1 BASTATUS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Billing Awareness RPC.Returns 0 if BA functionality is off or 1 if BA functionality is on.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | BASTATUS^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  Method comment | RPC to retrieve the status of the Billing Awareness software
- Lines | {::nomarkdown} S Y=$D(^XPD(9.7,"B","PX CLINICAL INDICATOR DATA CAPTURE 1.0"))<br/> Q:'Y<br/> S Y=$$CHKPS1^ORWDBA5{:/}
- Leading comment lines | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)<br/>Check for installation of CIDC ancillary build{:/}
+ First comment | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)<br/>Check for installation of CIDC ancillary build{:/}
+ Code | {::nomarkdown}  S Y=$D(^XPD(9.7,"B","PX CLINICAL INDICATOR DATA CAPTURE 1.0"))<br> Q:'Y<br> S Y=$$CHKPS1^ORWDBA5{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER EVALUATION 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM REMINDER EVALUATION{:/}
@@ -15,16 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Allows evaluation of a list of reminders. Returns a list of clinicalreminders due/applicable or not applicable to the patient.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | DBIA 3078
- Input Parameters | {::nomarkdown}ORPT<br/>ORLIST{:/}
- Leading comment lines | {::nomarkdown}ORQQPXRM REMINDERS APPLICABLE{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -32,6 +28,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}REMINDER ARRAY{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of reminders in format :             array(1) = reminder ien1 (from #811.9)          array(2) = reminder ien2          etc{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | ALIST^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Method comment | DBIA 3078
+ First comment | {::nomarkdown}ORQQPXRM REMINDERS APPLICABLE{:/}
+ Input parameters | {::nomarkdown}ORPT<br>ORLIST{:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

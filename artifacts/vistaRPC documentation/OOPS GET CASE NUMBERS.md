@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; OOPS GET CASE NUMBERS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OOPS GET CASE NUMBERS{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This call returns a list of cases that match the search criteria and are eligible for editing.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CALL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This parameter passes in the menu that the broker call was made from.  CALL = E  employee menu         S  supervisor menu         H  employee health menu         O  safety officer menu         W  workers comp menu         U  union menu{:/} | 
 | {::nomarkdown}OPT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This parameter passes in the option that the broker call was made from, ifneeded.  It is required to determine which fields should be availble for editing in the CA1, CA2, and 2162 forms.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

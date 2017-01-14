@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPT ENCTITL 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT ENCTITL{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns external values to display for encounter in format:     LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ENCTITL^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Return external values for encounter
- Input Parameters | {::nomarkdown}DFN<br/>LOC<br/>PROV{:/}
- Lines | {::nomarkdown} S $P(REC,U,1)=$P($G(^SC(+LOC,0)),U,1,2)<br/> S $P(REC,U,3)=$P($G(^DPT(DFN,.101)),U)<br/> S $P(REC,U,4)=$P($G(^VA(200,+PROV,0)),U){:/}
- Leading comment lines | {::nomarkdown}LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
+ First comment | {::nomarkdown}LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
+ Input parameters | {::nomarkdown}DFN<br>LOC<br>PROV{:/}
+ Code | {::nomarkdown}  S $P(REC,U,1)=$P($G(^SC(+LOC,0)),U,1,2)<br> S $P(REC,U,3)=$P($G(^DPT(DFN,.101)),U)<br> S $P(REC,U,4)=$P($G(^VA(200,+PROV,0)),U){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

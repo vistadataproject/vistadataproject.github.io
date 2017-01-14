@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPT16 LOOKUP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT16 LOOKUP{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LOOKUP^[ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
  Method comment | Return a set of patient names
- Input Parameters | {::nomarkdown}FROM{:/}
- Lines | {::nomarkdown} N I,X<br/> D FIND^DIC(2,"","","M",FROM)<br/> S I=0,Y=""<br/> F  S I=$O(^TMP("DILIST",$J,1,I)) Q:'I  D<br/> . S X=^TMP("DILIST",$J,"ID",I,.09)<br/> . S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br/> . S Y(I)=^TMP("DILIST",$J,2,I)_"^"_^TMP("DILIST",$J,1,I)_"^"_X<br/> K ^TMP("DILIST",$J){:/}
+ Input parameters | {::nomarkdown}FROM{:/}
+ Code | {::nomarkdown}  N I,X<br> D FIND^DIC(2,"","","M",FROM)<br> S I=0,Y=""<br> F  S I=$O(^TMP("DILIST",$J,1,I)) Q:'I  D<br> . S X=^TMP("DILIST",$J,"ID",I,.09)<br> . S X=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,99)<br> . S Y(I)=^TMP("DILIST",$J,2,I)_"^"_^TMP("DILIST",$J,1,I)_"^"_X<br> K ^TMP("DILIST",$J){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

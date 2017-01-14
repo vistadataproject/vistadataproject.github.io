@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF UNA ADD PAYMENT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF UNA ADD PAYMENT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Add/edit Unauthorized payments{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -27,7 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ADJUSTMENTS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}array of adjustments to file  array does not have to contain any data or be defined, format: ;   FBADJ=FBADJR;FBADJG;FBADJA^(repeat if necessary) ;               FBADJR = adjustment reason (internal value file 161.91) ;               FBADJG = adjustment group (internal value file 161.92) ;               FBADJA = adjustment amount (dollar value){:/} | 
 | {::nomarkdown}MEDDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}(Required for Med payments) ;             1 ^ DSIFID  (DATE OF SERVICE NUMBER;SERVICE PROVIDED                             NUMBER [DFN;VENIEN already passed]) ;             2 ^ Units Pd (optional) ;             3 ^ FPPS Line item number ;             4 ^ Place of service IEN ;             5 ^ Fee schedule amount ;             6 ^ Fee schedule (\F\,\R\ or NULL only) ;             7 ^ Amount paid (Optional) ;             8 ^ Suspend code IEN of FILE (#161.27) ;             9 ^ Revenue Code IEN of File (#399.2) ;            54 ^ CONTRACT (#54) ;            58 ^ ATTENDING PROV NAME (#58) ;            59 ^ ATTENDING PROV NPI (#59) ;            60 ^ ATTENDING PROV TAXONOMY CODE (#60) ;            61 ^ OPERATING PROV NAME (#61) ;            62 ^ OPERATING PROV NPI (#62) ;            63 ^ RENDERING PROV NAME (#63) ;            64 ^ RENDERING PROV NPI (#64) ;            65 ^ RENDERING PROV TAXONOMY CODE (#65) ;            66 ^ SERVICING PROV NAME (#66) ;            67 ^ SERVICING PROV NPI (#67) ;            68 ^ REFERRING PROV NAME (#68) ;            69 ^ REFERRING PROV NPI (#69) ;            73 ^ LI RENDERING PROV NAME (#73)    (these are payment line specific) ;            74 ^ LI RENDERING PROV NPI (#74) ;            75 ^ LI RENDERING PROV TAXONOMY (#75){:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

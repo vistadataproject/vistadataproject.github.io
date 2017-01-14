@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWOR RESULT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR RESULT{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns results of a CPRS order.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | RESULT^[ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  Method comment | Return results of order identified by ID
- Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
- Lines | {::nomarkdown} K ^TMP("ORXPND",$J)<br/> N ORESULTS,ORVP,LCNT S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br/> D ORDERS^ORCXPND1<br/> K ^TMP("ORXPND",$J,"VIDEO")<br/> S REF=$NA(^TMP("ORXPND",$J)){:/}
+ Input parameters | {::nomarkdown}DFN<br>ORID<br>ID{:/}
+ Code | {::nomarkdown}  K ^TMP("ORXPND",$J)<br> N ORESULTS,ORVP,LCNT S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br> D ORDERS^ORCXPND1<br> K ^TMP("ORXPND",$J,"VIDEO")<br> S REF=$NA(^TMP("ORXPND",$J)){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

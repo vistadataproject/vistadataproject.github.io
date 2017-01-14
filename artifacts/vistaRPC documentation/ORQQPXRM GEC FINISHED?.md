@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC FINISHED? 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM GEC FINISHED?{:/}
@@ -15,15 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC pass a boolean value to PXRMGECU{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Input Parameters | {::nomarkdown}DFN<br/>FIN{:/}
- Lines | {::nomarkdown} D FINISHED^PXRMGECU(DFN,FIN){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -31,6 +28,12 @@ title: VISTA RPC documentation
 | {::nomarkdown}FIN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fin is a 1 or 0{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | GECF^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Input parameters | {::nomarkdown}DFN<br>FIN{:/}
+ Code | {::nomarkdown}  D FINISHED^PXRMGECU(DFN,FIN){:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

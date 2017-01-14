@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTIU IDNOTES INSTALLED 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU IDNOTES INSTALLED{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns \1\ if TIU*1.0*100 is installed, \0\ otherwise.  This lets theCPRS GUI enable or disable the Interdisciplinary Notes functionality untilthe server is ready.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | IDNOTES^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Is ID Notes installed?
- Lines | {::nomarkdown} S ORY=$$PATCH^XPDUTL("TIU*1.0*100"){:/}
+ Code | {::nomarkdown}  S ORY=$$PATCH^XPDUTL("TIU*1.0*100"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; PSB REPORT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB REPORT{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Return the text for the specified report and the user has the option to print the reports.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -46,7 +51,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBCLLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}LIST ARRAY FOR CLINICS{:/} | 
 | {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

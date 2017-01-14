@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWRP2 HS SUBITEMS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 HS SUBITEMS{:/}
@@ -15,23 +20,21 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC expands a Laboratory Test panel to all it's sub-components forselection in the ADHOC Health Summary.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Get Subitems for a Test Panel
- Input Parameters | {::nomarkdown}ORTEST{:/}
- Lines | {::nomarkdown} D SUBITEM^GMTSADH5(.ORY,ORTEST){:/}
- Leading comment lines | {::nomarkdown}RPC => ORWRP2 HS SUBITEMS{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TEST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the pointer value to the Laboratory Test (#60) file of the panelto be expanded.{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | SUBITEM^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
+ Method comment | Get Subitems for a Test Panel
+ First comment | {::nomarkdown}RPC => ORWRP2 HS SUBITEMS{:/}
+ Input parameters | {::nomarkdown}ORTEST{:/}
+ Code | {::nomarkdown}  D SUBITEM^GMTSADH5(.ORY,ORTEST){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

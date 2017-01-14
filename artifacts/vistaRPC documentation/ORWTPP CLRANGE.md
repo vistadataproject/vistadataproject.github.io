@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTPP CLRANGE 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP CLRANGE{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CLRANGE^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} D CLRANGE^ORWTPL(.INFO,DUZ){:/}
- Leading comment lines | {::nomarkdown}get current user's default clinic start, stop dates{:/}
+ First comment | {::nomarkdown}get current user's default clinic start, stop dates{:/}
+ Code | {::nomarkdown}  D CLRANGE^ORWTPL(.INFO,DUZ){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

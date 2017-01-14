@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXA HOLD 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA HOLD{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to place an existing order on hold.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | HOLD^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Place order on hold
- Input Parameters | {::nomarkdown}ORID<br/>ORNP{:/}
- Lines | {::nomarkdown} N ACTDA<br/> S ACTDA=$$ACTION^ORCSAVE("HD",+ORID,ORNP)<br/> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA){:/}
+ Input parameters | {::nomarkdown}ORID<br>ORNP{:/}
+ Code | {::nomarkdown}  N ACTDA<br> S ACTDA=$$ACTION^ORCSAVE("HD",+ORID,ORNP)<br> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

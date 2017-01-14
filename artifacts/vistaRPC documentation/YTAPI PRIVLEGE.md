@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTAPI PRIVLEGE 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTAPI PRIVLEGE{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns user privlege to see psych test results. Input: YSCODE ;code of test or interview to check privelges forOutput:YSDATA(1)=[DATA]YSDATA(2)=1^user privileged for all tests        orYSDATA(2)=1^exempt test\        orYSDATA(2)=1^interview        orYSDATA(2)=1^exempt test        orYSDATA(2)=0^no access{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

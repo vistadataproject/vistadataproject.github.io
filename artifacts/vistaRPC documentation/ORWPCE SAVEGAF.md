@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPCE SAVEGAF 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE SAVEGAF{:/}
@@ -15,22 +20,20 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Saves a GAF Score.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Save new GAF score
- Input Parameters | {::nomarkdown}ORINPUT{:/}
- Lines | {::nomarkdown} N ORDATA<br/> D ENT^YSGAFAP1(.ORDATA,.ORINPUT)<br/> S ORY=($G(ORDATA(1))="[DATA]"){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ORINPUT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ORINPUT(\DFN\) = Patient IENORINPUT(\GAF\) = GAF ScoreORINPUT(\DATE\) = Date/Time of DiagnosisORINPUT(\STAFF\) = Diagnosis By DUZ{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | SAVEGAF^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
+ Method comment | Save new GAF score
+ Input parameters | {::nomarkdown}ORINPUT{:/}
+ Code | {::nomarkdown}  N ORDATA<br> D ENT^YSGAFAP1(.ORDATA,.ORINPUT)<br> S ORY=($G(ORDATA(1))="[DATA]"){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

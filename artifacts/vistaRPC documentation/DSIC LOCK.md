@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIC LOCK 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC LOCK{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This will allow a GUI application issue a LOCK or UNLOCK on a global node or a record in a file.  If the LOCK is issued, it is the responsibility of the application to issue the UNLOCK.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -23,7 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal entry number (record number) of the record that you wish to lock or unlock in the file specified in the REF parameter.  IFN is required if the REF parameter is a file or subfile number. IFN is the IEN if you are locking the entire record.  If you are locking a subrecord in a multiple, the IFN must be a proper IENS at the appropriate level as documented in the Fileman DBS manuals.{:/} | 
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This flag indicates whether or not the global reference should be locked or unlocked.  The default value is 1 which means to lock the global.  If it has a value of -1 then unlock the global reference.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

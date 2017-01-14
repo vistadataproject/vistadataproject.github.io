@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTPP SAVENOT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SAVENOT{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVENOT^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}VALUES{:/}
- Lines | {::nomarkdown} D SAVENOT^ORWTPR(.OK,.VALUES,DUZ){:/}
- Leading comment lines | {::nomarkdown}save current user's notifications{:/}
+ First comment | {::nomarkdown}save current user's notifications{:/}
+ Input parameters | {::nomarkdown}VALUES{:/}
+ Code | {::nomarkdown}  D SAVENOT^ORWTPR(.OK,.VALUES,DUZ){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

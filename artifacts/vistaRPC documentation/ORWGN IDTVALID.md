@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWGN IDTVALID 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGN IDTVALID{:/}
@@ -15,23 +20,21 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the implementation date of the coding system passed in{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns Implementation date of the ICD code set
- Input Parameters | {::nomarkdown}CSYS{:/}
- Lines | {::nomarkdown} K IDATE<br/> I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q<br/> S IDATE=$$IMPDATE^LEXU(CSYS){:/}
- Leading comment lines | {::nomarkdown}CSYS = System abbreviation for the coding system{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}CSYS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Abbreviated text for Coding System{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | IDTVALID^[ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
+ Method comment | Returns Implementation date of the ICD code set
+ First comment | {::nomarkdown}CSYS = System abbreviation for the coding system{:/}
+ Input parameters | {::nomarkdown}CSYS{:/}
+ Code | {::nomarkdown}  K IDATE<br> I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q<br> S IDATE=$$IMPDATE^LEXU(CSYS){:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

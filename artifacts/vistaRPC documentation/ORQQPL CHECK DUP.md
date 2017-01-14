@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQPL CHECK DUP 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL CHECK DUP{:/}
@@ -15,16 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Check for duplicate problem
- Input Parameters | {::nomarkdown}DFN<br/>TERM<br/>TEXT{:/}
- Lines | {::nomarkdown} S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br/> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br/> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12){:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -33,6 +29,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}TEXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}64{:/} | {::nomarkdown}true{:/} |  | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | DUP^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
+ Method comment | Check for duplicate problem
+ Input parameters | {::nomarkdown}DFN<br>TERM<br>TEXT{:/}
+ Code | {::nomarkdown}  S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

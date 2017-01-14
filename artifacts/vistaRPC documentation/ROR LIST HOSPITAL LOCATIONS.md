@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ROR LIST HOSPITAL LOCATIONS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ROR LIST HOSPITAL LOCATIONS{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}The ROR LIST HOSPITAL LOCATIONS remote procedure returns a list of hospital locations (defined in the HOSPITAL LOCATION file), which conformthe criteria.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -26,7 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}HLTYPES{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of location types separated by commas (internal values of the TYPEfield of the HOSPITAL LOCATION file):   C   Clinic  F   File Area  I   Imaging  M   Module  N   Non-Clinic Stop  OR  Operating Room  W   Ward  Z   Other Location Only locations of the types defined by this parameter are selected by the remote procedure. By default ($G(HLTYPES)=\\), all locations are selected.{:/} | 
 | {::nomarkdown}DIVIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Division IEN. If this parameter is defined and greater than zero then onlythe locations associated with this division are selected.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

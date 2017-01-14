@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXC SESSION 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC SESSION{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return list of order checks on release of order.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SESSION^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return list of Order Checks on Release Order
- Input Parameters | {::nomarkdown}ORVP<br/>ORLST{:/}
- Lines | {::nomarkdown} K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")<br/> N ORES,ORCHECK<br/> S ORVP=+ORVP_";DPT("<br/> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br/> . I +$P(ORLST(I),";",2)'=1 Q  ; order not new<br/> . I $P(ORLST(I),U,3)="0" Q    ; order not being released<br/> . S ORES($P(ORLST(I),U))=""<br/> D SESSION^ORCHECK<br/> D OPOS(+ORVP)<br/> D CHK2LST<br/> D CHECKIT(.LST)<br/> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"){:/}
+ Input parameters | {::nomarkdown}ORVP<br>ORLST{:/}
+ Code | {::nomarkdown}  K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")<br> N ORES,ORCHECK<br> S ORVP=+ORVP_";DPT("<br> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br> . I +$P(ORLST(I),";",2)'=1 Q  ; order not new<br> . I $P(ORLST(I),U,3)="0" Q    ; order not being released<br> . S ORES($P(ORLST(I),U))=""<br> D SESSION^ORCHECK<br> D OPOS(+ORVP)<br> D CHK2LST<br> D CHECKIT(.LST)<br> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

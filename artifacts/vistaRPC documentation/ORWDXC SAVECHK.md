@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXC SAVECHK 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC SAVECHK{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Save order checks for session.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVECHK^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Save order checks for session
- Input Parameters | {::nomarkdown}ORVP<br/>RSN<br/>LST{:/}
- Lines | {::nomarkdown} N ORCHECK,ORIFN S OK=1<br/> D LST2CHK<br/> I $L(RSN)>0 S ORCHECK("OK")=RSN<br/> S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2{:/}
+ Input parameters | {::nomarkdown}ORVP<br>RSN<br>LST{:/}
+ Code | {::nomarkdown}  N ORCHECK,ORIFN S OK=1<br> D LST2CHK<br> I $L(RSN)>0 S ORCHECK("OK")=RSN<br> S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

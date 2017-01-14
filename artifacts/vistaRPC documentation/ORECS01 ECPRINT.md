@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORECS01 ECPRINT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORECS01 ECPRINT{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ECPRINT^[ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  Method comment | Print ECS report to Device
- Input Parameters | {::nomarkdown}ORECARY{:/}
- Lines | {::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY){:/}
+ Input parameters | {::nomarkdown}ORECARY{:/}
+ Code | {::nomarkdown}  Q:'$D(ORECARY)<br> D RPTEN^ECRRPC(.ORY,.ORECARY){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

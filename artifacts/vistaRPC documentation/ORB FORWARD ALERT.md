@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORB FORWARD ALERT 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB FORWARD ALERT{:/}
@@ -15,16 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}The rpc forwards an alert.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | forward a notification
- Input Parameters | {::nomarkdown}ORBLST<br/>ORBRECIP<br/>ORBTYPE<br/>ORBCOMNT{:/}
- Lines | {::nomarkdown} I ORBLST="" S ORY=0 Q<br/> S ORBLST(1)=ORBLST<br/> D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)<br/> S ORY=1{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -34,6 +30,13 @@ title: VISTA RPC documentation
 | {::nomarkdown}COMMENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} |  | {::nomarkdown}The comment (optional) to be forwarded with the alert.{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | FWD^[ORB31](http://code.osehra.org/dox/Routine_ORB31_source.html)
+ Method comment | forward a notification
+ Input parameters | {::nomarkdown}ORBLST<br>ORBRECIP<br>ORBTYPE<br>ORBCOMNT{:/}
+ Code | {::nomarkdown}  I ORBLST="" S ORY=0 Q<br> S ORBLST(1)=ORBLST<br> D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)<br> S ORY=1{:/}
 
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

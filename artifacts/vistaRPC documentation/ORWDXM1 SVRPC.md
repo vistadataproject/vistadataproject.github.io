@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXM1 SVRPC 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXM1 SVRPC{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SVRPC^[ORWDXM1](http://code.osehra.org/dox/Routine_ORWDXM1_source.html)
  Method comment | RPC FOR SITEVAL
- Input Parameters | {::nomarkdown}X{:/}
- Lines | {::nomarkdown} S RET=$$SITEVAL{:/}
+ Input parameters | {::nomarkdown}X{:/}
+ Code | {::nomarkdown}  S RET=$$SITEVAL{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

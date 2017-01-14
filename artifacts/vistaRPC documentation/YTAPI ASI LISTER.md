@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTAPI ASI LISTER 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTAPI ASI LISTER{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API lists all ASI administrations for a specified patient.Input required: DFN (ien of file 2)Output is in the following format: YSDATA(1)=[DATA]YSDATA(2)= IEN^DATE OF INTERVIEW^CLASS^SPECIAL^ESIGNED..YSDATA(X)= IEN^DATE OF INTERVIEW^CLASS^SPECIAL^ESIGNED 0 RETURNED IF NO ADMINS{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

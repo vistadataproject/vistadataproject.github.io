@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTQ CHOICETYPE ADD 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTQ CHOICETYPE ADD{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Use this API to enter a new choicetype (MH CHOICETYPE 601.751). A choicetype is a collection of choices (MH CHOICE 601.75) andtheir sequence.         input: list of choice iens in numbered sequence ex YS(1)=3,YS(2)=22        output NEW choice type number{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

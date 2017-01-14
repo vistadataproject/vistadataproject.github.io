@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWTPP SETREM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SETREM{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SETREM^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}VALUES{:/}
- Lines | {::nomarkdown} D SETREM^ORWTPR(.OK,.VALUES,DUZ){:/}
- Leading comment lines | {::nomarkdown}set current user's reminders{:/}
+ First comment | {::nomarkdown}set current user's reminders{:/}
+ Input parameters | {::nomarkdown}VALUES{:/}
+ Code | {::nomarkdown}  D SETREM^ORWTPR(.OK,.VALUES,DUZ){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

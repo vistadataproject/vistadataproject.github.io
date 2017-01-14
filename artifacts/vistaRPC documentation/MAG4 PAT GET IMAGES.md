@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MAG4 PAT GET IMAGES 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG4 PAT GET IMAGES{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This Remote Procedure Call is used to filter out those specialty for whicha given image category may be relevant. When images are displayed, it is desirable to limit the list of presentedimages to only those that are likely to be relevant in the currentcontext. This procedure accepts a patient-IEN (DFN) and optionally also a category,type, event and specialty. This procedure will return a list of all images for that patient thatmatch the specified other input parameters. NOTE: This remote procedure is kept for backward compatibility only.       Please use the MAG4 IMAGE LIST remote procedure for any new      development.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -31,7 +36,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control the execution (can be combined):   D  Include only deleted images (file #2005.1)  E  Include only existing images (file #2005) By default, the \E\ value is assumed. {:/} | 
 | {::nomarkdown}PKG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal or external values of the PACKAGE INDEX field (40) of the file#2005 separated by commas.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

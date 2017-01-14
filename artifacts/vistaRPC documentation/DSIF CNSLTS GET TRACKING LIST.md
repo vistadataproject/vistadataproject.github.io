@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS GET TRACKING LIST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS GET TRACKING LIST{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC returns a list of Consults captured through HL7 that are from a defined Fee Service/Specialty, and have been updated through a Consult action. Those actions include, Comment, Forward, Edit/Resubmit, Complete, Forward, Significant Findings, Cancel/Deny, or Discontinue.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -23,7 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFLIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the last IEN returned, if the list contains more than 100records. By passing in this value, which should be the last IEN returned in a previous call, it will grab the next 100 records, or until there are no additional records.{:/} | 
 | {::nomarkdown}DSIFSCR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown} If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; PRCHL ITEM DET 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PRCHL ITEM DET{:/}
@@ -15,13 +20,10 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}A         ;piece 1 - line item number         ;piece 2 - Item Master number         ;piece 3 - qty         ;piece 4 - unit of purchase         ;piece 5 - BOC         ;piece 6 - contract BOA         ;piece 7 - actual unit cost         ;piece 8 - fed supply classification         ;piece 9 - vendor stock number         ;piece 10 - unit conversion factor         ;piece 11 - total cost         ;piece 12 - nif number         ;piece 13 - item master short description 441- .05{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} |  | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

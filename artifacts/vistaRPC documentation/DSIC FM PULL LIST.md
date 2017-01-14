@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; DSIC FM PULL LIST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC FM PULL LIST{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns values to populate a list box of choices for a field that isSET OF CODES or POINTER or VARIABLE POINTER type.VARIABLE POINTER.{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -25,7 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The maximum number of values to return.  The default is 200.For VARIABLE POINTER fields the sum accumulates across pointed-tofiles.{:/} | 
 | {::nomarkdown}MASK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}An optional mask that constrains the values to be returned.For example, \SMI\ returns all values that start with the \SMI\like SMITH, filtering out values that do not start with thespecified mask like SAM.value, not the external value of a field.  PART is often a partial match to FROM. For example, FROM(1)=\ZTMMGR\, and PART(1)=\ZTM\ would return only entries that began with \ZTM\ and came after \ZTMMGR\. It would not include \ZTZERO\, even though it comes after \ZTMMGR\. {:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

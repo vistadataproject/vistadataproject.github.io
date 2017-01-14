@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDFH ISOIEN 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH ISOIEN{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the IEN for the Isolation/Precaution orderable item.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ISOIEN^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return IEN for the Isolation/Precaution orderable item
- Lines | {::nomarkdown} S VAL=$O(^ORD(101.43,"S.PREC","ISOLATION PROCEDURES",0)){:/}
+ Code | {::nomarkdown}  S VAL=$O(^ORD(101.43,"S.PREC","ISOLATION PROCEDURES",0)){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

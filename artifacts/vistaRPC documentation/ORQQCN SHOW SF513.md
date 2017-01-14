@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORQQCN SHOW SF513 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN SHOW SF513{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns text of consults standard form 513 for display in GUI application.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SHOW513^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | CONSULTS SF513 DISPLAY IN GUI
- Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | {::nomarkdown} D GUI^GMRCP5(.ORY,GMRCO){:/}
+ Input parameters | {::nomarkdown}GMRCO{:/}
+ Code | {::nomarkdown}  D GUI^GMRCP5(.ORY,GMRCO){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

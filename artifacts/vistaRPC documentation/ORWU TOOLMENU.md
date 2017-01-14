@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWU TOOLMENU 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU TOOLMENU{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of items for the CPRS GUI Tools menu.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | TOOLMENU^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns a list of items for the Tools menu
- Lines | {::nomarkdown} N ANENT<br/> S ANENT="ALL^"_$S($G(^VA(200,DUZ,5)):"^SRV.`"_+$G(^(5)),1:"")<br/> D GETLST^XPAR(.ORLST,ANENT,"ORWT TOOLS MENU","N"){:/}
+ Code | {::nomarkdown}  N ANENT<br> S ANENT="ALL^"_$S($G(^VA(200,DUZ,5)):"^SRV.`"_+$G(^(5)),1:"")<br> D GETLST^XPAR(.ORLST,ANENT,"ORWT TOOLS MENU","N"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

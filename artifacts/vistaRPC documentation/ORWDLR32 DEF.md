@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDLR32 DEF 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDLR32 DEF{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Get lab order dialog definition.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DEF^[ORWDLR32](http://code.osehra.org/dox/Routine_ORWDLR32_source.html)
  Method comment | procedure
- Input Parameters | {::nomarkdown}ALOC<br/>ADIV{:/}
- Lines | {::nomarkdown} S ILST=0<br/> S LST($$NXT)="~ShortList" D SHORT<br/> S LST($$NXT)="~Lab Collection Times" D LCOLLTM<br/> S LST($$NXT)="~Ward Collection Times" D WCOLLTM<br/> S LST($$NXT)="~Send Patient Times" D SENDTM<br/> S LST($$NXT)="~Collection Types" D COLLTYP<br/> S LST($$NXT)="~Default Urgency" D URGENCY<br/> S LST($$NXT)="~Schedules" D SCHED<br/> S LST($$NXT)="~Common" D COMMON{:/}
- Leading comment lines | {::nomarkdown}For Event Delay Order<br/>ALOC: Delay Event's default location<br/>ADIV: Delay Event's default division<br/>get dialog definition specific to lab{:/}
+ First comment | {::nomarkdown}For Event Delay Order<br/>ALOC: Delay Event's default location<br/>ADIV: Delay Event's default division<br/>get dialog definition specific to lab{:/}
+ Input parameters | {::nomarkdown}ALOC<br>ADIV{:/}
+ Code | {::nomarkdown}  S ILST=0<br> S LST($$NXT)="~ShortList" D SHORT<br> S LST($$NXT)="~Lab Collection Times" D LCOLLTM<br> S LST($$NXT)="~Ward Collection Times" D WCOLLTM<br> S LST($$NXT)="~Send Patient Times" D SENDTM<br> S LST($$NXT)="~Collection Types" D COLLTYP<br> S LST($$NXT)="~Default Urgency" D URGENCY<br> S LST($$NXT)="~Schedules" D SCHED<br> S LST($$NXT)="~Common" D COMMON{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

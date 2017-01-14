@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPT SELCHK 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT SELCHK{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a 1 if the patient record is flagged as senstive, otherwisereturns 0.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SELCHK^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Check for sensitive pt
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S REC=$$EN1^ORQPT2(DFN){:/}
- Leading comment lines | {::nomarkdown}SENSITIVE{:/}
+ First comment | {::nomarkdown}SENSITIVE{:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | {::nomarkdown}  S REC=$$EN1^ORQPT2(DFN){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWRA IMAGING EXAMS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRA IMAGING EXAMS{:/}
@@ -15,23 +20,21 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This remote procedure call returns a list on imaging exams for aspecific patient.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return imaging exams
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} D GET(0){:/}
- Leading comment lines | {::nomarkdown}RPC: ORWRA IMAGING EXAMS<br/>See RPC definition for details on input and output parameters{:/}
-
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of patient in the Patient file [^DPT].{:/} | 
 
 
+### MUMPS Method description
 
+ property | value 
+ --- | --- 
+ Method | EXAMS^[ORWRA](http://code.osehra.org/dox/Routine_ORWRA_source.html)
+ Method comment | Return imaging exams
+ First comment | {::nomarkdown}RPC: ORWRA IMAGING EXAMS<br/>See RPC definition for details on input and output parameters{:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | {::nomarkdown}  D GET(0){:/}
 
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

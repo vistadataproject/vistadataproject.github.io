@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXVB NURSADMN 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB NURSADMN{:/}
@@ -16,14 +21,12 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This procedure checks the parameter OR VBECS SUPPRESS NURS ADMIN to seeif the Nursing Administration Order prompt/pop-up should be supressedafter a VBECS Blood Bank order has been created.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | NURSADMN^[ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  Method comment | Suppress Nursing Adiminstration Order Prompt
- Lines | {::nomarkdown} S OROOT=+$$GET^XPAR("DIV^SYS^PKG","OR VBECS SUPPRESS NURS ADMIN"){:/}
+ Code | {::nomarkdown}  S OROOT=+$$GET^XPAR("DIV^SYS^PKG","OR VBECS SUPPRESS NURS ADMIN"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

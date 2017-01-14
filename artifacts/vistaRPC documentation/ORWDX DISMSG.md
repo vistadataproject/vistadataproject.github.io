@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDX DISMSG 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX DISMSG{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns disabled message for an ordering dialog.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DISMSG^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Disabled mge for ordering dlg
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} S VAL=$P($G(^ORD(101.41,+IEN,0)),U,3){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | {::nomarkdown}  S VAL=$P($G(^ORD(101.41,+IEN,0)),U,3){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

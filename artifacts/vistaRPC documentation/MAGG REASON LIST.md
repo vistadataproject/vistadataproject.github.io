@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MAGG REASON LIST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGG REASON LIST{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This remote procedure returns the list of reasons for actions performed onimages. This data is loaded from the MAG REASON file (#2005.88).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -23,7 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control execution (can be combined):   F  Include full details (description text, etc.)   I  Include inactivated reasons If this parameter is not defined or empty, only the summary data forcurrently active reasons is returned.{:/} | 
 | {::nomarkdown}PART{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The partial match restriction (case sensitive). For example, a PART valueof \ZZ\ would restrict the list to those entries starting with the letters\ZZ\. If this parameter is not defined or empty, no text restrictions are applied.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

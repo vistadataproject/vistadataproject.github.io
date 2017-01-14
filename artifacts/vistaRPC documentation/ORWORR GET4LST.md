@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWORR GET4LST 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORR GET4LST{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the order fields for a list of orders.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GET4V11^[ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  Method comment | get order fields TEMP
- Input Parameters | {::nomarkdown}TXTVW<br/>ORYD<br/>IFNLST{:/}
- Lines | {::nomarkdown} G GET41{:/}
+ Input parameters | {::nomarkdown}TXTVW<br>ORYD<br>IFNLST{:/}
+ Code | {::nomarkdown}  G GET41{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

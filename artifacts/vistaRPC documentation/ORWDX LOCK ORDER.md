@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDX LOCK ORDER 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX LOCK ORDER{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to attempt to lock a specific order.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LOCKORD^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Attempt to lock order
- Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | {::nomarkdown} S OK=$$LOCK1^ORX2(ORIFN){:/}
+ Input parameters | {::nomarkdown}ORIFN{:/}
+ Code | {::nomarkdown}  S OK=$$LOCK1^ORX2(ORIFN){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

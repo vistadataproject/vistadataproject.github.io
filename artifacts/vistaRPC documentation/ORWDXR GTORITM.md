@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDXR GTORITM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXR GTORITM{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GTORITM^[ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  Method comment | Get back the orderable item IEN
- Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | {::nomarkdown} S ORIFN=+ORIFN<br/> S Y=$$VALUE^ORCSAVE2(ORIFN,"ORDERABLE"){:/}
+ Input parameters | {::nomarkdown}ORIFN{:/}
+ Code | {::nomarkdown}  S ORIFN=+ORIFN<br> S Y=$$VALUE^ORCSAVE2(ORIFN,"ORDERABLE"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; MAGG IMAGE GET PROPERTIES 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGG IMAGE GET PROPERTIES{:/}
@@ -15,7 +20,7 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This remote procedure returns values of one or more image properties(fields of the record of the IMAGE (#2005) or IMAGE AUDIT (#2005.1) file). If a field is tracked (audited), then a previous value of this field on a certain date/time can be requested (see the ADT parameter).{:/}
 
-### Input Parameters
+#### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
@@ -24,7 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control the execution (can be combined):   E  Return external values (default)   I  Return internal values{:/} | 
 | {::nomarkdown}ADT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date/time (internal FileMan value) for retrieving previous values. By default, audit checks are not performed and current values are returned.{:/} | 
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

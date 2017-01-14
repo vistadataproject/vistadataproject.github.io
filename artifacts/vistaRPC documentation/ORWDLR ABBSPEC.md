@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWDLR ABBSPEC 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDLR ABBSPEC{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns lab specimens that have an abbreviation (used as default list).{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ABBSPEC^[ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
  Method comment | procedure
- Lines | {::nomarkdown} N X,IEN,ILST S ILST=0<br/> S X="" F  S X=$O(^LAB(61,"E",X)) Q:X=""  S IEN=$O(^(X,0)) D<br/> . S LST($$NXT)=IEN_U_$P(^LAB(61,IEN,0),U,1){:/}
- Leading comment lines | {::nomarkdown}returns specimens with abbreviation (uses 'E' xref){:/}
+ First comment | {::nomarkdown}returns specimens with abbreviation (uses 'E' xref){:/}
+ Code | {::nomarkdown}  N X,IEN,ILST S ILST=0<br> S X="" F  S X=$O(^LAB(61,"E",X)) Q:X=""  S IEN=$O(^(X,0)) D<br> . S LST($$NXT)=IEN_U_$P(^LAB(61,IEN,0),U,1){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

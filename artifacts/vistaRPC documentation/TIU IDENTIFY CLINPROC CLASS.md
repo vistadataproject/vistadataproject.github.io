@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY CLINPROC CLASS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IDENTIFY CLINPROC CLASS{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC gets the CLINICAL PROCEDURES TIU Document Definitionfile (#8925.1) IEN.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CPCLASS^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
  Method comment | RPC that gets the CLINICAL PROCEDURES TIU Document
- Lines | {::nomarkdown} S Y=$$CLASS{:/}
- Leading comment lines | {::nomarkdown}Definition file (#8925.1) IEN<br/>Input  -- None<br/>Output -- Y        TIU Document Definition file (#8925.1) IEN{:/}
+ First comment | {::nomarkdown}Definition file (#8925.1) IEN<br/>Input  -- None<br/>Output -- Y        TIU Document Definition file (#8925.1) IEN{:/}
+ Code | {::nomarkdown}  S Y=$$CLASS{:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

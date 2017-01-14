@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWPCE XAM 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE XAM{:/}
@@ -16,15 +21,13 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of exams for a clinic.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | XAM^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | get list of exams for clinic
- Input Parameters | {::nomarkdown}CLINIC{:/}
- Lines | {::nomarkdown} D GETLST^IBDF18A(CLINIC,"PX SELECT EXAMS","LST"){:/}
+ Input parameters | {::nomarkdown}CLINIC{:/}
+ Code | {::nomarkdown}  D GETLST^IBDF18A(CLINIC,"PX SELECT EXAMS","LST"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:27 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

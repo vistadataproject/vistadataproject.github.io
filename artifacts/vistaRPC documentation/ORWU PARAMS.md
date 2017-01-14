@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; ORWU PARAMS 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU PARAMS{:/}
@@ -16,16 +21,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Simple call to return a list of parameter values such as:         INST1^VALUE1        INST2^VALUE2        ...        INSTN^VALUEN The call assumes the current user, 'defaultable' entities and multiple instances.{:/}
 
 
-### Method description
+### MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PARAMS^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return a list of parameter values
- Input Parameters | {::nomarkdown}APARAM{:/}
- Lines | {::nomarkdown} D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q"){:/}
- Leading comment lines | {::nomarkdown}call assumes current user, default entities, multiple instances{:/}
+ First comment | {::nomarkdown}call assumes current user, default entities, multiple instances{:/}
+ Input parameters | {::nomarkdown}APARAM{:/}
+ Code | {::nomarkdown}  D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q"){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}

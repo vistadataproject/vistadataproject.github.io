@@ -7,6 +7,11 @@ title: VISTA RPC documentation
 
 ## [RPCs](TableOfContent.md) &#8594; YTQ ASI SIGNOK 
 
+
+
+### VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTQ ASI SIGNOK{:/}
@@ -15,7 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API evaluates wheher one of 3 conditions is meet for the stored ASI in file Addiction Severity Index (#604).   Input: IENS as iens for 604 Output: 1^OK TO SIGN         0^MISSING REQUIRED FIELDS         2^A G12 RECORD  Missing fields are listed in YSDATA(3...x){:/}
 
-
-
-
- Generated on January 13th 2017, 7:15:28 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
