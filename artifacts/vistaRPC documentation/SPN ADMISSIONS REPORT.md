@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN ADMISSIONS REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN ADMISSIONS REPORT{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}STDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}ENDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
-| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

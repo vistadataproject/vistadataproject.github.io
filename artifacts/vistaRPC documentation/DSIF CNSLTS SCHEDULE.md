@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS SCHEDULE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS SCHEDULE{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFORDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Date/Time the Consult was scheduled.{:/} | 
 | {::nomarkdown}DSIFALRT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This determines whether or not Alerts should be sent with this update. 1 = Yes.{:/} | 
 | {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the array of alert recipient IENs.{:/} | 
-| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is the array of comments to be added to this action. {:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is the array of comments to be added to this action. {:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

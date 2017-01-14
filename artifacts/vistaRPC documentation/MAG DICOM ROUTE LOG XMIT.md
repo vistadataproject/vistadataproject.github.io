@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG DICOM ROUTE LOG XMIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG DICOM ROUTE LOG XMIT{:/}
@@ -27,9 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STATUS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string that identifies thenew status of the current entry in the Transmission Queue.Possible values are \SENDING\, \SENT\ and \FAILED\.{:/} | 
 | {::nomarkdown}FILNAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string.This string value represents the name of the image file at its(remote) location.{:/} | 
 | {::nomarkdown}XMIT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a (FileMan-formatted) date/time value.This value represents the time-stamp for the moment when the transmissionof the image file started.{:/} | 
-| {::nomarkdown}MECH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MECH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

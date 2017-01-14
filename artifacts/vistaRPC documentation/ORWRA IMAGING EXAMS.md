@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRA IMAGING EXAMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRA IMAGING EXAMS{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method comment | Return imaging exams
  First comment | {::nomarkdown}RPC: ORWRA IMAGING EXAMS<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  D GET(0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D GET(0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

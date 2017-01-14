@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU FIELD LIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD LIST{:/}
@@ -26,17 +28,4 @@ title: VISTA RPC documentation
  Method comment | Long list of Template Fields
  First comment | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N I,DA,CNT,TIUD0,NODE
- S I=0,CNT=80,DIR=$G(DIR,1)
- F  Q:I'<CNT  S FROM=$O(^TIU(8927.1,"B",FROM),DIR) Q:FROM=""  D
- . S DA=0
- . F  Q:I'<CNT  S DA=$O(^TIU(8927.1,"B",FROM,DA)) Q:+DA'>0  D
- .. S I=I+1,Y(I)=DA_U_FROM
- .. S NODE=$G(^TIU(8927.1,DA,0))
- .. I +$P(NODE,U,3) S Y(I)=Y(I)_" <Inactive>"
- .. S Y(I)=Y(I)_U_$P(NODE,U,2)_U_$P(NODE,U,8)_U_$P(NODE,U,16)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,DA,CNT,TIUD0,NODE<br/> S I=0,CNT=80,DIR=$G(DIR,1)<br/> F  Q:I'<CNT  S FROM=$O(^TIU(8927.1,"B",FROM),DIR) Q:FROM=""  D<br/> . S DA=0<br/> . F  Q:I'<CNT  S DA=$O(^TIU(8927.1,"B",FROM,DA)) Q:+DA'>0  D<br/> .. S I=I+1,Y(I)=DA_U_FROM<br/> .. S NODE=$G(^TIU(8927.1,DA,0))<br/> .. I +$P(NODE,U,3) S Y(I)=Y(I)_" <Inactive>"<br/> .. S Y(I)=Y(I)_U_$P(NODE,U,2)_U_$P(NODE,U,8)_U_$P(NODE,U,16)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

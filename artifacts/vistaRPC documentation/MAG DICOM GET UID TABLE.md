@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG DICOM GET UID TABLE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG DICOM GET UID TABLE{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}OFFSET{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string. The first time this Remote Procedure is called for a certain\master file\, the value of this parameter must be empty. Each next time this Remote Procedure is called for the same\master file\, the value of this parameter must be copied fromthe return array, so that the Remote Procedure will continuewhere it left off in the previous call.{:/} | 
-| {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

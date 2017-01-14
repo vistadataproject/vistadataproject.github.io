@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB COVERSHEET1 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB COVERSHEET1{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DFN is the internal entity number per the patient file (file #2).{:/} | 
 | {::nomarkdown}HRSBACK{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}HRSBACK - (optional) The number of hours in the past the coversheet will supply order information for.  [default is 24 hours]{:/} | 
 | {::nomarkdown}PSBSIOPI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This parameter is a true/false flag (1/0).  If true use the new SI/OP Wp fields and return data in the Results array to the GUI Client.   The field is not required, so a null will convert into a 0, for false, making this backwards compatible.{:/} | 
-| {::nomarkdown}PSBCLINORD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is a True/False flag (1/0).  If true, then return onlyClinic Orders and not Inpatient Medication orders to BCMA, else if false,return only Inpatient Medication orders to BCMA. The field is not required, so a null will convert into a 0, for a defaultfalse value, making this backwards compatible.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PSBCLINORD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is a True/False flag (1/0).  If true, then return onlyClinic Orders and not Inpatient Medication orders to BCMA, else if false,return only Inpatient Medication orders to BCMA. The field is not required, so a null will convert into a 0, for a defaultfalse value, making this backwards compatible.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

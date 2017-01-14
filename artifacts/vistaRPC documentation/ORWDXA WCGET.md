@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXA WCGET 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA WCGET{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | WCGET^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | ward comments
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  N I,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)
- S I=0 F  S I=$O(^OR(100,ORIFN,8,ACT,5,I)) Q:'I  S LST(I)=$G(^(I,0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)<br/> S I=0 F  S I=$O(^OR(100,ORIFN,8,ACT,5,I)) Q:'I  S LST(I)=$G(^(I,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

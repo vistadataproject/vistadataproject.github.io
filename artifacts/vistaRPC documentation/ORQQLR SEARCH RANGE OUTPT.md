@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQLR SEARCH RANGE OUTPT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQLR SEARCH RANGE OUTPT{:/}
@@ -24,13 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SROUT^[ORQQLR](http://code.osehra.org/dox/Routine_ORQQLR_source.html)
  Method comment | return lab results search date range for an outpatient
- Code | ```  N DIFF,SDT,EDT,ORSRV
- S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)
- S DIFF=$$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE OUTPT",1,"E")
- S:+$G(DIFF)<1 DIFF=14  ;if no default defined use 14 days
- S ORY=DIFF```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N DIFF,SDT,EDT,ORSRV<br/> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)<br/> S DIFF=$$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE OUTPT",1,"E")<br/> S:+$G(DIFF)<1 DIFF=14  ;if no default defined use 14 days<br/> S ORY=DIFF```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

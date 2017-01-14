@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORCHECK DELMONO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORCHECK DELMONO{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DELMONO^[ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
  Method comment | delete monograph data
- Code | ```  K ^TMP($J,"ORMONOGRAPH"),^TMP($J,"ORMONORPC")```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  K ^TMP($J,"ORMONOGRAPH"),^TMP($J,"ORMONORPC")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET PRF TITLE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET PRF TITLE{:/}
@@ -33,14 +35,4 @@ title: VISTA RPC documentation
  Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
  First comment | {::nomarkdown}Receives TIUY by ref; passes back<br/>TIUY = TitleIEN^Title<br/>0 if no title is associated or flg assignmt is not active<br/>Requires PTDFN<br/>Requires FLAGID - identifier for particular flag assignment<br/>for patient PTDFN. Set as subscript in GETACT^DGPFAPI.<br/>See GETFLG^ORPRF.{:/}
  Input parameters | {::nomarkdown}PTDFN<br/>FLAGID{:/}
- Code | ```  N PRFARR K TIUY S TIUY=0
- Q:'$G(PTDFN)  Q:'$G(FLAGID)
- S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info
- Q:'TIUY
- S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))
- I TIUY'>0 S TIUY=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N PRFARR K TIUY S TIUY=0<br/> Q:'$G(PTDFN)  Q:'$G(FLAGID)<br/> S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info<br/> Q:'TIUY<br/> S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))<br/> I TIUY'>0 S TIUY=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU AUTHORIZATION 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU AUTHORIZATION{:/}
@@ -32,16 +34,4 @@ title: VISTA RPC documentation
  Method | CANDO^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Boolean function to evaluate privilege
  Input parameters | {::nomarkdown}TIUDA<br/>TIUACT{:/}
- Code | ```  N TIUPOP,TIUDPRM S TIUPOP=0
- I $P($G(^TIU(8925,TIUDA,0)),U,5)>5,(TIUACT="EDIT RECORD") S TIUY="0^ You may not edit uncosigned or completed documents" Q
- I $S(TIUACT["SIGN":1,TIUACT="EDIT RECORD":1,TIUACT="DELETE RECORD":1,1:0) D  Q:+TIUPOP=1
- . L +^TIU(8925,+TIUDA):1
- . E  S TIUY="0^ Another session is editing this entry.",TIUPOP=1
- . L -^TIU(8925,+TIUDA)
-  I TIUACT["SIGNAT",+$$NEEDCS(TIUDA) S TIUY="0^ You must name a cosigner before signing this document." Q
- S TIUY=$$CANDO^TIULP(TIUDA,TIUACT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUPOP,TIUDPRM S TIUPOP=0<br/> I $P($G(^TIU(8925,TIUDA,0)),U,5)>5,(TIUACT="EDIT RECORD") S TIUY="0^ You may not edit uncosigned or completed documents" Q<br/> I $S(TIUACT["SIGN":1,TIUACT="EDIT RECORD":1,TIUACT="DELETE RECORD":1,1:0) D  Q:+TIUPOP=1<br/> . L +^TIU(8925,+TIUDA):1<br/> . E  S TIUY="0^ Another session is editing this entry.",TIUPOP=1<br/> . L -^TIU(8925,+TIUDA)<br/>  I TIUACT["SIGNAT",+$$NEEDCS(TIUDA) S TIUY="0^ You must name a cosigner before signing this document." Q<br/> S TIUY=$$CANDO^TIULP(TIUDA,TIUACT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

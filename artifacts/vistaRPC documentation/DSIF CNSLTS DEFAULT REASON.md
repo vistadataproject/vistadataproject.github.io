@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS DEFAULT REASON 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS DEFAULT REASON{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DSIFSVC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN for the Consult Service.{:/} | 
 | {::nomarkdown}DSIFDFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the Patient DFN.{:/} | 
-| {::nomarkdown}DSIFRES{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the RESOLVE variable, which indicates boilerplates should be used.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIFRES{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the RESOLVE variable, which indicates boilerplates should be used.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

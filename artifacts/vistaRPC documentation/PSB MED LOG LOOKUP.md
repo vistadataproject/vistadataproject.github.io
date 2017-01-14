@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB MED LOG LOOKUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB MED LOG LOOKUP{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}PSBREC{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PSBREC  (array)(0)     determines  \lookup\ function         \PTLKUP\  (patient file (#2) lookup)        \ADMLKUP\  (administration lookup)        \SELECTAD\ (process selected administration. (1)     values to use for the lookup.  (DFN for the ADMLKUP)        \SELECTAD\ must present the PSBIEN value        of the user-chosen administration.(2)     search date for ADMLKUP{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PSBREC{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PSBREC  (array)(0)     determines  \lookup\ function         \PTLKUP\  (patient file (#2) lookup)        \ADMLKUP\  (administration lookup)        \SELECTAD\ (process selected administration. (1)     values to use for the lookup.  (DFN for the ADMLKUP)        \SELECTAD\ must present the PSBIEN value        of the user-chosen administration.(2)     search date for ADMLKUP{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

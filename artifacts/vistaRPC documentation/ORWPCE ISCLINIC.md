@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE ISCLINIC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE ISCLINIC{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | ISCLINIC^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Returns TRUE if location is a clinic
  Input parameters | {::nomarkdown}ORLOC{:/}
- Code | ```  N ORTYP
- S ORY=0
- S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")
- I (ORTYP="C")!(ORTYP="M") S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORTYP<br/> S ORY=0<br/> S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")<br/> I (ORTYP="C")!(ORTYP="M") S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

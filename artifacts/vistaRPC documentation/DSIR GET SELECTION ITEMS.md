@@ -8,16 +8,13 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIR GET SELECTION ITEMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIR GET SELECTION ITEMS{:/}
  tag | {::nomarkdown}GETSELS{:/}
  routine | [DSIROIAH](http://code.osehra.org/dox/Routine_DSIROIAH_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ description | {::nomarkdown}THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWOR1 GETDTEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR1 GETDTEXT{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | GETDTEXT^[ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
  Method comment | Get External Text
  Input parameters | {::nomarkdown}ORDER{:/}
- Code | ```  N IFN,ACTION
- S IFN=+ORDER,ACTION=$P(ORDER,";",2),I=0
- F  S I=$O(^OR(100,+IFN,8,+ACTION,.2,I)) Q:'I  S TEXT(I)=^(I,0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2),I=0<br/> F  S I=$O(^OR(100,+IFN,8,+ACTION,.2,I)) Q:'I  S TEXT(I)=^(I,0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

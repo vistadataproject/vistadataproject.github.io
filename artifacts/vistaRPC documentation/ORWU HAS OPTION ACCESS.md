@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU HAS OPTION ACCESS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU HAS OPTION ACCESS{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | HASOPTN^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns TRUE if the user has access to a menu option
  Input parameters | {::nomarkdown}OPTION{:/}
- Code | ```  S VAL=+$$ACCESS^XQCHK(DUZ,OPTION)
- I VAL'>0 S VAL=0
- E  S VAL=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=+$$ACCESS^XQCHK(DUZ,OPTION)<br/> I VAL'>0 S VAL=0<br/> E  S VAL=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

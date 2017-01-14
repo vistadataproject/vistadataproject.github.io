@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX1 DCORIG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX1 DCORIG{:/}
@@ -30,9 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DCORIG^[ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
  Input parameters | {::nomarkdown}ORIEN{:/}
- Code | ```  S $P(^OR(100,+ORIEN,6),U,9)=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S $P(^OR(100,+ORIEN,6),U,9)=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

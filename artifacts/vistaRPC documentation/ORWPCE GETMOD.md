@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GETMOD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GETMOD{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | GETMOD^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Returns info for a specific CPT Modifier
  Input parameters | {::nomarkdown}ORMODIEN<br/>ORDATE{:/}
- Code | ```  N ORDATA
- S:'+$G(ORDATE) ORDATE=DT
- S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)
- I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORDATA<br/> S:'+$G(ORDATE) ORDATE=DT<br/> S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)<br/> I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GAFURL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GAFURL{:/}
@@ -24,13 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GAFURL^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Returns the MH GAF Web Page URL
- Code | ```  S URL=""
- I $T(GAFURL^YTAPI5)'="" D
- .N ORY
- .D GAFURL^YTAPI5(.ORY)
- .I $G(ORY(1))="[DATA]" S URL=$G(ORY(2))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S URL=""<br/> I $T(GAFURL^YTAPI5)'="" D<br/> .N ORY<br/> .D GAFURL^YTAPI5(.ORY)<br/> .I $G(ORY(1))="[DATA]" S URL=$G(ORY(2))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

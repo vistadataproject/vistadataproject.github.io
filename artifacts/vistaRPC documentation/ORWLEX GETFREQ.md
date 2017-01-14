@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWLEX GETFREQ 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLEX GETFREQ{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | GETFREQ^[ORWLEX](http://code.osehra.org/dox/Routine_ORWLEX_source.html)
  Method comment | Call $$FREQ^LEXU to fetch the frequency of use of keywords contained in search string
  Input parameters | {::nomarkdown}ORSRCHTX{:/}
- Code | ```  S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

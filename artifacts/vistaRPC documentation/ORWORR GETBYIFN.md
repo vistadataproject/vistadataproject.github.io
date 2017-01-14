@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWORR GETBYIFN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORR GETBYIFN{:/}
@@ -26,14 +28,4 @@ title: VISTA RPC documentation
  Method comment | procedure
  First comment | {::nomarkdown}get fields for single order<br/>.LST(n)=described above in GET<br/>IFN=internal entry # for order{:/}
  Input parameters | {::nomarkdown}IFN{:/}
- Code | ```  I 'IFN Q
- N ACT,IDX,X0,X3,X8,PRV,ID,LN,TXT,STRT,STOP,CSTS,ACTID,ORIGVIEW,ORYD,TXTVW,DEA ;PKI
- S IDX=0,LST=0,ORYD=0
- S X0=$G(^OR(100,+IFN,0)),X3=$G(^(3))
- S ACT=$S($P(IFN,";",2):$P(IFN,";",2),$P(X3,U,7):$P(X3,U,7),1:1)
- S IFN=+IFN,X8=$G(^OR(100,IFN,8,ACT,0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I 'IFN Q<br/> N ACT,IDX,X0,X3,X8,PRV,ID,LN,TXT,STRT,STOP,CSTS,ACTID,ORIGVIEW,ORYD,TXTVW,DEA ;PKI<br/> S IDX=0,LST=0,ORYD=0<br/> S X0=$G(^OR(100,+IFN,0)),X3=$G(^(3))<br/> S ACT=$S($P(IFN,";",2):$P(IFN,";",2),$P(X3,U,7):$P(X3,U,7),1:1)<br/> S IFN=+IFN,X8=$G(^OR(100,IFN,8,ACT,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

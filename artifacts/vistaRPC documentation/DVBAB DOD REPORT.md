@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DVBAB DOD REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DVBAB DOD REPORT{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATATYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}BEGDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}ENDDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
-| {::nomarkdown}ORMAX{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}ORMAX{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

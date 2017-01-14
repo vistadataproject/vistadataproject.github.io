@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF AUTHLIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF AUTHLIST{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}    FLAG=\\ OR \0\ Outpatient authorizations only (excludes Unauthorized)    FLAG=\1\ Inpatient auths onlY    FLAG=\2\ Both Outpt, Inpt. & Unauthorized{:/} | 
 | {::nomarkdown}DSIFDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}  Enter the to date (in FM format) to restrict the number of records  returned.    Example: If you enter 3100501 the RPC will return all authorizations up  to May 1, 2010.    This field can also be used in conjunction with DSIFFDAT to produce a  specific time period in which authorizations to be returned.{:/} | 
 | {::nomarkdown}DSIFFDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Enter a from date (in FM format) to limit the authorizations returned.    Example: If you enter 3090101 it will only return authorizations between  today and January 1, 2009.{:/} | 
-| {::nomarkdown}DSIF AUTHLIST{:/} |  |  |  |  | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIF AUTHLIST{:/} |  |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

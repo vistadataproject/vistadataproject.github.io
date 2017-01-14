@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; VPS LIST ALL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}VPS LIST ALL{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the patient's name or contains the patient's file #2 IEN andname. Name part of the input may be a partial or full name.  Examples:  \DOE,J\  OR \99999^DOE,J\.{:/} | 
 | {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of DIR can be 1 or -1.  This parameter determines the $ORDER search direction, 1 is ascending and -1 is descending.{:/} | 
 | {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FORM is the 'Start With' or 'List From' input parametr. This is **NOT** a 'Prefixed by' input parameter.This is a required field and can have two different formats. 1. FORM  = PATIENT NAME. This format will return a batch of 44 patient records in patient name order start with PATIENT NAME. This is *NOT* a 'Prefixed by' input parameter. Any records in that batch including patient names *not* prefixed by the FORM will be included. 2. FORM = LAST IEN^LAST PATIENT NAME. This format is to provide a caller to get the next batch of 44 records. The list returned will NOT include the LAST PATIENT NAME. Commonly, RPC caller will set LAST IEN^LAST PATIENT NAME with the last record returned in the previous RPC call.{:/} | 
-| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input parameter DIR determines the order of the output array returned. Thevalue is either 1 (ascending order = default value) or -1 (descending order).{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input parameter DIR determines the order of the output array returned. Thevalue is either 1 (ascending order = default value) or -1 (descending order).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

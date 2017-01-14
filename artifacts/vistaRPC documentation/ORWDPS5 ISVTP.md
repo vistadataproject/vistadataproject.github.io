@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDPS5 ISVTP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS5 ISVTP{:/}
@@ -25,19 +27,4 @@ title: VISTA RPC documentation
  Method | ISVTP^[ORWDPS5](http://code.osehra.org/dox/Routine_ORWDPS5_source.html)
  Method comment | True: is verbal or telephoned or policy order
  Input parameters | {::nomarkdown}ODIEN{:/}
- Code | ```  S ORY=0
- Q:'$D(^OR(100,+ODIEN,0))
- N VERB,TEL,POL,LSTACT,NATR
- S (VERB,TEL,POL,LSTACT)=0,NATR=""
- S VERB=$O(^ORD(100.02,"B","VERBAL",0))
- S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))
- S POL=$O(^ORD(100.02,"B","POLICY",0))
- S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)
- S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)
- I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=0<br/> Q:'$D(^OR(100,+ODIEN,0))<br/> N VERB,TEL,POL,LSTACT,NATR<br/> S (VERB,TEL,POL,LSTACT)=0,NATR=""<br/> S VERB=$O(^ORD(100.02,"B","VERBAL",0))<br/> S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))<br/> S POL=$O(^ORD(100.02,"B","POLICY",0))<br/> S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)<br/> S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)<br/> I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

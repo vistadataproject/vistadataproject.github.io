@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP2 SAVLKUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 SAVLKUP{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | SAVLKUP^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | save Adhoc lookup selection
  Input parameters | {::nomarkdown}VAL{:/}
- Code | ```  N ORERR
- S OK=""
- D EN^XPAR(DUZ_";VA(200,","ORWRP ADHOC LOOKUP",1,VAL,.ORERR)
- I ORERR S OK=VAL_":"_ORERR```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORERR<br/> S OK=""<br/> D EN^XPAR(DUZ_";VA(200,","ORWRP ADHOC LOOKUP",1,VAL,.ORERR)<br/> I ORERR S OK=VAL_":"_ORERR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXC DISPLAY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC DISPLAY{:/}
@@ -25,12 +27,4 @@ title: VISTA RPC documentation
  Method | DISPLAY^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return list of Order Checks for a FillerID (namespace)
  Input parameters | {::nomarkdown}DFN<br/>FID{:/}
- Code | ```  N I,ORX,ORY
- S ORX=1,ORX(1)="|"_FID
- D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")
- S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,ORX,ORY<br/> S ORX=1,ORX(1)="|"_FID<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")<br/> S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

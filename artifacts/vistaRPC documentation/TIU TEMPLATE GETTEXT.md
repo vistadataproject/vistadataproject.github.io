@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETTEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE GETTEXT{:/}
@@ -33,9 +35,4 @@ title: VISTA RPC documentation
  Method | GETTEXT^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Expand Boilerplate
  Input parameters | {::nomarkdown}DFN<br/>VSTR<br/>TIUX{:/}
- Code | ```  D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

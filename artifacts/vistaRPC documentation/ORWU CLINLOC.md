@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU CLINLOC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU CLINLOC{:/}
@@ -26,13 +28,4 @@ title: VISTA RPC documentation
  Method comment | Return a set of clinics from HOSPITAL LOCATION
  First comment | {::nomarkdown}.Y=returned list, FROM=text to $O from, DIR=$O direction,{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N I,IEN,CNT S I=0,CNT=44
- F  Q:I'<CNT  S FROM=$O(^SC("B",FROM),DIR) Q:FROM=""  D  ; IA# 10040.
- . S IEN="" F  S IEN=$O(^SC("B",FROM,IEN),DIR) Q:'IEN  D
- . . I ($P($G(^SC(IEN,0)),U,3)'="C")!('$$ACTLOC(IEN)) Q
- . . S I=I+1,Y(I)=IEN_"^"_FROM```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,IEN,CNT S I=0,CNT=44<br/> F  Q:I'<CNT  S FROM=$O(^SC("B",FROM),DIR) Q:FROM=""  D  ; IA# 10040.<br/> . S IEN="" F  S IEN=$O(^SC("B",FROM,IEN),DIR) Q:'IEN  D<br/> . . I ($P($G(^SC(IEN,0)),U,3)'="C")!('$$ACTLOC(IEN)) Q<br/> . . S I=I+1,Y(I)=IEN_"^"_FROM```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

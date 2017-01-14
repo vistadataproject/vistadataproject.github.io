@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENT STATUS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET DOCUMENT STATUS{:/}
@@ -32,13 +34,4 @@ title: VISTA RPC documentation
  Method comment | RPC Gets the status of TIU Doc TIUIEN
  First comment | {::nomarkdown}Returns STATIEN^STATNAME{:/}
  Input parameters | {::nomarkdown}TIUIEN{:/}
- Code | ```  N TIUTTL
- S TIUTTL=+$G(^TIU(8925,TIUIEN,0))
- I 'TIUTTL S TIUY="0^Document does not exist" Q
- S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)
- S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)<br/> S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

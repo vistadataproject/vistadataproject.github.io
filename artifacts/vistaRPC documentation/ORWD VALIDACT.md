@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWD VALIDACT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD VALIDACT{:/}
@@ -26,10 +28,4 @@ title: VISTA RPC documentation
  Method comment | procedure
  First comment | {::nomarkdown}Return 1 if action is valid for this order, otherwise 0^error{:/}
  Input parameters | {::nomarkdown}ORIFN<br/>ACTION{:/}
- Code | ```  S VAL=$$VALID^ORCACT0(ORIFN,ACTION,.ERR)
- I VAL=0 S VAL=VAL_U_ERR```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=$$VALID^ORCACT0(ORIFN,ACTION,.ERR)<br/> I VAL=0 S VAL=VAL_U_ERR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

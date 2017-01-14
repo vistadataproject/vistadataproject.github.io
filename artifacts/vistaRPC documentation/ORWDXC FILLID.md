@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXC FILLID 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC FILLID{:/}
@@ -25,16 +27,4 @@ title: VISTA RPC documentation
  Method | FILLID^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return the FillerID (namespace) for a dialog
  Input parameters | {::nomarkdown}DLG{:/}
- Code | ```  N DGRP
- S VAL="",DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP
- S DLG=$$DEFDLG^ORWDXQ(DGRP)
- S VAL=$P($G(^ORD(101.41,DLG,0)),U,7),VAL=$$NMSP^ORCD(VAL)
- I VAL="PS" D
- . N X
- . S X=$P($P($G(^ORD(100.98,DGRP,0)),U,3)," ")
- . I $L(X) S VAL="PS"_$S(X="UD":"I",1:X)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N DGRP<br/> S VAL="",DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP<br/> S DLG=$$DEFDLG^ORWDXQ(DGRP)<br/> S VAL=$P($G(^ORD(101.41,DLG,0)),U,7),VAL=$$NMSP^ORCD(VAL)<br/> I VAL="PS" D<br/> . N X<br/> . S X=$P($P($G(^ORD(100.98,DGRP,0)),U,3)," ")<br/> . I $L(X) S VAL="PS"_$S(X="UD":"I",1:X)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

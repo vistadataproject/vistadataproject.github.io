@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU ID ATTACH ENTRY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU ID ATTACH ENTRY{:/}
@@ -32,13 +34,4 @@ title: VISTA RPC documentation
  Method | IDATTCH^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Attach TIUDA as ID Child entry to TIUDAD
  Input parameters | {::nomarkdown}TIUDA<br/>TIUDAD{:/}
- Code | ```  N TIUX
- S TIUX(2101)=TIUDAD
- D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)
- D AUDLINK^TIUGR1(TIUDA,"a",TIUDAD)
- D SENDID^TIUALRT1(TIUDA)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUX<br/> S TIUX(2101)=TIUDAD<br/> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br/> D AUDLINK^TIUGR1(TIUDA,"a",TIUDAD)<br/> D SENDID^TIUALRT1(TIUDA)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 ODPTEVID 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 ODPTEVID{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | ODPTEVID^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return PtEvtID based on the ORID
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  Q:'$D(^OR(100,+ORID,0))
- S ORY=$P($G(^OR(100,+ORID,0)),U,17)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$D(^OR(100,+ORID,0))<br/> S ORY=$P($G(^OR(100,+ORID,0)),U,17)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

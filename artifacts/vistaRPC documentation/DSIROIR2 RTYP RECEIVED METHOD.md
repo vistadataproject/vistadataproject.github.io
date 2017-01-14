@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIROIR2 RTYP RECEIVED METHOD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIROIR2 RTYP RECEIVED METHOD{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}SDATE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}SDATE - start date.  This is the date to begin pulling data for the report.{:/} | 
 | {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}EDATE - end date.  This is the last date to be used when pulling report data.{:/} | 
-| {::nomarkdown}DIVL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}DIVL  - List of selected divisions - NULL means all divisions{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DIVL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}DIVL  - List of selected divisions - NULL means all divisions{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

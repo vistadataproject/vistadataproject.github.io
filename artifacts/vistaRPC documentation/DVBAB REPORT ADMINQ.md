@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DVBAB REPORT ADMINQ 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DVBAB REPORT ADMINQ{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Ending date in a date range to use for retrieving results for the report.{:/} | 
 | {::nomarkdown}ROYESNO{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}'Y' indicates to screen by RONUM.Note: In the M code, the variable is referenced as RO vs ROYESNO.{:/} | 
 | {::nomarkdown}RONUM{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Screens RO number on report. Regional Office Station # when ROYESNO is 'Y', otherwise 0.{:/} | 
-| {::nomarkdown}DVBADLMTR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}DVBADLMTR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is an optional parameter, which when defined with the final end date selected in the GUI, will produce a delimited report. If this parameter is undefined, null or 0 then the standard report format will be generated.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DG SENSITIVE RECORD BULLETIN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DG SENSITIVE RECORD BULLETIN{:/}
@@ -34,15 +36,4 @@ title: VISTA RPC documentation
  Method comment | RPC/API entry point for log entry and message generation
  First comment | {::nomarkdown}Input parameters:  <br/>DFN    = Patient file DFN<br/>DGOPT  = Option name^Menu text (Optional)<br/>ACTION = 1 - Set DG Security Log entry, 2 - Generate mail <br/>message, 3 - Both (Optional - Defaults to both)<br/>Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value)<br/>0 - Required variable undefined{:/}
  Input parameters | {::nomarkdown}DFN<br/>DGOPT<br/>ACTION{:/}
- Code | ```  I $G(DFN)="" S RESULT=0 Q
- I $G(DUZ)="" S RESULT=0 Q
- S DGOPT=$G(DGOPT)
- I $G(ACTION)="" S ACTION=3
- I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)
- I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)
- S RESULT=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $G(DFN)="" S RESULT=0 Q<br/> I $G(DUZ)="" S RESULT=0 Q<br/> S DGOPT=$G(DGOPT)<br/> I $G(ACTION)="" S ACTION=3<br/> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br/> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br/> S RESULT=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

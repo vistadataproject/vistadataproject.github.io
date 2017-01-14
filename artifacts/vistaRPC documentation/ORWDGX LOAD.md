@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDGX LOAD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDGX LOAD{:/}
@@ -25,23 +27,4 @@ title: VISTA RPC documentation
  Method | LOAD^[ORWDGX](http://code.osehra.org/dox/Routine_ORWDGX_source.html)
  Method comment | Load a list of activity orders
  Input parameters | {::nomarkdown}PAR{:/}
- Code | ```  N I,ILST,DLG,NAM,TLST
- D GETLST^XPAR(.TLST,"ALL",PAR)
- S I=0,ILST=0 F  S I=$O(TLST(I)) Q:'I  D
- . S DLG=$P(TLST(I),U,2),NAM=$P(^ORD(101.41,+DLG,0),U,2)
- . S ILST=ILST+1,LST(ILST)=DLG_U_NAM
- N DLGTYP,OIDLG,FTDLG,OITYP,I,IFN
- S DLGTYP=$P(^ORD(101.41,DLG,0),U,4)
- S OIDLG=$O(^ORD(101.41,"B","OR GTX ORDERABLE ITEM",0))
- S FTDLG=$O(^ORD(101.41,"B","OR GTX FREE TEXT OI",0))
- I DLGTYP="D" D
- . S I=0,IFN=0 F  S I=$O(^ORD(101.41,DLG,10,I)) S X=^(I,0) D  Q:IFN
- . . I $P(X,U,2)=OIDLG S IFN=I,OITYP="O"
- . . I $P(X,U,2)=FTDLG S IFN=I,OITYP="F"
- . S Y="" I $L($G(^ORD(101.41,DLG,10,IFN,7))) X ^(7)
- . I OITYP="O" S Y=$P(^ORD(101.43,+Y,0),U,1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,ILST,DLG,NAM,TLST<br/> D GETLST^XPAR(.TLST,"ALL",PAR)<br/> S I=0,ILST=0 F  S I=$O(TLST(I)) Q:'I  D<br/> . S DLG=$P(TLST(I),U,2),NAM=$P(^ORD(101.41,+DLG,0),U,2)<br/> . S ILST=ILST+1,LST(ILST)=DLG_U_NAM<br/> N DLGTYP,OIDLG,FTDLG,OITYP,I,IFN<br/> S DLGTYP=$P(^ORD(101.41,DLG,0),U,4)<br/> S OIDLG=$O(^ORD(101.41,"B","OR GTX ORDERABLE ITEM",0))<br/> S FTDLG=$O(^ORD(101.41,"B","OR GTX FREE TEXT OI",0))<br/> I DLGTYP="D" D<br/> . S I=0,IFN=0 F  S I=$O(^ORD(101.41,DLG,10,I)) S X=^(I,0) D  Q:IFN<br/> . . I $P(X,U,2)=OIDLG S IFN=I,OITYP="O"<br/> . . I $P(X,U,2)=FTDLG S IFN=I,OITYP="F"<br/> . S Y="" I $L($G(^ORD(101.41,DLG,10,IFN,7))) X ^(7)<br/> . I OITYP="O" S Y=$P(^ORD(101.43,+Y,0),U,1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

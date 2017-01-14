@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCV VST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCV VST{:/}
@@ -24,13 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VST1^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  Input parameters | {::nomarkdown}DFN<br/>BEG<br/>END<br/>SKIP{:/}
- Code | ```  N ERR,ERRMSG
- S ERR=0 ; kludge to return errors
- Q:'$G(DFN)
- D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)
- I ERR K ORVISIT S ORVISIT(1)=ERRMSG```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ERR,ERRMSG<br/> S ERR=0 ; kludge to return errors<br/> Q:'$G(DFN)<br/> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br/> I ERR K ORVISIT S ORVISIT(1)=ERRMSG```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

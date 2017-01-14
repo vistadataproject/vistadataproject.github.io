@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; EC GETECSCREEN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}EC GETECSCREEN{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Input variable ECARY can contains the following elements separated by up-arrow.  STAT   - Active and/or inactive Event Code Screens           A-ctive (default), I-nactive, B-oth  LOCIEN - Location IEN (optional)  DSSIEN - DSS IEN (optional)If no parameter is passed, a status of active is assumed and all locations.If a LOCIEN is passed, then only the event codes screens with that location IEN is returned. Similarily, if a DSSIEN is passed, event code screens with for that DSS Unit is returned.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Input variable ECARY can contains the following elements separated by up-arrow.  STAT   - Active and/or inactive Event Code Screens           A-ctive (default), I-nactive, B-oth  LOCIEN - Location IEN (optional)  DSSIEN - DSS IEN (optional)If no parameter is passed, a status of active is assumed and all locations.If a LOCIEN is passed, then only the event codes screens with that location IEN is returned. Similarily, if a DSSIEN is passed, event code screens with for that DSS Unit is returned.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

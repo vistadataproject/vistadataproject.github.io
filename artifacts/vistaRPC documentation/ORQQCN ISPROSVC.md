@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN ISPROSVC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN ISPROSVC{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | IS THIS SERVICE PART OF CONSULTS-PROSTHETICS INTERFACE, wat/OR*3*280
  First comment | {::nomarkdown}GMRCIEN - IEN of selected service{:/}
  Input parameters | {::nomarkdown}GMRCIEN{:/}
- Code | ```  I $G(^GMR(123.5,$G(GMRCIEN),"INT"))=1 S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  I $G(^GMR(123.5,$G(GMRCIEN),"INT"))=1 S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

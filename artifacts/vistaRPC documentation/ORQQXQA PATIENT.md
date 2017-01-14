@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQXQA PATIENT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQXQA PATIENT{:/}
@@ -33,35 +35,4 @@ title: VISTA RPC documentation
  Method | PATIENT^[ORQQXQA](http://code.osehra.org/dox/Routine_ORQQXQA_source.html)
  Method comment | return current user's notifications for patient ORPT
  Input parameters | {::nomarkdown}ORPT{:/}
- Code | ```  Q:'$L($G(ORPT))
- N STRTDATE,STOPDATE S STRTDATE="",STOPDATE=""
- D USER^XQALERT("^TMP(""ORB"",$J)",DUZ,STRTDATE,STOPDATE)
- N I,J,INFO,ORX,URG,ORN,ORPTN,SORT,SVAL,TVAL,MSG,ORNAME,INVDT,PT,NODE,ORT
- N ORTOT
- S ORTOT=^TMP("ORB",$J)
- S J=0,NODE="",TVAL=""
- F I=1:1:ORTOT S ORX=$P(^TMP("ORB",$J,I),U,2) I ($P(ORX,";")["OR"),($P(ORX,",",2)=ORPT) D
- .S ORN=$P($P(ORX,";"),",",3)
- .S INVDT=9999999-$P(ORX,";",3)
- .D SORT^ORQORB(.SORT) S SORT=$S($L($G(SORT)):SORT,1:"P") ;sort method
- .I SORT'="P" D 
- ..D URGENCY^ORQORB(.URG,ORN) S URG=$S($G(URG)>0:URG,1:2)
- ..S ORNAME=$P(^ORD(100.9,ORN,0),U)
- .S INFO=$P(^TMP("ORB",$J,I),"  ")
- .S MSG=$S(INFO="I":INFO,1:" ")_" "_$P($P(^TMP("ORB",$J,I),U),"):",2)
- .I SORT="U" S SVAL=URG_U_ORNAME
- .I SORT="T" S SVAL=ORNAME
- .I SORT="P" S SVAL=""
- .S ^TMP("ORB2",$J,SVAL_U_INVDT)=ORX_U_MSG_U_ORPT_U_$P(ORX,";",3)
- F  S NODE=$O(^TMP("ORB2",$J,NODE)) Q:NODE=""  S J=J+1 D
- .S SVAL=$P(NODE,U)
- .I SORT'="P",(TVAL'=SVAL) D
- ..S ORY(J)=U_$S(SORT="U":$S(SVAL=1:"HIGH",SVAL=3:"LOW",1:"MODERATE"),1:SVAL)_":",TVAL=SVAL,J=J+1
- .S ORY(J)=^TMP("ORB2",$J,NODE)
- I J=0 S ORY(1)="^No notifications found."
- K ^TMP("ORB",$J),^TMP("ORB2",$J)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$L($G(ORPT))<br/> N STRTDATE,STOPDATE S STRTDATE="",STOPDATE=""<br/> D USER^XQALERT("^TMP(""ORB"",$J)",DUZ,STRTDATE,STOPDATE)<br/> N I,J,INFO,ORX,URG,ORN,ORPTN,SORT,SVAL,TVAL,MSG,ORNAME,INVDT,PT,NODE,ORT<br/> N ORTOT<br/> S ORTOT=^TMP("ORB",$J)<br/> S J=0,NODE="",TVAL=""<br/> F I=1:1:ORTOT S ORX=$P(^TMP("ORB",$J,I),U,2) I ($P(ORX,";")["OR"),($P(ORX,",",2)=ORPT) D<br/> .S ORN=$P($P(ORX,";"),",",3)<br/> .S INVDT=9999999-$P(ORX,";",3)<br/> .D SORT^ORQORB(.SORT) S SORT=$S($L($G(SORT)):SORT,1:"P") ;sort method<br/> .I SORT'="P" D <br/> ..D URGENCY^ORQORB(.URG,ORN) S URG=$S($G(URG)>0:URG,1:2)<br/> ..S ORNAME=$P(^ORD(100.9,ORN,0),U)<br/> .S INFO=$P(^TMP("ORB",$J,I),"  ")<br/> .S MSG=$S(INFO="I":INFO,1:" ")_" "_$P($P(^TMP("ORB",$J,I),U),"):",2)<br/> .I SORT="U" S SVAL=URG_U_ORNAME<br/> .I SORT="T" S SVAL=ORNAME<br/> .I SORT="P" S SVAL=""<br/> .S ^TMP("ORB2",$J,SVAL_U_INVDT)=ORX_U_MSG_U_ORPT_U_$P(ORX,";",3)<br/> F  S NODE=$O(^TMP("ORB2",$J,NODE)) Q:NODE=""  S J=J+1 D<br/> .S SVAL=$P(NODE,U)<br/> .I SORT'="P",(TVAL'=SVAL) D<br/> ..S ORY(J)=U_$S(SORT="U":$S(SVAL=1:"HIGH",SVAL=3:"LOW",1:"MODERATE"),1:SVAL)_":",TVAL=SVAL,J=J+1<br/> .S ORY(J)=^TMP("ORB2",$J,NODE)<br/> I J=0 S ORY(1)="^No notifications found."<br/> K ^TMP("ORB",$J),^TMP("ORB2",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

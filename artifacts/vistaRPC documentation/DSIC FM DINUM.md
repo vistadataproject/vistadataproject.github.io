@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIC FM DINUM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC FM DINUM{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FILE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the file number of the DSS file which has a .01 DINUM'd field{:/} | 
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the ien of the pointed to file.  If the .01 field is not a pointer field then this parameter should not be passed when trying to add a new entry to the file.{:/} | 
 | {::nomarkdown}VAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the external value of the .01 field.   If the .01 field is a pointer field, then this would be some external lookup value for the pointed to file.   If the .01 field is not a pointer, then this must numeric.{:/} | 
-| {::nomarkdown}IENS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field is only valid if you are trying to add a DINUM'd value to a multiple in the FILE.  The syntax of iens is ,S1,S2,S3,   See M programmers for precise syntax to use if you need this.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}IENS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field is only valid if you are trying to add a DINUM'd value to a multiple in the FILE.  The syntax of iens is ,S1,S2,S3,   See M programmers for precise syntax to use if you need this.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

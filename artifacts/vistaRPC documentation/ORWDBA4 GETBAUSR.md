@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDBA4 GETBAUSR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA4 GETBAUSR{:/}
@@ -32,10 +34,4 @@ title: VISTA RPC documentation
  Method comment | GUI RPC CALL
  First comment | {::nomarkdown}Get Billing Awareness By User parameter value<br/>Gets and returns the value of the Enabled Billing Awareness By User<br/>parameter assigned to a provider.<br/>Input Variable:<br/>ORCIEN    Ordering Clinician's Internal Entry Number<br/>Output Variable:<br/>Y         Parameter value, 1 if enabled, 0 if disabled{:/}
  Input parameters | {::nomarkdown}ORCIEN{:/}
- Code | ```  S Y=$$GET^XPAR(ORCIEN_";VA(200,","OR BILLING AWARENESS BY USER",1,"Q")
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S Y=$$GET^XPAR(ORCIEN_";VA(200,","OR BILLING AWARENESS BY USER",1,"Q")<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

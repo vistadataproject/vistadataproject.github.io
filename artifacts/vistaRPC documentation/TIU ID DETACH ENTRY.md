@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU ID DETACH ENTRY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU ID DETACH ENTRY{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | IDDTCH^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Detach TIUDA from its ID Parent
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUX,IDDAD
- I '+$G(^TIU(8925,TIUDA,21)) D  Q
- . S TIUY="0^Record #"_TIUDA_" is NOT an ID Entry."
- S IDDAD=+$G(^TIU(8925,TIUDA,21))
- S TIUX(2101)="@"
- D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)
- D AUDLINK^TIUGR1(TIUDA,"d",IDDAD)
- D IDDEL^TIUALRT1(TIUDA)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUX,IDDAD<br/> I '+$G(^TIU(8925,TIUDA,21)) D  Q<br/> . S TIUY="0^Record #"_TIUDA_" is NOT an ID Entry."<br/> S IDDAD=+$G(^TIU(8925,TIUDA,21))<br/> S TIUX(2101)="@"<br/> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br/> D AUDLINK^TIUGR1(TIUDA,"d",IDDAD)<br/> D IDDEL^TIUALRT1(TIUDA)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

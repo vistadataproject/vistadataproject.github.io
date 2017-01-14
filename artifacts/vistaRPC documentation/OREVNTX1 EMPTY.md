@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 EMPTY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 EMPTY{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | EMPTY^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return 1 if PTEVT doesn't have any orders
  Input parameters | {::nomarkdown}PTEVT{:/}
- Code | ```  Q:'+PTEVT
- S ORY=$$EMPTY^OREVNTX(PTEVT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'+PTEVT<br/> S ORY=$$EMPTY^OREVNTX(PTEVT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

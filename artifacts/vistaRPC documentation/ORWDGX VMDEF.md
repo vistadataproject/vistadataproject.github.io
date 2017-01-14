@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDGX VMDEF 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDGX VMDEF{:/}
@@ -24,11 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VMDEF^[ORWDGX](http://code.osehra.org/dox/Routine_ORWDGX_source.html)
  Method comment | Return dialog definition for vitals/measurements
- Code | ```  N ILST S ILST=0
- S LST($$NXT)="~Measurements" D MEASURE
- S LST($$NXT)="~Schedules" D VMSCHED```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEASURE<br/> S LST($$NXT)="~Schedules" D VMSCHED```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

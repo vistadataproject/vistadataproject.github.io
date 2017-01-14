@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB REPORT{:/}
@@ -46,9 +48,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSB23{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reserved parameter 23 for future use.{:/} | 
 | {::nomarkdown}PSB24{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Reserved parameter 24 for future use.{:/} | 
 | {::nomarkdown}PSBCLLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}LIST ARRAY FOR CLINICS{:/} | 
-| {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

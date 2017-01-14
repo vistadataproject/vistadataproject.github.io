@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF GENERIC PRICER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF GENERIC PRICER{:/}
@@ -27,9 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}REIMB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}REIMB = \Patient Reimbursement (0/1);Payment by Medicare or Other Federal Agency (0/1)\{:/} | 
 | {::nomarkdown}ICD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ICD = \ICD1;ICD2;ICD3:ICD4;ICD5\ [ICD1 is Mandatory - Primary Diagnosis]{:/} | 
 | {::nomarkdown}PROC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PROC = \PROC1;PROC2;PROC3\  [PROC1 is mandatory, Primary procedure]{:/} | 
-| {::nomarkdown}CHARGES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CHARGES = \Billed Charges;Amount Claimed\{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}CHARGES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CHARGES = \Billed Charges;Amount Claimed\{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

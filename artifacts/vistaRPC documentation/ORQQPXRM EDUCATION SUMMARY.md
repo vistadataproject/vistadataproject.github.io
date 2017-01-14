@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM EDUCATION SUMMARY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM EDUCATION SUMMARY{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | EDL^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Method comment | DBIA 3079
  First comment | {::nomarkdown}ORQQPXRM EDUCATION TOPIC{:/}
- Input parameters | {::nomarkdown}OREM{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Input parameters | {::nomarkdown}OREM{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

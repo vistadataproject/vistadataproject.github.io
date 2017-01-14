@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU SIGN RECORD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU SIGN RECORD{:/}
@@ -33,9 +35,4 @@ title: VISTA RPC documentation
  Method comment | API for /es/
  First comment | {::nomarkdown}For backward compatibility<br/>Use SIGN^TIUSRVP2 now, please{:/}
  Input parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
- Code | ```  D SIGN^TIUSRVP2(.ERR,TIUDA,.TIUX)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D SIGN^TIUSRVP2(.ERR,TIUDA,.TIUX)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

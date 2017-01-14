@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG PROMPTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM DIALOG PROMPTS{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PROMPT^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Input parameters | {::nomarkdown}ORDLG<br/>ORDCUR<br/>ORFTYP{:/}
- Code | ```  D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

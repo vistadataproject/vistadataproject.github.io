@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE DELETE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE DELETE{:/}
@@ -32,18 +34,4 @@ title: VISTA RPC documentation
  Method comment | Delete TEMPLATES
  First comment | {::nomarkdown}Pass TIUDA as array of record numbers to be deleted by reference<br/>SUCCESS will be returned as the actual number of templates deleted{:/}
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUI S (SUCCESS,TIUI)=0
- F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D
- . N DA
- . S DA=+TIUDA(TIUI)
- . I 'DA Q
- . L -^TIU(8927,DA,0):1 ; Unlock before deleting
- . ; Quit if the Template is NOT an ORPHAN
- . I +$O(^TIU(8927,"AD",DA,0)) Q
- . ; Otherwise, call FileMan to DELETE the record
- . D ZAP(DA) S SUCCESS=SUCCESS+1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUI S (SUCCESS,TIUI)=0<br/> F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D<br/> . N DA<br/> . S DA=+TIUDA(TIUI)<br/> . I 'DA Q<br/> . L -^TIU(8927,DA,0):1 ; Unlock before deleting<br/> . ; Quit if the Template is NOT an ORPHAN<br/> . I +$O(^TIU(8927,"AD",DA,0)) Q<br/> . ; Otherwise, call FileMan to DELETE the record<br/> . D ZAP(DA) S SUCCESS=SUCCESS+1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

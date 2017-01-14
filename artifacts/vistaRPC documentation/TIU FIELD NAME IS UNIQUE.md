@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU FIELD NAME IS UNIQUE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD NAME IS UNIQUE{:/}
@@ -32,12 +34,4 @@ title: VISTA RPC documentation
  Method | ISUNIQUE^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  Method comment | Is Name Unique?
  Input parameters | {::nomarkdown}NAME<br/>IEN{:/}
- Code | ```  N FLD
- S FLD=+$O(^TIU(8927.1,"B",NAME,0))
- I +FLD,FLD'=IEN S TIUY=0
- E  S TIUY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N FLD<br/> S FLD=+$O(^TIU(8927.1,"B",NAME,0))<br/> I +FLD,FLD'=IEN S TIUY=0<br/> E  S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU LINK TO FLAG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LINK TO FLAG{:/}
@@ -35,13 +37,4 @@ title: VISTA RPC documentation
  Method comment | RPC Link TIU Doc TIUIEN to
  First comment | {::nomarkdown}the PRF action{:/}
  Input parameters | {::nomarkdown}TIUIEN<br/>ASSGNDA<br/>ACTIEN<br/>DFN{:/}
- Code | ```  N TIUTTL
- S TIUTTL=+$G(^TIU(8925,TIUIEN,0))
- I 'TIUTTL S TIUY="0^Document does not exist" Q
- D UNLINK^TIUPRF1(TIUIEN)
- S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N TIUTTL<br/> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br/> I 'TIUTTL S TIUY="0^Document does not exist" Q<br/> D UNLINK^TIUPRF1(TIUIEN)<br/> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

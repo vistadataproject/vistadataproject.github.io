@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL CHECK DUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL CHECK DUP{:/}
@@ -33,11 +35,4 @@ title: VISTA RPC documentation
  Method | DUP^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | Check for duplicate problem
  Input parameters | {::nomarkdown}DFN<br/>TERM<br/>TEXT{:/}
- Code | ```  S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0
- I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q
- S Y=Y_U_$P(^AUPNPROB(Y,0),U,12)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br/> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br/> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

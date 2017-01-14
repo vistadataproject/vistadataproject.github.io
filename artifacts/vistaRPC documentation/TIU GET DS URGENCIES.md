@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET DS URGENCIES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET DS URGENCIES{:/}
@@ -24,11 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | URGENCY^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | retrieve set values from dd for discharge summary urgency
- Code | ```  N TIUDD,TIUI,TIUX
- D FIELD^DID(8925,.09,"","POINTER","TIUDD")
- F TIUI=1:1 S TIUX=$P(TIUDD("POINTER"),";",TIUI) Q:TIUX=""   S TIUY(TIUI)=$TR(TIUX,":","^")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUDD,TIUI,TIUX<br/> D FIELD^DID(8925,.09,"","POINTER","TIUDD")<br/> F TIUI=1:1 S TIUX=$P(TIUDD("POINTER"),";",TIUI) Q:TIUX=""   S TIUY(TIUI)=$TR(TIUX,":","^")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

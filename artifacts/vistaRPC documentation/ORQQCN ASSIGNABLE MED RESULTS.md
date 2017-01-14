@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN ASSIGNABLE MED RESULTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN ASSIGNABLE MED RESULTS{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | GETMED^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | Return available med results for proc request
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  Q:+$G(GMRCO)=0
- D GETMED^GMRCGUIU(GMRCO,.ORY)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(GMRCO)=0<br/> D GETMED^GMRCGUIU(GMRCO,.ORY)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU IS THIS A SURGERY? 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IS THIS A SURGERY?{:/}
@@ -31,13 +33,4 @@ title: VISTA RPC documentation
  Method | ISSURG^[TIUSROI](http://code.osehra.org/dox/Routine_TIUSROI_source.html)
  Method comment | Boolean RPC to evaluate whether TITLE is a SURGERY REPORT
  Input parameters | {::nomarkdown}TITLE{:/}
- Code | ```  N TIUCLASS,TIUI S TIUY=0
- F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0
- . S TIUCLASS=+$$CLASS(TIUI)
- . I +TIUCLASS'>0 Q
- . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N TIUCLASS,TIUI S TIUY=0<br/> F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0<br/> . S TIUCLASS=+$$CLASS(TIUI)<br/> . I +TIUCLASS'>0 Q<br/> . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

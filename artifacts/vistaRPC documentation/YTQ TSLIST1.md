@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; YTQ TSLIST1 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}YTQ TSLIST1{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}CODE{:/} |  | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}.01 entry IN 601.71{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}CODE{:/} |  | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}.01 entry IN 601.71{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

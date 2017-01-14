@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV GET CURRENT TIME 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV GET CURRENT TIME{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | TIME^[GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
  Method comment | Gets current time
  Input parameters | {::nomarkdown}P2{:/}
- Code | ```  S RESULT=$$NOW^XLFDT()
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RESULT=$$NOW^XLFDT()<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

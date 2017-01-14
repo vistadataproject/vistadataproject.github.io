@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV CONVERT DATE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV CONVERT DATE{:/}
@@ -32,12 +34,4 @@ title: VISTA RPC documentation
  Method comment | GMV CONVERT DATE [RPC entry point]
  First comment | {::nomarkdown}INPUT VARIABLE:<br/>GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER<br/>OUTPUT VARIABLE:<br/>RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME{:/}
  Input parameters | {::nomarkdown}GMRDATE{:/}
- Code | ```  N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)
- I $G(GDATE)'>0 S RESULT="" Q
- I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q
- S RESULT=$G(GDATE)_"^"_$G(GDATE(0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)<br/> I $G(GDATE)'>0 S RESULT="" Q<br/> I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q<br/> S RESULT=$G(GDATE)_"^"_$G(GDATE(0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

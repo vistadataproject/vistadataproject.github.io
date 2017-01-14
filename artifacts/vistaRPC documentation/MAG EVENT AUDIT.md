@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG EVENT AUDIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG EVENT AUDIT{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}64{:/} |  | {::nomarkdown}This is the host name of the host machine whose event is being audited.{:/} | 
 | {::nomarkdown}APPNAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}64{:/} |  | {::nomarkdown}This is the application name of the application whose event is being audited.{:/} | 
 | {::nomarkdown}MESSAGE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} |  | {::nomarkdown}This is the message associated with the audit event.{:/} | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}129{:/} |  | {::nomarkdown}This is a list of data attribute names and associated values to be includedin the audit event log.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}129{:/} |  | {::nomarkdown}This is a list of data attribute names and associated values to be includedin the audit event log.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

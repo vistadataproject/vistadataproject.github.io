@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 DLGIEN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 DLGIEN{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | DLGIEN^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Order Dialog IEN based on name
  Input parameters | {::nomarkdown}DLGNAME{:/}
- Code | ```  Q:'$D(^ORD(101.41,"B",DLGNAME))
- S ORY=$O(^ORD(101.41,"B",DLGNAME,0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$D(^ORD(101.41,"B",DLGNAME))<br/> S ORY=$O(^ORD(101.41,"B",DLGNAME,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

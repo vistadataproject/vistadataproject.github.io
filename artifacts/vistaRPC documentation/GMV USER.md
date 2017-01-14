@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV USER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV USER{:/}
@@ -33,13 +35,4 @@ title: VISTA RPC documentation
  Method comment | [Procedure] Main RPC call tag
  First comment | {::nomarkdown}RPC: [GMV USER]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
  Input parameters | {::nomarkdown}OPTION<br/>DATA{:/}
- Code | ```  N GMV,GMVCAT,GMVDESC,GMVENT,GMVERR,GMVFDA,GMVFLD,GMVIEN,GMVIT,GMVNAM,GMVNAME,GMVNEW,GMVOLD,GMVOWN,GMVOWNER,GMVQUAL,GMVROOT,GMVTYPE,GMVVAL,GMVVIT,GMVSCRN
- S RESULTS=$NA(^TMP("GMVUSER",$J)) K @RESULTS
- D:$T(@OPTION)]"" @OPTION
- S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"
- D CLEAN^DILF```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N GMV,GMVCAT,GMVDESC,GMVENT,GMVERR,GMVFDA,GMVFLD,GMVIEN,GMVIT,GMVNAM,GMVNAME,GMVNEW,GMVOLD,GMVOWN,GMVOWNER,GMVQUAL,GMVROOT,GMVTYPE,GMVVAL,GMVVIT,GMVSCRN<br/> S RESULTS=$NA(^TMP("GMVUSER",$J)) K @RESULTS<br/> D:$T(@OPTION)]"" @OPTION<br/> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br/> D CLEAN^DILF```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

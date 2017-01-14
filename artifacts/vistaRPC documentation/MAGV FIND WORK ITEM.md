@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV FIND WORK ITEM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV FIND WORK ITEM{:/}
@@ -28,9 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PRIORITY{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the numeric priority given to a work item.{:/} | 
 | {::nomarkdown}TAGS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is an array of tag names and values.{:/} | 
 | {::nomarkdown}STOPTAG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}If this parameter is set then the tag list may be truncated. If a tagvalue matching the parameter value is returned then no more tags willbe returned.{:/} | 
-| {::nomarkdown}MAXROWS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This parameter determines the number of work items to return.  If thisparameter is not set all matching work items will be sent.  If this parameteris defined it will determine the maximum number of work items to return{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MAXROWS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This parameter determines the number of work items to return.  If thisparameter is not set all matching work items will be sent.  If this parameteris defined it will determine the maximum number of work items to return{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

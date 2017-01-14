@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET DEFAULT PROVIDER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET DEFAULT PROVIDER{:/}
@@ -33,15 +35,4 @@ title: VISTA RPC documentation
  Method | DEFDOC^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Get default primary provider
  Input parameters | {::nomarkdown}HLOC<br/>USER<br/>TIUDT<br/>TIUIEN{:/}
- Code | ```  N TIUSPRM,TIUDDOC,TIUAUTH
- D SITEPARM(.TIUSPRM)
- S TIUDDOC=+$P(TIUSPRM,U,8)
- S TIUAUTH=$S((+$G(USER)!('+$G(TIUIEN))):0,1:+$P($G(^TIU(8925,+$G(TIUIEN),12)),U,2))
- S USER=$S(+$G(USER):+$G(USER),+$G(TIUAUTH):+$G(TIUAUTH),1:DUZ)
- S TIUDT=$S(+$G(TIUDT):+$G(TIUDT),1:DT)
- S TIUY=$S(TIUDDOC=1:$$DFLTDOC^TIUPXAPI(HLOC),TIUDDOC=2:$$CURDOC(USER),1:"0^")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUSPRM,TIUDDOC,TIUAUTH<br/> D SITEPARM(.TIUSPRM)<br/> S TIUDDOC=+$P(TIUSPRM,U,8)<br/> S TIUAUTH=$S((+$G(USER)!('+$G(TIUIEN))):0,1:+$P($G(^TIU(8925,+$G(TIUIEN),12)),U,2))<br/> S USER=$S(+$G(USER):+$G(USER),+$G(TIUAUTH):+$G(TIUAUTH),1:DUZ)<br/> S TIUDT=$S(+$G(TIUDT):+$G(TIUDT),1:DT)<br/> S TIUY=$S(TIUDDOC=1:$$DFLTDOC^TIUPXAPI(HLOC),TIUDDOC=2:$$CURDOC(USER),1:"0^")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

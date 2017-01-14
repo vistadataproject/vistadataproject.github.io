@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQPT PROVIDERS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT PROVIDERS{:/}
@@ -24,13 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PROV^[ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  Method comment | RETURN LIST OF PROVIDERS
- Code | ```  N I,IEN,NAME,TDATE
- S I=1,NAME=""
- F  S NAME=$O(^VA(200,"B",NAME)) Q:NAME=""  S IEN=0,IEN=$O(^(NAME,IEN))  D
- .Q:$E(NAME)="*"
- .I $D(^XUSEC("PROVIDER",IEN)),$$ACTIVE^XUSER(IEN) S Y(I)=IEN_"^"_NAME,I=I+1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,IEN,NAME,TDATE<br/> S I=1,NAME=""<br/> F  S NAME=$O(^VA(200,"B",NAME)) Q:NAME=""  S IEN=0,IEN=$O(^(NAME,IEN))  D<br/> .Q:$E(NAME)="*"<br/> .I $D(^XUSEC("PROVIDER",IEN)),$$ACTIVE^XUSER(IEN) S Y(I)=IEN_"^"_NAME,I=I+1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV MARK ERROR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV MARK ERROR{:/}
@@ -32,16 +34,4 @@ title: VISTA RPC documentation
  Method comment | GMV MARK ERROR [RPC entry point]
  First comment | {::nomarkdown}GMVDATA CONSISTS OF THE FOLLOWING DATA:<br/>FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT<br/>PATIENT^INVALID RECORD{:/}
  Input parameters | {::nomarkdown}GMVDATA{:/}
- Code | ```  N GMVFDA,GMVIEN,GMVIENS
- I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q
- S GMVIENS=(+GMVDATA)_","
- S GMVFDA(120.5,GMVIENS,2)=1
- S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)
- S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)
- D UPDATE^DIE("","GMVFDA","GMVIEN")
- S RESULT="OK"```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N GMVFDA,GMVIEN,GMVIENS<br/> I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q<br/> S GMVIENS=(+GMVDATA)_","<br/> S GMVFDA(120.5,GMVIENS,2)=1<br/> S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)<br/> S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)<br/> D UPDATE^DIE("","GMVFDA","GMVIEN")<br/> S RESULT="OK"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

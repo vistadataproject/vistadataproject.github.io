@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP PRINT REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP PRINT REPORT{:/}
@@ -37,21 +39,4 @@ title: VISTA RPC documentation
  Method comment | print report entry point
  First comment | {::nomarkdown}RPC: ORWRP PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORRPTID<br/>ORHSTYPE<br/>ORDTRNG<br/>OREXAMID<br/>ORCOMP<br/>ORALPHA<br/>OROMEGA{:/}
- Code | ```  N ORHSTAG
- S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")
- IF '$$CHK() G PRINTQ
- N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ZTIO
- S ZTIO=ORIO,ZTDTH=$H
- S ZTDESC="Report Print"
- S ZTRTN="DEQUE^ORWRPP"
- F I="ORDFN","ORRPTID","ORHSTYPE","ORDTRNG","OREXAMID","DUZ(","ORCOMP(","ORALPHA","OROMEGA","ORHSTAG" S ZTSAVE(I)=""
- D ^%ZTLOAD
- I $D(ZTSK) D
- . S ORY="0^Report queued. (Task #"_ZTSK_")"
- E  D
- . S ORY="99^Task Rejected."```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORHSTAG<br/> S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")<br/> IF '$$CHK() G PRINTQ<br/> N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ZTIO<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="Report Print"<br/> S ZTRTN="DEQUE^ORWRPP"<br/> F I="ORDFN","ORRPTID","ORHSTYPE","ORDTRNG","OREXAMID","DUZ(","ORCOMP(","ORALPHA","OROMEGA","ORHSTAG" S ZTSAVE(I)=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

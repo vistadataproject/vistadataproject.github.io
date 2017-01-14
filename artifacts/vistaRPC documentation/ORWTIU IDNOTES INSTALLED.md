@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTIU IDNOTES INSTALLED 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU IDNOTES INSTALLED{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | IDNOTES^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Is ID Notes installed?
- Code | ```  S ORY=$$PATCH^XPDUTL("TIU*1.0*100")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=$$PATCH^XPDUTL("TIU*1.0*100")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

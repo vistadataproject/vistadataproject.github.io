@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU1 NEWLOC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU1 NEWLOC{:/}
@@ -26,14 +28,4 @@ title: VISTA RPC documentation
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
  First comment | {::nomarkdown}C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.<br/>.Y=returned list, ORFROM=text to $O from, DIR=$O direction.{:/}
  Input parameters | {::nomarkdown}ORFROM<br/>DIR{:/}
- Code | ```  N I,IEN,CNT S I=0,CNT=44
- F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.
- . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D
- . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))
- . . S I=I+1,Y(I)=IEN_"^"_ORFROM
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,IEN,CNT S I=0,CNT=44<br/> F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.<br/> . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D<br/> . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))<br/> . . S I=I+1,Y(I)=IEN_"^"_ORFROM<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

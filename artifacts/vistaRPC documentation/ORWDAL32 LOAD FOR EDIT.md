@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDAL32 LOAD FOR EDIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDAL32 LOAD FOR EDIT{:/}
@@ -25,13 +27,4 @@ title: VISTA RPC documentation
  Method | EDITLOAD^[ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  Method comment | Load an allergy/adverse reaction for editing
  Input parameters | {::nomarkdown}ORALIEN{:/}
- Code | ```  Q:+$G(ORALIEN)=0
- N ORNODE,I
- S ORNODE=$NAME(^TMP("GMRA",$J)),I=0
- D GETREC^GMRAGUI(ORALIEN,ORNODE)
- S Y=ORNODE```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  Q:+$G(ORALIEN)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRA",$J)),I=0<br/> D GETREC^GMRAGUI(ORALIEN,ORNODE)<br/> S Y=ORNODE```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

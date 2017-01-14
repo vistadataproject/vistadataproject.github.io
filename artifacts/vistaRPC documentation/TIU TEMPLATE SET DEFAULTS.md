@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET DEFAULTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE SET DEFAULTS{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | SETDFLT^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Saves Default Templates for the user
  Input parameters | {::nomarkdown}SETTINGS{:/}
- Code | ```  N TIUERR
- D EN^XPAR(DUZ_";VA(200,","TIU DEFAULT TEMPLATES",1,SETTINGS,.TIUERR) ;2263
- S TIUY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUERR<br/> D EN^XPAR(DUZ_";VA(200,","TIU DEFAULT TEMPLATES",1,SETTINGS,.TIUERR) ;2263<br/> S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

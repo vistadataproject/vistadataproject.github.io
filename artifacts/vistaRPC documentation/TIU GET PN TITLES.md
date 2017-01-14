@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET PN TITLES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET PN TITLES{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NOTES^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | Get list of PN Titles
- Code | ```  D LIST(.TIUY,3)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D LIST(.TIUY,3)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

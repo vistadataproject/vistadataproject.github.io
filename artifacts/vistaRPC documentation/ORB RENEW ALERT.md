@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORB RENEW ALERT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB RENEW ALERT{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | RENEW^[ORB31](http://code.osehra.org/dox/Routine_ORB31_source.html)
  Method comment | renew/restore an alert/notification
  Input parameters | {::nomarkdown}XQAID{:/}
- Code | ```  Q:$L($G(XQAID))<1
- K XQAKILL
- I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100
- S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:$L($G(XQAID))<1<br/> K XQAKILL<br/> I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100<br/> S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

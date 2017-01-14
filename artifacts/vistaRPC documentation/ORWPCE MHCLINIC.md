@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE MHCLINIC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE MHCLINIC{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | MHCLINIC^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | See if this is a mental health clinic
  Input parameters | {::nomarkdown}ORIEN{:/}
- Code | ```  I $T(MHCLIN^SDUTL2)="" S ORY=1
- E  S ORY=$$MHCLIN^SDUTL2(ORIEN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $T(MHCLIN^SDUTL2)="" S ORY=1<br/> E  S ORY=$$MHCLIN^SDUTL2(ORIEN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

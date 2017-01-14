@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT DIEDON 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT DIEDON{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | DIEDON^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Check for a date of death
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S VAL=+$G(^DPT(DFN,.35))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=+$G(^DPT(DFN,.35))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

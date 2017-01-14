@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIV REPORT DATA 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIV REPORT DATA{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}PARAM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the parameters to search for data:  DATA(\SDT\)=fileman start dt  DATA(\EDT\)=fileman end dt  DATA(\INDEX\)=index to use   \C\ or \D\ or \E\ or \F\ or \H\  DATA(\FIELDS\)=fields to return  \.01;.02;.03;.03I\  DATA(\NUMS\)=number of records to return (default=99999), not required  DATA(\MORE\)=1 to return addtl records, 0 to return first set               keep sending MORE=1 until $END$ is reached. FIELDS are DD fields separated by semi-colons only (no colon \ranged\ fields), FIELDS may be suffixed with \I\ for internal data vs default of external data format.  Data is returned in FIELDS order.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PARAM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the parameters to search for data:  DATA(\SDT\)=fileman start dt  DATA(\EDT\)=fileman end dt  DATA(\INDEX\)=index to use   \C\ or \D\ or \E\ or \F\ or \H\  DATA(\FIELDS\)=fields to return  \.01;.02;.03;.03I\  DATA(\NUMS\)=number of records to return (default=99999), not required  DATA(\MORE\)=1 to return addtl records, 0 to return first set               keep sending MORE=1 until $END$ is reached. FIELDS are DD fields separated by semi-colons only (no colon \ranged\ fields), FIELDS may be suffixed with \I\ for internal data vs default of external data format.  Data is returned in FIELDS order.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDRA32 PROCMSG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDRA32 PROCMSG{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | PROCMSG^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | return order message for a procedure
  Input parameters | {::nomarkdown}IEN{:/}
- Code | ```  N I
- S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S ORY(I)=^(I,0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I<br/> S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S ORY(I)=^(I,0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

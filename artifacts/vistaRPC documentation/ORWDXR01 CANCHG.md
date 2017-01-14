@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXR01 CANCHG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXR01 CANCHG{:/}
@@ -25,24 +27,4 @@ title: VISTA RPC documentation
  Method | CANCHG^[ORWDXR01](http://code.osehra.org/dox/Routine_ORWDXR01_source.html)
  First comment | {::nomarkdown}If it's an pending or unsigned unreleased renewed order, can edit=True{:/}
  Input parameters | {::nomarkdown}ORIFN<br/>TXTOD{:/}
- Code | ```  S ORY=0
- Q:'$D(^OR(100,+ORIFN,0))
- I TXTOD D TXTCAN(.ORY) Q
- N OUTGRP,URELSTS,USIGSTS,RNTYPE,PDSTS
- N ODGRP,ODREL,ODSIG,ODTYPE,LSTACT
- S OUTGRP=$O(^ORD(100.98,"B","O RX",0))
- S URELSTS=$O(^ORD(100.01,"B","UNRELEASED",0))
- S PDSTS=$O(^ORD(100.01,"B","PENDING",0))
- S USIGSTS=2 ; unsigned order
- S RNTYPE=2 ; renew action
- S LSTACT=$P($G(^OR(100,+ORIFN,3)),U,7)
- S ODGRP=$P($G(^OR(100,+ORIFN,0)),U,11)
- S ODREL=$P($G(^OR(100,+ORIFN,3)),U,3)
- S ODSIG=$P($G(^OR(100,+ORIFN,8,LSTACT,0)),U,4)
- S ODTYPE=$P($G(^OR(100,+ORIFN,3)),U,11)
- I (ODGRP=OUTGRP),(ODREL=URELSTS),(ODSIG=USIGSTS),(ODTYPE=RNTYPE) S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=0<br/> Q:'$D(^OR(100,+ORIFN,0))<br/> I TXTOD D TXTCAN(.ORY) Q<br/> N OUTGRP,URELSTS,USIGSTS,RNTYPE,PDSTS<br/> N ODGRP,ODREL,ODSIG,ODTYPE,LSTACT<br/> S OUTGRP=$O(^ORD(100.98,"B","O RX",0))<br/> S URELSTS=$O(^ORD(100.01,"B","UNRELEASED",0))<br/> S PDSTS=$O(^ORD(100.01,"B","PENDING",0))<br/> S USIGSTS=2 ; unsigned order<br/> S RNTYPE=2 ; renew action<br/> S LSTACT=$P($G(^OR(100,+ORIFN,3)),U,7)<br/> S ODGRP=$P($G(^OR(100,+ORIFN,0)),U,11)<br/> S ODREL=$P($G(^OR(100,+ORIFN,3)),U,3)<br/> S ODSIG=$P($G(^OR(100,+ORIFN,8,LSTACT,0)),U,4)<br/> S ODTYPE=$P($G(^OR(100,+ORIFN,3)),U,11)<br/> I (ODGRP=OUTGRP),(ODREL=URELSTS),(ODSIG=USIGSTS),(ODTYPE=RNTYPE) S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN REMOVABLE MED RESULTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN REMOVABLE MED RESULTS{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | GETRES^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | return array of associated med results
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  Q:+$G(GMRCO)=0
- D GETRES^GMRCGUIU(GMRCO,.ORY)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(GMRCO)=0<br/> D GETRES^GMRCGUIU(GMRCO,.ORY)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTIU GET LISTBOX ITEM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU GET LISTBOX ITEM{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | GTLSTITM^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Return single listbox item for document
  Input parameters | {::nomarkdown}ORTIUDA{:/}
- Code | ```  Q:+$G(ORTIUDA)=0
- S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(ORTIUDA)=0<br/> S ORY=ORTIUDA_U_$$RESOLVE^TIUSRVLO(ORTIUDA)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

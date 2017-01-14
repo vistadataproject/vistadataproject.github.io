@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB CREATE CONTEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB CREATE CONTEXT{:/}
@@ -25,17 +27,4 @@ title: VISTA RPC documentation
  Method | CRCONTXT^[XWBSEC](http://code.osehra.org/dox/Routine_XWBSEC_source.html)
  Method comment | creates context for the passed in option
  Input parameters | {::nomarkdown}OPTION{:/}
- Code | ```  K XQY0,XQY N XWB1,XABPGMOD,XWBPGMOD S RESULT=0
- S OPTION=$$DECRYP^XUSRB1(OPTION) ;S:OPTION="" OPTION="\"
- I OPTION="" S XQY=0,XQY0="",RESULT=1 Q  ;delete context if "" passed in.
- S XWB1=$$OPTLK^XQCS(OPTION)
- I XWB1="" S (XWBSEC,RESULT)="The context '"_OPTION_"' does not exist on server." Q  ;P10
- S RESULT=$$CHK^XQCS(DUZ,XWB1)
- S XWBPGMOD=$$KCHK^XUSRB("XUPROGMODE")
- I RESULT!XWBPGMOD S XQY0=OPTION,XQY=XWB1,RESULT=1
- E  S XWBSEC=RESULT```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K XQY0,XQY N XWB1,XABPGMOD,XWBPGMOD S RESULT=0<br/> S OPTION=$$DECRYP^XUSRB1(OPTION) ;S:OPTION="" OPTION="\"<br/> I OPTION="" S XQY=0,XQY0="",RESULT=1 Q  ;delete context if "" passed in.<br/> S XWB1=$$OPTLK^XQCS(OPTION)<br/> I XWB1="" S (XWBSEC,RESULT)="The context '"_OPTION_"' does not exist on server." Q  ;P10<br/> S RESULT=$$CHK^XQCS(DUZ,XWB1)<br/> S XWBPGMOD=$$KCHK^XUSRB("XUPROGMODE")<br/> I RESULT!XWBPGMOD S XQY0=OPTION,XQY=XWB1,RESULT=1<br/> E  S XWBSEC=RESULT```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

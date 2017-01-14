@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCH SAVECOL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCH SAVECOL{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | SAVECOL^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | save report column sizing information
  Input parameters | {::nomarkdown}COL{:/}
- Code | ```  N NAM,VAL,ORERR
- S OK="",NAM=$P(COL,"^"),VAL=$P(COL,"^",2)
- D EN^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",NAM,VAL,.ORERR)
- I ORERR S OK=COL_":"_ORERR```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N NAM,VAL,ORERR<br/> S OK="",NAM=$P(COL,"^"),VAL=$P(COL,"^",2)<br/> D EN^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",NAM,VAL,.ORERR)<br/> I ORERR S OK=COL_":"_ORERR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

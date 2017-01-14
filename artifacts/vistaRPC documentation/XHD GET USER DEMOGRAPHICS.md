@@ -8,16 +8,13 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XHD GET USER DEMOGRAPHICS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XHD GET USER DEMOGRAPHICS{:/}
  tag | {::nomarkdown}BYPASS{:/}
  routine | [XHDAUTH](http://code.osehra.org/dox/Routine_XHDAUTH_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
- description | {::nomarkdown}Returns same demographics as XHD AUTHORIZE, w/o the authorization step. Used to populate the JAAS Subject when the SharedBroker is in use. {:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ description | {::nomarkdown}Returns same demographics as XHD AUTHORIZE, w/o the authorization step. Used to populate the JAAS Subject when the SharedBroker is in use. {:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

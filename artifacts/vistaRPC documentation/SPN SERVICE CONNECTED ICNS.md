@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN SERVICE CONNECTED ICNS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN SERVICE CONNECTED ICNS{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}BPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Beginning or low range percentage of service connection{:/} | 
-| {::nomarkdown}EPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending or high range percentage of service connection{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}EPER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending or high range percentage of service connection{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

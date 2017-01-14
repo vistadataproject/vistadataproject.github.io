@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWORB TEXT FOLLOWUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB TEXT FOLLOWUP{:/}
@@ -33,9 +35,4 @@ title: VISTA RPC documentation
  Method | TXTFUP^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | Follow-up for text messages
  Input parameters | {::nomarkdown}DFN<br/>NOTIF<br/>XQADATA{:/}
- Code | ```  I NOTIF=67 D CHGRAD```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I NOTIF=67 D CHGRAD```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

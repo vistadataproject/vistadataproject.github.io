@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORB FORWARD ALERT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB FORWARD ALERT{:/}
@@ -34,12 +36,4 @@ title: VISTA RPC documentation
  Method | FWD^[ORB31](http://code.osehra.org/dox/Routine_ORB31_source.html)
  Method comment | forward a notification
  Input parameters | {::nomarkdown}ORBLST<br/>ORBRECIP<br/>ORBTYPE<br/>ORBCOMNT{:/}
- Code | ```  I ORBLST="" S ORY=0 Q
- S ORBLST(1)=ORBLST
- D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)
- S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I ORBLST="" S ORY=0 Q<br/> S ORBLST(1)=ORBLST<br/> D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)<br/> S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

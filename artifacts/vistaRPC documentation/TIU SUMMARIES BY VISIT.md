@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU SUMMARIES BY VISIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU SUMMARIES BY VISIT{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | SUMMARY^[TIUSRVLV](http://code.osehra.org/dox/Routine_TIUSRVLV_source.html)
  Method comment | Gets list of Summaries
  Input parameters | {::nomarkdown}VISIT<br/>STATUS{:/}
- Code | ```  I $S(+$G(VISIT)'>0:1,'$D(^AUPNVSIT(+$G(VISIT),0)):1,1:0) Q
- D LIST(.TIUY,VISIT,244,$G(STATUS))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $S(+$G(VISIT)'>0:1,'$D(^AUPNVSIT(+$G(VISIT),0)):1,1:0) Q<br/> D LIST(.TIUY,VISIT,244,$G(STATUS))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

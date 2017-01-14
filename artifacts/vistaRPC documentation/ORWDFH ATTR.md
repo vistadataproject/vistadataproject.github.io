@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDFH ATTR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH ATTR{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | ATTR^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return OI^Text^Type^Precedence^AskExpire for a diet
  Input parameters | {::nomarkdown}OI{:/}
- Code | ```  I $G(^ORD(101.43,OI,.1)),^(.1)'>$$NOW^XLFDT S REC="0^"_$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore." Q
- S REC=OI_U_$P($G(^ORD(101.43,OI,0)),U)_U_$G(^("FH"))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $G(^ORD(101.43,OI,.1)),^(.1)'>$$NOW^XLFDT S REC="0^"_$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore." Q<br/> S REC=OI_U_$P($G(^ORD(101.43,OI,0)),U)_U_$G(^("FH"))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

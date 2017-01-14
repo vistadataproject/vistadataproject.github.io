@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWLR REPORT LISTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLR REPORT LISTS{:/}
@@ -25,13 +27,4 @@ title: VISTA RPC documentation
  Method | LIST^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return lists for list boxes
  First comment | {::nomarkdown}RPC: ORWLR REPORT LIST{:/}
- Code | ```  N EOF
- S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))
- K @OROOT
- D GETRPTS(.OROOT,.EOF) ; -- get list of reports
- D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N EOF<br/> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br/> K @OROOT<br/> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br/> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

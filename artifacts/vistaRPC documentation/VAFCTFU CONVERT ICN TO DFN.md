@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; VAFCTFU CONVERT ICN TO DFN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}VAFCTFU CONVERT ICN TO DFN{:/}
@@ -30,9 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETDFN^[VAFCTFU1](http://code.osehra.org/dox/Routine_VAFCTFU1_source.html)
  Input parameters | {::nomarkdown}ICN{:/}
- Code | ```  S RESULT=$$GETDFN^MPIF001(ICN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RESULT=$$GETDFN^MPIF001(ICN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN2 SCHEDULE CONSULT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN2 SCHEDULE CONSULT{:/}
@@ -37,15 +39,4 @@ title: VISTA RPC documentation
  Method comment | Schedule consult and change status
  First comment | {::nomarkdown}ORERR - return array for results/errors<br/>ORIEN - IEN of consult from File 123<br/>ORNP - Provider who Scheduled consult<br/>ORDATE - Date/Time Consult was scheduled.<br/>ORALRT - should alerts be sent to anyone?<br/>ORALTO - array of alert recipient IENs<br/>ORCOM is the comments array to be added<br/>passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
  Input parameters | {::nomarkdown}ORIEN<br/>ORNP<br/>ORDATE<br/>ORALRT<br/>ORALTO<br/>ORCOM{:/}
- Code | ```  N ORAD,ORDUZ,X
- S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT)
- S:+$G(ORNP)=0 ORNP=DUZ
- I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q
- I $G(ORALRT)=1 D
- .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""
- S ORERR=$$SCH^GMRCGUIB(ORIEN,ORNP,ORAD,.ORDUZ,.ORCOM)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORAD,ORDUZ,X<br/> S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT)<br/> S:+$G(ORNP)=0 ORNP=DUZ<br/> I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q<br/> I $G(ORALRT)=1 D<br/> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br/> S ORERR=$$SCH^GMRCGUIB(ORIEN,ORNP,ORAD,.ORDUZ,.ORCOM)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

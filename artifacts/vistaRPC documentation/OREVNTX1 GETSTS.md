@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 GETSTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 GETSTS{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | GETSTS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Order status
  Input parameters | {::nomarkdown}ORDID{:/}
- Code | ```  Q:'+ORDID
- Q:'$D(^OR(100,+ORDID,0))
- S ORY=$P($G(^OR(100,+ORDID,3)),U,3)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'+ORDID<br/> Q:'$D(^OR(100,+ORDID,0))<br/> S ORY=$P($G(^OR(100,+ORDID,3)),U,3)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

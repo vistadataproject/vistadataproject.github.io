@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU LOAD BOILERPLATE TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LOAD BOILERPLATE TEXT{:/}
@@ -33,11 +35,4 @@ title: VISTA RPC documentation
  Method | BLRSHELL^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | Shell for boilerplate RPC
  Input parameters | {::nomarkdown}TITLE<br/>DFN<br/>VSTR{:/}
- Code | ```  K ^TMP("TIUBOIL",$J)
- D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))
- K ^TMP("TIUBOIL",$J,0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^TMP("TIUBOIL",$J)<br/> D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))<br/> K ^TMP("TIUBOIL",$J,0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

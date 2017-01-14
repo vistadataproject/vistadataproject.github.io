@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENT PARAMETERS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET DOCUMENT PARAMETERS{:/}
@@ -32,12 +34,4 @@ title: VISTA RPC documentation
  Method | DOCPARM^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Get document parameters for GUI
  Input parameters | {::nomarkdown}TIUDA<br/>TIUTYP{:/}
- Code | ```  I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+TIUDA,0))
- I '+$G(TIUTYP) S TIUY(0)="" Q
- D DOCPRM^TIULC1(TIUTYP,.TIUY,$G(TIUDA))
- I '$D(TIUY) S TIUY(0)=""```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+TIUDA,0))<br/> I '+$G(TIUTYP) S TIUY(0)="" Q<br/> D DOCPRM^TIULC1(TIUTYP,.TIUY,$G(TIUDA))<br/> I '$D(TIUY) S TIUY(0)=""```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

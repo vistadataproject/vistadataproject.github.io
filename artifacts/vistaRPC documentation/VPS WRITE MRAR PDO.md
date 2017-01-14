@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; VPS WRITE MRAR PDO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}VPS WRITE MRAR PDO{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VPSPID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The patient identifier value corresponding to the provided identifiertype, VPSTYP.{:/} | 
 | {::nomarkdown}VPSMRAR{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Local array representing the kiosk Medication and Allergy Review passed in by reference.   VPSMRAR represents allergy relatedfields, medication related fields, and statistical information about theMRAR session. Each subscript in the array is assigned a composite, delimited string.  localArray(n) = FIELD NAME^ARRAY IENS^DATA  where       n is an incremental number      FIELD NAME represents the name of the field in 853.5 file       ARRAY IENS represent entry and sub-entry ctrs (e.g., if patient has 3     allergies then a given value would be \1,2\ where \1\ represents top     level entry and \2\ represents the sub-entry or the 2nd allergy     record.)      DATA is the actual data that is populated at an entry in 853.5 Note:  Each element in VPSMRAR will accept values in the above format. However, elements of some multiple fields use the third index as the value and will ignore provided input values.  {:/} | 
 | {::nomarkdown}VPSINTFC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Interface Module.'S' represents Staff-facing Interface Module'P' represents Patient-facing Interface Module{:/} | 
-| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID Type. Valid Values for this parameter are SSN, DFN, ICN, orVIC/CAC.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}VPSTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient ID Type. Valid Values for this parameter are SSN, DFN, ICN, orVIC/CAC.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN ADMIN COMPLETE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN ADMIN COMPLETE{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | Admin users
  First comment | {::nomarkdown}Administrative complete action{:/}
  Input parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORRESP<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
- Code | ```  S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

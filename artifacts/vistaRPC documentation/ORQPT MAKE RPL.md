@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQPT MAKE RPL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT MAKE RPL{:/}
@@ -26,20 +28,4 @@ title: VISTA RPC documentation
  Method comment | Make global restricted pt. array from Team List.
  First comment | {::nomarkdown}Variables used:<br/>ORDFN   = Holder for patient DFN.<br/>ORJ     = Holds $J value.<br/>ORREAD  = Holder for ^TMP root to kill.<br/>ORRET   = Returned value from function call.<br/>ORROOT  = ^TMP root to pass.<br/>ORTL    = Team List IEN.<br/>ORX     = Working variable used in $ORDER statement.<br/>Y       = Returned value (same as ORJ).{:/}
  Input parameters | {::nomarkdown}ORTL{:/}
- Code | ```  N ORDFN,ORJ,ORREAD,ORRET,ORROOT,ORX
- I ORTL="" S Y="" Q                        ; No Team List IEN passed.
- I $G(^OR(100.21,ORTL,0))="" S Y="" Q      ; No such Team List.
- S (ORJ,Y)=$J                              ; Assign returned value.
- S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.
- S ORROOT=ORROOT_ORJ_","_"""B"""           ; Add job number, "B."
- S ORREAD=ORROOT_")"                       ; Assign "kill" root.
- K @ORREAD                                 ; Kill old, if any.
- S ORX=""                                  ; Initialize.
- F  S ORX=$O(^OR(100.21,ORTL,10,"B",ORX)) Q:ORX=""  D
- .S ORDFN=$P(ORX,";")                      ; Extract patient DFN.
- .S ORRET=$$PNAMWRIT(ORROOT,ORDFN)         ; Call that writes to ^TMP.```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORDFN,ORJ,ORREAD,ORRET,ORROOT,ORX<br/> I ORTL="" S Y="" Q                        ; No Team List IEN passed.<br/> I $G(^OR(100.21,ORTL,0))="" S Y="" Q      ; No such Team List.<br/> S (ORJ,Y)=$J                              ; Assign returned value.<br/> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br/> S ORROOT=ORROOT_ORJ_","_"""B"""           ; Add job number, "B."<br/> S ORREAD=ORROOT_")"                       ; Assign "kill" root.<br/> K @ORREAD                                 ; Kill old, if any.<br/> S ORX=""                                  ; Initialize.<br/> F  S ORX=$O(^OR(100.21,ORTL,10,"B",ORX)) Q:ORX=""  D<br/> .S ORDFN=$P(ORX,";")                      ; Extract patient DFN.<br/> .S ORRET=$$PNAMWRIT(ORROOT,ORDFN)         ; Call that writes to ^TMP.```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

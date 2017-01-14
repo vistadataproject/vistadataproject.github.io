@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL EDIT LOAD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL EDIT LOAD{:/}
@@ -34,14 +36,4 @@ title: VISTA RPC documentation
  Method comment | LOAD  EDIT ARRAYS
  First comment | {::nomarkdown}DA=problem IFN{:/}
  Input parameters | {::nomarkdown}DA{:/}
- Code | ```  N I,GMPFLD,GMPORIG,GMPL
- D GETFLDS^GMPLEDT3(DA)
- S I=0
- D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)
- D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)
- K GMPFLD,GMPORIG,GMPL  ; should not have to do this```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,GMPFLD,GMPORIG,GMPL<br/> D GETFLDS^GMPLEDT3(DA)<br/> S I=0<br/> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br/> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br/> K GMPFLD,GMPORIG,GMPL  ; should not have to do this```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

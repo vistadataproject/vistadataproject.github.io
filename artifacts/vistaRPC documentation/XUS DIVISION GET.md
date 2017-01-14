@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XUS DIVISION GET 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS DIVISION GET{:/}
@@ -32,15 +34,4 @@ title: VISTA RPC documentation
  Method comment | Get Division data
  First comment | {::nomarkdown}IEN is userid (DUZ or username) for future use.{:/}
  Input parameters | {::nomarkdown}IEN{:/}
- Code | ```  N %,XUDIV
- S XUDIV=0,%=$$CHKDIV^XUS1(.XUDIV) ;Get users div.
- I (%>0)&($P(%,U,2)'>0) D UPDIV(+%) ;Set users default div.
- S RET(0)=XUDIV ;RET(0) is number of divisions.
- I XUDIV S %=0 D  S RET(0)=XUDIV
- . ;RET(%) is divison array eg. ien;station name;station#
- . F  S %=$O(XUDIV(%)) Q:(%'>0)  S RET(%)=XUDIV(%)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N %,XUDIV<br/> S XUDIV=0,%=$$CHKDIV^XUS1(.XUDIV) ;Get users div.<br/> I (%>0)&($P(%,U,2)'>0) D UPDIV(+%) ;Set users default div.<br/> S RET(0)=XUDIV ;RET(0) is number of divisions.<br/> I XUDIV S %=0 D  S RET(0)=XUDIV<br/> . ;RET(%) is divison array eg. ien;station name;station#<br/> . F  S %=$O(XUDIV(%)) Q:(%'>0)  S RET(%)=XUDIV(%)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

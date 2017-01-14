@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS SIG FIND 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS SIG FIND{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is array of comments being added to the Consult along with the Significant Findings update.{:/} | 
 | {::nomarkdown}DSIFALRT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag to signal that alerts are to be sent: 'N' - NO'Y' - YES{:/} | 
 | {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}A list of comma delimited NEW PERSON FILE (200) iens who need to be alerted to the significant finding update for this consult.{:/} | 
-| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The date of the significant finding update.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The date of the significant finding update.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

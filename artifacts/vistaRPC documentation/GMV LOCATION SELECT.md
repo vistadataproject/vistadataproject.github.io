@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV LOCATION SELECT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV LOCATION SELECT{:/}
@@ -33,12 +35,4 @@ title: VISTA RPC documentation
  Method comment | [Procedure] Main RPC call tag
  First comment | {::nomarkdown}RPC: [GMV LOCATION SELECT]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
  Input parameters | {::nomarkdown}OPTION<br/>DATA{:/}
- Code | ```  S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS
- D:$T(@OPTION)]"" @OPTION
- S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"
- D CLEAN^DILF,KVAR^VADPT```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS<br/> D:$T(@OPTION)]"" @OPTION<br/> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br/> D CLEAN^DILF,KVAR^VADPT```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

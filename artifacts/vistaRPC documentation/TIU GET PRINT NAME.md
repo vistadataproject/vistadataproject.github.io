@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET PRINT NAME 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET PRINT NAME{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | GETPNAME^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Get Print Name of a Document
  Input parameters | {::nomarkdown}TIUTYPE{:/}
- Code | ```  S TIUY=$$PNAME^TIULC1(TIUTYPE)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S TIUY=$$PNAME^TIULC1(TIUTYPE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

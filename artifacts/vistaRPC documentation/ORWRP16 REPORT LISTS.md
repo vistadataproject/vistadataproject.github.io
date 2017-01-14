@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT LISTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP16 REPORT LISTS{:/}
@@ -25,14 +27,4 @@ title: VISTA RPC documentation
  Method | LIST^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return lists for list boxes
  First comment | {::nomarkdown}RPC: ORWRP REPORT LIST<br/>See RPC definition for details on input and output parameters{:/}
- Code | ```  N EOF
- S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))
- K @ROOT
- D GETRPTS(.ROOT,.EOF)
- D GETHS(.ROOT,.EOF)
- D GETDT(.ROOT,.EOF)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N EOF<br/> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br/> K @ROOT<br/> D GETRPTS(.ROOT,.EOF)<br/> D GETHS(.ROOT,.EOF)<br/> D GETDT(.ROOT,.EOF)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

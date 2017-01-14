@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORDEA LNKMSG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORDEA LNKMSG{:/}
@@ -24,11 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LNKMSG^[ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  Method comment | message to display after successful PIV link for admin contact person
- Code | ```  N I,ORTY
- D GETWP^XPAR(.ORTY,"DIV^SYS^PKG","OR DEA PIV LINK MSG")
- S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N I,ORTY<br/> D GETWP^XPAR(.ORTY,"DIV^SYS^PKG","OR DEA PIV LINK MSG")<br/> S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

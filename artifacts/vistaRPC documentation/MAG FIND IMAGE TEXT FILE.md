@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG FIND IMAGE TEXT FILE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG FIND IMAGE TEXT FILE{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}FILENAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}199{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is the name of an image file, without path or extension.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}FILENAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}199{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is the name of an image file, without path or extension.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

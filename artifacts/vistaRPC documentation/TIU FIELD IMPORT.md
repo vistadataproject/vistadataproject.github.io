@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU FIELD IMPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD IMPORT{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method comment | Call layer for IMPORT2
  First comment | {::nomarkdown}compatibility and extend the IMPORT function to optionally <br/>specify saving the template field.{:/}
  Input parameters | {::nomarkdown}XMLTMP{:/}
- Code | ```  D IMPORT2(.REPORT,"XMLTMP",1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D IMPORT2(.REPORT,"XMLTMP",1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

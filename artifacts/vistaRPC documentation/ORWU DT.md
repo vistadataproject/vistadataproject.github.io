@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU DT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU DT{:/}
@@ -26,10 +28,4 @@ title: VISTA RPC documentation
  Method comment | Internal Fileman Date/Time
  First comment | {::nomarkdown}change the '00:00' that could be passed so Fileman doesn't reject{:/}
  Input parameters | {::nomarkdown}X<br/>%DT{:/}
- Code | ```  I $L($P(X,"@",2)),("00000000"[$TR($P(X,"@",2),":","")) S $P(X,"@",2)="00:00:01"
- S %DT=$G(%DT,"TS") D ^%DT K %DT```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $L($P(X,"@",2)),("00000000"[$TR($P(X,"@",2),":","")) S $P(X,"@",2)="00:00:01"<br/> S %DT=$G(%DT,"TS") D ^%DT K %DT```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV GET IRRADIATION DOSE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV GET IRRADIATION DOSE{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PATIENT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the identifier to determine which patient to return data from.{:/} | 
 | {::nomarkdown}PROCEDURE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the accession number used to determine which irradiation instancesto return.{:/} | 
-| {::nomarkdown}PROCTYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PROCTYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

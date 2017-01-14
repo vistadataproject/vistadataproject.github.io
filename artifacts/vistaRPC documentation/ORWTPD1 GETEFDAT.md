@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPD1 GETEFDAT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPD1 GETEFDAT{:/}
@@ -24,15 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETEFDAT^[ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
  Method comment | Get non-user level Encounter appointment date range params.
- Code | ```  N ORSTART,ORSTOP
- S INFO=""
- S ORSTART=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT START",1,"I")
- I 'ORSTART S ORSTART=60
- S ORSTOP=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT STOP",1,"I")
- I 'ORSTOP S ORSTOP=0
- S INFO=ORSTART_U_ORSTOP```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N ORSTART,ORSTOP<br/> S INFO=""<br/> S ORSTART=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT START",1,"I")<br/> I 'ORSTART S ORSTART=60<br/> S ORSTOP=$$GET^XPAR("DIV^SYS^PKG","ORQQEAPT ENC APPT STOP",1,"I")<br/> I 'ORSTOP S ORSTOP=0<br/> S INFO=ORSTART_U_ORSTOP```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

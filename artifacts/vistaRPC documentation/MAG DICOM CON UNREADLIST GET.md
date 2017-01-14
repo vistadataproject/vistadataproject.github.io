@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG DICOM CON UNREADLIST GET 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG DICOM CON UNREADLIST GET{:/}
@@ -29,9 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}READER SITE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Reading Site pointer to INSTITUTION file (#4){:/} | 
 | {::nomarkdown}LOCKTIME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}AMOUNT OF TIME A READ LOCK CAN BE HELD BEFORE TIMING OUT.{:/} | 
 | {::nomarkdown}STATLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Status of entry to be retrieve (C, L, R, U, or W, in any combination){:/} | 
-| {::nomarkdown}READER STATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reading Site's Station Number{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}READER STATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reading Site's Station Number{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

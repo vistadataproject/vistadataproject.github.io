@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPS1 PICKUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPS1 PICKUP{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PICKUP^[ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
  Method comment | Return default for refill location
- Code | ```  I $D(^PSX(550,"C")) S Y="M"
- E  S Y="W"```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $D(^PSX(550,"C")) S Y="M"<br/> E  S Y="W"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

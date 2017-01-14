@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU LOCK RECORD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LOCK RECORD{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | LOCK^[TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
  Method comment | Bid for lock on a TIU Document record
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  L +^TIU(8925,+TIUDA):1 I  S ERR=0
- E  S ERR="1^ Another session has this record locked."```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  L +^TIU(8925,+TIUDA):1 I  S ERR=0<br/> E  S ERR="1^ Another session has this record locked."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

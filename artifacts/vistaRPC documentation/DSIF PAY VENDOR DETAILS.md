@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF PAY VENDOR DETAILS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF PAY VENDOR DETAILS{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}FBDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}23{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the Vendor in file Fee Basis Vendor File{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}FBDA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}23{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the Vendor in file Fee Basis Vendor File{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

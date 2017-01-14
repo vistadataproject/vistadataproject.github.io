@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORVW FACLIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORVW FACLIST{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | FACLIST^[ORVW](http://code.osehra.org/dox/Routine_ORVW_source.html)
  Method comment | Return a list from the TFL^VAFCTFU1 call
  Input parameters | {::nomarkdown}ORDFN{:/}
- Code | ```  D TFL^VAFCTFU1(.ORY,ORDFN)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  D TFL^VAFCTFU1(.ORY,ORDFN)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

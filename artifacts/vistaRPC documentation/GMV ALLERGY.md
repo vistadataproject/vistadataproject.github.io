@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV ALLERGY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV ALLERGY{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | ALLERGY^[GMVUTL3](http://code.osehra.org/dox/Routine_GMVUTL3_source.html)
  Method comment | GMV ALLERGY [RPC entry point]
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N GMRAL,GMVALG,GN D EN1^GMRADPT M GMVALG=GMRAL
- I $O(GMVALG(0))'>0 D  Q
- . I $G(GMVALG)="" S RESULT(1)="No Allergy Assessment"
- . I $G(GMVALG)=0 S RESULT(1)="No Known Allergies"
- . Q
- S GN=1,RESULT(1)="This patient has the following allergy(ies): ",GN(1)=0 F  S GN(1)=$O(GMVALG(GN(1))) Q:GN(1)'>0  D
- . S GN=GN+1,RESULT(GN)=$P($G(GMVALG(GN(1))),U,2)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N GMRAL,GMVALG,GN D EN1^GMRADPT M GMVALG=GMRAL<br/> I $O(GMVALG(0))'>0 D  Q<br/> . I $G(GMVALG)="" S RESULT(1)="No Allergy Assessment"<br/> . I $G(GMVALG)=0 S RESULT(1)="No Known Allergies"<br/> . Q<br/> S GN=1,RESULT(1)="This patient has the following allergy(ies): ",GN(1)=0 F  S GN(1)=$O(GMVALG(GN(1))) Q:GN(1)'>0  D<br/> . S GN=GN+1,RESULT(GN)=$P($G(GMVALG(GN(1))),U,2)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

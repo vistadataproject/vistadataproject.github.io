@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG4 PAT GET IMAGES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG4 PAT GET IMAGES{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORIGIN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal or external values of the ORIGIN INDEX field (45) of the file#2005 separated by commas.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reserved for future use.{:/} | 
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control the execution (can be combined):   D  Include only deleted images (file #2005.1)  E  Include only existing images (file #2005) By default, the \E\ value is assumed. {:/} | 
-| {::nomarkdown}PKG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal or external values of the PACKAGE INDEX field (40) of the file#2005 separated by commas.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PKG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal or external values of the PACKAGE INDEX field (40) of the file#2005 separated by commas.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

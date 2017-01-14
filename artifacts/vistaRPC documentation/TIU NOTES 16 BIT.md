@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU NOTES 16 BIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU NOTES 16 BIT{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | NOTES^[TIUSRVLC](http://code.osehra.org/dox/Routine_TIUSRVLC_source.html)
  Method comment | Gets list of Notes
  Input parameters | {::nomarkdown}DFN<br/>EARLY<br/>LATE<br/>ROOTFLAG{:/}
- Code | ```  I $S(+$G(DFN)'>0:1,'$D(^DPT(+$G(DFN),0)):1,1:0) Q
- D LIST(.TIUY,3,DFN,$G(EARLY),$G(LATE),$G(ROOTFLAG))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I $S(+$G(DFN)'>0:1,'$D(^DPT(+$G(DFN),0)):1,1:0) Q<br/> D LIST(.TIUY,3,DFN,$G(EARLY),$G(LATE),$G(ROOTFLAG))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

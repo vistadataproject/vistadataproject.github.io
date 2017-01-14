@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MDCP UPDATE MESSAGE STATUS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MDCP UPDATE MESSAGE STATUS{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MDCPMSG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The IFN of the message in the CP RESULT REPORT file.{:/} | 
 | {::nomarkdown}MDCPSTAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The status to which to change the file entry referenced by the first parameter.  Check the data dictionary for field .09 to get a list of valid codes.  This parameter must be in internal format.{:/} | 
 | {::nomarkdown}MDCPDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IFN of the patient in file 2, if available.{:/} | 
-| {::nomarkdown}MDCPISCR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}If MDCPDFN is set, this tells the linetag that MDCPDFN is a correction, not the original DFN.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MDCPISCR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}If MDCPDFN is set, this tells the linetag that MDCPDFN is a correction, not the original DFN.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

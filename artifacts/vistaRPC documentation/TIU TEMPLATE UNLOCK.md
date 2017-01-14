@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE UNLOCK 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE UNLOCK{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | UNLOCK^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Unlock Template
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  L -^TIU(8927,TIUDA,0):1
- S TIUY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  L -^TIU(8927,TIUDA,0):1<br/> S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

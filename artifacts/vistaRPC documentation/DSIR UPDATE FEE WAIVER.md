@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIR UPDATE FEE WAIVER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIR UPDATE FEE WAIVER{:/}
@@ -27,9 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FWRQSTDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER REQUESTED DATE{:/} | 
 | {::nomarkdown}FWADJ{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED 0=TRUE, 1=FALSE{:/} | 
 | {::nomarkdown}FWGRANT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER GRANTED 0=TRUE, 1=FALSE{:/} | 
-| {::nomarkdown}FWADJDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED DATE{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}FWADJDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED DATE{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

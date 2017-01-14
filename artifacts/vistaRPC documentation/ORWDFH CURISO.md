@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDFH CURISO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH CURISO{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | CURISO^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return a patient's current isolation
  Input parameters | {::nomarkdown}ORVP{:/}
- Code | ```  S ORVP=ORVP_";DPT(" S VAL=$P($$IP^ORMBLD,U,2)
- I '$L(VAL) S VAL="<none>"```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORVP=ORVP_";DPT(" S VAL=$P($$IP^ORMBLD,U,2)<br/> I '$L(VAL) S VAL="<none>"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

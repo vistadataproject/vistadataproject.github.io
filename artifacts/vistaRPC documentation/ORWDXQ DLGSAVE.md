@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXQ DLGSAVE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXQ DLGSAVE{:/}
@@ -25,16 +27,4 @@ title: VISTA RPC documentation
  Method | DLGSAVE^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Return IEN of new or existing quick order
  Input parameters | {::nomarkdown}CRC<br/>DNAME<br/>DGRP<br/>RSP{:/}
- Code | ```  N ROOT,NM,IEN
- S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))
- I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1
- E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1
- E  D
- . D UPDQNAME^ORCMEDT8(IEN)
- . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)
- . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ROOT,NM,IEN<br/> S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))<br/> I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1<br/> E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1<br/> E  D<br/> . D UPDQNAME^ORCMEDT8(IEN)<br/> . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)<br/> . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

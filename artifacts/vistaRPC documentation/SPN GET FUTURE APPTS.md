@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN GET FUTURE APPTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN GET FUTURE APPTS{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}A list of Integration Control Numbers of patients in the PATIENT file (#2)in the following format: (ICN^ICN^ICN^ICN^ICN...){:/} | 
 | {::nomarkdown}SPNSEL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Specifies which patients to search through:                1 - Patients from SCI registry only (ICNLST)                2 - VistA patients with SCD indicator only                3 - Both 1 & 2{:/} | 
 | {::nomarkdown}SPNSTRT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Starting date range.{:/} | 
-| {::nomarkdown}SPNEND{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending date range.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}SPNEND{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Ending date range.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

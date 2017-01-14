@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPP SAVECD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SAVECD{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}save current user's clinic defaults{:/}
  Input parameters | {::nomarkdown}INFO{:/}
- Code | ```  D SAVECD^ORWTPL(.OK,INFO,DUZ)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D SAVECD^ORWTPL(.OK,INFO,DUZ)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

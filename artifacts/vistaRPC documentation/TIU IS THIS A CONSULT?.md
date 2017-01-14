@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU IS THIS A CONSULT? 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IS THIS A CONSULT?{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | ISCNSLT^[TIUCNSLT](http://code.osehra.org/dox/Routine_TIUCNSLT_source.html)
  Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
  Input parameters | {::nomarkdown}TITLE{:/}
- Code | ```  N TIUCLASS
- S TIUCLASS=+$$CLASS
- I +TIUCLASS'>0 S TIUY=0 Q
- S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUCLASS<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 Q<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

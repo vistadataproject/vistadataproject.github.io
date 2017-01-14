@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET SITE PARAMETERS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET SITE PARAMETERS{:/}
@@ -24,11 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SITEPARM^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Get site parameters for GUI
- Code | ```  N TIUPRM0,TIUPRM1
- D SETPARM^TIULE
- S TIUY=TIUPRM0```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUPRM0,TIUPRM1<br/> D SETPARM^TIULE<br/> S TIUY=TIUPRM0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

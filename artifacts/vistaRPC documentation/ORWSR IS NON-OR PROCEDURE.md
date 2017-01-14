@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWSR IS NON-OR PROCEDURE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWSR IS NON-OR PROCEDURE{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | ISNONOR^[ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
  Method comment | Is the procedure a non-OR procedure?
  Input parameters | {::nomarkdown}ORCASE{:/}
- Code | ```  I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q
- S ORY=$$NON^SROESTV(+ORCASE)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q<br/> S ORY=$$NON^SROESTV(+ORCASE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

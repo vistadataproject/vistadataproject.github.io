@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQVI NOTEVIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQVI NOTEVIT{:/}
@@ -24,12 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NOTEVIT^[ORQQVI](http://code.osehra.org/dox/Routine_ORQQVI_source.html)
  Input parameters | {::nomarkdown}DFN<br/>NOTEIEN{:/}
- Code | ```  N VSTR,NOTEDATE
- D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)
- Q:$P(VSTR,";",2)=""
- D FASTVIT(.ORY,DFN,$P(VSTR,";",2))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N VSTR,NOTEDATE<br/> D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)<br/> Q:$P(VSTR,";",2)=""<br/> D FASTVIT(.ORY,DFN,$P(VSTR,";",2))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

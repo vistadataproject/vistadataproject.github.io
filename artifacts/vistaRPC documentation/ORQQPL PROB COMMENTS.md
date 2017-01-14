@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL PROB COMMENTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL PROB COMMENTS{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | GETCOMM^[ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
  Method comment | Return comments for a problem - MULTI-DIVISIONAL
  Input parameters | {::nomarkdown}PIFN{:/}
- Code | ```  N FAC,NIFN,NOTE,NOTECNT
- S NOTECNT=0,FAC=0
- F  S FAC=$O(^AUPNPROB(PIFN,11,FAC)) Q:+FAC'>0  D
- . S NIFN=0
- . F  S NIFN=$O(^AUPNPROB(PIFN,11,FAC,11,NIFN)) Q:NIFN'>0  D
- . . Q:$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,4)'="A"
- . . S NOTE=$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,3)
- . . S NOTECNT=NOTECNT+1,ORY(NOTECNT)=NOTE```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N FAC,NIFN,NOTE,NOTECNT<br/> S NOTECNT=0,FAC=0<br/> F  S FAC=$O(^AUPNPROB(PIFN,11,FAC)) Q:+FAC'>0  D<br/> . S NIFN=0<br/> . F  S NIFN=$O(^AUPNPROB(PIFN,11,FAC,11,NIFN)) Q:NIFN'>0  D<br/> . . Q:$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,4)'="A"<br/> . . S NOTE=$P($G(^AUPNPROB(PIFN,11,FAC,11,NIFN,0)),U,3)<br/> . . S NOTECNT=NOTECNT+1,ORY(NOTECNT)=NOTE```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

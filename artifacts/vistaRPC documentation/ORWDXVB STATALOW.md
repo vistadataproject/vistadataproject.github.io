@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXVB STATALOW 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB STATALOW{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | STATALOW^[ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  Method comment | Allow stat for ORES ORELSE users
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S OROOT=$D(^XUSEC("ORES",DUZ))!($D(^XUSEC("ORELSE",DUZ)))```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S OROOT=$D(^XUSEC("ORES",DUZ))!($D(^XUSEC("ORELSE",DUZ)))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

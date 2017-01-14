@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDPS1 SCHALL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS1 SCHALL{:/}
@@ -32,14 +34,4 @@ title: VISTA RPC documentation
  Method | SCHALL^[ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  Method comment | return all schedules
  Input parameters | {::nomarkdown}DFN<br/>LOCIEN{:/}
- Code | ```  N CNT,ILST,ORARRAY,WIEN
- S WIEN=$$WARDIEN^ORWDPS32(+$G(LOCIEN))
- D SCHED^PSS51P1(WIEN,.ORARRAY)
- S ILST=0
- S CNT=0 F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D
- .S ILST=ILST+1,LST(ILST)=$P(ORARRAY(CNT),U,2,5)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N CNT,ILST,ORARRAY,WIEN<br/> S WIEN=$$WARDIEN^ORWDPS32(+$G(LOCIEN))<br/> D SCHED^PSS51P1(WIEN,.ORARRAY)<br/> S ILST=0<br/> S CNT=0 F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br/> .S ILST=ILST+1,LST(ILST)=$P(ORARRAY(CNT),U,2,5)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

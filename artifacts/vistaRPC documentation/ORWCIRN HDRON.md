@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCIRN HDRON 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCIRN HDRON{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | HDRON^[ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
  Method comment | Get parameter value for ORWRP HDR ON
- Code | ```  S ORY=+$$GET^XPAR("ALL","ORWRP HDR ON",1,"I")
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=+$$GET^XPAR("ALL","ORWRP HDR ON",1,"I")<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

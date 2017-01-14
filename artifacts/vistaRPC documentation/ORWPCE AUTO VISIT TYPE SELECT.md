@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE AUTO VISIT TYPE SELECT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE AUTO VISIT TYPE SELECT{:/}
@@ -31,13 +33,4 @@ title: VISTA RPC documentation
  Method | AUTOVSIT^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Returns TRUE if automatic selection of Visit Type
  Input parameters | {::nomarkdown}LOC{:/}
- Code | ```  N SRV
- S SRV=$P($G(^VA(200,DUZ,5)),U)
- S ORY=$$GET^XPAR(DUZ_";VA(200,^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE DISABLE AUTO VISIT TYPE",1,"Q")
- I +ORY S ORY=1
- S ORY='ORY```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N SRV<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> S ORY=$$GET^XPAR(DUZ_";VA(200,^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE DISABLE AUTO VISIT TYPE",1,"Q")<br/> I +ORY S ORY=1<br/> S ORY='ORY```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

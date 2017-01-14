@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE HASVISIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE HASVISIT{:/}
@@ -34,13 +36,4 @@ title: VISTA RPC documentation
  Method | HASVISIT^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Has visit or is stand alone
  Input parameters | {::nomarkdown}IEN<br/>DFN<br/>ORLOC<br/>ORDTE{:/}
- Code | ```  N ORVISIT
- S ORY=-1
- I +$G(IEN)>0 S ORVISIT=+$P($G(^TIU(8925,+IEN,0)),U,3)
- I +$G(ORVISIT)'>0 S ORVISIT=$$GETENC^PXAPI(DFN,ORDTE,ORLOC)
- I +$G(ORVISIT)>0 S ORY=$$VST2APPT^PXAPI(ORVISIT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORVISIT<br/> S ORY=-1<br/> I +$G(IEN)>0 S ORVISIT=+$P($G(^TIU(8925,+IEN,0)),U,3)<br/> I +$G(ORVISIT)'>0 S ORVISIT=$$GETENC^PXAPI(DFN,ORDTE,ORLOC)<br/> I +$G(ORVISIT)>0 S ORY=$$VST2APPT^PXAPI(ORVISIT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

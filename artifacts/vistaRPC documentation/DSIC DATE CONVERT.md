@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIC DATE CONVERT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIC DATE CONVERT{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}optional - only if INVAL contains an alpha character.  Else, this is required. Usually it is a single character.  If two characters, then it must be one of the first 6 listed below plus \I\.  If INVAL=\I\ then assume INVAL in external format.  \D\ - INVAL is in Delphi internal format \F\ - INVAL is in internal Fileman format \E\ - INVAL is in external format (human readable) \M\ - INVAL is in internal M format ($H) \H\ - INVAL is in HL7 format \G\ - INVAL is in UCT format \I\ - INVAL is in Internationalized format, i.e.,       the day number precedes the month number{:/} | 
 | {::nomarkdown}OUTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} | {::nomarkdown}true{:/} | {::nomarkdown}optional - default value is internal Fileman format \F\.  This is a string of characters designating output format(s) If OUTYPE contains \F\ - return internal Fileman format                   \D\ - return internal Delphi format                   \E\ - return external format                   \M\ - return internal M format ($H)                   \A\ - return all formats                   \H\ - return HL7 format                   \G\ - return UCT format{:/} | 
 | {::nomarkdown}OUTFMT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}optional - this param controls the format of the returned value for external date value only.  OUTFMT can contain only a single digit plus optional alpha characters. If OUTFMT = \\ - then return mmm dd, yyyy@hh:mm:ss - default          contains 1 -       mmm dd, yyyy@hh:mm:ss - default                   2 -       mm/dd/yy@hh:mm:ss [no leading zeros]                   3 -       dd/mm/yy@hh:mm:ss [no leading zeros]                   4 -       yy/mm/dd@hh:mm:ss [no leading zeros]                   5 -       mm/dd/yyyy@hh:mm:ss [no leading zeros]                   6 -       dd/mm/yyyy@hh:mm:ss [no leading zeros]                   7 -       yyyy/mm/dd@hh:mm:ss [no leading zeros]                   D -       return date only                   F -       output with leading blanks                   S -       force seconds in outputs                   Z -       pad months and days with leading zeros                   P -  output time in ' hh:mm:ss am/pm'{:/} | 
-| {::nomarkdown}TIMEFMT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional - controls what portion of the time part of the date will be returned.  Default value is M If TIMEFMT = H, then return only hours           = M, then return only hour:minute           = S, then return seconds{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}TIMEFMT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional - controls what portion of the time part of the date will be returned.  Default value is M If TIMEFMT = H, then return only hours           = M, then return only hour:minute           = S, then return seconds{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

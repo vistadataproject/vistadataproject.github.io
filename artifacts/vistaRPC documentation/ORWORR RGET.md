@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWORR RGET 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORR RGET{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | RGET^[ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  Method comment | Orders of AutoDC/Release Event
  Input parameters | {::nomarkdown}DFN<br/>FILTER<br/>GROUPS<br/>DTFROM<br/>DTTHRU<br/>EVENT{:/}
- Code | ```  N EVTDCREL
- S EVTDCREL="TRUE"
- D AGET(.REF,DFN,FILTER,GROUPS,DTFROM,DTTHRU,EVENT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N EVTDCREL<br/> S EVTDCREL="TRUE"<br/> D AGET(.REF,DFN,FILTER,GROUPS,DTFROM,DTTHRU,EVENT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

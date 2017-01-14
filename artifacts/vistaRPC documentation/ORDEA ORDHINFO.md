@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORDEA ORDHINFO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORDEA ORDHINFO{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ORDHINFO^[ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
  Input parameters | {::nomarkdown}ORIFN<br/>HASH<br/>OHINFO{:/}
- Code | ```  N IENS
- D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N IENS<br/> D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

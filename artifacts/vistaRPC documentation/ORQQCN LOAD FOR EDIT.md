@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN LOAD FOR EDIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN LOAD FOR EDIT{:/}
@@ -31,14 +33,4 @@ title: VISTA RPC documentation
  Method | EDITLOAD^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Load a cancelled consult/procedure for editing
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  Q:+$G(GMRCO)=0
- N ORNODE,I
- S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0
- D SEND^GMRCGUIC(GMRCO,ORNODE)
- S Y=ORNODE
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(GMRCO)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0<br/> D SEND^GMRCGUIC(GMRCO,ORNODE)<br/> S Y=ORNODE<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

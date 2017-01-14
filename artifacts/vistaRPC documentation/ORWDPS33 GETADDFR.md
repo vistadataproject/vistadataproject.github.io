@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDPS33 GETADDFR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS33 GETADDFR{:/}
@@ -30,13 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETADDFR^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Input parameters | {::nomarkdown}OIIEN{:/}
- Code | ```  N PSOI,TEMP
- S ORY=""
- S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)
- S TEMP=$$IV^PSSDSAPA(PSOI)
- S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I")```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N PSOI,TEMP<br/> S ORY=""<br/> S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)<br/> S TEMP=$$IV^PSSDSAPA(PSOI)<br/> S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

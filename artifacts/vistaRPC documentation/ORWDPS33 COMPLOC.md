@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDPS33 COMPLOC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS33 COMPLOC{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | COMPLOC^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Input parameters | {::nomarkdown}ORID<br/>LOC{:/}
- Code | ```  S ORY=0
- I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=0<br/> I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

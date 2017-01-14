@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT DISCHARGE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT DISCHARGE{:/}
@@ -32,13 +34,4 @@ title: VISTA RPC documentation
  Method | DISCHRG^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Get discharge movement information
  Input parameters | {::nomarkdown}DFN<br/>ADMITDT{:/}
- Code | ```  N VAIP
- I +$G(ADMITDT)=0 S Y=DT Q
- S VAIP("D")=ADMITDT D 52^VADPT
- I +VAIP(17)=0 S Y=DT Q
- S Y=+VAIP(17,1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N VAIP<br/> I +$G(ADMITDT)=0 S Y=DT Q<br/> S VAIP("D")=ADMITDT D 52^VADPT<br/> I +VAIP(17)=0 S Y=DT Q<br/> S Y=+VAIP(17,1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

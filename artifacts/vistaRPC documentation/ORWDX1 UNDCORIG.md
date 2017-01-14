@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX1 UNDCORIG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX1 UNDCORIG{:/}
@@ -30,10 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | UNDCORIG^[ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
  Input parameters | {::nomarkdown}ORYARR{:/}
- Code | ```  N CNT
- S CNT=0 F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0  S $P(^OR(100,+ORYARR(CNT),6),U,9)=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N CNT<br/> S CNT=0 F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0  S $P(^OR(100,+ORYARR(CNT),6),U,9)=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

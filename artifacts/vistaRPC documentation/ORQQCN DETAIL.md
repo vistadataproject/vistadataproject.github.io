@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN DETAIL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN DETAIL{:/}
@@ -31,13 +33,4 @@ title: VISTA RPC documentation
  Method | DETAIL^[ORQQCN](http://code.osehra.org/dox/Routine_ORQQCN_source.html)
  Method comment | return formatted consult request details (plus result note if available):
  Input parameters | {::nomarkdown}CONSULT{:/}
- Code | ```  N GMRCOER
- S GMRCOER=2
- S ORQY=$NA(^TMP("GMRCR",$J,"DT"))
- D DT^GMRCSLM2(CONSULT)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N GMRCOER<br/> S GMRCOER=2<br/> S ORQY=$NA(^TMP("GMRCR",$J,"DT"))<br/> D DT^GMRCSLM2(CONSULT)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

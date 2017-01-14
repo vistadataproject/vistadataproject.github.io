@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDRA32 RADSRC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDRA32 RADSRC{:/}
@@ -25,13 +27,4 @@ title: VISTA RPC documentation
  Method | RADSRC^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | return list of available contract/sharing/research sources
  Input parameters | {::nomarkdown}SRCTYPE{:/}
- Code | ```  S ORX=0
- F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D
- . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)
- . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q
- . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORX=0<br/> F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D<br/> . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)<br/> . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q<br/> . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN RX UTILIZATION SPECIFIC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN RX UTILIZATION SPECIFIC{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}VALUES{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
-| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

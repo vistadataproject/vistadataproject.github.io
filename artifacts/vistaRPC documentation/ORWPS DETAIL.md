@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPS DETAIL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPS DETAIL{:/}
@@ -25,13 +27,4 @@ title: VISTA RPC documentation
  Method | DETAIL^[ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  Method comment | show details for a med order
  Input parameters | {::nomarkdown}DFN<br/>ID{:/}
- Code | ```  K ^TMP("ORXPND",$J)
- N LCNT,ORVP
- S LCNT=0,ORVP=DFN_";DPT("
- D MEDS^ORCXPND1
- S ROOT=$NA(^TMP("ORXPND",$J))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^TMP("ORXPND",$J)<br/> N LCNT,ORVP<br/> S LCNT=0,ORVP=DFN_";DPT("<br/> D MEDS^ORCXPND1<br/> S ROOT=$NA(^TMP("ORXPND",$J))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

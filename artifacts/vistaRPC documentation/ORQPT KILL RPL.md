@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQPT KILL RPL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT KILL RPL{:/}
@@ -26,14 +28,4 @@ title: VISTA RPC documentation
  Method comment | Kill global data using passed global root value.
  First comment | {::nomarkdown}Variables used:<br/>ORJ    = Job number to use in ^TMP global root.<br/>ORROOT = Root of ^TMP global to kill.<br/>Y      = Returned RPC value.{:/}
  Input parameters | {::nomarkdown}ORJ{:/}
- Code | ```  N ORROOT
- S Y=1                                     ; Initialize.
- S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.
- S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.
- K @ORROOT                                 ; Kill global data.
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORROOT<br/> S Y=1                                     ; Initialize.<br/> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br/> S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.<br/> K @ORROOT                                 ; Kill global data.<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

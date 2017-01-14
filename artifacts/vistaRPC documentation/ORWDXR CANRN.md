@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXR CANRN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXR CANRN{:/}
@@ -26,28 +28,4 @@ title: VISTA RPC documentation
  Method comment | Check conjunction for renew.
  First comment | {::nomarkdown}All conjunctioni = "And" return 1<br/>Has a "Then" return 0{:/}
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  Q:'$G(^OR(100,+ORID,0))
- N PKG
- S PKG=$P($G(^OR(100,+ORID,0)),U,14)
- S PKG=$$NMSP^ORCD(PKG)
- I PKG'="PS" Q
- N INDX,INDY,CANRENEW
- S INDX=0
- S CANRENEW=1
- N CHID
- S CHID=0 F  S CHID=$O(^OR(100,+ORID,2,CHID)) Q:'CHID  D
- . N ORSTS,ACTIVE S ORSTS=0
- . S ORSTS=$P($G(^OR(100,CHID,3)),U,3)
- . S ACTIVE=$O(^ORD(100.01,"B","ACTIVE",0))
- . I ACTIVE'=ORSTS S CANRENEW=0
- I 'CANRENEW S ORY=CANRENEW Q
- F  S INDX=$O(^OR(100,+ORID,4.5,"ID","CONJ",INDX)) Q:'INDX  D
- . S INDY=0 F  S INDY=$O(^OR(100,+ORID,4.5,INDX,INDY)) Q:'INDY  D
- . . I $G(^(INDY))="T" S CANRENEW=0 Q
- . I CANRENEW=0 Q
- S ORY=CANRENEW```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$G(^OR(100,+ORID,0))<br/> N PKG<br/> S PKG=$P($G(^OR(100,+ORID,0)),U,14)<br/> S PKG=$$NMSP^ORCD(PKG)<br/> I PKG'="PS" Q<br/> N INDX,INDY,CANRENEW<br/> S INDX=0<br/> S CANRENEW=1<br/> N CHID<br/> S CHID=0 F  S CHID=$O(^OR(100,+ORID,2,CHID)) Q:'CHID  D<br/> . N ORSTS,ACTIVE S ORSTS=0<br/> . S ORSTS=$P($G(^OR(100,CHID,3)),U,3)<br/> . S ACTIVE=$O(^ORD(100.01,"B","ACTIVE",0))<br/> . I ACTIVE'=ORSTS S CANRENEW=0<br/> I 'CANRENEW S ORY=CANRENEW Q<br/> F  S INDX=$O(^OR(100,+ORID,4.5,"ID","CONJ",INDX)) Q:'INDX  D<br/> . S INDY=0 F  S INDY=$O(^OR(100,+ORID,4.5,INDX,INDY)) Q:'INDY  D<br/> . . I $G(^(INDY))="T" S CANRENEW=0 Q<br/> . I CANRENEW=0 Q<br/> S ORY=CANRENEW```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

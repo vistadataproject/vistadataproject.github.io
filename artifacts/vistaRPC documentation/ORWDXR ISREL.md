@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXR ISREL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXR ISREL{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | ISREL^[ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  Method comment | Return true if an order has been released
  Input parameters | {::nomarkdown}ORIFN{:/}
- Code | ```  N STS S STS=$P(^OR(100,+ORIFN,3),U,3)
- S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N STS S STS=$P(^OR(100,+ORIFN,3),U,3)<br/> S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

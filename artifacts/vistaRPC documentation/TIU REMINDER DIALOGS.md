@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU REMINDER DIALOGS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU REMINDER DIALOGS{:/}
@@ -24,15 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMDLGS^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Returns a list of all reminder dialogs usable in templates
- Code | ```  N SRV
- K TIUY
- D RDACCUM(.TIUY,"USR","N")
- S SRV=$$GETSRV(DUZ)
- D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")
- D RDACCUM(.TIUY,"DIV","N")
- D RDACCUM(.TIUY,"SYS","N")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N SRV<br/> K TIUY<br/> D RDACCUM(.TIUY,"USR","N")<br/> S SRV=$$GETSRV(DUZ)<br/> D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")<br/> D RDACCUM(.TIUY,"DIV","N")<br/> D RDACCUM(.TIUY,"SYS","N")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV EXTRACT REC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV EXTRACT REC{:/}
@@ -32,19 +34,4 @@ title: VISTA RPC documentation
  Method comment | GMV EXTRACT REC [RPC entry point]
  First comment | {::nomarkdown}Returns data particular patient and date/time range in RESULT<br/>GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN{:/}
  Input parameters | {::nomarkdown}GMRVDATA{:/}
- Code | ```  N DFN,GMVEND,GMVSTART,GMVTYPE
- S DFN=+$P(GMRVDATA,U,1),GMVEND=+$P(GMRVDATA,U,2),GMVSTART=$P(GMRVDATA,U,4),GMVTYPE=$P(GMRVDATA,U,3)
- K ^TMP($J,"GRPC")
- S:GMVEND="" GMVEND=$$NOW^XLFDT()
- I $P(GMVEND,".",2)'>0 S GMVEND=$P(GMVEND,".",1)_".235959"
- I GMVSTART="" S GMVSTART=0
- S:GMVTYPE'="" GMVTYPE(1)=$P(^GMRD(120.51,$O(^GMRD(120.51,"C",GMVTYPE,0)),0),"^")
- D EN1^GMVGETD1
- I '$D(^TMP($J,"GRPC")) S ^TMP($J,"GRPC",1)="0^NO "_$S(GMVTYPE'="":GMVTYPE(1),1:"VITALS/MEASUREMENTS ")_" ENTERED WITHIN THIS PERIOD"
- S RESULT=$NA(^TMP($J,"GRPC"))
- K GMRDT,GMRVARY,GMRVITY,GMRVX,GMRZZ```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N DFN,GMVEND,GMVSTART,GMVTYPE<br/> S DFN=+$P(GMRVDATA,U,1),GMVEND=+$P(GMRVDATA,U,2),GMVSTART=$P(GMRVDATA,U,4),GMVTYPE=$P(GMRVDATA,U,3)<br/> K ^TMP($J,"GRPC")<br/> S:GMVEND="" GMVEND=$$NOW^XLFDT()<br/> I $P(GMVEND,".",2)'>0 S GMVEND=$P(GMVEND,".",1)_".235959"<br/> I GMVSTART="" S GMVSTART=0<br/> S:GMVTYPE'="" GMVTYPE(1)=$P(^GMRD(120.51,$O(^GMRD(120.51,"C",GMVTYPE,0)),0),"^")<br/> D EN1^GMVGETD1<br/> I '$D(^TMP($J,"GRPC")) S ^TMP($J,"GRPC",1)="0^NO "_$S(GMVTYPE'="":GMVTYPE(1),1:"VITALS/MEASUREMENTS ")_" ENTERED WITHIN THIS PERIOD"<br/> S RESULT=$NA(^TMP($J,"GRPC"))<br/> K GMRDT,GMRVARY,GMRVITY,GMRVX,GMRZZ```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN INPAT OUTPAT SPECIFIC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN INPAT OUTPAT SPECIFIC{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end search at.  {:/} | 
 | {::nomarkdown}CLINSTP{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of Clinic Stops to search for.{:/} | 
 | {::nomarkdown}SPECLTY{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Type of Specialties to search for. {:/} | 
-| {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data. {:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data. {:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

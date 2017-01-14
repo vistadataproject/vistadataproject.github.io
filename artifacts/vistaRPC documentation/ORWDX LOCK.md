@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX LOCK 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX LOCK{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | LOCK^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Attempt to lock pt for ordering
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S OK=$$LOCK^ORX2(DFN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S OK=$$LOCK^ORX2(DFN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

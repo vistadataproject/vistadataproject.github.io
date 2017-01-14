@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU PATCH 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU PATCH{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | PATCH^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return 1 if patch X is installed
  Input parameters | {::nomarkdown}X{:/}
- Code | ```  S VAL=$$PATCH^XPDUTL(X)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=$$PATCH^XPDUTL(X)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

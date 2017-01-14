@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB DIRECT RPC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB DIRECT RPC{:/}
@@ -32,16 +34,4 @@ title: VISTA RPC documentation
  Method | DIRECT^[XWB2HL7](http://code.osehra.org/dox/Routine_XWB2HL7_source.html)
  Method comment | Call a remote RPC
  Input parameters | {::nomarkdown}LOC<br/>RPC<br/>RPCVER<br/>P1<br/>P2<br/>P3<br/>P4<br/>P5<br/>P6<br/>P7<br/>P8<br/>P9<br/>P10{:/}
- Code | ```  N X,I,INX,N,XWBHL7,XWBPAR,XWBPCNT,XWBDVER,XWBESSO,XWBHDL,PMAX
- N XWBMSG,XWBSEC,RPCIEN
- N HLMTIEN,HLDOM,HLECH,HLFS,HLINSTN,HLNEXT,HLNODE,HLPARAM,HLQ,HLQUIT
- D SETUP(1) I $G(RET(1))'="" Q
- D DIRECT^XWB2HL7A("ZREMOTE RPC",XWBHDL,.XWBMSG,LOC,.XWBPAR)
- I $P(XWBMSG,U,2) S RET(0)="-1^"_$P(XWBMSG,"^",3) Q
- I 'HLMTIEN S RET(0)="-1^No Message returned" Q
- D RETURN,RTNDATA^XWBDRPC(.RET,XWBHDL)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N X,I,INX,N,XWBHL7,XWBPAR,XWBPCNT,XWBDVER,XWBESSO,XWBHDL,PMAX<br/> N XWBMSG,XWBSEC,RPCIEN<br/> N HLMTIEN,HLDOM,HLECH,HLFS,HLINSTN,HLNEXT,HLNODE,HLPARAM,HLQ,HLQUIT<br/> D SETUP(1) I $G(RET(1))'="" Q<br/> D DIRECT^XWB2HL7A("ZREMOTE RPC",XWBHDL,.XWBMSG,LOC,.XWBPAR)<br/> I $P(XWBMSG,U,2) S RET(0)="-1^"_$P(XWBMSG,"^",3) Q<br/> I 'HLMTIEN S RET(0)="-1^No Message returned" Q<br/> D RETURN,RTNDATA^XWBDRPC(.RET,XWBHDL)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

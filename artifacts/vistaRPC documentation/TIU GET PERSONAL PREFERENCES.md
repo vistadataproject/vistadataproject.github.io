@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET PERSONAL PREFERENCES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET PERSONAL PREFERENCES{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method comment | Get user's personal preferences
  First comment | {::nomarkdown}Call with TIUY (by ref)<br/>USER is pointer to file 200<br/>Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^{:/}
  Input parameters | {::nomarkdown}USER{:/}
- Code | ```  S TIUY=$$PERSPRF^TIULE(USER)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S TIUY=$$PERSPRF^TIULE(USER)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

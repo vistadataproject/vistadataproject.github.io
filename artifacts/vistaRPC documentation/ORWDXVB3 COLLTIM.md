@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXVB3 COLLTIM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB3 COLLTIM{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | COLLTIM^[ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  Method comment | Get Collection Time Default Parameter Value
- Code | ```  S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I")```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

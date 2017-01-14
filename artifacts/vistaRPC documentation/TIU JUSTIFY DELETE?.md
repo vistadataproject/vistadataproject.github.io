@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU JUSTIFY DELETE? 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU JUSTIFY DELETE?{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | NEEDJUST^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Is justification required for deletion?
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUD0 S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUY=0
- I +$P(TIUD0,U,5)'<6 S TIUY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUD0 S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUY=0<br/> I +$P(TIUD0,U,5)'<6 S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

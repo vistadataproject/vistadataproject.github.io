@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT16 APPTLST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT16 APPTLST{:/}
@@ -26,14 +28,4 @@ title: VISTA RPC documentation
  Method comment | procedure
  First comment | {::nomarkdown}Return a list of appointments{:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N I,ILST S ILST=0
- D GETAPPT^TIUVSIT(DFN)
- S I=0 F  S I=$O(^TMP("TIUVNI",$J,I)) Q:'I  D
- . S ILST=ILST+1
- . S LST(ILST)=$P(^TMP("TIUVNI",$J,I),U,1,2)_U_$P(^TMP("TIUVN",$J,I),U,1,2)
- K ^TMP("TIUVN",$J),^TMP("TIUVNI",$J)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,ILST S ILST=0<br/> D GETAPPT^TIUVSIT(DFN)<br/> S I=0 F  S I=$O(^TMP("TIUVNI",$J,I)) Q:'I  D<br/> . S ILST=ILST+1<br/> . S LST(ILST)=$P(^TMP("TIUVNI",$J,I),U,1,2)_U_$P(^TMP("TIUVN",$J,I),U,1,2)<br/> K ^TMP("TIUVN",$J),^TMP("TIUVNI",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

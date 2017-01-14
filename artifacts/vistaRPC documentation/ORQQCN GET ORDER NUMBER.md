@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN GET ORDER NUMBER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN GET ORDER NUMBER{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | GETORDER^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return OERR order number for consult/procedure
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  I +$G(GMRCO)=0 S Y="-1" Q
- S Y=$$ORIFN^GMRCUTL1(GMRCO)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I +$G(GMRCO)=0 S Y="-1" Q<br/> S Y=$$ORIFN^GMRCUTL1(GMRCO)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

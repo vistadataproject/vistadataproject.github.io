@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXA DCREQIEN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA DCREQIEN{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DCREQIEN^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Return IEN for Req Phys Cancelled reason
- Code | ```  S VAL=$O(^ORD(100.03,"S","REQ",0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=$O(^ORD(100.03,"S","REQ",0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

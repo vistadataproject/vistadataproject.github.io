@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER INQUIRY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM REMINDER INQUIRY{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | RES^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Method comment | DBIA 3080
  First comment | {::nomarkdown}ORQQPXRM REMINDER WEB{:/}
- Input parameters | {::nomarkdown}ORREM{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Input parameters | {::nomarkdown}ORREM{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

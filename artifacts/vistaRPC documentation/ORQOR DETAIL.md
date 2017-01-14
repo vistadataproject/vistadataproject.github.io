@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQOR DETAIL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQOR DETAIL{:/}
@@ -31,14 +33,4 @@ title: VISTA RPC documentation
  Method | DETAIL^[ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  Method comment | Return details of ORID (shell to kill VIDEO subs)
  Input parameters | {::nomarkdown}ORID<br/>DFN{:/}
- Code | ```  Q:'+ORID
- I $G(DFN) N ORVP S ORVP=DFN_";DPT("
- S LST="^TMP(""ORTXT"",$J)"
- D DETAIL^ORQ2(.LST,ORID)
- K @LST@("VIDEO")
- S LST=$NA(^TMP("ORTXT",$J)),@LST=""```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'+ORID<br/> I $G(DFN) N ORVP S ORVP=DFN_";DPT("<br/> S LST="^TMP(""ORTXT"",$J)"<br/> D DETAIL^ORQ2(.LST,ORID)<br/> K @LST@("VIDEO")<br/> S LST=$NA(^TMP("ORTXT",$J)),@LST=""```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

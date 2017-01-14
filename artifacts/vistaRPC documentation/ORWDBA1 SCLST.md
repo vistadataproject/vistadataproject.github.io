@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDBA1 SCLST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA1 SCLST{:/}
@@ -33,10 +35,4 @@ title: VISTA RPC documentation
  Method comment | RPC for compiling appropriate TxF's
  First comment | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
  Input parameters | {::nomarkdown}DFN<br/>ORLST{:/}
- Code | ```  N GMRCPROS,ORD,ORI,ORPKG
- D CPLSTBA(.Y,DFN,.ORLST)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N GMRCPROS,ORD,ORI,ORPKG<br/> D CPLSTBA(.Y,DFN,.ORLST)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

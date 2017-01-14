@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX WRLST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX WRLST{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | WRLST^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | List of dlgs for writing orders
  Input parameters | {::nomarkdown}LOC{:/}
- Code | ```  G WRLST1^ORWDX1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  G WRLST1^ORWDX1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

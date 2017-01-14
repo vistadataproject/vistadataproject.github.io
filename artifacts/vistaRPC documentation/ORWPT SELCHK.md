@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT SELCHK 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT SELCHK{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | Check for sensitive pt
  First comment | {::nomarkdown}SENSITIVE{:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S REC=$$EN1^ORQPT2(DFN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S REC=$$EN1^ORQPT2(DFN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

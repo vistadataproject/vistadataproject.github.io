@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC STATUS PROMPT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM GEC STATUS PROMPT{:/}
@@ -30,9 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GECP^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S RESULT=$$STATUS^PXRMGECU(DFN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S RESULT=$$STATUS^PXRMGECU(DFN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

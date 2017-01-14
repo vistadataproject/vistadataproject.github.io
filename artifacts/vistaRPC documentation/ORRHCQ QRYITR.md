@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORRHCQ QRYITR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORRHCQ QRYITR{:/}
@@ -32,11 +34,4 @@ title: VISTA RPC documentation
  Method comment | Do query for the current iterator
  First comment | {::nomarkdown}VAL=PtSearched^RecordsFound^Iterator{:/}
  Input parameters | {::nomarkdown}ORRITR{:/}
- Code | ```  S VAL=$$PTSCRN($P(ORRITR,";",2))
- I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))
- S $P(VAL,U,3)=$$NXTITER(ORRITR)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=$$PTSCRN($P(ORRITR,";",2))<br/> I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))<br/> S $P(VAL,U,3)=$$NXTITER(ORRITR)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

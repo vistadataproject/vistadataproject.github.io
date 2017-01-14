@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG3 TELEREADER ACQ SRVC SETUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG3 TELEREADER ACQ SRVC SETUP{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Delete action: MAGPARAM(\ACTION\)           = \DELETE\ MAGPARAM(\IEN\)              = IEN of the record that will be deletedAdd or Update action: MAGPARAM(\ACTION\)           = \ADD\ or \UPDATE\ MAGPARAM(\NAME\)             = A pointer to REQUEST SERVICES file (#123.5) MAGPARAM(\PROCEDURE\)        = A pointer to GMRC PROCEDURE file (#123.3) MAGPARAM(\SPECIALTY INDEX\)  = A pointer to the SPECIALTY file (#2005.84) MAGPARAM(\PROCEDURE INDEX\)  = A pointer to the PROCEDURE/EVENT file (#2005.85) MAGPARAM(\ACQUISITION SITE\) = A pointer to the INSTITUTION file (#4)  MAGPARAM(\UNREAD LIST CREATION TRIGGER\) = I/O/F MAGPARAM(\TIU NOTE FILE\)    = A pointer to TIU DOCUMENT file (#8925.1){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Delete action: MAGPARAM(\ACTION\)           = \DELETE\ MAGPARAM(\IEN\)              = IEN of the record that will be deletedAdd or Update action: MAGPARAM(\ACTION\)           = \ADD\ or \UPDATE\ MAGPARAM(\NAME\)             = A pointer to REQUEST SERVICES file (#123.5) MAGPARAM(\PROCEDURE\)        = A pointer to GMRC PROCEDURE file (#123.3) MAGPARAM(\SPECIALTY INDEX\)  = A pointer to the SPECIALTY file (#2005.84) MAGPARAM(\PROCEDURE INDEX\)  = A pointer to the PROCEDURE/EVENT file (#2005.85) MAGPARAM(\ACQUISITION SITE\) = A pointer to the INSTITUTION file (#4)  MAGPARAM(\UNREAD LIST CREATION TRIGGER\) = I/O/F MAGPARAM(\TIU NOTE FILE\)    = A pointer to TIU DOCUMENT file (#8925.1){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

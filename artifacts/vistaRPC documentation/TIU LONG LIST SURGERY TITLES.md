@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU LONG LIST SURGERY TITLES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LONG LIST SURGERY TITLES{:/}
@@ -34,11 +36,4 @@ title: VISTA RPC documentation
  Method comment | long list SURGICAL REPORT titles
  First comment | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>depending on context{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR<br/>CLNAME{:/}
- Code | ```  N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")
- S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0
- D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")<br/> S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0<br/> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

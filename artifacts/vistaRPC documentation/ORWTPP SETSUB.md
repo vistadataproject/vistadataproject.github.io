@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPP SETSUB 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SETSUB{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}set Ask for Subject on note for current user{:/}
  Input parameters | {::nomarkdown}VALUE{:/}
- Code | ```  D SETSUB^ORWTPN(.OK,VALUE,DUZ)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D SETSUB^ORWTPN(.OK,VALUE,DUZ)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,16 +8,13 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG GET NETLOC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG GET NETLOC{:/}
  tag | {::nomarkdown}SHARE{:/}
  routine | [MAGGTU6](http://code.osehra.org/dox/Routine_MAGGTU6_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
- description | {::nomarkdown}Returns a list of all entries in the Network Location file (2005.2).{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ description | {::nomarkdown}Returns a list of all entries in the Network Location file (2005.2).{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

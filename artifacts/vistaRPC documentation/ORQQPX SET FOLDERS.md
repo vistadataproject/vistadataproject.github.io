@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPX SET FOLDERS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX SET FOLDERS{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | SETFLDRS^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | Sets Visible Reminder Folders for the current user
  Input parameters | {::nomarkdown}ORFLDRS{:/}
- Code | ```  N ORERR
- D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)
- S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORERR<br/> D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)<br/> S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

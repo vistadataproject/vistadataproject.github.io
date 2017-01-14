@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDPS2 SCHREQ 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS2 SCHREQ{:/}
@@ -26,11 +28,4 @@ title: VISTA RPC documentation
  Method comment | return 1 if schedule is required
  First comment | {::nomarkdown}OI=orderable item, RTE=ptr route, DRG=ptr dispense drug{:/}
  Input parameters | {::nomarkdown}OI<br/>RTE<br/>DRG{:/}
- Code | ```  S VAL=1
- Q:'$G(OI)  Q:'$G(RTE)
- S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=1<br/> Q:'$G(OI)  Q:'$G(RTE)<br/> S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

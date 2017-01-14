@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPD1 PUTEDATS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPD1 PUTEDATS{:/}
@@ -25,18 +27,4 @@ title: VISTA RPC documentation
  Method | PUTEDATS^[ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
  Method comment | Save Encounter app't date range params at user level.
  Input parameters | {::nomarkdown}Y{:/}
- Code | ```  N ORSTART,ORSTOP,ORUSER
- S OK=1,ORUSER=DUZ
- S ORSTART=$P(Y,U,1)
- S ORSTOP=$P(Y,U,2)
- I ORSTART="" S ORSTART=0
- I ORSTOP="" S ORSTOP=0
- I ORSTART>999 S ORSTART=999
- I ORSTOP>999 S ORSTART=999
- D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)
- D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N ORSTART,ORSTOP,ORUSER<br/> S OK=1,ORUSER=DUZ<br/> S ORSTART=$P(Y,U,1)<br/> S ORSTOP=$P(Y,U,2)<br/> I ORSTART="" S ORSTART=0<br/> I ORSTOP="" S ORSTOP=0<br/> I ORSTART>999 S ORSTART=999<br/> I ORSTOP>999 S ORSTART=999<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

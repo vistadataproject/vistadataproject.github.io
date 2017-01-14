@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWGRPC PUBLIC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC PUBLIC{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PUBLIC^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - check if user can edit public views and settings
- Code | ```  S VAL=$$PUBLIC^ORWGAPI(DUZ)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S VAL=$$PUBLIC^ORWGAPI(DUZ)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

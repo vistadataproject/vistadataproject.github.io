@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTIU WINPRINT NOTE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU WINPRINT NOTE{:/}
@@ -32,22 +34,4 @@ title: VISTA RPC documentation
  Method | PRINTW^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | TIU print to windows printer
  Input parameters | {::nomarkdown}ORDA<br/>ORFLG{:/}
- Code | ```  N ZTQUEUED,ORHFS,ORSUB,ORIO,ORSTATUS,ROOT,ORERR,ORWIN,ORHANDLE
- N IOM,IOSL,IOST,IOF,IOT,IOS
- S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS",ORWIN=1,ORHANDLE="ORWTIU"
- S ORY=$NA(^TMP(ORSUB,$J,1))
- S ORHFS=$$HFS^ORWRP()
- D HFSOPEN^ORWRP(ORHANDLE,ORHFS,"W")
- I POP D  Q
- . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file for TIU print")
- D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")
- N $ETRAP,$ESTACK
- S $ETRAP="D ERR^ORWRP Q"
- U IO
- D RPC^TIUPD(.ORERR,ORDA,ORIO,ORFLG,ORWIN)
- D HFSCLOSE^ORWRP(ORHANDLE,ORHFS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ZTQUEUED,ORHFS,ORSUB,ORIO,ORSTATUS,ROOT,ORERR,ORWIN,ORHANDLE<br/> N IOM,IOSL,IOST,IOF,IOT,IOS<br/> S (ORSUB,ROOT)="ORDATA",ORIO="OR WINDOWS HFS",ORWIN=1,ORHANDLE="ORWTIU"<br/> S ORY=$NA(^TMP(ORSUB,$J,1))<br/> S ORHFS=$$HFS^ORWRP()<br/> D HFSOPEN^ORWRP(ORHANDLE,ORHFS,"W")<br/> I POP D  Q<br/> . I $D(ROOT) D SETITEM^ORWRP(.ROOT,"ERROR: Unable to open HFS file for TIU print")<br/> D IOVAR^ORWRP(.ORIO,,,"P-WINHFS80")<br/> N $ETRAP,$ESTACK<br/> S $ETRAP="D ERR^ORWRP Q"<br/> U IO<br/> D RPC^TIUPD(.ORERR,ORDA,ORIO,ORFLG,ORWIN)<br/> D HFSCLOSE^ORWRP(ORHANDLE,ORHFS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

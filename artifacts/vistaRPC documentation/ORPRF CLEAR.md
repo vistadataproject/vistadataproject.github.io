@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORPRF CLEAR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORPRF CLEAR{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CLEAR^[ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
  Method comment | Clear up the temp global
- Code | ```  K ^TMP("ORPRF",$J)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^TMP("ORPRF",$J)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

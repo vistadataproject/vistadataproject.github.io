@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORB FOLLOW-UP TYPE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB FOLLOW-UP TYPE{:/}
@@ -31,13 +33,4 @@ title: VISTA RPC documentation
  Method | TYPE^[ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
  Method comment | return notif follow-up action type
  Input parameters | {::nomarkdown}ORXQAID{:/}
- Code | ```  N NIEN
- S NIEN=$P($P(ORXQAID,";"),",",3)
- S ORBY=$G(^ORD(100.9,NIEN,3))
- I ORBY="" S ORBY="INFO^"
- E  S ORBY=$P(ORBY,U,2)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N NIEN<br/> S NIEN=$P($P(ORXQAID,";"),",",3)<br/> S ORBY=$G(^ORD(100.9,NIEN,3))<br/> I ORBY="" S ORBY="INFO^"<br/> E  S ORBY=$P(ORBY,U,2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

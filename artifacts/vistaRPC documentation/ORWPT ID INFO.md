@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT ID INFO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT ID INFO{:/}
@@ -26,11 +28,4 @@ title: VISTA RPC documentation
  Method comment | Return identifying information for a patient
  First comment | {::nomarkdown}PID^DOB^SEX^VET^SC%^WARD^RM-BED^NAME{:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  N X0,X1,X101,X3,XV  ; name/dob/sex/ssn, ward, room-bed, sc%, vet
- S X0=$G(^DPT(DFN,0)),X1=$G(^(.1)),X101=$G(^(.101)),X3=$G(^(.3)),XV=$G(^("VET"))
- S REC=$$SSN^DPTLK1(DFN)_U_$$DOB^DPTLK1(DFN,2)_U_$P(X0,U,2)_U_$P(XV,U)_U_$P(X3,U,2)_U_$P(X1,U)_U_$P(X101,U)_U_$P(X0,U) ;DG249```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N X0,X1,X101,X3,XV  ; name/dob/sex/ssn, ward, room-bed, sc%, vet<br/> S X0=$G(^DPT(DFN,0)),X1=$G(^(.1)),X101=$G(^(.101)),X3=$G(^(.3)),XV=$G(^("VET"))<br/> S REC=$$SSN^DPTLK1(DFN)_U_$$DOB^DPTLK1(DFN,2)_U_$P(X0,U,2)_U_$P(XV,U)_U_$P(X3,U,2)_U_$P(X1,U)_U_$P(X101,U)_U_$P(X0,U) ;DG249```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER CATEGORIES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM REMINDER CATEGORIES{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CATEGORY^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Input parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
- Code | ```  D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SDOE PARSE GENERAL DATA 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SDOE PARSE GENERAL DATA{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ENCOUNTER DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This array contains subscripts that correspond to each node of data foran Outpatient Encounter entry.Note: Currently (7/97) only the zeroth node is returned. Also, onlyfields .01 thru .08 and .1 thru .13 of the zeroth are returned.Other nodes and fields are not supported.For detail information regarding the fields, see data dictionary forthe Outpatient Encounter file (#409.68).{:/} | 
-| {::nomarkdown}ENCOUNTER PARSE FORMAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Defines format for parsed data.Valid Values:-------------      INTERNAL - use internal format       EXTERNAL - external/display format.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}ENCOUNTER PARSE FORMAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Defines format for parsed data.Valid Values:-------------      INTERNAL - use internal format       EXTERNAL - external/display format.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRA REPORT TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRA REPORT TEXT{:/}
@@ -33,16 +35,4 @@ title: VISTA RPC documentation
  Method comment | return imaging report
  First comment | {::nomarkdown}RPC: ORWRA REPORT TEXT<br/>See RPC definition for details on input and output parameters<br/>-- init locals and globals{:/}
  Input parameters | {::nomarkdown}DFN<br/>ORID<br/>ALPHA<br/>OMEGA<br/>DTRANGE<br/>REMOTE<br/>ORMAX<br/>ORFHIE{:/}
- Code | ```  N ID,LCNT,ORVP,EXAMDATE,CASENMBR
- S RADATA=$NA(^TMP($J,"RAE3"))
- S ROOT=$NA(^TMP("ORXPND",$J))
- K @RADATA,@ROOT
- S ID=$TR(ORID,"-",U)
- S LCNT=0,ORVP=DFN_";DPT("
- D XRAYS^ORCXPND1
- K @RADATA```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ID,LCNT,ORVP,EXAMDATE,CASENMBR<br/> S RADATA=$NA(^TMP($J,"RAE3"))<br/> S ROOT=$NA(^TMP("ORXPND",$J))<br/> K @RADATA,@ROOT<br/> S ID=$TR(ORID,"-",U)<br/> S LCNT=0,ORVP=DFN_";DPT("<br/> D XRAYS^ORCXPND1<br/> K @RADATA```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

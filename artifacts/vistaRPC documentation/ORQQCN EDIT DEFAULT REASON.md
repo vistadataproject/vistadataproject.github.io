@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN EDIT DEFAULT REASON 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN EDIT DEFAULT REASON{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | EDITDRFR^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Allow editing of reason for request?
  Input parameters | {::nomarkdown}ORSVC{:/}
- Code | ```  S ORY=$$REAF^GMRCDRFR(ORSVC)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=$$REAF^GMRCDRFR(ORSVC)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

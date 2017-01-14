@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWSR ONECASE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWSR ONECASE{:/}
@@ -31,13 +33,4 @@ title: VISTA RPC documentation
  Method | ONECASE^[ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
  Method comment | Given a TIU document, return the case and related documents
  Input parameters | {::nomarkdown}ORTIUDA{:/}
- Code | ```  Q:'$$PATCH^XPDUTL("SR*3.0*100")!(+$G(ORTIUDA)=0)
- N ORCASE
- D GET1405^TIUSRVR(.ORCASE,ORTIUDA)
- I +ORCASE'>0 S ORY=ORCASE Q
- D GETONE(.ORY,+ORCASE)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$$PATCH^XPDUTL("SR*3.0*100")!(+$G(ORTIUDA)=0)<br/> N ORCASE<br/> D GET1405^TIUSRVR(.ORCASE,ORTIUDA)<br/> I +ORCASE'>0 S ORY=ORCASE Q<br/> D GETONE(.ORY,+ORCASE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTIU CHKTXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU CHKTXT{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | CHKTXT^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Checks for presence of text before signature
  Input parameters | {::nomarkdown}ORTIUDA{:/}
- Code | ```  S ORY='$$EMPTYDOC^TIULF(ORTIUDA)  ;DBIA #4426
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY='$$EMPTYDOC^TIULF(ORTIUDA)  ;DBIA #4426<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

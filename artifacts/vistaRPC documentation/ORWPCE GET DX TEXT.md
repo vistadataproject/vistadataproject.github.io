@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GET DX TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GET DX TEXT{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method | GETDXTXT^[ORWPCE3](http://code.osehra.org/dox/Routine_ORWPCE3_source.html)
  Method comment | RPC to resolve Dx Text for PCE view
  Input parameters | {::nomarkdown}NARR<br/>CODE{:/}
- Code | ```  S ORY=$$SETNARR(NARR,CODE)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORY=$$SETNARR(NARR,CODE)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

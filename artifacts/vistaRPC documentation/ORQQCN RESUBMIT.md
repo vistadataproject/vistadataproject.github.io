@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN RESUBMIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN RESUBMIT{:/}
@@ -32,13 +34,4 @@ title: VISTA RPC documentation
  Method | RESUBMIT^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Edit/Resubmit a cancelled consult/procedure request
  Input parameters | {::nomarkdown}GMRCO<br/>OREDITED{:/}
- Code | ```  N ORNODE
- S ORNODE=$NAME(^TMP("GMRCR",$J))
- M @ORNODE=OREDITED
- D FILE^GMRCGUIC(GMRCO,ORNODE)
- S Y=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORNODE<br/> S ORNODE=$NAME(^TMP("GMRCR",$J))<br/> M @ORNODE=OREDITED<br/> D FILE^GMRCGUIC(GMRCO,ORNODE)<br/> S Y=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

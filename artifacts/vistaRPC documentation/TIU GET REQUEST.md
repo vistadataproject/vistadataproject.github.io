@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET REQUEST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET REQUEST{:/}
@@ -31,18 +33,4 @@ title: VISTA RPC documentation
  Method | GET1405^[TIUSRVR](http://code.osehra.org/dox/Routine_TIUSRVR_source.html)
  Method comment | Get the Request (field #1405) for a document
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUDAD,TIUTYP,TIU1405
- I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q
- S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)
- I $P(^TIU(8925,TIUDA,0),U,6)'="" D
- . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)
- . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)
- I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q
- S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)
- I '+TIU1405 S TIUY="-1^No Request found for this document" Q
- S TIUY=TIU1405```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUDAD,TIUTYP,TIU1405<br/> I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q<br/> S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)<br/> I $P(^TIU(8925,TIUDA,0),U,6)'="" D<br/> . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)<br/> . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)<br/> I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q<br/> S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)<br/> I '+TIU1405 S TIUY="-1^No Request found for this document" Q<br/> S TIUY=TIU1405```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

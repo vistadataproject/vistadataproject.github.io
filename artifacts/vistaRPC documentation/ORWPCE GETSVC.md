@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GETSVC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GETSVC{:/}
@@ -33,13 +35,4 @@ title: VISTA RPC documentation
  Method | GETSVC^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Returns the correct Service Connected Category
  Input parameters | {::nomarkdown}SVC<br/>LOC<br/>INP{:/}
- Code | ```  N DSS,ORWSVC
- S DSS=$P($G(^SC(+LOC,0)),U,7)
- Q:'+DSS
- M ORWSVC=SVC
- S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N DSS,ORWSVC<br/> S DSS=$P($G(^SC(+LOC,0)),U,7)<br/> Q:'+DSS<br/> M ORWSVC=SVC<br/> S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

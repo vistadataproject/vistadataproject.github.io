@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGJ MAGDATADUMP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGJ MAGDATADUMP{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}'DATA' HAS THE FOLLOWING STRUCTURE: \REQUEST^PARAM1PARAM2\   'REQUEST' IS REQUIRED AND MUST BE A MEMBER OF \CPT,FLDS,GLB\.      'PARAM1' IS REQUIRED TO HOLD A CPT CODE IFF 'REQUEST'=\CPT\.      'PARAM1' IS OPTIONAL TO HOLD FILEMAN FLAGS IFF 'REQUEST'=\FLDS\.      'PARAM2' IS NOT USED IFF 'REQUEST'=\CPT\.      'PARAM2' IS REQUIRED IF 'REQUEST'=\FLDS\ OR 'REQUEST'=\GLB\.         IN EITHER CASE, 'PARAM2' MAY HOLD:           AN INTEGER REPRESENTING THE IMAGE IEN, OR           A CARET-DELIMITED 3 PIECE PARTIAL CASE/EXAM ID STRING, OR           A CARET-DELIMITED 4 PIECE COMPLETE CASE/EXAM ID STRING.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}'DATA' HAS THE FOLLOWING STRUCTURE: \REQUEST^PARAM1PARAM2\   'REQUEST' IS REQUIRED AND MUST BE A MEMBER OF \CPT,FLDS,GLB\.      'PARAM1' IS REQUIRED TO HOLD A CPT CODE IFF 'REQUEST'=\CPT\.      'PARAM1' IS OPTIONAL TO HOLD FILEMAN FLAGS IFF 'REQUEST'=\FLDS\.      'PARAM2' IS NOT USED IFF 'REQUEST'=\CPT\.      'PARAM2' IS REQUIRED IF 'REQUEST'=\FLDS\ OR 'REQUEST'=\GLB\.         IN EITHER CASE, 'PARAM2' MAY HOLD:           AN INTEGER REPRESENTING THE IMAGE IEN, OR           A CARET-DELIMITED 3 PIECE PARTIAL CASE/EXAM ID STRING, OR           A CARET-DELIMITED 4 PIECE COMPLETE CASE/EXAM ID STRING.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

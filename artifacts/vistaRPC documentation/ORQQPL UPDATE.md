@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL UPDATE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL UPDATE{:/}
@@ -32,16 +34,4 @@ title: VISTA RPC documentation
  Method comment | UPDATE A PROBLEM RECORD
  First comment | {::nomarkdown}Does essentially same job as EDSAVE above, however does not handle edits to comments<br/>or addition of multiple comments.<br/>Use initially just for status updates.{:/}
  Input parameters | {::nomarkdown}UPDARRAY{:/}
- Code | ```  N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call
- S S=""
- F  S S=$O(UPDARRAY(S)) Q:S=""  D
- . S @UPDARRAY(S)
- D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)
- S ORRETURN(1)=ORRETURN(0) ; error text
- S ORRETURN(0)=ORRETURN ; gmpdfn
- I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br/> S S=""<br/> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br/> . S @UPDARRAY(S)<br/> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br/> S ORRETURN(1)=ORRETURN(0) ; error text<br/> S ORRETURN(0)=ORRETURN ; gmpdfn<br/> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 HS COMPONENTS{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | COMP^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get ADHOC sub components (FILE 142.1)
  First comment | {::nomarkdown}RPC => ORWRP2 HS COMPONENTS<br/>Y(i)=(1)I;IFN^(2)Component Name [Abb]^(3)Occ Limit^(4)Time Limit^(5)Header Name^<br/>(6)Hosp Loc Disp^(7)ICD Text Disp^(8)Prov Narr Disp^(9)Summary Order{:/}
- Code | ```  D COMP^GMTSADH5(.ORY)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D COMP^GMTSADH5(.ORY)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

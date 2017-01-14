@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP16 REPORT TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP16 REPORT TEXT{:/}
@@ -36,19 +38,4 @@ title: VISTA RPC documentation
  Method comment | return report text
  First comment | {::nomarkdown}RPC: ORWRP REPORT TEXT<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}DFN<br/>RPTID<br/>HSTYPE<br/>DTRANGE<br/>SECTION{:/}
- Code | ```  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ
- . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))
- K ^TMP("ORDATA",$J)
- S ROOT=$NA(^TMP("ORDATA",$J,1))
- IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ
- IF RPTID=2 D BL(DFN) G RPTQ
- IF RPTID=3 D PATH(DFN) G RPTQ
- IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ
- IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ
- IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ
- D NOTYET(.ROOT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ<br/> . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))<br/> K ^TMP("ORDATA",$J)<br/> S ROOT=$NA(^TMP("ORDATA",$J,1))<br/> IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ<br/> IF RPTID=2 D BL(DFN) G RPTQ<br/> IF RPTID=3 D PATH(DFN) G RPTQ<br/> IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ<br/> IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ<br/> IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ<br/> D NOTYET(.ROOT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

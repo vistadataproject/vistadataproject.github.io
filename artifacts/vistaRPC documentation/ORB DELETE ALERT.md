@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORB DELETE ALERT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB DELETE ALERT{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | DEL^[ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
  Method comment | delete an alert
  Input parameters | {::nomarkdown}XQAID<br/>ORKILL{:/}
- Code | ```  N ORN
- S ORN=$P($P(XQAID,";"),",",3)
- I $G(ORKILL)=1!($G(ORKILL)=0) S XQAKILL=ORKILL
- I $G(XQAKILL)="" S XQAKILL=$$XQAKILL^ORB3F1(ORN)
- I $G(XQAKILL)="" S XQAKILL=1
- S ORBY="FALSE"
- I $L($G(XQAID)) D DELETE^XQALERT S ORBY="TRUE"
- K XQAKILL```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORN<br/> S ORN=$P($P(XQAID,";"),",",3)<br/> I $G(ORKILL)=1!($G(ORKILL)=0) S XQAKILL=ORKILL<br/> I $G(XQAKILL)="" S XQAKILL=$$XQAKILL^ORB3F1(ORN)<br/> I $G(XQAKILL)="" S XQAKILL=1<br/> S ORBY="FALSE"<br/> I $L($G(XQAID)) D DELETE^XQALERT S ORBY="TRUE"<br/> K XQAKILL```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

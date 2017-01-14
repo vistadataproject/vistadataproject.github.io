@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV DICOM GET COUNT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV DICOM GET COUNT{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MACHID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}24{:/} |  | {::nomarkdown}The machine ID to be matched to the machine ID in the DICOM FAILEDIMAGES (#2006.575) file.{:/} | 
-| {::nomarkdown}SERVTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} |  | {::nomarkdown}The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}SERVTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} |  | {::nomarkdown}The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

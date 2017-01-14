@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMP FILES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 HS COMP FILES{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method comment | Get Files to select from for a component
  First comment | {::nomarkdown}RPC => ORWRP2 HS COMP FILES{:/}
  Input parameters | {::nomarkdown}ORCOMP{:/}
- Code | ```  D FILES^GMTSADH5(.ORY,ORCOMP)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D FILES^GMTSADH5(.ORY,ORCOMP)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

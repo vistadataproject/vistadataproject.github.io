@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTIU GET DCSUMM CONTEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU GET DCSUMM CONTEXT{:/}
@@ -25,15 +27,4 @@ title: VISTA RPC documentation
  Method | GTDCCTX^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Returns current DC Summary view context for user
  Input parameters | {::nomarkdown}ORUSER{:/}
- Code | ```  N OCCLIM,SHOWSUB
- S Y=$$GET^XPAR("ALL","ORCH CONTEXT SUMMRIES",1)
- I +$P(Y,";",5)=0 D
- . S OCCLIM=$P($$PERSPRF^TIULE(DUZ),U,10)
- . S:+OCCLIM>0 $P(Y,";",5)=OCCLIM
- S SHOWSUB=$P(Y,";",6)
- S $P(Y,";",6)=$S(SHOWSUB'="":SHOWSUB,1:0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N OCCLIM,SHOWSUB<br/> S Y=$$GET^XPAR("ALL","ORCH CONTEXT SUMMRIES",1)<br/> I +$P(Y,";",5)=0 D<br/> . S OCCLIM=$P($$PERSPRF^TIULE(DUZ),U,10)<br/> . S:+OCCLIM>0 $P(Y,";",5)=OCCLIM<br/> S SHOWSUB=$P(Y,";",6)<br/> S $P(Y,";",6)=$S(SHOWSUB'="":SHOWSUB,1:0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

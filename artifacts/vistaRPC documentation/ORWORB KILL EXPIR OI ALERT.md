@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWORB KILL EXPIR OI ALERT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB KILL EXPIR OI ALERT{:/}
@@ -32,16 +34,4 @@ title: VISTA RPC documentation
  Method | KILEXOI^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | Delete expiring flagged OI notification if no flagged expiring OI remaining
  Input parameters | {::nomarkdown}ORDFN<br/>ORNIFN{:/}
- Code | ```  N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")
- D AGET^ORWORR(.ORLST,ORDFN,5,ORDG)
- Q:+(@ORLST@(.1))  ;more left
- N XQAKILL,ORVP
- S ORVP=ORDFN_";DPT("
- S XQAKILL=$$XQAKILL^ORB3F1(ORNIFN) ; flagged expiring OI notifications
- I $D(XQAID) D DELETE^XQALERT
- I '$D(XQAID) S XQAID=$P($G(^ORD(100.9,ORNIFN,0)),U,2)_","_+ORVP_","_ORNIFN D DELETEA^XQALERT K XQAID```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")<br/> D AGET^ORWORR(.ORLST,ORDFN,5,ORDG)<br/> Q:+(@ORLST@(.1))  ;more left<br/> N XQAKILL,ORVP<br/> S ORVP=ORDFN_";DPT("<br/> S XQAKILL=$$XQAKILL^ORB3F1(ORNIFN) ; flagged expiring OI notifications<br/> I $D(XQAID) D DELETE^XQALERT<br/> I '$D(XQAID) S XQAID=$P($G(^ORD(100.9,ORNIFN,0)),U,2)_","_+ORVP_","_ORNIFN D DELETEA^XQALERT K XQAID```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

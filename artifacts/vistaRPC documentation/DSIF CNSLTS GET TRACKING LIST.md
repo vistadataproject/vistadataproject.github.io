@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS GET TRACKING LIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS GET TRACKING LIST{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DSIFSVC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This input parameter is the Service/Specialty IEN for the service in which you want a list of Consult details returned.{:/} | 
 | {::nomarkdown}DSIFLIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the last IEN returned, if the list contains more than 100records. By passing in this value, which should be the last IEN returned in a previous call, it will grab the next 100 records, or until there are no additional records.{:/} | 
-| {::nomarkdown}DSIFSCR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown} If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIFSCR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown} If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

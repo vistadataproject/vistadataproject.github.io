@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU LONG LIST CLINPROC TITLES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LONG LIST CLINPROC TITLES{:/}
@@ -33,13 +35,4 @@ title: VISTA RPC documentation
  Method comment | RPC that serves data to a longlist of selectable Titles
  First comment | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is<br/>scrolling<br/>DIR      Direction from which the longlist is scrolling<br/>from the reference Title  (Optional- default 1)<br/>Output -- Y        An array of the 44 nearest Titles to that indicated<br/>by the user in the direction passed by the longlist<br/>component{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N TIUCLASS
- I '$D(FROM) G LNGCPQ
- S TIUCLASS=+$$CLASS
- I +TIUCLASS'>0 G LNGCPQ
- D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUCLASS<br/> I '$D(FROM) G LNGCPQ<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 G LNGCPQ<br/> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

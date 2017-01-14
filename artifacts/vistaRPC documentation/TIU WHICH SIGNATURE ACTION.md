@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU WHICH SIGNATURE ACTION 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU WHICH SIGNATURE ACTION{:/}
@@ -31,15 +33,4 @@ title: VISTA RPC documentation
  Method | WHATACT^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Evaluate/return whether signature or cosignature
  Input parameters | {::nomarkdown}TIUDA{:/}
- Code | ```  N TIUD0,TIUD12,TIUSTAT,SIGNER,COSIGNER,XTRASGNR
- S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUD12=$G(^TIU(8925,+TIUDA,12))
- S SIGNER=$P(TIUD12,U,4),COSIGNER=$P(TIUD12,U,8)
- I (DUZ'=SIGNER),(DUZ'=COSIGNER) S XTRASGNR=+$O(^TIU(8925.7,"AE",+TIUDA,+DUZ,0))
- I '$G(XTRASGNR) S XTRASGNR=$$ASURG^TIUADSIG(TIUDA)
- S TIUSTAT=+$P(TIUD0,U,5)
- S TIUY=$S(TIUSTAT'>5:"SIGNATURE",+$G(XTRASGNR):"SIGNATURE",1:"COSIGNATURE")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUD0,TIUD12,TIUSTAT,SIGNER,COSIGNER,XTRASGNR<br/> S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUD12=$G(^TIU(8925,+TIUDA,12))<br/> S SIGNER=$P(TIUD12,U,4),COSIGNER=$P(TIUD12,U,8)<br/> I (DUZ'=SIGNER),(DUZ'=COSIGNER) S XTRASGNR=+$O(^TIU(8925.7,"AE",+TIUDA,+DUZ,0))<br/> I '$G(XTRASGNR) S XTRASGNR=$$ASURG^TIUADSIG(TIUDA)<br/> S TIUSTAT=+$P(TIUD0,U,5)<br/> S TIUY=$S(TIUSTAT'>5:"SIGNATURE",+$G(XTRASGNR):"SIGNATURE",1:"COSIGNATURE")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

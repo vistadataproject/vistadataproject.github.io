@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWLRR CHART 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLRR CHART{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | CHART^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
  Input parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>SPEC<br/>TEST{:/}
- Code | ```  D CHART^LR7OGC(.ORY,DFN,DATE1,DATE2,SPEC,TEST)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D CHART^LR7OGC(.ORY,DFN,DATE1,DATE2,SPEC,TEST)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

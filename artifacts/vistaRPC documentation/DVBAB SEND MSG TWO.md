@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DVBAB SEND MSG TWO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DVBAB SEND MSG TWO{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}PERSON FILE DFN{:/} | 
 | {::nomarkdown}RIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}2507 REQUEST IEN #396.3{:/} | 
-| {::nomarkdown}ELIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}2507 EXAM LIST #396.4{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}ELIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}2507 EXAM LIST #396.4{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

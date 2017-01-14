@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL DELETE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL DELETE{:/}
@@ -35,19 +37,4 @@ title: VISTA RPC documentation
  Method comment | DELETE A PROBLEM
  First comment | {::nomarkdown}From GMPL1 - silent version{:/}
  Input parameters | {::nomarkdown}GMPIFN<br/>GMPROV<br/>GMPVAMC<br/>REASON{:/}
- Code | ```  N CHNGE
- I REASON'="" D
- . S GMPFLD(10,"NEW",1)=REASON
- . D NEWNOTE^GMPLSAVE
- S CHNGE=GMPIFN_"^1.02^"_$$HTFM^XLFDT($H)
- S CHNGE=CHNGE_U_DUZ_"^P^H^Deleted^"_+$G(GMPROV)
- S $P(^AUPNPROB(GMPIFN,1),U,2)="H"
- S RESULT=1
- D AUDIT^GMPLX(CHNGE,"")
- D DTMOD^GMPLX(GMPIFN)
- K GMPFLD```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N CHNGE<br/> I REASON'="" D<br/> . S GMPFLD(10,"NEW",1)=REASON<br/> . D NEWNOTE^GMPLSAVE<br/> S CHNGE=GMPIFN_"^1.02^"_$$HTFM^XLFDT($H)<br/> S CHNGE=CHNGE_U_DUZ_"^P^H^Deleted^"_+$G(GMPROV)<br/> S $P(^AUPNPROB(GMPIFN,1),U,2)="H"<br/> S RESULT=1<br/> D AUDIT^GMPLX(CHNGE,"")<br/> D DTMOD^GMPLX(GMPIFN)<br/> K GMPFLD```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

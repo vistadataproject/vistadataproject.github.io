@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU REQUIRES COSIGNATURE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU REQUIRES COSIGNATURE{:/}
@@ -34,14 +36,4 @@ title: VISTA RPC documentation
  Method comment | Evaluate cosignature requirement
  First comment | {::nomarkdown}Initialize return value{:/}
  Input parameters | {::nomarkdown}TIUTYP<br/>TIUDA<br/>TIUSER<br/>TIUDT{:/}
- Code | ```  N TIUDPRM
- S TIUY=0
- I +$G(TIUTYP)'>0,'+$G(TIUDA) Q
- I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))
- S:'+$G(TIUSER) TIUSER=+$G(DUZ)
- S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),"."))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUDPRM<br/> S TIUY=0<br/> I +$G(TIUTYP)'>0,'+$G(TIUDA) Q<br/> I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))<br/> S:'+$G(TIUSER) TIUSER=+$G(DUZ)<br/> S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),"."))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

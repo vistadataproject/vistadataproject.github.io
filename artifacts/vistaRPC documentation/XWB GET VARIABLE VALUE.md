@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB GET VARIABLE VALUE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB GET VARIABLE VALUE{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | VARVAL^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | returns value of passed in variable
  Input parameters | {::nomarkdown}VARIABLE{:/}
- Code | ```  S RESULT=VARIABLE ;can do this with the REFERENCE type parameter```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RESULT=VARIABLE ;can do this with the REFERENCE type parameter```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

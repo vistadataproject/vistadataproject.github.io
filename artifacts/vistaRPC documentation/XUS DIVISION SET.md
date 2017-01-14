@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XUS DIVISION SET 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS DIVISION SET{:/}
@@ -31,14 +33,4 @@ title: VISTA RPC documentation
  Method | DIVSET^[XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
  Method comment | Set users Division
  Input parameters | {::nomarkdown}DIV{:/}
- Code | ```  S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX",$G(DIV))
- Q:DIV'>0
- N X
- I '$D(^VA(200,DUZ,2,DIV,0)) Q
- S RET=1 ;1=set, 0=not set
- D UPDIV(+DIV) ;Update Sign-on log```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX",$G(DIV))<br/> Q:DIV'>0<br/> N X<br/> I '$D(^VA(200,DUZ,2,DIV,0)) Q<br/> S RET=1 ;1=set, 0=not set<br/> D UPDIV(+DIV) ;Update Sign-on log```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

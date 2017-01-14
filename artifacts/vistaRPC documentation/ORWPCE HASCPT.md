@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE HASCPT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE HASCPT{:/}
@@ -31,15 +33,4 @@ title: VISTA RPC documentation
  Method | HASCPT^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Returns true if there are any mapped CPT Codes
  Input parameters | {::nomarkdown}ORLIST{:/}
- Code | ```  N IEN,IDX,FOUND
- S IDX=0
- F  S IDX=$O(ORLIST(IDX)) Q:'+IDX  D
- . S FOUND=0
- . S IEN=$$FIND1^DIC(811.1,"","QX",ORLIST(IDX))
- . I +IEN S FOUND=+$$GET1^DIQ(811.1,IEN,.05,"I")
- . S ORY(IDX)=ORLIST(IDX)_"="_FOUND```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N IEN,IDX,FOUND<br/> S IDX=0<br/> F  S IDX=$O(ORLIST(IDX)) Q:'+IDX  D<br/> . S FOUND=0<br/> . S IEN=$$FIND1^DIC(811.1,"","QX",ORLIST(IDX))<br/> . I +IEN S FOUND=+$$GET1^DIQ(811.1,IEN,.05,"I")<br/> . S ORY(IDX)=ORLIST(IDX)_"="_FOUND```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU PARAMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU PARAMS{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | return a list of parameter values
  First comment | {::nomarkdown}call assumes current user, default entities, multiple instances{:/}
  Input parameters | {::nomarkdown}APARAM{:/}
- Code | ```  D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q")```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

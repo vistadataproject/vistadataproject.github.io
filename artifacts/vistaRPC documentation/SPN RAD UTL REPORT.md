@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; SPN RAD UTL REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}SPN RAD UTL REPORT{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MINPROC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Minimum number of procedures to display:  (1-99999){:/} | 
 | {::nomarkdown}MINCOST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Minimum dollar cost of procedures to display:  (0-999){:/} | 
 | {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Number of highest users to identify:  (0-100){:/} | 
-| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2726^2800^3504^3726^3793^4072{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}DFN^DFN^DFN  354^1368^1514^1862^2171^2254^2389^2401^2459^2726^2800^3504^3726^3793^4072{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

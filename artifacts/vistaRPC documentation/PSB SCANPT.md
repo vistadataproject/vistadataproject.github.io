@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB SCANPT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB SCANPT{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}PSBDATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the scanned valued passed by the client.wristband prompt of the mnOpenPatient component.  The value passed inis either the full SSN scanned in from the patient wristband -or- the1U4N syntax of the patient lookup.  In either case the call mustreturn only one patient from the lookup.  If the 1U4N syntax is usedand multiple patients are found the call returns an error.  If onlyone patient is found the RESULTS( ) array is loaded with the patientdata and passed back to the client for verification.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}PSBDATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the scanned valued passed by the client.wristband prompt of the mnOpenPatient component.  The value passed inis either the full SSN scanned in from the patient wristband -or- the1U4N syntax of the patient lookup.  In either case the call mustreturn only one patient from the lookup.  If the 1U4N syntax is usedand multiple patients are found the call returns an error.  If onlyone patient is found the RESULTS( ) array is loaded with the patientdata and passed back to the client for verification.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

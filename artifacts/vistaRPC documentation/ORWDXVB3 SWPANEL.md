@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXVB3 SWPANEL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB3 SWPANEL{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SWPANEL^[ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  Method comment | Switch the location of the Diagnostic and Component panels on VBECS Order Dialog
- Code | ```  S OROOT=+$$GET^XPAR("ALL","OR VBECS DIAGNOSTIC PANEL 1ST",1,"I")
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S OROOT=+$$GET^XPAR("ALL","OR VBECS DIAGNOSTIC PANEL 1ST",1,"I")<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC IEN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN GET PROC IEN{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | PROCIEN^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return pointer to file 123.3 given orderable item
  Input parameters | {::nomarkdown}ORDITM{:/}
- Code | ```  S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

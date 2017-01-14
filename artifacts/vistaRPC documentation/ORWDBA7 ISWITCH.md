@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDBA7 ISWITCH 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA7 ISWITCH{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | ISWITCH^[ORWDBA7](http://code.osehra.org/dox/Routine_ORWDBA7_source.html)
  Method comment | Return 0 if don't ask (no ins) or 1 to ask CIDC quest (yes ins)
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S Y=$$CIDC^IBBAPI(DFN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S Y=$$CIDC^IBBAPI(DFN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

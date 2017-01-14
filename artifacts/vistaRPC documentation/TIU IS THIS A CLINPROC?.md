@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU IS THIS A CLINPROC? 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IS THIS A CLINPROC?{:/}
@@ -32,13 +34,4 @@ title: VISTA RPC documentation
  Method comment | RPC that evaluates whether or not a Title is under
  First comment | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
  Input parameters | {::nomarkdown}TITLE{:/}
- Code | ```  N TIUCLASS
- I +$G(TITLE)'>0 S TIUY=0 G ISCPQ
- S TIUCLASS=+$$CLASS
- I +TIUCLASS'>0 S TIUY=0 G ISCPQ
- S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUCLASS<br/> I +$G(TITLE)'>0 S TIUY=0 G ISCPQ<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 G ISCPQ<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

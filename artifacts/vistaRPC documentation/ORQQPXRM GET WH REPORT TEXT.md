@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM GET WH REPORT TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM GET WH REPORT TEXT{:/}
@@ -30,9 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | WHREPORT^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Input parameters | {::nomarkdown}ORIEN{:/}
- Code | ```  D RESULTS^WVALERTF(.ORY,ORIEN) Q```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D RESULTS^WVALERTF(.ORY,ORIEN) Q```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDLR STOP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDLR STOP{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | STOP^[ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
  Method comment | return a calculated stop date
  Input parameters | {::nomarkdown}X2{:/}
- Code | ```  N X1,X
- S X1=DT D C^%DTC S VAL=X
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N X1,X<br/> S X1=DT D C^%DTC S VAL=X<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

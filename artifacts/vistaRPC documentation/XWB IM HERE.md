@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB IM HERE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB IM HERE{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | IMHERE^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | P6
  First comment | {::nomarkdown}Entry point for XWB IM HERE remote procedure{:/}
- Code | ```  S RESULT=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RESULT=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

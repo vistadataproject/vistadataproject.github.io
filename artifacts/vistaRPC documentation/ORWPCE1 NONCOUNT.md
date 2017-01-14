@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE1 NONCOUNT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE1 NONCOUNT{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | NONCOUNT^[ORWPCE1](http://code.osehra.org/dox/Routine_ORWPCE1_source.html)
  Method comment | Is the location a non-count clinic? (DBIA #964)
  Input parameters | {::nomarkdown}ORLOC{:/}
- Code | ```  Q:'ORLOC
- S ORY=$S($P($G(^SC(ORLOC,0)),U,17)="Y":1,1:0)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  Q:'ORLOC<br/> S ORY=$S($P($G(^SC(ORLOC,0)),U,17)="Y":1,1:0)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

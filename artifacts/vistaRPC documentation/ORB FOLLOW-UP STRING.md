@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORB FOLLOW-UP STRING 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB FOLLOW-UP STRING{:/}
@@ -32,10 +34,4 @@ title: VISTA RPC documentation
  Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
  First comment | {::nomarkdown}called by ORB FOLLOW-UP api:{:/}
  Input parameters | {::nomarkdown}ORXQAID{:/}
- Code | ```  S ORENVIR="GUI"
- D PROCESS```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORENVIR="GUI"<br/> D PROCESS```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

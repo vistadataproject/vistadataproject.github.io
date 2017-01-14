@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN SET ACT MENUS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN SET ACT MENUS{:/}
@@ -31,14 +33,4 @@ title: VISTA RPC documentation
  Method | SETACTM^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | set action menus in GUI based on service of selected consult
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  Q:+$G(GMRCO)=0
- N ORFLG
- S Y=0
- D CPRS^GMRCACTM(GMRCO,1)
- Q:'$D(ORFLG(GMRCO))
- S Y=ORFLG(GMRCO)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(GMRCO)=0<br/> N ORFLG<br/> S Y=0<br/> D CPRS^GMRCACTM(GMRCO,1)<br/> Q:'$D(ORFLG(GMRCO))<br/> S Y=ORFLG(GMRCO)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

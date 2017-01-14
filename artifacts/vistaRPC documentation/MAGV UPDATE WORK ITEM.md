@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV UPDATE WORK ITEM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV UPDATE WORK ITEM{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NEWSTAT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the new status to be filed in the work item.{:/} | 
 | {::nomarkdown}MESSAGE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the message that is associated with the work item.{:/} | 
 | {::nomarkdown}UPDUSR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the user that has updated the work item.{:/} | 
-| {::nomarkdown}UPDAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the application/service that has updated the work item.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}UPDAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the application/service that has updated the work item.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

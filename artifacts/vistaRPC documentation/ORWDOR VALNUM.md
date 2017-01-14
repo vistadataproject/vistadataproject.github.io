@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDOR VALNUM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDOR VALNUM{:/}
@@ -25,17 +27,4 @@ title: VISTA RPC documentation
  Method | VALNUM^[ORWDOR](http://code.osehra.org/dox/Routine_ORWDOR_source.html)
  Method comment | return error if invalid number
  Input parameters | {::nomarkdown}X<br/>DOM{:/}
- Code | ```  N LOW,HIGH,DEC
- S LOW=$P(DOM,":"),HIGH=$P(DOM,":",2),DEC=$P(DOM,":",3),ERR=0
- I $L($P(X,"."))>24 S ERR="1^Exceeded maximum number of 24 characters" Q
- I X'?.1"-".N.1".".N S ERR="1^Entry must be numeric" Q
- I X>HIGH!(X<LOW) S ERR="1^Out of Range - value must be between "_LOW_" and "_HIGH_" inclusive" Q
- I $L($P(+X,".",2))>DEC D
- . I DEC=0 S ERR="1^No decimal places allowed"
- . E  I DEC=1 S ERR="1^Only one decimal place allowed"
- . E  S ERR="1^No more than "_DEC_" decimal places allowed"```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N LOW,HIGH,DEC<br/> S LOW=$P(DOM,":"),HIGH=$P(DOM,":",2),DEC=$P(DOM,":",3),ERR=0<br/> I $L($P(X,"."))>24 S ERR="1^Exceeded maximum number of 24 characters" Q<br/> I X'?.1"-".N.1".".N S ERR="1^Entry must be numeric" Q<br/> I X>HIGH!(X<LOW) S ERR="1^Out of Range - value must be between "_LOW_" and "_HIGH_" inclusive" Q<br/> I $L($P(+X,".",2))>DEC D<br/> . I DEC=0 S ERR="1^No decimal places allowed"<br/> . E  I DEC=1 S ERR="1^Only one decimal place allowed"<br/> . E  S ERR="1^No more than "_DEC_" decimal places allowed"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPP CHKSURR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP CHKSURR{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}check if current user's surrogate is valid{:/}
  Input parameters | {::nomarkdown}SURR{:/}
- Code | ```  S OK=$$CHKSURR^ORWTPUA(DUZ,SURR)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S OK=$$CHKSURR^ORWTPUA(DUZ,SURR)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

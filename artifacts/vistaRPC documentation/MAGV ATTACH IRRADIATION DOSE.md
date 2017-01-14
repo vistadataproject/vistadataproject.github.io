@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV ATTACH IRRADIATION DOSE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV ATTACH IRRADIATION DOSE{:/}
@@ -27,9 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IRRADIATION INSTANCE UID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the irradiation instance UID of a CT irradiation dosage instance.{:/} | 
 | {::nomarkdown}ATTRIBUTES{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}  Input parameters are name-value pairs sent as successive integer subscripts in an array that should be passed in by reference.    The values passed in should be in the format <fname>`<value>, where <fname> is a field name and <value> is the value to which that field should be set.{:/} | 
 | {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the type of irradiation instance - \CT\ or \FLUORO\.{:/} | 
-| {::nomarkdown}SERUID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the series UID related to the irradiation dosage instance.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}SERUID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the series UID related to the irradiation dosage instance.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

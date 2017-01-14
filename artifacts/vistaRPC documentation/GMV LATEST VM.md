@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV LATEST VM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV LATEST VM{:/}
@@ -32,10 +34,4 @@ title: VISTA RPC documentation
  Method comment | GMV LATEST VM [RPC entry point]
  First comment | {::nomarkdown}RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/>IN RESULT ARRAY.{:/}
  Input parameters | {::nomarkdown}GMRDFN{:/}
- Code | ```  K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)
- S RESULT=$NA(^TMP($J,"GRPC"))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)<br/> S RESULT=$NA(^TMP($J,"GRPC"))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

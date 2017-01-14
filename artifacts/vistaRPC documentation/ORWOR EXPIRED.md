@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWOR EXPIRED 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR EXPIRED{:/}
@@ -24,12 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EXPIRED^[ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  Method comment | return FM date/time to begin search for expired orders
- Code | ```  N HRS
- S HRS=$$GET^XPAR("ALL","ORWOR EXPIRED ORDERS",1,"I")
- S ORY=$$FMADD^XLFDT($$NOW^XLFDT,"","-"_HRS,"","")
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N HRS<br/> S HRS=$$GET^XPAR("ALL","ORWOR EXPIRED ORDERS",1,"I")<br/> S ORY=$$FMADD^XLFDT($$NOW^XLFDT,"","-"_HRS,"","")<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

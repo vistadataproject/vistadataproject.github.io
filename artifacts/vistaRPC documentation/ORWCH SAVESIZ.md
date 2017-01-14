@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCH SAVESIZ 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCH SAVESIZ{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | save the bounds for a particular control
  First comment | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
  Input parameters | {::nomarkdown}NAM<br/>VAL{:/}
- Code | ```  D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP PRINT LAB REPORTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP PRINT LAB REPORTS{:/}
@@ -35,19 +37,4 @@ title: VISTA RPC documentation
  Method comment | print report entry point
  First comment | {::nomarkdown}See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>RPTID<br/>ORDAYSBK<br/>ORTESTS<br/>ORALPHA<br/>OROMEGA{:/}
- Code | ```  IF '$$CHK() G PRINTQ
- N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE
- S ZTIO=ORIO,ZTDTH=$H
- S ZTDESC="GUI Lab Report Print"
- S ZTRTN="DEQUE^ORWRPL"
- S ZTSAVE("ORDFN")="",ZTSAVE("RPTID")="",ZTSAVE("ORDAYSBK")="",ZTSAVE("DUZ(")="",ZTSAVE("ORTESTS(")="",ZTSAVE("ORALPHA")="",ZTSAVE("OROMEGA")=""
- D ^%ZTLOAD
- I $D(ZTSK) D
- . S ORY="0^Report queued. (Task #"_ZTSK_")"
- E  D
- . S ORY="99^Task Rejected."```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  IF '$$CHK() G PRINTQ<br/> N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="GUI Lab Report Print"<br/> S ZTRTN="DEQUE^ORWRPL"<br/> S ZTSAVE("ORDFN")="",ZTSAVE("RPTID")="",ZTSAVE("ORDAYSBK")="",ZTSAVE("DUZ(")="",ZTSAVE("ORTESTS(")="",ZTSAVE("ORALPHA")="",ZTSAVE("OROMEGA")=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

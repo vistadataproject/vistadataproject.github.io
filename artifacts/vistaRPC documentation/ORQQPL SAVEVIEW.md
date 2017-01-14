@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL SAVEVIEW 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL SAVEVIEW{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | SAVEVIEW^[ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
  Method comment | save new view in File #200/Field #125
  Input parameters | {::nomarkdown}GMPLVIEW{:/}
- Code | ```  N TMP
- Q:'$D(GMPLVIEW)
- S TMP=$P($G(^VA(200,DUZ,125)),U,2,999)
- S ^VA(200,DUZ,125)=$P(GMPLVIEW,U,1)_U_TMP
- S TMP=$$GET^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1)
- I TMP'="" D  Q
- . D CHG^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))
- D ADD^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TMP<br/> Q:'$D(GMPLVIEW)<br/> S TMP=$P($G(^VA(200,DUZ,125)),U,2,999)<br/> S ^VA(200,DUZ,125)=$P(GMPLVIEW,U,1)_U_TMP<br/> S TMP=$$GET^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1)<br/> I TMP'="" D  Q<br/> . D CHG^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))<br/> D ADD^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPL INIT PT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL INIT PT{:/}
@@ -31,23 +33,4 @@ title: VISTA RPC documentation
  Method | INITPT^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | GET PATIENT PARAMETERS
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  Q:+$G(DFN)=0
- N GMPSC,GMPAGTOR,GMPION,GMPGULF,GMPHNC,GMPMST,GMPCV,GMPSHD
- S RETURN(0)=DUZ(2) ; facility #
- D DEM^VADPT ; get death indicator
- S RETURN(1)=$G(VADM(6)) ; death indicator
- D VADPT^GMPLX1(DFN) ; get eligibilities
- S RETURN(2)=$P(GMPSC,U) ; service connected
- S RETURN(3)=$G(GMPAGTOR) ; agent orange exposure
- S RETURN(4)=$G(GMPION) ; ionizing radiation exposure
- S RETURN(5)=$G(GMPGULF) ; gulf war exposure
- S RETURN(6)=VA("BID") ; need this to reconstitute GMPDFN on return
- S RETURN(7)=$G(GMPHNC) ; head/neck cancer
- S RETURN(8)=$G(GMPMST) ; MST
- S RETURN(9)=$G(GMPCV) ; CV
- S RETURN(10)=$G(GMPSHD) ; SHAD```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(DFN)=0<br/> N GMPSC,GMPAGTOR,GMPION,GMPGULF,GMPHNC,GMPMST,GMPCV,GMPSHD<br/> S RETURN(0)=DUZ(2) ; facility #<br/> D DEM^VADPT ; get death indicator<br/> S RETURN(1)=$G(VADM(6)) ; death indicator<br/> D VADPT^GMPLX1(DFN) ; get eligibilities<br/> S RETURN(2)=$P(GMPSC,U) ; service connected<br/> S RETURN(3)=$G(GMPAGTOR) ; agent orange exposure<br/> S RETURN(4)=$G(GMPION) ; ionizing radiation exposure<br/> S RETURN(5)=$G(GMPGULF) ; gulf war exposure<br/> S RETURN(6)=VA("BID") ; need this to reconstitute GMPDFN on return<br/> S RETURN(7)=$G(GMPHNC) ; head/neck cancer<br/> S RETURN(8)=$G(GMPMST) ; MST<br/> S RETURN(9)=$G(GMPCV) ; CV<br/> S RETURN(10)=$G(GMPSHD) ; SHAD```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

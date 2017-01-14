@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCS REPORT TEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCS REPORT TEXT{:/}
@@ -33,10 +35,4 @@ title: VISTA RPC documentation
  Method comment | retrieve report text
  First comment | {::nomarkdown}RPC: ORWCS REPORT TEXT<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}DFN<br/>ORID{:/}
- Code | ```  S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0
- D DT^GMRCSLM2(ORID)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0<br/> D DT^GMRCSLM2(ORID)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB VALIDATE ORDER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB VALIDATE ORDER{:/}
@@ -30,9 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBASTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Current scan status of the VDL of the medication.{:/} | 
 | {::nomarkdown}PSBORSTS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Current order status on the VDL>{:/} | 
 | {::nomarkdown}PSBRMV{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}Action the user is trying to take.{:/} | 
-| {::nomarkdown}psbdien{:/} |  |  |  |  | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}psbdien{:/} |  |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

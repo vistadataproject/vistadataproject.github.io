@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 TYPEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 TYPEXT{:/}
@@ -26,10 +28,4 @@ title: VISTA RPC documentation
  Method comment | does EVT has delayed orders?
  First comment | {::nomarkdown}1 if Patient DFN has delayed orders for EVT<br/>2 if Parent/Sibling event has delayed orders<br/>0 if No delayed orders for EVT{:/}
  Input parameters | {::nomarkdown}DFN<br/>EVT{:/}
- Code | ```  Q:'+EVT
- S ORY=$$EXISTS^OREVNTX(DFN,EVT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'+EVT<br/> S ORY=$$EXISTS^OREVNTX(DFN,EVT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

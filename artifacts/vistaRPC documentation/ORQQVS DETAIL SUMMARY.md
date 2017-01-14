@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQVS DETAIL SUMMARY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQVS DETAIL SUMMARY{:/}
@@ -32,27 +34,4 @@ title: VISTA RPC documentation
  Method | DETSUM^[ORQQVS](http://code.osehra.org/dox/Routine_ORQQVS_source.html)
  Method comment | return discharge summary for a patient's visit
  Input parameters | {::nomarkdown}ORPT<br/>ORVIEN{:/}
- Code | ```  N CR,ORTY,ORY,TDT
- S TDT=0
- K ^TMP("TIULIST",$J)
- D SUMMARY^TIUSRVLV(.ORY,ORVIEN)
- I '+$O(^TMP("TIULIST",$J,0)) D  Q
- . S ORVY(1)="No Discharge Summary found for this stay."
- F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D
- . N SEQ,TIEN S SEQ=0
- . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D
- . . N TSEQ,ORVI K ^TMP("TIUVIEW",$J)
- . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)
- . . D TGET^TIUSRVR1(.ORTY,TIEN)
- . . S TSEQ=0,ORVI=1
- . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D
- . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1
- . . S ORVY(ORVI)=" ",ORVI=ORVI+1
- . . S ORVY(ORVI)=" ",ORVI=ORVI+1
- K ^TMP("TIULIST",$J)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N CR,ORTY,ORY,TDT<br/> S TDT=0<br/> K ^TMP("TIULIST",$J)<br/> D SUMMARY^TIUSRVLV(.ORY,ORVIEN)<br/> I '+$O(^TMP("TIULIST",$J,0)) D  Q<br/> . S ORVY(1)="No Discharge Summary found for this stay."<br/> F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D<br/> . N SEQ,TIEN S SEQ=0<br/> . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D<br/> . . N TSEQ,ORVI K ^TMP("TIUVIEW",$J)<br/> . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)<br/> . . D TGET^TIUSRVR1(.ORTY,TIEN)<br/> . . S TSEQ=0,ORVI=1<br/> . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D<br/> . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1<br/> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br/> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br/> K ^TMP("TIULIST",$J)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

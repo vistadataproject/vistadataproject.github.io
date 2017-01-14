@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWORB UNSIG ORDERS FOLLOWUP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB UNSIG ORDERS FOLLOWUP{:/}
@@ -31,25 +33,4 @@ title: VISTA RPC documentation
  Method | ESORD^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | order(s) requiring electronic signature follow-up
  Input parameters | {::nomarkdown}XQAID{:/}
- Code | ```  K XQAKILL
- N ORPT,ORDG,ORBXQAID,ORY,ORX,ORZ,ORDERS,ORDNUM,ORQUIT,ORBLMDEL
- S ORBXQAID=XQAID,ORDERS=0,ORQUIT=0
- S ORPT=$P($P(XQAID,";"),",",2)  ;get pt dfn from xqaid
- S ORDG=$$DG^ORQOR1("ALL")
- D EN^ORQ1(ORPT_";DPT(",ORDG,11,"","","",0,0)
- S ORX="",ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""  I +$G(^TMP("ORR",$J,ORX,"TOT"))<1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q
- I '$D(^XUSEC("ORES",DUZ)) S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q
- I $$PPLINK^ORQPTQ1(DUZ,ORPT)=0 D
- .S ORX="" F  S ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""!(ORDERS=1)  D
- ..S ORZ="" F  S ORZ=$O(^TMP("ORR",$J,ORX,ORZ)) Q:+ORZ=0!(ORDERS=1)  D
- ...S ORDNUM=^TMP("ORR",$J,ORX,ORZ)
- ...;quit if this unsigned order's last action was made by the user
- ...I DUZ=+$$UNSIGNOR^ORQOR2(ORDNUM) S ORDERS=1
- .I ORDERS'=1 D  ;provider has no outstanding unsigned orders for pt
- ..S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID)  ;delete alert for this user
- K ^TMP("ORR",$J)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K XQAKILL<br/> N ORPT,ORDG,ORBXQAID,ORY,ORX,ORZ,ORDERS,ORDNUM,ORQUIT,ORBLMDEL<br/> S ORBXQAID=XQAID,ORDERS=0,ORQUIT=0<br/> S ORPT=$P($P(XQAID,";"),",",2)  ;get pt dfn from xqaid<br/> S ORDG=$$DG^ORQOR1("ALL")<br/> D EN^ORQ1(ORPT_";DPT(",ORDG,11,"","","",0,0)<br/> S ORX="",ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""  I +$G(^TMP("ORR",$J,ORX,"TOT"))<1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q<br/> I '$D(^XUSEC("ORES",DUZ)) S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q<br/> I $$PPLINK^ORQPTQ1(DUZ,ORPT)=0 D<br/> .S ORX="" F  S ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""!(ORDERS=1)  D<br/> ..S ORZ="" F  S ORZ=$O(^TMP("ORR",$J,ORX,ORZ)) Q:+ORZ=0!(ORDERS=1)  D<br/> ...S ORDNUM=^TMP("ORR",$J,ORX,ORZ)<br/> ...;quit if this unsigned order's last action was made by the user<br/> ...I DUZ=+$$UNSIGNOR^ORQOR2(ORDNUM) S ORDERS=1<br/> .I ORDERS'=1 D  ;provider has no outstanding unsigned orders for pt<br/> ..S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID)  ;delete alert for this user<br/> K ^TMP("ORR",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDERS UNEVALUATED 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM REMINDERS UNEVALUATED{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  First comment | {::nomarkdown}D LIST^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078<br/>ORQQPXRM MENTAL HEALTH{:/}
- Input parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Input parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

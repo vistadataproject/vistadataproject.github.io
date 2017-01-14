@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB GET BROKER INFO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB GET BROKER INFO{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | BRKRINFO^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | P6
  First comment | {::nomarkdown}Entry point for XWB GET BROKER INFO RPC.<br/>R(0) = Length of handler read timeout{:/}
- Code | ```  S RESULT(0)=$$BAT^XUPARAM```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S RESULT(0)=$$BAT^XUPARAM```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

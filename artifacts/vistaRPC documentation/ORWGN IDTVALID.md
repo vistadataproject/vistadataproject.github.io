@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWGN IDTVALID 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGN IDTVALID{:/}
@@ -32,11 +34,4 @@ title: VISTA RPC documentation
  Method comment | Returns Implementation date of the ICD code set
  First comment | {::nomarkdown}CSYS = System abbreviation for the coding system{:/}
  Input parameters | {::nomarkdown}CSYS{:/}
- Code | ```  K IDATE
- I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q
- S IDATE=$$IMPDATE^LEXU(CSYS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  K IDATE<br/> I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q<br/> S IDATE=$$IMPDATE^LEXU(CSYS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

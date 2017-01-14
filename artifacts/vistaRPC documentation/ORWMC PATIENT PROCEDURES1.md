@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWMC PATIENT PROCEDURES1 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWMC PATIENT PROCEDURES1{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method comment | Return procedures
  First comment | {::nomarkdown}RPC: ORWMC PROCEDURES<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  D GET(1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D GET(1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

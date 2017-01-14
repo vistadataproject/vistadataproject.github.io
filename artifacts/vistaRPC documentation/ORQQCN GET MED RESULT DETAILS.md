@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN GET MED RESULT DETAILS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN GET MED RESULT DETAILS{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | DISPMED^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | Detailed display of a med result
  Input parameters | {::nomarkdown}GMRCRES{:/}
- Code | ```  Q:+$G(GMRCRES)=0
- D DISPMED^GMRCGUIU(GMRCRES,.ORY)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(GMRCRES)=0<br/> D DISPMED^GMRCGUIU(GMRCRES,.ORY)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

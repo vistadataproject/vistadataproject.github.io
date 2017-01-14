@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DENTV TP FILE PERIO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DENTV TP FILE PERIO{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}INPUT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the input array for adding or updating a Perio transaction type to the Treatment Plan Transaction/Exam file (#228.2).  The input array will contain the following data:  data(\ENC\)=pointer to the DENTAL HISTORY file (#228.1)              required for Adding new records, optional for update records  data(\PER\)=p1^p2^p3^p4^p5 where      p1=transaction id (-1 for add, valid txn id for update)      p2=exam number (integer value, 0-99999)      p3=exam date in external format (MM/DD/YY@HH:MM)      p4=provider id      p5=status flag (A=add, U=update){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}INPUT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the input array for adding or updating a Perio transaction type to the Treatment Plan Transaction/Exam file (#228.2).  The input array will contain the following data:  data(\ENC\)=pointer to the DENTAL HISTORY file (#228.1)              required for Adding new records, optional for update records  data(\PER\)=p1^p2^p3^p4^p5 where      p1=transaction id (-1 for add, valid txn id for update)      p2=exam number (integer value, 0-99999)      p3=exam date in external format (MM/DD/YY@HH:MM)      p4=provider id      p5=status flag (A=add, U=update){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

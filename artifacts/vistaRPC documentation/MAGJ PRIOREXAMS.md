@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGJ PRIOREXAMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGJ PRIOREXAMS{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input string has 5 pieces, delimited by \^\:  \P\ or \A\ ^ RADFN ^ RADTI ^ RACNI ^ RARPT    P--run Pre-Fetch mode    A--run Auto-Display mode    RADFN, RADTI, & RACNI are pointers to the Current Case exam in file 70    RARPT--pointer to ^RARPT (file 74) for the current caseEither RARPT or the values RADFN/RADTI/RACNI may be passed for executingthis function.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input string has 5 pieces, delimited by \^\:  \P\ or \A\ ^ RADFN ^ RADTI ^ RACNI ^ RARPT    P--run Pre-Fetch mode    A--run Auto-Display mode    RADFN, RADTI, & RACNI are pointers to the Current Case exam in file 70    RARPT--pointer to ^RARPT (file 74) for the current caseEither RARPT or the values RADFN/RADTI/RACNI may be passed for executingthis function.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE SAVE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE SAVE{:/}
@@ -25,19 +27,4 @@ title: VISTA RPC documentation
  Method | SAVE^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | save PCE information
  Input parameters | {::nomarkdown}PCELIST<br/>NOTEIEN<br/>ORLOC{:/}
- Code | ```  N VSTR,GMPLUSER
- N ZTIO,ZTRTN,ZTDTH,ZTSAVE,ZTDESC,ZTSYNC,ZTSK
- S VSTR=$P(PCELIST(1),U,4) K ^TMP("ORWPCE",$J,VSTR)
- M ^TMP("ORWPCE",$J,VSTR)=PCELIST
- S GMPLUSER=$$CLINUSER^ORQQPL1(DUZ),NOTEIEN=+$G(NOTEIEN)
- S ZTIO="ORW/PXAPI RESOURCE",ZTRTN="DQSAVE^ORWPCE1",ZTDTH=$H
- S ZTSAVE("PCELIST(")="",ZTDESC="Data from CPRS to PCE"
- S ZTSAVE("GMPLUSER")="",ZTSAVE("NOTEIEN")="",ZTSAVE("DUZ")=""
- I VSTR'["E" S ZTSYNC="ORW"_VSTR
- S ZTSAVE("ORLOC")=""
- D ^%ZTLOAD I '$D(ZTSK) D DQSAVE^ORWPCE1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N VSTR,GMPLUSER<br/> N ZTIO,ZTRTN,ZTDTH,ZTSAVE,ZTDESC,ZTSYNC,ZTSK<br/> S VSTR=$P(PCELIST(1),U,4) K ^TMP("ORWPCE",$J,VSTR)<br/> M ^TMP("ORWPCE",$J,VSTR)=PCELIST<br/> S GMPLUSER=$$CLINUSER^ORQQPL1(DUZ),NOTEIEN=+$G(NOTEIEN)<br/> S ZTIO="ORW/PXAPI RESOURCE",ZTRTN="DQSAVE^ORWPCE1",ZTDTH=$H<br/> S ZTSAVE("PCELIST(")="",ZTDESC="Data from CPRS to PCE"<br/> S ZTSAVE("GMPLUSER")="",ZTSAVE("NOTEIEN")="",ZTSAVE("DUZ")=""<br/> I VSTR'["E" S ZTSYNC="ORW"_VSTR<br/> S ZTSAVE("ORLOC")=""<br/> D ^%ZTLOAD I '$D(ZTSK) D DQSAVE^ORWPCE1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

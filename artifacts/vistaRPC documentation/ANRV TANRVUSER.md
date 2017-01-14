@@ -8,16 +8,13 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ANRV TANRVUSER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ANRV TANRVUSER{:/}
  tag | {::nomarkdown}RPC{:/}
  routine | [ANRVOA](http://code.osehra.org/dox/Routine_ANRVOA_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
- description | {::nomarkdown}Manages all User calls.{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ description | {::nomarkdown}Manages all User calls.{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

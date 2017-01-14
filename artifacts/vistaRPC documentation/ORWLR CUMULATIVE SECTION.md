@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWLR CUMULATIVE SECTION 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLR CUMULATIVE SECTION{:/}
@@ -35,20 +37,4 @@ title: VISTA RPC documentation
  Method comment | return cum report text
  First comment | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
  Input parameters | {::nomarkdown}DFN<br/>RPTID<br/>DTRANGE<br/>SECTION{:/}
- Code | ```  IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ
- . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))
- N LINES,ORSUB
- K ^TMP("ORLABDATA",$J)
- D CUMB(DFN,RPTID,DTRANGE)
- S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)
- IF LINES<241 D
- . S OROOT=$NA(^TMP("LRC",$J))
- . S @OROOT@(.001)="1^1"
- ELSE  D
- . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))
- . D BUILD```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br/> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br/> N LINES,ORSUB<br/> K ^TMP("ORLABDATA",$J)<br/> D CUMB(DFN,RPTID,DTRANGE)<br/> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br/> IF LINES<241 D<br/> . S OROOT=$NA(^TMP("LRC",$J))<br/> . S @OROOT@(.001)="1^1"<br/> ELSE  D<br/> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br/> . D BUILD```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

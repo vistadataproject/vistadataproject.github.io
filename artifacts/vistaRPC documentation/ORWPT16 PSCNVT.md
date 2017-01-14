@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT16 PSCNVT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT16 PSCNVT{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | procedure
  First comment | {::nomarkdown}Call conversion routine for pharmacy (both inpatient and outpatient){:/}
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  S VAL=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

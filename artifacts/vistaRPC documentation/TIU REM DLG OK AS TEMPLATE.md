@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU REM DLG OK AS TEMPLATE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU REM DLG OK AS TEMPLATE{:/}
@@ -32,23 +34,4 @@ title: VISTA RPC documentation
  Method comment | Returns TRUE if the passed in Reminder Dialog IEN is
  First comment | {::nomarkdown}Allowed to be used as a TIU Template{:/}
  Input parameters | {::nomarkdown}TIUIEN{:/}
- Code | ```  N TIULST,SRV
- S TIUY=-1
- I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q
- I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410
- S TIUY=1
- D RDACCUM(.TIULST,"USR","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- S SRV=$$GETSRV(DUZ)
- D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- D RDACCUM(.TIULST,"DIV","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- D RDACCUM(.TIULST,"SYS","Q")
- I $$RDINLST(.TIULST,TIUIEN) Q
- S TIUY=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIULST,SRV<br/> S TIUY=-1<br/> I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q<br/> I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410<br/> S TIUY=1<br/> D RDACCUM(.TIULST,"USR","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> S SRV=$$GETSRV(DUZ)<br/> D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> D RDACCUM(.TIULST,"DIV","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> D RDACCUM(.TIULST,"SYS","Q")<br/> I $$RDINLST(.TIULST,TIUIEN) Q<br/> S TIUY=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

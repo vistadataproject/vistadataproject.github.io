@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG DICOM GET AE ENTRY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG DICOM GET AE ENTRY{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}APPNAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the Application Name (AE NAME) to lookup.{:/} | 
-| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the location used to filter the DICOM AE SECURITY MATRIX entries.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the location used to filter the DICOM AE SECURITY MATRIX entries.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

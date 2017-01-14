@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQPT CLINICS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT CLINICS{:/}
@@ -24,13 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CLIN^[ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  Method comment | RETURN LIST OF CLINICS
- Code | ```  N ORLST,IEN,I
- D GETLST^XPAR(.ORLST,"ALL","ORWD COMMON CLINIC")
- S I=0 F  S I=$O(ORLST(I)) Q:'I  D
- . S IEN=$P(ORLST(I),U,2) I $$ACTLOC^ORWU(IEN)=1 D
- .. S Y(I)=IEN_U_$P(^SC(IEN,0),U,1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORLST,IEN,I<br/> D GETLST^XPAR(.ORLST,"ALL","ORWD COMMON CLINIC")<br/> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br/> . S IEN=$P(ORLST(I),U,2) I $$ACTLOC^ORWU(IEN)=1 D<br/> .. S Y(I)=IEN_U_$P(^SC(IEN,0),U,1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

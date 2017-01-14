@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDFH ISOLIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH ISOLIST{:/}
@@ -24,11 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISOLIST^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return list of active isolations/precautions
- Code | ```  N I,X,IEN
- S I=0,X="" F  S X=$O(^FH(119.4,"B",X)) Q:X=""  S IEN=$O(^(X,0)) D
- . I '$D(^FH(119.4,IEN,"I")) S I=I+1,LST(I)=IEN_U_X```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,X,IEN<br/> S I=0,X="" F  S X=$O(^FH(119.4,"B",X)) Q:X=""  S IEN=$O(^(X,0)) D<br/> . I '$D(^FH(119.4,IEN,"I")) S I=I+1,LST(I)=IEN_U_X```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

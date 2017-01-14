@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU IS USER A USR PROVIDER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IS USER A USR PROVIDER{:/}
@@ -33,12 +35,4 @@ title: VISTA RPC documentation
  Method comment | Is USER a USR CLASS provider?
  First comment | {::nomarkdown}Checks USR CLASS PROVIDER only<br/>DATE must not include time{:/}
  Input parameters | {::nomarkdown}USER<br/>DATE{:/}
- Code | ```  N TIUERR
- S USER=$G(USER,DUZ)
- S DATE=$G(DATE,DT),TIUY=0
- I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N TIUERR<br/> S USER=$G(USER,DUZ)<br/> S DATE=$G(DATE,DT),TIUY=0<br/> I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

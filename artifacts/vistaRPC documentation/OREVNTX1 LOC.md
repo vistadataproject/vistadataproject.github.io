@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 LOC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 LOC{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | LOC^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return default hospital location ^SC( for PTEVT ptr #100.2
  Input parameters | {::nomarkdown}PTEVT{:/}
- Code | ```  Q:'+PTEVT
- S ORY=$$LOC^OREVNTX(PTEVT)
- S ORY=+ORY```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'+PTEVT<br/> S ORY=$$LOC^OREVNTX(PTEVT)<br/> S ORY=+ORY```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

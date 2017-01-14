@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 ISPASS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 ISPASS{:/}
@@ -25,12 +27,4 @@ title: VISTA RPC documentation
  Method | ISPASS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return 1 if it's a pass event
  Input parameters | {::nomarkdown}PTEVTID<br/>EVTTYPE{:/}
- Code | ```  S ORY=$$EVT^OREVNTX(PTEVTID)
- S ORY=$P($G(^ORD(100.5,+ORY,0)),U,7)
- I EVTTYPE="T",ORY,ORY<4 S ORY=1
- E  S ORY=0```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=$$EVT^OREVNTX(PTEVTID)<br/> S ORY=$P($G(^ORD(100.5,+ORY,0)),U,7)<br/> I EVTTYPE="T",ORY,ORY<4 S ORY=1<br/> E  S ORY=0```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

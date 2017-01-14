@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDAL32 CLINUSER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDAL32 CLINUSER{:/}
@@ -24,24 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CLINUSER^[ORWDAL33](http://code.osehra.org/dox/Routine_ORWDAL33_source.html)
  Method comment | can user mark allergy as entered in error
- Code | ```  N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE
- S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC
- I Y=-1 S ORY=0 Q  ;Parameter not found so quit
- S PRM=+Y
- S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q
- D ENVAL^XPAR(.ORLST,PRM)
- I ORLST>0 D
- . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D
- . . Q:ORX'["USR(8930"
- . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)
- . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)
- . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))
- S ORY=$G(VALUE)
- I ORY'="" Q
- S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q
- S ORY=0 Q```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N DIC,X,PRM,Y,ORLST,ORX,PLIST,VALUE<br/> S DIC=8989.51,DIC(0)="MX",X="OR ALLERGY ENTERED IN ERROR" D ^DIC<br/> I Y=-1 S ORY=0 Q  ;Parameter not found so quit<br/> S PRM=+Y<br/> S ORY=$$GET^XPAR("USR",PRM) I ORY'="" Q<br/> D ENVAL^XPAR(.ORLST,PRM)<br/> I ORLST>0 D<br/> . S ORX="" F  S ORX=$O(ORLST(ORX)) Q:ORX=""  D<br/> . . Q:ORX'["USR(8930"<br/> . . I $$ISA^USRLM(DUZ,+ORX) S VALUE(+ORX)=ORLST(ORX,1)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  D REMOVE(ORX)<br/> . S ORX=0 F  S ORX=$O(VALUE(ORX)) Q:'+ORX  S VALUE=$G(VALUE)!(VALUE(ORX))<br/> S ORY=$G(VALUE)<br/> I ORY'="" Q<br/> S ORY=$$GET^XPAR("DIV^SYS",PRM) I ORY'="" Q<br/> S ORY=0 Q```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

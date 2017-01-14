@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GET EXCLUDED 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GET EXCLUDED{:/}
@@ -32,14 +34,4 @@ title: VISTA RPC documentation
  Method | EXCLUDED^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Returns list of excluded PCE data elements
  Input parameters | {::nomarkdown}LOC<br/>TYPE{:/}
- Code | ```  N SRV,PARAM
- S PARAM=$S(TYPE=1:"IMMUNIZATIONS",TYPE=2:"SKIN TESTS",TYPE=3:"PATIENT ED",TYPE=4:"HEALTH FACTORS",TYPE=5:"EXAMS",1:"")
- Q:PARAM=""
- S SRV=$P($G(^VA(200,DUZ,5)),U)
- S PARAM="ORWPCE EXCLUDE "_PARAM
- D GETLST^XPAR(.ORY,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG",PARAM,"Q",.ORERR)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N SRV,PARAM<br/> S PARAM=$S(TYPE=1:"IMMUNIZATIONS",TYPE=2:"SKIN TESTS",TYPE=3:"PATIENT ED",TYPE=4:"HEALTH FACTORS",TYPE=5:"EXAMS",1:"")<br/> Q:PARAM=""<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> S PARAM="ORWPCE EXCLUDE "_PARAM<br/> D GETLST^XPAR(.ORY,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG",PARAM,"Q",.ORERR)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

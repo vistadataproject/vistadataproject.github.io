@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB INSTRUCTOR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB INSTRUCTOR{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PSBACC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Access Code edtSSN component on frmInstructor.{:/} | 
-| {::nomarkdown}PSBVER{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}Verify Codeinstructor into the edtESIG component on frmInstructor.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}PSBVER{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}Verify Codeinstructor into the edtESIG component on frmInstructor.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

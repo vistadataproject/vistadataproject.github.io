@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE GET SET OF CODES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GET SET OF CODES{:/}
@@ -26,18 +28,4 @@ title: VISTA RPC documentation
  Method comment | gets set of codes
  First comment | {::nomarkdown}ORWLST(n)=code^text for code{:/}
  Input parameters | {::nomarkdown}ORWFILE<br/>ORWFIELD<br/>ORWNULL{:/}
- Code | ```  N ORWPCE,ORWPCEL,ORWPCEC,ORWPCELO,ORWPCEHI,ORWPCECD,ORWPCET
- S ORWPCELO="abcdefghijklmnopqrstuvwxyz"
- S ORWPCEHI="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
- D FIELD^DID(ORWFILE,ORWFIELD,"","POINTER","ORWPCE","ORWPCE")
- S ORWPCEL=$L(ORWPCE("POINTER"),";")-1
- F ORWPCEC=1:1:ORWPCEL D
- . S ORWPCECD=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",1)
- . S ORWPCET=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",2)
- . S ORWLST(ORWPCEC)=ORWPCECD_"^"_$E(ORWPCET)_$TR($E(ORWPCET,2,99),ORWPCEHI,ORWPCELO)
- S:$G(ORWNULL) ORWLST(0)="@^(None selected)"```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORWPCE,ORWPCEL,ORWPCEC,ORWPCELO,ORWPCEHI,ORWPCECD,ORWPCET<br/> S ORWPCELO="abcdefghijklmnopqrstuvwxyz"<br/> S ORWPCEHI="ABCDEFGHIJKLMNOPQRSTUVWXYZ"<br/> D FIELD^DID(ORWFILE,ORWFIELD,"","POINTER","ORWPCE","ORWPCE")<br/> S ORWPCEL=$L(ORWPCE("POINTER"),";")-1<br/> F ORWPCEC=1:1:ORWPCEL D<br/> . S ORWPCECD=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",1)<br/> . S ORWPCET=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",2)<br/> . S ORWLST(ORWPCEC)=ORWPCECD_"^"_$E(ORWPCET)_$TR($E(ORWPCET,2,99),ORWPCEHI,ORWPCELO)<br/> S:$G(ORWNULL) ORWLST(0)="@^(None selected)"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

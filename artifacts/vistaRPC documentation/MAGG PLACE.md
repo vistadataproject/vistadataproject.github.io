@@ -8,16 +8,13 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGG PLACE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGG PLACE{:/}
  tag | {::nomarkdown}PLACER{:/}
  routine | [MAGBAPI](http://code.osehra.org/dox/Routine_MAGBAPI_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
- description | {::nomarkdown}This rpc returns the IEN of the 2006.1 entry that is appropriate for the multi institution parameter designated by the users DUZ(2).{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ description | {::nomarkdown}This rpc returns the IEN of the 2006.1 entry that is appropriate for the multi institution parameter designated by the users DUZ(2).{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

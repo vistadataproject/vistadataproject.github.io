@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU FIELD CAN EDIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD CAN EDIT{:/}
@@ -24,17 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CANEDIT^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  Method comment | Returns TRUE if the current user can edit dialog fields
- Code | ```  S TIUY=0
- I '+DUZ Q
- N TIUCLASS,TIUERR,IDX,SRV
- S SRV=$P($G(^VA(200,DUZ,5)),U)
- D GETLST^XPAR(.TIUCLASS,DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","TIU FIELD EDITOR CLASSES","Q",.TIUERR)
- I TIUERR>0 Q
- S IDX=0
- F  S IDX=$O(TIUCLASS(IDX)) Q:'IDX  D  Q:+TIUY
- .I $$ISA^USRLM(DUZ,$P(TIUCLASS(IDX),U,2),.TIUERR) S TIUY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S TIUY=0<br/> I '+DUZ Q<br/> N TIUCLASS,TIUERR,IDX,SRV<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> D GETLST^XPAR(.TIUCLASS,DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","TIU FIELD EDITOR CLASSES","Q",.TIUERR)<br/> I TIUERR>0 Q<br/> S IDX=0<br/> F  S IDX=$O(TIUCLASS(IDX)) Q:'IDX  D  Q:+TIUY<br/> .I $$ISA^USRLM(DUZ,$P(TIUCLASS(IDX),U,2),.TIUERR) S TIUY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

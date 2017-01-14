@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCS PRINT REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCS PRINT REPORT{:/}
@@ -34,13 +36,4 @@ title: VISTA RPC documentation
  Method comment | print report entry point
  First comment | {::nomarkdown}RPC: ORWCS PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
  Input parameters | {::nomarkdown}ORIO<br/>DFN<br/>ORID{:/}
- Code | ```  IF '$$CHK() G PRINTQ
- N TASKDATA
- S TASKDATA("DESC")="Consult Report Print"
- S TASKDATA("RTN")="DEQUE^ORWCSP"
- D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  IF '$$CHK() G PRINTQ<br/> N TASKDATA<br/> S TASKDATA("DESC")="Consult Report Print"<br/> S TASKDATA("RTN")="DEQUE^ORWCSP"<br/> D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

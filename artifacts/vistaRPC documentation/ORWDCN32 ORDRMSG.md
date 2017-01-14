@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDCN32 ORDRMSG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDCN32 ORDRMSG{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | ORDRMSG^[ORWDCN32](http://code.osehra.org/dox/Routine_ORWDCN32_source.html)
  Method comment | returns order message for this consult/procedure orderable
  Input parameters | {::nomarkdown}ORDITM{:/}
- Code | ```  N I
- S I=0 F  S I=$O(^ORD(101.43,ORDITM,8,I)) Q:I'>0  S Y(I)=^(I,0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I<br/> S I=0 F  S I=$O(^ORD(101.43,ORDITM,8,I)) Q:I'>0  S Y(I)=^(I,0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

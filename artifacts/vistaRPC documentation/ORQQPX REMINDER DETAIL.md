@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPX REMINDER DETAIL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX REMINDER DETAIL{:/}
@@ -33,15 +35,4 @@ title: VISTA RPC documentation
  Method comment | return detail for a pt's clinical reminder
  First comment | {::nomarkdown}ORY - return array<br/>ORPT - patient DFN<br/>ORIEN - clinical reminder (811.9 ien){:/}
  Input parameters | {::nomarkdown}ORPT<br/>ORIEN{:/}
- Code | ```  K ^TMP("PXRHM",$J)
- D MAIN^PXRM(ORPT,ORIEN,5)     ; 5 returns all reminder info
- N CR,I,J,ORTXT S I=1
- S ORTXT="",ORTXT=$O(^TMP("PXRHM",$J,ORIEN,ORTXT)) Q:ORTXT=""  D
- .S J=0 F  S J=$O(^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J)) Q:J=""  D
- ..S ORY(I)=^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J),I=I+1
- K ^TMP("PXRHM",$J)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^TMP("PXRHM",$J)<br/> D MAIN^PXRM(ORPT,ORIEN,5)     ; 5 returns all reminder info<br/> N CR,I,J,ORTXT S I=1<br/> S ORTXT="",ORTXT=$O(^TMP("PXRHM",$J,ORIEN,ORTXT)) Q:ORTXT=""  D<br/> .S J=0 F  S J=$O(^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J)) Q:J=""  D<br/> ..S ORY(I)=^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J),I=I+1<br/> K ^TMP("PXRHM",$J)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENTS FOR REQUEST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU GET DOCUMENTS FOR REQUEST{:/}
@@ -32,26 +34,4 @@ title: VISTA RPC documentation
  Method comment | Get TIU Documents for a given Consult or
  First comment | {::nomarkdown}Surgical Case{:/}
  Input parameters | {::nomarkdown}OVP<br/>SEQUENCE{:/}
- Code | ```  N TIUDA,TIUI
- S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIULIST",$J)) K @TIUY
- S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")
- F  S TIUDA=$O(^TIU(8925,"G",OVP,TIUDA)) Q:+TIUDA'>0  D
- . S TIUI=TIUI+1
- . ; Cross-check value of field 1405 with x-ref value
- . I OVP'=$P($G(^TIU(8925,TIUDA,14)),U,5) Q
- . ; If a document is an ID Entry, get its parent
- . ; I +$G(^TIU(8925,TIUDA,21)) S TIUDA=+$G(^TIU(8925,TIUDA,21))
- . ; Don't include entry in list more than once
- . I +$O(@TIUY@("INDX",TIUDA,0)) Q
- . ; Don't include entry in list if RETRACTED
- . I $P($G(^TIU(8925,TIUDA,0)),U,5)=15 Q
- . S @TIUY@(TIUI)=TIUDA_U_$$RESOLVE^TIUSRVLO(TIUDA)
- . S @TIUY@("INDX",TIUDA,TIUI)=""
- . I +$$HASDAD^TIUSRVLI(TIUDA) D SETDAD^TIUSRVLI(.TIUY,TIUDA,.TIUI)
- . I +$$HASKIDS^TIUSRVLI(TIUDA) D SETKIDS^TIUSRVLI(.TIUY,TIUDA,.TIUI)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N TIUDA,TIUI<br/> S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIULIST",$J)) K @TIUY<br/> S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")<br/> F  S TIUDA=$O(^TIU(8925,"G",OVP,TIUDA)) Q:+TIUDA'>0  D<br/> . S TIUI=TIUI+1<br/> . ; Cross-check value of field 1405 with x-ref value<br/> . I OVP'=$P($G(^TIU(8925,TIUDA,14)),U,5) Q<br/> . ; If a document is an ID Entry, get its parent<br/> . ; I +$G(^TIU(8925,TIUDA,21)) S TIUDA=+$G(^TIU(8925,TIUDA,21))<br/> . ; Don't include entry in list more than once<br/> . I +$O(@TIUY@("INDX",TIUDA,0)) Q<br/> . ; Don't include entry in list if RETRACTED<br/> . I $P($G(^TIU(8925,TIUDA,0)),U,5)=15 Q<br/> . S @TIUY@(TIUI)=TIUDA_U_$$RESOLVE^TIUSRVLO(TIUDA)<br/> . S @TIUY@("INDX",TIUDA,TIUI)=""<br/> . I +$$HASDAD^TIUSRVLI(TIUDA) D SETDAD^TIUSRVLI(.TIUY,TIUDA,.TIUI)<br/> . I +$$HASKIDS^TIUSRVLI(TIUDA) D SETKIDS^TIUSRVLI(.TIUY,TIUDA,.TIUI)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

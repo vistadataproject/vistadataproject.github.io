@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPP GETCOS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP GETCOS{:/}
@@ -26,10 +28,4 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}get elgible cosigners for current user{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR<br/>VISITORS{:/}
- Code | ```  I '$G(VISITORS) S VISITORS=""
- D GETCOS^ORWTPN(.VALUES,DUZ,FROM,DIR,VISITORS)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I '$G(VISITORS) S VISITORS=""<br/> D GETCOS^ORWTPN(.VALUES,DUZ,FROM,DIR,VISITORS)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

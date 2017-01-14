@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORIMO IMOOD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORIMO IMOOD{:/}
@@ -25,16 +27,4 @@ title: VISTA RPC documentation
  Method | IMOOD^[ORIMO](http://code.osehra.org/dox/Routine_ORIMO_source.html)
  Method comment | Is it an IMO order?
  Input parameters | {::nomarkdown}ORDERID{:/}
- Code | ```  Q:'$D(^OR(100,+ORDERID,0))
- N PIMO,DGRP,CMGRP,CIGRP
- S (DGRP,CMGRP,CIGRP,ORY)=0
- S DGRP=$P($G(^OR(100,+ORDERID,0)),U,11)
- S CMGRP=$O(^ORD(100.98,"B","CLINIC MEDICATIONS",""))
- S CIGRP=$O(^ORD(100.98,"B","CLINIC INFUSIONS",""))
- I DGRP=CMGRP S ORY=1
- I DGRP=CIGRP S ORY=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  Q:'$D(^OR(100,+ORDERID,0))<br/> N PIMO,DGRP,CMGRP,CIGRP<br/> S (DGRP,CMGRP,CIGRP,ORY)=0<br/> S DGRP=$P($G(^OR(100,+ORDERID,0)),U,11)<br/> S CMGRP=$O(^ORD(100.98,"B","CLINIC MEDICATIONS",""))<br/> S CIGRP=$O(^ORD(100.98,"B","CLINIC INFUSIONS",""))<br/> I DGRP=CMGRP S ORY=1<br/> I DGRP=CIGRP S ORY=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

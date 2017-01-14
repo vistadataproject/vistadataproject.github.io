@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XWB REMOTE CLEAR 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XWB REMOTE CLEAR{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | CLEAR^[XWBDRPC](http://code.osehra.org/dox/Routine_XWBDRPC_source.html)
  Method comment | Clear the data under a handle
  Input parameters | {::nomarkdown}HDL{:/}
- Code | ```  K ^XTMP(HDL),^TMP("XWBHDL",$J,HDL)
- S RET(0)=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  K ^XTMP(HDL),^TMP("XWBHDL",$J,HDL)<br/> S RET(0)=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

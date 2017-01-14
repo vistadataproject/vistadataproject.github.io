@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORDDPAPI CLOZMSG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORDDPAPI CLOZMSG{:/}
@@ -23,12 +25,4 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | CLOZMSG^[ORDDPAPI](http://code.osehra.org/dox/Routine_ORDDPAPI_source.html)
- Code | ```  N ERR,I
- D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)
- S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N ERR,I<br/> D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)<br/> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

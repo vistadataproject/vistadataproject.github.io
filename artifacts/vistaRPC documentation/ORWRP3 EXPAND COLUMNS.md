@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP3 EXPAND COLUMNS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP3 EXPAND COLUMNS{:/}
@@ -25,12 +27,4 @@ title: VISTA RPC documentation
  Method | LIST^[ORWRP3](http://code.osehra.org/dox/Routine_ORWRP3_source.html)
  Method comment | Get list for Reports & Labs Tab Treeview
  Input parameters | {::nomarkdown}TAB{:/}
- Code | ```  N ROOT
- S ROOT=$NA(LST)
- K @ROOT
- D TRY1(.ROOT,$G(TAB))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ROOT<br/> S ROOT=$NA(LST)<br/> K @ROOT<br/> D TRY1(.ROOT,$G(TAB))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

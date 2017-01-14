@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXM1 SVRPC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXM1 SVRPC{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | SVRPC^[ORWDXM1](http://code.osehra.org/dox/Routine_ORWDXM1_source.html)
  Method comment | RPC FOR SITEVAL
  Input parameters | {::nomarkdown}X{:/}
- Code | ```  S RET=$$SITEVAL```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S RET=$$SITEVAL```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP SAVE DEFAULT PRINTER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP SAVE DEFAULT PRINTER{:/}
@@ -25,20 +27,4 @@ title: VISTA RPC documentation
  Method | SAVDFPRT^[ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  Method comment | Save new default printer for user
  Input parameters | {::nomarkdown}ORDEV{:/}
- Code | ```  N ORPAR,ORERR,ORWINDEF
- Q:$L(ORDEV)=0
- S ORPAR="ORWDP WINPRINT DEFAULT"
- I ORDEV="WIN" S ORWINDEF="Y"
- E  S ORWINDEF="N"
- I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)
- E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)
- Q:ORDEV="WIN"
- S ORPAR="ORWDP DEFAULT PRINTER",ORDEV="`"_ORDEV
- I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)
- E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)
-```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORPAR,ORERR,ORWINDEF<br/> Q:$L(ORDEV)=0<br/> S ORPAR="ORWDP WINPRINT DEFAULT"<br/> I ORDEV="WIN" S ORWINDEF="Y"<br/> E  S ORWINDEF="N"<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br/> Q:ORDEV="WIN"<br/> S ORPAR="ORWDP DEFAULT PRINTER",ORDEV="`"_ORDEV<br/> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br/>```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

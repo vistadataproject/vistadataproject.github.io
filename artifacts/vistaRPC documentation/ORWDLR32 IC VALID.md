@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDLR32 IC VALID 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDLR32 IC VALID{:/}
@@ -31,10 +33,4 @@ title: VISTA RPC documentation
  Method | ICVALID^[ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  Method comment | Is the time a valid immediate collect time?
  Input parameters | {::nomarkdown}ORTIME{:/}
- Code | ```  S ORTIME=$P(ORTIME,".",1)_"."_$E($P(ORTIME,".",2),1,4)
- S ORY=$$VALID^LR7OV4(DUZ(2),ORTIME)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORTIME=$P(ORTIME,".",1)_"."_$E($P(ORTIME,".",2),1,4)<br/> S ORY=$$VALID^LR7OV4(DUZ(2),ORTIME)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

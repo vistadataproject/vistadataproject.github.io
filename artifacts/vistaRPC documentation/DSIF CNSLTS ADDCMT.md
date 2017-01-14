@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; DSIF CNSLTS ADDCMT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}DSIF CNSLTS ADDCMT{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the array of comments that need to be added to the Consult.{:/} | 
 | {::nomarkdown}DSIFALRT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} |  | {::nomarkdown}This is the indiciation that alerts should be sent to someone. 1 means yes.{:/} | 
 | {::nomarkdown}DSIFALTO{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Contains pointers to NEW PERSON FILE (200) for those to receive alert for this addition of a comment.{:/} | 
-| {::nomarkdown}DSIFORDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the date of the Comment is added to the Consult. If not passed in, defaults to NOW^XLFDT.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}DSIFORDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the date of the Comment is added to the Consult. If not passed in, defaults to NOW^XLFDT.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

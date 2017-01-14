@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXM MSTYLE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXM MSTYLE{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MSTYLE^[ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  Method comment | Return the menu style for the system
- Code | ```  S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

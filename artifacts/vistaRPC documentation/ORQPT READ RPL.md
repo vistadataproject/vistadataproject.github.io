@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQPT READ RPL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT READ RPL{:/}
@@ -26,25 +28,4 @@ title: VISTA RPC documentation
  Method comment | Read disk-based patient array from TMP.
  First comment | {::nomarkdown}Variables used:<br/>ORCNT   = Counter variable.<br/>ORDIR   = Direction to move through list.<br/>ORFROM  = Starting point from which to move through list.<br/>ORI     = Counter variable.<br/>ORIEN   = Record IEN holder.<br/>ORJ     = Job number to use in ^TMP global root.<br/>ORROOT  = ^TMP global file root.<br/>ORZ     = Temporary value holder.<br/>Y       = Returned array.{:/}
  Input parameters | {::nomarkdown}ORJ<br/>ORFROM<br/>ORDIR{:/}
- Code | ```  N ORCNT,ORI,ORIEN,ORROOT,ORZ
- I $P(ORFROM,U,2)'="" S ORFROM=$P(ORFROM,U,2)
- S ORROOT="^TMP("_"""ORRPL"""_","_ORJ      ; Initial setting.
- S ORROOT=ORROOT_","_"""B"""               ; Add final text.
- I '$D(@(ORROOT_")")) S Y(0)="No data available." Q
- S ORROOT=ORROOT_","                       ; Add comma.
- S ORCNT=44                                ; Initialize to maximum.
- S ORI=0                                   ; Initialize.
- F  S ORFROM=$O(@(ORROOT_""""_ORFROM_""""_")"),ORDIR) Q:ORFROM=""  D  Q:ORI=ORCNT
- .;
- .; Sub-loop for entries up to ORCNT maximum:
- .S ORIEN=0                                ; Initialize.
- .F  S ORIEN=$O(@(ORROOT_""""_ORFROM_""""_","_ORIEN_")")) Q:'ORIEN  D  Q:ORI=ORCNT
- ..S ORI=ORI+1                             ; Increment counter.
- ..;
- ..; Assign return array:
- ..S Y(ORI)=@(ORROOT_""""_ORFROM_""""_","_ORIEN_")")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORCNT,ORI,ORIEN,ORROOT,ORZ<br/> I $P(ORFROM,U,2)'="" S ORFROM=$P(ORFROM,U,2)<br/> S ORROOT="^TMP("_"""ORRPL"""_","_ORJ      ; Initial setting.<br/> S ORROOT=ORROOT_","_"""B"""               ; Add final text.<br/> I '$D(@(ORROOT_")")) S Y(0)="No data available." Q<br/> S ORROOT=ORROOT_","                       ; Add comma.<br/> S ORCNT=44                                ; Initialize to maximum.<br/> S ORI=0                                   ; Initialize.<br/> F  S ORFROM=$O(@(ORROOT_""""_ORFROM_""""_")"),ORDIR) Q:ORFROM=""  D  Q:ORI=ORCNT<br/> .;<br/> .; Sub-loop for entries up to ORCNT maximum:<br/> .S ORIEN=0                                ; Initialize.<br/> .F  S ORIEN=$O(@(ORROOT_""""_ORFROM_""""_","_ORIEN_")")) Q:'ORIEN  D  Q:ORI=ORCNT<br/> ..S ORI=ORI+1                             ; Increment counter.<br/> ..;<br/> ..; Assign return array:<br/> ..S Y(ORI)=@(ORROOT_""""_ORFROM_""""_","_ORIEN_")")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

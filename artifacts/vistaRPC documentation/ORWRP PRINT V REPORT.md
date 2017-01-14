@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP PRINT V REPORT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP PRINT V REPORT{:/}
@@ -35,18 +37,4 @@ title: VISTA RPC documentation
  Method comment | Print data for remote sites
  First comment | {::nomarkdown}RPC: ORWRP PRINT V REPORT{:/}
  Input parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORHEAD<br/>ORRPT{:/}
- Code | ```  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG
- S ZTIO=ORIO,ZTDTH=$H
- S ZTDESC="Remote V Report Print"
- S ZTRTN="GETVTYPE^ORWRPP1"
- F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""
- D ^%ZTLOAD
- I $D(ZTSK) D
- . S ORY="0^Report queued. (Task #"_ZTSK_")"
- E  D
- . S ORY="99^Task Rejected."```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="Remote V Report Print"<br/> S ZTRTN="GETVTYPE^ORWRPP1"<br/> F I="ORDFN","ORHEAD","ORRPT(" S ZTSAVE(I)=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

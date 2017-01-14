@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV SET DGW CONFIG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV SET DGW CONFIG{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}POSTOFFICE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} |  | {::nomarkdown}POST OFFICE SERVER{:/} | 
 | {::nomarkdown}POSTPORT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} |  | {::nomarkdown}POST OFFICE EMAIL PORT{:/} | 
 | {::nomarkdown}IMPORTER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} |  | {::nomarkdown}Indicator to determine if DGW is using the IMPORTER.Contents are YES or NO.{:/} | 
-| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} |  | {::nomarkdown}DICOM GATEWAY LOCATION CODE(Site Location/Station number){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} |  | {::nomarkdown}DICOM GATEWAY LOCATION CODE(Site Location/Station number){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

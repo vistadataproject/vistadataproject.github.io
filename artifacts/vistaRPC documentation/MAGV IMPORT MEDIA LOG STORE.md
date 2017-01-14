@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV IMPORT MEDIA LOG STORE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV IMPORT MEDIA LOG STORE{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGVWKST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Computer name of the workstation used for the media import event.{:/} | 
 | {::nomarkdown}MEDTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Media Type used to transport the objects:  Direct Import,  Network Import, Staged Media, DICOM Correct.{:/} | 
 | {::nomarkdown}MEDVALID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Validation status of the media import event:    0 = VALID MEDIA -1 = DICOMDIR MISSING -2 = DICOMDIR INVALID{:/} | 
-| {::nomarkdown}MEDVMSG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}220{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Description of the validation status of the media import event.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MEDVMSG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}220{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Description of the validation status of the media import event.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

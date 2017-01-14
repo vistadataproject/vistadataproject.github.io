@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPD1 GETEAFL 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPD1 GETEAFL{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETEAFL^[ORWTPD1](http://code.osehra.org/dox/Routine_ORWTPD1_source.html)
  Method comment | Get "future days limit" parameter setting for Enc appt selection.
- Code | ```  S Y=$$GET^XPAR("DIV^SYS^PKG^USR","ORQQEAFL ENC APPT FUTURE LIMIT",1,"I")```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S Y=$$GET^XPAR("DIV^SYS^PKG^USR","ORQQEAFL ENC APPT FUTURE LIMIT",1,"I")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

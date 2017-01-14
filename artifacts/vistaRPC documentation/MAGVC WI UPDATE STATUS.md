@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGVC WI UPDATE STATUS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGVC WI UPDATE STATUS{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}WIIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the MAG WORK ITEM file (#2006.941) entry to be modified.{:/} | 
-| {::nomarkdown}STATNEW{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the external form of the new STATUS in the MAG WORK ITEM STATUS file(#2006.9413).{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}STATNEW{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the external form of the new STATUS in the MAG WORK ITEM STATUS file(#2006.9413).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

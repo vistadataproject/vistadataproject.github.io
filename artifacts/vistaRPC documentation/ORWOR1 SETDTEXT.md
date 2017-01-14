@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWOR1 SETDTEXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR1 SETDTEXT{:/}
@@ -26,18 +28,4 @@ title: VISTA RPC documentation
  Method comment | Set Digital Text data into file 100 & return the array
  First comment | {::nomarkdown}ORDER = ORIFN;ACTION<br/>ORDEA = Schedule of Drug (2-5)<br/>ORSIGNER = DUZ of signer{:/}
  Input parameters | {::nomarkdown}ORDER<br/>ORDEA<br/>ORSIGNER{:/}
- Code | ```  N ORSET,IFN,ACT,I
- S Y="-1^Digital Text failed to build",IFN=+ORDER,ACT=$P(ORDER,";",2)
- I '$G(ORDEA) Q
- I '$G(ORSIGNER) S ORSIGNER=DUZ
- D DIGTEXT^ORCSAVE1(IFN,ORDEA,ORSIGNER)
- S Y=0
- I '$G(ORSET) Q
- K ^OR(100,IFN,8,ACT,.2)
- F I=1:1:ORSET S (Y(I),^OR(100,IFN,8,ACT,.2,I,0))=ORSET(I)
- S ^OR(100,IFN,8,ACT,.2,0)="^^"_ORSET_"^"_ORSET_"^"_DT_"^",Y=ORSET```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N ORSET,IFN,ACT,I<br/> S Y="-1^Digital Text failed to build",IFN=+ORDER,ACT=$P(ORDER,";",2)<br/> I '$G(ORDEA) Q<br/> I '$G(ORSIGNER) S ORSIGNER=DUZ<br/> D DIGTEXT^ORCSAVE1(IFN,ORDEA,ORSIGNER)<br/> S Y=0<br/> I '$G(ORSET) Q<br/> K ^OR(100,IFN,8,ACT,.2)<br/> F I=1:1:ORSET S (Y(I),^OR(100,IFN,8,ACT,.2,I,0))=ORSET(I)<br/> S ^OR(100,IFN,8,ACT,.2,0)="^^"_ORSET_"^"_ORSET_"^"_DT_"^",Y=ORSET```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

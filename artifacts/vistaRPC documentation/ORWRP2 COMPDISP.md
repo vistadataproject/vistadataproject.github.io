@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWRP2 COMPDISP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP2 COMPDISP{:/}
@@ -24,14 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | COMPDISP^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get ADHOD sub components listed by Display Name
- Code | ```  N I,X,X1,X2,X3
- D COMP^GMTSADH5(.ORY)
- S I=0
- F  S I=$O(ORY(I)) Q:'I  S X=ORY(I) D
- . S X1=$P($P(X,"^",2),"["),X1=$E(X1,1,$L(X1)-1),X2=$P($P(X,"^",2),"[",2),X2=$E(X2,1,$L(X2)-1)
- . S X3=$P(X,"^",5)_"   ["_X2_"]",$P(ORY(I),"^",2)=X3```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,X,X1,X2,X3<br/> D COMP^GMTSADH5(.ORY)<br/> S I=0<br/> F  S I=$O(ORY(I)) Q:'I  S X=ORY(I) D<br/> . S X1=$P($P(X,"^",2),"["),X1=$E(X1,1,$L(X1)-1),X2=$P($P(X,"^",2),"[",2),X2=$E(X2,1,$L(X2)-1)<br/> . S X3=$P(X,"^",5)_"   ["_X2_"]",$P(ORY(I),"^",2)=X3```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

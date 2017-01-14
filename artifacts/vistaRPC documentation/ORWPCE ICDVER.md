@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPCE ICDVER 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE ICDVER{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | ICDVER^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Get ICD codeset version (i.e., ICD-9-CM or ICD-10-CM)
  Input parameters | {::nomarkdown}ORDT{:/}
- Code | ```  S ORDT=+$G(ORDT) S:'ORDT ORDT=DT
- S RESULT="ICD^ICD-9-CM"
- G:'$L($T(IMPDATE^LEXU)) ICDVERX
- I +$$IMPDATE^LEXU("10D")'>ORDT S RESULT="10D^ICD-10-CM"```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S ORDT=+$G(ORDT) S:'ORDT ORDT=DT<br/> S RESULT="ICD^ICD-9-CM"<br/> G:'$L($T(IMPDATE^LEXU)) ICDVERX<br/> I +$$IMPDATE^LEXU("10D")'>ORDT S RESULT="10D^ICD-10-CM"```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

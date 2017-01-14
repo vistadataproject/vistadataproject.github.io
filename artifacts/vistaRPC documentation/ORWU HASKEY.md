@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU HASKEY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU HASKEY{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | HASKEY^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns TRUE if the user possesses the security key
  Input parameters | {::nomarkdown}KEY{:/}
- Code | ```  S VAL=''$D(^XUSEC(KEY,DUZ))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=''$D(^XUSEC(KEY,DUZ))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

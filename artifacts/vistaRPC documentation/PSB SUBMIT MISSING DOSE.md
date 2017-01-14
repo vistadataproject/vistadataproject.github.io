@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PSB SUBMIT MISSING DOSE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PSB SUBMIT MISSING DOSE{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBON{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Order Number{:/} | 
 | {::nomarkdown}PSBSCHD{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Medication Schedule.{:/} | 
 | {::nomarkdown}PSBCLIN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Clinic Name{:/} | 
-| {::nomarkdown}PSBCLNIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Clinic pointer to the HOSPITAL LOCATION file (#44) for a clinic submitting a missing dose request.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}PSBCLNIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Clinic pointer to the HOSPITAL LOCATION file (#44) for a clinic submitting a missing dose request.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

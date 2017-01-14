@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWPT DFLTSRC 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT DFLTSRC{:/}
@@ -24,10 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DFLTSRC^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | return default patient list source (T, W, C, P, S)
- Code | ```  N SRV S SRV=+$G(^VA(200,DUZ,5))
- S VAL=$$GET^XPAR("ALL^SRV.`"_SRV,"ORLP DEFAULT LIST SOURCE")```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N SRV S SRV=+$G(^VA(200,DUZ,5))<br/> S VAL=$$GET^XPAR("ALL^SRV.`"_SRV,"ORLP DEFAULT LIST SOURCE")```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

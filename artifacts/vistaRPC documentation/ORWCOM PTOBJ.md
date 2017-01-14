@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCOM PTOBJ 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCOM PTOBJ{:/}
@@ -24,9 +26,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PTOBJ^[ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
  Method comment | Returns Patient COM Object
- Code | ```  D GETOBJ(.ORY,"ORWCOM PATIENT SELECTED",1)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D GETOBJ(.ORY,"ORWCOM PATIENT SELECTED",1)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

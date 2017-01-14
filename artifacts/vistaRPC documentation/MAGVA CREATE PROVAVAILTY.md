@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGVA CREATE PROVAVAILTY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGVA CREATE PROVAVAILTY{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}    MAGPARAM(\STORAGE PROVIDER\)      = A pointer to STORAGE PROVIDER file (#2006.917)    MAGPARAM(\SOURCE PLACE\)  = A pointer to IMAGING SITE PARAMETERS file (#2006.1)    MAGPARAM(\START TIME\)    =  DateTime in IDF format (YYYYMMDD.HHMMSS)    MAGPARAM(\END TIME\)      = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}    MAGPARAM(\STORAGE PROVIDER\)      = A pointer to STORAGE PROVIDER file (#2006.917)    MAGPARAM(\SOURCE PLACE\)  = A pointer to IMAGING SITE PARAMETERS file (#2006.1)    MAGPARAM(\START TIME\)    =  DateTime in IDF format (YYYYMMDD.HHMMSS)    MAGPARAM(\END TIME\)      = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

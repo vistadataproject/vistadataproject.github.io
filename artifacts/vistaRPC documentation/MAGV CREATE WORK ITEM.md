@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGV CREATE WORK ITEM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGV CREATE WORK ITEM{:/}
@@ -28,9 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PRIORITY{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the numeric priority given to a work item.{:/} | 
 | {::nomarkdown}MSGTAGS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is an array of tag names and values assigned to a work item. Tagnames and values may be used to look up a work item.{:/} | 
 | {::nomarkdown}CRTUSER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the user that created the work item.{:/} | 
-| {::nomarkdown}CRTAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the application that created the work item.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}CRTAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the application that created the work item.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

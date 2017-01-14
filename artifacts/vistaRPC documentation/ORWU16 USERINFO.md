@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWU16 USERINFO 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU16 USERINFO{:/}
@@ -25,11 +27,4 @@ title: VISTA RPC documentation
  Method | USERINFO^[ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
  Method comment | procedure
  First comment | {::nomarkdown}return DUZ^NAME^SIGNAUTH^ISPROVIDER for the current user<br/>I DUZ=1085 S DUZ=1298           ; CHANGE ID **** DON'T EXPORT ****{:/}
- Code | ```  S Y=DUZ_U_$P(^VA(200,DUZ,0),U,1)
- S $P(Y,U,3)=$S($D(^XUSEC("ORES",DUZ)):3,$D(^XUSEC("ORELSE",DUZ)):2,$D(^XUSEC("OREMAS",DUZ)):1,1:0)
- S $P(Y,U,4)=$D(^XUSEC("PROVIDER",DUZ))#10```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S Y=DUZ_U_$P(^VA(200,DUZ,0),U,1)<br/> S $P(Y,U,3)=$S($D(^XUSEC("ORES",DUZ)):3,$D(^XUSEC("ORELSE",DUZ)):2,$D(^XUSEC("OREMAS",DUZ)):1,1:0)<br/> S $P(Y,U,4)=$D(^XUSEC("PROVIDER",DUZ))#10```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDBA7 GETIEN9 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA7 GETIEN9{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | GETIEN9^[ORWDBA7](http://code.osehra.org/dox/Routine_ORWDBA7_source.html)
  Method comment | Return IEN for an ICD9 code (RPC: ORWDBA7 GETIEN9)
  Input parameters | {::nomarkdown}ICD9{:/}
- Code | ```  S Y=+$$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  S Y=+$$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

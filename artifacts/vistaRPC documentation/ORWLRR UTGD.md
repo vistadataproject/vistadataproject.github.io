@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWLRR UTGD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLRR UTGD{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | UTGD^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
  Input parameters | {::nomarkdown}TGRP{:/}
- Code | ```  D UTGD^LR7OGO(.ORY,TGRP)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D UTGD^LR7OGO(.ORY,TGRP)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

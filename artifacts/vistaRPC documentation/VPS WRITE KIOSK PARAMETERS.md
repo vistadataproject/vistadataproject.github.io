@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; VPS WRITE KIOSK PARAMETERS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}VPS WRITE KIOSK PARAMETERS{:/}
@@ -23,9 +25,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PARAMNAM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}When An Administrator of VetLink Kiosk system made anyconfiguration changes, the changes were made against this Kiosk Group or Clinic{:/} | 
 | {::nomarkdown}PARAMETERS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}A subscripted array that represents the list of parameter changes to the VetLink's Kiosk Configuration.Each element in the subscripted array is constructed as:PARAMETERS(n) = field label^field value        where   n           : an incremental number that acts as an index                field label : the name of VistA Field Name                field value : the parameter value to be stored in VistA{:/} | 
-| {::nomarkdown}PARAMTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains either 'K' for KIOSK GROUP or 'C' for CLINIC.{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}PARAMTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains either 'K' for KIOSK GROUP or 'C' for CLINIC.{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

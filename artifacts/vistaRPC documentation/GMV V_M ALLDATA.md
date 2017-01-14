@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; GMV V_M ALLDATA 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV V_M ALLDATA{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}GMVDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMVDATA consists of 4 pieces of data:  piece1^piece2^piece3^piece4  where piece1 = File 2 IEN (i.e., DFN)       piece2 = Start date/time for search (FileMan internal format)       piece3 = End date/time for search (FileMan internal format)       piece4 = 0 (zero){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}GMVDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMVDATA consists of 4 pieces of data:  piece1^piece2^piece3^piece4  where piece1 = File 2 IEN (i.e., DFN)       piece2 = Start date/time for search (FileMan internal format)       piece3 = End date/time for search (FileMan internal format)       piece4 = 0 (zero){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

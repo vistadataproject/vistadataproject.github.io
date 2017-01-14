@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET ITEMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE SET ITEMS{:/}
@@ -33,15 +35,4 @@ title: VISTA RPC documentation
  Method comment | Change ITEMs of a group, class, or root
  First comment | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
  Input parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
- Code | ```  N TIUI S TIUI=0
- D CLRITMS(TIUDA) ; Remove ITEMS
- F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D
- . N TIUITEM,TIUSUCC
- . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI
- . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)
- . S SUCCESS(TIUI)=TIUSUCC```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N TIUI S TIUI=0<br/> D CLRITMS(TIUDA) ; Remove ITEMS<br/> F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D<br/> . N TIUITEM,TIUSUCC<br/> . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI<br/> . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)<br/> . S SUCCESS(TIUI)=TIUSUCC```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

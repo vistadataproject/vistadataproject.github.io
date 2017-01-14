@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWTPP SAVECS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SAVECS{:/}
@@ -26,9 +28,4 @@ title: VISTA RPC documentation
  Method comment | RPC
  First comment | {::nomarkdown}save current user's date range defaults{:/}
  Input parameters | {::nomarkdown}INFO{:/}
- Code | ```  D SAVECS^ORWTPO(.OK,INFO,DUZ)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D SAVECS^ORWTPO(.OK,INFO,DUZ)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

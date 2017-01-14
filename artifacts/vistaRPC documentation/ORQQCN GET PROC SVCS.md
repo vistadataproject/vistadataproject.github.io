@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC SVCS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN GET PROC SVCS{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | PROCSVCS^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return a list of services for a procedure
  Input parameters | {::nomarkdown}ORDITM{:/}
- Code | ```  N PROCIEN
- S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)
- D GETSVC^GMRCPR0(.ORY,PROCIEN)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N PROCIEN<br/> S PROCIEN=$P($G(^ORD(101.43,ORDITM,0)),U,2)<br/> D GETSVC^GMRCPR0(.ORY,PROCIEN)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

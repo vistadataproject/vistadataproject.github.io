@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN2 GET PREREQUISITE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN2 GET PREREQUISITE{:/}
@@ -32,12 +34,4 @@ title: VISTA RPC documentation
  Method | PREREQ^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Returns prequisites for ordering
  Input parameters | {::nomarkdown}ORSVC<br/>ORDFN{:/}
- Code | ```  Q:(+$G(ORSVC)=0)!(+$G(ORDFN)=0)
- S ORY=$NA(^TMP("ORPREREQ",$J))
- D PREREQ^GMRCUTL1(.ORY,ORSVC,ORDFN,0)  ;0=RESOLVE OBJECTS
- K @ORY@(0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:(+$G(ORSVC)=0)!(+$G(ORDFN)=0)<br/> S ORY=$NA(^TMP("ORPREREQ",$J))<br/> D PREREQ^GMRCUTL1(.ORY,ORSVC,ORDFN,0)  ;0=RESOLVE OBJECTS<br/> K @ORY@(0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX DGRP 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX DGRP{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | DGRP^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Display grp pointer for a dlg
  Input parameters | {::nomarkdown}DLG{:/}
- Code | ```  S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm
- S VAL=$P($G(^ORD(101.41,DLG,0)),U,5)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm<br/> S VAL=$P($G(^ORD(101.41,DLG,0)),U,5)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

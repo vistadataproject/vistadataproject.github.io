@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; TIU FIELD LOAD 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD LOAD{:/}
@@ -31,12 +33,4 @@ title: VISTA RPC documentation
  Method | LOAD^[TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
  Method comment | Load Template Field by Name
  Input parameters | {::nomarkdown}FLD{:/}
- Code | ```  N FLDIEN S FLDIEN=""
- Q:$G(FLD)']""
- D GETFLD(.TIUY,FLD,0,.FLDIEN)
- I +FLDIEN S TIUY(.05)=FLDIEN```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N FLDIEN S FLDIEN=""<br/> Q:$G(FLD)']""<br/> D GETFLD(.TIUY,FLD,0,.FLDIEN)<br/> I +FLDIEN S TIUY(.05)=FLDIEN```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

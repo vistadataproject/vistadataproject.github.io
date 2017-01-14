@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGVA CREATE QUEUE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGVA CREATE QUEUE{:/}
@@ -21,9 +23,4 @@ title: VISTA RPC documentation
 
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
-| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\NAME\) MAGPARAM(\ACTIVE\) = 0/1 MAGPARAM(\QUEUE TYPE\) MAGPARAM(\NUM RETRIES\) MAGPARAM(\RETRY DELAY IN SECONDS\) MAGPARAM(\TRIGGER DELAY IN SECONDS\){:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\NAME\) MAGPARAM(\ACTIVE\) = 0/1 MAGPARAM(\QUEUE TYPE\) MAGPARAM(\NUM RETRIES\) MAGPARAM(\RETRY DELAY IN SECONDS\) MAGPARAM(\TRIGGER DELAY IN SECONDS\){:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

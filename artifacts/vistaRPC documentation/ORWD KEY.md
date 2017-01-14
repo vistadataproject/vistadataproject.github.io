@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWD KEY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD KEY{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | KEY^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Returns 1 if user possesses the key
  Input parameters | {::nomarkdown}KEYNAME<br/>USERID{:/}
- Code | ```  S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

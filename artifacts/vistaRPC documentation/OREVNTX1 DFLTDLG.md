@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTDLG 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 DFLTDLG{:/}
@@ -25,12 +27,4 @@ title: VISTA RPC documentation
  Method | DFLTDLG^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return event default dialog IEN
  Input parameters | {::nomarkdown}EVTID{:/}
- Code | ```  S ORY=0
- S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)
- Q:'$D(^ORD(100.5,+EVTID,0))
- S ORY=$P(^ORD(100.5,+EVTID,0),U,4)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S ORY=0<br/> S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)<br/> Q:'$D(^ORD(100.5,+EVTID,0))<br/> S ORY=$P(^ORD(100.5,+EVTID,0),U,4)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

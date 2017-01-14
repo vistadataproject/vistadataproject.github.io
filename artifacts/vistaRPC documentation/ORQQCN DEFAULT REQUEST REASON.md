@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN DEFAULT REQUEST REASON 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN DEFAULT REQUEST REASON{:/}
@@ -34,14 +36,4 @@ title: VISTA RPC documentation
  Method comment | Return default reason for request for service
  First comment | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
  Input parameters | {::nomarkdown}ORSVC<br/>ORDFN<br/>RESOLVE{:/}
- Code | ```  Q:+$G(ORSVC)=0
- I +RESOLVE,(+$G(ORDFN)=0) Q
- S ORY=$NA(^TMP("ORREQ",$J))
- S:$G(RESOLVE)="" RESOLVE=0
- D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)
- K @ORY@(0)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:+$G(ORSVC)=0<br/> I +RESOLVE,(+$G(ORDFN)=0) Q<br/> S ORY=$NA(^TMP("ORREQ",$J))<br/> S:$G(RESOLVE)="" RESOLVE=0<br/> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br/> K @ORY@(0)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

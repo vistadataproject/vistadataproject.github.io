@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; XUS PKI SET UPN 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS PKI SET UPN{:/}
@@ -31,11 +33,4 @@ title: VISTA RPC documentation
  Method | SETUPN^[XUSER2](http://code.osehra.org/dox/Routine_XUSER2_source.html)
  Method comment | Set the SUBJECT ALTERNATIVE NAME from the PIV card. -p580
  Input parameters | {::nomarkdown}V{:/}
- Code | ```  N FDA,ERR
- S RET=0,FDA(200,DUZ_",",501.2)=V
- D FILE^DIE("KE","FDA","ERR") I '$D(ERR) S RET=1```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  N FDA,ERR<br/> S RET=0,FDA(200,DUZ_",",501.2)=V<br/> D FILE^DIE("KE","FDA","ERR") I '$D(ERR) S RET=1```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

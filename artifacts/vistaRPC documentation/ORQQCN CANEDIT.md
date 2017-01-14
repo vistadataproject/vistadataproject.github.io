@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN CANEDIT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN CANEDIT{:/}
@@ -31,9 +33,4 @@ title: VISTA RPC documentation
  Method | CANEDIT^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Return whether consult can be edited and resubmitted
  Input parameters | {::nomarkdown}GMRCO{:/}
- Code | ```  S Y=$$EDRESOK^GMRCEDT2(GMRCO)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S Y=$$EDRESOK^GMRCEDT2(GMRCO)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

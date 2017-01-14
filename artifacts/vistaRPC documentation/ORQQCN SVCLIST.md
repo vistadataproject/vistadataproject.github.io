@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQCN SVCLIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN SVCLIST{:/}
@@ -33,16 +35,4 @@ title: VISTA RPC documentation
  Method comment | Return a set of consult services in long list format
  First comment | {::nomarkdown}.ORY=returned list, FROM=text to $O from, DIR=$O direction,{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR
- S I=0,CNT=44,ORSVC=""
- D SVCTREE^ORQQCN2(.Y,1)
- F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D
- . S ORTMP(ORSVC)=Y(I)
- F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D
- . S ORSTR=ORTMP(FROM)
- . S ORY(I)=ORSTR```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br/> S I=0,CNT=44,ORSVC=""<br/> D SVCTREE^ORQQCN2(.Y,1)<br/> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br/> . S ORTMP(ORSVC)=Y(I)<br/> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br/> . S ORSTR=ORTMP(FROM)<br/> . S ORY(I)=ORSTR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

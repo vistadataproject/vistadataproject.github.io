@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWGRPC ALLITEMS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC ALLITEMS{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | ALLITEMS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all items of data on patient (procedures, tests, codes,..)
  Input parameters | {::nomarkdown}DFN{:/}
- Code | ```  D ALLITEMS^ORWGAPI("ORWGRPC",DFN)
- S ITEMS=$NA(^TMP("ORWGRPC",$J))```
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+ Code | ```  D ALLITEMS^ORWGAPI("ORWGRPC",DFN)<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

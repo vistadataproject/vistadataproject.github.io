@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDXA FLAGTXT 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA FLAGTXT{:/}
@@ -25,12 +27,4 @@ title: VISTA RPC documentation
  Method | FLAGTXT^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | flag reason
  Input parameters | {::nomarkdown}ORID{:/}
- Code | ```  N FLAG
- S FLAG=$G(^OR(100,+ORID,8,$P(ORID,";",2),3))
- S LST(1)="FLAGGED: "_$$FMTE^XLFDT($P(FLAG,U,3))_" by "_$P($G(^VA(200,+$P(FLAG,U,4),0)),U)
- S LST(2)=$P(FLAG,U,5) ; reason```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N FLAG<br/> S FLAG=$G(^OR(100,+ORID,8,$P(ORID,";",2),3))<br/> S LST(1)="FLAGGED: "_$$FMTE^XLFDT($P(FLAG,U,3))_" by "_$P($G(^VA(200,+$P(FLAG,U,4),0)),U)<br/> S LST(2)=$P(FLAG,U,5) ; reason```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

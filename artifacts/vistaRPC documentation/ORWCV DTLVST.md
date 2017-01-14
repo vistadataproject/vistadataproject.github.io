@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWCV DTLVST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCV DTLVST{:/}
@@ -25,21 +27,4 @@ title: VISTA RPC documentation
  Method | DTLVST^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  Method comment | return progress notes / discharge summary
  Input parameters | {::nomarkdown}DFN<br/>IEN<br/>APPTINFO{:/}
- Code | ```  N VISIT
- I $P(APPTINFO,";")="A" D  Q
- . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)
- I $P(APPTINFO,";")="V" D  Q
- . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)
- I $P(APPTINFO,";")="I" D  Q
- . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))
- . D DETSUM^ORQQVS(.RPT,DFN,VISIT)
- . K ^TMP("PXKENC",$J)
- I $P(APPTINFO,";")="R" D RCDTL^SDRROR```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N VISIT<br/> I $P(APPTINFO,";")="A" D  Q<br/> . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="V" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br/> I $P(APPTINFO,";")="I" D  Q<br/> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br/> . D DETSUM^ORQQVS(.RPT,DFN,VISIT)<br/> . K ^TMP("PXKENC",$J)<br/> I $P(APPTINFO,";")="R" D RCDTL^SDRROR```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

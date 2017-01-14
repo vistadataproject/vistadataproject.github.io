@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAGGSUR FILE 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAGGSUR FILE{:/}
@@ -22,9 +24,4 @@ title: VISTA RPC documentation
 | input parameter | parameter type | maximum data length | required | description | 
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Image file internal number.  ^MAG(2005,{:/} | 
-| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Sting of '^' delimited pieces.it is the same data that is set into the list ofsurgery cases when image application asks for list of patients cases.        ; for Imaging Versions < 2.5 the data is        ; #     DATE             DESC      SRF(IEN   FM DATE        ;CNT_U_(READABLE DATE)_U_SROPS(1)_U_SROP_U_SRSDATE        ;        ; for Imaging Versions > 2.4, the data is different        ;CNT_U_(READABLE DATE)_U_SROPS(1)_U_IMAGECT_U_\\_SROP_U_SRSDATE{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+| {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Sting of '^' delimited pieces.it is the same data that is set into the list ofsurgery cases when image application asks for list of patients cases.        ; for Imaging Versions < 2.5 the data is        ; #     DATE             DESC      SRF(IEN   FM DATE        ;CNT_U_(READABLE DATE)_U_SROPS(1)_U_SROP_U_SRSDATE        ;        ; for Imaging Versions > 2.4, the data is different        ;CNT_U_(READABLE DATE)_U_SROPS(1)_U_IMAGECT_U_\\_SROP_U_SRSDATE{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

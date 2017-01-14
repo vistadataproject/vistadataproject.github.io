@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM MENTAL HEALTH RESULTS 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM MENTAL HEALTH RESULTS{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method | MHR^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  First comment | {::nomarkdown}DBIA 3080{:/}
  Input parameters | {::nomarkdown}RESULT<br/>ORES{:/}
- Code | ```  D MHR^PXRMRPCC(.ORY,RESULT,.ORES)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D MHR^PXRMRPCC(.ORY,RESULT,.ORES)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

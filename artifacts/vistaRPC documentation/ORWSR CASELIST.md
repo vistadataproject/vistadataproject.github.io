@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWSR CASELIST 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWSR CASELIST{:/}
@@ -31,16 +33,4 @@ title: VISTA RPC documentation
  Method | CASELIST^[ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
  Method comment | retrieve list of cases, but no documents
  Input parameters | {::nomarkdown}ORDFN{:/}
- Code | ```  Q:'$$PATCH^XPDUTL("SR*3.0*100")
- Q:'+ORDFN
- N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0
- S ORY=$NA(^TMP("ORLIST",$J))
- D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)
- S I=0
- F  S I=$O(@ORY@(I)) Q:+I=0  D
- . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$$PATCH^XPDUTL("SR*3.0*100")<br/> Q:'+ORDFN<br/> N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0<br/> S ORY=$NA(^TMP("ORLIST",$J))<br/> D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)<br/> S I=0<br/> F  S I=$O(@ORY@(I)) Q:+I=0  D<br/> . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

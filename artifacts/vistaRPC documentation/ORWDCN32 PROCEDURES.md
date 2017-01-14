@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDCN32 PROCEDURES 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDCN32 PROCEDURES{:/}
@@ -33,19 +35,4 @@ title: VISTA RPC documentation
  Method comment | Return a subset of orderable procedures
  First comment | {::nomarkdown}.Return Array, Starting Text, Direction<br/>^ORD(101.43,"S.PROC",UpperCase,DA)=Mne^MixedCase^InactvDt^.01IfMne<br/>Y(n)=IEN^.01 Name^.01 Name  -or-  IEN^Synonym <.01 Name>^.01 Name{:/}
  Input parameters | {::nomarkdown}FROM<br/>DIR{:/}
- Code | ```  N I,IEN,CNT,X,DTXT,ORID,ORSVCCNT S I=0,CNT=44
- F  Q:I'<CNT  S FROM=$O(^ORD(101.43,"S.PROC",FROM),DIR) Q:FROM=""  D
- . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.PROC",FROM,IEN)) Q:'IEN  D
- . . S X=^ORD(101.43,"S.PROC",FROM,IEN)
- . . I +$P(X,U,3),$P(X,U,3)<$$NOW^XLFDT Q  ;ICR 10103
- . . S ORID=$P($G(^ORD(101.43,IEN,0)),U,2)
- . . ;I $P($G(^ORD(101,ORIEN,0)),U,3)'="" Q   ; Removed for v14
- . . D GETSVC^GMRCPR0(.ORSVCCNT,ORID) Q:+ORSVCCNT=0  ;ICR 2982
- . . S I=I+1
- . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)_U_ORID
- . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4)_U_ORID```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  N I,IEN,CNT,X,DTXT,ORID,ORSVCCNT S I=0,CNT=44<br/> F  Q:I'<CNT  S FROM=$O(^ORD(101.43,"S.PROC",FROM),DIR) Q:FROM=""  D<br/> . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.PROC",FROM,IEN)) Q:'IEN  D<br/> . . S X=^ORD(101.43,"S.PROC",FROM,IEN)<br/> . . I +$P(X,U,3),$P(X,U,3)<$$NOW^XLFDT Q  ;ICR 10103<br/> . . S ORID=$P($G(^ORD(101.43,IEN,0)),U,2)<br/> . . ;I $P($G(^ORD(101,ORIEN,0)),U,3)'="" Q   ; Removed for v14<br/> . . D GETSVC^GMRCPR0(.ORSVCCNT,ORID) Q:+ORSVCCNT=0  ;ICR 2982<br/> . . S I=I+1<br/> . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)_U_ORID<br/> . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4)_U_ORID```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

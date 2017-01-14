@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; OREVNTX1 NAME 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 NAME{:/}
@@ -25,10 +27,4 @@ title: VISTA RPC documentation
  Method | NAME^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Event name from #100.5, given PTEVT ptr #100.2
  Input parameters | {::nomarkdown}PTEVT{:/}
- Code | ```  I PTEVT'>0 S ORY="" Q
- S ORY=$$NAME^OREVNTX(PTEVT)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  I PTEVT'>0 S ORY="" Q<br/> S ORY=$$NAME^OREVNTX(PTEVT)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

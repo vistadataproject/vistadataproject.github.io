@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWDX DGNM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX DGNM{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
  Method | DGNM^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Display grp pointer for name
  Input parameters | {::nomarkdown}NM{:/}
- Code | ```  S VAL=$O(^ORD(100.98,"B",NM,0))```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  S VAL=$O(^ORD(100.98,"B",NM,0))```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

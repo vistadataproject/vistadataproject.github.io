@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORWD1 PARAM 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD1 PARAM{:/}
@@ -32,10 +34,4 @@ title: VISTA RPC documentation
  Method comment | Returns in 'Y' the print parameters
  First comment | {::nomarkdown}Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device<br/>Device Params returned in internal;external format, the rest are internal<br/>CC=Chart Copy<br/>L=Label<br/>R=Requisitions<br/>WC=Work Copy<br/>'Prompt for' values (internal):<br/>0 for no prompts- chart copy is automatically generated.<br/>1 to prompt for chart copy and ask which printer should be used.<br/>2 to prompt for chart copy and automatically print to the<br/>printer defined in the CHART COPY PRINT DEVICE field.<br/>* don't print.<br/>LOC=Ptr to location ^SC(LOC,{:/}
  Input parameters | {::nomarkdown}LOC{:/}
- Code | ```  Q:'$G(LOC)
- S Y=$$BLDIT(LOC)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  Q:'$G(LOC)<br/> S Y=$$BLDIT(LOC)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

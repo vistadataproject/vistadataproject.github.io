@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; MAG CFIND QUERY 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}MAG CFIND QUERY{:/}
@@ -25,9 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}RESULT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer number thatidentifies a Result-Set. The value of this parameter is either 0 (when a newresult-set is to be created) or equal to the internalentry number of an existing result-set.{:/} | 
 | {::nomarkdown}OFFSET{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer number.When the value of this number is equal to 0,the RPC will either create a new result-set,(when the value of RESULT is also equal to 0),or else check whether TaskMan has finished buildingthe result-set, and if so, return the first batch ofresults. When the value of this number is greater than 0,the RPC will return the next batch of results, startingfrom the one indicated by the value of this parameter. When the value of this number is less than 0,the RPC will clean up the result-set.{:/} | 
 | {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer number.This value indicates the number of results to be returnedin each call to this RPC.{:/} | 
-| {::nomarkdown}AENAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}127{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the DICOM Application Entity performing the query. It may be mapped to an entry on the DICOM AE SECURITY MATRIX file (#2006.9192).{:/} | 
-
-
-
-
- Generated on January 14th 2017, 7:26:36 am
+| {::nomarkdown}AENAME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}127{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the DICOM Application Entity performing the query. It may be mapped to an entry on the DICOM AE SECURITY MATRIX file (#2006.9192).{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:25 am</p>{:/}

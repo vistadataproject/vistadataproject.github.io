@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER EVALUATION 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM REMINDER EVALUATION{:/}
@@ -32,9 +34,4 @@ title: VISTA RPC documentation
  Method | ALIST^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Method comment | DBIA 3078
  First comment | {::nomarkdown}ORQQPXRM REMINDERS APPLICABLE{:/}
- Input parameters | {::nomarkdown}ORPT<br/>ORLIST{:/}
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Input parameters | {::nomarkdown}ORPT<br/>ORLIST{:/}{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}

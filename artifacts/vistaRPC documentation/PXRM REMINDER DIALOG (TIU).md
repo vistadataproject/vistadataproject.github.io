@@ -8,7 +8,9 @@ title: VISTA RPC documentation
 # [RPCs](TableOfContent.md) &#8594; PXRM REMINDER DIALOG (TIU) 
 
 
- ## VISTA File 8994
+ ## VISTA File 8994 
+
+
  property | value 
 --- | --- 
  label | {::nomarkdown}PXRM REMINDER DIALOG (TIU){:/}
@@ -30,11 +32,4 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TDIALOG^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Input parameters | {::nomarkdown}ORDLG<br/>DFN{:/}
- Code | ```  D DIALOG^PXRMRPCD(.ORY,ORDLG,DFN)
- I $P($G(ORY(1)),U)=-1 Q
- S ORY(0)=0_U_+$P($G(^PXRMD(801.41,ORDLG,0)),U,17)```
-
-
-
-
- Generated on January 14th 2017, 7:26:35 am
+ Code | ```  D DIALOG^PXRMRPCD(.ORY,ORDLG,DFN)<br/> I $P($G(ORY(1)),U)=-1 Q<br/> S ORY(0)=0_U_+$P($G(^PXRMD(801.41,ORDLG,0)),U,17)```{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:36:24 am</p>{:/}
