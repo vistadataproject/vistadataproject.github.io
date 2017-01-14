@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; GMV LATEST VM 
+# [RPCs](TableOfContent.md) &#8594; GMV LATEST VM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV LATEST VM{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This remote procedure call retrieves the latest vital records for a givenpatient. This remote procedure call is documented in Integration Agreement 4358.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | GMV LATEST VM [RPC entry point]
- Input Parameters | {::nomarkdown}GMRDFN{:/}
- Lines | {::nomarkdown} K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)<br/> S RESULT=$NA(^TMP($J,"GRPC")){:/}
- Leading comment lines | {::nomarkdown}RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/>IN RESULT ARRAY.{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}GMRDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}GMRDFN variable is a pointer to the Patient (#2) file (i.e., DFN).{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GETLAT^[GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
+ Method comment | GMV LATEST VM [RPC entry point]
+ First comment | {::nomarkdown}RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/>IN RESULT ARRAY.{:/}
+ Input parameters | {::nomarkdown}GMRDFN{:/}
+ Code | ```  K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)
+ S RESULT=$NA(^TMP($J,"GRPC"))```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

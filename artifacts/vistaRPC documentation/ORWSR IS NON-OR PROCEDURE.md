@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWSR IS NON-OR PROCEDURE 
+# [RPCs](TableOfContent.md) &#8594; ORWSR IS NON-OR PROCEDURE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWSR IS NON-OR PROCEDURE{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Is the procedure a non-OR procedure?
- Input Parameters | {::nomarkdown}ORCASE{:/}
- Lines | {::nomarkdown} I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q<br/> S ORY=$$NON^SROESTV(+ORCASE){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}CASE IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ISNONOR^[ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
+ Method comment | Is the procedure a non-OR procedure?
+ Input parameters | {::nomarkdown}ORCASE{:/}
+ Code | ```  I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q
+ S ORY=$$NON^SROESTV(+ORCASE)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

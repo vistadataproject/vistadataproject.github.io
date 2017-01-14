@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 WRLSTED 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 WRLSTED 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 WRLSTED{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | WRLSTED^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return list of dialogs for writing event delayed orders
- Input Parameters | {::nomarkdown}LOC<br/>EVTID{:/}
- Leading comment lines | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
+ First comment | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
+ Input parameters | {::nomarkdown}LOC<br/>EVTID{:/}
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

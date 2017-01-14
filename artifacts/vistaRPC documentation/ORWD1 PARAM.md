@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWD1 PARAM 
+# [RPCs](TableOfContent.md) &#8594; ORWD1 PARAM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD1 PARAM{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the prompt and device parameters for Automated order prints{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns in 'Y' the print parameters
- Input Parameters | {::nomarkdown}LOC{:/}
- Lines | {::nomarkdown} Q:'$G(LOC)<br/> S Y=$$BLDIT(LOC){:/}
- Leading comment lines | {::nomarkdown}Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device<br/>Device Params returned in internal;external format, the rest are internal<br/>CC=Chart Copy<br/>L=Label<br/>R=Requisitions<br/>WC=Work Copy<br/>'Prompt for' values (internal):<br/>0 for no prompts- chart copy is automatically generated.<br/>1 to prompt for chart copy and ask which printer should be used.<br/>2 to prompt for chart copy and automatically print to the<br/>printer defined in the CHART COPY PRINT DEVICE field.<br/>* don't print.<br/>LOC=Ptr to location ^SC(LOC,{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pointer to the Hospital location file where the prints are generatedfrom.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | PARAM^[ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
+ Method comment | Returns in 'Y' the print parameters
+ First comment | {::nomarkdown}Y=Prompt for CC^Prompt for L ^Prompt for R ^Prompt for W ^CC device ^L Device ^R Device ^WC device<br/>Device Params returned in internal;external format, the rest are internal<br/>CC=Chart Copy<br/>L=Label<br/>R=Requisitions<br/>WC=Work Copy<br/>'Prompt for' values (internal):<br/>0 for no prompts- chart copy is automatically generated.<br/>1 to prompt for chart copy and ask which printer should be used.<br/>2 to prompt for chart copy and automatically print to the<br/>printer defined in the CHART COPY PRINT DEVICE field.<br/>* don't print.<br/>LOC=Ptr to location ^SC(LOC,{:/}
+ Input parameters | {::nomarkdown}LOC{:/}
+ Code | ```  Q:'$G(LOC)
+ S Y=$$BLDIT(LOC)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWSR GET SURG CONTEXT 
+# [RPCs](TableOfContent.md) &#8594; ORWSR GET SURG CONTEXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWSR GET SURG CONTEXT{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GTSURCTX^[ORWSR](http://code.osehra.org/dox/Routine_ORWSR_source.html)
  Method comment | Returns current Notes view context for user
- Input Parameters | {::nomarkdown}ORUSER{:/}
- Lines | {::nomarkdown} N OCCLIM,SHOWSUB<br/> S Y=$$GET^XPAR("ALL","ORCH CONTEXT SURGERY",1){:/}
+ Input parameters | {::nomarkdown}ORUSER{:/}
+ Code | ```  N OCCLIM,SHOWSUB
+ S Y=$$GET^XPAR("ALL","ORCH CONTEXT SURGERY",1)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

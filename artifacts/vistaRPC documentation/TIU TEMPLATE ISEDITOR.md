@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE ISEDITOR 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE ISEDITOR 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE ISEDITOR{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns TRUE if user is a Template Editor
- Input Parameters | {::nomarkdown}ROOT<br/>USER{:/}
- Lines | {::nomarkdown} N CLASS,TIUERR<br/> S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)<br/> I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"<br/> E  D<br/> .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)<br/> .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR{:/}
 
 ### Input Parameters
 
@@ -32,6 +25,21 @@ title: VISTA RPC documentation
 | {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ISEDITOR^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
+ Method comment | Returns TRUE if user is a Template Editor
+ Input parameters | {::nomarkdown}ROOT<br/>USER{:/}
+ Code | ```  N CLASS,TIUERR
+ S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)
+ I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"
+ E  D
+ .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)
+ .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

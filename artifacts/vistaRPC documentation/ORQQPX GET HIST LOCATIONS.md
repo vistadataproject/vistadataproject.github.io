@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPX GET HIST LOCATIONS 
+# [RPCs](TableOfContent.md) &#8594; ORQQPX GET HIST LOCATIONS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX GET HIST LOCATIONS{:/}
@@ -16,14 +18,26 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of historical locations from the LOCATION file(#9999999.06).{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | HISTLOC^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | Returns a list of historical locations
- Lines | {::nomarkdown} N IDX,PTR,LINE,NAME<br/> K ^TMP("OR",$J,"LOC")<br/> S LST=$NA(^TMP("OR",$J,"LOC"))<br/> S (LINE,IDX)=0<br/> F  S IDX=$O(^AUTTLOC(IDX)) Q:'IDX  D<br/> .S PTR=+$G(^AUTTLOC(IDX,0))<br/> .I +PTR D<br/> ..;S NAME=$P($G(^DIC(4,PTR,0)),U)<br/> ..S NAME=$$GET1^DIQ(4,PTR,.01,"I")<br/> ..I NAME'="" D<br/> ...S LINE=LINE+1<br/> ...S ^TMP("OR",$J,"LOC",LINE)=PTR_U_NAME{:/}
+ Code | ```  N IDX,PTR,LINE,NAME
+ K ^TMP("OR",$J,"LOC")
+ S LST=$NA(^TMP("OR",$J,"LOC"))
+ S (LINE,IDX)=0
+ F  S IDX=$O(^AUTTLOC(IDX)) Q:'IDX  D
+ .S PTR=+$G(^AUTTLOC(IDX,0))
+ .I +PTR D
+ ..;S NAME=$P($G(^DIC(4,PTR,0)),U)
+ ..S NAME=$$GET1^DIQ(4,PTR,.01,"I")
+ ..I NAME'="" D
+ ...S LINE=LINE+1
+ ...S ^TMP("OR",$J,"LOC",LINE)=PTR_U_NAME```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

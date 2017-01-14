@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE1 NONCOUNT 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE1 NONCOUNT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE1 NONCOUNT{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Is a given HOSPITAL LOCATION (file 44) a non-count clinic?  (DBIA #964){:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Is the location a non-count clinic? (DBIA #964)
- Input Parameters | {::nomarkdown}ORLOC{:/}
- Lines | {::nomarkdown} Q:'ORLOC<br/> S ORY=$S($P($G(^SC(ORLOC,0)),U,17)="Y":1,1:0)<br/>{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORLOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Pointer to file 44.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | NONCOUNT^[ORWPCE1](http://code.osehra.org/dox/Routine_ORWPCE1_source.html)
+ Method comment | Is the location a non-count clinic? (DBIA #964)
+ Input parameters | {::nomarkdown}ORLOC{:/}
+ Code | ```  Q:'ORLOC
+ S ORY=$S($P($G(^SC(ORLOC,0)),U,17)="Y":1,1:0)
+```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

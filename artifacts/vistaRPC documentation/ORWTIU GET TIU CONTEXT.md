@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTIU GET TIU CONTEXT 
+# [RPCs](TableOfContent.md) &#8594; ORWTIU GET TIU CONTEXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTIU GET TIU CONTEXT{:/}
@@ -16,15 +18,22 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GTTIUCTX^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Returns current Notes view context for user
- Input Parameters | {::nomarkdown}ORUSER{:/}
- Lines | {::nomarkdown} N OCCLIM,SHOWSUB<br/> S Y=$$GET^XPAR("ALL","ORCH CONTEXT NOTES",1)<br/> I +$P(Y,";",5)=0 D<br/> . S OCCLIM=$P($$PERSPRF^TIULE(DUZ),U,10)<br/> . S:+OCCLIM>0 $P(Y,";",5)=OCCLIM<br/> S SHOWSUB=$P(Y,";",6)<br/> S $P(Y,";",6)=$S(SHOWSUB'="":SHOWSUB,1:0){:/}
+ Input parameters | {::nomarkdown}ORUSER{:/}
+ Code | ```  N OCCLIM,SHOWSUB
+ S Y=$$GET^XPAR("ALL","ORCH CONTEXT NOTES",1)
+ I +$P(Y,";",5)=0 D
+ . S OCCLIM=$P($$PERSPRF^TIULE(DUZ),U,10)
+ . S:+OCCLIM>0 $P(Y,";",5)=OCCLIM
+ S SHOWSUB=$P(Y,";",6)
+ S $P(Y,";",6)=$S(SHOWSUB'="":SHOWSUB,1:0)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

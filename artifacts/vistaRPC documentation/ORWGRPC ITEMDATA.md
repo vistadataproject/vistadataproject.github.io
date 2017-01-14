@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWGRPC ITEMDATA 
+# [RPCs](TableOfContent.md) &#8594; ORWGRPC ITEMDATA 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC ITEMDATA{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ITEMDATA^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get data of an item on patient (glucose results)
- Input Parameters | {::nomarkdown}ITEM<br/>START<br/>DFN{:/}
- Lines | {::nomarkdown} D ITEMDATA^ORWGAPI("ORWGRPC",ITEM,START,DFN)<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
+ Input parameters | {::nomarkdown}ITEM<br/>START<br/>DFN{:/}
+ Code | ```  D ITEMDATA^ORWGAPI("ORWGRPC",ITEM,START,DFN)
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

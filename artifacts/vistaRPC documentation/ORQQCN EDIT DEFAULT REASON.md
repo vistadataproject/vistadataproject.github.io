@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN EDIT DEFAULT REASON 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN EDIT DEFAULT REASON 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN EDIT DEFAULT REASON{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Return value (see details there) determines if and when the consults'reason for request' can be edited.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Allow editing of reason for request?
- Input Parameters | {::nomarkdown}ORSVC{:/}
- Lines | {::nomarkdown} S ORY=$$REAF^GMRCDRFR(ORSVC){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}SERVICE ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of consults service from file 123.5{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | EDITDRFR^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
+ Method comment | Allow editing of reason for request?
+ Input parameters | {::nomarkdown}ORSVC{:/}
+ Code | ```  S ORY=$$REAF^GMRCDRFR(ORSVC)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

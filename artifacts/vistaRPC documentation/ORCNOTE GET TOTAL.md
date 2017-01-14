@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORCNOTE GET TOTAL 
+# [RPCs](TableOfContent.md) &#8594; ORCNOTE GET TOTAL 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORCNOTE GET TOTAL{:/}
@@ -16,16 +18,22 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETTOT^[ORCNOTE](http://code.osehra.org/dox/Routine_ORCNOTE_source.html)
  Method comment | get total count of progress notes
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} N ORTIDT,ORTIFN<br/> S ORY=0<br/> Q:'$G(DFN)<br/> F ORTIDT=0:0 S ORTIDT=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT)) Q:ORTIDT<1  D<br/> .F ORTIFN=0:0 S ORTIFN=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT,ORTIFN)) Q:ORTIFN<1  S ORY=ORY+1<br/>{:/}
- Leading comment lines | {::nomarkdown}^TIU(8925,"ACLPT",3) refers to progress notes class{:/}
+ First comment | {::nomarkdown}^TIU(8925,"ACLPT",3) refers to progress notes class{:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  N ORTIDT,ORTIFN
+ S ORY=0
+ Q:'$G(DFN)
+ F ORTIDT=0:0 S ORTIDT=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT)) Q:ORTIDT<1  D
+ .F ORTIFN=0:0 S ORTIFN=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT,ORTIFN)) Q:ORTIFN<1  S ORY=ORY+1
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

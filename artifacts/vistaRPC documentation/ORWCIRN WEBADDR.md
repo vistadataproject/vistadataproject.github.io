@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCIRN WEBADDR 
+# [RPCs](TableOfContent.md) &#8594; ORWCIRN WEBADDR 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCIRN WEBADDR{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Get VistaWeb Web Address.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | WEBADDR^[ORWCIRN](http://code.osehra.org/dox/Routine_ORWCIRN_source.html)
  Method comment | Get VistaWeb Address
- Input Parameters | {::nomarkdown}PATID{:/}
- Lines | {::nomarkdown} S ORY=$$GET^XPAR("ALL","ORWRP VISTAWEB ADDRESS",1,"I")<br/> I ORY="" S ORY="https://vistaweb.domain.ext" Q<br/> I ORY="https://vistaweb.domain.ext" Q<br/> S ORY=ORY_"?q9gtw0="_$P($$SITE^VASITE,"^",3)_"&xqi4z="_PATID_"&yiicf="_DUZ{:/}
+ Input parameters | {::nomarkdown}PATID{:/}
+ Code | ```  S ORY=$$GET^XPAR("ALL","ORWRP VISTAWEB ADDRESS",1,"I")
+ I ORY="" S ORY="https://vistaweb.domain.ext" Q
+ I ORY="https://vistaweb.domain.ext" Q
+ S ORY=ORY_"?q9gtw0="_$P($$SITE^VASITE,"^",3)_"&xqi4z="_PATID_"&yiicf="_DUZ```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

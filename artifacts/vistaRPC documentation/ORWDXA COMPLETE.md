@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXA COMPLETE 
+# [RPCs](TableOfContent.md) &#8594; ORWDXA COMPLETE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA COMPLETE{:/}
@@ -16,16 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Complete an order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | COMPLETE^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Complete order (generic)
- Input Parameters | {::nomarkdown}ORID<br/>ESCODE{:/}
- Lines | {::nomarkdown} D COMP^ORCSAVE2(ORID)<br/> D COMP^ORMBLDOR(ORID)<br/> D GETBYIFN^ORWORR(.REC,ORID){:/}
- Leading comment lines | {::nomarkdown}N X S X=+$E($$NOW^XLFDT,1,12)<br/>D DATES^ORCSAVE2(+ORID,,X)<br/>D STATUS^ORCSAVE2(+ORID,2)<br/>validate ESCode{:/}
+ First comment | {::nomarkdown}N X S X=+$E($$NOW^XLFDT,1,12)<br/>D DATES^ORCSAVE2(+ORID,,X)<br/>D STATUS^ORCSAVE2(+ORID,2)<br/>validate ESCode{:/}
+ Input parameters | {::nomarkdown}ORID<br/>ESCODE{:/}
+ Code | ```  D COMP^ORCSAVE2(ORID)
+ D COMP^ORMBLDOR(ORID)
+ D GETBYIFN^ORWORR(.REC,ORID)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

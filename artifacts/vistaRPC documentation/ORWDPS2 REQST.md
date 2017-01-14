@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDPS2 REQST 
+# [RPCs](TableOfContent.md) &#8594; ORWDPS2 REQST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS2 REQST{:/}
@@ -16,16 +18,21 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | REQST^[ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  Method comment | return requested start time
- Input Parameters | {::nomarkdown}DFN<br/>SCH<br/>OI<br/>LOC<br/>TXT{:/}
- Lines | {::nomarkdown} S VAL=""<br/> Q:'$L($G(SCH))  Q:'$G(OI)<br/> S OI=+$P($G(^ORD(101.43,+OI,0)),U,2)<br/> S LOC=+$G(^SC(LOC,42))<br/> S VAL=$P($$RESOLVE^PSJORPOE(DFN,SCH,OI,TXT,LOC),U,2){:/}
- Leading comment lines | {::nomarkdown}VAL: FirstAdmin time{:/}
+ First comment | {::nomarkdown}VAL: FirstAdmin time{:/}
+ Input parameters | {::nomarkdown}DFN<br/>SCH<br/>OI<br/>LOC<br/>TXT{:/}
+ Code | ```  S VAL=""
+ Q:'$L($G(SCH))  Q:'$G(OI)
+ S OI=+$P($G(^ORD(101.43,+OI,0)),U,2)
+ S LOC=+$G(^SC(LOC,42))
+ S VAL=$P($$RESOLVE^PSJORPOE(DFN,SCH,OI,TXT,LOC),U,2)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

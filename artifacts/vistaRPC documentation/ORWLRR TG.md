@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWLRR TG 
+# [RPCs](TableOfContent.md) &#8594; ORWLRR TG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLRR TG{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | TG^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
- Input Parameters | {::nomarkdown}USER{:/}
- Lines | {::nomarkdown} D TG^LR7OGO(.ORY,USER){:/}
+ Input parameters | {::nomarkdown}USER{:/}
+ Code | ```  D TG^LR7OGO(.ORY,USER)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

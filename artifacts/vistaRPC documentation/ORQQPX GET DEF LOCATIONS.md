@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPX GET DEF LOCATIONS 
+# [RPCs](TableOfContent.md) &#8594; ORQQPX GET DEF LOCATIONS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX GET DEF LOCATIONS{:/}
@@ -15,14 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns the contents of the ORQQPX DEFAULT LOCATIONS parameter.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return Default Outside Locations
- Lines | {::nomarkdown} N SRV,ORERR<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D GETLST^XPAR(.ORDEFLOC,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX DEFAULT LOCATIONS","Q",.ORERR){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -30,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}LOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Current Location.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GETDEFOL^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
+ Method comment | Return Default Outside Locations
+ Code | ```  N SRV,ORERR
+ S SRV=$$GET1^DIQ(200,DUZ,29,"I")
+ D GETLST^XPAR(.ORDEFLOC,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX DEFAULT LOCATIONS","Q",.ORERR)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU NEWPERS 
+# [RPCs](TableOfContent.md) &#8594; ORWU NEWPERS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU NEWPERS{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a set of New Person file entries for use in a long list box.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | NEWPERS^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return a set of names from the NEW PERSON file.
- Input Parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORKEY<br/>ORDATE<br/>ORVIZ<br/>ORALL{:/}
- Lines | {::nomarkdown} D NP1^ORWU1{:/}
- Leading comment lines | {::nomarkdown}SLC/PKS: Code moved to ORWU1 on 12/3/2002.{:/}
+ First comment | {::nomarkdown}SLC/PKS: Code moved to ORWU1 on 12/3/2002.{:/}
+ Input parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORKEY<br/>ORDATE<br/>ORVIZ<br/>ORALL{:/}
+ Code | ```  D NP1^ORWU1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

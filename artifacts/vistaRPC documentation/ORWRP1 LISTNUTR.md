@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWRP1 LISTNUTR 
+# [RPCs](TableOfContent.md) &#8594; ORWRP1 LISTNUTR 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP1 LISTNUTR{:/}
@@ -16,15 +18,21 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LISTNUTR^[ORWRP1](http://code.osehra.org/dox/Routine_ORWRP1_source.html)
  Method comment | list nutritional assessments
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} N OK,I,X,SITE<br/> K ^TMP($J,"FHADT")<br/> S OK=$$FHWORADT^FHWORA(DFN)<br/> S I=0,SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)_";"_$P(SITE,"^",3)<br/> F  S I=$O(^TMP($J,"FHADT",DFN,I)) Q:'I  S X=SITE_U_I_U_^(I),^(I)=X<br/> S ROOT=$NA(^TMP($J,"FHADT",DFN)){:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  N OK,I,X,SITE
+ K ^TMP($J,"FHADT")
+ S OK=$$FHWORADT^FHWORA(DFN)
+ S I=0,SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)_";"_$P(SITE,"^",3)
+ F  S I=$O(^TMP($J,"FHADT",DFN,I)) Q:'I  S X=SITE_U_I_U_^(I),^(I)=X
+ S ROOT=$NA(^TMP($J,"FHADT",DFN))```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWRP3 EXPAND COLUMNS 
+# [RPCs](TableOfContent.md) &#8594; ORWRP3 EXPAND COLUMNS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWRP3 EXPAND COLUMNS{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC loads and expands nested reports defined in the OE/RR Reportsfile (#101.24) for use on the Reports Tab in CPRS.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LIST^[ORWRP3](http://code.osehra.org/dox/Routine_ORWRP3_source.html)
  Method comment | Get list for Reports & Labs Tab Treeview
- Input Parameters | {::nomarkdown}TAB{:/}
- Lines | {::nomarkdown} N ROOT<br/> S ROOT=$NA(LST)<br/> K @ROOT<br/> D TRY1(.ROOT,$G(TAB)){:/}
+ Input parameters | {::nomarkdown}TAB{:/}
+ Code | ```  N ROOT
+ S ROOT=$NA(LST)
+ K @ROOT
+ D TRY1(.ROOT,$G(TAB))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

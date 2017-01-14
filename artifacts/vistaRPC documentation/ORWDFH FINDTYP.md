@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDFH FINDTYP 
+# [RPCs](TableOfContent.md) &#8594; ORWDFH FINDTYP 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH FINDTYP{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return type of dietetics order based on display group.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | FINDTYP^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return type of dietetics order based on display group
- Input Parameters | {::nomarkdown}DGRP{:/}
- Lines | {::nomarkdown} S VAL=$P($G(^ORD(100.98,DGRP,0)),U,3)<br/> S:VAL="D AO" VAL="A" S VAL=$E(VAL){:/}
+ Input parameters | {::nomarkdown}DGRP{:/}
+ Code | ```  S VAL=$P($G(^ORD(100.98,DGRP,0)),U,3)
+ S:VAL="D AO" VAL="A" S VAL=$E(VAL)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

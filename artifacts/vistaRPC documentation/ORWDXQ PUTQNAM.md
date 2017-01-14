@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQNAM 
+# [RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQNAM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXQ PUTQNAM{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Save display name for quick order dialog.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PUTQNAM^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Save display name for a quick order dialog
- Input Parameters | {::nomarkdown}DLG<br/>QNAM{:/}
- Lines | {::nomarkdown}{:/}
- Leading comment lines | {::nomarkdown}see if DLG used QNAM as display text (quit if so)<br/>otherwise save in ORWDQ DISPLAY NAME{:/}
+ First comment | {::nomarkdown}see if DLG used QNAM as display text (quit if so)<br/>otherwise save in ORWDQ DISPLAY NAME{:/}
+ Input parameters | {::nomarkdown}DLG<br/>QNAM{:/}
+ Code | ``` ```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

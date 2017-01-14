@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; XUS GET TOKEN 
+# [RPCs](TableOfContent.md) &#8594; XUS GET TOKEN 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS GET TOKEN{:/}
@@ -16,14 +18,20 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ASH^[XUSRB4](http://code.osehra.org/dox/Routine_XUSRB4_source.html)
  Method comment | rpc. Auto Signon Handle
- Lines | {::nomarkdown} N HDL<br/> S RET="NOT AUTHENTICATED"<br/> I $G(DUZ)<1 Q  ;Not an authenticated user<br/> I $G(DUZ("LOA"))=1 Q  ;Not an authenticated user<br/> S HDL=$$HANDLE("XWBAS",1),RET="~1"_HDL<br/> D TOK(HDL){:/}
+ Code | ```  N HDL
+ S RET="NOT AUTHENTICATED"
+ I $G(DUZ)<1 Q  ;Not an authenticated user
+ I $G(DUZ("LOA"))=1 Q  ;Not an authenticated user
+ S HDL=$$HANDLE("XWBAS",1),RET="~1"_HDL
+ D TOK(HDL)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

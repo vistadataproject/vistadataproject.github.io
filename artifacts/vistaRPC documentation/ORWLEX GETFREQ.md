@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWLEX GETFREQ 
+# [RPCs](TableOfContent.md) &#8594; ORWLEX GETFREQ 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLEX GETFREQ{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This call wraps the Lexicon API $$FREQ^LEXU to satisfy the requirements of the ICD-10-CM diagnosis search.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Call $$FREQ^LEXU to fetch the frequency of use of keywords contained in search string
- Input Parameters | {::nomarkdown}ORSRCHTX{:/}
- Lines | {::nomarkdown} S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679<br/>{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORSRCHTX{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the search text/term.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GETFREQ^[ORWLEX](http://code.osehra.org/dox/Routine_ORWLEX_source.html)
+ Method comment | Call $$FREQ^LEXU to fetch the frequency of use of keywords contained in search string
+ Input parameters | {::nomarkdown}ORSRCHTX{:/}
+ Code | ```  S ORY=$$FREQ^LEXU(ORSRCHTX) ; ICR #5679
+```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

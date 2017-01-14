@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPL CLIN FILTER LIST 
+# [RPCs](TableOfContent.md) &#8594; ORQQPL CLIN FILTER LIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL CLIN FILTER LIST{:/}
@@ -16,16 +18,21 @@ title: VISTA RPC documentation
  description | {::nomarkdown}rETURNS ARRAY OF IEN^NAME FOR AN ARRAY OF IEN PASSED IN{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETCLIN^[ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  Method comment | Get FILTERED LIST OF CLINICS
- Input Parameters | {::nomarkdown}INP{:/}
- Lines | {::nomarkdown} N I,S<br/> S S=""<br/> F I=1:1 S S=$O(INP(S)) Q:S=""  D<br/> . I INP(S)'="",$G(^SC(INP(S),0))'="" D  Q  ; get next<br/> .. S RETURN(I)=INP(S)_U_$P(^SC(INP(S),0),U,1){:/}
- Leading comment lines | {::nomarkdown}RETURN NAMES FOR LIST OF CLINICS PASSED IN{:/}
+ First comment | {::nomarkdown}RETURN NAMES FOR LIST OF CLINICS PASSED IN{:/}
+ Input parameters | {::nomarkdown}INP{:/}
+ Code | ```  N I,S
+ S S=""
+ F I=1:1 S S=$O(INP(S)) Q:S=""  D
+ . I INP(S)'="",$G(^SC(INP(S),0))'="" D  Q  ; get next
+ .. S RETURN(I)=INP(S)_U_$P(^SC(INP(S),0),U,1)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

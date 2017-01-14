@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORECS01 ECRPT 
+# [RPCs](TableOfContent.md) &#8594; ORECS01 ECRPT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORECS01 ECRPT{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ECRPT^[ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  Method comment | EC report
- Input Parameters | {::nomarkdown}ORECARY{:/}
- Lines | {::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY){:/}
+ Input parameters | {::nomarkdown}ORECARY{:/}
+ Code | ```  Q:'$D(ORECARY)
+ D RPTEN^ECRRPC(.ORY,.ORECARY)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

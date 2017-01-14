@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWORB AUTOUNFLAG ORDERS 
+# [RPCs](TableOfContent.md) &#8594; ORWORB AUTOUNFLAG ORDERS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORB AUTOUNFLAG ORDERS{:/}
@@ -16,14 +18,15 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Auto unflag orders/delete alert.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | UNFLORD^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | auto-unflag orders?/delete alert
- Input Parameters | {::nomarkdown}DFN<br/>XQAID{:/}
+ Input parameters | {::nomarkdown}DFN<br/>XQAID{:/}
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

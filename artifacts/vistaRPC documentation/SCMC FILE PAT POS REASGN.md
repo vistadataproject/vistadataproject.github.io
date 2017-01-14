@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; SCMC FILE PAT POS REASGN 
+# [RPCs](TableOfContent.md) &#8594; SCMC FILE PAT POS REASGN 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}SCMC FILE PAT POS REASGN{:/}
@@ -24,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

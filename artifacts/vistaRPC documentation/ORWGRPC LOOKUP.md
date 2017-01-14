@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWGRPC LOOKUP 
+# [RPCs](TableOfContent.md) &#8594; ORWGRPC LOOKUP 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC LOOKUP{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LOOKUP^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get item names for long lookup
- Input Parameters | {::nomarkdown}INFO<br/>FROM<br/>DIR{:/}
- Lines | {::nomarkdown} D LOOKUP^ORWGAPI(.VAL,INFO,.FROM,DIR){:/}
+ Input parameters | {::nomarkdown}INFO<br/>FROM<br/>DIR{:/}
+ Code | ```  D LOOKUP^ORWGAPI(.VAL,INFO,.FROM,DIR)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXVB STATALOW 
+# [RPCs](TableOfContent.md) &#8594; ORWDXVB STATALOW 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB STATALOW{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Check to see if user is allowed to order STAT orders through VBECS.Checks users with parameter: OR VBECS STAT USER{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | STATALOW^[ORWDXVB](http://code.osehra.org/dox/Routine_ORWDXVB_source.html)
  Method comment | Allow stat for ORES ORELSE users
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S OROOT=$D(^XUSEC("ORES",DUZ))!($D(^XUSEC("ORELSE",DUZ))){:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  S OROOT=$D(^XUSEC("ORES",DUZ))!($D(^XUSEC("ORELSE",DUZ)))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

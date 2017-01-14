@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPT SHARE 
+# [RPCs](TableOfContent.md) &#8594; ORWPT SHARE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT SHARE{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SHARE^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Set global to share DFN with other applications
- Input Parameters | {::nomarkdown}IP<br/>HWND<br/>DFN{:/}
- Lines | {::nomarkdown} K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)<br/> K ^TMP("ORWDXMQ",$J)<br/> S ^TMP("ORWCHART",$J,IP,HWND)=DFN{:/}
+ Input parameters | {::nomarkdown}IP<br/>HWND<br/>DFN{:/}
+ Code | ```  K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)
+ K ^TMP("ORWDXMQ",$J)
+ S ^TMP("ORWCHART",$J,IP,HWND)=DFN```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

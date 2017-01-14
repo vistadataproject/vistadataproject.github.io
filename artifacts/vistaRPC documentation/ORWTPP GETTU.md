@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP GETTU 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP GETTU 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP GETTU{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETTU^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}CLASS{:/}
- Lines | {::nomarkdown} D GETTU^ORWTPN(.VALUES,CLASS,DUZ){:/}
- Leading comment lines | {::nomarkdown}get titles for current user{:/}
+ First comment | {::nomarkdown}get titles for current user{:/}
+ Input parameters | {::nomarkdown}CLASS{:/}
+ Code | ```  D GETTU^ORWTPN(.VALUES,CLASS,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

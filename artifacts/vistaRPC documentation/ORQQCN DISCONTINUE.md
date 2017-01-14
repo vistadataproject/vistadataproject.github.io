@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN DISCONTINUE 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN DISCONTINUE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN DISCONTINUE{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Discontinue a consult or deny a consult request.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Discontinue or Deny a consult
- Input Parameters | {::nomarkdown}GMRCO<br/>GMRCORNP<br/>GMRCAD<br/>GMRCACTM<br/>ORCOM{:/}
- Lines | {::nomarkdown} S Y=$$DC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,GMRCACTM,.ORCOM){:/}
- Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCORNP - Provider who Discontinued or Denied consult<br/>GMRCAD - Date/Time Consult was discontinued or denied.<br/>GMRCACTM - If consult is 'DENIED' passed in as 'DY'; if consult is Discontinued passed in as 'DC'.<br/>ORCOM - Array containing explanation of why consult was denied. Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is a required field when consult is denied or discontinued.{:/}
 
 ### Input Parameters
 
@@ -36,6 +28,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}COMMENTS{:/} | {::nomarkdown}WORD PROCESSING{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Array of comments related to the discontinuance/denial of the consult.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | DC^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
+ Method comment | Discontinue or Deny a consult
+ First comment | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCORNP - Provider who Discontinued or Denied consult<br/>GMRCAD - Date/Time Consult was discontinued or denied.<br/>GMRCACTM - If consult is 'DENIED' passed in as 'DY'; if consult is Discontinued passed in as 'DC'.<br/>ORCOM - Array containing explanation of why consult was denied. Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is a required field when consult is denied or discontinued.{:/}
+ Input parameters | {::nomarkdown}GMRCO<br/>GMRCORNP<br/>GMRCAD<br/>GMRCACTM<br/>ORCOM{:/}
+ Code | ```  S Y=$$DC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,GMRCACTM,.ORCOM)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

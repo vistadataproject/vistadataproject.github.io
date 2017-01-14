@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORECS01 CHKESSO 
+# [RPCs](TableOfContent.md) &#8594; ORECS01 CHKESSO 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORECS01 CHKESSO{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CHKESSO^[ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  Method comment | 1=ESSO installed on site  0=not installed
- Input Parameters | {::nomarkdown}CHK{:/}
- Lines | {::nomarkdown} S ORY=$$PATCH^XPDUTL("XWB*1.1*26"){:/}
+ Input parameters | {::nomarkdown}CHK{:/}
+ Code | ```  S ORY=$$PATCH^XPDUTL("XWB*1.1*26")```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

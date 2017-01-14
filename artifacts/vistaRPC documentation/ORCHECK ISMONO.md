@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORCHECK ISMONO 
+# [RPCs](TableOfContent.md) &#8594; ORCHECK ISMONO 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORCHECK ISMONO{:/}
@@ -16,14 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ISMONO^[ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
  Method comment | returns 1 if there is monograph data for the orderchecks being presented to the user
- Lines | {::nomarkdown} S ORY=0<br/> Q:'$$PATCH^XPDUTL("OR*3.0*272")<br/> I $D(^TMP($J,"ORMONOGRAPH")) S ORY=1{:/}
+ Code | ```  S ORY=0
+ Q:'$$PATCH^XPDUTL("OR*3.0*272")
+ I $D(^TMP($J,"ORMONOGRAPH")) S ORY=1```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

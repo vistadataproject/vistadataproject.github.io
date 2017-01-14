@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWOR1 GETDSIG 
+# [RPCs](TableOfContent.md) &#8594; ORWOR1 GETDSIG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR1 GETDSIG{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the digital signature of an existing order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETDSIG^[ORWOR1](http://code.osehra.org/dox/Routine_ORWOR1_source.html)
  Method comment | Get Digital Signature
- Input Parameters | {::nomarkdown}ORDER{:/}
- Lines | {::nomarkdown} N IFN,ACTION<br/> S SIG=0,IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> I +$P($G(^OR(100,+IFN,8,+ACTION,2)),U,3) S SIG=$P(^(2),"^",3){:/}
+ Input parameters | {::nomarkdown}ORDER{:/}
+ Code | ```  N IFN,ACTION
+ S SIG=0,IFN=+ORDER,ACTION=$P(ORDER,";",2)
+ I +$P($G(^OR(100,+IFN,8,+ACTION,2)),U,3) S SIG=$P(^(2),"^",3)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

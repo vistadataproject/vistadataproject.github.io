@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDPS32 MEDISIV 
+# [RPCs](TableOfContent.md) &#8594; ORWDPS32 MEDISIV 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS32 MEDISIV{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return 1 if orderable item is an IV medication, otherwise return 0.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | MEDISIV^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return true if orderable item is IV medication
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} S VAL=0<br/> I $P($G(^ORD(101.43,IEN,"PS")),U)=2 S VAL=1{:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | ```  S VAL=0
+ I $P($G(^ORD(101.43,IEN,"PS")),U)=2 S VAL=1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

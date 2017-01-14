@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDLR32 STOP 
+# [RPCs](TableOfContent.md) &#8594; ORWDLR32 STOP 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDLR32 STOP{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a calculated stop date for a lab order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | STOP^[ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  Method comment | return a calculated stop date
- Input Parameters | {::nomarkdown}X2{:/}
- Lines | {::nomarkdown} N X1,X<br/> S X1=DT D C^%DTC S VAL=X{:/}
+ Input parameters | {::nomarkdown}X2{:/}
+ Code | ```  N X1,X
+ S X1=DT D C^%DTC S VAL=X```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

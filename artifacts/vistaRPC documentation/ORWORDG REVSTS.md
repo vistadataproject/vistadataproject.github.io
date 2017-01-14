@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWORDG REVSTS 
+# [RPCs](TableOfContent.md) &#8594; ORWORDG REVSTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORDG REVSTS{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the status flags available for review orders action.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | REVSTS^[ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  Method comment | Return the status flags available for review orders
- Lines | {::nomarkdown} D STSLST^ORCHANG2(.LST){:/}
- Leading comment lines | {::nomarkdown}N I,X,T S ILST=0<br/>F I=1:1 S T="ORDSTS+"_I_"^ORCHANG2" S X=$T(@T) Q:$P(X,";",4)="ZZZZ"  D<br/>. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4){:/}
+ First comment | {::nomarkdown}N I,X,T S ILST=0<br/>F I=1:1 S T="ORDSTS+"_I_"^ORCHANG2" S X=$T(@T) Q:$P(X,";",4)="ZZZZ"  D<br/>. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4){:/}
+ Code | ```  D STSLST^ORCHANG2(.LST)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

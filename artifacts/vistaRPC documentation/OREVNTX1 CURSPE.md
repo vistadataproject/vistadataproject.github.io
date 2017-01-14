@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 CURSPE 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 CURSPE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 CURSPE{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CURSPE^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return current treating specialty
- Input Parameters | {::nomarkdown}PTIFN{:/}
- Lines | {::nomarkdown} Q:'PTIFN<br/> N SPEC S SPEC=$$PT^DGPMOBS(PTIFN),ORY=""<br/> I SPEC'<0 S ORY=$P(SPEC,U,3)_U_$P(SPEC,U,2)_U_$P(SPEC,U) ;name^ien^obs flag{:/}
+ Input parameters | {::nomarkdown}PTIFN{:/}
+ Code | ```  Q:'PTIFN
+ N SPEC S SPEC=$$PT^DGPMOBS(PTIFN),ORY=""
+ I SPEC'<0 S ORY=$P(SPEC,U,3)_U_$P(SPEC,U,2)_U_$P(SPEC,U) ;name^ien^obs flag```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

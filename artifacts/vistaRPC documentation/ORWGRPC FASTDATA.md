@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWGRPC FASTDATA 
+# [RPCs](TableOfContent.md) &#8594; ORWGRPC FASTDATA 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC FASTDATA{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | FASTDATA^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all data (non-lab) set up on patient
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} D FASTDATA^ORWGAPI(.DATA,DFN){:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  D FASTDATA^ORWGAPI(.DATA,DFN)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

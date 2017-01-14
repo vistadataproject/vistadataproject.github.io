@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDX MSG 
+# [RPCs](TableOfContent.md) &#8594; ORWDX MSG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX MSG{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return message text for an orderable item.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | MSG^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Msg text for orderable item
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} N I<br/> S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S LST(I)=^(I,0){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | ```  N I
+ S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S LST(I)=^(I,0)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

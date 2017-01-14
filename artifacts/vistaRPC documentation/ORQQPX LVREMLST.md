@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPX LVREMLST 
+# [RPCs](TableOfContent.md) &#8594; ORQQPX LVREMLST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX LVREMLST{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns Cover Sheet reminder settings{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns cover sheet reminders at a specified level
- Input Parameters | {::nomarkdown}LVL<br/>CLASS{:/}
- Lines | {::nomarkdown} D REMACCUM(.ORY,LVL,"Q","",$G(CLASS)){:/}
 
 ### Input Parameters
 
@@ -32,6 +25,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLASS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Optional User Class IEN if level is CLASS{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | LVREMLST^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
+ Method comment | Returns cover sheet reminders at a specified level
+ Input parameters | {::nomarkdown}LVL<br/>CLASS{:/}
+ Code | ```  D REMACCUM(.ORY,LVL,"Q","",$G(CLASS))```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

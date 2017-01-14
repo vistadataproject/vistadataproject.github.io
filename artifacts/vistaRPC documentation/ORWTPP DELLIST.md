@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP DELLIST 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP DELLIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP DELLIST{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DELLIST^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}LISTNUM{:/}
- Lines | {::nomarkdown} D DELLIST^ORWTPL(.OK,LISTNUM,DUZ){:/}
- Leading comment lines | {::nomarkdown}delete current user's personal list{:/}
+ First comment | {::nomarkdown}delete current user's personal list{:/}
+ Input parameters | {::nomarkdown}LISTNUM{:/}
+ Code | ```  D DELLIST^ORWTPL(.OK,LISTNUM,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

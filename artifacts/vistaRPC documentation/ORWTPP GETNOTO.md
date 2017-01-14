@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP GETNOTO 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP GETNOTO 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP GETNOTO{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETNOTO^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} D GETNOTO^ORWTPR(.INFO,DUZ){:/}
- Leading comment lines | {::nomarkdown}get current user's other info for notifications{:/}
+ First comment | {::nomarkdown}get current user's other info for notifications{:/}
+ Code | ```  D GETNOTO^ORWTPR(.INFO,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

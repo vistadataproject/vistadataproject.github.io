@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU CREATE RECORD 
+# [RPCs](TableOfContent.md) &#8594; TIU CREATE RECORD 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU CREATE RECORD{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This remote procedure allows the creation of TIU DOCUMENT records.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | New Document
- Input Parameters | {::nomarkdown}DFN<br/>TITLE<br/>VDT<br/>VLOC<br/>VSIT<br/>TIUX<br/>VSTR<br/>SUPPRESS<br/>NOASF{:/}
- Lines | {::nomarkdown} N TIU,TIUDA,LDT,NEWREC<br/> S SUCCESS=0<br/> I +$G(VSIT) S VSTR=$$VSTRBLD(+VSIT)<br/> I $L($G(VSTR)) D<br/> . S VDT=$S(+$G(VDT):+$G(VDT),1:$P(VSTR,";",2))<br/> . S LDT=$S(+$G(VDT):$$FMADD^XLFDT(VDT,"","",1),1:"")<br/> . S VLOC=$S(+$G(VLOC):+$G(VLOC),1:$P(VSTR,";"))<br/> . ; If note is for Ward Location, call MAIN^TIUMOVE<br/> . I $P($G(^SC(+VLOC,0)),U,3)="W" D MAIN^TIUMOVE(.TIU,DFN,"",VDT,LDT,1,"LAST",0,+VLOC) Q<br/> . ; Otherwise, call PATVADPT^TIULV<br/> . D PATVADPT^TIULV(.TIU,DFN,"",VSTR)<br/> I '+$G(VSIT),'$L($G(VSTR)),+$G(VDT),+$G(VLOC) D<br/> . S VDT=$G(VDT),LDT=$S(+$G(VDT):$$FMADD^XLFDT(VDT,"","",1),1:"")<br/> . ; If note is for Ward Location, call MAIN^TIUMOVE<br/> . I $P($G(^SC(+VLOC,0)),U,3)="W" D MAIN^TIUMOVE(.TIU,DFN,"",VDT,LDT,1,"LAST",0,+VLOC) Q<br/> . ; Otherwise, call MAIN^TIUVSIT<br/> . D MAIN^TIUVSIT(.TIU,DFN,"",VDT,LDT,"LAST",0,VLOC)<br/> I '+$G(TIU("VSTR")) D<br/> . D EVENT^TIUSRVP1(.TIU,DFN)<br/> S TIU("INST")=$$DIVISION^TIULC1(+TIU("LOC"))<br/> I $S($D(TIU)'>9:1,+$G(DFN)'>0:1,1:0) S SUCCESS="0^"_$$EZBLD^DIALOG(89250001) Q<br/> S TIUDA=$$GETREC(DFN,.TIU,TITLE,.NEWREC)<br/> I +TIUDA'>0 S SUCCESS="0^"_$$EZBLD^DIALOG(89250002) Q<br/> S SUCCESS=+TIUDA<br/> D STUFREC^TIUSRVP1(+TIUDA,.TIUX,DFN,,TITLE,.TIU)<br/> S:'+$G(NOASF) ^TIU(8925,"ASAVE",DUZ,TIUDA)=""<br/> K ^TIU(8925,+TIUDA,"TEMP")<br/> M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT") K TIUX("TEXT")<br/> D SETXT0(TIUDA)<br/> D FILE(.SUCCESS,+TIUDA,.TIUX,+$G(SUPPRESS))<br/> I +SUCCESS'>0 D DIK^TIURB2(TIUDA) Q<br/> I +$O(^TIU(8925,+TIUDA,"TEMP",0)) D MERGTEXT^TIUEDI1(+TIUDA,.TIU)<br/> I +$G(TIU("STOP")) D DEFER^TIUVSIT(TIUDA,TIU("STOP")) I 1<br/> E  D QUE^TIUPXAP1<br/> I '+$G(SUPPRESS) D<br/> . D RELEASE^TIUT(TIUDA,1)<br/> . D UPDTIRT^TIUDIRT(.TIU,TIUDA)<br/> K ^TIU(8925,+TIUDA,"TEMP"){:/}
- Leading comment lines | {::nomarkdown}SUCCESS = (by ref) TIU DOCUMENT # (PTR to 8925)<br/>= 0^Explanatory message if no SUCCESS<br/>DFN     = Patient (#2)<br/>TITLE   = TIU Document Definition (#8925.1)<br/>[VDT]   = Date(/Time) of Visit<br/>[VLOC]  = Visit Location (HOSPITAL LOCATION)<br/>[VSIT]  = Visit file ien (#9000010)<br/>[VSTR]  = Visit string (i.e., VLOC;VDT;VTYPE)<br/>[NOASF] = if 1=Do Not Set ASAVE cross-reference<br/>TIUX    = (by ref) array containing field data and document body{:/}
 
 ### Input Parameters
 
@@ -40,6 +32,54 @@ title: VISTA RPC documentation
 | {::nomarkdown}NOASF{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter can optionally be set to 1 to indicate the ASAVE cross-reference in the TIU Document file (#8925) should not be set when calling this RPC.  The intent of this cross-reference is for telnet type sessions where a user could be dropped.  The cross-reference is used to provide the user with an easy way to resume editing the TIU Document they were working on when they were dropped.  In the Clinical Procedures realm, for example, where the stub is created in the 'background' thiscross-reference should not be set since the user is not interactivelyinvolved in the creation of the record.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | MAKE^[TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
+ Method comment | New Document
+ First comment | {::nomarkdown}SUCCESS = (by ref) TIU DOCUMENT # (PTR to 8925)<br/>= 0^Explanatory message if no SUCCESS<br/>DFN     = Patient (#2)<br/>TITLE   = TIU Document Definition (#8925.1)<br/>[VDT]   = Date(/Time) of Visit<br/>[VLOC]  = Visit Location (HOSPITAL LOCATION)<br/>[VSIT]  = Visit file ien (#9000010)<br/>[VSTR]  = Visit string (i.e., VLOC;VDT;VTYPE)<br/>[NOASF] = if 1=Do Not Set ASAVE cross-reference<br/>TIUX    = (by ref) array containing field data and document body{:/}
+ Input parameters | {::nomarkdown}DFN<br/>TITLE<br/>VDT<br/>VLOC<br/>VSIT<br/>TIUX<br/>VSTR<br/>SUPPRESS<br/>NOASF{:/}
+ Code | ```  N TIU,TIUDA,LDT,NEWREC
+ S SUCCESS=0
+ I +$G(VSIT) S VSTR=$$VSTRBLD(+VSIT)
+ I $L($G(VSTR)) D
+ . S VDT=$S(+$G(VDT):+$G(VDT),1:$P(VSTR,";",2))
+ . S LDT=$S(+$G(VDT):$$FMADD^XLFDT(VDT,"","",1),1:"")
+ . S VLOC=$S(+$G(VLOC):+$G(VLOC),1:$P(VSTR,";"))
+ . ; If note is for Ward Location, call MAIN^TIUMOVE
+ . I $P($G(^SC(+VLOC,0)),U,3)="W" D MAIN^TIUMOVE(.TIU,DFN,"",VDT,LDT,1,"LAST",0,+VLOC) Q
+ . ; Otherwise, call PATVADPT^TIULV
+ . D PATVADPT^TIULV(.TIU,DFN,"",VSTR)
+ I '+$G(VSIT),'$L($G(VSTR)),+$G(VDT),+$G(VLOC) D
+ . S VDT=$G(VDT),LDT=$S(+$G(VDT):$$FMADD^XLFDT(VDT,"","",1),1:"")
+ . ; If note is for Ward Location, call MAIN^TIUMOVE
+ . I $P($G(^SC(+VLOC,0)),U,3)="W" D MAIN^TIUMOVE(.TIU,DFN,"",VDT,LDT,1,"LAST",0,+VLOC) Q
+ . ; Otherwise, call MAIN^TIUVSIT
+ . D MAIN^TIUVSIT(.TIU,DFN,"",VDT,LDT,"LAST",0,VLOC)
+ I '+$G(TIU("VSTR")) D
+ . D EVENT^TIUSRVP1(.TIU,DFN)
+ S TIU("INST")=$$DIVISION^TIULC1(+TIU("LOC"))
+ I $S($D(TIU)'>9:1,+$G(DFN)'>0:1,1:0) S SUCCESS="0^"_$$EZBLD^DIALOG(89250001) Q
+ S TIUDA=$$GETREC(DFN,.TIU,TITLE,.NEWREC)
+ I +TIUDA'>0 S SUCCESS="0^"_$$EZBLD^DIALOG(89250002) Q
+ S SUCCESS=+TIUDA
+ D STUFREC^TIUSRVP1(+TIUDA,.TIUX,DFN,,TITLE,.TIU)
+ S:'+$G(NOASF) ^TIU(8925,"ASAVE",DUZ,TIUDA)=""
+ K ^TIU(8925,+TIUDA,"TEMP")
+ M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT") K TIUX("TEXT")
+ D SETXT0(TIUDA)
+ D FILE(.SUCCESS,+TIUDA,.TIUX,+$G(SUPPRESS))
+ I +SUCCESS'>0 D DIK^TIURB2(TIUDA) Q
+ I +$O(^TIU(8925,+TIUDA,"TEMP",0)) D MERGTEXT^TIUEDI1(+TIUDA,.TIU)
+ I +$G(TIU("STOP")) D DEFER^TIUVSIT(TIUDA,TIU("STOP")) I 1
+ E  D QUE^TIUPXAP1
+ I '+$G(SUPPRESS) D
+ . D RELEASE^TIUT(TIUDA,1)
+ . D UPDTIRT^TIUDIRT(.TIU,TIUDA)
+ K ^TIU(8925,+TIUDA,"TEMP")```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

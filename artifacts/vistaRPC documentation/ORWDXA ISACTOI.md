@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXA ISACTOI 
+# [RPCs](TableOfContent.md) &#8594; ORWDXA ISACTOI 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXA ISACTOI{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ISACTOI^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Is ord item active?
- Input Parameters | {::nomarkdown}OI{:/}
- Lines | {::nomarkdown} I $G(^ORD(101.43,+OI,.1)),^(.1)'>$$NOW^XLFDT D<br/> . S ORY=$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore."{:/}
+ Input parameters | {::nomarkdown}OI{:/}
+ Code | ```  I $G(^ORD(101.43,+OI,.1)),^(.1)'>$$NOW^XLFDT D
+ . S ORY=$P($G(^ORD(101.43,OI,0)),U)_" has been inactivated and may not be ordered anymore."```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU LONG LIST SURGERY TITLES 
+# [RPCs](TableOfContent.md) &#8594; TIU LONG LIST SURGERY TITLES 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LONG LIST SURGERY TITLES{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC serves data to a longlist of selectable TITLES for the classnamed in the CLNAME parameter.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | long list SURGICAL REPORT titles
- Input Parameters | {::nomarkdown}FROM<br/>DIR<br/>CLNAME{:/}
- Lines | {::nomarkdown} N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")<br/> S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0<br/> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1)){:/}
- Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>depending on context{:/}
 
 ### Input Parameters
 
@@ -34,6 +26,19 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLNAME{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the name of the class for which titles are being presented.Allowable values are: \SURGICAL REPORTS\\PROCEDURE REPORTS (NON-O.R.)\{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | LNGSURG^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
+ Method comment | long list SURGICAL REPORT titles
+ First comment | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>depending on context{:/}
+ Input parameters | {::nomarkdown}FROM<br/>DIR<br/>CLNAME{:/}
+ Code | ```  N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")
+ S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0
+ D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1))```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

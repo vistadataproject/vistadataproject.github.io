@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU IS THIS A CLINPROC? 
+# [RPCs](TableOfContent.md) &#8594; TIU IS THIS A CLINPROC? 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU IS THIS A CLINPROC?{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC evaluates whether or not a Title is under theCLINICAL PROCEDURES Class.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | RPC that evaluates whether or not a Title is under
- Input Parameters | {::nomarkdown}TITLE{:/}
- Lines | {::nomarkdown} N TIUCLASS<br/> I +$G(TITLE)'>0 S TIUY=0 G ISCPQ<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 G ISCPQ<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS){:/}
- Leading comment lines | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,21 @@ title: VISTA RPC documentation
 | {::nomarkdown}TITLE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the TIU Document file (#8925.1) IEN for the Title selected.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ISCP^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
+ Method comment | RPC that evaluates whether or not a Title is under
+ First comment | {::nomarkdown}the CLINICAL PROCEDURES Class<br/>Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>(May be Document Class instead of Title.)<br/>Output -- TIUY     1=True and 0=False{:/}
+ Input parameters | {::nomarkdown}TITLE{:/}
+ Code | ```  N TIUCLASS
+ I +$G(TITLE)'>0 S TIUY=0 G ISCPQ
+ S TIUCLASS=+$$CLASS
+ I +TIUCLASS'>0 S TIUY=0 G ISCPQ
+ S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

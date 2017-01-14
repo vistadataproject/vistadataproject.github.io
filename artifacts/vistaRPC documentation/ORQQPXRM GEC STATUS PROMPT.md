@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC STATUS PROMPT 
+# [RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC STATUS PROMPT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM GEC STATUS PROMPT{:/}
@@ -15,14 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This remote procedure will return the text value to display in CPRS of the status of the current GEC Referral.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S RESULT=$$STATUS^PXRMGECU(DFN){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -30,6 +24,15 @@ title: VISTA RPC documentation
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GECP^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  S RESULT=$$STATUS^PXRMGECU(DFN)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

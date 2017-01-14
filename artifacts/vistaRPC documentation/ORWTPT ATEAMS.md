@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPT ATEAMS 
+# [RPCs](TableOfContent.md) &#8594; ORWTPT ATEAMS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPT ATEAMS{:/}
@@ -16,15 +18,22 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ATEAMS^[ORWTPT](http://code.osehra.org/dox/Routine_ORWTPT_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} N CNT,NAME,NODE,NUM K TEAMS<br/> S CNT=0<br/> S NUM=0 F  S NUM=$O(^OR(100.21,NUM)) Q:NUM<1  S NODE=$G(^(NUM,0)) D<br/> .I $P(NODE,U,6)'="Y" Q<br/> .I $P(NODE,U,2)="P" Q<br/> .S CNT=CNT+1<br/> .S TEAMS(CNT)=NUM_U_NODE ;$P(NODE,U){:/}
- Leading comment lines | {::nomarkdown}all teams available to subscribe to{:/}
+ First comment | {::nomarkdown}all teams available to subscribe to{:/}
+ Code | ```  N CNT,NAME,NODE,NUM K TEAMS
+ S CNT=0
+ S NUM=0 F  S NUM=$O(^OR(100.21,NUM)) Q:NUM<1  S NODE=$G(^(NUM,0)) D
+ .I $P(NODE,U,6)'="Y" Q
+ .I $P(NODE,U,2)="P" Q
+ .S CNT=CNT+1
+ .S TEAMS(CNT)=NUM_U_NODE ;$P(NODE,U)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

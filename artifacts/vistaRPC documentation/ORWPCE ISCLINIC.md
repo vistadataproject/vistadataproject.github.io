@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE ISCLINIC 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE ISCLINIC 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE ISCLINIC{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns TRUE if location is a Clinic.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns TRUE if location is a clinic
- Input Parameters | {::nomarkdown}ORLOC{:/}
- Lines | {::nomarkdown} N ORTYP<br/> S ORY=0<br/> S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")<br/> I (ORTYP="C")!(ORTYP="M") S ORY=1{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,19 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORLOC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Location{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ISCLINIC^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
+ Method comment | Returns TRUE if location is a clinic
+ Input parameters | {::nomarkdown}ORLOC{:/}
+ Code | ```  N ORTYP
+ S ORY=0
+ S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")
+ I (ORTYP="C")!(ORTYP="M") S ORY=1```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU FIELD LOAD BY IEN 
+# [RPCs](TableOfContent.md) &#8594; TIU FIELD LOAD BY IEN 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD LOAD BY IEN{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns a single Template Field object.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Load Template Field by IEN
- Input Parameters | {::nomarkdown}FLDIEN{:/}
- Lines | {::nomarkdown} D GETFLD(.TIUY,"",0,.FLDIEN)<br/> I +FLDIEN S TIUY(.05)=FLDIEN{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLDIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Template Field IEN{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | LOADIEN^[TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
+ Method comment | Load Template Field by IEN
+ Input parameters | {::nomarkdown}FLDIEN{:/}
+ Code | ```  D GETFLD(.TIUY,"",0,.FLDIEN)
+ I +FLDIEN S TIUY(.05)=FLDIEN```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

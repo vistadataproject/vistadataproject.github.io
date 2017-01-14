@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU FIELD DELETE 
+# [RPCs](TableOfContent.md) &#8594; TIU FIELD DELETE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD DELETE{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Deletes an entry in the Template Field (8927.1) file.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Call ^DIK to remove a Template Field
- Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | {::nomarkdown} N DIK,DA<br/> S DA=+TIUDA<br/> D UNLOCK(.TIUY,.TIUDA)<br/> S DIK="^TIU(8927.1," D ^DIK<br/> S TIUY=1{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,20 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of record to delete.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | DELETE^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
+ Method comment | Call ^DIK to remove a Template Field
+ Input parameters | {::nomarkdown}TIUDA{:/}
+ Code | ```  N DIK,DA
+ S DA=+TIUDA
+ D UNLOCK(.TIUY,.TIUDA)
+ S DIK="^TIU(8927.1," D ^DIK
+ S TIUY=1```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

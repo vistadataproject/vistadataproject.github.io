@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU16 DEVICE 
+# [RPCs](TableOfContent.md) &#8594; ORWU16 DEVICE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU16 DEVICE{:/}
@@ -16,14 +18,19 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DEVICE^[ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
  Method comment | Return a list of devices
- Lines | {::nomarkdown} S I=0,DEV=""<br/> F  S DEV=$O(^%ZIS(1,"B",DEV)) Q:DEV=""  S IEN=$O(^(DEV,0)) D<br/> . I $E($G(^%ZIS(2,+$G(^%ZIS(1,IEN,"SUBTYPE")),0)))'="P" Q<br/> . I $P($G(^%ZIS(1,IEN,0)),U,12)=2 Q<br/> . S I=I+1,Y(I)=IEN_";"_$P(^%ZIS(1,IEN,0),U)_U_DEV_U_$P($G(^(1)),U)_U_$P($G(^(90)),U)_U_$P(^(91),U)_U_$P(^(91),U,3){:/}
+ Code | ```  S I=0,DEV=""
+ F  S DEV=$O(^%ZIS(1,"B",DEV)) Q:DEV=""  S IEN=$O(^(DEV,0)) D
+ . I $E($G(^%ZIS(2,+$G(^%ZIS(1,IEN,"SUBTYPE")),0)))'="P" Q
+ . I $P($G(^%ZIS(1,IEN,0)),U,12)=2 Q
+ . S I=I+1,Y(I)=IEN_";"_$P(^%ZIS(1,IEN,0),U)_U_DEV_U_$P($G(^(1)),U)_U_$P($G(^(90)),U)_U_$P(^(91),U)_U_$P(^(91),U,3)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

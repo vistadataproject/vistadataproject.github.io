@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDBA1 SCLST 
+# [RPCs](TableOfContent.md) &#8594; ORWDBA1 SCLST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDBA1 SCLST{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Array of Order ID's and SC.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | RPC for compiling appropriate TxF's
- Input Parameters | {::nomarkdown}DFN<br/>ORLST{:/}
- Lines | {::nomarkdown} N GMRCPROS,ORD,ORI,ORPKG<br/> D CPLSTBA(.Y,DFN,.ORLST){:/}
- Leading comment lines | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
 
 ### Input Parameters
 
@@ -33,6 +25,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORLST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of Orders.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | SCLST^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
+ Method comment | RPC for compiling appropriate TxF's
+ First comment | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
+ Input parameters | {::nomarkdown}DFN<br/>ORLST{:/}
+ Code | ```  N GMRCPROS,ORD,ORI,ORPKG
+ D CPLSTBA(.Y,DFN,.ORLST)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

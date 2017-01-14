@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ROR LIST STATES 
+# [RPCs](TableOfContent.md) &#8594; ROR LIST STATES 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ROR LIST STATES{:/}
@@ -27,4 +29,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

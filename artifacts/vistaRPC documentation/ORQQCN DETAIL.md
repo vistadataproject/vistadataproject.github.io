@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN DETAIL 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN DETAIL 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN DETAIL{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns formatted detailed information regarding the consult request,including result report if available.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | return formatted consult request details (plus result note if available):
- Input Parameters | {::nomarkdown}CONSULT{:/}
- Lines | {::nomarkdown} N GMRCOER<br/> S GMRCOER=2<br/> S ORQY=$NA(^TMP("GMRCR",$J,"DT"))<br/> D DT^GMRCSLM2(CONSULT)<br/>{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,20 @@ title: VISTA RPC documentation
 | {::nomarkdown}CONSULT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Consult ID or identifier{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | DETAIL^[ORQQCN](http://code.osehra.org/dox/Routine_ORQQCN_source.html)
+ Method comment | return formatted consult request details (plus result note if available):
+ Input parameters | {::nomarkdown}CONSULT{:/}
+ Code | ```  N GMRCOER
+ S GMRCOER=2
+ S ORQY=$NA(^TMP("GMRCR",$J,"DT"))
+ D DT^GMRCSLM2(CONSULT)
+```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

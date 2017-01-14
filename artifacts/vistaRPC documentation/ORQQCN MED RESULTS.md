@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN MED RESULTS 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN MED RESULTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN MED RESULTS{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns a display of Medicine Package results, followed by any TIUresults.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns Medicine results plus TIU results
- Input Parameters | {::nomarkdown}GMRCO{:/}
- Lines | {::nomarkdown} S ORY=$NA(^TMP("ORRSLT",$J))<br/> D RT^GMRCGUIA(GMRCO,ORY){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}Consult ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of the consults request in file 123,REQUESTS/CONSULTS.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | MEDRSLT^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
+ Method comment | Returns Medicine results plus TIU results
+ Input parameters | {::nomarkdown}GMRCO{:/}
+ Code | ```  S ORY=$NA(^TMP("ORRSLT",$J))
+ D RT^GMRCGUIA(GMRCO,ORY)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

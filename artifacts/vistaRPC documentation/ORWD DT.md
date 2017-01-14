@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWD DT 
+# [RPCs](TableOfContent.md) &#8594; ORWD DT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD DT{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a date in internal Fileman format.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DT^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Returns internal Fileman Date/Time
- Input Parameters | {::nomarkdown}X{:/}
- Lines | {::nomarkdown} N %DT S %DT="TS" D ^%DT{:/}
+ Input parameters | {::nomarkdown}X{:/}
+ Code | ```  N %DT S %DT="TS" D ^%DT```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

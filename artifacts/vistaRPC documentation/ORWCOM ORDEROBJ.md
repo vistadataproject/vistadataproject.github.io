@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCOM ORDEROBJ 
+# [RPCs](TableOfContent.md) &#8594; ORWCOM ORDEROBJ 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCOM ORDEROBJ{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns COM Objects for order accept{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns Accept Order COM Object
- Input Parameters | {::nomarkdown}ORGRP{:/}
- Lines | {::nomarkdown} D GETOBJ(.ORY,"ORWCOM ORDER ACCEPTED",ORGRP){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORGRP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Display Group IEN{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ORDEROBJ^[ORWCOM](http://code.osehra.org/dox/Routine_ORWCOM_source.html)
+ Method comment | Returns Accept Order COM Object
+ Input parameters | {::nomarkdown}ORGRP{:/}
+ Code | ```  D GETOBJ(.ORY,"ORWCOM ORDER ACCEPTED",ORGRP)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

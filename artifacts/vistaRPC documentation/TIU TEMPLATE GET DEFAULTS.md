@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DEFAULTS 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DEFAULTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE GET DEFAULTS{:/}
@@ -16,14 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns Default Template Settings{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETDFLT^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Returns Default Templates for the current user
- Lines | {::nomarkdown} N TIUTMP,TIUERR<br/> D GETLST^XPAR(.TIUTMP,"USR","TIU DEFAULT TEMPLATES","Q",.TIUERR) ;2263<br/> S TIUY=$P($G(TIUTMP(1)),U,2){:/}
+ Code | ```  N TIUTMP,TIUERR
+ D GETLST^XPAR(.TIUTMP,"USR","TIU DEFAULT TEMPLATES","Q",.TIUERR) ;2263
+ S TIUY=$P($G(TIUTMP(1)),U,2)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

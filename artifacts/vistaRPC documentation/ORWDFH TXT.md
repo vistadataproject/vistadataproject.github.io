@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDFH TXT 
+# [RPCs](TableOfContent.md) &#8594; ORWDFH TXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH TXT{:/}
@@ -16,15 +18,22 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to return the text of the current and any future diets for a patient.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | TXT^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return text of current & future diets for a patient
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S LST(1)="Current Diet:  "_$$DIET^ORCDFH(DFN)<br/> N FUTLST D FUT(.FUTLST,DFN) I $D(FUTLST)>1 D<br/> . S LST(2)="Future Diet Orders:",ILST=2<br/> . S I=0 F  S I=$O(FUTLST(I)) Q:'I  D<br/> . . S X=$$FMTE^XLFDT(I,2)_"  "_$P(FUTLST(I),U,2)<br/> . . S LST(ILST)=$S(ILST=2:"Future Diet Orders:  "_X,1:"   "_X)<br/> . . S ILST=ILST+1{:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  S LST(1)="Current Diet:  "_$$DIET^ORCDFH(DFN)
+ N FUTLST D FUT(.FUTLST,DFN) I $D(FUTLST)>1 D
+ . S LST(2)="Future Diet Orders:",ILST=2
+ . S I=0 F  S I=$O(FUTLST(I)) Q:'I  D
+ . . S X=$$FMTE^XLFDT(I,2)_"  "_$P(FUTLST(I),U,2)
+ . . S LST(ILST)=$S(ILST=2:"Future Diet Orders:  "_X,1:"   "_X)
+ . . S ILST=ILST+1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

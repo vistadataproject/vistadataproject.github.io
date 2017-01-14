@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE LOCK 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE LOCK 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE LOCK{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Locks Template{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Lock Template
- Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | {::nomarkdown} L +^TIU(8927,TIUDA,0):1<br/> S TIUY=$T{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,17 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IEN of template to lock.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | LOCK^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
+ Method comment | Lock Template
+ Input parameters | {::nomarkdown}TIUDA{:/}
+ Code | ```  L +^TIU(8927,TIUDA,0):1
+ S TIUY=$T```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

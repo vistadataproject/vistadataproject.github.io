@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXM2 CLRRCL 
+# [RPCs](TableOfContent.md) &#8594; ORWDXM2 CLRRCL 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXM2 CLRRCL{:/}
@@ -16,14 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Clear ORECALL.  Used by CPRS GUI to clean up ^TMP(\ORECALL\,$J) and^TMP(\ORWDXMQ\,$J).{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CLRRCL^[ORWDXM2](http://code.osehra.org/dox/Routine_ORWDXM2_source.html)
  Method comment | clear ORECALL
- Lines | {::nomarkdown} S OK=1<br/> K ^TMP("ORECALL",$J),^TMP("ORWDXMQ",$J){:/}
+ Code | ```  S OK=1
+ K ^TMP("ORECALL",$J),^TMP("ORWDXMQ",$J)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

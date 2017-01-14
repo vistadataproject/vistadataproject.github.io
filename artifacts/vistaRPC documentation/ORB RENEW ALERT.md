@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORB RENEW ALERT 
+# [RPCs](TableOfContent.md) &#8594; ORB RENEW ALERT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB RENEW ALERT{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This rpc renews an alert.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | renew/restore an alert/notification
- Input Parameters | {::nomarkdown}XQAID{:/}
- Lines | {::nomarkdown} Q:$L($G(XQAID))<1<br/> K XQAKILL<br/> I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100<br/> S ORY=1{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,19 @@ title: VISTA RPC documentation
 | {::nomarkdown}XQAID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}XQAID is the unique identifier used by Kernel Alerts to process and take actions on alerts.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | RENEW^[ORB31](http://code.osehra.org/dox/Routine_ORB31_source.html)
+ Method comment | renew/restore an alert/notification
+ Input parameters | {::nomarkdown}XQAID{:/}
+ Code | ```  Q:$L($G(XQAID))<1
+ K XQAKILL
+ I '$D(^XTV(8992,"AXQA",XQAID,DUZ)) D RESTORE^XQALERT1 ;DBIA #4100
+ S ORY=1```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

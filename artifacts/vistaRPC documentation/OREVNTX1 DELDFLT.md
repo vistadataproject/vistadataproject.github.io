@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DELDFLT 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 DELDFLT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 DELDFLT{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DELDFLT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Delete default release event
- Input Parameters | {::nomarkdown}PVIFN{:/}
- Lines | {::nomarkdown} Q:'PVIFN<br/> N ORERR<br/> S ORERR=""<br/> D DEL^XPAR(PVIFN_";VA(200,","OREVNT DEFAULT",1,.ORERR){:/}
+ Input parameters | {::nomarkdown}PVIFN{:/}
+ Code | ```  Q:'PVIFN
+ N ORERR
+ S ORERR=""
+ D DEL^XPAR(PVIFN_";VA(200,","OREVNT DEFAULT",1,.ORERR)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

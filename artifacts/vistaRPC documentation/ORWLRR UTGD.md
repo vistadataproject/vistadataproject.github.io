@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWLRR UTGD 
+# [RPCs](TableOfContent.md) &#8594; ORWLRR UTGD 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWLRR UTGD{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | UTGD^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | from Remote Procedure file
- Input Parameters | {::nomarkdown}TGRP{:/}
- Lines | {::nomarkdown} D UTGD^LR7OGO(.ORY,TGRP){:/}
+ Input parameters | {::nomarkdown}TGRP{:/}
+ Code | ```  D UTGD^LR7OGO(.ORY,TGRP)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

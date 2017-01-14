@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDGX VMDEF 
+# [RPCs](TableOfContent.md) &#8594; ORWDGX VMDEF 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDGX VMDEF{:/}
@@ -16,14 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Loads dialog data (lists & defaults) for a vitals order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | VMDEF^[ORWDGX](http://code.osehra.org/dox/Routine_ORWDGX_source.html)
  Method comment | Return dialog definition for vitals/measurements
- Lines | {::nomarkdown} N ILST S ILST=0<br/> S LST($$NXT)="~Measurements" D MEASURE<br/> S LST($$NXT)="~Schedules" D VMSCHED{:/}
+ Code | ```  N ILST S ILST=0
+ S LST($$NXT)="~Measurements" D MEASURE
+ S LST($$NXT)="~Schedules" D VMSCHED```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

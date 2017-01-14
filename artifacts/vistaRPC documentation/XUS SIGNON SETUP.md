@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; XUS SIGNON SETUP 
+# [RPCs](TableOfContent.md) &#8594; XUS SIGNON SETUP 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS SIGNON SETUP{:/}
@@ -16,16 +18,35 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Establishes environment necessary for DHCP sign-on{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SETUP^[XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  Method comment | RPC. XUS SIGNON SETUP - IA #1632 (API IA #4054)
- Input Parameters | {::nomarkdown}XWBUSRNM<br/>ASOSKIP<br/>D2{:/}
- Lines | {::nomarkdown} N X1 K DUZ<br/> S XWBUSRNM=$G(XWBUSRNM),ASOSKIP=$G(ASOSKIP)<br/> I $L($G(XWBTIP)) S IO("IP")=XWBTIP<br/> S IO("CLNM")=$$LOW^XLFSTR($G(XWBCLMAN)) D ZIO^%ZIS4<br/> D SET1^XUS(0),SET^XWBSEC("XUS XOPT",XOPT) ;p265<br/> D SAVE^XUS1 ;save the home device<br/> S RET(0)=$P(XUENV,U,3),RET(1)=$P(XUVOL,U),RET(2)=XUCI<br/> S RET(3)=$I,RET(4)=$P(XOPT,U,2),RET(5)=0<br/> S RET(6)=$G(^XMB("NETNAME")) ;DBIA #1131<br/> S RET(7)=$$PROD^XUPROD ;Tell if production.<br/> S X1=$$INHIBIT() I X1 S XWBERR=$S(X1=1:"Logons Inhibited",1:"Max Users") Q  ;p523<br/> I (+XWBUSRNM<-30),$$CHKUSER^XUSBSE1(XWBUSRNM) S RET(5)=1 D POST2 Q  ;p523 BSE CHANGE<br/> I $G(ASOSKIP) S XQXFLG("ASO")=1 ;Skip the ASO check, Not for VISITORS p523<br/> I $G(XWBVER)<1.1 S XQXFLG("ZEBRA")=-1 ;Disable for v1.0<br/> I $L(IO("CLNM")),'$G(DUZ) S DUZ=$$AUTOXWB^XUS1B() ;Only check when 1.1 CL.<br/> I $G(DUZ)>0 D  ;p523<br/> . I '$D(XUSER(0)),DUZ D USER^XUS(DUZ)<br/> . N %T S %T=$$USER^XUS1A I %T S DUZ=0 Q<br/> . D NOW,POST2 S RET(5)=1{:/}
- Leading comment lines | {::nomarkdown}sets up environment for GUI signon{:/}
+ First comment | {::nomarkdown}sets up environment for GUI signon{:/}
+ Input parameters | {::nomarkdown}XWBUSRNM<br/>ASOSKIP<br/>D2{:/}
+ Code | ```  N X1 K DUZ
+ S XWBUSRNM=$G(XWBUSRNM),ASOSKIP=$G(ASOSKIP)
+ I $L($G(XWBTIP)) S IO("IP")=XWBTIP
+ S IO("CLNM")=$$LOW^XLFSTR($G(XWBCLMAN)) D ZIO^%ZIS4
+ D SET1^XUS(0),SET^XWBSEC("XUS XOPT",XOPT) ;p265
+ D SAVE^XUS1 ;save the home device
+ S RET(0)=$P(XUENV,U,3),RET(1)=$P(XUVOL,U),RET(2)=XUCI
+ S RET(3)=$I,RET(4)=$P(XOPT,U,2),RET(5)=0
+ S RET(6)=$G(^XMB("NETNAME")) ;DBIA #1131
+ S RET(7)=$$PROD^XUPROD ;Tell if production.
+ S X1=$$INHIBIT() I X1 S XWBERR=$S(X1=1:"Logons Inhibited",1:"Max Users") Q  ;p523
+ I (+XWBUSRNM<-30),$$CHKUSER^XUSBSE1(XWBUSRNM) S RET(5)=1 D POST2 Q  ;p523 BSE CHANGE
+ I $G(ASOSKIP) S XQXFLG("ASO")=1 ;Skip the ASO check, Not for VISITORS p523
+ I $G(XWBVER)<1.1 S XQXFLG("ZEBRA")=-1 ;Disable for v1.0
+ I $L(IO("CLNM")),'$G(DUZ) S DUZ=$$AUTOXWB^XUS1B() ;Only check when 1.1 CL.
+ I $G(DUZ)>0 D  ;p523
+ . I '$D(XUSER(0)),DUZ D USER^XUS(DUZ)
+ . N %T S %T=$$USER^XUS1A I %T S DUZ=0 Q
+ . D NOW,POST2 S RET(5)=1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

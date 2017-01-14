@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU GBLREF 
+# [RPCs](TableOfContent.md) &#8594; ORWU GBLREF 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU GBLREF{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the global reference for a particular file number.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GBLREF^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return global reference for file number
- Input Parameters | {::nomarkdown}FN{:/}
- Lines | {::nomarkdown} S VAL="" Q:'FN<br/> S VAL=$$ROOT^DILFD(+FN){:/}
+ Input parameters | {::nomarkdown}FN{:/}
+ Code | ```  S VAL="" Q:'FN
+ S VAL=$$ROOT^DILFD(+FN)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

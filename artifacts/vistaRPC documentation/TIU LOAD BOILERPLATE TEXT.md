@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU LOAD BOILERPLATE TEXT 
+# [RPCs](TableOfContent.md) &#8594; TIU LOAD BOILERPLATE TEXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU LOAD BOILERPLATE TEXT{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC will load the boilerplate text associated with the selectedtitle, and execute the methods for any objects embedded in the boilerplatetext.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Shell for boilerplate RPC
- Input Parameters | {::nomarkdown}TITLE<br/>DFN<br/>VSTR{:/}
- Lines | {::nomarkdown} K ^TMP("TIUBOIL",$J)<br/> D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))<br/> K ^TMP("TIUBOIL",$J,0){:/}
 
 ### Input Parameters
 
@@ -33,6 +26,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}VSTRING{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This optional parameter is the visit string, formatted as:HLOC;VISIT_DATE;SVC_CATIt's necessary when objects included in the boilerplate are sensitive to the attributes of the visit (e.g., the object VISIT DATE).{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | BLRSHELL^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
+ Method comment | Shell for boilerplate RPC
+ Input parameters | {::nomarkdown}TITLE<br/>DFN<br/>VSTR{:/}
+ Code | ```  K ^TMP("TIUBOIL",$J)
+ D BLRPLT(.TIUY,TITLE,DFN,$G(VSTR))
+ K ^TMP("TIUBOIL",$J,0)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

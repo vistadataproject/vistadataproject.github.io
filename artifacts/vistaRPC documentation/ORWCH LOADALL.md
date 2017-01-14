@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCH LOADALL 
+# [RPCs](TableOfContent.md) &#8594; ORWCH LOADALL 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCH LOADALL{:/}
@@ -16,14 +18,24 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns the sizing related CPRS GUI chart parameters for theuser.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LOADALL^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | load all the sizing related paramters
- Lines | {::nomarkdown} N ORBOUNDS,ORWIDTHS,ORCOLMNS,ILST S ILST=0<br/> D GETLST^XPAR(.ORBOUNDS,DUZ_";VA(200,","ORWCH BOUNDS")<br/> D GETLST^XPAR(.ORWIDTHS,DUZ_";VA(200,","ORWCH WIDTH")<br/> D GETLST^XPAR(.ORCOLMNS,DUZ_";VA(200,","ORWCH COLUMNS")<br/> S ILST=ILST+1,LST(ILST)="~Bounds"<br/> S I="" F  S I=$O(ORBOUNDS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORBOUNDS(I)<br/> S ILST=ILST+1,LST(ILST)="~Widths"<br/> S I="" F  S I=$O(ORWIDTHS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORWIDTHS(I)<br/> S ILST=ILST+1,LST(ILST)="~Columns"<br/> S I="" F  S I=$O(ORCOLMNS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORCOLMNS(I){:/}
+ Code | ```  N ORBOUNDS,ORWIDTHS,ORCOLMNS,ILST S ILST=0
+ D GETLST^XPAR(.ORBOUNDS,DUZ_";VA(200,","ORWCH BOUNDS")
+ D GETLST^XPAR(.ORWIDTHS,DUZ_";VA(200,","ORWCH WIDTH")
+ D GETLST^XPAR(.ORCOLMNS,DUZ_";VA(200,","ORWCH COLUMNS")
+ S ILST=ILST+1,LST(ILST)="~Bounds"
+ S I="" F  S I=$O(ORBOUNDS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORBOUNDS(I)
+ S ILST=ILST+1,LST(ILST)="~Widths"
+ S I="" F  S I=$O(ORWIDTHS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORWIDTHS(I)
+ S ILST=ILST+1,LST(ILST)="~Columns"
+ S I="" F  S I=$O(ORCOLMNS(I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_ORCOLMNS(I)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; XUS INTRO MSG 
+# [RPCs](TableOfContent.md) &#8594; XUS INTRO MSG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS INTRO MSG{:/}
@@ -16,14 +18,15 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns the INTRO message from the KERNEL SYSTEM PARAMETERS file.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | INTRO^[XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  Method comment | Return INTRO TEXT.
- Lines | {::nomarkdown} D INTRO^XUS1A("RET"){:/}
+ Code | ```  D INTRO^XUS1A("RET")```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

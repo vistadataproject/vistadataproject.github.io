@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCH SAVFONT 
+# [RPCs](TableOfContent.md) &#8594; ORWCH SAVFONT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCH SAVFONT{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Saves the user's preferred font.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVFONT^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | save the user's preferred font size
- Input Parameters | {::nomarkdown}VAL{:/}
- Lines | {::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,VAL,.ORERR){:/}
+ Input parameters | {::nomarkdown}VAL{:/}
+ Code | ```  D EN^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,VAL,.ORERR)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

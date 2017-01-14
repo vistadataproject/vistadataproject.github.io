@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDPS32 FORMALT 
+# [RPCs](TableOfContent.md) &#8594; ORWDPS32 FORMALT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS32 FORMALT{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return a list of formulary alternatives.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | FORMALT^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return a list of formulary alternatives
- Input Parameters | {::nomarkdown}IEN<br/>PSTYPE{:/}
- Lines | {::nomarkdown} D ENRFA^PSJORUTL(IEN,PSTYPE,.ORLST)<br/> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br/> . S OI=+$O(^ORD(101.43,"ID",+$P(ORLST(I),U,4)_";99PSP",0))<br/> . S $P(ORLST(I),U,4)=OI I OI S $P(ORLST(I),U,5)=$P(^ORD(101.43,OI,0),U){:/}
+ Input parameters | {::nomarkdown}IEN<br/>PSTYPE{:/}
+ Code | ```  D ENRFA^PSJORUTL(IEN,PSTYPE,.ORLST)
+ S I=0 F  S I=$O(ORLST(I)) Q:'I  D
+ . S OI=+$O(^ORD(101.43,"ID",+$P(ORLST(I),U,4)_";99PSP",0))
+ . S $P(ORLST(I),U,4)=OI I OI S $P(ORLST(I),U,5)=$P(^ORD(101.43,OI,0),U)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

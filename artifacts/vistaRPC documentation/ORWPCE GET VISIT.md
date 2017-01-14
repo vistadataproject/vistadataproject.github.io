@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE GET VISIT 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE GET VISIT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE GET VISIT{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the visit IEN.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETVISIT^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Get the visit IEN
- Input Parameters | {::nomarkdown}IEN<br/>DFN<br/>VSITSTR{:/}
- Lines | {::nomarkdown} I +$G(IEN)<1 D  I 1<br/> .S VISIT=$$GETENC^PXAPI(DFN,$P(VSITSTR,";",2),$P(VSITSTR,";"))<br/> E  S VISIT=$P(^TIU(8925,IEN,0),U,3){:/}
+ Input parameters | {::nomarkdown}IEN<br/>DFN<br/>VSITSTR{:/}
+ Code | ```  I +$G(IEN)<1 D  I 1
+ .S VISIT=$$GETENC^PXAPI(DFN,$P(VSITSTR,";",2),$P(VSITSTR,";"))
+ E  S VISIT=$P(^TIU(8925,IEN,0),U,3)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

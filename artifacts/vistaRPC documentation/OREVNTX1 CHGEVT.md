@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 CHGEVT 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 CHGEVT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 CHGEVT{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CHGEVT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Change order's event
- Input Parameters | {::nomarkdown}NEWEVT<br/>ORIDS{:/}
- Lines | {::nomarkdown} N ORI<br/> S ORI=0<br/> F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D<br/> . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT){:/}
+ Input parameters | {::nomarkdown}NEWEVT<br/>ORIDS{:/}
+ Code | ```  N ORI
+ S ORI=0
+ F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D
+ . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

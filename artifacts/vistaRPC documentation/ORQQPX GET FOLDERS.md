@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPX GET FOLDERS 
+# [RPCs](TableOfContent.md) &#8594; ORQQPX GET FOLDERS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPX GET FOLDERS{:/}
@@ -16,15 +18,20 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the value of the ORQQPX REMINDER FOLDERS parameter for thecurrent user.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETFLDRS^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | Return Visible Reminder Folders
- Lines | {::nomarkdown} N SRV,ORERR,ORTMP<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D GETLST^XPAR(.ORTMP,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX REMINDER FOLDERS","Q",.ORERR)<br/> I +ORTMP S ORFLDRS=$P($G(ORTMP(1)),U,2)<br/> E  S ORFLDRS="DAO"{:/}
- Leading comment lines | {::nomarkdown}Codes: D=Due, A=Applicable, N=Not Applicable, E=Evaluated, O=Other{:/}
+ First comment | {::nomarkdown}Codes: D=Due, A=Applicable, N=Not Applicable, E=Evaluated, O=Other{:/}
+ Code | ```  N SRV,ORERR,ORTMP
+ S SRV=$$GET1^DIQ(200,DUZ,29,"I")
+ D GETLST^XPAR(.ORTMP,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX REMINDER FOLDERS","Q",.ORERR)
+ I +ORTMP S ORFLDRS=$P($G(ORTMP(1)),U,2)
+ E  S ORFLDRS="DAO"```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

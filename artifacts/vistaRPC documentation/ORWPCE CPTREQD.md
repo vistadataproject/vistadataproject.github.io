@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE CPTREQD 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE CPTREQD 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE CPTREQD{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns 1 if TIU DOCUMENT file entry needs a CPT code.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CPTREQD^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | return 1 in VAL if note still needs a CPT code
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} S VAL=+$P(^TIU(8925,IEN,0),U,11){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | ```  S VAL=+$P(^TIU(8925,IEN,0),U,11)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

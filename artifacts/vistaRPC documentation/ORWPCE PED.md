@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE PED 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE PED 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE PED{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns list of education topics for a clinic.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PED^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | get list of education topices for clinic
- Input Parameters | {::nomarkdown}CLINIC{:/}
- Lines | {::nomarkdown} D GETLST^IBDF18A(CLINIC,"PX SELECT EDUCATION TOPICS","LST"){:/}
+ Input parameters | {::nomarkdown}CLINIC{:/}
+ Code | ```  D GETLST^IBDF18A(CLINIC,"PX SELECT EDUCATION TOPICS","LST")```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

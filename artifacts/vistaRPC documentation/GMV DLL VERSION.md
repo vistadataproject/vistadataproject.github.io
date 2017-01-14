@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; GMV DLL VERSION 
+# [RPCs](TableOfContent.md) &#8594; GMV DLL VERSION 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV DLL VERSION{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns a YES or NO response to indicate if the Dynamic Link Library (DLL)file should be used. This remote procedure call is documented in Integration Agreement 4420.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
- Input Parameters | {::nomarkdown}GMVX{:/}
- Lines | {::nomarkdown} S RESULT=$$GET^XPAR("SYS","GMV DLL VERSION",GMVX,"E")<br/> S:RESULT="" RESULT="NO"<br/>{:/}
- Leading comment lines | {::nomarkdown}RESULT = variable name to return check<br/>GMVX = dll name and version date/time<br/>Returns yes or no  {:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,19 @@ title: VISTA RPC documentation
 | {::nomarkdown}GMVX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value is the name of the file and the date/time associated with it (e.g., GMV_VITALSVIEWENTER.DLL:v. 07/21/05 10:34).{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | DLL^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
+ Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
+ First comment | {::nomarkdown}RESULT = variable name to return check<br/>GMVX = dll name and version date/time<br/>Returns yes or no  {:/}
+ Input parameters | {::nomarkdown}GMVX{:/}
+ Code | ```  S RESULT=$$GET^XPAR("SYS","GMV DLL VERSION",GMVX,"E")
+ S:RESULT="" RESULT="NO"
+```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

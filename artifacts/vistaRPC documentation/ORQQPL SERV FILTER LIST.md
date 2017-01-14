@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPL SERV FILTER LIST 
+# [RPCs](TableOfContent.md) &#8594; ORQQPL SERV FILTER LIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL SERV FILTER LIST{:/}
@@ -16,16 +18,22 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RETURNS ARRAY OF IEN^NAME FOR INPUT ARRAY OF IEN{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETSRVC^[ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  Method comment | GET FILTERED LIST OF INPATIENT SERVICES
- Input Parameters | {::nomarkdown}INP{:/}
- Lines | {::nomarkdown} N I,S<br/> S S=""<br/> F I=1:1 S S=$O(INP(S)) Q:S=""  D<br/> . I INP(S)'="",$G(^DIC(49,INP(S),0))'="" D  Q  ; get next<br/> .. S RETURN(I)=INP(S)_U_$P(^DIC(49,INP(S),0),U,1)<br/>{:/}
- Leading comment lines | {::nomarkdown}RETURN NAMES FOR LIST OF IEN PASSED IN{:/}
+ First comment | {::nomarkdown}RETURN NAMES FOR LIST OF IEN PASSED IN{:/}
+ Input parameters | {::nomarkdown}INP{:/}
+ Code | ```  N I,S
+ S S=""
+ F I=1:1 S S=$O(INP(S)) Q:S=""  D
+ . I INP(S)'="",$G(^DIC(49,INP(S),0))'="" D  Q  ; get next
+ .. S RETURN(I)=INP(S)_U_$P(^DIC(49,INP(S),0),U,1)
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

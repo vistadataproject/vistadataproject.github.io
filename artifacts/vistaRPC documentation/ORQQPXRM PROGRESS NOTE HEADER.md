@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPXRM PROGRESS NOTE HEADER 
+# [RPCs](TableOfContent.md) &#8594; ORQQPXRM PROGRESS NOTE HEADER 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM PROGRESS NOTE HEADER{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns header text to be inserted in each progress note.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | DBIA 3080
- Input Parameters | {::nomarkdown}ORLOC{:/}
- Leading comment lines | {::nomarkdown}ORQQPXRM REMINDERS UNEVALUATED{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}HOSPITAL LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  | {::nomarkdown}Patients location from HOSPITAL LOCATION [#44]. May be null.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | HDR^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Method comment | DBIA 3080
+ First comment | {::nomarkdown}ORQQPXRM REMINDERS UNEVALUATED{:/}
+ Input parameters | {::nomarkdown}ORLOC{:/}
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPT LEGACY 
+# [RPCs](TableOfContent.md) &#8594; ORWPT LEGACY 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT LEGACY{:/}
@@ -16,16 +18,20 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns message if patient has data on a legacy system.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | LEGACY^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | return message if data on the legacy system
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S ORLST(0)=0<br/> I $L($T(HXDATA^A7RDPAGU)) D<br/> . D HXDATA^A7RDPAGU(.ORLST,DFN)<br/> . I $O(ORLST(0)) S ORLST(0)=1{:/}
- Leading comment lines | {::nomarkdown}ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
+ First comment | {::nomarkdown}ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  S ORLST(0)=0
+ I $L($T(HXDATA^A7RDPAGU)) D
+ . D HXDATA^A7RDPAGU(.ORLST,DFN)
+ . I $O(ORLST(0)) S ORLST(0)=1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

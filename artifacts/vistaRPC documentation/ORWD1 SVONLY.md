@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWD1 SVONLY 
+# [RPCs](TableOfContent.md) &#8594; ORWD1 SVONLY 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWD1 SVONLY{:/}
@@ -16,15 +18,23 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Prints service copies only (used when user says \Don't Print\ for theother copies).{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SVONLY^[ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  Method comment | print service copies only
- Input Parameters | {::nomarkdown}HLOC<br/>PRTLST{:/}
- Lines | {::nomarkdown} Q:$G(A7RNDBI)  ; per NDBI, to suppress prints during integration<br/> N TMPLST,I,J<br/> S HLOC=+HLOC_";SC(",OK=1<br/> S I="",J=0 F  S I=$O(PRTLST(I)) Q:I'>0  D<br/> . I ($L(PRTLST(I),U)>1),'$P(PRTLST(I),U,5) Q<br/> . S J=J+1,TMPLST(J)=$P(PRTLST(I),U)<br/> I $D(TMPLST)>1 D GUI^ORPR02(.TMPLST,"","S",HLOC)<br/>{:/}
+ Input parameters | {::nomarkdown}HLOC<br/>PRTLST{:/}
+ Code | ```  Q:$G(A7RNDBI)  ; per NDBI, to suppress prints during integration
+ N TMPLST,I,J
+ S HLOC=+HLOC_";SC(",OK=1
+ S I="",J=0 F  S I=$O(PRTLST(I)) Q:I'>0  D
+ . I ($L(PRTLST(I),U)>1),'$P(PRTLST(I),U,5) Q
+ . S J=J+1,TMPLST(J)=$P(PRTLST(I),U)
+ I $D(TMPLST)>1 D GUI^ORPR02(.TMPLST,"","S",HLOC)
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

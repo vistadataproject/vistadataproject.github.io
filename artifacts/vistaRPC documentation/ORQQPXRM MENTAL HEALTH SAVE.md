@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPXRM MENTAL HEALTH SAVE 
+# [RPCs](TableOfContent.md) &#8594; ORQQPXRM MENTAL HEALTH SAVE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM MENTAL HEALTH SAVE{:/}
@@ -15,14 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Stores test result responses from a reminder dialog.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | DBIA 3080
- Input Parameters | {::nomarkdown}ORES{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -30,6 +24,15 @@ title: VISTA RPC documentation
 | {::nomarkdown}TEST RESULTS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Test results. Needs to pass contents of the YS array (R1,R2,DFN,DUZ,ADATE etc).{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | MHS^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Method comment | DBIA 3080
+ Input parameters | {::nomarkdown}ORES{:/}
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

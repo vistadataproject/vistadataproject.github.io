@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDFH ISOLIST 
+# [RPCs](TableOfContent.md) &#8594; ORWDFH ISOLIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDFH ISOLIST{:/}
@@ -16,14 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of active Isolation/Precaution Type (file #119.4) entries.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ISOLIST^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return list of active isolations/precautions
- Lines | {::nomarkdown} N I,X,IEN<br/> S I=0,X="" F  S X=$O(^FH(119.4,"B",X)) Q:X=""  S IEN=$O(^(X,0)) D<br/> . I '$D(^FH(119.4,IEN,"I")) S I=I+1,LST(I)=IEN_U_X{:/}
+ Code | ```  N I,X,IEN
+ S I=0,X="" F  S X=$O(^FH(119.4,"B",X)) Q:X=""  S IEN=$O(^(X,0)) D
+ . I '$D(^FH(119.4,IEN,"I")) S I=I+1,LST(I)=IEN_U_X```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

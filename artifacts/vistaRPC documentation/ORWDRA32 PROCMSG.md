@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDRA32 PROCMSG 
+# [RPCs](TableOfContent.md) &#8594; ORWDRA32 PROCMSG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDRA32 PROCMSG{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PROCMSG^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | return order message for a procedure
- Input Parameters | {::nomarkdown}IEN{:/}
- Lines | {::nomarkdown} N I<br/> S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S ORY(I)=^(I,0){:/}
+ Input parameters | {::nomarkdown}IEN{:/}
+ Code | ```  N I
+ S I=0 F  S I=$O(^ORD(101.43,IEN,8,I)) Q:I'>0  S ORY(I)=^(I,0)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

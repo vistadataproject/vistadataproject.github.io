@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPT CWAD 
+# [RPCs](TableOfContent.md) &#8594; ORWPT CWAD 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT CWAD{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the CWAD flag(s) for a patient.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | returns CWAD flags for a patient
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} S Y=$$CWAD^ORQPT2(DFN){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} |  |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | CWAD^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
+ Method comment | returns CWAD flags for a patient
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  S Y=$$CWAD^ORQPT2(DFN)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

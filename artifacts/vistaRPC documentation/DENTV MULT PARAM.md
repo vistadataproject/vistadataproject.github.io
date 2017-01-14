@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; DENTV MULT PARAM 
+# [RPCs](TableOfContent.md) &#8594; DENTV MULT PARAM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}DENTV MULT PARAM{:/}
@@ -26,4 +28,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

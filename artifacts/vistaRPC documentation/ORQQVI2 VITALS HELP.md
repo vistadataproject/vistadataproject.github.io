@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS HELP 
+# [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS HELP 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQVI2 VITALS HELP{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | HELP^[ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
  Method comment | This procedure will return help for a particular
- Input Parameters | {::nomarkdown}ORQTYPE{:/}
- Lines | {::nomarkdown} D HELP^GMRVPCE0(ORQTYPE,"ORQLST"){:/}
- Leading comment lines | {::nomarkdown}measurement type in an array.<br/>Input<br/>Variables:  ORQTYPE=Type of measurement (abbreviation<br/>(req.)  from PCE Device Interface Specification).<br/>ORQLST=Array root to store help text in{:/}
+ First comment | {::nomarkdown}measurement type in an array.<br/>Input<br/>Variables:  ORQTYPE=Type of measurement (abbreviation<br/>(req.)  from PCE Device Interface Specification).<br/>ORQLST=Array root to store help text in{:/}
+ Input parameters | {::nomarkdown}ORQTYPE{:/}
+ Code | ```  D HELP^GMRVPCE0(ORQTYPE,"ORQLST")```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

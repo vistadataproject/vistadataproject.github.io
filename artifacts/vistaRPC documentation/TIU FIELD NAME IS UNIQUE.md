@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU FIELD NAME IS UNIQUE 
+# [RPCs](TableOfContent.md) &#8594; TIU FIELD NAME IS UNIQUE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU FIELD NAME IS UNIQUE{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns TRUE if the template field name is unique{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Is Name Unique?
- Input Parameters | {::nomarkdown}NAME<br/>IEN{:/}
- Lines | {::nomarkdown} N FLD<br/> S FLD=+$O(^TIU(8927.1,"B",NAME,0))<br/> I +FLD,FLD'=IEN S TIUY=0<br/> E  S TIUY=1{:/}
 
 ### Input Parameters
 
@@ -32,6 +25,19 @@ title: VISTA RPC documentation
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Optional IEN of existing field{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ISUNIQUE^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
+ Method comment | Is Name Unique?
+ Input parameters | {::nomarkdown}NAME<br/>IEN{:/}
+ Code | ```  N FLD
+ S FLD=+$O(^TIU(8927.1,"B",NAME,0))
+ I +FLD,FLD'=IEN S TIUY=0
+ E  S TIUY=1```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

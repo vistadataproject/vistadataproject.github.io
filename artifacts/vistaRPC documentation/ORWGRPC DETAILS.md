@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWGRPC DETAILS 
+# [RPCs](TableOfContent.md) &#8594; ORWGRPC DETAILS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC DETAILS{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DETAILS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get report for type of data for a date or date range
- Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>TYPE<br/>COMP{:/}
- Lines | {::nomarkdown} D DETAILS^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,TYPE,$G(COMP))<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
+ Input parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>TYPE<br/>COMP{:/}
+ Code | ```  D DETAILS^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,TYPE,$G(COMP))
+ S ITEMS=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

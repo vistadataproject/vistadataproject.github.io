@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCS PRINT REPORT 
+# [RPCs](TableOfContent.md) &#8594; ORWCS PRINT REPORT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCS PRINT REPORT{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [ORWCSP](http://code.osehra.org/dox/Routine_ORWCSP_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This rpc is used to print a consult report on the Consult tabin CPRS.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | print report entry point
- Input Parameters | {::nomarkdown}ORIO<br/>DFN<br/>ORID{:/}
- Lines | {::nomarkdown} IF '$$CHK() G PRINTQ<br/> N TASKDATA<br/> S TASKDATA("DESC")="Consult Report Print"<br/> S TASKDATA("RTN")="DEQUE^ORWCSP"<br/> D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA){:/}
- Leading comment lines | {::nomarkdown}RPC: ORWCS PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
 
@@ -34,6 +26,21 @@ title: VISTA RPC documentation
 | {::nomarkdown}CONSULT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Identification number of the consult.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | PRINT^[ORWCSP](http://code.osehra.org/dox/Routine_ORWCSP_source.html)
+ Method comment | print report entry point
+ First comment | {::nomarkdown}RPC: ORWCS PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
+ Input parameters | {::nomarkdown}ORIO<br/>DFN<br/>ORID{:/}
+ Code | ```  IF '$$CHK() G PRINTQ
+ N TASKDATA
+ S TASKDATA("DESC")="Consult Report Print"
+ S TASKDATA("RTN")="DEQUE^ORWCSP"
+ D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

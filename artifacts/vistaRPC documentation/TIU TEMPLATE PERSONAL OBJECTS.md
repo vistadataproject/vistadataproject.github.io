@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE PERSONAL OBJECTS 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE PERSONAL OBJECTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE PERSONAL OBJECTS{:/}
@@ -16,15 +18,22 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list or Patient Data Objects allowed in Personal Templates.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PERSOBJS^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Returns the list of Patient Data Objects that are
- Lines | {::nomarkdown} N SRV<br/> K TIUY<br/> D OBJACCUM(.TIUY,"USR")<br/> S SRV=$$GETSRV(DUZ)<br/> I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))<br/> D OBJACCUM(.TIUY,"DIV")<br/> D OBJACCUM(.TIUY,"SYS"){:/}
- Leading comment lines | {::nomarkdown}allowed to be used in Personal Templates{:/}
+ First comment | {::nomarkdown}allowed to be used in Personal Templates{:/}
+ Code | ```  N SRV
+ K TIUY
+ D OBJACCUM(.TIUY,"USR")
+ S SRV=$$GETSRV(DUZ)
+ I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))
+ D OBJACCUM(.TIUY,"DIV")
+ D OBJACCUM(.TIUY,"SYS")```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

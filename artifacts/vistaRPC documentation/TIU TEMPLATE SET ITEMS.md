@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET ITEMS 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET ITEMS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE SET ITEMS{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This RPC will create or update the items for a Group, Class, or Root.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Change ITEMs of a group, class, or root
- Input Parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
- Lines | {::nomarkdown} N TIUI S TIUI=0<br/> D CLRITMS(TIUDA) ; Remove ITEMS<br/> F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D<br/> . N TIUITEM,TIUSUCC<br/> . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI<br/> . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)<br/> . S SUCCESS(TIUI)=TIUSUCC{:/}
- Leading comment lines | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
 
 ### Input Parameters
 
@@ -33,6 +25,23 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUX{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the list of items to be filed for the entry. It should beformatted as follows: TIUX(SEQ)=IEN of the ITEM in the TEMPLATE file (#8927) e.g., TIUX(1)=172TIUX(2)=173TIUX(3)=174 where the values 172, 173, and 174 are valid pointers to Template fileentries.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | SETITEMS^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
+ Method comment | Change ITEMs of a group, class, or root
+ First comment | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
+ Input parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
+ Code | ```  N TIUI S TIUI=0
+ D CLRITMS(TIUDA) ; Remove ITEMS
+ F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D
+ . N TIUITEM,TIUSUCC
+ . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI
+ . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)
+ . S SUCCESS(TIUI)=TIUSUCC```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORBCMA5 GETUDID 
+# [RPCs](TableOfContent.md) &#8594; ORBCMA5 GETUDID 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORBCMA5 GETUDID{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETUDID^[ORBCMA5](http://code.osehra.org/dox/Routine_ORBCMA5_source.html)
  Method comment | Get Unit/Dose Order Form ID
- Input Parameters | {::nomarkdown}INFO{:/}
- Lines | {::nomarkdown} S Y=$O(^ORD(101.41,"B","PSJ OR PAT OE",0))<br/> S:$L(Y)<1 Y=0{:/}
+ Input parameters | {::nomarkdown}INFO{:/}
+ Code | ```  S Y=$O(^ORD(101.41,"B","PSJ OR PAT OE",0))
+ S:$L(Y)<1 Y=0```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

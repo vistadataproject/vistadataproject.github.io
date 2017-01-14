@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 PUTEVNT 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 PUTEVNT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 PUTEVNT{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PUTEVNT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Save new patient delayed events to file 100.2
- Input Parameters | {::nomarkdown}DFN<br/>EVT<br/>ORIFN{:/}
- Lines | {::nomarkdown} S ORY=$$NEW^OREVNT(DFN,EVT,ORIFN){:/}
+ Input parameters | {::nomarkdown}DFN<br/>EVT<br/>ORIFN{:/}
+ Code | ```  S ORY=$$NEW^OREVNT(DFN,EVT,ORIFN)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

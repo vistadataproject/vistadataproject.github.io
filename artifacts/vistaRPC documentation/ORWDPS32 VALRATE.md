@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDPS32 VALRATE 
+# [RPCs](TableOfContent.md) &#8594; ORWDPS32 VALRATE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDPS32 VALRATE{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return a 1 if IV rate text is valid, otherwise return 0.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | VALRATE^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return "1" (true) if IV rate text is valid
- Input Parameters | {::nomarkdown}X{:/}
- Lines | {::nomarkdown} I $E($RE($$UPPER^ORWDPS32(X)),1,5)="RH/LM"  S X=$E(X,1,$L(X)-5)<br/> S X=$$TRIM^ORWDPS32(X)<br/> D ORINF^PSIVSP S VAL=$G(X) ;S OK=$S($D(X):1,1:0){:/}
+ Input parameters | {::nomarkdown}X{:/}
+ Code | ```  I $E($RE($$UPPER^ORWDPS32(X)),1,5)="RH/LM"  S X=$E(X,1,$L(X)-5)
+ S X=$$TRIM^ORWDPS32(X)
+ D ORINF^PSIVSP S VAL=$G(X) ;S OK=$S($D(X):1,1:0)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

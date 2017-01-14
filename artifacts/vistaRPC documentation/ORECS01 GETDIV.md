@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORECS01 GETDIV 
+# [RPCs](TableOfContent.md) &#8594; ORECS01 GETDIV 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORECS01 GETDIV{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETDIV^[ORECS01](http://code.osehra.org/dox/Routine_ORECS01_source.html)
  Method comment | Get user's division
- Input Parameters | {::nomarkdown}USR{:/}
- Lines | {::nomarkdown} S ORY=0<br/> S:$G(DUZ(2)) ORY=DUZ(2){:/}
+ Input parameters | {::nomarkdown}USR{:/}
+ Code | ```  S ORY=0
+ S:$G(DUZ(2)) ORY=DUZ(2)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

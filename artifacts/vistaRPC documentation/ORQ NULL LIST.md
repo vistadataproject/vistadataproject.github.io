@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQ NULL LIST 
+# [RPCs](TableOfContent.md) &#8594; ORQ NULL LIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQ NULL LIST{:/}
@@ -16,14 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a null list.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | NLIST^[ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  Method comment | return a null list
- Lines | {::nomarkdown} S ORQY(1)=""<br/>{:/}
+ Code | ```  S ORQY(1)=""
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

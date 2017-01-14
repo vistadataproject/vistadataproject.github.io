@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDX1 ORDMATCH 
+# [RPCs](TableOfContent.md) &#8594; ORWDX1 ORDMATCH 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX1 ORDMATCH{:/}
@@ -14,14 +16,6 @@ title: VISTA RPC documentation
  routine | [ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC will accept a list of orders and each order status, if one of the order does not have a status it will return a false value.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Input Parameters | {::nomarkdown}DFN<br/>ORYARR{:/}
- Lines | {::nomarkdown} N ACTION,CNT,IEN,MATCH,ORDERID,STATUS<br/> S CNT=0,MATCH=1<br/> F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0!(MATCH=0)  D<br/> . S ORDERID=$P(ORYARR(CNT),U),STATUS=$P(ORYARR(CNT),U,2)<br/> . ;*341 Set up Action before validation.<br/> . S IEN=$P(ORDERID,";"),ACTION=$P(ORDERID,";",2)<br/> . I ORDERID=0,$G(ACTION)="" Q<br/> . I STATUS=$P($G(^OR(100,IEN,3)),U,3) Q<br/> . I $P($G(^ORD(100.01,STATUS,0)),U)="DISCONTINUED/EDIT" Q<br/> . ;S MATCH=0<br/> . I $P($G(^OR(100,IEN,8,ACTION,0)),U,15)'=STATUS S MATCH=0<br/> S ORY=MATCH{:/}
 
 ### Input Parameters
 
@@ -31,6 +25,26 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORYARR{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | ORDMATCH^[ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
+ Input parameters | {::nomarkdown}DFN<br/>ORYARR{:/}
+ Code | ```  N ACTION,CNT,IEN,MATCH,ORDERID,STATUS
+ S CNT=0,MATCH=1
+ F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0!(MATCH=0)  D
+ . S ORDERID=$P(ORYARR(CNT),U),STATUS=$P(ORYARR(CNT),U,2)
+ . ;*341 Set up Action before validation.
+ . S IEN=$P(ORDERID,";"),ACTION=$P(ORDERID,";",2)
+ . I ORDERID=0,$G(ACTION)="" Q
+ . I STATUS=$P($G(^OR(100,IEN,3)),U,3) Q
+ . I $P($G(^ORD(100.01,STATUS,0)),U)="DISCONTINUED/EDIT" Q
+ . ;S MATCH=0
+ . I $P($G(^OR(100,IEN,8,ACTION,0)),U,15)'=STATUS S MATCH=0
+ S ORY=MATCH```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

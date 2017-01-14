@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDX SEND 
+# [RPCs](TableOfContent.md) &#8594; ORWDX SEND 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX SEND{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}RPC to sign a list of orders with input as follows:        DFN=Patient        ORNP=Provider        ORL=Location        ES=Encrypted ES code         ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SEND^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Sign
- Input Parameters | {::nomarkdown}DFN<br/>ORNP<br/>ORL<br/>ES<br/>ORWREC{:/}
- Leading comment lines | {::nomarkdown}DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/>ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
+ First comment | {::nomarkdown}DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/>ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
+ Input parameters | {::nomarkdown}DFN<br/>ORNP<br/>ORL<br/>ES<br/>ORWREC{:/}
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

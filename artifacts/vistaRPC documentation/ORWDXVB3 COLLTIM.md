@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXVB3 COLLTIM 
+# [RPCs](TableOfContent.md) &#8594; ORWDXVB3 COLLTIM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXVB3 COLLTIM{:/}
@@ -16,14 +18,15 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC checks the value of the parameter OR VBECS REMOVE COLL TIMEto determine if a default collection time should be presented on theVBECS order dialog.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | COLLTIM^[ORWDXVB3](http://code.osehra.org/dox/Routine_ORWDXVB3_source.html)
  Method comment | Get Collection Time Default Parameter Value
- Lines | {::nomarkdown} S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I"){:/}
+ Code | ```  S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I")```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

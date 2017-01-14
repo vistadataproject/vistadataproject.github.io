@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU HAS OPTION ACCESS 
+# [RPCs](TableOfContent.md) &#8594; ORWU HAS OPTION ACCESS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU HAS OPTION ACCESS{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns true if the user has access to the specified menu option.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | returns TRUE if the user has access to a menu option
- Input Parameters | {::nomarkdown}OPTION{:/}
- Lines | {::nomarkdown} S VAL=+$$ACCESS^XQCHK(DUZ,OPTION)<br/> I VAL'>0 S VAL=0<br/> E  S VAL=1{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}OPTION{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Either the Option Name or Option IEN{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | HASOPTN^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
+ Method comment | returns TRUE if the user has access to a menu option
+ Input parameters | {::nomarkdown}OPTION{:/}
+ Code | ```  S VAL=+$$ACCESS^XQCHK(DUZ,OPTION)
+ I VAL'>0 S VAL=0
+ E  S VAL=1```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

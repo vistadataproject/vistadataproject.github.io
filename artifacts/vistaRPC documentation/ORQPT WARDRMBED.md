@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQPT WARDRMBED 
+# [RPCs](TableOfContent.md) &#8594; ORQPT WARDRMBED 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQPT WARDRMBED{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the ward, room-bed for a patient.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | return patient's ward, room-bed: ward ien^ward name room-bed
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} N WNAME,WIEN S WIEN="",Y=""<br/> S WNAME=$G(^DPT(DFN,.1)) I $L(WNAME) S WIEN=$O(^DIC(42,"B",WNAME,WIEN))<br/> I $L($G(WNAME)),$L($G(WIEN)) S Y=WIEN_U_WNAME_" "_$G(^DPT(DFN,.101)){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier (DFN) from file #2{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | WRB^[ORQPTQ3](http://code.osehra.org/dox/Routine_ORQPTQ3_source.html)
+ Method comment | return patient's ward, room-bed: ward ien^ward name room-bed
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  N WNAME,WIEN S WIEN="",Y=""
+ S WNAME=$G(^DPT(DFN,.1)) I $L(WNAME) S WIEN=$O(^DIC(42,"B",WNAME,WIEN))
+ I $L($G(WNAME)),$L($G(WIEN)) S Y=WIEN_U_WNAME_" "_$G(^DPT(DFN,.101))```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

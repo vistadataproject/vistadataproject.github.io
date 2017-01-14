@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDX DLGID 
+# [RPCs](TableOfContent.md) &#8594; ORWDX DLGID 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX DLGID{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the dialog IEN for an order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | DLGID^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | return dlg IEN for order
- Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | {::nomarkdown} S VAL=$P(^OR(100,+ORIFN,0),U,5)<br/> S VAL=$S($P(VAL,";",2)="ORD(101.41,":+VAL,1:0){:/}
+ Input parameters | {::nomarkdown}ORIFN{:/}
+ Code | ```  S VAL=$P(^OR(100,+ORIFN,0),U,5)
+ S VAL=$S($P(VAL,";",2)="ORD(101.41,":+VAL,1:0)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

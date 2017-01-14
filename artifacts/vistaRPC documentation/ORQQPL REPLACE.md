@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPL REPLACE 
+# [RPCs](TableOfContent.md) &#8594; ORQQPL REPLACE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPL REPLACE{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}REPLACES A PROBLEM THAT WAS PREVIOUSLY DELETED{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | replace problem on patient's list
- Input Parameters | {::nomarkdown}DA{:/}
- Lines | {::nomarkdown} N CHNGE,DIE,DR<br/> I $P($G(^AUPNPROB(DA,1)),U,2)'="H" D  Q  ; BAIL OUT - INVALID RECORD<br/> . S RETURN=0<br/> S DR="1.02////P"<br/> S DIE="^AUPNPROB("<br/> D ^DIE<br/> S CHNGE=DA_"^1.02^"_$$HTFM^XLFDT($H)_U_DUZ_"^H^P^Replaced^"_DUZ<br/> D AUDIT^GMPLX(CHNGE,"")<br/> D DTMOD^GMPLX(DA)<br/> S RETURN=1{:/}
- Leading comment lines | {::nomarkdown}taken from REPLACE^GMPLRPTR{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,26 @@ title: VISTA RPC documentation
 | {::nomarkdown}IFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IFN OF PROBLEM{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | REPLACE^[ORQQPL2](http://code.osehra.org/dox/Routine_ORQQPL2_source.html)
+ Method comment | replace problem on patient's list
+ First comment | {::nomarkdown}taken from REPLACE^GMPLRPTR{:/}
+ Input parameters | {::nomarkdown}DA{:/}
+ Code | ```  N CHNGE,DIE,DR
+ I $P($G(^AUPNPROB(DA,1)),U,2)'="H" D  Q  ; BAIL OUT - INVALID RECORD
+ . S RETURN=0
+ S DR="1.02////P"
+ S DIE="^AUPNPROB("
+ D ^DIE
+ S CHNGE=DA_"^1.02^"_$$HTFM^XLFDT($H)_U_DUZ_"^H^P^Replaced^"_DUZ
+ D AUDIT^GMPLX(CHNGE,"")
+ D DTMOD^GMPLX(DA)
+ S RETURN=1```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

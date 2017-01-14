@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPT PTINQ 
+# [RPCs](TableOfContent.md) &#8594; ORWPT PTINQ 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT PTINQ{:/}
@@ -16,15 +18,18 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns formatted patient inquiry text for display in GUI environment.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | PTINQ^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Return formatted pt inquiry report
- Input Parameters | {::nomarkdown}DFN{:/}
- Lines | {::nomarkdown} K ^TMP("ORDATA",$J,1)<br/> D DGINQ^ORCXPND1(DFN)<br/> S REF=$NA(^TMP("ORDATA",$J,1)){:/}
+ Input parameters | {::nomarkdown}DFN{:/}
+ Code | ```  K ^TMP("ORDATA",$J,1)
+ D DGINQ^ORCXPND1(DFN)
+ S REF=$NA(^TMP("ORDATA",$J,1))```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

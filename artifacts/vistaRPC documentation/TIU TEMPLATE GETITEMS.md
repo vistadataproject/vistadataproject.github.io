@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETITEMS 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETITEMS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE GETITEMS{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Returns all children of a non-Template Node
- Input Parameters | {::nomarkdown}TIUDA{:/}
- Lines | {::nomarkdown} N IDX,ITEM,SEQ,ITEMNODE<br/> K ^TMP("TIU TEMPLATE",$J)<br/> S TIUY=$NA(^TMP("TIU TEMPLATE",$J))<br/> I $P($G(^TIU(8927,TIUDA,0)),U,3)'="T" D<br/> .S (IDX,SEQ)=0<br/> .F  S SEQ=$O(^TIU(8927,TIUDA,10,"B",SEQ)) Q:'SEQ  D<br/> ..S ITEM=0<br/> ..F  S ITEM=$O(^TIU(8927,TIUDA,10,"B",SEQ,ITEM)) Q:'ITEM  D<br/> ...S ITEMNODE=$G(^TIU(8927,TIUDA,10,ITEM,0))<br/> ...D ADDNODE(.IDX,$P(ITEMNODE,U,2)){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,25 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GETITEMS^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
+ Method comment | Returns all children of a non-Template Node
+ Input parameters | {::nomarkdown}TIUDA{:/}
+ Code | ```  N IDX,ITEM,SEQ,ITEMNODE
+ K ^TMP("TIU TEMPLATE",$J)
+ S TIUY=$NA(^TMP("TIU TEMPLATE",$J))
+ I $P($G(^TIU(8927,TIUDA,0)),U,3)'="T" D
+ .S (IDX,SEQ)=0
+ .F  S SEQ=$O(^TIU(8927,TIUDA,10,"B",SEQ)) Q:'SEQ  D
+ ..S ITEM=0
+ ..F  S ITEM=$O(^TIU(8927,TIUDA,10,"B",SEQ,ITEM)) Q:'ITEM  D
+ ...S ITEMNODE=$G(^TIU(8927,TIUDA,10,ITEM,0))
+ ...D ADDNODE(.IDX,$P(ITEMNODE,U,2))```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

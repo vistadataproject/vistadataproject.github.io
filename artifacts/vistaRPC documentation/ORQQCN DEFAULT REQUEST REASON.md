@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN DEFAULT REQUEST REASON 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN DEFAULT REQUEST REASON 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN DEFAULT REQUEST REASON{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return default reason for request for service
- Input Parameters | {::nomarkdown}ORSVC<br/>ORDFN<br/>RESOLVE{:/}
- Lines | {::nomarkdown} Q:+$G(ORSVC)=0<br/> I +RESOLVE,(+$G(ORDFN)=0) Q<br/> S ORY=$NA(^TMP("ORREQ",$J))<br/> S:$G(RESOLVE)="" RESOLVE=0<br/> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br/> K @ORY@(0){:/}
- Leading comment lines | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
 
 ### Input Parameters
 
@@ -34,6 +26,22 @@ title: VISTA RPC documentation
 | {::nomarkdown}RESOLVE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} |  |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | DEFRFREQ^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
+ Method comment | Return default reason for request for service
+ First comment | {::nomarkdown}ORSVC=pointer to file 123.5<br/>ORDFN=patient, if RESOLVE=1<br/>RESOLVE=1 to resolve boilerplate, 0 to not resolve{:/}
+ Input parameters | {::nomarkdown}ORSVC<br/>ORDFN<br/>RESOLVE{:/}
+ Code | ```  Q:+$G(ORSVC)=0
+ I +RESOLVE,(+$G(ORDFN)=0) Q
+ S ORY=$NA(^TMP("ORREQ",$J))
+ S:$G(RESOLVE)="" RESOLVE=0
+ D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)
+ K @ORY@(0)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

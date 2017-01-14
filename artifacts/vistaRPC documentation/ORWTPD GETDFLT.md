@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPD GETDFLT 
+# [RPCs](TableOfContent.md) &#8594; ORWTPD GETDFLT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPD GETDFLT{:/}
@@ -16,14 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}get default setting for all reports(time/occ limits){:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETDFLT^[ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
  Method comment | Get default time/occ limits for all reports
- Lines | {::nomarkdown} N VALUE<br/> S Y=$$GET^XPAR("USR.`"_DUZ_"^DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I")<br/> K VALUE{:/}
+ Code | ```  N VALUE
+ S Y=$$GET^XPAR("USR.`"_DUZ_"^DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I")
+ K VALUE```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

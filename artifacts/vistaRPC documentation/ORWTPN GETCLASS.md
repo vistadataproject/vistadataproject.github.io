@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPN GETCLASS 
+# [RPCs](TableOfContent.md) &#8594; ORWTPN GETCLASS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPN GETCLASS{:/}
@@ -16,15 +18,23 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETCLASS^[ORWTPN](http://code.osehra.org/dox/Routine_ORWTPN_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} N CNT,NODE,NUM K VALUES<br/> S CNT=0<br/> S NUM=0 F  S NUM=$O(^TIU(8925.1,"AT","CL",NUM)) Q:NUM<1  D<br/> .I '$$CLASPICK^TIULA4(38,NUM,"CL") Q<br/> .S NODE=$G(^TIU(8925.1,NUM,0))<br/> .I '$L(NODE) Q<br/> .S CNT=CNT+1<br/> .S VALUES(CNT)=NUM_U_NODE{:/}
- Leading comment lines | {::nomarkdown}get available document classes{:/}
+ First comment | {::nomarkdown}get available document classes{:/}
+ Code | ```  N CNT,NODE,NUM K VALUES
+ S CNT=0
+ S NUM=0 F  S NUM=$O(^TIU(8925.1,"AT","CL",NUM)) Q:NUM<1  D
+ .I '$$CLASPICK^TIULA4(38,NUM,"CL") Q
+ .S NODE=$G(^TIU(8925.1,NUM,0))
+ .I '$L(NODE) Q
+ .S CNT=CNT+1
+ .S VALUES(CNT)=NUM_U_NODE```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

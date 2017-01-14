@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU2 COSIGNER 
+# [RPCs](TableOfContent.md) &#8594; ORWU2 COSIGNER 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU2 COSIGNER{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [ORWU2](http://code.osehra.org/dox/Routine_ORWU2_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns a set of New Person file entries for use in a long list box.The set is limited to USR PROVIDERS who do not require cosignature.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Input Parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORDATE<br/>ORTIUTYP<br/>ORTIUDA{:/}
- Lines | {::nomarkdown} N ORDD,ORDIV,ORDUP,ORGOOD,ORI,ORIEN1,ORIEN2,ORLAST,ORMAX,ORMRK,ORMULTI,ORPREV,ORSRV,ORTTL,ORERR<br/> S ORI=0,ORMAX=44,(ORLAST,ORPREV)="",ORDATE=$G(ORDATE) ;ORKEY=$G(ORKEY)<br/> I +$G(ORTIUDA) S ORTIUTYP=+$G(^TIU(8925,+$G(ORTIUDA),0))<br/> S ORMULTI=$$ALL^VASITE ; IA# 10112.  Do once at beginning of call.<br/> F  Q:ORI'<ORMAX  S ORFROM=$O(^VA(200,"AUSER",ORFROM),ORDIR) Q:ORFROM=""  D<br/> .S ORIEN1=""<br/> .F  S ORIEN1=$O(^VA(200,"AUSER",ORFROM,ORIEN1),ORDIR) Q:'ORIEN1  D<br/> ..;<br/> ..I '$$PROVIDER^XUSER(ORIEN1,1) Q   ; Terminated? <br/> ..I '$$ISA^USRLM(+ORIEN1,"PROVIDER",.ORERR,ORDATE) Q  ;(USR PROVIDER CLASS CHECK?){:/}
- Leading comment lines | {::nomarkdown}(Set up for the DC Summary)<br/>(to use TIU doc requirments and USR PROVIDER)<br/>PARAMS from ORWU2 COSIGNER RPC call:<br/>.ORY=returned list.<br/>ORFROM=Starting name for this set.  <br/>ORDIR=Direction to move through the x-ref with $O.  <br/>ORDATE=Checks for an USR PROVIDER on this date (optional).<br/>ORTIUTYP is + of the 0 node of the 8925 docmt.  <br/>ORTIUDA is the docmt IEN,{:/}
 
 ### Input Parameters
 
@@ -35,6 +28,25 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORTIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record # of the TIU Document in file 8925.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | COSIGNER^[ORWU2](http://code.osehra.org/dox/Routine_ORWU2_source.html)
+ First comment | {::nomarkdown}(Set up for the DC Summary)<br/>(to use TIU doc requirments and USR PROVIDER)<br/>PARAMS from ORWU2 COSIGNER RPC call:<br/>.ORY=returned list.<br/>ORFROM=Starting name for this set.  <br/>ORDIR=Direction to move through the x-ref with $O.  <br/>ORDATE=Checks for an USR PROVIDER on this date (optional).<br/>ORTIUTYP is + of the 0 node of the 8925 docmt.  <br/>ORTIUDA is the docmt IEN,{:/}
+ Input parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORDATE<br/>ORTIUTYP<br/>ORTIUDA{:/}
+ Code | ```  N ORDD,ORDIV,ORDUP,ORGOOD,ORI,ORIEN1,ORIEN2,ORLAST,ORMAX,ORMRK,ORMULTI,ORPREV,ORSRV,ORTTL,ORERR
+ S ORI=0,ORMAX=44,(ORLAST,ORPREV)="",ORDATE=$G(ORDATE) ;ORKEY=$G(ORKEY)
+ I +$G(ORTIUDA) S ORTIUTYP=+$G(^TIU(8925,+$G(ORTIUDA),0))
+ S ORMULTI=$$ALL^VASITE ; IA# 10112.  Do once at beginning of call.
+ F  Q:ORI'<ORMAX  S ORFROM=$O(^VA(200,"AUSER",ORFROM),ORDIR) Q:ORFROM=""  D
+ .S ORIEN1=""
+ .F  S ORIEN1=$O(^VA(200,"AUSER",ORFROM,ORIEN1),ORDIR) Q:'ORIEN1  D
+ ..;
+ ..I '$$PROVIDER^XUSER(ORIEN1,1) Q   ; Terminated? 
+ ..I '$$ISA^USRLM(+ORIEN1,"PROVIDER",.ORERR,ORDATE) Q  ;(USR PROVIDER CLASS CHECK?)```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:36 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETTEXT 
+# [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETTEXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}TIU TEMPLATE GETTEXT{:/}
@@ -14,15 +16,6 @@ title: VISTA RPC documentation
  routine | [TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | 
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Expand Boilerplate
- Input Parameters | {::nomarkdown}DFN<br/>VSTR<br/>TIUX{:/}
- Lines | {::nomarkdown} D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX"){:/}
 
 ### Input Parameters
 
@@ -33,6 +26,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUX{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GETTEXT^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
+ Method comment | Expand Boilerplate
+ Input parameters | {::nomarkdown}DFN<br/>VSTR<br/>TIUX{:/}
+ Code | ```  D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX")```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

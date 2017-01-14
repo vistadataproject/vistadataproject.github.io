@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQPXRM GET WH REPORT TEXT 
+# [RPCs](TableOfContent.md) &#8594; ORQQPXRM GET WH REPORT TEXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQPXRM GET WH REPORT TEXT{:/}
@@ -15,14 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC will return the Radiology/Lab Report for a WH Procedure{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Input Parameters | {::nomarkdown}ORIEN{:/}
- Lines | {::nomarkdown} D RESULTS^WVALERTF(.ORY,ORIEN) Q{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -30,6 +24,15 @@ title: VISTA RPC documentation
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN is equal the Women's Health Procedure IEN{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | WHREPORT^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
+ Input parameters | {::nomarkdown}ORIEN{:/}
+ Code | ```  D RESULTS^WVALERTF(.ORY,ORIEN) Q```
 
 
- Generated on January 13th 2017, 7:15:28 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

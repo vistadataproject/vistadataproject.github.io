@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWU HASKEY 
+# [RPCs](TableOfContent.md) &#8594; ORWU HASKEY 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWU HASKEY{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns 1 if a user holds a security key, otherwise 0.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | HASKEY^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | returns TRUE if the user possesses the security key
- Input Parameters | {::nomarkdown}KEY{:/}
- Lines | {::nomarkdown} S VAL=''$D(^XUSEC(KEY,DUZ)){:/}
+ Input parameters | {::nomarkdown}KEY{:/}
+ Code | ```  S VAL=''$D(^XUSEC(KEY,DUZ))```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

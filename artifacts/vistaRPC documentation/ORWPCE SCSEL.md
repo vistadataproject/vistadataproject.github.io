@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPCE SCSEL 
+# [RPCs](TableOfContent.md) &#8594; ORWPCE SCSEL 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPCE SCSEL{:/}
@@ -16,16 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a list of service connected conditions that may be selected.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SCSEL^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | return SC conditions that may be selected
- Input Parameters | {::nomarkdown}DFN<br/>ATM<br/>LOC<br/>VST{:/}
- Lines | {::nomarkdown} N ORX,S S S=";"<br/> D SCCOND^PXUTLSCC(DFN,ATM,LOC,$G(VST),.ORX)<br/> S VAL=$G(ORX("SC"))_S_$G(ORX("AO"))_S_$G(ORX("IR"))_S_$G(ORX("EC"))_S_$G(ORX("MST"))_S_$G(ORX("HNC"))_S_$G(ORX("CV"))_S_$G(ORX("SHAD")){:/}
- Leading comment lines | {::nomarkdown}VAL=SCallow^SCdflt;AOallow^AOdflt;IRallow^IRdflt;ECallow^ECdflt;<br/>MSTallow^MSTdflt;HNCallow^HNCdflt;CVAllow^CVDflt;SHADAllow^SHADDflt{:/}
+ First comment | {::nomarkdown}VAL=SCallow^SCdflt;AOallow^AOdflt;IRallow^IRdflt;ECallow^ECdflt;<br/>MSTallow^MSTdflt;HNCallow^HNCdflt;CVAllow^CVDflt;SHADAllow^SHADDflt{:/}
+ Input parameters | {::nomarkdown}DFN<br/>ATM<br/>LOC<br/>VST{:/}
+ Code | ```  N ORX,S S S=";"
+ D SCCOND^PXUTLSCC(DFN,ATM,LOC,$G(VST),.ORX)
+ S VAL=$G(ORX("SC"))_S_$G(ORX("AO"))_S_$G(ORX("IR"))_S_$G(ORX("EC"))_S_$G(ORX("MST"))_S_$G(ORX("HNC"))_S_$G(ORX("CV"))_S_$G(ORX("SHAD"))```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

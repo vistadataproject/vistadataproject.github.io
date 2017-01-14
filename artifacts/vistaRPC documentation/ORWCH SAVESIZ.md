@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWCH SAVESIZ 
+# [RPCs](TableOfContent.md) &#8594; ORWCH SAVESIZ 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWCH SAVESIZ{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC saves the size (bounds) for a particular CPRS GUI control.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVESIZ^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | save the bounds for a particular control
- Input Parameters | {::nomarkdown}NAM<br/>VAL{:/}
- Lines | {::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR){:/}
- Leading comment lines | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
+ First comment | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
+ Input parameters | {::nomarkdown}NAM<br/>VAL{:/}
+ Code | ```  D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; GMV GET CURRENT TIME 
+# [RPCs](TableOfContent.md) &#8594; GMV GET CURRENT TIME 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}GMV GET CURRENT TIME{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Gets the current date and time from the server. This remote procedure call is documented in Integration Agreement 4355.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | TIME^[GMVUTL7](http://code.osehra.org/dox/Routine_GMVUTL7_source.html)
  Method comment | Gets current time
- Input Parameters | {::nomarkdown}P2{:/}
- Lines | {::nomarkdown} S RESULT=$$NOW^XLFDT()<br/>{:/}
+ Input parameters | {::nomarkdown}P2{:/}
+ Code | ```  S RESULT=$$NOW^XLFDT()
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

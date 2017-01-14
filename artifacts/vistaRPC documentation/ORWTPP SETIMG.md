@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP SETIMG 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP SETIMG 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SETIMG{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SETIMG^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}MAX<br/>START<br/>STOP{:/}
- Lines | {::nomarkdown} D SETIMG^ORWTPO(.OK,MAX,START,STOP,DUZ){:/}
- Leading comment lines | {::nomarkdown}save current user's image report defaults{:/}
+ First comment | {::nomarkdown}save current user's image report defaults{:/}
+ Input parameters | {::nomarkdown}MAX<br/>START<br/>STOP{:/}
+ Code | ```  D SETIMG^ORWTPO(.OK,MAX,START,STOP,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

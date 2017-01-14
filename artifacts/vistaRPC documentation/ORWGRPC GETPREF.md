@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWGRPC GETPREF 
+# [RPCs](TableOfContent.md) &#8594; ORWGRPC GETPREF 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWGRPC GETPREF{:/}
@@ -16,14 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETPREF^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get graph settings
- Lines | {::nomarkdown} D GETPREF^ORWGAPI("ORWGRPC")<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
+ Code | ```  D GETPREF^ORWGAPI("ORWGRPC")
+ S DATA=$NA(^TMP("ORWGRPC",$J))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

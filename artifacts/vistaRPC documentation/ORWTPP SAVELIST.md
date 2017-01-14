@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP SAVELIST 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP SAVELIST 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP SAVELIST{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVELIST^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Input Parameters | {::nomarkdown}PLIST<br/>LISTNUM<br/>ORVIZ{:/}
- Lines | {::nomarkdown} D SAVELIST^ORWTPL(.OK,.PLIST,LISTNUM,DUZ,$G(ORVIZ)){:/}
- Leading comment lines | {::nomarkdown}save current user's personal list changes{:/}
+ First comment | {::nomarkdown}save current user's personal list changes{:/}
+ Input parameters | {::nomarkdown}PLIST<br/>LISTNUM<br/>ORVIZ{:/}
+ Code | ```  D SAVELIST^ORWTPL(.OK,.PLIST,LISTNUM,DUZ,$G(ORVIZ))```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

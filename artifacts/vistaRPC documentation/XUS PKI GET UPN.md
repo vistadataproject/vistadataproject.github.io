@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; XUS PKI GET UPN 
+# [RPCs](TableOfContent.md) &#8594; XUS PKI GET UPN 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}XUS PKI GET UPN{:/}
@@ -16,14 +18,15 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC gets the SUBJECT ALTERNATIVE NAME field from the New Person (#200) file field 501.2.  It is used to check that the correct PIV card has been put into the reader.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETUPN^[XUSER2](http://code.osehra.org/dox/Routine_XUSER2_source.html)
  Method comment | Get SUBJECT ALTERNATIVE NAME for PIV card check. -p580
- Lines | {::nomarkdown} S RET=$P($G(^VA(200,DUZ,501)),U,2){:/}
+ Code | ```  S RET=$P($G(^VA(200,DUZ,501)),U,2)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:36 am

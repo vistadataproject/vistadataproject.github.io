@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQXMB MAIL GROUPS 
+# [RPCs](TableOfContent.md) &#8594; ORQQXMB MAIL GROUPS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQXMB MAIL GROUPS{:/}
@@ -16,14 +18,20 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns mail groups in a system.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | MAILG^[ORQQXQA](http://code.osehra.org/dox/Routine_ORQQXQA_source.html)
  Method comment | return mail groups in a system
- Lines | {::nomarkdown} N ORI S ORI=1<br/> D LIST^DIC(3.8,"","","","","","","","","","ORBMG($J)")<br/> F ORI=1:1:$P(ORBMG($J,"DILIST",0),U) S ORY(ORI)=ORBMG($J,"DILIST",2,ORI)_U_ORBMG($J,"DILIST",1,ORI)<br/> D CLEAN^DILF<br/> K ORBMG<br/>{:/}
+ Code | ```  N ORI S ORI=1
+ D LIST^DIC(3.8,"","","","","","","","","","ORBMG($J)")
+ F ORI=1:1:$P(ORBMG($J,"DILIST",0),U) S ORY(ORI)=ORBMG($J,"DILIST",2,ORI)_U_ORBMG($J,"DILIST",1,ORI)
+ D CLEAN^DILF
+ K ORBMG
+```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

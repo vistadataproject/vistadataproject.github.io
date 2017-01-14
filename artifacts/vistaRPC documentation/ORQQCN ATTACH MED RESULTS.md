@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN ATTACH MED RESULTS 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN ATTACH MED RESULTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN ATTACH MED RESULTS{:/}
@@ -14,16 +16,6 @@ title: VISTA RPC documentation
  routine | [ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Allows a med result to be attached to a procedure request.{:/}
-
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Attach a medicine result to a consult
- Input Parameters | {::nomarkdown}GMRCO<br/>GMRCRSLT<br/>GMRCAD<br/>GMRCORNP<br/>ORALTO{:/}
- Lines | {::nomarkdown} Q:+$G(GMRCO)=0<br/> N ORDUZ,X,I<br/> I $G(ORALTO)'="" D<br/> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br/> D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ){:/}
- Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time Consult was resulted.<br/>GMRCORNP - Provider who attached the result to the consult<br/>ORALTO - array of alert recipient IENs{:/}
 
 ### Input Parameters
 
@@ -37,6 +29,21 @@ title: VISTA RPC documentation
 | {::nomarkdown}Alerts to{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}254{:/} |  | {::nomarkdown}Semicolon-delimited list of user DUZs to send alerts to for this action.{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | MEDCOMP^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
+ Method comment | Attach a medicine result to a consult
+ First comment | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time Consult was resulted.<br/>GMRCORNP - Provider who attached the result to the consult<br/>ORALTO - array of alert recipient IENs{:/}
+ Input parameters | {::nomarkdown}GMRCO<br/>GMRCRSLT<br/>GMRCAD<br/>GMRCORNP<br/>ORALTO{:/}
+ Code | ```  Q:+$G(GMRCO)=0
+ N ORDUZ,X,I
+ I $G(ORALTO)'="" D
+ .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""
+ D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

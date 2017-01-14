@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORB FOLLOW-UP ARRAY 
+# [RPCs](TableOfContent.md) &#8594; ORB FOLLOW-UP ARRAY 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORB FOLLOW-UP ARRAY{:/}
@@ -15,16 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This function returns an array of follow-up data.  Content of the datavaries by notification.{:/}
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
- Input Parameters | {::nomarkdown}ORXQAID{:/}
- Lines | {::nomarkdown} S ORENVIR="GUI"<br/> D PROCESS{:/}
- Leading comment lines | {::nomarkdown}called by ORB FOLLOW-UP api:{:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -32,6 +24,18 @@ title: VISTA RPC documentation
 | {::nomarkdown}XQAID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}32{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The identifier used by the Kernel Alert utility to uniquely identify analert/notification.  The OE/RR alerts the format is:\OR,<dfn>,<notif ien>;<notif date.time>\{:/} | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | GUI^[ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
+ Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
+ First comment | {::nomarkdown}called by ORB FOLLOW-UP api:{:/}
+ Input parameters | {::nomarkdown}ORXQAID{:/}
+ Code | ```  S ORENVIR="GUI"
+ D PROCESS```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

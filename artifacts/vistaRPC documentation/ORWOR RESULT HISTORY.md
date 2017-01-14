@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWOR RESULT HISTORY 
+# [RPCs](TableOfContent.md) &#8594; ORWOR RESULT HISTORY 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWOR RESULT HISTORY{:/}
@@ -16,15 +18,21 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns a result history of a CPRS order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | RESHIST^[ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  Method comment | Return result history of associated tests identified by ID
- Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
- Lines | {::nomarkdown} K ^TMP("ORXPND",$J)<br/> N ORESULTS,ORVP,LCNT<br/> S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br/> D ORDHIST^ORWOR2<br/> K ^TMP("ORXPND",$J,"VIDEO")<br/> S REF=$NA(^TMP("ORXPND",$J)){:/}
+ Input parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
+ Code | ```  K ^TMP("ORXPND",$J)
+ N ORESULTS,ORVP,LCNT
+ S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("
+ D ORDHIST^ORWOR2
+ K ^TMP("ORXPND",$J,"VIDEO")
+ S REF=$NA(^TMP("ORXPND",$J))```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

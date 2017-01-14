@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN PROVDX 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN PROVDX 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN PROVDX{:/}
@@ -15,15 +17,6 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | 
 
-
-### Method description
-
- property | value 
- --- | --- 
- Method comment | Return provisional dx prompting info for service
- Input Parameters | {::nomarkdown}ORIEN{:/}
- Lines | {::nomarkdown} S ORY=$$PROVDX^GMRCUTL1(ORIEN){:/}
-
 ### Input Parameters
 
 | input parameter | parameter type | maximum data length | required | description | 
@@ -31,6 +24,16 @@ title: VISTA RPC documentation
 | {::nomarkdown}SVCIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} |  | 
 
 
+## MUMPS Method description
+
+ property | value 
+ --- | --- 
+ Method | PROVDX^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
+ Method comment | Return provisional dx prompting info for service
+ Input parameters | {::nomarkdown}ORIEN{:/}
+ Code | ```  S ORY=$$PROVDX^GMRCUTL1(ORIEN)```
 
 
- Generated on January 13th 2017, 7:15:27 am
+
+
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWORR GETTXT 
+# [RPCs](TableOfContent.md) &#8594; ORWORR GETTXT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWORR GETTXT{:/}
@@ -16,15 +18,17 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the text of an existing order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETTXT^[ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  Method comment | get text of an order
- Input Parameters | {::nomarkdown}IFN{:/}
- Lines | {::nomarkdown} I $L(IFN,";")=1 S IFN=IFN_";1"<br/> D TEXT^ORQ12(.LST,IFN,255){:/}
+ Input parameters | {::nomarkdown}IFN{:/}
+ Code | ```  I $L(IFN,";")=1 S IFN=IFN_";1"
+ D TEXT^ORQ12(.LST,IFN,255)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP GETREM 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP GETREM 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP GETREM{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | GETREM^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} D GETREM^ORWTPR(.VALUES,DUZ){:/}
- Leading comment lines | {::nomarkdown}get current user's reminders{:/}
+ First comment | {::nomarkdown}get current user's reminders{:/}
+ Code | ```  D GETREM^ORWTPR(.VALUES,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

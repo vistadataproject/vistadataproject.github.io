@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDX FORMID 
+# [RPCs](TableOfContent.md) &#8594; ORWDX FORMID 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDX FORMID{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Returns the base dialog FormID for an order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | FORMID^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Base dlg FormID for an order
- Input Parameters | {::nomarkdown}ORIFN{:/}
- Lines | {::nomarkdown} N DLG<br/> S VAL=0,DLG=$P(^OR(100,+ORIFN,0),U,5)<br/> Q:$P(DLG,";",2)'="ORD(101.41,"<br/> D FORMID^ORWDXM(.VAL,+DLG){:/}
+ Input parameters | {::nomarkdown}ORIFN{:/}
+ Code | ```  N DLG
+ S VAL=0,DLG=$P(^OR(100,+ORIFN,0),U,5)
+ Q:$P(DLG,";",2)'="ORD(101.41,"
+ D FORMID^ORWDXM(.VAL,+DLG)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

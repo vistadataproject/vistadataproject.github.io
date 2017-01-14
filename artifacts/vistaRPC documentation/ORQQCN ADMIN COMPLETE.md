@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORQQCN ADMIN COMPLETE 
+# [RPCs](TableOfContent.md) &#8594; ORQQCN ADMIN COMPLETE 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORQQCN ADMIN COMPLETE{:/}
@@ -16,16 +18,17 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ADMCOMPL^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Admin users
- Input Parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORRESP<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
- Lines | {::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete{:/}
- Leading comment lines | {::nomarkdown}Administrative complete action{:/}
+ First comment | {::nomarkdown}Administrative complete action{:/}
+ Input parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORRESP<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
+ Code | ```  S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

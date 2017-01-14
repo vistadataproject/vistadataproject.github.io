@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWDXC ACCEPT 
+# [RPCs](TableOfContent.md) &#8594; ORWDXC ACCEPT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWDXC ACCEPT{:/}
@@ -16,15 +18,41 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Return list of Order Checks on Accept Order.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | ACCEPT^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return list of Order Checks on Accept Order
- Input Parameters | {::nomarkdown}DFN<br/>FID<br/>STRT<br/>ORL<br/>OIL<br/>ORIFN<br/>ORREN{:/}
- Lines | {::nomarkdown} K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"ORDSGCHK_CACHE")<br/> K ^TMP($J,"ORENHCHK")<br/> N X,Y,USID,ORCHECK,ORI,ORX,ORY,%DT,ORDODSG<br/> S ORL=ORL_";SC(",X=STRT,STRT="",ORDODSG=0<br/> D:X="AM" AM^ORCSAVE2 D:X="NEXT" NEXT^ORCSAVE2<br/> I $L(X) S %DT="FTX" D ^%DT S:Y'>0 Y="" S STRT=Y<br/> S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D<br/> . Q:'OIL(ORI)<br/> . S USID=$$USID(OIL(ORI))<br/> . S OIL(ORI,"USID")=USID<br/> . S ORX=ORX+1,ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_USID<br/> . S:$P(OIL(ORI),U,2)="PSIV" $P(ORX(ORX),"|",7)=$P($P(OIL(ORI),U,3),";")<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"SELECT",.OIL,.ORDODSG)<br/> I $D(ORY) D RETURN^ORCHECK ; expects ORY, ORCHECK<br/> K ORX,ORY<br/> S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D<br/> . Q:'OIL(ORI)<br/> . S ORX=ORX+1<br/> . S ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_OIL(ORI,"USID")_"|"_STRT<br/> . S:$P(OIL(ORI),U,2)="LR" $P(ORX(ORX),"|",6)=$P(OIL(ORI),U,3)<br/> D EN^ORKCHK(.ORY,DFN,.ORX,"ACCEPT",.OIL,.ORDODSG)<br/> I $D(ORY) D RETURN^ORCHECK   ; expects ORY, ORCHECK<br/> D FDBDOWN^ORCHECK(0)<br/> D OPOS(DFN)<br/> D CHK2LST<br/> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE"){:/}
+ Input parameters | {::nomarkdown}DFN<br/>FID<br/>STRT<br/>ORL<br/>OIL<br/>ORIFN<br/>ORREN{:/}
+ Code | ```  K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"ORDSGCHK_CACHE")
+ K ^TMP($J,"ORENHCHK")
+ N X,Y,USID,ORCHECK,ORI,ORX,ORY,%DT,ORDODSG
+ S ORL=ORL_";SC(",X=STRT,STRT="",ORDODSG=0
+ D:X="AM" AM^ORCSAVE2 D:X="NEXT" NEXT^ORCSAVE2
+ I $L(X) S %DT="FTX" D ^%DT S:Y'>0 Y="" S STRT=Y
+ S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D
+ . Q:'OIL(ORI)
+ . S USID=$$USID(OIL(ORI))
+ . S OIL(ORI,"USID")=USID
+ . S ORX=ORX+1,ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_USID
+ . S:$P(OIL(ORI),U,2)="PSIV" $P(ORX(ORX),"|",7)=$P($P(OIL(ORI),U,3),";")
+ D EN^ORKCHK(.ORY,DFN,.ORX,"SELECT",.OIL,.ORDODSG)
+ I $D(ORY) D RETURN^ORCHECK ; expects ORY, ORCHECK
+ K ORX,ORY
+ S (ORI,ORX)=0 F  S ORI=$O(OIL(ORI)) Q:'ORI  D
+ . Q:'OIL(ORI)
+ . S ORX=ORX+1
+ . S ORX(ORX)=+OIL(ORI)_"|"_FID_"|"_OIL(ORI,"USID")_"|"_STRT
+ . S:$P(OIL(ORI),U,2)="LR" $P(ORX(ORX),"|",6)=$P(OIL(ORI),U,3)
+ D EN^ORKCHK(.ORY,DFN,.ORX,"ACCEPT",.OIL,.ORDODSG)
+ I $D(ORY) D RETURN^ORCHECK   ; expects ORY, ORCHECK
+ D FDBDOWN^ORCHECK(0)
+ D OPOS(DFN)
+ D CHK2LST
+ K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"),^TMP($J,"ORDSGCHK_CACHE")```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

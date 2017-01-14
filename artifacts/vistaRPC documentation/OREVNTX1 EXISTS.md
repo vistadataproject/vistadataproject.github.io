@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; OREVNTX1 EXISTS 
+# [RPCs](TableOfContent.md) &#8594; OREVNTX1 EXISTS 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}OREVNTX1 EXISTS{:/}
@@ -16,15 +18,19 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | EXISTS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Returns PtEvtID ptr #100.2 if patient already has delayed orders
- Input Parameters | {::nomarkdown}DFN<br/>EVT{:/}
- Lines | {::nomarkdown} I '+EVT S ORY=0 Q<br/> N PTEVT S (PTEVT,ORY)=0<br/> S PTEVT=$O(^ORE(100.2,"AE",+DFN,+EVT,PTEVT))<br/> I PTEVT>0 S ORY=PTEVT{:/}
+ Input parameters | {::nomarkdown}DFN<br/>EVT{:/}
+ Code | ```  I '+EVT S ORY=0 Q
+ N PTEVT S (PTEVT,ORY)=0
+ S PTEVT=$O(^ORE(100.2,"AE",+DFN,+EVT,PTEVT))
+ I PTEVT>0 S ORY=PTEVT```
 
 
 
 
- Generated on January 13th 2017, 7:15:28 am
+ Generated on January 14th 2017, 7:26:35 am

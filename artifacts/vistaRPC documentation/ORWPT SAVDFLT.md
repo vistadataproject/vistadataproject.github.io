@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWPT SAVDFLT 
+# [RPCs](TableOfContent.md) &#8594; ORWPT SAVDFLT 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWPT SAVDFLT{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Saves user's preference for default list source.{:/}
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | SAVDFLT^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | save new default patient list settings (X=type^ien^sdt
- Input Parameters | {::nomarkdown}X{:/}
- Lines | {::nomarkdown} G SAVDFLT^ORWPT1{:/}
+ Input parameters | {::nomarkdown}X{:/}
+ Code | ```  G SAVDFLT^ORWPT1```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am

@@ -5,8 +5,10 @@ title: VISTA RPC documentation
 
 
 
-## [RPCs](TableOfContent.md) &#8594; ORWTPP CSLAB 
+# [RPCs](TableOfContent.md) &#8594; ORWTPP CSLAB 
 
+
+ ## VISTA File 8994
  property | value 
 --- | --- 
  label | {::nomarkdown}ORWTPP CSLAB{:/}
@@ -16,15 +18,16 @@ title: VISTA RPC documentation
  description | 
 
 
-### Method description
+## MUMPS Method description
 
  property | value 
  --- | --- 
+ Method | CSLAB^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- Lines | {::nomarkdown} D CSLAB^ORWTPO(.INFO,DUZ){:/}
- Leading comment lines | {::nomarkdown}get lab date range defaults{:/}
+ First comment | {::nomarkdown}get lab date range defaults{:/}
+ Code | ```  D CSLAB^ORWTPO(.INFO,DUZ)```
 
 
 
 
- Generated on January 13th 2017, 7:15:27 am
+ Generated on January 14th 2017, 7:26:35 am
