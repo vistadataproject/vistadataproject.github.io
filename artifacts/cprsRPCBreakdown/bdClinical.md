@@ -16,8 +16,6 @@ UTILITY | 50 (12%)
 
 These RPCs access at least 29 parameters and 53 files.
 
-
-
 \# | Name | Category | Method | Args | Lines | Tags | Files | Parameters
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 1. | [DG CHK BS5 XREF ARRAY](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK BS5 XREF ARRAY) | READ |  [GUIBS5A^DPTLK6](http://code.osehra.org/dox/Routine_DPTLK6_source.html) | DFN | 27 | FILE, XREF | [2](http://localhost:9000/schema/2) | 
