@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP1 LISTNUTR 
+## [RPCs](TableOfContent.md) &#8594; ORWRP1 LISTNUTR 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | list nutritional assessments
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} N OK,I,X,SITE<br/> K ^TMP($J,"FHADT")<br/> S OK=$$FHWORADT^FHWORA(DFN)<br/> S I=0,SITE=$$SITE^VASITE,SITE=$P(SITE,"^",2)_";"_$P(SITE,"^",3)<br/> F  S I=$O(^TMP($J,"FHADT",DFN,I)) Q:'I  S X=SITE_U_I_U_^(I),^(I)=X<br/> S ROOT=$NA(^TMP($J,"FHADT",DFN)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

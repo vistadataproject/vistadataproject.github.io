@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQOR DETAIL 
+## [RPCs](TableOfContent.md) &#8594; ORQOR DETAIL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return details of ORID (shell to kill VIDEO subs)
+ Input Parameters | {::nomarkdown}ORID<br/>DFN{:/}
+ Lines | {::nomarkdown} Q:'+ORID<br/> I $G(DFN) N ORVP S ORVP=DFN_";DPT("<br/> S LST="^TMP(""ORTXT"",$J)"<br/> D DETAIL^ORQ2(.LST,ORID)<br/> K @LST@("VIDEO")<br/> S LST=$NA(^TMP("ORTXT",$J)),@LST=""{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

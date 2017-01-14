@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 COMP 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 COMP 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 or 0 if PTEVT completed or not
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> S ORY=$$COMP^OREVNTX(+PTEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

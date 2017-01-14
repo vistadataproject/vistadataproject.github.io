@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS1 ODSLCT 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS1 ODSLCT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return default lists for dialog
+ Input Parameters | {::nomarkdown}PSTYPE<br/>DFN<br/>LOC{:/}
+ Lines | {::nomarkdown} N ILST S ILST=0<br/> S ILST=ILST+1,LST(ILST)="~Priority" D PRIOR<br/> S ILST=ILST+1,LST(ILST)="~DispMsg"<br/> S ILST=ILST+1,LST(ILST)="d"_$$DISPMSG<br/> I PSTYPE="O" D                                ; Outpatient<br/> . S ILST=ILST+1,LST(ILST)="~Refills"<br/> . S ILST=ILST+1,LST(ILST)="d0^0"<br/> . S ILST=ILST+1,LST(ILST)="~Pickup"<br/> . S ILST=ILST+1,LST(ILST)="d"_$$DEFPICK($G(LOC))<br/> . ; S ILST=ILST+1,LST(ILST)="~Supply"<br/> . ; S ILST=ILST+1,LST(ILST)="d^"_$$DEFSPLY(DFN){:/}
  Leading comment lines | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

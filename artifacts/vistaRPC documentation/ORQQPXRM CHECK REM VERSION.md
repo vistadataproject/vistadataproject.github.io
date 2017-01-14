@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM CHECK REM VERSION 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM CHECK REM VERSION 
 
  property | value 
 --- | --- 
@@ -16,6 +16,13 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Lines | {::nomarkdown} S ORLIST=$$VERSION^XPDUTL("PXRM"){:/}
 
 
- Generated on January 13th 2017, 6:24:32 am
+
+
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 WRLSTED 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 WRLSTED 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return list of dialogs for writing event delayed orders
+ Input Parameters | {::nomarkdown}LOC<br/>EVTID{:/}
  Leading comment lines | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDBA7 GETIEN9 
+## [RPCs](TableOfContent.md) &#8594; ORWDBA7 GETIEN9 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return IEN for an ICD9 code (RPC: ORWDBA7 GETIEN9)
+ Input Parameters | {::nomarkdown}ICD9{:/}
+ Lines | {::nomarkdown} S Y=+$$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DT){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORDG IEN 
+## [RPCs](TableOfContent.md) &#8594; ORWORDG IEN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return IEN for a display group
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} S VAL=$O(^ORD(100.98,"B",X,0))<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

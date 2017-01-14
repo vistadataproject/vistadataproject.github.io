@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU LONG LIST SURGERY TITLES 
+## [RPCs](TableOfContent.md) &#8594; TIU LONG LIST SURGERY TITLES 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | long list SURGICAL REPORT titles
+ Input Parameters | {::nomarkdown}FROM<br/>DIR<br/>CLNAME{:/}
+ Lines | {::nomarkdown} N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")<br/> S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0<br/> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1)){:/}
  Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>depending on context{:/}
 
 ### Input Parameters
@@ -34,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

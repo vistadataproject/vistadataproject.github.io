@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 MATCH 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 MATCH 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | If Pt's current data match selected event
+ Input Parameters | {::nomarkdown}DFN<br/>EVT{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> Q:('+DFN)!('+EVT)<br/> S ORY=$$MATCH^OREVNT(DFN,EVT)<br/> N TS,TSNM<br/> S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))<br/> S TSNM=$P($G(^DIC(45.7,TS,0)),U)<br/> S:ORY ORY=ORY_U_TSNM{:/}
  Leading comment lines | {::nomarkdown}DFN: patient DFN<br/>EVT: ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

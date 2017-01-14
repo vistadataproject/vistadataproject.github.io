@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC SETSIZE 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC SETSIZE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - set graph positions and sizes
+ Input Parameters | {::nomarkdown}VAL{:/}
+ Lines | {::nomarkdown} D SETSIZE^ORWGAPI("ORWGRPC",.VAL)<br/> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

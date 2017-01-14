@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; MAGV IMPORT STUDY LOG STORE 
+## [RPCs](TableOfContent.md) &#8594; MAGV IMPORT STUDY LOG STORE 
 
  property | value 
 --- | --- 
@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

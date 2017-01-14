@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN DISCONTINUE 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN DISCONTINUE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Discontinue or Deny a consult
+ Input Parameters | {::nomarkdown}GMRCO<br/>GMRCORNP<br/>GMRCAD<br/>GMRCACTM<br/>ORCOM{:/}
+ Lines | {::nomarkdown} S Y=$$DC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,GMRCACTM,.ORCOM){:/}
  Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCORNP - Provider who Discontinued or Denied consult<br/>GMRCAD - Date/Time Consult was discontinued or denied.<br/>GMRCACTM - If consult is 'DENIED' passed in as 'DY'; if consult is Discontinued passed in as 'DC'.<br/>ORCOM - Array containing explanation of why consult was denied. Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is a required field when consult is denied or discontinued.{:/}
 
 ### Input Parameters
@@ -36,4 +38,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

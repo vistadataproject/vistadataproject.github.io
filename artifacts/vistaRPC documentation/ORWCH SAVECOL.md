@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCH SAVECOL 
+## [RPCs](TableOfContent.md) &#8594; ORWCH SAVECOL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save report column sizing information
+ Input Parameters | {::nomarkdown}COL{:/}
+ Lines | {::nomarkdown} N NAM,VAL,ORERR<br/> S OK="",NAM=$P(COL,"^"),VAL=$P(COL,"^",2)<br/> D EN^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",NAM,VAL,.ORERR)<br/> I ORERR S OK=COL_":"_ORERR{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

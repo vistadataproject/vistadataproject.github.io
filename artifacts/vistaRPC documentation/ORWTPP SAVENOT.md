@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP SAVENOT 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP SAVENOT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}VALUES{:/}
+ Lines | {::nomarkdown} D SAVENOT^ORWTPR(.OK,.VALUES,DUZ){:/}
  Leading comment lines | {::nomarkdown}save current user's notifications{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

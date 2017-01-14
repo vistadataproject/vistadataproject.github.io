@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC GETDATES 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC GETDATES 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get graph date range
+ Input Parameters | {::nomarkdown}REPORTID{:/}
+ Lines | {::nomarkdown} D GETDATES^ORWGAPI("ORWGRPC",$G(REPORTID))<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

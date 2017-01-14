@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR32 IC DEFAULT 
+## [RPCs](TableOfContent.md) &#8594; ORWDLR32 IC DEFAULT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default immediate collect time
+ Lines | {::nomarkdown} S ORY=$$DEFTIME^LR7OV4(DUZ(2)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

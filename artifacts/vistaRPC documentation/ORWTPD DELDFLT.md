@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPD DELDFLT 
+## [RPCs](TableOfContent.md) &#8594; ORWTPD DELDFLT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete user's default setting 
+ Lines | {::nomarkdown} N ORERR S ORERR=""<br/> D NDEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS INDV",.ORERR)<br/> D DEL^XPAR(DUZ_";VA(200,","ORWRP TIME/OCC LIMITS ALL",1,.ORERR)<br/> K ORERR{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

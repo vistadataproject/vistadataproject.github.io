@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU NPHASKEY 
+## [RPCs](TableOfContent.md) &#8594; ORWU NPHASKEY 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns TRUE if the person has the security key
+ Input Parameters | {::nomarkdown}NP<br/>KEY{:/}
+ Lines | {::nomarkdown} S VAL=''$D(^XUSEC(KEY,NP)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

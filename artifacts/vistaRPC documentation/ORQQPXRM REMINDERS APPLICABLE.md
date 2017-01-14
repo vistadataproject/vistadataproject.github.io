@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDERS APPLICABLE 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDERS APPLICABLE 
 
  property | value 
 --- | --- 
@@ -20,6 +20,7 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
  Leading comment lines | {::nomarkdown}D APPL^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078<br/>ORQQPXRM REMINDER CATEGORIES{:/}
 
 ### Input Parameters
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

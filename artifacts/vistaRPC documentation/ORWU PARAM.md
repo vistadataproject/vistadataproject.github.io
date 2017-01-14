@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU PARAM 
+## [RPCs](TableOfContent.md) &#8594; ORWU PARAM 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a parameter value for a user
+ Input Parameters | {::nomarkdown}APARAM{:/}
+ Lines | {::nomarkdown} S VAL=$$GET^XPAR("ALL",APARAM,1,"I"){:/}
  Leading comment lines | {::nomarkdown}call assumes current user, default entities, single instance{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

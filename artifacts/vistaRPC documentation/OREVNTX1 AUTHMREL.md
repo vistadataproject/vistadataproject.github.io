@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 AUTHMREL 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 AUTHMREL 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | 1: user can manual release delayed orders 0: can't
+ Input Parameters | {::nomarkdown}USER{:/}
+ Lines | {::nomarkdown} S ORY=$$CANREL^OREV3{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

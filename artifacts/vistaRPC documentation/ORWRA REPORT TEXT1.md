@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRA REPORT TEXT1 
+## [RPCs](TableOfContent.md) &#8594; ORWRA REPORT TEXT1 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return imaging report
+ Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ALPHA<br/>OMEGA<br/>DTRANGE<br/>REMOTE<br/>ORMAX<br/>ORFHIE{:/}
+ Lines | {::nomarkdown} D RPT(.ROOT,.DFN,.ORID,.ALPHA,.OMEGA,.DTRANGE,.REMOTE,.ORMAX,.ORFHIE){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

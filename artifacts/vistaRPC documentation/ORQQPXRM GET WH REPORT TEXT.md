@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM GET WH REPORT TEXT 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM GET WH REPORT TEXT 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC will return the Radiology/Lab Report for a WH Procedure{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORIEN{:/}
+ Lines | {::nomarkdown} D RESULTS^WVALERTF(.ORY,ORIEN) Q{:/}
 
 ### Input Parameters
 
@@ -24,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

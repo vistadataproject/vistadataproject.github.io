@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXVB STATALOW 
+## [RPCs](TableOfContent.md) &#8594; ORWDXVB STATALOW 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Allow stat for ORES ORELSE users
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S OROOT=$D(^XUSEC("ORES",DUZ))!($D(^XUSEC("ORELSE",DUZ))){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

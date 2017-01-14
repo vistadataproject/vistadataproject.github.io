@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XWB REMOTE STATUS CHECK 
+## [RPCs](TableOfContent.md) &#8594; XWB REMOTE STATUS CHECK 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC call to check a handle status
+ Input Parameters | {::nomarkdown}HDL{:/}
+ Lines | {::nomarkdown} N S,M,Z<br/> I $G(HDL)="" S RET(0)="-1^Bad Handle" Q<br/> S RET(0)=$$CHKHDL^XWBDRPC(HDL),S=$$GETNODE(HDL,"MSGID")<br/> I RET(0)'["Done",$L(S) D  S $P(RET(1),"^",3)=Z<br/> . S RET(1)=$$MSGSTAT^HLUTIL(S),M=+RET(1),Z=""<br/> . I M=1 S Z=$S($P(RET(1),"^",5)>1:"NOT first in queue",1:"First in queue")<br/> . I M=1.5 S Z="Opening connection"_$S($P(RET(1),"^",6):", open failed "_$P(RET(1),"^",6)_" times.",1:"")<br/> . I M=1.7 S Z="Sent, awaiting responce"<br/> . I M=2 S Z="Awaiting application ACK"{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

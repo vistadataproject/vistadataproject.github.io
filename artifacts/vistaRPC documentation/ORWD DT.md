@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD DT 
+## [RPCs](TableOfContent.md) &#8594; ORWD DT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns internal Fileman Date/Time
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} N %DT S %DT="TS" D ^%DT{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

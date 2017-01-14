@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX AGAIN 
+## [RPCs](TableOfContent.md) &#8594; ORWDX AGAIN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return true to keep dlg for another order
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | {::nomarkdown} S VAL=''$P($G(^ORD(101.41,DLG,0)),U,9){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

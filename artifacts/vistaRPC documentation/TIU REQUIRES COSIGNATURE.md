@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU REQUIRES COSIGNATURE 
+## [RPCs](TableOfContent.md) &#8594; TIU REQUIRES COSIGNATURE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Evaluate cosignature requirement
+ Input Parameters | {::nomarkdown}TIUTYP<br/>TIUDA<br/>TIUSER<br/>TIUDT{:/}
+ Lines | {::nomarkdown} N TIUDPRM<br/> S TIUY=0<br/> I +$G(TIUTYP)'>0,'+$G(TIUDA) Q<br/> I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))<br/> S:'+$G(TIUSER) TIUSER=+$G(DUZ)<br/> S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),".")){:/}
  Leading comment lines | {::nomarkdown}Initialize return value{:/}
 
 ### Input Parameters
@@ -34,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

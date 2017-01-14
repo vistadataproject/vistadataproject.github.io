@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; GMRC LIST CONSULT REQUESTS 
+## [RPCs](TableOfContent.md) &#8594; GMRC LIST CONSULT REQUESTS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get consult list and return in GMRCY for GUI
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} N GMRCI<br/> I '+$G(DFN) S GMRCY(0)=0<br/> D GETCONSL(DFN,1) ;1=returns GUI format in GMRCY array<br/> S GMRCY(0)=+$G(GMRCI){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

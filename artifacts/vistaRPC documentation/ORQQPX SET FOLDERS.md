@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPX SET FOLDERS 
+## [RPCs](TableOfContent.md) &#8594; ORQQPX SET FOLDERS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Sets Visible Reminder Folders for the current user
+ Input Parameters | {::nomarkdown}ORFLDRS{:/}
+ Lines | {::nomarkdown} N ORERR<br/> D EN^XPAR(DUZ_";VA(200,","ORQQPX REMINDER FOLDERS",1,ORFLDRS,.ORERR)<br/> S ORY=1{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

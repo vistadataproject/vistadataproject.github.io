@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCOM GETOBJS 
+## [RPCs](TableOfContent.md) &#8594; ORWCOM GETOBJS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns list of all active COM objects
+ Lines | {::nomarkdown} N I,J,IDX,NODE<br/> S I="",IDX=0<br/> F  S I=$O(^ORD(101.15,"B",I)) Q:I=""  D<br/> .S J=$O(^ORD(101.15,"B",I,0)) Q:'+J<br/> .S NODE=$G(^ORD(101.15,J,0))<br/> .I $P(NODE,U,3)'="I" D<br/> ..S IDX=IDX+1<br/> ..S ORY(IDX)=J_U_NODE<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE GAFOK 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GAFOK 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns true if all supporting MH GAF Code exists
+ Lines | {::nomarkdown} S ORY=0<br/> I $T(GAFHX^YSGAFAPI)'="",$T(ENT^YSGAFAP1)'="" S ORY=1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

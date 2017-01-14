@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; GMV GET CURRENT TIME 
+## [RPCs](TableOfContent.md) &#8594; GMV GET CURRENT TIME 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Gets current time
+ Input Parameters | {::nomarkdown}P2{:/}
+ Lines | {::nomarkdown} S RESULT=$$NOW^XLFDT()<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

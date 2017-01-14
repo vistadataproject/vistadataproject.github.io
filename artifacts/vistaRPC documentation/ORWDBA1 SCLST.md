@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDBA1 SCLST 
+## [RPCs](TableOfContent.md) &#8594; ORWDBA1 SCLST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC for compiling appropriate TxF's
+ Input Parameters | {::nomarkdown}DFN<br/>ORLST{:/}
+ Lines | {::nomarkdown} N GMRCPROS,ORD,ORI,ORPKG<br/> D CPLSTBA(.Y,DFN,.ORLST){:/}
  Leading comment lines | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

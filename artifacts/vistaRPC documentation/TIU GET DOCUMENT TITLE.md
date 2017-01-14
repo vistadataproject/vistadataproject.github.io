@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENT TITLE 
+## [RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENT TITLE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get the title from a TIU Document Record
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} S TIUY=+$G(^TIU(8925,+TIUDA,0)){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

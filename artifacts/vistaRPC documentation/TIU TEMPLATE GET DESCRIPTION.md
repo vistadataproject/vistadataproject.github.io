@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DESCRIPTION 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DESCRIPTION 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Template Description
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} I (TIUDA>0),$D(^TIU(8927,TIUDA,5)) D<br/> .N IDX,CNT S (IDX,CNT)=0<br/> .F  S IDX=$O(^TIU(8927,TIUDA,5,IDX)) Q:IDX'>0  D<br/> ..S CNT=CNT+1,TIUY(CNT)=^TIU(8927,TIUDA,5,IDX,0){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

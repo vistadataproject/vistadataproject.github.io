@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU GET LIST OF OBJECTS 
+## [RPCs](TableOfContent.md) &#8594; TIU GET LIST OF OBJECTS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get the list of active objects
+ Lines | {::nomarkdown} N TIUDA,TIUD0,TIUI<br/> S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIU OBJECTS",$J)) K @TIUY<br/> F  S TIUDA=$O(^TIU(8925.1,"AT","O",TIUDA)) Q:+TIUDA'>0  D<br/> . S TIUD0=$G(^TIU(8925.1,TIUDA,0)) Q:'+$$CANPICK^TIULP(+TIUDA)<br/> . S TIUI=TIUI+1<br/> . S @TIUY@(TIUI)=TIUDA_U_$P(TIUD0,U,1,3){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU TOOLMENU 
+## [RPCs](TableOfContent.md) &#8594; ORWU TOOLMENU 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns a list of items for the Tools menu
+ Lines | {::nomarkdown} N ANENT<br/> S ANENT="ALL^"_$S($G(^VA(200,DUZ,5)):"^SRV.`"_+$G(^(5)),1:"")<br/> D GETLST^XPAR(.ORLST,ANENT,"ORWT TOOLS MENU","N"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

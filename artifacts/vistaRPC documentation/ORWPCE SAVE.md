@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE SAVE 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE SAVE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save PCE information
+ Input Parameters | {::nomarkdown}PCELIST<br/>NOTEIEN<br/>ORLOC{:/}
+ Lines | {::nomarkdown} N VSTR,GMPLUSER<br/> N ZTIO,ZTRTN,ZTDTH,ZTSAVE,ZTDESC,ZTSYNC,ZTSK<br/> S VSTR=$P(PCELIST(1),U,4) K ^TMP("ORWPCE",$J,VSTR)<br/> M ^TMP("ORWPCE",$J,VSTR)=PCELIST<br/> S GMPLUSER=$$CLINUSER^ORQQPL1(DUZ),NOTEIEN=+$G(NOTEIEN)<br/> S ZTIO="ORW/PXAPI RESOURCE",ZTRTN="DQSAVE^ORWPCE1",ZTDTH=$H<br/> S ZTSAVE("PCELIST(")="",ZTDESC="Data from CPRS to PCE"<br/> S ZTSAVE("GMPLUSER")="",ZTSAVE("NOTEIEN")="",ZTSAVE("DUZ")=""<br/> I VSTR'["E" S ZTSYNC="ORW"_VSTR<br/> S ZTSAVE("ORLOC")=""<br/> D ^%ZTLOAD I '$D(ZTSK) D DQSAVE^ORWPCE1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN REMOVE MED RESULTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN REMOVE MED RESULTS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Remove a medicine result from a consult
+ Input Parameters | {::nomarkdown}GMRCO<br/>GMRCRSLT<br/>GMRCAD<br/>GMRCORNP{:/}
+ Lines | {::nomarkdown} Q:+$G(GMRCO)=0<br/> D REMOVE^GMRCDIS(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP){:/}
  Leading comment lines | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time medicine result was removed<br/>GMRCORNP - Provider who removed the result from the consult{:/}
 
 ### Input Parameters
@@ -35,4 +37,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

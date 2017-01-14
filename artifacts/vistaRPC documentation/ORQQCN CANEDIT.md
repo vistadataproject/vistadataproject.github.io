@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN CANEDIT 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN CANEDIT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return whether consult can be edited and resubmitted
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} S Y=$$EDRESOK^GMRCEDT2(GMRCO){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

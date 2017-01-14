@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQPT DEFAULT LIST SORT 
+## [RPCs](TableOfContent.md) &#8594; ORQPT DEFAULT LIST SORT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return user's default sort.
+ Lines | {::nomarkdown} N ORSORT,ORSECT,ORPARAM<br/> I ('$D(DUZ)) S Y="Unable to determine DUZ." Q<br/> S ORSECT=$G(^VA(200,DUZ,5))<br/> I +ORSECT>0 S ORSECT=$P(ORSECT,U)<br/> S Y="A" ; Default of "Alpha" sort.<br/> S ORPARAM="ORLP DEFAULT LIST ORDER"<br/> S ORSORT=$$GET^XPAR("USR^SRV.`"_$G(ORSECT)_"^DIV^SYS^PKG",ORPARAM,1,"I")<br/> I (ORSORT'="") S Y=ORSORT{:/}
  Leading comment lines | {::nomarkdown}SLC/PKS - 4/6/2001{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

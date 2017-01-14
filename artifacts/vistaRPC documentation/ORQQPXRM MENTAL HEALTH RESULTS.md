@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM MENTAL HEALTH RESULTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM MENTAL HEALTH RESULTS 
 
  property | value 
 --- | --- 
@@ -20,6 +20,8 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}RESULT<br/>ORES{:/}
+ Lines | {::nomarkdown} D MHR^PXRMRPCC(.ORY,RESULT,.ORES){:/}
  Leading comment lines | {::nomarkdown}DBIA 3080{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

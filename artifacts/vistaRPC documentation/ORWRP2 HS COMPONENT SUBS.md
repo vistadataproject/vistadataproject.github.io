@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENT SUBS 
+## [RPCs](TableOfContent.md) &#8594; ORWRP2 HS COMPONENT SUBS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get subitems from a predefined Adhoc component
+ Input Parameters | {::nomarkdown}ORSUB{:/}
+ Lines | {::nomarkdown} I '$L($T(COMPSUB^GMTSADH5)) Q<br/> D COMPSUB^GMTSADH5(.ORY,ORSUB){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

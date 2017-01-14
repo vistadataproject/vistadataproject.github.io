@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE PROC 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE PROC 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get list of procedures for clinic P12 for CPTMods
+ Input Parameters | {::nomarkdown}CLINIC<br/>ORDATE{:/}
+ Lines | {::nomarkdown} S:'+$G(ORDATE) ORDATE=DT<br/> D GETLST^IBDF18A(CLINIC,"DG SELECT CPT PROCEDURE CODES","LST",,,1,ORDATE)<br/> N IDX,MOD,CODES,FIRST S IDX=0<br/> F  S IDX=$O(LST(IDX)) Q:'+IDX  D<br/> . I LST(IDX)="" K LST(IDX) Q<br/> . S MOD=0,CODES="",FIRST=1<br/> . F  S MOD=$O(LST(IDX,"MODIFIER",MOD)) Q:(MOD="")  D<br/> . . I FIRST S FIRST=0<br/> . . E  S CODES=CODES_";"<br/> . . S CODES=CODES_LST(IDX,"MODIFIER",MOD)<br/> . K LST(IDX,"MODIFIER")<br/> . I 'FIRST S $P(LST(IDX),U,12)=CODES{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

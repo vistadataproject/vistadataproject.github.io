@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQPT SPECIALTY PATIENTS 
+## [RPCs](TableOfContent.md) &#8594; ORQPT SPECIALTY PATIENTS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN LIST OF PATIENTS LINKED TO A TREATING SPECIALTY
+ Input Parameters | {::nomarkdown}SPEC{:/}
+ Lines | {::nomarkdown} I +$G(SPEC)<1 S Y(1)="^No specialty identified" Q <br/> N ORI,DFN<br/> S ORI=1,DFN=0<br/> F  S DFN=$O(^DPT("ATR",SPEC,DFN)) Q:DFN'>0  S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^"),ORI=ORI+1<br/> S:+$G(Y(1))<1 Y(1)="^No patients found."{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

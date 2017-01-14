@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DELDFLT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DELDFLT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete default release event
+ Input Parameters | {::nomarkdown}PVIFN{:/}
+ Lines | {::nomarkdown} Q:'PVIFN<br/> N ORERR<br/> S ORERR=""<br/> D DEL^XPAR(PVIFN_";VA(200,","OREVNT DEFAULT",1,.ORERR){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

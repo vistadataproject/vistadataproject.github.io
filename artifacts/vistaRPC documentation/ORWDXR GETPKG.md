@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXR GETPKG 
+## [RPCs](TableOfContent.md) &#8594; ORWDXR GETPKG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get package for an order
+ Input Parameters | {::nomarkdown}IFN{:/}
+ Lines | {::nomarkdown} N ORDERID,PKGID<br/> Q:+IFN<1<br/> S ORDERID=+IFN,Y=""<br/> S PKGID=$P(^OR(100,ORDERID,0),U,14)<br/> S:PKGID>0 Y=$P(^DIC(9.4,PKGID,0),U,2){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

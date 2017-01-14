@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM WOMEN HEALTH SAVE 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM WOMEN HEALTH SAVE 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Pass back data to be file in the Women's Health Package file 790.1.{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORRESULT{:/}
+ Lines | {::nomarkdown} D WH^PXRMRPCC(.ORY,.ORRESULT) Q{:/}
 
 ### Input Parameters
 
@@ -24,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

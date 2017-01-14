@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU IS THIS A CONSULT? 
+## [RPCs](TableOfContent.md) &#8594; TIU IS THIS A CONSULT? 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Boolean RPC to evaluate whether TITLE is a CONSULT
+ Input Parameters | {::nomarkdown}TITLE{:/}
+ Lines | {::nomarkdown} N TIUCLASS<br/> S TIUCLASS=+$$CLASS<br/> I +TIUCLASS'>0 S TIUY=0 Q<br/> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

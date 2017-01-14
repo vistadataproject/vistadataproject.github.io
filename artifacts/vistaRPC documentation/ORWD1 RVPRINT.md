@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD1 RVPRINT 
+## [RPCs](TableOfContent.md) &#8594; ORWD1 RVPRINT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print orders from review/sign actions
+ Input Parameters | {::nomarkdown}HLOC<br/>ORWDEV<br/>PRTLST{:/}
+ Lines | {::nomarkdown} D PRINTS(.PRTLST,HLOC,ORWDEV) S OK=1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

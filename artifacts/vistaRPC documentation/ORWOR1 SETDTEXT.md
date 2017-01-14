@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWOR1 SETDTEXT 
+## [RPCs](TableOfContent.md) &#8594; ORWOR1 SETDTEXT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set Digital Text data into file 100 & return the array
+ Input Parameters | {::nomarkdown}ORDER<br/>ORDEA<br/>ORSIGNER{:/}
+ Lines | {::nomarkdown} N ORSET,IFN,ACT,I<br/> S Y="-1^Digital Text failed to build",IFN=+ORDER,ACT=$P(ORDER,";",2)<br/> I '$G(ORDEA) Q<br/> I '$G(ORSIGNER) S ORSIGNER=DUZ<br/> D DIGTEXT^ORCSAVE1(IFN,ORDEA,ORSIGNER)<br/> S Y=0<br/> I '$G(ORSET) Q<br/> K ^OR(100,IFN,8,ACT,.2)<br/> F I=1:1:ORSET S (Y(I),^OR(100,IFN,8,ACT,.2,I,0))=ORSET(I)<br/> S ^OR(100,IFN,8,ACT,.2,0)="^^"_ORSET_"^"_ORSET_"^"_DT_"^",Y=ORSET{:/}
  Leading comment lines | {::nomarkdown}ORDER = ORIFN;ACTION<br/>ORDEA = Schedule of Drug (2-5)<br/>ORSIGNER = DUZ of signer{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU EXTNAME 
+## [RPCs](TableOfContent.md) &#8594; ORWU EXTNAME 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return external form of pointer
+ Input Parameters | {::nomarkdown}IEN<br/>FN{:/}
+ Lines | {::nomarkdown} N REF S REF=$G(^DIC(FN,0,"GL")),VAL=""<br/> I $L(REF),+IEN S VAL=$P($G(@(REF_IEN_",0)")),U){:/}
  Leading comment lines | {::nomarkdown}IEN=internal number, FN=file number{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

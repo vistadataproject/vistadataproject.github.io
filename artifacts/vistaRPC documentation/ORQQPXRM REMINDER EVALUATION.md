@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER EVALUATION 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER EVALUATION 
 
  property | value 
 --- | --- 
@@ -21,6 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DBIA 3078
+ Input Parameters | {::nomarkdown}ORPT<br/>ORLIST{:/}
  Leading comment lines | {::nomarkdown}ORQQPXRM REMINDERS APPLICABLE{:/}
 
 ### Input Parameters
@@ -33,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

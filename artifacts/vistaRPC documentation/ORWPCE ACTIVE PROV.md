@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE ACTIVE PROV 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE ACTIVE PROV 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get if provider is active or not
+ Input Parameters | {::nomarkdown}ORWPROV<br/>ORWDT{:/}
+ Lines | {::nomarkdown} S ORRETURN=$$ACTIVPRV^PXAPI(ORWPROV,ORWDT){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

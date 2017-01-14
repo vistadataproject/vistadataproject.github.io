@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPL EDIT LOAD 
+## [RPCs](TableOfContent.md) &#8594; ORQQPL EDIT LOAD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | LOAD  EDIT ARRAYS
+ Input Parameters | {::nomarkdown}DA{:/}
+ Lines | {::nomarkdown} N I,GMPFLD,GMPORIG,GMPL<br/> D GETFLDS^GMPLEDT3(DA)<br/> S I=0<br/> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br/> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br/> K GMPFLD,GMPORIG,GMPL  ; should not have to do this{:/}
  Leading comment lines | {::nomarkdown}DA=problem IFN{:/}
 
 ### Input Parameters
@@ -34,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

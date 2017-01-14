@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORPRF TRIGGER POPUP 
+## [RPCs](TableOfContent.md) &#8594; ORPRF TRIGGER POPUP 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Should the flag display pop up upon patient selection
+ Input Parameters | {::nomarkdown}PTDFN{:/}
+ Lines | {::nomarkdown} N PRFARR<br/> S POPUP=$S($$GETACT^DGPFAPI(PTDFN,"PRFARR"):1,1:0){:/}
  Leading comment lines | {::nomarkdown}for patient PTDFN?<br/>As of 1/10/06, returns POPUP as:<br/>1 if pt has any active flags, either Cat I or Cat II<br/>0 otherwise{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

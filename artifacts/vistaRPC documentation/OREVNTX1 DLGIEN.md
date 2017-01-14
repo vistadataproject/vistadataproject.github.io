@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DLGIEN 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DLGIEN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Order Dialog IEN based on name
+ Input Parameters | {::nomarkdown}DLGNAME{:/}
+ Lines | {::nomarkdown} Q:'$D(^ORD(101.41,"B",DLGNAME))<br/> S ORY=$O(^ORD(101.41,"B",DLGNAME,0)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

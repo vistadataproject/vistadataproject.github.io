@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORRHCQ QRYITR 
+## [RPCs](TableOfContent.md) &#8594; ORRHCQ QRYITR 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Do query for the current iterator
+ Input Parameters | {::nomarkdown}ORRITR{:/}
+ Lines | {::nomarkdown} S VAL=$$PTSCRN($P(ORRITR,";",2))<br/> I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))<br/> S $P(VAL,U,3)=$$NXTITER(ORRITR){:/}
  Leading comment lines | {::nomarkdown}VAL=PtSearched^RecordsFound^Iterator{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 CHGEVT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 CHGEVT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Change order's event
+ Input Parameters | {::nomarkdown}NEWEVT<br/>ORIDS{:/}
+ Lines | {::nomarkdown} N ORI<br/> S ORI=0<br/> F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D<br/> . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

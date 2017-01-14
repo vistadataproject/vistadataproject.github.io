@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCH SAVFONT 
+## [RPCs](TableOfContent.md) &#8594; ORWCH SAVFONT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save the user's preferred font size
+ Input Parameters | {::nomarkdown}VAL{:/}
+ Lines | {::nomarkdown} D EN^XPAR(DUZ_";VA(200,","ORWCH FONT SIZE",1,VAL,.ORERR){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

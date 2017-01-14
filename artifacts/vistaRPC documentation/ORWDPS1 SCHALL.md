@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS1 SCHALL 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS1 SCHALL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return all schedules
+ Input Parameters | {::nomarkdown}DFN<br/>LOCIEN{:/}
+ Lines | {::nomarkdown} N CNT,ILST,ORARRAY,WIEN<br/> S WIEN=$$WARDIEN^ORWDPS32(+$G(LOCIEN))<br/> D SCHED^PSS51P1(WIEN,.ORARRAY)<br/> S ILST=0<br/> S CNT=0 F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br/> .S ILST=ILST+1,LST(ILST)=$P(ORARRAY(CNT),U,2,5){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

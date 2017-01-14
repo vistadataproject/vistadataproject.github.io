@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTIU IDNOTES INSTALLED 
+## [RPCs](TableOfContent.md) &#8594; ORWTIU IDNOTES INSTALLED 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is ID Notes installed?
+ Lines | {::nomarkdown} S ORY=$$PATCH^XPDUTL("TIU*1.0*100"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

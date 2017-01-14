@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC TYPES 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC TYPES 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all the types of data on a patient (SUB=1, gets subtypes, DFN=0 gets all types), 
+ Input Parameters | {::nomarkdown}DFN<br/>SUB{:/}
+ Lines | {::nomarkdown} D TYPES^ORWGAPI("ORWGRPC",DFN,+$G(SUB))<br/> S TYPES=$NA(^TMP("ORWGRPC",$J))<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

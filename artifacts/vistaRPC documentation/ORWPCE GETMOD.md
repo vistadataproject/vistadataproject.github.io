@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE GETMOD 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GETMOD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns info for a specific CPT Modifier
+ Input Parameters | {::nomarkdown}ORMODIEN<br/>ORDATE{:/}
+ Lines | {::nomarkdown} N ORDATA<br/> S:'+$G(ORDATE) ORDATE=DT<br/> S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)<br/> I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

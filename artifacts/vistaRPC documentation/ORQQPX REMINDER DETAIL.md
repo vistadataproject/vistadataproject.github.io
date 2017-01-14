@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPX REMINDER DETAIL 
+## [RPCs](TableOfContent.md) &#8594; ORQQPX REMINDER DETAIL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return detail for a pt's clinical reminder
+ Input Parameters | {::nomarkdown}ORPT<br/>ORIEN{:/}
+ Lines | {::nomarkdown} K ^TMP("PXRHM",$J)<br/> D MAIN^PXRM(ORPT,ORIEN,5)     ; 5 returns all reminder info<br/> N CR,I,J,ORTXT S I=1<br/> S ORTXT="",ORTXT=$O(^TMP("PXRHM",$J,ORIEN,ORTXT)) Q:ORTXT=""  D<br/> .S J=0 F  S J=$O(^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J)) Q:J=""  D<br/> ..S ORY(I)=^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J),I=I+1<br/> K ^TMP("PXRHM",$J){:/}
  Leading comment lines | {::nomarkdown}ORY - return array<br/>ORPT - patient DFN<br/>ORIEN - clinical reminder (811.9 ien){:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

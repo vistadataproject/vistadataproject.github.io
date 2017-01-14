@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXM2 CLRRCL 
+## [RPCs](TableOfContent.md) &#8594; ORWDXM2 CLRRCL 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | clear ORECALL
+ Lines | {::nomarkdown} S OK=1<br/> K ^TMP("ORECALL",$J),^TMP("ORWDXMQ",$J){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

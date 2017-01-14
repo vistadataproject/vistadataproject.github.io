@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORR RGET 
+## [RPCs](TableOfContent.md) &#8594; ORWORR RGET 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Orders of AutoDC/Release Event
+ Input Parameters | {::nomarkdown}DFN<br/>FILTER<br/>GROUPS<br/>DTFROM<br/>DTTHRU<br/>EVENT{:/}
+ Lines | {::nomarkdown} N EVTDCREL<br/> S EVTDCREL="TRUE"<br/> D AGET(.REF,DFN,FILTER,GROUPS,DTFROM,DTTHRU,EVENT){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP SETREM 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP SETREM 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}VALUES{:/}
+ Lines | {::nomarkdown} D SETREM^ORWTPR(.OK,.VALUES,DUZ){:/}
  Leading comment lines | {::nomarkdown}set current user's reminders{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

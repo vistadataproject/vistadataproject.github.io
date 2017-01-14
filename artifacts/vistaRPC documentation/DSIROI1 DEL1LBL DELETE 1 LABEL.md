@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; DSIROI1 DEL1LBL DELETE 1 LABEL 
+## [RPCs](TableOfContent.md) &#8594; DSIROI1 DEL1LBL DELETE 1 LABEL 
 
  property | value 
 --- | --- 
@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

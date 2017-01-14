@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORVW FACLIST 
+## [RPCs](TableOfContent.md) &#8594; ORVW FACLIST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a list from the TFL^VAFCTFU1 call
+ Input Parameters | {::nomarkdown}ORDFN{:/}
+ Lines | {::nomarkdown} D TFL^VAFCTFU1(.ORY,ORDFN)<br/>{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

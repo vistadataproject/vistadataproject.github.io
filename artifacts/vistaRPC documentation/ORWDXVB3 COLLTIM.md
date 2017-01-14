@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXVB3 COLLTIM 
+## [RPCs](TableOfContent.md) &#8594; ORWDXVB3 COLLTIM 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Collection Time Default Parameter Value
+ Lines | {::nomarkdown} S OROOT=+$$GET^XPAR("ALL","OR VBECS REMOVE COLL TIME",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

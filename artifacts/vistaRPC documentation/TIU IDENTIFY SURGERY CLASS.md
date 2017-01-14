@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU IDENTIFY SURGERY CLASS 
+## [RPCs](TableOfContent.md) &#8594; TIU IDENTIFY SURGERY CLASS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to identify class 
+ Input Parameters | {::nomarkdown}CLNAME{:/}
+ Lines | {::nomarkdown} S CLNAME=$G(CLNAME,"SURGICAL REPORTS")<br/> S Y=$$CLASS^TIUSROI(CLNAME){:/}
  Leading comment lines | {::nomarkdown}CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

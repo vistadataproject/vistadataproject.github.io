@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR UTGA 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR UTGA 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}ORTESTS{:/}
+ Lines | {::nomarkdown} D UTGA^LR7OGO(.ORY,.ORTESTS){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

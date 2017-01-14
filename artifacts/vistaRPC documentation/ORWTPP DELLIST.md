@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP DELLIST 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP DELLIST 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}LISTNUM{:/}
+ Lines | {::nomarkdown} D DELLIST^ORWTPL(.OK,LISTNUM,DUZ){:/}
  Leading comment lines | {::nomarkdown}delete current user's personal list{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORB UNSIG ORDERS FOLLOWUP 
+## [RPCs](TableOfContent.md) &#8594; ORWORB UNSIG ORDERS FOLLOWUP 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | order(s) requiring electronic signature follow-up
+ Input Parameters | {::nomarkdown}XQAID{:/}
+ Lines | {::nomarkdown} K XQAKILL<br/> N ORPT,ORDG,ORBXQAID,ORY,ORX,ORZ,ORDERS,ORDNUM,ORQUIT,ORBLMDEL<br/> S ORBXQAID=XQAID,ORDERS=0,ORQUIT=0<br/> S ORPT=$P($P(XQAID,";"),",",2)  ;get pt dfn from xqaid<br/> S ORDG=$$DG^ORQOR1("ALL")<br/> D EN^ORQ1(ORPT_";DPT(",ORDG,11,"","","",0,0)<br/> S ORX="",ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""  I +$G(^TMP("ORR",$J,ORX,"TOT"))<1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q<br/> I '$D(^XUSEC("ORES",DUZ)) S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID) K ^TMP("ORR",$J) Q<br/> I $$PPLINK^ORQPTQ1(DUZ,ORPT)=0 D<br/> .S ORX="" F  S ORX=$O(^TMP("ORR",$J,ORX)) Q:ORX=""!(ORDERS=1)  D<br/> ..S ORZ="" F  S ORZ=$O(^TMP("ORR",$J,ORX,ORZ)) Q:+ORZ=0!(ORDERS=1)  D<br/> ...S ORDNUM=^TMP("ORR",$J,ORX,ORZ)<br/> ...;quit if this unsigned order's last action was made by the user<br/> ...I DUZ=+$$UNSIGNOR^ORQOR2(ORDNUM) S ORDERS=1<br/> .I ORDERS'=1 D  ;provider has no outstanding unsigned orders for pt<br/> ..S XQAKILL=1 D DEL^ORB3FUP1(.ORY,ORBXQAID)  ;delete alert for this user<br/> K ^TMP("ORR",$J){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

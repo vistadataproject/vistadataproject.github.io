@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE GET EXCLUDED 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GET EXCLUDED 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns list of excluded PCE data elements
+ Input Parameters | {::nomarkdown}LOC<br/>TYPE{:/}
+ Lines | {::nomarkdown} N SRV,PARAM<br/> S PARAM=$S(TYPE=1:"IMMUNIZATIONS",TYPE=2:"SKIN TESTS",TYPE=3:"PATIENT ED",TYPE=4:"HEALTH FACTORS",TYPE=5:"EXAMS",1:"")<br/> Q:PARAM=""<br/> S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> S PARAM="ORWPCE EXCLUDE "_PARAM<br/> D GETLST^XPAR(.ORY,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG",PARAM,"Q",.ORERR){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

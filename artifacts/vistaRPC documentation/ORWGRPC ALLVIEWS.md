@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC ALLVIEWS 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC ALLVIEWS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all graph views
+ Input Parameters | {::nomarkdown}VIEW<br/>USER{:/}
+ Lines | {::nomarkdown} D ALLVIEWS^ORWGAPI("ORWGRPC",+$G(VIEW),+$G(USER))<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

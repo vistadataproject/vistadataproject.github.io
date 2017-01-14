@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP SAVELIST 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP SAVELIST 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}PLIST<br/>LISTNUM<br/>ORVIZ{:/}
+ Lines | {::nomarkdown} D SAVELIST^ORWTPL(.OK,.PLIST,LISTNUM,DUZ,$G(ORVIZ)){:/}
  Leading comment lines | {::nomarkdown}save current user's personal list changes{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

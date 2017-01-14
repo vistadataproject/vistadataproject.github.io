@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP GETOC 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP GETOC 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | {::nomarkdown} D GETOC^ORWTPR(.VALUES,DUZ){:/}
  Leading comment lines | {::nomarkdown}get current user's order checks{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

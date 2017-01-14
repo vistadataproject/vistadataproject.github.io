@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXC SAVECHK 
+## [RPCs](TableOfContent.md) &#8594; ORWDXC SAVECHK 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save order checks for session
+ Input Parameters | {::nomarkdown}ORVP<br/>RSN<br/>LST{:/}
+ Lines | {::nomarkdown} N ORCHECK,ORIFN S OK=1<br/> D LST2CHK<br/> I $L(RSN)>0 S ORCHECK("OK")=RSN<br/> S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

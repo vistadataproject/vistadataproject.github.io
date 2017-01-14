@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT16 PSCNVT 
+## [RPCs](TableOfContent.md) &#8594; ORWPT16 PSCNVT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S VAL=0{:/}
  Leading comment lines | {::nomarkdown}Call conversion routine for pharmacy (both inpatient and outpatient){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG ACTIVE 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG ACTIVE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DBIA 3080
+ Input Parameters | {::nomarkdown}ORLIST{:/}
  Leading comment lines | {::nomarkdown}ORQQPXRM REMINDER EVALUATION{:/}
 
 ### Input Parameters
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

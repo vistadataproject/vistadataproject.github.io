@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPD1 PUTEDATS 
+## [RPCs](TableOfContent.md) &#8594; ORWTPD1 PUTEDATS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save Encounter app't date range params at user level.
+ Input Parameters | {::nomarkdown}Y{:/}
+ Lines | {::nomarkdown} N ORSTART,ORSTOP,ORUSER<br/> S OK=1,ORUSER=DUZ<br/> S ORSTART=$P(Y,U,1)<br/> S ORSTOP=$P(Y,U,2)<br/> I ORSTART="" S ORSTART=0<br/> I ORSTOP="" S ORSTOP=0<br/> I ORSTART>999 S ORSTART=999<br/> I ORSTOP>999 S ORSTART=999<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)<br/> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

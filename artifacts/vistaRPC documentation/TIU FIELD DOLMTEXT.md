@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU FIELD DOLMTEXT 
+## [RPCs](TableOfContent.md) &#8594; TIU FIELD DOLMTEXT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | finds Template Fields and replaces with LM Text
+ Input Parameters | {::nomarkdown}TIULIST{:/}
+ Lines | {::nomarkdown} N I,LINE<br/> S I=0<br/> F  S I=$O(TIULIST(I)) Q:'I  D<br/> . S TIUY(I)=$$DOLMLINE(TIULIST(I,0)){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

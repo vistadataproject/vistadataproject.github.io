@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT SAVDFLT 
+## [RPCs](TableOfContent.md) &#8594; ORWPT SAVDFLT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save new default patient list settings (X=type^ien^sdt
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} G SAVDFLT^ORWPT1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

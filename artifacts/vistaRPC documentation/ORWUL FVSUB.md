@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWUL FVSUB 
+## [RPCs](TableOfContent.md) &#8594; ORWUL FVSUB 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return subset of orders in view
+ Input Parameters | {::nomarkdown}IEN<br/>FIRST<br/>LAST{:/}
+ Lines | {::nomarkdown} N I<br/> F I=FIRST:1:LAST D<br/> .;AGP change returned valued to returned data or @ if record does not<br/> .;exist. The @ sign is used by the delphi code to identified a<br/> .;non-existence record<br/> .S LST(I)=$S($D(^ORD(101.44,IEN,20,$G(I)))>0:^ORD(101.44,IEN,20,I,0),1:"@"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

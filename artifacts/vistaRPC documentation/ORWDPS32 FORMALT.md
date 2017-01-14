@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS32 FORMALT 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 FORMALT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a list of formulary alternatives
+ Input Parameters | {::nomarkdown}IEN<br/>PSTYPE{:/}
+ Lines | {::nomarkdown} D ENRFA^PSJORUTL(IEN,PSTYPE,.ORLST)<br/> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br/> . S OI=+$O(^ORD(101.43,"ID",+$P(ORLST(I),U,4)_";99PSP",0))<br/> . S $P(ORLST(I),U,4)=OI I OI S $P(ORLST(I),U,5)=$P(^ORD(101.43,OI,0),U){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

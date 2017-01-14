@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE SAVEGAF 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE SAVEGAF 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save new GAF score
+ Input Parameters | {::nomarkdown}ORINPUT{:/}
+ Lines | {::nomarkdown} N ORDATA<br/> D ENT^YSGAFAP1(.ORDATA,.ORINPUT)<br/> S ORY=($G(ORDATA(1))="[DATA]"){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

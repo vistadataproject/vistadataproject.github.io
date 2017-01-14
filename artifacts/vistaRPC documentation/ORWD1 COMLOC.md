@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD1 COMLOC 
+## [RPCs](TableOfContent.md) &#8594; ORWD1 COMLOC 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return common location for orders in list, if any
+ Input Parameters | {::nomarkdown}ORDERS{:/}
+ Lines | {::nomarkdown} N I<br/> S LOC=0,I=0<br/> F  S I=$O(ORDERS(I)) Q:'I  D  Q:LOC<br/> . I $P(ORDERS(I),U,2)'["R",($P(ORDERS(I),U,2)'["S") Q<br/> . S LOC=+$P($G(^OR(100,+ORDERS(I),0)),U,10)<br/> I LOC F  S I=$O(ORDERS(I)) Q:'I  D  Q:'LOC<br/> . I $P(ORDERS(I),U,2)'["R",($P(ORDERS(I),U,2)'["S") Q<br/> . I (+$P($G(^OR(100,+ORDERS(I),0)),U,10)'=LOC) S LOC=0{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

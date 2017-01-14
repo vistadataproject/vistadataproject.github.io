@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWNSS CHKSCH 
+## [RPCs](TableOfContent.md) &#8594; ORWNSS CHKSCH 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Validate schedule
+ Input Parameters | {::nomarkdown}SCH{:/}
+ Lines | {::nomarkdown} Q:SCH=""<br/> D VALSCH^ORWDPS33(.ORY,SCH,"I")<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

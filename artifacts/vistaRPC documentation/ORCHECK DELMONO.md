@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORCHECK DELMONO 
+## [RPCs](TableOfContent.md) &#8594; ORCHECK DELMONO 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | delete monograph data
+ Lines | {::nomarkdown} K ^TMP($J,"ORMONOGRAPH"),^TMP($J,"ORMONORPC"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

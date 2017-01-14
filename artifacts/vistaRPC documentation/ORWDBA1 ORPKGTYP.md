@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDBA1 ORPKGTYP 
+## [RPCs](TableOfContent.md) &#8594; ORWDBA1 ORPKGTYP 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Build BA supported packages array
+ Input Parameters | {::nomarkdown}ORLST{:/}
+ Lines | {::nomarkdown} N OIREC,OIV,OIVN<br/> F I=1:1 S ORPKG=$P("GMRC;LR;PSO;RA",";",I) Q:ORPKG=""  D<br/> . S ORPKG(+$O(^DIC(9.4,"C",ORPKG,0)))=ORPKG  ; ^DIC(9.4) is package file<br/> S GMRCPROS=+$O(^DIC(9.4,"C","GMRC",0))<br/> D ORPKG1(.Y,.ORLST){:/}
  Leading comment lines | {::nomarkdown}GMRC=Prosthetics, LR=Lab, PSO=Pharmacy, RA=Radiology{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

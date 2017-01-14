@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG PROMPTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM DIALOG PROMPTS 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Additional prompts for a given dialog element{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORDLG<br/>ORDCUR<br/>ORFTYP{:/}
+ Lines | {::nomarkdown} D PROMPT^PXRMRPCC(.ORY,ORDLG,ORDCUR,ORFTYP) Q  ; DBIA 3080{:/}
 
 ### Input Parameters
 
@@ -26,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

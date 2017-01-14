@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR ATESTS 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR ATESTS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}TEST{:/}
+ Lines | {::nomarkdown} D ATESTS^LR7OGO(.ORY,TEST){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

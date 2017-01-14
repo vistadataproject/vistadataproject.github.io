@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DELPTEVT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DELPTEVT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete Patient Event in #100.2
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | {::nomarkdown} Q:'+PTEVT<br/> D CANCEL^OREVNTX(PTEVT){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

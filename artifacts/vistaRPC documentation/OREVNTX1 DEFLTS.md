@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DEFLTS 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DEFLTS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default specialty for EVTID(#100.5)
+ Input Parameters | {::nomarkdown}EVTID{:/}
+ Lines | {::nomarkdown} Q:'+EVTID<br/> N PRTEVT<br/> S PRTEVT=0<br/> S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)<br/> I PRTEVT>0 S EVTID=PRTEVT<br/> S ORY=$$DEFTS^ORCDADT(EVTID){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

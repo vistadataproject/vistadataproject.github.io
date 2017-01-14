@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDLR32 IC VALID 
+## [RPCs](TableOfContent.md) &#8594; ORWDLR32 IC VALID 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is the time a valid immediate collect time?
+ Input Parameters | {::nomarkdown}ORTIME{:/}
+ Lines | {::nomarkdown} S ORTIME=$P(ORTIME,".",1)_"."_$E($P(ORTIME,".",2),1,4)<br/> S ORY=$$VALID^LR7OV4(DUZ(2),ORTIME){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

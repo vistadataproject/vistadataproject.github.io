@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XUS INTRO MSG 
+## [RPCs](TableOfContent.md) &#8594; XUS INTRO MSG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return INTRO TEXT.
+ Lines | {::nomarkdown} D INTRO^XUS1A("RET"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

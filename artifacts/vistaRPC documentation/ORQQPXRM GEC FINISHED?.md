@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC FINISHED? 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM GEC FINISHED? 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC pass a boolean value to PXRMGECU{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}DFN<br/>FIN{:/}
+ Lines | {::nomarkdown} D FINISHED^PXRMGECU(DFN,FIN){:/}
 
 ### Input Parameters
 
@@ -25,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

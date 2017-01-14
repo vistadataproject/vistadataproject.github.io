@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCV VST 
+## [RPCs](TableOfContent.md) &#8594; ORWCV VST 
 
  property | value 
 --- | --- 
@@ -16,6 +16,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}This RPC returns a list of appointments and admissions for a patient basedon parameters that define the beginning and ending range for CPRS GUI.{:/}
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}DFN<br/>BEG<br/>END<br/>SKIP{:/}
+ Lines | {::nomarkdown} N ERR,ERRMSG<br/> S ERR=0 ; kludge to return errors<br/> Q:'$G(DFN)<br/> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br/> I ERR K ORVISIT S ORVISIT(1)=ERRMSG{:/}
 
 
- Generated on January 13th 2017, 6:24:32 am
+
+
+ Generated on January 13th 2017, 7:15:27 am

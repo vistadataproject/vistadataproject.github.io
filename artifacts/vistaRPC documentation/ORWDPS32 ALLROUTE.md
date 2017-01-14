@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS32 ALLROUTE 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 ALLROUTE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns a list of all available med routes
+ Lines | {::nomarkdown} N I,X,ILST<br/> S ILST=0<br/> K ^TMP($J,"ORWDPS32 ALLROUTE")<br/> D ALL^PSS51P2(,"??",,,"ORWDPS32 ALLROUTE")<br/> S I=0 F  S I=$O(^TMP($J,"ORWDPS32 ALLROUTE",I)) Q:'I  D<br/> . I +$P(^TMP($J,"ORWDPS32 ALLROUTE",I,3),U)>0 S LST($$NXT)=I_U_^TMP($J,"ORWDPS32 ALLROUTE",I,.01)_U_^TMP($J,"ORWDPS32 ALLROUTE",I,1)<br/> K ^TMP($J,"ORWDPS32 ALLROUTE"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

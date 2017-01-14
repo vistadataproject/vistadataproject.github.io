@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPX GET DEF LOCATIONS 
+## [RPCs](TableOfContent.md) &#8594; ORQQPX GET DEF LOCATIONS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Default Outside Locations
+ Lines | {::nomarkdown} N SRV,ORERR<br/> S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> D GETLST^XPAR(.ORDEFLOC,"USR^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORQQPX DEFAULT LOCATIONS","Q",.ORERR){:/}
 
 ### Input Parameters
 
@@ -31,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTDLG 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTDLG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return event default dialog IEN
+ Input Parameters | {::nomarkdown}EVTID{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> S:$P($G(^ORD(100.5,+EVTID,0)),U,12) EVTID=$P($G(^ORD(100.5,+EVTID,0)),U,12)<br/> Q:'$D(^ORD(100.5,+EVTID,0))<br/> S ORY=$P(^ORD(100.5,+EVTID,0),U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

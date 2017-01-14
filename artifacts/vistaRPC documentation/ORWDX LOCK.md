@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX LOCK 
+## [RPCs](TableOfContent.md) &#8594; ORWDX LOCK 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Attempt to lock pt for ordering
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S OK=$$LOCK^ORX2(DFN){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP REPORT LISTS 
+## [RPCs](TableOfContent.md) &#8594; ORWRP REPORT LISTS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | report lists for reports tab
+ Lines | {::nomarkdown} N EOF,ROOT<br/> S EOF="$$END",ROOT=$NA(LST)<br/> K @ROOT<br/> D GETRPTS(.ROOT,.EOF) ; -report list<br/> D GETHS(.ROOT,.EOF) ; -health summary types<br/> D GETDT(.ROOT,.EOF) ; -date ranges{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRP REPORT LIST{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXA WCPUT 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA WCPUT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Set ward comments
+ Input Parameters | {::nomarkdown}ORID<br/>WCLST{:/}
+ Lines | {::nomarkdown} N DIERR,ERRLST,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)<br/> D WP^DIE(100.008,ACT_","_ORIFN_",",50,"","WCLST","ERRLST")<br/> S ERR="" I $D(DIERR) S ERR="An error occurred while saving comments."{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

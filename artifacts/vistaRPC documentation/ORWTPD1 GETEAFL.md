@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPD1 GETEAFL 
+## [RPCs](TableOfContent.md) &#8594; ORWTPD1 GETEAFL 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get "future days limit" parameter setting for Enc appt selection.
+ Lines | {::nomarkdown} S Y=$$GET^XPAR("DIV^SYS^PKG^USR","ORQQEAFL ENC APPT FUTURE LIMIT",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

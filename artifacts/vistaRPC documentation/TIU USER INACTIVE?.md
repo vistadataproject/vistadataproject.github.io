@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU USER INACTIVE? 
+## [RPCs](TableOfContent.md) &#8594; TIU USER INACTIVE? 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is user inactive?
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} S TIUY=+$$GET1^DIQ(200,TIUDA_",",7,"I"){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORPRF GETFLG 
+## [RPCs](TableOfContent.md) &#8594; ORPRF GETFLG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return detailed flag info for flag FLAGID
+ Input Parameters | {::nomarkdown}PTDFN<br/>FLAGID{:/}
+ Lines | {::nomarkdown} I '$D(^TMP("ORPRF",$J,FLAGID)) Q<br/> N IX,CNT<br/> S (IX,CNT)=0<br/> F  S IX=$O(^TMP("ORPRF",$J,FLAGID,IX)) Q:'IX  D<br/> . S CNT=CNT+1,ORY(CNT)=$G(^TMP("ORPRF",$J,FLAGID,IX)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

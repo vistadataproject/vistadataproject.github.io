@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWOR RESULT 
+## [RPCs](TableOfContent.md) &#8594; ORWOR RESULT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return results of order identified by ID
+ Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ID{:/}
+ Lines | {::nomarkdown} K ^TMP("ORXPND",$J)<br/> N ORESULTS,ORVP,LCNT S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br/> D ORDERS^ORCXPND1<br/> K ^TMP("ORXPND",$J,"VIDEO")<br/> S REF=$NA(^TMP("ORXPND",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE ASKPCE 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE ASKPCE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns ORWPCE ASK ENCOUNTER UPDATE parameter value
+ Input Parameters | {::nomarkdown}USER<br/>LOC{:/}
+ Lines | {::nomarkdown} N SRV,ORTMP,ORERR<br/> S USER=$G(USER,DUZ)<br/> S SRV=$P($G(^VA(200,USER,5)),U)<br/> D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE ASK ENCOUNTER UPDATE","Q",.ORERR)<br/> S ORY=+$P($G(ORTMP(1)),U,2){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

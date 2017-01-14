@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN SHOW SF513 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN SHOW SF513 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | CONSULTS SF513 DISPLAY IN GUI
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} D GUI^GMRCP5(.ORY,GMRCO){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

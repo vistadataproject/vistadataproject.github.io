@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXA FLAGTXT 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA FLAGTXT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | flag reason
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | {::nomarkdown} N FLAG<br/> S FLAG=$G(^OR(100,+ORID,8,$P(ORID,";",2),3))<br/> S LST(1)="FLAGGED: "_$$FMTE^XLFDT($P(FLAG,U,3))_" by "_$P($G(^VA(200,+$P(FLAG,U,4),0)),U)<br/> S LST(2)=$P(FLAG,U,5) ; reason{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

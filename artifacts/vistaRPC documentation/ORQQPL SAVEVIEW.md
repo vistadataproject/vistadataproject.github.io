@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPL SAVEVIEW 
+## [RPCs](TableOfContent.md) &#8594; ORQQPL SAVEVIEW 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | save new view in File #200/Field #125
+ Input Parameters | {::nomarkdown}GMPLVIEW{:/}
+ Lines | {::nomarkdown} N TMP<br/> Q:'$D(GMPLVIEW)<br/> S TMP=$P($G(^VA(200,DUZ,125)),U,2,999)<br/> S ^VA(200,DUZ,125)=$P(GMPLVIEW,U,1)_U_TMP<br/> S TMP=$$GET^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1)<br/> I TMP'="" D  Q<br/> . D CHG^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2))<br/> D ADD^XPAR(DUZ_";VA(200,","ORCH CONTEXT PROBLEMS",1,$P(GMPLVIEW,U,2)){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORB GETDATA 
+## [RPCs](TableOfContent.md) &#8594; ORWORB GETDATA 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return XQADATA for an alert
+ Input Parameters | {::nomarkdown}XQAID{:/}
+ Lines | {::nomarkdown} N SHOWADD<br/> S ORY=""<br/> Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))<br/> D GETACT^XQALERT(XQAID)<br/> S ORY=XQADATA<br/> I ($E(XQAID,1,3)="TIU"),(+ORY>0) D<br/> . S SHOWADD=1<br/> . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)<br/> K XQAID,XQADATA,XQAOPT,XQAROU{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

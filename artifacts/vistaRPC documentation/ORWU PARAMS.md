@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU PARAMS 
+## [RPCs](TableOfContent.md) &#8594; ORWU PARAMS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return a list of parameter values
+ Input Parameters | {::nomarkdown}APARAM{:/}
+ Lines | {::nomarkdown} D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q"){:/}
  Leading comment lines | {::nomarkdown}call assumes current user, default entities, multiple instances{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

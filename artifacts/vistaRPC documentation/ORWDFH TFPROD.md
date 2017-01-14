@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDFH TFPROD 
+## [RPCs](TableOfContent.md) &#8594; ORWDFH TFPROD 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a list of active tubefeeding products
+ Lines | {::nomarkdown} N I,IEN,NAM,X,CURTM<br/> S I=0,NAM="",CURTM=$$NOW^XLFDT<br/> F  S NAM=$O(^ORD(101.43,"S.TF",NAM)) Q:NAM=""  D<br/> . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.TF",NAM,IEN)) Q:'IEN  D<br/> . . S X=^ORD(101.43,"S.TF",NAM,IEN)<br/> . . I +$P(X,U,3),$P(X,U,3)<CURTM Q<br/> . . S I=I+1<br/> . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)<br/> . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

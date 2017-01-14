@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDFH ISOIEN 
+## [RPCs](TableOfContent.md) &#8594; ORWDFH ISOIEN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return IEN for the Isolation/Precaution orderable item
+ Lines | {::nomarkdown} S VAL=$O(^ORD(101.43,"S.PREC","ISOLATION PROCEDURES",0)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

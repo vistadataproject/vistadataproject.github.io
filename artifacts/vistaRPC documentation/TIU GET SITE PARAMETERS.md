@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU GET SITE PARAMETERS 
+## [RPCs](TableOfContent.md) &#8594; TIU GET SITE PARAMETERS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get site parameters for GUI
+ Lines | {::nomarkdown} N TIUPRM0,TIUPRM1<br/> D SETPARM^TIULE<br/> S TIUY=TIUPRM0{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XWB DIRECT RPC 
+## [RPCs](TableOfContent.md) &#8594; XWB DIRECT RPC 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call a remote RPC
+ Input Parameters | {::nomarkdown}LOC<br/>RPC<br/>RPCVER<br/>P1<br/>P2<br/>P3<br/>P4<br/>P5<br/>P6<br/>P7<br/>P8<br/>P9<br/>P10{:/}
+ Lines | {::nomarkdown} N X,I,INX,N,XWBHL7,XWBPAR,XWBPCNT,XWBDVER,XWBESSO,XWBHDL,PMAX<br/> N XWBMSG,XWBSEC,RPCIEN<br/> N HLMTIEN,HLDOM,HLECH,HLFS,HLINSTN,HLNEXT,HLNODE,HLPARAM,HLQ,HLQUIT<br/> D SETUP(1) I $G(RET(1))'="" Q<br/> D DIRECT^XWB2HL7A("ZREMOTE RPC",XWBHDL,.XWBMSG,LOC,.XWBPAR)<br/> I $P(XWBMSG,U,2) S RET(0)="-1^"_$P(XWBMSG,"^",3) Q<br/> I 'HLMTIEN S RET(0)="-1^No Message returned" Q<br/> D RETURN,RTNDATA^XWBDRPC(.RET,XWBHDL){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

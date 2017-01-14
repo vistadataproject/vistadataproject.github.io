@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPS1 PICKUP 
+## [RPCs](TableOfContent.md) &#8594; ORWPS1 PICKUP 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default for refill location
+ Lines | {::nomarkdown} I $D(^PSX(550,"C")) S Y="M"<br/> E  S Y="W"{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

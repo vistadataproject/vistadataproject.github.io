@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN SIGFIND 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN SIGFIND 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Significant findings
+ Input Parameters | {::nomarkdown}ORIEN<br/>ORFL<br/>ORCOM<br/>ORALRT<br/>ORALTO<br/>ORDATE{:/}
+ Lines | {::nomarkdown} S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

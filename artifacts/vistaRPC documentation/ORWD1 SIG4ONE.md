@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD1 SIG4ONE 
+## [RPCs](TableOfContent.md) &#8594; ORWD1 SIG4ONE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 if order requires a signature
+ Input Parameters | {::nomarkdown}ANORDER{:/}
+ Lines | {::nomarkdown} S REQ=0<br/> I +$P($G(^OR(100,+ANORDER,0)),U,16) S REQ=1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

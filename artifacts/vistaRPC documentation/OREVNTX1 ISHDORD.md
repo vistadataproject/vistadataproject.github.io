@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 ISHDORD 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 ISHDORD 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return 1 if it's on-hold med order
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | {::nomarkdown} Q:'+ORID<br/> Q:'$D(^OR(100,+ORID,0))<br/> N STS,HDSTS,ODGP,INPT,OUPT,MEDS,IVMD<br/> S HDSTS=$O(^ORD(100.01,"B","HOLD",0))<br/> S STS=$P($G(^OR(100,+ORID,3)),U,3)<br/> S INPT=$O(^ORD(100.98,"B","UD RX",0))<br/> S OUPT=$O(^ORD(100.98,"B","O RX",0))<br/> S MEDS=$O(^ORD(100.98,"B","RX",0))<br/> S IVMD=$O(^ORD(100.98,"B","IV RX",0))<br/> S ODGP=$P(^OR(100,+ORID,0),U,11)<br/> I (U_INPT_U_OUPT_U_MEDS_U_IVMD_U[U_ODGP_U),(HDSTS=STS) S ORY=1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

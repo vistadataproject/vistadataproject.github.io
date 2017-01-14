@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQLST 
+## [RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQLST 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save quick list
+ Input Parameters | {::nomarkdown}DG<br/>QLST{:/}
+ Lines | {::nomarkdown} N PNM<br/> S PNM="ORWDQ USR"_DUZ_" "_$P(^ORD(100.98,DG,0),U,3)<br/> D QVSAVE^ORWUL(.VAL,PNM,.QLST)<br/> D EN^XPAR(DUZ_";VA(200,","ORWDQ QUICK VIEW","`"_DG,PNM){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

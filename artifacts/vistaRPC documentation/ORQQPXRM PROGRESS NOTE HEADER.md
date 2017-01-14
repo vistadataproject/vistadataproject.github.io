@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM PROGRESS NOTE HEADER 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM PROGRESS NOTE HEADER 
 
  property | value 
 --- | --- 
@@ -21,6 +21,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | DBIA 3080
+ Input Parameters | {::nomarkdown}ORLOC{:/}
  Leading comment lines | {::nomarkdown}ORQQPXRM REMINDERS UNEVALUATED{:/}
 
 ### Input Parameters
@@ -32,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

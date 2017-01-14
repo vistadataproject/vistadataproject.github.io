@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP SETDCOS 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP SETDCOS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}VALUE{:/}
+ Lines | {::nomarkdown} D SETDCOS^ORWTPN(.OK,VALUE,DUZ){:/}
  Leading comment lines | {::nomarkdown}set default cosigner for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPS1 REFILL 
+## [RPCs](TableOfContent.md) &#8594; ORWPS1 REFILL 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Refill Request
+ Input Parameters | {::nomarkdown}ORDERID<br/>REFLOC<br/>ORVP<br/>ORNP<br/>ORL{:/}
+ Lines | {::nomarkdown} S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br/> D REF^ORMBLDPS(ORDERID,REFLOC)<br/> S Y=""<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

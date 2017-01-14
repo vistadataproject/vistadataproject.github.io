@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR CHART 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR CHART 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>SPEC<br/>TEST{:/}
+ Lines | {::nomarkdown} D CHART^LR7OGC(.ORY,DFN,DATE1,DATE2,SPEC,TEST){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

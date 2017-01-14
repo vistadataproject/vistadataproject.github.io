@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXVB SUBCHK 
+## [RPCs](TableOfContent.md) &#8594; ORWDXVB SUBCHK 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check to see if selected test is a Blood Component or a Diagnostic Test
+ Input Parameters | {::nomarkdown}TSTNM{:/}
+ Lines | {::nomarkdown} S OROOT=""<br/> Q:'$L($G(TSTNM))<br/> I $O(^ORD(101.43,"S.VBT",TSTNM,0)) S OROOT="t"<br/> I $O(^ORD(101.43,"S.VBC",TSTNM,0)) S OROOT="c"{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

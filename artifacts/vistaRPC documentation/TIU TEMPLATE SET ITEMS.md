@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET ITEMS 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE SET ITEMS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Change ITEMs of a group, class, or root
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUX{:/}
+ Lines | {::nomarkdown} N TIUI S TIUI=0<br/> D CLRITMS(TIUDA) ; Remove ITEMS<br/> F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D<br/> . N TIUITEM,TIUSUCC<br/> . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI<br/> . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)<br/> . S SUCCESS(TIUI)=TIUSUCC{:/}
  Leading comment lines | {::nomarkdown}Receives:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Returns:<br/>SUCCESS(SEQ)=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

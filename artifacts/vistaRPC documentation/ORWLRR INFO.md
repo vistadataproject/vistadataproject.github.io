@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR INFO 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR INFO 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get Lab test description info
+ Input Parameters | {::nomarkdown}ORTEST{:/}
+ Lines | {::nomarkdown} I '$L($T(ONE^LR7OR4)) S ORY(1)="Missing lab API (part of patch LR*5.2*256)" Q<br/> D ONE^LR7OR4(.ORY,.ORTEST){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

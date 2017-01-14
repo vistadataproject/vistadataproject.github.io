@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDCSLT LOOK200 
+## [RPCs](TableOfContent.md) &#8594; ORWDCSLT LOOK200 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Lookup a person in 200
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} S VAL=$$FIND1^DIC(200,"","",X)<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

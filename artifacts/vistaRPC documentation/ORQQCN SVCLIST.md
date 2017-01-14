@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN SVCLIST 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN SVCLIST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a set of consult services in long list format
+ Input Parameters | {::nomarkdown}FROM<br/>DIR{:/}
+ Lines | {::nomarkdown} N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br/> S I=0,CNT=44,ORSVC=""<br/> D SVCTREE^ORQQCN2(.Y,1)<br/> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br/> . S ORTMP(ORSVC)=Y(I)<br/> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br/> . S ORSTR=ORTMP(FROM)<br/> . S ORY(I)=ORSTR{:/}
  Leading comment lines | {::nomarkdown}.ORY=returned list, FROM=text to $O from, DIR=$O direction,{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

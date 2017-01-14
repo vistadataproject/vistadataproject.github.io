@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU1 NAMECVT 
+## [RPCs](TableOfContent.md) &#8594; ORWU1 NAMECVT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns text name(mixed-case) derived from IEN xref.
+ Input Parameters | {::nomarkdown}IEN{:/}
+ Lines | {::nomarkdown} N ORNAME<br/> S IEN=IEN_","<br/> S ORNAME=$$GET1^DIQ(200,IEN,20.2)<br/> S Y=$$NAMEFMT^XLFNAME(.ORNAME,"F","DcMPC"){:/}
  Leading comment lines | {::nomarkdown}GRE/2002<br/>PKS-12/20/2002 Tag not presently used.<br/>Y=Returned value, IEN=Internal number{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

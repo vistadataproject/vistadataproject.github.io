@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMG 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DIR<br/>FORMAT{:/}
+ Lines | {::nomarkdown} D INTERIMG^LR7OGM(.ORY,DFN,DATE1,DIR,$G(FORMAT,1)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

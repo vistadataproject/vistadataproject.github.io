@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU NEWPERS 
+## [RPCs](TableOfContent.md) &#8594; ORWU NEWPERS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a set of names from the NEW PERSON file.
+ Input Parameters | {::nomarkdown}ORFROM<br/>ORDIR<br/>ORKEY<br/>ORDATE<br/>ORVIZ<br/>ORALL{:/}
+ Lines | {::nomarkdown} D NP1^ORWU1{:/}
  Leading comment lines | {::nomarkdown}SLC/PKS: Code moved to ORWU1 on 12/3/2002.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

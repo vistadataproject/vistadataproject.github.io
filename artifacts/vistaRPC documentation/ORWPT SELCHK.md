@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT SELCHK 
+## [RPCs](TableOfContent.md) &#8594; ORWPT SELCHK 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check for sensitive pt
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S REC=$$EN1^ORQPT2(DFN){:/}
  Leading comment lines | {::nomarkdown}SENSITIVE{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

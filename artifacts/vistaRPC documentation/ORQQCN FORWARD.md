@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN FORWARD 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN FORWARD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Forward consult/request to another service
+ Input Parameters | {::nomarkdown}GMRCO<br/>GMRCSS<br/>GMRCORNP<br/>GMRCATTN<br/>GMRCURGI<br/>ORDATE<br/>ORCOM{:/}
+ Lines | {::nomarkdown} S:+$G(GMRCATTN)=0 GMRCATTN=""<br/> S Y=$$FR^GMRCGUIA(GMRCO,GMRCSS,GMRCORNP,GMRCATTN,GMRCURGI,.ORCOM,ORDATE){:/}
  Leading comment lines | {::nomarkdown}GMRCO - IEN of consult from File 123<br/>GMRCSS - Service to which consult is being forwarded<br/>GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200<br/>GMRCURGI - Urgency of the request<br/>GMRCORNP - Person who is responsible for forwarding the consult<br/>ORCOM is the comments array explaining the forwarding action<br/>passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
 
 ### Input Parameters
@@ -37,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

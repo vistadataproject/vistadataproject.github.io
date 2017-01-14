@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDAL32 SAVE ALLERGY 
+## [RPCs](TableOfContent.md) &#8594; ORWDAL32 SAVE ALLERGY 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save Edit/Add of an allergy/adverse reaction
+ Input Parameters | {::nomarkdown}ORALIEN<br/>ORDFN<br/>OREDITED{:/}
+ Lines | {::nomarkdown} N ORNODE<br/> S ORNODE=$NAME(^TMP("GMRA",$J))<br/> K @ORNODE M @ORNODE=OREDITED<br/> S ORY=0<br/> I $G(@ORNODE@("GMRAERR"))="YES" D EIE^GMRAGUI1(ORALIEN,ORDFN,ORNODE) Q  ;Handle entered in error<br/> I $G(@ORNODE@("GMRANKA"))="YES" D NKA^GMRAGUI1 Q<br/> D UPDATE^GMRAGUI1(ORALIEN,ORDFN,ORNODE) Q  ;Add/edit reactions{:/}
  Leading comment lines | {::nomarkdown}following patch check is made via GUI RPC call to ORWU PATCH instead<br/>I '$$PATCH^XPDUTL("GMRA*4.0*21") S Y="-1^Not yet implemented" Q{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

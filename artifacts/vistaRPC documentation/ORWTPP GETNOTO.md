@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP GETNOTO 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP GETNOTO 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | {::nomarkdown} D GETNOTO^ORWTPR(.INFO,DUZ){:/}
  Leading comment lines | {::nomarkdown}get current user's other info for notifications{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE UNLOCK 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE UNLOCK 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Unlock Template
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} L -^TIU(8927,TIUDA,0):1<br/> S TIUY=1{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

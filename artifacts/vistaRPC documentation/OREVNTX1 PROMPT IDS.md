@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 PROMPT IDS 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 PROMPT IDS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return some prompt ids from #101.41
+ Input Parameters | {::nomarkdown}IDS{:/}
+ Lines | {::nomarkdown} N IDX,ORTS,ORATT<br/> S (ORY,ORTS,ORATT)=""<br/> S IDX=$O(^ORD(101.41,"B","OR GTX TREATING SPECIALTY",0))<br/> S:$D(^ORD(101.41,IDX,1)) ORTS=$P($G(^ORD(101.41,IDX,1)),U,2,3)<br/> S IDX=$O(^ORD(101.41,"B","OR GTX PROVIDER",0))<br/> S:$D(^ORD(101.41,IDX,1)) ORATT=$P($G(^ORD(101.41,IDX,1)),U,2,3)<br/> S ORY=ORTS_"~"_ORATT{:/}
  Leading comment lines | {::nomarkdown}treating specialty Id^attending provider id{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

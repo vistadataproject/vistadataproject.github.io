@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE HASCPT 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE HASCPT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns true if there are any mapped CPT Codes
+ Input Parameters | {::nomarkdown}ORLIST{:/}
+ Lines | {::nomarkdown} N IEN,IDX,FOUND<br/> S IDX=0<br/> F  S IDX=$O(ORLIST(IDX)) Q:'+IDX  D<br/> . S FOUND=0<br/> . S IEN=$$FIND1^DIC(811.1,"","QX",ORLIST(IDX))<br/> . I +IEN S FOUND=+$$GET1^DIQ(811.1,IEN,.05,"I")<br/> . S ORY(IDX)=ORLIST(IDX)_"="_FOUND{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

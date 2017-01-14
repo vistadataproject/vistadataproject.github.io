@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXA ALERT 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA ALERT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | alert user (ORDUZ) when order (ORID) resulted
+ Input Parameters | {::nomarkdown}ORID<br/>ORDUZ{:/}
+ Lines | {::nomarkdown} I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)<br/> I $L($G(ORDUZ))<1 S ORDUZ=DUZ<br/> S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ{:/}
  Leading comment lines | {::nomarkdown}if no user passed, use ordering provider:{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

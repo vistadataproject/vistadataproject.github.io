@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU REMINDER DIALOGS 
+## [RPCs](TableOfContent.md) &#8594; TIU REMINDER DIALOGS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns a list of all reminder dialogs usable in templates
+ Lines | {::nomarkdown} N SRV<br/> K TIUY<br/> D RDACCUM(.TIUY,"USR","N")<br/> S SRV=$$GETSRV(DUZ)<br/> D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")<br/> D RDACCUM(.TIUY,"DIV","N")<br/> D RDACCUM(.TIUY,"SYS","N"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

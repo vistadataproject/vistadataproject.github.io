@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORDDPAPI CLOZMSG 
+## [RPCs](TableOfContent.md) &#8594; ORDDPAPI CLOZMSG 
 
  property | value 
 --- | --- 
@@ -16,6 +16,13 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Lines | {::nomarkdown} N ERR,I<br/> D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)<br/> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))<br/>{:/}
 
 
- Generated on January 13th 2017, 6:24:32 am
+
+
+ Generated on January 13th 2017, 7:15:28 am

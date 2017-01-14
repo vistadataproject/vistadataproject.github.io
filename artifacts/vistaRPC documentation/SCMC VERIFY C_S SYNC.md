@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; SCMC VERIFY C_S SYNC 
+## [RPCs](TableOfContent.md) &#8594; SCMC VERIFY C_S SYNC 
 
  property | value 
 --- | --- 
@@ -24,4 +24,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

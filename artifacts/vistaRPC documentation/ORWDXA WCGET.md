@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXA WCGET 
+## [RPCs](TableOfContent.md) &#8594; ORWDXA WCGET 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | ward comments
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | {::nomarkdown} N I,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)<br/> S I=0 F  S I=$O(^OR(100,ORIFN,8,ACT,5,I)) Q:'I  S LST(I)=$G(^(I,0)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

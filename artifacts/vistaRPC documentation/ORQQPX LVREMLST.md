@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPX LVREMLST 
+## [RPCs](TableOfContent.md) &#8594; ORQQPX LVREMLST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns cover sheet reminders at a specified level
+ Input Parameters | {::nomarkdown}LVL<br/>CLASS{:/}
+ Lines | {::nomarkdown} D REMACCUM(.ORY,LVL,"Q","",$G(CLASS)){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

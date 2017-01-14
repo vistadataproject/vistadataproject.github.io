@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETLINK 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETLINK 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns template linked to title or reason for request
+ Input Parameters | {::nomarkdown}LINK{:/}
+ Lines | {::nomarkdown} N IDX<br/> S ORY="",IDX=$O(^TIU(8927,"AL",LINK,0))<br/> I +IDX,$P($G(^TIU(8927,IDX,0)),U,4)'="I" S ORY=$$NODEDATA^TIUSRVT(IDX){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS2 ADMIN 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS2 ADMIN 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return administration time info
+ Input Parameters | {::nomarkdown}DFN<br/>SCH<br/>OI<br/>LOC<br/>ADMIN{:/}
+ Lines | {::nomarkdown} S OI=+$P($G(^ORD(101.43,+OI,0)),U,2)<br/> S LOC=+$G(^SC(LOC,42)),REC=""<br/> I $L($G(^DPT(DFN,.1))) S REC=$$FIRST^ORCDPS3(DFN,LOC,OI,SCH,"",$G(ADMIN)){:/}
  Leading comment lines | {::nomarkdown}REC: StartText^StartTime^Duration^FirstAdmin{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

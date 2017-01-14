@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER CATEGORIES 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM REMINDER CATEGORIES 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns list of all CPRS lookup categories and associated reminders{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORPT<br/>ORLOC{:/}
+ Lines | {::nomarkdown} D CATEGORY^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078{:/}
 
 ### Input Parameters
 
@@ -25,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

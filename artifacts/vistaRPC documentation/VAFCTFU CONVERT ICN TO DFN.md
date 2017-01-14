@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; VAFCTFU CONVERT ICN TO DFN 
+## [RPCs](TableOfContent.md) &#8594; VAFCTFU CONVERT ICN TO DFN 
 
  property | value 
 --- | --- 
@@ -14,6 +14,14 @@ title: VISTA RPC documentation
  routine | [VAFCTFU1](http://code.osehra.org/dox/Routine_VAFCTFU1_source.html)
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Given a patient Integration Control Number (ICN), this will returnthe patient Internal Entry Number (IEN) from the PATIENT file (#2).{:/}
+
+
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ICN{:/}
+ Lines | {::nomarkdown} S RESULT=$$GETDFN^MPIF001(ICN){:/}
 
 ### Input Parameters
 
@@ -24,4 +32,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

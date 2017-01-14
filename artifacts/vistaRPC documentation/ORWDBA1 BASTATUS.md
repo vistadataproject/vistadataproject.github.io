@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDBA1 BASTATUS 
+## [RPCs](TableOfContent.md) &#8594; ORWDBA1 BASTATUS 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to retrieve the status of the Billing Awareness software
+ Lines | {::nomarkdown} S Y=$D(^XPD(9.7,"B","PX CLINICAL INDICATOR DATA CAPTURE 1.0"))<br/> Q:'Y<br/> S Y=$$CHKPS1^ORWDBA5{:/}
  Leading comment lines | {::nomarkdown}Y  =  Returned Value (1=BA usable, 0=BA not-usable)<br/>Check for installation of CIDC ancillary build{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

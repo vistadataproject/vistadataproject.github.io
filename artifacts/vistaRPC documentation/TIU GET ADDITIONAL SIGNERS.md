@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU GET ADDITIONAL SIGNERS 
+## [RPCs](TableOfContent.md) &#8594; TIU GET ADDITIONAL SIGNERS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to Get list of extra signers for a document
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} N TIUI,DA,DR,DIC,DIQ,TIUXTRA,TIUD12,TIUAU,TIUEC S (DA,TIUI)=0<br/> S DIC="^TIU(8925.7,",DIQ="TIUXTRA"<br/> F  S DA=$O(^TIU(8925.7,"B",TIUDA,DA)) Q:+DA'>0  D<br/> . N TIUX,TIUSGNR<br/> . S DR=".03;.04",DIQ(0)="IE" D EN^DIQ1 Q:+$D(TIUXTRA)'>9<br/> . I +$G(TIUXTRA(8925.7,DA,.04,"I")) Q<br/> . S TIUI=+$G(TIUI)+1<br/> . S TIUY(TIUI)=$G(TIUXTRA(8925.7,DA,.03,"I"))_U_$G(TIUXTRA(8925.7,DA,.03,"E"))<br/> S TIUD12=$G(^TIU(8925,TIUDA,12))<br/> S TIUAU=$P(TIUD12,U,4),TIUEC=$P(TIUD12,U,8)<br/> S TIUI=+$G(TIUI)+1,TIUY(TIUI)=TIUAU_U_$$PERSNAME^TIULC1(TIUAU)_U_"AUTHOR"<br/> I +TIUEC'>0 Q<br/> I '$$FIND1^DIC(200,"","","`"_+TIUEC) D CLEAN^DILF Q<br/> S TIUI=+$G(TIUI)+1,TIUY(TIUI)=TIUEC_U_$$PERSNAME^TIULC1(TIUEC)_U_"EXPECTED COSIGNER"{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

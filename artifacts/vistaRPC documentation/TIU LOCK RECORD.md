@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU LOCK RECORD 
+## [RPCs](TableOfContent.md) &#8594; TIU LOCK RECORD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Bid for lock on a TIU Document record
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} L +^TIU(8925,+TIUDA):1 I  S ERR=0<br/> E  S ERR="1^ Another session has this record locked."{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

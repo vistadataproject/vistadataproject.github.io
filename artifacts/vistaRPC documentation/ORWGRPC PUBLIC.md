@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC PUBLIC 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC PUBLIC 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - check if user can edit public views and settings
+ Lines | {::nomarkdown} S VAL=$$PUBLIC^ORWGAPI(DUZ){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDAL32 SEND BULLETIN 
+## [RPCs](TableOfContent.md) &#8594; ORWDAL32 SEND BULLETIN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Send bulletin if user attempts free-text entry
+ Input Parameters | {::nomarkdown}ORDUZ<br/>ORDFN<br/>ORTEXT<br/>ORCMTS{:/}
+ Lines | {::nomarkdown} I '$D(ORCMTS) D<br/> . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT)<br/> E  D<br/> . S Y=$$SENDREQ^GMRAPES0(ORDUZ,ORDFN,ORTEXT,.ORCMTS){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

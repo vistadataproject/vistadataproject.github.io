@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU VERSION 
+## [RPCs](TableOfContent.md) &#8594; ORWU VERSION 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return version of package or namespace
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} S VAL=$$VERSION^XPDUTL(X){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

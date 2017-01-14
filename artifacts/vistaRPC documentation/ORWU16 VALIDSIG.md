@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU16 VALIDSIG 
+## [RPCs](TableOfContent.md) &#8594; ORWU16 VALIDSIG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} S X=$$DECRYP^XUSRB1(X),ESOK=0<br/> D HASH^XUSHSHP<br/> I X=$P($G(^VA(200,+DUZ,20)),U,4) S ESOK=1{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

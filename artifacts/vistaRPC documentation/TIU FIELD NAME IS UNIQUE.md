@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU FIELD NAME IS UNIQUE 
+## [RPCs](TableOfContent.md) &#8594; TIU FIELD NAME IS UNIQUE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is Name Unique?
+ Input Parameters | {::nomarkdown}NAME<br/>IEN{:/}
+ Lines | {::nomarkdown} N FLD<br/> S FLD=+$O(^TIU(8927.1,"B",NAME,0))<br/> I +FLD,FLD'=IEN S TIUY=0<br/> E  S TIUY=1{:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

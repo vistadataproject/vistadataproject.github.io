@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU FIELD IMPORT 
+## [RPCs](TableOfContent.md) &#8594; TIU FIELD IMPORT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Call layer for IMPORT2
+ Input Parameters | {::nomarkdown}XMLTMP{:/}
+ Lines | {::nomarkdown} D IMPORT2(.REPORT,"XMLTMP",1){:/}
  Leading comment lines | {::nomarkdown}compatibility and extend the IMPORT function to optionally <br/>specify saving the template field.{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

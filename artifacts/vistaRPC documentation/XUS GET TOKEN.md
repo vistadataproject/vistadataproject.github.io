@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XUS GET TOKEN 
+## [RPCs](TableOfContent.md) &#8594; XUS GET TOKEN 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | rpc. Auto Signon Handle
+ Lines | {::nomarkdown} N HDL<br/> S RET="NOT AUTHENTICATED"<br/> I $G(DUZ)<1 Q  ;Not an authenticated user<br/> I $G(DUZ("LOA"))=1 Q  ;Not an authenticated user<br/> S HDL=$$HANDLE("XWBAS",1),RET="~1"_HDL<br/> D TOK(HDL){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

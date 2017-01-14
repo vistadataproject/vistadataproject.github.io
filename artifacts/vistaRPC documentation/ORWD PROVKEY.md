@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD PROVKEY 
+## [RPCs](TableOfContent.md) &#8594; ORWD PROVKEY 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns 1 if user possesses the provider key
+ Input Parameters | {::nomarkdown}USERID{:/}
+ Lines | {::nomarkdown} N NAM S NAM=$P(^VA(200,USERID,0),U,1)<br/> S VAL=$D(^VA(200,"AK.PROVIDER",NAM,USERID)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

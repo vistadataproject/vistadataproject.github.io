@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORECS01 GETDIV 
+## [RPCs](TableOfContent.md) &#8594; ORECS01 GETDIV 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get user's division
+ Input Parameters | {::nomarkdown}USR{:/}
+ Lines | {::nomarkdown} S ORY=0<br/> S:$G(DUZ(2)) ORY=DUZ(2){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; GMV DLL VERSION 
+## [RPCs](TableOfContent.md) &#8594; GMV DLL VERSION 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
+ Input Parameters | {::nomarkdown}GMVX{:/}
+ Lines | {::nomarkdown} S RESULT=$$GET^XPAR("SYS","GMV DLL VERSION",GMVX,"E")<br/> S:RESULT="" RESULT="NO"<br/>{:/}
  Leading comment lines | {::nomarkdown}RESULT = variable name to return check<br/>GMVX = dll name and version date/time<br/>Returns yes or no  {:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

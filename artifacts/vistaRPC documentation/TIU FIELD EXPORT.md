@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU FIELD EXPORT 
+## [RPCs](TableOfContent.md) &#8594; TIU FIELD EXPORT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Exports Template Fields as XML
+ Input Parameters | {::nomarkdown}FLDS{:/}
+ Lines | {::nomarkdown} N I,IEN<br/> K TIUXML<br/> D ADD(.TIUXML,"<TEMPLATE_FIELDS>",0)<br/> S I=0<br/> F  S I=$O(FLDS(I)) Q:I'>0  D<br/> . S IEN=$O(^TIU(8927.1,"B",FLDS(I),0))<br/> . I +IEN D ADDXML(.TIUXML,IEN)<br/> D ADD(.TIUXML,"</TEMPLATE_FIELDS>",0){:/}
  Leading comment lines | {::nomarkdown}FLDS should be an array of Template Field names, not IENs{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DEFAULTS 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GET DEFAULTS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns Default Templates for the current user
+ Lines | {::nomarkdown} N TIUTMP,TIUERR<br/> D GETLST^XPAR(.TIUTMP,"USR","TIU DEFAULT TEMPLATES","Q",.TIUERR) ;2263<br/> S TIUY=$P($G(TIUTMP(1)),U,2){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

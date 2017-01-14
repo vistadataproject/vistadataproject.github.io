@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC ITEMDATA 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC ITEMDATA 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get data of an item on patient (glucose results)
+ Input Parameters | {::nomarkdown}ITEM<br/>START<br/>DFN{:/}
+ Lines | {::nomarkdown} D ITEMDATA^ORWGAPI("ORWGRPC",ITEM,START,DFN)<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

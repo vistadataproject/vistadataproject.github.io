@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN LOAD FOR EDIT 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN LOAD FOR EDIT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load a cancelled consult/procedure for editing
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} Q:+$G(GMRCO)=0<br/> N ORNODE,I<br/> S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0<br/> D SEND^GMRCGUIC(GMRCO,ORNODE)<br/> S Y=ORNODE<br/>{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

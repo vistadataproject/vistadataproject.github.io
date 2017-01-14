@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCIRN AUTORDV 
+## [RPCs](TableOfContent.md) &#8594; ORWCIRN AUTORDV 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get parameter value for ORWRP CIRN AUTOMATIC
+ Lines | {::nomarkdown} S ORY=+$$GET^XPAR("ALL","ORWRP CIRN AUTOMATIC",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

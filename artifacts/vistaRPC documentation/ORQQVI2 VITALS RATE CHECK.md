@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS RATE CHECK 
+## [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS RATE CHECK 
 
  property | value 
 --- | --- 
@@ -20,9 +20,11 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORQTYPE<br/>ORQRATE<br/>ORQUNIT{:/}
+ Lines | {::nomarkdown} S ORRETURN=$$RATECHK^GMRVPCE0(ORQTYPE,ORQRATE,$G(ORQUNIT)){:/}
  Leading comment lines | {::nomarkdown}Extrinsic function to validate the<br/>rate for a particular measurement<br/>Input<br/>Variables:  ORQTYPE=Type of measurement (abbreviation<br/>(req.)  from PCE Device Interface Specification).<br/>ORQRATE=Measurement rate to be validated.<br/>(req.)<br/>ORQUNIT=Unit of measurement for rate, if specified.<br/>(opt.)<br/>Return value:  1 if rate is valid.<br/>0 if rate is invalid.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

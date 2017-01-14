@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP GETTD 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP GETTD 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}CLASS{:/}
+ Lines | {::nomarkdown} D GETTD^ORWTPN(.VALUE,CLASS,DUZ){:/}
  Leading comment lines | {::nomarkdown}get default title for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

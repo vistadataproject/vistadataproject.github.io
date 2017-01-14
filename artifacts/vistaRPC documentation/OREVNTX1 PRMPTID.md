@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 PRMPTID 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 PRMPTID 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return event prompt IEN for OR GTX EVENT
+ Input Parameters | {::nomarkdown}PRTNM{:/}
+ Lines | {::nomarkdown} S:$D(^ORD(101.41,"B","OR GTX EVENT")) ORY=$O(^("OR GTX EVENT",0)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

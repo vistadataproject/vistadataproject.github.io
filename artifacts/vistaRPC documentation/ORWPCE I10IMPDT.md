@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE I10IMPDT 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE I10IMPDT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get ICD-10 Implementation Date
+ Lines | {::nomarkdown} S RESULT=""<br/> G:'$L($T(IMPDATE^LEXU)) I10IMPX<br/> S RESULT=$$IMPDATE^LEXU("10D"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORB KILL EXPIR OI ALERT 
+## [RPCs](TableOfContent.md) &#8594; ORWORB KILL EXPIR OI ALERT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Delete expiring flagged OI notification if no flagged expiring OI remaining
+ Input Parameters | {::nomarkdown}ORDFN<br/>ORNIFN{:/}
+ Lines | {::nomarkdown} N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")<br/> D AGET^ORWORR(.ORLST,ORDFN,5,ORDG)<br/> Q:+(@ORLST@(.1))  ;more left<br/> N XQAKILL,ORVP<br/> S ORVP=ORDFN_";DPT("<br/> S XQAKILL=$$XQAKILL^ORB3F1(ORNIFN) ; flagged expiring OI notifications<br/> I $D(XQAID) D DELETE^XQALERT<br/> I '$D(XQAID) S XQAID=$P($G(^ORD(100.9,ORNIFN,0)),U,2)_","_+ORVP_","_ORNIFN D DELETEA^XQALERT K XQAID{:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

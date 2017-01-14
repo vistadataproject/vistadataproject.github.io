@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN UNRESOLVED 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN UNRESOLVED 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns true if unresolved consults for user/pt
+ Input Parameters | {::nomarkdown}ORDFN{:/}
+ Lines | {::nomarkdown} S $P(ORY,U,1)=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/> S $P(ORY,U,2)=+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I"){:/}
  Leading comment lines | {::nomarkdown}S ORY=0<br/>Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0<br/>S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/>Q{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

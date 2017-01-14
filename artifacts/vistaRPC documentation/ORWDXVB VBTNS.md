@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXVB VBTNS 
+## [RPCs](TableOfContent.md) &#8594; ORWDXVB VBTNS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to get Days back to check for Type & Screen order
+ Lines | {::nomarkdown} S RETURN=$$GET^XPAR("ALL","ORWDXVB VBECS TNS CHECK",1,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

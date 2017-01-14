@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPL PROBLEM LIST 
+## [RPCs](TableOfContent.md) &#8594; ORQQPL PROBLEM LIST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | GET LIST OF PATIENT PROBLEMS
+ Input Parameters | {::nomarkdown}DFN<br/>CONTEXT<br/>ORIDT{:/}
+ Lines | {::nomarkdown} N DIWL,DIWR,DIWF<br/> N ST,ORI,ORX<br/> S ORIDT=$G(ORIDT,DT)<br/> S (LCNT,NUM)=0<br/> S DIWL=1,DIWR=48,DIWF="C48"<br/> S CONTEXT=";;"_$G(CONTEXT)<br/> I CONTEXT=";;" S CONTEXT=";;A"<br/> S ST=$P(CONTEXT,";",3)<br/> I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only<br/> I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here<br/> I ROOT(0)<1 D<br/> . S LCNT=1<br/> . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

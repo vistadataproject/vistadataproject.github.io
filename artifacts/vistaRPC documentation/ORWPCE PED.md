@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE PED 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE PED 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get list of education topices for clinic
+ Input Parameters | {::nomarkdown}CLINIC{:/}
+ Lines | {::nomarkdown} D GETLST^IBDF18A(CLINIC,"PX SELECT EDUCATION TOPICS","LST"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

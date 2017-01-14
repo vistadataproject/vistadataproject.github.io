@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU HAS AUTHOR SIGNED? 
+## [RPCs](TableOfContent.md) &#8594; TIU HAS AUTHOR SIGNED? 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Has Author signed?
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUUSR{:/}
+ Lines | {::nomarkdown} N TIUD12,TIUD15<br/> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))<br/> S TIUY=1<br/> D:$P(TIUD12,U,8)=TIUUSR  Q<br/> . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0{:/}
  Leading comment lines | {::nomarkdown}if TIUY =<br/>0 = Author has NOT signed & TIUUSR = Expected Cosigner<br/>1 = Author HAS signed or TIUUSR '= Expected Cosigner{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

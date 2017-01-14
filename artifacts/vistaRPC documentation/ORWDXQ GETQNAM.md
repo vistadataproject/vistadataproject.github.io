@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXQ GETQNAM 
+## [RPCs](TableOfContent.md) &#8594; ORWDXQ GETQNAM 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return current quick name
+ Input Parameters | {::nomarkdown}CRC{:/}
+ Lines | {::nomarkdown} N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br/> I '$D(^ORD(101.41,"B",ROOT)) Q<br/> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br/> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

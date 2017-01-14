@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN GET MED RESULT DETAILS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN GET MED RESULT DETAILS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Detailed display of a med result
+ Input Parameters | {::nomarkdown}GMRCRES{:/}
+ Lines | {::nomarkdown} Q:+$G(GMRCRES)=0<br/> D DISPMED^GMRCGUIU(GMRCRES,.ORY)<br/>{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

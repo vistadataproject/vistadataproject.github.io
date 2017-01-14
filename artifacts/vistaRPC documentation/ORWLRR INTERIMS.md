@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMS 
+## [RPCs](TableOfContent.md) &#8594; ORWLRR INTERIMS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>ORTESTS{:/}
+ Lines | {::nomarkdown} D INTERIMS^LR7OGM(.ORY,DFN,DATE1,DATE2,.ORTESTS){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

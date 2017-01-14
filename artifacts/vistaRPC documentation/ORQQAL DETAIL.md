@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQAL DETAIL 
+## [RPCs](TableOfContent.md) &#8594; ORQQAL DETAIL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN DETAILED ALLERGY INFO FOR SPECIFIED ALLERGIC REACTION:
+ Input Parameters | {::nomarkdown}DFN<br/>ALLR<br/>ID{:/}
+ Lines | {::nomarkdown} D EN2^GMRAOR2(ALLR,"GMRACT")<br/> N CR,OX,OH S CR=$CHAR(13),I=1<br/> S ORAY(I)="    Causative agent: "_$P(GMRACT,U),I=I+1<br/> S ORAY(I)=" Nature of Reaction: "_$S($P(GMRACT,U,6)="ALLERGY":"Allergy",$P(GMRACT,U,6)="PHARMACOLOGIC":"Adverse Reaction",$P(GMRACT,U,6)="UNKNOWN":"Unknown",1:""),I=I+1 ;216<br/> S ORAY(I)=" ",I=I+1<br/> I $D(GMRACT("S",1)) D SYMP<br/> I $D(GMRACT("V",1)) D CLAS<br/> S ORAY(I)="         Originator: "_$P(GMRACT,U,2)_$S($L($P(GMRACT,U,3)):" ("_$P(GMRACT,U,3)_")",1:""),I=I+1 ;216<br/> S ORAY(I)="         Originated: "_$P(GMRACT,U,10),I=I+1 ;216<br/> I $D(GMRACT("O",1)) D OBS<br/> S ORAY(I)="           Verified: "_$S($P(GMRACT,U,4)="VERIFIED":$P(GMRACT,U,8),1:"No"),I=I+1 ;216<br/> S ORAY(I)="Observed/Historical: "_$S($P(GMRACT,U,5)="OBSERVED":"Observed",$P(GMRACT,U,5)="HISTORICAL":"Historical",1:""),I=I+1<br/> I $D(GMRACT("C",1)) D COM<br/> K GMRACT{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 CPACT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 CPACT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return True/False to display active orders for copy
+ Input Parameters | {::nomarkdown}EVT{:/}
+ Lines | {::nomarkdown} Q:'EVT<br/> S ORY=0<br/> Q:'$D(^ORD(100.5,EVT,0))<br/> S ORY=$P(^ORD(100.5,EVT,0),U,11){:/}
  Leading comment lines | {::nomarkdown}EVT ptr to #100.5{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

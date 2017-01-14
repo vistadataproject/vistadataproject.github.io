@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC FASTDATA 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC FASTDATA 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get all data (non-lab) set up on patient
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} D FASTDATA^ORWGAPI(.DATA,DFN){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

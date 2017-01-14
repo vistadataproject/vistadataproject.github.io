@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU LOAD RECORD FOR EDIT 
+## [RPCs](TableOfContent.md) &#8594; TIU LOAD RECORD FOR EDIT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get data in preparation for editing a record
+ Input Parameters | {::nomarkdown}TIUDA<br/>DR{:/}
+ Lines | {::nomarkdown} N CANEDIT,ERR,D0,DIQ2,TIUARR,TIUF,TIUI<br/> I +$D(^TIU(8925,TIUDA,"TEMP")),'+$$IFTEXT() D MERGTEXT(TIUDA)<br/> K ^TMP("TIUEDIT",$J),^TMP("TIULQ",$J)<br/> S TIUY=$NA(^TMP("TIUEDIT",$J)),TIUARR=$NA(^TMP("TIULQ",$J))<br/> S CANEDIT=$$CANDO^TIULP(TIUDA,"EDIT RECORD")<br/> I +CANEDIT'>0 S ^TMP("TIUEDIT",$J,0)="~"_$P(CANEDIT,U,2) Q<br/> D EXTRACT^TIULQ(TIUDA,TIUARR,.ERR,$G(DR),"",1,"IE",1)<br/> I $D(ERR) M TIUY=ERR Q<br/> S TIUF=0<br/> F  S TIUF=$O(@TIUARR@(TIUDA,TIUF)) Q:+TIUF'>0  D<br/> . S ^TMP("TIUEDIT",$J,TIUF)=TIUF_U_@TIUARR@(TIUDA,TIUF,"I")_U_@TIUARR@(TIUDA,TIUF,"E")<br/> S TIUI=0<br/> F  S TIUI=$O(@TIUARR@(TIUDA,"TEXT",TIUI)) Q:+TIUI'>0  D<br/> . S ^TMP("TIUEDIT",$J,"TEXT",TIUI)=$G(@TIUARR@(TIUDA,"TEXT",TIUI,0))<br/> S ^TMP("TIUEDIT",$J,"TEXT",0)="$TXT",^TIU(8925,"ASAVE",DUZ,TIUDA)=""<br/> K @TIUARR{:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

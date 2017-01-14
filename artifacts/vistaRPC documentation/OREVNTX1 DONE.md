@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DONE 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DONE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Terminate PTEvt
+ Input Parameters | {::nomarkdown}PTEVT{:/}
+ Lines | {::nomarkdown} Q:'PTEVT<br/> D DONE^OREVNTX(PTEVT)<br/> D ACTLOG^OREVNTX(PTEVT,"MN"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

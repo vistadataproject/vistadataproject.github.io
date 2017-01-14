@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN SET ACT MENUS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN SET ACT MENUS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | set action menus in GUI based on service of selected consult
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} Q:+$G(GMRCO)=0<br/> N ORFLG<br/> S Y=0<br/> D CPRS^GMRCACTM(GMRCO,1)<br/> Q:'$D(ORFLG(GMRCO))<br/> S Y=ORFLG(GMRCO){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

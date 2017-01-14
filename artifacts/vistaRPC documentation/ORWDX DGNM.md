@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX DGNM 
+## [RPCs](TableOfContent.md) &#8594; ORWDX DGNM 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Display grp pointer for name
+ Input Parameters | {::nomarkdown}NM{:/}
+ Lines | {::nomarkdown} S VAL=$O(^ORD(100.98,"B",NM,0)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

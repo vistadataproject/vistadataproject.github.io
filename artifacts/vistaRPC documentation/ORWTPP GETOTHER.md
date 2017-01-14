@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP GETOTHER 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP GETOTHER 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | {::nomarkdown} D GETOTHER^ORWTPO(.INFO,DUZ){:/}
  Leading comment lines | {::nomarkdown}get user's other parameter settings{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

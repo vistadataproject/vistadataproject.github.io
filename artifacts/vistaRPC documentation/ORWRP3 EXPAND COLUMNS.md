@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP3 EXPAND COLUMNS 
+## [RPCs](TableOfContent.md) &#8594; ORWRP3 EXPAND COLUMNS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get list for Reports & Labs Tab Treeview
+ Input Parameters | {::nomarkdown}TAB{:/}
+ Lines | {::nomarkdown} N ROOT<br/> S ROOT=$NA(LST)<br/> K @ROOT<br/> D TRY1(.ROOT,$G(TAB)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS VALIDATE TYPE 
+## [RPCs](TableOfContent.md) &#8594; ORQQVI2 VITALS VALIDATE TYPE 
 
  property | value 
 --- | --- 
@@ -20,9 +20,11 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Input Parameters | {::nomarkdown}ORQTYPE{:/}
+ Lines | {::nomarkdown} S ORRETURN=$$VMTYPES^GMRVPCE0(ORQTYPE)<br/>{:/}
  Leading comment lines | {::nomarkdown}This function returns one if ORQTYPE is a valid type abbrev.<br/>from the PCE Device Interface Specification.{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

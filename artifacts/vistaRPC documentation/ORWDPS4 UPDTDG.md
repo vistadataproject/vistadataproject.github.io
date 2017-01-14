@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS4 UPDTDG 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS4 UPDTDG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Update Inpt order for outpatient DG to Inpt DG
+ Input Parameters | {::nomarkdown}ORID{:/}
+ Lines | {::nomarkdown} Q:'$D(^OR(100,+ORID,0))<br/> N UDDG<br/> S UDDG=$O(^ORD(100.98,"B","UD RX",0))<br/> S $P(^OR(100,+ORID,0),U,11)=UDDG{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

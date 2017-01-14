@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT TOP 
+## [RPCs](TableOfContent.md) &#8594; ORWPT TOP 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return top for all patients list (last selected for now)
+ Lines | {::nomarkdown} N IEN<br/> S IEN=$G(^DISV(DUZ,"^DPT("))<br/> I IEN S LST(1)=IEN_U_$P($G(^DPT(IEN,0)),U){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

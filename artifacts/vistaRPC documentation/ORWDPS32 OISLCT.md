@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS32 OISLCT 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 OISLCT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | rtn for defaults for pharm OI
+ Input Parameters | {::nomarkdown}OI<br/>PSTYPE<br/>ORVP{:/}
+ Lines | {::nomarkdown} N ILST S ILST=0<br/> K ^TMP("PSJINS",$J),^TMP("PSJMR",$J),^TMP("PSJNOUN",$J),^TMP("PSJSCH",$J)<br/> S LST($$NXT)="~Dispense" D DISPDRG<br/> S LST($$NXT)="~Instruct" D INSTRCT<br/> S LST($$NXT)="~Route"    D ROUTE<br/> S LST($$NXT)="~Message"  D MESSAGE<br/> I $L($G(^TMP("PSJSCH",$J))) S LST($$NXT)="~DefSched",LST($$NXT)="d"_^($J)<br/> K ^TMP("PSJINS",$J),^TMP("PSJMR",$J),^TMP("PSJNOUN",$J),^TMP("PSJSCH",$J){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

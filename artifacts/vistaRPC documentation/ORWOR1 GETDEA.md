@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWOR1 GETDEA 
+## [RPCs](TableOfContent.md) &#8594; ORWOR1 GETDEA 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get user DEA
+ Input Parameters | {::nomarkdown}ORUSER{:/}
+ Lines | {::nomarkdown} S Y=$$DEA^XUSER(,$G(ORUSER)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

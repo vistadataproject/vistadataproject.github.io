@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT LEGACY 
+## [RPCs](TableOfContent.md) &#8594; ORWPT LEGACY 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return message if data on the legacy system
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S ORLST(0)=0<br/> I $L($T(HXDATA^A7RDPAGU)) D<br/> . D HXDATA^A7RDPAGU(.ORLST,DFN)<br/> . I $O(ORLST(0)) S ORLST(0)=1{:/}
  Leading comment lines | {::nomarkdown}ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

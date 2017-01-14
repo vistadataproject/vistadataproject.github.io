@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPN GETTC 
+## [RPCs](TableOfContent.md) &#8594; ORWTPN GETTC 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}CLASS<br/>FROM<br/>DIR{:/}
+ Lines | {::nomarkdown} N CNT,IEN,NODE,NUM K VALUES<br/> S CNT=44,NUM=0<br/> F  Q:NUM>CNT  S FROM=$O(^TIU(8925.1,"B",FROM),DIR) Q:FROM=""  D<br/> .S IEN=0 F  S IEN=$O(^TIU(8925.1,"B",FROM,IEN)) Q:IEN<1  D<br/> ..I '$D(^TIU(8925.1,"AT","DOC",IEN)) Q<br/> ..I '$$ISA^TIULX(IEN,CLASS) Q<br/> ..I '$$CANPICK^TIULP(IEN) Q<br/> ..I '$$CANENTR^TIULP(IEN) Q<br/> ..S NODE=$G(^TIU(8925.1,IEN,0))<br/> ..I '$L(NODE) Q<br/> ..S NUM=NUM+1<br/> ..S VALUES(NUM)=IEN_U_NODE{:/}
  Leading comment lines | {::nomarkdown}get titles for a class{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

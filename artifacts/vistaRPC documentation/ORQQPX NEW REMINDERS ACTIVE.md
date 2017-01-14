@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPX NEW REMINDERS ACTIVE 
+## [RPCs](TableOfContent.md) &#8594; ORQQPX NEW REMINDERS ACTIVE 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return true if Interactive Reminders are active
+ Lines | {::nomarkdown} S ORY=0<br/> I $T(APPL^PXRMRPCA)'="",+$G(DUZ) D<br/> . N SRV<br/> . ;S SRV=$P($G(^VA(200,DUZ,5)),U)<br/> . S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br/> . S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","PXRM GUI REMINDERS ACTIVE",1,"Q")<br/> . I +ORY S ORY=1<br/> . E  S ORY=0{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

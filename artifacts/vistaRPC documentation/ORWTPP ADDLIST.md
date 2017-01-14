@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP ADDLIST 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP ADDLIST 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Input Parameters | {::nomarkdown}VALUE{:/}
+ Lines | {::nomarkdown} D ADDLIST^ORWTPT(.OK,VALUE,DUZ){:/}
  Leading comment lines | {::nomarkdown}adds current user to a team{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

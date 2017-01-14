@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; SCRP QUERY VALIDATE 
+## [RPCs](TableOfContent.md) &#8594; SCRP QUERY VALIDATE 
 
  property | value 
 --- | --- 
@@ -25,4 +25,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

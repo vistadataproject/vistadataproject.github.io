@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDAL32 DEF 
+## [RPCs](TableOfContent.md) &#8594; ORWDAL32 DEF 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get dialog data for allergies
+ Lines | {::nomarkdown} N ILST,I,X S ILST=0<br/> S LST($$NXT)="~Allergy Types" D ALLGYTYP<br/> S LST($$NXT)="~Reactions" D ALLGYTYP<br/> S LST($$NXT)="~Nature of Reaction" D NATREACT<br/> S LST($$NXT)="~Top Ten" D TOPTEN<br/> S LST($$NXT)="~Observ/Hist" D OBSHIST<br/> S LST($$NXT)="~Severity" D SEVERITY{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

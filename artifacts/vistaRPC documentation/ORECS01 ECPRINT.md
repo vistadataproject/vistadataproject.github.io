@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORECS01 ECPRINT 
+## [RPCs](TableOfContent.md) &#8594; ORECS01 ECPRINT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Print ECS report to Device
+ Input Parameters | {::nomarkdown}ORECARY{:/}
+ Lines | {::nomarkdown} Q:'$D(ORECARY)<br/> D RPTEN^ECRRPC(.ORY,.ORECARY){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

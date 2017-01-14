@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT DISCHARGE 
+## [RPCs](TableOfContent.md) &#8594; ORWPT DISCHARGE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get discharge movement information
+ Input Parameters | {::nomarkdown}DFN<br/>ADMITDT{:/}
+ Lines | {::nomarkdown} N VAIP<br/> I +$G(ADMITDT)=0 S Y=DT Q<br/> S VAIP("D")=ADMITDT D 52^VADPT<br/> I +VAIP(17)=0 S Y=DT Q<br/> S Y=+VAIP(17,1){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

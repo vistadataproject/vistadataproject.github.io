@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORB TEXT FOLLOWUP 
+## [RPCs](TableOfContent.md) &#8594; ORWORB TEXT FOLLOWUP 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Follow-up for text messages
+ Input Parameters | {::nomarkdown}DFN<br/>NOTIF<br/>XQADATA{:/}
+ Lines | {::nomarkdown} I NOTIF=67 D CHGRAD{:/}
 
 ### Input Parameters
 
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

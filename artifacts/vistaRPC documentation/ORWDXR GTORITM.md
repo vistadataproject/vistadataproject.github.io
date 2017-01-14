@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXR GTORITM 
+## [RPCs](TableOfContent.md) &#8594; ORWDXR GTORITM 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get back the orderable item IEN
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | {::nomarkdown} S ORIFN=+ORIFN<br/> S Y=$$VALUE^ORCSAVE2(ORIFN,"ORDERABLE"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETBOIL 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETBOIL 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns a Template's Unexpanded Boilerplate Text
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} N IDX,LINE,TYPE<br/> K ^TMP("TIU TEMPLATE",$J)<br/> S TIUY=$NA(^TMP("TIU TEMPLATE",$J))<br/> S (IDX,LINE)=0<br/> S TYPE=$P($G(^TIU(8927,TIUDA,0)),U,3)<br/> I (TYPE="T")!(TYPE="G") D<br/> .F  S LINE=$O(^TIU(8927,TIUDA,2,LINE)) Q:'LINE  D<br/> ..S IDX=IDX+1<br/> ..S ^TMP("TIU TEMPLATE",$J,IDX)=$G(^TIU(8927,TIUDA,2,LINE,0)){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

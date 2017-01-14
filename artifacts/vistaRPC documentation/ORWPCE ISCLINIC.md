@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE ISCLINIC 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE ISCLINIC 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns TRUE if location is a clinic
+ Input Parameters | {::nomarkdown}ORLOC{:/}
+ Lines | {::nomarkdown} N ORTYP<br/> S ORY=0<br/> S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")<br/> I (ORTYP="C")!(ORTYP="M") S ORY=1{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

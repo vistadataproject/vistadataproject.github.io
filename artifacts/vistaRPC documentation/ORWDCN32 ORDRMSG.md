@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDCN32 ORDRMSG 
+## [RPCs](TableOfContent.md) &#8594; ORWDCN32 ORDRMSG 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns order message for this consult/procedure orderable
+ Input Parameters | {::nomarkdown}ORDITM{:/}
+ Lines | {::nomarkdown} N I<br/> S I=0 F  S I=$O(^ORD(101.43,ORDITM,8,I)) Q:I'>0  S Y(I)=^(I,0){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

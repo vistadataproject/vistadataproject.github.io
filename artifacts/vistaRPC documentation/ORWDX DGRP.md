@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX DGRP 
+## [RPCs](TableOfContent.md) &#8594; ORWDX DGRP 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Display grp pointer for a dlg
+ Input Parameters | {::nomarkdown}DLG{:/}
+ Lines | {::nomarkdown} S DLG=$S($E(DLG)="`":+$P(DLG,"`",2),1:$O(^ORD(101.41,"AB",DLG,0))) ;kcm<br/> S VAL=$P($G(^ORD(101.41,DLG,0)),U,5){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

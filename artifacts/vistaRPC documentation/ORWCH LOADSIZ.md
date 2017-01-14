@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWCH LOADSIZ 
+## [RPCs](TableOfContent.md) &#8594; ORWCH LOADSIZ 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return the bounds for a particular control
+ Input Parameters | {::nomarkdown}NAM{:/}
+ Lines | {::nomarkdown} I NAM="" S VAL="" Q<br/> S VAL=$$GET^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,"I"){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

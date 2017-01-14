@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN2 GET CONTEXT 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN2 GET CONTEXT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns current view context for user
+ Input Parameters | {::nomarkdown}ORUSER{:/}
+ Lines | {::nomarkdown} S Y=$$GET^XPAR("ALL","ORCH CONTEXT CONSULTS",1){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENTS FOR REQUEST 
+## [RPCs](TableOfContent.md) &#8594; TIU GET DOCUMENTS FOR REQUEST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Get TIU Documents for a given Consult or
+ Input Parameters | {::nomarkdown}OVP<br/>SEQUENCE{:/}
+ Lines | {::nomarkdown} N TIUDA,TIUI<br/> S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIULIST",$J)) K @TIUY<br/> S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")<br/> F  S TIUDA=$O(^TIU(8925,"G",OVP,TIUDA)) Q:+TIUDA'>0  D<br/> . S TIUI=TIUI+1<br/> . ; Cross-check value of field 1405 with x-ref value<br/> . I OVP'=$P($G(^TIU(8925,TIUDA,14)),U,5) Q<br/> . ; If a document is an ID Entry, get its parent<br/> . ; I +$G(^TIU(8925,TIUDA,21)) S TIUDA=+$G(^TIU(8925,TIUDA,21))<br/> . ; Don't include entry in list more than once<br/> . I +$O(@TIUY@("INDX",TIUDA,0)) Q<br/> . ; Don't include entry in list if RETRACTED<br/> . I $P($G(^TIU(8925,TIUDA,0)),U,5)=15 Q<br/> . S @TIUY@(TIUI)=TIUDA_U_$$RESOLVE^TIUSRVLO(TIUDA)<br/> . S @TIUY@("INDX",TIUDA,TIUI)=""<br/> . I +$$HASDAD^TIUSRVLI(TIUDA) D SETDAD^TIUSRVLI(.TIUY,TIUDA,.TIUI)<br/> . I +$$HASKIDS^TIUSRVLI(TIUDA) D SETKIDS^TIUSRVLI(.TIUY,TIUDA,.TIUI)<br/>{:/}
  Leading comment lines | {::nomarkdown}Surgical Case{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

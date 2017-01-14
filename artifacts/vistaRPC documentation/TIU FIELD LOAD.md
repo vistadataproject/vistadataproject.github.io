@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU FIELD LOAD 
+## [RPCs](TableOfContent.md) &#8594; TIU FIELD LOAD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Load Template Field by Name
+ Input Parameters | {::nomarkdown}FLD{:/}
+ Lines | {::nomarkdown} N FLDIEN S FLDIEN=""<br/> Q:$G(FLD)']""<br/> D GETFLD(.TIUY,FLD,0,.FLDIEN)<br/> I +FLDIEN S TIUY(.05)=FLDIEN{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD SAVE 
+## [RPCs](TableOfContent.md) &#8594; ORWD SAVE 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | procedure
+ Input Parameters | {::nomarkdown}DFN<br/>ORNP<br/>LOC<br/>DLG<br/>ORWDACT<br/>RSP{:/}
+ Lines | {::nomarkdown} N ORDIALOG,ORL,ORVP,ORIFN,ORDUZ,ORSTS,ORDG,OREVENT,ORCAT,ORDA<br/> I $P(^ORD(101.41,+DLG,0),U)="PSO OERR" S ORCAT="O"<br/> I $P(^ORD(101.41,+DLG,0),U)="PSJ OR PAT OE" S ORCAT="I"<br/> S ORVP=DFN_";DPT(",ORL(2)=LOC_";SC(",ORL=ORL(2)<br/> D GETDLG^ORCD(DLG)<br/> M ORDIALOG=RSP S ORDIALOG=DLG<br/> I ORWDACT="N" D<br/> . D EN^ORCSAVE<br/> . S Y="" I ORIFN D GETBYIFN^ORWORR(.Y,ORIFN)<br/> I $P(ORWDACT,U,1)="E" D<br/> . S ORIFN=+$P(ORWDACT,U,2) D XX^ORCSAVE<br/> . S Y="" S ORIFN=+$P(ORWDACT,U,2)_";"_ORDA D GETBYIFN^ORWORR(.Y,ORIFN){:/}
  Leading comment lines | {::nomarkdown}Save order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

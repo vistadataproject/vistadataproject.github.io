@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU UPDATE RECORD 
+## [RPCs](TableOfContent.md) &#8594; TIU UPDATE RECORD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Update existing Document
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUX<br/>SUPPRESS{:/}
+ Lines | {::nomarkdown} N TIU,TIUI,TIUC,TIUD0,TIUD12,TIUD14,TIUD15,TIUCPF,TITLE,PRFUNLNK,TIUY,TIUCC,TIUFLAG S TIUFLAG=0<br/> I $S(+$G(TIUDA)'>0:1,'$D(^TIU(8925,+TIUDA,0)):1,1:0) D  Q<br/> . S SUCCESS="0^ Cannot update a non-existent document..."<br/> I +$P($G(^TIU(8925,+TIUDA,0)),U,5)>6 D  Q<br/> . S SUCCESS="0^ TIU Document #"_TIUDA_" is already signed..."<br/> I $D(TIUX("TEXT")) D<br/> . K ^TIU(8925,+TIUDA,"TEMP")<br/> . M ^TIU(8925,+TIUDA,"TEMP")=TIUX("TEXT")<br/> . S (TIUC,TIUI)=0<br/> . F  S TIUI=$O(^TIU(8925,+TIUDA,"TEMP",TIUI)) Q:+TIUI'>0  D<br/> . . S TIUC=TIUC+1<br/> . I +TIUC>0 S ^TIU(8925,+TIUDA,"TEMP",0)="^^"_TIUC_U_TIUC_U_DT_"^^"<br/> . K TIUX("TEXT")<br/> I +$O(TIUX(""))'>0 S:+$G(SUPPRESS) SUCCESS=+TIUDA Q<br/> S TIUD0=$G(^TIU(8925,TIUDA,0)),TIUD12=$G(^(12)),TIUD14=$G(^(14)),TITLE=+TIUD0<br/> S TIUCPF=+$$ISA^TIULX(TITLE,+$$CLASS^TIUCP)<br/> D SETCOS^TIUSRVP2(TIUDA,.TIUX,TIUD0,TIUD12)<br/> S TIUCC=$P($G(TIUD14),"^",5)<br/> I +$G(TIUX("1405"))>0,+$G(TIUCC)>0,(+$G(TIUX("1405"))'=+TIUCC) D ROLLBACK^TIUCNSLT(TIUDA) S TIUFLAG=1<br/> I +$G(TIUX(.01))>0,(+$G(TIUX(.01))'=+TIUD0) D<br/> . S TIUX(.04)=$$DOCCLASS^TIULC1(+$G(TIUX(.01)))<br/> . S TIUY=0 D ISCNSLT^TIUCNSLT(.TIUY,TITLE)<br/> . I $G(TIUY),TIUFLAG=0 D ROLLBACK^TIUCNSLT(TIUDA) ;  if changed to Non-Consult title - VMP/RJT - *239<br/> . ; If change title from PRF to nonPRF, set flg to unlink note:<br/> . I $$ISPFTTL^TIUPRFL(TITLE),'$$ISPFTTL^TIUPRFL(+$G(TIUX(.01))) S PRFUNLNK=1<br/> D FILE(.SUCCESS,+TIUDA,.TIUX,+$G(SUPPRESS),TIUCPF)<br/> I +SUCCESS'>0 K ^TIU(8925,+TIUDA,"TEMP") Q<br/> I $G(PRFUNLNK) D UNLINK^TIUPRF1(TIUDA)<br/> D GETTIU^TIULD(.TIU,TIUDA)<br/> I $D(^TIU(8925,+TIUDA,"TEMP")) D<br/> . K ^TIU(8925,+TIUDA,"TEXT")<br/> . D MERGTEXT^TIUEDI1(+TIUDA,.TIU)<br/> . K ^TIU(8925,+TIUDA,"TEMP")<br/> . S:'+$G(SUCCESS) SUCCESS=+TIUDA<br/> S TIUD15=$G(^TIU(8925,+TIUDA,15))<br/> I +TIUD15 D<br/> . N TIUBY,DR,DIE,DA,X,Y S TIUBY=$P(TIUD15,U,2) Q:+TIUBY'>0<br/> . S DR="1503///^S X=$$SIGNAME^TIULS("_TIUBY_");1504///^S X=$$SIGTITL^TIULS("_TIUBY_")"<br/> . S DA=TIUDA,DIE=8925 D ^DIE<br/> I '+$G(SUPPRESS) D<br/> . I +$P(TIUD0,U,5)<5,'$D(TIUX(.05)) D UPDSTAT(TIUDA,+$G(TIUD0))<br/> . D SEND^TIUALRT(TIUDA),SENDID^TIUALRT1(TIUDA):+$G(^TIU(8925,+TIUDA,21))<br/> . D UPDTIRT^TIUDIRT(.TIU,TIUDA){:/}
 
 ### Input Parameters
 
@@ -34,4 +36,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP GETSUB 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP GETSUB 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | {::nomarkdown} D GETSUB^ORWTPN(.VALUE,DUZ){:/}
  Leading comment lines | {::nomarkdown}get Ask for Subject on notes for current user{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

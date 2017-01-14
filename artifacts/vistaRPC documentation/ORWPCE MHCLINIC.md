@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE MHCLINIC 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE MHCLINIC 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | See if this is a mental health clinic
+ Input Parameters | {::nomarkdown}ORIEN{:/}
+ Lines | {::nomarkdown} I $T(MHCLIN^SDUTL2)="" S ORY=1<br/> E  S ORY=$$MHCLIN^SDUTL2(ORIEN){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

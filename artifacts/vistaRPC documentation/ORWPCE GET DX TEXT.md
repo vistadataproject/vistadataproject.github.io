@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE GET DX TEXT 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GET DX TEXT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC to resolve Dx Text for PCE view
+ Input Parameters | {::nomarkdown}NARR<br/>CODE{:/}
+ Lines | {::nomarkdown} S ORY=$$SETNARR(NARR,CODE){:/}
 
 ### Input Parameters
 
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

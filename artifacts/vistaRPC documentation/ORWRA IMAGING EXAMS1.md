@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRA IMAGING EXAMS1 
+## [RPCs](TableOfContent.md) &#8594; ORWRA IMAGING EXAMS1 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return imaging exams
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} D GET(1){:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRA IMAGING EXAMS1<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

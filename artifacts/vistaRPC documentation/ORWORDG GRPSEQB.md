@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWORDG GRPSEQB 
+## [RPCs](TableOfContent.md) &#8594; ORWORDG GRPSEQB 
 
  property | value 
 --- | --- 
@@ -20,9 +20,10 @@ title: VISTA RPC documentation
 
  property | value 
  --- | --- 
+ Lines | {::nomarkdown} N C,I,X<br/> D GRPSEQ(.X)<br/> S C=0,I=0<br/> F  S I=$O(X(I)) Q:I=""  S C=C+1,Y(C)=I_U_X(I){:/}
  Leading comment lines | {::nomarkdown}Call GRPSEQ, format for broker:<br/>Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

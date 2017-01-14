@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPCE GETSVC 
+## [RPCs](TableOfContent.md) &#8594; ORWPCE GETSVC 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Returns the correct Service Connected Category
+ Input Parameters | {::nomarkdown}SVC<br/>LOC<br/>INP{:/}
+ Lines | {::nomarkdown} N DSS,ORWSVC<br/> S DSS=$P($G(^SC(+LOC,0)),U,7)<br/> Q:'+DSS<br/> M ORWSVC=SVC<br/> S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225{:/}
 
 ### Input Parameters
 
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

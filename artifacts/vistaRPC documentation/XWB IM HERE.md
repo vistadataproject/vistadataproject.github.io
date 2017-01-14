@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XWB IM HERE 
+## [RPCs](TableOfContent.md) &#8594; XWB IM HERE 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | P6
+ Lines | {::nomarkdown} S RESULT=1{:/}
  Leading comment lines | {::nomarkdown}Entry point for XWB IM HERE remote procedure{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

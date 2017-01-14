@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN GET ORDER NUMBER 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN GET ORDER NUMBER 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return OERR order number for consult/procedure
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} I +$G(GMRCO)=0 S Y="-1" Q<br/> S Y=$$ORIFN^GMRCUTL1(GMRCO){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

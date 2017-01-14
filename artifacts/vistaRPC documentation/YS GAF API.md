@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; YS GAF API 
+## [RPCs](TableOfContent.md) &#8594; YS GAF API 
 
  property | value 
 --- | --- 
@@ -16,6 +16,14 @@ title: VISTA RPC documentation
  description | 
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}YS{:/}
+ Lines | {::nomarkdown} N YSBEG,YSEND,YSLIMIT<br/> K YSDATA<br/> D PARSE(.YS)<br/> I DFN'>0 S YSDATA(1)="[ERROR]",YSDATA(2)="No dfn" Q<br/> S YSDATA(1)="[DATA]"<br/> S N=1<br/> D HXLP{:/}
 
 
- Generated on January 13th 2017, 6:24:32 am
+
+
+ Generated on January 13th 2017, 7:15:27 am

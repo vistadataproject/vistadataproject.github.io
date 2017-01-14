@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORCHECK GETXTRA 
+## [RPCs](TableOfContent.md) &#8594; ORCHECK GETXTRA 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | get extra text for an order check
+ Input Parameters | {::nomarkdown}ORGL<br/>ORRULE{:/}
+ Lines | {::nomarkdown} Q:'$D(^TMP($J,"ORK XTRA TXT",ORGL,ORRULE))<br/> M ORY=^TMP($J,"ORK XTRA TXT",ORGL,ORRULE)<br/>{:/}
  Leading comment lines | {::nomarkdown}^TMP($J,"ORK XTRA TXT") stores the text of order checks that are longer than a single line (reminder order checks){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

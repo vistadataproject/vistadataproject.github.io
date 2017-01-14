@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX2 DCREASON 
+## [RPCs](TableOfContent.md) &#8594; ORWDX2 DCREASON 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return a list of DC reasons
+ Lines | {::nomarkdown} N ARRAY,CNT,ERROR,IEN,ILST,NAME,SEQARR,X<br/> S ILST=1,LST(ILST)="~DCReason"<br/> S IEN=0 F  S IEN=$O(^ORD(100.03,IEN)) Q:'IEN  S X=^(IEN,0) D<br/> . I $P(X,U,4) Q                              ; inactive<br/> . I $P(X,U,5)'=+$O(^DIC(9.4,"C","OR",0)) Q   ; not OR pkg<br/> . I $P(X,U,7)=+$O(^ORD(100.02,"C","A",0)) Q  ; nature=auto<br/> . S ARRAY($P(X,U))="i"_IEN_U_$P(X,U)<br/> D GETLST^XPAR(.SEQARR,"SYS","OR DC REASON LIST","Q",.ERROR)<br/> F CNT=1:1:SEQARR D<br/> . S IEN=$P(SEQARR(CNT),U,2),NAME=$P(^ORD(100.03,IEN,0),U)<br/> . S ILST=ILST+1,LST(ILST)="i"_IEN_U_NAME<br/> . I $D(ARRAY(NAME))>0 K ARRAY(NAME)<br/> I $D(ARRAY)'>0 Q<br/> S NAME="" F  S NAME=$O(ARRAY(NAME)) Q:NAME=""  D<br/> .S ILST=ILST+1,LST(ILST)=ARRAY(NAME){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

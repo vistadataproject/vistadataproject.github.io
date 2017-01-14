@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTEVT 
+## [RPCs](TableOfContent.md) &#8594; OREVNTX1 DFLTEVT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return default release event based on provider IFN
+ Input Parameters | {::nomarkdown}PVIFN{:/}
+ Lines | {::nomarkdown} N CMEVTLST,IDX<br/> S CMEVTLST="",IDX=0<br/> D GETLST^OREV3(.CMEVTLST)<br/> F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D<br/> . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

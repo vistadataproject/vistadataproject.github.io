@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTPP CLEARNOT 
+## [RPCs](TableOfContent.md) &#8594; ORWTPP CLEARNOT 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC
+ Lines | {::nomarkdown} D CLEARNOT^ORWTPR(.OK,DUZ){:/}
  Leading comment lines | {::nomarkdown}clear current user's notifications{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

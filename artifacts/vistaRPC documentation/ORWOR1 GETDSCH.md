@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWOR1 GETDSCH 
+## [RPCs](TableOfContent.md) &#8594; ORWOR1 GETDSCH 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Check if Drug Schedule
+ Input Parameters | {::nomarkdown}ORDER{:/}
+ Lines | {::nomarkdown} N IFN,ACTION<br/> S IFN=+ORDER,ACTION=$P(ORDER,";",2)<br/> S Y=$P($G(^OR(100,+IFN,8,+ACTION,2)),U,4){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

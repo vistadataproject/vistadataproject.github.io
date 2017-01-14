@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS32 VALQTY 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS32 VALQTY 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | validate a quantity, return 1 if valid, 0 if not
+ Input Parameters | {::nomarkdown}X{:/}
+ Lines | {::nomarkdown} K:(+X'>0)!(+X>99999999)!(X'?.8N.1".".2N)!($L(X)>12) X<br/> S OK=$S($D(X):1,1:0){:/}
  Leading comment lines | {::nomarkdown}to be compatible with LM, make sure X is integer from 1 to 240<br/>this is based on the input transform from 52,7{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

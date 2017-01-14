@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT CWAD 
+## [RPCs](TableOfContent.md) &#8594; ORWPT CWAD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | returns CWAD flags for a patient
+ Input Parameters | {::nomarkdown}DFN{:/}
+ Lines | {::nomarkdown} S Y=$$CWAD^ORQPT2(DFN){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

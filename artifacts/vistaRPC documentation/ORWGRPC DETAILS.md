@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC DETAILS 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC DETAILS 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get report for type of data for a date or date range
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>TYPE<br/>COMP{:/}
+ Lines | {::nomarkdown} D DETAILS^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,TYPE,$G(COMP))<br/> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

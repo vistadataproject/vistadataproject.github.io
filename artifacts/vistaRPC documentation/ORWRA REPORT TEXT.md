@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRA REPORT TEXT 
+## [RPCs](TableOfContent.md) &#8594; ORWRA REPORT TEXT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return imaging report
+ Input Parameters | {::nomarkdown}DFN<br/>ORID<br/>ALPHA<br/>OMEGA<br/>DTRANGE<br/>REMOTE<br/>ORMAX<br/>ORFHIE{:/}
+ Lines | {::nomarkdown} N ID,LCNT,ORVP,EXAMDATE,CASENMBR<br/> S RADATA=$NA(^TMP($J,"RAE3"))<br/> S ROOT=$NA(^TMP("ORXPND",$J))<br/> K @RADATA,@ROOT<br/> S ID=$TR(ORID,"-",U)<br/> S LCNT=0,ORVP=DFN_";DPT("<br/> D XRAYS^ORCXPND1<br/> K @RADATA{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRA REPORT TEXT<br/>See RPC definition for details on input and output parameters<br/>-- init locals and globals{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

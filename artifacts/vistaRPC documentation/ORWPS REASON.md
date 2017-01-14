@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPS REASON 
+## [RPCs](TableOfContent.md) &#8594; ORWPS REASON 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return Non-VA Med Statement/Reasons
+ Lines | {::nomarkdown} N ORE<br/> D GETLST^XPAR(.ORY,"ALL","ORWD NONVA REASON","E")<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

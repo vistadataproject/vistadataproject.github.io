@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU ID CAN RECEIVE 
+## [RPCs](TableOfContent.md) &#8594; TIU ID CAN RECEIVE 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Can this document receive an ID Child?
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} S TIUY=$$CANDO^TIULP(TIUDA,"ATTACH ID ENTRY"){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

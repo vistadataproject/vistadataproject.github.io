@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU CREATE ADDENDUM RECORD 
+## [RPCs](TableOfContent.md) &#8594; TIU CREATE ADDENDUM RECORD 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Create addendum
+ Input Parameters | {::nomarkdown}TIUDA<br/>TIUX<br/>SUPPRESS{:/}
+ Lines | {::nomarkdown} D MAKEADD^TIUSRVP2(.TIUDADD,TIUDA,.TIUX,+$G(SUPPRESS)){:/}
  Leading comment lines | {::nomarkdown}For backward compatibility<br/>Use MAKEADD^TIUSRVP2 now, please{:/}
 
 ### Input Parameters
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

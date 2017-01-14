@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN REMOVABLE MED RESULTS 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN REMOVABLE MED RESULTS 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | return array of associated med results
+ Input Parameters | {::nomarkdown}GMRCO{:/}
+ Lines | {::nomarkdown} Q:+$G(GMRCO)=0<br/> D GETRES^GMRCGUIU(GMRCO,.ORY){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

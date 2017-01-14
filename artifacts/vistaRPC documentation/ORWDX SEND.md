@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDX SEND 
+## [RPCs](TableOfContent.md) &#8594; ORWDX SEND 
 
  property | value 
 --- | --- 
@@ -21,9 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Sign
+ Input Parameters | {::nomarkdown}DFN<br/>ORNP<br/>ORL<br/>ES<br/>ORWREC{:/}
  Leading comment lines | {::nomarkdown}DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/>ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

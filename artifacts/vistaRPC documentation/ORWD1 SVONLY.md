@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWD1 SVONLY 
+## [RPCs](TableOfContent.md) &#8594; ORWD1 SVONLY 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print service copies only
+ Input Parameters | {::nomarkdown}HLOC<br/>PRTLST{:/}
+ Lines | {::nomarkdown} Q:$G(A7RNDBI)  ; per NDBI, to suppress prints during integration<br/> N TMPLST,I,J<br/> S HLOC=+HLOC_";SC(",OK=1<br/> S I="",J=0 F  S I=$O(PRTLST(I)) Q:I'>0  D<br/> . I ($L(PRTLST(I),U)>1),'$P(PRTLST(I),U,5) Q<br/> . S J=J+1,TMPLST(J)=$P(PRTLST(I),U)<br/> I $D(TMPLST)>1 D GUI^ORPR02(.TMPLST,"","S",HLOC)<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

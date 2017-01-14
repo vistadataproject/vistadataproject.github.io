@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU JUSTIFY DELETE? 
+## [RPCs](TableOfContent.md) &#8594; TIU JUSTIFY DELETE? 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Is justification required for deletion?
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} N TIUD0 S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUY=0<br/> I +$P(TIUD0,U,5)'<6 S TIUY=1{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

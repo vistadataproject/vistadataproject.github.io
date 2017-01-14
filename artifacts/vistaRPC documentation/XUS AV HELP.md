@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; XUS AV HELP 
+## [RPCs](TableOfContent.md) &#8594; XUS AV HELP 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | send access/verify code instructions.
+ Lines | {::nomarkdown} S RET(0)=$$AVHLPTXT^XUS2(){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

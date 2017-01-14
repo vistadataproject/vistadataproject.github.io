@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWU16 VALDT 
+## [RPCs](TableOfContent.md) &#8594; ORWU16 VALDT 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Validate date/time entry
+ Input Parameters | {::nomarkdown}X<br/>%DT{:/}
+ Lines | {::nomarkdown} S:'$D(%DT) %DT="TX" D ^%DT{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN PRINT SF513 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN PRINT SF513 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Print SF513 to VistA device from GUI
+ Input Parameters | {::nomarkdown}GMRCO<br/>GMRCCHT<br/>GMRCDEV{:/}
+ Lines | {::nomarkdown} N ORSTATUS<br/> D EN^GMRCP5(GMRCO,GMRCCHT,GMRCDEV,.ORSTATUS)<br/> S Y=ORSTATUS{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

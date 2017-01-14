@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQNAM 
+## [RPCs](TableOfContent.md) &#8594; ORWDXQ PUTQNAM 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Save display name for a quick order dialog
+ Input Parameters | {::nomarkdown}DLG<br/>QNAM{:/}
+ Lines | {::nomarkdown}{:/}
  Leading comment lines | {::nomarkdown}see if DLG used QNAM as display text (quit if so)<br/>otherwise save in ORWDQ DISPLAY NAME{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

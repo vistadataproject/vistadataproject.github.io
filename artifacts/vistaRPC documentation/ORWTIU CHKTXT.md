@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWTIU CHKTXT 
+## [RPCs](TableOfContent.md) &#8594; ORWTIU CHKTXT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Checks for presence of text before signature
+ Input Parameters | {::nomarkdown}ORTIUDA{:/}
+ Lines | {::nomarkdown} S ORY='$$EMPTYDOC^TIULF(ORTIUDA)  ;DBIA #4426<br/>{:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

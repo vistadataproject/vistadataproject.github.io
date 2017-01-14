@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQPXRM MST UPDATE 
+## [RPCs](TableOfContent.md) &#8594; ORQQPXRM MST UPDATE 
 
  property | value 
 --- | --- 
@@ -16,6 +16,14 @@ title: VISTA RPC documentation
  description | {::nomarkdown}Saves MST data{:/}
 
 
+### Method description
+
+ property | value 
+ --- | --- 
+ Input Parameters | {::nomarkdown}ORPT<br/>ORDATE<br/>ORSTAT<br/>ORPROV<br/>ORFTYP<br/>ORFIEN<br/>ORRES{:/}
+ Lines | {::nomarkdown} D MST^PXRMRPCC(.ORY,ORPT,ORDATE,ORSTAT,ORPROV,ORFTYP,ORFIEN,ORRES) Q{:/}
 
 
- Generated on January 13th 2017, 6:24:32 am
+
+
+ Generated on January 13th 2017, 7:15:28 am

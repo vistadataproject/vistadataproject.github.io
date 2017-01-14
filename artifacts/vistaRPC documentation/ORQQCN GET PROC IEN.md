@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC IEN 
+## [RPCs](TableOfContent.md) &#8594; ORQQCN GET PROC IEN 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return pointer to file 123.3 given orderable item
+ Input Parameters | {::nomarkdown}ORDITM{:/}
+ Lines | {::nomarkdown} S ORY=+$P($G(^ORD(101.43,ORDITM,0)),U,2){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

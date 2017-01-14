@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQAL LIST 
+## [RPCs](TableOfContent.md) &#8594; ORQQAL LIST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RETURN PATIENT'S ALLERGY/ADVERSE REACTION INFO:
+ Input Parameters | {::nomarkdown}ORPT{:/}
+ Lines | {::nomarkdown} N I,J,K,GMRARXN,GMRA<br/> S I=1,J=0,K=0<br/> D EN1^GMRAOR1(ORPT,"GMRARXN")<br/> I $G(GMRARXN)="" S ORAY(I)="^No Allergy Assessment"<br/> I $G(GMRARXN)=0 S ORAY(I)="^No Known Allergies"<br/> I $G(GMRARXN)=1 F  S J=$O(GMRARXN(J)) Q:J=""  S ORAY(I)=$P(GMRARXN(J),"^",3)_"^"_$P(GMRARXN(J),"^")_"^"_$P(GMRARXN(J),"^",2) D SIGNS S I=I+1<br/> S:'$D(ORAY(1)) ORAY(1)="^No allergies found."{:/}
  Leading comment lines | {::nomarkdown}null:no allergy assessment, 0:no known allergies, 1:pt has allergies<br/>if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien{:/}
 
 ### Input Parameters
@@ -32,4 +34,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

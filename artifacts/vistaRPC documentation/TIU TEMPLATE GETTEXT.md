@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETTEXT 
+## [RPCs](TableOfContent.md) &#8594; TIU TEMPLATE GETTEXT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Expand Boilerplate
+ Input Parameters | {::nomarkdown}DFN<br/>VSTR<br/>TIUX{:/}
+ Lines | {::nomarkdown} D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX"){:/}
 
 ### Input Parameters
 
@@ -33,4 +35,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORQQVI1 GRID 
+## [RPCs](TableOfContent.md) &#8594; ORQQVI1 GRID 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | from Remote Procedure file
+ Input Parameters | {::nomarkdown}DFN<br/>DATE1<br/>DATE2<br/>RTIMES<br/>TESTS{:/}
+ Lines | {::nomarkdown} N CNT,NUM,TEMPDATE<br/> I DATE1<DATE2 S TEMPDATE=DATE1,DATE1=DATE2,DATE2=TEMPDATE<br/> K ^TMP("ORQQVX",$J,"INPUT"),^("OUTPUT")<br/> S ROOT=$NA(^TMP("ORQQVX",$J,"OUTPUT"))<br/> S ^TMP("ORQQVX",$J,"INPUT",1)=DFN_U_DATE1_U_DATE2_U_RTIMES<br/> S CNT=1,NUM=0 F  S NUM=$O(TESTS(NUM)) Q:NUM<1  D<br/> .S CNT=CNT+1<br/> .S ^TMP("ORQQVX",$J,"INPUT",CNT)=TESTS(NUM)<br/> D GRIDDATA{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

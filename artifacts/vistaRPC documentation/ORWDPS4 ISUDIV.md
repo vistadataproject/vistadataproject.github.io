@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWDPS4 ISUDIV 
+## [RPCs](TableOfContent.md) &#8594; ORWDPS4 ISUDIV 
 
  property | value 
 --- | --- 
@@ -21,8 +21,10 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | True: OI of the order is for both UD and IV
+ Input Parameters | {::nomarkdown}ORIFN{:/}
+ Lines | {::nomarkdown} N OI<br/> S (OI,ORY)=0<br/> S OI=+$O(^OR(100,+$G(ORIFN),.1,"B",0)) Q:OI<1<br/> I $O(^ORD(101.43,OI,9,"B","IVM RX",0)) S ORY=1<br/>{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; TIU WHICH SIGNATURE ACTION 
+## [RPCs](TableOfContent.md) &#8594; TIU WHICH SIGNATURE ACTION 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Evaluate/return whether signature or cosignature
+ Input Parameters | {::nomarkdown}TIUDA{:/}
+ Lines | {::nomarkdown} N TIUD0,TIUD12,TIUSTAT,SIGNER,COSIGNER,XTRASGNR<br/> S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUD12=$G(^TIU(8925,+TIUDA,12))<br/> S SIGNER=$P(TIUD12,U,4),COSIGNER=$P(TIUD12,U,8)<br/> I (DUZ'=SIGNER),(DUZ'=COSIGNER) S XTRASGNR=+$O(^TIU(8925.7,"AE",+TIUDA,+DUZ,0))<br/> I '$G(XTRASGNR) S XTRASGNR=$$ASURG^TIUADSIG(TIUDA)<br/> S TIUSTAT=+$P(TIUD0,U,5)<br/> S TIUY=$S(TIUSTAT'>5:"SIGNATURE",+$G(XTRASGNR):"SIGNATURE",1:"COSIGNATURE"){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

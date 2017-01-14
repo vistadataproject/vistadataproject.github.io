@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWPT ENCTITL 
+## [RPCs](TableOfContent.md) &#8594; ORWPT ENCTITL 
 
  property | value 
 --- | --- 
@@ -21,9 +21,11 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | Return external values for encounter
+ Input Parameters | {::nomarkdown}DFN<br/>LOC<br/>PROV{:/}
+ Lines | {::nomarkdown} S $P(REC,U,1)=$P($G(^SC(+LOC,0)),U,1,2)<br/> S $P(REC,U,3)=$P($G(^DPT(DFN,.101)),U)<br/> S $P(REC,U,4)=$P($G(^VA(200,+PROV,0)),U){:/}
  Leading comment lines | {::nomarkdown}LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

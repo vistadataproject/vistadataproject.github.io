@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWGRPC TESTSPEC 
+## [RPCs](TableOfContent.md) &#8594; ORWGRPC TESTSPEC 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | RPC - get test/spec info on all lab tests
+ Lines | {::nomarkdown} D TESTSPEC^ORWGAPI("ORWGRPC")<br/> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

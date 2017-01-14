@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWRP PRINT REPORT 
+## [RPCs](TableOfContent.md) &#8594; ORWRP PRINT REPORT 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | print report entry point
+ Input Parameters | {::nomarkdown}ORIO<br/>ORDFN<br/>ORRPTID<br/>ORHSTYPE<br/>ORDTRNG<br/>OREXAMID<br/>ORCOMP<br/>ORALPHA<br/>OROMEGA{:/}
+ Lines | {::nomarkdown} N ORHSTAG<br/> S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")<br/> IF '$$CHK() G PRINTQ<br/> N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ZTIO<br/> S ZTIO=ORIO,ZTDTH=$H<br/> S ZTDESC="Report Print"<br/> S ZTRTN="DEQUE^ORWRPP"<br/> F I="ORDFN","ORRPTID","ORHSTYPE","ORDTRNG","OREXAMID","DUZ(","ORCOMP(","ORALPHA","OROMEGA","ORHSTAG" S ZTSAVE(I)=""<br/> D ^%ZTLOAD<br/> I $D(ZTSK) D<br/> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br/> E  D<br/> . S ORY="99^Task Rejected."{:/}
  Leading comment lines | {::nomarkdown}RPC: ORWRP PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
 
 ### Input Parameters
@@ -37,4 +39,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:27 am

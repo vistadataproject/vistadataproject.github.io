@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORWSR CASELIST 
+## [RPCs](TableOfContent.md) &#8594; ORWSR CASELIST 
 
  property | value 
 --- | --- 
@@ -21,6 +21,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | retrieve list of cases, but no documents
+ Input Parameters | {::nomarkdown}ORDFN{:/}
+ Lines | {::nomarkdown} Q:'$$PATCH^XPDUTL("SR*3.0*100")<br/> Q:'+ORDFN<br/> N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0<br/> S ORY=$NA(^TMP("ORLIST",$J))<br/> D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)<br/> S I=0<br/> F  S I=$O(@ORY@(I)) Q:+I=0  D<br/> . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2){:/}
 
 ### Input Parameters
 
@@ -31,4 +33,4 @@ title: VISTA RPC documentation
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am

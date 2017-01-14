@@ -5,7 +5,7 @@ title: VISTA RPC documentation
 
 
 
-## [VISTA RPCs](TableOfContent.md) &#8594; ORDEA PINLKSET 
+## [RPCs](TableOfContent.md) &#8594; ORDEA PINLKSET 
 
  property | value 
 --- | --- 
@@ -21,8 +21,9 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method comment | set a PIN lock on the current user
+ Lines | {::nomarkdown} S ^XTMP("OR DEA PIN LOCK",0)=$$FMADD^XLFDT($$NOW^XLFDT,2)_U_$$NOW^XLFDT<br/> S ^XTMP("OR DEA PIN LOCK",DUZ)=$$NOW^XLFDT<br/> S ORY=^XTMP("OR DEA PIN LOCK",DUZ){:/}
 
 
 
 
- Generated on January 13th 2017, 6:24:32 am
+ Generated on January 13th 2017, 7:15:28 am
