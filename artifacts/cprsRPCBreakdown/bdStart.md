@@ -14,5 +14,10 @@ Name | Number
 [Authentication](bdAuthentication) | 11 (1%)
 [Out of Scope](bdOut_of_Scope) | 60 (5.7%)
 
-Most - 750 (71.4%) - of the interface's RPCs _READ_ data.
+Most - 749 (71.3%) - of the interface's RPCs _READ_ data.
 
+
+
+
+
+<small>Generated on 2017-01-13</small>

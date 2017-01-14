@@ -23,3 +23,6 @@ Authentication RPCs aren't locked over MVDM directly - they are implemented in r
 11. | [XWB IM HERE](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB IM HERE)
 
 
+
+
+<small>Generated on 2017-01-13</small>

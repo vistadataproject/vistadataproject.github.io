@@ -20,7 +20,7 @@ We won't consider Print services and other system administration issues in VDP a
 8. | [ORQQPXRM GET WH LETTER TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM GET WH LETTER TYPE) | READ | NOT OSEHRA
 9. | [ORQQPXRM GET WH PROC RESULT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM GET WH PROC RESULT) | READ | NOT OSEHRA
 10. | [ORQQPXRM MST UPDATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM MST UPDATE) | CHANGE | DEPRECATED
-11. | [ORVW FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORVW FACLIST) | UTILITY | DFN, LOCATION, MPI
+11. | [ORVW FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORVW FACLIST) | UTILITY | DFN, FILE, LOCATION, MPI
 12. | [ORWCIRN CHECKLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN CHECKLINK) | UTILITY | HL7
 13. | [ORWCIRN FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN FACLIST) | UTILITY | DFN, LOCATION, MPI, PARAMETER
 14. | [ORWCS PRINT REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCS PRINT REPORT) | UTILITY | PRINT
@@ -72,3 +72,6 @@ We won't consider Print services and other system administration issues in VDP a
 60. | [XWB REMOTE STATUS CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB REMOTE STATUS CHECK) | UTILITY | HL7, REMOTE
 
 
+
+
+<small>Generated on 2017-01-13</small>
