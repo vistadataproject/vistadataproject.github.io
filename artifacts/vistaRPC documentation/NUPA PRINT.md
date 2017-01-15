@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ZTIO{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Printer to print to.{:/} | 
 | {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Array of data to print, in format  ARRAY(1), ARRAY(2), etc.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

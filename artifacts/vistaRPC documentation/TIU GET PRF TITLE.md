@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTDFN<br>FLAGID{:/}
  Code | {::nomarkdown}  N PRFARR K TIUY S TIUY=0<br> Q:'$G(PTDFN)  Q:'$G(FLAGID)<br> S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info<br> Q:'TIUY<br> S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))<br> I TIUY'>0 S TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

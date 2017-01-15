@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}get available document classes{:/}
  Code | {::nomarkdown}  N CNT,NODE,NUM K VALUES<br> S CNT=0<br> S NUM=0 F  S NUM=$O(^TIU(8925.1,"AT","CL",NUM)) Q:NUM<1  D<br> .I '$$CLASPICK^TIULA4(38,NUM,"CL") Q<br> .S NODE=$G(^TIU(8925.1,NUM,0))<br> .I '$L(NODE) Q<br> .S CNT=CNT+1<br> .S VALUES(CNT)=NUM_U_NODE{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

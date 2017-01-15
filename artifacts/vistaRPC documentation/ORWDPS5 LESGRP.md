@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLES{:/}
  Code | {::nomarkdown}  N LABID,BLDBKID,CHMID<br> S (LABID,BLDBKID,CHMID,ORY)=0<br> S:$D(^ORD(100.98,"B","LAB")) LABID=$O(^ORD(100.98,"B","LAB",0))<br> I 'LABID S:$D(^ORD(100.98,"B","LABORATORY")) LABID=$O(^ORD(100.98,"B","LABORATORY",0))<br> S:$D(^ORD(100.98,"B","BLOOD BANK")) BLDBKID=$O(^ORD(100.98,"B","BLOOD BANK",0))<br> S:$D(^ORD(100.98,"B","CHEMISTRY")) CHMID=$O(^ORD(100.98,"B","CHEMISTRY",0))<br> I ('LABID)!('BLDBKID!('CHMID)) Q<br> S ORY=LABID_U_BLDBKID_U_CHMID{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

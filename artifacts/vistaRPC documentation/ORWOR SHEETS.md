@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORVP{:/}
  Code | {::nomarkdown}  N ELST,ETYP,ORIFN,TS,I<br> S ORVP=ORVP_";DPT("<br> S ETYP="" F  S ETYP=$O(^OR(100,"AEVNT",ORVP,ETYP)) Q:ETYP=""  D<br> . S ORIFN=0 F  S ORIFN=$O(^OR(100,"AEVNT",ORVP,ETYP,ORIFN)) Q:'ORIFN  D<br> . . I (ETYP="A")!(ETYP="T") S ELST(ETYP,$P($G(^OR(100,+ORIFN,0)),U,13))=""<br> S LST(1)="C;O^Current View",I=1<br> S TS="" F  S TS=$O(ELST("A",TS)) Q:TS=""  D<br> . S I=I+1,LST(I)="A;"_TS_U_"Admit to "_$P($G(^DIC(45.7,TS,0)),U)<br> S I=I+1,LST(I)="A;-1^Admit..."<br> S TS="" F  S TS=$O(ELST("T",TS)) Q:TS=""  D<br> . S I=I+1,LST(I)="T;"_TS_U_"Transfer to "_$P($G(^DIC(45.7,TS,0)),U)<br> I $L($G(^DPT(+ORVP,.1))) D<br> . S I=I+1,LST(I)="T;-1^Transfer..."<br> . S I=I+1,LST(I)="D;0^Discharge"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

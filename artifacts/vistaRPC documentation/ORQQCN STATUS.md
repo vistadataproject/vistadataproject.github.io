@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns a list of statuses currently in use
  Code | {::nomarkdown}  N GMRCORST<br> S GMRCORST=0,Y(999)="999^OTHER^"<br> F  S GMRCORST=$O(^ORD(100.01,GMRCORST)) Q:'+GMRCORST  D<br> . I '$D(^GMR(123.1,"AC",GMRCORST)) S Y(999)=Y(999)_GMRCORST_"," Q<br> . Q:$$SCREEN^XTID(100.01,,GMRCORST_",")  ;inactive VUID<br> . S Y(GMRCORST)=GMRCORST_U_$P(^ORD(100.01,GMRCORST,0),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

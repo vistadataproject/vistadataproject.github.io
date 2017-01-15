@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DLG{:/}
  Code | {::nomarkdown}  N INT,EXT,BIEN,BNAM<br> S INT=$P($G(^ORD(101.41,DLG,0)),U),EXT=$P($G(^(0)),U,2)<br> S BNAM=INT,BIEN=DLG<br> I $P(^ORD(101.41,DLG,0),U,4)="Q" D<br> . N DGRP S DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP<br> . S BIEN=$$DEFDLG^ORWDXQ(DGRP),BNAM=$P(^ORD(101.41,BIEN,0),U)<br> S VAL=INT_U_EXT_U_BIEN_U_BNAM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

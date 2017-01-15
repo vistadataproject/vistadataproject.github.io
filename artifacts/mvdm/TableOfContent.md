@@ -20,9 +20,4 @@ title: MVDM documentation
 
 8. [Vital](Vital.md) (1 contained)
 
-
-
-
-
-
- Generated on January 13th 2017, 6:16:06 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:55 am</p>{:/}

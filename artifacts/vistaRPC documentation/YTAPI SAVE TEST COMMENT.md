@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}YSDATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The YSDATA catains the following information:  YSDATA=DFN^DUZ^DATE/TIME TEST ENTERED^NAME OF TEST^AUTHOR^TOTAL LINES OFCOMMENT DFN: Pointer to the Patient fileDATE/TIME TEST ENTERED: FileMan date/time formatNAME OF TEST : Test name in the MH Intrument file #601DUZ and AUTHOR: Pointer to the New Person file #200{:/} | 
 | {::nomarkdown}YSCOMMT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}YSCOMMT array contains comment lines to be filed.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

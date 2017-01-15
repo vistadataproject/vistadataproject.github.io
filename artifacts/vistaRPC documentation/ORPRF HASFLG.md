@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTDFN{:/}
  Code | {::nomarkdown}  I '$L($TEXT(GETACT^DGPFAPI)) S ORY=0 Q<br> N IDY,PRFARR,CAT1<br> K ^TMP("ORPRF",$J)<br> S ORY=$$GETACT^DGPFAPI(PTDFN,"PRFARR")<br> Q:'ORY<br> D FMT(.@("PRFARR")) ; Sets ^TMP("ORPRF"<br> S IDY=0 F  S IDY=$O(^TMP("ORPRF",$J,IDY)) Q:'IDY  D<br> . S ORY(IDY)=IDY_U_$G(^TMP("ORPRF",$J,IDY,"FLAG"))<br> . S CAT1=0<br> . I $G(^TMP("ORPRF",$J,IDY,"CATEGORY"))="I (NATIONAL)" S CAT1=1<br> . S ORY(IDY)=ORY(IDY)_U_CAT1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

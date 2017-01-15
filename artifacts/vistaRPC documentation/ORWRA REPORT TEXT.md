@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORID<br>ALPHA<br>OMEGA<br>DTRANGE<br>REMOTE<br>ORMAX<br>ORFHIE{:/}
  Code | {::nomarkdown}  N ID,LCNT,ORVP,EXAMDATE,CASENMBR<br> S RADATA=$NA(^TMP($J,"RAE3"))<br> S ROOT=$NA(^TMP("ORXPND",$J))<br> K @RADATA,@ROOT<br> S ID=$TR(ORID,"-",U)<br> S LCNT=0,ORVP=DFN_";DPT("<br> D XRAYS^ORCXPND1<br> K @RADATA{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

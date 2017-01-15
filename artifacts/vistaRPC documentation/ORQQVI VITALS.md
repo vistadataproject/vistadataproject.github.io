@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>F1<br>F2{:/}
  Code | {::nomarkdown}  N CNT,DT1,DT2<br> S CNT=0<br> I $G(F1)>0 D<br> . I $G(F2)="",F1["." S DT1=$P(F1,".",1)_"."_$E($P(F1,".",2),1,4)<br> . E  S DT1=F1<br> E  S DT1=1<br> S DT2=$S($G(F2)>0:F2,DT1>1:DT1,1:9999998)<br> D VITAL("TEMPERATURE","T",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("PULSE","P",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("RESPIRATION","R",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("BLOOD PRESSURE","BP",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("HEIGHT","HT",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("WEIGHT","WT",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("PAIN","PN",DFN,.ORY,.CNT,DT1,DT2) ;dee 2/11/99<br> D VITAL("PULSE OXIMETRY","PO2",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("CENTRAL VENOUS PRESSURE","CVP",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("CIRCUMFERENCE/GIRTH","CG",DFN,.ORY,.CNT,DT1,DT2)<br> D VITAL("BODY MASS INDEX","BMI",DFN,.ORY,.CNT,DT1,DT2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

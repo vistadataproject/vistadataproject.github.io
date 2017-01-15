@@ -29,9 +29,4 @@ title: VDM documentation
 | package_type | 9 | Package Type | {::nomarkdown}This is the package type.{:/} | POINTER |  |  | Package_Type-50_608 | 
 | otx_rx_indicator | 10 | Otx/rx Indicator |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>O</dt><dd>Over the counter</dd><dt>R</dt><dd>Prescription</dd></dl>{:/} | 
 | previous_ndc | 11 | Previous Ndc |  | [STRING] |  |  |  | 
-| previous_upn | 12 | Previous Upn |  | [STRING] |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| previous_upn | 12 | Previous Upn |  | [STRING] |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

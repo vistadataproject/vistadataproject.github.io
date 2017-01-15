@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TITLE{:/}
  Code | {::nomarkdown}  N TIUCLASS,TIUI S TIUY=0<br> F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0<br> . S TIUCLASS=+$$CLASS(TIUI)<br> . I +TIUCLASS'>0 Q<br> . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

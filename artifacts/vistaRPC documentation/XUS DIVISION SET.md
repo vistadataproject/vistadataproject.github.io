@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DIV{:/}
  Code | {::nomarkdown}  S RET=0,DIV=$$FIND1^DIC(200.02,","_DUZ_",","MX",$G(DIV))<br> Q:DIV'>0<br> N X<br> I '$D(^VA(200,DUZ,2,DIV,0)) Q<br> S RET=1 ;1=set, 0=not set<br> D UPDIV(+DIV) ;Update Sign-on log{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

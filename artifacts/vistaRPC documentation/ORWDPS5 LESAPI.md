@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FLDS{:/}
  Code | {::nomarkdown}  N DFNL,TESTL,ORLOCL,ORNPL,ORDTL,HAVELES<br> S (DFNL,TESTL,ORLOCL,ORNPL,ORDTL,HAVELES)=""<br> S DFNL=$P(FLDS,U,1)<br> S TESTL=$P(FLDS,U,2)<br> S ORLOCL=$P(FLDS,U,3)<br> S ORNPL=$P(FLDS,U,4)<br> S ORDTL=$P(FLDS,U,5)<br> S HAVELES=$TEXT(COM^AVJLES)<br> I $L(HAVELES) D COM^AVJLES(.ORY,DFNL,TESTL,ORLOCL,ORNPL,ORDTL)<br> S ORY(1)=""{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

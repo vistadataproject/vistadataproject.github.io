@@ -35,4 +35,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}OIIEN{:/}
  Code | {::nomarkdown}  N PSOI,TEMP<br> S ORY=""<br> S PSOI=+$P($G(^ORD(101.43,OIIEN,0)),U,2)<br> S TEMP=$$IV^PSSDSAPA(PSOI)<br> S ORY=$$ADDFRQCV^ORMBLDP1(TEMP,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

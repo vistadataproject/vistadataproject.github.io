@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}NAME<br>PUBLIC{:/}
  Code | {::nomarkdown}  D DELVIEWS^ORWGAPI("ORWGRPC",NAME,+$G(PUBLIC))<br> S ERR=$NA(^TMP("ORWGRPC",$J)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

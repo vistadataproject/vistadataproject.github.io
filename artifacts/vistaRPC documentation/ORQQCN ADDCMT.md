@@ -40,4 +40,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN<br>ORCOM<br>ORALRT<br>ORALTO<br>ORDATE{:/}
  Code | {::nomarkdown}  N ORAD,ORDUZ,ORNP,X<br> S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT),ORNP=""<br> I '$D(ORCOM) S ORERR="1^Comments required - no action taken" Q<br> I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q<br> I $G(ORALRT)=1 D<br> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br> D CMT^GMRCGUIB(ORIEN,.ORCOM,.ORDUZ,ORAD,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

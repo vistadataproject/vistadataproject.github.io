@@ -42,4 +42,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCO<br>GMRCSS<br>GMRCORNP<br>GMRCATTN<br>GMRCURGI<br>ORDATE<br>ORCOM{:/}
  Code | {::nomarkdown}  S:+$G(GMRCATTN)=0 GMRCATTN=""<br> S Y=$$FR^GMRCGUIA(GMRCO,GMRCSS,GMRCORNP,GMRCATTN,GMRCURGI,.ORCOM,ORDATE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

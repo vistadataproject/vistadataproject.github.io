@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORSDT<br>OREDT{:/}
  Code | {::nomarkdown}  K ^UTILITY($J,"GMRVD")<br> S GMRVSTR="BP;HT;WT;T;R;P;PN" ;dee 2/12/99 added PN<br> S GMRVSTR(0)=ORSDT_"^"_OREDT_"^"_"^"<br> D EN1^GMRVUT0<br> N ORT,ORD,ORI,I<br> S ORT="",ORD=0,ORI=0,I=0<br> F  S ORT=$O(^UTILITY($J,"GMRVD",ORT)) Q:ORT=""  D<br> .F  S ORD=$O(^UTILITY($J,"GMRVD",ORT,ORD)) Q:ORD<1  D<br> ..F  S ORI=$O(^UTILITY($J,"GMRVD",ORT,ORD,ORI)) Q:ORI<1  D<br> ...S I=I+1<br> ...S ORY(I)=ORI_"^"_ORT_"^"_$P(^UTILITY($J,"GMRVD",ORT,ORD,ORI),"^",8)_"^"_$P(^(ORI),"^")<br> I I=0 S ORY(1)="^No vitals found."<br> K GMRVSTR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

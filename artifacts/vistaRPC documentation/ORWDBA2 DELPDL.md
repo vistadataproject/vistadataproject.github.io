@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCIEN<br>ORDXA{:/}
  Code | {::nomarkdown}  N DXI,EM,FDA,IEN,RF<br> D GETS^DIQ(200,ORCIEN,"351*,","","RF","EM")<br> I $D(RF)=0 S Y=0 Q<br> S IEN="" F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br> .S DXI="" F  S DXI=$O(ORDXA(DXI)) Q:DXI=""  D<br> .. I RF(200.0351,IEN,.01)=ORDXA(DXI) D<br> ... D FDA^DILF(200.0351,IEN,.01,"","@","FDA","EM")<br> ... D FILE^DIE("","FDA","EM")<br> S Y=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

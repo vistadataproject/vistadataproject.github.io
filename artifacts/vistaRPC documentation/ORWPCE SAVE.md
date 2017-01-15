@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PCELIST<br>NOTEIEN<br>ORLOC{:/}
  Code | {::nomarkdown}  N VSTR,GMPLUSER<br> N ZTIO,ZTRTN,ZTDTH,ZTSAVE,ZTDESC,ZTSYNC,ZTSK<br> S VSTR=$P(PCELIST(1),U,4) K ^TMP("ORWPCE",$J,VSTR)<br> M ^TMP("ORWPCE",$J,VSTR)=PCELIST<br> S GMPLUSER=$$CLINUSER^ORQQPL1(DUZ),NOTEIEN=+$G(NOTEIEN)<br> S ZTIO="ORW/PXAPI RESOURCE",ZTRTN="DQSAVE^ORWPCE1",ZTDTH=$H<br> S ZTSAVE("PCELIST(")="",ZTDESC="Data from CPRS to PCE"<br> S ZTSAVE("GMPLUSER")="",ZTSAVE("NOTEIEN")="",ZTSAVE("DUZ")=""<br> I VSTR'["E" S ZTSYNC="ORW"_VSTR<br> S ZTSAVE("ORLOC")=""<br> D ^%ZTLOAD I '$D(ZTSK) D DQSAVE^ORWPCE1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

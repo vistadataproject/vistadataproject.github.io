@@ -534,9 +534,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | keyword | .01 | Keyword | {::nomarkdown}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

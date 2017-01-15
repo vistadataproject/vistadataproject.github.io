@@ -51,9 +51,4 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Date/Time Entered | DATE-TIME |  | $NOW |  |  | 
 | enteredBy | Entered By | POINTER |  |  |  |  | 
-| comment | Comment | STRING |  |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:06 am
+| comment | Comment | STRING |  |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:55 am</p>{:/}

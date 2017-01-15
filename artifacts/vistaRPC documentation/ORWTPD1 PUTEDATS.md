@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}Y{:/}
  Code | {::nomarkdown}  N ORSTART,ORSTOP,ORUSER<br> S OK=1,ORUSER=DUZ<br> S ORSTART=$P(Y,U,1)<br> S ORSTOP=$P(Y,U,2)<br> I ORSTART="" S ORSTART=0<br> I ORSTOP="" S ORSTOP=0<br> I ORSTART>999 S ORSTART=999<br> I ORSTOP>999 S ORSTART=999<br> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT START",1,ORSTART)<br> D EN^XPAR(ORUSER_";VA(200,","ORQQEAPT ENC APPT STOP",1,ORSTOP){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

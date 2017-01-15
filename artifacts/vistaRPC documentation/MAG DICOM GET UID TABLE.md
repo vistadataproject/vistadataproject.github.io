@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}OFFSET{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string. The first time this Remote Procedure is called for a certain\master file\, the value of this parameter must be empty. Each next time this Remote Procedure is called for the same\master file\, the value of this parameter must be copied fromthe return array, so that the Remote Procedure will continuewhere it left off in the previous call.{:/} | 
 | {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a positive integer number.This value indicates the maximum number of values that may bereturned in each call to this Remote Procedure.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

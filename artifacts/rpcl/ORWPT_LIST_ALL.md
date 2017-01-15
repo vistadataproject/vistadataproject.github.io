@@ -12,15 +12,10 @@ title: RPCL documentation
  name | ORWPT LIST ALL
  domain | Patient
  description | {::nomarkdown}Returns a set of patient names for use with a long list box.{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORWPT LIST ALL)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORWPT LIST ALL)
  MUMPS implementation | [LISTALL^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_STRUCTURED
  complexity | 
  uses | 
  return type | SINGLE VALUE
- return description | Returns a set of patient names for use with a long list box.
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+ return description | Returns a set of patient names for use with a long list box.{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

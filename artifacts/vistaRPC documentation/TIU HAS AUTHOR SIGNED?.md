@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>TIUUSR{:/}
  Code | {::nomarkdown}  N TIUD12,TIUD15<br> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))<br> S TIUY=1<br> D:$P(TIUD12,U,8)=TIUUSR  Q<br> . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

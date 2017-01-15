@@ -40,4 +40,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>RPTID<br>ORDAYSBK<br>ORTESTS<br>ORALPHA<br>OROMEGA{:/}
  Code | {::nomarkdown}  IF '$$CHK() G PRINTQ<br> N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="GUI Lab Report Print"<br> S ZTRTN="DEQUE^ORWRPL"<br> S ZTSAVE("ORDFN")="",ZTSAVE("RPTID")="",ZTSAVE("ORDAYSBK")="",ZTSAVE("DUZ(")="",ZTSAVE("ORTESTS(")="",ZTSAVE("ORALPHA")="",ZTSAVE("OROMEGA")=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

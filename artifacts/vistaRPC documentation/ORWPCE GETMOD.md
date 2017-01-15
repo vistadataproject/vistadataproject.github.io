@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORMODIEN<br>ORDATE{:/}
  Code | {::nomarkdown}  N ORDATA<br> S:'+$G(ORDATE) ORDATE=DT<br> S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)<br> I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

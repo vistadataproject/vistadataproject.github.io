@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORWDAL32 SAVE ALLERGY
  domain | Allergy
  description | {::nomarkdown}Add new allergy record{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORWDAL32 SAVE ALLERGY)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORWDAL32 SAVE ALLERGY)
  MUMPS implementation | [EDITSAVE^ORWDAL32](http://code.osehra.org/dox/Routine_ORWDAL32_source.html)
  type | CHANGE
  complexity | HIGH
@@ -47,9 +47,4 @@ title: RPCL documentation
 | GMRAERRBY | REFERENCE |  | {::nomarkdown}Entered By{:/} |  | \GMRAERRBY\: \58\ | 
 | GMRAERRDT | DATE-TIME |  | {::nomarkdown}Date Entered in Error{:/} |  | \GMRAERRDT\: \3160926.163633\ | 
 | GMRAERRCMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRAERRCMTS\: [\a comment about the error\, \here is another line\] | 
-| GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

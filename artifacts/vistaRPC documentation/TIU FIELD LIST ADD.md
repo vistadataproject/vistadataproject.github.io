@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IN{:/}
  Code | {::nomarkdown}  N X<br> S X=0<br> S X=$O(IN(X))<br> I +X=1 K ^TMP("TIUFLDXML",$J)<br> M ^TMP("TIUFLDXML",$J)=IN<br> S RESULT(1)=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

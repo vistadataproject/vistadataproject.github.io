@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ECARY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input array ECARY will be defined based on the report to be generated. Thereport handle or type must be defined.  It is also necessary to specify whether the report will be printed to a device or displayed. The following is an exampleof the variables defined for 'Patient Summary Report'.      ECARY(\ECDFN\)=170      ECARY(\ECED\)=3010430      ECARY(\ECHNDL\)=\ECPAT\      ECARY(\ECPTYP\)=\D\      ECARY(\ECRY\)=Y      ECARY(\ECSD\)=3010401{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ADMITDT{:/}
  Code | {::nomarkdown}  N VAIP<br> I +$G(ADMITDT)=0 S Y=DT Q<br> S VAIP("D")=ADMITDT D 52^VADPT<br> I +VAIP(17)=0 S Y=DT Q<br> S Y=+VAIP(17,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

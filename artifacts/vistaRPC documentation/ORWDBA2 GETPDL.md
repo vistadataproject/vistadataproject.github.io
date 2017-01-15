@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCIEN{:/}
  Code | {::nomarkdown}  N DXC,DXD,DXDT,DXI,EM,ICD9,IEN,RF<br> S DXDT=$$NOW^XLFDT<br> D GETS^DIQ(200,ORCIEN,"351*,","EI","RF","EM")<br> I $D(RF) D<br> . S (DXC,DXD,DXI,ICD9,IEN)=""<br> . F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br> .. S ICD9=RF(200.0351,IEN,.01,"E")<br> .. S DXC=$$SETDXC(ICD9)<br> .. I $G(RF(200.0351,IEN,1,"I"))="" S DXD=$$SETDXD($P($$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DXDT),U,4))<br> .. I $G(RF(200.0351,IEN,1,"I"))=1 S DXD=$$SETDXD($P($$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,DXDT),U,4))<br> .. I $G(RF(200.0351,IEN,1,"I"))>1 S DXD=RF(200.0351,IEN,1,"E")<br> .. S DXI=$$SETDXI($$STATCHK^ICDXCODE("DIAGNOSIS",ICD9,DXDT))<br> .. S Y(DXC)=ICD9_U_DXD_U_DXI<br> E  S Y=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

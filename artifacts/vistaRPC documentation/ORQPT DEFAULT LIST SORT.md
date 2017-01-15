@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}SLC/PKS - 4/6/2001{:/}
  Code | {::nomarkdown}  N ORSORT,ORSECT,ORPARAM<br> I ('$D(DUZ)) S Y="Unable to determine DUZ." Q<br> S ORSECT=$G(^VA(200,DUZ,5))<br> I +ORSECT>0 S ORSECT=$P(ORSECT,U)<br> S Y="A" ; Default of "Alpha" sort.<br> S ORPARAM="ORLP DEFAULT LIST ORDER"<br> S ORSORT=$$GET^XPAR("USR^SRV.`"_$G(ORSECT)_"^DIV^SYS^PKG",ORPARAM,1,"I")<br> I (ORSORT'="") S Y=ORSORT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

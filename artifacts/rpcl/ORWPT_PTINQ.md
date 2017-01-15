@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORWPT PTINQ
  domain | Patient
  description | {::nomarkdown}Returns formatted patient inquiry text for display in GUI environment.{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORWPT PTINQ)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORWPT PTINQ)
  MUMPS implementation | [PTINQ^ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  type | READ_UNSTRUCTURED
  complexity | 
@@ -24,9 +24,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

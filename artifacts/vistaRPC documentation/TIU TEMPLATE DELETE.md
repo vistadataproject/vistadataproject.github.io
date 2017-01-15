@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUI S (SUCCESS,TIUI)=0<br> F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D<br> . N DA<br> . S DA=+TIUDA(TIUI)<br> . I 'DA Q<br> . L -^TIU(8927,DA,0):1 ; Unlock before deleting<br> . ; Quit if the Template is NOT an ORPHAN<br> . I +$O(^TIU(8927,"AD",DA,0)) Q<br> . ; Otherwise, call FileMan to DELETE the record<br> . D ZAP(DA) S SUCCESS=SUCCESS+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DUMMY{:/}
  Code | {::nomarkdown}  N ORX,I,IEN,DGRP,MNEM,NAME<br> S ORX=""<br> F I=1:1  S ORX=$O(^RA(79.2,"C",ORX)) Q:ORX=""  D<br> . I '$D(^ORD(101.43,"S."_ORX)) Q<br> . S IEN=$O(^RA(79.2,"C",ORX,0))<br> . S NAME=$P(^RA(79.2,IEN,0),U,1)<br> . S MNEM=$P(^RA(79.2,IEN,0),U,3)<br> . S DGRP=$O(^ORD(100.98,"B",MNEM,0))<br> . S Y(I)=IEN_U_NAME_U_MNEM_U_DGRP{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

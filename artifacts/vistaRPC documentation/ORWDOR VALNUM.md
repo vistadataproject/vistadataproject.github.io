@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X<br>DOM{:/}
  Code | {::nomarkdown}  N LOW,HIGH,DEC<br> S LOW=$P(DOM,":"),HIGH=$P(DOM,":",2),DEC=$P(DOM,":",3),ERR=0<br> I $L($P(X,"."))>24 S ERR="1^Exceeded maximum number of 24 characters" Q<br> I X'?.1"-".N.1".".N S ERR="1^Entry must be numeric" Q<br> I X>HIGH!(X<LOW) S ERR="1^Out of Range - value must be between "_LOW_" and "_HIGH_" inclusive" Q<br> I $L($P(+X,".",2))>DEC D<br> . I DEC=0 S ERR="1^No decimal places allowed"<br> . E  I DEC=1 S ERR="1^Only one decimal place allowed"<br> . E  S ERR="1^No more than "_DEC_" decimal places allowed"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

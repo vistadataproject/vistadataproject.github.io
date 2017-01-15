@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get ADHOD sub components listed by Abbreviation
  Code | {::nomarkdown}  N I,X,X1,X2,X3<br> D COMP^GMTSADH5(.ORY)<br> S I=0<br> F  S I=$O(ORY(I)) Q:'I  S X=ORY(I) D<br> . S X1=$P($P(X,"^",2),"["),X1=$E(X1,1,$L(X1)-1),X2=$P($P(X,"^",2),"[",2),X2=$E(X2,1,$L(X2)-1)<br> . S X3=X2_"   - "_$P(X,"^",5)_" ",$P(ORY(I),"^",2)=X3{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

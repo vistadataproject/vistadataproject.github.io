@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCO{:/}
  Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> N ORFLG<br> S Y=0<br> D CPRS^GMRCACTM(GMRCO,1)<br> Q:'$D(ORFLG(GMRCO))<br> S Y=ORFLG(GMRCO){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S ORLST(0)=0<br> I $L($T(HXDATA^A7RDPAGU)) D<br> . D HXDATA^A7RDPAGU(.ORLST,DFN)<br> . I $O(ORLST(0)) S ORLST(0)=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

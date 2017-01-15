@@ -36,9 +36,4 @@ title: VDM documentation
 | health_record_no | .02 | Health Record No. | {::nomarkdown}This field is used to represent the health record number related to a<br/>facility.<br/> <br/>IHS uses a 6 character whole number.<br/> <br/>VA uses the patient SSN from the Patient File (2).{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | date_inactivated_deleted | .03 | Date Inactivated/deleted | {::nomarkdown}This is date that the patients entry was inactivated.{:/} | DATE-TIME |  |  |  | 
 | record_status | .05 | Record Status | {::nomarkdown}This field is used by the IHS Multi-Facility Integration (MFI) package<br/>to determine whether to stop integrating data at a facility for a <br/>particular patient and location facility.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>D</dt><dd>DELETED</dd><dt>I</dt><dd>INACTIVATED</dd><dt>M</dt><dd>MERGED</dd></dl>{:/} | 
-| stop_integration | .06 | Stop Integration | {::nomarkdown}This field is used by the Mult-Facility Integration (MFI) package,<br/>created by IHS, to indicate this patients data should no longer be<br/>integrated by MFI.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| stop_integration | .06 | Stop Integration | {::nomarkdown}This field is used by the Mult-Facility Integration (MFI) package,<br/>created by IHS, to indicate this patients data should no longer be<br/>integrated by MFI.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

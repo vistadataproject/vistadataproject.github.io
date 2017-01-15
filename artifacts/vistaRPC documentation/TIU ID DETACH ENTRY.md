@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUX,IDDAD<br> I '+$G(^TIU(8925,TIUDA,21)) D  Q<br> . S TIUY="0^Record #"_TIUDA_" is NOT an ID Entry."<br> S IDDAD=+$G(^TIU(8925,TIUDA,21))<br> S TIUX(2101)="@"<br> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br> D AUDLINK^TIUGR1(TIUDA,"d",IDDAD)<br> D IDDEL^TIUALRT1(TIUDA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

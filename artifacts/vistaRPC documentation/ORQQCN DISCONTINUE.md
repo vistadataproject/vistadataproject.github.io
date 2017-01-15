@@ -41,4 +41,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCO<br>GMRCORNP<br>GMRCAD<br>GMRCACTM<br>ORCOM{:/}
  Code | {::nomarkdown}  S Y=$$DC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,GMRCACTM,.ORCOM){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

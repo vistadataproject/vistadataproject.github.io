@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N X<br> S X=$G(^DPT(DFN,.102)),REC=0<br> I X S X=$P($G(^DGPM(X,0)),U,6)<br> I X S REC=+$G(^DIC(42,X,44))<br> I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)<br> I X S X=$P($G(^DIC(42,X,0)),U,3)<br> S $P(REC,U,3)=X{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

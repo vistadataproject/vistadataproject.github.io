@@ -98,9 +98,4 @@ title: VDM documentation
 | date_time_comment_entered | .01 | Date/time Comment Entered | {::nomarkdown}This field is the date/time this comment was entered.  This field is<br/>automatically filled by the system when a user enters a comment.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | user_entering | 1 | User Entering | {::nomarkdown}This field tracks the user who entered this comment.  The field is<br/>automatically stuffed when that user enters a comment.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | comment_type | 1.5 | Comment Type | {::nomarkdown}This field indicates the type of comments. If this field is<br/>answered \V\, then these comments are verifier entered.  If this field is<br/>answered \O\, then these are observer comments.  If this field is answered<br/>\E\, then these are entered in error comments.{:/} | ENUMERATION |  | INDEXED | {::nomarkdown}<dl><dt>O</dt><dd>OBSERVED</dd><dt>E</dt><dd>ERRORED</dd><dt>V</dt><dd>VERIFIED</dd></dl>{:/} | 
-| comments | 2 | Comments | {::nomarkdown}This field contains comments that were entered.<br/>                                            <br/>                                              {:/} | STRING |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| comments | 2 | Comments | {::nomarkdown}This field contains comments that were entered.<br/>                                            <br/>                                              {:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

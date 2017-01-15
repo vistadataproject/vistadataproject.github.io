@@ -66,9 +66,4 @@ title: VDM documentation
 | ods_admission_entry | 11500.04 | Ods Admission Entry | {::nomarkdown}If this patient was admitted with a period of service of 6 (ODS), enter<br/>the ODS ADMISSIONS file entry corresponding to this admission.{:/} | POINTER |  | INDEXED | Ods_Admissions-11500_2 | 
 | displaced_for_ods_patient | 11500.05 | Displaced For Ods Patient? | {::nomarkdown}Enter yes if this patient was transferred out in order to free a bed for an<br/>operation desert shield patient.  Otherwise, respond no.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | va_cost_to_travel | 11500.06 | VA Cost To Travel | {::nomarkdown}Enter the cost of travel to move this VA patient to a non-VA facility.<br/>This question is only asked if the patient was transferred in order to<br/>make room for an operation desert shield patient.{:/} | NUMERIC |  |  |  | 
-| displaced_patient | 11500.07 | Displaced Patient | {::nomarkdown}Enter the entry in the DISPLACED PATIENT file which corresponds to this<br/>discharge.{:/} | POINTER |  | INDEXED | Displaced_Patient-11500_3 | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| displaced_patient | 11500.07 | Displaced Patient | {::nomarkdown}Enter the entry in the DISPLACED PATIENT file which corresponds to this<br/>discharge.{:/} | POINTER |  | INDEXED | Displaced_Patient-11500_3 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

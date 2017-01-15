@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>TIUACT{:/}
  Code | {::nomarkdown}  N TIUPOP,TIUDPRM S TIUPOP=0<br> I $P($G(^TIU(8925,TIUDA,0)),U,5)>5,(TIUACT="EDIT RECORD") S TIUY="0^ You may not edit uncosigned or completed documents" Q<br> I $S(TIUACT["SIGN":1,TIUACT="EDIT RECORD":1,TIUACT="DELETE RECORD":1,1:0) D  Q:+TIUPOP=1<br> . L +^TIU(8925,+TIUDA):1<br> . E  S TIUY="0^ Another session is editing this entry.",TIUPOP=1<br> . L -^TIU(8925,+TIUDA)<br>  I TIUACT["SIGNAT",+$$NEEDCS(TIUDA) S TIUY="0^ You must name a cosigner before signing this document." Q<br> S TIUY=$$CANDO^TIULP(TIUDA,TIUACT){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUIEN{:/}
  Code | {::nomarkdown}  N TIULST,SRV<br> S TIUY=-1<br> I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q<br> I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410<br> S TIUY=1<br> D RDACCUM(.TIULST,"USR","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S SRV=$$GETSRV(DUZ)<br> D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"DIV","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"SYS","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

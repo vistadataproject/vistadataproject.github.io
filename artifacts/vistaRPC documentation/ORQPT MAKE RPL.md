@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORTL{:/}
  Code | {::nomarkdown}  N ORDFN,ORJ,ORREAD,ORRET,ORROOT,ORX<br> I ORTL="" S Y="" Q                        ; No Team List IEN passed.<br> I $G(^OR(100.21,ORTL,0))="" S Y="" Q      ; No such Team List.<br> S (ORJ,Y)=$J                              ; Assign returned value.<br> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br> S ORROOT=ORROOT_ORJ_","_"""B"""           ; Add job number, "B."<br> S ORREAD=ORROOT_")"                       ; Assign "kill" root.<br> K @ORREAD                                 ; Kill old, if any.<br> S ORX=""                                  ; Initialize.<br> F  S ORX=$O(^OR(100.21,ORTL,10,"B",ORX)) Q:ORX=""  D<br> .S ORDFN=$P(ORX,";")                      ; Extract patient DFN.<br> .S ORRET=$$PNAMWRIT(ORROOT,ORDFN)         ; Call that writes to ^TMP.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

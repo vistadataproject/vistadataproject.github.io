@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL ADD SAVE
  domain | Problem
  description | {::nomarkdown}Add new problem record{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL ADD SAVE)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORQQPL ADD SAVE)
  MUMPS implementation | [ADDSAVE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH
@@ -65,9 +65,4 @@ title: RPCL documentation
 | 29 | DATE |  | {::nomarkdown}Date Of Interest{:/} | interestDate | GMPFLD(80201)=\3160801^Aug 01 2016\ | 
 | 30 | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | GMPFLD(80202)=\10D^ICD-10-CM\ | 
 | 31 | WORD PROCESSING |  | {::nomarkdown}New Problem Comment{:/} | comments | GMPFLD(10,\NEW\,1)=\hypertension comment 1\ | 
-| $lastIndex | LITERAL |  | {::nomarkdown}Number of Problem Comments{:/} |  | GMPFLD(10,0)=\1\ | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| $lastIndex | LITERAL |  | {::nomarkdown}Number of Problem Comments{:/} |  | GMPFLD(10,0)=\1\ | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

@@ -19,9 +19,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | expression | .01 | Expression | {::nomarkdown}Pointer to the clinical expression in the Expression file (#757.01) which <br/>represents the preferred term for the Major Concept.{:/} | POINTER |  | REQUIRED, INDEXED | [Expressions-757_01](Expressions-757_01.md) | 
 | group | 1 | Group | {::nomarkdown}This field is intended to provide applications the ability to group terms by<br/>categories, such as Cardiovascular, Pulmonary, etc.{:/} | POINTER |  |  | [Expressions-757_01](Expressions-757_01.md) | 
-| group-2 | 2 | Group | {::nomarkdown}This field is for future use.  It is intended to provide applications the<br/>ability to group terms by clinical category (not provided by UMLS), such<br/>as cardiovascular, pulmonary etc.{:/} | STRING |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| group-2 | 2 | Group | {::nomarkdown}This field is for future use.  It is intended to provide applications the<br/>ability to group terms by clinical category (not provided by UMLS), such<br/>as cardiovascular, pulmonary etc.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

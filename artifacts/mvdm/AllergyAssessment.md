@@ -23,9 +23,4 @@ title: MVDM documentation
 | patient |  | POINTER | name |  | [Patient](Patient.md) | REQUIRED | 
 | hasReactions |  | BOOLEAN | reaction_assessment | false | {::nomarkdown}<dl></dl>{:/} | UPDATE | 
 | enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
-| dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:06 am
+| dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:55 am</p>{:/}

@@ -60,9 +60,4 @@ title: VDM documentation
 
 28. [Visit-9000010](Visit-9000010.md) (0 contained)
 
-
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

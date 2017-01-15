@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DLGID{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^ORD(101.41,DLGID,0))<br> N IVGRP,DLGTYP,DLGGRP<br> S IVGRP=$O(^ORD(100.98,"B","IV RX",0))<br> S DLGTYP=$P($G(^ORD(101.41,DLGID,0)),U,4)<br> S DLGGRP=$P($G(^ORD(101.41,DLGID,0)),U,5)<br> I (DLGTYP="Q"),(DLGGRP=IVGRP) S ORY=1<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

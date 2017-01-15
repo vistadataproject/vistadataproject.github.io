@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}HLOC<br>USER<br>TIUDT<br>TIUIEN{:/}
  Code | {::nomarkdown}  N TIUSPRM,TIUDDOC,TIUAUTH<br> D SITEPARM(.TIUSPRM)<br> S TIUDDOC=+$P(TIUSPRM,U,8)<br> S TIUAUTH=$S((+$G(USER)!('+$G(TIUIEN))):0,1:+$P($G(^TIU(8925,+$G(TIUIEN),12)),U,2))<br> S USER=$S(+$G(USER):+$G(USER),+$G(TIUAUTH):+$G(TIUAUTH),1:DUZ)<br> S TIUDT=$S(+$G(TIUDT):+$G(TIUDT),1:DT)<br> S TIUY=$S(TIUDDOC=1:$$DFLTDOC^TIUPXAPI(HLOC),TIUDDOC=2:$$CURDOC(USER),1:"0^"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}SRCTYPE{:/}
  Code | {::nomarkdown}  S ORX=0<br> F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D<br> . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)<br> . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q<br> . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

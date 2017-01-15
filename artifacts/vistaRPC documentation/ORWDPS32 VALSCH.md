@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X<br>PSTYPE{:/}
  Code | {::nomarkdown}  I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br> . K X S:$D(ORX) X=ORX<br> E  D<br> . D EN^PSSGSGUI<br> S OK=$S($D(X):1,1:0)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

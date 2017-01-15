@@ -40,4 +40,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}LOC<br>RPC<br>RPCVER<br>P1<br>P2<br>P3<br>P4<br>P5<br>P6<br>P7<br>P8<br>P9<br>P10{:/}
  Code | {::nomarkdown}  N I,INX,N,PMAX,RPCIEN,X,XWBDVER,XWBESSO,XWBHDL,XWBHL7,XWBMSG<br> N XWBPAR,XWBPCNT,XWBSEC,ZTDESC,ZTDTH,ZTIO,ZTRTN,ZTSAVE,ZTSK<br> D SETUP(1) I $G(RET(1))'="" QUIT  ;-><br> S ZTSAVE("*")="",ZTRTN="DEQ^XWB2HL7C",ZTDTH=$H,ZTIO=""<br> S ZTDESC="RPC Broker queued call from EN1~XWB2HL7"<br> D ^%ZTLOAD<br> I $G(ZTSK)'>0 S RET(0)="-1^Failed to task" QUIT  ;-><br> S RET(0)=XWBHDL<br> D SETNODE^XWBDRPC(XWBHDL,"TASK",ZTSK){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

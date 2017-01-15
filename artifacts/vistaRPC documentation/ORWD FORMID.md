@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN{:/}
  Code | {::nomarkdown}  N X<br> S VAL=0,X=$P(^OR(100,+ORIFN,0),U,5)<br> Q:$P(X,";",2)'="ORD(101.41,"<br> S VAL=+$P($G(^ORD(101.41,+X,5)),U,5){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

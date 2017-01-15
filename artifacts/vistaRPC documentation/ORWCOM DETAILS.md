@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ID{:/}
  Code | {::nomarkdown}  N NODE<br> S ORY=0<br> I +ID D<br> .S NODE=$G(^ORD(101.15,+ID,0))<br> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

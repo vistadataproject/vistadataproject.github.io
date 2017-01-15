@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | RPC determines if PKI is turned on at the site
  Code | {::nomarkdown}  N ORPKIS,ORSITE,IEN<br> S RETURN=0<br> Q:'$L($T(STORESIG^XUSSPKI))  ;Check for Kernel piece<br> Q:'$L($T(OIDEA^PSSOPKI))  ;Check for Pharmacy piece<br> S ORPKIS=0,ORSITE=+$$SITE^VASITE() I $D(^ORD(100.7,"B",ORSITE)) D<br> . S IEN=$O(^ORD(100.7,"B",ORSITE,"")),ORPKIS=$P(^ORD(100.7,IEN,0),"^",2)<br> I ORPKIS S RETURN=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

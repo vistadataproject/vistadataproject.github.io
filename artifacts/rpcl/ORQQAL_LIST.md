@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQAL LIST
  domain | Allergy
  description | {::nomarkdown}Returns a list of allergies for a patient.{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQAL LIST)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORQQAL LIST)
  MUMPS implementation | [LIST^ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
  type | READ_STRUCTURED
  complexity | LOW
@@ -24,9 +24,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | 
 | --- | --- | --- | --- | --- | 
-| PATIENT_ID | REFERENCE | true | {::nomarkdown}The record number of the patient (DFN) from the Patient file (#2).{:/} | 25 | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| PATIENT_ID | REFERENCE | true | {::nomarkdown}The record number of the patient (DFN) from the Patient file (#2).{:/} | 25 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

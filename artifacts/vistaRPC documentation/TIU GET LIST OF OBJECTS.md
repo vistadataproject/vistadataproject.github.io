@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get the list of active objects
  Code | {::nomarkdown}  N TIUDA,TIUD0,TIUI<br> S (TIUDA,TIUI)=0,TIUY=$NA(^TMP("TIU OBJECTS",$J)) K @TIUY<br> F  S TIUDA=$O(^TIU(8925.1,"AT","O",TIUDA)) Q:+TIUDA'>0  D<br> . S TIUD0=$G(^TIU(8925.1,TIUDA,0)) Q:'+$$CANPICK^TIULP(+TIUDA)<br> . S TIUI=TIUI+1<br> . S @TIUY@(TIUI)=TIUDA_U_$P(TIUD0,U,1,3){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

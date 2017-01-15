@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>LOC<br>PROV{:/}
  Code | {::nomarkdown}  S $P(REC,U,1)=$P($G(^SC(+LOC,0)),U,1,2)<br> S $P(REC,U,3)=$P($G(^DPT(DFN,.101)),U)<br> S $P(REC,U,4)=$P($G(^VA(200,+PROV,0)),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

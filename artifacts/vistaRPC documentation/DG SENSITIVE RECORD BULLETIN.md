@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>DGOPT<br>ACTION{:/}
  Code | {::nomarkdown}  I $G(DFN)="" S RESULT=0 Q<br> I $G(DUZ)="" S RESULT=0 Q<br> S DGOPT=$G(DGOPT)<br> I $G(ACTION)="" S ACTION=3<br> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br> S RESULT=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

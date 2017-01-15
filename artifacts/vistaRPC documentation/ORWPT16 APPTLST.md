@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N I,ILST S ILST=0<br> D GETAPPT^TIUVSIT(DFN)<br> S I=0 F  S I=$O(^TMP("TIUVNI",$J,I)) Q:'I  D<br> . S ILST=ILST+1<br> . S LST(ILST)=$P(^TMP("TIUVNI",$J,I),U,1,2)_U_$P(^TMP("TIUVN",$J,I),U,1,2)<br> K ^TMP("TIUVN",$J),^TMP("TIUVNI",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

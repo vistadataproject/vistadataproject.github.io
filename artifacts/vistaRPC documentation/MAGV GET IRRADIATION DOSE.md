@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PROCEDURE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the accession number used to determine which irradiation instancesto return.{:/} | 
 | {::nomarkdown}PROCTYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the type of irradiation instance to fetch data from - \CT\ or \FLUORO\.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

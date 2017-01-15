@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDERS{:/}
  Code | {::nomarkdown}  N I<br> S LOC=0,I=0<br> F  S I=$O(ORDERS(I)) Q:'I  D  Q:LOC<br> . I $P(ORDERS(I),U,2)'["R",($P(ORDERS(I),U,2)'["S") Q<br> . S LOC=+$P($G(^OR(100,+ORDERS(I),0)),U,10)<br> I LOC F  S I=$O(ORDERS(I)) Q:'I  D  Q:'LOC<br> . I $P(ORDERS(I),U,2)'["R",($P(ORDERS(I),U,2)'["S") Q<br> . I (+$P($G(^OR(100,+ORDERS(I),0)),U,10)'=LOC) S LOC=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

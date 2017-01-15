@@ -171,9 +171,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date_time_entered | .01 | Date/time Entered | {::nomarkdown}This is the date/time the comment was entered.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

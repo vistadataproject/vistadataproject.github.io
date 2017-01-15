@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFLIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the last IEN returned, if the list contains more than 100records. By passing in this value, which should be the last IEN returned in a previous call, it will grab the next 100 records, or until there are no additional records.{:/} | 
 | {::nomarkdown}DSIFSCR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown} If passed, determines which form of screening should be used to determine whether the user can view the selected service. If not passed (or passed as \\), no screening will be performed.  Allowed values are:    N - Consult Notification screen    U - Consult Parameter screening by user precedence{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

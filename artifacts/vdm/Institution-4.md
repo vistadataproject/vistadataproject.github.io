@@ -147,9 +147,4 @@ title: VDM documentation
 | coding_system | .01 | Coding System |  | STRING |  | REQUIRED, INDEXED |  | 
 | id-_02 | .02 | Id |  | STRING |  |  |  | 
 | effective_date_time | .03 | Effective Date/time | {::nomarkdown}Describes the pair Status and Effective Date/Time for each reference term.{:/} | DATE-TIME |  |  |  | 
-| status | .04 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE', then the <br/>term will be accessible by end-users to document a particular patient <br/>event. If 'INACTIVE', then the term will only be accessible by the <br/>application to display legacy data.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| status | .04 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE', then the <br/>term will be accessible by end-users to document a particular patient <br/>event. If 'INACTIVE', then the term will only be accessible by the <br/>application to display legacy data.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

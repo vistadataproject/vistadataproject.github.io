@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br> S I=0,CNT=44,ORSVC=""<br> D SVCTREE^ORQQCN2(.Y,1)<br> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br> . S ORTMP(ORSVC)=Y(I)<br> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br> . S ORSTR=ORTMP(FROM)<br> . S ORY(I)=ORSTR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

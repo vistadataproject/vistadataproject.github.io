@@ -11,9 +11,4 @@ title: VDM documentation
  fmId | 50.416
  label | Drug Ingredients
  location | ^PS(50.416,
- description | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+ description | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

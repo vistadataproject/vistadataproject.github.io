@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL PROBLEM LIST
  domain | Problem
  description | {::nomarkdown}Problem list for CPRS GUI client{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL PROBLEM LIST)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORQQPL PROBLEM LIST)
  MUMPS implementation | [PROBL^ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  type | CHANGE
  complexity | HIGH
@@ -26,9 +26,4 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | 
 | DFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 | 
 | GMPSTAT | LITERAL |  | {::nomarkdown}Problem status filter: A - active, I - inactive, B - Both active and inactive, R - removed{:/} | A | 
-| ORIDT | DATE |  | {::nomarkdown}Problem date filter? This parameter is typically passed in as zero{:/} | 0 | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| ORIDT | DATE |  | {::nomarkdown}Problem date filter? This parameter is typically passed in as zero{:/} | 0 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

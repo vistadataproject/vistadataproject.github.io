@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTDFN<br>FLAGID{:/}
  Code | {::nomarkdown}  I '$D(^TMP("ORPRF",$J,FLAGID)) Q<br> N IX,CNT<br> S (IX,CNT)=0<br> F  S IX=$O(^TMP("ORPRF",$J,FLAGID,IX)) Q:'IX  D<br> . S CNT=CNT+1,ORY(CNT)=$G(^TMP("ORPRF",$J,FLAGID,IX)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PATID{:/}
  Code | {::nomarkdown}  N ILST,I,X S ILST=0<br> S LST($$NXT)="~Common Procedures" D COMMPRO<br> S LST($$NXT)="~Modifiers" D MODIFYR<br> S LST($$NXT)="~Urgencies" D URGENCY<br> S LST($$NXT)="~Transport" D TRNSPRT<br> S LST($$NXT)="~Category" D CATEGRY<br> S LST($$NXT)="~Submit to" D SUBMIT<br> S LST($$NXT)="~Ask Submit="_$$GET^XPAR("ALL","RA SUBMIT PROMPT",1,"Q")<br> S LST($$NXT)="~Last 7 Days" D LAST7{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

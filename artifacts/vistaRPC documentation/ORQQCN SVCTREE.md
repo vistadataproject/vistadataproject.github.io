@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PURPOSE{:/}
  Code | {::nomarkdown}  N GMRCTO,GMRCDG,GMRCSVC,GMRCOI<br>  S GMRCTO=PURPOSE,GMRCDG=1<br> D SERV1^GMRCASV<br> S GMRCSVC=0<br> I '$D(^TMP("GMRCSLIST",$J)) S Y(1)="-1^No services found" Q  ;DBIA 2426<br> F I=1:1  S GMRCSVC=$O(^TMP("GMRCSLIST",$J,GMRCSVC)) Q:+GMRCSVC=0  D<br> . S Y(I)=^TMP("GMRCSLIST",$J,GMRCSVC)<br> . S GMRCOI=$O(^ORD(101.43,"ID",$P(Y(I),U,1)_";99CON",0))<br> . S Y(I)=Y(I)_U_GMRCOI{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

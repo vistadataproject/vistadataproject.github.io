@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}SVC<br>LOC<br>INP{:/}
  Code | {::nomarkdown}  N DSS,ORWSVC<br> S DSS=$P($G(^SC(+LOC,0)),U,7)<br> Q:'+DSS<br> M ORWSVC=SVC<br> S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

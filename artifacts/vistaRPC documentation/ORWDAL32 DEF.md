@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get dialog data for allergies
  Code | {::nomarkdown}  N ILST,I,X S ILST=0<br> S LST($$NXT)="~Allergy Types" D ALLGYTYP<br> S LST($$NXT)="~Reactions" D ALLGYTYP<br> S LST($$NXT)="~Nature of Reaction" D NATREACT<br> S LST($$NXT)="~Top Ten" D TOPTEN<br> S LST($$NXT)="~Observ/Hist" D OBSHIST<br> S LST($$NXT)="~Severity" D SEVERITY{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

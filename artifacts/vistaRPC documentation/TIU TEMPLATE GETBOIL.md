@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N IDX,LINE,TYPE<br> K ^TMP("TIU TEMPLATE",$J)<br> S TIUY=$NA(^TMP("TIU TEMPLATE",$J))<br> S (IDX,LINE)=0<br> S TYPE=$P($G(^TIU(8927,TIUDA,0)),U,3)<br> I (TYPE="T")!(TYPE="G") D<br> .F  S LINE=$O(^TIU(8927,TIUDA,2,LINE)) Q:'LINE  D<br> ..S IDX=IDX+1<br> ..S ^TMP("TIU TEMPLATE",$J,IDX)=$G(^TIU(8927,TIUDA,2,LINE,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

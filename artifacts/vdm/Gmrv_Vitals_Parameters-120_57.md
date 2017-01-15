@@ -38,9 +38,4 @@ title: VDM documentation
 | abnormal_o2_saturation__low | 6.3 |  |  | NUMERIC |  |  |  | 
 | phase_i_completed | 999 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
 | phase_ii_completed | 999.1 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
-| phase_ii_last_record | 999.2 |  |  | NUMERIC |  |  |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:11 am
+| phase_ii_last_record | 999.2 |  |  | NUMERIC |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}

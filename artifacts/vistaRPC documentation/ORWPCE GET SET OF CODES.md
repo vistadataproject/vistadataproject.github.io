@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORWFILE<br>ORWFIELD<br>ORWNULL{:/}
  Code | {::nomarkdown}  N ORWPCE,ORWPCEL,ORWPCEC,ORWPCELO,ORWPCEHI,ORWPCECD,ORWPCET<br> S ORWPCELO="abcdefghijklmnopqrstuvwxyz"<br> S ORWPCEHI="ABCDEFGHIJKLMNOPQRSTUVWXYZ"<br> D FIELD^DID(ORWFILE,ORWFIELD,"","POINTER","ORWPCE","ORWPCE")<br> S ORWPCEL=$L(ORWPCE("POINTER"),";")-1<br> F ORWPCEC=1:1:ORWPCEL D<br> . S ORWPCECD=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",1)<br> . S ORWPCET=$P($P(ORWPCE("POINTER"),";",ORWPCEC),":",2)<br> . S ORWLST(ORWPCEC)=ORWPCECD_"^"_$E(ORWPCET)_$TR($E(ORWPCET,2,99),ORWPCEHI,ORWPCELO)<br> S:$G(ORWNULL) ORWLST(0)="@^(None selected)"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

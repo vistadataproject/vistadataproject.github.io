@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN{:/}
  Code | {::nomarkdown}  Q:'$$PATCH^XPDUTL("SR*3.0*100")<br> Q:'+ORDFN<br> N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0<br> S ORY=$NA(^TMP("ORLIST",$J))<br> D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)<br> S I=0<br> F  S I=$O(@ORY@(I)) Q:+I=0  D<br> . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

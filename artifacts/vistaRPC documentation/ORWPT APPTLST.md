@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N ERR,ERRMSG,VASD,VAERR K ^UTILITY("VASD",$J)  ;IA 10061<br> S VASD("F")=$$HTFM^XLFDT($H-30,1)<br> S VASD("T")=$$HTFM^XLFDT($H+1,1)_".2359"<br> S VASD("W")="123456789"<br> D SDA^ORQRY01(.ERR,.ERRMSG)<br> I ERR K ^UTILITY("VASD",$J) K LST S LST(1)=ERRMSG Q<br> S I=0 F  S I=$O(^UTILITY("VASD",$J,I)) Q:'I  D<br> . S LST(I)=$P(^UTILITY("VASD",$J,I,"I"),U,1,2)_U_$P(^("E"),U,2,3)<br> K ^UTILITY("VASD",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

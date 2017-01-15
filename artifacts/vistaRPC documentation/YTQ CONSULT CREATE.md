@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Links consult requests and MHA3 results.Input : YS(\AD\) as ien of MH ADMINISTRATIONS file (#601.84)        YS(\CON\) as ien of REQUEST/CONSULTATION file (#123)        YS(\COSIGNER\) as ien of NEW PERSON file(#200){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

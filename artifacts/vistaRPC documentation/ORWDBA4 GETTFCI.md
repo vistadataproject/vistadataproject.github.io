@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  N AI,CI,CNT,DXS,TF,TFCI<br> S U="^",(CNT,TF)=""<br> F  S CNT=$O(ORIEN(CNT)) Q:CNT=""  D<br> . S TF=$$GTF(ORIEN(CNT))<br> . S DXS=$$GDCD(ORIEN(CNT))<br> . I TF="NNNNNNNN"&(DXS="") Q<br> . S TFCI(CNT)=ORIEN(CNT)_U_TF_$S(DXS="":"",1:U_DXS)<br> M Y=TFCI{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

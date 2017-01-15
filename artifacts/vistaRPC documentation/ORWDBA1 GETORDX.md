@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  N CT,DXIEN,DXN,DXREC,DXV,ICD9,ICDR,ORFMDAT,TXFACTRS<br> S (CT,DXN)=0<br> I '$G(^OR(100,ORIEN,0)) S Y=-1<br> I '$D(^OR(100,ORIEN,5.1,1,0)) S Y=0<br> E  D  S Y=CT<br> . ; Get order date for CSV/CTD/HIPAA usage<br> . S ORFMDAT=$$ORFMDAT^ORWDBA3(ORIEN)<br> . ; Go through all Dx's for an order<br> . F  S DXN=$O(^OR(100,ORIEN,5.1,DXN)) Q:DXN'?1N.N  D<br> .. ; Get diagnosis record and IEN<br> .. S DXREC=$G(^OR(100,ORIEN,5.1,DXN,0)),DXIEN=$P(DXREC,U)<br> .. S ICDR=$$ICDDATA^ICDXCODE("DIAGNOSIS",$G(DXIEN),ORFMDAT)<br> .. S DXV=$P(ICDR,U,4),ICD9=$P(ICDR,U,2)<br> .. ; Convert internal to external Treatment Factors<br> .. S TXFACTRS=$$TFGBLGUI(^OR(100,ORIEN,5.2))<br> .. S CT=CT+1,Y(CT)=DXN_U_$G(DXIEN)_U_ICD9_U_DXV_U_TXFACTRS{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

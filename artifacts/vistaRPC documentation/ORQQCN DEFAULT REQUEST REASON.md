@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORSVC<br>ORDFN<br>RESOLVE{:/}
  Code | {::nomarkdown}  Q:+$G(ORSVC)=0<br> I +RESOLVE,(+$G(ORDFN)=0) Q<br> S ORY=$NA(^TMP("ORREQ",$J))<br> S:$G(RESOLVE)="" RESOLVE=0<br> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br> K @ORY@(0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

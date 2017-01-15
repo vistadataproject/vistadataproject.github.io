@@ -12,7 +12,7 @@ title: RPCL documentation
  name | OR GET COMBAT VET
  domain | Patient
  description | {::nomarkdown}{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/OR GET COMBAT VET)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/OR GET COMBAT VET)
  MUMPS implementation | [CV^ORMARKER](http://code.osehra.org/dox/Routine_ORMARKER_source.html)
  type | READ_STRUCTURED
  complexity | 
@@ -24,9 +24,4 @@ title: RPCL documentation
 
 | id | parameterType | required | description | example | 
 | --- | --- | --- | --- | --- | 
-| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| DFN | LITERAL | true | {::nomarkdown}Patient id (DFN){:/} |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

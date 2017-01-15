@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDT{:/}
  Code | {::nomarkdown}  S ORDT=+$G(ORDT) S:'ORDT ORDT=DT<br> S RESULT="ICD^ICD-9-CM"<br> G:'$L($T(IMPDATE^LEXU)) ICDVERX<br> I +$$IMPDATE^LEXU("10D")'>ORDT S RESULT="10D^ICD-10-CM"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

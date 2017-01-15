@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X<br>APP<br>ORDATE<br>ORXTND<br>ORINCSYN{:/}
  Code | {::nomarkdown}  N LEX,ILST,I,IEN,IMPLDT,SUBSET,FILTER<br> S FILTER=""<br> S IMPLDT=$$IMPDATE^LEXU("10D")<br> S:APP="CPT" APP="CHP" ; LEX PATCH 10<br> I APP="ICD",'+$G(ORXTND) S APP=$S($E(X,1,3)?.1A2.3N:"ICD",1:"GMPX")<br> S:'+$G(ORDATE) ORDATE=DT<br> S ORINCSYN=+$G(ORINCSYN)<br> I APP="ICD",(ORDATE'<IMPLDT) S APP="10D"<br> S SUBSET=$S(APP="GMPX":$S(ORDATE<IMPLDT:"PLS",1:"CLF"),1:APP)<br> D CONFIG^LEXSET(APP,SUBSET,ORDATE)  ;DBIA 1609<br> I APP="CHP" D<br> . ; Set the filter for CPT only using CS APIs - format is the same as for DIC("S")<br> . S ^TMP("LEXSCH",$J,"FIL",0)="I $L($$CPTONE^LEXU(+Y,$G(ORDATE)))!($L($$CPCONE^LEXU(+Y,$G(ORDATE))))"  ;DBIA 1609<br> . ; Set Applications Default Flag (Lexicon can not overwrite filter)<br> . S ^TMP("LEXSCH",$J,"ADF",0)=1<br> S X=$$UP^XLFSTR(X)<br> D SRCH(.LST,X,APP,SUBSET,ORDATE,ORINCSYN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

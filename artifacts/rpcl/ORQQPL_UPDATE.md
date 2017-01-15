@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL UPDATE
  domain | Problem
  description | {::nomarkdown}Updates problem record{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL UPDATE)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORQQPL UPDATE)
  MUMPS implementation | [UPDATE^ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  type | CHANGE
  complexity | HIGH
@@ -49,9 +49,4 @@ title: RPCL documentation
 | SCTD | LITERAL |  | {::nomarkdown}Snomed Ct Designation Code{:/} | snomedCTDesignationCode | ORARRAY(\SCTD\)=\64176011\ | 
 | CODEDT | DATE |  | {::nomarkdown}Date Of Interest{:/} | interestDate | ORARRAY(\CODEDT\)=\3160725.\ | 
 | CODESYS | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | ORARRAY(\CODESYS\)=\10D\ | 
-| PROBLEM | REFERENCE |  | {::nomarkdown}Pointer to Problem #9000011{:/} |  | ORARRAY(\PROBLEM\)=\1\ | 
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+| PROBLEM | REFERENCE |  | {::nomarkdown}Pointer to Problem #9000011{:/} |  | ORARRAY(\PROBLEM\)=\1\ | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | returns a list of all available med routes
  Code | {::nomarkdown}  N I,X,ILST<br> S ILST=0<br> K ^TMP($J,"ORWDPS32 ALLROUTE")<br> D ALL^PSS51P2(,"??",,,"ORWDPS32 ALLROUTE")<br> S I=0 F  S I=$O(^TMP($J,"ORWDPS32 ALLROUTE",I)) Q:'I  D<br> . I +$P(^TMP($J,"ORWDPS32 ALLROUTE",I,3),U)>0 S LST($$NXT)=I_U_^TMP($J,"ORWDPS32 ALLROUTE",I,.01)_U_^TMP($J,"ORWDPS32 ALLROUTE",I,1)<br> K ^TMP($J,"ORWDPS32 ALLROUTE"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

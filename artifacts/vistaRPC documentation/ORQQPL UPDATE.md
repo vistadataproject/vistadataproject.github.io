@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}UPDARRAY{:/}
  Code | {::nomarkdown}  N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br> S S=""<br> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br> . S @UPDARRAY(S)<br> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br> S ORRETURN(1)=ORRETURN(0) ; error text<br> S ORRETURN(0)=ORRETURN ; gmpdfn<br> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

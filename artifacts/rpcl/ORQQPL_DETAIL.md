@@ -12,7 +12,7 @@ title: RPCL documentation
  name | ORQQPL DETAIL
  domain | Problem
  description | {::nomarkdown}Function returns a string of detailed information for a problem.{:/}
- Native VISTA Description | [nodeVISTA 8994](../vistaRPC documentation/ORQQPL DETAIL)
+ VA RPC Documentation | [see 8994 and method descriptions](../vistaRPC documentation/ORQQPL DETAIL)
  MUMPS implementation | [DETAIL^ORQQPL](http://code.osehra.org/dox/Routine_ORQQPL_source.html)
  type | UNSTRUCTURED READ
  complexity | HIGH
@@ -28,7 +28,7 @@ title: RPCL documentation
 | PROBLEM_ID | REFERENCE | true | {::nomarkdown}The record number of the problem from the Problem File (#9000011).{:/} | 1 | 
 | ID | LITERAL |  | {::nomarkdown}undocumented parameter, source code marks this as ID but never used in M code{:/} |  | 
 
-#### Example return value
+### Example return value
 
 ```
 Fatty liver (SCT 197321007)
@@ -51,9 +51,4 @@ Fatty liver (SCT 197321007)
 ----------- Audit History -----------
 11/8/16:  IMMEDIACY changed by ALEXANDER,ROBERT from ACUTE to CHRONIC
 ```
-
-
-
-
-
- Generated on January 13th 2017, 6:16:09 am
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}

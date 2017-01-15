@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}WIIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IEN of the MAG WORK ITEM file (#2006.941) entry to be modified.{:/} | 
 | {::nomarkdown}STATNEW{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the external form of the new STATUS in the MAG WORK ITEM STATUS file(#2006.9413).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}

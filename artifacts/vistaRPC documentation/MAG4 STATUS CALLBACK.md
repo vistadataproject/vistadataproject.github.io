@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}STATARR{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This array has the following structure:STATARR(0)=\0^Error message\  or \1^Success\STATARR(1)=TrackingID      TrackingID was sent as a parameter by CP in the IMPORT() call.STATARR(2)=Queue Number     The Queue Number was returned to CP from the IMPORT() callSTATARR(3..n) If status is '0^ERROR message\ these remaining nodeswill contain further error information.  Intended for User Interventionand debugging purposes.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

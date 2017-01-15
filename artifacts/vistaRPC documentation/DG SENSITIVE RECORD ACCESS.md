@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>DGMSG<br>DGOPT{:/}
  Code | {::nomarkdown}  K RESULT<br> I $G(DFN)="" D  Q<br> .S RESULT(1)=-1<br> .S RESULT(2)="Required variable missing."<br> S DGMSG=$G(DGMSG)<br> D OWNREC(.RESULT,DFN,$G(DUZ),DGMSG)<br> I RESULT(1)=1 S RESULT(1)=3 Q<br> I RESULT(1)=2 S RESULT(1)=4 Q<br> K RESULT<br> D SENS(.RESULT,DFN,$G(DUZ))<br> I RESULT(1)=1 D<br> .I $G(DUZ)="" D  Q<br> ..;DUZ must be defined to access sensitive record & update DG Security log<br> ..S RESULT(1)=-1<br> ..S RESULT(2)="Your user code is undefined.  This must be defined to access a restricted patient record."<br> .D SETLOG1^DGSEC(DFN,DUZ,,$G(DGOPT)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}

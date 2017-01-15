@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN<br>OREASON{:/}
  Code | {::nomarkdown}  N DA,ORB,ORNP,ORVP,ORPS<br> S DA=$P(ORIFN,";",2),ORVP=+$P(^OR(100,+ORIFN,0),U,2)<br> S $P(^OR(100,+ORIFN,8,DA,3),U)=0,$P(^(3),U,6,8)=+$E($$NOW^XLFDT,1,12)_U_DUZ_U_OREASON D MSG^ORCFLAG(ORIFN)<br> S $P(^OR(100,+ORIFN,3),U)=$$NOW^XLFDT  ; Last Activity<br> S ORNP=+$P($G(^OR(100,+ORIFN,8,DA,0)),U,3)<br> S ORB=+ORVP_U_+ORIFN_U_ORNP_"^0" D EN^OCXOERR(ORB) ; notification<br> D GETBYIFN^ORWORR(.REC,ORIFN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 14th 2017, 7:46:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
