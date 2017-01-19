@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SENT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}10000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array. Each element of this arraycontains internal entry numbers that identify an entryin the send-queue that has been transmitted successfully.The RPC will use the contents of this array to removeentries from the queue that have been transmitted.{:/} | 
 | {::nomarkdown}CHECK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a boolean value.When the value of this parameter is non-zero (true),the RPC will not mark the queue entry as being \in transmission\.This feature is used when the RPC is being called for thesole purpose of deternining whether or not there areany entries in the queue.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

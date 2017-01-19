@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FWGRANT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER GRANTED 0=TRUE, 1=FALSE{:/} | 
 | {::nomarkdown}FWADJDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}FEE WAIVER ADJUDICATED DATE{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

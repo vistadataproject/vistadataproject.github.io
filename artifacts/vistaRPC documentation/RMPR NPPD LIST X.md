@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}GUI REMOTE PROCEDURE, LIST NPPD DATA         ;RESULTS passed to broker in ^TMP($J,        ;delimited by \^\        ;piece 1 = DATA TO DISPLAY        ;piece 2 = FIELD NUMBER{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}INPUT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the input array for queuing the Dental Extract.  The following input format is required:    DATA(\STARTDT\)=Start Date MM/DD/YYYY    DATA(\ENDDT\)=End Date MM/DD/YYYY    DATA(\RUNDTTM\)=Run Date/Time (task date) MM/DD/YYYY@HH:MM:SS    DATA(\FILE\)=folder/file location, e.g. C:\\Temp\\Extract.txt    DATA(\IPADX\)=IP address    DATA(\PORT\)=Port#    DATA(\PROVIEN\)=optional Provider IENs p1^p2^p3, etc    DATA(\FORMAT\)=0 for excel, 1 for access    DATA(\TXNS\)=optional CPFO or any combination of transaction statuses                     (compl/plan/find/obs)    DATA(\STN\)=optional facility{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

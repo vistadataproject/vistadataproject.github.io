@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ENCOUNTER DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This array contains subscripts that correspond to each node of data foran Outpatient Encounter entry.Note: Currently (7/97) only the zeroth node is returned. Also, onlyfields .01 thru .08 and .1 thru .13 of the zeroth are returned.Other nodes and fields are not supported.For detail information regarding the fields, see data dictionary forthe Outpatient Encounter file (#409.68).{:/} | 
 | {::nomarkdown}ENCOUNTER PARSE FORMAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Defines format for parsed data.Valid Values:-------------      INTERNAL - use internal format       EXTERNAL - external/display format.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}

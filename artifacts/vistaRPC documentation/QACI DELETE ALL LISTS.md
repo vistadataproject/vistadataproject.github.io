@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC deletes the lists of legacy table data and Contact (ROC) numbersthat have been migrated from the old Patient Representative files to thenew PATS Oracle Tables. It is called from a Java routine after themigrated data has been deleted from the Oracle tables. This is done ONLYif for some reason a site has decided that they need to completely restartthe data migration to PATS.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

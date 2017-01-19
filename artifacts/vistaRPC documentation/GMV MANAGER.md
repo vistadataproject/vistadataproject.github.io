@@ -43,4 +43,5 @@ title: VISTA RPC documentation
 
 [GMV_VitalsViewEnter.dll]()
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}

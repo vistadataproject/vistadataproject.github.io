@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PERSON{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains either the employee's name or employee's socialsecurity number.  Using this parameter a list of all the CA-7's for thisindividual will be returned. {:/} | 
 | {::nomarkdown}CALL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the file number and the menu that called this brokercall.  The menu the broker is called from helps determine which cases canbe returned in the list.  If from the employee menu, then only cases for thatemployee are included, if from the WC menu, then all the CA-7's for the personwhose name is passed in.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
