@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CSLABD^[ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} get lab defaults{:/}
+ First comment | {::nomarkdown}<pre> get lab defaults</pre>{:/}
  Code | {::nomarkdown}  N RNG<br> S INFO=""<br> F RNG="INPT","OUTPT" D<br> .S INFO=INFO_$$GET^XPAR("DIV^SYS^PKG","ORQQLR DATE RANGE "_RNG,1,"I")_U{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

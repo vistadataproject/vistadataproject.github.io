@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DAYS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}NUMBER OF DAYS BACK TO INCLUDE A PT VISIT{:/} | 
 | {::nomarkdown}CLINIC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}IEN of Clinic in Hospital Location File.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

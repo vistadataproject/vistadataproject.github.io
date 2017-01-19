@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REPORT^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Build Report from array of Components passed in COMPS
- First comment | {::nomarkdown}RPC => ORWRP2 HS REPORT TEXT<br/>ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA){:/}
+ First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS REPORT TEXT<br/>ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA)</pre>{:/}
  Input parameters | {::nomarkdown}ORCOMPS<br>ORDFN{:/}
  Code | {::nomarkdown}  Q:'$G(ORDFN)<br> N GMTSEGC,GMTSEG,ORGMTSEG,ORSEGC,ORSEGI<br> K ^TMP("ORDATA",$J)<br> D REPORT^GMTSADH5(.ORGMTSEG,.ORSEGC,.ORSEGI,.ORCOMPS,.ORDFN)<br> Q:'$O(ORGMTSEG(0))<br> D START^ORWRP(80,"REPORT1^ORWRP2(.ORGMTSEG,.ORSEGC,.ORSEGI,ORDFN)")<br> S OROOT=$NA(^TMP("ORDATA",$J,1)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

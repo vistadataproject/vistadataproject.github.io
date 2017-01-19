@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CLEARNOT^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} clear current user's notifications{:/}
+ First comment | {::nomarkdown}<pre> clear current user's notifications</pre>{:/}
  Code | {::nomarkdown}  D CLEARNOT^ORWTPR(.OK,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

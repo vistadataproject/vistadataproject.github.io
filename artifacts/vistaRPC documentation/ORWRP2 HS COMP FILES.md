@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FILES^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get Files to select from for a component
- First comment | {::nomarkdown}RPC => ORWRP2 HS COMP FILES{:/}
+ First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS COMP FILES</pre>{:/}
  Input parameters | {::nomarkdown}ORCOMP{:/}
  Code | {::nomarkdown}  D FILES^GMTSADH5(.ORY,ORCOMP){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

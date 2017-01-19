@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN<br>HASH<br>OHINFO{:/}
  Code | {::nomarkdown}  N IENS<br> D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

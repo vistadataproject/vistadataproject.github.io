@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EXAMS^[ORWRA](http://code.osehra.org/dox/Routine_ORWRA_source.html)
  Method comment | Return imaging exams
- First comment | {::nomarkdown} RPC: ORWRA IMAGING EXAMS<br/>  See RPC definition for details on input and output parameters{:/}
+ First comment | {::nomarkdown}<pre> RPC: ORWRA IMAGING EXAMS<br/>  See RPC definition for details on input and output parameters</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  D GET(0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

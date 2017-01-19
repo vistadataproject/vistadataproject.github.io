@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API returns the possible answer alternatives for each question in a test or interview from file 601, Psychological Testing Input Required: Code , the test/interview code ie MMPI2Output: YSDATA(1)=[DATA]        YSDATA(x)=Question number^A^string with approriate answers (ie TFX){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

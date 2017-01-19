@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CHKSURR^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} check if current user's surrogate is valid{:/}
+ First comment | {::nomarkdown}<pre> check if current user's surrogate is valid</pre>{:/}
  Input parameters | {::nomarkdown}SURR{:/}
  Code | {::nomarkdown}  S OK=$$CHKSURR^ORWTPUA(DUZ,SURR){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

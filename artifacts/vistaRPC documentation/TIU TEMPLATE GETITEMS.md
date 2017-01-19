@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N IDX,ITEM,SEQ,ITEMNODE<br> K ^TMP("TIU TEMPLATE",$J)<br> S TIUY=$NA(^TMP("TIU TEMPLATE",$J))<br> I $P($G(^TIU(8927,TIUDA,0)),U,3)'="T" D<br> .S (IDX,SEQ)=0<br> .F  S SEQ=$O(^TIU(8927,TIUDA,10,"B",SEQ)) Q:'SEQ  D<br> ..S ITEM=0<br> ..F  S ITEM=$O(^TIU(8927,TIUDA,10,"B",SEQ,ITEM)) Q:'ITEM  D<br> ...S ITEMNODE=$G(^TIU(8927,TIUDA,10,ITEM,0))<br> ...D ADDNODE(.IDX,$P(ITEMNODE,U,2)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

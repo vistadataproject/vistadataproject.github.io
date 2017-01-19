@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIVHNDL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the handle for the background job.  This is the ^XTMP global node where the report status and data will reside.{:/} | 
 | {::nomarkdown}DSIVLOCS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains a list of clinics to return for the report.  The exception report will still gather appointments for all locations (except inactive, and \ZZ\ locations), but will only return the selected ones.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

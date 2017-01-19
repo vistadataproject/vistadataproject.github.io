@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SURGCLAS^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | RPC to identify class 
- First comment | {::nomarkdown} CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"{:/}
+ First comment | {::nomarkdown}<pre> CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"</pre>{:/}
  Input parameters | {::nomarkdown}CLNAME{:/}
  Code | {::nomarkdown}  S CLNAME=$G(CLNAME,"SURGICAL REPORTS")<br> S Y=$$CLASS^TIUSROI(CLNAME){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

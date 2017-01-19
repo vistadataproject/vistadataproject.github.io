@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Does user has permission to access GN?
  Code | {::nomarkdown}  S ORY=0<br> I $D(^XUSEC("OR GN ACCESS",DUZ)) S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

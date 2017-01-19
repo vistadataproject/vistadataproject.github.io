@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETDCOS^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} set default cosigner for current user{:/}
+ First comment | {::nomarkdown}<pre> set default cosigner for current user</pre>{:/}
  Input parameters | {::nomarkdown}VALUE{:/}
  Code | {::nomarkdown}  D SETDCOS^ORWTPN(.OK,VALUE,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

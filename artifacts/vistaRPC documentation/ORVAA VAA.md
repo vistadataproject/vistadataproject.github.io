@@ -32,8 +32,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | VAA^[ORVAA](http://code.osehra.org/dox/Routine_ORVAA_source.html)
- First comment | {::nomarkdown}Returns primary insurance policy name if VAA or TriCare{:/}
+ First comment | {::nomarkdown}<pre>Returns primary insurance policy name if VAA or TriCare</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N I,IBDT,IBFLDS,IBSTAT,LC,LQ,ORIBR,ORX,PIC,WI<br> S ORY(0)=""<br> S IBSTAT="RB",(LC,ORIBR,PIC)="",(LQ,WI)=0,IBFLDS="*"<br> S IBDT=$$NOW^XLFDT<br> S PIC=$$INSUR^IBBAPI(DFN,IBDT,IBSTAT,.ORIBR,IBFLDS)<br> I PIC<0 S ORY(0)=0 Q<br> I PIC=0 S:ORY(0)="" ORY(0)=0 Q<br> S $P(ORY(0),U)="Pt Insur",$P(ORY(0),U,2)="Patient has active Insurance"<br> S $P(ORY(0),U,3)=""<br> F  S LC=$O(ORIBR("IBBAPI","INSUR",LC)) Q:LC=""!(LQ)  D<br> . D FLD01,FLD02,FLD03,FLD04,FLD05,FLD06,FLD07,FLD08,FLD09,FLD10<br> . D FLD11,FLD12,FLD13,FLD14,FLD15,FLD16,FLD17,FLD18,FLD19,FLD20<br> . S WI=WI+1,ORY(WI)=""<br> I ORY(0)="" S ORY(0)=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

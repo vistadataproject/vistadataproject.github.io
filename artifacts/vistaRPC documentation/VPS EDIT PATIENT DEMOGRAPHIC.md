@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VPSDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The patient DFN which is to be used in processing the changes and updatingthe associated patient record in the PATIENT file (#2).{:/} | 
 | {::nomarkdown}VPSLST{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Local array where each field that is to be updated in the PATIENT file (#2) is assigned as a string to the data element in the array along with the field value.input structure:  LocalArray(n)=field label^data  where n is an incremental number and field label^data  are literal values{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

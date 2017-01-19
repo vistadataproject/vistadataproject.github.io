@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ID{:/}
  Code | {::nomarkdown}  N ORRPL,ORCNT,ORPT,ORPIEN<br> S ORRPL=$G(^VA(200,DUZ,101))<br> S ORRPL=$P(ORRPL,U,2)<br> I (('ORRPL)!(ORRPL="")) S LST(0)="" Q<br> S (ORCNT,ORPT)=0<br> F  S ORPT=$O(^OR(100.21,ORRPL,10,ORPT)) Q:'ORPT  D<br> .S ORPIEN=+$G(^OR(100.21,ORRPL,10,ORPT,0))<br> .I ((ORPIEN<0)!(ORPIEN="")) Q<br> .S ORCNT=ORCNT+1<br> .S LST(ORCNT)=ORPIEN_U_$P(^DPT(ORPIEN,0),U)_U_$$DOB^DPTLK1(ORPIEN,2)_U_$$SSN^DPTLK1(ORPIEN) ; DG249.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

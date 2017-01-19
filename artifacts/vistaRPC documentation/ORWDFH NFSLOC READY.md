@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLOC{:/}
  Code | {::nomarkdown}  I 'ORLOC S ORY=0 Q<br> S ORY=$S($L($$NFSLOC^FHOMAPI(ORLOC))>0:1,1:0)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

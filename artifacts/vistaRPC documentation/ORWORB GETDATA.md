@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}XQAID{:/}
  Code | {::nomarkdown}  N SHOWADD<br> S ORY=""<br> Q:$G(XQAID)=""!('$D(^XTV(8992,"AXQA",XQAID)))<br> D GETACT^XQALERT(XQAID)<br> S ORY=XQADATA<br> I ($E(XQAID,1,3)="TIU"),(+ORY>0) D<br> . S SHOWADD=1<br> . S ORY=ORY_$$RESOLVE^TIUSRVLO(+ORY)<br> K XQAID,XQADATA,XQAOPT,XQAROU{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

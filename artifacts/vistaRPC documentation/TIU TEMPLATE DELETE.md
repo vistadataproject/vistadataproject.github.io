@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DELETE^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Delete TEMPLATES
- First comment | {::nomarkdown} Pass TIUDA as array of record numbers to be deleted by reference<br/> SUCCESS will be returned as the actual number of templates deleted{:/}
+ First comment | {::nomarkdown}<pre> Pass TIUDA as array of record numbers to be deleted by reference<br/> SUCCESS will be returned as the actual number of templates deleted</pre>{:/}
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUI S (SUCCESS,TIUI)=0<br> F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D<br> . N DA<br> . S DA=+TIUDA(TIUI)<br> . I 'DA Q<br> . L -^TIU(8927,DA,0):1 ; Unlock before deleting<br> . ; Quit if the Template is NOT an ORPHAN<br> . I +$O(^TIU(8927,"AD",DA,0)) Q<br> . ; Otherwise, call FileMan to DELETE the record<br> . D ZAP(DA) S SUCCESS=SUCCESS+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

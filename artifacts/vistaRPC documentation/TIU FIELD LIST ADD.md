@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | XFLDLD^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  Method comment | RESETS/UPDATES THE TMP("TIUFLDXML",$J) GLOBAL
- First comment | {::nomarkdown}WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED<br/>AS 1, THE PROGRAM CLEARS THE TMP GLOBAL FIRST.  RETURNS "1" IF<br/>THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.{:/}
+ First comment | {::nomarkdown}<pre>WITH THE STRING PASSED IN "IN".  IF THE 1ST LINE IS SUBSCRIPTED<br/>AS 1, THE PROGRAM CLEARS THE TMP GLOBAL FIRST.  RETURNS "1" IF<br/>THIS CALL WAS SUCCESSFUL, "0" OTHERWISE.</pre>{:/}
  Input parameters | {::nomarkdown}IN{:/}
  Code | {::nomarkdown}  N X<br> S X=0<br> S X=$O(IN(X))<br> I +X=1 K ^TMP("TIUFLDXML",$J)<br> M ^TMP("TIUFLDXML",$J)=IN<br> S RESULT(1)=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

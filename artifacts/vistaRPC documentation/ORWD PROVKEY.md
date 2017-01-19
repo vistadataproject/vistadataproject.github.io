@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}USERID{:/}
  Code | {::nomarkdown}  N NAM S NAM=$P(^VA(200,USERID,0),U,1)<br> S VAL=$D(^VA(200,"AK.PROVIDER",NAM,USERID)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -26,8 +26,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | VMTYPES^[ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
- First comment | {::nomarkdown} This function returns one if ORQTYPE is a valid type abbrev.<br/> from the PCE Device Interface Specification.{:/}
+ First comment | {::nomarkdown}<pre> This function returns one if ORQTYPE is a valid type abbrev.<br/> from the PCE Device Interface Specification.</pre>{:/}
  Input parameters | {::nomarkdown}ORQTYPE{:/}
  Code | {::nomarkdown}  S ORRETURN=$$VMTYPES^GMRVPCE0(ORQTYPE)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | OI^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Return a bolus of orderable items
- First comment | {::nomarkdown} .Return Array, Cross Reference (S.xxx), Direction, Starting Text{:/}
+ First comment | {::nomarkdown}<pre> .Return Array, Cross Reference (S.xxx), Direction, Starting Text</pre>{:/}
  Input parameters | {::nomarkdown}XREF<br>DIR<br>FROM{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S CNT=44<br> I DIR=0 D  ; Forward direction<br> . F I=1:1:CNT S FROM=$O(^ORD(101.43,XREF,FROM)) Q:FROM=""  D<br> . . S Y(I)=$O(^ORD(101.43,XREF,FROM,0))_"^"_FROM<br> . I $G(Y(CNT))="" S Y(I)=""<br> I DIR=1 D  ; Reverse direction<br> . F I=1:1:CNT S FROM=$O(^ORD(101.43,XREF,FROM),-1) Q:FROM=""  D<br> . . S Y(I)=$O(^ORD(101.43,XREF,FROM,0))_"^"_FROM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>TIUDAD{:/}
  Code | {::nomarkdown}  N TIUX<br> S TIUX(2101)=TIUDAD<br> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br> D AUDLINK^TIUGR1(TIUDA,"a",TIUDAD)<br> D SENDID^TIUALRT1(TIUDA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

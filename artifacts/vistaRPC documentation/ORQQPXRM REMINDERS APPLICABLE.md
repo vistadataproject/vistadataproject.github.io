@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | APPL^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- First comment | {::nomarkdown}D APPL^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078<br/><br/>ORQQPXRM REMINDER CATEGORIES{:/}
+ First comment | {::nomarkdown}<pre>D APPL^PXRMRPCA(.ORY,ORPT,ORLOC) Q  ; DBIA 3078<br/><br/>ORQQPXRM REMINDER CATEGORIES</pre>{:/}
  Input parameters | {::nomarkdown}ORPT<br>ORLOC{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

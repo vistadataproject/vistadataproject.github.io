@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORVP<br>ORNP<br>ORL<br>ORIT{:/}
  Code | {::nomarkdown}  N ORDG,ORDUZ,ORSTS,OREVENT,ORCAT,ORDA,ORTS,ORNEW,ORCHECK,ORLOG<br> N ORDIALOG,ORIFN,ORLEAD,ORTRAIL<br> S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br> S DGRP=$P($G(^ORD(101.41,ORIT,0)),U,5) Q:'DGRP<br> S ORDIALOG=$$DEFDLG^ORWDXQ(DGRP)<br> I ORDIALOG=$O(^ORD(101.41,"B","PSO OERR",0)) S ORCAT="O"      ; temp<br> I ORDIALOG=$O(^ORD(101.41,"B","PSJ OR PAT OE",0)) S ORCAT="I" ; temp<br> D GETDLG1^ORCD(ORDIALOG)<br> D GETORDER^ORCD("^ORD(101.41,"_ORIT_",6)")<br> D EN^ORCSAVE<br> S REC="" I ORIFN D GETBYIFN^ORWORR(.REC,ORIFN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

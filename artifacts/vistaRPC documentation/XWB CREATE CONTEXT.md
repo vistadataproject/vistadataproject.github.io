@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}OPTION{:/}
  Code | {::nomarkdown}  K XQY0,XQY N XWB1,XABPGMOD,XWBPGMOD S RESULT=0<br> S OPTION=$$DECRYP^XUSRB1(OPTION) ;S:OPTION="" OPTION="\"<br> I OPTION="" S XQY=0,XQY0="",RESULT=1 Q  ;delete context if "" passed in.<br> S XWB1=$$OPTLK^XQCS(OPTION)<br> I XWB1="" S (XWBSEC,RESULT)="The context '"_OPTION_"' does not exist on server." Q  ;P10<br> S RESULT=$$CHK^XQCS(DUZ,XWB1)<br> S XWBPGMOD=$$KCHK^XUSRB("XUPROGMODE")<br> I RESULT!XWBPGMOD S XQY0=OPTION,XQY=XWB1,RESULT=1<br> E  S XWBSEC=RESULT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

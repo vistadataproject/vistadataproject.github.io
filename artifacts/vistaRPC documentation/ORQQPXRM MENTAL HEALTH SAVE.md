@@ -35,4 +35,4 @@ title: VISTA RPC documentation
  Method comment | DBIA 3080
  Input parameters | {::nomarkdown}ORES{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

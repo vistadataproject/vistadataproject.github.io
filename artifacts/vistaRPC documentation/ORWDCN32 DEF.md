@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}WHY{:/}
  Code | {::nomarkdown}  N ILST,NAM,IEN,X<br> S ILST=0<br> S LST($$NXT)="~ShortList" D SHORT<br> I WHY="C" D<br> . S LST($$NXT)="~Inpt Cslt Urgencies" D INCURG<br> I WHY="P" D<br> . S LST($$NXT)="~Inpt Proc Urgencies" D INPURG<br> S LST($$NXT)="~Outpt Urgencies" D OUTURG<br> S LST($$NXT)="~Inpt Place" D INPLACE<br> S LST($$NXT)="~Outpt Place" D OUTPLACE<br> S LST($$NXT)="~Clin Ind Date" D CID{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

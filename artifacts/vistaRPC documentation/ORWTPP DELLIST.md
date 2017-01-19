@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DELLIST^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} delete current user's personal list{:/}
+ First comment | {::nomarkdown}<pre> delete current user's personal list</pre>{:/}
  Input parameters | {::nomarkdown}LISTNUM{:/}
  Code | {::nomarkdown}  D DELLIST^ORWTPL(.OK,LISTNUM,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

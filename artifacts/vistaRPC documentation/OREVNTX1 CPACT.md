@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CPACT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return True/False to display active orders for copy
- First comment | {::nomarkdown} EVT ptr to #100.5{:/}
+ First comment | {::nomarkdown}<pre> EVT ptr to #100.5</pre>{:/}
  Input parameters | {::nomarkdown}EVT{:/}
  Code | {::nomarkdown}  Q:'EVT<br> S ORY=0<br> Q:'$D(^ORD(100.5,EVT,0))<br> S ORY=$P(^ORD(100.5,EVT,0),U,11){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

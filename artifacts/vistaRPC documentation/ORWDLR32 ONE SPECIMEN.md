@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IEN{:/}
  Code | {::nomarkdown}  Q:(+$G(IEN)=0)!('$D(^LAB(61,IEN,0)))<br> S LST=IEN_U_$P(^LAB(61,IEN,0),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

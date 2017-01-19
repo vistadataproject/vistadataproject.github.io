@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETREM^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} set current user's reminders{:/}
+ First comment | {::nomarkdown}<pre> set current user's reminders</pre>{:/}
  Input parameters | {::nomarkdown}VALUES{:/}
  Code | {::nomarkdown}  D SETREM^ORWTPR(.OK,.VALUES,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

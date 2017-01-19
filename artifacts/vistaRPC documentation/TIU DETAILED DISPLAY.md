@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>REASSIGN{:/}
  Code | {::nomarkdown}  N VALMAR,TIUGDATA,TIUGWHOL K ^TMP("TIUAUDIT",$J)<br> S TIUY=$NA(^TMP("TIUAUDIT",$J))<br> D GET(TIUDA,1,+$G(REASSIGN))<br> K ^TMP("VALM VIDEO",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTD^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} get default title for current user{:/}
+ First comment | {::nomarkdown}<pre> get default title for current user</pre>{:/}
  Input parameters | {::nomarkdown}CLASS{:/}
  Code | {::nomarkdown}  D GETTD^ORWTPN(.VALUE,CLASS,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CPCLASS^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
  Method comment | RPC that gets the CLINICAL PROCEDURES TIU Document
- First comment | {::nomarkdown}Definition file (#8925.1) IEN<br/> Input  -- None<br/> Output -- Y        TIU Document Definition file (#8925.1) IEN{:/}
+ First comment | {::nomarkdown}<pre>Definition file (#8925.1) IEN<br/> Input  -- None<br/> Output -- Y        TIU Document Definition file (#8925.1) IEN</pre>{:/}
  Code | {::nomarkdown}  S Y=$$CLASS{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

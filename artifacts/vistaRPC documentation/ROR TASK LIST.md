@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The TYPE parameter defines which tasks (1-Generic, 2-Report) are returnedby the procedure. See the description of the TYPE field (.02) of the RORTASK file (#798.8) for more details.  By default ($G(TYPE)'>0), all tasks are retrieved.{:/} | 
 | {::nomarkdown}USER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}A user IEN (DUZ) can be assigned to the USER parameter. Only tasksscheduled by this user are retrieved by the procedure. By default ($G(USER)'>0), it utilizes the current user's DUZ.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

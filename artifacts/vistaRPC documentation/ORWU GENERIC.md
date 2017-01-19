@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GENERIC^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return a set of entries from xref in REF
- First comment | {::nomarkdown} .Y=returned list, FROM=text to $O from, DIR=$O direction,{:/}
+ First comment | {::nomarkdown}<pre> .Y=returned list, FROM=text to $O from, DIR=$O direction,</pre>{:/}
  Input parameters | {::nomarkdown}FROM<br>DIR<br>REF{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S I=0,CNT=44<br> F  Q:I'<CNT  S FROM=$O(@REF@(FROM),DIR) Q:FROM=""  D<br> . S IEN="" F  S IEN=$O(@REF@(FROM,IEN),DIR) Q:'IEN  D<br> . . S I=I+1,Y(I)=IEN_"^"_FROM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

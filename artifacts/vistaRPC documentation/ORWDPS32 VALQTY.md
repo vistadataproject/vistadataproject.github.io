@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VALQTY^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | validate a quantity, return 1 if valid, 0 if not
- First comment | {::nomarkdown} to be compatible with LM, make sure X is integer from 1 to 240<br/> this is based on the input transform from 52,7{:/}
+ First comment | {::nomarkdown}<pre> to be compatible with LM, make sure X is integer from 1 to 240<br/> this is based on the input transform from 52,7</pre>{:/}
  Input parameters | {::nomarkdown}X{:/}
  Code | {::nomarkdown}  K:(+X'>0)!(+X>99999999)!(X'?.8N.1".".2N)!($L(X)>12) X<br> S OK=$S($D(X):1,1:0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

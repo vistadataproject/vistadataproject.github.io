@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | set a PIN lock on the current user
  Code | {::nomarkdown}  S ^XTMP("OR DEA PIN LOCK",0)=$$FMADD^XLFDT($$NOW^XLFDT,2)_U_$$NOW^XLFDT<br> S ^XTMP("OR DEA PIN LOCK",DUZ)=$$NOW^XLFDT<br> S ORY=^XTMP("OR DEA PIN LOCK",DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input string has 5 pieces, delimited by \^\:  \P\ or \A\ ^ RADFN ^ RADTI ^ RACNI ^ RARPT    P--run Pre-Fetch mode    A--run Auto-Display mode    RADFN, RADTI, & RACNI are pointers to the Current Case exam in file 70    RARPT--pointer to ^RARPT (file 74) for the current caseEither RARPT or the values RADFN/RADTI/RACNI may be passed for executingthis function.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

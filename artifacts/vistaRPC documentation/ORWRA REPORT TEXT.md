@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWRA](http://code.osehra.org/dox/Routine_ORWRA_source.html)
  Method comment | return imaging report
- First comment | {::nomarkdown}  RPC: ORWRA REPORT TEXT<br/>  See RPC definition for details on input and output parameters<br/> -- init locals and globals{:/}
+ First comment | {::nomarkdown}<pre>  RPC: ORWRA REPORT TEXT<br/>  See RPC definition for details on input and output parameters<br/> -- init locals and globals</pre>{:/}
  Input parameters | {::nomarkdown}DFN<br>ORID<br>ALPHA<br>OMEGA<br>DTRANGE<br>REMOTE<br>ORMAX<br>ORFHIE{:/}
  Code | {::nomarkdown}  N ID,LCNT,ORVP,EXAMDATE,CASENMBR<br> S RADATA=$NA(^TMP($J,"RAE3"))<br> S ROOT=$NA(^TMP("ORXPND",$J))<br> K @RADATA,@ROOT<br> S ID=$TR(ORID,"-",U)<br> S LCNT=0,ORVP=DFN_";DPT("<br> D XRAYS^ORCXPND1<br> K @RADATA{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

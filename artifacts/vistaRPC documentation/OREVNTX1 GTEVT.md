@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GTEVT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Event infomation based on PTEVT ptr #100.2
- First comment | {::nomarkdown}EVTID     ptr #100.5{:/}
+ First comment | {::nomarkdown}<pre>EVTID     ptr #100.5</pre>{:/}
  Input parameters | {::nomarkdown}PTEVT{:/}
  Code | {::nomarkdown}  Q:'+PTEVT<br> N EVTID,EVTTYPE,EVTNAME,EVTDISP,EVTDLG,PRTEVT<br> S (EVTTYPE,EVTNAME,EVTDISP,PRTEVT)=""<br> S EVTDLG=0<br> I '$P(^ORE(100.2,+$G(PTEVT),0),U,2) Q<br> S EVTID=$$EVT^OREVNTX(PTEVT)<br> S PRTEVT=$P(^ORD(100.5,EVTID,0),U,12)<br> I PRTEVT S EVTTYPE=$P(^ORD(100.5,PRTEVT,0),U,2)<br> E  S EVTTYPE=$P(^ORD(100.5,EVTID,0),U,2)<br> I $D(^ORD(100.5,EVTID,0)) D<br> . S EVTNAME=$P(^ORD(100.5,EVTID,0),U,1)<br> . S EVTDISP=$P(^ORD(100.5,EVTID,0),U,8)<br> . S EVTDLG=$P(^ORD(100.5,EVTID,0),U,4)<br> S ORY=EVTTYPE_U_EVTID_U_EVTNAME_U_EVTDISP_U_EVTDLG{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

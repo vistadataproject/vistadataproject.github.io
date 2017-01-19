@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LINK^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Link TIU Doc TIUIEN to
- First comment | {::nomarkdown} the PRF action{:/}
+ First comment | {::nomarkdown}<pre> the PRF action</pre>{:/}
  Input parameters | {::nomarkdown}TIUIEN<br>ASSGNDA<br>ACTIEN<br>DFN{:/}
  Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> D UNLINK^TIUPRF1(TIUIEN)<br> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

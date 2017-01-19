@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INFO{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter contains the address information for the witness. It isin the format: NAME^STREET^CITY^STATE^ZIP^DATE SIGNED.{:/} | 
 | {::nomarkdown}CMNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter contains the text for the Witness Comment.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FBOLDB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN of the batch that held the line items that were rejected.{:/} | 
 | {::nomarkdown}FBNEWB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Batch IEN of the batch that will hold the re-initiated line items.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

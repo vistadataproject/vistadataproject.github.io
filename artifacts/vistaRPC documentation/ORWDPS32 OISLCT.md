@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}OI<br>PSTYPE<br>ORVP{:/}
  Code | {::nomarkdown}  N ILST S ILST=0<br> K ^TMP("PSJINS",$J),^TMP("PSJMR",$J),^TMP("PSJNOUN",$J),^TMP("PSJSCH",$J)<br> S LST($$NXT)="~Dispense" D DISPDRG<br> S LST($$NXT)="~Instruct" D INSTRCT<br> S LST($$NXT)="~Route"    D ROUTE<br> S LST($$NXT)="~Message"  D MESSAGE<br> I $L($G(^TMP("PSJSCH",$J))) S LST($$NXT)="~DefSched",LST($$NXT)="d"_^($J)<br> K ^TMP("PSJINS",$J),^TMP("PSJMR",$J),^TMP("PSJNOUN",$J),^TMP("PSJSCH",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

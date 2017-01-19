@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DLGID{:/}
  Code | {::nomarkdown}  N DIEN,DFID,DTXT,DTYP,DGRP,X0,X5<br> S DLGID=+DLGID<br> Q:'DLGID<br> S X0=^ORD(101.41,DLGID,0),X5=$G(^(5))<br> S DGRP=+$P(X0,U,5),DFID=+$P(X5,U,5),DTXT=$P(X5,U,4),DTYP=$P(X0,U,4)<br>    S:'$L(DTXT) DTXT=$P(X0,U,2)<br> I $P(X0,U,4)="M" S:'DFID DFID=1001<br> S LST=DLGID_";"_DFID_";"_DGRP_";"_DTYP_U_DTXT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

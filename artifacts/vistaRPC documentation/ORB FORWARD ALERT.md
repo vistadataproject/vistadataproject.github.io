@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORBLST<br>ORBRECIP<br>ORBTYPE<br>ORBCOMNT{:/}
  Code | {::nomarkdown}  I ORBLST="" S ORY=0 Q<br> S ORBLST(1)=ORBLST<br> D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)<br> S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

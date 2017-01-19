@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LEGACY^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | return message if data on the legacy system
- First comment | {::nomarkdown} ORLST(0)=1 if data,  ORLST(n)=display message if data{:/}
+ First comment | {::nomarkdown}<pre> ORLST(0)=1 if data,  ORLST(n)=display message if data</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S ORLST(0)=0<br> I $L($T(HXDATA^A7RDPAGU)) D<br> . D HXDATA^A7RDPAGU(.ORLST,DFN)<br> . I $O(ORLST(0)) S ORLST(0)=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

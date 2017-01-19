@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISPROSVC^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | IS THIS SERVICE PART OF CONSULTS-PROSTHETICS INTERFACE, wat/OR*3*280
- First comment | {::nomarkdown}GMRCIEN - IEN of selected service{:/}
+ First comment | {::nomarkdown}<pre>GMRCIEN - IEN of selected service</pre>{:/}
  Input parameters | {::nomarkdown}GMRCIEN{:/}
  Code | {::nomarkdown}  I $G(^GMR(123.5,$G(GMRCIEN),"INT"))=1 S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TYPE^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
  Method comment | GMV GET VITAL TYPE IEN [RPC entry point]
- First comment | {::nomarkdown} Input:<br/>   RESULT = variable name to hold result<br/>  GMVTYPE = Name of Vital Type (from FILE 120.51) (e.g., WEIGHT)<br/> Output: Returns the IEN if GMVTYPE exists in FILE 120.51<br/>         else returns -1<br/>{:/}
+ First comment | {::nomarkdown}<pre> Input:<br/>   RESULT = variable name to hold result<br/>  GMVTYPE = Name of Vital Type (from FILE 120.51) (e.g., WEIGHT)<br/> Output: Returns the IEN if GMVTYPE exists in FILE 120.51<br/>         else returns -1<br/></pre>{:/}
  Input parameters | {::nomarkdown}GMVTYPE{:/}
  Code | {::nomarkdown}  I GMVTYPE="" S RESULT=-1 Q<br> S RESULT=+$O(^GMRD(120.51,"B",GMVTYPE,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PRINT^[ORWRPL](http://code.osehra.org/dox/Routine_ORWRPL_source.html)
  Method comment | print report entry point
- First comment | {::nomarkdown}  See RPC definition for details on input and output parameters{:/}
+ First comment | {::nomarkdown}<pre>  See RPC definition for details on input and output parameters</pre>{:/}
  Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>RPTID<br>ORDAYSBK<br>ORTESTS<br>ORALPHA<br>OROMEGA{:/}
  Code | {::nomarkdown}  IF '$$CHK() G PRINTQ<br> N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="GUI Lab Report Print"<br> S ZTRTN="DEQUE^ORWRPL"<br> S ZTSAVE("ORDFN")="",ZTSAVE("RPTID")="",ZTSAVE("ORDAYSBK")="",ZTSAVE("DUZ(")="",ZTSAVE("ORTESTS(")="",ZTSAVE("ORALPHA")="",ZTSAVE("OROMEGA")=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

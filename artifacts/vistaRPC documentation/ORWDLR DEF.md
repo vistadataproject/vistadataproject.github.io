@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DEF^[ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
  Method comment | procedure
- First comment | {::nomarkdown} get dialog definition specific to lab{:/}
+ First comment | {::nomarkdown}<pre> get dialog definition specific to lab</pre>{:/}
  Input parameters | {::nomarkdown}ALOC{:/}
  Code | {::nomarkdown}  S ILST=0<br> S LST($$NXT)="~Collection Times" D COLLTM<br> S LST($$NXT)="~Send Patient Times" D SENDTM<br> S LST($$NXT)="~Default Urgency="_$$DEFURG^LR7OR3<br> S LST($$NXT)="~Schedules" D SCHED<br> S LST($$NXT)="~Common" D COMMON{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

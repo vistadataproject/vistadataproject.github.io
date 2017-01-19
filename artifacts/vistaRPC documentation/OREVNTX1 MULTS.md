@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}EVTID{:/}
  Code | {::nomarkdown}  Q:'+EVTID<br> N I,CNT,X,Y S (I,CNT)=0<br> N PRTEVT<br> S PRTEVT=0<br> S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)<br> I PRTEVT>0 S EVTID=PRTEVT<br> F  S I=$O(^ORD(100.5,+$G(EVTID),"TS",I)) Q:I<1  S X=+$G(^(I,0)) D<br> . S Y=$$GET1^DIQ(45.7,X_",",.01)<br> . S CNT=CNT+1,ORY(CNT)=X_U_Y{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

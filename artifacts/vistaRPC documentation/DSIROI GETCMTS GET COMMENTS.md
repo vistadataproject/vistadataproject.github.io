@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN = Request internal number      or       If SEL = \R\ This is the patient DFN{:/} | 
 | {::nomarkdown}SEL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}5{:/} | {::nomarkdown}true{:/} | {::nomarkdown} SEL = COMMENT SELECTION (required)     This is a string that will select what type of comments to return        I = INTERNAL COMMENTS (.32 FIELD)       P = PATIENT COMMENTS (.31 FIELD)       A = ALERTS FROM 19620.98       R = PATIENT RECORD - In this case the IEN is the patient DFN.           If R is selected, it must be the only selection.      If more than one type of comment is desired, send the selection in a     carrot delimited string (ie. 'A^P^I'). The data will be returned in     the order it is requested.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

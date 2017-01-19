@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ERROR^[GMVUTL1](http://code.osehra.org/dox/Routine_GMVUTL1_source.html)
  Method comment | GMV MARK ERROR [RPC entry point]
- First comment | {::nomarkdown}GMVDATA CONSISTS OF THE FOLLOWING DATA:<br/>FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT<br/>PATIENT^INVALID RECORD{:/}
+ First comment | {::nomarkdown}<pre>GMVDATA CONSISTS OF THE FOLLOWING DATA:<br/>FILE # 120.5 IEN^DUZ^INCORRECT DATE/TIME^INCORRECT READING^INCORRECT<br/>PATIENT^INVALID RECORD</pre>{:/}
  Input parameters | {::nomarkdown}GMVDATA{:/}
  Code | {::nomarkdown}  N GMVFDA,GMVIEN,GMVIENS<br> I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q<br> S GMVIENS=(+GMVDATA)_","<br> S GMVFDA(120.5,GMVIENS,2)=1<br> S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)<br> S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)<br> D UPDATE^DIE("","GMVFDA","GMVIEN")<br> S RESULT="OK"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

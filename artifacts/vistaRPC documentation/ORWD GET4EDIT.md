@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GET4EDIT^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | procedure
- First comment | {::nomarkdown} return responses in format that can be used by dialog{:/}
+ First comment | {::nomarkdown}<pre> return responses in format that can be used by dialog</pre>{:/}
  Input parameters | {::nomarkdown}ORIFN{:/}
  Code | {::nomarkdown}  N ILST,PRMT,INST,DLG,ORDIALOG S ILST=0<br> I '$D(ORIFN) S LST=0 Q<br> S ORIFN=+ORIFN,DLG=+$P(^OR(100,ORIFN,0),U,5)<br> D GETDLG1^ORCD(DLG),GETORDER^ORCD("^OR(100,"_ORIFN_",4.5)")<br> S PRMT=0 F  S PRMT=$O(ORDIALOG(PRMT)) Q:'PRMT  D<br> . S INST=0 F  S INST=$O(ORDIALOG(PRMT,INST)) Q:'INST  D<br> . . S ILST=ILST+1,LST(ILST)="~"_PRMT_U_INST_U_$P(ORDIALOG(PRMT),U,3)<br> . . S ILST=ILST+1,LST(ILST)="d"_ORDIALOG(PRMT,INST)<br> . . I $E(ORDIALOG(PRMT,INST))=U D                 ; load word processing<br> . . . N I,REF S I=0,REF=ORDIALOG(PRMT,INST)<br> . . . F  S I=$O(@REF@(I)) Q:'I  S ILST=ILST+1,LST(ILST)="t"_^(I,0)<br> . . E  S $P(LST(ILST),U,2)=$$EXT^ORCD(PRMT,INST)  ; load external value<br> . . I "R"[$E(ORDIALOG(PRMT,0)) D<br> . . . S $P(LST(ILST),U,2)=$$UP^XLFSTR($$FMTE^XLFDT(ORDIALOG(PRMT,INST))){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

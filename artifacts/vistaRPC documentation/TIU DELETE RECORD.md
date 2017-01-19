@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>TIURSN<br>OVRRIDE{:/}
  Code | {::nomarkdown}  N TIUDEL,TIUD0 S ERR=0<br> I '+$G(OVRRIDE) D  Q:+$G(TIUDEL)'>0<br> . S TIUDEL=$$CANDO^TIULP(TIUDA,"DELETE RECORD")<br> . I TIUDEL'>0 S ERR="89250003^"_$$EZBLD^DIALOG(89250003)<br> S TIUD0=$G(^TIU(8925,+TIUDA,0))<br> I +$P(TIUD0,U,5)'<6 D  Q<br> . S TIURSN=$G(TIURSN,"A")<br> . D DELTEXT^TIURB2(TIUDA,TIURSN)<br> D DIK^TIURB2(TIUDA)<br> D DELAUDIT^TIUEDI1(TIUDA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

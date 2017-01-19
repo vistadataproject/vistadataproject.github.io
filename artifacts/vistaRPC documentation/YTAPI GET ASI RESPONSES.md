@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API returns the ASI responses for a specified ASI administration. Input required: DFN ; ien of file 2 Patient                IEN ; ien of file 604 Addiction Severity Index Output: YSDATA(1)=[DATA]        YSDATA(x)= Field #^Question name^is it Required^Answer{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

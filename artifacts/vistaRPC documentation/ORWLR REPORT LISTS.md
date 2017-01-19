@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return lists for list boxes
- First comment | {::nomarkdown}  RPC: ORWLR REPORT LIST{:/}
+ First comment | {::nomarkdown}<pre>  RPC: ORWLR REPORT LIST</pre>{:/}
  Code | {::nomarkdown}  N EOF<br> S EOF="$$END",OROOT=$NA(^TMP($J,"ORLABLIST"))<br> K @OROOT<br> D GETRPTS(.OROOT,.EOF) ; -- get list of reports<br> D GETDT^ORWRP(.OROOT,.EOF) ; -- get list of date ranges{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>IP<br>HWND{:/}
  Code | {::nomarkdown}  N I,ILST,ID,NODE,DONE<br> S NODE="ORWCV "_IP_"-"_HWND_"-"_DFN,ILST=0,DONE=0<br> I '$D(^XTMP(NODE,"DFN")) Q<br> I ^XTMP(NODE,"DFN")'=DFN S LST(1)="~DONE=1" Q<br> I $G(^XTMP(NODE,"DONE")) S ILST=ILST+1,LST(ILST)="~DONE=1",DONE=1<br> F ID="PROB","CWAD","MEDS","RMND","LABS","VITL","VSIT" D<br> . I '$G(^XTMP(NODE,ID)) Q<br> . S ILST=ILST+1,LST(ILST)="~"_ID<br> . S I=0 F  S I=$O(^XTMP(NODE,ID,I)) Q:'I  S ILST=ILST+1,LST(ILST)="i"_^(I)<br> . K ^XTMP(NODE,ID)<br> I DONE K ^XTMP(NODE) I +$G(^KMPTMP("KMPD-CPRS")) S $P(^KMPTMP("KMPDT","ORWCV",NODE),"^",2)=$H{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

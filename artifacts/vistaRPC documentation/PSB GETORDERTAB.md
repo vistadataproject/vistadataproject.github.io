@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBSIOPI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This parameter is a true/false flag (1/0).  If true use the new SI/OP Wp fields and return data in the Results array to the GUI Client.   The field is not required, so a null will convert into a 0, for false, making this backwards compatible.{:/} | 
 | {::nomarkdown}PSBCLINORD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is a True/False flag (1/0).  If true, then return onlyClinic Orders and not Inpatient Medication orders to BCMA, else if false, return only Inpatient Medication orders to BCMA. The field is not required, so a null will convert into a 0, for a default false value, making this backwards compatible.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORMONO{:/}
  Code | {::nomarkdown}  Q:'$D(^TMP($J,"ORMONOGRAPH",ORMONO))<br> K ^TMP($J,"ORMONORPC")<br> M ^TMP($J,"ORMONORPC")=^TMP($J,"ORMONOGRAPH",ORMONO,"DATA")<br> K ^TMP($J,"ORMONORPC",0)<br> S ORY=$NA(^TMP($J,"ORMONORPC")),@ORY=""{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

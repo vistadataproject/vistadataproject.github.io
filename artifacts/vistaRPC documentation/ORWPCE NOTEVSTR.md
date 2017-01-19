@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IEN{:/}
  Code | {::nomarkdown}  N X0,X12,VISIT<br> S X0=$G(^TIU(8925,+IEN,0)),X12=$G(^(12)),VISIT=$P(X12,U,7)<br> I +VISIT S VAL=$$VSTRBLD^TIUSRVP(VISIT) I 1<br> E  S VAL=$P(X12,U,11)_";"_$P(X0,U,7)_";"_$P(X0,U,13){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETSUB^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} set Ask for Subject on note for current user{:/}
+ First comment | {::nomarkdown}<pre> set Ask for Subject on note for current user</pre>{:/}
  Input parameters | {::nomarkdown}VALUE{:/}
  Code | {::nomarkdown}  D SETSUB^ORWTPN(.OK,VALUE,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

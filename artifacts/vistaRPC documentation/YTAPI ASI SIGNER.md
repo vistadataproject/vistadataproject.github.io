@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Allows interviewer to sign ASI, transcriber to \sign off\ and send abulletin. Input Required:                CODE: electronic signature code                IEN: ien of ASI in file 604 Output: reports on status of the operation only                YSDATA(1)=[DATA]                YSDATA(2)=1^ASI SIGNED{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

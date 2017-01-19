@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get SUBJECT ALTERNATIVE NAME for PIV card check. -p580
  Code | {::nomarkdown}  S RET=$P($G(^VA(200,DUZ,501)),U,2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

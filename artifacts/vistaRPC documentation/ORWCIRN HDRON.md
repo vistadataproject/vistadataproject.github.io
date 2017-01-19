@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get parameter value for ORWRP HDR ON
  Code | {::nomarkdown}  S ORY=+$$GET^XPAR("ALL","ORWRP HDR ON",1,"I")<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

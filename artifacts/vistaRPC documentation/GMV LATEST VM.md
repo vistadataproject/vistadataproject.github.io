@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETLAT^[GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
  Method comment | GMV LATEST VM [RPC entry point]
- First comment | {::nomarkdown} RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/> IN RESULT ARRAY.{:/}
+ First comment | {::nomarkdown}<pre> RETURNS THE LATEST VITALS/MEASUREMENTS FOR A GIVEN PATIENT(GMRDFN)<br/> IN RESULT ARRAY.</pre>{:/}
  Input parameters | {::nomarkdown}GMRDFN{:/}
  Code | {::nomarkdown}  K ^TMP($J,"GRPC") D EN1^GMVLAT0(GMRDFN)<br> S RESULT=$NA(^TMP($J,"GRPC")){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

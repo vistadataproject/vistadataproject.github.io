@@ -39,4 +39,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORPT<br>ORSDT<br>OREDT<br>ORSERV<br>ORSTATUS{:/}
  Code | {::nomarkdown}  N I,J,SITE,SEQ,DIFF,ORSRV,ORLOC,GMRCOER<br> S J=1,SEQ="",GMRCOER=2<br> S:'$L($G(ORSDT)) ORSDT=""<br> S:'$L($G(OREDT)) OREDT=""<br> S:'$L($G(ORSERV))!(+$G(ORSERV)=0) ORSERV=""<br> S:'$L($G(ORSTATUS)) ORSTATUS="" ;ALL STATI<br> K ^TMP("GMRCR",$J)<br> S ORY=$NA(^TMP("ORQQCN",$J,"CS"))<br> D OER^GMRCSLM1(ORPT,ORSERV,ORSDT,OREDT,ORSTATUS,GMRCOER)<br> M @ORY=^TMP("GMRCR",$J,"CS")<br> K @ORY@("AD")<br> K @ORY@(0)<br> K ^TMP("GMRCR",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

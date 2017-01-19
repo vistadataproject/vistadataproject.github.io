@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N CVE S CVE=$$CVEDT^DGCV(DFN)<br> I ($P(CVE,"^",1)'=1)!($P(CVE,"^",3)=0) S RVAL(0)="NOTCV" Q<br> N VASV<br> D SVC^VADPT<br> S RVAL(0)=""<br> I $D(VASV(6,1))=1 S RVAL(0)=VASV(6,1)<br> S RVAL(1)=""<br> I $D(VASV(6,3))=1 S RVAL(1)=VASV(6,3)<br> S RVAL(2)=""<br> I $D(VASV(6,5))=1 S RVAL(2)=VASV(6,5)<br> S RVAL(3)=""<br> I $D(VASV(10,1))=1 S RVAL(3)=VASV(10,1)<br> S RVAL(4)=""<br> I (VASV(11)>0)!(VASV(12)>0)!(VASV(13)>0) S RVAL(4)="OEF/OIF"<br> S RVAL(5)=""<br> S RVAL(6)=""<br> S RVAL(7)=""<br> D KVA^VADPT<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

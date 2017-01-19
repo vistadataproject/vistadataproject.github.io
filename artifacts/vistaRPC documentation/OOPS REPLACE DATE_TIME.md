@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the date to be validated and reformatted.{:/} | 
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is a control flag for assuring a valid date.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NEWPERS^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return a set of names from the NEW PERSON file.
- First comment | {::nomarkdown} SLC/PKS: Code moved to ORWU1 on 12/3/2002.{:/}
+ First comment | {::nomarkdown}<pre> SLC/PKS: Code moved to ORWU1 on 12/3/2002.</pre>{:/}
  Input parameters | {::nomarkdown}ORFROM<br>ORDIR<br>ORKEY<br>ORDATE<br>ORVIZ<br>ORALL{:/}
  Code | {::nomarkdown}  D NP1^ORWU1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LNGSURG^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | long list SURGICAL REPORT titles
- First comment | {::nomarkdown} CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>           depending on context{:/}
+ First comment | {::nomarkdown}<pre> CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>           depending on context</pre>{:/}
  Input parameters | {::nomarkdown}FROM<br>DIR<br>CLNAME{:/}
  Code | {::nomarkdown}  N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")<br> S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0<br> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

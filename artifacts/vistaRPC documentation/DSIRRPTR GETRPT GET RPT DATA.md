@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STFM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Internal Number from the word processing multiple in file 19620.35 that was passed back as the last line sent in the small group return.{:/} | 
 | {::nomarkdown}RECS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the max number of records from the report text to return.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

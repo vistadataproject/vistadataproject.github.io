@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}XQAID<br>ORKILL{:/}
  Code | {::nomarkdown}  N ORN<br> S ORN=$P($P(XQAID,";"),",",3)<br> I $G(ORKILL)=1!($G(ORKILL)=0) S XQAKILL=ORKILL<br> I $G(XQAKILL)="" S XQAKILL=$$XQAKILL^ORB3F1(ORN)<br> I $G(XQAKILL)="" S XQAKILL=1<br> S ORBY="FALSE"<br> I $L($G(XQAID)) D DELETE^XQALERT S ORBY="TRUE"<br> K XQAKILL{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

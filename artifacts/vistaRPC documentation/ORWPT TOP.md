@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Return top for all patients list (last selected for now)
  Code | {::nomarkdown}  N IEN<br> S IEN=$G(^DISV(DUZ,"^DPT("))<br> I IEN S LST(1)=IEN_U_$P($G(^DPT(IEN,0)),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

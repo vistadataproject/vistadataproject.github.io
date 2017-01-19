@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN<br>ORFL<br>ORCOM<br>ORALRT<br>ORALTO<br>ORDATE{:/}
  Code | {::nomarkdown}  S Y=$$SFILE^GMRCGUIB(ORIEN,4,ORFL,"",DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "4"=SIG FIND ACTION{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

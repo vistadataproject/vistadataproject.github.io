@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}BILN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Bill Number to file 19620.2{:/} | 
 | {::nomarkdown}AMNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Payment amount - Numeric dollar value or 'W' to indicate fee is to be Waived{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

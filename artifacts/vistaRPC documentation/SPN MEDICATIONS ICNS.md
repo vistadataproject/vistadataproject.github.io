@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VADC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}VA Drug Class list (array format){:/} | 
 | {::nomarkdown}ICNLST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of ICNs to search from{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

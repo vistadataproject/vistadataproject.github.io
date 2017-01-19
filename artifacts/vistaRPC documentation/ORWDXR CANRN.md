@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CANRN^[ORWDXR](http://code.osehra.org/dox/Routine_ORWDXR_source.html)
  Method comment | Check conjunction for renew.
- First comment | {::nomarkdown} All conjunctioni = "And" return 1<br/> Has a "Then" return 0{:/}
+ First comment | {::nomarkdown}<pre> All conjunctioni = "And" return 1<br/> Has a "Then" return 0</pre>{:/}
  Input parameters | {::nomarkdown}ORID{:/}
  Code | {::nomarkdown}  Q:'$G(^OR(100,+ORID,0))<br> N PKG<br> S PKG=$P($G(^OR(100,+ORID,0)),U,14)<br> S PKG=$$NMSP^ORCD(PKG)<br> I PKG'="PS" Q<br> N INDX,INDY,CANRENEW<br> S INDX=0<br> S CANRENEW=1<br> N CHID<br> S CHID=0 F  S CHID=$O(^OR(100,+ORID,2,CHID)) Q:'CHID  D<br> . N ORSTS,ACTIVE S ORSTS=0<br> . S ORSTS=$P($G(^OR(100,CHID,3)),U,3)<br> . S ACTIVE=$O(^ORD(100.01,"B","ACTIVE",0))<br> . I ACTIVE'=ORSTS S CANRENEW=0<br> I 'CANRENEW S ORY=CANRENEW Q<br> F  S INDX=$O(^OR(100,+ORID,4.5,"ID","CONJ",INDX)) Q:'INDX  D<br> . S INDY=0 F  S INDY=$O(^OR(100,+ORID,4.5,INDX,INDY)) Q:'INDY  D<br> . . I $G(^(INDY))="T" S CANRENEW=0 Q<br> . I CANRENEW=0 Q<br> S ORY=CANRENEW{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

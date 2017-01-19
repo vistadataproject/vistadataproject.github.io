@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Deletes an entry from a file.  Input: YSDATA=Array name to return success/error response       YS(\FILE\)=File number (e.g., 627.8)       YS(\IEN\)=record internal entry number (e.g., 100123)  Output: YSDATA(1)=\[DATA]\        or        YSDATA(1)=\[ERROR]\        YSDATA(2)=\error message\ Example: > S YSDATA=\TEST\,YS(\FILE\)=627.8,YS(\IEN\)=100123 > D DELENTRY^YTQAPI6(.YSDATA,.YS){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return lists for list boxes
- First comment | {::nomarkdown}  RPC: ORWRP REPORT LIST<br/>  See RPC definition for details on input and output parameters<br/>{:/}
+ First comment | {::nomarkdown}<pre>  RPC: ORWRP REPORT LIST<br/>  See RPC definition for details on input and output parameters<br/></pre>{:/}
  Code | {::nomarkdown}  N EOF<br> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br> K @ROOT<br> D GETRPTS(.ROOT,.EOF)<br> D GETHS(.ROOT,.EOF)<br> D GETDT(.ROOT,.EOF){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

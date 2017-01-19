@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PARAM^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return a parameter value for a user
- First comment | {::nomarkdown} call assumes current user, default entities, single instance{:/}
+ First comment | {::nomarkdown}<pre> call assumes current user, default entities, single instance</pre>{:/}
  Input parameters | {::nomarkdown}APARAM{:/}
  Code | {::nomarkdown}  S VAL=$$GET^XPAR("ALL",APARAM,1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

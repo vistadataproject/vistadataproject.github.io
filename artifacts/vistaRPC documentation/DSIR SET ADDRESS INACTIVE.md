@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ADRPTR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}ADRPTR - IEN of ADDRESS (NUMERIC){:/} | 
 | {::nomarkdown}FLAGVAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FLAGVAL - SET OF VALUES FOR THE INACTIVE FLAG.  ZERO(0) = ACTIVE AND ONE (1) = INACTIVE. (NUMERIC 0 OR 1){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

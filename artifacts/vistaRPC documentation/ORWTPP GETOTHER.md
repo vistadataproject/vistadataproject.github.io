@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETOTHER^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} get user's other parameter settings{:/}
+ First comment | {::nomarkdown}<pre> get user's other parameter settings</pre>{:/}
  Code | {::nomarkdown}  D GETOTHER^ORWTPO(.INFO,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

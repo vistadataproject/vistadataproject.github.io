@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCASE{:/}
  Code | {::nomarkdown}  I '$$PATCH^XPDUTL("SR*3.0*100") S ORY=0 Q<br> S ORY=$$OPTOP^SROESTV(+ORCASE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

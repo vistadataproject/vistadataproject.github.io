@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}Vista Patient Identifier{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Vista Patient Identifier will be the PATIENT (#2) file IEN (aka DFN). Example: DFN=\7168937\{:/} | 
 | {::nomarkdown}DOD Identifier{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The DOD Identifier will be EDIPI data with the following format:  Id^IdType^AssigningAuthority^AssigningFacility  Example: EDIPI=\852043888^NI^USDOD^200DOD\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

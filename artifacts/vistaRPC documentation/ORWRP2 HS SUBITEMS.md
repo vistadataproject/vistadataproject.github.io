@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SUBITEM^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get Subitems for a Test Panel
- First comment | {::nomarkdown}RPC => ORWRP2 HS SUBITEMS{:/}
+ First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS SUBITEMS</pre>{:/}
  Input parameters | {::nomarkdown}ORTEST{:/}
  Code | {::nomarkdown}  D SUBITEM^GMTSADH5(.ORY,ORTEST){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Return GMRA Site Params
  Code | {::nomarkdown}  N GMRASITE<br> D SITE^GMRAUTL<br> S ORY=$G(^GMRD(120.84,GMRASITE,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

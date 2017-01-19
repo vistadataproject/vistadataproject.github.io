@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Retrieve sys/pkg level default time/occ setting
  Code | {::nomarkdown}  N VALUE<br> S Y=$$GET^XPAR("DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

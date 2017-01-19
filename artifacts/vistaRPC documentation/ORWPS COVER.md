@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>FILTER{:/}
  Code | {::nomarkdown}  S FILTER=$G(FILTER,0)<br> K ^TMP("PS",$J)<br> D OCL^PSOORRL(DFN,"","")<br> N ILST,ITMP,X,VAIN,VAERR S ILST=0<br> D:FILTER INP^VADPT<br> S ITMP="" F  S ITMP=$O(^TMP("PS",$J,ITMP)) Q:'ITMP  D<br> . I FILTER,$G(VAIN(1))>0,$P(^TMP("PS",$J,ITMP,0),U)["N;O" Q<br> . S X=^TMP("PS",$J,ITMP,0)<br> . I '$L($P(X,U,2)) S X="??"  ; show something if drug empty<br> . I $D(^TMP("PS",$J,ITMP,"CLINIC",0)) S LST($$NXT)=$P(X,U,1,2)_U_$P(X,U,8,9)_U_"C"<br> . E  S LST($$NXT)=$P(X,U,1,2)_U_$P(X,U,8,9)<br> K ^TMP("PS",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

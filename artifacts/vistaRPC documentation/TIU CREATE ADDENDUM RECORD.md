@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MAKEADD^[TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
  Method comment | Create addendum
- First comment | {::nomarkdown} For backward compatibility<br/> Use MAKEADD^TIUSRVP2 now, please{:/}
+ First comment | {::nomarkdown}<pre> For backward compatibility<br/> Use MAKEADD^TIUSRVP2 now, please</pre>{:/}
  Input parameters | {::nomarkdown}TIUDA<br>TIUX<br>SUPPRESS{:/}
  Code | {::nomarkdown}  D MAKEADD^TIUSRVP2(.TIUDADD,TIUDA,.TIUX,+$G(SUPPRESS)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

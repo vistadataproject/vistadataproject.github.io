@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TITLEDA,PARENTDA<br> S TITLEDA=+$G(^TIU(8925,TIUDA,0))<br> I TITLEDA'>0 S TIUY="0^Document #"_TIUDA_" does not exist." Q<br> S PARENTDA=+$G(^TIU(8925,TIUDA,21))<br> S TIUY=$$POSSPRNT^TIULP(TITLEDA)<br> I +TIUY S TIUY="-1"_U_$P(TIUY,U,2) Q<br> I +$$ISCWAD^TIULX(TITLEDA) D  Q<br> . S TIUY="0^ CWAD Documents may not be Attached as Interdisciplinary Entries."<br> I +$$ISA^TIULX(TITLEDA,+$$CLASS^TIUCNSLT) D  Q<br> . S TIUY="0^ Consult Results may not be Attached as Interdisciplinary Entries."<br> S TIUY=$$CANDO^TIULP(TIUDA,"ATTACH TO ID NOTE")<br> I PARENTDA D  ; action must be "detach"<br> . I 'TIUY S TIUY="0^ You may not detach this note from an interdisciplinary note." Q<br> . S TIUY=$$CANDO^TIULP(PARENTDA,"ATTACH ID ENTRY")<br> . I 'TIUY S TIUY="0^ You may not detach this note from its interdisciplinary note."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

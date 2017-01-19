@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUFROM<br>DIR{:/}
  Code | {::nomarkdown}  N FILE,IENS,FIELDS,FLAGS,NUMBER,TIUPART,INDEX,SCREEN,ID,TIU,TIUERR<br> S FILE=200,FIELDS="@;.01",FLAGS="PB",INDEX="B",NUMBER=44<br> S (IENS,TIUPART,ID,TIU,TIUERR)=""<br> I DIR=1 S FLAGS="P"<br> S SCREEN="I $O(^TIU(8927,""AROOT"",Y,0))"<br> D LIST^DIC(FILE,IENS,FIELDS,FLAGS,NUMBER,.TIUFROM,.TIUPART,INDEX,SCREEN,ID,"TIU","TIUERR")<br> K TIU("DILIST",0)<br> N DA,I<br> S DA="",I=0<br> F  S DA=$O(TIU("DILIST",DA),DIR) Q:'DA  D<br> . S I=I+1<br> . S TIUY(I)=$G(TIU("DILIST",DA,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

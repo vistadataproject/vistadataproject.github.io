@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PLTEAMS^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} get current user's teams and personal lists{:/}
+ First comment | {::nomarkdown}<pre> get current user's teams and personal lists</pre>{:/}
  Code | {::nomarkdown}  D PLTEAMS^ORWTPT(.VALUES,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

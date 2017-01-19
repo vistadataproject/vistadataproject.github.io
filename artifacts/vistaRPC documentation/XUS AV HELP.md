@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | send access/verify code instructions.
  Code | {::nomarkdown}  S RET(0)=$$AVHLPTXT^XUS2(){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

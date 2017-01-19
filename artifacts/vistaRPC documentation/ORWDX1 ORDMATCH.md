@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORYARR{:/}
  Code | {::nomarkdown}  N ACTION,CNT,IEN,MATCH,ORDERID,STATUS<br> S CNT=0,MATCH=1<br> F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0!(MATCH=0)  D<br> . S ORDERID=$P(ORYARR(CNT),U),STATUS=$P(ORYARR(CNT),U,2)<br> . ;*341 Set up Action before validation.<br> . S IEN=$P(ORDERID,";"),ACTION=$P(ORDERID,";",2)<br> . I ORDERID=0,$G(ACTION)="" Q<br> . I STATUS=$P($G(^OR(100,IEN,3)),U,3) Q<br> . I $P($G(^ORD(100.01,STATUS,0)),U)="DISCONTINUED/EDIT" Q<br> . ;S MATCH=0<br> . I $P($G(^OR(100,IEN,8,ACTION,0)),U,15)'=STATUS S MATCH=0<br> S ORY=MATCH{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

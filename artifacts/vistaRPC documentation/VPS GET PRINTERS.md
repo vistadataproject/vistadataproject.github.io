@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This input parameter is used to filter the output by returning result start with or start from (up to 20 printers). Example: Input Parameter \B\ will return all printers (up to 20) start *with* \B\Example: Input Parameter \B*\ will return all printers (up to 20) start *from* \B\{:/} | 
 | {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This input parameter causes output result to be sorted in printer name ascending or descending order.Input Parameter: 1 (return printer names in ascending order)Input Parameter: -1 (return printer names in descending order){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

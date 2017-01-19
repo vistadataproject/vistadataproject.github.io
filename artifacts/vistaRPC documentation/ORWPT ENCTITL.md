@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ENCTITL^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Return external values for encounter
- First comment | {::nomarkdown} LOCNAME^LOCABBR^ROOMBED^PROVNAME{:/}
+ First comment | {::nomarkdown}<pre> LOCNAME^LOCABBR^ROOMBED^PROVNAME</pre>{:/}
  Input parameters | {::nomarkdown}DFN<br>LOC<br>PROV{:/}
  Code | {::nomarkdown}  S $P(REC,U,1)=$P($G(^SC(+LOC,0)),U,1,2)<br> S $P(REC,U,3)=$P($G(^DPT(DFN,.101)),U)<br> S $P(REC,U,4)=$P($G(^VA(200,+PROV,0)),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

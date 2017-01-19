@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGIN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}MAGIN is parameter sent by calling app (Delphi) FILE NUM ^ NUM TO RETURN ^ TEXT TO MATCH ^ FIELDS ^ SCREEN ($P 5-99){:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TAB; DATA : TAB;  LVIEW =Piece 1 TAB;     +LVIEW = 1  :  TAB;          result array is formatted for a magListView controlTAB;              i.e.  ^ delimiter for data and \\ delimiter for IENTAB;     +LVIEW = 0  : TAB;         old way,  \  \ delim for data and '^' delim for IENTAB;  INDX = Piece 2TAB;                       This is the index to search TAB;                       Defaults to \B\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

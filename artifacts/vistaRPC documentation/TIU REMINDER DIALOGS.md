@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns a list of all reminder dialogs usable in templates
  Code | {::nomarkdown}  N SRV<br> K TIUY<br> D RDACCUM(.TIUY,"USR","N")<br> S SRV=$$GETSRV(DUZ)<br> D RDACCUM(.TIUY,"SRV.`"_+$G(SRV),"N")<br> D RDACCUM(.TIUY,"DIV","N")<br> D RDACCUM(.TIUY,"SYS","N"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMDET^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | return detail for a pt's clinical reminder
- First comment | {::nomarkdown} ORY - return array<br/> ORPT - patient DFN<br/> ORIEN - clinical reminder (811.9 ien){:/}
+ First comment | {::nomarkdown}<pre> ORY - return array<br/> ORPT - patient DFN<br/> ORIEN - clinical reminder (811.9 ien)</pre>{:/}
  Input parameters | {::nomarkdown}ORPT<br>ORIEN{:/}
  Code | {::nomarkdown}  K ^TMP("PXRHM",$J)<br> D MAIN^PXRM(ORPT,ORIEN,5)     ; 5 returns all reminder info<br> N CR,I,J,ORTXT S I=1<br> S ORTXT="",ORTXT=$O(^TMP("PXRHM",$J,ORIEN,ORTXT)) Q:ORTXT=""  D<br> .S J=0 F  S J=$O(^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J)) Q:J=""  D<br> ..S ORY(I)=^TMP("PXRHM",$J,ORIEN,ORTXT,"TXT",J),I=I+1<br> K ^TMP("PXRHM",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

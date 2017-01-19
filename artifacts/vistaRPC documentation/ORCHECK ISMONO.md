@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | returns 1 if there is monograph data for the orderchecks being presented to the user
  Code | {::nomarkdown}  S ORY=0<br> Q:'$$PATCH^XPDUTL("OR*3.0*272")<br> I $D(^TMP($J,"ORMONOGRAPH")) S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

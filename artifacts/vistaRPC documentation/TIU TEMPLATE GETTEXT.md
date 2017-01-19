@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>VSTR<br>TIUX{:/}
  Code | {::nomarkdown}  D BLRPLT^TIUSRVD(.TIUY,"",DFN,VSTR,"TIUX"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

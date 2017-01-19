@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ADIVNUM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the regional office number - this is required only if DVBCSORT=R,otherwise send as null.{:/} | 
 | {::nomarkdown}ELTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the elapsed time.  Values are C (calendar days - default) or W(workdays).  If DVBCSORT=A,S, or V - this must not be null.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

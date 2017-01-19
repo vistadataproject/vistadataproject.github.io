@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TAB{:/}
  Code | {::nomarkdown}  N ROOT<br> S ROOT=$NA(LST)<br> K @ROOT<br> D TRY1(.ROOT,$G(TAB)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

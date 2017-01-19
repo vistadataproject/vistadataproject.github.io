@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DIVGET^[XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
  Method comment | Get Division data
- First comment | {::nomarkdown}IEN is userid (DUZ or username) for future use.{:/}
+ First comment | {::nomarkdown}<pre>IEN is userid (DUZ or username) for future use.</pre>{:/}
  Input parameters | {::nomarkdown}IEN{:/}
  Code | {::nomarkdown}  N %,XUDIV<br> S XUDIV=0,%=$$CHKDIV^XUS1(.XUDIV) ;Get users div.<br> I (%>0)&($P(%,U,2)'>0) D UPDIV(+%) ;Set users default div.<br> S RET(0)=XUDIV ;RET(0) is number of divisions.<br> I XUDIV S %=0 D  S RET(0)=XUDIV<br> . ;RET(%) is divison array eg. ien;station name;station#<br> . F  S %=$O(XUDIV(%)) Q:(%'>0)  S RET(%)=XUDIV(%){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

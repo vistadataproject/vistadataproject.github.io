@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}null{:/} |  |  |  | {::nomarkdown}No input parameter required.{:/} | 
 | {::nomarkdown}GROUP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value should be either \GROUP\ or \ALL\ to differentiatebetween a Current Write Group Update and an All share update.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

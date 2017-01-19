@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PARAMS^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return a list of parameter values
- First comment | {::nomarkdown} call assumes current user, default entities, multiple instances{:/}
+ First comment | {::nomarkdown}<pre> call assumes current user, default entities, multiple instances</pre>{:/}
  Input parameters | {::nomarkdown}APARAM{:/}
  Code | {::nomarkdown}  D GETLST^XPAR(.ORLIST,"ALL",APARAM,"Q"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

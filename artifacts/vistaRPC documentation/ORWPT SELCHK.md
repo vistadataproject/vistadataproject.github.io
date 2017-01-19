@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SELCHK^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Check for sensitive pt
- First comment | {::nomarkdown} SENSITIVE{:/}
+ First comment | {::nomarkdown}<pre> SENSITIVE</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S REC=$$EN1^ORQPT2(DFN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

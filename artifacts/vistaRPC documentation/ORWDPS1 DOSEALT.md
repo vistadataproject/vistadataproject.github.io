@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DDRUG<br>CUROI<br>PSTYPE{:/}
  Code | {::nomarkdown}  N I,OI,ORWLST,ILST S ILST=0<br> D ENRFA^PSJORUTL(DDRUG,PSTYPE,.ORWLST)<br> S I=0 F  S I=$O(ORWLST(I)) Q:'I  D<br> . S OI=+$O(^ORD(101.43,"ID",+$P(ORWLST(I),U,4)_";99PSP",0))<br> . I OI,OI'=CUROI S ILST=ILST+1,LST(ILST)=OI_U_$P(^ORD(101.43,OI,0),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

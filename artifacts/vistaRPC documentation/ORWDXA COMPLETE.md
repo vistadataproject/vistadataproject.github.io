@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | COMPLETE^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Complete order (generic)
- First comment | {::nomarkdown}N X S X=+$E($$NOW^XLFDT,1,12)<br/>D DATES^ORCSAVE2(+ORID,,X)<br/>D STATUS^ORCSAVE2(+ORID,2)<br/> validate ESCode{:/}
+ First comment | {::nomarkdown}<pre>N X S X=+$E($$NOW^XLFDT,1,12)<br/>D DATES^ORCSAVE2(+ORID,,X)<br/>D STATUS^ORCSAVE2(+ORID,2)<br/> validate ESCode</pre>{:/}
  Input parameters | {::nomarkdown}ORID<br>ESCODE{:/}
  Code | {::nomarkdown}  D COMP^ORCSAVE2(ORID)<br> D COMP^ORMBLDOR(ORID)<br> D GETBYIFN^ORWORR(.REC,ORID){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

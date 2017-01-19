@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | USRPROV^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Is USER a USR CLASS provider?
- First comment | {::nomarkdown} Checks USR CLASS PROVIDER only<br/> DATE must not include time{:/}
+ First comment | {::nomarkdown}<pre> Checks USR CLASS PROVIDER only<br/> DATE must not include time</pre>{:/}
  Input parameters | {::nomarkdown}USER<br>DATE{:/}
  Code | {::nomarkdown}  N TIUERR<br> S USER=$G(USER,DUZ)<br> S DATE=$G(DATE,DT),TIUY=0<br> I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

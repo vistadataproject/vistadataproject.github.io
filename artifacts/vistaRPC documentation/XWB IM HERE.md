@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | IMHERE^[XWBLIB](http://code.osehra.org/dox/Routine_XWBLIB_source.html)
  Method comment | P6
- First comment | {::nomarkdown}Entry point for XWB IM HERE remote procedure{:/}
+ First comment | {::nomarkdown}<pre>Entry point for XWB IM HERE remote procedure</pre>{:/}
  Code | {::nomarkdown}  S RESULT=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

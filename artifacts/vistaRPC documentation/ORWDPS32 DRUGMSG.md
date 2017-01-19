@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IEN{:/}
  Code | {::nomarkdown}  N X S X=$$ENDCM^PSJORUTL(IEN)<br> S VAL=$P(X,U,2)_U_$P(X,U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

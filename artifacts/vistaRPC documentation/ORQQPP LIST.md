@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORPT{:/}
  Code | {::nomarkdown}  Q:'$L($G(ORPT))<br> K ^TMP("TIUPPCV",$J)<br> D ENCOVER^TIUPP3(ORPT)<br> I MSG'=0 S ORY(1)="^No patient postings found."<br> N I,J,X,FMDT,MSG S I=0,J=1,X=""<br> F  S I=$O(^TMP("TIUPPCV",$J,I)) Q:I<1  D<br> .S X=^(I),ORY(J)=$P(X,U)_U_$P(X,U,3)_U_$P(X,U,5),J=J+1<br> K ^TMP("TIUPPCV",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

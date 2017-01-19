@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REVSTS^[ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
  Method comment | Return the status flags available for review orders
- First comment | {::nomarkdown}N I,X,T S ILST=0<br/>F I=1:1 S T="ORDSTS+"_I_"^ORCHANG2" S X=$T(@T) Q:$P(X,";",4)="ZZZZ"  D<br/>. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4){:/}
+ First comment | {::nomarkdown}<pre>N I,X,T S ILST=0<br/>F I=1:1 S T="ORDSTS+"_I_"^ORCHANG2" S X=$T(@T) Q:$P(X,";",4)="ZZZZ"  D<br/>. S ILST=ILST+1,LST(ILST)=$P(X,";",3)_U_$P(X,";",4)</pre>{:/}
  Code | {::nomarkdown}  D STSLST^ORCHANG2(.LST){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

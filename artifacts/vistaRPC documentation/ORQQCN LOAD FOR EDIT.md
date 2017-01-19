@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCO{:/}
  Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> N ORNODE,I<br> S ORNODE=$NAME(^TMP("GMRCR",$J)),I=0<br> D SEND^GMRCGUIC(GMRCO,ORNODE)<br> S Y=ORNODE<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

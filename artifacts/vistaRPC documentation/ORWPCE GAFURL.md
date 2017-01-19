@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns the MH GAF Web Page URL
  Code | {::nomarkdown}  S URL=""<br> I $T(GAFURL^YTAPI5)'="" D<br> .N ORY<br> .D GAFURL^YTAPI5(.ORY)<br> .I $G(ORY(1))="[DATA]" S URL=$G(ORY(2)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

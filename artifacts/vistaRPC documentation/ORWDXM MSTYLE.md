@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Return the menu style for the system
  Code | {::nomarkdown}  S VAL=+$$GET^XPAR("SYS","ORWDXM ORDER MENU STYLE",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

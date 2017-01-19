@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMOTE^[ORWRPL](http://code.osehra.org/dox/Routine_ORWRPL_source.html)
  Method comment | Print data for remote sites
- First comment | {::nomarkdown}  RPC: ORWRP PRINT REMOTE REPORT{:/}
+ First comment | {::nomarkdown}<pre>  RPC: ORWRP PRINT REMOTE REPORT</pre>{:/}
  Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>RPTID<br>ORHANDS{:/}
  Code | {::nomarkdown}  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="Remote Lab Report Print"<br> S ZTRTN="DEQUE^ORWRPL"<br> F I="ORDFN","RPTID","ORHANDS(" S ZTSAVE(I)=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

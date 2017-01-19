@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLOC{:/}
  Code | {::nomarkdown}  S Y=-1<br> Q:$G(ORLOC)=""<br> S Y=$P($G(^SC(+$G(ORLOC),0)),U,3)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

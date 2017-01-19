@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETPREF^[TIUSRVR](http://code.osehra.org/dox/Routine_TIUSRVR_source.html)
  Method comment | Get user's personal preferences
- First comment | {::nomarkdown} Call with TIUY (by ref)<br/>           USER is pointer to file 200<br/> Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>               ==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>               ==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>               ==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^{:/}
+ First comment | {::nomarkdown}<pre> Call with TIUY (by ref)<br/>           USER is pointer to file 200<br/> Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>               ==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>               ==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>               ==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^</pre>{:/}
  Input parameters | {::nomarkdown}USER{:/}
  Code | {::nomarkdown}  S TIUY=$$PERSPRF^TIULE(USER){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

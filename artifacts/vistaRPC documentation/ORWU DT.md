@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DT^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Internal Fileman Date/Time
- First comment | {::nomarkdown} change the '00:00' that could be passed so Fileman doesn't reject{:/}
+ First comment | {::nomarkdown}<pre> change the '00:00' that could be passed so Fileman doesn't reject</pre>{:/}
  Input parameters | {::nomarkdown}X<br>%DT{:/}
  Code | {::nomarkdown}  I $L($P(X,"@",2)),("00000000"[$TR($P(X,"@",2),":","")) S $P(X,"@",2)="00:00:01"<br> S %DT=$G(%DT,"TS") D ^%DT K %DT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | APPROVAL^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | RETURNS LIST OF RADIOLOGISTS WHO MAY APPROVE A
- First comment | {::nomarkdown}                       PROCEDURE WHEN REQUIRED{:/}
+ First comment | {::nomarkdown}<pre>                       PROCEDURE WHEN REQUIRED</pre>{:/}
  Input parameters | {::nomarkdown}DUMMY{:/}
  Code | {::nomarkdown}  N ORX,I<br> S I="" F  S I=$O(^VA(200,"ARC","S",I)) Q:I=""  D<br> . ;I $P($G(^VA(200,I,"PS")),U,4),$P(^VA(200,I,"PS"),U,4)'>DT Q<br> . I '$$ACTIVE^XUSER(I) Q<br> . I $P($G(^VA(200,I,"RA")),U,3),$P(^VA(200,I,"RA"),U,3)'>DT Q<br> . S ORX=$P($G(^VA(200,I,0)),U)<br> . S Y(I)=I_U_ORX{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

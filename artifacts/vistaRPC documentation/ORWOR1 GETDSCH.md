@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDER{:/}
  Code | {::nomarkdown}  N IFN,ACTION<br> S IFN=+ORDER,ACTION=$P(ORDER,";",2)<br> S Y=$P($G(^OR(100,+IFN,8,+ACTION,2)),U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

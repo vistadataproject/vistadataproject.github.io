@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | AUTHSIGN^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Has Author signed?
- First comment | {::nomarkdown} if TIUY =<br/> 0 = Author has NOT signed & TIUUSR = Expected Cosigner<br/> 1 = Author HAS signed or TIUUSR '= Expected Cosigner<br/>{:/}
+ First comment | {::nomarkdown}<pre> if TIUY =<br/> 0 = Author has NOT signed & TIUUSR = Expected Cosigner<br/> 1 = Author HAS signed or TIUUSR '= Expected Cosigner<br/></pre>{:/}
  Input parameters | {::nomarkdown}TIUDA<br>TIUUSR{:/}
  Code | {::nomarkdown}  N TIUD12,TIUD15<br> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))<br> S TIUY=1<br> D:$P(TIUD12,U,8)=TIUUSR  Q<br> . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

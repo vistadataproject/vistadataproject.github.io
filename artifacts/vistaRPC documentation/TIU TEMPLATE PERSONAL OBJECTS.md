@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PERSOBJS^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Returns the list of Patient Data Objects that are
- First comment | {::nomarkdown}         allowed to be used in Personal Templates{:/}
+ First comment | {::nomarkdown}<pre>         allowed to be used in Personal Templates</pre>{:/}
  Code | {::nomarkdown}  N SRV<br> K TIUY<br> D OBJACCUM(.TIUY,"USR")<br> S SRV=$$GETSRV(DUZ)<br> I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))<br> D OBJACCUM(.TIUY,"DIV")<br> D OBJACCUM(.TIUY,"SYS"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

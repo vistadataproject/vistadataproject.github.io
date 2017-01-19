@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RES^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Method comment | DBIA 3080
- First comment | {::nomarkdown}<br/>ORQQPXRM REMINDER WEB{:/}
+ First comment | {::nomarkdown}<pre><br/>ORQQPXRM REMINDER WEB</pre>{:/}
  Input parameters | {::nomarkdown}ORREM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

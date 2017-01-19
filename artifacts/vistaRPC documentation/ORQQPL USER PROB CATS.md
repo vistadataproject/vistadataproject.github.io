@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDUZ<br>CLIN{:/}
  Code | {::nomarkdown}  N GSEQ,GCNT,GROUP,HDR,IFN,LCNT,ITEM,TG,GMPLSLST<br> S TG=$NAME(TMP) ; put list in local<br> K @TG<br> S (GSEQ,GCNT,LCNT)=0<br> S GMPLSLST=$$GETUSLST(DUZ,CLIN) ; get approp list for user<br> F  S GSEQ=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ)) Q:GSEQ'>0  D<br> . S IFN=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ,0)) Q:IFN'>0<br> . S ITEM=$G(^GMPL(125.1,IFN,0))<br> . S GROUP=+$P(ITEM,U,3)<br> . S HDR=GROUP_U_$P(ITEM,U,4,5)<br> . S GCNT=GCNT+1<br> . S @TG@(GCNT)=HDR ; put category into temp global{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

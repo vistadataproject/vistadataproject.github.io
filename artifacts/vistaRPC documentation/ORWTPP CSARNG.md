@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CSARNG^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown} get current user's start, stop defaults{:/}
+ First comment | {::nomarkdown}<pre> get current user's start, stop defaults</pre>{:/}
  Code | {::nomarkdown}  D CSARNG^ORWTPO(.INFO,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

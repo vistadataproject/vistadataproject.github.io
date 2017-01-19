@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DLGSLCT^[ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  Method comment | return def lists for dialog
- First comment | {::nomarkdown} PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt){:/}
+ First comment | {::nomarkdown}<pre> PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpt)</pre>{:/}
  Input parameters | {::nomarkdown}PSTYPE<br>DFN<br>LOCIEN{:/}
  Code | {::nomarkdown}  N ILST S ILST=0<br> I PSTYPE="F" D  Q                       ; IV Fluids<br> . S LST($$NXT)="~ShortList"  D SHORT<br> . S LST($$NXT)="~Priorities" D PRIOR<br> . ;S LST($$NXT)="~Schedules"  D SCHED(LOCIEN)<br> . S LST($$NXT)="~Route" D IVROUTE<br> S LST($$NXT)="~ShortList"  D SHORT      ; Unit Dose & Outpt<br> S LST($$NXT)="~Priorities" D PRIOR<br> I PSTYPE="O" D                          ; Outpt<br> . S LST($$NXT)="~Pickup"   D PICKUP<br> . S LST($$NXT)="~SCStatus" D SCLIST{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

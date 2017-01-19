@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPLCLEAN^[ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
  Method comment | Kill global data using passed global root value.
- First comment | {::nomarkdown}<br/> Variables used:<br/><br/>    ORJ    = Job number to use in ^TMP global root.<br/>    ORROOT = Root of ^TMP global to kill.<br/>    Y      = Returned RPC value.<br/>{:/}
+ First comment | {::nomarkdown}<pre><br/> Variables used:<br/><br/>    ORJ    = Job number to use in ^TMP global root.<br/>    ORROOT = Root of ^TMP global to kill.<br/>    Y      = Returned RPC value.<br/></pre>{:/}
  Input parameters | {::nomarkdown}ORJ{:/}
  Code | {::nomarkdown}  N ORROOT<br> S Y=1                                     ; Initialize.<br> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br> S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.<br> K @ORROOT                                 ; Kill global data.<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

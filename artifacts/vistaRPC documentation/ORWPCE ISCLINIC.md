@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLOC{:/}
  Code | {::nomarkdown}  N ORTYP<br> S ORY=0<br> S ORTYP=$$GET1^DIQ(44,+ORLOC,2,"I")<br> I (ORTYP="C")!(ORTYP="M") S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

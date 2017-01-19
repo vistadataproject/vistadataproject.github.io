@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIVAUD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pointer to the DSIV ICB AUDIT (#19625) file.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains data to file in the following format: D DATA(n)=field^multi-id^value e.g. DATA(1)=\6.01^0^1\      DATA(2)=\6.02^0^2\      DATA(3)=\8^1^SYN1\ SYNONYM is fld 8, subfile 19625.08 (multiple)      DATA(4)=\8^2^SYN2\      DATA(5)=\9^1^FIRST LINE OF REMARKS\  REMARKS is field 9, wp field      DATA(6)=\9^2^SECOND LINE OF REMARKS\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}

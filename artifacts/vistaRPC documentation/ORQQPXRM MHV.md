@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>NAME<br>ANS{:/}
  Code | {::nomarkdown}  N ORDATA,ORES,X<br> S ORY(0)=0<br> I '$$PATCH^XPDUTL("YS*5.01*85") S ORY(0)=2 Q<br> I '$L(ANS) Q<br> S ORES("DFN")=DFN,ORES("CODE")=NAME<br> F X=1:1:$L(ANS) I $E(ANS,X)'="X" D<br> .;I $E(ANS,X)="T" S $E(ANS,X)=1<br> .;I $E(ANS,X)="F" S $E(ANS,X)=2<br> .S ORES(X)=X_U_$E(ANS,X)<br> D CHECKCR^YTQPXRM4(.ORDATA,.ORES)<br> I $G(ORDATA(2))="OK" S ORY(0)=1 Q<br> S ORY(1)=$P($G(ORDATA(2)),U,2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}

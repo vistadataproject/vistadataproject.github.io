@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | UPDATE^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | UPDATE A PROBLEM RECORD
- First comment | {::nomarkdown} Does essentially same job as EDSAVE above, however does not handle edits to comments<br/> or addition of multiple comments.<br/> Use initially just for status updates.<br/>{:/}
+ First comment | {::nomarkdown}<pre> Does essentially same job as EDSAVE above, however does not handle edits to comments<br/> or addition of multiple comments.<br/> Use initially just for status updates.<br/></pre>{:/}
  Input parameters | {::nomarkdown}UPDARRAY{:/}
  Code | {::nomarkdown}  N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br> S S=""<br> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br> . S @UPDARRAY(S)<br> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br> S ORRETURN(1)=ORRETURN(0) ; error text<br> S ORRETURN(0)=ORRETURN ; gmpdfn<br> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
