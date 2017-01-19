@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}SRCTYPE{:/}
  Code | {::nomarkdown}  S ORX=0<br> F I=1:1 S ORX=$O(^DIC(34,ORX)) Q:+ORX=0  D<br> . Q:($P(^DIC(34,ORX,0),U,2)'=SRCTYPE)<br> . I $D(^DIC(34,ORX,"I")),(^DIC(34,ORX,"I")<$$NOW^XLFDT) Q<br> . S Y(I)=ORX_U_$P(^DIC(34,ORX,0),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODRad.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

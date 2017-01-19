@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown};  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String{:/} | 
 | {::nomarkdown}SPEC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a comma delimited list of Specialty/SubSpecialtiesOnly Procedure/Events that are associated with one of these will bereturned in the list.If a Procedure/Event is not associated with any Specialty/Subspecialtiesit is considered valid for all, and will be returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

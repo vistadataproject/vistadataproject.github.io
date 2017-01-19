@@ -40,4 +40,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMPDFN<br>GMPROV<br>GMPVAMC<br>ADDARRAY<br>GMPSRCH{:/}
  Code | {::nomarkdown}  N DA,GMPFLD,GMPORIG,S<br> S GMPSRCH=$G(GMPSRCH)<br> S RETURN=0 ;<br> L +^AUPNPROB(0):10<br> Q:'$T  ; bail out if no lock<br> S S=""<br> F  S S=$O(ADDARRAY(S)) Q:S=""  D<br> . S @ADDARRAY(S)<br> D NEW^GMPLSAVE<br> S RETURN=DA<br> L -^AUPNPROB(0)<br> S RETURN=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas")
+[BA/fBALocalDiagnoses.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/fBALocalDiagnoses.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

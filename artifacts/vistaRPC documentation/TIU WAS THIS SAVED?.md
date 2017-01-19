@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUD12,TIUD13,TIUEBY,TIUAUT,TIUECS S TIUY=1<br> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD13=$G(^(13))<br> S TIUEBY=$P(TIUD13,U,2),TIUAUT=$P(TIUD12,U,2),TIUECS=$P(TIUD12,U,8)<br> I $D(^TIU(8925,"ASAVE",+DUZ,TIUDA)) D  Q<br> . S TIUY="0^You appear to have been disconnected..."<br> I DUZ'=TIUEBY,(TIUEBY'=TIUAUT),$D(^TIU(8925,"ASAVE",+TIUEBY,TIUDA)) D  Q<br> . S TIUY="0^The transcriber appears to have been disconnected..."<br> I DUZ'=TIUAUT,$D(^TIU(8925,"ASAVE",+TIUAUT,TIUDA)) D  Q<br> . S TIUY="0^The author appears to have been disconnected..."<br> I DUZ'=TIUECS,$D(^TIU(8925,"ASAVE",+TIUECS,TIUDA)) D  Q<br> . S TIUY="0^The expected cosigner appears to have been disconnected..."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

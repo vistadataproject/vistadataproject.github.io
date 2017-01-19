@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Return ap
  Code | {::nomarkdown}  N I,XU4<br> S RET(0)="" I '$$BROKER^XWBLIB Q<br> D GETLST^XPAR(.XU4,"SYS","XUS CCOW VAULT PARAM","Q")<br> F I=0,1 S RET(I)=$P($G(XU4(I+1)),"^",2,99){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Executable Only]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

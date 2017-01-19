@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLST{:/}
  Code | {::nomarkdown}  N OIREC,OIV,OIVN<br> F I=1:1 S ORPKG=$P("GMRC;LR;PSO;RA",";",I) Q:ORPKG=""  D<br> . S ORPKG(+$O(^DIC(9.4,"C",ORPKG,0)))=ORPKG  ; ^DIC(9.4) is package file<br> S GMRCPROS=+$O(^DIC(9.4,"C","GMRC",0))<br> D ORPKG1(.Y,.ORLST){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

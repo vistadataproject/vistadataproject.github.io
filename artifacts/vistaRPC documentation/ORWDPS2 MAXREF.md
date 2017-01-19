@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PAT<br>DRG<br>SUP<br>OI<br>OUT{:/}
  Code | {::nomarkdown}  N ORWX<br> S ORWX("PATIENT")=PAT<br> I $G(DRG) S ORWX("DRUG")=+DRG<br> I $G(SUP) S ORWX("DAYS SUPPLY")=SUP<br> I $G(OI)  S ORWX("ITEM")=+$P(^ORD(101.43,+OI,0),U,2)<br> I $G(OUT) S ORWX("DISCHARGE")=1<br> D MAX^PSOSIGDS(.ORWX)<br> S VAL=$G(ORWX("MAX")){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

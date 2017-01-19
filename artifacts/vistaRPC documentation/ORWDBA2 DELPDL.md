@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCIEN<br>ORDXA{:/}
  Code | {::nomarkdown}  N DXI,EM,FDA,IEN,RF<br> D GETS^DIQ(200,ORCIEN,"351*,","","RF","EM")<br> I $D(RF)=0 S Y=0 Q<br> S IEN="" F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br> .S DXI="" F  S DXI=$O(ORDXA(DXI)) Q:DXI=""  D<br> .. I RF(200.0351,IEN,.01)=ORDXA(DXI) D<br> ... D FDA^DILF(200.0351,IEN,.01,"","@","FDA","EM")<br> ... D FILE^DIE("","FDA","EM")<br> S Y=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

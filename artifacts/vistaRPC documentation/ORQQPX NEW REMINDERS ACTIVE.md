@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Return true if Interactive Reminders are active
  Code | {::nomarkdown}  S ORY=0<br> I $T(APPL^PXRMRPCA)'="",+$G(DUZ) D<br> . N SRV<br> . ;S SRV=$P($G(^VA(200,DUZ,5)),U)<br> . S SRV=$$GET1^DIQ(200,DUZ,29,"I")<br> . S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","PXRM GUI REMINDERS ACTIVE",1,"Q")<br> . I +ORY S ORY=1<br> . E  S ORY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

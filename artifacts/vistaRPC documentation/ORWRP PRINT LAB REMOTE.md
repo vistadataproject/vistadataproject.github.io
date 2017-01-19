@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>RPTID<br>ORHANDS{:/}
  Code | {::nomarkdown}  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="Remote Lab Report Print"<br> S ZTRTN="DEQUE^ORWRPL"<br> F I="ORDFN","RPTID","ORHANDS(" S ZTSAVE(I)=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rLabs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rLabs.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

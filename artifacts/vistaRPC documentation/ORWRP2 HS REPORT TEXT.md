@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCOMPS<br>ORDFN{:/}
  Code | {::nomarkdown}  Q:'$G(ORDFN)<br> N GMTSEGC,GMTSEG,ORGMTSEG,ORSEGC,ORSEGI<br> K ^TMP("ORDATA",$J)<br> D REPORT^GMTSADH5(.ORGMTSEG,.ORSEGC,.ORSEGI,.ORCOMPS,.ORDFN)<br> Q:'$O(ORGMTSEG(0))<br> D START^ORWRP(80,"REPORT1^ORWRP2(.ORGMTSEG,.ORSEGC,.ORSEGI,ORDFN)")<br> S OROOT=$NA(^TMP("ORDATA",$J,1)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

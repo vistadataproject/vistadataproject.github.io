@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORID{:/}
  Code | {::nomarkdown}  S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0<br> D DT^GMRCSLM2(ORID){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>Definition file (#8925.1) IEN<br/> Input  -- None<br/> Output -- Y        TIU Document Definition file (#8925.1) IEN</pre>{:/}
  Code | {::nomarkdown}  S Y=$$CLASS{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMVCAT{:/}
  Code | {::nomarkdown}  I GMVCAT="" S RESULT=-1 Q<br> S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[GMV_VitalsViewEnter.dll]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

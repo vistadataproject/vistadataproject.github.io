@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN{:/}
  Code | {::nomarkdown}  D TFL^VAFCTFU1(.ORY,ORDFN)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

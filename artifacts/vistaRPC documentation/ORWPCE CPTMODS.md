@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCPTCOD<br>ORDATE{:/}
  Code | {::nomarkdown}  N ORM,ORIDX,ORI,MODNAME<br> S:'+$G(ORDATE) ORDATE=DT<br> I +($$CODM^ICPTCOD(ORCPTCOD,$NA(ORM),0,ORDATE)),+$D(ORM) D<br> . S ORIDX="",ORI=0<br> . F  S ORIDX=$O(ORM(ORIDX)) Q:(ORIDX="")  D<br> . . S ORI=ORI+1,MODNAME=$P(ORM(ORIDX),U,1)<br> . . S LST(MODNAME_ORI)=$P(ORM(ORIDX),U,2)_U_MODNAME_U_ORIDX{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

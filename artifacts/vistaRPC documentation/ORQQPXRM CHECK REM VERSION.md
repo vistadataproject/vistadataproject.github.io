@@ -28,4 +28,9 @@ title: VISTA RPC documentation
  Method | REMVER^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
  Code | {::nomarkdown}  S ORLIST=$$VERSION^XPDUTL("PXRM"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

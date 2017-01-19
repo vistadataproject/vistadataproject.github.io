@@ -37,4 +37,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  N AI,CI,CNT,DXS,TF,TFCI<br> S U="^",(CNT,TF)=""<br> F  S CNT=$O(ORIEN(CNT)) Q:CNT=""  D<br> . S TF=$$GTF(ORIEN(CNT))<br> . S DXS=$$GDCD(ORIEN(CNT))<br> . I TF="NNNNNNNN"&(DXS="") Q<br> . S TFCI(CNT)=ORIEN(CNT)_U_TF_$S(DXS="":"",1:U_DXS)<br> M Y=TFCI{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas")
+[BA/UBAGlobals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBAGlobals.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

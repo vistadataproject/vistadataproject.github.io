@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORCIEN<br>ORPTIEN{:/}
  Code | {::nomarkdown}  N CKDATE,DXC,DXD,DXEM,DXI,DXIEN,DXRF,ICD9,IEN,OBJORD,ORDATE,ORDG,OREM<br> N ORIEN,ORRF,RCODI,SUBFILE<br> S OBJORD=ORPTIEN_";DPT("<br> S (DXIEN,ORDATE,ORDG,ORIEN,RCODI)="",CKDATE=$$F24HA<br> F  S RCODI=$O(^OR(100,"ACT",OBJORD,RCODI)) S ORDATE=9999999-RCODI Q:ORDATE<CKDATE!(RCODI="")  D<br> . F  S ORDG=$O(^OR(100,"ACT",OBJORD,RCODI,ORDG)) Q:ORDG=""  D<br> .. S ORIEN=$QS($Q(^OR(100,"ACT",OBJORD,RCODI,ORDG)),6)<br> .. K ORRF,OREM<br> .. D GETS^DIQ(100,ORIEN,"1;5.1*","I","ORRF","OREM")<br> .. S IEN=$QS($Q(ORRF(100)),2)<br> .. Q:ORRF(100,IEN,1,"I")'=ORCIEN<br> .. Q:$D(ORRF(100.051))=0<br> .. S (DXC,DXD,DXI,DXIEN,ICD9,IEN)=""<br> .. F  S IEN=$O(ORRF(100.051,IEN)) Q:IEN=""  D<br> ... Q:ORRF(100.051,IEN,.01,"I")=""<br> ... S DXIEN=ORRF(100.051,IEN,.01,"I")<br> ... S ICD9=$$GET1^DIQ(80,DXIEN,.01,"")<br> ... S DXC=$$SETDXC(ICD9)<br> ... S DXD=$$SETDXD($P($$ICDDATA^ICDXCODE("DIAGNOSIS",ICD9,ORDATE),U,4))<br> ... S DXI=$$SETDXI($$STATCHK^ICDXCODE("DIAGNOSIS",ICD9,ORDATE))<br> ... S Y(DXC)=ICD9_U_DXD_U_DXI{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

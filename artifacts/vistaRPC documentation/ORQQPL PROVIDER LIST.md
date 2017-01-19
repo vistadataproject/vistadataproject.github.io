@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FLAG<br>N<br>FROM<br>PART{:/}
  Code | {::nomarkdown}  N LV,NS,RV,IEN<br> S RV=$NAME(LV("DILIST","ID"))<br> IF +$G(N)=0 S N=50<br> S FLAG=$G(FLAG),N=$G(N),FROM=$G(FROM),PART=$G(PART)<br> D LIST^DIC(200,"",".01;1",FLAG,N,FROM,PART,"","","","LV")<br> S NS=""<br> F  S NS=$O(LV("DILIST",1,NS)) Q:NS=""  D<br> . S IEN=""<br> . S IEN=$O(^VA(200,"B",@RV@(NS,.01),IEN)) ; compliments of PROV^ORQPTQ<br> . S LST(NS)=IEN_U_@RV@(NS,.01)  ; initials_U_@RV@(NS,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

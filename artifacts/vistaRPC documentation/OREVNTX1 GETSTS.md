@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDID{:/}
  Code | {::nomarkdown}  Q:'+ORDID<br> Q:'$D(^OR(100,+ORDID,0))<br> S ORY=$P($G(^OR(100,+ORDID,3)),U,3){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

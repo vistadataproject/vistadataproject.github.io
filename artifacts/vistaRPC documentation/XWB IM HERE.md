@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>Entry point for XWB IM HERE remote procedure</pre>{:/}
  Code | {::nomarkdown}  S RESULT=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Executable Only]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

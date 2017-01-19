@@ -30,4 +30,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTIFN<br>ORIFNS{:/}
  Code | {::nomarkdown}  N ORIFN,ORDA,ORI,ORPSO,CPX<br> S ORI=0,ORPSO=+$O(^DIC(9.4,"C","PSO",0))<br> F  S ORI=$O(ORIFNS(ORI)) Q:'ORI  D<br> .S ORIFN=+ORIFNS(ORI),ORDA=$P(ORIFNS(ORI),";",2)<br> .I $D(^OR(100,ORIFN,0)),($P(^OR(100,ORIFN,0),U,14)=ORPSO) D<br> ..N PRIO S PRIO=0<br> ..I $D(^OR(100,ORIFN,4.5,"ID","URGENCY")) S PRIO=$O(^("URGENCY",0))<br> ..S PRIO=$G(^OR(100,ORIFN,4.5,+PRIO,1))<br> ..Q:PRIO=99<br> ..S CPX=$$SC(ORIFN)<br> ..I $L(CPX)>1 S TEST(ORIFN)=ORIFN_";"_ORDA_CPX<br> K PTIFN,ORIFN,ORDA,ORI,CPX{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

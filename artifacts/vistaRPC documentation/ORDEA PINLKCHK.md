@@ -30,4 +30,10 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>ORY=1 if there is an active lock and ORY=0 if no active lock</pre>{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^XTMP("OR DEA PIN LOCK",DUZ))<br> N ORDIFF<br> S ORDIFF=$$FMDIFF^XLFDT($$NOW^XLFDT,$G(^XTMP("OR DEA PIN LOCK",DUZ)),2)<br> I ORDIFF<900 S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}
+
+### CPRS
+
+[fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas")
+[Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

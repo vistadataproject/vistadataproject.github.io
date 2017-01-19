@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DIR<br>FROM{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S CNT=44<br> I DIR=0 D  ; Forward direction<br> . F I=1:1:CNT S FROM=$O(^SC("B",FROM)) Q:FROM=""  D<br> . . S IEN=$O(^SC("B",FROM,0))<br> . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM<br> . I $G(Y(CNT))="" S Y(I)=""<br> I DIR=1 D  ; Reverse direction<br> . F I=1:1:CNT S FROM=$O(^SC("B",FROM),-1) Q:FROM=""  D<br> . . S IEN=$O(^SC("B",FROM,0))<br> . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

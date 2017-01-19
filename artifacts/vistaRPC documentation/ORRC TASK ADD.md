@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a string of ^-delimited attributes of a new task, in the form  Subject^Created^ByWhom^Patient^Priority^Due^Completed^ByWhom^Itemswhere Subject   = Text subject of task      Created   = date task was created, as YYYYMMDDHHMMSS      ByWhom    = user who created task, as pointer to #200      Patient   = patient that task is for, as pointer to #2      Priority  = H, M, or L      Due       = date task is due to be completed, as YYYMMDD[HHMM]      Completed = date task was completed as, YYYYMMDDHHMM      ByWhom    = user who completed task, as pointer to #200      Items     = linked items as ID,ID,...,ID where ID is XXX:### as                  DOC:### = documents in #8925                  ORR:### = order results in #100{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

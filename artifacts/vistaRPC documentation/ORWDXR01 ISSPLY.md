@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DLGID<br>QODLG{:/}
  Code | {::nomarkdown}  S ORY=""<br> Q:'$D(^ORD(101.41,DLGID,0))<br> I 'QODLG,($P(^ORD(101.41,DLGID,0),U)="PSO SUPPLY") S ORY=1<br> I QODLG D<br> . N SPLYDG S SPLYDG=$O(^ORD(100.98,"B","SPLY",0))<br> . I $P(^ORD(101.41,DLGID,0),U,5)=SPLYDG S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

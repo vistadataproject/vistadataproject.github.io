@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUI S (SUCCESS,TIUI)=0<br> F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D<br> . N DA<br> . S DA=+TIUDA(TIUI)<br> . I 'DA Q<br> . L -^TIU(8927,DA,0):1 ; Unlock before deleting<br> . ; Quit if the Template is NOT an ORPHAN<br> . I +$O(^TIU(8927,"AD",DA,0)) Q<br> . ; Otherwise, call FileMan to DELETE the record<br> . D ZAP(DA) S SUCCESS=SUCCESS+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>NOTEIEN{:/}
  Code | {::nomarkdown}  N VSTR,NOTEDATE<br> D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)<br> Q:$P(VSTR,";",2)=""<br> D FASTVIT(.ORY,DFN,$P(VSTR,";",2)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Vitals/rVitals.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

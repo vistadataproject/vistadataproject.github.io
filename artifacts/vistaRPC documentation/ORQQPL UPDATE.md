@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}UPDARRAY{:/}
  Code | {::nomarkdown}  N S,GMPL,GMPORIG,ORARRAY ; last 2 vars created in nested call<br> S S=""<br> F  S S=$O(UPDARRAY(S)) Q:S=""  D<br> . S @UPDARRAY(S)<br> D UPDATE^GMPLUTL(.ORARRAY,.ORRETURN)<br> S ORRETURN(1)=ORRETURN(0) ; error text<br> S ORRETURN(0)=ORRETURN ; gmpdfn<br> I ORRETURN(0)=""  S ORRETURN=1 ; insurance ? need{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ROOT<br>USER{:/}
  Code | {::nomarkdown}  N CLASS,TIUERR<br> S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)<br> I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"<br> E  D<br> .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)<br> .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

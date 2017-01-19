@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Returns TRUE if the current user can edit dialog fields
  Code | {::nomarkdown}  S TIUY=0<br> I '+DUZ Q<br> N TIUCLASS,TIUERR,IDX,SRV<br> S SRV=$P($G(^VA(200,DUZ,5)),U)<br> D GETLST^XPAR(.TIUCLASS,DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","TIU FIELD EDITOR CLASSES","Q",.TIUERR)<br> I TIUERR>0 Q<br> S IDX=0<br> F  S IDX=$O(TIUCLASS(IDX)) Q:'IDX  D  Q:+TIUY<br> .I $$ISA^USRLM(DUZ,$P(TIUCLASS(IDX),U,2),.TIUERR) S TIUY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

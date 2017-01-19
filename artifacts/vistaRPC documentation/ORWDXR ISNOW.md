@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID{:/}
  Code | {::nomarkdown}  N SCH<br> Q:'$D(^OR(100,+ORID,0))<br> S SCH=""<br> S SCH=$O(^OR(100,+ORID,4.5,"ID","SCHEDULE",0))<br> S:SCH SCH=$G(^OR(100,+ORID,4.5,SCH,1))<br> S:SCH="NOW" ORY=1<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

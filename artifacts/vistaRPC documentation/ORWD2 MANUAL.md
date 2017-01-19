@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}LOC<br>ORDERS{:/}
  Code | {::nomarkdown}  N DOCHT,DOLBL,DOREQ,DOWRK,ORDERID,I<br> N PRMTCHT,PRMTLBL,PRMTREQ,PRMTWRK  ; (so undefined for DEFDEV call)<br> S (DOCHT,DOLBL,DOREQ,DOWRK,I,J)=0,LOC=+LOC_";SC("<br> N BBPKG S BBPKG=+$O(^DIC(9.4,"B","VBECS",0))<br> D INSRTBB(.ORDERS) ; insert any blood bank child lab orders into ORDERS array<br> F  S I=$O(ORDERS(I)) Q:'I  D  Q:DOCHT&DOLBL&DOREQ&DOWRK<br> . S ORDERID=$P(ORDERS(I),U)<br> . I $$HASFMTC,$$NOTBB(+ORDERS(I)) S DOCHT=1<br> . I $$HASFMTL S DOLBL=1<br> . I $$HASFMTR S DOREQ=1<br> . I $$HASFMTW,$$NOTBB(+ORDERS(I)) S DOWRK=1<br> S REC=$$DEFDEV{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

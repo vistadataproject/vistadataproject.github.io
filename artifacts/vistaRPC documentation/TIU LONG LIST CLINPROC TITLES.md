@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N TIUCLASS<br> I '$D(FROM) G LNGCPQ<br> S TIUCLASS=+$$CLASS<br> I +TIUCLASS'>0 G LNGCPQ<br> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -42,4 +42,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCO<br>GMRCRSLT<br>GMRCAD<br>GMRCORNP<br>ORALTO{:/}
  Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> N ORDUZ,X,I<br> I $G(ORALTO)'="" D<br> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br> D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

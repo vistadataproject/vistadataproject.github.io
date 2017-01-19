@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FLDS{:/}
  Code | {::nomarkdown}  N I,IEN<br> K TIUXML<br> D ADD(.TIUXML,"<TEMPLATE_FIELDS>",0)<br> S I=0<br> F  S I=$O(FLDS(I)) Q:I'>0  D<br> . S IEN=$O(^TIU(8927.1,"B",FLDS(I),0))<br> . I +IEN D ADDXML(.TIUXML,IEN)<br> D ADD(.TIUXML,"</TEMPLATE_FIELDS>",0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Executable Only]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN<br>ACTION{:/}
  Code | {::nomarkdown}  S VAL=$$VALID^ORCACT0(ORIFN,ACTION,.ERR)<br> I VAL=0 S VAL=VAL_U_ERR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

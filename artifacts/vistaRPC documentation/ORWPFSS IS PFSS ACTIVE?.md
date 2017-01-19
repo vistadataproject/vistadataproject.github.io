@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> RPC called by Delphi to determine if passing visit string<br/><br/> 1 = PFSS active - pass visit string with order<br/> 0 = PFSS not active - do not pass visit string<br/><br/>$$SWSTAT^IBBAPI() WILL BE RELEASED IN IB*2*286, as per E.Zeigler<br/><br/>Check for IB patch</pre>{:/}
  Code | {::nomarkdown}  S ORY=+$$PATCH^XPDUTL("IB*2.0*286") Q:ORY=0<br> S ORY=+$$SWSTAT^IBBAPI()  ;IA #4663{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

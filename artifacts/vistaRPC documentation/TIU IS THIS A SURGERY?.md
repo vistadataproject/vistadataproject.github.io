@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TITLE{:/}
  Code | {::nomarkdown}  N TIUCLASS,TIUI S TIUY=0<br> F TIUI="SURGICAL REPORTS","PROCEDURE REPORTS (NON-O.R.)" D  Q:TIUY>0<br> . S TIUCLASS=+$$CLASS(TIUI)<br> . I +TIUCLASS'>0 Q<br> . S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

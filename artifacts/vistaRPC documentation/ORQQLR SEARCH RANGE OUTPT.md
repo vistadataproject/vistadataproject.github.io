@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | return lab results search date range for an outpatient
  Code | {::nomarkdown}  N DIFF,SDT,EDT,ORSRV<br> S ORSRV=$G(^VA(200,DUZ,5)) I +ORSRV>0 S ORSRV=$P(ORSRV,U)<br> S DIFF=$$GET^XPAR("USR^SRV.`"_+$G(ORSRV)_"^DIV^SYS^PKG","ORQQLR SEARCH RANGE OUTPT",1,"E")<br> S:+$G(DIFF)<1 DIFF=14  ;if no default defined use 14 days<br> S ORY=DIFF{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

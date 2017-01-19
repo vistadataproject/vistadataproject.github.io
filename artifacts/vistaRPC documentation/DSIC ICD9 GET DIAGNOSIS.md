@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the code was active as of that date. This parameter is not used at this time{:/} | 
 | {::nomarkdown}SCR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a single or double character code used to screen out diagnoses.  SCR = \A\ - default value - return only active codes        \U\ - return codes which are acceptable as a principal diagnosis        \N\ - do not screen out any codes       \AU\ - return codes which are both active and acceptable as a              principal diagnosis{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

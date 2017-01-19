@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> get start, stop defaults</pre>{:/}
  Code | {::nomarkdown}  S INFO=$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE START",1,"I")_U<br> S INFO=INFO_$$GET^XPAR("DIV^SYS^PKG","ORQQCSDR CS RANGE STOP",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

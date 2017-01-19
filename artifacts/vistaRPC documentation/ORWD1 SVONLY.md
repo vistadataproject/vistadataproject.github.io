@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}HLOC<br>PRTLST{:/}
  Code | {::nomarkdown}  Q:$G(A7RNDBI)  ; per NDBI, to suppress prints during integration<br> N TMPLST,I,J<br> S HLOC=+HLOC_";SC(",OK=1<br> S I="",J=0 F  S I=$O(PRTLST(I)) Q:I'>0  D<br> . I ($L(PRTLST(I),U)>1),'$P(PRTLST(I),U,5) Q<br> . S J=J+1,TMPLST(J)=$P(PRTLST(I),U)<br> I $D(TMPLST)>1 D GUI^ORPR02(.TMPLST,"","S",HLOC)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

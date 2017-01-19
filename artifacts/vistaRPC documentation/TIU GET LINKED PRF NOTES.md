@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTDFN<br>TIUTTL<br>REVERSE{:/}
  Code | {::nomarkdown}  N TIUDG,ACTID,TIUIDATE,TIUEDATE,TIUIEN,TIUACT,STATUS<br> N TIUAUTH,DTARRAY,HASERR,ARRAYNM<br> K TIUY ; Initialize array in case caller hasn't done so.<br> S (TIUY,ACTID)=0<br> S ARRAYNM="^TMP(""TIUPRFH"",$J)"<br> S TIUDG=$$GETHTIU^DGPFAPI1(PTDFN,TIUTTL,ARRAYNM)<br> G:'TIUDG GETNOTEX<br> S HASERR=$$HASERR^TIUPRFL(ARRAYNM)<br> F  S ACTID=$O(@ARRAYNM@("HISTORY",ACTID)) Q:'ACTID  D<br> . I ACTID=+HASERR Q  ;Entered in Error<br> . I HASERR>0,$$ISERR^TIUPRFL(ARRAYNM,ACTID,$P(HASERR,U,2)) Q  ;erroneous<br> . S TIUIEN=+@ARRAYNM@("HISTORY",ACTID,"TIUIEN")<br> . Q:TIUIEN'>0  ;TMP node may be just ^<br> . ; -- Include only complete or amended or uncosigned notes:<br> . S STATUS=$P($G(^TIU(8925,TIUIEN,0)),U,5) I '((STATUS=6)!(STATUS=7)!(STATUS=8)) Q<br> . S TIUACT=$P(@ARRAYNM@("HISTORY",ACTID,"ACTION"),U,2)<br> . N TIUFLDS,TIUERR D GETS^DIQ(8925,TIUIEN_",","1202;1301","IE","TIUFLDS","TIUERR")<br> . S TIUIDATE=TIUFLDS(8925,TIUIEN_",",1301,"I")<br> . ; -- Increment date if there are multiple notes w/ same exact date:<br> . F  S:$D(DTARRAY(TIUIDATE)) TIUIDATE=TIUIDATE+.0000001 I '$D(DTARRAY(TIUIDATE)) S DTARRAY(TIUIDATE)="" Q<br> . I $G(REVERSE) S TIUIDATE=9999999-TIUIDATE<br> . S TIUEDATE=$E(TIUFLDS(8925,TIUIEN_",",1301,"E"),1,18)<br> . I TIUEDATE="" S TIUEDATE="No Ref Date"<br> . S TIUAUTH=TIUFLDS(8925,TIUIEN_",",1202,"E")<br> . I TIUAUTH="" S TIUAUTH="No Author"<br> . S TIUY=TIUY+1<br> . S TIUY(TIUIDATE)=TIUIEN_U_TIUACT_U_TIUEDATE_U_TIUAUTH{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[fPatientFlagMulti.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

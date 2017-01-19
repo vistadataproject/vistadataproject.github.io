@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S LST(1)="Current Diet:  "_$$DIET^ORCDFH(DFN)<br> N FUTLST D FUT(.FUTLST,DFN) I $D(FUTLST)>1 D<br> . S LST(2)="Future Diet Orders:",ILST=2<br> . S I=0 F  S I=$O(FUTLST(I)) Q:'I  D<br> . . S X=$$FMTE^XLFDT(I,2)_"  "_$P(FUTLST(I),U,2)<br> . . S LST(ILST)=$S(ILST=2:"Future Diet Orders:  "_X,1:"   "_X)<br> . . S ILST=ILST+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

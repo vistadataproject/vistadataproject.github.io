@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}COL{:/}
  Code | {::nomarkdown}  N NAM,VAL,ORERR<br> S OK="",NAM=$P(COL,"^"),VAL=$P(COL,"^",2)<br> D EN^XPAR(DUZ_";VA(200,","ORWCH COLUMNS REPORTS",NAM,VAL,.ORERR)<br> I ORERR S OK=COL_":"_ORERR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

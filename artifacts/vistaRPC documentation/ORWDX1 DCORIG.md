@@ -35,4 +35,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  S $P(^OR(100,+ORIEN,6),U,9)=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[fActivateDeactivate.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fActivateDeactivate.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

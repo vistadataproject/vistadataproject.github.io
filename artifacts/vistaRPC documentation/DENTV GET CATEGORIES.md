@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is optional.  If passed it should be either 1, 2, or 12If it is not passed, then this call will default to 12 For file 228,  If TYP=1, then only return the subcategory-1 names (field 5)  If TYP=2, then only return the subcategory-2 names (field 6)  If TYP=12, then return both subcategories' names{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X<br>CLVER{:/}
  Code | {::nomarkdown}  S ORWCLVER=$G(CLVER)  ; leave in partition for session<br> N BADVAL,ORLST<br> D FIND^DIC(19,"",1,"X",X,1,,,,"ORLST")<br> I 'ORLST("DILIST",0) S VAL="0.0.0.0" Q<br> S VAL=ORLST("DILIST","ID",1,1)<br> S VAL=$P(VAL,"version ",2)<br> S BADVAL=0<br> I $P(VAL,".",1)="" S BADVAL=1<br> I $P(VAL,".",2)="" S BADVAL=1<br> I $P(VAL,".",3)="" S BADVAL=1<br> I $P(VAL,".",4)="" S BADVAL=1<br> I ((BADVAL)!('VAL)!(VAL="")) S VAL="0.0.0.0"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rMisc.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORTIUDA{:/}
  Code | {::nomarkdown}  Q:'$$PATCH^XPDUTL("SR*3.0*100")!(+$G(ORTIUDA)=0)<br> N ORCASE<br> D GET1405^TIUSRVR(.ORCASE,ORTIUDA)<br> I +ORCASE'>0 S ORY=ORCASE Q<br> D GETONE(.ORY,+ORCASE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

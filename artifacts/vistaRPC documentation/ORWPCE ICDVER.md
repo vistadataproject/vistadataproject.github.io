@@ -36,4 +36,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDT{:/}
  Code | {::nomarkdown}  S ORDT=+$G(ORDT) S:'ORDT ORDT=DT<br> S RESULT="ICD^ICD-9-CM"<br> G:'$L($T(IMPDATE^LEXU)) ICDVERX<br> I +$$IMPDATE^LEXU("10D")'>ORDT S RESULT="10D^ICD-10-CM"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+[Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

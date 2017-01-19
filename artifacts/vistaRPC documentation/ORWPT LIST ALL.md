@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N I,IEN,CNT,FROMIEN,ORIDNAME S CNT=44,I=0,FROMIEN=0<br> I $P(FROM,U,2)'="" S FROMIEN=$P(FROM,U,1),FROM=$O(^DPT("B",$P(FROM,U,2)),-DIR)<br> F  S FROM=$O(^DPT("B",FROM),DIR) Q:FROM=""  D  Q:I=CNT<br> . S IEN=FROMIEN,FROMIEN=0 F  S IEN=$O(^DPT("B",FROM,IEN)) Q:'IEN  D  Q:I=CNT<br> . . S ORIDNAME=""<br> . . S ORIDNAME=$G(^DPT(IEN,0)) ; Get zero node name.<br> . . ; S X1=$G(^DPT(IEN,.1))_" "_$G(^DPT(IEN,.101))<br> . . S I=I+1 S Y(I)=IEN_U_FROM_U_U_U_U_$P(ORIDNAME,U) ;_"^"_X ; _"^"_X1  ;"   ("_X_")"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

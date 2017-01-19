@@ -36,4 +36,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUDAD,TIUTYP,TIU1405<br> I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q<br> S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)<br> I $P(^TIU(8925,TIUDA,0),U,6)'="" D<br> . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)<br> . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)<br> I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q<br> S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)<br> I '+TIU1405 S TIUY="-1^No Request found for this document" Q<br> S TIUY=TIU1405{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas")
+[rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

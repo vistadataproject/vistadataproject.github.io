@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMPIFN<br>GMPROV<br>GMPVAMC<br>UT<br>EDARRAY<br>GMPSRCH{:/}
  Code | {::nomarkdown}  N GMPFLD,GMPORIG,S,GMPLUSER<br> S GMPSRCH=$G(GMPSRCH)<br> S RETURN=1 ; initialize for success<br> I UT S GMPLUSER=1<br> S S=""<br> F  S S=$O(EDARRAY(S)) Q:S=""  D<br> . S @EDARRAY(S)<br> I $D(GMPFLD(10,"NEW"))>9 D  I 'RETURN Q  ; Bail Out if no lock<br> . L +^AUPNPROB(GMPIFN,11):10  ; given bogus nature of this lock, should be able to get<br> . I '$T S RETURN=0<br> D EN^GMPLSAVE  ; save the data<br> K GMPFLD,GMPORIG<br> L -^AUPNPROB(GMPIFN,11)  ; free this instance of lock (in case it was set)<br> S RETURN=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rProbs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

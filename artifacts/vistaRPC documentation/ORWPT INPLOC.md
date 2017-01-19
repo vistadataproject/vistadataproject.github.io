@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  N X<br> S X=$G(^DPT(DFN,.102)),REC=0<br> I X S X=$P($G(^DGPM(X,0)),U,6)<br> I X S REC=+$G(^DIC(42,X,44))<br> I X S $P(REC,U,2)=$P($G(^DIC(42,X,0)),U,1)<br> I X S X=$P($G(^DIC(42,X,0)),U,3)<br> S $P(REC,U,3)=X{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

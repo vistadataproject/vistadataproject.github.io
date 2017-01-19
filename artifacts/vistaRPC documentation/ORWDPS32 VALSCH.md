@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X<br>PSTYPE{:/}
  Code | {::nomarkdown}  I '$L($T(EN^PSSGSGUI)) S OK=-1 Q<br> I $E($T(EN^PSSGSGUI),1,4)="EN(X" D<br> . N ORX S ORX=$G(X) D EN^PSSGSGUI(.ORX,$G(PSTYPE,"I"))<br> . K X S:$D(ORX) X=ORX<br> E  D<br> . D EN^PSSGSGUI<br> S OK=$S($D(X):1,1:0)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

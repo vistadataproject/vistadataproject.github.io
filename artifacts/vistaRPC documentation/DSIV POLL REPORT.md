@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the count (#) of records to return for each call to the rpc.{:/} | 
 | {::nomarkdown}MORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains a flag (MORE=1) when there were more records than parameter 2 (CNT) to supress the header for the subsequent calls to get data.The first call to the rpc should NOT include the MORE=1 parameter.  Send MORE=9 to kill the report data in ^XTMP global if the user no longer wants to get it.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

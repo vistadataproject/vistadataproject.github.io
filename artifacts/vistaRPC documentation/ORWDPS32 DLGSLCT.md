@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PSTYPE<br>DFN<br>LOCIEN{:/}
  Code | {::nomarkdown}  N ILST S ILST=0<br> I PSTYPE="F" D  Q                       ; IV Fluids<br> . S LST($$NXT)="~ShortList"  D SHORT<br> . S LST($$NXT)="~Priorities" D PRIOR<br> . ;S LST($$NXT)="~Schedules"  D SCHED(LOCIEN)<br> . S LST($$NXT)="~Route" D IVROUTE<br> S LST($$NXT)="~ShortList"  D SHORT      ; Unit Dose & Outpt<br> S LST($$NXT)="~Priorities" D PRIOR<br> I PSTYPE="O" D                          ; Outpt<br> . S LST($$NXT)="~Pickup"   D PICKUP<br> . S LST($$NXT)="~SCStatus" D SCLIST{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

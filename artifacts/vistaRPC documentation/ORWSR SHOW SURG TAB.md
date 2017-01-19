@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | is Surgery ES patch installed?
  Code | {::nomarkdown}  S ORY=$$PATCH^XPDUTL("SR*3.0*100")<br> Q:+ORY=0<br> S ORY=$$GET^XPAR("ALL","ORWOR SHOW SURGERY TAB",1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

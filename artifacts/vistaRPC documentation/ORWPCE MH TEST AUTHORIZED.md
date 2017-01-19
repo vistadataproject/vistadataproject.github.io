@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TEST<br>USER{:/}
  Code | {::nomarkdown}  N ORYS,ORANS<br> I $T(PRIVL^YTAPI5)="" S ORY=1 Q<br> S ORY=0<br> S ORYS("CODE")=TEST<br> S ORYS("STAFF")=USER<br> D PRIVL^YTAPI5(.ORANS,.ORYS)<br> I $G(ORANS(1))="[DATA]" S ORY=+$P($G(ORANS(2)),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

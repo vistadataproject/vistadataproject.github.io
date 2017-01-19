@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>DGOPT<br>ACTION{:/}
  Code | {::nomarkdown}  I $G(DFN)="" S RESULT=0 Q<br> I $G(DUZ)="" S RESULT=0 Q<br> S DGOPT=$G(DGOPT)<br> I $G(ACTION)="" S ACTION=3<br> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br> S RESULT=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

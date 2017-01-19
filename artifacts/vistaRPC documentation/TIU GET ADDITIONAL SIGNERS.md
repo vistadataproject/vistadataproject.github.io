@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUI,DA,DR,DIC,DIQ,TIUXTRA,TIUD12,TIUAU,TIUEC S (DA,TIUI)=0<br> S DIC="^TIU(8925.7,",DIQ="TIUXTRA"<br> F  S DA=$O(^TIU(8925.7,"B",TIUDA,DA)) Q:+DA'>0  D<br> . N TIUX,TIUSGNR<br> . S DR=".03;.04",DIQ(0)="IE" D EN^DIQ1 Q:+$D(TIUXTRA)'>9<br> . I +$G(TIUXTRA(8925.7,DA,.04,"I")) Q<br> . S TIUI=+$G(TIUI)+1<br> . S TIUY(TIUI)=$G(TIUXTRA(8925.7,DA,.03,"I"))_U_$G(TIUXTRA(8925.7,DA,.03,"E"))<br> S TIUD12=$G(^TIU(8925,TIUDA,12))<br> S TIUAU=$P(TIUD12,U,4),TIUEC=$P(TIUD12,U,8)<br> S TIUI=+$G(TIUI)+1,TIUY(TIUI)=TIUAU_U_$$PERSNAME^TIULC1(TIUAU)_U_"AUTHOR"<br> I +TIUEC'>0 Q<br> I '$$FIND1^DIC(200,"","","`"_+TIUEC) D CLEAN^DILF Q<br> S TIUI=+$G(TIUI)+1,TIUY(TIUI)=TIUEC_U_$$PERSNAME^TIULC1(TIUEC)_U_"EXPECTED COSIGNER"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

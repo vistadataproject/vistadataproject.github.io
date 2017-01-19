@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}WVIEN{:/}
  Code | {::nomarkdown}  I '$G(WVIEN) S RESULT(0)="-1^Purpose IEN not greater than 0" Q<br> I '$D(^WV(790.404,WVIEN,0)) D  Q<br> .S RESULT(0)="-1^No such purpose of notification"<br> .Q<br> I '$O(^WV(790.404,WVIEN,1,0)) D  Q<br> .S RESULT(0)="-1^No letter defined for this purpose"<br> .Q<br> N WVCNT,WVLOOP<br> S RESULT(0)="",(WVCNT,WVLOOP)=0<br> F  S WVLOOP=$O(^WV(790.404,WVIEN,1,WVLOOP)) Q:'WVLOOP  D<br> .S WVCNT=WVCNT+1<br> .S RESULT(WVCNT)=$G(^WV(790.404,WVIEN,1,WVLOOP,0))<br> .Q{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[uReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uReminders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

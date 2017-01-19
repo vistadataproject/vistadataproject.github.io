@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ROI{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INPUT PARAMETER   ROI = REQUEST IEN{:/} | 
 | {::nomarkdown}DTLS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}61{:/} | {::nomarkdown}true{:/} | {::nomarkdown} INPUT PARAMETER    DTLS = LAB LIST DETAILS - AN ARRAY OF LAB LIST TITLES       DTLS FORMAT:  #^LAB_TITLE{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

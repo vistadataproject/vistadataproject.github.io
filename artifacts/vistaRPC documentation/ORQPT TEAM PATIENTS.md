@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TEAM<br>TMPFLAG{:/}
  Code | {::nomarkdown}  N DOTMP,NEWTMP<br> S DOTMP=0<br> I $G(TMPFLAG) D             ; Was value passed?<br> .I TMPFLAG S DOTMP=1        ; Is value TRUE?<br> I +$G(TEAM)<1 D<br> .I DOTMP S NEWTMP=ORY_1_")",@NEWTMP="^No team identified" Q<br> .I 'DOTMP S ORY(1)="^No team identified" Q<br> N ORI,ORPT,I<br> S I=0<br> S ORI=0 F  S ORI=$O(^OR(100.21,+TEAM,10,ORI)) Q:ORI<1  D<br> .S ORPT=^OR(100.21,+TEAM,10,ORI,0)<br> .I DOTMP D<br> ..S I=I+1,NEWTMP=ORY_+I_")"<br> ..S @NEWTMP=+ORPT_U_$P(^DPT(+ORPT,0),U)<br> .I 'DOTMP S I=I+1,ORY(I)=+ORPT_U_$P(^DPT(+ORPT,0),U)<br> I DOTMP S:I<1 NEWTMP=ORY_1_")",@NEWTMP="^No patients found."<br> I 'DOTMP S:I<1 ORY(1)="^No patients found."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

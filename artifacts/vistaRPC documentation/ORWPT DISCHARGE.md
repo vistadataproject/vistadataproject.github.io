@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ADMITDT{:/}
  Code | {::nomarkdown}  N VAIP<br> I +$G(ADMITDT)=0 S Y=DT Q<br> S VAIP("D")=ADMITDT D 52^VADPT<br> I +VAIP(17)=0 S Y=DT Q<br> S Y=+VAIP(17,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}CRC{:/}
  Code | {::nomarkdown}  N ROOT S ROOT="ORWDQ "_CRC,VAL=""<br> I '$D(^ORD(101.41,"B",ROOT)) Q<br> S DLG=$O(^ORD(101.41,"B",ROOT,0))<br> I '$L(VAL) S VAL=$P($G(^ORD(101.41,DLG,0)),U,2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

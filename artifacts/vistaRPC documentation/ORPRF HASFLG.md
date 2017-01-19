@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PTDFN{:/}
  Code | {::nomarkdown}  I '$L($TEXT(GETACT^DGPFAPI)) S ORY=0 Q<br> N IDY,PRFARR,CAT1<br> K ^TMP("ORPRF",$J)<br> S ORY=$$GETACT^DGPFAPI(PTDFN,"PRFARR")<br> Q:'ORY<br> D FMT(.@("PRFARR")) ; Sets ^TMP("ORPRF"<br> S IDY=0 F  S IDY=$O(^TMP("ORPRF",$J,IDY)) Q:'IDY  D<br> . S ORY(IDY)=IDY_U_$G(^TMP("ORPRF",$J,IDY,"FLAG"))<br> . S CAT1=0<br> . I $G(^TMP("ORPRF",$J,IDY,"CATEGORY"))="I (NATIONAL)" S CAT1=1<br> . S ORY(IDY)=ORY(IDY)_U_CAT1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[uOrPtf.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

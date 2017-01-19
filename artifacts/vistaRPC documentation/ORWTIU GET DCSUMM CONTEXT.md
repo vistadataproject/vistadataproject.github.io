@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORUSER{:/}
  Code | {::nomarkdown}  N OCCLIM,SHOWSUB<br> S Y=$$GET^XPAR("ALL","ORCH CONTEXT SUMMRIES",1)<br> I +$P(Y,";",5)=0 D<br> . S OCCLIM=$P($$PERSPRF^TIULE(DUZ),U,10)<br> . S:+OCCLIM>0 $P(Y,";",5)=OCCLIM<br> S SHOWSUB=$P(Y,";",6)<br> S $P(Y,";",6)=$S(SHOWSUB'="":SHOWSUB,1:0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rDCSumm.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

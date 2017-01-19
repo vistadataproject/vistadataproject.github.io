@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N IDX,LINE,TYPE<br> K ^TMP("TIU TEMPLATE",$J)<br> S TIUY=$NA(^TMP("TIU TEMPLATE",$J))<br> S (IDX,LINE)=0<br> S TYPE=$P($G(^TIU(8927,TIUDA,0)),U,3)<br> I (TYPE="T")!(TYPE="G") D<br> .F  S LINE=$O(^TIU(8927,TIUDA,2,LINE)) Q:'LINE  D<br> ..S IDX=IDX+1<br> ..S ^TMP("TIU TEMPLATE",$J,IDX)=$G(^TIU(8927,TIUDA,2,LINE,0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

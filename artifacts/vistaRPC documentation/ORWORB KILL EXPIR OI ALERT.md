@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN<br>ORNIFN{:/}
  Code | {::nomarkdown}  N ORDG,ORLST S ORDG=$$DG^ORQOR1("ALL")<br> D AGET^ORWORR(.ORLST,ORDFN,5,ORDG)<br> Q:+(@ORLST@(.1))  ;more left<br> N XQAKILL,ORVP<br> S ORVP=ORDFN_";DPT("<br> S XQAKILL=$$XQAKILL^ORB3F1(ORNIFN) ; flagged expiring OI notifications<br> I $D(XQAID) D DELETE^XQALERT<br> I '$D(XQAID) S XQAID=$P($G(^ORD(100.9,ORNIFN,0)),U,2)_","_+ORVP_","_ORNIFN D DELETEA^XQALERT K XQAID{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

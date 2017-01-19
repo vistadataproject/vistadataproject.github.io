@@ -40,4 +40,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUIEN<br>ASSGNDA<br>ACTIEN<br>DFN{:/}
  Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> D UNLINK^TIUPRF1(TIUIEN)<br> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[fNotes.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

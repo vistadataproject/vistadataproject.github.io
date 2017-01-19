@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORTRM{:/}
  Code | {::nomarkdown}  N ORMAX,ORFRQ<br> S ORY=0<br> I ORTRM="" Q  ;if search term not sent in, then quit<br> S ORMAX=+$$MAX^LEXU("10D")<br> I ORMAX=0 S ORMAX=20000  ;if Max value not set, default to 20,000<br> S ORFRQ=+$$FREQ^LEXU(ORTRM)<br> I ORFRQ'>ORMAX Q  ;if frequency not greater than Max value<br> S ORY="1^"_ORFRQ<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

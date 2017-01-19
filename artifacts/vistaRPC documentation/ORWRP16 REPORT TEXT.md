@@ -41,4 +41,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>RPTID<br>HSTYPE<br>DTRANGE<br>SECTION{:/}
  Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ<br> . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))<br> K ^TMP("ORDATA",$J)<br> S ROOT=$NA(^TMP("ORDATA",$J,1))<br> IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ<br> IF RPTID=2 D BL(DFN) G RPTQ<br> IF RPTID=3 D PATH(DFN) G RPTQ<br> IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ<br> IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ<br> IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ<br> D NOTYET(.ROOT){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

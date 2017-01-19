@@ -30,4 +30,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORINFO{:/}
  Code | {::nomarkdown}  Q:'$D(ORINFO)<br> N ORIFN,ORI,ORX,ANS S ORI=0<br> F  S ORI=$O(ORINFO(ORI)) Q:'ORI  D<br> .S ORIFN=$P($P(ORINFO(ORI),U,1),";",1)<br> .S ANS=$P(ORINFO(ORI),U,2)<br> .D REFMT(.ORX,ANS)<br> .D SC^ORCSAVE2(.ORX,ORIFN)<br> S Y=1<br> K ORIFN,ORX,ORI,ANS{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

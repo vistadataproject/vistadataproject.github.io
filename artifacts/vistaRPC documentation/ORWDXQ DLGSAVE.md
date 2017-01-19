@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}CRC<br>DNAME<br>DGRP<br>RSP{:/}
  Code | {::nomarkdown}  N ROOT,NM,IEN<br> S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))<br> I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1<br> E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1<br> E  D<br> . D UPDQNAME^ORCMEDT8(IEN)<br> . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)<br> . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

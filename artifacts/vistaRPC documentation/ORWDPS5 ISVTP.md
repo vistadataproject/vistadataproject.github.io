@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ODIEN{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^OR(100,+ODIEN,0))<br> N VERB,TEL,POL,LSTACT,NATR<br> S (VERB,TEL,POL,LSTACT)=0,NATR=""<br> S VERB=$O(^ORD(100.02,"B","VERBAL",0))<br> S TEL=$O(^ORD(100.02,"B","TELEPHONED",0))<br> S POL=$O(^ORD(100.02,"B","POLICY",0))<br> S LSTACT=$O(^OR(100,+ODIEN,8,"?"),-1)<br> S NATR=$P(^OR(100,+ODIEN,8,LSTACT,0),U,12)<br> I (NATR=VERB)!(NATR=TEL)!(NATR=POL) S ORY=1<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ALOC<br>ADIV{:/}
  Code | {::nomarkdown}  S ILST=0<br> S LST($$NXT)="~ShortList" D SHORT<br> S LST($$NXT)="~Lab Collection Times" D LCOLLTM<br> S LST($$NXT)="~Ward Collection Times" D WCOLLTM<br> S LST($$NXT)="~Send Patient Times" D SENDTM<br> S LST($$NXT)="~Collection Types" D COLLTYP<br> S LST($$NXT)="~Default Urgency" D URGENCY<br> S LST($$NXT)="~Schedules" D SCHED<br> S LST($$NXT)="~Common" D COMMON{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

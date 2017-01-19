@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}EVT{:/}
  Code | {::nomarkdown}  Q:'+EVT<br> N EVTTYPE,EVTNAME,EVTDISP,EVTDLG,PRTEVT<br> S (EVTDLG,PRTEVT)=0<br> S PRTEVT=$P(^ORD(100.5,+EVT,0),U,12)<br> I PRTEVT>0 S EVTTYPE=$P(^ORD(100.5,PRTEVT,0),U,2)<br> E  S EVTTYPE=$P(^ORD(100.5,+EVT,0),U,2)<br> S EVTNAME=$P($G(^ORD(100.5,+EVT,0)),U,1)<br> S EVTDISP=$P($G(^ORD(100.5,+EVT,0)),U,8)<br> S EVTDLG=$P($G(^ORD(100.5,+EVT,0)),U,4)<br> S ORY=EVTTYPE_U_EVT_U_EVTNAME_U_EVTDISP_U_EVTDLG{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

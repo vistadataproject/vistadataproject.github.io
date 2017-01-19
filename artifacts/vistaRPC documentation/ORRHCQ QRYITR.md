@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORRITR{:/}
  Code | {::nomarkdown}  S VAL=$$PTSCRN($P(ORRITR,";",2))<br> I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))<br> S $P(VAL,U,3)=$$NXTITER(ORRITR){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

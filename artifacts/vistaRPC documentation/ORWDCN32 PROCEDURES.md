@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N I,IEN,CNT,X,DTXT,ORID,ORSVCCNT S I=0,CNT=44<br> F  Q:I'<CNT  S FROM=$O(^ORD(101.43,"S.PROC",FROM),DIR) Q:FROM=""  D<br> . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.PROC",FROM,IEN)) Q:'IEN  D<br> . . S X=^ORD(101.43,"S.PROC",FROM,IEN)<br> . . I +$P(X,U,3),$P(X,U,3)<$$NOW^XLFDT Q  ;ICR 10103<br> . . S ORID=$P($G(^ORD(101.43,IEN,0)),U,2)<br> . . ;I $P($G(^ORD(101,ORIEN,0)),U,3)'="" Q   ; Removed for v14<br> . . D GETSVC^GMRCPR0(.ORSVCCNT,ORID) Q:+ORSVCCNT=0  ;ICR 2982<br> . . S I=I+1<br> . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)_U_ORID<br> . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4)_U_ORID{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

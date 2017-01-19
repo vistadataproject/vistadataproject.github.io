@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> The hints returned in the Y array will be used in the CPRS GUI and<br/> displayed on fly-over of the cursor over the TxF text in the window<br/><br/> Input<br/>  <none><br/> Output<br/>  Y array of the hints for TxF's> Y(#)=TxFA ^ TxF line # ^ hint text<br/>    where TxFA is Treatment Factor acronym, e.g., CV=Combat Veteran<br/> Variables<br/>  CT      = line number count, used in Y(#) where #=CT<br/>  I       = incrementor index #<br/>  ORTFIEN = the IEN for the TxF in the Help Frame (^DIC(9.2)) file<br/>  TF      = TxF acronym<br/>  TFLN    = TxF text line number, e.g., ^DIC(9.2,ORTFIEN,1,TFLN,0)<br/>  TFS     = string of TxF acronyms<br/>  TFV     = TxF description/text<br/></pre>{:/}
  Code | {::nomarkdown}  N CT,I,ORTFIEN,TF,TFLN,TFS,TFV<br> S TFS="SC^MST^AO^IR^EC^HNC^CV^SHD",CT=0<br> F I=1:1 S TF=$P(TFS,U,I) Q:TF=""  D<br> . S ORTFIEN=$O(^DIC(9.2,"B","ORBA-"_TF,"")),TFV="",TFLN=0<br> . ; Get next line of hint text<br> . F  S TFLN=$O(^DIC(9.2,ORTFIEN,1,TFLN)) Q:'TFLN  D<br> .. S CT=CT+1,Y(CT)=TF_U_TFLN_U_^DIC(9.2,ORTFIEN,1,TFLN,0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

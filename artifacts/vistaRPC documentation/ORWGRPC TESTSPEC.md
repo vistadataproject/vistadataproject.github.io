@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | RPC - get test/spec info on all lab tests
  Code | {::nomarkdown}  D TESTSPEC^ORWGAPI("ORWGRPC")<br> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rGraphs.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

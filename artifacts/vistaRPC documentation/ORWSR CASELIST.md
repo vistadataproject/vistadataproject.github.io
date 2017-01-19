@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN{:/}
  Code | {::nomarkdown}  Q:'$$PATCH^XPDUTL("SR*3.0*100")<br> Q:'+ORDFN<br> N ORBDT,OREDT,ORMAX,I,SHOWDOCS S (ORBDT,OREDT,ORMAX)="",SHOWDOCS=0<br> S ORY=$NA(^TMP("ORLIST",$J))<br> D LIST^SROESTV(.ORY,ORDFN,ORBDT,OREDT,ORMAX,SHOWDOCS)<br> S I=0<br> F  S I=$O(@ORY@(I)) Q:+I=0  D<br> . S $P(@ORY@(I),U,4)=$P($P(@ORY@(I),U,4),";",2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rSurgery.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

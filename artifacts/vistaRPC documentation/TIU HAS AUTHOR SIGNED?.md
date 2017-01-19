@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>TIUUSR{:/}
  Code | {::nomarkdown}  N TIUD12,TIUD15<br> S TIUD12=$G(^TIU(8925,TIUDA,12)),TIUD15=$G(^(15))<br> S TIUY=1<br> D:$P(TIUD12,U,8)=TIUUSR  Q<br> . S:$P(TIUD12,U,2)'=$P(TIUD15,U,2) TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

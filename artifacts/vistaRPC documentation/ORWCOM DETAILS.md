@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ID{:/}
  Code | {::nomarkdown}  N NODE<br> S ORY=0<br> I +ID D<br> .S NODE=$G(^ORD(101.15,+ID,0))<br> .I NODE'="",$P(NODE,U,3)'="I" S ORY=ID_U_NODE{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rEventHooks.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rEventHooks.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

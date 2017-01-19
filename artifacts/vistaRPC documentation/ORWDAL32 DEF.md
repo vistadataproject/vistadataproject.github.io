@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Get dialog data for allergies
  Code | {::nomarkdown}  N ILST,I,X S ILST=0<br> S LST($$NXT)="~Allergy Types" D ALLGYTYP<br> S LST($$NXT)="~Reactions" D ALLGYTYP<br> S LST($$NXT)="~Nature of Reaction" D NATREACT<br> S LST($$NXT)="~Top Ten" D TOPTEN<br> S LST($$NXT)="~Observ/Hist" D OBSHIST<br> S LST($$NXT)="~Severity" D SEVERITY{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

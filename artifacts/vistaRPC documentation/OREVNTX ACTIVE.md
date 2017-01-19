@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TYPE{:/}
  Code | {::nomarkdown}  N NM,IEN,CNT,X0,X S CNT=0,TYPE=$G(TYPE)<br> S NM="" F  S NM=$O(^ORD(100.5,"C",NM)) Q:NM=""  D<br> . S IEN=0 F  S IEN=+$O(^ORD(100.5,"C",NM,IEN)) Q:IEN<1  D<br> .. S X0=$G(^ORD(100.5,IEN,0)) I '$L($P(X0,U,2)) D  ;Child event<br> ... S X=$P(X0,U,12) S:X $P(X0,U,2)=$P($G(^ORD(100.5,+X,0)),U,2)<br> .. I $L(TYPE),TYPE'[$P(X0,U,2) Q<br> .. Q:$O(^ORD(100.5,"DAD",IEN,0))  ;Parent event<br> .. S CNT=CNT+1,ORY(CNT)=IEN_U_X0<br> S:CNT ORY(0)=CNT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

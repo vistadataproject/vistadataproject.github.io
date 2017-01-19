@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>         allowed to be used in Personal Templates</pre>{:/}
  Code | {::nomarkdown}  N SRV<br> K TIUY<br> D OBJACCUM(.TIUY,"USR")<br> S SRV=$$GETSRV(DUZ)<br> I +SRV D OBJACCUM(.TIUY,"SRV.`"_+$G(SRV))<br> D OBJACCUM(.TIUY,"DIV")<br> D OBJACCUM(.TIUY,"SYS"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

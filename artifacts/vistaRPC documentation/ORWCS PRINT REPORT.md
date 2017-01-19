@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIO<br>DFN<br>ORID{:/}
  Code | {::nomarkdown}  IF '$$CHK() G PRINTQ<br> N TASKDATA<br> S TASKDATA("DESC")="Consult Report Print"<br> S TASKDATA("RTN")="DEQUE^ORWCSP"<br> D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

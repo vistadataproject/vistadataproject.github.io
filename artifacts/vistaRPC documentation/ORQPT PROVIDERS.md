@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | RETURN LIST OF PROVIDERS
  Code | {::nomarkdown}  N I,IEN,NAME,TDATE<br> S I=1,NAME=""<br> F  S NAME=$O(^VA(200,"B",NAME)) Q:NAME=""  S IEN=0,IEN=$O(^(NAME,IEN))  D<br> .Q:$E(NAME)="*"<br> .I $D(^XUSEC("PROVIDER",IEN)),$$ACTIVE^XUSER(IEN) S Y(I)=IEN_"^"_NAME,I=I+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

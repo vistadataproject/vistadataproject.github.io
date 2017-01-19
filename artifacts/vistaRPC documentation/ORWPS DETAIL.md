@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ID{:/}
  Code | {::nomarkdown}  K ^TMP("ORXPND",$J)<br> N LCNT,ORVP<br> S LCNT=0,ORVP=DFN_";DPT("<br> D MEDS^ORCXPND1<br> S ROOT=$NA(^TMP("ORXPND",$J)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

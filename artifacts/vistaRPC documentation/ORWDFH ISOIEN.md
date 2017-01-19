@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Return IEN for the Isolation/Precaution orderable item
  Code | {::nomarkdown}  S VAL=$O(^ORD(101.43,"S.PREC","ISOLATION PROCEDURES",0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

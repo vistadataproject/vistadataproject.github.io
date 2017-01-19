@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}MAGDATA{:/}
  Code | {::nomarkdown}  I ($D(MAGDATA)<10) S MAGRY(0)="0^Missing Data Array !." Q<br> N I,J,ICT,DCT,MAGIX,IMAGES,ERR,X,Z<br> S (ERR,ICT,DCT)=0<br> S I="" F  S I=$O(MAGDATA(I)) Q:I=""  S X=MAGDATA(I) D  Q:ERR<br> . S Z=$P(X,U)<br> . I (X="")!(Z="") S MAGRY(0)="0^INVALID Data in Input Array: Node "_I_"="""_X_"",ERR=1 Q<br> . I Z="IMAGE" S ICT=ICT+1,IMAGES(ICT)=$P(X,U,2,99) Q<br> . S DCT=DCT+1,MAGIX(Z)=$P(X,U,2,99)<br> I 'ERR D IMPORT(.MAGRY,.IMAGES,.MAGIX){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORJ<br>ORFROM<br>ORDIR{:/}
  Code | {::nomarkdown}  N ORCNT,ORI,ORIEN,ORROOT,ORZ<br> I $P(ORFROM,U,2)'="" S ORFROM=$P(ORFROM,U,2)<br> S ORROOT="^TMP("_"""ORRPL"""_","_ORJ      ; Initial setting.<br> S ORROOT=ORROOT_","_"""B"""               ; Add final text.<br> I '$D(@(ORROOT_")")) S Y(0)="No data available." Q<br> S ORROOT=ORROOT_","                       ; Add comma.<br> S ORCNT=44                                ; Initialize to maximum.<br> S ORI=0                                   ; Initialize.<br> F  S ORFROM=$O(@(ORROOT_""""_ORFROM_""""_")"),ORDIR) Q:ORFROM=""  D  Q:ORI=ORCNT<br> .;<br> .; Sub-loop for entries up to ORCNT maximum:<br> .S ORIEN=0                                ; Initialize.<br> .F  S ORIEN=$O(@(ORROOT_""""_ORFROM_""""_","_ORIEN_")")) Q:'ORIEN  D  Q:ORI=ORCNT<br> ..S ORI=ORI+1                             ; Increment counter.<br> ..;<br> ..; Assign return array:<br> ..S Y(ORI)=@(ORROOT_""""_ORFROM_""""_","_ORIEN_")"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

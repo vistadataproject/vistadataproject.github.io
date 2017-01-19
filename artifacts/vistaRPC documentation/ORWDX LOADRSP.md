@@ -38,4 +38,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}RSPID<br>TRANS{:/}
  Code | {::nomarkdown}  N I,J,DLG,INST,ID,VAL,ILST,ROOT,ORLOC S ROOT=""<br> K ^TMP($J,"ORWDX LOADRSP","QO SAVE")<br> I +RSPID=$P(RSPID,"-",1) D<br> .S ^TMP($J,"ORWDX LOADRSP","QO SAVE")=+RSPID<br> I RSPID["-" S ROOT="^TMP(""ORWDXMQ"",$J,"""_RSPID_""")" G XROOT^ORWDX2<br> I $E(RSPID)="X" S ROOT="^OR(100,"_+$P(RSPID,"X",2)_",4.5)"  G XROOT^ORWDX2<br> I +RSPID=RSPID  S ROOT="^ORD(101.41,"_+RSPID_",6)" G XROOT^ORWDX2<br> Q:ROOT=""<br> G XROOT^ORWDX2{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

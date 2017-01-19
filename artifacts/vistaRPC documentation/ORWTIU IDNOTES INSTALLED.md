@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Is ID Notes installed?
  Code | {::nomarkdown}  S ORY=$$PATCH^XPDUTL("TIU*1.0*100"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

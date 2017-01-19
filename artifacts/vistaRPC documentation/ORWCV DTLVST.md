@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>IEN<br>APPTINFO{:/}
  Code | {::nomarkdown}  N VISIT<br> I $P(APPTINFO,";")="A" D  Q<br> . S VISIT=$$APPT2VST^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . I VISIT=0 S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br> I $P(APPTINFO,";")="V" D  Q<br> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETNOTE^ORQQVS(.RPT,DFN,VISIT)<br> I $P(APPTINFO,";")="I" D  Q<br> . S VISIT=+$$GETENC^PXAPI(DFN,$P(APPTINFO,";",2),$P(APPTINFO,";",3))<br> . D DETSUM^ORQQVS(.RPT,DFN,VISIT)<br> . K ^TMP("PXKENC",$J)<br> I $P(APPTINFO,";")="R" D RCDTL^SDRROR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Return top for all patients list (last selected for now)
  Code | {::nomarkdown}  N IEN<br> S IEN=$G(^DISV(DUZ,"^DPT("))<br> I IEN S LST(1)=IEN_U_$P($G(^DPT(IEN,0)),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID{:/}
  Code | {::nomarkdown}  N OROI,ORPSTYPE,ORRXDG<br> S ORY=0,ORPSTYPE=""<br> S OROI=$$OI^ORQOR2(+ORID)<br> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br> Q:ORPSTYPE=""<br> D CSCHECK(.ORY,OROI,ORPSTYPE)<br> S ORY=+ORY{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}
+
+### CPRS
+
+[uCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

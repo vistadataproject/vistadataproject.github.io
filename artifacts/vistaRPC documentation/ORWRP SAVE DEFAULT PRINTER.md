@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDEV{:/}
  Code | {::nomarkdown}  N ORPAR,ORERR,ORWINDEF<br> Q:$L(ORDEV)=0<br> S ORPAR="ORWDP WINPRINT DEFAULT"<br> I ORDEV="WIN" S ORWINDEF="Y"<br> E  S ORWINDEF="N"<br> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORWINDEF,.ORERR)<br> Q:ORDEV="WIN"<br> S ORPAR="ORWDP DEFAULT PRINTER",ORDEV="`"_ORDEV<br> I $$GET^XPAR(DUZ_";VA(200,",ORPAR,1)'="" D CHG^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br> E  D ADD^XPAR(DUZ_";VA(200,",ORPAR,1,ORDEV,.ORERR)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

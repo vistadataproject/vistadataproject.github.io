@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORALIEN{:/}
  Code | {::nomarkdown}  Q:+$G(ORALIEN)=0<br> N ORNODE,I<br> S ORNODE=$NAME(^TMP("GMRA",$J)),I=0<br> D GETREC^GMRAGUI(ORALIEN,ORNODE)<br> S Y=ORNODE{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODAllergy.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODAllergy.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

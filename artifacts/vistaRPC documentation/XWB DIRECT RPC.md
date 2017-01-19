@@ -37,4 +37,10 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}LOC<br>RPC<br>RPCVER<br>P1<br>P2<br>P3<br>P4<br>P5<br>P6<br>P7<br>P8<br>P9<br>P10{:/}
  Code | {::nomarkdown}  N X,I,INX,N,XWBHL7,XWBPAR,XWBPCNT,XWBDVER,XWBESSO,XWBHDL,PMAX<br> N XWBMSG,XWBSEC,RPCIEN<br> N HLMTIEN,HLDOM,HLECH,HLFS,HLINSTN,HLNEXT,HLNODE,HLPARAM,HLQ,HLQUIT<br> D SETUP(1) I $G(RET(1))'="" Q<br> D DIRECT^XWB2HL7A("ZREMOTE RPC",XWBHDL,.XWBMSG,LOC,.XWBPAR)<br> I $P(XWBMSG,U,2) S RET(0)="-1^"_$P(XWBMSG,"^",3) Q<br> I 'HLMTIEN S RET(0)="-1^No Message returned" Q<br> D RETURN,RTNDATA^XWBDRPC(.RET,XWBHDL){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

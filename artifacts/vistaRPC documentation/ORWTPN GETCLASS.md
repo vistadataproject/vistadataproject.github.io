@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> get available document classes</pre>{:/}
  Code | {::nomarkdown}  N CNT,NODE,NUM K VALUES<br> S CNT=0<br> S NUM=0 F  S NUM=$O(^TIU(8925.1,"AT","CL",NUM)) Q:NUM<1  D<br> .I '$$CLASPICK^TIULA4(38,NUM,"CL") Q<br> .S NODE=$G(^TIU(8925.1,NUM,0))<br> .I '$L(NODE) Q<br> .S CNT=CNT+1<br> .S VALUES(CNT)=NUM_U_NODE{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

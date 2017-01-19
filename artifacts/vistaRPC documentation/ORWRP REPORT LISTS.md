@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>  RPC: ORWRP REPORT LIST</pre>{:/}
  Code | {::nomarkdown}  N EOF,ROOT<br> S EOF="$$END",ROOT=$NA(LST)<br> K @ROOT<br> D GETRPTS(.ROOT,.EOF) ; -report list<br> D GETHS(.ROOT,.EOF) ; -health summary types<br> D GETDT(.ROOT,.EOF) ; -date ranges{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rReports.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -39,4 +39,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DOCTYP<br>DFN<br>VISIT{:/}
  Code | {::nomarkdown}  I $$PATCH^XPDUTL("OR*3.0*195") D<br> . Q:($G(DOCTYP)="")!($G(DFN)="")!($G(VISIT)="")<br> . N TIUDPRM,TIUTEST<br> . D DOCPRM^TIULC1(DOCTYP,.TIUDPRM)<br> . S TIUY=$S($P(TIUDPRM(0),U,10)="":1,1:$P(TIUDPRM(0),U,10))<br> . I TIUY=1 S TIUY=0 Q<br> . I $L(VISIT,";")=3 D<br> . . S TIUTEST=$$EXIST^TIUEDI3(DFN,DOCTYP,VISIT)<br> . . I TIUTEST S TIUY=1<br> . . I 'TIUTEST S TIUY=0<br> I '$$PATCH^XPDUTL("OR*3.0*195") D<br> . Q:($G(DOCTYP)="")!($G(DFN)="")!($G(VISIT)="")<br> . N TIUX3<br> . S TIUX3=+$O(^TIU(8925.95,"B",DOCTYP,""))<br> . S TIUY=$P($G(^TIU(8925.95,TIUX3,0)),U,10) S TIUY=$S(TIUY=0:1,1:0)<br> . Q:'TIUY<br> . S VISIT=((9999999-$P(VISIT,"."))_"."_$P(VISIT,".",2))<br> . S VISIT=+$O(^AUPNVSIT("AA",DFN,VISIT,""))<br> . S TIUY=$S($D(^TIU(8925,"AV",DFN,DOCTYP,VISIT)):0,1:1)<br> . S TIUY=$S(TIUY=0:1,1:0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rTIU.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

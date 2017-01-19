@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Return a list of active tubefeeding products
  Code | {::nomarkdown}  N I,IEN,NAM,X,CURTM<br> S I=0,NAM="",CURTM=$$NOW^XLFDT<br> F  S NAM=$O(^ORD(101.43,"S.TF",NAM)) Q:NAM=""  D<br> . S IEN=0 F  S IEN=$O(^ORD(101.43,"S.TF",NAM,IEN)) Q:'IEN  D<br> . . S X=^ORD(101.43,"S.TF",NAM,IEN)<br> . . I +$P(X,U,3),$P(X,U,3)<CURTM Q<br> . . S I=I+1<br> . . I 'X S Y(I)=IEN_U_$P(X,U,2)_U_$P(X,U,2)<br> . . E  S Y(I)=IEN_U_$P(X,U,2)_$C(9)_"<"_$P(X,U,4)_">"_U_$P(X,U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODDiet.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

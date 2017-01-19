@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN{:/}
  Code | {::nomarkdown}  N OI<br> S (OI,ORY)=0<br> S OI=+$O(^OR(100,+$G(ORIFN),.1,"B",0)) Q:OI<1<br> I $O(^ORD(101.43,OI,9,"B","IVM RX",0)) S ORY=1<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

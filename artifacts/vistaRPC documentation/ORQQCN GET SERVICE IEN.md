@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  N X1<br> I '$D(^ORD(101.43,ORIEN)) S ORY=-1 Q<br> S X1=$G(^ORD(101.43,ORIEN,.1))<br> I +X1,+X1<$$NOW^XLFDT S ORY=-1 Q<br> S ORY=$P($$USID^ORWDXC(ORIEN),U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

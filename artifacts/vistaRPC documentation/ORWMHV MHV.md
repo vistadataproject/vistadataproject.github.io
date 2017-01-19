@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN{:/}
  Code | {::nomarkdown}  N I,ORX<br> S ORY=0<br> D TFL^VAFCTFU1(.ORX,ORDFN)       ; DBIA #2990<br> S I=0 F  S I=$O(ORX(I)) Q:'I  D<br> .;pt has MHV treat fac (200MH) and event reason wasn't "discharge" (3):<br> .I $P(ORX(I),U)="200MH",$P(ORX(I),U,4)'=3 D<br> ..S $P(ORY,U)="MHV",$P(ORY,U,2)="Patient has data in My HealtheVet"<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[fCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fCover.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

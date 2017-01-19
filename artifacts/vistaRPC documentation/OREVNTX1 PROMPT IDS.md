@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IDS{:/}
  Code | {::nomarkdown}  N IDX,ORTS,ORATT<br> S (ORY,ORTS,ORATT)=""<br> S IDX=$O(^ORD(101.41,"B","OR GTX TREATING SPECIALTY",0))<br> S:$D(^ORD(101.41,IDX,1)) ORTS=$P($G(^ORD(101.41,IDX,1)),U,2,3)<br> S IDX=$O(^ORD(101.41,"B","OR GTX PROVIDER",0))<br> S:$D(^ORD(101.41,IDX,1)) ORATT=$P($G(^ORD(101.41,IDX,1)),U,2,3)<br> S ORY=ORTS_"~"_ORATT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

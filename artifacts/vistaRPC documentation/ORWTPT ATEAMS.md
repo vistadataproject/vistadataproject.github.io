@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> all teams available to subscribe to</pre>{:/}
  Code | {::nomarkdown}  N CNT,NAME,NODE,NUM K TEAMS<br> S CNT=0<br> S NUM=0 F  S NUM=$O(^OR(100.21,NUM)) Q:NUM<1  S NODE=$G(^(NUM,0)) D<br> .I $P(NODE,U,6)'="Y" Q<br> .I $P(NODE,U,2)="P" Q<br> .S CNT=CNT+1<br> .S TEAMS(CNT)=NUM_U_NODE ;$P(NODE,U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Options/rOptions.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

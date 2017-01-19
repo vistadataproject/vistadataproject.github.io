@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>FILTER<br>GROUPS<br>DTFROM<br>DTTHRU<br>EVENT<br>ORRECIP{:/}
  Code | {::nomarkdown}  N ORLIST,ORIFN,IFN,I,ORWTS,TOT,MULT,ORWARD,TXTVW,ORYD,PTEVTID,EVTNAME<br> S (PTEVTID,EVTNAME)=""<br> K ^TMP("ORR",$J),^TMP("ORRJD",$J)<br> S:'$D(GROUPS) GROUPS=1 S:'$D(FILTER) FILTER=2<br> S ORWTS=+$P(FILTER,U,2),FILTER=+FILTER<br> S MULT=$S("^1^6^8^9^10^11^13^14^20^22^"[(U_FILTER_U):1,1:0)<br> I $L($G(^DPT(DFN,.1))) S ORWARD=1 ; normally ptr to 42<br> S:'$L($G(DTFROM)) DTFROM=0<br> S:'$L($G(DTTHRU)) DTTHRU=0<br> I $P(DTFROM,".")=$P(DTTHRU,"."),$P(DTFROM,".",2)>$P(DTTHRU,".",2),$P(DTTHRU,".",2)="" S $P(DTTHRU,".",2)=2359<br> S:'$L($G(EVENT)) EVENT=0<br> I $G(EVTDCREL)="TRUE" D<br> . D EN^ORQ1(DFN_";DPT(",GROUPS,FILTER,"",DTFROM,DTTHRU,2,MULT,"",1,EVENT)<br> . D GET2^ORWORR1<br> E  D<br> . D EN^ORQ1(DFN_";DPT(",GROUPS,FILTER,"",DTFROM,DTTHRU,0,MULT,"",1,EVENT)<br> . D GET1^ORWORR1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

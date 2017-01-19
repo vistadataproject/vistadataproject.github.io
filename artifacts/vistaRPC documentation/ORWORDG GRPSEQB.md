@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre> Call GRPSEQ, format for broker:<br/>   Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name</pre>{:/}
  Code | {::nomarkdown}  N C,I,X<br> D GRPSEQ(.X)<br> S C=0,I=0<br> F  S I=$O(X(I)) Q:I=""  S C=C+1,Y(C)=I_U_X(I){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

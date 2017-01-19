@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | Get last collection time used from ^TMP("ORECALL",$J) array
  Code | {::nomarkdown}  N ORDIALOG,ORTYPE,ORTIME<br> S ORDIALOG=$O(^ORD(101.41,"B","LR OTHER LAB TESTS",0))<br> S ORTYPE=$O(^ORD(101.41,"B","OR GTX COLLECTION TYPE",0))<br> S ORTIME=$O(^ORD(101.41,"B","OR GTX START DATE/TIME",0))<br> S ORY=$$RECALL^ORCD(ORTYPE,1)_U_$$RECALL^ORCD(ORTIME,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODLab.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}X{:/}
  Code | {::nomarkdown}  N ABBR,NAME,IEN<br> K ^TMP($J,"ORWDPS32 VALROUTE")<br> S X=$$UPPER(X)<br> D ALL^PSS51P2(,X,,1,"ORWDPS32 VALROUTE")<br> I $P(^TMP($J,"ORWDPS32 VALROUTE",0),U)=-1 K ^TMP($J,"ORWDPS32 VALROUTE") S REC=0 Q<br> S IEN=$O(^TMP($J,"ORWDPS32 VALROUTE","B",X,""))<br> I IEN'>0 S IEN=$O(^TMP($J,"ORWDPS32 VALROUTE","C",X,""))<br> I IEN'>0 S REC=0 Q<br> S NAME=$G(^TMP($J,"ORWDPS32 VALROUTE",IEN,.01))<br> S ABBR=$G(^TMP($J,"ORWDPS32 VALROUTE",IEN,1))<br> I '$L(ABBR) S ABBR=NAME<br> I ($$UPPER(NAME)'=X),($$UPPER(ABBR)'=X) S REC=0 K ^TMP($J,"ORWDPS32 VALROUTE") Q<br> S REC=IEN_U_ABBR<br> K ^TMP($J,"ORWDPS32 VALROUTE"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODBase.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

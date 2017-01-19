@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}INPAT{:/}
  Code | {::nomarkdown}  N DGRP,ID,IEN,TXT,TYP,X,X0,X5<br> I INPAT S X=$$GET^XPAR("ALL","ORWDX NEW MED","i","I")<br> E  S X=$$GET^XPAR("ALL","ORWDX NEW MED","o","I")<br> S IEN=+X,X0=$G(^ORD(101.41,IEN,0)),X5=$G(^(5))<br> S TYP=$P(X0,U,4),DGRP=+$P(X0,U,5),ID=+$P(X5,U,5),TXT=$P(X5,U,4)<br> S Y=IEN_";"_ID_";"_DGRP_";"_TYP_U_TXT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRCIEN{:/}
  Code | {::nomarkdown}  N ORPT,X0,GMRCOER,SEQ,SEQ0<br> Q:+$G(GMRCIEN)=0<br> S X0=$G(^GMR(123,GMRCIEN,0)) I 'X0 S Y="-1^Consult not found" Q<br> S ORPT=$P(X0,U,2) I '$G(ORPT) S Y="-1^Patient not found" Q<br> S GMRCOER=2,SEQ=""<br> D OER^GMRCSLM1(ORPT,"","","","",GMRCOER)<br> F  S SEQ=$O(^TMP("GMRCR",$J,"CS",SEQ)) Q:SEQ=""!(SEQ?1A.E)  I SEQ>0 D<br> .S SEQ0=^TMP("GMRCR",$J,"CS",SEQ,0) I $P(SEQ0,U,1)=GMRCIEN S Y=SEQ0 Q<br> K ^TMP("GMRCR",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Consults/rConsults.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

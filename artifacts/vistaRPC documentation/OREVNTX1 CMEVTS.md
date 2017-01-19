@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}CLOC{:/}
  Code | {::nomarkdown}  N IDX,X0,X,LOC<br> S:CLOC>0 LOC=CLOC<br> S IDX=0,ORY=""<br> D GETLST^OREV3(.ORY)<br> F  S IDX=$O(ORY(IDX)) Q:'IDX  D<br> . S X0=""<br> . S:$L($G(^ORD(100.5,+ORY(IDX),0))) X0=$G(^(0))<br> . I '$L($P(X0,U,2)) D<br> .. S X=$P(X0,U,12) S:X $P(X0,U,2)=$P($G(^ORD(100.5,+X,0)),U,2)<br> . S:$L(X0) ORY(IDX)=+ORY(IDX)_U_X0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

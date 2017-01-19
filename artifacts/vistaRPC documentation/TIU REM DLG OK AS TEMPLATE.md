@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUIEN{:/}
  Code | {::nomarkdown}  N TIULST,SRV<br> S TIUY=-1<br> I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q<br> I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410<br> S TIUY=1<br> D RDACCUM(.TIULST,"USR","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S SRV=$$GETSRV(DUZ)<br> D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"DIV","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"SYS","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

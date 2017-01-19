@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Files single Word Processing Field.It REPLACES previous text if any with current text. Input:   FILEN= fileman file Number   IEN= internal record number (cannot create a new record)   FIELD= field to be modified (must be a WP field)   YS(1)= TEXT line 1   ...   YS(X)=TEXT line X Output:   [DATA] if no errors VS [ERROR]{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

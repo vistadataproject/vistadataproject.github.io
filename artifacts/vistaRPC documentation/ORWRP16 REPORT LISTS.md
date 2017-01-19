@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}<pre>  RPC: ORWRP REPORT LIST<br/>  See RPC definition for details on input and output parameters<br/></pre>{:/}
  Code | {::nomarkdown}  N EOF<br> S EOF="$$END",ROOT=$NA(^TMP($J,"ORPTLIST"))<br> K @ROOT<br> D GETRPTS(.ROOT,.EOF)<br> D GETHS(.ROOT,.EOF)<br> D GETDT(.ROOT,.EOF){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

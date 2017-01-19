@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}QOID{:/}
  Code | {::nomarkdown}  N ROUTID<br> S Y=0,ROUTID=0<br> S ROUTID=$O(^ORD(101.41,"B","OR GTX ROUTING",0))<br> Q:'ROUTID<br> Q:'$D(^ORD(101.41,+QOID))<br> I $D(^ORD(101.41,+QOID,6,"D",ROUTID)) S Y=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

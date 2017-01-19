@@ -29,4 +29,9 @@ title: VISTA RPC documentation
  Method comment | clear ORECALL
  Code | {::nomarkdown}  S OK=1<br> K ^TMP("ORECALL",$J),^TMP("ORWDXMQ",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

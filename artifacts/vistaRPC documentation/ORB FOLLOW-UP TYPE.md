@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORXQAID{:/}
  Code | {::nomarkdown}  N NIEN<br> S NIEN=$P($P(ORXQAID,";"),",",3)<br> S ORBY=$G(^ORD(100.9,NIEN,3))<br> I ORBY="" S ORBY="INFO^"<br> E  S ORBY=$P(ORBY,U,2){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[NOT OSEHRA CPRS]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

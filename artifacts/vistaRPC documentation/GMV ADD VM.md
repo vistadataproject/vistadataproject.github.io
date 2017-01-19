@@ -37,4 +37,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMVDATA{:/}
  Code | {::nomarkdown}  N GMVCNT,GMVDFN,GMVDTDUN,GMVDTENT,GMVENTBY,GMVFDA,GMVHOSPL<br> N GMVLOOP,GMVMSG,GMVQUALS,GMVRES,GMVIEN,GMVVMEAS,GMVVQUAL,GMVVTYP<br> D QUALTWO{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[GMV_VitalsViewEnter.dll]()
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

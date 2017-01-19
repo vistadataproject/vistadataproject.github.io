@@ -30,4 +30,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}WARD{:/}
  Code | {::nomarkdown}  N ILST,DFN<br> I +$G(WARD)<1 S LST(1)="^No ward identified" Q<br> S (ILST,DFN)=0<br> S WARD=$P(^DIC(42,WARD,0),"^")   ;DBIA #36<br> F  S DFN=$O(^DPT("CN",WARD,DFN)) Q:DFN'>0  D<br> . S ILST=ILST+1,LST(ILST)=+DFN_U_$P(^DPT(+DFN,0),U)_U_$G(^DPT(+DFN,.101))<br> I ILST<1 S LST(1)="^No patients found."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

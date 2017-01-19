@@ -36,4 +36,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLIST{:/}
  Code | {::nomarkdown}  N IEN,IDX,FOUND<br> S IDX=0<br> F  S IDX=$O(ORLIST(IDX)) Q:'+IDX  D<br> . S FOUND=0<br> . S IEN=$$FIND1^DIC(811.1,"","QX",ORLIST(IDX))<br> . I +IEN S FOUND=+$$GET1^DIQ(811.1,IEN,.05,"I")<br> . S ORY(IDX)=ORLIST(IDX)_"="_FOUND{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Encounter/rPCE.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

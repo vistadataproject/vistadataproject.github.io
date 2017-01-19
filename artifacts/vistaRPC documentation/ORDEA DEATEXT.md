@@ -29,4 +29,10 @@ title: VISTA RPC documentation
  Method comment | returns the mandatory dea text to show when a user checks a controlled substance order to be signed on the signature dialog
  Code | {::nomarkdown}  N I,ORTY<br> D GETWP^XPAR(.ORTY,"SYS","OR DEA TEXT")<br> S I=0 F  S I=$O(ORTY(I)) Q:'I  S ORY(I)=ORTY(I,0){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:54 am</p>{:/}
+
+### CPRS
+
+[fReview.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas")
+[Orders/fOrdersSign.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}

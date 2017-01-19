@@ -31,4 +31,9 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}FLDS{:/}
  Code | {::nomarkdown}  N DFNL,TESTL,ORLOCL,ORNPL,ORDTL,HAVELES<br> S (DFNL,TESTL,ORLOCL,ORNPL,ORDTL,HAVELES)=""<br> S DFNL=$P(FLDS,U,1)<br> S TESTL=$P(FLDS,U,2)<br> S ORLOCL=$P(FLDS,U,3)<br> S ORNPL=$P(FLDS,U,4)<br> S ORDTL=$P(FLDS,U,5)<br> S HAVELES=$TEXT(COM^AVJLES)<br> I $L(HAVELES) D COM^AVJLES(.ORY,DFNL,TESTL,ORLOCL,ORNPL,ORDTL)<br> S ORY(1)=""{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:04:53 am</p>{:/}
+
+### CPRS
+
+[Orders/rOrders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas")
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:21:34 am</p>{:/}
