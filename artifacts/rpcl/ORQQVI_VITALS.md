@@ -26,4 +26,5 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | 
 | DFN | LITERAL | true | {::nomarkdown}Patient id (DFN) from Patient File (#2).{:/} |  | 
 | START_DATETIME | LITERAL |  | {::nomarkdown}Start date/time for vital retrieval in Fileman format.<br/>If none is passed then the start date is 1 (i.e. before any dates).{:/} |  | 
-| STOP_DATETIME | LITERAL |  | {::nomarkdown}Stop date/time for vital retrieval in Fileman format.<br/>If none is passed then the Start date is also the stop date and if there<br/>is not start date then 9999999 is used as the stop date{:/} |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}
+| STOP_DATETIME | LITERAL |  | {::nomarkdown}Stop date/time for vital retrieval in Fileman format.<br/>If none is passed then the Start date is also the stop date and if there<br/>is not start date then 9999999 is used as the stop date{:/} |  | 
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 19th 2017, 8:08:27 am</p>{:/}

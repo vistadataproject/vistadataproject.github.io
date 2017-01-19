@@ -47,4 +47,5 @@ title: RPCL documentation
 | GMRAERRBY | REFERENCE |  | {::nomarkdown}Entered By{:/} |  | \GMRAERRBY\: \58\ | 
 | GMRAERRDT | DATE-TIME |  | {::nomarkdown}Date Entered in Error{:/} |  | \GMRAERRDT\: \3160926.163633\ | 
 | GMRAERRCMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRAERRCMTS\: [\a comment about the error\, \here is another line\] | 
-| GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}
+| GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | 
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 19th 2017, 8:08:27 am</p>{:/}

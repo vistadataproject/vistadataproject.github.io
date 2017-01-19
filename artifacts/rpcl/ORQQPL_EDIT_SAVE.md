@@ -97,4 +97,5 @@ title: RPCL documentation
 |  | ENUMERATION | {::nomarkdown}<dl><dt>False</dt><dd>false</dd><dt>True</dt><dd>true</dd></dl>{:/} | {::nomarkdown}Unique New Term Requested{:/} | uniqueNewTermRequested | GMPORIG(80101)=\^\ | 
 |  | LITERAL |  | {::nomarkdown}Unique Term Request Comment{:/} | uniqueTermRequestComment | GMPORIG(80102)=\^\ | 
 |  | DATE |  | {::nomarkdown}Date Of Interest{:/} | interestDate | GMPORIG(80201)=\3160801^Aug 01 2016\ | 
-|  | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | GMPORIG(80202)=\10D^ICD-10-CM\ | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 1:00:01 am</p>{:/}
+|  | LITERAL |  | {::nomarkdown}Coding System{:/} | codingSystem | GMPORIG(80202)=\10D^ICD-10-CM\ | 
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 19th 2017, 8:08:27 am</p>{:/}
