@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>NOTEIEN{:/}
  Code | {::nomarkdown}  N VSTR,NOTEDATE<br> D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)<br> Q:$P(VSTR,";",2)=""<br> D FASTVIT(.ORY,DFN,$P(VSTR,";",2)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

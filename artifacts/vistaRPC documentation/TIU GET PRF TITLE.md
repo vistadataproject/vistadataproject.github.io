@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTITLE^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
- First comment | {::nomarkdown}Receives TIUY by ref; passes back<br/>TIUY = TitleIEN^Title<br/>0 if no title is associated or flg assignmt is not active<br/>Requires PTDFN<br/>Requires FLAGID - identifier for particular flag assignment<br/>for patient PTDFN. Set as subscript in GETACT^DGPFAPI.<br/>See GETFLG^ORPRF.{:/}
+ First comment | {::nomarkdown}Receives TIUY by ref; passes back<br/> TIUY = TitleIEN^Title<br/>        0 if no title is associated or flg assignmt is not active<br/>Requires PTDFN<br/>Requires FLAGID - identifier for particular flag assignment<br/>   for patient PTDFN. Set as subscript in GETACT^DGPFAPI.<br/> See GETFLG^ORPRF.{:/}
  Input parameters | {::nomarkdown}PTDFN<br>FLAGID{:/}
  Code | {::nomarkdown}  N PRFARR K TIUY S TIUY=0<br> Q:'$G(PTDFN)  Q:'$G(FLAGID)<br> S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info<br> Q:'TIUY<br> S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))<br> I TIUY'>0 S TIUY=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>EARLY<br>LATE{:/}
  Code | {::nomarkdown}  N TIUPREF,TIUOCC S TIUPREF=$$PERSPRF^TIULE(DUZ)<br> S TIUOCC=$P(TIUPREF,U,10),PERSON=$S(+$G(PERSON):+$G(PERSON),1:+$G(DUZ))<br> S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")<br> D CONTEXT(.TIUY,244,1,DFN,$G(EARLY),$G(LATE),PERSON,TIUOCC,SEQUENCE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

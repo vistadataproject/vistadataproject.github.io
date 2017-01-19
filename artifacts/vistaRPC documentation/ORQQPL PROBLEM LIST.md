@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>CONTEXT<br>ORIDT{:/}
  Code | {::nomarkdown}  N DIWL,DIWR,DIWF<br> N ST,ORI,ORX<br> S ORIDT=$G(ORIDT,DT)<br> S (LCNT,NUM)=0<br> S DIWL=1,DIWR=48,DIWF="C48"<br> S CONTEXT=";;"_$G(CONTEXT)<br> I CONTEXT=";;" S CONTEXT=";;A"<br> S ST=$P(CONTEXT,";",3)<br> I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only<br> I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here<br> I ROOT(0)<1 D<br> . S LCNT=1<br> . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

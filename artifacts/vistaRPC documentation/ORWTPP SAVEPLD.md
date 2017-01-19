@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVEPLD^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}save current user's list selection defaults{:/}
+ First comment | {::nomarkdown} save current user's list selection defaults{:/}
  Input parameters | {::nomarkdown}INFO{:/}
  Code | {::nomarkdown}  D SAVEPLD^ORWTPL(.OK,INFO,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

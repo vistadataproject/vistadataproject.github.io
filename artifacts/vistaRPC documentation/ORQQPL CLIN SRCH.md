@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CLINSRCH^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | Get LIST OF CLINICS
- First comment | {::nomarkdown}Note: This comes from CLIN^ORQPTQ2, where it was commented out in place of<br/>a call to ^XPAR. I would have just used CLIN^ORQPTQ2, but it didn't work - at<br/>least on SLC OEX directory.<br/>X has no purpose other than to satisfy apparent rpc and tcallv requirement for args{:/}
+ First comment | {::nomarkdown} Note: This comes from CLIN^ORQPTQ2, where it was commented out in place of<br/> a call to ^XPAR. I would have just used CLIN^ORQPTQ2, but it didn't work - at<br/> least on SLC OEX directory.<br/> X has no purpose other than to satisfy apparent rpc and tcallv requirement for args{:/}
  Input parameters | {::nomarkdown}X{:/}
  Code | {::nomarkdown}  N I,NAME,IEN<br> S I=1,IEN=0,NAME=""<br> F  S NAME=$O(^SC("B",NAME)) Q:NAME=""  S IEN=$O(^(NAME,0)) D<br> . I $P(^SC(IEN,0),"^",3)="C" S Y(I)=IEN_"^"_NAME,I=I+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

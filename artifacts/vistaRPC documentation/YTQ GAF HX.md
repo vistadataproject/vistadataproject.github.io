@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns all GAF diagnosis for a specified Patient Input: YS(\DFN\)= Pt DFN       YS(\END\)- Date of last GAF requested [optional]       YS(\BEGIN\) : Date of first GAF requested [optional]        YS(\LIMIT\): To limit output to the last x diagnosis Output:        YSDATA(1): [DATA] or [ERROR]        YSDATA(X): 627.8 IEN = external date of dx^GAF^rater DUZ^Rater                    name^error msg{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PSBREC{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}PSBREC  (array)(0)     determines  \lookup\ function         \PTLKUP\  (patient file (#2) lookup)        \ADMLKUP\  (administration lookup)        \SELECTAD\ (process selected administration. (1)     values to use for the lookup.  (DFN for the ADMLKUP)        \SELECTAD\ must present the PSBIEN value        of the user-chosen administration.(2)     search date for ADMLKUP{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

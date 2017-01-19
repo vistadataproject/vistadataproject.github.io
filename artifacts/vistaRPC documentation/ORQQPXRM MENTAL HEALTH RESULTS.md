@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | MHR^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- First comment | {::nomarkdown}DBIA 3080{:/}
+ First comment | {::nomarkdown} DBIA 3080{:/}
  Input parameters | {::nomarkdown}RESULT<br>ORES{:/}
  Code | {::nomarkdown}  D MHR^PXRMRPCC(.ORY,RESULT,.ORES){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

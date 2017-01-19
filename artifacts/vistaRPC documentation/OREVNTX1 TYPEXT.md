@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TYPEXT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | does EVT has delayed orders?
- First comment | {::nomarkdown}1 if Patient DFN has delayed orders for EVT<br/>2 if Parent/Sibling event has delayed orders<br/>0 if No delayed orders for EVT{:/}
+ First comment | {::nomarkdown} 1 if Patient DFN has delayed orders for EVT<br/> 2 if Parent/Sibling event has delayed orders<br/> 0 if No delayed orders for EVT{:/}
  Input parameters | {::nomarkdown}DFN<br>EVT{:/}
  Code | {::nomarkdown}  Q:'+EVT<br> S ORY=$$EXISTS^OREVNTX(DFN,EVT){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

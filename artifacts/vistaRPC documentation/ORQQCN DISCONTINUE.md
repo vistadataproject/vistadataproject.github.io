@@ -37,8 +37,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DC^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Discontinue or Deny a consult
- First comment | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCORNP - Provider who Discontinued or Denied consult<br/>GMRCAD - Date/Time Consult was discontinued or denied.<br/>GMRCACTM - If consult is 'DENIED' passed in as 'DY'; if consult is Discontinued passed in as 'DC'.<br/>ORCOM - Array containing explanation of why consult was denied. Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is a required field when consult is denied or discontinued.{:/}
+ First comment | {::nomarkdown}GMRCO - Internal file number of consult from File 123<br/>GMRCORNP - Provider who Discontinued or Denied consult<br/>GMRCAD - Date/Time Consult was discontinued or denied.<br/>GMRCACTM - If consult is 'DENIED' passed in as 'DY'; if consult is Discontinued passed in as 'DC'.<br/>ORCOM - Array containing explanation of why consult was denied. Passed as the following form :<br/> ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/> Comment is a required field when consult is denied or discontinued.{:/}
  Input parameters | {::nomarkdown}GMRCO<br>GMRCORNP<br>GMRCAD<br>GMRCACTM<br>ORCOM{:/}
  Code | {::nomarkdown}  S Y=$$DC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,GMRCACTM,.ORCOM){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

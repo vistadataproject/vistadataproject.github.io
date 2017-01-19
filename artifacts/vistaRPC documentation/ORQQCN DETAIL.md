@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}CONSULT{:/}
  Code | {::nomarkdown}  N GMRCOER<br> S GMRCOER=2<br> S ORQY=$NA(^TMP("GMRCR",$J,"DT"))<br> D DT^GMRCSLM2(CONSULT)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

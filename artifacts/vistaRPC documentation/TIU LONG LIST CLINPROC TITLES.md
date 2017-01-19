@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LNGCP^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
  Method comment | RPC that serves data to a longlist of selectable Titles
- First comment | {::nomarkdown}Input  -- FROM     Reference Title from which the longlist is<br/>scrolling<br/>DIR      Direction from which the longlist is scrolling<br/>from the reference Title  (Optional- default 1)<br/>Output -- Y        An array of the 44 nearest Titles to that indicated<br/>by the user in the direction passed by the longlist<br/>component{:/}
+ First comment | {::nomarkdown} Input  -- FROM     Reference Title from which the longlist is<br/>                    scrolling<br/>           DIR      Direction from which the longlist is scrolling<br/>                    from the reference Title  (Optional- default 1)<br/> Output -- Y        An array of the 44 nearest Titles to that indicated<br/>                    by the user in the direction passed by the longlist<br/>                    component{:/}
  Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N TIUCLASS<br> I '$D(FROM) G LNGCPQ<br> S TIUCLASS=+$$CLASS<br> I +TIUCLASS'>0 G LNGCPQ<br> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

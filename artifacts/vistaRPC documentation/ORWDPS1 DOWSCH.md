@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>LOCIEN{:/}
  Code | {::nomarkdown}  N CNT,FREQ,ILST,ORARRAY,WIEN<br> S WIEN=$$WARDIEN^ORWDPS32(+$G(LOCIEN))<br> D SCHED^PSS51P1(WIEN,.ORARRAY)<br> S ILST=0<br> S CNT=0 F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br> .S NODE=$G(ORARRAY(CNT))<br> .I $P(NODE,U,4)="C" D<br> ..K ^TMP($J,"ORWDPS1 DOWSCH")<br> ..D ZERO^PSS51P1($P(NODE,U),,,,"ORWDPS1 DOWSCH")<br> ..S FREQ=$G(^TMP($J,"ORWDPS1 DOWSCH",$P(NODE,U),2))<br> ..K ^TMP($J,"ORWDPS1 DOWSCH")<br> ..I +FREQ=0 Q<br> ..I +FREQ>1440 Q<br> ..S ILST=ILST+1,LST(ILST)=$P(ORARRAY(CNT),U,2,5){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

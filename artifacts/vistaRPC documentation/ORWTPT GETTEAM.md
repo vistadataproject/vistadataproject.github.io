@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTEAM^[ORWTPT](http://code.osehra.org/dox/Routine_ORWTPT_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}returns members of a team{:/}
+ First comment | {::nomarkdown} returns members of a team{:/}
  Input parameters | {::nomarkdown}TEAM{:/}
  Code | {::nomarkdown}  N CNT,NAME,NUM,USER K USERS<br> S TEAM=+$G(TEAM),CNT=0<br> S NUM=0 F  S NUM=$O(^OR(100.21,TEAM,1,NUM)) Q:NUM<1  S USER=+$G(^(NUM,0)) D<br> .S NAME=$P($G(^VA(200,USER,0)),U)<br> .I '$L(NAME) Q<br> .S CNT=CNT+1<br> .S USERS(CNT)=USER_U_NAME{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

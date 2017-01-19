@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWCS](http://code.osehra.org/dox/Routine_ORWCS_source.html)
  Method comment | retrieve report text
- First comment | {::nomarkdown}RPC: ORWCS REPORT TEXT<br/>See RPC definition for details on input and output parameters{:/}
+ First comment | {::nomarkdown}  RPC: ORWCS REPORT TEXT<br/>  See RPC definition for details on input and output parameters<br/>{:/}
  Input parameters | {::nomarkdown}DFN<br>ORID{:/}
  Code | {::nomarkdown}  S ORY=$NA(^TMP("GMRCR",$J,"DT")) K @ORY Q:+ORID=0<br> D DT^GMRCSLM2(ORID){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

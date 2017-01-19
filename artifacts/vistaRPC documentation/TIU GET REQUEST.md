@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUDAD,TIUTYP,TIU1405<br> I '+TIUDA!('$D(^TIU(8925,+TIUDA,0))) S TIUY="-1^TIU Document does not exist" Q<br> S TIUTYP=$P($G(^TIU(8925,TIUDA,0)),U)<br> I $P(^TIU(8925,TIUDA,0),U,6)'="" D<br> . S TIUDAD=$P(^TIU(8925,TIUDA,0),U,6)<br> . S TIUTYP=$P($G(^TIU(8925,TIUDAD,0)),U)<br> I '+TIUTYP S TIUY="-1^TIU parent document does not exist" Q<br> S TIU1405=$P($G(^TIU(8925,$S(+$G(TIUDAD):TIUDAD,1:TIUDA),14)),U,5)<br> I '+TIU1405 S TIUY="-1^No Request found for this document" Q<br> S TIUY=TIU1405{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IEN<br>PSTYPE{:/}
  Code | {::nomarkdown}  D ENRFA^PSJORUTL(IEN,PSTYPE,.ORLST)<br> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br> . S OI=+$O(^ORD(101.43,"ID",+$P(ORLST(I),U,4)_";99PSP",0))<br> . S $P(ORLST(I),U,4)=OI I OI S $P(ORLST(I),U,5)=$P(^ORD(101.43,OI,0),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}INAME{:/}
  Code | {::nomarkdown}  N IEN S IEN=$O(^ORD(101.41,"B",INAME,0))<br> S VAL=$P($G(^ORD(101.41,IEN,5)),U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

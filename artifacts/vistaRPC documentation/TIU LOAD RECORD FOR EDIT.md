@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA<br>DR{:/}
  Code | {::nomarkdown}  N CANEDIT,ERR,D0,DIQ2,TIUARR,TIUF,TIUI<br> I +$D(^TIU(8925,TIUDA,"TEMP")),'+$$IFTEXT() D MERGTEXT(TIUDA)<br> K ^TMP("TIUEDIT",$J),^TMP("TIULQ",$J)<br> S TIUY=$NA(^TMP("TIUEDIT",$J)),TIUARR=$NA(^TMP("TIULQ",$J))<br> S CANEDIT=$$CANDO^TIULP(TIUDA,"EDIT RECORD")<br> I +CANEDIT'>0 S ^TMP("TIUEDIT",$J,0)="~"_$P(CANEDIT,U,2) Q<br> D EXTRACT^TIULQ(TIUDA,TIUARR,.ERR,$G(DR),"",1,"IE",1)<br> I $D(ERR) M TIUY=ERR Q<br> S TIUF=0<br> F  S TIUF=$O(@TIUARR@(TIUDA,TIUF)) Q:+TIUF'>0  D<br> . S ^TMP("TIUEDIT",$J,TIUF)=TIUF_U_@TIUARR@(TIUDA,TIUF,"I")_U_@TIUARR@(TIUDA,TIUF,"E")<br> S TIUI=0<br> F  S TIUI=$O(@TIUARR@(TIUDA,"TEXT",TIUI)) Q:+TIUI'>0  D<br> . S ^TMP("TIUEDIT",$J,"TEXT",TIUI)=$G(@TIUARR@(TIUDA,"TEXT",TIUI,0))<br> S ^TMP("TIUEDIT",$J,"TEXT",0)="$TXT",^TIU(8925,"ASAVE",DUZ,TIUDA)=""<br> K @TIUARR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

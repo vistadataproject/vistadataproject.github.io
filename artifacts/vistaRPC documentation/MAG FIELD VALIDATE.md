@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the option set of parameters defined for the VAL^DIEE External value is returned in RESULT(0). F FDA node is set for valid data in array identified by FDA_ROOT. H Help (single ?) is returned if VALUE is not valid. R Record identified by IENS is verified to exist and to be editable. Donot  include \R\ if there are placeholders in the IENS. U Don't perform key validation. Without this flag, the data in VALUE ischecked to ensure that no duplicate keys are created and that key field values are not deleted.{:/} | 
 | {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the value to be validated.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

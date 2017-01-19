@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the type of irradiation instance - \CT\ or \FLUORO\.{:/} | 
 | {::nomarkdown}SERUID{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the series UID related to the irradiation dosage instance.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

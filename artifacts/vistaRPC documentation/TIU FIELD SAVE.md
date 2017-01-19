@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVE^[TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
  Method comment | Save Template Field
- First comment | {::nomarkdown}Input:<br/>TIUDA=IEN of TEMPLATE record<br/>TIUX(SEQ)=IEN of item<br/>Output:<br/>SUCCESS=IEN of item if successful, or<br/>0^ Explanatory message if not{:/}
+ First comment | {::nomarkdown} Input:<br/>   TIUDA=IEN of TEMPLATE record<br/>   TIUX(SEQ)=IEN of item<br/> Output:<br/>   SUCCESS=IEN of item if successful, or<br/>           0^ Explanatory message if not{:/}
  Input parameters | {::nomarkdown}TIUDA<br>TIUX{:/}
  Code | {::nomarkdown}  N FLD,TMP<br> S SUCCESS=""<br> I (+TIUDA'>0)!($G(TIUX(.01))'="") D  Q:$P(SUCCESS,U,1)="0"<br> . I $L($G(TIUX(.01)))<3 D  Q<br> . . S SUCCESS="0^Template Field name must be at least 3 characters"<br> . S TIUX(.01)=$$UPPER^TIULS(TIUX(.01))<br> . N FOUNDIEN<br> . S FOUNDIEN=$O(^TIU(8927.1,"B",TIUX(.01),0))<br> . I FOUNDIEN>0,FOUNDIEN'=TIUDA D  Q<br> . . S SUCCESS="0^"_TIUX(.01)_" is not a unique name"<br> . I +TIUDA'>0 D<br> . . S TIUDA=$$CREATE($G(TIUX(.01)))<br> S SUCCESS=TIUDA Q:'+SUCCESS<br> D LOCK^TIUSRVF1(.TMP,TIUDA)<br> I TMP=0 D  Q<br> . S SUCCESS="0^Template Field currently being edited by another user"<br> F FLD=2,10 D<br> . I +$O(TIUX(FLD,0)) D  Q:$D(TIUX)'>9<br> . . K ^TIU(8927.1,TIUDA,FLD)<br> . . I $G(TIUX(FLD,1))="@" K TIUX(FLD) Q<br> . . M ^TIU(8927.1,TIUDA,FLD)=TIUX(FLD) K TIUX(FLD)<br> . . D SETXT0(TIUDA,FLD)<br> I $D(TIUX)>9 D FILE(.SUCCESS,""""_TIUDA_",""",.TIUX)<br> D UNLOCK^TIUSRVF1(.TMP,TIUDA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

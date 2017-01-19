@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID<br>DFN{:/}
  Code | {::nomarkdown}  Q:'+ORID<br> I $G(DFN) N ORVP S ORVP=DFN_";DPT("<br> S LST="^TMP(""ORTXT"",$J)"<br> D DETAIL^ORQ2(.LST,ORID)<br> K @LST@("VIDEO")<br> S LST=$NA(^TMP("ORTXT",$J)),@LST=""{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

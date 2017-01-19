@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array list of Integration Control Numbers of patients in the PATIENT file (#2).  Format: ICNLST(1)=1001000001, ICNLST(2)=1001000002, etc.{:/} | 
 | {::nomarkdown}DAYS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The number of days back from current date to begin search from.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

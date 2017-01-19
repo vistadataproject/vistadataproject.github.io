@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISAPROV^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Is user a provider?
- First comment | {::nomarkdown}Checks USR CLASS PROVIDER AND 200 Person Class<br/>DATE must not include time (for ISA^USRLM){:/}
+ First comment | {::nomarkdown} Checks USR CLASS PROVIDER AND 200 Person Class<br/> DATE must not include time (for ISA^USRLM){:/}
  Input parameters | {::nomarkdown}USER<br>DATE{:/}
  Code | {::nomarkdown}  S USER=$G(USER,DUZ)<br> S DATE=$G(DATE,DT)<br> S TIUY=$$PROVIDER^TIUPXAP1(USER,DATE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

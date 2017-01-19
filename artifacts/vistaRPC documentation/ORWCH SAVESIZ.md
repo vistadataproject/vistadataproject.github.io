@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVESIZ^[ORWCH](http://code.osehra.org/dox/Routine_ORWCH_source.html)
  Method comment | save the bounds for a particular control
- First comment | {::nomarkdown}NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
+ First comment | {::nomarkdown} NAM=frmName or frmName.ctrlName  VAL=left,top,width,height{:/}
  Input parameters | {::nomarkdown}NAM<br>VAL{:/}
  Code | {::nomarkdown}  D EN^XPAR(DUZ_";VA(200,","ORWCH BOUNDS",NAM,VAL,.ORERR){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}ORY=1 if there is an active lock and ORY=0 if no active lock{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:'$D(^XTMP("OR DEA PIN LOCK",DUZ))<br> N ORDIFF<br> S ORDIFF=$$FMDIFF^XLFDT($$NOW^XLFDT,$G(^XTMP("OR DEA PIN LOCK",DUZ)),2)<br> I ORDIFF<900 S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

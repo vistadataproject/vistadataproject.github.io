@@ -26,7 +26,7 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | GRPSEQB^[ORWORDG](http://code.osehra.org/dox/Routine_ORWORDG_source.html)
- First comment | {::nomarkdown}Call GRPSEQ, format for broker:<br/>Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name{:/}
+ First comment | {::nomarkdown} Call GRPSEQ, format for broker:<br/>   Y(n)=Ptr to Display Group ^ Sequence ^ Top Level Display Group Name{:/}
  Code | {::nomarkdown}  N C,I,X<br> D GRPSEQ(.X)<br> S C=0,I=0<br> F  S I=$O(X(I)) Q:I=""  S C=C+1,Y(C)=I_U_X(I){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

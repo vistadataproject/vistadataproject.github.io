@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}NARR<br>CODE{:/}
  Code | {::nomarkdown}  S ORY=$$SETNARR(NARR,CODE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

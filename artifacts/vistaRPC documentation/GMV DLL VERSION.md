@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DLL^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
  Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
- First comment | {::nomarkdown}RESULT = variable name to return check<br/>GMVX = dll name and version date/time<br/>Returns yes or no  {:/}
+ First comment | {::nomarkdown} RESULT = variable name to return check<br/>   GMVX = dll name and version date/time<br/> Returns yes or no  {:/}
  Input parameters | {::nomarkdown}GMVX{:/}
  Code | {::nomarkdown}  S RESULT=$$GET^XPAR("SYS","GMV DLL VERSION",GMVX,"E")<br> S:RESULT="" RESULT="NO"<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

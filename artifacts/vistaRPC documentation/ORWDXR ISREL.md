@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN{:/}
  Code | {::nomarkdown}  N STS S STS=$P(^OR(100,+ORIFN,3),U,3)<br> S VAL=$S(STS=10:0,STS=11:0,1:1)  ; false if delayed or unreleased order{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

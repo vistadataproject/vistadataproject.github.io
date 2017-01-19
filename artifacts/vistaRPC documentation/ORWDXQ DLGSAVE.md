@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}CRC<br>DNAME<br>DGRP<br>RSP{:/}
  Code | {::nomarkdown}  N ROOT,NM,IEN<br> S ROOT="ORWDQ "_CRC,VAL=0,IEN=+$O(^ORD(101.41,"B",ROOT,0))<br> I IEN=0 D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP) I 1<br> E  I $$MATCH(IEN,DGRP,.RSP) S VAL=IEN I 1<br> E  D<br> . D UPDQNAME^ORCMEDT8(IEN)<br> . S ROOT=$$ENSURNEW^ORCMEDT8(ROOT)<br> . D SAVENEW(.VAL,ROOT,DNAME,DGRP,.RSP){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

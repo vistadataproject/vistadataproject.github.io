@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ODSLCT^[ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  Method comment | return default lists for dialog
- First comment | {::nomarkdown}PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient){:/}
+ First comment | {::nomarkdown} PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient){:/}
  Input parameters | {::nomarkdown}PSTYPE<br>DFN<br>LOC{:/}
  Code | {::nomarkdown}  N ILST S ILST=0<br> S ILST=ILST+1,LST(ILST)="~Priority" D PRIOR<br> S ILST=ILST+1,LST(ILST)="~DispMsg"<br> S ILST=ILST+1,LST(ILST)="d"_$$DISPMSG<br> I PSTYPE="O" D                                ; Outpatient<br> . S ILST=ILST+1,LST(ILST)="~Refills"<br> . S ILST=ILST+1,LST(ILST)="d0^0"<br> . S ILST=ILST+1,LST(ILST)="~Pickup"<br> . S ILST=ILST+1,LST(ILST)="d"_$$DEFPICK($G(LOC))<br> . ; S ILST=ILST+1,LST(ILST)="~Supply"<br> . ; S ILST=ILST+1,LST(ILST)="d^"_$$DEFSPLY(DFN){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

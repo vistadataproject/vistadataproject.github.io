@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DELPDL^[ORWDBA2](http://code.osehra.org/dox/Routine_ORWDBA2_source.html)
  Method comment | Delete from Personal Diagnosis List
- First comment | {::nomarkdown}Delete a selected diagnosis code or group of diagnoses codes from a<br/>Clinician's Personal DX List.<br/>Input Variables:<br/>ORCIEN    Clinician Internal ID number<br/>ORDXA     Array of dx codes to be deleted from personal dx list<br/>Output Variable:<br/>Y         Return value, 1 successful, 0 unsuccessful<br/>Local Variables:<br/>DXI       Diagnosis code array index<br/>EM        Error Message<br/>FDA       FileMan Data Array<br/>IEN       Interanl Entry Number<br/>RF        Record Found{:/}
+ First comment | {::nomarkdown}Delete a selected diagnosis code or group of diagnoses codes from a<br/>Clinician's Personal DX List.<br/>Input Variables:<br/>  ORCIEN    Clinician Internal ID number<br/>  ORDXA     Array of dx codes to be deleted from personal dx list<br/>Output Variable:<br/>  Y         Return value, 1 successful, 0 unsuccessful<br/>Local Variables:<br/>  DXI       Diagnosis code array index<br/>  EM        Error Message<br/>  FDA       FileMan Data Array<br/>  IEN       Interanl Entry Number<br/>  RF        Record Found{:/}
  Input parameters | {::nomarkdown}ORCIEN<br>ORDXA{:/}
  Code | {::nomarkdown}  N DXI,EM,FDA,IEN,RF<br> D GETS^DIQ(200,ORCIEN,"351*,","","RF","EM")<br> I $D(RF)=0 S Y=0 Q<br> S IEN="" F  S IEN=$O(RF(200.0351,IEN)) Q:IEN=""  D<br> .S DXI="" F  S DXI=$O(ORDXA(DXI)) Q:DXI=""  D<br> .. I RF(200.0351,IEN,.01)=ORDXA(DXI) D<br> ... D FDA^DILF(200.0351,IEN,.01,"","@","FDA","EM")<br> ... D FILE^DIE("","FDA","EM")<br> S Y=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

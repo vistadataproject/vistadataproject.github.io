@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTABS^[ORWTPO](http://code.osehra.org/dox/Routine_ORWTPO_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}get tab names for patient chart{:/}
+ First comment | {::nomarkdown} get tab names for patient chart{:/}
  Code | {::nomarkdown}  K VALUES<br> D PDSET^ORWTPUP("ORCH INITIAL TAB",.VALUES){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

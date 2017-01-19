@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NOTICE^[DGSEC4](http://code.osehra.org/dox/Routine_DGSEC4_source.html)
  Method comment | RPC/API entry point for log entry and message generation
- First comment | {::nomarkdown}Input parameters:  <br/>DFN    = Patient file DFN<br/>DGOPT  = Option name^Menu text (Optional)<br/>ACTION = 1 - Set DG Security Log entry, 2 - Generate mail <br/>message, 3 - Both (Optional - Defaults to both)<br/>Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value)<br/>0 - Required variable undefined{:/}
+ First comment | {::nomarkdown}Input parameters:  <br/>  DFN    = Patient file DFN<br/>  DGOPT  = Option name^Menu text (Optional)<br/>  ACTION = 1 - Set DG Security Log entry, 2 - Generate mail <br/>           message, 3 - Both (Optional - Defaults to both)<br/><br/>Output:  RESULT = 1 - DG Security Log updated and/or Sensitive Record msg sent (Determined by ACTION value)<br/>                  0 - Required variable undefined<br/>{:/}
  Input parameters | {::nomarkdown}DFN<br>DGOPT<br>ACTION{:/}
  Code | {::nomarkdown}  I $G(DFN)="" S RESULT=0 Q<br> I $G(DUZ)="" S RESULT=0 Q<br> S DGOPT=$G(DGOPT)<br> I $G(ACTION)="" S ACTION=3<br> I ACTION'=1 D BULTIN1^DGSEC(DFN,DUZ,DGOPT)<br> I ACTION'=2 D SETLOG1^DGSEC(DFN,DUZ,,DGOPT)<br> S RESULT=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

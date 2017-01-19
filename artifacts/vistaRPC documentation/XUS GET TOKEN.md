@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | rpc. Auto Signon Handle
  Code | {::nomarkdown}  N HDL<br> S RET="NOT AUTHENTICATED"<br> I $G(DUZ)<1 Q  ;Not an authenticated user<br> I $G(DUZ("LOA"))=1 Q  ;Not an authenticated user<br> S HDL=$$HANDLE("XWBAS",1),RET="~1"_HDL<br> D TOK(HDL){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

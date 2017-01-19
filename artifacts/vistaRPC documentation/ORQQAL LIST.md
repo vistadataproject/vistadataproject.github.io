@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
  Method comment | RETURN PATIENT'S ALLERGY/ADVERSE REACTION INFO:
- First comment | {::nomarkdown}null:no allergy assessment, 0:no known allergies, 1:pt has allergies<br/>if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien{:/}
+ First comment | {::nomarkdown} null:no allergy assessment, 0:no known allergies, 1:pt has allergies<br/> if 1 also get: allergen/reactant^reaction/symptom^severity^allergy ien{:/}
  Input parameters | {::nomarkdown}ORPT{:/}
  Code | {::nomarkdown}  N I,J,K,GMRARXN,GMRA<br> S I=1,J=0,K=0<br> D EN1^GMRAOR1(ORPT,"GMRARXN")<br> I $G(GMRARXN)="" S ORAY(I)="^No Allergy Assessment"<br> I $G(GMRARXN)=0 S ORAY(I)="^No Known Allergies"<br> I $G(GMRARXN)=1 F  S J=$O(GMRARXN(J)) Q:J=""  S ORAY(I)=$P(GMRARXN(J),"^",3)_"^"_$P(GMRARXN(J),"^")_"^"_$P(GMRARXN(J),"^",2) D SIGNS S I=I+1<br> S:'$D(ORAY(1)) ORAY(1)="^No allergies found."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

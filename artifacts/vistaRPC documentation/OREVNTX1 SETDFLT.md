@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}EVT{:/}
  Code | {::nomarkdown}  N ERR,VAL S ERR=""<br> Q:'$D(^ORD(100.5,EVT,0))<br> S VAL=$P(^ORD(100.5,EVT,0),U)<br> D EN^XPAR(DUZ_";VA(200,","OREVNT DEFAULT",1,VAL,ERR)<br> S ORY=ERR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

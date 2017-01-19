@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIEN{:/}
  Code | {::nomarkdown}  N X1<br> I '$D(^ORD(101.43,ORIEN)) S ORY=-1 Q<br> S X1=$G(^ORD(101.43,ORIEN,.1))<br> I +X1,+X1<$$NOW^XLFDT S ORY=-1 Q<br> S ORY=$P($$USID^ORWDXC(ORIEN),U,4){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

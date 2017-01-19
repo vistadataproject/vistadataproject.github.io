@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DLGNAME^[ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  Method comment | Return name(s) of dialog & base dialog given IEN
- First comment | {::nomarkdown}VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName{:/}
+ First comment | {::nomarkdown} VAL=InternalName^DisplayName^BaseDialogIEN^BaseDialogName{:/}
  Input parameters | {::nomarkdown}DLG{:/}
  Code | {::nomarkdown}  N INT,EXT,BIEN,BNAM<br> S INT=$P($G(^ORD(101.41,DLG,0)),U),EXT=$P($G(^(0)),U,2)<br> S BNAM=INT,BIEN=DLG<br> I $P(^ORD(101.41,DLG,0),U,4)="Q" D<br> . N DGRP S DGRP=$P($G(^ORD(101.41,DLG,0)),U,5) Q:'DGRP<br> . S BIEN=$$DEFDLG^ORWDXQ(DGRP),BNAM=$P(^ORD(101.41,BIEN,0),U)<br> S VAL=INT_U_EXT_U_BIEN_U_BNAM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

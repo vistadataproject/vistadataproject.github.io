@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>IP<br>HWND{:/}
  Code | {::nomarkdown}  S NODE="ORWCV "_IP_"-"_HWND_"-"_DFN,ILST=0,DONE=0<br> S ^XTMP(NODE,"STOP")=1,OK=1<br> L +^XTMP(NODE):$S($G(DILOCKTM)>0:DILOCKTM,1:5)<br> I $G(^XTMP(NODE,"DONE")) K ^XTMP(NODE)<br> L -^XTMP(NODE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

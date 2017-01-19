@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>TERM<br>TEXT{:/}
  Code | {::nomarkdown}  S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

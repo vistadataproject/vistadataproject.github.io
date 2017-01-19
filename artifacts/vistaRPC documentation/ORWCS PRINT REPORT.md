@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PRINT^[ORWCSP](http://code.osehra.org/dox/Routine_ORWCSP_source.html)
  Method comment | print report entry point
- First comment | {::nomarkdown}RPC: ORWCS PRINT REPORT<br/>See RPC definition for details on input and output parameters{:/}
+ First comment | {::nomarkdown}  RPC: ORWCS PRINT REPORT<br/>  See RPC definition for details on input and output parameters<br/>{:/}
  Input parameters | {::nomarkdown}ORIO<br>DFN<br>ORID{:/}
  Code | {::nomarkdown}  IF '$$CHK() G PRINTQ<br> N TASKDATA<br> S TASKDATA("DESC")="Consult Report Print"<br> S TASKDATA("RTN")="DEQUE^ORWCSP"<br> D TASK(.ORY,.ORIO,.DFN,.ORID,.TASKDATA){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

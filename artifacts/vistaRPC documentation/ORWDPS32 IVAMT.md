@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}OI<br>ORWTYP{:/}
  Code | {::nomarkdown}  N I,PSOI,ORWY,AMT<br> S PSOI=+$P($G(^ORD(101.43,OI,0)),U,2)_ORWTYP,VAL=""<br> D ENVOL^PSJORUT2(PSOI,.ORWY)<br> I ORWTYP="B" D<br> . S I=0 F  S I=$O(ORWY(I)) Q:I'>0  S AMT(+ORWY(I))="" D<br> . . I ORWY(I)<1 D  ;SBR<br> . . . K AMT(+ORWY(I))<br> . . . S AMT(0_+ORWY(I))=""<br> . S AMT=0,VAL="ML" F  S AMT=$O(AMT(AMT)) Q:AMT'>0  S VAL=VAL_U_AMT<br> I ORWTYP="A" D<br> . S I=+$O(ORWY(0)) S VAL=$P($G(ORWY(I)),U,2)<br> . I '$L(VAL) S VAL="ML^LITER^MCG^MG^GM^UNITS^IU^MEQ^MM^MU^THOUU^MG-PE^NANOGRAM^MMOL"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

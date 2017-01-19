@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IFN{:/}
  Code | {::nomarkdown}  I $L(IFN,";")=1 S IFN=IFN_";1"<br> D TEXT^ORQ12(.LST,IFN,255){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

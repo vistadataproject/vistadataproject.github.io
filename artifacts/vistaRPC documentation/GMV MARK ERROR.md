@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMVDATA{:/}
  Code | {::nomarkdown}  N GMVFDA,GMVIEN,GMVIENS<br> I '$D(^GMR(120.5,+GMVDATA,0))#2 S RESULT="ERROR: Record Not Found" Q<br> S GMVIENS=(+GMVDATA)_","<br> S GMVFDA(120.5,GMVIENS,2)=1<br> S GMVFDA(120.5,GMVIENS,3)=$P(GMVDATA,"^",2)<br> S GMVFDA(120.506,"+1,"_GMVIENS,.01)=$P(GMVDATA,"^",3)<br> D UPDATE^DIE("","GMVFDA","GMVIEN")<br> S RESULT="OK"{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

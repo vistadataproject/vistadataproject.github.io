@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}HANDLE<br>ID{:/}
  Code | {::nomarkdown}  N X,ORIFN,ORID,ORCNT,ORTN,ORENT,ORRTN<br> S ROOT=""<br> I $G(HANDLE)="" S ROOT(0)="-1^Bad Handle" Q<br> I '$D(^XTMP(HANDLE)) S ROOT(0)="-1^Bad Handle" Q<br> S ORID=$O(^ORD(101.24,"AC",ID,0))<br> I $G(ORID)="" S ROOT(0)="-1^No ID match" Q<br> S ORCNT=$O(^ORD(101.24,ORID,3,"C",9999),-1)<br> I $G(ORCNT)="" S ROOT(0)="-1^No Columns for Report" Q<br> S ORTN=$P(^ORD(101.24,ORID,4),"^",6),ORENT=$P(^(4),"^",7)<br> I '$L(ORTN) S ROOT(0)="-1^No HDR Routine exists" Q<br> S ORRTN=ORENT_"^"_ORTN<br> I '$L($T(@ORRTN)) S ROOT(0)="-1^HDR Routine non-existant" Q<br> D @ORRTN{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID{:/}
  Code | {::nomarkdown}  Q:'$D(^OR(100,+ORID,0))<br> S ORY=$P($G(^OR(100,+ORID,0)),U,17){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

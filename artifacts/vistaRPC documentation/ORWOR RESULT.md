@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORID<br>ID{:/}
  Code | {::nomarkdown}  K ^TMP("ORXPND",$J)<br> N ORESULTS,ORVP,LCNT S ORESULTS=1,LCNT=0,ORVP=DFN_";DPT("<br> D ORDERS^ORCXPND1<br> K ^TMP("ORXPND",$J,"VIDEO")<br> S REF=$NA(^TMP("ORXPND",$J)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

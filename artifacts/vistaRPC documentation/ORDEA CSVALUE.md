@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID{:/}
  Code | {::nomarkdown}  N OROI,ORPSTYPE,ORRXDG<br> S ORY=0,ORPSTYPE=""<br> S OROI=$$OI^ORQOR2(+ORID)<br> S ORRXDG=$$DGRX^ORQOR2(+ORID)<br> I ORRXDG="UNIT DOSE MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="INPATIENT MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="IV MEDICATIONS" S ORPSTYPE="I"<br> I ORRXDG="OUTPATIENT MEDICATIONS" S ORPSTYPE="O"<br> I ORRXDG="PHARMACY" S ORPSTYPE="O"<br> Q:ORPSTYPE=""<br> D CSCHECK(.ORY,OROI,ORPSTYPE)<br> S ORY=+ORY{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

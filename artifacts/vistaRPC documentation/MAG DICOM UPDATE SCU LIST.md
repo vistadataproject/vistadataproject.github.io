@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}APP{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}10000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array. Each element of thisarray must contain 7 non-empty values, separated by carets (\^\):  1: Service Application Name  2: Service Provider Application Entity Title  3: IP Address  4: Port Number  5: Gateway System Title  6: Gateway Application Entity Title  7: Gateway Location Pointer (#4){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

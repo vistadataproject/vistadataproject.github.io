@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORID<br>ORDUZ{:/}
  Code | {::nomarkdown}  I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)<br> I $L($G(ORDUZ))<1 S ORDUZ=DUZ<br> S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

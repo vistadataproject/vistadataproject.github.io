@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ROOT<br>USER{:/}
  Code | {::nomarkdown}  N CLASS,TIUERR<br> S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)<br> I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"<br> E  D<br> .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)<br> .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

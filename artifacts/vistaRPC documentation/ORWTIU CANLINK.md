@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CANLINK^[ORWTIU](http://code.osehra.org/dox/Routine_ORWTIU_source.html)
  Method comment | Can the title be an ID child?
- First comment | {::nomarkdown}DBIA #2322{:/}
+ First comment | {::nomarkdown} DBIA #2322{:/}
  Input parameters | {::nomarkdown}ORTITLE{:/}
  Code | {::nomarkdown}  S ORY=$$CANLINK^TIULP(ORTITLE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

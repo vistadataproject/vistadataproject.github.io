@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ADDCATS{:/}
  Code | {::nomarkdown}  N IEN,CNT,BINDEX,REC<br> S (IEN,CNT,BINDEX)=0,ADDCATS=+$G(ADDCATS)<br> F  S BINDEX=$O(^AUTTHF("B",BINDEX)) Q:BINDEX']""  D<br> .F  S IEN=$O(^AUTTHF("B",BINDEX,IEN)) Q:'+IEN  D<br> ..S REC=$G(^AUTTHF(IEN,0))<br> ..I +$P(REC,U,11) S REC=""<br> ..I 'ADDCATS,$P(REC,U,10)="C" S REC=""<br> ..I REC'="" D<br> ...S CNT=CNT+1,ORWLST(CNT)=IEN_U_$P(REC,U)<br> ...I ADDCATS S ORWLST(CNT)=ORWLST(CNT)_U_$P(REC,U,10)_U_$P(REC,U,3){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

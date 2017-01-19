@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SCHREQ^[ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  Method comment | return 1 if schedule is required
- First comment | {::nomarkdown}OI=orderable item, RTE=ptr route, DRG=ptr dispense drug{:/}
+ First comment | {::nomarkdown} OI=orderable item, RTE=ptr route, DRG=ptr dispense drug{:/}
  Input parameters | {::nomarkdown}OI<br>RTE<br>DRG{:/}
  Code | {::nomarkdown}  S VAL=1<br> Q:'$G(OI)  Q:'$G(RTE)<br> S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

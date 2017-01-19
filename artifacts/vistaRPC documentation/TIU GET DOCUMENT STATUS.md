@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUIEN{:/}
  Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)<br> S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

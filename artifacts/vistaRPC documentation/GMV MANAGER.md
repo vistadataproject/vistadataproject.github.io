@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPC^[GMVRPCM](http://code.osehra.org/dox/Routine_GMVRPCM_source.html)
  Method comment | [Procedure] Main RPC call tag
- First comment | {::nomarkdown}RPC: [GMV MANAGER]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
+ First comment | {::nomarkdown} RPC: [GMV MANAGER]<br/><br/> Input parameters<br/>  1. RESULTS [Reference/Required] RPC Return array<br/>  2. OPTION [Literal/Required] RPC Option to execute<br/>  3. DATA [Literal/Required] Other data as required for call<br/>{:/}
  Input parameters | {::nomarkdown}OPTION<br>DATA{:/}
  Code | {::nomarkdown}  N GMV,GMVCAT,GMVDESC,GMVENT,GMVERR,GMVFDA,GMVFLD,GMVIEN,GMVIT,GMVNAM,GMVNAME,GMVNEW,GMVOLD,GMVOWN,GMVOWNER,GMVQUAL,GMVROOT,GMVTYPE,GMVVAL,GMVVIT,GMVSCRN<br> S RESULTS=$NA(^TMP("GMVMGR",$J)) K @RESULTS<br> D:$T(@OPTION)]"" @OPTION<br> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br> D CLEAN^DILF{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

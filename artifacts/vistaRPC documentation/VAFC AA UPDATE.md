@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ARRAA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}2000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}ARRAA may contain the following values:The values are passed into this RPC from the Master Patient Index (MPI).      ARRAA(\HL7V2_4\)= value for HL7V2_4 (#.02) field AND/OR     ARRAA(\HL7V3_0\)= value for HL7V3_0 (#.03) field     ARRAA(\SOURCEID\)= value for DEFAULT SOURCE ID TYPE (#.04) field{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

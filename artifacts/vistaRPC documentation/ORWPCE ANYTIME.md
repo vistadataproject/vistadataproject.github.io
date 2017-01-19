@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns status of the ORWPCE ANYTIME ENCOUNTERS parameter
  Code | {::nomarkdown}  N SRV<br> S SRV=$P($G(^VA(200,DUZ,5)),U)<br> S ORY=$$GET^XPAR(DUZ_";VA(200,^SRV.`"_+$G(SRV)_"^DIV^SYS","ORWPCE ANYTIME ENCOUNTERS",1,"Q")<br> I +ORY S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

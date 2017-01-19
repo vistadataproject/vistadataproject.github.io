@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DGRP{:/}
  Code | {::nomarkdown}  S VAL=$P($G(^ORD(100.98,DGRP,0)),U,3)<br> S:VAL="D AO" VAL="A" S VAL=$E(VAL){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

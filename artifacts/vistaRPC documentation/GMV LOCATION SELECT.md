@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPC^[GMVRPCHL](http://code.osehra.org/dox/Routine_GMVRPCHL_source.html)
  Method comment | [Procedure] Main RPC call tag
- First comment | {::nomarkdown}RPC: [GMV LOCATION SELECT]<br/>Input parameters<br/>1. RESULTS [Reference/Required] RPC Return array<br/>2. OPTION [Literal/Required] RPC Option to execute<br/>3. DATA [Literal/Required] Other data as required for call{:/}
+ First comment | {::nomarkdown} RPC: [GMV LOCATION SELECT]<br/><br/> Input parameters<br/>  1. RESULTS [Reference/Required] RPC Return array<br/>  2. OPTION [Literal/Required] RPC Option to execute<br/>  3. DATA [Literal/Required] Other data as required for call<br/>{:/}
  Input parameters | {::nomarkdown}OPTION<br>DATA{:/}
  Code | {::nomarkdown}  S RESULTS=$NA(^TMP("GMVHLOC",$J)) K @RESULTS<br> D:$T(@OPTION)]"" @OPTION<br> S:'$D(@RESULTS) @RESULTS@(0)="-1^No results returned"<br> D CLEAN^DILF,KVAR^VADPT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

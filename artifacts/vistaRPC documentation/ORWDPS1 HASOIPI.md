@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}QOID{:/}
  Code | {::nomarkdown}  N PIIEN,OIX<br> S Y=0<br> Q:'$D(^ORD(101.41,QOID,0))<br> S PIIEN=$O(^ORD(101.41,"B","OR GTX PATIENT INSTRUCTIONS",0))<br> Q:'PIIEN<br> S OIX=0<br> Q:'$D(^ORD(101.41,QOID,6,"D"))<br> F  S OIX=$O(^ORD(101.41,+QOID,6,"D",OIX)) Q:'OIX  D<br> . I OIX=PIIEN S Y=1 Q{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

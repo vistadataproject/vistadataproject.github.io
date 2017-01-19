@@ -32,8 +32,8 @@ title: VISTA RPC documentation
  property | value 
  --- | --- 
  Method | DIALOG^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- First comment | {::nomarkdown}DBIA 3080{:/}
+ First comment | {::nomarkdown} DBIA 3080{:/}
  Input parameters | {::nomarkdown}ORREM<br>DFN{:/}
  Code | {::nomarkdown}  N DIEN<br> D DIALOG^PXRMRPCC(.ORY,ORREM,DFN)<br> I $P($G(ORY(1)),U)=-1 Q<br> S DIEN=$G(^PXD(811.9,ORREM,51))<br> S ORY(0)=0_U_+$P($G(^PXRMD(801.41,DIEN,0)),U,17){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

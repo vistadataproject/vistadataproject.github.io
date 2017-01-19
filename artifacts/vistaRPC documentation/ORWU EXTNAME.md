@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EXTNAME^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return external form of pointer
- First comment | {::nomarkdown}IEN=internal number, FN=file number{:/}
+ First comment | {::nomarkdown} IEN=internal number, FN=file number{:/}
  Input parameters | {::nomarkdown}IEN<br>FN{:/}
  Code | {::nomarkdown}  N REF S REF=$G(^DIC(FN,0,"GL")),VAL=""<br> I $L(REF),+IEN S VAL=$P($G(@(REF_IEN_",0)")),U){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

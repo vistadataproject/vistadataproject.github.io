@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORIFN{:/}
  Code | {::nomarkdown}  N ORI,CNT,OR0,OR3,OR6,ACTION<br> K ^TMP("ORACTXT",$J)<br> S ORY="^TMP(""ORACTXT"",$J)",ORI=$P(ORIFN,";",2)<br> S CNT=0,ORIFN=+ORIFN,OR0=$G(^OR(100,ORIFN,0)),OR3=$G(^(3)),OR6=$G(^(6))<br> F  S ORI=$O(^OR(100,+ORIFN,8,ORI)) Q:ORI'>0  S ACTION=$G(^(ORI,0)) D ACT^ORQ20<br> S ORY=$NA(^TMP("ORACTXT",$J)),@ORY=""{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

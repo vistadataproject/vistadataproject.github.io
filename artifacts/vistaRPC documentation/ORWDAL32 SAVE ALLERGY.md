@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORALIEN<br>ORDFN<br>OREDITED{:/}
  Code | {::nomarkdown}  N ORNODE<br> S ORNODE=$NAME(^TMP("GMRA",$J))<br> K @ORNODE M @ORNODE=OREDITED<br> S ORY=0<br> I $G(@ORNODE@("GMRAERR"))="YES" D EIE^GMRAGUI1(ORALIEN,ORDFN,ORNODE) Q  ;Handle entered in error<br> I $G(@ORNODE@("GMRANKA"))="YES" D NKA^GMRAGUI1 Q<br> D UPDATE^GMRAGUI1(ORALIEN,ORDFN,ORNODE) Q  ;Add/edit reactions{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

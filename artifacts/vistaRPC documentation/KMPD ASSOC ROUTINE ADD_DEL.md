@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAM1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Ien for file #8972.1 (CM CODE EVALUATOR).{:/} | 
 | {::nomarkdown}PARAM2{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array containing routine names to be entered into field #11 (ASSOCIATEDROUTINE).         ARRAY(1)=\ROUTINE1\        ARRAY(2)=\ROUTINE2\        ARRAY(...)=\...\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

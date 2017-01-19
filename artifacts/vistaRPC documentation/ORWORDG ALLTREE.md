@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Return the tree for all display groups
  Code | {::nomarkdown}  N ROOT,ILST<br> S ILST=0,ROOT=$O(^ORD(100.98,"B","ALL",0))<br> S ILST=ILST+1,LST(ILST)=ROOT_U_"ALL SERVICES^0^+"<br> D LSTCHLD(ROOT){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

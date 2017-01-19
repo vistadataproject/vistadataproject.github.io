@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CXNOSHOW^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Should workload requirement be skipped for this note's visit?
- First comment | {::nomarkdown}RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS<br/>1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
+ First comment | {::nomarkdown} RETURN VALUE:  0=SKIP ALL GUI WORKLOAD REQUIREMENTS<br/>                1=CONTINUE WITH OTHER GUI WORKLOAD LOGIC{:/}
  Input parameters | {::nomarkdown}ORDOCIEN{:/}
  Code | {::nomarkdown}  N ORTIU<br> D DOCPARM^TIUSRVP1(.ORTIU,ORDOCIEN)          ; DBIA #4331<br> S ORY=+$$CHKWKL^TIUPXAP2(ORDOCIEN,ORTIU(0))  ; DBIA #4332<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}SPEC{:/}
  Code | {::nomarkdown}  I +$G(SPEC)<1 S Y(1)="^No specialty identified" Q <br> N ORI,DFN<br> S ORI=1,DFN=0<br> F  S DFN=$O(^DPT("ATR",SPEC,DFN)) Q:DFN'>0  S Y(ORI)=+DFN_"^"_$P(^DPT(+DFN,0),"^"),ORI=ORI+1<br> S:+$G(Y(1))<1 Y(1)="^No patients found."{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

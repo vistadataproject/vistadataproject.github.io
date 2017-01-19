@@ -37,8 +37,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPC^[GMVPAR](http://code.osehra.org/dox/Routine_GMVPAR_source.html)
  Method comment | [Procedure] Main RPC Hit Point
- First comment | {::nomarkdown}RPC: [GMV PARAMETER]<br/>Requires that the parameter name in PAR<br/>be in the GMV namespace.<br/>Input parameters<br/>1. RESULTS [Literal/Required] No description<br/>2. OPTION [Literal/Required] No description<br/>3. ENT [Literal/Required] No description<br/>4. PAR [Literal/Required] No description<br/>5. INST [Literal/Required] No description<br/>6. VAL [Literal/Required] No description{:/}
+ First comment | {::nomarkdown} RPC: [GMV PARAMETER]<br/><br/> Requires that the parameter name in PAR<br/> be in the GMV namespace.<br/><br/> Input parameters<br/>  1. RESULTS [Literal/Required] No description<br/>  2. OPTION [Literal/Required] No description<br/>  3. ENT [Literal/Required] No description<br/>  4. PAR [Literal/Required] No description<br/>  5. INST [Literal/Required] No description<br/>  6. VAL [Literal/Required] No description<br/>{:/}
  Input parameters | {::nomarkdown}OPTION<br>ENT<br>PAR<br>INST<br>VAL{:/}
  Code | {::nomarkdown}  N ERR,TMP,RET,TXT,IEN,IENS,ROOT<br> S INST=$G(INST,1)<br> S PAR=$G(PAR,"GMV")<br> S RESULTS=$NA(^TMP($J)) K @RESULTS<br> I PAR'?1"GMV".E S ^TMP($J,0)="-1^Non Vitals Measurements Parameter" Q<br> D:$T(@OPTION)]"" @OPTION<br> I +$G(ERR) K @RESULTS S @RESULTS@(0)="-1^Error: "_(+ERR)_" "_$P(ERR,U,2)<br> I '$D(^TMP($J)) S @RESULTS@(0)="-1^No date returned"<br> D CLEAN^DILF{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

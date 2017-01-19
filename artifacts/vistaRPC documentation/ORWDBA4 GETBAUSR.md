@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETBAUSR^[ORWDBA4](http://code.osehra.org/dox/Routine_ORWDBA4_source.html)
  Method comment | GUI RPC CALL
- First comment | {::nomarkdown}Get Billing Awareness By User parameter value<br/>Gets and returns the value of the Enabled Billing Awareness By User<br/>parameter assigned to a provider.<br/>Input Variable:<br/>ORCIEN    Ordering Clinician's Internal Entry Number<br/>Output Variable:<br/>Y         Parameter value, 1 if enabled, 0 if disabled{:/}
+ First comment | {::nomarkdown}Get Billing Awareness By User parameter value<br/>Gets and returns the value of the Enabled Billing Awareness By User<br/>parameter assigned to a provider.<br/>Input Variable:<br/>  ORCIEN    Ordering Clinician's Internal Entry Number<br/>Output Variable:<br/>  Y         Parameter value, 1 if enabled, 0 if disabled{:/}
  Input parameters | {::nomarkdown}ORCIEN{:/}
  Code | {::nomarkdown}  S Y=$$GET^XPAR(ORCIEN_";VA(200,","OR BILLING AWARENESS BY USER",1,"Q")<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

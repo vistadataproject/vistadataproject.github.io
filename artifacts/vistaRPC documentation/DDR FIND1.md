@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PARAMETERS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This array contains the following parameters necessary to call$$FIND1^DIC.    \FILE\ the file or subfile number to search   \IENS\ the IENS that identifies the subfile if FILE is a subfile number   \FLAGS\ possible values include:        A  allow pure numeric input to always be tried as an IEN        M  multiple index allowed        O  only find an exact match if possible        Q  quick lookup        X  exact match only        R  record the ien in ^DISV via RECALL^DILFD   \VALUE\ the lookup value   \XREF\ the indexes that would be searched for a match   \SCREEN\ screen to apply to the record found{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

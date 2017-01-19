@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}NEWEVT<br>ORIDS{:/}
  Code | {::nomarkdown}  N ORI<br> S ORI=0<br> F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D<br> . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>BEG<br>END<br>SKIP{:/}
  Code | {::nomarkdown}  N ERR,ERRMSG<br> S ERR=0 ; kludge to return errors<br> Q:'$G(DFN)<br> D VST(.ORVISIT,DFN,.BEG,.END,$G(SKIP),.ERR,.ERRMSG)<br> I ERR K ORVISIT S ORVISIT(1)=ERRMSG{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

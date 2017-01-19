@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}IEN<br>FIRST<br>LAST{:/}
  Code | {::nomarkdown}  N I<br> F I=FIRST:1:LAST D<br> .;AGP change returned valued to returned data or @ if record does not<br> .;exist. The @ sign is used by the delphi code to identified a<br> .;non-existence record<br> .S LST(I)=$S($D(^ORD(101.44,IEN,20,$G(I)))>0:^ORD(101.44,IEN,20,I,0),1:"@"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

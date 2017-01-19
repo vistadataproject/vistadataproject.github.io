@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CMOR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Station Number to be stored as the CMOR in field 991.03.{:/} | 
 | {::nomarkdown}A08{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If an A08 message needs to be sent this flag should be set to 1.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORTIUDA{:/}
  Code | {::nomarkdown}  S ORY=""<br> N ORTITLE,ORAUTH,ORCOS,ORPSUMCD,ORPROCDT,ORROOT,ORERR,ORREFDT<br> S ORERR="",ORROOT=$NA(^TMP("ORTIU",$J))<br> D EXTRACT^TIULQ(ORTIUDA,.ORROOT,.ORERR,".01;1202;1208;70201;70202;1301",,,"I")<br> S ORTITLE=@ORROOT@(ORTIUDA,".01","I")<br> S ORAUTH=@ORROOT@(ORTIUDA,"1202","I")<br> S ORCOS=@ORROOT@(ORTIUDA,"1208","I")<br> S ORPSUMCD=@ORROOT@(ORTIUDA,"70201","I")<br> S ORPROCDT=@ORROOT@(ORTIUDA,"70202","I")<br> S ORREFDT=@ORROOT@(ORTIUDA,"1301","I")<br> S ORY=ORAUTH_U_ORCOS_U_ORPSUMCD_U_ORPROCDT_U_ORTITLE_U_ORREFDT<br> K @ORROOT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get parameter value for ORWRP CIRN AUTOMATIC
  Code | {::nomarkdown}  S ORY=+$$GET^XPAR("ALL","ORWRP CIRN AUTOMATIC",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

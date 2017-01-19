@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}IBDAV{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}validates that user is holder of specified security key.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

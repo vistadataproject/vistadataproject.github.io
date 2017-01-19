@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ADMCOMPL^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Admin users
- First comment | {::nomarkdown}Administrative complete action{:/}
+ First comment | {::nomarkdown} Administrative complete action{:/}
  Input parameters | {::nomarkdown}ORIEN<br>ORFL<br>ORCOM<br>ORRESP<br>ORALRT<br>ORALTO<br>ORDATE{:/}
  Code | {::nomarkdown}  S Y=$$SFILE^GMRCGUIB(ORIEN,10,ORFL,ORRESP,DUZ,.ORCOM,ORALRT,ORALTO,ORDATE) ; "10"=Admin Complete{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

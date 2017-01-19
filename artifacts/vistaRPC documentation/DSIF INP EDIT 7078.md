@@ -39,4 +39,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}AUTHSVC{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}WP Array, must start with a value of (1)=[text]{:/} | 
 | {::nomarkdown}CONTRACT IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the FEE BASIS CONTRACT file (Optional) If contract is allowed to be deleted, pass in \@\ for IEN{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

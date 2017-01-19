@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SCLST^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  Method comment | RPC for compiling appropriate TxF's
- First comment | {::nomarkdown}RPC titled ORWDBA1 SCLST<br/>Y       =    Returned value<br/>DFN     =    Patient IEN<br/>ORLST   =    List of orders<br/>call for BA/TF{:/}
+ First comment | {::nomarkdown} RPC titled ORWDBA1 SCLST<br/><br/>  Y       =    Returned value<br/>  DFN     =    Patient IEN<br/>  ORLST   =    List of orders<br/><br/> call for BA/TF{:/}
  Input parameters | {::nomarkdown}DFN<br>ORLST{:/}
  Code | {::nomarkdown}  N GMRCPROS,ORD,ORI,ORPKG<br> D CPLSTBA(.Y,DFN,.ORLST){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

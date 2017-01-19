@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PUTQNAM^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Save display name for a quick order dialog
- First comment | {::nomarkdown}see if DLG used QNAM as display text (quit if so)<br/>otherwise save in ORWDQ DISPLAY NAME{:/}
+ First comment | {::nomarkdown} see if DLG used QNAM as display text (quit if so)<br/> otherwise save in ORWDQ DISPLAY NAME{:/}
  Input parameters | {::nomarkdown}DLG<br>QNAM{:/}
  Code | {::nomarkdown} {:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

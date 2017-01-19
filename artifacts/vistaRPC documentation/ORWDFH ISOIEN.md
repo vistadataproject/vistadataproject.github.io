@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Return IEN for the Isolation/Precaution orderable item
  Code | {::nomarkdown}  S VAL=$O(^ORD(101.43,"S.PREC","ISOLATION PROCEDURES",0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

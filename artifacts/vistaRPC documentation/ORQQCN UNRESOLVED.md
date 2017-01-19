@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDFN{:/}
  Code | {::nomarkdown}  S $P(ORY,U,1)=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br> S $P(ORY,U,2)=+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

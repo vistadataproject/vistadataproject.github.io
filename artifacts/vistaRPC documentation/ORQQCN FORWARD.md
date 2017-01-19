@@ -38,8 +38,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FR^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Forward consult/request to another service
- First comment | {::nomarkdown}GMRCO - IEN of consult from File 123<br/>GMRCSS - Service to which consult is being forwarded<br/>GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200<br/>GMRCURGI - Urgency of the request<br/>GMRCORNP - Person who is responsible for forwarding the consult<br/>ORCOM is the comments array explaining the forwarding action<br/>passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
+ First comment | {::nomarkdown}GMRCO - IEN of consult from File 123<br/>GMRCSS - Service to which consult is being forwarded<br/>GMRCATTN - Provider whose attention consult is sent to. Can be "" or pointer to File 200<br/>GMRCURGI - Urgency of the request<br/>GMRCORNP - Person who is responsible for forwarding the consult<br/>ORCOM is the comments array explaining the forwarding action<br/>     passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.{:/}
  Input parameters | {::nomarkdown}GMRCO<br>GMRCSS<br>GMRCORNP<br>GMRCATTN<br>GMRCURGI<br>ORDATE<br>ORCOM{:/}
  Code | {::nomarkdown}  S:+$G(GMRCATTN)=0 GMRCATTN=""<br> S Y=$$FR^GMRCGUIA(GMRCO,GMRCSS,GMRCORNP,GMRCATTN,GMRCURGI,.ORCOM,ORDATE){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

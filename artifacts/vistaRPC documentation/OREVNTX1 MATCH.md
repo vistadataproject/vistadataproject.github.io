@@ -31,4 +31,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>EVT{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:('+DFN)!('+EVT)<br> S ORY=$$MATCH^OREVNT(DFN,EVT)<br> N TS,TSNM<br> S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))<br> S TSNM=$P($G(^DIC(45.7,TS,0)),U)<br> S:ORY ORY=ORY_U_TSNM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get ICD-10 Implementation Date
  Code | {::nomarkdown}  S RESULT=""<br> G:'$L($T(IMPDATE^LEXU)) I10IMPX<br> S RESULT=$$IMPDATE^LEXU("10D"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

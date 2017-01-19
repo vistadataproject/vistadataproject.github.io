@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Identifies the individual in the NEW PERSON File (#200) who should recieve the bulletin generated.{:/} | 
 | {::nomarkdown}DVBAPRTY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Priority of Exam code which inidicates which priorities to filter on.   AO   : Agent Orange   BDD  : Benefits Delivery at Discharge and Quick Start   IDES : Integrated Disability Evaluation System   ALL  : All Others (Original Report with all codes except those above){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

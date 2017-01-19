@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}LOC<br>RPC<br>RPCVER<br>P1<br>P2<br>P3<br>P4<br>P5<br>P6<br>P7<br>P8<br>P9<br>P10{:/}
  Code | {::nomarkdown}  N X,I,INX,N,XWBHL7,XWBPAR,XWBPCNT,XWBDVER,XWBESSO,XWBHDL,PMAX<br> N XWBMSG,XWBSEC,RPCIEN<br> N HLMTIEN,HLDOM,HLECH,HLFS,HLINSTN,HLNEXT,HLNODE,HLPARAM,HLQ,HLQUIT<br> D SETUP(1) I $G(RET(1))'="" Q<br> D DIRECT^XWB2HL7A("ZREMOTE RPC",XWBHDL,.XWBMSG,LOC,.XWBPAR)<br> I $P(XWBMSG,U,2) S RET(0)="-1^"_$P(XWBMSG,"^",3) Q<br> I 'HLMTIEN S RET(0)="-1^No Message returned" Q<br> D RETURN,RTNDATA^XWBDRPC(.RET,XWBHDL){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

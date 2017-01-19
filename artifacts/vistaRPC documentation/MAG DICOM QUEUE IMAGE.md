@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PRIORITY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a positive integer number.This value indicates the relative priority of an entry in thetransmission queue. A higher number indicates a higher priority.The default value of this optional parameter is 500.{:/} | 
 | {::nomarkdown}JBTOHD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a boolean switch that indicateswhether or not a copy of the image file(s) is to be made onRAID. A true value indicates that a copy on magnetic storageis to be made, a false value indicates that no such copy isto be made.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}YSDFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}YSDFN is a pointer to the Patient file #2.{:/} | 
 | {::nomarkdown}YSXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This varible contains \Test Completion Date,Name of the test\, for example3000721,223.The Name of the test and Completion Date are field 0.1 and field 1 of thePsych Instrument Patient file #601.2.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

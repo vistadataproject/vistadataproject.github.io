@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DEFSORT^[ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
  Method comment | Return user's default sort.
- First comment | {::nomarkdown}SLC/PKS - 4/6/2001{:/}
+ First comment | {::nomarkdown} SLC/PKS - 4/6/2001<br/>{:/}
  Code | {::nomarkdown}  N ORSORT,ORSECT,ORPARAM<br> I ('$D(DUZ)) S Y="Unable to determine DUZ." Q<br> S ORSECT=$G(^VA(200,DUZ,5))<br> I +ORSECT>0 S ORSECT=$P(ORSECT,U)<br> S Y="A" ; Default of "Alpha" sort.<br> S ORPARAM="ORLP DEFAULT LIST ORDER"<br> S ORSORT=$$GET^XPAR("USR^SRV.`"_$G(ORSECT)_"^DIV^SYS^PKG",ORPARAM,1,"I")<br> I (ORSORT'="") S Y=ORSORT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

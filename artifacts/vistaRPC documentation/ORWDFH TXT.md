@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S LST(1)="Current Diet:  "_$$DIET^ORCDFH(DFN)<br> N FUTLST D FUT(.FUTLST,DFN) I $D(FUTLST)>1 D<br> . S LST(2)="Future Diet Orders:",ILST=2<br> . S I=0 F  S I=$O(FUTLST(I)) Q:'I  D<br> . . S X=$$FMTE^XLFDT(I,2)_"  "_$P(FUTLST(I),U,2)<br> . . S LST(ILST)=$S(ILST=2:"Future Diet Orders:  "_X,1:"   "_X)<br> . . S ILST=ILST+1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

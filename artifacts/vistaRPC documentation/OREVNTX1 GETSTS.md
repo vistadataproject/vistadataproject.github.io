@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORDID{:/}
  Code | {::nomarkdown}  Q:'+ORDID<br> Q:'$D(^OR(100,+ORDID,0))<br> S ORY=$P($G(^OR(100,+ORDID,3)),U,3){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

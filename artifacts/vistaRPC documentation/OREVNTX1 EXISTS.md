@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>EVT{:/}
  Code | {::nomarkdown}  I '+EVT S ORY=0 Q<br> N PTEVT S (PTEVT,ORY)=0<br> S PTEVT=$O(^ORE(100.2,"AE",+DFN,+EVT,PTEVT))<br> I PTEVT>0 S ORY=PTEVT{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

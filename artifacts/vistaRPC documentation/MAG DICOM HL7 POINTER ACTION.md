@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ACTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string that specifies the actionto be taken by the remote procedure.Currently, valid actions are \GetDate\ and \DatePtr\.{:/} | 
 | {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string. The meaning of thisstring depends on the value of parameter ACTION.When ACTION=\GetDate\, the value of this parameter is interpretedas a pointer to the HL7 message for which the date is to beretrieved.When ACTION=\DatePtr\, the value of this parameter is interpretedas the date for which a pointer to the first HL7 message thatoccurred on or past that date is to be retrieved.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

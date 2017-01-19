@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MESSAGE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} |  | {::nomarkdown}This is the message associated with the audit event.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}129{:/} |  | {::nomarkdown}This is a list of data attribute names and associated values to be includedin the audit event log.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

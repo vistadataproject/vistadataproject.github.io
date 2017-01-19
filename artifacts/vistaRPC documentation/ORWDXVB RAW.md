@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DFN<br>ORX{:/}
  Code | {::nomarkdown}  Q:'$O(ORX(0))  ;ORX contains a list of tests to retrieve results for<br> N ORCOM,ORT,ORTST,ORTDT,ORTMP,GCNT,CCNT,GIOSL,GIOM,I<br> S GCNT=0,CCNT=1,GIOSL=999999,GIOM=80<br> S OROOT=$NA(^TMP("ORVBEC",$J))<br> K ^TMP("ORVBEC",$J)<br> S ORT=0 F  S ORT=$O(ORX(ORT)) Q:'ORT  S ORTST=$P(ORX(ORT),"^",1) D<br> . K ^TMP("LRRR",$J) D RR^LR7OR1(DFN,,,,,ORTST,,1)<br> . S ORTMP="^TMP(""LRRR"",$J,DFN)",ORTMP=$Q(@ORTMP)<br> . Q:$P(ORTMP,",",1,3)'=("^TMP(""LRRR"","_$J_","_DFN)<br> . S ORTDT=9999999-+$P(ORTMP,",",5),ORZ=@ORTMP<br> . D LN<br> . S ^TMP("ORVBEC",$J,GCNT,0)=$P(ORZ,"^",1,6)_"^"_ORTDT<br> K ^TMP("LRRR",$J){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

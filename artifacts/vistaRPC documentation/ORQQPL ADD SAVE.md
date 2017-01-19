@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ADDSAVE^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | SAVE NEW RECORD
- First comment | {::nomarkdown}RETURN - Problem IFN if success, 0 otherwise<br/>ADDARRAY - array used for indirect sets of  GMPFLDS(){:/}
+ First comment | {::nomarkdown} RETURN - Problem IFN if success, 0 otherwise<br/> ADDARRAY - array used for indirect sets of  GMPFLDS()<br/>{:/}
  Input parameters | {::nomarkdown}GMPDFN<br>GMPROV<br>GMPVAMC<br>ADDARRAY<br>GMPSRCH{:/}
  Code | {::nomarkdown}  N DA,GMPFLD,GMPORIG,S<br> S GMPSRCH=$G(GMPSRCH)<br> S RETURN=0 ;<br> L +^AUPNPROB(0):10<br> Q:'$T  ; bail out if no lock<br> S S=""<br> F  S S=$O(ADDARRAY(S)) Q:S=""  D<br> . S @ADDARRAY(S)<br> D NEW^GMPLSAVE<br> S RETURN=DA<br> L -^AUPNPROB(0)<br> S RETURN=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

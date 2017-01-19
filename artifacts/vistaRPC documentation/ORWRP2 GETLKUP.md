@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Get Adhoc lookup selection
  Code | {::nomarkdown}  S ORY=$$GET^XPAR("ALL","ORWRP ADHOC LOOKUP",1,"I"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

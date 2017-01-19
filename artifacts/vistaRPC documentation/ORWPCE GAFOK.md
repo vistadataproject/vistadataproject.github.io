@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns true if all supporting MH GAF Code exists
  Code | {::nomarkdown}  S ORY=0<br> I $T(GAFHX^YSGAFAPI)'="",$T(ENT^YSGAFAP1)'="" S ORY=1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

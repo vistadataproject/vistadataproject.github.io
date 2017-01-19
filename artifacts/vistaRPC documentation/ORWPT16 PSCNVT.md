@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PSCNVT^[ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
  Method comment | procedure
- First comment | {::nomarkdown}Call conversion routine for pharmacy (both inpatient and outpatient){:/}
+ First comment | {::nomarkdown} Call conversion routine for pharmacy (both inpatient and outpatient){:/}
  Input parameters | {::nomarkdown}DFN{:/}
  Code | {::nomarkdown}  S VAL=0{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

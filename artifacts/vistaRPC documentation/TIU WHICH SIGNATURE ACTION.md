@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}TIUDA{:/}
  Code | {::nomarkdown}  N TIUD0,TIUD12,TIUSTAT,SIGNER,COSIGNER,XTRASGNR<br> S TIUD0=$G(^TIU(8925,+TIUDA,0)),TIUD12=$G(^TIU(8925,+TIUDA,12))<br> S SIGNER=$P(TIUD12,U,4),COSIGNER=$P(TIUD12,U,8)<br> I (DUZ'=SIGNER),(DUZ'=COSIGNER) S XTRASGNR=+$O(^TIU(8925.7,"AE",+TIUDA,+DUZ,0))<br> I '$G(XTRASGNR) S XTRASGNR=$$ASURG^TIUADSIG(TIUDA)<br> S TIUSTAT=+$P(TIUD0,U,5)<br> S TIUY=$S(TIUSTAT'>5:"SIGNATURE",+$G(XTRASGNR):"SIGNATURE",1:"COSIGNATURE"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

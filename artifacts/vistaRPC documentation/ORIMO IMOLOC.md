@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}ORLOC<br>ORDFN{:/}
  Code | {::nomarkdown}  S ORY=-1<br> N PACH,A<br> K ^TMP($J,"ORIMO")<br> S PACH=$$PATCH^XPDUTL("PSJ*5.0*111")<br> Q:'PACH<br> I $L($TEXT(SDIMO^SDAMA203)) D<br> . ;#DBIA 4133<br> . S ORY=$$SDIMO^SDAMA203(ORLOC,ORDFN)<br> . ;if RSA returns an error then check against Clinic Loc.<br> . I ORY=-3 D<br> . .I $P($G(^SC(ORLOC,0)),U,3)'="C" Q<br> . .I $D(^SC("AE",1,ORLOC))=1 S ORY=1<br> . K SDIMO(1)<br> I $D(^TMP($J,"OR MOB APP1")) K ^("OR MOB APP1") D ALL^PSJ53P46(+ORLOC,"ORIMO") S A=$G(^TMP($J,"ORIMO",0)) I A'>0!(+$G(^TMP($J,"ORIMO",A,3))=0) S ORY=-1{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

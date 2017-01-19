@@ -28,4 +28,4 @@ title: VISTA RPC documentation
  Method | ALLIVRTE^[ORWDPS32](http://code.osehra.org/dox/Routine_ORWDPS32_source.html)
  Code | {::nomarkdown}  N ABB,CNT,EXP,IEN,RTE<br> K ^TMP($J,"ORWDPS32 ALLIVRTE")<br> S CNT=0<br> D ALL^PSS51P2(,"??",,1,"ORWDPS32 ALLIVRTE")<br> S RTE="" F  S RTE=$O(^TMP($J,"ORWDPS32 ALLIVRTE","B",RTE)) Q:RTE=""  D<br> .S IEN=$O(^TMP($J,"ORWDPS32 ALLIVRTE","IV",RTE,"")) Q:IEN'>0<br> .S ABB=$G(^TMP($J,"ORWDPS32 ALLIVRTE",IEN,1))<br> .S EXP=$G(^TMP($J,"ORWDPS32 ALLIVRTE",IEN,4))<br> .S CNT=CNT+1,LST(CNT)=IEN_U_RTE_U_ABB_U_U_U_U<br> K ^TMP($J,"ORWDPS32 IVROUTE"){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

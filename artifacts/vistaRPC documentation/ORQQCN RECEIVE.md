@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RC^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Receive the consult into the service
- First comment | {::nomarkdown}GMRCO - The internal file number of the consult from File 123<br/>GMRCORNP - internal file number of the person receiving the request into the service<br/>GMRCAD - date/time consult received into the service<br/>ORCOM - Array containing comments related to receipt of the consult.<br/>Passed as the following form :<br/>ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/>Comment is optional when consult is received.{:/}
+ First comment | {::nomarkdown}GMRCO - The internal file number of the consult from File 123<br/>GMRCORNP - internal file number of the person receiving the request into the service<br/>GMRCAD - date/time consult received into the service<br/>ORCOM - Array containing comments related to receipt of the consult.<br/>Passed as the following form :<br/> ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/> Comment is optional when consult is received.{:/}
  Input parameters | {::nomarkdown}GMRCO<br>GMRCORNP<br>GMRCAD<br>ORCOM{:/}
  Code | {::nomarkdown}  S Y=$$RC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,.ORCOM){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

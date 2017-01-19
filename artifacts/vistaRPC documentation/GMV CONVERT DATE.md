@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}GMRDATE{:/}
  Code | {::nomarkdown}  N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)<br> I $G(GDATE)'>0 S RESULT="" Q<br> I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q<br> S RESULT=$G(GDATE)_"^"_$G(GDATE(0)){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

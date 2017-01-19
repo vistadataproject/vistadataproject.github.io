@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | WRLSTED^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return list of dialogs for writing event delayed orders
- First comment | {::nomarkdown}.Y(n): DlgName^ListBox Text{:/}
+ First comment | {::nomarkdown} .Y(n): DlgName^ListBox Text{:/}
  Input parameters | {::nomarkdown}LOC<br>EVTID{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

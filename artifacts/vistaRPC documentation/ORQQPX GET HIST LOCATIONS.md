@@ -29,4 +29,4 @@ title: VISTA RPC documentation
  Method comment | Returns a list of historical locations
  Code | {::nomarkdown}  N IDX,PTR,LINE,NAME<br> K ^TMP("OR",$J,"LOC")<br> S LST=$NA(^TMP("OR",$J,"LOC"))<br> S (LINE,IDX)=0<br> F  S IDX=$O(^AUTTLOC(IDX)) Q:'IDX  D<br> .S PTR=+$G(^AUTTLOC(IDX,0))<br> .I +PTR D<br> ..;S NAME=$P($G(^DIC(4,PTR,0)),U)<br> ..S NAME=$$GET1^DIQ(4,PTR,.01,"I")<br> ..I NAME'="" D<br> ...S LINE=LINE+1<br> ...S ^TMP("OR",$J,"LOC",LINE)=PTR_U_NAME{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

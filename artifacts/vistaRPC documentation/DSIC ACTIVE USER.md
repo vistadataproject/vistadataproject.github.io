@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}XDUZ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a pointer value to the NEW PERSON file.{:/} | 
 | {::nomarkdown}DSISCR{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}You may pass additional screening criteria to be checked.  For a user to be returned, all screening criteria must be true in addition to being Active. Allowable formats of DSISCR(n) = flag^val1^val2^val3^..  check for security key    KEY^security key name  check for parameter      PARM^ parameter name^parameter instance  execute M code    M^<return message>^<executable M code which sets $T>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

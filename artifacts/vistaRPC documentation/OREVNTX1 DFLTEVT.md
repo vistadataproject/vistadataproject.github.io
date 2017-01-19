@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}PVIFN{:/}
  Code | {::nomarkdown}  N CMEVTLST,IDX<br> S CMEVTLST="",IDX=0<br> D GETLST^OREV3(.CMEVTLST)<br> F  S IDX=$O(CMEVTLST(IDX)) Q:'IDX  D<br> . I $P($G(CMEVTLST(IDX)),U,2) S ORY=$P($G(CMEVTLST(IDX)),U) Q{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

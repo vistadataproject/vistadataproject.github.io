@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORWRP](http://code.osehra.org/dox/Routine_ORWRP_source.html)
  Method comment | report lists for reports tab
- First comment | {::nomarkdown}RPC: ORWRP REPORT LIST{:/}
+ First comment | {::nomarkdown}  RPC: ORWRP REPORT LIST{:/}
  Code | {::nomarkdown}  N EOF,ROOT<br> S EOF="$$END",ROOT=$NA(LST)<br> K @ROOT<br> D GETRPTS(.ROOT,.EOF) ; -report list<br> D GETHS(.ROOT,.EOF) ; -health summary types<br> D GETDT(.ROOT,.EOF) ; -date ranges{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

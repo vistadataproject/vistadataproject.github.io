@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}DGRP{:/}
  Code | {::nomarkdown}  N NM<br> S VAL="0^0"<br> I 'DGRP S DGRP=+$O(^ORD(100.98,"B",DGRP,0))<br> S NM=$$GET^XPAR("ALL","ORWDQ QUICK VIEW",DGRP,"I")<br> Q:'$L(NM)<br> D QV4NM(.VAL,NM){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

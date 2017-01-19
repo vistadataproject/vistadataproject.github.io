@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  First comment | {::nomarkdown}^TMP global for this process.  Result contains a list of NAME^X^RENAME<br/>strings.{:/}
  Code | {::nomarkdown}  D IMPORT2^TIUSRVF(.RESULT,"^TMP(""TIUFLDXML"",$J)",1)<br>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

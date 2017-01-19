@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMLIST^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}removes current user from a team{:/}
+ First comment | {::nomarkdown} removes current user from a team{:/}
  Input parameters | {::nomarkdown}VALUE{:/}
  Code | {::nomarkdown}  D REMLIST^ORWTPT(.OK,VALUE,DUZ){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

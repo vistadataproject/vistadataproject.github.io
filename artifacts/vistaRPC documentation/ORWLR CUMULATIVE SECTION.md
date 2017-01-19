@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return cum report text
- First comment | {::nomarkdown}RPC: ORWLR REPORT TEXT{:/}
+ First comment | {::nomarkdown}  RPC: ORWLR REPORT TEXT{:/}
  Input parameters | {::nomarkdown}DFN<br>RPTID<br>DTRANGE<br>SECTION{:/}
  Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br> N LINES,ORSUB<br> K ^TMP("ORLABDATA",$J)<br> D CUMB(DFN,RPTID,DTRANGE)<br> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br> IF LINES<241 D<br> . S OROOT=$NA(^TMP("LRC",$J))<br> . S @OROOT@(.001)="1^1"<br> ELSE  D<br> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br> . D BUILD{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

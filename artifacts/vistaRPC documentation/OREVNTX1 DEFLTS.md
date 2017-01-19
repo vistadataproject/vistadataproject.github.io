@@ -30,4 +30,4 @@ title: VISTA RPC documentation
  Input parameters | {::nomarkdown}EVTID{:/}
  Code | {::nomarkdown}  Q:'+EVTID<br> N PRTEVT<br> S PRTEVT=0<br> S PRTEVT=$P(^ORD(100.5,+EVTID,0),U,12)<br> I PRTEVT>0 S EVTID=PRTEVT<br> S ORY=$$DEFTS^ORCDADT(EVTID){:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LONGLIST^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | long list of titles for a class
- First comment | {::nomarkdown}.Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,<br/>DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
+ First comment | {::nomarkdown} .Y=returned list, CLASS=ptr to class in 8925.1, FROM=text to $O from,<br/> DIR=$O direction, IDNOTE=flag to indicate selection for ID Entry{:/}
  Input parameters | {::nomarkdown}CLASS<br>FROM<br>DIR<br>IDNOTE{:/}
  Code | {::nomarkdown}  N I,DA,CNT S I=0,CNT=44,DIR=$G(DIR,1)<br> F  Q:I'<CNT  S FROM=$O(^TIU(8925.1,"ACL",CLASS,FROM),DIR) Q:FROM=""  D<br> . S DA=0<br> . F  Q:I'<CNT  S DA=$O(^TIU(8925.1,"ACL",CLASS,FROM,DA)) Q:+DA'>0  D<br> . . I $S(+$$CANENTR^TIULP(DA)'>0:1,+$$CANPICK^TIULP(DA)'>0:1,1:0) Q<br> . . I +$L($T(CANLINK^TIULP)),+$G(IDNOTE),(+$$CANLINK^TIULP(DA)'>0) Q<br> . . S I=I+1,Y(I)=DA_"^"_FROM{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

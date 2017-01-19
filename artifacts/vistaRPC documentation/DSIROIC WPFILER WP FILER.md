@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown} TYPE    - Must be \C\, \I\, \A\, OR \R\ as follows:           Regular comments (19620,.31)(C)           Internal Comments (19620,.32)(I)            Annotations (19620.98,100)(A)           Released Document Comment (19620.1,1)(R){:/} | 
 | {::nomarkdown}STRLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}9999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}STRLIST - List (ARRAY) of lines to be filed{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:12 am</p>{:/}

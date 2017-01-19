@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SEND^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Sign
- First comment | {::nomarkdown}DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/>ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
+ First comment | {::nomarkdown} DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/> ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order{:/}
  Input parameters | {::nomarkdown}DFN<br>ORNP<br>ORL<br>ES<br>ORWREC{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}

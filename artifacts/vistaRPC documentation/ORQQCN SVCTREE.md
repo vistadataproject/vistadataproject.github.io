@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SVCTREE^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Returns list of consult service for current
- First comment | {::nomarkdown}context, screening for inactive, groupers, and tracking<br/>PURPOSE: Display=0, Forward=1, Order=1{:/}
+ First comment | {::nomarkdown}  context, screening for inactive, groupers, and tracking<br/> PURPOSE: Display=0, Forward=1, Order=1{:/}
  Input parameters | {::nomarkdown}PURPOSE{:/}
  Code | {::nomarkdown}  N GMRCTO,GMRCDG,GMRCSVC,GMRCOI<br>  S GMRCTO=PURPOSE,GMRCDG=1<br> D SERV1^GMRCASV<br> S GMRCSVC=0<br> I '$D(^TMP("GMRCSLIST",$J)) S Y(1)="-1^No services found" Q  ;DBIA 2426<br> F I=1:1  S GMRCSVC=$O(^TMP("GMRCSLIST",$J,GMRCSVC)) Q:+GMRCSVC=0  D<br> . S Y(I)=^TMP("GMRCSLIST",$J,GMRCSVC)<br> . S GMRCOI=$O(^ORD(101.43,"ID",$P(Y(I),U,1)_";99CON",0))<br> . S Y(I)=Y(I)_U_GMRCOI{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 8:55:11 am</p>{:/}
