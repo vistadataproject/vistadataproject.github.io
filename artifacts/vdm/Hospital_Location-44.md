@@ -30,7 +30,7 @@ title: VDM documentation
 | stop_code_number | 8 | Stop Code Number | {::nomarkdown}Three digit stop code number assigned to specific location.  Each<br/>stop code number represents a type of care or Service/treating<br/>specialty (clinics only).{:/} | POINTER |  | REQUIRED | Clinic_Stop-40_7 | 
 | prv_year_stop_code | 8.1 | Prv. Year Stop Code | {::nomarkdown}Previous year's three digit stop code number that was assigned to<br/>specific location (clinics only).{:/} | POINTER |  |  | Clinic_Stop-40_7 | 
 | service | 9 | Service | {::nomarkdown}Service assigned to specific location, i.e. Medicine, Surgery,<br/>Psychiatry, etc.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>0</dt><dd>NONE</dd><dt>R</dt><dd>REHAB MEDICINE</dd><dt>P</dt><dd>PSYCHIATRY</dd><dt>N</dt><dd>NEUROLOGY</dd><dt>M</dt><dd>MEDICINE</dd><dt>S</dt><dd>SURGERY</dd></dl>{:/} | 
-| treating_specialty | 9.5 | Treating Specialty | {::nomarkdown}Treating specialty assigned a specific location, i.e. neurosurgery,<br/>alcohol/drug rehabilitation, dermatology (specialties within<br/>Services usually).{:/} | POINTER |  | REQUIRED | Facility_Treating_Specialty-45_7 | 
+| treating_specialty | 9.5 | Treating Specialty | {::nomarkdown}Treating specialty assigned a specific location, i.e. neurosurgery,<br/>alcohol/drug rehabilitation, dermatology (specialties within<br/>Services usually).{:/} | POINTER |  | REQUIRED | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7.md) | 
 | physical_location | 10 | Physical Location | {::nomarkdown}Physical location of a specific ward or clinic, etc., i.e.<br/>3rd floor,  Wing A.{:/} | STRING |  |  |  | 
 | okc_a | 11 | *okc A |  | STRING |  |  |  | 
 | okc_b | 12 | *okc B |  | STRING |  |  |  | 
@@ -44,15 +44,15 @@ title: VDM documentation
 | clinic_services_resource | 29 | *clinic Services Resource | {::nomarkdown}This field is used to associate the clinic with a Clinic Services Resource.{:/} | STRING |  |  |  | 
 | workload_validation_at_chk_out | 30 | Workload Validation At Chk Out | {::nomarkdown}Yes or 1 will result in a validation being performed on each checked out<br/>encounter for this clinic.  No or zero will stop the validation of the<br/>encounters as they are checked out for this clinic.  This validation is<br/>to help ensure that the workload data is acceptable to the Austin<br/>National Patient Care Database.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | clinic_group_reports | 31 | Clinic Group (reports) |  | POINTER |  | INDEXED | Clinic_Group-409_67 | 
-| ward_location_file_pointer | 42 | Ward Location File Pointer | {::nomarkdown}If location is a ward, this is the file pointer to the Ward<br/>Location File, File 42 in which this location is also stored.{:/} | POINTER |  |  | Ward_Location-42 | 
+| ward_location_file_pointer | 42 | Ward Location File Pointer | {::nomarkdown}If location is a ward, this is the file pointer to the Ward<br/>Location File, File 42 in which this location is also stored.{:/} | POINTER |  |  | [Ward_Location-42](Ward_Location-42.md) | 
 | occasion_of_service_clinic | 50.01 | Occasion Of Service Clinic? | {::nomarkdown}This field is non-editable.  It is created automatically by a scheduling<br/>API and must NOT be edited by the site.  It designates clinic locations<br/>added by ancillary packages for occasions of service.  These clinics can<br/>not be edited through Scheduling options.  They can only be altered using<br/>the API.{:/} | BOOLEAN |  | INDEXED | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
-| oos_calling_package | 50.02 | Oos Calling Package | {::nomarkdown}This field stores the package which created the occasion of service<br/>location.  This field should NOT be altered by the site.  It is uneditable<br/>through FileMan.{:/} | POINTER |  |  | Package-9_4 | 
+| oos_calling_package | 50.02 | Oos Calling Package | {::nomarkdown}This field stores the package which created the occasion of service<br/>location.  This field should NOT be altered by the site.  It is uneditable<br/>through FileMan.{:/} | POINTER |  |  | [Package-9_4](Package-9_4.md) | 
 | patient_friendly_name | 60 | Patient Friendly Name | {::nomarkdown}Populate this field with a description of the clinic that will be<br/>meaningful to patients. Do not enter any sensitive patient information <br/>in this field such as HIV CLINIC as an example.{:/} | STRING |  |  |  | 
 | direct_patient_scheduling | 61 | Direct Patient Scheduling? | {::nomarkdown}This field will determine if patients can self-schedule into this <br/>clinic. A \Yes\ in this field will enable patients to directly schedule <br/>appointments into this clinic.{:/} | BOOLEAN |  | REQUIRED | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 | display_clin_appt_to_patients | 62 | Display Clin Appt To Patients? | {::nomarkdown}This field will determine if the clinic appointment information will be <br/>displayed to patients. A \Yes\ in this field will enable patients to <br/>see their appointments in this clinic.{:/} | BOOLEAN |  | REQUIRED | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 | telephone | 99 | Telephone | {::nomarkdown}Telephone number for specific location.{:/} | STRING |  |  |  | 
 | telephone_extension | 99.1 | Telephone Extension | {::nomarkdown}Clinic telephone extension number where patients can call directly.{:/} | STRING |  |  |  | 
-| associated_location_types | 101 | Associated Location Types |  | [POINTER] |  |  | Location_Type-40_9 | 
+| associated_location_types | 101 | Associated Location Types |  | [POINTER] |  |  | {id:Location_Type-40_9} | 
 | appointment | 1900 | Appointment | {::nomarkdown}Appointment multiple stores all data related to outpatient visits<br/>including basic demographic data on a patient, appointment data,<br/>lab, x-ray and EKG appointment dates/times.{:/} | [OBJECT] |  |  | [Appointment-44_001](#Appointment-44_001)  | 
 | cancel_date_time_begin | 1901 | Cancel Date/time Begin | {::nomarkdown}Cancellation date/time beginning for a clinic.{:/} | [OBJECT] |  |  | [Cancel_Date_time_Begin-44_05](#Cancel_Date_time_Begin-44_05)  | 
 | chart_check | 1906 | Chart Check | {::nomarkdown}Does user want the chart checked for availability for this clinic.{:/} | [OBJECT] |  |  | [Chart_Check-44_006](#Chart_Check-44_006)  | 
@@ -92,7 +92,7 @@ title: VDM documentation
 | record_request_priority | 2011 | *record Request Priority |  | NUMERIC |  |  |  | 
 | record_appointment_status | 2012 | *record Appointment Status |  | ENUMERATION |  |  | {::nomarkdown}<dl></dl>{:/} | 
 | prohibit_access_to_clinic | 2500 | Prohibit Access To Clinic? | {::nomarkdown}Should only privileged users have access to book to this clinic?{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>Y</dt><dd>true</dd></dl>{:/} | 
-| privileged_user | 2501 | Privileged User | {::nomarkdown}Privileged users set up to have access to book to clinic.<br/>Once one privileged user is entered into this multiple, no other<br/>user will have access to book to the clinic.  Each individual who<br/>should have access to clinic must be entered one at a time.{:/} | [POINTER] |  |  | [New_Person-200](New_Person-200.md) | 
+| privileged_user | 2501 | Privileged User | {::nomarkdown}Privileged users set up to have access to book to clinic.<br/>Once one privileged user is entered into this multiple, no other<br/>user will have access to book to the clinic.  Each individual who<br/>should have access to clinic must be entered one at a time.{:/} | [POINTER] |  |  | {id:New_Person-200} | 
 | noncount_clinic_y_or_n | 2502 | Non-count Clinic? (y Or N) | {::nomarkdown}Is this clinic to be a non-count clinic for workload purposes? OR<br/>Are visits to this clinic to be included in workload statistics?{:/} | BOOLEAN |  | REQUIRED | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 | include_on_file_room_lists | 2502.5 | Include On File Room Lists? | {::nomarkdown}This field should contain a Yes if this is a non-count clinic that should<br/>be included on the file room lists.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 | credit_stop_code | 2503 | Credit Stop Code | {::nomarkdown}Appointments to this clinic will receive this stop code credit in addition<br/>to the 'normal' stop code credit if a stop code different from the 'normal'<br/>stop code for this clinic is entered here.{:/} | POINTER |  |  | Clinic_Stop-40_7 | 
@@ -111,7 +111,7 @@ title: VDM documentation
 | default_to_pc_practitioner | 2801 | Default To Pc Practitioner? | {::nomarkdown}This only is relevant if there is no default provider.  If so, if<br/>there is a current primary care practitioner for the patient - it will<br/>be provided as the default provider.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | administer_inpatient_meds | 2802 | Administer Inpatient Meds? | {::nomarkdown}This field should contain a YES only if the clinic location is<br/>authorized to dispense inpatient medications to outpatients.{:/} | BOOLEAN |  | INDEXED | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 | autofinish_rx_site | 22900 | Autofinish Rx Site | {::nomarkdown}This field is a pointer to File#59, Outpatient Site, that this hospital <br/>location is associated with.  If this field is not set autofinishing of <br/>Rx's for this hospital location will not take place.{:/} | POINTER |  |  | Outpatient_Site-59 | 
-| autofinish_clinic_printer | 22901 | Autofinish Clinic Printer | {::nomarkdown}Printer where autofinished Rx's will print for a particular clinic.{:/} | POINTER |  |  | Device-3_5 | 
+| autofinish_clinic_printer | 22901 | Autofinish Clinic Printer | {::nomarkdown}Printer where autofinished Rx's will print for a particular clinic.{:/} | POINTER |  |  | [Device-3_5](Device-3_5.md) | 
 
 ## <a name="Appointment-44_001"></a>Appointment-44_001 
 
@@ -154,7 +154,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date | .01 | Date | {::nomarkdown}Date chart was checked for availability for this appointment.{:/} | DATE-TIME |  | REQUIRED |  | 
-| patient | 2 | Patient | {::nomarkdown}Patient associated with appointment data.{:/} | [POINTER] |  |  | [Patient-2](Patient-2.md) | 
+| patient | 2 | Patient | {::nomarkdown}Patient associated with appointment data.{:/} | [POINTER] |  |  | {id:Patient-2} | 
 
 ## <a name="Availability-44_002"></a>Availability-44_002 
 
@@ -337,4 +337,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | team_positions | .01 | Team Positions | {::nomarkdown}This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File.{:/} | POINTER |  | REQUIRED, INDEXED | Team_Position-404_57 | 
-| team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}
+| team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}17, 7:54:22 am</p>{:/}

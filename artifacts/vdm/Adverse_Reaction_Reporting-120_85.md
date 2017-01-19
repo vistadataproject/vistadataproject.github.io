@@ -91,7 +91,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| reactions | .01 | Reactions | {::nomarkdown}One sign/symptom observed for this reaction.{:/} | POINTER |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
+| reactions | .01 | Reactions | {::nomarkdown}One sign/symptom observed for this reaction.{:/} | POINTER |  | REQUIRED, INDEXED | [Sign_symptoms-120_83](Sign_symptoms-120_83.md) | 
 | other_reaction | 1 | Other Reaction | {::nomarkdown}If this sign/symptom cannot be found in the Sign/Symptoms (120.83) file,<br/>then the free text of what the user typed in will be here, and the<br/>signs/symptoms of OTHER REACTION will be the value of the REACTIONS field.{:/} | STRING |  |  |  | 
 | entered_by | 2 | Entered By | {::nomarkdown}The person who entered this reaction into the system.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
@@ -171,4 +171,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date_time_entered | .01 | Date/time Entered | {::nomarkdown}This is the date/time the comment was entered.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:58 am</p>{:/}
+| addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:21 am</p>{:/}
