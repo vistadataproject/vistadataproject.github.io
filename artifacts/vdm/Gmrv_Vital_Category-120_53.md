@@ -34,7 +34,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| vital_type | .01 | Vital Type | {::nomarkdown}This field screens the vital measurement quality field in the GMRV VITAL <br/>MEASUREMENT file (#120.5).{:/} | POINTER |  | REQUIRED, INDEXED | [Gmrv_Vital_Type-120_51](Gmrv_Vital_Type-120_51.md) | 
+| vital_type | .01 | Vital Type | {::nomarkdown}This field screens the vital measurement quality field in the GMRV VITAL <br/>MEASUREMENT file (#120.5).{:/} | POINTER |  | REQUIRED, INDEXED | Gmrv_Vital_Type-120_51 | 
 | maximum_entries | .03 | Maximum Entries | {::nomarkdown}This field indicates the minimum number of characteristics that can<br/>be selected for a patient for this category for this vital type.{:/} | NUMERIC |  |  |  | 
 | print_order | .05 | Print Order | {::nomarkdown}This field contains the order in which this category of characteristics<br/>will display on reports for this category for this vital type.{:/} | NUMERIC |  |  |  | 
 | edit_order | .06 | Edit Order | {::nomarkdown}This field contains the order in which this category for this vital type<br/>will be entered/edited in the Vitals/Measurements edit options.{:/} | NUMERIC |  |  |  | 
@@ -54,4 +54,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event. If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

@@ -17,7 +17,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| name | .01 | Name | {::nomarkdown}The name of the Lab section print pointed to the Accession file.{:/} | POINTER |  | REQUIRED, INDEXED | [Accession-68](Accession-68.md) | 
+| name | .01 | Name | {::nomarkdown}The name of the Lab section print pointed to the Accession file.{:/} | POINTER |  | REQUIRED, INDEXED | Accession-68 | 
 | abbreviation | .02 | Abbreviation | {::nomarkdown}Abbreviation to the name of the Lab section print{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | report_header_1 | .03 | Report Header 1 | {::nomarkdown}First header in path report after Post operative Diagnosis.  The routine used is LRSPRPT (CY/EM/SP patient report).{:/} | STRING |  |  |  | 
 | report_header_2 | .04 | Report Header 2 | {::nomarkdown}Second header in path report after Post operative Diagnosis.  The routine used is LRSPRPT (CY/EM/SP patient report).{:/} | STRING |  |  |  | 
@@ -245,7 +245,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| topography | .01 | Topography | {::nomarkdown}Enter here the specimen or organ/tissue that will be associated with the preselected tests to be displayed or printed.{:/} | POINTER |  | REQUIRED | [Topography_Field-61](Topography_Field-61.md) | 
+| topography | .01 | Topography | {::nomarkdown}Enter here the specimen or organ/tissue that will be associated with the preselected tests to be displayed or printed.{:/} | POINTER |  | REQUIRED | Topography_Field-61 | 
 | test_to_display | 1 | Test To Display | {::nomarkdown}Most recent results, if any, will be displayed for tests selected associated with a specific topography indicated above when that organ or tissue is submitted to anatomic pathology.{:/} | [OBJECT] |  |  | {id:Test_To_Display-69_62,fmId:69.62,label:Test To Display,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test_to_display,fmId:.01,label:Test To Display,description:Most recent results, if any, will be displayed for tests selected \r associated with a specimen.,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:specimen,fmId:.02,label:Specimen,datatype:POINTER,required:true,range:{id:Topography_Field-61}}]} | 
 | test_to_print | 2 | Test To Print |  | [OBJECT] |  |  | {id:Test_To_Print-69_63,fmId:69.63,label:Test To Print,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test_to_print,fmId:.01,label:Test To Print,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:specimen,fmId:.02,label:Specimen,datatype:POINTER,required:true,range:{id:Topography_Field-61}}]} | 
 
@@ -270,4 +270,4 @@ title: VDM documentation
 | internal_file_number | .08 | Internal File # | {::nomarkdown} The internal number where the data is stored.{:/} | STRING |  |  |  | 
 | subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | {id:Subfile_Field_Name-69_37,fmId:69.37,label:Subfile Field Name,properties:[{id:subfile_field_name,fmId:.01,label:Subfile Field Name,datatype:STRING,indexed:true,required:true},{id:subfile_field_entry,fmId:.02,label:Subfile Field Entry,datatype:STRING},{id:subfile_field_number,fmId:.03,label:Subfile Field #,datatype:STRING}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

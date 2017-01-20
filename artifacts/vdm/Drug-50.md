@@ -38,9 +38,9 @@ title: VDM documentation
 | price_per_dispense_unit | 16 | Price Per Dispense Unit | {::nomarkdown}  This is the price per dispense unit for this drug.{:/} | NUMERIC |  |  |  | 
 | source_of_supply | 17 | Source Of Supply | {::nomarkdown}This field is used to indicate the source of the supply for this medication/<br/>supply.{:/} | STRING |  |  |  | 
 | expiration_date | 17.1 | Expiration Date | {::nomarkdown}This field is used to show the expiration date of the current supply of<br/>available drugs.{:/} | DATE-TIME |  | INDEXED |  | 
-| lab_test_monitor | 17.2 | Lab Test Monitor | {::nomarkdown}This is the lab test results which should be checked before this drug <br/>is dispensed.{:/} | POINTER |  |  | [Laboratory_Test-60](Laboratory_Test-60.md) | 
+| lab_test_monitor | 17.2 | Lab Test Monitor | {::nomarkdown}This is the lab test results which should be checked before this drug <br/>is dispensed.{:/} | POINTER |  |  | Laboratory_Test-60 | 
 | monitor_max_days | 17.3 | Monitor Max Days | {::nomarkdown}This is the number of days during which the results of the lab test are<br/>of interest when dispensing this drug.{:/} | NUMERIC |  |  |  | 
-| specimen_type | 17.4 | Specimen Type | {::nomarkdown}This is the specimen type on which the lab test should be run.{:/} | POINTER |  |  | [Topography_Field-61](Topography_Field-61.md) | 
+| specimen_type | 17.4 | Specimen Type | {::nomarkdown}This is the specimen type on which the lab test should be run.{:/} | POINTER |  |  | Topography_Field-61 | 
 | monitor_routine | 17.5 | Monitor Routine | {::nomarkdown}This is the name of the routine which is called to do all necessary<br/>checking on lab test results before dispensing this drug.{:/} | STRING |  |  |  | 
 | lab_monitor_mark | 17.6 | Lab Monitor Mark | {::nomarkdown}This field is set to \1\ if the drug is marked for Lab Monitor purposes.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 | clozapine_lab_test | 17.7 | Clozapine Lab Test |  | [OBJECT] |  |  | [Clozapine_Lab_Test-50_02](#Clozapine_Lab_Test-50_02)  | 
@@ -61,7 +61,7 @@ title: VDM documentation
 | local_nonformulary | 51 | Local Non-formulary | {::nomarkdown}  This is used to designate the drug as non-formulary.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>N/F</dd></dl>{:/} | 
 | visn_nonformulary | 52 | Visn Non-formulary | {::nomarkdown}This field will designate a drug that is not on the VISN Formulary.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>V-N/F</dd></dl>{:/} | 
 | day_nd_or_dose_nl_limit | 62.01 | Day (nd) Or Dose (nl) Limit | {::nomarkdown}  This is mainly for NARCOTICS and ANTIBIOTICS.  If a number is found here<br/>when this medication is selected for a UNIT DOSE order, that number will be<br/>used to calculate the DEFAULT value for the STOP DATE/TIME prompt in the<br/>entry of that order.  If the number entered is followed by a \D\, that<br/>number of days will be added to the START DATE.  If the number is followed<br/>by an \L\, that number will be used to calculate the DOSE LIMIT.{:/} | STRING |  |  |  | 
-| unit_dose_med_route | 62.02 | Unit Dose Med Route | {::nomarkdown}  If data is found here when this medication is selected for a UNIT DOSE<br/>order, that data will be used as the DEFAULT value for the MED ROUTE prompt<br/>in ORDER ENTRY.  Please note that ORAL is not selectable as a MED ROUTE<br/>here, since it is the standard default value in order entry.<br/> <br/>here, since it is the standard default value in order entry.{:/} | POINTER |  |  | [Medication_Routes-51_2](Medication_Routes-51_2.md) | 
+| unit_dose_med_route | 62.02 | Unit Dose Med Route | {::nomarkdown}  If data is found here when this medication is selected for a UNIT DOSE<br/>order, that data will be used as the DEFAULT value for the MED ROUTE prompt<br/>in ORDER ENTRY.  Please note that ORAL is not selectable as a MED ROUTE<br/>here, since it is the standard default value in order entry.<br/> <br/>here, since it is the standard default value in order entry.{:/} | POINTER |  |  | Medication_Routes-51_2 | 
 | unit_dose_schedule_type | 62.03 | Unit Dose Schedule Type | {::nomarkdown}  If data is found here when this medication is selected for a UNIT DOSE <br/>order, that data will be used as the DEFAULT value for the SCHEDULE TYPE <br/>prompt in ORDER ENTRY.<br/>  Please note that you will NOT find CONTINUOUS as a SCHEDULE TYPE here,<br/>since it is the standard default in order entry.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>R</dt><dd>FILL on REQUEST</dd><dt>P</dt><dd>PRN</dd><dt>OC</dt><dd>ON CALL</dd><dt>O</dt><dd>ONE TIME</dd></dl>{:/} | 
 | unit_dose_schedule | 62.04 | Unit Dose Schedule | {::nomarkdown}  If a schedule is found here when this medication is selected for a<br/>UNIT DOSE order, that schedule will be used as a default value for the<br/>SCHEDULE prompt in order entry.{:/} | STRING |  |  |  | 
 | corresponding_outpatient_drug | 62.05 | Corresponding Outpatient Drug | {::nomarkdown}  This is used by the Unit Dose Medications package in such things as the<br/>Authorized Absence/Discharge Orders form.{:/} | POINTER |  |  | [Drug-50](Drug-50.md) | 
@@ -129,9 +129,9 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| lab_test_monitor | .01 | Lab Test Monitor | {::nomarkdown}This field is used to hold the lab test for Clozapine medication dispensing.{:/} | POINTER |  | REQUIRED | [Laboratory_Test-60](Laboratory_Test-60.md) | 
+| lab_test_monitor | .01 | Lab Test Monitor | {::nomarkdown}This field is used to hold the lab test for Clozapine medication dispensing.{:/} | POINTER |  | REQUIRED | Laboratory_Test-60 | 
 | monitor_max_days | 1 | Monitor Max Days | {::nomarkdown}This field is the number of days in the past to go to check for lab values.{:/} | NUMERIC |  |  |  | 
-| specimen_type | 2 | Specimen Type | {::nomarkdown}This is the specimen type used for Clozapine dispensing.{:/} | POINTER |  |  | [Topography_Field-61](Topography_Field-61.md) | 
+| specimen_type | 2 | Specimen Type | {::nomarkdown}This is the specimen type used for Clozapine dispensing.{:/} | POINTER |  |  | Topography_Field-61 | 
 | type_of_test | 3 | Type Of Test | {::nomarkdown}This set of codes will be used to determine which test is being entered.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>WBC</dd><dt>2</dt><dd>ANC</dd></dl>{:/} | 
 
 ## <a name="Ndc_By_Outpatient_Site-50_032"></a>Ndc_By_Outpatient_Site-50_032 
@@ -244,4 +244,4 @@ title: VDM documentation
 | window_dns_name | 1 | Window Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a window route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 | mail_dns_name | 2 | Mail Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a mail route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

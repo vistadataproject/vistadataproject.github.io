@@ -45,7 +45,7 @@ title: VDM documentation
 | margins_clear | .27 | Margins Clear | {::nomarkdown}This field indicates tissue sample showed no pathology at the margins of<br/>the tissue sample.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | std_evaluation | .28 | Std Evaluation | {::nomarkdown}This field documents the findings after testing for sexually transmitted<br/>diseases.  Pointer to the WV Results/Diagnosis (#790.31) file.{:/} | POINTER |  |  | Wv_Results_diagnosis-790_31 | 
 | impression | .29 | Impression | {::nomarkdown}This field contains the impression of the clinician performing the exam.  <br/>Pointer to the WV Results/Diagnosis (#790.31) file.{:/} | POINTER |  |  | Wv_Results_diagnosis-790_31 | 
-| screening_pap | .3 | Screening Pap | {::nomarkdown}This field stores the PAP procedure associated with the follow-up<br/>procedure (e.g., colposcopy).  Pointer to the WV Procedure (#790.1) file.{:/} | POINTER |  |  | [Wv_Procedure-790_1](Wv_Procedure-790_1.md) | 
+| screening_pap | .3 | Screening Pap | {::nomarkdown}This field stores the PAP procedure associated with the follow-up<br/>procedure (e.g., colposcopy).  Pointer to the WV Procedure (#790.1) file.{:/} | POINTER |  |  | Wv_Procedure-790_1 | 
 | stage_at_final_dx | .31 | Stage At Final Dx | {::nomarkdown}This field is used to document the clinical stage for invasive carcinoma<br/>of the cervix.  If clinical stage is unknown, enter the summary ('S-')<br/>stage.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>7</dt><dd>S-Distant</dd><dt>1</dt><dd>I</dd><dt>8</dt><dd>Unknown</dd><dt>4</dt><dd>IV</dd><dt>2</dt><dd>II</dd><dt>6</dt><dd>S-Regional</dd><dt>5</dt><dd>S-Local</dd><dt>3</dt><dd>III</dd></dl>{:/} | 
 | date_results_received | .32 | Date Results Received | {::nomarkdown}Enter the date that the results were received/uploaded from the lab.{:/} | DATE-TIME |  |  |  | 
 | final_dx_pap_colp | .33 | Final Dx Pap/colp | {::nomarkdown}Enter the Final Diagnosis for this PAP/Colp case.{:/} | POINTER |  |  | Wv_Results_diagnosis-790_31 | 
@@ -59,4 +59,4 @@ title: VDM documentation
 | comments | 3.01 | Comments | {::nomarkdown}You may enter a one-line clinical history note (limited to 78 characters).{:/} | STRING |  |  |  | 
 | reports | 9 | Reports | {::nomarkdown}This field is not editable through WH options.  The lab or radiology exams<br/>related to this procedure are presented here.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

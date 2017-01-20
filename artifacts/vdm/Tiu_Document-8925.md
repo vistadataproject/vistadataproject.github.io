@@ -53,9 +53,9 @@ title: VDM documentation
 | dictation_date | 1307 | Dictation Date | {::nomarkdown}This is the date (and time) on which the document was dictated by its <br/>author.  In the event that a document originates by dictation, we recommend <br/>that the REFERENCE DATE for the document be defaulted to dictation date, as <br/>the author will be able to identify the document by the date on which s/he <br/>dictated it.{:/} | DATE-TIME |  |  |  | 
 | suspense_date_time | 1308 | Suspense Date/time | {::nomarkdown}This is the date (and time) on which the document will be removed from<br/>public view.  It is currently used only for Patient Postings, although it<br/>may be generalized for use with other document types, if appropriate.{:/} | DATE-TIME |  |  |  | 
 | patient_movement_record | 1401 | Patient Movement Record |  | POINTER |  |  | [Patient_Movement-405](Patient_Movement-405.md) | 
-| treating_specialty | 1402 | Treating Specialty |  | POINTER |  | INDEXED | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7.md) | 
+| treating_specialty | 1402 | Treating Specialty |  | POINTER |  | INDEXED | Facility_Treating_Specialty-45_7 | 
 | irt_record | 1403 | Irt Record |  | POINTER |  |  | Incomplete_Records-393 | 
-| service | 1404 | Service |  | POINTER |  | INDEXED | [Service_section-49](Service_section-49.md) | 
+| service | 1404 | Service |  | POINTER |  | INDEXED | Service_section-49 | 
 | requesting_package_reference | 1405 | Requesting Package Reference | {::nomarkdown}This field allows a linkage to be maintained between the TIU Document and<br/>the DHCP Package for which it was generated.{:/} | POINTER |  | INDEXED | undefined | 
 | retracted_original | 1406 | Retracted Original | {::nomarkdown}This self-refering pointer identifies the original document which was <br/>retracted in error to produce this record.{:/} | POINTER |  |  | [Tiu_Document-8925](Tiu_Document-8925.md) | 
 | signature_date_time | 1501 | Signature Date/time |  | DATE-TIME |  |  |  | 
@@ -91,4 +91,4 @@ title: VDM documentation
 | procedure_summary_code | 70201 | Procedure Summary Code | {::nomarkdown}This field contains the summary code for this procedure once it is<br/>complete.  'Machine Resulted' is the initial, default code.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>5</dt><dd>Machine Resulted</dd><dt>2</dt><dd>Abnormal</dd><dt>4</dt><dd>Incomplete</dd><dt>3</dt><dd>Borderline</dd><dt>1</dt><dd>Normal</dd></dl>{:/} | 
 | date_time_performed | 70202 | Date/time Performed | {::nomarkdown}This field contains the Date/Time when the procedure was performed.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

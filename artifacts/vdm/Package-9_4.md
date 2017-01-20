@@ -43,7 +43,7 @@ title: VDM documentation
 | preinit_after_user_commit | 916 | Pre-init After User Commit | {::nomarkdown}Name of the developer's routine that runs after the user has answered all<br/>of the questions in NAMESPACE_INIT but before the INIT files any new data.<br/>Used for data conversions, etc. that the developer needs to do before<br/>bringing in new data.{:/} | STRING |  |  |  | 
 | preinit_completion_date | 916.5 | Pre-init Completion Date | {::nomarkdown}This is the date/time that the PRE-INIT AFTER USER COMMIT last ran.<br/>When an INIT is run at a target site, and it contains a PRE-INIT<br/>AFTER USER COMMIT routine, this field is updated automatically.{:/} | DATE-TIME |  |  |  | 
 | excluded_name_space | 919 | Excluded Name Space | {::nomarkdown}By specifying an \excluded name space\, the developer will be telling<br/>the DIFROM routine not to take OPTIONS, BULLETINS, etc. which begin<br/>with these characters.  For example, if \PSZ\ is an excluded name space<br/>in the \PS\ package, DIFROM will not send along OPTIONS, SECURITY KEYS,<br/>BULLETINS, or FUNCTIONS that begin with \PSZ\.{:/} | [STRING] |  |  |  | 
-| mail_group | 1938 | Mail Group | {::nomarkdown}This field points to a mail group that will receive a mail message from<br/>KIDS when a package or patch is installed.{:/} | POINTER |  |  | [Mail_Group-3_8](Mail_Group-3_8.md) | 
+| mail_group | 1938 | Mail Group | {::nomarkdown}This field points to a mail group that will receive a mail message from<br/>KIDS when a package or patch is installed.{:/} | POINTER |  |  | Mail_Group-3_8 | 
 | synonym | 15007 | Synonym |  | [STRING] |  |  |  | 
 
 ## <a name="File-9_44"></a>File-9_44 
@@ -57,7 +57,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| file | .01 | File | {::nomarkdown}The name of a VA FileMan file which you wish to transport with<br/>this package.  This may be any file whose number is 2 or greater.{:/} | POINTER |  | REQUIRED, INDEXED | [File-1](File-1.md) | 
+| file | .01 | File | {::nomarkdown}The name of a VA FileMan file which you wish to transport with<br/>this package.  This may be any file whose number is 2 or greater.{:/} | POINTER |  | REQUIRED, INDEXED | File-1 | 
 | field | 2 | Field | {::nomarkdown}The names of the FileMan Fields required by this Package.  Enter data<br/>here ONLY if you wish to send just selected fields from a Data Dictionary<br/>instead of the entire DD (i.e., a partial DD).{:/} | [STRING] |  |  |  | 
 | update_the_data_dictionary | 222.1 | Update The Data Dictionary | {::nomarkdown}YES means that the Data Dictionary for this file should be updated when<br/>this version of the package is installed.<br/> <br/>NO means that this Data Dictionary has not changed since the last version,<br/>and therefore, need not be updated.<br/> <br/>If the Data Dictionary does not exist on the recipient system, then this<br/>field does not apply.  The DD will be put in place.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
 | assign_a_version_number | 222.2 | Assign A Version Number | {::nomarkdown}YES means that you want to set ^DD(file#,0,\VR\) to the version<br/>number of this package when the init is finished.<br/> <br/>NO means that you intend for the version number to remain as it is.<br/>This may mean that this DD has no version number at all.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
@@ -79,7 +79,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | print_template | .01 | Print Template | {::nomarkdown}The name of a Print Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately.  Selected Fields for Export and Export templates cannot be<br/>sent; entering their names here will have no effect.{:/} | STRING |  | REQUIRED |  | 
-| file | 2 | File | {::nomarkdown}The FileMan file for this Print Template.{:/} | POINTER |  | REQUIRED | [File-1](File-1.md) | 
+| file | 2 | File | {::nomarkdown}The FileMan file for this Print Template.{:/} | POINTER |  | REQUIRED | File-1 | 
 
 ## <a name="Input_Template-9_47"></a>Input_Template-9_47 
 
@@ -93,7 +93,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | input_template | .01 | Input Template | {::nomarkdown}The name of an Input Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately.{:/} | STRING |  | REQUIRED |  | 
-| file | 2 | File | {::nomarkdown}The name of the FileMan file for this Input Template.{:/} | POINTER |  | REQUIRED | [File-1](File-1.md) | 
+| file | 2 | File | {::nomarkdown}The name of the FileMan file for this Input Template.{:/} | POINTER |  | REQUIRED | File-1 | 
 
 ## <a name="Sort_Template-9_48"></a>Sort_Template-9_48 
 
@@ -107,7 +107,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | sort_template | .01 | Sort Template | {::nomarkdown}The name of a Sort Template being sent with this Package.<br/>This multiple is used to send non-namespaced templates in an INIT.<br/>Namespaced templates are sent automatically and need not be listed<br/>separately.{:/} | STRING |  | REQUIRED |  | 
-| file | 2 | File | {::nomarkdown}The FileMan file for this Sort Template.{:/} | POINTER |  | REQUIRED | [File-1](File-1.md) | 
+| file | 2 | File | {::nomarkdown}The FileMan file for this Sort Template.{:/} | POINTER |  | REQUIRED | File-1 | 
 
 ## <a name="Screen_Template_form-9_485"></a>Screen_Template_form-9_485 
 
@@ -121,7 +121,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | screen_template_form | .01 | Screen Template (form) | {::nomarkdown}The name of a Screen Template (from the FORM file) associated with<br/>this Package.{:/} | STRING |  | REQUIRED |  | 
-| file | 2 | File | {::nomarkdown}The name of the FileMan file for this Screen Template (FORM).{:/} | POINTER |  | REQUIRED | [File-1](File-1.md) | 
+| file | 2 | File | {::nomarkdown}The name of the FileMan file for this Screen Template (FORM).{:/} | POINTER |  | REQUIRED | File-1 | 
 
 ## <a name="Affects_Record_Merge-9_402"></a>Affects_Record_Merge-9_402 
 
@@ -134,7 +134,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| file_affected | .01 | File Affected | {::nomarkdown}A file that if merged will affect this package.{:/} | POINTER |  | REQUIRED, INDEXED | [File-1](File-1.md) | 
+| file_affected | .01 | File Affected | {::nomarkdown}A file that if merged will affect this package.{:/} | POINTER |  | REQUIRED, INDEXED | File-1 | 
 | name_of_merge_routine | 3 | Name Of Merge Routine | {::nomarkdown}This field holds the routine name to call when two records in<br/>an affected file are to be merged. This allows the package to<br/>do any repointing or other clean-up needed before the records<br/>are merged.{:/} | STRING |  |  |  | 
 | record_has_package_data | 4 | Record Has Package Data |  | STRING |  |  |  | 
 
@@ -156,4 +156,4 @@ title: VDM documentation
 | description_of_enhancements | 41 | Description Of Enhancements | {::nomarkdown}This is a description of the enhancements being distributed with this<br/>release.{:/} | STRING |  |  |  | 
 | patch_application_history | 1105 | Patch Application History |  | [OBJECT] |  |  | {id:Patch_Application_History-9_4901,fmId:9.4901,label:Patch Application History,properties:[{id:patch_application_history,fmId:.01,label:Patch Application History,datatype:STRING,indexed:true,required:true},{id:date_applied,fmId:.02,label:Date Applied,datatype:DATE-TIME},{id:applied_by,fmId:.03,label:Applied By,datatype:POINTER,range:{id:New_Person-200}},{id:description,fmId:1,label:Description,description:This is a description of the patch being distributed with this release.,datatype:STRING,isWP:true}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

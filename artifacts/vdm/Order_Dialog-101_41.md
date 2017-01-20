@@ -21,9 +21,9 @@ title: VDM documentation
 | display_text | 2 | Display Text | {::nomarkdown}The text of this dialog's name as it appears on a menu or subheader.{:/} | STRING |  | INDEXED |  | 
 | disable | 3 | Disable | {::nomarkdown}This field disables use of this dialog when it contains text.  The text<br/>should be a short message explaining why use of this dialog has been<br/>disabled, as it will be displayed if this dialog is selected.{:/} | STRING |  |  |  | 
 | type-4 | 4 | Type | {::nomarkdown}This field defines the type of order dialog to be processed.  Control<br/>will be passed to the OE/RR Dialog Processor for dialog items; menu types<br/>are used for displaying and selecting dialog items.  Action types will only<br/>execute the entry and exit actions, ignoring any items that may exist; these<br/>dialogs should not create entries in the Orders file.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>P</dt><dd>prompt</dd><dt>D</dt><dd>dialog</dd><dt>M</dt><dd>menu</dd><dt>O</dt><dd>order set</dd><dt>Q</dt><dd>quick order</dd><dt>A</dt><dd>action</dd></dl>{:/} | 
-| display_group | 5 | Display Group | {::nomarkdown}This field determines what display group this dialog has been defined for.<br/>It will define which orderable items are selectable with this dialog,<br/>as well as what service to send the order to when it is complete.{:/} | POINTER |  |  | [Display_Group-100_98](Display_Group-100_98.md) | 
+| display_group | 5 | Display Group | {::nomarkdown}This field determines what display group this dialog has been defined for.<br/>It will define which orderable items are selectable with this dialog,<br/>as well as what service to send the order to when it is complete.{:/} | POINTER |  |  | Display_Group-100_98 | 
 | signature_required | 6 | Signature Required | {::nomarkdown}This field indicates what signature will be required for orders created by<br/>this dialog, to be considered complete and ready to release to the service<br/>for action.  If this flag is set to NO and the dialog contains a prompt<br/>for item(s) from the Orderable Item file, the order created may still<br/>require a signature if any of the items ordered are individually flagged<br/>as requiring a signature.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>0</dt><dd>NONE</dd><dt>1</dt><dd>ORELSE</dd><dt>2</dt><dd>ORES</dd></dl>{:/} | 
-| package | 7 | Package | {::nomarkdown}This is the VISTA package that is intended to receive orders created by<br/>this dialog; this is required for creating the HL7 messages to pass the<br/>order.{:/} | POINTER |  | INDEXED | [Package-9_4](Package-9_4.md) | 
+| package | 7 | Package | {::nomarkdown}This is the VISTA package that is intended to receive orders created by<br/>this dialog; this is required for creating the HL7 messages to pass the<br/>order.{:/} | POINTER |  | INDEXED | Package-9_4 | 
 | verify_order | 8 | Verify Order | {::nomarkdown}This field is a flag, which determines if the order created by this dialog<br/>will be presented to the user for verification before saving in the Orders<br/>file; for most quick orders, this flag should be set to 0 (no).{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | ask_for_another_order | 9 | Ask For Another Order | {::nomarkdown}This field allows the user to add another order from this dialog, when the<br/>initial order is accepted and placed; if set to YES, the user will be<br/>asked \Add another <dialog display text> order?\ to allow for either<br/>exiting the processor or adding an additional order of the same type.<br/>This field can also be set to YES-DON'T ASK to force the processor to<br/>automatically drop into prompting for another order without asking first.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>YES</dd><dt>2</dt><dd>YES-DON'T ASK</dd><dt>0</dt><dd>NO</dd></dl>{:/} | 
 | items | 10 | Items | {::nomarkdown}This field contains the components for dialogs:<br/>     Dialogs      -> prompts<br/>     Quick orders -> prompts (completed)<br/>     Order sets   -> dialogs or quick orders<br/>     Menus        -> dialogs, quick orders, or order sets{:/} | [OBJECT] |  |  | [Items-101_412](#Items-101_412)  | 
@@ -61,8 +61,8 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | sequence | .01 | Sequence | {::nomarkdown}This field specifies the order in which this item will be displayed or<br/>processed.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
 | input_transform | .1 | Input Transform | {::nomarkdown}This is code that will be used as the third piece of DIR(0) when asking<br/>this prompt.{:/} | STRING |  |  |  | 
-| parent | 1 | Parent | {::nomarkdown}This field controls the behavior of this prompt.  If a parent is defined<br/>here, this prompt will be asked from within the parent's dialog; when it<br/>is invoked independently based on its position sequence number, the child<br/>prompt will be ignored.{:/} | POINTER |  |  | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
-| item | 2 | Item | {::nomarkdown}This field points to an order dialog which is subordinate to this dialog.<br/>NOTE:  The parent dialog menu or one of its ancestors may not be entered<br/>as an item.{:/} | POINTER |  | INDEXED | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
+| parent | 1 | Parent | {::nomarkdown}This field controls the behavior of this prompt.  If a parent is defined<br/>here, this prompt will be asked from within the parent's dialog; when it<br/>is invoked independently based on its position sequence number, the child<br/>prompt will be ignored.{:/} | POINTER |  |  | Order_Dialog-101_41 | 
+| item | 2 | Item | {::nomarkdown}This field points to an order dialog which is subordinate to this dialog.<br/>NOTE:  The parent dialog menu or one of its ancestors may not be entered<br/>as an item.{:/} | POINTER |  | INDEXED | Order_Dialog-101_41 | 
 | mnemonic | 3 | Mnemonic | {::nomarkdown}This is a short abbreviation for this item dialog to be used when this<br/>dialog is displayed for selection.{:/} | STRING |  |  |  | 
 | display_text | 4 | Display Text | {::nomarkdown}This field allows the text that normally appears for this item to be<br/>replaced with alternate text for use in this dialog or menu.{:/} | STRING |  |  |  | 
 | display_only | 5 | Display Only? | {::nomarkdown}This field identifies an item as being free text for display purposes<br/>only.  The text in the Display Text field will be displayed, but it<br/>is not selectable; if designated as a header, the text will be underlined.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>YES</dd><dt>2</dt><dd>YES-HEADER</dd><dt>0</dt><dd>NO</dd></dl>{:/} | 
@@ -109,7 +109,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | item_entry | .01 | Item Entry | {::nomarkdown}This is the internal entry number of the prompt in the Item multiple<br/>by which this response was obtained.{:/} | NUMERIC |  | REQUIRED |  | 
-| dialog | .02 | Dialog | {::nomarkdown}This is a pointer to the dialog prompt, which is in the Order Dialog file<br/>as type prompt.{:/} | POINTER |  | INDEXED | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
+| dialog | .02 | Dialog | {::nomarkdown}This is a pointer to the dialog prompt, which is in the Order Dialog file<br/>as type prompt.{:/} | POINTER |  | INDEXED | Order_Dialog-101_41 | 
 | instance | .03 | Instance | {::nomarkdown}In the case of multiple answers for the same item, this identifies the<br/>individual instance.{:/} | NUMERIC |  |  |  | 
 | value | 1 | Value | {::nomarkdown}This contains the actual response, unless the value is a word processing<br/>type.{:/} | STRING |  |  |  | 
 | text | 2 | Text | {::nomarkdown}This contains the actual response, for word-processing type prompts.{:/} | STRING |  |  |  | 
@@ -126,7 +126,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | logical_name | .01 | Logical Name | {::nomarkdown}This is the name by which controls can refer to each other.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| item | 2 | Item |  | POINTER |  |  | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
+| item | 2 | Item |  | POINTER |  |  | Order_Dialog-101_41 | 
 | create_sequence | 3 | Create Sequence |  | NUMERIC |  | INDEXED |  | 
 | control_type | 4 | Control Type |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>7</dt><dd>LongCombo</dd><dt>2</dt><dd>Edit</dd><dt>1</dt><dd>Button</dd><dt>0</dt><dd>Label</dd><dt>5</dt><dd>SimpleCombo</dd><dt>4</dt><dd>ListBox</dd><dt>3</dt><dd>Memo</dd><dt>6</dt><dd>DropDownList</dd></dl>{:/} | 
 | label-5 | 5 | Label |  | STRING |  |  |  | 
@@ -140,4 +140,4 @@ title: VDM documentation
 | lower_control | 13 | Lower Control |  | STRING |  |  |  | 
 | tab_sequence | 14 | Tab Sequence |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

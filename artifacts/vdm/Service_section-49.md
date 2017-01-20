@@ -21,7 +21,7 @@ title: VDM documentation
 | abbreviation | 1 | Abbreviation | {::nomarkdown}This field contains the accepted abbreviation for this service or section.{:/} | STRING |  | INDEXED |  | 
 | description | 1.3 | Description | {::nomarkdown}This field contains a brief description or the mission of this service<br/>or section.{:/} | STRING |  |  |  | 
 | mail_symbol | 1.5 | Mail Symbol | {::nomarkdown}This field contains the accepted mail routing symbol for the service<br/>or section.{:/} | STRING |  | INDEXED |  | 
-| parent_service | 1.6 | Parent Service | {::nomarkdown}This field contains a pointer to the name of the service or section which<br/>is \parent\ to this section.{:/} | POINTER |  | INDEXED | [Service_section-49](Service_section-49.md) | 
+| parent_service | 1.6 | Parent Service | {::nomarkdown}This field contains a pointer to the name of the service or section which<br/>is \parent\ to this section.{:/} | POINTER |  | INDEXED | Service_section-49 | 
 | type_of_service | 1.7 | Type Of Service | {::nomarkdown}This flag indicates the type of each entry in this file.  Services or<br/>sub-services may be marked as Administrative or for Patient Care.<br/>or for Patient Care.{:/} | ENUMERATION |  | INDEXED | {::nomarkdown}<dl><dt>C</dt><dd>PATIENT CARE</dd><dt>A</dt><dd>ADMINISTRATIVE</dd></dl>{:/} | 
 | chief | 2 | Chief | {::nomarkdown}This field contains a pointer to the name of the chief of this service<br/>or section.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | chief_phone | 3 | Chief Phone | {::nomarkdown}This field contains the telephone number(s) for the chief of this service .<br/>or section.{:/} | [STRING] |  |  |  | 
@@ -50,4 +50,4 @@ title: VDM documentation
 | date_closed | .01 | Date Closed | {::nomarkdown}This field contains a date/time when this service or section closed for<br/>hospital use.{:/} | DATE-TIME |  | REQUIRED |  | 
 | date_reopened | 1 | Date Re-opened | {::nomarkdown}This field contains a date/time when this closed service or section<br/>was reopened for hospital use.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

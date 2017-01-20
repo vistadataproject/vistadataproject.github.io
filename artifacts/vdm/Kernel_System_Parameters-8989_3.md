@@ -109,7 +109,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| alpha_beta_test_package | .01 | Alpha/beta Test Package | {::nomarkdown}This field identifies a specific package which was installed as an alpha<br/>or beta test of the package.{:/} | POINTER |  | REQUIRED, INDEXED | [Package-9_4](Package-9_4.md) | 
+| alpha_beta_test_package | .01 | Alpha/beta Test Package | {::nomarkdown}This field identifies a specific package which was installed as an alpha<br/>or beta test of the package.{:/} | POINTER |  | REQUIRED, INDEXED | Package-9_4 | 
 | date_last_updated | .02 | Date Last Updated | {::nomarkdown}This field contains the date on which the alpha or beta test package was<br/>last installed in the account.{:/} | DATE-TIME |  |  |  | 
 | adressee_for_usage_reporting | .03 | Adressee For Usage Reporting | {::nomarkdown}This field contains a mail group at a domain to which installation and<br/>option usage messages are sent.  This is usually a mail group containing<br/>one or more of the developers of the package at the developing ISC.{:/} | STRING |  |  |  | 
 | version_number | .04 | Version Number | {::nomarkdown}This field contains the current version of the Alpha/Beta Test package.<br/>This value is used to label some reports to clarify which version of<br/>the test package they relate to.  The entry must contain a number<br/>followed by T or V (to indicate a package in Testing or in Verification)<br/>followed by a number.{:/} | STRING |  |  |  | 
@@ -127,7 +127,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| alphabeta_test_option | .01 | Alpha,beta Test Option | {::nomarkdown}This field identifies one option in alpha or beta test package which has<br/>been used since the last package installation.{:/} | POINTER |  | REQUIRED | [Option-19](Option-19.md) | 
+| alphabeta_test_option | .01 | Alpha,beta Test Option | {::nomarkdown}This field identifies one option in alpha or beta test package which has<br/>been used since the last package installation.{:/} | POINTER |  | REQUIRED | Option-19 | 
 | accesses_since_last_update | .02 | Accesses Since Last Update | {::nomarkdown}This field is a count of the number of accesses to the alpha or beta<br/>test package option identified in field .01 since the last package<br/>installation.{:/} | NUMERIC |  |  |  | 
 
 ## <a name="Volume_Set-8989_304"></a>Volume_Set-8989_304 
@@ -160,4 +160,4 @@ title: VDM documentation
 | after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
 | last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

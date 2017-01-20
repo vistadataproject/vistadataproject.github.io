@@ -30,12 +30,12 @@ title: VDM documentation
 | invert | .1 | Invert | {::nomarkdown}This field is used to invert a list of data returned in the Cover sheet{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 | text_color | .11 | Text Color | {::nomarkdown}This field determines the text color for the returned data.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>Blue</dt><dd>BLUE</dd><dt>Purple</dt><dd>PURPLE</dd><dt>Aqua</dt><dd>AQUA</dd><dt>Fuchsia</dt><dd>FUCHSIA</dd><dt>Maroon</dt><dd>MAROON</dd><dt>Green</dt><dd>GREEN</dd><dt>Yellow</dt><dd>YELLOW</dd><dt>Teal</dt><dd>TEAL</dd><dt>Olive</dt><dd>OLIVE</dd><dt>Black</dt><dd>BLACK</dd><dt>Red</dt><dd>RED</dd><dt>Lime</dt><dd>LIME</dd></dl>{:/} | 
 | type-_12 | .12 | Type | {::nomarkdown}This field identifies the type for an entry.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>L</dt><dd>LISTMAN ONLY</dd><dt>M</dt><dd>MENU</dd><dt>S</dt><dd>SELECTION LIST</dd><dt>H</dt><dd>HTML</dd><dt>G</dt><dd>GRAPH</dd><dt>R</dt><dd>REPORT</dd><dt>V</dt><dd>LISTVIEW</dd></dl>{:/} | 
-| rpc | .13 | Rpc | {::nomarkdown}This is the RPC that is called inside the GUI to produce the report.{:/} | POINTER |  |  | [Remote_Procedure-8994](Remote_Procedure-8994.md) | 
+| rpc | .13 | Rpc | {::nomarkdown}This is the RPC that is called inside the GUI to produce the report.{:/} | POINTER |  |  | Remote_Procedure-8994 | 
 | date_format | .14 | Date Format | {::nomarkdown}This field determines what kind of format to display date/time fields.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>T</dt><dd>DATE WITH TIME</dd><dt>D</dt><dd>DATE ONLY</dd></dl>{:/} | 
 | date_piece | .15 | Date Piece | {::nomarkdown}This is used on the Cover Sheet to determine which piece the date field<br/>occupies.{:/} | NUMERIC |  |  |  | 
 | tab_positions | .16 | Tab Positions | {::nomarkdown}This is the value that will be used for the Tab property for the listbox<br/>associated with this report on the Cover Sheet.{:/} | STRING |  |  |  | 
 | pieces | .17 | Pieces | {::nomarkdown}This field is used by the Cover Sheet to determine what pieces of data<br/>to display in the listbox.{:/} | STRING |  |  |  | 
-| detail_report | .18 | Detail Report | {::nomarkdown}This field is used to get the details of an item on the cover sheet.{:/} | POINTER |  |  | [Oe_rr_Report-101_24](Oe_rr_Report-101_24.md) | 
+| detail_report | .18 | Detail Report | {::nomarkdown}This field is used to get the details of an item on the cover sheet.{:/} | POINTER |  |  | Oe_rr_Report-101_24 | 
 | report_tag | .19 | Report Tag | {::nomarkdown}This is the entry point tag for a report extract.{:/} | STRING |  |  |  | 
 | report_routine | .191 | Report Routine | {::nomarkdown}This is the routine associated with the REPORT TAG for report extracts.{:/} | STRING |  |  |  | 
 | report_component | .192 | Report Component | {::nomarkdown}This is the report component associated with this report.{:/} | POINTER |  |  | Health_Summary_Component-142_1 | 
@@ -95,8 +95,8 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| item | .01 | Item | {::nomarkdown}This is used in building a treeview of reports for CPRS GUI.{:/} | POINTER |  | REQUIRED, INDEXED | [Oe_rr_Report-101_24](Oe_rr_Report-101_24.md) | 
+| item | .01 | Item | {::nomarkdown}This is used in building a treeview of reports for CPRS GUI.{:/} | POINTER |  | REQUIRED, INDEXED | Oe_rr_Report-101_24 | 
 | header_text | .02 | Header Text | {::nomarkdown}This is the header to be used.{:/} | STRING |  |  |  | 
 | sequence | .03 | Sequence | {::nomarkdown}This is the sequence number for this report.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

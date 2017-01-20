@@ -36,12 +36,12 @@ title: VDM documentation
 | include_in_vac_account_report | .17 | Include In Vac Account Report | {::nomarkdown}This field indicates if this vaccine should be included in the Vaccine <br/>Accountability Report. Enter NO if not.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | default_volume | .18 | Default Volume | {::nomarkdown}This is the default volume for this vaccine.{:/} | NUMERIC |  |  |  | 
 | combination_immunization_y_n | .2 | Combination Immunization (y/n) | {::nomarkdown}This YES/NO field identifies if this immunization is a combination<br/>product or not.  If this immunization is a combination product (a<br/>multi-component vaccine requiring multiple vaccine information<br/>statements), enter YES.  If this immunization is not a combination<br/>product, but can be represented by a single vaccine information<br/>statement, enter NO.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-| component_number1 | .21 | Component #1 | {::nomarkdown}This is the first component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
-| component_number2 | .22 | Component #2 | {::nomarkdown}This is the second component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
-| component_number3 | .23 | Component #3 | {::nomarkdown}This is the third component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
-| component_number4 | .24 | Component #4 | {::nomarkdown}This is the fourth component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
-| component_number5 | .25 | Component #5 | {::nomarkdown}This is the fifth component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
-| component_number6 | .26 | Component #6 | {::nomarkdown}This is the sixth component of this combination vaccine.{:/} | POINTER |  |  | [Immunization-9999999_14](Immunization-9999999_14.md) | 
+| component_number1 | .21 | Component #1 | {::nomarkdown}This is the first component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
+| component_number2 | .22 | Component #2 | {::nomarkdown}This is the second component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
+| component_number3 | .23 | Component #3 | {::nomarkdown}This is the third component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
+| component_number4 | .24 | Component #4 | {::nomarkdown}This is the fourth component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
+| component_number5 | .25 | Component #5 | {::nomarkdown}This is the fifth component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
+| component_number6 | .26 | Component #6 | {::nomarkdown}This is the sixth component of this combination vaccine.{:/} | POINTER |  |  | Immunization-9999999_14 | 
 | reading_required | .51 | Reading Required | {::nomarkdown}This field indicates if this inoculation requires an objective reading <br/>and a subjective interpretation of the reading.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | brand_number1 | 1.01 | Brand #1 | {::nomarkdown}This is the first brand name for this vaccine.{:/} | STRING |  |  |  | 
 | brand_number2 | 1.03 | Brand #2 | {::nomarkdown}This is the second brand name for this vaccine.{:/} | STRING |  |  |  | 
@@ -56,7 +56,7 @@ title: VDM documentation
 | cdc_product_name | 5 | Cdc Product Name | {::nomarkdown}This multiple stores the CDC Product Name(s) reflecting manufacturer <br/>trade names, but may not be identical to those registered trade names.{:/} | [STRING] |  |  |  | 
 | vaccine_group_name | 7 | Vaccine Group Name | {::nomarkdown}This multiple field contains the VACCINE GROUP NAME(s) with which this<br/>immunization is associated.{:/} | [STRING] |  |  |  | 
 | synonym | 10 | Synonym | {::nomarkdown}This multiple stores locally editable synonyms for this immunization.{:/} | [STRING] |  |  |  | 
-| replaced_by_vha_standard_term | 99.97 | Replaced By Vha Standard Term | {::nomarkdown}This field is populated when one Term/Concept replaces another <br/>Term/Concept.  This field is controlled by standardization and should <br/>only be changed by standardization processes.  This field contains a <br/>pointer to a VHA standard term that replaces this entry.{:/} | POINTER |  | INDEXED | [Immunization-9999999_14](Immunization-9999999_14.md) | 
+| replaced_by_vha_standard_term | 99.97 | Replaced By Vha Standard Term | {::nomarkdown}This field is populated when one Term/Concept replaces another <br/>Term/Concept.  This field is controlled by standardization and should <br/>only be changed by standardization processes.  This field contains a <br/>pointer to a VHA standard term that replaces this entry.{:/} | POINTER |  | INDEXED | Immunization-9999999_14 | 
 | master_entry_for_vuid | 99.98 | Master Entry For VUID | {::nomarkdown}This field identifies the Master entry for a VUID associated with a <br/>Term/Concept.{:/} | BOOLEAN |  | REQUIRED | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | vuid | 99.99 | VUID | {::nomarkdown}VHA Unique ID (VUID). A unique meaningless integer assigned to reference<br/>terms VHA wide.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | effective_date_time | 99.991 | Effective Date/time | {::nomarkdown}Describes the pair Status and Effective Date/Time for each reference term.{:/} | [OBJECT] |  |  | [Effective_Date_time-9999999_1499](#Effective_Date_time-9999999_1499)  | 
@@ -93,4 +93,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a<br/>particular patient event. If 'INACTIVE', then the term will only be<br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

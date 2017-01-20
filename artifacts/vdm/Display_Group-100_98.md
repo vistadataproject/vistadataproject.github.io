@@ -21,7 +21,7 @@ title: VDM documentation
 | member | 1 | Member | {::nomarkdown}This is a list of specific display groups that `belong' to the display<br/>group listed in the NAME field.  (This is similar to menu items in the<br/>OPTION File.){:/} | [OBJECT] |  |  | [Member-100_981](#Member-100_981)  | 
 | mixed_name | 2 | Mixed Name | {::nomarkdown}This field contains a mixed case name for the display group.  The name <br/>should be as short as possible without being obscure.  This name is <br/>primarily intended for use in the windows display of orders.{:/} | STRING |  |  |  | 
 | short_name | 3 | Short Name | {::nomarkdown}This is an abbreviation for the display group to be used in displays and<br/>reports.{:/} | STRING |  |  |  | 
-| default_dialog | 4 | Default Dialog | {::nomarkdown}This is the dialog that will be used as the default definition when<br/>placing quick orders associated with this display group.{:/} | POINTER |  |  | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
+| default_dialog | 4 | Default Dialog | {::nomarkdown}This is the dialog that will be used as the default definition when<br/>placing quick orders associated with this display group.{:/} | POINTER |  |  | Order_Dialog-101_41 | 
 
 ## <a name="Member-100_981"></a>Member-100_981 
 
@@ -35,6 +35,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | sequence | .001 | Sequence | {::nomarkdown}This is the sequence of the member in the display group for reporting<br/>purposes.{:/} | IEN |  |  |  | 
-| member | .01 | Member | {::nomarkdown}This is a display group listed in the NAME field. (This is similar to a<br/>menu item in the OPTION File.){:/} | POINTER |  | REQUIRED, INDEXED | [Display_Group-100_98](Display_Group-100_98.md) | 
+| member | .01 | Member | {::nomarkdown}This is a display group listed in the NAME field. (This is similar to a<br/>menu item in the OPTION File.){:/} | POINTER |  | REQUIRED, INDEXED | Display_Group-100_98 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

@@ -26,7 +26,7 @@ title: VDM documentation
 | sex_specific | 2.5 | Sex Specific | {::nomarkdown}If this specimen is specific to one sex only, enter F for female or M<br/>for male.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>M</dt><dd>MALE</dd><dt>F</dt><dd>FEMALE</dd></dl>{:/} | 
 | synonyms | 3 | Synonyms | {::nomarkdown}This is a multiple field.  Enter synonyms or common<br/>misspellings of the specimen or organ/tissue.{:/} | [STRING] |  |  |  | 
 | weigh | 4 | Weigh | {::nomarkdown}WEIGH is a YES/NO question.  Answer YES if you want this specimen to<br/>be weighed for surgical pathology.  A null answer equals NO.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
-| collection_sample | 4.1 | Collection Sample | {::nomarkdown}The name of the collection sample for this specimen.<br/>Points to the COLLECTION SAMPLE file.{:/} | POINTER |  |  | [Collection_Sample-62](Collection_Sample-62.md) | 
+| collection_sample | 4.1 | Collection Sample | {::nomarkdown}The name of the collection sample for this specimen.<br/>Points to the COLLECTION SAMPLE file.{:/} | POINTER |  |  | Collection_Sample-62 | 
 | journal_reference | 5 | Journal Reference | {::nomarkdown}This is a multiple field.  You may enter Journal references that apply<br/>to this specimen.<br/>Points to FILE #95.{:/} | [OBJECT] |  |  | [Journal_Reference-61_02](#Journal_Reference-61_02)  | 
 | abbreviation | 6 | Abbreviation | {::nomarkdown}This must be a 1,2, or 3 character abbreviation of the specimen.{:/} | STRING |  | INDEXED |  | 
 | snomed_ct_id | 20 | Snomed Ct Id | {::nomarkdown}This is the SNOMED CT concept identifier for this entry. If this<br/>entry is null then the entry is either unmapped or no valid SNOMED concept<br/>term exists to map this term.<br/> <br/>This field is not editable except by the Lab software.{:/} | STRING |  | INDEXED |  | 
@@ -72,4 +72,4 @@ title: VDM documentation
 | sct_status_user | 3 | Sct Status User | {::nomarkdown}Store the user who initiated the process to apply the STS SNOMED CT code <br/>resolution or the original mapping to this file entry.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | sct_comment_text | 4 | Sct Comment Text | {::nomarkdown}Contains text or comments related to the mapping of a term to SNOMED CT.<br/>The text can relate to information submitted to STS for the term to be <br/>mapped, the comments returned by STS related to the mapping and <br/>any comments when attempting to apply the disposition from STS.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

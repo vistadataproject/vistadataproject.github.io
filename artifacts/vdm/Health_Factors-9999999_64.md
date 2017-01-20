@@ -18,7 +18,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | factor | .01 | Factor | {::nomarkdown}This is the name of the Health Factor (e.g., Current Smoker, Non-Tobacco User){:/} | STRING |  | REQUIRED, INDEXED |  | 
-| category | .03 | Category | {::nomarkdown} This is the Health Factor that categorizes several factors into one group.<br/>For instance, Non smoker and Frequent Smoker would have the category of<br/>Tobacco.<br/> <br/>Enter the name of the Health Factor Category.{:/} | POINTER |  | REQUIRED, INDEXED | [Health_Factors-9999999_64](Health_Factors-9999999_64.md) | 
+| category | .03 | Category | {::nomarkdown} This is the Health Factor that categorizes several factors into one group.<br/>For instance, Non smoker and Frequent Smoker would have the category of<br/>Tobacco.<br/> <br/>Enter the name of the Health Factor Category.{:/} | POINTER |  | REQUIRED, INDEXED | Health_Factors-9999999_64 | 
 | short_name | .04 | Short Name | {::nomarkdown}(Optional)<br/>This is a 'short name' for this health factor. If defined, it will be<br/>used on the Health Factors Component of the Health Summary<br/> <br/>Enter a 2-10 character short name for this health factor.{:/} | STRING |  |  |  | 
 | use_only_with_sex | .05 | Use Only With Sex | {::nomarkdown}(Optional)<br/>This is the sex that this health factor is used for.<br/> <br/>Enter an \F\ for female or an \M\ for male.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>M</dt><dd>MALE</dd><dt>F</dt><dd>FEMALE</dd></dl>{:/} | 
 | lower_age | .06 | Lower Age | {::nomarkdown}(Optional)<br/>This is the lower age limit that might apply to this health factor.<br/> <br/>Enter an age between 0 and 99999.{:/} | NUMERIC |  |  |  | 
@@ -29,4 +29,4 @@ title: VDM documentation
 | inactive_flag | .11 | Inactive Flag | {::nomarkdown}This field is used to inactivate a health factor type. If this field<br/>contains a \1\ then the health factor is inactive.  Inactive health<br/>factors cannot be selected in the manual data entry process.  Health<br/>factor entries should be made inactive when they are no longer used.  Do<br/>not delete the entry or change the meaning of the health factor entry.<br/> <br/>To make an inactive health factor active, enter the \@\ symbol to delete<br/>the \1\ from the field.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>INACTIVE</dd></dl>{:/} | 
 | not_used_with | 1101 | Not Used With | {::nomarkdown}Some health factors are not used with others. This is the group of health<br/>factors that this factor is not used with.{:/} | [POINTER] |  |  | {id:Health_Factors-9999999_64} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

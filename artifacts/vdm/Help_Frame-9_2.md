@@ -42,6 +42,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | related_frame_keyword | .01 | Related Frame Keyword | {::nomarkdown}A keyword appears in the text surrounded by brackets.  When the user<br/>enters the keyword, a related frame will be displayed with more detailed<br/>information on the topic suggested by the keyword.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| related_frame | 1 | Related Frame | {::nomarkdown}The internal name of another help-frame which can be invoked by the<br/>keyword to obtain more detailed information on a sub-topic.{:/} | POINTER |  | INDEXED | [Help_Frame-9_2](Help_Frame-9_2.md) | 
+| related_frame | 1 | Related Frame | {::nomarkdown}The internal name of another help-frame which can be invoked by the<br/>keyword to obtain more detailed information on a sub-topic.{:/} | POINTER |  | INDEXED | Help_Frame-9_2 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

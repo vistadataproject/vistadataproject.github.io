@@ -33,7 +33,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| quick_order | .01 | Quick Order | {::nomarkdown}This points to a quick order in the Order Dialog file (101.41).{:/} | POINTER |  | REQUIRED, INDEXED | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 
+| quick_order | .01 | Quick Order | {::nomarkdown}This points to a quick order in the Order Dialog file (101.41).{:/} | POINTER |  | REQUIRED, INDEXED | Order_Dialog-101_41 | 
 | display_text | 2 | Display Text | {::nomarkdown}This contains the text to display in the view list.{:/} | STRING |  |  |  | 
 
 ## <a name="Set_Member-101_442"></a>Set_Member-101_442 
@@ -47,7 +47,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| set_member | .01 | Set Member | {::nomarkdown}This points to an item in the Orderable Item file (101.43).{:/} | POINTER |  | REQUIRED, INDEXED | [Orderable_Items-101_43](Orderable_Items-101_43.md) | 
+| set_member | .01 | Set Member | {::nomarkdown}This points to an item in the Orderable Item file (101.43).{:/} | POINTER |  | REQUIRED, INDEXED | Orderable_Items-101_43 | 
 | display_text | 2 | Display Text | {::nomarkdown}This is the text that is displayed in the view list.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

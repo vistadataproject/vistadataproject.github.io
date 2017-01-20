@@ -33,7 +33,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| individual_reminders | .01 | Individual Reminders | {::nomarkdown}This is a reminder definition.{:/} | POINTER |  | REQUIRED, INDEXED | [Reminder_Definition-811_9](Reminder_Definition-811_9.md) | 
+| individual_reminders | .01 | Individual Reminders | {::nomarkdown}This is a reminder definition.{:/} | POINTER |  | REQUIRED, INDEXED | Reminder_Definition-811_9 | 
 | display_order | .02 | Display Order | {::nomarkdown}This is the order in which to display this reminder definition when the <br/>list of reminders in this category is displayed.{:/} | NUMERIC |  | REQUIRED |  | 
 
 ## <a name="Subcategory-811_701"></a>Subcategory-811_701 
@@ -47,7 +47,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| subcategory | .01 | Sub-category | {::nomarkdown}This is an existing category that is to be included as part of a new<br/>category.{:/} | POINTER |  | REQUIRED, INDEXED | [Reminder_Category-811_7](Reminder_Category-811_7.md) | 
+| subcategory | .01 | Sub-category | {::nomarkdown}This is an existing category that is to be included as part of a new<br/>category.{:/} | POINTER |  | REQUIRED, INDEXED | Reminder_Category-811_7 | 
 | display_order | .02 | Display Order | {::nomarkdown}This is the display order for the sub-categories. Sub-categories are<br/>displayed after individual reminders.{:/} | NUMERIC |  | REQUIRED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

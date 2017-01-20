@@ -51,7 +51,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| reaction | .01 | Reaction | {::nomarkdown}One of the reactions for this allergy/adverse reaction.{:/} | POINTER |  | REQUIRED, INDEXED | [Sign_symptoms-120_83](Sign_symptoms-120_83.md) | 
+| reaction | .01 | Reaction | {::nomarkdown}One of the reactions for this allergy/adverse reaction.{:/} | POINTER |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
 | other_reaction | 1 | Other Reaction | {::nomarkdown}If this reaction cannot be found in the Sign/Symptoms (120.83) file, then<br/>the free text of what the user typed in will be here, and the GMR Reaction<br/>of OTHER will be the value of the Name field.<br/> <br/>Once the SIGNS/SYMPTOMS file is standardized then this field will<br/>no longer be needed as all entries will appear in file 120.83 and<br/>free text entries will no longer be allowed.{:/} | STRING |  |  |  | 
 | entered_by | 2 | Entered By | {::nomarkdown}The person who entered this reaction into the system.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_entered | 3 | Date Entered | {::nomarkdown}This is where the user would enter the date that the reaction<br/>(Sign/Symptom) occurred or was entered into the computer.{:/} | DATE-TIME |  |  |  | 
@@ -100,4 +100,4 @@ title: VDM documentation
 | comment_type | 1.5 | Comment Type | {::nomarkdown}This field indicates the type of comments. If this field is<br/>answered \V\, then these comments are verifier entered.  If this field is<br/>answered \O\, then these are observer comments.  If this field is answered<br/>\E\, then these are entered in error comments.{:/} | ENUMERATION |  | INDEXED | {::nomarkdown}<dl><dt>O</dt><dd>OBSERVED</dd><dt>E</dt><dd>ERRORED</dd><dt>V</dt><dd>VERIFIED</dd></dl>{:/} | 
 | comments | 2 | Comments | {::nomarkdown}This field contains comments that were entered.<br/>                                            <br/>                                              {:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

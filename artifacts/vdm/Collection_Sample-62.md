@@ -18,7 +18,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | name | .01 | Name | {::nomarkdown}The name of the collection sample.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| default_specimen | 2 | Default Specimen | {::nomarkdown}This is the specimen that will appear as the default specimen for this collection sample.  This does not preclude other specimens from being used but, rather, if it is the most frequently used one, it will save time and keystrokes for the user.<br/> collection sample.  This does not preclude other specimens from being used<br/> but, rather, if it is the most frequently used one, it will save  time<br/> and keystrokes for the user.{:/} | POINTER |  |  | [Topography_Field-61](Topography_Field-61.md) | 
+| default_specimen | 2 | Default Specimen | {::nomarkdown}This is the specimen that will appear as the default specimen for this collection sample.  This does not preclude other specimens from being used but, rather, if it is the most frequently used one, it will save time and keystrokes for the user.<br/> collection sample.  This does not preclude other specimens from being used<br/> but, rather, if it is the most frequently used one, it will save  time<br/> and keystrokes for the user.{:/} | POINTER |  |  | Topography_Field-61 | 
 | tube_top_color | 3 | Tube Top Color | {::nomarkdown}The common color description of the tube used for this sample.{:/} | STRING |  | INDEXED |  | 
 | volume_large | 4 | Volume Large | {::nomarkdown}The volume required for this sample.{:/} | NUMERIC |  |  |  | 
 | volume_small | 5 | Volume Small | {::nomarkdown}The volume required for this sample if an alternate small tube is used.{:/} | NUMERIC |  |  |  | 
@@ -60,7 +60,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| accession_area | .01 | Accession Area | {::nomarkdown}  Which accession area does the test belong that you want have<br/>accession WKLD codes triggered.{:/} | POINTER |  | REQUIRED | [Accession-68](Accession-68.md) | 
+| accession_area | .01 | Accession Area | {::nomarkdown}  Which accession area does the test belong that you want have<br/>accession WKLD codes triggered.{:/} | POINTER |  | REQUIRED | Accession-68 | 
 | lab_test | 1 | Lab Test | {::nomarkdown} Enter a list of lab test that should trigger workload capture.{:/} | [OBJECT] |  |  | {id:Lab_Test-62_21,fmId:62.21,label:Lab Test,properties:[{id:lab_test,fmId:.01,label:Lab Test,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:wkld_code,fmId:1,label:Wkld Code,description:  Enter a list of WKLD code you wish to have counted when this\rtest is accessioned. This is an alternate point for entering\raccession WKLD codes.  It is simular to accession WKLD codes but\ris by accession area and test.\r   This field is to be used when it is not desirable to enter\rcollection samples to a test in file 60 (LABORATORY TEST). It\ris particularly useful in Microbioloby type test.,datatype:[OBJECT],range:{id:Wkld_Code-62_211,fmId:62.211,label:Wkld Code,properties:[{id:wkld_code,fmId:.01,label:Wkld Code,description: Enter the WKLD code for thi,datatype:POINTER,required:true,range:{id:Wkld_Code-64}},{id:test_multiply_factor,fmId:2,label:Test Multiply Factor,description:  This field contains the a number by which the count\rshould be multiplied by.,datatype:NUMERIC}]}}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

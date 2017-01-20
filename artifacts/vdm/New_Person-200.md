@@ -50,7 +50,7 @@ title: VDM documentation
 | dob | 5 | Dob | {::nomarkdown}This is the date of birth of the new person.{:/} | DATE-TIME |  |  |  | 
 | disuser | 7 | Disuser | {::nomarkdown}This field, if set to YES (1), marks a user that is not allowed to<br/>log on to this system.  It will leave all Menus, Keys and other attributes<br/>exabled for the user.<br/>An example would be an external support person<br/>that you only want to be able to log on to your system when you are<br/>monitoring them.  Setting this field would prevent them from loging<br/>on to the system untill you cleared the field.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 | verify_code_never_expires | 7.2 | Verify Code Never Expires | {::nomarkdown}This field will control if the users VERIFY code will expire at the<br/>interval set by the Kernel System Parameter LIFETIME OF VERIFY CODE.<br/>This field should only be used for access to the VistA system from other<br/>systems making connection with the RPCBroker and have very controlled<br/>access.<br/>Only persons with the XUMGR key are allowed to set this flag.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-| title | 8 | Title | {::nomarkdown}This is the title for the new person.{:/} | POINTER |  |  | [Title-3_1](Title-3_1.md) | 
+| title | 8 | Title | {::nomarkdown}This is the title for the new person.{:/} | POINTER |  |  | Title-3_1 | 
 | ssn | 9 | Ssn | {::nomarkdown}This is the social security number of the new person.{:/} | STRING |  | INDEXED |  | 
 | termination_date | 9.2 | Termination Date | {::nomarkdown}This is the date after which the computer will no longer recognize this<br/>user's ACCESS CODE.<br/>Once this date has passed, when the USER TERMINATE job runs it will clean<br/>out this users data based on flags in the NEW PERSON file.{:/} | DATE-TIME |  |  |  | 
 | delete_all_mail_access | 9.21 | Delete All Mail Access | {::nomarkdown}This gives you the ability to purge all of a user's mail related<br/>information. This includes Mail messages, Mail Boxes, Mail Groups,<br/>Surrogate privlages when that user is terminated.<br/>This is recomended.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
@@ -92,7 +92,7 @@ title: VDM documentation
 | signature_block_title | 20.3 | Signature Block Title | {::nomarkdown}This field should contain the title of the person who is electronically<br/>signing a document.  Examples of titles are Chief of Surgery, Dietician,<br/>Clinical Pharmacist, etc.  This title will print next to the name of the<br/>person who signs the document.  The person's name will be taken from the<br/>SIGNATURE BLOCK PRINTED NAME field.<br/> <br/>The title must be 2 to 50 characters in length.{:/} | STRING |  |  |  | 
 | electronic_signature_code | 20.4 | Electronic Signature Code | {::nomarkdown}This field contains the encrypted code which the user types when<br/>signing documents electronically.  The user's input will be compared to<br/>this field when validating his electronic signature.<br/>All electronic signature codes should be treated as confidential.{:/} | STRING |  |  |  | 
 | mail_code | 28 | Mail Code | {::nomarkdown}This is the mail code for the new person.{:/} | STRING |  |  |  | 
-| service_section | 29 | Service/section | {::nomarkdown}This is the name of the service or section for the new person.{:/} | POINTER |  | REQUIRED, INDEXED | [Service_section-49](Service_section-49.md) | 
+| service_section | 29 | Service/section | {::nomarkdown}This is the name of the service or section for the new person.{:/} | POINTER |  | REQUIRED, INDEXED | Service_section-49 | 
 | date_entered | 30 | Date Entered | {::nomarkdown}This is the date on which the user was entered into the user file.<br/>It is automatically inserted into the file by the ADD USER option.{:/} | DATE-TIME |  |  |  | 
 | creator | 31 | Creator | {::nomarkdown}This is the name of the user who entered this user into the user file.<br/>It is automatically set by the ADD USER option.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | file_range | 31.1 | File Range | {::nomarkdown}This field limits a user to a specific range of file numbers.  When<br/>creating new files, only a number within this range can be assigned<br/>to the new file.{:/} | STRING |  |  |  | 
@@ -139,7 +139,7 @@ title: VDM documentation
 | rad_nuc_med_inactive_date | 73 | Rad/nuc Med Inactive Date | {::nomarkdown}This field contains the date that this person was inactivated as a Rad/Nuc<br/>Med user.{:/} | DATE-TIME |  |  |  | 
 | rad_nuc_med_location_access | 74 | Rad/nuc Med Location Access | {::nomarkdown}This field will allow the user to access all data specific to a particular<br/>Radiology/Nuclear Medicine location.{:/} | [POINTER] |  |  | {id:Imaging_Locations-79_1} | 
 | restrict_patient_selection | 101.01 | Restrict Patient Selection | {::nomarkdown}Answer 'YES' to restrict this user to selecting only those patients<br/>associated with the list pointed to by the PATIENT SELECTION LIST field<br/>(#101.02).{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-| patient_selection_list | 101.02 | Patient Selection List | {::nomarkdown}If a value is entered into this field, the user is allowed to select only<br/>those patients associated with this OE/RR LIST.{:/} | POINTER |  |  | [Oe_rr_List-100_21](Oe_rr_List-100_21.md) | 
+| patient_selection_list | 101.02 | Patient Selection List | {::nomarkdown}If a value is entered into this field, the user is allowed to select only<br/>those patients associated with this OE/RR LIST.{:/} | POINTER |  |  | Oe_rr_List-100_21 | 
 | cprs_tab | 101.13 | Cprs Tab |  | [OBJECT] |  |  | [Cprs_Tab-200_010113](#Cprs_Tab-200_010113)  | 
 | problem_list_primary_view | 125 | Problem List Primary View | {::nomarkdown}This string contains the user's preferred view of the problem list.<br/>Problems are assigned a category based upon the service of the provider<br/>who entered and/or is treating the problem; a screen may then be invoked<br/>allowing a filtered view of the problem list.{:/} | STRING |  |  |  | 
 | problem_selection_list | 125.1 | Problem Selection List | {::nomarkdown}This is the user's preferred default list of problems to select from<br/>when adding to a patient's problem list.  If there is a list specified<br/>here from the Problem Selection List File (#125), it will be automatically<br/>presented to the user when the \Add New Problem(s)\ action is selected;<br/>otherwise, the user will simply be prompted to select a problem from<br/>the Clinical Lexicon Utility.{:/} | POINTER |  |  | Problem_Selection_List-125 | 
@@ -153,15 +153,15 @@ title: VDM documentation
 | always_show_secondaries | 200.11 | Always Show Secondaries | {::nomarkdown}This field is a flag used by the menu system to control if<br/>the user is shown there secondary menu list with one '?' or two.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 | auto_signon | 200.18 | Auto Sign-on | {::nomarkdown}This field will control if the Auto Sign-on (Single Sign-on) is enabled<br/>for use with terminal sessions.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 | multiple_signon_limit | 200.19 | Multiple Sign-on Limit | {::nomarkdown}This field, if filled in, overrides the SITE file. This field sets an<br/>upper limit on the number of concurrent sessions that this user can have<br/>from one IP address when the Multiple Sign-on field (#204) is set to \One<br/>IP\{:/} | NUMERIC |  |  |  | 
-| primary_menu_option | 201 | Primary Menu Option | {::nomarkdown}This is the menu option that this user will be dropped into<br/>if none of the following are set: (in the order checked)<br/>Tied routine, Device primary menu.{:/} | POINTER |  | INDEXED | [Option-19](Option-19.md) | 
-| primary_window | 201.1 | Primary Window | {::nomarkdown}This is the lead or first window launched at startup.{:/} | POINTER |  |  | [Option-19](Option-19.md) | 
+| primary_menu_option | 201 | Primary Menu Option | {::nomarkdown}This is the menu option that this user will be dropped into<br/>if none of the following are set: (in the order checked)<br/>Tied routine, Device primary menu.{:/} | POINTER |  | INDEXED | Option-19 | 
+| primary_window | 201.1 | Primary Window | {::nomarkdown}This is the lead or first window launched at startup.{:/} | POINTER |  |  | Option-19 | 
 | startup_default | 201.2 | Startup Default | {::nomarkdown}This field determines if the Primary Menu or the Primary Window is<br/>loaded at logon.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>W</dt><dd>Primary Window</dd><dt>M</dt><dd>Primary Menu Option</dd></dl>{:/} | 
 | last_signon_date_time | 202 | Last Sign-on Date/time | {::nomarkdown}This field is set when a user signs on to the system.{:/} | DATE-TIME |  |  |  | 
 | xus_logon_attempt_count | 202.02 | Xus Logon Attempt Count | {::nomarkdown}This is used to let the user know about unsuccessful logon atempts.{:/} | NUMERIC |  |  |  | 
 | xus_active_user | 202.03 | Xus Active User | {::nomarkdown}If a user gets the ** MULTIPULE SIGN-ON NOT ALLOWED ** message<br/>this field can be set to NO to allow them to sign-on again.<br/>This flag is set by XUS and XUSCLEAN.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 | entry_last_edit_date | 202.04 | Entry Last Edit Date | {::nomarkdown}This field holds the date time this entry in the file was last edited.<br/>The following fields now trigger the current date to the ENTRY LAST EDIT<br/>DATE field: DISUSER (#7), ACCESS CODE (#2), and TERMINATION DATE (#9.2). {:/} | DATE-TIME |  |  |  | 
 | lockout_user_until | 202.05 | Lockout User Until | {::nomarkdown}This field is used by the signon code to lockout users that have<br/>tried bad VERIFY codes too many times.  This field holds the date/time <br/>that the user should be locked out of the system until.<br/>It is set with the current time plus the lockout time.{:/} | DATE-TIME |  |  |  | 
-| last_option_accessed | 202.1 | Last Option Accessed | {::nomarkdown}This field holds the last option accessed by the user, when the user<br/>selects the CONTINUE option instead of HALTing.  When the user logs<br/>on again, he will be able to continue directly at that option.{:/} | POINTER |  |  | [Option-19](Option-19.md) | 
+| last_option_accessed | 202.1 | Last Option Accessed | {::nomarkdown}This field holds the last option accessed by the user, when the user<br/>selects the CONTINUE option instead of HALTing.  When the user logs<br/>on again, he will be able to continue directly at that option.{:/} | POINTER |  |  | Option-19 | 
 | last_option_main_menu | 202.2 | Last Option Main Menu | {::nomarkdown}This field holds an indicator of which primary or secondary menu a<br/>user was in, after selecting the CONTINUE option.  It is used in con-<br/>junction with the LAST OPTION ACCESSED to resume when a user logs back<br/>on.{:/} | STRING |  |  |  | 
 | secondary_menu_options | 203 | Secondary Menu Options | {::nomarkdown}Options awarded a user not on his or her primary menu option{:/} | [OBJECT] |  |  | [Secondary_Menu_Options-200_03](#Secondary_Menu_Options-200_03)  | 
 | timestamp | 203.1 | Timestamp | {::nomarkdown}This is the time at which this option was last modified.  It is triggered<br/>automatically by the appropriate fields.  If a CPU references an option<br/>which has been modified since it was last rebuilt, it triggers a rebuilding<br/>of the options.{:/} | STRING |  |  |  | 
@@ -273,7 +273,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| delegated_options | .01 | Delegated Options | {::nomarkdown}This field identifies which options this user may delegate to others.{:/} | POINTER |  | REQUIRED, INDEXED | [Option-19](Option-19.md) | 
+| delegated_options | .01 | Delegated Options | {::nomarkdown}This field identifies which options this user may delegate to others.{:/} | POINTER |  | REQUIRED, INDEXED | Option-19 | 
 | delegated_by | 1 | Delegated By | {::nomarkdown}This field indicates who granted authority for this user to delegate<br/>this option to others.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_delegated | 2 | Date Delegated | {::nomarkdown}This field records the date when this option was added to the list<br/>of options this user may delegate to others.{:/} | DATE-TIME |  |  |  | 
 | editable | 3 | Editable | {::nomarkdown}This field indicates whether this use is allowed to edit this option.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
@@ -318,7 +318,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | file_number | .001 | File Number | {::nomarkdown}When defined, this field makes the sub-file's internal entry number<br/>accessible for inquiry and edit.{:/} | IEN |  |  |  | 
-| accessible_file | .01 | Accessible File |  | POINTER |  | REQUIRED, INDEXED | [File-1](File-1.md) | 
+| accessible_file | .01 | Accessible File |  | POINTER |  | REQUIRED, INDEXED | File-1 | 
 | data_dictionary_access | 1 | Data Dictionary Access | {::nomarkdown}This field is a flag that, when set to 1, gives the user data dictionary<br/>access to the file (in the .01 field) represented in this record.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | delete_access | 2 | Delete Access | {::nomarkdown}This field is a flag that, when set to 1, gives the user delete access to<br/>the file (in the .01 field) represented in this record.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 | laygo_access | 3 | Laygo Access | {::nomarkdown}This field is a flag that, when set to 1, gives the user LAYGO access to<br/>the file (in the .01 field) represented in this record.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
@@ -413,7 +413,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| cprs_tab | .01 | Cprs Tab | {::nomarkdown}This is a pointer to the OR CPRS TABS (#101.13) file. Enter the name of<br/>the CPRS tab for which you want to set effective and expiration dates for<br/>access for this user.{:/} | POINTER |  | REQUIRED, INDEXED | [Or_Cprs_Tabs-101_13](Or_Cprs_Tabs-101_13.md) | 
+| cprs_tab | .01 | Cprs Tab | {::nomarkdown}This is a pointer to the OR CPRS TABS (#101.13) file. Enter the name of<br/>the CPRS tab for which you want to set effective and expiration dates for<br/>access for this user.{:/} | POINTER |  | REQUIRED, INDEXED | Or_Cprs_Tabs-101_13 | 
 | effective_date | .02 | Effective Date | {::nomarkdown}This is the effective date of access to the CPRS tab.{:/} | DATE-TIME |  | REQUIRED |  | 
 | expiration_date | .03 | Expiration Date | {::nomarkdown}This is the expiration date of access to the CPRS tab.{:/} | DATE-TIME |  |  |  | 
 
@@ -428,7 +428,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| secondary_menu_options | .01 | Secondary Menu Options | {::nomarkdown}This is an option which is merged with the users primary menu<br/>and XUCOMMAND option, giving the user this option on all of her/his<br/>menus.{:/} | POINTER |  | REQUIRED, INDEXED | [Option-19](Option-19.md) | 
+| secondary_menu_options | .01 | Secondary Menu Options | {::nomarkdown}This is an option which is merged with the users primary menu<br/>and XUCOMMAND option, giving the user this option on all of her/his<br/>menus.{:/} | POINTER |  | REQUIRED, INDEXED | Option-19 | 
 | synonym | 2 | Synonym | {::nomarkdown}This is a user-specific synonym which may be used in addressing this<br/>option.{:/} | STRING |  |  |  | 
 
 ## <a name="Personal_Diagnoses_List-200_0351"></a>Personal_Diagnoses_List-200_0351 
@@ -533,7 +533,7 @@ title: VDM documentation
 | keyword | .01 | Keyword | {::nomarkdown}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}wn}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}wn}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

@@ -20,7 +20,7 @@ title: VDM documentation
 | name | .01 | Name | {::nomarkdown}This is the name of the list being defined.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | upper_case | .1 | Upper Case | {::nomarkdown}This is the name of the list in upper case.  Used for look-up.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | type-1 | 1 | Type | {::nomarkdown}This is the type of list being defined.  List type currently includes<br/>team and personal.<br/>o  Team lists<br/>     o  TM - Manually maintained (addition and removal)<br/>     o  TA - Maintained by Autolinks for addition and removal of patients.<br/>     o  MRAL - Manual removal of patients from the list with Autolink<br/>        addition of patients to the list.<br/> <br/>o  Personal lists<br/>     o  P - Manually maintained (addition and removal)<br/> <br/> {:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>P</dt><dd>PERSONAL PATIENT</dd><dt>MRAL</dt><dd>MANUAL REMOVAL/AUTOLINK ADDITION</dd><dt>TA</dt><dd>TEAM PATIENT AUTOLINKED</dd><dt>TM</dt><dd>TEAM PATIENT MANUAL</dd></dl>{:/} | 
-| device | 1.5 | Device | {::nomarkdown}Device from the DEVICE file linked to the list.{:/} | POINTER |  |  | [Device-3_5](Device-3_5.md) | 
+| device | 1.5 | Device | {::nomarkdown}Device from the DEVICE file linked to the list.{:/} | POINTER |  |  | Device-3_5 | 
 | creator | 1.6 | Creator | {::nomarkdown}This is the IEN of the user who creates the Team List.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | creation_d_t | 1.65 | Creation D/t | {::nomarkdown}This field stores the date of creation of the list.{:/} | DATE-TIME |  |  |  | 
 | subscribe | 1.7 | Subscribe | {::nomarkdown}This field stores either a Y or N (for YES or NO) entry and is used in<br/>CPRS to determine whether or not individual users will be allowed to add<br/>or remove themselves as members of the team list if it is of autolink<br/>type.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
@@ -72,4 +72,4 @@ title: VDM documentation
 | view_date_time | 1 | View Date/time | {::nomarkdown}This is the date/time this item was last viewed.{:/} | DATE-TIME |  |  |  | 
 | notification_selection | 2 | *notification Selection | {::nomarkdown}This field is unused and will be deleted post-CPRS 1.{:/} | [POINTER] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

@@ -19,7 +19,7 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | name | .01 | Name | {::nomarkdown}Contains the name of the facility treating specialty.  Types of<br/>treating specialties may vary between facilities.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | specialty | 1 | Specialty | {::nomarkdown}This field contains the treating specialty name as entered by<br/>facility or distributed with software.  Pointer to  Specialty File{:/} | POINTER |  | REQUIRED, INDEXED | Specialty-42_4 | 
-| service | 2 | Service | {::nomarkdown}This field contains the associated Service of the treating specialty.{:/} | POINTER |  | INDEXED | [Service_section-49](Service_section-49.md) | 
+| service | 2 | Service | {::nomarkdown}This field contains the associated Service of the treating specialty.{:/} | POINTER |  | INDEXED | Service_section-49 | 
 | providers | 10 | Providers | {::nomarkdown}Primary care physicians associated with treating specialty.{:/} | [POINTER] |  |  | {id:New_Person-200} | 
 | abbreviation | 99 | Abbreviation | {::nomarkdown}Formerly honeywell code may now assume other uses.<br/>Enter an abbreviation (1-5 characters) to be used when <br/>Patients Treating Specialty is to be displayed on the G&L.<br/>If there is nothing entered here the first five characters <br/>of the name for this facility treating specialty will appear <br/>on the G&L.{:/} | STRING |  | INDEXED |  | 
 | effective_date | 100 | Effective Date |  | [OBJECT] |  |  | [Effective_Date-45_702](#Effective_Date-45_702)  | 
@@ -38,4 +38,4 @@ title: VDM documentation
 | effective_date | .01 | Effective Date | {::nomarkdown}This multiple holds the effective date(s) for the Facility Treating<br/>Specialties<br/> {:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | active | .02 | Active? | {::nomarkdown}This field will be an active/inactive flag for the facility treating<br/>specialty.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

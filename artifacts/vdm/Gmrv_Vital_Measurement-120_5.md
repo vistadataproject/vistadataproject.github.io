@@ -19,7 +19,7 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date_time_vitals_taken | .01 | Date/time Vitals Taken | {::nomarkdown}This field contains the date/time this vital/measurement was taken by the<br/>care provider.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | patient | .02 | Patient | {::nomarkdown}This field contains the name of the patient for whom this vital measurement<br/>data was entered.  Pointer to the PATIENT (#2) file.{:/} | POINTER |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
-| vital_type | .03 | Vital Type | {::nomarkdown}This field denotes the type of measurement for this record.  Pointer to<br/>the GMRV VITAL TYPE (#120.51) file.{:/} | POINTER |  | REQUIRED, INDEXED | [Gmrv_Vital_Type-120_51](Gmrv_Vital_Type-120_51.md) | 
+| vital_type | .03 | Vital Type | {::nomarkdown}This field denotes the type of measurement for this record.  Pointer to<br/>the GMRV VITAL TYPE (#120.51) file.{:/} | POINTER |  | REQUIRED, INDEXED | Gmrv_Vital_Type-120_51 | 
 | date_time_vitals_entered | .04 | Date/time Vitals Entered | {::nomarkdown}This field contains the date/time that this record was entered.{:/} | DATE-TIME |  | REQUIRED |  | 
 | hospital_location | .05 | Hospital Location | {::nomarkdown}This field contains the location where this measurement was taken.  Pointer <br/>to the HOSPITAL LOCATION (#44) file.{:/} | POINTER |  | REQUIRED | [Hospital_Location-44](Hospital_Location-44.md) | 
 | entered_by | .06 | Entered By | {::nomarkdown}This field contains the name of the person who edited the file entry.  <br/>Pointer to the NEW PERSON (#200) file.{:/} | POINTER |  | REQUIRED | [New_Person-200](New_Person-200.md) | 
@@ -44,4 +44,4 @@ title: VDM documentation
 | reason_entered_in_error | .01 | Reason Entered In Error | {::nomarkdown}This field records the reason for entering the data in error.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>2</dt><dd>INCORRECT READING</dd><dt>4</dt><dd>INVALID RECORD</dd><dt>1</dt><dd>INCORRECT DATE/TIME</dd><dt>3</dt><dd>INCORRECT PATIENT</dd></dl>{:/} | 
 | date_reason_entered_in_error | .02 | Date Reason Entered In Error |  | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}

@@ -91,7 +91,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| label_printers | .01 | Label Printers | {::nomarkdown}This field is a pointer to the Device File and indicates a printer used<br/>for printing diet labels, tubefeeding labels, supplemental feeding labels<br/>or other labels.{:/} | POINTER |  | REQUIRED, INDEXED | [Device-3_5](Device-3_5.md) | 
+| label_printers | .01 | Label Printers | {::nomarkdown}This field is a pointer to the Device File and indicates a printer used<br/>for printing diet labels, tubefeeding labels, supplemental feeding labels<br/>or other labels.{:/} | POINTER |  | REQUIRED, INDEXED | Device-3_5 | 
 | size_of_labels | 1 | Size Of Labels | {::nomarkdown}This field indicates the size and type of label stock on the printer.<br/>You may choose from the following selections:<br/><br/>1)  3-1/2 x 15/16 - Single strip track-fed labels.<br/>2)  4 x 1-7/16    - Single strip track-fed labels.<br/>3)  2-5/8 x 1 - Laser label sheets, ie AVERY 5160, 30 labels per sheet.<br/>4)  4 x 1-1/3 - Laser label sheets, ie AVERY 5162, 14 labels per sheet.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>4</dt><dd>4 x 1-1/3 (Laser labels - 14 labels per sheet)</dd><dt>3</dt><dd>2-5/8 x 1 (Laser labels - 30 labels per sheet)</dd><dt>1</dt><dd>3-1/2 x 15/16 (Single strip labels)</dd><dt>2</dt><dd>4 x 1-7/16 (Single strip labels)</dd></dl>{:/} | 
 
 ## <a name="Lab_Test-119_9001"></a>Lab_Test-119_9001 
@@ -105,7 +105,7 @@ title: VDM documentation
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-| lab_test | .01 | Lab Test | {::nomarkdown}This field is a pointer to File 60, Lab Tests, and is a test<br/>of interest to clinicians.{:/} | POINTER |  | REQUIRED, INDEXED | [Laboratory_Test-60](Laboratory_Test-60.md) | 
+| lab_test | .01 | Lab Test | {::nomarkdown}This field is a pointer to File 60, Lab Tests, and is a test<br/>of interest to clinicians.{:/} | POINTER |  | REQUIRED, INDEXED | Laboratory_Test-60 | 
 | specimen | 1 | Specimen | {::nomarkdown}This field points to the specimen/typology file and indicates which<br/>specimen of the selected lab test is desired.{:/} | STRING |  | REQUIRED |  | 
 | print_on_assessment | 2 | Print On Assessment? | {::nomarkdown}This field, when answered YES, will permit printing of the lab<br/>results on the Nutrition Assessment form.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 | print_on_screening | 3 | Print On Screening? | {::nomarkdown}This field, when answered YES, will permit printing of the lab<br/>results on the Nutrition Screening form.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
@@ -129,4 +129,4 @@ title: VDM documentation
 | print_order | 5 | Print Order | {::nomarkdown}This is a print order of a specific Drug Classification.{:/} | NUMERIC |  |  |  | 
 | create_alert | 6 | Create Alert | {::nomarkdown}If set to YES, alert will be created for patient that is taking <br/>medication with this type of Drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
