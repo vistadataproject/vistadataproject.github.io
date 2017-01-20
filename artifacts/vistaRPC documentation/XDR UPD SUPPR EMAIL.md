@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FILE NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}File number for the file that is the .01 field of a record in the DUPLICATE RESOLUTION file. This is the record that is to be updated by this RPC.{:/} | 
 | {::nomarkdown}VALUE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Must be set to 1 or 0. This value will be put into the SUPPRESS NEW DUP EMAIL field.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}

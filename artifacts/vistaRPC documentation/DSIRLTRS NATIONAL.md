@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IFN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal Entry Number of the Letter or Null if new.{:/} | 
 | {::nomarkdown}DATA1{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array that contains the Letter Data   Main Record => M ^ Name ^ National/Local Flag (0 = Local, 1 = National)^ Signature Block (C,F,S) ^ ID Clerk by Name (0 = No, 1 = Yes) ^ Addressto Patient (0 = No, 1 = Yes)   Paragraph Header => PH ^ Name ^ Read Only (0 = No, 1 = Yes) [This nodeoccurs multiple times for each M entry]   Paragraph Text => Text [This node occurs multiple times for each PHentry]{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}

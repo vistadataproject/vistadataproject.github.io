@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The number of records to return for each call of the rpc.  This is used to avoid broker timeouts for reports with a lot of data.{:/} | 
 | {::nomarkdown}MORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}MORE=1 when subsequent calls are made to the rpc to return the next \CNT\ (count) of rows of report data.  The GUI may send MORE=9 to terminate the report and have the M code kill the ^XTMP global as it is no longer needed.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}

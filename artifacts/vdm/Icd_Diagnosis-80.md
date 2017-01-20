@@ -169,4 +169,4 @@ title: VDM documentation
 | complication_comorbidity | 1 | Complication/comorbidity | {::nomarkdown}This is the Complication/Comorbidity (CC) <br/>designation for the diagnosis.  It includes <br/>Complication/Comorbidity (CC), Major <br/>Complication/Comorbidity (MCC), Major <br/>Complication/Comorbidity when patient is <br/>discharged alive and non-Complication/Comorbidity<br/>(no complications/cormorbidities){:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl>{:/} | 
 | primary | 2 | Primary | {::nomarkdown}The value in this field is used to determine<br/>whether CC/MCC value is taken from primary <br/>diagnosis instead of the secondary diagnosis.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}

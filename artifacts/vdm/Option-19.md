@@ -226,4 +226,4 @@ title: VDM documentation
 | rpckey | 1 | Rpckey | {::nomarkdown}This field is the free-text name from the Security Key File that will be<br/>checked when this remote procedure call is requested to the broker.<br/>If the user does not hold this key then the request will be denied.{:/} | STRING |  |  |  | 
 | rules | 2 | Rules | {::nomarkdown}This field contains standard M code that will be executed when this<br/>remote procedure call is requested from the broker.  The variable<br/>XQRPCOK is set to 1 and the code is executed. If the value of that<br/>variable is reset to 0 by the RULES code, then the request is denied.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}

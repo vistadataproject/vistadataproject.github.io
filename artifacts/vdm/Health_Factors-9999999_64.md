@@ -29,4 +29,4 @@ title: VDM documentation
 | inactive_flag | .11 | Inactive Flag | {::nomarkdown}This field is used to inactivate a health factor type. If this field<br/>contains a \1\ then the health factor is inactive.  Inactive health<br/>factors cannot be selected in the manual data entry process.  Health<br/>factor entries should be made inactive when they are no longer used.  Do<br/>not delete the entry or change the meaning of the health factor entry.<br/> <br/>To make an inactive health factor active, enter the \@\ symbol to delete<br/>the \1\ from the field.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>INACTIVE</dd></dl>{:/} | 
 | not_used_with | 1101 | Not Used With | {::nomarkdown}Some health factors are not used with others. This is the group of health<br/>factors that this factor is not used with.{:/} | [POINTER] |  |  | {id:Health_Factors-9999999_64} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}

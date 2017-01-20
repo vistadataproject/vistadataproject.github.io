@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGFROM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Source reader (a pointer to NEW PERSON file (#200)) to be cloned.{:/} | 
 | {::nomarkdown}MAGTO{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}An array with target readers (pointers to NEW PERSON file (#200)).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}

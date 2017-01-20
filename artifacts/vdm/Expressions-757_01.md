@@ -51,4 +51,4 @@ title: VDM documentation
 | coding_system | 1 | Coding System | {::nomarkdown}This is the classification system (ICD/CPT/DSM etc) from which the <br/>Designation Code (field #.01) is derived.{:/} | POINTER |  |  | Coding_Systems-757_03 | 
 | hierarchy | 2 | Hierarchy | {::nomarkdown}This is the SNOMED CT Hierarchy that the concept belongs to.{:/} | POINTER |  |  | Snomed_Ct_Hierarchy-757_018 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGGRPDF{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a Group Delete Flag1 or 0     1  =  Allow Group Delete     0  =  Do not Allow Group Deletes.{:/} | 
 | {::nomarkdown}REASON{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a free text description of the Reason for Deleting the Image.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}

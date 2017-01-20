@@ -95,21 +95,20 @@ title: VDM documentation
 87 | [Skin_Test-9999999_28](Skin_Test-9999999_28.md) | META | 2
 88 | [Title-3_1](Title-3_1.md) | META | 0
 89 | [TIU_Document_Definition-8925_1](TIU_Document_Definition-8925_1.md) | META | 5
-90 | [Tiu_Document-8925](Tiu_Document-8925.md) | CLINICAL | 0
-91 | [TIU_Document-8925](TIU_Document-8925.md) | META | 0
-92 | [TIU_Personal_Document_Type_List-8925_98](TIU_Personal_Document_Type_List-8925_98.md) | META | 1
-93 | [TIU_Template_Field-8927_1](TIU_Template_Field-8927_1.md) | META | 0
-94 | [TIU_Template-8927](TIU_Template-8927.md) | META | 1
-95 | [Topography_Field-61](Topography_Field-61.md) | META | 2
-96 | [Treatment-9999999_17](Treatment-9999999_17.md) | META | 0
-97 | [Usr_Class-8930](Usr_Class-8930.md) | META | 0
-98 | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | CLINICAL | 1
-99 | [VA_Generic-50_6](VA_Generic-50_6.md) | CLINICAL | 0
-100 | [VA_Product-50_68](VA_Product-50_68.md) | CLINICAL | 3
-101 | [Visit-9000010](Visit-9000010.md) | CLINICAL | 0
-102 | [Ward_Location-42](Ward_Location-42.md) | META | 3
-103 | [Wv_Notification_Purpose-790_404](Wv_Notification_Purpose-790_404.md) | META | 0
-104 | [Wv_Procedure-790_1](Wv_Procedure-790_1.md) | META | 0
+90 | [TIU_Document-8925](TIU_Document-8925.md) | META | 0
+91 | [TIU_Personal_Document_Type_List-8925_98](TIU_Personal_Document_Type_List-8925_98.md) | META | 1
+92 | [TIU_Template_Field-8927_1](TIU_Template_Field-8927_1.md) | META | 0
+93 | [TIU_Template-8927](TIU_Template-8927.md) | META | 1
+94 | [Topography_Field-61](Topography_Field-61.md) | META | 2
+95 | [Treatment-9999999_17](Treatment-9999999_17.md) | META | 0
+96 | [Usr_Class-8930](Usr_Class-8930.md) | META | 0
+97 | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | CLINICAL | 1
+98 | [VA_Generic-50_6](VA_Generic-50_6.md) | CLINICAL | 0
+99 | [VA_Product-50_68](VA_Product-50_68.md) | CLINICAL | 3
+100 | [Visit-9000010](Visit-9000010.md) | CLINICAL | 0
+101 | [Ward_Location-42](Ward_Location-42.md) | META | 3
+102 | [Wv_Notification_Purpose-790_404](Wv_Notification_Purpose-790_404.md) | META | 0
+103 | [Wv_Procedure-790_1](Wv_Procedure-790_1.md) | META | 0
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}

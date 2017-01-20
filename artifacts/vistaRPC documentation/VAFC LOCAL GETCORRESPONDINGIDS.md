@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}Patient Identifier{:/} | {::nomarkdown}WORD PROCESSING{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The patient identifier will either be the PATIENT file (#2) IEN (aka DFN), Integration Control Number (aka ICN) or the DOD Identifier (aka EDIPI).  Following this format: Id^IdType^AssigningAuthority^AssigningFacility Examples: ICN example:   1008520438V882204^NI^USVHA^200MDFN example:   100000511^PI^USVHA^500EDIPI example: 852043888^NI^USDOD^200DOD{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
