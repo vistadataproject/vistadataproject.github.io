@@ -38,4 +38,4 @@ title: VDM documentation
 | record_status | .05 | Record Status | {::nomarkdown}This field is used by the IHS Multi-Facility Integration (MFI) package<br/>to determine whether to stop integrating data at a facility for a <br/>particular patient and location facility.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>D</dt><dd>DELETED</dd><dt>I</dt><dd>INACTIVATED</dd><dt>M</dt><dd>MERGED</dd></dl>{:/} | 
 | stop_integration | .06 | Stop Integration | {::nomarkdown}This field is used by the Mult-Facility Integration (MFI) package,<br/>created by IHS, to indicate this patients data should no longer be<br/>integrated by MFI.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}

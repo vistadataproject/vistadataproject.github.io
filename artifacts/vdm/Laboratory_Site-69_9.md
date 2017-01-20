@@ -281,4 +281,4 @@ title: VDM documentation
 | division_parameters | .01 | Division Parameters |  | POINTER |  | REQUIRED, INDEXED | [Institution-4](Institution-4.md) | 
 | venipuncture_default_acc_area | 618 | Venipuncture Default Acc Area | {::nomarkdown}This field will allow the site to assign the venipuncture LMIP workload to<br/>a specific ACCESSION AREA. If this field is blank, the venipuncture<br/>workload software will use the ACCESSION AREA name that begins with 'HEM'.<br/>If there is no ACCESSION AREA with a name beginning with 'HEM', ACCESSION<br/>AREA the internal file number of 10 will be used as the default<br/>Venipuncture Accession Area.{:/} | POINTER |  |  | Accession-68 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}

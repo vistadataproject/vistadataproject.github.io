@@ -339,4 +339,4 @@ title: VDM documentation
 | team_positions | .01 | Team Positions | {::nomarkdown}This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File.{:/} | POINTER |  | REQUIRED, INDEXED | Team_Position-404_57 | 
 | team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}17, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}

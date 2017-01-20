@@ -37,4 +37,4 @@ title: VDM documentation
 | url | 3 | Url | {::nomarkdown}Web address of hyperlink fields.{:/} | STRING |  |  |  | 
 | items | 10 | Items | {::nomarkdown}Word processing field representing either the list of items that can<br/>be selected, or the default word processing text.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}

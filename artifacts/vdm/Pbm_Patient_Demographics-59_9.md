@@ -20,4 +20,4 @@ title: VDM documentation
 | event_date_time | .01 | Event Date/time | {::nomarkdown}This field records the date and time when any change occurs in the <br/>PATIENT file (#2) on any field captured in the PBM Patient <br/>Demographics Extract. These changes are captured by the DG Field <br/>Monitor. The data in this field is purged monthly for all data older <br/>than 75 days.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | patient | .02 | Patient | {::nomarkdown}This field records the PATIENT DFN when any change occurs in the PATIENT <br/>file (#2) on any field captured in the PBM Patient Demographics Extract.<br/>When the monthly patient demographic extract runs, it will harvest data <br/>from the PATIENT file (#2) for the DFNs stored in this field and all data <br/>older than 75 days will be purged from this file. {:/} | POINTER |  |  | [Patient-2](Patient-2.md) | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}

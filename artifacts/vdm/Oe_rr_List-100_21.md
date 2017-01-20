@@ -72,4 +72,4 @@ title: VDM documentation
 | view_date_time | 1 | View Date/time | {::nomarkdown}This is the date/time this item was last viewed.{:/} | DATE-TIME |  |  |  | 
 | notification_selection | 2 | *notification Selection | {::nomarkdown}This field is unused and will be deleted post-CPRS 1.{:/} | [POINTER] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 8:01:05 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 9:52:13 pm</p>{:/}
