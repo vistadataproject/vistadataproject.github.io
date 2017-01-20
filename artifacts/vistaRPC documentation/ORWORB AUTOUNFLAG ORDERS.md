@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | UNFLORD^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | auto-unflag orders?/delete alert
- Input parameters | {::nomarkdown}DFN<br>XQAID{:/}
+ Input parameters | {::nomarkdown}DFN, XQAID{:/}
 
 
 ### CPRS
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

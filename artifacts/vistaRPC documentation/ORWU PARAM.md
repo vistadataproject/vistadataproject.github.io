@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PARAM^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return a parameter value for a user
- First comment | {::nomarkdown}<pre> call assumes current user, default entities, single instance</pre>{:/}
  Input parameters | {::nomarkdown}APARAM{:/}
+ First comment | {::nomarkdown}<pre> call assumes current user, default entities, single instance</pre>{:/}
  Code | {::nomarkdown}  S VAL=$$GET^XPAR("ALL",APARAM,1,"I"){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

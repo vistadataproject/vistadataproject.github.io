@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETREM^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}<pre> set current user's reminders</pre>{:/}
  Input parameters | {::nomarkdown}VALUES{:/}
+ First comment | {::nomarkdown}<pre> set current user's reminders</pre>{:/}
  Code | {::nomarkdown}  D SETREM^ORWTPR(.OK,.VALUES,DUZ){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas">Options/rOptions.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

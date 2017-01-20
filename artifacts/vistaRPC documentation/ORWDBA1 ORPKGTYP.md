@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ORPKGTYP^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  Method comment | Build BA supported packages array
- First comment | {::nomarkdown}<pre> GMRC=Prosthetics, LR=Lab, PSO=Pharmacy, RA=Radiology</pre>{:/}
  Input parameters | {::nomarkdown}ORLST{:/}
+ First comment | {::nomarkdown}<pre> GMRC=Prosthetics, LR=Lab, PSO=Pharmacy, RA=Radiology</pre>{:/}
  Code | {::nomarkdown}  N OIREC,OIV,OIVN<br> F I=1:1 S ORPKG=$P("GMRC;LR;PSO;RA",";",I) Q:ORPKG=""  D<br> . S ORPKG(+$O(^DIC(9.4,"C",ORPKG,0)))=ORPKG  ; ^DIC(9.4) is package file<br> S GMRCPROS=+$O(^DIC(9.4,"C","GMRC",0))<br> D ORPKG1(.Y,.ORLST){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas">BA/UBACore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

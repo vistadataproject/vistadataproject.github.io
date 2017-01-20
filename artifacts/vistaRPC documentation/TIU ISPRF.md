@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISPRFTTL^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Takes as input 8925.1 IEN
- First comment | {::nomarkdown}<pre> and checks if it is a PRF title<br/> Cf ISPFTTL^TIUPRFL. which is a FUNCTION</pre>{:/}
  Input parameters | {::nomarkdown}TIUDA{:/}
+ First comment | {::nomarkdown}<pre> and checks if it is a PRF title<br/> Cf ISPFTTL^TIUPRFL. which is a FUNCTION</pre>{:/}
  Code | {::nomarkdown}  N TIUCAT1,TIUCAT2,TIUD1<br> S TIUY=0,TIUD1=""<br> S TIUCAT1=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT I","DC")<br> S TIUCAT2=+$$DDEFIEN^TIUFLF7("PATIENT RECORD FLAG CAT II","DC")<br> S TIUD1=$O(^TIU(8925.1,"AD",TIUDA,TIUD1))<br> I TIUD1=TIUCAT1!(TIUD1=TIUCAT2) S TIUY=1<br>{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

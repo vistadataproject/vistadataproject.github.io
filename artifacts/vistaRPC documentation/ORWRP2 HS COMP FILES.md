@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FILES^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get Files to select from for a component
- First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS COMP FILES</pre>{:/}
  Input parameters | {::nomarkdown}ORCOMP{:/}
+ First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS COMP FILES</pre>{:/}
  Code | {::nomarkdown}  D FILES^GMTSADH5(.ORY,ORCOMP){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

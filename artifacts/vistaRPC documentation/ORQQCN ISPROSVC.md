@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISPROSVC^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | IS THIS SERVICE PART OF CONSULTS-PROSTHETICS INTERFACE, wat/OR*3*280
- First comment | {::nomarkdown}<pre>GMRCIEN - IEN of selected service</pre>{:/}
  Input parameters | {::nomarkdown}GMRCIEN{:/}
+ First comment | {::nomarkdown}<pre>GMRCIEN - IEN of selected service</pre>{:/}
  Code | {::nomarkdown}  I $G(^GMR(123.5,$G(GMRCIEN),"INT"))=1 S ORY=1{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

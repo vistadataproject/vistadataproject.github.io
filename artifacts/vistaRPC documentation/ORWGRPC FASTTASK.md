@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FASTTASK^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | set up all data and items on patient
- Input parameters | {::nomarkdown}DFN<br>OLDDFN{:/}
+ Input parameters | {::nomarkdown}DFN, OLDDFN{:/}
  Code | {::nomarkdown}  D FASTTASK^ORWGAPI(.STATUS,DFN,$G(OLDDFN)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas">rGraphs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

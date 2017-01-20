@@ -26,8 +26,8 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | VALIDATE^[ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
- First comment | {::nomarkdown}<pre> Given the array ORQDATA passed in by PCE Device Interface whose<br/> format is described in the PCE Device Interface documentation, this<br/> procedure will validate the Vitals data.  If the data is invalid,<br/> the procedure will return the errors in the form given above.<br/></pre>{:/}
  Input parameters | {::nomarkdown}ORQDATA{:/}
+ First comment | {::nomarkdown}<pre> Given the array ORQDATA passed in by PCE Device Interface whose<br/> format is described in the PCE Device Interface documentation, this<br/> procedure will validate the Vitals data.  If the data is invalid,<br/> the procedure will return the errors in the form given above.<br/></pre>{:/}
  Code | {::nomarkdown}  N ORVITALS,ORQVIT<br> K ORRETURN<br> S ORRETURN(0)=1<br> D PREVITAL(.ORRETURN,.ORVITALS,.ORQVIT,.ORQDATA)<br> D VALIDATE^GMRVPCE0(.ORVITALS)<br> D POSTVIT(.ORRETURN,.ORQVIT,.ORVITALS){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

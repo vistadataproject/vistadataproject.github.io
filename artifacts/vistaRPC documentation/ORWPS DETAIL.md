@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DETAIL^[ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  Method comment | show details for a med order
- Input parameters | {::nomarkdown}DFN<br>ID{:/}
+ Input parameters | {::nomarkdown}DFN, ID{:/}
  Code | {::nomarkdown}  K ^TMP("ORXPND",$J)<br> N LCNT,ORVP<br> S LCNT=0,ORVP=DFN_";DPT("<br> D MEDS^ORCXPND1<br> S ROOT=$NA(^TMP("ORXPND",$J)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas">rMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

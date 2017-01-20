@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETITEMS^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Change ITEMs of a group, class, or root
+ Input parameters | {::nomarkdown}TIUDA, TIUX{:/}
  First comment | {::nomarkdown}<pre> Receives:<br/>   TIUDA=IEN of TEMPLATE record<br/>   TIUX(SEQ)=IEN of item<br/> Returns:<br/>   SUCCESS(SEQ)=IEN of item if successful, or<br/>                0^ Explanatory message if not</pre>{:/}
- Input parameters | {::nomarkdown}TIUDA<br>TIUX{:/}
  Code | {::nomarkdown}  N TIUI S TIUI=0<br> D CLRITMS(TIUDA) ; Remove ITEMS<br> F  S TIUI=$O(TIUX(TIUI)) Q:+TIUI'>0  D<br> . N TIUITEM,TIUSUCC<br> . S TIUITEM(.01)=TIUI,TIUITEM(.02)=TIUX(TIUI),TIUSUCC=TIUI<br> . D UPDATE^TIUSRVT1(.TIUSUCC,"""+"_TIUI_","_TIUDA_",""",.TIUITEM)<br> . S SUCCESS(TIUI)=TIUSUCC{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas">Templates/rTemplates.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

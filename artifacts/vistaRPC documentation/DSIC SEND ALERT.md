@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}DATA() is the input data to be passed to the Kernel's alert processor.Prior to 10/1/2003 the subscripts of DATA() were numeric.Since 10/1/2003 the subscripts should be strings.  No one should be using the numeric subscripts after 10/1/2003. For detailed description of the input array, see the routine DSICXQA. End description as of 10/1/2003                  alert should not be deleted for user        (4) = XQA(recipient)=\\ - at least one recipient required        (5) = XQA(recipient)=\\ - optional - additional recipient        (6,...) = XQA(additional recipients){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

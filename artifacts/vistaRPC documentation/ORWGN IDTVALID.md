@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | IDTVALID^[ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
  Method comment | Returns Implementation date of the ICD code set
- First comment | {::nomarkdown}<pre>CSYS = System abbreviation for the coding system</pre>{:/}
  Input parameters | {::nomarkdown}CSYS{:/}
+ First comment | {::nomarkdown}<pre>CSYS = System abbreviation for the coding system</pre>{:/}
  Code | {::nomarkdown}  K IDATE<br> I $G(CSYS)="" S IDATE="-1^CODING SYSTEM PARAMETER MISSING" Q<br> S IDATE=$$IMPDATE^LEXU(CSYS){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

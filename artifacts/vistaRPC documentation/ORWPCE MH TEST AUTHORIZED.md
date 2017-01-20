@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MHATHRZD^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Indicates that user can score test
- Input parameters | {::nomarkdown}TEST<br>USER{:/}
+ Input parameters | {::nomarkdown}TEST, USER{:/}
  Code | {::nomarkdown}  N ORYS,ORANS<br> I $T(PRIVL^YTAPI5)="" S ORY=1 Q<br> S ORY=0<br> S ORYS("CODE")=TEST<br> S ORYS("STAFF")=USER<br> D PRIVL^YTAPI5(.ORANS,.ORYS)<br> I $G(ORANS(1))="[DATA]" S ORY=+$P($G(ORANS(2)),U,1){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

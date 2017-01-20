@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | INTERIM^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | Interim Report RPC (All Tests by Date)
- Input parameters | {::nomarkdown}DFN<br>DATE1<br>DATE2{:/}
+ Input parameters | {::nomarkdown}DFN, DATE1, DATE2{:/}
  Code | {::nomarkdown}  N ROOT<br> S ROOT=$$SET()<br> I $$REMOTE(.DFN,.ROOT) D INTERIM^LR7OGM(.ORY,DFN,DATE1,DATE2)<br> D CLEAN(.ORY,.ROOT){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">Executable Only</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

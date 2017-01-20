@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | GECF^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- Input parameters | {::nomarkdown}DFN<br>FIN{:/}
+ Input parameters | {::nomarkdown}DFN, FIN{:/}
  Code | {::nomarkdown}  D FINISHED^PXRMGECU(DFN,FIN){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fFrame.pas">fFrame.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas">rReminders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

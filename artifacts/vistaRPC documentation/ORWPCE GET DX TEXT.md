@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETDXTXT^[ORWPCE3](http://code.osehra.org/dox/Routine_ORWPCE3_source.html)
  Method comment | RPC to resolve Dx Text for PCE view
- Input parameters | {::nomarkdown}NARR<br>CODE{:/}
+ Input parameters | {::nomarkdown}NARR, CODE{:/}
  Code | {::nomarkdown}  S ORY=$$SETNARR(NARR,CODE){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

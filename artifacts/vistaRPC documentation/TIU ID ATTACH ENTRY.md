@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | IDATTCH^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Attach TIUDA as ID Child entry to TIUDAD
- Input parameters | {::nomarkdown}TIUDA<br>TIUDAD{:/}
+ Input parameters | {::nomarkdown}TIUDA, TIUDAD{:/}
  Code | {::nomarkdown}  N TIUX<br> S TIUX(2101)=TIUDAD<br> D FILE^TIUSRVP(.TIUY,TIUDA,.TIUX,1)<br> D AUDLINK^TIUGR1(TIUDA,"a",TIUDAD)<br> D SENDID^TIUALRT1(TIUDA){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

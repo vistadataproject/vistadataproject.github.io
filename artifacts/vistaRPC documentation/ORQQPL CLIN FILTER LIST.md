@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETCLIN^[ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  Method comment | Get FILTERED LIST OF CLINICS
- First comment | {::nomarkdown}<pre> RETURN NAMES FOR LIST OF CLINICS PASSED IN</pre>{:/}
  Input parameters | {::nomarkdown}INP{:/}
+ First comment | {::nomarkdown}<pre> RETURN NAMES FOR LIST OF CLINICS PASSED IN</pre>{:/}
  Code | {::nomarkdown}  N I,S<br> S S=""<br> F I=1:1 S S=$O(INP(S)) Q:S=""  D<br> . I INP(S)'="",$G(^SC(INP(S),0))'="" D  Q  ; get next<br> .. S RETURN(I)=INP(S)_U_$P(^SC(INP(S),0),U,1){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LVREMLST^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | Returns cover sheet reminders at a specified level
- Input parameters | {::nomarkdown}LVL<br>CLASS{:/}
+ Input parameters | {::nomarkdown}LVL, CLASS{:/}
  Code | {::nomarkdown}  D REMACCUM(.ORY,LVL,"Q","",$G(CLASS)){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas">rReminders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

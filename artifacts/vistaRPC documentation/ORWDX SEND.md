@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SEND^[ORWDX](http://code.osehra.org/dox/Routine_ORWDX_source.html)
  Method comment | Sign
+ Input parameters | {::nomarkdown}DFN, ORNP, ORL, ES, ORWREC{:/}
  First comment | {::nomarkdown}<pre> DFN=Patient, ORNP=Provider, ORL=Location, ES=Encrypted ES code<br/> ORWREC(n)=ORIFN;Action^Signature Sts^Release Sts^Nature of Order</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>ORNP<br>ORL<br>ES<br>ORWREC{:/}
 
 
 ### CPRS
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

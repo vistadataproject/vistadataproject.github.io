@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | QVSUB^[ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
  Method comment | return subset of orders in view
- Input parameters | {::nomarkdown}IEN<br>FIRST<br>LAST{:/}
+ Input parameters | {::nomarkdown}IEN, FIRST, LAST{:/}
  Code | {::nomarkdown}  N I,J,ID ;117<br> I $L(FIRST),$L(LAST) D<br> . F I=+FIRST:1:+LAST D<br> .. I $D(^ORD(101.44,IEN,10,I,0))>0 D<br> ... I '$$QODIS(IEN,I) S LST(I)=^ORD(101.44,IEN,10,I,0)<br> E  D<br> . S (I,J)=0 F  S I=$O(^ORD(101.44,IEN,10,I)) Q:'+I  I '$$QODIS(IEN,I) S J=J+1,LST(J)=^ORD(101.44,IEN,10,I,0) ;117{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas">Orders/rODLab.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

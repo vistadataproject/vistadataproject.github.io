@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETVSIT^[ORWPT16](http://code.osehra.org/dox/Routine_ORWPT16_source.html)
  Method comment | procedure
+ Input parameters | {::nomarkdown}DFN, LOC, ADATE{:/}
  First comment | {::nomarkdown}<pre> Return a visit given a patient, location, and date/time</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>LOC<br>ADATE{:/}
  Code | {::nomarkdown}  N VSIT,VSITPKG<br> S (VSIT,VSIT("VDT"))=ADATE,VSIT("PAT")=DFN,VSIT("LOC")=LOC<br> S VSIT("SVC")="A",VSIT("PRI")="P",VSIT(0)="NMD1",VSITPKG="OR"<br> D ^VSIT<br> S Y=VSIT("IEN") I +VSIT("IEN")'>0 S Y="" Q<br> I +VSIT("LOC") S Y=Y_U_VSIT("LOC")_U_$P(^SC(+VSIT("LOC"),0),U,1,2){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

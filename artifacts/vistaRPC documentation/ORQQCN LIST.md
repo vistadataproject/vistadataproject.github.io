@@ -36,7 +36,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LIST^[ORQQCN](http://code.osehra.org/dox/Routine_ORQQCN_source.html)
  Method comment | return patient's consult requests between start date and stop date for the service and status indicated:
- Input parameters | {::nomarkdown}ORPT<br>ORSDT<br>OREDT<br>ORSERV<br>ORSTATUS{:/}
+ Input parameters | {::nomarkdown}ORPT, ORSDT, OREDT, ORSERV, ORSTATUS{:/}
  Code | {::nomarkdown}  N I,J,SITE,SEQ,DIFF,ORSRV,ORLOC,GMRCOER<br> S J=1,SEQ="",GMRCOER=2<br> S:'$L($G(ORSDT)) ORSDT=""<br> S:'$L($G(OREDT)) OREDT=""<br> S:'$L($G(ORSERV))!(+$G(ORSERV)=0) ORSERV=""<br> S:'$L($G(ORSTATUS)) ORSTATUS="" ;ALL STATI<br> K ^TMP("GMRCR",$J)<br> S ORY=$NA(^TMP("ORQQCN",$J,"CS"))<br> D OER^GMRCSLM1(ORPT,ORSERV,ORSDT,OREDT,ORSTATUS,GMRCOER)<br> M @ORY=^TMP("GMRCR",$J,"CS")<br> K @ORY@("AD")<br> K @ORY@(0)<br> K ^TMP("GMRCR",$J){:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

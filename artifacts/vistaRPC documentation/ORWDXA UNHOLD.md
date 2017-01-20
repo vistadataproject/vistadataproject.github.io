@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | UNHOLD^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Release order from hold
- Input parameters | {::nomarkdown}ORID<br>ORNP{:/}
+ Input parameters | {::nomarkdown}ORID, ORNP{:/}
  Code | {::nomarkdown}  N ACTDA<br> S ACTDA=$$ACTION^ORCSAVE("RL",+ORID,ORNP)<br> D GETBYIFN^ORWORR(.REC,+ORID_";"_ACTDA){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

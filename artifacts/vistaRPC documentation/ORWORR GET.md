@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GET^[ORWORR](http://code.osehra.org/dox/Routine_ORWORR_source.html)
  Method comment | procedure
- Input parameters | {::nomarkdown}DFN<br>FILTER<br>GROUPS{:/}
+ Input parameters | {::nomarkdown}DFN, FILTER, GROUPS{:/}
  Code | {::nomarkdown}  Q  ; don't call until using same treating specialty logic as AGET<br> N ORLIST,ORIFN,X0,X3,X8,IDX,IFN,ACT,PRV,LN,TXT,STRT,STOP,CSTS,EYE,DEA ;PKI<br> K ^TMP("ORR",$J)<br> S (IDX,LST)=0 S:'$D(GROUPS) GROUPS=1 S:'$D(FILTER) FILTER=2<br> D EN^ORQ1(DFN_";DPT(",GROUPS,FILTER,"","","",0,1)<br> S EYE=0 F  S EYE=$O(^TMP("ORR",$J,ORLIST,EYE)) Q:'EYE  S IFN=^(EYE) D<br> . S ACT=$P(IFN,";",2),IFN=+IFN,X0=^OR(100,IFN,0),X3=^(3),X8=^(8,ACT,0)<br> . D GETFLDS<br> K ^TMP("ORR",$J)<br> G EXIT{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SUBITEM^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Get Subitems for a Test Panel
- First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS SUBITEMS</pre>{:/}
  Input parameters | {::nomarkdown}ORTEST{:/}
+ First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS SUBITEMS</pre>{:/}
  Code | {::nomarkdown}  D SUBITEM^GMTSADH5(.ORY,ORTEST){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

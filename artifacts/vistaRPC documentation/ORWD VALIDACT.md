@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VALIDACT^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | procedure
+ Input parameters | {::nomarkdown}ORIFN, ACTION{:/}
  First comment | {::nomarkdown}<pre> Return 1 if action is valid for this order, otherwise 0^error</pre>{:/}
- Input parameters | {::nomarkdown}ORIFN<br>ACTION{:/}
  Code | {::nomarkdown}  S VAL=$$VALID^ORCACT0(ORIFN,ACTION,.ERR)<br> I VAL=0 S VAL=VAL_U_ERR{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

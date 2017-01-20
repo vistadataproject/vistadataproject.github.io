@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SVONLY^[ORWD1](http://code.osehra.org/dox/Routine_ORWD1_source.html)
  Method comment | print service copies only
- Input parameters | {::nomarkdown}HLOC<br>PRTLST{:/}
+ Input parameters | {::nomarkdown}HLOC, PRTLST{:/}
  Code | {::nomarkdown}  Q:$G(A7RNDBI)  ; per NDBI, to suppress prints during integration<br> N TMPLST,I,J<br> S HLOC=+HLOC_";SC(",OK=1<br> S I="",J=0 F  S I=$O(PRTLST(I)) Q:I'>0  D<br> . I ($L(PRTLST(I),U)>1),'$P(PRTLST(I),U,5) Q<br> . S J=J+1,TMPLST(J)=$P(PRTLST(I),U)<br> I $D(TMPLST)>1 D GUI^ORPR02(.TMPLST,"","S",HLOC)<br>{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

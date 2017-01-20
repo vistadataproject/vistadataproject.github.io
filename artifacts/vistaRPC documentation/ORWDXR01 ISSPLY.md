@@ -26,8 +26,8 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | ISSPLY^[ORWDXR01](http://code.osehra.org/dox/Routine_ORWDXR01_source.html)
+ Input parameters | {::nomarkdown}DLGID, QODLG{:/}
  First comment | {::nomarkdown}<pre> ORY=1: is "PSO SUPPLY" dialog</pre>{:/}
- Input parameters | {::nomarkdown}DLGID<br>QODLG{:/}
  Code | {::nomarkdown}  S ORY=""<br> Q:'$D(^ORD(101.41,DLGID,0))<br> I 'QODLG,($P(^ORD(101.41,DLGID,0),U)="PSO SUPPLY") S ORY=1<br> I QODLG D<br> . N SPLYDG S SPLYDG=$O(^ORD(100.98,"B","SPLY",0))<br> . I $P(^ORD(101.41,DLGID,0),U,5)=SPLYDG S ORY=1{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

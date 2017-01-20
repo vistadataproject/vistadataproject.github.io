@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SCLST^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  Method comment | RPC for compiling appropriate TxF's
+ Input parameters | {::nomarkdown}DFN, ORLST{:/}
  First comment | {::nomarkdown}<pre> RPC titled ORWDBA1 SCLST<br/><br/>  Y       =    Returned value<br/>  DFN     =    Patient IEN<br/>  ORLST   =    List of orders<br/><br/> call for BA/TF</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>ORLST{:/}
  Code | {::nomarkdown}  N GMRCPROS,ORD,ORI,ORPKG<br> D CPLSTBA(.Y,DFN,.ORLST){:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas">BA/UBACore.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBAGlobals.pas">BA/UBAGlobals.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

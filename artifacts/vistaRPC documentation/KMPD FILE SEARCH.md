@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAM3{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Text to search for. Example:  \DG\ - would retrieve all entries beginning with DG.                - if text equals \*\ or \\ (null) then all entries will be                  retrieved{:/} | 
 | {::nomarkdown}PARAM4{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of array for temporary storage.  This should be a global array, andmust be either ^TMP or ^UTILITY.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

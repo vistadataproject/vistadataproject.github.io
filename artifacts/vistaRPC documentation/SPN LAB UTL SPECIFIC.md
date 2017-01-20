@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VALUES{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}EXAMPLE OF WHAT IS IN THE QLIST        S QLIST(605143)=\HGB\        S QLIST(605144)=\HCT\        S QLIST(605682)=\K (OR)\{:/} | 
 | {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}ICN^ICN^ICN^.... Example                  10073051^10052887^10147361^20638^8368^10005030^10017220{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

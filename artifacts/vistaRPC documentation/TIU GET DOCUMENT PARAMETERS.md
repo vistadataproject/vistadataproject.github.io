@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DOCPARM^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Get document parameters for GUI
- Input parameters | {::nomarkdown}TIUDA<br>TIUTYP{:/}
+ Input parameters | {::nomarkdown}TIUDA, TIUTYP{:/}
  Code | {::nomarkdown}  I '+$G(TIUTYP),+$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+TIUDA,0))<br> I '+$G(TIUTYP) S TIUY(0)="" Q<br> D DOCPRM^TIULC1(TIUTYP,.TIUY,$G(TIUDA))<br> I '$D(TIUY) S TIUY(0)=""{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

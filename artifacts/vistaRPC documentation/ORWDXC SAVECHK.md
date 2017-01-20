@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVECHK^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Save order checks for session
- Input parameters | {::nomarkdown}ORVP<br>RSN<br>LST{:/}
+ Input parameters | {::nomarkdown}ORVP, RSN, LST{:/}
  Code | {::nomarkdown}  N ORCHECK,ORIFN S OK=1<br> D LST2CHK<br> I $L(RSN)>0 S ORCHECK("OK")=RSN<br> S ORIFN=0 F  S ORIFN=$O(ORCHECK(ORIFN)) Q:'ORIFN  D OC^ORCSAVE2{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

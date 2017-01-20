@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ODSLCT^[ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  Method comment | return default lists for dialog
+ Input parameters | {::nomarkdown}PSTYPE, DFN, LOC{:/}
  First comment | {::nomarkdown}<pre> PSTYPE: pharmacy type (U=unit dose, F=IV fluids, O=outpatient)</pre>{:/}
- Input parameters | {::nomarkdown}PSTYPE<br>DFN<br>LOC{:/}
  Code | {::nomarkdown}  N ILST S ILST=0<br> S ILST=ILST+1,LST(ILST)="~Priority" D PRIOR<br> S ILST=ILST+1,LST(ILST)="~DispMsg"<br> S ILST=ILST+1,LST(ILST)="d"_$$DISPMSG<br> I PSTYPE="O" D                                ; Outpatient<br> . S ILST=ILST+1,LST(ILST)="~Refills"<br> . S ILST=ILST+1,LST(ILST)="d0^0"<br> . S ILST=ILST+1,LST(ILST)="~Pickup"<br> . S ILST=ILST+1,LST(ILST)="d"_$$DEFPICK($G(LOC))<br> . ; S ILST=ILST+1,LST(ILST)="~Supply"<br> . ; S ILST=ILST+1,LST(ILST)="d^"_$$DEFSPLY(DFN){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

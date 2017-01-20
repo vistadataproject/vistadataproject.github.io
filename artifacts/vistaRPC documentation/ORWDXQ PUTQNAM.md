@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PUTQNAM^[ORWDXQ](http://code.osehra.org/dox/Routine_ORWDXQ_source.html)
  Method comment | Save display name for a quick order dialog
+ Input parameters | {::nomarkdown}DLG, QNAM{:/}
  First comment | {::nomarkdown}<pre> see if DLG used QNAM as display text (quit if so)<br/> otherwise save in ORWDQ DISPLAY NAME</pre>{:/}
- Input parameters | {::nomarkdown}DLG<br>QNAM{:/}
  Code | {::nomarkdown} {:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas">Orders/rODBase.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

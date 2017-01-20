@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETXTRA^[ORCHECK](http://code.osehra.org/dox/Routine_ORCHECK_source.html)
  Method comment | get extra text for an order check
+ Input parameters | {::nomarkdown}ORGL, ORRULE{:/}
  First comment | {::nomarkdown}<pre>^TMP($J,"ORK XTRA TXT") stores the text of order checks that are longer than a single line (reminder order checks)</pre>{:/}
- Input parameters | {::nomarkdown}ORGL<br>ORRULE{:/}
  Code | {::nomarkdown}  Q:'$D(^TMP($J,"ORK XTRA TXT",ORGL,ORRULE))<br> M ORY=^TMP($J,"ORK XTRA TXT",ORGL,ORRULE)<br>{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

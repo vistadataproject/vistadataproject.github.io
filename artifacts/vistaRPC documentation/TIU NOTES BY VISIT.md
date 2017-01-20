@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NOTES^[TIUSRVLV](http://code.osehra.org/dox/Routine_TIUSRVLV_source.html)
  Method comment | Gets list of Notes
- Input parameters | {::nomarkdown}VISIT<br>STATUS{:/}
+ Input parameters | {::nomarkdown}VISIT, STATUS{:/}
  Code | {::nomarkdown}  I $S(+$G(VISIT)'>0:1,'$D(^AUPNVSIT(+$G(VISIT),0)):1,1:0) Q<br> D LIST(.TIUY,VISIT,3,$G(STATUS)){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

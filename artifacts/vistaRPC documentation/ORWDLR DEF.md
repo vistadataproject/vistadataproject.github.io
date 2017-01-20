@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DEF^[ORWDLR](http://code.osehra.org/dox/Routine_ORWDLR_source.html)
  Method comment | procedure
- First comment | {::nomarkdown}<pre> get dialog definition specific to lab</pre>{:/}
  Input parameters | {::nomarkdown}ALOC{:/}
+ First comment | {::nomarkdown}<pre> get dialog definition specific to lab</pre>{:/}
  Code | {::nomarkdown}  S ILST=0<br> S LST($$NXT)="~Collection Times" D COLLTM<br> S LST($$NXT)="~Send Patient Times" D SENDTM<br> S LST($$NXT)="~Default Urgency="_$$DEFURG^LR7OR3<br> S LST($$NXT)="~Schedules" D SCHED<br> S LST($$NXT)="~Common" D COMMON{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

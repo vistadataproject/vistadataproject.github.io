@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REFILL^[ORWPS1](http://code.osehra.org/dox/Routine_ORWPS1_source.html)
  Method comment | Refill Request
- Input parameters | {::nomarkdown}ORDERID<br>REFLOC<br>ORVP<br>ORNP<br>ORL{:/}
+ Input parameters | {::nomarkdown}ORDERID, REFLOC, ORVP, ORNP, ORL{:/}
  Code | {::nomarkdown}  S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br> D REF^ORMBLDPS(ORDERID,REFLOC)<br> S Y=""<br>{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas">rMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | APPROVAL^[ORWDRA32](http://code.osehra.org/dox/Routine_ORWDRA32_source.html)
  Method comment | RETURNS LIST OF RADIOLOGISTS WHO MAY APPROVE A
- First comment | {::nomarkdown}<pre>                       PROCEDURE WHEN REQUIRED</pre>{:/}
  Input parameters | {::nomarkdown}DUMMY{:/}
+ First comment | {::nomarkdown}<pre>                       PROCEDURE WHEN REQUIRED</pre>{:/}
  Code | {::nomarkdown}  N ORX,I<br> S I="" F  S I=$O(^VA(200,"ARC","S",I)) Q:I=""  D<br> . ;I $P($G(^VA(200,I,"PS")),U,4),$P(^VA(200,I,"PS"),U,4)'>DT Q<br> . I '$$ACTIVE^XUSER(I) Q<br> . I $P($G(^VA(200,I,"RA")),U,3),$P(^VA(200,I,"RA"),U,3)'>DT Q<br> . S ORX=$P($G(^VA(200,I,0)),U)<br> . S Y(I)=I_U_ORX{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODRad.pas">Orders/rODRad.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

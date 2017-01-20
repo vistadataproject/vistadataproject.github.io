@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | WCPUT^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Set ward comments
- Input parameters | {::nomarkdown}ORID<br>WCLST{:/}
+ Input parameters | {::nomarkdown}ORID, WCLST{:/}
  Code | {::nomarkdown}  N DIERR,ERRLST,ORIFN,ACT S ORIFN=+ORID,ACT=+$P(ORID,";",2)<br> D WP^DIE(100.008,ACT_","_ORIFN_",",50,"","WCLST","ERRLST")<br> S ERR="" I $D(DIERR) S ERR="An error occurred while saving comments."{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

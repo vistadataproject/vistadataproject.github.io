@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTEAM^[ORWTPT](http://code.osehra.org/dox/Routine_ORWTPT_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}<pre> returns members of a team</pre>{:/}
  Input parameters | {::nomarkdown}TEAM{:/}
+ First comment | {::nomarkdown}<pre> returns members of a team</pre>{:/}
  Code | {::nomarkdown}  N CNT,NAME,NUM,USER K USERS<br> S TEAM=+$G(TEAM),CNT=0<br> S NUM=0 F  S NUM=$O(^OR(100.21,TEAM,1,NUM)) Q:NUM<1  S USER=+$G(^(NUM,0)) D<br> .S NAME=$P($G(^VA(200,USER,0)),U)<br> .I '$L(NAME) Q<br> .S CNT=CNT+1<br> .S USERS(CNT)=USER_U_NAME{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas">Options/rOptions.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

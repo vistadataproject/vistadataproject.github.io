@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TYPES^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all the types of data on a patient (SUB=1, gets subtypes, DFN=0 gets all types), 
- Input parameters | {::nomarkdown}DFN<br>SUB{:/}
+ Input parameters | {::nomarkdown}DFN, SUB{:/}
  Code | {::nomarkdown}  D TYPES^ORWGAPI("ORWGRPC",DFN,+$G(SUB))<br> S TYPES=$NA(^TMP("ORWGRPC",$J))<br>{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas">rGraphs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MHV^[ORWMHV](http://code.osehra.org/dox/Routine_ORWMHV_source.html)
  Method comment | Returns "MHV" if patient has My HealtheVet data
- First comment | {::nomarkdown}<pre>Ouput Variable<br/> ORY = 0      if patient does not have My HealtheVet (MHV) data<br/>     = "MHV"  if patient does have My HealtheVet data   <br/></pre>{:/}
  Input parameters | {::nomarkdown}ORDFN{:/}
+ First comment | {::nomarkdown}<pre>Ouput Variable<br/> ORY = 0      if patient does not have My HealtheVet (MHV) data<br/>     = "MHV"  if patient does have My HealtheVet data   <br/></pre>{:/}
  Code | {::nomarkdown}  N I,ORX<br> S ORY=0<br> D TFL^VAFCTFU1(.ORX,ORDFN)       ; DBIA #2990<br> S I=0 F  S I=$O(ORX(I)) Q:'I  D<br> .;pt has MHV treat fac (200MH) and event reason wasn't "discharge" (3):<br> .I $P(ORX(I),U)="200MH",$P(ORX(I),U,4)'=3 D<br> ..S $P(ORY,U)="MHV",$P(ORY,U,2)="Patient has data in My HealtheVet"<br>{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fCover.pas">fCover.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

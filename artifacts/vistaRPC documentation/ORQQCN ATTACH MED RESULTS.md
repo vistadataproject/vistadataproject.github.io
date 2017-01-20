@@ -38,8 +38,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MEDCOMP^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | Attach a medicine result to a consult
+ Input parameters | {::nomarkdown}GMRCO, GMRCRSLT, GMRCAD, GMRCORNP, ORALTO{:/}
  First comment | {::nomarkdown}<pre>GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time Consult was resulted.<br/>GMRCORNP - Provider who attached the result to the consult<br/>ORALTO - array of alert recipient IENs</pre>{:/}
- Input parameters | {::nomarkdown}GMRCO<br>GMRCRSLT<br>GMRCAD<br>GMRCORNP<br>ORALTO{:/}
  Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> N ORDUZ,X,I<br> I $G(ORALTO)'="" D<br> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br> D MEDCOMP^GMRCMED(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP,.ORDUZ){:/}
 
 
@@ -49,4 +49,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

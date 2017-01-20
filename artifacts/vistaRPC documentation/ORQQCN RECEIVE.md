@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RC^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Receive the consult into the service
+ Input parameters | {::nomarkdown}GMRCO, GMRCORNP, GMRCAD, ORCOM{:/}
  First comment | {::nomarkdown}<pre>GMRCO - The internal file number of the consult from File 123<br/>GMRCORNP - internal file number of the person receiving the request into the service<br/>GMRCAD - date/time consult received into the service<br/>ORCOM - Array containing comments related to receipt of the consult.<br/>Passed as the following form :<br/> ARRAY(1)="xxx xxx xxx",ARRAY(2)="XXX XXX",ARRAY(3)="XXX XXX xx", etc.<br/> Comment is optional when consult is received.</pre>{:/}
- Input parameters | {::nomarkdown}GMRCO<br>GMRCORNP<br>GMRCAD<br>ORCOM{:/}
  Code | {::nomarkdown}  S Y=$$RC^GMRCGUIA(GMRCO,GMRCORNP,GMRCAD,.ORCOM){:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

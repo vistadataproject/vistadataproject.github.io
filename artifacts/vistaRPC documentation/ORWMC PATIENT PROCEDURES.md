@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PROD^[ORWMC](http://code.osehra.org/dox/Routine_ORWMC_source.html)
  Method comment | Return procedures
- First comment | {::nomarkdown}<pre> RPC: ORWMC PROCEDURES<br/>  See RPC definition for details on input and output parameters</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
+ First comment | {::nomarkdown}<pre> RPC: ORWMC PROCEDURES<br/>  See RPC definition for details on input and output parameters</pre>{:/}
  Code | {::nomarkdown}  D GET(0){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

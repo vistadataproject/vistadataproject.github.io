@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DETSUM^[ORQQVS](http://code.osehra.org/dox/Routine_ORQQVS_source.html)
  Method comment | return discharge summary for a patient's visit
- Input parameters | {::nomarkdown}ORPT<br>ORVIEN{:/}
+ Input parameters | {::nomarkdown}ORPT, ORVIEN{:/}
  Code | {::nomarkdown}  N CR,ORTY,ORY,TDT<br> S TDT=0<br> K ^TMP("TIULIST",$J)<br> D SUMMARY^TIUSRVLV(.ORY,ORVIEN)<br> I '+$O(^TMP("TIULIST",$J,0)) D  Q<br> . S ORVY(1)="No Discharge Summary found for this stay."<br> F  S TDT=$O(^TMP("TIULIST",$J,TDT)) Q:+TDT'>0  D<br> . N SEQ,TIEN S SEQ=0<br> . F  S SEQ=$O(^TMP("TIULIST",$J,TDT,SEQ)) Q:+SEQ'>0  D<br> . . N TSEQ,ORVI K ^TMP("TIUVIEW",$J)<br> . . S TIEN=$P(^TMP("TIULIST",$J,TDT,SEQ),U)<br> . . D TGET^TIUSRVR1(.ORTY,TIEN)<br> . . S TSEQ=0,ORVI=1<br> . . F  S TSEQ=$O(@ORTY@(TSEQ)) Q:TSEQ=""  D<br> . . . S ORVY(ORVI)=@ORTY@(TSEQ),ORVI=ORVI+1<br> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br> . . S ORVY(ORVI)=" ",ORVI=ORVI+1<br> K ^TMP("TIULIST",$J)<br>{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

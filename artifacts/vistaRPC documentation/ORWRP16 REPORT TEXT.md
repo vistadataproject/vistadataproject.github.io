@@ -37,8 +37,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return report text
+ Input parameters | {::nomarkdown}DFN, RPTID, HSTYPE, DTRANGE, SECTION{:/}
  First comment | {::nomarkdown}<pre>  RPC: ORWRP REPORT TEXT<br/>  See RPC definition for details on input and output parameters<br/></pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>RPTID<br>HSTYPE<br>DTRANGE<br>SECTION{:/}
  Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORDATA",$J,SECTION)) D  G RPTQ<br> . S ROOT=$NA(^TMP("ORDATA",$J,SECTION))<br> K ^TMP("ORDATA",$J)<br> S ROOT=$NA(^TMP("ORDATA",$J,1))<br> IF RPTID=1 D HS(DFN,HSTYPE) G RPTQ<br> IF RPTID=2 D BL(DFN) G RPTQ<br> IF RPTID=3 D PATH(DFN) G RPTQ<br> IF RPTID=4 D DIET(.ROOT,DFN) G RPTQ<br> IF RPTID=5 D VITALS(DFN,DTRANGE,"VITCUM") G RPTQ<br> IF RPTID=6 D VITALS(DFN,DTRANGE,"VIT511") G RPTQ<br> D NOTYET(.ROOT){:/}
 
 
@@ -48,4 +48,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

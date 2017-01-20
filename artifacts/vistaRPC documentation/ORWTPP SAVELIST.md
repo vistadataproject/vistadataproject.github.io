@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVELIST^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
+ Input parameters | {::nomarkdown}PLIST, LISTNUM, ORVIZ{:/}
  First comment | {::nomarkdown}<pre> save current user's personal list changes</pre>{:/}
- Input parameters | {::nomarkdown}PLIST<br>LISTNUM<br>ORVIZ{:/}
  Code | {::nomarkdown}  D SAVELIST^ORWTPL(.OK,.PLIST,LISTNUM,DUZ,$G(ORVIZ)){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas">Options/rOptions.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

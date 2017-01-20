@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DT^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Internal Fileman Date/Time
+ Input parameters | {::nomarkdown}X, %DT{:/}
  First comment | {::nomarkdown}<pre> change the '00:00' that could be passed so Fileman doesn't reject</pre>{:/}
- Input parameters | {::nomarkdown}X<br>%DT{:/}
  Code | {::nomarkdown}  I $L($P(X,"@",2)),("00000000"[$TR($P(X,"@",2),":","")) S $P(X,"@",2)="00:00:01"<br> S %DT=$G(%DT,"TS") D ^%DT K %DT{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

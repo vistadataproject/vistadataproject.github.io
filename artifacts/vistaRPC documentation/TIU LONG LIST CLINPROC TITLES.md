@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LNGCP^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
  Method comment | RPC that serves data to a longlist of selectable Titles
+ Input parameters | {::nomarkdown}FROM, DIR{:/}
  First comment | {::nomarkdown}<pre> Input  -- FROM     Reference Title from which the longlist is<br/>                    scrolling<br/>           DIR      Direction from which the longlist is scrolling<br/>                    from the reference Title  (Optional- default 1)<br/> Output -- Y        An array of the 44 nearest Titles to that indicated<br/>                    by the user in the direction passed by the longlist<br/>                    component</pre>{:/}
- Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N TIUCLASS<br> I '$D(FROM) G LNGCPQ<br> S TIUCLASS=+$$CLASS<br> I +TIUCLASS'>0 G LNGCPQ<br> D LONGLIST^TIUSRVD(.Y,TIUCLASS,FROM,$G(DIR,1)){:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

@@ -36,7 +36,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | HASVISIT^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Has visit or is stand alone
- Input parameters | {::nomarkdown}IEN<br>DFN<br>ORLOC<br>ORDTE{:/}
+ Input parameters | {::nomarkdown}IEN, DFN, ORLOC, ORDTE{:/}
  Code | {::nomarkdown}  N ORVISIT<br> S ORY=-1<br> I +$G(IEN)>0 S ORVISIT=+$P($G(^TIU(8925,+IEN,0)),U,3)<br> I +$G(ORVISIT)'>0 S ORVISIT=$$GETENC^PXAPI(DFN,ORDTE,ORLOC)<br> I +$G(ORVISIT)>0 S ORY=$$VST2APPT^PXAPI(ORVISIT){:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

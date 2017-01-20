@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REPORT^[ORWRP2](http://code.osehra.org/dox/Routine_ORWRP2_source.html)
  Method comment | Build Report from array of Components passed in COMPS
+ Input parameters | {::nomarkdown}ORCOMPS, ORDFN{:/}
  First comment | {::nomarkdown}<pre>RPC => ORWRP2 HS REPORT TEXT<br/>ORCOMPS(i)=array of subcomponents chosen, value is pointer at ^GMT(142,DA(1),1,DA)</pre>{:/}
- Input parameters | {::nomarkdown}ORCOMPS<br>ORDFN{:/}
  Code | {::nomarkdown}  Q:'$G(ORDFN)<br> N GMTSEGC,GMTSEG,ORGMTSEG,ORSEGC,ORSEGI<br> K ^TMP("ORDATA",$J)<br> D REPORT^GMTSADH5(.ORGMTSEG,.ORSEGC,.ORSEGI,.ORCOMPS,.ORDFN)<br> Q:'$O(ORGMTSEG(0))<br> D START^ORWRP(80,"REPORT1^ORWRP2(.ORGMTSEG,.ORSEGC,.ORSEGI,ORDFN)")<br> S OROOT=$NA(^TMP("ORDATA",$J,1)){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

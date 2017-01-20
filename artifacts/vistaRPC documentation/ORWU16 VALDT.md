@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VALDT^[ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
  Method comment | Validate date/time entry
- Input parameters | {::nomarkdown}X<br>%DT{:/}
+ Input parameters | {::nomarkdown}X, %DT{:/}
  Code | {::nomarkdown}  S:'$D(%DT) %DT="TX" D ^%DT{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

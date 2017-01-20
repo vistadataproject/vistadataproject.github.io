@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CPLST^[ORWDPS4](http://code.osehra.org/dox/Routine_ORWDPS4_source.html)
  Method comment | Get CP questions
- Input parameters | {::nomarkdown}PTIFN<br>ORIFNS{:/}
+ Input parameters | {::nomarkdown}PTIFN, ORIFNS{:/}
  Code | {::nomarkdown}  N ORIFN,ORDA,ORI,ORPSO,CPX<br> S ORI=0,ORPSO=+$O(^DIC(9.4,"C","PSO",0))<br> F  S ORI=$O(ORIFNS(ORI)) Q:'ORI  D<br> .S ORIFN=+ORIFNS(ORI),ORDA=$P(ORIFNS(ORI),";",2)<br> .I $D(^OR(100,ORIFN,0)),($P(^OR(100,ORIFN,0),U,14)=ORPSO) D<br> ..N PRIO S PRIO=0<br> ..I $D(^OR(100,ORIFN,4.5,"ID","URGENCY")) S PRIO=$O(^("URGENCY",0))<br> ..S PRIO=$G(^OR(100,ORIFN,4.5,+PRIO,1))<br> ..Q:PRIO=99<br> ..S CPX=$$SC(ORIFN)<br> ..I $L(CPX)>1 S TEST(ORIFN)=ORIFN_";"_ORDA_CPX<br> K PTIFN,ORIFN,ORDA,ORI,CPX{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas">Orders/rODBase.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISEDITOR^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Returns TRUE if user is a Template Editor
- Input parameters | {::nomarkdown}ROOT<br>USER{:/}
+ Input parameters | {::nomarkdown}ROOT, USER{:/}
  Code | {::nomarkdown}  N CLASS,TIUERR<br> S CLASS=$P($G(^TIU(8927,ROOT,0)),U,7)<br> I 'CLASS S TIUY="^NO CLASS OWNER DEFINED"<br> E  D<br> .S TIUY=$$ISA^USRLM(USER,CLASS,.TIUERR)<br> .I 'TIUY,$D(TIUERR) S TIUY=U_TIUERR{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas">Templates/rTemplates.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

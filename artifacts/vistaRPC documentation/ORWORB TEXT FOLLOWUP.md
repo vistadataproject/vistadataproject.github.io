@@ -35,7 +35,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TXTFUP^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | Follow-up for text messages
- Input parameters | {::nomarkdown}DFN<br>NOTIF<br>XQADATA{:/}
+ Input parameters | {::nomarkdown}DFN, NOTIF, XQADATA{:/}
  Code | {::nomarkdown}  I NOTIF=67 D CHGRAD{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

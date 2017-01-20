@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ADDSAVE^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | SAVE NEW RECORD
+ Input parameters | {::nomarkdown}GMPDFN, GMPROV, GMPVAMC, ADDARRAY, GMPSRCH{:/}
  First comment | {::nomarkdown}<pre> RETURN - Problem IFN if success, 0 otherwise<br/> ADDARRAY - array used for indirect sets of  GMPFLDS()<br/></pre>{:/}
- Input parameters | {::nomarkdown}GMPDFN<br>GMPROV<br>GMPVAMC<br>ADDARRAY<br>GMPSRCH{:/}
  Code | {::nomarkdown}  N DA,GMPFLD,GMPORIG,S<br> S GMPSRCH=$G(GMPSRCH)<br> S RETURN=0 ;<br> L +^AUPNPROB(0):10<br> Q:'$T  ; bail out if no lock<br> S S=""<br> F  S S=$O(ADDARRAY(S)) Q:S=""  D<br> . S @ADDARRAY(S)<br> D NEW^GMPLSAVE<br> S RETURN=DA<br> L -^AUPNPROB(0)<br> S RETURN=1{:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/fBALocalDiagnoses.pas">BA/fBALocalDiagnoses.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

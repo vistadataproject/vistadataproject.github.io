@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The INPUT parameter has the format: IEN^CASE STATUS where IEN is the ASIST record IEN and CASE STATUS is the case status the claim should be changed to.{:/} | 
 | {::nomarkdown}FLD58{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}The parameter FLD58 is the text field Reason for Deletion if the case statushas been changed to deleted.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

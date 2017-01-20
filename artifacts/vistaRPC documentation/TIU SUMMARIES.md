@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SUMMARY^[TIUSRVLO](http://code.osehra.org/dox/Routine_TIUSRVLO_source.html)
  Method comment | Get Summaries
- Input parameters | {::nomarkdown}DFN<br>EARLY<br>LATE{:/}
+ Input parameters | {::nomarkdown}DFN, EARLY, LATE{:/}
  Code | {::nomarkdown}  N TIUPREF,TIUOCC S TIUPREF=$$PERSPRF^TIULE(DUZ)<br> S TIUOCC=$P(TIUPREF,U,10),PERSON=$S(+$G(PERSON):+$G(PERSON),1:+$G(DUZ))<br> S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")<br> D CONTEXT(.TIUY,244,1,DFN,$G(EARLY),$G(LATE),PERSON,TIUOCC,SEQUENCE){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

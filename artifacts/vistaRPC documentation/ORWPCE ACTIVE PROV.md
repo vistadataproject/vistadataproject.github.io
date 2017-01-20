@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ACTIVPRV^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | get if provider is active or not
- Input parameters | {::nomarkdown}ORWPROV<br>ORWDT{:/}
+ Input parameters | {::nomarkdown}ORWPROV, ORWDT{:/}
  Code | {::nomarkdown}  S ORRETURN=$$ACTIVPRV^PXAPI(ORWPROV,ORWDT){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

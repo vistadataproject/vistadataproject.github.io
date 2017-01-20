@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EDSAVE^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | SAVE EDITED RES
+ Input parameters | {::nomarkdown}GMPIFN, GMPROV, GMPVAMC, UT, EDARRAY, GMPSRCH{:/}
  First comment | {::nomarkdown}<pre> RETURN - boolean, 1 success, 0 failure<br/> EDARRAY - array used for indirect sets of GMPORIG() and GMPFLDS()<br/></pre>{:/}
- Input parameters | {::nomarkdown}GMPIFN<br>GMPROV<br>GMPVAMC<br>UT<br>EDARRAY<br>GMPSRCH{:/}
  Code | {::nomarkdown}  N GMPFLD,GMPORIG,S,GMPLUSER<br> S GMPSRCH=$G(GMPSRCH)<br> S RETURN=1 ; initialize for success<br> I UT S GMPLUSER=1<br> S S=""<br> F  S S=$O(EDARRAY(S)) Q:S=""  D<br> . S @EDARRAY(S)<br> I $D(GMPFLD(10,"NEW"))>9 D  I 'RETURN Q  ; Bail Out if no lock<br> . L +^AUPNPROB(GMPIFN,11):10  ; given bogus nature of this lock, should be able to get<br> . I '$T S RETURN=0<br> D EN^GMPLSAVE  ; save the data<br> K GMPFLD,GMPORIG<br> L -^AUPNPROB(GMPIFN,11)  ; free this instance of lock (in case it was set)<br> S RETURN=1{:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

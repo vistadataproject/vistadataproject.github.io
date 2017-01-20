@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTITLE^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Gets Note Title associated with FLAGID for PTDFN
+ Input parameters | {::nomarkdown}PTDFN, FLAGID{:/}
  First comment | {::nomarkdown}<pre>Receives TIUY by ref; passes back<br/> TIUY = TitleIEN^Title<br/>        0 if no title is associated or flg assignmt is not active<br/>Requires PTDFN<br/>Requires FLAGID - identifier for particular flag assignment<br/>   for patient PTDFN. Set as subscript in GETACT^DGPFAPI.<br/> See GETFLG^ORPRF.</pre>{:/}
- Input parameters | {::nomarkdown}PTDFN<br>FLAGID{:/}
  Code | {::nomarkdown}  N PRFARR K TIUY S TIUY=0<br> Q:'$G(PTDFN)  Q:'$G(FLAGID)<br> S TIUY=$$GETACT^DGPFAPI(PTDFN,"PRFARR") ;Get ACTive flag info<br> Q:'TIUY<br> S TIUY=$G(PRFARR(FLAGID,"TIUTITLE"))<br> I TIUY'>0 S TIUY=0{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fPatientFlagMulti.pas">fPatientFlagMulti.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

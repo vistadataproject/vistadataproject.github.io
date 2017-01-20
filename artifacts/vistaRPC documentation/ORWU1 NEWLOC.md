@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NEWLOC^[ORWU1](http://code.osehra.org/dox/Routine_ORWU1_source.html)
  Method comment | Return "CZ" locations from HOSPITAL LOCATION file.
+ Input parameters | {::nomarkdown}ORFROM, DIR{:/}
  First comment | {::nomarkdown}<pre> C=Clinics, Z=Other, screened by $$ACTLOC^ORWU.<br/> .Y=returned list, ORFROM=text to $O from, DIR=$O direction.</pre>{:/}
- Input parameters | {::nomarkdown}ORFROM<br>DIR{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S I=0,CNT=44<br> F  Q:I'<CNT  S ORFROM=$O(^SC("B",ORFROM),DIR) Q:ORFROM=""  D  ; IA# 10040.<br> . S IEN="" F  S IEN=$O(^SC("B",ORFROM,IEN),DIR) Q:'IEN  D<br> . . Q:("C"'[$P($G(^SC(IEN,0)),U,3)!('$$ACTLOC^ORWU(IEN)))<br> . . S I=I+1,Y(I)=IEN_"^"_ORFROM<br>{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

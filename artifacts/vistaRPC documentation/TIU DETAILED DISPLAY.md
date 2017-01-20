@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPC^[TIUSRV](http://code.osehra.org/dox/Routine_TIUSRV_source.html)
  Method comment | RPC for DT
- Input parameters | {::nomarkdown}TIUDA<br>REASSIGN{:/}
+ Input parameters | {::nomarkdown}TIUDA, REASSIGN{:/}
  Code | {::nomarkdown}  N VALMAR,TIUGDATA,TIUGWHOL K ^TMP("TIUAUDIT",$J)<br> S TIUY=$NA(^TMP("TIUAUDIT",$J))<br> D GET(TIUDA,1,+$G(REASSIGN))<br> K ^TMP("VALM VIDEO",$J){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas">rSurgery.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

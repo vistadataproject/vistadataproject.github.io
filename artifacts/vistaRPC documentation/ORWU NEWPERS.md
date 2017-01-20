@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NEWPERS^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | Return a set of names from the NEW PERSON file.
+ Input parameters | {::nomarkdown}ORFROM, ORDIR, ORKEY, ORDATE, ORVIZ, ORALL{:/}
  First comment | {::nomarkdown}<pre> SLC/PKS: Code moved to ORWU1 on 12/3/2002.</pre>{:/}
- Input parameters | {::nomarkdown}ORFROM<br>ORDIR<br>ORKEY<br>ORDATE<br>ORVIZ<br>ORALL{:/}
  Code | {::nomarkdown}  D NP1^ORWU1{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

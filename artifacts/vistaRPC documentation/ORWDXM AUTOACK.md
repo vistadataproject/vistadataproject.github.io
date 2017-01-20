@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | AUTOACK^[ORWDXM](http://code.osehra.org/dox/Routine_ORWDXM_source.html)
  Method comment | Place a quick order without verify step
- Input parameters | {::nomarkdown}ORVP<br>ORNP<br>ORL<br>ORIT{:/}
+ Input parameters | {::nomarkdown}ORVP, ORNP, ORL, ORIT{:/}
  Code | {::nomarkdown}  N ORDG,ORDUZ,ORSTS,OREVENT,ORCAT,ORDA,ORTS,ORNEW,ORCHECK,ORLOG<br> N ORDIALOG,ORIFN,ORLEAD,ORTRAIL<br> S ORVP=ORVP_";DPT(",ORL(2)=ORL_";SC(",ORL=ORL(2)<br> S DGRP=$P($G(^ORD(101.41,ORIT,0)),U,5) Q:'DGRP<br> S ORDIALOG=$$DEFDLG^ORWDXQ(DGRP)<br> I ORDIALOG=$O(^ORD(101.41,"B","PSO OERR",0)) S ORCAT="O"      ; temp<br> I ORDIALOG=$O(^ORD(101.41,"B","PSJ OR PAT OE",0)) S ORCAT="I" ; temp<br> D GETDLG1^ORCD(ORDIALOG)<br> D GETORDER^ORCD("^ORD(101.41,"_ORIT_",6)")<br> D EN^ORCSAVE<br> S REC="" I ORIFN D GETBYIFN^ORWORR(.REC,ORIFN){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas">Orders/rODBase.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

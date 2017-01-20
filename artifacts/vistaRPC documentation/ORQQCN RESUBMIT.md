@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RESUBMIT^[ORQQCN1](http://code.osehra.org/dox/Routine_ORQQCN1_source.html)
  Method comment | Edit/Resubmit a cancelled consult/procedure request
- Input parameters | {::nomarkdown}GMRCO<br>OREDITED{:/}
+ Input parameters | {::nomarkdown}GMRCO, OREDITED{:/}
  Code | {::nomarkdown}  N ORNODE<br> S ORNODE=$NAME(^TMP("GMRCR",$J))<br> M @ORNODE=OREDITED<br> D FILE^GMRCGUIC(GMRCO,ORNODE)<br> S Y=0{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

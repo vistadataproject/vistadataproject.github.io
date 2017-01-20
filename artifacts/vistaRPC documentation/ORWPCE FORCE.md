@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FORCE^[ORWPCE2](http://code.osehra.org/dox/Routine_ORWPCE2_source.html)
  Method comment | Retrieve FORCE GUI PCE Entry for a given User/Location
- Input parameters | {::nomarkdown}USER<br>LOC{:/}
+ Input parameters | {::nomarkdown}USER, LOC{:/}
  Code | {::nomarkdown}  N SRV,ORTMP,ORERR<br> S USER=$G(USER,DUZ)<br> S SRV=$P($G(^VA(200,USER,5)),U)<br> D GETLST^XPAR(.ORTMP,"USR^LOC.`"_$G(LOC)_"^SRV.`"_+$G(SRV)_"^DIV^SYS^PKG","ORWPCE FORCE PCE ENTRY","Q",.ORERR)<br> S ORY=+$P($G(ORTMP(1)),U,2){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EXTNAME^[ORWU](http://code.osehra.org/dox/Routine_ORWU_source.html)
  Method comment | return external form of pointer
+ Input parameters | {::nomarkdown}IEN, FN{:/}
  First comment | {::nomarkdown}<pre> IEN=internal number, FN=file number</pre>{:/}
- Input parameters | {::nomarkdown}IEN<br>FN{:/}
  Code | {::nomarkdown}  N REF S REF=$G(^DIC(FN,0,"GL")),VAL=""<br> I $L(REF),+IEN S VAL=$P($G(@(REF_IEN_",0)")),U){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

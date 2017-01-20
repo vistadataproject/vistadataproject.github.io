@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ALLVIEWS^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all graph views
- Input parameters | {::nomarkdown}VIEW<br>USER{:/}
+ Input parameters | {::nomarkdown}VIEW, USER{:/}
  Code | {::nomarkdown}  D ALLVIEWS^ORWGAPI("ORWGRPC",+$G(VIEW),+$G(USER))<br> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas">rGraphs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

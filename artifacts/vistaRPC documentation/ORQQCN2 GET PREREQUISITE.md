@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PREREQ^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Returns prequisites for ordering
- Input parameters | {::nomarkdown}ORSVC<br>ORDFN{:/}
+ Input parameters | {::nomarkdown}ORSVC, ORDFN{:/}
  Code | {::nomarkdown}  Q:(+$G(ORSVC)=0)!(+$G(ORDFN)=0)<br> S ORY=$NA(^TMP("ORPREREQ",$J))<br> D PREREQ^GMRCUTL1(.ORY,ORSVC,ORDFN,0)  ;0=RESOLVE OBJECTS<br> K @ORY@(0){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

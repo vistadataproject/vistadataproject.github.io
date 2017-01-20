@@ -35,7 +35,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DUP^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | Check for duplicate problem
- Input parameters | {::nomarkdown}DFN<br>TERM<br>TEXT{:/}
+ Input parameters | {::nomarkdown}DFN, TERM, TEXT{:/}
  Code | {::nomarkdown}  S Y=$$DUPL^GMPLX(DFN,TERM,TEXT) Q:+Y=0<br> I $P(^AUPNPROB(Y,1),U,2)="H" S Y=0 Q<br> S Y=Y_U_$P(^AUPNPROB(Y,0),U,12){:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

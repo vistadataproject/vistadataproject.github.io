@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETFLG^[ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
  Method comment | Return detailed flag info for flag FLAGID
- Input parameters | {::nomarkdown}PTDFN<br>FLAGID{:/}
+ Input parameters | {::nomarkdown}PTDFN, FLAGID{:/}
  Code | {::nomarkdown}  I '$D(^TMP("ORPRF",$J,FLAGID)) Q<br> N IX,CNT<br> S (IX,CNT)=0<br> F  S IX=$O(^TMP("ORPRF",$J,FLAGID,IX)) Q:'IX  D<br> . S CNT=CNT+1,ORY(CNT)=$G(^TMP("ORPRF",$J,FLAGID,IX)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas">uOrPtf.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

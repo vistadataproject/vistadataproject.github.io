@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DETAIL^[ORWOR](http://code.osehra.org/dox/Routine_ORWOR_source.html)
  Method comment | Return details of ORID (shell to kill VIDEO subs)
- Input parameters | {::nomarkdown}ORID<br>DFN{:/}
+ Input parameters | {::nomarkdown}ORID, DFN{:/}
  Code | {::nomarkdown}  Q:'+ORID<br> I $G(DFN) N ORVP S ORVP=DFN_";DPT("<br> S LST="^TMP(""ORTXT"",$J)"<br> D DETAIL^ORQ2(.LST,ORID)<br> K @LST@("VIDEO")<br> S LST=$NA(^TMP("ORTXT",$J)),@LST=""{:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

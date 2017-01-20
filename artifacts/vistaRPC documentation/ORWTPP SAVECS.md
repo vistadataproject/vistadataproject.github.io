@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SAVECS^[ORWTPP](http://code.osehra.org/dox/Routine_ORWTPP_source.html)
  Method comment | RPC
- First comment | {::nomarkdown}<pre> save current user's date range defaults</pre>{:/}
  Input parameters | {::nomarkdown}INFO{:/}
+ First comment | {::nomarkdown}<pre> save current user's date range defaults</pre>{:/}
  Code | {::nomarkdown}  D SAVECS^ORWTPO(.OK,INFO,DUZ){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

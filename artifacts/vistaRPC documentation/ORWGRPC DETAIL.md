@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DETAIL^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get all reports for types of data from items and date range
- Input parameters | {::nomarkdown}DFN<br>DATE1<br>DATE2<br>VAL<br>COMP{:/}
+ Input parameters | {::nomarkdown}DFN, DATE1, DATE2, VAL, COMP{:/}
  Code | {::nomarkdown}  D DETAIL^ORWGAPI("ORWGRPC",DFN,DATE1,DATE2,.VAL,$G(COMP))<br> S ITEMS=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas">rGraphs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

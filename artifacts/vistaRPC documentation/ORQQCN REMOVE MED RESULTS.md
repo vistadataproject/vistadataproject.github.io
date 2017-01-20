@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMOVE^[ORQQCN3](http://code.osehra.org/dox/Routine_ORQQCN3_source.html)
  Method comment | Remove a medicine result from a consult
+ Input parameters | {::nomarkdown}GMRCO, GMRCRSLT, GMRCAD, GMRCORNP{:/}
  First comment | {::nomarkdown}<pre>GMRCO - Internal file number of consult from File 123<br/>GMRCRSLT - pointer to medicine result<br/>GMRCAD - Date/Time medicine result was removed<br/>GMRCORNP - Provider who removed the result from the consult</pre>{:/}
- Input parameters | {::nomarkdown}GMRCO<br>GMRCRSLT<br>GMRCAD<br>GMRCORNP{:/}
  Code | {::nomarkdown}  Q:+$G(GMRCO)=0<br> D REMOVE^GMRCDIS(GMRCO,GMRCRSLT,GMRCAD,GMRCORNP){:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

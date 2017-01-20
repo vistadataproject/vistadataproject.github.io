@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CAT^[ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  Method comment | Get user category list
- Input parameters | {::nomarkdown}ORDUZ<br>CLIN{:/}
+ Input parameters | {::nomarkdown}ORDUZ, CLIN{:/}
  Code | {::nomarkdown}  N GSEQ,GCNT,GROUP,HDR,IFN,LCNT,ITEM,TG,GMPLSLST<br> S TG=$NAME(TMP) ; put list in local<br> K @TG<br> S (GSEQ,GCNT,LCNT)=0<br> S GMPLSLST=$$GETUSLST(DUZ,CLIN) ; get approp list for user<br> F  S GSEQ=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ)) Q:GSEQ'>0  D<br> . S IFN=$O(^GMPL(125.1,"C",+GMPLSLST,GSEQ,0)) Q:IFN'>0<br> . S ITEM=$G(^GMPL(125.1,IFN,0))<br> . S GROUP=+$P(ITEM,U,3)<br> . S HDR=GROUP_U_$P(ITEM,U,4,5)<br> . S GCNT=GCNT+1<br> . S @TG@(GCNT)=HDR ; put category into temp global{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

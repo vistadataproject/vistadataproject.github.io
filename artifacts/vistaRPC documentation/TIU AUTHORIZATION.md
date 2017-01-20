@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CANDO^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Boolean function to evaluate privilege
- Input parameters | {::nomarkdown}TIUDA<br>TIUACT{:/}
+ Input parameters | {::nomarkdown}TIUDA, TIUACT{:/}
  Code | {::nomarkdown}  N TIUPOP,TIUDPRM S TIUPOP=0<br> I $P($G(^TIU(8925,TIUDA,0)),U,5)>5,(TIUACT="EDIT RECORD") S TIUY="0^ You may not edit uncosigned or completed documents" Q<br> I $S(TIUACT["SIGN":1,TIUACT="EDIT RECORD":1,TIUACT="DELETE RECORD":1,1:0) D  Q:+TIUPOP=1<br> . L +^TIU(8925,+TIUDA):1<br> . E  S TIUY="0^ Another session is editing this entry.",TIUPOP=1<br> . L -^TIU(8925,+TIUDA)<br>  I TIUACT["SIGNAT",+$$NEEDCS(TIUDA) S TIUY="0^ You must name a cosigner before signing this document." Q<br> S TIUY=$$CANDO^TIULP(TIUDA,TIUACT){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

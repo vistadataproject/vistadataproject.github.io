@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | VERIFY^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | Verify order
+ Input parameters | {::nomarkdown}ORID, ESCODE, ORVER{:/}
  First comment | {::nomarkdown}<pre> validate ESCode</pre>{:/}
- Input parameters | {::nomarkdown}ORID<br>ESCODE<br>ORVER{:/}
  Code | {::nomarkdown}  S ORVER=$G(ORVER,$S($D(^XUSEC("ORELSE",DUZ)):"N",$D(^XUSEC("OREMAS",DUZ)):"C",1:U))<br> I ORVER'=U D<br> . N ORIFN,ORES,ORI<br> . ; VERIFY any replaced orders:<br> . S ORIFN=ORID,ORES(ORIFN)="" D REPLCD^ORCACT1<br> . S ORI="" F  S ORI=$O(ORES(ORI)) Q:ORI=""  D EN^ORCSEND(ORI,"VR","",""),UNLK1^ORX2(+ORI):ORI'=ORID ;ORID locked prior<br> D GETBYIFN^ORWORR(.REC,ORID){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

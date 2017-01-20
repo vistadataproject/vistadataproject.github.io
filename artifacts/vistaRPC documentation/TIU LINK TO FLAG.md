@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LINK^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Link TIU Doc TIUIEN to
+ Input parameters | {::nomarkdown}TIUIEN, ASSGNDA, ACTIEN, DFN{:/}
  First comment | {::nomarkdown}<pre> the PRF action</pre>{:/}
- Input parameters | {::nomarkdown}TIUIEN<br>ASSGNDA<br>ACTIEN<br>DFN{:/}
  Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> D UNLINK^TIUPRF1(TIUIEN)<br> S TIUY=$$STOTIU^DGPFAPI2(DFN,ASSGNDA,ACTIEN,TIUIEN){:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas">fNotes.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

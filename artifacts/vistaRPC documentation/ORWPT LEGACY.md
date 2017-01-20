@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LEGACY^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | return message if data on the legacy system
- First comment | {::nomarkdown}<pre> ORLST(0)=1 if data,  ORLST(n)=display message if data</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
+ First comment | {::nomarkdown}<pre> ORLST(0)=1 if data,  ORLST(n)=display message if data</pre>{:/}
  Code | {::nomarkdown}  S ORLST(0)=0<br> I $L($T(HXDATA^A7RDPAGU)) D<br> . D HXDATA^A7RDPAGU(.ORLST,DFN)<br> . I $O(ORLST(0)) S ORLST(0)=1{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISPASS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return 1 if it's a pass event
- Input parameters | {::nomarkdown}PTEVTID<br>EVTTYPE{:/}
+ Input parameters | {::nomarkdown}PTEVTID, EVTTYPE{:/}
  Code | {::nomarkdown}  S ORY=$$EVT^OREVNTX(PTEVTID)<br> S ORY=$P($G(^ORD(100.5,+ORY,0)),U,7)<br> I EVTTYPE="T",ORY,ORY<4 S ORY=1<br> E  S ORY=0{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

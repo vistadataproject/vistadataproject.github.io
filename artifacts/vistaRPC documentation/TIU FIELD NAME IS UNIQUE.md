@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISUNIQUE^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  Method comment | Is Name Unique?
- Input parameters | {::nomarkdown}NAME<br>IEN{:/}
+ Input parameters | {::nomarkdown}NAME, IEN{:/}
  Code | {::nomarkdown}  N FLD<br> S FLD=+$O(^TIU(8927.1,"B",NAME,0))<br> I +FLD,FLD'=IEN S TIUY=0<br> E  S TIUY=1{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas">Templates/rTemplates.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

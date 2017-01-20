@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CATEGORY^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
  Method comment | GMV GET CATEGORY IEN [RPC entry point]
- First comment | {::nomarkdown}<pre> Input<br/>  RESULT = variable name to hold result<br/>  GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/> Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>         else returns -1</pre>{:/}
  Input parameters | {::nomarkdown}GMVCAT{:/}
+ First comment | {::nomarkdown}<pre> Input<br/>  RESULT = variable name to hold result<br/>  GMVCAT = Name of Category (from FILE 120.53) (e.g., METHOD)<br/> Output: Returns the IEN if GMVTYPE exists in FILE 120.53<br/>         else returns -1</pre>{:/}
  Code | {::nomarkdown}  I GMVCAT="" S RESULT=-1 Q<br> S RESULT=+$O(^GMRD(120.53,"B",GMVCAT,0)){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} No Source Code Available (GMV_VitalsViewEnter.dll)  <br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

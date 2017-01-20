@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | KEY^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Returns 1 if user possesses the key
- Input parameters | {::nomarkdown}KEYNAME<br>USERID{:/}
+ Input parameters | {::nomarkdown}KEYNAME, USERID{:/}
  Code | {::nomarkdown}  S VAL=0 I $D(^XUSEC(KEYNAME,USERID)) S VAL=1{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

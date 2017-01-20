@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GTEVT1^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return Event information based on EVT ptr #100.5
- First comment | {::nomarkdown}<pre>EVT    ptr #100.5</pre>{:/}
  Input parameters | {::nomarkdown}EVT{:/}
+ First comment | {::nomarkdown}<pre>EVT    ptr #100.5</pre>{:/}
  Code | {::nomarkdown}  Q:'+EVT<br> N EVTTYPE,EVTNAME,EVTDISP,EVTDLG,PRTEVT<br> S (EVTDLG,PRTEVT)=0<br> S PRTEVT=$P(^ORD(100.5,+EVT,0),U,12)<br> I PRTEVT>0 S EVTTYPE=$P(^ORD(100.5,PRTEVT,0),U,2)<br> E  S EVTTYPE=$P(^ORD(100.5,+EVT,0),U,2)<br> S EVTNAME=$P($G(^ORD(100.5,+EVT,0)),U,1)<br> S EVTDISP=$P($G(^ORD(100.5,+EVT,0)),U,8)<br> S EVTDLG=$P($G(^ORD(100.5,+EVT,0)),U,4)<br> S ORY=EVTTYPE_U_EVT_U_EVTNAME_U_EVTDISP_U_EVTDLG{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

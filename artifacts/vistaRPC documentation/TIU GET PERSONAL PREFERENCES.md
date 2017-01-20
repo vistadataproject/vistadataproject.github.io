@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETPREF^[TIUSRVR](http://code.osehra.org/dox/Routine_TIUSRVR_source.html)
  Method comment | Get user's personal preferences
- First comment | {::nomarkdown}<pre> Call with TIUY (by ref)<br/>           USER is pointer to file 200<br/> Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>               ==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>               ==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>               ==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^</pre>{:/}
  Input parameters | {::nomarkdown}USER{:/}
+ First comment | {::nomarkdown}<pre> Call with TIUY (by ref)<br/>           USER is pointer to file 200<br/> Returns   TIUY = USER ^ DEFAULT LOCATION ^ REVIEW SCREEN SORT FIELD ^<br/>               ==>REVIEW SCREEN SORT ORDER ^ DISPLAY MENUS ^ PATIENT<br/>               ==>SELECTION PREFERENCE ^ ASK 'Save changes?' AFTER<br/>               ==>EDIT ^ ASK SUBJECT FOR PROGRESS NOTES ^</pre>{:/}
  Code | {::nomarkdown}  S TIUY=$$PERSPRF^TIULE(USER){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

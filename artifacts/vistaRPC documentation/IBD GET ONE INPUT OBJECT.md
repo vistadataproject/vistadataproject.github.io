@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The following variables are required:   IBDF(\PI\)     := pointer to the package interface file   IBDF(\IEN\)    := pointer to the input object (file depends on type)   IBDF(\CLINIC\) := pointer to the hospital location file (required only                     to return provider lists)   IBDF(\DFN\)    := pointer to patient file (required only for patient                     specific dynamic lists such as patient active problems)All are returned by one of the available rpc's in aics.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

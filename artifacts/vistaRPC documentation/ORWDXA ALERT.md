@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ALERT^[ORWDXA](http://code.osehra.org/dox/Routine_ORWDXA_source.html)
  Method comment | alert user (ORDUZ) when order (ORID) resulted
+ Input parameters | {::nomarkdown}ORID, ORDUZ{:/}
  First comment | {::nomarkdown}<pre>if no user passed, use ordering provider:</pre>{:/}
- Input parameters | {::nomarkdown}ORID<br>ORDUZ{:/}
  Code | {::nomarkdown}  I $G(ORDUZ)<1 S ORDUZ=+$$ORDERER^ORQOR2(+ORID)<br> I $L($G(ORDUZ))<1 S ORDUZ=DUZ<br> S DUMMY=1,$P(^OR(100,+ORID,3),U,10)=ORDUZ{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

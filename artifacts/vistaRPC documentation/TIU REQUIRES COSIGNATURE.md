@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REQCOS^[TIUSRVA](http://code.osehra.org/dox/Routine_TIUSRVA_source.html)
  Method comment | Evaluate cosignature requirement
+ Input parameters | {::nomarkdown}TIUTYP, TIUDA, TIUSER, TIUDT{:/}
  First comment | {::nomarkdown}<pre> Initialize return value</pre>{:/}
- Input parameters | {::nomarkdown}TIUTYP<br>TIUDA<br>TIUSER<br>TIUDT{:/}
  Code | {::nomarkdown}  N TIUDPRM<br> S TIUY=0<br> I +$G(TIUTYP)'>0,'+$G(TIUDA) Q<br> I +$G(TIUDA) S TIUTYP=+$G(^TIU(8925,+$G(TIUDA),0))<br> S:'+$G(TIUSER) TIUSER=+$G(DUZ)<br> S TIUY=+$$REQCOSIG^TIULP(TIUTYP,+$G(TIUDA),+$G(TIUSER),$P(+$G(TIUDT),".")){:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

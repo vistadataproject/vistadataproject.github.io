@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | IMPORT^[TIUSRVF](http://code.osehra.org/dox/Routine_TIUSRVF_source.html)
  Method comment | Call layer for IMPORT2
- First comment | {::nomarkdown}<pre>compatibility and extend the IMPORT function to optionally <br/>specify saving the template field.</pre>{:/}
  Input parameters | {::nomarkdown}XMLTMP{:/}
+ First comment | {::nomarkdown}<pre>compatibility and extend the IMPORT function to optionally <br/>specify saving the template field.</pre>{:/}
  Code | {::nomarkdown}  D IMPORT2(.REPORT,"XMLTMP",1){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

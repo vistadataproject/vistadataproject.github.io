@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DELETE^[TIUSRVT](http://code.osehra.org/dox/Routine_TIUSRVT_source.html)
  Method comment | Delete TEMPLATES
- First comment | {::nomarkdown}<pre> Pass TIUDA as array of record numbers to be deleted by reference<br/> SUCCESS will be returned as the actual number of templates deleted</pre>{:/}
  Input parameters | {::nomarkdown}TIUDA{:/}
+ First comment | {::nomarkdown}<pre> Pass TIUDA as array of record numbers to be deleted by reference<br/> SUCCESS will be returned as the actual number of templates deleted</pre>{:/}
  Code | {::nomarkdown}  N TIUI S (SUCCESS,TIUI)=0<br> F  S TIUI=$O(TIUDA(TIUI)) Q:+TIUI'>0  D<br> . N DA<br> . S DA=+TIUDA(TIUI)<br> . I 'DA Q<br> . L -^TIU(8927,DA,0):1 ; Unlock before deleting<br> . ; Quit if the Template is NOT an ORPHAN<br> . I +$O(^TIU(8927,"AD",DA,0)) Q<br> . ; Otherwise, call FileMan to DELETE the record<br> . D ZAP(DA) S SUCCESS=SUCCESS+1{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas">Templates/rTemplates.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

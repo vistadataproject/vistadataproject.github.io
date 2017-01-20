@@ -38,8 +38,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SCH^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Schedule consult and change status
+ Input parameters | {::nomarkdown}ORIEN, ORNP, ORDATE, ORALRT, ORALTO, ORCOM{:/}
  First comment | {::nomarkdown}<pre>ORERR - return array for results/errors<br/>ORIEN - IEN of consult from File 123<br/>ORNP - Provider who Scheduled consult<br/>ORDATE - Date/Time Consult was scheduled.<br/>ORALRT - should alerts be sent to anyone?<br/>ORALTO - array of alert recipient IENs<br/>ORCOM is the comments array to be added<br/>     passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.</pre>{:/}
- Input parameters | {::nomarkdown}ORIEN<br>ORNP<br>ORDATE<br>ORALRT<br>ORALTO<br>ORCOM{:/}
  Code | {::nomarkdown}  N ORAD,ORDUZ,X<br> S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT)<br> S:+$G(ORNP)=0 ORNP=DUZ<br> I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q<br> I $G(ORALRT)=1 D<br> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br> S ORERR=$$SCH^GMRCGUIB(ORIEN,ORNP,ORAD,.ORDUZ,.ORCOM){:/}
 
 
@@ -49,4 +49,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

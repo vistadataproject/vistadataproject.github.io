@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LST^[ORWUXT](http://code.osehra.org/dox/Routine_ORWUXT_source.html)
  Method comment | return a list
- Input parameters | {::nomarkdown}P1<br>P2<br>P3{:/}
+ Input parameters | {::nomarkdown}P1, P2, P3{:/}
 
 
 ### CPRS
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EXISTS^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Returns PtEvtID ptr #100.2 if patient already has delayed orders
- Input parameters | {::nomarkdown}DFN<br>EVT{:/}
+ Input parameters | {::nomarkdown}DFN, EVT{:/}
  Code | {::nomarkdown}  I '+EVT S ORY=0 Q<br> N PTEVT S (PTEVT,ORY)=0<br> S PTEVT=$O(^ORE(100.2,"AE",+DFN,+EVT,PTEVT))<br> I PTEVT>0 S ORY=PTEVT{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

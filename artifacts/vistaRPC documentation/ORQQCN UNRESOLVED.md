@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | UNRSLVD^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Returns true if unresolved consults for user/pt
- First comment | {::nomarkdown}<pre>S ORY=0<br/>Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0<br/>S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/>Q</pre>{:/}
  Input parameters | {::nomarkdown}ORDFN{:/}
+ First comment | {::nomarkdown}<pre>S ORY=0<br/>Q:+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I")=0<br/>S ORY=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br/>Q</pre>{:/}
  Code | {::nomarkdown}  S $P(ORY,U,1)=+$$ANYPENDG^GMRCTIU(ORDFN,DUZ)   ;DBIA #3473<br> S $P(ORY,U,2)=+$$GET^XPAR("ALL","ORWOR SHOW CONSULTS",1,"I"){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

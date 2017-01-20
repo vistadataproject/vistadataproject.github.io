@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MATCH^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | If Pt's current data match selected event
+ Input parameters | {::nomarkdown}DFN, EVT{:/}
  First comment | {::nomarkdown}<pre>DFN: patient DFN<br/>EVT: ptr to #100.5</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>EVT{:/}
  Code | {::nomarkdown}  S ORY=0<br> Q:('+DFN)!('+EVT)<br> S ORY=$$MATCH^OREVNT(DFN,EVT)<br> N TS,TSNM<br> S TS=$S($G(ORTS):+ORTS,1:+$G(^DPT(DFN,.103)))<br> S TSNM=$P($G(^DIC(45.7,TS,0)),U)<br> S:ORY ORY=ORY_U_TSNM{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

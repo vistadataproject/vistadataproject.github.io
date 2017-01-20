@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MICRO^[ORWLRR](http://code.osehra.org/dox/Routine_ORWLRR_source.html)
  Method comment | Micro Report RPC
- Input parameters | {::nomarkdown}DFN<br>DATE1<br>DATE2{:/}
+ Input parameters | {::nomarkdown}DFN, DATE1, DATE2{:/}
  Code | {::nomarkdown}  N ROOT<br> S ROOT=$$SET()<br> I $$REMOTE(.DFN,.ROOT) D MICRO^LR7OGM(.ORY,DFN,DATE1,DATE2)<br> D CLEAN(.ORY,.ROOT){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

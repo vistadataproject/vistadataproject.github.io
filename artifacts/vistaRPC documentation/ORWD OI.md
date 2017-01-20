@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | OI^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | Return a bolus of orderable items
+ Input parameters | {::nomarkdown}XREF, DIR, FROM{:/}
  First comment | {::nomarkdown}<pre> .Return Array, Cross Reference (S.xxx), Direction, Starting Text</pre>{:/}
- Input parameters | {::nomarkdown}XREF<br>DIR<br>FROM{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S CNT=44<br> I DIR=0 D  ; Forward direction<br> . F I=1:1:CNT S FROM=$O(^ORD(101.43,XREF,FROM)) Q:FROM=""  D<br> . . S Y(I)=$O(^ORD(101.43,XREF,FROM,0))_"^"_FROM<br> . I $G(Y(CNT))="" S Y(I)=""<br> I DIR=1 D  ; Reverse direction<br> . F I=1:1:CNT S FROM=$O(^ORD(101.43,XREF,FROM),-1) Q:FROM=""  D<br> . . S Y(I)=$O(^ORD(101.43,XREF,FROM,0))_"^"_FROM{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

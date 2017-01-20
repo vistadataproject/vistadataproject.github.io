@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SCHREQ^[ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  Method comment | return 1 if schedule is required
+ Input parameters | {::nomarkdown}OI, RTE, DRG{:/}
  First comment | {::nomarkdown}<pre> OI=orderable item, RTE=ptr route, DRG=ptr dispense drug</pre>{:/}
- Input parameters | {::nomarkdown}OI<br>RTE<br>DRG{:/}
  Code | {::nomarkdown}  S VAL=1<br> Q:'$G(OI)  Q:'$G(RTE)<br> S VAL=$$SCHREQ^PSJORPOE(RTE,OI,+$G(DRG)){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

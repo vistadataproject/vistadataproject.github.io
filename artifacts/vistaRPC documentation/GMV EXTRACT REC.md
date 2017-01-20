@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETVM^[GMVGETD](http://code.osehra.org/dox/Routine_GMVGETD_source.html)
  Method comment | GMV EXTRACT REC [RPC entry point]
- First comment | {::nomarkdown}<pre> Returns data particular patient and date/time range in RESULT<br/> GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN</pre>{:/}
  Input parameters | {::nomarkdown}GMRVDATA{:/}
+ First comment | {::nomarkdown}<pre> Returns data particular patient and date/time range in RESULT<br/> GMRVDATA = DFN^END DATE VITAL TAKEN^VITAL TYPE (OPTIONAL)^START DATE VITAL TAKEN</pre>{:/}
  Code | {::nomarkdown}  N DFN,GMVEND,GMVSTART,GMVTYPE<br> S DFN=+$P(GMRVDATA,U,1),GMVEND=+$P(GMRVDATA,U,2),GMVSTART=$P(GMRVDATA,U,4),GMVTYPE=$P(GMRVDATA,U,3)<br> K ^TMP($J,"GRPC")<br> S:GMVEND="" GMVEND=$$NOW^XLFDT()<br> I $P(GMVEND,".",2)'>0 S GMVEND=$P(GMVEND,".",1)_".235959"<br> I GMVSTART="" S GMVSTART=0<br> S:GMVTYPE'="" GMVTYPE(1)=$P(^GMRD(120.51,$O(^GMRD(120.51,"C",GMVTYPE,0)),0),"^")<br> D EN1^GMVGETD1<br> I '$D(^TMP($J,"GRPC")) S ^TMP($J,"GRPC",1)="0^NO "_$S(GMVTYPE'="":GMVTYPE(1),1:"VITALS/MEASUREMENTS ")_" ENTERED WITHIN THIS PERIOD"<br> S RESULT=$NA(^TMP($J,"GRPC"))<br> K GMRDT,GMRVARY,GMRVITY,GMRVX,GMRZZ{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} No Source Code Available (GMV_VitalsViewEnter.dll)  <br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

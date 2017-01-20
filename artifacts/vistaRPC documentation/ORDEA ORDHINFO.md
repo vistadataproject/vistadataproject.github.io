@@ -26,7 +26,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | ORDHINFO^[ORDEA](http://code.osehra.org/dox/Routine_ORDEA_source.html)
- Input parameters | {::nomarkdown}ORIFN<br>HASH<br>OHINFO{:/}
+ Input parameters | {::nomarkdown}ORIFN, HASH, OHINFO{:/}
  Code | {::nomarkdown}  N IENS<br> D BUILDFDA(ORIFN,.ORDFDA,.ORY,$G(HASH),.OHINFO){:/}
 
 
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fReview.pas">fReview.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOrdersSign.pas">Orders/fOrdersSign.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

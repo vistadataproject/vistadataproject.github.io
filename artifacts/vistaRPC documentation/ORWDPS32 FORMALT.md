@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FORMALT^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Method comment | return a list of formulary alternatives
- Input parameters | {::nomarkdown}IEN<br>PSTYPE{:/}
+ Input parameters | {::nomarkdown}IEN, PSTYPE{:/}
  Code | {::nomarkdown}  D ENRFA^PSJORUTL(IEN,PSTYPE,.ORLST)<br> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br> . S OI=+$O(^ORD(101.43,"ID",+$P(ORLST(I),U,4)_";99PSP",0))<br> . S $P(ORLST(I),U,4)=OI I OI S $P(ORLST(I),U,5)=$P(^ORD(101.43,OI,0),U){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODBase.pas">Orders/rODBase.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

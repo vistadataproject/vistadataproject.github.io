@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | COMPLOC^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- Input parameters | {::nomarkdown}ORID<br>LOC{:/}
+ Input parameters | {::nomarkdown}ORID, LOC{:/}
  Code | {::nomarkdown}  S ORY=0<br> I LOC'=+$P($G(^OR(100,+ORID,0)),U,10) S ORY=1{:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

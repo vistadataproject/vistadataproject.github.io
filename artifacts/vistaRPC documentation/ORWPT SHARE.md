@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SHARE^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Set global to share DFN with other applications
- Input parameters | {::nomarkdown}IP<br>HWND<br>DFN{:/}
+ Input parameters | {::nomarkdown}IP, HWND, DFN{:/}
  Code | {::nomarkdown}  K ^TMP("ORWCHART",$J),^TMP("ORECALL",$J),^TMP("ORWORD",$J)<br> K ^TMP("ORWDXMQ",$J)<br> S ^TMP("ORWCHART",$J,IP,HWND)=DFN{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMisc.pas">rMisc.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DISCHRG^[ORWPT](http://code.osehra.org/dox/Routine_ORWPT_source.html)
  Method comment | Get discharge movement information
- Input parameters | {::nomarkdown}DFN<br>ADMITDT{:/}
+ Input parameters | {::nomarkdown}DFN, ADMITDT{:/}
  Code | {::nomarkdown}  N VAIP<br> I +$G(ADMITDT)=0 S Y=DT Q<br> S VAIP("D")=ADMITDT D 52^VADPT<br> I +VAIP(17)=0 S Y=DT Q<br> S Y=+VAIP(17,1){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SIGN^[TIUSRVP](http://code.osehra.org/dox/Routine_TIUSRVP_source.html)
  Method comment | API for /es/
+ Input parameters | {::nomarkdown}TIUDA, TIUX{:/}
  First comment | {::nomarkdown}<pre> For backward compatibility<br/> Use SIGN^TIUSRVP2 now, please</pre>{:/}
- Input parameters | {::nomarkdown}TIUDA<br>TIUX{:/}
  Code | {::nomarkdown}  D SIGN^TIUSRVP2(.ERR,TIUDA,.TIUX){:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rDCSumm.pas">rDCSumm.pas</a><br/> <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ADMIN^[ORWDPS2](http://code.osehra.org/dox/Routine_ORWDPS2_source.html)
  Method comment | return administration time info
+ Input parameters | {::nomarkdown}DFN, SCH, OI, LOC, ADMIN{:/}
  First comment | {::nomarkdown}<pre> REC: StartText^StartTime^Duration^FirstAdmin</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>SCH<br>OI<br>LOC<br>ADMIN{:/}
  Code | {::nomarkdown}  S OI=+$P($G(^ORD(101.43,+OI,0)),U,2)<br> S LOC=+$G(^SC(LOC,42)),REC=""<br> I $L($G(^DPT(DFN,.1))) S REC=$$FIRST^ORCDPS3(DFN,LOC,OI,SCH,"",$G(ADMIN)){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

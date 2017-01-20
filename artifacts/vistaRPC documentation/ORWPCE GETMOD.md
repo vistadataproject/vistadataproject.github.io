@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETMOD^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Returns info for a specific CPT Modifier
- Input parameters | {::nomarkdown}ORMODIEN<br>ORDATE{:/}
+ Input parameters | {::nomarkdown}ORMODIEN, ORDATE{:/}
  Code | {::nomarkdown}  N ORDATA<br> S:'+$G(ORDATE) ORDATE=DT<br> S ORDATA=$$MOD^ICPTMOD(ORMODIEN,"I",ORDATE,1)<br> I +ORDATA>0 S MODINFO=ORMODIEN_U_$P(ORDATA,U,3)_U_$P(ORDATA,U,2){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

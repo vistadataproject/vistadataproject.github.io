@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CURMEALS^[ORWDFH](http://code.osehra.org/dox/Routine_ORWDFH_source.html)
  Method comment | Return current list of recurring meals for AO and TF orders
- Input parameters | {::nomarkdown}ORDFN<br>ORMEAL{:/}
+ Input parameters | {::nomarkdown}ORDFN, ORMEAL{:/}
  Code | {::nomarkdown}  N I,Y,X S I=0<br> S ORMEAL=$G(ORMEAL,"")<br> D EN2^FHWOR8(ORDFN,ORMEAL,.ORY)<br> F  S I=$O(ORY(I)) Q:'I  D<br> . S X=$P(ORY(I),U,2)<br> . S Y=$P(ORY(I),U,1) D DD^%DT S $P(ORY(I),U,2)=Y<br> . S $P(ORY(I),U,3)=$S(X="B":"Breakfast",X="N":"Noon",X="E":"Evening",1:""){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODDiet.pas">Orders/rODDiet.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

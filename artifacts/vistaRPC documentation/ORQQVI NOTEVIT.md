@@ -26,7 +26,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | NOTEVIT^[ORQQVI](http://code.osehra.org/dox/Routine_ORQQVI_source.html)
- Input parameters | {::nomarkdown}DFN<br>NOTEIEN{:/}
+ Input parameters | {::nomarkdown}DFN, NOTEIEN{:/}
  Code | {::nomarkdown}  N VSTR,NOTEDATE<br> D NOTEVSTR^ORWPCE(.VSTR,NOTEIEN)<br> Q:$P(VSTR,";",2)=""<br> D FASTVIT(.ORY,DFN,$P(VSTR,";",2)){:/}
 
 
@@ -36,4 +36,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Vitals/rVitals.pas">Vitals/rVitals.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

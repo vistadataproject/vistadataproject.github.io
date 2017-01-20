@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | HELP^[ORQQVI2](http://code.osehra.org/dox/Routine_ORQQVI2_source.html)
  Method comment | This procedure will return help for a particular
- First comment | {::nomarkdown}<pre> measurement type in an array.<br/>   Input<br/>   Variables:  ORQTYPE=Type of measurement (abbreviation<br/>               (req.)  from PCE Device Interface Specification).<br/>               ORQLST=Array root to store help text in<br/></pre>{:/}
  Input parameters | {::nomarkdown}ORQTYPE{:/}
+ First comment | {::nomarkdown}<pre> measurement type in an array.<br/>   Input<br/>   Variables:  ORQTYPE=Type of measurement (abbreviation<br/>               (req.)  from PCE Device Interface Specification).<br/>               ORQLST=Array root to store help text in<br/></pre>{:/}
  Code | {::nomarkdown}  D HELP^GMRVPCE0(ORQTYPE,"ORQLST"){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

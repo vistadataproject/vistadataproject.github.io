@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LCFUTR^[ORWDLR33](http://code.osehra.org/dox/Routine_ORWDLR33_source.html)
  Method comment | Get # of days for future Lab Collects
+ Input parameters | {::nomarkdown}ORLOC, ORDIV{:/}
  First comment | {::nomarkdown}<pre> For Event Delay Order<br/>  --ORLOC Event default location<br/>  --ORDIV Event default division</pre>{:/}
- Input parameters | {::nomarkdown}ORLOC<br>ORDIV{:/}
  Code | {::nomarkdown}  S ORDY=0<br> Q:'$D(^XTV(8989.51,"B","LR LAB COLLECT FUTURE"))<br> I $G(ORDIV) S ORDY=+$$GET^XPAR(+$G(ORLOC)_";SC("_"^"_+$G(ORDIV)_";DIC(4,^SYS^PKG","LR LAB COLLECT FUTURE",1,"I")<br> E  S ORDY=+$$GET^XPAR(+$G(ORLOC)_";SC("_"^DIV^SYS^PKG","LR LAB COLLECT FUTURE",1,"I"){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODLab.pas">Orders/rODLab.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

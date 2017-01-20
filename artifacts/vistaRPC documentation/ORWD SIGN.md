@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SIGN^[ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
  Method comment | procedure
+ Input parameters | {::nomarkdown}DFN, ORNP, LOC, ORWSIGN{:/}
  First comment | {::nomarkdown}<pre> Sign orders (ORIFN;ACT^RELSTS^SIGSTS^NATR)</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>ORNP<br>LOC<br>ORWSIGN{:/}
  Code | {::nomarkdown}  N ORVP,ORL,IDX,ANERROR,ERRCNT<br> S ORVP=DFN_";DPT(",ORL(2)=LOC_";SC(",ORL=ORL(2),ERRCNT=0<br> I '$D(^XUSEC("ORES",DUZ)) S ERRLST(1)=0_U_"Must have ORES key." Q<br> S IDX=0 F  S IDX=$O(ORWSIGN(IDX)) Q:'IDX  S X=ORWSIGN(IDX) D<br> . ; ** change NATR when GUI changed to pass Nature in 4th piece<br> . S ORIFN=$P(X,U),RELSTS=$P(X,U,2),SIGSTS=$P(X,U,3),NATR="E" ;$P(X,U,4)<br> . I SIGSTS=2 D NOTIF^ORCSIGN S ANERROR=""<br> . I SIGSTS'=2 D EN^ORCSEND(ORIFN,"",SIGSTS,RELSTS,NATR,"",.ANERROR)<br> . I $L(ANERROR) D  Q           ; don't print if an error occurred<br> . . S ERRCNT=ERRCNT+1,ERRLST(ERRCNT)=$P(ORWSIGN(IDX),U)_U_ANERROR<br> . . K ORWSIGN(IDX)<br> . I RELSTS=0 K ORWSIGN(IDX) Q  ; don't print if unreleased<br> . S ORWSIGN(IDX)=$P(ORWSIGN(IDX),U)<br> D PRINTS^ORWD1(.ORWSIGN,LOC){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

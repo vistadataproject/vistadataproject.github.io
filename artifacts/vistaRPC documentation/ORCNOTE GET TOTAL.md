@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETTOT^[ORCNOTE](http://code.osehra.org/dox/Routine_ORCNOTE_source.html)
  Method comment | get total count of progress notes
- First comment | {::nomarkdown}<pre> ^TIU(8925,"ACLPT",3) refers to progress notes class</pre>{:/}
  Input parameters | {::nomarkdown}DFN{:/}
+ First comment | {::nomarkdown}<pre> ^TIU(8925,"ACLPT",3) refers to progress notes class</pre>{:/}
  Code | {::nomarkdown}  N ORTIDT,ORTIFN<br> S ORY=0<br> Q:'$G(DFN)<br> F ORTIDT=0:0 S ORTIDT=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT)) Q:ORTIDT<1  D<br> .F ORTIFN=0:0 S ORTIFN=$O(^TIU(8925,"ACLPT",3,DFN,ORTIDT,ORTIFN)) Q:ORTIFN<1  S ORY=ORY+1<br>{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/fNotes.pas">fNotes.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

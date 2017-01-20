@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NAMECVT^[ORWU1](http://code.osehra.org/dox/Routine_ORWU1_source.html)
  Method comment | Returns text name(mixed-case) derived from IEN xref.
- First comment | {::nomarkdown}<pre> GRE/2002<br/> PKS-12/20/2002 Tag not presently used.<br/> Y=Returned value, IEN=Internal number</pre>{:/}
  Input parameters | {::nomarkdown}IEN{:/}
+ First comment | {::nomarkdown}<pre> GRE/2002<br/> PKS-12/20/2002 Tag not presently used.<br/> Y=Returned value, IEN=Internal number</pre>{:/}
  Code | {::nomarkdown}  N ORNAME<br> S IEN=IEN_","<br> S ORNAME=$$GET1^DIQ(200,IEN,20.2)<br> S Y=$$NAMEFMT^XLFNAME(.ORNAME,"F","DcMPC"){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LEXCODE^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | return code for a lexicon entry
- Input parameters | {::nomarkdown}IEN<br>APP<br>ORDATE{:/}
+ Input parameters | {::nomarkdown}IEN, APP, ORDATE{:/}
  Code | {::nomarkdown}  S VAL=""<br> S:'+$G(ORDATE) ORDATE=DT<br> I APP="ICD"!(APP="10D") S VAL=$$ONE^LEXU(IEN,ORDATE,APP)_U_$S(APP="ICD":"ICD-9-CM",1:"ICD-10-CM")<br> I APP="CPT"!(APP="CHP") S VAL=$$CPTONE^LEXU(IEN,ORDATE)_U_"CPT-4"<br> I $P(VAL,U)="",(APP="CHP") S VAL=$$CPCONE^LEXU(IEN,ORDATE)_U_"HCPCS"{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

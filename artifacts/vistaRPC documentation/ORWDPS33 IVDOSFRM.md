@@ -34,7 +34,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | IVDOSFRM^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
- Input parameters | {::nomarkdown}ORDERIDS<br>ALLIV{:/}
+ Input parameters | {::nomarkdown}ORDERIDS, ALLIV{:/}
  Code | {::nomarkdown}  N ORARRAY,CNT,CNT1,OI,POI<br> S OI="",CNT=0,CNT1=0<br> F  S OI=$O(ORDERIDS(OI)) Q:OI'>0  D<br> .S POI=+$P($G(^ORD(101.43,$G(ORDERIDS(OI)),0)),U,2) Q:POI'>0<br> .S CNT=CNT+1<br> .S ORARRAY(CNT)=POI<br> I CNT=0 Q<br> S ORARRAY(0)=CNT<br> D START1^PSSJORDF(.ORARRAY,ALLIV)<br> S CNT="" F  S CNT=$O(ORARRAY(CNT)) Q:CNT'>0  D<br> .S CNT1=CNT1+1,LST(CNT1)=$G(ORARRAY(CNT))<br> K ^TMP("PSJMR",$J){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

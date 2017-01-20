@@ -36,7 +36,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | FWD^[ORB31](http://code.osehra.org/dox/Routine_ORB31_source.html)
  Method comment | forward a notification
- Input parameters | {::nomarkdown}ORBLST<br>ORBRECIP<br>ORBTYPE<br>ORBCOMNT{:/}
+ Input parameters | {::nomarkdown}ORBLST, ORBRECIP, ORBTYPE, ORBCOMNT{:/}
  Code | {::nomarkdown}  I ORBLST="" S ORY=0 Q<br> S ORBLST(1)=ORBLST<br> D FORWARD^XQALFWD(.ORBLST,.ORBRECIP,ORBTYPE,ORBCOMNT)<br> S ORY=1{:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

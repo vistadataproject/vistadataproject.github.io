@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWRA](http://code.osehra.org/dox/Routine_ORWRA_source.html)
  Method comment | return imaging report
+ Input parameters | {::nomarkdown}DFN, ORID, ALPHA, OMEGA, DTRANGE, REMOTE, ORMAX, ORFHIE{:/}
  First comment | {::nomarkdown}<pre>  RPC: ORWRA REPORT TEXT<br/>  See RPC definition for details on input and output parameters<br/> -- init locals and globals</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>ORID<br>ALPHA<br>OMEGA<br>DTRANGE<br>REMOTE<br>ORMAX<br>ORFHIE{:/}
  Code | {::nomarkdown}  N ID,LCNT,ORVP,EXAMDATE,CASENMBR<br> S RADATA=$NA(^TMP($J,"RAE3"))<br> S ROOT=$NA(^TMP("ORXPND",$J))<br> K @RADATA,@ROOT<br> S ID=$TR(ORID,"-",U)<br> S LCNT=0,ORVP=DFN_";DPT("<br> D XRAYS^ORCXPND1<br> K @RADATA{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

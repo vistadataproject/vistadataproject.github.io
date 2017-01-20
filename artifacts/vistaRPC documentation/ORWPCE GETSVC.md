@@ -35,7 +35,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETSVC^[ORWPCE](http://code.osehra.org/dox/Routine_ORWPCE_source.html)
  Method comment | Returns the correct Service Connected Category
- Input parameters | {::nomarkdown}SVC<br>LOC<br>INP{:/}
+ Input parameters | {::nomarkdown}SVC, LOC, INP{:/}
  Code | {::nomarkdown}  N DSS,ORWSVC<br> S DSS=$P($G(^SC(+LOC,0)),U,7)<br> Q:'+DSS<br> M ORWSVC=SVC<br> S NEWSVC=$$SVC^PXKCO(.ORWSVC,DSS,INP,LOC) ; DBIA #3225{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

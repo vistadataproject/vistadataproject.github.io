@@ -32,7 +32,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | TDIALOG^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- Input parameters | {::nomarkdown}ORDLG<br>DFN{:/}
+ Input parameters | {::nomarkdown}ORDLG, DFN{:/}
  Code | {::nomarkdown}  D DIALOG^PXRMRPCD(.ORY,ORDLG,DFN)<br> I $P($G(ORY(1)),U)=-1 Q<br> S ORY(0)=0_U_+$P($G(^PXRMD(801.41,ORDLG,0)),U,17){:/}
 
 
@@ -42,4 +42,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas">rReminders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | MAXFRQ^[ORWGN](http://code.osehra.org/dox/Routine_ORWGN_source.html)
  Method comment | Checks if frequency of search term is greater than
- First comment | {::nomarkdown}<pre> max ICD-10 setting<br/> Input Value: ORTRM = Search term to look up<br/><br/> Return Value: 2 pieces (first piece is 0 or 1, second piece is<br/>               occurrance frequency of search term)<br/>               First piece:<br/>                            0 - Search term frequency is less than<br/>                                maximum return<br/>                            1 - Search term frequency is greater<br/>                                than maximum return</pre>{:/}
  Input parameters | {::nomarkdown}ORTRM{:/}
+ First comment | {::nomarkdown}<pre> max ICD-10 setting<br/> Input Value: ORTRM = Search term to look up<br/><br/> Return Value: 2 pieces (first piece is 0 or 1, second piece is<br/>               occurrance frequency of search term)<br/>               First piece:<br/>                            0 - Search term frequency is less than<br/>                                maximum return<br/>                            1 - Search term frequency is greater<br/>                                than maximum return</pre>{:/}
  Code | {::nomarkdown}  N ORMAX,ORFRQ<br> S ORY=0<br> I ORTRM="" Q  ;if search term not sent in, then quit<br> S ORMAX=+$$MAX^LEXU("10D")<br> I ORMAX=0 S ORMAX=20000  ;if Max value not set, default to 20,000<br> S ORFRQ=+$$FREQ^LEXU(ORTRM)<br> I ORFRQ'>ORMAX Q  ;if frequency not greater than Max value<br> S ORY="1^"_ORFRQ<br>{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

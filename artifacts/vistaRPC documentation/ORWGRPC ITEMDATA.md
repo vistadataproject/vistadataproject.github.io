@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ITEMDATA^[ORWGRPC](http://code.osehra.org/dox/Routine_ORWGRPC_source.html)
  Method comment | RPC - get data of an item on patient (glucose results)
- Input parameters | {::nomarkdown}ITEM<br>START<br>DFN{:/}
+ Input parameters | {::nomarkdown}ITEM, START, DFN{:/}
  Code | {::nomarkdown}  D ITEMDATA^ORWGAPI("ORWGRPC",ITEM,START,DFN)<br> S DATA=$NA(^TMP("ORWGRPC",$J)){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rGraphs.pas">rGraphs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

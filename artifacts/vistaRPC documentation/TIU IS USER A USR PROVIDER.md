@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | USRPROV^[TIUSRVP1](http://code.osehra.org/dox/Routine_TIUSRVP1_source.html)
  Method comment | Is USER a USR CLASS provider?
+ Input parameters | {::nomarkdown}USER, DATE{:/}
  First comment | {::nomarkdown}<pre> Checks USR CLASS PROVIDER only<br/> DATE must not include time</pre>{:/}
- Input parameters | {::nomarkdown}USER<br>DATE{:/}
  Code | {::nomarkdown}  N TIUERR<br> S USER=$G(USER,DUZ)<br> S DATE=$G(DATE,DT),TIUY=0<br> I +$$ISA^USRLM(USER,"PROVIDER",.TIUERR,DATE) S TIUY=1 ;  DBIA/ICR 2324{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Encounter/rPCE.pas">Encounter/rPCE.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

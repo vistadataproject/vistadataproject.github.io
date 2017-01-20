@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMOTE^[ORWRPP](http://code.osehra.org/dox/Routine_ORWRPP_source.html)
  Method comment | Print data for remote sites
+ Input parameters | {::nomarkdown}ORIO, ORDFN, ORRPTID, ORHANDS{:/}
  First comment | {::nomarkdown}<pre>  RPC: ORWRP PRINT REMOTE REPORT</pre>{:/}
- Input parameters | {::nomarkdown}ORIO<br>ORDFN<br>ORRPTID<br>ORHANDS{:/}
  Code | {::nomarkdown}  N ZTDTH,ZTRTN,ZTSK,ZTDESC,ZTSAVE,I,ORHSTAG,ZTIO<br> S ORHSTAG=$P($G(ORRPTID),"~",2),ORRPTID=$P($G(ORRPTID),"~"),ORRPTID=$P($P(ORRPTID,";"),":")<br> S ZTIO=ORIO,ZTDTH=$H<br> S ZTDESC="Remote Report Print"<br> S ZTRTN="DEQUE^ORWRPP"<br> F I="ORDFN","ORRPTID","ORHANDS(","ORHSTAG" S ZTSAVE(I)=""<br> D ^%ZTLOAD<br> I $D(ZTSK) D<br> . S ORY="0^Report queued. (Task #"_ZTSK_")"<br> E  D<br> . S ORY="99^Task Rejected."{:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReports.pas">rReports.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | QOSCH^[ORWNSS](http://code.osehra.org/dox/Routine_ORWNSS_source.html)
  Method comment | Validate IM QO schedule
- First comment | {::nomarkdown}<pre>QOID: Inpt Pharmacy QO</pre>{:/}
  Input parameters | {::nomarkdown}QOID{:/}
+ First comment | {::nomarkdown}<pre>QOID: Inpt Pharmacy QO</pre>{:/}
  Code | {::nomarkdown}  S ORY=""<br> N QOSCH,SCHID,SCHVAL,RST<br> S SCHID=$O(^ORD(101.41,"B","OR GTX SCHEDULE",0))<br> S (QOSCH,SCHVAL)="",RST=1<br> I '$D(^ORD(101.41,+QOID,6,"D",SCHID)) S ORY="schedule is not defined." Q<br> S QOSCH=$O(^ORD(101.41,+QOID,6,"D",SCHID,0))<br> I 'QOSCH S ORY="schedule is not defined." Q<br> N IDX S IDX=0<br> F  S IDX=$O(^ORD(101.41,+QOID,6,QOSCH,IDX)) Q:'IDX!('RST)  D<br> . S SCHVAL=^ORD(101.41,+QOID,6,QOSCH,IDX)<br> . I $$UP^XLFSTR(SCHVAL)="OTHER" S ORY="OTHER" Q<br> . D VALSCH^ORWDPS33(.RST,SCHVAL,"I")<br> . I RST=0 S ORY="This quick order contains a non-standard administration schedule." Q{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

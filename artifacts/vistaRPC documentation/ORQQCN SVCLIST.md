@@ -34,8 +34,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SVCLIST^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Return a set of consult services in long list format
+ Input parameters | {::nomarkdown}FROM, DIR{:/}
  First comment | {::nomarkdown}<pre> .ORY=returned list, FROM=text to $O from, DIR=$O direction,</pre>{:/}
- Input parameters | {::nomarkdown}FROM<br>DIR{:/}
  Code | {::nomarkdown}  N I,IEN,CNT,Y,ORTMP,ORSVC,ORSTR<br> S I=0,CNT=44,ORSVC=""<br> D SVCTREE^ORQQCN2(.Y,1)<br> F I=1:1  S ORSVC=$P($G(Y(I)),U,2) Q:ORSVC=""  D<br> . S ORTMP(ORSVC)=Y(I)<br> F I=1:1  Q:I=CNT  S FROM=$O(ORTMP(FROM),DIR) Q:FROM=""  D<br> . S ORSTR=ORTMP(FROM)<br> . S ORY(I)=ORSTR{:/}
 
 
@@ -45,4 +45,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

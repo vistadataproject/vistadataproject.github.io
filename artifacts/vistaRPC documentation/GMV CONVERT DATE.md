@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETDT^[GMVGETQ](http://code.osehra.org/dox/Routine_GMVGETQ_source.html)
  Method comment | GMV CONVERT DATE [RPC entry point]
- First comment | {::nomarkdown}<pre>INPUT VARIABLE:<br/>GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER<br/>OUTPUT VARIABLE:<br/>RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME</pre>{:/}
  Input parameters | {::nomarkdown}GMRDATE{:/}
+ First comment | {::nomarkdown}<pre>INPUT VARIABLE:<br/>GMRDATE - DATE/TIME FROM EDIT.TEXT ENTERED BY USER<br/>OUTPUT VARIABLE:<br/>RESULT - CONTAINS INTERNAL AND EXTERNAL DATE/TIME</pre>{:/}
  Code | {::nomarkdown}  N GDATE D DT^DILF("ETS",GMRDATE,.GDATE)<br> I $G(GDATE)'>0 S RESULT="" Q<br> I $G(GDATE)>$$NOW^XLFDT S RESULT="" Q<br> S RESULT=$G(GDATE)_"^"_$G(GDATE(0)){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

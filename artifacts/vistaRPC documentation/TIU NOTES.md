@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | NOTES^[TIUSRVLO](http://code.osehra.org/dox/Routine_TIUSRVLO_source.html)
  Method comment | Get notes
- Input parameters | {::nomarkdown}DFN<br>EARLY<br>LATE<br>PERSON<br>SEQUENCE{:/}
+ Input parameters | {::nomarkdown}DFN, EARLY, LATE, PERSON, SEQUENCE{:/}
  Code | {::nomarkdown}  N TIUPREF,TIUOCC S TIUPREF=$$PERSPRF^TIULE(DUZ)<br> S TIUOCC=$P(TIUPREF,U,10),PERSON=$S(+$G(PERSON):+$G(PERSON),1:+$G(DUZ))<br> S SEQUENCE=$S($G(SEQUENCE)]"":$G(SEQUENCE),1:"D")<br> D CONTEXT(.TIUY,3,1,DFN,$G(EARLY),$G(LATE),PERSON,TIUOCC,SEQUENCE){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

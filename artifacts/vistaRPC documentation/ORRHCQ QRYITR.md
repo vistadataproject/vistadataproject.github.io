@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | QRYITR^[ORRHCQ](http://code.osehra.org/dox/Routine_ORRHCQ_source.html)
  Method comment | Do query for the current iterator
- First comment | {::nomarkdown}<pre> VAL=PtSearched^RecordsFound^Iterator</pre>{:/}
  Input parameters | {::nomarkdown}ORRITR{:/}
+ First comment | {::nomarkdown}<pre> VAL=PtSearched^RecordsFound^Iterator</pre>{:/}
  Code | {::nomarkdown}  S VAL=$$PTSCRN($P(ORRITR,";",2))<br> I VAL S $P(VAL,U,2)=$$QRYPT($P(ORRITR,";",2))<br> S $P(VAL,U,3)=$$NXTITER(ORRITR){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

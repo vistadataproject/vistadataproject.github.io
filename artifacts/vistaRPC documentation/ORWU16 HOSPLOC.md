@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | HOSPLOC^[ORWU16](http://code.osehra.org/dox/Routine_ORWU16_source.html)
  Method comment | Return a bolus from the HOSPITAL LOCATION file
+ Input parameters | {::nomarkdown}DIR, FROM{:/}
  First comment | {::nomarkdown}<pre> .Return Array, Direction, Starting Text</pre>{:/}
- Input parameters | {::nomarkdown}DIR<br>FROM{:/}
  Code | {::nomarkdown}  N I,IEN,CNT S CNT=44<br> I DIR=0 D  ; Forward direction<br> . F I=1:1:CNT S FROM=$O(^SC("B",FROM)) Q:FROM=""  D<br> . . S IEN=$O(^SC("B",FROM,0))<br> . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM<br> . I $G(Y(CNT))="" S Y(I)=""<br> I DIR=1 D  ; Reverse direction<br> . F I=1:1:CNT S FROM=$O(^SC("B",FROM),-1) Q:FROM=""  D<br> . . S IEN=$O(^SC("B",FROM,0))<br> . . I $$ACTLOC(IEN) S Y(I)=IEN_"^"_FROM{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

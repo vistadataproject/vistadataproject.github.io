@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GUI^[ORB3FUP1](http://code.osehra.org/dox/Routine_ORB3FUP1_source.html)
  Method comment | Notification follow-up for GUI called via API: ORB FOLLOW-UP
- First comment | {::nomarkdown}<pre> called by ORB FOLLOW-UP api:</pre>{:/}
  Input parameters | {::nomarkdown}ORXQAID{:/}
+ First comment | {::nomarkdown}<pre> called by ORB FOLLOW-UP api:</pre>{:/}
  Code | {::nomarkdown}  S ORENVIR="GUI"<br> D PROCESS{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

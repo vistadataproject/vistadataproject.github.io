@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CPACT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return True/False to display active orders for copy
- First comment | {::nomarkdown}<pre> EVT ptr to #100.5</pre>{:/}
  Input parameters | {::nomarkdown}EVT{:/}
+ First comment | {::nomarkdown}<pre> EVT ptr to #100.5</pre>{:/}
  Code | {::nomarkdown}  Q:'EVT<br> S ORY=0<br> Q:'$D(^ORD(100.5,EVT,0))<br> S ORY=$P(^ORD(100.5,EVT,0),U,11){:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

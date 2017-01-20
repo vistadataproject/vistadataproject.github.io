@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | GETSTAT^[TIUPRF2](http://code.osehra.org/dox/Routine_TIUPRF2_source.html)
  Method comment | RPC Gets the status of TIU Doc TIUIEN
- First comment | {::nomarkdown}<pre>Returns STATIEN^STATNAME</pre>{:/}
  Input parameters | {::nomarkdown}TIUIEN{:/}
+ First comment | {::nomarkdown}<pre>Returns STATIEN^STATNAME</pre>{:/}
  Code | {::nomarkdown}  N TIUTTL<br> S TIUTTL=+$G(^TIU(8925,TIUIEN,0))<br> I 'TIUTTL S TIUY="0^Document does not exist" Q<br> S TIUY=$P(^TIU(8925,TIUIEN,0),U,5)<br> S TIUY=TIUY_U_$P($G(^TIU(8925.6,TIUY,0)),U,1){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

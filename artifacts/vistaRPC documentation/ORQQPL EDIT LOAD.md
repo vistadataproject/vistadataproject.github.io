@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | EDLOAD^[ORQQPL1](http://code.osehra.org/dox/Routine_ORQQPL1_source.html)
  Method comment | LOAD  EDIT ARRAYS
- First comment | {::nomarkdown}<pre> DA=problem IFN</pre>{:/}
  Input parameters | {::nomarkdown}DA{:/}
+ First comment | {::nomarkdown}<pre> DA=problem IFN</pre>{:/}
  Code | {::nomarkdown}  N I,GMPFLD,GMPORIG,GMPL<br> D GETFLDS^GMPLEDT3(DA)<br> S I=0<br> D LOADFLDS(.RETURN,"GMPFLD","NEW",.I)<br> D LOADFLDS(.RETURN,"GMPORIG","ORG",.I)<br> K GMPFLD,GMPORIG,GMPL  ; should not have to do this{:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

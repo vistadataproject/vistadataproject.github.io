@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | ISCP^[TIUCP](http://code.osehra.org/dox/Routine_TIUCP_source.html)
  Method comment | RPC that evaluates whether or not a Title is under
- First comment | {::nomarkdown}<pre>the CLINICAL PROCEDURES Class<br/> Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>                    (May be Document Class instead of Title.)<br/> Output -- TIUY     1=True and 0=False</pre>{:/}
  Input parameters | {::nomarkdown}TITLE{:/}
+ First comment | {::nomarkdown}<pre>the CLINICAL PROCEDURES Class<br/> Input  -- TITLE    TIU Document Definition file (#8925.1) IEN<br/>                    (May be Document Class instead of Title.)<br/> Output -- TIUY     1=True and 0=False</pre>{:/}
  Code | {::nomarkdown}  N TIUCLASS<br> I +$G(TITLE)'>0 S TIUY=0 G ISCPQ<br> S TIUCLASS=+$$CLASS<br> I +TIUCLASS'>0 S TIUY=0 G ISCPQ<br> S TIUY=+$$ISA^TIULX(TITLE,TIUCLASS){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rTIU.pas">rTIU.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

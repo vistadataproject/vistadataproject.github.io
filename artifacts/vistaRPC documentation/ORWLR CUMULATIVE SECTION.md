@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPT^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return cum report text
+ Input parameters | {::nomarkdown}DFN, RPTID, DTRANGE, SECTION{:/}
  First comment | {::nomarkdown}<pre>  RPC: ORWLR REPORT TEXT</pre>{:/}
- Input parameters | {::nomarkdown}DFN<br>RPTID<br>DTRANGE<br>SECTION{:/}
  Code | {::nomarkdown}  IF $G(SECTION),$D(^TMP("ORLABDATA",$J,SECTION)) D  G RPTQ<br> . S OROOT=$NA(^TMP("ORLABDATA",$J,SECTION))<br> N LINES,ORSUB<br> K ^TMP("ORLABDATA",$J)<br> D CUMB(DFN,RPTID,DTRANGE)<br> S LINES=$S($D(^TMP("LRH",$J,RPTID)):+^(RPTID),1:0)<br> IF LINES<241 D<br> . S OROOT=$NA(^TMP("LRC",$J))<br> . S @OROOT@(.001)="1^1"<br> ELSE  D<br> . S ORSUB="ORLABDATA",OROOT=$NA(^TMP(ORSUB,$J,1))<br> . D BUILD{:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

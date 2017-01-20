@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | MHDLL^[ORQQPXRM](http://code.osehra.org/dox/Routine_ORQQPXRM_source.html)
- Input parameters | {::nomarkdown}DFN<br>INPUTS{:/}
+ Input parameters | {::nomarkdown}DFN, INPUTS{:/}
  Code | {::nomarkdown}  N CNT,CNT1,ORRESULT,ORSCORES,TEXT<br> F TEXT="RESULTS","SCORES" D<br> .S CNT=0,CNT1=0<br> .F  S CNT=$O(INPUTS(TEXT,CNT)) Q:CNT=""  D<br> ..S CNT1=CNT1+1<br> ..I TEXT="RESULTS" S ORRESULT(CNT1)=$G(INPUTS(TEXT,CNT))<br> ..I TEXT="SCORES" S ORSCORES(CNT1)=$G(INPUTS(TEXT,CNT))<br> D MHDLL^PXRMDRSG(.ORY,.ORRESULT,.ORSCORES,DFN){:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas">rReminders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

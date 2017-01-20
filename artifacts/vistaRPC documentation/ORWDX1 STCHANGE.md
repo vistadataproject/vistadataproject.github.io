@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  Property | Value 
  --- | --- 
  Method | STCHANGE^[ORWDX1](http://code.osehra.org/dox/Routine_ORWDX1_source.html)
- Input parameters | {::nomarkdown}DFN<br>ORYARR{:/}
+ Input parameters | {::nomarkdown}DFN, ORYARR{:/}
  Code | {::nomarkdown}  N CNT,DONE,NODE,PHARMID,STR,STATUS<br> S ORY=0,DONE=0<br> I '$$PATCH^XPDUTL("PSS*1.0*93") Q<br> S CNT=0 F  S CNT=$O(ORYARR(CNT)) Q:CNT'>0!(DONE>0)  D<br> . S NODE=$G(ORYARR(CNT))<br> . S PHARMID=$P(NODE,U),STATUS=$P(NODE,U,2)<br> . I $$UP^XLFSTR(STATUS)'=$$STATUS^PSSORUTE(DFN,PHARMID) S ORY=1,DONE=1{:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rMeds.pas">rMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

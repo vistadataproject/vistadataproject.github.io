@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | STOP^[ORWCV](http://code.osehra.org/dox/Routine_ORWCV_source.html)
  Method comment | stop cover sheet data retrieval
- Input parameters | {::nomarkdown}DFN<br>IP<br>HWND{:/}
+ Input parameters | {::nomarkdown}DFN, IP, HWND{:/}
  Code | {::nomarkdown}  S NODE="ORWCV "_IP_"-"_HWND_"-"_DFN,ILST=0,DONE=0<br> S ^XTMP(NODE,"STOP")=1,OK=1<br> L +^XTMP(NODE):$S($G(DILOCKTM)>0:DILOCKTM,1:5)<br> I $G(^XTMP(NODE,"DONE")) K ^XTMP(NODE)<br> L -^XTMP(NODE){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas">rCover.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

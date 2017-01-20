@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DOSEALT^[ORWDPS1](http://code.osehra.org/dox/Routine_ORWDPS1_source.html)
  Method comment | return a list of formulary alternatives for dose
- Input parameters | {::nomarkdown}DDRUG<br>CUROI<br>PSTYPE{:/}
+ Input parameters | {::nomarkdown}DDRUG, CUROI, PSTYPE{:/}
  Code | {::nomarkdown}  N I,OI,ORWLST,ILST S ILST=0<br> D ENRFA^PSJORUTL(DDRUG,PSTYPE,.ORWLST)<br> S I=0 F  S I=$O(ORWLST(I)) Q:'I  D<br> . S OI=+$O(^ORD(101.43,"ID",+$P(ORWLST(I),U,4)_";99PSP",0))<br> . I OI,OI'=CUROI S ILST=ILST+1,LST(ILST)=OI_U_$P(^ORD(101.43,OI,0),U){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

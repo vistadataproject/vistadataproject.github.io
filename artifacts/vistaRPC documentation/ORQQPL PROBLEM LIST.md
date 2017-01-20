@@ -33,7 +33,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | PROBL^[ORQQPL3](http://code.osehra.org/dox/Routine_ORQQPL3_source.html)
  Method comment | GET LIST OF PATIENT PROBLEMS
- Input parameters | {::nomarkdown}DFN<br>CONTEXT<br>ORIDT{:/}
+ Input parameters | {::nomarkdown}DFN, CONTEXT, ORIDT{:/}
  Code | {::nomarkdown}  N DIWL,DIWR,DIWF<br> N ST,ORI,ORX<br> S ORIDT=$G(ORIDT,DT)<br> S (LCNT,NUM)=0<br> S DIWL=1,DIWR=48,DIWF="C48"<br> S CONTEXT=";;"_$G(CONTEXT)<br> I CONTEXT=";;" S CONTEXT=";;A"<br> S ST=$P(CONTEXT,";",3)<br> I ST="R" D DELLIST(.ROOT,+DFN,ORIDT) ; show deleted only<br> I ST'="R"  D LIST(.ROOT,+DFN,ST,ORIDT) ; show others - don't trust ELSE here<br> I ROOT(0)<1 D<br> . S LCNT=1<br> . S ROOT(1)="     "_$$PAD^ORCHTAB("No data available.",49)_"|"{:/}
 
 
@@ -43,4 +43,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rProbs.pas">rProbs.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

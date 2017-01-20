@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CHGEVT^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Change order's event
- Input parameters | {::nomarkdown}NEWEVT<br>ORIDS{:/}
+ Input parameters | {::nomarkdown}NEWEVT, ORIDS{:/}
  Code | {::nomarkdown}  N ORI<br> S ORI=0<br> F  S ORI=$O(ORIDS(ORI)) Q:'+ORI  D<br> . D CHGEVT^OREVNTX(+$G(ORIDS(ORI)),NEWEVT){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

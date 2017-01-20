@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | REMDLGOK^[TIUSRVT2](http://code.osehra.org/dox/Routine_TIUSRVT2_source.html)
  Method comment | Returns TRUE if the passed in Reminder Dialog IEN is
- First comment | {::nomarkdown}<pre>                Allowed to be used as a TIU Template</pre>{:/}
  Input parameters | {::nomarkdown}TIUIEN{:/}
+ First comment | {::nomarkdown}<pre>                Allowed to be used as a TIU Template</pre>{:/}
  Code | {::nomarkdown}  N TIULST,SRV<br> S TIUY=-1<br> I '$D(^PXRMD(801.41,+$G(TIUIEN))) Q<br> I +$P(^PXRMD(801.41,+$G(TIUIEN),0),U,3)>0 Q  ;ICR 3410<br> S TIUY=1<br> D RDACCUM(.TIULST,"USR","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S SRV=$$GETSRV(DUZ)<br> D RDACCUM(.TIULST,"SRV.`"_+$G(SRV),"Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"DIV","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> D RDACCUM(.TIULST,"SYS","Q")<br> I $$RDINLST(.TIULST,TIUIEN) Q<br> S TIUY=0{:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas">Templates/rTemplates.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

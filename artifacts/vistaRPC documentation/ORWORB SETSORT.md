@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SETSORT^[ORWORB](http://code.osehra.org/dox/Routine_ORWORB_source.html)
  Method comment | set notification sort method^direction for user
- Input parameters | {::nomarkdown}SORT<br>DIR{:/}
+ Input parameters | {::nomarkdown}SORT, DIR{:/}
  Code | {::nomarkdown}  D EN^XPAR(DUZ_";VA(200,","ORB SORT METHOD",1,SORT,.ORERR)<br> I $L($G(DIR)) D EN^XPAR(DUZ_";VA(200,","ORB SORT DIRECTION",1,DIR,.ORERR)<br>{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

@@ -36,8 +36,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | CMT^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Add comment to existing consult without changing status
+ Input parameters | {::nomarkdown}ORIEN, ORCOM, ORALRT, ORALTO, ORDATE{:/}
  First comment | {::nomarkdown}<pre>ORIEN - IEN of consult from File 123<br/>ORERR - return array for results/errors<br/>ORCOM is the comments array to be added<br/>     passed in as ORCOM(1)="Xxxx Xxxxx...",ORCOM(2)="Xxxx Xx Xxx...", ORCOM(3)="Xxxxx Xxx Xx...", etc.<br/>ORALRT - should alerts be sent to anyone?<br/>ORALTO - array of alert recipient IENs</pre>{:/}
- Input parameters | {::nomarkdown}ORIEN<br>ORCOM<br>ORALRT<br>ORALTO<br>ORDATE{:/}
  Code | {::nomarkdown}  N ORAD,ORDUZ,ORNP,X<br> S ORERR=0,ORAD=$S($D(ORDATE):ORDATE,1:$$NOW^XLFDT),ORNP=""<br> I '$D(ORCOM) S ORERR="1^Comments required - no action taken" Q<br> I '$D(^GMR(123,ORIEN)) S ORERR="1^No such consult" Q<br> I $G(ORALRT)=1 D<br> .F I=1:1  S X=$P(ORALTO,";",I) Q:X=""  S ORDUZ(X)=""<br> D CMT^GMRCGUIB(ORIEN,.ORCOM,.ORDUZ,ORAD,DUZ){:/}
 
 
@@ -47,4 +47,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

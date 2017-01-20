@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | SESSION^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return list of Order Checks on Release Order
- Input parameters | {::nomarkdown}ORVP<br>ORLST{:/}
+ Input parameters | {::nomarkdown}ORVP, ORLST{:/}
  Code | {::nomarkdown}  K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD")<br> N ORES,ORCHECK<br> S ORVP=+ORVP_";DPT("<br> S I=0 F  S I=$O(ORLST(I)) Q:'I  D<br> . I +$P(ORLST(I),";",2)'=1 Q  ; order not new<br> . I $P(ORLST(I),U,3)="0" Q    ; order not being released<br> . S ORES($P(ORLST(I),U))=""<br> D SESSION^ORCHECK<br> D OPOS(+ORVP)<br> D CHK2LST<br> D CHECKIT(.LST)<br> K ^TMP($J,"OROCOUTO;"),^TMP($J,"OROCOUTI;"),^TMP($J,"DD"){:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

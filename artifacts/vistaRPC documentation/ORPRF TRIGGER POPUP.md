@@ -33,8 +33,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | TRIGRPOP^[ORPRF](http://code.osehra.org/dox/Routine_ORPRF_source.html)
  Method comment | Should the flag display pop up upon patient selection
- First comment | {::nomarkdown}<pre> for patient PTDFN?<br/>As of 1/10/06, returns POPUP as:<br/>   1 if pt has any active flags, either Cat I or Cat II<br/>   0 otherwise</pre>{:/}
  Input parameters | {::nomarkdown}PTDFN{:/}
+ First comment | {::nomarkdown}<pre> for patient PTDFN?<br/>As of 1/10/06, returns POPUP as:<br/>   1 if pt has any active flags, either Cat I or Cat II<br/>   0 otherwise</pre>{:/}
  Code | {::nomarkdown}  N PRFARR<br> S POPUP=$S($$GETACT^DGPFAPI(PTDFN,"PRFARR"):1,1:0){:/}
 
 
@@ -44,4 +44,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/uOrPtf.pas">uOrPtf.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

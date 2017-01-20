@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | LNGSURG^[TIUSRVD](http://code.osehra.org/dox/Routine_TIUSRVD_source.html)
  Method comment | long list SURGICAL REPORT titles
+ Input parameters | {::nomarkdown}FROM, DIR, CLNAME{:/}
  First comment | {::nomarkdown}<pre> CLNAME = "SURGICAL REPORTS" or "PROCEDURE REPORTS (NON-O.R.)"<br/>           depending on context</pre>{:/}
- Input parameters | {::nomarkdown}FROM<br>DIR<br>CLNAME{:/}
  Code | {::nomarkdown}  N CLASS S CLNAME=$S($G(CLNAME)]"":CLNAME,1:"OPERATION REPORTS")<br> S CLASS=$$CLASS^TIUSROI(CLNAME) Q:+CLASS'>0<br> D LONGLIST(.Y,CLASS,$G(FROM),$G(DIR,1)){:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rSurgery.pas">rSurgery.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

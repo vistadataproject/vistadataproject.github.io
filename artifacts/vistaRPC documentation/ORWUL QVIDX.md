@@ -27,7 +27,7 @@ title: VISTA RPC documentation
  --- | --- 
  Method | QVIDX^[ORWUL](http://code.osehra.org/dox/Routine_ORWUL_source.html)
  Method comment | return index of item beginning with FROM
- Input parameters | {::nomarkdown}IEN<br>FROM{:/}
+ Input parameters | {::nomarkdown}IEN, FROM{:/}
  Code | {::nomarkdown}  N I,X<br> S VAL=0<br> S X=$O(^ORD(101.44,IEN,10,"C",FROM))<br> I '$L(X) Q<br> S I=$O(^ORD(101.44,IEN,10,"C",X,0))<br> Q:'I<br> S:'$$QODIS(IEN,I) VAL=+I_U_X{:/}
 
 
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas">Orders/rODMeds.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}

@@ -27,8 +27,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | RPLCLEAN^[ORQPTQ11](http://code.osehra.org/dox/Routine_ORQPTQ11_source.html)
  Method comment | Kill global data using passed global root value.
- First comment | {::nomarkdown}<pre><br/> Variables used:<br/><br/>    ORJ    = Job number to use in ^TMP global root.<br/>    ORROOT = Root of ^TMP global to kill.<br/>    Y      = Returned RPC value.<br/></pre>{:/}
  Input parameters | {::nomarkdown}ORJ{:/}
+ First comment | {::nomarkdown}<pre><br/> Variables used:<br/><br/>    ORJ    = Job number to use in ^TMP global root.<br/>    ORROOT = Root of ^TMP global to kill.<br/>    Y      = Returned RPC value.<br/></pre>{:/}
  Code | {::nomarkdown}  N ORROOT<br> S Y=1                                     ; Initialize.<br> S ORROOT="^TMP("_"""ORRPL"""_","          ; Initial setting.<br> S ORROOT=ORROOT_ORJ_","_"""B"""_")"       ; Add rest.<br> K @ORROOT                                 ; Kill global data.<br>{:/}
 
 
@@ -38,4 +38,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas">rCore.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:09 am</p>{:/}

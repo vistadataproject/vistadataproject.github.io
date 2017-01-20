@@ -35,8 +35,8 @@ title: VISTA RPC documentation
  --- | --- 
  Method | DEFRFREQ^[ORQQCN2](http://code.osehra.org/dox/Routine_ORQQCN2_source.html)
  Method comment | Return default reason for request for service
+ Input parameters | {::nomarkdown}ORSVC, ORDFN, RESOLVE{:/}
  First comment | {::nomarkdown}<pre> ORSVC=pointer to file 123.5<br/> ORDFN=patient, if RESOLVE=1<br/> RESOLVE=1 to resolve boilerplate, 0 to not resolve</pre>{:/}
- Input parameters | {::nomarkdown}ORSVC<br>ORDFN<br>RESOLVE{:/}
  Code | {::nomarkdown}  Q:+$G(ORSVC)=0<br> I +RESOLVE,(+$G(ORDFN)=0) Q<br> S ORY=$NA(^TMP("ORREQ",$J))<br> S:$G(RESOLVE)="" RESOLVE=0<br> D GETDEF^GMRCDRFR(.ORY,ORSVC,ORDFN,RESOLVE)<br> K @ORY@(0){:/}
 
 
@@ -46,4 +46,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Consults/rConsults.pas">Consults/rConsults.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:31 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 7:40:08 am</p>{:/}
