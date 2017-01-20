@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}UPDATE{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Configuration parameters to update     UPDATE(\STATE\) - Flag 0/1                      On or Off    UPDATE(\PURGE\) - Purge Date/Time                      Fileman date/time                      Default 30 days from Today    UPDATE(\LEVEL\) - Logging level                      Error, Trace, Debug, Name                      Default - Trace    UPDATE(\NAMES\) - Caret delimited list of log entry namesUPDATE(\AUTOPURGE\) - Flag 0/1                      Default - 0 Off     UPDATE(\DAYS\) - Number of Days to keep{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}

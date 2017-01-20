@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SEQ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This optional single character flag indicates the date order for the list of documents to return.  D - return list in descending order, i.e., newest note first  A - return list in ascending order, i.e., oldest note first{:/} | 
 | {::nomarkdown}REC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is optional.  However, if the DSICVP parameter is not passed, then this parameter must be passed.  This parameter allows the GUI to get a list of documents without having to pass the explicit Fileman Variable Pointer syntax.  The format of REC is code^ien. The following are the only allowed codes:  S - get documents associated with surgery case # from file 130 Example:  S^234 - get all TIU notes associated with surgical case# 234{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}

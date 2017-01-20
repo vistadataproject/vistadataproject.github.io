@@ -42,7 +42,6 @@ title: VISTA RPC documentation
 
  Name | Property 
  --- | --- 
- Pascal Code |  [NOT OSEHRA CPRS]()
+ Pascal Code | {::nomarkdown} <a href="">NOT OSEHRA CPRS</a><br/>{:/}
 
-
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}

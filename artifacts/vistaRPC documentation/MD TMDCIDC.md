@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}This RPC will do the following:  Input Parameter: RESULTS - (Both Input/Output) Passed in as the array to                              return the results.                   OPTION  - (Input) PROC - obtain a list of Procedures                                            defined for a clinic.                                     DIAG - obtain a list of diagnosis                                            defined for a clinic.                                     SCDISP - Obtain the patient's service                                              connection and rated disability.                   DFN     - (Input) Patient internal entry number                   MDSTUD   - (Input) CP Study internal entry number{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}

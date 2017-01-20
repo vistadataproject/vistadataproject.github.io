@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Generic proceedure to add or edit a MH file entry  Input: YS(\FILEN\)=File Number          (i.e. the file# for administrations would be 601.84)        YS(\IEN\)= : the internal number of the record you want to edit.Leave blank if creating a new record. If creating a new record you mustsend .01^NEW for those MH files using the New input transform.        YS(1)=FIELD #^Value^[3rd piece is 1 if you need to bypass             validation (use only if approved by developer)        :        :        YS(x)=YS(1)=FIELD #^Value^[3rd piece] Output: YSDATA(1)=[DATA] or [ERROR]{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:08:32 am</p>{:/}
