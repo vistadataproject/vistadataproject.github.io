@@ -119,4 +119,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | administrative_update_team | .01 | Administrative Update Team | {::nomarkdown}This field allows team lists from the OE/RR LIST (#100.21) file to be<br/>entered. All provider/users of the teams will have administrative update<br/>authority for requests directed to this service.{:/} | POINTER |  | REQUIRED, INDEXED | [Oe_rr_List-100_21](Oe_rr_List-100_21.md) | 
-| notification_recipients | .02 | Notification Recipients | {::nomarkdown}This field, if set to YES will include the users on the specified team in<br/>the list of notification recipients for this service.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| notification_recipients | .02 | Notification Recipients | {::nomarkdown}This field, if set to YES will include the users on the specified team in<br/>the list of notification recipients for this service.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

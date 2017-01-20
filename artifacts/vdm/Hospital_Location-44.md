@@ -337,4 +337,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | team_positions | .01 | Team Positions | {::nomarkdown}This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File.{:/} | POINTER |  | REQUIRED, INDEXED | Team_Position-404_57 | 
-| team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}17, 4:59:48 am</p>{:/}
+| team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}17, 5:09:58 am</p>{:/}

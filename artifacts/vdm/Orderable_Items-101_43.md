@@ -85,4 +85,6 @@ title: VDM documentation
 | name | .01 | Name | {::nomarkdown}This is the name of a component of this orderable item.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | id-2 | 2 | Id | {::nomarkdown}This is an identifier for this component, created from the 6-piece coded<br/>format passed in the Orderable Items update message from each package.<br/>It should be stored in the form of \package code;99XXX\ where XXX <br/>indicates the package table originating this item (i.e. RAP, LRT, etc.).{:/} | STRING |  | INDEXED |  | 
 | code | 3 | Code | {::nomarkdown}This is the code assigned to this item by the authoritative package from a<br/>national standard coding system such as CPT or SNOMED.{:/} | STRING |  |  |  | 
-| coding_system | 4 | Coding System | {::nomarkdown}This is the system used to generate the code assigned in field 3.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>NDF</dt><dd>NATIONAL DRUG FILE</dd><dt>CPT4</dt><dd>CPT4</dd><dt>NLT</dt><dd>NATIONAL LAB TEST FILE</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| coding_system | 4 | Coding System | {::nomarkdown}This is the system used to generate the code assigned in field 3.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>NDF</dt><dd>NATIONAL DRUG FILE</dd><dt>CPT4</dt><dd>CPT4</dd><dt>NLT</dt><dd>NATIONAL LAB TEST FILE</dd></dl>{:/} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

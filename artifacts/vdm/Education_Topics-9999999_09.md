@@ -36,4 +36,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | subtopic | .01 | Subtopic |  | POINTER |  | REQUIRED, INDEXED | [Education_Topics-9999999_09](Education_Topics-9999999_09.md) | 
-| sequence | 3 | Sequence | {::nomarkdown}This field defines the sequence the item should be presented in, as it<br/>relates to other items making up the education topic.{:/} | NUMERIC |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| sequence | 3 | Sequence | {::nomarkdown}This field defines the sequence the item should be presented in, as it<br/>relates to other items making up the education topic.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

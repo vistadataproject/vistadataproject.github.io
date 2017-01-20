@@ -35,4 +35,6 @@ title: VDM documentation
 | date_type | .16 | Date Type | {::nomarkdown}Indicates the type of control to use to represent a date value.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>R</dt><dd>DATE & REQUIRED TIME</dd><dt>Y</dt><dd>COMBO YEAR ONLY</dd><dt>T</dt><dd>DATE & TIME</dd><dt>C</dt><dd>COMBO STYLE</dd><dt>D</dt><dd>DATE</dd><dt>M</dt><dd>COMBO YEAR & MONTH</dd></dl>{:/} | 
 | description | 2 | Description | {::nomarkdown}A word processing field containing a description of the field, or other <br/>notes and history information.{:/} | STRING |  |  |  | 
 | url | 3 | Url | {::nomarkdown}Web address of hyperlink fields.{:/} | STRING |  |  |  | 
-| items | 10 | Items | {::nomarkdown}Word processing field representing either the list of items that can<br/>be selected, or the default word processing text.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| items | 10 | Items | {::nomarkdown}Word processing field representing either the list of items that can<br/>be selected, or the default word processing text.{:/} | STRING |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

@@ -48,4 +48,6 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | subcategory | .01 | Sub-category | {::nomarkdown}This is an existing category that is to be included as part of a new<br/>category.{:/} | POINTER |  | REQUIRED, INDEXED | [Reminder_Category-811_7](Reminder_Category-811_7.md) | 
-| display_order | .02 | Display Order | {::nomarkdown}This is the display order for the sub-categories. Sub-categories are<br/>displayed after individual reminders.{:/} | NUMERIC |  | REQUIRED |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| display_order | .02 | Display Order | {::nomarkdown}This is the display order for the sub-categories. Sub-categories are<br/>displayed after individual reminders.{:/} | NUMERIC |  | REQUIRED |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

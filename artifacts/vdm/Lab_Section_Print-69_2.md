@@ -268,4 +268,6 @@ title: VDM documentation
 | file | .06 | File | {::nomarkdown} File where the data is stored.{:/} | STRING |  |  |  | 
 | file_entry | .07 | File Entry | {::nomarkdown} The numeric entry of the file.{:/} | STRING |  |  |  | 
 | internal_file_number | .08 | Internal File # | {::nomarkdown} The internal number where the data is stored.{:/} | STRING |  |  |  | 
-| subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | {id:Subfile_Field_Name-69_37,fmId:69.37,label:Subfile Field Name,properties:[{id:subfile_field_name,fmId:.01,label:Subfile Field Name,datatype:STRING,indexed:true,required:true},{id:subfile_field_entry,fmId:.02,label:Subfile Field Entry,datatype:STRING},{id:subfile_field_number,fmId:.03,label:Subfile Field #,datatype:STRING}]} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | {id:Subfile_Field_Name-69_37,fmId:69.37,label:Subfile Field Name,properties:[{id:subfile_field_name,fmId:.01,label:Subfile Field Name,datatype:STRING,indexed:true,required:true},{id:subfile_field_entry,fmId:.02,label:Subfile Field Entry,datatype:STRING},{id:subfile_field_number,fmId:.03,label:Subfile Field #,datatype:STRING}]} | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

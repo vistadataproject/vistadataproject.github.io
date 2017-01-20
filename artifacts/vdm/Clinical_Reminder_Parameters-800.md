@@ -49,4 +49,6 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | url | .01 | Url | {::nomarkdown}This is the URL for the web site.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | web_site_title | .02 | Web Site Title | {::nomarkdown}This is the WEB SITE TITLE. This field is optional. If entered, this will <br/>display in the 'Reference Information' window of CPRS GUI instead of the <br/>full URL.{:/} | STRING |  |  |  | 
-| web_site_description | 1 | Web Site Description | {::nomarkdown}This is a description of the web site. It can be used to explain why<br/>the particular site is included. It is for reference information only<br/>and not displayed to the user.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| web_site_description | 1 | Web Site Description | {::nomarkdown}This is a description of the web site. It can be used to explain why<br/>the particular site is included. It is for reference information only<br/>and not displayed to the user.{:/} | STRING |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}

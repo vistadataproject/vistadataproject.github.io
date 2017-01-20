@@ -97,4 +97,6 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | item | .01 | Item | {::nomarkdown}This is used in building a treeview of reports for CPRS GUI.{:/} | POINTER |  | REQUIRED, INDEXED | [Oe_rr_Report-101_24](Oe_rr_Report-101_24.md) | 
 | header_text | .02 | Header Text | {::nomarkdown}This is the header to be used.{:/} | STRING |  |  |  | 
-| sequence | .03 | Sequence | {::nomarkdown}This is the sequence number for this report.{:/} | NUMERIC |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}
+| sequence | .03 | Sequence | {::nomarkdown}This is the sequence number for this report.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 5:09:58 am</p>{:/}
