@@ -18,4 +18,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date | .01 | Date | {::nomarkdown}The date for the observance of the holiday.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| name | 2 | Name | {::nomarkdown}Name of the holiday.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| name | 2 | Name | {::nomarkdown}Name of the holiday.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

@@ -76,4 +76,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | edit_history | .01 | Edit History | {::nomarkdown}This field will track when an event was added.  It also tracks when<br/>the edit option was used on this event.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | who_entered_edited | 1 | Who Entered/edited | {::nomarkdown}This field identifies the person who entered or edited the event{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
-| action | 2 | Action | {::nomarkdown}This field describes whether the event was newly entered or if it<br/>was edited.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>E</dt><dd>EDIT</dd><dt>N</dt><dd>NEW</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| action | 2 | Action | {::nomarkdown}This field describes whether the event was newly entered or if it<br/>was edited.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>E</dt><dd>EDIT</dd><dt>N</dt><dd>NEW</dd></dl>{:/} | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

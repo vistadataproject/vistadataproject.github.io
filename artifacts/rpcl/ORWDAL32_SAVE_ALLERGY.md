@@ -49,4 +49,4 @@ title: RPCL documentation
 | GMRAERRCMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRAERRCMTS\: [\a comment about the error\, \here is another line\] | 
 | GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 19th 2017, 9:31:07 am</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:45 am</p>{:/}

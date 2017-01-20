@@ -18,4 +18,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | tab_name | .01 | Tab Name | {::nomarkdown}This field stores CPRS GUI Cover Sheet tab acronyms.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| tab_description | 1 | Tab Description | {::nomarkdown}This field stores descriptions of CPRS GUI Cover Sheet tab acronyms.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| tab_description | 1 | Tab Description | {::nomarkdown}This field stores descriptions of CPRS GUI Cover Sheet tab acronyms.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

@@ -186,4 +186,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | site_notes_date | .01 | Site Notes Date | {::nomarkdown}Date of the note.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
-| text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

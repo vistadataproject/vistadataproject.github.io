@@ -19,4 +19,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | agreement_name | .01 | Agreement Name |  | STRING |  | REQUIRED, INDEXED |  | 
 | type_of_agreement | 2 | Type Of Agreement |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>S</dt><dd>SHARING</dd><dt>C</dt><dd>CONTRACT</dd></dl>{:/} | 
-| inactivation_date | 3 | Inactivation Date |  | DATE-TIME |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| inactivation_date | 3 | Inactivation Date |  | DATE-TIME |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

@@ -107,4 +107,6 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Date/Time Comment Entered | DATE-TIME |  | $NOW |  |  | 
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
-| comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:55 am</p>{:/}
+| comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:50 am</p>{:/}

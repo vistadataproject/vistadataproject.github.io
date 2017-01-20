@@ -23,4 +23,4 @@ title: VDM documentation
 | case_number | .04 | Case Number | {::nomarkdown}This is the case number of the exam for our message exception.{:/} | NUMERIC |  |  |  | 
 | hl7_message | .05 | Hl7 Message | {::nomarkdown}This is the HL7 Message that was rejected{:/} | POINTER |  | REQUIRED | Hl7_Message_Administration-773 | 
 | user | .06 | User | {::nomarkdown}This is the name of the radiology user linked to the message exception{:/} | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
-| error | 1 | Error | {::nomarkdown}This is the reason that this message was rejected.{:/} | STRING |  | REQUIRED |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| error | 1 | Error | {::nomarkdown}This is the reason that this message was rejected.{:/} | STRING |  | REQUIRED |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

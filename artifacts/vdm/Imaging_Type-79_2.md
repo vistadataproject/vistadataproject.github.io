@@ -63,4 +63,4 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | calendar_year | .01 | Calendar Year | {::nomarkdown}This field identifies the calendar year to associate a specific 'Society<br/>of Chairmen in Academic Radiology Departments' (SCARD) scaling factor to <br/>imaging type specific procedures with an associated wRVU value.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
-| scaling_factor | 2 | Scaling Factor | {::nomarkdown}This field identifies the appropriate scaling factor applied to the wRVU<br/>value for an imaging type specific rad/nuc med procedure.{:/} | NUMERIC |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| scaling_factor | 2 | Scaling Factor | {::nomarkdown}This field identifies the appropriate scaling factor applied to the wRVU<br/>value for an imaging type specific rad/nuc med procedure.{:/} | NUMERIC |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

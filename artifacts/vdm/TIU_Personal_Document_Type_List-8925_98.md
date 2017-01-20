@@ -36,4 +36,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | title | .01 | Title | {::nomarkdown}This is the document to be included in your pick list of documents for<br/>the current document class.{:/} | POINTER |  | REQUIRED, INDEXED | [TIU_Document_Definition-8925_1](TIU_Document_Definition-8925_1.md) | 
 | sequence | .02 | Sequence | {::nomarkdown}This is the sequence in which you wish the document to appear in your<br/>list.{:/} | NUMERIC |  |  |  | 
-| display_name | .03 | Display Name | {::nomarkdown}This is the name of the document to be displayed in menus.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| display_name | .03 | Display Name | {::nomarkdown}This is the name of the document to be displayed in menus.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

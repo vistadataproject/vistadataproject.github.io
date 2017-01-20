@@ -200,4 +200,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | edit_date | .01 | Edit Date | {::nomarkdown}This is the date and time when the editing was done. This field is set<br/>automatically and should not be changed by the user.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | edit_by | 1 | Edit By | {::nomarkdown}This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
-| edit_comments | 2 | Edit Comments | {::nomarkdown}This word-processing field can be used to record the changes made<br/>during the editing session.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 7:54:22 am</p>{:/}
+| edit_comments | 2 | Edit Comments | {::nomarkdown}This word-processing field can be used to record the changes made<br/>during the editing session.{:/} | STRING |  |  |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:48 am</p>{:/}

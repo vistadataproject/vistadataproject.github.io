@@ -71,4 +71,6 @@ title: MVDM documentation
 | --- | --- | --- | --- | --- | --- | --- | 
 | dateTimeEntered | Date/Time Entered | DATE-TIME | deletion_date |  |  |  | 
 | enteredBy | Entered By | POINTER | deleted_by |  |  |  | 
-| reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | {::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 15th 2017, 12:59:55 am</p>{:/}
+| reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:50 am</p>{:/}
