@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal ID of employee entering Progress Note{:/} | 
 | {::nomarkdown}SPNSIG{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Electronic Signature Code of employee{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

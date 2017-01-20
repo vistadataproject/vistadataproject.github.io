@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | CANEDIT^[TIUSRVF1](http://code.osehra.org/dox/Routine_TIUSRVF1_source.html)
  Method comment | Returns TRUE if the current user can edit dialog fields
@@ -32,7 +32,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Templates/rTemplates.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Templates/rTemplates.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | COVER^[ORWPS](http://code.osehra.org/dox/Routine_ORWPS_source.html)
  Method comment | retrieve meds for cover sheet
@@ -33,7 +33,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

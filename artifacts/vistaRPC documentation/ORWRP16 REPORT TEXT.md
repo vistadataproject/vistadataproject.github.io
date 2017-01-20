@@ -33,7 +33,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | RPT^[ORWRP16](http://code.osehra.org/dox/Routine_ORWRP16_source.html)
  Method comment | return report text
@@ -44,7 +44,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[NOT OSEHRA CPRS]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [NOT OSEHRA CPRS]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

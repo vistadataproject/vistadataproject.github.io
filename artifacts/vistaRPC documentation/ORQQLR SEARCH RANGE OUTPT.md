@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | SROUT^[ORQQLR](http://code.osehra.org/dox/Routine_ORQQLR_source.html)
  Method comment | return lab results search date range for an outpatient
@@ -32,7 +32,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[NOT OSEHRA CPRS]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [NOT OSEHRA CPRS]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

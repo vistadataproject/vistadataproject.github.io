@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | BASTATUS^[ORWDBA1](http://code.osehra.org/dox/Routine_ORWDBA1_source.html)
  Method comment | RPC to retrieve the status of the Billing Awareness software
@@ -33,7 +33,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [BA/UBACore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/BA/UBACore.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

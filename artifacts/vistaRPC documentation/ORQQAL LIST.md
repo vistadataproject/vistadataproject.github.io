@@ -29,7 +29,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | LIST^[ORQQAL](http://code.osehra.org/dox/Routine_ORQQAL_source.html)
  Method comment | RETURN PATIENT'S ALLERGY/ADVERSE REACTION INFO:
@@ -40,7 +40,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [rCover.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCover.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

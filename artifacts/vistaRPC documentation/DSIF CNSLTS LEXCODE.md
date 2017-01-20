@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the Lexicon application for which you are looking. I.e. ICD or CPT.{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date you wish to look for the code; if you pass in nothing it assumes the current date.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

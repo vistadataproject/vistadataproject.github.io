@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | ISHDORD^[OREVNTX1](http://code.osehra.org/dox/Routine_OREVNTX1_source.html)
  Method comment | Return 1 if it's on-hold med order
@@ -33,7 +33,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Executable Only]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Executable Only]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

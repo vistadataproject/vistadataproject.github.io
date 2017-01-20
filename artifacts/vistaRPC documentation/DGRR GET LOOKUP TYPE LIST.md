@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PARAM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PARAM(\TYPE\)=\ward\ returns a list of wardsPARAM(\TYPE\)=\clinic\ returns a list of clinicsPARAM(\TYPE\)=\provider\ returns a list of providersPARAM(\VALUE\)=Beginning value or null to start at the beginning               or end of the file.PARAM(\MAXNUM\)=Number of entries to be returned.  Defaults to                traversing forward. If MAXNUM contains a negative                number, traverses through the file backwards.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

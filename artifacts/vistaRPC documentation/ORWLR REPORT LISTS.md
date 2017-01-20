@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | LIST^[ORWLR](http://code.osehra.org/dox/Routine_ORWLR_source.html)
  Method comment | return lists for list boxes
@@ -33,7 +33,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[NOT OSEHRA CPRS]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [NOT OSEHRA CPRS]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

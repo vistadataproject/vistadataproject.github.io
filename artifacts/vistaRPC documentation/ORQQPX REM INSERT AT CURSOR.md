@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | INSCURS^[ORQQPX](http://code.osehra.org/dox/Routine_ORQQPX_source.html)
  Method comment | Returns status of ORQQPX REMINDER TEXT AT CURSOR
@@ -32,7 +32,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [rReminders.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rReminders.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

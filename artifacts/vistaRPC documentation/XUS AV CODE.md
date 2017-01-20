@@ -29,7 +29,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | VALIDAV^[XUSRB](http://code.osehra.org/dox/Routine_XUSRB_source.html)
  Method comment | RPC. XUS CVC - IA #6296
@@ -40,7 +40,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Executable Only]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Executable Only]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

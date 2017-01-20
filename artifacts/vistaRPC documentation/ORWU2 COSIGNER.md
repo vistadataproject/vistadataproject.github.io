@@ -33,7 +33,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | COSIGNER^[ORWU2](http://code.osehra.org/dox/Routine_ORWU2_source.html)
  First comment | {::nomarkdown}<pre> (Set up for the DC Summary)<br/>  (to use TIU doc requirments and USR PROVIDER)<br/><br/> PARAMS from ORWU2 COSIGNER RPC call:<br/>  .ORY=returned list.<br/>  ORFROM=Starting name for this set.  <br/>  ORDIR=Direction to move through the x-ref with $O.  <br/>  ORDATE=Checks for an USR PROVIDER on this date (optional).<br/>  ORTIUTYP is + of the 0 node of the 8925 docmt.  <br/>  ORTIUDA is the docmt IEN,<br/>  <br/>  <br/>  </pre>{:/}
@@ -43,7 +43,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [rCore.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/rCore.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

@@ -29,7 +29,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | DLL^[GMVUTL8](http://code.osehra.org/dox/Routine_GMVUTL8_source.html)
  Method comment | Entry for [GMV DLL VERSION] RPC. Returns DLL version check
@@ -40,7 +40,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[GMV_VitalsViewEnter.dll]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  No Source Code Available (GMV_VitalsViewEnter.dll)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

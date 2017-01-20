@@ -29,7 +29,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | WARDPTS^[ORQPTQ2](http://code.osehra.org/dox/Routine_ORQPTQ2_source.html)
  Method comment | RETURN LIST OF PATIENTS IN A WARD
@@ -40,7 +40,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[NOT OSEHRA CPRS]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [NOT OSEHRA CPRS]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

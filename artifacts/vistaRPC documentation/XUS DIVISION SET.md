@@ -29,7 +29,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | DIVSET^[XUSRB2](http://code.osehra.org/dox/Routine_XUSRB2_source.html)
  Method comment | Set users Division
@@ -39,7 +39,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Executable Only]()
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Executable Only]()
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:06 am</p>{:/}

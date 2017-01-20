@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IMIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IMIEN - ^MAG(2005,IMIEN image captured.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown};DATA - stain^micro obj^Pt name^ssn^date/time^acc#^Pathologist^specimendesc.^lab section^dfn^lrdfn^lri^spec ien^field#^global root e.g. ^LR(1,\SP\,7069 758,.1,1   ;DATA is the result of START^MAGGTLB (the specimen variable during the   ;image capture window).   ;Will return a single value on filing success.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

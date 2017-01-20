@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\NAME\) MAGPARAM(\ACTIVE\) = 0/1 MAGPARAM(\QUEUE TYPE\) MAGPARAM(\NUM RETRIES\) MAGPARAM(\RETRY DELAY IN SECONDS\) MAGPARAM(\TRIGGER DELAY IN SECONDS\){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

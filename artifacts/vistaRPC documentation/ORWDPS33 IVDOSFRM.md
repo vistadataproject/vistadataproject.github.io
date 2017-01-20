@@ -31,7 +31,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | IVDOSFRM^[ORWDPS33](http://code.osehra.org/dox/Routine_ORWDPS33_source.html)
  Input parameters | {::nomarkdown}ORDERIDS<br>ALLIV{:/}
@@ -40,7 +40,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

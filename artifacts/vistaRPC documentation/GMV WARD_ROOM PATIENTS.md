@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}GMVWRD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Name of the ward (e.g., 2EAST).{:/} | 
 | {::nomarkdown}GMVRLST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}150{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The room numbers of the ward separated by comma (e.g., 200,210,220).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | CLOZMSG^[ORDDPAPI](http://code.osehra.org/dox/Routine_ORDDPAPI_source.html)
  Code | {::nomarkdown}  N ERR,I<br> D GETWP^XPAR(.X,"SYS","OR CLOZ INPT MSG",,.ERR)<br> S I=0  F  S I=$O(X(I)) Q:I'>0  S ORARRAY(I)=$G(X(I,0))<br>{:/}
@@ -31,7 +31,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Orders/rODMeds.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rODMeds.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}

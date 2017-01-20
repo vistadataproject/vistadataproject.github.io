@@ -23,7 +23,7 @@ title: VISTA RPC documentation
 
 ### MUMPS Method description
 
- property | value 
+ Property | Value 
  --- | --- 
  Method | NSSMSG^[ORWNSS](http://code.osehra.org/dox/Routine_ORWNSS_source.html)
  Method comment | Retrieve site message for None-Standard Schedule
@@ -32,7 +32,9 @@ title: VISTA RPC documentation
 
 ### CPRS
 
-[Orders/fOtherSchedule.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOtherSchedule.pas)
+ Name | Property 
+ --- | --- 
+ Pascal Code |  [Orders/fOtherSchedule.pas](https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/fOtherSchedule.pas)
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 19th 2017, 9:28:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 4:54:07 am</p>{:/}
