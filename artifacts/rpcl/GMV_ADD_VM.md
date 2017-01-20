@@ -36,4 +36,4 @@ title: RPCL documentation
 |  | REFERENCE |  | {::nomarkdown}Hospital Location{:/} | hospitalLocation | 4 | 
 |  | [OBJECT] | [{name:enteredBy,mvdmProperty:enteredBy,parameterType:REFERENCE,description:Entered By,referencedFile:200,pieceIndex:0,required:true,example:55},{name:qualifier,mvdmProperty:qualifier,parameterType:[REFERENCE],pieceSeparationChar::,description:Vital qualifiers,referencedFile:120_52,pieceIndex:1}] | {::nomarkdown}User number from FILE 200 (i.e., DUZ), an asterisk, and the qualifier (File 120.52) internal entry numbers separated by colons (e.g., 547*50:65){:/} |  | 55*1:51 | 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 20th 2017, 4:59:45 am</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 20th 2017, 8:07:45 am</p>{:/}
