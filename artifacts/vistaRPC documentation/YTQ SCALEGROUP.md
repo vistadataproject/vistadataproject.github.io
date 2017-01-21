@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns all information from file MH SCALEGROUPS (601.86) for a specified instrument    input: CODE as instrument name   output: SCALEGROUP ID^INSTRUMENT ID^SCALEGROUP NAME^GROUP SEQUENCE^     ORDINATE TITLE^ORDINATEMIN^ORDINATEINCREMENT^ORDINATEMAX^GRID1^GRID2^     GRID3{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

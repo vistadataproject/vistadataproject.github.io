@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}UPDUSR{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the user that updated the work item.{:/} | 
 | {::nomarkdown}UPDAPP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the application that updated the work item.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

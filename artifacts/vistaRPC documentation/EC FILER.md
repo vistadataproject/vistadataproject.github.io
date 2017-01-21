@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ECARY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input array ECARY defines all the fields and values needed for a particular file.  The variable ECARY(\ECFILE\) must always be set to the file number wheredata will be saved.  The following are the options and file available       ECFILE       Option       ------       ------       721          Event Capture Patient File       724          DSS Unit       720.3        EC Event Code Screens       720.4        Event Code Reasons       725          EC Local Procedure       726          Event Capture Category       4            Event Capture Locations       200          Allocate/Deallocate users to Unit       200A         Allocate/Deallocate Units to user       8989.5       Update HFS directory{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:09 am</p>{:/}

@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}When a clerk gives a psychological test by order of a clinician, a VISTA email bulletin is sent to that clinician, informing him/her of the administration of the test, the date, the clerk and the patient. Input: DFN ;ien of file 2 Patient       YSORD ;DUZ of ordering clinician Output:only success vs. error is reported.YSDATA(1)=[DATA]{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SUSP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Suspense Code (Pointer to file 161.27, Required if Legal or Medical is 0){:/} | 
 | {::nomarkdown}SDESC{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Suspense Description (WP Array MUST START WITH 1. Only used if Suspense Code = 4 [Other]) To delete the existing description, (only if the user wants it deleted) pass SUSD(1)=\@\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

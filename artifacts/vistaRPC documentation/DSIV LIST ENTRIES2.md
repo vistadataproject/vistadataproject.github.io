@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NUMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Contains the maximum number of entries to return per rpc call. If not defined, then all entries will be returned (backward compatible).{:/} | 
 | {::nomarkdown}MORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown} Used with the NUMS parameter, More=0 means first call to rpc, More'=0 means get the next 'set' of NUMS records.  The data will end with a record = $END$ to tell the gui that there are no more records.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

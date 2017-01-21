@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Patient demographic and eligibility information         Input DFN as ien of file 2        Output        ; YSDATA(2)= name        ; YSDATA(3)=ssn        ; YSDATA(4)=dob        ; YSDATA(5)=age        ; YSDATA(6)=sex        ; YSDATA(7)=date of death        ; YSDATA(8)=0 NCS/ 1 SC^%^service connected{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}

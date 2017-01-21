@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MSGTAGS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is an array of tag names and values describing the work item andits child objects.{:/} | 
 | {::nomarkdown}STAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The STAT flag, set to 1, initiates a query before returning data.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
