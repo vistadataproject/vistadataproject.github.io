@@ -4,35 +4,35 @@ title: VDP Year 2 - CPRS RPC Interface, Non Clinical Slice Breakdown
 ---
 
 
-# [All](bdStart) &#8594; Non Clinical (561)
+# [All](bdStart) &#8594; Non Clinical (560)
 
 
 
 Non Clinical RPCs don't effect a patient's medical record. In a phrase, they mainly 'get file data and parameter settings' and as they don't access patient data, their use needn't be monitored as closely as the Clinical RPCs - they don't involve HIPAA sensitive information.
 
-These RPCs access at least 119 parameters and 83 files.
+These RPCs access at least 120 parameters and 85 files.
 
 They come in four flavors (__PRELIMINARY BREAKDOWN__) ...
 
 Name | Number
 --- | ---
-[Parameter Only](#parameter-only-130) | 130 (23.2%)
-[File Only](#file-only-237) | 237 (42.2%)
-[Parameter and File](#parameter-and-file-31) | 31 (5.5%)
-[Other](#other-163) | 163 (29.1%)
+[Parameter Only](#parameter-only-129) | 129 (23%)
+[File Only](#file-only-238) | 238 (42.5%)
+[Parameter and File](#parameter-and-file-32) | 32 (5.7%)
+[Other](#other-161) | 161 (28.8%)
 
 
 
 
-### Parameter Only (130)
+### Parameter Only (129)
 
 RPCs that ONLY access parameters and not files. A tag of DUZ means that they access per User data..
 
 Category | Number
 --- | ---
-CHANGE | 27 (20.8%)
-READ | 97 (74.6%)
-UTILITY | 6 (4.6%)
+CHANGE | 27 (20.9%)
+READ | 96 (74.4%)
+UTILITY | 6 (4.7%)
 
 
 
@@ -85,8 +85,8 @@ P30 | [ORQQPX SET FOLDERS](http://vistadataproject.info/artifacts/vistaRPC docum
 P31 | [ORQQPXRM PROGRESS NOTE HEADER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM PROGRESS NOTE HEADER) | READ | ORLOC | &nbsp; | DUZ, LOCATION |  | PXRM PROGRESS NOTE HEADERS
 P32 | [ORQQPXRM REMINDER CATEGORIES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM REMINDER CATEGORIES) | READ | ORPT, ORLOC | 1 | DUZ, LOCATION |  | PXRM CPRS LOOKUP CATEGORIES
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P33 | [ORWCH LDFONT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH LDFONT) | READ | NAM | 1 | DUZ |  | ORWCH FONT SIZE
-P34 | [ORWCH LOADALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH LOADALL) | READ | &nbsp; | 10 | DUZ |  | ORWCH BOUNDS, ORWCH COLUMNS, ORWCH WIDTH, ORWCH WIDTHS
+P33 | [ORWCH LDFONT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH LDFONT) | READ | NAM | 1 | DUZ, GUI |  | ORWCH FONT SIZE
+P34 | [ORWCH LOADALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH LOADALL) | READ | &nbsp; | 10 | DUZ, GUI |  | ORWCH BOUNDS, ORWCH COLUMNS, ORWCH WIDTHS
 P35 | [ORWCH LOADSIZ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH LOADSIZ) | READ | NAM | 2 | DUZ |  | ORWCH BOUNDS
 P36 | [ORWCH SAVEALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH SAVEALL) | __CHANGE__ | LST | 8 | DUZ |  | *VARIABLE*, ORWCH BOUNDS, ORWCH COLUMNS, ORWCH WIDTHS
 P37 | [ORWCH SAVECOL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCH SAVECOL) | __CHANGE__ | COL | 4 | DUZ |  | ORWCH COLUMNS REPORTS
@@ -115,120 +115,118 @@ P51 | [ORWDPS1 LOCPICK](http://vistadataproject.info/artifacts/vistaRPC document
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 P52 | [ORWDPS32 AUTHNVA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 AUTHNVA) | READ | PRV | 8 | DUZ |  | OR OREMAS NON-VA MED ORDERS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P53 | [ORWDX WRLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX WRLST) | READ | LOC | 1 | LOCATION |  | ORWOR WRITE ORDERS LIST
+P53 | [ORWDXC ON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC ON) | READ | &nbsp; | 1 | IS-A |  | ORK SYSTEM ENABLE/DISABLE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P54 | [ORWDXC ON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC ON) | READ | &nbsp; | 1 | IS-A |  | ORK SYSTEM ENABLE/DISABLE
+P54 | [ORWDXM MSTYLE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM MSTYLE) | READ | &nbsp; | 1 | - |  | ORWDXM ORDER MENU STYLE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P55 | [ORWDXM MSTYLE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM MSTYLE) | READ | &nbsp; | 1 | - |  | ORWDXM ORDER MENU STYLE
+P55 | [ORWDXM1 SVRPC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM1 SVRPC) | READ | X | 1 | DUZ, IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P56 | [ORWDXM1 SVRPC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM1 SVRPC) | READ | X | 1 | DUZ, IS-A |  | 
+P56 | [ORWDXQ PUTQLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ PUTQLST) | __CHANGE__ | DG, QLST | 4 | DUZ |  | ORWDQ DISPLAY NAME, ORWDQ QUICK VIEW
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P57 | [ORWDXQ PUTQLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ PUTQLST) | __CHANGE__ | DG, QLST | 4 | DUZ |  | ORWDQ DISPLAY NAME, ORWDQ QUICK VIEW
+P57 | [ORWDXVB NURSADMN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB NURSADMN) | READ | &nbsp; | 1 | - |  | OR VBECS SUPPRESS NURS ADMIN
+P58 | [ORWDXVB STATALOW](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB STATALOW) | READ | DFN | 1 | DUZ |  | 
+P59 | [ORWDXVB VBTNS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB VBTNS) | READ | &nbsp; | 1 | - |  | ORWDXVB VBECS TNS CHECK
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P58 | [ORWDXVB NURSADMN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB NURSADMN) | READ | &nbsp; | 1 | - |  | OR VBECS SUPPRESS NURS ADMIN
-P59 | [ORWDXVB STATALOW](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB STATALOW) | READ | DFN | 1 | DUZ |  | 
-P60 | [ORWDXVB VBTNS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB VBTNS) | READ | &nbsp; | 1 | - |  | ORWDXVB VBECS TNS CHECK
+P60 | [ORWDXVB3 COLLTIM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 COLLTIM) | READ | &nbsp; | 1 | - |  | OR VBECS REMOVE COLL TIME
+P61 | [ORWDXVB3 SWPANEL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 SWPANEL) | READ | &nbsp; | 2 | - |  | OR VBECS DIAGNOSTIC PANEL 1ST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P61 | [ORWDXVB3 COLLTIM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 COLLTIM) | READ | &nbsp; | 1 | - |  | OR VBECS REMOVE COLL TIME
-P62 | [ORWDXVB3 SWPANEL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 SWPANEL) | READ | &nbsp; | 2 | - |  | OR VBECS DIAGNOSTIC PANEL 1ST
+P62 | [ORWGN AUTHUSR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN AUTHUSR) | READ | &nbsp; | 2 | DUZ |  | 
+P63 | [ORWGN GNLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN GNLOC) | READ | ORFROM, DIR | 13 | IS-A |  | OR GN LOCATIONS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P63 | [ORWGN AUTHUSR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN AUTHUSR) | READ | &nbsp; | 2 | DUZ |  | 
-P64 | [ORWGN GNLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN GNLOC) | READ | ORFROM, DIR | 13 | IS-A |  | OR GN LOCATIONS
+P64 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC ALLVIEWS) | READ | VIEW, USER | 2 | DUZ |  | ORWG GRAPH VIEW
+P65 | [ORWGRPC DELVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC DELVIEWS) | __CHANGE__ | NAME, PUBLIC | 2 | DUZ |  | 
+P66 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETPREF) | UTILITY | &nbsp; | 2 | FMUTILITY |  | ORWG GRAPH SETTING
+P67 | [ORWGRPC GETSIZE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETSIZE) | UTILITY | &nbsp; | 2 | FMUTILITY |  | 
+P68 | [ORWGRPC GETVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETVIEWS) | UTILITY | ALL, PUBLIC, EXT, USER | 2 | FMUTILITY |  | 
+P69 | [ORWGRPC PUBLIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC PUBLIC) | READ | &nbsp; | 1 | DUZ |  | 
+P70 | [ORWGRPC SETPREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETPREF) | __CHANGE__ | SETTING, PUBLIC | 2 | - |  | 
+P71 | [ORWGRPC SETSIZE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETSIZE) | __CHANGE__ | VAL | 2 | - |  | 
+P72 | [ORWGRPC SETVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETVIEWS) | __CHANGE__ | NAME, PUBLIC, VAL | 2 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P65 | [ORWGRPC ALLVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC ALLVIEWS) | READ | VIEW, USER | 2 | DUZ |  | ORWG GRAPH VIEW
-P66 | [ORWGRPC DELVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC DELVIEWS) | __CHANGE__ | NAME, PUBLIC | 2 | DUZ |  | 
-P67 | [ORWGRPC GETPREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETPREF) | UTILITY | &nbsp; | 2 | FMUTILITY |  | ORWG GRAPH SETTING
-P68 | [ORWGRPC GETSIZE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETSIZE) | UTILITY | &nbsp; | 2 | FMUTILITY |  | 
-P69 | [ORWGRPC GETVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETVIEWS) | UTILITY | ALL, PUBLIC, EXT, USER | 2 | FMUTILITY |  | 
-P70 | [ORWGRPC PUBLIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC PUBLIC) | READ | &nbsp; | 1 | DUZ |  | 
-P71 | [ORWGRPC SETPREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETPREF) | __CHANGE__ | SETTING, PUBLIC | 2 | - |  | 
-P72 | [ORWGRPC SETSIZE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETSIZE) | __CHANGE__ | VAL | 2 | - |  | 
-P73 | [ORWGRPC SETVIEWS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC SETVIEWS) | __CHANGE__ | NAME, PUBLIC, VAL | 2 | - |  | 
+P73 | [ORWNSS NSSMSG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS NSSMSG) | READ | &nbsp; | 4 | DUZ |  | ORWIM NSS MESSAGE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P74 | [ORWNSS NSSMSG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS NSSMSG) | READ | &nbsp; | 4 | DUZ |  | ORWIM NSS MESSAGE
+P74 | [ORWOR EXPIRED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR EXPIRED) | UTILITY | &nbsp; | 4 | - |  | ORWOR EXPIRED ORDERS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P75 | [ORWOR EXPIRED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR EXPIRED) | UTILITY | &nbsp; | 4 | - |  | ORWOR EXPIRED ORDERS
+P75 | [ORWORB GETSORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GETSORT) | READ | &nbsp; | 1 | - |  | ORB SORT DIRECTION, ORB SORT METHOD
+P76 | [ORWORB SETSORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB SETSORT) | __CHANGE__ | SORT, DIR | 3 | DUZ |  | ORB SORT DIRECTION, ORB SORT METHOD
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P76 | [ORWORB GETSORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GETSORT) | READ | &nbsp; | 1 | - |  | ORB SORT DIRECTION, ORB SORT METHOD
-P77 | [ORWORB SETSORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB SETSORT) | __CHANGE__ | SORT, DIR | 3 | DUZ |  | ORB SORT DIRECTION, ORB SORT METHOD
+P77 | [ORWPCE ALWAYS CHECKOUT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ALWAYS CHECKOUT) | READ | LOC | 5 | DUZ, IS-A |  | ORWPCE DISABLE AUTO CHECKOUT
+P78 | [ORWPCE ANYTIME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ANYTIME) | READ | &nbsp; | 4 | DUZ |  | ORWPCE ANYTIME ENCOUNTERS
+P79 | [ORWPCE ASKPCE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ASKPCE) | READ | USER, LOC | 5 | DUZ |  | ORWPCE ASK ENCOUNTER UPDATE
+P80 | [ORWPCE AUTO VISIT TYPE SELECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE AUTO VISIT TYPE SELECT) | READ | LOC | 5 | DUZ, IS-A |  | ORWPCE DISABLE AUTO VISIT TYPE
+P81 | [ORWPCE FORCE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE FORCE) | READ | USER, LOC | 5 | DUZ, LOCATION |  | ORWPCE FORCE PCE ENTRY
+P82 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EXCLUDED) | READ | LOC, TYPE | 6 | DUZ |  | *VARIABLE*
+P83 | [ORWPCE MH TEST AUTHORIZED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MH TEST AUTHORIZED) | READ | TEST, USER | 7 | DUZ |  | 
+P84 | [ORWPCE MHTESTOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MHTESTOK) | READ | &nbsp; | 6 | DUZ, IS-A |  | PXRM MENTAL HEALTH ACTIVE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P78 | [ORWPCE ALWAYS CHECKOUT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ALWAYS CHECKOUT) | READ | LOC | 5 | DUZ, IS-A |  | ORWPCE DISABLE AUTO CHECKOUT
-P79 | [ORWPCE ANYTIME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ANYTIME) | READ | &nbsp; | 4 | DUZ |  | ORWPCE ANYTIME ENCOUNTERS
-P80 | [ORWPCE ASKPCE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ASKPCE) | READ | USER, LOC | 5 | DUZ |  | ORWPCE ASK ENCOUNTER UPDATE
-P81 | [ORWPCE AUTO VISIT TYPE SELECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE AUTO VISIT TYPE SELECT) | READ | LOC | 5 | DUZ, IS-A |  | ORWPCE DISABLE AUTO VISIT TYPE
-P82 | [ORWPCE FORCE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE FORCE) | READ | USER, LOC | 5 | DUZ, LOCATION |  | ORWPCE FORCE PCE ENTRY
-P83 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EXCLUDED) | READ | LOC, TYPE | 6 | DUZ |  | *VARIABLE*
-P84 | [ORWPCE MH TEST AUTHORIZED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MH TEST AUTHORIZED) | READ | TEST, USER | 7 | DUZ |  | 
-P85 | [ORWPCE MHTESTOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MHTESTOK) | READ | &nbsp; | 6 | DUZ, IS-A |  | PXRM MENTAL HEALTH ACTIVE
+P85 | [ORWPS REASON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS REASON) | READ | &nbsp; | 3 | - |  | ORWD NONVA REASON
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P86 | [ORWPS REASON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS REASON) | READ | &nbsp; | 3 | - |  | ORWD NONVA REASON
+P86 | [ORWPT DFLTSRC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT DFLTSRC) | READ | &nbsp; | 2 | DUZ |  | ORLP DEFAULT LIST SOURCE
+P87 | [ORWPT SAVDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SAVDFLT) | __CHANGE__ | X | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P87 | [ORWPT DFLTSRC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT DFLTSRC) | READ | &nbsp; | 2 | DUZ |  | ORLP DEFAULT LIST SOURCE
-P88 | [ORWPT SAVDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SAVDFLT) | __CHANGE__ | X | 1 | DUZ |  | 
+P88 | [ORWRA DEFAULT EXAM SETTINGS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRA DEFAULT EXAM SETTINGS) | READ | &nbsp; | 11 | - |  | ORCH CONTEXT REPORTS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P89 | [ORWRA DEFAULT EXAM SETTINGS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRA DEFAULT EXAM SETTINGS) | READ | &nbsp; | 11 | - |  | ORCH CONTEXT REPORTS
+P89 | [ORWRP2 GETLKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 GETLKUP) | READ | &nbsp; | 1 | - |  | ORWRP ADHOC LOOKUP
+P90 | [ORWRP2 SAVLKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 SAVLKUP) | __CHANGE__ | VAL | 4 | DUZ |  | ORWRP ADHOC LOOKUP
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P90 | [ORWRP2 GETLKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 GETLKUP) | READ | &nbsp; | 1 | - |  | ORWRP ADHOC LOOKUP
-P91 | [ORWRP2 SAVLKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 SAVLKUP) | __CHANGE__ | VAL | 4 | DUZ |  | ORWRP ADHOC LOOKUP
+P91 | [ORWRP3 EXPAND COLUMNS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP3 EXPAND COLUMNS) | READ | TAB | 4 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P92 | [ORWRP3 EXPAND COLUMNS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP3 EXPAND COLUMNS) | READ | TAB | 4 | - |  | 
+P92 | [ORWSR GET SURG CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR GET SURG CONTEXT) | READ | ORUSER | 2 | - |  | ORCH CONTEXT SURGERY
+P93 | [ORWSR SAVE SURG CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SAVE SURG CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT SURGERY
+P94 | [ORWSR SHOW SURG TAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SHOW SURG TAB) | READ | &nbsp; | 3 | - |  | ORWOR SHOW SURGERY TAB
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P93 | [ORWSR GET SURG CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR GET SURG CONTEXT) | READ | ORUSER | 2 | - |  | ORCH CONTEXT SURGERY
-P94 | [ORWSR SAVE SURG CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SAVE SURG CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT SURGERY
-P95 | [ORWSR SHOW SURG TAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SHOW SURG TAB) | READ | &nbsp; | 3 | - |  | ORWOR SHOW SURGERY TAB
+P95 | [ORWTIU GET DCSUMM CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU GET DCSUMM CONTEXT) | READ | ORUSER | 7 | DUZ |  | ORCH CONTEXT SUMMRIES
+P96 | [ORWTIU GET TIU CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU GET TIU CONTEXT) | READ | ORUSER | 7 | DUZ |  | ORCH CONTEXT NOTES
+P97 | [ORWTIU SAVE DCSUMM CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU SAVE DCSUMM CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT SUMMRIES
+P98 | [ORWTIU SAVE TIU CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU SAVE TIU CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT NOTES
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P96 | [ORWTIU GET DCSUMM CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU GET DCSUMM CONTEXT) | READ | ORUSER | 7 | DUZ |  | ORCH CONTEXT SUMMRIES
-P97 | [ORWTIU GET TIU CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU GET TIU CONTEXT) | READ | ORUSER | 7 | DUZ |  | ORCH CONTEXT NOTES
-P98 | [ORWTIU SAVE DCSUMM CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU SAVE DCSUMM CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT SUMMRIES
-P99 | [ORWTIU SAVE TIU CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU SAVE TIU CONTEXT) | __CHANGE__ | ORCTXT | 5 | DUZ |  | ORCH CONTEXT NOTES
+P99 | [ORWTPD DELDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD DELDFLT) | __CHANGE__ | &nbsp; | 4 | DUZ |  | ORWRP TIME/OCC LIMITS ALL, ORWRP TIME/OCC LIMITS INDV
+P100 | [ORWTPD GETDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETDFLT) | READ | &nbsp; | 3 | DUZ |  | ORWRP TIME/OCC LIMITS ALL
+P101 | [ORWTPD GETOCM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETOCM) | READ | &nbsp; | 1 | - |  | ORCH CONTEXT MEDS
+P102 | [ORWTPD PUTOCM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD PUTOCM) | __CHANGE__ | ORVAL | 5 | DUZ |  | ORCH CONTEXT MEDS
+P103 | [ORWTPD RSDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD RSDFLT) | READ | &nbsp; | 2 | - |  | ORWRP TIME/OCC LIMITS ALL
+P104 | [ORWTPD SUDF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD SUDF) | __CHANGE__ | VALUE | 5 | DUZ |  | ORWRP TIME/OCC LIMITS ALL
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P100 | [ORWTPD DELDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD DELDFLT) | __CHANGE__ | &nbsp; | 4 | DUZ |  | ORWRP TIME/OCC LIMITS ALL, ORWRP TIME/OCC LIMITS INDV
-P101 | [ORWTPD GETDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETDFLT) | READ | &nbsp; | 3 | DUZ |  | ORWRP TIME/OCC LIMITS ALL
-P102 | [ORWTPD GETOCM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETOCM) | READ | &nbsp; | 1 | - |  | ORCH CONTEXT MEDS
-P103 | [ORWTPD PUTOCM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD PUTOCM) | __CHANGE__ | ORVAL | 5 | DUZ |  | ORCH CONTEXT MEDS
-P104 | [ORWTPD RSDFLT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD RSDFLT) | READ | &nbsp; | 2 | - |  | ORWRP TIME/OCC LIMITS ALL
-P105 | [ORWTPD SUDF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD SUDF) | __CHANGE__ | VALUE | 5 | DUZ |  | ORWRP TIME/OCC LIMITS ALL
+P105 | [ORWTPD1 GETCSDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETCSDEF) | READ | &nbsp; | 8 | - |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
+P106 | [ORWTPD1 GETCSRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETCSRNG) | READ | &nbsp; | 10 | DUZ |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
+P107 | [ORWTPD1 GETEAFL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEAFL) | READ | &nbsp; | 1 | - |  | ORQQEAFL ENC APPT FUTURE LIMIT
+P108 | [ORWTPD1 GETEDATS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEDATS) | READ | &nbsp; | 5 | DUZ |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
+P109 | [ORWTPD1 GETEFDAT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEFDAT) | READ | &nbsp; | 7 | - |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
+P110 | [ORWTPD1 PUTCSRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 PUTCSRNG) | __CHANGE__ | INFO | 10 | DUZ |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP, ORQQLR DATE RANGE INPT, ORQQLR DATE RANGE OUTPT
+P111 | [ORWTPD1 PUTEDATS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 PUTEDATS) | __CHANGE__ | Y | 10 | DUZ |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P106 | [ORWTPD1 GETCSDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETCSDEF) | READ | &nbsp; | 8 | - |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
-P107 | [ORWTPD1 GETCSRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETCSRNG) | READ | &nbsp; | 10 | DUZ |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
-P108 | [ORWTPD1 GETEAFL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEAFL) | READ | &nbsp; | 1 | - |  | ORQQEAFL ENC APPT FUTURE LIMIT
-P109 | [ORWTPD1 GETEDATS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEDATS) | READ | &nbsp; | 5 | DUZ |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
-P110 | [ORWTPD1 GETEFDAT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 GETEFDAT) | READ | &nbsp; | 7 | - |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
-P111 | [ORWTPD1 PUTCSRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 PUTCSRNG) | __CHANGE__ | INFO | 10 | DUZ |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP, ORQQLR DATE RANGE INPT, ORQQLR DATE RANGE OUTPT
-P112 | [ORWTPD1 PUTEDATS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD1 PUTEDATS) | __CHANGE__ | Y | 10 | DUZ |  | ORQQEAPT ENC APPT START, ORQQEAPT ENC APPT STOP
+P112 | [ORWTPO CSARNGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO CSARNGD) | READ | &nbsp; | 2 | - |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
+P113 | [ORWTPO CSLABD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO CSLABD) | READ | &nbsp; | 4 | - |  | *VARIABLE*
+P114 | [ORWTPO GETIMGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO GETIMGD) | READ | &nbsp; | 1 | - |  | ORCH CONTEXT REPORTS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P113 | [ORWTPO CSARNGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO CSARNGD) | READ | &nbsp; | 2 | - |  | ORQQCSDR CS RANGE START, ORQQCSDR CS RANGE STOP
-P114 | [ORWTPO CSLABD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO CSLABD) | READ | &nbsp; | 4 | - |  | *VARIABLE*
-P115 | [ORWTPO GETIMGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO GETIMGD) | READ | &nbsp; | 1 | - |  | ORCH CONTEXT REPORTS
+P115 | [ORWTPP CHKSURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CHKSURR) | READ | SURR | 1 | DUZ |  | 
+P116 | [ORWTPP CLDAYS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLDAYS) | READ | &nbsp; | 1 | DUZ |  | 
+P117 | [ORWTPP CLRANGE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLRANGE) | READ | &nbsp; | 1 | DUZ |  | 
+P118 | [ORWTPP CSARNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CSARNG) | READ | &nbsp; | 1 | DUZ |  | 
+P119 | [ORWTPP CSLAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CSLAB) | READ | &nbsp; | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P116 | [ORWTPP CHKSURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CHKSURR) | READ | SURR | 1 | DUZ |  | 
-P117 | [ORWTPP CLDAYS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLDAYS) | READ | &nbsp; | 1 | DUZ |  | 
-P118 | [ORWTPP CLRANGE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLRANGE) | READ | &nbsp; | 1 | DUZ |  | 
-P119 | [ORWTPP CSARNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CSARNG) | READ | &nbsp; | 1 | DUZ |  | 
-P120 | [ORWTPP CSLAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CSLAB) | READ | &nbsp; | 1 | DUZ |  | 
+P120 | [ORWU PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PARAM) | READ | APARAM | 1 | DUZ |  | *VARIABLE*
+P121 | [ORWU PARAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PARAMS) | READ | APARAM | 1 | DUZ |  | *VARIABLE*
+P122 | [ORWU TOOLMENU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU TOOLMENU) | READ | &nbsp; | 3 | DUZ |  | ORWT TOOLS MENU
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P121 | [ORWU PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PARAM) | READ | APARAM | 1 | DUZ |  | *VARIABLE*
-P122 | [ORWU PARAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PARAMS) | READ | APARAM | 1 | DUZ |  | *VARIABLE*
-P123 | [ORWU TOOLMENU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU TOOLMENU) | READ | &nbsp; | 3 | DUZ |  | ORWT TOOLS MENU
+P123 | [ORWUH POPUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUH POPUP) | READ | CTRL | 6 | - |  | ORWUH WHATSTHIS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P124 | [ORWUH POPUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUH POPUP) | READ | CTRL | 6 | - |  | ORWUH WHATSTHIS
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-P125 | [TIU FIELD CAN EDIT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD CAN EDIT) | READ | &nbsp; | 9 | DUZ, IS-A |  | TIU FIELD EDITOR CLASSES
-P126 | [TIU REMINDER DIALOGS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REMINDER DIALOGS) | READ | &nbsp; | 7 | DUZ FOR SERVICE |  | TIU TEMPLATE REMINDER DIALOGS
-P127 | [TIU TEMPLATE ACCESS LEVEL](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ACCESS LEVEL) | READ | ROOT, USER, LOC | 24 | DUZ |  | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
-P128 | [TIU TEMPLATE GET DEFAULTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GET DEFAULTS) | READ | &nbsp; | 3 | - |  | TIU DEFAULT TEMPLATES
-P129 | [TIU TEMPLATE PERSONAL OBJECTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE PERSONAL OBJECTS) | READ | &nbsp; | 7 | DUZ FOR SERVICE |  | TIU TEMPLATE PERSONAL OBJECTS
-P130 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE SET DEFAULTS) | __CHANGE__ | SETTINGS | 3 | DUZ |  | TIU DEFAULT TEMPLATES
+P124 | [TIU FIELD CAN EDIT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD CAN EDIT) | READ | &nbsp; | 9 | DUZ, IS-A |  | TIU FIELD EDITOR CLASSES
+P125 | [TIU REMINDER DIALOGS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REMINDER DIALOGS) | READ | &nbsp; | 7 | DUZ FOR SERVICE |  | TIU TEMPLATE REMINDER DIALOGS
+P126 | [TIU TEMPLATE ACCESS LEVEL](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ACCESS LEVEL) | READ | ROOT, USER, LOC | 24 | DUZ |  | TIU PERSONAL TEMPLATE ACCESS, TIU TEMPLATE ACCESS BY CLASS
+P127 | [TIU TEMPLATE GET DEFAULTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GET DEFAULTS) | READ | &nbsp; | 3 | - |  | TIU DEFAULT TEMPLATES
+P128 | [TIU TEMPLATE PERSONAL OBJECTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE PERSONAL OBJECTS) | READ | &nbsp; | 7 | DUZ FOR SERVICE |  | TIU TEMPLATE PERSONAL OBJECTS
+P129 | [TIU TEMPLATE SET DEFAULTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE SET DEFAULTS) | __CHANGE__ | SETTINGS | 3 | DUZ |  | TIU DEFAULT TEMPLATES
 
 
-### File Only (237)
+### File Only (238)
 
 RPCs that only access files and not parameters.
 
 Category | Number
 --- | ---
 CHANGE | 11 (4.6%)
-READ | 215 (90.7%)
+READ | 216 (90.8%)
 UTILITY | 11 (4.6%)
 
 
@@ -387,163 +385,164 @@ F118 | [ORWDX AGAIN](http://vistadataproject.info/artifacts/vistaRPC documentati
 F119 | [ORWDX DGNM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DGNM) | READ | NM | 1 | IEN-LOOKUP | [100.98](http://localhost:9000/schema/100_98) | 
 F120 | [ORWDX DGRP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DGRP) | READ | DLG | 2 | IEN-LOOKUP | [101.41](http://localhost:9000/schema/101_41) | 
 F121 | [ORWDX DISMSG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DISMSG) | READ | IEN | 1 | - | [101.41](http://localhost:9000/schema/101_41) | 
-F122 | [ORWDX MSG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX MSG) | READ | IEN | 2 | - | [101.43](http://localhost:9000/schema/101_43) | 
-F123 | [ORWDX ORDITM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX ORDITM) | READ | FROM, DIR, XREF, QOCALL | 12 | QUERY | [101.43](http://localhost:9000/schema/101_43) | 
+F122 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DLGDEF) | READ | DLG | 1 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F123 | [ORWDX MSG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX MSG) | READ | IEN | 2 | - | [101.43](http://localhost:9000/schema/101_43) | 
+F124 | [ORWDX ORDITM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX ORDITM) | READ | FROM, DIR, XREF, QOCALL | 12 | QUERY | [101.43](http://localhost:9000/schema/101_43) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F124 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA ISACTOI) | READ | OI | 2 | IS-A | [101.43](http://localhost:9000/schema/101_43) | 
+F125 | [ORWDXA ISACTOI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA ISACTOI) | READ | OI | 2 | IS-A | [101.43](http://localhost:9000/schema/101_43) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F125 | [ORWDXC FILLID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC FILLID) | READ | DLG | 8 | - | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
+F126 | [ORWDXC FILLID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC FILLID) | READ | DLG | 8 | - | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F126 | [ORWDXM DLGNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM DLGNAME) | READ | DLG | 7 | IEN-LOOKUP | [101.41](http://localhost:9000/schema/101_41) | 
-F127 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM FORMID) | READ | DLG | 7 | - | [101.41](http://localhost:9000/schema/101_41), [9.4](http://localhost:9000/schema/9_4) | 
-F128 | [ORWDXM LOADSET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM LOADSET) | READ | DLG | 14 | - | [101.41](http://localhost:9000/schema/101_41) | 
-F129 | [ORWDXM MENU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM MENU) | READ | DLG | 14 | - | [101.41](http://localhost:9000/schema/101_41) | 
-F130 | [ORWDXM PROMPTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM PROMPTS) | READ | DLG | 19 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F127 | [ORWDXM DLGNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM DLGNAME) | READ | DLG | 7 | IEN-LOOKUP | [101.41](http://localhost:9000/schema/101_41) | 
+F128 | [ORWDXM FORMID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM FORMID) | READ | DLG | 7 | ONEFIELD | [101.41](http://localhost:9000/schema/101_41), [9.4](http://localhost:9000/schema/9_4) | 
+F129 | [ORWDXM LOADSET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM LOADSET) | READ | DLG | 14 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F130 | [ORWDXM MENU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM MENU) | READ | DLG | 14 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F131 | [ORWDXM PROMPTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM PROMPTS) | READ | DLG | 19 | - | [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F131 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM3 ISUDQO) | READ | DLGID | 11 | COMPUTED, IS-A | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
+F132 | [ORWDXM3 ISUDQO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM3 ISUDQO) | READ | DLGID | 11 | COMPUTED, IS-A | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F132 | [ORWDXQ DLGNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ DLGNAME) | READ | INAME | 2 | - | [101.41](http://localhost:9000/schema/101_41) | 
-F133 | [ORWDXQ DLGSAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ DLGSAVE) | __CHANGE__ | CRC, DNAME, DGRP, RSP | 8 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F133 | [ORWDXQ DLGNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ DLGNAME) | READ | INAME | 2 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F134 | [ORWDXQ DLGSAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ DLGSAVE) | __CHANGE__ | CRC, DNAME, DGRP, RSP | 8 | - | [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F134 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 ISSPLY) | READ | DLGID, QODLG | 6 | IS-A | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
+F135 | [ORWDXR01 ISSPLY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 ISSPLY) | READ | DLGID, QODLG | 6 | IS-A | [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F135 | [ORWDXVB SUBCHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB SUBCHK) | READ | TSTNM | 4 | COMPUTED | [101.43](http://localhost:9000/schema/101_43) | 
+F136 | [ORWDXVB SUBCHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB SUBCHK) | READ | TSTNM | 4 | COMPUTED | [101.43](http://localhost:9000/schema/101_43) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F136 | [ORWGRPC RPTPARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC RPTPARAM) | READ | IEN | 1 | - | [101.24](http://localhost:9000/schema/101_24) | 
-F137 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TESTSPEC) | READ | &nbsp; | 2 | - | [60](http://localhost:9000/schema/60) | 
+F137 | [ORWGRPC RPTPARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC RPTPARAM) | READ | IEN | 1 | - | [101.24](http://localhost:9000/schema/101_24) | 
+F138 | [ORWGRPC TESTSPEC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TESTSPEC) | READ | &nbsp; | 2 | - | [60](http://localhost:9000/schema/60) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F138 | [ORWLRR ALLTESTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ALLTESTS) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
-F139 | [ORWLRR ATESTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATESTS) | READ | TEST | 1 | - | [60](http://localhost:9000/schema/60) | 
-F140 | [ORWLRR ATG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATG) | READ | TESTGP, USER | 1 | DUZ, DUZ TO K/META | [60](http://localhost:9000/schema/60), [69.2](http://localhost:9000/schema/69_2), [68](http://localhost:9000/schema/68) | 
-F141 | [ORWLRR ATOMICS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATOMICS) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
-F142 | [ORWLRR CHEMTEST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR CHEMTEST) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
-F143 | [ORWLRR INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR INFO) | READ | ORTEST | 2 | - | [60](http://localhost:9000/schema/60) | 
-F144 | [ORWLRR PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR PARAM) | READ | &nbsp; | 1 | - | [69.9](http://localhost:9000/schema/69_9) | 
-F145 | [ORWLRR SPEC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR SPEC) | READ | FROM, DIR | 1 | - | [61](http://localhost:9000/schema/61) | 
-F146 | [ORWLRR USERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR USERS) | READ | FROM, DIR | 1 | DUZ, QUERY | [68](http://localhost:9000/schema/68) | 
+F139 | [ORWLRR ALLTESTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ALLTESTS) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
+F140 | [ORWLRR ATESTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATESTS) | READ | TEST | 1 | - | [60](http://localhost:9000/schema/60) | 
+F141 | [ORWLRR ATG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATG) | READ | TESTGP, USER | 1 | DUZ, DUZ TO K/META | [60](http://localhost:9000/schema/60), [69.2](http://localhost:9000/schema/69_2), [68](http://localhost:9000/schema/68) | 
+F142 | [ORWLRR ATOMICS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR ATOMICS) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
+F143 | [ORWLRR CHEMTEST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR CHEMTEST) | READ | FROM, DIR | 1 | - | [60](http://localhost:9000/schema/60) | 
+F144 | [ORWLRR INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR INFO) | READ | ORTEST | 2 | - | [60](http://localhost:9000/schema/60) | 
+F145 | [ORWLRR PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR PARAM) | READ | &nbsp; | 1 | - | [69.9](http://localhost:9000/schema/69_9) | 
+F146 | [ORWLRR SPEC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR SPEC) | READ | FROM, DIR | 1 | - | [61](http://localhost:9000/schema/61) | 
+F147 | [ORWLRR USERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR USERS) | READ | FROM, DIR | 1 | DUZ, QUERY | [68](http://localhost:9000/schema/68) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F147 | [ORWNSS QOSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS QOSCH) | READ | QOID | 13 | - | [101.41](http://localhost:9000/schema/101_41) | 
+F148 | [ORWNSS QOSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS QOSCH) | READ | QOID | 13 | - | [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F148 | [ORWOR PKISITE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR PKISITE) | READ | &nbsp; | 7 | LOCATION | [100.7](http://localhost:9000/schema/100_7) | 
-F149 | [ORWOR PKIUSE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR PKIUSE) | READ | &nbsp; | 4 | DUZ | [100.7](http://localhost:9000/schema/100_7) | 
-F150 | [ORWOR TSALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR TSALL) | READ | &nbsp; | 2 | - | [45.7](http://localhost:9000/schema/45_7) | 
+F149 | [ORWOR PKISITE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR PKISITE) | READ | &nbsp; | 7 | LOCATION | [100.7](http://localhost:9000/schema/100_7) | 
+F150 | [ORWOR PKIUSE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR PKIUSE) | READ | &nbsp; | 4 | DUZ | [100.7](http://localhost:9000/schema/100_7) | 
+F151 | [ORWOR TSALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR TSALL) | READ | &nbsp; | 2 | - | [45.7](http://localhost:9000/schema/45_7) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F151 | [ORWORDG ALLTREE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG ALLTREE) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | 
-F152 | [ORWORDG IEN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG IEN) | READ | X | 2 | IEN-LOOKUP | [100.98](http://localhost:9000/schema/100_98) | 
+F152 | [ORWORDG ALLTREE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG ALLTREE) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | 
+F153 | [ORWORDG IEN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG IEN) | READ | X | 2 | IEN-LOOKUP | [100.98](http://localhost:9000/schema/100_98) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F153 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EDUCATION TOPICS) | READ | &nbsp; | 2 | QUERY | [9999999.09](http://localhost:9000/schema/9999999_09) | 
-F154 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EXAM TYPE) | READ | &nbsp; | 2 | QUERY | [9999999.15](http://localhost:9000/schema/9999999_15) | 
-F155 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET HEALTH FACTORS TY) | READ | ADDCATS | 10 | QUERY | [9999999.64](http://localhost:9000/schema/9999999_64) | 
-F156 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET IMMUNIZATION TYPE) | READ | ORDT | 5 | QUERY | [9999999.14](http://localhost:9000/schema/9999999_14) | 
-F157 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET SKIN TEST TYPE) | READ | ORDT | 5 | QUERY | [9999999.28](http://localhost:9000/schema/9999999_28) | 
-F158 | [ORWPCE GET TREATMENT TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET TREATMENT TYPE) | READ | &nbsp; | 2 | QUERY | [9999999.17](http://localhost:9000/schema/9999999_17) | 
-F159 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GETSVC) | UTILITY | SVC, LOC, INP | 5 | LOCATION | [44](http://localhost:9000/schema/44) | 
+F154 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EDUCATION TOPICS) | READ | &nbsp; | 2 | QUERY | [9999999.09](http://localhost:9000/schema/9999999_09) | 
+F155 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET EXAM TYPE) | READ | &nbsp; | 2 | QUERY | [9999999.15](http://localhost:9000/schema/9999999_15) | 
+F156 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET HEALTH FACTORS TY) | READ | ADDCATS | 10 | QUERY | [9999999.64](http://localhost:9000/schema/9999999_64) | 
+F157 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET IMMUNIZATION TYPE) | READ | ORDT | 5 | QUERY | [9999999.14](http://localhost:9000/schema/9999999_14) | 
+F158 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET SKIN TEST TYPE) | READ | ORDT | 5 | QUERY | [9999999.28](http://localhost:9000/schema/9999999_28) | 
+F159 | [ORWPCE GET TREATMENT TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET TREATMENT TYPE) | READ | &nbsp; | 2 | QUERY | [9999999.17](http://localhost:9000/schema/9999999_17) | 
+F160 | [ORWPCE GETSVC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GETSVC) | UTILITY | SVC, LOC, INP | 5 | LOCATION | [44](http://localhost:9000/schema/44), [40.7](http://localhost:9000/schema/40_7), [150.1](http://localhost:9000/schema/150_1) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F160 | [ORWPCE1 NONCOUNT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE1 NONCOUNT) | READ | ORLOC | 3 | IS-A, LOCATION | [44](http://localhost:9000/schema/44) | 
+F161 | [ORWPCE1 NONCOUNT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE1 NONCOUNT) | READ | ORLOC | 3 | IS-A, LOCATION | [44](http://localhost:9000/schema/44) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F161 | [ORWPS1 PICKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS1 PICKUP) | READ | &nbsp; | 2 | - | [550](http://localhost:9000/schema/550) | 
+F162 | [ORWPS1 PICKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS1 PICKUP) | READ | &nbsp; | 2 | - | [550](http://localhost:9000/schema/550) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F162 | [ORWRP2 HS COMP FILES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMP FILES) | READ | ORCOMP | 1 | - | [142.5](http://localhost:9000/schema/142_5) | 
+F163 | [ORWRP2 HS COMP FILES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMP FILES) | READ | ORCOMP | 1 | - | [142.5](http://localhost:9000/schema/142_5) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F163 | [ORWTPD GETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETIMG) | UTILITY | RPT | 10 | - | [101.24](http://localhost:9000/schema/101_24) | 
-F164 | [ORWTPD GETSETS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETSETS) | READ | &nbsp; | 11 | - | [101.24](http://localhost:9000/schema/101_24) | 
+F164 | [ORWTPD GETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETIMG) | UTILITY | RPT | 10 | - | [101.24](http://localhost:9000/schema/101_24) | 
+F165 | [ORWTPD GETSETS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD GETSETS) | READ | &nbsp; | 11 | - | [101.24](http://localhost:9000/schema/101_24) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F165 | [ORWTPN GETCLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPN GETCLASS) | READ | &nbsp; | 8 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
-F166 | [ORWTPN GETTC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPN GETTC) | READ | CLASS, FROM, DIR | 12 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
+F166 | [ORWTPN GETCLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPN GETCLASS) | READ | &nbsp; | 8 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
+F167 | [ORWTPN GETTC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPN GETTC) | READ | CLASS, FROM, DIR | 12 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F167 | [ORWTPO GETTABS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO GETTABS) | READ | &nbsp; | 2 | FILES | [8989.51](http://localhost:9000/schema/8989_51) | 
+F168 | [ORWTPO GETTABS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPO GETTABS) | READ | &nbsp; | 2 | FILES | [8989.51](http://localhost:9000/schema/8989_51) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F168 | [ORWTPP ADDLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP ADDLIST) | __CHANGE__ | VALUE | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
-F169 | [ORWTPP CLEARNOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLEARNOT) | __CHANGE__ | &nbsp; | 1 | DUZ | [8992.1](http://localhost:9000/schema/8992_1) | 
-F170 | [ORWTPP DELLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP DELLIST) | READ | LISTNUM | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
-F171 | [ORWTPP PLISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP PLISTS) | READ | &nbsp; | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
-F172 | [ORWTPP PLTEAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP PLTEAMS) | READ | &nbsp; | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
+F169 | [ORWTPP ADDLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP ADDLIST) | __CHANGE__ | VALUE | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
+F170 | [ORWTPP CLEARNOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP CLEARNOT) | __CHANGE__ | &nbsp; | 1 | DUZ | [8992.1](http://localhost:9000/schema/8992_1) | 
+F171 | [ORWTPP DELLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP DELLIST) | READ | LISTNUM | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
+F172 | [ORWTPP PLISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP PLISTS) | READ | &nbsp; | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
+F173 | [ORWTPP PLTEAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP PLTEAMS) | READ | &nbsp; | 1 | DUZ | [100.21](http://localhost:9000/schema/100_21) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F173 | [ORWTPR NOTDESC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPR NOTDESC) | READ | IEN | 7 | - | [100.9](http://localhost:9000/schema/100_9) | 
-F174 | [ORWTPR OCDESC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPR OCDESC) | READ | IEN | 9 | - | [100.8](http://localhost:9000/schema/100_8) | 
+F174 | [ORWTPR NOTDESC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPR NOTDESC) | READ | IEN | 7 | - | [100.9](http://localhost:9000/schema/100_9) | 
+F175 | [ORWTPR OCDESC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPR OCDESC) | READ | IEN | 9 | - | [100.8](http://localhost:9000/schema/100_8) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F175 | [ORWTPT GETTEAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPT GETTEAM) | READ | TEAM | 7 | DUZ | [100.21](http://localhost:9000/schema/100_21), [200](http://localhost:9000/schema/200) | 
+F176 | [ORWTPT GETTEAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPT GETTEAM) | READ | TEAM | 7 | DUZ | [100.21](http://localhost:9000/schema/100_21), [200](http://localhost:9000/schema/200) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F176 | [ORWU CLINLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU CLINLOC) | READ | FROM, DIR | 5 | LOCATION | [44](http://localhost:9000/schema/44) | 
-F177 | [ORWU EXTNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU EXTNAME) | UTILITY | IEN, FN | 2 | FMUTILITY | [1](http://localhost:9000/schema/1) | 
-F178 | [ORWU HOSPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HOSPLOC) | READ | FROM, DIR | 5 | LOCATION | [44](http://localhost:9000/schema/44) | 
-F179 | [ORWU INPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU INPLOC) | READ | FROM, DIR | 6 | LOCATION | [44](http://localhost:9000/schema/44) | 
-F180 | [ORWU PATCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PATCH) | READ | X | 1 | - | [9.4](http://localhost:9000/schema/9_4) | 
-F181 | [ORWU VALIDSIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VALIDSIG) | UTILITY | X | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
-F182 | [ORWU VERSION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VERSION) | READ | X | 1 | - | [9.4](http://localhost:9000/schema/9_4) | 
-F183 | [ORWU VERSRV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VERSRV) | READ | X, CLVER | 12 | - | [19](http://localhost:9000/schema/19) | 
+F177 | [ORWU CLINLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU CLINLOC) | READ | FROM, DIR | 5 | LOCATION | [44](http://localhost:9000/schema/44) | 
+F178 | [ORWU EXTNAME](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU EXTNAME) | UTILITY | IEN, FN | 2 | FMUTILITY | [1](http://localhost:9000/schema/1) | 
+F179 | [ORWU HOSPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HOSPLOC) | READ | FROM, DIR | 5 | LOCATION | [44](http://localhost:9000/schema/44) | 
+F180 | [ORWU INPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU INPLOC) | READ | FROM, DIR | 6 | LOCATION | [44](http://localhost:9000/schema/44) | 
+F181 | [ORWU PATCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU PATCH) | READ | X | 1 | IS-A | [9.4](http://localhost:9000/schema/9_4) | 
+F182 | [ORWU VALIDSIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VALIDSIG) | UTILITY | X | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
+F183 | [ORWU VERSION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VERSION) | READ | X | 1 | - | [9.4](http://localhost:9000/schema/9_4) | 
+F184 | [ORWU VERSRV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VERSRV) | READ | X, CLVER | 12 | - | [19](http://localhost:9000/schema/19) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F184 | [ORWU1 NEWLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU1 NEWLOC) | READ | ORFROM, DIR | 6 | LOCATION | [44](http://localhost:9000/schema/44) | 
+F185 | [ORWU1 NEWLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU1 NEWLOC) | READ | ORFROM, DIR | 6 | LOCATION | [44](http://localhost:9000/schema/44) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F185 | [ORWU16 DEVICE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 DEVICE) | READ | &nbsp; | 5 | LIST | [3.5](http://localhost:9000/schema/3_5) | 
-F186 | [ORWU16 HOSPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 HOSPLOC) | READ | DIR, FROM | 10 | LOCATION, QUERY | [44](http://localhost:9000/schema/44) | 
-F187 | [ORWU16 NEWPERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 NEWPERS) | READ | DIR, FROM, KEY | 10 | DUZ, QUERY | [200](http://localhost:9000/schema/200) | 
-F188 | [ORWU16 VALIDSIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 VALIDSIG) | UTILITY | X | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
+F186 | [ORWU16 DEVICE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 DEVICE) | READ | &nbsp; | 5 | LIST | [3.5](http://localhost:9000/schema/3_5) | 
+F187 | [ORWU16 HOSPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 HOSPLOC) | READ | DIR, FROM | 10 | LOCATION, QUERY | [44](http://localhost:9000/schema/44) | 
+F188 | [ORWU16 NEWPERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 NEWPERS) | READ | DIR, FROM, KEY | 10 | DUZ, QUERY | [200](http://localhost:9000/schema/200) | 
+F189 | [ORWU16 VALIDSIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 VALIDSIG) | UTILITY | X | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F189 | [ORWUL FV4DG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FV4DG) | READ | DGNM | 17 | QUERY | [101.43](http://localhost:9000/schema/101_43), [101.44](http://localhost:9000/schema/101_44) | 
-F190 | [ORWUL FVIDX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FVIDX) | READ | IEN, FROM | 7 | QUERY | [101.43](http://localhost:9000/schema/101_43), [101.44](http://localhost:9000/schema/101_44) | 
-F191 | [ORWUL FVSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FVSUB) | READ | IEN, FIRST, LAST | 6 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
-F192 | [ORWUL QVIDX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QVIDX) | READ | IEN, FROM | 7 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
-F193 | [ORWUL QVSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QVSUB) | READ | IEN, FIRST, LAST | 7 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
+F190 | [ORWUL FV4DG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FV4DG) | READ | DGNM | 17 | QUERY | [101.43](http://localhost:9000/schema/101_43), [101.44](http://localhost:9000/schema/101_44) | 
+F191 | [ORWUL FVIDX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FVIDX) | READ | IEN, FROM | 7 | QUERY | [101.43](http://localhost:9000/schema/101_43), [101.44](http://localhost:9000/schema/101_44) | 
+F192 | [ORWUL FVSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL FVSUB) | READ | IEN, FIRST, LAST | 6 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
+F193 | [ORWUL QVIDX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QVIDX) | READ | IEN, FROM | 7 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
+F194 | [ORWUL QVSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QVSUB) | READ | IEN, FIRST, LAST | 7 | QUERY | [101.44](http://localhost:9000/schema/101_44) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F194 | [PXRM REMINDER CATEGORY](http://vistadataproject.info/artifacts/vistaRPC documentation/PXRM REMINDER CATEGORY) | READ | CIEN | 30 | - | [811.7](http://localhost:9000/schema/811_7), [811.9](http://localhost:9000/schema/811_9) | 
-F195 | [PXRM REMINDERS AND CATEGORIES](http://vistadataproject.info/artifacts/vistaRPC documentation/PXRM REMINDERS AND CATEGORIES) | READ | &nbsp; | 17 | QUERY | [811.7](http://localhost:9000/schema/811_7), [811.9](http://localhost:9000/schema/811_9) | 
+F195 | [PXRM REMINDER CATEGORY](http://vistadataproject.info/artifacts/vistaRPC documentation/PXRM REMINDER CATEGORY) | READ | CIEN | 30 | - | [811.7](http://localhost:9000/schema/811_7), [811.9](http://localhost:9000/schema/811_9) | 
+F196 | [PXRM REMINDERS AND CATEGORIES](http://vistadataproject.info/artifacts/vistaRPC documentation/PXRM REMINDERS AND CATEGORIES) | READ | &nbsp; | 17 | QUERY | [811.7](http://localhost:9000/schema/811_7), [811.9](http://localhost:9000/schema/811_9) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F196 | [TIU AUTHORIZATION](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU AUTHORIZATION) | READ | TIUDA, TIUACT | 8 | DUZ, IS-A | [8925](http://localhost:9000/schema/8925) | 
-F197 | [TIU DIV AND CLASS INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU DIV AND CLASS INFO) | READ | USER | 13 | DUZ | [200](http://localhost:9000/schema/200), [8930](http://localhost:9000/schema/8930) | 
-F198 | [TIU FIELD DELETE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD DELETE) | __CHANGE__ | TIUDA | 5 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
-F199 | [TIU FIELD EXPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD EXPORT) | READ | FLDS | 8 | XML | [8927.1](http://localhost:9000/schema/8927_1) | 
-F200 | [TIU FIELD LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST) | READ | FROM, DIR | 9 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
-F201 | [TIU FIELD LIST IMPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST IMPORT) | __CHANGE__ | &nbsp; | 2 | REENTRANCY | [8927.1](http://localhost:9000/schema/8927_1) | 
-F202 | [TIU FIELD NAME IS UNIQUE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD NAME IS UNIQUE) | READ | NAME, IEN | 4 | IS-A | [8927.1](http://localhost:9000/schema/8927_1) | 
-F203 | [TIU FIELD SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD SAVE) | __CHANGE__ | TIUDA, TIUX | 24 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
-F204 | [TIU GET BOILERPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET BOILERPLATE) | READ | IEN | 6 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
-F205 | [TIU GET DEFAULT PROVIDER](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DEFAULT PROVIDER) | READ | HLOC, USER, TIUDT, TIUIEN | 7 | DUZ | [8925](http://localhost:9000/schema/8925) | 
-F206 | [TIU GET DS TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DS TITLES) | READ | &nbsp; | 1 | DUZ, DUZ TO K/META | [8925.98](http://localhost:9000/schema/8925_98), [8925.1](http://localhost:9000/schema/8925_1) | 
-F207 | [TIU GET LIST OF OBJECTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET LIST OF OBJECTS) | READ | &nbsp; | 6 | DUZ | [8925.1](http://localhost:9000/schema/8925_1) | 
-F208 | [TIU GET PN TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PN TITLES) | READ | &nbsp; | 1 | DUZ, DUZ TO K/META | [8925.98](http://localhost:9000/schema/8925_98), [8925.1](http://localhost:9000/schema/8925_1) | 
-F209 | [TIU ID CAN ATTACH](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU ID CAN ATTACH) | READ | TIUDA | 15 | IS-A | [8925](http://localhost:9000/schema/8925) | 
-F210 | [TIU ISPRF](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU ISPRF) | READ | TIUDA | 7 | IEN-LOOKUP, IS-A | [8925.1](http://localhost:9000/schema/8925_1) | 
-F211 | [TIU LOAD BOILERPLATE TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LOAD BOILERPLATE TEXT) | READ | TITLE, DFN, VSTR | 3 | ASSEMBLY, DUZ | [8925.1](http://localhost:9000/schema/8925_1) | 
-F212 | [TIU LONG LIST BOILERPLATED](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST BOILERPLATED) | READ | FROM, DIR | 12 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
-F213 | [TIU LONG LIST CLINPROC TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST CLINPROC TITLES) | READ | FROM, DIR | 5 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
-F214 | [TIU LONG LIST CONSULT TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST CONSULT TITLES) | READ | FROM, DIR | 2 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
-F215 | [TIU LONG LIST OF TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST OF TITLES) | READ | CLASS, FROM, DIR, IDNOTE | 7 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
-F216 | [TIU LONG LIST SURGERY TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST SURGERY TITLES) | READ | FROM, DIR, CLNAME | 3 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
-F217 | [TIU PERSONAL TITLE LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU PERSONAL TITLE LIST) | READ | DUZ, CLASS, TIUC, TIUFLG | 25 | DUZ, DUZ TO K/META | [8925.1](http://localhost:9000/schema/8925_1), [8925.98](http://localhost:9000/schema/8925_98) | 
-F218 | [TIU REQUIRES COSIGNATURE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REQUIRES COSIGNATURE) | READ | TIUTYP, TIUDA, TIUSER, TIUDT | 6 | DUZ, IS-A | [8925](http://localhost:9000/schema/8925) | 
-F219 | [TIU TEMPLATE ALL TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ALL TITLES) | READ | FROM, DIR | 10 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
-F220 | [TIU TEMPLATE CHECK BOILERPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE CHECK BOILERPLATE) | UTILITY | TIUX | 45 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
-F221 | [TIU TEMPLATE DELETE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE DELETE) | __CHANGE__ | TIUDA | 10 | - | [8927](http://localhost:9000/schema/8927) | 
-F222 | [TIU TEMPLATE GET DESCRIPTION](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GET DESCRIPTION) | READ | TIUDA | 4 | - | [8927](http://localhost:9000/schema/8927) | 
-F223 | [TIU TEMPLATE GETBOIL](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETBOIL) | READ | TIUDA | 9 | - | [8927](http://localhost:9000/schema/8927) | 
-F224 | [TIU TEMPLATE GETITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETITEMS) | READ | TIUDA | 10 | - | [8927](http://localhost:9000/schema/8927) | 
-F225 | [TIU TEMPLATE GETLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETLINK) | READ | LINK | 3 | - | [8927](http://localhost:9000/schema/8927) | 
-F226 | [TIU TEMPLATE GETPROOT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETPROOT) | READ | USER | 2 | - | [8927](http://localhost:9000/schema/8927) | 
-F227 | [TIU TEMPLATE GETROOTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETROOTS) | READ | USER | 4 | - | [8927](http://localhost:9000/schema/8927) | 
-F228 | [TIU TEMPLATE ISEDITOR](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ISEDITOR) | READ | ROOT, USER | 6 | - | [8927](http://localhost:9000/schema/8927) | 
-F229 | [TIU TEMPLATE LISTOWNR](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE LISTOWNR) | READ | TIUFROM, DIR | 12 | - | [8927](http://localhost:9000/schema/8927) | 
-F230 | [TIU USER CLASS LONG LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER CLASS LONG LIST) | READ | FROM, DIR | 4 | - | [8930](http://localhost:9000/schema/8930) | 
+F197 | [TIU AUTHORIZATION](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU AUTHORIZATION) | READ | TIUDA, TIUACT | 8 | DUZ, IS-A | [8925](http://localhost:9000/schema/8925) | 
+F198 | [TIU DIV AND CLASS INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU DIV AND CLASS INFO) | READ | USER | 13 | DUZ | [200](http://localhost:9000/schema/200), [8930](http://localhost:9000/schema/8930) | 
+F199 | [TIU FIELD DELETE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD DELETE) | __CHANGE__ | TIUDA | 5 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
+F200 | [TIU FIELD EXPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD EXPORT) | READ | FLDS | 8 | XML | [8927.1](http://localhost:9000/schema/8927_1) | 
+F201 | [TIU FIELD LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST) | READ | FROM, DIR | 9 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
+F202 | [TIU FIELD LIST IMPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST IMPORT) | __CHANGE__ | &nbsp; | 2 | REENTRANCY | [8927.1](http://localhost:9000/schema/8927_1) | 
+F203 | [TIU FIELD NAME IS UNIQUE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD NAME IS UNIQUE) | READ | NAME, IEN | 4 | IS-A | [8927.1](http://localhost:9000/schema/8927_1) | 
+F204 | [TIU FIELD SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD SAVE) | __CHANGE__ | TIUDA, TIUX | 24 | - | [8927.1](http://localhost:9000/schema/8927_1) | 
+F205 | [TIU GET BOILERPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET BOILERPLATE) | READ | IEN | 6 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
+F206 | [TIU GET DEFAULT PROVIDER](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DEFAULT PROVIDER) | READ | HLOC, USER, TIUDT, TIUIEN | 7 | DUZ | [8925](http://localhost:9000/schema/8925) | 
+F207 | [TIU GET DS TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DS TITLES) | READ | &nbsp; | 1 | DUZ, DUZ TO K/META | [8925.98](http://localhost:9000/schema/8925_98), [8925.1](http://localhost:9000/schema/8925_1) | 
+F208 | [TIU GET LIST OF OBJECTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET LIST OF OBJECTS) | READ | &nbsp; | 6 | DUZ | [8925.1](http://localhost:9000/schema/8925_1) | 
+F209 | [TIU GET PN TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PN TITLES) | READ | &nbsp; | 1 | DUZ, DUZ TO K/META | [8925.98](http://localhost:9000/schema/8925_98), [8925.1](http://localhost:9000/schema/8925_1) | 
+F210 | [TIU ID CAN ATTACH](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU ID CAN ATTACH) | READ | TIUDA | 15 | IS-A | [8925](http://localhost:9000/schema/8925) | 
+F211 | [TIU ISPRF](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU ISPRF) | READ | TIUDA | 7 | IEN-LOOKUP, IS-A | [8925.1](http://localhost:9000/schema/8925_1) | 
+F212 | [TIU LOAD BOILERPLATE TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LOAD BOILERPLATE TEXT) | READ | TITLE, DFN, VSTR | 3 | ASSEMBLY, DUZ | [8925.1](http://localhost:9000/schema/8925_1) | 
+F213 | [TIU LONG LIST BOILERPLATED](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST BOILERPLATED) | READ | FROM, DIR | 12 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
+F214 | [TIU LONG LIST CLINPROC TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST CLINPROC TITLES) | READ | FROM, DIR | 5 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
+F215 | [TIU LONG LIST CONSULT TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST CONSULT TITLES) | READ | FROM, DIR | 2 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
+F216 | [TIU LONG LIST OF TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST OF TITLES) | READ | CLASS, FROM, DIR, IDNOTE | 7 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
+F217 | [TIU LONG LIST SURGERY TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU LONG LIST SURGERY TITLES) | READ | FROM, DIR, CLNAME | 3 | LIST | [8925.1](http://localhost:9000/schema/8925_1) | 
+F218 | [TIU PERSONAL TITLE LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU PERSONAL TITLE LIST) | READ | DUZ, CLASS, TIUC, TIUFLG | 25 | DUZ, DUZ TO K/META | [8925.1](http://localhost:9000/schema/8925_1), [8925.98](http://localhost:9000/schema/8925_98) | 
+F219 | [TIU REQUIRES COSIGNATURE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REQUIRES COSIGNATURE) | READ | TIUTYP, TIUDA, TIUSER, TIUDT | 6 | DUZ, IS-A | [8925](http://localhost:9000/schema/8925) | 
+F220 | [TIU TEMPLATE ALL TITLES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ALL TITLES) | READ | FROM, DIR | 10 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
+F221 | [TIU TEMPLATE CHECK BOILERPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE CHECK BOILERPLATE) | UTILITY | TIUX | 45 | - | [8925.1](http://localhost:9000/schema/8925_1) | 
+F222 | [TIU TEMPLATE DELETE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE DELETE) | __CHANGE__ | TIUDA | 10 | - | [8927](http://localhost:9000/schema/8927) | 
+F223 | [TIU TEMPLATE GET DESCRIPTION](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GET DESCRIPTION) | READ | TIUDA | 4 | - | [8927](http://localhost:9000/schema/8927) | 
+F224 | [TIU TEMPLATE GETBOIL](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETBOIL) | READ | TIUDA | 9 | - | [8927](http://localhost:9000/schema/8927) | 
+F225 | [TIU TEMPLATE GETITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETITEMS) | READ | TIUDA | 10 | - | [8927](http://localhost:9000/schema/8927) | 
+F226 | [TIU TEMPLATE GETLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETLINK) | READ | LINK | 3 | - | [8927](http://localhost:9000/schema/8927) | 
+F227 | [TIU TEMPLATE GETPROOT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETPROOT) | READ | USER | 2 | - | [8927](http://localhost:9000/schema/8927) | 
+F228 | [TIU TEMPLATE GETROOTS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETROOTS) | READ | USER | 4 | - | [8927](http://localhost:9000/schema/8927) | 
+F229 | [TIU TEMPLATE ISEDITOR](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE ISEDITOR) | READ | ROOT, USER | 6 | - | [8927](http://localhost:9000/schema/8927) | 
+F230 | [TIU TEMPLATE LISTOWNR](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE LISTOWNR) | READ | TIUFROM, DIR | 12 | - | [8927](http://localhost:9000/schema/8927) | 
+F231 | [TIU USER CLASS LONG LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER CLASS LONG LIST) | READ | FROM, DIR | 4 | - | [8930](http://localhost:9000/schema/8930) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F231 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS DIVISION GET) | READ | IEN | 7 | DUZ | [200](http://localhost:9000/schema/200) | 
-F232 | [XUS DIVISION SET](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS DIVISION SET) | __CHANGE__ | DIV | 6 | DUZ | [200](http://localhost:9000/schema/200) | 
-F233 | [XUS GET USER INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET USER INFO) | READ | &nbsp; | 14 | DUZ | [200](http://localhost:9000/schema/200), [3.1](http://localhost:9000/schema/3_1), [49](http://localhost:9000/schema/49) | 
-F234 | [XUS INTRO MSG](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS INTRO MSG) | READ | &nbsp; | 1 | - | [8993.3](http://localhost:9000/schema/8993_3) | 
-F235 | [XUS PKI GET UPN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS PKI GET UPN) | READ | &nbsp; | 1 | DUZ | [200](http://localhost:9000/schema/200) | 
-F236 | [XUS PKI SET UPN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS PKI SET UPN) | __CHANGE__ | V | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
+F232 | [XUS DIVISION GET](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS DIVISION GET) | READ | IEN | 7 | DUZ | [200](http://localhost:9000/schema/200) | 
+F233 | [XUS DIVISION SET](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS DIVISION SET) | __CHANGE__ | DIV | 6 | DUZ | [200](http://localhost:9000/schema/200) | 
+F234 | [XUS GET USER INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET USER INFO) | READ | &nbsp; | 14 | DUZ | [200](http://localhost:9000/schema/200), [3.1](http://localhost:9000/schema/3_1), [49](http://localhost:9000/schema/49) | 
+F235 | [XUS INTRO MSG](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS INTRO MSG) | READ | &nbsp; | 1 | - | [8993.3](http://localhost:9000/schema/8993_3) | 
+F236 | [XUS PKI GET UPN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS PKI GET UPN) | READ | &nbsp; | 1 | DUZ | [200](http://localhost:9000/schema/200) | 
+F237 | [XUS PKI SET UPN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS PKI SET UPN) | __CHANGE__ | V | 3 | DUZ | [200](http://localhost:9000/schema/200) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-F237 | [XWB GET BROKER INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB GET BROKER INFO) | READ | &nbsp; | 1 | - | [8989.3](http://localhost:9000/schema/8989_3) | 
+F238 | [XWB GET BROKER INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB GET BROKER INFO) | READ | &nbsp; | 1 | - | [8989.3](http://localhost:9000/schema/8989_3) | 
 
 
-### Parameter and File (31)
+### Parameter and File (32)
 
 RPCs that access parameters and files.
 
 Category | Number
 --- | ---
-CHANGE | 5 (16.1%)
-READ | 24 (77.4%)
-UTILITY | 2 (6.5%)
+CHANGE | 5 (15.6%)
+READ | 25 (78.1%)
+UTILITY | 2 (6.3%)
 
 
 
@@ -560,7 +559,7 @@ PF5 | [ORQQPL SAVEVIEW](http://vistadataproject.info/artifacts/vistaRPC document
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 PF6 | [ORWCV1 COVERSHEET LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCV1 COVERSHEET LIST) | READ | &nbsp; | 11 | - | [101.24](http://localhost:9000/schema/101_24), [8994](http://localhost:9000/schema/8994) | ORWCV1 COVERSHEET LIST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF7 | [ORWDBA1 BASTATUS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 BASTATUS) | READ | &nbsp; | 3 | - | [9.7](http://localhost:9000/schema/9_7) | 
+PF7 | [ORWDBA1 BASTATUS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 BASTATUS) | READ | &nbsp; | 3 | - | [9.7](http://localhost:9000/schema/9_7) | OR BILLING AWARENESS STATUS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 PF8 | [ORWDCN32 NEWDLG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDCN32 NEWDLG) | READ | ORTYPE, ORLOC | 9 | - | [101.41](http://localhost:9000/schema/101_41) | ORWDX NEW CONSULT, ORWDX NEW PROCEDURE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -573,47 +572,49 @@ PF12 | [ORWDLR33 FUTURE LAB COLLECTS](http://vistadataproject.info/artifacts/vis
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 PF13 | [ORWDRA DEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDRA DEF) | READ | PATID | 9 | HARD CODED | [101.42](http://localhost:9000/schema/101_42), [101.43](http://localhost:9000/schema/101_43) | RA SUBMIT PROMPT
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF14 | [ORWDX2 DCREASON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX2 DCREASON) | READ | &nbsp; | 15 | QUERY | [100.02](http://localhost:9000/schema/100_02), [100.03](http://localhost:9000/schema/100_03), [9.4](http://localhost:9000/schema/9_4) | OR DC REASON LIST
+PF14 | [ORWDX WRLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX WRLST) | READ | LOC | 1 | LOCATION | [101.41](http://localhost:9000/schema/101_41) | ORWOR WRITE ORDERS LIST, ORWDX WRITE ORDERS LIST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF15 | [ORWDXQ GETQLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ GETQLST) | READ | DGRP, PRE | 7 | - | [101.41](http://localhost:9000/schema/101_41), [101.44](http://localhost:9000/schema/101_44) | ORWDQ QUICK VIEW
-PF16 | [ORWDXQ GETQNAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ GETQNAM) | READ | CRC | 4 | - | [101.41](http://localhost:9000/schema/101_41) | 
+PF15 | [ORWDX2 DCREASON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX2 DCREASON) | READ | &nbsp; | 15 | QUERY | [100.02](http://localhost:9000/schema/100_02), [100.03](http://localhost:9000/schema/100_03), [9.4](http://localhost:9000/schema/9_4) | OR DC REASON LIST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF17 | [ORWDXVB COMPORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB COMPORD) | READ | &nbsp; | 3 | - | [101.43](http://localhost:9000/schema/101_43) | OR VBECS COMPONENT ORDER
+PF16 | [ORWDXQ GETQLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ GETQLST) | READ | DGRP, PRE | 7 | - | [101.41](http://localhost:9000/schema/101_41), [101.44](http://localhost:9000/schema/101_44) | ORWDQ QUICK VIEW
+PF17 | [ORWDXQ GETQNAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ GETQNAM) | READ | CRC | 4 | - | [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF18 | [ORWDXVB3 DIAGORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 DIAGORD) | READ | &nbsp; | 3 | - | [101.43](http://localhost:9000/schema/101_43) | OR VBECS DIAGNOSTIC TEST ORDER
+PF18 | [ORWDXVB COMPORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB COMPORD) | READ | &nbsp; | 3 | - | [101.43](http://localhost:9000/schema/101_43) | OR VBECS COMPONENT ORDER
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF19 | [ORWGRPC GETDATES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETDATES) | UTILITY | REPORTID | 2 | - | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS INDV
+PF19 | [ORWDXVB3 DIAGORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXVB3 DIAGORD) | READ | &nbsp; | 3 | - | [101.43](http://localhost:9000/schema/101_43) | OR VBECS DIAGNOSTIC TEST ORDER
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF20 | [ORWOR VWGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR VWGET) | READ | &nbsp; | 19 | - | [100.98](http://localhost:9000/schema/100_98) | ORCH CONTEXT ORDERS
-PF21 | [ORWOR VWSET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR VWSET) | __CHANGE__ | VIEW | 5 | DUZ | [100.98](http://localhost:9000/schema/100_98) | ORCH CONTEXT ORDERS
+PF20 | [ORWGRPC GETDATES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC GETDATES) | UTILITY | REPORTID | 2 | - | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS INDV
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF22 | [ORWORDG GRPSEQB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG GRPSEQB) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | ORWOR CATEGORY SEQUENCE
-PF23 | [ORWORDG MAPSEQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG MAPSEQ) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | 
+PF21 | [ORWOR VWGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR VWGET) | READ | &nbsp; | 19 | - | [100.98](http://localhost:9000/schema/100_98) | ORCH CONTEXT ORDERS
+PF22 | [ORWOR VWSET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR VWSET) | __CHANGE__ | VIEW | 5 | DUZ | [100.98](http://localhost:9000/schema/100_98) | ORCH CONTEXT ORDERS
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF24 | [ORWPS1 NEWDLG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS1 NEWDLG) | READ | INPAT | 6 | - | [101.41](http://localhost:9000/schema/101_41) | ORWDX NEW MED
+PF23 | [ORWORDG GRPSEQB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG GRPSEQB) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | ORWOR CATEGORY SEQUENCE
+PF24 | [ORWORDG MAPSEQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG MAPSEQ) | READ | &nbsp; | 4 | - | [100.98](http://localhost:9000/schema/100_98) | ORWOR CATEGORY SEQUENCE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF25 | [ORWRP COLUMN HEADERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP COLUMN HEADERS) | READ | IFN | 8 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWCH COLUMNS REPORTS
-PF26 | [ORWRP LAB REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP LAB REPORT LISTS) | READ | &nbsp; | 11 | - | [101.24](http://localhost:9000/schema/101_24) | ORWRP REPORT LAB LIST
+PF25 | [ORWPS1 NEWDLG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS1 NEWDLG) | READ | INPAT | 6 | - | [101.41](http://localhost:9000/schema/101_41) | ORWDX NEW MED
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF27 | [ORWTPD ACTDF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD ACTDF) | __CHANGE__ | &nbsp; | 8 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS ALL
-PF28 | [ORWTPD SUINDV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD SUINDV) | __CHANGE__ | RPTS, VALUE | 7 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS INDV
+PF26 | [ORWRP COLUMN HEADERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP COLUMN HEADERS) | READ | IFN | 8 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWCH COLUMNS REPORTS
+PF27 | [ORWRP LAB REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP LAB REPORT LISTS) | READ | &nbsp; | 11 | - | [101.24](http://localhost:9000/schema/101_24) | ORWRP REPORT LAB LIST
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF29 | [ORWU USERINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU USERINFO) | READ | &nbsp; | 56 | DUZ | [101.13](http://localhost:9000/schema/101_13) | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK
+PF28 | [ORWTPD ACTDF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD ACTDF) | __CHANGE__ | &nbsp; | 8 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS ALL
+PF29 | [ORWTPD SUINDV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPD SUINDV) | __CHANGE__ | RPTS, VALUE | 7 | DUZ | [101.24](http://localhost:9000/schema/101_24) | ORWRP TIME/OCC LIMITS INDV
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF30 | [ORWUL QV4DG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QV4DG) | READ | DGRP | 6 | QUERY | [100.98](http://localhost:9000/schema/100_98) | ORWDQ QUICK VIEW
+PF30 | [ORWU USERINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU USERINFO) | READ | &nbsp; | 56 | DUZ | [101.13](http://localhost:9000/schema/101_13) | ORCH INITIAL TAB, ORCH USE LAST TAB, ORWOR AUTO CLOSE PT MSG, ORWOR AUTOSAVE NOTE, ORWOR BROADCAST MESSAGES, ORWOR DISABLE HOLD ORDERS, ORWOR DISABLE ORDERING, ORWOR DISABLE WEB ACCESS, ORWOR ENABLE VERIFY, ORWOR TIMEOUT CHART, ORWOR TIMEOUT COUNTDOWN, PXRM GEC STATUS CHECK
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-PF31 | [TIU REM DLG OK AS TEMPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REM DLG OK AS TEMPLATE) | READ | TIUIEN | 15 | DUZ FOR SERVICE, IS-A | [801.41](http://localhost:9000/schema/801_41) | TIU TEMPLATE REMINDER DIALOGS
+PF31 | [ORWUL QV4DG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUL QV4DG) | READ | DGRP | 6 | QUERY | [100.98](http://localhost:9000/schema/100_98) | ORWDQ QUICK VIEW
+&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+PF32 | [TIU REM DLG OK AS TEMPLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU REM DLG OK AS TEMPLATE) | READ | TIUIEN | 15 | DUZ FOR SERVICE, IS-A | [801.41](http://localhost:9000/schema/801_41) | TIU TEMPLATE REMINDER DIALOGS
 
 
-### Other (163)
+### Other (161)
 
 All other RPCs - don't access parameters or files. __Careful__ - in many cases these RPCs do use PARAMETERS/FILES but their definitions don't note that and so they end up (for now) in this table.
 
 Category | Number
 --- | ---
-CHANGE | 16 (9.8%)
-READ | 108 (66.3%)
-UTILITY | 39 (23.9%)
+CHANGE | 16 (9.9%)
+READ | 107 (66.5%)
+UTILITY | 38 (23.6%)
 
 
 
@@ -633,209 +634,206 @@ O6 | [ORECS01 GETDIV](http://vistadataproject.info/artifacts/vistaRPC documentat
 O7 | [OREVNTX1 GETDLG](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 GETDLG) | READ | DLGID | 8 | - |  | 
 O8 | [OREVNTX1 TYPEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 TYPEXT) | READ | DFN, EVT | 2 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O9 | [ORPRF CLEAR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF CLEAR) | UTILITY | &nbsp; | 2 | REENTRANCY |  | 
+O9 | [ORQ NULL LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQ NULL LIST) | UTILITY | &nbsp; | 2 | ALLJS, HARD CODED, RPCLOCKER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O10 | [ORQ NULL LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQ NULL LIST) | UTILITY | &nbsp; | 2 | ALLJS, HARD CODED, RPCLOCKER |  | 
+O10 | [ORQPT KILL RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT KILL RPL) | UTILITY | ORJ | 6 | HARD CODED, REENTRANCY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O11 | [ORQPT KILL RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT KILL RPL) | UTILITY | ORJ | 6 | HARD CODED, REENTRANCY |  | 
+O11 | [ORQQCN SVCLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQCN SVCLIST) | READ | FROM, DIR | 8 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O12 | [ORQQCN SVCLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQCN SVCLIST) | READ | FROM, DIR | 8 | - |  | 
+O12 | [ORQQPL PROBLEM LEX SEARCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROBLEM LEX SEARCH) | READ | FROM, N, VIEW, ORDATE | 62 | LEXICON |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O13 | [ORQQPL PROBLEM LEX SEARCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROBLEM LEX SEARCH) | READ | FROM, N, VIEW, ORDATE | 62 | LEXICON |  | 
+O13 | [ORQQPL4 LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL4 LEX) | READ | X, VIEW, ORDATE, ORINCSYN | 25 | LEXICON |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O14 | [ORQQPL4 LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL4 LEX) | READ | X, VIEW, ORDATE, ORINCSYN | 25 | LEXICON |  | 
+O14 | [ORQQPXRM EDUCATION SUMMARY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM EDUCATION SUMMARY) | READ | OREM | &nbsp; | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O15 | [ORQQPXRM EDUCATION SUMMARY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM EDUCATION SUMMARY) | READ | OREM | &nbsp; | - |  | 
+O15 | [ORQQVI2 VITALS HELP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS HELP) | READ | ORQTYPE | 1 | HARD CODED, UNSTRUCTURED READ |  | 
+O16 | [ORQQVI2 VITALS RATE CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS RATE CHECK) | UTILITY | ORQTYPE, ORQRATE, ORQUNIT | 1 | HARD CODED, IS-A |  | 
+O17 | [ORQQVI2 VITALS VALIDATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS VALIDATE) | UTILITY | ORQDATA | 6 | DUZ, EXTERNAL I/F, HARD CODED, IS-A |  | 
+O18 | [ORQQVI2 VITALS VALIDATE TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS VALIDATE TYPE) | UTILITY | ORQTYPE | 2 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O16 | [ORQQVI2 VITALS HELP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS HELP) | READ | ORQTYPE | 1 | HARD CODED, UNSTRUCTURED READ |  | 
-O17 | [ORQQVI2 VITALS RATE CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS RATE CHECK) | UTILITY | ORQTYPE, ORQRATE, ORQUNIT | 1 | HARD CODED, IS-A |  | 
-O18 | [ORQQVI2 VITALS VALIDATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS VALIDATE) | UTILITY | ORQDATA | 6 | DUZ, EXTERNAL I/F, HARD CODED, IS-A |  | 
-O19 | [ORQQVI2 VITALS VALIDATE TYPE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVI2 VITALS VALIDATE TYPE) | UTILITY | ORQTYPE | 2 | HARD CODED |  | 
+O19 | [ORWD DT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD DT) | UTILITY | X | 1 | HARD CODED |  | 
+O20 | [ORWD KEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD KEY) | READ | KEYNAME, USERID | 1 | DUZ, XUSEC |  | 
+O21 | [ORWD SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD SAVE) | __CHANGE__ | DFN, ORNP, LOC, DLG, ORWDACT, RSP | 12 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O20 | [ORWD DT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD DT) | UTILITY | X | 1 | HARD CODED |  | 
-O21 | [ORWD KEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD KEY) | READ | KEYNAME, USERID | 1 | DUZ, XUSEC |  | 
-O22 | [ORWD SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD SAVE) | __CHANGE__ | DFN, ORNP, LOC, DLG, ORWDACT, RSP | 12 | DUZ |  | 
+O22 | [ORWDBA2 DELPDL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA2 DELPDL) | __CHANGE__ | ORCIEN, ORDXA | 9 | DUZ |  | 
+O23 | [ORWDBA2 GETPDL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA2 GETPDL) | READ | ORCIEN | 14 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O23 | [ORWDBA2 DELPDL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA2 DELPDL) | __CHANGE__ | ORCIEN, ORDXA | 9 | DUZ |  | 
-O24 | [ORWDBA2 GETPDL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA2 GETPDL) | READ | ORCIEN | 14 | DUZ |  | 
+O24 | [ORWDBA7 GETIEN9](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA7 GETIEN9) | READ | ICD9 | 1 | IEN-LOOKUP |  | 
+O25 | [ORWDBA7 ISWITCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA7 ISWITCH) | READ | DFN | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O25 | [ORWDBA7 GETIEN9](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA7 GETIEN9) | READ | ICD9 | 1 | IEN-LOOKUP |  | 
-O26 | [ORWDBA7 ISWITCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA7 ISWITCH) | READ | DFN | 1 | DUZ |  | 
+O26 | [ORWDCSLT LOOK200](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDCSLT LOOK200) | READ | X | 2 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O27 | [ORWDCSLT LOOK200](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDCSLT LOOK200) | READ | X | 2 | DUZ |  | 
+O27 | [ORWDFH NFSLOC READY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDFH NFSLOC READY) | READ | ORLOC | 3 | IS-A, LOCATION |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O28 | [ORWDFH NFSLOC READY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDFH NFSLOC READY) | READ | ORLOC | 3 | IS-A, LOCATION |  | 
+O28 | [ORWDGX VMDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDGX VMDEF) | READ | &nbsp; | 3 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O29 | [ORWDGX VMDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDGX VMDEF) | READ | &nbsp; | 3 | - |  | 
+O29 | [ORWDLR STOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR STOP) | UTILITY | X2 | 3 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O30 | [ORWDLR STOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR STOP) | UTILITY | X2 | 3 | HARD CODED |  | 
+O30 | [ORWDLR32 IMMED COLLECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR32 IMMED COLLECT) | READ | &nbsp; | 1 | DUZ, LOCATION, UNSTRUCTURED READ |  | 
+O31 | [ORWDLR32 STOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR32 STOP) | UTILITY | X2 | 2 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O31 | [ORWDLR32 IMMED COLLECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR32 IMMED COLLECT) | READ | &nbsp; | 1 | DUZ, LOCATION, UNSTRUCTURED READ |  | 
-O32 | [ORWDLR32 STOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR32 STOP) | UTILITY | X2 | 2 | HARD CODED |  | 
+O32 | [ORWDOR VALNUM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDOR VALNUM) | UTILITY | X, DOM | 9 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O33 | [ORWDOR VALNUM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDOR VALNUM) | UTILITY | X, DOM | 9 | HARD CODED |  | 
+O33 | [ORWDPS2 DAY2QTY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 DAY2QTY) | UTILITY | DAY, UPD, SCH, DUR, PAT, DRG | 15 | HARD CODED |  | 
+O34 | [ORWDPS2 SCHREQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 SCHREQ) | READ | OI, RTE, DRG | 3 | IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O34 | [ORWDPS2 DAY2QTY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 DAY2QTY) | UTILITY | DAY, UPD, SCH, DUR, PAT, DRG | 15 | HARD CODED |  | 
-O35 | [ORWDPS2 SCHREQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 SCHREQ) | READ | OI, RTE, DRG | 3 | IS-A |  | 
+O35 | [ORWDPS32 DLGSLCT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 DLGSLCT) | READ | PSTYPE, DFN, LOCIEN | 11 | - |  | 
+O36 | [ORWDPS32 VALQTY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALQTY) | UTILITY | X | 2 | HARD CODED, IS-A |  | 
+O37 | [ORWDPS32 VALRATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALRATE) | UTILITY | X | 3 | HARD CODED, IS-A |  | 
+O38 | [ORWDPS32 VALSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALSCH) | UTILITY | X, PSTYPE | 8 | HARD CODED, IS-A |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O36 | [ORWDPS32 DLGSLCT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 DLGSLCT) | READ | PSTYPE, DFN, LOCIEN | 11 | - |  | 
-O37 | [ORWDPS32 VALQTY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALQTY) | UTILITY | X | 2 | HARD CODED, IS-A |  | 
-O38 | [ORWDPS32 VALRATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALRATE) | UTILITY | X | 3 | HARD CODED, IS-A |  | 
-O39 | [ORWDPS32 VALSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS32 VALSCH) | UTILITY | X, PSTYPE | 8 | HARD CODED, IS-A |  | 
+O39 | [ORWDRA32 DEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDRA32 DEF) | READ | PATID, EVTDIV, IMGTYP | 10 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O40 | [ORWDRA32 DEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDRA32 DEF) | READ | PATID, EVTDIV, IMGTYP | 10 | HARD CODED |  | 
+O40 | [ORWDX LOADRSP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOADRSP) | READ | RSPID, TRANS | 9 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O41 | [ORWDX DLGDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DLGDEF) | READ | DLG | 1 | - |  | 
-O42 | [ORWDX LOADRSP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOADRSP) | READ | RSPID, TRANS | 9 | - |  | 
+O41 | [ORWDXQ PUTQNAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ PUTQNAM) | __CHANGE__ | DLG, QNAM | 1 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O43 | [ORWDXQ PUTQNAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXQ PUTQNAM) | __CHANGE__ | DLG, QNAM | 1 | HARD CODED |  | 
+O42 | [ORWGN IDTVALID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN IDTVALID) | READ | CSYS | 3 | - |  | 
+O43 | [ORWGN MAXFRQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN MAXFRQ) | READ | ORTRM | 9 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O44 | [ORWGN IDTVALID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN IDTVALID) | READ | CSYS | 3 | - |  | 
-O45 | [ORWGN MAXFRQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGN MAXFRQ) | READ | ORTRM | 9 | - |  | 
+O44 | [ORWGRPC CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC CLASS) | READ | TYPE | 2 | - |  | 
+O45 | [ORWGRPC TAX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TAX) | READ | ALL, REMTAX | 2 | - |  | 
+O46 | [ORWGRPC TESTING](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TESTING) | UTILITY | &nbsp; | 2 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O46 | [ORWGRPC CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC CLASS) | READ | TYPE | 2 | - |  | 
-O47 | [ORWGRPC TAX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TAX) | READ | ALL, REMTAX | 2 | - |  | 
-O48 | [ORWGRPC TESTING](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TESTING) | UTILITY | &nbsp; | 2 | HARD CODED |  | 
+O47 | [ORWLEX GETFREQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLEX GETFREQ) | UTILITY | ORSRCHTX | 2 | HARD CODED |  | 
+O48 | [ORWLEX GETI10DX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLEX GETI10DX) | UTILITY | ORX, ORDT | 32 | FMUTILITY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O49 | [ORWLEX GETFREQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLEX GETFREQ) | UTILITY | ORSRCHTX | 2 | HARD CODED |  | 
-O50 | [ORWLEX GETI10DX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLEX GETI10DX) | UTILITY | ORX, ORDT | 32 | FMUTILITY |  | 
+O49 | [ORWLR REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLR REPORT LISTS) | UTILITY | &nbsp; | 5 | FMUTILITY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O51 | [ORWLR REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLR REPORT LISTS) | UTILITY | &nbsp; | 5 | FMUTILITY |  | 
+O50 | [ORWLRR TG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR TG) | READ | USER | 1 | DUZ |  | 
+O51 | [ORWLRR UTGA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGA) | READ | ORTESTS | 1 | DUZ, QUERY |  | 
+O52 | [ORWLRR UTGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGD) | READ | TGRP | 1 | DUZ, QUERY |  | 
+O53 | [ORWLRR UTGR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGR) | READ | ORTESTS, TGRP | 1 | DUZ, QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O52 | [ORWLRR TG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR TG) | READ | USER | 1 | DUZ |  | 
-O53 | [ORWLRR UTGA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGA) | READ | ORTESTS | 1 | DUZ, QUERY |  | 
-O54 | [ORWLRR UTGD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGD) | READ | TGRP | 1 | DUZ, QUERY |  | 
-O55 | [ORWLRR UTGR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLRR UTGR) | READ | ORTESTS, TGRP | 1 | DUZ, QUERY |  | 
+O54 | [ORWNSS CHKSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS CHKSCH) | UTILITY | SCH | 3 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O56 | [ORWNSS CHKSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWNSS CHKSCH) | UTILITY | SCH | 3 | HARD CODED |  | 
+O55 | [ORWOR1 GETDEA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR1 GETDEA) | READ | ORUSER | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O57 | [ORWOR1 GETDEA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR1 GETDEA) | READ | ORUSER | 1 | DUZ |  | 
+O56 | [ORWORDG REVSTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG REVSTS) | READ | &nbsp; | 1 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O58 | [ORWORDG REVSTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORDG REVSTS) | READ | &nbsp; | 1 | - |  | 
+O57 | [ORWPCE ACTIVE CODE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ACTIVE CODE) | READ | ORCODE, ORAPP, ORDATE | 9 | - |  | 
+O58 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ACTIVE PROV) | READ | ORWPROV, ORWDT | 1 | DUZ, IS-A |  | 
+O59 | [ORWPCE CPTMODS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE CPTMODS) | READ | ORCPTCOD, ORDATE | 7 | - |  | 
+O60 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE DIAG) | READ | CLINIC, ORDATE | 5 | HARD CODED, LOCATION |  | 
+O61 | [ORWPCE GAFURL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GAFURL) | READ | &nbsp; | 5 | ALLJS, HARD CODED |  | 
+O62 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET DX TEXT) | UTILITY | NARR, CODE | 1 | FMUTILITY |  | 
+O63 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET SET OF CODES) | READ | ORWFILE, ORWFIELD, ORWNULL | 10 | QUERY |  | 
+O64 | [ORWPCE GETMOD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GETMOD) | READ | ORMODIEN, ORDATE | 4 | - |  | 
+O65 | [ORWPCE HASCPT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HASCPT) | READ | ORLIST | 7 | - |  | 
+O66 | [ORWPCE HF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HF) | READ | CLINIC | 1 | LOCATION |  | 
+O67 | [ORWPCE IMM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE IMM) | READ | CLINIC | 1 | LOCATION |  | 
+O68 | [ORWPCE ISCLINIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ISCLINIC) | READ | ORLOC | 4 | IS-A, LOCATION |  | 
+O69 | [ORWPCE LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LEX) | READ | X, APP, ORDATE | 19 | - |  | 
+O70 | [ORWPCE LEXCODE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LEXCODE) | READ | IEN, APP, ORDATE | 5 | - |  | 
+O71 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MHCLINIC) | READ | ORIEN | 2 | IS-A, LOCATION |  | 
+O72 | [ORWPCE PED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE PED) | READ | CLINIC | 1 | LOCATION |  | 
+O73 | [ORWPCE PROC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE PROC) | READ | CLINIC, ORDATE | 12 | LOCATION |  | 
+O74 | [ORWPCE SK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SK) | READ | CLINIC | 1 | LOCATION |  | 
+O75 | [ORWPCE TRT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE TRT) | READ | CLINIC | 1 | LOCATION |  | 
+O76 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE VISIT) | READ | CLINIC, ORDATE | 2 | LOCATION |  | 
+O77 | [ORWPCE XAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE XAM) | READ | CLINIC | 1 | LOCATION |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O59 | [ORWPCE ACTIVE CODE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ACTIVE CODE) | READ | ORCODE, ORAPP, ORDATE | 9 | - |  | 
-O60 | [ORWPCE ACTIVE PROV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ACTIVE PROV) | READ | ORWPROV, ORWDT | 1 | DUZ, IS-A |  | 
-O61 | [ORWPCE CPTMODS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE CPTMODS) | READ | ORCPTCOD, ORDATE | 7 | - |  | 
-O62 | [ORWPCE DIAG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE DIAG) | READ | CLINIC, ORDATE | 5 | HARD CODED, LOCATION |  | 
-O63 | [ORWPCE GAFURL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GAFURL) | READ | &nbsp; | 5 | ALLJS, HARD CODED |  | 
-O64 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET DX TEXT) | UTILITY | NARR, CODE | 1 | FMUTILITY |  | 
-O65 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET SET OF CODES) | READ | ORWFILE, ORWFIELD, ORWNULL | 10 | QUERY |  | 
-O66 | [ORWPCE GETMOD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GETMOD) | READ | ORMODIEN, ORDATE | 4 | - |  | 
-O67 | [ORWPCE HASCPT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HASCPT) | READ | ORLIST | 7 | - |  | 
-O68 | [ORWPCE HF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HF) | READ | CLINIC | 1 | LOCATION |  | 
-O69 | [ORWPCE IMM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE IMM) | READ | CLINIC | 1 | LOCATION |  | 
-O70 | [ORWPCE ISCLINIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ISCLINIC) | READ | ORLOC | 4 | IS-A, LOCATION |  | 
-O71 | [ORWPCE LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LEX) | READ | X, APP, ORDATE | 19 | - |  | 
-O72 | [ORWPCE LEXCODE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LEXCODE) | READ | IEN, APP, ORDATE | 5 | - |  | 
-O73 | [ORWPCE MHCLINIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE MHCLINIC) | READ | ORIEN | 2 | IS-A, LOCATION |  | 
-O74 | [ORWPCE PED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE PED) | READ | CLINIC | 1 | LOCATION |  | 
-O75 | [ORWPCE PROC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE PROC) | READ | CLINIC, ORDATE | 12 | LOCATION |  | 
-O76 | [ORWPCE SK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SK) | READ | CLINIC | 1 | LOCATION |  | 
-O77 | [ORWPCE TRT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE TRT) | READ | CLINIC | 1 | LOCATION |  | 
-O78 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE VISIT) | READ | CLINIC, ORDATE | 2 | LOCATION |  | 
-O79 | [ORWPCE XAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE XAM) | READ | CLINIC | 1 | LOCATION |  | 
+O78 | [ORWPCE4 LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE4 LEX) | READ | X, APP, ORDATE, ORXTND, ORINCSYN | 17 | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O80 | [ORWPCE4 LEX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE4 LEX) | READ | X, APP, ORDATE, ORXTND, ORINCSYN | 17 | QUERY |  | 
+O79 | [ORWPT CLINRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT CLINRNG) | READ | &nbsp; | 16 | ALLJS, HARD CODED, LOCATION, RPCLOCKER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O81 | [ORWPT CLINRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT CLINRNG) | READ | &nbsp; | 16 | ALLJS, HARD CODED, LOCATION, RPCLOCKER |  | 
+O80 | [ORWPT16 PSCNVT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT16 PSCNVT) | READ | DFN | 1 | ALLJS, HARD CODED, RPCLOCKER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O82 | [ORWPT16 PSCNVT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT16 PSCNVT) | READ | DFN | 1 | ALLJS, HARD CODED, RPCLOCKER |  | 
+O81 | [ORWRP REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP REPORT LISTS) | READ | &nbsp; | 6 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O83 | [ORWRP REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP REPORT LISTS) | READ | &nbsp; | 6 | - |  | 
+O82 | [ORWRP16 REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP16 REPORT LISTS) | READ | &nbsp; | 6 | - |  | 
+O83 | [ORWRP16 REPORT TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP16 REPORT TEXT) | READ | DFN, RPTID, HSTYPE, DTRANGE, SECTION | 11 | UNSTRUCTURED READ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O84 | [ORWRP16 REPORT LISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP16 REPORT LISTS) | READ | &nbsp; | 6 | - |  | 
-O85 | [ORWRP16 REPORT TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP16 REPORT TEXT) | READ | DFN, RPTID, HSTYPE, DTRANGE, SECTION | 11 | UNSTRUCTURED READ |  | 
+O84 | [ORWRP2 COMPABV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 COMPABV) | READ | &nbsp; | 6 | - |  | 
+O85 | [ORWRP2 COMPDISP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 COMPDISP) | READ | &nbsp; | 6 | - |  | 
+O86 | [ORWRP2 HS COMPONENT SUBS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMPONENT SUBS) | READ | ORSUB | 2 | - |  | 
+O87 | [ORWRP2 HS COMPONENTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMPONENTS) | READ | &nbsp; | 1 | - |  | 
+O88 | [ORWRP2 HS FILE LOOKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS FILE LOOKUP) | READ | ORFILE, ORFROM, ORDIR | 1 | - |  | 
+O89 | [ORWRP2 HS SUBITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS SUBITEMS) | READ | ORTEST | 1 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O86 | [ORWRP2 COMPABV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 COMPABV) | READ | &nbsp; | 6 | - |  | 
-O87 | [ORWRP2 COMPDISP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 COMPDISP) | READ | &nbsp; | 6 | - |  | 
-O88 | [ORWRP2 HS COMPONENT SUBS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMPONENT SUBS) | READ | ORSUB | 2 | - |  | 
-O89 | [ORWRP2 HS COMPONENTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS COMPONENTS) | READ | &nbsp; | 1 | - |  | 
-O90 | [ORWRP2 HS FILE LOOKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS FILE LOOKUP) | READ | ORFILE, ORFROM, ORDIR | 1 | - |  | 
-O91 | [ORWRP2 HS SUBITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP2 HS SUBITEMS) | READ | ORTEST | 1 | - |  | 
+O90 | [ORWSR SHOW OPTOP WHEN SIGNING](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SHOW OPTOP WHEN SIGNING) | READ | ORCASE | 2 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O92 | [ORWSR SHOW OPTOP WHEN SIGNING](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWSR SHOW OPTOP WHEN SIGNING) | READ | ORCASE | 2 | HARD CODED |  | 
+O91 | [ORWTIU CANLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU CANLINK) | READ | ORTITLE | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O93 | [ORWTIU CANLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTIU CANLINK) | READ | ORTITLE | 1 | DUZ |  | 
+O92 | [ORWTPP GETCOMBO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETCOMBO) | READ | &nbsp; | 1 | DUZ |  | 
+O93 | [ORWTPP GETCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETCOS) | READ | FROM, DIR, VISITORS | 2 | DUZ |  | 
+O94 | [ORWTPP GETDCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETDCOS) | READ | &nbsp; | 1 | DUZ |  | 
+O95 | [ORWTPP GETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETIMG) | READ | &nbsp; | 1 | DUZ |  | 
+O96 | [ORWTPP GETNOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETNOT) | READ | &nbsp; | 1 | DUZ |  | 
+O97 | [ORWTPP GETNOTO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETNOTO) | READ | &nbsp; | 1 | DUZ |  | 
+O98 | [ORWTPP GETOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETOC) | READ | &nbsp; | 1 | DUZ |  | 
+O99 | [ORWTPP GETOTHER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETOTHER) | READ | &nbsp; | 1 | DUZ |  | 
+O100 | [ORWTPP GETREM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETREM) | READ | &nbsp; | 1 | DUZ |  | 
+O101 | [ORWTPP GETSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETSUB) | READ | &nbsp; | 1 | DUZ |  | 
+O102 | [ORWTPP GETSURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETSURR) | READ | &nbsp; | 1 | DUZ |  | 
+O103 | [ORWTPP GETTD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETTD) | READ | CLASS | 1 | DUZ |  | 
+O104 | [ORWTPP GETTU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETTU) | READ | CLASS | 1 | DUZ |  | 
+O105 | [ORWTPP LSDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP LSDEF) | READ | &nbsp; | 1 | DUZ |  | 
+O106 | [ORWTPP NEWLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP NEWLIST) | READ | LISTNAME, ORVIZ | 1 | DUZ |  | 
+O107 | [ORWTPP REMLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP REMLIST) | __CHANGE__ | VALUE | 1 | DUZ |  | 
+O108 | [ORWTPP SAVECD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVECD) | __CHANGE__ | INFO | 1 | DUZ |  | 
+O109 | [ORWTPP SAVECS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVECS) | __CHANGE__ | INFO | 1 | DUZ |  | 
+O110 | [ORWTPP SAVELIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVELIST) | __CHANGE__ | PLIST, LISTNUM, ORVIZ | 1 | DUZ |  | 
+O111 | [ORWTPP SAVENOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVENOT) | __CHANGE__ | VALUES | 1 | DUZ |  | 
+O112 | [ORWTPP SAVENOTO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVENOTO) | __CHANGE__ | INFO | 1 | DUZ |  | 
+O113 | [ORWTPP SAVEOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVEOC) | __CHANGE__ | VALUES | 1 | DUZ |  | 
+O114 | [ORWTPP SAVEPLD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVEPLD) | __CHANGE__ | INFO | 1 | DUZ |  | 
+O115 | [ORWTPP SAVESURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVESURR) | __CHANGE__ | INFO | 1 | DUZ |  | 
+O116 | [ORWTPP SAVET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVET) | __CHANGE__ | CLASS, DEFAULT, VALUES | 1 | DUZ |  | 
+O117 | [ORWTPP SETCOMBO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETCOMBO) | UTILITY | VALUES | 2 | DUZ |  | 
+O118 | [ORWTPP SETDCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETDCOS) | UTILITY | VALUE | 1 | DUZ |  | 
+O119 | [ORWTPP SETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETIMG) | UTILITY | MAX, START, STOP | 1 | DUZ |  | 
+O120 | [ORWTPP SETOTHER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETOTHER) | UTILITY | INFO | 1 | DUZ |  | 
+O121 | [ORWTPP SETREM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETREM) | UTILITY | VALUES | 1 | DUZ |  | 
+O122 | [ORWTPP SETSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETSUB) | UTILITY | VALUE | 1 | DUZ |  | 
+O123 | [ORWTPP SORTDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SORTDEF) | READ | &nbsp; | 1 | DUZ |  | 
+O124 | [ORWTPP TEAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP TEAMS) | READ | &nbsp; | 1 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O94 | [ORWTPP GETCOMBO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETCOMBO) | READ | &nbsp; | 1 | DUZ |  | 
-O95 | [ORWTPP GETCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETCOS) | READ | FROM, DIR, VISITORS | 2 | DUZ |  | 
-O96 | [ORWTPP GETDCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETDCOS) | READ | &nbsp; | 1 | DUZ |  | 
-O97 | [ORWTPP GETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETIMG) | READ | &nbsp; | 1 | DUZ |  | 
-O98 | [ORWTPP GETNOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETNOT) | READ | &nbsp; | 1 | DUZ |  | 
-O99 | [ORWTPP GETNOTO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETNOTO) | READ | &nbsp; | 1 | DUZ |  | 
-O100 | [ORWTPP GETOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETOC) | READ | &nbsp; | 1 | DUZ |  | 
-O101 | [ORWTPP GETOTHER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETOTHER) | READ | &nbsp; | 1 | DUZ |  | 
-O102 | [ORWTPP GETREM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETREM) | READ | &nbsp; | 1 | DUZ |  | 
-O103 | [ORWTPP GETSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETSUB) | READ | &nbsp; | 1 | DUZ |  | 
-O104 | [ORWTPP GETSURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETSURR) | READ | &nbsp; | 1 | DUZ |  | 
-O105 | [ORWTPP GETTD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETTD) | READ | CLASS | 1 | DUZ |  | 
-O106 | [ORWTPP GETTU](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP GETTU) | READ | CLASS | 1 | DUZ |  | 
-O107 | [ORWTPP LSDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP LSDEF) | READ | &nbsp; | 1 | DUZ |  | 
-O108 | [ORWTPP NEWLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP NEWLIST) | READ | LISTNAME, ORVIZ | 1 | DUZ |  | 
-O109 | [ORWTPP REMLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP REMLIST) | __CHANGE__ | VALUE | 1 | DUZ |  | 
-O110 | [ORWTPP SAVECD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVECD) | __CHANGE__ | INFO | 1 | DUZ |  | 
-O111 | [ORWTPP SAVECS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVECS) | __CHANGE__ | INFO | 1 | DUZ |  | 
-O112 | [ORWTPP SAVELIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVELIST) | __CHANGE__ | PLIST, LISTNUM, ORVIZ | 1 | DUZ |  | 
-O113 | [ORWTPP SAVENOT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVENOT) | __CHANGE__ | VALUES | 1 | DUZ |  | 
-O114 | [ORWTPP SAVENOTO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVENOTO) | __CHANGE__ | INFO | 1 | DUZ |  | 
-O115 | [ORWTPP SAVEOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVEOC) | __CHANGE__ | VALUES | 1 | DUZ |  | 
-O116 | [ORWTPP SAVEPLD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVEPLD) | __CHANGE__ | INFO | 1 | DUZ |  | 
-O117 | [ORWTPP SAVESURR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVESURR) | __CHANGE__ | INFO | 1 | DUZ |  | 
-O118 | [ORWTPP SAVET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SAVET) | __CHANGE__ | CLASS, DEFAULT, VALUES | 1 | DUZ |  | 
-O119 | [ORWTPP SETCOMBO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETCOMBO) | UTILITY | VALUES | 2 | DUZ |  | 
-O120 | [ORWTPP SETDCOS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETDCOS) | UTILITY | VALUE | 1 | DUZ |  | 
-O121 | [ORWTPP SETIMG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETIMG) | UTILITY | MAX, START, STOP | 1 | DUZ |  | 
-O122 | [ORWTPP SETOTHER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETOTHER) | UTILITY | INFO | 1 | DUZ |  | 
-O123 | [ORWTPP SETREM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETREM) | UTILITY | VALUES | 1 | DUZ |  | 
-O124 | [ORWTPP SETSUB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SETSUB) | UTILITY | VALUE | 1 | DUZ |  | 
-O125 | [ORWTPP SORTDEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP SORTDEF) | READ | &nbsp; | 1 | DUZ |  | 
-O126 | [ORWTPP TEAMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWTPP TEAMS) | READ | &nbsp; | 1 | DUZ |  | 
+O125 | [ORWU DEFAULT DIVISION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DEFAULT DIVISION) | READ | &nbsp; | 12 | DUZ, LOCATION |  | 
+O126 | [ORWU DEVICE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DEVICE) | READ | FROM, DIR | 16 | - |  | 
+O127 | [ORWU DT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DT) | UTILITY | X, %DT | 2 | ALLJS, HARD CODED, RPCLOCKER |  | 
+O128 | [ORWU GBLREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU GBLREF) | UTILITY | FN | 2 | FMUTILITY |  | 
+O129 | [ORWU GENERIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU GENERIC) | UTILITY | FROM, DIR, REF | 4 | FMUTILITY |  | 
+O130 | [ORWU HAS OPTION ACCESS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HAS OPTION ACCESS) | READ | OPTION | 3 | DUZ |  | 
+O131 | [ORWU HASKEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HASKEY) | READ | KEY | 1 | DUZ |  | 
+O132 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU NEWPERS) | READ | ORFROM, ORDIR, ORKEY, ORDATE, ORVIZ, ORALL | 1 | DUZ |  | 
+O133 | [ORWU VALDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VALDT) | UTILITY | X, %DT | 1 | ALLJS, HARD CODED, RPCLOCKER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O127 | [ORWU DEFAULT DIVISION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DEFAULT DIVISION) | READ | &nbsp; | 12 | DUZ, LOCATION |  | 
-O128 | [ORWU DEVICE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DEVICE) | READ | FROM, DIR | 16 | - |  | 
-O129 | [ORWU DT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU DT) | UTILITY | X, %DT | 2 | ALLJS, HARD CODED, RPCLOCKER |  | 
-O130 | [ORWU GBLREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU GBLREF) | UTILITY | FN | 2 | FMUTILITY |  | 
-O131 | [ORWU GENERIC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU GENERIC) | UTILITY | FROM, DIR, REF | 4 | FMUTILITY |  | 
-O132 | [ORWU HAS OPTION ACCESS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HAS OPTION ACCESS) | READ | OPTION | 3 | DUZ |  | 
-O133 | [ORWU HASKEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU HASKEY) | READ | KEY | 1 | DUZ |  | 
-O134 | [ORWU NEWPERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU NEWPERS) | READ | ORFROM, ORDIR, ORKEY, ORDATE, ORVIZ, ORALL | 1 | DUZ |  | 
-O135 | [ORWU VALDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU VALDT) | UTILITY | X, %DT | 1 | ALLJS, HARD CODED, RPCLOCKER |  | 
+O134 | [ORWU1 NAMECVT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU1 NAMECVT) | READ | IEN | 4 | DUZ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O136 | [ORWU1 NAMECVT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU1 NAMECVT) | READ | IEN | 4 | DUZ |  | 
+O135 | [ORWU16 USERINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 USERINFO) | READ | &nbsp; | 3 | DUZ |  | 
+O136 | [ORWU16 VALDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 VALDT) | UTILITY | X, %DT | 1 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O137 | [ORWU16 USERINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 USERINFO) | READ | &nbsp; | 3 | DUZ |  | 
-O138 | [ORWU16 VALDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU16 VALDT) | UTILITY | X, %DT | 1 | HARD CODED |  | 
+O137 | [ORWUX SYMTAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUX SYMTAB) | UTILITY | &nbsp; | 17 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O139 | [ORWUX SYMTAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUX SYMTAB) | UTILITY | &nbsp; | 17 | HARD CODED |  | 
-&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O140 | [TIU CAN CHANGE COSIGNER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU CAN CHANGE COSIGNER?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
-O141 | [TIU FIELD CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD CHECK) | UTILITY | &nbsp; | 37 | HARD CODED |  | 
-O142 | [TIU FIELD DOLMTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD DOLMTEXT) | UTILITY | TIULIST | 4 | FMUTILITY |  | 
-O143 | [TIU FIELD IMPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD IMPORT) | __CHANGE__ | XMLTMP | 1 | XML |  | 
-O144 | [TIU FIELD LIST ADD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST ADD) | UTILITY | IN | 6 | REENTRANCY |  | 
-O145 | [TIU FIELD LOAD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LOAD) | READ | FLD | 4 | - |  | 
-O146 | [TIU FIELD LOAD BY IEN](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LOAD BY IEN) | READ | FLDIEN | 2 | - |  | 
-O147 | [TIU GET DS URGENCIES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DS URGENCIES) | READ | &nbsp; | 3 | HARD CODED |  | 
-O148 | [TIU GET PERSONAL PREFERENCES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PERSONAL PREFERENCES) | READ | USER | 1 | DUZ |  | 
-O149 | [TIU GET PRF TITLE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PRF TITLE) | READ | PTDFN, FLAGID | 6 | - |  | 
-O150 | [TIU GET PRINT NAME](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PRINT NAME) | READ | TIUTYPE | 1 | - |  | 
-O151 | [TIU GET SITE PARAMETERS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET SITE PARAMETERS) | READ | &nbsp; | 3 | LOCATION |  | 
-O152 | [TIU IDENTIFY CLINPROC CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CLINPROC CLASS) | READ | &nbsp; | 1 | - |  | 
-O153 | [TIU IDENTIFY CONSULTS CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CONSULTS CLASS) | READ | &nbsp; | 1 | IEN-LOOKUP |  | 
-O154 | [TIU IDENTIFY SURGERY CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY SURGERY CLASS) | READ | CLNAME | 2 | IEN-LOOKUP |  | 
-O155 | [TIU IS THIS A CLINPROC?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CLINPROC?) | READ | TITLE | 5 | IS-A |  | 
-O156 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CONSULT?) | READ | TITLE | 4 | IS-A |  | 
-O157 | [TIU IS THIS A SURGERY?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A SURGERY?) | READ | TITLE | 5 | IS-A |  | 
-O158 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A PROVIDER?) | READ | USER, DATE | 3 | DUZ, IS-A |  | 
-O159 | [TIU IS USER A USR PROVIDER](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A USR PROVIDER) | READ | USER, DATE | 4 | DUZ, IS-A |  | 
-O160 | [TIU TEMPLATE CREATE/MODIFY](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE CREATE/MODIFY) | __CHANGE__ | TIUDA, TIUX | 11 | - |  | 
-O161 | [TIU TEMPLATE GETTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETTEXT) | READ | DFN, VSTR, TIUX | 1 | - |  | 
-O162 | [TIU TEMPLATE SET ITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE SET ITEMS) | __CHANGE__ | TIUDA, TIUX | 7 | - |  | 
-O163 | [TIU USER INACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER INACTIVE?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
+O138 | [TIU CAN CHANGE COSIGNER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU CAN CHANGE COSIGNER?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
+O139 | [TIU FIELD CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD CHECK) | UTILITY | &nbsp; | 37 | HARD CODED |  | 
+O140 | [TIU FIELD DOLMTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD DOLMTEXT) | UTILITY | TIULIST | 4 | FMUTILITY |  | 
+O141 | [TIU FIELD IMPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD IMPORT) | __CHANGE__ | XMLTMP | 1 | XML |  | 
+O142 | [TIU FIELD LIST ADD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LIST ADD) | UTILITY | IN | 6 | REENTRANCY |  | 
+O143 | [TIU FIELD LOAD](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LOAD) | READ | FLD | 4 | - |  | 
+O144 | [TIU FIELD LOAD BY IEN](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD LOAD BY IEN) | READ | FLDIEN | 2 | - |  | 
+O145 | [TIU GET DS URGENCIES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET DS URGENCIES) | READ | &nbsp; | 3 | HARD CODED |  | 
+O146 | [TIU GET PERSONAL PREFERENCES](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PERSONAL PREFERENCES) | READ | USER | 1 | DUZ |  | 
+O147 | [TIU GET PRF TITLE](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PRF TITLE) | READ | PTDFN, FLAGID | 6 | - |  | 
+O148 | [TIU GET PRINT NAME](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET PRINT NAME) | READ | TIUTYPE | 1 | - |  | 
+O149 | [TIU GET SITE PARAMETERS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU GET SITE PARAMETERS) | READ | &nbsp; | 3 | LOCATION |  | 
+O150 | [TIU IDENTIFY CLINPROC CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CLINPROC CLASS) | READ | &nbsp; | 1 | - |  | 
+O151 | [TIU IDENTIFY CONSULTS CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CONSULTS CLASS) | READ | &nbsp; | 1 | IEN-LOOKUP |  | 
+O152 | [TIU IDENTIFY SURGERY CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY SURGERY CLASS) | READ | CLNAME | 2 | IEN-LOOKUP |  | 
+O153 | [TIU IS THIS A CLINPROC?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CLINPROC?) | READ | TITLE | 5 | IS-A |  | 
+O154 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CONSULT?) | READ | TITLE | 4 | IS-A |  | 
+O155 | [TIU IS THIS A SURGERY?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A SURGERY?) | READ | TITLE | 5 | IS-A |  | 
+O156 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A PROVIDER?) | READ | USER, DATE | 3 | DUZ, IS-A |  | 
+O157 | [TIU IS USER A USR PROVIDER](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A USR PROVIDER) | READ | USER, DATE | 4 | DUZ, IS-A |  | 
+O158 | [TIU TEMPLATE CREATE/MODIFY](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE CREATE/MODIFY) | __CHANGE__ | TIUDA, TIUX | 11 | - |  | 
+O159 | [TIU TEMPLATE GETTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETTEXT) | READ | DFN, VSTR, TIUX | 1 | - |  | 
+O160 | [TIU TEMPLATE SET ITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE SET ITEMS) | __CHANGE__ | TIUDA, TIUX | 7 | - |  | 
+O161 | [TIU USER INACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER INACTIVE?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
 
 
 
 
 
 
-<small>Generated on 2017-01-13</small>
+<small>Generated on 2017-01-20</small>
