@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGARRAY{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Each item in the Array is an '^' delimited piece of information.in the format Field^Value  OR  ActionCode^value{:/} | 
 | {::nomarkdown}ALL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}All = 1 and All items in MAGARRAY will be validated.All = 0 and Validation stops after first item in MAGARRAY fails.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:13 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

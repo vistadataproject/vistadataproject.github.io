@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PREF{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PREF - FIRST PART OF THE REQUESTOR NAME(S) BEING SEARCHED FOR{:/} | 
 | {::nomarkdown}STYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}STYP - \L\ - USE THE \AC\ INDEX FOR LAST NAME         \C\ - USE THE \AD\ INDEX FOR CORPORATE NAME{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

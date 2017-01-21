@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATA1{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Data string from the Anticoagulation Management Program.{:/} | 
 | {::nomarkdown}HOSLOC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Visit location from the Hospital Location File.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

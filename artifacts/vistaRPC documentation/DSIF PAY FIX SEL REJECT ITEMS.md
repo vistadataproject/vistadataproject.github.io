@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NEW BATCH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}New Batch IEN{:/} | 
 | {::nomarkdown}LINES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Lines to re-initiate, format: passed in by a list/array  ;     B3 BATCHES: FBLINES(NUM) = PMT ID (N;N;N;N)                   FBLINES(NUM+n) = PMT ID#2, (ETC) ;     B9 BATCHES: FBLINES(NUM) = Invoice #1                   FBLINES(NUM+n) = INVOICE #2,  (ECT) Value of NUM must start with \1\!{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

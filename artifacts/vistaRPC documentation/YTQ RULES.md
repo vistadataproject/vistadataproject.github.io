@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns all the Rules for a specified Instrument Input: YS(\CODE\)= test name Output:        YSDATA(1)=[DATA]        YSDATA(x): RULE ID= IndexQuestion^IndexValue^ IndexValueDataType                  ^IndexOperator^BoolOperator^TargetQuestion        YSDATA(x+1):TargetValue^TargetValueDataType^ TargeOperator        YSDATA(X+2):MessageText^IsConsistencyCheck{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

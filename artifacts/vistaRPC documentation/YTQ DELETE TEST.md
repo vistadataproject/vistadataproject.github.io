@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Deletes a test, quiz or survey. Only removes the top level entry (601.71) and entires in MH Instrument Content (601.76). Will not remove a test that HAS BEEN OPERATIONAL (ie has answers entered while OPERATIONAL is set).        input: CODE as test name      output: DATA vs ERROR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
