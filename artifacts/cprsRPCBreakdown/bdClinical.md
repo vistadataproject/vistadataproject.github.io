@@ -354,7 +354,7 @@ These RPCs access at least 29 parameters and 53 files.
 270. | [ORWGRPC ITEMDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC ITEMDATA) | READ | ITEM, START, DFN | 2 | - |  | 
 271. | [ORWGRPC ITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC ITEMS) | READ | DFN, TYPE | 2 | - |  | 
 272. | [ORWGRPC LOOKUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC LOOKUP) | READ | INFO, FROM, DIR | 1 | - |  | 
-273. | [ORWGRPC TYPES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TYPES) | READ | DFN, SUB | 3 | PXRMINDX, QUERY |  | 
+273. | [ORWGRPC TYPES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGRPC TYPES) | READ | DFN, SUB | 3 | BEFORE PAT, PXRMINDX, QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 274. | [ORWLR CUMULATIVE REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLR CUMULATIVE REPORT) | UTILITY | DFN, DAYS, ALPHA, OMEGA | 17 | - |  | 
 275. | [ORWLR CUMULATIVE SECTION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWLR CUMULATIVE SECTION) | READ | DFN, RPTID, DTRANGE, SECTION | 12 | - |  | 
@@ -386,7 +386,7 @@ These RPCs access at least 29 parameters and 53 files.
 296. | [ORWOR1 SIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR1 SIG) | CHANGE | ID, X1, X2, X3, X4, ORX5, X6, X7 | 28 | FILE, REENTRANCY | [101.52](http://localhost:9000/schema/101_52) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 297. | [ORWORB AUTOUNFLAG ORDERS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB AUTOUNFLAG ORDERS) | CHANGE | DFN, XQAID | &nbsp; | PARAMETER |  | ORPF AUTO UNFLAG
-298. | [ORWORB FASTUSER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB FASTUSER) | READ | &nbsp; | 59 | FILE | [2](http://localhost:9000/schema/2) | 
+298. | [ORWORB FASTUSER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB FASTUSER) | READ | &nbsp; | 59 | BEFORE PAT, FILE | [2](http://localhost:9000/schema/2) | 
 299. | [ORWORB GET TIU ALERT INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GET TIU ALERT INFO) | READ | XQAID | 16 | FILE | [8925](http://localhost:9000/schema/8925) | 
 300. | [ORWORB GETDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GETDATA) | READ | XQAID | 9 | FILE | [8992](http://localhost:9000/schema/8992) | 
 301. | [ORWORB KILL EXPIR MED ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL EXPIR MED ALERT) | CHANGE | ORDFN | 10 | FILE | [100.9](http://localhost:9000/schema/100_9) | 
@@ -436,12 +436,12 @@ These RPCs access at least 29 parameters and 53 files.
 340. | [ORWPT INPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT INPLOC) | READ | DFN | 7 | FILE, RPCLOCKER | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
 341. | [ORWPT LAST5](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LAST5) | READ | ID | 4 | FILE, QUERY | [2](http://localhost:9000/schema/2) | 
 342. | [ORWPT LAST5 RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LAST5 RPL) | READ | ID | 10 | FILE, QUERY | [100.21](http://localhost:9000/schema/100_21), [200](http://localhost:9000/schema/200) | 
-343. | [ORWPT LIST ALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LIST ALL) | READ | FROM, DIR | 8 | FILE, RPCLOCKER | [2](http://localhost:9000/schema/2) | 
+343. | [ORWPT LIST ALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LIST ALL) | READ | FROM, DIR | 8 | BEFORE PAT, FILE, RPCLOCKER | [2](http://localhost:9000/schema/2) | 
 344. | [ORWPT PTINQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT PTINQ) | READ | DFN | 3 | JLV, RPCLOCKER, UNSTRUCTURED READ |  | 
 345. | [ORWPT SELCHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SELCHK) | CHANGE | DFN | 1 | - |  | 
 346. | [ORWPT SELECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SELECT) | CHANGE | DFN | 22 | BULLETIN, FILE, JLV, REENTRANCY | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
 347. | [ORWPT SHARE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SHARE) | UTILITY | IP, HWND, DFN | 3 | REENTRANCY |  | 
-348. | [ORWPT TOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT TOP) | READ | &nbsp; | 3 | FILE, REENTRANCY | [2](http://localhost:9000/schema/2) | 
+348. | [ORWPT TOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT TOP) | READ | &nbsp; | 3 | BEFORE PAT, FILE, REENTRANCY | [2](http://localhost:9000/schema/2) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 349. | [ORWPT1 PCDETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT1 PCDETAIL) | READ | PATIENT | 50 | FILE | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200), [404.51](http://localhost:9000/schema/404_51) | 
 350. | [ORWPT1 PRCARE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT1 PRCARE) | READ | PATIENT | 13 | FILE, JLV, RPCLOCKER | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
@@ -532,4 +532,4 @@ These RPCs access at least 29 parameters and 53 files.
 
 
 
-<small>Generated on 2017-01-20</small>
+<small>Generated on 2017-01-21</small>
