@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}LIST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} |  | {::nomarkdown}This input parameter is an array containing the data elements collected inCreate Accident/Illness Report.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

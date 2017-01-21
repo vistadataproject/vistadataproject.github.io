@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns all display data in internal formatInput: list of DisplayIDs        YS(1)=DisplayId1        YS(2)=DisplayId2        :        :        YS(x)=DisplayId(x) Output: YSDATA(1)=[DATA]        YSDATA(2)=DisplayId^FontName^FontBold^FontItalic^FontUnderlined^Fontsize^FontColor^Alignment^left^Mask^Colums^Component::YSDATA(x)=DisplayId^FontName^FontBold^FontItalic^FontUnderlined^Fontsize^FontColor^Alignment^left^Mask^Colums^Component{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

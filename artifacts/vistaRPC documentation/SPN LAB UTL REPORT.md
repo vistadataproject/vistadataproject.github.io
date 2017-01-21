@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Number of highest users to identify{:/} | 
 | {::nomarkdown}PTLIST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}PATIENTS DFN IN LIST FORMAT ICN^ICN^ICN^ICN^ICN........{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

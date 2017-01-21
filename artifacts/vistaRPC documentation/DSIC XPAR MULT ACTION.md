@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DSICLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DSICLIST - required - p1^p2^p3^p4^p5^p6^p7  where For p1 - p6 see the equivalent DSIC XPAR xxxxxx RPC definition to see which p1 - p6 are required for the action requested   p1 := entity - default to USR  p2 := parameter name  p3 := instance  p4 := value  p5 := new instance value  p6 := format for GET1 call  p7 := action to be taken - must be ADD, CHG, or DEL        if p7 = \ADD\ then for this list element perform ADD function        if p7 = \CHG\ then for this list element perform change value                 for a parameter/entity/instance        if p7 = \DEL\ then for this list element perform delete of                of a parameter/entity/instance{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

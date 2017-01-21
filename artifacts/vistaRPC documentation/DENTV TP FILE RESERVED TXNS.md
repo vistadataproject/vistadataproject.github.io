@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}500{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains filing information:DATA(1) = FLAG^Provider IEN^DFN            where FLAG=A for add, U for update, D for deleteDATA(n) = txn data{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

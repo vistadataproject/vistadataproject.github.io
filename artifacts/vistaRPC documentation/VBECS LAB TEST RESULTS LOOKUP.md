@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TESTS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}An array of Laboratory Test IENs used to search for results.  TESTS(1)=\3536\  TESTS(2)=\4090\{:/} | 
 | {::nomarkdown}PATS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}An array of Patient IENs used to search for Lab test results.  PATS(1)=\495943\  PATS(2)=\39282\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

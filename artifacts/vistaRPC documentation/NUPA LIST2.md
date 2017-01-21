@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FILEDS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Other fields in format FILE^Field 1^Field 2 etc.{:/} | 
 | {::nomarkdown}SCREEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Fileman screen for the lookup.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

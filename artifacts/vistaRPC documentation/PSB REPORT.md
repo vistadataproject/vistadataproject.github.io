@@ -51,4 +51,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBCLLIST{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}LIST ARRAY FOR CLINICS{:/} | 
 | {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Division{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:13 am</p>{:/}

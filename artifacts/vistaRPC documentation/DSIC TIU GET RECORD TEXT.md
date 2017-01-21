@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal record number for file 8925 [IEN or IFN].{:/} | 
 | {::nomarkdown}ACTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is not well documented within TIU.  So for this RPC, do not pass a value at this time.  The default value is \VIEW\.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

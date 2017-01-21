@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INPUT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input parameter must include the ASISTS IEN and the form type of datato be retrieved. These parameters must be separated by the caret character. Ie.165^2162.Valid form values are CA1, CA2, or 2162.{:/} | 
 | {::nomarkdown}PERS{:/} |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

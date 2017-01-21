@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VAL1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the DFN - the ien for the patient selected{:/} | 
 | {::nomarkdown}VAL2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is CHOICE - valid input is A (for All appointments), F (for FutureAppointments, or P (for Past Appointments).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:13 am</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}EDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}EDATE - end date.  This is the last date to be used when pulling report data.{:/} | 
 | {::nomarkdown}DIVL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}DIVL  - List of selected divisions - NULL means all divisions{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

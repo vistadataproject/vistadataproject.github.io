@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}90{:/} | {::nomarkdown}true{:/} | {::nomarkdown}    DATA:  MAGDFN ^ NOLOG ^ ISICN       MAGDFN -- Patient DFN       NOLOG  -- 0/1; if 1, then do NOT update the Session log       ISICN  -- 0/1  if 1, then this is an ICN,       FLAGS  -- \D\ Include Deleted images    if 0 (default) this is a DFN ; Patch 41{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:09 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:13 am</p>{:/}

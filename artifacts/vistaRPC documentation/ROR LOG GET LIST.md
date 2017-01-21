@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The STDT parameter defines the start date for the search of the log activities. By default (if $G(STDT)'>0), the search starts from the earliest record of the ROR LOG file.{:/} | 
 | {::nomarkdown}ENDT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The ENDT parameter defines the end date for the search of the logactivities. By default (if $G(ENDT)'>0), the search continues to the lastrecord of the ROR LOG file.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}

@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFAUTH{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the 7078/583 you wish to verify the ICD Diagnosis and Procedure codes for. (Required).{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the array of codes you wish to verify. The array should look like this: ; DATA(I)=DIAG or PROC or ADMIT^# (1-25)^External Value{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:20:10 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:25:14 am</p>{:/}
