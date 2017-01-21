@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}HLTYPES{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}List of location types separated by commas (internal values of the TYPEfield of the HOSPITAL LOCATION file):   C   Clinic  F   File Area  I   Imaging  M   Module  N   Non-Clinic Stop  OR  Operating Room  W   Ward  Z   Other Location Only locations of the types defined by this parameter are selected by the remote procedure. By default ($G(HLTYPES)=\\), all locations are selected.{:/} | 
 | {::nomarkdown}DIVIEN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Division IEN. If this parameter is defined and greater than zero then onlythe locations associated with this division are selected.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

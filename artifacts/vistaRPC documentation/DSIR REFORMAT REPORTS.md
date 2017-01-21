@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}OLD LINE COUNT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}9{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is needed for the RPC to know many lines per page are in the incoming report.{:/} | 
 | {::nomarkdown}INCOMING (OLD) REPORT{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the array of the old report to be reformatted.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

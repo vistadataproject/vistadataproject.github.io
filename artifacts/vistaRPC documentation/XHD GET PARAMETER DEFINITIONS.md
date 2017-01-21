@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DIR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}OPTIONAL parameter. This is the DIRECTION from the origin in which the definitions will be retrieved. Pass \+1\ to indicate ascending order, or \-1\ to indicate descending order).  DEFAULT: \+1\ or ascending order.{:/} | 
 | {::nomarkdown}SIZE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the number of definitions that should be returned with each invocation of the call. DEFAULT: 44.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

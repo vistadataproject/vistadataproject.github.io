@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}160{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is a ',' (comma) delimited string of classes.only those index types, that match a 'class' in the string willbe returned in the result array.{:/} | 
 | {::nomarkdown}FLGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown};  FLGS : An '^' delimited string;     1 IGN: Flag to IGNore the Status field;     2 INCL: Include Class in the Output string;     3 INST: Include Status in the Output String{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

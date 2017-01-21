@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}RADXPRIM{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of an entry in the DIAGNOSTIC CODES file (#78.3). This will be theexam's Primary Diagnostic Code via the RAMISC parameter 'PRIMDXCODE'.{:/} | 
 | {::nomarkdown}RADXSCND{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}One or more IENs of entries in the DIAGNOSTIC CODES file (#78.3). Thesewill be the exam's Secondary Diagnostic Codes via the RAMISC parameter'SECDXCODE'.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

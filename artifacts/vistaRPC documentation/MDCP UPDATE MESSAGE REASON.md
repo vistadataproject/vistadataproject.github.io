@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MDCPMSG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the IFN of the HL7 message in the CLIO_HL7_LOG file.{:/} | 
 | {::nomarkdown}MDCPTEXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the text to add to the CLIO_HL7_LOG file.  Note that this text will completely overwrite the text that was already in the reason field.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

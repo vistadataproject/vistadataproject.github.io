@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Send message to psych test ordering clinician Input: DFN as patient ien      : ORD as ordered for (in duz form)     : TEST1 as name of test ordered (required;string)     :TEST2-TEST10 as name of other tests ordered (optional but in       order;string) Output: [DATA] VS [ERROR]     {:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

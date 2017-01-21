@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is a flag controlling what will be returned. The default value is <null>.  FLAG can contain N. If FLAG contains N then do not return attributes whose value is <null> If FLAGS contains Z, then for WOrd Processing attributes, include   the zeroth node with the text{:/} | 
 | {::nomarkdown}ATT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown} This is a list of attributes to return.   List[n] := attribute name  where n=0,1,2,3,...  You can send List[0] := \*\ to get all field attributes{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

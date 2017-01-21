@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}READER SITE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Reading Site pointer to INSTITUTION file (#4){:/} | 
 | {::nomarkdown}READER STATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reading Site's Station Number{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

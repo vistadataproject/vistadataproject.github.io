@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLAIM DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}BENEFICIARY TRAVEL CLAIM DATE (NOT THE CURRENT DATE).{:/} | 
 | {::nomarkdown}DGBTRET{:/} | {::nomarkdown}REFERENCE{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}THE ARRAY THE DATA WILL BE RETURNED IN.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

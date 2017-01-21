@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ATPHY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Attending Physician (Optional - Free Text){:/} | 
 | {::nomarkdown}ATPHPH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This field contains the phone number of the attending physician while the patient was residing in the non-VA facility.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

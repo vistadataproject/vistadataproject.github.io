@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}OLDLOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is expectedto be the one currently stored in the VistA database.{:/} | 
 | {::nomarkdown}NEWLOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a pointer to ^DIC(4).This pointer identifies the location for which images are beingtransmitted.This value corresponds to the one that is to be enteredin the VistA database.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}

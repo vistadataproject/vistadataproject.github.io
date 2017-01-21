@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}RAIMGTYI{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}IEN of the imaging type in the IMAGING TYPE file (#79.2).{:/} | 
 | {::nomarkdown}RAPROC{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Radiology procedure IEN (file #71). This parameter is required todetermine exact nuclear medicine requirements (pieces of the Results[0]from 17 to 25). By default (+$G(RAPROC)=0), this remote procedure cannot examine theSUPPRESS RADIOPHARM PROMPT field (2) of the RAD/NUC MED PROCEDURES file(#71) and might indicate that some nuclear medicine data is required evenif it is not.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}

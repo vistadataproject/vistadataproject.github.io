@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ENDDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} |  | 
 | {::nomarkdown}DVBADLMTR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The delimiter indicates whether the report should be produced in a comma delimited format (.csv file) or not. DVBADLMTR=0 means report displays inplain text. DVBADLMTR=1 means report will be created as a .csv fileimportable to Excel.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:14:32 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
