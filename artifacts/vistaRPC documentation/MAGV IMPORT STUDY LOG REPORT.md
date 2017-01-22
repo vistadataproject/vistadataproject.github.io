@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STARTDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The date, as YYYYMMDD, from which to start the query. If null, defaults to date of the earliest record.{:/} | 
 | {::nomarkdown}STOPDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The date, as YYYYMMDD, bracketing the end of the query. If null, defaults to TODAY.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:57 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INITIAL QUANTITY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This optional parameter populates the initialQuantity value attribute inthe 1305 HL7v3 message. The minimum value is 1 and the maximum value is10.  The parameter will default to 10 when the parameter is not defined.{:/} | 
 | {::nomarkdown}NAME FORMAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This optional parameter controls the format of the full name resultreturned. Setting the parameter to 1 causes the name to be formatted asLASTNAME,FIRSTNAME MIDDLENAME SUFFIX.  Any other value or no value causesthe name to be formatted as FIRSTNAME MIDDLENAME LASTNAME SUFFIX.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:57 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

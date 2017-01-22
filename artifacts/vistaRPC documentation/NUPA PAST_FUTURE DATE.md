@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}VAR 1{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The date you want to check.  Should be in \7/7/11@12:30:00 PM\ format.{:/} | 
 | {::nomarkdown}VAR 2{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Variable should be set to \P\ if you want to see if the date is in the past, or set it to \F\ if you want to see if it's in the future.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:57 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

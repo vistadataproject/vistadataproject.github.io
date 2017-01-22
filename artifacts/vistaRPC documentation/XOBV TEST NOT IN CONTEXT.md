@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This RPC should not be used and returns the empty string (null). This RPC is used to test the 'not in RPC context' check.  For this reason, this RPC is specifically NOT in the 'XOBV VISTALINKTESTER' B-type option in the OPTION (#19) file. This RPC is used as part of the test and learning application distributedas part of VistALink.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

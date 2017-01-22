@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MFT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter works in conjunction with the MOD parameter.Default value = \E\If MFT=\E\ then MOD parameter is an .01 field value for file 81.3If MFT=\I\ then MOD parameter is an ifn value for file 81.3{:/} | 
 | {::nomarkdown}CDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This date is optional.  It can be <null>, TODAY, NOW, or a internal Fileman format date.  Default value is TODAY.  This date will be used to check if the CPT/Modifier pair was acceptable as of that date.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

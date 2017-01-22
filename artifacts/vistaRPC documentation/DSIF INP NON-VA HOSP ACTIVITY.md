@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FBENDDT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}7{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Last Day of the Month for the report (Required, FileMan format){:/} | 
 | {::nomarkdown}FBK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Report Hospital Type (Required, 1 = Public Hospital, 2 = Private Hospital, 3 = Federal Hospital){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

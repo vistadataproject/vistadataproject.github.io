@@ -23,4 +23,4 @@ title: VDM documentation
 | param1 | .04 | Param1 | {::nomarkdown}Optional parameter to pass to COM object as PARAM1 {:/} | STRING |  |  |  | 
 | description | 2 | Description | {::nomarkdown}Optional description of COM Object.  Should include any contact<br/>information for vendor or other provider of the COM Object.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}

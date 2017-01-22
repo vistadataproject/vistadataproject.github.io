@@ -91,4 +91,4 @@ title: VDM documentation
 | procedure_summary_code | 70201 | Procedure Summary Code | {::nomarkdown}This field contains the summary code for this procedure once it is<br/>complete.  'Machine Resulted' is the initial, default code.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>5</dt><dd>Machine Resulted</dd><dt>2</dt><dd>Abnormal</dd><dt>4</dt><dd>Incomplete</dd><dt>3</dt><dd>Borderline</dd><dt>1</dt><dd>Normal</dd></dl>{:/} | 
 | date_time_performed | 70202 | Date/time Performed | {::nomarkdown}This field contains the Date/Time when the procedure was performed.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}

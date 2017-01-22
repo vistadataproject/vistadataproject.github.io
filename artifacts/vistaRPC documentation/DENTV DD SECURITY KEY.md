@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}KEY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional if KEY=\L\ (or KEY not passed at all), then check to see if theuser owns the VEJDWPD EDIT LOCAL security key.  If they do, then they canadd cpt codes to file 19600 in the local number space. If KEY=\M\, then check to see if the user owns the VEJDWPD EDIT FILEsecurity key.  If so, then they are a VACO representative, and are allowedto add cpt procedures to file 19600 with iens <100,000{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}

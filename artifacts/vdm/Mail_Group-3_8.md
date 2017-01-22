@@ -62,4 +62,4 @@ title: VDM documentation
 | member_group_name | .01 | Member Group Name | {::nomarkdown}This is a pointer to another entry in this Mail Group file.<br/>See the description of the multiple for more information.{:/} | POINTER |  | REQUIRED, INDEXED | Mail_Group-3_8 | 
 | type-1 | 1 | Type | {::nomarkdown}This field indicates what type of recipient this is.<br/><br/>If this field has nothing in it, it indicates that this recipient is<br/>a primary recipient, and may reply.<br/><br/>CC:  indicates that the recipient is being sent a copy, but is not the<br/>primary recipient.  The recipient may reply.<br/><br/>INFO: indicates that the recipient may not reply to the message; the<br/>message is being transmitted to the recipient for information purposes<br/>only.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>C</dt><dd>CC</dd><dt>I</dt><dd>INFO</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 20th 2017, 10:13:02 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}

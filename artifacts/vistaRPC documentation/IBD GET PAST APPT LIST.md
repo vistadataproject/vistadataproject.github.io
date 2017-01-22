@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}IBDF{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Requires the variable IBDF(\DFN\) be set to the patient internal entry number.IBDF(\F\) is the from date (defaults to t-1year)IBDF(\T\) is the to date (defaults to t@midnight)IBDF(\W\) is the types of appointments to return, see SDA^VAPDT{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:02 am</p>{:/}

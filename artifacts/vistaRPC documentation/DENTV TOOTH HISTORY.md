@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input parameter for looking up dental history in file 19600.1  Format: Patient DFN ^ tooth# ^ FMDate where  Patient DFN := required - pointer to patient file (2)  tooth# := optional - number of the tooth you wish the history on.           If tooth#=0 or tooth#=\\, then return data that was not           associated with any particular tooth.           If tooth#=\ALL\, then it will return data for all teeth and           for procedures not related to a specific tooth.  FMDate := optional - Fileman date format - optional - default to all           records.  If date is passed, then only records whose date is           greater than or equal to this date will be returned{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
