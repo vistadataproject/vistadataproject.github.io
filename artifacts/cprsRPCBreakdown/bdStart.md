@@ -20,4 +20,4 @@ Most - 749 (71.3%) - of the interface's RPCs _READ_ data.
 
 
 
-<small>Generated on 2017-01-20</small>
+<small>Generated on 2017-01-21</small>

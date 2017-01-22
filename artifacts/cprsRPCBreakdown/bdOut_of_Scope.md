@@ -38,14 +38,14 @@ We won't consider Print services and other system administration issues in VDP a
 26. | [ORWMHV MHV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWMHV MHV) | UTILITY | -
 27. | [ORWPCE GAFOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GAFOK) | READ | IS-A, PATCH
 28. | [ORWPCE HNCOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HNCOK) | READ | IS-A, PATCH
-29. | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE I10IMPDT) | READ | PATCH
+29. | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE I10IMPDT) | READ | BEFORE PAT, PATCH
 30. | [ORWPCE ICDVER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ICDVER) | READ | PATCH
 31. | [ORWPCE LOADGAF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LOADGAF) | READ | DEPRECATED, DFN
 32. | [ORWPCE SAVEGAF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SAVEGAF) | CHANGE | DEPRECATED, DFN
 33. | [ORWPFSS IS PFSS ACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPFSS IS PFSS ACTIVE?) | READ | IS-A, PATCH
 34. | [ORWPT LEGACY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LEGACY) | UTILITY | DFN, REMOTE
 35. | [ORWRA PRINT REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRA PRINT REPORT) | UTILITY | PRINT
-36. | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP GET DEFAULT PRINTER) | UTILITY | PARAMETER, PRINT
+36. | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP GET DEFAULT PRINTER) | UTILITY | BEFORE PAT, PARAMETER, PRINT
 37. | [ORWRP PRINT LAB REMOTE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT LAB REMOTE) | UTILITY | PRINT
 38. | [ORWRP PRINT LAB REPORTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT LAB REPORTS) | UTILITY | PRINT
 39. | [ORWRP PRINT REMOTE REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT REMOTE REPORT) | UTILITY | PRINT
@@ -74,4 +74,4 @@ We won't consider Print services and other system administration issues in VDP a
 
 
 
-<small>Generated on 2017-01-20</small>
+<small>Generated on 2017-01-21</small>
