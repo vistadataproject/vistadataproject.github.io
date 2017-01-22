@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} |  |  | 
 | {::nomarkdown}RMPRA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

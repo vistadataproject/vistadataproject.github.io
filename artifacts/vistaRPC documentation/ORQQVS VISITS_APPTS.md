@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STOP DATE/TIME{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Stop date/time to return visits and appointments. In internal FileMan format.{:/} | 
 | {::nomarkdown}DUMMY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a dummy parameter so the Broker won't crash.appointments for this location only will be returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:02 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:11 am</p>{:/}

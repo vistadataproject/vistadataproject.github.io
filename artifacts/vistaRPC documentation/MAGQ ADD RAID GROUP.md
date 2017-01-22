@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NUMBER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This value determines the number of RAID groups to be added to the sitesNetwork Location file (#2005.2).{:/} | 
 | {::nomarkdown}PLACE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} |  | {::nomarkdown}This is the place value, an entry in the IMAGING SITE PARAMETER (#2006.1)file, for the RAID group entry being defined.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

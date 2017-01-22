@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLERK(S){:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is an array of clerk IENs.        (1-n)=IEN to file 200{:/} | 
 | {::nomarkdown}DIVISION(S){:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is used by the routine if the person requesting this report holds the DSIR MDIV key.  It is a list of internal Institution File entry numbers (File 4), delimited by '^'.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

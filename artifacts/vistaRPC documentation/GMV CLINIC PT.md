@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLIN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CLIN contains the name of the selected clinic from the Hospital Locationfile (#44).{:/} | 
 | {::nomarkdown}BDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}BDATE contains TODAY, TOMORROW, YESTERDAY, PAST WEEK or PAST MONTH.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

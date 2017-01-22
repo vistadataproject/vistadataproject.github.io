@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}VEJDDATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown}For detailed escription of the array setup see documentation in theroutine.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

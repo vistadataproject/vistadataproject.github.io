@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBINS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The instance of the parameter that you want to return.  Defaults to 1.{:/} | 
 | {::nomarkdown}PSBVAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If setting a parameter this contains the data value to place in the parameter.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:02 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:11 am</p>{:/}

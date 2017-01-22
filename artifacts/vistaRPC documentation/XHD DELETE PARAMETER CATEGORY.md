@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PCAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the record number (i.e., IEN) of the parameter category to be deleted.{:/} | 
 | {::nomarkdown}DELKIDS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This boolean flag indicates whether to delete all descendents of the parameter category in question.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

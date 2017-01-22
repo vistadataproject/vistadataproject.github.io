@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The input array contains the Dental Provider information to be added/updated into file 220.5.  The following fields are sent:  DATA(\PERSON\)=pointer to file 200 (PERSON)  DATA(\IEN\)=pointer to file 220.5 (only for update records)  DATA(\PROVNUM\)=8 character Dental Provider Number  DATA(\INACTIVE\)=-1 if inactive, else = 0.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

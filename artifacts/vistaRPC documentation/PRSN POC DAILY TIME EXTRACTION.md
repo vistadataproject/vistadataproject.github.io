@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PRSNSEQ{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Any records in POC DAILY ACTIVITY EXTRACTION File (#451.7) with a sequencenumber greater than this value shall be returned, in sequence.  The numberof records returned shall not exceed the value passed in parameterPRSNREC.{:/} | 
 | {::nomarkdown}PRSNREC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}15{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Maximum number of records to be returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

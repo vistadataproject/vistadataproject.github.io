@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGTIU{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The TIUDA of the Note associated with the Consult.  This TIUDA is produced by a call to ITIU^MDAPI{:/} | 
 | {::nomarkdown}MAGCMP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Complete Flag that Clinical Procedures doesn't deal with.It is always '2' which indicates a 'Complete' transaction.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

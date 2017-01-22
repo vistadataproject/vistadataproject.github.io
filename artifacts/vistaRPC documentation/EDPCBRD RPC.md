@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SESS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This identifies the user and site that are passed in from the Java middle tier.  In cases when the display board is running with a proxy user (in kiosk mode), the SSL configuration will determine the user and site.{:/} | 
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}This is a list of parameters that were passed to the Java middle tier via an HTTP Post message.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:03 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
