@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}240{:/} | {::nomarkdown}true{:/} | {::nomarkdown} DATA = \ARR(1)~ARR(2)~ARR(3)~ARR(4)~ARR(5)~ARR(6)\     e.g. \SYS~DSIV PAGE SETUP~~~~\  ARR(1) = entity     ARR(2) = param name    ARR(3) = instance  ARR(4) = value      ARR(5) = new instance value  ARR(6) = format for GETLST, Default = \Q\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:57 am</p>{:/}

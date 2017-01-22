@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CMNT{:/} |  |  |  |  | 
 | {::nomarkdown}COMMENT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input will be a string containing the comment to be added/associated withthe witness record created. {:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}

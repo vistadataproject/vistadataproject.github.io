@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown} Returns all testing administrations for a specified patient.Returns data from 601.84, 601.2 and 601.4. This is new and legacy data.  input : DFN        COMPLETE: Y for all completed admins, N for all incompletes                   (Reqiured) output: Administration ID D^Instrument Name^Date Given^Date Saved        ^Orderer^Admin.By^Signed^# Answers^R_Privl        ^Is Legacy^INSTRUMENT id 601.71^Test IENS 601^Is copyright        ^Location IENS         This does NOT return ASI or GAF data.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:56 am</p>{:/}

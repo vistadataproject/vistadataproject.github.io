@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}RETURN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Returns a '1' if remarks are successfully set and a '0' if the remarks arenot set.{:/} | 
 | {::nomarkdown}EIEN{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}512{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The is the 2507 EXAM ID from the 2507 EXAM file 396.4. The remarkssent to the contractor are stored in the new word processing field #103 ofthe 2507 EXAM file 396.4. The 2507 EXAMs are connected to the 2507 REQUESTfile via a pointer.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:10:57 am</p>{:/}
