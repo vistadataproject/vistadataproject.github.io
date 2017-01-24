@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Users who have the MHS Manager menu can delete a specified MH Administration and its MH Answers and MH Results. Please use caution as deletions cannot be restored. Only ADPACs should usethis feature and in consultation with medical records policy.  Input: YS(\AD\) as internal entry number of MH ADMINISTRATIONS (#601.84) file.Output: Data vs ERROR{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

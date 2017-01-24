@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array holding entries for adding:   DATA(n)=$START   DATA(n)=field^value   DATA(n)=field^value   DATA(n)=$END  for updating:    DATA(n)=$START    DATA(n)=SubfieldIEN^field^value    DATA(n)=SubfieldIEN^field^value    DATA(n)=$END {:/} | 
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}FLAG=0 to add entries to a multiple,FLAG=1 to update entries in a multiple.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

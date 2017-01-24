@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a text string (upper case only).This string uniquely identifies the \station name\ of theDICOM Gateway that is reporting its version information.{:/} | 
 | {::nomarkdown}VERSION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a text string.This text string represents the version identification for theversion of the DICOM Gateway software that is running on the currentcomputer.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

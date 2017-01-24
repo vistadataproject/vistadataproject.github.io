@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Flags that control the execution (can be combined):   E  Return external values (default)   I  Return internal values{:/} | 
 | {::nomarkdown}ADT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date/time (internal FileMan value) for retrieving previous values. By default, audit checks are not performed and current values are returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The maximum number of values to return.  The default is 200.For VARIABLE POINTER fields the sum accumulates across pointed-tofiles.{:/} | 
 | {::nomarkdown}MASK{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}An optional mask that constrains the values to be returned.For example, \SMI\ returns all values that start with the \SMI\like SMITH, filtering out values that do not start with thespecified mask like SAM.value, not the external value of a field.  PART is often a partial match to FROM. For example, FROM(1)=\ZTMMGR\, and PART(1)=\ZTM\ would return only entries that began with \ZTM\ and came after \ZTMMGR\. It would not include \ZTZERO\, even though it comes after \ZTMMGR\. {:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

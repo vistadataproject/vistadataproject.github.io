@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NUMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the number of records to return for each call to the rpc.  If there are no more records, then the data will be followed by \$END\.{:/} | 
 | {::nomarkdown}MORE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}MORE=0 for the first call, MORE=1 for subsequent calls when there are more record that NUMS (param 2) to return and MORE=9 to kill the ^XTMP global where the report data is stored for retrieval.  MORE=9 would be used if the user wants to cancel getting all the data.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NUMBER{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Maximum number of entries to return. A value of \*\ or no value in this parameter designates all entries{:/} | 
 | {::nomarkdown}FROM{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The index entry(s) from which to begin the list  ^01: From Name  ^02: From IEN For example, a FROM value of \VA\ would list entries following VA. You can use the 2nd and 3rd \^\- pieces of the @RESULT@(0) node to continue the listing in the subsequent procedure calls. NOTE: The FROM value itself is not included in the resulting listSee description of the LIST^DIC for more details about the PART, NUMBER, and FROM parameters.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

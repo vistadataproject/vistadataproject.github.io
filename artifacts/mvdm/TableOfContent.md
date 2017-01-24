@@ -2,7 +2,7 @@
 layout: default
 title: MVDM documentation
 ---
-## MVDM Table of Content
+## MVDM
 
  # | Class | Contained 
  --- | --- | --- 
@@ -16,4 +16,4 @@ title: MVDM documentation
 8 | [Vital](Vital.md) | 1
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 4:18:26 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}

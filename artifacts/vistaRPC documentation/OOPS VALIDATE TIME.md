@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the post date or benchmark date in external format.  In the example of testing if one date is earlier/less than another, this would be the latter date. {:/} | 
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This input parm indicates the type of comparison to be done. -2 means PDT must be <  IDT (The DAY only)-1 means PDT must be <  IDT (The DAY&TIME)0 means PDT must be =  IDT (The DAY&TIME)1 means PDT must be >  IDT (The DAY&TIME)2 means PDT must be > IDT (The DAY only){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}THIS ROUTINE PROVIDES THE DATA FOR POPULATING ALL THE DROP DOWN COMBO ANDLIST BOXES WITH FIELD NAMES FOR THE AD HOC REPORTING SCREEN{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:53 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

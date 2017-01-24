@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer number.This number specifies the maximum number of names of files thatis to be returned per call to this RPC.{:/} | 
 | {::nomarkdown}DONE{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array. The values in this array (if any)are obtained in an earlier call to this same RPC.Each call to this RPC returns a list of files to be purgedat the remote location, and each subsequent call to this RPCshould provide (through this parameter) the list of files thathave been successfully purged. In the VistA system, a cross-referenceis maintained that indicates which files are to be purged when,and the information from this parameter array is used to clean outthis cross-reference.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}

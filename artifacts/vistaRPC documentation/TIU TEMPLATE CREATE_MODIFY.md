@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUDA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This optional parameter is the record number of the Template to bemodified. If the Template is new, it may be passed as zero or null, toindicate that a new Template is to be created.{:/} | 
 | {::nomarkdown}TIUX{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This array contains the data to be filed in the Template entry,subscripted by field number. It should look something like this: TIUX(.01)=\ACTIVE MEDICATIONS\TIUX(.03)=\T\TIUX(.04)=\A\TIUX(.05)=0TIUX(.06)=\\TIUX(2,1,0)=\Active Medications:\TIUX(2,2,0)=\AMED\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:11 am</p>{:/}

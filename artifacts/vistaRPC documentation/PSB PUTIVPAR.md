@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBPARS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IV type - \A\ for Additive          \P\ for Piggyback          \H\ for Hyperal          \C\ for Chemo          \S\ for Syringe          \S\ for Syringe ^2-^16 Setting     1 for Warning     2 for Non-Verify     3 for Invalid{:/} | 
 | {::nomarkdown}PSBDIV{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}^1=IEN of division as in the Ward Location file (File #42){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 21st 2017, 7:57:52 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
