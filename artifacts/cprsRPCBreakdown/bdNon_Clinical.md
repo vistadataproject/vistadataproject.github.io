@@ -12,7 +12,7 @@ Non Clinical RPCs don't effect a patient's medical record. In a phrase, they mai
 
 These RPCs access at least 121 parameters and 86 files.
 
-They come in four flavors (__PRELIMINARY BREAKDOWN__) ...
+
 
 Name | Number
 --- | ---
@@ -807,7 +807,7 @@ O136 | [ORWU16 VALDT](http://vistadataproject.info/artifacts/vistaRPC documentat
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 O137 | [ORWUX SYMTAB](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWUX SYMTAB) | UTILITY | &nbsp; | 17 | HARD CODED |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-O138 | [TIU CAN CHANGE COSIGNER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU CAN CHANGE COSIGNER?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
+O138 | [TIU CAN CHANGE COSIGNER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU CAN CHANGE COSIGNER%3F) | READ | TIUDA | 1 | DUZ, IS-A |  | 
 O139 | [TIU FIELD CHECK](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD CHECK) | UTILITY | &nbsp; | 37 | HARD CODED |  | 
 O140 | [TIU FIELD DOLMTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD DOLMTEXT) | UTILITY | TIULIST | 4 | FMUTILITY |  | 
 O141 | [TIU FIELD IMPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU FIELD IMPORT) | __CHANGE__ | XMLTMP | 1 | XML |  | 
@@ -822,19 +822,19 @@ O149 | [TIU GET SITE PARAMETERS](http://vistadataproject.info/artifacts/vistaRPC
 O150 | [TIU IDENTIFY CLINPROC CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CLINPROC CLASS) | READ | &nbsp; | 1 | - |  | 
 O151 | [TIU IDENTIFY CONSULTS CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY CONSULTS CLASS) | READ | &nbsp; | 1 | IEN-LOOKUP |  | 
 O152 | [TIU IDENTIFY SURGERY CLASS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IDENTIFY SURGERY CLASS) | READ | CLNAME | 2 | IEN-LOOKUP |  | 
-O153 | [TIU IS THIS A CLINPROC?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CLINPROC?) | READ | TITLE | 5 | IS-A |  | 
-O154 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CONSULT?) | READ | TITLE | 4 | IS-A |  | 
-O155 | [TIU IS THIS A SURGERY?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A SURGERY?) | READ | TITLE | 5 | IS-A |  | 
-O156 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A PROVIDER?) | READ | USER, DATE | 3 | DUZ, IS-A |  | 
+O153 | [TIU IS THIS A CLINPROC?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CLINPROC%3F) | READ | TITLE | 5 | IS-A |  | 
+O154 | [TIU IS THIS A CONSULT?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A CONSULT%3F) | READ | TITLE | 4 | IS-A |  | 
+O155 | [TIU IS THIS A SURGERY?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS THIS A SURGERY%3F) | READ | TITLE | 5 | IS-A |  | 
+O156 | [TIU IS USER A PROVIDER?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A PROVIDER%3F) | READ | USER, DATE | 3 | DUZ, IS-A |  | 
 O157 | [TIU IS USER A USR PROVIDER](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU IS USER A USR PROVIDER) | READ | USER, DATE | 4 | DUZ, IS-A |  | 
 O158 | [TIU TEMPLATE CREATE/MODIFY](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE CREATE/MODIFY) | __CHANGE__ | TIUDA, TIUX | 11 | - |  | 
 O159 | [TIU TEMPLATE GETTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE GETTEXT) | READ | DFN, VSTR, TIUX | 1 | - |  | 
 O160 | [TIU TEMPLATE SET ITEMS](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU TEMPLATE SET ITEMS) | __CHANGE__ | TIUDA, TIUX | 7 | - |  | 
-O161 | [TIU USER INACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER INACTIVE?) | READ | TIUDA | 1 | DUZ, IS-A |  | 
+O161 | [TIU USER INACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/TIU USER INACTIVE%3F) | READ | TIUDA | 1 | DUZ, IS-A |  | 
 
 
 
 
 
 
-<small>Generated on 2017-01-23</small>
+<small>Generated on 2017-01-24</small>
