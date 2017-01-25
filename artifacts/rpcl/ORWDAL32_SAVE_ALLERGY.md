@@ -37,7 +37,7 @@ title: RPCL documentation
 | GMRATYPE | ENUMERATION | {::nomarkdown}<dl><dt>D</dt><dd>DRUG</dd><dt>DF</dt><dd>DRUG, FOOD</dd><dt>F</dt><dd>FOOD</dd><dt>O</dt><dd>OTHER</dd></dl>{:/} | {::nomarkdown}Allergy Type{:/} | allergyType | \GMRATYPE\: \F^Food\ | 
 | GMRAORIG | REFERENCE |  | {::nomarkdown}Entered By{:/} |  | \GMRAORIG\: \57\ | 
 | GMRAORDT | DATE-TIME |  | {::nomarkdown}Origination Date/Time{:/} | dateTimeEntered | \GMRAORDT\: \3160916.2002\ | 
-| GMRACHT | [OBJECT] |  | {::nomarkdown}Chart Marked{:/} |  | \GMRACHT\: [\3160916.200324\] | 
+| GMRACHT | [OBJECT] | [Details](#object-parameter-1) | {::nomarkdown}Chart Marked{:/} |  | \GMRACHT\: [\3160916.200324\] | 
 | GMRAOBHX | ENUMERATION | {::nomarkdown}<dl><dt>o</dt><dd>OBSERVED</dd><dt>h</dt><dd>HISTORICAL</dd></dl>{:/} | {::nomarkdown}Observed/Historical{:/} | observedOrHistorical | \GMRAOBHX\: \o^OBSERVED\ | 
 | GMRASYMP | [REFERENCE] | {properties:[{id:reaction,label:Reaction,mvdmProperty:reaction,description:One of the reactions for this allergy/adverse reaction. Delimited string in the form of <reaction_ien>^<reaction_label><reaction_fm_datetime>^<reaction_date_string>,parameterType:REFERENCE,referencedFile:120_83,required:true}]} | {::nomarkdown}Reactions{:/} | reactions | \GMRASYMP\: [\66^DROWSINESS^^^\, \9^DIARRHEA^^^\] | 
 | GMRACMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRACMTS\: [\a comment\] | 
@@ -49,4 +49,9 @@ title: RPCL documentation
 | GMRAERRCMTS | WORD PROCESSING |  | {::nomarkdown}Comments{:/} |  | \GMRAERRCMTS\: [\a comment about the error\, \here is another line\] | 
 | GMRANKA | BOOLEAN |  | {::nomarkdown}No Known Allergies{:/} |  | \GMRANKA\: \YES\ | 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:39 am</p>{:/}
+#### <a name="object-parameter-1"></a>Object Parameters
+
+| name | mvdmProperty | parameterType | pieceIndex | description | example | 
+| --- | --- | --- | --- | --- | --- | 
+
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 25th 2017, 12:46:20 am</p>{:/}
