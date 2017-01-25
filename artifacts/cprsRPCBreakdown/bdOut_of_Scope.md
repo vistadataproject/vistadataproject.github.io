@@ -22,7 +22,7 @@ We won't consider Print services and other system administration issues in VDP a
 10. | [ORQQPXRM MST UPDATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPXRM MST UPDATE) | CHANGE | DEPRECATED
 11. | [ORVW FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORVW FACLIST) | UTILITY | DFN, FILE, LOCATION, MPI
 12. | [ORWCIRN CHECKLINK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN CHECKLINK) | UTILITY | HL7
-13. | [ORWCIRN FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN FACLIST) | UTILITY | DFN, LOCATION, MPI, PARAMETER
+13. | [ORWCIRN FACLIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCIRN FACLIST) | UTILITY | DFN, LOCATION, MPI, P2PSEL, PARAMETER
 14. | [ORWCS PRINT REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWCS PRINT REPORT) | UTILITY | PRINT
 15. | [ORWD1 PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 PARAM) | READ | PARAMETER, PRINT
 16. | [ORWD1 PRINTGUI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWD1 PRINTGUI) | UTILITY | FILE, PRINT
@@ -35,17 +35,17 @@ We won't consider Print services and other system administration issues in VDP a
 23. | [ORWDX SENDP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SENDP) | CHANGE | DFN, PRINT
 24. | [ORWDX1 UNDCORIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 UNDCORIG) | CHANGE | BUG, DFN
 25. | [ORWGEPT CLINRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGEPT CLINRNG) | READ | NOT OSEHRA
-26. | [ORWMHV MHV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWMHV MHV) | UTILITY | -
+26. | [ORWMHV MHV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWMHV MHV) | UTILITY | P2PSEL
 27. | [ORWPCE GAFOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GAFOK) | READ | IS-A, PATCH
 28. | [ORWPCE HNCOK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE HNCOK) | READ | IS-A, PATCH
-29. | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE I10IMPDT) | READ | BEFORE PAT, PATCH
+29. | [ORWPCE I10IMPDT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE I10IMPDT) | READ | P1BPSEL, PATCH
 30. | [ORWPCE ICDVER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE ICDVER) | READ | PATCH
 31. | [ORWPCE LOADGAF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE LOADGAF) | READ | DEPRECATED, DFN
 32. | [ORWPCE SAVEGAF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SAVEGAF) | CHANGE | DEPRECATED, DFN
 33. | [ORWPFSS IS PFSS ACTIVE?](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPFSS IS PFSS ACTIVE?) | READ | IS-A, PATCH
-34. | [ORWPT LEGACY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LEGACY) | UTILITY | DFN, REMOTE
+34. | [ORWPT LEGACY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LEGACY) | UTILITY | DFN, P2PSEL, REMOTE
 35. | [ORWRA PRINT REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRA PRINT REPORT) | UTILITY | PRINT
-36. | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP GET DEFAULT PRINTER) | UTILITY | BEFORE PAT, PARAMETER, PRINT
+36. | [ORWRP GET DEFAULT PRINTER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP GET DEFAULT PRINTER) | UTILITY | P1BPSEL, PARAMETER, PRINT
 37. | [ORWRP PRINT LAB REMOTE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT LAB REMOTE) | UTILITY | PRINT
 38. | [ORWRP PRINT LAB REPORTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT LAB REPORTS) | UTILITY | PRINT
 39. | [ORWRP PRINT REMOTE REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWRP PRINT REMOTE REPORT) | UTILITY | PRINT
@@ -74,4 +74,4 @@ We won't consider Print services and other system administration issues in VDP a
 
 
 
-<small>Generated on 2017-01-21</small>
+<small>Generated on 2017-01-23</small>
