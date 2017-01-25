@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CANCEL{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Cancel the update and unlock the local fields.{:/} | 
 | {::nomarkdown}LFLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Reference to a local variable that contains a list of local fields.   LFLST[i]              Local Field Descriptor                          ^01: IEN                          ^02: Name                          ^03: Inactivation Date (FileMan)                          ^04: Description{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

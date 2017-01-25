@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MDCPDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the IFN of the patient in file 2, if available.{:/} | 
 | {::nomarkdown}MDCPISCR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}If MDCPDFN is set, this tells the linetag that MDCPDFN is a correction, not the original DFN.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

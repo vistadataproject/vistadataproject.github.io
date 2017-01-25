@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DIRECTION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The string LO or HI{:/} | 
 | {::nomarkdown}ARRAY{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}The array of numbers.  Pass using . syntaxX(12)=\\,X(23)=\\,... for example{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:54 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}PARAMS(\stationNumber\)=station number for division/institutionPARAMS(\maxNumberPatients\)=Number between 20 and 100PARAMS(\patientsPerPage\)=Number between 5 and 20PARAMS(\patientType\)=Disabled or EnabledPARAMS(\gender\)=Disabled or EnabledPARAMS(\primaryEligibility\)=Disabled or EnabledPARAMS(\roomBed\)=Disabled or EnabledPARAMS(\serviceConnected\)=Disabled or EnabledPARAMS(\veteranStatus\)=Disabled or EnabledPARAMS(\ward\)=Disabled or EnabledPARAMS(\veteranImage\)=Disabled or EnabledPARAMS(\veteranStatus\)=Disabled or EnabledPARAMS(\ward\)=Disabled or EnabledPARAMS(\veteranImage\)=Disabled or Enabled{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

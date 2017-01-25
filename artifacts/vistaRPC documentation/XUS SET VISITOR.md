@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This controlled-subscription RPC is used by the Broker SecurityEnhancement on an authenticating VistA system to obtain a BSE TOKEN for anauthenticated active user. The TOKEN is used to identify and authenticatea visiting user on a remote VistA system, which calls back to theauthenticating system to obtain the authenticated user's demographics.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

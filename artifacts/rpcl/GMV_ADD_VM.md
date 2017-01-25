@@ -32,8 +32,23 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | --- | 
 |  | DATE-TIME |  | {::nomarkdown}Date/Time Vitals Taken{:/} | vitalsTakenDateTime | 3160930.003322 | 
 |  | REFERENCE |  | {::nomarkdown}Patient IEN{:/} | patient | 25 | 
-|  | [OBJECT] | [{name:vitalType,mvdmProperty:vitalType,parameterType:REFERENCE,description:Vital Type,referencedFile:120_51,pieceIndex:0,required:true,example:21},{name:value,mvdmProperty:value,parameterType:LITERAL,description:Vital value,pieceIndex:1,required:true,example:99},{name:supplementalO2,mvdmProperty:supplementalO2,parameterType:LITERAL,pieceIndex:2,description:Oxygen flow rate and percentage values,example:1 l/min 90%}] | {::nomarkdown}Vital type, a semi-colon, the reading, a semi-colon, and oxygen flow rate and percentage values [optional] (e.g.,21;99;1 l/min 90%){:/} |  | 21;99;1 l/min 90% | 
+|  | [OBJECT] | [Object Parameters 1](#object-parameters-1) | {::nomarkdown}Vital type, a semi-colon, the reading, a semi-colon, and oxygen flow rate and percentage values [optional] (e.g.,21;99;1 l/min 90%){:/} |  | 21;99;1 l/min 90% | 
 |  | REFERENCE |  | {::nomarkdown}Hospital Location{:/} | hospitalLocation | 4 | 
-|  | [OBJECT] | [{name:enteredBy,mvdmProperty:enteredBy,parameterType:REFERENCE,description:Entered By,referencedFile:200,pieceIndex:0,required:true,example:55},{name:qualifier,mvdmProperty:qualifier,parameterType:[REFERENCE],pieceSeparationChar::,description:Vital qualifiers,referencedFile:120_52,pieceIndex:1}] | {::nomarkdown}User number from FILE 200 (i.e., DUZ), an asterisk, and the qualifier (File 120.52) internal entry numbers separated by colons (e.g., 547*50:65){:/} |  | 55*1:51 | 
+|  | [OBJECT] | [Object Parameters 2](#object-parameters-2) | {::nomarkdown}User number from FILE 200 (i.e., DUZ), an asterisk, and the qualifier (File 120.52) internal entry numbers separated by colons (e.g., 547*50:65){:/} |  | 55*1:51 | 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:39 am</p>{:/}
+#### <a name="object-parameters-1"></a>Object Parameters 1 
+
+| name | mvdmProperty | parameterType | pieceIndex | description | example | 
+| --- | --- | --- | --- | --- | --- | 
+| vitalType | vitalType | REFERENCE | 0 | {::nomarkdown}Vital Type{:/} | 21 | 
+| value | value | LITERAL | 1 | {::nomarkdown}Vital value{:/} | 99 | 
+| supplementalO2 | supplementalO2 | LITERAL | 2 | {::nomarkdown}Oxygen flow rate and percentage values{:/} | 1 l/min 90% | 
+
+#### <a name="object-parameters-2"></a>Object Parameters 2 
+
+| name | mvdmProperty | parameterType | pieceIndex | description | example | 
+| --- | --- | --- | --- | --- | --- | 
+| enteredBy | enteredBy | REFERENCE | 0 | {::nomarkdown}Entered By{:/} | 55 | 
+| qualifier | qualifier | [REFERENCE] | 1 | {::nomarkdown}Vital qualifiers{:/} |  | 
+
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 25th 2017, 1:00:20 am</p>{:/}

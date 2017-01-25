@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Returns scoring for all scales for a specified Administration in Scalegroup and Scale Sequence order.  Input: AD as ien for MH Administrations  (required for full legacy only): CODE as Instrument Name                                  DFN  as pt IEN                                  ADATE as SAVE DATE in FM format output: Scale name=Raw Score{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

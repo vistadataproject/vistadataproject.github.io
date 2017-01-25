@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the pointer to the INSTITUTION File (#4).{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is an array containing the data to be stored in the DSIR FACILITY PARAMTERS File (#19620.701) in the below format.        Field Number ^ Internal Data Value        *NOTE: Since this file is DINUM the data array does NOT need the .01 fieldpassed, it is the INST parameter. This parameter is optional, but if nothing is passed nothing will be updated and the return will be an unsuccessful result.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

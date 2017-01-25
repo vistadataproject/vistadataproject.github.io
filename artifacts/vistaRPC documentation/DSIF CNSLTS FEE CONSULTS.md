@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFSCR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}If passed, determines which form of screening should be used to determinewhether the user can view the selected service. If not passed (or passedas \\), no screening will be performed. Allowed values are:   N - Consult Notification screen   U - Consult Parameter screening by user precedence{:/} | 
 | {::nomarkdown}DSIFSTAT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This input should be the status of the Consults you wish to be returned. Currently, the only supported statuses are: Active and Pending.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

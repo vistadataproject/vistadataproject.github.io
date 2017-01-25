@@ -36,4 +36,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MEDIA LOG IEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Unique identifier of an Importer II media import event. Used to cross-reference fields inthis file with specific source media in the MAGV IMPORT MEDIA LOG file (#2006.9422).{:/} | 
 | {::nomarkdown}OBJFAIL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}6{:/} |  | {::nomarkdown}Count of requested objects which failed to be imported for this study.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
