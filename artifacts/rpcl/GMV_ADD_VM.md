@@ -32,11 +32,11 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | --- | 
 |  | DATE-TIME |  | {::nomarkdown}Date/Time Vitals Taken{:/} | vitalsTakenDateTime | 3160930.003322 | 
 |  | REFERENCE |  | {::nomarkdown}Patient IEN{:/} | patient | 25 | 
-|  | [OBJECT] | [Details](#object-parameter-1) | {::nomarkdown}Vital type, a semi-colon, the reading, a semi-colon, and oxygen flow rate and percentage values [optional] (e.g.,21;99;1 l/min 90%){:/} |  | 21;99;1 l/min 90% | 
+|  | [OBJECT] | [Object Parameters 1](#object-parameter-1) | {::nomarkdown}Vital type, a semi-colon, the reading, a semi-colon, and oxygen flow rate and percentage values [optional] (e.g.,21;99;1 l/min 90%){:/} |  | 21;99;1 l/min 90% | 
 |  | REFERENCE |  | {::nomarkdown}Hospital Location{:/} | hospitalLocation | 4 | 
-|  | [OBJECT] | [Details](#object-parameter-2) | {::nomarkdown}User number from FILE 200 (i.e., DUZ), an asterisk, and the qualifier (File 120.52) internal entry numbers separated by colons (e.g., 547*50:65){:/} |  | 55*1:51 | 
+|  | [OBJECT] | [Object Parameters 2](#object-parameter-2) | {::nomarkdown}User number from FILE 200 (i.e., DUZ), an asterisk, and the qualifier (File 120.52) internal entry numbers separated by colons (e.g., 547*50:65){:/} |  | 55*1:51 | 
 
-#### <a name="object-parameter-1"></a>Object Parameters
+#### <a name="object-parameter-1"></a>Object Parameters 1 
 
 | name | mvdmProperty | parameterType | pieceIndex | description | example | 
 | --- | --- | --- | --- | --- | --- | 
@@ -44,11 +44,11 @@ title: RPCL documentation
 | value | value | LITERAL | 1 | {::nomarkdown}Vital value{:/} | 99 | 
 | supplementalO2 | supplementalO2 | LITERAL | 2 | {::nomarkdown}Oxygen flow rate and percentage values{:/} | 1 l/min 90% | 
 
-#### <a name="object-parameter-2"></a>Object Parameters
+#### <a name="object-parameter-2"></a>Object Parameters 2 
 
 | name | mvdmProperty | parameterType | pieceIndex | description | example | 
 | --- | --- | --- | --- | --- | --- | 
 | enteredBy | enteredBy | REFERENCE | 0 | {::nomarkdown}Entered By{:/} | 55 | 
 | qualifier | qualifier | [REFERENCE] | 1 | {::nomarkdown}Vital qualifiers{:/} |  | 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 25th 2017, 12:46:20 am</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 25th 2017, 12:52:11 am</p>{:/}
