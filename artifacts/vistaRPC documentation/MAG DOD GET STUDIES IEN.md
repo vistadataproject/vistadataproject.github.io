@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IMGLESS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an indicator whether to get only Study-Level or include all images.Pass \1\ to get only Study-Level data.Pass null or empty string to include all images.{:/} | 
 | {::nomarkdown}FLAGS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an indicator whether to include or exclude \Deleted\ Images.Pass \D\ to include Deleted Images.Pass null or empty string to exclude Deleted Images{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

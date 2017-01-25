@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date the patient specific reminder that will start appearing when theANTICOAGULATOR is accessed.{:/} | 
 | {::nomarkdown}RTEXT{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Actual carrot ('^') deliminated text (by line) of the reminder.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

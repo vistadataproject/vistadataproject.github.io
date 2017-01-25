@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ESCODE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The network encrypted signature code of the person identified in ORNP. {:/} | 
 | {::nomarkdown}ITEM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}The array of items to which the electronic signature is being applied. Should have the format:  ITEM(#)=DOC:### for notes, or  ITEM(#)=ORU:###^DFN^Release Flag^Signature Status^Nature of Order  ITEM(#)=ORD:###^DFN^Release Flag^Signature Status^Nature of Order{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

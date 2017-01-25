@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TEXT{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format TEXT(1...n) containing the email message in 1 or more lines (limit to 80 chars per line){:/} | 
 | {::nomarkdown}MLTO{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}An array format MLTO(1...n) containing the recipients of the email in,     and the recipient can be in the form of mail group names and/or     employee names.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

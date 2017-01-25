@@ -34,4 +34,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STATLIST{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Status of entry to be retrieve (C, L, R, U, or W, in any combination){:/} | 
 | {::nomarkdown}READER STATION{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Reading Site's Station Number{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

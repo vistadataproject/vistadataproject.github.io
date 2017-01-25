@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PROC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}PROC = \PROC1;PROC2;PROC3\  [PROC1 is mandatory, Primary procedure]{:/} | 
 | {::nomarkdown}CHARGES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}35{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CHARGES = \Billed Charges;Amount Claimed\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Copies a test to a new name. Used when design for one test is based on another. Questions, Intros, Content, Sections, Scales, Rule and Keys are all duplicated. Input: ORIGINAL: As name of test to be copied. ie 'MH Survey'        New: Name of new test ie 'MH Survey Copy'        NATIIONAL : optional if test is to be distributed nationally.                     Available only to MH developers. Output: DATA vs Error{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

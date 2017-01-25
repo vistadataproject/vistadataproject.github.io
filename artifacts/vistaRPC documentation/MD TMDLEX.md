@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MDAPP{:/} | {::nomarkdown}REFERENCE{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the application indicator.  It is either \CPT\ or \ICD\.{:/} | 
 | {::nomarkdown}STUDY{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is a required field to obtain the Patient Study # which will be used to check the PCE visit date.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

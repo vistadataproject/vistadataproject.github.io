@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DSICD{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DSICD(n) = p1^p2  for n=0,1,2,3,...  where  p1 := \V\ if this is the VISIT ifn, or VISIT field#  p2 := VISIT ifn (if p1=\V\), or format code (if p1=field#)        Format codes:  I:internal  E:external  B:both  DSICD(n) = V^ifn is required{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

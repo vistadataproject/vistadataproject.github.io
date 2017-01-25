@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TXID ^ TXDUZ ^ TXDIVTXID: Required; designates action to take: 1--Add entries; 2--Update/refresh data; 3--Delete entriesTXDUZ: Optional; if supplied, get data for another user (Read Only)TXDIV: Optional; if supplied, get data for another division (Read Only){:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}30{:/} |  | {::nomarkdown}Exam ID \\ Display data{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

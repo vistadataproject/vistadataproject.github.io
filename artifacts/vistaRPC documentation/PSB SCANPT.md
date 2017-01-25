@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PSBDATA{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the scanned valued passed by the client.wristband prompt of the mnOpenPatient component.  The value passed inis either the full SSN scanned in from the patient wristband -or- the1U4N syntax of the patient lookup.  In either case the call mustreturn only one patient from the lookup.  If the 1U4N syntax is usedand multiple patients are found the call returns an error.  If onlyone patient is found the RESULTS( ) array is loaded with the patientdata and passed back to the client for verification.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:11 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

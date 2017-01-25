@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IENMAGLOC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of an entry in the IMAGING LOCATIONS file (#79.1).will be filtered from the return array.{:/} | 
 | {::nomarkdown}IENRAPROC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}IEN of an entry in the RAD/NUC MED PROCEDURES file (#71). If present,restricts the output to the single procedure requested.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

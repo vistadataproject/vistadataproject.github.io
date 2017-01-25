@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input string = UPDFLAG ^ RARPT ^ RADFN ^ RADTI ^ RACNI ^ UPDPSKEY             UPDFLAG = 1/0 -- 1 to perform update; else no update made             RARPT = pointer to Rad Exam Report file             RADFN,RADTI,RACNI = pointers to Rad Patient File for the exam            UPDPSKEY = 1 if updating Pres State or Key Image data{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}WORD PROCESSING{:/} | {::nomarkdown}120{:/} | {::nomarkdown}true{:/} | {::nomarkdown}optional array of text containing Key Image and/orImage Presentation State data. The format of the messagecontained in DATA is:*IMAGEImage_IEN ^ KEY*PSPS_UID ^ KEYxml text lines 1xml text lines 2:N (as needed)*END_PS[*PS . . . *END_PS] (as many as for this image)*END_IMAGE[*IMAGE . . . *END_IMAGE] (as many as for the exam)*END{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}256{:/} | {::nomarkdown}true{:/} | {::nomarkdown}CARET DELIMITED AS FOLLOWS:  ^01: ACTION ... \VR-RV\_ subset member from ACTION+1^MAGGTAU  ^02: RADFN .... IEN of PATIENT file (#2)  ^03: MAGIEN ... IEN of IMAGE file (#2005)  ^04: NIMGS .... VRad Image Count  ^05: REMOTE ... VRad Remote Read Flag  ^06: MAGJVRV .. VRad Version  ^07: USERCLS .. VRad User Class  ^08: VIXTXID .. VRad VIX Transaction ID{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

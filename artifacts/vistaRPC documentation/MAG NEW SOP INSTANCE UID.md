@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}NEW{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}64{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string.This value represents the new SOP Instance UID that is tobe assigned to the corrected image that is to be exported.{:/} | 
 | {::nomarkdown}IMAGE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is anumber. This number is a pointer that identifiesan image (pointer to file # 2005). When this parameter is specified, it identifies theimage to which the new UID is intended to be added.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns user privlege to see psych test results. Input: YSCODE ;code of test or interview to check privelges forOutput:YSDATA(1)=[DATA]YSDATA(2)=1^user privileged for all tests        orYSDATA(2)=1^exempt test\        orYSDATA(2)=1^interview        orYSDATA(2)=1^exempt test        orYSDATA(2)=0^no access{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}25{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA = p1^p2^p3^p4 where  p1 :== duz - pointer to file 200 (also must be in file 220.5)  p2 :== single character code (A)dmin  (f)ee basis  (R)esearch         (E)ducation/training  p3 :== non-clinical admin time hr.min (0.25 - 49.75)         [in 15 minute increments]  p4 :== station.division name (from file 225){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}

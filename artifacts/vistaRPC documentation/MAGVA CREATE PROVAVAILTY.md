@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}    MAGPARAM(\STORAGE PROVIDER\)      = A pointer to STORAGE PROVIDER file (#2006.917)    MAGPARAM(\SOURCE PLACE\)  = A pointer to IMAGING SITE PARAMETERS file (#2006.1)    MAGPARAM(\START TIME\)    =  DateTime in IDF format (YYYYMMDD.HHMMSS)    MAGPARAM(\END TIME\)      = DateTime in IDF format (YYYYMMDD.HHMMSS){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:30:12 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}
