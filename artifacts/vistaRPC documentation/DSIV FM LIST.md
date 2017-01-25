@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}INPUT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown} The INPUT(n) = tag^value  where   tag = LIST^DIC input parameter name such as         FILE  IENS  FIELDS  FLAGS  NUMBER  INDEX  FROM  PART  SCREEN   value = value for that input parameter  The INDEX variable consists only of a single index name.  For those input parameters that allow an array, you can pass that array in the tag such as FROM(2)^lookup value{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

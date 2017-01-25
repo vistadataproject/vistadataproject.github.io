@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TIUSEC{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This BOOLEAN value allows sensitive patient data to be displayed or hidden.{:/} | 
 | {::nomarkdown}TIUGHS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This BOOLEAN value determines whether or not HEALTH SUMMARY information will included after the patient data.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

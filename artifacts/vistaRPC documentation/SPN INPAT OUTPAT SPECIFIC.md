@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SPECLTY{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Type of Specialties to search for. {:/} | 
 | {::nomarkdown}HIUSERS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Type of data to return: 0 - clinic & specialty stats, 1 - patient usage data. {:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}

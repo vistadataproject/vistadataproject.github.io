@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the string CFPO or any combination of that. C=complete txns (defaulted for old extract option) P=planned txns F=Findings O=Observed{:/} | 
 | {::nomarkdown}STN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Contains the external facility ID (500, 500BZ, etc) for which the user wants extracted data.  If this field is null (not sent), then all facilities will be returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 12:25:50 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
