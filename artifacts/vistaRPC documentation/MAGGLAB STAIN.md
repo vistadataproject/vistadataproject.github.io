@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}The line tag STAIN is used for selection of Histological stainSend array of entries in file 2005.4, Image Histological Stain{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

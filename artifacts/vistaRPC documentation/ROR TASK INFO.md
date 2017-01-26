@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}TASK{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A valid task number should be assigned to the TASK parameter.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

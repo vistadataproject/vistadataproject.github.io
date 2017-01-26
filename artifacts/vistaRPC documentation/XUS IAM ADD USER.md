@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DIVISION field (#.01) of the DIVISION multiple (#16) in the NEW PERSON file (#200). The name of a Division that this user may sign on to. The Division should be an active treating facility.{:/} | 
 | {::nomarkdown}AUTHCODE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Security Phrase for IAM Provisioning Application.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

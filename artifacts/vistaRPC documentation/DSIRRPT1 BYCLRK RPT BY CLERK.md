@@ -32,4 +32,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SCHED{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Boolean flag that determines whether a report is scheduled or run immedieately. 0 - Immediate  1 - Schedule.{:/} | 
 | {::nomarkdown}ESTART{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}14{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Earliest time to start the scheduled task.  Mmust be inFileMan date/time format. {:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

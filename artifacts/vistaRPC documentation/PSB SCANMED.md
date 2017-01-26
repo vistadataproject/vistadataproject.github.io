@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBDIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Takes the scanned valued from the medication and does a lookup on file50 for an exact match.  If more than one or less than one entry arefound for the lookup an error is returned to the client.{:/} | 
 | {::nomarkdown}PSBTAB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the current tab the user is on.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

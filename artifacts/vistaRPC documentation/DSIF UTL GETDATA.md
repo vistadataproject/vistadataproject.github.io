@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}XQAID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}INPUT PARAMETER  XQAID - to be used in searching for the XQALERT data.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

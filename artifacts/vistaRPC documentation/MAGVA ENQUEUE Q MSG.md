@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}MAGPARAM(\EXPIRATION DATETIME\) MAGPARAM(\EARLIEST DELIVERY DATE/TIME\) MAGPARAM(\PRIORITY\) = 1..99 MAGPARAM(\QUEUE\) = Pointer to QUEUE file (#2006.927) MAGPARAM(\MESSAGE GROUP ID\) = value of the field \MESSAGE GROUP ID\                                 in QUEUE file (#2006.927) or \*\ or \\{:/} | 
 | {::nomarkdown}MAGMSG{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}MAGMSG(1..n)= MESSAGE{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

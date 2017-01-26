@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API returns a list of Progress Notes Titles, including a SHORT LIST or preferred titles as defined by the user, and a LONG LIST of all titles defined at the site.  This has been added to the Blind Rehab software to allow the lookup of TIU Document Definitions to set as site parameters for the current institution.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

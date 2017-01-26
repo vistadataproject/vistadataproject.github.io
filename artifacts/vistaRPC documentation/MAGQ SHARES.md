@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}null{:/} |  |  | {::nomarkdown}true{:/} | {::nomarkdown}No input parameters are defined for this procedure.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

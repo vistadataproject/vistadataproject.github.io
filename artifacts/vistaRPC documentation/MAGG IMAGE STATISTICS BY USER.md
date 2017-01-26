@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGDUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Internal ID of a user that has previously queued an Image Statistics Report.The default value is the current user DUZ.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

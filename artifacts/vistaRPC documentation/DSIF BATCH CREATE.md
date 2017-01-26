@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CONTROL POINT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Control point, may be entered as \038\ or the actual IEN \38\{:/} | 
 | {::nomarkdown}BATCH EMEMPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional (not used) for B3 batches,Required for B9 batches, must be \Y\ or \N\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

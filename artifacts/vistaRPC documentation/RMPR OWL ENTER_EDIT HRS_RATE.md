@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}GUI Order controll processing.  ENTER/EDITTechnisions, Rate of Labor and Hours to 664.3 for the associated work order..{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

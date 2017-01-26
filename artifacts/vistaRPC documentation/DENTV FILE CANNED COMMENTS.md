@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DENTV{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the comment information that must be entered to save/update the record.     DENTV(\PROV\) - Provider IEN     DENTV(\TYP\) - 1: system, 2: user     DENTV(\CAT\) - 1:radio,2:summary,3:treatment,4:educ,5:disp     DENTV(n) - n number of records for the WP field (the comment)     DENTV(\IEN\) - IEN is only used to updated an existing, null means                     add.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

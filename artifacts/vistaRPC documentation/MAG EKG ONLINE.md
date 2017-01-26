@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}Returns the status of the first EKG network location type.If an EKG storage type doesn't exist then an offline status is returned. 1=online0=offline{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

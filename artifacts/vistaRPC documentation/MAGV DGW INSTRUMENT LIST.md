@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}HOSTNAME{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}The HOSTNAME is the corresponding DICOM Gateway.  If HOSTNAME is blank all settings will be returned{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}RORDFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}A valid patient IEN (DFN) should be assigned to the RORDFN parameter.{:/} | 
 | {::nomarkdown}FORCE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Deprecatedrecord will be deleted from the registry even if some data has been sent to the AAC already. BE VERY CAREFUL WITH THIS!{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

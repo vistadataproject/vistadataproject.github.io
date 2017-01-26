@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MECH{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is an integer value (1 or 2).This number defines the mechanism that will be used to transmitthe images:   1 = standard copy   2 = DICOM copy{:/} | 
 | {::nomarkdown}DESTS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array containing the list of destinationsthat is being served by the current transmitter.The values in this array each are string with two pieces of data,separated by a caret (\^\). The first piece describes the transmission mechanism:  1 = regular copy  2 = DICOM copy The second piece is a pointer. When the first piece is equalto 1, this pointer points to table # 2005.2 (Network Location);when the first piece is equal to 2, this pointer points totable # 2006.585 (User Application).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

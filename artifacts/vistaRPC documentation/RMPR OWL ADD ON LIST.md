@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}GUI Order controll processing.  Returns Add On's from material multiple of 664.2..{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

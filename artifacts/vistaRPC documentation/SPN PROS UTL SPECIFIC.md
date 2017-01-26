@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TDATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date to end search at.  {:/} | 
 | {::nomarkdown}ITEMS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}Array that has the prosthetic item names{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

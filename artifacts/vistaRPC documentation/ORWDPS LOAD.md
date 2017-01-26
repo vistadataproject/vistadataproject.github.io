@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Loads dialog data (lists & defaults) for a pharmacy order once anorderable item (Drug & Form) is selected.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:13 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

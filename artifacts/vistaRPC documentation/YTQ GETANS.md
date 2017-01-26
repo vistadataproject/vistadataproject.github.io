@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns answers to an MH TESTS AND SURVEYS Input:  AD= Administration number        QN=Question Number{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

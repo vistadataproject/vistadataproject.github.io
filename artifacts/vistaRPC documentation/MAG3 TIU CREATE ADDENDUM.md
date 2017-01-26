@@ -33,4 +33,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGTEXT{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}3200{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Array of Text to add to the New Note.{:/} | 
 | {::nomarkdown}MAGDATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The Date of the New TIU Note/Addendum{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

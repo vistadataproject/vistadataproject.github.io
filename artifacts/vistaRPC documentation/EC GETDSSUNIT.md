@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}ECARY{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Optional input variable ECARY containing a status of:   STAT   - Active or inactive DSS Units (optional)            A-ctive (default), I-nactive, B-oth{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}

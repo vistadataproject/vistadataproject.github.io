@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns all MH Administrations for a specified patient.  input : DFN output:AdministrationID=InstrumentName^DateGiven^DateSaved^OrderedBy^AdministeredBy^Signed^IsComplete^NumberOfQuestionsAnswered{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

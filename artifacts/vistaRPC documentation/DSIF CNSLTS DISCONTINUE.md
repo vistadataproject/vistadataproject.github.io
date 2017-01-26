@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFACTM{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag used to determine if Consult was DISCONTINUED or DENIED. 'DC' - Discontinued'DY' - Denied{:/} | 
 | {::nomarkdown}DSIFCOM{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} |  | {::nomarkdown}The array of comments associated with the discontinue/deny for the consult.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

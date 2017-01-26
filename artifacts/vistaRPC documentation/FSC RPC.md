@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}NOIS remote procedure entry. All RPCs for NOIS route through this entry.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

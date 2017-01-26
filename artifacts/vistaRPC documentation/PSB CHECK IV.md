@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DFN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Patient IENentry number (IEN) and a pointer to the PATIENT FILE (File#2 - ^DPT).{:/} | 
 | {::nomarkdown}ORDIV{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}LIST OF ORDER NUMBERSto contain the output from PSB CHECK IV processing.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

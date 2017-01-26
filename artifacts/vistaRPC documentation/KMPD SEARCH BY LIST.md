@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SUBSCRIPT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Subscript (free text)Ex: \ORWCV\{:/} | 
 | {::nomarkdown}DATAGLOBAL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Global containing data.Ex: ^TMP($J){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

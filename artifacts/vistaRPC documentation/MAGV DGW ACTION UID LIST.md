@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGSUBT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Subtype (e.g. \Storage\){:/} | 
 | {::nomarkdown}MAGACT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Action Type (e.g. \Storage SCP\){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

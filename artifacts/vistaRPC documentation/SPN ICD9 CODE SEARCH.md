@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SPNANS{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}(1) Range of Codes (2) Individual codes{:/} | 
 | {::nomarkdown}CODES{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}The list or range of ICD codes{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

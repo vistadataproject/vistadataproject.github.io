@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}13{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the Fileman format, date only, for which you wish to retrieve inpatient movement information.  If it is not passed, then the program will use NOW as the date.{:/} | 
 | {::nomarkdown}LODGE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is a Boolean flag (1 or 0 or <null>).  If LODGE=1 then allow for lodger type admissions.  If not, exclude lodger type admissions from the search.  The default value is <null>, exclude lodger admisssions.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

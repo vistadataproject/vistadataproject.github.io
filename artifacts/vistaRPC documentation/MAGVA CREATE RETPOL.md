@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARCHIVE DURATION TRIGGER\) MAGPARAM(\ARCHIVE DURATION YEARS\) MAGPARAM(\BUSINESS KEY\) MAGPARAM(\DISPLAY NAME\) MAGPARAM(\MINIMUM ARCHIVE COPIES\) MAGPARAM(\MINIMUM OFFSITE COPIES\){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}The EC ICD10IMPLEMENTATIONDATE RPC returns the Implementation Date ofICD-10 Code Set in MM/DD/YYYY format OR  -1^Error Message.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

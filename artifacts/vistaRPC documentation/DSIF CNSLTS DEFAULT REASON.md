@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFDFN{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the Patient DFN.{:/} | 
 | {::nomarkdown}DSIFRES{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}This is the RESOLVE variable, which indicates boilerplates should be used.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

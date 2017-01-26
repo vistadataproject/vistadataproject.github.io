@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGCNT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Count of new images captured{:/} | 
 | {::nomarkdown}MAGRIEN{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}a request/consult IEN in REQUEST/CONSULTATION file (#123){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}2{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag for locking or unlocking  1: Lock -1: Unlock Defaults to 1{:/} | 
 | {::nomarkdown}FUN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Flag to indicate if the call is extrinsic or RPC   1: Extrinsic  0: RPC{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

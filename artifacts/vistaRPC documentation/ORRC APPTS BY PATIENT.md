@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to stop searching for appointments, in the formYYYYMMDDHHMMSS.{:/} | 
 | {::nomarkdown}DETAILS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This flag indicates whether to return the details or note text with eachappointment (true) or just the list of appointment ID's (false).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ORAMNUM{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 | {::nomarkdown}DUZ{:/} | {::nomarkdown}LITERAL{:/} |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}IMPORTER{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}3{:/} |  | {::nomarkdown}Indicator to determine if DGW is using the IMPORTER.Contents are YES or NO.{:/} | 
 | {::nomarkdown}LOCATION{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} |  | {::nomarkdown}DICOM GATEWAY LOCATION CODE(Site Location/Station number){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

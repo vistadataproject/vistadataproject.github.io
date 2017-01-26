@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}SINGLE VALUE{:/}
  description | {::nomarkdown}This function returns the boolean value used to determinewhether the Imaging site is operating in the Consolidationmode.{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}

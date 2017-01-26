@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAMETERS{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}A subscripted array that represents the list of parameter changes to the VetLink's Kiosk Configuration.Each element in the subscripted array is constructed as:PARAMETERS(n) = field label^field value        where   n           : an incremental number that acts as an index                field label : the name of VistA Field Name                field value : the parameter value to be stored in VistA{:/} | 
 | {::nomarkdown}PARAMTYP{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains either 'K' for KIOSK GROUP or 'C' for CLINIC.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}

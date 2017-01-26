@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CASENUMB{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a string. This value identifiesthe \case number\ for the study. The case number may be specifiedas a \date + case number\ or as just an integer number.In the former case, the date is formatted as \mmddyy\.{:/} | 
 | {::nomarkdown}STUDYDAT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The value of this parameter is a (FileMan) date.This value represents the date on which the study took place.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
