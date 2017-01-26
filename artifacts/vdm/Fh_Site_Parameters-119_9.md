@@ -129,4 +129,4 @@ title: VDM documentation
 | print_order | 5 | Print Order | {::nomarkdown}This is a print order of a specific Drug Classification.{:/} | NUMERIC |  |  |  | 
 | create_alert | 6 | Create Alert | {::nomarkdown}If set to YES, alert will be created for patient that is taking <br/>medication with this type of Drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}

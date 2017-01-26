@@ -4,111 +4,111 @@ title: VDM documentation
 ---
 ## VDM
 
- # | Class | Type | Contained 
- --- | --- | --- | --- 
-1 | [Accession-68](Accession-68.md) | META | 2
-2 | [Adverse_Reaction_Assessment-120_86](Adverse_Reaction_Assessment-120_86.md) | CLINICAL | 0
-3 | [Adverse_Reaction_Reporting-120_85](Adverse_Reaction_Reporting-120_85.md) | CLINICAL | 5
-4 | [Alert_Tracking-8992_1](Alert_Tracking-8992_1.md) | META | 1
-5 | [Clinical_Reminder_Parameters-800](Clinical_Reminder_Parameters-800.md) | META | 1
-6 | [Cmop_System-550](Cmop_System-550.md) | META | 4
-7 | [Collection_Sample-62](Collection_Sample-62.md) | META | 2
-8 | [Concept_Usage-757_001](Concept_Usage-757_001.md) | CLINICAL | 0
-9 | [Contract_sharing_Agreements-34](Contract_sharing_Agreements-34.md) | META | 0
-10 | [Device-3_5](Device-3_5.md) | META | 1
-11 | [Display_Group-100_98](Display_Group-100_98.md) | META | 1
-12 | [Drug_Ingredients-50_416](Drug_Ingredients-50_416.md) | CLINICAL | 0
-13 | [Drug-50](Drug-50.md) | META | 9
-14 | [Education_Topics-9999999_09](Education_Topics-9999999_09.md) | META | 1
-15 | [Exam-9999999_15](Exam-9999999_15.md) | META | 0
-16 | [Expressions-757_01](Expressions-757_01.md) | CLINICAL | 1
-17 | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7.md) | META | 1
-18 | [Fh_Site_Parameters-119_9](Fh_Site_Parameters-119_9.md) | META | 3
-19 | [File-1](File-1.md) | META | 1
-20 | [GMR_Allergies-120_82](GMR_Allergies-120_82.md) | META | 1
-21 | [GMR_Allergy_Site_Parameters-120_84](GMR_Allergy_Site_Parameters-120_84.md) | META | 0
-22 | [Gmrc_Procedure-123_3](Gmrc_Procedure-123_3.md) | META | 0
-23 | [Gmrv_Vital_Category-120_53](Gmrv_Vital_Category-120_53.md) | META | 2
-24 | [Gmrv_Vital_Measurement-120_5](Gmrv_Vital_Measurement-120_5.md) | CLINICAL | 1
-25 | [Gmrv_Vital_Type-120_51](Gmrv_Vital_Type-120_51.md) | META | 1
-26 | [Gmrv_Vitals_Parameters-120_57](Gmrv_Vitals_Parameters-120_57.md) | CLINICAL | 0
-27 | [Health_Factors-9999999_64](Health_Factors-9999999_64.md) | META | 0
-28 | [Health_Summary_Objects-142_5](Health_Summary_Objects-142_5.md) | META | 0
-29 | [Help_Frame-9_2](Help_Frame-9_2.md) | META | 1
-30 | [Hl7_Message_Exceptions-79_3](Hl7_Message_Exceptions-79_3.md) | META | 0
-31 | [Holiday-40_5](Holiday-40_5.md) | META | 0
-32 | [Hospital_Location-44](Hospital_Location-44.md) | META | 16
-33 | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | CLINICAL | 9
-34 | [Imaging_Type-79_2](Imaging_Type-79_2.md) | META | 2
-35 | [Immunization-9999999_14](Immunization-9999999_14.md) | META | 2
-36 | [Install-9_7](Install-9_7.md) | META | 7
-37 | [Institution-4](Institution-4.md) | META | 6
-38 | [Kernel_System_Parameters-8989_3](Kernel_System_Parameters-8989_3.md) | META | 4
-39 | [Lab_Section_Print-69_2](Lab_Section_Print-69_2.md) | META | 14
-40 | [Laboratory_Site-69_9](Laboratory_Site-69_9.md) | META | 9
-41 | [Laboratory_Test-60](Laboratory_Test-60.md) | META | 7
-42 | [Location-9999999_06](Location-9999999_06.md) | META | 0
-43 | [Mail_Group-3_8](Mail_Group-3_8.md) | META | 2
-44 | [Major_Concept_Map-757](Major_Concept_Map-757.md) | CLINICAL | 0
-45 | [Medication_Routes-51_2](Medication_Routes-51_2.md) | META | 1
-46 | [Mh_Tests_And_Surveys-601_71](Mh_Tests_And_Surveys-601_71.md) | META | 0
-47 | [Nature_Of_Order-100_02](Nature_Of_Order-100_02.md) | META | 1
-48 | [Ndc_upn-50_67](Ndc_upn-50_67.md) | CLINICAL | 0
-49 | [New_Person-200](New_Person-200.md) | META | 20
-50 | [Oe_rr_Com_Objects-101_15](Oe_rr_Com_Objects-101_15.md) | META | 0
-51 | [Oe_rr_Epcs_Parameters-100_7](Oe_rr_Epcs_Parameters-100_7.md) | META | 0
-52 | [Oe_rr_List-100_21](Oe_rr_List-100_21.md) | META | 3
-53 | [Oe_rr_Notifications-100_9](Oe_rr_Notifications-100_9.md) | META | 0
-54 | [Oe_rr_Release_Events-100_5](Oe_rr_Release_Events-100_5.md) | META | 3
-55 | [Oe_rr_Report-101_24](Oe_rr_Report-101_24.md) | META | 2
-56 | [Option-19](Option-19.md) | META | 7
-57 | [Or_Cprs_Tabs-101_13](Or_Cprs_Tabs-101_13.md) | META | 0
-58 | [Order_Checks-100_8](Order_Checks-100_8.md) | META | 0
-59 | [Order_Dialog-101_41](Order_Dialog-101_41.md) | META | 3
-60 | [Order_Quick_View-101_44](Order_Quick_View-101_44.md) | META | 2
-61 | [Order_Reason-100_03](Order_Reason-100_03.md) | META | 0
-62 | [Order_Status-100_01](Order_Status-100_01.md) | META | 1
-63 | [Order_Urgency-101_42](Order_Urgency-101_42.md) | META | 0
-64 | [Orderable_Items-101_43](Orderable_Items-101_43.md) | META | 2
-65 | [Package-9_4](Package-9_4.md) | META | 7
-66 | [Parameter_Definition-8989_51](Parameter_Definition-8989_51.md) | META | 1
-67 | [Patient_Allergies-120_8](Patient_Allergies-120_8.md) | CLINICAL | 4
-68 | [Patient_ihs-9000001](Patient_ihs-9000001.md) | CLINICAL | 1
-69 | [Patient_Movement-405](Patient_Movement-405.md) | CLINICAL | 0
-70 | [Patient-2](Patient-2.md) | CLINICAL | 21
-71 | [Pbm_Patient_Demographics-59_9](Pbm_Patient_Demographics-59_9.md) | CLINICAL | 0
-72 | [Problem_List_Audit-125_8](Problem_List_Audit-125_8.md) | CLINICAL | 0
-73 | [Problem_List_Site_Parameters-125_99](Problem_List_Site_Parameters-125_99.md) | META | 0
-74 | [Problem_Selection_Category_Contents-125_12](Problem_Selection_Category_Contents-125_12.md) | META | 0
-75 | [Problem_Selection_List_Contents-125_1](Problem_Selection_List_Contents-125_1.md) | META | 0
-76 | [Problem-9000011](Problem-9000011.md) | CLINICAL | 2
-77 | [Protocol-101](Protocol-101.md) | META | 2
-78 | [Provider_Narrative-9999999_27](Provider_Narrative-9999999_27.md) | CLINICAL | 0
-79 | [Reminder_Category-811_7](Reminder_Category-811_7.md) | META | 2
-80 | [Reminder_Definition-811_9](Reminder_Definition-811_9.md) | META | 6
-81 | [Reminder_Dialog-801_41](Reminder_Dialog-801_41.md) | META | 3
-82 | [Remote_Procedure-8994](Remote_Procedure-8994.md) | META | 1
-83 | [Request_Action_Types-123_1](Request_Action_Types-123_1.md) | META | 0
-84 | [Request_Services-123_5](Request_Services-123_5.md) | META | 4
-85 | [Service_section-49](Service_section-49.md) | META | 1
-86 | [Sign_symptoms-120_83](Sign_symptoms-120_83.md) | META | 1
-87 | [Skin_Test-9999999_28](Skin_Test-9999999_28.md) | META | 2
-88 | [Title-3_1](Title-3_1.md) | META | 0
-89 | [TIU_Document_Definition-8925_1](TIU_Document_Definition-8925_1.md) | META | 5
-90 | [TIU_Document-8925](TIU_Document-8925.md) | META | 0
-91 | [TIU_Personal_Document_Type_List-8925_98](TIU_Personal_Document_Type_List-8925_98.md) | META | 1
-92 | [TIU_Template_Field-8927_1](TIU_Template_Field-8927_1.md) | META | 0
-93 | [TIU_Template-8927](TIU_Template-8927.md) | META | 1
-94 | [Topography_Field-61](Topography_Field-61.md) | META | 2
-95 | [Treatment-9999999_17](Treatment-9999999_17.md) | META | 0
-96 | [Usr_Class-8930](Usr_Class-8930.md) | META | 0
-97 | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | CLINICAL | 1
-98 | [VA_Generic-50_6](VA_Generic-50_6.md) | CLINICAL | 0
-99 | [VA_Product-50_68](VA_Product-50_68.md) | CLINICAL | 3
-100 | [Visit-9000010](Visit-9000010.md) | CLINICAL | 0
-101 | [Ward_Location-42](Ward_Location-42.md) | META | 3
-102 | [Wv_Notification_Purpose-790_404](Wv_Notification_Purpose-790_404.md) | META | 0
-103 | [Wv_Procedure-790_1](Wv_Procedure-790_1.md) | META | 0
+ # | Class | Contained 
+ --- | --- | --- 
+1 | [Accession-68](Accession-68.md) | 2
+2 | [Adverse_Reaction_Assessment-120_86](Adverse_Reaction_Assessment-120_86.md) | 0
+3 | [Adverse_Reaction_Reporting-120_85](Adverse_Reaction_Reporting-120_85.md) | 5
+4 | [Alert_Tracking-8992_1](Alert_Tracking-8992_1.md) | 1
+5 | [Clinical_Reminder_Parameters-800](Clinical_Reminder_Parameters-800.md) | 1
+6 | [Cmop_System-550](Cmop_System-550.md) | 4
+7 | [Collection_Sample-62](Collection_Sample-62.md) | 2
+8 | [Concept_Usage-757_001](Concept_Usage-757_001.md) | 0
+9 | [Contract_sharing_Agreements-34](Contract_sharing_Agreements-34.md) | 0
+10 | [Device-3_5](Device-3_5.md) | 1
+11 | [Display_Group-100_98](Display_Group-100_98.md) | 1
+12 | [Drug_Ingredients-50_416](Drug_Ingredients-50_416.md) | 0
+13 | [Drug-50](Drug-50.md) | 9
+14 | [Education_Topics-9999999_09](Education_Topics-9999999_09.md) | 1
+15 | [Exam-9999999_15](Exam-9999999_15.md) | 0
+16 | [Expressions-757_01](Expressions-757_01.md) | 1
+17 | [Facility_Treating_Specialty-45_7](Facility_Treating_Specialty-45_7.md) | 1
+18 | [Fh_Site_Parameters-119_9](Fh_Site_Parameters-119_9.md) | 3
+19 | [File-1](File-1.md) | 1
+20 | [GMR_Allergies-120_82](GMR_Allergies-120_82.md) | 1
+21 | [GMR_Allergy_Site_Parameters-120_84](GMR_Allergy_Site_Parameters-120_84.md) | 0
+22 | [Gmrc_Procedure-123_3](Gmrc_Procedure-123_3.md) | 0
+23 | [Gmrv_Vital_Category-120_53](Gmrv_Vital_Category-120_53.md) | 2
+24 | [Gmrv_Vital_Measurement-120_5](Gmrv_Vital_Measurement-120_5.md) | 1
+25 | [Gmrv_Vital_Type-120_51](Gmrv_Vital_Type-120_51.md) | 1
+26 | [Gmrv_Vitals_Parameters-120_57](Gmrv_Vitals_Parameters-120_57.md) | 0
+27 | [Health_Factors-9999999_64](Health_Factors-9999999_64.md) | 0
+28 | [Health_Summary_Objects-142_5](Health_Summary_Objects-142_5.md) | 0
+29 | [Help_Frame-9_2](Help_Frame-9_2.md) | 1
+30 | [Hl7_Message_Exceptions-79_3](Hl7_Message_Exceptions-79_3.md) | 0
+31 | [Holiday-40_5](Holiday-40_5.md) | 0
+32 | [Hospital_Location-44](Hospital_Location-44.md) | 16
+33 | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 9
+34 | [Imaging_Type-79_2](Imaging_Type-79_2.md) | 2
+35 | [Immunization-9999999_14](Immunization-9999999_14.md) | 2
+36 | [Install-9_7](Install-9_7.md) | 7
+37 | [Institution-4](Institution-4.md) | 6
+38 | [Kernel_System_Parameters-8989_3](Kernel_System_Parameters-8989_3.md) | 4
+39 | [Lab_Section_Print-69_2](Lab_Section_Print-69_2.md) | 14
+40 | [Laboratory_Site-69_9](Laboratory_Site-69_9.md) | 9
+41 | [Laboratory_Test-60](Laboratory_Test-60.md) | 7
+42 | [Location-9999999_06](Location-9999999_06.md) | 0
+43 | [Mail_Group-3_8](Mail_Group-3_8.md) | 2
+44 | [Major_Concept_Map-757](Major_Concept_Map-757.md) | 0
+45 | [Medication_Routes-51_2](Medication_Routes-51_2.md) | 1
+46 | [Mh_Tests_And_Surveys-601_71](Mh_Tests_And_Surveys-601_71.md) | 0
+47 | [Nature_Of_Order-100_02](Nature_Of_Order-100_02.md) | 1
+48 | [Ndc_upn-50_67](Ndc_upn-50_67.md) | 0
+49 | [New_Person-200](New_Person-200.md) | 20
+50 | [Oe_rr_Com_Objects-101_15](Oe_rr_Com_Objects-101_15.md) | 0
+51 | [Oe_rr_Epcs_Parameters-100_7](Oe_rr_Epcs_Parameters-100_7.md) | 0
+52 | [Oe_rr_List-100_21](Oe_rr_List-100_21.md) | 3
+53 | [Oe_rr_Notifications-100_9](Oe_rr_Notifications-100_9.md) | 0
+54 | [Oe_rr_Release_Events-100_5](Oe_rr_Release_Events-100_5.md) | 3
+55 | [Oe_rr_Report-101_24](Oe_rr_Report-101_24.md) | 2
+56 | [Option-19](Option-19.md) | 7
+57 | [Or_Cprs_Tabs-101_13](Or_Cprs_Tabs-101_13.md) | 0
+58 | [Order_Checks-100_8](Order_Checks-100_8.md) | 0
+59 | [Order_Dialog-101_41](Order_Dialog-101_41.md) | 3
+60 | [Order_Quick_View-101_44](Order_Quick_View-101_44.md) | 2
+61 | [Order_Reason-100_03](Order_Reason-100_03.md) | 0
+62 | [Order_Status-100_01](Order_Status-100_01.md) | 1
+63 | [Order_Urgency-101_42](Order_Urgency-101_42.md) | 0
+64 | [Orderable_Items-101_43](Orderable_Items-101_43.md) | 2
+65 | [Package-9_4](Package-9_4.md) | 7
+66 | [Parameter_Definition-8989_51](Parameter_Definition-8989_51.md) | 1
+67 | [Patient_Allergies-120_8](Patient_Allergies-120_8.md) | 4
+68 | [Patient_ihs-9000001](Patient_ihs-9000001.md) | 1
+69 | [Patient_Movement-405](Patient_Movement-405.md) | 0
+70 | [Patient-2](Patient-2.md) | 21
+71 | [Pbm_Patient_Demographics-59_9](Pbm_Patient_Demographics-59_9.md) | 0
+72 | [Problem_List_Audit-125_8](Problem_List_Audit-125_8.md) | 0
+73 | [Problem_List_Site_Parameters-125_99](Problem_List_Site_Parameters-125_99.md) | 0
+74 | [Problem_Selection_Category_Contents-125_12](Problem_Selection_Category_Contents-125_12.md) | 0
+75 | [Problem_Selection_List_Contents-125_1](Problem_Selection_List_Contents-125_1.md) | 0
+76 | [Problem-9000011](Problem-9000011.md) | 2
+77 | [Protocol-101](Protocol-101.md) | 2
+78 | [Provider_Narrative-9999999_27](Provider_Narrative-9999999_27.md) | 0
+79 | [Reminder_Category-811_7](Reminder_Category-811_7.md) | 2
+80 | [Reminder_Definition-811_9](Reminder_Definition-811_9.md) | 6
+81 | [Reminder_Dialog-801_41](Reminder_Dialog-801_41.md) | 3
+82 | [Remote_Procedure-8994](Remote_Procedure-8994.md) | 1
+83 | [Request_Action_Types-123_1](Request_Action_Types-123_1.md) | 0
+84 | [Request_Services-123_5](Request_Services-123_5.md) | 4
+85 | [Service_section-49](Service_section-49.md) | 1
+86 | [Sign_symptoms-120_83](Sign_symptoms-120_83.md) | 1
+87 | [Skin_Test-9999999_28](Skin_Test-9999999_28.md) | 2
+88 | [Title-3_1](Title-3_1.md) | 0
+89 | [TIU_Document_Definition-8925_1](TIU_Document_Definition-8925_1.md) | 5
+90 | [TIU_Document-8925](TIU_Document-8925.md) | 0
+91 | [TIU_Personal_Document_Type_List-8925_98](TIU_Personal_Document_Type_List-8925_98.md) | 1
+92 | [TIU_Template_Field-8927_1](TIU_Template_Field-8927_1.md) | 0
+93 | [TIU_Template-8927](TIU_Template-8927.md) | 1
+94 | [Topography_Field-61](Topography_Field-61.md) | 2
+95 | [Treatment-9999999_17](Treatment-9999999_17.md) | 0
+96 | [Usr_Class-8930](Usr_Class-8930.md) | 0
+97 | [VA_Drug_Class-50_605](VA_Drug_Class-50_605.md) | 1
+98 | [VA_Generic-50_6](VA_Generic-50_6.md) | 0
+99 | [VA_Product-50_68](VA_Product-50_68.md) | 3
+100 | [Visit-9000010](Visit-9000010.md) | 0
+101 | [Ward_Location-42](Ward_Location-42.md) | 3
+102 | [Wv_Notification_Purpose-790_404](Wv_Notification_Purpose-790_404.md) | 0
+103 | [Wv_Procedure-790_1](Wv_Procedure-790_1.md) | 0
 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}

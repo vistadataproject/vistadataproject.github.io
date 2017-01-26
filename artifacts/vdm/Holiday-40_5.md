@@ -20,4 +20,4 @@ title: VDM documentation
 | date | .01 | Date | {::nomarkdown}The date for the observance of the holiday.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | name | 2 | Name | {::nomarkdown}Name of the holiday.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}

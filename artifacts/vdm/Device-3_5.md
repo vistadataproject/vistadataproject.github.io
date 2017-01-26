@@ -103,4 +103,4 @@ title: VDM documentation
 | despool_devices | .01 | Despool Devices | {::nomarkdown}The printer used in the despool process associated with<br/>the current spool device.{:/} | POINTER |  | REQUIRED, INDEXED | Device-3_5 | 
 | copies | 1 | Copies |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:36 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
