@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}WORD PROCESSING{:/}
  description | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:54 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:13 am</p>{:/}

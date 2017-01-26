@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}CLINLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of Outpatient clinic stops {:/} | 
 | {::nomarkdown}ICNLST{:/} | {::nomarkdown}LIST{:/} |  |  | {::nomarkdown}List of ICNs to search from{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}

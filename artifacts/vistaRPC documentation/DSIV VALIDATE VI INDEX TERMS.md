@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}TYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}40{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TYPE is the Type Index which is found in file ^MAG(2005.83) as field NAME.{:/} | 
 | {::nomarkdown}SPEC{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}SPEC is the Specialty/SubSpecialty which is found in file ^MAG(2005.85) as field NAME.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}

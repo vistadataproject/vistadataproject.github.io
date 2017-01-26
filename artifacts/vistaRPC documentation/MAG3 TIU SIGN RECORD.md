@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGES{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}60{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The users encrypted Electronic Signature.{:/} | 
 | {::nomarkdown}MAGESBY{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The DUZ of the Signer (defaults to Partition Variable: DUZ){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}PROCATTS{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}300{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input parameters are name-value pairs sent as successive integersubscripts in an array that should be passed in by reference as the secondargument to entry point FINDPROC^MAGVRS07.  The first argument should bean array name (passed by reference) that will contain the returned value. The values passed in should be in the format <fname>`<value>, where<fname> is a field name in the IMAGING PROCEDURE REFERENCE File(#2005.61) and <value> is the value to which the record's attributeshould be equal.  If multiple values are passed in, they will be ANDed.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}

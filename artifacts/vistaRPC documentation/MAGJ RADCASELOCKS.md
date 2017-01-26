@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}70{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Input string = OPEN FLAG ^ RADFN ^ RADTI ^ RACNI ^ RARPT      OPEN_FLAG = 3: Reserve-to-Lock; 4: Lock-to-Reserve; 5: Lock/Take      RADFN,RADTI,RACNI,RARPT = pointers to Rad Patient File for the exam{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

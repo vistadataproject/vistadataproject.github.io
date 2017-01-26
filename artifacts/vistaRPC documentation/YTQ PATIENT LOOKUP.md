@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}GLOBAL ARRAY{:/}
  description | {::nomarkdown}Patient lookup utility.                                                      ; input:                                                                      ;   VALUE = value to lookup       ;   NUMBER= maximum number to find [optional]       ;     Lookup uses multiple index lookup of File #2                            ; output:                                                                     ;   [DATA]^number of records returned                                         ;    DFN^patient name^DOB^PID (ssn)^Gender{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

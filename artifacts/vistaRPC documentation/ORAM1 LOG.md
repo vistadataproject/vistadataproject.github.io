@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FSARRAY{:/} | {::nomarkdown}LIST{:/} |  |  |  | 
 | {::nomarkdown}COMP{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}COMP=0 Will remove this entry's complication indication code (instead of1= Major Bleed, 2=Clot, 3=Minor Bleed), the original complicatons will stay in the file, but they will no longer be visible or considered in reports based on the COMPLICATION code (104).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

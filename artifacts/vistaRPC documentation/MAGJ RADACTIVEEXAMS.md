@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The input string supplies two parameters: LIST_TYPE ^ MODALITY  LIST_TYPE:  \U\--UNREAD Exams List; or,               \R\--RECENT Exams List               \ALL\--All Active Exams  MODALITY:   \ALL\--list for all modalities; or,              ABB[^ABB^...] where ABB is the Radiology Imaging Type                Abbreviation (Imaging Types will correspond to modalities){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

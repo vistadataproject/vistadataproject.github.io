@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PREFIX{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}First search criteria, which is used to find clinic names that begin with these characters to create a subset list.{:/} | 
 | {::nomarkdown}CONTAINS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Second search criteria, if populated, then this search text is used to search the previously created Subset list, for if Contains this text. Then this final list is sent back to the BCMA GUI Client.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}

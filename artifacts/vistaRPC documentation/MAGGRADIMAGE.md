@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}245{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA is the exam data that was output from the MAGGRADLIST RPC call.DATA is the Radiology values stored in ^TMP($J,\RAEX\,x)  that the radiology procedure RAPTLU sets during the search  for patient exams.  (see routine RAPTLU )      ^TMP($J,\RAEX\,RACNT)=     RADFN_\^\_RADTI_\^\_RACNI_\^\_RANME_\^\_RASSN_\^\    _RADATE_\^\_RADTE_\^\_RACN_\^\_RAPRC_\^\_RARPT_\^\_RAST{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

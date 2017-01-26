@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns a lists of all entries in a file for a specified field.  Input: FIELN: file or subfile Number       FIELD: filed number     optionals       FLAG: 'I' returns internal format, 'B' backwards sort              defaul= external, forward       NUMBER: number of entries requested default=500       FROM: last ien already retrieved  default= start       INDEX: index to sort on   default=  regular cross-ref on IEN Output: [DATA]        # of entries returned^#requested (often 500)^any more (0 or 1)        IEN^Data requested        .        .        IEN^Data requested{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}REJECT LINES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}B3 Batches: REJL(line)=Pmt ID^Invoice^reject reason (2-40 characters) B9 Batches: REJL(1)=Invoice^reject reason (2-40 characters)] PMT ID = Patient IEN;Vendor IEN;Date of Serice IEN;Service provided IEN{:/} | 
 | {::nomarkdown}REJECT ALL{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}1 (yes) 0 (no){:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

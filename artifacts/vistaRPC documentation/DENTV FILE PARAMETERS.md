@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}INST{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Instance is defaulted to 1 if not defined, otherwise it represents the next level where parameters are stored within the entity/parameter combination.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}250{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DATA is the value of the parameter, passed as a list to allow setting of word processing parameter data.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

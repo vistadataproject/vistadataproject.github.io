@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API creates a Pnote in TIU based on the ASI report.Input required: IEN of file 604, Addiction Severity Index.Output is only to show success or failure of the operation. YSDATA(1)=[DATA]/[ERROR]YSDATA(2)=OK Progress Note created/No Pnote entered{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

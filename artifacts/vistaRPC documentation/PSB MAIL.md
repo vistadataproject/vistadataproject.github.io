@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PSBCMD{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The type of action being attempted:        \CREATE\        \APPEND\        \SUBJECT\        \SENDTO\        \EXECUTE\{:/} | 
 | {::nomarkdown}PSBDATA{:/} | {::nomarkdown}REFERENCE{:/} | {::nomarkdown}80{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The text to be acted on.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:54 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:14 am</p>{:/}

@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}SEARCH TEXT{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}50{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter contains the free-text entered bythe user that is compared to the entity entry's nameto filter out possible choices. If null, thenall valid entries are presented to the user.{:/} | 
 | {::nomarkdown}SELECTIONS{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This array contains all of the selections already madeby the user for the current query template. This listof selections is then used to filter out possible selectionsfor the current 'entity type' being requested.For example, often the report criteria requires one ormore teams must be selected. However, the team must bein one of the divisions already selected by the user.In this case, the user's division selections areused to filter out inapproiate teams during a teamarray build.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:54 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:13 am</p>{:/}

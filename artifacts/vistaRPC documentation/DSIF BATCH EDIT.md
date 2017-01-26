@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}FBIN{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}999{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Pass in an array formatted as follows:  ; FBIN(.01)=BATCH NUMBER ; FBIN(1)=OBLIGATION NUMBER  (DO NOT SEND STATION NUMBER WITH OBLIGATION \500-C09045\, PASS ONLY \C09045\) ; FBIN(3)=DATE OPENED{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 25th 2017, 2:31:55 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:53:15 am</p>{:/}
