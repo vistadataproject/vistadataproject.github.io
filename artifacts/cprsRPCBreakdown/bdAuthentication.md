@@ -10,19 +10,19 @@ Authentication RPCs aren't locked over MVDM directly - they are implemented in r
 
 \# | Name
 --- | ---
-1. | [DG SENSITIVE RECORD ACCESS](http://vistadataproject.info/artifacts/vistaRPC documentation/DG SENSITIVE RECORD ACCESS)
-2. | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU NPHASKEY)
-3. | [XUS AV CODE](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS AV CODE)
-4. | [XUS AV HELP](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS AV HELP)
-5. | [XUS CCOW VAULT PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS CCOW VAULT PARAM)
-6. | [XUS CVC](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS CVC)
-7. | [XUS GET CCOW TOKEN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET CCOW TOKEN)
-8. | [XUS GET TOKEN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET TOKEN)
-9. | [XUS SIGNON SETUP](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS SIGNON SETUP)
-10. | [XWB CREATE CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB CREATE CONTEXT)
-11. | [XWB IM HERE](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB IM HERE)
+A1 | [DG SENSITIVE RECORD ACCESS](http://vistadataproject.info/artifacts/vistaRPC documentation/DG SENSITIVE RECORD ACCESS)
+A2 | [ORWU NPHASKEY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWU NPHASKEY)
+A3 | [XUS AV CODE](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS AV CODE)
+A4 | [XUS AV HELP](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS AV HELP)
+A5 | [XUS CCOW VAULT PARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS CCOW VAULT PARAM)
+A6 | [XUS CVC](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS CVC)
+A7 | [XUS GET CCOW TOKEN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET CCOW TOKEN)
+A8 | [XUS GET TOKEN](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS GET TOKEN)
+A9 | [XUS SIGNON SETUP](http://vistadataproject.info/artifacts/vistaRPC documentation/XUS SIGNON SETUP)
+A10 | [XWB CREATE CONTEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB CREATE CONTEXT)
+A11 | [XWB IM HERE](http://vistadataproject.info/artifacts/vistaRPC documentation/XWB IM HERE)
 
 
 
 
-<small>Generated on 2017-01-23</small>
+<small>Generated on 2017-01-25</small>
