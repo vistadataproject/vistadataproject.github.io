@@ -5,7 +5,9 @@ title: Home
 
 # VISTA Data Project
 
-The VISTA Data Project is a new data-centric, model-driven approach to VA VISTA master data management and interfacing.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form.   Now, for the first time, VISTA's true, native, transactional data model -  the VISTA Data Model (VDM)- will be comprehensively exposed, enriched, and operationalized as a secure, symmetric (bidirectional), server-side interface to all VISTA data.  
+The VISTA Data Project is a new data-centric, model-driven approach to VA VISTA master data management and interfacing.  VISTA's data model - the roadmap to all of VA's institutional, business, and clinical processes and data - has evolved organically over the past 35 years, but has not been surfaced and leveraged in computable form.   
+
+Now, for the first time, VISTA's true, native, transactional data model -  the VISTA Data Model (VDM)- will be comprehensively exposed, enriched, and operationalized as a secure, symmetric (bidirectional), server-side interface to all VISTA data.  
 
 This VISTA Data Model is in turn normalized across all local VISTA systems creating an enterprise __Master VISTA Data Model (MVDM__), which allows secure read-write transactions to all 131 VISTA systems throughout the enterprise with one single, standard, secure mechanism.
 
