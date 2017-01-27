@@ -9,6 +9,7 @@ The VISTA Data Project is a new data-centric, model-driven approach to VA VISTA 
 
 Now, for the first time, VISTA's true, native transactional data model will be comprehensively exposed, enriched, and operationalized as a secure, symmetric (bidirectional), server-side interface to all VISTA data. This  model is normalized across all local VISTA data models creating an enterprise __Master VISTA Data Model (MVDM__), which allows secure read-write to all 131 VISTA systems enterprise-wide with this single, standard, secure mechanism .
 
+***
 ##  VISTA's new SAFE Interface
 The transition of VISTA's interface to the MVDM-based __Secure Access Framework for the Enterprise (SAFE)__ is summarized in the figure below.
 
