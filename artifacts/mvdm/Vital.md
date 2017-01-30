@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; Vital 
 
- property | value 
---- | --- 
- id | Vital
- label | Patient Vitals
- description | {::nomarkdown}Contains patient vital information.{:/}
- fmIdForId | 120.5
- baseVDMClass | [Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)
- fromVDMQueries | [{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]
- fromVDMList | SELECT 120_5 FILTER(!bound(2))
- fromVDMListPerPatient | SELECT 120_5 FILTER(.02=$PID&&!bound(2))
+<dl>
+<dt>id</dt><dd>Vital</dd>
+<dt>label</dt><dd>Patient Vitals</dd>
+<dt>description</dt><dd>Contains patient vital information.</dd>
+<dt>fmIdForId</dt><dd>120.5</dd>
+<dt>baseVDMClass</dt><dd>[Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 120_5 FILTER(!bound(2))</dd>
+<dt>fromVDMListPerPatient</dt><dd>SELECT 120_5 FILTER(.02=$PID&&!bound(2))</dd>
+</dl>
 
 ### Properties
 
@@ -40,10 +40,10 @@ title: MVDM documentation
 
 ## RemovalDetails 
 
- property | value 
---- | --- 
- id | RemovalDetails
- label | 
+<dl>
+<dt>id</dt><dd>RemovalDetails</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -53,4 +53,4 @@ title: MVDM documentation
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}

@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; ProblemListAudit 
 
- property | value 
---- | --- 
- id | ProblemListAudit
- label | Problem List Audit
- description | {::nomarkdown}Contains problem list audits{:/}
- fmIdForId | 125.8
- baseVDMClass | [Problem_List_Audit-125_8](../vdm/Problem_List_Audit-125_8)
- fromVDMQueries | [{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]
- fromVDMList | SELECT 125_8
- fromVDMListPerPatient | 
+<dl>
+<dt>id</dt><dd>ProblemListAudit</dd>
+<dt>label</dt><dd>Problem List Audit</dd>
+<dt>description</dt><dd>Contains problem list audits</dd>
+<dt>fmIdForId</dt><dd>125.8</dd>
+<dt>baseVDMClass</dt><dd>[Problem_List_Audit-125_8](../vdm/Problem_List_Audit-125_8)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 125_8</dd>
+<dt>fromVDMListPerPatient</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -30,4 +30,4 @@ title: MVDM documentation
 | requestingProvider | Requesting Provider | POINTER | requesting_provider | $USERID |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING | old_problem_entry |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}

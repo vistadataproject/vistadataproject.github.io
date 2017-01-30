@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; Document 
 
- property | value 
---- | --- 
- id | Document
- label | 
- description | 
- fmIdForId | 8925
- baseVDMClass | [Tiu_Document-8925](../vdm/Tiu_Document-8925)
- fromVDMQueries | [{vdmId:Tiu_Document-8925,query:DESCRIBE $ID}]
- fromVDMList | SELECT 8925 FILTER(!bound(1611))
- fromVDMListPerPatient | SELECT 8925 FILTER(.02=$PID&&!bound(1611))
+<dl>
+<dt>id</dt><dd>Document</dd>
+<dt>label</dt><dd></dd>
+<dt>description</dt><dd></dd>
+<dt>fmIdForId</dt><dd>8925</dd>
+<dt>baseVDMClass</dt><dd>[Tiu_Document-8925](../vdm/Tiu_Document-8925)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Tiu_Document-8925,query:DESCRIBE $ID}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 8925 FILTER(!bound(1611))</dd>
+<dt>fromVDMListPerPatient</dt><dd>SELECT 8925 FILTER(.02=$PID&&!bound(1611))</dd>
+</dl>
 
 ### Properties
 
@@ -43,10 +43,10 @@ title: MVDM documentation
 
 ## SigningDetails 
 
- property | value 
---- | --- 
- id | SigningDetails
- label | 
+<dl>
+<dt>id</dt><dd>SigningDetails</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -60,10 +60,10 @@ title: MVDM documentation
 
 ## RemovalDetails 
 
- property | value 
---- | --- 
- id | RemovalDetails
- label | 
+<dl>
+<dt>id</dt><dd>RemovalDetails</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -73,4 +73,4 @@ title: MVDM documentation
 | enteredBy | Entered By | POINTER | deleted_by |  |  |  | 
 | reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}

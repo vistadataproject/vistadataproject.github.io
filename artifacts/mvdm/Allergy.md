@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; Allergy 
 
- property | value 
---- | --- 
- id | Allergy
- label | Patient Allergies
- description | {::nomarkdown}Contains patient allergy/adverse reaction information.{:/}
- fmIdForId | 120.8
- baseVDMClass | [Patient_Allergies-120_8](../vdm/Patient_Allergies-120_8)
- fromVDMQueries | [{vdmId:Patient_Allergy-120_8,query:DESCRIBE $ID},{vdmId:Adverse_Reaction_Reporting-120_85,query:DESCRIBE 120_85 FILTER(.03=$ID)}]
- fromVDMList | SELECT 120_8 FILTER(!bound(22))
- fromVDMListPerPatient | SELECT 120_8 FILTER(.01=$PID&&!bound(22))
+<dl>
+<dt>id</dt><dd>Allergy</dd>
+<dt>label</dt><dd>Patient Allergies</dd>
+<dt>description</dt><dd>Contains patient allergy/adverse reaction information.</dd>
+<dt>fmIdForId</dt><dd>120.8</dd>
+<dt>baseVDMClass</dt><dd>[Patient_Allergies-120_8](../vdm/Patient_Allergies-120_8)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Patient_Allergy-120_8,query:DESCRIBE $ID},{vdmId:Adverse_Reaction_Reporting-120_85,query:DESCRIBE 120_85 FILTER(.03=$ID)}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 120_8 FILTER(!bound(22))</dd>
+<dt>fromVDMListPerPatient</dt><dd>SELECT 120_8 FILTER(.01=$PID&&!bound(22))</dd>
+</dl>
 
 ### Properties
 
@@ -39,10 +39,10 @@ title: MVDM documentation
 
 ## ReactantDetails 
 
- property | value 
---- | --- 
- id | ReactantDetails
- label | 
+<dl>
+<dt>id</dt><dd>ReactantDetails</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -53,10 +53,10 @@ title: MVDM documentation
 
 ## Reaction 
 
- property | value 
---- | --- 
- id | Reaction
- label | 
+<dl>
+<dt>id</dt><dd>Reaction</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -67,10 +67,10 @@ title: MVDM documentation
 
 ## IdBandMarked 
 
- property | value 
---- | --- 
- id | IdBandMarked
- label | Id Band Marked
+<dl>
+<dt>id</dt><dd>IdBandMarked</dd>
+<dt>label</dt><dd>Id Band Marked</dd>
+</dl>
 
 ### Properties
 
@@ -81,10 +81,10 @@ title: MVDM documentation
 
 ## RemovalDetails 
 
- property | value 
---- | --- 
- id | RemovalDetails
- label | 
+<dl>
+<dt>id</dt><dd>RemovalDetails</dd>
+<dt>label</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -96,10 +96,10 @@ title: MVDM documentation
 
 ## Comment 
 
- property | value 
---- | --- 
- id | Comment
- label | Comment
+<dl>
+<dt>id</dt><dd>Comment</dd>
+<dt>label</dt><dd>Comment</dd>
+</dl>
 
 ### Properties
 
@@ -109,4 +109,4 @@ title: MVDM documentation
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}

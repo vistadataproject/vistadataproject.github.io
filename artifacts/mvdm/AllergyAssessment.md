@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; AllergyAssessment 
 
- property | value 
---- | --- 
- id | AllergyAssessment
- label | Allergy Assessment
- description | 
- fmIdForId | 120.86
- baseVDMClass | [Adverse_Reaction_Assessment-120_86](../vdm/Adverse_Reaction_Assessment-120_86)
- fromVDMQueries | [{vdmId:Adverse_Reaction_Assessment-120_86,query:DESCRIBE $ID}]
- fromVDMList | SELECT 120_86
- fromVDMListPerPatient | SELECT 120_86 FILTER(.01=$PID)
+<dl>
+<dt>id</dt><dd>AllergyAssessment</dd>
+<dt>label</dt><dd>Allergy Assessment</dd>
+<dt>description</dt><dd></dd>
+<dt>fmIdForId</dt><dd>120.86</dd>
+<dt>baseVDMClass</dt><dd>[Adverse_Reaction_Assessment-120_86](../vdm/Adverse_Reaction_Assessment-120_86)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Adverse_Reaction_Assessment-120_86,query:DESCRIBE $ID}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 120_86</dd>
+<dt>fromVDMListPerPatient</dt><dd>SELECT 120_86 FILTER(.01=$PID)</dd>
+</dl>
 
 ### Properties
 
@@ -25,4 +25,4 @@ title: MVDM documentation
 | enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}

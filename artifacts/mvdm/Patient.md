@@ -5,16 +5,16 @@ title: MVDM documentation
 
 ## [MVDM](TableOfContent.md) &#8594; Patient 
 
- property | value 
---- | --- 
- id | Patient
- label | 
- description | 
- fmIdForId | 2
- baseVDMClass | [Patient-2](../vdm/Patient-2)
- fromVDMQueries | [{vdmId:Patient-2,query:DESCRIBE $ID}]
- fromVDMList | SELECT 2
- fromVDMListPerPatient | 
+<dl>
+<dt>id</dt><dd>Patient</dd>
+<dt>label</dt><dd></dd>
+<dt>description</dt><dd></dd>
+<dt>fmIdForId</dt><dd>2</dd>
+<dt>baseVDMClass</dt><dd>[Patient-2](../vdm/Patient-2)</dd>
+<dt>fromVDMQueries</dt><dd>[{vdmId:Patient-2,query:DESCRIBE $ID}]</dd>
+<dt>fromVDMList</dt><dd>SELECT 2</dd>
+<dt>fromVDMListPerPatient</dt><dd></dd>
+</dl>
 
 ### Properties
 
@@ -487,10 +487,10 @@ title: MVDM documentation
 
 ## Confidential_Address_Category-2_141 
 
- property | value 
---- | --- 
- id | Confidential_Address_Category-2_141
- label | Confidential Address Category
+<dl>
+<dt>id</dt><dd>Confidential_Address_Category-2_141</dd>
+<dt>label</dt><dd>Confidential Address Category</dd>
+</dl>
 
 ### Properties
 
@@ -501,10 +501,10 @@ title: MVDM documentation
 
 ## Insurance_Type-2_312 
 
- property | value 
---- | --- 
- id | Insurance_Type-2_312
- label | Insurance Type
+<dl>
+<dt>id</dt><dd>Insurance_Type-2_312</dd>
+<dt>label</dt><dd>Insurance Type</dd>
+</dl>
 
 ### Properties
 
@@ -593,10 +593,10 @@ title: MVDM documentation
 
 ## Service_Oef_Or_Oif-2_3215 
 
- property | value 
---- | --- 
- id | Service_Oef_Or_Oif-2_3215
- label | Service [Oef Or Oif]
+<dl>
+<dt>id</dt><dd>Service_Oef_Or_Oif-2_3215</dd>
+<dt>label</dt><dd>Service [Oef Or Oif]</dd>
+</dl>
 
 ### Properties
 
@@ -611,10 +611,10 @@ title: MVDM documentation
 
 ## Military_Service_Episode-2_3216 
 
- property | value 
---- | --- 
- id | Military_Service_Episode-2_3216
- label | Military Service Episode
+<dl>
+<dt>id</dt><dd>Military_Service_Episode-2_3216</dd>
+<dt>label</dt><dd>Military Service Episode</dd>
+</dl>
 
 ### Properties
 
@@ -630,10 +630,10 @@ title: MVDM documentation
 
 ## Date_Of_Dental_Treatment-2_11 
 
- property | value 
---- | --- 
- id | Date_Of_Dental_Treatment-2_11
- label | Date Of Dental Treatment
+<dl>
+<dt>id</dt><dd>Date_Of_Dental_Treatment-2_11</dd>
+<dt>label</dt><dd>Date Of Dental Treatment</dd>
+</dl>
 
 ### Properties
 
@@ -645,10 +645,10 @@ title: MVDM documentation
 
 ## Rated_Disabilities_Va-2_04 
 
- property | value 
---- | --- 
- id | Rated_Disabilities_Va-2_04
- label | Rated Disabilities (Va)
+<dl>
+<dt>id</dt><dd>Rated_Disabilities_Va-2_04</dd>
+<dt>label</dt><dd>Rated Disabilities (Va)</dd>
+</dl>
 
 ### Properties
 
@@ -663,10 +663,10 @@ title: MVDM documentation
 
 ## Service_Connected_Conditions-2_05 
 
- property | value 
---- | --- 
- id | Service_Connected_Conditions-2_05
- label | Service Connected Conditions
+<dl>
+<dt>id</dt><dd>Service_Connected_Conditions-2_05</dd>
+<dt>label</dt><dd>Service Connected Conditions</dd>
+</dl>
 
 ### Properties
 
@@ -677,10 +677,10 @@ title: MVDM documentation
 
 ## Cd_Status_Procedures-2_397 
 
- property | value 
---- | --- 
- id | Cd_Status_Procedures-2_397
- label | Cd Status Procedures
+<dl>
+<dt>id</dt><dd>Cd_Status_Procedures-2_397</dd>
+<dt>label</dt><dd>Cd Status Procedures</dd>
+</dl>
 
 ### Properties
 
@@ -691,10 +691,10 @@ title: MVDM documentation
 
 ## Cd_Status_Conditions-2_398 
 
- property | value 
---- | --- 
- id | Cd_Status_Conditions-2_398
- label | Cd Status Conditions
+<dl>
+<dt>id</dt><dd>Cd_Status_Conditions-2_398</dd>
+<dt>label</dt><dd>Cd Status Conditions</dd>
+</dl>
 
 ### Properties
 
@@ -706,10 +706,10 @@ title: MVDM documentation
 
 ## Cd_History_Date-2_399 
 
- property | value 
---- | --- 
- id | Cd_History_Date-2_399
- label | Cd History Date
+<dl>
+<dt>id</dt><dd>Cd_History_Date-2_399</dd>
+<dt>label</dt><dd>Cd History Date</dd>
+</dl>
 
 ### Properties
 
@@ -729,10 +729,10 @@ title: MVDM documentation
 
 ## Alias-2_01 
 
- property | value 
---- | --- 
- id | Alias-2_01
- label | Alias
+<dl>
+<dt>id</dt><dd>Alias-2_01</dd>
+<dt>label</dt><dd>Alias</dd>
+</dl>
 
 ### Properties
 
@@ -744,10 +744,10 @@ title: MVDM documentation
 
 ## Race_Information-2_02 
 
- property | value 
---- | --- 
- id | Race_Information-2_02
- label | Race Information
+<dl>
+<dt>id</dt><dd>Race_Information-2_02</dd>
+<dt>label</dt><dd>Race Information</dd>
+</dl>
 
 ### Properties
 
@@ -758,10 +758,10 @@ title: MVDM documentation
 
 ## Enrollment_Clinic-2_001 
 
- property | value 
---- | --- 
- id | Enrollment_Clinic-2_001
- label | Enrollment Clinic
+<dl>
+<dt>id</dt><dd>Enrollment_Clinic-2_001</dd>
+<dt>label</dt><dd>Enrollment Clinic</dd>
+</dl>
 
 ### Properties
 
@@ -773,10 +773,10 @@ title: MVDM documentation
 
 ## Ethnicity_Information-2_06 
 
- property | value 
---- | --- 
- id | Ethnicity_Information-2_06
- label | Ethnicity Information
+<dl>
+<dt>id</dt><dd>Ethnicity_Information-2_06</dd>
+<dt>label</dt><dd>Ethnicity Information</dd>
+</dl>
 
 ### Properties
 
@@ -787,10 +787,10 @@ title: MVDM documentation
 
 ## Patient_Eligibilities-2_0361 
 
- property | value 
---- | --- 
- id | Patient_Eligibilities-2_0361
- label | Patient Eligibilities
+<dl>
+<dt>id</dt><dd>Patient_Eligibilities-2_0361</dd>
+<dt>label</dt><dd>Patient Eligibilities</dd>
+</dl>
 
 ### Properties
 
@@ -802,10 +802,10 @@ title: MVDM documentation
 
 ## Ph_Date_Time_Updated-2_0534 
 
- property | value 
---- | --- 
- id | Ph_Date_Time_Updated-2_0534
- label | Ph Date/Time Updated
+<dl>
+<dt>id</dt><dd>Ph_Date_Time_Updated-2_0534</dd>
+<dt>label</dt><dd>Ph Date/Time Updated</dd>
+</dl>
 
 ### Properties
 
@@ -819,10 +819,10 @@ title: MVDM documentation
 
 ## Icn_History-2_0992 
 
- property | value 
---- | --- 
- id | Icn_History-2_0992
- label | Icn History
+<dl>
+<dt>id</dt><dd>Icn_History-2_0992</dd>
+<dt>label</dt><dd>Icn History</dd>
+</dl>
 
 ### Properties
 
@@ -835,10 +835,10 @@ title: MVDM documentation
 
 ## Cmor_History-2_0993 
 
- property | value 
---- | --- 
- id | Cmor_History-2_0993
- label | Cmor History
+<dl>
+<dt>id</dt><dd>Cmor_History-2_0993</dd>
+<dt>label</dt><dd>Cmor History</dd>
+</dl>
 
 ### Properties
 
@@ -851,10 +851,10 @@ title: MVDM documentation
 
 ## Disposition_LogIn_Date_Time-2_101 
 
- property | value 
---- | --- 
- id | Disposition_LogIn_Date_Time-2_101
- label | Disposition Log-In Date/Time
+<dl>
+<dt>id</dt><dd>Disposition_LogIn_Date_Time-2_101</dd>
+<dt>label</dt><dd>Disposition Log-In Date/Time</dd>
+</dl>
 
 ### Properties
 
@@ -903,10 +903,10 @@ title: MVDM documentation
 
 ## Appointment-2_98 
 
- property | value 
---- | --- 
- id | Appointment-2_98
- label | Appointment
+<dl>
+<dt>id</dt><dd>Appointment-2_98</dd>
+<dt>label</dt><dd>Appointment</dd>
+</dl>
 
 ### Properties
 
@@ -945,10 +945,10 @@ title: MVDM documentation
 
 ## Archived_Data-2_12 
 
- property | value 
---- | --- 
- id | Archived_Data-2_12
- label | Archived Data
+<dl>
+<dt>id</dt><dd>Archived_Data-2_12</dd>
+<dt>label</dt><dd>Archived Data</dd>
+</dl>
 
 ### Properties
 
@@ -957,4 +957,4 @@ title: MVDM documentation
 | data_type | Data Type | ENUMERATION |  |  | {::nomarkdown}<dl><dt>SSD</dt><dd>SPECIAL SURVEY DISP</dd><dt>S</dt><dd>APPOINTMENT</dd><dt>DE</dt><dd>CLINIC ENROLLMENT</dd></dl>{:/} | REQUIRED, INDEXED | 
 | date_of_archive | Date Of Archive | [OBJECT] |  |  | {properties:[{description:Enter the date/time the archiving utility was run.\r \rThis field is not currently used.  The archiving software was not\rdistributed.,datatype:DATE-TIME,required:true,label:Date Of Archive,fmId:.01,id:date_of_archive},{description:Enter the sequential number of the tape on which this archiving data\rwas put.,datatype:STRING,label:Tape #,fmId:1,id:tape_number},{description:Enter the date the user chose to begin the scheduling archive.,datatype:DATE-TIME,label:Begin Archive Date,fmId:2,id:begin_archive_date},{description:Enter the ending date the user chose for the scheduling archive.,datatype:DATE-TIME,label:End Archive Date,fmId:3,id:end_archive_date},{description:The number of records archived.  This is created automatically by the\rsoftware.\r \rThis software has not been released and this field is not presently\rused in DHCP.,datatype:NUMERIC,label:Number Of Records Archived,fmId:4,id:number_of_records_archived}],fmId:2.13,id:Date_Of_Archive-2_13,label:Date Of Archive} |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 22nd 2017, 3:23:34 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}
