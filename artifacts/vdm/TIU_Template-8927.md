@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; TIU_Template-8927 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>TIU_Template-8927</dd>
 <dt>fmId</dt><dd>8927</dd>
 <dt>label</dt><dd>TIU Template</dd>
 <dt>location</dt><dd>^TIU(8927,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file stores TIU Templates, which are on-the-fly boilerplates that<br/>can be added to any note or addendum in the CPRS GUI.  All shared and<br/>personal templates, as well as template hierarchy, are stored within<br/>this file.<br/> <br/>Duplicate template names are allowed, usually distinguished by personal<br/>owner.<br/> <br/>This file is intended for the CPRS GUI only.  No server side<br/>implementation is provided or feasible.  Maintenance of this file<br/>should only be performed using the Template Editor, which is contained<br/>within the CPRS GUI.  Bypassing the template editor can cause file<br/>structure problems.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -42,10 +42,10 @@ title: VDM documentation
 
 ## <a name="Items-8927_03"></a>Items-8927_03 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Items-8927_03</dd>
 <dt>label</dt><dd>Items</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -54,4 +54,4 @@ title: VDM documentation
 | sequence | .01 | Sequence | {::nomarkdown}SEQUENCE number determines boilerplate text order for a GROUP TEMPLATE,<br/>with the GROUP TEMPLATE's own boilerplate text preceding that of its<br/>items.<br/> <br/>For containers and for GROUP TEMPLATES, SEQUENCE determines the order in<br/>which items appear when the container is expanded.<br/> <br/>SEQUENCE applies only to entries used as items.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
 | item | .02 | Item | {::nomarkdown}Items are themselves members of the TIU TEMPLATE FILE, and vary according<br/>to the type of the item parent.<br/> <br/>A container (type C, P, or R) holds templates (TEMPLATES and GROUP<br/>TEMPLATES) as its items. It may also hold other containers as items.<br/> <br/>A GROUP TEMPLATE is made up of TEMPLATES or of other GROUP TEMPLATES as<br/>items.  Its boilerplate text is a composite consisting of, first, it own<br/>boilerplate text if it has any, and then the boilerplate text of its<br/>items, in SEQUENCE order.  (See also field EXCLUDE FROM GROUP<br/>BOILERPLATE.)  A GROUP TEMPLATE may also have a container (type C) as an<br/>item.  In this case, the container is simply being stored in the GROUP<br/>TEMPLATE; the container is ignored when the GROUP TEMPLATE is used for<br/>composing a document.<br/> <br/>A TEMPLATE (type T) does not have items.<br/> <br/>A given template or container may occur as an item in more than one tree,<br/>and may even occur more than once in the same tree.  It cannot, however,<br/>be an item under itself.  Nor can it occur twice, as an item of the same<br/>parent.{:/} | POINTER |  | REQUIRED, INDEXED | TIU_Template-8927 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

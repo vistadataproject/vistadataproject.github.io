@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Health_Factors-9999999_64 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Health_Factors-9999999_64</dd>
 <dt>fmId</dt><dd>9999999.64</dd>
 <dt>label</dt><dd>Health Factors</dd>
 <dt>location</dt><dd>^AUTTHF(</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains a descriptive name of health factors, and their health<br/>factor category.<br/> <br/>Changes to this data dictionary should be coordinated thru the IHS DBA.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -29,4 +29,4 @@ title: VDM documentation
 | inactive_flag | .11 | Inactive Flag | {::nomarkdown}This field is used to inactivate a health factor type. If this field<br/>contains a \1\ then the health factor is inactive.  Inactive health<br/>factors cannot be selected in the manual data entry process.  Health<br/>factor entries should be made inactive when they are no longer used.  Do<br/>not delete the entry or change the meaning of the health factor entry.<br/> <br/>To make an inactive health factor active, enter the \@\ symbol to delete<br/>the \1\ from the field.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>INACTIVE</dd></dl>{:/} | 
 | not_used_with | 1101 | Not Used With | {::nomarkdown}Some health factors are not used with others. This is the group of health<br/>factors that this factor is not used with.{:/} | [POINTER] |  |  | {id:Health_Factors-9999999_64} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

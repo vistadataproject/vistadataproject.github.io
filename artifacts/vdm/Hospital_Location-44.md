@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Hospital_Location-44 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Hospital_Location-44</dd>
 <dt>fmId</dt><dd>44</dd>
 <dt>label</dt><dd>Hospital Location</dd>
 <dt>location</dt><dd>^SC(</dd>
 <dt>description</dt><dd>{::nomarkdown}Contains locations found in the hospital (ie. Wards, Clinics)<br/> *********DO NOT RE-INDEX THIS FILE**********{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -115,10 +115,10 @@ title: VDM documentation
 
 ## <a name="Appointment-44_001"></a>Appointment-44_001 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Appointment-44_001</dd>
 <dt>label</dt><dd>Appointment</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -130,10 +130,10 @@ title: VDM documentation
 
 ## <a name="Cancel_Date_time_Begin-44_05"></a>Cancel_Date_time_Begin-44_05 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Cancel_Date_time_Begin-44_05</dd>
 <dt>label</dt><dd>Cancel Date/time Begin</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -144,10 +144,10 @@ title: VDM documentation
 
 ## <a name="Chart_Check-44_006"></a>Chart_Check-44_006 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Chart_Check-44_006</dd>
 <dt>label</dt><dd>Chart Check</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -158,10 +158,10 @@ title: VDM documentation
 
 ## <a name="Availability-44_002"></a>Availability-44_002 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Availability-44_002</dd>
 <dt>label</dt><dd>Availability</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -172,10 +172,10 @@ title: VDM documentation
 
 ## <a name="Pattern-44_005"></a>Pattern-44_005 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Pattern-44_005</dd>
 <dt>label</dt><dd>Pattern</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -187,10 +187,10 @@ title: VDM documentation
 
 ## <a name="Special_Pattern-44_0002"></a>Special_Pattern-44_0002 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Special_Pattern-44_0002</dd>
 <dt>label</dt><dd>Special Pattern</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -201,10 +201,10 @@ title: VDM documentation
 
 ## <a name="Sunday_Template-44_06"></a>Sunday_Template-44_06 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Sunday_Template-44_06</dd>
 <dt>label</dt><dd>Sunday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -215,10 +215,10 @@ title: VDM documentation
 
 ## <a name="Monday_Template-44_07"></a>Monday_Template-44_07 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Monday_Template-44_07</dd>
 <dt>label</dt><dd>Monday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -229,10 +229,10 @@ title: VDM documentation
 
 ## <a name="Tuesday_Template-44_08"></a>Tuesday_Template-44_08 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Tuesday_Template-44_08</dd>
 <dt>label</dt><dd>Tuesday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -243,10 +243,10 @@ title: VDM documentation
 
 ## <a name="Wednesday_Template-44_09"></a>Wednesday_Template-44_09 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Wednesday_Template-44_09</dd>
 <dt>label</dt><dd>Wednesday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -257,10 +257,10 @@ title: VDM documentation
 
 ## <a name="Thursday_Template-44_008"></a>Thursday_Template-44_008 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Thursday_Template-44_008</dd>
 <dt>label</dt><dd>Thursday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -271,10 +271,10 @@ title: VDM documentation
 
 ## <a name="Friday_Template-44_009"></a>Friday_Template-44_009 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Friday_Template-44_009</dd>
 <dt>label</dt><dd>Friday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -285,10 +285,10 @@ title: VDM documentation
 
 ## <a name="Saturday_Template-44_0001"></a>Saturday_Template-44_0001 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Saturday_Template-44_0001</dd>
 <dt>label</dt><dd>Saturday Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -299,10 +299,10 @@ title: VDM documentation
 
 ## <a name="Provider-44_1"></a>Provider-44_1 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Provider-44_1</dd>
 <dt>label</dt><dd>Provider</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -313,10 +313,10 @@ title: VDM documentation
 
 ## <a name="Diagnosis-44_11"></a>Diagnosis-44_11 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Diagnosis-44_11</dd>
 <dt>label</dt><dd>Diagnosis</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -327,10 +327,10 @@ title: VDM documentation
 
 ## <a name="Team_Positions-44_40457"></a>Team_Positions-44_40457 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Team_Positions-44_40457</dd>
 <dt>label</dt><dd>Team Positions</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -339,4 +339,4 @@ title: VDM documentation
 | team_positions | .01 | Team Positions | {::nomarkdown}This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File.{:/} | POINTER |  | REQUIRED, INDEXED | Team_Position-404_57 | 
 | team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

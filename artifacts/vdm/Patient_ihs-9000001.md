@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Patient_ihs-9000001 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Patient_ihs-9000001</dd>
 <dt>fmId</dt><dd>9000001</dd>
 <dt>label</dt><dd>Patient/ihs</dd>
 <dt>location</dt><dd>^AUPNPAT(</dd>
 <dt>description</dt><dd>{::nomarkdown}This file is IHS's primary patient data file.  The NAME (.01) field of this <br/>file is a pointer to the VA's patient file (#2).  Fields in <br/>common between the two dictionaries actually exist only in the VA patient <br/>file and are referenced by the IHS patient file as computed fields.  All <br/>other files containing patient data have backward pointers linking them to <br/>this file.  The linkage is by patient name and the internal FileMan gener-<br/>ated number of the ancillary file is the same number used in this file.<br/>   <br/>All applications developed for the RPMS which require patient data will<br/>point to this file.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -23,10 +23,10 @@ title: VDM documentation
 
 ## <a name="Health_Record_No-9000001_41"></a>Health_Record_No-9000001_41 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Health_Record_No-9000001_41</dd>
 <dt>label</dt><dd>Health Record No.</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -38,4 +38,4 @@ title: VDM documentation
 | record_status | .05 | Record Status | {::nomarkdown}This field is used by the IHS Multi-Facility Integration (MFI) package<br/>to determine whether to stop integrating data at a facility for a <br/>particular patient and location facility.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>D</dt><dd>DELETED</dd><dt>I</dt><dd>INACTIVATED</dd><dt>M</dt><dd>MERGED</dd></dl>{:/} | 
 | stop_integration | .06 | Stop Integration | {::nomarkdown}This field is used by the Mult-Facility Integration (MFI) package,<br/>created by IHS, to indicate this patients data should no longer be<br/>integrated by MFI.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

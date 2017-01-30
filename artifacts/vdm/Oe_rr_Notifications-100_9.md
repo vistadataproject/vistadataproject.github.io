@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_Notifications-100_9 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Oe_rr_Notifications-100_9</dd>
 <dt>fmId</dt><dd>100.9</dd>
 <dt>label</dt><dd>Oe/rr Notifications</dd>
 <dt>location</dt><dd>^ORD(100.9,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains data used to generate notifications.  Packages<br/>determine if a notification should be sent then send the patient ID and<br/>notification ID (IEN in this file) to order entry routines.  Based on the<br/>notification IEN, data from this file is used to generate the notification<br/>and help determine its recipients.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -30,4 +30,4 @@ title: VDM documentation
 | description | 4 | Description | {::nomarkdown}This field contains free text describing the notification, how it is trig-<br/>gered and what action(s) delete it.{:/} | STRING |  | REQUIRED |  | 
 | followup_type | 5 | Follow-up Type | {::nomarkdown}This field contains the type of follow-up action to be taken.  It is used <br/>by the application managing the follow-up action  (e.g. GUI interface) to<br/>initiate the proper follow-up action separate from the underlying data <br/>base and application layers.  Example follow-up types include: report,<br/>e/s, flag.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>2</dt><dd>EXPIRING_ORDER</dd><dt>8</dt><dd>COSIGN_ORDER</dd><dt>1</dt><dd>COSIGN_PN</dd><dt>3</dt><dd>FLAGGED_ORDER</dd><dt>11</dt><dd>UNVERIFIED_MED</dd><dt>7</dt><dd>NEW_ORDER</dd><dt>6</dt><dd>NEW_CONSULT</dd><dt>10</dt><dd>UNSIGN_PN</dd><dt>0</dt><dd>REPORT</dd><dt>9</dt><dd>ES_ORDER</dd><dt>5</dt><dd>UNLINKED</dd><dt>4</dt><dd>ORDER</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

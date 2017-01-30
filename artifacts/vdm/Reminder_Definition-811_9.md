@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Reminder_Definition-811_9 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Reminder_Definition-811_9</dd>
 <dt>fmId</dt><dd>811.9</dd>
 <dt>label</dt><dd>Reminder Definition</dd>
 <dt>location</dt><dd>^PXD(811.9,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains Clinical Reminder definitions. For a detailed<br/>description of the contents of this file, see the Clinical Reminders<br/>Manager Manual. Additional information may be found at the Clinical<br/>Reminders web site: http//vista.domain.ext/reminders<br/><br/>This file contains a combination of nationally distributed and local<br/>entries. Any local entries are assigned an internal entry number<br/>prefixed with your site number. Nationally distributed entries have<br/>their name prefixed with VA-. Local entry names cannot start with VA-.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -74,10 +74,10 @@ title: VDM documentation
 
 ## <a name="Baseline_Age_Findings-811_97"></a>Baseline_Age_Findings-811_97 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Baseline_Age_Findings-811_97</dd>
 <dt>label</dt><dd>Baseline Age Findings</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -93,10 +93,10 @@ title: VDM documentation
 
 ## <a name="Findings-811_902"></a>Findings-811_902 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Findings-811_902</dd>
 <dt>label</dt><dd>Findings</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -132,10 +132,10 @@ title: VDM documentation
 
 ## <a name="Function_Findings-811_925"></a>Function_Findings-811_925 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Function_Findings-811_925</dd>
 <dt>label</dt><dd>Function Findings</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -159,10 +159,10 @@ title: VDM documentation
 
 ## <a name="Custom_Date_Due_Arg_List-811_948"></a>Custom_Date_Due_Arg_List-811_948 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Custom_Date_Due_Arg_List-811_948</dd>
 <dt>label</dt><dd>Custom Date Due Arg List</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -174,10 +174,10 @@ title: VDM documentation
 
 ## <a name="Web_Sites-811_9002"></a>Web_Sites-811_9002 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Web_Sites-811_9002</dd>
 <dt>label</dt><dd>Web Sites</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -189,10 +189,10 @@ title: VDM documentation
 
 ## <a name="Edit_History-811_9001"></a>Edit_History-811_9001 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Edit_History-811_9001</dd>
 <dt>label</dt><dd>Edit History</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -202,4 +202,4 @@ title: VDM documentation
 | edit_by | 1 | Edit By | {::nomarkdown}This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | edit_comments | 2 | Edit Comments | {::nomarkdown}This word-processing field can be used to record the changes made<br/>during the editing session.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

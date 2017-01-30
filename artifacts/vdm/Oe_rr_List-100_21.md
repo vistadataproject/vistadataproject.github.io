@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_List-100_21 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Oe_rr_List-100_21</dd>
 <dt>fmId</dt><dd>100.21</dd>
 <dt>label</dt><dd>Oe/rr List</dd>
 <dt>location</dt><dd>^OR(100.21,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains data related to lists.  Generally these lists take the<br/>form of provider(s)/patients.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -31,10 +31,10 @@ title: VDM documentation
 
 ## <a name="User-100_212"></a>User-100_212 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>User-100_212</dd>
 <dt>label</dt><dd>User</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -45,10 +45,10 @@ title: VDM documentation
 
 ## <a name="Autolink-100_213"></a>Autolink-100_213 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Autolink-100_213</dd>
 <dt>label</dt><dd>Autolink</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -59,10 +59,10 @@ title: VDM documentation
 
 ## <a name="Member-100_2101"></a>Member-100_2101 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Member-100_2101</dd>
 <dt>label</dt><dd>Member</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -72,4 +72,4 @@ title: VDM documentation
 | view_date_time | 1 | View Date/time | {::nomarkdown}This is the date/time this item was last viewed.{:/} | DATE-TIME |  |  |  | 
 | notification_selection | 2 | *notification Selection | {::nomarkdown}This field is unused and will be deleted post-CPRS 1.{:/} | [POINTER] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Reminder_Dialog-801_41 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Reminder_Dialog-801_41</dd>
 <dt>fmId</dt><dd>801.41</dd>
 <dt>label</dt><dd>Reminder Dialog</dd>
 <dt>location</dt><dd>^PXRMD(801.41,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file is used to define all of the components that work together to <br/>define a reminder dialog. Reminder dialog definitions are used by the CPRS <br/>GUI for reminder resolution.  <br/> <br/>This file contains a combination of nationally distributed entries, local <br/>auto-generated entries, site and VISN exchanged entries and local manually <br/>created entries. Nationally distributed dialog, element, and group <br/>entries have their name prefixed with VA-. Nationally distributed Prompts, <br/>Forced Value, Result Groups, and Result Elements have their name prefixed <br/>with PXRM. Entries in this file may be auto-generated via the Dialog <br/>Management Menu option. Manually created dialog entries should use local <br/>namespacing conventions. Nationally distributed entries will have their <br/>class type defined as National. Entries created at the VISN level should be <br/>defined as VISN and entries created at a site should be defined as Local.  <br/> <br/>This file is similar to the option file where there are different types of <br/>entries (reminder dialog, dialog elements (sentences), prompts, and groups <br/>of elements, result elements and groups of result elements). Where an option <br/>has menu items, the dialog file has components that are entered, with the <br/>sequence field as the .01 field. <br/> <br/>A prompt is defined for PCE prompts, WH Notification Purpose, or as locally <br/>created comment check-boxes. The prompts will not have any components within <br/>them. PXRM-prefixed prompts are distributed in this file with the Clinical <br/>Reminder package.  <br/> <br/>A dialog element is defined primarily to represent sentences to display in <br/>the CPRS window with a check-box. When the user checks the sentence off, the<br/>FINDING ITEM in the dialog element and the ADDITIONAL FINDINGS will be added <br/>to the list of PCE updates, orders, WH Notification Purposes, and mental <br/>health tests. The updates won't occur on the CPRS GUI until the user clicks <br/>on the FINISH button. Dialog elements may have components added to them. <br/>Auto-generated components will be based on the additional prompts defined in <br/>the Finding Type Parameters. Once a dialog element is auto-generated, the <br/>sites can modify them.  <br/> <br/>Dialog elements may also be instructional text or a header. The FINDING ITEM <br/>and components would not be defined in dialog elements.  <br/> <br/>A dialog group is similar to menu options. It groups dialog elements and <br/>dialog groups within its component multiple. The dialog group can be defined <br/>with a finding item and a check-box. The components in the group can be <br/>hidden from the CPRS GUI window until the dialog group is checked off. <br/> <br/>A result element contains special logic that uses information entered during <br/>the resolution process to create a sentence to add to the progress note. The <br/>special logic contains a CONDITION that, when true, will use the ALTERNATE <br/>PROGRESS NOTE TEXT field to update the progress note. A separate result <br/>element is used for each separate sentence needed. The result element is <br/>only used with mental health test finding items. Default result elements are <br/>distributed for common mental health tests, prefixed with PXRM and the <br/>mental health test name. Sites may copy them and modify their local versions <br/>as needed.  <br/> <br/>A result group contains all of the result elements that need to be checked <br/>to create sentences for one mental health test finding. The dialog element <br/>for the test will have its RESULT GROUP/ELEMENT field defined with the <br/>result group. Default result groups for mental health tests are distributed <br/>with the Clinical Reminders package. Sites may copy them and modify their local <br/>versions as needed.  <br/><br/>Sites should name locally created items according to their local naming <br/>convention.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -65,10 +65,10 @@ title: VDM documentation
 
 ## <a name="Components-801_412"></a>Components-801_412 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Components-801_412</dd>
 <dt>label</dt><dd>Components</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -83,10 +83,10 @@ title: VDM documentation
 
 ## <a name="Checkbox_Sequence-801_4145"></a>Checkbox_Sequence-801_4145 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Checkbox_Sequence-801_4145</dd>
 <dt>label</dt><dd>Checkbox Sequence</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -97,10 +97,10 @@ title: VDM documentation
 
 ## <a name="Edit_History-801_44"></a>Edit_History-801_44 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Edit_History-801_44</dd>
 <dt>label</dt><dd>Edit History</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -110,4 +110,4 @@ title: VDM documentation
 | edit_by | 1 | Edit By | {::nomarkdown}This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | edit_comments | 2 | Edit Comments | {::nomarkdown}This word-processing field can be used to record the changes made<br/>during the editing session.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

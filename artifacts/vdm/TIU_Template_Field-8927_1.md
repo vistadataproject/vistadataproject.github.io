@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; TIU_Template_Field-8927_1 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>TIU_Template_Field-8927_1</dd>
 <dt>fmId</dt><dd>8927.1</dd>
 <dt>label</dt><dd>TIU Template Field</dd>
 <dt>location</dt><dd>^TIU(8927.1,</dd>
 <dt>description</dt><dd></dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -37,4 +37,4 @@ title: VDM documentation
 | url | 3 | Url | {::nomarkdown}Web address of hyperlink fields.{:/} | STRING |  |  |  | 
 | items | 10 | Items | {::nomarkdown}Word processing field representing either the list of items that can<br/>be selected, or the default word processing text.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

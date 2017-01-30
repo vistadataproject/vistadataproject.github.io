@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Request_Services-123_5 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Request_Services-123_5</dd>
 <dt>fmId</dt><dd>123.5</dd>
 <dt>label</dt><dd>Request Services</dd>
 <dt>location</dt><dd>^GMR(123.5,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file allows services and specialties to be grouped in a hierarchy <br/>representing the sites services available.  This grouping capability<br/>may be used with Review screens to filter out consults to a <br/>service, sub-service, specialty, or sub-specialty of consults/requests.<br/>  <br/>The main entry in this file is the \ALL SERVICES\ entry.  Other entries<br/>should be subordinate in its hierarchy.<br/> <br/>The \ALL SERVICES\ entry is used to display the hierarchy of the hospital<br/>services when the Clinician ordering a consult is prompted for<br/>\Select TO Service/Specialty:\ to send the consult to.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -66,10 +66,10 @@ title: VDM documentation
 
 ## <a name="Subservice-123_51"></a>Subservice-123_51 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Subservice-123_51</dd>
 <dt>label</dt><dd>Sub-service</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -80,10 +80,10 @@ title: VDM documentation
 
 ## <a name="Notification_By_Pt_Location-123_54"></a>Notification_By_Pt_Location-123_54 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Notification_By_Pt_Location-123_54</dd>
 <dt>label</dt><dd>Notification By Pt Location</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -95,10 +95,10 @@ title: VDM documentation
 
 ## <a name="Administrative_Update_Users-123_555"></a>Administrative_Update_Users-123_555 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Administrative_Update_Users-123_555</dd>
 <dt>label</dt><dd>Administrative Update Users</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -109,10 +109,10 @@ title: VDM documentation
 
 ## <a name="Administrative_Update_Teams-123_58"></a>Administrative_Update_Teams-123_58 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Administrative_Update_Teams-123_58</dd>
 <dt>label</dt><dd>Administrative Update Teams</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -121,4 +121,4 @@ title: VDM documentation
 | administrative_update_team | .01 | Administrative Update Team | {::nomarkdown}This field allows team lists from the OE/RR LIST (#100.21) file to be<br/>entered. All provider/users of the teams will have administrative update<br/>authority for requests directed to this service.{:/} | POINTER |  | REQUIRED, INDEXED | Oe_rr_List-100_21 | 
 | notification_recipients | .02 | Notification Recipients | {::nomarkdown}This field, if set to YES will include the users on the specified team in<br/>the list of notification recipients for this service.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

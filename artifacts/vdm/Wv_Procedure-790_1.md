@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Wv_Procedure-790_1 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Wv_Procedure-790_1</dd>
 <dt>fmId</dt><dd>790.1</dd>
 <dt>label</dt><dd>Wv Procedure</dd>
 <dt>location</dt><dd>^WV(790.1,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains the Women Veterans Health's database of procedures <br/>actually performed and the data associated with them.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -59,4 +59,4 @@ title: VDM documentation
 | comments | 3.01 | Comments | {::nomarkdown}You may enter a one-line clinical history note (limited to 78 characters).{:/} | STRING |  |  |  | 
 | reports | 9 | Reports | {::nomarkdown}This field is not editable through WH options.  The lab or radiology exams<br/>related to this procedure are presented here.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

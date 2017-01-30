@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Device-3_5 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Device-3_5</dd>
 <dt>fmId</dt><dd>3.5</dd>
 <dt>label</dt><dd>Device</dd>
 <dt>location</dt><dd>^%ZIS(1,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file defines all input/output devices that can be accessed from<br/>this CPU (definitions are not account-specific).  Each device is<br/>identified with a unique name.  Each is associated with a $I value<br/>which may correspond with a hardware port or, on layered systems,<br/>a host file or directory.  If there are several devices for the same<br/>volume set and $I, one may be given sign-on system status.  Devices<br/>may also be assigned to hunt groups to share work.  This file is<br/>cross-referenced by name, $I, volume set(CPU), and sign-on/system<br/>device.  It is also cross-referenced by hunt group, local synonym,<br/>mnemonic, subtype, and form currently mounted.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -91,10 +91,10 @@ title: VDM documentation
 
 ## <a name="Despool_Devices-3_532"></a>Despool_Devices-3_532 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Despool_Devices-3_532</dd>
 <dt>label</dt><dd>Despool Devices</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -103,4 +103,4 @@ title: VDM documentation
 | despool_devices | .01 | Despool Devices | {::nomarkdown}The printer used in the despool process associated with<br/>the current spool device.{:/} | POINTER |  | REQUIRED, INDEXED | Device-3_5 | 
 | copies | 1 | Copies |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

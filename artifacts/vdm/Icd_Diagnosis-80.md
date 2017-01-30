@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Icd_Diagnosis-80 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Icd_Diagnosis-80</dd>
 <dt>fmId</dt><dd>80</dd>
 <dt>label</dt><dd>Icd Diagnosis</dd>
 <dt>location</dt><dd>^ICD9(</dd>
 <dt>description</dt><dd>{::nomarkdown}ICD Diagnosis file #80 contains codes from the International <br/>Classification of Diseases (ICD) Clinical Modification (CM) <br/>provided by the Centers for Medicare and Medicaid Services <br/>(CMS) and the National Center for Health Statistics (NCHS).<br/>This file contains both the 9th (ICD-9-CM) and 10th (ICD-10-CM)<br/>Revisions.<br/> <br/>If an entry needs to be added, modified or deleted, a patch will<br/>be issued containing the change.<br/> <br/>This table file should NOT be edited in anyway by the site.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -43,10 +43,10 @@ title: VDM documentation
 
 ## <a name="Sex-80_04"></a>Sex-80_04 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Sex-80_04</dd>
 <dt>label</dt><dd>Sex</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -57,10 +57,10 @@ title: VDM documentation
 
 ## <a name="Age_Low-80_011"></a>Age_Low-80_011 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Age_Low-80_011</dd>
 <dt>label</dt><dd>Age Low</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -71,10 +71,10 @@ title: VDM documentation
 
 ## <a name="Age_High-80_012"></a>Age_High-80_012 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Age_High-80_012</dd>
 <dt>label</dt><dd>Age High</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -85,10 +85,10 @@ title: VDM documentation
 
 ## <a name="Status-80_066"></a>Status-80_066 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Status-80_066</dd>
 <dt>label</dt><dd>Status</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -99,10 +99,10 @@ title: VDM documentation
 
 ## <a name="Diagnosis-80_067"></a>Diagnosis-80_067 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Diagnosis-80_067</dd>
 <dt>label</dt><dd>Diagnosis</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -113,10 +113,10 @@ title: VDM documentation
 
 ## <a name="Description-80_068"></a>Description-80_068 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Description-80_068</dd>
 <dt>label</dt><dd>Description</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -128,10 +128,10 @@ title: VDM documentation
 
 ## <a name="Drg_Grouper-80_071"></a>Drg_Grouper-80_071 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Drg_Grouper-80_071</dd>
 <dt>label</dt><dd>Drg Grouper</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -142,10 +142,10 @@ title: VDM documentation
 
 ## <a name="Major_Diagnostic_Category-80_072"></a>Major_Diagnostic_Category-80_072 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Major_Diagnostic_Category-80_072</dd>
 <dt>label</dt><dd>Major Diagnostic Category</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -156,10 +156,10 @@ title: VDM documentation
 
 ## <a name="Complication_comorbidity-80_0103"></a>Complication_comorbidity-80_0103 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Complication_comorbidity-80_0103</dd>
 <dt>label</dt><dd>Complication/comorbidity</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -169,4 +169,4 @@ title: VDM documentation
 | complication_comorbidity | 1 | Complication/comorbidity | {::nomarkdown}This is the Complication/Comorbidity (CC) <br/>designation for the diagnosis.  It includes <br/>Complication/Comorbidity (CC), Major <br/>Complication/Comorbidity (MCC), Major <br/>Complication/Comorbidity when patient is <br/>discharged alive and non-Complication/Comorbidity<br/>(no complications/cormorbidities){:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl>{:/} | 
 | primary | 2 | Primary | {::nomarkdown}The value in this field is used to determine<br/>whether CC/MCC value is taken from primary <br/>diagnosis instead of the secondary diagnosis.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Option-19 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Option-19</dd>
 <dt>fmId</dt><dd>19</dd>
 <dt>label</dt><dd>Option</dd>
 <dt>location</dt><dd>^DIC(19,</dd>
 <dt>description</dt><dd>{::nomarkdown}Information in this file is used to drive the menu system.  Options are<br/>created, associated with others on menus, locked, set out-of-order,<br/>assigned prohibited times or devices, or given entry/exit actions.  The<br/>Edit Options of Menu Management should be used (instead of VA FileMan)<br/>so that the global root (DIC) and other such fields are given the correct<br/>values.  Options may be tailored by setting FileMan variables via this file. <br/>The Order Enter/Results Reporting package is accessed by using the appropriate<br/>option type.  It is cross-referenced by name, menu text, uppercase menu text,<br/>type, item, synonym, help frame, out-of-order message, lock, prohibited times,<br/>restricted devices, and priority. {:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -126,10 +126,10 @@ title: VDM documentation
 
 ## <a name="Times_days_Prohibited-19_391"></a>Times_days_Prohibited-19_391 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Times_days_Prohibited-19_391</dd>
 <dt>label</dt><dd>Times/days Prohibited</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -140,10 +140,10 @@ title: VDM documentation
 
 ## <a name="Queuing_Required-19_392"></a>Queuing_Required-19_392 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Queuing_Required-19_392</dd>
 <dt>label</dt><dd>Queuing Required</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -154,10 +154,10 @@ title: VDM documentation
 
 ## <a name="Menu-19_01"></a>Menu-19_01 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Menu-19_01</dd>
 <dt>label</dt><dd>Menu</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -169,10 +169,10 @@ title: VDM documentation
 
 ## <a name="Fr0n-19_02"></a>Fr0n-19_02 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Fr0n-19_02</dd>
 <dt>label</dt><dd>Fr(0,n)</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -183,10 +183,10 @@ title: VDM documentation
 
 ## <a name="To0n-19_03"></a>To0n-19_03 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>To0n-19_03</dd>
 <dt>label</dt><dd>To(0,n)</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -197,10 +197,10 @@ title: VDM documentation
 
 ## <a name="Dispar0n-19_04"></a>Dispar0n-19_04 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Dispar0n-19_04</dd>
 <dt>label</dt><dd>Dispar(0,n)</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -213,10 +213,10 @@ title: VDM documentation
 
 ## <a name="Rpc-19_05"></a>Rpc-19_05 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Rpc-19_05</dd>
 <dt>label</dt><dd>Rpc</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -226,4 +226,4 @@ title: VDM documentation
 | rpckey | 1 | Rpckey | {::nomarkdown}This field is the free-text name from the Security Key File that will be<br/>checked when this remote procedure call is requested to the broker.<br/>If the user does not hold this key then the request will be denied.{:/} | STRING |  |  |  | 
 | rules | 2 | Rules | {::nomarkdown}This field contains standard M code that will be executed when this<br/>remote procedure call is requested from the broker.  The variable<br/>XQRPCOK is set to 1 and the code is executed. If the value of that<br/>variable is reset to 0 by the RULES code, then the request is denied.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

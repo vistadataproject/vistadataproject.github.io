@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Package-9_4 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Package-9_4</dd>
 <dt>fmId</dt><dd>9.4</dd>
 <dt>label</dt><dd>Package</dd>
 <dt>location</dt><dd>^DIC(9.4,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file identifies the elements of a package that will be transported<br/>by the initialization routines created by DIFROM.  The prefix determines<br/>which namespaced entries will be retrieved from the Option, Bulletin,<br/>Help Frame, Function, and Security Key Files as well as the namespace<br/>that will be used to name the INIT routines built by running DIFROM.<br/>The Excluded Namespace field may be used to leave out some of these items.<br/>The File Multiple determines which files are sent with the package and<br/>whether data is included.  Print, Input, Sort and Screen (FORM)<br/>templates are brought in by namespace, for the files listed in the File<br/>multiple.  In addition, there are multiples for each type of template,<br/>that allow the user to specify individual templates outside the<br/>namespace to retrieve.  Routines to be run before and after the<br/>INIT are specified in the Environment Check Routine, Pre-init after<br/>User Commit, and Post-Initialization Routine fields. The remaining<br/>fields are simply for documentation.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -48,10 +48,10 @@ title: VDM documentation
 
 ## <a name="File-9_44"></a>File-9_44 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>File-9_44</dd>
 <dt>label</dt><dd>File</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -69,10 +69,10 @@ title: VDM documentation
 
 ## <a name="Print_Template-9_46"></a>Print_Template-9_46 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Print_Template-9_46</dd>
 <dt>label</dt><dd>Print Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -83,10 +83,10 @@ title: VDM documentation
 
 ## <a name="Input_Template-9_47"></a>Input_Template-9_47 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Input_Template-9_47</dd>
 <dt>label</dt><dd>Input Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -97,10 +97,10 @@ title: VDM documentation
 
 ## <a name="Sort_Template-9_48"></a>Sort_Template-9_48 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Sort_Template-9_48</dd>
 <dt>label</dt><dd>Sort Template</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -111,10 +111,10 @@ title: VDM documentation
 
 ## <a name="Screen_Template_form-9_485"></a>Screen_Template_form-9_485 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Screen_Template_form-9_485</dd>
 <dt>label</dt><dd>Screen Template (form)</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -125,10 +125,10 @@ title: VDM documentation
 
 ## <a name="Affects_Record_Merge-9_402"></a>Affects_Record_Merge-9_402 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Affects_Record_Merge-9_402</dd>
 <dt>label</dt><dd>Affects Record Merge</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -140,10 +140,10 @@ title: VDM documentation
 
 ## <a name="Version-9_49"></a>Version-9_49 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Version-9_49</dd>
 <dt>label</dt><dd>Version</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -156,4 +156,4 @@ title: VDM documentation
 | description_of_enhancements | 41 | Description Of Enhancements | {::nomarkdown}This is a description of the enhancements being distributed with this<br/>release.{:/} | STRING |  |  |  | 
 | patch_application_history | 1105 | Patch Application History |  | [OBJECT] |  |  | {id:Patch_Application_History-9_4901,fmId:9.4901,label:Patch Application History,properties:[{id:patch_application_history,fmId:.01,label:Patch Application History,datatype:STRING,indexed:true,required:true},{id:date_applied,fmId:.02,label:Date Applied,datatype:DATE-TIME},{id:applied_by,fmId:.03,label:Applied By,datatype:POINTER,range:{id:New_Person-200}},{id:description,fmId:1,label:Description,description:This is a description of the patch being distributed with this release.,datatype:STRING,isWP:true}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

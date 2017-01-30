@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Patient_Allergies-120_8 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Patient_Allergies-120_8</dd>
 <dt>fmId</dt><dd>120.8</dd>
 <dt>label</dt><dd>Patient Allergies</dd>
 <dt>location</dt><dd>^GMR(120.8,</dd>
 <dt>description</dt><dd>{::nomarkdown}Contains patient allergy/adverse reaction information.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -42,10 +42,10 @@ title: VDM documentation
 
 ## <a name="Reactions-120_81"></a>Reactions-120_81 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Reactions-120_81</dd>
 <dt>label</dt><dd>Reactions</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -58,10 +58,10 @@ title: VDM documentation
 
 ## <a name="Chart_Marked-120_813"></a>Chart_Marked-120_813 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Chart_Marked-120_813</dd>
 <dt>label</dt><dd>Chart Marked</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -72,10 +72,10 @@ title: VDM documentation
 
 ## <a name="Id_Band_Marked-120_814"></a>Id_Band_Marked-120_814 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Id_Band_Marked-120_814</dd>
 <dt>label</dt><dd>Id Band Marked</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -86,10 +86,10 @@ title: VDM documentation
 
 ## <a name="Comments-120_826"></a>Comments-120_826 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Comments-120_826</dd>
 <dt>label</dt><dd>Comments</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -100,4 +100,4 @@ title: VDM documentation
 | comment_type | 1.5 | Comment Type | {::nomarkdown}This field indicates the type of comments. If this field is<br/>answered \V\, then these comments are verifier entered.  If this field is<br/>answered \O\, then these are observer comments.  If this field is answered<br/>\E\, then these are entered in error comments.{:/} | ENUMERATION |  | INDEXED | {::nomarkdown}<dl><dt>O</dt><dd>OBSERVED</dd><dt>E</dt><dd>ERRORED</dd><dt>V</dt><dd>VERIFIED</dd></dl>{:/} | 
 | comments | 2 | Comments | {::nomarkdown}This field contains comments that were entered.<br/>                                            <br/>                                              {:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

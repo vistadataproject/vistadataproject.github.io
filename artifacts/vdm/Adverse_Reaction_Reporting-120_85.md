@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Adverse_Reaction_Reporting-120_85 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Adverse_Reaction_Reporting-120_85</dd>
 <dt>fmId</dt><dd>120.85</dd>
 <dt>label</dt><dd>Adverse Reaction Reporting</dd>
 <dt>location</dt><dd>^GMR(120.85,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains all the data for an Observed Drug reaction.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -82,10 +82,10 @@ title: VDM documentation
 
 ## <a name="Reactions-120_8502"></a>Reactions-120_8502 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Reactions-120_8502</dd>
 <dt>label</dt><dd>Reactions</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -97,10 +97,10 @@ title: VDM documentation
 
 ## <a name="Suspected_Agent-120_8503"></a>Suspected_Agent-120_8503 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Suspected_Agent-120_8503</dd>
 <dt>label</dt><dd>Suspected Agent</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -129,10 +129,10 @@ title: VDM documentation
 
 ## <a name="Relevant_Test_lab_Data-120_8504"></a>Relevant_Test_lab_Data-120_8504 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Relevant_Test_lab_Data-120_8504</dd>
 <dt>label</dt><dd>Relevant Test/lab Data</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -144,10 +144,10 @@ title: VDM documentation
 
 ## <a name="Concomitant_Drugs-120_8513"></a>Concomitant_Drugs-120_8513 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Concomitant_Drugs-120_8513</dd>
 <dt>label</dt><dd>Concomitant Drugs</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -161,10 +161,10 @@ title: VDM documentation
 
 ## <a name="Pt_Addendum-120_85315"></a>Pt_Addendum-120_85315 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Pt_Addendum-120_85315</dd>
 <dt>label</dt><dd>P&t Addendum</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -173,4 +173,4 @@ title: VDM documentation
 | date_time_entered | .01 | Date/time Entered | {::nomarkdown}This is the date/time the comment was entered.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

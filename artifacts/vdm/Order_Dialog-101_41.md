@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Order_Dialog-101_41 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Order_Dialog-101_41</dd>
 <dt>fmId</dt><dd>101.41</dd>
 <dt>label</dt><dd>Order Dialog</dd>
 <dt>location</dt><dd>^ORD(101.41,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains the information needed to define how to prompt for each<br/>order, what values are acceptable, etc.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -50,10 +50,10 @@ title: VDM documentation
 
 ## <a name="Items-101_412"></a>Items-101_412 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Items-101_412</dd>
 <dt>label</dt><dd>Items</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -99,10 +99,10 @@ title: VDM documentation
 
 ## <a name="Responses-101_416"></a>Responses-101_416 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Responses-101_416</dd>
 <dt>label</dt><dd>Responses</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -116,10 +116,10 @@ title: VDM documentation
 
 ## <a name="Controls-101_415"></a>Controls-101_415 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Controls-101_415</dd>
 <dt>label</dt><dd>Controls</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -140,4 +140,4 @@ title: VDM documentation
 | lower_control | 13 | Lower Control |  | STRING |  |  |  | 
 | tab_sequence | 14 | Tab Sequence |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

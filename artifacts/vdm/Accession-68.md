@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Accession-68 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Accession-68</dd>
 <dt>fmId</dt><dd>68</dd>
 <dt>label</dt><dd>Accession</dd>
 <dt>location</dt><dd>^LRO(68,</dd>
 <dt>description</dt><dd>{::nomarkdown} <br/>This file contains entries which represent the functional subdivisions<br/>or departments of the laboratory, referred to by the Laboratory package<br/>software as accession areas.  The file is used to define the site-specific<br/>information needed by your laboratory for each accession area.  This <br/>includes the type of accession transform (or how often the accession <br/>numbers assigned to test performed in that area will be reset to 1), the<br/>abbreviation of the area (which becomes part of the accession identifying<br/>the specimen and test results), the order in which the data for tests<br/>performed in the area will be displayed and other specific information.<br/> <br/>Definitions of variables used:<br/> LRDFN = Internal entry in LR( that is being worked on.<br/> LRIDT = Inverse date/time that data is stored at. ^LR(LRDFN,\CH\,<br/> LRAA = internal value of accession area ^LRO(68,<br/> LRAD = date working on in accession area ^LRO(68,LRAA,1,<br/> LRAN = accession number working on ^LRO(68,LRAA,1,LRAD,1,<br/> LRODT = order date ^LRO(69,<br/> LRSN = order entry within date ^LRO(69,LRORD,1,<br/>CROSS REFERENCE DESCRIPTION:<br/> ^LRO(68,\B\,'ACCESSION AREA',LRAA)<br/> ^LRO(68,\AC\,LRDFN,'DATE RESULTS AVAILABLE','DATA NODE') =<br/>    used by the cumulative<br/> ^LRO(68,\AD\,'LAB SECTION',LRAC)<br/> ^LRO(68,\AVS\,LRAA,LRAD,LRAN)=LRDFN^LRIDT<br/>    used by micro verify by supervisor<br/> ^LRO(68,\MI\,LRDFN,LRIDT)<br/>    used by micro for cumulative report<br/> ^LRO(68,LRAA,1,LRAD,1,LRAN,\AE\)<br/>    used for WKLD count<br/>  <br/> ^LRO(68,LRAA,1,LRAD,1,\B\,'ENTRY FILE 69',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,1,\C\,'IDENTITY',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,1,\E\,'LAB ARRIVAL TIME',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,1,\D\,'ORDER #',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,1,\AC\,'DATE/TIME COMPLETE',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,1,\AD\,'DATE COMPLETE',LRAN)<br/> ^LRO(68,LRAA,1,LRAD,4,\B\,'LAB TEST',LRAN){:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -55,10 +55,10 @@ title: VDM documentation
 
 ## <a name="Instrumentation_Controls-68_09"></a>Instrumentation_Controls-68_09 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Instrumentation_Controls-68_09</dd>
 <dt>label</dt><dd>Instrumentation Controls</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -69,10 +69,10 @@ title: VDM documentation
 
 ## <a name="Date-68_01"></a>Date-68_01 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Date-68_01</dd>
 <dt>label</dt><dd>Date</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -87,4 +87,4 @@ title: VDM documentation
 | bull_algorithm_control_data | 6 | Bull Algorithm Control Data | {::nomarkdown}Data is stored here for use in Bull's algorithm.{:/} | [OBJECT] |  |  | {id:Bull_Algorithm_Control_Data-68_07,fmId:68.07,label:Bull Algorithm Control Data,properties:[{id:method_control_data,fmId:.01,label:Method Control Data,description:Data is stored here for use in Bull's algorithm.,datatype:POINTER,required:true,range:{id:Auto_Instrument-62_4}},{id:control_data,fmId:1,label:Control Data,description:Data from the running average of Bull's algorithm is stored here.,datatype:[STRING]},{id:mean_data_value_1,fmId:2,label:Mean Data Value 1,description:The Mean Data Value 1 from the Auto Instrument file is reproduced here.,datatype:NUMERIC},{id:mean_data_value_2,fmId:3,label:Mean Data Value 2,description:The Mean Data Value 2 from the Auto Instrument file is reproduced here.,datatype:NUMERIC},{id:mean_data_value_3,fmId:4,label:Mean Data Value 3,description:The Mean Data Value 3 from the Auto Instrument file is reproduced here.,datatype:NUMERIC}]} | 
 | multirule_va_qc | 7 | Multi-rule VA Qc | {::nomarkdown}Quality control comparisons based on Westergard's suggested use of<br/>the Multi-rule Shewhart determinations are stored under this multiple.{:/} | [OBJECT] |  |  | {id:Multirule_VA_Qc-68_11,fmId:68.11,label:Multi-rule VA Qc,properties:[{id:control_name,fmId:.01,label:Control Name,description:The name of the Quality Control to be used in Westergard's suggested\ruse of the Multi-rule Shewhart determinations.,datatype:POINTER,required:true,range:{id:Lab_Control_Name-62_3}},{id:control_data,fmId:1,label:Control Data,description:Data from the Multi-rule Shewhart determinations are stored here for\rintermediate computations.,datatype:[POINTER],range:{id:Laboratory_Test-60}},{id:reject_reason,fmId:2,label:Reject Reason,description:A brief description of the reason to re-examine the controls.,datatype:STRING}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

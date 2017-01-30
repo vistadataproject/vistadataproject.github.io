@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Gmrv_Vital_Type-120_51 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Gmrv_Vital_Type-120_51</dd>
 <dt>fmId</dt><dd>120.51</dd>
 <dt>label</dt><dd>Gmrv Vital Type</dd>
 <dt>location</dt><dd>^GMRD(120.51,</dd>
 <dt>description</dt><dd>{::nomarkdown}Per VHA Directive {pending directive #}, this file has been \locked down\ <br/>by Data Standardization (DS). The file definition (i.e. data dictionary) <br/>shall not be modified. All additions, changes and deletions to entries in<br/>the file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by Common Services (CS). Creating<br/>and/or editing locally defined fields in the file are not permitted. Use<br/>of locally defined fields that were created prior to VHA Directive<br/>{pending directive #} shall not be supported.<br/> <br/>This file contains a list of vital sign types, and various parameters<br/>which mold the data entry.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -29,10 +29,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-120_5199"></a>Effective_Date_time-120_5199 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Effective_Date_time-120_5199</dd>
 <dt>label</dt><dd>Effective Date/time</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -41,4 +41,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event. If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

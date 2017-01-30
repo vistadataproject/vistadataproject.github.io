@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; File-1 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>File-1</dd>
 <dt>fmId</dt><dd>1</dd>
 <dt>label</dt><dd>File</dd>
 <dt>location</dt><dd>^DIC(</dd>
 <dt>description</dt><dd>{::nomarkdown}This file stores the descriptive information for all files in the FileMan<br/>managed database.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -26,10 +26,10 @@ title: VDM documentation
 
 ## <a name="Applicationgroup-1_005"></a>Applicationgroup-1_005 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Applicationgroup-1_005</dd>
 <dt>label</dt><dd>Application-group</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -37,4 +37,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | application_group | .01 | Application Group |  | STRING |  | REQUIRED, INDEXED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

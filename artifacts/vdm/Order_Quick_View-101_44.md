@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Order_Quick_View-101_44 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Order_Quick_View-101_44</dd>
 <dt>fmId</dt><dd>101.44</dd>
 <dt>label</dt><dd>Order Quick View</dd>
 <dt>location</dt><dd>^ORD(101.44,</dd>
 <dt>description</dt><dd>{::nomarkdown}The newer CPRS ordering dialogs use a Windows Listview control for<br/>displaying lists of orderable items and quick orders.  Using this control<br/>will help us rely less on custom built controls to handle long lists of<br/>items.  While the Listview control is able to operate on long lists of<br/>items, it must know at the outset how many items are potentially going to<br/>display and must be able to map from any sequence number produced by the<br/>Listview control  to a specific item in the list.  The ORDER QUICK VIEW<br/>file (101.44) provides this mapping.  It maps a subset of orderable items<br/>or quick orders in alphabetical order to specific sequence numbers.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -24,10 +24,10 @@ title: VDM documentation
 
 ## <a name="Quick_Order-101_441"></a>Quick_Order-101_441 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Quick_Order-101_441</dd>
 <dt>label</dt><dd>Quick Order</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -38,10 +38,10 @@ title: VDM documentation
 
 ## <a name="Set_Member-101_442"></a>Set_Member-101_442 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Set_Member-101_442</dd>
 <dt>label</dt><dd>Set Member</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -50,4 +50,4 @@ title: VDM documentation
 | set_member | .01 | Set Member | {::nomarkdown}This points to an item in the Orderable Item file (101.43).{:/} | POINTER |  | REQUIRED, INDEXED | Orderable_Items-101_43 | 
 | display_text | 2 | Display Text | {::nomarkdown}This is the text that is displayed in the view list.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}

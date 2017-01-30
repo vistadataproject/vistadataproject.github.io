@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Ward_Location-42 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Ward_Location-42</dd>
 <dt>fmId</dt><dd>42</dd>
 <dt>label</dt><dd>Ward Location</dd>
 <dt>location</dt><dd>^DIC(42,</dd>
 <dt>description</dt><dd>{::nomarkdown}This file contains all the facility ward locations and their<br/>related data, i.e., Operating Beds,  Bedsection, etc.  The wards <br/>are created/edited using the WARD DEFINITION option of the ADT module.<br/>WARD DEFINITION option of the ADT module.<br/>contains all statistical data, by date, necessary for the<br/>computation of the daily Bed Status report.{:/}</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -40,10 +40,10 @@ title: VDM documentation
 
 ## <a name="Authorized_Beds_Date-42_09"></a>Authorized_Beds_Date-42_09 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Authorized_Beds_Date-42_09</dd>
 <dt>label</dt><dd>Authorized Beds Date</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -54,10 +54,10 @@ title: VDM documentation
 
 ## <a name="Outofservice_Date-42_08"></a>Outofservice_Date-42_08 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Outofservice_Date-42_08</dd>
 <dt>label</dt><dd>Out-of-service Date</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -77,10 +77,10 @@ title: VDM documentation
 
 ## <a name="Totals-42_05"></a>Totals-42_05 
 
-{::nomarkdown}<dl>
+<dl>
 <dt>id</dt><dd>Totals-42_05</dd>
 <dt>label</dt><dd>Totals</dd>
-</dl>{:/}
+</dl>
 
 ### Properties
 
@@ -94,4 +94,4 @@ title: VDM documentation
 | plan_cum_disch_month | 3 | Plan Cum Disch Month | {::nomarkdown}This field is a multiple that adds new entry without asking.{:/} | [OBJECT] |  |  | {id:Plan_Cum_Disch_Month-42_07,fmId:42.07,label:Plan Cum Disch Month,properties:[{id:plan_cum_disch_month,fmId:.01,label:Plan Cum Disch Month,description:This sub-field of the multiple 'Plan Cum Disch Month' field is also  \ra multiple and contains a set of codes for the month for which \ryou would like to enter the planned cumulative discharges.,datatype:ENUMERATION,required:true,range:{MAR:6,FEB:5,AUG:11,SEP:12,APR:7,JUN:9,JUL:10,JAN:4,MAY:8,NOV:2,DEC:3,OCT:1}},{id:planned_discharges_for_month,fmId:1,label:Planned Discharges For Month,description:This sub-field of the multiple 'Plan Cum Disch Month' field contains \rthe number of discharges planned for the month selected from 0 to 9999.,datatype:NUMERIC}]} | 
 | cum_title | 4 | Cum Title | {::nomarkdown}This field is free text (1 to 20 characters in length) and is the title <br/>you want to print for the Cumulative Totals Section of the Bed Status <br/>Report.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
