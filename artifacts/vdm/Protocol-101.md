@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Protocol-101 
 
- property | value 
---- | --- 
- id | Protocol-101
- fmId | 101
- label | Protocol
- location | ^ORD(101,
- description | {::nomarkdown}This file contains the orderables and methods for accomplishing orders<br/>(protocols) within OE/RR.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Protocol-101</dd>
+<dt>fmId</dt><dd>101</dd>
+<dt>label</dt><dd>Protocol</dd>
+<dt>location</dt><dd>^ORD(101,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the orderables and methods for accomplishing orders<br/>(protocols) within OE/RR.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -82,10 +82,10 @@ title: VDM documentation
 
 ## <a name="Item-101_01"></a>Item-101_01 
 
- property | value 
---- | --- 
- id | Item-101_01
- label | Item
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Item-101_01</dd>
+<dt>label</dt><dd>Item</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -104,10 +104,10 @@ title: VDM documentation
 
 ## <a name="Method-101_05"></a>Method-101_05 
 
- property | value 
---- | --- 
- id | Method-101_05
- label | Method
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Method-101_05</dd>
+<dt>label</dt><dd>Method</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -116,4 +116,4 @@ title: VDM documentation
 | method | .01 | Method | {::nomarkdown}This is reserved for future use.  The numeric values of this field<br/>currently correspond to OE/RR actions.{:/} | NUMERIC |  | REQUIRED |  | 
 | method_action | .02 | Method Action | {::nomarkdown}This is the code necessary to implement the method.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

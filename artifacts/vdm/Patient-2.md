@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Patient-2 
 
- property | value 
---- | --- 
- id | Patient-2
- fmId | 2
- label | Patient
- location | 
- description | {::nomarkdown}The PATIENT file contains all the patients followed by the medical center/<br/>Outpatient clinic.  At a minimum each patient entry must have a NAME, DATE<br/>OF BIRTH and SOCIAL SECURITY NUMBER.  In order to add a new patient to the<br/>PATIENT file the user must also indicate whether or not the patient is<br/>requesting to receive care as a VETERAN of the U.S. Armed Forces and<br/>specify the TYPE of patient being added to the system.  For the most<br/>part the information contained in this file is demographic in nature,<br/>i.e., address, employment, service history, etc., however data<br/>concerning admissions, appointments,etc., is also stored in this file.<br/>The ADMISSION sub-field is scheduled to be moved into the new PATIENT<br/>MOVEMENT file by the end of calendar year 1989.  Care should be used<br/>when removing a patient from the PATIENT file since virtually all<br/>other DHCP modules do utilize data from this file.  Of the many fields<br/>in the file you will note that many are preceeded by an asterisk.<br/>Those fields are scheduled to be removed from the file due to either<br/>lack of use or replacement by another field/file in the next release.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Patient-2</dd>
+<dt>fmId</dt><dd>2</dd>
+<dt>label</dt><dd>Patient</dd>
+<dt>location</dt><dd></dd>
+<dt>description</dt><dd>{::nomarkdown}The PATIENT file contains all the patients followed by the medical center/<br/>Outpatient clinic.  At a minimum each patient entry must have a NAME, DATE<br/>OF BIRTH and SOCIAL SECURITY NUMBER.  In order to add a new patient to the<br/>PATIENT file the user must also indicate whether or not the patient is<br/>requesting to receive care as a VETERAN of the U.S. Armed Forces and<br/>specify the TYPE of patient being added to the system.  For the most<br/>part the information contained in this file is demographic in nature,<br/>i.e., address, employment, service history, etc., however data<br/>concerning admissions, appointments,etc., is also stored in this file.<br/>The ADMISSION sub-field is scheduled to be moved into the new PATIENT<br/>MOVEMENT file by the end of calendar year 1989.  Care should be used<br/>when removing a patient from the PATIENT file since virtually all<br/>other DHCP modules do utilize data from this file.  Of the many fields<br/>in the file you will note that many are preceeded by an asterisk.<br/>Those fields are scheduled to be removed from the file due to either<br/>lack of use or replacement by another field/file in the next release.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -487,10 +487,10 @@ title: VDM documentation
 
 ## <a name="Confidential_Address_Category-2_141"></a>Confidential_Address_Category-2_141 
 
- property | value 
---- | --- 
- id | Confidential_Address_Category-2_141
- label | Confidential Address Category
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Confidential_Address_Category-2_141</dd>
+<dt>label</dt><dd>Confidential Address Category</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -501,10 +501,10 @@ title: VDM documentation
 
 ## <a name="Insurance_Type-2_312"></a>Insurance_Type-2_312 
 
- property | value 
---- | --- 
- id | Insurance_Type-2_312
- label | Insurance Type
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Insurance_Type-2_312</dd>
+<dt>label</dt><dd>Insurance Type</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -593,10 +593,10 @@ title: VDM documentation
 
 ## <a name="Service_Oef_Or_Oif-2_3215"></a>Service_Oef_Or_Oif-2_3215 
 
- property | value 
---- | --- 
- id | Service_Oef_Or_Oif-2_3215
- label | Service [Oef Or Oif]
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Service_Oef_Or_Oif-2_3215</dd>
+<dt>label</dt><dd>Service [Oef Or Oif]</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -611,10 +611,10 @@ title: VDM documentation
 
 ## <a name="Military_Service_Episode-2_3216"></a>Military_Service_Episode-2_3216 
 
- property | value 
---- | --- 
- id | Military_Service_Episode-2_3216
- label | Military Service Episode
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Military_Service_Episode-2_3216</dd>
+<dt>label</dt><dd>Military Service Episode</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -630,10 +630,10 @@ title: VDM documentation
 
 ## <a name="Date_Of_Dental_Treatment-2_11"></a>Date_Of_Dental_Treatment-2_11 
 
- property | value 
---- | --- 
- id | Date_Of_Dental_Treatment-2_11
- label | Date Of Dental Treatment
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Date_Of_Dental_Treatment-2_11</dd>
+<dt>label</dt><dd>Date Of Dental Treatment</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -645,10 +645,10 @@ title: VDM documentation
 
 ## <a name="Rated_Disabilities_Va-2_04"></a>Rated_Disabilities_Va-2_04 
 
- property | value 
---- | --- 
- id | Rated_Disabilities_Va-2_04
- label | Rated Disabilities (Va)
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Rated_Disabilities_Va-2_04</dd>
+<dt>label</dt><dd>Rated Disabilities (Va)</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -663,10 +663,10 @@ title: VDM documentation
 
 ## <a name="Service_Connected_Conditions-2_05"></a>Service_Connected_Conditions-2_05 
 
- property | value 
---- | --- 
- id | Service_Connected_Conditions-2_05
- label | Service Connected Conditions
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Service_Connected_Conditions-2_05</dd>
+<dt>label</dt><dd>Service Connected Conditions</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -677,10 +677,10 @@ title: VDM documentation
 
 ## <a name="Cd_Status_Procedures-2_397"></a>Cd_Status_Procedures-2_397 
 
- property | value 
---- | --- 
- id | Cd_Status_Procedures-2_397
- label | Cd Status Procedures
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cd_Status_Procedures-2_397</dd>
+<dt>label</dt><dd>Cd Status Procedures</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -691,10 +691,10 @@ title: VDM documentation
 
 ## <a name="Cd_Status_Conditions-2_398"></a>Cd_Status_Conditions-2_398 
 
- property | value 
---- | --- 
- id | Cd_Status_Conditions-2_398
- label | Cd Status Conditions
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cd_Status_Conditions-2_398</dd>
+<dt>label</dt><dd>Cd Status Conditions</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -706,10 +706,10 @@ title: VDM documentation
 
 ## <a name="Cd_History_Date-2_399"></a>Cd_History_Date-2_399 
 
- property | value 
---- | --- 
- id | Cd_History_Date-2_399
- label | Cd History Date
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cd_History_Date-2_399</dd>
+<dt>label</dt><dd>Cd History Date</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -729,10 +729,10 @@ title: VDM documentation
 
 ## <a name="Alias-2_01"></a>Alias-2_01 
 
- property | value 
---- | --- 
- id | Alias-2_01
- label | Alias
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Alias-2_01</dd>
+<dt>label</dt><dd>Alias</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -744,10 +744,10 @@ title: VDM documentation
 
 ## <a name="Race_Information-2_02"></a>Race_Information-2_02 
 
- property | value 
---- | --- 
- id | Race_Information-2_02
- label | Race Information
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Race_Information-2_02</dd>
+<dt>label</dt><dd>Race Information</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -758,10 +758,10 @@ title: VDM documentation
 
 ## <a name="Enrollment_Clinic-2_001"></a>Enrollment_Clinic-2_001 
 
- property | value 
---- | --- 
- id | Enrollment_Clinic-2_001
- label | Enrollment Clinic
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Enrollment_Clinic-2_001</dd>
+<dt>label</dt><dd>Enrollment Clinic</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -773,10 +773,10 @@ title: VDM documentation
 
 ## <a name="Ethnicity_Information-2_06"></a>Ethnicity_Information-2_06 
 
- property | value 
---- | --- 
- id | Ethnicity_Information-2_06
- label | Ethnicity Information
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Ethnicity_Information-2_06</dd>
+<dt>label</dt><dd>Ethnicity Information</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -787,10 +787,10 @@ title: VDM documentation
 
 ## <a name="Patient_Eligibilities-2_0361"></a>Patient_Eligibilities-2_0361 
 
- property | value 
---- | --- 
- id | Patient_Eligibilities-2_0361
- label | Patient Eligibilities
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Patient_Eligibilities-2_0361</dd>
+<dt>label</dt><dd>Patient Eligibilities</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -802,10 +802,10 @@ title: VDM documentation
 
 ## <a name="Ph_Date_Time_Updated-2_0534"></a>Ph_Date_Time_Updated-2_0534 
 
- property | value 
---- | --- 
- id | Ph_Date_Time_Updated-2_0534
- label | Ph Date/Time Updated
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Ph_Date_Time_Updated-2_0534</dd>
+<dt>label</dt><dd>Ph Date/Time Updated</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -819,10 +819,10 @@ title: VDM documentation
 
 ## <a name="Icn_History-2_0992"></a>Icn_History-2_0992 
 
- property | value 
---- | --- 
- id | Icn_History-2_0992
- label | Icn History
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Icn_History-2_0992</dd>
+<dt>label</dt><dd>Icn History</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -835,10 +835,10 @@ title: VDM documentation
 
 ## <a name="Cmor_History-2_0993"></a>Cmor_History-2_0993 
 
- property | value 
---- | --- 
- id | Cmor_History-2_0993
- label | Cmor History
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cmor_History-2_0993</dd>
+<dt>label</dt><dd>Cmor History</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -851,10 +851,10 @@ title: VDM documentation
 
 ## <a name="Disposition_LogIn_Date_Time-2_101"></a>Disposition_LogIn_Date_Time-2_101 
 
- property | value 
---- | --- 
- id | Disposition_LogIn_Date_Time-2_101
- label | Disposition Log-In Date/Time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Disposition_LogIn_Date_Time-2_101</dd>
+<dt>label</dt><dd>Disposition Log-In Date/Time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -903,10 +903,10 @@ title: VDM documentation
 
 ## <a name="Appointment-2_98"></a>Appointment-2_98 
 
- property | value 
---- | --- 
- id | Appointment-2_98
- label | Appointment
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Appointment-2_98</dd>
+<dt>label</dt><dd>Appointment</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -945,10 +945,10 @@ title: VDM documentation
 
 ## <a name="Archived_Data-2_12"></a>Archived_Data-2_12 
 
- property | value 
---- | --- 
- id | Archived_Data-2_12
- label | Archived Data
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Archived_Data-2_12</dd>
+<dt>label</dt><dd>Archived Data</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -957,4 +957,4 @@ title: VDM documentation
 | data_type | .01 | Data Type | {::nomarkdown}This field identifies the type of data that was archived{:/} | ENUMERATION |  | REQUIRED, INDEXED | {::nomarkdown}<dl><dt>SSD</dt><dd>SPECIAL SURVEY DISP</dd><dt>S</dt><dd>APPOINTMENT</dd><dt>DE</dt><dd>CLINIC ENROLLMENT</dd></dl>{:/} | 
 | date_of_archive | 1 | Date Of Archive | {::nomarkdown}This multiple contains data pertaining to each specific archive (the<br/>date, the beginning and ending archiving dates, and the tape numbers).{:/} | [OBJECT] |  |  | {properties:[{description:Enter the date/time the archiving utility was run.\r \rThis field is not currently used.  The archiving software was not\rdistributed.,datatype:DATE-TIME,required:true,label:Date Of Archive,fmId:.01,id:date_of_archive},{description:Enter the sequential number of the tape on which this archiving data\rwas put.,datatype:STRING,label:Tape #,fmId:1,id:tape_number},{description:Enter the date the user chose to begin the scheduling archive.,datatype:DATE-TIME,label:Begin Archive Date,fmId:2,id:begin_archive_date},{description:Enter the ending date the user chose for the scheduling archive.,datatype:DATE-TIME,label:End Archive Date,fmId:3,id:end_archive_date},{description:The number of records archived.  This is created automatically by the\rsoftware.\r \rThis software has not been released and this field is not presently\rused in DHCP.,datatype:NUMERIC,label:Number Of Records Archived,fmId:4,id:number_of_records_archived}],fmId:2.13,id:Date_Of_Archive-2_13,label:Date Of Archive} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

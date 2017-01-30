@@ -5,12 +5,12 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Drug_Ingredients-50_416 
 
- property | value 
---- | --- 
- id | Drug_Ingredients-50_416
- fmId | 50.416
- label | Drug Ingredients
- location | ^PS(50.416,
- description | 
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Drug_Ingredients-50_416</dd>
+<dt>fmId</dt><dd>50.416</dd>
+<dt>label</dt><dd>Drug Ingredients</dd>
+<dt>location</dt><dd>^PS(50.416,</dd>
+<dt>description</dt><dd></dd>
+</dl>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

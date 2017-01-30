@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Gmrv_Vital_Category-120_53 
 
- property | value 
---- | --- 
- id | Gmrv_Vital_Category-120_53
- fmId | 120.53
- label | Gmrv Vital Category
- location | ^GMRD(120.53,
- description | {::nomarkdown}Per VHA Directive {pending directive #}, this file has been \locked down\ <br/>by Data Standardization (DS). The file definition (i.e. data dictionary) <br/>shall not be modified. All additions, changes and deletions to entries in<br/>the file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by Common Services (CS). Creating<br/>and/or editing locally defined fields in the file are not permitted. Use<br/>of locally defined fields that were created prior to VHA Directive<br/>{pending directive #} shall not be supported.<br/> <br/>This file contains a list of qualities or characteristics that can be <br/>affixed to a vital measurement.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Gmrv_Vital_Category-120_53</dd>
+<dt>fmId</dt><dd>120.53</dd>
+<dt>label</dt><dd>Gmrv Vital Category</dd>
+<dt>location</dt><dd>^GMRD(120.53,</dd>
+<dt>description</dt><dd>{::nomarkdown}Per VHA Directive {pending directive #}, this file has been \locked down\ <br/>by Data Standardization (DS). The file definition (i.e. data dictionary) <br/>shall not be modified. All additions, changes and deletions to entries in<br/>the file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by Common Services (CS). Creating<br/>and/or editing locally defined fields in the file are not permitted. Use<br/>of locally defined fields that were created prior to VHA Directive<br/>{pending directive #} shall not be supported.<br/> <br/>This file contains a list of qualities or characteristics that can be <br/>affixed to a vital measurement.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -25,10 +25,10 @@ title: VDM documentation
 
 ## <a name="Vital_Type-120_531"></a>Vital_Type-120_531 
 
- property | value 
---- | --- 
- id | Vital_Type-120_531
- label | Vital Type
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Vital_Type-120_531</dd>
+<dt>label</dt><dd>Vital Type</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -42,10 +42,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-120_5399"></a>Effective_Date_time-120_5399 
 
- property | value 
---- | --- 
- id | Effective_Date_time-120_5399
- label | Effective Date/time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Effective_Date_time-120_5399</dd>
+<dt>label</dt><dd>Effective Date/time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -54,4 +54,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event. If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,12 +5,12 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; VA_Generic-50_6 
 
- property | value 
---- | --- 
- id | VA_Generic-50_6
- fmId | 50.6
- label | VA Generic
- location | ^PSNDF(50.6,
- description | 
+{::nomarkdown}<dl>
+<dt>id</dt><dd>VA_Generic-50_6</dd>
+<dt>fmId</dt><dd>50.6</dd>
+<dt>label</dt><dd>VA Generic</dd>
+<dt>location</dt><dd>^PSNDF(50.6,</dd>
+<dt>description</dt><dd></dd>
+</dl>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

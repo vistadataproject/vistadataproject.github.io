@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Remote_Procedure-8994 
 
- property | value 
---- | --- 
- id | Remote_Procedure-8994
- fmId | 8994
- label | Remote Procedure
- location | ^XWB(8994,
- description | {::nomarkdown}This file is used as a repository of server-based procedures in the context<br/>of the Client/Server architecture.  By using the Remote Procedure Call (RPC)<br/>Broker, applications running on client workstations can invoke (call) the<br/>procedures in this file to be executed by the server and the results will be<br/>returned to the client application.<br/><br/>Each remote procedure entry is associated with an entry point (ROUTINE with<br/>optional TAG).  Calls to these procedures can include parameters of different<br/>value types.  The resulting value of the call can be either a string, a list<br/>of strings or a word processing string as indicated by the RETURN VALUE TYPE<br/>field (.04).<br/><br/>The remote procedure may be available for use by anyone or its use may be<br/>restricted to one or more application.  The range of availability is indicated<br/>by the AVAILABILITY field.  IF THERE IS NO ENTRY IN THE AVAILABILITY FIELD,<br/>then the procedure is assumed to be PUBLIC.<br/><br/>A remote procedure may be removed from service for a period of time by setting<br/>the INACTIVE field.  A request for use of a procedure which is marked inactive<br/>will result in an error being returned to the originating application.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Remote_Procedure-8994</dd>
+<dt>fmId</dt><dd>8994</dd>
+<dt>label</dt><dd>Remote Procedure</dd>
+<dt>location</dt><dd>^XWB(8994,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file is used as a repository of server-based procedures in the context<br/>of the Client/Server architecture.  By using the Remote Procedure Call (RPC)<br/>Broker, applications running on client workstations can invoke (call) the<br/>procedures in this file to be executed by the server and the results will be<br/>returned to the client application.<br/><br/>Each remote procedure entry is associated with an entry point (ROUTINE with<br/>optional TAG).  Calls to these procedures can include parameters of different<br/>value types.  The resulting value of the call can be either a string, a list<br/>of strings or a word processing string as indicated by the RETURN VALUE TYPE<br/>field (.04).<br/><br/>The remote procedure may be available for use by anyone or its use may be<br/>restricted to one or more application.  The range of availability is indicated<br/>by the AVAILABILITY field.  IF THERE IS NO ENTRY IN THE AVAILABILITY FIELD,<br/>then the procedure is assumed to be PUBLIC.<br/><br/>A remote procedure may be removed from service for a period of time by setting<br/>the INACTIVE field.  A request for use of a procedure which is marked inactive<br/>will result in an error being returned to the originating application.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -34,10 +34,10 @@ title: VDM documentation
 
 ## <a name="Input_Parameter-8994_02"></a>Input_Parameter-8994_02 
 
- property | value 
---- | --- 
- id | Input_Parameter-8994_02
- label | Input Parameter
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Input_Parameter-8994_02</dd>
+<dt>label</dt><dd>Input Parameter</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -50,4 +50,4 @@ title: VDM documentation
 | sequence_number | .05 | Sequence Number | {::nomarkdown}This number should correspond to the position of this parameter in the<br/>formal list of the function.  Consider that the return parameter that<br/>Broker passes in, by reference, is the very first parameter with the<br/>sequence number of 0.  The next parameter is the first application-supplied<br/>parameter with the sequence of 1.<br/><br/>Example:<br/><br/>  Your entry point may look like:<br/><br/>    EN(RESULT,USER,DATE)       ;this will do something<br/><br/>      In this case the parameter corresponding to USER should have sequence<br/>      number 1 and the DATE parameter should be 2.{:/} | NUMERIC |  | INDEXED |  | 
 | description | 1 | Description |  | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

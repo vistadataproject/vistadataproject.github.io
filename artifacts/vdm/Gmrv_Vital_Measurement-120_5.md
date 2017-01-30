@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Gmrv_Vital_Measurement-120_5 
 
- property | value 
---- | --- 
- id | Gmrv_Vital_Measurement-120_5
- fmId | 120.5
- label | Gmrv Vital Measurement
- location | ^GMR(120.5,
- description | {::nomarkdown}This file contains vital sign information and other measurement data for a <br/>patient.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Gmrv_Vital_Measurement-120_5</dd>
+<dt>fmId</dt><dd>120.5</dd>
+<dt>label</dt><dd>Gmrv Vital Measurement</dd>
+<dt>location</dt><dd>^GMR(120.5,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains vital sign information and other measurement data for a <br/>patient.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -32,10 +32,10 @@ title: VDM documentation
 
 ## <a name="Reason_Entered_In_Error-120_506"></a>Reason_Entered_In_Error-120_506 
 
- property | value 
---- | --- 
- id | Reason_Entered_In_Error-120_506
- label | Reason Entered In Error
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Reason_Entered_In_Error-120_506</dd>
+<dt>label</dt><dd>Reason Entered In Error</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -44,4 +44,4 @@ title: VDM documentation
 | reason_entered_in_error | .01 | Reason Entered In Error | {::nomarkdown}This field records the reason for entering the data in error.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>2</dt><dd>INCORRECT READING</dd><dt>4</dt><dd>INVALID RECORD</dd><dt>1</dt><dd>INCORRECT DATE/TIME</dd><dt>3</dt><dd>INCORRECT PATIENT</dd></dl>{:/} | 
 | date_reason_entered_in_error | .02 | Date Reason Entered In Error |  | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

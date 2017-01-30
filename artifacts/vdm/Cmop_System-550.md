@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Cmop_System-550 
 
- property | value 
---- | --- 
- id | Cmop_System-550
- fmId | 550
- label | Cmop System
- location | ^PSX(550,
- description | {::nomarkdown}The system parameters in this file manage operations of the Consolidated <br/>Mail Outpatient Pharmacy for the medical center. This information controls<br/>the transmission of data to the Consolidated Mail Outpatient Pharmacy<br/>host facility selected by the medical center. Information in this file <br/>must be entered or edited ONLY through the Consolidated Mail Outpatient <br/>Pharmacy package options.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cmop_System-550</dd>
+<dt>fmId</dt><dd>550</dd>
+<dt>label</dt><dd>Cmop System</dd>
+<dt>location</dt><dd>^PSX(550,</dd>
+<dt>description</dt><dd>{::nomarkdown}The system parameters in this file manage operations of the Consolidated <br/>Mail Outpatient Pharmacy for the medical center. This information controls<br/>the transmission of data to the Consolidated Mail Outpatient Pharmacy<br/>host facility selected by the medical center. Information in this file <br/>must be entered or edited ONLY through the Consolidated Mail Outpatient <br/>Pharmacy package options.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -32,10 +32,10 @@ title: VDM documentation
 
 ## <a name="Activate_inactivate_Dt_tm-550_04"></a>Activate_inactivate_Dt_tm-550_04 
 
- property | value 
---- | --- 
- id | Activate_inactivate_Dt_tm-550_04
- label | Activate/inactivate Dt/tm
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Activate_inactivate_Dt_tm-550_04</dd>
+<dt>label</dt><dd>Activate/inactivate Dt/tm</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -50,10 +50,10 @@ title: VDM documentation
 
 ## <a name="Auto_Transmit-550_07"></a>Auto_Transmit-550_07 
 
- property | value 
---- | --- 
- id | Auto_Transmit-550_07
- label | Auto Transmit
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Auto_Transmit-550_07</dd>
+<dt>label</dt><dd>Auto Transmit</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -69,10 +69,10 @@ title: VDM documentation
 
 ## <a name="Purge_Dt_tm-550_08"></a>Purge_Dt_tm-550_08 
 
- property | value 
---- | --- 
- id | Purge_Dt_tm-550_08
- label | Purge Dt/tm
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Purge_Dt_tm-550_08</dd>
+<dt>label</dt><dd>Purge Dt/tm</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -85,10 +85,10 @@ title: VDM documentation
 
 ## <a name="Auto_Transmit_Cs-550_09"></a>Auto_Transmit_Cs-550_09 
 
- property | value 
---- | --- 
- id | Auto_Transmit_Cs-550_09
- label | Auto Transmit Cs
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Auto_Transmit_Cs-550_09</dd>
+<dt>label</dt><dd>Auto Transmit Cs</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -102,4 +102,4 @@ title: VDM documentation
 | task_number | 6 | Task Number | {::nomarkdown}This is the task number used to reschedule the job.{:/} | NUMERIC |  |  |  | 
 | number_of_days_to_transmit | 7 | Number Of Days To Transmit | {::nomarkdown}This number determines the number of days to add to the current date to<br/>calculate the transmit through date for CMOP auto transmissions.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

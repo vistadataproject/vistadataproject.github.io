@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Imaging_Type-79_2 
 
- property | value 
---- | --- 
- id | Imaging_Type-79_2
- fmId | 79.2
- label | Imaging Type
- location | ^RA(79.2,
- description | {::nomarkdown}This file contains, for each imaging type entry, parameters that the module<br/>uses during various stages of exam and report processing and inquiring. The<br/>parameter switches allow the 'customizing' of the module for each type<br/>of imaging.<br/> <br/>WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.<br/> <br/> Data Storage<br/> ------------<br/>The data for the 'IMAGING TYPE' file is stored in the ^RA(79.2,<br/>global. At the present time this file is very static after day-one<br/>initialization is complete.  However, it still should be journaled.<br/>It should also be translated if the operating system supports this function.<br/> <br/> Input Templates<br/> ---------------<br/>The following is a list of input templates used by the package and<br/>the entry in the OPTIONS file (#19) that uses the template:<br/> <br/>                     Compiled<br/> Name                Routine  Description; Option(s)<br/> ----                -------  ----------------------<br/> RA IMAGE PARAMETERS          Used to specify timeout seconds and whether<br/>                              the hardware system the module is running on<br/>                              is under fail-soft mode;<br/>                              RA FAILSOFT<br/> <br/> RA ON-LINE CRITERIA          Used to indicate how long certain data should<br/>                              remain on file before it can be purged;<br/>                              RA PURGE<br/> <br/>If any modifications to these input templates are needed for local<br/>purposes, then great care should be taken not to degrade any branching logic<br/>in the template.<br/> <br/> Print Templates<br/> ---------------<br/> The following is a list of print templates used by the package:<br/> <br/> Name                  Description; Option(s)<br/> ----                  ----------------------<br/> RA ACTIVITY LOG       Prints a list of the activity log entries for the<br/>                       imaging type;{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Imaging_Type-79_2</dd>
+<dt>fmId</dt><dd>79.2</dd>
+<dt>label</dt><dd>Imaging Type</dd>
+<dt>location</dt><dd>^RA(79.2,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains, for each imaging type entry, parameters that the module<br/>uses during various stages of exam and report processing and inquiring. The<br/>parameter switches allow the 'customizing' of the module for each type<br/>of imaging.<br/> <br/>WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.<br/> <br/> Data Storage<br/> ------------<br/>The data for the 'IMAGING TYPE' file is stored in the ^RA(79.2,<br/>global. At the present time this file is very static after day-one<br/>initialization is complete.  However, it still should be journaled.<br/>It should also be translated if the operating system supports this function.<br/> <br/> Input Templates<br/> ---------------<br/>The following is a list of input templates used by the package and<br/>the entry in the OPTIONS file (#19) that uses the template:<br/> <br/>                     Compiled<br/> Name                Routine  Description; Option(s)<br/> ----                -------  ----------------------<br/> RA IMAGE PARAMETERS          Used to specify timeout seconds and whether<br/>                              the hardware system the module is running on<br/>                              is under fail-soft mode;<br/>                              RA FAILSOFT<br/> <br/> RA ON-LINE CRITERIA          Used to indicate how long certain data should<br/>                              remain on file before it can be purged;<br/>                              RA PURGE<br/> <br/>If any modifications to these input templates are needed for local<br/>purposes, then great care should be taken not to degrade any branching logic<br/>in the template.<br/> <br/> Print Templates<br/> ---------------<br/> The following is a list of print templates used by the package:<br/> <br/> Name                  Description; Option(s)<br/> ----                  ----------------------<br/> RA ACTIVITY LOG       Prints a list of the activity log entries for the<br/>                       imaging type;{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -35,10 +35,10 @@ title: VDM documentation
 
 ## <a name="Activity_Log-79_23"></a>Activity_Log-79_23 
 
- property | value 
---- | --- 
- id | Activity_Log-79_23
- label | Activity Log
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Activity_Log-79_23</dd>
+<dt>label</dt><dd>Activity Log</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -53,10 +53,10 @@ title: VDM documentation
 
 ## <a name="Work_Rvu_wrvu_Scaling_Factor-79_22"></a>Work_Rvu_wrvu_Scaling_Factor-79_22 
 
- property | value 
---- | --- 
- id | Work_Rvu_wrvu_Scaling_Factor-79_22
- label | Work Rvu (wrvu) Scaling Factor
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Work_Rvu_wrvu_Scaling_Factor-79_22</dd>
+<dt>label</dt><dd>Work Rvu (wrvu) Scaling Factor</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -65,4 +65,4 @@ title: VDM documentation
 | calendar_year | .01 | Calendar Year | {::nomarkdown}This field identifies the calendar year to associate a specific 'Society<br/>of Chairmen in Academic Radiology Departments' (SCARD) scaling factor to <br/>imaging type specific procedures with an associated wRVU value.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
 | scaling_factor | 2 | Scaling Factor | {::nomarkdown}This field identifies the appropriate scaling factor applied to the wRVU<br/>value for an imaging type specific rad/nuc med procedure.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

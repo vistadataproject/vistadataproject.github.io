@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Medication_Routes-51_2 
 
- property | value 
---- | --- 
- id | Medication_Routes-51_2
- fmId | 51.2
- label | Medication Routes
- location | ^PS(51.2,
- description | 
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Medication_Routes-51_2</dd>
+<dt>fmId</dt><dd>51.2</dd>
+<dt>label</dt><dd>Medication Routes</dd>
+<dt>location</dt><dd>^PS(51.2,</dd>
+<dt>description</dt><dd></dd>
+</dl>{:/}
 
 ### Properties
 
@@ -31,10 +31,10 @@ title: VDM documentation
 
 ## <a name="Standard_Med_Route_Change_Log-51_27"></a>Standard_Med_Route_Change_Log-51_27 
 
- property | value 
---- | --- 
- id | Standard_Med_Route_Change_Log-51_27
- label | Standard Med Route Change Log
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Standard_Med_Route_Change_Log-51_27</dd>
+<dt>label</dt><dd>Standard Med Route Change Log</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -45,4 +45,4 @@ title: VDM documentation
 | old_value | 2 | Old Value | {::nomarkdown}This is the previous value of the STANDARD MEDICATION ROUTE (#10) Field <br/>when a change is made. It can be null, if there was no previous value. It <br/>is set from the PSSMEDX routine, which is invoked from the new style cross<br/>reference of the STANDARD MEDICATION ROUTE (#10) Field of the MEDICATION<br/>ROUTES (#51.2) File.{:/} | POINTER |  |  | Standard_Medication_Routes-51_23 | 
 | new_value | 3 | New Value | {::nomarkdown}This is the new value of the STANDARD MEDICATION ROUTE (#10) Field when a<br/>change is made. It can be null, if there is no new value. It is set from<br/>the PSSMEDX routine, which is invoked from the new style cross reference<br/>of the STANDARD MEDICATION ROUTE (#10) Field of the MEDICATION ROUTES<br/>(#51.2) File.{:/} | POINTER |  |  | Standard_Medication_Routes-51_23 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

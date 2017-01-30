@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Gmrc_Procedure-123_3 
 
- property | value 
---- | --- 
- id | Gmrc_Procedure-123_3
- fmId | 123.3
- label | Gmrc Procedure
- location | ^GMR(123.3,
- description | {::nomarkdown}This file is used for the maintenance of procedures used in the<br/>CONSULT/REQUEST TRACKING package. The procedures contained in this file<br/>are orderable in CPRS if not inactive.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Gmrc_Procedure-123_3</dd>
+<dt>fmId</dt><dd>123.3</dd>
+<dt>label</dt><dd>Gmrc Procedure</dd>
+<dt>location</dt><dd>^GMR(123.3,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file is used for the maintenance of procedures used in the<br/>CONSULT/REQUEST TRACKING package. The procedures contained in this file<br/>are orderable in CPRS if not inactive.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -35,4 +35,4 @@ title: VDM documentation
 | ifc_sending_facility | 128 | Ifc Sending Facility |  | [POINTER] |  |  | {id:Institution-4} | 
 | ifc_coordinator | 129 | Ifc Coordinator | {::nomarkdown}The person entered in this field will have expanded abilities to correct <br/>IFC records that require manual intervention to remain updated.<br/> <br/>The full capabilities of this field are not yet defined.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

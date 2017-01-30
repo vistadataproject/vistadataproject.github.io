@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Parameter_Definition-8989_51 
 
- property | value 
---- | --- 
- id | Parameter_Definition-8989_51
- fmId | 8989.51
- label | Parameter Definition
- location | ^XTV(8989.51,
- description | {::nomarkdown}This file contains the characteristics of parameters.  Entries in this<br/>file must be namespaced and they are exported by the package which owns<br/>them.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Parameter_Definition-8989_51</dd>
+<dt>fmId</dt><dd>8989.51</dd>
+<dt>label</dt><dd>Parameter Definition</dd>
+<dt>location</dt><dd>^XTV(8989.51,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the characteristics of parameters.  Entries in this<br/>file must be namespaced and they are exported by the package which owns<br/>them.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -39,10 +39,10 @@ title: VDM documentation
 
 ## <a name="Allowable_Entities-8989_513"></a>Allowable_Entities-8989_513 
 
- property | value 
---- | --- 
- id | Allowable_Entities-8989_513
- label | Allowable Entities
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Allowable_Entities-8989_513</dd>
+<dt>label</dt><dd>Allowable Entities</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -51,4 +51,4 @@ title: VDM documentation
 | precedence | .01 | Precedence | {::nomarkdown}A single parameter may be set for several different types of entities.  This <br/>lists the order in which entities are searched for a defined value.  For <br/>example, if a parameter may be set for a package, a location, and a user, <br/>and the respective precedents are 3, 2, 1, the value of the user parameter <br/>would be returned.  If it did not exist, the value of the location <br/>parameter.  If that did not exist, then the value of the package parameter.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
 | entity_file | .02 | Entity File | {::nomarkdown}This identifies an entity for which the parameter can be legally entered.  <br/>Entities are simply variable pointers.  The files which are eligible to be<br/>entities are listed in the PARAMETER ENTITY file.{:/} | POINTER |  | REQUIRED | Parameter_Entity-8989_518 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

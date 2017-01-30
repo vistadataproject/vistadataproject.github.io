@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Drug-50 
 
- property | value 
---- | --- 
- id | Drug-50
- fmId | 50
- label | Drug
- location | ^PSDRUG(
- description | {::nomarkdown}This file holds the information related to each drug that can be used<br/>to fill a prescription.  It is pointed to from several other files and<br/>should be handled carefully, usually only by special individuals in the<br/>pharmacy service.  Entries are not typically deleted, but rather made<br/>inactive by entering an inactive date.<br/> <br/>This file must be built by Pharmacy Service BEFORE going on-line.  It is<br/>common to use another centers file and edit it to match your center's<br/>unique formulary.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Drug-50</dd>
+<dt>fmId</dt><dd>50</dd>
+<dt>label</dt><dd>Drug</dd>
+<dt>location</dt><dd>^PSDRUG(</dd>
+<dt>description</dt><dd>{::nomarkdown}This file holds the information related to each drug that can be used<br/>to fill a prescription.  It is pointed to from several other files and<br/>should be handled carefully, usually only by special individuals in the<br/>pharmacy service.  Entries are not typically deleted, but rather made<br/>inactive by entering an inactive date.<br/> <br/>This file must be built by Pharmacy Service BEFORE going on-line.  It is<br/>common to use another centers file and edit it to match your center's<br/>unique formulary.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -99,10 +99,10 @@ title: VDM documentation
 
 ## <a name="Synonym-50_1"></a>Synonym-50_1 
 
- property | value 
---- | --- 
- id | Synonym-50_1
- label | Synonym
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Synonym-50_1</dd>
+<dt>label</dt><dd>Synonym</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -120,10 +120,10 @@ title: VDM documentation
 
 ## <a name="Clozapine_Lab_Test-50_02"></a>Clozapine_Lab_Test-50_02 
 
- property | value 
---- | --- 
- id | Clozapine_Lab_Test-50_02
- label | Clozapine Lab Test
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Clozapine_Lab_Test-50_02</dd>
+<dt>label</dt><dd>Clozapine Lab Test</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -136,10 +136,10 @@ title: VDM documentation
 
 ## <a name="Ndc_By_Outpatient_Site-50_032"></a>Ndc_By_Outpatient_Site-50_032 
 
- property | value 
---- | --- 
- id | Ndc_By_Outpatient_Site-50_032
- label | Ndc By Outpatient Site
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Ndc_By_Outpatient_Site-50_032</dd>
+<dt>label</dt><dd>Ndc By Outpatient Site</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -151,10 +151,10 @@ title: VDM documentation
 
 ## <a name="Atc_Canister-50_0212"></a>Atc_Canister-50_0212 
 
- property | value 
---- | --- 
- id | Atc_Canister-50_0212
- label | Atc Canister
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Atc_Canister-50_0212</dd>
+<dt>label</dt><dd>Atc Canister</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -165,10 +165,10 @@ title: VDM documentation
 
 ## <a name="Activity_Log-50_0214"></a>Activity_Log-50_0214 
 
- property | value 
---- | --- 
- id | Activity_Log-50_0214
- label | Activity Log
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Activity_Log-50_0214</dd>
+<dt>label</dt><dd>Activity Log</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -183,10 +183,10 @@ title: VDM documentation
 
 ## <a name="Old_Names-50_01"></a>Old_Names-50_01 
 
- property | value 
---- | --- 
- id | Old_Names-50_01
- label | Old Names
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Old_Names-50_01</dd>
+<dt>label</dt><dd>Old Names</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -197,10 +197,10 @@ title: VDM documentation
 
 ## <a name="Possible_Dosages-50_0903"></a>Possible_Dosages-50_0903 
 
- property | value 
---- | --- 
- id | Possible_Dosages-50_0903
- label | Possible Dosages
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Possible_Dosages-50_0903</dd>
+<dt>label</dt><dd>Possible Dosages</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -213,10 +213,10 @@ title: VDM documentation
 
 ## <a name="Local_Possible_Dosage-50_0904"></a>Local_Possible_Dosage-50_0904 
 
- property | value 
---- | --- 
- id | Local_Possible_Dosage-50_0904
- label | Local Possible Dosage
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Local_Possible_Dosage-50_0904</dd>
+<dt>label</dt><dd>Local Possible Dosage</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -231,10 +231,10 @@ title: VDM documentation
 
 ## <a name="Opai-50_0906"></a>Opai-50_0906 
 
- property | value 
---- | --- 
- id | Opai-50_0906
- label | Opai
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Opai-50_0906</dd>
+<dt>label</dt><dd>Opai</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -244,4 +244,4 @@ title: VDM documentation
 | window_dns_name | 1 | Window Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a window route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 | mail_dns_name | 2 | Mail Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a mail route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; VA_Product-50_68 
 
- property | value 
---- | --- 
- id | VA_Product-50_68
- fmId | 50.68
- label | VA Product
- location | ^PSNDF(50.68,
- description | {::nomarkdown}Per VHA Directive 2005-044, this file has been \locked down\<br/>by Data Standardization (DS). The file definition (i.e. data dictionary)<br/>shall not be modified. All additions, changes and deletions to entries in<br/>the file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by Common Services (CS). Creating and/or<br/>editing locally defined fields in the file are not permitted. Use of<br/>locally defined fields that were created prior to VHA Directive<br/>2005-044 shall not be supported.<br/> <br/>This file contains a list of available drug products.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>VA_Product-50_68</dd>
+<dt>fmId</dt><dd>50.68</dd>
+<dt>label</dt><dd>VA Product</dd>
+<dt>location</dt><dd>^PSNDF(50.68,</dd>
+<dt>description</dt><dd>{::nomarkdown}Per VHA Directive 2005-044, this file has been \locked down\<br/>by Data Standardization (DS). The file definition (i.e. data dictionary)<br/>shall not be modified. All additions, changes and deletions to entries in<br/>the file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by Common Services (CS). Creating and/or<br/>editing locally defined fields in the file are not permitted. Use of<br/>locally defined fields that were created prior to VHA Directive<br/>2005-044 shall not be supported.<br/> <br/>This file contains a list of available drug products.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -58,10 +58,10 @@ title: VDM documentation
 
 ## <a name="Active_Ingredients-50_6814"></a>Active_Ingredients-50_6814 
 
- property | value 
---- | --- 
- id | Active_Ingredients-50_6814
- label | Active Ingredients
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Active_Ingredients-50_6814</dd>
+<dt>label</dt><dd>Active Ingredients</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -73,10 +73,10 @@ title: VDM documentation
 
 ## <a name="Reduced_Copay-50_6845"></a>Reduced_Copay-50_6845 
 
- property | value 
---- | --- 
- id | Reduced_Copay-50_6845
- label | Reduced Copay
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Reduced_Copay-50_6845</dd>
+<dt>label</dt><dd>Reduced Copay</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -87,10 +87,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-50_6899"></a>Effective_Date_time-50_6899 
 
- property | value 
---- | --- 
- id | Effective_Date_time-50_6899
- label | Effective Date/time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Effective_Date_time-50_6899</dd>
+<dt>label</dt><dd>Effective Date/time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -99,4 +99,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If the term'ACTIVE', then the term will be accessible by end-users to document a particular patient event. If 'INACTIVE', then the term will only be accessible by the application<br/>to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

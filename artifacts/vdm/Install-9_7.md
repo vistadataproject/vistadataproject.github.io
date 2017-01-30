@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Install-9_7 
 
- property | value 
---- | --- 
- id | Install-9_7
- fmId | 9.7
- label | Install
- location | ^XPD(9.7,
- description | {::nomarkdown}This file contains the installation information for a site from the Kernel<br/>Installation & Distribution System.  This file should not be edited.<br/>All information is updated when a new package is installed at a site.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Install-9_7</dd>
+<dt>fmId</dt><dd>9.7</dd>
+<dt>label</dt><dd>Install</dd>
+<dt>location</dt><dd>^XPD(9.7,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the installation information for a site from the Kernel<br/>Installation & Distribution System.  This file should not be edited.<br/>All information is updated when a new package is installed at a site.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -47,10 +47,10 @@ title: VDM documentation
 
 ## <a name="Preinit_Check_Points-9_713"></a>Preinit_Check_Points-9_713 
 
- property | value 
---- | --- 
- id | Preinit_Check_Points-9_713
- label | Pre-init Check Points
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Preinit_Check_Points-9_713</dd>
+<dt>label</dt><dd>Pre-init Check Points</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -63,10 +63,10 @@ title: VDM documentation
 
 ## <a name="File-9_714"></a>File-9_714 
 
- property | value 
---- | --- 
- id | File-9_714
- label | File
+{::nomarkdown}<dl>
+<dt>id</dt><dd>File-9_714</dd>
+<dt>label</dt><dd>File</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -78,10 +78,10 @@ title: VDM documentation
 
 ## <a name="Build_Components-9_715"></a>Build_Components-9_715 
 
- property | value 
---- | --- 
- id | Build_Components-9_715
- label | Build Components
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Build_Components-9_715</dd>
+<dt>label</dt><dd>Build Components</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -93,10 +93,10 @@ title: VDM documentation
 
 ## <a name="Postinit_Check_Points-9_716"></a>Postinit_Check_Points-9_716 
 
- property | value 
---- | --- 
- id | Postinit_Check_Points-9_716
- label | Post-init Check Points
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Postinit_Check_Points-9_716</dd>
+<dt>label</dt><dd>Post-init Check Points</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -109,10 +109,10 @@ title: VDM documentation
 
 ## <a name="Globals-9_718"></a>Globals-9_718 
 
- property | value 
---- | --- 
- id | Globals-9_718
- label | Globals
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Globals-9_718</dd>
+<dt>label</dt><dd>Globals</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -123,10 +123,10 @@ title: VDM documentation
 
 ## <a name="Volume_Set-9_703"></a>Volume_Set-9_703 
 
- property | value 
---- | --- 
- id | Volume_Set-9_703
- label | Volume Set
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Volume_Set-9_703</dd>
+<dt>label</dt><dd>Volume Set</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -140,10 +140,10 @@ title: VDM documentation
 
 ## <a name="Install_Answers-9_701"></a>Install_Answers-9_701 
 
- property | value 
---- | --- 
- id | Install_Answers-9_701
- label | Install Answers
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Install_Answers-9_701</dd>
+<dt>label</dt><dd>Install Answers</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -154,4 +154,4 @@ title: VDM documentation
 | external_answer | 2 | External Answer | {::nomarkdown}This is the external format of the Install Question answer.{:/} | STRING |  |  |  | 
 | answer | 3 | Answer | {::nomarkdown}This is the internal format of the Install Question answer.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

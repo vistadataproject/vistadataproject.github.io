@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Institution-4 
 
- property | value 
---- | --- 
- id | Institution-4
- fmId | 4
- label | Institution
- location | ^DIC(4,
- description | {::nomarkdown}This file contains a listing of VA institutions.  It is cross-referenced<br/>by name and station number.  The Number field is no longer meaningful (it<br/>had previously referenced the station number).{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Institution-4</dd>
+<dt>fmId</dt><dd>4</dd>
+<dt>label</dt><dd>Institution</dd>
+<dt>location</dt><dd>^DIC(4,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains a listing of VA institutions.  It is cross-referenced<br/>by name and station number.  The Number field is no longer meaningful (it<br/>had previously referenced the station number).{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -57,10 +57,10 @@ title: VDM documentation
 
 ## <a name="Contact-4_03"></a>Contact-4_03 
 
- property | value 
---- | --- 
- id | Contact-4_03
- label | Contact
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Contact-4_03</dd>
+<dt>label</dt><dd>Contact</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -72,10 +72,10 @@ title: VDM documentation
 
 ## <a name="Associations-4_014"></a>Associations-4_014 
 
- property | value 
---- | --- 
- id | Associations-4_014
- label | Associations
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Associations-4_014</dd>
+<dt>label</dt><dd>Associations</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -86,10 +86,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-4_042"></a>Effective_Date_time-4_042 
 
- property | value 
---- | --- 
- id | Effective_Date_time-4_042
- label | Effective Date/time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Effective_Date_time-4_042</dd>
+<dt>label</dt><dd>Effective Date/time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -101,10 +101,10 @@ title: VDM documentation
 
 ## <a name="Taxonomy_Code-4_043"></a>Taxonomy_Code-4_043 
 
- property | value 
---- | --- 
- id | Taxonomy_Code-4_043
- label | Taxonomy Code
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Taxonomy_Code-4_043</dd>
+<dt>label</dt><dd>Taxonomy Code</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -116,10 +116,10 @@ title: VDM documentation
 
 ## <a name="History-4_999"></a>History-4_999 
 
- property | value 
---- | --- 
- id | History-4_999
- label | History
+{::nomarkdown}<dl>
+<dt>id</dt><dd>History-4_999</dd>
+<dt>label</dt><dd>History</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -135,10 +135,10 @@ title: VDM documentation
 
 ## <a name="Identifier-4_9999"></a>Identifier-4_9999 
 
- property | value 
---- | --- 
- id | Identifier-4_9999
- label | Identifier
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Identifier-4_9999</dd>
+<dt>label</dt><dd>Identifier</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -149,4 +149,4 @@ title: VDM documentation
 | effective_date_time | .03 | Effective Date/time | {::nomarkdown}Describes the pair Status and Effective Date/Time for each reference term.{:/} | DATE-TIME |  |  |  | 
 | status | .04 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE', then the <br/>term will be accessible by end-users to document a particular patient <br/>event. If 'INACTIVE', then the term will only be accessible by the <br/>application to display legacy data.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

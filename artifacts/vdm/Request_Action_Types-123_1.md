@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Request_Action_Types-123_1 
 
- property | value 
---- | --- 
- id | Request_Action_Types-123_1
- fmId | 123.1
- label | Request Action Types
- location | ^GMR(123.1,
- description | {::nomarkdown}This file identifies the action types which may be used by a service to <br/>track activity related to a consult or request.<br/>  <br/>Certain action types may have a \GMRCACT \ protocol entry in the Protocol<br/>File (101) which corresponds to the action type.  Two actions should not <br/>point to the same protocol.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Request_Action_Types-123_1</dd>
+<dt>fmId</dt><dd>123.1</dd>
+<dt>label</dt><dd>Request Action Types</dd>
+<dt>location</dt><dd>^GMR(123.1,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file identifies the action types which may be used by a service to <br/>track activity related to a consult or request.<br/>  <br/>Certain action types may have a \GMRCACT \ protocol entry in the Protocol<br/>File (101) which corresponds to the action type.  Two actions should not <br/>point to the same protocol.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -26,4 +26,4 @@ title: VDM documentation
 | hl7_table_38_order_status | 6 | Hl7 Table 38 Order Status | {::nomarkdown}This field is for documenting purposes and contains the related Table 38<br/>order status from HL7 for each activity.{:/} | STRING |  |  |  | 
 | action_print_name | 7 | Action Print Name | {::nomarkdown}This field is used on the 513 Form as a header for comments.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

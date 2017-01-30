@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Clinical_Reminder_Parameters-800 
 
- property | value 
---- | --- 
- id | Clinical_Reminder_Parameters-800
- fmId | 800
- label | Clinical Reminder Parameters
- location | ^PXRM(800,
- description | {::nomarkdown}This file contains the parameters used by the Clinical Reminders<br/>package.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Clinical_Reminder_Parameters-800</dd>
+<dt>fmId</dt><dd>800</dd>
+<dt>label</dt><dd>Clinical Reminder Parameters</dd>
+<dt>location</dt><dd>^PXRM(800,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the parameters used by the Clinical Reminders<br/>package.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -38,10 +38,10 @@ title: VDM documentation
 
 ## <a name="Web_Sites-800_04"></a>Web_Sites-800_04 
 
- property | value 
---- | --- 
- id | Web_Sites-800_04
- label | Web Sites
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Web_Sites-800_04</dd>
+<dt>label</dt><dd>Web Sites</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -51,4 +51,4 @@ title: VDM documentation
 | web_site_title | .02 | Web Site Title | {::nomarkdown}This is the WEB SITE TITLE. This field is optional. If entered, this will <br/>display in the 'Reference Information' window of CPRS GUI instead of the <br/>full URL.{:/} | STRING |  |  |  | 
 | web_site_description | 1 | Web Site Description | {::nomarkdown}This is a description of the web site. It can be used to explain why<br/>the particular site is included. It is for reference information only<br/>and not displayed to the user.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

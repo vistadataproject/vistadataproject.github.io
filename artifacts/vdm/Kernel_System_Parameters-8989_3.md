@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Kernel_System_Parameters-8989_3 
 
- property | value 
---- | --- 
- id | Kernel_System_Parameters-8989_3
- fmId | 8989.3
- label | Kernel System Parameters
- location | ^XTV(8989.3,
- description | {::nomarkdown}This file holds the site parameters for this installation of the Kernel.<br/>It will have only one entry -- the domain name of the installation site.<br/>Some parameters are defined by the systems manager during the installation<br/>process.  These include Agence, volume set multiple, Default parameters.<br/>Others may be edited subsequent to installation. Spooling, response time,<br/>and audit parameters may be established.  Priorities may be set for<br/>interactive users and for TaskMan.  Defaults for fields such as timed<br/>read, auto menu, and ask device are defined for use when not otherwise<br/>specified for a user or device.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Kernel_System_Parameters-8989_3</dd>
+<dt>fmId</dt><dd>8989.3</dd>
+<dt>label</dt><dd>Kernel System Parameters</dd>
+<dt>location</dt><dd>^XTV(8989.3,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file holds the site parameters for this installation of the Kernel.<br/>It will have only one entry -- the domain name of the installation site.<br/>Some parameters are defined by the systems manager during the installation<br/>process.  These include Agence, volume set multiple, Default parameters.<br/>Others may be edited subsequent to installation. Spooling, response time,<br/>and audit parameters may be established.  Priorities may be set for<br/>interactive users and for TaskMan.  Defaults for fields such as timed<br/>read, auto menu, and ask device are defined for use when not otherwise<br/>specified for a user or device.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -100,10 +100,10 @@ title: VDM documentation
 
 ## <a name="Alpha_beta_Test_Package-8989_332"></a>Alpha_beta_Test_Package-8989_332 
 
- property | value 
---- | --- 
- id | Alpha_beta_Test_Package-8989_332
- label | Alpha/beta Test Package
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Alpha_beta_Test_Package-8989_332</dd>
+<dt>label</dt><dd>Alpha/beta Test Package</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -118,10 +118,10 @@ title: VDM documentation
 
 ## <a name="Alphabeta_Test_Option-8989_333"></a>Alphabeta_Test_Option-8989_333 
 
- property | value 
---- | --- 
- id | Alphabeta_Test_Option-8989_333
- label | Alpha,beta Test Option
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Alphabeta_Test_Option-8989_333</dd>
+<dt>label</dt><dd>Alpha,beta Test Option</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -132,10 +132,10 @@ title: VDM documentation
 
 ## <a name="Volume_Set-8989_304"></a>Volume_Set-8989_304 
 
- property | value 
---- | --- 
- id | Volume_Set-8989_304
- label | Volume Set
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Volume_Set-8989_304</dd>
+<dt>label</dt><dd>Volume Set</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -147,10 +147,10 @@ title: VDM documentation
 
 ## <a name="Terminal_Server_Ip-8989_305"></a>Terminal_Server_Ip-8989_305 
 
- property | value 
---- | --- 
- id | Terminal_Server_Ip-8989_305
- label | Terminal Server Ip
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Terminal_Server_Ip-8989_305</dd>
+<dt>label</dt><dd>Terminal Server Ip</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -160,4 +160,4 @@ title: VDM documentation
 | after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
 | last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

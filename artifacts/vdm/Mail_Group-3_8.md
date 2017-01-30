@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Mail_Group-3_8 
 
- property | value 
---- | --- 
- id | Mail_Group-3_8
- fmId | 3.8
- label | Mail Group
- location | ^XMB(3.8,
- description | {::nomarkdown}This file holds the names of all groups known to MailMan, and their<br/>members.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Mail_Group-3_8</dd>
+<dt>fmId</dt><dd>3.8</dd>
+<dt>label</dt><dd>Mail Group</dd>
+<dt>location</dt><dd>^XMB(3.8,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file holds the names of all groups known to MailMan, and their<br/>members.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -36,10 +36,10 @@ title: VDM documentation
 
 ## <a name="Member-3_81"></a>Member-3_81 
 
- property | value 
---- | --- 
- id | Member-3_81
- label | Member
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Member-3_81</dd>
+<dt>label</dt><dd>Member</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -50,10 +50,10 @@ title: VDM documentation
 
 ## <a name="Member_Groups-3_811"></a>Member_Groups-3_811 
 
- property | value 
---- | --- 
- id | Member_Groups-3_811
- label | Member Groups
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Member_Groups-3_811</dd>
+<dt>label</dt><dd>Member Groups</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -62,4 +62,4 @@ title: VDM documentation
 | member_group_name | .01 | Member Group Name | {::nomarkdown}This is a pointer to another entry in this Mail Group file.<br/>See the description of the multiple for more information.{:/} | POINTER |  | REQUIRED, INDEXED | Mail_Group-3_8 | 
 | type-1 | 1 | Type | {::nomarkdown}This field indicates what type of recipient this is.<br/><br/>If this field has nothing in it, it indicates that this recipient is<br/>a primary recipient, and may reply.<br/><br/>CC:  indicates that the recipient is being sent a copy, but is not the<br/>primary recipient.  The recipient may reply.<br/><br/>INFO: indicates that the recipient may not reply to the message; the<br/>message is being transmitted to the recipient for information purposes<br/>only.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>C</dt><dd>CC</dd><dt>I</dt><dd>INFO</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Display_Group-100_98 
 
- property | value 
---- | --- 
- id | Display_Group-100_98
- fmId | 100.98
- label | Display Group
- location | ^ORD(100.98,
- description | {::nomarkdown}This file allows orders to be clustered in groups other than by package.<br/>It is similar in structure to the OPTION File (19).  This allows display<br/>groups to be arranged in a hierarchy.  The main entry in this file<br/>should be 'ALL SERVICES'.  Other entries should be logically subordinate<br/>to the 'ALL SERVICES' entry.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Display_Group-100_98</dd>
+<dt>fmId</dt><dd>100.98</dd>
+<dt>label</dt><dd>Display Group</dd>
+<dt>location</dt><dd>^ORD(100.98,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file allows orders to be clustered in groups other than by package.<br/>It is similar in structure to the OPTION File (19).  This allows display<br/>groups to be arranged in a hierarchy.  The main entry in this file<br/>should be 'ALL SERVICES'.  Other entries should be logically subordinate<br/>to the 'ALL SERVICES' entry.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -25,10 +25,10 @@ title: VDM documentation
 
 ## <a name="Member-100_981"></a>Member-100_981 
 
- property | value 
---- | --- 
- id | Member-100_981
- label | Member
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Member-100_981</dd>
+<dt>label</dt><dd>Member</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -37,4 +37,4 @@ title: VDM documentation
 | sequence | .001 | Sequence | {::nomarkdown}This is the sequence of the member in the display group for reporting<br/>purposes.{:/} | IEN |  |  |  | 
 | member | .01 | Member | {::nomarkdown}This is a display group listed in the NAME field. (This is similar to a<br/>menu item in the OPTION File.){:/} | POINTER |  | REQUIRED, INDEXED | Display_Group-100_98 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

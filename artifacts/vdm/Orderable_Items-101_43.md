@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Orderable_Items-101_43 
 
- property | value 
---- | --- 
- id | Orderable_Items-101_43
- fmId | 101.43
- label | Orderable Items
- location | ^ORD(101.43,
- description | {::nomarkdown}This file contains the orderable items for use within OE/RR.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Orderable_Items-101_43</dd>
+<dt>fmId</dt><dd>101.43</dd>
+<dt>label</dt><dd>Orderable Items</dd>
+<dt>location</dt><dd>^ORD(101.43,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the orderable items for use within OE/RR.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -59,10 +59,10 @@ title: VDM documentation
 
 ## <a name="Set_Membership-101_439"></a>Set_Membership-101_439 
 
- property | value 
---- | --- 
- id | Set_Membership-101_439
- label | Set Membership
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Set_Membership-101_439</dd>
+<dt>label</dt><dd>Set Membership</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -73,10 +73,10 @@ title: VDM documentation
 
 ## <a name="Components-101_431"></a>Components-101_431 
 
- property | value 
---- | --- 
- id | Components-101_431
- label | Components
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Components-101_431</dd>
+<dt>label</dt><dd>Components</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -87,4 +87,4 @@ title: VDM documentation
 | code | 3 | Code | {::nomarkdown}This is the code assigned to this item by the authoritative package from a<br/>national standard coding system such as CPT or SNOMED.{:/} | STRING |  |  |  | 
 | coding_system | 4 | Coding System | {::nomarkdown}This is the system used to generate the code assigned in field 3.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>NDF</dt><dd>NATIONAL DRUG FILE</dd><dt>CPT4</dt><dd>CPT4</dd><dt>NLT</dt><dd>NATIONAL LAB TEST FILE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

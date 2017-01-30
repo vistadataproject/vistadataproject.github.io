@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Ndc_upn-50_67 
 
- property | value 
---- | --- 
- id | Ndc_upn-50_67
- fmId | 50.67
- label | Ndc/upn
- location | ^PSNDF(50.67,
- description | {::nomarkdown}This file contains a list of National Drug Codes (NDCs) and Universal<br/>Product Numbers (UPNs).{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Ndc_upn-50_67</dd>
+<dt>fmId</dt><dd>50.67</dd>
+<dt>label</dt><dd>Ndc/upn</dd>
+<dt>location</dt><dd>^PSNDF(50.67,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains a list of National Drug Codes (NDCs) and Universal<br/>Product Numbers (UPNs).{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -31,4 +31,4 @@ title: VDM documentation
 | previous_ndc | 11 | Previous Ndc |  | [STRING] |  |  |  | 
 | previous_upn | 12 | Previous Upn |  | [STRING] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

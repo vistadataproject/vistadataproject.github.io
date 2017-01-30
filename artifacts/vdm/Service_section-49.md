@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Service_section-49 
 
- property | value 
---- | --- 
- id | Service_section-49
- fmId | 49
- label | Service/section
- location | ^DIC(49,
- description | {::nomarkdown}This file is a list of the services and sections within the services.<br/>Some of the entries may be 'MIS COSTING SECTIONS' for use with the<br/>cost accounting part of the Management Information System software.<br/>A section is an MIS section if there is a code entered in the field<br/>called MIS COSTING CODE.  In the cost accounting system all medical<br/>center costs will be tied to a particular section.  When MIS sections<br/>change, do not delete the old section.  Instead, change the fields under<br/>the multiple field called \DATE CLOSED\ to identify which sections are<br/>no longer in use.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Service_section-49</dd>
+<dt>fmId</dt><dd>49</dd>
+<dt>label</dt><dd>Service/section</dd>
+<dt>location</dt><dd>^DIC(49,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file is a list of the services and sections within the services.<br/>Some of the entries may be 'MIS COSTING SECTIONS' for use with the<br/>cost accounting part of the Management Information System software.<br/>A section is an MIS section if there is a code entered in the field<br/>called MIS COSTING CODE.  In the cost accounting system all medical<br/>center costs will be tied to a particular section.  When MIS sections<br/>change, do not delete the old section.  Instead, change the fields under<br/>the multiple field called \DATE CLOSED\ to identify which sections are<br/>no longer in use.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -38,10 +38,10 @@ title: VDM documentation
 
 ## <a name="Date_Closed-49_07"></a>Date_Closed-49_07 
 
- property | value 
---- | --- 
- id | Date_Closed-49_07
- label | Date Closed
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Date_Closed-49_07</dd>
+<dt>label</dt><dd>Date Closed</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -50,4 +50,4 @@ title: VDM documentation
 | date_closed | .01 | Date Closed | {::nomarkdown}This field contains a date/time when this service or section closed for<br/>hospital use.{:/} | DATE-TIME |  | REQUIRED |  | 
 | date_reopened | 1 | Date Re-opened | {::nomarkdown}This field contains a date/time when this closed service or section<br/>was reopened for hospital use.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

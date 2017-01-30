@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Help_Frame-9_2 
 
- property | value 
---- | --- 
- id | Help_Frame-9_2
- fmId | 9.2
- label | Help Frame
- location | ^DIC(9.2,
- description | {::nomarkdown}This file contains the text of help frames created via the Help<br/>Processor (XQH).  Help frames may be associated with options or with<br/>data dictionary fields to provide on-line instruction.  The file<br/>is cross-referenced by name, header, date entered, author, and editor.<br/><br/><br/>{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Help_Frame-9_2</dd>
+<dt>fmId</dt><dd>9.2</dd>
+<dt>label</dt><dd>Help Frame</dd>
+<dt>location</dt><dd>^DIC(9.2,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the text of help frames created via the Help<br/>Processor (XQH).  Help frames may be associated with options or with<br/>data dictionary fields to provide on-line instruction.  The file<br/>is cross-referenced by name, header, date entered, author, and editor.<br/><br/><br/>{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -32,10 +32,10 @@ title: VDM documentation
 
 ## <a name="Related_Frame-9_22"></a>Related_Frame-9_22 
 
- property | value 
---- | --- 
- id | Related_Frame-9_22
- label | Related Frame
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Related_Frame-9_22</dd>
+<dt>label</dt><dd>Related Frame</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -44,4 +44,4 @@ title: VDM documentation
 | related_frame_keyword | .01 | Related Frame Keyword | {::nomarkdown}A keyword appears in the text surrounded by brackets.  When the user<br/>enters the keyword, a related frame will be displayed with more detailed<br/>information on the topic suggested by the keyword.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | related_frame | 1 | Related Frame | {::nomarkdown}The internal name of another help-frame which can be invoked by the<br/>keyword to obtain more detailed information on a sub-topic.{:/} | POINTER |  | INDEXED | Help_Frame-9_2 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

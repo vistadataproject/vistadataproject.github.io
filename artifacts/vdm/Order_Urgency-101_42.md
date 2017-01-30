@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Order_Urgency-101_42 
 
- property | value 
---- | --- 
- id | Order_Urgency-101_42
- fmId | 101.42
- label | Order Urgency
- location | ^ORD(101.42,
- description | {::nomarkdown}This file contains the urgencies available to assign to an order.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Order_Urgency-101_42</dd>
+<dt>fmId</dt><dd>101.42</dd>
+<dt>label</dt><dd>Order Urgency</dd>
+<dt>location</dt><dd>^ORD(101.42,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the urgencies available to assign to an order.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -21,4 +21,4 @@ title: VDM documentation
 | usage | 1 | Usage | {::nomarkdown}This multiple contains all the possible ways to use this urgency.{:/} | [STRING] |  |  |  | 
 | abbreviation | 2 | Abbreviation | {::nomarkdown}This field contains the abbreviation to be used in HL7 messages and some<br/>displays.{:/} | STRING |  | INDEXED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; TIU_Personal_Document_Type_List-8925_98 
 
- property | value 
---- | --- 
- id | TIU_Personal_Document_Type_List-8925_98
- fmId | 8925.98
- label | TIU Personal Document Type List
- location | ^TIU(8925.98,
- description | {::nomarkdown}This file is used to store \pick-lists\ of documents (by class), for<br/>selection by the user.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>TIU_Personal_Document_Type_List-8925_98</dd>
+<dt>fmId</dt><dd>8925.98</dd>
+<dt>label</dt><dd>TIU Personal Document Type List</dd>
+<dt>location</dt><dd>^TIU(8925.98,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file is used to store \pick-lists\ of documents (by class), for<br/>selection by the user.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -25,10 +25,10 @@ title: VDM documentation
 
 ## <a name="Personal_Document_List-8925_9801"></a>Personal_Document_List-8925_9801 
 
- property | value 
---- | --- 
- id | Personal_Document_List-8925_9801
- label | Personal Document List
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Personal_Document_List-8925_9801</dd>
+<dt>label</dt><dd>Personal Document List</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -38,4 +38,4 @@ title: VDM documentation
 | sequence | .02 | Sequence | {::nomarkdown}This is the sequence in which you wish the document to appear in your<br/>list.{:/} | NUMERIC |  |  |  | 
 | display_name | .03 | Display Name | {::nomarkdown}This is the name of the document to be displayed in menus.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

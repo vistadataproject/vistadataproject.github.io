@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Hl7_Message_Exceptions-79_3 
 
- property | value 
---- | --- 
- id | Hl7_Message_Exceptions-79_3
- fmId | 79.3
- label | Hl7 Message Exceptions
- location | ^RA(79.3,
- description | 
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Hl7_Message_Exceptions-79_3</dd>
+<dt>fmId</dt><dd>79.3</dd>
+<dt>label</dt><dd>Hl7 Message Exceptions</dd>
+<dt>location</dt><dd>^RA(79.3,</dd>
+<dt>description</dt><dd></dd>
+</dl>{:/}
 
 ### Properties
 
@@ -25,4 +25,4 @@ title: VDM documentation
 | user | .06 | User | {::nomarkdown}This is the name of the radiology user linked to the message exception{:/} | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
 | error | 1 | Error | {::nomarkdown}This is the reason that this message was rejected.{:/} | STRING |  | REQUIRED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

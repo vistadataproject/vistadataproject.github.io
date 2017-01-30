@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Collection_Sample-62 
 
- property | value 
---- | --- 
- id | Collection_Sample-62
- fmId | 62
- label | Collection Sample
- location | ^LAB(62,
- description | {::nomarkdown}Collection samples for laboratory specimens.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Collection_Sample-62</dd>
+<dt>fmId</dt><dd>62</dd>
+<dt>label</dt><dd>Collection Sample</dd>
+<dt>location</dt><dd>^LAB(62,</dd>
+<dt>description</dt><dd>{::nomarkdown}Collection samples for laboratory specimens.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -34,10 +34,10 @@ title: VDM documentation
 
 ## <a name="Sct_Status_Date-62_023"></a>Sct_Status_Date-62_023 
 
- property | value 
---- | --- 
- id | Sct_Status_Date-62_023
- label | Sct Status Date
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Sct_Status_Date-62_023</dd>
+<dt>label</dt><dd>Sct Status Date</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -51,10 +51,10 @@ title: VDM documentation
 
 ## <a name="Collection_Wkld_Code-62_02"></a>Collection_Wkld_Code-62_02 
 
- property | value 
---- | --- 
- id | Collection_Wkld_Code-62_02
- label | Collection Wkld Code
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Collection_Wkld_Code-62_02</dd>
+<dt>label</dt><dd>Collection Wkld Code</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -63,4 +63,4 @@ title: VDM documentation
 | accession_area | .01 | Accession Area | {::nomarkdown}  Which accession area does the test belong that you want have<br/>accession WKLD codes triggered.{:/} | POINTER |  | REQUIRED | Accession-68 | 
 | lab_test | 1 | Lab Test | {::nomarkdown} Enter a list of lab test that should trigger workload capture.{:/} | [OBJECT] |  |  | {id:Lab_Test-62_21,fmId:62.21,label:Lab Test,properties:[{id:lab_test,fmId:.01,label:Lab Test,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:wkld_code,fmId:1,label:Wkld Code,description:  Enter a list of WKLD code you wish to have counted when this\rtest is accessioned. This is an alternate point for entering\raccession WKLD codes.  It is simular to accession WKLD codes but\ris by accession area and test.\r   This field is to be used when it is not desirable to enter\rcollection samples to a test in file 60 (LABORATORY TEST). It\ris particularly useful in Microbioloby type test.,datatype:[OBJECT],range:{id:Wkld_Code-62_211,fmId:62.211,label:Wkld Code,properties:[{id:wkld_code,fmId:.01,label:Wkld Code,description: Enter the WKLD code for thi,datatype:POINTER,required:true,range:{id:Wkld_Code-64}},{id:test_multiply_factor,fmId:2,label:Test Multiply Factor,description:  This field contains the a number by which the count\rshould be multiplied by.,datatype:NUMERIC}]}}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

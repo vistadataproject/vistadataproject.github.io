@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; New_Person-200 
 
- property | value 
---- | --- 
- id | New_Person-200
- fmId | 200
- label | New Person
- location | ^VA(200,
- description | {::nomarkdown}This file contains data on employees, users, practitioners, etc.<br/>who were previously in Files 3,6,16 and others.<br/> <br/>DHCP packages must check with the KERNEL developers to see that<br/>a given number/namespace is clear for them to use.<br/> <br/>Field numbers 53-59.9 reserved for Pharm.<br/> Nodes and X-ref 'PS*'.<br/>Field numbers 70-79.9 reserved for Radiology<br/> Nodes and X-ref 'RA*'.<br/>Field numbers 720-725 reserved for DSSM<br/> Nodes and X-ref 'EC*' and 'AEC*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 654-654.9 reserved for Social work<br/> Node 654 and X-ref 'SW*'.<br/>Field numbers 500-500.9 reserved for mailman<br/> Node 500 and X-ref 'XM*' and 'AXM*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 910-910.9 reserved for Police Package<br/> Node and X-ref 'ESP'{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>New_Person-200</dd>
+<dt>fmId</dt><dd>200</dd>
+<dt>label</dt><dd>New Person</dd>
+<dt>location</dt><dd>^VA(200,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains data on employees, users, practitioners, etc.<br/>who were previously in Files 3,6,16 and others.<br/> <br/>DHCP packages must check with the KERNEL developers to see that<br/>a given number/namespace is clear for them to use.<br/> <br/>Field numbers 53-59.9 reserved for Pharm.<br/> Nodes and X-ref 'PS*'.<br/>Field numbers 70-79.9 reserved for Radiology<br/> Nodes and X-ref 'RA*'.<br/>Field numbers 720-725 reserved for DSSM<br/> Nodes and X-ref 'EC*' and 'AEC*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 654-654.9 reserved for Social work<br/> Node 654 and X-ref 'SW*'.<br/>Field numbers 500-500.9 reserved for mailman<br/> Node 500 and X-ref 'XM*' and 'AXM*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 910-910.9 reserved for Police Package<br/> Node and X-ref 'ESP'{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -213,10 +213,10 @@ title: VDM documentation
 
 ## <a name="User_Class-200_07"></a>User_Class-200_07 
 
- property | value 
---- | --- 
- id | User_Class-200_07
- label | User Class
+{::nomarkdown}<dl>
+<dt>id</dt><dd>User_Class-200_07</dd>
+<dt>label</dt><dd>User Class</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -227,10 +227,10 @@ title: VDM documentation
 
 ## <a name="Division-200_02"></a>Division-200_02 
 
- property | value 
---- | --- 
- id | Division-200_02
- label | Division
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Division-200_02</dd>
+<dt>label</dt><dd>Division</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -241,10 +241,10 @@ title: VDM documentation
 
 ## <a name="Alert_Date_Time-200_194"></a>Alert_Date_Time-200_194 
 
- property | value 
---- | --- 
- id | Alert_Date_Time-200_194
- label | Alert Date Time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Alert_Date_Time-200_194</dd>
+<dt>label</dt><dd>Alert Date Time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -264,10 +264,10 @@ title: VDM documentation
 
 ## <a name="Delegated_Options-200_19"></a>Delegated_Options-200_19 
 
- property | value 
---- | --- 
- id | Delegated_Options-200_19
- label | Delegated Options
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Delegated_Options-200_19</dd>
+<dt>label</dt><dd>Delegated Options</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -280,10 +280,10 @@ title: VDM documentation
 
 ## <a name="Menu_Template-200_198"></a>Menu_Template-200_198 
 
- property | value 
---- | --- 
- id | Menu_Template-200_198
- label | Menu Template
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Menu_Template-200_198</dd>
+<dt>label</dt><dd>Menu Template</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -294,10 +294,10 @@ title: VDM documentation
 
 ## <a name="Uci-200_01"></a>Uci-200_01 
 
- property | value 
---- | --- 
- id | Uci-200_01
- label | Uci
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Uci-200_01</dd>
+<dt>label</dt><dd>Uci</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -308,10 +308,10 @@ title: VDM documentation
 
 ## <a name="Accessible_File-200_032"></a>Accessible_File-200_032 
 
- property | value 
---- | --- 
- id | Accessible_File-200_032
- label | Accessible File
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Accessible_File-200_032</dd>
+<dt>label</dt><dd>Accessible File</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -328,10 +328,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-200_042"></a>Effective_Date_time-200_042 
 
- property | value 
---- | --- 
- id | Effective_Date_time-200_042
- label | Effective Date/time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Effective_Date_time-200_042</dd>
+<dt>label</dt><dd>Effective Date/time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -343,10 +343,10 @@ title: VDM documentation
 
 ## <a name="Keys-200_051"></a>Keys-200_051 
 
- property | value 
---- | --- 
- id | Keys-200_051
- label | Keys
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Keys-200_051</dd>
+<dt>label</dt><dd>Keys</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -359,10 +359,10 @@ title: VDM documentation
 
 ## <a name="Delegated_Keys-200_052"></a>Delegated_Keys-200_052 
 
- property | value 
---- | --- 
- id | Delegated_Keys-200_052
- label | Delegated Keys
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Delegated_Keys-200_052</dd>
+<dt>label</dt><dd>Delegated Keys</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -375,10 +375,10 @@ title: VDM documentation
 
 ## <a name="Licensing_State-200_541"></a>Licensing_State-200_541 
 
- property | value 
---- | --- 
- id | Licensing_State-200_541
- label | Licensing State
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Licensing_State-200_541</dd>
+<dt>label</dt><dd>Licensing State</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -390,10 +390,10 @@ title: VDM documentation
 
 ## <a name="State_Issuing_Dea_Number-200_55"></a>State_Issuing_Dea_Number-200_55 
 
- property | value 
---- | --- 
- id | State_Issuing_Dea_Number-200_55
- label | State Issuing Dea Number
+{::nomarkdown}<dl>
+<dt>id</dt><dd>State_Issuing_Dea_Number-200_55</dd>
+<dt>label</dt><dd>State Issuing Dea Number</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -404,10 +404,10 @@ title: VDM documentation
 
 ## <a name="Cprs_Tab-200_010113"></a>Cprs_Tab-200_010113 
 
- property | value 
---- | --- 
- id | Cprs_Tab-200_010113
- label | Cprs Tab
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Cprs_Tab-200_010113</dd>
+<dt>label</dt><dd>Cprs Tab</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -419,10 +419,10 @@ title: VDM documentation
 
 ## <a name="Secondary_Menu_Options-200_03"></a>Secondary_Menu_Options-200_03 
 
- property | value 
---- | --- 
- id | Secondary_Menu_Options-200_03
- label | Secondary Menu Options
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Secondary_Menu_Options-200_03</dd>
+<dt>label</dt><dd>Secondary Menu Options</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -433,10 +433,10 @@ title: VDM documentation
 
 ## <a name="Personal_Diagnoses_List-200_0351"></a>Personal_Diagnoses_List-200_0351 
 
- property | value 
---- | --- 
- id | Personal_Diagnoses_List-200_0351
- label | Personal Diagnoses List
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Personal_Diagnoses_List-200_0351</dd>
+<dt>label</dt><dd>Personal Diagnoses List</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -447,10 +447,10 @@ title: VDM documentation
 
 ## <a name="Network_Address-200_005"></a>Network_Address-200_005 
 
- property | value 
---- | --- 
- id | Network_Address-200_005
- label | Network Address
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Network_Address-200_005</dd>
+<dt>label</dt><dd>Network Address</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -473,10 +473,10 @@ title: VDM documentation
 
 ## <a name="Visited_From-200_06"></a>Visited_From-200_06 
 
- property | value 
---- | --- 
- id | Visited_From-200_06
- label | Visited From
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Visited_From-200_06</dd>
+<dt>label</dt><dd>Visited From</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -491,10 +491,10 @@ title: VDM documentation
 
 ## <a name="Person_Class-200_05"></a>Person_Class-200_05 
 
- property | value 
---- | --- 
- id | Person_Class-200_05
- label | Person Class
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Person_Class-200_05</dd>
+<dt>label</dt><dd>Person Class</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -506,10 +506,10 @@ title: VDM documentation
 
 ## <a name="Defined_Formats_For_Lm-200_0089832"></a>Defined_Formats_For_Lm-200_0089832 
 
- property | value 
---- | --- 
- id | Defined_Formats_For_Lm-200_0089832
- label | Defined Formats For Lm
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Defined_Formats_For_Lm-200_0089832</dd>
+<dt>label</dt><dd>Defined Formats For Lm</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -521,10 +521,10 @@ title: VDM documentation
 
 ## <a name="Defined_Phrases_For_Lm-200_0089833"></a>Defined_Phrases_For_Lm-200_0089833 
 
- property | value 
---- | --- 
- id | Defined_Phrases_For_Lm-200_0089833
- label | Defined Phrases For Lm
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Defined_Phrases_For_Lm-200_0089833</dd>
+<dt>label</dt><dd>Defined Phrases For Lm</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -533,4 +533,4 @@ title: VDM documentation
 | keyword | .01 | Keyword | {::nomarkdown}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_List-100_21 
 
- property | value 
---- | --- 
- id | Oe_rr_List-100_21
- fmId | 100.21
- label | Oe/rr List
- location | ^OR(100.21,
- description | {::nomarkdown}This file contains data related to lists.  Generally these lists take the<br/>form of provider(s)/patients.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Oe_rr_List-100_21</dd>
+<dt>fmId</dt><dd>100.21</dd>
+<dt>label</dt><dd>Oe/rr List</dd>
+<dt>location</dt><dd>^OR(100.21,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains data related to lists.  Generally these lists take the<br/>form of provider(s)/patients.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -31,10 +31,10 @@ title: VDM documentation
 
 ## <a name="User-100_212"></a>User-100_212 
 
- property | value 
---- | --- 
- id | User-100_212
- label | User
+{::nomarkdown}<dl>
+<dt>id</dt><dd>User-100_212</dd>
+<dt>label</dt><dd>User</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -45,10 +45,10 @@ title: VDM documentation
 
 ## <a name="Autolink-100_213"></a>Autolink-100_213 
 
- property | value 
---- | --- 
- id | Autolink-100_213
- label | Autolink
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Autolink-100_213</dd>
+<dt>label</dt><dd>Autolink</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -59,10 +59,10 @@ title: VDM documentation
 
 ## <a name="Member-100_2101"></a>Member-100_2101 
 
- property | value 
---- | --- 
- id | Member-100_2101
- label | Member
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Member-100_2101</dd>
+<dt>label</dt><dd>Member</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -72,4 +72,4 @@ title: VDM documentation
 | view_date_time | 1 | View Date/time | {::nomarkdown}This is the date/time this item was last viewed.{:/} | DATE-TIME |  |  |  | 
 | notification_selection | 2 | *notification Selection | {::nomarkdown}This field is unused and will be deleted post-CPRS 1.{:/} | [POINTER] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

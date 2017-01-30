@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Laboratory_Test-60 
 
- property | value 
---- | --- 
- id | Laboratory_Test-60
- fmId | 60
- label | Laboratory Test
- location | ^LAB(60,
- description | {::nomarkdown}This is the file that holds the names and ordering, display of tests.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Laboratory_Test-60</dd>
+<dt>fmId</dt><dd>60</dd>
+<dt>label</dt><dd>Laboratory Test</dd>
+<dt>location</dt><dd>^LAB(60,</dd>
+<dt>description</dt><dd>{::nomarkdown}This is the file that holds the names and ordering, display of tests.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -66,10 +66,10 @@ title: VDM documentation
 
 ## <a name="Accession_Area-60_11"></a>Accession_Area-60_11 
 
- property | value 
---- | --- 
- id | Accession_Area-60_11
- label | Accession Area
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Accession_Area-60_11</dd>
+<dt>label</dt><dd>Accession Area</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -80,10 +80,10 @@ title: VDM documentation
 
 ## <a name="Site_specimen-60_01"></a>Site_specimen-60_01 
 
- property | value 
---- | --- 
- id | Site_specimen-60_01
- label | Site/specimen
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Site_specimen-60_01</dd>
+<dt>label</dt><dd>Site/specimen</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -109,10 +109,10 @@ title: VDM documentation
 
 ## <a name="Lab_Test_Included_In_Panel-60_02"></a>Lab_Test_Included_In_Panel-60_02 
 
- property | value 
---- | --- 
- id | Lab_Test_Included_In_Panel-60_02
- label | Lab Test Included In Panel
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Lab_Test_Included_In_Panel-60_02</dd>
+<dt>label</dt><dd>Lab Test Included In Panel</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -124,10 +124,10 @@ title: VDM documentation
 
 ## <a name="Collection_Sample-60_03"></a>Collection_Sample-60_03 
 
- property | value 
---- | --- 
- id | Collection_Sample-60_03
- label | Collection Sample
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Collection_Sample-60_03</dd>
+<dt>label</dt><dd>Collection Sample</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -145,10 +145,10 @@ title: VDM documentation
 
 ## <a name="Verify_Wkld_Code-60_12"></a>Verify_Wkld_Code-60_12 
 
- property | value 
---- | --- 
- id | Verify_Wkld_Code-60_12
- label | Verify Wkld Code
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Verify_Wkld_Code-60_12</dd>
+<dt>label</dt><dd>Verify Wkld Code</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -161,10 +161,10 @@ title: VDM documentation
 
 ## <a name="Accession_Wkld_Code-60_13"></a>Accession_Wkld_Code-60_13 
 
- property | value 
---- | --- 
- id | Accession_Wkld_Code-60_13
- label | Accession Wkld Code
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Accession_Wkld_Code-60_13</dd>
+<dt>label</dt><dd>Accession Wkld Code</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -176,10 +176,10 @@ title: VDM documentation
 
 ## <a name="Site_Notes_Date-60_0505"></a>Site_Notes_Date-60_0505 
 
- property | value 
---- | --- 
- id | Site_Notes_Date-60_0505
- label | Site Notes Date
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Site_Notes_Date-60_0505</dd>
+<dt>label</dt><dd>Site Notes Date</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -188,4 +188,4 @@ title: VDM documentation
 | site_notes_date | .01 | Site Notes Date | {::nomarkdown}Date of the note.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

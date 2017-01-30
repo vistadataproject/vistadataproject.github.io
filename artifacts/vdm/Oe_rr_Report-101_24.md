@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_Report-101_24 
 
- property | value 
---- | --- 
- id | Oe_rr_Report-101_24
- fmId | 101.24
- label | Oe/rr Report
- location | ^ORD(101.24,
- description | {::nomarkdown}This file contains definitions and parameters used in various reports<br/>within CPRS.<br/> <br/>Entry numbers >1000 are reserved for national use.  Any local entries<br/>should be added to a number <1000.  If this convention is not followed,<br/>you run the risk of having your local entries overwritten by a patch<br/>or future release of CPRS.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Oe_rr_Report-101_24</dd>
+<dt>fmId</dt><dd>101.24</dd>
+<dt>label</dt><dd>Oe/rr Report</dd>
+<dt>location</dt><dd>^ORD(101.24,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains definitions and parameters used in various reports<br/>within CPRS.<br/> <br/>Entry numbers >1000 are reserved for national use.  Any local entries<br/>should be added to a number <1000.  If this convention is not followed,<br/>you run the risk of having your local entries overwritten by a patch<br/>or future release of CPRS.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -63,10 +63,10 @@ title: VDM documentation
 
 ## <a name="Column_Headers-101_243"></a>Column_Headers-101_243 
 
- property | value 
---- | --- 
- id | Column_Headers-101_243
- label | Column Headers
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Column_Headers-101_243</dd>
+<dt>label</dt><dd>Column Headers</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -86,10 +86,10 @@ title: VDM documentation
 
 ## <a name="Item-101_241"></a>Item-101_241 
 
- property | value 
---- | --- 
- id | Item-101_241
- label | Item
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Item-101_241</dd>
+<dt>label</dt><dd>Item</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -99,4 +99,4 @@ title: VDM documentation
 | header_text | .02 | Header Text | {::nomarkdown}This is the header to be used.{:/} | STRING |  |  |  | 
 | sequence | .03 | Sequence | {::nomarkdown}This is the sequence number for this report.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Immunization-9999999_14 
 
- property | value 
---- | --- 
- id | Immunization-9999999_14
- fmId | 9999999.14
- label | Immunization
- location | ^AUTTIMM(
- description | {::nomarkdown}Per VHA Directive, this file has been \locked down\ by Data <br/>Standardization (DS). The file definition (i.e. data dictionary) shall <br/>not be modified. All additions, changes and deletions to entries in the<br/>file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by the Common Services (CS). Creating<br/>and/or editing locally defined fields in the file are not permitted. Use<br/>of locally defined fields that were created prior to the VHA Directive<br/>shall not be supported.<br/> <br/>In order to preserve the continuity of files shared by the Indian Health<br/>Service and the Department of Veterans Affairs, this file includes<br/>fields used by Indian Health Service that will not be used by the<br/>Department of Veterans Affairs. These fields may point to other files<br/>and routines not deployed by the Department of Veterans Affairs.<br/>Inclusion of these fields, as designed, was approved by the DBA. These<br/>fields were initially introduced with the release of the VISTA<br/>IMMUNIZATION ENHANCEMENTS 1.0 (PX*1*201) for the VistA Immunization<br/>Enhancements Project. Additional fields may be included in later<br/>enhancements.<br/>  <br/>This file is a list of Immunizations and associated codes developed<br/>specifically for use in the IHS. This file contains a full descriptive <br/>name for each Immunization, plus a shortened name of Ten Characters <br/>which is used on the Health Summary and on reports where space is <br/>limited, plus a Two Digit Code for each Immunization.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Immunization-9999999_14</dd>
+<dt>fmId</dt><dd>9999999.14</dd>
+<dt>label</dt><dd>Immunization</dd>
+<dt>location</dt><dd>^AUTTIMM(</dd>
+<dt>description</dt><dd>{::nomarkdown}Per VHA Directive, this file has been \locked down\ by Data <br/>Standardization (DS). The file definition (i.e. data dictionary) shall <br/>not be modified. All additions, changes and deletions to entries in the<br/>file shall be done by Enterprise Reference Terminology (ERT) using the<br/>Master File Server (MFS), provided by the Common Services (CS). Creating<br/>and/or editing locally defined fields in the file are not permitted. Use<br/>of locally defined fields that were created prior to the VHA Directive<br/>shall not be supported.<br/> <br/>In order to preserve the continuity of files shared by the Indian Health<br/>Service and the Department of Veterans Affairs, this file includes<br/>fields used by Indian Health Service that will not be used by the<br/>Department of Veterans Affairs. These fields may point to other files<br/>and routines not deployed by the Department of Veterans Affairs.<br/>Inclusion of these fields, as designed, was approved by the DBA. These<br/>fields were initially introduced with the release of the VISTA<br/>IMMUNIZATION ENHANCEMENTS 1.0 (PX*1*201) for the VistA Immunization<br/>Enhancements Project. Additional fields may be included in later<br/>enhancements.<br/>  <br/>This file is a list of Immunizations and associated codes developed<br/>specifically for use in the IHS. This file contains a full descriptive <br/>name for each Immunization, plus a shortened name of Ten Characters <br/>which is used on the Health Summary and on reports where space is <br/>limited, plus a Two Digit Code for each Immunization.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -67,10 +67,10 @@ title: VDM documentation
 
 ## <a name="Coding_System-9999999_143"></a>Coding_System-9999999_143 
 
- property | value 
---- | --- 
- id | Coding_System-9999999_143
- label | Coding System
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Coding_System-9999999_143</dd>
+<dt>label</dt><dd>Coding System</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -81,10 +81,10 @@ title: VDM documentation
 
 ## <a name="Effective_Date_time-9999999_1499"></a>Effective_Date_time-9999999_1499 
 
- property | value 
---- | --- 
- id | Effective_Date_time-9999999_1499
- label | Effective Date/time
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Effective_Date_time-9999999_1499</dd>
+<dt>label</dt><dd>Effective Date/time</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -93,4 +93,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a<br/>particular patient event. If 'INACTIVE', then the term will only be<br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

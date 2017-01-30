@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_Release_Events-100_5 
 
- property | value 
---- | --- 
- id | Oe_rr_Release_Events-100_5
- fmId | 100.5
- label | Oe/rr Release Events
- location | ^ORD(100.5,
- description | {::nomarkdown}This file contains the locally-defined events that can release delayed<br/>orders within each division.<br/> <br/>It is strongly recommended that this file not be edited with<br/>File Manager.  Please use the edit options provided within CPRS.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Oe_rr_Release_Events-100_5</dd>
+<dt>fmId</dt><dd>100.5</dd>
+<dt>label</dt><dd>Oe/rr Release Events</dd>
+<dt>location</dt><dd>^ORD(100.5,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains the locally-defined events that can release delayed<br/>orders within each division.<br/> <br/>It is strongly recommended that this file not be edited with<br/>File Manager.  Please use the edit options provided within CPRS.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -37,10 +37,10 @@ title: VDM documentation
 
 ## <a name="Activation_History-100_52"></a>Activation_History-100_52 
 
- property | value 
---- | --- 
- id | Activation_History-100_52
- label | Activation History
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Activation_History-100_52</dd>
+<dt>label</dt><dd>Activation History</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -51,10 +51,10 @@ title: VDM documentation
 
 ## <a name="Included_Treating_Specialties-100_51"></a>Included_Treating_Specialties-100_51 
 
- property | value 
---- | --- 
- id | Included_Treating_Specialties-100_51
- label | Included Treating Specialties
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Included_Treating_Specialties-100_51</dd>
+<dt>label</dt><dd>Included Treating Specialties</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -65,10 +65,10 @@ title: VDM documentation
 
 ## <a name="Edit_History-100_512"></a>Edit_History-100_512 
 
- property | value 
---- | --- 
- id | Edit_History-100_512
- label | Edit History
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Edit_History-100_512</dd>
+<dt>label</dt><dd>Edit History</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -78,4 +78,4 @@ title: VDM documentation
 | who_entered_edited | 1 | Who Entered/edited | {::nomarkdown}This field identifies the person who entered or edited the event{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | action | 2 | Action | {::nomarkdown}This field describes whether the event was newly entered or if it<br/>was edited.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>E</dt><dd>EDIT</dd><dt>N</dt><dd>NEW</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

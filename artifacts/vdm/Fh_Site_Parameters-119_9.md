@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Fh_Site_Parameters-119_9 
 
- property | value 
---- | --- 
- id | Fh_Site_Parameters-119_9
- fmId | 119.9
- label | Fh Site Parameters
- location | ^FH(119.9,
- description | {::nomarkdown}This file contains an extensive set of site parameters designed to<br/>indicate characteristics of the Nutrition and Food Service and/or<br/>different methods by which the Service wishes the program to perform.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Fh_Site_Parameters-119_9</dd>
+<dt>fmId</dt><dd>119.9</dd>
+<dt>label</dt><dd>Fh Site Parameters</dd>
+<dt>location</dt><dd>^FH(119.9,</dd>
+<dt>description</dt><dd>{::nomarkdown}This file contains an extensive set of site parameters designed to<br/>indicate characteristics of the Nutrition and Food Service and/or<br/>different methods by which the Service wishes the program to perform.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -82,10 +82,10 @@ title: VDM documentation
 
 ## <a name="Label_Printers-119_93"></a>Label_Printers-119_93 
 
- property | value 
---- | --- 
- id | Label_Printers-119_93
- label | Label Printers
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Label_Printers-119_93</dd>
+<dt>label</dt><dd>Label Printers</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -96,10 +96,10 @@ title: VDM documentation
 
 ## <a name="Lab_Test-119_9001"></a>Lab_Test-119_9001 
 
- property | value 
---- | --- 
- id | Lab_Test-119_9001
- label | Lab Test
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Lab_Test-119_9001</dd>
+<dt>label</dt><dd>Lab Test</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -114,10 +114,10 @@ title: VDM documentation
 
 ## <a name="Drug_Classifications-119_985"></a>Drug_Classifications-119_985 
 
- property | value 
---- | --- 
- id | Drug_Classifications-119_985
- label | Drug Classifications
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Drug_Classifications-119_985</dd>
+<dt>label</dt><dd>Drug Classifications</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -129,4 +129,4 @@ title: VDM documentation
 | print_order | 5 | Print Order | {::nomarkdown}This is a print order of a specific Drug Classification.{:/} | NUMERIC |  |  |  | 
 | create_alert | 6 | Create Alert | {::nomarkdown}If set to YES, alert will be created for patient that is taking <br/>medication with this type of Drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

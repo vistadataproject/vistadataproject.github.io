@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Education_Topics-9999999_09 
 
- property | value 
---- | --- 
- id | Education_Topics-9999999_09
- fmId | 9999999.09
- label | Education Topics
- location | ^AUTTEDT(
- description | {::nomarkdown}This file defines the names of education topics to be tracked at your<br/>site. Education topics that are not to be used should be marked \Inactive\<br/>in the Active Status field.<br/> <br/>Changes to this data dictionary should be coordinated thru the IHS DBA.<br/> <br/>A x-ref on the MNEMONIC field was added to version 93.2.{:/}
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Education_Topics-9999999_09</dd>
+<dt>fmId</dt><dd>9999999.09</dd>
+<dt>label</dt><dd>Education Topics</dd>
+<dt>location</dt><dd>^AUTTEDT(</dd>
+<dt>description</dt><dd>{::nomarkdown}This file defines the names of education topics to be tracked at your<br/>site. Education topics that are not to be used should be marked \Inactive\<br/>in the Active Status field.<br/> <br/>Changes to this data dictionary should be coordinated thru the IHS DBA.<br/> <br/>A x-ref on the MNEMONIC field was added to version 93.2.{:/}</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -26,10 +26,10 @@ title: VDM documentation
 
 ## <a name="Subtopic-9999999_091001"></a>Subtopic-9999999_091001 
 
- property | value 
---- | --- 
- id | Subtopic-9999999_091001
- label | Subtopic
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Subtopic-9999999_091001</dd>
+<dt>label</dt><dd>Subtopic</dd>
+</dl>{:/}
 
 ### Properties
 
@@ -38,4 +38,4 @@ title: VDM documentation
 | subtopic | .01 | Subtopic |  | POINTER |  | REQUIRED, INDEXED | Education_Topics-9999999_09 | 
 | sequence | 3 | Sequence | {::nomarkdown}This field defines the sequence the item should be presented in, as it<br/>relates to other items making up the education topic.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}

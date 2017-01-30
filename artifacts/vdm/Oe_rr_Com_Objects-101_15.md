@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; Oe_rr_Com_Objects-101_15 
 
- property | value 
---- | --- 
- id | Oe_rr_Com_Objects-101_15
- fmId | 101.15
- label | Oe/rr Com Objects
- location | ^ORD(101.15,
- description | 
+{::nomarkdown}<dl>
+<dt>id</dt><dd>Oe_rr_Com_Objects-101_15</dd>
+<dt>fmId</dt><dd>101.15</dd>
+<dt>label</dt><dd>Oe/rr Com Objects</dd>
+<dt>location</dt><dd>^ORD(101.15,</dd>
+<dt>description</dt><dd></dd>
+</dl>{:/}
 
 ### Properties
 
@@ -23,4 +23,4 @@ title: VDM documentation
 | param1 | .04 | Param1 | {::nomarkdown}Optional parameter to pass to COM object as PARAM1 {:/} | STRING |  |  |  | 
 | description | 2 | Description | {::nomarkdown}Optional description of COM Object.  Should include any contact<br/>information for vendor or other provider of the COM Object.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 7:58:46 pm</p>{:/}
