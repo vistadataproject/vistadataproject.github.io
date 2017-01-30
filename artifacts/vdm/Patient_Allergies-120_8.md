@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>120.8</dd>
 <dt>label</dt><dd>Patient Allergies</dd>
 <dt>location</dt><dd>^GMR(120.8,</dd>
-<dt>description</dt><dd>{::nomarkdown}Contains patient allergy/adverse reaction information.{:/}</dd>
+<dt>description</dt><dd>}Contains patient allergy/adverse reaction information.</dd>
 </dl>
 
 ### Properties
@@ -100,4 +100,4 @@ title: VDM documentation
 | comment_type | 1.5 | Comment Type | {::nomarkdown}This field indicates the type of comments. If this field is<br/>answered \V\, then these comments are verifier entered.  If this field is<br/>answered \O\, then these are observer comments.  If this field is answered<br/>\E\, then these are entered in error comments.{:/} | ENUMERATION |  | INDEXED | {::nomarkdown}<dl><dt>O</dt><dd>OBSERVED</dd><dt>E</dt><dd>ERRORED</dd><dt>V</dt><dd>VERIFIED</dd></dl>{:/} | 
 | comments | 2 | Comments | {::nomarkdown}This field contains comments that were entered.<br/>                                            <br/>                                              {:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

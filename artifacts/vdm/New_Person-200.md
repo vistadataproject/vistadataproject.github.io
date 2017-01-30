@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>200</dd>
 <dt>label</dt><dd>New Person</dd>
 <dt>location</dt><dd>^VA(200,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains data on employees, users, practitioners, etc.<br/>who were previously in Files 3,6,16 and others.<br/> <br/>DHCP packages must check with the KERNEL developers to see that<br/>a given number/namespace is clear for them to use.<br/> <br/>Field numbers 53-59.9 reserved for Pharm.<br/> Nodes and X-ref 'PS*'.<br/>Field numbers 70-79.9 reserved for Radiology<br/> Nodes and X-ref 'RA*'.<br/>Field numbers 720-725 reserved for DSSM<br/> Nodes and X-ref 'EC*' and 'AEC*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 654-654.9 reserved for Social work<br/> Node 654 and X-ref 'SW*'.<br/>Field numbers 500-500.9 reserved for mailman<br/> Node 500 and X-ref 'XM*' and 'AXM*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 910-910.9 reserved for Police Package<br/> Node and X-ref 'ESP'{:/}</dd>
+<dt>description</dt><dd>}This file contains data on employees, users, practitioners, etc.<br/>who were previously in Files 3,6,16 and others.<br/> <br/>DHCP packages must check with the KERNEL developers to see that<br/>a given number/namespace is clear for them to use.<br/> <br/>Field numbers 53-59.9 reserved for Pharm.<br/> Nodes and X-ref 'PS*'.<br/>Field numbers 70-79.9 reserved for Radiology<br/> Nodes and X-ref 'RA*'.<br/>Field numbers 720-725 reserved for DSSM<br/> Nodes and X-ref 'EC*' and 'AEC*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 654-654.9 reserved for Social work<br/> Node 654 and X-ref 'SW*'.<br/>Field numbers 500-500.9 reserved for mailman<br/> Node 500 and X-ref 'XM*' and 'AXM*'.<br/>Field numbers 740-749.9 reserved for QA<br/> Nodes and X-ref 'QA*'.<br/>Field numbers 910-910.9 reserved for Police Package<br/> Node and X-ref 'ESP'</dd>
 </dl>
 
 ### Properties
@@ -533,4 +533,4 @@ title: VDM documentation
 | keyword | .01 | Keyword | {::nomarkdown}The predefined phrase 'keyword' used to select the phrase.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | phrase | 1 | Phrase | {::nomarkdown}The phrase to be inserted into the document.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

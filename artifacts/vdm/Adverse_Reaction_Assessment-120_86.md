@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>120.86</dd>
 <dt>label</dt><dd>Adverse Reaction Assessment</dd>
 <dt>location</dt><dd>^GMR(120.86,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file is a listing of all the patients who have been asked about<br/>allergies/adverse reactions. It contains a pointer to File 2 (PATIENT), a<br/>flag to indicate if the patient has or does not have an Allergy/Adverse<br/>Reaction, the person making the assessment and the date/time of the<br/>assessment.{:/}</dd>
+<dt>description</dt><dd>}This file is a listing of all the patients who have been asked about<br/>allergies/adverse reactions. It contains a pointer to File 2 (PATIENT), a<br/>flag to indicate if the patient has or does not have an Allergy/Adverse<br/>Reaction, the person making the assessment and the date/time of the<br/>assessment.</dd>
 </dl>
 
 ### Properties
@@ -22,4 +22,4 @@ title: VDM documentation
 | assessing_user | 2 | Assessing User | {::nomarkdown}This field contains the name of the user who made the last reaction<br/>assessment for this patient.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | assessment_date_time | 3 | Assessment Date/time | {::nomarkdown}This field contains the date/time of the last reaction assessment for<br/>this patient.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

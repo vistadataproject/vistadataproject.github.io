@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>34</dd>
 <dt>label</dt><dd>Contract/sharing Agreements</dd>
 <dt>location</dt><dd>^DIC(34,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains the Contract and Sharing agreements used in<br/>Radiology.{:/}</dd>
+<dt>description</dt><dd>}This file contains the Contract and Sharing agreements used in<br/>Radiology.</dd>
 </dl>
 
 ### Properties
@@ -21,4 +21,4 @@ title: VDM documentation
 | type_of_agreement | 2 | Type Of Agreement |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>S</dt><dd>SHARING</dd><dt>C</dt><dd>CONTRACT</dd></dl>{:/} | 
 | inactivation_date | 3 | Inactivation Date |  | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

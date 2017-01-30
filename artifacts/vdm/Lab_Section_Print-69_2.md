@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>69.2</dd>
 <dt>label</dt><dd>Lab Section Print</dd>
 <dt>location</dt><dd>^LRO(69.2,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file used to hold print headers for anatomic path reports and as a temporary holding file for path cumulative, incomplete and complete reports.<br/> It may also be used for any accession area file since the NAME (.01) field is a pointer to the accession area file (68).{:/}</dd>
+<dt>description</dt><dd>}This file used to hold print headers for anatomic path reports and as a temporary holding file for path cumulative, incomplete and complete reports.<br/> It may also be used for any accession area file since the NAME (.01) field is a pointer to the accession area file (68).</dd>
 </dl>
 
 ### Properties
@@ -270,4 +270,4 @@ title: VDM documentation
 | internal_file_number | .08 | Internal File # | {::nomarkdown} The internal number where the data is stored.{:/} | STRING |  |  |  | 
 | subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | {id:Subfile_Field_Name-69_37,fmId:69.37,label:Subfile Field Name,properties:[{id:subfile_field_name,fmId:.01,label:Subfile Field Name,datatype:STRING,indexed:true,required:true},{id:subfile_field_entry,fmId:.02,label:Subfile Field Entry,datatype:STRING},{id:subfile_field_number,fmId:.03,label:Subfile Field #,datatype:STRING}]} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

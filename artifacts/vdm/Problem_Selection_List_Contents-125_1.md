@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>125.1</dd>
 <dt>label</dt><dd>Problem Selection List Contents</dd>
 <dt>location</dt><dd>^GMPL(125.1,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains the categories that make up the Problem Selection<br/>Lists defined in file #125.  Each entry links a problem category to<br/>a list, optionally with a subheader and a sequence order.{:/}</dd>
+<dt>description</dt><dd>}This file contains the categories that make up the Problem Selection<br/>Lists defined in file #125.  Each entry links a problem category to<br/>a list, optionally with a subheader and a sequence order.</dd>
 </dl>
 
 ### Properties
@@ -23,4 +23,4 @@ title: VDM documentation
 | subheader | 3 | Subheader | {::nomarkdown}This is text which will appear in the list as a subheader or title to<br/>this group of problems.  It will have a single blank row between it and<br/>the previous problem group, and it will be underlined.{:/} | STRING |  |  |  | 
 | show_problems | 4 | Show Problems | {::nomarkdown}This field controls the initial display of this category in this selection<br/>list.  If set to YES, the problems will automatically be displayed as part<br/>of the list when it is initially built and displayed; if null or NO, the<br/>category must be selected in order to expand the list and show the problems.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

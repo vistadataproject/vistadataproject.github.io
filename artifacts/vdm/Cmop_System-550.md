@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>550</dd>
 <dt>label</dt><dd>Cmop System</dd>
 <dt>location</dt><dd>^PSX(550,</dd>
-<dt>description</dt><dd>{::nomarkdown}The system parameters in this file manage operations of the Consolidated <br/>Mail Outpatient Pharmacy for the medical center. This information controls<br/>the transmission of data to the Consolidated Mail Outpatient Pharmacy<br/>host facility selected by the medical center. Information in this file <br/>must be entered or edited ONLY through the Consolidated Mail Outpatient <br/>Pharmacy package options.{:/}</dd>
+<dt>description</dt><dd>}The system parameters in this file manage operations of the Consolidated <br/>Mail Outpatient Pharmacy for the medical center. This information controls<br/>the transmission of data to the Consolidated Mail Outpatient Pharmacy<br/>host facility selected by the medical center. Information in this file <br/>must be entered or edited ONLY through the Consolidated Mail Outpatient <br/>Pharmacy package options.</dd>
 </dl>
 
 ### Properties
@@ -102,4 +102,4 @@ title: VDM documentation
 | task_number | 6 | Task Number | {::nomarkdown}This is the task number used to reschedule the job.{:/} | NUMERIC |  |  |  | 
 | number_of_days_to_transmit | 7 | Number Of Days To Transmit | {::nomarkdown}This number determines the number of days to add to the current date to<br/>calculate the transmit through date for CMOP auto transmissions.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

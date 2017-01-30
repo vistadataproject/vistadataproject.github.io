@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101.24</dd>
 <dt>label</dt><dd>Oe/rr Report</dd>
 <dt>location</dt><dd>^ORD(101.24,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains definitions and parameters used in various reports<br/>within CPRS.<br/> <br/>Entry numbers >1000 are reserved for national use.  Any local entries<br/>should be added to a number <1000.  If this convention is not followed,<br/>you run the risk of having your local entries overwritten by a patch<br/>or future release of CPRS.{:/}</dd>
+<dt>description</dt><dd>}This file contains definitions and parameters used in various reports<br/>within CPRS.<br/> <br/>Entry numbers >1000 are reserved for national use.  Any local entries<br/>should be added to a number <1000.  If this convention is not followed,<br/>you run the risk of having your local entries overwritten by a patch<br/>or future release of CPRS.</dd>
 </dl>
 
 ### Properties
@@ -99,4 +99,4 @@ title: VDM documentation
 | header_text | .02 | Header Text | {::nomarkdown}This is the header to be used.{:/} | STRING |  |  |  | 
 | sequence | .03 | Sequence | {::nomarkdown}This is the sequence number for this report.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

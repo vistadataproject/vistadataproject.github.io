@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>123.3</dd>
 <dt>label</dt><dd>Gmrc Procedure</dd>
 <dt>location</dt><dd>^GMR(123.3,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file is used for the maintenance of procedures used in the<br/>CONSULT/REQUEST TRACKING package. The procedures contained in this file<br/>are orderable in CPRS if not inactive.{:/}</dd>
+<dt>description</dt><dd>}This file is used for the maintenance of procedures used in the<br/>CONSULT/REQUEST TRACKING package. The procedures contained in this file<br/>are orderable in CPRS if not inactive.</dd>
 </dl>
 
 ### Properties
@@ -35,4 +35,4 @@ title: VDM documentation
 | ifc_sending_facility | 128 | Ifc Sending Facility |  | [POINTER] |  |  | {id:Institution-4} | 
 | ifc_coordinator | 129 | Ifc Coordinator | {::nomarkdown}The person entered in this field will have expanded abilities to correct <br/>IFC records that require manual intervention to remain updated.<br/> <br/>The full capabilities of this field are not yet defined.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

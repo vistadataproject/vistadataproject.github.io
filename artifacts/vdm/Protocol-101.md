@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101</dd>
 <dt>label</dt><dd>Protocol</dd>
 <dt>location</dt><dd>^ORD(101,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains the orderables and methods for accomplishing orders<br/>(protocols) within OE/RR.{:/}</dd>
+<dt>description</dt><dd>}This file contains the orderables and methods for accomplishing orders<br/>(protocols) within OE/RR.</dd>
 </dl>
 
 ### Properties
@@ -116,4 +116,4 @@ title: VDM documentation
 | method | .01 | Method | {::nomarkdown}This is reserved for future use.  The numeric values of this field<br/>currently correspond to OE/RR actions.{:/} | NUMERIC |  | REQUIRED |  | 
 | method_action | .02 | Method Action | {::nomarkdown}This is the code necessary to implement the method.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

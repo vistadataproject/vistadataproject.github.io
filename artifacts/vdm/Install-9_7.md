@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>9.7</dd>
 <dt>label</dt><dd>Install</dd>
 <dt>location</dt><dd>^XPD(9.7,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains the installation information for a site from the Kernel<br/>Installation & Distribution System.  This file should not be edited.<br/>All information is updated when a new package is installed at a site.{:/}</dd>
+<dt>description</dt><dd>}This file contains the installation information for a site from the Kernel<br/>Installation & Distribution System.  This file should not be edited.<br/>All information is updated when a new package is installed at a site.</dd>
 </dl>
 
 ### Properties
@@ -154,4 +154,4 @@ title: VDM documentation
 | external_answer | 2 | External Answer | {::nomarkdown}This is the external format of the Install Question answer.{:/} | STRING |  |  |  | 
 | answer | 3 | Answer | {::nomarkdown}This is the internal format of the Install Question answer.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

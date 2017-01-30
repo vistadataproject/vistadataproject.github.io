@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>125.99</dd>
 <dt>label</dt><dd>Problem List Site Parameters</dd>
 <dt>location</dt><dd>^GMPL(125.99,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file controls the behavior of the Problem List application for each<br/>site where it is installed.<br/>  <br/>There should be only one entry in this file!!{:/}</dd>
+<dt>description</dt><dd>}This file controls the behavior of the Problem List application for each<br/>site where it is installed.<br/>  <br/>There should be only one entry in this file!!</dd>
 </dl>
 
 ### Properties
@@ -25,4 +25,4 @@ title: VDM documentation
 | display_order | 4 | Display Order | {::nomarkdown}This flag allows each site to control how the problem list is displayed,<br/>whether chronologically or reverse-chronologically by date recorded.<br/>This ordering will be the same both onscreen and on the printed copy.<br/>When new problems are added to a patient's list, they will be added as the<br/>most recent problems, i.e. at the top of the list if reverse-chronological<br/>or at the bottom if chronological.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>R</dt><dd>REVERSE-CHRONOLOGICAL</dd><dt>C</dt><dd>CHRONOLOGICAL</dd></dl>{:/} | 
 | screen_duplicate_entries | 6 | Screen Duplicate Entries | {::nomarkdown}If YES is entered in this field duplicate problems (those having the same <br/>ICD9 code) will NOT be added to the problem list.  The primary purpose of<br/>this field in to screen entries added via the scannable encounter form.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

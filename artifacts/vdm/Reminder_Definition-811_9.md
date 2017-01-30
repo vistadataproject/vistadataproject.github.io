@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>811.9</dd>
 <dt>label</dt><dd>Reminder Definition</dd>
 <dt>location</dt><dd>^PXD(811.9,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file contains Clinical Reminder definitions. For a detailed<br/>description of the contents of this file, see the Clinical Reminders<br/>Manager Manual. Additional information may be found at the Clinical<br/>Reminders web site: http//vista.domain.ext/reminders<br/><br/>This file contains a combination of nationally distributed and local<br/>entries. Any local entries are assigned an internal entry number<br/>prefixed with your site number. Nationally distributed entries have<br/>their name prefixed with VA-. Local entry names cannot start with VA-.{:/}</dd>
+<dt>description</dt><dd>}This file contains Clinical Reminder definitions. For a detailed<br/>description of the contents of this file, see the Clinical Reminders<br/>Manager Manual. Additional information may be found at the Clinical<br/>Reminders web site: http//vista.domain.ext/reminders<br/><br/>This file contains a combination of nationally distributed and local<br/>entries. Any local entries are assigned an internal entry number<br/>prefixed with your site number. Nationally distributed entries have<br/>their name prefixed with VA-. Local entry names cannot start with VA-.</dd>
 </dl>
 
 ### Properties
@@ -202,4 +202,4 @@ title: VDM documentation
 | edit_by | 1 | Edit By | {::nomarkdown}This is the person who did the editing. This field is set automatically<br/>and should not be changed by the user.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | edit_comments | 2 | Edit Comments | {::nomarkdown}This word-processing field can be used to record the changes made<br/>during the editing session.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

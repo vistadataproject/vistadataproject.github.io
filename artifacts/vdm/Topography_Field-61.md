@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>61</dd>
 <dt>label</dt><dd>Topography Field</dd>
 <dt>location</dt><dd>^LAB(61,</dd>
-<dt>description</dt><dd>{::nomarkdown}This is the TOPOGRAPHY file of SNOMED{:/}</dd>
+<dt>description</dt><dd>}This is the TOPOGRAPHY file of SNOMED</dd>
 </dl>
 
 ### Properties
@@ -72,4 +72,4 @@ title: VDM documentation
 | sct_status_user | 3 | Sct Status User | {::nomarkdown}Store the user who initiated the process to apply the STS SNOMED CT code <br/>resolution or the original mapping to this file entry.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | sct_comment_text | 4 | Sct Comment Text | {::nomarkdown}Contains text or comments related to the mapping of a term to SNOMED CT.<br/>The text can relate to information submitted to STS for the term to be <br/>mapped, the comments returned by STS related to the mapping and <br/>any comments when attempting to apply the disposition from STS.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101.13</dd>
 <dt>label</dt><dd>Or Cprs Tabs</dd>
 <dt>location</dt><dd>^ORD(101.13,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file stores CPRS GUI Cover Sheet tab acronyms.{:/}</dd>
+<dt>description</dt><dd>}This file stores CPRS GUI Cover Sheet tab acronyms.</dd>
 </dl>
 
 ### Properties
@@ -20,4 +20,4 @@ title: VDM documentation
 | tab_name | .01 | Tab Name | {::nomarkdown}This field stores CPRS GUI Cover Sheet tab acronyms.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | tab_description | 1 | Tab Description | {::nomarkdown}This field stores descriptions of CPRS GUI Cover Sheet tab acronyms.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

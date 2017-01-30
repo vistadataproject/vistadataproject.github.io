@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>100.03</dd>
 <dt>label</dt><dd>Order Reason</dd>
 <dt>location</dt><dd>^ORD(100.03,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file is used to define the possible reasons for DC'ing/cancelling<br/>an order.  The entries are identified by package so that each package<br/>can have their own set of reasons.  Sites may wish to modify the<br/>entries in this file to fit their needs.  It is important to maintain<br/>the correct links to the Radiology Reason file if modifications are<br/>made.  These links are maintained in the CODE field.  For Radiology<br/>reasons, the code field is the internal # of the radiology reason file<br/>followed by the characters RA.<br/> <br/>This file points the the Nature of Order file.  This relationship<br/>is what identifies the appropriate actions to take for any DC Reason.{:/}</dd>
+<dt>description</dt><dd>}This file is used to define the possible reasons for DC'ing/cancelling<br/>an order.  The entries are identified by package so that each package<br/>can have their own set of reasons.  Sites may wish to modify the<br/>entries in this file to fit their needs.  It is important to maintain<br/>the correct links to the Radiology Reason file if modifications are<br/>made.  These links are maintained in the CODE field.  For Radiology<br/>reasons, the code field is the internal # of the radiology reason file<br/>followed by the characters RA.<br/> <br/>This file points the the Nature of Order file.  This relationship<br/>is what identifies the appropriate actions to take for any DC Reason.</dd>
 </dl>
 
 ### Properties
@@ -25,4 +25,4 @@ title: VDM documentation
 | nature_of_activity | .07 | Nature Of Activity | {::nomarkdown}This field is used to categorize DC reasons into types that OE/RR<br/>can take action on.  The actions and types are defined in the<br/>Nature of order file.{:/} | POINTER |  | REQUIRED | Nature_Of_Order-100_02 | 
 | message_status | .08 | Message Status | {::nomarkdown}This field is used to identify the status an order will be set to<br/>when this order reason is selected.  This is currently used by<br/>backdoor lab options when orders/accessions are canceled.  If the field<br/>is blank, lab sends the HL7 status update message with a status of DC<br/>(the default); otherwise it will use the status in this field.{:/} | POINTER |  |  | Order_Status-100_01 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

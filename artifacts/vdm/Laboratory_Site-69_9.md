@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>69.9</dd>
 <dt>label</dt><dd>Laboratory Site</dd>
 <dt>location</dt><dd>^LAB(69.9,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file holds specific information which defines certain site parameters<br/>relating to the actual functioning of your laboratory.  The parameters<br/>include the official laboratory site name, whether the physician's name must<br/>be entered when ordering and/or accessioning tests, what type of accession<br/>label format (if any) the lab will be using, and scheduled hours of routine<br/>phlebotomy collection times, as well as others.{:/}</dd>
+<dt>description</dt><dd>}This file holds specific information which defines certain site parameters<br/>relating to the actual functioning of your laboratory.  The parameters<br/>include the official laboratory site name, whether the physician's name must<br/>be entered when ordering and/or accessioning tests, what type of accession<br/>label format (if any) the lab will be using, and scheduled hours of routine<br/>phlebotomy collection times, as well as others.</dd>
 </dl>
 
 ### Properties
@@ -281,4 +281,4 @@ title: VDM documentation
 | division_parameters | .01 | Division Parameters |  | POINTER |  | REQUIRED, INDEXED | [Institution-4](Institution-4.md) | 
 | venipuncture_default_acc_area | 618 | Venipuncture Default Acc Area | {::nomarkdown}This field will allow the site to assign the venipuncture LMIP workload to<br/>a specific ACCESSION AREA. If this field is blank, the venipuncture<br/>workload software will use the ACCESSION AREA name that begins with 'HEM'.<br/>If there is no ACCESSION AREA with a name beginning with 'HEM', ACCESSION<br/>AREA the internal file number of 10 will be used as the default<br/>Venipuncture Accession Area.{:/} | POINTER |  |  | Accession-68 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

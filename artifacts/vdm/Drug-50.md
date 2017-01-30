@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>50</dd>
 <dt>label</dt><dd>Drug</dd>
 <dt>location</dt><dd>^PSDRUG(</dd>
-<dt>description</dt><dd>{::nomarkdown}This file holds the information related to each drug that can be used<br/>to fill a prescription.  It is pointed to from several other files and<br/>should be handled carefully, usually only by special individuals in the<br/>pharmacy service.  Entries are not typically deleted, but rather made<br/>inactive by entering an inactive date.<br/> <br/>This file must be built by Pharmacy Service BEFORE going on-line.  It is<br/>common to use another centers file and edit it to match your center's<br/>unique formulary.{:/}</dd>
+<dt>description</dt><dd>}This file holds the information related to each drug that can be used<br/>to fill a prescription.  It is pointed to from several other files and<br/>should be handled carefully, usually only by special individuals in the<br/>pharmacy service.  Entries are not typically deleted, but rather made<br/>inactive by entering an inactive date.<br/> <br/>This file must be built by Pharmacy Service BEFORE going on-line.  It is<br/>common to use another centers file and edit it to match your center's<br/>unique formulary.</dd>
 </dl>
 
 ### Properties
@@ -244,4 +244,4 @@ title: VDM documentation
 | window_dns_name | 1 | Window Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a window route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 | mail_dns_name | 2 | Mail Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a mail route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>8989.3</dd>
 <dt>label</dt><dd>Kernel System Parameters</dd>
 <dt>location</dt><dd>^XTV(8989.3,</dd>
-<dt>description</dt><dd>{::nomarkdown}This file holds the site parameters for this installation of the Kernel.<br/>It will have only one entry -- the domain name of the installation site.<br/>Some parameters are defined by the systems manager during the installation<br/>process.  These include Agence, volume set multiple, Default parameters.<br/>Others may be edited subsequent to installation. Spooling, response time,<br/>and audit parameters may be established.  Priorities may be set for<br/>interactive users and for TaskMan.  Defaults for fields such as timed<br/>read, auto menu, and ask device are defined for use when not otherwise<br/>specified for a user or device.{:/}</dd>
+<dt>description</dt><dd>}This file holds the site parameters for this installation of the Kernel.<br/>It will have only one entry -- the domain name of the installation site.<br/>Some parameters are defined by the systems manager during the installation<br/>process.  These include Agence, volume set multiple, Default parameters.<br/>Others may be edited subsequent to installation. Spooling, response time,<br/>and audit parameters may be established.  Priorities may be set for<br/>interactive users and for TaskMan.  Defaults for fields such as timed<br/>read, auto menu, and ask device are defined for use when not otherwise<br/>specified for a user or device.</dd>
 </dl>
 
 ### Properties
@@ -160,4 +160,4 @@ title: VDM documentation
 | after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
 | last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:06:42 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
