@@ -29,4 +29,4 @@ title: VDM documentation
 | cx_tx_due_date | .1 | Cx Tx Due Date | {::nomarkdown}This field is the amount of time to add to the procedure date or current<br/>date to calculate a new cervical treatment due date. The value should be a<br/>number followed by \D\, \M\ or \Y\ (without the quotes). D indicates days.<br/>M indicates months. Y indicates years.<br/> <br/>For example, \90D\ means add 90 days to the procedure date or current date<br/>to calculate the new cervical treatment due date. This new treatment date<br/>will be automatically assigned to the patient in the WV PATIENT file<br/>(#790).{:/} | STRING |  |  |  | 
 | letter_text | 1.01 | Letter Text | {::nomarkdown}This field stores the text of the notification letter.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}

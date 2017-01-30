@@ -41,7 +41,6 @@ title: MVDM documentation
 
 <dl>
 <dt>id</dt><dd>ReactantDetails</dd>
-<dt>label</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -55,7 +54,6 @@ title: MVDM documentation
 
 <dl>
 <dt>id</dt><dd>Reaction</dd>
-<dt>label</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -83,7 +81,6 @@ title: MVDM documentation
 
 <dl>
 <dt>id</dt><dd>RemovalDetails</dd>
-<dt>label</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -109,4 +106,4 @@ title: MVDM documentation
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}

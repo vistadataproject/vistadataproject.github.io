@@ -8,9 +8,6 @@ title: VDM documentation
 <dl>
 <dt>id</dt><dd>Gmrv_Vitals_Parameters-120_57</dd>
 <dt>fmId</dt><dd>120.57</dd>
-<dt>label</dt><dd></dd>
-<dt>location</dt><dd></dd>
-<dt>description</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -40,4 +37,4 @@ title: VDM documentation
 | phase_ii_completed | 999.1 |  |  | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
 | phase_ii_last_record | 999.2 |  |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}

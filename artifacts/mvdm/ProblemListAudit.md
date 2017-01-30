@@ -13,7 +13,6 @@ title: MVDM documentation
 <dt>baseVDMClass</dt><dd>[Problem_List_Audit-125_8](../vdm/Problem_List_Audit-125_8)</dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 125_8</dd>
-<dt>fromVDMListPerPatient</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -30,4 +29,4 @@ title: MVDM documentation
 | requestingProvider | Requesting Provider | POINTER | requesting_provider | $USERID |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING | old_problem_entry |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}

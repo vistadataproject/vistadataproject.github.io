@@ -10,7 +10,6 @@ title: VDM documentation
 <dt>fmId</dt><dd>79.3</dd>
 <dt>label</dt><dd>Hl7 Message Exceptions</dd>
 <dt>location</dt><dd>^RA(79.3,</dd>
-<dt>description</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -25,4 +24,4 @@ title: VDM documentation
 | user | .06 | User | {::nomarkdown}This is the name of the radiology user linked to the message exception{:/} | POINTER |  | INDEXED | [New_Person-200](New_Person-200.md) | 
 | error | 1 | Error | {::nomarkdown}This is the reason that this message was rejected.{:/} | STRING |  | REQUIRED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}

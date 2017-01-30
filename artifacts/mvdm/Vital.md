@@ -42,7 +42,6 @@ title: MVDM documentation
 
 <dl>
 <dt>id</dt><dd>RemovalDetails</dd>
-<dt>label</dt><dd></dd>
 </dl>
 
 ### Properties
@@ -53,4 +52,4 @@ title: MVDM documentation
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}

@@ -8,7 +8,6 @@ title: MVDM documentation
 <dl>
 <dt>id</dt><dd>AllergyAssessment</dd>
 <dt>label</dt><dd>Allergy Assessment</dd>
-<dt>description</dt><dd></dd>
 <dt>fmIdForId</dt><dd>120.86</dd>
 <dt>baseVDMClass</dt><dd>[Adverse_Reaction_Assessment-120_86](../vdm/Adverse_Reaction_Assessment-120_86)</dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Adverse_Reaction_Assessment-120_86,query:DESCRIBE $ID}]</dd>
@@ -25,4 +24,4 @@ title: MVDM documentation
 | enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:20:19 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
