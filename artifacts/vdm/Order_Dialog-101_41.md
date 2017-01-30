@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101.41</dd>
 <dt>label</dt><dd>Order Dialog</dd>
 <dt>location</dt><dd>^ORD(101.41,</dd>
-<dt>description</dt><dd>}This file contains the information needed to define how to prompt for each<br/>order, what values are acceptable, etc.</dd>
+<dt>description</dt><dd>This file contains the information needed to define how to prompt for each<br/>order, what values are acceptable, etc.</dd>
 </dl>
 
 ### Properties
@@ -140,4 +140,4 @@ title: VDM documentation
 | lower_control | 13 | Lower Control |  | STRING |  |  |  | 
 | tab_sequence | 14 | Tab Sequence |  | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>100.98</dd>
 <dt>label</dt><dd>Display Group</dd>
 <dt>location</dt><dd>^ORD(100.98,</dd>
-<dt>description</dt><dd>}This file allows orders to be clustered in groups other than by package.<br/>It is similar in structure to the OPTION File (19).  This allows display<br/>groups to be arranged in a hierarchy.  The main entry in this file<br/>should be 'ALL SERVICES'.  Other entries should be logically subordinate<br/>to the 'ALL SERVICES' entry.</dd>
+<dt>description</dt><dd>This file allows orders to be clustered in groups other than by package.<br/>It is similar in structure to the OPTION File (19).  This allows display<br/>groups to be arranged in a hierarchy.  The main entry in this file<br/>should be 'ALL SERVICES'.  Other entries should be logically subordinate<br/>to the 'ALL SERVICES' entry.</dd>
 </dl>
 
 ### Properties
@@ -37,4 +37,4 @@ title: VDM documentation
 | sequence | .001 | Sequence | {::nomarkdown}This is the sequence of the member in the display group for reporting<br/>purposes.{:/} | IEN |  |  |  | 
 | member | .01 | Member | {::nomarkdown}This is a display group listed in the NAME field. (This is similar to a<br/>menu item in the OPTION File.){:/} | POINTER |  | REQUIRED, INDEXED | Display_Group-100_98 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

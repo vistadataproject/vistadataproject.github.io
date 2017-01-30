@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>120.85</dd>
 <dt>label</dt><dd>Adverse Reaction Reporting</dd>
 <dt>location</dt><dd>^GMR(120.85,</dd>
-<dt>description</dt><dd>}This file contains all the data for an Observed Drug reaction.</dd>
+<dt>description</dt><dd>This file contains all the data for an Observed Drug reaction.</dd>
 </dl>
 
 ### Properties
@@ -173,4 +173,4 @@ title: VDM documentation
 | date_time_entered | .01 | Date/time Entered | {::nomarkdown}This is the date/time the comment was entered.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

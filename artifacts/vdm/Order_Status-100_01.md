@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>100.01</dd>
 <dt>label</dt><dd>Order Status</dd>
 <dt>location</dt><dd>^ORD(100.01,</dd>
-<dt>description</dt><dd>}This file contains the possible statuses that may be associated with<br/>an order in OE/RR.<br/> <br/>Per VHA Directive 2005-044, this file has been \locked down\ by Data <br/>Standardization (DS).  The file definition (i.e. data dictionary) shall <br/>not be modified.  All additions, changes and deletions to entries in the <br/>file shall be done by Enterprise Reference Terminology (ERT) using the <br/>Master File Server (MFS), provided by Common Services (CS).   Creating <br/>and/or editing locally defined fields in the file are not permitted.  Use <br/>of locally defined fields that were created prior to VHA Directive <br/>2005-044 shall not be supported.</dd>
+<dt>description</dt><dd>This file contains the possible statuses that may be associated with<br/>an order in OE/RR.<br/> <br/>Per VHA Directive 2005-044, this file has been \locked down\ by Data <br/>Standardization (DS).  The file definition (i.e. data dictionary) shall <br/>not be modified.  All additions, changes and deletions to entries in the <br/>file shall be done by Enterprise Reference Terminology (ERT) using the <br/>Master File Server (MFS), provided by Common Services (CS).   Creating <br/>and/or editing locally defined fields in the file are not permitted.  Use <br/>of locally defined fields that were created prior to VHA Directive <br/>2005-044 shall not be supported.</dd>
 </dl>
 
 ### Properties
@@ -40,4 +40,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'.  If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event.  If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

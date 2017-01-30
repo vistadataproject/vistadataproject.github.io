@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101.43</dd>
 <dt>label</dt><dd>Orderable Items</dd>
 <dt>location</dt><dd>^ORD(101.43,</dd>
-<dt>description</dt><dd>}This file contains the orderable items for use within OE/RR.</dd>
+<dt>description</dt><dd>This file contains the orderable items for use within OE/RR.</dd>
 </dl>
 
 ### Properties
@@ -87,4 +87,4 @@ title: VDM documentation
 | code | 3 | Code | {::nomarkdown}This is the code assigned to this item by the authoritative package from a<br/>national standard coding system such as CPT or SNOMED.{:/} | STRING |  |  |  | 
 | coding_system | 4 | Coding System | {::nomarkdown}This is the system used to generate the code assigned in field 3.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>NDF</dt><dd>NATIONAL DRUG FILE</dd><dt>CPT4</dt><dd>CPT4</dd><dt>NLT</dt><dd>NATIONAL LAB TEST FILE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

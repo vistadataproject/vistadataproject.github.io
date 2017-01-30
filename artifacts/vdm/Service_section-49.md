@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>49</dd>
 <dt>label</dt><dd>Service/section</dd>
 <dt>location</dt><dd>^DIC(49,</dd>
-<dt>description</dt><dd>}This file is a list of the services and sections within the services.<br/>Some of the entries may be 'MIS COSTING SECTIONS' for use with the<br/>cost accounting part of the Management Information System software.<br/>A section is an MIS section if there is a code entered in the field<br/>called MIS COSTING CODE.  In the cost accounting system all medical<br/>center costs will be tied to a particular section.  When MIS sections<br/>change, do not delete the old section.  Instead, change the fields under<br/>the multiple field called \DATE CLOSED\ to identify which sections are<br/>no longer in use.</dd>
+<dt>description</dt><dd>This file is a list of the services and sections within the services.<br/>Some of the entries may be 'MIS COSTING SECTIONS' for use with the<br/>cost accounting part of the Management Information System software.<br/>A section is an MIS section if there is a code entered in the field<br/>called MIS COSTING CODE.  In the cost accounting system all medical<br/>center costs will be tied to a particular section.  When MIS sections<br/>change, do not delete the old section.  Instead, change the fields under<br/>the multiple field called \DATE CLOSED\ to identify which sections are<br/>no longer in use.</dd>
 </dl>
 
 ### Properties
@@ -50,4 +50,4 @@ title: VDM documentation
 | date_closed | .01 | Date Closed | {::nomarkdown}This field contains a date/time when this service or section closed for<br/>hospital use.{:/} | DATE-TIME |  | REQUIRED |  | 
 | date_reopened | 1 | Date Re-opened | {::nomarkdown}This field contains a date/time when this closed service or section<br/>was reopened for hospital use.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

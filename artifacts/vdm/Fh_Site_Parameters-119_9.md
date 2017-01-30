@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>119.9</dd>
 <dt>label</dt><dd>Fh Site Parameters</dd>
 <dt>location</dt><dd>^FH(119.9,</dd>
-<dt>description</dt><dd>}This file contains an extensive set of site parameters designed to<br/>indicate characteristics of the Nutrition and Food Service and/or<br/>different methods by which the Service wishes the program to perform.</dd>
+<dt>description</dt><dd>This file contains an extensive set of site parameters designed to<br/>indicate characteristics of the Nutrition and Food Service and/or<br/>different methods by which the Service wishes the program to perform.</dd>
 </dl>
 
 ### Properties
@@ -129,4 +129,4 @@ title: VDM documentation
 | print_order | 5 | Print Order | {::nomarkdown}This is a print order of a specific Drug Classification.{:/} | NUMERIC |  |  |  | 
 | create_alert | 6 | Create Alert | {::nomarkdown}If set to YES, alert will be created for patient that is taking <br/>medication with this type of Drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>757.01</dd>
 <dt>label</dt><dd>Expressions</dd>
 <dt>location</dt><dd>^LEX(757.01,</dd>
-<dt>description</dt><dd>}This file contains all text pertaining to the Major Concepts, Concept<br/>Synonyms,  Concept Lexical Variants, Synonymous Lexical Variants, and<br/>Modified Concepts.  It includes displayable text, distinguishing text (that<br/>portion of text that makes a modified concept different from the parent<br/>concept) and the term definitions (when available).  Searches are<br/>conducted using the special look-up routine LEXA1.</dd>
+<dt>description</dt><dd>This file contains all text pertaining to the Major Concepts, Concept<br/>Synonyms,  Concept Lexical Variants, Synonymous Lexical Variants, and<br/>Modified Concepts.  It includes displayable text, distinguishing text (that<br/>portion of text that makes a modified concept different from the parent<br/>concept) and the term definitions (when available).  Searches are<br/>conducted using the special look-up routine LEXA1.</dd>
 </dl>
 
 ### Properties
@@ -51,4 +51,4 @@ title: VDM documentation
 | coding_system | 1 | Coding System | {::nomarkdown}This is the classification system (ICD/CPT/DSM etc) from which the <br/>Designation Code (field #.01) is derived.{:/} | POINTER |  |  | Coding_Systems-757_03 | 
 | hierarchy | 2 | Hierarchy | {::nomarkdown}This is the SNOMED CT Hierarchy that the concept belongs to.{:/} | POINTER |  |  | Snomed_Ct_Hierarchy-757_018 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

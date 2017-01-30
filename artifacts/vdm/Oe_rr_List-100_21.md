@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>100.21</dd>
 <dt>label</dt><dd>Oe/rr List</dd>
 <dt>location</dt><dd>^OR(100.21,</dd>
-<dt>description</dt><dd>}This file contains data related to lists.  Generally these lists take the<br/>form of provider(s)/patients.</dd>
+<dt>description</dt><dd>This file contains data related to lists.  Generally these lists take the<br/>form of provider(s)/patients.</dd>
 </dl>
 
 ### Properties
@@ -72,4 +72,4 @@ title: VDM documentation
 | view_date_time | 1 | View Date/time | {::nomarkdown}This is the date/time this item was last viewed.{:/} | DATE-TIME |  |  |  | 
 | notification_selection | 2 | *notification Selection | {::nomarkdown}This field is unused and will be deleted post-CPRS 1.{:/} | [POINTER] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

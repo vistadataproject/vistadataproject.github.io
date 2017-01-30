@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>19</dd>
 <dt>label</dt><dd>Option</dd>
 <dt>location</dt><dd>^DIC(19,</dd>
-<dt>description</dt><dd>}Information in this file is used to drive the menu system.  Options are<br/>created, associated with others on menus, locked, set out-of-order,<br/>assigned prohibited times or devices, or given entry/exit actions.  The<br/>Edit Options of Menu Management should be used (instead of VA FileMan)<br/>so that the global root (DIC) and other such fields are given the correct<br/>values.  Options may be tailored by setting FileMan variables via this file. <br/>The Order Enter/Results Reporting package is accessed by using the appropriate<br/>option type.  It is cross-referenced by name, menu text, uppercase menu text,<br/>type, item, synonym, help frame, out-of-order message, lock, prohibited times,<br/>restricted devices, and priority. </dd>
+<dt>description</dt><dd>Information in this file is used to drive the menu system.  Options are<br/>created, associated with others on menus, locked, set out-of-order,<br/>assigned prohibited times or devices, or given entry/exit actions.  The<br/>Edit Options of Menu Management should be used (instead of VA FileMan)<br/>so that the global root (DIC) and other such fields are given the correct<br/>values.  Options may be tailored by setting FileMan variables via this file. <br/>The Order Enter/Results Reporting package is accessed by using the appropriate<br/>option type.  It is cross-referenced by name, menu text, uppercase menu text,<br/>type, item, synonym, help frame, out-of-order message, lock, prohibited times,<br/>restricted devices, and priority. </dd>
 </dl>
 
 ### Properties
@@ -226,4 +226,4 @@ title: VDM documentation
 | rpckey | 1 | Rpckey | {::nomarkdown}This field is the free-text name from the Security Key File that will be<br/>checked when this remote procedure call is requested to the broker.<br/>If the user does not hold this key then the request will be denied.{:/} | STRING |  |  |  | 
 | rules | 2 | Rules | {::nomarkdown}This field contains standard M code that will be executed when this<br/>remote procedure call is requested from the broker.  The variable<br/>XQRPCOK is set to 1 and the code is executed. If the value of that<br/>variable is reset to 0 by the RULES code, then the request is denied.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

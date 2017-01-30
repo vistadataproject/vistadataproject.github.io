@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>601.71</dd>
 <dt>label</dt><dd>Mh Tests And Surveys</dd>
 <dt>location</dt><dd>^YTT(601.71,</dd>
-<dt>description</dt><dd>}This file defines the interviews, surveys and tests available in the <br/>Mental Health Assistant. Attributes of the instruments include authoring <br/>credits, target populations, normative samples and copyright information. <br/>Actions available including privileging, reporting of full item content <br/>and transmission to the Mental Health National Database are also specified. <br/> <br/>Direct entry via FileMan is prohibited.</dd>
+<dt>description</dt><dd>This file defines the interviews, surveys and tests available in the <br/>Mental Health Assistant. Attributes of the instruments include authoring <br/>credits, target populations, normative samples and copyright information. <br/>Actions available including privileging, reporting of full item content <br/>and transmission to the Mental Health National Database are also specified. <br/> <br/>Direct entry via FileMan is prohibited.</dd>
 </dl>
 
 ### Properties
@@ -53,4 +53,4 @@ title: VDM documentation
 | ys_mha_auxdll_version | 100.03 | Ys_mha_aux.dll Version | {::nomarkdown}Version number of YS_MHA_AUX.DLL from the Host File System (HFS).<br/>It is used to verify the software configuration on a user's workstation.  <br/>It should only be edited by Mental Health software.{:/} | STRING |  |  |  | 
 | ys_mha_auxdll_date_time | 100.04 | Ys_mha_aux.dll Date/time | {::nomarkdown}Modified date/time of YYS_MHA_AUX.DLL from the Host File System (HFS).<br/>It is used to verify the software configuration on a user's workstation.  <br/>It should only be edited by Mental Health software.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

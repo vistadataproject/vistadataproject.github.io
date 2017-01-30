@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>142.5</dd>
 <dt>label</dt><dd>Health Summary Objects</dd>
 <dt>location</dt><dd>^GMT(142.5,</dd>
-<dt>description</dt><dd>}This file contains Health Summary Types that are to be embedded into another <br/>document as an object.  The bulk of this file is made up of display flags <br/>which control how the object is to be embedded into the other document.</dd>
+<dt>description</dt><dd>This file contains Health Summary Types that are to be embedded into another <br/>document as an object.  The bulk of this file is made up of display flags <br/>which control how the object is to be embedded into the other document.</dd>
 </dl>
 
 ### Properties
@@ -40,4 +40,4 @@ title: VDM documentation
 | object_description | 1 | Object Description |  | STRING |  |  |  | 
 | overwrite_no_data | 2 | Overwrite No Data | {::nomarkdown}This field stores a site defined message. This message will replace the<br/>standard No Data Available message when running a TIU/HS Object.<br/>{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

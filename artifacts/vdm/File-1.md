@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>1</dd>
 <dt>label</dt><dd>File</dd>
 <dt>location</dt><dd>^DIC(</dd>
-<dt>description</dt><dd>}This file stores the descriptive information for all files in the FileMan<br/>managed database.</dd>
+<dt>description</dt><dd>This file stores the descriptive information for all files in the FileMan<br/>managed database.</dd>
 </dl>
 
 ### Properties
@@ -37,4 +37,4 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | application_group | .01 | Application Group |  | STRING |  | REQUIRED, INDEXED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>101.42</dd>
 <dt>label</dt><dd>Order Urgency</dd>
 <dt>location</dt><dd>^ORD(101.42,</dd>
-<dt>description</dt><dd>}This file contains the urgencies available to assign to an order.</dd>
+<dt>description</dt><dd>This file contains the urgencies available to assign to an order.</dd>
 </dl>
 
 ### Properties
@@ -21,4 +21,4 @@ title: VDM documentation
 | usage | 1 | Usage | {::nomarkdown}This multiple contains all the possible ways to use this urgency.{:/} | [STRING] |  |  |  | 
 | abbreviation | 2 | Abbreviation | {::nomarkdown}This field contains the abbreviation to be used in HL7 messages and some<br/>displays.{:/} | STRING |  | INDEXED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

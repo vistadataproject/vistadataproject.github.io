@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>811.7</dd>
 <dt>label</dt><dd>Reminder Category</dd>
 <dt>location</dt><dd>^PXRMD(811.7,</dd>
-<dt>description</dt><dd>}This file contains Reminder Categories. Reminder Categories are<br/>created at each site and are not released with the reminder package.<br/> <br/>A Reminder Category is a list of reminders (or other reminder<br/>categories) and is used to group reminders for display in the CPRS<br/>GUI. Reminder categories are allocated to individual users,<br/>locations, service or system using the option PXRM CPRS LOOKUP<br/>CATEGORIES.<br/><br/>Reminder Categories can also be used in conjunction with Reminder<br/>Due Summary Reports. The user is given the option to select a<br/>Reminder Category or input a list of individual reminders.</dd>
+<dt>description</dt><dd>This file contains Reminder Categories. Reminder Categories are<br/>created at each site and are not released with the reminder package.<br/> <br/>A Reminder Category is a list of reminders (or other reminder<br/>categories) and is used to group reminders for display in the CPRS<br/>GUI. Reminder categories are allocated to individual users,<br/>locations, service or system using the option PXRM CPRS LOOKUP<br/>CATEGORIES.<br/><br/>Reminder Categories can also be used in conjunction with Reminder<br/>Due Summary Reports. The user is given the option to select a<br/>Reminder Category or input a list of individual reminders.</dd>
 </dl>
 
 ### Properties
@@ -50,4 +50,4 @@ title: VDM documentation
 | subcategory | .01 | Sub-category | {::nomarkdown}This is an existing category that is to be included as part of a new<br/>category.{:/} | POINTER |  | REQUIRED, INDEXED | Reminder_Category-811_7 | 
 | display_order | .02 | Display Order | {::nomarkdown}This is the display order for the sub-categories. Sub-categories are<br/>displayed after individual reminders.{:/} | NUMERIC |  | REQUIRED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>60</dd>
 <dt>label</dt><dd>Laboratory Test</dd>
 <dt>location</dt><dd>^LAB(60,</dd>
-<dt>description</dt><dd>}This is the file that holds the names and ordering, display of tests.</dd>
+<dt>description</dt><dd>This is the file that holds the names and ordering, display of tests.</dd>
 </dl>
 
 ### Properties
@@ -188,4 +188,4 @@ title: VDM documentation
 | site_notes_date | .01 | Site Notes Date | {::nomarkdown}Date of the note.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}

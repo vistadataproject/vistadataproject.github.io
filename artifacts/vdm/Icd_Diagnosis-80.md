@@ -10,7 +10,7 @@ title: VDM documentation
 <dt>fmId</dt><dd>80</dd>
 <dt>label</dt><dd>Icd Diagnosis</dd>
 <dt>location</dt><dd>^ICD9(</dd>
-<dt>description</dt><dd>}ICD Diagnosis file #80 contains codes from the International <br/>Classification of Diseases (ICD) Clinical Modification (CM) <br/>provided by the Centers for Medicare and Medicaid Services <br/>(CMS) and the National Center for Health Statistics (NCHS).<br/>This file contains both the 9th (ICD-9-CM) and 10th (ICD-10-CM)<br/>Revisions.<br/> <br/>If an entry needs to be added, modified or deleted, a patch will<br/>be issued containing the change.<br/> <br/>This table file should NOT be edited in anyway by the site.</dd>
+<dt>description</dt><dd>ICD Diagnosis file #80 contains codes from the International <br/>Classification of Diseases (ICD) Clinical Modification (CM) <br/>provided by the Centers for Medicare and Medicaid Services <br/>(CMS) and the National Center for Health Statistics (NCHS).<br/>This file contains both the 9th (ICD-9-CM) and 10th (ICD-10-CM)<br/>Revisions.<br/> <br/>If an entry needs to be added, modified or deleted, a patch will<br/>be issued containing the change.<br/> <br/>This table file should NOT be edited in anyway by the site.</dd>
 </dl>
 
 ### Properties
@@ -169,4 +169,4 @@ title: VDM documentation
 | complication_comorbidity | 1 | Complication/comorbidity | {::nomarkdown}This is the Complication/Comorbidity (CC) <br/>designation for the diagnosis.  It includes <br/>Complication/Comorbidity (CC), Major <br/>Complication/Comorbidity (MCC), Major <br/>Complication/Comorbidity when patient is <br/>discharged alive and non-Complication/Comorbidity<br/>(no complications/cormorbidities){:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl>{:/} | 
 | primary | 2 | Primary | {::nomarkdown}The value in this field is used to determine<br/>whether CC/MCC value is taken from primary <br/>diagnosis instead of the secondary diagnosis.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:13:27 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:17:13 pm</p>{:/}
