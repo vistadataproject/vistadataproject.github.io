@@ -71,7 +71,7 @@ Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents
 
 ## CPRS Sign-on / Patient-Chart
 
-Start CPRS. Before logging in, notice that the MVDM Client displays under the RPC Events tab the initial RPC traffic coming from CPRS.
+Start CPRS. Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
 
 ![MVDM Client Logon](/demo/images/common/management-client/login-dialog.jpeg)
 
@@ -82,25 +82,24 @@ Login into VISTA as ALEXANDER,ROBERT
    Verify Code: 1doc!@#$
 ```
 
-![CPRS Sign On Image](/demo/images/common/cprs/signon.JPG)
-
 ![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.JPG)
 
-After login, you will be brought to the patient selection dialog. Select patient _Carter,David_ ...
+After login, you will be brought to the patient selection dialog ...
 
-![CPRS Patient Select](/demo/images/common/cprs/patient-search.JPG)
+![CPRS Patient Select -width70](/demo/images/common/cprs/patient-search.JPG)
 
-In the MVDM management client, notice the RPC traffic under the rpcEvents tab - the bold RPCs are locked.
+Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
+selected, tables and tables of RPCs have been invoked ...
 
-![MVDM Client Patient Select](/demo/images/common/management-client/patient-search.jpeg)
+![MVDM Client Patient Select -width70](/demo/images/common/management-client/patient-search.jpeg)
 
 Then look at the MVDM Events tab, you will see the patient search MVDM Events that fired.
 
-![MVDM Client Patient Select MVDM Events](/demo/images/common/management-client/patient-search-mvdm-events.jpeg)
+![MVDM Client Patient Select MVDM Events -width70](/demo/images/common/management-client/patient-search-mvdm-events.jpeg)
 
-Back at CPRS, select 'OK' and proceed to the patient chart
+Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
 
-![CPRS Patient Chart](/demo/images/common/cprs/patient-chart.JPG)
+![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.JPG)
 
 ## Domain by Domain HOW TOs
 
