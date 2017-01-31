@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo Problems
 ---
 
-See the [MVDM Demo](demo/index) posting to setup the MVDM management client and CPRS. 
+See the [MVDM Demo](/demo/index) posting to setup the MVDM management client and CPRS. 
 
 ## Create a Problem
 
