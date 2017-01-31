@@ -64,7 +64,10 @@ Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents
    Verify Code: 1doc!@#$
    ```
 
-[[/demo/images/common/cprs/signon.JPG]]
+![CPRS Sign On Image](/demo/images/common/cprs/signon.JPG)
+
+![CPRS Sign On Image -fullwidth](/demo/images/common/cprs/signon.JPG)
+
 
 * Before logging in, notice that the MVDM Client displays under the RPC Events tab the initial RPC traffic coming from CPRS.
 

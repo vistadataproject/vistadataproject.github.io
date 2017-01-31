@@ -55,6 +55,11 @@ img {
   border-radius: 5px;
 }
 
+// http://stackoverflow.com/questions/14675913/how-to-change-image-size-markdown
+img[alt$="-fullwidth"]{
+  width:  100%;
+}
+
 table {
   margin-bottom: 1rem;
   width: 100%;
