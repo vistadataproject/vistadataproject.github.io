@@ -27,13 +27,13 @@ The following outlines how to install nodeVISTA
 
 * if you have installed nodeVISTA before, then clear out your current setup ...
 
-   ```
+   ```shell
    $ vagrant destroy
    ```
 
 * run the following:
 
-    ```code
+    ```shell
     $ vagrant up
     ```
 
