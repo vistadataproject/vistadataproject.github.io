@@ -53,7 +53,7 @@ The following outlines how to install nodeVISTA
 
 4. Overwrite  C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe with the latest binary (v1.0.30.75).
 
-5. Download latest CommonFiles DLLs [CPRS30v72_dll.zip] (http://45.33.127.157/files/CPRS30v72_dll.zip).
+5. Download latest CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
 
 6. Unzip CPRS30v72_dll.zip and copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files.
 
