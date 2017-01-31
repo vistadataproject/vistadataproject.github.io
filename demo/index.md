@@ -93,6 +93,6 @@ Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents
 
 ## Domain by Domain HOW TOs
 
-* [[Allergies]]
-* [[Problems]]
-* [[Vitals]]
+* [Allergies](Allergies.md)
+* [Problems](Problems)
+* [Vitals](Vitals)
