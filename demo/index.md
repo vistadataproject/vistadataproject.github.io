@@ -71,7 +71,7 @@ Login into CPRS as ALEXANDER,ROBERT
 
 ![CPRS Sign On Image](/demo/images/common/cprs/signon.JPG)
 
-![CPRS Sign On Image -fullwidth](/demo/images/common/cprs/signon.JPG)
+![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.JPG)
 
 
 Before logging in, notice that the MVDM Client displays under the RPC Events tab the initial RPC traffic coming from CPRS.

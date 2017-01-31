@@ -56,8 +56,12 @@ img {
 }
 
 // http://stackoverflow.com/questions/14675913/how-to-change-image-size-markdown
-img[alt$="-fullwidth"]{
-  width:  50%;
+img[alt$="-width100"]{
+  width:  100%;
+}
+img[alt$="-width70"]{
+  width: 70%;
+  margin-left: 15%;
 }
 
 table {
