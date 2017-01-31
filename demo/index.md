@@ -79,7 +79,7 @@ Start CPRS ...
 
 Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
 
-![MVDM Client CPRS Connect -width70](/demo/images/common/management-client/connect.png)
+![MVDM Client CPRS Connect](/demo/images/common/management-client/connect.png)
 
 Login into VISTA as ALEXANDER,ROBERT
 
@@ -97,7 +97,7 @@ After login, you will be brought to the patient selection dialog ...
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
 selected, nearly 80 RPC have been sent ...
 
-![MVDM Client Patient Select -width70](/demo/images/common/management-client/p1postlogsmall.png)
+![MVDM Client Patient Select](/demo/images/common/management-client/p1postlogsmall.png)
 
 Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
 
@@ -105,11 +105,11 @@ Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
 
 and the Management client shows the extra RPCs invoked - the total is now at 112 ...
 
-![MVDM Client P2 Patient Chart -width70](/demo/images/common/management-client/p2patient-chart-no-data.png)
+![MVDM Client P2 Patient Chart](/demo/images/common/management-client/p2patient-chart-no-data.png)
 
 and, in the _MVDM Events_ tab, shows MVDM model events for locked RPCs ...
 
-![MVDM Client P2 MVDM Events -width70](/demo/images/common/management-client/p2mvdmevents.png)
+![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
 
 ## Domain by Domain HOW TOs
 

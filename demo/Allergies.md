@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo Allergies
 ---
 
-Before running the following, follow the [MVDM Demo Introduction](https://github.com/vistadataproject/MVDM/wiki) on how to setup the MVDM management client and CPRS. 
+Before running the following, follow the [MVDM Demo Introduction](/demo/index) on how to setup the MVDM management client and CPRS. 
 
 The following shows creation, reading and removal of Patient Allergies using CPRS, VISTA's client, running over an MVDM-enabled VISTA. CPRS may think it's running over a 20 year old RPC interface but it's actually invoking RPCs through an _RPC Locker_ that runs over _MVDM_. The _MVDM Management Client_ shows not only what CPRS sends and receives but also the underlying MVDM activity.
 
