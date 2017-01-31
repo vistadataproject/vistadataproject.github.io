@@ -17,7 +17,7 @@ The following outlines how to install nodeVISTA
 
 * From the command line, install the following Vagrant plugin(s):
 
-    ```text
+    ```shell
     $ vagrant plugin install vagrant-timezone
     ```
 
@@ -33,7 +33,7 @@ The following outlines how to install nodeVISTA
 
 * run the following:
 
-    ```text
+    ```code
     $ vagrant up
     ```
 
