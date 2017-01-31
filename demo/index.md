@@ -9,39 +9,42 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 
 ## Install nodeVISTA
 
-### The following outlines how to install nodeVISTA
+The following outlines how to install nodeVISTA
 
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
+
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
-
-* If you are updating from an earlier version of vagrant, run the following to clear out your current setup.
-
-   ```text
-    $ vagrant destroy
-    ```
-* From the command line, ensure you have the latest version of the nodeVista/ directory 
-
-    ```text
-    $ git pull
-    ```
 
 * From the command line, install the following Vagrant plugin(s):
 
     ```text
     $ vagrant plugin install vagrant-timezone
     ```
-* Once you have Vagrant and VirtualBox setup open a terminal and cd to the __nodeVista/setup/__ directory and run the following:
+
+* Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git
+
+* cd to the __nodeVista/setup/__ directory 
+
+* if you have installed nodeVISTA before, then clear out your current setup ...
+
+   ```text
+    $ vagrant destroy
+    ```
+
+* run the following:
 
     ```text
     $ vagrant up
     ```
-    The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
 
-    Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
+The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
+
+Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ## CPRS Installation
+
 1. On a Windows7 or Windows10 box, download, unzip, and run the Osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 2. Download latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 3. Unzip CPRSChart30v75.zip and rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
@@ -54,45 +57,45 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 10. Run "RPC Server" from windows desktop
 
 ## Open the MVDM Client 
+
 Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
 
 ## CPRS Sign-on / Patient-Chart
-* Login into CPRS as ALEXANDER,ROBERT
 
-   ```
+Login into CPRS as ALEXANDER,ROBERT
+
+```
    Access Code: fakedoc1
    Verify Code: 1doc!@#$
-   ```
+```
 
 ![CPRS Sign On Image](/demo/images/common/cprs/signon.JPG)
 
 ![CPRS Sign On Image -fullwidth](/demo/images/common/cprs/signon.JPG)
 
 
-* Before logging in, notice that the MVDM Client displays under the RPC Events tab the initial RPC traffic coming from CPRS.
+Before logging in, notice that the MVDM Client displays under the RPC Events tab the initial RPC traffic coming from CPRS.
 
-![](https://github.com/vistadataproject/MVDM/blob/master/images/common/management-client/login-dialog.jpeg)
+![MVDM Client Logon](/demo/images/common/management-client/login-dialog.jpeg)
 
-* Back at CPRS, after you sign-on, you will be brough to the patient search dialog.
+Back at CPRS, after you sign-on, you will be brought to the patient selection dialog. Select patient _Carter,David_ ...
 
-  Search for patient Carter,David
+![CPRS Patient Select](/demo/images/common/cprs/patient-search.JPG)
 
-<img src="https://github.com/vistadataproject/MVDM/blob/master/images/common/cprs/patient-search.JPG" width=600px/>
+In the MVDM management client, notice the RPC traffic under the rpcEvents tab - the bold RPCs are locked.
 
-* In the MVDM management client, notice the RPC traffic under the rpcEvents tab - the bold RPCs are locked.
+![MVDM Client Patient Select](/demo/images/common/management-client/patient-search.jpeg)
 
-![](https://github.com/vistadataproject/MVDM/blob/master/images/common/management-client/patient-search.jpeg)
+Then look at the MVDM Events tab, you should see the patient search MVDM Events that fired.
 
-* Then look at the MVDM Events tab, you should see the patient search MVDM Events that fired.
+![MVDM Client Patient Select MVDM Events](/demo/images/common/management-client/patient-search-mvdm-events.jpeg)
 
-![](https://github.com/vistadataproject/MVDM/blob/master/images/common/management-client/patient-search-mvdm-events.jpeg)
+Back at CPRS, select 'OK' and proceed to the patient chart
 
-* Back at CPRS, select 'OK' and proceed to the patient chart
-
-<img src="https://github.com/vistadataproject/MVDM/blob/master/images/common/cprs/patient-chart.JPG" width=600px/>
+![CPRS Patient Chart](/demo/images/common/cprs/patient-chart.JPG)
 
 ## Domain by Domain HOW TOs
 
-* [Allergies](Allergies.md)
+* [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
