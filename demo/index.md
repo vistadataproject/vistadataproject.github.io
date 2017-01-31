@@ -95,7 +95,7 @@ After login, you will be brought to the patient selection dialog ...
 ![CPRS Patient Select -width70](/demo/images/common/cprs/patient-select.png)
 
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
-selected, nearly 80 RPC have been sent ...
+selected, nearly 80 RPCs have been sent ...
 
 ![MVDM Client Patient Select](/demo/images/common/management-client/p1postlogsmall.png)
 
@@ -107,7 +107,7 @@ and the Management client shows the extra RPCs invoked - the total is now at 112
 
 ![MVDM Client P2 Patient Chart](/demo/images/common/management-client/p2patient-chart-no-data.png)
 
-and, in the _MVDM Events_ tab, shows MVDM model events for locked RPCs ...
+and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
 
