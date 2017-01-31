@@ -1,3 +1,8 @@
+---
+layout: default
+title: MVDM Demo
+---
+
 # MVDM Demo
 
 The following sections first describe how to install the nodeVISTA VM, CPRS, and then how to run the MVDM demo.  
@@ -85,6 +90,6 @@ Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents
 
 ## Domain by Domain HOW TOs
 
-* [[Allergies Demo using MVDM]]
-* [[Problems demo using MVDM]]
-* [[Vitals demo using MVDM]]
+* [[Allergies]]
+* [[Problems]]
+* [[Vitals]]

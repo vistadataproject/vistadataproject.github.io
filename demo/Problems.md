@@ -1,3 +1,7 @@
+---
+layout: default
+title: MVDM Demo Problems
+---
 
 See the [MVDM Demo](https://github.com/vistadataproject/MVDM/wiki) posting to setup the MVDM management client and CPRS. 
 
