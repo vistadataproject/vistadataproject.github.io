@@ -69,11 +69,17 @@ The following outlines how to install nodeVISTA
 
 Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
 
+![MVDM Client Open -width70](/demo/images/common/management-client/open-empty.png)
+
 ## CPRS Sign-on / Patient-Chart
 
-Start CPRS. Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
+Start CPRS ... 
 
-![MVDM Client Logon](/demo/images/common/management-client/login-dialog.jpeg)
+![CPRS Connect Screen -width70](/demo/images/common/cprs/connect.png)
+
+Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
+
+![MVDM Client CPRS Connect -width70](/demo/images/common/management-client/connect.png)
 
 Login into VISTA as ALEXANDER,ROBERT
 
@@ -82,24 +88,28 @@ Login into VISTA as ALEXANDER,ROBERT
    Verify Code: 1doc!@#$
 ```
 
-![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.JPG)
+![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.png)
 
 After login, you will be brought to the patient selection dialog ...
 
-![CPRS Patient Select -width70](/demo/images/common/cprs/patient-search.JPG)
+![CPRS Patient Select -width70](/demo/images/common/cprs/patient-select.png)
 
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
-selected, tables and tables of RPCs have been invoked ...
+selected, nearly 80 RPC have been sent ...
 
-![MVDM Client Patient Select -width70](/demo/images/common/management-client/patient-search.jpeg)
-
-Then look at the MVDM Events tab, you will see the patient search MVDM Events that fired.
-
-![MVDM Client Patient Select MVDM Events -width70](/demo/images/common/management-client/patient-search-mvdm-events.jpeg)
+![MVDM Client Patient Select -width70](/demo/images/common/management-client/p1postlogsmall.png)
 
 Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
 
-![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.JPG)
+![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
+
+and the Management client shows the extra RPCs invoked - the total is now at 112 ...
+
+![MVDM Client P2 Patient Chart -width70](/demo/images/common/management-client/p2patient-chart-no-data.png)
+
+and, in the _MVDM Events_ tab, shows MVDM model events for locked RPCs ...
+
+![MVDM Client P2 MVDM Events -width70](/demo/images/common/management-client/p2mvdmevents.png)
 
 ## Domain by Domain HOW TOs
 
