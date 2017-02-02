@@ -6,171 +6,171 @@ title: VDM documentation
 ## [VDM](TableOfContent.md) &#8594; Adverse_Reaction_Reporting-120_85 
 
 <dl>
-<dt>id</dt><dd> A d v e r s e _ R e a c t i o n _ R e p o r t i n g - 1 2 0 _ 8 5 </dd>
-<dt>fmId</dt><dd> 1 2 0 . 8 5 </dd>
-<dt>label</dt><dd> A d v e r s e   R e a c t i o n   R e p o r t i n g </dd>
-<dt>location</dt><dd> ^ G M R ( 1 2 0 . 8 5 , </dd>
-<dt>description</dt><dd>  T h i s   f i l e   c o n t a i n s   a l l   t h e   d a t a   f o r   a n   O b s e r v e d   D r u g   r e a c t i o n .  </dd>
+<dt>id</dt><dd>Adverse_Reaction_Reporting-120_85</dd>
+<dt>fmId</dt><dd>120.85</dd>
+<dt>label</dt><dd>Adverse Reaction Reporting</dd>
+<dt>location</dt><dd>^GMR(120.85,</dd>
+<dt>description</dt><dd>This file contains all the data for an Observed Drug reaction.</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  d a t e _ t i m e _ o f _ e v e n t  |  . 0 1  |  D a t e / t i m e   O f   E v e n t  | {::nomarkdown}  T h e   d a t e / t i m e   t h a t   t h i s   o b s e r v e d   r e a c t i o n   o c c u r r e d .  {:/} |  D A T E - T I M E  |  | REQUIRED, INDEXED |  | 
-|  p a t i e n t  |  . 0 2  |  P a t i e n t  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   p a t i e n t   t o   w h o m   t h i s   o b s e r v e d   r e a c t i o n   o c c u r r e d . \ r T h i s   f i e l d   i s   a   p o i n t e r   t o   t h e   P a t i e n t   f i l e .  {:/} |  P O I N T E R  |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
-|  r e l a t e d _ r e a c t i o n  |  . 0 3  |  R e l a t e d   R e a c t i o n  | {::nomarkdown}  T h i s   i s   t h e   r e l a t e d   r e a c t i o n   i n   t h e   P a t i e n t   A l l e r g i e s   ( 1 2 0 . 8 )   f i l e   f o r \ r t h i s   e v e n t .  {:/} |  P O I N T E R  |  | REQUIRED, INDEXED | [Patient_Allergies-120_8](Patient_Allergies-120_8.md) | 
-|  o b s e r v e r  |  . 5  |  O b s e r v e r  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   p e r s o n   w h o   w i t n e s s e d   t h i s   r e a c t i o n .  {:/} |  P O I N T E R  |  |  | [New_Person-200](New_Person-200.md) | 
-|  d a t e _ r e p o r t e d  |  1 . 1  |  D a t e   R e p o r t e d  | {::nomarkdown}  T h i s   f i e l d   i s   t o   t r a c k   w h e n   a   r e p o r t   i s   e n t e r e d   i n t o   t h i s   f i l e .  {:/} |  D A T E - T I M E  |  | INDEXED |  | 
-|  r e p o r t i n g _ u s e r  |  1 . 2  |  R e p o r t i n g   U s e r  | {::nomarkdown}  T h i s   f i e l d   i s   u s e d   t o   t r a c k   t h e   u s e r   w h o   e n t e r e d   t h e   r e a c t i o n .     I t   i s   a \ r p o i n t e r   t o   F i l e   2 0 0 .  {:/} |  P O I N T E R  |  |  | [New_Person-200](New_Person-200.md) | 
-|  r e a c t i o n s  |  2  |  R e a c t i o n s  | {::nomarkdown}  A   l i s t   o f   s i g n s / s y m p t o m s   o b s e r v e d   f o r   t h i s   r e a c t i o n .  {:/} |  [ O B J E C T ]  |  |  | [Reactions-120_8502](#Reactions-120_8502)  | 
-|  s u s p e c t e d _ a g e n t  |  3  |  S u s p e c t e d   A g e n t  | {::nomarkdown}  A   l i s t   o f   s u s p e c t e d   a g e n t s   f o r   t h i s   o b s e r v e d   r e a c t i o n .  {:/} |  [ O B J E C T ]  |  |  | [Suspected_Agent-120_8503](#Suspected_Agent-120_8503)  | 
-|  r e l e v a n t _ t e s t _ l a b _ d a t a  |  4  |  R e l e v a n t   T e s t / l a b   D a t a  | {::nomarkdown}  A   l i s t   o f   a l l   t h e   r e l e v a n t   t e s t / l a b   d a t a   f o r   t h i s   o b s e r v e d   r e a c t i o n .  {:/} |  [ O B J E C T ]  |  |  | [Relevant_Test_lab_Data-120_8504](#Relevant_Test_lab_Data-120_8504)  | 
-|  q u e s t i o n _ n u m b e r 1  |  5  |  Q u e s t i o n   # 1  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   o r   n o t   a   p a t i e n t   h a s   d i e d   f r o m   t h i s   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 2  |  6  |  Q u e s t i o n   # 2  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   o r   n o t   a   p a t i e n t   w a s   t r e a t e d   w i t h   a   R X   d r u g \ r f o r   t h i s   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 3  |  7  |  Q u e s t i o n   # 3  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   o r   n o t   t h e   r e a c t i o n   c a u s e d   a   l i f e   t h r e a t e n i n g \ r i l l n e s s .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 4  |  8  |  Q u e s t i o n   # 4  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   o r   n o t   t h e   p a t i e n t   h a d   t o   v i s i t   a   d o c t o r   o r \ r a n   E R   b e c a u s e   o f   t h i s   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 5  |  9  |  Q u e s t i o n   # 5  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   t h i s   r e a c t i o n   r e q u i r e d   h o s p i t a l i z a t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  n o _ d a y _ h o s p i t a l i z e d  |  9 . 1  |  N o .   D a y   H o s p i t a l i z e d  | {::nomarkdown}  T h i s   f i e l d   s h o w s   t h e   n u m b e r   o f   d a y s   t h e   p a t i e n t   w a s   h o s p i t a l i z e d   b e c a u s e \ r o f   t h e   r e a c t i o n .  {:/} |  N U M E R I C  |  |  |  | 
-|  q u e s t i o n _ n u m b e r 6  |  1 0  |  Q u e s t i o n   # 6  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   i f   t h e   p a t i e n t   h a d   a   p r o l o n g e d   h o s p i t a l i z a t i o n \ r b e c a u s e   o f   t h e   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 7  |  1 1  |  Q u e s t i o n   # 7  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   o r   n o t   t h e   p a t i e n t   h a d   s o m e   s o r t   o f \ r p e r m a n e n t   d i s a b i l i t y   a s   a   r e s u l t   o f   t h i s   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 8  |  1 2  |  Q u e s t i o n   # 8  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   w h e t h e r   t h e   p a t i e n t   r e c o v e r e d   f r o m   a n y   i l l n e s s   t h a t \ r m a y   h a v e   r e s u l t e d   f r o m   t h e   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 9  |  1 2 . 1  |  Q u e s t i o n   # 9  | {::nomarkdown}  T h i s   f i e l d   i s   t o   f i n d   o u t   i f   t h e   o b s e r v e d   r e a c t i o n   w a s   a   C o n g e n i t a l   A n o m a l y .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  q u e s t i o n _ n u m b e r 1 0  |  1 2 . 2  |  Q u e s t i o n   # 1 0  | {::nomarkdown}  T h i s   f i e l d   i s   t o   f i n d   o u t   i f   t h i s   e v e n t   r e q u i r e d   a n y   i n t e r v e n t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  c o n c o m i t a n t _ d r u g s  |  1 3  |  C o n c o m i t a n t   D r u g s  | {::nomarkdown}  A   l i s t   o f   a l l   d r u g s   t h a t   m a y   h a v e   b e e n   t a k e n   a t   t h e   t i m e   o f   t h e   r e a c t i o n .  {:/} |  [ O B J E C T ]  |  |  | [Concomitant_Drugs-120_8513](#Concomitant_Drugs-120_8513)  | 
-|  o t h e r _ r e l a t e d _ h i s t o r y  |  1 4  |  O t h e r   R e l a t e d   H i s t o r y  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   a n y   o t h e r   r e l a t e d   e v e n t   h i s t o r y   f o r   t h i s   r e a c t i o n .  {:/} |  S T R I N G  |  |  |  | 
-|  s e v e r i t y  |  1 4 . 5  |  S e v e r i t y  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   t h e   s e v e r i t y   o f   t h i s   r e a c t i o n .  {:/} |  E N U M E R A T I O N  |  |  | {::nomarkdown}<dl><dt>1</dt><dd>MILD</dd><dt>2</dt><dd>MODERATE</dd><dt>3</dt><dd>SEVERE</dd></dl>{:/} | 
-|  d a t e _ m d _ n o t i f i e d  |  2 2  |  D a t e   M d   N o t i f i e d  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   d a t e   t h e   d o c t o r   w a s   n o t i f i e d   o f   t h i s   r e a c t i o n .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  f d a _ q u e s t i o n _ n u m b e r 1  |  2 3  |  F d a   Q u e s t i o n   # 1  | {::nomarkdown}  T h i s   f i e l d   d e t e r m i n e s   i f   t h e   r e a c t i o n   i s   c o n s i d e r e d   s e r i o u s .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  f d a _ q u e s t i o n _ n u m b e r 2  |  2 4  |  F d a   Q u e s t i o n   # 2  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h i s   r e a c t i o n   i s   r e l a t e d   t o   a   n e w   d r u g .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  f d a _ q u e s t i o n _ n u m b e r 3  |  2 5  |  F d a   Q u e s t i o n   # 3  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h i s   r e a c t i o n   w a s   a n   u n e x p e c t e d   r e a c t i o n \ r f o r   t h i s   d r u g .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  f d a _ q u e s t i o n _ n u m b e r 4  |  2 6  |  F d a   Q u e s t i o n   # 4  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h i s   r e a c t i o n   i s   r e l a t e d   t o   a \ r t h e r a p e u t i c   f a i l u r e   o f   t h e   d r u g .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  f d a _ q u e s t i o n _ n u m b e r 5  |  2 6 . 1  |  F d a   Q u e s t i o n   # 5  | {::nomarkdown}  T h i s   f i e l d   i s   t o   t r a c k   i f   t h e   r e a c t i o n   w a s   a   d o s e   r e l a t e d   r e a c t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  d a t e _ r e p o r t e d _ t o _ f d a  |  2 7  |  D a t e   R e p o r t e d   T o   F d a  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   d a t e   o n   w h i c h   t h e   F D A   w a s   s e n t   t h e   A D R   r e p o r t .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  d a t e _ o f _ p a t i e n t _ c o n s e n t _ t o _ m f r  |  2 8  |  D a t e   O f   P a t i e n t   C o n s e n t   T o   M f r  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   d a t e   t h e   p a t i e n t   h a d   g i v e n   h i s   c o n s e n t   t o   h a v e   t h e \ r r e a c t i o n   r e p o r t e d   t o   t h e   m a n u f a c t u r e r .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  d a t e _ s e n t _ t o _ m f r  |  2 9  |  D a t e   S e n t   T o   M f r  | {::nomarkdown}    T h i s   i s   t h e   d a t e   w h e n   t h e   r e p o r t   w a s   s e n t   t o   t h e   m a n u f a c t u r e r .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  d a t e _ s e n t _ t o _ r c p m  |  3 0  |  * d a t e   S e n t   T o   R c p m  | {::nomarkdown}  T h i s   i s   t h e   d a t e   w h e n   t h e   r e p o r t   w a s   s e n t   t o   t h e   r e g i o n a l   o f f i c e s .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  d a t e _ s e n t _ t o _ v a e r s  |  3 1  |  D a t e   S e n t   T o   V a e r s  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   d a t e   w h e n   t h e   r e p o r t   w a s   s e n t   t o   t h e   V A E R S .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  p t _ a c t i o n _ f d a _ r e p o r t  |  3 1 . 1  |  P & t   A c t i o n   F d a   R e p o r t  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   i f   t h e   P & T   c o m m i t t e e   d e t e r m i n e d   w h e t h e r   t o   s e n d \ r t h e   r e p o r t   t o   F D A .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  p t _ a c t i o n _ m f r _ r e p o r t  |  3 1 . 2  |  P & t   A c t i o n   M f r   R e p o r t  | {::nomarkdown}  T h i s   f i e l d   t e l l s   i f   t h e   P & T   c o m m i t t e e   d e t e r m i n e d   w h e t h e r   t o   s e n d   t h e   r e p o r t   t o \ r t h e   m a n u f a c t u r e r .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  p t _ a c t i o n _ r c p m _ r e p o r t  |  3 1 . 3  |  * p & t   A c t i o n   R c p m   R e p o r t  | {::nomarkdown}  T h i s   f i e l d   d e t e r m i n e s   w h e t h e r   o r   n o t   t h e   P & T   c o m m i t t e e   w i l l   s e n d   t h e \ r r e p o r t   t o   t h e   r e g i o n a l   o f f i c e s .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl></dl>{:/} | 
-|  p t _ a d d e n d u m  |  3 1 . 5  |  P & t   A d d e n d u m  | {::nomarkdown}  L i s t   o f   c o m m e n t s   m a d e   b y   t h e   P & T   c o m m i t t e e .  {:/} |  [ O B J E C T ]  |  |  | [Pt_Addendum-120_85315](#Pt_Addendum-120_85315)  | 
-|  r e p o r t e r _ n a m e  |  4 3  |  R e p o r t e r   N a m e  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   n a m e   o f   t h e   p e r s o n   f i l l i n g   o u t   t h e   r e p o r t s .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ a d d r e s s 1  |  4 4  |  R e p o r t e r   A d d r e s s 1  | {::nomarkdown}  L i n e   o n e   o f   t h e   a d d r e s s   o f   t h e   p e r s o n   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ a d d r e s s 2  |  4 5  |  R e p o r t e r   A d d r e s s 2  | {::nomarkdown}  L i n e   t w o   o f   t h e   a d d r e s s   o f   t h e   p e r s o n   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ a d d r e s s 3  |  4 6  |  R e p o r t e r   A d d r e s s 3  | {::nomarkdown}  L i n e   t h r e e   o f   t h e   a d d r e s s   o f   t h e   p e r s o n   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ c i t y  |  4 7  |  R e p o r t e r   C i t y  | {::nomarkdown}  T h e   c i t y   w h e r e   t h e   p e r s o n   l i v e s   w h o   i s   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ s t a t e  |  4 8  |  R e p o r t e r   S t a t e  | {::nomarkdown}  T h e   s t a t e   w h e r e   t h e   r e p o r t e r   r e s i d e s .  {:/} |  P O I N T E R  |  |  | State-5 | 
-|  r e p o r t e r _ z i p  |  4 9  |  R e p o r t e r   Z I P  | {::nomarkdown}  T h i s   i s   t h e   z i p   c o d e   o f   t h e   p e r s o n   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r e p o r t e r _ p h o n e  |  5 0  |  R e p o r t e r   P h o n e  | {::nomarkdown}  T h i s   i s   t h e   p h o n e   n u m b e r   o f   t h e   p e r s o n   w h o   i s   f i l l i n g   o u t   t h e   r e p o r t .  {:/} |  S T R I N G  |  |  |  | 
-|  r p t _ q u e s t i o n _ n u m b e r 1  |  5 1  |  R p t   Q u e s t i o n   # 1  | {::nomarkdown}  T h i s   f i e l d   d e t e r m i n e s   i f   t h e   r e p o r t e r   i s   a   h e a l t h   c a r e   p r o v i d e r .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  r p t _ q u e s t i o n _ n u m b e r 2  |  5 2  |  R p t   Q u e s t i o n   # 2  | {::nomarkdown}  T h i s   f i e l d   d e t e r m i n e s   i f   t h e   r e p o r t e r   w a n t s   t o   p e r m i t   t h e   F D A   t o   i n f o r m   t h e   m a n u f a c t u r e r   o f   h i s   i d e n t i t y .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  o c c u p a t i o n  |  5 2 . 1  |  O c c u p a t i o n  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   r e p o r t e r ' s   c u r r e n t   o c c u p a t i o n .  {:/} |  S T R I N G  |  |  |  | 
-|  m a n u f a c t u r e r _ n a m e  |  5 3  |  M a n u f a c t u r e r   N a m e  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   n a m e   o f   t h e   m a n u f a c t u r e r   o f   t h e   r e a c t a n t .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ a d d r e s s _ n u m b e r 1  |  5 4  |  M f r   A d d r e s s   # 1  | {::nomarkdown}  T h i s   i s   a d d r e s s   l i n e   o n e   f o r   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ a d d r e s s _ n u m b e r 2  |  5 5  |  M f r   A d d r e s s   # 2  | {::nomarkdown}  T h i s   i s   a d d r e s s   l i n e   t w o   f o r   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ a d d r e s s _ n u m b e r 3  |  5 6  |  M f r   A d d r e s s   # 3  | {::nomarkdown}  T h i s   i s   a d d r e s s   l i n e   t h r e e   f o r   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ c i t y  |  5 7  |  M f r   C i t y  | {::nomarkdown}  T h i s   i s   t h e   c i t y   o f   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ s t a t e  |  5 8  |  M f r   S t a t e  | {::nomarkdown}  T h i s   i s   t h e   s t a t e   w h e r e   t h e   m a n u f a c t u r e r   i s   l o c a t e d .  {:/} |  P O I N T E R  |  |  | State-5 | 
-|  m f r _ z i p  |  5 9  |  M f r   Z I P  | {::nomarkdown}  T h i s   i s   t h e   Z i p   C o d e   o f   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  i n d _ n d a _ n u m b e r _ f o r _ s u p p o r t _ d r u g  |  6 0  |  I n d / n d a   #   F o r   S u p p o r t   D r u g  | {::nomarkdown}  T h i s   i s   t h e   I N D / N D A   #   f o r   s u p p o r t   d r u g   f o r   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  m f r _ c o n t r o l _ n u m b e r  |  6 1  |  M f r   C o n t r o l   #  | {::nomarkdown}  T h i s   i s   t h e   c o n t r o l   n u m b e r   u s e d   b y   t h e   m a n u f a c t u r e r .  {:/} |  S T R I N G  |  |  |  | 
-|  d a t e _ r e c e i v e d _ b y _ m f r  |  6 2  |  D a t e   R e c e i v e d   B y   M f r  | {::nomarkdown}  T h i s   i s   t h e   d a t e   t h e   r e p o r t   w a s   r e c e i v e d   b y   t h e   m a n u f a c t u r e r .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  r e p o r t _ s o u r c e  |  6 3  |  R e p o r t   S o u r c e  | {::nomarkdown}  T h i s   i s   t h e   s o u r c e   o f   t h e   r e p o r t .  {:/} |  [ E N U M E R A T I O N ]  |  |  | {::nomarkdown}<dl><dt>c</dt><dd>CONSUMER</dd><dt>s</dt><dd>STUDY</dd><dt>l</dt><dd>LITERATURE</dd><dt>h</dt><dd>HEALTH PROFESSIONAL</dd><dt>f</dt><dd>FOREIGN</dd></dl>{:/} | 
-|  _ 1 5 _ d a y _ r e p o r t  |  6 4  |  1 5   D a y   R e p o r t  | {::nomarkdown}  T h i s   f i e l d   i s   t o   d e t e r m i n e   i f   t h e   1 5   D a y   R e p o r t   h a s   b e e n   c o m p l e t e d .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  r e p o r t _ t y p e  |  6 5  |  R e p o r t   T y p e  | {::nomarkdown}  T h i s   i s   t h e   t y p e   o f   r e p o r t   i s s u e d .  {:/} |  E N U M E R A T I O N  |  |  | {::nomarkdown}<dl><dt>f</dt><dd>FOLLOWUP</dd><dt>i</dt><dd>INITIAL</dd></dl>{:/} | 
+| date_time_of_event | .01 | Date/time Of Event | {::nomarkdown}The date/time that this observed reaction occurred.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
+| patient | .02 | Patient | {::nomarkdown}This field is the patient to whom this observed reaction occurred.<br/>This field is a pointer to the Patient file.{:/} | POINTER |  | REQUIRED, INDEXED | [Patient-2](Patient-2.md) | 
+| related_reaction | .03 | Related Reaction | {::nomarkdown}This is the related reaction in the Patient Allergies (120.8) file for<br/>this event.{:/} | POINTER |  | REQUIRED, INDEXED | [Patient_Allergies-120_8](Patient_Allergies-120_8.md) | 
+| observer | .5 | Observer | {::nomarkdown}This field is the person who witnessed this reaction.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| date_reported | 1.1 | Date Reported | {::nomarkdown}This field is to track when a report is entered into this file.{:/} | DATE-TIME |  | INDEXED |  | 
+| reporting_user | 1.2 | Reporting User | {::nomarkdown}This field is used to track the user who entered the reaction.  It is a<br/>pointer to File 200.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| reactions | 2 | Reactions | {::nomarkdown}A list of signs/symptoms observed for this reaction.{:/} | [OBJECT] |  |  | [Reactions-120_8502](#Reactions-120_8502)  | 
+| suspected_agent | 3 | Suspected Agent | {::nomarkdown}A list of suspected agents for this observed reaction.{:/} | [OBJECT] |  |  | [Suspected_Agent-120_8503](#Suspected_Agent-120_8503)  | 
+| relevant_test_lab_data | 4 | Relevant Test/lab Data | {::nomarkdown}A list of all the relevant test/lab data for this observed reaction.{:/} | [OBJECT] |  |  | [Relevant_Test_lab_Data-120_8504](#Relevant_Test_lab_Data-120_8504)  | 
+| question_number1 | 5 | Question #1 | {::nomarkdown}This field indicates whether or not a patient has died from this reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number2 | 6 | Question #2 | {::nomarkdown}This field indicates whether or not a patient was treated with a RX drug<br/>for this reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number3 | 7 | Question #3 | {::nomarkdown}This field indicates whether or not the reaction caused a life threatening<br/>illness.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number4 | 8 | Question #4 | {::nomarkdown}This field indicates whether or not the patient had to visit a doctor or<br/>an ER because of this reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number5 | 9 | Question #5 | {::nomarkdown}This field indicates whether this reaction required hospitalization.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| no_day_hospitalized | 9.1 | No. Day Hospitalized | {::nomarkdown}This field shows the number of days the patient was hospitalized because<br/>of the reaction.{:/} | NUMERIC |  |  |  | 
+| question_number6 | 10 | Question #6 | {::nomarkdown}This field indicates if the patient had a prolonged hospitalization<br/>because of the reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number7 | 11 | Question #7 | {::nomarkdown}This field indicates whether or not the patient had some sort of<br/>permanent disability as a result of this reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number8 | 12 | Question #8 | {::nomarkdown}This field indicates whether the patient recovered from any illness that<br/>may have resulted from the reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number9 | 12.1 | Question #9 | {::nomarkdown}This field is to find out if the observed reaction was a Congenital Anomaly.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| question_number10 | 12.2 | Question #10 | {::nomarkdown}This field is to find out if this event required any intervention.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| concomitant_drugs | 13 | Concomitant Drugs | {::nomarkdown}A list of all drugs that may have been taken at the time of the reaction.{:/} | [OBJECT] |  |  | [Concomitant_Drugs-120_8513](#Concomitant_Drugs-120_8513)  | 
+| other_related_history | 14 | Other Related History | {::nomarkdown}This field contains any other related event history for this reaction.{:/} | STRING |  |  |  | 
+| severity | 14.5 | Severity | {::nomarkdown}This field indicates the severity of this reaction.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>MILD</dd><dt>2</dt><dd>MODERATE</dd><dt>3</dt><dd>SEVERE</dd></dl>{:/} | 
+| date_md_notified | 22 | Date Md Notified | {::nomarkdown}This field contains the date the doctor was notified of this reaction.{:/} | DATE-TIME |  |  |  | 
+| fda_question_number1 | 23 | Fda Question #1 | {::nomarkdown}This field determines if the reaction is considered serious.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| fda_question_number2 | 24 | Fda Question #2 | {::nomarkdown}This question determines whether this reaction is related to a new drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| fda_question_number3 | 25 | Fda Question #3 | {::nomarkdown}This question determines whether this reaction was an unexpected reaction<br/>for this drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| fda_question_number4 | 26 | Fda Question #4 | {::nomarkdown}This question determines whether this reaction is related to a<br/>therapeutic failure of the drug.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| fda_question_number5 | 26.1 | Fda Question #5 | {::nomarkdown}This field is to track if the reaction was a dose related reaction.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| date_reported_to_fda | 27 | Date Reported To Fda | {::nomarkdown}This field contains the date on which the FDA was sent the ADR report.{:/} | DATE-TIME |  |  |  | 
+| date_of_patient_consent_to_mfr | 28 | Date Of Patient Consent To Mfr | {::nomarkdown}This field is the date the patient had given his consent to have the<br/>reaction reported to the manufacturer.{:/} | DATE-TIME |  |  |  | 
+| date_sent_to_mfr | 29 | Date Sent To Mfr | {::nomarkdown} This is the date when the report was sent to the manufacturer.{:/} | DATE-TIME |  |  |  | 
+| date_sent_to_rcpm | 30 | *date Sent To Rcpm | {::nomarkdown}This is the date when the report was sent to the regional offices.{:/} | DATE-TIME |  |  |  | 
+| date_sent_to_vaers | 31 | Date Sent To Vaers | {::nomarkdown}This field is the date when the report was sent to the VAERS.{:/} | DATE-TIME |  |  |  | 
+| pt_action_fda_report | 31.1 | P&t Action Fda Report | {::nomarkdown}This field indicates if the P&T committee determined whether to send<br/>the report to FDA.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| pt_action_mfr_report | 31.2 | P&t Action Mfr Report | {::nomarkdown}This field tells if the P&T committee determined whether to send the report to<br/>the manufacturer.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| pt_action_rcpm_report | 31.3 | *p&t Action Rcpm Report | {::nomarkdown}This field determines whether or not the P&T committee will send the<br/>report to the regional offices.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl></dl>{:/} | 
+| pt_addendum | 31.5 | P&t Addendum | {::nomarkdown}List of comments made by the P&T committee.{:/} | [OBJECT] |  |  | [Pt_Addendum-120_85315](#Pt_Addendum-120_85315)  | 
+| reporter_name | 43 | Reporter Name | {::nomarkdown}This field contains the name of the person filling out the reports.{:/} | STRING |  |  |  | 
+| reporter_address1 | 44 | Reporter Address1 | {::nomarkdown}Line one of the address of the person filling out the report.{:/} | STRING |  |  |  | 
+| reporter_address2 | 45 | Reporter Address2 | {::nomarkdown}Line two of the address of the person filling out the report.{:/} | STRING |  |  |  | 
+| reporter_address3 | 46 | Reporter Address3 | {::nomarkdown}Line three of the address of the person filling out the report.{:/} | STRING |  |  |  | 
+| reporter_city | 47 | Reporter City | {::nomarkdown}The city where the person lives who is filling out the report.{:/} | STRING |  |  |  | 
+| reporter_state | 48 | Reporter State | {::nomarkdown}The state where the reporter resides.{:/} | POINTER |  |  | State-5 | 
+| reporter_zip | 49 | Reporter ZIP | {::nomarkdown}This is the zip code of the person filling out the report.{:/} | STRING |  |  |  | 
+| reporter_phone | 50 | Reporter Phone | {::nomarkdown}This is the phone number of the person who is filling out the report.{:/} | STRING |  |  |  | 
+| rpt_question_number1 | 51 | Rpt Question #1 | {::nomarkdown}This field determines if the reporter is a health care provider.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| rpt_question_number2 | 52 | Rpt Question #2 | {::nomarkdown}This field determines if the reporter wants to permit the FDA to inform the manufacturer of his identity.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| occupation | 52.1 | Occupation | {::nomarkdown}This field contains the reporter's current occupation.{:/} | STRING |  |  |  | 
+| manufacturer_name | 53 | Manufacturer Name | {::nomarkdown}This field is the name of the manufacturer of the reactant.{:/} | STRING |  |  |  | 
+| mfr_address_number1 | 54 | Mfr Address #1 | {::nomarkdown}This is address line one for the manufacturer.{:/} | STRING |  |  |  | 
+| mfr_address_number2 | 55 | Mfr Address #2 | {::nomarkdown}This is address line two for the manufacturer.{:/} | STRING |  |  |  | 
+| mfr_address_number3 | 56 | Mfr Address #3 | {::nomarkdown}This is address line three for the manufacturer.{:/} | STRING |  |  |  | 
+| mfr_city | 57 | Mfr City | {::nomarkdown}This is the city of the manufacturer.{:/} | STRING |  |  |  | 
+| mfr_state | 58 | Mfr State | {::nomarkdown}This is the state where the manufacturer is located.{:/} | POINTER |  |  | State-5 | 
+| mfr_zip | 59 | Mfr ZIP | {::nomarkdown}This is the Zip Code of the manufacturer.{:/} | STRING |  |  |  | 
+| ind_nda_number_for_support_drug | 60 | Ind/nda # For Support Drug | {::nomarkdown}This is the IND/NDA # for support drug for the manufacturer.{:/} | STRING |  |  |  | 
+| mfr_control_number | 61 | Mfr Control # | {::nomarkdown}This is the control number used by the manufacturer.{:/} | STRING |  |  |  | 
+| date_received_by_mfr | 62 | Date Received By Mfr | {::nomarkdown}This is the date the report was received by the manufacturer.{:/} | DATE-TIME |  |  |  | 
+| report_source | 63 | Report Source | {::nomarkdown}This is the source of the report.{:/} | [ENUMERATION] |  |  | {::nomarkdown}<dl><dt>c</dt><dd>CONSUMER</dd><dt>s</dt><dd>STUDY</dd><dt>l</dt><dd>LITERATURE</dd><dt>h</dt><dd>HEALTH PROFESSIONAL</dd><dt>f</dt><dd>FOREIGN</dd></dl>{:/} | 
+| _15_day_report | 64 | 15 Day Report | {::nomarkdown}This field is to determine if the 15 Day Report has been completed.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| report_type | 65 | Report Type | {::nomarkdown}This is the type of report issued.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>f</dt><dd>FOLLOWUP</dd><dt>i</dt><dd>INITIAL</dd></dl>{:/} | 
 
 ## <a name="Reactions-120_8502"></a>Reactions-120_8502 
 
 <dl>
-<dt>id</dt><dd> R e a c t i o n s - 1 2 0 _ 8 5 0 2 </dd>
-<dt>label</dt><dd> R e a c t i o n s </dd>
+<dt>id</dt><dd>Reactions-120_8502</dd>
+<dt>label</dt><dd>Reactions</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  r e a c t i o n s  |  . 0 1  |  R e a c t i o n s  | {::nomarkdown}  O n e   s i g n / s y m p t o m   o b s e r v e d   f o r   t h i s   r e a c t i o n .  {:/} |  P O I N T E R  |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
-|  o t h e r _ r e a c t i o n  |  1  |  O t h e r   R e a c t i o n  | {::nomarkdown}  I f   t h i s   s i g n / s y m p t o m   c a n n o t   b e   f o u n d   i n   t h e   S i g n / S y m p t o m s   ( 1 2 0 . 8 3 )   f i l e , \ r t h e n   t h e   f r e e   t e x t   o f   w h a t   t h e   u s e r   t y p e d   i n   w i l l   b e   h e r e ,   a n d   t h e \ r s i g n s / s y m p t o m s   o f   O T H E R   R E A C T I O N   w i l l   b e   t h e   v a l u e   o f   t h e   R E A C T I O N S   f i e l d .  {:/} |  S T R I N G  |  |  |  | 
-|  e n t e r e d _ b y  |  2  |  E n t e r e d   B y  | {::nomarkdown}  T h e   p e r s o n   w h o   e n t e r e d   t h i s   r e a c t i o n   i n t o   t h e   s y s t e m .  {:/} |  P O I N T E R  |  |  | [New_Person-200](New_Person-200.md) | 
+| reactions | .01 | Reactions | {::nomarkdown}One sign/symptom observed for this reaction.{:/} | POINTER |  | REQUIRED, INDEXED | Sign_symptoms-120_83 | 
+| other_reaction | 1 | Other Reaction | {::nomarkdown}If this sign/symptom cannot be found in the Sign/Symptoms (120.83) file,<br/>then the free text of what the user typed in will be here, and the<br/>signs/symptoms of OTHER REACTION will be the value of the REACTIONS field.{:/} | STRING |  |  |  | 
+| entered_by | 2 | Entered By | {::nomarkdown}The person who entered this reaction into the system.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 
 ## <a name="Suspected_Agent-120_8503"></a>Suspected_Agent-120_8503 
 
 <dl>
-<dt>id</dt><dd> S u s p e c t e d _ A g e n t - 1 2 0 _ 8 5 0 3 </dd>
-<dt>label</dt><dd> S u s p e c t e d   A g e n t </dd>
+<dt>id</dt><dd>Suspected_Agent-120_8503</dd>
+<dt>label</dt><dd>Suspected Agent</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  s u s p e c t e d _ a g e n t  |  . 0 1  |  S u s p e c t e d   A g e n t  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   o n e   o f   t h e   s u s p e c t e d   a g e n t s   f o r   t h i s   o b s e r v e d   r e a c t i o n .  {:/} |  S T R I N G  |  | REQUIRED, INDEXED |  | 
-|  d a i l y _ d o s e  |  1  |  D a i l y   D o s e  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   d a i l y   d o s a g e   f o r   t h i s   s u s p e c t e d   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  s i g  |  1 . 5  |  S i g  | {::nomarkdown}  T h i s   f i l e   c o n t a i n s   t h e   S I G   c o d e   t h a t   i n d i c a t e s   h o w   t h i s   d r u g   i s   t o   b e   g i v e n .  {:/} |  S T R I N G  |  |  |  | 
-|  r o u t e _ o f _ a d m i n i s t r a t i o n  |  2  |  R o u t e   O f   A d m i n i s t r a t i o n  | {::nomarkdown}  T h i s   i s   t h e   r o u t e   o f   a d m i n i s t r a t i o n   f o r   t h i s   s u s p e c t e d   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  i n d i c a t i o n s _ f o r _ u s e  |  3  |  I n d i c a t i o n s   F o r   U s e  | {::nomarkdown}  T h i s   f i e l d   i n d i c a t e s   t h e   r e a s o n i n g   f o r   a   p a r t i c u l a r   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  s t a r t _ d a t e _ o f _ a d m i n i s t r a t i o n  |  4  |  S t a r t   D a t e   O f   A d m i n i s t r a t i o n  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   d a t e   a   p a t i e n t   w a s   f i r s t   g i v e n   t h e   s u s p e c t e d   a g e n t .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  s t o p _ d a t e _ o f _ a d m i n i s t r a t i o n  |  5  |  S t o p   D a t e   O f   A d m i n i s t r a t i o n  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   s t o p   d a t e   f o r   a   s u s p e c t e d   a g e n t .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  m a n u f a c t u r e r  |  7  |  M a n u f a c t u r e r  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   n a m e   o f   t h e   m a n u f a c t u r e r   o f   t h e   s u s p e c t e d   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  l o t _ n u m b e r  |  8  |  L o t   #  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   l o t   #   f o r   a   s u s p e c t e d   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  n u m b e r _ o f _ p r e v i o u s _ d o s e s  |  9  |  N u m b e r   O f   P r e v i o u s   D o s e s  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   t o t a l   n u m b e r   o f   d o s e s   o f   t h i s   s u s p e c t e d   a g e n t   t h a t \ r w e r e   g i v e n   t o   t h e   p a t i e n t   p r i o r   t o   t h e   r e a c t i o n .  {:/} |  N U M E R I C  |  |  |  | 
-|  l a s t _ f i l l _ d t  |  1 0  |  L a s t   F i l l   D t  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   d a t e   t h a t   t h i s   a g e n t   w a s   l a s t   f i l l e d .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  e x p i r a t i o n _ d a t e  |  1 0 . 1  |  E x p i r a t i o n   D a t e  | {::nomarkdown}  T h i s   i s   t h e   d a t e   t h a t   t h e   s u s p e c t e d   a g e n t   i s   t o   e x p i r e .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  n d c _ n u m b e r  |  1 0 . 2  |  N d c   #  | {::nomarkdown}  T h i s   i s   t h e   N D C   ( N a t i o n a l   D r u g   C o d e )   o f   t h i s   a g e n t .  {:/} |  S T R I N G  |  |  |  | 
-|  l i k e _ q u e s t i o n _ n u m b e r 1  |  1 1  |  L i k e   Q u e s t i o n   # 1  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h i s   r e a c t i o n   n o r m a l l y   o c c u r s   w i t h   t h i s   r e a c t a n t . \ r r e a c t a n t .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e _ q u e s t i o n _ n u m b e r 2  |  1 2  |  L i k e   Q u e s t i o n   # 2  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   a d m i n i s t r a t i o n   o f   t h e   r e a c t a n t   w a s   s t o p p e d .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e _ q u e s t i o n _ n u m b e r 3  |  1 3  |  L i k e   Q u e s t i o n   # 3  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   i f   t h e   r e a c t i o n   s t o p p e d   w h e n   t h e   a d m i n i s t r a t i o n   o f   t h e   r e a c t a n t   w a s   t e r m i n a t e d . \ r t h e   r e a c t a n t   w a s   t e r m i n a t e d .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e _ q u e s t i o n _ n u m b e r 4  |  1 4  |  L i k e   Q u e s t i o n   # 4  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h e   r e a c t a n t   w a s   r e a d m i n i s t e r e d .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e _ q u e s t i o n _ n u m b e r 5  |  1 5  |  L i k e   Q u e s t i o n   # 5  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   w h e t h e r   t h e   r e a c t i o n   c o u l d   b e   d u e   t o   t h e   p a t i e n t   c u r r e n t   c l i n i c a l   c o n d i t i o n .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e _ q u e s t i o n _ n u m b e r 6  |  1 6  |  L i k e   Q u e s t i o n   # 6  | {::nomarkdown}  T h i s   q u e s t i o n   d e t e r m i n e s   i f   t h e   r e a c t i o n   r e a p p e a r e d   a f t e r   t h e   r e a c t a n t   w a s   r e a d m i n i s t e r e d . \ r w a s   r e a d m i n i s t e r e d .  {:/} |  B O O L E A N  |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-|  l i k e l i h o o d  |  1 7  |  L i k e l i h o o d  | {::nomarkdown}  I f   t h i s   i s   a n   o b s e r v e d   d r u g   a l l e r g y / a d v e r s e   r e a c t i o n ,   t h e n   t h i s   i s   t h e \ r l i k e l i h o o d   t h a t   t h i s   i s   a n   a d v e r s e   r e a c t i o n .     T h e   d a t a   f o r   t h i s   f i e l d   i s \ r b a s e d   o n   a n   a l g o r i t h m   u s e d   b y   t h e   F D A .  {:/} |  E N U M E R A T I O N  |  |  | {::nomarkdown}<dl><dt>1</dt><dd>REMOTE</dd><dt>2</dt><dd>POSSIBLE</dd><dt>4</dt><dd>HIGHLY PROBABLE</dd><dt>3</dt><dd>PROBABLE</dd></dl>{:/} | 
+| suspected_agent | .01 | Suspected Agent | {::nomarkdown}This field indicates one of the suspected agents for this observed reaction.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| daily_dose | 1 | Daily Dose | {::nomarkdown}This field contains the daily dosage for this suspected agent.{:/} | STRING |  |  |  | 
+| sig | 1.5 | Sig | {::nomarkdown}This file contains the SIG code that indicates how this drug is to be given.{:/} | STRING |  |  |  | 
+| route_of_administration | 2 | Route Of Administration | {::nomarkdown}This is the route of administration for this suspected agent.{:/} | STRING |  |  |  | 
+| indications_for_use | 3 | Indications For Use | {::nomarkdown}This field indicates the reasoning for a particular agent.{:/} | STRING |  |  |  | 
+| start_date_of_administration | 4 | Start Date Of Administration | {::nomarkdown}This field contains the date a patient was first given the suspected agent.{:/} | DATE-TIME |  |  |  | 
+| stop_date_of_administration | 5 | Stop Date Of Administration | {::nomarkdown}This field contains the stop date for a suspected agent.{:/} | DATE-TIME |  |  |  | 
+| manufacturer | 7 | Manufacturer | {::nomarkdown}This field contains the name of the manufacturer of the suspected agent.{:/} | STRING |  |  |  | 
+| lot_number | 8 | Lot # | {::nomarkdown}This field contains the lot # for a suspected agent.{:/} | STRING |  |  |  | 
+| number_of_previous_doses | 9 | Number Of Previous Doses | {::nomarkdown}This field contains the total number of doses of this suspected agent that<br/>were given to the patient prior to the reaction.{:/} | NUMERIC |  |  |  | 
+| last_fill_dt | 10 | Last Fill Dt | {::nomarkdown}This field is the date that this agent was last filled.{:/} | DATE-TIME |  |  |  | 
+| expiration_date | 10.1 | Expiration Date | {::nomarkdown}This is the date that the suspected agent is to expire.{:/} | DATE-TIME |  |  |  | 
+| ndc_number | 10.2 | Ndc # | {::nomarkdown}This is the NDC (National Drug Code) of this agent.{:/} | STRING |  |  |  | 
+| like_question_number1 | 11 | Like Question #1 | {::nomarkdown}This question determines whether this reaction normally occurs with this reactant.<br/>reactant.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| like_question_number2 | 12 | Like Question #2 | {::nomarkdown}This question determines whether administration of the reactant was stopped.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| like_question_number3 | 13 | Like Question #3 | {::nomarkdown}This question determines if the reaction stopped when the administration of the reactant was terminated.<br/>the reactant was terminated.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| like_question_number4 | 14 | Like Question #4 | {::nomarkdown}This question determines whether the reactant was readministered.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| like_question_number5 | 15 | Like Question #5 | {::nomarkdown}This question determines whether the reaction could be due to the patient current clinical condition.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| like_question_number6 | 16 | Like Question #6 | {::nomarkdown}This question determines if the reaction reappeared after the reactant was readministered.<br/>was readministered.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+| likelihood | 17 | Likelihood | {::nomarkdown}If this is an observed drug allergy/adverse reaction, then this is the<br/>likelihood that this is an adverse reaction.  The data for this field is<br/>based on an algorithm used by the FDA.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>REMOTE</dd><dt>2</dt><dd>POSSIBLE</dd><dt>4</dt><dd>HIGHLY PROBABLE</dd><dt>3</dt><dd>PROBABLE</dd></dl>{:/} | 
 
 ## <a name="Relevant_Test_lab_Data-120_8504"></a>Relevant_Test_lab_Data-120_8504 
 
 <dl>
-<dt>id</dt><dd> R e l e v a n t _ T e s t _ l a b _ D a t a - 1 2 0 _ 8 5 0 4 </dd>
-<dt>label</dt><dd> R e l e v a n t   T e s t / l a b   D a t a </dd>
+<dt>id</dt><dd>Relevant_Test_lab_Data-120_8504</dd>
+<dt>label</dt><dd>Relevant Test/lab Data</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  t e s t  |  . 0 1  |  T e s t  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   a   p a r t i c u l a r   t e s t / l a b   d a t a   f o r   t h i s   o b s e r v e d   r e a c t i o n .  {:/} |  S T R I N G  |  | REQUIRED, INDEXED |  | 
-|  r e s u l t s  |  1  |  R e s u l t s  | {::nomarkdown}  T h i s   f i e l d   w i l l   c o n t a i n   t h e   r e s u l t s   f o r   t h e   p a r t i c u l a r   t e s t .  {:/} |  S T R I N G  |  |  |  | 
-|  c o l l e c t i o n _ d _ t  |  2  |  C o l l e c t i o n   D / t  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   d a t e   t h e   s a m p l e   w a s   c o l l e c t e d   f r o m   t h e   p a t i e n t .  {:/} |  D A T E - T I M E  |  |  |  | 
+| test | .01 | Test | {::nomarkdown}This field contains a particular test/lab data for this observed reaction.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| results | 1 | Results | {::nomarkdown}This field will contain the results for the particular test.{:/} | STRING |  |  |  | 
+| collection_d_t | 2 | Collection D/t | {::nomarkdown}This field is the date the sample was collected from the patient.{:/} | DATE-TIME |  |  |  | 
 
 ## <a name="Concomitant_Drugs-120_8513"></a>Concomitant_Drugs-120_8513 
 
 <dl>
-<dt>id</dt><dd> C o n c o m i t a n t _ D r u g s - 1 2 0 _ 8 5 1 3 </dd>
-<dt>label</dt><dd> C o n c o m i t a n t   D r u g s </dd>
+<dt>id</dt><dd>Concomitant_Drugs-120_8513</dd>
+<dt>label</dt><dd>Concomitant Drugs</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  c o n c o m i t a n t _ d r u g s  |  . 0 1  |  C o n c o m i t a n t   D r u g s  | {::nomarkdown}  T h i s   f i e l d   c o n t a i n s   t h e   d r u g ( s )   t h i s   p a t i e n t   w a s   t a k i n g   a t   t h e   t i m e \ r o f   t h e   r e a c t i o n .  {:/} |  S T R I N G  |  | REQUIRED, INDEXED |  | 
-|  s t a r t _ d a t e _ o f _ a d m i n i s t r a t i o n  |  1  |  S t a r t   D a t e   O f   A d m i n i s t r a t i o n  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   d a t e   t h i s   d r u g   w a s   f i r s t   g i v e n   t o   t h e   p a t i e n t .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  s t o p _ d a t e _ o f _ a d m i n i s t r a t i o n  |  2  |  S t o p   D a t e   O f   A d m i n i s t r a t i o n  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   l a s t   d a y   t h e   p a t i e n t   w a s   g i v e n   t h i s   d r u g .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  l a s t _ f i l l _ d t  |  3  |  L a s t   F i l l   D t  | {::nomarkdown}  T h i s   f i e l d   i s   t h e   l a s t   d a t e   t h a t   t h i s   d r u g   w a s   f i l l e d .  {:/} |  D A T E - T I M E  |  |  |  | 
-|  s i g  |  4  |  S i g  | {::nomarkdown}  T h i s   f i l e   c o n t a i n s   t h e   S I G   c o d e   t h a t   i n d i c a t e s   h o w   t h i s   d r u g   i s   t o   b e   g i v e n .  {:/} |  S T R I N G  |  |  |  | 
+| concomitant_drugs | .01 | Concomitant Drugs | {::nomarkdown}This field contains the drug(s) this patient was taking at the time<br/>of the reaction.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| start_date_of_administration | 1 | Start Date Of Administration | {::nomarkdown}This field is the date this drug was first given to the patient.{:/} | DATE-TIME |  |  |  | 
+| stop_date_of_administration | 2 | Stop Date Of Administration | {::nomarkdown}This field is the last day the patient was given this drug.{:/} | DATE-TIME |  |  |  | 
+| last_fill_dt | 3 | Last Fill Dt | {::nomarkdown}This field is the last date that this drug was filled.{:/} | DATE-TIME |  |  |  | 
+| sig | 4 | Sig | {::nomarkdown}This file contains the SIG code that indicates how this drug is to be given.{:/} | STRING |  |  |  | 
 
 ## <a name="Pt_Addendum-120_85315"></a>Pt_Addendum-120_85315 
 
 <dl>
-<dt>id</dt><dd> P t _ A d d e n d u m - 1 2 0 _ 8 5 3 1 5 </dd>
-<dt>label</dt><dd> P & t   A d d e n d u m </dd>
+<dt>id</dt><dd>Pt_Addendum-120_85315</dd>
+<dt>label</dt><dd>P&t Addendum</dd>
 </dl>
 
 ### Properties
 
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  d a t e _ t i m e _ e n t e r e d  |  . 0 1  |  D a t e / t i m e   E n t e r e d  | {::nomarkdown}  T h i s   i s   t h e   d a t e / t i m e   t h e   c o m m e n t   w a s   e n t e r e d .  {:/} |  D A T E - T I M E  |  | REQUIRED, INDEXED |  | 
-|  a d d e n d u m  |  1  |  A d d e n d u m  | {::nomarkdown}  T h i s   i s   t h e   a c t u a l   c o m m e n t   t h a t   i s   b e i n g   a d d e d .  {:/} |  S T R I N G  |  |  |  | 
+| date_time_entered | .01 | Date/time Entered | {::nomarkdown}This is the date/time the comment was entered.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
+| addendum | 1 | Addendum | {::nomarkdown}This is the actual comment that is being added.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 2nd 2017, 6:44:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 2nd 2017, 6:55:25 am</p>{:/}
