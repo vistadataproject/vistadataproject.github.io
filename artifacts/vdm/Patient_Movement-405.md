@@ -68,4 +68,4 @@ title: VDM documentation
 | va_cost_to_travel | 11500.06 | VA Cost To Travel | {::nomarkdown}Enter the cost of travel to move this VA patient to a non-VA facility.<br/>This question is only asked if the patient was transferred in order to<br/>make room for an operation desert shield patient.{:/} | NUMERIC |  |  |  | 
 | displaced_patient | 11500.07 | Displaced Patient | {::nomarkdown}Enter the entry in the DISPLACED PATIENT file which corresponds to this<br/>discharge.{:/} | POINTER |  | INDEXED | Displaced_Patient-11500_3 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:18:28 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

@@ -63,6 +63,36 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | accession_area | .01 | Accession Area | {::nomarkdown}  Which accession area does the test belong that you want have<br/>accession WKLD codes triggered.{:/} | POINTER |  | REQUIRED | Accession-68 | 
-| lab_test | 1 | Lab Test | {::nomarkdown} Enter a list of lab test that should trigger workload capture.{:/} | [OBJECT] |  |  | {id:Lab_Test-62_21,fmId:62.21,label:Lab Test,properties:[{id:lab_test,fmId:.01,label:Lab Test,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:wkld_code,fmId:1,label:Wkld Code,description:  Enter a list of WKLD code you wish to have counted when this\rtest is accessioned. This is an alternate point for entering\raccession WKLD codes.  It is simular to accession WKLD codes but\ris by accession area and test.\r   This field is to be used when it is not desirable to enter\rcollection samples to a test in file 60 (LABORATORY TEST). It\ris particularly useful in Microbioloby type test.,datatype:[OBJECT],range:{id:Wkld_Code-62_211,fmId:62.211,label:Wkld Code,properties:[{id:wkld_code,fmId:.01,label:Wkld Code,description: Enter the WKLD code for thi,datatype:POINTER,required:true,range:{id:Wkld_Code-64}},{id:test_multiply_factor,fmId:2,label:Test Multiply Factor,description:  This field contains the a number by which the count\rshould be multiplied by.,datatype:NUMERIC}]}}]} | 
+| lab_test | 1 | Lab Test | {::nomarkdown} Enter a list of lab test that should trigger workload capture.{:/} | [OBJECT] |  |  | [Lab_Test-62_21](#Lab_Test-62_21)  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+## <a name="Lab_Test-62_21"></a>Lab_Test-62_21 
+
+<dl>
+<dt>id</dt><dd>Lab_Test-62_21</dd>
+<dt>fmId</dt><dd>62.21</dd>
+<dt>label</dt><dd>Lab Test</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| lab_test | .01 | Lab Test |  | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+| wkld_code | 1 | Wkld Code | {::nomarkdown}  Enter a list of WKLD code you wish to have counted when this<br/>test is accessioned. This is an alternate point for entering<br/>accession WKLD codes.  It is simular to accession WKLD codes but<br/>is by accession area and test.<br/>   This field is to be used when it is not desirable to enter<br/>collection samples to a test in file 60 (LABORATORY TEST). It<br/>is particularly useful in Microbioloby type test.{:/} | [OBJECT] |  |  | [Wkld_Code-62_211](#Wkld_Code-62_211)  | 
+
+## <a name="Wkld_Code-62_211"></a>Wkld_Code-62_211 
+
+<dl>
+<dt>id</dt><dd>Wkld_Code-62_211</dd>
+<dt>fmId</dt><dd>62.211</dd>
+<dt>label</dt><dd>Wkld Code</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| wkld_code | .01 | Wkld Code | {::nomarkdown} Enter the WKLD code for thi{:/} | POINTER |  | REQUIRED | Wkld_Code-64 | 
+| test_multiply_factor | 2 | Test Multiply Factor | {::nomarkdown}  This field contains the a number by which the count<br/>should be multiplied by.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

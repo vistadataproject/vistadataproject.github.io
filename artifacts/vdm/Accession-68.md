@@ -66,7 +66,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | instrumentation_controls | .01 | Instrumentation Controls | {::nomarkdown}You may only change the selection you have chosen by \selecting\<br/>another one.  If you wish to change THIS one, you must delete it first.<br/>(The internal FileMan number is significant, so we can't change the text.){:/} | POINTER |  | REQUIRED | Auto_Instrument-62_4 | 
-| control_name | 1 | Control Name | {::nomarkdown}The control that should always be placed with the accession number to be<br/>defined with the ACC # field .001{:/} | [OBJECT] |  |  | {id:Control_Name-68_1,fmId:68.1,label:Control Name,properties:[{id:acc_number,fmId:.001,label:Acc #,description:The numeric part of the accession to be assigned for the indicated\rcontrol, if the number is available and automatic accessioning of\rcontrols is tasked.,datatype:IEN},{id:control_name,fmId:.01,label:Control Name,description:The control that should always be placed with the accession number to be defined with the ACC # field .001.,datatype:POINTER,required:true,range:{id:Lab_Control_Name-62_3}}]} | 
+| control_name | 1 | Control Name | {::nomarkdown}The control that should always be placed with the accession number to be<br/>defined with the ACC # field .001{:/} | [OBJECT] |  |  | [Control_Name-68_1](#Control_Name-68_1)  | 
 
 ## <a name="Date-68_01"></a>Date-68_01 
 
@@ -81,12 +81,193 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | date | .01 | Date | {::nomarkdown}The date of the accession.{:/} | DATE-TIME |  | REQUIRED |  | 
-| accession_number | 1 | Accession Number | {::nomarkdown}The numeric part of the accession.{:/} | [OBJECT] |  |  | {id:Accession_Number-68_02,fmId:68.02,label:Accession Number,properties:[{id:log,fmId:.001,label:Log,description:The numeric part of the accession.,datatype:IEN},{id:lrdfn,fmId:.01,label:Lrdfn,description:The internal pointer to file 63 is stored here.,datatype:POINTER,required:true,range:{id:Lab_Data-63}},{id:file_number,fmId:1,label:File #,description:The pointer to the File of Files for the entity in field .01 is stored \rhere.,datatype:POINTER,range:{id:File-1}},{id:original_accn_date,fmId:2,label:Original Accn Date,description:The date part of the original accession is stored here.,datatype:DATE-TIME},{id:date_ordered,fmId:3,label:Date Ordered,description:The date the order was placed is stored here.,datatype:DATE-TIME},{id:specimen_number,fmId:4,label:Specimen Number,description:The internal specimen number is stored here.,datatype:NUMERIC},{id:identity,fmId:5,label:Identity,description:The identity from e.g. reference labs etc. is stored here.,datatype:STRING,indexed:true},{id:report_routing_location,fmId:6,label:Report Routing Location,description:The service/location from which the original order came.  The report\ris routed back to this location.,datatype:STRING,required:true},{id:provider,fmId:6.5,label:Provider,description:The internal number of the provider requesting the test(s) is stored here.,datatype:POINTER,required:true,range:{id:New_Person-200}},{id:treating_speciality,fmId:6.6,label:Treating Speciality,description: The treating specialty of the location requesting the test.,datatype:POINTER,required:true,range:{id:Facility_Treating_Specialty-45_7}},{id:login_person,fmId:6.7,label:Log-in Person,description:The pointer to the person (NEW PERSON file) creating this accession is stored here.,datatype:POINTER,range:{id:New_Person-200}},{id:hardware_special_numbers,fmId:8,label:Hardware Special Numbers,description:Data from automated instruments may be stored here for debugging purposes.,datatype:STRING},{id:draw_time,fmId:9,label:Draw Time,description:The date/time the specimen was taken.,datatype:DATE-TIME},{id:date_time_obtained_inexact,fmId:10,label:Date/time Obtained Inexact,description:This field has a \NO\ if the draw time is estimated or unknown.,datatype:BOOLEAN,range:{false:1,true:0}},{id:tests,fmId:11,label:Tests,description:The pointers to the Laboratory Tests for this accession.,datatype:[OBJECT],range:{id:Tests-68_04,fmId:68.04,label:Tests,properties:[{id:_test,fmId:.01,label: Test,description:The pointers to the Laboratory Tests for this accession.,datatype:POINTER,indexed:true,required:true,range:{id:Laboratory_Test-60}},{id:urgency_of_test,fmId:1,label:Urgency Of Test,description:The urgency of the test being completed, e.g. stat, routine, etc.\r  There is a special urgency used only for workload recording called\rWKL. This urgency indicates that this test was not ordered directly,\rbut was added to the accession to support certain workload functions.,datatype:POINTER,required:true,range:{id:Urgency-62_05}},{id:load_list_entry,fmId:2,label:Load List Entry,description:The load/work list location is stored here in \;\ piece format.\r\load list pointer;tray;cup\,datatype:STRING},{id:technologist,fmId:3,label:Technologist,description: The DUZ of the person verifying the test.\rNOTE: This field previously contained technologist initials.\rConverted with the release of version 5.2.,datatype:POINTER,range:{id:New_Person-200}},{id:complete_date,fmId:4,label:Complete Date,description:If null, the test is incomplete.  Otherwise, it is the date/time of completion.,datatype:DATE-TIME},{id:disposition,fmId:5,label:Disposition,datatype:STRING},{id:tally_to_wkld,fmId:5.1,label:Tally To Wkld,description:If test was counted for WKLD workload, workload file entry\r is entered here.\r This flag prevents the test from being counted\r more than once.\rUPDATE THIS FIELD AUTOMATICALLY.,datatype:ENUMERATION,range:{YES:1,HAS NOT:0}},{id:wkld_code,fmId:6,label:Wkld Code,description: This sub file is devoted entirely to workload functions. The data\ris stuffed automatically by routines at the time of verification of the\rtest.,datatype:[OBJECT],range:{id:Wkld_Code-68_14,fmId:68.14,label:Wkld Code,properties:[{id:wkld_code,fmId:.01,label:Wkld Code,description:WKLD codes associated with test/procedure are entered here.,datatype:POINTER,indexed:true,required:true,range:{id:Wkld_Code-64}},{id:test_multiply_factor,fmId:.02,label:Test Multiply Factor,description:Enter the number of times the WKLD code is used for the test/procedure.\rto obtain the correct total weight. The default value is 1. This number\ris used to determine the total weight to credited for this test.\r This is the number of times this test has been counted.,datatype:NUMERIC},{id:wkld_code_counted,fmId:.03,label:Wkld Code Counted,description: This field is used by the workload compiling routine to prevent the\rWKLD code from being counted twice. The number 1 indicates the weight\rhas been captured for this WKLD code.\r  NOTE: THIS FIELD SHOULD NOT BE MANUALLY EDITED.,datatype:BOOLEAN,range:{false:0,true:1}},{id:wkld_code_tally,fmId:.04,label:Wkld Code Tally,description:A WKLD code may have several individual counts.\r Each time a count is made it is added to the WKLD\r code tally and the WKLD CODE COUNTED flag is set to zero.\r This field is utilized when additional work has been added to a part\ricular WKLD code. Microbioloby is a area which many require a WKLD code\rbe counted more than once. This field then contains the total number\rof times the WKLD code weight has been multiplied.\r  NOTE: THIS FIELD SHOULD NOT BE MANUALLY EDITED.,datatype:NUMERIC},{id:wkld_code_repeat_count,fmId:.05,label:Wkld Code Repeat Count,description:  This field is not being presently used. It may be used in the\rfuture to automatically capture repeat workload. Another field\rin ^LRO(64.1, is being used to capture this data from manual entry.,datatype:NUMERIC},{id:completion_time,fmId:1,label:Completion Time,description: This field conatins the completion time for this individual WKLD code\rprocedure. It calulated at the time of verification by the routines\rwhich stuff the data into this field.,datatype:DATE-TIME},{id:user,fmId:2,label:User,description:  This field contains the person (NEW PERSON file) which verified this \rparticular portion of the test. This field is automatically stuffed at \rthe time of verification.,datatype:POINTER,range:{id:New_Person-200}},{id:institution,fmId:3,label:Institution,description:  This is the institution the verifying person used when logging on\rto the system. This field allow the workload from Multi-Div sites\rto be stored and counted separately.,datatype:POINTER,range:{id:Institution-4}},{id:major_section,fmId:4,label:Major Section,description:  This field contains the accession area which should recieve credit for\rthis workload. ie CHEMISTRY,datatype:POINTER,range:{id:Accession-68}},{id:lab_subsection,fmId:5,label:Lab Subsection,description: This the second level used for identifying where workload credit should\rbe credited.\r ie. SPECIAL CHEMISTRY,datatype:POINTER,range:{id:Accession-68}},{id:work_area,fmId:6,label:Work Area,description: This is the lowest level used to credit workload. This field may be\rthe same as the LAB SUBSECTION entry.\r i.e., ELECTROPHORESIS,datatype:POINTER,range:{id:Accession-68}},{id:manual_edit,fmId:12,label:Manual Edit,description: If this data is entered manually via a edit template. This field would\rindicate if the data was not stuffed automatically.,datatype:BOOLEAN,range:{true:1}}]}},{id:identity,fmId:7,label:*identity,description:Will deleted in future versions.,datatype:STRING,deprecated:true},{id:wkld_suffix,fmId:8,label:Wkld Suffix,description: This field contains the WKLD code suffix used to identify the method\rused to verify this particular test. The suffix is stuffed at\rthe time of verification automatically. This field can be used to sort\rmethods used to assay various test.\r  The decimal point of the WKLD code suffix is stripped off.,datatype:STRING},{id:parent_test,fmId:8.1,label:Parent Test,description: This field contains the parent ordered test. In the case of panel test,\rthis field will contain the original ordered test.,datatype:POINTER,range:{id:Laboratory_Test-60}},{id:shipping_manifest,fmId:9,label:Shipping Manifest,description:This fields is used at the collection site to determine the exact\rplacement of each test.  This field will contain the shipping manifest\rcode for referral or send out lab tests.  For all local tests the field\rwill be null.,datatype:POINTER,range:{id:Lab_Shipping_Manifest-62_8}}]}},{id:lab_arrival_time,fmId:12,label:Lab Arrival Time,description:The date/time the specimen arrived at the lab.,datatype:DATE-TIME,indexed:true},{id:date_time_results_available,fmId:13,label:Date/time Results Available,description:The date/time all results for the accession are available.,datatype:DATE-TIME},{id:inverse_date,fmId:13.5,label:Inverse Date,description:9999999 minus the internal entry in field 9,datatype:DATE-TIME},{id:comment,fmId:13.6,label:Comment,description:A one line comment for the accession.,datatype:STRING},{id:order_number,fmId:14,label:Order #,description:The original order number is stored here.,datatype:STRING,indexed:true},{id:accession,fmId:15,label:Accession,description:The printable form of the Accession is stored here.,datatype:STRING},{id:in_common_accession,fmId:15.1,label:In Common Accession,description:When this accession area is 'in common' with another accession\rarea the printable form of the 'in common' accession is stored\rhere.,datatype:STRING},{id:uid,fmId:16,label:Uid,description: This is the UID used by the HOST LEDI system for this order/accession.\r \rThis field is used by the LEDI software.,datatype:STRING,indexed:true},{id:ordering_site,fmId:16.1,label:Ordering Site,description: This field contains the pointer to the INSTITUTION file for the\rMailMan domain location of the computer system. All LEDI results are\rreturned to the Ordering computer system.\r \rLocation to send LEDI HL7 result messages.\r \rThis field is used by LEDI software.,datatype:POINTER,indexed:true,range:{id:Institution-4}},{id:collecting_site,fmId:16.2,label:Collecting Site,description: This field contain the pointer to the INSTITUTION file for the actual\rcollection site. The ordering site is the MailMan location of the computer\rsystem. MailMan domain location and the collecting site may be different.\r \rThis field is used by LEDI software.,datatype:POINTER,range:{id:Institution-4}},{id:host_uid,fmId:16.3,label:Host Uid,description: Each Order/Accession is given a HOST UID. The UID is stored in this\rlocation. If LEDI software is used to accession specimens, usually the\rcollecting sites UID is used to track specimens. If the collecting UID\rconflict is the HOST system number sequence, the HOST UID will be used\rinstead of the collecting site's UID.\r \rThis field is used by LEDI software.,datatype:STRING,indexed:true},{id:ordering_site_uid,fmId:16.4,label:Ordering Site Uid,description: This field contains the collecting sites UID for this specimen.\r \rThis field is used by LEDI software.,datatype:STRING},{id:div,fmId:26,label:Div,description: This field contains the division of the person ordering the test\rfor this accession number. The DUZ(2) is used to determine the division\rpointer. In some cases this field may be blank, example auto accession\rcontrols.,datatype:POINTER,indexed:true,range:{id:Institution-4}},{id:pce_enc_number,fmId:30,label:Pce Enc #,description:This field contains a list of PCE Encounters generated for this accession.\rIf there are multiple encounter numbers for this accession, they are\rseparated by ';'.\r \rThis field is only populated if professional service PCE workload is\rgenerated. This is usually the type of PCE workload generated by\rPathologist reporting anatomical pathology services.\r \rPCE workload is only generated for those hospital locations with the type\rof clinic, module or other. No PCE workload is generated for in-patient\rlocations.,datatype:STRING},{id:specimen,fmId:50,label:Specimen,description:The site/specimen from the Topography Field file.  There may be more\rthan one specimen for certain types of accessions.,datatype:[OBJECT],range:{id:Specimen-68_05,fmId:68.05,label:Specimen,properties:[{id:specimen,fmId:.01,label:Specimen,description:The site/specimen from the Topography field file.  There may be\rmore than one specimen for certain types of accessions.,datatype:POINTER,required:true,range:{id:Topography_Field-61}},{id:collection_sample,fmId:1,label:Collection Sample,description:The collection sample is from file 62.,datatype:POINTER,range:{id:Collection_Sample-62}},{id:test,fmId:2,label:Test,description: This field contains the test ordered for this patient/specimen,datatype:[OBJECT],range:{id:Test-68_13,fmId:68.13,label:Test,properties:[{id:test,fmId:.01,label:Test,description:The procedures to be done on a particular specimen.,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:tissue_blocks,fmId:1,label:Tissue Block(s),description:Used for path examination.,datatype:STRING},{id:total_slides,fmId:2,label:Total Slides,description: This field contains the number of slides used to process this specimen.,datatype:NUMERIC}]}}]}},{id:number_of_slides,fmId:60,label:Number Of Slides,description:The number of slides prepared for path examination.,datatype:NUMERIC},{id:paraffin_blocks,fmId:61,label:Paraffin Block(s),description:The number of paraffin blocks prepared for path examination.,datatype:NUMERIC},{id:progress_notes,fmId:80,label:Progress Notes,description:Progress notes on the accession.,datatype:[STRING]},{id:current_accession_date,fmId:91,label:Current Accession Date,description:This field is set by the roll-over routine in the original accession\rto point to the current accession date for accessions that have\rrolled over.,datatype:DATE-TIME},{id:location_type,fmId:92,label:Location Type,description:  This field holds the type of hospital location.  $P(^SC(X,0),U,3)\rIt is used primarily for WKLD calculations. Since the patient\rmay be discharged or admitted before the WKLD calculation routines run.\rThis field holds a permanent location type.,datatype:ENUMERATION,range:{NON-CLINIC STOP:N,OPERATION ROOM:OR,MODULE:M,CLINIC:C,OTHER:Z,FILE AREA:F,IMAGING:I,WARD:W}},{id:count_for_wkld,fmId:93,label:Count For Wkld,description: This field is set to 1 if this accession has been counted for \rworkload. This is set automatically by the tally routines.\r  NOTE: THIS FIELD SHOULD NOT BE SET MANUALLY.,datatype:ENUMERATION,range:{YES:1,no:0,yes:1,NO:0}},{id:ordering_location,fmId:94,label:Ordering Location,description: This field contains the location placing the order for this patient.,datatype:POINTER,range:{id:Hospital_Location-44}}]} | 
+| accession_number | 1 | Accession Number | {::nomarkdown}The numeric part of the accession.{:/} | [OBJECT] |  |  | [Accession_Number-68_02](#Accession_Number-68_02)  | 
 | current_initials | 2 | *current Initials | {::nomarkdown}Will be deleted in future versions.<br/>the test(s).{:/} | STRING |  |  |  | 
 | current_accession_number | 3 | Current Accession Number | {::nomarkdown}The last used accession number.{:/} | STRING |  |  |  | 
 | current_identity | 4 | *current Identity | {::nomarkdown}No longer used.  Will be deleted in later versions. 1/89.{:/} | STRING |  |  |  | 
 | current_verify_acc_number | 5 | Current Verify Acc # | {::nomarkdown}The last verified accession number.{:/} | NUMERIC |  |  |  | 
-| bull_algorithm_control_data | 6 | Bull Algorithm Control Data | {::nomarkdown}Data is stored here for use in Bull's algorithm.{:/} | [OBJECT] |  |  | {id:Bull_Algorithm_Control_Data-68_07,fmId:68.07,label:Bull Algorithm Control Data,properties:[{id:method_control_data,fmId:.01,label:Method Control Data,description:Data is stored here for use in Bull's algorithm.,datatype:POINTER,required:true,range:{id:Auto_Instrument-62_4}},{id:control_data,fmId:1,label:Control Data,description:Data from the running average of Bull's algorithm is stored here.,datatype:[STRING]},{id:mean_data_value_1,fmId:2,label:Mean Data Value 1,description:The Mean Data Value 1 from the Auto Instrument file is reproduced here.,datatype:NUMERIC},{id:mean_data_value_2,fmId:3,label:Mean Data Value 2,description:The Mean Data Value 2 from the Auto Instrument file is reproduced here.,datatype:NUMERIC},{id:mean_data_value_3,fmId:4,label:Mean Data Value 3,description:The Mean Data Value 3 from the Auto Instrument file is reproduced here.,datatype:NUMERIC}]} | 
-| multirule_va_qc | 7 | Multi-rule VA Qc | {::nomarkdown}Quality control comparisons based on Westergard's suggested use of<br/>the Multi-rule Shewhart determinations are stored under this multiple.{:/} | [OBJECT] |  |  | {id:Multirule_VA_Qc-68_11,fmId:68.11,label:Multi-rule VA Qc,properties:[{id:control_name,fmId:.01,label:Control Name,description:The name of the Quality Control to be used in Westergard's suggested\ruse of the Multi-rule Shewhart determinations.,datatype:POINTER,required:true,range:{id:Lab_Control_Name-62_3}},{id:control_data,fmId:1,label:Control Data,description:Data from the Multi-rule Shewhart determinations are stored here for\rintermediate computations.,datatype:[POINTER],range:{id:Laboratory_Test-60}},{id:reject_reason,fmId:2,label:Reject Reason,description:A brief description of the reason to re-examine the controls.,datatype:STRING}]} | 
+| bull_algorithm_control_data | 6 | Bull Algorithm Control Data | {::nomarkdown}Data is stored here for use in Bull's algorithm.{:/} | [OBJECT] |  |  | [Bull_Algorithm_Control_Data-68_07](#Bull_Algorithm_Control_Data-68_07)  | 
+| multirule_va_qc | 7 | Multi-rule VA Qc | {::nomarkdown}Quality control comparisons based on Westergard's suggested use of<br/>the Multi-rule Shewhart determinations are stored under this multiple.{:/} | [OBJECT] |  |  | [Multirule_VA_Qc-68_11](#Multirule_VA_Qc-68_11)  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+## <a name="Control_Name-68_1"></a>Control_Name-68_1 
+
+<dl>
+<dt>id</dt><dd>Control_Name-68_1</dd>
+<dt>fmId</dt><dd>68.1</dd>
+<dt>label</dt><dd>Control Name</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| acc_number | .001 | Acc # | {::nomarkdown}The numeric part of the accession to be assigned for the indicated<br/>control, if the number is available and automatic accessioning of<br/>controls is tasked.{:/} | IEN |  |  |  | 
+| control_name | .01 | Control Name | {::nomarkdown}The control that should always be placed with the accession number to be defined with the ACC # field .001.{:/} | POINTER |  | REQUIRED | Lab_Control_Name-62_3 | 
+
+## <a name="Accession_Number-68_02"></a>Accession_Number-68_02 
+
+<dl>
+<dt>id</dt><dd>Accession_Number-68_02</dd>
+<dt>fmId</dt><dd>68.02</dd>
+<dt>label</dt><dd>Accession Number</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| log | .001 | Log | {::nomarkdown}The numeric part of the accession.{:/} | IEN |  |  |  | 
+| lrdfn | .01 | Lrdfn | {::nomarkdown}The internal pointer to file 63 is stored here.{:/} | POINTER |  | REQUIRED | Lab_Data-63 | 
+| file_number | 1 | File # | {::nomarkdown}The pointer to the File of Files for the entity in field .01 is stored <br/>here.{:/} | POINTER |  |  | File-1 | 
+| original_accn_date | 2 | Original Accn Date | {::nomarkdown}The date part of the original accession is stored here.{:/} | DATE-TIME |  |  |  | 
+| date_ordered | 3 | Date Ordered | {::nomarkdown}The date the order was placed is stored here.{:/} | DATE-TIME |  |  |  | 
+| specimen_number | 4 | Specimen Number | {::nomarkdown}The internal specimen number is stored here.{:/} | NUMERIC |  |  |  | 
+| identity | 5 | Identity | {::nomarkdown}The identity from e.g. reference labs etc. is stored here.{:/} | STRING |  | INDEXED |  | 
+| report_routing_location | 6 | Report Routing Location | {::nomarkdown}The service/location from which the original order came.  The report<br/>is routed back to this location.{:/} | STRING |  | REQUIRED |  | 
+| provider | 6.5 | Provider | {::nomarkdown}The internal number of the provider requesting the test(s) is stored here.{:/} | POINTER |  | REQUIRED | [New_Person-200](New_Person-200.md) | 
+| treating_speciality | 6.6 | Treating Speciality | {::nomarkdown} The treating specialty of the location requesting the test.{:/} | POINTER |  | REQUIRED | Facility_Treating_Specialty-45_7 | 
+| login_person | 6.7 | Log-in Person | {::nomarkdown}The pointer to the person (NEW PERSON file) creating this accession is stored here.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| hardware_special_numbers | 8 | Hardware Special Numbers | {::nomarkdown}Data from automated instruments may be stored here for debugging purposes.{:/} | STRING |  |  |  | 
+| draw_time | 9 | Draw Time | {::nomarkdown}The date/time the specimen was taken.{:/} | DATE-TIME |  |  |  | 
+| date_time_obtained_inexact | 10 | Date/time Obtained Inexact | {::nomarkdown}This field has a \NO\ if the draw time is estimated or unknown.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
+| tests | 11 | Tests | {::nomarkdown}The pointers to the Laboratory Tests for this accession.{:/} | [OBJECT] |  |  | [Tests-68_04](#Tests-68_04)  | 
+| lab_arrival_time | 12 | Lab Arrival Time | {::nomarkdown}The date/time the specimen arrived at the lab.{:/} | DATE-TIME |  | INDEXED |  | 
+| date_time_results_available | 13 | Date/time Results Available | {::nomarkdown}The date/time all results for the accession are available.{:/} | DATE-TIME |  |  |  | 
+| inverse_date | 13.5 | Inverse Date | {::nomarkdown}9999999 minus the internal entry in field 9{:/} | DATE-TIME |  |  |  | 
+| comment | 13.6 | Comment | {::nomarkdown}A one line comment for the accession.{:/} | STRING |  |  |  | 
+| order_number | 14 | Order # | {::nomarkdown}The original order number is stored here.{:/} | STRING |  | INDEXED |  | 
+| accession | 15 | Accession | {::nomarkdown}The printable form of the Accession is stored here.{:/} | STRING |  |  |  | 
+| in_common_accession | 15.1 | In Common Accession | {::nomarkdown}When this accession area is 'in common' with another accession<br/>area the printable form of the 'in common' accession is stored<br/>here.{:/} | STRING |  |  |  | 
+| uid | 16 | Uid | {::nomarkdown} This is the UID used by the HOST LEDI system for this order/accession.<br/> <br/>This field is used by the LEDI software.{:/} | STRING |  | INDEXED |  | 
+| ordering_site | 16.1 | Ordering Site | {::nomarkdown} This field contains the pointer to the INSTITUTION file for the<br/>MailMan domain location of the computer system. All LEDI results are<br/>returned to the Ordering computer system.<br/> <br/>Location to send LEDI HL7 result messages.<br/> <br/>This field is used by LEDI software.{:/} | POINTER |  | INDEXED | [Institution-4](Institution-4.md) | 
+| collecting_site | 16.2 | Collecting Site | {::nomarkdown} This field contain the pointer to the INSTITUTION file for the actual<br/>collection site. The ordering site is the MailMan location of the computer<br/>system. MailMan domain location and the collecting site may be different.<br/> <br/>This field is used by LEDI software.{:/} | POINTER |  |  | [Institution-4](Institution-4.md) | 
+| host_uid | 16.3 | Host Uid | {::nomarkdown} Each Order/Accession is given a HOST UID. The UID is stored in this<br/>location. If LEDI software is used to accession specimens, usually the<br/>collecting sites UID is used to track specimens. If the collecting UID<br/>conflict is the HOST system number sequence, the HOST UID will be used<br/>instead of the collecting site's UID.<br/> <br/>This field is used by LEDI software.{:/} | STRING |  | INDEXED |  | 
+| ordering_site_uid | 16.4 | Ordering Site Uid | {::nomarkdown} This field contains the collecting sites UID for this specimen.<br/> <br/>This field is used by LEDI software.{:/} | STRING |  |  |  | 
+| div | 26 | Div | {::nomarkdown} This field contains the division of the person ordering the test<br/>for this accession number. The DUZ(2) is used to determine the division<br/>pointer. In some cases this field may be blank, example auto accession<br/>controls.{:/} | POINTER |  | INDEXED | [Institution-4](Institution-4.md) | 
+| pce_enc_number | 30 | Pce Enc # | {::nomarkdown}This field contains a list of PCE Encounters generated for this accession.<br/>If there are multiple encounter numbers for this accession, they are<br/>separated by ';'.<br/> <br/>This field is only populated if professional service PCE workload is<br/>generated. This is usually the type of PCE workload generated by<br/>Pathologist reporting anatomical pathology services.<br/> <br/>PCE workload is only generated for those hospital locations with the type<br/>of clinic, module or other. No PCE workload is generated for in-patient<br/>locations.{:/} | STRING |  |  |  | 
+| specimen | 50 | Specimen | {::nomarkdown}The site/specimen from the Topography Field file.  There may be more<br/>than one specimen for certain types of accessions.{:/} | [OBJECT] |  |  | [Specimen-68_05](#Specimen-68_05)  | 
+| number_of_slides | 60 | Number Of Slides | {::nomarkdown}The number of slides prepared for path examination.{:/} | NUMERIC |  |  |  | 
+| paraffin_blocks | 61 | Paraffin Block(s) | {::nomarkdown}The number of paraffin blocks prepared for path examination.{:/} | NUMERIC |  |  |  | 
+| progress_notes | 80 | Progress Notes | {::nomarkdown}Progress notes on the accession.{:/} | [STRING] |  |  |  | 
+| current_accession_date | 91 | Current Accession Date | {::nomarkdown}This field is set by the roll-over routine in the original accession<br/>to point to the current accession date for accessions that have<br/>rolled over.{:/} | DATE-TIME |  |  |  | 
+| location_type | 92 | Location Type | {::nomarkdown}  This field holds the type of hospital location.  $P(^SC(X,0),U,3)<br/>It is used primarily for WKLD calculations. Since the patient<br/>may be discharged or admitted before the WKLD calculation routines run.<br/>This field holds a permanent location type.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>N</dt><dd>NON-CLINIC STOP</dd><dt>OR</dt><dd>OPERATION ROOM</dd><dt>M</dt><dd>MODULE</dd><dt>C</dt><dd>CLINIC</dd><dt>Z</dt><dd>OTHER</dd><dt>F</dt><dd>FILE AREA</dd><dt>I</dt><dd>IMAGING</dd><dt>W</dt><dd>WARD</dd></dl>{:/} | 
+| count_for_wkld | 93 | Count For Wkld | {::nomarkdown} This field is set to 1 if this accession has been counted for <br/>workload. This is set automatically by the tally routines.<br/>  NOTE: THIS FIELD SHOULD NOT BE SET MANUALLY.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>YES</dd><dt>0</dt><dd>no</dd><dt>1</dt><dd>yes</dd><dt>0</dt><dd>NO</dd></dl>{:/} | 
+| ordering_location | 94 | Ordering Location | {::nomarkdown} This field contains the location placing the order for this patient.{:/} | POINTER |  |  | [Hospital_Location-44](Hospital_Location-44.md) | 
+
+## <a name="Bull_Algorithm_Control_Data-68_07"></a>Bull_Algorithm_Control_Data-68_07 
+
+<dl>
+<dt>id</dt><dd>Bull_Algorithm_Control_Data-68_07</dd>
+<dt>fmId</dt><dd>68.07</dd>
+<dt>label</dt><dd>Bull Algorithm Control Data</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| method_control_data | .01 | Method Control Data | {::nomarkdown}Data is stored here for use in Bull's algorithm.{:/} | POINTER |  | REQUIRED | Auto_Instrument-62_4 | 
+| control_data | 1 | Control Data | {::nomarkdown}Data from the running average of Bull's algorithm is stored here.{:/} | [STRING] |  |  |  | 
+| mean_data_value_1 | 2 | Mean Data Value 1 | {::nomarkdown}The Mean Data Value 1 from the Auto Instrument file is reproduced here.{:/} | NUMERIC |  |  |  | 
+| mean_data_value_2 | 3 | Mean Data Value 2 | {::nomarkdown}The Mean Data Value 2 from the Auto Instrument file is reproduced here.{:/} | NUMERIC |  |  |  | 
+| mean_data_value_3 | 4 | Mean Data Value 3 | {::nomarkdown}The Mean Data Value 3 from the Auto Instrument file is reproduced here.{:/} | NUMERIC |  |  |  | 
+
+## <a name="Multirule_VA_Qc-68_11"></a>Multirule_VA_Qc-68_11 
+
+<dl>
+<dt>id</dt><dd>Multirule_VA_Qc-68_11</dd>
+<dt>fmId</dt><dd>68.11</dd>
+<dt>label</dt><dd>Multi-rule VA Qc</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| control_name | .01 | Control Name | {::nomarkdown}The name of the Quality Control to be used in Westergard's suggested<br/>use of the Multi-rule Shewhart determinations.{:/} | POINTER |  | REQUIRED | Lab_Control_Name-62_3 | 
+| control_data | 1 | Control Data | {::nomarkdown}Data from the Multi-rule Shewhart determinations are stored here for<br/>intermediate computations.{:/} | [POINTER] |  |  | {id:Laboratory_Test-60} | 
+| reject_reason | 2 | Reject Reason | {::nomarkdown}A brief description of the reason to re-examine the controls.{:/} | STRING |  |  |  | 
+
+## <a name="Tests-68_04"></a>Tests-68_04 
+
+<dl>
+<dt>id</dt><dd>Tests-68_04</dd>
+<dt>fmId</dt><dd>68.04</dd>
+<dt>label</dt><dd>Tests</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| _test | .01 |  Test | {::nomarkdown}The pointers to the Laboratory Tests for this accession.{:/} | POINTER |  | REQUIRED, INDEXED | Laboratory_Test-60 | 
+| urgency_of_test | 1 | Urgency Of Test | {::nomarkdown}The urgency of the test being completed, e.g. stat, routine, etc.<br/>  There is a special urgency used only for workload recording called<br/>WKL. This urgency indicates that this test was not ordered directly,<br/>but was added to the accession to support certain workload functions.{:/} | POINTER |  | REQUIRED | Urgency-62_05 | 
+| load_list_entry | 2 | Load List Entry | {::nomarkdown}The load/work list location is stored here in \;\ piece format.<br/>\load list pointer;tray;cup\{:/} | STRING |  |  |  | 
+| technologist | 3 | Technologist | {::nomarkdown} The DUZ of the person verifying the test.<br/>NOTE: This field previously contained technologist initials.<br/>Converted with the release of version 5.2.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| complete_date | 4 | Complete Date | {::nomarkdown}If null, the test is incomplete.  Otherwise, it is the date/time of completion.{:/} | DATE-TIME |  |  |  | 
+| disposition | 5 | Disposition |  | STRING |  |  |  | 
+| tally_to_wkld | 5.1 | Tally To Wkld | {::nomarkdown}If test was counted for WKLD workload, workload file entry<br/> is entered here.<br/> This flag prevents the test from being counted<br/> more than once.<br/>UPDATE THIS FIELD AUTOMATICALLY.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>YES</dd><dt>0</dt><dd>HAS NOT</dd></dl>{:/} | 
+| wkld_code | 6 | Wkld Code | {::nomarkdown} This sub file is devoted entirely to workload functions. The data<br/>is stuffed automatically by routines at the time of verification of the<br/>test.{:/} | [OBJECT] |  |  | [Wkld_Code-68_14](#Wkld_Code-68_14)  | 
+| identity | 7 | *identity | {::nomarkdown}Will deleted in future versions.{:/} | STRING |  |  |  | 
+| wkld_suffix | 8 | Wkld Suffix | {::nomarkdown} This field contains the WKLD code suffix used to identify the method<br/>used to verify this particular test. The suffix is stuffed at<br/>the time of verification automatically. This field can be used to sort<br/>methods used to assay various test.<br/>  The decimal point of the WKLD code suffix is stripped off.{:/} | STRING |  |  |  | 
+| parent_test | 8.1 | Parent Test | {::nomarkdown} This field contains the parent ordered test. In the case of panel test,<br/>this field will contain the original ordered test.{:/} | POINTER |  |  | Laboratory_Test-60 | 
+| shipping_manifest | 9 | Shipping Manifest | {::nomarkdown}This fields is used at the collection site to determine the exact<br/>placement of each test.  This field will contain the shipping manifest<br/>code for referral or send out lab tests.  For all local tests the field<br/>will be null.{:/} | POINTER |  |  | Lab_Shipping_Manifest-62_8 | 
+
+## <a name="Specimen-68_05"></a>Specimen-68_05 
+
+<dl>
+<dt>id</dt><dd>Specimen-68_05</dd>
+<dt>fmId</dt><dd>68.05</dd>
+<dt>label</dt><dd>Specimen</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| specimen | .01 | Specimen | {::nomarkdown}The site/specimen from the Topography field file.  There may be<br/>more than one specimen for certain types of accessions.{:/} | POINTER |  | REQUIRED | Topography_Field-61 | 
+| collection_sample | 1 | Collection Sample | {::nomarkdown}The collection sample is from file 62.{:/} | POINTER |  |  | Collection_Sample-62 | 
+| test | 2 | Test | {::nomarkdown} This field contains the test ordered for this patient/specimen{:/} | [OBJECT] |  |  | [Test-68_13](#Test-68_13)  | 
+
+## <a name="Wkld_Code-68_14"></a>Wkld_Code-68_14 
+
+<dl>
+<dt>id</dt><dd>Wkld_Code-68_14</dd>
+<dt>fmId</dt><dd>68.14</dd>
+<dt>label</dt><dd>Wkld Code</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| wkld_code | .01 | Wkld Code | {::nomarkdown}WKLD codes associated with test/procedure are entered here.{:/} | POINTER |  | REQUIRED, INDEXED | Wkld_Code-64 | 
+| test_multiply_factor | .02 | Test Multiply Factor | {::nomarkdown}Enter the number of times the WKLD code is used for the test/procedure.<br/>to obtain the correct total weight. The default value is 1. This number<br/>is used to determine the total weight to credited for this test.<br/> This is the number of times this test has been counted.{:/} | NUMERIC |  |  |  | 
+| wkld_code_counted | .03 | Wkld Code Counted | {::nomarkdown} This field is used by the workload compiling routine to prevent the<br/>WKLD code from being counted twice. The number 1 indicates the weight<br/>has been captured for this WKLD code.<br/>  NOTE: THIS FIELD SHOULD NOT BE MANUALLY EDITED.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
+| wkld_code_tally | .04 | Wkld Code Tally | {::nomarkdown}A WKLD code may have several individual counts.<br/> Each time a count is made it is added to the WKLD<br/> code tally and the WKLD CODE COUNTED flag is set to zero.<br/> This field is utilized when additional work has been added to a part<br/>icular WKLD code. Microbioloby is a area which many require a WKLD code<br/>be counted more than once. This field then contains the total number<br/>of times the WKLD code weight has been multiplied.<br/>  NOTE: THIS FIELD SHOULD NOT BE MANUALLY EDITED.{:/} | NUMERIC |  |  |  | 
+| wkld_code_repeat_count | .05 | Wkld Code Repeat Count | {::nomarkdown}  This field is not being presently used. It may be used in the<br/>future to automatically capture repeat workload. Another field<br/>in ^LRO(64.1, is being used to capture this data from manual entry.{:/} | NUMERIC |  |  |  | 
+| completion_time | 1 | Completion Time | {::nomarkdown} This field conatins the completion time for this individual WKLD code<br/>procedure. It calulated at the time of verification by the routines<br/>which stuff the data into this field.{:/} | DATE-TIME |  |  |  | 
+| user | 2 | User | {::nomarkdown}  This field contains the person (NEW PERSON file) which verified this <br/>particular portion of the test. This field is automatically stuffed at <br/>the time of verification.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| institution | 3 | Institution | {::nomarkdown}  This is the institution the verifying person used when logging on<br/>to the system. This field allow the workload from Multi-Div sites<br/>to be stored and counted separately.{:/} | POINTER |  |  | [Institution-4](Institution-4.md) | 
+| major_section | 4 | Major Section | {::nomarkdown}  This field contains the accession area which should recieve credit for<br/>this workload. ie CHEMISTRY{:/} | POINTER |  |  | Accession-68 | 
+| lab_subsection | 5 | Lab Subsection | {::nomarkdown} This the second level used for identifying where workload credit should<br/>be credited.<br/> ie. SPECIAL CHEMISTRY{:/} | POINTER |  |  | Accession-68 | 
+| work_area | 6 | Work Area | {::nomarkdown} This is the lowest level used to credit workload. This field may be<br/>the same as the LAB SUBSECTION entry.<br/> i.e., ELECTROPHORESIS{:/} | POINTER |  |  | Accession-68 | 
+| manual_edit | 12 | Manual Edit | {::nomarkdown} If this data is entered manually via a edit template. This field would<br/>indicate if the data was not stuffed automatically.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>true</dd></dl>{:/} | 
+
+## <a name="Test-68_13"></a>Test-68_13 
+
+<dl>
+<dt>id</dt><dd>Test-68_13</dd>
+<dt>fmId</dt><dd>68.13</dd>
+<dt>label</dt><dd>Test</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| test | .01 | Test | {::nomarkdown}The procedures to be done on a particular specimen.{:/} | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+| tissue_blocks | 1 | Tissue Block(s) | {::nomarkdown}Used for path examination.{:/} | STRING |  |  |  | 
+| total_slides | 2 | Total Slides | {::nomarkdown} This field contains the number of slides used to process this specimen.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

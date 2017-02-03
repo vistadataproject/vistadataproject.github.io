@@ -177,8 +177,8 @@ title: VDM documentation
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | user | .01 | User | {::nomarkdown} Points to the NEW PERSON file (#200).{:/} | POINTER |  | REQUIRED | [New_Person-200](New_Person-200.md) | 
 | last_date_used | .02 | Last Date Used | {::nomarkdown} The last date this was printed.{:/} | DATE-TIME |  |  |  | 
-| lrdfn | 1 | Lrdfn |  | [OBJECT] |  |  | {id:Lrdfn-69_3,fmId:69.3,label:Lrdfn,properties:[{id:lrdfn,fmId:.01,label:Lrdfn,description: Internal file number in the LAB DATA file (#63).,datatype:POINTER,required:true,range:{id:Lab_Data-63}},{id:patient_name,fmId:.02,label:Patient Name,description: Patient's name.,datatype:STRING,indexed:true},{id:sex,fmId:.03,label:Sex,datatype:ENUMERATION,range:{MALE:M,FEMALE:F}},{id:dob,fmId:.04,label:Dob,description: Date of birth.,datatype:DATE-TIME},{id:location,fmId:.05,label:Location,datatype:STRING},{id:va_patient_number,fmId:.06,label:VA Patient Number,description:If patient is entered in file 2 the internal file number (DFN)\r for file 2 will appear here.,datatype:POINTER,range:{id:Patient-2}},{id:id-_1,fmId:.1,label:Id,datatype:STRING},{id:patient_group,fmId:1,label:Patient Group,description:To print only a specific group of patients enter that group name here.,datatype:STRING,indexed:true}]} | 
-| lab_test_group | 60 | Lab Test Group |  | [OBJECT] |  |  | {id:Lab_Test_Group-69_35,fmId:69.35,label:Lab Test Group,properties:[{id:lab_test_group,fmId:.01,label:Lab Test Group,description:You can have one or more groups. Each group can have up to 7 tests.,datatype:NUMERIC,required:true},{id:test,fmId:1,label:Test,datatype:[OBJECT],range:{id:Test-69_36,fmId:69.36,label:Test,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test,fmId:.01,label:Test,description:Up to 7 tests allowed.  The number will determine placement of the\r test on the display or print.,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}}]}}]} | 
+| lrdfn | 1 | Lrdfn |  | [OBJECT] |  |  | [Lrdfn-69_3](#Lrdfn-69_3)  | 
+| lab_test_group | 60 | Lab Test Group |  | [OBJECT] |  |  | [Lab_Test_Group-69_35](#Lab_Test_Group-69_35)  | 
 
 ## <a name="File-69_31"></a>File-69_31 
 
@@ -196,7 +196,7 @@ title: VDM documentation
 | start_date | .02 | Start Date |  | STRING |  |  |  | 
 | end_date | .03 | End Date |  | STRING |  |  |  | 
 | user | .04 | User | {::nomarkdown}Person who created list of entries{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
-| file_entry | 1 | File Entry |  | [OBJECT] |  |  | {id:File_Entry-69_32,fmId:69.32,label:File Entry,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:file_entry_name,fmId:.01,label:File Entry Name,description:Enter the name of the entry in the file (.01 field),datatype:STRING,indexed:true,required:true},{id:entry_comment,fmId:.02,label:Entry Comment,description:Description to identify the specific entry,datatype:STRING},{id:date,fmId:1,label:Date,datatype:[OBJECT],range:{id:Date-69_321,fmId:69.321,label:Date,properties:[{id:date,fmId:.01,label:Date,datatype:DATE-TIME,required:true},{id:related_text,fmId:.02,label:Related Text,datatype:STRING},{id:more_related_text,fmId:.03,label:More Related Text,datatype:STRING},{id:date_entry_printed,fmId:.04,label:Date Entry Printed?,description:If entry was printed then 'YES' should be entered.\r If entry was not printed then it should not be deleted.,datatype:BOOLEAN,range:{false:0,true:1}},{id:comment,fmId:1,label:Comment,datatype:[STRING]}]}}]} | 
+| file_entry | 1 | File Entry |  | [OBJECT] |  |  | [File_Entry-69_32](#File_Entry-69_32)  | 
 
 ## <a name="Labels-69_25"></a>Labels-69_25 
 
@@ -244,7 +244,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | test_list_number | .01 | Test List Number |  | NUMERIC |  | REQUIRED |  | 
-| test | 1 | Test |  | [OBJECT] |  |  | {id:Test-69_34,fmId:69.34,label:Test,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test,fmId:.01,label:Test,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:specimen,fmId:.02,label:Specimen,datatype:POINTER,required:true,range:{id:Topography_Field-61}},{id:value,fmId:.03,label:Value,datatype:STRING,required:true}]} | 
+| test | 1 | Test |  | [OBJECT] |  |  | [Test-69_34](#Test-69_34)  | 
 
 ## <a name="Topography-69_61"></a>Topography-69_61 
 
@@ -259,8 +259,8 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | topography | .01 | Topography | {::nomarkdown}Enter here the specimen or organ/tissue that will be associated with the preselected tests to be displayed or printed.{:/} | POINTER |  | REQUIRED | Topography_Field-61 | 
-| test_to_display | 1 | Test To Display | {::nomarkdown}Most recent results, if any, will be displayed for tests selected associated with a specific topography indicated above when that organ or tissue is submitted to anatomic pathology.{:/} | [OBJECT] |  |  | {id:Test_To_Display-69_62,fmId:69.62,label:Test To Display,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test_to_display,fmId:.01,label:Test To Display,description:Most recent results, if any, will be displayed for tests selected \r associated with a specimen.,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:specimen,fmId:.02,label:Specimen,datatype:POINTER,required:true,range:{id:Topography_Field-61}}]} | 
-| test_to_print | 2 | Test To Print |  | [OBJECT] |  |  | {id:Test_To_Print-69_63,fmId:69.63,label:Test To Print,properties:[{id:number,fmId:.001,label:Number,datatype:IEN},{id:test_to_print,fmId:.01,label:Test To Print,datatype:POINTER,required:true,range:{id:Laboratory_Test-60}},{id:specimen,fmId:.02,label:Specimen,datatype:POINTER,required:true,range:{id:Topography_Field-61}}]} | 
+| test_to_display | 1 | Test To Display | {::nomarkdown}Most recent results, if any, will be displayed for tests selected associated with a specific topography indicated above when that organ or tissue is submitted to anatomic pathology.{:/} | [OBJECT] |  |  | [Test_To_Display-69_62](#Test_To_Display-69_62)  | 
+| test_to_print | 2 | Test To Print |  | [OBJECT] |  |  | [Test_To_Print-69_63](#Test_To_Print-69_63)  | 
 
 ## <a name="Data_Change_Date-69_299"></a>Data_Change_Date-69_299 
 
@@ -282,6 +282,157 @@ title: VDM documentation
 | file | .06 | File | {::nomarkdown} File where the data is stored.{:/} | STRING |  |  |  | 
 | file_entry | .07 | File Entry | {::nomarkdown} The numeric entry of the file.{:/} | STRING |  |  |  | 
 | internal_file_number | .08 | Internal File # | {::nomarkdown} The internal number where the data is stored.{:/} | STRING |  |  |  | 
-| subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | {id:Subfile_Field_Name-69_37,fmId:69.37,label:Subfile Field Name,properties:[{id:subfile_field_name,fmId:.01,label:Subfile Field Name,datatype:STRING,indexed:true,required:true},{id:subfile_field_entry,fmId:.02,label:Subfile Field Entry,datatype:STRING},{id:subfile_field_number,fmId:.03,label:Subfile Field #,datatype:STRING}]} | 
+| subfile_field_name | 1 | Subfile Field Name |  | [OBJECT] |  |  | [Subfile_Field_Name-69_37](#Subfile_Field_Name-69_37)  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+## <a name="Lrdfn-69_3"></a>Lrdfn-69_3 
+
+<dl>
+<dt>id</dt><dd>Lrdfn-69_3</dd>
+<dt>fmId</dt><dd>69.3</dd>
+<dt>label</dt><dd>Lrdfn</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| lrdfn | .01 | Lrdfn | {::nomarkdown} Internal file number in the LAB DATA file (#63).{:/} | POINTER |  | REQUIRED | Lab_Data-63 | 
+| patient_name | .02 | Patient Name | {::nomarkdown} Patient's name.{:/} | STRING |  | INDEXED |  | 
+| sex | .03 | Sex |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>M</dt><dd>MALE</dd><dt>F</dt><dd>FEMALE</dd></dl>{:/} | 
+| dob | .04 | Dob | {::nomarkdown} Date of birth.{:/} | DATE-TIME |  |  |  | 
+| location | .05 | Location |  | STRING |  |  |  | 
+| va_patient_number | .06 | VA Patient Number | {::nomarkdown}If patient is entered in file 2 the internal file number (DFN)<br/> for file 2 will appear here.{:/} | POINTER |  |  | [Patient-2](Patient-2.md) | 
+| id-_1 | .1 | Id |  | STRING |  |  |  | 
+| patient_group | 1 | Patient Group | {::nomarkdown}To print only a specific group of patients enter that group name here.{:/} | STRING |  | INDEXED |  | 
+
+## <a name="Lab_Test_Group-69_35"></a>Lab_Test_Group-69_35 
+
+<dl>
+<dt>id</dt><dd>Lab_Test_Group-69_35</dd>
+<dt>fmId</dt><dd>69.35</dd>
+<dt>label</dt><dd>Lab Test Group</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| lab_test_group | .01 | Lab Test Group | {::nomarkdown}You can have one or more groups. Each group can have up to 7 tests.{:/} | NUMERIC |  | REQUIRED |  | 
+| test | 1 | Test |  | [OBJECT] |  |  | [Test-69_36](#Test-69_36)  | 
+
+## <a name="File_Entry-69_32"></a>File_Entry-69_32 
+
+<dl>
+<dt>id</dt><dd>File_Entry-69_32</dd>
+<dt>fmId</dt><dd>69.32</dd>
+<dt>label</dt><dd>File Entry</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| number | .001 | Number |  | IEN |  |  |  | 
+| file_entry_name | .01 | File Entry Name | {::nomarkdown}Enter the name of the entry in the file (.01 field){:/} | STRING |  | REQUIRED, INDEXED |  | 
+| entry_comment | .02 | Entry Comment | {::nomarkdown}Description to identify the specific entry{:/} | STRING |  |  |  | 
+| date | 1 | Date |  | [OBJECT] |  |  | [Date-69_321](#Date-69_321)  | 
+
+## <a name="Test-69_34"></a>Test-69_34 
+
+<dl>
+<dt>id</dt><dd>Test-69_34</dd>
+<dt>fmId</dt><dd>69.34</dd>
+<dt>label</dt><dd>Test</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| number | .001 | Number |  | IEN |  |  |  | 
+| test | .01 | Test |  | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+| specimen | .02 | Specimen |  | POINTER |  | REQUIRED | Topography_Field-61 | 
+| value | .03 | Value |  | STRING |  | REQUIRED |  | 
+
+## <a name="Test_To_Display-69_62"></a>Test_To_Display-69_62 
+
+<dl>
+<dt>id</dt><dd>Test_To_Display-69_62</dd>
+<dt>fmId</dt><dd>69.62</dd>
+<dt>label</dt><dd>Test To Display</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| number | .001 | Number |  | IEN |  |  |  | 
+| test_to_display | .01 | Test To Display | {::nomarkdown}Most recent results, if any, will be displayed for tests selected <br/> associated with a specimen.{:/} | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+| specimen | .02 | Specimen |  | POINTER |  | REQUIRED | Topography_Field-61 | 
+
+## <a name="Test_To_Print-69_63"></a>Test_To_Print-69_63 
+
+<dl>
+<dt>id</dt><dd>Test_To_Print-69_63</dd>
+<dt>fmId</dt><dd>69.63</dd>
+<dt>label</dt><dd>Test To Print</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| number | .001 | Number |  | IEN |  |  |  | 
+| test_to_print | .01 | Test To Print |  | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+| specimen | .02 | Specimen |  | POINTER |  | REQUIRED | Topography_Field-61 | 
+
+## <a name="Subfile_Field_Name-69_37"></a>Subfile_Field_Name-69_37 
+
+<dl>
+<dt>id</dt><dd>Subfile_Field_Name-69_37</dd>
+<dt>fmId</dt><dd>69.37</dd>
+<dt>label</dt><dd>Subfile Field Name</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| subfile_field_name | .01 | Subfile Field Name |  | STRING |  | REQUIRED, INDEXED |  | 
+| subfile_field_entry | .02 | Subfile Field Entry |  | STRING |  |  |  | 
+| subfile_field_number | .03 | Subfile Field # |  | STRING |  |  |  | 
+
+## <a name="Test-69_36"></a>Test-69_36 
+
+<dl>
+<dt>id</dt><dd>Test-69_36</dd>
+<dt>fmId</dt><dd>69.36</dd>
+<dt>label</dt><dd>Test</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| number | .001 | Number |  | IEN |  |  |  | 
+| test | .01 | Test | {::nomarkdown}Up to 7 tests allowed.  The number will determine placement of the<br/> test on the display or print.{:/} | POINTER |  | REQUIRED | Laboratory_Test-60 | 
+
+## <a name="Date-69_321"></a>Date-69_321 
+
+<dl>
+<dt>id</dt><dd>Date-69_321</dd>
+<dt>fmId</dt><dd>69.321</dd>
+<dt>label</dt><dd>Date</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| date | .01 | Date |  | DATE-TIME |  | REQUIRED |  | 
+| related_text | .02 | Related Text |  | STRING |  |  |  | 
+| more_related_text | .03 | More Related Text |  | STRING |  |  |  | 
+| date_entry_printed | .04 | Date Entry Printed? | {::nomarkdown}If entry was printed then 'YES' should be entered.<br/> If entry was not printed then it should not be deleted.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
+| comment | 1 | Comment |  | [STRING] |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

@@ -55,8 +55,58 @@ title: VDM documentation
 | forwarded_by | .07 | Forwarded By |  | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | date_time_forwarded | .08 | Date/time Forwarded |  | DATE-TIME |  |  |  | 
 | deleted_by_user | .09 | Deleted By User | {::nomarkdown}The 'USER DELETED BY' field is poplulated if the alert is deleted for the<br/>current user by someone (either the user or another person from IRM or an<br/>ADPAC, etc.) with a delete option as opposed to deletion as a part of the<br/>processing of the alert.  The field points to the user who selected the<br/>delete option resulting in deletion of the alert prior to its processing.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
-| recipient_type | 1 | Recipient Type |  | [OBJECT] |  |  | {id:Recipient_Type-8992_111,fmId:8992.111,label:Recipient Type,properties:[{id:recipient_type,fmId:.01,label:Recipient Type,description:This field is used to track how a specific recipient was selected for \rreceiving the alert. The initial recipients are those to whom the alert\rwas initially directed (INITIAL RECIPIENT).  Other recipients may be the\rresult of forwarding.  Recipients of the alert from forwarding are noted\rby the type of forwarding involved (FWD BY USER, EMAIL SURROGATE,\rCHIEF/SUPERVISOR, BACKUP REVIEWER, or LAST HOPE).\r \rMarked as a specific category are those to whom the alert was directed,\rbut who were not available to receive an alert due to lack of access\r(marked with the suffix \-UNDELIVERABLE\ added to the basis for the \ralert being sent to the user).\r \rThose who have alerts forwarded to their surrogate or receive the alert \rwhile acting as a surrogate for another user are indicated by entries in \rfields #.02 (SENT TO SURROGATE) and #.03 (ACTING AS SURROGATE), \rrespectively.  In addition, those who are acting as surrogates are \ridentified in the current field by the suffix \-SURROGATE\ added to the \rbasis for the alert being received.  Since the recipient may be acting as \rsurrogate for more than one user, the actual users for which the message \rwas sent on a surrogate basis are indicated in the SURROGATE FOR sub-file \r(#8992.113) under the RECIPIENT sub-file.\r \rThe values stored for this field are pointers to entries in the ALERT \rRECIPIENT TYPE file (#8992.2).,datatype:POINTER,indexed:true,required:true,range:{id:Alert_Recipient_Type-8992_2}},{id:sent_to_surrogate,fmId:.02,label:Sent To Surrogate,description:This field is used to identify the surrogate to whom the alert\rwas sent instead of this originally specified recipient.,datatype:POINTER,range:{id:New_Person-200}},{id:acting_as_surrogate,fmId:.03,label:Acting As Surrogate,description:This field is used to identify those recipients who were sent the alert \rbecause they were selected as an active surrogate for the originally \rintended user.  In most cases only the Y (YES) entries will be entered.,datatype:BOOLEAN,range:{false:N,true:Y}},{id:alert_date_time,fmId:.04,label:Alert Date/time,description:This is the date and time the alert was sent/forwarded to the \rcurrent recipient with this recipient type,datatype:DATE-TIME}]} | 
-| forwarded_date_time | 2 | Forwarded Date/time |  | [OBJECT] |  |  | {id:Forwarded_Date_time-8992_112,fmId:8992.112,label:Forwarded Date/time,properties:[{id:forwarded_date_time,fmId:.01,label:Forwarded Date/time,description:This field is used to track the date/time of forwarding of the alert to \rthis recipient.  This is a multiple field to track instances in which \rmultiple copies of the alert may be forwarded to a single recipient for\rvarious reasons.  This multiple field will indicate when it was forwarded\rand the basis for forwarding of the alert.,datatype:DATE-TIME,indexed:true,required:true},{id:forwarding_category,fmId:.02,label:Forwarding Category,description:This field is used to track the basis on which the alert is forwarded to \rthe current recipient.  The alert might be forwarded to the recipient by \ra user directly, or by programmed forwarding related to alerts not being \rprocessed within a specified time to EMAIL SURROGATE, CHIEF/SUPERVISOR; \rBACKUP REVIEWER, or LAST RESORT.\r \rEntries for this field are pointers to the values in the ALERT RECIPIENT \rTYPE file (#8992.2).,datatype:POINTER,range:{id:Alert_Recipient_Type-8992_2}},{id:forwarded_by_or_for,fmId:.03,label:Forwarded By Or For,description:This is a record of the individual who forwarded the alert, or on whose \rbehalf the alert was forwarded if it was forwarded automatically.,datatype:POINTER,range:{id:New_Person-200}},{id:forwarding_comment,fmId:1.01,label:Forwarding Comment,description:This is the comment which was sent to the recipient along with the \rforwarded alert.,datatype:STRING}]} | 
-| surrogate_for | 3 | Surrogate For |  | [OBJECT] |  |  | {id:Surrogate_For-8992_113,fmId:8992.113,label:Surrogate For,properties:[{id:surrogate_for,fmId:.01,label:Surrogate For,description:This field is used to track which user or users the current recipient is \rreceiving the current alert while acting as surrogate.,datatype:POINTER,indexed:true,required:true,range:{id:New_Person-200}},{id:date_time__surrogate_for,fmId:.02,label:Date/time - Surrogate For,description:This field has the date/time when the alert was sent to the current \rrecipient while acting as a surrogate for the originally intended \rrecipient.,datatype:DATE-TIME},{id:datetime_returned,fmId:.03,label:Date-time Returned,description:This field is a record for the date-time that an alert for which this \rrecipient was acting as a surrogate was returned to the originally \rintended recipient of the alert.,datatype:DATE-TIME}]} | 
+| recipient_type | 1 | Recipient Type |  | [OBJECT] |  |  | [Recipient_Type-8992_111](#Recipient_Type-8992_111)  | 
+| forwarded_date_time | 2 | Forwarded Date/time |  | [OBJECT] |  |  | [Forwarded_Date_time-8992_112](#Forwarded_Date_time-8992_112)  | 
+| surrogate_for | 3 | Surrogate For |  | [OBJECT] |  |  | [Surrogate_For-8992_113](#Surrogate_For-8992_113)  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+## <a name="Recipient_Type-8992_111"></a>Recipient_Type-8992_111 
+
+<dl>
+<dt>id</dt><dd>Recipient_Type-8992_111</dd>
+<dt>fmId</dt><dd>8992.111</dd>
+<dt>label</dt><dd>Recipient Type</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| recipient_type | .01 | Recipient Type | {::nomarkdown}This field is used to track how a specific recipient was selected for <br/>receiving the alert. The initial recipients are those to whom the alert<br/>was initially directed (INITIAL RECIPIENT).  Other recipients may be the<br/>result of forwarding.  Recipients of the alert from forwarding are noted<br/>by the type of forwarding involved (FWD BY USER, EMAIL SURROGATE,<br/>CHIEF/SUPERVISOR, BACKUP REVIEWER, or LAST HOPE).<br/> <br/>Marked as a specific category are those to whom the alert was directed,<br/>but who were not available to receive an alert due to lack of access<br/>(marked with the suffix \-UNDELIVERABLE\ added to the basis for the <br/>alert being sent to the user).<br/> <br/>Those who have alerts forwarded to their surrogate or receive the alert <br/>while acting as a surrogate for another user are indicated by entries in <br/>fields #.02 (SENT TO SURROGATE) and #.03 (ACTING AS SURROGATE), <br/>respectively.  In addition, those who are acting as surrogates are <br/>identified in the current field by the suffix \-SURROGATE\ added to the <br/>basis for the alert being received.  Since the recipient may be acting as <br/>surrogate for more than one user, the actual users for which the message <br/>was sent on a surrogate basis are indicated in the SURROGATE FOR sub-file <br/>(#8992.113) under the RECIPIENT sub-file.<br/> <br/>The values stored for this field are pointers to entries in the ALERT <br/>RECIPIENT TYPE file (#8992.2).{:/} | POINTER |  | REQUIRED, INDEXED | Alert_Recipient_Type-8992_2 | 
+| sent_to_surrogate | .02 | Sent To Surrogate | {::nomarkdown}This field is used to identify the surrogate to whom the alert<br/>was sent instead of this originally specified recipient.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| acting_as_surrogate | .03 | Acting As Surrogate | {::nomarkdown}This field is used to identify those recipients who were sent the alert <br/>because they were selected as an active surrogate for the originally <br/>intended user.  In most cases only the Y (YES) entries will be entered.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>N</dt><dd>false</dd><dt>Y</dt><dd>true</dd></dl>{:/} | 
+| alert_date_time | .04 | Alert Date/time | {::nomarkdown}This is the date and time the alert was sent/forwarded to the <br/>current recipient with this recipient type{:/} | DATE-TIME |  |  |  | 
+
+## <a name="Forwarded_Date_time-8992_112"></a>Forwarded_Date_time-8992_112 
+
+<dl>
+<dt>id</dt><dd>Forwarded_Date_time-8992_112</dd>
+<dt>fmId</dt><dd>8992.112</dd>
+<dt>label</dt><dd>Forwarded Date/time</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| forwarded_date_time | .01 | Forwarded Date/time | {::nomarkdown}This field is used to track the date/time of forwarding of the alert to <br/>this recipient.  This is a multiple field to track instances in which <br/>multiple copies of the alert may be forwarded to a single recipient for<br/>various reasons.  This multiple field will indicate when it was forwarded<br/>and the basis for forwarding of the alert.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
+| forwarding_category | .02 | Forwarding Category | {::nomarkdown}This field is used to track the basis on which the alert is forwarded to <br/>the current recipient.  The alert might be forwarded to the recipient by <br/>a user directly, or by programmed forwarding related to alerts not being <br/>processed within a specified time to EMAIL SURROGATE, CHIEF/SUPERVISOR; <br/>BACKUP REVIEWER, or LAST RESORT.<br/> <br/>Entries for this field are pointers to the values in the ALERT RECIPIENT <br/>TYPE file (#8992.2).{:/} | POINTER |  |  | Alert_Recipient_Type-8992_2 | 
+| forwarded_by_or_for | .03 | Forwarded By Or For | {::nomarkdown}This is a record of the individual who forwarded the alert, or on whose <br/>behalf the alert was forwarded if it was forwarded automatically.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| forwarding_comment | 1.01 | Forwarding Comment | {::nomarkdown}This is the comment which was sent to the recipient along with the <br/>forwarded alert.{:/} | STRING |  |  |  | 
+
+## <a name="Surrogate_For-8992_113"></a>Surrogate_For-8992_113 
+
+<dl>
+<dt>id</dt><dd>Surrogate_For-8992_113</dd>
+<dt>fmId</dt><dd>8992.113</dd>
+<dt>label</dt><dd>Surrogate For</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| surrogate_for | .01 | Surrogate For | {::nomarkdown}This field is used to track which user or users the current recipient is <br/>receiving the current alert while acting as surrogate.{:/} | POINTER |  | REQUIRED, INDEXED | [New_Person-200](New_Person-200.md) | 
+| date_time__surrogate_for | .02 | Date/time - Surrogate For | {::nomarkdown}This field has the date/time when the alert was sent to the current <br/>recipient while acting as a surrogate for the originally intended <br/>recipient.{:/} | DATE-TIME |  |  |  | 
+| datetime_returned | .03 | Date-time Returned | {::nomarkdown}This field is a record for the date-time that an alert for which this <br/>recipient was acting as a surrogate was returned to the originally <br/>intended recipient of the alert.{:/} | DATE-TIME |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

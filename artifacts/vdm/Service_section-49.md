@@ -51,4 +51,4 @@ title: VDM documentation
 | date_closed | .01 | Date Closed | {::nomarkdown}This field contains a date/time when this service or section closed for<br/>hospital use.{:/} | DATE-TIME |  | REQUIRED |  | 
 | date_reopened | 1 | Date Re-opened | {::nomarkdown}This field contains a date/time when this closed service or section<br/>was reopened for hospital use.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

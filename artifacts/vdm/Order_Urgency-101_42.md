@@ -21,4 +21,4 @@ title: VDM documentation
 | usage | 1 | Usage | {::nomarkdown}This multiple contains all the possible ways to use this urgency.{:/} | [STRING] |  |  |  | 
 | abbreviation | 2 | Abbreviation | {::nomarkdown}This field contains the abbreviation to be used in HL7 messages and some<br/>displays.{:/} | STRING |  | INDEXED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:18:28 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

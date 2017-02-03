@@ -52,4 +52,4 @@ title: VDM documentation
 | set_member | .01 | Set Member | {::nomarkdown}This points to an item in the Orderable Item file (101.43).{:/} | POINTER |  | REQUIRED, INDEXED | Orderable_Items-101_43 | 
 | display_text | 2 | Display Text | {::nomarkdown}This is the text that is displayed in the view list.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

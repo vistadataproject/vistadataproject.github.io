@@ -98,53 +98,6 @@ title: VDM documentation
 | new_person_enumeration_finish | 902 | New Person Enumeration Finish | {::nomarkdown}This field will note when the New Person (#200) file completed the VPID<br/>Enumeration Process.{:/} | DATE-TIME |  |  |  | 
 | paid_enumeration_finish | 903 | Paid Enumeration Finish | {::nomarkdown}This field will note when the PAID EMPLOYEE (#450) file completed the VPID<br/>Enumeration Process.{:/} | DATE-TIME |  |  |  | 
 
-## <a name="Terminal_Server_Ip-8989_305"></a>Terminal_Server_Ip-8989_305 
-
-<dl>
-<dt>id</dt><dd>Terminal_Server_Ip-8989_305</dd>
-<dt>fmId</dt><dd>8989.305</dd>
-<dt>label</dt><dd>Terminal Server Ip</dd>
-</dl>
-
-### Properties
-
-| id | fmId | label | description | datatype | location | attributes | range | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
-| terminal_server_ip | .01 | Terminal Server Ip | {::nomarkdown}This field holds the IP addresses of Terminal servers that should get <br/>special treatment from the IP security software.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
-| last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
-
-## <a name="Volume_Set-8989_304"></a>Volume_Set-8989_304 
-
-<dl>
-<dt>id</dt><dd>Volume_Set-8989_304</dd>
-<dt>fmId</dt><dd>8989.304</dd>
-<dt>label</dt><dd>Volume Set</dd>
-</dl>
-
-### Properties
-
-| id | fmId | label | description | datatype | location | attributes | range | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
-| volume_set | .01 | Volume Set | {::nomarkdown}This is the name of each CPU or VOLUME SET in the domain.{:/} | STRING |  | REQUIRED, INDEXED |  | 
-| max_signon_allowed | 2 | Max Signon Allowed | {::nomarkdown}This field defines the maximum number of jobs that XUS or RPC Broker will<br/>allow to sign-on to this VOLUME SET or CPU.{:/} | NUMERIC |  |  |  | 
-| log_system_rt | 6 | Log System Rt? | {::nomarkdown}Setting this field to YES enables system response time logging,<br/>which will only take place if the necessary code exists in the<br/>application software.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
-
-## <a name="Alphabeta_Test_Option-8989_333"></a>Alphabeta_Test_Option-8989_333 
-
-<dl>
-<dt>id</dt><dd>Alphabeta_Test_Option-8989_333</dd>
-<dt>fmId</dt><dd>8989.333</dd>
-<dt>label</dt><dd>Alpha,beta Test Option</dd>
-</dl>
-
-### Properties
-
-| id | fmId | label | description | datatype | location | attributes | range | 
-| --- | --- | --- | --- | --- | --- | --- | --- | 
-| alphabeta_test_option | .01 | Alpha,beta Test Option | {::nomarkdown}This field identifies one option in alpha or beta test package which has<br/>been used since the last package installation.{:/} | POINTER |  | REQUIRED | Option-19 | 
-| accesses_since_last_update | .02 | Accesses Since Last Update | {::nomarkdown}This field is a count of the number of accesses to the alpha or beta<br/>test package option identified in field .01 since the last package<br/>installation.{:/} | NUMERIC |  |  |  | 
-
 ## <a name="Alpha_beta_Test_Package-8989_332"></a>Alpha_beta_Test_Package-8989_332 
 
 <dl>
@@ -164,6 +117,53 @@ title: VDM documentation
 | date_errors_last_reported | .05 | Date Errors Last Reported | {::nomarkdown}This field is used to keep track of the last date on which reporting of<br/>errors back to the developing ISC was performed.  The date is used as the<br/>starting date for identification of errors to report.{:/} | DATE-TIME |  |  |  | 
 | package_namespace_or_prefix | 1 | Package Namespace Or Prefix | {::nomarkdown}This multiple field is used to identify the namespaces or prefixes used<br/>to identify the options and routines associated with the alpha or beta<br/>test package.{:/} | [OBJECT] |  |  | [Package_Namespace_Or_Prefix-8989_3321](#Package_Namespace_Or_Prefix-8989_3321)  | 
 
+## <a name="Alphabeta_Test_Option-8989_333"></a>Alphabeta_Test_Option-8989_333 
+
+<dl>
+<dt>id</dt><dd>Alphabeta_Test_Option-8989_333</dd>
+<dt>fmId</dt><dd>8989.333</dd>
+<dt>label</dt><dd>Alpha,beta Test Option</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| alphabeta_test_option | .01 | Alpha,beta Test Option | {::nomarkdown}This field identifies one option in alpha or beta test package which has<br/>been used since the last package installation.{:/} | POINTER |  | REQUIRED | Option-19 | 
+| accesses_since_last_update | .02 | Accesses Since Last Update | {::nomarkdown}This field is a count of the number of accesses to the alpha or beta<br/>test package option identified in field .01 since the last package<br/>installation.{:/} | NUMERIC |  |  |  | 
+
+## <a name="Volume_Set-8989_304"></a>Volume_Set-8989_304 
+
+<dl>
+<dt>id</dt><dd>Volume_Set-8989_304</dd>
+<dt>fmId</dt><dd>8989.304</dd>
+<dt>label</dt><dd>Volume Set</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| volume_set | .01 | Volume Set | {::nomarkdown}This is the name of each CPU or VOLUME SET in the domain.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| max_signon_allowed | 2 | Max Signon Allowed | {::nomarkdown}This field defines the maximum number of jobs that XUS or RPC Broker will<br/>allow to sign-on to this VOLUME SET or CPU.{:/} | NUMERIC |  |  |  | 
+| log_system_rt | 6 | Log System Rt? | {::nomarkdown}Setting this field to YES enables system response time logging,<br/>which will only take place if the necessary code exists in the<br/>application software.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>n</dt><dd>false</dd><dt>y</dt><dd>true</dd></dl>{:/} | 
+
+## <a name="Terminal_Server_Ip-8989_305"></a>Terminal_Server_Ip-8989_305 
+
+<dl>
+<dt>id</dt><dd>Terminal_Server_Ip-8989_305</dd>
+<dt>fmId</dt><dd>8989.305</dd>
+<dt>label</dt><dd>Terminal Server Ip</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| terminal_server_ip | .01 | Terminal Server Ip | {::nomarkdown}This field holds the IP addresses of Terminal servers that should get <br/>special treatment from the IP security software.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
+| last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
+
 ## <a name="Package_Namespace_Or_Prefix-8989_3321"></a>Package_Namespace_Or_Prefix-8989_3321 
 
 <dl>
@@ -179,4 +179,4 @@ title: VDM documentation
 | package_namespace_or_prefix | .01 | Package Namespace Or Prefix | {::nomarkdown}This field identifies one of the alpha/beta package namespaces.{:/} | STRING |  | REQUIRED, INDEXED |  | 
 | exclude_namespace_or_prefix | 1 | Exclude Namespace Or Prefix | {::nomarkdown}This multiple field is used to indicate any specific namespaces or<br/>prefixes which begin with the current namespace or prefix which should<br/>be excluded from analyses for the alpha/beta package.  Generally those<br/>namespaces which are immediately followed by the letter 'Z' are excluded{:/} | [STRING] |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:18:28 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:27:56 am</p>{:/}

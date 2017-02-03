@@ -577,9 +577,9 @@ title: VDM documentation
 | effective_date_of_policy | 8 | Effective Date Of Policy | {::nomarkdown}Enter the date that this insurance policy initially went into effect (the<br/>date the patient acquired this policy).{:/} | DATE-TIME |  |  |  | 
 | requested_service_date | 8.01 | Requested Service Date | {::nomarkdown}This is the Eligibility/Service Date that is received on the eIV <br/>Response message.  If it is not present on the Response message then this <br/>is the Eligibility Date that was sent on the Inquiry message.{:/} | DATE-TIME |  |  |  | 
 | requested_service_type | 8.02 | Requested Service Type | {::nomarkdown}This is the Service Type that is received on the Response message.{:/} | POINTER |  |  | X12_271_Service_Type-365_013 | 
-| group_reference_information | 9 | Group Reference Information | {::nomarkdown}Subscriber/Dependent additional identification data.{:/} | [OBJECT] |  |  | {properties:[{description:This field contains a sequential number generated at the time a record is\rstored in the subfile.  ,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Subscriber Supplemental Identifier.,datatype:STRING,label:Reference Id (Group),fmId:.02,id:reference_id_group},{description: Describes the type of reference ID at the REFERENCE ID (GROUP) (#.02)\rfield. ,datatype:POINTER,label:Ref Id Qualifier (Group),range:{id:X12_271_Reference_Identification-365_028},fmId:.03,id:ref_id_qualifier_group},{description:A free-form description to clarify the Reference ID in the REFERENCE ID\r(GROUP) (#.02) field.  It will be populated with the Plan, Group or Plan\rNetwork Name.,datatype:STRING,label:Description,fmId:.04,id:description}],fmId:2.3129,id:Group_Reference_Information-2_3129,label:Group Reference Information} | 
-| group_provider_info | 10 | Group Provider Info | {::nomarkdown}Entries in this sub-file identify the characteristics of a provider.{:/} | [OBJECT] |  |  | {properties:[{description:This field contains a sequential number generated at the time a record is\rstored in the subfile.  ,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Code that identifies the type of provider (e.g., \AD\ for Admitting).,datatype:POINTER,label:Provider Code,range:{id:X12_271_Provider_Code-365_024},fmId:.02,id:provider_code},{description:Provider specialty type identifier.,datatype:STRING,label:Prov Reference Id,fmId:.03,id:prov_reference_id}],fmId:2.332,id:Group_Provider_Info-2_332,label:Group Provider Info} | 
-| health_care_code_information | 11 | Health Care Code Information | {::nomarkdown}To supply information related to the delivery of health care.{:/} | [OBJECT] |  |  | {properties:[{description:This field contains a sequential number generated at the time a record is\rstored in the subfile.  ,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Diagnosis Code sent by the payer in response to the insurance eligibility\rinquiry.,datatype:POINTER,label:Diagnosis Code,range:{id:Icd_Diagnosis-80},fmId:.02,id:diagnosis_code},{description:Diagnosis Type Code identifying a specific industry code list ICD-9 or\rICD-10.,datatype:STRING,label:Diagnosis Code Qualifier,fmId:.03,id:diagnosis_code_qualifier},{description:This field indicates whether the code in the DIAGNOSIS CODE (#.02) field\ris a primary or secondary diagnosis.,datatype:ENUMERATION,label:Primary Or Secondary?,range:{PRIMARY:P,SECONDARY:S},fmId:.04,id:primary_or_secondary}],fmId:2.31211,id:Health_Care_Code_Information-2_31211,label:Health Care Code Information} | 
+| group_reference_information | 9 | Group Reference Information | {::nomarkdown}Subscriber/Dependent additional identification data.{:/} | [OBJECT] |  |  | [Group_Reference_Information-2_3129](#Group_Reference_Information-2_3129)  | 
+| group_provider_info | 10 | Group Provider Info | {::nomarkdown}Entries in this sub-file identify the characteristics of a provider.{:/} | [OBJECT] |  |  | [Group_Provider_Info-2_332](#Group_Provider_Info-2_332)  | 
+| health_care_code_information | 11 | Health Care Code Information | {::nomarkdown}To supply information related to the delivery of health care.{:/} | [OBJECT] |  |  | [Health_Care_Code_Information-2_31211](#Health_Care_Code_Information-2_31211)  | 
 | military_info_status_code | 12.01 | Military Info Status Code | {::nomarkdown}Code to indicate the status of the military information sent by the payer.{:/} | POINTER |  |  | X12_271_Military_Personnel_Info_Status_Code-365_039 | 
 | military_employment_status | 12.02 | Military Employment Status | {::nomarkdown}Code showing the general military employment status of an<br/>employee/claimant.  {:/} | POINTER |  |  | X12_271_Military_Employment_Status_Code-365_046 | 
 | military_govt_affiliation_code | 12.03 | Military Govt Affiliation Code | {::nomarkdown}Code specifying the military service affiliation.{:/} | POINTER |  |  | X12_271_Military_Govt_Service_Affiliation-365_041 | 
@@ -590,7 +590,7 @@ title: VDM documentation
 | group_name | 15 | *Group Name | {::nomarkdown}If this insurance policy is a group policy, enter the name of the group.<br/> <br/>This field is moved to the HEALTH INSURANCE POLICY file (355.3) beginning<br/>with IB v2.0.  It will be deleted with the first release 18 months after<br/>the release of IB V2.{:/} | STRING |  |  |  | 
 | pt_relationship_to_insured | 16 | Pt. Relationship To Insured | {::nomarkdown}Select the relationship code that describes the relationship this<br/>patient has to the holder of this insurance policy. If the policy<br/>belongs to the patient enter '01' for patient. If the policy<br/>belongs to the spouse enter '02' for spouse, etc.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>01</dt><dd>PATIENT</dd><dt>11</dt><dd>ORGAN DONOR</dd><dt>03</dt><dd>NATURAL CHILD</dd><dt>18</dt><dd>DO NOT USE</dd><dt>33</dt><dd>FATHER</dd><dt>15</dt><dd>INJURED PLANTIFF</dd><dt>34</dt><dd>SIGNIFICANT OTHER</dd><dt>32</dt><dd>MOTHER</dd><dt>08</dt><dd>EMPLOYEE</dd><dt>02</dt><dd>SPOUSE</dd><dt>35</dt><dd>LIFE PARTNER</dd><dt>36</dt><dd>OTHER RELATIONSHIP</dd></dl>{:/} | 
 | name_of_insured-2_312-17 | 17 | *Name Of Insured | {::nomarkdown}Enter the name of the individual for which this insurance policy was<br/>issued.  If the patient and the insurance subscriber are the same,<br/>then this field will be defaulted from the patient name field.<br/> <br/>The name must contain a comma and be entered in Last,First format.<br/> <br/>This field is scheduled for deletion in May 2015.{:/} | STRING |  |  |  | 
-| eligibility_benefit | 60 | Eligibility/Benefit | {::nomarkdown}This multiple contains all of the eligibility and benefit data<br/>for a specific insured person returned from the Payer.{:/} | [OBJECT] |  |  | {properties:[{description:This is a sequential number corresponding to the Set-ID for all\rof the eligibility/benefit (X.12 EB segments) segments coming\rinto VISTA.,datatype:NUMERIC,required:true,label:Eb Number,indexed:true,fmId:.01,id:eb_number},{description:This field contains a code identifying the eligibility status\rof the individual or the benefit returned by the Payer.,datatype:POINTER,label:Eligibility/Benefit Info,range:{id:X12_271_Eligibility_Benefit-365_011},fmId:.02,id:eligibility_benefit_info},{description:This field identifies the level of coverage of benefits.,datatype:POINTER,label:Coverage Level,range:{id:X12_271_Coverage_Level-365_012},fmId:.03,id:coverage_level},{description:This field is a code identifying the classification of service.,datatype:POINTER,label:*Service Type,range:{id:X12_271_Service_Type-365_013},fmId:.04,id:service_type},{description:This is a code identifying the type of insurance policy within\ra specific insurance program.,datatype:POINTER,label:Insurance Type,range:{id:X12_271_Insurance_Type-365_014},fmId:.05,id:insurance_type},{description:This code is a description or number that identifies the plan\ror coverage.,datatype:STRING,label:Plan Coverage Description,fmId:.06,id:plan_coverage_description},{description:This is a code for the time period category that determines\rfor how long the benefits are available.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:This field is populated if eligibility or benefit must be\rqualified by a monetary amount.,datatype:STRING,label:Monetary Amount,fmId:.08,id:monetary_amount},{description:This field is used if eligibility or benefit must be qualified\rby a percentage.,datatype:NUMERIC,label:Percent,fmId:.09,id:percent},{description:This field is used to identify the type of units that are being\rconveyed in the QUANTITY field (#.11).,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.1,id:quantity_qualifier},{description:This field number is used for the quantity value as qualified by\rthe QUANTITY QUALIFIER field.,datatype:STRING,label:Quantity,fmId:.11,id:quantity},{description:This field indicates that an authorization or certification\ris required per plan provisions.,datatype:POINTER,label:Authorization/Certification,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.12,id:authorization_certification},{description:This field indicates the plan network indicator.  A YES value indicates\rthe benefits identified are considered In-Plan-Network.  A NO value\rindicates that the benefits identified are considered \rOut-Of-Plan-Network.  A \U\ value indicates it is unknown whether the\rbenefits identified are part of the Plan Network.,datatype:POINTER,label:In Plan,range:{id:X12_271_Yes_No_Response_Code_-365_033},fmId:.13,id:in_plan},{description:Two character code describing procedure coding method.,datatype:POINTER,label:Procedure Coding Method,range:{id:X12_271_Procedure_Coding_Method-365_035},fmId:1.01,id:procedure_coding_method},{description:Identification code for the procedure.,datatype:STRING,label:Procedure Code,fmId:1.02,id:procedure_code},{description:Identifies special circumstances related to the procedure; first modifier.,datatype:STRING,label:Procedure Modifier 1,fmId:1.03,id:procedure_modifier_1},{description:Identifies special circumstances related to the procedure; second\rmodifier.,datatype:STRING,label:Procedure Modifier 2,fmId:1.04,id:procedure_modifier_2},{description:Identifies special circumstances related to the procedure; third modifier.,datatype:STRING,label:Procedure Modifier 3,fmId:1.05,id:procedure_modifier_3},{description:Identifies special circumstances related to the procedure; fourth\rmodifier.,datatype:STRING,label:Procedure Modifier 4,fmId:1.06,id:procedure_modifier_4},{description:This field contains any additional text about the eligibility\rbenefit information.  It is transcribed from X.12 271 MSG segments.,datatype:STRING,label:Notes,isWP:true,fmId:2,id:notes},{description:X12 Entity Identifier Code.,datatype:POINTER,label:Entity Id Code,range:{id:X12_271_Entity_Identifier_Code-365_022},fmId:3.01,id:entity_id_code},{description:Entity Type Qualifier.,datatype:POINTER,label:Entity Type,range:{id:X12_271_Entity_Type_Qualifier-365_043},fmId:3.02,id:entity_type},{description:Name of person or organization.,datatype:STRING,label:Name,fmId:3.03,id:name},{description:Entity identifier.,datatype:STRING,label:Entity Id,fmId:3.04,id:entity_id},{description:Code designating the system/method used for Identification.,datatype:POINTER,label:Entity Id Qualifier,range:{id:X12_271_Identification_Qualifier-365_023},fmId:3.05,id:entity_id_qualifier},{description:Benefit Related Entity's relationship to the patient.,datatype:POINTER,label:Entity Relationship Code,range:{id:X12_271_Entity_Relationship_Code-365_031},fmId:3.06,id:entity_relationship_code},{description:Entity address, line 1.,datatype:STRING,label:Address Line 1,fmId:4.01,id:address_line_1},{description:Entity address, line 2.,datatype:STRING,label:Address Line 2,fmId:4.02,id:address_line_2},{description:Entity address, city.,datatype:STRING,label:City,fmId:4.03,id:city},{description:Entity address, state or province code.,datatype:POINTER,label:State,range:{id:State-5},fmId:4.04,id:state},{description:Entity address, zip or postal code.,datatype:STRING,label:Zip,fmId:4.05,id:zip},{description:Entity address, country code.,datatype:STRING,label:Country Code,fmId:4.06,id:country_code},{description:Entity address, location identifier.,datatype:STRING,label:Location,fmId:4.07,id:location},{description:Entity address, location qualifier.,datatype:POINTER,label:Location Qualifier,range:{id:X12_271_Location_Qualifer-365_034},fmId:4.08,id:location_qualifier},{description:Entity address, country subdivision code.,datatype:STRING,label:Subdivision Code,fmId:4.09,id:subdivision_code},{description:Code identifying the type of provider.,datatype:POINTER,label:Provider Code,range:{id:X12_271_Provider_Code-365_024},fmId:5.01,id:provider_code},{description:Reference identifier.,datatype:STRING,label:Reference Id,fmId:5.02,id:reference_id},{description:Reference identifier type.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:5.03,id:reference_id_qualifier},{description:This multiple contains contact information for an eligibility/benefit\rentity.,datatype:[OBJECT],label:Contact Information,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Name of the contact.,datatype:STRING,label:Name,fmId:.02,id:name},{description:Phone, fax, email, etc.\r \rThis field is scheduled for deletion in May 2015.,datatype:STRING,label:*Communication Number,fmId:.03,id:communication_number},{description:Code describing type of communication number.,datatype:POINTER,label:Communication Qualifier,range:{id:X12_271_Contact_Qualifier-365_021},fmId:.04,id:communication_qualifier},{description:Phone, fax, email, URL,datatype:STRING,label:Communication Number,fmId:1,id:communication_number-2_3226-1}],fmId:2.3226,id:Contact_Information-2_3226,label:Contact Information},fmId:6,id:contact_information},{description:Healthcare services delivery multiple.,datatype:[OBJECT],label:Healthcare Services Delivery,range:{properties:[{description:Sequential entry number.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Numeric value of benefit quantity as qualified by QUANTITY QUALIFIER\rfield.,datatype:NUMERIC,label:Benefit Quantity,fmId:.02,id:benefit_quantity},{description:Benefit quantity qualifier.,datatype:POINTER,label:Quantity Qualifier,range:{id:X12_271_Quantity_Qualifier-365_016},fmId:.03,id:quantity_qualifier},{description:Sampling frequency in terms of a modulus of the Unit of Measure. Qualified\rby UNITS OF MEASUREMENT field.,datatype:STRING,label:Sample Selection Modulus,fmId:.04,id:sample_selection_modulus},{description:Units of measurement for frequency of the benefits.,datatype:POINTER,label:Units Of Measurement,range:{id:X12_271_Units_Of_Measurement-365_029},fmId:.05,id:units_of_measurement},{description:Number of time periods as qualified by TIME PERIOD QUALIFIER field.,datatype:NUMERIC,label:Time Periods,fmId:.06,id:time_periods},{description:Code that defines a time period.,datatype:POINTER,label:Time Period Qualifier,range:{id:X12_271_Time_Period_Qualifier-365_015},fmId:.07,id:time_period_qualifier},{description:Code that defines frequency of deliveries.,datatype:POINTER,label:Delivery Frequency,range:{id:X12_271_Delivery_Frequency_Code-365_025},fmId:.08,id:delivery_frequency},{description:Code that defines pattern of deliveries.,datatype:POINTER,label:Delivery Pattern,range:{id:X12_271_Delivery_Pattern-365_036},fmId:.09,id:delivery_pattern}],fmId:2.3227,id:Healthcare_Services_Delivery-2_3227,label:Healthcare Services Delivery},fmId:7,id:healthcare_services_delivery},{description:Subscriber dates multiple.,datatype:[OBJECT],label:Subscriber Dates,range:{properties:[{description:Sequential number of ZSD segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Date or range of dates.,datatype:STRING,label:Date,fmId:.02,id:date},{description:Code describing the type of date.,datatype:POINTER,label:Date Qualifier,range:{id:X12_271_Date_Qualifier-365_026},fmId:.03,id:date_qualifier},{description:Format of the date representation.,datatype:POINTER,label:Date Format,range:{id:X12_271_Date_Format_Qualifier-365_032},fmId:.04,id:date_format}],fmId:2.3228,id:Subscriber_Dates-2_3228,label:Subscriber Dates},fmId:8,id:subscriber_dates},{description:Additional subscriber information multiple.,datatype:[OBJECT],label:Subscriber Additional Info,range:{properties:[{description:Sequential number of ZII segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Place of service code.,datatype:POINTER,label:Place Of Service,range:{id:Place_Of_Service-353_1},fmId:.02,id:place_of_service},{description:Diagnosis code.,datatype:POINTER,label:Diagnosis,range:{id:Icd_Diagnosis-80},fmId:.03,id:diagnosis},{description:Additional information qualifier.,datatype:POINTER,label:Qualifier,range:{id:X12_271_Code_List_Qualifier-365_044},fmId:.04,id:qualifier},{description:Code that represents the nature of the patient injury.,datatype:POINTER,label:Nature Of Injury Code,range:{id:X12_271_Nature_Of_Injury_Codes-365_045},fmId:.05,id:nature_of_injury_code},{description:Specifies the situation or category to which the code applies.,datatype:STRING,label:Nature Of Injury Category,fmId:.06,id:nature_of_injury_category},{description:Describes the injured body part or parts.,datatype:STRING,label:Nature Of Injury Text,fmId:.07,id:nature_of_injury_text}],fmId:2.3229,id:Subscriber_Additional_Info-2_3229,label:Subscriber Additional Info},fmId:9,id:subscriber_additional_info},{description:Subscriber reference id multiple.,datatype:[OBJECT],label:Subscriber Reference Id,range:{properties:[{description:Sequential number of ZRF segment.,datatype:NUMERIC,required:true,label:Sequence,indexed:true,fmId:.01,id:sequence},{description:Reference id value.,datatype:STRING,label:Reference Id,fmId:.02,id:reference_id},{description:Code describing the type of reference id.,datatype:POINTER,label:Reference Id Qualifier,range:{id:X12_271_Reference_Identification-365_028},fmId:.03,id:reference_id_qualifier},{description:Short description of reference id.,datatype:STRING,label:Description,fmId:.04,id:description}],fmId:2.32291,id:Subscriber_Reference_Id-2_32291,label:Subscriber Reference Id},fmId:10,id:subscriber_reference_id},{datatype:[POINTER],label:Service Types,range:{id:X12_271_Service_Type-365_013},fmId:11,id:service_types}],fmId:2.322,id:Eligibility_Benefit-2_322,label:Eligibility/Benefit} | 
+| eligibility_benefit | 60 | Eligibility/Benefit | {::nomarkdown}This multiple contains all of the eligibility and benefit data<br/>for a specific insured person returned from the Payer.{:/} | [OBJECT] |  |  | [Eligibility_Benefit-2_322](#Eligibility_Benefit-2_322)  | 
 
 ## <a name="Service_Oef_Or_Oif-2_3215"></a>Service_Oef_Or_Oif-2_3215 
 
@@ -734,7 +734,7 @@ title: VDM documentation
 | date_veteran_requested_cd_eval | .3951 | Date Veteran Requested Cd Eval | {::nomarkdown}Documents the Date the Veteran Requested CD Evaluation for CD History.{:/} | DATE-TIME |  |  |  | 
 | date_facility_initiated_review | .3952 | Date Facility Initiated Review | {::nomarkdown}Documents the date the facility initiated the Catastrophically Disabled <br/>review for CD History.{:/} | DATE-TIME |  |  |  | 
 | date_veteran_was_notified | .3953 | Date Veteran Was Notified | {::nomarkdown}Documents the date the Veteran was notified of the Catastrophically <br/>Disabled status for CD History.{:/} | DATE-TIME |  |  |  | 
-| cd_reason | .396 | Cd Reason | {::nomarkdown}Documents the Catastrophically Disabled Reason for CD History.{:/} | [OBJECT] |  |  | {properties:[{description:This sub-field will contain pointers to the CD REASONS file (#27.17),\ras well as the supporting data stored in the CD STATUS DIAGNOSES (#.396),\rPROCEDURES (#.397) and CONDITIONS (#.398) fields.,datatype:POINTER,required:true,label:Cd Reason,range:{id:Catastrophic_Disability_Reasons-27_17},indexed:true,fmId:.01,id:cd_reason},{description:This is the extremity affected by the CD.,datatype:ENUMERATION,label:Affected Extremity,range:{RIGHT LOWER EXTREMITY:RLE,Bilateral Lower Extremity:BLE,LEFT LOWER EXTREMITY:LLE,LEFT UPPER EXTREMITY:LUE,Bilateral Upper Extremity:BLU,RIGHT UPPER EXTREMITY:RUE},fmId:1,id:affected_extremity},{description:This field stores a historical value for the SCORE subfield (#1) of the\rCD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:NUMERIC,label:Score,fmId:2,id:score},{description:This subfield stores a historical value of the PERMANENT INDICATOR subfield\r(#2) of the CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).,datatype:ENUMERATION,label:Permanent Indicator,range:{UNKNOWN:3,PERMANENT:1,NOT PERMANENT:2},fmId:3,id:permanent_indicator}],fmId:2.409,id:Cd_Reason-2_409,label:Cd Reason} | 
+| cd_reason | .396 | Cd Reason | {::nomarkdown}Documents the Catastrophically Disabled Reason for CD History.{:/} | [OBJECT] |  |  | [Cd_Reason-2_409](#Cd_Reason-2_409)  | 
 
 ## <a name="Alias-2_01"></a>Alias-2_01 
 
@@ -780,7 +780,7 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | enrollment_clinic | .01 | Enrollment Clinic |  | POINTER |  | REQUIRED, INDEXED | [Hospital_Location-44](Hospital_Location-44.md) | 
-| enrollment_data | 1 | Enrollment Data | {::nomarkdown}This multiple contains the pertinant data relating to this patients<br/>enrollment in this clinic.  Data contained in this multiple includes<br/>the date the patient was enrolled, the date of discharge from the clinic<br/>and whether the patient was seen on an outpatient or ambulatory care basis.{:/} | [OBJECT] |  |  | {properties:[{description:Enter the date this patient was initially enrolled in this clinic.,datatype:DATE-TIME,required:true,label:Date Of Enrollment,fmId:.01,id:date_of_enrollment},{description:Enter O if the patient is being seen by this clinic on an outpatient\rbasis.  Enter A if the patient is being seen for ambulatory care.,datatype:ENUMERATION,label:Opt Or Ac,range:{OPT:O,AC:A},fmId:1,id:opt_or_ac},{description:This field contains the date this patient was discharged from this clinic.,datatype:DATE-TIME,label:Date Of Discharge,fmId:3,id:date_of_discharge},{description:If the patient has been discharged from this clinic, this field contains the\rreason the patient was discharged.  This is a free text field which\rallows up to 80 characters to be entered.,datatype:STRING,label:Reason For Discharge,fmId:4,id:reason_for_discharge},{description:Enter the date on which this patients enrollment in this particular\rclinic was last reviewed.,datatype:DATE-TIME,label:Review Date,fmId:5,id:review_date}],fmId:2.011,id:Enrollment_Data-2_011,label:Enrollment Data} | 
+| enrollment_data | 1 | Enrollment Data | {::nomarkdown}This multiple contains the pertinant data relating to this patients<br/>enrollment in this clinic.  Data contained in this multiple includes<br/>the date the patient was enrolled, the date of discharge from the clinic<br/>and whether the patient was seen on an outpatient or ambulatory care basis.{:/} | [OBJECT] |  |  | [Enrollment_Data-2_011](#Enrollment_Data-2_011)  | 
 | current_status | 2 | Current Status | {::nomarkdown}This field will contain 'I' for inactive if this patient is no longer<br/>enrolled in this clinic (patient has been discharged from the clinic).{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>I</dt><dd>INACTIVE</dd></dl>{:/} | 
 
 ## <a name="Ethnicity_Information-2_06"></a>Ethnicity_Information-2_06 
@@ -975,6 +975,260 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | data_type | .01 | Data Type | {::nomarkdown}This field identifies the type of data that was archived{:/} | ENUMERATION |  | REQUIRED, INDEXED | {::nomarkdown}<dl><dt>SSD</dt><dd>SPECIAL SURVEY DISP</dd><dt>S</dt><dd>APPOINTMENT</dd><dt>DE</dt><dd>CLINIC ENROLLMENT</dd></dl>{:/} | 
-| date_of_archive | 1 | Date Of Archive | {::nomarkdown}This multiple contains data pertaining to each specific archive (the<br/>date, the beginning and ending archiving dates, and the tape numbers).{:/} | [OBJECT] |  |  | {properties:[{description:Enter the date/time the archiving utility was run.\r \rThis field is not currently used.  The archiving software was not\rdistributed.,datatype:DATE-TIME,required:true,label:Date Of Archive,fmId:.01,id:date_of_archive},{description:Enter the sequential number of the tape on which this archiving data\rwas put.,datatype:STRING,label:Tape #,fmId:1,id:tape_number},{description:Enter the date the user chose to begin the scheduling archive.,datatype:DATE-TIME,label:Begin Archive Date,fmId:2,id:begin_archive_date},{description:Enter the ending date the user chose for the scheduling archive.,datatype:DATE-TIME,label:End Archive Date,fmId:3,id:end_archive_date},{description:The number of records archived.  This is created automatically by the\rsoftware.\r \rThis software has not been released and this field is not presently\rused in DHCP.,datatype:NUMERIC,label:Number Of Records Archived,fmId:4,id:number_of_records_archived}],fmId:2.13,id:Date_Of_Archive-2_13,label:Date Of Archive} | 
+| date_of_archive | 1 | Date Of Archive | {::nomarkdown}This multiple contains data pertaining to each specific archive (the<br/>date, the beginning and ending archiving dates, and the tape numbers).{:/} | [OBJECT] |  |  | [Date_Of_Archive-2_13](#Date_Of_Archive-2_13)  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
+## <a name="Group_Reference_Information-2_3129"></a>Group_Reference_Information-2_3129 
+
+<dl>
+<dt>id</dt><dd>Group_Reference_Information-2_3129</dd>
+<dt>fmId</dt><dd>2.3129</dd>
+<dt>label</dt><dd>Group Reference Information</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}This field contains a sequential number generated at the time a record is<br/>stored in the subfile.  {:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| reference_id_group | .02 | Reference Id (Group) | {::nomarkdown}Subscriber Supplemental Identifier.{:/} | STRING |  |  |  | 
+| ref_id_qualifier_group | .03 | Ref Id Qualifier (Group) | {::nomarkdown} Describes the type of reference ID at the REFERENCE ID (GROUP) (#.02)<br/>field. {:/} | POINTER |  |  | X12_271_Reference_Identification-365_028 | 
+| description | .04 | Description | {::nomarkdown}A free-form description to clarify the Reference ID in the REFERENCE ID<br/>(GROUP) (#.02) field.  It will be populated with the Plan, Group or Plan<br/>Network Name.{:/} | STRING |  |  |  | 
+
+## <a name="Group_Provider_Info-2_332"></a>Group_Provider_Info-2_332 
+
+<dl>
+<dt>id</dt><dd>Group_Provider_Info-2_332</dd>
+<dt>fmId</dt><dd>2.332</dd>
+<dt>label</dt><dd>Group Provider Info</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}This field contains a sequential number generated at the time a record is<br/>stored in the subfile.  {:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| provider_code | .02 | Provider Code | {::nomarkdown}Code that identifies the type of provider (e.g., \AD\ for Admitting).{:/} | POINTER |  |  | X12_271_Provider_Code-365_024 | 
+| prov_reference_id | .03 | Prov Reference Id | {::nomarkdown}Provider specialty type identifier.{:/} | STRING |  |  |  | 
+
+## <a name="Health_Care_Code_Information-2_31211"></a>Health_Care_Code_Information-2_31211 
+
+<dl>
+<dt>id</dt><dd>Health_Care_Code_Information-2_31211</dd>
+<dt>fmId</dt><dd>2.31211</dd>
+<dt>label</dt><dd>Health Care Code Information</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}This field contains a sequential number generated at the time a record is<br/>stored in the subfile.  {:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| diagnosis_code | .02 | Diagnosis Code | {::nomarkdown}Diagnosis Code sent by the payer in response to the insurance eligibility<br/>inquiry.{:/} | POINTER |  |  | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
+| diagnosis_code_qualifier | .03 | Diagnosis Code Qualifier | {::nomarkdown}Diagnosis Type Code identifying a specific industry code list ICD-9 or<br/>ICD-10.{:/} | STRING |  |  |  | 
+| primary_or_secondary | .04 | Primary Or Secondary? | {::nomarkdown}This field indicates whether the code in the DIAGNOSIS CODE (#.02) field<br/>is a primary or secondary diagnosis.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>P</dt><dd>PRIMARY</dd><dt>S</dt><dd>SECONDARY</dd></dl>{:/} | 
+
+## <a name="Eligibility_Benefit-2_322"></a>Eligibility_Benefit-2_322 
+
+<dl>
+<dt>id</dt><dd>Eligibility_Benefit-2_322</dd>
+<dt>fmId</dt><dd>2.322</dd>
+<dt>label</dt><dd>Eligibility/Benefit</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| eb_number | .01 | Eb Number | {::nomarkdown}This is a sequential number corresponding to the Set-ID for all<br/>of the eligibility/benefit (X.12 EB segments) segments coming<br/>into VISTA.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| eligibility_benefit_info | .02 | Eligibility/Benefit Info | {::nomarkdown}This field contains a code identifying the eligibility status<br/>of the individual or the benefit returned by the Payer.{:/} | POINTER |  |  | X12_271_Eligibility_Benefit-365_011 | 
+| coverage_level | .03 | Coverage Level | {::nomarkdown}This field identifies the level of coverage of benefits.{:/} | POINTER |  |  | X12_271_Coverage_Level-365_012 | 
+| service_type | .04 | *Service Type | {::nomarkdown}This field is a code identifying the classification of service.{:/} | POINTER |  |  | X12_271_Service_Type-365_013 | 
+| insurance_type | .05 | Insurance Type | {::nomarkdown}This is a code identifying the type of insurance policy within<br/>a specific insurance program.{:/} | POINTER |  |  | X12_271_Insurance_Type-365_014 | 
+| plan_coverage_description | .06 | Plan Coverage Description | {::nomarkdown}This code is a description or number that identifies the plan<br/>or coverage.{:/} | STRING |  |  |  | 
+| time_period_qualifier | .07 | Time Period Qualifier | {::nomarkdown}This is a code for the time period category that determines<br/>for how long the benefits are available.{:/} | POINTER |  |  | X12_271_Time_Period_Qualifier-365_015 | 
+| monetary_amount | .08 | Monetary Amount | {::nomarkdown}This field is populated if eligibility or benefit must be<br/>qualified by a monetary amount.{:/} | STRING |  |  |  | 
+| percent | .09 | Percent | {::nomarkdown}This field is used if eligibility or benefit must be qualified<br/>by a percentage.{:/} | NUMERIC |  |  |  | 
+| quantity_qualifier | .1 | Quantity Qualifier | {::nomarkdown}This field is used to identify the type of units that are being<br/>conveyed in the QUANTITY field (#.11).{:/} | POINTER |  |  | X12_271_Quantity_Qualifier-365_016 | 
+| quantity | .11 | Quantity | {::nomarkdown}This field number is used for the quantity value as qualified by<br/>the QUANTITY QUALIFIER field.{:/} | STRING |  |  |  | 
+| authorization_certification | .12 | Authorization/Certification | {::nomarkdown}This field indicates that an authorization or certification<br/>is required per plan provisions.{:/} | POINTER |  |  | X12_271_Yes_No_Response_Code_-365_033 | 
+| in_plan | .13 | In Plan | {::nomarkdown}This field indicates the plan network indicator.  A YES value indicates<br/>the benefits identified are considered In-Plan-Network.  A NO value<br/>indicates that the benefits identified are considered <br/>Out-Of-Plan-Network.  A \U\ value indicates it is unknown whether the<br/>benefits identified are part of the Plan Network.{:/} | POINTER |  |  | X12_271_Yes_No_Response_Code_-365_033 | 
+| procedure_coding_method | 1.01 | Procedure Coding Method | {::nomarkdown}Two character code describing procedure coding method.{:/} | POINTER |  |  | X12_271_Procedure_Coding_Method-365_035 | 
+| procedure_code | 1.02 | Procedure Code | {::nomarkdown}Identification code for the procedure.{:/} | STRING |  |  |  | 
+| procedure_modifier_1 | 1.03 | Procedure Modifier 1 | {::nomarkdown}Identifies special circumstances related to the procedure; first modifier.{:/} | STRING |  |  |  | 
+| procedure_modifier_2 | 1.04 | Procedure Modifier 2 | {::nomarkdown}Identifies special circumstances related to the procedure; second<br/>modifier.{:/} | STRING |  |  |  | 
+| procedure_modifier_3 | 1.05 | Procedure Modifier 3 | {::nomarkdown}Identifies special circumstances related to the procedure; third modifier.{:/} | STRING |  |  |  | 
+| procedure_modifier_4 | 1.06 | Procedure Modifier 4 | {::nomarkdown}Identifies special circumstances related to the procedure; fourth<br/>modifier.{:/} | STRING |  |  |  | 
+| notes | 2 | Notes | {::nomarkdown}This field contains any additional text about the eligibility<br/>benefit information.  It is transcribed from X.12 271 MSG segments.{:/} | STRING |  |  |  | 
+| entity_id_code | 3.01 | Entity Id Code | {::nomarkdown}X12 Entity Identifier Code.{:/} | POINTER |  |  | X12_271_Entity_Identifier_Code-365_022 | 
+| entity_type | 3.02 | Entity Type | {::nomarkdown}Entity Type Qualifier.{:/} | POINTER |  |  | X12_271_Entity_Type_Qualifier-365_043 | 
+| name | 3.03 | Name | {::nomarkdown}Name of person or organization.{:/} | STRING |  |  |  | 
+| entity_id | 3.04 | Entity Id | {::nomarkdown}Entity identifier.{:/} | STRING |  |  |  | 
+| entity_id_qualifier | 3.05 | Entity Id Qualifier | {::nomarkdown}Code designating the system/method used for Identification.{:/} | POINTER |  |  | X12_271_Identification_Qualifier-365_023 | 
+| entity_relationship_code | 3.06 | Entity Relationship Code | {::nomarkdown}Benefit Related Entity's relationship to the patient.{:/} | POINTER |  |  | X12_271_Entity_Relationship_Code-365_031 | 
+| address_line_1 | 4.01 | Address Line 1 | {::nomarkdown}Entity address, line 1.{:/} | STRING |  |  |  | 
+| address_line_2 | 4.02 | Address Line 2 | {::nomarkdown}Entity address, line 2.{:/} | STRING |  |  |  | 
+| city | 4.03 | City | {::nomarkdown}Entity address, city.{:/} | STRING |  |  |  | 
+| state | 4.04 | State | {::nomarkdown}Entity address, state or province code.{:/} | POINTER |  |  | State-5 | 
+| zip | 4.05 | Zip | {::nomarkdown}Entity address, zip or postal code.{:/} | STRING |  |  |  | 
+| country_code | 4.06 | Country Code | {::nomarkdown}Entity address, country code.{:/} | STRING |  |  |  | 
+| location | 4.07 | Location | {::nomarkdown}Entity address, location identifier.{:/} | STRING |  |  |  | 
+| location_qualifier | 4.08 | Location Qualifier | {::nomarkdown}Entity address, location qualifier.{:/} | POINTER |  |  | X12_271_Location_Qualifer-365_034 | 
+| subdivision_code | 4.09 | Subdivision Code | {::nomarkdown}Entity address, country subdivision code.{:/} | STRING |  |  |  | 
+| provider_code | 5.01 | Provider Code | {::nomarkdown}Code identifying the type of provider.{:/} | POINTER |  |  | X12_271_Provider_Code-365_024 | 
+| reference_id | 5.02 | Reference Id | {::nomarkdown}Reference identifier.{:/} | STRING |  |  |  | 
+| reference_id_qualifier | 5.03 | Reference Id Qualifier | {::nomarkdown}Reference identifier type.{:/} | POINTER |  |  | X12_271_Reference_Identification-365_028 | 
+| contact_information | 6 | Contact Information | {::nomarkdown}This multiple contains contact information for an eligibility/benefit<br/>entity.{:/} | [OBJECT] |  |  | [Contact_Information-2_3226](#Contact_Information-2_3226)  | 
+| healthcare_services_delivery | 7 | Healthcare Services Delivery | {::nomarkdown}Healthcare services delivery multiple.{:/} | [OBJECT] |  |  | [Healthcare_Services_Delivery-2_3227](#Healthcare_Services_Delivery-2_3227)  | 
+| subscriber_dates | 8 | Subscriber Dates | {::nomarkdown}Subscriber dates multiple.{:/} | [OBJECT] |  |  | [Subscriber_Dates-2_3228](#Subscriber_Dates-2_3228)  | 
+| subscriber_additional_info | 9 | Subscriber Additional Info | {::nomarkdown}Additional subscriber information multiple.{:/} | [OBJECT] |  |  | [Subscriber_Additional_Info-2_3229](#Subscriber_Additional_Info-2_3229)  | 
+| subscriber_reference_id | 10 | Subscriber Reference Id | {::nomarkdown}Subscriber reference id multiple.{:/} | [OBJECT] |  |  | [Subscriber_Reference_Id-2_32291](#Subscriber_Reference_Id-2_32291)  | 
+| service_types | 11 | Service Types |  | [POINTER] |  |  | X12_271_Service_Type-365_013 | 
+
+## <a name="Cd_Reason-2_409"></a>Cd_Reason-2_409 
+
+<dl>
+<dt>id</dt><dd>Cd_Reason-2_409</dd>
+<dt>fmId</dt><dd>2.409</dd>
+<dt>label</dt><dd>Cd Reason</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| cd_reason | .01 | Cd Reason | {::nomarkdown}This sub-field will contain pointers to the CD REASONS file (#27.17),<br/>as well as the supporting data stored in the CD STATUS DIAGNOSES (#.396),<br/>PROCEDURES (#.397) and CONDITIONS (#.398) fields.{:/} | POINTER |  | REQUIRED, INDEXED | Catastrophic_Disability_Reasons-27_17 | 
+| affected_extremity | 1 | Affected Extremity | {::nomarkdown}This is the extremity affected by the CD.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>RLE</dt><dd>RIGHT LOWER EXTREMITY</dd><dt>BLE</dt><dd>Bilateral Lower Extremity</dd><dt>LLE</dt><dd>LEFT LOWER EXTREMITY</dd><dt>LUE</dt><dd>LEFT UPPER EXTREMITY</dd><dt>BLU</dt><dd>Bilateral Upper Extremity</dd><dt>RUE</dt><dd>RIGHT UPPER EXTREMITY</dd></dl>{:/} | 
+| score | 2 | Score | {::nomarkdown}This field stores a historical value for the SCORE subfield (#1) of the<br/>CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).{:/} | NUMERIC |  |  |  | 
+| permanent_indicator | 3 | Permanent Indicator | {::nomarkdown}This subfield stores a historical value of the PERMANENT INDICATOR subfield<br/>(#2) of the CD STATUS CONDITIONS field (#.398) of the PATIENT file (#2).{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>3</dt><dd>UNKNOWN</dd><dt>1</dt><dd>PERMANENT</dd><dt>2</dt><dd>NOT PERMANENT</dd></dl>{:/} | 
+
+## <a name="Enrollment_Data-2_011"></a>Enrollment_Data-2_011 
+
+<dl>
+<dt>id</dt><dd>Enrollment_Data-2_011</dd>
+<dt>fmId</dt><dd>2.011</dd>
+<dt>label</dt><dd>Enrollment Data</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| date_of_enrollment | .01 | Date Of Enrollment | {::nomarkdown}Enter the date this patient was initially enrolled in this clinic.{:/} | DATE-TIME |  | REQUIRED |  | 
+| opt_or_ac | 1 | Opt Or Ac | {::nomarkdown}Enter O if the patient is being seen by this clinic on an outpatient<br/>basis.  Enter A if the patient is being seen for ambulatory care.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>O</dt><dd>OPT</dd><dt>A</dt><dd>AC</dd></dl>{:/} | 
+| date_of_discharge | 3 | Date Of Discharge | {::nomarkdown}This field contains the date this patient was discharged from this clinic.{:/} | DATE-TIME |  |  |  | 
+| reason_for_discharge | 4 | Reason For Discharge | {::nomarkdown}If the patient has been discharged from this clinic, this field contains the<br/>reason the patient was discharged.  This is a free text field which<br/>allows up to 80 characters to be entered.{:/} | STRING |  |  |  | 
+| review_date | 5 | Review Date | {::nomarkdown}Enter the date on which this patients enrollment in this particular<br/>clinic was last reviewed.{:/} | DATE-TIME |  |  |  | 
+
+## <a name="Date_Of_Archive-2_13"></a>Date_Of_Archive-2_13 
+
+<dl>
+<dt>id</dt><dd>Date_Of_Archive-2_13</dd>
+<dt>fmId</dt><dd>2.13</dd>
+<dt>label</dt><dd>Date Of Archive</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| date_of_archive | .01 | Date Of Archive | {::nomarkdown}Enter the date/time the archiving utility was run.<br/> <br/>This field is not currently used.  The archiving software was not<br/>distributed.{:/} | DATE-TIME |  | REQUIRED |  | 
+| tape_number | 1 | Tape # | {::nomarkdown}Enter the sequential number of the tape on which this archiving data<br/>was put.{:/} | STRING |  |  |  | 
+| begin_archive_date | 2 | Begin Archive Date | {::nomarkdown}Enter the date the user chose to begin the scheduling archive.{:/} | DATE-TIME |  |  |  | 
+| end_archive_date | 3 | End Archive Date | {::nomarkdown}Enter the ending date the user chose for the scheduling archive.{:/} | DATE-TIME |  |  |  | 
+| number_of_records_archived | 4 | Number Of Records Archived | {::nomarkdown}The number of records archived.  This is created automatically by the<br/>software.<br/> <br/>This software has not been released and this field is not presently<br/>used in DHCP.{:/} | NUMERIC |  |  |  | 
+
+## <a name="Contact_Information-2_3226"></a>Contact_Information-2_3226 
+
+<dl>
+<dt>id</dt><dd>Contact_Information-2_3226</dd>
+<dt>fmId</dt><dd>2.3226</dd>
+<dt>label</dt><dd>Contact Information</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}Sequential entry number.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| name | .02 | Name | {::nomarkdown}Name of the contact.{:/} | STRING |  |  |  | 
+| communication_number | .03 | *Communication Number | {::nomarkdown}Phone, fax, email, etc.<br/> <br/>This field is scheduled for deletion in May 2015.{:/} | STRING |  |  |  | 
+| communication_qualifier | .04 | Communication Qualifier | {::nomarkdown}Code describing type of communication number.{:/} | POINTER |  |  | X12_271_Contact_Qualifier-365_021 | 
+| communication_number-2_3226-1 | 1 | Communication Number | {::nomarkdown}Phone, fax, email, URL{:/} | STRING |  |  |  | 
+
+## <a name="Healthcare_Services_Delivery-2_3227"></a>Healthcare_Services_Delivery-2_3227 
+
+<dl>
+<dt>id</dt><dd>Healthcare_Services_Delivery-2_3227</dd>
+<dt>fmId</dt><dd>2.3227</dd>
+<dt>label</dt><dd>Healthcare Services Delivery</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}Sequential entry number.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| benefit_quantity | .02 | Benefit Quantity | {::nomarkdown}Numeric value of benefit quantity as qualified by QUANTITY QUALIFIER<br/>field.{:/} | NUMERIC |  |  |  | 
+| quantity_qualifier | .03 | Quantity Qualifier | {::nomarkdown}Benefit quantity qualifier.{:/} | POINTER |  |  | X12_271_Quantity_Qualifier-365_016 | 
+| sample_selection_modulus | .04 | Sample Selection Modulus | {::nomarkdown}Sampling frequency in terms of a modulus of the Unit of Measure. Qualified<br/>by UNITS OF MEASUREMENT field.{:/} | STRING |  |  |  | 
+| units_of_measurement | .05 | Units Of Measurement | {::nomarkdown}Units of measurement for frequency of the benefits.{:/} | POINTER |  |  | X12_271_Units_Of_Measurement-365_029 | 
+| time_periods | .06 | Time Periods | {::nomarkdown}Number of time periods as qualified by TIME PERIOD QUALIFIER field.{:/} | NUMERIC |  |  |  | 
+| time_period_qualifier | .07 | Time Period Qualifier | {::nomarkdown}Code that defines a time period.{:/} | POINTER |  |  | X12_271_Time_Period_Qualifier-365_015 | 
+| delivery_frequency | .08 | Delivery Frequency | {::nomarkdown}Code that defines frequency of deliveries.{:/} | POINTER |  |  | X12_271_Delivery_Frequency_Code-365_025 | 
+| delivery_pattern | .09 | Delivery Pattern | {::nomarkdown}Code that defines pattern of deliveries.{:/} | POINTER |  |  | X12_271_Delivery_Pattern-365_036 | 
+
+## <a name="Subscriber_Dates-2_3228"></a>Subscriber_Dates-2_3228 
+
+<dl>
+<dt>id</dt><dd>Subscriber_Dates-2_3228</dd>
+<dt>fmId</dt><dd>2.3228</dd>
+<dt>label</dt><dd>Subscriber Dates</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}Sequential number of ZSD segment.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| date | .02 | Date | {::nomarkdown}Date or range of dates.{:/} | STRING |  |  |  | 
+| date_qualifier | .03 | Date Qualifier | {::nomarkdown}Code describing the type of date.{:/} | POINTER |  |  | X12_271_Date_Qualifier-365_026 | 
+| date_format | .04 | Date Format | {::nomarkdown}Format of the date representation.{:/} | POINTER |  |  | X12_271_Date_Format_Qualifier-365_032 | 
+
+## <a name="Subscriber_Additional_Info-2_3229"></a>Subscriber_Additional_Info-2_3229 
+
+<dl>
+<dt>id</dt><dd>Subscriber_Additional_Info-2_3229</dd>
+<dt>fmId</dt><dd>2.3229</dd>
+<dt>label</dt><dd>Subscriber Additional Info</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}Sequential number of ZII segment.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| place_of_service | .02 | Place Of Service | {::nomarkdown}Place of service code.{:/} | POINTER |  |  | Place_Of_Service-353_1 | 
+| diagnosis | .03 | Diagnosis | {::nomarkdown}Diagnosis code.{:/} | POINTER |  |  | [Icd_Diagnosis-80](Icd_Diagnosis-80.md) | 
+| qualifier | .04 | Qualifier | {::nomarkdown}Additional information qualifier.{:/} | POINTER |  |  | X12_271_Code_List_Qualifier-365_044 | 
+| nature_of_injury_code | .05 | Nature Of Injury Code | {::nomarkdown}Code that represents the nature of the patient injury.{:/} | POINTER |  |  | X12_271_Nature_Of_Injury_Codes-365_045 | 
+| nature_of_injury_category | .06 | Nature Of Injury Category | {::nomarkdown}Specifies the situation or category to which the code applies.{:/} | STRING |  |  |  | 
+| nature_of_injury_text | .07 | Nature Of Injury Text | {::nomarkdown}Describes the injured body part or parts.{:/} | STRING |  |  |  | 
+
+## <a name="Subscriber_Reference_Id-2_32291"></a>Subscriber_Reference_Id-2_32291 
+
+<dl>
+<dt>id</dt><dd>Subscriber_Reference_Id-2_32291</dd>
+<dt>fmId</dt><dd>2.32291</dd>
+<dt>label</dt><dd>Subscriber Reference Id</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sequence | .01 | Sequence | {::nomarkdown}Sequential number of ZRF segment.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
+| reference_id | .02 | Reference Id | {::nomarkdown}Reference id value.{:/} | STRING |  |  |  | 
+| reference_id_qualifier | .03 | Reference Id Qualifier | {::nomarkdown}Code describing the type of reference id.{:/} | POINTER |  |  | X12_271_Reference_Identification-365_028 | 
+| description | .04 | Description | {::nomarkdown}Short description of reference id.{:/} | STRING |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
