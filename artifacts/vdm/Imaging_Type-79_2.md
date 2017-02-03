@@ -37,6 +37,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Activity_Log-79_23</dd>
+<dt>fmId</dt><dd>79.23</dd>
 <dt>label</dt><dd>Activity Log</dd>
 </dl>
 
@@ -55,6 +56,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Work_Rvu_wrvu_Scaling_Factor-79_22</dd>
+<dt>fmId</dt><dd>79.22</dd>
 <dt>label</dt><dd>Work Rvu (wrvu) Scaling Factor</dd>
 </dl>
 
@@ -65,4 +67,4 @@ title: VDM documentation
 | calendar_year | .01 | Calendar Year | {::nomarkdown}This field identifies the calendar year to associate a specific 'Society<br/>of Chairmen in Academic Radiology Departments' (SCARD) scaling factor to <br/>imaging type specific procedures with an associated wRVU value.{:/} | NUMERIC |  | REQUIRED, INDEXED |  | 
 | scaling_factor | 2 | Scaling Factor | {::nomarkdown}This field identifies the appropriate scaling factor applied to the wRVU<br/>value for an imaging type specific rad/nuc med procedure.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}

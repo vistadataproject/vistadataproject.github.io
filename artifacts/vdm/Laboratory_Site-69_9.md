@@ -109,6 +109,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Immed_Lab_Collect_Div-69_9006</dd>
+<dt>fmId</dt><dd>69.9006</dd>
 <dt>label</dt><dd>Immed Lab Collect Div.</dd>
 </dl>
 
@@ -148,6 +149,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Blood_Bank_Defaults-69_98</dd>
+<dt>fmId</dt><dd>69.98</dd>
 <dt>label</dt><dd>Blood Bank Defaults</dd>
 </dl>
 
@@ -171,6 +173,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Blood_Bank_Institution-69_981</dd>
+<dt>fmId</dt><dd>69.981</dd>
 <dt>label</dt><dd>Blood Bank Institution</dd>
 </dl>
 
@@ -189,6 +192,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Hospital_Site-69_99</dd>
+<dt>fmId</dt><dd>69.99</dd>
 <dt>label</dt><dd>Hospital Site</dd>
 </dl>
 
@@ -205,6 +209,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Printer_Division-69_9007</dd>
+<dt>fmId</dt><dd>69.9007</dd>
 <dt>label</dt><dd>Printer Division</dd>
 </dl>
 
@@ -220,6 +225,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Label_Device-69_9008</dd>
+<dt>fmId</dt><dd>69.9008</dd>
 <dt>label</dt><dd>Label Device</dd>
 </dl>
 
@@ -238,6 +244,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Phlebotomy_Order_Cutoff_Time-69_9001</dd>
+<dt>fmId</dt><dd>69.9001</dd>
 <dt>label</dt><dd>Phlebotomy Order Cut-off Time</dd>
 </dl>
 
@@ -254,6 +261,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Archive_Data-69_9003</dd>
+<dt>fmId</dt><dd>69.9003</dd>
 <dt>label</dt><dd>Archive Data</dd>
 </dl>
 
@@ -271,6 +279,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Division_Parameters-69_9618</dd>
+<dt>fmId</dt><dd>69.9618</dd>
 <dt>label</dt><dd>Division Parameters</dd>
 </dl>
 
@@ -281,4 +290,4 @@ title: VDM documentation
 | division_parameters | .01 | Division Parameters |  | POINTER |  | REQUIRED, INDEXED | [Institution-4](Institution-4.md) | 
 | venipuncture_default_acc_area | 618 | Venipuncture Default Acc Area | {::nomarkdown}This field will allow the site to assign the venipuncture LMIP workload to<br/>a specific ACCESSION AREA. If this field is blank, the venipuncture<br/>workload software will use the ACCESSION AREA name that begins with 'HEM'.<br/>If there is no ACCESSION AREA with a name beginning with 'HEM', ACCESSION<br/>AREA the internal file number of 10 will be used as the default<br/>Venipuncture Accession Area.{:/} | POINTER |  |  | Accession-68 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}

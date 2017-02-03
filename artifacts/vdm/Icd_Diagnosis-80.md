@@ -45,6 +45,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Sex-80_04</dd>
+<dt>fmId</dt><dd>80.04</dd>
 <dt>label</dt><dd>Sex</dd>
 </dl>
 
@@ -59,6 +60,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Age_Low-80_011</dd>
+<dt>fmId</dt><dd>80.011</dd>
 <dt>label</dt><dd>Age Low</dd>
 </dl>
 
@@ -73,6 +75,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Age_High-80_012</dd>
+<dt>fmId</dt><dd>80.012</dd>
 <dt>label</dt><dd>Age High</dd>
 </dl>
 
@@ -87,6 +90,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Status-80_066</dd>
+<dt>fmId</dt><dd>80.066</dd>
 <dt>label</dt><dd>Status</dd>
 </dl>
 
@@ -101,6 +105,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Diagnosis-80_067</dd>
+<dt>fmId</dt><dd>80.067</dd>
 <dt>label</dt><dd>Diagnosis</dd>
 </dl>
 
@@ -115,6 +120,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Description-80_068</dd>
+<dt>fmId</dt><dd>80.068</dd>
 <dt>label</dt><dd>Description</dd>
 </dl>
 
@@ -130,6 +136,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Drg_Grouper-80_071</dd>
+<dt>fmId</dt><dd>80.071</dd>
 <dt>label</dt><dd>Drg Grouper</dd>
 </dl>
 
@@ -144,6 +151,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Major_Diagnostic_Category-80_072</dd>
+<dt>fmId</dt><dd>80.072</dd>
 <dt>label</dt><dd>Major Diagnostic Category</dd>
 </dl>
 
@@ -158,6 +166,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Complication_comorbidity-80_0103</dd>
+<dt>fmId</dt><dd>80.0103</dd>
 <dt>label</dt><dd>Complication/comorbidity</dd>
 </dl>
 
@@ -169,4 +178,4 @@ title: VDM documentation
 | complication_comorbidity | 1 | Complication/comorbidity | {::nomarkdown}This is the Complication/Comorbidity (CC) <br/>designation for the diagnosis.  It includes <br/>Complication/Comorbidity (CC), Major <br/>Complication/Comorbidity (MCC), Major <br/>Complication/Comorbidity when patient is <br/>discharged alive and non-Complication/Comorbidity<br/>(no complications/cormorbidities){:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>CC</dd><dt>3</dt><dd>MCC when patient is discharged alive</dd><dt>2</dt><dd>MCC</dd><dt>0</dt><dd>non-CC</dd></dl>{:/} | 
 | primary | 2 | Primary | {::nomarkdown}The value in this field is used to determine<br/>whether CC/MCC value is taken from primary <br/>diagnosis instead of the secondary diagnosis.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>1</dt><dd>Primary DX is own CC/MCC</dd><dt>0</dt><dd>Primary DX is not own CC/MCC</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}

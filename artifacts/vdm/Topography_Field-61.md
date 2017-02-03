@@ -40,6 +40,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Journal_Reference-61_02</dd>
+<dt>fmId</dt><dd>61.02</dd>
 <dt>label</dt><dd>Journal Reference</dd>
 </dl>
 
@@ -59,6 +60,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Sct_Status_Date-61_023</dd>
+<dt>fmId</dt><dd>61.023</dd>
 <dt>label</dt><dd>Sct Status Date</dd>
 </dl>
 
@@ -72,4 +74,4 @@ title: VDM documentation
 | sct_status_user | 3 | Sct Status User | {::nomarkdown}Store the user who initiated the process to apply the STS SNOMED CT code <br/>resolution or the original mapping to this file entry.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
 | sct_comment_text | 4 | Sct Comment Text | {::nomarkdown}Contains text or comments related to the mapping of a term to SNOMED CT.<br/>The text can relate to information submitted to STS for the term to be <br/>mapped, the comments returned by STS related to the mapping and <br/>any comments when attempting to apply the disposition from STS.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}

@@ -68,6 +68,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Accession_Area-60_11</dd>
+<dt>fmId</dt><dd>60.11</dd>
 <dt>label</dt><dd>Accession Area</dd>
 </dl>
 
@@ -82,6 +83,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Site_specimen-60_01</dd>
+<dt>fmId</dt><dd>60.01</dd>
 <dt>label</dt><dd>Site/specimen</dd>
 </dl>
 
@@ -111,6 +113,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Lab_Test_Included_In_Panel-60_02</dd>
+<dt>fmId</dt><dd>60.02</dd>
 <dt>label</dt><dd>Lab Test Included In Panel</dd>
 </dl>
 
@@ -126,6 +129,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Collection_Sample-60_03</dd>
+<dt>fmId</dt><dd>60.03</dd>
 <dt>label</dt><dd>Collection Sample</dd>
 </dl>
 
@@ -147,6 +151,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Verify_Wkld_Code-60_12</dd>
+<dt>fmId</dt><dd>60.12</dd>
 <dt>label</dt><dd>Verify Wkld Code</dd>
 </dl>
 
@@ -163,6 +168,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Accession_Wkld_Code-60_13</dd>
+<dt>fmId</dt><dd>60.13</dd>
 <dt>label</dt><dd>Accession Wkld Code</dd>
 </dl>
 
@@ -178,6 +184,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Site_Notes_Date-60_0505</dd>
+<dt>fmId</dt><dd>60.0505</dd>
 <dt>label</dt><dd>Site Notes Date</dd>
 </dl>
 
@@ -188,4 +195,4 @@ title: VDM documentation
 | site_notes_date | .01 | Site Notes Date | {::nomarkdown}Date of the note.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:50:15 am</p>{:/}
