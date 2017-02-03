@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}Returns all the answers given to a particular MH administration  input: AD = ADMINISTRATION # output: [DATA]        ADMINISTRATION ID^DFN^INSTRUMENT^DATE GIVEN^IS COMPLETE        QUESTION #^seq^ANSWER        .        .        .        QUESTION #^seq^ANSWER{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGIEN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}30{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Internal entry number of Image File entry  ^MAG(2005,{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}255{:/} | {::nomarkdown}true{:/} | {::nomarkdown}First \^\ piece is MAGIEN, The IMAGE File Internal number.  ^MAG(2005,Next  \^\ pieces are the same RAD DATA that was sent in the  RPC Call MAGGRADLIST, as the return Array.    RADFN_\^\_RADTI_\^\_RACNI_\^\_RANME_\^\_RASSN_\^\   _RADATE_\^\_RADTE_\^\_RACN_\^\_RAPRC_\^\_RARPT_\^\_RASTThe same DATA that the RAD procedure RAPTLU saved in ^TMP($J,\RAEX\,RACNT) We saved the variables that the RAD Routine RAPTLU set up when creatingthe list of Rad Exams for the patient. We send it back as input here,Initialize the variables so when we need to call any Rad Procedure, wehave what we need.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STATUS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}8{:/} | {::nomarkdown}true{:/} | {::nomarkdown}\A\  : Get only the appealed requests of this type\O\  : Get only the open requests of this type\C\  : \          \ closed \                \\P\  : \          \ pending \               \\N\  : \          \ Other Nondisclosures    \\E\  : \          \ entered in error \      \\X\  : \          \ cancelled \             \\*\  : Get all types{:/} | 
 | {::nomarkdown}PATIENT/CLERK ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}99{:/} | {::nomarkdown}true{:/} | {::nomarkdown}DFN of patient or IEN of clerk.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

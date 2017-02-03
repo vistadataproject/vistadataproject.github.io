@@ -20,4 +20,4 @@ title: VISTA RPC documentation
  return value type | {::nomarkdown}ARRAY{:/}
  description | {::nomarkdown}This API will safely delete all 601.751 enteries of the choicetype presented. This API will not allow deletions of Choicetypes referrefd to in the MH Question file (601.72)         Input: CHOICETYPE        Output: DELETED if sucessful                LIST OF question iens if in use{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

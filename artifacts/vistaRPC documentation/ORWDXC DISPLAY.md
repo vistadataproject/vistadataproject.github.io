@@ -28,7 +28,7 @@ title: VISTA RPC documentation
  Method | DISPLAY^[ORWDXC](http://code.osehra.org/dox/Routine_ORWDXC_source.html)
  Method comment | Return list of Order Checks for a FillerID (namespace)
  Input parameters | {::nomarkdown}DFN, FID{:/}
- Code | {::nomarkdown}  N I,ORX,ORY<br> S ORX=1,ORX(1)="|"_FID<br> D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")<br> S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4){:/}
+ Code | {::nomarkdown}  N I,ORX,ORY<br> S ORX=1,ORX(1)="/"_FID<br> D EN^ORKCHK(.ORY,DFN,.ORX,"DISPLAY")<br> S I=0 F  S I=$O(ORY(I)) Q:I'>0  S LST(I)=$P(ORY(I),U,4){:/}
 
 
 ### CPRS
@@ -37,4 +37,4 @@ title: VISTA RPC documentation
  --- | --- 
  Pascal Code | {::nomarkdown} <a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Orders/rOrders.pas">Orders/rOrders.pas</a><br/>{:/}
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}
