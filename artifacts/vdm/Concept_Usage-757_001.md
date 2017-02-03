@@ -21,4 +21,4 @@ title: VDM documentation
 | originating_value | 1 | Originating Value | {::nomarkdown}It was necessary to \seed\ this file prior to export.  This field represents<br/>the original (exported) value of the frequency of use (Usage, field #2).  To<br/>obtain the actual frequency of use, this value must be subtracted from the <br/>Frequency field (#2).{:/} | NUMERIC |  | REQUIRED |  | 
 | frequency | 2 | Frequency | {::nomarkdown}This value is incremented each time the user selects a concept from the Lexicon<br/>using the Special Lookup Routines supplied with the Lexicon Utility.  Over time,<br/>it will show the frequency of use of each of the concepts contained in the<br/>Lexicon.  Additionally, it is used to order the selection list in the Special<br/>Lookup Routines, placing the most frequently used concepts at the top of the<br/>list.{:/} | NUMERIC |  | REQUIRED |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 2nd 2017, 6:55:25 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}

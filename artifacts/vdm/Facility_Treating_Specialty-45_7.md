@@ -38,4 +38,4 @@ title: VDM documentation
 | effective_date | .01 | Effective Date | {::nomarkdown}This multiple holds the effective date(s) for the Facility Treating<br/>Specialties<br/> {:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | active | .02 | Active? | {::nomarkdown}This field will be an active/inactive flag for the facility treating<br/>specialty.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 2nd 2017, 6:55:25 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}

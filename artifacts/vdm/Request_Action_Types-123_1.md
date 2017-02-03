@@ -26,4 +26,4 @@ title: VDM documentation
 | hl7_table_38_order_status | 6 | Hl7 Table 38 Order Status | {::nomarkdown}This field is for documenting purposes and contains the related Table 38<br/>order status from HL7 for each activity.{:/} | STRING |  |  |  | 
 | action_print_name | 7 | Action Print Name | {::nomarkdown}This field is used on the 513 Form as a header for comments.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 2nd 2017, 6:55:25 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 5:29:32 am</p>{:/}
