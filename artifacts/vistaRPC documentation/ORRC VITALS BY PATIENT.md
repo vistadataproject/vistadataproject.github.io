@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}STOP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date to stop searching for vitals, in the form YYYYMMDDHHMMSS;if no date range is specified, up to 5 sets of measurements will bereturned.{:/} | 
 | {::nomarkdown}DETAILS{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This flag indicates whether to return the details of each vital signtaken (true), or just the list of measurement set IDs (false).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

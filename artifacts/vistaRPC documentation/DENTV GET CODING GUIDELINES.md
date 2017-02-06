@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}ADA{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}10{:/} | {::nomarkdown}true{:/} | {::nomarkdown}The external ADA or CPT code.ADA or CPT code{:/} | 
 | {::nomarkdown}ADMG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Set to 1 to include Admin guidelines with the Coding Guidelines.  Set to 0 to send only Coding Guidelines.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

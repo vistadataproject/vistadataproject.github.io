@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSISRTN{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This is the internal file number from file 130, i.e., CASE#{:/} | 
 | {::nomarkdown}FLAG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}4{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Optional parameter - string of characters indicating which reports to return:  FLAG[\O\ - return Operation Report       \A\ - return Anesthesia Report       \N\ - return Nurse's Report       \P\ - return Procedure Report (NON-OR) Default to FLAG=\OA\{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

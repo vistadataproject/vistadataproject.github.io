@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DVBGUIV{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Version # of CAPRI GUI.  Sets a variable DVBABVx so that the error trap will display what version of the client software the user was utilizing.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:44 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

@@ -117,6 +117,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Appointment-44_001</dd>
+<dt>fmId</dt><dd>44.001</dd>
 <dt>label</dt><dd>Appointment</dd>
 </dl>
 
@@ -125,13 +126,14 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | appointment_date_time | .01 | Appointment Date/time | {::nomarkdown}Date/time of a veteran's appointment to an outpatient clinic.{:/} | DATE-TIME |  | REQUIRED |  | 
-| patient | 2 | Patient | {::nomarkdown}Patient for whom this data relates.{:/} | [OBJECT] |  |  | {id:Patient-44_003,fmId:44.003,label:Patient,properties:[{id:patient,fmId:.01,label:Patient,description:Patient for whom appointment data relates.,datatype:POINTER,required:true,range:{id:Patient-2}},{id:length_of_appt,fmId:1,label:Length Of App't,description:Length of appointment in minutes (i.e. 15-60).,datatype:NUMERIC},{id:xray,fmId:2,label:Xray,description:X-ray  ordered in association with an appointment.,datatype:STRING},{id:other,fmId:3,label:Other,description:Any other tests ordered in association with an appointment,datatype:STRING},{id:ward_loc,fmId:4,label:Ward Loc,description:Ward location of patient if an inpatient at the time of appointment.,datatype:STRING},{id:data_entry_clerk,fmId:7,label:Data Entry Clerk,description:Clerk who entered the appointment.,datatype:POINTER,range:{id:New_Person-200}},{id:date_appointment_made,fmId:8,label:Date Appointment Made,description:Date/time appointment was placed into the package.,datatype:DATE-TIME},{id:overbook,fmId:9,label:Overbook,description:Was this appointment an overbook, or scheduled over the maximum number\rof appointments allowed for that day/slot.,datatype:ENUMERATION,range:{OVERBOOK:O}},{id:prior_xray_results_to_clinic,fmId:10,label:Prior X-ray Results To Clinic?,description:Are prior x-ray results required to be sent to clinic at time of\rappointment?,datatype:BOOLEAN,range:{true:Y}},{id:eligibility_of_visit,fmId:30,label:Eligibility Of Visit,description:This field was previously called NON-VETERAN VISIT ELIGIBILITY.  It now\rcontains the eligibility being used at the time of the appointment.  If\ra patient has Other Entitled Eligibilities (replaces Dual Status), the\rappointment options will prompt for eligibility and be set here.,datatype:POINTER,range:{id:Eligibility_Code-8}},{id:parent_record_request_number,fmId:200,label:Parent Record Request #,description:This field contains the request number from the record tracking system.\rIt will only have a request number if the clinic requires records\rfor an appointment and if the site is utilitizing the record tracking\rmodule.\r \rThe request number represents the 'parent' request for records. This\rparent request may then, in turn, indicate that more than one record \rrequest is associated with this appointment. For example, if the patient's\rmedical record has two volumes then there maybe a request issued for each\rvolume.\r \rThe request for volume 1 maybe the initial(parent) request and the\rrequest for the second volume would have volumes 1's request as its\rparent.\r \rAlso, requests for x-ray film folders, dental records etc. maybe linked\rto this parent request.,datatype:POINTER,range:{id:Requested_Records-190_1}},{id:check_in_user,fmId:302,label:Check In User,description:This field contains the user who checked in the patient\rfor the appointment.  It is automatically filled in when the\rCHECKED-IN field(#309) is entered.,datatype:POINTER,range:{id:New_Person-200}},{id:checked_out,fmId:303,label:Checked Out,description:This field contains the date and time the patient was checked out\rof the appointment.,datatype:DATE-TIME},{id:check_out_user,fmId:304,label:Check Out User,description:This field contains the user who checked out the patient\rfor the appointment.  It is automatically entered when the\rCHECKED OUT field(#303) is entered.,datatype:POINTER,range:{id:New_Person-200}},{id:check_in_entered,fmId:305,label:Check In Entered,description:Date and time that the 'check in' was entered into the system.\rThis field is automatically filled in when the CHECKED-IN(#309) field\ris entered.,datatype:DATE-TIME},{id:check_out_entered,fmId:306,label:Check Out Entered,description:Date and time that the 'check out' was entered into the system.\rThis field is automatically filled in when the CHECKED-OUT(#303) field\ris entered.,datatype:DATE-TIME},{id:checkedin,fmId:309,label:Checked-in,description:This field contains the date and time the patient was checked in\rfor the appointment.,datatype:DATE-TIME},{id:appointment_cancelled,fmId:310,label:Appointment Cancelled?,description:Was appointment cancelled?,datatype:ENUMERATION,range:{CANCELLED:C}},{id:consult_link,fmId:688,label:Consult Link,description:This field links the appointment to a consult.,datatype:POINTER,indexed:true,range:{id:Request_consultation-123}}]} | 
+| patient | 2 | Patient | {::nomarkdown}Patient for whom this data relates.{:/} | [OBJECT] |  |  | [Patient-44_003](#Patient-44_003)  | 
 | message | 1400 | Message | {::nomarkdown}Message generated when clerk attempting to make appointment and<br/>patient has appointment same day in another or same clinic to<br/>alert them of same.{:/} | STRING |  |  |  | 
 
 ## <a name="Cancel_Date_time_Begin-44_05"></a>Cancel_Date_time_Begin-44_05 
 
 <dl>
 <dt>id</dt><dd>Cancel_Date_time_Begin-44_05</dd>
+<dt>fmId</dt><dd>44.05</dd>
 <dt>label</dt><dd>Cancel Date/time Begin</dd>
 </dl>
 
@@ -146,6 +148,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Chart_Check-44_006</dd>
+<dt>fmId</dt><dd>44.006</dd>
 <dt>label</dt><dd>Chart Check</dd>
 </dl>
 
@@ -160,6 +163,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Availability-44_002</dd>
+<dt>fmId</dt><dd>44.002</dd>
 <dt>label</dt><dd>Availability</dd>
 </dl>
 
@@ -168,12 +172,13 @@ title: VDM documentation
 | id | fmId | label | description | datatype | location | attributes | range | 
 | --- | --- | --- | --- | --- | --- | --- | --- | 
 | availability | .01 | Availability | {::nomarkdown}Clinic availability information.{:/} | DATE-TIME |  | REQUIRED |  | 
-| schedule_time | 2 | Schedule Time | {::nomarkdown}Time slots or pattern scheduled for a specific clinic.{:/} | [OBJECT] |  |  | {id:Schedule_Time-44_004,fmId:44.004,label:Schedule Time,properties:[{id:schedule_time,fmId:.01,label:Schedule Time,description:Time slots or pattern scheduled for a specific clinic.,datatype:STRING,required:true},{id:number_of_patients,fmId:1,label:Number Of Patients,description:Number of patients allowed to be booked for time slots.,datatype:NUMERIC}]} | 
+| schedule_time | 2 | Schedule Time | {::nomarkdown}Time slots or pattern scheduled for a specific clinic.{:/} | [OBJECT] |  |  | [Schedule_Time-44_004](#Schedule_Time-44_004)  | 
 
 ## <a name="Pattern-44_005"></a>Pattern-44_005 
 
 <dl>
 <dt>id</dt><dd>Pattern-44_005</dd>
+<dt>fmId</dt><dd>44.005</dd>
 <dt>label</dt><dd>Pattern</dd>
 </dl>
 
@@ -189,6 +194,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Special_Pattern-44_0002</dd>
+<dt>fmId</dt><dd>44.0002</dd>
 <dt>label</dt><dd>Special Pattern</dd>
 </dl>
 
@@ -203,6 +209,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Sunday_Template-44_06</dd>
+<dt>fmId</dt><dd>44.06</dd>
 <dt>label</dt><dd>Sunday Template</dd>
 </dl>
 
@@ -217,6 +224,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Monday_Template-44_07</dd>
+<dt>fmId</dt><dd>44.07</dd>
 <dt>label</dt><dd>Monday Template</dd>
 </dl>
 
@@ -231,6 +239,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Tuesday_Template-44_08</dd>
+<dt>fmId</dt><dd>44.08</dd>
 <dt>label</dt><dd>Tuesday Template</dd>
 </dl>
 
@@ -245,6 +254,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Wednesday_Template-44_09</dd>
+<dt>fmId</dt><dd>44.09</dd>
 <dt>label</dt><dd>Wednesday Template</dd>
 </dl>
 
@@ -259,6 +269,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Thursday_Template-44_008</dd>
+<dt>fmId</dt><dd>44.008</dd>
 <dt>label</dt><dd>Thursday Template</dd>
 </dl>
 
@@ -273,6 +284,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Friday_Template-44_009</dd>
+<dt>fmId</dt><dd>44.009</dd>
 <dt>label</dt><dd>Friday Template</dd>
 </dl>
 
@@ -287,6 +299,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Saturday_Template-44_0001</dd>
+<dt>fmId</dt><dd>44.0001</dd>
 <dt>label</dt><dd>Saturday Template</dd>
 </dl>
 
@@ -301,6 +314,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Provider-44_1</dd>
+<dt>fmId</dt><dd>44.1</dd>
 <dt>label</dt><dd>Provider</dd>
 </dl>
 
@@ -315,6 +329,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Diagnosis-44_11</dd>
+<dt>fmId</dt><dd>44.11</dd>
 <dt>label</dt><dd>Diagnosis</dd>
 </dl>
 
@@ -329,6 +344,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Team_Positions-44_40457</dd>
+<dt>fmId</dt><dd>44.40457</dd>
 <dt>label</dt><dd>Team Positions</dd>
 </dl>
 
@@ -339,4 +355,51 @@ title: VDM documentation
 | team_positions | .01 | Team Positions | {::nomarkdown}This is populated via a trigger on the ASSOCIATED CLINIC (#.09) Field<br/>of the TEAM POSITION (#404.57) File.{:/} | POINTER |  | REQUIRED, INDEXED | Team_Position-404_57 | 
 | team | .02 | Team |  | POINTER |  | INDEXED | Team-404_51 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+## <a name="Patient-44_003"></a>Patient-44_003 
+
+<dl>
+<dt>id</dt><dd>Patient-44_003</dd>
+<dt>fmId</dt><dd>44.003</dd>
+<dt>label</dt><dd>Patient</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| patient | .01 | Patient | {::nomarkdown}Patient for whom appointment data relates.{:/} | POINTER |  | REQUIRED | [Patient-2](Patient-2.md) | 
+| length_of_appt | 1 | Length Of App't | {::nomarkdown}Length of appointment in minutes (i.e. 15-60).{:/} | NUMERIC |  |  |  | 
+| xray | 2 | Xray | {::nomarkdown}X-ray  ordered in association with an appointment.{:/} | STRING |  |  |  | 
+| other | 3 | Other | {::nomarkdown}Any other tests ordered in association with an appointment{:/} | STRING |  |  |  | 
+| ward_loc | 4 | Ward Loc | {::nomarkdown}Ward location of patient if an inpatient at the time of appointment.{:/} | STRING |  |  |  | 
+| data_entry_clerk | 7 | Data Entry Clerk | {::nomarkdown}Clerk who entered the appointment.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| date_appointment_made | 8 | Date Appointment Made | {::nomarkdown}Date/time appointment was placed into the package.{:/} | DATE-TIME |  |  |  | 
+| overbook | 9 | Overbook | {::nomarkdown}Was this appointment an overbook, or scheduled over the maximum number<br/>of appointments allowed for that day/slot.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>O</dt><dd>OVERBOOK</dd></dl>{:/} | 
+| prior_xray_results_to_clinic | 10 | Prior X-ray Results To Clinic? | {::nomarkdown}Are prior x-ray results required to be sent to clinic at time of<br/>appointment?{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>Y</dt><dd>true</dd></dl>{:/} | 
+| eligibility_of_visit | 30 | Eligibility Of Visit | {::nomarkdown}This field was previously called NON-VETERAN VISIT ELIGIBILITY.  It now<br/>contains the eligibility being used at the time of the appointment.  If<br/>a patient has Other Entitled Eligibilities (replaces Dual Status), the<br/>appointment options will prompt for eligibility and be set here.{:/} | POINTER |  |  | Eligibility_Code-8 | 
+| parent_record_request_number | 200 | Parent Record Request # | {::nomarkdown}This field contains the request number from the record tracking system.<br/>It will only have a request number if the clinic requires records<br/>for an appointment and if the site is utilitizing the record tracking<br/>module.<br/> <br/>The request number represents the 'parent' request for records. This<br/>parent request may then, in turn, indicate that more than one record <br/>request is associated with this appointment. For example, if the patient's<br/>medical record has two volumes then there maybe a request issued for each<br/>volume.<br/> <br/>The request for volume 1 maybe the initial(parent) request and the<br/>request for the second volume would have volumes 1's request as its<br/>parent.<br/> <br/>Also, requests for x-ray film folders, dental records etc. maybe linked<br/>to this parent request.{:/} | POINTER |  |  | Requested_Records-190_1 | 
+| check_in_user | 302 | Check In User | {::nomarkdown}This field contains the user who checked in the patient<br/>for the appointment.  It is automatically filled in when the<br/>CHECKED-IN field(#309) is entered.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| checked_out | 303 | Checked Out | {::nomarkdown}This field contains the date and time the patient was checked out<br/>of the appointment.{:/} | DATE-TIME |  |  |  | 
+| check_out_user | 304 | Check Out User | {::nomarkdown}This field contains the user who checked out the patient<br/>for the appointment.  It is automatically entered when the<br/>CHECKED OUT field(#303) is entered.{:/} | POINTER |  |  | [New_Person-200](New_Person-200.md) | 
+| check_in_entered | 305 | Check In Entered | {::nomarkdown}Date and time that the 'check in' was entered into the system.<br/>This field is automatically filled in when the CHECKED-IN(#309) field<br/>is entered.{:/} | DATE-TIME |  |  |  | 
+| check_out_entered | 306 | Check Out Entered | {::nomarkdown}Date and time that the 'check out' was entered into the system.<br/>This field is automatically filled in when the CHECKED-OUT(#303) field<br/>is entered.{:/} | DATE-TIME |  |  |  | 
+| checkedin | 309 | Checked-in | {::nomarkdown}This field contains the date and time the patient was checked in<br/>for the appointment.{:/} | DATE-TIME |  |  |  | 
+| appointment_cancelled | 310 | Appointment Cancelled? | {::nomarkdown}Was appointment cancelled?{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>C</dt><dd>CANCELLED</dd></dl>{:/} | 
+| consult_link | 688 | Consult Link | {::nomarkdown}This field links the appointment to a consult.{:/} | POINTER |  | INDEXED | Request_consultation-123 | 
+
+## <a name="Schedule_Time-44_004"></a>Schedule_Time-44_004 
+
+<dl>
+<dt>id</dt><dd>Schedule_Time-44_004</dd>
+<dt>fmId</dt><dd>44.004</dd>
+<dt>label</dt><dd>Schedule Time</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| schedule_time | .01 | Schedule Time | {::nomarkdown}Time slots or pattern scheduled for a specific clinic.{:/} | STRING |  | REQUIRED |  | 
+| number_of_patients | 1 | Number Of Patients | {::nomarkdown}Number of patients allowed to be booked for time slots.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

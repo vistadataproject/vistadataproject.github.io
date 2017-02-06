@@ -30,4 +30,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MEDVALID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Validation status of the media import event:    0 = VALID MEDIA -1 = DICOMDIR MISSING -2 = DICOMDIR INVALID{:/} | 
 | {::nomarkdown}MEDVMSG{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}220{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Description of the validation status of the media import event.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

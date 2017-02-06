@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PARAMS{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}100{:/} | {::nomarkdown}true{:/} | {::nomarkdown}TXID ^ SYSUPDAT ^ TXDUZ ^ TXDIVTXID: Transaction ID--identifies the type of transaction being requested;TXDUZ: Optional; DUZ value for retrieving another users stored data.  E.g., allow User X to see User Y's Hanging ProtocolsTXDIV: Optional; DIVision value for viewing data stored from other divisions.{:/} | 
 | {::nomarkdown}DATA{:/} | {::nomarkdown}WORD PROCESSING{:/} | {::nomarkdown}240{:/} |  | {::nomarkdown}Optional Block of text sent from the client side; has structure as follows *LABEL Label Value 0:N lines of text associated with Label Value *ENDNote: multiple sequences of the above may be included.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

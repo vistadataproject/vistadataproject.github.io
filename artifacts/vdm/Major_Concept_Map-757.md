@@ -21,4 +21,4 @@ title: VDM documentation
 | group | 1 | Group | {::nomarkdown}This field is intended to provide applications the ability to group terms by<br/>categories, such as Cardiovascular, Pulmonary, etc.{:/} | POINTER |  |  | [Expressions-757_01](Expressions-757_01.md) | 
 | group-2 | 2 | Group | {::nomarkdown}This field is for future use.  It is intended to provide applications the<br/>ability to group terms by clinical category (not provided by UMLS), such<br/>as cardiovascular, pulmonary etc.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

@@ -42,6 +42,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Authorized_Beds_Date-42_09</dd>
+<dt>fmId</dt><dd>42.09</dd>
 <dt>label</dt><dd>Authorized Beds Date</dd>
 </dl>
 
@@ -56,6 +57,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Outofservice_Date-42_08</dd>
+<dt>fmId</dt><dd>42.08</dd>
 <dt>label</dt><dd>Out-of-service Date</dd>
 </dl>
 
@@ -79,6 +81,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Totals-42_05</dd>
+<dt>fmId</dt><dd>42.05</dd>
 <dt>label</dt><dd>Totals</dd>
 </dl>
 
@@ -91,7 +94,22 @@ title: VDM documentation
 | target | 1 | Target | {::nomarkdown}This field contains the planned Average Daily Census (ADC) <br/>that is printed on the Average Daily Census Section of the <br/>Bed Status Report.{:/} | NUMERIC |  |  |  | 
 | adc_cum | 2 | Adc Cum | {::nomarkdown}This field contains the actual Average Daily Census (ADC)  <br/>that is printed on the Average Daily Census Section of the <br/>Bed Status Report.{:/} | NUMERIC |  |  |  | 
 | print_in_cumulative_totals | 2.5 | Print In Cumulative Totals | {::nomarkdown}This field is a set of codes '0' for no and '1' for yes, it is used <br/>to indicate whether you want this level (totals) to be used in <br/>the Cumulative Totals Section of the Bed Status Report.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-| plan_cum_disch_month | 3 | Plan Cum Disch Month | {::nomarkdown}This field is a multiple that adds new entry without asking.{:/} | [OBJECT] |  |  | {id:Plan_Cum_Disch_Month-42_07,fmId:42.07,label:Plan Cum Disch Month,properties:[{id:plan_cum_disch_month,fmId:.01,label:Plan Cum Disch Month,description:This sub-field of the multiple 'Plan Cum Disch Month' field is also  \ra multiple and contains a set of codes for the month for which \ryou would like to enter the planned cumulative discharges.,datatype:ENUMERATION,required:true,range:{MAR:6,FEB:5,AUG:11,SEP:12,APR:7,JUN:9,JUL:10,JAN:4,MAY:8,NOV:2,DEC:3,OCT:1}},{id:planned_discharges_for_month,fmId:1,label:Planned Discharges For Month,description:This sub-field of the multiple 'Plan Cum Disch Month' field contains \rthe number of discharges planned for the month selected from 0 to 9999.,datatype:NUMERIC}]} | 
+| plan_cum_disch_month | 3 | Plan Cum Disch Month | {::nomarkdown}This field is a multiple that adds new entry without asking.{:/} | [OBJECT] |  |  | [Plan_Cum_Disch_Month-42_07](#Plan_Cum_Disch_Month-42_07)  | 
 | cum_title | 4 | Cum Title | {::nomarkdown}This field is free text (1 to 20 characters in length) and is the title <br/>you want to print for the Cumulative Totals Section of the Bed Status <br/>Report.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+## <a name="Plan_Cum_Disch_Month-42_07"></a>Plan_Cum_Disch_Month-42_07 
+
+<dl>
+<dt>id</dt><dd>Plan_Cum_Disch_Month-42_07</dd>
+<dt>fmId</dt><dd>42.07</dd>
+<dt>label</dt><dd>Plan Cum Disch Month</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| plan_cum_disch_month | .01 | Plan Cum Disch Month | {::nomarkdown}This sub-field of the multiple 'Plan Cum Disch Month' field is also  <br/>a multiple and contains a set of codes for the month for which <br/>you would like to enter the planned cumulative discharges.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>6</dt><dd>MAR</dd><dt>5</dt><dd>FEB</dd><dt>11</dt><dd>AUG</dd><dt>12</dt><dd>SEP</dd><dt>7</dt><dd>APR</dd><dt>9</dt><dd>JUN</dd><dt>10</dt><dd>JUL</dd><dt>4</dt><dd>JAN</dd><dt>8</dt><dd>MAY</dd><dt>2</dt><dd>NOV</dd><dt>3</dt><dd>DEC</dd><dt>1</dt><dd>OCT</dd></dl>{:/} | 
+| planned_discharges_for_month | 1 | Planned Discharges For Month | {::nomarkdown}This sub-field of the multiple 'Plan Cum Disch Month' field contains <br/>the number of discharges planned for the month selected from 0 to 9999.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

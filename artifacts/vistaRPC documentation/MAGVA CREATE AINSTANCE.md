@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MAGPARAM{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown} MAGPARAM(\ARTIFACT\) MAGPARAM(\STORAGE PROVIDER\) MAGPARAM(\FILEREF\) MAGPARAM(\DISK VOLUME\) MAGPARAM(\FILEPATH\){:/} | 
 | {::nomarkdown}MAGURL{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}MAGURL(1..n) = URL value  URL value is split in individual records in MAGURL{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

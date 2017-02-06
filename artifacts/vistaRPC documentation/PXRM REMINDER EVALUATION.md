@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}PATIENT ID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Patient identifier from the patient file [#2]{:/} | 
 | {::nomarkdown}REMINDER ARRAY{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}16{:/} | {::nomarkdown}true{:/} | {::nomarkdown}List of reminders in format :           array(1) = reminder ien1 (from #811.9)         array(2) = reminder ien2         etc{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

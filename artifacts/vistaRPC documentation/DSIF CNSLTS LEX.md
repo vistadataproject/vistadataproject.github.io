@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DSIFAPP{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the type of search you want to perform: CPT or ICD. Null searches all of Lexicon{:/} | 
 | {::nomarkdown}DSIFDT{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}This is the date you want to do the Lexicon search for. If nothing is passed, it uses the current date.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

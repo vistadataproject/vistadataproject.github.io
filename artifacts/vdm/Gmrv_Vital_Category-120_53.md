@@ -27,6 +27,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Vital_Type-120_531</dd>
+<dt>fmId</dt><dd>120.531</dd>
 <dt>label</dt><dd>Vital Type</dd>
 </dl>
 
@@ -44,6 +45,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Effective_Date_time-120_5399</dd>
+<dt>fmId</dt><dd>120.5399</dd>
 <dt>label</dt><dd>Effective Date/time</dd>
 </dl>
 
@@ -54,4 +56,4 @@ title: VDM documentation
 | effective_date_time | .01 | Effective Date/time | {::nomarkdown}This is the date/time when the Status of the reference term was <br/>established.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | status | .02 | Status | {::nomarkdown}The Status of a reference term is either 'ACTIVE' or 'INACTIVE'. If <br/>'ACTIVE', then the term will be accessible by end-users to document a <br/>particular patient event. If 'INACTIVE', then the term will only be <br/>accessible by the application to display legacy data.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>1</dt><dd>ACTIVE</dd><dt>0</dt><dd>INACTIVE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

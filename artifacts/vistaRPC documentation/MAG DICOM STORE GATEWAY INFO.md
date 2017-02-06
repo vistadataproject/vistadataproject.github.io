@@ -29,4 +29,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}FILES{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array.The entries in this array contain information about fileson the DICOM Gateway.For each file, a timestamp (most recent modification) andthe full path+file name is included.{:/} | 
 | {::nomarkdown}VERSION{:/} | {::nomarkdown}LIST{:/} | {::nomarkdown}32000{:/} | {::nomarkdown}true{:/} | {::nomarkdown}This parameter is an array.The entries in this array contain information about theversion stamps of the various executables in the DICOMGateway application.For each component, a timestamp (most recent modification)and the full path+file name is included.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

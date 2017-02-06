@@ -68,6 +68,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Accession_Area-60_11</dd>
+<dt>fmId</dt><dd>60.11</dd>
 <dt>label</dt><dd>Accession Area</dd>
 </dl>
 
@@ -82,6 +83,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Site_specimen-60_01</dd>
+<dt>fmId</dt><dd>60.01</dd>
 <dt>label</dt><dd>Site/specimen</dd>
 </dl>
 
@@ -103,14 +105,15 @@ title: VDM documentation
 | therapeutic_high | 9.3 | Therapeutic High | {::nomarkdown}This is the high end value of the therapeutic range.  Used to flag results.<br/>If both the low and high are defined it will print in this manner:<br/>        low : 10<br/>        high : 50<br/>If only the low is defined and it is numeric it will print in this<br/>manner: <br/>        low: 10<br/>If only the low is defined and it is alphanumeric it will print in <br/>this manner:<br/>        NORMAL<br/>If only the high is defined and it is numeric it will print in this <br/>manner:<br/>        high: 50<br/>If only the high is defined and it is alphanumeric it will print in<br/>this manner:<br/>        >1000{:/} | STRING |  |  |  | 
 | amis_rcs_144 | 10 | *amis/rcs 14-4 | {::nomarkdown}No longer used.  Will be deleted after this version {:/} | [POINTER] |  |  |  | 
 | use_for_reference_testing | 13 | Use For Reference Testing | {::nomarkdown}Indicates if the reference ranges and units associated with this<br/>specimen type can be used when manually entering results of testing<br/>performed at another laboratory.{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>1</dt><dd>false</dd><dt>0</dt><dd>true</dd></dl>{:/} | 
-| foreign_computer_system | 20 | Foreign Computer System | {::nomarkdown}Reserved for future use. Do not use.{:/} | [OBJECT] |  |  | {id:Foreign_Computer_System-60_2,fmId:60.2,label:Foreign Computer System,properties:[{id:foreign_computer_system,fmId:.01,label:Foreign Computer System,description:Reserved for future use. Do not use.,datatype:STRING,indexed:true,required:true},{id:foreign_item_number,fmId:1,label:Foreign Item #,description:RESERVED FOR FUTURE USE,datatype:STRING},{id:integer,fmId:2,label:Integer,description:RESERVED FOR FUTURE USE,datatype:BOOLEAN,range:{false:0,true:1}},{id:unit_conversion,fmId:3,label:Unit Conversion,description:RESERVED FOR FUTURE USE,datatype:STRING}]} | 
+| foreign_computer_system | 20 | Foreign Computer System | {::nomarkdown}Reserved for future use. Do not use.{:/} | [OBJECT] |  |  | [Foreign_Computer_System-60_2](#Foreign_Computer_System-60_2)  | 
 | loinc_code | 95.3 | Loinc Code | {::nomarkdown} This field contains the pointer to the LAB LOINC (#95.3) file. {:/} | POINTER |  | INDEXED | Lab_Loinc-95_3 | 
-| specimen_cpt | 96 | Specimen Cpt |  | [OBJECT] |  |  | {id:Specimen_Cpt-60_196,fmId:60.196,label:Specimen Cpt,properties:[{id:specimen_cpt,fmId:.01,label:Specimen Cpt,description:A CPT associated with the specimen,datatype:POINTER,indexed:true,required:true,range:{id:Cpt-81}},{id:active_date_csv,fmId:1,label:Active Date (csv),description:This the active date of the SPECIMEN CPT for CSV purposes.,datatype:DATE-TIME}]} | 
+| specimen_cpt | 96 | Specimen Cpt |  | [OBJECT] |  |  | [Specimen_Cpt-60_196](#Specimen_Cpt-60_196)  | 
 
 ## <a name="Lab_Test_Included_In_Panel-60_02"></a>Lab_Test_Included_In_Panel-60_02 
 
 <dl>
 <dt>id</dt><dd>Lab_Test_Included_In_Panel-60_02</dd>
+<dt>fmId</dt><dd>60.02</dd>
 <dt>label</dt><dd>Lab Test Included In Panel</dd>
 </dl>
 
@@ -126,6 +129,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Collection_Sample-60_03</dd>
+<dt>fmId</dt><dd>60.03</dd>
 <dt>label</dt><dd>Collection Sample</dd>
 </dl>
 
@@ -141,12 +145,13 @@ title: VDM documentation
 | ward_remarks | 5 | Ward Remarks | {::nomarkdown}Text to be seen by the ward each time the test is ordered for a specific<br/>collection sample.{:/} | STRING |  |  |  | 
 | lab_processing_instructions_ | 6 | Lab Processing Instructions  | {::nomarkdown}Text seen by the lab as the test is received in the accession room.{:/} | STRING |  |  |  | 
 | required_comment | 7 | Required Comment | {::nomarkdown}Enter a comment or statement that may be required in regards to this test.<br/>Points to EXECUTE CODE file.{:/} | POINTER |  |  | Execute_Code-62_07 | 
-| sample_wkld_code | 500 | Sample Wkld Code | {::nomarkdown} If there is a particular WKLD code which is associate the assaying<br/>this type of specimen, enter that WKLD code here. For example<br/>spinal fluid electrophoresis, this specimen must be concentrated<br/>before the procedure can be performed.{:/} | [OBJECT] |  |  | {id:Sample_Wkld_Code-60_14,fmId:60.14,label:Sample Wkld Code,properties:[{id:sample_wkld_code,fmId:.01,label:Sample Wkld Code,description:  If this test has a sample type which should have a specific\rWKLD code associate with it, enter the WKLD code here.\r Example: Urine electrophoresis always has a urine protein performed.\renter the WKLD code for that procedure here. It will only be counted\rfor collection sample of urine.\r  Note: This field is similar to Verify WKLD code sub-file except for\rthe treatment of the suffix and collection sample specific.,datatype:POINTER,required:true,range:{id:Wkld_Code-64}},{id:sample_wkld_code_number,fmId:1,label:Sample Wkld Code #,description: This field contains the actual WKLD Code number.,datatype:STRING},{id:test_multiply_factor,fmId:2,label:Test Multiply Factor,description: If this particular WKLD code should be multiplied in order to receive\rproper count. Enter that number here. The default is 1.\r  NOTE: This field is identical the field found in the Verify\rWKLD code field sub file.,datatype:NUMERIC}]} | 
+| sample_wkld_code | 500 | Sample Wkld Code | {::nomarkdown} If there is a particular WKLD code which is associate the assaying<br/>this type of specimen, enter that WKLD code here. For example<br/>spinal fluid electrophoresis, this specimen must be concentrated<br/>before the procedure can be performed.{:/} | [OBJECT] |  |  | [Sample_Wkld_Code-60_14](#Sample_Wkld_Code-60_14)  | 
 
 ## <a name="Verify_Wkld_Code-60_12"></a>Verify_Wkld_Code-60_12 
 
 <dl>
 <dt>id</dt><dd>Verify_Wkld_Code-60_12</dd>
+<dt>fmId</dt><dd>60.12</dd>
 <dt>label</dt><dd>Verify Wkld Code</dd>
 </dl>
 
@@ -163,6 +168,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Accession_Wkld_Code-60_13</dd>
+<dt>fmId</dt><dd>60.13</dd>
 <dt>label</dt><dd>Accession Wkld Code</dd>
 </dl>
 
@@ -178,6 +184,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Site_Notes_Date-60_0505</dd>
+<dt>fmId</dt><dd>60.0505</dd>
 <dt>label</dt><dd>Site Notes Date</dd>
 </dl>
 
@@ -188,4 +195,52 @@ title: VDM documentation
 | site_notes_date | .01 | Site Notes Date | {::nomarkdown}Date of the note.{:/} | DATE-TIME |  | REQUIRED, INDEXED |  | 
 | text | 1 | Text | {::nomarkdown} Actual text of the note for this test.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+## <a name="Foreign_Computer_System-60_2"></a>Foreign_Computer_System-60_2 
+
+<dl>
+<dt>id</dt><dd>Foreign_Computer_System-60_2</dd>
+<dt>fmId</dt><dd>60.2</dd>
+<dt>label</dt><dd>Foreign Computer System</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| foreign_computer_system | .01 | Foreign Computer System | {::nomarkdown}Reserved for future use. Do not use.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| foreign_item_number | 1 | Foreign Item # | {::nomarkdown}RESERVED FOR FUTURE USE{:/} | STRING |  |  |  | 
+| integer | 2 | Integer | {::nomarkdown}RESERVED FOR FUTURE USE{:/} | BOOLEAN |  |  | {::nomarkdown}<dl><dt>0</dt><dd>false</dd><dt>1</dt><dd>true</dd></dl>{:/} | 
+| unit_conversion | 3 | Unit Conversion | {::nomarkdown}RESERVED FOR FUTURE USE{:/} | STRING |  |  |  | 
+
+## <a name="Specimen_Cpt-60_196"></a>Specimen_Cpt-60_196 
+
+<dl>
+<dt>id</dt><dd>Specimen_Cpt-60_196</dd>
+<dt>fmId</dt><dd>60.196</dd>
+<dt>label</dt><dd>Specimen Cpt</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| specimen_cpt | .01 | Specimen Cpt | {::nomarkdown}A CPT associated with the specimen{:/} | POINTER |  | REQUIRED, INDEXED | Cpt-81 | 
+| active_date_csv | 1 | Active Date (csv) | {::nomarkdown}This the active date of the SPECIMEN CPT for CSV purposes.{:/} | DATE-TIME |  |  |  | 
+
+## <a name="Sample_Wkld_Code-60_14"></a>Sample_Wkld_Code-60_14 
+
+<dl>
+<dt>id</dt><dd>Sample_Wkld_Code-60_14</dd>
+<dt>fmId</dt><dd>60.14</dd>
+<dt>label</dt><dd>Sample Wkld Code</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| sample_wkld_code | .01 | Sample Wkld Code | {::nomarkdown}  If this test has a sample type which should have a specific<br/>WKLD code associate with it, enter the WKLD code here.<br/> Example: Urine electrophoresis always has a urine protein performed.<br/>enter the WKLD code for that procedure here. It will only be counted<br/>for collection sample of urine.<br/>  Note: This field is similar to Verify WKLD code sub-file except for<br/>the treatment of the suffix and collection sample specific.{:/} | POINTER |  | REQUIRED | Wkld_Code-64 | 
+| sample_wkld_code_number | 1 | Sample Wkld Code # | {::nomarkdown} This field contains the actual WKLD Code number.{:/} | STRING |  |  |  | 
+| test_multiply_factor | 2 | Test Multiply Factor | {::nomarkdown} If this particular WKLD code should be multiplied in order to receive<br/>proper count. Enter that number here. The default is 1.<br/>  NOTE: This field is identical the field found in the Verify<br/>WKLD code field sub file.{:/} | NUMERIC |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

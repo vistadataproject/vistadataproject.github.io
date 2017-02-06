@@ -26,4 +26,4 @@ title: VISTA RPC documentation
 | --- | --- | --- | --- | --- | 
 | {::nomarkdown}DENTVA{:/} | {::nomarkdown}LIST{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}An input array \DENTVA\ will have to be set up in following format:   DENTVA(0) = \LOOKUP^Value\      user input lookup value  DENTVA(1) = \CHKSCR^Value\      If value set to \P\, only valid ICD9 codes that are eligible to be      principle diagnosis will be returned.  DENTVA(2) = \ACTDATE^Value\       (ACTDATE is in Fileman format, NULL dates will be set to Today)      The visit date of the ICD code.  DENTVA(3) = \MAX^Value\ (100 is the default)         The maximum number of diagnosis you want returned.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:06 am</p>{:/}

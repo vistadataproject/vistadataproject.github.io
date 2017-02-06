@@ -31,4 +31,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}DATE{:/} | {::nomarkdown}LITERAL{:/} |  |  | {::nomarkdown}Date for the code set versioning.{:/} | 
 | {::nomarkdown}ICDTYPE{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Flag that controls whether ICD-9 or ICD-10 codes are searched.  ICD9  -  For ICD-9 codes search  ICD10 -  For ICD-10 codes search{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

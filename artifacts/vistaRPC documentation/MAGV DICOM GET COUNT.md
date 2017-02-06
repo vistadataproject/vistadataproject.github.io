@@ -27,4 +27,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}MACHID{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}24{:/} |  | {::nomarkdown}The machine ID to be matched to the machine ID in the DICOM FAILEDIMAGES (#2006.575) file.{:/} | 
 | {::nomarkdown}SERVTYPE{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}20{:/} |  | {::nomarkdown}The service type to be matched to the service type in the DICOMFAILED IMAGES (#2006.575) file.{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:05 am</p>{:/}

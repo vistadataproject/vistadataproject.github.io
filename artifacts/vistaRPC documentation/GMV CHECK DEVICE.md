@@ -28,4 +28,4 @@ title: VISTA RPC documentation
 | {::nomarkdown}GMVDIR{:/} | {::nomarkdown}LITERAL{:/} | {::nomarkdown}1{:/} | {::nomarkdown}true{:/} | {::nomarkdown}Direction of the search (1 = forward, -1 = backwards).If DIR is null, then set to 1.{:/} | 
 | {::nomarkdown}GMVRMAR{:/} | {::nomarkdown}LITERAL{:/} |  | {::nomarkdown}true{:/} | {::nomarkdown}Right margin as a single number or range (e.g, 80, 132 or \80-132\).{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 8:30:45 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 7:02:04 am</p>{:/}

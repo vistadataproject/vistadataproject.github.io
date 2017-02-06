@@ -102,6 +102,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Alpha_beta_Test_Package-8989_332</dd>
+<dt>fmId</dt><dd>8989.332</dd>
 <dt>label</dt><dd>Alpha/beta Test Package</dd>
 </dl>
 
@@ -114,12 +115,13 @@ title: VDM documentation
 | adressee_for_usage_reporting | .03 | Adressee For Usage Reporting | {::nomarkdown}This field contains a mail group at a domain to which installation and<br/>option usage messages are sent.  This is usually a mail group containing<br/>one or more of the developers of the package at the developing ISC.{:/} | STRING |  |  |  | 
 | version_number | .04 | Version Number | {::nomarkdown}This field contains the current version of the Alpha/Beta Test package.<br/>This value is used to label some reports to clarify which version of<br/>the test package they relate to.  The entry must contain a number<br/>followed by T or V (to indicate a package in Testing or in Verification)<br/>followed by a number.{:/} | STRING |  |  |  | 
 | date_errors_last_reported | .05 | Date Errors Last Reported | {::nomarkdown}This field is used to keep track of the last date on which reporting of<br/>errors back to the developing ISC was performed.  The date is used as the<br/>starting date for identification of errors to report.{:/} | DATE-TIME |  |  |  | 
-| package_namespace_or_prefix | 1 | Package Namespace Or Prefix | {::nomarkdown}This multiple field is used to identify the namespaces or prefixes used<br/>to identify the options and routines associated with the alpha or beta<br/>test package.{:/} | [OBJECT] |  |  | {id:Package_Namespace_Or_Prefix-8989_3321,fmId:8989.3321,label:Package Namespace Or Prefix,properties:[{id:package_namespace_or_prefix,fmId:.01,label:Package Namespace Or Prefix,description:This field identifies one of the alpha/beta package namespaces.,datatype:STRING,indexed:true,required:true},{id:exclude_namespace_or_prefix,fmId:1,label:Exclude Namespace Or Prefix,description:This multiple field is used to indicate any specific namespaces or\rprefixes which begin with the current namespace or prefix which should\rbe excluded from analyses for the alpha/beta package.  Generally those\rnamespaces which are immediately followed by the letter 'Z' are excluded,datatype:[STRING]}]} | 
+| package_namespace_or_prefix | 1 | Package Namespace Or Prefix | {::nomarkdown}This multiple field is used to identify the namespaces or prefixes used<br/>to identify the options and routines associated with the alpha or beta<br/>test package.{:/} | [OBJECT] |  |  | [Package_Namespace_Or_Prefix-8989_3321](#Package_Namespace_Or_Prefix-8989_3321)  | 
 
 ## <a name="Alphabeta_Test_Option-8989_333"></a>Alphabeta_Test_Option-8989_333 
 
 <dl>
 <dt>id</dt><dd>Alphabeta_Test_Option-8989_333</dd>
+<dt>fmId</dt><dd>8989.333</dd>
 <dt>label</dt><dd>Alpha,beta Test Option</dd>
 </dl>
 
@@ -134,6 +136,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Volume_Set-8989_304</dd>
+<dt>fmId</dt><dd>8989.304</dd>
 <dt>label</dt><dd>Volume Set</dd>
 </dl>
 
@@ -149,6 +152,7 @@ title: VDM documentation
 
 <dl>
 <dt>id</dt><dd>Terminal_Server_Ip-8989_305</dd>
+<dt>fmId</dt><dd>8989.305</dd>
 <dt>label</dt><dd>Terminal Server Ip</dd>
 </dl>
 
@@ -160,4 +164,19 @@ title: VDM documentation
 | after_hours_slack | 1 | After Hours Slack | {::nomarkdown}This field holds the after hours slack value use to delay locking the<br/>Terminal Server address.<br/>Between the hours of 4:30 pm and 8:00 am, If the FAILED ACCESS ATTEMPTS<br/>LOG has had more entries from this Terminal Server in the last 10 minutes<br/>than the slack value the TS IP address will be locked.{:/} | NUMERIC |  |  |  | 
 | last_time_reset | 2 | Last Time Reset | {::nomarkdown}This field holds the FileMan date time that the LOCK on this Terminal<br/>Server was last cleared.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+## <a name="Package_Namespace_Or_Prefix-8989_3321"></a>Package_Namespace_Or_Prefix-8989_3321 
+
+<dl>
+<dt>id</dt><dd>Package_Namespace_Or_Prefix-8989_3321</dd>
+<dt>fmId</dt><dd>8989.3321</dd>
+<dt>label</dt><dd>Package Namespace Or Prefix</dd>
+</dl>
+
+### Properties
+
+| id | fmId | label | description | datatype | location | attributes | range | 
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| package_namespace_or_prefix | .01 | Package Namespace Or Prefix | {::nomarkdown}This field identifies one of the alpha/beta package namespaces.{:/} | STRING |  | REQUIRED, INDEXED |  | 
+| exclude_namespace_or_prefix | 1 | Exclude Namespace Or Prefix | {::nomarkdown}This multiple field is used to indicate any specific namespaces or<br/>prefixes which begin with the current namespace or prefix which should<br/>be excluded from analyses for the alpha/beta package.  Generally those<br/>namespaces which are immediately followed by the letter 'Z' are excluded{:/} | [STRING] |  |  |  | 
+
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}

@@ -25,4 +25,4 @@ title: VDM documentation
 | nature_of_activity | .07 | Nature Of Activity | {::nomarkdown}This field is used to categorize DC reasons into types that OE/RR<br/>can take action on.  The actions and types are defined in the<br/>Nature of order file.{:/} | POINTER |  | REQUIRED | Nature_Of_Order-100_02 | 
 | message_status | .08 | Message Status | {::nomarkdown}This field is used to identify the status an order will be set to<br/>when this order reason is selected.  This is currently used by<br/>backdoor lab options when orders/accessions are canceled.  If the field<br/>is blank, lab sends the HL7 status update message with a status of DC<br/>(the default); otherwise it will use the status in this field.{:/} | POINTER |  |  | Order_Status-100_01 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:43 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
