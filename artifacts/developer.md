@@ -13,3 +13,5 @@ title: developer documentation
 
 4. [VA RPC](vistaRPC documentation/TableOfContent.md)
 
+5. [Services](services/index.html)
+
