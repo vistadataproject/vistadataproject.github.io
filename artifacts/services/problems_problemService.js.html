@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: problems/problemService.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: problems/problemService.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>#!/usr/bin/env node
+
+'use strict';
+
+const _ = require('underscore');
+const moment = require('moment');
+
+const AbstractService = require('../abstractService');
+
+/**
+ * Problem Service Class
+ *
+ */
+class ProblemService extends AbstractService {
+
+    /**
+     * Problem Service constructor.
+     *
+     * @param {Object} db VistA database instance.
+     * @param {Object} serviceContext Contains service context data.
+     * @param {String} serviceContext.userId User identifier.
+     * @param {String} serviceContext.facilityId Facility identifier.
+     * @param {String} serviceContext.patientId Patient identifier.
+     */
+    constructor(db, serviceContext) {
+        if (!serviceContext.patientId) {
+            throw new Error('Problem service requires a patientId');
+        }
+
+        super(db, serviceContext);
+
+        // private methods
+
+        this.emitEvent = function (eventName, data) {
+            this.emitServiceEvent(eventName, 'Problem', data);
+        };
+
+        this.setTreatmentFactors = function (treatmentFactors, mvdmObj) {
+            const mvdmData = mvdmObj;
+
+            treatmentFactors.forEach((treatmentFactor) => {
+                switch (treatmentFactor) {
+                    case 'SERVICE_CONNECTED':
+                        mvdmData.isServiceConnected = true;
+                        break;
+                    case 'AGENT_ORANGE':
+                        mvdmData.isAgentOrangeExposure = true;
+                        break;
+                    case 'IONIZING_RADIATION':
+                        mvdmData.isIonizingRadiationExposure = true;
+                        break;
+                    case 'PERSIAN_GULF':
+                        mvdmData.isPersianGulfExposure = true;
+                        break;
+                    case 'HEAD_AND_OR_NECK_CANCER':
+                        mvdmData.isHeadAndOrNeckCancer = true;
+                        break;
+                    case 'MILITARY_SEXUAL_TRAUMA':
+                        mvdmData.isMilitarySexualTrauma = true;
+                        break;
+                    case 'COMBAT_VETERAN':
+                        mvdmData.isCombatVeteran = true;
+                        break;
+                    case 'SHIPBOARD_HAZARD_DEFENSE':
+                        mvdmData.isShipboardHazardDefense = true;
+                        break;
+                    // no default assignment
+                    default:
+                        break;
+                }
+            });
+
+            return mvdmData;
+        };
+    }
+
+    /**
+     * Creates a new problem
+     *
+     * @param {Object} args Create problem arguments.
+     * @param {String} args.diagnosis Diagnosis identifier.
+     * @param {String} args.providerNarrative Problem narrative string (e.g. 'Hypertension').
+     * @param {String} args.problem Problem expression identifier.
+     * @param {String} args.clinic Clinic identifier.
+     * @param {String} args.problemStatus Status of a problem. Possible values: ACTIVE, INACTIVE.
+     * @param {String} args.snomedCTConceptCode SNOMED CT concept code.
+     * @param {String} args.snomedCTDesignationCode SNMOED CT designation code.
+     * @param {String} args.codingSystem Coding system associated with the problem (e.g. 10D).
+     * @param {String=} args.condition Problem condition. Possible values: TRANSCRIBED, PERMANENT, HIDDEN. Defaults to PERMANENT.
+     * @param {String=} args.responsibleProvider Responsible provider identifier. Defaults to user.
+     * @param {String=} args.priority Immediacy value. Possible values: ACUTE, CHRONIC.
+     * @param {String=} args.onsetDate Date of problem onset.
+     * @param {String=} args.interestDate Date of interest.
+     * @param {Boolean=} args.uniqueTermRequested Indicates whether a unique term was requested.
+     * @param {String=} args.uniqueTermRequestComment Unique term request comment.
+     * @param {Array=} args.treatmentFactors List of treatment factors. Possible values: SERVICE_CONNECTED, AGENT_ORANGE,
+     *                            IONIZING_RADIATION, PERSIAN_GULF, HEAD_AND_OR_NECK_CANCER,
+     *                            MILITARY_SEXUAL_TRAUMA, COMBAT_VETERAN, SHIPBOARD_HAZARD_DEFENSE.
+     * @param {Array=} args.comments Problem comments.
+     * @fires create Service create event.
+     * @returns MVDM create response.
+     */
+    create(args) {
+        let mvdmObj = _.pick(args,
+            'problemStatus',
+            'responsibleProvider',
+            'snomedCTConceptCode',
+            'snomedCTDesignationCode',
+            'codingSystem',
+            'condition',
+            'priority',
+            'uniqueTermRequested',
+            'uniqueTermRequestComment');
+
+        mvdmObj.type = 'Problem';
+        mvdmObj.condition = 'PERMANENT'; // default to PERMANENT
+
+        if (args.providerNarrative) {
+            mvdmObj.providerNarrative = {
+                id: '9999999_27',
+                label: args.providerNarrative,
+            };
+        }
+
+        mvdmObj = this.toPointer(
+            mvdmObj,
+            args,
+            'diagnosis',
+            'problem',
+            'clinic',
+            'responsibleProvider');
+
+        mvdmObj = this.toDate(
+            mvdmObj,
+            args,
+            'onsetDate',
+            'interestDate');
+
+        if (args.treatmentFactors) {
+            this.setTreatmentFactors(args.treatmentFactors, mvdmObj);
+        }
+
+        if (args.comments) {
+            mvdmObj.comments = [];
+            let commentId = 1;
+            args.comments.forEach((comment) => {
+                mvdmObj.comments.push({
+                    commentId,
+                    commentText: comment,
+                });
+
+                commentId += 1;
+            });
+        }
+
+        const res = this.MVDM.create(mvdmObj);
+
+        this.emitEvent('create', res);
+
+        return res;
+    }
+
+
+    /**
+     * Updates an existing problem.
+     *
+     * @param {Object} args Update problem arguments.
+     * @param {String} args.id Problem identifier.
+     * @param {String} args.diagnosis Diagnosis identifier.
+     * @param {String} args.providerNarrative Problem narrative string (e.g. 'Hypertension').
+     * @param {String} args.problem Problem expression identifier.
+     * @param {String} args.clinic Clinic identifier.
+     * @param {String} args.problemStatus Status of a problem. Possible values: ACTIVE, INACTIVE.
+     * @param {String} args.snomedCTConceptCode SNOMED CT concept code.
+     * @param {String} args.snomedCTDesignationCode SNMOED CT designation code.
+     * @param {String} args.codingSystem Coding system associated with the problem (e.g. 10D).
+     * @param {String=} args.condition Problem condition. Possible values: TRANSCRIBED, PERMANENT, HIDDEN. Defaults to PERMANENT
+     * @param {String=} args.responsibleProvider Responsible provider identifier.
+     * @param {String=} args.priority Immediacy value. Possible values: ACUTE, CHRONIC.
+     * @param {String=} args.onsetDate Date of problem onset.
+     * @param {String=} args.interestDate Date of interest.
+     * @param {Boolean=} args.uniqueTermRequested Indicates whether a unique term was requested.
+     * @param {String=} args.uniqueTermRequestComment Unique term request comment.
+     * @param {Array=} args.treatmentFactors List of treatment factors. Possible values: SERVICE_CONNECTED, AGENT_ORANGE,
+     *                            IONIZING_RADIATION, PERSIAN_GULF, HEAD_AND_OR_NECK_CANCER,
+     *                            MILITARY_SEXUAL_TRAUMA, COMBAT_VETERAN, SHIPBOARD_HAZARD_DEFENSE.
+     * @param {Array=} args.comments Problem comments.
+     * @param {String} args.comments.comment.id Comment index.
+     * @param {String} args.comments.comment.text Comment text.
+     * @fires update Service update event.
+     * @returns MVDM update response.
+     */
+    update(args) {
+        let mvdmObj = _.pick(args,
+            'id',
+            'problemStatus',
+            'snomedCTConceptCode',
+            'snomedCTDesignationCode',
+            'codingSystem',
+            'condition',
+            'priority',
+            'uniqueTermRequested',
+            'uniqueTermRequestComment');
+
+        mvdmObj.type = 'Problem';
+
+        if (args.providerNarrative) {
+            mvdmObj.providerNarrative = {
+                id: '9999999_27',
+                label: args.providerNarrative,
+            };
+        }
+
+        mvdmObj = this.toPointer(
+            mvdmObj,
+            args,
+            'diagnosis',
+            'problem',
+            'clinic',
+            'responsibleProvider');
+
+        mvdmObj = this.toDate(
+            mvdmObj,
+            args,
+            'onsetDate',
+            'interestDate');
+
+        if (args.treatmentFactors) {
+            this.setTreatmentFactors(args.treatmentFactors, mvdmObj);
+        }
+
+        if (args.comments) {
+            mvdmObj.comments = [];
+            args.comments.forEach((comment) => {
+                mvdmObj.comments.push({
+                    commentId: comment.id,
+                    commentText: comment.text,
+                });
+            });
+        }
+
+        const res = this.MVDM.update(mvdmObj);
+
+        this.emitEvent('update', res);
+
+        return res;
+    }
+
+    /**
+     * Describes a problem.
+     *
+     * @param {String} problemId Problem identifier.
+     * @fire describe Service describe event.
+     * @returns MVDM describe response.
+     */
+    describe(problemId) {
+        const res = this.MVDM.describe(problemId);
+
+        this.emitEvent('describe', res);
+
+        return res;
+    }
+
+    /**
+     * List of problems.
+     *
+     * @param {String} filterParam Problem list status filter. Possible values: active, inactive, both, removed.
+     * @fire list Service list event.
+     * @returns MVDM list response.
+     */
+    list(filterParam) {
+        let filter = filterParam;
+
+        if (filter) {
+            filter = filter.toLowerCase();
+        }
+
+        let queryRemoved = false;
+
+        if (filter === 'removed') {
+            queryRemoved = true;
+        }
+
+        const filterResults = function (res) {
+            let results = res;
+            results = _.sortBy(results, 'lastModifiedDate');
+
+            if (!filter) {
+                return results;
+            }
+
+            let filteredProblems = [];
+            results.forEach((problem) => {
+                if ((problem.condition === 'HIDDEN' &amp;&amp; filter === 'removed') || // removed
+                    ((filter === 'both' || filter === 'active') &amp;&amp; problem.problemStatus === 'ACTIVE') ||      // both or just active
+                    ((filter === 'both' || filter === 'inactive') &amp;&amp; problem.problemStatus === 'INACTIVE')) { // both or just inactive
+                    filteredProblems.push(problem);
+                }
+            });
+
+            filteredProblems = _.sortBy(filteredProblems, 'problemStatus');
+
+            return filteredProblems;
+        };
+
+        const res = this.MVDM.list('Problem', this.context.patientId, queryRemoved);
+
+        res.results = filterResults(res.results);
+
+        this.emitEvent('list', res);
+
+        return res;
+    }
+
+    /**
+     * Removes a problem.
+     *
+     * @param {String} problemId Problem identifier.
+     * @fires remove Service remove event.
+     * @returns MVDM remove response.
+     */
+    remove(problemId) {
+        const res = this.MVDM.remove(problemId);
+
+        this.emitEvent('remove', res);
+
+        return res;
+    }
+
+    /**
+     * Unremoves a problem.
+     *
+     * @param {String} problemId Problem identifier.
+     * @fires unremove Service unremove event.
+     * @returns MVDM unremove response.
+     */
+    unremove(problemId) {
+        const res = this.MVDM.unremove(problemId);
+
+        this.emitEvent('unremove', res);
+
+        return res;
+    }
+
+    /**
+     * Deletes problem comments.
+     *
+     * @param {String} problemId Problem identifier.
+     * @param {Array} commentIds Comment indexes to delete (e.g. [1, 3, 5])
+     * @fires deleteComments Service deleteComments event.
+     * @returns MVDM delete response.
+     */
+    deleteComments(problemId, commentIds) {
+        const mvdmComments = {
+            id: problemId,
+            comments: [],
+        };
+
+        commentIds.forEach((commentId) => {
+            mvdmComments.comments.push({
+                commentId,
+            });
+        });
+
+        const res = this.MVDM.delete(mvdmComments);
+
+        this.emitEvent('deleteComments', res);
+
+        return res;
+    }
+}
+
+module.exports = ProblemService;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AbstractService.html">AbstractService</a></li><li><a href="AllergyService.html">AllergyService</a></li><li><a href="ProblemService.html">ProblemService</a></li><li><a href="VitalsService.html">VitalsService</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 12:45:33 GMT-0600 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

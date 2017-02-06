@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: abstractService.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: abstractService.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>#!/usr/bin/env node
+
+'use strict';
+
+const util = require('util');
+const EventEmitter = require('events');
+const _ = require('underscore');
+const moment = require('moment');
+const nodem = require('nodem');
+
+const MVDM = require('./mvdm');
+const VDM = require('./vdm');
+const vdmUtils = require('./vdmUtils');
+
+// supported VDM models
+const vdmModels = [].concat(
+    // allergies
+    require('./allergies/vdmAllergiesModel').vdmModel,
+    require('./documents/vdmDocumentsModel').vdmModel,
+    require('./visits/vdmVisitsModel').vdmModel,
+
+    // problems
+    require('./problems/vdmProblemsModel').vdmModel,
+
+    // vitals
+    require('./vitals/vdmVitalsModel').vdmModel);
+
+// supported MVDM models
+const mvdmModels = [].concat(
+    // allergies
+    require('./allergies/mvdmAllergiesModel').mvdmModel,
+    require('./documents/mvdmDocumentsModel').mvdmModel,
+    require('./visits/mvdmVisitsModel').mvdmModel,
+
+    // problems
+    require('./problems/mvdmProblemsModel').mvdmModel,
+
+    // vitals
+    require('./vitals/mvdmVitalsModel').mvdmModel);
+
+/**
+ * Abstract service class.
+ *
+ */
+class AbstractService extends EventEmitter {
+
+    /**
+     * Abstract service constructor.
+     *
+     * @param {Object} db VistA database instance.
+     * @param {Object} serviceContext Contains service context data.
+     * @param {String} serviceContext.userId User identifier.
+     * @param {String} serviceContext.facilityId Facility identifier.
+     * @param {String} serviceContext.patientId Patient identifier.
+     */
+    constructor(db, serviceContext) {
+        super();
+
+        if (!serviceContext.userId) {
+            throw new Error('Missing userId in service context');
+        } else if (!serviceContext.facilityId) {
+            throw new Error('Missing facilityId in service context');
+        }
+
+        this.VDM = VDM;
+        this.MVDM = MVDM;
+
+        this.VDM.setDBAndModel(db, vdmModels);
+        this.VDM.setUserAndFacility(serviceContext.userId, serviceContext.facilityId);
+
+        this.MVDM.setModel(mvdmModels);
+
+        this.context = {
+            user: {
+                id: VDM.userId(),
+                name: VDM.user().name.value,
+            },
+            facility: {
+                id: VDM.facilityId(),
+                name: VDM.facility().name.value,
+                stationNumber: VDM.facility().station_number.value,
+            },
+        };
+
+        if (serviceContext.patientId) {
+            this.MVDM.setDefaultPatientId(serviceContext.patientId);
+            this.context.patientId = serviceContext.patientId;
+        }
+
+        // protected methods
+
+        this.emitServiceEvent = function (eventName, domain, data) {
+            this.emit(eventName, {
+                type: eventName,
+                timestamp: `${moment().format('YYYY-MM-DDTHH:mm:ss')}Z`,
+                domain,
+                user: this.context.user,
+                facility: this.context.facility,
+                patient: this.MVDM.context().patient,
+                data,
+            });
+        };
+
+        /**
+         * Assigns pointer id arguments and their values as pointer objects in a MVDM object.
+         *
+         * @param {Object} mvdmObj MVDM Object.
+         * @param {Object} argsObj Object containing argument values.
+         * @param *args Arguments to assign.
+         * @returns {Object} MVDM Object with assigned pointer objects.
+         */
+        this.toPointer = function (mvdmObj, argsObj) {
+            const args = Array.prototype.slice.call(arguments, 2);
+            const mvdmData = mvdmObj;
+            args.forEach((arg) => {
+                if (argsObj[arg]) {
+                    mvdmData[arg] = {
+                        id: argsObj[arg],
+                    };
+                }
+            });
+
+            return mvdmData;
+        };
+
+        /**
+         * Assigns datetime arguments and their values as datetime objects in a MVDM object.
+         *
+         * @param mvdmObj {Object} mvdmObj MVDM Object.
+         * @param argsObj {Object} argsObj Object containing argument values.
+         * @param *args Arguments to assign.
+         * @returns {Object} MVDM Object with assigned datetime objects.
+         */
+        this.toDateTime = function (mvdmObj, argsObj) {
+            const args = Array.prototype.slice.call(arguments, 2);
+            const mvdmData = mvdmObj;
+            args.forEach((arg) => {
+                if (argsObj[arg]) {
+                    mvdmData[arg] = {
+                        value: argsObj[arg],
+                        type: 'xsd:datetime',
+                    };
+                }
+            });
+
+            return mvdmData;
+        };
+
+        /**
+         * Assigns datetime arguments and their values as date objects in a MVDM object.
+         *
+         * @param mvdmObj {Object} mvdmObj MVDM Object.
+         * @param argsObj {Object} argsObj Object containing argument values.
+         * @param *args Arguments to assign.
+         * @returns {Object} MVDM Object with assigned date object.
+         */
+        this.toDate = function (mvdmObj, argsObj) {
+            const args = Array.prototype.slice.call(arguments, 2);
+            const mvdmData = mvdmObj;
+            args.forEach((arg) => {
+                if (argsObj[arg]) {
+                    mvdmData[arg] = {
+                        value: argsObj[arg],
+                        type: 'xsd:date',
+                    };
+                }
+            });
+
+            return mvdmData;
+        };
+    }
+}
+
+module.exports = AbstractService;
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AbstractService.html">AbstractService</a></li><li><a href="AllergyService.html">AllergyService</a></li><li><a href="ProblemService.html">ProblemService</a></li><li><a href="VitalsService.html">VitalsService</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 12:45:33 GMT-0600 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

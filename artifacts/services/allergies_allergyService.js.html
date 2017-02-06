@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: allergies/allergyService.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: allergies/allergyService.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>#!/usr/bin/env node
+
+'use strict';
+
+const _ = require('underscore');
+const moment = require('moment');
+
+const AbstractService = require('../abstractService');
+
+/**
+ * Allergy Service Class
+ *
+ */
+class AllergyService extends AbstractService {
+
+    /**
+     * Allergy Service constructor.
+     *
+     * @param {Object} db VistA database instance.
+     * @param {Object} serviceContext Contains service context data.
+     * @param {String} serviceContext.userId User identifier.
+     * @param {String} serviceContext.facilityId Facility identifier.
+     * @param {String} serviceContext.patientId Patient identifier.
+     */
+    constructor(db, serviceContext) {
+        if (!serviceContext.patientId) {
+            throw new Error('Allergy service requires a patientId');
+        }
+
+        super(db, serviceContext);
+
+        // private methods
+
+        this.emitEvent = function (eventName, data) {
+            this.emitServiceEvent(eventName, 'Allergy', data);
+        };
+    }
+
+    /**
+     * Creates a new Allergy
+     *
+     * @param {Object} args Create allergy arguments.
+     * @param {String} args.reactantId Allergy reactant identifier.
+     * @param {String} args.reactantName Allergy reactant name (e.g. CHOCOLATE).
+     * @param {String} args.allergyType Type of allergy. Possible values: DRUG, DRUG, FOOD, FOOD, OTHER.
+     * @param {String} args.mechanism Allergy mechanism. Possible values: ALLERGY, PHARMACOLOGI", UNKNOWN.
+     * @param {String} args.observedOrHistorical Observed or historical indicator. Possible values: OBSERVED, HISTORICAL.
+     * @param {String} args.allergySeverity Allergy severity. Possible values: MILD, MODERATE, SEVERE.
+     * @param {String} args.dateOccurred Date occurred value.
+     * @param {Array=} args.reactions List of reaction identifiers.
+     * @param {Array=} args.comments List of allergy comments.
+     *
+     * @param {String=} args.enteredBy Entered by identifier. Defaults to user.
+     * @fires create Service create event.
+     * @returns {Object} MVDM create response.
+     */
+    create(args) {
+        let mvdmObj = _.pick(args,
+            'allergyType',
+            'mechanism',
+            'observedOrHistorical',
+            'allergySeverity');
+
+        mvdmObj.type = 'Allergy';
+
+        mvdmObj.reactant = {};
+
+        if (args.reactantId) {
+            mvdmObj.reactant.id = args.reactantId;
+        }
+
+        if (args.reactantName) {
+            mvdmObj.reactant.label = args.reactantName;
+        }
+
+        mvdmObj = this.toDate(
+            mvdmObj,
+            args,
+            'dateOccurred');
+
+        if (args.reactions) {
+            mvdmObj.reactions = [];
+
+            args.reactions.forEach((reactionId) => {
+                mvdmObj.reactions.push({
+                    reaction: {
+                        id: reactionId,
+                    },
+                });
+            });
+        }
+
+        if (args.comments) {
+            mvdmObj.comments = [];
+
+            args.comments.forEach((comment) => {
+                mvdmObj.comments.push({
+                    comment,
+                });
+            });
+        }
+
+        const res = this.MVDM.create(mvdmObj);
+
+        this.emitEvent('create', res);
+
+        return res;
+    }
+
+    /**
+     * Describes an allergy.
+     *
+     * @param {String} allergyId Allergy identifier.
+     * @fire describe Service describe event.
+     * @returns {Object} MVDM describe response.
+     */
+    describe(allergyId) {
+        const res = this.MVDM.describe(allergyId);
+
+        this.emitEvent('describe', res);
+
+        return res;
+    }
+
+    /**
+     * List of patient allergies.
+     *
+     * @returns {Array} List of patient allergies.
+     */
+    list() {
+        const res = this.MVDM.list('Allergy', this.context.patientId);
+
+        this.emit('list', res);
+
+        return res;
+    }
+
+    /**
+     * List of patient allergy assessments
+     *
+     *  @returns {Array} List of patient allergy assessments.
+     */
+    listAllergyAssessments() {
+        const res = this.MVDM.list('AllergyAssessment', this.context.patientId);
+
+        this.emit('listAllergyAssessments', res);
+
+        return res;
+    }
+
+    /**
+     * Removes an allergy (marks as Entered in Error).
+     *
+     * @param {String} allergyId Allergy identifier.
+     * @param {String=} comment Optional entered in error comment.
+     */
+    remove(allergyId, comment) {
+        const res = this.MVDM.remove(allergyId, comment);
+
+        this.emit('remove', res);
+
+        return res;
+    }
+
+    /**
+     * Unremoves an allergy.
+     *
+     * @param {String} allergyId Allergy identifier.
+     * @param {String=} comment Optional unremove comment.
+     */
+    unremove(allergyId, comment) {
+        const res = this.MVDM.unremove(allergyId, comment);
+
+        this.emit('unremove', res);
+
+        return res;
+    }
+}
+
+module.exports = AllergyService;
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AbstractService.html">AbstractService</a></li><li><a href="AllergyService.html">AllergyService</a></li><li><a href="ProblemService.html">ProblemService</a></li><li><a href="VitalsService.html">VitalsService</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 12:45:33 GMT-0600 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
