@@ -62,19 +62,70 @@ class VitalsService extends AbstractService {
         this.emitEvent = function (eventName, data) {
             this.emitServiceEvent(eventName, 'Vital', data);
         };
+
+        /**
+         * List vital results (private method)
+         *
+         * If no start and stop dates are indicated, all vitals are returned.
+         *
+         * If no start date is passed then the start date is set to a time before records were collected.
+         *
+         * If no end date is passed then the start date is also the end date and if there's no start date, then end date is the current date time.
+         *
+         * @param {Date=} startDate Start date object.
+         * @param {Date=} endDate End date object.
+         * @param {Boolean=} suppressEvent Suppress service list event. Defaults to false.
+         * @fires list Service list event.
+         * @returns {Object} Filtered MVDM list results.
+         */
+        this.listVitals = function list(startDate, endDate, suppressEvent) {
+            const results = this.MVDM.list('Vital', this.context.patientId).results;
+
+            let startDt = startDate;
+            let endDt = endDate;
+
+            // filter results
+            if (!endDt &amp;&amp; !startDate) {
+                endDt = moment().toDate(); // current date time
+            }
+
+            if (!startDt) {
+                startDt = moment('1900-01-01T00:00:00').toDate(); // by default push date out to before records were collected
+            }
+
+            if (!endDt) {
+                endDt = startDate;
+            }
+
+            const vitals = [];
+            results.forEach((vital) => {
+                const vitalTakenDateTime = moment(vital.vitalsTakenDateTime.value).toDate();
+                if (vitalTakenDateTime >= startDt &amp;&amp; vitalTakenDateTime &lt;= endDt) {
+                    vitals.push(vital);
+                }
+            });
+
+            const res = { results: vitals };
+
+            if (!suppressEvent) {
+                this.emitEvent('list', res);
+            }
+
+            return res;
+        }
     }
 
     /**
      * Creates a new vital.
      *
      * @param {Object} args Create vital arguments.
-     * @param {String} args.vitalsTakenDateTime Vitals taken date time.
+     * @param {Date} args.vitalsTakenDateTime Vitals taken date time.
      * @param {String} args.vitalType Vital type identifier.
      * @param {String} args.hospitalLocation Hospital location identifier.
      * @param {String} args.value Vital value.
      * @param {String} args.units Units value.
      * @param {String=} args.enteredBy Entered by identifier. Defaults to user.
-     * @param {String=} args.vitalsEnteredDateTime Vitals entered date time. Defaults to T.
+     * @param {Date=} args.vitalsEnteredDateTime Vitals entered date time. Defaults to T.
      * @param {String=} args.supplementalO2 Supplemental O2.
      * @param {Array=} args.qualifiers List of qualifier identifiers.
      * @fires create Service create event.
@@ -141,44 +192,11 @@ class VitalsService extends AbstractService {
      *
      * @param {Date=} startDate Start date object.
      * @param {Date=} endDate End date object.
-     * @param {Boolean=} suppressEvent Suppress service list event. Defaults to false.
      * @fires list Service list event.
      * @returns {Object} Filtered MVDM list results.
      */
-    list(startDate, endDate, suppressEvent) {
-        const results = this.MVDM.list('Vital', this.context.patientId).results;
-
-        let startDt = startDate;
-        let endDt = endDate;
-
-        // filter results
-        if (!endDt &amp;&amp; !startDate) {
-            endDt = moment().toDate(); // current date time
-        }
-
-        if (!startDt) {
-            startDt = moment('1900-01-01T00:00:00').toDate(); // by default push date out to before records were collected
-        }
-
-        if (!endDt) {
-            endDt = startDate;
-        }
-
-        const vitals = [];
-        results.forEach((vital) => {
-            const vitalTakenDateTime = moment(vital.vitalsTakenDateTime.value).toDate();
-            if (vitalTakenDateTime >= startDt &amp;&amp; vitalTakenDateTime &lt;= endDt) {
-                vitals.push(vital);
-            }
-        });
-
-        const res = { results: vitals };
-
-        if (!suppressEvent) {
-            this.emitEvent('list', res);
-        }
-
-        return res;
+    list(startDate, endDate) {
+        return this.listVitals(startDate, endDate, false);
     }
 
     /**
@@ -196,7 +214,7 @@ class VitalsService extends AbstractService {
      * @returns {Object} Most recent vitals.
      */
     getMostRecentVitals(startDate, endDate) {
-        const vitals = this.list(startDate, endDate, true).results;
+        const vitals = this.listVitals(startDate, endDate, true).results;
 
         // grab most recent
         const mostRecentByType = {};
@@ -226,7 +244,7 @@ class VitalsService extends AbstractService {
      * Removes a vital and marks it as entered in error.
      *
      * @param {String} vitalId Vital identifier.
-     * @param {String} reason Reason for removal. Possible values: INCORRECT DATE/TIME, INCORRECT READING, INCORRECT PATIENT, INVALID RECORD
+     * @param {enum} reason Reason for removal. Possible values: INCORRECT DATE/TIME, INCORRECT READING, INCORRECT PATIENT, INVALID RECORD
      * @fires remove Service remove event.
      * @returns {Object} MVDM remove result.
      */
@@ -256,7 +274,7 @@ module.exports = VitalsService;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 16:58:30 GMT-0600 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 18:36:00 GMT-0600 (CST)
 </footer>
 
 <script> prettyPrint(); </script>

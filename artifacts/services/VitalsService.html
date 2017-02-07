@@ -404,7 +404,7 @@
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Date</span>
 
 
             
@@ -592,7 +592,7 @@
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Date</span>
 
 
             
@@ -726,7 +726,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line55">line 55</a>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line106">line 106</a>
     </li></ul></dd>
     
 
@@ -872,7 +872,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line97">line 97</a>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line148">line 148</a>
     </li></ul></dd>
     
 
@@ -1069,7 +1069,7 @@ If no end date is passed then the start date is also the end date and if there's
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line170">line 170</a>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line188">line 188</a>
     </li></ul></dd>
     
 
@@ -1127,7 +1127,7 @@ If no end date is passed then the start date is also the end date and if there's
 
     
 
-    <h4 class="name" id="list"><span class="type-signature"></span>list<span class="signature">(startDate<span class="signature-attributes">opt</span>, endDate<span class="signature-attributes">opt</span>, suppressEvent<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="list"><span class="type-signature"></span>list<span class="signature">(startDate<span class="signature-attributes">opt</span>, endDate<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
 
     
 
@@ -1135,6 +1135,215 @@ If no end date is passed then the start date is also the end date and if there's
 
 <div class="description">
     List vital results.
+
+If no start and stop dates are indicated, all vitals are returned.
+
+If no start date is passed then the start date is set to a time before records were collected.
+
+If no end date is passed then the start date is also the end date and if there's no start date, then end date is the current date time.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>startDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">Start date object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Date</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">End date object.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line170">line 170</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<h5>Fires:</h5>
+<ul>
+    <li>event:list Service list event.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Filtered MVDM list results.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="listVitals"><span class="type-signature"></span>listVitals<span class="signature">(startDate<span class="signature-attributes">opt</span>, endDate<span class="signature-attributes">opt</span>, suppressEvent<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    List vital results (private method)
 
 If no start and stop dates are indicated, all vitals are returned.
 
@@ -1311,7 +1520,7 @@ If no end date is passed then the start date is also the end date and if there's
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line120">line 120</a>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line53">line 53</a>
     </li></ul></dd>
     
 
@@ -1441,7 +1650,7 @@ If no end date is passed then the start date is also the end date and if there's
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">enum</span>
 
 
             
@@ -1492,7 +1701,7 @@ If no end date is passed then the start date is also the end date and if there's
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line205">line 205</a>
+        <a href="vitals_vitalsService.js.html">vitals/vitalsService.js</a>, <a href="vitals_vitalsService.js.html#line223">line 223</a>
     </li></ul></dd>
     
 
@@ -1567,7 +1776,7 @@ If no end date is passed then the start date is also the end date and if there's
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 16:58:31 GMT-0600 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Feb 06 2017 18:36:00 GMT-0600 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
