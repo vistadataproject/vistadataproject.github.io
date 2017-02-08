@@ -5,13 +5,13 @@ title: VDM documentation
 
 ## [VDM](TableOfContent.md) &#8594; TIU_Document-8925 
 
- property | value 
---- | --- 
- id | TIU_Document-8925
- fmId | 8925
- label | TIU Document
- location | ^TIU(8925,
- description | {::nomarkdown}This file stores textual information for the clinical record database.<br/>Though it is designed to initially accommodate Progress Notes, Consult <br/>Reports, and Discharge Summaries, it is intended to be sufficiently<br/>flexible to accommodate textual reports or provider narrative of any<br/>length or type, and to potentially accommodate such data transmitted <br/>from remote sites, which may be excluded from the corresponding local <br/>DHCP Package databases (e.g., Operative Reports, Radiology Reports, <br/>Pathology Reports, etc.) to avoid confusion with local workload.{:/}
+<dl>
+<dt>id</dt><dd>TIU_Document-8925</dd>
+<dt>fmId</dt><dd>8925</dd>
+<dt>label</dt><dd>TIU Document</dd>
+<dt>location</dt><dd>^TIU(8925,</dd>
+<dt>description</dt><dd>This file stores textual information for the clinical record database.<br/>Though it is designed to initially accommodate Progress Notes, Consult <br/>Reports, and Discharge Summaries, it is intended to be sufficiently<br/>flexible to accommodate textual reports or provider narrative of any<br/>length or type, and to potentially accommodate such data transmitted <br/>from remote sites, which may be excluded from the corresponding local <br/>DHCP Package databases (e.g., Operative Reports, Radiology Reports, <br/>Pathology Reports, etc.) to avoid confusion with local workload.</dd>
+</dl>
 
 ### Properties
 
@@ -91,4 +91,4 @@ title: VDM documentation
 | procedure_summary_code | 70201 | Procedure Summary Code | {::nomarkdown}This field contains the summary code for this procedure once it is<br/>complete.  'Machine Resulted' is the initial, default code.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>5</dt><dd>Machine Resulted</dd><dt>2</dt><dd>Abnormal</dd><dt>4</dt><dd>Incomplete</dd><dt>3</dt><dd>Borderline</dd><dt>1</dt><dd>Normal</dd></dl>{:/} | 
 | date_time_performed | 70202 | Date/time Performed | {::nomarkdown}This field contains the Date/Time when the procedure was performed.{:/} | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 26th 2017, 2:30:43 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
