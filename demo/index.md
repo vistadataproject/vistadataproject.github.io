@@ -10,7 +10,7 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 1. [Install](#cprs--rpc-server-installation) nodeVISTA
 2. [Install](#cprs--rpc-server-installation) CPRS RPC Server 
 3. [Open](#open-mvdm-client) MVDM Client 
-4. [Open and sign-in](#cprs-sign-on--patient-chart) to CPRS
+4. [Open and login](#cprs-sign-on--patient-chart) to CPRS
 
 https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/index.md
 
