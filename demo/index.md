@@ -85,11 +85,11 @@ The following outlines how to install nodeVISTA
 
 Summary:
 
-Download/Unzip | Action | Target Path
+Source | Action | Target Path
 --- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. execute | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1.rename CPRSChart30v75.exe to CPRSChart.exe<br>2. copy/replace existing CPRSChart.exe in target folder | C:\Program Files (x86)\VistA\CPRS\
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. copy/overwrite contents in target folder | C:\Program Files (x86)\VistA\Common Files\
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download/Unzip <br> 2. Execute | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download/Unzip<br> 2. Rename CPRSChart30v75.exe to CPRSChart.exe<br>3. Copy/overwrite existing CPRSChart.exe in target folder | C:\Program Files (x86)\VistA\CPRS\
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download / Unzip <br> 2. Copy/overwrite contents of CPRS30v72_dll/ folder in target folder | C:\Program Files (x86)\VistA\Common Files\
 
 Windows Desktop  | 1. rename "VistA Desktop" -> "RPC Server" <br> 2. |
 
