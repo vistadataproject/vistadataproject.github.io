@@ -86,10 +86,10 @@ Summary of Paths
 
 Source | Action | Target Path
 --- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download & Unzip to **CPRS_Demo_0613.exe**<br> 2. Run binary | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download & Unzip to **CPRSChart30v75.exe** <br>2. Rename to CPRSChart.exe<br>3. Copy (overwriting existing CPRSChart.exe) to target folder  | C:\Program Files (x86)\VistA\CPRS\
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download & Unzip to **CPRS30v72_dll/** <br> 2. Copy (overwrite) contents of CPRS30v72_dll/ folder to target folder| C:\Program Files (x86)\VistA\Common Files\
-Windows Desktop | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br> 4. Modify the target by pasting target path  | "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download/Unzip to **CPRS_Demo_0613.exe**<br> 2. Run binary | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download/Unzip to **CPRSChart30v75.exe** <br>2. Rename to CPRSChart.exe<br>3. Copy/Paste to target folder  | C:\Program Files (x86)\VistA\CPRS\ <br> (overwrites existing CPRSChart.exe)
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download & Unzip to **CPRS30v72_dll/** <br> 2. Copy/Paste contents of CPRS30v72_dll/ folder to target folder| C:\Program Files (x86)\VistA\Common Files\ <br> (overwrites contents in target folder)
+**RPC Server** <br>(Windows Desktop Shortcut) | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 
 
