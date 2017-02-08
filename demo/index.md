@@ -85,10 +85,12 @@ The following outlines how to install nodeVISTA
 
 Summary:
 
-Download | Action | Path
+Source | Action | Target Path
 --- | --- | ---
 [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. download<br>2. unzip<br>3. execute | NA
 [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. download<br>2. unzip <br>3.rename CPRSChart30v75.exe to CPRSChart.exe<br>4. copy/replace existing CPRSChart.exe | C:\Program Files (x86)\VistA\CPRS\
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. download<br> 2. unzip<br> 3. copy/overwrite contents of CPRS30v72_dll/ folder | C:\Program Files (x86)\VistA\Common Files\
+Windows Desktop  | 1. rename "VistA Desktop" -> "RPC Server" <br> 2. |
 
 
 ## Open MVDM Client 
