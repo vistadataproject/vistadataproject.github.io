@@ -47,19 +47,19 @@ The following outlines how to install nodeVISTA
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
-## CPRS Installation
+## CPRS / RPC Server Installation
 
-1. On a Windows7 or Windows10 box, download, unzip, and run the Osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+1. On a Windows7 or Windows10 box, download, unzip, and run the osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
-2. Download latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
+2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 
-3. Unzip CPRSChart30v75.zip and rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
+3. Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
 
-4. Overwrite  C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe with the latest binary (v1.0.30.75).
+4. Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory C:\Program Files (x86)\VistA\CPRS\ [CPRSChart.exe]
 
-5. Download latest CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+5. Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
 
-6. Unzip CPRS30v72_dll.zip and copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files.
+6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\  [CPRS30v72_dll].
 
 7. Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
 
@@ -69,11 +69,14 @@ The following outlines how to install nodeVISTA
 
 10. Run "RPC Server" from windows desktop
 
-## Open the MVDM Client 
 
-Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
+## Open MVDM Client 
+
+Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
+<br><br>
 
 ![MVDM Client Open -width70](/demo/images/common/management-client/open-empty.png)
+<br><b>
 
 ## CPRS Sign-on / Patient-Chart
 
