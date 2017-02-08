@@ -21,11 +21,11 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 
 Summary of Actions
 
-Source | Action | Target
+Source | Action | Target Path
 --- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download/Unzip -> **CPRS_Demo_0613.exe**<br> 2. Run binary | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download/Unzip -> **CPRSChart30v75.exe** <br>2.Rename -> CPRSChart.exe<br>3.Copy/Overwrite existing CPRSChart.exe -> target folder | C:\Program Files (x86)\VistA\CPRS\
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download / Unzip -> **CPRS30v72_dll/** (folder) <br> 2. Copy/overwrite contents of CPRS30v72_dll/ -> target folder | C:\Program Files (x86)\VistA\Common Files\
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download<br> 2. Unzip -> **CPRS_Demo_0613.exe**<br> 3. Run binary | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download<br> 2. Unzip -> **CPRSChart30v75.exe** <br>3. Rename -> CPRSChart.exe<br>4. Copy/Overwrite (existing CPRSChart.exe) -> target folder | C:\Program Files (x86)\VistA\CPRS\
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download<br> 2. Unzip -> **CPRS30v72_dll/** <br> 3. Copy/Overwrite (contents of CPRS30v72_dll/ folder) -> target folder | C:\Program Files (x86)\VistA\Common Files\
 Windows Desktop | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br> 4. Modify the target by pasting target path  | "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 
