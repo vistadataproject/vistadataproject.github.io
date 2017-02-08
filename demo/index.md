@@ -10,8 +10,7 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 1. nodeVISTA [Installation]
 2. CPRS RPC Server [Installation]
 3. MVDM Client [Open](#open-mvdm-client)
-4. CPRS [Open and sign-in]
-
+4. CPRS [Open and sign-in](#cprs-sign-on--patient-chart)
 
 
 <br><br><br>
