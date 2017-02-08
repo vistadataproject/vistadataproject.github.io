@@ -58,6 +58,8 @@ The following outlines how to install nodeVISTA
     Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+<br><br><br>
+
 
 ## CPRS / RPC Server Installation
 
@@ -80,6 +82,13 @@ The following outlines how to install nodeVISTA
 9. Modify the target to the following: "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 10. Run "RPC Server" from windows desktop
+
+Summary:
+
+Download | Action | Path
+--- | --- | ---
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | download, unzip<br> execute | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | download, unzip <br> rename |
 
 
 ## Open MVDM Client 
