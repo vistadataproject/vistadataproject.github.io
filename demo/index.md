@@ -87,8 +87,8 @@ Summary:
 
 Download | Action | Path
 --- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | download, unzip<br> execute | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | download, unzip <br> rename |
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. download<br>2. unzip<br>3. execute | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. download<br>2. unzip <br>3.rename CPRSChart30v75.exe to CPRSChart.exe<br>4. copy/replace existing CPRSChart.exe | C:\Program Files (x86)\VistA\CPRS\
 
 
 ## Open MVDM Client 
