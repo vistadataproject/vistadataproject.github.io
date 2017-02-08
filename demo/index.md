@@ -63,17 +63,7 @@ The following outlines how to install nodeVISTA
 
 ## CPRS / RPC Server Installation
 
-1. On a Windows7 or Windows10 box, download, unzip, install the following :
-
-Source | Action | Target Folder
---- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download/Unzip -> CPRS_Demo_0613.exe<br> 2. Execute binary | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download/Unzip -> CPRSChart30v75.exe <br> 2. Rename -> CPRSChart.exe<br>3. Copy/Overwrite existing CPRSChart.exe -> target folder | C:\Program Files (x86)\VistA\CPRS\
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download / Unzip -> CPRS30v72_dll (folder) <br> 2. Copy/overwrite contents of CPRS30v72_dll/ -> target folder | C:\Program Files (x86)\VistA\Common Files\
-
-
-
-osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+1. On a Windows7 or Windows10 box, download, unzip, install osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
 2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 
@@ -94,9 +84,15 @@ osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/
 10. Run "RPC Server" from windows desktop
 
 
+Summary of Actions
+Source | Action | Target
+--- | --- | ---
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | 1. Download/Unzip -> CPRS_Demo_0613.exe<br> 2. Execute binary | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) | 1. Download/Unzip -> CPRSChart30v75.exe <br> 2. Rename -> CPRSChart.exe<br>3. Copy/Overwrite existing CPRSChart.exe -> target folder | C:\Program Files (x86)\VistA\CPRS\
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) | 1. Download / Unzip -> CPRS30v72_dll (folder) <br> 2. Copy/overwrite contents of CPRS30v72_dll/ -> target folder | C:\Program Files (x86)\VistA\Common Files\
+Windows Desktop | 1. Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br>3.Select "properties" <br>4. Modify the target by pasting target path | "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
-### Configure and Run
-Windows Desktop  | 1. rename "VistA Desktop" -> "RPC Server" <br> 2. |
+
 
 
 ## Open MVDM Client 
