@@ -7,7 +7,21 @@ title: MVDM Demo
 
 The following sections first describe how to install the nodeVISTA VM, CPRS, and then how to run the MVDM demo v1.1. __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
 
-## Install nodeVISTA
+## Installation and Orientation
+1. [Install nodeVISTA](#nodevista-installation)
+2. [Install CPRS](#cprs--rpc-server-installation)
+3. [Open MVDM Client](#open-mvdm-client)
+4. [Open and login to CPRS](#cprs-sign-on--patient-chart)
+
+## Domain by Domain HOW TOs
+* [Allergies](Allergies)
+* [Problems](Problems)
+* [Vitals](Vitals)
+
+
+<br><br><br>
+
+## nodeVISTA Installation
 
 The following outlines how to install nodeVISTA
 
@@ -42,20 +56,22 @@ The following outlines how to install nodeVISTA
     Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+<br><br><br>
 
-## CPRS Installation
 
-1. On a Windows7 or Windows10 box, download, unzip, and run the Osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+## CPRS / RPC Server Installation
 
-2. Download latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
+1. On a Windows7 or Windows10 box, download, unzip, install osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
-3. Unzip CPRSChart30v75.zip and rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
+2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 
-4. Overwrite  C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe with the latest binary (v1.0.30.75).
+3. Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
 
-5. Download latest CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+4. Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory C:\Program Files (x86)\VistA\CPRS\ [CPRSChart.exe]
 
-6. Unzip CPRS30v72_dll.zip and copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files.
+5. Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+
+6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\  [CPRS30v72_dll].
 
 7. Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
 
@@ -65,11 +81,25 @@ The following outlines how to install nodeVISTA
 
 10. Run "RPC Server" from windows desktop
 
-## Open the MVDM Client 
 
-Point your web browser to MVDM Client page at [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
+Summary of Paths
+
+Source | Artifact/Action | Target Path
+--- | --- | ---
+*Download/Unzip*<br> [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | **CPRS_Demo_0613.exe** (binary)<br> 1. Run  | NA
+*Download/Unzip*<br> [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip)| **CPRSChart30v75.exe** (binary)<br>1. Rename to CPRSChart.exe<br>2. Copy to target folder <br> (overwrites existing CPRSChart.exe) | C:\Program Files (x86)\VistA\CPRS\ 
+*Download/Unzip*<br> [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) |  **CPRS30v72_dll/** (folder) <br> 1. Copy contents of folder to target folder <br> (overwrites contents in target folder)| C:\Program Files (x86)\VistA\Common Files\ 
+*(Windows Desktop Shortcut)*<br> **RPC Server**  | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+
+
+
+## Open MVDM Client 
+
+Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
+<br><br>
 
 ![MVDM Client Open -width70](/demo/images/common/management-client/open-empty.png)
+<br><b>
 
 ## CPRS Sign-on / Patient-Chart
 
