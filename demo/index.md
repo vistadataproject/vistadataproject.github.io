@@ -86,10 +86,10 @@ Summary of Paths
 
 Source | Artifact/Action | Target Path
 --- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)<br> (Download/Unzip) | **CPRS_Demo_0613.exe**<br> 1. Run binary | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) <br>(Download/Unzip)| **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy/Paste to target folder  | C:\Program Files (x86)\VistA\CPRS\ <br> (overwrites existing CPRSChart.exe)
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip)<br>(Download/Unzip) |  **CPRS30v72_dll/** <br> 1. Copy/Paste contents of CPRS30v72_dll/ folder to target folder| C:\Program Files (x86)\VistA\Common Files\ <br> (overwrites contents in target folder)
-**RPC Server** <br>(Windows Desktop Shortcut) | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+*Download/Unzip*<br> [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | **CPRS_Demo_0613.exe** (binary)<br> 1. Run  | NA
+*Download/Unzip*<br> [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip)| **CPRSChart30v75.exe** (binary)<br>1. Rename to CPRSChart.exe<br>2. Copy to target folder <br> (overwrites existing CPRSChart.exe) | C:\Program Files (x86)\VistA\CPRS\ 
+*Download/Unzip*<br> [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) |  **CPRS30v72_dll/** (folder) <br> 1. Copy contents of folder to target folder <br> (overwrites contents in target folder)| C:\Program Files (x86)\VistA\Common Files\ 
+*(Windows Desktop Shortcut)*<br> **RPC Server**  | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 
 
