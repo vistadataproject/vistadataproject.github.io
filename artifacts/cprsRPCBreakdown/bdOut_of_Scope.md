@@ -33,7 +33,7 @@ OS19 | [ORWD2 MANUAL](http://vistadataproject.info/artifacts/vistaRPC documentat
 OS20 | [ORWDLR OIPARAM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDLR OIPARAM) | READ | DEPRECATED, FILE
 OS21 | [ORWDPS1 CHK94](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS1 CHK94) | UTILITY | FILE, IS-A, PATCH
 OS22 | [ORWDPS5 LESAPI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS5 LESAPI) | READ | DFN, NOT OSEHRA
-OS23 | [ORWDX SENDP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SENDP) | CHANGE | DFN, PRINT
+OS23 | [ORWDX SENDP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SENDP) | CHANGE | BUG, DFN, PRINT
 OS24 | [ORWDX1 UNDCORIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 UNDCORIG) | CHANGE | BUG, DFN
 OS25 | [ORWGEPT CLINRNG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWGEPT CLINRNG) | READ | NOT OSEHRA
 OS26 | [ORWMHV MHV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWMHV MHV) | UTILITY | P2PSEL
@@ -75,4 +75,4 @@ OS60 | [XWB REMOTE STATUS CHECK](http://vistadataproject.info/artifacts/vistaRPC
 
 
 
-<small>Generated on 2017-01-25</small>
+<small>Generated on 2017-02-08</small>
