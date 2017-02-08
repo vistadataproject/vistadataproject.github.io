@@ -14,12 +14,12 @@ These RPCs access at least 121 parameters and 86 files.
 
 
 
-Name | Number
---- | ---
-[Parameter Only](#parameter-only-129) | 129 (23%)
-[File Only](#file-only-239) | 239 (42.6%)
-[Parameter and File](#parameter-and-file-32) | 32 (5.7%)
-[Other](#other-161) | 161 (28.7%)
+Name | Number | In Demo
+--- | --- | ---
+[Parameter Only](#parameter-only-129) | 129 (23%) | 28 (21.7%)
+[File Only](#file-only-239) | 239 (42.6%) | 36 (15.1%)
+[Parameter and File](#parameter-and-file-32) | 32 (5.7%) | 9 (28.1%)
+[Other](#other-161) | 161 (28.7%) | 9 (5.6%)
 
 
 
