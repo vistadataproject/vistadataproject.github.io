@@ -7,7 +7,7 @@ title: MVDM Demo
 The following sections describe first how to install the nodeVISTA VM and CPRS, and then how to run the MVDM demo.
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
 
-![CPRS-MVDM-Clients](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/cprs-mvdm-demo.png)
+![CPRS-MVDM-Clients](/demo/images/installation/cprs-mvdm-demo.png)
 
 <br>
 ## Installation
@@ -68,12 +68,12 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     
 * Confirm that FMQL was installed successfully by navigating to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
-![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
+![FMQL-Browser](/demo/images/installation/fmql-browser.png)
 
 
 * Confirm the MVDM Client was installed successfully by navigating to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
 
-![mvdm-client](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/mvdm-browser.png)
+![mvdm-client](/demo/images/installation/mvdm-browser.png)
 
 
 
