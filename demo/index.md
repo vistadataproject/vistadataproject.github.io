@@ -69,8 +69,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     ```
 
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
-
-
+    
     
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
@@ -84,12 +83,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     $ vagrant ssh
     ```
     
-    
 * Notes on configuration of the virtual machine:
 
-On MacOS: All VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/
-
    ```shell
+   Storage: All VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ on MacOS
+   
     Port maps:
     nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
     nodeVistA: 9000 (guest) => 9000 (host) (adapter 1)
@@ -111,7 +109,6 @@ On MacOS: All VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/
     {user} = user directory on host system
     nodeVistA: /vagrant => /Users/{user}/vagrant/nodeVISTA/setup
     nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
-    
     ```
 
     
