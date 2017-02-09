@@ -106,6 +106,8 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 10. Run "RPC Server" from windows desktop
 
 
+<br><br><br><br><br><br>
+
 
 # Orientation
 
@@ -155,6 +157,11 @@ and the Management client shows the extra RPCs invoked - the total is now at 112
 and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
+
+
+<br><br><br><br><br><br>
+
+
 
 ## Domain by Domain HOW TOs
 
