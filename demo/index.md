@@ -12,9 +12,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br>
 
 ## Installation
-1. Prerequisites
-2. [nodeVISTA VM](#nodevista-installation)
-3. [CPRS](#cprs--rpc-server-installation)
+1. [Prerequisites]
+2. [nodeVISTA VM]
+3. [CPRS]
 
 
 ## Orientation
