@@ -13,7 +13,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 ## Installation
 
 1. [nodeVISTA VM](#installation-nodevista-vm)
-2. [CPRS]
+2. [CPRS](#cprs-installation)
 
 ## Orientation
 
