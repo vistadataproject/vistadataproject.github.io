@@ -58,12 +58,12 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (MacOS)
 
     
-* Confirm that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+* Confirm that FMQL was installed successfully by navigating to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
 
 
-* Confirm that MVDM Client was installed successfully by navigating your browser to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
+* Confirm that MVDM Client was installed successfully by navigating to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
 
 
 * Confirm access to the virtual machine via ssh:
