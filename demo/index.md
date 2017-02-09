@@ -103,7 +103,7 @@ The following outlines how to install nodeVISTA
     
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
-![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser2.png)
+![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
 
 
 
