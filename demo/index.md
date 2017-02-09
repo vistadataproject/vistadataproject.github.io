@@ -35,7 +35,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 The following outlines how to install nodeVISTA
 
-* Download and install Git
+* Download and install [Git](https://git-scm.com/download)
 
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
 
