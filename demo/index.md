@@ -12,13 +12,13 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br>
 ## Installation
 
-1. [nodeVISTA VM](#installation-nodevista-vm)
-2. [CPRS](#cprs-installation)
+* [nodeVISTA VM](#installation-nodevista-vm)
+* [CPRS](#cprs-installation)
 
 ## Orientation
 
-1. [Open MVDM Client](#open-mvdm-client)
-2. [Open and login to CPRS](#cprs-sign-on--patient-chart)
+* [MVDM Client](#open-mvdm-client)
+* [CPRS Client](#cprs-sign-on--patient-chart)
 
 ## Domain by Domain HOW TOs
 
