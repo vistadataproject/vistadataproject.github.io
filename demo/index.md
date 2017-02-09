@@ -11,19 +11,22 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 <br>
 ## Installation
+
 1. [nodeVISTA VM]
 2. [CPRS]
 
 ## Orientation
+
 1. [Open MVDM Client](#open-mvdm-client)
 2. [Open and login to CPRS](#cprs-sign-on--patient-chart)
 
 ## Domain by Domain HOW TOs
+
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
 
-# Installation: nodeVISTA VM
+### Installation: nodeVISTA VM
 
 * **Requirements**: (1) Windows, MacOS, or Linux machine (2) High-speed internet connection.
 
@@ -43,22 +46,27 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     ```shell
     $ git clone  https://github.com/vistadataproject/nodeVISTA
     ```
-* cd to the _nodeVista/setup/_ directory 
+* Change to the _nodeVista/setup/_ directory 
 
     ```shell
     $ cd nodeVista/setup/
     ```
-* if you have installed nodeVISTA before, then clear out your current setup ...
+    
+* If you have installed nodeVISTA before, then clear out your current setup ...
 
    ```shell
    $ vagrant destroy
    ```
+   
 * run the following:
+
     ```shell
     $ vagrant up
     ```
-    The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  The 
-    VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (on MacOS)
+    
+    The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  
+    
+    Note, on MacOS, the VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ 
 
 * Confirm access to the virtual machine via ssh:
 
@@ -71,14 +79,16 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 ![FMQL-Browser](/demo/images/installation/fmql-browser.png)
 
 
-* Confirm the MVDM Client was installed successfully by navigating to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
+* If you have installed nodeVISTA before, and wish to simply reload it ...
 
-![mvdm-client](/demo/images/installation/mvdm-browser.png)
+   ```shell
+   $ vagrant reload
+   ```
+   
 
 
 
-
-# Installation: CPRS
+###  CPRS Installation
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
