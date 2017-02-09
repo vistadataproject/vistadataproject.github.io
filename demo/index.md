@@ -8,7 +8,7 @@ The following sections describe first how to install the nodeVISTA VM and CPRS, 
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
 
 <br><br>
-![CPRS-MVDM-Clients](/demo/images/common/cprs-mvdm-clients.png)
+![CPRS-MVDM-Clients](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/cprs-mvdm-demo.png)
 <br><br>
 
 ## Installation and Orientation
