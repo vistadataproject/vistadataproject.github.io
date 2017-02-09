@@ -31,7 +31,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ## nodeVISTA VM
 
-* **Requirements**: (1) Windows, MacOS, or Linux machine (2) High-speed internet connection.
+* **Requirements**:  Windows, MacOS, or Linux machine
 
 * Download and install [Git](https://git-scm.com/download)
 
