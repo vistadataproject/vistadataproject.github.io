@@ -32,11 +32,14 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
+
 * From the command line, install the following Vagrant plugin(s):
+
     ```shell
     $ vagrant plugin install vagrant-timezone
     ```
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
+
     ```shell
     $ git clone  https://github.com/vistadataproject/nodeVISTA
     ```
@@ -55,8 +58,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     $ vagrant up
     ```
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  The 
-    VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (MacOS)
-
+    VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (on MacOS)
     
 * Confirm that FMQL was installed successfully by navigating to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
@@ -65,6 +67,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * Confirm that MVDM Client was installed successfully by navigating to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
 
+![mvdm-client](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/mvdm-browser.png)
 
 * Confirm access to the virtual machine via ssh:
 
