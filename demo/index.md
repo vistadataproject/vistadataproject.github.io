@@ -12,10 +12,8 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br>
 
 ## Installation
-1. [Prerequisites]
 2. [nodeVISTA VM]
 3. [CPRS]
-
 
 ## Orientation
 3. [Open MVDM Client](#open-mvdm-client)
@@ -30,7 +28,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br><br>
 
 
-## nodeVISTA VM Installation
+## Installation: nodeVISTA VM
+
+* Requirements:  MacOS, Windows, or Linux host machine
 
 * Download and install [Git](https://git-scm.com/download)
 
@@ -75,8 +75,6 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
 
-    
-    
 * To access to the virtual machine via ssh:
 
     ```shell
@@ -86,7 +84,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * Notes on configuration of the virtual machine:
 
    ```shell
-   Storage: All VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ on MacOS
+   Storage (on MacOS): VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/
    
     Port maps:
     nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
@@ -110,15 +108,15 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     nodeVistA: /vagrant => /Users/{user}/vagrant/nodeVISTA/setup
     nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
     ```
-
     
+<br><br><br><br><br>
 
-<br><br><br>
+## Installation: CPRS
+
+* Requirements:  Windows7 or Windows10 machine. If the host machine is MacOS or Linux, a Windows VM is required.  To create a VM for windows first download the Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), then follow the instructions for creating a VirtalBox VM [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 
-## Install CPRS
-
-1. On a Windows7 or Windows10 box, download, unzip, install osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+1. On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
 2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 
