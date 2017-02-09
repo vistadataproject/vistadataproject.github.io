@@ -95,9 +95,9 @@ The following outlines how to install nodeVISTA
     nodeVistA: SSH auth method: private key
     
     Shared Folders
-    [HOME] = home directory on host system
-    nodeVistA: /vagrant => /Users/[HOME]/vagrant/nodeVISTA/setup
-    nodeVistA: /home/vdp/dev => /Users/[HOME]/vagrant
+    {user} = user directory on host system
+    nodeVistA: /vagrant => /Users/{user}/vagrant/nodeVISTA/setup
+    nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
     
     ```
     
