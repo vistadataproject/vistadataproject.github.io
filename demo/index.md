@@ -32,37 +32,28 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
-
 * From the command line, install the following Vagrant plugin(s):
-
     ```shell
     $ vagrant plugin install vagrant-timezone
     ```
-
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
-
     ```shell
     $ git clone  https://github.com/vistadataproject/nodeVISTA
     ```
-
 * cd to the _nodeVista/setup/_ directory 
 
     ```shell
     $ cd nodeVista/setup/
     ```
-
 * if you have installed nodeVISTA before, then clear out your current setup ...
 
    ```shell
    $ vagrant destroy
    ```
-
 * run the following:
-
     ```shell
     $ vagrant up
     ```
-
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  The 
     VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (MacOS)
 
@@ -80,32 +71,8 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     ```shell
     $ vagrant ssh
     ```
-    
-* Configuration:
 
-   ```shell   
-    Port maps:
-    nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
-    nodeVistA: 9000 (guest) => 9000 (host) (adapter 1)
-    nodeVistA: 9001 (guest) => 9001 (host) (adapter 1)
-    nodeVistA: 9002 (guest) => 9002 (host) (adapter 1)
-    nodeVistA: 9010 (guest) => 9010 (host) (adapter 1)
-    nodeVistA: 9020 (guest) => 9020 (host) (adapter 1)
-    nodeVistA: 5858 (guest) => 5858 (host) (adapter 1)
-    nodeVistA: 3001 (guest) => 3001 (host) (adapter 1)
-    nodeVistA: 22 (guest) => 2222 (host) (adapter 1)
-    
-    SSH:
-    nodeVistA: SSH address: 127.0.0.1:2222
-    nodeVistA: SSH username: vagrant
-    nodeVistA: SSH auth method: private key
-    
-    Shared Folders
-    {user} = user directory on host system
-    nodeVistA: /vagrant => /Users/{user}/vagrant/nodeVISTA/setup
-    nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
-    ```
-    
+
 # Installation: CPRS
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
@@ -126,7 +93,6 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 # Orientation
 
 ## Open MVDM Client 
-
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
 <br>
 
@@ -191,3 +157,29 @@ Source | Artifact/Action | Target Path
 [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) <br>*Download/Unzip* | **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target folder | C:\Program Files (x86)\VistA\CPRS\  <br> *(overwrites existing CPRSChart.exe)* 
 [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) br>*Download/Unzip*  |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents to target | C:\Program Files (x86)\VistA\Common Files\  <br> *(overwrites contents in target folder)*
  **RPC Server** <br>*(Windows Desktop)* | 1.Rename desktop shortcut "Osehra VistA CPRS"-> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+
+
+* Configuration:
+
+   ```shell   
+    Port maps:
+    nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
+    nodeVistA: 9000 (guest) => 9000 (host) (adapter 1)
+    nodeVistA: 9001 (guest) => 9001 (host) (adapter 1)
+    nodeVistA: 9002 (guest) => 9002 (host) (adapter 1)
+    nodeVistA: 9010 (guest) => 9010 (host) (adapter 1)
+    nodeVistA: 9020 (guest) => 9020 (host) (adapter 1)
+    nodeVistA: 5858 (guest) => 5858 (host) (adapter 1)
+    nodeVistA: 3001 (guest) => 3001 (host) (adapter 1)
+    nodeVistA: 22 (guest) => 2222 (host) (adapter 1)
+    
+    SSH:
+    nodeVistA: SSH address: 127.0.0.1:2222
+    nodeVistA: SSH username: vagrant
+    nodeVistA: SSH auth method: private key
+    
+    Shared Folders
+    {user} = user directory on host system
+    nodeVistA: /vagrant => /Users/{user}/vagrant/nodeVISTA/setup
+    nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
+    ```
