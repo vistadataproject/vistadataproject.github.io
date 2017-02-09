@@ -11,9 +11,13 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 ![CPRS-MVDM-Clients](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/cprs-mvdm-demo.png)
 <br><br>
 
-## Installation and Orientation
-1. [Install nodeVISTA](#nodevista-installation)
-2. [Install CPRS](#cprs--rpc-server-installation)
+## Installation
+1. Prerequisites
+2. [nodeVISTA VM](#nodevista-installation)
+3. [CPRS](#cprs--rpc-server-installation)
+
+
+## Orientation
 3. [Open MVDM Client](#open-mvdm-client)
 4. [Open and login to CPRS](#cprs-sign-on--patient-chart)
 
@@ -25,9 +29,13 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 <br><br><br>
 
-## Install nodeVISTA VM
+# Installation
+
+## nodeVISTA VM Installation
 
 The following outlines how to install nodeVISTA
+
+* Download and install Git
 
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
 
@@ -41,7 +49,15 @@ The following outlines how to install nodeVISTA
 
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
 
+    ```shell
+    $ git pull  https://github.com/vistadataproject/nodeVISTA
+    ```
+
 * cd to the _nodeVista/setup/_ directory 
+
+    ```shell
+    $ cd nodeVista/setup/
+    ```
 
 * if you have installed nodeVISTA before, then clear out your current setup ...
 
@@ -60,6 +76,12 @@ The following outlines how to install nodeVISTA
     Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+
+
+
+
+
+
 <br><br><br>
 
 
