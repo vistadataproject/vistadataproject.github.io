@@ -9,10 +9,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ![CPRS-MVDM-Clients](/demo/images/installation/cprs-mvdm-demo.png)
 
-<br>
 ## Installation
 
-* [nodeVISTA VM](#installation-nodevista-vm)
+* [nodeVISTA VM](#nodevista-vm)
 * [CPRS](#cprs-installation)
 
 ## Orientation
@@ -26,7 +25,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * [Problems](Problems)
 * [Vitals](Vitals)
 
-### Installation: nodeVISTA VM
+
+<br><br><br><br><br>
+# Installation
+
+## nodeVISTA VM
 
 * **Requirements**: (1) Windows, MacOS, or Linux machine (2) High-speed internet connection.
 
@@ -84,11 +87,10 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```shell
    $ vagrant reload
    ```
-   
 
+<br><br><br><br><br>
 
-
-###  CPRS Installation
+### CPRS Installation
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
