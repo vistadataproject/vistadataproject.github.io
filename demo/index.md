@@ -9,14 +9,14 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ![CPRS-MVDM-Clients](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/cprs-mvdm-demo.png)
 
-
+<br>
 ## Installation
-2. [nodeVISTA VM]
-3. [CPRS]
+1. [nodeVISTA VM]
+2. [CPRS]
 
 ## Orientation
-3. [Open MVDM Client](#open-mvdm-client)
-4. [Open and login to CPRS](#cprs-sign-on--patient-chart)
+1. [Open MVDM Client](#open-mvdm-client)
+2. [Open and login to CPRS](#cprs-sign-on--patient-chart)
 
 ## Domain by Domain HOW TOs
 * [Allergies](Allergies)
@@ -27,7 +27,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br><br>
 
 
-## Installation: nodeVISTA VM
+# Installation: nodeVISTA VM
 
 * **Requirements**: (1) Windows, MacOS, or Linux machine (2) High-speed internet connection.
 
@@ -107,12 +107,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
     ```
     
-<br><br><br><br><br>
+<br><br><br><br>
 
-## Installation: CPRS
+# Installation: CPRS
 
-**Requirements**:  Windows machine. If one is using MacOS or Linux, one can use a Windows VM.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
-
+**Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 1. On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
