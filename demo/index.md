@@ -21,7 +21,7 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 
 <br><br><br>
 
-## Install nodeVISTA / MVDM Client
+## Install nodeVISTA
 
 The following outlines how to install nodeVISTA
 
@@ -59,7 +59,7 @@ The following outlines how to install nodeVISTA
 <br><br><br>
 
 
-## Install CPRS / RPC Server
+## Install CPRS
 
 1. On a Windows7 or Windows10 box, download, unzip, install osehra CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
