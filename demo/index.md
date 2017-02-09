@@ -50,7 +50,7 @@ The following outlines how to install nodeVISTA
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
 
     ```shell
-    $ git pull  https://github.com/vistadataproject/nodeVISTA
+    $ git clone  https://github.com/vistadataproject/nodeVISTA
     ```
 
 * cd to the _nodeVista/setup/_ directory 
@@ -75,6 +75,32 @@ The following outlines how to install nodeVISTA
 
     Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
+* Configuration of Virtual Machine:
+   ```shell
+    Port maps:
+    nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
+    nodeVistA: 9000 (guest) => 9000 (host) (adapter 1)
+    nodeVistA: 9001 (guest) => 9001 (host) (adapter 1)
+    nodeVistA: 9002 (guest) => 9002 (host) (adapter 1)
+    nodeVistA: 9010 (guest) => 9010 (host) (adapter 1)
+    nodeVistA: 9020 (guest) => 9020 (host) (adapter 1)
+    nodeVistA: 5858 (guest) => 5858 (host) (adapter 1)
+    nodeVistA: 3001 (guest) => 3001 (host) (adapter 1)
+    nodeVistA: 22 (guest) => 2222 (host) (adapter 1)
+    
+    SSH:
+    nodeVistA: SSH address: 127.0.0.1:2222
+    nodeVistA: SSH username: vagrant
+    nodeVistA: SSH password: vagrant
+    nodeVistA: SSH auth method: private key
+    
+    Shared Folders
+    [HOME] = home directory on host system
+    nodeVistA: /vagrant => /Users/[HOME]/vagrant/nodeVISTA/setup
+    nodeVistA: /home/vdp/dev => /Users/[HOME]/vagrant
+    
+    ```
+    
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 
