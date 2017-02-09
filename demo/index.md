@@ -23,10 +23,6 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * [Problems](Problems)
 * [Vitals](Vitals)
 
-
-<br><br><br>
-
-
 # Installation: nodeVISTA VM
 
 * **Requirements**: (1) Windows, MacOS, or Linux machine (2) High-speed internet connection.
@@ -71,17 +67,21 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (MacOS)
 
     
-* Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+* Confirm that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
 
-* To confirm access to the virtual machine via ssh:
+
+* Confirm that MVDM Client was installed successfully by navigating your browser to [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents)
+
+
+* Confirm access to the virtual machine via ssh:
 
     ```shell
     $ vagrant ssh
     ```
     
-* Configuration Notes:
+* Configuration:
 
    ```shell   
     Port maps:
@@ -98,7 +98,6 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     SSH:
     nodeVistA: SSH address: 127.0.0.1:2222
     nodeVistA: SSH username: vagrant
-    nodeVistA: SSH password: vagrant
     nodeVistA: SSH auth method: private key
     
     Shared Folders
@@ -107,56 +106,32 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
     ```
     
-<br><br><br><br>
-
 # Installation: CPRS
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 1. On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
-
 2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
-
 3. Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
-
-4. Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory C:\Program Files (x86)\VistA\CPRS\ [CPRSChart.exe]
-
+4. Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory C:\Program Files (x86)\VistA\CPRS\ 
 5. Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
-
-6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\  [CPRS30v72_dll].
-
+6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\.
 7. Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
-
 8. Right click on the new desktop shortcut ("RPC Server") and select "properties".
-
 9. Modify the target to the following: "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
-
 10. Run "RPC Server" from windows desktop
 
 
-Summary:
 
-Source | Artifact/Action | Target Path
---- | --- | ---
-[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) <br>*Download/Unzip*  | **CPRS_Demo_0613.exe**<br> 1. Execute  | NA
-[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) <br>*Download/Unzip* | **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target folder | C:\Program Files (x86)\VistA\CPRS\  <br> *(overwrites existing CPRSChart.exe)* 
-[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) br>*Download/Unzip*  |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents to target | C:\Program Files (x86)\VistA\Common Files\  <br> *(overwrites contents in target folder)*
- **RPC Server** <br>*(Windows Desktop)* | 1.Rename desktop shortcut "Osehra VistA CPRS"-> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
-
-
-
-
-
-<br><br><br><br><br>
-# Orientation to CPRS and MVDM
+# Orientation
 
 ## Open MVDM Client 
 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
-<br><br>
+<br>
 
 ![MVDM Client Open -width70](/demo/images/common/management-client/open-empty.png)
-<br><b>
+<br>
 
 ## CPRS Sign-on / Patient-Chart
 
@@ -203,3 +178,16 @@ and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
+
+
+
+#
+
+Summary:
+
+Source | Artifact/Action | Target Path
+--- | --- | ---
+[CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) <br>*Download/Unzip*  | **CPRS_Demo_0613.exe**<br> 1. Execute  | NA
+[CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip) <br>*Download/Unzip* | **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target folder | C:\Program Files (x86)\VistA\CPRS\  <br> *(overwrites existing CPRSChart.exe)* 
+[CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) br>*Download/Unzip*  |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents to target | C:\Program Files (x86)\VistA\Common Files\  <br> *(overwrites contents in target folder)*
+ **RPC Server** <br>*(Windows Desktop)* | 1.Rename desktop shortcut "Osehra VistA CPRS"-> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
