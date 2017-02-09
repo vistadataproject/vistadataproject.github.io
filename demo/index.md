@@ -68,24 +68,23 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     $ vagrant up
     ```
 
-    The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
-    
+    The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  The 
+    VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/  (MacOS)
+
     
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
 
-* To access to the virtual machine via ssh:
+* To confirm access to the virtual machine via ssh:
 
     ```shell
     $ vagrant ssh
     ```
     
-* Notes on configuration of the virtual machine:
+* Configuration Notes:
 
-   ```shell
-   Storage (on MacOS): VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/
-   
+   ```shell   
     Port maps:
     nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
     nodeVistA: 9000 (guest) => 9000 (host) (adapter 1)
