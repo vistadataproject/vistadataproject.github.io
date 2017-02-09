@@ -5,7 +5,7 @@ title: MVDM Demo
 
 # MVDM Demo
 
-The following sections first describe how to install the nodeVISTA VM, CPRS, and then how to run the MVDM demo v1.1.
+The following sections first describe how to install the nodeVISTA VM, CPRS, and then how to run the MVDM demo.
 
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
 
