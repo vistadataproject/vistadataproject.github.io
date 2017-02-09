@@ -29,11 +29,8 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 <br><br><br>
 
-# Installation
 
 ## nodeVISTA VM Installation
-
-The following outlines how to install nodeVISTA
 
 * Download and install [Git](https://git-scm.com/download)
 
@@ -73,9 +70,25 @@ The following outlines how to install nodeVISTA
 
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
 
-    Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
-* Configuration of Virtual Machine:
+    
+* Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+
+![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
+
+    
+    
+* To access to the virtual machine via ssh:
+
+    ```shell
+    $ vagrant ssh
+    ```
+    
+    
+* Notes on configuration of the virtual machine:
+
+On MacOS: All VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/
+
    ```shell
     Port maps:
     nodeVistA: 9430 (guest) => 9430 (host) (adapter 1)
@@ -100,13 +113,8 @@ The following outlines how to install nodeVISTA
     nodeVistA: /home/vdp/dev => /Users/{user}/vagrant
     
     ```
+
     
-* Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
-
-![FMQL-Browser](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/installation/fmql-browser.png)
-
-
-
 
 <br><br><br>
 
