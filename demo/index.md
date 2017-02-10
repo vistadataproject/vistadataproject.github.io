@@ -91,30 +91,25 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 * On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
-
 * Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 * Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
-
 * Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory 
-
-```
-C:\Program Files (x86)\VistA\CPRS\ 
-```
+    ```
+    C:\Program Files (x86)\VistA\CPRS\
+    ```
 * Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
-
 * Copy/overwrite the contents of the CPRS30v72_dll/ folder to 
-```
-C:\Program Files (x86)\VistA\Common Files\
-```
+    ```
+    C:\Program Files (x86)\VistA\Common Files\
+    ```
 * Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
 
 * Right click on the new desktop shortcut ("RPC Server") and select "properties".
 
 * Modify the target to the following:
-
-```
-"C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
-```
+    ```
+    "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+    ```
 * Run "RPC Server" from windows desktop
 
 
