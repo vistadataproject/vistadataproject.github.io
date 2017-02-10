@@ -97,12 +97,14 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
 
 * Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory 
+
     ```
     C:\Program Files (x86)\VistA\CPRS\
     ```
 * Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
 
 * Copy/overwrite the contents of the CPRS30v72_dll/ folder to 
+
     ```
     C:\Program Files (x86)\VistA\Common Files\
     ```
@@ -111,6 +113,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * Right click on the new desktop shortcut ("RPC Server") and select "properties".
 
 * Modify the target to the following:
+
     ```
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
