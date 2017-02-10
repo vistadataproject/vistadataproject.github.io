@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo
 ---
 
-# MVDM Demo
+# Master VISTA Data Model (MVDM) Demo
 
 The following sections describe first how to install the nodeVISTA VM and CPRS, and then how to run the MVDM demo.
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
@@ -12,7 +12,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ## Installation
 
-* [nodeVISTA VM](#nodevista-vm)
+* [nodeVISTA VM](#nodevista-installaion)
 * [CPRS](#cprs-installation)
 
 ## Orientation
@@ -30,7 +30,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br><br><br><br>
 # Installation
 
-## nodeVISTA VM
+## nodeVISTA Installation
 
 * **Requirements**:  Windows, MacOS, or Linux machine
 
