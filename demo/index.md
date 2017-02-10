@@ -68,10 +68,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     $ vagrant up
     ```
 
-
-The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  
-    
-Note, on MacOS, the VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ 
+* The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.   Note on MacOS the VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ 
 
 * Confirm access to the virtual machine via ssh:
 
