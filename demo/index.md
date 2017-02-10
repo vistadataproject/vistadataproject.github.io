@@ -91,13 +91,17 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 * On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+
 * Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
+
 * Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
+
 * Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory 
     ```
     C:\Program Files (x86)\VistA\CPRS\
     ```
 * Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+
 * Copy/overwrite the contents of the CPRS30v72_dll/ folder to 
     ```
     C:\Program Files (x86)\VistA\Common Files\
