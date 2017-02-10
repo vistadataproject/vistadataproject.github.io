@@ -4,6 +4,7 @@ title: MVDM Demo
 ---
 
 # MVDM Demo
+
 The following sections describe first how to install the nodeVISTA VM and CPRS, and then how to run the MVDM demo.
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
 
@@ -41,29 +42,28 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * From the command line, install the following Vagrant plugin(s):
 
-    ```shell
+    ```
     $ vagrant plugin install vagrant-timezone
     ```
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
 
-    ```shell
+    ```
     $ git clone  https://github.com/vistadataproject/nodeVISTA
     ```
 * Change to the _nodeVista/setup/_ directory 
 
-    ```shell
-    $ cd nodeVista/setup/
     ```
-    
+    $ cd nodeVista/setup/
+    ```    
 * If you have installed nodeVISTA before, then clear out your current setup ...
 
-   ```shell
+   ```
    $ vagrant destroy
    ```
    
 * run the following:
 
-    ```shell
+    ```
     $ vagrant up
     ```
     
@@ -73,7 +73,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * Confirm access to the virtual machine via ssh:
 
-    ```shell
+    ```
     $ vagrant ssh
     ```
     
@@ -84,7 +84,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * If you have installed nodeVISTA before, and wish to simply reload it ...
 
-   ```shell
+   ```shel
    $ vagrant reload
    ```
 
@@ -92,7 +92,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ### CPRS Installation
 
-**Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows 7 ISO [here](https://www.microsoft.com/en-us/software-download/windows7) or Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
+**Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
 1. On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
@@ -102,7 +102,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\.
 7. Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
 8. Right click on the new desktop shortcut ("RPC Server") and select "properties".
-9. Modify the target to the following: "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+9. Modify the target to the following:
+
+```
+"C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+```
 10. Run "RPC Server" from windows desktop
 
 
