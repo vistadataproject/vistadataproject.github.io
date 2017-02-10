@@ -60,13 +60,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```
    $ vagrant destroy
    ```
-   
 * run the following:
 
     ```
     $ vagrant up
     ```
-    
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.  
     
     Note, on MacOS, the VirtualBox VMs are stored under /Users/{user}/VirtualBox VMs/ 
@@ -76,7 +74,6 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     ```
     $ vagrant ssh
     ```
-    
 * Confirm that FMQL was installed successfully by navigating to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ![FMQL-Browser](/demo/images/installation/fmql-browser.png)
@@ -84,30 +81,41 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * If you have installed nodeVISTA before, and wish to simply reload it ...
 
-   ```shel
+   ```
    $ vagrant reload
    ```
-
 <br><br><br><br><br>
 
 ### CPRS Installation
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
-1. On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
-2. Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
-3. Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
-4. Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory C:\Program Files (x86)\VistA\CPRS\ 
-5. Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
-6. Copy/overwrite the contents of the CPRS30v72_dll/ folder to C:\Program Files (x86)\VistA\Common Files\.
-7. Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
-8. Right click on the new desktop shortcut ("RPC Server") and select "properties".
-9. Modify the target to the following:
+* On a Windows box, download, unzip, install the CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+
+* Download/unzip the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
+* Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
+
+* Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory 
+
+```
+C:\Program Files (x86)\VistA\CPRS\ 
+```
+* Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+
+* Copy/overwrite the contents of the CPRS30v72_dll/ folder to 
+```
+C:\Program Files (x86)\VistA\Common Files\
+```
+* Copy the Osehra VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
+
+* Right click on the new desktop shortcut ("RPC Server") and select "properties".
+
+* Modify the target to the following:
 
 ```
 "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 ```
-10. Run "RPC Server" from windows desktop
+* Run "RPC Server" from windows desktop
 
 
 <br><br><br><br><br><br>
