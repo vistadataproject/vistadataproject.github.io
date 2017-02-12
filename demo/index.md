@@ -142,7 +142,10 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * Select 'OK' and you will be brought to the (empty) patient chart
 
-![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
+![CPRS Patient Chart](/demo/images/common/cprs/patient-chart.png)
+
+
+![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/800x/animated.gif)
 
 
 
