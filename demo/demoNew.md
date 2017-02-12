@@ -146,7 +146,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * (#5) **Main Cover Sheet:**  You will now be in the main CPRS cover sheet. 
 
 <br>
-![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated2.gif)
+![CPRS Login](/demo/images/common/cprs/src3/1000x/animated2.gif)
 
 
 
