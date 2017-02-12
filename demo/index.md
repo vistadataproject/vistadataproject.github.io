@@ -126,9 +126,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 ## CPRS Login
 
-* **Start RPC Server** from Windows desktop
+* (#1) **Start RPC Server** from Windows desktop
 
-* **Login** to VISTA. 
+* (#2) **Login** to VISTA. 
 
 ```
    Access Code: fakedoc1
@@ -136,11 +136,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    (You are assigned the fictional user account: ALEXANDER,ROBERT)
 ```
 
-* **Patient Selection:**  Select the first patient in the patient list (David Carter), then click "OK"
+* (#3) **Patient Selection:**  Select the first patient in the patient list (David Carter), then click "OK"
 
-* **Clinic Selection:**  Click "Visit Not Selected" button; select the first clinic in the list (Clinic A), then click "OK"
+* (#4) **Clinic Selection:**  Click "Visit Not Selected" button; select the first clinic in the list (Clinic A), then click "OK"
 
-* **Main Cover Sheet:**  You will now be in the main CPRS cover sheet. 
+* (#5) **Main Cover Sheet:**  You will now be in the main CPRS cover sheet. 
 
 <br>
 ![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated2.gif)
