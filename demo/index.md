@@ -133,7 +133,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * **Patient Selection:**  Select the first patient in the patient list (David Carter), then click "OK"
 
-* **Clinic Selection:**  Select the first clinic in the clinic list (Clinic A), then click "OK"
+* **Clinic Selection:**  Click "Visit Not Selected" button on top bar; select the first clinic in the list (Clinic A), then click "OK"
 
 * **Main Cover Sheet:**  You will now be in the main CPRS cover sheet. 
 
