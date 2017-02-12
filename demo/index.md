@@ -131,9 +131,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    Verify Code: 1doc!@#$
 ```
 
-* **Patient Selection:**  Select the first patient in the patient list, then click "OK"
+* **Patient Selection:**  Select the first patient in the patient list (David Carter), then click "OK"
 
-* **Clinic Selection:**  Select the first clinic in the clinic list, then click "OK"
+* **Clinic Selection:**  Select the first clinic in the clinic list (Clinic A), then click "OK"
 
 * **Main Cover Sheet:**  You will now be in the main CPRS cover sheet. 
 
