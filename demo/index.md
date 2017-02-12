@@ -119,7 +119,34 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     ```
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
+
+## Verify CPRS Installation
+
 * Run "RPC Server" from windows desktop
+![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
+
+
+* Login into VISTA as ALEXANDER,ROBERT
+
+```
+   Access Code: fakedoc1
+   Verify Code: 1doc!@#$
+```
+
+![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.png)
+
+* After login, you will be brought to the patient selection dialog ...
+
+![CPRS Patient Select -width70](/demo/images/common/cprs/patient-select.png)
+
+
+* Select 'OK' and you will be brought to the (empty) patient chart
+
+![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
+
+
+
+
 
 
 <br><br><br><br><br><br>
@@ -139,7 +166,7 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 
 * Start CPRS ... 
 
-![CPRS Connect Screen -width70](/demo/images/common/cprs/connect.png)
+![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
 <br><br><br>
 
 * Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
