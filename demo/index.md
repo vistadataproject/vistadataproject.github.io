@@ -88,7 +88,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```
 <br><br><br><br><br>
 
-### CPRS: Installation
+
+
+
+
+## CPRS Installation
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
@@ -120,7 +124,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
-## CPRS: Login
+## CPRS Login
 
 * **Start RPC Server** from Windows desktop
 
