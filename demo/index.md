@@ -88,7 +88,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```
 <br><br><br><br><br>
 
-### Installation: CPRS
+### CPRS: Installation
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
@@ -120,15 +120,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
-## Login: CPRS
+## CPRS: Login
 
-* Overview
-![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated2.gif)
+*  #1: Start RPC Server from windows desktop
 
-
-*  #1: Run "RPC Server" from windows desktop
-
-*  #2:  Login into VISTA
+*  #2:  Login to VISTA
 Note: Your default user name will be assigned to ALEXANDER,ROBERT
 
 ```
@@ -136,10 +132,14 @@ Note: Your default user name will be assigned to ALEXANDER,ROBERT
    Verify Code: 1doc!@#$
 ```
 
-* #3: Select  After login, you will be brought to the patient selection dialog ...
+* #3: Patient Selection:  Select first patient in the patient list
 
-* #4:  Select 'OK' and you will be brought to the (empty) patient chart
+* #4: Clinic Selection:  Select first clinic in the clinic list
 
+* #5: Main cover sheet: You will now be 
+
+* Summary
+![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated2.gif)
 
 
 
