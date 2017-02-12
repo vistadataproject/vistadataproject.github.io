@@ -123,7 +123,11 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 ## Verify CPRS Installation
 
 * Overview
+![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/800x/animated.gif)
+
 ![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated.gif)
+
+![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1200x/animated.gif)
 
 
 
