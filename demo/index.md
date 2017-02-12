@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo
 ---
 
-# Master VISTA Data Model (MVDM) Demo
+# MVDM Demo
 
 The following sections describe first how to install the nodeVISTA VM and CPRS, and then how to run the MVDM demo.
 __This demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS__. 
@@ -30,7 +30,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 <br><br><br><br><br>
 # Installation
 
-## nodeVISTA Installation
+## Installation: nodeVISTA 
 
 * **Requirements**:  Windows, MacOS, or Linux machine
 
@@ -88,7 +88,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```
 <br><br><br><br><br>
 
-### CPRS Installation
+### Installation: CPRS
 
 **Requirements**:  Windows machine. If one is using MacOS or Linux, a Windows VM is required.  To create a Windows VM, download a Windows10 ISO [here](https://www.microsoft.com/en-us/software-download/windows10ISO), and follow instructions for creating a VirtalBox VM for Windows [here](http://www.techrepublic.com/article/pro-tip-how-to-install-windows-10-technical-preview-in-virtualbox/).
 
@@ -98,14 +98,14 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 * Rename the uncompressed binary CPRSChart30v75.exe to CPRSChart.exe.
 
-* Copy/overwrite the latest CPRSChart.exe binary (v1.0.30.75) into directory 
+* Copy the latest CPRSChart.exe binary (v30.75) into the following directory (overwrites older CPRSChart.exe)
 
     ```
     C:\Program Files (x86)\VistA\CPRS\
     ```
 * Download/unzip CommonFiles DLLs [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
 
-* Copy/overwrite the contents of the CPRS30v72_dll/ folder to 
+* Copy the contents of the CPRS30v72_dll/ folder into the following directory (overwrites existing contents)
 
     ```
     C:\Program Files (x86)\VistA\Common Files\
