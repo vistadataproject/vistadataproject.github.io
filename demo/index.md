@@ -27,10 +27,10 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 * [Vitals](Vitals)
 
 
-<br><br><br><br><br>
-# Installation
+<br><br><br><br><br><br><br>
 
-## Installation: nodeVISTA 
+
+# nodeVISTA Installation
 
 * **Requirements**:  Windows, MacOS, or Linux machine
 
@@ -86,7 +86,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
    ```
    $ vagrant reload
    ```
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 
 
@@ -124,6 +124,9 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
+<br><br><br><br><br><br><br>
+
+
 ## CPRS Login
 
 * (#1) **Start RPC Server** from Windows desktop
@@ -151,10 +154,7 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
 
 
 
-<br><br><br><br><br><br>
-
-
-# Orientation
+<br><br><br><br><br><br><br>
 
 ## Open MVDM Client 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
@@ -214,7 +214,9 @@ selected, nearly 80 RPCs have been sent ...
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
 
 
-<br><br><br><br><br><br>
+
+
+<br><br><br><br><br><br><br>
 
 
 
