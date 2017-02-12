@@ -120,17 +120,15 @@ __This demo focuses on how MVDM secures and audits existing VISTA clients such a
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
-## Verify CPRS Installation
+## Login: CPRS
 
 * Overview
 ![CPRS Login](https://github.com/vistadataproject/vistadataproject.github.io/blob/master/demo/images/common/cprs/src3/1000x/animated2.gif)
 
 
-* Run "RPC Server" from windows desktop
-![CPRS Connect Screen](/demo/images/common/cprs/vista-cprs-splash.png)
+*  #1: Run "RPC Server" from windows desktop
 
-
-* Login into VISTA
+*  #2:  Login into VISTA
 Note: Your default user name will be assigned to ALEXANDER,ROBERT
 
 ```
@@ -138,16 +136,10 @@ Note: Your default user name will be assigned to ALEXANDER,ROBERT
    Verify Code: 1doc!@#$
 ```
 
+* #3: Select  After login, you will be brought to the patient selection dialog ...
 
-![CPRS Sign On](/demo/images/common/cprs/signon.png)
+* #4:  Select 'OK' and you will be brought to the (empty) patient chart
 
-* After login, you will be brought to the patient selection dialog ...
-
-![CPRS Patient Select](/demo/images/common/cprs/patient-select.png)
-
-* Select 'OK' and you will be brought to the (empty) patient chart
-
-![CPRS Patient Chart](/demo/images/common/cprs/patient-chart.png)
 
 
 
