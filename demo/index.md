@@ -94,6 +94,9 @@ Source | Artifact/Action | Target Path
 
 
 
+
+
+<br><br><br>
 ## Open MVDM Client 
 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
@@ -102,6 +105,10 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 ![MVDM Client Open](/demo/images/common/management-client/open-empty.png)
 <br><b>
 
+
+
+
+<br><br><br>
 ## CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
