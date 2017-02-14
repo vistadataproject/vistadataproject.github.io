@@ -119,11 +119,11 @@ Login into VISTA as ALEXANDER,ROBERT
    Verify Code: 1doc!@#$
 ```
 
-![CPRS Sign On Image -width70](/demo/images/common/cprs/signon.png)
+![CPRS Sign On](/demo/images/common/cprs/signon.png)
 
 After login, you will be brought to the patient selection dialog ...
 
-![CPRS Patient Select -width70](/demo/images/common/cprs/patient-select.png)
+![CPRS Patient Select](/demo/images/common/cprs/patient-select.png)
 
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
 selected, nearly 80 RPCs have been sent ...
