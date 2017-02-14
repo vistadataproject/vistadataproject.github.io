@@ -18,8 +18,7 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 * [Problems](Problems)
 * [Vitals](Vitals)
 
-
-<br><br><br>
+<br><br><br><br><br>
 
 ## nodeVISTA Installation
 
@@ -80,7 +79,6 @@ The following outlines how to install nodeVISTA
 9. Modify the target to the following: "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 10. Run "RPC Server" from windows desktop
-
 
 
 Summary of Paths
