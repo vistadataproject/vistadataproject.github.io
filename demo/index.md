@@ -105,7 +105,7 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 
 Start CPRS ... 
 
-![CPRS Connect Screen -width70](/demo/images/common/cprs/connect.png)
+![CPRS Connect Screen -width70](/demo/images/common/cprs/connect1.png)
 
 Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
 
