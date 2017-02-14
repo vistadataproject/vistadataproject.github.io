@@ -99,14 +99,14 @@ Source | Artifact/Action | Target Path
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
 <br><br>
 
-![MVDM Client Open -width70](/demo/images/common/management-client/open-empty.png)
+![MVDM Client Open](/demo/images/common/management-client/open-empty.png)
 <br><b>
 
 ## CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
 
-![CPRS Connect Screen -width70](/demo/images/common/cprs/connect.png)
+![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
 
 Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
 
