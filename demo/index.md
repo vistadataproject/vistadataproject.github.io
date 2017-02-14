@@ -31,7 +31,7 @@ The following outlines how to install nodeVISTA
 
 * From the command line, install the following Vagrant plugin(s):
 
-    ```shell
+    ```
     $ vagrant plugin install vagrant-timezone
     ```
 
@@ -41,13 +41,13 @@ The following outlines how to install nodeVISTA
 
 * if you have installed nodeVISTA before, then clear out your current setup ...
 
-   ```shell
+   ```
    $ vagrant destroy
    ```
 
 * run the following:
 
-    ```shell
+    ```
     $ vagrant up
     ```
 
@@ -140,6 +140,7 @@ and the Management client shows the extra RPCs invoked - the total is now at 112
 and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
+
 
 ## Domain by Domain HOW TOs
 
