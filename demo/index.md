@@ -25,6 +25,8 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 
 The following outlines how to install nodeVISTA
 
+* Download and install [Git](https://git-scm.com/downloads)
+
 * Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
@@ -36,6 +38,10 @@ The following outlines how to install nodeVISTA
     ```
 
 * Download (_git clone_) or update (_git pull_) the _nodeVISTA_ git, https://github.com/vistadataproject/nodeVISTA
+
+    ```
+    $ git clone https://github.com/vistadataproject/nodeVISTA
+    ```
 
 * cd to the _nodeVista/setup/_ directory 
 
