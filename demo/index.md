@@ -18,7 +18,8 @@ The following sections first describe how to install the nodeVISTA VM, CPRS, and
 * [Problems](Problems)
 * [Vitals](Vitals)
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
 
 ## nodeVISTA Installation
 
@@ -81,7 +82,7 @@ The following outlines how to install nodeVISTA
 10. Run "RPC Server" from windows desktop
 
 
-Summary of Paths
+Summary
 
 Source | Artifact/Action | Target Path
 --- | --- | ---
@@ -94,7 +95,8 @@ Source | Artifact/Action | Target Path
 
 
 
-<br><br><br>
+<br><br><br><br>
+
 ## Open MVDM Client 
 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
@@ -104,15 +106,17 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 
 
 
-<br><b><br><br><br><br><br>
+<br><b><br><br><br><br>
 ## CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
+
 ![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
 
 <br><br><br><br>
 
 Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
+
 ![MVDM Client CPRS Connect](/demo/images/common/management-client/connect.png)
 <br><br><br><br>
 
@@ -128,30 +132,35 @@ Login into VISTA as ALEXANDER,ROBERT
 
 
 After login, you will be brought to the patient selection dialog ...
+
 ![CPRS Patient Select](/demo/images/common/cprs/patient-select.png)
 <br><br><br><br>
 
 
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
 selected, nearly 80 RPCs have been sent ...
+
 ![MVDM Client Patient Select](/demo/images/common/management-client/p1postlogsmall.png)
 <br><br><br><br>
 
 
 Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
+
 ![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
 <br><br><br><br>
 
 
 and the Management client shows the extra RPCs invoked - the total is now at 112 ...
+
 ![MVDM Client P2 Patient Chart](/demo/images/common/management-client/p2patient-chart-no-data.png)
 <br><br><br><br>
 
 
 and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
+
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 
 ## Domain by Domain HOW TOs
 
