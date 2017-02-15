@@ -101,7 +101,7 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 <br><br>
 
 ![MVDM Client Open](/demo/images/common/management-client/open-empty.png)
-<br><b>
+<br><b><br><br>
 
 
 
@@ -110,12 +110,12 @@ Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEven
 ## CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
-
 ![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
+<br><b>
 
 Before logging in, notice that the MVDM Client's Events tab shows the first RPC traffic coming from CPRS.
-
 ![MVDM Client CPRS Connect](/demo/images/common/management-client/connect.png)
+<br><b>
 
 Login into VISTA as ALEXANDER,ROBERT
 
@@ -125,27 +125,30 @@ Login into VISTA as ALEXANDER,ROBERT
 ```
 
 ![CPRS Sign On](/demo/images/common/cprs/signon.png)
+<br><b>
 
 After login, you will be brought to the patient selection dialog ...
-
 ![CPRS Patient Select](/demo/images/common/cprs/patient-select.png)
+<br><b>
 
 Before choosing _Carter,David_, look in the MVDM management client and see just how _chatty_ CPRS is. Before any patient is
 selected, nearly 80 RPCs have been sent ...
-
 ![MVDM Client Patient Select](/demo/images/common/management-client/p1postlogsmall.png)
+<br><b>
 
 Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
-
 ![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
+<br><b>
 
 and the Management client shows the extra RPCs invoked - the total is now at 112 ...
-
 ![MVDM Client P2 Patient Chart](/demo/images/common/management-client/p2patient-chart-no-data.png)
+<br><b>
 
 and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
-
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
+<br><b><br><br>
+
+
 
 
 ## Domain by Domain HOW TOs
