@@ -4,11 +4,10 @@ title: MVDM Demo
 ---
 
 # MVDM Demo
-The following sections describe first how to install the nodeVISTA server and CPRS client, and then how to run the MVDM demo.<br>
+The following sections describe first how to install the nodeVISTA server and CPRS client, and then how to run the MVDM demo.
 __The demo focuses on how MVDM secures and audits existing VISTA clients such as CPRS using the RPC Locker__. 
 
 ![CPRS MVDM Clients](/demo/images/common/cprs-mvdm-clients.png)
-<br>
 
 ## Installation and Orientation
 1. [Install nodeVISTA](#nodevista-installation)
