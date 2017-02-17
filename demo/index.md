@@ -100,19 +100,19 @@ Source | Artifact/Action | Target Path
 *(Windows Desktop Shortcut)*<br> **RPC Server**  | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
 
 
-<br><br><br><br>
-
+<br><br><br><br><br>
 ## Open MVDM Client 
 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
-<br><br><br>
 
 ![MVDM Client Open](/demo/images/common/management-client/open-empty.png)
 
-<br><b><br><br><br><br>
+
+<br><b><br><br><br>
 ## CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
+
 ![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
 
 <br><br><br>
