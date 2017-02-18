@@ -92,6 +92,9 @@ The following outlines how to install nodeVISTA server in a VirtualBox virtual m
 
 10. Run "RPC Server" from windows desktop
 
+<br><br>
+![run RP Server](/demo/images/common/run-rpc-server.png)
+
 
 Source | Artifact/Action | Target Path
 --- | --- | ---
