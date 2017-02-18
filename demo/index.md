@@ -23,7 +23,7 @@ __The demo focuses on how MVDM secures and audits existing VISTA clients such as
 <br><br><br><br><br><br>
 
 
-## nodeVISTA Installation
+# nodeVISTA Installation
 
 The following outlines how to install nodeVISTA server in a VirtualBox virtual machine.
 
@@ -70,7 +70,7 @@ The following outlines how to install nodeVISTA server in a VirtualBox virtual m
 <br><br><br><br><br>
 
 
-## CPRS / RPC Server Installation
+# CPRS / RPC Server Installation
 
 Summary:
 
@@ -106,19 +106,21 @@ Steps:
 
 <br><br>
 ![run RP Server](/demo/images/common/run-rpc-server.png)
-
-
-
 <br><br><br><br><br><br>
-## Open MVDM Client 
+
+
+
+
+# Open MVDM Client 
 
 Point your web browser to MVDM Client page at:  [http://10.2.2.100:9020/#rpcEvents](http://10.2.2.100:9020/#rpcEvents).
 
 ![MVDM Client Open](/demo/images/common/management-client/open-empty.png)
+<br><br><br><br><br><br>
 
 
-<br><b><br><br><br>
-## CPRS Sign-on / Patient-Chart
+
+# CPRS Sign-on / Patient-Chart
 
 Start CPRS ... 
 
@@ -167,9 +169,11 @@ and the Management client shows the extra RPCs invoked - the total is now at 112
 and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 
 ![MVDM Client P2 MVDM Events](/demo/images/common/management-client/p2mvdmevents.png)
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 
-## Domain by Domain HOW TOs
+
+
+# Domain by Domain HOW TOs
 
 * [Allergies](Allergies)
 * [Problems](Problems)
