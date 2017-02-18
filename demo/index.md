@@ -126,12 +126,14 @@ Before logging in, notice that the MVDM Client's Events tab shows the first RPC 
 ![MVDM Client CPRS Connect](/demo/images/common/management-client/connect.png)
 <br><br><br>
 
-Login into VISTA as ALEXANDER,ROBERT
+Login into VISTA 
 
 ```
    Access Code: fakedoc1
    Verify Code: 1doc!@#$
 ```
+(your username will be set to ALEXANDER,ROBERT)
+
 
 ![CPRS Sign On](/demo/images/common/cprs/signon.png)
 <br><br><br>
