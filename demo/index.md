@@ -62,10 +62,10 @@ The following outlines how to install nodeVISTA server in a VirtualBox virtual m
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.   Note: On MacOS, the VirtualBox VMs are saved under /Users/{user}/VirtualBox VMs/.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
-
+<br>
 ![FMQL Browsdr](/demo/images/common/fmql-browser.png)
 
-<br><br><br><br>
+<br><br><br><br><br>
 
 
 ## CPRS / RPC Server Installation
