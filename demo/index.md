@@ -47,7 +47,7 @@ The following outlines how to install nodeVISTA
 
 * cd to the _nodeVista/setup/_ directory 
 
-* if you have installed nodeVISTA , then clear out your current setup ...
+* if you have previously installed nodeVISTA , then clear out your current setup ...
 
    ```
    $ vagrant destroy
@@ -61,13 +61,13 @@ The following outlines how to install nodeVISTA
 
     The initial Vagrant up process will download a pre-built nodeVISTA vagrant box. The box is ~2.6gb in size and may take awhile to initally download. The box will be cached and subsequent deployments will not take as long.
 
-    Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
+    Note: On MacOS, the VirtualBox VMs are saved under /Users/{user}/VirtualBox VMs/.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
 
 ![FMQL Browsdr](/demo/images/common/fmql-browser.png)
 
-<br><br><br>
+<br><br><br><br>
 
 
 ## CPRS / RPC Server Installation
@@ -92,8 +92,6 @@ The following outlines how to install nodeVISTA
 
 10. Run "RPC Server" from windows desktop
 
-
-Summary
 
 Source | Artifact/Action | Target Path
 --- | --- | ---
