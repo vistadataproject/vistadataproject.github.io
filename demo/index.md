@@ -25,7 +25,7 @@ __The demo focuses on how MVDM secures and audits existing VISTA clients such as
 
 ## nodeVISTA Installation
 
-The following outlines how to install nodeVISTA server in a VirtualBox virtual machine, which will run on any computer.
+The following outlines how to install nodeVISTA server in a VirtualBox virtual machine.
 
 * Download and install [Git](https://git-scm.com/downloads)
 
