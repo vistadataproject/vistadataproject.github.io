@@ -64,6 +64,9 @@ The following outlines how to install nodeVISTA
     Note: Virtual Box VMs go under /Users/{user}/VirtualBox VMs/ on macOS.
 
 * Check that FMQL was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+
+![FMQL Browsdr](/demo/images/common/fmql-browser.png)
+
 <br><br><br>
 
 
