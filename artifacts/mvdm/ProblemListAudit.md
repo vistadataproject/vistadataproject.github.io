@@ -14,6 +14,18 @@ title: MVDM documentation
 <dt>fromVDMQueries</dt><dd>[{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 125_8</dd>
 </dl>
+Total # of Subobjects: 0
+Total # of Properties: 9
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+DATE-TIME | 1
+NUMERIC | 1
+POINTER | 3
+STRING | 4
+
+
 
 ### Properties
 
@@ -29,4 +41,4 @@ title: MVDM documentation
 | requestingProvider | Requesting Provider | POINTER | requesting_provider | $USERID |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING | old_problem_entry |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}

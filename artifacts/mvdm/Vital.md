@@ -15,6 +15,20 @@ title: MVDM documentation
 <dt>fromVDMList</dt><dd>SELECT 120_5 FILTER(!bound(2))</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_5 FILTER(.02=$PID&&!bound(2))</dd>
 </dl>
+Total # of Subobjects: 1
+Total # of Properties: 17
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 1
+DATE-TIME | 2
+OBJECT | 1
+POINTER | 5
+STRING | 7
+[POINTER] | 1
+
+
 
 ### Properties
 
@@ -52,4 +66,4 @@ title: MVDM documentation
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}

@@ -14,6 +14,17 @@ title: MVDM documentation
 <dt>fromVDMList</dt><dd>SELECT 120_86</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_86 FILTER(.01=$PID)</dd>
 </dl>
+Total # of Subobjects: 0
+Total # of Properties: 4
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 1
+DATE-TIME | 1
+POINTER | 2
+
+
 
 ### Properties
 
@@ -24,4 +35,4 @@ title: MVDM documentation
 | enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}

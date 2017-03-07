@@ -15,6 +15,23 @@ title: MVDM documentation
 <dt>fromVDMList</dt><dd>SELECT 9000011 FILTER(1.02='P')</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 9000011 FILTER(.02=$PID&&1.02='P')</dd>
 </dl>
+Total # of Subobjects: 2
+Total # of Properties: 36
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 9
+DATE | 4
+DATE-TIME | 1
+ENUMERATION | 4
+NUMERIC | 1
+POINTER | 8
+STRING | 6
+[OBJECT] | 2
+undefined | 1
+
+
 
 ### Properties
 
@@ -94,4 +111,4 @@ title: MVDM documentation
 | requestingProvider | Requesting provider | POINTER |  |  |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}
