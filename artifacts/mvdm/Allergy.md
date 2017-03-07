@@ -16,6 +16,7 @@ title: MVDM documentation
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_8 FILTER(.01=$PID&&!bound(22))</dd>
 </dl>
 Total # of Subobjects: 5
+
 Total # of Properties: 16
  
 
@@ -121,4 +122,4 @@ POINTER | 4
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}

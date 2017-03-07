@@ -14,6 +14,7 @@ title: MVDM documentation
 <dt>fromVDMListPerPatient</dt><dd>SELECT 8925 FILTER(.02=$PID&&!bound(1611))</dd>
 </dl>
 Total # of Subobjects: 2
+
 Total # of Properties: 20
  
 
@@ -82,4 +83,4 @@ STRING | 2
 | enteredBy | Entered By | POINTER | deleted_by |  |  |  | 
 | reasonForDocumentDeletion |  | ENUMERATION | reason_for_deletion |  | {::nomarkdown}<dl><dt>privacy act</dt><dd>0</dd><dt>administrative</dt><dd>1</dd></dl>{:/} |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:35:58 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}
