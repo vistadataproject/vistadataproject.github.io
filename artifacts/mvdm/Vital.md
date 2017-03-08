@@ -10,7 +10,7 @@ title: MVDM documentation
 <dt>label</dt><dd>Patient Vitals</dd>
 <dt>description</dt><dd>Contains patient vital information.</dd>
 <dt>fmIdForId</dt><dd>120.5</dd>
-<dt>baseVDMClass</dt><dd>[Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Gmrv_Vital_Measurement-120_5">Gmrv_Vital_Measurement-120_5</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 120_5 FILTER(!bound(2))</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_5 FILTER(.02=$PID&&!bound(2))</dd>
@@ -67,4 +67,4 @@ STRING | 7
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

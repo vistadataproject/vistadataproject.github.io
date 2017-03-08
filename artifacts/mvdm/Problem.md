@@ -10,7 +10,7 @@ title: MVDM documentation
 <dt>label</dt><dd>Patient Problems</dd>
 <dt>description</dt><dd>Contains patient problem information.</dd>
 <dt>fmIdForId</dt><dd>9000011</dd>
-<dt>baseVDMClass</dt><dd>[Problem-9000011](../vdm/Problem-9000011)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Problem-9000011">Problem-9000011</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Problem-9000011,query:DESCRIBE $ID},{vdmId:Problem_List_Audit-125_8,query:DESCRIBE 125_8 FILTER(.01=$ID)}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 9000011 FILTER(1.02='P')</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 9000011 FILTER(.02=$PID&&1.02='P')</dd>
@@ -112,4 +112,4 @@ undefined | 1
 | requestingProvider | Requesting provider | POINTER |  |  |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

@@ -8,7 +8,7 @@ title: MVDM documentation
 <dl>
 <dt>id</dt><dd>Patient</dd>
 <dt>fmIdForId</dt><dd>2</dd>
-<dt>baseVDMClass</dt><dd>[Patient-2](../vdm/Patient-2)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Patient-2">Patient-2</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Patient-2,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 2</dd>
 </dl>
@@ -885,4 +885,4 @@ undefined | 1
 | dataType | Data Type | ENUMERATION | data_type |  | {::nomarkdown}<dl><dt>SSD</dt><dd>SPECIAL SURVEY DISP</dd><dt>S</dt><dd>APPOINTMENT</dd><dt>DE</dt><dd>CLINIC ENROLLMENT</dd></dl>{:/} | REQUIRED, INDEXED | 
 | date_of_archive | Date Of Archive | [OBJECT] |  |  | {properties:[{description:Enter the date/time the archiving utility was run.\r \rThis field is not currently used.  The archiving software was not\rdistributed.,datatype:DATE-TIME,required:true,label:Date Of Archive,fmId:.01,id:dateOfArchive,fromVDM:date_of_archive},{description:Enter the sequential number of the tape on which this archiving data\rwas put.,datatype:STRING,label:Tape #,fmId:1,id:tapeNumber,fromVDM:tape_number},{description:Enter the date the user chose to begin the scheduling archive.,datatype:DATE-TIME,label:Begin Archive Date,fmId:2,id:beginArchiveDate,fromVDM:begin_archive_date},{description:Enter the ending date the user chose for the scheduling archive.,datatype:DATE-TIME,label:End Archive Date,fmId:3,id:endArchiveDate,fromVDM:end_archive_date},{description:The number of records archived.  This is created automatically by the\rsoftware.\r \rThis software has not been released and this field is not presently\rused in DHCP.,datatype:NUMERIC,label:Number Of Records Archived,fmId:4,id:numberOfRecordsArchived,fromVDM:number_of_records_archived}],fmId:2.13,id:dateOfArchive,fromVDM:Date_Of_Archive-2_13,label:Date Of Archive} |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

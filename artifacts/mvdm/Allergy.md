@@ -10,7 +10,7 @@ title: MVDM documentation
 <dt>label</dt><dd>Patient Allergies</dd>
 <dt>description</dt><dd>Contains patient allergy/adverse reaction information.</dd>
 <dt>fmIdForId</dt><dd>120.8</dd>
-<dt>baseVDMClass</dt><dd>[Patient_Allergies-120_8](../vdm/Patient_Allergies-120_8)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Patient_Allergies-120_8">Patient_Allergies-120_8</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Patient_Allergy-120_8,query:DESCRIBE $ID},{vdmId:Adverse_Reaction_Reporting-120_85,query:DESCRIBE 120_85 FILTER(.03=$ID)}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 120_8 FILTER(!bound(22))</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_8 FILTER(.01=$PID&&!bound(22))</dd>
@@ -122,4 +122,4 @@ POINTER | 4
 | enteredBy | User Entering | POINTER |  | $USERID |  |  | 
 | comment | Comment | STRING |  |  |  | REQUIRED, UPDATE | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 7th 2017, 7:56:16 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}
