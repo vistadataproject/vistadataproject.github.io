@@ -15,7 +15,7 @@ Now, for the first time, VISTA's native data model - the __VISTA Data Model__ (V
 
 
 
-![vdp-transition](assets/vdp-transition-20170312.png)
+![vdp-transition -width70](assets/vdp-transition-20170312.png )
 
 <br><br>
 
