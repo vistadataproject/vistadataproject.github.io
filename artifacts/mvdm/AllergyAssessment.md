@@ -9,11 +9,23 @@ title: MVDM documentation
 <dt>id</dt><dd>AllergyAssessment</dd>
 <dt>label</dt><dd>Allergy Assessment</dd>
 <dt>fmIdForId</dt><dd>120.86</dd>
-<dt>baseVDMClass</dt><dd>[Adverse_Reaction_Assessment-120_86](../vdm/Adverse_Reaction_Assessment-120_86)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Adverse_Reaction_Assessment-120_86">Adverse_Reaction_Assessment-120_86</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Adverse_Reaction_Assessment-120_86,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 120_86</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_86 FILTER(.01=$PID)</dd>
 </dl>
+Total # of Subobjects: 0
+
+Total # of Properties: 4
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 1
+DATE-TIME | 1
+POINTER | 2
+
+
 
 ### Properties
 
@@ -24,4 +36,4 @@ title: MVDM documentation
 | enteredBy |  | POINTER | assessing_user | $USERID | Person |  | 
 | dateTimeEntered |  | DATE-TIME | assessment_date_time | $NOW |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

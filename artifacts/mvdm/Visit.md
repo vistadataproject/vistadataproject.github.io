@@ -8,8 +8,23 @@ title: MVDM documentation
 <dl>
 <dt>id</dt><dd>Visit</dd>
 <dt>fmIdForId</dt><dd>9000010</dd>
-<dt>baseVDMClass</dt><dd>[Visit-9000010](../vdm/Visit-9000010)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Visit-9000010">Visit-9000010</a></dd>
 </dl>
+Total # of Subobjects: 0
+
+Total # of Properties: 39
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 8
+DATE-TIME | 4
+ENUMERATION | 11
+NUMERIC | 1
+POINTER | 12
+STRING | 3
+
+
 
 ### Properties
 
@@ -55,4 +70,4 @@ title: MVDM documentation
 | enteredWithPackage |  | POINTER | package |  | Package-9_4 |  | 
 | enteredWithPCEDataSource |  | POINTER | data_source |  | Pce_Data_Source-839_7 |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

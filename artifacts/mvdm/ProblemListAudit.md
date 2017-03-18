@@ -10,10 +10,23 @@ title: MVDM documentation
 <dt>label</dt><dd>Problem List Audit</dd>
 <dt>description</dt><dd>Contains problem list audits</dd>
 <dt>fmIdForId</dt><dd>125.8</dd>
-<dt>baseVDMClass</dt><dd>[Problem_List_Audit-125_8](../vdm/Problem_List_Audit-125_8)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Problem_List_Audit-125_8">Problem_List_Audit-125_8</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Problem_List_Audit-125_8,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 125_8</dd>
 </dl>
+Total # of Subobjects: 0
+
+Total # of Properties: 9
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+DATE-TIME | 1
+NUMERIC | 1
+POINTER | 3
+STRING | 4
+
+
 
 ### Properties
 
@@ -29,4 +42,4 @@ title: MVDM documentation
 | requestingProvider | Requesting Provider | POINTER | requesting_provider | $USERID |  |  | 
 | oldProblemEntry | Old Problem Entry | STRING | old_problem_entry |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}

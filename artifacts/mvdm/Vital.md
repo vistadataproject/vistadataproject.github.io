@@ -10,11 +10,26 @@ title: MVDM documentation
 <dt>label</dt><dd>Patient Vitals</dd>
 <dt>description</dt><dd>Contains patient vital information.</dd>
 <dt>fmIdForId</dt><dd>120.5</dd>
-<dt>baseVDMClass</dt><dd>[Gmrv_Vital_Measurement-120_5](../vdm/Gmrv_Vital_Measurement-120_5)</dd>
+<dt>baseVDMClass</dt><dd><a href="../vdm/Gmrv_Vital_Measurement-120_5">Gmrv_Vital_Measurement-120_5</a></dd>
 <dt>fromVDMQueries</dt><dd>[{vdmId:Gmrv_Vitals_Measurement-120_5,query:DESCRIBE $ID}]</dd>
 <dt>fromVDMList</dt><dd>SELECT 120_5 FILTER(!bound(2))</dd>
 <dt>fromVDMListPerPatient</dt><dd>SELECT 120_5 FILTER(.02=$PID&&!bound(2))</dd>
 </dl>
+Total # of Subobjects: 1
+
+Total # of Properties: 17
+ 
+
+ Property Type | Numeric 
+ --- | --- 
+BOOLEAN | 1
+DATE-TIME | 2
+OBJECT | 1
+POINTER | 5
+STRING | 7
+[POINTER] | 1
+
+
 
 ### Properties
 
@@ -52,4 +67,4 @@ title: MVDM documentation
 | enteredBy | Entered By | POINTER |  |  |  |  | 
 | comment | Comment | STRING |  |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on January 30th 2017, 8:27:46 pm</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on March 8th 2017, 6:21:46 am</p>{:/}
