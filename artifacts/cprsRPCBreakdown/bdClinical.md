@@ -9,8 +9,8 @@ title: VDP Year 2 - CPRS RPC Interface, Clinical Slice Breakdown
 Category | Number | In Demo
 --- | --- | ---
 CHANGE | 81 (19.5%) | 19 (23.5%)
-READ | 284 (68.3%) | 51 (18%)
-UTILITY | 51 (12.3%) | 15 (29.4%)
+READ | 284 (68.3%) | 64 (22.5%)
+UTILITY | 51 (12.3%) | 16 (31.4%)
 
 
 
@@ -21,8 +21,8 @@ These RPCs access at least 23 parameters and 53 files.
 \# | Name | Category | Args | Lines | Tags | Files | Parameters
 --- | --- | --- | --- | --- | --- | --- | ---
 C1 | __[DG CHK BS5 XREF ARRAY](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK BS5 XREF ARRAY)__ | READ | DFN | 27 | FILE, P2PSEL, XREF | [2](http://localhost:9000/schema/2) | 
-C2 | [DG CHK BS5 XREF Y/N](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK BS5 XREF Y/N) | READ | DFN | 12 | FILE, IS-A, UNSTRUCTURED READ, XREF | [2](http://localhost:9000/schema/2) | 
-C3 | __[DG CHK PAT/DIV MEANS TEST](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK PAT/DIV MEANS TEST)__ | READ | DFN, DUZ2 | 13 | FILE, P2PSEL | [40.8](http://localhost:9000/schema/40_8) | 
+C2 | [DG CHK BS5 XREF Y/N](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK BS5 XREF Y_N) | READ | DFN | 12 | FILE, IS-A, UNSTRUCTURED READ, XREF | [2](http://localhost:9000/schema/2) | 
+C3 | __[DG CHK PAT/DIV MEANS TEST](http://vistadataproject.info/artifacts/vistaRPC documentation/DG CHK PAT_DIV MEANS TEST)__ | READ | DFN, DUZ2 | 13 | FILE, P2PSEL | [40.8](http://localhost:9000/schema/40_8) | 
 C4 | [DG SENSITIVE RECORD BULLETIN](http://vistadataproject.info/artifacts/vistaRPC documentation/DG SENSITIVE RECORD BULLETIN) | CHANGE | DFN, DGOPT, ACTION | 7 | BULLETIN, FILE | [38.1](http://localhost:9000/schema/38_1) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C5 | [GMRC LIST CONSULT REQUESTS](http://vistadataproject.info/artifacts/vistaRPC documentation/GMRC LIST CONSULT REQUESTS) | READ | DFN | 4 | PARAMETER |  | 
@@ -33,11 +33,11 @@ C8 | __[GMV CLOSEST READING](http://vistadataproject.info/artifacts/vistaRPC doc
 C9 | __[GMV EXTRACT REC](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV EXTRACT REC)__ | READ | GMRVDATA | 11 | FILE, P3VITALS | [120.5](http://localhost:9000/schema/120_5), [120.51](http://localhost:9000/schema/120_51) | 
 C10 | __[GMV LATEST VM](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV LATEST VM)__ | READ | GMRDFN | 2 | P3VITALS |  | 
 C11 | __[GMV MARK ERROR](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV MARK ERROR)__ | CHANGE | GMVDATA | 8 | FILE, P3VITALS, RPCLOCKER, eHMP | [120.5](http://localhost:9000/schema/120_5) | 
-C12 | __[GMV V/M ALLDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV V/M ALLDATA)__ | READ | GMVDATA | 12 | P3VITALS, eHMP |  | 
+C12 | __[GMV V/M ALLDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/GMV V_M ALLDATA)__ | READ | GMVDATA | 12 | P3VITALS, eHMP |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C13 | __[OR GET COMBAT VET](http://vistadataproject.info/artifacts/vistaRPC documentation/OR GET COMBAT VET)__ | READ | DFN | 19 | P2PSEL, RPCLOCKER |  | 
+C13 | __[OR GET COMBAT VET](http://vistadataproject.info/artifacts/vistaRPC documentation/OR GET COMBAT VET)__ | READ | DFN | 19 | P2PSEL, P3MEDOPORDERS, RPCLOCKER |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C14 | [ORALWORD ALLWORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORALWORD ALLWORD) | READ | DFN, ORX, ORTYPE, PROV | 56 | FILE | [100](http://localhost:9000/schema/100), [101.41](http://localhost:9000/schema/101_41) | 
+C14 | __[ORALWORD ALLWORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORALWORD ALLWORD)__ | READ | DFN, ORX, ORTYPE, PROV | 56 | FILE, P3MEDOPORDERS | [100](http://localhost:9000/schema/100), [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C15 | [ORB DELETE ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORB DELETE ALERT) | CHANGE | XQAID, ORKILL | 8 | ALERT, FILE | [8992.1](http://localhost:9000/schema/8992_1) | 
 C16 | [ORB FOLLOW-UP ARRAY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORB FOLLOW-UP ARRAY) | READ | ORXQAID | 2 | DFN TO K/META, FILE | [8992](http://localhost:9000/schema/8992), [8992.1](http://localhost:9000/schema/8992_1) | 
@@ -46,7 +46,7 @@ C18 | [ORB FOLLOW-UP TYPE](http://vistadataproject.info/artifacts/vistaRPC docum
 C19 | [ORB FORWARD ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORB FORWARD ALERT) | CHANGE | ORBLST, ORBRECIP, ORBTYPE, ORBCOMNT | 4 | ALERT |  | 
 C20 | [ORB RENEW ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORB RENEW ALERT) | CHANGE | XQAID | 4 | ALERT, FILE | [8992](http://localhost:9000/schema/8992) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C21 | __[ORCDLR2 CHECK ALL LC TO WC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORCDLR2 CHECK ALL LC TO WC)__ | READ | ORL, ORDERS | 16 | FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
+C21 | __[ORCDLR2 CHECK ALL LC TO WC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORCDLR2 CHECK ALL LC TO WC)__ | READ | ORL, ORDERS | 16 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
 C22 | [ORCDLR2 CHECK ONE LC TO WC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORCDLR2 CHECK ONE LC TO WC) | READ | ORL, ORIFN, DATE, TYPE, SCH, DUR | 17 | FILE | [100](http://localhost:9000/schema/100) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C23 | [ORCHECK DELMONO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORCHECK DELMONO) | UTILITY | &nbsp; | 1 | REENTRANCY |  | 
@@ -62,12 +62,12 @@ C30 | [ORDEA ORDHINFO](http://vistadataproject.info/artifacts/vistaRPC documenta
 C31 | [ORDEA PINLKCHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORDEA PINLKCHK) | UTILITY | &nbsp; | 5 | LOCK |  | 
 C32 | [ORDEA PINLKSET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORDEA PINLKSET) | UTILITY | &nbsp; | 3 | LOCK |  | 
 C33 | [ORDEA PNDHLD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORDEA PNDHLD) | READ | ORID | 3 | FILE, IS-A | [100](http://localhost:9000/schema/100) | 
-C34 | __[ORDEA SIGINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORDEA SIGINFO)__ | READ | ORDFN, ORPROV | 18 | P3ALLERGIES, P3NVAORDERS |  | 
+C34 | __[ORDEA SIGINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORDEA SIGINFO)__ | READ | ORDFN, ORPROV | 18 | P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C35 | [ORECS01 VSITID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORECS01 VSITID) | READ | VSTSTR | 5 | FILE, IEN-LOOKUP | [9000010](http://localhost:9000/schema/9000010) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C36 | [OREVNTX LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX LIST) | READ | DFN | 12 | FILE | [100](http://localhost:9000/schema/100), [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5), [100.6](http://localhost:9000/schema/100_6) | 
-C37 | __[OREVNTX PAT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX PAT)__ | READ | DFN | 8 | FILE, P3NVAORDERS | [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5) | 
+C37 | __[OREVNTX PAT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX PAT)__ | READ | DFN | 8 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C38 | [OREVNTX1 CHGEVT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 CHGEVT) | CHANGE | NEWEVT, ORIDS | 4 | - |  | 
 C39 | [OREVNTX1 COMP](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 COMP) | READ | PTEVT | 2 | FILE | [100.2](http://localhost:9000/schema/100_2) | 
@@ -78,8 +78,8 @@ C43 | [OREVNTX1 DONE](http://vistadataproject.info/artifacts/vistaRPC documentat
 C44 | [OREVNTX1 EMPTY](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 EMPTY) | READ | PTEVT | 2 | FILE, IS-A | [100.2](http://localhost:9000/schema/100_2) | 
 C45 | [OREVNTX1 EVT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 EVT) | READ | PTEVT | 2 | FILE | [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5) | 
 C46 | [OREVNTX1 EXISTS](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 EXISTS) | READ | DFN, EVT | 4 | FILE | [100.2](http://localhost:9000/schema/100_2) | 
-C47 | __[OREVNTX1 GETSTS](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 GETSTS)__ | READ | ORDID | 3 | FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
-C48 | __[OREVNTX1 GTEVT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 GTEVT)__ | READ | PTEVT | 14 | FILE, P3NVAORDERS | [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5) | 
+C47 | __[OREVNTX1 GETSTS](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 GETSTS)__ | READ | ORDID | 3 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
+C48 | __[OREVNTX1 GTEVT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 GTEVT)__ | READ | PTEVT | 14 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100.2](http://localhost:9000/schema/100_2), [100.5](http://localhost:9000/schema/100_5) | 
 C49 | [OREVNTX1 HAVEPRT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 HAVEPRT) | READ | PTEVT | 3 | FILE | [100.2](http://localhost:9000/schema/100_2) | 
 C50 | [OREVNTX1 ISDCOD](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 ISDCOD) | READ | ORIFN | 13 | FILE, IS-A, PARAMETER | [100](http://localhost:9000/schema/100) | OREVNT EXCLUDE DGRP
 C51 | [OREVNTX1 ISHDORD](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 ISHDORD) | READ | ORID | 11 | FILE, IS-A | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01), [100.98](http://localhost:9000/schema/100_98) | 
@@ -87,15 +87,15 @@ C52 | [OREVNTX1 ISPASS](http://vistadataproject.info/artifacts/vistaRPC document
 C53 | [OREVNTX1 LOC](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 LOC) | READ | PTEVT | 3 | FILE, LOCATION | [100.2](http://localhost:9000/schema/100_2) | 
 C54 | [OREVNTX1 MATCH](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 MATCH) | READ | DFN, EVT | 7 | FILE | [2](http://localhost:9000/schema/2), [45.7](http://localhost:9000/schema/45_7) | 
 C55 | [OREVNTX1 NAME](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 NAME) | READ | PTEVT | 2 | FILE | [100.5](http://localhost:9000/schema/100_5), [100.2](http://localhost:9000/schema/100_2) | 
-C56 | __[OREVNTX1 ODPTEVID](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 ODPTEVID)__ | READ | ORID | 2 | FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.2](http://localhost:9000/schema/100_2) | 
+C56 | __[OREVNTX1 ODPTEVID](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 ODPTEVID)__ | READ | ORID | 2 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.2](http://localhost:9000/schema/100_2) | 
 C57 | [OREVNTX1 PUTEVNT](http://vistadataproject.info/artifacts/vistaRPC documentation/OREVNTX1 PUTEVNT) | CHANGE | DFN, EVT, ORIFN | 1 | FILE | [100.2](http://localhost:9000/schema/100_2) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C58 | __[ORIMO IMOLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORIMO IMOLOC)__ | READ | ORLOC, ORDFN | 14 | FILE, P3NVAORDERS | [44](http://localhost:9000/schema/44) | 
-C59 | [ORIMO IMOOD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORIMO IMOOD) | READ | ORDERID | 8 | FILE, IS-A | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
+C58 | __[ORIMO IMOLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORIMO IMOLOC)__ | READ | ORLOC, ORDFN | 14 | FILE, P3MEDOPORDERS, P3NVAORDERS | [44](http://localhost:9000/schema/44) | 
+C59 | __[ORIMO IMOOD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORIMO IMOOD)__ | READ | ORDERID | 8 | FILE, IS-A, P3MEDOPORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C60 | [ORK TRIGGER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORK TRIGGER) | READ | ORKDFN, ORKA, ORKMODE, OROIL, ORDODSG | 96 | FILE, LOGIC, PARAMETER | [100.98](http://localhost:9000/schema/100_98), [42](http://localhost:9000/schema/42) | ORK DEBUG ENABLE/DISABLE
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C61 | __[ORPRF CLEAR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF CLEAR)__ | UTILITY | &nbsp; | 2 | P2PSEL, P3ALLERGIES, P3NVAORDERS, REENTRANCY |  | 
+C61 | __[ORPRF CLEAR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF CLEAR)__ | UTILITY | &nbsp; | 2 | P2PSEL, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, REENTRANCY |  | 
 C62 | [ORPRF GETFLG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF GETFLG) | READ | PTDFN, FLAGID | 5 | REENTRANCY |  | 
 C63 | __[ORPRF HASFLG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF HASFLG)__ | READ | PTDFN | 11 | P2PSEL, REENTRANCY |  | 
 C64 | [ORPRF TRIGGER POPUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORPRF TRIGGER POPUP) | READ | PTDFN | 2 | IS-A |  | 
@@ -103,7 +103,7 @@ C64 | [ORPRF TRIGGER POPUP](http://vistadataproject.info/artifacts/vistaRPC docu
 C65 | __[ORQOR DETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQOR DETAIL)__ | READ | ORID, DFN | 6 | JLV, P3NVAORDERS, UNSTRUCTURED READ, eHMP |  | 
 C66 | [ORQOR LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQOR LIST) | READ | PATIENT, GROUP, FLAG, ORSDT, OREDT, ORXREF, GETKID | 15 | FILE | [100.98](http://localhost:9000/schema/100_98) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C67 | [ORQPT ATTENDING/PRIMARY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT ATTENDING/PRIMARY) | READ | DFN | 5 | - |  | 
+C67 | [ORQPT ATTENDING/PRIMARY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT ATTENDING_PRIMARY) | READ | DFN | 5 | - |  | 
 C68 | [ORQPT CLINIC PATIENTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT CLINIC PATIENTS) | READ | CLIN, ORBDATE, OREDATE, MAXAPPTS, APPTBGN, APPTEND | 42 | PARAMETER, QUERY |  | ORLP DEFAULT CLINIC START DATE, ORLP DEFAULT CLINIC STOP DATE
 C69 | [ORQPT DEFAULT PATIENT LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT DEFAULT PATIENT LIST) | READ | &nbsp; | 30 | FILE, PARAMETER | [100.24](http://localhost:9000/schema/100_24) | *VARIABLE*, ORLP DEFAULT CLINIC START DATE, ORLP DEFAULT CLINIC STOP DATE, ORLP DEFAULT LIST SOURCE, ORLP DEFAULT PROVIDER, ORLP DEFAULT SPECIALTY, ORLP DEFAULT TEAM, ORLP DEFAULT WARD
 C70 | [ORQPT MAKE RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT MAKE RPL) | UTILITY | ORTL | 12 | FILE, REENTRANCY | [100.21](http://localhost:9000/schema/100_21) | 
@@ -116,7 +116,7 @@ C76 | [ORQPT WARD PATIENTS](http://vistadataproject.info/artifacts/vistaRPC docu
 C77 | [ORQPT WARDRMBED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQPT WARDRMBED) | READ | DFN | 3 | FILE | [2](http://localhost:9000/schema/2), [42](http://localhost:9000/schema/42) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C78 | __[ORQQAL DETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQAL DETAIL)__ | READ | DFN, ALLR, ID | 14 | JLV, P3ALLERGIES, RPCLOCKER, UNSTRUCTURED READ |  | 
-C79 | __[ORQQAL LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQAL LIST)__ | READ | ORPT | 7 | P2PSEL, P3ALLERGIES, P3NVAORDERS, P3VITALS, RPCLOCKER |  | 
+C79 | __[ORQQAL LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQAL LIST)__ | READ | ORPT | 7 | P2PSEL, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, P3VITALS, RPCLOCKER |  | 
 C80 | [ORQQAL LIST REPORT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQAL LIST REPORT) | READ | ORPT | 17 | UNSTRUCTURED READ |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C81 | [ORQQCN ADDCMT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQCN ADDCMT) | CHANGE | ORIEN, ORCOM, ORALRT, ORALTO, ORDATE | 7 | ALERT, FILE | [123](http://localhost:9000/schema/123) | 
@@ -158,15 +158,15 @@ C113 | __[ORQQPL DETAIL](http://vistadataproject.info/artifacts/vistaRPC documen
 C114 | __[ORQQPL EDIT LOAD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL EDIT LOAD)__ | READ | DA | 6 | P3PROBLEMS |  | 
 C115 | __[ORQQPL EDIT SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL EDIT SAVE)__ | CHANGE | GMPIFN, GMPROV, GMPVAMC, UT, EDARRAY, GMPSRCH | 14 | P3PROBLEMS, RPCLOCKER, eHMP |  | 
 C116 | [ORQQPL INACTIVATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL INACTIVATE) | CHANGE | GMPIFN | 16 | - |  | 
-C117 | __[ORQQPL INIT PT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL INIT PT)__ | READ | DFN | 15 | P3PROBLEMS |  | 
+C117 | __[ORQQPL INIT PT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL INIT PT)__ | READ | DFN | 15 | P3MEDOPORDERS, P3PROBLEMS |  | 
 C118 | __[ORQQPL LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL LIST)__ | READ | DFN, STATUS | 21 | P2PSEL, P3PROBLEMS, P3VITALS |  | 
-C119 | __[ORQQPL PROB COMMENTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROB COMMENTS)__ | READ | PIFN | 8 | FILE, JLV, P3PROBLEMS | [9000011](http://localhost:9000/schema/9000011) | 
-C120 | __[ORQQPL PROBLEM LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROBLEM LIST)__ | READ | DFN, CONTEXT, ORIDT | 13 | P3PROBLEMS, RPCLOCKER |  | 
+C119 | __[ORQQPL PROB COMMENTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROB COMMENTS)__ | READ | PIFN | 8 | FILE, JLV, P3MEDOPORDERS, P3PROBLEMS | [9000011](http://localhost:9000/schema/9000011) | 
+C120 | __[ORQQPL PROBLEM LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL PROBLEM LIST)__ | READ | DFN, CONTEXT, ORIDT | 13 | P3MEDOPORDERS, P3PROBLEMS, RPCLOCKER |  | 
 C121 | __[ORQQPL REPLACE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL REPLACE)__ | CHANGE | DA | 10 | FILE, P3PROBLEMS, RPCLOCKER | [9000011](http://localhost:9000/schema/9000011) | 
 C122 | __[ORQQPL UPDATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL UPDATE)__ | CHANGE | UPDARRAY | 8 | P3PROBLEMS, RPCLOCKER |  | 
 C123 | [ORQQPL VERIFY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPL VERIFY) | CHANGE | GMPIFN | 16 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C124 | __[ORQQPP LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPP LIST)__ | READ | ORPT | 8 | P2PSEL, P3ALLERGIES, P3NVAORDERS, P3VITALS |  | 
+C124 | __[ORQQPP LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPP LIST)__ | READ | ORPT | 8 | P2PSEL, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, P3VITALS |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C125 | [ORQQPS DETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPS DETAIL) | READ | ORPT, ORMED | 53 | - |  | 
 C126 | [ORQQPS LIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQPS LIST) | READ | ORPT, ORSTRTDT, ORSTOPDT | 48 | - |  | 
@@ -200,7 +200,7 @@ C148 | [ORQQVI2 VITALS VAL & STORE](http://vistadataproject.info/artifacts/vista
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C149 | [ORQQVS DETAIL NOTES](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVS DETAIL NOTES) | READ | ORPT, ORVIEN | 19 | QUERY |  | 
 C150 | [ORQQVS DETAIL SUMMARY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVS DETAIL SUMMARY) | READ | ORPT, ORVIEN | 19 | - |  | 
-C151 | [ORQQVS VISITS/APPTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVS VISITS/APPTS) | READ | PT, SDT, EDT, DUMMY | 19 | QUERY |  | 
+C151 | [ORQQVS VISITS/APPTS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQVS VISITS_APPTS) | READ | PT, SDT, EDT, DUMMY | 19 | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C152 | [ORQQXQA PATIENT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQXQA PATIENT) | READ | ORPT | 27 | FILE | [100.9](http://localhost:9000/schema/100_9), [8992](http://localhost:9000/schema/8992) | 
 C153 | [ORQQXQA USER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORQQXQA USER) | READ | &nbsp; | 33 | FILE | [100.9](http://localhost:9000/schema/100_9), [8992](http://localhost:9000/schema/8992) | 
@@ -235,13 +235,13 @@ C174 | [ORWDAL32 SEND BULLETIN](http://vistadataproject.info/artifacts/vistaRPC 
 C175 | [ORWDBA1 GETORDX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 GETORDX) | READ | ORIEN | 16 | FILE | [100](http://localhost:9000/schema/100) | 
 C176 | [ORWDBA1 ORPKGTYP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 ORPKGTYP) | UTILITY | ORLST | 5 | FILE, FMUTILITY, HARD CODED | [9.4](http://localhost:9000/schema/9_4) | 
 C177 | [ORWDBA1 RCVORCI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 RCVORCI) | CHANGE | DIAG | 21 | - |  | 
-C178 | __[ORWDBA1 SCLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 SCLST)__ | CHANGE | DFN, ORLST | 2 | FILE, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [9.4](http://localhost:9000/schema/9_4) | OR BILLING AWARENESS BY USER
+C178 | __[ORWDBA1 SCLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA1 SCLST)__ | CHANGE | DFN, ORLST | 2 | FILE, P3MEDOPORDERS, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [9.4](http://localhost:9000/schema/9_4) | OR BILLING AWARENESS BY USER
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C179 | [ORWDBA2 GETDUDC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA2 GETDUDC) | UTILITY | ORCIEN, ORPTIEN | 21 | FILE, FMUTILITY | [100](http://localhost:9000/schema/100) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C180 | [ORWDBA4 GETTFCI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDBA4 GETTFCI) | READ | ORIEN | 8 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C181 | [ORWDCN32 DEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDCN32 DEF) | READ | WHY | 11 | IS-A |  | 
+C181 | __[ORWDCN32 DEF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDCN32 DEF)__ | READ | WHY | 11 | IS-A, P3MEDOPORDERS |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C182 | [ORWDFH ADDLATE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDFH ADDLATE) | CHANGE | ORVP, ORNP, ORL, MEAL, TIME, BAG | 15 | FILE | [101.41](http://localhost:9000/schema/101_41), [101.43](http://localhost:9000/schema/101_43) | 
 C183 | [ORWDFH CURISO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDFH CURISO) | READ | ORVP | 2 | - |  | 
@@ -253,9 +253,9 @@ C187 | [ORWDFH TXT](http://vistadataproject.info/artifacts/vistaRPC documentatio
 C188 | [ORWDPS1 DOWSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS1 DOWSCH) | READ | DFN, LOCIEN | 14 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C189 | [ORWDPS2 ADMIN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 ADMIN) | READ | DFN, SCH, OI, LOC, ADMIN | 3 | FILE, LOCATION | [101.43](http://localhost:9000/schema/101_43), [2](http://localhost:9000/schema/2), [44](http://localhost:9000/schema/44) | 
-C190 | __[ORWDPS2 CHKGRP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 CHKGRP)__ | READ | ORIFN | 17 | COMPUTED, FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
-C191 | [ORWDPS2 CHKPI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 CHKPI) | READ | ODIFN | 7 | FILE | [100](http://localhost:9000/schema/100) | 
-C192 | [ORWDPS2 MAXREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 MAXREF) | READ | PAT, DRG, SUP, OI, OUT | 8 | - |  | 
+C190 | __[ORWDPS2 CHKGRP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 CHKGRP)__ | READ | ORIFN | 17 | COMPUTED, FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
+C191 | __[ORWDPS2 CHKPI](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 CHKPI)__ | READ | ODIFN | 7 | FILE, P3MEDOPORDERS | [100](http://localhost:9000/schema/100) | 
+C192 | __[ORWDPS2 MAXREF](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 MAXREF)__ | READ | PAT, DRG, SUP, OI, OUT | 8 | P3MEDOPORDERS |  | 
 C193 | [ORWDPS2 QTY2DAY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 QTY2DAY) | READ | QTY, UPD, SCH, DUR, PAT, DRG | 13 | COMPUTED |  | 
 C194 | [ORWDPS2 REQST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS2 REQST) | READ | DFN, SCH, OI, LOC, TXT | 5 | FILE, LOCATION | [101.43](http://localhost:9000/schema/101_43), [44](http://localhost:9000/schema/44) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -264,9 +264,9 @@ C196 | [ORWDPS32 SCSTS](http://vistadataproject.info/artifacts/vistaRPC document
 C197 | [ORWDPS33 COMPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS33 COMPLOC) | READ | ORID, LOC | 2 | FILE, IS-A, LOCATION | [100](http://localhost:9000/schema/100) | 
 C198 | [ORWDPS33 IVDOSFRM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS33 IVDOSFRM) | READ | ORDERIDS, ALLIV | 12 | FILE | [101.43](http://localhost:9000/schema/101_43) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C199 | __[ORWDPS4 CPINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 CPINFO)__ | CHANGE | ORINFO | 9 | P3NVAORDERS |  | 
+C199 | __[ORWDPS4 CPINFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 CPINFO)__ | CHANGE | ORINFO | 9 | P3MEDOPORDERS, P3NVAORDERS |  | 
 C200 | [ORWDPS4 CPLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 CPLST) | READ | PTIFN, ORIFNS | 12 | FILE | [100](http://localhost:9000/schema/100), [9.4](http://localhost:9000/schema/9_4) | 
-C201 | __[ORWDPS4 IPOD4OP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 IPOD4OP)__ | READ | ORID | 12 | FILE, IS-A, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [9.4](http://localhost:9000/schema/9_4) | 
+C201 | __[ORWDPS4 IPOD4OP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 IPOD4OP)__ | READ | ORID | 12 | FILE, IS-A, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [9.4](http://localhost:9000/schema/9_4) | 
 C202 | [ORWDPS4 ISUDIV](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 ISUDIV) | READ | ORIFN | 5 | FILE, IS-A | [100](http://localhost:9000/schema/100), [101.43](http://localhost:9000/schema/101_43) | 
 C203 | [ORWDPS4 UPDTDG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDPS4 UPDTDG) | CHANGE | ORID | 4 | FILE | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -278,32 +278,32 @@ C206 | [ORWDX CHANGE](http://vistadataproject.info/artifacts/vistaRPC documentat
 C207 | [ORWDX DLGID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DLGID) | READ | ORIFN | 2 | - |  | 
 C208 | [ORWDX DLGQUIK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX DLGQUIK) | READ | QO | 1 | DFN TO K/META |  | 
 C209 | [ORWDX FORMID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX FORMID) | READ | ORIFN | 4 | DFN TO K/META |  | 
-C210 | __[ORWDX LOCK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOCK)__ | UTILITY | DFN | 1 | LOCK, P3ALLERGIES, P3NVAORDERS |  | 
-C211 | __[ORWDX LOCK ORDER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOCK ORDER)__ | UTILITY | ORIFN | 1 | LOCK, P3NVAORDERS, eHMP |  | 
-C212 | __[ORWDX SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SAVE)__ | CHANGE | ORVP, ORNP, ORL, DLG, ORDG, ORIT, ORIFN, ORDIALOG, ORDEA, ORAPPT, ORSRC, OREVTDF | 56 | FILE, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [101.43](http://localhost:9000/schema/101_43), [2](http://localhost:9000/schema/2), [9.4](http://localhost:9000/schema/9_4) | 
-C213 | __[ORWDX SEND](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SEND)__ | CHANGE | DFN, ORNP, ORL, ES, ORWREC | &nbsp; | P3NVAORDERS, eHMP |  | 
+C210 | __[ORWDX LOCK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOCK)__ | UTILITY | DFN | 1 | LOCK, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS |  | 
+C211 | __[ORWDX LOCK ORDER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX LOCK ORDER)__ | UTILITY | ORIFN | 1 | LOCK, P3MEDOPORDERS, P3NVAORDERS, eHMP |  | 
+C212 | __[ORWDX SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SAVE)__ | CHANGE | ORVP, ORNP, ORL, DLG, ORDG, ORIT, ORIFN, ORDIALOG, ORDEA, ORAPPT, ORSRC, OREVTDF | 56 | FILE, P3MEDOPORDERS, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [101.43](http://localhost:9000/schema/101_43), [2](http://localhost:9000/schema/2), [9.4](http://localhost:9000/schema/9_4) | 
+C213 | __[ORWDX SEND](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SEND)__ | CHANGE | DFN, ORNP, ORL, ES, ORWREC | &nbsp; | P3MEDOPORDERS, P3NVAORDERS, eHMP |  | 
 C214 | [ORWDX SENDED](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX SENDED) | CHANGE | ORIENS, TS, LOC | 26 | FILE | [100](http://localhost:9000/schema/100) | 
 C215 | [ORWDX UNLKOTH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX UNLKOTH) | UTILITY | ORIFN | 2 | LOCK |  | 
-C216 | __[ORWDX UNLOCK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX UNLOCK)__ | UTILITY | DFN | 1 | LOCK, P3ALLERGIES, P3NVAORDERS |  | 
-C217 | __[ORWDX UNLOCK ORDER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX UNLOCK ORDER)__ | UTILITY | ORIFN | 1 | LOCK, P3NVAORDERS, eHMP |  | 
+C216 | __[ORWDX UNLOCK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX UNLOCK)__ | UTILITY | DFN | 1 | LOCK, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS |  | 
+C217 | __[ORWDX UNLOCK ORDER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX UNLOCK ORDER)__ | UTILITY | ORIFN | 1 | LOCK, P3MEDOPORDERS, P3NVAORDERS, eHMP |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C218 | [ORWDX1 DCORIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 DCORIG) | CHANGE | ORIEN | 1 | - |  | 
-C219 | __[ORWDX1 DCREN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 DCREN)__ | CHANGE | ORYARR | 18 | FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01) | 
+C219 | __[ORWDX1 DCREN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 DCREN)__ | CHANGE | ORYARR | 18 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01) | 
 C220 | [ORWDX1 ORDMATCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 ORDMATCH) | UTILITY | DFN, ORYARR | 12 | FILE, IS-A | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01) | 
-C221 | [ORWDX1 PATWARD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 PATWARD) | READ | DFN | 5 | FILE | [2](http://localhost:9000/schema/2), [42](http://localhost:9000/schema/42) | 
-C222 | [ORWDX1 STCHANGE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 STCHANGE) | UTILITY | DFN, ORYARR | 7 | IS-A |  | 
+C221 | __[ORWDX1 PATWARD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 PATWARD)__ | READ | DFN | 5 | FILE, P3MEDOPORDERS | [2](http://localhost:9000/schema/2), [42](http://localhost:9000/schema/42) | 
+C222 | __[ORWDX1 STCHANGE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDX1 STCHANGE)__ | UTILITY | DFN, ORYARR | 7 | IS-A, P3MEDOPORDERS |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C223 | [ORWDXA ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA ALERT) | CHANGE | ORID, ORDUZ | 3 | - |  | 
 C224 | [ORWDXA COMPLETE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA COMPLETE) | CHANGE | ORID, ESCODE | 3 | - |  | 
-C225 | __[ORWDXA DC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA DC)__ | CHANGE | ORID, ORNP, ORL, REASON, DCORIG, ISNEWORD | 59 | FILE, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [100.2](http://localhost:9000/schema/100_2), [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
+C225 | __[ORWDXA DC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA DC)__ | CHANGE | ORID, ORNP, ORL, REASON, DCORIG, ISNEWORD | 59 | FILE, P3MEDOPORDERS, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [100.2](http://localhost:9000/schema/100_2), [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
 C226 | [ORWDXA DCREQIEN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA DCREQIEN) | READ | &nbsp; | 1 | FILE | [100.03](http://localhost:9000/schema/100_03) | 
 C227 | [ORWDXA FLAG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA FLAG) | CHANGE | ORIFN, OREASON, ORNP | 9 | FILE | [100](http://localhost:9000/schema/100) | 
 C228 | [ORWDXA FLAGTXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA FLAGTXT) | READ | ORID | 4 | FILE | [100](http://localhost:9000/schema/100), [200](http://localhost:9000/schema/200) | 
 C229 | [ORWDXA HOLD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA HOLD) | CHANGE | ORID, ORNP | 3 | - |  | 
-C230 | __[ORWDXA OFCPLX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA OFCPLX)__ | READ | ORID, PRTORDER | 20 | FILE, IS-A, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
+C230 | __[ORWDXA OFCPLX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA OFCPLX)__ | READ | ORID, PRTORDER | 20 | FILE, IS-A, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
 C231 | [ORWDXA UNFLAG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA UNFLAG) | CHANGE | ORIFN, OREASON | 7 | FILE | [100](http://localhost:9000/schema/100) | 
 C232 | [ORWDXA UNHOLD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA UNHOLD) | CHANGE | ORID, ORNP | 3 | - |  | 
-C233 | __[ORWDXA VALID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA VALID)__ | UTILITY | ORID, ACTION, ORNP, ORWNAT | 38 | FILE, IS-A, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [101.41](http://localhost:9000/schema/101_41) | 
+C233 | __[ORWDXA VALID](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA VALID)__ | UTILITY | ORID, ACTION, ORNP, ORWNAT | 38 | FILE, IS-A, P3MEDOPORDERS, P3NVAORDERS, eHMP | [100](http://localhost:9000/schema/100), [101.41](http://localhost:9000/schema/101_41) | 
 C234 | [ORWDXA VERIFY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA VERIFY) | CHANGE | ORID, ESCODE, ORVER | 7 | - |  | 
 C235 | [ORWDXA WCGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA WCGET) | READ | ORID | 2 | FILE | [100](http://localhost:9000/schema/100) | 
 C236 | [ORWDXA WCPUT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXA WCPUT) | CHANGE | ORID, WCLST | 3 | - |  | 
@@ -313,25 +313,25 @@ C238 | [ORWDXC DELAY](http://vistadataproject.info/artifacts/vistaRPC documentat
 C239 | [ORWDXC DELORD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC DELORD) | CHANGE | ORIFN | 11 | REENTRANCY |  | 
 C240 | [ORWDXC DISPLAY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC DISPLAY) | UTILITY | DFN, FID | 4 | PARAMETER, REENTRANCY |  | 
 C241 | [ORWDXC SAVECHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC SAVECHK) | UTILITY | ORVP, RSN, LST | 4 | REENTRANCY |  | 
-C242 | __[ORWDXC SESSION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC SESSION)__ | UTILITY | ORVP, ORLST | 12 | P3NVAORDERS, REENTRANCY |  | 
+C242 | __[ORWDXC SESSION](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXC SESSION)__ | UTILITY | ORVP, ORLST | 12 | P3MEDOPORDERS, P3NVAORDERS, REENTRANCY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C243 | [ORWDXM AUTOACK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM AUTOACK) | CHANGE | ORVP, ORNP, ORL, ORIT | 11 | FILE | [101.41](http://localhost:9000/schema/101_41) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C244 | __[ORWDXM1 BLDQRSP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM1 BLDQRSP)__ | UTILITY | ORIT, FLDS, ISIMO, ENCLOC | 151 | FILE, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.5](http://localhost:9000/schema/100_5), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [2](http://localhost:9000/schema/2), [44](http://localhost:9000/schema/44), [9.4](http://localhost:9000/schema/9_4) | 
+C244 | __[ORWDXM1 BLDQRSP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM1 BLDQRSP)__ | UTILITY | ORIT, FLDS, ISIMO, ENCLOC | 151 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100), [100.5](http://localhost:9000/schema/100_5), [100.98](http://localhost:9000/schema/100_98), [101.41](http://localhost:9000/schema/101_41), [2](http://localhost:9000/schema/2), [44](http://localhost:9000/schema/44), [9.4](http://localhost:9000/schema/9_4) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C245 | __[ORWDXM2 CLRRCL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM2 CLRRCL)__ | UTILITY | &nbsp; | 2 | P3NVAORDERS, REENTRANCY |  | 
+C245 | __[ORWDXM2 CLRRCL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXM2 CLRRCL)__ | UTILITY | &nbsp; | 2 | P3MEDOPORDERS, P3NVAORDERS, REENTRANCY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C246 | [ORWDXR CANRN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR CANRN) | READ | ORID | 20 | COMPUTED, FILE, IS-A | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01) | 
-C247 | [ORWDXR GETPKG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR GETPKG) | READ | IFN | 5 | - |  | 
+C247 | __[ORWDXR GETPKG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR GETPKG)__ | READ | IFN | 5 | P3MEDOPORDERS |  | 
 C248 | [ORWDXR GTORITM](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR GTORITM) | READ | ORIFN | 2 | - |  | 
-C249 | __[ORWDXR ISCPLX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ISCPLX)__ | READ | ORID | 14 | COMPUTED, FILE, IS-A, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
+C249 | __[ORWDXR ISCPLX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ISCPLX)__ | READ | ORID | 14 | COMPUTED, FILE, IS-A, P3MEDOPORDERS, P3NVAORDERS | [100](http://localhost:9000/schema/100) | 
 C250 | [ORWDXR ISNOW](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ISNOW) | READ | ORID | 7 | COMPUTED, FILE, IS-A | [100](http://localhost:9000/schema/100) | 
-C251 | [ORWDXR ISREL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ISREL) | READ | ORIFN | 2 | IS-A |  | 
+C251 | __[ORWDXR ISREL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ISREL)__ | READ | ORIFN | 2 | IS-A, P3MEDOPORDERS |  | 
 C252 | [ORWDXR ORCPLX](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR ORCPLX) | READ | ORID, ORACT | 18 | FILE | [100](http://localhost:9000/schema/100) | 
 C253 | [ORWDXR RENEW](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR RENEW) | CHANGE | ORIFN, ORVP, ORNP, ORL, FLDS, CPLX, ORAPPT | 56 | FILE | [100](http://localhost:9000/schema/100), [101.41](http://localhost:9000/schema/101_41), [101.43](http://localhost:9000/schema/101_43) | 
-C254 | [ORWDXR RNWFLDS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR RNWFLDS) | READ | ORIFN | 32 | FILE | [100](http://localhost:9000/schema/100) | 
+C254 | __[ORWDXR RNWFLDS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR RNWFLDS)__ | READ | ORIFN | 32 | FILE, P3MEDOPORDERS | [100](http://localhost:9000/schema/100) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C255 | [ORWDXR01 CANCHG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 CANCHG) | READ | ORIFN, TXTOD | 16 | COMPUTED, FILE, IS-A | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01), [100.98](http://localhost:9000/schema/100_98) | 
+C255 | __[ORWDXR01 CANCHG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 CANCHG)__ | READ | ORIFN, TXTOD | 16 | COMPUTED, FILE, IS-A, P3MEDOPORDERS | [100](http://localhost:9000/schema/100), [100.01](http://localhost:9000/schema/100_01), [100.98](http://localhost:9000/schema/100_98) | 
 C256 | [ORWDXR01 OXDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 OXDATA) | READ | ORIEN | 32 | FILE | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
 C257 | [ORWDXR01 SAVCHG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWDXR01 SAVCHG) | CHANGE | ORID, PARM1, PARM2, TXTOD | 16 | FILE | [100](http://localhost:9000/schema/100) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -372,7 +372,7 @@ C285 | [ORWOR ACTION TEXT](http://vistadataproject.info/artifacts/vistaRPC docum
 C286 | [ORWOR RESULT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR RESULT) | READ | DFN, ORID, ID | 5 | - |  | 
 C287 | [ORWOR RESULT HISTORY](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR RESULT HISTORY) | READ | DFN, ORID, ID | 6 | - |  | 
 C288 | [ORWOR SHEETS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR SHEETS) | READ | ORVP | 14 | FILE | [100](http://localhost:9000/schema/100), [2](http://localhost:9000/schema/2), [45.7](http://localhost:9000/schema/45_7) | 
-C289 | __[ORWOR UNSIGN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR UNSIGN)__ | READ | ORVP, HAVE | 36 | FILE, P2PSEL, P3ALLERGIES, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [103](http://localhost:9000/schema/103), [9.4](http://localhost:9000/schema/9_4) | OR UNSIGNED ORDERS ON EXIT
+C289 | __[ORWOR UNSIGN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR UNSIGN)__ | READ | ORVP, HAVE | 36 | FILE, P2PSEL, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98), [103](http://localhost:9000/schema/103), [9.4](http://localhost:9000/schema/9_4) | OR UNSIGNED ORDERS ON EXIT
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C290 | [ORWOR1 CHKDIG](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR1 CHKDIG) | READ | ORDER | 3 | FILE | [100](http://localhost:9000/schema/100) | 
 C291 | [ORWOR1 GETDSCH](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWOR1 GETDSCH) | READ | ORDER | 3 | FILE | [100](http://localhost:9000/schema/100) | 
@@ -385,18 +385,18 @@ C296 | [ORWORB AUTOUNFLAG ORDERS](http://vistadataproject.info/artifacts/vistaRP
 C297 | __[ORWORB FASTUSER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB FASTUSER)__ | READ | &nbsp; | 59 | FILE, P2PSEL | [2](http://localhost:9000/schema/2) | 
 C298 | [ORWORB GET TIU ALERT INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GET TIU ALERT INFO) | READ | XQAID | 16 | FILE | [8925](http://localhost:9000/schema/8925) | 
 C299 | [ORWORB GETDATA](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB GETDATA) | READ | XQAID | 9 | FILE | [8992](http://localhost:9000/schema/8992) | 
-C300 | __[ORWORB KILL EXPIR MED ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL EXPIR MED ALERT)__ | CHANGE | ORDFN | 10 | FILE, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
+C300 | __[ORWORB KILL EXPIR MED ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL EXPIR MED ALERT)__ | CHANGE | ORDFN | 10 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
 C301 | [ORWORB KILL EXPIR OI ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL EXPIR OI ALERT) | CHANGE | ORDFN, ORNIFN | 8 | FILE | [100.9](http://localhost:9000/schema/100_9) | 
-C302 | __[ORWORB KILL UNSIG ORDERS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNSIG ORDERS ALERT)__ | CHANGE | ORVP | 2 | P3NVAORDERS |  | 
-C303 | __[ORWORB KILL UNVER MEDS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNVER MEDS ALERT)__ | CHANGE | ORDFN | 14 | FILE, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
-C304 | __[ORWORB KILL UNVER ORDERS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNVER ORDERS ALERT)__ | CHANGE | ORDFN | 14 | FILE, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
+C302 | __[ORWORB KILL UNSIG ORDERS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNSIG ORDERS ALERT)__ | CHANGE | ORVP | 2 | P3MEDOPORDERS, P3NVAORDERS |  | 
+C303 | __[ORWORB KILL UNVER MEDS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNVER MEDS ALERT)__ | CHANGE | ORDFN | 14 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
+C304 | __[ORWORB KILL UNVER ORDERS ALERT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB KILL UNVER ORDERS ALERT)__ | CHANGE | ORDFN | 14 | FILE, P3MEDOPORDERS, P3NVAORDERS | [100.9](http://localhost:9000/schema/100_9) | 
 C305 | [ORWORB TEXT FOLLOWUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB TEXT FOLLOWUP) | READ | DFN, NOTIF, XQADATA | 1 | - |  | 
 C306 | [ORWORB UNSIG ORDERS FOLLOWUP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORB UNSIG ORDERS FOLLOWUP) | CHANGE | XQAID | 17 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C307 | __[ORWORR AGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR AGET)__ | READ | DFN, FILTER, GROUPS, DTFROM, DTTHRU, EVENT, ORRECIP | 17 | FILE, P3NVAORDERS, QUERY | [2](http://localhost:9000/schema/2) | 
+C307 | __[ORWORR AGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR AGET)__ | READ | DFN, FILTER, GROUPS, DTFROM, DTTHRU, EVENT, ORRECIP | 17 | FILE, P3MEDOPORDERS, P3NVAORDERS, QUERY | [2](http://localhost:9000/schema/2) | 
 C308 | [ORWORR GET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GET) | READ | DFN, FILTER, GROUPS | 10 | QUERY |  | 
-C309 | __[ORWORR GET4LST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GET4LST)__ | UTILITY | TXTVW, ORYD, IFNLST | 1 | FMUTILITY, P3NVAORDERS |  | 
-C310 | [ORWORR GETBYIFN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GETBYIFN) | READ | IFN | 6 | FILE | [100](http://localhost:9000/schema/100) | 
+C309 | __[ORWORR GET4LST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GET4LST)__ | UTILITY | TXTVW, ORYD, IFNLST | 1 | FMUTILITY, P3MEDOPORDERS, P3NVAORDERS |  | 
+C310 | __[ORWORR GETBYIFN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GETBYIFN)__ | READ | IFN | 6 | FILE, P3MEDOPORDERS | [100](http://localhost:9000/schema/100) | 
 C311 | [ORWORR GETTXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR GETTXT) | READ | IFN | 2 | - |  | 
 C312 | [ORWORR RGET](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWORR RGET) | READ | DFN, FILTER, GROUPS, DTFROM, DTTHRU, EVENT | 3 | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
@@ -409,38 +409,38 @@ C318 | [ORWPCE HASVISIT](http://vistadataproject.info/artifacts/vistaRPC documen
 C319 | [ORWPCE NOTEVSTR](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE NOTEVSTR) | READ | IEN | 4 | FILE | [8925](http://localhost:9000/schema/8925) | 
 C320 | [ORWPCE PCE4NOTE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE PCE4NOTE) | READ | IEN, DFN, VSITSTR | 172 | FILE | [200](http://localhost:9000/schema/200), [44](http://localhost:9000/schema/44) | 
 C321 | [ORWPCE SAVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SAVE) | CHANGE | PCELIST, NOTEIEN, ORLOC | 11 | - |  | 
-C322 | __[ORWPCE SCDIS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SCDIS)__ | READ | DFN | 9 | FILE, P3ALLERGIES, P3NVAORDERS | [2](http://localhost:9000/schema/2), [31](http://localhost:9000/schema/31), [391](http://localhost:9000/schema/391) | 
+C322 | __[ORWPCE SCDIS](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SCDIS)__ | READ | DFN | 9 | FILE, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS | [2](http://localhost:9000/schema/2), [31](http://localhost:9000/schema/31), [391](http://localhost:9000/schema/391) | 
 C323 | [ORWPCE SCSEL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE SCSEL) | READ | DFN, ATM, LOC, VST | 3 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
-C324 | __[ORWPS ACTIVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS ACTIVE)__ | READ | DFN, USER, VIEW, UPDATE | 54 | FILE, P3ALLERGIES, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [44](http://localhost:9000/schema/44) | OR MEDS TAB SORT, ORCH CONTEXT MEDS
+C324 | __[ORWPS ACTIVE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS ACTIVE)__ | READ | DFN, USER, VIEW, UPDATE | 54 | FILE, P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, PARAMETER | [100](http://localhost:9000/schema/100), [44](http://localhost:9000/schema/44) | OR MEDS TAB SORT, ORCH CONTEXT MEDS
 C325 | __[ORWPS COVER](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS COVER)__ | READ | DFN, FILTER | 12 | P2PSEL, P3VITALS, QUERY |  | 
-C326 | [ORWPS DETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS DETAIL) | READ | DFN, ID | 5 | JLV |  | 
-C327 | [ORWPS MEDHIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS MEDHIST) | READ | DFN, ORIFN | 21 | FILE | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
+C326 | __[ORWPS DETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS DETAIL)__ | READ | DFN, ID | 5 | JLV, P3MEDOPORDERS |  | 
+C327 | __[ORWPS MEDHIST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS MEDHIST)__ | READ | DFN, ORIFN | 21 | FILE, P3MEDOPORDERS | [100](http://localhost:9000/schema/100), [100.98](http://localhost:9000/schema/100_98) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C328 | [ORWPS1 REFILL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPS1 REFILL) | CHANGE | ORDERID, REFLOC, ORVP, ORNP, ORL | 4 | - |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C329 | [ORWPT ADMITLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT ADMITLST) | READ | DFN | 10 | FILE, JLV | [405](http://localhost:9000/schema/405), [405.1](http://localhost:9000/schema/405_1), [42](http://localhost:9000/schema/42) | 
 C330 | [ORWPT APPTLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT APPTLST) | READ | DFN | 9 | LOCATION |  | 
 C331 | [ORWPT BYWARD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT BYWARD) | READ | WARD | 7 | FILE, LOCATION | [2](http://localhost:9000/schema/2) | 
-C332 | __[ORWPT CWAD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT CWAD)__ | READ | DFN | 1 | P3ALLERGIES, P3NVAORDERS, eHMP |  | 
+C332 | __[ORWPT CWAD](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT CWAD)__ | READ | DFN | 1 | P3ALLERGIES, P3MEDOPORDERS, P3NVAORDERS, eHMP |  | 
 C333 | __[ORWPT DIEDON](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT DIEDON)__ | READ | DFN | 1 | FILE, P2PSEL, RPCLOCKER | [2](http://localhost:9000/schema/2) | 
 C334 | [ORWPT DISCHARGE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT DISCHARGE) | READ | DFN, ADMITDT | 5 | - |  | 
 C335 | __[ORWPT ENCTITL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT ENCTITL)__ | READ | DFN, LOC, PROV | 3 | FILE, P2PSEL, P3NVAORDERS, P3PROBLEMS, P3VITALS | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200), [44](http://localhost:9000/schema/44) | 
 C336 | [ORWPT FULLSSN](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT FULLSSN) | READ | ID | 4 | FILE, QUERY | [2](http://localhost:9000/schema/2) | 
 C337 | [ORWPT FULLSSN RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT FULLSSN RPL) | READ | ID | 13 | FILE, QUERY | [100.21](http://localhost:9000/schema/100_21), [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
 C338 | __[ORWPT ID INFO](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT ID INFO)__ | READ | DFN | 3 | FILE, P2PSEL, RPCLOCKER | [2](http://localhost:9000/schema/2) | 
-C339 | __[ORWPT INPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT INPLOC)__ | READ | DFN | 7 | FILE, P3NVAORDERS, RPCLOCKER | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
+C339 | __[ORWPT INPLOC](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT INPLOC)__ | READ | DFN | 7 | FILE, P3MEDOPORDERS, P3NVAORDERS, RPCLOCKER | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
 C340 | [ORWPT LAST5](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LAST5) | READ | ID | 4 | FILE, QUERY | [2](http://localhost:9000/schema/2) | 
 C341 | [ORWPT LAST5 RPL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LAST5 RPL) | READ | ID | 10 | FILE, QUERY | [100.21](http://localhost:9000/schema/100_21), [200](http://localhost:9000/schema/200) | 
 C342 | __[ORWPT LIST ALL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT LIST ALL)__ | READ | FROM, DIR | 8 | FILE, P2PSEL, RPCLOCKER | [2](http://localhost:9000/schema/2) | 
 C343 | [ORWPT PTINQ](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT PTINQ) | READ | DFN | 3 | JLV, RPCLOCKER, UNSTRUCTURED READ |  | 
 C344 | [ORWPT SELCHK](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SELCHK) | CHANGE | DFN | 1 | - |  | 
-C345 | __[ORWPT SELECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SELECT)__ | CHANGE | DFN | 22 | BULLETIN, FILE, JLV, P2PSEL, P3NVAORDERS, REENTRANCY | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
+C345 | __[ORWPT SELECT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SELECT)__ | CHANGE | DFN | 22 | BULLETIN, FILE, JLV, P2PSEL, P3MEDOPORDERS, P3NVAORDERS, REENTRANCY | [2](http://localhost:9000/schema/2), [405](http://localhost:9000/schema/405), [42](http://localhost:9000/schema/42) | 
 C346 | __[ORWPT SHARE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT SHARE)__ | UTILITY | IP, HWND, DFN | 3 | P2PSEL, REENTRANCY |  | 
 C347 | __[ORWPT TOP](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT TOP)__ | READ | &nbsp; | 3 | FILE, P2PSEL, REENTRANCY | [2](http://localhost:9000/schema/2) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C348 | [ORWPT1 PCDETAIL](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT1 PCDETAIL) | READ | PATIENT | 50 | FILE | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200), [404.51](http://localhost:9000/schema/404_51) | 
-C349 | __[ORWPT1 PRCARE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT1 PRCARE)__ | READ | PATIENT | 13 | FILE, JLV, P2PSEL, P3NVAORDERS, RPCLOCKER | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
+C349 | __[ORWPT1 PRCARE](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT1 PRCARE)__ | READ | PATIENT | 13 | FILE, JLV, P2PSEL, P3MEDOPORDERS, P3NVAORDERS, RPCLOCKER | [2](http://localhost:9000/schema/2), [200](http://localhost:9000/schema/200) | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C350 | [ORWPT16 ADMITLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT16 ADMITLST) | READ | DFN | 9 | FILE | [405](http://localhost:9000/schema/405), [405.1](http://localhost:9000/schema/405_1), [42](http://localhost:9000/schema/42) | 
 C351 | [ORWPT16 APPTLST](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPT16 APPTLST) | READ | DFN | 6 | - |  | 
@@ -528,4 +528,4 @@ C418 | [YS GAF API](http://vistadataproject.info/artifacts/vistaRPC documentatio
 
 
 
-<small>Generated on 2017-02-08</small>
+<small>Generated on 2017-03-17</small>

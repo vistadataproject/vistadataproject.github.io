@@ -5,7 +5,7 @@ title: VDP Year 2 - CPRS RPC Interface Breakdown TOC
 
 # CPRS RPC Interface Breakdown
 
-1050 RPCs, 30 (2.9%) locked, which divide into four groups ...
+1050 RPCs, 30 (2.9%) emulated, which divide into four groups ...
 
 Name | Number
 --- | ---
@@ -20,4 +20,4 @@ Most - 749 (71.3%) - of the interface's RPCs _READ_ data.
 
 
 
-<small>Generated on 2017-02-08</small>
+<small>Generated on 2017-03-17</small>

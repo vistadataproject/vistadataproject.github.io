@@ -6,7 +6,7 @@ title: VDP Year 2 - CPRS RPC Interface, Authentication Slice Breakdown
 
 # [All](bdStart) &#8594; Authentication (11)
 
-Authentication RPCs aren't locked over MVDM directly - they are implemented in rpcServer and rpcRunner.
+Authentication RPCs aren't emulated over MVDM directly - they are implemented in rpcServer and rpcRunner.
 
 \# | Name
 --- | ---
@@ -25,4 +25,4 @@ A11 | [XWB IM HERE](http://vistadataproject.info/artifacts/vistaRPC documentatio
 
 
 
-<small>Generated on 2017-02-08</small>
+<small>Generated on 2017-03-17</small>
