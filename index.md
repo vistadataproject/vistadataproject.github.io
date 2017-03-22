@@ -13,7 +13,7 @@ The VISTA Data Project is a new data-centric, model-driven approach to VISTA mas
 
 Now, for the first time, VISTA's native data model - the __VISTA Data Model__ (VDM)- will be comprehensively exposed, enriched, and operationalized as a single, secure, symmetric read-write, server-side interface to all clinical operational VISTA data.   The VISTA Data Model is in turn normalized across all local VISTA system models creating a national, standardized __Master VISTA Data Model__ (MVDM), alowing  transactions and interfacing across all VA VISTA systems using a single, standard, secure, service-based mechanism, __MVDM Services__: 
 
-![vdp-transition -width70](assets/vdp-transition-20170315.png )
+![vdp-transition -width70](assets/vdp-transition-2017032.png )
 
 *The figure summarizes this evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based master data model-driven interface__.*
 
