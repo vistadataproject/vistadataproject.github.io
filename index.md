@@ -15,7 +15,7 @@ Now, for the first time, VISTA's native transactional data model - the __VISTA D
 
 The VISTA Data Model is in turn normalized across all local VISTA system models creating a national, standardized __Master VISTA Data Model__ (MVDM), alowing  transactions and interfacing across all VA VISTA systems with a single, standard, secure, service-based mechanism, __MVDM Services__: 
 
-![vdp-transition -width70](assets/vdp-transition-20170322.png )
+![vdp-transition -width70](assets/vdp-transition-20170322b.png )
 
 *The figure summarizes this evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based master data model-driven interface__.*
 
