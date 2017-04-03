@@ -21,4 +21,4 @@ title: VDM documentation
 | type_of_agreement | 2 | Type Of Agreement |  | ENUMERATION |  |  | {::nomarkdown}<dl><dt>S</dt><dd>SHARING</dd><dt>C</dt><dd>CONTRACT</dd></dl>{:/} | 
 | inactivation_date | 3 | Inactivation Date |  | DATE-TIME |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

@@ -112,4 +112,4 @@ title: VDM documentation
 | plan_cum_disch_month | .01 | Plan Cum Disch Month | {::nomarkdown}This sub-field of the multiple 'Plan Cum Disch Month' field is also  <br/>a multiple and contains a set of codes for the month for which <br/>you would like to enter the planned cumulative discharges.{:/} | ENUMERATION |  | REQUIRED | {::nomarkdown}<dl><dt>6</dt><dd>MAR</dd><dt>5</dt><dd>FEB</dd><dt>11</dt><dd>AUG</dd><dt>12</dt><dd>SEP</dd><dt>7</dt><dd>APR</dd><dt>9</dt><dd>JUN</dd><dt>10</dt><dd>JUL</dd><dt>4</dt><dd>JAN</dd><dt>8</dt><dd>MAY</dd><dt>2</dt><dd>NOV</dd><dt>3</dt><dd>DEC</dd><dt>1</dt><dd>OCT</dd></dl>{:/} | 
 | planned_discharges_for_month | 1 | Planned Discharges For Month | {::nomarkdown}This sub-field of the multiple 'Plan Cum Disch Month' field contains <br/>the number of discharges planned for the month selected from 0 to 9999.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

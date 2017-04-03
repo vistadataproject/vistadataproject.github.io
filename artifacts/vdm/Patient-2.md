@@ -1231,4 +1231,4 @@ title: VDM documentation
 | reference_id_qualifier | .03 | Reference Id Qualifier | {::nomarkdown}Code describing the type of reference id.{:/} | POINTER |  |  | X12_271_Reference_Identification-365_028 | 
 | description | .04 | Description | {::nomarkdown}Short description of reference id.{:/} | STRING |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

@@ -402,4 +402,4 @@ title: VDM documentation
 | schedule_time | .01 | Schedule Time | {::nomarkdown}Time slots or pattern scheduled for a specific clinic.{:/} | STRING |  | REQUIRED |  | 
 | number_of_patients | 1 | Number Of Patients | {::nomarkdown}Number of patients allowed to be booked for time slots.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

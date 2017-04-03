@@ -243,4 +243,4 @@ title: VDM documentation
 | sample_wkld_code_number | 1 | Sample Wkld Code # | {::nomarkdown} This field contains the actual WKLD Code number.{:/} | STRING |  |  |  | 
 | test_multiply_factor | 2 | Test Multiply Factor | {::nomarkdown} If this particular WKLD code should be multiplied in order to receive<br/>proper count. Enter that number here. The default is 1.<br/>  NOTE: This field is identical the field found in the Verify<br/>WKLD code field sub file.{:/} | NUMERIC |  |  |  | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

@@ -253,4 +253,4 @@ title: VDM documentation
 | window_dns_name | 1 | Window Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a window route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 | mail_dns_name | 2 | Mail Dns Name | {::nomarkdown}This is the name of the automated dispensing device associated with this <br/>site. Orders with a mail route will be sent to this ADD.{:/} | POINTER |  |  | Pharmacy_Automated_Dispensing_Devices-52_53 | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

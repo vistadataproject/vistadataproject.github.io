@@ -89,4 +89,4 @@ title: VDM documentation
 | code | 3 | Code | {::nomarkdown}This is the code assigned to this item by the authoritative package from a<br/>national standard coding system such as CPT or SNOMED.{:/} | STRING |  |  |  | 
 | coding_system | 4 | Coding System | {::nomarkdown}This is the system used to generate the code assigned in field 3.{:/} | ENUMERATION |  |  | {::nomarkdown}<dl><dt>NDF</dt><dd>NATIONAL DRUG FILE</dd><dt>CPT4</dt><dd>CPT4</dd><dt>NLT</dt><dd>NATIONAL LAB TEST FILE</dd></dl>{:/} | 
 
-{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on February 3rd 2017, 6:30:51 am</p>{:/}
+{::nomarkdown} <br/><br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:19 pm</p>{:/}

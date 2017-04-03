@@ -26,7 +26,7 @@ title: RPCL documentation
 | --- | --- | --- | --- | --- | 
 | DFN | REFERENCE | true | {::nomarkdown}Patient IEN{:/} | 25 | 
 | ALLERGY_ID | REFERENCE | true | {::nomarkdown}The record number of the allergy/adverse reaction from the Patient<br/>Allergies file (#120.8).{:/} | 4 | 
-| ALLERGY_ID | REFERENCE | true | {::nomarkdown}The record number of the allergy/adverse reaction from the Patient<br/>Allergies file (#120.8).{:/} | 4 | 
+| ALLERGY_ID | REFERENCE | false | {::nomarkdown}The record number of the allergy/adverse reaction from the Patient<br/>Allergies file (#120.8).{:/} | 4 | 
 
 ### Example return value
 
@@ -51,4 +51,4 @@ don't give the guy this med!
 ```
 
 
-{::nomarkdown} <br/><p style="font-size: 11px">Generated on January 25th 2017, 1:00:20 am</p>{:/}
+{::nomarkdown} <br/><p style="font-size: 11px">Generated on April 3rd 2017, 4:24:12 pm</p>{:/}
