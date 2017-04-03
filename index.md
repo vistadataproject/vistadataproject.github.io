@@ -21,5 +21,5 @@ The VISTA Data Model (VDM) is in turn normalized across all local VISTA system d
 
 <br><br>
 
-For a technical overview of the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background)
+For more details on the VISTA Data Project, [click here](https://github.com/vistadataproject/documents/tree/master/Background#vista-data-project--technical-overview)
 
