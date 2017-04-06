@@ -19,7 +19,7 @@ The following sections describe first how to install the nodeVISTA server and CP
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
-* [Patient](Patient)
+* [Patient](Patient_1)
 
 <br><br><br><br><br><br>
 
@@ -179,4 +179,4 @@ and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
-* [Patient](Patient)
+* [Patient](Patient_1)
