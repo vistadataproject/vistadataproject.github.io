@@ -19,6 +19,7 @@ The following sections describe first how to install the nodeVISTA server and CP
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
+* [Patient](Patient)
 
 <br><br><br><br><br><br>
 
