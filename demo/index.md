@@ -178,3 +178,4 @@ and the _MVDM Events_ tab shows MVDM model events for locked RPCs ...
 * [Allergies](Allergies)
 * [Problems](Problems)
 * [Vitals](Vitals)
+* [Patient](Patient)
