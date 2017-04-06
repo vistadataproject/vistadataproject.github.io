@@ -9,7 +9,7 @@ See the [MVDM Demo](/demo/index) posting to setup the MVDM management client and
 
 * From the CPRS patient chart, click on visit box, you will then be prompted with the visit context dialog. Choose Alexander,Robert as the provider and clinicD as the location and click ok.
 
-![](images/common/cprs/visit-select.PNG)
+![](images/common/cprs/visit-select.png)
 
 *  Then click on one of the entries in the vitals pane. This will bring up the vitals dialog. If no vital is present, click on 'No data found'.
 
