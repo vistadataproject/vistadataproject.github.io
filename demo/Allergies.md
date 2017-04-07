@@ -31,7 +31,7 @@ Clicking on it will bring up details about this RPC. This was the call dispatche
 
 ![](images/allergies/management-client/allergy-mc-ORWDAL32-SAVE-ALLERGY-h.png)
 
-Now switch to the Management Client's _MVDM Events_ tab and hone in on the two create events that share the RPC call's _transaction id_ ...
+Now switch to the Management Client's _MVDM Events_ tab and hone in on the create and describe events that were generated from creating the new allergy ...
 
 ![](images/allergies/management-client/allergy-mc-list-alnas-h.png)
 
