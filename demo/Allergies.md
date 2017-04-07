@@ -37,7 +37,7 @@ Now switch to the Management Client's _MVDM Events_ tab and hone in on the two c
 
 Click on the entry for _Allergy_ ...
 
-![](images/allergies/management-client/allergy-mc-describe-allergy-h.png)
+![](images/allergies/management-client/allergy-mc-create-allergy-h.png)
 
 The RPC Locker implements the RPC call with an MVDM _createAllergy_ operation. After creating and updating appropriate information in VISTA, the MVDM will dispatch this create event. Unlike the cryptic RPC fields such as _GMRAORIG_, that event and the object that led to it have easy to understand properties such as _enteredBy_.
 
