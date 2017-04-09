@@ -5,42 +5,46 @@ title: Release Note v1.2
 
 ## VDP Release V1.2 (April 14th 2017)
 
-### MVDM Management Client 
+### MVDM Management Client Upgraded (and renamed _nodeVISTAManager_)
 
-...
+[nodeVISTAManager](https://github.com/vistadataproject/nodeVISTAClients/tree/master/nodeVISTAManager) - and put into nodeVISTAClient's GIT so source code is obvious.
 
 ### New Services Interface
 
-...
+[Dev Docs](http://vistadataproject.info/artifacts/services/index.html)
 
 ### Additional Non Clinical RPCs and Parameter Service 
 
-...
+In VDP year 2, the non clinical RPCs used in the emulated clinical domains and CPRS sign on ("demo RPCs") will be emulated.
+
+Category | Total | Demo | Emulated
+--- | --- | --- | ---
+Parameter-Only | 129 | 28 | 28
+File-Only | 199 | 44 | 31
 
 Many aspects of _VISTA_ are configured with _parameters_ using a MUMPS-based Parameter Service. V1.2 comes with a _Javascript-based Parameter Service_ which is used by applicable RPC emulations.
 
-### Patient Clinical Domain 
-
-...
-
 ### Example nodeVISTA Clients
  
-A new git, [nodeVISTAClients]() with three example clients:
-  1. ...
-  2. ...
-  3. ...
+A new git, [nodeVISTAClients](https://github.com/vistadataproject/nodeVISTAClients) with three example clients:
+  1. [rpc - problems](https://github.com/vistadataproject/nodeVISTAClients/tree/master/rpcClient)
+  2. [services - problems](https://github.com/vistadataproject/nodeVISTAClients/tree/master/services)
+  3. [simple event listener client](https://github.com/vistadataproject/nodeVISTAClients/tree/master/event)
 
 ### _Veterans Hospital_ Configurations
 
 The following non clinical data (_meta data_) files were fully populated or updated.
 
+Users and Patients:
+  * User (200) (Addition of Pharmacist)
+  * Patient (2) - enhanced [David Carter Patient definition](https://github.com/vistadataproject/nodeVISTA/blob/master/setup/jsSetup/patient/updatePatients.js) - Radiation Exposed/Persian Gulf War Veteran
+
+(Local) System Configuration Data:
   * Drug (50)
   * Orderables (101.43)
-  * Pharmacy Orderable Items (59.7)
+  * Pharmacy Orderable Items (50.7)
   * Outpatient Site (59)
-  * Pharmacy (59) (Updated)
-  * User (200) (Addition of Pharmacist)
-  * ...
+  * Pharmacy System (59.7) (Updated)
 
 ### Data Dictionary (DD) and GT/M portability upgrades
 
