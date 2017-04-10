@@ -7,7 +7,7 @@ See the [VISTA Demo Introduction](http://vistadataproject.info/demo/) posting to
 
 ## Create a Problem
 
-* From the CPRS patient chart, select the 'Problems' tab and click 'New Problem'
+* From the VISTA CPRS patient chart, select the 'Problems' tab and click 'New Problem'
 
 ![](images/problems/cprs/problem-dialog.JPG)
 
