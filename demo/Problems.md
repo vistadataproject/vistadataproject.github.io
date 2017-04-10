@@ -1,9 +1,9 @@
 ---
 layout: default
-title: MVDM Demo Problems
+title: VISTA(MVDM) Demo Problems
 ---
 
-See the [MVDM Demo Introduction](http://vistadataproject.info/demo/) posting to setup the MVDM management client and CPRS. 
+See the [VISTA Demo Introduction](http://vistadataproject.info/demo/) posting to setup the VISTA management client and CPRS. 
 
 ## Create a Problem
 
@@ -23,7 +23,7 @@ See the [MVDM Demo Introduction](http://vistadataproject.info/demo/) posting to 
 
 ![](images/problems/cprs/problem-create.JPEG)
 
-* In the MVDM client under the RPC Events tab, notice the **ORQQPL ADD SAVE** RPC MVDM locked line item.
+* In the Vista client under the RPC Events tab, notice the **ORQQPL ADD SAVE** RPC VISTA emulated line item.
 
 ![](images/problems/management-client/problem-create-rpc.jpeg)
 
@@ -31,13 +31,13 @@ See the [MVDM Demo Introduction](http://vistadataproject.info/demo/) posting to 
 
 ![](images/problems/management-client/problem-create-details.jpeg)
 
-* Next, still at the MVDM client, navigate to the MVDM Events tab. Notice the MVDM create event line item for problems. This event was generated when MVDM created the hypertension problem. 
+* Next, still at the VISTA client, navigate to the MVDM Events tab. Notice the VISTA create event line item for problems. This event was generated when VISTA created the hypertension problem. 
 
 Also, take a look at the create event's transaction ID. That transaction ID matches the same transaction ID for the RPC Event **ORQQPL ADD SAVE** line item: **a559bda8-5892-4272-815f-32947fd45ce0** (yours will be different).
 
 ![](images/problems/management-client/problem-create-mvdm.jpg)
 
-* Then click on the MVDM create event line item and bring up the details modal. Observe the MVDM create response. This is the hypertension MVDM problem instance as JSON. 
+* Then click on the MVDM create event line item and bring up the details modal. Observe the VISTA create response. This is the hypertension MVDM problem instance as JSON. 
 
 ![](images/problems/management-client/problem-create-details-mvdm.jpeg)
 
@@ -51,13 +51,13 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/cprs/problem-edit.JPG)
 
-* Look at the MVDM Client RPC Events tab. Notice the **ORQQPL EDIT SAVE** line item. It has a transaction ID of **73efbe71-cc3f-412d-ab0c-a556437fbe70** (yours will be different).
+* Look at the VISTA (MVDM) Client RPC Events tab. Notice the **ORQQPL EDIT SAVE** line item. It has a transaction ID of **73efbe71-cc3f-412d-ab0c-a556437fbe70** (yours will be different).
 
 ![](images/problems/management-client/problem-edit-rpc.jpeg)
 
-* Then look at the MVDM client MVDM Events menu tab. See that there are three MVDM events with same transaction ID **73efbe71-cc3f-412d-ab0c-a556437fbe70**. 
+* Then look at the VISTA client MVDM Events menu tab. See that there are three MVDM events with same transaction ID **73efbe71-cc3f-412d-ab0c-a556437fbe70**. 
 
-  These three MVDM events were all part of the same MVDM problem update transaction that just took place: Problem UPDATE, Audit CREATE, and Problem DESCRIBE. 
+  These three MVDM events were all part of the same VISTA problem update transaction that just took place: Problem UPDATE, Audit CREATE, and Problem DESCRIBE. 
 
   Click on the problem update and audit create MVDM event line items. 
  
@@ -81,7 +81,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/cprs/problem-remove.JPG)
 
-* Back at the MVDM client, under the RPC Events tab, notice the **QRQQPL DELETE** line item. 
+* Back at the VISTA client, under the RPC Events tab, notice the **QRQQPL DELETE** line item. 
 
 ![](images/problems/management-client/problem-remove.jpg)
 
@@ -95,7 +95,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/cprs/problem-restore.JPG)
 
-* At the MVDM client, under the RPC Events tab, see the **QRQQPL REPLACE** line item. 
+* At the VISTA client, under the RPC Events tab, see the **QRQQPL REPLACE** line item. 
 
 ![](images/problems/management-client/problem-restore-rpc.jpeg)
 
@@ -109,11 +109,11 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/cprs/problem-inactivate.JPG)
 
-* At the MVDM client, under the RPC Events tab, see the **QRQQPL UPDATE** line item. 
+* At the VISTA client, under the RPC Events tab, see the **QRQQPL UPDATE** line item. 
 
 ![](images/problems/management-client/problem-inactivate-rpc2.jpg)
 
-* Then on the MVDM Events tab, see the four corresponding MVDM Events: 1 UPDATE & 2 CREATES & 1 DESCRIBE. The two create events are associated with the creation of a problem audit entries (change of status and resolved date).
+* Then on the MVDM Events tab, see the four corresponding VISTA Events: 1 UPDATE & 2 CREATES & 1 DESCRIBE. The two create events are associated with the creation of a problem audit entries (change of status and resolved date).
 
 ![](images/problems/management-client/problem-inactivate-mvdm2.jpg)
 
