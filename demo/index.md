@@ -71,6 +71,7 @@ alias nv-status='cd ~/vagrant/nodeVISTA/setup; nv; vagrant status'
 alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
 alias nv-vdm-browser='open http://10.2.2.100:9000'
 ```
+
 [ Back to top ↑](#top)
 
 
@@ -137,7 +138,7 @@ To watch the RPC events, select the **RPC Events** tab in the **nodeVISTA Manage
 
 Start CPRS...
 
-![CPRS Connect Screen](/demo/images/common/cprs/connect.png)
+![CPRS Connect Screen -width70](/demo/images/common/cprs/connect.png)
 
 Before logging in, notice that the **nodeVISTA Manager** **RPC Events** tab shows the first RPC traffic coming from CPRS.
 
