@@ -542,6 +542,7 @@ C433 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/vistaRPC%20document
 C434 | [ORWPCE GET XAM](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20XAM) | READ | CLINIC | 1 | FILE | 9000010.13 | 
 C435 | [ORWPCE4 LEX](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE4%20LEX) | READ | ORCODE, ORAPP, ORDATE | 15 |  |  | 
 C436 | [ORWPCE PED](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20PED) | READ | CLINIC | 1 | FILE | 9000010.16 | 
+C437 | [ORWPCE PROC](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20PROC) | READ | CLINIC, ORDATE | 12 | FILE | 9000010.18 | 
 
 
 
