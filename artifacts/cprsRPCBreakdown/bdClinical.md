@@ -528,7 +528,7 @@ C419 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/vistaRPC%20do
 C420 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EDUCATION%20TOPICS) | READ |  | 3 |  |  | 
 C421 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EXAM%20TYPE) | READ |  | 3 |  |  | 
 C422 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EXCLUDED) | READ | LOC, TYPE | 7 |  |  | 
-C423 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20HEALTH%20FACTORS%20TYD) | READ | ADDCATS | 10 |  |  | 
+C423 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20HEALTH%20FACTORS%20TY) | READ | ADDCATS | 10 |  |  | 
 C424 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20IMMUNIZATION%20TYPE) | READ | ORDT | 5 |  |  | 
 C425 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20SET%20OF%20CODES) | READ | ORWFILE, ORWFIELD, ORWNULL | 10 |  |  | 
 C426 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20SKIN%20TEST%20TYPE) | READ | ORDT | 5 |  |  | 
