@@ -524,7 +524,7 @@ C416 | [TIU WHICH SIGNATURE ACTION](http://vistadataproject.info/artifacts/vista
 C417 | [VAFCTFU CONVERT ICN TO DFN](http://vistadataproject.info/artifacts/vistaRPC documentation/VAFCTFU CONVERT ICN TO DFN) | READ | ICN | 1 | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C418 | [YS GAF API](http://vistadataproject.info/artifacts/vistaRPC documentation/YS GAF API) | READ | YS | 7 | - |  | 
-
+C419 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/vistaRPC documentation/ORWPCE GET DX TEXTI) | READ | NARR, CODE | 1 |  |  | 
 
 
 
