@@ -165,7 +165,7 @@ Back at CPRS, select 'OK' and you will be brought to the (empty) patient chart
 
 ![CPRS Patient Chart -width70](/demo/images/common/cprs/patient-chart.png)
 
-and the **nodeVISTA Manager** shows the extra RPCs invoked - the total is now at 122...
+and the **nodeVISTA Manager** shows the extra RPCs invoked - the total is now at 133...
 
 ![MVDM Client P2 Patient Chart -width70](/demo/images/common/management-client/p2patient-chart-no-data.png)
 
