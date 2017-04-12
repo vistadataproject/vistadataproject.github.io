@@ -111,11 +111,11 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 * At the nodeVISTA client, under the RPC Events tab, see the **QRQQPL UPDATE** line item. 
 
-![](images/problems/management-client/problem-inactivate-rpc2.jpg)
+![](images/problems/management-client/problem-inactivate-rpc2.jpeg)
 
 * Then on the MVDM Events tab, see the four corresponding nodeVISTA Events: 1 UPDATE & 2 CREATES & 1 DESCRIBE. The two create events are associated with the creation of a problem audit entries (change of status and resolved date).
 
-![](images/problems/management-client/problem-inactivate-mvdm2.jpg)
+![](images/problems/management-client/problem-inactivate-mvdm2.jpeg)
 
   The audits are visible on the problem details output
 
