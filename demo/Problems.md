@@ -61,7 +61,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
   Click on the problem update and audit create MVDM event line items. 
  
-   ![](images/problems/management-client/problem-edit-mvdm.jpeg)
+   ![](images/problems/management-client/problem-edit-mvdm.jpg)
 
    * The MVDM update event which provides details on the actual problem update made to nodeVistA.
 
