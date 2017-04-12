@@ -79,7 +79,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
   From the remove dialog, and click on 'Remove'.
 
-![](images/problems/cprs/problem-remove.JPG)
+![](images/problems/cprs/problem-remove.jpeg)
 
 * Back at the nodeVISTA client, under the RPC Events tab, notice the **QRQQPL DELETE** line item. 
 
