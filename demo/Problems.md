@@ -79,11 +79,11 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
   From the remove dialog, and click on 'Remove'.
 
-![](images/problems/cprs/problem-remove.jpeg)
+![](images/problems/cprs/problem-remove.jpg)
 
 * Back at the nodeVISTA client, under the RPC Events tab, notice the **QRQQPL DELETE** line item. 
 
-![](images/problems/management-client/problem-remove.jpg)
+![](images/problems/management-client/problem-remove.jpeg)
 
 * Under the MVDM Events tab, see the two corresponding MVDM events: REMOVE & CREATE. Like problem edit, the create event is associated with the creation of a problem audit entry.
 
