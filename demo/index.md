@@ -105,7 +105,7 @@ offers free versions of pre-built, virtualized versions of their Windows OS for 
 
 7. Unzip `CPRS30v72_dll.zip` and copy/overwrite the contents of the `CPRS30v72_dll/` folder to `C:\Program Files (x86)\VistA\Common Files`.
 
-8. Copy the OSEHRA VistA Desktop Shortcut and rename it to something like "RPC Server", etc.
+8. Copy the OSEHRA VistA shortcut to the Windows desktop and rename it to something like "RPC Server", etc.
 
 9. Right click on the new desktop shortcut ("RPC Server") and select "Properties".
 
@@ -114,7 +114,7 @@ offers free versions of pre-built, virtualized versions of their Windows OS for 
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
-11. Run "RPC Server" from the Windows desktop
+11. Start CPRS by double-clicking the "RPC Server" desktop shortcut.
 
 ![run RPC Server](/demo/images/common/run-rpc-server.png)
 
