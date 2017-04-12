@@ -101,7 +101,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 * Then on the MVDM Events tab, see the two corresponding MVDM Events: UNREMOVED & CREATE. Again the create event is associated with the creation of a problem audit entry.
 
-![](images/problems/management-client/problem-restore-mvdm.jpeg)
+![](images/problems/management-client/problem-restore-mvdm.jpg)
 
 ## Inactivate a problem
 
@@ -111,7 +111,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 * At the nodeVISTA client, under the RPC Events tab, see the **QRQQPL UPDATE** line item. 
 
-![](images/problems/management-client/problem-inactivate-rpc2.jpeg)
+![](images/problems/management-client/problem-inactivate-rpc2.jpg)
 
 * Then on the MVDM Events tab, see the four corresponding nodeVISTA Events: 1 UPDATE & 2 CREATES & 1 DESCRIBE. The two create events are associated with the creation of a problem audit entries (change of status and resolved date).
 
