@@ -101,7 +101,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 * Then on the MVDM Events tab, see the two corresponding MVDM Events: UNREMOVED & CREATE. Again the create event is associated with the creation of a problem audit entry.
 
-![](images/problems/management-client/problem-restore-mvdm.jpeg)
+![](images/problems/management-client/problem-restore-mvdm.jpg)
 
 ## Inactivate a problem
 
