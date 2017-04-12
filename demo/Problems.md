@@ -97,7 +97,7 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 * At the nodeVISTA client, under the RPC Events tab, see the **QRQQPL REPLACE** line item. 
 
-![](images/problems/management-client/problem-restore-rpc.jpeg)
+![](images/problems/management-client/problem-restore-rpc.jpg)
 
 * Then on the MVDM Events tab, see the two corresponding MVDM Events: UNREMOVED & CREATE. Again the create event is associated with the creation of a problem audit entry.
 
