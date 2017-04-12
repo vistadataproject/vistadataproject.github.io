@@ -25,21 +25,21 @@ See the [nodeVISTA Demo Introduction](http://vistadataproject.info/demo/) postin
 
 * In the nodeVista client under the RPC Events tab, notice the **ORQQPL ADD SAVE** RPC nodeVISTA emulated line item.
 
-![](images/problems/management-client/problem-create-rpc.jpeg)
+![](images/problems/management-client/problem-create-rpc.jpg)
 
 * If you click on the **ORQQPL ADD SAVE** line item, observe the modal which includes the RPC request parameters and RPC Server response value.
 
-![](images/problems/management-client/problem-create-details.jpeg)
+![](images/problems/management-client/problem-create-details.jpg)
 
 * Next, still at the nodeVISTA client, navigate to the MVDM Events tab. Notice the nodeVISTA create event line item for problems. This event was generated when nodeVISTA created the hypertension problem. 
 
 Also, take a look at the create event's transaction ID. That transaction ID matches the same transaction ID for the RPC Event **ORQQPL ADD SAVE** line item: **a559bda8-5892-4272-815f-32947fd45ce0** (yours will be different).
 
-![](images/problems/management-client/problem-create-mvdm.jpg)
+![](images/problems/management-client/problem-create-mvdm.jpeg)
 
 * Then click on the MVDM create event line item and bring up the details modal. Observe the nodeVISTA create response. This is the hypertension MVDM problem instance as JSON. 
 
-![](images/problems/management-client/problem-create-details-mvdm.jpeg)
+![](images/problems/management-client/problem-create-details-mvdm.jpg)
 
 ## Edit a Problem
 
