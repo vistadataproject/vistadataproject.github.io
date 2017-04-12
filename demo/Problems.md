@@ -51,11 +51,11 @@ Also, take a look at the create event's transaction ID. That transaction ID matc
 
 ![](images/problems/cprs/problem-edit.JPG)
 
-* Look at the nodeVISTA Client RPC Events tab. Notice the **ORQQPL EDIT SAVE** line item. It has a transaction ID of **73efbe71-cc3f-412d-ab0c-a556437fbe70** (yours will be different).
+* Look at the nodeVISTA Client RPC Events tab. Notice the **ORQQPL EDIT SAVE** line item. It has a transaction ID of **7cfcc8a5-3844-4d71-b4d4-a89e46b1cb58** (yours will be different).
 
 ![](images/problems/management-client/problem-edit-rpc.jpeg)
 
-* Then look at the nodeVISTA client MVDM Events menu tab. See that there are three MVDM events with same transaction ID **73efbe71-cc3f-412d-ab0c-a556437fbe70**. 
+* Then look at the nodeVISTA client MVDM Events menu tab. See that there are three MVDM events with same transaction ID **7cfcc8a5-3844-4d71-b4d4-a89e46b1cb58**. 
 
   These three MVDM events were all part of the same nodeVISTA problem update transaction that just took place: Problem UPDATE, Audit CREATE, and Problem DESCRIBE. 
 
