@@ -35,7 +35,7 @@ See the [nodeVISTA Demo Introduction](http://vistadataproject.info/demo/) postin
 
 Also, take a look at the create event's transaction ID. That transaction ID matches the same transaction ID for the RPC Event **ORQQPL ADD SAVE** line item: **b037aa4c-0334-4255-98dd-faa68b164d30** (yours will be different).
 
-![](images/problems/management-client/problem-create-mvdm.jpg)
+![](images/problems/management-client/problem-create-mvdm1.jpg)
 
 * Then click on the MVDM create event line item and bring up the details modal. Observe the nodeVISTA create response. This is the hypertension MVDM problem instance as JSON. 
 
