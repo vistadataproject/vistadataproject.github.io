@@ -17,8 +17,8 @@ In Demo: __125 (22.2%)__
 Emulated so far: __75 (60%)__
 
 
-Name | Number | Seen in Demo
---- | --- | ---
+Name | Number | Seen in Demo | Emulated
+--- | --- | --- | ---
 [Parameter Only](#parameter-only-129) | 129 (23%) | __36 (27.9%)__ | __36 (100%)__
 [File Only](#file-only-239) | 239 (42.5%) | __53 (22.2%)__ | __32 (60.4%)__
 [Parameter and File](#parameter-and-file-33) | 33 (5.9%) | __9 (27.3%)__ | __0 (0%)__
@@ -842,4 +842,4 @@ O161 | [TIU USER INACTIVE?](http://vistadataproject.info/artifacts/vistaRPC docu
 
 
 
-<small>Generated on 2017-04-13</small>
+<small>Generated on 2017-04-17</small>
