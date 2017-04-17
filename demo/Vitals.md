@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo Vitals
 ---
 
-See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the MVDM management client and CPRS. 
+See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the nodeVISTA management client and CPRS. 
 
 ## Create a Vital
 
@@ -31,7 +31,7 @@ See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the MVD
 
 ![](images/vitals/cprs/vitals-dialog.JPG)
 
-* Navigate to the MVDM client and open the RPC Events tab. Notice the three **GMV ADD VM** RPC Event line items. Each RPC calls has its own transaction ID associated with the call.
+* Navigate to the nodeVISTA client and open the RPC Events tab. Notice the three **GMV ADD VM** RPC Event line items. Each RPC calls has its own transaction ID associated with the call.
 
 ![](images/vitals/management-client/vitals-create.jpg)
 
@@ -57,7 +57,7 @@ See the [MVDM Demo](http://vistadataproject.info/demo/) posting to setup the MVD
 
 ![](images/vitals/cprs/vitals-eie.JPG)
 
-* Go over to the MVDM client. Under RPC Events, observe the **GMV MARK ERROR** RPC Event line item. 
+* Go over to the nodeVISTA client. Under RPC Events, observe the **GMV MARK ERROR** RPC Event line item. 
 
 ![](images/vitals/management-client/vitals-eie.jpg)
 

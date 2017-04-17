@@ -528,6 +528,25 @@ C416 | __[TIU WHICH SIGNATURE ACTION](http://vistadataproject.info/artifacts/vis
 C417 | [VAFCTFU CONVERT ICN TO DFN](http://vistadataproject.info/artifacts/vistaRPC documentation/VAFCTFU CONVERT ICN TO DFN) | READ | ICN | 1 | QUERY |  | 
 &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp;
 C418 | [YS GAF API](http://vistadataproject.info/artifacts/vistaRPC documentation/YS GAF API) | READ | YS | 7 | - |  | 
+C419 | [ORWPCE GET DX TEXT](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20DX%20TEXTI) | READ | NARR, CODE | 1 | CODE-LOOKUP |  | 
+C420 | [ORWPCE GET EDUCATION TOPICS](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EDUCATION%20TOPICS) | READ |  | 3 | FILE | 9999999.09 | 
+C421 | [ORWPCE GET EXAM TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EXAM%20TYPE) | READ |  | 3 | FILE | 9999999.15 | 
+C422 | [ORWPCE GET EXCLUDED](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20EXCLUDED) | READ | LOC, TYPE | 7 |  |  | 
+C423 | [ORWPCE GET HEALTH FACTORS TY](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20HEALTH%20FACTORS%20TY) | READ | ADDCATS | 10 | FILE | 9999999.64 | 
+C424 | [ORWPCE GET IMMUNIZATION TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20IMMUNIZATION%20TYPE) | READ | ORDT | 5 | FILE | 9999999.14 | 
+C425 | [ORWPCE GET SET OF CODES](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20SET%20OF%20CODES) | READ | ORWFILE, ORWFIELD, ORWNULL | 10 |  |  | 
+C426 | [ORWPCE GET SKIN TEST TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20SKIN%20TEST%20TYPE) | READ | ORDT | 5 | FILE | 9999999.28 | 
+C427 | [ORWPCE GET  TREATMENT TYPE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20GET%20TREATMENT%20TYPE) | READ |  | 3 | FILE | 9999999.17 | 
+C428 | [ORWPCE HF](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20HF) | READ | CLINIC | 1 | FILE | 9000010.23 | 
+C429 | [ORWPCE IMM](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20IMM) | READ | CLINIC | 1 | FILE | 9000010.11 | 
+C430 | [ORWPCE LEXCODE](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20LEXCODE) | READ | IEN, APP, ORDATE | 5 |  |  | 
+C431 | [ORWPCE SK](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20SK) | READ | CLINIC | 1 | FILE | 9000010.12 | 
+C432 | [ORWPCE TRT](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20TRT) | READ | CLINIC | 1 | FILE | 9000010.15 | 
+C433 | [ORWPCE VISIT](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20VISIT) | READ | CLINIC, ORDATE | 2 | FILE | 9000010.07 | 
+C434 | [ORWPCE GET XAM](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20XAM) | READ | CLINIC | 1 | FILE | 9000010.13 | 
+C435 | [ORWPCE4 LEX](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE4%20LEX) | READ | ORCODE, ORAPP, ORDATE | 15 |  |  | 
+C436 | [ORWPCE PED](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20PED) | READ | CLINIC | 1 | FILE | 9000010.16 | 
+C437 | [ORWPCE PROC](http://vistadataproject.info/artifacts/vistaRPC%20documentation/ORWPCE%20PROC) | READ | CLINIC, ORDATE | 12 | FILE | 9000010.18 | 
 
 
 
