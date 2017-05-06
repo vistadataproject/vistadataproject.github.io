@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="js/circleChart.js"></script>
+<script src="ljs/jquery.min.js"></script>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	
+<link rel="stylesheet" type="text/css" href="css/circleChart.css">
+</head>
+
+<body>
+  <div id="divSvg"></div>
+	<script>
+    
+$(function() {
+      IFG.displayCircleChart({
+        'divId': 'divSvg',
+        'jsonPath': 'exjson/sample.json',
+        'title': 'Relative patient data sizes',
+        'minimumBubbleSize': 15,
+        'height': 500,
+        'width': 1500
+      });
+ });     
+	</script>
+
+</body>
+</html>

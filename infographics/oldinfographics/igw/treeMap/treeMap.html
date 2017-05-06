@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="css/treeMap.css"/>
+    <script type="text/javascript" src="ljs/d3.v3.min.js"></script>
+	<script type="text/javascript" src="ljs/jquery.min.js"></script>
+	<script type="text/javascript" src="js/treeMap.js"></script>
+  </head>
+  <body>
+    <div id="body">
+      <div id="footer">
+		<h1>TreeMap</h1>
+        <div class="hint">click or option-click to descend or ascend</div>
+        <div>
+		By		
+		<select id="values">
+          <option value="size">By Number of Nodes</option>
+          <option value="properties">By Number of Properties</option>
+        </select></div>		
+		<div id="divSvg"></div>
+      </div>
+    </div>
+    <script type="text/javascript">	
+		$(function() {
+			d3.select("#values").on("change", function() {
+				  IFG.displayTreeMap({
+					width: 1200,
+					height: 620,
+					jsonPath : "exjson/treemapPIKS.json",
+					valueTitle : $("#values").val(),
+					nameTitle : "name",
+					divId: "divSvg"
+					});
+			});
+				  
+			IFG.displayTreeMap({
+					width: 1200,
+					height: 620,
+					jsonPath : "exjson/treemapPIKS.json",
+					valueTitle : "size",
+					nameTitle : "name",
+					divId: "divSvg"					
+			});
+
+		});
+    </script>
+  </body>
+</html>

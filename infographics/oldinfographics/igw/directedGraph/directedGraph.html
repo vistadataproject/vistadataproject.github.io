@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/directedGraph.css">
+</head>
+<body>
+<script src="ljs/d3.v3.min.js"></script>
+<script src="ljs/jquery.min.js"></script>
+<script src="js/directedGraph.js"></script>
+<script>
+
+function refreshGraph() {
+	IFG.showDirectedGraph({
+		"jsonPath": $('#files').val(), 
+		"showArrow": $('#arrows').val(),
+		"width": 1000,
+		"height": 1000,
+		"forceCharge": -20,
+		"linkDistance": 10,
+		"divId": "divSvg"
+		});
+}
+
+$(function() {
+	refreshGraph();
+	 $('#files').change(function() {
+		refreshGraph();
+	 });
+	 
+	 $('#arrows').change(function() {
+	    refreshGraph();
+	 });
+	 
+});
+</script>
+
+Get graph of top files pointing  
+<select id="files"> 
+  <option value="exjson/clusterPopulated.json">Clusters for populated nodes</option>
+</select>
+<br>
+<br>
+Graph options:<br>
+Directed Arrows: 
+<select id="arrows"> 
+   <option value="showArrow">Show Arrows</option>
+   <option value="">Hide Arrows</option>
+</select>
+<div id="divSvg" style="overflow:auto;">
+</div>
+</body>
+</html>

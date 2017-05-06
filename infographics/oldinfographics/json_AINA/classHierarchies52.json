@@ -1,0 +1,28 @@
+{
+    "name": "prescription (52)",
+    "children": [{
+        "name": "Activity Log (52-40)"
+    }, {
+        "name": "Cmop Event (52-400)"
+    }, {
+        "name": "Copay Activity Log (52-107)"
+    }, {
+        "name": "Icd Diagnosis (52-52311)"
+    }, {
+        "name": "Label Date/Time (52-32)"
+    }, {
+        "name": "Lot/Exp (52-401)"
+    }, {
+        "name": "Medication Instructions (52-113)"
+    }, {
+        "name": "Partial Date (52-60)"
+    }, {
+        "name": "Refill (52-52)"
+    }, {
+        "name": "Reject Info (52-52_25)"
+    }, {
+        "name": "Return To Stock Log (52-70)"
+    }, {
+        "name": "Sig1 (52-10_2)"
+    }]
+}

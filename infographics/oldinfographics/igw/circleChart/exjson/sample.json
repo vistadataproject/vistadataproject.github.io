@@ -1,0 +1,5 @@
+[{"label" : "RDF Zipped: 12.18 GB", "value": 12.18, "xPos": 0},
+	{"label": "Fileman: 40.49 GB ", "value": 40.49, "xPos": 0},
+	{"label": "Cache RDF: 175.46 GB", "value": 175.46, "xPos": 0},
+	{"label": "RDF unzipped: 206.35 GB", "value": 206.35, "xPos": 0},
+	{"label": "MongoDB RDF: 229 GB", "value": 229, "xPos": 0}]

@@ -1,0 +1,22 @@
+.barchart .axis path,
+.barchart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.barchart .bar {
+  fill: orange;
+}
+
+.barchart .bar:hover {
+  fill: lightgreen ;
+}
+
+.barchart .x.axis path {
+  /*display: none;*/
+}
+
+.barchart .x.axis text {
+	/*display: none; */
+}

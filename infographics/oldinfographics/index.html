@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+#nytg-tooltipContainer {
+  position: absolute;
+  bottom: 0;
+  width: 230px;
+  left: 125px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.4);  
+  border:1px solid rgba(200,200,200,0.85);
+  text-align:center;
+}
+#nytg-tooltip {
+  text-align:center;  
+  z-index: 1000;
+  position: absolute;
+  display: none;
+}
+.btn {
+    background-color: #e7e7e7;
+    border: 2px solid #C8C8C8;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btnInactive {
+    background-color: #F9F9F9;
+    border: 2px solid #C8C8C8;
+    color: #BAAFB4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btnInactive:hover {
+    background-color: #000000;
+    color: white;
+}
+</style>
+<head>
+    <link rel="stylesheet" type="text/css" href="igw/pie/css/pieChart.css">
+    <link rel="stylesheet" href="igw/tree/css/tree.css">
+    <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/stackedBar.css">
+    <link rel="stylesheet" type="text/css" href="igw/stackedBar/css/d3tip.css">
+    <link type="text/css" rel="stylesheet" href="igw/treeMap/css/treeMap.css"/>
+
+</head>
+<body>
+<h1>VISTA Charts </h1>
+<select id="chartType" style="margin: 20px"> 
+  <option value="linkLiteral">Properties & Literal Properties(Pie Chart)</option>
+  <option value="orderTree">Order Classes in Hierarchies (Tree Chart)</option>
+  <option value="prescriptionTree">Prescription Classes in Hierarchies (Tree Chart)</option>
+  <option value="labResultTree">Lab Result Classes in Hierarchies (Tree Chart)</option>
+  <option value="gatheringClass">Gathering Classes (Stacked Bar Chart)</option>
+  <option value="lprBubbleTree">Lab, Prescription and Radiology Properities (Bubble/Tree Map Chart)</option>
+  
+</select>
+<div id="chartTitle" style="font-size: 18px"></div>
+<br><br><br>
+<table> 
+  <tr>
+      <td><center><div id="summaryTitle" style="font-size: 18px"></div></center></td>
+      <td><center><div id="chart1Title" style="font-size: 18px"></div></center></td>
+      <td><center><div id="chart2Title" style="font-size: 18px"></div></center></td></tr>
+  <tr>
+    <td><center><div id="divSummary" style="font-size: 18pt">
+    </div></center></td>
+    <td><div id="divSvg" class="pie-chart">
+    </div>
+        <div class="legent"></div>
+    </td>
+    <td><div id="div2ndChart" class="pie-chart">
+    </div></td>
+  </tr>
+</table>
+<br><br>
+<div id="nytg-tooltip">
+<div id="nytg-tooltipContainer">
+<div class="nytg-name"></div>
+</div>
+
+<script src="igw/pie/ljs/jquery.min.js"></script>
+<script src="igw/pie/ljs/d3.v3.min.js"></script>
+<script src="igw/pie/js/pie.js"></script>
+<script src="igw/tree/js/tree.js"> </script>
+<script src="igw/stackedBar/js/stackedBar.js"></script>
+<script src="igw/stackedBar/ljs/d3.tip.v0.6.3.js"></script>
+<script src="igw/bubblePlus/js/bubblePlus.js"></script>
+<script type="text/javascript" src="igw/treeMap/js/treeMap.js"></script>
+ 
+
+<script>    
+
+$(function() {
+
+    $("#chartType").change(function () {
+        var chartName = this.value;
+        $("#chartTitle").html("");
+        $("#chart1Title").html("");
+        $("#chart2Title").html("");
+        $('#divSummary').html("");
+        $('#divSvg').html("");
+        $('#div2ndChart').html("");
+        if(chartName === 'linkLiteral') {
+            displayPie('json/linkLiteral.json', "Properties");
+            $("#divSummary").html("Classes <br>2641");
+            display2ndPie('json/literalType.json', 'Literal Properties');
+
+        }
+        else if(chartName === 'orderTree') {
+            displayTree('json/classHierarchies101.json');
+        }
+        else if(chartName === 'prescriptionTree') {
+            displayTree('json/classHierarchies52.json');
+        }
+        else if(chartName === 'labResultTree') {
+            displayTree('json/classHierarchies63.json');
+        }
+        else if(chartName === 'gatheringClass') {
+            displayStackedBar('json/gatheringClass.json');
+        }
+        else if(chartName === 'lprBubbleTree') {
+            displayBubbleChart('json/labPrescriptionRadiology.json');
+            $('#chartTitle').html('<a id="tree" class="btn" href="#">Bubble Chart</a> <a id="bubble" class="btnInactive" href="#">Tree Map </a>');
+        }
+
+    });
+
+    $(document).on("click", "#bubble", function(e){
+        e.preventDefault();
+        displayTreeMap('json/labPrescriptionRadiology.json');
+            $('#chartTitle').html('<a id="tree" class="btnInactive" href="#">Bubble Chart</a> <a id="bubble" class="btn" href="#">Tree Map </a>');
+    });    
+
+    $(document).on("click", "#tree", function(e){
+        e.preventDefault();
+            displayBubbleChart('json/labPrescriptionRadiology.json');
+            $('#chartTitle').html('<a id="tree" class="btn" href="#">Bubble Chart</a> <a id="bubble" class="btnInactive" href="#">Tree Map </a>');
+    });    
+    function displayTreeMap(jsonPath, title) {
+        $("#divSvg").html("");
+        IFG.displayTreeMap({
+            width: 800,
+            height: 420,
+            jsonPath : jsonPath,
+            valueTitle : "count",
+            nameTitle : "name",
+            divId: "divSvg"                 
+        });  
+        $("#chart1Title").html(title);      
+    }
+
+    function displayPie(jsonPath, title) {
+        $("#divSvg").html("");
+        IFG.displayPie({
+            divId: 'divSvg', //to display the pie
+            json: jsonPath, //path to json file
+            categoryTitle: 'DATATYPE', //the category name of the json data
+            valueTitle: 'COUNT',//the value name of the json data
+            width: 400,
+            height: 400,
+            innerCircleRadius: 50
+            });
+        $("#chart1Title").html(title);
+
+    }
+    function display2ndPie(jsonPath, title) {
+        $("#div2ndChart").html("");
+        IFG.displayPie({
+            divId: 'div2ndChart', //to display the pie
+            json: jsonPath, //path to json file
+            categoryTitle: 'DATATYPE', //the category name of the json data
+            valueTitle: 'COUNT',//the value name of the json data
+            width: 400,
+            height: 400,
+            innerCircleRadius: 50
+            });
+        $("#chart2Title").html(title);
+        
+    }
+
+    function displayTree(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayTree({
+                margin: [20, 20, 20, 120],
+                width: 2000,
+                height: 600,
+                jsonPath: jsonPath,
+                topDown: false, //false - left to right, true - top down
+                divId: "divSvg"
+            });
+    }
+
+    function displayStackedBar(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayStackedBar({
+            "margin" : {top: 20, right: 20, bottom: 130, left: 40},
+            "width" : 9500,
+            "height" : 500,
+            "colors" : ["#d0743c", "#6b486b", "red"], //color of stacked bar
+            "divId" : "divSvg", //div to show the chart
+            "jsonPath" : jsonPath,// json path
+            "categoryTitle" : "name", //x axis category
+            "nameTitle" : "name", //name to be displayed when mouse over
+            "valueTitles" : ["link", "literal", "object"], //values to show in each bar,
+            "valueTitlesDisplay" : ["links", "literals", "objects"], //title to display on the bar tip
+            "YLegendText" : "Count", //this is the text displayed on the Y Axis
+            "showXAxis" : false //show X Axis
+        });
+    }
+
+    function displayBubbleChart(jsonPath) {
+        $("#divSvg").html("");
+        IFG.displayBubbles({
+            sizeKey: 'count',
+            divId: 'divSvg',
+            jsonPath: jsonPath,
+            r: 500,
+            legendData: [{"label": "Lab", "color": "#FF7F0E"}, 
+                     {"label": "Prescription", "color": "#1F77B4"},
+                     {"label": "Radiology", "color": "#2CA02C"}]
+
+        });
+    }
+
+    $("#divSummary").html("Classes <br>2641");
+    displayPie('json/linkLiteral.json', 'Link vs Literal');    
+    display2ndPie('json/literalType.json', 'Literal Type');
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.pie-chart .arc path {
+  stroke: #fff;
+}
+
+.pie-chart .labelS {
+font: 20px;
+}
+
+.pie-chart .total{
+  font-size: 18px;
+  font-weight: bold;
+}
+.pie-chart .units{
+  fill: gray;
+  font-size: 12px;
+}
+.pie-chart .label{
+  fill: #CCC;
+  font-size: 12px;
+  font-weight: bold;
+}

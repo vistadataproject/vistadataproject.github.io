@@ -1,0 +1,28 @@
+[{
+    "DATATYPE": "NUMERIC",
+    "COUNT": 10065
+}, {
+    "DATATYPE": "STRING",
+    "COUNT": 19639
+}, {
+    "DATATYPE": "ENUMERATION",
+    "COUNT": 6765
+}, {
+    "DATATYPE": "DATE-TIME",
+    "COUNT": 4885
+}, {
+    "DATATYPE": "IEN",
+    "COUNT": 264
+}, {
+    "DATATYPE": "BOOLEAN",
+    "COUNT": 4000
+}, {
+    "DATATYPE": "POINTER",
+    "COUNT": 555
+}, {
+    "DATATYPE": "",
+    "COUNT": 4
+}, {
+    "DATATYPE": "undefined",
+    "COUNT": 15
+}]
