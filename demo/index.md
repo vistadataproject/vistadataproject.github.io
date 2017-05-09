@@ -62,7 +62,6 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
-[ Back to top ↑](#top)
 
 
 ### Optional:  nodeVISTA server command menu
