@@ -22,8 +22,8 @@ The following sections describe first how to install the **nodeVISTA** server an
 * [Patient](Patient_1)
 
 -----
-
-# nodeVISTA Installation
+<br><br><br><br>
+## nodeVISTA Installation
 
 The following outlines how to install **nodeVISTA** server in a VirtualBox virtual machine.
 
@@ -63,6 +63,9 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
+
+#### Optional nodeVISTA server command menu
+
 * As an optional step, if you're working on a Linux or Mac OS host, you may want to append the following command aliases to the `.profile` file in your home directory (i.e. `~/.profile`) to manage the nodeVISTA server:
 ```
 alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
@@ -73,7 +76,7 @@ alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
-* And to make a nodeVISTA server menu  which is is available by typing "nv" on the command line, create a shell script in your home directory (i.e. `~/nv.sh`) containing the following:  
+* Then create a nodeVISTA menu of the above (activated by typing "nv" on the command line)  by adding a shell script in your home directory (i.e. `~/nv.sh`) containing the following:  
 ```
 clear
 echo '                nodeVISTA Server             '
@@ -86,14 +89,12 @@ echo ' VISTA Data Model:     vdm-browser | vdm-query '
 echo ' -----------------------------------------------------'
 ```
 
-
-
-
-
 [ Back to top ↑](#top)
 
+-----
+<br><br><br><br>
 
-# CPRS / RPC Server Installation
+## CPRS / RPC Server Installation
 
 ### Summary
 
