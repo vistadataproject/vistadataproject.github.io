@@ -66,7 +66,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 
 ### Optional:  nodeVISTA server command menu
-As an optional step, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
+As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
 * First, create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
 ```
@@ -87,16 +87,20 @@ alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
 alias nv-halt='cd ~/vagrant/nodeVISTA/setup; vagrant halt; nv-status'
 alias nv-status='cd ~/vagrant/nodeVISTA/setup; nv; vagrant status'
 alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
+alias nv-manager='open http://10.2.2.100:9020/#rpcCounts'
 alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
+
+
 *  The nodeVISTA server command menu will now appear whenever you type "nv" on the command line.
 
 [ Back to top ↑](#top)
 
 
+<br><br><br>
 -----
-## CPRS / RPC Server Installation
+### CPRS / RPC Server Installation
 The Computerized Patient Record System (CPRS) is a Veterans Health Information Systems and Technology Architecture (VistA) computer application. The CPRS GUI application was designed to run in the Microsoft Windows operating environment, which means that you must have access to a Windows-based workstation (physical or virtual). If you're working in a Linux or Mac OS X environment, a common solution is to run CPRS from a Windows-based VM within a locally hosted hypervisor (e.g. VirtualBox).
 
 1. If you are operating within a Linux or Mac OS X environment, create a VM running either Windows 7 or Windows 10 in your hosted hypervisor of choice. Note: Microsoft
@@ -141,9 +145,8 @@ Source | Artifact/Action | Target Path
 [ Back to top ↑](#top)
 
 
-
------
-# Open the nodeVISTA Manager
+<br><br><br>
+## Open the nodeVISTA Manager
 
 Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
 
@@ -152,9 +155,8 @@ Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:90
 [ Back to top ↑](#top)
 
 
-
-
-# CPRS Sign-on / Patient-Chart
+<br><br><br>
+## CPRS Sign-on / Patient-Chart
 
 To watch the RPC events, select the **RPC Events** tab in the **nodeVISTA Manager** [(http://10.2.2.100:9020/#rpcEvents)](http://10.2.2.100:9020/#rpcEvents)
 
@@ -201,7 +203,7 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 
 
 -----
-# Domain Demo HOW TOs
+## Domain Demo HOW TOs
 
 * [Allergies](Allergies)
 * [Problems](Problems)
