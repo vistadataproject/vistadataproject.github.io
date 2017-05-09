@@ -65,9 +65,9 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 
 ### Optional:  nodeVISTA server command menu
-As an optional step, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. The menu will appear at any time by typing "nv" on the command line.
+As an optional step, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
-* To create a nodeVISTA server menu,  create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
+* First, create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
 ```
 clear
 echo '                nodeVISTA Server             '
@@ -89,6 +89,9 @@ alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
 alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
+*  The nodeVISTA server command menu will now appear whenever you type "nv" on the command line.
+
+
 
 
 [ Back to top ↑](#top)
