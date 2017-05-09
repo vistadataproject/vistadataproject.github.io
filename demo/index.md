@@ -21,6 +21,8 @@ The following sections describe first how to install the **nodeVISTA** server an
 * [Vitals](Vitals)
 * [Patient](Patient_1)
 
+
+<br><br><br><br>
 -----
 ## nodeVISTA Installation
 
