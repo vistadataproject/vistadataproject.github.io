@@ -23,7 +23,7 @@ The following sections describe first how to install the **nodeVISTA** server an
 
 -----
 
-## nodeVISTA Installation
+# nodeVISTA Installation
 
 The following outlines how to install **nodeVISTA** server in a VirtualBox virtual machine.
 
@@ -59,11 +59,11 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
     Note: VirtualBox VMs go under `/Users/{user}/VirtualBox VMs/` on MacOS.
 
-* Check that the **nodeVISTA** Model Browser (Fileman Schema Browser) was installed successfully by navigating your browser to [http://10.2.2.100:9000](http://10.2.2.100:9000).
+* Check that the **nodeVISTA** Model Browser (Fileman Schema Browser) was installed successfully by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
-* As an optional step, if you're working on a Linux or Mac OS host, you may want to append the following command aliases to the `.profile` file in your home directory (i.e. `~/.profile`):
+* As an optional step, if you're working on a Linux or Mac OS host, you may want to append the following command aliases to the `.profile` file in your home directory (i.e. `~/.profile`) to manage the nodeVISTA server:
 ```
 alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
 alias nv-halt='cd ~/vagrant/nodeVISTA/setup; vagrant halt; nv-status'
@@ -73,10 +73,27 @@ alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
+* And to create a reminder menu of these commands on the command line, add the following text to a shell script in your home directory  (i.e. `~/nv.sh`).
+```
+clear
+echo '                nodeVISTA Server             '
+echo '     Master Data Model-Driven Node.js VISTA  '
+echo ' -----------------------------------------------------'
+echo ' nodeVISTA Status:     nv-reload | halt | status'
+echo ' nodeVISTA Access:     nv-ssh '
+echo ' nodeVISTA Manager:    nv-manager '
+echo ' VISTA Data Model:     vdm-browser | vdm-query '
+echo ' -----------------------------------------------------'
+```
+
+
+
+
+
 [ Back to top ↑](#top)
 
 
-## CPRS / RPC Server Installation
+# CPRS / RPC Server Installation
 
 ### Summary
 
@@ -122,7 +139,9 @@ offers free versions of pre-built, virtualized versions of their Windows OS for 
 [ Back to top ↑](#top)
 
 
-## Open the nodeVISTA Manager
+
+
+# Open the nodeVISTA Manager
 
 Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
 
@@ -131,7 +150,9 @@ Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:90
 [ Back to top ↑](#top)
 
 
-## CPRS Sign-on / Patient-Chart
+
+
+# CPRS Sign-on / Patient-Chart
 
 To watch the RPC events, select the **RPC Events** tab in the **nodeVISTA Manager** [(http://10.2.2.100:9020/#rpcEvents)](http://10.2.2.100:9020/#rpcEvents)
 
