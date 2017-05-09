@@ -21,7 +21,6 @@ The following sections describe first how to install the **nodeVISTA** server an
 * [Vitals](Vitals)
 * [Patient](Patient_1)
 
-<br><br><br>
 -----
 ## nodeVISTA Installation
 
@@ -63,6 +62,8 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
+[ Back to top ↑](#top)
+
 
 ### Optional:  nodeVISTA server command menu
 As an optional step, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
@@ -91,13 +92,9 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 *  The nodeVISTA server command menu will now appear whenever you type "nv" on the command line.
 
-
-
-
 [ Back to top ↑](#top)
 
 
-<br><br><br>
 -----
 ## CPRS / RPC Server Installation
 The Computerized Patient Record System (CPRS) is a Veterans Health Information Systems and Technology Architecture (VistA) computer application. The CPRS GUI application was designed to run in the Microsoft Windows operating environment, which means that you must have access to a Windows-based workstation (physical or virtual). If you're working in a Linux or Mac OS X environment, a common solution is to run CPRS from a Windows-based VM within a locally hosted hypervisor (e.g. VirtualBox).
@@ -145,7 +142,6 @@ Source | Artifact/Action | Target Path
 
 
 
-<br><br><br>
 -----
 # Open the nodeVISTA Manager
 
@@ -204,7 +200,6 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 [ Back to top ↑](#top)
 
 
-<br><br><br>
 -----
 # Domain Demo HOW TOs
 
@@ -212,3 +207,7 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 * [Problems](Problems)
 * [Vitals](Vitals)
 * [Patient](Patient_1)
+
+
+[ Back to top ↑](#top)
+
