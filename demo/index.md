@@ -69,7 +69,8 @@ alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
 alias nv-halt='cd ~/vagrant/nodeVISTA/setup; vagrant halt; nv-status'
 alias nv-status='cd ~/vagrant/nodeVISTA/setup; nv; vagrant status'
 alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
-alias nv-vdm-browser='open http://10.2.2.100:9000'
+alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
+alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
 [ Back to top ↑](#top)
