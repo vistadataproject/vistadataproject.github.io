@@ -64,19 +64,10 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
 
-#### Optional nodeVISTA server command menu
+### Optional:  nodeVISTA server command menu
+As an optional step, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. The menu will appear at any time by typing "nv" on the command line.
 
-* As an optional step, if you're working on a Linux or Mac OS host, you may want to append the following command aliases to the `.profile` file in your home directory (i.e. `~/.profile`) to manage the nodeVISTA server:
-```
-alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
-alias nv-halt='cd ~/vagrant/nodeVISTA/setup; vagrant halt; nv-status'
-alias nv-status='cd ~/vagrant/nodeVISTA/setup; nv; vagrant status'
-alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
-alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
-alias nv-vdm-query='open http://10.2.2.100:9000/query'
-```
-
-* Then create a nodeVISTA menu of the above (activated by typing "nv" on the command line)  by adding a shell script in your home directory (i.e. `~/nv.sh`) containing the following:  
+* To create a nodeVISTA server menu,  create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
 ```
 clear
 echo '                nodeVISTA Server             '
@@ -88,6 +79,17 @@ echo ' nodeVISTA Manager:    nv-manager '
 echo ' VISTA Data Model:     vdm-browser | vdm-query '
 echo ' -----------------------------------------------------'
 ```
+
+*  Then append the following command aliases to the `.profile` file in your home directory (i.e. in `~/.profile`):
+```
+alias nv-reload='cd ~/vagrant/nodeVISTA/setup; vagrant reload; nv-status'
+alias nv-halt='cd ~/vagrant/nodeVISTA/setup; vagrant halt; nv-status'
+alias nv-status='cd ~/vagrant/nodeVISTA/setup; nv; vagrant status'
+alias nv-ssh='echo "nodeVISTA ssh user/pass: vdp/vdp"; ssh vdp@10.2.2.100'
+alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
+alias nv-vdm-query='open http://10.2.2.100:9000/query'
+```
+
 
 [ Back to top ↑](#top)
 
