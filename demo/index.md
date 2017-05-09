@@ -73,7 +73,7 @@ alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
-* And to create a reminder menu of these commands, create a shell script in your home directory labelled "nv"  (i.e. `~/nv.sh`). 
+* And to make a nodeVISTA server menu  which is is available by typing "nv" on the command line, create a shell script in your home directory (i.e. `~/nv.sh`) containing the following:  
 ```
 clear
 echo '                nodeVISTA Server             '
