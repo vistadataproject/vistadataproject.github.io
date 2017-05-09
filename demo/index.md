@@ -21,8 +21,8 @@ The following sections describe first how to install the **nodeVISTA** server an
 * [Vitals](Vitals)
 * [Patient](Patient_1)
 
+<br><br><br>
 -----
-<br><br><br><br>
 ## nodeVISTA Installation
 
 The following outlines how to install **nodeVISTA** server in a VirtualBox virtual machine.
@@ -91,23 +91,11 @@ echo ' -----------------------------------------------------'
 
 [ Back to top ↑](#top)
 
+
+<br><br><br>
 -----
-<br><br><br><br>
-
 ## CPRS / RPC Server Installation
-
-### Summary
-
-Source | Artifact/Action | Target Path
---- | --- | ---
-*Download/Unzip*<br> [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | **CPRS_Demo_0613.exe**<br> 1. Execute  | NA
-*Download/Unzip*<br> [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip)| **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target path <br> *(overwrites existing CPRSChart.exe)*  | C:\Program Files (x86)\VistA\CPRS\  
-*Download/Unzip*<br> [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents of folder to target path <br> *(overwrites contents in target folder)* | C:\Program Files (x86)\VistA\Common Files\  
-*(Windows Desktop Shortcut)*<br> **RPC Server**  | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
-
-The Computerized Patient Record System (CPRS) is a Veterans Health Information Systems and Technology Architecture (VistA) computer application. The CPRS GUI application was
-designed to run in the Microsoft Windows operating environment, which means that you must have access to a Windows-based workstation (physical or virtual). If you're
-working in a Linux or Mac OS X environment, a common solution is to run CPRS from a Windows-based VM within a locally hosted hypervisor (e.g. VirtualBox).
+The Computerized Patient Record System (CPRS) is a Veterans Health Information Systems and Technology Architecture (VistA) computer application. The CPRS GUI application was designed to run in the Microsoft Windows operating environment, which means that you must have access to a Windows-based workstation (physical or virtual). If you're working in a Linux or Mac OS X environment, a common solution is to run CPRS from a Windows-based VM within a locally hosted hypervisor (e.g. VirtualBox).
 
 1. If you are operating within a Linux or Mac OS X environment, create a VM running either Windows 7 or Windows 10 in your hosted hypervisor of choice. Note: Microsoft
 offers free versions of pre-built, virtualized versions of their Windows OS for download for several hosted hypervisors [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).
@@ -137,11 +125,23 @@ offers free versions of pre-built, virtualized versions of their Windows OS for 
 
 ![run RPC Server](/demo/images/common/run-rpc-server.png)
 
+
+#### CPRS Installation Path Summary
+
+Source | Artifact/Action | Target Path
+--- | --- | ---
+*Download/Unzip*<br> [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip) | **CPRS_Demo_0613.exe**<br> 1. Execute  | NA
+*Download/Unzip*<br> [CPRSChart30v75.zip ](http://45.33.127.157/files/CPRSChart30v75.zip)| **CPRSChart30v75.exe** <br>1. Rename to CPRSChart.exe<br>2. Copy to target path <br> *(overwrites existing CPRSChart.exe)*  | C:\Program Files (x86)\VistA\CPRS\  
+*Download/Unzip*<br> [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip) |  **CPRS30v72_dll/** (folder)  <br> 1. Copy contents of folder to target path <br> *(overwrites contents in target folder)* | C:\Program Files (x86)\VistA\Common Files\  
+*(Windows Desktop Shortcut)*<br> **RPC Server**  | 1.Rename "Osehra VistA CPRS" shortcut -> "RPC Server" <br> 2.  Right-click "RPC Server"<br> 3.Select "properties" <br>4. Paste path| "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
+
+
 [ Back to top ↑](#top)
 
 
 
-
+<br><br><br>
+-----
 # Open the nodeVISTA Manager
 
 Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
@@ -199,6 +199,8 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 [ Back to top ↑](#top)
 
 
+<br><br><br>
+-----
 # Domain Demo HOW TOs
 
 * [Allergies](Allergies)
