@@ -56,17 +56,23 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
     $ vagrant up
     ```
 
-    The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
+* The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
 
 ### Confirm nodeVISTA Installation
 
-* Confirm  **nodeVISTA** is running by opening the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
+* Start the **nodeVISTA** VM by running the following command:
+    ```shell
+    $ vagrant reload
+    ```
+    
+* Open the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).   One should be able to browse the entire VA VISTA Data Model:
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
 
 ### Optional:  nodeVISTA command menu
+
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
 * First, create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
@@ -93,8 +99,8 @@ alias nv-vdm-browser='open http://10.2.2.100:9000/schema'
 alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
+*  The nodeVISTA server command menu will appear whenever you type "nv" on the command line, and provide all the functions as defined in the menu.
 
-*  The nodeVISTA server command menu will now appear whenever you type "nv" on the command line.
 
 [ Back to top ↑](#top)
 
@@ -103,7 +109,7 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 -----
 ### CPRS / RPC Server Installation
 
-The Computerized Patient Record System (CPRS) is a Windows-based graphical user interface that runs on top of the VISTA Server. According to the ( [Medscape 2016 National Survey of EHRs](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), it remains one of the most highly regarded by physicians in the U.S.   
+The Computerized Patient Record System (CPRS) is the Windows graphical user interface ("thick client") integrated to the VISTA Server. According to the ( [Medscape 2016 National Survey of EHRs](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS remains one of the most highly regarded integrated EHR interfaces in the U.S.
 
 CPRS can be installed and runs on all currently supported versions of Microsoft Windows.  If one wishes to install CPRS on MacOS or LinuxOS, one first needs to create a virtual Windows environment using virtualization. One can use either the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisors, and then install Windows in this hypervisor. Microsoft also offers free versions of pre-built, virtualized versions of their Windows OS for download for several hosted hypervisors [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).
 
