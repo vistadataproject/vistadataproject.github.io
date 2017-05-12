@@ -61,8 +61,12 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 ### Confirm nodeVISTA Installation
 
+* Start the **nodeVISTA** VM by running the following command:    
+```shell    
+    $ vagrant reload    
+    ```
 
-* Confirm that **nodeVISTA** Server installed correctly and is running by opening the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
+* Confirm  **nodeVISTA** is running by opening the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
