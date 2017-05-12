@@ -59,16 +59,15 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
     The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
 
-## Open nodeVISTA 
+### Confirm nodeVISTA Installation
 
 
-* Check that the **nodeVISTA** Model Browser (Fileman Schema Browser) was installed successfully by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
+* Confirm that **nodeVISTA** Server installed correctly and is running by opening the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
 
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
 
-
-### Optional:  nodeVISTA server command menu
+### Optional:  nodeVISTA command menu
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
 * First, create a new shell script "nv" in your home directory (i.e. in `~/nv.sh`) containing the following:  
