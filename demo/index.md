@@ -56,9 +56,11 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
     $ vagrant up
     ```
 
-    The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.
+    The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
-    Note: VirtualBox VMs go under `/Users/{user}/VirtualBox VMs/` on MacOS.
+
+## Open nodeVISTA 
+
 
 * Check that the **nodeVISTA** Model Browser (Fileman Schema Browser) was installed successfully by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).
 
@@ -102,33 +104,33 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 <br><br><br>
 -----
 ### CPRS / RPC Server Installation
-The Computerized Patient Record System (CPRS) is a Veterans Health Information Systems and Technology Architecture (VistA) computer application. The CPRS GUI application was designed to run in the Microsoft Windows operating environment, which means that you must have access to a Windows-based workstation (physical or virtual). If you're working in a Linux or Mac OS X environment, a common solution is to run CPRS from a Windows-based VM within a locally hosted hypervisor (e.g. VirtualBox).
 
-1. If you are operating within a Linux or Mac OS X environment, create a VM running either Windows 7 or Windows 10 in your hosted hypervisor of choice. Note: Microsoft
-offers free versions of pre-built, virtualized versions of their Windows OS for download for several hosted hypervisors [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).
+The Computerized Patient Record System (CPRS) is a Windows-based graphical user interface that runs on top of the VISTA Server, and according to the ( [Medscape 2016 National Survey of EHR](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), it remains one of the most highly regarded EHRs in the U.S.   
 
-2. From your Windows-based workstation (physical or virtual), download, unzip, and run the OSEHRA CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
+CPRS can be installed and runs on all currently supported versions of Microsoft Windows.  If one wishes to install CPRS on MacOS or LinuxOS, one first needs to create a virtual Windows environment on Mac or Linux using a hypervisor. One can use either the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisors, and then install Windows in this hypervisor. Microsoft also offers free versions of pre-built, virtualized versions of their Windows OS for download for several hosted hypervisors [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).
 
-3. Download the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
+1. From your Windows-based workstation (physical or virtual), download, unzip, and run the OSEHRA CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
-4. Unzip `CPRSChart30v75.zip` and rename the `CPRSChart30v75.exe` uncompressed binary file to `CPRSChart.exe`.
+2. Download the latest version of VA's CPRS binary: [CPRSChart30v75.zip (v1.0.30.75)](http://45.33.127.157/files/CPRSChart30v75.zip).
 
-5. Overwrite `C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe` with the latest binary (v1.0.30.75).
+3. Unzip `CPRSChart30v75.zip` and rename the `CPRSChart30v75.exe` uncompressed binary file to `CPRSChart.exe`.
 
-6. Download the latest CommonFiles DLLs: [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
+4. Overwrite `C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe` with the latest binary (v1.0.30.75).
 
-7. Unzip `CPRS30v72_dll.zip` and copy/overwrite the contents of the `CPRS30v72_dll/` folder to `C:\Program Files (x86)\VistA\Common Files`.
+5. Download the latest CommonFiles DLLs: [CPRS30v72_dll.zip](http://45.33.127.157/files/CPRS30v72_dll.zip).
 
-8. Copy the OSEHRA VistA shortcut to the Windows desktop and rename it to something like "RPC Server", etc.
+6. Unzip `CPRS30v72_dll.zip` and copy/overwrite the contents of the `CPRS30v72_dll/` folder to `C:\Program Files (x86)\VistA\Common Files`.
 
-9. Right click on the new desktop shortcut ("RPC Server") and select "Properties".
+7. Copy the OSEHRA VistA shortcut to the Windows desktop and rename it to something like "RPC Server", etc.
 
-10. Modify the shortcut `Target` field with the following line:
+8. Right click on the new desktop shortcut ("RPC Server") and select "Properties".
+
+9. Modify the shortcut `Target` field with the following line:
     ```
     "C:\Program Files (x86)\VistA\CPRS\CPRSChart.exe" CCOW=disable s=10.2.2.100 p=9010 showrpcs
     ```
 
-11. Start CPRS by double-clicking the "RPC Server" desktop shortcut.
+10. Start CPRS by double-clicking the "RPC Server" desktop shortcut.
 
 ![run RPC Server](/demo/images/common/run-rpc-server.png)
 
