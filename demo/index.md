@@ -30,11 +30,18 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 * Download and install [Git](https://git-scm.com/downloads)
 
-* Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578)
+* Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578 *and* Extension Pack
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 
-* From the command line, install the `vagrant-timezone` Vagrant plugin by running the following command:
+* Verify that Git, Virtualbox, and Vagrant are installed properly and are the latest version by entering on the command line:
+    ```shell
+    $ vagrant --version
+    $ git --version
+    $ VBoxManage --version    
+    ```
+   
+* Install the `vagrant-timezone` Vagrant plugin by running the following command:
     ```shell
     $ vagrant plugin install vagrant-timezone
     ```
@@ -56,22 +63,11 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
     $ vagrant up
     ```
 
-* The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
+* The initial `vagrant up` process will download a pre-built **nodeVISTA** Vagrant VM. The VM is ~2.6 GB in size and may take awhile to initially download, depending on your network connection speed. If during this initial download the connection is interrupted,the  directory will need to be deleted and the process started again.  The process caches the pre-built VM, and subsequent deployments will not take as long.  Note:  On MacOS, VirtualBox VMs are stored under `/Users/{user}/VirtualBox VMs/`.
 
 
-### Confirm nodeVISTA Installation
 
-* Start the **nodeVISTA** VM by running the following command:
-    ```shell
-    $ vagrant reload
-    ```
-    
-* Open the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).   One should be able to browse the entire VA VISTA Data Model:
-
-![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
-
-
-### Optional:  nodeVISTA command menu
+### Install nodeVISTA command menu (Optional)
 
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
@@ -100,6 +96,21 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ```
 
 *  The nodeVISTA server command menu will appear whenever you type "nv" on the command line, and provide all the functions as defined in the menu.
+
+
+
+### Verify nodeVISTA Installation
+
+* Start the **nodeVISTA** VM by running the following command:
+    ```shell
+    $ vagrant reload
+    ```
+    
+* Open the VISTA Data Model Browser (Fileman Schema Browser) by navigating your browser to [http://10.2.2.100:9000/schema](http://10.2.2.100:9000/schema).   One should be able to browse the entire VA VISTA Data Model:
+
+![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
+
+
 
 
 [ Back to top ↑](#top)
