@@ -117,7 +117,7 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 [ Back to top ↑](#top)
 
 
-<br><br><br>
+<br><br><br><br>
 # CPRS Installation
 
 
@@ -182,8 +182,10 @@ Source | Artifact/Action | Target Path
 [ Back to top ↑](#top)
 
 
-<br><br><br>
-## CPRS Sign-on / Patient-Chart
+
+
+<br><br><br><br>
+# CPRS Sign-on / RPC Emulation
 
 To watch the RPC events, select the **RPC Events** tab in the **nodeVISTA Manager** [(http://10.2.2.100:9020/#rpcEvents)](http://10.2.2.100:9020/#rpcEvents)
 
@@ -229,8 +231,9 @@ and the **MVDM Events** tab shows MVDM model events for emulated RPCs...
 [ Back to top ↑](#top)
 
 
------
-## Domain Demo HOW TOs
+
+<br><br><br><br>
+# Domain Demo HOW TOs
 
 * [Allergies](Allergies)
 * [Problems](Problems)
