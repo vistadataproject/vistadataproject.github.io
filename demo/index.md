@@ -163,8 +163,9 @@ Source | Artifact/Action | Target Path
 [ Back to top ↑](#top)
 
 
-<br><br><br>
-## Open the nodeVISTA Manager
+
+<br><br><br><br>
+# Open the nodeVISTA Manager
 
 
 * If **nodeVISTA** VM is not already running, start it by entering the following command:
