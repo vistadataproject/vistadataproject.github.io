@@ -13,7 +13,8 @@ The following sections describe first how to install the **nodeVISTA** server an
 1. [Install nodeVISTA](#nodevista-installation)
 2. [Install CPRS](#cprs--rpc-server-installation)
 3. [Open nodeVISTA Manager](#open-the-nodevista-manager)
-4. [CPRS Sign-On / Patient Chart](#cprs-sign-on--patient-chart)
+4. [CPRS Sign-On / RPC Emulation](#cprs-sign-on--rpc-emulation)
+
 
 ## Domain Demo HOW TOs
 * [Allergies](Allergies)
