@@ -166,7 +166,13 @@ Source | Artifact/Action | Target Path
 <br><br><br>
 ## Open the nodeVISTA Manager
 
-Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
+
+* If **nodeVISTA** VM is not already running, start it by entering the following command:
+    ```shell
+    $ vagrant reload
+    ```
+    
+* Enter the **nodeVISTA Manager** URL into your web browser: [http://10.2.2.100:9020/#rpcCounts](http://10.2.2.100:9020/#rpcCounts).
 
 ![nodeVISTA Manager RPC Counts -width70](/demo/images/common/management-client/rpc-counts-view.png)
 
