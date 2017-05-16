@@ -68,7 +68,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 
 
-### Install nodeVISTA command menu (Optional)
+##  Optional: Install nodeVISTA command menu
 
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
@@ -100,7 +100,7 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 
 
 
-### Verify nodeVISTA Installation
+## Verify nodeVISTA Installation
 
 * Start the **nodeVISTA** VM by running the following command:
     ```shell
@@ -120,12 +120,9 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 <br><br><br>
 # CPRS Installation
 
-The Computerized Patient Record System (CPRS) is the graphical user interface that physicians use to interact with the VISTA Server, so as far as physicians are concerned "CPRS is VISTA".  According to the ( [Medscape 2016 National Survey of EHRs](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS remains one of the most highly regarded integrated EHR systems in the U.S.  
+The Computerized Patient Record System (CPRS) is the graphical user interface ("Client")  that physicians use to interact with VISTA ("Server"). Therefore, as far as physicians are concerned "*CPRS is VISTA*".  According to the ( [Medscape 2016 National Survey of EHRs](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS is one of the most highly regarded integrated EHR systems in the U.S.  
 
-* CPRS can be installed and will run on all currently supported versions of Microsoft Windows. 
-* If one wishes to run CPRS on MacOS or LinuxOS, one first needs to create a Windows virtual environment by (a) downloading either the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisor, and then (b) install the free  [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO) within this hypervisor. 
-* Alternately, Microsoft offers pre-built, virtualized versions of Windows for several hosted hypervisors. [https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads). 
-* All these versions of Windows are free and carry some restrictions, but nothing that that affects the installation or execution of CPRS. 
+CPRS will run on all currently supported versions of Microsoft Windows.  If one wishes to run CPRS on MacOS or LinuxOS, one first needs to create a virtual Windows environment by downloading the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisor, and then install the free  [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO) within this hypervisor. Alternately, Microsoft offers free pre-built, virtualized versions of Windows prepackaged for several different hypervisors, which one can download [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).  Note all the free versions of Windows above have some restrictions, but nothing that that affects the installation or execution of CPRS. 
 
 1. From your Windows-based workstation (physical or virtual), download, unzip, and run the OSEHRA CPRS installer: [CPRS_Demo_0613.zip](https://github.com/vistadataproject/documents/raw/master/cprs/osehra/v69/CPRS_Demo_0613.zip)
 
