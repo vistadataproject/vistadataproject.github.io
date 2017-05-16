@@ -33,7 +33,8 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 
-* Download and install your favorite Terminal emulator. This varies depending on your operating system (Examples include Mac: [iTerm](https://www.iterm2.com); Linux: [Terminator](https://gnometerminator.blogspot.com/p/introduction.html); and Windows [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) ).
+* Download and install your favorite Terminal emulator. This varies depending on your operating system. Popular terminal emulators include on MacOS its built-in [Terminal](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) or download [iTerm](https://www.iterm2.com); on LinuxOS its built-in [Terminal]() or download [Terminator](https://gnometerminator.blogspot.com/p/introduction.html); and Windows its built-in [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) or download [ConEmu](https://conemu.github.io)  ).
+
 
 * Open a Terminal and enter the following commands:
 
