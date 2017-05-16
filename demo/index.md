@@ -33,7 +33,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 
-* Open a Terminal (Windows: [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) ) and enter the following commands:  
+* Open a Terminal (Mac: [iTerm](https://www.iterm2.com); Linux: [Terminator](https://gnometerminator.blogspot.com/p/introduction.html); Windows: [Command Prompt](https://www.lifewire.com/how-to-open-command-prompt-2618089) ) and enter the following commands:  
 
 * Verify that Git, Virtualbox, and Vagrant are installed properly and are the latest version:
     ```shell
