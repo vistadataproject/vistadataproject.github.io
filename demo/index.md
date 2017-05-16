@@ -29,7 +29,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 * Download and install [Git](https://git-scm.com/downloads)
 
-* Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578 *and* Extension Pack
+* Download and install [Virtualbox](https://www.virtualbox.org/wiki/Downloads?replytocom=98578) and Extension Pack.
 
 * Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 
