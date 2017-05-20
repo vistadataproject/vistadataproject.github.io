@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SPOOL DOCUMENT</h1></div><div id="results"><dl><dt>name</dt><dd>SPOOL DOCUMENT</dd><dt>number</dt><dd>3.51</dd><dt>location</dt><dd>^XUSPLDSM(</dd><dt>description</dt><dd>This file holds the name of "Spool Documents" created by ^%ZIS forDSM systems.  It does NOT hold the text of the documents themselves.That text is spooled out to the spool space.  File 3.51, however,"holds" spool space so that it can only be deleted by deleting theentry in this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This is the name of the spool document.</td></tr><tr><td>1</td><td>SPOOL NUMBER(+)</td><td>0;2</td><td>NUMERIC</td><td/><td>C</td><td>This is the number associated with the spool document.</td></tr><tr><td>2</td><td>SECURITY LOCK</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This is the file manager access code required to access the document.</td></tr><tr><td>3</td><td>DATE INITIATED</td><td>0;4</td><td>DATE-TIME</td><td/><td/><td>This is the date that the spooling of the document was initiated.</td></tr><tr><td>4</td><td>USER</td><td>0;5</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This is the user who initiated the document.</td></tr><tr><td>5</td><td>STARTED</td><td>0;6</td><td>DATE-TIME</td><td/><td/><td>This is the date that the spooled document was started.</td></tr><tr><td>6</td><td>PRINTED</td><td>0;7</td><td>DATE-TIME</td><td/><td/><td>This is the date that the spooled document was printed.</td></tr><tr><td>7</td><td>VMS FILENAME</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>This is the VMS file which holds the completed document.</td></tr><tr><td>8</td><td>EXPIRATION DATE</td><td>0;8</td><td>DATE-TIME</td><td/><td/><td>This is the date the system should automatically delete this document.If there is no data entered in this field, the system assumes it shouldnot be deleted.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

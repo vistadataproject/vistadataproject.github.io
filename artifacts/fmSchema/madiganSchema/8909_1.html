@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEERS MCP ENROLLMENT RESPONSES</h1></div><div id="results"><dl><dt>name</dt><dd>DEERS MCP ENROLLMENT RESPONSES</dd><dt>number</dt><dd>8909.1</dd><dt>location</dt><dd>^XDW(8909.1,</dd><dt>description</dt><dd>This file holds the MCP enrollment, disenrollment, and newborn/new spouse responses from DEERS.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DATE OF RESPONSE(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>Timestamp of when the entry was written to this file.</td></tr><tr><td>.02</td><td>DATE POSTED(+)</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>Timestamp of when the request was written to the transmission queue.</td></tr><tr><td>.03</td><td>SENDER(+)</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>The CHCS user who made the request.</td></tr><tr><td>.04</td><td>TYPE OF RESPONSE(+)</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>The DEERS code that identifies the response transmission to CHCS.</td></tr><tr><td>.05</td><td>TYPE OF TRANSMISSION(+)</td><td>0;5</td><td>FREE TEXT</td><td/><td/><td>The five character code sent to DEERS to identify the request.</td></tr><tr><td>.06</td><td>PRIORITY OF TRANSMISSION(+)</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>The priority of the request in the transmission queue.</td></tr><tr><td>.07</td><td>DISCREPANCY CODE</td><td>0;7</td><td>FREE TEXT</td><td/><td/><td>The code returned from DEERS if a descrepancy occurred when DEERS evaluated the information. If the transmission was successful, DEERS returns an X99.</td></tr><tr><td>.08</td><td>PATIENT</td><td>0;8</td><td>POINTER</td><td><a href="2.html">2</a></td><td/><td>Name of the patient enrolled or disenrolled.</td></tr><tr><td>.09</td><td>JOB NUMBER</td><td>0;9</td><td>FREE TEXT</td><td/><td/><td>CHCS job number of the request.</td></tr><tr><td>.1</td><td>SOURCE</td><td>0;10</td><td>FREE TEXT</td><td/><td/><td>The CHCS functionality that is the source of this request. This is not a value returned from DEERS. This value is passed to the CHCS DEERS software.</td></tr><tr><td>1.01</td><td>SPONSOR SSN</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>The SSN of the sponsor.</td></tr><tr><td>1.02</td><td>DATE OF BIRTH</td><td>1;2</td><td>DATE-TIME</td><td/><td/><td>Date of birth of the patient.</td></tr><tr><td>1.03</td><td>FAMILY MEMBER PREFIX</td><td>1;3</td><td>NUMERIC</td><td/><td/><td>The Family Member Prefix code describes the patient's relationship to the sponsor.</td></tr><tr><td>1.04</td><td>FAMILY SEQUENCE NUMBER</td><td>1;4</td><td>NUMERIC</td><td/><td/><td>If multiple families sharing a single sponsor SSN exists on the DEERS database, this DEERS index identifies the members of each separate family.</td></tr><tr><td>1.05</td><td>DEERS DEPENDENT SUFFIX</td><td>1;5</td><td>NUMERIC</td><td/><td/><td>DDS of the patient. DEERS code indicating the sequence of when the dependent was entered on DEERS.</td></tr><tr><td>1.06</td><td>ALTERNATE CARE VALUE</td><td>1;6</td><td>FREE TEXT</td><td/><td/><td>DEERS code indicating the patient's alternate care status.</td></tr><tr><td>1.07</td><td>DMIS CODE</td><td>1;7</td><td>FREE TEXT</td><td/><td/><td>The DMIS location code of the patient.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

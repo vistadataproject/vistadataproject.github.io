@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEERS MAILER</h1></div><div id="results"><dl><dt>name</dt><dd>DEERS MAILER</dd><dt>number</dt><dd>8044</dd><dt>location</dt><dd>^DG(8044,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Pointer to the PATIENT FILE</td></tr><tr><td>.02</td><td>DATE ADDED TO FILE</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>When the patient record is synchonized with Deers, if dataon CHCS is changed, a mailer record is created</td></tr><tr><td>.03</td><td>DATE PRINTED</td><td>0;3</td><td>DATE-TIME</td><td/><td/><td>The date the mailer was printed</td></tr><tr><td>.04</td><td>ERROR FLAG</td><td>0;4</td><td>SET OF CODES</td><td>R:RECIPIENT ADDRESS INVALID<br/></td><td/><td>This field will indicate why a particular mailer record was not printed.</td></tr><tr><td>1.01</td><td>PATIENT NAME</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>Name of patient</td></tr><tr><td>1.02</td><td>PATIENT DATE OF BIRTH</td><td>1;2</td><td>DATE-TIME</td><td/><td/><td>The date of birth of the patient</td></tr><tr><td>1.03</td><td>PATIENT SEX</td><td>1;3</td><td>FREE TEXT</td><td/><td/><td>The gender of the patient</td></tr><tr><td>1.04</td><td>PATIENT SOCIAL SECURITY</td><td>1;4</td><td>NUMERIC</td><td/><td/><td>The social security number of the patient</td></tr><tr><td>1.05</td><td>FAMILY MEMBER PREFIX</td><td>1;5</td><td>NUMERIC</td><td/><td/><td>The family member prefix (FMP) of the patient</td></tr><tr><td>1.06</td><td>SPONSOR SOCIAL SECURITY</td><td>1;6</td><td>NUMERIC</td><td/><td/><td>The social security number of the patient</td></tr><tr><td>1.07</td><td>SPONSOR POINTER</td><td>1;7</td><td>POINTER</td><td><a href="2.html">2</a></td><td/><td>The pointer to the sponsor record</td></tr><tr><td>2.01</td><td>DEERS PATIENT NAME</td><td>2;1</td><td>FREE TEXT</td><td/><td/><td>The name of the patient in Deers</td></tr><tr><td>2.02</td><td>DEERS PATIENT DATE OF BIRTH</td><td>2;2</td><td>DATE-TIME</td><td/><td/><td>The date of birth of the patient in Deers</td></tr><tr><td>2.03</td><td>DEERS PATIENT SEX</td><td>2;3</td><td>FREE TEXT</td><td/><td/><td>The gender of the patient in Deers</td></tr><tr><td>2.04</td><td>DEERS SPONSOR SOCIAL SECURITY</td><td>2;4</td><td>NUMERIC</td><td/><td/><td>The social security number of the sponsor in Deers</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

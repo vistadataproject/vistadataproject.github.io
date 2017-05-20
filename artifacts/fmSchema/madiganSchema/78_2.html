@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RADIOLOGY LABEL</h1></div><div id="results"><dl><dt>name</dt><dd>RADIOLOGY LABEL</dd><dt>number</dt><dd>78.2</dd><dt>location</dt><dd>^RA(78.2,</dd><dt>description</dt><dd>This file contains the print formats for the following types of imagingoutput:           o flash cards          o exam labels          o folder labels</dd><dt>applicationGroups</dt><dd>RA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>FORMAT NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Enter a 3- to 30-character name for this flash card or labelformat.  If each division wants its own format, then namingconventions should be used.</td></tr><tr><td>2</td><td>NUMBER OF ROWS IN FORMAT(+)</td><td>0;2</td><td>NUMERIC</td><td/><td/><td>Enter the total number (from 1 to 66) of rows in this flash card orlabel format.  Include blank rows in this total.  (Rows arehorizontal.)  Although the CHCS accepts a number up to 66, enter anumber that corresponds with the size of the flash card or label. There are instances where flash cards and labels require blanklines at the top or bottom.  For example, if the format containsfive lines of printed text and two blank lines, then you wouldenter 7 in this field.</td></tr><tr><td>50</td><td>PRINT FIELDS</td><td>1;0</td><td>MULTIPLE</td><td><a href="78_21.html">78.21</a></td><td/><td>This field is a multiple containing subfields that determine theformat and content of the flash card or label.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TIME SPECIFICATION</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="77_2.html">77.2</a></dd><dt>name</dt><dd>TIME SPECIFICATION</dd><dt>number</dt><dd>77.21</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DAY OF WEEK</td><td>0;1</td><td>SET OF CODES</td><td>0:SUNDAY<br/>1:MONDAY<br/>2:TUESDAY<br/>3:WEDNESDAY<br/>4:THURSDAY<br/>5:FRIDAY<br/>6:SATURDAY<br/></td><td>ADAY</td><td>Enter the day of the week on which this procedure can be performedin this room.</td></tr><tr><td>.02</td><td>EARLIEST APPT TIME(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>The earliest time of this day that this particular procedure can bescheduled in this particular room.</td></tr><tr><td>.03</td><td>LATEST APPT TIME(+)</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This is the latest time on this particular day of the week that this procedure can be scheduled in this particular room.</td></tr><tr><td>.04</td><td>PATIENT CATEGORY RESTRICTION</td><td>0;4</td><td>SET OF CODES</td><td>1:INPATIENTS ONLY<br/>2:OUTPATIENTS ONLY<br/></td><td/><td>                                        RESTRICTIONEnter 1 if this procedure is to be performed on inpatients only.Enter 2 if this procedure is to be performed on outpatients only. This field determines whether this exam should be performed oninpatients or outpatients. A null entry (that is this field isblank) indicates no restriction by patient category for thisprocedure.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

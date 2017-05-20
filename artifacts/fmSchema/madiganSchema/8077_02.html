@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PATIENT</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8077_01.html">8077.01</a></dd><dt>name</dt><dd>PATIENT</dd><dt>number</dt><dd>8077.02</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Enter the patient's name that belongs on the DD7A</td></tr><tr><td>.05</td><td>DIVISION APOINTMENT WAS DONE</td><td>DIV;1</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td/><td>This is were the apointment visit was done in.</td></tr><tr><td>1</td><td>VISIT DATE/TIME</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>This is the Date and time of the visit</td></tr><tr><td>2</td><td>MEPRS CODE</td><td>0;3</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td/><td>This is the B or C level MEPRS code associated with this visit</td></tr><tr><td>3</td><td>CHARGES</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This field contains the charges that was billed for on the DD7A.</td></tr><tr><td>4</td><td>ADJUSTMENTS</td><td>0;5</td><td>SET OF CODES</td><td>1:Adjustments<br/></td><td/><td>This field is to annotate adjustments made to the DD7A</td></tr><tr><td>5</td><td>CLINIC</td><td>0;6</td><td>POINTER</td><td><a href="44.html">44</a></td><td/><td>CLINIC</td></tr><tr><td>6</td><td>SERVICE CATEGORY</td><td>0;7</td><td>POINTER</td><td><a href="8058_5.html">8058.5</a></td><td/><td>This field is used for Itemized Billing.  It contains the service categoryassociated with the top-level account entry.  This field is determinedbased on the individual line item entries in the billable service chargedetail.  If a single entry exists, the field will match the service categoryof the single entry.  If multiple entries exist, this field will reflecteither OPE+, if there is an entry for an Outpatient Encounter, or MLT, otindicate multiple entries without an Outpatient Encounter.</td></tr><tr><td>7</td><td>TREATING DMIS</td><td>0;8</td><td>POINTER</td><td><a href="8103.html">8103</a></td><td/><td>This field is used for Itemized Billing.  This is the DMIS ID associated withthe Treating DMIS for this entry.</td></tr><tr><td>12</td><td>BILLABLE SERVICE</td><td>1;0</td><td>MULTIPLE</td><td><a href="8077_03.html">8077.03</a></td><td/><td>The Billable Service Sub-file will be used for itemized billing.   Itemizedbilling requires additional information not needed previous when DD7A billingwas performed by MEPRS code.  With the implementation of Itemized Billing,charges will be based on sales code, service category, and date of service. The rate used will be dependent on the type of service.  Multiple rate fileshave been provided to support this function.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INTERFACE SCRIPT</h1></div><div id="results"><dl><dt>name</dt><dd>INTERFACE SCRIPT</dd><dt>number</dt><dd>4006</dd><dt>location</dt><dd>^INRHS(</dd><dt>description</dt><dd>Scripts are used to create and interpret message.  A Transaction Typewill indicate the script needed to perform the appropriate function.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>NUMBER</td><td/><td>11</td><td/><td/><td>This is the number uniquely indentifying the script.</td></tr><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This is the name of the script.  GIS generated scripts are prefixed with"Generated: ".</td></tr><tr><td>.02</td><td>DIRECTION(+)</td><td>0;2</td><td>SET OF CODES</td><td>I:INPUT<br/>O:OUTPUT<br/></td><td/><td>This is the direction of data flow that this script is to process.  INPUT refers to data entering the local database from the Universal InterfaceFIle (UIF).  OUTPUT refers to data being formatted from the local databaseto be placed in the UIF for transmission to a remote host.</td></tr><tr><td>.03</td><td>FILE(+)</td><td>0;3</td><td>POINTER</td><td><a href="1.html">1</a></td><td/><td>This is the root file upon which this script is based.  It is necessary toallow specification of fields, computed expressions, etc. in thescript.</td></tr><tr><td>.04</td><td>INCLUDE ONLY</td><td>0;4</td><td>12</td><td/><td>This field indicates whether this is a full script or not.  If a script isINCLUDE ONLY, then it will not be compiled on its own nor will it requirea file or direction.</td></tr><tr><td>.05</td><td>UNEDITABLE</td><td>0;5</td><td>12</td><td/><td>If this field is set to a 1 this script was automatically generated andcannot be edited using the script editor.  If must be regenerated.</td></tr><tr><td>.06</td><td>NUMBER OF COMPILED ROUTINES</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>This the number of routines that were created in order to compilethis script.</td></tr><tr><td>.07</td><td>STANDARD(+)</td><td>0;7</td><td>SET OF CODES</td><td>HL7:HL7<br/>NCPDP:NCPDP<br/>X12:X12<br/>ADSI:ADSI<br/>HTML:HTML<br/>XML:XML<br/>MOBJ:MOBJ<br/></td><td/><td>The STANDARDS set of codes represents the protocol standard that will be usedby the Generic Interface System to properly format or parse messages.</td></tr><tr><td>1</td><td>ROUTINE</td><td/><td>COMPUTED</td><td/><td/><td>This is the primary compiled routine that is called in order to runthis script.</td></tr><tr><td>2</td><td>SCRIPT TEXT</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>This is the text of the script.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

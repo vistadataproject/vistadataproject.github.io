@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SMTP MAIL STATISTICS</h1></div><div id="results"><dl><dt>name</dt><dd>SMTP MAIL STATISTICS</dd><dt>number</dt><dd>3.99</dd><dt>location</dt><dd>^XMTP(3.99,</dd><dt>description</dt><dd>This file contains mail statistics which may be useful to determinewhich users are abusing mail. Whenever a mail message is sent orreceived, this file is updated. The SMTP UNAUTHORIZED DOMAIN File(file #3.98) can be used to disallow users access to certain domains.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DATE/TIME(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>The date/time the statistics information was placed into the file.When a network message is sent or received, the sender, recipient,domain, and size of the message are stored in this file.</td></tr><tr><td>.02</td><td>USER</td><td>0;2</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>The user that either sent or received the network message.</td></tr><tr><td>.03</td><td>DOMAIN</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>The domain name that this network message was sent to or received from.This will be an IP address if the domain name cannot be resolved.</td></tr><tr><td>.04</td><td>SENDER</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field will contain the sender of the mail message.  The sender canbe local (with a mail message originating locally) or remote (when amail message is received across the network).</td></tr><tr><td>.05</td><td>RECIPIENT</td><td>0;5</td><td>FREE TEXT</td><td/><td/><td>The recipient of the mail message that caused the entry.</td></tr><tr><td>.06</td><td>NO OF LINES</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>The total number of message lines that produced the entry inthe file.</td></tr><tr><td>.07</td><td>SENT/RECEIVED</td><td>0;7</td><td>SET OF CODES</td><td>0:SENT<br/>1:RECEIVED<br/></td><td/><td>This field indicates how the entry was generated in the file (eitherwhen a message was being sent or received).</td></tr><tr><td>.08</td><td>MESSAGE</td><td>0;8</td><td>POINTER</td><td><a href="3_9.html">3.9</a></td><td/><td>A pointer to the MESSAGE File which indicates the message which generated the entry.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

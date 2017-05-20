@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ACTIVATION/INACTIVATION DATE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8119.html">8119</a></dd><dt>name</dt><dd>ACTIVATION/INACTIVATION DATE</dd><dt>number</dt><dd>8119.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ACTIVATION/INACTIVATION DATE(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td/><td>This field holds an activation or inactivation date. There are some restrictions on entering and editing activation dates andstatuses:      1. The first status entered must be "ACTIVE".     2. Retroactive inactivations (before tomorrow) are not allowed, but        retroactive activations are okay.     3. Activations and inactivations must follow each other in         chronological order (eg. you can't enter 2 active statuses in a        row for a given code).     4. Activation dates & status for NEW MEPRS codes only may be entered        in the MEPRS Codes Maintenance. ALL SUBSEQUENT EDITS after the        original entry session must be made through the Inactivate/        Reactivate option in the Common File and Table Maintenance Menu.     5. Future activation dates are not allowed.</td></tr><tr><td>2</td><td>ACTIVE/INACTIVE STATUS(+)</td><td>0;2</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td/><td>This field tells you whether the date in the .01 field of this multiple isan activation or inactivation date. There are some restrictions on entering and editing activation dates andstatuses:      1. The first status entered must be "ACTIVE".     2. Retroactive inactivations (before tomorrow) are not allowed, but        retroactive activations are okay.     3. Activations and inactivations must follow each other in         chronological order (eg. you can't enter 2 active statuses in a        row for a given code).     4. Activation dates & status for NEW MEPRS codes only may be entered        in the MEPRS Codes Maintenance. ALL SUBSEQUENT EDITS after the        original entry session must be made through the Inactivate/        Reactivate option in the Common File and Table Maintenance Menu.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

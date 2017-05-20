@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > APPT SLOT</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8592.html">8592</a></dd><dt>name</dt><dd>APPT SLOT</dd><dt>number</dt><dd>8592.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>APPT SLOT</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>slot number</td></tr><tr><td>1</td><td>DENTAL TYPE(+)</td><td>0;2</td><td>POINTER</td><td><a href="8507.html">8507</a></td><td/><td>This is the pointer to the CBS DENTAL TYPES file #8507.</td></tr><tr><td>2</td><td>NUMBER OF PATIENTS(+)</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>Number of patients in slot</td></tr><tr><td>3</td><td>SLOT COMMENT</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>Comment associated with the slot.</td></tr><tr><td>4</td><td>TREATMENT ROOM</td><td>0;5</td><td>POINTER</td><td><a href="8593.html">8593</a></td><td/><td>Pointer to CBS Operatory Treatment Room file.</td></tr><tr><td>5</td><td>ESSENTIAL PROVIDER</td><td>1;0</td><td>MULTIPLE</td><td><a href="8592_04.html">8592.04</a></td><td/><td>The essential providers associated with this schedule template.</td></tr><tr><td>6</td><td>DURATION</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>Slot duration in minutes</td></tr><tr><td>7</td><td>OPTIONAL PROVIDER</td><td>2;0</td><td>MULTIPLE</td><td><a href="8592_05.html">8592.05</a></td><td/><td>The optional providers associated with this schedule template.</td></tr><tr><td>8</td><td>WORKLOAD TYPE</td><td>0;7</td><td>SET OF CODES</td><td>1:COUNT<br/>0:NON-COUNT<br/></td><td/><td>Set this field to 'Count' if the appointment type should be reportedas Count workload.  Set this field to 'Non-Count' if the appointmenttype should be reported as non-count workload.</td></tr><tr><td>9</td><td>APPT DETAIL CODES</td><td>3;0</td><td>MULTIPLE</td><td><a href="8592_03.html">8592.03</a></td><td/><td>Select up to three appointment detail codes to further define theappointment type when creating schedule slots or to define thepurpose of a patient appointment when scheduling the appointment.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

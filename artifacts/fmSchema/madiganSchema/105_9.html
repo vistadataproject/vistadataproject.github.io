@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DMHRS ACUITY</h1></div><div id="results"><dl><dt>name</dt><dd>DMHRS ACUITY</dd><dt>number</dt><dd>105.9</dd><dt>location</dt><dd>^ORAC(105.9,</dd><dt>description</dt><dd>The DMHRS ACUITY file receives data only via an HL7 message from DMHRS.That data is then stored in this file on CHCS.  The Nursing Care Hoursfor each patient for each episode will be used by PAD functionality to be recorded on the SIDR tape in approximately monthly increments.  </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This field contains the patient IEN and is a pointer to the Patient (#2)file.  Data is entered into this field only via an HL7 message from DMHRS.</td></tr><tr><td>.02</td><td>REGISTER NUMBER(+)</td><td>0;2</td><td>NUMERIC</td><td/><td/><td>This is the patient's register number that is associated with a specificepisode of the patient.  Data is entered into this field only via an HL7message from DMHRS.</td></tr><tr><td>.03</td><td>DATE/TIME OF CARE(+)</td><td>0;3</td><td>DATE-TIME</td><td/><td/><td>This is the date/time  associated with the patient's acuity level. Data is entered into this field only via an HL7 message from DMHRS.</td></tr><tr><td>.04</td><td>PATIENT ACUITY(+)</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This is the patient's acuity value associated with this date of care.  It isa number ranging from 0 to 6.  Data is entered into this field only via anHL7 message from DMHRS.</td></tr><tr><td>.05</td><td>NURSING CARE HOURS(+)</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>This is the number of nursing care hours associated with the patient's acuity level.  Data is entered into this field only via an HL7 message fromDMHRS.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

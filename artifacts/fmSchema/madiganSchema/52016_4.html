@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IMMUNIZATION SCHEDULE TEMPLATES</h1></div><div id="results"><dl><dt>name</dt><dd>IMMUNIZATION SCHEDULE TEMPLATES</dd><dt>number</dt><dd>52016.4</dd><dt>location</dt><dd>^GPC(52016.4,</dd><dt>description</dt><dd>This file contains the immunization schedules as determined by MTF policy.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains the name of the schedule template.</td></tr><tr><td>.02</td><td>SCHEDULE TYPE</td><td>0;2</td><td>SET OF CODES</td><td>S:SERIES<br/>A:ANNUAL<br/>C:COMBO<br/></td><td/><td>This field contains the type of schedule for this template.The choices includes Series, Annual and Combo (series and boosters).Within the Immun/Skin Maintenance option the user can indicatewhich schedule is suitable for the individual Immunization or Skin Test.If no schedule is defined for the test, then the next dose due date willindicate not applicable.</td></tr><tr><td>.03</td><td>BOOSTER LENGTH</td><td>0;3</td><td>SET OF CODES</td><td>D:DAYS<br/>W:WEEKS<br/>M:MONTHS<br/>Y:YEARS<br/></td><td/><td>This field indicates the period between booster doses.</td></tr><tr><td>.04</td><td>BOOSTER INTERVAL</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This field indicates the interval between boosters.</td></tr><tr><td>.05</td><td>SERIES INTERVAL LENGTH</td><td>0;5</td><td>SET OF CODES</td><td>D:DAYS<br/>W:WEEKS<br/>M:MONTHS<br/>Y:YEARS<br/></td><td/><td>This field indicates the period between doses.</td></tr><tr><td>.06</td><td>NUMBER OF DOSES</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>This field contains the total number of doses in the  series for this schedule template.</td></tr><tr><td>.07</td><td>ANNUAL INTERVAL</td><td>0;7</td><td>NUMERIC</td><td/><td/><td>This field indicates the number of years betweendoses for this schedule.</td></tr><tr><td>3.01</td><td>LAST EDITED USER</td><td>3;1</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This field points to the user file and contains theuser who last edited the file.</td></tr><tr><td>3.02</td><td>LAST EDITED DATE</td><td>3;2</td><td>DATE-TIME</td><td/><td/><td>This field contains the date the file was last edited.</td></tr><tr><td>5</td><td>INTERVAL NUMBER</td><td>5;0</td><td>MULTIPLE</td><td><a href="52016_405.html">52016.405</a></td><td/><td>This field contains the interval number.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

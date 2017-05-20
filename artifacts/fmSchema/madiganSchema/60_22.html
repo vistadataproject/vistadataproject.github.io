@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CHEMISTRY PERFORMING LAB</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="60_21.html">60.21</a></dd><dt>name</dt><dd>CHEMISTRY PERFORMING LAB</dd><dt>number</dt><dd>60.22</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CHEMISTRY PERFORMING LAB</td><td>0;1</td><td>VARIABLE-POINTER</td><td><a href="4.html">4</a>, <a href="8101_1.html">8101.1</a></td><td>B</td><td>This field is the multiple for the Performing Laboratory for Chemistrytests.</td></tr><tr><td>.02</td><td>DEFAULT</td><td>0;2</td><td>12</td><td/><td>When this field is set to Yes, the Chemistry Performing Lab will be usedas the default performing lab for this test for this Lab Work Element.</td></tr><tr><td>.03</td><td>LAB METHOD(+)</td><td>0;3</td><td>POINTER</td><td><a href="8710.html">8710</a></td><td/><td>This field contains the Lab Method to be used for results received forthis test from this performing lab.</td></tr><tr><td>1</td><td>RESULT CODE</td><td>1;0</td><td>MULTIPLE</td><td><a href="60_24.html">60.24</a></td><td/><td>This field is the multiple for the Chemistry Performing Laboratory Result Codes.</td></tr><tr><td>2.01</td><td>TYPE OF PERFORMING LABORATORY(+)</td><td>2;1</td><td>SET OF CODES</td><td>L:LAB INTEROPERABILITY (LIO)<br/>O:ORDERS PORTABILITY<br/></td><td/><td>This will be used to determine whether to use the data for LabInteroperability or Orders Portability when logging in Lab orders from anoutside performing lab.  If the Type of Performing Lab is not defined, itwill be assumed that the performing lab is a Lab Interoperability facility. </td></tr><tr><td>2.02</td><td>DEFAULT ACCESSION AREA</td><td>2;2</td><td>POINTER</td><td><a href="68.html">68</a></td><td/><td>This is the Accession Area to be used when an accession is received from theVA.  If no Accession Area is designated and the test can be performed in morethan one Accession Area, the test may not be able to be logged in.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER ENTRY SYSTEM WARNINGS</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER ENTRY SYSTEM WARNINGS</dd><dt>number</dt><dd>109.7</dd><dt>location</dt><dd>^ORP(109.7,</dd><dt>description</dt><dd>This file serves as a system warning if a data relationship problem exists. The fields document the name of the problem routine, the order entry systemwarning number, and the descriptions of the data in conflict.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NUMBER(+)</td><td>0;1</td><td>NUMERIC</td><td/><td>B</td><td>Enter a number between 0 and 999,999,999.99 - the order entry systemwarning number.</td></tr><tr><td>.02</td><td>ROUTINE</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>Free text - allows 3-8 characters to store the problem routine name.</td></tr><tr><td>.03</td><td>LINE</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>Free text - allows 1-15 characters to indicate the line where the problemoccurs.</td></tr><tr><td>1</td><td>DESCRIPTION</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>Place holder for sub-field description.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROVIDER</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8273.html">8273</a></dd><dt>name</dt><dd>PROVIDER</dd><dt>number</dt><dd>8273.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PROVIDER</td><td>0;1</td><td>POINTER</td><td><a href="6.html">6</a></td><td/><td>Pointer to Provider file (#6) which indicates the reasults that will displayon the provider's Review New Results (RNR) screen.</td></tr><tr><td>5.02</td><td>NEW/SAVE/DISCARD(+)</td><td>0;2</td><td>SET OF CODES</td><td>N:NEW<br/>S:SAVE<br/>D:DISCARD<br/></td><td/><td>The field contains a set of codes, indicating whether a user</td></tr><tr><td>5.03</td><td>FORWARDED BY</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>Pointer to User file (#3), identifying the provider to whom the telephoneconsult should be forwarded.</td></tr><tr><td>5.04</td><td>SIGNED</td><td>0;4</td><td>SET OF CODES</td><td>1:SIGNED<br/></td><td/><td>The field contains a set of code.  Enter "1" to indicate that the providerhas signed the results.</td></tr><tr><td>5.05</td><td>DISCARDING PROVIDER</td><td>0;5</td><td>POINTER</td><td><a href="6.html">6</a></td><td/><td>Pointer to Provider file (#6), indicating which provider is discarding theresult without signing it.</td></tr><tr><td>5.06</td><td>DISCARD DATE/TIME</td><td>0;6</td><td>DATE-TIME</td><td/><td/><td>The field contains the date and time that the result has been discarded.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QAF PROVIDER CREDENTIALING OPTIONS</h1></div><div id="results"><dl><dt>name</dt><dd>QAF PROVIDER CREDENTIALING OPTIONS</dd><dt>number</dt><dd>8896</dd><dt>location</dt><dd>^QA(8896,</dd><dt>description</dt><dd>  The table lists all the possible options available to enter credentials to a provider.  These are displayed to the user when he selects the menu 'Credential Profile' under 'Provider profile'.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>OPTION NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains the text description of the groupings ofcredentials used in documenting provider's professionalactivities.  Examples of credentials types are as follows:LICENSES, CONTINUING EDUCATION, PERIODIC TRAINING, CERTIFICATION,etc.  Each of these Credential Types is an option on the FacilityQA Credentials menu.</td></tr><tr><td>6</td><td>ACTION</td><td>0;6</td><td>FREE TEXT</td><td/><td/><td>This field is used to set the 1st piece of a pointed to file normally displayedto the user.  Most of the time, the 4th piece of each of the PROVIDER multiplesare not pointer fields, but they sometimes are.  In these cases, this fieldis necessary to set the 1st piece of the pointed to file to properly displaydata.</td></tr><tr><td>7</td><td>POINTER GLOBAL</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field contains the global number to which the variablefields point for each credential type.  These globals contain thetable entries used to enter collateral information for eachcredential type.</td></tr><tr><td>9</td><td>HEADING</td><td>0;8</td><td>FREE TEXT</td><td/><td/><td>This field contains the screen headings used in menu option PRO->CRE.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

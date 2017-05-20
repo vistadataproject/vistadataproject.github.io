@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MCP TSC ERROR MESSAGES</h1></div><div id="results"><dl><dt>name</dt><dd>MCP TSC ERROR MESSAGES</dd><dt>number</dt><dd>8599</dd><dt>location</dt><dd>^CPE(</dd><dt>description</dt><dd>Repository of error message text and explanations by error codefor TSC (Tricare Support Contractors) software based on GIS/HL7 messaging software.  The included errors primarily related toinbound messages reporting data problems in acknowledgement messages.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>NUMBER</td><td/><td>11</td><td/><td/><td>allows dinum</td></tr><tr><td>.01</td><td>ERROR ID(+)</td><td>0;1</td><td>NUMERIC</td><td/><td>B</td><td>TSC ERROR ID</td></tr><tr><td>1</td><td>ERROR TEXT</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>Text, up to 60 characters, of errorproblem found during reception of message</td></tr><tr><td>2</td><td>ERROR TECHNICAL DESCRIPTION</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>Error text technical descriptions - detail information</td></tr><tr><td>3</td><td>ERROR LEVEL</td><td>0;3</td><td>SET OF CODES</td><td>0:NON CRITICAL<br/>1:CRITICAL<br/>2:FATAL<br/>U:UNKNOWN<br/></td><td/><td>Indicates criticality of error 0 - non critical  = worthy of noting but does not reject message1 - critical      = does not reject message but accumulation of                    critical errors would raise concern over data                    correctness2 - fatal         = can not continue with significant data missing                    (severe data inconsistency)U - UNKNOWN       = must be determined in context of validatation                    checks (this is default)</td></tr><tr><td>4</td><td>FUNCTIONALITY</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>Functionality where error can occur</td></tr><tr><td>5</td><td>POSSIBLE CAUSE</td><td>2;0</td><td>WORD-PROCESSING</td><td/><td/><td>Possible cause of error</td></tr><tr><td>6</td><td>POSSIBLE SOLUTION</td><td>3;0</td><td>WORD-PROCESSING</td><td/><td/><td>Possible solution to fix error</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

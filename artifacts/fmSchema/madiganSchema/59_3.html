@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FORMULARY GROUP</h1></div><div id="results"><dl><dt>name</dt><dd>FORMULARY GROUP</dd><dt>number</dt><dd>59.3</dd><dt>location</dt><dd>^PS(59.3,</dd><dt>description</dt><dd>This file will allow MTFs to create groupings of outpatient sites in orderto allow for variations which may be needed for formulary information.  Whena new formulary group is created, the user will have the option to copy anexisting formulary from another group.  Any desired changes can then bemade to fit that group's needs.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>A Formulary group is a collection of drug information shared byOutpatient Sites and/or Inpatient Divisions.</td></tr><tr><td>.02</td><td>STATUS(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:INACTIVE<br/>1:ACTIVE<br/></td><td/><td>A Formulary Group cannot be inactivated if there are any associatedOutpatient Pharmacy sites or Inpatient divisions.  The status must beset to ACTIVE before Inpatient divisions can be associated with anInpatient formulary group.</td></tr><tr><td>.03</td><td>COPIED FROM</td><td>0;3</td><td>POINTER</td><td><a href="59_3.html">59.3</a></td><td/><td>If the user elects to copy from an existing formulary, the selected group,user's name, and copy date/time will be saved for future reference.</td></tr><tr><td>.04</td><td>CREATED BY</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This field indicates the name of the user who created the formulary group.</td></tr><tr><td>.05</td><td>DATE CREATED</td><td>0;5</td><td>DATE-TIME</td><td/><td/><td>This field indicates the date when the formulary group was created.</td></tr><tr><td>.06</td><td>IV/UD GROUP</td><td>0;6</td><td>12</td><td/><td>This field allows the formulary group to be designated as the Inpatientformulary group.  Once set to YES, it cannot be toggled back to NO if anyInpatient divisions are associated with the formulary group.  Before settingto NO, you must first delete the Inpatient divisions from the group.  It isrecommended that any Inpatient divisions that are still to be used for orderentry be assigned to another Inpatient formulary group.      </td></tr><tr><td>.99</td><td>OP SITES</td><td/><td>COMPUTED</td><td/><td/><td>This field indicates the outpatient pharmacies assigned to this formularygroup.</td></tr><tr><td>1</td><td>ASSOCIATED INPATIENT DIVISIONS</td><td>1;0</td><td>MULTIPLE</td><td><a href="59_31.html">59.31</a></td><td/><td>  </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

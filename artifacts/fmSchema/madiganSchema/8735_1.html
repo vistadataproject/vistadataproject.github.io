@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB RULES DATA ELEMENTS</h1></div><div id="results"><dl><dt>name</dt><dd>LAB RULES DATA ELEMENTS</dd><dt>number</dt><dd>8735.1</dd><dt>location</dt><dd>^LAB(8735.1,</dd><dt>description</dt><dd>This CLASS 1 file id designed to provide the system with a controlledlist of CHCS Data Elements that can used withe rules processing capability.Data elements such as patient age, current test results, or previous testresults, are exposed in this file. Each data element in this filecan be evaluated within the context of a rules' IF CONDITION and basedon the condition, further action can be specified in the rules' THENportion.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DATA ELEMENT NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field is the name of the data element that can be used within a rule.</td></tr><tr><td>.02</td><td>EXTERNAL REPRESENTATION</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This field will be used to provide the EXTERNAL REPRESENTATION of thisdata element while in the rules-building option. This is to allow thedata element to be displayed or printed in a more English-like fashionthat will be understandable by the user building the rules.</td></tr><tr><td>.03</td><td>INTERNAL REPRESENTATION</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field will be used to provide the INTERNAL REPRESENTATION of thisdata element in the rules building option. This allows the system to havea minimal, internal variable or array name that contains this data. Thisfield will be used by the rules compilation engine t construct the actualcondition or action string to be evaluated or performed during rulesprocessing phase of result entry.</td></tr><tr><td>.04</td><td>BUILD MODULE</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field is used to specify the code module to be executed to populatethis particular data element. Population is performed during the rulesexecution portion of result entry. This field tell the system which codemodule to perform to fetch and manipulate the data as needed to allowthe rules execution engine to make evaluations of the data.</td></tr><tr><td>.05</td><td>BUILD ROUTINE</td><td>0;5</td><td>FREE TEXT</td><td/><td/><td>This field is use dby the system to specify which routine holds the BUILDMODULE code. This routine will be called during the rules processing phaseof result entry to populate the data necessary for this data element.</td></tr><tr><td>.06</td><td>SELECTION FILE/SUB-FILE(S)</td><td>0;6</td><td>FREE TEXT</td><td/><td/><td>This field specifies which, if any, files and optionally sub-files towhich look-up capabilities should be used to more precisely identifythe specific data element to be evaluated within the rule.</td></tr><tr><td>1</td><td>DESCRIPTION</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>This word processing field is used to provide additional details on thisdata element.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BLOOD TYPE BULLETIN RECIPIENTS</h1></div><div id="results"><dl><dt>name</dt><dd>BLOOD TYPE BULLETIN RECIPIENTS</dd><dt>number</dt><dd>8713</dd><dt>location</dt><dd>^LAB(8713,</dd><dt>description</dt><dd>This file contains the site-definable recipients of the Blood TypeBulletin (sent by routine LRBBABO when there is a discrepancy in thepatient's blood type.  The .01 field is a variable pointer.  It pointsto 3 files: User, Mail Group, and Device.  The .02 field and the crossreference on that field exist solely for the purpose of navigating fromthe Lab Host Platform Parameters file back to this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>BULLETIN RECIPIENT(+)</td><td>0;1</td><td>VARIABLE-POINTER</td><td><a href="3.html">3</a>, <a href="3_5.html">3.5</a>, <a href="3_8.html">3.8</a></td><td>B</td><td>This field contains the user(s), device(s), and/or mail group(s) that willreceive a MailMan bulletin when there is a discrepancy in the Patient BloodType stored in the Patient file and a new Blood Type that is being sent tothe Patient file.  The bulletin will also be issued if the data being passedcannot be matched to an entry in the Patient file.</td></tr><tr><td>.02</td><td>HOST</td><td>0;2</td><td>POINTER</td><td><a href="8700.html">8700</a></td><td>AC</td><td>This field is used so that a look-up-only cross reference could be createdfor use by the Lab Host Platform Parameters file gallery, LRHPPEDIT.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

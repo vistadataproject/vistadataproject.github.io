@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INSURANCE POLICY TYPE</h1></div><div id="results"><dl><dt>name</dt><dd>INSURANCE POLICY TYPE</dd><dt>number</dt><dd>8087</dd><dt>location</dt><dd>^MSAS(8087,</dd><dt>description</dt><dd>This file contains the HIPAA standard insurance policy types,such as Commercial, Group, HMO, etc.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Code used to identify the type of policy held by theinsured party.</td></tr><tr><td>2</td><td>DESCRIPTION(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>Description of the policy type, i.e. group, commercial,etc.</td></tr><tr><td>3</td><td>GROUP FLAG(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:GROUP POLICY<br/>0:NON-GROUP POLICY<br/></td><td/><td>Flag indicating whether this policy type is group ornon-group. (0 - non-group, 1 - group).  If the policyis a group type, additional information is required atthe time policy information is entered, such as groupname and number.</td></tr><tr><td>4</td><td>SUPPLEMENT TYPE</td><td>0;4</td><td>SET OF CODES</td><td>1:CHAMPUS SUPPLEMENT<br/>2:MEDICARE/MEDICAID SUPPLEMENT<br/></td><td/><td>Indicates whether this policy type is Champus or Medicaresupplemental.  If the policy is Medicare supplemental,certain limitations apply to the billing of the policy,for example, the maximum billable amount for an inpatientvisit.</td></tr><tr><td>8196</td><td>DBA INACTIVE FLAG</td><td>28;1</td><td>SET OF CODES</td><td>1:Inactive<br/></td><td/><td>Indicates if the entry is no longer being used.</td></tr><tr><td>8197</td><td>DEACTIVATION DATE</td><td>28;2</td><td>DATE-TIME</td><td/><td/><td>The date this entry was inactivated.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

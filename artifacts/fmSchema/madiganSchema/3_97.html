@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SMTP ENGINE</h1></div><div id="results"><dl><dt>name</dt><dd>SMTP ENGINE</dd><dt>number</dt><dd>3.97</dd><dt>location</dt><dd>^XMTP(3.97,</dd><dt>description</dt><dd>This file contains the logic of how SMTP should perform.  It is a tableand should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>COMMAND(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>The SMTP command.</td></tr><tr><td>.02</td><td>SEND ROUTINE</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>The name of the routine that will be used to generate the stringto send while in send mode.</td></tr><tr><td>.03</td><td>RECEIVE ROUTINE</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>The name of the routine used to determine what reply code should beused to send back while in receive mode.</td></tr><tr><td>.04</td><td>TIMEOUT</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>The time MailMan will wait for a response for the command.</td></tr><tr><td>.05</td><td>CLEAR</td><td>0;5</td><td>12</td><td/><td>If set to YES, when this SMTP command is received, the internal tablescontaining the current message will be cleared.</td></tr><tr><td>.06</td><td>TYPE</td><td>0;6</td><td>SET OF CODES</td><td>R:RECEIVE MANY<br/>O:ONE TO ONE<br/>S:SEND MANY<br/></td><td/><td>The type of SMTP command which indicates whether it will accept asingle line response, whether it will be sending many lines withouta response, and whether it will be receiving many lines withoutsending anything.</td></tr><tr><td>1</td><td>SMTP CODES</td><td>1;0</td><td>MULTIPLE</td><td><a href="3_9701.html">3.9701</a></td><td/><td>Multiple tracking the possible SMTP reply codes generated from the command.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

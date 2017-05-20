@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SIDR ICD PLACEHOLDER SET</h1></div><div id="results"><dl><dt>name</dt><dd>SIDR ICD PLACEHOLDER SET</dd><dt>number</dt><dd>80.2</dd><dt>location</dt><dd>^DODT(80.2,</dd><dt>description</dt><dd>The SIDR ICD PLACEHOLDER SET file contains ICD DOD Unique codes that arefor use by CHCS only.  These ICD DOD Unique codes are system generatedand must not be used by end-users or sent to off-board systems.  CHCSuses these codes as placeholder codes that are system generated and are not part of any ICD code set. This is a standard file (classified as Group 1) and cannot be modifiedby the site.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This is the DOD Unique code specific to only CHCS.  This is a systemgenerated code used by CHCS as a placeholder.  This code is not partof any ICD code set and must not be used by end-users or off-boardsystems.</td></tr><tr><td>2</td><td>SHORT NARRATIVE</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This is the short description associated with the code.This field is for CHCS internal system use only.</td></tr><tr><td>3</td><td>LONG NARRATIVE</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This is the long description associated with the code.This field is for CHCS internal system use only.</td></tr><tr><td>8193</td><td>ACTIVATION/INACTIVATION DATE</td><td>8193;0</td><td>MULTIPLE</td><td><a href="80_21.html">80.21</a></td><td/><td>This multiple holds the effective dates that these ICD DOD UNIQUE codesbecome active or inactive.  Each code will have an activation date andan inactivation date may be added if the code is scheduled for inactivation.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

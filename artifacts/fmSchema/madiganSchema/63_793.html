@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ANTIBIOTIC</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="63_792.html">63.792</a></dd><dt>name</dt><dd>ANTIBIOTIC</dd><dt>number</dt><dd>63.793</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ANTIBIOTIC</td><td>0;1</td><td>POINTER</td><td><a href="62_12.html">62.12</a></td><td/><td>This field contains a name of antibiotic from the Antibiotic Susceptibilityfile.</td></tr><tr><td>.02</td><td>SENSITIVITY</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This a free-text field used to enter either an MIC number result or a codeto designate the organism as sensitive, resistant, or intermediate to thisdrug at this concentration.</td></tr><tr><td>.03</td><td>INTERPRETATION</td><td>0;3</td><td>POINTER</td><td><a href="8727.html">8727</a></td><td/><td>This field is where the corresponding interpretation of antibiotic testing is stored.>This field points to the Lab Interpretation file.</td></tr><tr><td>.04</td><td>TB ANTIBIOTIC LOINC CODE</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field is the LOINC Code assigned by the system for this test result.If the system can determine the LOINC code, it is automatically assigned.For Mycobacterium, LOINC codes are captured for each Mycobacteriumidentified and each antibiotic tested. Data in this field is the actual LOINC code value determined for this test.The data is the same as the .01 field of the LOINC Codes file (file #8199).Note this field is NOT a pointer field. This is to allow test results andLOINC codes to be assigned that may not be in the LOINC codes file. A LOINCcode which is not in CHCS may be captured from an off-board system via anHL-7 message when the off-board system is using a different version of theLOINC tables. Data in this field should not be modified by the user and is generallyhidden from most data entry mechanisms.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OUTPATIENT SIDR TAPE</h1></div><div id="results"><dl><dt>name</dt><dd>OUTPATIENT SIDR TAPE</dd><dt>number</dt><dd>8002</dd><dt>location</dt><dd>^SADTRAN(</dd><dt>description</dt><dd>This is a file used for holding historical records of SIDR OutpatientData transmissions by month/year.  It has a DINUMED month/year .01field.  The data is stored in this format:^SADIEN(Mo/yr,1,SAD IEN,0)=SID IEN (from 44.2)^Record type (A or S)</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>MONTH/YEAR(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>Month/year for the SIDR outpatient tape transmission.</td></tr><tr><td>1</td><td>DIVISION</td><td>1;0</td><td>MULTIPLE</td><td><a href="8002_01.html">8002.01</a></td><td/><td>Multiple containing all divisions for which the outpatient SIDR tapeis being run.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

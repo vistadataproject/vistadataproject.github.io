@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INTERFACE OPERATING SYSTEM</h1></div><div id="results"><dl><dt>name</dt><dd>INTERFACE OPERATING SYSTEM</dd><dt>number</dt><dd>4002.1</dd><dt>location</dt><dd>^INTHOS(</dd><dt>description</dt><dd>This is a control file that is used to hold operating system specificcode.  This is used in the operation of the interface.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>OS NAME(+)</td><td>0;1</td><td>POINTER</td><td><a href="_7.html">.7</a></td><td>B</td><td>This is the name of the MUMPS operating system</td></tr><tr><td>1</td><td>JOB COMMAND(+)</td><td>1;E1,250</td><td>FREE TEXT</td><td/><td/><td>This is a template for the JOB command to start a process.  Use an * in place of the tag^routine(params).  For example, if this OS would require allroutines to be "jobbed" with a special parameter (pdev=0), enter a        J *:(pdev=0)in this field.</td></tr><tr><td>2</td><td>JOBBED ROUTINE INIT CODE</td><td>2;E1,245</td><td>FREE TEXT</td><td/><td/><td>This is MUMPS code which will be executed by each routine started with aJOB command before normal execution begins.</td></tr><tr><td>3</td><td>ERROR LOGIC(+)</td><td>3;E1,245</td><td>FREE TEXT</td><td/><td/><td>This is MUMPS code executed when a MUMPS error occurs within the GIS system.It should invoke the proper error logging routine at a minimum.</td></tr><tr><td>4</td><td>IS JOB ACTIVE</td><td>4;E1,250</td><td>FREE TEXT</td><td/><td/><td>This is MUMPS code which can be used instead of Lock checking to determineif a particular job is active.  The code will be Xecuted with X=job # andshould edit with X=0 for not running or 1 if running.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

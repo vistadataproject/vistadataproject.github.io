@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CPT/HCPCS</h1></div><div id="results"><dl><dt>name</dt><dd>CPT/HCPCS</dd><dt>number</dt><dd>8151</dd><dt>location</dt><dd>^DACPT(</dd><dt>description</dt><dd>This file is a standard DOD (Group 1) file which is sent fully populated tothe sites, with annual updates provided. It contains both CURRENT PROCEDURALTERMINOLOGY (CPT) codes and the Health Care Administration's Level IIProcedure Coding System (HCPCS) codes.      </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>The CPT/HCPCS code is a 5 character code. CPT codes range from 00100 -99499. HCPCS codes are alpha-numeric and use the following format: X9999 (X:alphabetic character, 9: numeric digit).</td></tr><tr><td>2</td><td>DESCRIPTION(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>The description field is the short description for a particular CPT/HCPCScode.</td></tr><tr><td>3</td><td>AMT FLAG</td><td>0;3</td><td>12</td><td/><td>The Auto Multichannel Test (AMT) flag is used to identify a CPT codeassociated with an Auto Multichannel Test.</td></tr><tr><td>4</td><td>AMT QTY</td><td>3;0</td><td>MULTIPLE</td><td><a href="8151_03.html">8151.03</a></td><td/><td>The Auto Multichannel Test (AMT) QTY field is used to associate the number oftests in a panel with the related CPT code.     </td></tr><tr><td>5</td><td>LONG DESCRIPTION</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>The Long Description field is the 200 character description for the CPT/HCPCScode.</td></tr><tr><td>6</td><td>MODIFIER</td><td>2;0</td><td>MULTIPLE</td><td><a href="8151_02.html">8151.02</a></td><td/><td>The Modifier multiple is used to store data related to the two characterextension used to further describe a procedure.</td></tr><tr><td>7</td><td>OWNER</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>The Owner field is a one character identifier used to denote the DoDorganization responsible for maintaining workload and cost reportinginformation for the CPT code.  </td></tr><tr><td>8193</td><td>ACTIVATION/INACTIVATION DATE</td><td>8193;0</td><td>MULTIPLE</td><td><a href="8151_01.html">8151.01</a></td><td/><td>CPT-4 codes may be inactivate and reactivated if necessary.   </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

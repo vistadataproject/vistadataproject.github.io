@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INCIDENT #</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8880_15.html">8880.15</a></dd><dt>name</dt><dd>INCIDENT #</dd><dt>number</dt><dd>8880.16</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>Incident #(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains a 4-8 character unique system generatednumber which identifies a nursing incident.  It is made up of theyear, a dash, and a number which is automatically incremented byone each time an incident is entered (i.e., 94-1, 94-2, etc.).</td></tr><tr><td>1</td><td>Date Received(+)</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>This field contains the date on which the reviewer received anincident which was forwarded to him/her for review.  This is arequired field.</td></tr><tr><td>2</td><td>Date Initially Read</td><td>0;3</td><td>DATE-TIME</td><td/><td/><td>This field contains the date on which the reviewer first reviewedan incident which was forwarded to him/her for review.</td></tr><tr><td>3</td><td>Header Information</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field contains the information included in the header ofprint templates when the incident is viewed or displayed on areport.  It includes the following information:  the incidentnumber, formatted with the leading zeros; the date on which theincident occurred; the subject of the incident, the initials ofthe person initially documenting the incident, and thesubcategory of the incident.</td></tr><tr><td>4</td><td>POINTER(+)</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>This field points to the internal entry number of the incidentbeing reviewed. </td></tr><tr><td>5</td><td>ANCILLARY(+)</td><td>0;6</td><td>SET OF CODES</td><td>NUR:NURSING<br/>LAB:LABORATORY<br/></td><td/><td>This field contains the ancillary department with which theincident being reviewed is associated.  This value is derivedfrom a set of codes, currently including "NUR" for Nursing and"LAB" for Laboratory.  At present, the QAN functionality is usedprimarily for tracking Department of Nursing incidents.  It canbe used by other ancillaries, if users are given appropriatesecurity codes.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

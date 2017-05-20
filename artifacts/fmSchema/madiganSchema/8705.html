@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB LOINC FIELD MAP</h1></div><div id="results"><dl><dt>name</dt><dd>LAB LOINC FIELD MAP</dd><dt>number</dt><dd>8705</dd><dt>location</dt><dd>^LAB(8705,</dd><dt>description</dt><dd>This file is used during result entry to provide LOINC attributes thatare the same for all cases. This prevents the programmer from having tohard-code LOINC attributes. When a Micro or AP subscript test result isbeing filed, the system uses the subscript, file/subfile number and fieldnumber to look into this file and populate fixed LOINC attributes. Ifan attribute is null in this file, that attribute is then either testor accession specific, and is therefore obtained from that reference, priorto deriving the LOINC code. The data in this file is used internally within the lab system, and shouldnot be modified by the site users. Doing so may cause the system to assignan incorrect LOINC code or none at all.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>SUBSCRIPT(+)</td><td>0;1</td><td>POINTER</td><td><a href="8706.html">8706</a></td><td>B</td><td> The subscript is used to determine various processing functions within the Lab System software. </td></tr><tr><td>.02</td><td>LAB RESULT FILE/SUBFILE</td><td>1;0</td><td>MULTIPLE</td><td><a href="8705_01.html">8705.01</a></td><td/><td>This is the file/subfile number in the Lab Result file that contains a field that will store a LOINC Code. There may be multiple fields in thesame file/subfile level that require LOINC codes.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

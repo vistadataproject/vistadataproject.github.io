@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EMBOSSER FORMAT</h1></div><div id="results"><dl><dt>name</dt><dd>EMBOSSER FORMAT</dd><dt>number</dt><dd>39.4</dd><dt>location</dt><dd>^DIC(39.4,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>The name of the Embosser Format which is being defined.  Renaming of the Embosser Format is not recommended. </td></tr><tr><td>2</td><td>DIVISION</td><td>2;0</td><td>MULTIPLE</td><td><a href="39_43.html">39.43</a></td><td/><td>Multiple which tracks all divisions within the MTF that canselect the referenced embosser card.</td></tr><tr><td>3</td><td>NUMBER OF ROWS IN FORMAT(+)</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>The number of lines of print, including blank lines, on each embossercard.</td></tr><tr><td>4</td><td>TYPE OF EMBOSS CARD(+)</td><td>0;4</td><td>SET OF CODES</td><td>I:INPATIENT<br/>O:OUTPATIENT<br/>U:UNSPECIFIED<br/>V:APV<br/></td><td/><td>The 'Type of Emboss Card' field is used to limit the possible selection ofprint fields to those which pertain to the emboss card type selected.</td></tr><tr><td>5</td><td>NUMBER OF EMBOSS CARDS</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>Enter number of emboss cards normally printed.</td></tr><tr><td>6</td><td>TYPE OF EMBOSSER(+)</td><td>0;6</td><td>POINTER</td><td><a href="39_1.html">39.1</a></td><td/><td>The name of the embosser type (for example, DATACARD). This field is a pointer to the EMBOSSER TYPE File (file #39.1).</td></tr><tr><td>7</td><td>STATUS(+)</td><td>0;7</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td/><td>A set of codes field used to indicate whether the referenced embossercard is current usable.</td></tr><tr><td>8</td><td>DEFAULT EMBOSSER DEVICE</td><td>0;8</td><td>POINTER</td><td><a href="3_5.html">3.5</a></td><td/><td>Enter the Default Embosser Device if there is one primary device forthis card.</td></tr><tr><td>9</td><td>TYPE OF PATIENT</td><td>0;9</td><td>SET OF CODES</td><td>S:SPONSOR<br/>D:FAMILY MEMBER<br/></td><td/><td>A set of codes field used to indicate the type of patient using thereferenced embosser card. The following codes are defined:    D - For family-member-only cards   F - For sponsor-only cards This field should be filled in only for embosser cards that are intendedto be used only for family members or only for sponsors. If the referencedembosser card is intended for use by either family members or sponsors,then this field should not be filled in.</td></tr><tr><td>10</td><td>FORMAT SHORT NAME</td><td>0;10</td><td>FREE TEXT</td><td/><td>C</td><td>The short name used to identify the format for the embosser card.</td></tr><tr><td>50</td><td>PRINT FIELDS</td><td>1;0</td><td>MULTIPLE</td><td><a href="39_41.html">39.41</a></td><td/><td>Multiple defining the fields which will appear on the embosser card.The list of selectable fields in the multiple will depend on whetheryou are defining an inpatient, outpatient, or unknown embosser card.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

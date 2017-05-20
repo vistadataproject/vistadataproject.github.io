@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER TIMING</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER TIMING</dd><dt>number</dt><dd>102.2</dd><dt>location</dt><dd>^ORD(102.2,</dd><dt>description</dt><dd>This file indicates the total number of times within a 24-hour period that anorder will be carried out, designating the specific times, the frequency,and the duration.  The fields designate the hospital location, its ordertiming schedule, and its default timing schedule.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Entries including numbers of hours must be divisible into 24.You may enter a standard order timing which does not contain hours,such as QID, or an entry for frequency, such as QOD or MO-WE-FR.</td></tr><tr><td>.02</td><td>TOTAL DAILY TIMES</td><td>0;2</td><td>NUMERIC</td><td/><td/><td>Enter a number between 0 and 999, indicating the total number of timeswithin a 24-hour period that an order is scheduled to be administered whenordered with this order timing.</td></tr><tr><td>.5</td><td>SYNONYM</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>Free text containing a brief representation or abbreviation of the name ofthis order timing schedule.</td></tr><tr><td>10</td><td>DEFAULT ADMIN TIMES</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>Enter up to 220 characters in the form 0300-0900-1500-2100.  Be sureto use a 24-hour clock.</td></tr><tr><td>101</td><td>ORDER TIMING/FREQUENCY(+)</td><td>101;1</td><td>SET OF CODES</td><td>1:SPECIFIC TIMES<br/>2:FREQUENCY<br/>3:DURATION<br/></td><td/><td>This field is used to define if this entry will be used fortiming, frequency, or duration.Indicate whether this entry will be used to designate: 1) the specific times that the order will be carried out(i.e., QID would indicate specific timing for the order),2) the inter-day frequency (i.e., QOD would indicate thefrequency of the order as every other day),3) the duration of the order (i.e, F10D would indicatea duration of 10 days).</td></tr><tr><td>102</td><td>HOSPITAL LOCATION</td><td>102;0</td><td>MULTIPLE</td><td><a href="102_21.html">102.21</a></td><td/><td>Multiple field.  This field contains the name of the hospital locationwhich will have different default times for this timing text.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

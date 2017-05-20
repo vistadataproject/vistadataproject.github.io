@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > WAM DATA SET</h1></div><div id="results"><dl><dt>name</dt><dd>WAM DATA SET</dd><dt>number</dt><dd>8046</dd><dt>location</dt><dd>^DGNS(</dd><dt>description</dt><dd>This file is pointed to by the DSI field in the WAM WORKLOAD File(file #8049). It is separated from the WAM WORKLOAD File to allowthe LOCK mechanism to lock data at the DSI level.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DATA SET ID(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>The 3 character DSI code for which WAM workload data is collected.</td></tr><tr><td>2</td><td>SUBSYSTEM</td><td>0;3</td><td>SET OF CODES</td><td>RAD:RADIOLOGY<br/>LAB:LABORATORY<br/>PHR:PHARMACY<br/>PAD:INPATIENT<br/>PAS:OUTPATIENT<br/>SPS:SUPPORT SERVICES<br/>DTS:DIETETICS<br/>ANC:ANCILLARY<br/></td><td>C</td><td>This field indicates, from a WAM perspective, the functional subsystemassociated with the workload data generated for the given REPORTING MONTHand DIVISION. Because this field reflects the WAM perspective, itsbreakout of subsystems is different than those represented within CHCS.</td></tr><tr><td>3</td><td>EXTERNAL SYSTEM</td><td>0;4</td><td>SET OF CODES</td><td>E:EAS III<br/>S:STARS/FL<br/></td><td/><td>This is the flag indicating whether or not the external system is EAS IIIor STARS/FL.</td></tr><tr><td>6</td><td>CURRENT TEMP STATUS</td><td>0;7</td><td>SET OF CODES</td><td>I:INITIALIZED<br/>W:AWAITING FACILITY COORDINATOR'S APPROVAL<br/>A:APPROVED FOR TRANSMISSION<br/>X:REJECTED TO WORKCENTER<br/>T:TRANSMITTED<br/>V:VERIFIED<br/></td><td/><td>This is the current status of the given DSI.</td></tr><tr><td>7</td><td>DATE/TIME CURRENT TEMP STATUS</td><td>0;8</td><td>DATE-TIME</td><td/><td/><td>This is the date/time the current status of the referenced DSI wasupdated.</td></tr><tr><td>10</td><td>EDITABLE FLAG</td><td>0;11</td><td>SET OF CODES</td><td>0:NOT EDITABLE<br/>1:IS EDITABLE<br/></td><td/><td>This is a flag indicating whether or not the WAM workload data iseditable.</td></tr><tr><td>11</td><td>AUTO COPY FLAG</td><td>0;12</td><td>SET OF CODES</td><td>0:AUTO COPY IS NOT USED<br/>1:AUTO COPY IS USED<br/></td><td/><td>This is a flag indicating whether or not an automatic copy of theworkload data should be generated.</td></tr><tr><td>12</td><td>RE-TRANSMISSION FLAG</td><td>0;13</td><td>SET OF CODES</td><td>0:RE-TRANSMISSION IS NOT NEEDED<br/>1:RE-TRANSMISSION IS NEEDED<br/></td><td/><td>This is the flag indicating whether or not the ASCII file needs to bere-transmitted.</td></tr><tr><td>13</td><td>PERFORMING FCC</td><td>1;0</td><td>MULTIPLE</td><td><a href="8046_01.html">8046.01</a></td><td/><td>This is a mulitiple tracking the PERFORMING FCC codes that are associatedwith a given DSI for a given DIVISION and  a given REPORTING MONTH.</td></tr><tr><td>17</td><td>REPORTING MONTH(+)</td><td>0;17</td><td>DATE-TIME</td><td/><td/><td>Month and year the workload data is processed for.</td></tr><tr><td>18</td><td>DIVISION(+)</td><td>0;18</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td/><td>The division for which the WAM report data is accrued.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

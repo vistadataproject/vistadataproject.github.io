@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ICD DIAGNOSIS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="100501.html">100501</a></dd><dt>name</dt><dd>ICD DIAGNOSIS</dd><dt>number</dt><dd>100501.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ICD DIAGNOSIS</td><td>0;1</td><td>POINTER</td><td><a href="80.html">80</a></td><td/><td>There are up to four prioritized diagnosis codes per encounter.There can be many unconfirmed diagnoses.</td></tr><tr><td>2.02</td><td>ICD CODE</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>The ICD code for the selected problem.</td></tr><tr><td>2.03</td><td>PRIORITY</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>The priority from 1 to 4 for the diagnosis.  </td></tr><tr><td>2.04</td><td>ICD CUSTOM DISPLAY TEXT</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field contains the custom display text of the ICD code.  This textis optional and is based upon the specific Problem Selection List theICD code was chosen from as well as the date/time the user chose the code.There is an output transformer on this field that will return ICD DIAGNOSIS:DIAGNOSIS if the custom display text does not exist.  Use the INTERNALfunction if you wish to override the output transformer.</td></tr><tr><td>2.05</td><td>MEDCIN ASSOCIATION ID</td><td>0;5</td><td>FREE TEXT</td><td/><td/><td>This field is only used by the Provider GUI.  It is used by the Provider GUIto provide greater detail about the diagnosis.  This is only used formedical purposes, not billing.  345342F|345555F|500431F|10001 is an exampleof a root MEDCIN code with the max of three modifiers.</td></tr><tr><td>2.99</td><td>DESCRIPTION</td><td/><td>COMPUTED</td><td/><td/><td>Return ICD CUSTOM DISPLAY TEXT or ICD DIAGNOSIS:DIAGNOSIS.</td></tr><tr><td>4</td><td>ORDER INFORMATION</td><td>1;0</td><td>MULTIPLE</td><td><a href="100501_05.html">100501.05</a></td><td/><td>This is used by the Provider GUI to record the orders related to eachdiagnosis.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

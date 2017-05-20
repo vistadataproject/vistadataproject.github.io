@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ANTIBIOTIC SUSCEPTIBILITY</h1></div><div id="results"><dl><dt>name</dt><dd>ANTIBIOTIC SUSCEPTIBILITY</dd><dt>number</dt><dd>62.12</dd><dt>location</dt><dd>^LAB(62.12,</dd><dt>description</dt><dd>This file contains all the Antibiotics and their definitions neededfor microbiology result entry.    It contains approximately40 pre-supplied entries.  Each of the entries is defined according to the need of your MTF.  Information which is MTF definable for eachantibiotic includes sensitivity result, interpretation of each result,abbreviation, print order, and organism specific results and interpretations. DO NOT DELETE any of the existing entries.</dd><dt>applicationGroups</dt><dd>LR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ANTIBIOTIC(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains the name of the antibiotic.</td></tr><tr><td>.02</td><td>PRINT ORDER</td><td>0;2</td><td>NUMERIC</td><td/><td>AC</td><td>The number entered here determines the order in which the antibiotics willprint on the lab reports and result entry screens. When adding a new antibiotic, a number with a decimal point can be used to insert the newantibiotic between two existing entries. If there is no entry in this field,the antibiotic will NOT print on the cum but WILL appear in Patient LabInquiry (PLI).</td></tr><tr><td>.03</td><td>ABBREVIATION</td><td>3;1</td><td>FREE TEXT</td><td/><td>C</td><td>This is a 1-3 character abbreviation of the antibiotic name.  It isused during the formatting of the Antibiotic Susceptibilty Trend report.</td></tr><tr><td>.08</td><td>DEFAULT LOINC CODE</td><td>0;8</td><td>POINTER</td><td><a href="8188.html">8188</a></td><td/><td>This is the LOINC Code for the Antibiotic Susceptibility result. Itcan be determined by calculation from the LOINC attributes entered inthe LOINC Code Calculation (LCC) option. The attributes are determinedby how the test is performed.</td></tr><tr><td>10</td><td>DEFAULT SENSITIVITY</td><td>1;0</td><td>MULTIPLE</td><td><a href="62_13.html">62.13</a></td><td/><td>This is a multiple field allowing you to enter the appropriateresults and interpretations for this antibiotic.</td></tr><tr><td>20</td><td>ORGANISM</td><td>2;0</td><td>MULTIPLE</td><td><a href="62_14.html">62.14</a></td><td/><td>This is a multiple field allowing you to enter appropriate sensitivitiesassociated with an organism for this antibiotic.</td></tr><tr><td>30</td><td>SITE/SPECIMEN</td><td>30;0</td><td>MULTIPLE</td><td><a href="62_18.html">62.18</a></td><td/><td>Enter a valid Site/Specimen from the Topography Field file which requiresdifferent interpretations than the defaults. These interpretations will beused for all cultures with this Site/Specimen except those whose organismidentifications are listed under the "Organism" field.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

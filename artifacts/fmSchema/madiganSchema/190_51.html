@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RECORD</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="190_5.html">190.5</a></dd><dt>name</dt><dd>RECORD</dd><dt>number</dt><dd>190.51</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>RECORD</td><td>0;1</td><td>POINTER</td><td><a href="190.html">190</a></td><td>B</td><td>This field contains the name of the patient associated withthe record being transferred or retired.  This field is apointer to the Records file (#190) and the data is enteredautomatically by the CHCS.</td></tr><tr><td>1</td><td>NAME</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This field contains the name of the patient associated withthe record being transferred or retired.  The data in this field is entered automatically by the CHCS.</td></tr><tr><td>2</td><td>TERM DIGITS</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field contains the family member prefix (FMP) and social security number (SSN) associated with the record being transferred or retired.  Thenumbers for the FMP/SSN are re-arranged to sort the records in terminaldigit order. The data in this field is calculated automatically by theCHCS. </td></tr><tr><td>4</td><td>DATE ADDED TO RECORD INDEX</td><td>0;4</td><td>DATE-TIME</td><td/><td/><td>This field contains the date a record was added, by a user, tothe record index. The Add action, on the Edit/Process Record Index option, is usedto perform this function. The data in this field is entered automatically by the CHCS.</td></tr><tr><td>6</td><td>BOX NUMBER</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>This field contains the box number, assigned by the user, in whichthe record identified for retirement is contained. The data in this field is entered automatically by the CHCS.</td></tr><tr><td>7</td><td>DATE OF LAST PATIENT ACTIVITY</td><td>0;7</td><td>DATE-TIME</td><td/><td/><td>This field contains the date of the patient's last treatmentactivity and is used to determine the eligibility of a recordfor retirement. Examples of last patient activity includes,last prescription filled, last clinic appointment kept by thepatient, last x-ray taken. Enter the date you want the system to begin searching for recordswhich are eligible for retirement or transfer. When retiring records enter a date based on the retention period ofthe medical record type for your branch of the service.</td></tr><tr><td>8</td><td>ADDITION TO RECORD INDEX</td><td>0;8</td><td>12</td><td/><td>This field will be set to 1 if the record was added to the index via the'Add' option on the EPR action bar. The data in this field is entered automatically by the CHCS.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

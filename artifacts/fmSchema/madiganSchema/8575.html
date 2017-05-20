@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MCP ENTITLEMENT DISCREPANCY CODES</h1></div><div id="results"><dl><dt>name</dt><dd>MCP ENTITLEMENT DISCREPANCY CODES</dd><dt>number</dt><dd>8575</dd><dt>location</dt><dd>^CPT(8575,</dd><dt>description</dt><dd>The MCP Entitlement Discrepancy Codes indicate that thebasis for a patient's eligibility within the DOD medicalhealth care system has changed since the time that thepatient was originally enrolled/empaneled into managedcare.  An example would be a patient who was enrolled asan active duty member but who has now retired.  This codeindicates to the site the nature of the entitlement changeand signals that the patient should be disenrolled andpossibly re-enrolled, if appropriate.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CODE(+)</td><td>0;1</td><td>NUMERIC</td><td/><td>B</td><td>This code indicates the type of entitlement discrepancy found foran MCP enrollee/empanelee.  A change in entitlement means that thepatient's eligibility basis for DOD health care has changed (e.g.,a sponsor changes from active duty to retiree).</td></tr><tr><td>1</td><td>DESCRIPTION</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>This is the description of the enrollee's/empanelee's changein entitlement.  The description corresponds to why theentitlement has changed.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

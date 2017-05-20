@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COMMAND ACTION</h1></div><div id="results"><dl><dt>name</dt><dd>COMMAND ACTION</dd><dt>number</dt><dd>.88</dd><dt>location</dt><dd>^DWA(.88,</dd><dt>description</dt><dd>This file contains all the actions that the various COMMAND SCREENScan execute.  One action can be associated with many COMMAND SCREENS.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Enter the name of the action as you want it to be presented to the user. DO NOT namespace the NAME.  Use the TRANSPORT NAME to uniquely identifythe action.</td></tr><tr><td>.02</td><td>MNEMONIC(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>Enter an abbreviated (2-4 characters) name for the action.  This abbreviation can be used to select the action.</td></tr><tr><td>.03</td><td>TRANSPORT NAME(+)</td><td>0;3</td><td>FREE TEXT</td><td/><td>D</td><td>Enter the unique, namespaced name for this action.  This name is used duringthe DIFROM and initialization process to properly transport and installcommand actions at the target site. Note: During the DIFROM process, any COMMAND SCREENS associated with aCOMMAND ACTION are transferred as part of the inits.</td></tr><tr><td>.04</td><td>EXECUTE LOCATION</td><td>0;4</td><td>POINTER</td><td><a href="_889.html">.889</a></td><td/><td>This field indicates where this action should be executed.</td></tr><tr><td>.05</td><td>WINDOW SIZE</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>If the execution location is a POP-UP WINDOW, then this field may be used toindicate the number of lines within the window.  The default is 6.</td></tr><tr><td>.1</td><td>OK FOR NULL ARRAY?</td><td>0;10</td><td>12</td><td/><td>This field is a set of codes.  The valid responses are:    0 - NO        If this field is set to NO, then when the DIJRF array                 is null (there are no items to display) this action can not                 be selected at the action prompt.    1 - YES       If this field is set to YES, then when the DIJRF array                 is null (there are no items to display) this action can                 still be selected at the action prompt. Entery in this field is only required for a YES value.  The Command ScreenProcessor will assume NO if this field is left blank.</td></tr><tr><td>1</td><td>ACTION</td><td>1;E1,245</td><td>MUMPS</td><td/><td/><td>Enter the line of MUMPS code that will be executed when this actionis selected at the action prompt. Note:  While executing an action, another COMMAND SCREEN can be called.</td></tr><tr><td>4</td><td>COMMAND SCREEN</td><td>4;0</td><td>MULTIPLE</td><td><a href="_881.html">.881</a></td><td/><td>Enter the name of the COMMAND SCREENS associated with this action. Note:  Any COMMAND SCREEN entered in this multiple will automatically       be transferred by the DIFROM process.</td></tr><tr><td>50</td><td>SYNONYMS</td><td>S;0</td><td>MULTIPLE</td><td><a href="_882.html">.882</a></td><td/><td>Enter any synonyms that this action might have.  Like the MNEMONIC field, theentries in this field can be used to select the action.</td></tr><tr><td>100</td><td>DESCRIPTION</td><td>100;0</td><td>WORD-PROCESSING</td><td/><td/><td>Enter a description of the action.</td></tr><tr><td>500</td><td>INACTIVATION DATE</td><td>I;1</td><td>DATE-TIME</td><td/><td/><td>Enter a date into this field to inactivate an action as of this date. </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

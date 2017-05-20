@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > UNIT STATUS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="63_59.html">63.59</a></dd><dt>name</dt><dd>UNIT STATUS</dd><dt>number</dt><dd>63.799</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>BLOOD PRODUCT TYPE</td><td>0;1</td><td>POINTER</td><td><a href="8161.html">8161</a></td><td/><td>This field contains the blood product requested for crossmatching or forcollection by autologous donation.</td></tr><tr><td>.02</td><td>NUMBER OF UNITS ORDERED</td><td>0;2</td><td>NUMERIC</td><td/><td/><td>This field contains the number of units of a blood product type requestedfor crossmatching or for collection in an Autologous Donation order.</td></tr><tr><td>.03</td><td>DATE/TIME UNITS COLLECTED</td><td>0;3</td><td>DATE-TIME</td><td/><td/><td>This field contains the collection date and time of the most recent unitcollected for an Autologous Donation order.</td></tr><tr><td>.04</td><td>NUMBER OF UNITS COLLECTED</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This field contains the number of units specified in an AutologousDonation order which have been collected.</td></tr><tr><td>.05</td><td>UNIT STATUS DATE/TIME(+)</td><td>0;5</td><td>DATE-TIME</td><td/><td/><td>This field contains the date/time that DBSS updated the number of unitsavailable, issued, or transfused for a crossmatched blood product.  It is the date/time that DBSS performed the update and not the date/time CHCSreceived the update.</td></tr><tr><td>.06</td><td>NUMBER OF UNITS AVAILABLE</td><td>0;6</td><td>NUMERIC</td><td/><td/><td>This field contains the current number of units from a Type and Crossmatchorder that have been crossmatched and are ready for issue to the patient.</td></tr><tr><td>.07</td><td>NUMBER OF UNITS ISSUED</td><td>0;7</td><td>NUMERIC</td><td/><td/><td>This field contains the current number of units from a Type and Crossmatchorder which have been signed out to the patient.</td></tr><tr><td>.08</td><td>NUMBER OF UNITS TRANSFUSED</td><td>0;8</td><td>NUMERIC</td><td/><td/><td>This field contains the current number of units from a Type and Crossmatchorder which have been transfused to the patient.</td></tr><tr><td>1</td><td>UNIT STATUS HISTORY</td><td>1;0</td><td>MULTIPLE</td><td><a href="63_8.html">63.8</a></td><td/><td>This multiple field contains an audit trail of updates made to any of theunit status fields.  When the first unit status is filed on CHCS, it will befiled into the Unit Status field.  DBSS will transmit any change in unitstatus to CHCS.  The current unit status will file in the Unit Status field,and the previous unit status result will be moved into the Unit StatusHistory fields.  Both the current Unit Status and the Unit Status Historywill display in CHCS inquiry and reporting options.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

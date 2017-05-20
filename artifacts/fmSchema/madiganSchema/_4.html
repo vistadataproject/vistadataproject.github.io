@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRINT TEMPLATE</h1></div><div id="results"><dl><dt>name</dt><dd>PRINT TEMPLATE</dd><dt>number</dt><dd>.4</dd><dt>location</dt><dd>^DIPT(</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This is the name of the template, 2-30 characters.</td></tr><tr><td>2</td><td>DATE CREATED</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>The date this template was created.</td></tr><tr><td>3</td><td>READ ACCESS</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>The READ access for this template defaulted to that of the user who created the template.</td></tr><tr><td>4</td><td>FILE</td><td>0;4</td><td>FREE TEXT</td><td/><td></td><td>This is the IEN of the file whose fields are in this template.</td></tr><tr><td>5</td><td>USER #</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>This is the IEN of the user who created the template.</td></tr><tr><td>6</td><td>WRITE ACCESS</td><td>0;6</td><td>FREE TEXT</td><td/><td/><td>This is the WRITE access for this template defaulted to that of the user who created the template.</td></tr><tr><td>10</td><td>DESCRIPTION</td><td>%D;0</td><td>WORD-PROCESSING</td><td/><td/><td>This is a description of the template.</td></tr><tr><td>20</td><td>TEXT</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>Text entered if the REPORT WRITER was used to create this template.</td></tr><tr><td>21</td><td>FORMATTER-FIELD</td><td>3;0</td><td>MULTIPLE</td><td><a href="_41.html">.41</a></td><td/><td>Used by the REPORT WRITER to format the fields in the Window.</td></tr><tr><td>30</td><td>CODE</td><td>2;0</td><td>WORD-PROCESSING</td><td/><td/><td>MUMPS code.</td></tr><tr><td>100</td><td>INIT WILL NOT OVERWRITE</td><td>NOV;1</td><td>12</td><td/><td>Set of codes, 1=YES,2=NO, whether DIFROM INIT will overwrite the template.</td></tr><tr><td>704</td><td>HEADER</td><td/><td>COMPUTED</td><td/><td/><td>If there is a header for this template, this is its name.</td></tr><tr><td>705</td><td>FOOTNOTE</td><td/><td>COMPUTED</td><td/><td/><td>If there is a footnote for this template, this is its name.</td></tr><tr><td>707</td><td>SUB-HEADER SUPPRESSED</td><td>SUB;1</td><td>SET OF CODES</td><td>1:YES</td><td/><td>If a sub-header is suppressed this is set to 1.</td></tr><tr><td>1620</td><td>PRINT FIELDS</td><td/><td>COMPUTED</td><td/><td/><td>A computed field, when invoked in a printout, will print the fields in a template.</td></tr><tr><td>1815</td><td>ROUTINE INVOKED</td><td>ROU;E1,13</td><td>FREE TEXT</td><td/><td/><td>The name of the compiled routine.</td></tr><tr><td>1816</td><td>ARRAY ROUTINE INVOKED</td><td>AROU;E1,13</td><td>FREE TEXT</td><td/><td/><td>If compiled into an ARRAY, this is the name of the routine.</td></tr><tr><td>1819</td><td>UNCOMPILED</td><td/><td>COMPUTED</td><td/><td/><td>If template is uncompiled, this field will be set.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

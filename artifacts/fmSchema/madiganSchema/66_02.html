@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROCESS TEST</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="66.html">66</a></dd><dt>name</dt><dd>PROCESS TEST</dd><dt>number</dt><dd>66.02</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PROCESS TEST</td><td>0;1</td><td>POINTER</td><td><a href="60.html">60</a></td><td>B</td><td>This field contains the name of the process test.</td></tr><tr><td>2.02</td><td>ORDER TASK</td><td>0;2</td><td>POINTER</td><td><a href="107.html">107</a></td><td/><td>This field contains the order task. It is represented by the date/timethe task was expected to be done by the HCP.</td></tr><tr><td>2.03</td><td>WORK DOCUMENT ENTRY</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field contains the work document reference that indicatesthat this process test is on a particular work document and in a particular entry.</td></tr><tr><td>2.04</td><td>LOG-IN COMMENTS</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field contains log-in comments entered during the CHCSanatomic pathology log-in. Any log-in comments entered onan off board anatomic pathology system will not be storedin this field.</td></tr><tr><td>2.05</td><td>GROSSING PATHOLOGIST</td><td>0;5</td><td>POINTER</td><td><a href="6.html">6</a></td><td/><td>This field contains the grossing pathologist entered duringCHCS anatomic pathology log-in or results entry. The grossing pathologist entered on the off board anatomicpathology system will not be stored here.</td></tr><tr><td>2.06</td><td>PROCESSING PROCEDURE</td><td>0;6</td><td>POINTER</td><td><a href="8702_1.html">8702.1</a></td><td/><td>This field contains the processing procedure entered duringCHCS anatomic pathology log-in or results entry. Processing procedures entered on an off board anatomicpathology system will not be stored.</td></tr><tr><td>2.07</td><td>NUMBER OF SLIDES</td><td>0;7</td><td>NUMERIC</td><td/><td/><td>This field contains the number of slides received when ancytology gyn order is logged-in to CHCS anatomic pathology.The number of slides entered during log-in on the off boardanatomic pathology system will not be store here.</td></tr><tr><td>2.08</td><td>RESULT OPTIONAL</td><td>0;8</td><td>12</td><td/><td>Enter 'NO' in this field or leave blank if this is a mandatory test. If nodata is reported, the default status is "pending" and the test will appearon a Pending List until it is certified. When YES is entered in this field,the test will not appear on a Pending List. In addition, optional testswill not be available for result entry once all of the required tests on apanel have been certified and the nightly accession rollover task has run.An example is the test BASO on the Differential. The entry should be YES forthis test because not Differential will have a result for BASO.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

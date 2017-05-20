@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER EPISODE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="109_3.html">109.3</a></dd><dt>name</dt><dd>ORDER EPISODE</dd><dt>number</dt><dd>109.31</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>EPISODE</td><td/><td>11</td><td/><td/><td>Enter a number between 1 and 9,999,999 to coordinate the Order Entry pages.</td></tr><tr><td>.01</td><td>ADMISSION PAGE</td><td>0;1</td><td>NUMERIC</td><td/><td>B</td><td>This number points to the Order Entry Page File #109 and corresponds to the admission page creating this OR episode.</td></tr><tr><td>.02</td><td>POINTER TO ADMISSION MULTIPLE</td><td>0;2</td><td>NUMERIC</td><td/><td/><td>The PAD episode # that corresponds to this OR episode. ^DPT(ORDFN,"DA",X          where X is this field</td></tr><tr><td>.03</td><td>INPATIENT ARCHIVE IDENTIFIER</td><td>0;3</td><td>NUMERIC</td><td/><td>AREG</td><td>This number is the combination of the PAD Register Number field #9001in the Patient File Admission Multiple, appended with the internal entry number of the division where this episode occurded divided by 100000.  Thiscreates a unique number with up to 5 decimal places.  This field is then usedin the .15 field of orders entered as part of this episode of care.   </td></tr><tr><td>.04</td><td>SEQUENCE#</td><td>0;4</td><td>NUMERIC</td><td/><td>SN</td><td>This is the absolute sequence number of all Inpatient Pages. It may be changed after a merge, or other conditions when new pages change (by insertion) the sequence of a patients episode.</td></tr><tr><td>.05</td><td>DIVISION</td><td>0;5</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td/><td>This is the inpatient division to which is associated. It is derived fromthe division of the admission page's ward.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

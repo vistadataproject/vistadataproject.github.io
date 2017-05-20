@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEFICIENCY</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="311.html">311</a></dd><dt>name</dt><dd>DEFICIENCY</dd><dt>number</dt><dd>311.207</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ITEM</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This ITEM will be tracked by the Delinquent/Deficiency Trackingmodule.  Enter an ITEM that has been defined in the ADT PARAMETERSfile.  ITEMS are site specific and set-up on installation of the software.  Use the 2 character abbreviation or the item to selectthe proper ITEM.</td></tr><tr><td>.02</td><td>ACTION(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This describes the type of followup that must occur to complete thisitem being defined.  An action is required!</td></tr><tr><td>.021</td><td>ACT LABEL</td><td/><td>COMPUTED</td><td/><td/><td>This is a computed field used to display an asterisk beside all actionitems that are INCOMPLETE and DELINQUENT.</td></tr><tr><td>.03</td><td>PERSON RESPONSIBLE(+)</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This represents the person responsible for completion of this task.All reports will show this person being accountable for the actionto complete this ITEM.</td></tr><tr><td>.04</td><td>OPERATION DATE</td><td>0;4</td><td>DATE-TIME</td><td/><td/><td>Enter in the date of the surgical procedure that you are requiringan ACTION on.  This date is not required but for informationpurposes only.</td></tr><tr><td>.05</td><td>DATE COMPLETED</td><td>0;5</td><td>DATE-TIME</td><td/><td/><td>Enter the date this task was completed. </td></tr><tr><td>.051</td><td>DAYS OVERDUE</td><td/><td>COMPUTED</td><td/><td/><td>Number of days overdue.</td></tr><tr><td>.06</td><td>ABBREVIATION</td><td>0;6</td><td>FREE TEXT</td><td/><td>C</td><td>Enter an abbreviation for the ITEM that is being defined.  The abbreviation will be used as a quick reference.</td></tr><tr><td>.07</td><td>COMMENT</td><td>0;7</td><td>FREE TEXT</td><td/><td/><td>This is a free text comment field to facilitate information thatneeds to accompany a defined action.</td></tr><tr><td>.08</td><td>DELINQUENT DATE</td><td>0;8</td><td>DATE-TIME</td><td/><td/><td>This is the date the assigned item will become delinquent.  The dateis computed by the number of days defined in the ADT PARAMETERS filedefined for each action and the date the action is actually assignedto a person.</td></tr><tr><td>.09</td><td>ASSIGNED DATE</td><td>0;9</td><td>DATE-TIME</td><td/><td/><td>This defines the date the ACTION is assigned to a responsible person.</td></tr><tr><td>.1</td><td>MEPRS CODE(+)</td><td>0;10</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td/><td>The MEPRS/Service for this Deficiency Item.  This field determines theMEPRS Department for the By Department & MTF Summary reports.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

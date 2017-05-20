@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROCEDURE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8300.html">8300</a></dd><dt>name</dt><dd>PROCEDURE</dd><dt>number</dt><dd>8300.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PROCEDURE</td><td>0;1</td><td>VARIABLE-POINTER</td><td><a href="108_1.html">108.1</a>, <a href="108_2.html">108.2</a>, <a href="108_3.html">108.3</a>, <a href="108_4.html">108.4</a></td><td/><td>This is the procedure that the results were entered for.This field is automatically entred by the system at result entry.The user SHOULD NEVER be allowed to edit this field. The procedure is stored as the internal entry numberin the procedure file, a semicolon, and the file reference.So the first procedure in the NURSING PROCEDURE file wouldbe stored as  1;ORD(108.2,  .  This allows this field to be aVARIABLE POINTER to any of the procedrue files (#108.1-#108.5).</td></tr><tr><td>.02</td><td>UNIT</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This is the unit of measurement that the result value is in (i.e. cc).This field is automatically entered by the system when results are entered.  The value comes from the respective procedure file.The user SHOULD NOT be allowed to edit this field.</td></tr><tr><td>.03</td><td>ABNORMAL FLAG</td><td>0;3</td><td>SET OF CODES</td><td>*:ABNORMAL<br/>a:AMENDED<br/>&:ABNORMAL AND AMENDED<br/></td><td/><td>This indicates if the result was outside the normal range.The noraml range is applicable to procedrues that have numericresults (i.e. pulse, respiration, etc.).This field will also indicate if the result was amended.The value of this field is printed when results are displayed.This field is automatically entered by the system.The user SHOULD NOT be allowed to edit this field.</td></tr><tr><td>1</td><td>RESULT</td><td>1;1</td><td>FREE TEXT</td><td/><td/><td>This is the result value that was taken.The result is checked against set ranges for procedureswith numeric results.  The value is checked against a normalrange and an acceptable range.  If the result is outside the acceptablerange then the user must reenter the value.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ACTIVITY LOG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="55_06.html">55.06</a></dd><dt>name</dt><dd>ACTIVITY LOG</dd><dt>number</dt><dd>55.09</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>TASK DATE/TIME</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>This will be used to Track Unit Dose Task from the order Entry system.</td></tr><tr><td>1</td><td>ORDER TASK</td><td>0;2</td><td>POINTER</td><td><a href="107.html">107</a></td><td>AC</td><td>This will be the order Task internal reference number.</td></tr><tr><td>2</td><td>ACTION</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This will contain the action on the Task. Not too sure what to point thisto right now.</td></tr><tr><td>3</td><td>COMMENTS</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>If there are any comments associated with this task put them here.</td></tr><tr><td>4</td><td>UNITS DISPENSED OR RETURNED</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>  When a User Documents returned doses via the Report Returnsoption, the number of doses returned is stored here.</td></tr><tr><td>5</td><td>USER</td><td>0;6</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This field indicates the user who entered and filed the order.  </td></tr><tr><td>6</td><td>AUTHORIZING HCP</td><td>0;7</td><td>POINTER</td><td><a href="6.html">6</a></td><td/><td>This field indicates the HCP who authorized the order.  </td></tr><tr><td>7</td><td>ADMINSTRATION RESULT</td><td>0;8</td><td>POINTER</td><td><a href="8300.html">8300</a></td><td/><td>When the Administration is resulted by a user this field is updated by thesoftware to link the administration with the administration result. Thisfield should not be edited by users.</td></tr><tr><td>8</td><td>INPATIENT SITE</td><td>0;9</td><td>POINTER</td><td><a href="59_4.html">59.4</a></td><td/><td>This field documents the Inpatient Site associated with each dosefor an order in the activity log.</td></tr><tr><td>9</td><td>MEPRS CODE</td><td>0;10</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td/><td>This field indicates the Medical Expense Performance ReportingSystem (MEPRS) code associated with HCP authorizing the order.  </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROVIDER UNMERGE STATUS</h1></div><div id="results"><dl><dt>name</dt><dd>PROVIDER UNMERGE STATUS</dd><dt>number</dt><dd>8181.4</dd><dt>location</dt><dd>^DODMR(8181.4,</dd><dt>description</dt><dd>The PROVIDER UNMERGE STATUS file is the most comprehensive file of theProvider Unmerge process. The name, start and stop data, and current statusdata are found in this file. This information is used to track and identifythe progress of the Unmerge.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field identifies the provider name to be unmerged.</td></tr><tr><td>1</td><td>START TIME(+)</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>This field identifies the date/start time of the provider unmergeprocess.</td></tr><tr><td>2</td><td>PROVIDERS TO UNMERGE</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>This field identifies the total number of duplicate provider(s) tobe unmerged.</td></tr><tr><td>3</td><td>CURRENT PROVIDER</td><td>0;4</td><td>POINTER</td><td><a href="6.html">6</a></td><td/><td>This field identifies the correct provider in the process of beingunmerged.</td></tr><tr><td>4</td><td>RECORDS PROCESSED</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>This field identifies the number of records which have beenprocessed during this unmerge.</td></tr><tr><td>5</td><td>UNMERGE STATUS</td><td>0;6</td><td>FREE TEXT</td><td/><td/><td>This field identifies the status of the unmerge process: complete,preparing to halt, merging, halted etc.</td></tr><tr><td>6</td><td>END TIME</td><td>0;7</td><td>DATE-TIME</td><td/><td/><td>This field identifies the date/time in which the provider mergecompleted.</td></tr><tr><td>7</td><td>HALTS AND RESTARTS</td><td>1;0</td><td>MULTIPLE</td><td><a href="8181_41.html">8181.41</a></td><td/><td>This field records information pertaining to a halt or restart ofprovider unmerge.</td></tr><tr><td>9</td><td>CURRENT PROVIDER SEQ NBR</td><td>0;8</td><td>NUMERIC</td><td/><td/><td>This field identifies the number of providers that are beingprocessed in this unmerge batch.</td></tr><tr><td>10</td><td>DISASTER RESTART FLAG</td><td>0;9</td><td>FREE TEXT</td><td/><td/><td>This field flags unmerge processes that halted as a result ofsystem error.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

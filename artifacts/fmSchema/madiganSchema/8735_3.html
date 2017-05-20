@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB RULES ACTIONS</h1></div><div id="results"><dl><dt>name</dt><dd>LAB RULES ACTIONS</dd><dt>number</dt><dd>8735.3</dd><dt>location</dt><dd>^LAB(8735.3,</dd><dt>description</dt><dd>This CLASS 1 file is used to define various processing activities thatcan be defined in the THEN part of a Lab Rule. When processing results,the rules are evaluated for a TRUE/FALSE condition. For each conditionthat is TRUE, one or more ACTIONS can be performed. Those actions thatare available are defined in this file. Creating new entries in this filerequires programmer assistance and the data in this file should neverbe manipulated by a site, as irreparable damage may cause the actionto be create unnecessary system error or other adverse issues.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ACTION NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field will be the name of an action the user can tell the systemto perform whenever the associated rule's IF CONDITION is true,In rules processing, multiple actions can be specified to occur as partof the THEN PART of the rule.</td></tr><tr><td>.02</td><td>EXTERNAL REPRESENTATION</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This field defines how the action will appear within the rule. ThisExternal Representation field allows the system to display the actionto perform in an English-like fashion, making rule definition moreinuitive and user-friendly.</td></tr><tr><td>.03</td><td>INTERNAL REPRESENTATION</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This Internal Representation field will provide the system with theactual code syntax that will be compiled into the Rule for executionwhenever the rules' IF CONDITION is true. Care should be taken in theform of this internal representation to allow multiple actions to beperformed whenever the rule condition is true. Each code module referencedhere should also set variable LRRLQUIT=1 if the action cannot be performedor if the rules processing should terminate at this point.</td></tr><tr><td>.04</td><td>BUILD MODULE</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field defines the code module the system will use when building a ruleto prompt the user for the comment that will be automatically added to theresult when the rule condition is true.</td></tr><tr><td>.05</td><td>BUILD ROUTINE</td><td>0;5</td><td>FREE TEXT</td><td/><td/><td>This field will used to specify the routine name where the BUILD MODULEis located. This field will be combined with the BUILD MODULE field toform a complete routine reference to prompt for the additional informationrequired for this action.</td></tr><tr><td>1</td><td>DESCRIPTION</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>This word processing field is used to provide additional detailedinformation about this action. Detailed information could include anEnglish-like description of the processing that will take place if thisaction is performed, required input parameters, documentation of outputs,or any other information deemed important for an end user to determine ifthis action is one they which to have performed whenever the associatedrules' IF CONDITION is true.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

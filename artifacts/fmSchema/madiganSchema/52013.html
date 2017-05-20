@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GP PROGRESS NOTE FILE</h1></div><div id="results"><dl><dt>name</dt><dd>GP PROGRESS NOTE FILE</dd><dt>number</dt><dd>52013</dd><dt>location</dt><dd>^GP(52013,</dd><dt>description</dt><dd>This file contains the patient's progress notes.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NOTE DATE TIME(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>Date/time that the note was created.</td></tr><tr><td>.02</td><td>PATIENT(+)</td><td>0;2</td><td>POINTER</td><td><a href="2.html">2</a></td><td/><td>This is the name of the patient on whom you want to enter progress notes.</td></tr><tr><td>.03</td><td>PHYSICIAN/NURSING NOTE(+)</td><td>0;3</td><td>POINTER</td><td><a href="7.html">7</a></td><td/><td>This field indicates what type of note this is.</td></tr><tr><td>.04</td><td>ENTERED BY</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This field will store the name of the user who entered a note.</td></tr><tr><td>.05</td><td>STATUS</td><td>0;5</td><td>SET OF CODES</td><td>C:Complete<br/>P:Preliminary<br/></td><td/><td>This field will store whether or not a note has a status of complete orpreliminary.</td></tr><tr><td>.06</td><td>PATIENT STATUS</td><td>0;6</td><td>SET OF CODES</td><td>I:Inpatient<br/>O:Outpatient<br/></td><td/><td>This field will store the status of the patient at the time the note is entered.</td></tr><tr><td>.07</td><td>REGISTRATION NUMBER</td><td>0;7</td><td>NUMERIC</td><td/><td/><td>This is the number assigned to each inpatient during the admission process.This number is associated with a single inpatient episode.</td></tr><tr><td>.08</td><td>TYPE OF NOTE(+)</td><td>0;8</td><td>POINTER</td><td><a href="52002.html">52002</a></td><td/><td>Enter a title for this note.  This title can be used to search previouslyentered notes.</td></tr><tr><td>1</td><td>NOTE</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>Enter a progress note for this patient.  This is a word processing field andwill allow you to enter as much as you need.  After you have filed a progressnote, it will no longer be modifiable. </td></tr><tr><td>2.01</td><td>PROBLEM POINTER</td><td>2;1</td><td>POINTER</td><td><a href="52005.html">52005</a></td><td>APROB</td><td>This is a pointer to the patient's Problem List.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

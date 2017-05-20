@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PARASITE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="63_746.html">63.746</a></dd><dt>name</dt><dd>PARASITE</dd><dt>number</dt><dd>63.748</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PARASITE(+)</td><td>0;1</td><td>POINTER</td><td><a href="61_2.html">61.2</a></td><td>B</td><td>Enter the name of the parasite identified.  This fieldpoints to the Etiology Field file and has a screen sothat the user can only select parasites for a result.If a parasite is not available, have the lab managercheck the Etiology Field file for the entry.  If theentry exists in the file, the identifier must be a parasite.  If the entry is not included in the file,the lab manager may add it. Make sure the identifieris a parasite.</td></tr><tr><td>.02</td><td>PARASITE LOINC CODE</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This field is the LOINC Code assigned by the system for this test result.If the system can determine the LOINC code, it is automatically assigned.For Parasitology, a LOINC code is captured for each parasite identified. Data in this field is the actual LOINC code value determined for this test.The data is the same as the .01 field of the LOINC Codes file (file #8199).Note this field is NOT a pointer field. This is to allow test results andLOINC codes to be assigned that may not be in the LOINC codes file. A LOINCcode which is not in CHCS may be captured from an off-board system via anHL-7 message when the off-board system is using a different version of theLOINC tables. Data in this field should not be modified by the user and is generallyhidden from most data entry mechanisms.</td></tr><tr><td>.03</td><td>QUANTITY</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field is used to quantify the amount of organism isolated.Examples: 1+, 2+, 3+ or >100,000 colonies/ul.</td></tr><tr><td>.04</td><td>PARASITE SNOMED CT</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>This field contains the SNOMED CT codes generated from the encoder.</td></tr><tr><td>1</td><td>STAGE</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>This is a word processing field which is usedto enter the stage of the parasite identified.Examples: Ova, cyst, trophozoite, merozoite,gametocyte.   </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

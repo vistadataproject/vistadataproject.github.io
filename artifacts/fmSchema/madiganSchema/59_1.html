@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLINIC ISSUES</h1></div><div id="results"><dl><dt>name</dt><dd>CLINIC ISSUES</dd><dt>number</dt><dd>59.1</dd><dt>location</dt><dd>^PS(59.1,</dd><dt>description</dt><dd> This file contains records of drug issues to clinics.</dd><dt>applicationGroups</dt><dd>CHCS</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NUMBER(+)</td><td>0;1</td><td>NUMERIC</td><td/><td>B</td><td>This field indicates the issue number of the drug.</td></tr><tr><td>1</td><td>DRUG(+)</td><td>0;2</td><td>POINTER</td><td><a href="50.html">50</a></td><td/><td>This field indicates the name of the drug being issued.</td></tr><tr><td>2</td><td>NUMBER OF CLINIC ISSUES(+)</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>Enter the number of units (the form is asked by the FORM OF UNIT field)that are being dispensed to the clinic.</td></tr><tr><td>3</td><td>REQUESTING CLINIC(+)</td><td>0;4</td><td>POINTER</td><td><a href="44.html">44</a></td><td/><td>This field indicates the name of the clinic requesting the issue.</td></tr><tr><td>4</td><td>MEPRS CODE(+)</td><td>0;5</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td/><td>This field indicates the MEPRS code of the clinic requesting the issue.</td></tr><tr><td>5</td><td>DISPENSE DATE(+)</td><td>0;6</td><td>DATE-TIME</td><td/><td>D</td><td>This field indicates the date that the issue was dispensed.</td></tr><tr><td>6</td><td>FORM OF UNIT</td><td>0;7</td><td>SET OF CODES</td><td>1:BOTTLE<br/>2:AMPULE<br/>3:BOX<br/>4:BAG<br/>5:SYRINGE<br/>6:CASE<br/>9:OTHER<br/></td><td/><td>This field indicates the unit in which the issue is dispensed.  The settingsare "1" for BOTTLE, "2" for AMPULE, "3" for BOX, "4" for BAG, "5" for SYRINGE,"6" for CASE, and "9" for OTHER.</td></tr><tr><td>7</td><td>PHARMACY SITE(+)</td><td>0;8</td><td>POINTER</td><td><a href="59_2.html">59.2</a></td><td/><td>Enter the name of a pharmacy site in your division.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

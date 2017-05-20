@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > KG CPT EVALUATION MANAGEMENT</h1></div><div id="results"><dl><dt>name</dt><dd>KG CPT EVALUATION MANAGEMENT</dd><dt>number</dt><dd>100502.5</dd><dt>location</dt><dd>^KGOR(100502.5,</dd><dt>description</dt><dd>This file contains pointers to all of the E&M (Evaluation and Management)codes in the CPT/HCPCS file.  It gives the clinics the ability to identifythe E&M codes that their providers use most often and to create customdisplay text for each code.  When providers are entering ADM encounterdata, they can type one question mark for a list of commonly used (clinicdefined) E&M codes or two question marks for a list of all available E&Mcodes.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>E&M CPT CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Evaluation and Management code from the CPT/HCPCS file.</td></tr><tr><td>.02</td><td>POINTER TO CPT/HCPCS(+)</td><td>0;2</td><td>POINTER</td><td><a href="8151.html">8151</a></td><td>E</td><td>Pointer to the CPT/HCPCS file.</td></tr><tr><td>1</td><td>DESCRIPTION</td><td/><td>COMPUTED</td><td/><td/><td>The clinic's custom text or the code's DOD Description.</td></tr><tr><td>2</td><td>CLINIC</td><td>1;0</td><td>MULTIPLE</td><td><a href="100502_51.html">100502.51</a></td><td/><td>Clinic name that uses this code</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

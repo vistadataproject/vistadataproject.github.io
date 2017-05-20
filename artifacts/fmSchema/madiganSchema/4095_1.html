@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MDIS CHCS MESSAGE EXCHANGE</h1></div><div id="results"><dl><dt>name</dt><dd>MDIS CHCS MESSAGE EXCHANGE</dd><dt>number</dt><dd>4095.1</dd><dt>location</dt><dd>^INVAMI(</dd><dt>description</dt><dd>This file is used to receive messages from MDIS (via the VA Gateway).It is resident on the CHCS configuration.  It is accessed by the VAGateway via DDP.  This file is similar to the MDIS MESSAGEEXCHANGE file (#4095).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>DATE/TIME(+)</td><td>0;1</td><td>DATE-TIME</td><td/><td>B</td><td>This field contains the date/time and seconds that the messagewas loaded into this file.</td></tr><tr><td>.04</td><td>PROCESSED</td><td>0;4</td><td>SET OF CODES</td><td>0:NO<br/>1:YES<br/>2:ERROR<br/></td><td>APS</td><td>This field indicates if the record has been processed by theRECEIVING system. The sending system initially sets this fieldto NO at the time the message is loaded into the file. Thefield is reset to YES after the receiving system has unloadedthe message from the file.</td></tr><tr><td>1</td><td>MESSAGE TEXT</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>This field contains the text of the interface message.Logical segments are terminated with $C(13). Messages are terminated with $C(28)_$C(13).</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

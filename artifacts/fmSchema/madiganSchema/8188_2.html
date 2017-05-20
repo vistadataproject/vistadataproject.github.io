@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LOINC PROPERTY</h1></div><div id="results"><dl><dt>name</dt><dd>LOINC PROPERTY</dd><dt>number</dt><dd>8188.2</dd><dt>location</dt><dd>^DALOINC(8188.2,</dd><dt>description</dt><dd>This file contains the property types used to distinguish between thedifferent types of quantities relating to the same substance.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PROPERTY CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains the Property code which is a unique alphabetical code (e.g., SCNC).  </td></tr><tr><td>1</td><td>PROPERTY NAME(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>This field contains the full name of the Property code (e.g., the full nameof SCNC is Substance Concentration).</td></tr><tr><td>2</td><td>PROPERTY TYPE(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:ENZYMATIC ACTIVITY<br/>2:ENTITIC<br/>3:MASS<br/>4:COUNTS<br/>5:SUBSTANCE AMOUNT (MOLES/MILLIEQUIVALENTS)<br/>6:VOLUMES<br/>7:ARBITRARY UNIT MEASURES<br/>8:TIME<br/>9:OTHER PROPERTIES<br/></td><td/><td>This field contains the type of property code (e.g., Enzymatic Activity,Entitic, mass, etc).</td></tr><tr><td>8196</td><td>DBA INACTIVE FLAG</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td/><td>This field indicates if a code is inactive.</td></tr><tr><td>8197</td><td>DEACTIVATION DATE</td><td>28;2</td><td>DATE-TIME</td><td/><td/><td>This field is used in conjunction with DBA INACTIVE FLAG and records the datethat a table entry was made inactive.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

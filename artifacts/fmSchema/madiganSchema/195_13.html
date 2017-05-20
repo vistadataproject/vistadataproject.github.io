@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TYPE OF RECORDS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="195_12.html">195.12</a></dd><dt>name</dt><dd>TYPE OF RECORDS</dd><dt>number</dt><dd>195.13</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>TYPE OF RECORD(+)</td><td>0;1</td><td>POINTER</td><td><a href="195_2.html">195.2</a></td><td>AB</td><td> Enter record types associated with your application and division.</td></tr><tr><td>2</td><td>DEFAULT HOME LOCATION</td><td>0;2</td><td>POINTER</td><td><a href="195_9.html">195.9</a></td><td/><td>Enter the Home Location the system should assign to records when they areinitially created.  This entry should be a File Room.</td></tr><tr><td>3</td><td>MONTHS OF INACTIVITY(+)</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>Enter the number of months back the system will search for a record when creating a retire/transfer list. A record is eligible to be included in this list if the date of last activity, which is entered when the list is created, is previous to this number of months ago.  This parameter will not apply to records being moved to another fileroom in the transfer/retire option.  </td></tr><tr><td>5</td><td>DEFAULT INITIAL BORROWER</td><td>0;5</td><td>POINTER</td><td><a href="195_9.html">195.9</a></td><td/><td>Enter the borrower the system should automatically charge a record to whenit is initially created for this application.  For example, if a patient'soutpatient records are initially created by the Outpatient Record Room,you may wish to assign the Outpatient Record Room as the Default InitialBorrower.</td></tr><tr><td>10</td><td>RETIRE/TRANSFER PARAMETERS</td><td>M;0</td><td>MULTIPLE</td><td><a href="195_18.html">195.18</a></td><td/><td>THIS FIELD IS NOT IN USE.</td></tr><tr><td>11</td><td>CHARGE TAG FORMAT</td><td>0;11</td><td>POINTER</td><td><a href="194_4.html">194.4</a></td><td/><td> Enter the name of the Charge Tag format to be used when charging outrecords.</td></tr><tr><td>12</td><td>ROUTING TAG FORMAT</td><td>0;12</td><td>POINTER</td><td><a href="194_4.html">194.4</a></td><td/><td> Enter the name of the Routing Tag format to be used when charging outrecords.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

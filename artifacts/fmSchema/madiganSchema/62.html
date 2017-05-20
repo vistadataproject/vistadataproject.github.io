@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COLLECTION SAMPLE</h1></div><div id="results"><dl><dt>name</dt><dd>COLLECTION SAMPLE</dd><dt>number</dt><dd>62</dd><dt>location</dt><dd>^LAB(62,</dd><dt>description</dt><dd>The Collection Sample file is a dictionary for collection samples and describes the collection sample requirements specific to a laboratory.This is anothe "Day One File" since entries included here are used when building the LAB TEST file.   The file includes specific information about each collection sample, such as the default specimen, tube top color, synonyms, and CAP code unitsfor blood collection by laboratory.</dd><dt>applicationGroups</dt><dd>LR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Specify the name of the collection sample. Use a self-explanatory name toease the ordering process for non-lab people.  </td></tr><tr><td>2</td><td>DEFAULT SPECIMEN</td><td>0;2</td><td>POINTER</td><td><a href="61.html">61</a></td><td>AC</td><td>This entry points to the TOPOGRAPHY FILE(#61) and must contain an existingsite/specimen entry from file #61.  This site/specimen is then predefinedOR "linked" with the collection sample name. This entry is not mandatory for sample like swab, aspirate, abscess etc.If there is no site/specimen entered here the HCP will be prompted toenter the site or specimen during order entry.</td></tr><tr><td>3</td><td>TUBE TOP COLOR</td><td>0;3</td><td>FREE TEXT</td><td/><td>C</td><td>The common color description of the tube used for this sample.This entry combines with the sample name in prompts to the ordering person.A tube top color of "blue" for the sample "blood" will appear as "BLUE BLOOD" on the screen.  This information also appears on the "Test Information"display.</td></tr><tr><td>4</td><td>SNOMED CODE</td><td>0;4</td><td>POINTER</td><td><a href="8188_12.html">8188.12</a></td><td>AD</td><td>SNOMED CT Codes identify Collection Samples, Specimens, Organisms andMorphologies to be used for Interoperability with the VA and for results forAP and Micro tests.</td></tr><tr><td>8</td><td>SYNONYM</td><td>1;0</td><td>MULTIPLE</td><td><a href="62_01.html">62.01</a></td><td/><td>This is a multiple field.  Enter synonyms, abbreviations, or common misspellings of this sample.</td></tr><tr><td>8196</td><td>INACTIVE FLAG</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td/><td>This field is used to inactivate table entries that have become obsolete.</td></tr><tr><td>8197</td><td>INACTIVATION DATE/TIME</td><td>28;2</td><td>DATE-TIME</td><td/><td/><td>This field logs the date/time an entry is inactivated.</td></tr><tr><td>8205</td><td>INACTIVATED BY</td><td>28;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This field stores the user who inactivated this Collection Sample entry.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

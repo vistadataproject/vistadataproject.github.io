@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CPT EVENTS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8058.html">8058</a></dd><dt>name</dt><dd>CPT EVENTS</dd><dt>number</dt><dd>8058.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CPT CODE</td><td>0;1</td><td>POINTER</td><td><a href="8151.html">8151</a></td><td>B</td><td>This is the CPT code associated with the billable event.  The billingrate will be determined by the rate associated with this CPT code.</td></tr><tr><td>.02</td><td>CPT MODIFIER</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>This is the CPT modifier of the billable event.  The modifier willdetermine whether technical or professional components will be charged.</td></tr><tr><td>.03</td><td>QUANTITY</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>This is the quantity of the billable service.  With the exception oflaboratory charges, the normal quantity billed will be '1'.</td></tr><tr><td>.04</td><td>INACTIVE CPT INDICATOR</td><td>0;4</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td/><td>This field stores the active/inactive indicator of the CPT code at thetime the event was captured in the suspense file.  This field is used forTPOCS billing.</td></tr><tr><td>.05</td><td>PROCESS FLAG</td><td>0;5</td><td>SET OF CODES</td><td>N:NEW<br/>C:CANCEL<br/>U:UPDATE<br/></td><td/><td>Describes the type of event.</td></tr><tr><td>.06</td><td>MEC TRANSACTION DATE</td><td>0;6</td><td>DATE-TIME</td><td/><td/><td>This field contains the date/time a CPT code was added/removed/modifiedvia the LAB MEC functionality.  It is used to populate the Cancel Date/Timein the TPOCS ASCII file.</td></tr><tr><td>.07</td><td>RAD SPECIFIC MODIFIER</td><td>0;7</td><td>FREE TEXT</td><td/><td/><td>This field stores the special modifiers for Radiology when the radiologyprocedure is performed as either Portable, Bilateral or Both. </td></tr><tr><td>.08</td><td>TPOCS EXTRACT</td><td>0;8</td><td>12</td><td/><td>This field is set if a record has been included in the Ancillary TPOCSextract.</td></tr><tr><td>.09</td><td>ABACUS EXTRACT</td><td>0;9</td><td>12</td><td/><td>This field is set if a record has been included in the Ancillary ABACUSextract.</td></tr><tr><td>1</td><td>CPT TRANSACTIONS</td><td>1;0</td><td>MULTIPLE</td><td><a href="8058_03.html">8058.03</a></td><td/><td>This multiple field will be used to track changes in quantity made to aspecific CPT code.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

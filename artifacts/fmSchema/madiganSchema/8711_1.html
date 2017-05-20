@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB ERROR</h1></div><div id="results"><dl><dt>name</dt><dd>LAB ERROR</dd><dt>number</dt><dd>8711.1</dd><dt>location</dt><dd>^LRSBE(8711.1,</dd><dt>description</dt><dd>This file containts the list of errors that can be encountered whileprocessing Lab Registration Batch files.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ERROR DESCRIPTION(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>Laboratory Error Description</td></tr><tr><td>.02</td><td>DISCREPANCY TYPE(+)</td><td>0;2</td><td>SET OF CODES</td><td>I:IMPORT<br/>R:REGISTRATION<br/>O:LAB ORDERS<br/>L:LOG IN<br/></td><td>AC</td><td>Discrepancy type</td></tr><tr><td>.03</td><td>ERROR NUMBER(+)</td><td>0;3</td><td>NUMERIC</td><td/><td>C</td><td>Error number</td></tr><tr><td>.04</td><td>SHORT ERROR DESCRIPTION</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>Short error description.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

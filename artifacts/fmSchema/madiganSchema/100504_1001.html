@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > KG OP10 LOG</h1></div><div id="results"><dl><dt>name</dt><dd>KG OP10 LOG</dd><dt>number</dt><dd>100504.1001</dd><dt>location</dt><dd>^KGOR(100504.1001,</dd><dt>description</dt><dd>This file tracks users that run canned reports and other options that allowthem to see patient notes.  At this time (17 April 2002) the only Note Typethat has ever been supported is M - Patient Master Problem List and entryis triggered only when a user chooses option 3 (Patient Master ProblemList) from the main menu in ADM.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td/><td>Patient whose notes were reviewed</td></tr><tr><td>.02</td><td>USER</td><td>0;2</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>User who view patient's notes</td></tr><tr><td>2</td><td>DATE(+)</td><td>0;3</td><td>DATE-TIME</td><td/><td/><td>Date/time that notes were viewed</td></tr><tr><td>3</td><td>NOTE TYPE(+)</td><td>0;4</td><td>SET OF CODES</td><td>P:Progress Note<br/>D:Discharge Note<br/>C:Consult Note<br/>M:Master Problem List<br/></td><td/><td>Type of note that was viewed. "P" = Progress Notes                              "D" = Discharge notes                              "C" = Consult Notes                              "M" = Master Problem List</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

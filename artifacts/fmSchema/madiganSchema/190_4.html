@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RECORD BATCH PRINT</h1></div><div id="results"><dl><dt>name</dt><dd>RECORD BATCH PRINT</dd><dt>number</dt><dd>190.4</dd><dt>location</dt><dd>^RTV(190.4,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field contains the CHCS-supplied name of the record batch.  The batchname is composed of the hospital location name and month and day the batchwas created.  The batch list is a list of patients with appointments in aclinic or in radiology who have no electronic records on the CHCS.</td></tr><tr><td>.03</td><td>APPLICATION(+)</td><td>0;3</td><td>POINTER</td><td><a href="195_1.html">195.1</a></td><td/><td>This field contains the name of the record tracking application (such asmedical records or image tracking).  The data in this field is supplied bythe CHCS when the user accesses medical records tracking or image trackingsystems.</td></tr><tr><td>.04</td><td>DIVISION(+)</td><td>0;4</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td/><td>This field contains the division for which the batch list is being createdand is supplied by the CHCS from user log on.</td></tr><tr><td>.05</td><td>APPOINTMENT DATE</td><td>0;5</td><td>DATE-TIME</td><td/><td/><td>This field contains the date of the clinic or radiology appointment.  </td></tr><tr><td>.06</td><td>FILE ROOM</td><td>0;6</td><td>POINTER</td><td><a href="195_9.html">195.9</a></td><td/><td>This field contains the name of the file room where the batch list wascreated.  The date in this field is supplied by the CHCS when the useraccesses the medical record tracking or image tracking system.</td></tr><tr><td>.07</td><td>PULL DATE</td><td>0;7</td><td>DATE-TIME</td><td/><td>D</td><td>Enter the date for which you want the CHCS to search for appointments. Medical Record Tracking:  The CHCS looks at the PAS Clinic Profile, PATIENTPULL RECORD field to determine the number of days in advance of theappointment date to pull records.  For example, if the profile indiates "1"day, the user would enter a pull date of TODAY for tomorrow's appointments.   Image Tracking:  When clinic appointments require films, the system looksat the PAS Clinic Profile, RADIOLOGY PULL RECORD field to determine thenumber of days in advance of the appointment date to pull films.  The CHCSalso checks radiology locations such as Ultrasound and MRI for appointmentswithin radiology.  For radiology locations, there are no parameters to pullfolders days in advance.  For example, users would enter TODAY for today'sappointments.</td></tr><tr><td>1</td><td>PATIENT APPOINTMENT</td><td>1;0</td><td>MULTIPLE</td><td><a href="190_41.html">190.41</a></td><td/><td>This field is a multiple containing all patient appointment information forthe batch list for a particular date.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

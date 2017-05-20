@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCRIPT GENERATOR SEGMENT</h1></div><div id="results"><dl><dt>name</dt><dd>SCRIPT GENERATOR SEGMENT</dd><dt>number</dt><dd>4010</dd><dt>location</dt><dd>^INTHL7S(</dd><dt>description</dt><dd>This file contains the specifications for HL7 segments.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>SEGMENT NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td/><td>The full name of the segment.</td></tr><tr><td>.02</td><td>SEGMENT ID(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>This identifies the segment in a message. It should be a 2-8character ID.  It will be used to pattern match the segment as well as serveas the prefix for all script variables.</td></tr><tr><td>.03</td><td>SEGMENT PATTERN</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field, if present, will be used for inbound messages to set thepattern match for the segment.  A wild-card character '*' will be appendedto the end of the value of this field.  For example, if this field is setto ABC?12 the pattern match will be ABC?12* in the script. If no value is present, the segment ID will be used to identify the segment.</td></tr><tr><td>1</td><td>FIELD MULTIPLE</td><td>1;0</td><td>MULTIPLE</td><td><a href="4010_01.html">4010.01</a></td><td/><td>This is the multiple that contains the fields for this segment.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB CUMULATIVE HEADER</h1></div><div id="results"><dl><dt>name</dt><dd>LAB CUMULATIVE HEADER</dd><dt>number</dt><dd>65.1</dd><dt>location</dt><dd>^LAB(65.1,</dd><dt>description</dt><dd>This file contains the information for Lab Cumulative headers andtheir associated format controls.</dd><dt>applicationGroups</dt><dd>LR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field is used to define the groupings of tests to be displayedon the cumulative.  The LAB CUMULATIVE TEST file points to thisentry for the name of the header.  Use names like "General Chemistry"or "HEMATOLOGY PROFILE".  This name will display on thecumulative above the names of the tests and their results.</td></tr><tr><td>.02</td><td>SITE/SPECIMEN</td><td>0;2</td><td>POINTER</td><td><a href="61.html">61</a></td><td/><td>This entry defines a single site/specimen type for each header.  ^</td></tr><tr><td>.03</td><td>SITE/SPECIMEN TEXT</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>DO NOT EDIT this field.  This field store the site/specimen associatedwith this header.  The actual textual value of the site/specimenis stored here so the information is available for the cumulativeprogram.</td></tr><tr><td>.04</td><td>FORMAT TYPE</td><td>0;4</td><td>SET OF CODES</td><td>H:HORIZONTAL<br/>V:VERTICAL<br/></td><td/><td>This field determines the type of formatted display youwill see for this header. ('H' for "HORIZONTAL"; tests listed acrossthe page in rows, or 'V' FOR "VERTICAL"; tests listed d0wn the page in columns)</td></tr><tr><td>.05</td><td>PRINT ORDER(+)</td><td>0;5</td><td>NUMERIC</td><td/><td>C</td><td>This is a number assigned to the header(s) and defines the print orderof the header.  Print order is a unique number and determines the order theheaders and associated tests will print.  Assign numbers starting with 10,20 etc.  Then new headers can be added between existing headers.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

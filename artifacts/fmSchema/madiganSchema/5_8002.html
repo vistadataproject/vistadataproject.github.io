@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ZIP CODE</h1></div><div id="results"><dl><dt>name</dt><dd>ZIP CODE</dd><dt>number</dt><dd>5.8002</dd><dt>location</dt><dd>^DAZIP(5.8002,</dd><dt>description</dt><dd>The ZIP CODE file contains zip codes for cities in the fifty statesand U.S. territories.The information in the file is extracted from a tape provided by theU.S. Post Office. This is a Standard Class 1 file, users cannot add or delete entries,and only the following fields can be editted:      o PROV NETWORK AREA ZIP:     o PT ENROLL AREA ZIP:     o MODIFIED CITY The Master File Primary Key (Unique ID) for this file:        IEN\CODE(.01)\99ZIP</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>CODE(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This file contains the codes used by the U.S. Post Office to facilitate sorting and delivery of mail to addresses within the United States and U.S. territories. This is a Standard Class 1 file, users cannot add or delete entries, and only the following fields can be edited:      o PROV NETWORK AREA ZIP:     o PT ENROLL AREA ZIP:     o MODIFIED CITY</td></tr><tr><td>1</td><td>CITY(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td> Contains the city associated with the zip code. This field is editable.  Contact your Site Manager for assistance.</td></tr><tr><td>2</td><td>STATE(+)</td><td>0;3</td><td>POINTER</td><td><a href="5.html">5</a></td><td/><td> Contains the state associated with the zip code and city. This field is not editable.  Contact your Site Manager for assistance.</td></tr><tr><td>3</td><td>PROV NETWORK AREA ZIP</td><td>0;4</td><td>12</td><td/><td>This field allows each MTF to define, by Provider Place of CareZip Code, those providers who are part of the Managed Care Program(MCP) provider network.</td></tr><tr><td>4</td><td>PT ENROLL AREA ZIP</td><td>0;5</td><td>12</td><td/><td>This field allows each MTF to define, by Patient home residenceZip Code, those codes which are part of the patient enrollmentarea for the Managed Care Program (MCP).</td></tr><tr><td>5</td><td>MODIFIED CITY</td><td>0;6</td><td>FREE TEXT</td><td/><td/><td>This MODIFIED CITY is alternate for the CITY (uneditable P.O. City).  Theuser can use this MODIFIED CITY to edit the city.  If the MODIFIED CITYis null, then the function will use the CITY field for the city value.</td></tr><tr><td>8196</td><td>DBA INACTIVE FLAG</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td/><td> This field is used to inactivate table entries that have become obsolete. </td></tr><tr><td>8197</td><td>DEACTIVATION DATE</td><td>28;2</td><td>DATE-TIME</td><td/><td/><td> This field is used in conjunction with DBA INACTIVE FLAG and records thedate a table entry is made inactive. </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

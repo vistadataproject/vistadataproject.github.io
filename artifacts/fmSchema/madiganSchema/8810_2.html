@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLINICAL EVENT TRACKING</h1></div><div id="results"><dl><dt>name</dt><dd>CLINICAL EVENT TRACKING</dd><dt>number</dt><dd>8810.2</dd><dt>location</dt><dd>^CH(8810.2,</dd><dt>description</dt><dd>This is a file for tracking unexpected clinical events such ascardiac arrests. The specs are somewhat vague as to how this mustbe set up, so the the initial version of this file is rather simplewhile awaiting more detailed description of the desired system.</dd><dt>applicationGroups</dt><dd>XUPR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Pointer to Patient file (#2), indicating the patient involved in theunexpected clinical event.</td></tr><tr><td>.02</td><td>ENCOUNTER/EPISODE(+)</td><td>0;2</td><td>POINTER</td><td><a href="311.html">311</a></td><td/><td>Pointer to Encounter file (#311)</td></tr><tr><td>.03</td><td>START DATE/TIME(+)</td><td>0;3</td><td>DATE-TIME</td><td/><td>DT1</td><td>Enter the specific date and time that the unexpected clinical eventinitially occurred.</td></tr><tr><td>.04</td><td>END DATE/TIME(+)</td><td>0;4</td><td>DATE-TIME</td><td/><td/><td>Enter the specific date and time that the unexpected clinical event endedor resolved.</td></tr><tr><td>.05</td><td>USER</td><td>0;5</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>Pointer to User file (#3)</td></tr><tr><td>1</td><td>DESCRIPTION OF EVENT</td><td>1;0</td><td>WORD-PROCESSING</td><td/><td/><td>Word-processing field to document all elements of the unexpected clinicalevent.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

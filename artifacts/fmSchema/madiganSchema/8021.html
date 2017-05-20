@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DD7A OUTPATIENT SORT FILE</h1></div><div id="results"><dl><dt>name</dt><dd>DD7A OUTPATIENT SORT FILE</dd><dt>number</dt><dd>8021</dd><dt>location</dt><dd>^MSAC(8021,</dd><dt>description</dt><dd>This file contains information that drives the printing of the monthlyoutpatient form DD7As.  It is cleared out by the nightly run at month end,at which time new entries are generated.</dd><dt>applicationGroups</dt><dd>MSA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>ACCOUNT NUMBER(+)</td><td>0;1</td><td>POINTER</td><td><a href="8050.html">8050</a></td><td>B</td><td>MSA account number associated with this DD7 outpatient entry</td></tr><tr><td>.05</td><td>DIVISION</td><td>DIV;1</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td/><td>The division associated with a specific DD7A OUTPATIENT SORT FILErecord.</td></tr><tr><td>2</td><td>CONTROL NUMBER(+)</td><td>0;2</td><td>FREE TEXT</td><td/><td/><td>Control number of the DD7A report on which this accountwas reported.</td></tr><tr><td>8000</td><td>PATIENT CATEGORY</td><td>0;3</td><td>POINTER</td><td><a href="8156.html">8156</a></td><td/><td>Patient category associated with this DD7A entry.</td></tr><tr><td>8001</td><td>MONTH/YEAR CREATED</td><td>0;4</td><td>DATE-TIME</td><td/><td/><td>Month and year in which the DD7A entry was created.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

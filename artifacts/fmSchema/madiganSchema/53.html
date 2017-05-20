@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RX PATIENT STATUS</h1></div><div id="results"><dl><dt>name</dt><dd>RX PATIENT STATUS</dd><dt>number</dt><dd>53</dd><dt>location</dt><dd>^PS(53,</dd><dt>description</dt><dd>This file holds a list of valid statuses that can be assigned to each Rxthat represents the authorization for the Rx.  This is independent of theeligibility code assigned to the patient by MAS.  This file also holds theparameters that determine if an Rx for a certain status can be refilled, etc.  Data is sent for this file, but can be altered by the center, withcare.</dd><dt>applicationGroups</dt><dd>PS</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>NUMBER</td><td/><td>11</td><td/><td/><td>This field indicates the internal number assigned to the prescription status.</td></tr><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td>B</td><td>This field indicates the name of the prescription status.</td></tr><tr><td>2</td><td>ABBR</td><td>0;2</td><td>FREE TEXT</td><td/><td>C</td><td>This field indicates the abbreviation of the prescription status.</td></tr><tr><td>3</td><td>DAYS SUPPLY</td><td>0;3</td><td>NUMERIC</td><td/><td/><td>This field indicates the days supply for the prescription.</td></tr><tr><td>4</td><td>REFILLS</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This field indicates the number of refills allowed for the prescription.</td></tr><tr><td>5</td><td>RENEWABLE</td><td>0;5</td><td>12</td><td/><td>This field indicates whether the prescription is renewable.  The settings are"0" for NO and "1" for YES.</td></tr><tr><td>6</td><td>SC/A&A/OTHER/INPATIENT(+)</td><td>0;6</td><td>SET OF CODES</td><td>1:SERVICE CONNECTED<br/>2:A&A<br/>3:OTHER<br/>4:INPATIENT<br/></td><td/><td>This field indicates which status should be counted under AMIS.  Settings are"1" for SERVICE CONNECTED, "2" for A&A, "3" for OTHER, and "4" for INPATIENT.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

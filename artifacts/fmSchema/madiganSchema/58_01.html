@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PHARMACY PATIENT SAFETY PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>PHARMACY PATIENT SAFETY PARAMETERS</dd><dt>number</dt><dd>58.01</dd><dt>location</dt><dd>^PSI(58.01,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>PATIENT(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This is the IEN of the patient.</td></tr><tr><td>.02</td><td>DATE LAST UPDATED</td><td>0;2</td><td>DATE-TIME</td><td/><td/><td>Date and time of last change to any field in this file</td></tr><tr><td>.03</td><td>USER</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td/><td>This is last  user who updated this entry</td></tr><tr><td>.04</td><td>GESTATIONAL AGE</td><td>0;4</td><td>NUMERIC</td><td/><td/><td>This field is the estimated gestational age of the child at birth usuallyreported in weeks and based on the date of the last menstrual period. Forneonatal and infant dosage checks to take place, it is important to documentthe gestational age of a child even if the child was full-term at birth (37 weeks or greater.) </td></tr><tr><td>.05</td><td>SERUM CREANTININE</td><td>0;5</td><td>NUMERIC</td><td/><td/><td>This is the Serum Creatinine Result in MG/DL</td></tr><tr><td>.06</td><td>SERUM CREATININE DATE</td><td>0;6</td><td>DATE-TIME</td><td/><td/><td>Date/Time of Serum of Creatinine Result</td></tr><tr><td>.07</td><td>HEIGHT</td><td>0;7</td><td>NUMERIC</td><td/><td/><td>This is the patient's height in inches.</td></tr><tr><td>.08</td><td>HEIGHT DATE</td><td>0;8</td><td>DATE-TIME</td><td/><td/><td>Date/Time Height Measurement was taken</td></tr><tr><td>.09</td><td>WEIGHT</td><td>0;9</td><td>NUMERIC</td><td/><td/><td>This is the patient's weight in pounds.</td></tr><tr><td>.1</td><td>WEIGHT DATE</td><td>0;10</td><td>DATE-TIME</td><td/><td/><td>Date/Time Weight Measurewment was taken</td></tr><tr><td>.11</td><td>PREGNANCY FLAG</td><td>0;11</td><td>SET OF CODES</td><td>0:NO<br/>1:YES<br/>-1:UNK<br/></td><td/><td>This field is a flag denoting whether a patient is pregnant.  It can have avalue of Yes, No or Unknown.  The default value will be Unknown</td></tr><tr><td>.12</td><td>PREGNANCY DATE</td><td>0;12</td><td>DATE-TIME</td><td/><td>APREGDTE</td><td>Date/Time Pregnancy Flag Last Set</td></tr><tr><td>2</td><td>BSA</td><td/><td>COMPUTED</td><td/><td/><td>This is the calculate Body Surface Area using the Dubois-Dubois formula.</td></tr><tr><td>3</td><td>CRCL</td><td/><td>COMPUTED</td><td/><td/><td>Calculated Screatine Clearance.This field represents the estimated cretinine clearance for a patient.  It is calculated using the Cockcroft-Gault formula using the patient'sSerum Creatinine Result, Weight, Age and Gender.</td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

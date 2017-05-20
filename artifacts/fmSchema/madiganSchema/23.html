@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Madigan CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">Madigan CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BRANCH OF SERVICE</h1></div><div id="results"><dl><dt>name</dt><dd>BRANCH OF SERVICE</dd><dt>number</dt><dd>23</dd><dt>location</dt><dd>^DIC(23,</dd><dt>description</dt><dd>This file contains a table of military and government services,e.g. AIR FORCE, FOREIGN MILITARY, and U.S. PUBLIC HEALTH SERVICE.In addition, it contains multi-service entries such as ARMY/AIR FORCEused by the CHCS system to denote multi-service relations.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>NAME(+)</td><td>0;1</td><td>FREE TEXT</td><td/><td/><td>This field contains the name of a  government or military service(ie. Army, Navy Air Force etc.).</td></tr><tr><td>1</td><td>CODE</td><td>0;2</td><td>FREE TEXT</td><td/><td>BC</td><td>This field identifies the one character standard code associatedwith a Branch of Service.</td></tr><tr><td>2</td><td>ABBREVIATION</td><td>0;3</td><td>FREE TEXT</td><td/><td/><td>This field is the short name/ abbreviation associated with a Branchof Service.</td></tr><tr><td>3</td><td>SIDR SVC FLAG</td><td>0;4</td><td>FREE TEXT</td><td/><td/><td>  This field contains a one character code that is representative of theservice designation for Biometrics tape creation, in compliance withSIDR requirements.  </td></tr><tr><td>4</td><td>SINGLE SVC FLAG</td><td>0;5</td><td>12</td><td/><td>This field is used to denote the entries in this file that are usedby PAD.  Its purpose is to trigger a screen on those entriesthat the user should not see, such as ARMY/AIR FORCE/NAVY.10/23/89</td></tr><tr><td>5</td><td>DEERS ELIG CODE</td><td>0;6</td><td>FREE TEXT</td><td/><td>AELIG</td><td>This is the Branch of Service code transmitted from DEERS as part of apatient eligibility response.</td></tr><tr><td>6</td><td>DEERS PIT CODE</td><td>0;7</td><td>FREE TEXT</td><td/><td>APIT</td><td>This is the Branch of Service code transmitted from DEERS as part of a PITmessage.</td></tr><tr><td>8196</td><td>DBA INACTIVE FLAG</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td/><td> This field is used to inactivate table entries that have become obsolete. </td></tr><tr><td>8197</td><td>DEACTIVATION DATE</td><td>28;2</td><td>DATE-TIME</td><td/><td/><td> This field is used in conjunction with DBA INACTIVE FLAG and records thedate that a table entry was made inactive. </td></tr></tbody></table></dd></dl></div></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>
