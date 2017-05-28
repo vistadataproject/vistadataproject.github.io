@@ -72,7 +72,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 
 
-## nodeVISTA command menu (optional)
+## Install nodeVISTA command menu (optional)
 
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
@@ -103,7 +103,7 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 *  The nodeVISTA server command menu will appear whenever you type "nv" on the command line, and provide all the functions as defined in the menu.
 
 
-![nodeVISTA menu -width70](/demo/images/common/nodeVISTA-terminal.png)
+![nodeVISTA menu](/demo/images/common/nodeVISTA-terminal.png)
 
 
 
