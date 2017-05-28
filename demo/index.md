@@ -8,7 +8,7 @@ The following sections describe first how to install the **nodeVISTA Server** an
 
 <br><br>
 
-![CPRS-MVDM-Clients](/demo/images/common/demo-cprs-mvdm-clients3.png)
+![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients3.png)
 
 
 <br><br>
@@ -106,7 +106,7 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 *  The nodeVISTA server command menu will appear whenever you type "nv" on the command line, and provide all the functions as defined in the menu.
 
 
-![nodeVISTA menu](/demo/images/common/nodeVISTA-terminal.png)
+![nodeVISTA menu -width70](/demo/images/common/nodeVISTA-terminal.png)
 
 
 
