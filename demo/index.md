@@ -3,7 +3,7 @@ layout: default
 title: MVDM Demo
 ---
 
-# Master VISTA Data Model Demo
+# Master VISTA Data Model Demonstration
 The following sections describe first how to install the **nodeVISTA Server** and **CPRS Client**, and then how to run the Master VISTA Data Model (MVDM) demo. __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__: 
 
 <br><br>
