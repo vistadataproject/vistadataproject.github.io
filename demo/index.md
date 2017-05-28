@@ -8,7 +8,7 @@ The following sections describe first how to install the **nodeVISTA Server** an
 
 <br><br>
 
-![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdo-clients2.png)
+![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdo-clients3.png)
 
 
 <br><br>
