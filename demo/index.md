@@ -3,12 +3,15 @@ layout: default
 title: MVDM Demo
 ---
 
-# MVDM Demo
-The following sections describe first how to install the **nodeVISTA** server and CPRS client, and then how to run the MVDM demo. __The demo focuses on how MVDM audits, secures, and emulates existing VISTA clients such as CPRS using the RPC Emulator__.
+# Master VISTA Data Model Demonstration
+The following sections describe first how to install the **nodeVISTA Server** and **CPRS Client**, and then how to run the Master VISTA Data Model (MVDM) demo. __The demo focuses on how MVDM audits, secures, and emulates current production VISTA clients such as CPRS using the RPC Emulator__: 
+
+<br><br>
+
+![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients3.png)
 
 
-![CPRS-MVDM-Clients -width70](/demo/images/common/demo-cprs-mvdm-clients.png)
-
+<br><br>
 ## Installation and Orientation
 1. [Install nodeVISTA](#nodevista-installation)
 2. [Install CPRS](#cprs--rpc-server-installation)
@@ -72,7 +75,7 @@ The following outlines how to install **nodeVISTA** server in a VirtualBox virtu
 
 
 
-##  Optional: Install nodeVISTA command menu
+## Install nodeVISTA command menu (optional)
 
 As an optional feature, if you're working on a Linux or Mac OS host, you may want to have a command-line menu to manage the nodeVISTA server. 
 
@@ -103,6 +106,9 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 *  The nodeVISTA server command menu will appear whenever you type "nv" on the command line, and provide all the functions as defined in the menu.
 
 
+![nodeVISTA menu -width70](/demo/images/common/nodeVISTA-terminal.png)
+
+
 
 ## Verify nodeVISTA Installation
 
@@ -116,16 +122,14 @@ alias nv-vdm-query='open http://10.2.2.100:9000/query'
 ![FM Schema Browser -width70](/demo/images/common/fmql-browser.png)
 
 
-
-
 [ Back to top ↑](#top)
 
 
-<br><br><br><br>
+<br><br><br><br><br>
 # CPRS Installation
 
 
-The Computerized Patient Record System (CPRS) is the graphical user interface (Client)  that physicians use to interact with VISTA (Server).  Because end-users don't ever "see" VISTA, __most users think that CPRS *is* the EHR (i.e. "CPRS is VISTA")__. In this regard, according to the most recent national survey of over 15,000 physician end-users of EHRs ( [Medscape 2016 National EHR Survey](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS remains one of the highest regarded integrated EHR in the U.S.
+The Computerized Patient Record System (CPRS) is the graphical user interface (Client) through which physicians interact with VISTA (Server).  Because end-users don't ever "see" VISTA, __most users think that CPRS *is* the EHR (i.e. "CPRS is VISTA")__. In this regard, according to the most recent national survey of over 15,000 physician end-users of EHRs ( [Medscape 2016 National EHR Survey](http://www.medscape.com/features/slideshow/public/ehr2016#page=8) ), CPRS remains one of the highest regarded integrated EHR in the U.S.
 
 
 __CPRS runs on all currently supported versions of Microsoft Windows__.  If one wishes to run CPRS on MacOS or LinuxOS, one first needs to create a virtual Windows environment by downloading the free open-source [Virtualbox](https://www.virtualbox.org) or commercial [VMWare](http://www.vmware.com/products/fusion.html) hypervisor, and then install the free  [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO) within this hypervisor. Alternately, Microsoft offers free pre-built, virtualized versions of Windows prepackaged for several different hypervisors, which one can download [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/#downloads).  Note all the free versions of Windows above have some restrictions, but nothing that that affects the installation or execution of CPRS. 
