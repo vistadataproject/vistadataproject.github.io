@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER ENTRY EPISODE TRACKING</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER ENTRY EPISODE TRACKING</dd><dt>number</dt><dd>109.3</dd><dt>location</dt><dd>^ORP(109.3,</dd><dt>description</dt><dd>This file links two sequenced inpatient episodes from admission to discharge.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>Pointer to the Patient file (<#2) for the patient's name.</td></tr><tr><td>.02</td><td>current episode</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Set to Episode# when Admission is activated.Cleared when Discharge activated.</td></tr><tr><td>.03</td><td>admission page toggle</td><td>0;3</td><td>SET OF CODES</td><td>0:NO ADM Page<br/>1:ADM Page Created<br/></td><td></td><td>Let  Episode-Counter = $P(^ORP(109.3,PID,1,0),"^",3). The Toggle is used to calculate the next epsiode,  SEE '$$NEXTEPIS^ORF1' 3 CASES:    1. Patient is Out Patient ; NO Future Admission Page ; TOGGLE = 0         Next Episode = Episode-Counter + 1.    2. Patient is Out Patient ; IS Future Admission Page ; TOGGLE = 1          Next Episode = Episode-Counter.    3. Patient is In Patient  ; Admisson Page Activated  ; TOGGLE = 0          Next Episode = Episode-Counter + 1. The Toggle identifies Case 2..General Algorithm: S:TOGGLE=1 Next-Episode = Episode-Counter                   S:TOGGLE=0 Next-Episode = Episode-Counter + 1.------------------TOGGLE is Set when Admission page created.TOGGLE is Cleared when Admission Page  Activated -OR- Cancelled.</td></tr><tr><td>1</td><td>order episode</td><td>1;0</td><td>MULTIPLE</td><td><a href="109_31.html">109.31</a></td><td></td><td>Whenever a Admission Order is entered it creates a New Page and a New OR Episode.The [OR-PAG-EPISODE] input template creates a new OR episode #The .001 field of this multiple serves as the OR Episode #.The OR Episode # is used to coordinate the OR pages. All pages created  within the same inpatient stay have the same OR episode #.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

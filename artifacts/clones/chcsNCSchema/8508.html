@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CBS DENTAL CALL LIST</h1></div><div id="results"><dl><dt>name</dt><dd>CBS DENTAL CALL LIST</dd><dt>number</dt><dd>8508</dd><dt>location</dt><dd>^SDOT(8508,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Pointer to the patient file.</td></tr><tr><td>1</td><td>date/time entered</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>Date/time the call list was entered.</td></tr><tr><td>2</td><td>clinic</td><td>0;3</td><td>POINTER</td><td><a href="44.html">44</a></td><td>C</td><td>Pointer to Hospital Location file.</td></tr><tr><td>3</td><td>provider</td><td>0;4</td><td>POINTER</td><td><a href="6.html">6</a></td><td></td><td>Pointer to Provider file.</td></tr><tr><td>4</td><td>call list priority</td><td>0;5</td><td>POINTER</td><td><a href="8598.html">8598</a></td><td></td><td>This is the call list priority code (0-9).  This is same as the WaitList priority code.  The actual codes and descriptions are MTFdefinable and are in the MTF file (4).</td></tr><tr><td>5</td><td>target date</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>The earliest date that the patient wants for an appointment thatis to be booked from a call list request.</td></tr><tr><td>6</td><td>contact attempts</td><td>1;0</td><td>MULTIPLE</td><td><a href="8508_01.html">8508.01</a></td><td></td><td>Attempts to contact patient to book appointment from the call list.</td></tr><tr><td>7</td><td>requested start time</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The earliest time during the day that a patient is availablefor the appointment.</td></tr><tr><td>8</td><td>requested stop time</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>The latest time during the day that a ptient is available for theappointment to be booked from call list.</td></tr><tr><td>9</td><td>days of week</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>The day(s) of the week that the patient is available for an appointmentto be booked from the call list.</td></tr><tr><td>10</td><td>reason for appointment</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>A free-text field used to describe the reason the appointment.</td></tr><tr><td>11</td><td>appointment comment</td><td>0;11</td><td>FREE TEXT</td><td></td><td></td><td>A free-text comment field utilized to record events about the appointment.</td></tr><tr><td>12</td><td>appt detail codes</td><td>2;0</td><td>MULTIPLE</td><td><a href="8508_02.html">8508.02</a></td><td></td><td>Select up to 4 appointment details codes to further define the appointment</td></tr><tr><td>13</td><td>appointment ien</td><td>3;1</td><td>POINTER</td><td><a href="44_2.html">44.2</a></td><td></td><td>Pointer to patient appointment file</td></tr><tr><td>14</td><td>dental type</td><td>0;12</td><td>POINTER</td><td><a href="8507.html">8507</a></td><td></td><td>Pointer to 8507.</td></tr><tr><td>15</td><td>duration</td><td>0;13</td><td>NUMERIC</td><td></td><td></td><td>Duration</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

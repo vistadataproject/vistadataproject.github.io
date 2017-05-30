@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB TEST</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8730.html">8730</a></dd><dt>name</dt><dd>LAB TEST</dd><dt>number</dt><dd>8730.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>lab test</td><td>0;1</td><td>POINTER</td><td><a href="60.html">60</a></td><td></td><td>This field contains the names of lab tests that are part of the differential or urinalysis panels.  Enter the name of each test onthe panel and define the type, key and display order for each test. ***In order to change the type, key or display order of a lab testentered here you must first delete the lab test from the lab test multiple and then re-enter the test and its new values.  This process creates an accurate cross-reference used to format the screen for the Diff and UA keyboard entry.</td></tr><tr><td>1</td><td>type(+)</td><td>0;2</td><td>SET OF CODES</td><td>D:DIFFERENTIAL<br/>M:MORPHOLOGY<br/>I:MICROSCOPIC<br/>A:MACROSCOPIC<br/></td><td></td><td>Enter the type of procedure appropriate for this test.The keypad result entryr encompasses urinalysis and WBC differentials. DIFFERENTIAL: Includes SEGS, BANDS, LYMPHS, ATYPICAL LYMPHS, MONOS,EOSINOS, BASOS, METAS, MYELOS, PROS, BLASTS, NRBC, and PLASMA CELLS. MORPHOLOGY: Includes test describing RBC morphology, WBC morphology,parasites, and platelet estimates. MICROSCOPIC: Includes tests that will display or be selected aspart of the microscopic portion of the urinalysis panel. MACROSCOPIC: Includes tests that will dipslya together as themacroscopic portion of the urinalysis panel. ***To change the type entered into this field you must delete thelab test from the lab test multiple.  Then, re-enter the test and its new values.  This process creates an accurate cross-reference used to format the screen for the Diff and UA keyboard entry.</td></tr><tr><td>2</td><td>key</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Select an uppercase, lowercase, numberic or punctuation key.  Thecharacters "Q" and "<" are excluded. If the test is defined as macroscopic it will no require a defined key. If the test is defined as DIFFERENTIAL then when the user strikesthis key the cells will be counted on the screen display. If the test is defined as MORPHOLOGY or MICROSCOPIC the user strikesthis key in order to select the test for resulting. ***To change the key entered into this field you must delete thelab test from the lab test multiple.  Then, re-enter the test and its newvalues.  This process creates an accurate cross-reference used to fromat the screen for the Diff and UA keyboard entry.</td></tr><tr><td>3</td><td>display order(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field defines the display order of the tests during keyboard result entry.  The tests are defined in the LAB TEST file with a print order that is appropriate for reporting,but may be awkward for the keyboard result entry.  This fieldallows the user to control the display order and have the neededflexibility in the display. Note: When the results are reviewed for certification the display orderreturns to the PRINT ORDER as defined in the LAB TEST file. ***To change the display order entered into this field you must deletethe lab test from the lab test multiple.  Then, re-enter the test andits new values.  This process creates an accurate cross-referenceused to format the screen for the Diff and UA keyboard entry.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

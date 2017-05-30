@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER REQUIRED DATA FILES</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER REQUIRED DATA FILES</dd><dt>number</dt><dd>103.4</dd><dt>location</dt><dd>^ORD(103.4,</dd><dt>description</dt><dd>This file stores a list of CHCS filenames that are eligible for the OrderRequired Data functionality. User can set up Order Required Data questionsand prompts that specify the responses are stored in a CHCS file. ThoseCHCS files must be pre-defined in this file. Entries in this file are maintained by the CHCS Development organizationand should never be manipulated by site personnel.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>file name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the file name from the Fileman Data Dictionaries in CHCS thatcan be used to supply responses to Order Required Data questions duringorder entry. The file name entered here must be defined as a validCHCS file, as listed in the File of Files (file #2). Entries in this file are controlled by the software development organizationand should never be manipulated by the sites.</td></tr><tr><td>.02</td><td>source data provided by</td><td>0;2</td><td>SET OF CODES</td><td>1:CHCS I<br/>2:CHCS 2<br/></td><td></td><td>This field specifies which system will be the source of the data whena question's response type specifies this file. The source of the datacan be either CHCS II if the CHCS II application database is maintainedin sychronization with the corresponding file on CHCS I, or the sourcecould be CHCS I, in which case data will always be pulled from CHCS I.</td></tr><tr><td>.03</td><td>alternate display field</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field specifies an additional display field that will be used duringlookup and selection activities. The .01 field of a file will always bethe primary display field, and it this field is specified, it will alsodisplay to the user. An example of when to specify an additional display field, is when usinga file whose .01 field is a coded value of limited length, such as theLab Specimen Source Code file (8732). This file has a code value as the.01 field, making a lookup and selection list somewhat vague and ambiguous.Populating this field allows for more information about each entry to bedisplayed to help the user make the appropriate selection.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

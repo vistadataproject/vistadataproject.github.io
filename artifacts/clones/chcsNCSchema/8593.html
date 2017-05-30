@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CBS OPERATORY TREATMENT ROOM</h1></div><div id="results"><dl><dt>name</dt><dd>CBS OPERATORY TREATMENT ROOM</dd><dt>number</dt><dd>8593</dd><dt>location</dt><dd>^SDOT(8593,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Treatment Room name</td></tr><tr><td>1</td><td>clinic(+)</td><td>0;2</td><td>POINTER</td><td><a href="44.html">44</a></td><td>CLN</td><td>The clinic that the treatment room is associated with.</td></tr><tr><td>2</td><td>abbreviation</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>Treatment room abbreviation (5 characters max)</td></tr><tr><td>3</td><td>description</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Treatment room description (40 characters max)</td></tr><tr><td>4</td><td>activation status</td><td>0;5</td><td>SET OF CODES</td><td>1:ACTIVE<br/>0:INACTIVE<br/></td><td></td><td>Indication that the treatment room is active or inactive</td></tr><tr><td>4.01</td><td>closure start date</td><td>4;1</td><td>DATE-TIME</td><td></td><td></td><td>Date that closure starts</td></tr><tr><td>4.02</td><td>closure stop date</td><td>4;2</td><td>DATE-TIME</td><td></td><td></td><td>Date closure ends</td></tr><tr><td>5</td><td>treatment room resources</td><td>1;0</td><td>MULTIPLE</td><td><a href="8593_01.html">8593.01</a></td><td></td><td>Dental resources associated with a treatment room</td></tr><tr><td>6</td><td>allowable providers</td><td>2;0</td><td>MULTIPLE</td><td><a href="8593_02.html">8593.02</a></td><td></td><td>Providers associated with the treatment room</td></tr><tr><td>7</td><td>allowable dental types</td><td>3;0</td><td>MULTIPLE</td><td><a href="8593_03.html">8593.03</a></td><td></td><td>These are the allowable dental type codes for this treatment room.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

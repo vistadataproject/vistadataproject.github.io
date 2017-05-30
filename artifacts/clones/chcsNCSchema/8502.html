@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCHEDULE MODIFICATION REASONS</h1></div><div id="results"><dl><dt>name</dt><dd>SCHEDULE MODIFICATION REASONS</dd><dt>number</dt><dd>8502</dd><dt>location</dt><dd>^SDX(8502,</dd><dt>description</dt><dd>This file is used to store MTF defined Schedule Modification Reasons thatshow up as a candidate list to choose from when scheduled clinic days orslots are cancelled. This is a file that is usually populated by the File & Table build teamin conjunction with PAS Supervisory personnel.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>A 1-3 character code that is used to identify a reason why an appointmentwas cancelled by the facility.  Note:  There is a limit of 10 codes thatcan be specified by the facility as that is the number of columnsavailable on the Facility Cancellation Statisitcal Report</td></tr><tr><td>1</td><td>description(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>A 3-17 character description that in conjunction with the code describeswhy an appointment was cancelled.  Examples are:  Meeting and Vacation.</td></tr><tr><td>2</td><td>modify by prgrammer only</td><td>0;3</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>An internal flag that is used to programmatically control the use ofcertain schedule modification codes (i.e., 11 EOD Cancellation).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

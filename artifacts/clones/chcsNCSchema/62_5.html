@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB DESCRIPTION</h1></div><div id="results"><dl><dt>name</dt><dd>LAB DESCRIPTION</dd><dt>number</dt><dd>62.5</dd><dt>location</dt><dd>^LAB(62.5,</dd><dt>description</dt><dd>The Lab Description file is a dictionary of "canned" descriptions thelaboratory uses repeatedly.  They are called by using a definedabbrevation.  Microbiology uses this file extensively to describe comments on various cultures.  Other laboratory sections use thisfile to add comments describing test results or the reason a testis being cancelled.  Entries may be added or modified.  </dd><dt>applicationGroups</dt><dd>LR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the shorthand notation of a lab description.These lab descriptions enter through any "select comment" prompt.Try to associate this name with the expansion.  It will be easierfor the lab personnel to associate the name with the expansion.</td></tr><tr><td>.5</td><td>synonym</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a synonym of the name, maximum of 9 characters.This is another name, notation, code or abbreviation for the samecomment.  </td></tr><tr><td>1</td><td>expansion(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the full description of the name (lab description).This is the comment in its fully expanded form.  Expansion takes placeimmediately after entry of the code, both on the screen in the "select COMMENT" field, and on patient reports, under "COMMENTS".</td></tr><tr><td>5</td><td>screen</td><td>0;4</td><td>SET OF CODES</td><td>G:GRAM STAIN<br/>H:HEMO<br/>M:MICRO<br/>S:SMEAR/PREP<br/>Q:QC<br/>F:FUNGUS<br/>T:TB<br/>P:O&P<br/>V:VIROLOGY<br/>N:NODRAW<br/>CY:CYTOLOGY<br/>B:BLOOD BANK<br/>TL:TRANSMITTAL LIST<br/>SL:SHIPPING LIST<br/></td><td>AC</td><td>This describes the type of screen this lab description is associated with, i.e., gram stain, hematology, microbiology, accession comments, smear/prep, or quality control.  This designates the area of the lab or type of lab functions associated with the comment.  Enter a "?" to see the list of codes.</td></tr><tr><td>6</td><td>sorting group</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field is available for the user to sort the Lab Descriptionsinto categories of the users own choosing.   It is an arbitrary "category"for the lab descriptions.  Use this field to designate departmental codes, and print out customized lists of codes for your users.Example: Hematology may use a combination of "H" and "A" screened commentson a daily basis.  The "H" codes perhaps relate to general hematologycomments and the "A" codes relate to specific diff comments.  In thisway the two groups could be sorted and printed for the users.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

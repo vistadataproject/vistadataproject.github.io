@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > APV APPOINTMENT</h1></div><div id="results"><dl><dt>name</dt><dd>APV APPOINTMENT</dd><dt>number</dt><dd>44.3</dd><dt>location</dt><dd>^SDAPV(</dd><dt>description</dt><dd>Ambulatory Procedure Visit Appointment recordused to link APV activity in order entry to appointment andADM data.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>apv tracking number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Unique APV tracking number for APV appointments</td></tr><tr><td>1</td><td>order</td><td>0;2</td><td>POINTER</td><td><a href="101.html">101</a></td><td>E</td><td>Order associated with APV appointment</td></tr><tr><td>2</td><td>depart to proc date/time</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>DEPART TO PROCEDURE DATE/TIME</td></tr><tr><td>3</td><td>return from proc date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>RETURN FROM PROCEDURE DATE/TIME</td></tr><tr><td>4</td><td>nursing int date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>NURSING INTERVENTION DATE/TIME</td></tr><tr><td>5</td><td>patient ien</td><td>0;8</td><td>POINTER</td><td><a href="2.html">2</a></td><td>F</td><td>Patient associated with APV appointment</td></tr><tr><td>6</td><td>division</td><td>0;11</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>Division associated with APV</td></tr><tr><td>7</td><td>creation date/time</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td>Date/Time of creation.</td></tr><tr><td>8</td><td>creation user</td><td>0;10</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>User creation record</td></tr><tr><td>9</td><td>pre-admit only</td><td>6;1</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Pre-Admit APV only (no procedure associated)</td></tr><tr><td>10</td><td>patient appointment ien</td><td>1;1</td><td>POINTER</td><td><a href="44_2.html">44.2</a></td><td></td><td>A pointer to the patient appointment file</td></tr><tr><td>11</td><td>pre-op location</td><td>3;0</td><td>MULTIPLE</td><td><a href="44_31.html">44.31</a></td><td></td><td>Pre-op location</td></tr><tr><td>12</td><td>pre-op teaching location</td><td>2;0</td><td>MULTIPLE</td><td><a href="44_32.html">44.32</a></td><td></td><td>Pre-Op Teaching location - location type of T</td></tr><tr><td>13</td><td>disposition date/time</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>Disposition Date/Time</td></tr><tr><td>14</td><td>hospital location</td><td>0;7</td><td>POINTER</td><td><a href="44.html">44</a></td><td>ALOC</td><td>Hospital Location from patient appointment file created at time APVis created.  Needed to xref disposition date/time for other team reports</td></tr><tr><td>15</td><td>extended recovery location</td><td>5;0</td><td>MULTIPLE</td><td><a href="44_35.html">44.35</a></td><td></td><td>Extended Recovery Location.</td></tr><tr><td>16</td><td>post-op location</td><td>4;0</td><td>MULTIPLE</td><td><a href="44_34.html">44.34</a></td><td></td><td>Post-op location</td></tr><tr><td>17</td><td>pre-adm cpt codes</td><td>7;0</td><td>MULTIPLE</td><td><a href="44_38.html">44.38</a></td><td></td><td>CPT codes entered by user for this APV</td></tr><tr><td>18</td><td>teaching appointment</td><td>6;2</td><td>POINTER</td><td><a href="44_2.html">44.2</a></td><td></td><td>Appointment for teaching activity</td></tr><tr><td>21</td><td>meprs</td><td>6;4</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td></td><td>The Pre-admit/Observation Requesting loation allows only 'A', 'B**O'and 'FC**' MEPRS to be entered.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

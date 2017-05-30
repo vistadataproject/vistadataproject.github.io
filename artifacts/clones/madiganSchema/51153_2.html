@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GT NT CONSULT NOTE</h1></div><div id="results"><dl><dt>name</dt><dd>GT NT CONSULT NOTE</dd><dt>number</dt><dd>51153.2</dd><dt>location</dt><dd>^GTOR(51153.2,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>date/time the note was created.</td></tr><tr><td>.02</td><td>patient(+)</td><td>0;2</td><td>POINTER</td><td><a href="2.html">2</a></td><td>PAT</td><td>the name of the patient on whom you want to enter consult notes.</td></tr><tr><td>.03</td><td>physician/nursing note(+)</td><td>0;3</td><td>POINTER</td><td><a href="7.html">7</a></td><td></td><td>field that indicates what type of note this is.</td></tr><tr><td>.04</td><td>entered by</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>field will store the name of the user who entered the note.</td></tr><tr><td>.05</td><td>status</td><td>0;5</td><td>SET OF CODES</td><td>C:Complete<br/>P:Preliminary<br/></td><td></td><td>field will store whether a note has status of complete or preliminary</td></tr><tr><td>.06</td><td>patient status</td><td>0;6</td><td>SET OF CODES</td><td>I:Inpatient<br/>O:Outpatient<br/></td><td></td><td>field will store the status of the patient at the time the note is entered.</td></tr><tr><td>.07</td><td>register number</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>The number assigned to each inpatient during the admission process.  Is associated with a single inpatient episode.</td></tr><tr><td>.08</td><td>note title(+)</td><td>0;8</td><td>POINTER</td><td><a href="108_1.html">108.1</a></td><td></td><td>title of note.  can be used to search previously entered note.</td></tr><tr><td>1</td><td>consult text</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Consult text</td></tr><tr><td>2</td><td>gt or sf513 ien(+)</td><td>2;1</td><td>POINTER</td><td><a href="51110_1.html">51110.1</a></td><td>AC</td><td></td></tr><tr><td>3</td><td>lock</td><td>0;9</td><td>POINTER</td><td><a href="19_1.html">19.1</a></td><td></td><td>Security key locking the consult - pointer to the SECURITY KEY file</td></tr><tr><td>4</td><td>order number</td><td>3;1</td><td>POINTER</td><td><a href="101.html">101</a></td><td>ORD</td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

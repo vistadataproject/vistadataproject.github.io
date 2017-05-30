@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EMBOSSER TYPE ATTRIBUTES</h1></div><div id="results"><dl><dt>name</dt><dd>EMBOSSER TYPE ATTRIBUTES</dd><dt>number</dt><dd>39.2</dd><dt>location</dt><dd>^DIC(39.2,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>attribute(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Embosser Type Attribute.  This is an attribute that is used to formatthe card.</td></tr><tr><td>2</td><td>starting code</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The starting code that is associated with the referenced embosser type attribute. This code is either an interpreted or literal string.</td></tr><tr><td>3</td><td>starting code type</td><td>0;3</td><td>SET OF CODES</td><td>I:INTERPRETED<br/>L:LITERAL<br/></td><td></td><td>This field is used to determine whether Starting Code is literal textto be written to the embosser or if it is code that needs to beinterpreted (i.e. $C(13)).</td></tr><tr><td>4</td><td>ending code</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>The ending code that is associated with the referenced embosser type attribute. This code is either an interpreted or literal string.</td></tr><tr><td>5</td><td>ending code type</td><td>0;5</td><td>SET OF CODES</td><td>I:INTERPRETED<br/>L:LITERAL<br/></td><td></td><td>This set of codes field is used to indicate whether the string within theENDING CODE field can be literally written to the embosser or whether itmust first be interpreted.</td></tr><tr><td>6</td><td>embosser type(+)</td><td>0;6</td><td>POINTER</td><td><a href="39_1.html">39.1</a></td><td></td><td>The embosser type that the referenced attribute is associated with. This is a required field which is defined as a pointer to the EMBOSSER TYPE File.</td></tr><tr><td>7</td><td>status(+)</td><td>0;7</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td></td><td>Set of codes field which indicates whether the referenced embosserattribute is currently active or inactive.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REPORT BATCH</h1></div><div id="results"><dl><dt>name</dt><dd>REPORT BATCH</dd><dt>number</dt><dd>74.2</dd><dt>location</dt><dd>^RABTCH(74.2,</dd><dt>description</dt><dd> This file provides the capability to group reports by batches forprinting.</dd><dt>applicationGroups</dt><dd>RA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>batch name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter a 3- to 30-character name for this batch of reports.  You mayinclude numbers in the batch name. The CHCS allows you to give a report batch a name already given toanother batch by another user, but you are only allowed to removeand add reports to batches that you created.</td></tr><tr><td>2</td><td>date/time batch created</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date and time the report batch was created. The CHCS automatically enters the date/time in this field when thebatch is created.</td></tr><tr><td>3</td><td>user who created batch</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td>C</td><td>This field contains the name of the user who created the reportbatch.  The CHCS automatically enters the user name in this fieldwhen the batch is created.</td></tr><tr><td>4</td><td>date/time batch was printed</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date and time the report batch was printedvia the Print a Batch option.  The system automatically enters thedate/time in this field when the report batch is printed.  After abatch has been printed, users may no longer use the ReportEnter/Edit option to add reports to this batch.</td></tr><tr><td>5</td><td>date/time batch verified</td><td>0;5</td><td>DATE-TIME</td><td></td><td>AC</td><td>This field contains the date and time that all reports in the batchwere verified.  The CHCS automatically enters the date/time in thisfield when the reports are verified.  If a value exists in thisfield, then the CHCS knows that the batch can be purged.</td></tr><tr><td>6</td><td># of verified reports</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field contains the number of verified reports in this batch. The system automatically enters data in this field when the reportsare verified.</td></tr><tr><td>25</td><td>reports</td><td>R;0</td><td>MULTIPLE</td><td><a href="74_21.html">74.21</a></td><td></td><td>This field is a multiple that contains subfields that identify theradiology reports in the batch.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

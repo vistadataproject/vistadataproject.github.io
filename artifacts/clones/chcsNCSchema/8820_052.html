@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MACRO COMMAND</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8820.html">8820</a></dd><dt>name</dt><dd>MACRO COMMAND</dd><dt>number</dt><dd>8820.052</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field names the Macro Command Entry.  The user may elect to change the name at any time.</td></tr><tr><td>.02</td><td>date created</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This filed is the date the Macro Command entry was created, for the purpose of documentation, and will be set by the system.</td></tr><tr><td>.03</td><td>access</td><td>0;3</td><td>SET OF CODES</td><td>0:PRIVATE<br/>1:PUBLIC<br/></td><td>A052A</td><td>This field will determine who has Access to the Macro Commands.  All macros are set on creation to Private.  The user may allow other users to select and execute their macros from within the Desktop or Order Entry, by changing the Access to Public.  Accessing another user's macro is covered in detail in the Macro Help Function.</td></tr><tr><td>.04</td><td>type</td><td>0;4</td><td>SET OF CODES</td><td>0:UNDEFINED<br/>1:DESKTOP<br/>101:ORDER<br/></td><td>A052T</td><td>This defines the Macro Type, for the purpose of presenting specific types to the user depending on the functionality that the user is in when executing a Stored Macro.  This field may also be used to sort the Macros when printing the contenst of this subfile.  If it is not set or set to 0, then the type is undefined.  If it is set to 1, then it is a Desktop type Macro.  If it is set to 101, then it is an Order type Macro.</td></tr><tr><td>1</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the Description of this particular Macro Command.  It will appear only on Desktop reports.</td></tr><tr><td>2</td><td>command string</td><td>2;E1,240</td><td>FREE TEXT</td><td></td><td></td><td>This is the actual Command string that the system will attempt to execute when requested by the user.  It must follow the logical flow of the functionality that it is interacting with.  It is the responsibility of the Macro owner to ensure that the Macro operates as desired, and to modify the Command string if the logic flow of the functionality changes as CHCS evolves.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

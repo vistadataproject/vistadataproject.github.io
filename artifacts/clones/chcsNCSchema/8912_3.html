@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BD/URS SITE PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>BD/URS SITE PARAMETERS</dd><dt>number</dt><dd>8912.3</dd><dt>location</dt><dd>^XDRT(8912.3,</dd><dt>description</dt><dd>This file contains the Biometric Data Upward Reporting System parameters for a site.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>site name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of the CHCS site.</td></tr><tr><td>.02</td><td>active site parameters</td><td>0;2</td><td>SET OF CODES</td><td>0:Inactive<br/>1:Active<br/></td><td>AC</td><td>CHCS BD/URS software only uses the parameters file entry marked active.</td></tr><tr><td>.03</td><td>stop time</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The number of minutes the BD/URS process will run once it has been started byTaskMan.</td></tr><tr><td>.04</td><td>priority</td><td>0;4</td><td>SET OF CODES</td><td>0:LOW<br/>1:HIGH<br/></td><td></td><td>When the priority is set to "HIGH", BD/URS transmissions will be processedbefore DEERS transmissions. If only one server is available, no DEERS requestswill be processed during the BD/URS transmission period (DURATION). When thepriority is set to "LOW", DEERS transactions will be processed before BD/URStransmissions.</td></tr><tr><td>.05</td><td>start time</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the time that the BD/UR's job will be scheduled to run.</td></tr><tr><td>.06</td><td>bd/urs site id</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>Number provided by the government DEERS Project Office to the MTF. Thisnumber is sent from CHCS to DEERS with each BD/URS transaction. It is a sixdigit decimal number. If a HEX number is supplied, convert the number intodecimal. Usually, the BD/URS site ID and DEERS site ID will be the same. If nosite ID is provided inthis field, BD/URS will automatically use the site ID provided in the DEERSsite parameter file.</td></tr><tr><td>.07</td><td>wait time</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>The external BD/URS process requires time between transactions. This time may varyfrom site to site depending on how thelink is shared with other systems. Thisparameter allows a site to adjust the waittime if needed.The time is in seconds.</td></tr><tr><td>.08</td><td>maximum servers</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This is the maximum number of servers for BD/URS processes.</td></tr><tr><td>1</td><td>bd/urs status</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>Contains the current status of the BD/URS process.</td></tr><tr><td>2</td><td>dmis id</td><td>2;0</td><td>MULTIPLE</td><td><a href="8912_31.html">8912.31</a></td><td></td><td>If you would like individual DMIS ID's to send specific SITE ID's, thenyou must provide the map between the DMIS ID to SITE ID here.  Youwould be interested in doing this because it would allow theremote BD/URS database to segregate your data, rather than receivingdata from a single DMIS ID.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

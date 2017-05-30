@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PSAFDB PEMMONO PEMEMONO</h1></div><div id="results"><dl><dt>name</dt><dd>PSAFDB PEMMONO PEMEMONO</dd><dt>number</dt><dd>8253.021</dd><dt>location</dt><dd>^PSDFDB(8253.021,</dd><dt>description</dt><dd>The PEMMONO PEMEMONO file consist of three files:     1)  The Main file contains the Patient Education Monograph Code (PEMONO)         with leading zeros removed.     2)  Subfile 1 8253.0211 is the PEMMONO.     3)  Subfile 2 8253.0212 is the PEMEMONO.A description of each file follows:The 4-byte PEMONO monograph code provide a more detailed text informationthat can be delivered to the patient on standard-sized 8 1/2" x 11" paper.The Internal entry number (D0) is the Patient Education Monograph Code (PEMONO)with leading zeros removed.PEMMONO - RPEMMO0The Patient Education Short Form, or Standard Monograph Table uses the 4-bytePEMONO monograph key from the Patient Education Master Table to provide descriptive information that can be printed off on label-sized paper to be given to the patient.  The information covers topics such as 'Why am I taking the drug?', 'Are there side effects?', etc.The Internal entry number (D1) is the Patient Education Text Seq.No.(Short)(PEMONOSN) with leading zeros removed.PEMEMONO - RPEMMOE0The Patient Education Extended Monograph Table uses the 4-byte PEMONO monographcode from the Patient Education Master table to provide more detailed text information that can be delivered to the patient on standard-sized 8 1/2" x 11" paper.The Internal entry number (D1) is the Patient Education Text Seq.No.(Long)(PEMONOESN) with leading zeros removed.</dd><dt>applicationGroups</dt><dd>PS</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>pemono(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td></td><td>Patient Education Monograph Code is the internal Entry number (D0) for thePEM short and long form monographs.</td></tr><tr><td>1</td><td>pemmono</td><td>1;0</td><td>MULTIPLE</td><td><a href="8253_0211.html">8253.0211</a></td><td></td><td>PEMMONO - RPEMMO0The Patient Education Short Form, or Standard Monograph Table uses the 4-bytePEMONO monograph key from the Patient Education Master Table to provide descriptive information that can be printed off on label-sized paper to be given to the patient.  The information covers topics such as 'Why am I taking the drug?', 'Are there side effects?', etc.The Internal entry number (D1) is the Patient Education Text Seq.No.(Short)(PEMONOSN) with leading zeros removed.</td></tr><tr><td>2</td><td>pememono</td><td>2;0</td><td>MULTIPLE</td><td><a href="8253_0212.html">8253.0212</a></td><td></td><td>PEMEMONO - RPEMMOE0The Patient Education Extended Monograph Table uses the 4-byte PEMONO monographcode from the Patient Education Master table to provide more detailed text information that can be delivered to the patient on standard-sized 8 1/2" x 11" paper.The Internal entry number (D1) is the Patient Education Text Seq.No.(Long)(PEMONOESN) with leading zeros removed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

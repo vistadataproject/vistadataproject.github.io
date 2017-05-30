@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QA EVENT DATE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="103_1.html">103.1</a></dd><dt>name</dt><dd>QA EVENT DATE</dd><dt>number</dt><dd>103.13</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>qa event date</td><td>0;1</td><td>DATE-TIME</td><td></td><td></td><td>This multiple field will track any warnings that were issued and overridden.</td></tr><tr><td>.02</td><td>qa event type</td><td>0;2</td><td>POINTER</td><td><a href="102_1.html">102.1</a></td><td></td><td>This field points to the QA-WARNING file and contains the 'name'of the warning issued. Examples are 'Drug-drug interaction' or'HCP Signature Past Due'. In the case of drug-drug interactions itdoes not contain the actual text of the message to the user.</td></tr><tr><td>.04</td><td>override entered by</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>The provider who actually typed the override. This must be either a nurseor a authorized technician or HCP.</td></tr><tr><td>.05</td><td>override authorized by</td><td>0;5</td><td>POINTER</td><td><a href="6.html">6</a></td><td></td><td>The name of the HCP who verbally authorized the override. He/shewill share responsibility with the ordering HCP if different.</td></tr><tr><td>.06</td><td>emergency override by</td><td>0;6</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>The name of the nurse or authorized technician (eg. pharmacist)who is responsible for overriding the order without an HCPauthorization.</td></tr><tr><td>.07</td><td>time of authorized override</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>The date/time of the override authorized by an HCP.</td></tr><tr><td>.08</td><td>time of emergency override</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>The date/time of the emergency override not authorized by an HCP.</td></tr><tr><td>1.01</td><td>justification (authorizing)</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>A required field explaining the reason an HCP chooses to overridea warning.</td></tr><tr><td>2.01</td><td>justification (emergency)</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>A required field to be entered by the nurse or technician explainingwhy it was necessary to override a warning without HCP approval.</td></tr><tr><td>3.01</td><td>warning message</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>Free text.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

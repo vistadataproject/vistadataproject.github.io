@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER REQUIRED DATA SET</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER REQUIRED DATA SET</dd><dt>number</dt><dd>103.3</dd><dt>location</dt><dd>^ORD(103.3,</dd><dt>description</dt><dd>This file stores lists of questions from the Order Required Data file.A data set can have one or many questions.  Data set entries are what islinked into the application code to allow one or more questions to beprompted for during order entry.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>order required data set(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the order required data set. This name is used whenassigning an order required data set to an ancillary procedure that willprompt users for information during order entry. </td></tr><tr><td>1</td><td>order required data</td><td>1;0</td><td>MULTIPLE</td><td><a href="103_31.html">103.31</a></td><td></td><td>Enter the name of an existing entry created in the Lab Order Required DataAdd/Edit option.  Entries must already exist before they can be entered inthis field. </td></tr><tr><td>8196</td><td>inactive flag</td><td>28;1</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>Entering a value of Yes in this field will prevent this order required dataset from being available for assignment to a test that will prompt forinformation during order entry.</td></tr><tr><td>8197</td><td>inactivation date/time</td><td>28;2</td><td>DATE-TIME</td><td></td><td></td><td>This is a system-generated field that stores the date/time this entry wasinactivated. </td></tr><tr><td>8205</td><td>inactivated by</td><td>28;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>This is a system-generated field that stores the name of the user whoinactivated this entry. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > WAM SITE PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>WAM SITE PARAMETERS</dd><dt>number</dt><dd>8048</dd><dt>location</dt><dd>^DGE(8048,</dd><dt>description</dt><dd>This file contains the parameters for customizing the operation of theWorkload Assignment Module (WAM) for a given division.  No WAM functionalparameters will be in effect unless the WAM SWITCH field within the file is set to on for the given division. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>division(+)</td><td>0;1</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td>B</td><td>Division for which the WAM software configuration information is beingestablished.</td></tr><tr><td>.02</td><td>wam switch</td><td>0;2</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicator as to whether the WAM Workload Assignment Module (WAM)is available to the referenced division.</td></tr><tr><td>.03</td><td>workload deviation flag</td><td>0;3</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicator for whether the value of the WORKLOAD DEVIATION field is setand should be used.</td></tr><tr><td>.04</td><td>workload deviation</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Numeric field which tracks the site-specified acceptable percentagedeviation of workload amount between the current and previous reportingmonth.  A value between the range of 15 (%) and 25 (%) can be enteredinto the field.</td></tr><tr><td>.05</td><td>data generation freq flag</td><td>0;5</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicator as to whether the value of the DATA GENERATION FREQ fieldis set and should be used.</td></tr><tr><td>.06</td><td>data generation freq</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Numeric field which indicates the frequency in days of workload processingutilized to provide the default data in the WAM editing template.Only a value between 7 to 15 (days) can be entered into the field.</td></tr><tr><td>.07</td><td>delinquency allow days flag</td><td>0;7</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicator as to whether the value of the DELINQUENCY ALLOW DAYS field is set and should be used.</td></tr><tr><td>.08</td><td>delinquency allow days</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Numeric field which tracks the number of days after the initializationof the WAM workload data that the editing of the workload data shouldbe considered delinquent.</td></tr><tr><td>.09</td><td>delinquency bulletin flag</td><td>0;9</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicator for whether the workload reporting delinquency bulletin shouldbe automatically generated.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

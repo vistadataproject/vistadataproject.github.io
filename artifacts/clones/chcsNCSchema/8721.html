@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LABEL STOCK</h1></div><div id="results"><dl><dt>name</dt><dd>LABEL STOCK</dd><dt>number</dt><dd>8721</dd><dt>location</dt><dd>^LAB(8721,</dd><dt>description</dt><dd>This file contains the physical description of the label stock that will be used in label printing.  It has the stock's overall dimensions, thelabel(s) that will be printed, and their upper-left (X,Y) co-ordinate.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>form name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the individual form that will be printed.</td></tr><tr><td>.02</td><td>form width(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the overall width, in inches, of the form.  It will generally bea common printer width.</td></tr><tr><td>.03</td><td>form height(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the overall height, in inches, of the form.  It will generallybe one form-feed in length.</td></tr><tr><td>.04</td><td>label number</td><td>1;0</td><td>MULTIPLE</td><td><a href="8721_01.html">8721.01</a></td><td></td><td>This is the number of the label on the form for which you are definingdimensions.  It must be a number between 1 and 999.  They should be numberedsequentially from left-to-right and top-to-bottom.</td></tr><tr><td>.05</td><td>description</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains a description of the Label Stock, with such informationas the defined labels, their sectors, and their dimensions and locationson the form.  It could also list the functional area of CHCS that utilizesthis form, and other pertinent information, e.g., the Accession Area(s)using it, the analyzers that employ it, etc.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

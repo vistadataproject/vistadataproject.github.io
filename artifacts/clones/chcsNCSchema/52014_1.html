@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GP OUTGOING MESSAGE</h1></div><div id="results"><dl><dt>name</dt><dd>GP OUTGOING MESSAGE</dd><dt>number</dt><dd>52014.1</dd><dt>location</dt><dd>^GPKB(52014.1,</dd><dt>description</dt><dd>This file contains all of the outgoing TCPR messages and the message status. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>A sequence number assigned to an outgoing message.  </td></tr><tr><td>.02</td><td>status</td><td>0;2</td><td>SET OF CODES</td><td>C:COMPLETE<br/>I:INCOMPLETE<br/>E:ERROR<br/>P:PENDING<br/></td><td></td><td>This field is used to indicate the status of the message.A message that has not been sent will have a status of pending.  A messagethat is currently being sent will have a status of incomplete.  If an erroroccurs while sending the message the status will be set to error. A Completestatus indicates that the message was successfully sent to the recievingsystem.</td></tr><tr><td>.03</td><td>created date/time</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field indicates the date and time the message was entered into theoutgoing file.</td></tr><tr><td>.04</td><td>process date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field indicates the date/time that the message was sent to the receivingsystem.</td></tr><tr><td>.05</td><td>destination</td><td>0;5</td><td>POINTER</td><td><a href="52012.html">52012</a></td><td></td><td>This field indicates the destination of the message.  This field will beused when there is not an OBS available or the BYPASS OBS field is set to1.</td></tr><tr><td>.06</td><td>bypass obs</td><td>0;6</td><td>SET OF CODES</td><td>1:BYPASS OBS<br/></td><td></td><td>This field when set indicates that when sending the message the OBS should be bypassed and send to the IP address of the destination.</td></tr><tr><td>.07</td><td>patient</td><td>0;7</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>This field tracks the patient for OREQ message.</td></tr><tr><td>.08</td><td>number of retries</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This field is used to determine how many times the system has tried to sendthe message to the receiving site.</td></tr><tr><td>.09</td><td>message type</td><td>0;9</td><td>SET OF CODES</td><td>0:OREQ<br/>1:NOT OREQ<br/>2:MUPD<br/></td><td></td><td>This field indicates whether the message is an OREQ type message or not.The field is set to 0 for OREQ messages, set to 2 for MUPD messagesand set to 1 for non-OREQ messages.When an OREQ message reaches completion, i.e. a corresponding FACK messageis received, this field will be set to 1.</td></tr><tr><td>.1</td><td>transaction sequence(+)</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>This field is used as a message-id for the Order Request Message (OREQ).</td></tr><tr><td>1</td><td>message</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains the text of the message.</td></tr><tr><td>2</td><td>error</td><td>2;0</td><td>MULTIPLE</td><td><a href="52014_12.html">52014.12</a></td><td></td><td>Error Multiple</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

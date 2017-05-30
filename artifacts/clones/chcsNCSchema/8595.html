@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OUTPATIENT SIDR TRANSMISSION TAPE</h1></div><div id="results"><dl><dt>name</dt><dd>OUTPATIENT SIDR TRANSMISSION TAPE</dd><dt>number</dt><dd>8595</dd><dt>location</dt><dd>^SDEG(8595,</dd><dt>description</dt><dd>This file is used for storing historical records of SIDR Outpatient Datatransmissions by month/year. It has a DINUMED month/year .01 field. The file contains all of patient/info sent on the last transmission run.  NOTE: It is possible to do a retransmit, but the OLD entries will bedeleted for the (re-transmit) month selected and all current entries in the"ASADR" xref from the patient appointment file will be rebuilt into the newtransmission for the selected month.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>month year(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the month used to store the transmission data for the month.</td></tr><tr><td>1</td><td>division</td><td>1;0</td><td>MULTIPLE</td><td><a href="8595_01.html">8595.01</a></td><td></td><td>Multiple containing all division data</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

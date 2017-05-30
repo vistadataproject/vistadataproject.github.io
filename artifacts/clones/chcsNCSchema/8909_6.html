@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEERS RECIPROCAL DISENROLLMENT RESPONSES</h1></div><div id="results"><dl><dt>name</dt><dd>DEERS RECIPROCAL DISENROLLMENT RESPONSES</dd><dt>number</dt><dd>8909.6</dd><dt>location</dt><dd>^XDW(8909.6,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date of response(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the date/time that this response was received into the CHCSdatabase from DEERS.</td></tr><tr><td>.02</td><td>date posted</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>For each response, there is a transmission which generates it.  Thisfield contains the date/time the transmission was posted into the queuefor this response.</td></tr><tr><td>.03</td><td>sender</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>The CHCS user who requested this information.</td></tr><tr><td>.04</td><td>type of response</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>The DEERS code that identifies the response transmission to CHCS.</td></tr><tr><td>.05</td><td>type of transmission</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The five character code sent to DEERS to identify the request transmission.</td></tr><tr><td>.06</td><td>priority of transmission</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>The priority of the request in the transmission queue.</td></tr><tr><td>.07</td><td>discrepancy code</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The code returned from DEERS if a discrepancy occurred when DEERSevaluated the information.</td></tr><tr><td>.08</td><td>processing mode</td><td>0;8</td><td>SET OF CODES</td><td>0:Interactive<br/>1:Batched While Waiting<br/>2:Non-Interactive<br/></td><td></td><td>The mode that this transmission was processed in.  There are three different modes:  interactive, batched, and non-interactive.</td></tr><tr><td>.09</td><td>block id</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>The block number of this dataset being returned from DEERS.</td></tr><tr><td>.1</td><td>counter</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>The number of reciprocal disenrollment records within the current block.</td></tr><tr><td>.11</td><td>sponsor ssn</td><td>0;11</td><td>FREE TEXT</td><td></td><td></td><td>The sponsor's social security number of the patient to be reciprocallydisenrolled.</td></tr><tr><td>.12</td><td>date of birth</td><td>0;12</td><td>DATE-TIME</td><td></td><td></td><td>The date of birth of the patient to be reciprocally disenrolled.</td></tr><tr><td>.13</td><td>deers dependent suffix</td><td>0;13</td><td>NUMERIC</td><td></td><td></td><td>The DEERS dependent suffix for this patient on the DEERS database.</td></tr><tr><td>.14</td><td>family sequence number</td><td>0;14</td><td>NUMERIC</td><td></td><td></td><td>The family sequence number of the patient to be reciprocallydisenrolled.</td></tr><tr><td>.15</td><td>disenrollment date</td><td>0;15</td><td>DATE-TIME</td><td></td><td></td><td>The date that this patient was reciprocally disenrolled.</td></tr><tr><td>.16</td><td>mcp plan type</td><td>0;16</td><td>FREE TEXT</td><td></td><td></td><td>The MCP plan type that this patient was reciprocally disenrolled from.</td></tr><tr><td>.17</td><td>gaining dmis id</td><td>0;17</td><td>FREE TEXT</td><td></td><td></td><td>The Defense Medical Information System ID location code for theperson being reciprocally disenrolled.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

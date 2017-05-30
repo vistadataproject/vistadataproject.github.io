@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SMTP ROUTING TABLE</h1></div><div id="results"><dl><dt>name</dt><dd>SMTP ROUTING TABLE</dd><dt>number</dt><dd>3.933</dd><dt>location</dt><dd>^XMTP(3.933,</dd><dt>description</dt><dd>This file allows multiple environments on the same machine to havenetwork mail access.  For example, this will allow FORUM to easilycommunicate to both the CDD and VFF environments.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>routed domain name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The domain name to be routed (e.g. VFF.SAIC.COM)</td></tr><tr><td>.02</td><td>actual domain name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Actual domain name where the routed domain name exists.</td></tr><tr><td>.03</td><td>socket</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>The socket that the routed domain will be listening to.</td></tr><tr><td>.04</td><td>relay domain name</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>If there is a domain specified in this field, and the user enters adomain not listed in this file, all mail will be automatically relayedthrough this domain. The .01 field for this entry must match the .01 field of the SMTP SITEPARAMETER File in order for the RELAY DOMAIN NAME field to be used.</td></tr><tr><td>.05</td><td>node</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>If you are using DECNET to send to a domain, this is the node of the domain you have selected.</td></tr><tr><td>.06</td><td>command</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is the command file name that will be executed on the nodespecified in the NODE field when sending to this domain.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

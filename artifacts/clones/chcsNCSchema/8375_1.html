@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RECORD INIT SCRATCH</h1></div><div id="results"><dl><dt>name</dt><dd>RECORD INIT SCRATCH</dd><dt>number</dt><dd>8375.1</dd><dt>location</dt><dd>^RTT(8375.1,</dd><dt>description</dt><dd>This is a temporary background file used during the editing of medicalrecords volume numbers and record initialization batches. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This is a pointer to the Patient file and is used in conjunction with theBatch Number to uniquely identify entries in this temporary file.</td></tr><tr><td>.02</td><td>record batch</td><td>0;2</td><td>POINTER</td><td><a href="8375.html">8375</a></td><td>C</td><td>This is a pointer to the Record Initialization file and is used inconjunction with the Patient Name to uniquely identify entries in thisscratch file.</td></tr><tr><td>.03</td><td>number of volumes</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the number of volumes selected to be created during therecord initialization process.</td></tr><tr><td>.04</td><td>entitlement set</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Entitlement set is that data which supports determining a patient's eligibility to health care including specialized care.</td></tr><tr><td>.05</td><td>entitlement hcdp code</td><td>0;5</td><td>POINTER</td><td><a href="8545.html">8545</a></td><td></td><td>Healthcare delivery program coverage code associated with the DEERS Entitlement Set.</td></tr><tr><td>1</td><td>volume numbers</td><td>1;0</td><td>MULTIPLE</td><td><a href="8375_11.html">8375.11</a></td><td></td><td>This sub-file contains the individual volume numbers to be created andtheir associated default date/time of creation. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DAR LOG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="101_3.html">101.3</a></dd><dt>name</dt><dd>DAR LOG</dd><dt>number</dt><dd>101.31</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>dar code</td><td>0;1</td><td>SET OF CODES</td><td>1:S OR(ATSK<br/>2:SIGN JOB<br/>3:PS TSK-ORPRF1<br/>4:S OR(ADM<br/>5:ANC-ORTSK<br/>6:MAIL SIGN OR<br/>7:MAIL PATH APV<br/>8:MAIL ORWARN<br/>9:MAIL TRANS<br/></td><td></td><td>The DAR code is the unique identifier for the delayed action. It is used  asa reference in program in-line documentation and as a parameter in  DAR function calls.</td></tr><tr><td>.02</td><td>stored variables</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The variables needed for future activation are stored here in the format:   ^ORB(ORNUM,2,DAR LOG#,1,n,0)=varnam_"^"_data   There is a possibility that the length of the variable name plus its  data would be greater than 255.  The format for such a case:  ^ORB(ORNUM,2,DAR LOG#,1,n,0)="+"_varnam_"^"_$E(data,1,200)                        ,n+1,0)=$E(data,201,999)  The plus (+) in line n indicates to the unstacking function that  line n+1 should be concatenated to line n data.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

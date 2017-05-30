@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MASCAL EVENT</h1></div><div id="results"><dl><dt>name</dt><dd>MASCAL EVENT</dd><dt>number</dt><dd>8028</dd><dt>location</dt><dd>^DG(8028,</dd><dt>description</dt><dd>This file tracks all the Mass Casualty (MASCAL) events created bya division. Each event name created should indicated the cause ofthe MASCAL.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of a Mass Casualty (MASCAL) event associatedwith a given division. The name of a given MASCAL event should describeits cause. The individual who initiates the MASCAL should normally designate thename of the associated event. Since there is a possibility of more thanone MASCAL event occurring at the same time, the user may have a picklist of events which have previously been defined within their division.In lookup mode, entering the <space bar> <Enter/Return> key will bring  up the last accessed event.</td></tr><tr><td>.02</td><td>division(+)</td><td>0;2</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>This field tracks the the division where the MASCAL event is exercised.The value of this field is automatically assigned by a trigger on the(.01) NAME field when the MASCAL event is created. It will be set tothe division of the user who defines the MASCAL event.</td></tr><tr><td>1</td><td>activation date/time</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field defines if a MASCAL EVENT is active and available for userselection when a MASCAL patient is admitted.</td></tr><tr><td>2</td><td>completion date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field will control if a MASCAL EVENT is considered completed throughthe MASCAl Parameter process. If this field is populated, the event isclosed.</td></tr><tr><td>3</td><td>prefix</td><td>0;5</td><td>FREE TEXT</td><td></td><td>C</td><td>This is another idendifier on the MASCAL EVENT file which will allow theuser to differentiate between MASCAL EVENTs easily.</td></tr><tr><td>5</td><td>description</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is the free text description of the MASCAL EVENT.</td></tr><tr><td>7</td><td>auto assign mascal #</td><td>0;8</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field defines if a MASCAL EVENT has the auto assign MASCALnumbers option enabled. If it is set to YES, the system will fetchthe next MASCAL # from the pool for that event. If it is set to NO,the user will have to enter a MASCAL # in the MASCAL admission process.</td></tr><tr><td>8</td><td>last mascal # assigned</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>This field stores the last MASCAL # assigned for a given event.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

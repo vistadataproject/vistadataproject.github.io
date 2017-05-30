@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BLOOD BANK PRODUCT</h1></div><div id="results"><dl><dt>name</dt><dd>BLOOD BANK PRODUCT</dd><dt>number</dt><dd>8714</dd><dt>location</dt><dd>^LAB(8714,</dd><dt>description</dt><dd>This file contains the blood bank products (i.e. Whole Blood,Packed Cells).  The fields defined are included for theBlood Utilization Screen for the Aqcess replacement software.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>product(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the blood bank product.  This would be the name of the product supplied to the blood bank or thename of the product issued to the patient.</td></tr><tr><td>.02</td><td>synonym</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Enter a mneumonic for the name of the blood product.  This can be a more common name or abbreviation.</td></tr><tr><td>.03</td><td>print name(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Enter a short version of the blood product name.  This name will be on reports and labels that have limited space.  This name will beon screen displays when there is limited space.  Although the nameis short it should be obvious to the reader which blood product the name represents. i.e. FFP for Fresh Frozen Plasma</td></tr><tr><td>.05</td><td>amount</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>Number of milliliters or micrograms of product usually containedin this product.  This number will be used as a default whenusers edit specific information on a blood product for a unit orpatient.</td></tr><tr><td>.06</td><td>units</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>Enter the units of measure for this blood product.  </td></tr><tr><td>8196</td><td>dba inactive flag</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td>This field is used to inactivate table entries that have become obsolete.</td></tr><tr><td>8197</td><td>deactivation date</td><td>28;2</td><td>DATE-TIME</td><td></td><td></td><td>This field is used in conjunction with DBA INACTIVE FLAG and records thedate that a table entry was made INACTIVE.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

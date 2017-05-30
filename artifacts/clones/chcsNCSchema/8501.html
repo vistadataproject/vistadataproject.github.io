@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > APPOINTMENT AUDIT TRAIL</h1></div><div id="results"><dl><dt>name</dt><dd>APPOINTMENT AUDIT TRAIL</dd><dt>number</dt><dd>8501</dd><dt>location</dt><dd>^SDAA(</dd><dt>description</dt><dd>This file is an transaction audit of patient appointment status.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>The Internal Entry Number (IEN) in the Appointment Audit Trail which isthe same as an appointment in the Patient Appointment File (#44.2).  Everytime there is a change in the appointment status, a new entry is made inthe Appointment Audit Trail file providing an audit trail of who made thechange/update in the appointment status.</td></tr><tr><td>.01</td><td>patient name(+)</td><td>0;1</td><td>POINTER</td><td><a href="44_2.html">44.2</a></td><td>B</td><td>The patient appointment</td></tr><tr><td>1</td><td>clerk(+)</td><td>0;2</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>A pointer to the User File (#3) that indicates the clerk who made a changein the appointment status.</td></tr><tr><td>2</td><td>transaction date/time(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td>C</td><td>The date/time when the appointment status was changed.</td></tr><tr><td>3</td><td>appointment status(+)</td><td>0;4</td><td>POINTER</td><td><a href="8514.html">8514</a></td><td></td><td>A pointer to the Appointment Status File (#8514) which indicates thepresent status of a patient appointment (e.g., Kept, No-Show, Cancelled,Walk-In)</td></tr><tr><td>4</td><td>division(+)</td><td>0;5</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>A pointer to the Medical Center Division File (#40.8) which indicates theDivision to which a clinic is assigned.</td></tr><tr><td>5</td><td>clinic(+)</td><td>0;6</td><td>POINTER</td><td><a href="44.html">44</a></td><td></td><td>A pointer to the Hospital Location File (#44) which indicates thelocation/clinic of the appointment that was updated with a change to theappointment status.</td></tr><tr><td>6</td><td>status modifier</td><td>0;7</td><td>SET OF CODES</td><td>0:PATIENT CANCELLATION<br/>1:FACILITY CANCELLATION<br/>2:CREATE WAIT LIST REQUEST<br/>3:MODIFY WAIT LIST REQUEST<br/>4:DELETE WAIT LIST REQUEST<br/></td><td></td><td>An internal flag that differentiates types of cancellations and changes toa Wait List request.  Values include: 0 for Patient Cancellation; 1 forFacility Cancellation; 2 for Create a Wait List request; 3 for Modify aWait List request; 4 Delete a Wait List request.</td></tr><tr><td>7</td><td>functionality</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates what functionality created this Audit Trail Entry.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

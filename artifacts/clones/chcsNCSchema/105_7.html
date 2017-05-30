@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ACUITY SELECTION</h1></div><div id="results"><dl><dt>name</dt><dd>ACUITY SELECTION</dd><dt>number</dt><dd>105.7</dd><dt>location</dt><dd>^ORAC(105.7,</dd><dt>description</dt><dd>This file is used as the menu selection driver for determiningthe appropriate Nursing Care Hour and Personnel Requirement Tables.When a user selects the 'Acuity Selection' option a program doesa 'DIC' lookup on the entries in this file. The user then selectsan entry in this file and the program notes which table to use inits final calculations. The .01 field is used as the menu synonym.The .02 field as the menu description.</dd><dt>applicationGroups</dt><dd>ORAC;ORTB</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Required field - free text - enter 1 to 5 characters.</td></tr><tr><td>.015</td><td>acuity selection(+)</td><td>2;1</td><td>FREE TEXT</td><td></td><td>D</td><td>Required field - free text - enter 3 to 20 characters.</td></tr><tr><td>.02</td><td>system</td><td>0;2</td><td>SET OF CODES</td><td>1:MEDICAL/SURGICAL<br/>2:PSYCHIATRY<br/></td><td></td><td>Field is set to flag "1" for Medical/surgical and "2" for Psychiatry.</td></tr><tr><td>.03</td><td>nursing care hour table(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Required field - free text - enter 1-7 characters.</td></tr><tr><td>.04</td><td>personnel requirements table(+)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Required free text - free text - enter 1-7 characters.</td></tr><tr><td>1</td><td>synonym</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>Free text field - enter 1-7 characters.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

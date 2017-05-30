@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SMTP CODES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="3_97.html">3.97</a></dd><dt>name</dt><dd>SMTP CODES</dd><dt>number</dt><dd>3.9701</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>smtp code</td><td>0;1</td><td>NUMERIC</td><td></td><td></td><td>A possible SMTP reply code for the SMTP command.</td></tr><tr><td>.02</td><td>next command</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The next SMTP command to perform after the current one.</td></tr><tr><td>.03</td><td>log error</td><td>0;3</td><td>SET OF CODES</td><td>1:LOG ERROR<br/></td><td></td><td>If SMTP reply codes occur for the SMTP command, this field indicateswhether an error should be written to the error log.</td></tr><tr><td>.04</td><td>retry</td><td>0;4</td><td>SET OF CODES</td><td>1:RECIPIENT<br/>2:MESSAGE<br/>3:DOMAIN<br/></td><td></td><td>Identifies whether or not a mail message should be retried for a singleentry (a recipient), a mail message, or all messages to a domain.</td></tr><tr><td>.05</td><td>bulletin</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Indicates the bulletin name that should be sent if the SMTP reply codeoccurs.</td></tr><tr><td>.06</td><td>notify</td><td>0;6</td><td>SET OF CODES</td><td>1:SENDER<br/>2:ALL SENDERS<br/>3:POSTMASTER<br/></td><td></td><td>The message text that will be returned with the reply code to thesender.</td></tr><tr><td>.07</td><td>message</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The message that the SMTP transceiver should send with the error code.</td></tr><tr><td>.08</td><td>remove</td><td>0;8</td><td>SET OF CODES</td><td>1:REMOVE<br/></td><td></td><td>Indicates whether or not the recipient should be removed from therecipient multiple of the message currently being sent.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

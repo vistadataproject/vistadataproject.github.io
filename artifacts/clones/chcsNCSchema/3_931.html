@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SMTP HARDWARE CONFIGURATION</h1></div><div id="results"><dl><dt>name</dt><dd>SMTP HARDWARE CONFIGURATION</dd><dt>number</dt><dd>3.931</dd><dt>location</dt><dd>^XMTP(3.931,</dd><dt>description</dt><dd>This file contains the hardware specific code for Network MailMan.  Ittracks which MUMPS routines to execute when the MailMan SMTP interfacemust read, write, open, or close a socket.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>type(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name of the hardware configuration.</td></tr><tr><td>.02</td><td>platform</td><td>0;2</td><td>POINTER</td><td><a href="_7.html">.7</a></td><td></td><td>The platform on which this configuration can be used (for example,DSM or MSM).</td></tr><tr><td>.03</td><td>server timeout</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field indicates how long a server should wait to reconnect afteran error has been received.</td></tr><tr><td>.04</td><td>dynamic receivers</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field indicates if the SMTP receiver should remain active.  Ifthe hardware type if marked as having dynamic receivers, then itindicates that the SMTP MUMPS process that receives mail messagesshould shut down after the mail transfer is complete.  Operatingsystem services will automatically start MUMPS processes when moremail needs to be processed.</td></tr><tr><td>1</td><td>open client logic</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to open a communications channel as a client.</td></tr><tr><td>2</td><td>close logic</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to close a socket.</td></tr><tr><td>3</td><td>send logic</td><td>3;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to send information over a communications channel.</td></tr><tr><td>4</td><td>receive logic</td><td>4;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to receive information over a communications channel.</td></tr><tr><td>5</td><td>open server logic</td><td>5;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to open a communications channel as a server.</td></tr><tr><td>6</td><td>startup logic</td><td>6;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic for starting the SMTP services for the hardware type.</td></tr><tr><td>7</td><td>shutdown logic</td><td>7;1</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic for shutting down the SMTP services for the hardware type.</td></tr><tr><td>8</td><td>binary encode logic</td><td>8;1</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to encode binary files.</td></tr><tr><td>9</td><td>binary decode logic</td><td>9;1</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS logic to decode binary files.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

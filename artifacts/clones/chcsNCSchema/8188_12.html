@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SNOMED CT</h1></div><div id="results"><dl><dt>name</dt><dd>SNOMED CT</dd><dt>number</dt><dd>8188.12</dd><dt>location</dt><dd>^DALOINC(8188.12,</dd><dt>description</dt><dd>This file contains the Systematized Nomenclature of Medicine (SNOMED)Clinical Terms (CT). SNOMED CT is a comprehensive and precise clinicalreference terminology that provides clinical content for clinicaldocumentation and reporting. The standardized clinical terminology enables the sharing of comparable data worldwide, across medical specialties, and sites of care.   This is a Class 1 file, which cannot be edited by the site.  </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>snomed ct(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the unique SNOMED Clinical Term (CT) identifierfor a Clinical Concept.</td></tr><tr><td>.02</td><td>concept status</td><td>0;2</td><td>POINTER</td><td><a href="8188_13.html">8188.13</a></td><td></td><td>This field indicates the status (e.g., Current, Limited, Inactive) of a Concept. A "current" status indicates that the Concept is in current use and isconsidered active. A "limited" status indicates that the Concept is of limited clinical value as it is based on a classification concept or an administrativedefinition. Concepts with this status are still valid for current use and are considered active.   An "inactive" status (such as Retired, Duplicate, Obsolete) indicates thatthe Concept is inactive and not for use.</td></tr><tr><td>.03</td><td>fully specified name</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains the unique phrase that describes a Concept in a way thatis intended to be unambiguous. The Fully Specified Name explains the meaningof the concept more fully to remove or reduce ambiguity.</td></tr><tr><td>.04</td><td>primitive flag</td><td>0;4</td><td>SET OF CODES</td><td>0:FULLY DEFINED<br/>1:PRIMITIVE<br/></td><td></td><td>This field indicates whether a SNOMED CT is Primitive or Fully defined by itscurrent set of Defining characteristics. A Concept may be Primitive because(1) its only stated Defining characteristics are "is a" subtype relationshipor (2) an aspect of its meaning is not fully expressed by existingRelationships.  If a Concept is Primitive, its place in the subtype hierarchymay be know but it cannot be checked for equivalence with another Conceptexpressed or Post-coordinated expression. Per the source documentation, "A Concept is 'Fully defined" if its definingcharacteristics are sufficient to differentiate a concept relative to itsimmediate supertype(s). A Concept which is not "Fully defined" is Primitive.For example, if the Concept "Red car" is defined as [is a=car] + [color=red]this is "Fully defined" but the same definition applied to the Concept "Redsports car" is Primitive."</td></tr><tr><td>8196</td><td>dba inactive flag</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td>This field indicates whether a code is inactive.</td></tr><tr><td>8197</td><td>deactivation date</td><td>28;2</td><td>DATE-TIME</td><td></td><td></td><td>This field is used in conjunction with DBA INACTIVE FLAG and records the datethat a table entry was made inactive.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

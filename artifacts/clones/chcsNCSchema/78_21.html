@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRINT FIELDS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="78_2.html">78.2</a></dd><dt>name</dt><dd>PRINT FIELDS</dd><dt>number</dt><dd>78.21</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>field</td><td>0;1</td><td>POINTER</td><td><a href="78_7.html">78.7</a></td><td>B</td><td>Enter the name of a print field that you want to appear on thisflash card or label.  This field is a pointer to the Label PrintFields file (#78.7) where the allowable print fields are stored. If you want to include the same print field twice on the flash cardor label, then enter the print field name once without quotes andthen again in quotes.  If you enter FREE TEXT in this field, thenyou should enter text in the LITERAL TEXT field.</td></tr><tr><td>2</td><td>row</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Enter the number (from 1 to 80) of the row on which the CHCS shouldstart printing this field on the flash card or label.  (Rows arehorizontal.)  Although the CHCS accepts a number up to 80, enter anumber that corresponds with the size of the flash card or label.</td></tr><tr><td>3</td><td>column</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Enter the number (from 1 to 80) of the column on which the CHCSshould start printing this field on the flash card or label. (Columns are vertical.)  Although the CHCS accepts a number up to80, enter a number that corresponds with the size of the flash cardor label. If you do not enter data in the TITLE(OPTIONAL) field, and if nodefault title is defined in the Label Print Fields file (#78.7),then the CHCS starts printing the actual field value at the columnnumber you enter here.</td></tr><tr><td>4</td><td>title (optional)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Enter a 1- to 15-character title that should precede this printfield (for example, SSN: or NAME:).  You may include blank spacesin or after the title.  If you leave this field blank, then theCHCS prints the default title (if one is defined) for this printfield in the Label Print Fields file (#78.7).  Enter NONE if notitle is desired.</td></tr><tr><td>5</td><td>literal text</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Enter 1- to 80-character text (for example, **Department ofRadiology**) that should appear on the flash card or label.  Thenumber of characters in the text must not exceed the number ofcolumns allowed on the flash card or label.</td></tr><tr><td>6</td><td>size</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Enter the font size (that is, the print size).  Enter 1 for verysmall (generally not used), 2 for mediaum, and 3 for largest.  Thisfield is applicable to Intermec printers only.</td></tr><tr><td>7</td><td>barcode this field</td><td>0;7</td><td>BOOLEAN</td><td>y:YES<br/>n:NO<br/></td><td></td><td>Enter y for YES if the CHCS should print this field in barcodeformat.  Enter n for NO if it should not.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

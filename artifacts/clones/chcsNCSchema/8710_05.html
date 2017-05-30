@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RESULT CODES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8710.html">8710</a></dd><dt>name</dt><dd>RESULT CODES</dd><dt>number</dt><dd>8710.05</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This entry is the code stored in the LAB RESULT FILE (#63).  It is a one ortwo character representation of the result.  This code is only stored anddoes not display on the report.  The code should be unique for this test  in order to conserve keystrokes during result entry.</td></tr><tr><td>.02</td><td>explanation</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Enter an explanation or expansion of the entry in the CODE field.  Thisfield will echo on the screen when the user enters the code during result entry.  When a result is reported, the explanation of the coded entry will display or print. </td></tr><tr><td>.03</td><td>alert</td><td>0;3</td><td>SET OF CODES</td><td>H:H<br/>H*:H*<br/>L:L<br/>L*:L*<br/></td><td></td><td>If the entered code is an abnormal result, choose the appropriate flag. The flag will display when this code is selected as a result.  If thecode is not an abnormal result, leave this field blank.</td></tr><tr><td>.04</td><td>archive flag</td><td>0;4</td><td>SET OF CODES</td><td>1:Results will be stored in Pt History File<br/></td><td></td><td>This field indicates if results with this specific resultcode will be saved on-line in the Patient Archive History file (8924).Entering a `1' here will flag the results to be saved on-line.</td></tr><tr><td>1</td><td>auto instrument</td><td>1;0</td><td>MULTIPLE</td><td><a href="8710_06.html">8710.06</a></td><td></td><td>This is the multiple which contains the Auto Instruments.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

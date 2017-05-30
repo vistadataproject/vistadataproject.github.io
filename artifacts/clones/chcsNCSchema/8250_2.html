@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PSAFDB DACDESCTBL</h1></div><div id="results"><dl><dt>name</dt><dd>PSAFDB DACDESCTBL</dd><dt>number</dt><dd>8250.2</dd><dt>location</dt><dd>^PSDFDB(8250.2,</dd><dt>description</dt><dd>DACDESCTBL - RDACD0The Drug Allergy Code Description Table uses the 2-byte Drug Allergy Code DAC*TBL as a key to provide a 50-byte description of the drug or drug family responsible for the allergy. The DACDESCTBL is associated with the HICTBL (ingredient) through the DAC*TBL value contained in the HICTBL.  Each HICTBL record can contain zero or one DACDESCTBL reference.The Internal entry number (D0) is the Individual Drug Allergy Code Table(DACTBL) with leading zeros removed.</dd><dt>applicationGroups</dt><dd>PS</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>dactbl(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td></td><td>Drug Allergy Codes (DAC) are used to identify and create warnings associatedwith the use of certain drugs in patients with a history of hypersensitivityto a particular drug or drug class.  These codes have application in on-linepharmacy systems utilizing automated patient profiles.  These codes arespecific to the active therapeutic ingredient(s) of the drug product.</td></tr><tr><td>.02</td><td>dacdesc</td><td>0;2</td><td>FREE TEXT</td><td></td><td>D</td><td>The Drug Allergy Code Description is a 50-byte description of the drug ordrug family responsible for the allergy.</td></tr><tr><td>1</td><td>dacsimplenames</td><td>1;0</td><td>MULTIPLE</td><td><a href="8250_21.html">8250.21</a></td><td></td><td>This field is the multiple that contains all the simple allergy classificationnames from First DataBank.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

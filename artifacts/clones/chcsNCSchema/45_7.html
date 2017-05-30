@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEPARTMENT AND SERVICE</h1></div><div id="results"><dl><dt>name</dt><dd>DEPARTMENT AND SERVICE</dd><dt>number</dt><dd>45.7</dd><dt>location</dt><dd>^DIC(45.7,</dd><dt>description</dt><dd> This file contains the file of Departments and Services withinthe MTF.  Each service must be assigned to a Department. The Master File Primary Key (Unique ID) for this file:          IEN\NAME(.01)\99DPT</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the Department or Service within the MTF.</td></tr><tr><td>.02</td><td>dept status(+)</td><td>0;2</td><td>SET OF CODES</td><td>S:SERVICE<br/>D:DEPARTMENT<br/></td><td></td><td>Enter 'S' for a Service or 'D' for a Department.</td></tr><tr><td>.05</td><td>department</td><td>0;4</td><td>POINTER</td><td><a href="45_7.html">45.7</a></td><td></td><td>This field is used to record the Department for clinical services. A service may have no Department (such as Pharmacy Service).Departments should have no entry in this field.</td></tr><tr><td>99</td><td>abbreviation</td><td>0;3</td><td>FREE TEXT</td><td></td><td>AHN</td><td>Formerly honeywell code may now assume other uses.</td></tr><tr><td>8196</td><td>dba inactive flag</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td> This field is used to inactivate table entries that have become obsolete. </td></tr><tr><td>8197</td><td>deactivation date</td><td>28;2</td><td>DATE-TIME</td><td></td><td></td><td> This field is used in conjunction with DBA INACTIVE FLAG records thedate that a table entry was made inactive.  </td></tr><tr><td>8200</td><td>division</td><td>1;0</td><td>MULTIPLE</td><td><a href="45_702.html">45.702</a></td><td></td><td>This field is a pointer to the MEDICAL CENTER DIVISION file (40.8).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HIV STATISTICS</h1></div><div id="results"><dl><dt>name</dt><dd>HIV STATISTICS</dd><dt>number</dt><dd>8734</dd><dt>location</dt><dd>^LRO(8734,</dd><dt>description</dt><dd>This file contains the statistics for HIV testing.  It is updated automatically by the system when an HIV test is certified.   Two cross references on this file are used to accumulate monthly andyearly totals.  One cross reference is for 'Force Testing' and the otheris for 'Clinical' (non-force testing). The monthly counter node will have a date format of 2941200 (Dec. 1994). The yearly counter node will have a date format of 2940000 (1994).                           NON-FileMan Cross References   CLINICAL (NON-FORCE TESTING)     ^LRO(8734,"ACLIN",LRWE,DATE,BOS)=TOTAL     HIV confirmatory test, Clinical (NON-FORCE TESTING)    ^LRO(8734,"ACONC",LRWE,DATE,BOS,STATUS)=TOTAL     HIV confirmatory test (FORCE TESTING)    ^LRO(8734,"ACONF",LRWE,DATE,BOS,STATUS)=TOTAL      FORCE TESTING    ^LRO(8734,"AFORCE",LRWE,DATE,BOS)=TOTAL   HIV positive xref    ^LRO(8734,"AHIVP",LRWE,DATE,NAME^PTN)=TST^RESULT^BOS^STATUS^SOURCE CODE^                                          MEPRS^LRACP    BOS         = Branch of Service (pointer #23)   DATE        = Date for this total, FileMan format                The monthly counter node will have a date format of 2941200                 (Dec.1994).  The yearly counter node will have a date format                of 2940000 (1994).  LRACP       = Accession ien (pointer #66)   LRWE        = LAB Work Element ien (pointer #69.92)  MEPRS       = MEPRS ien (pointer #8119)   NAME^PTN    = Patient name_"^"_patient ien (pointer #2)  RESULT      = Result of test  SOURCE CODE = Lab specimen source code (pointer #8732)    STATUS      = Status of patient (ACTIVE DUTY, RETIRED, etc.)   TOTAL       = Total tested that day  TST         = Lab test ien (pointer #60)</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>lab work element(+)</td><td>0;1</td><td>POINTER</td><td><a href="69_92.html">69.92</a></td><td>B</td><td>This multiple contains HIV statistics data for one single Lab Work Element.</td></tr><tr><td>1</td><td>date</td><td>1;0</td><td>MULTIPLE</td><td><a href="8734_01.html">8734.01</a></td><td></td><td>This is a multiple field which contains attributes for thedate on which the total HIV statistics counts are compiled.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

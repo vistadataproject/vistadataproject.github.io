@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REVIEW NEW RESULTS</h1></div><div id="results"><dl><dt>name</dt><dd>REVIEW NEW RESULTS</dd><dt>number</dt><dd>8273</dd><dt>location</dt><dd>^ORNR(8273,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>order task(+)</td><td>0;1</td><td>POINTER</td><td><a href="107.html">107</a></td><td></td><td>Pointer to the ORDER TASK File (#107). Indicates that results are available for review.</td></tr><tr><td>.02</td><td>ordering provider(+)</td><td>0;2</td><td>POINTER</td><td><a href="6.html">6</a></td><td></td><td>Pointer to Provider file (#6) that verifies the name of the provider who isentering an order.</td></tr><tr><td>.03</td><td>patient(+)</td><td>0;3</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>Pointer to Patient file (#2) that verifies the name of the patient for whomthe order is written.</td></tr><tr><td>.04</td><td>order type(+)</td><td>0;4</td><td>POINTER</td><td><a href="102.html">102</a></td><td></td><td>Pointer to the Order Type file (#102) that holds the name and programminginformation for the order type.</td></tr><tr><td>.05</td><td>priority(+)</td><td>0;5</td><td>POINTER</td><td><a href="102_3.html">102.3</a></td><td></td><td>Pointer to the Order Priority file (#102.3).  Indicates priority processingof the Radiology and Laboratory results.</td></tr><tr><td>.06</td><td>abnormal flag</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>The field contains free text which can be set for an abnormal order.</td></tr><tr><td>.07</td><td>collection/exam date/time</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>The field stores the collection or exam date and time for Radiology andLaboratory orders.</td></tr><tr><td>.08</td><td>print order(+)</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Enter a number between 0 and 99, indicating the print order number.</td></tr><tr><td>.09</td><td>test/procedure(+)</td><td>0;9</td><td>VARIABLE-POINTER</td><td><a href="60.html">60</a>, <a href="71.html">71</a></td><td></td><td>Variable pointers.  Pointer file to Lab Test file (#60) when order numberequals "1", and Radiology Procedures file (#71) when order number equals"2".</td></tr><tr><td>.1</td><td>priority flag(+)</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>The field contains a number between 0 and 9 which will store "0" when theAbnormal Flag field is set; otherwise, it will be equal to the Priorityfield.</td></tr><tr><td>.11</td><td>last update(+)</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>This date field will be used in conjunction with a site parameter in the CLINICAL SITE PARAMETERS File (#101.1) to determine if this entry can be deleted from the RNR file.</td></tr><tr><td>.12</td><td>signed</td><td>0;12</td><td>SET OF CODES</td><td>1:SIGNED<br/>0:UNSIGNED<br/></td><td></td><td>Enter "Yes" if the provider has read and signed the new results; enter "No"if the results are not signed.</td></tr><tr><td>5.01</td><td>provider</td><td>5;0</td><td>MULTIPLE</td><td><a href="8273_01.html">8273.01</a></td><td></td><td>Pointer to Provider file (#6) which indicates the results that will displayon the provider's Review New Results (RNR) screen.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

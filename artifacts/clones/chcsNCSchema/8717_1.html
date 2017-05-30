@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB WORKLOAD EXCEPTIONS</h1></div><div id="results"><dl><dt>name</dt><dd>LAB WORKLOAD EXCEPTIONS</dd><dt>number</dt><dd>8717.1</dd><dt>location</dt><dd>^LRO(8717.1,</dd><dt>description</dt><dd>This file tracks exceptions in the CPT Workload Data file.Entries older than 24 months will be purged.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>workload exception date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field is the date and time (not including minutes or seconds)that the exception is initially filed.</td></tr><tr><td>.02</td><td>accession pointer(+)</td><td>0;2</td><td>POINTER</td><td><a href="66.html">66</a></td><td></td><td>This is the pointer to the accession file for the entry associated withthe test that was performed.</td></tr><tr><td>.03</td><td>lab test</td><td>0;3</td><td>POINTER</td><td><a href="60.html">60</a></td><td></td><td>This is the pointer to the Lab Test file for the entry associated withthe test that was performed.</td></tr><tr><td>.04</td><td>cpt code</td><td>0;4</td><td>POINTER</td><td><a href="8151.html">8151</a></td><td></td><td>This is the CPT code for which workload is being collected.</td></tr><tr><td>.05</td><td>cpt modifier</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the CPT code modifier for which workload is being collected.</td></tr><tr><td>.06</td><td>meprs code</td><td>0;6</td><td>POINTER</td><td><a href="8119.html">8119</a></td><td></td><td>This field contains the requesting MEPRS code associated with the accessionwhen workload is captured by the system.</td></tr><tr><td>.07</td><td>type of exception</td><td>0;7</td><td>SET OF CODES</td><td>1:INACTIVE CPT CODE<br/>2:MISSING CPT CODE<br/>3:MISSING LAB SECTION<br/>4:INVALID MEPRS<br/>5:MISSING MEPRS<br/>6:MISSING MODIFIER<br/>7:INVALID MEPRS<br/>8:INACTIVE MEPRS<br/></td><td></td><td>This field contains the numeric value for the exception Type.</td></tr><tr><td>.08</td><td>resolved</td><td>0;8</td><td>SET OF CODES</td><td>1:RESOLVED<br/></td><td></td><td>This field will contain a 1 if the exception has been resolved.</td></tr><tr><td>.09</td><td>date/time resolved</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td>The date and time the exception was resolved.</td></tr><tr><td>1</td><td>performing division</td><td>0;10</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>This is the division of the performing laboratory.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

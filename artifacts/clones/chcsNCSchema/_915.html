@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AUDIT-TRAIL</h1></div><div id="results"><dl><dt>name</dt><dd>AUDIT-TRAIL</dd><dt>number</dt><dd>.915</dd><dt>location</dt><dd>^DIAU(</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td></td><td>The DATE/TIME of this entry to the Audit Trail.</td></tr><tr><td>.02</td><td>device</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The device associated with this entry.</td></tr><tr><td>.03</td><td>user</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>Pointer to the USER file, the user associated with this entry.</td></tr><tr><td>.04</td><td>principal screen</td><td>0;4</td><td>POINTER</td><td><a href="_8.html">.8</a></td><td></td><td>Pointer to the SCREEN file, this is the principal screen of the audited entry.</td></tr><tr><td>.05</td><td>file(+)</td><td>0;5</td><td>POINTER</td><td><a href="1.html">1</a></td><td></td><td>Pointer to FILE, this is the IEN of the AUDITED FILE.</td></tr><tr><td>.06</td><td>entry number</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>The AUDITED ENTRY NUMBER.</td></tr><tr><td>.07</td><td>access control</td><td>0;7</td><td>SET OF CODES</td><td>1:USER ALLOWED<br/>2:GROUP ALLOWED<br/>X:USER DISALLOWED<br/></td><td></td><td>Set of codes indicating ACCESS CONTROL. 1=USER ALLOWED,2=GROUP ALLOWED,X=USER DISALLOWED.</td></tr><tr><td>1</td><td>name of entry</td><td></td><td>COMPUTED</td><td></td><td></td><td>Name of Audited entry.</td></tr><tr><td>2</td><td>comment</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Comments on the entry.</td></tr><tr><td>9</td><td>deleted</td><td>0;9</td><td>SET OF CODES</td><td>1:DELETED</td><td></td><td>Set if entry is deleted.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

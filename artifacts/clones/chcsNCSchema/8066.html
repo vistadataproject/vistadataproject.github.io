@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MEPRS BILLING CATEGORY</h1></div><div id="results"><dl><dt>name</dt><dd>MEPRS BILLING CATEGORY</dd><dt>number</dt><dd>8066</dd><dt>location</dt><dd>^MSAS(8066,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>meprs category code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the billing rollup category derived from the MEPRS code for thisportion of the patient's episode.</td></tr><tr><td>.05</td><td>division</td><td>DIV;1</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td>DIV</td><td>The division associated with a given MEPRS BILLING CATEGORY record.</td></tr><tr><td>1</td><td>short description(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Short description identifying the MEPRS billing categoryfor TPC variable rate billing.</td></tr><tr><td>2</td><td>long description(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Full description of the MEPRS billing category which is usedfor reporting.</td></tr><tr><td>3</td><td>tpc sales code</td><td>0;4</td><td>POINTER</td><td><a href="8061.html">8061</a></td><td></td><td>Sales code from the rate table used by TPC variable ratebilling to determine charges by MEPRS code.</td></tr><tr><td>10</td><td>icu category</td><td>1;1</td><td>SET OF CODES</td><td>1:ICU<br/></td><td></td><td>Indicator of an ICU billing category.</td></tr><tr><td>21</td><td>all inc r&b revenue code</td><td>2;1</td><td>NUMERIC</td><td></td><td></td><td>This is the revenue code to be used on the insurance claim form for theportion of the charge designated for room and board.  The revenue codewill vary depending on the billing category, eg. ICU room and board hasa different revenue code than a regular bed day.</td></tr><tr><td>22</td><td>all incl ancil revenue code</td><td>2;2</td><td>NUMERIC</td><td></td><td></td><td>This is the revenue code to be printed on the insurance claim form withthe charge for ancillary services.</td></tr><tr><td>23</td><td>pro fee revenue code</td><td>2;3</td><td>NUMERIC</td><td></td><td></td><td>This is the code which appears on the insurance claim form with the chargefor professional fees (doctor's charges), if applicable.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > POLICY</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8055.html">8055</a></dd><dt>name</dt><dd>POLICY</dd><dt>number</dt><dd>8055.02</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>policy</td><td>0;1</td><td>POINTER</td><td><a href="8086.html">8086</a></td><td></td><td>Pointer to the policy for which data is tracked.</td></tr><tr><td>3</td><td>payment detail</td><td>1;0</td><td>MULTIPLE</td><td><a href="8055_12.html">8055.12</a></td><td></td><td>Multiple used to store payment detail against thispolicy for this insurance account.</td></tr><tr><td>4</td><td>dd2502 open date</td><td>0;2</td><td>DATE-TIME</td><td></td><td>AG</td><td>Date on which the last claim form was printed for thispolicy against this insurance account.</td></tr><tr><td>5</td><td>amount due</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Total amount due against this policy.</td></tr><tr><td>6</td><td>claim status</td><td>0;4</td><td>SET OF CODES</td><td>Q:QUEUE CLAIM FORM PRINTING<br/>O:OPEN<br/>C:CANCEL<br/>M:MANUALLY CLOSE<br/>Z:ZERO BALANCE CLOSED<br/>T:TRANSFER<br/>F:FORCE TRANSFER<br/>X:XBLOCK TRANSFER<br/></td><td></td><td>Status of the claim against this policy:     Q - currently in the queue pending print     O - open claim pending     C - admission cancelled     M - manually closed     Z - zero balance     T - transferred balance     F - forced transfer requested     X - automated transfer blocked</td></tr><tr><td>7</td><td>delinquent letter 1 date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>Date that the first delinquent letter was producedagainst this policy.</td></tr><tr><td>8</td><td>delinquent letter 2 date</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>Date that the second delinquent letter was producedagainst this policy.</td></tr><tr><td>9</td><td>summary payment</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Summary of all payments received against this policy.</td></tr><tr><td>10</td><td>balance</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Balance remaining against this policy for this insuranceaccount.</td></tr><tr><td>11</td><td>last payment date</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td>Date last payment was posted against this policy.</td></tr><tr><td>12</td><td>date claim status change</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>Date that the claim status was set to the current status.</td></tr><tr><td>13</td><td>reason close claim</td><td>0;11</td><td>POINTER</td><td><a href="8056.html">8056</a></td><td></td><td>Reason the claim was closed.</td></tr><tr><td>14</td><td>corr chg flag</td><td>0;12</td><td>SET OF CODES</td><td>X:CORRECTED CHARGE<br/></td><td></td><td>Flag indicating that charges have been corrected forthis policy.</td></tr><tr><td>15</td><td>treatment authorization code</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>Free text field used to track the code given bythe insurance payor authorizing the treatment planfor this patient episode.</td></tr><tr><td>17</td><td>claim sequence</td><td>0;15</td><td>NUMERIC</td><td></td><td>AC</td><td>Sequential number assigned to track the order in whichmultiple claims were processed against this account.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

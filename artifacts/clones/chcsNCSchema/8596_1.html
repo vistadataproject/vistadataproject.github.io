@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DENTAL PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>DENTAL PARAMETERS</dd><dt>number</dt><dd>8596.1</dd><dt>location</dt><dd>^SDOT(8596.1,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>this site (single entry)(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Only one entry per siteprovides data to support dental scheduling</td></tr><tr><td>1</td><td>schedule deletion</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Identifies the number of days a schedule must be inactivated before the system automatically deletes it from the database</td></tr><tr><td>2</td><td>schedule hold duration</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Indentifies th enumber of days after freezing a slot that the slot should be released</td></tr><tr><td>3</td><td>appt overlap interval</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Number of acceptable minutes between appointments.  System uses the fieldto calculate when to show warning to appt clerks of a potential overlapof appointments.</td></tr><tr><td>4</td><td>deers batch pull</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>Number of days before a booked appt that the system generates anautomatic DEERS check.</td></tr><tr><td>5</td><td>inactivity period</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Number of days after a provider has been inactivated that must pass beforethe system clears all schedules and profiel data.  Recommended value is 60.</td></tr><tr><td>6</td><td>appt interval(+)</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Interval for appt durations - all durations must be a multiple of this value.Allowed values are 15 (host default) and 10.</td></tr><tr><td>7</td><td>enable schedule audit</td><td>0;8</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Turn on or off operatory schedule audit.</td></tr><tr><td>8</td><td>user</td><td>0;9</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>User who last made change</td></tr><tr><td>9</td><td>date last edit</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>Date of last edit</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

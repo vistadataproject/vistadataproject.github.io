@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > NON BOOKED APPOINTMENTS</h1></div><div id="results"><dl><dt>name</dt><dd>NON BOOKED APPOINTMENTS</dd><dt>number</dt><dd>44.8</dd><dt>location</dt><dd>^SDNB(</dd><dt>description</dt><dd>This file is used to store the unbooked patient information.  If theclerk does not book an appointment for the patient even though anappointment refusal is entered, then CHCS will create a record in this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>request number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>Request Number</td></tr><tr><td>.02</td><td>clinic(+)</td><td>0;2</td><td>POINTER</td><td><a href="44.html">44</a></td><td></td><td>This is the clinic that was being searched during the appointment request.</td></tr><tr><td>.03</td><td>request date/time(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field will store the Date/Time of the requested appointment.</td></tr><tr><td>.04</td><td>access to care(+)</td><td>0;4</td><td>POINTER</td><td><a href="8510.html">8510</a></td><td></td><td>This is the Access to Care Category requested for the appointment.</td></tr><tr><td>.05</td><td>clerk(+)</td><td>0;5</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>This is the name of the clerk that performed the search for an appointment that did not result in a booked appointment.</td></tr><tr><td>.06</td><td>patient(+)</td><td>0;6</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>This is the name of the patient that was requesting an appointment that did not result in a booked appointment.</td></tr><tr><td>.07</td><td>patient category(+)</td><td>0;7</td><td>POINTER</td><td><a href="8156.html">8156</a></td><td></td><td>This is the Patient Category at the time the appointment was requested but did not result in a booked appointment.</td></tr><tr><td>.08</td><td>enrolling dmis id</td><td>0;8</td><td>POINTER</td><td><a href="8103.html">8103</a></td><td></td><td>This is the patient's enrolling DMIS ID at the time the clerk searched for available appointments.</td></tr><tr><td>.09</td><td>hcdp</td><td>0;9</td><td>POINTER</td><td><a href="8545.html">8545</a></td><td></td><td>This is the Patient's Health Care Delivery Program at the time that the appointment was requested but did not result in a booked appointment.</td></tr><tr><td>.1</td><td>pcm</td><td>0;10</td><td>POINTER</td><td><a href="8551.html">8551</a></td><td></td><td>This is the Patient's Primary Care Manager at the time the appointment was requested but did not result in a booked appointment.</td></tr><tr><td>.11</td><td>referral</td><td>0;11</td><td>POINTER</td><td><a href="8554.html">8554</a></td><td></td><td>This is the Patient's Referral number for the time the appointment was requested but did not result in a booked appointment.</td></tr><tr><td>.12</td><td>reason appointment not booked(+)</td><td>0;12</td><td>POINTER</td><td><a href="8511.html">8511</a></td><td></td><td>This is the reason why an appointment was not booked for the patient after an appointment search.</td></tr><tr><td>.13</td><td>reason text</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>This is an additional and optional description of the reason why an appointment was not booked for the patient.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CASH TYPE PAYMENT</h1></div><div id="results"><dl><dt>name</dt><dd>CASH TYPE PAYMENT</dd><dt>number</dt><dd>8054</dd><dt>location</dt><dd>^MSAS(8054,</dd><dt>description</dt><dd>This file defines the different types of payments (e.g., cash, check or receipt).</dd><dt>applicationGroups</dt><dd>MSA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>payment code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is a code which indicates whether the payment was made in Cash,Check or by Receipt.</td></tr><tr><td>2</td><td>description</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is a description of the payment code.</td></tr><tr><td>3</td><td>service flag</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>This is a code of 1-3 characters which indicates the services to whichthis code applies.  It applies to the Army if the character 'A' isincluded; the Air Force if the letter 'F' is included and the Navy ifthe letter 'N' is included.</td></tr><tr><td>4</td><td>flags</td><td>0;3</td><td>SET OF CODES</td><td>1:VALID FOR OCONUS ONLY<br/></td><td></td><td>This is a flag which indicates or not this Type Payment is for OCONUSonly.</td></tr><tr><td>8000</td><td>service flags(+)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is a 1-3 character code which indicates which of the Services thisType Payment applies to.  It applies to the Army if the code containsthe character 'A', the Air Force if the code contains the character'F' and the Navy if the code contains the character 'N'.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

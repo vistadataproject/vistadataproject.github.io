@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GT NT DISCHARGE NOTE</h1></div><div id="results"><dl><dt>name</dt><dd>GT NT DISCHARGE NOTE</dd><dt>number</dt><dd>51153.4</dd><dt>location</dt><dd>^GTOR(51153.4,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>DATE</td></tr><tr><td>.02</td><td>patient</td><td>0;2</td><td>POINTER</td><td><a href="2.html">2</a></td><td>PAT</td><td></td></tr><tr><td>.03</td><td>physician/nursing note</td><td>0;3</td><td>POINTER</td><td><a href="7.html">7</a></td><td></td><td></td></tr><tr><td>.04</td><td>entered by</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>field will store the name of the user who entered the note.</td></tr><tr><td>.05</td><td>status</td><td>0;5</td><td>SET OF CODES</td><td>C:Complete<br/>P:Preliminary<br/></td><td></td><td>field will store whether a note has a status of complete or preliminary</td></tr><tr><td>.06</td><td>patient status</td><td>0;6</td><td>SET OF CODES</td><td>1:Inpatient<br/>2:Outpatient<br/></td><td></td><td>the patient status at the time the note was entered</td></tr><tr><td>.07</td><td>register number</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>the registration number for the patient at the time the note was entered.</td></tr><tr><td>.08</td><td>note title(+)</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.1</td><td>job number</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>Job number from the Lanier transcription system</td></tr><tr><td>1</td><td>discharge text</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Discharge Text</td></tr><tr><td>2</td><td>gt or discharge summary ien</td><td>2;1</td><td>POINTER</td><td><a href="51107_1.html">51107.1</a></td><td></td><td>pointer to the OP-10 file</td></tr><tr><td>3</td><td>gt or discharge summary ien2(+)</td><td>2;2</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>4</td><td>lock</td><td>3;0</td><td>MULTIPLE</td><td><a href="51153_41.html">51153.41</a></td><td></td><td></td></tr><tr><td>6</td><td>note type(+)</td><td>0;9</td><td>SET OF CODES</td><td>BRIEF:BRIEF DISCHARGE<br/>DEATH:DEATH NARRATIVE SUMMARY<br/></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

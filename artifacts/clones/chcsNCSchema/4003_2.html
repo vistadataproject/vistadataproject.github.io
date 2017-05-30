@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INTERFACE ERROR TYPE</h1></div><div id="results"><dl><dt>name</dt><dd>INTERFACE ERROR TYPE</dd><dt>number</dt><dd>4003.2</dd><dt>location</dt><dd>^INTHERT(</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>error id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This code is the unique identifier for this error type.  It will have the format of AAAnnnn.  AAA refers to the three character identifier for the application area for the area.  nnnn is an incremental number padded onthe left with zeros.  Examples: MFN0005, LAB0034.</td></tr><tr><td>.02</td><td>error name(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is a one line description of the error.  It can be used as a single lineof information to the user.</td></tr><tr><td>.03</td><td>error classification</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The value in this field is free text and will vary depending on theneeds of the application using this file.  This field will be used togroup and sort error types for reporting and organizing needs.</td></tr><tr><td>.04</td><td>error criticality</td><td>0;4</td><td>SET OF CODES</td><td>1:Note<br/>2:Warning<br/>3:Fatal<br/></td><td></td><td>This value defines the criticality of the error associated with theerror type.  It can be used during error processing for branchinglogic.  It can also be used to group and sort error types for reportingand organizing needs.</td></tr><tr><td>1</td><td>error cause</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Description of the probable cause of the error.  Include any informationthat may help the user understand why this occured.</td></tr><tr><td>2</td><td>error resolution</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Description of the typical resolution of the error.  Include any information that will help the user correct the error and avoid futureproblems.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

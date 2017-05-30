@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > KG ADS SITE PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>KG ADS SITE PARAMETERS</dd><dt>number</dt><dd>100500</dd><dt>location</dt><dd>^KGOR(100500,</dd><dt>description</dt><dd>This file was created to relocate some of the fields previously containedin the KG Site Parameter file.  It was introduced with ADM 2.3 and containsconfiguration data for ADM.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>record number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>There will only be one record in this file.</td></tr><tr><td>.02</td><td>adm default pending appts pick</td><td>0;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is checked to determine if pending appts will appear onthe Create New ADM Patient Records pick list.  Pending appointments can notbe selected and they appear dim.  The SCR for this feature was written withthe desire that HCPs be able to see which appointments need to be processed(EOD or check-in) before they can be added to ADM.</td></tr><tr><td>.03</td><td>adm default upd prob list</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>When an ADM record is filed, the user is prompted to update the PatientsMaster Problem List.  This field indicates the Facility's default responseto the question.</td></tr><tr><td>.04</td><td>adm default create sf600</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>When an ADM record is filed, if the CS SF600 software is being utilized, theuser is prompted to create an SF600.  This field is the facility's defaultresponse to the question.</td></tr><tr><td>.05</td><td>icd-9 download year</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>ICD-9 DOWNLOAD YEAR</td></tr><tr><td>.06</td><td>cpt-4 download year</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>CPT-4 DOWNLOAD YEAR</td></tr><tr><td>.07</td><td>eids extract format</td><td>0;7</td><td>SET OF CODES</td><td>C:CAPER<br/>S:SADR<br/>B:BOTH<br/>N:NONE<br/></td><td></td><td>This field indicates which SADR or CAPER extracts go to EIDS.</td></tr><tr><td>.08</td><td>air force extract format</td><td>0;8</td><td>SET OF CODES</td><td>C:CAPER<br/>S:SADR<br/>B:BOTH<br/>N:NONE<br/></td><td></td><td>This field will store the value for the Air Force Extract format.</td></tr><tr><td>.09</td><td>navy extract format</td><td>0;9</td><td>SET OF CODES</td><td>C:CAPER<br/>S:SADR<br/>B:BOTH<br/>N:NONE<br/></td><td></td><td>This field will hold the value for the Navy Extract Format.</td></tr><tr><td>.1</td><td>army extract format</td><td>0;10</td><td>SET OF CODES</td><td>C:CAPER<br/>S:SADR<br/>B:BOTH<br/>N:NONE<br/></td><td></td><td>This field will hold the value for the Army Extract format.</td></tr><tr><td>1</td><td>division</td><td>1;0</td><td>MULTIPLE</td><td><a href="100500_01.html">100500.01</a></td><td></td><td>Multiple containing data extract parameters and status information.For ADM 2.3, the extracts are SADR and TPOCS.</td></tr><tr><td>100</td><td>currently running adm s/w ver</td><td>VER;1</td><td>FREE TEXT</td><td></td><td></td><td>This field holds the active running ADM software version.</td></tr><tr><td>101</td><td>tpocs is ptax3 ready</td><td>VER;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Set this field to Yes (1) when the TPOCS servers have been updated toaccept provider taxonomy codes.  CHCS-ADM will check this field during thenightly ADM TPOCS task to determine if the changes for the ProviderTaxonomy III project should be implement for the data sent to TPOCS.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

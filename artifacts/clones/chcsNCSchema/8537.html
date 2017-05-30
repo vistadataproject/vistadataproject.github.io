@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DEERS GRADE RANK</h1></div><div id="results"><dl><dt>name</dt><dd>DEERS GRADE RANK</dd><dt>number</dt><dd>8537</dd><dt>location</dt><dd>^NDI(8537,</dd><dt>description</dt><dd>The DEERS GRADE RANK file uses the DEERS Branch of Service, RankCode, and Pay Grade to determine the Military Grade Rank (found in 8111)of the patient.  Used for both NED PIT message and incoming X12 271message.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name of the Rank, as found in the NED DD for X12 271</td></tr><tr><td>1</td><td>deers bos</td><td>0;2</td><td>SET OF CODES</td><td>A:ARMY<br/>H:USPHS<br/>F:AIR FORCE<br/>O:NOAA<br/>M:MARINE CORPS<br/>N:NAVY<br/>C:COAST GUARD<br/>D:SEC OF DEFENSE<br/>1:FOREIGN ARMY<br/>4:FOREIGN AF<br/>3:FOREIGN MC<br/>2:FOREIGN NAVY<br/>X:OTHER<br/></td><td></td><td>This is the DEERS Branch of Service, as sent in the X12 271message, that is associated with the Rank Code received</td></tr><tr><td>2</td><td>paygrade</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the paygrade associated with a particularmilitary rank.</td></tr><tr><td>3</td><td>code</td><td>0;4</td><td>FREE TEXT</td><td></td><td>D</td><td>This field contains the abbreviation for the military rank.</td></tr><tr><td>4</td><td>military grade rank</td><td>0;5</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains the pointer value in free text to Military Grade Rank file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PHARMACY BATCH</h1></div><div id="results"><dl><dt>name</dt><dd>PHARMACY BATCH</dd><dt>number</dt><dd>8204</dd><dt>location</dt><dd>^PSSBA(</dd><dt>description</dt><dd>This file contains the information about the batch of PharmacyOrders that are entered by Pharmacy's Technician and Clerks andverified by the Pharmacist.  This file and its cross references are generally manipulated   by functions in PSSBAT routine.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>batch id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This the ID of the batch that is created by the Pharmacy Thech. or Clerkwhen they enter new orders.</td></tr><tr><td>.02</td><td>start date</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>Start date and time of creation of the Pharmacy Batch after entering thefirst new order.</td></tr><tr><td>.03</td><td>stop date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>Stop date and time of closing the Pharmacy Batch after entering thelast new order.</td></tr><tr><td>.04</td><td>user</td><td>0;4</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>User # of the person who entered the orders for this batch.</td></tr><tr><td>.05</td><td>verification complete</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td>AVER</td><td>This field is set to Yes (1) if all the orders in this batch areverified by the Pharmacist.</td></tr><tr><td>.06</td><td>activation complete</td><td>0;6</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field is set to Yes (1) if all the orders in this batch are activated.</td></tr><tr><td>.07</td><td>division</td><td>0;7</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>Current Division of the user who is entering this batch of PharmacyOrders.</td></tr><tr><td>.08</td><td>clearance</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Clearance level of the user who created this batch (0 for Pharmacy Clerk,1 for Pharmacy Tech. and any number greater than 2 for Pharmacist).</td></tr><tr><td>1</td><td>order</td><td>1;0</td><td>MULTIPLE</td><td><a href="8204_01.html">8204.01</a></td><td></td><td>This multiple conatins information about the orders that are enteredfor the Pharmacy batch, by the Pharmacy's Tech or Clerk.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BD/URS RESPONSES</h1></div><div id="results"><dl><dt>name</dt><dd>BD/URS RESPONSES</dd><dt>number</dt><dd>8909.5</dd><dt>location</dt><dd>^XDW(8909.5,</dd><dt>description</dt><dd>This file contains the responses received from the Biometric Data/Upward Reporting System.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date of response(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>The date and time the response was written to the file.</td></tr><tr><td>.02</td><td>date posted(+)</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>The date and time the response was written to this file.</td></tr><tr><td>.03</td><td>sender</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>CHCS user who requested this information.</td></tr><tr><td>.04</td><td>type of response</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>The response type. For BD/URS, it should be always 'X'.</td></tr><tr><td>.05</td><td>type of transmission</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The transaction ID and type for this request. For BD/URS, it isalways 'AQCBB'.</td></tr><tr><td>.06</td><td>priority of transmission</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Priority at which this transmission was processed.</td></tr><tr><td>.07</td><td>discrepancy code</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The discrepancy code that was returned.</td></tr><tr><td>.08</td><td>patient</td><td>0;8</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>Name of the patient the request was made for.</td></tr><tr><td>.09</td><td>job number</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>The job number of the process.</td></tr><tr><td>.1</td><td>processing mode</td><td>0;10</td><td>SET OF CODES</td><td>0:Interactive<br/>1:Batched While Waiting<br/>2:Non-Interactive<br/></td><td></td><td>Mode in which the transaction was performed - interactive, batch, non-interactive.</td></tr><tr><td>.11</td><td>source</td><td>0;11</td><td>POINTER</td><td><a href="8907_7.html">8907.7</a></td><td></td><td>Identifies what CHCS functionality made the request.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

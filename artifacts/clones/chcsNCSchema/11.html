@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MARITAL STATUS</h1></div><div id="results"><dl><dt>name</dt><dd>MARITAL STATUS</dd><dt>number</dt><dd>11</dd><dt>location</dt><dd>^DIC(11,</dd><dt>description</dt><dd>This file contains a table of codes and descriptions for the patient's marital status.  It is a standard file (classified asGroup 1) and cannot be modified by the site.    SOURCE:  DMSSC, DATA ADMINISTRATION CONTRACT, MDA903-86-C-0215,           FINAL ADDENDUM TO THE AQCESS/CHCS FUNCTIONAL DESCRIPTION           FOR THE STANDARD REQUIREMENTS FOR THE INPATIENT DATA           RECORD FOR TASK ORDER NO. DAT2, 12 AUGUST 1988. The Master File Primary Key (Unique ID) for this file:        ABBREV(1)\NAME(.01)\99MAR</dd><dt>applicationGroups</dt><dd>PAD</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td> This field contains the text that describes the family member prefix. e.g. The text for abbreviation S is SINGLE,NEVER MARRIED </td></tr><tr><td>1</td><td>abbreviation</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td> This field contains the abbreviation of the text entered for maritalstatus.e.g. S is the abbreviation for SINGLE,NEVER MARRIED </td></tr><tr><td>8196</td><td>dba inactive flag</td><td>28;1</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td> This field is used to inactivate table entries that have become obsolete. </td></tr><tr><td>8197</td><td>deactivation date</td><td>28;2</td><td>DATE-TIME</td><td></td><td></td><td> This field is used in conjunction with DBA INACTIVE FLAG and records thedate that a table entry is made inactive. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

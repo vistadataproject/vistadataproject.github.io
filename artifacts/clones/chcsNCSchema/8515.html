@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PAS MAILERS DIVISION</h1></div><div id="results"><dl><dt>name</dt><dd>PAS MAILERS DIVISION</dd><dt>number</dt><dd>8515</dd><dt>location</dt><dd>^SDX(8515,</dd><dt>description</dt><dd>The PAS MAILERS file can be modified by the site or File & Table buildteam to customize the form letters that patients are sent to notify themthem of a Wait List Notification, No Show Notice, Strong No Show Notice,or Cancellation Letter. In a site with multiple Divisions each Divisioncan set up their versions of the standardized letters to be sent out.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>division(+)</td><td>0;1</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td>B</td><td>This field is a pointer to the Medical Center Division File (#40.8) andindicates the Division for which mailers are going to be generated.   EachDivision can have up to 6 different mailers as determined by the Type ofMailer field.</td></tr><tr><td>1</td><td>type of mailer</td><td>1;0</td><td>MULTIPLE</td><td><a href="8515_01.html">8515.01</a></td><td></td><td>This field is a pointer to the Mail Types File (#8519) and indicates thetype of Mailer to generate.</td></tr><tr><td>2</td><td>print mailer id</td><td>2;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field determines whether the unique Wait List Number will print onthe mailer.  If this field is set to YES, the number prints out.  If thisfield is set to no, it is suppressed.  It is recommend to print the uniqueWait List Number so the users can cross-check the Wait List against themaillers.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

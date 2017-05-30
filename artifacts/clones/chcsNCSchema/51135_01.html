@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GT EOD COMPLIANCE</h1></div><div id="results"><dl><dt>name</dt><dd>GT EOD COMPLIANCE</dd><dt>number</dt><dd>51135.01</dd><dt>location</dt><dd>^GT(51135.01,</dd><dt>description</dt><dd>This file stores the data for compliance with the Navy DQ standard forEnd-of-Day compliance, which specifies that clinics are to close out allappointments the day of the appointment (24/7 clinics have until 0600 thefollowing day to close out appointments). EOD compliance is tracked forlocation types 'C' and 'S' (clinics and APUs) for Navy clinic visits(excludes telephone consults and IBWA locations). The data in this file is populated automatically by the GTDQEODTroutine, as the GT NDQ EOD COMPLIANCE TASK option, tasked to run dailyat 0002; it should not be modified by other routines or by users. Tominimize the disk storage requirements, there is no 'B' cross referenceassociated with this file; reports referencing EOD compliance shouldjump to this file from the PATIENT APPOINTMENT file (#44.2).  The daily process that populates this global, evaluates EOD compliancefor appointments from the previous calendar day. Appointments that donot have a GT EOD COMPLIANCE record were entered into CHCS and backdatedusing EOD processing.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>appointment(+)</td><td>0;1</td><td>POINTER</td><td><a href="44_2.html">44.2</a></td><td></td><td>This field contains the IEN of the PATIENT APPOINTMENT record for which theEOD compliance was determined. This value is also the IEN for the record,which is DINUMed to the PATIENT APPOINTMENT file for ready access.</td></tr><tr><td>1</td><td>eod compliance(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:NONCOMPLIANT<br/>1:COMPLIANT<br/></td><td></td><td>This field contains the value determined for compliance with the BuMedEOD processing standard, and is used for producing Data Quality elements1a and 1b in the facility DQ manager's monthly DQ statement.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

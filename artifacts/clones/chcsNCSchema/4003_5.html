@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INTERFACE PURGE CONTROLLER</h1></div><div id="results"><dl><dt>name</dt><dd>INTERFACE PURGE CONTROLLER</dd><dt>number</dt><dd>4003.5</dd><dt>location</dt><dd>^INHPU(4003.5,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>overall purge date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the date/time of when the purge routine (INHPU) began tojob off its purge jobs.</td></tr><tr><td>.02</td><td>overall purge status</td><td>0;2</td><td>SET OF CODES</td><td>R:RUNNING<br/>C:COMPLETE<br/>S:SHUTDOWN<br/></td><td></td><td>The status indicated by this field is the overall for all purge jobs for the day.</td></tr><tr><td>.03</td><td>initiator duz</td><td>0;3</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>Initiator of the day's purge process.</td></tr><tr><td>.04</td><td>overall purge stop time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time all the child purge jobs have completed for the day.</td></tr><tr><td>.05</td><td>next task</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is the task number for the next run of the interface purge.</td></tr><tr><td>.06</td><td>job</td><td>JOB;0</td><td>MULTIPLE</td><td><a href="4003_51.html">4003.51</a></td><td></td><td>This multiple contains control information for each job. The PURGEJOBS field of the Interface Parameters file indicated the number ofjobs that can be used to purge records in the Universal Infterfacefile.  Job 15 is dedicated to the purging of Interface Error Filerecords.  Job 16 is dedicated to the purging of Interface Criteriafile records.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

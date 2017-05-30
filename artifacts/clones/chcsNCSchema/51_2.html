@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MEDICATION ROUTE</h1></div><div id="results"><dl><dt>name</dt><dd>MEDICATION ROUTE</dd><dt>number</dt><dd>51.2</dd><dt>location</dt><dd>^PS(51.2,</dd><dt>description</dt><dd> This file contains Medication Routes that are allowable forMED orders in physician medication order entry.The file contains 38 "standard" routes, defined by CHCS, plus routesthat are defined by the site.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the medication route; for example, ORAL.</td></tr><tr><td>1</td><td>abbreviation</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>This field should contain the abbreviation for the medication routeentered.  If an abbreviation is found for a medication route, theabbreviation will be printed on labels, MARs, views, etc.</td></tr><tr><td>2</td><td>routine</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a routine name associated with a medication route.</td></tr><tr><td>3</td><td>status</td><td>0;4</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>Set to ACTIVE if this route is a valid medication route. Setto INACTIVE if this route should no longer be used duringmedication order entry.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

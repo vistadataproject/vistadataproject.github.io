@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>North Chicago CHCS</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">North Chicago CHCS Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAIL MESSAGE SEARCH</h1></div><div id="results"><dl><dt>name</dt><dd>MAIL MESSAGE SEARCH</dd><dt>number</dt><dd>3.95</dd><dt>location</dt><dd>^XMUTIL("S",</dd><dt>description</dt><dd>This file is a utility file used to store search information created via theMail Message Search option (MSE) in MailMan.  Information such as subjectcontains, sender, from and to dates, and basket is temporarily stored by userin this file.  The data is then removed from the file once the search iscomplete and the user exits the option.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>mail box(+)</td><td>0;1</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td>This is the User File IEN of the user conducting the search.</td></tr><tr><td>.02</td><td>subject contains</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is text which must be contained in the subject not necessarilystarting at the first character.  The case of the text is unimportant sincea case-independent search is done.</td></tr><tr><td>.03</td><td>include deleted messages</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>If this field is set to YES, then the search will include messages ofwhich you were a recipient but no longer reside in your mail box.It will not find messages from which you have TERMINATED.WARNING:  This may make the search take a very long time!</td></tr><tr><td>1</td><td>sender</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the sender of the message.  If this field is entered,then only messages originally sent by this user will be included. For remote senders, enter the entire username and domain name.  For localsenders, MailMan will perform a lookup in the local User file. For example, you may enter USERA for local user "UserA,Test", or you mayenter TEST.USERA@REMOTA.COMPANY.COM for remote user"Test.UserA@RemoteA.Company.Com".</td></tr><tr><td>2.1</td><td>from date</td><td>2;1</td><td>DATE-TIME</td><td></td><td></td><td>If a value is entered for this field, only messages originating on or afterthis date will be searched.</td></tr><tr><td>2.2</td><td>to date</td><td>2;2</td><td>DATE-TIME</td><td></td><td></td><td>If a value is entered for this field, only messages originating on or beforethis date will be searched.</td></tr><tr><td>3</td><td>basket</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>You may enter the name of one of your mail baskets or leave this fieldblank and all of your mail baskets will be searched.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>
