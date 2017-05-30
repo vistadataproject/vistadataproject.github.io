@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QA PATIENT INCIDENT REVIEW</h1></div><div id="results"><dl><dt>name</dt><dd>QA PATIENT INCIDENT REVIEW</dd><dt>number</dt><dd>742</dd><dt>location</dt><dd>^QA(742,</dd><dt>description</dt><dd>Contains the data associated to a patient who is involved in an incident.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This is the patient involved in the incident.</td></tr><tr><td>.02</td><td>patient id</td><td>0;2</td><td>FREE TEXT</td><td></td><td>BPID</td><td>This field indentifies the patient without exposing his/her identity.</td></tr><tr><td>.03</td><td>case number</td><td>0;3</td><td>POINTER</td><td><a href="742_4.html">742.4</a></td><td>BCS</td><td>Indicates the incident case number.</td></tr><tr><td>.04</td><td>date of admission</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>Indicates the date of admission to the hospital.</td></tr><tr><td>.05</td><td>patient type</td><td>0;5</td><td>SET OF CODES</td><td>0:OUTPATIENT<br/>1:INPATIENT<br/></td><td>BPT</td><td>Indicates whether the patient is an inpatient.</td></tr><tr><td>.06</td><td>ward/clinic</td><td>0;6</td><td>POINTER</td><td><a href="44.html">44</a></td><td>BWD</td><td>Indicates the ward/clinic the patient belongs to.</td></tr><tr><td>.07</td><td>treating specialty</td><td>0;7</td><td>POINTER</td><td><a href="45_7.html">45.7</a></td><td>BTS</td><td>Contains the Treating Specialty for the patient.</td></tr><tr><td>.08</td><td>service</td><td>0;8</td><td>POINTER</td><td><a href="730.html">730</a></td><td>BSER</td><td>Contains the Service for the patient.</td></tr><tr><td>.09</td><td>fall assessment score</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>Contains the Assessment Score for a fall.</td></tr><tr><td>.1</td><td>severity level</td><td>0;10</td><td>SET OF CODES</td><td>0:NO INJURY OR DISABILITY<br/>1:MINOR<br/>2:MAJOR<br/>3:DEATH<br/></td><td></td><td>Contains the Severity Level of the incident.</td></tr><tr><td>.11</td><td>medication errors</td><td>0;11</td><td>POINTER</td><td><a href="742_13.html">742.13</a></td><td></td><td>Contains the Medication Errors for the patient.</td></tr><tr><td>.12</td><td>responsible service</td><td>1;0</td><td>MULTIPLE</td><td><a href="742_01.html">742.01</a></td><td></td><td>Enter the Responsible Service(s) for the incident.</td></tr><tr><td>.13</td><td>patient record status</td><td>0;12</td><td>SET OF CODES</td><td>1:OPEN<br/>0:CLOSED<br/>-1:DELETED<br/></td><td>BPRS</td><td>Contains the status of the patient record.  '1' for open, '0' for closed, and '-1' for deleted.</td></tr><tr><td>.14</td><td>medication errors (other)</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>Contains the type of medication error not found in the QA Medication Errorfile.</td></tr><tr><td>.15</td><td>incident related diagnosis</td><td>2;0</td><td>MULTIPLE</td><td><a href="742_02.html">742.02</a></td><td></td><td>Contains the appropriate patient diagnosis to date for the patient.</td></tr><tr><td>50</td><td>patient audit trail</td><td>0;14</td><td>POINTER</td><td><a href="740_5.html">740.5</a></td><td></td><td>Files changes in the QA patient Event file in the QA Audit file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

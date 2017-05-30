@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FISCAL STACKED DOCUMENTS</h1></div><div id="results"><dl><dt>name</dt><dd>FISCAL STACKED DOCUMENTS</dd><dt>number</dt><dd>421.8</dd><dt>location</dt><dd>^PRC(421.8,</dd><dt>description</dt><dd>     This file will hold the printouts that are automatically generatedwithin IFCAP. The user may then select to print from this file at a laterdate/time.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>internal record no.(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>     This field will hold the record number in external format.</td></tr><tr><td>1</td><td>type</td><td>0;2</td><td>SET OF CODES</td><td>1:PO<br/>2:RR<br/>3:MO<br/>4:2237<br/></td><td></td><td>    This field is used to store the type of document to print inFISCAL. (Purchase Orders, Receiving Reports, 1358s and 2237s)</td></tr><tr><td>2</td><td>routine</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>    This field stores the routine that will be executed to print thedocument in Fiscal.</td></tr><tr><td>4</td><td>variable</td><td>1;0</td><td>MULTIPLE</td><td><a href="421_84.html">421.84</a></td><td></td><td>     This field is used to store the variables that will be used to printthe document.</td></tr><tr><td>5</td><td>date processed</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>     This field is used to store the date that the document was created.</td></tr><tr><td>6</td><td>external record no.</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>     This field is used to store the .01 field from either file 442 or 410which is the record number for the document.</td></tr><tr><td>7</td><td>device</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>     This field is used to store the output device from file 411 forthe corresponding site and type of document.</td></tr><tr><td>8</td><td>printed</td><td>0;7</td><td>DATE-TIME</td><td></td><td>AD</td><td>     This field stores the date that the document was last printed.</td></tr><tr><td>9</td><td>site</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>     This field stores the site number of the site that generated thedocument.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

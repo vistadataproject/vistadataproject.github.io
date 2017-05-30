@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AMENDMENTS TO DELIVERY SCHEDULES</h1></div><div id="results"><dl><dt>name</dt><dd>AMENDMENTS TO DELIVERY SCHEDULES</dd><dt>number</dt><dd>441.7</dd><dt>location</dt><dd>^PRC(441.7,</dd><dt>description</dt><dd>This file contains the delivery locations and dates for displayon purchase orders.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>order number (pat)(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the entire PAT (Pending Accounting Transaction) numberthat must be a Purchase Order or Requisition.</td></tr><tr><td>1</td><td>item(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the Line-item number for a Purchase Order or Requisition.</td></tr><tr><td>2</td><td>delivery date(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date on which delivery of the item (s) is to be made.</td></tr><tr><td>3</td><td>location for delivery(+)</td><td>0;4</td><td>POINTER</td><td><a href="410_8.html">410.8</a></td><td></td><td>This is the location to which the item should be delivered.</td></tr><tr><td>4</td><td>qty to be delivered(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the quantity to be delivered to the specified locationon the specified date.</td></tr><tr><td>5</td><td>delete flag</td><td>0;6</td><td>SET OF CODES</td><td>D:DELETE<br/></td><td></td><td>It is a flag to delete the amendments to delivery schedules.</td></tr><tr><td>6</td><td>permanent entry</td><td>0;7</td><td>POINTER</td><td><a href="442_8.html">442.8</a></td><td></td><td>It is a permanent corresponding entry in File 442.8</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

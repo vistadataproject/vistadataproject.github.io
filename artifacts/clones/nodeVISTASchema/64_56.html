@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REPORT NAME</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="64_5.html">64.5</a></dd><dt>name</dt><dd>REPORT NAME</dd><dt>number</dt><dd>64.56</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>report name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is an arbitrary report name.</td></tr><tr><td>1</td><td>device(+)</td><td>.1;1</td><td>POINTER</td><td><a href="3_5.html">3.5</a></td><td></td><td>This field should contain the name(s) of the printers that are usedto print the cumulative.  A starting and ending location needs to bedefined for each device.  This range should include all locationsthat desire cumulatives.  An example of starting and ending locationsfor a system using one printer to print all cumulatives would be:       STARTING LOCATION:           (leave blank)       ENDING LOCATION: ZZZZZZ</td></tr><tr><td>2</td><td>manual print</td><td>.1;2</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>A "YES" in this field will cause the locations defined in this reportnot to print with the automatic queuing capabilities of the cumulativereport.  To print a report with the manual designation of this field,use the option LRAC MANUAL and selectively queue this report.</td></tr><tr><td>3</td><td>file room report</td><td>.1;3</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field is used to designate a report to print a file room location.It is used in conjunction with fields #4, "FILE ROOM" and #17 "SEPARATEFILE ROOM". It allows the cumulative to identify those reports which shouldbe run when a site wishes to print the file room reports and they are doingso on a schedule separate from the regular cumulative. See description for field #17, "SEPARATE FILE ROOM", for additional informationon using this field.</td></tr><tr><td>5</td><td>starting location</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is where the starting location is defined for a device printing thecumulative report.  If this field is left blank, then the report will start at the first location.</td></tr><tr><td>10</td><td>ending location(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is where the ending location is defined for a device printing thecumulative report.</td></tr><tr><td>15</td><td>last location</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field is used by the cumulative routines to specify thelast printed location for this device. DO NOT FILL IN THIS FIELD AS PART OF THE INITIAL FILE SET-UP.</td></tr><tr><td>17</td><td>last patient</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field is used by the cumulative routines to specify thelast printed patient for this device.  DO NOT FILL IN THISFIELD AS PART OF THE INITIAL FILE SET-UP.</td></tr><tr><td>18</td><td>last lrdfn</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field is used by the cumulative routines to specify thelast printed DFN.  DO NOT FILL IN THIS FIELD AS PART OF THEINITIAL FILE SET-UP.</td></tr><tr><td>25</td><td>starting time</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>This field is used by the cumulative routines to give thestarting time of the cumulative for this device.  DO NOTFILL IN THIS FIELD AS PART OF THE INITIAL FILE SET-UP.</td></tr><tr><td>26</td><td>ending time</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>This field is used by the cumulative routines to give theending time of the cumulative for this device.  DO NOTFILL IN THIS FIELD AS PART OF THE INITIAL FILE SET-UP.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > POC DAILY ACTIVITY EXTRACTION</h1></div><div id="results"><dl><dt>name</dt><dd>POC DAILY ACTIVITY EXTRACTION</dd><dt>number</dt><dd>451.7</dd><dt>location</dt><dd>^PRSN(451.7,</dd><dt>description</dt><dd>The file stores the released POC Daily Time Records from thePOC DAILY TIME RECORDS (#451) FILE for extracting by other applications.Entries are set up without user interactions.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>sequence number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the sequence number of the entry and it equals to its IEN of the entry.</td></tr><tr><td>1</td><td>nurse institution(+)</td><td>0;2</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This is a pointer to the institution file (#4).</td></tr><tr><td>2</td><td>station number(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the station number, field 99 of file 4.</td></tr><tr><td>3</td><td>time card release version #</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the Time Card released version number assigned during releasing.</td></tr><tr><td>4</td><td>nurse id</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the identification of the nurse.</td></tr><tr><td>5</td><td>paid employee ien</td><td>0;6</td><td>POINTER</td><td><a href="450.html">450</a></td><td></td><td>This is the IEN of the Paid Employee File of the nurse.</td></tr><tr><td>6</td><td>poc time record date</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This the POC Time Record YYYYMMDD.</td></tr><tr><td>7</td><td>start time</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This is the start time of a time segment. The start time is in 4-digitmilitary time format.</td></tr><tr><td>8</td><td>stop time</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the end time of a time segment. The end time is in 4-digit militarytime format.</td></tr><tr><td>9</td><td>poc type of time</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This is a POC type of time code from the File #451.4.</td></tr><tr><td>10</td><td>poc nurse location(+)</td><td>0;11</td><td>POINTER</td><td><a href="211_4.html">211.4</a></td><td></td><td>This is the nurse location where the nurse works.</td></tr><tr><td>11</td><td>overtime mandatory</td><td>0;12</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>The value is 'Y' if overtime is mandatory. The value is 'N' or null ifovertime is not mandatory.</td></tr><tr><td>12</td><td>overtime reason</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>This is a 2-character code for the overtime reason in File #451.6 Reasonfor Overtime.</td></tr><tr><td>13</td><td>poc type of work</td><td>0;14</td><td>FREE TEXT</td><td></td><td></td><td>This is a 2-character code of the File #451.5 Type of Work.</td></tr><tr><td>14</td><td>release date</td><td>0;15</td><td>DATE-TIME</td><td></td><td></td><td>This is the release date of the POC DAILY TIME RECORD for data extraction.</td></tr><tr><td>15</td><td>nurse t&l unit</td><td>0;16</td><td>POINTER</td><td><a href="455_5.html">455.5</a></td><td></td><td>This is the nurse T&L UNIT at the time of Approval of POC Daily Time Records.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

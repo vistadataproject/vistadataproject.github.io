@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HDIS PARAMETER</h1></div><div id="results"><dl><dt>name</dt><dd>HDIS PARAMETER</dd><dt>number</dt><dd>7118.29</dd><dt>location</dt><dd>^HDISF(7118.29,</dd><dt>description</dt><dd>This file contains system specific data.  On the central server(s) this file contains data specific to the systems communicating to it/them and variable information required when processing facility data.  On VistAsystems this file contains data specific to the facility, such as thelocation(s) of the central server(s).  The local system is typically thefirst entry in the file but there is no requirement for this to be true.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>system(+)</td><td>0;1</td><td>POINTER</td><td><a href="7118_21.html">7118.21</a></td><td>B</td><td>The VAMC system that the parameter values are for</td></tr><tr><td>.02</td><td>system type</td><td>0;2</td><td>SET OF CODES</td><td>1:CLIENT<br/>2:SERVER<br/></td><td></td><td>Denotes type of system</td></tr><tr><td>11</td><td>disable vuid activity</td><td>1;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Flag denoting if all VUID related activity should be disabled</td></tr><tr><td>12</td><td>vuid server location</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>Where the VUID Server is located.  This could be a MailMan domain (ex: FORUM.VA.GOV) or a TCP/IP address (ex: 127.0.0.1).</td></tr><tr><td>13</td><td>vuid server connection type</td><td>1;3</td><td>SET OF CODES</td><td>1:MAILMAN<br/></td><td></td><td>Type of connection to use when communicating with the VUID Server</td></tr><tr><td>21</td><td>vuid server option</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>Name of MailMan server type option that message should be forwarded to</td></tr><tr><td>31</td><td>disable status updates</td><td>3;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Flag denoting if sending of status update messages to the Status Server should be disabled</td></tr><tr><td>32</td><td>status server location</td><td>3;2</td><td>FREE TEXT</td><td></td><td></td><td>Where the Status Server is located.  This could be a MailMan domain (ex: FORUM.VA.GOV) or a TCP/IP address (ex: 127.0.0.1).</td></tr><tr><td>33</td><td>status server connection type</td><td>3;3</td><td>SET OF CODES</td><td>1:MAILMAN<br/></td><td></td><td>Type of connection to use when communicating with the Status Server</td></tr><tr><td>41</td><td>status server option</td><td>4;1</td><td>FREE TEXT</td><td></td><td></td><td>Name of MailMan server type option that message should be forwarded to</td></tr><tr><td>51</td><td>last non-standard vuid</td><td>5;1</td><td>FREE TEXT</td><td></td><td></td><td>Last non-standard VUID assigned by centralized VUID Server</td></tr><tr><td>52</td><td>ending non-standard vuid</td><td>5;2</td><td>FREE TEXT</td><td></td><td></td><td>Last non-standard VUID that can be assigned by centralized VUID Server</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

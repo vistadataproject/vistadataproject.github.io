@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LTC COPAY CLOCK</h1></div><div id="results"><dl><dt>name</dt><dd>LTC COPAY CLOCK</dd><dt>number</dt><dd>351.81</dd><dt>location</dt><dd>^IBA(351.81,</dd><dt>description</dt><dd>DO NOT delete entries in this file.  DO NOT edit data in this file with VAFile Manager. Entries in this file will be added and updated my menu options, event triggers, and a nightly background job.  Entries in this file will not be deleted. This file stores Long Term Care billing information that is used to make abilling determination for LTC rates. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>facility clock number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This number is formed by Concatenating the Facility Site number with thenext available entry number in the file.</td></tr><tr><td>.02</td><td>patient(+)</td><td>0;2</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>This is the patient that is associated with this LTC clock.</td></tr><tr><td>.03</td><td>clock begin date(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the beginning date of the clock entry.</td></tr><tr><td>.04</td><td>clock expiration date(+)</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date this LTC clock will expire.  After which a new clock entry will be created.</td></tr><tr><td>.05</td><td>status(+)</td><td>0;5</td><td>SET OF CODES</td><td>1:OPEN<br/>2:CLOSED<br/>3:CANCELLED<br/></td><td></td><td>This is the current status of this LTC clock.</td></tr><tr><td>.06</td><td>exempt days remaining(+)</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the number of free (exempt) days that have not been used yet.</td></tr><tr><td>.07</td><td>current events date</td><td>0;7</td><td>DATE-TIME</td><td></td><td>AD</td><td>This is a flag indicating this patient needs to be reviewed for LTC transactions.  The date stored here is the earliest date to review from.</td></tr><tr><td>1</td><td>exempt day number</td><td>1;0</td><td>MULTIPLE</td><td><a href="351_811.html">351.811</a></td><td></td><td></td></tr><tr><td>4.01</td><td>user adding entry(+)</td><td>4;1</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the name of the person who created the entry.</td></tr><tr><td>4.02</td><td>date entry added(+)</td><td>4;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the entry was added.</td></tr><tr><td>4.03</td><td>user last updating</td><td>4;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the name of the last person to update this field.</td></tr><tr><td>4.04</td><td>date last updated</td><td>4;4</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the last date that this entry was updated.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

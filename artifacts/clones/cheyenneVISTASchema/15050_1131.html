@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SUBSCRIPTS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="15050_113.html">15050.113</a></dd><dt>name</dt><dd>SUBSCRIPTS</dd><dt>number</dt><dd>15050.1131</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>expression(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The Expression to be used for this Subscript in the Storage Map.This Expression can be a String, e.g. "5" or "B", a reference to afield with curly braces, e.g. "{Expression}", or a reference to aFileMan File with a preceding "#", e.g. "#5" (this would be areference to the STATE file Class, whose full name would be resolvedat runtime, depending on the FLAGS and PACKAGE variables passed).</td></tr><tr><td>.02</td><td>loop init value</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The Loop Initialization Value used by the Storage Map for this Subscript,if applicable.FileMan Data Maps include a '0' (zero) node that contains no relevantdata for an individual row. Setting the LoopInitValue=0 instead of the  default ("") means that this '0' node is skipped.</td></tr><tr><td>.03</td><td>stop expression</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The Stop Expression used by the Storage map for this Subscript, ifapplicable.FileMan Data Maps often contain Index subscripts held at the samelogical level as data. The Index subscripts are non-numeric, e.g. "B",whereas the Data level subscripts are always numeric. Using a StopExpression of "'+{Lx}" (where {Lx} is the appropriate subscript levelvariable) ensures that the loop quits when there are no more data rows.</td></tr><tr><td>.04</td><td>field number</td><td>0;4</td><td>NUMERIC</td><td></td><td>C</td><td>The Fileman Field Number that this Expression is associated with,where applicable.When a Class is being compiled using just a subset of the fields,e.g. LIST array passed in, this Field is used to determine if thisIndex Map should be included in the Class.</td></tr><tr><td>.05</td><td>alternate expression</td><td>0;5</td><td>FREE TEXT</td><td></td><td>D</td><td>An Alternate Expression for this Expression, where applicable.This Field is used for Indexed Pointer Fields. The Alternate Expressionwill usually have "ID" appended, e.g. "{State}" and "{StateID}".If FLAGS contains "E", then a Map will be created for this Class using thedefault Expression. If FLAGS contains "P" a Map will be created using theAlternate Expression. If FLAGS contains both "E" and "P", then both Mapswill be created, BUT if FLAGS contains neither "E" nor "P" this Storage Mapwill NOT be created at all.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

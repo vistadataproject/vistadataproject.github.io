@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VERIFIED FORUM PATCHES</h1></div><div id="results"><dl><dt>name</dt><dd>VERIFIED FORUM PATCHES</dd><dt>number</dt><dd>50000000</dd><dt>location</dt><dd>^A5APATCH(</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patch number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the patch designator as captured from the patch module on FORUM</td></tr><tr><td>.02</td><td>package name</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the package name derived from the patch message and should ofcourse relate to entries in the Package file (9.4)</td></tr><tr><td>.03</td><td>subject</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the subject as derived form the Forum patch message and shouldto some extent be a brief description of what the patch fixes.</td></tr><tr><td>.04</td><td>date applied to production</td><td>0;4</td><td>DATE-TIME</td><td></td><td>AP</td><td></td></tr><tr><td>.05</td><td>date entered(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>.06</td><td>date verified</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>.07</td><td>*category</td><td>0;7</td><td>FREE TEXT</td><td></td><td>AD</td><td>This explains if the patch is for routines, data dictionaries, a patchto a patch, informational etc..  It is derived from the catefory fieldof the patch message from Forum.</td></tr><tr><td>.08</td><td>package namespace</td><td>0;8</td><td>FREE TEXT</td><td></td><td>AC</td><td>This field contains the package namespace derived from the Forum patchmessage and should be from 2 to 4 characters and exist in the packagefile (9.4).</td></tr><tr><td>.09</td><td>sequence number</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>This is the sequence number assigned by the patch module on Forum. Itreflects the order in which the patches for a particular package werereleased and hence the order in which they should be installed.</td></tr><tr><td>.11</td><td>priority</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>Derived from the priority of the patch message from Forum.  Shouldreflect either emergency or mandatory (priorities as of 1-93).</td></tr><tr><td>1</td><td>associated patches</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr><tr><td>2</td><td>text of patch</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr><tr><td>3</td><td>routine</td><td>3;0</td><td>MULTIPLE</td><td><a href="50000000_03.html">50000000.03</a></td><td></td><td></td></tr><tr><td>4</td><td>category</td><td>4;0</td><td>MULTIPLE</td><td><a href="50000000_04.html">50000000.04</a></td><td></td><td></td></tr><tr><td>99</td><td>package sequence</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

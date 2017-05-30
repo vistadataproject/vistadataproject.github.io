@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HL7 MONITOR MASTER JOB</h1></div><div id="results"><dl><dt>name</dt><dd>HL7 MONITOR MASTER JOB</dd><dt>number</dt><dd>776.2</dd><dt>location</dt><dd>^HLEV(776.2,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>creation time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field holds the time when the entry in this file was created (at the beginning of the running of the background master job.)</td></tr><tr><td>2</td><td>completion time</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field holds the time when the master job completed.</td></tr><tr><td>3</td><td>timestamp</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>Periodically, when the master job is running, this timestamp is refreshed.  Normally, this timestamp will be equal to the completion time of the master job.</td></tr><tr><td>4</td><td>status</td><td>0;4</td><td>SET OF CODES</td><td>E:ERRORED<br/>F:FINISHED<br/>Q:QUEUED<br/>R:RUNNING<br/>P:PARAMETER STOP<br/>S:STOP REQUESTED<br/>A:ABORTED-NOT RUN<br/></td><td></td><td>This field holds the status of the master job.</td></tr><tr><td>5</td><td>task number</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field holds the task number for the background master job.</td></tr><tr><td>6</td><td>queue time</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>When the master job starts, as it's first action, it queues the next master job for a future time REQUEUE MINUTES in the future.  At that time, an entry is made in this file and the "future time" recorded in this field.</td></tr><tr><td>7</td><td>queue person</td><td>0;7</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field holds the DUZ of the person who started the master job the first time.  (From that time on, that person's DUZ will remain associated with all future master jobs.)</td></tr><tr><td>8</td><td>start time</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>Master jobs are queued to a future time.  When these jobs activate, the time "now" is recorded in this field.</td></tr><tr><td>50</td><td>run diary</td><td>50;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field holds information about the master job process, and cannot be modified by non-VistA HL7 applications.</td></tr><tr><td>51</td><td>events checked</td><td>51;0</td><td>MULTIPLE</td><td><a href="776_2051.html">776.2051</a></td><td></td><td>When the master job runs, it checks all existing event monitors in the HL Event Monitor file (#776.1).  One entry in this Events Checked multiple ismade for every monitor found.  (See the fields in this multiple for additional information.)</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

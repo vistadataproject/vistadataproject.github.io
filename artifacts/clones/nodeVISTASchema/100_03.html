@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER REASON</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER REASON</dd><dt>number</dt><dd>100.03</dd><dt>location</dt><dd>^ORD(100.03,</dd><dt>description</dt><dd>This file is used to define the possible reasons for DC'ing/cancellingan order.  The entries are identified by package so that each packagecan have their own set of reasons.  Sites may wish to modify theentries in this file to fit their needs.  It is important to maintainthe correct links to the Radiology Reason file if modifications aremade.  These links are maintained in the CODE field.  For Radiologyreasons, the code field is the internal # of the radiology reason filefollowed by the characters RA. This file points the the Nature of Order file.  This relationshipis what identifies the appropriate actions to take for any DC Reason.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the DC Reason.</td></tr><tr><td>.03</td><td>synonym</td><td>0;3</td><td>FREE TEXT</td><td></td><td>S</td><td>This is the synonym for this reason and is used on a file lookup.</td></tr><tr><td>.04</td><td>inactive</td><td>0;4</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>This field is used to inactivate a DC Reason.</td></tr><tr><td>.05</td><td>package</td><td>0;5</td><td>POINTER</td><td><a href="9_4.html">9.4</a></td><td></td><td>This is the package that this reason applies to.</td></tr><tr><td>.06</td><td>code</td><td>0;6</td><td>FREE TEXT</td><td></td><td>C</td><td>This is a code that is used to identify this DC Reason.This field is not manditory.  If a code is not defined, then the internalnumber of the file entry is used to identify this reason.  Radiologyuses this field for it's reasons to identify the entry with it'scorresponding entry in the Radiology Reasons file.</td></tr><tr><td>.07</td><td>nature of activity(+)</td><td>0;7</td><td>POINTER</td><td><a href="100_02.html">100.02</a></td><td></td><td>This field is used to categorize DC reasons into types that OE/RRcan take action on.  The actions and types are defined in theNature of order file.</td></tr><tr><td>.08</td><td>message status</td><td>0;8</td><td>POINTER</td><td><a href="100_01.html">100.01</a></td><td></td><td>This field is used to identify the status an order will be set towhen this order reason is selected.  This is currently used bybackdoor lab options when orders/accessions are canceled.  If the fieldis blank, lab sends the HL7 status update message with a status of DC(the default); otherwise it will use the status in this field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

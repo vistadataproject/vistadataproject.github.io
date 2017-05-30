@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COLUMN HEADERS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="101_24.html">101.24</a></dd><dt>name</dt><dd>COLUMN HEADERS</dd><dt>number</dt><dd>101.243</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>column headers</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>These are the column headings used on a report in ListView format.</td></tr><tr><td>.02</td><td>visible</td><td>0;2</td><td>SET OF CODES</td><td>0:YES<br/>1:NO<br/></td><td></td><td>This field determines the visible property of the column.</td></tr><tr><td>.03</td><td>sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td>C</td><td>This is the sequence for the column header.</td></tr><tr><td>.04</td><td>type</td><td>0;4</td><td>SET OF CODES</td><td>0:SINGLE PIECE VALUE<br/>1:WORD PROCESSING<br/></td><td></td><td>This field identifies columns that contain multiple lines of text.</td></tr><tr><td>.05</td><td>include on detail</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine what data to include in the details ofa report.</td></tr><tr><td>.06</td><td>print length</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the field length used when printing this column on a report.</td></tr><tr><td>.07</td><td>include on print</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field determines which columns are included when a printout isrequested.</td></tr><tr><td>.08</td><td>print title</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This field is used when printing this field in lieu of the Column Header.</td></tr><tr><td>.09</td><td>data type</td><td>0;9</td><td>SET OF CODES</td><td>0:FREE TEXT<br/>1:NUMERIC<br/>2:DATE/TIME<br/></td><td></td><td>This is the data type of the column.  It is used when sorting columns.The default data type is 0 - FREE TEXT.  If no value is entered, it isassumed to be FREE TEXT.</td></tr><tr><td>.1</td><td>width</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>This field is for the column width.  No value needs to be entered becausethe value is actually obtained from a User level parameter.  The fieldis defined here to reserve the 10 piece of this node so that futurefield definitions won't break the RPC used in CPRS to get column propertieswhere the width is stored in the 10 piece.</td></tr><tr><td>1</td><td>hdr modifier</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is code executed when HDR data needs to be modified.When this field is executed, the variable ORX will have the valuepassed in from the HDR.  If this value needs to be manipulated, set thenew value into ORX.  If the value is ignored (not to be displayed),then set the value of ORX="-1-"</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

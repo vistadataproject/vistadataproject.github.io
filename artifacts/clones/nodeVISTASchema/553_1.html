@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CMOP QUERY</h1></div><div id="results"><dl><dt>name</dt><dd>CMOP QUERY</dd><dt>number</dt><dd>553.1</dd><dt>location</dt><dd>^PSX(553.1,</dd><dt>description</dt><dd>This file is used by the Consolidated Mail Outpatient Pharmacy system totrack query data exchanges between the automated system and the DHCP CMOP host facility. Data in this file is maintained by the Consolidated MailOutpatient Pharmacy software and must not be edited using VA FileMan.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>query id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>The number of the query.      </td></tr><tr><td>1</td><td>query date/time</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>The date/time the Query request was sent to the non-DHCP system.</td></tr><tr><td>2</td><td>acknowledged date/time</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The date/time the non-DHCP system acknowledgement was received.</td></tr><tr><td>3</td><td>completed date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td>C</td><td>Date/time the non-DHCP system returned an 'End of Transmission' response to the query request.</td></tr><tr><td>4</td><td>status</td><td>0;5</td><td>SET OF CODES</td><td>0:INITIATED<br/>1:COMPLETED<br/>2:NO DATA AVAILABLE<br/>3:NO ACKNOWLEDGEMENT RECEIVED<br/>4:ABORTED/INVALID RESPONSE<br/>5:IN PROGRESS<br/></td><td></td><td>This field indicates the current status of the query request.</td></tr><tr><td>5</td><td>rxs received</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td> Total number of Rx's received from this query.</td></tr><tr><td>6</td><td>filer dt/tm</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>The date and time the background filer filed the data from this query in the CMOP Master Database file.            </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

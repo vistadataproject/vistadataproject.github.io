@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FUND CONTROL POINT</h1></div><div id="results"><dl><dt>name</dt><dd>FUND CONTROL POINT</dd><dt>number</dt><dd>420</dd><dt>location</dt><dd>^PRC(420,</dd><dt>description</dt><dd>  This file contains parameters that allow the IFCAP user to define and maintain separate balances for funding at their station.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>station name(+)</td><td>0;1</td><td>POINTER</td><td><a href="411.html">411</a></td><td>B</td><td>This is a pointer to the Admin. Activity Site Parameter file, #411. This field contains the station number of each station for which yourfiscal office is responsible.</td></tr><tr><td>1</td><td>control point name</td><td>1;0</td><td>MULTIPLE</td><td><a href="420_01.html">420.01</a></td><td></td><td>This is the name of the Fund Control Point.</td></tr><tr><td>2</td><td>fund releasing official</td><td>2;0</td><td>MULTIPLE</td><td><a href="420_05.html">420.05</a></td><td></td><td>This is the official authorized to release funds.</td></tr><tr><td>3</td><td>station overcommit switch</td><td>0;2</td><td>SET OF CODES</td><td>0:OVERCOMMIT NOT ALLOWED FOR ALL FCP'S<br/>1:CURRENT QUARTER OVERCOMMIT ALLOWED<br/>2:FUTURE QUARTERS OVERCOMMIT ALLOWED<br/>3:CURRENT AND FUTURE QUARTERS OVERCOMMIT ALLOWED<br/>4:INDIVIDUAL CP SWITCH USED<br/>5:OVERCOMMIT ALLOWED<br/></td><td></td><td>This is the set of codes for setting the overcommit switch for a controlpoint.</td></tr><tr><td>3.1</td><td>station rollover of eoq bal.</td><td>0;8</td><td>SET OF CODES</td><td>2:ALL FCPs CAN SPEND PRIOR FUNDS<br/>3:INDIVIDUAL FCP ROLLOVER EOQ BALANCE IN EFFECT<br/></td><td></td><td>This is used to store roll over data.</td></tr><tr><td>4</td><td>supply fund cap</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field contains the TOTAL SUPPLY FUND CAP for the station.</td></tr><tr><td>5</td><td>inventory value</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field contains the current value of the inventory on hand</td></tr><tr><td>6</td><td>due-in value</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field contains the value of all orders due in ordered under thesupply fund.</td></tr><tr><td>7</td><td>total cap available</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field contains the total available cap at the station for placingorders within supply fund.</td></tr><tr><td>8</td><td>print on demand</td><td>0;7</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field indicates whether the user wishes to print on demand, using yes or no as an entry.</td></tr><tr><td>9</td><td>station open quarter date</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td>This is the most recent open quarter date. The date is always the firstday of a quarter.</td></tr><tr><td>10</td><td>edi order release</td><td>3;1</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This is used to release EDI orders to vendors directly without fiscalreview if the data is 'Y' for yes.</td></tr><tr><td>11</td><td>site all/delivery order switch</td><td>3;2</td><td>SET OF CODES</td><td>A:ALL ORDERS<br/>D:DELIVERY ORDERS ONLY<br/></td><td></td><td>This is used to release orders directly without fiscal review.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

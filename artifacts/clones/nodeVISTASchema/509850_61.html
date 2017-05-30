@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROCEDURE CODE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="509850_6.html">509850.6</a></dd><dt>name</dt><dd>PROCEDURE CODE</dd><dt>number</dt><dd>509850.61</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>procedure code</td><td>0;1</td><td>POINTER</td><td><a href="509850_4.html">509850.4</a></td><td>B</td><td>The PROCEDURE CODE field contains a CPT procedure code for this exam.  QUASAR accepts multiple CPT-4 codes and displays a sequential count of entered procedures.  QUASAR allows the same CPT-4 code to be entered more than once if the second and subsequent codes are enclosed in quotation marks (e.g., "92507").  If this is not done, QUASAR assumes that the entry is a mistake and displays the entered code followed by double slant bars (e.g., 92507//).  This signals you that this code has already been entered for this visit.</td></tr><tr><td>.02</td><td>*modifier</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The MODIFIER field contains the letter modifiers for some CPT-4 procedure codes.  The CPT-4 code set does not provide codes to describe the full scope and complexity of procedures performed by audiologists and speech-language pathologists.  Recognizing this deficiency, modifiers are provided to more fully describe procedures or to provide procedures where none exist. The MODIFIER field has been marked for deletion.  This field is not used by QUASAR V. 3.0.  Eighteen months after the release of QUASAR 3.0, this field can be removed.Any Modifiers already defined for Procedure codes pre Version 3.0 will however be retained for the integrity of historic data.</td></tr><tr><td>.03</td><td>volume(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>A procedure may be carried out multiple times during a visit.  The volumefield allows the user to specify how many times each procedure was performed.</td></tr><tr><td>.04</td><td>cpt modifier</td><td>1;0</td><td>MULTIPLE</td><td><a href="509850_64.html">509850.64</a></td><td></td><td></td></tr><tr><td>.05</td><td>procedure provider</td><td>0;4</td><td>POINTER</td><td><a href="509850_3.html">509850.3</a></td><td></td><td></td></tr><tr><td>.07</td><td>event capture code pointer</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This value is a pointer to this CPT entries corresponding EC entry.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

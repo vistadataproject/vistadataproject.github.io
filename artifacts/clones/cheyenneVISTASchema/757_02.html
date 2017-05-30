@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CODES</h1></div><div id="results"><dl><dt>name</dt><dd>CODES</dd><dt>number</dt><dd>757.02</dd><dt>location</dt><dd>^LEX(757.02,</dd><dt>description</dt><dd>This file contains classification codes from multiple classificationsystems (i.e., ICD, CPT, DSM, SNOMED, Title 38, NANDA, NIC, COSTAR, COSTART,CRISP, etc.).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>expression(+)</td><td>0;1</td><td>POINTER</td><td><a href="757_01.html">757.01</a></td><td>B</td><td>Pointer to the expression in the Expression file #757.01 to which aclassification code (i.e., ICD, CPT, DSM code) has been assigned.  This pointer links the code to an expression.  This expression can be a Major Concept, a Synonym or a Lexical Variant of either the Major Concept or theSynonym.</td></tr><tr><td>1</td><td>code(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Classification Code as described by a controlled vocabulary (i.e., ICD, CPT, etc).</td></tr><tr><td>2</td><td>classification source(+)</td><td>0;3</td><td>POINTER</td><td><a href="757_03.html">757.03</a></td><td></td><td>Pointer to the classification system (ICD/CPT/DSM etc) described in theCoding Systems file (#757.03) from which the code (field 1) is derived.</td></tr><tr><td>3</td><td>major concept(+)</td><td>0;4</td><td>POINTER</td><td><a href="757.html">757</a></td><td>AMC</td><td>Pointer the the Major Concept in the Major Concept Map file #757 to which aclassification code (i.e., ICD, CPT, DSM code) has been assigned.  This pointerlinks the code to the Major Concept of the expression defined in the .01 field(Expression).</td></tr><tr><td>4</td><td>preference flag</td><td>0;5</td><td>SET OF CODES</td><td>1:PREFERRED TERM<br/>0:OTHER THAN PREFERRED TERM<br/></td><td></td><td>Some codes within a coding system are linked to multiple terms.  This flagindicates the preferred term of a code (within a classification system),providing a one-to-one relationship between codes and terms.  This field is only populated when a code is linked to multiple terms.</td></tr><tr><td>5</td><td>deactivation flag</td><td>0;6</td><td>SET OF CODES</td><td>1:DEACTIVATED CODE<br/></td><td></td><td>This field indicates that a code formerly in use by the Lexicon hasbeen deactivated and should not be used in lookups or displays.</td></tr><tr><td>6</td><td>primary flag(+)</td><td>0;7</td><td>SET OF CODES</td><td>0:SUPPLEMENTAL CODE<br/>1:PRIMARY CODE<br/></td><td></td><td>If an expression has multiple codes from the same classification system(i.e., ICD, CPT, etc) then one will be flagged as the primary code and theothers will be flagged as supplemental.  If there is only one code of aspecific classification system then it will be flagged as the primary code.</td></tr><tr><td>8</td><td>activation status</td><td>4;0</td><td>MULTIPLE</td><td><a href="757_28.html">757.28</a></td><td></td><td>This is a listing of the activation historyfor a code.</td></tr><tr><td>13</td><td>legacy code</td><td>6;2</td><td>FREE TEXT</td><td></td><td></td><td>This field stores a code that under a different version of the coding system represents the same concept as the code in the current coding system. E.g. SNOMED CT (the current SNOMED code system) code 123456789 might have a SNOMED 2 (legacy code system) legacy code of F-12345.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

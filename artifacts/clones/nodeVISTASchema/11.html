@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MARITAL STATUS</h1></div><div id="results"><dl><dt>name</dt><dd>MARITAL STATUS</dd><dt>number</dt><dd>11</dd><dt>location</dt><dd>^DIC(11,</dd><dt>description</dt><dd>The MARTIAL STATUS file currently consists of six entries whichare distributed by the MAS development team.  Alteration of any ofthe six entries or addition of entries to this file which are notdistributed by the MAS developers may have a negative impact onthe performance of the MAS module as well as other modules.</dd><dt>applicationGroups</dt><dd>VA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the acceptable marital status as distributedby the MAS package.  These entries should not be altered in any way norshould entries be added or removed.  Editing of this data can have negativeaffects on the performance of the MAS module as well as other DHCP modules.</td></tr><tr><td>1</td><td>abbreviation</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains an abbreviation for this marital status.  Outputsthroughout DHCP may use this abbreviation if there is insufficient roomto display the entire marital status name.</td></tr><tr><td>2</td><td>marital status code</td><td>0;3</td><td>SET OF CODES</td><td>D:DIVORCED<br/>M:MARRIED<br/>N:NEVER MARRIED<br/>S:SEPARATED<br/>W:WIDOWED<br/>U:UNKNOWN<br/></td><td></td><td>This field contains the code for the marital status.  It must NOT beedited unless through a software upgrade!  This field is used widelythroughout DHCP to determine programming flow.  It will be displayedon the patient's data card as well as many other places throughoutDHCP.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

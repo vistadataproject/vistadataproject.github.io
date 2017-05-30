@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SYSTEM NODE</h1></div><div id="results"><dl><dt>name</dt><dd>SYSTEM NODE</dd><dt>number</dt><dd>521550</dd><dt>location</dt><dd>^DIZ(521550,</dd><dt>description</dt><dd>  This is used to identify the nodes that are on a system.  This allowsvarious utilities to avoid vendor specific code.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>node(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>  This is a node on the site's computer system.  The name must be threeuppercase characters.</td></tr><tr><td>.02</td><td>working uci(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>  This is the UCI within the system node that will contain the routine(s)that actually perform the needed tasks.  The UCI name must be three uppercase characters.</td></tr><tr><td>.03</td><td>time differential</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>  This is used by the module that coordinates the time on all nodes of thesite's system.  This allows the site to stagger the times of the nodes, forexample, allowing the print server to run two minutes behind the computeserver.  This is the number of SECONDS that will added (or subtracted if negative)from the time of the node on which the time update is run.</td></tr><tr><td>.04</td><td>master node/uci</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>  If a master node/UCI is defined, tasks that update all nodes and arequeued will be queued to initially start on the master node/UCI.   Only one node/UCI can be designated as the master node/UCI.   You must have a WORKING UCI defined for a node to be able to designatethe node as the master node/UCI.   If TaskMan is running only on one node, that node should probably bedesignated as the master node/UCI.</td></tr><tr><td>.05</td><td>unrestricted time change</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>  This is used to allow the site to notify the time change routines that thedate/time on this node can be set back at any time of the day.  Unless thisis set to 'YES', the date/time on this node can only be set back between 2amand 3am.</td></tr><tr><td>1</td><td>description</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>  This is a brief description of the system node, such as "PRINT SERVER".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

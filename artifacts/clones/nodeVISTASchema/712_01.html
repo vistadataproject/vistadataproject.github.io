@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DATA ELEMENTS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="712.html">712</a></dd><dt>name</dt><dd>DATA ELEMENTS</dd><dt>number</dt><dd>712.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>data element id(+)</td><td>0;1</td><td>POINTER</td><td><a href="711.html">711</a></td><td>B</td><td>This field holds an internal entry number to the 1010EZ MAPPING file(#711).</td></tr><tr><td>.1</td><td>multiple number(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>For all data elements except Additional Dependent data, the MultipleNumber is set the default of 1. For Additional Dependents, each data element associated with a givendependent are grouped by the same, unique Multiple Number.  The firstAdditional Dependent has a Multiple Number of 1, the second AdditionalDependent has a Multiple Number of 2, and so forth.</td></tr><tr><td>1</td><td>incoming data</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field holds the original, incoming data entered by the Applicantin the On-Line 10-10EZ Application.</td></tr><tr><td>1.1</td><td>accept</td><td>0;3</td><td>SET OF CODES</td><td>1:ACCEPT<br/>2:ALWAYS ACCEPT<br/>-1:NEVER ACCEPT<br/></td><td></td><td>This field is set to "1", if the user has 'accepted' the data.The data is accepted if the user executes the "Accept Field(AF)" action within the EAS EZ 1010EZ PROCESSING option.</td></tr><tr><td>1.2</td><td>update date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>The date in this field is the date that the user updated (i.e.,directly edited) this specific 10-10EZ Application data element. </td></tr><tr><td>1.3</td><td>update by</td><td>0;5</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field holds the internal entry number of the person in the NEW PERSON file (#200) who updated this specific 10-10EZ Applicationdata element. This is the user who executed the "Update Field (UF)" action within the EAS EZ 1010EZ PROCESSING option for this dataelement.</td></tr><tr><td>1.5</td><td>update data</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>This field holds the result of the direct edit to the data elementby the user when "Update Field (UF)" action was executed.</td></tr><tr><td>2</td><td>replaced vista data</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>If the Applicant was matched to an existing VistA Patientdatabase record, and if that Patient had existing data for thedatabase field that correlates with this 10-10EZ data element,the VistA data will be recorded here before it is overwritten.  It is therefore possible to restore any overwritten VistAfield in the Patient record that was replaced by 10-10EZ data.</td></tr><tr><td>2.1</td><td>ien link</td><td>2;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal entry number of the VistA database record thathas been matched to the data contained in this 10-10EZ data element.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

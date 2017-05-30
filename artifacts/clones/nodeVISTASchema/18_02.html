@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > WEB SERVICE</h1></div><div id="results"><dl><dt>name</dt><dd>WEB SERVICE</dd><dt>number</dt><dd>18.02</dd><dt>location</dt><dd>^XOB(18.02,</dd><dt>description</dt><dd>The entries in this file contain the connection related and proxy classinformation of remote web services. This information is required in order for the HealtheVet Web ServicesClient (HWSC) application to call remote web services.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>User friendly name for the web service entry. The name should be prefixedwith a package prefix (ex. XOBW TESTER WEB SERVICE). The value must be unique compared to the NAME field value of the otherentries in this file.</td></tr><tr><td>.02</td><td>type(+)</td><td>0;2</td><td>SET OF CODES</td><td>1:SOAP<br/>2:REST<br/></td><td></td><td></td></tr><tr><td>.03</td><td>date registered</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field indicates the date the web service was registered intoVistA, usually via the GENPORT^XOBWLIB or REGREST^XOBWLIB deploymenttime APIs.</td></tr><tr><td>100</td><td>proxy class name</td><td>100;1</td><td>FREE TEXT</td><td></td><td></td><td>Name of the CacheObject class for the web service client proxy (i.e HTTP port class). This name should include package indicator.(Example: hwsc.TesterWebServiceHttpPort where 'hwsc' is the packageindicator.) This field should only be entered via the API $$GENPORT^XOBWD(...). For an example of how to call the API, see the post-init for the HealtheVet Web Services Client (HWSC) install. (Routine XOBWPST andspecifically the GENPORT tag.)</td></tr><tr><td>200</td><td>context root(+)</td><td>200;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the web service context root. This field should only be entered via the API $$GENPORT^XOBWD(...).The value of this field is derived from the wsdl file. (The 'location' attribute of the 'wsdlsoap:address' element of the wsdl is the source.) For an example of how to call the API, see the post-init for the HealtheVet Web Services Client install. (Routine XOBWPST and specificallythe GENPORT tag.)</td></tr><tr><td>201</td><td>availability resource</td><td>201;1</td><td>FREE TEXT</td><td></td><td></td><td>Enter the portion of a URL to append following the service's context root, for availability testing. For SOAP web servicesthis could be an additional portion of the URL to reach the service's WSDL document, e.g., '?wsdl' (without quotes); forREST web services this could the additional portion of the URLto reach a safe resource to perform an HTTP GET against for thepurpose of checking service availability.</td></tr><tr><td>300</td><td>wsdl</td><td>300;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

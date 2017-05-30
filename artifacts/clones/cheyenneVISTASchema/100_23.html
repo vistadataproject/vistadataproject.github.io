@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OE/RR PRINT FORMATS</h1></div><div id="results"><dl><dt>name</dt><dd>OE/RR PRINT FORMATS</dd><dt>number</dt><dd>100.23</dd><dt>location</dt><dd>^ORD(100.23,</dd><dt>description</dt><dd>Entries in this file with an internal number >1000 have been exportedwith the OE/RR package.  Everytime a new version of OE/RR is installedthe entries above 1000 are removed and overwritten. If you want to use one of these exported entries, transfer the entry toa number less than 1000 and give it a new name so that it can bedifferentiated from the exported entry.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>Internal number of the format.</td></tr><tr><td>.01</td><td>name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the format.</td></tr><tr><td>.02</td><td>rows</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the number of rows on the screen/form that this formatwill occupy.</td></tr><tr><td>.03</td><td>columns</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the total number of columns that this format will occupy.</td></tr><tr><td>.04</td><td>order text length</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field is specifically used in formats that use the Order Text fieldfor displaying the order text within a format.  The value in this fieldis the length that the order text will use, and is the same value that isput in the FORMAT field for the Order Text field definition.  Theexported value is 36.  This value is necessary to correctly calculatethe number of lines available for printing an order.  If you create acustomized version of this format, and you change the value of theFORMAT field for Order Text, make sure this field is also changedto match.</td></tr><tr><td>.05</td><td>single</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to identify formats that are not used with a Header orFooter format.  Labels are a good example.  This field is used by theOE/RR print utility to keep special formats properly aligned.</td></tr><tr><td>1</td><td>fields</td><td>1;0</td><td>MULTIPLE</td><td><a href="100_231.html">100.231</a></td><td></td><td>Each format includes one or more fields that are compiled here.</td></tr><tr><td>2</td><td>compiled code</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the MUMPS code that is compiled when using the PRINT FORMATSutility in OE/RR to build print formats.  This field should not beedited.</td></tr><tr><td>3</td><td>screen</td><td>3;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is MUMPS code that is used to screen out the printing of a formatfor special circumstances.</td></tr><tr><td>4</td><td>silent code</td><td>4;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains M code that gets executed by 'Silent API's' toproduce formatted text arrays for use in GUI or other applications.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

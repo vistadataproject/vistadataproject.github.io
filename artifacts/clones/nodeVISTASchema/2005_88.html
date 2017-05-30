@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAG REASON</h1></div><div id="results"><dl><dt>name</dt><dd>MAG REASON</dd><dt>number</dt><dd>2005.88</dd><dt>location</dt><dd>^MAG(2005.88,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ This file stores valid reasons (justifications) for actions performed onimages: copying, printing, etc. Once a reason is referenced by a record of other file (e.g. IMAGE file (#2005)), it cannot be deleted. Use the DATE OF INACTIVATION field (.03) to exclude the reason from the list presented to the users. This file is defined by the patch MAG*3*93.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>reason(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field stores a valid reason/justification foraction(s).</td></tr><tr><td>.02</td><td>type(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates actions that this reason isapplicable to. Actions are represented by the concatenation of the following characters:   C - Copy image  D - Delete image  P - Print image  S - Change image status For example, if a reason is applicable for copyingand printing, then the value of this field shouldbe "CP".</td></tr><tr><td>.03</td><td>date of inactivation</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>If this field is not empty and the stored date isno later than today's date, then this record isexcluded from the list of reasons presented to theuser (e.g. by the GUI application). Use this field to exclude records from selection without deleting them. This is especially important if inactive records are pointed to byrecords of other files.</td></tr><tr><td>.04</td><td>code(+)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field stores the code that uniquely identifies the reason. You must not modify value of this field unless you are instructed to do soby the VistA support personnel or Imaging softwaredevelopers. "Standard" reasons (i.e. those distributed withthe Imaging software) have numeric codes.  Codes of "local" reasons created by the users atthe sites consist from record IENs preceded byletter L (e.g. "L12"). When a new record is created, this field is automatically pre-populated with a "local" code. </td></tr><tr><td>1</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field stores an optional explanation for the reason. The text can be presented to the user bythe GUI application as a context sensitive help.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

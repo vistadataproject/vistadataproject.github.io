@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OUTSIDE FILMS REGISTRY</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="70.html">70</a></dd><dt>name</dt><dd>OUTSIDE FILMS REGISTRY</dd><dt>number</dt><dd>70.06</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>outside films register date</td><td>0;1</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date this patient's films were received fromthe outside source and registered.</td></tr><tr><td>2</td><td>needed back date</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the requested date that the outside source wantsthis patient's films back on or the date the films are to be sent back.</td></tr><tr><td>3</td><td>returned date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date that this patient's outside films wereactually returned to the outside source.</td></tr><tr><td>4</td><td>source of films</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the name (3-80 characters) of the source of this patient's outside films. (ie. General Hospital)</td></tr><tr><td>5</td><td>ask for 'ok' before returning?(+)</td><td>0;5</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field contains a value to indicate if these outside films requirethe approval of the supervisor before returning to their source sincesome films should be kept on file.  Available values are: 'Y' for YES and'N' for NO.  If the value is YES, then a flag is set to designate 'OK'needed before return. The activity log can be used to determine who sent the films back.  It canbe displayed using the 'Inquire' option of File Manager.</td></tr><tr><td>6</td><td>has return been ok'ed?</td><td>0;6</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field is used for outside films which are designated as requiring thesupervisor's approval before return to the outside source.  It contains a'Y' for YES or 'N' for NO to indicate if these outside films have beenapproved for return yet.</td></tr><tr><td>20</td><td>remarks</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a brief comment (2-240 characters) about the outsidefilms.  It is used mainly to identify what type the outside film is. (ie. Chest Films)</td></tr><tr><td>100</td><td>activity log</td><td>L;0</td><td>MULTIPLE</td><td><a href="70_08.html">70.08</a></td><td></td><td>This is a multiple field containing a log of actions that have been taken on this outside film record.  The activity log can be used to resolve any discrepancies.  It can be displayed using the 'Inquire' option of File Manager.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

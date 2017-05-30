@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RECIPIENT TYPE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8992_11.html">8992.11</a></dd><dt>name</dt><dd>RECIPIENT TYPE</dd><dt>number</dt><dd>8992.111</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>recipient type(+)</td><td>0;1</td><td>POINTER</td><td><a href="8992_2.html">8992.2</a></td><td>B</td><td>This field is used to track how a specific recipient was selected for receiving the alert. The initial recipients are those to whom the alertwas initially directed (INITIAL RECIPIENT).  Other recipients may be theresult of forwarding.  Recipients of the alert from forwarding are notedby the type of forwarding involved (FWD BY USER, EMAIL SURROGATE,CHIEF/SUPERVISOR, BACKUP REVIEWER, or LAST HOPE). Marked as a specific category are those to whom the alert was directed,but who were not available to receive an alert due to lack of access(marked with the suffix "-UNDELIVERABLE" added to the basis for the alert being sent to the user). Those who have alerts forwarded to their surrogate or receive the alert while acting as a surrogate for another user are indicated by entries in fields #.02 (SENT TO SURROGATE) and #.03 (ACTING AS SURROGATE), respectively.  In addition, those who are acting as surrogates are identified in the current field by the suffix "-SURROGATE" added to the basis for the alert being received.  Since the recipient may be acting as surrogate for more than one user, the actual users for which the message was sent on a surrogate basis are indicated in the SURROGATE FOR sub-file (#8992.113) under the RECIPIENT sub-file. The values stored for this field are pointers to entries in the ALERT RECIPIENT TYPE file (#8992.2).</td></tr><tr><td>.02</td><td>sent to surrogate</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field is used to identify the surrogate to whom the alertwas sent instead of this originally specified recipient.</td></tr><tr><td>.03</td><td>acting as surrogate</td><td>0;3</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field is used to identify those recipients who were sent the alert because they were selected as an active surrogate for the originally intended user.  In most cases only the Y (YES) entries will be entered.</td></tr><tr><td>.04</td><td>alert date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time the alert was sent/forwarded to the current recipient with this recipient type</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

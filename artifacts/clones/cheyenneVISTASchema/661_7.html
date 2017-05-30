@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROSTHETIC CURRENT STOCK</h1></div><div id="results"><dl><dt>name</dt><dd>PROSTHETIC CURRENT STOCK</dd><dt>number</dt><dd>661.7</dd><dt>location</dt><dd>^RMPR(661.7,</dd><dt>description</dt><dd>This file implements the concept of 'First In First Out' (FIFO) stockaccounting. Whenever stock items are brought into stock on a given date an entry willbe created for that date for the relevant HCPC item, location, vendor andunit of measure. The date will include time to cater for the rare instancewhere the same stock item with the same vendor, location and unit ofmeasure is brought into stock on the same day but with a different cost. This file can then be used to look up locations containing the oldeststock for any given HCPC item. When items are removed from stock the associated vendor and location willbe identified by scanning a bar code (or manual entry in case of equipmentproblems). The system will then assume that the oldest item for the vendorand location has been issued and will reduce the stock quantity. If thequantity becomes 0 or -ve the record will be deleted.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>hcpcs(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field is a pointer to the Prosthetic HCPCs file (661.1).</td></tr><tr><td>1</td><td>date&time stamp</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>2</td><td>sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the same SEQUENCE as in the PROSTHETIC TRANSACTION file (661.6)</td></tr><tr><td>3</td><td>hcpcs item(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td>D</td><td>This field is a pointer to the 661.12 sub-file of the PROSTHETIC HCPCSfile (661.1).</td></tr><tr><td>4</td><td>station</td><td>0;5</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This field is a pointer to the INSTITUTION file (4).</td></tr><tr><td>5</td><td>location</td><td>0;6</td><td>POINTER</td><td><a href="661_5.html">661.5</a></td><td>C</td><td>This field points to the PROSTHETIC STOCK LOCATION file (661.5).</td></tr><tr><td>6</td><td>quantity</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This field is the quantity of stock.</td></tr><tr><td>7</td><td>value</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This field is the total dollar value of the stock item held on thisrecord.</td></tr><tr><td>8</td><td>unit of issue</td><td>0;9</td><td>POINTER</td><td><a href="420_5.html">420.5</a></td><td></td><td>This field is a pointer to Unit of Issue file (#420.5).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

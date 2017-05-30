@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DSS DRUG PRODUCT CODE</h1></div><div id="results"><dl><dt>name</dt><dd>DSS DRUG PRODUCT CODE</dd><dt>number</dt><dd>728.506</dd><dt>location</dt><dd>^ECX(728.506,</dd><dt>description</dt><dd>This file holds information needed to determine the DSS drug productcode for any entry in the local DRUG file (#50) which has been matchedto an entry in the NATIONAL DRUG file (#50.6).  The determining factorsare VA classification, route of administration, and, in some cases,specific VA product name.  These factors have been determined by theDSS pharmaceutical task force based, in part, on information providedby the National Drug File (NDF) task force.  Use of this file dependson fields in the local DRUG file (#50) which were set by the matchingprocess in the National Drug File package as specified by the NDF taskforce. For these reasons, it is imperative that neither the data nor thedata dictionary for this file be modified at the local VAMC.  Asmodifications are required, they will be sent from the developers asdirected by the involved task force members.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>dss drug product code(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the product code as determined by the DSS pharmaceutical taskforce.  The DESCRIPTION field (#1) indicates how this code is determinedby a combination of VA drug classification, route of administration, and(in some cases) by specific generic name of a particular item.</td></tr><tr><td>1</td><td>description</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>VA classification description.</td></tr><tr><td>2</td><td>identifier</td><td>1;0</td><td>MULTIPLE</td><td><a href="728_5061.html">728.5061</a></td><td></td><td>Drug identifier composed of two numbers, separated by the letter "A",that represents drug and dose form from the NATIONAL DRUG file (#50.6).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

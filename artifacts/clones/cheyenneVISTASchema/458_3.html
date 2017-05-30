@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ENVIRONMENTAL DIFF. REQUESTS</h1></div><div id="results"><dl><dt>name</dt><dd>ENVIRONMENTAL DIFF. REQUESTS</dd><dt>number</dt><dd>458.3</dd><dt>location</dt><dd>^PRST(458.3,</dd><dt>description</dt><dd>This file contains all Environmental Differential requests. It contains the information previously entered on VA Form 4-1098a.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>sequence #(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>A sequential number that identifies the environmental differentialrequest.</td></tr><tr><td>1</td><td>employee(+)</td><td>0;2</td><td>POINTER</td><td><a href="450.html">450</a></td><td>C</td><td>A pointer to the PAID EMPLOYEE file (#450) which identifies the employeefor whom the request is being made.</td></tr><tr><td>2</td><td>from date(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The date the environmental differential should begin.</td></tr><tr><td>3</td><td>from time(+)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>The time the environmental differential should begin.</td></tr><tr><td>4</td><td>meal time(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>The meal time in minutes. This will be subtracted fromthe end-start time to determine the time of exposure.</td></tr><tr><td>5</td><td>to time(+)</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>The time the environmental differential should cease.</td></tr><tr><td>6</td><td>type of exposure(+)</td><td>0;7</td><td>POINTER</td><td><a href="457_6.html">457.6</a></td><td></td><td>A pointer to the ENVIRONMENTAL DIFFERENTIALS file (#457.6) whichidentifies the type of exposure the employee is subject to.</td></tr><tr><td>7</td><td>justification(+)</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>A free text response that states the justification for this request.</td></tr><tr><td>8</td><td>status</td><td>0;9</td><td>SET OF CODES</td><td>R:Requested<br/>A:Approved<br/>D:Disapproved<br/>X:Cancelled<br/></td><td></td><td>The status of the request.</td></tr><tr><td>9</td><td>entered by(+)</td><td>0;10</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>A pointer to the NEW PERSON file (#200) which identifies the person whoentered the request.</td></tr><tr><td>10</td><td>date/time entered(+)</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>The date and time the request was entered.</td></tr><tr><td>11</td><td>supervisor</td><td>0;12</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>A pointer to the NEW PERSON file (#200) which identifies the employee'ssupervisor.</td></tr><tr><td>12</td><td>supr. action date/time</td><td>0;13</td><td>DATE-TIME</td><td></td><td></td><td>The date and time the supervisor took action on this request.</td></tr><tr><td>13</td><td>supr. es</td><td>0;14</td><td>FREE TEXT</td><td></td><td></td><td>The supervisor's electronic signature code.</td></tr><tr><td>14</td><td>supr. comment</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>A free text response for any comments the supervisor would like to makeabout this request.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

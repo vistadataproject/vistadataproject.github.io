@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BENEFICIARY TRAVEL MANUAL DEDUCTIBLE WAIVER</h1></div><div id="results"><dl><dt>name</dt><dd>BENEFICIARY TRAVEL MANUAL DEDUCTIBLE WAIVER</dd><dt>number</dt><dd>392.7</dd><dt>location</dt><dd>^DGBT(392.7,</dd><dt>description</dt><dd>This file contains the list of patients that have an active manual waiver at the time the Travel Claim.</dd><dt>applicationGroups</dt><dd>DGBT</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>waiver request date and time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the date/time of the waiver request.</td></tr><tr><td>2</td><td>patient name(+)</td><td>0;2</td><td>POINTER</td><td><a href="2.html">2</a></td><td>C</td><td>This is the patient to whom the waiver pertains.</td></tr><tr><td>3</td><td>waiver status(+)</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This indicates whether or not the waiver is authorized.</td></tr><tr><td>4</td><td>granted/denied by(+)</td><td>0;4</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the person who granted/denied the waiver.</td></tr><tr><td>5</td><td>waiver approval/denial date(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the travel waiver was approved or denied.</td></tr><tr><td>6</td><td>waiver entered by(+)</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Select the person who entered the waiver status.</td></tr><tr><td>7</td><td>waiver remarks</td><td>RMK;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains  user remarks about why the waiver was approved ordenied.</td></tr><tr><td>8</td><td>expiration date(+)</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the waiver will expire. The expiration date will be set without user intervention.</td></tr><tr><td>9</td><td>date entered</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the record was added to the file. It is set by the system. This cannot be changed except by programmer.</td></tr><tr><td>97</td><td>deletion date</td><td>DEL;1</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the manual waiver request was deleted. This field is set by a routine.</td></tr><tr><td>98</td><td>waiver deleted by(+)</td><td>DEL;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the person who deleted the waiver request.</td></tr><tr><td>99</td><td>deletion remarks(+)</td><td>DEL;3</td><td>FREE TEXT</td><td></td><td></td><td>This field contains remarks about why the waiver was deleted.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QUEUE MESSAGE</h1></div><div id="results"><dl><dt>name</dt><dd>QUEUE MESSAGE</dd><dt>number</dt><dd>2006.928</dd><dt>location</dt><dd>^MAGV(2006.928,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ This file stores individual queue messages for a queue.  It contains the message, earliest delivery date/time and expiration date/time of a message.  This will be used to queue asynchronous storage requests.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>queue(+)</td><td>0;1</td><td>POINTER</td><td><a href="2006_927.html">2006.927</a></td><td>B</td><td>This is the queue in which the message is placed.</td></tr><tr><td>2</td><td>priority(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>An ordinal number indicating the priority of this message. Higher priority messages will be fetched from the queue and processed ahead of lower priority messages. 1 indicates highest priority and 99 the lowest priority.</td></tr><tr><td>3</td><td>enqueued date/time(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>Date and time at which the message was placed in the queue.</td></tr><tr><td>4</td><td>earliest delivery date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>Date and time that must be reached before the message is eligible to be retrieved from the queue for processing.</td></tr><tr><td>5</td><td>expiration date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>Date and time after which the message is no longer valid or eligible for processing. An empty value here implies that the message never expires.</td></tr><tr><td>6</td><td>message</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The content of the queue message.</td></tr><tr><td>7</td><td>message group id</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The value in the field MESSAGE GROUP ID indicates a subgroup within aqueue. For example, the hostname of a DICOM Gateway. The field allows messages to be filtered by QUEUE and MESSAGE GROUP ID. This is useful whenmessages from a queue with the same MESSAGE GROUP ID must be processed together by the same processing agent. For example, messages in the email queue originating from the same DICOM Gateway host.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MH SCALEGROUPS</h1></div><div id="results"><dl><dt>name</dt><dd>MH SCALEGROUPS</dd><dt>number</dt><dd>601.86</dd><dt>location</dt><dd>^YTT(601.86,</dd><dt>description</dt><dd>ScaleGroups are collections of MH SCALES file (#601.87) that are logicallydisplayed together. Information needed to graph the scales are storedhere. This includes the ordinate title, minimum and maximum values, graphincrements and grid lines. All scales need to be associated with a MH SCALEGROUP to be displayed. MHSCALEGROUPS file (#601.86) and MH SCALES file (#601.87) allow multiplescoring possibilities within a single instrument.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>scalegroup id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the unique identifier for this record. It is the IEN. Numbers below 100,000 are part of the national database and should not be edited locally.</td></tr><tr><td>1</td><td>instrument id(+)</td><td>0;2</td><td>POINTER</td><td><a href="601_71.html">601.71</a></td><td>AD</td><td>Specifies instrument that applies, a pointer to the NAME field (#.01) of the MH TESTS AND SURVEYS file (#601.71).</td></tr><tr><td>2</td><td>scalegroup name(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Print Name of the ScaleGroup. All scales must refer to at least one ScaleGroup. Examples of ScaleGroups include; Total, Validity Scales and MacAndrews Scales.</td></tr><tr><td>3</td><td>group sequence</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Order in which the ScaleGroup is displayed within the Administration report and in graphing.</td></tr><tr><td>4</td><td>ordinate title</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the ordinate title of the graph.</td></tr><tr><td>5</td><td>ordinatemin</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate minimum.</td></tr><tr><td>6</td><td>ordinateincrement</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate increment.</td></tr><tr><td>7</td><td>ordinatemax</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate maximum.</td></tr><tr><td>8</td><td>grid1</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate value of the first grid line on the graph(set to 0 ifthere is none).</td></tr><tr><td>9</td><td>grid2</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate value of the second grid line on the graph(set to 0if there is none).</td></tr><tr><td>10</td><td>grid3</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td>This is the ordinate value of the third grid line on the graph(set to 0 ifthere is none).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

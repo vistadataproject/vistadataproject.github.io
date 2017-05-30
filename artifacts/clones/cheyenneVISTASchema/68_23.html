@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROFILE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="68_2.html">68.2</a></dd><dt>name</dt><dd>PROFILE</dd><dt>number</dt><dd>68.23</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>profile</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Only ONE load or work list can exist at a time.  But more than oneprofile can be defined to make "alternate" groupings of tests for theload/worklist which might be used on an infrequent or non-standard basis.</td></tr><tr><td>1</td><td>test</td><td>1;0</td><td>MULTIPLE</td><td><a href="68_24.html">68.24</a></td><td></td><td>These are the tests to be brought onto the load/work list from theaccessions.</td></tr><tr><td>2</td><td>accession area(+)</td><td>0;2</td><td>POINTER</td><td><a href="68.html">68</a></td><td></td><td>This is the default accession area to use to build the load/work list.</td></tr><tr><td>2.1</td><td>uid verification</td><td>0;3</td><td>SET OF CODES</td><td>0:PROFILE ACCESSION AREA ONLY<br/>1:ANY ACCESSION AREA<br/></td><td></td><td>When verifying by Lab Universal Identifier (UID) the site can configurehow accessions are selected. If "PROFILE ACCESSION AREA ONLY" is selected then only those UIDs whichare from the accession area designated for this profile can be selected. If "ANY ACCESSION AREA" is selected then a UID from any accession areacan be selected. Note that an accession from a different area should havetests that would be in this editing profile. </td></tr><tr><td>2.2</td><td>store duplicate comments</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>When the Laboratory result verifying software is processingcomments associated with a load/work list result, this fielddetermines how duplicate comments are processed. If set to"NO" (default if no value) then a comment that matches apreviously stored comment will not be stored with the result.If set to "YES" then the duplicate check is not performed andthe comment is stored with the results irregardless if thecomment already exists. Setting it to "YES" will allow the handling of multiple linecomments which contain the same comment more than once and arestill clinically significant.</td></tr><tr><td>2.3</td><td>default reference laboratory</td><td>0;5</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>The performing laboratory that is commonly associated with this profile.It will be presented as the default performing laboratory when a useris setting up a verifying session using this profile.</td></tr><tr><td>3</td><td>tray # for control</td><td>2;0</td><td>MULTIPLE</td><td><a href="68_25.html">68.25</a></td><td></td><td>Enter the tray number appropriate for the controls you will next bechoosing.  If this is a worklist or sequence loadlist, the "tray" isalways "1".</td></tr><tr><td>4</td><td>specimen to exclude</td><td>3;0</td><td>MULTIPLE</td><td><a href="68_27.html">68.27</a></td><td></td><td>If any specimens are specified here, accessions of these specimen(s)will NOT be included on the work/load list.</td></tr><tr><td>5</td><td>controls to begin worklist</td><td>4;0</td><td>MULTIPLE</td><td><a href="68_28.html">68.28</a></td><td></td><td>This multiple has the controls that are to be placed on the worklistat the beginning of the list.</td></tr><tr><td>6</td><td>controls to end worklist</td><td>5;0</td><td>MULTIPLE</td><td><a href="68_29.html">68.29</a></td><td></td><td>This multiple has the controls that are to be blaced on the worklistat the end of the list.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

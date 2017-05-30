@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB NLT/CPT CODES</h1></div><div id="results"><dl><dt>name</dt><dd>LAB NLT/CPT CODES</dd><dt>number</dt><dd>64.81</dd><dt>location</dt><dd>^LAB(64.81,</dd><dt>description</dt><dd>This file is used primarily as a National Laboratory Test (NLT) databaseupgrade source file. When new/additional NLT codes are released to thefield, they are exported in this file. The installation software takes theentries from the LAB NLT/CPT CODES (#64.81) and adds them to the WKLD CODE(#64) file, then deletes that installed code from this file. If theinstallation is successful, this file will be empty.  NORMALLY, THIS FILE HAS NO DATA EXCEPT DURING INITIAL STAGES OF DATABASEUPGRADE. The end user never uses this file for day to day laboratory activities. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td></td></tr><tr><td>1</td><td>nlt code</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>These are codes used to update target files with new procedures.</td></tr><tr><td>2</td><td>external code</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>3</td><td>release date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>4</td><td>inactive date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>5</td><td>replacement code</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>6</td><td>type</td><td>0;7</td><td>SET OF CODES</td><td>CPT:CPT CODE<br/>SNO:SNOMED CODE<br/>ICD:ICD9 CODE<br/>NOS:NOS<br/></td><td></td><td></td></tr><tr><td>7</td><td>name change</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>8</td><td>install error</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>10</td><td>suffix code</td><td>1;2</td><td>FREE TEXT</td><td></td><td>D</td><td></td></tr><tr><td>11</td><td>suffix code change</td><td>1;3</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>12</td><td>file change(+)</td><td>1;4</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>13</td><td>synonym code</td><td>1;5</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>14</td><td>synonym code change</td><td>1;6</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>15</td><td>synonym name</td><td>1;7</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>16</td><td>synonym name change</td><td>1;8</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>17</td><td>transport</td><td>2;0</td><td>MULTIPLE</td><td><a href="64_8117.html">64.8117</a></td><td></td><td>This is an entry transported from the Workload Code file (64).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

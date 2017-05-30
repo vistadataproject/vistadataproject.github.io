@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CPT RECORD DATE/TIME</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="45.html">45</a></dd><dt>name</dt><dd>CPT RECORD DATE/TIME</dd><dt>number</dt><dd>45.06</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>cpt record date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td></td></tr><tr><td>.02</td><td>referring or ordering provider</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td></td></tr><tr><td>.03</td><td>rendering provider(+)</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td></td></tr><tr><td>.04</td><td>primary diagnosis(+)</td><td>0;4</td><td>POINTER</td><td><a href="80.html">80</a></td><td></td><td>Enter the Diagnosis that should appear first in box 21 of the HCFA 1500insurance form.</td></tr><tr><td>.05</td><td>rendering location(+)</td><td>0;5</td><td>POINTER</td><td><a href="44.html">44</a></td><td></td><td>Enter the location in file 44 where services were furnished.  The name ofthe facility and address must be entered in file 4 and pointed to by file 44.</td></tr><tr><td>.06</td><td>visit number</td><td>0;6</td><td>POINTER</td><td><a href="9000010.html">9000010</a></td><td></td><td>This is a pointer to the Visit File (9000010) in PCE.  A visit will begenerated for each CPT procedure entry.</td></tr><tr><td>.07</td><td>data to pce flag</td><td>0;7</td><td>SET OF CODES</td><td>0:NOT SENT<br/>1:SENT TO PCE<br/></td><td></td><td>Set by the PTF system to indiacte if the data in the PTF 810screen has been sent to the PCE system.  It is reset to 0 ifthe data is edited, after the data in PCE is deleted.</td></tr><tr><td>.09</td><td>delete flag</td><td>0;9</td><td>SET OF CODES</td><td>0:Valid subfile record<br/>1:All CPT Transactions have been deleted<br/></td><td></td><td>This field flags deleted records so they do not appear on the801 Screens Not Sent to PCE report.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

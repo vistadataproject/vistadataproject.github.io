@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SHORTCUT CONTEXT</h1></div><div id="results"><dl><dt>name</dt><dd>SHORTCUT CONTEXT</dd><dt>number</dt><dd>757.41</dd><dt>location</dt><dd>^LEX(757.41,</dd><dt>description</dt><dd>The Lexicon has the capability to maintain severalsets of shortcuts to rapidly access the expression file.Each of these shortcut sets is named by the context for whichthe shortcut set was meant to have been used.  The user mayselect this shortcut set by it's context name as their defaultset of shortcuts to use while searching the Lexicon.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>context(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the context in which shortcuts will be used.  It is aselectable user default.</td></tr><tr><td>.02</td><td>allow site edit</td><td>0;2</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This is a flag which indicates if a site should be allowed to edit theshortcuts.  Not all shortcut context should be editable at the site.  Forexample, it should not be permitted to add shortcuts to the context "Null,"which was designed to be void of shortcuts.  Some shortcut context may beprovided by and controlled by applications, and should not be edited at thesites.  However, this is the exception and not the rule.  The majority of the shortcuts will be site editable.</td></tr><tr><td>1</td><td>context description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is a description of the intent of the context usage.</td></tr><tr><td>2</td><td>screen</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is MUMPS code in the form of an IF statement without an action to perform, similar Fileman's to DIC("S").  It is used as a screen during look-upin the expression file to return only those expressions which qualifiy in thiscontext.  For example, the context "ICD DIAGNOSIS/PROCEDURES" has a screenwhich excludes all expressions not linked to an ICD-9 code.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

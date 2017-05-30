@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BILLING ALERT DEFINITION</h1></div><div id="results"><dl><dt>name</dt><dd>BILLING ALERT DEFINITION</dd><dt>number</dt><dd>354.5</dd><dt>location</dt><dd>^IBE(354.5,</dd><dt>description</dt><dd>This file contains data used to generate alerts.  This information is used to determine recipients and the contents of the alerts.Sites should not normally need to delete or edit these entries.Specific users and mailgroups can be assigned to receive each alert message. Do not add, edit, or delete entries in this file without instructionsfrom your ISC. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This is the internal entry number assigned to this billing alerttype.  Entries 1 through 999 are reserved for IB. The internal number is used by the ib routines to find entries in thisfile.  Do not delete, edit, or add entries to this file.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of this alert.  It should be close in name or meaningto the message text which the users are familiar with seeing.</td></tr><tr><td>.02</td><td>package id</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the package prefix for the package using this notification.It will be concatenated with the internal number in the BILLING ALERTS fileto form the variable XQAID for look up and deleting alerts.</td></tr><tr><td>.03</td><td>message text</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the message text that will be appended to the patient's name andssn and will be displayed to users when first notified aboutthe alert.</td></tr><tr><td>.05</td><td>action flag</td><td>0;5</td><td>SET OF CODES</td><td>I:INFORMATION ONLY<br/>R:RUN ROUTINE<br/></td><td></td><td>Enter 'I' if the user is to take no follow-up action for thisnotification. Enter 'R' if the user is to take a follow-up actionafter viewing this notification.  This is a mandatory flag used to regulate processing in the alertsoftware.  No additional action will be allowed after viewinginformation only alerts.</td></tr><tr><td>.06</td><td>entry point</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is the entry point in a routine that will be run when the alertis processed.  It is used to build the variable XQAROU.  This fieldrepresents the TAG in tag^routine.</td></tr><tr><td>.07</td><td>routine name</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the routine name that will be called by the alert software whenprocessing the alert.  The variable XQAROU will be defined as tag^routinewhere this is the routine.  (ie xqarou=$p(^ibe(354.4,n,0),"^",6,7)</td></tr><tr><td>2</td><td>recipient groups</td><td>2;0</td><td>MULTIPLE</td><td><a href="354_52.html">354.52</a></td><td></td><td>These are mail groups that this alert should be sent to.</td></tr><tr><td>3</td><td>processing flag</td><td>3;1</td><td>SET OF CODES</td><td>D:DISABLED<br/>E:ENABLED<br/>M:MANDATORY<br/></td><td></td><td>This field is used to regulate the alert processing.  Notifications flaggedas "D" will indicate the alert is disabled and will not be processed.  Aflag of "M" indicates the alert is enabled and mandatory.</td></tr><tr><td>200</td><td>recipient users</td><td>200;0</td><td>MULTIPLE</td><td><a href="354_5002.html">354.5002</a></td><td></td><td>These are users who have been determined to need to see this alert.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB DSS LAR EXTRACT</h1></div><div id="results"><dl><dt>name</dt><dd>LAB DSS LAR EXTRACT</dd><dt>number</dt><dd>64.036</dd><dt>location</dt><dd>^LAR(64.036,</dd><dt>description</dt><dd>This file is used to store extracted DSS clinical data. The callingapplication is responsible for purging the data before and after a call ismade to the laboratory API routine LRCAPDAR. The structure and contents of this file is to support DSS extraction ofspecific clinical values to monitor patient treatment effectiveness. This file is not for local use and should only be used by the DSS callingapplication. This file is solely for DSS utilization. Criteria for data extraction of clinical values is specified the DSS LABTESTS (#727.2) file. The file is populated by the DSS Coordinator with theadvise of the Laboratory Information Manager (LIM). Populating DSS LABTESTS file without the approval of the LIM will lead to unexpected orunreliable data extraction performance. Normally there is no residual data stored in this file and journaling isnot required.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>seq #(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td> This is an incremental number for entries into this file.</td></tr><tr><td>1</td><td>pointed to file</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the point to the file that identifies the specimensource.</td></tr><tr><td>2</td><td>dfn</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field contains the IEN of the pointed to file identified in POINTEDTO FILE (#1) field.</td></tr><tr><td>3</td><td>date ordered</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td> This field contains the date the order was placed.</td></tr><tr><td>4</td><td>time ordered</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the time the order was placed.</td></tr><tr><td>5</td><td>date results avail</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date the results were available (verified andreleased).</td></tr><tr><td>6</td><td>time results avail</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the time the results were available (verified andreleased).</td></tr><tr><td>7</td><td>specimen</td><td>0;8</td><td>POINTER</td><td><a href="61.html">61</a></td><td></td><td>This field contains the pointer to TOPOGRAPHY FIELD (#61) file to identifythe specimen source.</td></tr><tr><td>8</td><td>results</td><td>1;0</td><td>MULTIPLE</td><td><a href="64_368.html">64.368</a></td><td></td><td>This is a multiple that contains result information for the extractedtests.</td></tr><tr><td>9</td><td>extraction data</td><td>2;0</td><td>MULTIPLE</td><td><a href="64_369.html">64.369</a></td><td></td><td>This is a multiple field to extraction parameters. Usually there is onlyone created and it is created for the first entry. Test extraction resultdata is stored the next available internal entry number.</td></tr><tr><td>10</td><td>specimen collection date</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td> The date specimen was collected.</td></tr><tr><td>11</td><td>specimen collection time</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td> The time the specimen was collected.</td></tr><tr><td>12</td><td>provider</td><td>0;11</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the ordering provider of record for this set of test results.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

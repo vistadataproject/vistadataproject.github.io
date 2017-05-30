@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VES.HOSPITAL.ADMISSION</h1></div><div id="results"><dl><dt>name</dt><dd>VES.HOSPITAL.ADMISSION</dd><dt>number</dt><dd>19001.0018</dd><dt>location</dt><dd>^VES(19001.0018,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>hospital admission(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td> This identifying field contains the date (with time) of a patient's hospital admission.  For any given patient this field will be unique although it is possible that two patients could be admitted simultaneously and thus there could be two identical HOSPITAL\ ADMISSION date values.</td></tr><tr><td>1</td><td>admitting diagnosis(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td> ADMITTING DIAGNOSIS is a required field listing the diagnosis that has resulted in this patient's hospital admission for this episode.</td></tr><tr><td>2</td><td>admission type</td><td>0;3</td><td>SET OF CODES</td><td>R:EMERGENCY<br/>S:REGULARLY SCHEDULED<br/>L:ELECTIVE<br/>O:OUTPATIENT<br/>T:TESTS<br/></td><td></td><td></td></tr><tr><td>3</td><td>specialty</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td> This field records the department or group responsible for treatment of this patient.</td></tr><tr><td>4</td><td>ward</td><td>0;5</td><td>SET OF CODES</td><td>3N:WOMEN'S SURGICAL<br/>1N:MEN'S SURGICAL<br/>2N:ICU<br/>2E:PEDIATRICS<br/>3S:WOMEN'S NON-SURGICAL<br/>2S:MEN'S NON-SURGICAL<br/></td><td></td><td> In a real-world situation, this field would be a pointer to a file of wards (because of large number).  Here, there are only a few for demonstration, so WARD will be a set.</td></tr><tr><td>5</td><td>room/bed</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td> This hospital has less than 1000 rooms, so the maximum number of digits in a room number is three.  The  maximum number of beds per room is four; beds are labeled A,B,C and D.</td></tr><tr><td>6</td><td>discharge date</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>7</td><td>provider</td><td>0;8</td><td>POINTER</td><td><a href="19001_0019.html">19001.0019</a></td><td></td><td> The PROVIDER field should not usually allow LAYGO.  Here it is permitted because student must manually fill data base.</td></tr><tr><td>8</td><td>prescription</td><td>1;0</td><td>MULTIPLE</td><td><a href="19001_188.html">19001.188</a></td><td></td><td></td></tr><tr><td>9</td><td>clinic appointment</td><td>2;0</td><td>MULTIPLE</td><td><a href="19001_189.html">19001.189</a></td><td></td><td> This field lists any clinic appointments incurred by the patient during his hospital stay.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

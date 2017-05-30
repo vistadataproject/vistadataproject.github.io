@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MICOM CONTENTION DEVICES</h1></div><div id="results"><dl><dt>name</dt><dd>MICOM CONTENTION DEVICES</dd><dt>number</dt><dd>106</dd><dt>location</dt><dd>^%ZIS("Z",106,</dd><dt>description</dt><dd>Used to disconnect DZ devices from Micom ports when users log outthrough H^XUS. Also used to map a printer to a Micom line number for use in printercontention.</dd><dt>applicationGroups</dt><dd>ZISL;XU</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>device(+)</td><td>0;1</td><td>POINTER</td><td><a href="3_5.html">3.5</a></td><td>B</td><td>The DZ DEVICE NUMBER is used for disconnecting the port connected to theDZ through a software disconnect. It is also used for printer contention.  It should contain the alpha-numeric name of the printer with the 'Micom line or shelf/channel'field entered and an entry for the DZ device and theassociated 'Micom port or shelf/channel' field entered.  The DZdevice should be the same as $I found in the DEVICE file for theprinter.</td></tr><tr><td>1</td><td>micom port or shelf/channel</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>The Micom Port that the DZ Device connects to.</td></tr><tr><td>1.1</td><td>micom line or shelf/channel</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>The Micom Line that the contention printer connects to.</td></tr><tr><td>2</td><td>enable auto disconnect(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:Enable<br/>0:Disable<br/></td><td></td><td>Used to control whether a software disconnect should be performed on this device.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

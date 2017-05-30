@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SOURCE CATEGORY</h1></div><div id="results"><dl><dt>name</dt><dd>SOURCE CATEGORY</dd><dt>number</dt><dd>757.13</dd><dt>location</dt><dd>^LEX(757.13,</dd><dt>description</dt><dd>This file contains term categories provided by terminology source files.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>category name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of a terminology category specified by a source vocabulary (i.e.,VA Drug Class as specified by NDF or Diagnostic class as specified by ICD).</td></tr><tr><td>1</td><td>category identifier</td><td>0;2</td><td>FREE TEXT</td><td></td><td>ACID</td><td>A single code (i.e., NDF code AH200 for Antihistamines, Ethanolamine) or arange of codes (i.e., ICD range of codes 001-009 for Intestinal InfectiousDiseases) assigned to the terminology category by the source vocabulary.</td></tr><tr><td>2</td><td>parent category</td><td>1;1</td><td>POINTER</td><td><a href="757_13.html">757.13</a></td><td></td><td>This is the internal entry number in the Source Category file #757.13 wherethe parent category is located.</td></tr><tr><td>3</td><td>parent category identifier</td><td>1;2</td><td>FREE TEXT</td><td></td><td>APID</td><td>If a source category has a parent, then the parent category identifier willbe included.  It is a code or a range of codes assigned to the parent category by the source vocabulary.</td></tr><tr><td>4</td><td>ancestor category</td><td>2;1</td><td>POINTER</td><td><a href="757_13.html">757.13</a></td><td></td><td>This is the internal entry number (IEN) in the Source Category file #757.13where the ancestral category is located.  Ancestral categories are characterized as a category without a parent.</td></tr><tr><td>5</td><td>ancestor category identifier</td><td>2;2</td><td>FREE TEXT</td><td></td><td>AAID</td><td>This is the identifier of the ancestral category and consist of a code or arange of codes assigned by the source vocabulary.</td></tr><tr><td>6</td><td>family descendants</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>This is a listing of internal entry numbers starting with the ancestralcategory to the named category (.01 field).  The internal entry numbers are delimited by the tilde (~) character.  <ANC>~<...>~<...>~<PAR>~<CATEGORY></td></tr><tr><td>7</td><td>family ancestors</td><td>3;2</td><td>FREE TEXT</td><td></td><td></td><td>This is a listing of internal entry numbers starting with the named category(.01 field) to the ancestral category.  The internal entry numbers are delimited by the tilde (~) character.  <CAT>~<PAR>~<...>~<...>~<ANC></td></tr><tr><td>8</td><td>source</td><td>4;1</td><td>POINTER</td><td><a href="757_14.html">757.14</a></td><td></td><td>This is a pointer to the Source file #757.14 containing the common and acceptable name for the source of the category (i.e., NDF VA Drug Class,ICD Three Digit Classification, etc), and the source file or document containing the category.</td></tr><tr><td>9</td><td>system or group</td><td>5;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the system (i.e., cardiovascular, pulmonary, etc) or group (pharmacy, etc) which is MOST frequently associated with thesource category.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

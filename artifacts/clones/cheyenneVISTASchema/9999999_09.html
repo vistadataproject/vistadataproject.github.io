@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EDUCATION TOPICS</h1></div><div id="results"><dl><dt>name</dt><dd>EDUCATION TOPICS</dd><dt>number</dt><dd>9999999.09</dd><dt>location</dt><dd>^AUTTEDT(</dd><dt>description</dt><dd>This file defines the names of education topics to be tracked at yoursite. Education topics that are not to be used should be marked "Inactive"in the Active Status field. Changes to this data dictionary should be coordinated thru the IHS DBA. A x-ref on the MNEMONIC field was added to version 93.2.</dd><dt>applicationGroups</dt><dd>PXRM</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the Patient Education Topic. Patient Education Topicsare the subject on which a patient needs some more information in orderto continue on his road to better health. For example, a patient may have had some podiatry work done and received foot care education. 'foot care'would be the name of the education topic. Enter a Topic that is 3-30 characters in length.</td></tr><tr><td>.03</td><td>inactive flag</td><td>0;3</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td>This field is used to inactivate an education topic.  If this fieldcontains a "1" then the education topic is inactive.  Inactive educationtopics cannot be selected in the manual data entry process.  Educationtopic entries should be made inactive when they are no longer used.  Donot delete the entry or change the meaning of the education topic entry. To make an inactive education topic active, enter the symbol "@" to deletethe "1" from the field.</td></tr><tr><td>.04</td><td>print name</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the education that will be displayed in menu selection,and on Health Summaries.</td></tr><tr><td>10</td><td>subtopic</td><td>10;0</td><td>MULTIPLE</td><td><a href="9999999_091001.html">9999999.091001</a></td><td></td><td></td></tr><tr><td>11</td><td>educational outcome</td><td>11;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is a statement about what outcome is expected when providing thispatient education.  It may reflect education plan and goals.</td></tr><tr><td>12</td><td>educational standards</td><td>12;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the standards that and educator should use to teach the patientor family or significant other.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

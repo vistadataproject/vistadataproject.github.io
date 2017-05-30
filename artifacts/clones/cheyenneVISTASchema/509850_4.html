@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > A&SP PROCEDURE CODE</h1></div><div id="results"><dl><dt>name</dt><dd>A&SP PROCEDURE CODE</dd><dt>number</dt><dd>509850.4</dd><dt>location</dt><dd>^ACK(509850.4,</dd><dt>description</dt><dd>The A&SP PROCEDURE CODE file (#509850.4) contains pointers to a small subset of CPT-4 codes which pertain to Audiology and Speech Pathology.Entries in this file are pointed to by the PROCEDURE CODE field in the A&SP CLINIC VISIT file (#509805.6).  Before using the QUASAR package, the supervisor must enter cost data for each procedure code in the A&SP PROCEDURE CODE file. This can be done using the Enter Cost Information for Procedures option.  This file arrives at the VAMC with data.  This file SHOULD NOT be altered through the use of VA FileMan; input should take place ONLY through the QUASAR menu options.  Per VHA Directive 10-93-142, this file definition SHOULD NOT be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>POINTER</td><td><a href="81.html">81</a></td><td>B</td><td>The CODE field contains the pointer to the CPT-4 procedure code for Audiology and Speech Pathology.</td></tr><tr><td>.02</td><td>clinic stop</td><td>0;2</td><td>SET OF CODES</td><td>S:SPEECH<br/>A:AUDIOLOGY<br/>SA:EITHER<br/></td><td></td><td>The CLINIC STOP field contains A for AUDIOLOGY, S for SPEECH PATHOLOGY, or SA for EITHER Speech or Audiology.  The CPT CODE is used for one of these clinic stops.</td></tr><tr><td>.03</td><td>*card code</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>The CARD CODE field has been marked for deletion.  Card code capability was not implemented in QUASAR V. 1.0.  Eighteen months after the release of QUASAR V. 2.0, this field can be removed.</td></tr><tr><td>.04</td><td>active</td><td>0;4</td><td>SET OF CODES</td><td>0:INACTIVE<br/>1:ACTIVE<br/></td><td></td><td>The ACTIVE field contains 0 for INACTIVE or 1 for ACTIVE.  Because entries in the A&SP PROCEDURE CODE file are pointed to by the PROCEDURE CODE field in the A&SP CLINIC VISIT file, entries should not be deleted.  Periodically, CPT-4 codes are inactivated by the code developers, the Department of Veterans Affairs, or the Director, Audiology and Speech Pathology Service (VAHQ).  Procedure codes which are not to be used are marked as inactive.</td></tr><tr><td>.05</td><td>modifiers allowed</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>No longer used after the installation of Quasar Version 3.0.The MODIFIERS ALLOWED field activates or inactivates CPT-4 code modifiers (i.e., 0 for NO or 1 for YES).  CPT-4 codes for Audiology and Speech Pathology may not adequately describe the scope or variety of procedures seen by audiologists and speech pathologists.  Recognizing this deficiency, modifiers have been developed for certain codes to clarify procedures or to provide codes for procedures where no codes now exist.</td></tr><tr><td>.06</td><td>cost</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>The COST field contains the current unit cost for each CPT-4 procedure.You can use average community costs from private sector hospitals and clinics, Medicare reimbursement rates, or insurance UCRs. You can also enter real costs, if these are known.</td></tr><tr><td>1</td><td>allowable modifiers</td><td>1;0</td><td>MULTIPLE</td><td><a href="509850_41.html">509850.41</a></td><td></td><td>The ALLOWABLE MODIFIERS field is a multiple field containing the letter, description, and cost for a CPT-4 procedure code.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

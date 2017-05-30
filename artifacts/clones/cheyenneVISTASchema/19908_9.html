@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > 3M HDM PARAMETER</h1></div><div id="results"><dl><dt>name</dt><dd>3M HDM PARAMETER</dd><dt>number</dt><dd>19908.9</dd><dt>location</dt><dd>^VEPE3M(19908.9,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>for 3m system(+)</td><td>0;1</td><td>POINTER</td><td><a href="19908.html">19908</a></td><td>B</td><td>This field allows selection of any Health Data Management (HDM) definedmodule from the 3M SYSTEM PARAMETER file.</td></tr><tr><td>.02</td><td>include inpat appt?</td><td>0;2</td><td>BOOLEAN</td><td>1:Yes<br/>0:No<br/></td><td></td><td>This field is used to determine if patients seen as outpatientsbut were currently admitted as inpatients should be included inthe selection of encounters. (STATUS = INPATIENT APPOINTMENT)</td></tr><tr><td>.03</td><td>last encounter ien</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field will contain the last outpatient encounter IEN to helpwith processing.  It will be initialized during the installationof the HDM interface.</td></tr><tr><td>.04</td><td>pull days</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the number of days to wait for an encounter being builtbefore it's selected for batch extraction.</td></tr><tr><td>.05</td><td>task#</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the task number assigned by TaskMan when setting upto run the processing program.</td></tr><tr><td>.06</td><td>starting encounter ien</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field will be set from the post-installation program and isthe last encounter IEN currently in the system.</td></tr><tr><td>.07</td><td>include disusers</td><td>0;7</td><td>SET OF CODES</td><td>0:Do Not Include<br/>1:Include<br/></td><td></td><td>This field will allow a site to make a choice on whether to includeusers marked with the DISUSER flag in the New Person File as an active user instead of an inactive user for the 3M HDM ProviderTable output.</td></tr><tr><td>.08</td><td>hold days</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This field is the number of days to hold transmitted but notprocessed records in the queue for late identifying insurance.  If a record with a status of 'transmitted' is older than todayminus the number of hold days, then that record will be removedfrom the 3M HDM Queue file.</td></tr><tr><td>1.01</td><td>include clinic</td><td>1;0</td><td>MULTIPLE</td><td><a href="19908_9001.html">19908.9001</a></td><td></td><td>This field allows the user to select a hospital location whichhas been designated "Non-Count" for encounter selection.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

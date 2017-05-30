@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ALTERNATE EDITOR</h1></div><div id="results"><dl><dt>name</dt><dd>ALTERNATE EDITOR</dd><dt>number</dt><dd>1.2</dd><dt>location</dt><dd>^DIST(1.2,</dd><dt>description</dt><dd>This file stores information about the editors that can be used to edit VAFileMan WP fields. The LINE EDITOR and SCREEN EDITOR are exported with VAFileMan, but instructions are given to allow site managers to enter localeditors of their choice.  There is a pointer in the NEW PERSON File tothis file.  The pointed-to editor for that person is then used wheneverthe person edits a WP field.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the alternate editor. It must start with a uniquecharacter.</td></tr><tr><td>1</td><td>activation code from diwe(+)</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This field holds the MUMPS code to properly establish the environmentthat will allow use of this editor to edit any VA FileMan word-processingtype field.  Typically this code might move the text into anotherMUMPS global (like ^UTILITY) or to some other file format for editing.If the editor is written in MUMPS, it should either use variables thatdo not begin with the letter "D", or should NEW all its local variablesto avoid problems on return to the FileMan editor.If the variable DIWE(1) is defined, it indicated that the userhas switched to this editor from the standard FileMan Line Editor, andupon return, the control will be returned to the line editor.This editor may set the variable DIWESW to 1, if they wish to allowthe user to switch to an alternate editor from this one.This editor is required to restore the edited text to standard FileManword-processing format before exiting.</td></tr><tr><td>2</td><td>ok to run test</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This field holds MUMPS code used to pre-check the environment beforeallowing the user to enter this editor.  This field should set the$TEST indicator.  If $TEST is true then it is OK for this editor torun at this time.  If $T is false, the user will be returned to theFileMan line editor.If the field is null, it will be the same as $T=trueAn example would be a mixed VAX-PDP site using a VMS editor.</td></tr><tr><td>3</td><td>return to calling editor</td><td>3;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>If the user switched to this editor from the FileMan line editor, thenDIWE(1) exists.  This field should contain MUMPS code used to resetthe environment needed by the Line Editor.</td></tr><tr><td>7</td><td>description</td><td>7;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is a description of the editor that will be shown to the userif they enter ??? at the Select prompt.Not in use yet.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ERROR MESSAGE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="791810_0201.html">791810.0201</a></dd><dt>name</dt><dd>ERROR MESSAGE</dd><dt>number</dt><dd>791810.201101</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>error message</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the actual free text message returned from the DDC as part of theorder update process.</td></tr><tr><td>.02</td><td>sent by</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the free text name of the DDC staff person who processed theorder.  It is be used as a reference if there are questions aboutthe order.</td></tr><tr><td>.03</td><td>telephone #</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the telephone number of the DDC staff person who processed theorders.  It is to be used in the event of questions or problems withthe order.</td></tr><tr><td>.04</td><td>status update</td><td>0;4</td><td>POINTER</td><td><a href="791810_2.html">791810.2</a></td><td></td><td>This is a pointer to the Order Status File for the updated statusof this order that has resulted from the processing procedure at theDDC.</td></tr><tr><td>.05</td><td>date message processed by ddc</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date that the message was processed at the DDC.</td></tr><tr><td>.06</td><td>message read?</td><td>0;6</td><td>SET OF CODES</td><td>1:MESSAGE READ<br/>0:MESSAGE NOT READ<br/></td><td></td><td>This field indicates whether or not a message from the DDC to thestation has been read or not.  The standard message indicatingcompletion is automatically set to 'MESSAGE READ'.</td></tr><tr><td>.07</td><td>last user reading message</td><td>0;7</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field contains the name of the last user to read the message.</td></tr><tr><td>.08</td><td>related line item</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This field contains the internal number of the line item that thismessage applies to.</td></tr><tr><td>.09</td><td>purchase order number</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the Purchase Order Number for the line item order.</td></tr><tr><td>.1</td><td>ship date</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>The date that the DDC expects to ship the line item.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

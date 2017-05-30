@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OUTPATIENT PROFILE</h1></div><div id="results"><dl><dt>name</dt><dd>OUTPATIENT PROFILE</dd><dt>number</dt><dd>404.41</dd><dt>location</dt><dd>^SCPT(404.41,</dd><dt>description</dt><dd>This table contains outpatient related information for a patient.For example, it contains computed fields that indicate the currentprimary care team, positions and practitioner assigned to the patient.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This is a surrogate for the patient file.  It contains only outpatientinformation.</td></tr><tr><td>.02</td><td>send appointment letters?</td><td>0;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td></td></tr><tr><td>.03</td><td>contract nursing home patient</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This indicates if the patient is a contract nursing home patient.This can then be used in helping to schedule the patient to assureproper personnel are available before and after the appointment.</td></tr><tr><td>.04</td><td>primary care?</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This indicates if patient has been or will be assigned to a Primary CareTeam.</td></tr><tr><td>25</td><td>comment</td><td>C;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr><tr><td>201</td><td>current pc practitioner </td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current Primary Care Practitioner,from the Primary Care Profile History File.</td></tr><tr><td>202</td><td>current pc attending</td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current primary care attendingpractitioner from the Patient Team/Position Assignment file.</td></tr><tr><td>203</td><td>current pc team</td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current primary care team.</td></tr><tr><td>204</td><td>current pc practitioner pos</td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current primary care practitionerposition.</td></tr><tr><td>205</td><td>*current pc attending position</td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current primary care attending practitioner positionfor the patient.</td></tr><tr><td>206</td><td>current associate pc provider</td><td></td><td>COMPUTED</td><td></td><td></td><td>This calculates the current Associate Primary Care provider.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

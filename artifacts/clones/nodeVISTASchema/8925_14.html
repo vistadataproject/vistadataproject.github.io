@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ITEM</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8925_1.html">8925.1</a></dd><dt>name</dt><dd>ITEM</dd><dt>number</dt><dd>8925.14</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>item</td><td>0;1</td><td>POINTER</td><td><a href="8925_1.html">8925.1</a></td><td>B</td><td>Items are themselves Document Definitions.  The Type of the parent entrydetermines what Types of items it has.  A parent entry of type Class hasitems of type Class or Document Class.  A Document Class entry has itemsof type Title.  If a Title entry has more than a single section, it hasitems of type Component.  Components may also be multi-section with itemsof type Component.  Objects do not have items.</td></tr><tr><td>2</td><td>mnemonic</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Item Mnemonic is a handle by which to select Classes/Document Classes froma menu. 1-4 characters long.  Mnemonic is usually numeric with the samevalue as the Sequence.  Alpha mnemonics are permitted if preferred.</td></tr><tr><td>3</td><td>sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td>AC</td><td>Item Sequence, if entered, determines item's order under its parent. Ifitems have no sequence, item order is alphabetic by item Menu Text.Sequence must be between .01 and 999.</td></tr><tr><td>4</td><td>menu text(+)</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Item Menu Text is the short name users will see for Classes and DocumentClasses when selecting them from 3-COLUMN MENUS.  Document Definitions areselected from 3-column menus when viewing documents across many patientsand when viewing many kinds of documents at the same time (e.g. ProgressNotes and Discharge Summaries). To edit the Menu Text of a Document Definition, you must be viewing theDocument Definition as an ITEM of its PARENT. Select 'Detailed Display'for the PARENT and then 'Items'. Menu Text has 1 - 20 characters. Menu Text must not begin with a space orwith 'All'.  The Document Definition Utility TIUF automatically sets theItem Menu Text to the first 20 characters of the Item's Name when an entryis first added as an item. (If an entry's Name begins with 'All' its MenuText is given 'AlX' as its first 3 characters.) The utility does NOTupdate Menu Text if the entry Name is later changed, since this wouldoverwrite what a site may have carefully set up.  Menu Text is required. Menu Text can affect item order under a parent since order is alphabeticby menu text if items do not have sequence numbers.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

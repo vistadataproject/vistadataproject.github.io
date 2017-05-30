@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLAIMS TRACKING NON-ACUTE CLASSIFICATIONS</h1></div><div id="results"><dl><dt>name</dt><dd>CLAIMS TRACKING NON-ACUTE CLASSIFICATIONS</dd><dt>number</dt><dd>356.4</dd><dt>location</dt><dd>^IBE(356.4,</dd><dt>description</dt><dd>This file contains the list of approved non-acute classifications providedby the UM office in VACO.  The codes are used in roll up of national data Do NOT add, edit, or delete entries in this file without instructionsfrom your ISC. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>short name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the first 30-60 characters of the description of the non-acuteclassification.</td></tr><tr><td>.02</td><td>code(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the external reference number by which this data isuniquely known.  This is the value that will be transmitted in the national roll up.</td></tr><tr><td>.04</td><td>factor</td><td>0;4</td><td>SET OF CODES</td><td>1:SOCIAL FACTORS<br/>2:ENVIRONMENTAL FACTORS<br/>3:SCHEDULING<br/>4:BED/SERVICE AVAILIBILITY<br/>5:PRACTITIONER FACTOR<br/>6:ADMINISTRATIVE<br/>7:COMMUNICATION PROBLEMS<br/>8:OTHER<br/></td><td>D</td><td>Enter the name of the factor that best describes this classification.</td></tr><tr><td>.05</td><td>day or admission</td><td>0;5</td><td>SET OF CODES</td><td>1:ADMISSION (NON-ACUTE)<br/>2:DAY(S) OF CARE (NON ACUTE)<br/></td><td></td><td>Enter whether this classification for not meeting criteria is foradmissions or days of care.</td></tr><tr><td>10</td><td>reason</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the long description of the non-acute classification.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDERABLE ITEM</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="53_2.html">53.2</a></dd><dt>name</dt><dd>ORDERABLE ITEM</dd><dt>number</dt><dd>53.22</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>orderable item</td><td>0;1</td><td>POINTER</td><td><a href="50_7.html">50.7</a></td><td>B</td><td>This is the orderable item for the medication order.</td></tr><tr><td>2</td><td>dosage ordered</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the total amount of the medication that is to be administeredas one dose, such as '500MG' or '100CC'. This cannot be a number only.The type of unit (MG, CC, etc.) must be included. </td></tr><tr><td>4</td><td>day (nd) or dose (nl) limit</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This should contain the length of the order with this drug either in DAYS or DOSES (administered). If the length is in DAYS, the number of days entered mut be followed by a D. If the length is a DOSE LIMIT, thenumber entered must be followed by an L.</td></tr><tr><td>5</td><td>start day and time</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>If the order with this drug is not to start the day the order set isselected, enter when the order is to start here.  Enter as a future dateand time in the form of "T+..."</td></tr><tr><td>6</td><td>med route(+)</td><td>0;3</td><td>POINTER</td><td><a href="51_2.html">51.2</a></td><td></td><td>This is the route of administration for this drug.</td></tr><tr><td>7</td><td>schedule type(+)</td><td>0;4</td><td>SET OF CODES</td><td>C:CONTINUOUS<br/>O:ONE TIME<br/>OC:ON CALL<br/>P:PRN<br/>R:FILL on REQUEST<br/></td><td></td><td>This is the type of schedule for the administration of the drug.  Please remember that PRE-OP orders fall under ON CALL, and that FILL on REQUEST includes MULTI-DOSE containers.</td></tr><tr><td>8</td><td>schedule</td><td>0;5</td><td>POINTER</td><td><a href="51_1.html">51.1</a></td><td></td><td></td></tr><tr><td>9</td><td>special instructions</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>Enter any special instructions (using abbreviations whenever possible)needed for this order.  This would include the physician's reason forordering a PRN. This field utilizes the abbreviations and expansions fromthe MEDICATION INSTRUCTION file.</td></tr><tr><td>10</td><td>dispense drug</td><td>2;0</td><td>MULTIPLE</td><td><a href="53_23.html">53.23</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

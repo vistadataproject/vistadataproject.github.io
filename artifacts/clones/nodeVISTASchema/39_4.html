@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ADT/HL7 TRANSMISSION</h1></div><div id="results"><dl><dt>name</dt><dd>ADT/HL7 TRANSMISSION</dd><dt>number</dt><dd>39.4</dd><dt>location</dt><dd>^VAT(39.4,</dd><dt>description</dt><dd>This file will be used to keep track of HL7 transmissions sent to externalsystems.  An entry in this file will be created for each transmissionsent, when an acknowledgement is returned the entry will be deleted.  Thisfile will contain transmitted records and records not accepted by othersystems. The file is currently maintained by the VIC software modules and shouldnot be altered. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>message id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The unique ID for the HL7 message</td></tr><tr><td>.02</td><td>transmission date/time</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date/time that the message was generated</td></tr><tr><td>.03</td><td>patient</td><td>0;3</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>The name of the patient for which this transmission occurred</td></tr><tr><td>.04</td><td>transmitted by</td><td>0;4</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field is used to indicate which person caused the transmission to besent.</td></tr><tr><td>.05</td><td>dhcp option</td><td>0;5</td><td>POINTER</td><td><a href="19.html">19</a></td><td></td><td>This field will contain the option from which the transaction was invoked.</td></tr><tr><td>.06</td><td>sending application</td><td>0;6</td><td>POINTER</td><td><a href="771.html">771</a></td><td></td><td>This field contain the application which generated the transmission.</td></tr><tr><td>.07</td><td>status</td><td>0;7</td><td>SET OF CODES</td><td>0:TRANSMITTED<br/>1:REJECT ACK<br/></td><td></td><td>This field will contain a 0 if the record has been transmitted but not yetacknowledged.  It will contain a 1 if a negative acknowledgement is returned</td></tr><tr><td>.08</td><td>reject reason</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This field will contain a message explaining why the transmission was rejected.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

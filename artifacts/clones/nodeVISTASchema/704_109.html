@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TERM_MAPPING_PAIR</h1></div><div id="results"><dl><dt>name</dt><dd>TERM_MAPPING_PAIR</dd><dt>number</dt><dd>704.109</dd><dt>location</dt><dd>^MDC(704.109,</dd><dt>description</dt><dd>NOTICE: This file is maintained exclusively by the CP Terminology group and must not be modified or edited in any way. Subsequent releases of CP Terminology may create lasting errors in the CliO data store if this file is changed.  This file correlates a vendor (VENDOR KEY field #.1) with a mapping-table (MAPPING TABLE ID field #.01) and an HL7 message segment(TERM TYPE field #.03).A sample entry could be interpreted as follows:         Mapping-TableXX is used for processing when VendorX has sent an          XType message.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>mapping table id(+)</td><td>0;1</td><td>POINTER</td><td><a href="704_108.html">704.108</a></td><td></td><td>This identifies the mapping-table of this TERM MAPPING PAIR entry.A sample could identify "Mapping-TableXX".</td></tr><tr><td>.03</td><td>term type(+)</td><td>0;3</td><td>POINTER</td><td><a href="704_102.html">704.102</a></td><td></td><td>This field will determine the HL7 message segment relating to this term mapping pair; and identifies a term-type in the TERM TYPE File (#704.102).A sample could be a TERM TYPE identifying the HL7 message segment with "XType" data to be related to this term mapping pair.</td></tr><tr><td>.04</td><td>term</td><td>0;4</td><td>POINTER</td><td><a href="704_101.html">704.101</a></td><td></td><td>This field identifies the TERM relating to this term mapping pair.A sample TERM could identify "TEMPERATURE".</td></tr><tr><td>.1</td><td>vendor key(+)</td><td>.1;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates the vendor related to this term mapping pair.A sample VENDOR KEY could be "111X213". </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

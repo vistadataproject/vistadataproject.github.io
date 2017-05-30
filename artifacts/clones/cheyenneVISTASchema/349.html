@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AR TRANSMISSION RECORDS</h1></div><div id="results"><dl><dt>name</dt><dd>AR TRANSMISSION RECORDS</dd><dt>number</dt><dd>349</dd><dt>location</dt><dd>^RCT(349,</dd><dt>description</dt><dd>This file is used to store transmission records that are sentby the Accounts Receivable software.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>transmission record id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This name of the transmission record is assigned to this field.</td></tr><tr><td>.02</td><td>transmission type(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates the transmission type of the record.</td></tr><tr><td>.03</td><td>message sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field should be set internally during the creation of thetransmission.</td></tr><tr><td>.04</td><td>message total</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the Mailman message number that contained the transmissionrecord.</td></tr><tr><td>.05</td><td>site</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the site's station number.</td></tr><tr><td>.06</td><td>facility phone number</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is site's phone number.</td></tr><tr><td>.07</td><td>total records in message</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This field indicates the total number of associated records if any.</td></tr><tr><td>.08</td><td>message amount</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This field contains a dollar amount associated with the record.</td></tr><tr><td>.09</td><td>statement date</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the site's statement day.</td></tr><tr><td>.1</td><td>process date</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This is the date of the last activity on the statements.</td></tr><tr><td>.11</td><td>date created</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the record was created.</td></tr><tr><td>.12</td><td>mailman message</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td>This is the message number for this segment.</td></tr><tr><td>11</td><td>site street address1</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the first line of site address.</td></tr><tr><td>12</td><td>site street address2</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the second line of site street address.</td></tr><tr><td>13</td><td>site city</td><td>1;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the city name of the site address.</td></tr><tr><td>14</td><td>site state</td><td>1;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the city name of the site address.</td></tr><tr><td>15</td><td>site zip code</td><td>1;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the zip code of the site address.</td></tr><tr><td>21</td><td>remote recepient</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the addressee for a remote domain.</td></tr><tr><td>22</td><td>remote domain</td><td>2;2</td><td>POINTER</td><td><a href="4_2.html">4.2</a></td><td></td><td>This is the domain where the transmission should be routed.</td></tr><tr><td>23</td><td>local mailgroup</td><td>2;3</td><td>POINTER</td><td><a href="3_8.html">3.8</a></td><td></td><td>This is the mailgroup that will also receive transmissions from this file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

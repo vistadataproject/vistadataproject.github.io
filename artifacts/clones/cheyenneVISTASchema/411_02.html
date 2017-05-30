@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRINTER USE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="411.html">411</a></dd><dt>name</dt><dd>PRINTER USE</dd><dt>number</dt><dd>411.02</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>printer location</td><td>0;1</td><td>SET OF CODES</td><td>F:FISCAL (P.O.,1358)<br/>FR:FISCAL (REC.REPORTS)<br/>R:RECEIVING (SUPPLY)<br/>S:SUPPLY (PPM)<br/>S8:SUPPLY 2138<br/>S9:SUPPLY 2139<br/>A:ACCOUNTS REC.<br/>UB:UB-82<br/>IFP:IMPREST FUNDS P.O.<br/>IFR:IMPREST FUNDS RECEIVING REPORT<br/>M:MAILMESSAGE<br/></td><td></td><td>This is the administrative activityprinter location.</td></tr><tr><td>1</td><td>device(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the printer device assigned to this location.</td></tr><tr><td>2</td><td>stack documents</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>YES indicate that the documents will be heldfor later release.</td></tr><tr><td>3</td><td>days for documents retention</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>     This field is used to calculate the date to stop purging of this file'sentries. If this field is blank, the default will be 7 days so thatentries older than 7 days are purged when the background job to purgethis file runs.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

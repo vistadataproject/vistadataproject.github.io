@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > STATE</h1></div><div id="results"><dl><dt>name</dt><dd>STATE</dd><dt>number</dt><dd>5</dd><dt>location</dt><dd>^DIC(5,</dd><dt>description</dt><dd>This file contains the name of the state (or outlying area) as issuedby the Department of Veterans Affairs and issued in M-1, Part I,Appendix B.  These entries should remain as distributed and should not beedited or updated unless done via a software upgrade or under directionof VA Central Office.</dd><dt>applicationGroups</dt><dd>VA;QAP</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This field contains the internal entry number of the state.  In mostcases, this should also correspond to the VA STATE CODE field.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the state (or outlying area) as issuedby the Department of Veterans Affairs and issued in M-1, Part I AppendixB.  These entries should remain as distributed and should not be editedor updated unless done via a software upgrade or under direction of VACentral Office.</td></tr><tr><td>1</td><td>abbreviation(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains the recognized abbreviation for the state.  Thisabbreviation is transmitted to Austin from various DHCP packages andtherefore should not be altered unless you are directed to do so.</td></tr><tr><td>2</td><td>va state code</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>This is a numeric code (2 characters in length) which many packagestransmit as to Austin to represent the state a patient resides orreceives treatment in.  This value should not be altered OR IT COULDSERVERELY AND ADVERSELY AFFECT OPERATIONS AT YOUR MEDICAL CENTER.</td></tr><tr><td>2.1</td><td>aac recognized(+)</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field designates whether or not the Austin Automation Center(AAC) recognizes this State.</td></tr><tr><td>2.2</td><td>us state or possession</td><td>0;6</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>This field designates if this entry is a US State or United Sates possession.</td></tr><tr><td>3</td><td>county</td><td>1;0</td><td>MULTIPLE</td><td><a href="5_01.html">5.01</a></td><td></td><td>This multiple contains the names and codes of all recognized countiesfor this state.  This information is distributed from VA Central Officeand it should NOT be altered unless you are directed to do so fromsomeone in that office.</td></tr><tr><td>5</td><td>capital</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the name of the capital city for this state.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

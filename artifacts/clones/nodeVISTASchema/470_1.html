@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PATIENT FUNDS MASTER TRANSACTION</h1></div><div id="results"><dl><dt>name</dt><dd>PATIENT FUNDS MASTER TRANSACTION</dd><dt>number</dt><dd>470.1</dd><dt>location</dt><dd>^PRPF(470.1,</dd><dt>description</dt><dd>This file is the file which contains ALL transactactions entered forALL patients.  The Transaction field of each patient account pointsto this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>transaction id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td></td></tr><tr><td>1</td><td>patient name</td><td>0;2</td><td>POINTER</td><td><a href="470.html">470</a></td><td></td><td></td></tr><tr><td>2</td><td>patient transaction #</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>3</td><td>amount</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>4</td><td>transaction date(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td>AD</td><td></td></tr><tr><td>5</td><td>date transaction entered(+)</td><td>0;6</td><td>DATE-TIME</td><td></td><td>AC</td><td></td></tr><tr><td>5.5</td><td>days between dates</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr><tr><td>6</td><td>reference</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>7</td><td>deposit/withdrawal(+)</td><td>0;8</td><td>SET OF CODES</td><td>D:DEPOSIT<br/>W:WITHDRAWAL<br/></td><td></td><td></td></tr><tr><td>8</td><td>cash/check/other(+)</td><td>0;9</td><td>SET OF CODES</td><td>1:CASH<br/>2:CHECK<br/>3:OTHER<br/></td><td></td><td></td></tr><tr><td>9</td><td>source</td><td>0;10</td><td>SET OF CODES</td><td>P:PRIVATE SOURCE<br/>G:GRATUITOUS<br/>B:BOTH<br/></td><td></td><td></td></tr><tr><td>10</td><td>form(+)</td><td>0;11</td><td>POINTER</td><td><a href="470_2.html">470.2</a></td><td></td><td></td></tr><tr><td>11</td><td>private source amt</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>12</td><td>gratuitous amount</td><td>0;13</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>13</td><td>patient funds clerk(+)</td><td>0;14</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td></td></tr><tr><td>13.5</td><td>validation code</td><td>0;17</td><td>NUMERIC</td><td></td><td></td><td>Field contains the validation code for verification of electronic signature.</td></tr><tr><td>13.7</td><td>validation version</td><td>0;22</td><td>NUMERIC</td><td></td><td></td><td>This field contains the version number used to encode the ElectronicSignature Code.</td></tr><tr><td>14</td><td>electronic signature</td><td>0;15</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>15</td><td>remarks</td><td>0;16</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>16</td><td>balance carried forward amt</td><td>0;18</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>17</td><td>pvt source bal carried fwd</td><td>0;19</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>18</td><td>gratuitous bal carried fwd</td><td>0;20</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>19</td><td>deferral date</td><td>0;21</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>20</td><td>sig conversion completed</td><td>0;22</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td></td></tr><tr><td>21</td><td>signature code date/time</td><td>0;23</td><td>DATE-TIME</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

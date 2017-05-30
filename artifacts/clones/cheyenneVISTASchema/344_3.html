@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EDI LOCKBOX DEPOSIT</h1></div><div id="results"><dl><dt>name</dt><dd>EDI LOCKBOX DEPOSIT</dd><dt>number</dt><dd>344.3</dd><dt>location</dt><dd>^RCY(344.3,</dd><dt>description</dt><dd>This file is used to store EFT payment data received to allow the site torecord the amount of the daily EDI Lockbox deposit to treasury that belongsto their site.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This field contains a sequential number generated at the time a recordis stored in the file.  It only serves to create an entry in the fileand has no other special meaning.</td></tr><tr><td>.02</td><td>file date/time</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field is used to store the file date/time for payments.</td></tr><tr><td>.03</td><td>ar deposit record</td><td>0;3</td><td>POINTER</td><td><a href="344_1.html">344.1</a></td><td>ARDEP</td><td>This is the reference to the deposit ticket in AR that was created bythis EFT.</td></tr><tr><td>.05</td><td>mail message</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the number of the mail message in which this EFT was received.</td></tr><tr><td>.06</td><td>deposit number</td><td>0;6</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the deposit number assigned by the banking institution for this payment.</td></tr><tr><td>.07</td><td>deposit date</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>This is the deposit date assigned by the banking institution for this payment.</td></tr><tr><td>.08</td><td>total deposit amount</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This is the amount of the deposit into the banking institution.</td></tr><tr><td>.09</td><td>eft checksum</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>This is the value of the checksum for the detail records in this record.It is used to ensure the records are not changed after the data has beenstored and before it has been recorded in AR.</td></tr><tr><td>.1</td><td>checksum error</td><td>0;10</td><td>SET OF CODES</td><td>0:NO ERROR<br/>1:CHECKSUM ERROR EXISTS<br/></td><td></td><td>This is the indicator that says the checksum stored does not match thecalculated checksum for this record.</td></tr><tr><td>.11</td><td>date posted</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the funds for this EFT were posted.</td></tr><tr><td>.12</td><td>amount posted to deposit</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td>This is the amount of money that was posted as a deposit as a resultof this EFT.</td></tr><tr><td>.13</td><td>date/time added</td><td>0;13</td><td>DATE-TIME</td><td></td><td>ARECDT</td><td>This is the date and time this record was last stored in VistA.</td></tr><tr><td>.14</td><td>total amount matched</td><td>0;14</td><td>NUMERIC</td><td></td><td></td><td>This is the total amount of dollars that have been matched from the EFTdetail to ERAs or paper EOBs.</td></tr><tr><td>2</td><td>error messages</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field stores any error messages that report problems with the incoming transmission.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

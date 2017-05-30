@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VOL GROUP</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8987_1.html">8987.1</a></dd><dt>name</dt><dd>VOL GROUP</dd><dt>number</dt><dd>8987.13</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>vol group (node)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>       This field is the 3 letter name that is generally associated withthe MGR UCI for a node.  For example, CSA, CSB, PSA, FSA, etc.  Pleasedon't include the Shadow Servers.</td></tr><tr><td>1</td><td>auto adjust rthist table size</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Leave this field blank to AUTOMATICALLY ADJUST THE RTHIST TABLE SIZE.       When the RTHIST job is started, it requires the number of tableentries to be specified.  If the entry for table size is too small, then a~TABLE,FULL~ condition will occurr.       If you define this field (i.e. Not Null), then I will use thisvalue for the MAXIMUM RTHIST table size.       On the other hand, if you leave this field Null, then I will usethe MAX AM TABLE SIZE field (#6) to adjust the AM RTHIST table size forthe morning RTHIST session, or the MAX PM TABLE SIZE field (#7) to adjustthe PM RTHIST table size for the afternoon RTHIST session.</td></tr><tr><td>2</td><td>name of production uci</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>       This is the name of your Production UCI for this node, i.e. VAH.This is used in various reports.</td></tr><tr><td>5</td><td>name of manager uci</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>       This is the name of the manager's UCI for this node, i.e. MGR.</td></tr><tr><td>5.5</td><td>server type</td><td>0;7</td><td>SET OF CODES</td><td>c:Compute<br/>p:Print<br/>f:File<br/>g:General<br/></td><td></td><td>This field indicates the type of usage for this node.  For example, a'Compute' Servers is used only for interactive logins.</td></tr><tr><td>6</td><td>max am table size</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>       This field is equal to the ^RTHIST(<Internal Run Number>,"SIZE")created during the AM RTHIST run.  The piece delimiter is "~" that is usedfor parcing.  The following are the piece definations. $P #   Defination====   ==========1      RTHIST initial Table Size2      highest number of Table entries used during RTHIST       if $P#1 = $P#2 then an overflow will occurr.  See $P#5 and $P#6.3      $H date when this node was created.4      $H time when this node was created.5      number of Routine Commands by Routine LOST because of a table       overflow.6      number of Global by global references LOST because of a table       overflow.7      number of Routine Commands counted.8      number of Global references by global counted.9      number of Global reference by Routine counted.</td></tr><tr><td>7</td><td>max pm table size</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>       This is the same as the MAX AM TABLE SIZE (field #6).  See field#6's DESCRIPTION.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

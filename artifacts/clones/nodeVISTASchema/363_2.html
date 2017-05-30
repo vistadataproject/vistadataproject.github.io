@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CHARGE ITEM</h1></div><div id="results"><dl><dt>name</dt><dd>CHARGE ITEM</dd><dt>number</dt><dd>363.2</dd><dt>location</dt><dd>^IBA(363.2,</dd><dt>description</dt><dd>Individual billable items and their charges.  Each item that may be billedshould have an entry.  For the item to be automatically charged it mustbe an item defined on a bill. The items are grouped into Charge Sets which correspond to rates.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>VARIABLE-POINTER</td><td><a href="399_1.html">399.1</a>, <a href="81.html">81</a>, <a href="363_21.html">363.21</a>, <a href="80_2.html">80.2</a>, <a href="363_21.html">363.21</a></td><td>B</td><td>The billable Item that may be charged on a bill.</td></tr><tr><td>.02</td><td>charge set(+)</td><td>0;2</td><td>POINTER</td><td><a href="363_1.html">363.1</a></td><td></td><td>This is the Charge Set that defines this item and the rate the charge isapart of.</td></tr><tr><td>.03</td><td>effective date(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The first date this charge amount should be applied to this itemfor this Charge Set. This item charge will override any other Charge Item with a previouseffective date. The Charge Item with the most recent effective date will be used as thecharge for the item and will be used as the implied inactive date forany previous charges for the item.</td></tr><tr><td>.04</td><td>inactive date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the last date this item is billable for this Charge Set.If the item is still billable but for a different amount add a new ChargeItem entry for the item with the correct amount and effective date, it isnot necessary to inactivate the old amount. The Charge Item with the most recent effective date will be used as thecharge for the item and will be used as the implied inactive date forany previous charges for the item.</td></tr><tr><td>.05</td><td>unit charge</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>The dollar amount to be added to a bill for each of this itemon the bill.</td></tr><tr><td>.06</td><td>revenue code</td><td>0;6</td><td>POINTER</td><td><a href="399_2.html">399.2</a></td><td></td><td>This is the revenue code that will be added to a bill for the charge ofthis item.  If no revenue code is entered the Charge Set's Default RevenueCode will be used.</td></tr><tr><td>.07</td><td>cpt modifier</td><td>0;7</td><td>POINTER</td><td><a href="81_3.html">81.3</a></td><td></td><td>A CPT charge may be broken into multiple charges by using the modifier. If a modifier is added this charge will only be added to bills that haveboth the CPT and modifier combination on the bill. If no modifier is added then the charge will only be added to bills thathave the CPT but no modifier.</td></tr><tr><td>.08</td><td>base charge</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Enter the Base Charge associated with the item.  This amount will be added once for the item on the bill, instead of once for each unit of the item.  Base Charge is appropriate for only specific types of charges where the total charge for the item is an incremental Unit charge plus a single Base charge, such as Minutes and Hours.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

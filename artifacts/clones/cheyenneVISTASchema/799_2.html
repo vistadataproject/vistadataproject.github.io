@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ROR METADATA</h1></div><div id="results"><dl><dt>name</dt><dd>ROR METADATA</dd><dt>number</dt><dd>799.2</dd><dt>location</dt><dd>^ROR(799.2,</dd><dt>description</dt><dd>THIS FILE MUST NOT BE MODIFIED LOCALLY! ONLY AUTHORIZED NATIONAL REGISTRY DEVELOPERS CAN EDITTHIS FILE! The ROR METADATA file contains descriptors of thefiles, data elements and APIs used by the registryupdate subsystem (search engine). Thesedescriptors define relationships between files("file-processing tree") used by the searchengine, data elements and APIs. The expression parser uses data stored in this file to validate expressions that implementselection rules. Data from this file loaded and prepared by the$$METADATA^RORUPR1 function is used by theregistry update process to load values of the dataelements using appropriate APIs. Developers can use this file as a source of information required for definition of new selection rules for new national or localregistries (supported files and data elements,APIs, DBIAs, etc.). All modifications of the registry update routinesthat affect the file-processing tree, APIs orsupported data elements MUST be reflected in the ROR METADATA file. Records of this file have internal entry numbers equal to the corresponding file numbers.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>file(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>The value of this field is the number of the(sub)file that can be searched for new data by theregistry update process and is a part of thefile-processing tree.</td></tr><tr><td>1</td><td>parent</td><td>0;2</td><td>POINTER</td><td><a href="799_2.html">799.2</a></td><td></td><td>This field holds the number of the (sub)file thatis a parent of the current file in thefile-processing tree. You can choose only from thefiles that have descriptors in the ROR METADATAfile. However, the current record cannot beselected as the parent of itself. Leave this field empty for the "root" file (the PATIENT file (#2) most probably). See the technical description of the field for more information.</td></tr><tr><td>2</td><td>data element</td><td>2;0</td><td>MULTIPLE</td><td><a href="799_22.html">799.22</a></td><td></td><td>This multiple stores a list of data elements supported by the search engine. These elements canbe referenced by selection rules associated withthe file. Records of the multiple are uniquely identified bythe data element name (the primary key "B" and theuniqueness index "B" are used for this purpose).</td></tr><tr><td>3</td><td>api</td><td>3;0</td><td>MULTIPLE</td><td><a href="799_23.html">799.23</a></td><td></td><td>This multiple stores descriptors of the APIs thatare used to load values of the search fields. Codes of the APIs are unique only in the filecontext. For example, the definition of any filecan have a descriptor of the API #2. Internal entry numbers of the records in this multiple are equal to the codes of the APIs.</td></tr><tr><td>5</td><td>description</td><td>5;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>You can enter any additional reference informationrelated to the file definition. The content of thisfield is not used by the application.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

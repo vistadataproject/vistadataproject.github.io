@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ENROLLMENT GROUP THRESHOLD</h1></div><div id="results"><dl><dt>name</dt><dd>ENROLLMENT GROUP THRESHOLD</dd><dt>number</dt><dd>27.16</dd><dt>location</dt><dd>^DGEN(27.16,</dd><dt>description</dt><dd>This file contains the Enrollment Group Threshold (EGT) for patient enrollment.  Enrollment Group Threshold records should not be added, edited, or deleted except through the use of the enrollment software module which is part of Registration.  </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>egt effective date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field will contain the date that the enrollment group threshold is effective.</td></tr><tr><td>.02</td><td>egt priority(+)</td><td>0;2</td><td>SET OF CODES</td><td>1:GROUP 1<br/>2:GROUP 2<br/>3:GROUP 3<br/>4:GROUP 4<br/>5:GROUP 5<br/>6:GROUP 6<br/>7:GROUP 7<br/>8:GROUP 8<br/></td><td></td><td>This field will contain the enrollment priority group threshold.</td></tr><tr><td>.03</td><td>egt subgroup</td><td>0;3</td><td>SET OF CODES</td><td>1:a<br/>3:c<br/>4:d<br/></td><td></td><td>This field will contain the enrollment priority subgroup threshold.</td></tr><tr><td>.04</td><td>egt type(+)</td><td>0;4</td><td>SET OF CODES</td><td>1:ANNUAL FISCAL YEAR<br/>2:STOP NEW ENROLLMENTS DURING CYCLE<br/>3:MID-CYCLE CHANGE<br/>4:ENROLLMENT DECISION<br/></td><td></td><td>This field will contain the reason associated with the enrollment group threshold setting.</td></tr><tr><td>.05</td><td>federal register date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This field will contain the date that the enrollment group threshold is posted in the Federal Register.</td></tr><tr><td>.06</td><td>date entered(+)</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>This field will contain the date/time that the enrollment group threshold record is entered/created.</td></tr><tr><td>.07</td><td>source of egt</td><td>0;7</td><td>SET OF CODES</td><td>1:HEC<br/></td><td></td><td>How the enrollment group threshold was determined.</td></tr><tr><td>.08</td><td>inactive?</td><td>0;8</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field is populated automatically when a new Enrollment Group Threshold is set, to prevent problems with future EGT settings.</td></tr><tr><td>25</td><td>remarks</td><td>R;1</td><td>FREE TEXT</td><td></td><td></td><td>This field will contain any remarks associated with the enrollment group threshold setting.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

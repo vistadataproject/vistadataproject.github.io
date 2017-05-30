@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RC MESSAGE TEXT OBJECT</h1></div><div id="results"><dl><dt>name</dt><dd>RC MESSAGE TEXT OBJECT</dd><dt>number</dt><dd>344.81</dd><dt>location</dt><dd>^RCY(344.81,</dd><dt>description</dt><dd>This file is reserved exclusively for the use of the Accounts Receivable,Inpatient Billing, ePayments, and eBilling developers.  No site shall enter or manipulate data in this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This is the Internal Entry Number of this entry.  It has been explicitly defined to aid in identification and lookup of entries.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the Name given to this testing object.</td></tr><tr><td>.02</td><td>creator(+)</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td> This is a pointer to the NEW PERSON file (#200). LAYGO is prohibited (the user must already exist).</td></tr><tr><td>.03</td><td>created</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time, with seconds, that this object was created.</td></tr><tr><td>.04</td><td>last updated</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the last date and time this object was edited.  Time is required.</td></tr><tr><td>.05</td><td>description</td><td>0;5</td><td>FREE TEXT</td><td></td><td>C</td><td>This is a free-text description of this object to aid the tester.</td></tr><tr><td>1.01</td><td>type</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field will contain ERA, EFT, or MRA and cannot be edited.</td></tr><tr><td>1.02</td><td>object status</td><td>1;2</td><td>SET OF CODES</td><td>0:INCOMPLETE<br/>1:AUTO<br/>2:REVIEWED<br/></td><td></td><td>This value indicates the status of this object: 0 (zero) for INCOMPLETE indicates that the tester hasn't reviewed it. 1 for AUTO indicates that an object was auto-created and not reviewed. 2 for REVIEWED indicates that the tester has evaluated the object.</td></tr><tr><td>2</td><td>object text</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the message text for this object.  No user should edit this field manually.  It is only updated by the Testing Tool software.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

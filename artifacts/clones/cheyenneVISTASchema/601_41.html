@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INSTRUMENT</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="601_4.html">601.4</a></dd><dt>name</dt><dd>INSTRUMENT</dd><dt>number</dt><dd>601.41</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>instrument</td><td>0;1</td><td>POINTER</td><td><a href="601.html">601</a></td><td>B</td><td>This is the Instrument Code (unique name), stored in this field isthe pointer to the INSTRUMENT file #601.</td></tr><tr><td>1</td><td>date entered</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the test was given.</td></tr><tr><td>2</td><td>date administered clerically</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the test was given clerically (pencil and paper,instead of by computer).</td></tr><tr><td>3</td><td>next item</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The next item (next question) in sequence to be asked by the instrument.This is the restart point.</td></tr><tr><td>4</td><td>valid response string</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is a SET of Valid responses, such as ABCX, TFX or 123X.  Thatis for the three examples, for the 1st you may enter 'A', 'B', 'C' or'X'.</td></tr><tr><td>5</td><td>response string 1</td><td>1;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>This is a STRING of responses, 1 to 200 of them, they are positiondependent.  For example: if the instrument asked twenty TRUE & FALSEquestions, the string would contain 20 T's and/or F's (TTTFFTFTFTFTFFTTTFFT)this string indicates answers 1 thru 3 were TRUE, answer 4 FALSE and so on.</td></tr><tr><td>6</td><td>response string 2</td><td>2;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>This is a STRING of responses.  Same as 'RESPONSE STRING 1' only thatthis is string #2.</td></tr><tr><td>7</td><td>response string 3</td><td>3;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>This is a STRING of responses.  Same as 'RESPONSE STRING 1' only thatthis is string #3.</td></tr><tr><td>7.5</td><td>response string 99</td><td>99;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is a STRING of responses, 1 to 245 of them.  This is the sameformat as the three other fields, 'RESPONSE STRING 1' or 2 or 3.This is used for string manipulation for specific instruments.</td></tr><tr><td>8</td><td>bottom</td><td>B;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is what is displayed at the bottom of the instrument item (question).Such as 'ANSWER = ', this field is usually the MUMPS code to generatethe displayed line.</td></tr><tr><td>9</td><td>clerk test</td><td>0;6</td><td>POINTER</td><td><a href="601.html">601</a></td><td>AC</td><td>This is the instrument code name, it is the same as the instrumentfield.  If this field is present, then the test has been clerk entered.Actually stored in this field is the pointer value to the MH INSTRUMENTfile #601.</td></tr><tr><td>16</td><td>ordered by</td><td>0;7</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the name of the clinician ordering the administration ofthis instrument to this patient.  Actually stored in the field is thepointer value pointing to the clinician in the NEW PERSON file #200.</td></tr><tr><td>17</td><td>restart tests</td><td>R;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Executable MUMPS code for restarting test.  This will be present ONLYif necessary.</td></tr><tr><td>18</td><td>date begun</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the instrument was first administered (test began).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

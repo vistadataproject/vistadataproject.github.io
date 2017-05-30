@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ADJUSTMENT LOG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="344_491.html">344.491</a></dd><dt>name</dt><dd>ADJUSTMENT LOG</dd><dt>number</dt><dd>344.4911</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>adjustment #</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is a sequential # used to enumerate the adjustments made as a resultof or to this line item.</td></tr><tr><td>.02</td><td>adjustment cause(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:ADJUSTED DUE TO ANOTHER CLAIM<br/>1:CAUSED ANOTHER CLAIM TO BE ADJUSTED<br/>2:RETRACTION - SPECIFIC CLAIM<br/>3:RETRACTION - NO SPECIFIC CLAIM<br/>4:ADDITIONAL PAYMENT - SPECIFIC CLAIM<br/>5:ADDITIONAL PAYMENT - NO SPECIFIC CLAIM<br/></td><td></td><td>This is a flag that indicates if the adjustment was caused by this lineitem, if the adjustment is a result of another line item needing to decreasethe amount of money being applied for this ERA or if the adjustment is aresult of a reversal or additional payment on the ERA for a specific ornon-specific claim.</td></tr><tr><td>.03</td><td>adjustment amount</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the amount that will be used to either reduce or increase the netamount of payment for the line item.</td></tr><tr><td>.04</td><td>reference #</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the reference # or claim # that was provided to identify thecause of the adjustment.</td></tr><tr><td>.05</td><td>background action</td><td>0;5</td><td>SET OF CODES</td><td>0:NONE<br/>1:DECREASE ADJUSTMENT<br/>2:COMMENT<br/>3:ADD LINE TO RECEIPT<br/></td><td></td><td>This indicates the action that should be taken to apply this adjustment tothe claim referenced when the receipt is ready to be created.</td></tr><tr><td>.06</td><td>user offset action needed</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This indicates what action the user is expected to take to reconcilethe adjustment so the ERA is ready for receipt creation.</td></tr><tr><td>.07</td><td>era sequence ref</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the reference to the actual seq or ERA adjustment record that thisadjustment was received in.</td></tr><tr><td>.08</td><td>background action completed</td><td>0;8</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field keeps track of whther or not the background action that hasbeen assigned to this adjustment has been completed or not.  This preventsdecrease adjustments from being performed more than once.</td></tr><tr><td>.09</td><td>adjustment comment</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the comment that will be placed in the bill record as a result of this adjustment.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS PAYMENT MOVES</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS PAYMENT MOVES</dd><dt>number</dt><dd>161.45</dd><dt>location</dt><dd>^FBAA(161.45,</dd><dt>description</dt><dd>This file holds the original internal entry numbers (IENs) and the newIENs for payments that have been moved. This is expected to occur when thepatient merge process causes data in the FEE BASIS PAYMENT file to move.The Fee Basis special patient merge routines (FBPMRG*) automaticallypopulate this file during patient merges. The server routines that process data from the Austin Automation Centeruse the information in this file to link data received from Austin withpayments that are moved after being reported to Austin.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>file #(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Identifies the file (or subfile) number where the payment is stored. Forexample, subfile 162.03 contains medical payments and subfile 162.04contains travel payments.</td></tr><tr><td>1</td><td>old iens(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The internal entry numbers (iens) that describe the original location ofthe payment before the patient merge. The iens are delimited by commas (,)beginning with the ien of the lowest level subentry. For example, a travelpayment (subfile 162.04) with iens "1,2000," would be located at^FBAAC(2000,3,1,0).</td></tr><tr><td>2</td><td>new iens(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The internal entry numbers (iens) that describe the new location of thepayment after the patient merge has completed. The iens are delimited bycommas (,) beginning with the ien of the lowest level subentry. Forexample, a travel payment (subfile 162.04) with iens "1,3000," would belocated at ^FBAAC(3000,3,1,0).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

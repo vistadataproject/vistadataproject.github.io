@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TESTS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="68_02.html">68.02</a></dd><dt>name</dt><dd>TESTS</dd><dt>number</dt><dd>68.04</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td> test</td><td>0;1</td><td>POINTER</td><td><a href="60.html">60</a></td><td>B</td><td>The pointers to the Laboratory Tests for this accession.</td></tr><tr><td>1</td><td>urgency of test(+)</td><td>0;2</td><td>POINTER</td><td><a href="62_05.html">62.05</a></td><td></td><td>The urgency of the test being completed, e.g. stat, routine, etc.  There is a special urgency used only for workload recording calledWKL. This urgency indicates that this test was not ordered directly,but was added to the accession to support certain workload functions.</td></tr><tr><td>2</td><td>load list entry</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The load/work list location is stored here in ";" piece format."load list pointer;tray;cup"</td></tr><tr><td>3</td><td>technologist</td><td>0;4</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td> The DUZ of the person verifying the test.NOTE: This field previously contained technologist initials.Converted with the release of version 5.2.</td></tr><tr><td>4</td><td>complete date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>If null, the test is incomplete.  Otherwise, it is the date/time of completion.</td></tr><tr><td>5</td><td>disposition</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>5.1</td><td>tally to wkld</td><td>0;7</td><td>SET OF CODES</td><td>1:YES<br/>0:HAS NOT<br/></td><td></td><td>If test was counted for WKLD workload, workload file entry is entered here. This flag prevents the test from being counted more than once.UPDATE THIS FIELD AUTOMATICALLY.</td></tr><tr><td>6</td><td>wkld code</td><td>1;0</td><td>MULTIPLE</td><td><a href="68_14.html">68.14</a></td><td></td><td> This sub file is devoted entirely to workload functions. The datais stuffed automatically by routines at the time of verification of thetest.</td></tr><tr><td>7</td><td>*identity</td><td>7;1</td><td>FREE TEXT</td><td></td><td></td><td>Will deleted in future versions.</td></tr><tr><td>8</td><td>wkld suffix</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td> This field contains the WKLD code suffix used to identify the methodused to verify this particular test. The suffix is stuffed atthe time of verification automatically. This field can be used to sortmethods used to assay various test.  The decimal point of the WKLD code suffix is stripped off.</td></tr><tr><td>8.1</td><td>parent test</td><td>0;9</td><td>POINTER</td><td><a href="60.html">60</a></td><td></td><td> This field contains the parent ordered test. In the case of panel test,this field will contain the original ordered test.</td></tr><tr><td>9</td><td>shipping manifest</td><td>0;10</td><td>POINTER</td><td><a href="62_8.html">62.8</a></td><td></td><td>This fields is used at the collection site to determine the exactplacement of each test.  This field will contain the shipping manifestcode for referral or send out lab tests.  For all local tests the fieldwill be null.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

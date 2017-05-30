@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PLAN COVERAGE LIMITATIONS</h1></div><div id="results"><dl><dt>name</dt><dd>PLAN COVERAGE LIMITATIONS</dd><dt>number</dt><dd>355.32</dd><dt>location</dt><dd>^IBA(355.32,</dd><dt>description</dt><dd>This file contains the detail by plan and effective date of the categoriesthat may be restricted for insurance coverage.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>plan(+)</td><td>0;1</td><td>POINTER</td><td><a href="355_3.html">355.3</a></td><td>B</td><td>The plan that this limitation will apply to.</td></tr><tr><td>.02</td><td>coverage category(+)</td><td>0;2</td><td>POINTER</td><td><a href="355_31.html">355.31</a></td><td></td><td>The type of coverage that the insurance company plan has reimbursement limits on.</td></tr><tr><td>.03</td><td>effective date(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The date on which the type of coverage for this limitation becomes limited for insurance billing purposes.</td></tr><tr><td>.04</td><td>coverage status(+)</td><td>0;4</td><td>SET OF CODES</td><td>0:NOT COVERED<br/>1:COVERED<br/>2:CONDITIONAL COVERAGE<br/></td><td></td><td>This is the status of the coverage associated with this record on the effectivedate associated with this record.</td></tr><tr><td>1.01</td><td>date entered</td><td>1;1</td><td>DATE-TIME</td><td></td><td></td><td>This is the date this limitation was entered.  It is triggered by the creation of this entry.</td></tr><tr><td>1.02</td><td>entered by</td><td>1;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who created this entry.  It is automatically triggered by the creation of this entry.</td></tr><tr><td>1.03</td><td>date last edited</td><td>1;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date this limitation was last edited.  It is automatically updated any time the limitation is edited using one of the options provided.</td></tr><tr><td>1.04</td><td>last edited by</td><td>1;4</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who last edited this limitation.  It is automatically updated any time a person edits this limitation using one of the options provided.</td></tr><tr><td>2</td><td>limitation comment</td><td>2;0</td><td>MULTIPLE</td><td><a href="355_321.html">355.321</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

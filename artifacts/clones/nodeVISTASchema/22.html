@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > POW PERIOD</h1></div><div id="results"><dl><dt>name</dt><dd>POW PERIOD</dd><dt>number</dt><dd>22</dd><dt>location</dt><dd>^DIC(22,</dd><dt>description</dt><dd>This file contains 8 possible locations where a person could have been aprisoner of war.  This data is determined by VACO and is maintainedby the PIMS software module via frequent software releases.  Editing ofthis information will have severe and negative impacts on the operation ofthe PIMS module as well as other VistA software modules.  Entries in thisfile must NOT be added, edited, or removed.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This field contains the internal entry number for this POW PERIOD.  Thisnumber may be used by various software packages.  This must not be editedand entries must not be added or deleted unless done through a softwareupgrade of the PIMS package.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the period/place where a patient mayhave been a prisoner of war.  Choices include WWI and Vietnam.  This data must NOT be edited in any way.</td></tr><tr><td>1</td><td>abbreviation</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains an alternate name by which this prisoner of war periodmay be called.  This abbreviation may be displayed on outputs or otherdisplays where there is insufficient space to display the entire name ofthe POW PERIOD.</td></tr><tr><td>100</td><td>synonym</td><td>.01;0</td><td>MULTIPLE</td><td><a href="22_01.html">22.01</a></td><td></td><td>A synonym or shortened name associated with a specific period ofservice.  The shortened name may be 2-28 characters in length andis a free text field.|</td></tr><tr><td>101</td><td>code</td><td>0;3</td><td>POINTER</td><td><a href="21.html">21</a></td><td></td><td>This field is a pointer to the .01 field of the Period of Servicefile which contains all periods of service and related data.  Theprisoner of war code contains the single character code by whichthis status is identified.  Zero (0) stands for YES and one (1)stands for NO.|</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

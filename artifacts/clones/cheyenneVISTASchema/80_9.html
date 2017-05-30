@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TEMPORARY DRG FILE</h1></div><div id="results"><dl><dt>name</dt><dd>TEMPORARY DRG FILE</dd><dt>number</dt><dd>80.9</dd><dt>location</dt><dd>^ICDYZ(80.9,</dd><dt>description</dt><dd>This file contains all DRG's, their Trim Points, Affiliated andNon-affiliated weights, etc.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This is the DRG number</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the DRG number with "DRG" affixed as a prefix.</td></tr><tr><td>.06</td><td>surgery</td><td>0;6</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This is a flag set =1 if this is a surgical DRG.</td></tr><tr><td>1</td><td>description</td><td>1;0</td><td>MULTIPLE</td><td><a href="80_91.html">80.91</a></td><td></td><td>This is the description of the DRG</td></tr><tr><td>2</td><td>weight</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field contains the weighted work unit (WWU) value assigned to the DRG.</td></tr><tr><td>3</td><td>low trim(days)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Lowest # days of stay for this DRG</td></tr><tr><td>4</td><td>high trim(days)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Highest # of days of stay for this DRG</td></tr><tr><td>5</td><td>mdc#(+)</td><td>0;5</td><td>POINTER</td><td><a href="80_3.html">80.3</a></td><td></td><td>MDC for this DRG.</td></tr><tr><td>7</td><td>weight(nonaffil)</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This field contains the weighted work unit (WWU) value assigned to the DRG.</td></tr><tr><td>7.5</td><td>weight(intaffil)</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td>This field contains the weighted work unit (WWU) value assigned to the DRG.</td></tr><tr><td>8</td><td>*mumps code</td><td>MC;E1,250</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>10</td><td>avg length of stay(days)</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Average Length of Stay for this DRG</td></tr><tr><td>11</td><td>local low trim(days)</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>Low # days of stay for this (local) facility</td></tr><tr><td>12</td><td>local high trim(days)</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>High # days of stay for this (local) facility</td></tr><tr><td>13</td><td>local breakeven</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td>The day on which the actual cost of care equals the estimated allocationfor the assigned medical center.</td></tr><tr><td>20</td><td>fiscal year weights&trims</td><td>FY;0</td><td>MULTIPLE</td><td><a href="80_92.html">80.92</a></td><td></td><td>Weight and Trims by fiscal year</td></tr><tr><td>30</td><td>breakeven fiscal year/quarter</td><td>BE;0</td><td>MULTIPLE</td><td><a href="80_93.html">80.93</a></td><td></td><td>This field contains the breakeven FY quarter.</td></tr><tr><td>900</td><td>reference</td><td>MC1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the name of the routine that contains the grouper logic for this field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

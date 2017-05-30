@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > WV REFUSALS</h1></div><div id="results"><dl><dt>name</dt><dd>WV REFUSALS</dd><dt>number</dt><dd>790.3</dd><dt>location</dt><dd>^WV(790.3,</dd><dt>description</dt><dd>This file identifies instances where patients in the Women's Healthdatabase were offered, but refused care (e.g., screening mammogram).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>refusal date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field contains the date the patient refused the procedure, test orexamination.</td></tr><tr><td>1</td><td>patient(+)</td><td>0;2</td><td>POINTER</td><td><a href="790.html">790</a></td><td>C</td><td>This field identifies the patient who refused health care (e.g.,procedure, exam, tests).  Pointer to the WV Patient (#790) file.</td></tr><tr><td>2</td><td>procedure(+)</td><td>0;3</td><td>POINTER</td><td><a href="790_2.html">790.2</a></td><td></td><td>This field identifies the procedure or type of health care the patientrefused.  Pointer to the WV Procedure Type (#790.2) file.</td></tr><tr><td>3</td><td>reason</td><td>0;4</td><td>SET OF CODES</td><td>1:TREATED ELSEWHERE<br/>2:NO REASON<br/>3:OTHER<br/></td><td></td><td>This field indicates a general reason for why the patient refusedtreatment, i.e., (1) treatment was provided elsewhere, (2) no reason wasgiven by the patient, or (3) an other reason was provided by the patient.</td></tr><tr><td>4</td><td>comments</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains comments related to this refusal.  </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

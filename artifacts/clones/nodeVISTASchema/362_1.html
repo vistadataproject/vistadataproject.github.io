@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB AUTOMATED BILLING COMMENTS</h1></div><div id="results"><dl><dt>name</dt><dd>IB AUTOMATED BILLING COMMENTS</dd><dt>number</dt><dd>362.1</dd><dt>location</dt><dd>^IBA(362.1,</dd><dt>description</dt><dd>This file contains entries created by the Third Party automated biller.As the auto biller attempts to create bills based on events in ClaimsTracking it sets entries in this file indicating the action taken by theauto biller for the event.  The only way entries are added to thisfile is by the auto biller, there is no user entry. An entry may be created for the event if a bill could not be created, thisentry will contain a comment on why the bill could not be created.If the Claims Tracking event could not be billed because the EarliestAuto Bill date did not match the time frame set by the parameters, noentry is made in this file but the events Earliest Auto Bill Date is reset.An entry will be created for every event that a bill was created for, insome cases these entries will have comments about the event that may be ofinterest to billing the event. Entries are deleted from this file in two ways.  Entries for events thatwere billed are only deleted by the system, when the bill is either cancelled or authorized.  Entries without corresponding bills must be manually deleted by a user, with the option provided. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>A reference number that should be unique for each entry.</td></tr><tr><td>.02</td><td>claims tracking id</td><td>0;2</td><td>POINTER</td><td><a href="356.html">356</a></td><td>C</td><td>The Claims Tracking event for this comment entry.</td></tr><tr><td>.03</td><td>bill number</td><td>0;3</td><td>POINTER</td><td><a href="399.html">399</a></td><td>D</td><td>This is the bill associated with the Claims Tracking event, if any.</td></tr><tr><td>.05</td><td>date entered(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the event was added to the comments file.  This isusually the date the auto biller first tried to create a bill for theevent.</td></tr><tr><td>11</td><td>comments</td><td>11;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Comments associated with the Claims Tracking event the the Bill/Claims bill.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

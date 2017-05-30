@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS PATIENT MRA</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS PATIENT MRA</dd><dt>number</dt><dd>161.26</dd><dt>location</dt><dd>^FBAA(161.26,</dd><dt>description</dt><dd>Contains the entry of veterans whose master record information has changed. The updated information must be sent to the Centralized Fee system in Austin for the updating of their master veteran records. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>The veteran for whom this master record adjustment is created. </td></tr><tr><td>1</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>P:PENDING TRANSMISSION<br/>T:TRANSMITTED<br/></td><td>AC</td><td>This field identifies whether this master record adjustment is pendingtransmission to Austin or has already been transmitted.</td></tr><tr><td>2</td><td>pointer to authorization node(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field contains the internal entry number of the authorization record selected for the veteran. This is needed because master recordadjustments are related to specific authorizations. The user does NOTenter this field directly. The data is captured automatically when theuser selects the authorization.</td></tr><tr><td>3</td><td>type(+)</td><td>0;4</td><td>SET OF CODES</td><td>A:ADD<br/>R:REINSTATE<br/>D:DELETE<br/>C:CHANGE<br/></td><td></td><td>Indicates the type (ie add, change) of master record adjustment thisis.</td></tr><tr><td>4</td><td>date transmitted</td><td>0;5</td><td>DATE-TIME</td><td></td><td>AD</td><td>The date that last master record adjustment for this veteran was transmitted to Austin.</td></tr><tr><td>5</td><td>auth. from date changed</td><td>0;6</td><td>SET OF CODES</td><td>1:YES<br/>2:NO<br/></td><td></td><td>This field is used as a flag to indicate that the authorization From Dateis being changed by this master record adjustment. If this field is setto yes, the authorization To Date is set to spaces when the transactionis created. An Austin requirement is to change the From Date, the Todate must be blank. This field only pertains to a 'Change' type transaction.</td></tr><tr><td>6</td><td>short term mra</td><td>0;7</td><td>BOOLEAN</td><td>Y:yes<br/></td><td></td><td>This field is used as a flag and relates to outpatient medical reimbursements for a veteran with only a short term authorization. For those reimbursements the system automatically createsa master record adjustment sending the most current data. This field isused to identify that this transaction is only temporary and not toestablish a long term master record.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

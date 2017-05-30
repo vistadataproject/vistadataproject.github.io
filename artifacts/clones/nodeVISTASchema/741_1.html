@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QA OCCURRENCE SCREEN CRITERIA</h1></div><div id="results"><dl><dt>name</dt><dd>QA OCCURRENCE SCREEN CRITERIA</dd><dt>number</dt><dd>741.1</dd><dt>location</dt><dd>^QA(741.1,</dd><dt>description</dt><dd>Contains the list of screens required by the Occurrence Screen circular,with their descriptions.  This file arrives populated with the standardscreens.  The site can add their own screens also.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>VAMCs may enter their own screens (201 through 999.99), but may not changeexisting national screens (101.1,102,107,109). Screens may not have anytrailing zeros or decimal points.</td></tr><tr><td>1</td><td>screen</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the short description of the screen.</td></tr><tr><td>2</td><td>expanded screen</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the long description of the screen.</td></tr><tr><td>100</td><td>screen status</td><td>0;4</td><td>SET OF CODES</td><td>1:INACTIVE<br/>N:NATIONAL<br/>L:LOCAL<br/></td><td></td><td>This field controls the auto enroll of the various screens.  Nationaland local screens will be auto enrolled if possible.  This field isalso used by the semi-annual report, any combinations of screen statusesmay be included on the report.</td></tr><tr><td>200</td><td>associated monitor</td><td>0;5</td><td>POINTER</td><td><a href="743.html">743</a></td><td>AM</td><td>This field is used to link the monitor and the screen for the purposesof the auto enroll functions.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

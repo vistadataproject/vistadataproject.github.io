@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB ACTION STATUS</h1></div><div id="results"><dl><dt>name</dt><dd>IB ACTION STATUS</dd><dt>number</dt><dd>350.21</dd><dt>location</dt><dd>^IBE(350.21,</dd><dt>description</dt><dd>This new file for Integrated Billing version 2.0 has been implementedto replace the set of codes for the STATUS (#.05) field of theINTEGRATED BILLING ACTION (#350) file.  The file holds new statuseswhich are introduced in v2.0, display and abbreviated names for thestatus, and classification-type fields for each status which isused for processing in the Integrated Billing module. To convert to the use of this new file, it was necessary to changethe field type of the STATUS field from a "set-of-codes" field toa pointer field (pointing to this file).  Thus, the internal entrynumbers for the statuses in this file MUST MATCH the codes establishedfor the statuses in the old set-of-codes definition.  The entries in thisfile will be precisely set in the IB version 2.0 post initialization. ENTRIES IN THIS FILE SHOULD NOT BE EDITED OR DELETED.  IF YOU LOSEENTRIES IN THIS FILE DUE TO SYSTEM FAILURE, THEY MUST BE RE-SET USINGTHE CORRECT INTERNAL ENTRY NUMBERS.  If you have any questions aboutre-setting entries in this file, please contact your supporting ISC. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>status(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The value of the STATUS field matches the name of the code fromSTATUS (#.05) field of the INTEGRATED BILLING ACTION (#350) fileprior to Integrated Billing version 2.0. This field should not be edited!</td></tr><tr><td>.02</td><td>print name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a displayable status name which may be usedin reports.</td></tr><tr><td>.03</td><td>abbreviation</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The abbreviation is a short-hand notation for the status which maybe used for display in space-limited outputs.</td></tr><tr><td>.04</td><td>passed to ar?</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine if IB actions with this status havealready been passed to the Accounts Receivable module.</td></tr><tr><td>.05</td><td>cancelled?</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine if IB actions with this status havebeen cancelled.</td></tr><tr><td>.06</td><td>on hold?</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine if IB actions are being held in theIntegrated Billing module waiting to be passed to Accounts Receivable.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

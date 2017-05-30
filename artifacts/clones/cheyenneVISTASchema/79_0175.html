@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PERF INDIC SMTP E-MAIL ADDRESS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="79.html">79</a></dd><dt>name</dt><dd>PERF INDIC SMTP E-MAIL ADDRESS</dd><dt>number</dt><dd>79.0175</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>perf indc smtp e-mail address</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>  This is the SMTP address for the OUTLOOK mail group or person who shouldreceive the Radiology Performance Indicator Summary Report.  The SMTP address is the form of the e-mail address that a user from the Internet would use when sending e-mail to Outlook. The SMTP address of the mail group or user can be found as follows from the OUTLOOK Address Book:   1. Double click on the name of the Mail Group or person      from the Outlook Address Book   2. Select the "E-mail Addresses" tab   3. The SMTP address is displayed after the first "SMTP:" line.      It will have the format <name>@med.va.gov For example:   In the address book, there's a group name called "VAH FAKE Report".   To find that group name's SMTP address from OUTLOOK:      1. Tools --> Address Book      2. Enter  VAH FAKE Report  inside the box called           "Type Name or Select from List:"      3. A new screen entitled "VAH FAKE Report Properties" should be             displayed.      4. Click on the tab entitled "E-mail Addresses"      5. A new box should be displayed.      6. The "SMTP:" line would have the SMTP address for "VAH FAKE         Report".  It would be something like:  VAHFAKEReport@va.med.gov         Note:         If there is an "SMTP:" line and another "smtp:" line, use         the SMTP address from the all caps "SMTP:" line.      7. The e-mail address you enter MUST end in @med.va.gov</td></tr><tr><td>1</td><td>oqp performance mgmt?</td><td>0;2</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field is used to flag the Outlook SMTP address for Headquarters. The performance indicator options will check this field to determine if a report should be sent to the corresponding SMTP address. If this field is "Y", then the corresponding SMTP address would receive the automatic mid-month report.  But it will only receivemanually initiated reports if that report was requested for (1) a full month's data (any full month in the past), and (2) the user replies "Y" to the question about sending the output to "OQP Performance Mgmt". If this field is "N", then the corresponding SMTP address wouldreceive all reports, whether automatic or manually initiated.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EDI TRANSMIT BILL</h1></div><div id="results"><dl><dt>name</dt><dd>EDI TRANSMIT BILL</dd><dt>number</dt><dd>364</dd><dt>location</dt><dd>^IBA(364,</dd><dt>description</dt><dd>This file contains a record for each bill for each time it is included ina batch for EDI transmissions.  This file allows a bill to be trackedthroughout its transmission life and gives the bill's current EDI status.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>bill number(+)</td><td>0;1</td><td>POINTER</td><td><a href="399.html">399</a></td><td>B</td><td></td></tr><tr><td>.02</td><td>batch number</td><td>0;2</td><td>POINTER</td><td><a href="364_1.html">364.1</a></td><td></td><td>The EDI transmission batch that includes this bill entry.</td></tr><tr><td>.03</td><td>transmission status(+)</td><td>0;3</td><td>SET OF CODES</td><td>X:READY FOR EXTRACT<br/>P:PENDING AUSTIN RECEIPT<br/>A0:RECEIVED IN AUSTIN<br/>A1:ACCEPTED BY NON-PAYER<br/>A2:ACCEPTED PAYER<br/>E:ERROR CONDITION<br/>C:CANCELLED<br/>R:CORRECTED/RETRANSMITTED<br/>Z:CLOSED<br/></td><td>ASTAT</td><td>The current transmission status of this EDI transmission attempt for the bill.</td></tr><tr><td>.04</td><td>status date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>The date/time that the current status occurred.</td></tr><tr><td>.06</td><td>resubmit batch number</td><td>0;6</td><td>POINTER</td><td><a href="364_1.html">364.1</a></td><td></td><td>This is the batch number this bill was included in when resubmitted.</td></tr><tr><td>.07</td><td>test bill</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This indicates whether or not the bill is being transmitted to the testqueue or live queue.</td></tr><tr><td>.08</td><td>cob sequence</td><td>0;8</td><td>SET OF CODES</td><td>P:PRIMARY<br/>S:SECONDARY<br/>T:TERTIARY<br/></td><td></td><td>This is the COB sequence for the bill when it was transmitted.  This is usedto relate the return messages with the correct COB sequence payer.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

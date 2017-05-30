@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB ERROR</h1></div><div id="results"><dl><dt>name</dt><dd>IB ERROR</dd><dt>number</dt><dd>350.8</dd><dt>location</dt><dd>^IBE(350.8,</dd><dt>description</dt><dd>This file contains errors for billing functions.  It may be used byapplications, IB or AR.  The normal format for a routine to returnan error is to return the variable:  Y=1^... a successful event occured  Y=-1^error code[;error code;error code...]^additional textThe error messages can be displayed by calling routine ^IBAERR.  Ifthe error occurs in a tasked job ($D(ZTQUEUED)'=0) the routine willput the error message in a bulletin and post it to the group definedin the IB SITE PARAMETER FILE. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is a free text name of the entry.  It should be namespaced withthe namespace of the package reporting the error.</td></tr><tr><td>.02</td><td>error message</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the text of the message as it will be displayed to a user orposted in a bulletin.  It should be as meaningful as possible to theperson seeing the message.</td></tr><tr><td>.03</td><td>error code</td><td>0;3</td><td>FREE TEXT</td><td></td><td>AC</td><td>This is the error code that will be passed to or determined byIntegrated Billing.  The format for the Error Code should bennxxx, where nn is the reporting package namespace and xxx are numericvalues. This is the error code that will be passed as the second piece ofthe variable Y to IB when +Y=-1.  More than one error code can beplaced in the second ^ piece of Y delimited by semi-colons.  Applicationsmay call ^IBAERR to display the error message(s).</td></tr><tr><td>.04</td><td>package reporting error</td><td>0;4</td><td>SET OF CODES</td><td>1:INTEGRATED BILLING<br/>2:ACCOUNTS RECEIVABLE<br/>3:PHARMACY<br/></td><td></td><td>This is the package that requested this entry in this file and willreport it to IB as an error if the conditions are detected.</td></tr><tr><td>.05</td><td>error action</td><td>0;5</td><td>SET OF CODES</td><td>1:DISPLAY MESSAGE<br/>2:SEND BULLETIN<br/>3:EDIT FILE<br/></td><td></td><td>This is the type of action that should be taken when this error isreported to IB.  If action other than displaying a message is indicatedthen the MUMPS code in the ERROR ACTION field will be executed. Currently only display actions are implemented.  Please contact the developing ISC if other action types are desired.</td></tr><tr><td>.06</td><td>corresponding alert</td><td>0;6</td><td>POINTER</td><td><a href="354_5.html">354.5</a></td><td></td><td>This is the type of alert that should be sent when this error occurs.</td></tr><tr><td>10</td><td>executable logic</td><td>10;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the MUMPS code that will be executed if an error is reportedwith an ERROR ACTION of other than to display a message.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

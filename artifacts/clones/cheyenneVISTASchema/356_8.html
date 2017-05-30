@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLAIMS TRACKING NON-BILLABLE REASONS</h1></div><div id="results"><dl><dt>name</dt><dd>CLAIMS TRACKING NON-BILLABLE REASONS</dd><dt>number</dt><dd>356.8</dd><dt>location</dt><dd>^IBE(356.8,</dd><dt>description</dt><dd>This is a file of reasons that may be entered into the claims tracking module to specify why a potential claim isn't billable. Do NOT add, edit, or delete entries in this file without instructionsfrom your ISC. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This is the number of the reason not billable.  It is used for look-uppurposes only.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the reason that a visit is not billable.  This is the namethat will appear on displays and outputs.  If a claims tracking entry is assigned a reaon not billable then it will be considered to not be billable.  Users may select whether visits that have a reason not billableassigned should appear on the patients with visits and insurance reports.</td></tr><tr><td>.02</td><td>ecme flag</td><td>0;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is flagging the record to be used as ECME CLOSE CLAIM REASON. The default value is 'NO'. If the field is set to 'YES' the NON-BILLABLE REASON will appear as an option in the ECME CLOSE CLAIM SCREEN.</td></tr><tr><td>.03</td><td>ecme paper flag</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This flag is related to NON-BILLABLE REASONs that are marked with ECME FLAG to be used as ECME CLOSE CLAIM REASON. If this field'ECME PAPER FLAG' is set to 'YES', it indicates that the NON BILLABLEREASON may be potentially billable "on paper". When the ECME user (OPECC)is closing the e-Pharmacy claim and enters the NON BILLABLE REASON as aCLOSE CLAIM REASON, the additional prompt will be issued to the user -should the claim be billed "on paper"?</td></tr><tr><td>.04</td><td>code</td><td>0;4</td><td>FREE TEXT</td><td></td><td>C</td><td>This code uniquely identifies a particular RNB by group and number.Format is Group_# where group sorts like RNBs into the following:BL-Billing, CV-Insurance Coverage, DC-Documentation, MC-Miscellaneous,MN-Medical Necessity, RX-Pharmacy, VA-VA Specific.</td></tr><tr><td>.05</td><td>inactive</td><td>0;5</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>This indicates if the RNB is inactive and should no longer be used.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

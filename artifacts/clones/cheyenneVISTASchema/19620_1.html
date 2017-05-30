@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DSIR RELEASED DOCUMENT</h1></div><div id="results"><dl><dt>name</dt><dd>DSIR RELEASED DOCUMENT</dd><dt>number</dt><dd>19620.1</dd><dt>location</dt><dd>^DSIR(19620.1,</dd><dt>description</dt><dd>Holds lists of documents to be released for ROI requests.         </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>request number(+)</td><td>0;1</td><td>POINTER</td><td><a href="19620.html">19620</a></td><td>B</td><td>Points back to the IEN in ^DSIR(19620) which is also the request number.</td></tr><tr><td>.02</td><td>document type(+)</td><td>0;2</td><td>POINTER</td><td><a href="19620_4.html">19620.4</a></td><td></td><td>Points to ^DSIR(19620.4), the Document Type file, to indicate what type of document is being released.</td></tr><tr><td>.03</td><td>document ien(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>IEN of document within the source file.</td></tr><tr><td>.04</td><td>document media</td><td>0;4</td><td>SET OF CODES</td><td>0:ELECTRONIC<br/>1:PAPER<br/></td><td></td><td>Type of media where the document is stored; electronic or paper..</td></tr><tr><td>.05</td><td>document caption</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Caption to be displayed for this document whenever the documents for the request are listed.</td></tr><tr><td>.06</td><td>document length</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This value contains the number of pages in a paper document to be released.</td></tr><tr><td>.07</td><td>document date time</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>Date and time the document was created.</td></tr><tr><td>.08</td><td>document author</td><td>0;8</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Pointer to file 200 to indicate the author of the document</td></tr><tr><td>.09</td><td>released by</td><td>0;9</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Pointer to file 200 to indicate the person releasing the document.</td></tr><tr><td>.1</td><td>hospital location</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This is the HOSPITAL LOCATION from the TIU NOTE, it is the free text of the location as it is in file #44 - HOSPITAL LOCAITON.  This is used for sensitive clinic notification purposes.</td></tr><tr><td>1</td><td>comments</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Optionally contains further information concerning the document.</td></tr><tr><td>2.01</td><td>include in billing</td><td>2;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field uses a set of values to represent a boolean expression to indicate whether or not the document is included in billing.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

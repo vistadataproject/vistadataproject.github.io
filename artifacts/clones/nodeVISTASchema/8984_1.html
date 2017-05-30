@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LOCAL KEYWORD</h1></div><div id="results"><dl><dt>name</dt><dd>LOCAL KEYWORD</dd><dt>number</dt><dd>8984.1</dd><dt>location</dt><dd>^XT(8984.1,</dd><dt>description</dt><dd>The lookup entry (or code) can be associated with multiple key words orkey phrases. The entry will be displayed if the user enters all or anypart of a key phrase. For example:                                                 |**mtlu x-ref** KEYPHRASE:                    LOOKUP FILE:      V SALT AND PEPPER              NAME: JOHN    HAIR COLOR: LIGHT BROWN SORT OF GRAY                       JACK                PRETTY GRAY SCHNAUZER                          JILL                GEORGIA CLAY                                    MARY                SORT OF GRAY                                    JIM                 BLACK AND WHITE If each of the above keyphrases are associated with 'JIM' then users canenter the following combinations:1. SALT, SALT AND PEPPER, SALT & PEPPER, PEPPER, SORT OF PEPPER, SCHNAUZERwill return ONLY Jim. Note that SORT OF PEPPER returns only Jim becausethe tokens 'SORT' and 'PEPPER' must BOTH be true for a match. PEPPER isfalse for Mary.2. SORT, SORT OF GRAY returns Mary and Jim3. GRAY returns Mary, Jim, and Jack NOTE! LOOKUPS ARE PERFORMED IN THE FOLLOWING ORDER:  1. SHORTCUT<--stops here if a match is found 2. SYNONYM 3. KEYWORD</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>A term or phrase that will be associated with a specific entryin a target file.</td></tr><tr><td>.03</td><td>code</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td> This field holds the entry itself and is triggered by ENTRY field.</td></tr><tr><td>.04</td><td>associated file</td><td>0;4</td><td>POINTER</td><td><a href="1.html">1</a></td><td>AD</td><td> This field contains the global root of the file associated with thekeyword entry. It is TRIGGERED by the ENTRY field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

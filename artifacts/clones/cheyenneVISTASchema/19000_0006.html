@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VES.E.EVENTS</h1></div><div id="results"><dl><dt>name</dt><dd>VES.E.EVENTS</dd><dt>number</dt><dd>19000.0006</dd><dt>location</dt><dd>^VESSTAT(19000.0006,</dd><dt>description</dt><dd>The VES.EVENT file contains all events for a particular job,terminal device,and user. The events are recorded as intervals of time and are typedaccording to the nature of the event. The type identifies what causedthe event. Migration into and out of a projection identifiedby the authorof a course can cause such an event.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>event.number</td><td></td><td>11</td><td></td><td></td><td>This field contains the internal number of an event.</td></tr><tr><td>.01</td><td>event.entry.time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>The EVENT.ENTRY.TIME field represents the time an event started.</td></tr><tr><td>1</td><td>user.name(+)</td><td>0;2</td><td>POINTER</td><td><a href="19000_000419.html">19000.000419</a></td><td>AC</td><td>The USER.NAME field identifies the user that ownes this entry.</td></tr><tr><td>2</td><td>job.number</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>3</td><td>principal.device</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>4</td><td>event.type(+)</td><td>0;5</td><td>POINTER</td><td><a href="19000_0007.html">19000.0007</a></td><td></td><td></td></tr><tr><td>5</td><td>event.container</td><td>0;6</td><td>POINTER</td><td><a href="19000_0032.html">19000.0032</a></td><td></td><td>This field points to the course container files and is used to identifya projection that caused an event.</td></tr><tr><td>6</td><td>event.exit.time</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>7</td><td>wrong.entry.count</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>8</td><td>event.projection.name</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>9</td><td>total.entry.count</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COB MULTIPLE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="9002313_312.html">9002313.312</a></dd><dt>name</dt><dd>COB MULTIPLE</dd><dt>number</dt><dd>9002313.3123</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>other payer counter</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is a counter field to store the count of the other payers.</td></tr><tr><td>.02</td><td>other payer coverage type</td><td>0;2</td><td>SET OF CODES</td><td>01:PRIMARY<br/>02:SECONDARY<br/>03:TERTIARY<br/></td><td></td><td>This stores the value for NCPDP field 338-5C, which is the code indicatingwhether the other payer is primary, secondary, etc.</td></tr><tr><td>.03</td><td>other payer id qualifier</td><td>0;3</td><td>SET OF CODES</td><td>01:NATIONAL PAYER ID<br/>02:HEALTH INDUSTRY NUMBER (HIN)<br/>03:BANK IDENTIFICATION NUMBER (BIN)<br/>04:NAT. ASSOC. OF INS. COM. (NAIC)<br/>05:MEDICARE CARRIER NUMBER<br/>09:COUPON<br/>99:OTHER<br/></td><td></td><td>This value will be placed in the NCPDP field 339-6C, which is the codequalifying the 'Other Payer ID' (340-7C) field.</td></tr><tr><td>.04</td><td>other payer id</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This will be used for the value in NCPDP field 340-7C, which is the IDassigned to the Other Payer.</td></tr><tr><td>.05</td><td>other payer date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This will be used for NCPDP field 443-E8, which is the payment or denial date of the claim submitted to the other payer.</td></tr><tr><td>.06</td><td>other payer amount paid count</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This will be used for NCPDP field 341-HB, which is the count of the Other Payer Paid Amount occurrences.</td></tr><tr><td>.07</td><td>other payer reject count</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This is used for NCPDP field 471-5E, which is the count of Other Payer Reject Code occurrences.</td></tr><tr><td>1</td><td>other payer amt paid multiple</td><td>1;0</td><td>MULTIPLE</td><td><a href="9002313_31231.html">9002313.31231</a></td><td></td><td>This multiple can contain up to 9 occurrences of paid amounts from the other payer.</td></tr><tr><td>2</td><td>other payer reject multiple</td><td>2;0</td><td>MULTIPLE</td><td><a href="9002313_31232.html">9002313.31232</a></td><td></td><td>This multiple will store the reject codes returned by the other payer.  There can be up to 20 occurrences per the NCPDP documentation.</td></tr><tr><td>3</td><td>other payer patient resp mult</td><td>3;0</td><td>MULTIPLE</td><td><a href="9002313_31233.html">9002313.31233</a></td><td></td><td>This multiple holds the paid amounts that are the responsibility of the patient from a previous payer.</td></tr><tr><td>4</td><td>benefit stage mult</td><td>4;0</td><td>MULTIPLE</td><td><a href="9002313_31234.html">9002313.31234</a></td><td></td><td>This multiple can contain up to four occurrences of Medicare Part D beneficiary benefit stages.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

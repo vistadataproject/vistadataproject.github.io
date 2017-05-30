@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > STORAGE TRANSACTION</h1></div><div id="results"><dl><dt>name</dt><dd>STORAGE TRANSACTION</dd><dt>number</dt><dd>2006.926</dd><dt>location</dt><dd>^MAGV(2006.926,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ This file tracks the history of actions attempted for a particular artifact. For example:  Successful storage to a particular provider  Failed storage attempts to a provider  Successful retrieval from a particular provider  Failed retrieval attempts from a provider.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>transaction type(+)</td><td>0;1</td><td>SET OF CODES</td><td>R:Read<br/>W:Write<br/>C:Configuration<br/></td><td>B</td><td>This is the type of transaction.</td></tr><tr><td>2</td><td>succeeded(+)</td><td>0;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field indicates whether or not the transaction was successful.</td></tr><tr><td>3</td><td>transaction date/time(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The date and time at which the transaction entry was recorded.</td></tr><tr><td>4</td><td>initiating application(+)</td><td>0;4</td><td>POINTER</td><td><a href="2006_9193.html">2006.9193</a></td><td></td><td>This is the application that initiated the transaction.</td></tr><tr><td>5</td><td>artifact(+)</td><td>0;5</td><td>POINTER</td><td><a href="2006_916.html">2006.916</a></td><td></td><td>This is the Artifact related to the transaction.</td></tr><tr><td>6</td><td>storage provider(+)</td><td>0;6</td><td>POINTER</td><td><a href="2006_917.html">2006.917</a></td><td></td><td>This is the Storage Provider related to the transaction.</td></tr><tr><td>7</td><td>message</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>An optional field containing additional information related to thetransaction (stack trace, error codes, etc).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

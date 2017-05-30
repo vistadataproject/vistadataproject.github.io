@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > USR CLASS</h1></div><div id="results"><dl><dt>name</dt><dd>USR CLASS</dd><dt>number</dt><dd>8930</dd><dt>location</dt><dd>^USR(8930,</dd><dt>description</dt><dd>This file is intended to allow the definition of user classes in such away that they are useful across packages.  It will undoubtedly evolve withmore experience in this area. These user classes are then used to support part of the the"authorization" concept - who may do what to a document, order, etc. They are also used to support part of the "subscription" concept - whoshould receive something, e.g. a notification that a document needssignature. The User Authorization/Subscription file points to the User Class file toallocate authorizations/subscriptions to appropriate user classes. The User Class Membership file links users in the New Person file to UserClasses. This file supports an infinite hierarchy of subclasses, with each entryhaving as many subclasses as desired.  Subclasses are contained in thesame file, as entries in their own right.  A class automatically containsas members all members of its subclasses, as well as explicit members ofthe class itself.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the user class (e.g., Transcriptionist, Medical RecordTechnician, MIS Manager, Medical Student, Nurse, Resident, etc.).</td></tr><tr><td>.02</td><td>abbreviation</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td></td></tr><tr><td>.03</td><td>active(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:Active<br/>0:Inactive<br/></td><td>D</td><td></td></tr><tr><td>.04</td><td>display name</td><td>0;4</td><td>FREE TEXT</td><td></td><td>DNAME</td><td></td></tr><tr><td>.05</td><td>person class</td><td>0;5</td><td>POINTER</td><td><a href="8932_1.html">8932.1</a></td><td></td><td>This provides a mapping between the User Class file of ASU and the Person Class file, which encodes the HCFA draft standard Taxonomy of Health Care Providers.</td></tr><tr><td>1</td><td>subclass</td><td>1;0</td><td>MULTIPLE</td><td><a href="8930_01.html">8930.01</a></td><td></td><td>If for example Service Chief is entered as a subclass of Staff Physician,then persons listed as service chiefs inherit all privileges assigned tostaff physicians.A subclass of a class is a subset of the class.  For example, sincethe class Staff Physician. Subclasses will be used for inheriting user authorizations/subscriptions.For example, if an entry in the User Authorization/Subscription file statesthat the user class Staff Physician may sign progress notes, and if theentry states that this entry includes user subclasses, and if Servicechief is a subclass of class Staff Physician in the User Class file,then service chiefs may also sign progress notes. If a User Authorization/Subscription file entry includes user subclasses,it also includes subclasses of subclasses, etc.</td></tr><tr><td>2</td><td>ok to distribute</td><td>2;1</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Answer "YES" if this individual User Class is to be distributednationally.  Answer "NO" if not.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

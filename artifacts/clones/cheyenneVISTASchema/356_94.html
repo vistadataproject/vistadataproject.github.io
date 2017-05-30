@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INPATIENT PROVIDERS</h1></div><div id="results"><dl><dt>name</dt><dd>INPATIENT PROVIDERS</dd><dt>number</dt><dd>356.94</dd><dt>location</dt><dd>^IBT(356.94,</dd><dt>description</dt><dd>This file is to allow the claims tracking module store the admittingphysician.  In addition, the attending and resident providers can beidentified in this file.  If attending and resident providers areentered then they are assume to be entered completely for an episodeof care being tracked.  If no provider other than admitting physicianis entered then the providers and attending from MAS will be consideredto the the correct providers.  Because QM data may be extracting thisdata on the national roll-up, it is necessary to correctly identify theattending physician. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date of change(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the first day that this provider is responsible for care forthe patient.  Enter the date that the provider assumes responsibility.For claims tracking purposes the provider will be resonsible for thecare from this date (inclusive) until another provider assumesresponsibility for the same level. The date must not be before the admission date or after the dischargedate.  If a current inpatient, it can not be more than 7 days into thefuture.</td></tr><tr><td>.02</td><td>admission movement(+)</td><td>0;2</td><td>POINTER</td><td><a href="405.html">405</a></td><td>C</td><td>This is the admission movement that the provider is responsible for.</td></tr><tr><td>.03</td><td>provider</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td>D</td><td>Enter the name of the provider who is responsible for care of this patient.</td></tr><tr><td>.04</td><td>type provider(+)</td><td>0;4</td><td>SET OF CODES</td><td>1:ATTENDING<br/>2:PROVIDER<br/>3:ADMITTING<br/></td><td></td><td>Enter whether this physician is an attending physician, admittingphysician, or the daily care provider (or resident). It may be that the admitting physician is different from either theattending or provider.  If the admission to acure care does not meet URcriteria, it is important to track the admitting physician. The attending physician is the physician responsible for the care ofthe patient, more than one physician may be the attending. The provider is the physician directly providing patient care.  Inaffiliated hospitals this can be a resident or intern who is not necessarily responsible (the attending is responsible). Because UR reviews are done every day, it is important to be ableto accurately track attendings and providers related to care thatdoes not meet critea.   </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

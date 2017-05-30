@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BASELINE AGE FINDINGS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="811_9.html">811.9</a></dd><dt>name</dt><dd>BASELINE AGE FINDINGS</dd><dt>number</dt><dd>811.97</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>reminder frequency</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the frequency for the reminder. It is input as nU where n isan integer between 0 and 9999 inclusive and U is a unit. Allowedunits are H (hours) D (days), W (weeks), M (months), and Y (years).If a reminder is only to be given once in a lifetime use a frequencyof 99Y. The special frequency of 0Y will make a reminder never due.</td></tr><tr><td>1</td><td>minimum age</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field specifies the minimum age for defining an age rangeassociated with a frequency. Leave it blank if there is no minimum age.</td></tr><tr><td>2</td><td>maximum age</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field specifies the maximum age for defining an age rangeassociated with a frequency. Leave it blank if there is no maximum age.</td></tr><tr><td>3</td><td>age match text</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the text that will be displayed in the Clinical Maintenancecomponent if the patient's age falls within the age range.</td></tr><tr><td>4</td><td>age no match text</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the text that will be displayed in the Clinical Maintenancecomponent if the patient's age does not fall in the age range.</td></tr><tr><td>5</td><td>no. of age match lines</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the number of lines in the age match text. If the number endswith "T" then the text contains TIU objects. This field is setautomatically during reminder edit and should never be edited by hand.</td></tr><tr><td>6</td><td>no. of age no match lines</td><td>3;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the number of lines in the age no match text. If the number endswith "T" then the text contains TIU objects. This field is setautomatically during reminder edit and should never be edited by hand.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

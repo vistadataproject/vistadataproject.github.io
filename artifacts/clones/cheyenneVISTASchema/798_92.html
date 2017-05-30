@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB TEST</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="798_9.html">798.9</a></dd><dt>name</dt><dd>LAB TEST</dd><dt>number</dt><dd>798.92</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>loinc code</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>Enter the numeric LOINC code (without the checkdigit) of the Lab result to be searched for. </td></tr><tr><td>.02</td><td>nlt code</td><td>0;2</td><td>FREE TEXT</td><td></td><td>ANLT</td><td>Enter the NLT code of the Lab result to be searched for. Both LOINC and NLT codes (ifavailable) are used for searching the Lab results.If you want to use only the LOINC code, leave thisfield empty.</td></tr><tr><td>1</td><td>indicator(+)</td><td>0;3</td><td>SET OF CODES</td><td>0:Ignore<br/>1:Use Reference Range<br/>2:Contains<br/>3:Greater Than<br/>4:Less Than<br/>5:Equal To<br/>6:Positive Result<br/></td><td></td><td>The value of this field indicates the comparisonoperation applied to the Lab result. The Labresult is compared to the value of the INDICATED VALUE field.  NOTE: All string comparisons are case-insensitive. For example, if the internal value of this field is equal to 3 ("Greater Than") and the value ofthe INDICATED VALUE field is 5, then this indicator will be evaluated as True for allnumeric Lab results values greater than 5. The "Contains" indicator checks if the indicatedvalue is contained in the Lab result value. The only exceptions are the "Use Reference Range"indicator, which checks if the result value isoutside of the reference range defined for the Lab test, and the "Positive Result". The "Positive Result" indicator selects a test result if the value   * is equal to "P"     or   * contains "POS", "DETEC" or "REA" and    does not contain "NEG", "NO" or "IND". For example, the "POSITIVE", "POS", "REACT", and "DETECTABLE" values will be picked up. At the sametime, the "NON-REACT", "INDETERMINATE", and "NEG"values will be skipped.</td></tr><tr><td>2</td><td>indicated value</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field holds the value that the Lab resultsare compared to (except the "Use Reference Range"and Positive Result indicators).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

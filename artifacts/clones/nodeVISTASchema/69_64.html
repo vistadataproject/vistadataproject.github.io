@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDERED TESTS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="69_6.html">69.6</a></dd><dt>name</dt><dd>ORDERED TESTS</dd><dt>number</dt><dd>69.64</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>nlt test</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td></td></tr><tr><td>1</td><td>nlt code</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td></td></tr><tr><td>2</td><td>remote test name</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>3</td><td>remote test #</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>4</td><td>remote urgency</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Stores the HL7 test urgency from the placer's order message.</td></tr><tr><td>5</td><td>test status</td><td>0;6</td><td>POINTER</td><td><a href="64_061.html">64.061</a></td><td></td><td></td></tr><tr><td>7</td><td>out going mess #</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>8</td><td>accession d/t</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>9</td><td>host uid</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>10</td><td>complete d/t</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>11</td><td>host test</td><td>0;11</td><td>POINTER</td><td><a href="60.html">60</a></td><td></td><td>This field stores the host's file 60 test which should be orderedwhen processing referral lab orders. It's built by the LEDI softwarewhen processing the HL7 ORM order message. Based on the test codefrom the message and the corresponding shipping configuration associated with the placer, the appropriate host test is selectedand stored in this field.</td></tr><tr><td>12</td><td>host urgency</td><td>0;12</td><td>POINTER</td><td><a href="62_05.html">62.05</a></td><td></td><td>This field stores the host's local urgency which should be used when processing referral lab orders. It's built by the LEDI softwarewhen processing the HL7 ORM order message. Based on the HL7 urgencyfrom the message and the corresponding shipping configuration theappropriate host urgency for the order is determined.</td></tr><tr><td>13</td><td>ordering provider</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>The name of the provider ordering this test. It is derived fromthe HL7 ORM order message and contains the human readable nameof the ordering provider.</td></tr><tr><td>700.04</td><td>hl obr-4</td><td>700.04;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>The placer's specimen identifier from the HL7 ORM order message.</td></tr><tr><td>700.18</td><td>hl obr-18</td><td>700.18;E1,60</td><td>FREE TEXT</td><td></td><td></td><td>Stores the placer's field #1 from the OBR segment of the HL7ORM order message. This field is returned to the placer whenthe HL7 ORU result message is created and transmitted tothe placer. The HL7 standard requires that the filler of anorder return to the placer the value of this field.</td></tr><tr><td>700.19</td><td>hl obr-19</td><td>700.19;E1,60</td><td>FREE TEXT</td><td></td><td></td><td>Stores the placer's field #2 from the OBR segment of the HL7ORM order message. This field is returned to the placer whenthe HL7 ORU result message is created and transmitted tothe placer. The HL7 standard requires that the filler of anorder return to the placer the value of this field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

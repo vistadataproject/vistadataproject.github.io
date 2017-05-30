@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EMBOSSER EQUIPMENT FILE</h1></div><div id="results"><dl><dt>name</dt><dd>EMBOSSER EQUIPMENT FILE</dd><dt>number</dt><dd>39.3</dd><dt>location</dt><dd>^DIC(39.3,</dd><dt>description</dt><dd>This file stores the devices that are used as embossers.  For eachembosser, the type of embosser (data card, addressograph, or plain printer) and usage statistics (number printed and error statistics)are stored in this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field is used to assign the names of the devices to be used to print data cards.  This field points to the DEVICE file (#3.5) therefore,a name entered here must match a name currently in that file.</td></tr><tr><td>1</td><td>embosser type</td><td>0;2</td><td>SET OF CODES</td><td>1:DATA CARD<br/>2:ADDRESSOGRAPH<br/>0:PLAIN PRINTER<br/></td><td></td><td>This field is used to assign the type of the embosser device.  Followingare the available embosser types and their associated code number:'1' for DATACARD, '2' for ADDRESSOGRAPH, and '0' for PLAIN PRINTER.</td></tr><tr><td>2</td><td>number of cards embossed</td><td>1;0</td><td>MULTIPLE</td><td><a href="39_31.html">39.31</a></td><td></td><td>This multiple field gives information that may be useful to site managersabout data cards that have been processed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

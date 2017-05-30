@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IMMUNIZATION INFO SOURCE</h1></div><div id="results"><dl><dt>name</dt><dd>IMMUNIZATION INFO SOURCE</dd><dt>number</dt><dd>920.1</dd><dt>location</dt><dd>^PXV(920.1,</dd><dt>description</dt><dd>Per VHA Directive, this file has been "locked down" by Data Standardization (DS). The file definition (i.e. data dictionary) shall  not be modified. All additions, changes and deletions to entries in thefile shall be done by Enterprise Reference Terminology (ERT) using theMaster File Server (MFS), provided by the Common Services (CS). Creatingand/or editing locally defined fields in the file are not permitted. Useof locally defined fields that were created prior to the VHA Directiveshall not be supported. This file is a table of standard possible sources from which theinformation about a particular immunization event was obtained. The datain this file are derived from the CDC-defined Immunization InformationSource table (NIP001).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>source(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the source of the information being provided for an immunizationevent.</td></tr><tr><td>.02</td><td>hl7 code(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>H</td><td>This is the HL7 code used for this SOURCE.  It is a required entry of2 numbers.  A  leading zero is acceptable.  NO TWO SOURCES MAYUSE THE SAME HL7 CODE.</td></tr><tr><td>.03</td><td>inactive flag</td><td>0;3</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>This is used to show if the Source is ACTIVE OR INACTIVE.  This should bea '1' if it is INACTIVE or a '0' or no value if it is ACTIVE.</td></tr><tr><td>99.97</td><td>replaced by vha standard term</td><td>VUID;3</td><td>POINTER</td><td><a href="920_1.html">920.1</a></td><td>AREPLACETERM</td><td>This is populated when one Term/Concept replaces another Term/Concept.This field is controlled by standardization and should only bechanged  by standardization processes.  This field contains a pointerto a VHA standard term that replaces this entry.</td></tr><tr><td>99.98</td><td>master entry for vuid(+)</td><td>VUID;2</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field identifies the Master Entry for a VUID associated with a Term/Concept.</td></tr><tr><td>99.99</td><td>vuid(+)</td><td>VUID;1</td><td>FREE TEXT</td><td></td><td>AVUID</td><td>VHA Unique ID (VUID).  A unique meaningless integer assigned to referenceterms VHA wide.</td></tr><tr><td>99.991</td><td>effective date/time</td><td>TERMSTATUS;0</td><td>MULTIPLE</td><td><a href="920_199.html">920.199</a></td><td></td><td>Describes the pair Status and Effective Date/Time for each reference term.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

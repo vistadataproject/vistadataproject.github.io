@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RATE EFFECTIVE DATE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="342.html">342</a></dd><dt>name</dt><dd>RATE EFFECTIVE DATE</dd><dt>number</dt><dd>342.04</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>rate effective date</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field identifies the date that the associated interest rate,penalty rate, and administration charges become effective.  Since theserates remain in effect for any bills created during this time, thisinformation should not be altered or deleted. For example, if the interest rate of 4% is effective on Jan 1, 1992and the new interest rate of 4.5% is effective on March 1, 1993, any billscreated during Jan 1 thru Mar 1 keep the interest rate of 4%.</td></tr><tr><td>.02</td><td>annual interest rate</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the annual interest rate that bills created during the effectivetime periods are charged.  Interest is charged on a statement to statementtime basis.  The daily interest rate is the interest rate divided by 360. If a number between 1 and 10 is entered, the number will be convertedto percent.  Example: 5 will convert to .05, 2 will convert to .02.If a number between 0 and .1 is entered, the number will notbe converted by the system.  Example: .05 will be 5%, .01 will be 1%.</td></tr><tr><td>.03</td><td>monthly admin charge</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This administrative charge is calculated on an account with any overduebills.  Administrative charges are not added to each bill, but rather onthe oldest outstanding bills for each account.  If an account has nodelinquent outstanding bills. then administrative charges are not added,</td></tr><tr><td>.04</td><td>annual penalty rate</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the annual penalty rate that bills created during the effectivetime periods are charged.  Interest is charged on a statement to statementtime basis.  The daily penalty rate is the penalty rate divided by 360. Penalty charges are only applicable to non-benefit debts. If a number between 1 and 10 is entered, the number will be convertedto percent.  Example: 5 will convert to .05, 2 will convert to .02.If a number between 0 and .1 is entered, the number will notbe converted by the system.  Example: .05 will be 5%, .01 will be 1%.</td></tr><tr><td>.05</td><td>litigation referral fee</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is a one-time annual fee charged by Regional Counsel or Departmentof Justice organizations. At the time this field was created, it'svalue is retrieved only when Form Letter FL4-485 is printed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

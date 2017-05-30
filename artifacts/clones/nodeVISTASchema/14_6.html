@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > UCI ASSOCIATION</h1></div><div id="results"><dl><dt>name</dt><dd>UCI ASSOCIATION</dd><dt>number</dt><dd>14.6</dd><dt>location</dt><dd>^%ZIS(14.6,</dd><dt>description</dt><dd>Most TaskMan tasks run in the same uci and volume set in which they werecreated.  However, tasks that need a device that is only available froma different volume set can not.  Such tasks must run on the volume setfrom which the device is available, in a uci equivalent to theircurrent one.  Equivalent ucis on different volume sets can have differentnames, so this file indicates which ucis on different volume sets areequivalent. TaskMan only directly uses the "AT" and "AV" indices.  The "AT" indexhas this structure:  ^%ZIS("AT",.01,1.5,2.5,3)="", and is used to findequivalent ucis on different volume sets.  The "AV" index has thisstructure: ^%ZIS("AV",1.5,.01)="", and is used to determine whether acertain uci is part of a certain volume set. Whenever the VOLUME SET field of the VOLUME SET file is changed, aMUMPS cross-reference searches through this file and re-cross-referencesall pointers to that entry, thereby keeping the two files in synch.</dd><dt>applicationGroups</dt><dd>ZT</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>Answer should be a unique number, used to identify this file entry.</td></tr><tr><td>.01</td><td>from uci(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Answer should be the name of a uci from which a task is being transferred.</td></tr><tr><td>1</td><td>from volume set(+)</td><td>0;5</td><td>POINTER</td><td><a href="14_5.html">14.5</a></td><td></td><td>Answer should be the name of the volume set from which the task is beingtransferred.</td></tr><tr><td>1.5</td><td>from volume set (free text)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is write protected and uneditable.  It is triggered by field1, and holds the resolved pointer values for use in the file's cross-references.</td></tr><tr><td>2</td><td>to volume set</td><td>0;6</td><td>POINTER</td><td><a href="14_5.html">14.5</a></td><td></td><td>Answer should be the name of the volume set to which the task is beingtransferred.</td></tr><tr><td>2.5</td><td>to volume set (free text)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field is write protected and uneditable.  It is triggered by field2, and holds the resolved pointer values for use in the file's cross-references.</td></tr><tr><td>3</td><td>to uci</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Answer should be the name of the uci to which the task will be transferred.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

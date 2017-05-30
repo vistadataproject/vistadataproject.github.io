@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HBHC PROVIDER</h1></div><div id="results"><dl><dt>name</dt><dd>HBHC PROVIDER</dd><dt>number</dt><dd>631.4</dd><dt>location</dt><dd>^HBHC(631.4,</dd><dt>description</dt><dd>This file contains HBHC Provider data.  The Provider name field is apointer to VA(200).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This field represents unique 4 numeric digit HBPC provider number assigned toeach person who has any FTEE charged to HBPC.  4 digit number should bestructured as follows:   - first digit contains 1 for nonstudents, 2 for students  - second digit contains 0 thru 8 indicating discipline as follows:      0  RN      1  LPN, LVN, Home Health Aide or Tech, Nursing Assistant      2  Social Worker      3  OT, PT, CT, Rehabilitation Therapist         4  Dietitian, Nutritionist      5  Physician         6  Nurse Practitioner      7  Clinical Pharmacist         8  Other  - third & fourth digits contain 0 thru 99 indicating individual provider as follows:       0  first staff member in discipline      1  second staff member in discipline      2  third staff member in discipline, etc.All students in a particular discipline should share the same HBPC providernumber (e.g.  all RN students would be 200).  New provider numbers are issuedonly when FTEE is increased.  Provider number '190' can be used as a'catch-all' category if the need arises. </td></tr><tr><td>1</td><td>provider name(+)</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td>C</td><td>This field represents HBHC provider's name in New Person (200) file.Person must exist in VA(200) for HBHC selection, since LAYGO is notallowed.</td></tr><tr><td>2</td><td>degree</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field represents degree held by HBHC provider.  Field allows 1-15characters of free text.</td></tr><tr><td>3</td><td>grade/step</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field represents grade/step of HBHC provider.  Field must be in99/99 or xxx/99 format (e.g.  11/4 for grade 11, step 4 or SR/11 forSenior grade, step 11).  The format allows for 1-2 numerics or 1-3alphabetic characters, 1 slash ('/'), and 1-2 numerics.</td></tr><tr><td>4</td><td>ftee on hbhc</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field represents FTEE charged to HBHC service, and must be between0 and 1, with 2 decimal digits allowed.  (e.g.  '.5'  or  '1.0')</td></tr><tr><td>5</td><td>hbhc team(+)</td><td>0;6</td><td>POINTER</td><td><a href="633.html">633</a></td><td></td><td>This field represents HBHC team name, referencing HBHC Team (633) fileentries.  Team must exist in HBHC Team file, since LAYGO is not allowed.</td></tr><tr><td>6</td><td>inactive provider number</td><td>0;7</td><td>SET OF CODES</td><td>1:Inactive Provider Number<br/></td><td>AC</td><td>This field represents whether HBHC Provider Number is active.  As of10/1/96, each HBHC Provider may have only 1 unique HBHC Provider Numberactive at any point in time.  All other provider numbers must be InactiveProvider Numbers. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

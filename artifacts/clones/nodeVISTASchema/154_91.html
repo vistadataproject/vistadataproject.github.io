@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCD SITE PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>SCD SITE PARAMETERS</dd><dt>number</dt><dd>154.91</dd><dt>location</dt><dd>^SPNL(154.91,</dd><dt>description</dt><dd>Spinal Cord Dysfunction Site Parameter File.  Contains controlvalues that regulate the operation of the SCD data extractionfor the National SCD Registry.This file is critical to that operation.  If no site parameterrecord is present; default values will automatically be usedand will update the file.  If specific fields are blank/nulldefault values will be used to update this file.  Patch **2** applied to this file updating fields 1 and 2 toraise the lowest acceptable values for these two fields.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>facility number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the site/station number which the medical center goes by.This value is set from the Kernel Site Parameter file pointers.There should never be a need for the user to update this field.  Ifin the unforseen event that there is a need to update this field,update the site/station (default institution) through Kernel and thendelete the SCD Site Parameter Record and Edit the new one though theprovided option.</td></tr><tr><td>4</td><td>f/u rpt (last seen) period</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the period which the Follow Up (Last Seen) report uses.  Patientswho haven't been seen for this period of time will be displayed in the report.  The default may be changed through the Site Parameters menu.For example, 180D is 180 days; 6M is 6 months.</td></tr><tr><td>5</td><td>f/u rpt (last phy exam) period</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is the period which the Follow Up (Last Physical Exam) report uses.Patients who haven't had a physical exam for this period of time will bedisplayed in the report.  The default may be changed through the SiteParameters menu.  For example, 180D is 180 days; 6M is 6 months.</td></tr><tr><td>6</td><td>scd nat'l registry mail addr(+)</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>Contains the full recipient_name@domain mail address for theSCD National Registry.</td></tr><tr><td>7</td><td>sci notification mail group</td><td>0;9</td><td>POINTER</td><td><a href="3_8.html">3.8</a></td><td></td><td></td></tr><tr><td>8</td><td>ms notification mail group</td><td>0;10</td><td>POINTER</td><td><a href="3_8.html">3.8</a></td><td></td><td></td></tr><tr><td>9</td><td>send notification</td><td>0;8</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td></td></tr><tr><td>10</td><td>user</td><td>1;0</td><td>MULTIPLE</td><td><a href="154_9101.html">154.9101</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

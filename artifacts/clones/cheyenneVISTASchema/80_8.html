@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TEMPORARY PROCEDURES</h1></div><div id="results"><dl><dt>name</dt><dd>TEMPORARY PROCEDURES</dd><dt>number</dt><dd>80.8</dd><dt>location</dt><dd>^ICDYZ(80.8,</dd><dt>description</dt><dd>Contains all valid ICD Operation/Procedure codes.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>ICD9 procedure or operation code</td></tr><tr><td>2</td><td>identifier</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains Operations Identifiers.</td></tr><tr><td>4</td><td>operation/procedure</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Name of Operation or Procedure that code refers to.</td></tr><tr><td>5</td><td>mdc24</td><td>0;3</td><td>SET OF CODES</td><td>1:CRANIAL<br/>2:LIMB<br/>3:OTHER OR<br/></td><td></td><td>Set of codes refers to body site of procedure, when for a MultipleSignificant Trauma (MDC 24)</td></tr><tr><td>7</td><td>major diagnostic category</td><td>MDC;0</td><td>MULTIPLE</td><td><a href="80_82.html">80.82</a></td><td></td><td>Major Diagnostic Category which this code may fall under.</td></tr><tr><td>8</td><td>icd expanded</td><td>0;8</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>VA ONLY CODES.</td></tr><tr><td>9.5</td><td>use only with sex</td><td>0;10</td><td>SET OF CODES</td><td>M:MALE<br/>F:FEMALE<br/></td><td></td><td>Set of codes containing the sex if operation/procedure is gender-specific.</td></tr><tr><td>10</td><td>description</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>More complete description of operation or procedure.</td></tr><tr><td>20</td><td>major o.r. proc</td><td>M;1</td><td>FREE TEXT</td><td></td><td></td><td>Is this defined as a Major O.R. Procedure?</td></tr><tr><td>50</td><td>operation length</td><td>SR;1</td><td>NUMERIC</td><td></td><td></td><td>Number of minutes for average length of time for this operation.</td></tr><tr><td>51</td><td>requested blood kind</td><td>SR;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the requested blood kind.</td></tr><tr><td>52</td><td>number of blood units</td><td>SR;3</td><td>NUMERIC</td><td></td><td></td><td>Number of Units of blood usually required.</td></tr><tr><td>53</td><td>screen or type</td><td>SR;4</td><td>SET OF CODES</td><td>X:CROSS-MATCH<br/>S:TYPE OR SCREEN<br/></td><td></td><td>This field contains a code indicating screening or cross-matching.</td></tr><tr><td>54</td><td>anesthesia rug</td><td>SR;5</td><td>NUMERIC</td><td></td><td></td><td>This field contains the Resource Utilization Group for the Anesthesia.</td></tr><tr><td>55</td><td>acs name</td><td>SR;6</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the ACS name.</td></tr><tr><td>100</td><td>inactive flag</td><td>0;9</td><td>SET OF CODES</td><td>1:INACTIVE CODE<br/></td><td></td><td>Set to 1 when code is inactivated.</td></tr><tr><td>102</td><td>inactive date</td><td>0;11</td><td>DATE-TIME</td><td></td><td></td><td>Date as of which code is inactive.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

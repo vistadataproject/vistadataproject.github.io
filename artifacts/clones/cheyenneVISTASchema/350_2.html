@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB ACTION CHARGE</h1></div><div id="results"><dl><dt>name</dt><dd>IB ACTION CHARGE</dd><dt>number</dt><dd>350.2</dd><dt>location</dt><dd>^IBE(350.2,</dd><dt>description</dt><dd>This file contains the unit charges for an IB ACTION TYPE by theeffective date of the charge.  The "AIVDT" cross-reference can beused to quickly ascertain the most recent charge for an action type.  Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>key(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is a description unique name for this entry that identifies it.  Itis not used in the calculation of the charge but rather for editingpurposes.</td></tr><tr><td>.02</td><td>effective date</td><td>0;2</td><td>DATE-TIME</td><td></td><td>C</td><td>This is the date the charge rate for this entry became effective.</td></tr><tr><td>.03</td><td>ib transaction type</td><td>0;3</td><td>POINTER</td><td><a href="350_1.html">350.1</a></td><td></td><td>This is the IB TRANSACTION TYPE that this rate is for.</td></tr><tr><td>.04</td><td>unit charge, fixed</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>If this charge is a fixed amount, this field contains the fixed amount.</td></tr><tr><td>.05</td><td>inactivation date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>If this charge is inactive put in the inactive date.  If the chargeis not to be used the inactive date should equal the active date.  Ifthe charge was effective for a time period but that charge no longeris valid then enter the date that this is inactive.  No entry is necessary in this field if a more recent active date is added for anIB ACTION TYPE.</td></tr><tr><td>.06</td><td>additional amount</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is a fixed additional dollar amount that will be added to thebasic charge after it has been computed. An example of this wouldbe the additional charge of $200 added to HCFA Ambulatory Surgery rategroups for inter-ocular lens implants.</td></tr><tr><td>10</td><td>unit charge logic</td><td>10;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>If this charge is not fixed (ie an exact cost) the field contains the logicto calculate the cost per unit.  It may need to use the logic in the IBtransaction type file to find this cost.</td></tr><tr><td>20</td><td>additional amount logic</td><td>20;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is M code to be executed which returns the $T value to determine ifthe Additional Amount (#.06) field should be added to the charge value.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

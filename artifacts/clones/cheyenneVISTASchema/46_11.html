@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RAI MDS MONITOR</h1></div><div id="results"><dl><dt>name</dt><dd>RAI MDS MONITOR</dd><dt>number</dt><dd>46.11</dd><dt>location</dt><dd>^DGRU(46.11,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>new name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The contents of the #.01 field of the Master file entry relates to, afterthe edit/add is completed.For example, an Insurance Company name was changed from "USBS" to"USBS INC.".  This field will contain "USBS INC.".</td></tr><tr><td>.02</td><td>old data</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Contents of the #.01 field of the Master File this entry relates to, beforethe data was edited/added.For example, if the name of an Insurance company is changed from "USBS"to "USBS INC.", this field will contain "USBS".  It is used in theMaster File Update (MFU) HL7 message as the identifier.  If a new Insurance company is added, this field is left blank.</td></tr><tr><td>.03</td><td>file number(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td>AC</td><td>The file number of the Master File this change relates too.This field is triggered by the Master File being changed.  The filenumber is used to destinguish what type of Master File Update will becreated.  For example, if this field contains 200 (New Person file), a "STAFF" type MFU will be created.  If this were to contain 42 (WardLocation file), a "LOCATION" type MFU would be created.</td></tr><tr><td>.04</td><td>internal entry number(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The internal entry number of the entry which was modified or added.This field is triggered by the Master File being changed and is usedas the first part of the identifier in the MFU HL7 message.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

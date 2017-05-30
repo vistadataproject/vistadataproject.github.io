@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRINT TEMPLATE</h1></div><div id="results"><dl><dt>name</dt><dd>PRINT TEMPLATE</dd><dt>number</dt><dd>.4</dd><dt>location</dt><dd>^DIPT(</dd><dt>description</dt><dd>This file stores the PRINT FIELDS data and other information about printtemplates.  These templates are used in the Print, Filegram, Extract, andExport options.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td></td></tr><tr><td>2</td><td>date created</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>3</td><td>read access</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>4</td><td>file</td><td>0;4</td><td>POINTER</td><td><a href="1.html">1</a></td><td></td><td></td></tr><tr><td>5</td><td>user #</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td></td></tr><tr><td>6</td><td>write access</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>7</td><td>date last used</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>8</td><td>template type</td><td>0;8</td><td>SET OF CODES</td><td>1:FILEGRAM<br/>2:EXTRACT<br/>3:EXPORT<br/>7:SELECTED EXPORT FIELDS<br/></td><td></td><td></td></tr><tr><td>10</td><td>description</td><td>%D;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr><tr><td>20</td><td>destination file</td><td>0;9</td><td>POINTER</td><td><a href="1.html">1</a></td><td></td><td>This field holds the number of the file that is designed to receivedata from other files by using the Extract Tool.</td></tr><tr><td>50</td><td>filegram/extr file</td><td>1;0</td><td>MULTIPLE</td><td><a href="_41.html">.41</a></td><td></td><td></td></tr><tr><td>100</td><td>export field</td><td>100;0</td><td>MULTIPLE</td><td><a href="_42.html">.42</a></td><td></td><td>This multiple holds information about each field being exported.</td></tr><tr><td>105</td><td>export format</td><td>105;1</td><td>POINTER</td><td><a href="_44.html">.44</a></td><td></td><td>This field contains the foreign format used to make the export template.</td></tr><tr><td>110</td><td>export template created?</td><td>105;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>If YES, this Selected Fields for Export template has been used to createan Export template.</td></tr><tr><td>115</td><td>multiple path</td><td>105;4</td><td>FREE TEXT</td><td></td><td></td><td>This field holds a list of field numbers representing the deepest multiplecontained in this Export template.</td></tr><tr><td>704</td><td>header</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr><tr><td>707</td><td>sub-header suppressed</td><td>SUB;1</td><td>SET OF CODES</td><td>1:YES</td><td></td><td></td></tr><tr><td>1620</td><td>print fields</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr><tr><td>1815</td><td>routine invoked</td><td>ROU;E1,13</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>1816</td><td>previous routine invoked</td><td>ROUOLD;E1,13</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>1819</td><td>compiled</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

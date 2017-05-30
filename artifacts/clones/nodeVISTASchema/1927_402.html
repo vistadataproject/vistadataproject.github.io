@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > NUPA CARE PLAN IVS</h1></div><div id="results"><dl><dt>name</dt><dd>NUPA CARE PLAN IVS</dd><dt>number</dt><dd>1927.402</dd><dt>location</dt><dd>^NUPA(1927.402,</dd><dt>description</dt><dd>This file holds information on all IVs that a pateitn has during a particular admission.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>care plan(+)</td><td>0;1</td><td>POINTER</td><td><a href="1927_4.html">1927.4</a></td><td>B</td><td>The care plan that this IV is associated to.</td></tr><tr><td>1</td><td>location</td><td>0;2</td><td>POINTER</td><td><a href="1927_41.html">1927.41</a></td><td></td><td>The location of the IV in the patient's body.</td></tr><tr><td>2</td><td>other location</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The location of the IV in case it's not one of the pre-defined locations.</td></tr><tr><td>3</td><td>date/time inserted</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The date that the IV was inserted.</td></tr><tr><td>4</td><td>size</td><td>0;4</td><td>POINTER</td><td><a href="1927_41.html">1927.41</a></td><td></td><td>The size of the IV.</td></tr><tr><td>5</td><td>other size</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The size of the IV in case it's not one of the pre-defined sizes.</td></tr><tr><td>6</td><td>iv discontinue date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>The date/time that the IV was discontinued.</td></tr><tr><td>7</td><td>dressing change date/time</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>The date/time that the IV dressing was changed.</td></tr><tr><td>8</td><td>tubing change date/time</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>The date/time that the IV tubing was last changed.</td></tr><tr><td>10</td><td>type</td><td>3;1</td><td>SET OF CODES</td><td>C:CENTRAL<br/>P:PERIPHERAL<br/>D:DIALYSIS<br/></td><td></td><td>Is the IV a Central Line, Peripheral Line, or Dialysis Access?</td></tr><tr><td>11</td><td>line type</td><td>3;2</td><td>POINTER</td><td><a href="1927_41.html">1927.41</a></td><td></td><td>Type of Central Line: Implanted port - Single Lumen, Implanted port -Double Lumen, etc.</td></tr><tr><td>12</td><td>impregnated with antiseptic</td><td>3;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Is the Central Line impregnated with antiseptic and/or antibiotic?</td></tr><tr><td>13</td><td>power injectable</td><td>3;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Is the Central Line power injectable?</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

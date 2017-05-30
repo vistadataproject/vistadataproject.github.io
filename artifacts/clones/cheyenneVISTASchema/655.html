@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SOCIAL WORK PATIENT</h1></div><div id="results"><dl><dt>name</dt><dd>SOCIAL WORK PATIENT</dd><dt>number</dt><dd>655</dd><dt>location</dt><dd>^SOWK(655,</dd><dt>description</dt><dd>This file is used to keep track of primarily Residential Care Home patientsseen by Social Work Service. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Name of the social work patient.</td></tr><tr><td>.99</td><td>rch</td><td>4;0</td><td>MULTIPLE</td><td><a href="655_02.html">655.02</a></td><td></td><td>The following fields will contain historical data for RCH patients.</td></tr><tr><td>1</td><td>date placed in rch program(+)</td><td>0;2</td><td>DATE-TIME</td><td></td><td>H</td><td>This field will be used to show the date the patient was placed in the RCHprogram.</td></tr><tr><td>2</td><td>date removed from rch program(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>If patient is flagged as being removed from the RCH program, this field willhold the date removed from program.</td></tr><tr><td>3</td><td>removed from rch program ?(+)</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field flags the patient as being removed or not removed from RCHprogram.</td></tr><tr><td>5</td><td>high risk</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field is used to flag patients should they be found to be a possiblehigh-risk case.  This field is set when the High-Risk Screening Profileis run.  This field is set if a patient meets one or more criteriaof the screening profile.</td></tr><tr><td>6</td><td>seen by sws</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This field is used to indicate if the patient was seen by theSocial Work Service after being flagged as a possible high-risk patient.This field is set after a case has been opened for a possible high-riskpatient.</td></tr><tr><td>7</td><td>false high-risk</td><td>0;7</td><td>SET OF CODES</td><td>F:FALSE HIGH-RISK<br/></td><td></td><td>This field is used to indicate that the patient was not a high-riskcase.  Not to be set directly with VA FileMan.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

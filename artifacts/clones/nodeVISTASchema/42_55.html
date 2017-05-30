@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRIORITY GROUPING</h1></div><div id="results"><dl><dt>name</dt><dd>PRIORITY GROUPING</dd><dt>number</dt><dd>42.55</dd><dt>location</dt><dd>^DIC(42.55,</dd><dt>description</dt><dd>This file contains the Priority Groups used when placing a patienton the Waiting List.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This is the internal entry number of the priority group as determined byVA FileMan.  This internal number may be utilized by the MAS package todetermine programming flow.  These entries should NOT be edited nor shouldany entries be added or removed.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter the name of the priority group.  This data is distributed by theMAS package under the direction of MAS VACO and must not be altered inany way.</td></tr><tr><td>1</td><td>description</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a brief description about the priority grouping.  Thisdata is distributed by the MAS package and should not be altered.</td></tr><tr><td>5</td><td>type of care(+)</td><td>0;5</td><td>SET OF CODES</td><td>h:HOSPITAL<br/>n:NURSING HOME<br/>o:OUTPATIENT<br/>a:ALL<br/></td><td></td><td>Enter the type of care whether it be for inpatient (hospital or nursinghome) or outpatient.</td></tr><tr><td>6</td><td>sc/nsc(+)</td><td>0;6</td><td>SET OF CODES</td><td>0:SC OR NSC<br/>1:NSC<br/>2:SC<br/></td><td></td><td>Enter whether this priority grouping is for an SC or NSC vet.  This datais distributed by the MAS package and MUST NOT be altered.</td></tr><tr><td>10</td><td>active(+)</td><td>0;10</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>If this priority grouping is currently active, enter yes.  Otherwise,answer no.</td></tr><tr><td>50</td><td>synonym</td><td>S;0</td><td>MULTIPLE</td><td><a href="42_56.html">42.56</a></td><td></td><td>This multiple contains alternate names by which this priority groupingcan be referenced.  If a user enters either the name or one of thesesynonyms, this priority group will be selected.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

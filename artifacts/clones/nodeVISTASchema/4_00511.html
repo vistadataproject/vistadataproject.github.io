@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FIELD NUMBER</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="4_0051.html">4.0051</a></dd><dt>name</dt><dd>FIELD NUMBER</dd><dt>number</dt><dd>4.00511</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>field number</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Number of file/subfile to be included in MD5 procedure of the Master FileServer (MFS).</td></tr><tr><td>1</td><td>sequence</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Order sequence, the field will be taken in MD5 hash.</td></tr><tr><td>2</td><td>external/internal</td><td>0;3</td><td>SET OF CODES</td><td>I:INTERNAL<br/>E:EXTERNAL<br/></td><td></td><td>Get External or internal Fileman value. Default = External</td></tr><tr><td>3</td><td>vuid from file</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>If Pointer type field to .01 (Name), replace Name with VUID of pointed file. Field holds Pointed File #.</td></tr><tr><td>4</td><td>distinct values</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>If this field is set to 'YES' and the field value already exists, only repeated value will be excluded from MD5, other record's fields will not be affected.</td></tr><tr><td>5</td><td>post-processing logic</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is Standard MUMPS code that gets executed for field exceptional treatment.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

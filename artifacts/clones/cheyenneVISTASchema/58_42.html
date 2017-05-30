@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SPMP EXPORT BATCH</h1></div><div id="results"><dl><dt>name</dt><dd>SPMP EXPORT BATCH</dd><dt>number</dt><dd>58.42</dd><dt>location</dt><dd>^PS(58.42,</dd><dt>description</dt><dd>This file is used to maintain information on all controlled substance prescriptionstransmitted to the State Prescription Monitoring Program (SPMP). The file is alsoused for manually re-transmitting the data to the SPMP.   The data in this file is automatically populated and is not editable by the end-user.</dd><dt>applicationGroups</dt><dd>PSO</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>batch number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the internal batch number used to identify the batch transmitted to the state.</td></tr><tr><td>1</td><td>state</td><td>0;2</td><td>POINTER</td><td><a href="5.html">5</a></td><td></td><td>This is the state the batch was transmitted to.</td></tr><tr><td>2</td><td>export type</td><td>0;3</td><td>SET OF CODES</td><td>SC:SCHEDULED<br/>MA:MANUAL<br/>RX:SINGLE RX<br/>VD:VOID ONLY<br/></td><td></td><td>This indicates if the batch was created by a scheduled process, manually entered date range or by transmitting a single Rx to the state.</td></tr><tr><td>3</td><td>batch status</td><td>0;4</td><td>SET OF CODES</td><td>N:NEW<br/>X:EXPORTED<br/>E:ERROR(S) FOUND<br/>C:CANCELLED<br/></td><td></td><td></td></tr><tr><td>4</td><td>begin release date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the first prescription release date/time included in the batch.</td></tr><tr><td>5</td><td>end release date/time</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>This is the last prescription release/date time included in the batch.</td></tr><tr><td>6</td><td>export file name</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the file exported to the state.</td></tr><tr><td>7</td><td>exported by</td><td>0;8</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who ran the transmission to the state.</td></tr><tr><td>8</td><td>date/time batch created</td><td>0;9</td><td>DATE-TIME</td><td></td><td>AD</td><td>This is the date/time the batch was created.</td></tr><tr><td>9</td><td>date/time batch exported</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>This is the date/time the batch was transmitted to the state.</td></tr><tr><td>10</td><td>logged-in date/time(+)</td><td>0;12</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>11</td><td>reference number</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>12</td><td>filled by</td><td>0;13</td><td>POINTER</td><td><a href="3.html">3</a></td><td></td><td></td></tr><tr><td>13</td><td>filled date/time</td><td>0;14</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>100</td><td>prescriptions</td><td>RX;0</td><td>MULTIPLE</td><td><a href="58_42001.html">58.42001</a></td><td></td><td>This contains information about the prescriptions included in the batch.</td></tr><tr><td>200</td><td>errors</td><td>ERR;0</td><td>MULTIPLE</td><td><a href="58_42002.html">58.42002</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

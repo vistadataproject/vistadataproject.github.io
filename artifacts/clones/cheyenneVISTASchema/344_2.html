@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AR PAYMENT TRANSACTIONS</h1></div><div id="results"><dl><dt>name</dt><dd>AR PAYMENT TRANSACTIONS</dd><dt>number</dt><dd>344.2</dd><dt>location</dt><dd>^RCY(344.2,</dd><dt>description</dt><dd>This file is used to store payments received for automatic processing.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>transmission date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field is used to store the transmission date for payments.  Eachday payments are sent to AR for processing.  Once all payments havebeen received for a day, the payments are automatically processed.</td></tr><tr><td>.02</td><td>total sequences</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field is used to store the total number of sequences for atransmission date.</td></tr><tr><td>.03</td><td>total dollars</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field stores the expected total dollars for all sequences receivedfor a transmission date.</td></tr><tr><td>.04</td><td>status</td><td>0;4</td><td>SET OF CODES</td><td>r:RECEIVING<br/>p:PROCESSING<br/>e:ERROR<br/></td><td></td><td>This field is used to store the status of the transmission.   Receiving: the transmission is being received.  Processing: the transmission has been received and is being processed.  Error: there was an error in receiving or processing the transmission.</td></tr><tr><td>.05</td><td>status date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This field is used to stamp the date the status was updated.  Thisfield is used by the software to prevent prior transmission datafrom being deleted before being completely received or processed.</td></tr><tr><td>1</td><td>sequence</td><td>1;0</td><td>MULTIPLE</td><td><a href="344_21.html">344.21</a></td><td></td><td>This multiple stores all the sequences for a transmission.</td></tr><tr><td>2</td><td>error messages</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

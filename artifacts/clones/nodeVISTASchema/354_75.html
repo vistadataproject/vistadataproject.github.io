@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB COPAY CAPS</h1></div><div id="results"><dl><dt>name</dt><dd>IB COPAY CAPS</dd><dt>number</dt><dd>354.75</dd><dt>location</dt><dd>^IBAM(354.75,</dd><dt>description</dt><dd>DO NOT delete entries in this file.  DO NOT edit data in this file with VAFile Manager. This file comes populated with data.  The data in this file should not beedited, added, or deleted locally.  The information stored here is the capamounts for outpatient medication copayment.  Once a patient has reachedhis cap, billing will stop for the remainder of the period indicated. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>effective date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the effective date of this cap entry.  Based upon the date of thetransaction, this will be used to determine if a billing transaction isabove the cap or not.</td></tr><tr><td>.02</td><td>priority level</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the priority level of the cap.  This will be used based upon thepatient's priority level to determine what their cap amount is.</td></tr><tr><td>.03</td><td>monthly cap amount</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the monthly cap amount that will be used to determine if the billis above the cap or not.  This is a total monthly amount that can bebilled to a patient for pharmacy copay.</td></tr><tr><td>.04</td><td>yearly cap amount</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the yearly cap amount that will be used to determine if the billis above the cap or not based on the year basis specified. This is thetotal yearly amount that can be billed to a patient for pharmacy copay.</td></tr><tr><td>.05</td><td>termination date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the termination date of this cap amount.  This is optional.</td></tr><tr><td>.06</td><td>year basis</td><td>0;6</td><td>SET OF CODES</td><td>C:CALENDAR YEAR<br/>F:FISCAL YEAR<br/></td><td></td><td>This is the year basis for this cap amount.  This will be used todetermine the timeframe to calculate the amounts billed to a patient.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

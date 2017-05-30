@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ERROR MESSAGES</h1></div><div id="results"><dl><dt>name</dt><dd>ERROR MESSAGES</dd><dt>number</dt><dd>3.076</dd><dt>location</dt><dd>^%ZTER(2,</dd><dt>description</dt><dd> This file contains a number of the abbreviations used to indicate the typeof error encountered.  The most important ones are those which areindicated as fatal errors warranting termination of the job after loggingof the error.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the brief name for an error used by one or moreoperating systems (e.g., UNDEF for an undefined error)</td></tr><tr><td>.02</td><td>error type(+)</td><td>0;2</td><td>SET OF CODES</td><td>F:FATAL<br/>H:HARDWARE<br/>I:IO/DEVICE<br/>P:PROGRAM<br/>D:DATA<br/>L:LOCAL<br/></td><td></td><td>This field attempts to indicate the primary responsibility for an error,such as hardware, or software, since this affects the extent ofrecoverability from an error.</td></tr><tr><td>.03</td><td>screen in xter</td><td>0;3</td><td>SET OF CODES</td><td>1:Don't show<br/>2:Don't record<br/></td><td>AC</td><td>This field is used to mark errors that should be screened in one way oranother. If blank show and record error, 1 record but don't show in XTERin default mode, 2 don't record.</td></tr><tr><td>.04</td><td>count screened errors</td><td>0;4</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>This field turns one the counting of the screening of this error.</td></tr><tr><td>.05</td><td>national</td><td>0;5</td><td>BOOLEAN</td><td>1:Yes<br/></td><td></td><td>This field should only be used by the National developers.This is to GUARANTEE that certain ones are in the file.These entries can't be deleted.</td></tr><tr><td>1</td><td>operating system number</td><td>1;0</td><td>MULTIPLE</td><td><a href="3_0761.html">3.0761</a></td><td></td><td>This is a multiple field which is used to indicate which operatingsystem(s) use a given brief name for an error.</td></tr><tr><td>2</td><td>alternative screening text</td><td>2;E1,50</td><td>FREE TEXT</td><td></td><td></td><td>If you need to screen errors on text that can not be placed in the .01field than use a local name for the .01 and enter the real screening textin this field.  This field will allow ^ and other characters that cannotbe placed in the .01 field.</td></tr><tr><td>3</td><td>count of screened errors</td><td>3;1</td><td>NUMERIC</td><td></td><td></td><td>This field holds a count of the number of times this error was screen frombeing recorded in the error trap.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

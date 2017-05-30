@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RX CONSULT</h1></div><div id="results"><dl><dt>name</dt><dd>RX CONSULT</dd><dt>number</dt><dd>54</dd><dt>location</dt><dd>^PS(54,</dd><dt>description</dt><dd>This file holds the expansion of the number codes that represent theadditional warnings/consultations that may be needed for a particulardrug.  The DRUG file informally points to this file, in much the sameway that it points to the Medication Instruction file.  The field thatpoints to this file is WARNING LABELS and it essentially requires thatthe numbers entered here be valid entries in this file. These numbers are printed on the labels with the idea that the pharmacywould attach the appropriate warning stickers to the bottle. Data storage moved to PS(54 from DIC(54 with version 7 of OutpatientPharmacy.</dd><dt>applicationGroups</dt><dd>PS;PSO</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This field contains the internal number within the file.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Enter a brief description of any medical warnings associatedwith a particular drug.</td></tr><tr><td>1</td><td>text</td><td>1;0</td><td>MULTIPLE</td><td><a href="54_1.html">54.1</a></td><td></td><td>Respond to this field by entering an expanded descriptionof any medical warnings listed in the preceeding field.</td></tr><tr><td>2</td><td>warning mapping</td><td>2;1</td><td>NUMERIC</td><td></td><td></td><td>This field contains the warning number from the new data source which corresponds with this warning information.</td></tr><tr><td>3</td><td>spanish translation</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the Spanish translation for the old RX CONSULT filewarning label. When possible, warnings from the new WARNING LABEL-SPANISHfile should be used instead of adding new entries to this file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

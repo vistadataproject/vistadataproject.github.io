@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DISPENSE DRUG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="55_06.html">55.06</a></dd><dt>name</dt><dd>DISPENSE DRUG</dd><dt>number</dt><dd>55.07</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>dispense drug(+)</td><td>0;1</td><td>POINTER</td><td><a href="50.html">50</a></td><td>B</td><td>  This is a medication that will actually be dispensed by pharmacy for thisorder.  Each dispense drug of an order must be tied to the primary drugof the order.</td></tr><tr><td>.02</td><td>units per dose</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>  This is the number of UNITS (tablets, capsules, etc.) to be dispensed as aDOSE for this order.  The literals '1/2' and '1/4' may be entered.  If thereis no entry, it is assumed to be ONE (1).                         ** PLEASE NOTE **  If a doctor prescribes 30 ml's of a medication that is usually dispensedand administered as 60 ml's, the correct UNITS PER DOSE would be 1/2 (or.5), NOT 30 ml's.  (30 ml's would be entered into the DOSAGE ORDERED field.)  If the UNITS PER DOSE ordered is a variable amount (1-2 tab.), it issuggested that the maximum amount be entered into this field and the amountordered noted either in the DOSAGE ORDERED or SPECIAL INSTRUCTIONS fields.</td></tr><tr><td>.03</td><td>inactive date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>  This is the date that this dispense drug will no longer be dispensed forthis order.  Once an order becomes active, dispense drugs cannot be deleted.</td></tr><tr><td>.04</td><td>total units dispensed</td><td></td><td>COMPUTED</td><td></td><td></td><td>  This is the total number of units actually dispensed for this order,including any EXTRA UNIT DISPENSED, and PRE-EXCHANGE NEEDS.</td></tr><tr><td>.05</td><td>units called for</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>  This is the total number of units to be dispensed for this medicationas calculated by the package.</td></tr><tr><td>.06</td><td>units actually dispensed</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>  This is the number of units of this medication actually dispensed asentered by the pharmacist.</td></tr><tr><td>.07</td><td>total returns</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>  This is the total number units returned for this medication over thelife of the order.</td></tr><tr><td>.08</td><td>returns</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>  This is the number of units returned of this medication from the patient's cassette upon the termination of this order.</td></tr><tr><td>.09</td><td>pre-exchange units</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>  This is the number of actual units required for this order until thenext cart exchange.</td></tr><tr><td>.1</td><td>total extra units dispensed</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>  This is the total number of extra units dispensed for this order overthe entire life of the order.</td></tr><tr><td>.11</td><td>extra units dispensed</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td> This is the number of units dispensed outside of the normal dispensingprocess (pick list).</td></tr><tr><td>.12</td><td>total pre-exchange units</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td>  This is the total number of pre-exchange units dispensed over the lifeof the order.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

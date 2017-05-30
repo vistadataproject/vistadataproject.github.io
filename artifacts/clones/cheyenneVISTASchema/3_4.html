@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COMMUNICATIONS PROTOCOL</h1></div><div id="results"><dl><dt>name</dt><dd>COMMUNICATIONS PROTOCOL</dd><dt>number</dt><dd>3.4</dd><dt>location</dt><dd>^DIC(3.4,</dd><dt>description</dt><dd>This file holds the definitions of all the communications protocolsknown to the kernel.  A protocol has executable MUMPS code for sending,receiving, opening, and closing a link.  This file is not to be touchedby anyone not intimately knowledgeable with the workings of the networkedMailMan.</dd><dt>applicationGroups</dt><dd>XM</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name assigned to this particular communications protocol.</td></tr><tr><td>1</td><td>send</td><td>1;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>The executable MUMPS code that will send the data in thevariable XMSG.</td></tr><tr><td>2</td><td>receive</td><td>2;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>The executable MUMPS code which will receive data and store itin the variable XMRG.</td></tr><tr><td>3</td><td>open</td><td>3;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>The executable MUMPS code which will open the communication channel,setting the variable IO to the proper value. There are a couple of variables that can be set in this area to control the connection: XMNO220=1 will stop MailMan from issuing its second (and mandatorywhen talking to another MailMan system, but fatal when talkingto non-MailMan SMTP messaging systems) 220 'ready' when thereceiver is indicating it is on the line and ready to receive. XMD="D" causes MailMan to echo on the principle device the entiretransmission script.</td></tr><tr><td>4</td><td>close</td><td>4;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>The executable MUMPS code which will close the communicationchannel.</td></tr><tr><td>5</td><td>description</td><td>5;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

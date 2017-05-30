@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VEHICLE OF RECORD</h1></div><div id="results"><dl><dt>name</dt><dd>VEHICLE OF RECORD</dd><dt>number</dt><dd>667</dd><dt>location</dt><dd>^RMPR(667,</dd><dt>description</dt><dd>This file contains information on vehicles and vehicle auto-adaptiveequipment related to Prosthetics.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>vehicle id#(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the Identification Number on the vehicle of record, this is aUnique Key.</td></tr><tr><td>1</td><td>patient name</td><td>0;2</td><td>POINTER</td><td><a href="665.html">665</a></td><td>C</td><td>This field is a pointer to the Prosthetics Patient File and is an internalentry number.</td></tr><tr><td>2</td><td>vaf21-4502 date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>The initial date that a veteran is issued the authority to purchasea Vehicle of record.</td></tr><tr><td>2.1</td><td>ankylosis or voc rehab</td><td>0;9</td><td>SET OF CODES</td><td>A:ANKYLOSIS<br/>V:VOC REHAB<br/></td><td></td><td>Contains set of codes for Ankylosis and Voc Rehab.</td></tr><tr><td>2.2</td><td>type of transaction(+)</td><td>2;2</td><td>SET OF CODES</td><td>I:INITIAL ISSUE<br/>R:REPLACE<br/>S:SPARE<br/>X:REPAIR<br/></td><td></td><td>Explains what type of transaction is on this Vehicle of Records.</td></tr><tr><td>2.3</td><td>patient category(+)</td><td>2;3</td><td>SET OF CODES</td><td>1:SC/OP<br/>2:SC/IP<br/>3:NSC/IP<br/>4:NSC/OP<br/></td><td></td><td>This field stores the patient category for this vehicle transaction.</td></tr><tr><td>2.4</td><td>special category</td><td>2;4</td><td>SET OF CODES</td><td>1:SPECIAL LEGISLATION<br/>2:A&A<br/>3:PHC<br/></td><td></td><td>This field stores the patient's special category if applicable for thisvehicle transaction.</td></tr><tr><td>3</td><td>date purchased(+)</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date that the Vehicle was purchased.</td></tr><tr><td>4</td><td>year(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the model year of the vehicle.</td></tr><tr><td>5</td><td>make(+)</td><td>0;6</td><td>POINTER</td><td><a href="667_2.html">667.2</a></td><td></td><td>The make of the Vehicle purchased.</td></tr><tr><td>6</td><td>model(+)</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The model of the Vehicle that was purchased.</td></tr><tr><td>7</td><td>date processed(+)</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>The date that this transaction is being processed.</td></tr><tr><td>9</td><td>exception flag</td><td>2;1</td><td>SET OF CODES</td><td>1:ACTIVE<br/>0:INACTIVE<br/></td><td></td><td>This shows that the Vehicle of Record is active or inactive.</td></tr><tr><td>10</td><td>exception rule comments</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the general description of the vehicle purchased.</td></tr><tr><td>11</td><td>station name(+)</td><td>0;10</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>Pointer to the institution file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

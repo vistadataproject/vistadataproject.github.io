@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRE-REGISTRATION AUDIT</h1></div><div id="results"><dl><dt>name</dt><dd>PRE-REGISTRATION AUDIT</dd><dt>number</dt><dd>41.41</dd><dt>location</dt><dd>^DGS(41.41,</dd><dt>description</dt><dd>This file contains the history of changes to patient information through the pre-registration process.  Currently only the date andtime of the change, and the user making the change are maintained. This file maintains a record of changes to patient demographic informationthrough the pre-registration process and should not be purged.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Pointer to the patient entry in the PATIENT FILE, #2.</td></tr><tr><td>1</td><td>date changed(+)</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time the patient file registration information waschanged as a result of the pre-registration process.  After editing apatients demographic data, the user will be asked if they want toDate/Stamp the pre-registration.  If they answer 'Yes', this field will becompleted.  If they answer 'No', no entry will be made in this file.</td></tr><tr><td>2</td><td>user(+)</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>User making the change to the patients registration information throughthe pre-registration option.  This is a pointer to the NEW PERSONFile, #200.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CMOP RELEASE</h1></div><div id="results"><dl><dt>name</dt><dd>CMOP RELEASE</dd><dt>number</dt><dd>552.3</dd><dt>location</dt><dd>^PSX(552.3,</dd><dt>description</dt><dd>This file is maintained at the Consolidated Mail Outpatient Pharmacy hostfacility and contains release information returned from the automateddispensing system. This file manages the background filer operations and returns data received from the automated system at the host facility  tothe originating medical center for filing. Data is purged from this filedaily. Data in this file is maintained by the Consolidated Mail OutpatientPharmacy software and must not be edited using VA FileMan.                          </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>release text(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td> This file contains prescription release information returned from thevendor system.</td></tr><tr><td>1</td><td>purge</td><td>1;1</td><td>SET OF CODES</td><td>1:READY TO PURGE<br/>2:READY TO FILE<br/>3:DUPLICATE RX<br/>4:REJECTED RX<br/></td><td></td><td>This field is used to control filing of the data in the CMOP MasterDatabase file and purging the entries from the CMOP Release file.If purge=1, the record is ready to purge from the file.If purge=2, the record is ready to file in the CMOP Master Database file.If purge=3, the record is a duplicate Rx returned by the vendor software.If purge=4, the record was rejected by DHCP during the query.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

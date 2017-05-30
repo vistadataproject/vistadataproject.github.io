@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROBLEM SELECTION CATEGORY CONTENTS</h1></div><div id="results"><dl><dt>name</dt><dd>PROBLEM SELECTION CATEGORY CONTENTS</dd><dt>number</dt><dd>125.12</dd><dt>location</dt><dd>^GMPL(125.12,</dd><dt>description</dt><dd>This file contains the problems that make up the categories defined infile #125.11; these are groups of commonly selected, similar problems.Each entry in this file links one problem to a single category, andmay have a sequence number and ICD code assigned to it.  Problems mayappear in more than one category.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>category(+)</td><td>0;1</td><td>POINTER</td><td><a href="125_11.html">125.11</a></td><td>B</td><td>This is the problem category that this problem entry belongs to.</td></tr><tr><td>1</td><td>sequence number</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is a number which determines the order this problem will appearwithin this group; up to two decimal places may be used.  Problemsin a selection list will be automatically numbered for display andselection in whole numbers, beginning with 1.</td></tr><tr><td>2</td><td>problem</td><td>0;3</td><td>POINTER</td><td><a href="757_01.html">757.01</a></td><td></td><td>This is a problem from the Clinical Lexicon Utility, which is to beincluded in this group.</td></tr><tr><td>3</td><td>display text</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the text of the problem as it is to appear on the selection listdisplay; if a suitable match was not found during a search of the ClinicalLexicon Utility and an 'Unresolved' entry was returned, this will be thetext as specified by the user.</td></tr><tr><td>4</td><td>code</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is a code which is to be displayed with the text of this problem;it may be from any coding system, but will generally be assumed to bean ICD Diagnosis in the Problem List context.</td></tr><tr><td>5</td><td>snomed ct concept code</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>A clinical idea to which a unique ConceptID has been assigned in SNOMEDCT. Each Concept is represented by a row in the Concepts Table.</td></tr><tr><td>6</td><td>snomed ct designation code</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>A single SNOMED CT Concept may have multiple Designations, where aDesignation may be considered an alternate way of expressing the concept.Synonyms, lexical variants, abbreviations are all different types ofdesignations. In many cases, a problem (as reported by the patient) and afinding indicating a problem will share the same concept and concept code(e.g., abdominal pain), but will have different designation codes (i.e.,the generic "abdominal pain" and "abdominal pain (finding)" share theconcept code 21522001, but they have the designation codes 36112013 and750827015 respectively.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

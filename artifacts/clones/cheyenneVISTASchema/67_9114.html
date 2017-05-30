@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > WKLD CODE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="67_911.html">67.911</a></dd><dt>name</dt><dd>WKLD CODE</dd><dt>number</dt><dd>67.9114</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>wkld code</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the workload code. (a number)</td></tr><tr><td>.03</td><td>wkld code name</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is the actual name of the WKLD code.</td></tr><tr><td>1</td><td>in patient cnt</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>Number of inpatient counts.</td></tr><tr><td>2</td><td>out patient cnt</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Number of out-patient counts.</td></tr><tr><td>3</td><td>other patient cnt</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Number of other patient counts.</td></tr><tr><td>4</td><td>qc cnt</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>Number of QC counts.</td></tr><tr><td>5</td><td>in patient stats</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Number of in-patient STATS.</td></tr><tr><td>6</td><td>tot stats</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Number of all STATS.</td></tr><tr><td>7</td><td>manual input data</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>Number of data put in manually.</td></tr><tr><td>7.5</td><td>send out test</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td> This field contain the test which are performed by some other lab thanthe one filing LMIP reports. All test sent of a reference/referral lab,research lab, medical school, commercial are included in this total.  The suffix portion of the WKLD code determine if the procedure is sendout (.8000-.8999)</td></tr><tr><td>8</td><td>treating speciality</td><td>1;0</td><td>MULTIPLE</td><td><a href="67_91148.html">67.91148</a></td><td></td><td>Multiple field. Containing data about the treating specialty.</td></tr><tr><td>9</td><td>reportable test count</td><td></td><td>COMPUTED</td><td></td><td></td><td>Number of reportable test counts.</td></tr><tr><td>10</td><td>lmip billable test</td><td>2;1</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td> If this procedure should be reported to the National Data base asan LMIP defined procedure, this field will be set to yes by thedata extracting program. This field should not be manually edited.To have this field set to yes, edit the BILLABLE PROCEDURE fieldin the WKLD CODE (#64) file.</td></tr><tr><td>11</td><td>rep/std</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td> This is the total for repeat, dilutions and standards for the WKLD code.</td></tr><tr><td>12</td><td>others</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td> This field is used for all other types of specimens not coming fromthe Patient file, Lab Control file or the Referral Patient.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REMINDER LOCATION LIST</h1></div><div id="results"><dl><dt>name</dt><dd>REMINDER LOCATION LIST</dd><dt>number</dt><dd>810.9</dd><dt>location</dt><dd>^PXRMD(810.9,</dd><dt>description</dt><dd>This file is used to group a list of locations and give the group aname. The locations can be Hospital Locations and/or Clinic Stops(which resolve to a list of Hospital Locations).A Location List finding in Clinical Reminders is based on an entry fromthis file. A Location List finding will be true when a patient has anentry in the Visit file for at least one of the locations in theLocation List.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the NAME of the Location List; it must be unique.</td></tr><tr><td>1</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This word processing field is used for describing the LOCATION LIST.Information such as the purpose of the LOCATION LIST can be recordedhere. The DESCRIPTION will be displayed when a LOCATION LIST inquiry isdone.</td></tr><tr><td>40.7</td><td>clinic stop list</td><td>40.7;0</td><td>MULTIPLE</td><td><a href="810_9001.html">810.9001</a></td><td></td><td>This is the list of clinic stop codes that are included in the LocationList.</td></tr><tr><td>44</td><td>hospital location list</td><td>44;0</td><td>MULTIPLE</td><td><a href="810_944.html">810.944</a></td><td></td><td>This is the list of hospital locations that are included in theLocation List.</td></tr><tr><td>100</td><td>class(+)</td><td>100;1</td><td>SET OF CODES</td><td>L:LOCAL<br/>N:NATIONAL<br/>V:VISN<br/></td><td></td><td>This is the CLASS of the location list. Possible classes are "N" fornational, "V" for VISN, and "L" for local. National location lists cannotbe edited by sites.</td></tr><tr><td>101</td><td>sponsor</td><td>100;2</td><td>POINTER</td><td><a href="811_6.html">811.6</a></td><td></td><td>This is the organization or group that sponsors this location list.</td></tr><tr><td>102</td><td>review date</td><td>100;3</td><td>DATE-TIME</td><td></td><td></td><td>REVIEW DATE is used to determine when the location list should be reviewedto verify that it is current with the latest standards and guidelines.You can find all location lists whose review date has passed using theClinical Reminders Review Date Report.</td></tr><tr><td>110</td><td>edit history</td><td>110;0</td><td>MULTIPLE</td><td><a href="810_9002.html">810.9002</a></td><td></td><td>This multiple is used to record a history of changes made to thelocation list.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

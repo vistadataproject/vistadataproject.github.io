@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IMP/EXP DATA FIELD</h1></div><div id="results"><dl><dt>name</dt><dd>IMP/EXP DATA FIELD</dd><dt>number</dt><dd>358.5</dd><dt>location</dt><dd>^IBE(358.5,</dd><dt>description</dt><dd>Used by the import/export utility as a workspace.  This file is nearly identical to file #357.5. It is used by theImport/Export Utility as a temporary staging area for data from that filethat is being imported or exported.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td> The name is used to identify the field within a block. It can be anythingthe designer of a form wants it to be.</td></tr><tr><td>.02</td><td>block(+)</td><td>0;2</td><td>POINTER</td><td><a href="358_1.html">358.1</a></td><td>C</td><td> The particular block the data field should appear in.</td></tr><tr><td>.03</td><td>type of data</td><td>0;3</td><td>POINTER</td><td><a href="358_6.html">358.6</a></td><td></td><td> The particular interface that should be invoked to obtain the data fordisplay. Some of the interfaces don't actually return data, but areinstead 'dummy' interfaces for the purpose of printing things like blanklines.</td></tr><tr><td>.04</td><td>last item indicator</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td> This field is used to indicate which item on a list is the last to beprinted to the form. The remaining items can be printed to a separatepiece of paper.</td></tr><tr><td>.05</td><td>number on list</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>For data returned by the package interface that is in the form of a list, this field indicates which one of the items on the list should be displayed to this field.</td></tr><tr><td>.06</td><td>text label</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td> The label that should precede the text.</td></tr><tr><td>.07</td><td>text label appearance</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td> The label can have characteristics, such as being underlined oremboldened.</td></tr><tr><td>.1</td><td>text starting column</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>This field determines what column the text should begin in.Applies only if the Package Interface returns a word-processing field.</td></tr><tr><td>.11</td><td>text starting row</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td> Determines which line on the form, relative to the block, the text areashould begin at. Only applies if the package interface returns aword-processing field.</td></tr><tr><td>.12</td><td>number of form lines for text</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td> The number of lines on the form that should be allocated for the text.</td></tr><tr><td>.13</td><td>spacing of text lines</td><td>0;13</td><td>SET OF CODES</td><td>1:SINGLE SPACED<br/>2:DOUBLE SPACED<br/>3:SINGLE, BUT DOUBLE IF BLANK<br/></td><td></td><td> Determines the spacing between lines of text.</td></tr><tr><td>.14</td><td>width of text lines</td><td>0;14</td><td>NUMERIC</td><td></td><td></td><td> Determines how many characters across should be allocated to the text.</td></tr><tr><td>2</td><td>subfield</td><td>2;0</td><td>MULTIPLE</td><td><a href="358_52.html">358.52</a></td><td></td><td>A data field can be composed of multiple subfields. Each subfield can havea label and data.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

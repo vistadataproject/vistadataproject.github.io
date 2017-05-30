@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MH MULTIPLE SCORING</h1></div><div id="results"><dl><dt>name</dt><dd>MH MULTIPLE SCORING</dd><dt>number</dt><dd>601.6</dd><dt>location</dt><dd>^YTT(601.6,</dd><dt>description</dt><dd>File allows the user to score multiple instruments</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>instrument name(+)</td><td>0;1</td><td>POINTER</td><td><a href="601.html">601</a></td><td>B</td><td>A Psychological test or interview from the MH Instrument File (#601)</td></tr><tr><td>1</td><td>allow multiple scoring</td><td>0;2</td><td>BOOLEAN</td><td>Y:Yes<br/>N:No<br/></td><td></td><td>Boolean to allow use of instrument in multiple test scoring.This field is set to 'N' when instrument is an interview or cannotbe scored.</td></tr><tr><td>2</td><td>executable scoring code</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Standard M code for multiple scoring.This code is executed to score the tests as raw and transformedscoring is not saved but recreated on each printing.</td></tr><tr><td>3</td><td>instrument type</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Text describing the type of Instrument being scored.This field will contain a description of how the scores are to be evaluated.Estimated range descriptions will be placed here.</td></tr><tr><td>4</td><td>appropriate for gui input</td><td>0;4</td><td>BOOLEAN</td><td>Y:Yes<br/>N:No<br/></td><td></td><td>This field indicates whether the MH SHG believes this instrument is appropriate for GUI presentation to the clinician and or patient</td></tr><tr><td>5</td><td>outcomes</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This executable Mumps code generates a number which corresponds to the results text number appropriate for this administration</td></tr><tr><td>6</td><td>results</td><td>3;0</td><td>MULTIPLE</td><td><a href="601_66.html">601.66</a></td><td></td><td>Based on the decision rules coded in the Outcome field, Results are theshort text to be placed in a progress note or on-screen report detailingthe meaning of the data.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

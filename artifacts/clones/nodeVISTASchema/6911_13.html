@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FREQUENCY</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="6911_01.html">6911.01</a></dd><dt>name</dt><dd>FREQUENCY</dd><dt>number</dt><dd>6911.13</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>frequency</td><td>0;1</td><td>SET OF CODES</td><td>A:ANNUAL<br/>S:SEMI-ANNUAL<br/>Q:QUARTERLY<br/>M:MONTHLY<br/>BM:BI-MONTHLY<br/>W:WEEKLY<br/>BW:BI-WEEKLY<br/>N:NONE<br/>BA:BI-ANNUAL<br/>TA:TRI-ANNUAL<br/></td><td></td><td> Make a separate entry for each category (MONTHLY, QUARTERLY, etc.) of PMIthat is to be scheduled for this device. The PM module looks at this fieldin conjunction with the STARTING MONTH when PM lists are generated. Let's consider a fairly complex example: a device with SEMI-ANNUAL,QUARTERLY, and MONTHLY PMI's and a STARTING MONTH of MAR. Assuming noentry for SKIP MONTHS, the following PMI's will be scheduled:  SEMI-ANNUAL in MAR and SEP;  QUARTERLY in JUN and DEC;  MONTHLY in APR, MAY, JUL, AUG, OCT, NOV, JAN, and FEB.</td></tr><tr><td>1</td><td>hours (estimated)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td> Approximate amount of time required for this PMI (standard hours), tothe nearest tenth of an hour. This value will be recorded in the EQUIPMENT HISTORY field when a PM is closed out unless another (moreprecise) value is explicitly entered.</td></tr><tr><td>2</td><td>material cost (estimated)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td> Estimated material cost for this PMI (standard cost). This cost will becharged to the piece of equipment whenever a PMI of this type is closedout unless another (more precise) value is entered at close-out time.</td></tr><tr><td>3</td><td>level</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td> Each scheduled PMI may be composed of some combination of the followingdiscrete levels of activity:   Level 1 - Visual inspection only;   Level 2 - Check and adjust operator controls;   Level 3 - Electrical safety analysis;   Level 4 - Minor parts replacement;   Level 5 - Major parts replacement;   Level 6 - Complete overhaul. LEVEL is an optional field, and is intended to accommodate the needs ofcertain facilities with highly developed PM programs. Entries for LEVEL(if any) will appear on the PM worklist as a reminder to the responsibletechnician.</td></tr><tr><td>4</td><td>procedure</td><td>0;5</td><td>POINTER</td><td><a href="6914_2.html">6914.2</a></td><td></td><td> Enter the abbreviation (4 to 10 characters) of the PROCEDURE to be followed when performing this Preventive Maintenance Inspection. Thefull title (as well as the abbreviation) of the PM PROCEDURE willappear on the computer generated worklist for reference. If disk space permits, the actual step-by-step procedure may be enteredin the TEXT field of the PM PROCEDURES file (Number 6914.2) and printedout on demand. In any event, the PMI procedure should be on file in someform and readily accessible to the technician performing the work.</td></tr><tr><td>5</td><td>starting year (4 numerics)</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field has meaning only for BI-ANNUAL and TRI-ANNUAL frequencies. Yearmust be entered as four numeric characters (ex: 1998, 2002, etc.).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

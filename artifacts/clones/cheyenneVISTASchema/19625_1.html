@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DSIV REPORT DATA</h1></div><div id="results"><dl><dt>name</dt><dd>DSIV REPORT DATA</dd><dt>number</dt><dd>19625.1</dd><dt>location</dt><dd>^DSI(19625.1,</dd><dt>description</dt><dd>This file contains ICB report data that is compiled by a background job.  It currently only contains Exception Report data from the DSIV NIGHTLY REPORT option, but it could also contain Audit Report data compiled from file 19625 in the future. The Exception Report is a listing of patient appointments that were not acted on (placed in the buffer if needed) in a timely manner.  Since itlooks through all appointments for the day and processes clerk actions itcan take more than a few minutes to run if all clinics are run at a site(there are inclusion/exclusion parameter lists).  The nightly job shouldbe scheduled during off peak hours and after the scheduling job haschanged the appointment status of appointments that were not checkedin-out for the day (automatic process).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>report date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>Contains the date that the background job ran and created the report.</td></tr><tr><td>.02</td><td>report type</td><td>0;2</td><td>SET OF CODES</td><td>E:EXCEPTION<br/>A:AUDIT<br/>S:SUMMARY<br/></td><td></td><td>Contains the ICB Report type.  The only type supported at this time is the Exception Report.</td></tr><tr><td>1</td><td>exception data</td><td>1;0</td><td>MULTIPLE</td><td><a href="19625_11.html">19625.11</a></td><td></td><td>A multiple containing the report data that was compiled in the background process.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

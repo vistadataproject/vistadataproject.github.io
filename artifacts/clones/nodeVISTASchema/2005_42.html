@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAG PATH CASELIST</h1></div><div id="results"><dl><dt>name</dt><dd>MAG PATH CASELIST</dd><dt>number</dt><dd>2005.42</dd><dt>location</dt><dd>^MAG(2005.42,</dd><dt>description</dt><dd>This file stores informationfor the Telepathology Worklist that cannot be stored in theLAB DATA file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>accession number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the accession number of the case.</td></tr><tr><td>.02</td><td>priority</td><td>0;2</td><td>SET OF CODES</td><td>0:ROUTINE<br/>1:HIGH<br/>2:STAT<br/></td><td></td><td>This is the priority of the case.</td></tr><tr><td>.03</td><td>slides available</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This flag indicates whether there are slides available for the case.</td></tr><tr><td>.04</td><td>method</td><td>0;10</td><td>SET OF CODES</td><td>0:TRADITIONAL<br/>1:ROBOTICS<br/>2:WSI<br/></td><td></td><td>This is the method used to read the slides for the case in the acquisitionsite.</td></tr><tr><td>.05</td><td>status(+)</td><td>0;11</td><td>SET OF CODES</td><td>U:Unread<br/>R:Read (verified)<br/>C:Cancelled<br/></td><td></td><td>The status of the case in the TelePath application.</td></tr><tr><td>.06</td><td>start(+)</td><td>0;12</td><td>DATE-TIME</td><td></td><td></td><td>The date and time that the case began.</td></tr><tr><td>.07</td><td>last activity(+)</td><td>0;13</td><td>DATE-TIME</td><td></td><td></td><td>The date and time of the last activity.</td></tr><tr><td>.08</td><td>number of images</td><td>0;14</td><td>NUMERIC</td><td></td><td></td><td>The number of images acquired.</td></tr><tr><td>1</td><td>first lock</td><td>0;4</td><td>SET OF CODES</td><td>0:UNLOCKED<br/>1:LOCKED<br/></td><td></td><td>This flag indicates whether there is a first (reservation) lock for the case,established by a pathologist.</td></tr><tr><td>1.1</td><td>first lock date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the date/time when the first (reservation) lock isset for the case.</td></tr><tr><td>1.2</td><td>first lock user</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user setting the first lock (reservation lock) on the case.</td></tr><tr><td>2</td><td>second lock</td><td>0;7</td><td>SET OF CODES</td><td>0:UNLOCKED<br/>1:LOCKED<br/></td><td></td><td>This flag indicates whether there is a second (accession) lock for the case, established by a pathologist.</td></tr><tr><td>2.1</td><td>second lock date/time</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>This is the date/time when the second lock (accession lock) is set for the case.</td></tr><tr><td>2.2</td><td>second lock user</td><td>0;9</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user setting the second lock (accession lock) on the case.</td></tr><tr><td>3</td><td>note</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the Note attached to the case.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

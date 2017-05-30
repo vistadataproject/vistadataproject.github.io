@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OVERTIME WARNINGS</h1></div><div id="results"><dl><dt>name</dt><dd>OVERTIME WARNINGS</dd><dt>number</dt><dd>458.6</dd><dt>location</dt><dd>^PRST(458.6,</dd><dt>description</dt><dd>This file contains entries that are generated during a supervisors certification.  When an employee's 8B string contains more overtime than approved overtime in the requests file, a warning message is displayed to the supervisor before certifying the timecard.  If the supervisor certifies the timecard without resolving the warning then the warning is filed in this file.  The entries are for either week 1 or week 2 of a pay period.</dd><dt>applicationGroups</dt><dd>PRS</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>number(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>a sequential number to uniquely identify each warning.</td></tr><tr><td>1</td><td>employee(+)</td><td>0;2</td><td>POINTER</td><td><a href="450.html">450</a></td><td></td><td>The employee who has more calculated overtime in their 8B string than approved overtime in the OT/CT requests file.</td></tr><tr><td>2</td><td>pay period(+)</td><td>0;3</td><td>POINTER</td><td><a href="458.html">458</a></td><td>C</td><td>The pay period in which the overtime warning occurs.</td></tr><tr><td>3</td><td>week(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Either the first (1) or second (2) week of the pay period in which theovertime warning occurs.</td></tr><tr><td>4</td><td>status(+)</td><td>0;5</td><td>SET OF CODES</td><td>A:ACTIVE<br/>C:CLEARED<br/></td><td>E</td><td>When a supervisor approves a timecard with an overtime warning an entryis added to this file and it is assumed active.  Payroll may decide to clear the warning thereby changing the status to cleared.</td></tr><tr><td>5</td><td>last updated by</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>User in file 200 who changes the STATUS of the warning to CLEARED (C).</td></tr><tr><td>6</td><td>date/time cleared</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>Date and time that the overtime warning is cleared.</td></tr><tr><td>7</td><td>8b string overtime(+)</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>The total of all types of overtime in the employees 8B string for either week 1 or 2.</td></tr><tr><td>8</td><td>approved overtime(+)</td><td>0;9</td><td>NUMERIC</td><td></td><td></td><td>The total amount of approved overtime at the time this warning is filed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROSTHETIC DISABILITY CODE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="665.html">665</a></dd><dt>name</dt><dd>PROSTHETIC DISABILITY CODE</dd><dt>number</dt><dd>665.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>prosthetic disability code</td><td>0;1</td><td>POINTER</td><td><a href="662.html">662</a></td><td>B</td><td>This is a pointer to the Prosthetic Disability Code file (662).</td></tr><tr><td>1</td><td>date code added</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the Disability Code was entered.</td></tr><tr><td>2</td><td>service/non-service(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:SERVICE CONNECTED<br/>2:NON-SERVICE CONNECTED<br/></td><td></td><td>This field stores if the Disability Code is Service or Non-Serviceconnected.</td></tr><tr><td>3</td><td>eligibility category(+)</td><td>0;4</td><td>SET OF CODES</td><td>1:SC VIETNAM<br/>2:ALL OTHER SERVICE-CONNECTED<br/>3:NSC A&A<br/>4:OTHERS ELIGIBLE<br/>5:V.I.S.T.<br/>6:VOC REHAB<br/>7:PHC<br/>8:INPATIENT<br/>9:EMPLOYEE<br/>10:PRIMA FACIA<br/></td><td></td><td>This field stores the Eligibility Category for the Patient.</td></tr><tr><td>4</td><td>special legislation</td><td>0;5</td><td>SET OF CODES</td><td>1:PL-96-151<br/>2:PL-91-500<br/>3:PL-97-37<br/>4:PL-94-581<br/>5:HOUSEBOUND<br/>6:PL-91-102<br/>7:PL-91-666 (AUTO GRANT)<br/>8:PL-104-262 (ELIG. REFORM)<br/></td><td></td><td>If Others Eligible is selected as Eligibility Category, then there mustalso be a Special Legislation selected.</td></tr><tr><td>5</td><td>add/delete(+)</td><td>0;6</td><td>SET OF CODES</td><td>1:ADD<br/>2:DELETE<br/></td><td></td><td>Flag for AMIS count of patients served.</td></tr><tr><td>6</td><td>amis date</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>This field stores the AMIS date of last report that counted thisProsthetic Disability code.</td></tr><tr><td>7</td><td>entered by</td><td>0;8</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Pointer to the New Person file of who entered this disability codefor the patient.</td></tr><tr><td>9</td><td>remove code flag</td><td>0;9</td><td>SET OF CODES</td><td>1:REMOVED<br/></td><td></td><td>This field stores a code indicating the removal of a disibility code</td></tr><tr><td>10</td><td>date code deleted</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>Contains the date that the Disability code was marked as deleted for thisVeteran.  Used for calculations on form 7306d and Amis.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

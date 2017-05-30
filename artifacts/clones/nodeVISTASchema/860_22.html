@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RELATION ACTIONS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="860_2.html">860.2</a></dd><dt>name</dt><dd>RELATION ACTIONS</dd><dt>number</dt><dd>860.22</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>relation index</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td></td></tr><tr><td>1</td><td>relation expression</td><td>E;E1,200</td><td>FREE TEXT</td><td></td><td></td><td>    This is a boolean expression that is essentially an IF argument. Use Element labels (defined above) for boolean variable names, and 'OR', 'AND', and 'NOT' for boolean operators. You can also use any combination and number of parenthesis to control the operator precedence, Otherwise the precedence is from left to right. </td></tr><tr><td>2</td><td>order check</td><td>0;2</td><td>POINTER</td><td><a href="100_8.html">100.8</a></td><td></td><td>   Check this field YES if the user is to get a message on his screen when this relation is evaluated TRUE. </td></tr><tr><td>3</td><td>notification</td><td>0;3</td><td>POINTER</td><td><a href="100_9.html">100.9</a></td><td></td><td>    This points to the notification in the notification system that will be sent when this relation is evaluated TRUE.</td></tr><tr><td>4</td><td>report device</td><td>0;4</td><td>POINTER</td><td><a href="3_5.html">3.5</a></td><td></td><td>    This is not working yet, but will print the Order check message to an alternate device (bulletin, host file, printer, etc.).</td></tr><tr><td>5</td><td>notification message</td><td>MSG;E1,240</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>6</td><td>order check message</td><td>OCMSG;E1,240</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>7</td><td>schedule action</td><td>RULE;1</td><td>SET OF CODES</td><td>START:START SCHEDULED CHECKS<br/>CONTINUE:CONTINUE SCHEDULED CHECKS<br/></td><td></td><td>    This field determines if this relation will cause the rule to be placed in or removed from the schedule of timed order checks. </td></tr><tr><td>8</td><td>schedule frequency</td><td>RULE;2</td><td>FREE TEXT</td><td></td><td></td><td>    This field describes how often the rule should be evaluated.    Its format is generally: (Start Time) (operator) (Offset)     Where Start time is a constant like: TODAY or NOW                   or a data field like: |DATE OF LAST FLU SHOT|     Operator is either + or -     and Offset is:               1H = 1 Hour             20D = 20 days              3W = 3  weeks              6M = 6  months </td></tr><tr><td>9</td><td>execute code</td><td>MCODE;E1,240</td><td>FREE TEXT</td><td></td><td></td><td>   This field is used to define Mumps code that is executedafter the expert system determines that a rule has beentriggered, but before the Notification system is called.   This adds another level of flexibility to the expertsystem if a rule needs further processing to refine arecipient list or specialized checking to determine ifthe current notification should be sent, or if previousduplicate notifications should be removed.   This field also provides a hook for other modes ofnotifying users of a triggered rule, if needed. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

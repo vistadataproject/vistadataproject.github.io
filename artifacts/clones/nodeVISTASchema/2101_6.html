@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GENERIC CODE SHEET LOCK</h1></div><div id="results"><dl><dt>name</dt><dd>GENERIC CODE SHEET LOCK</dd><dt>number</dt><dd>2101.6</dd><dt>location</dt><dd>^GECS(2101.6,</dd><dt>description</dt><dd>This file is used to store the user, process and date@time a GenericCode Sheet process was locked.  A process can be defined as batching or transmitting code sheets. The data stored in this file is for informational purposes only.It is not used to control the locking of processes in Generic CodeSheets. Generic Code Sheets uses incremental locks to prevent users frombatching and transmitting duplicate code sheets.  When one useris batching or transmitting and a second user tries to run thesame process, a message is displayed from this file to the second user.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>type(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This file/field is used to display to the user information regardingthe reason batching or transmission of code sheets is locked. The syntax of the field entry is 'station number'-'code sheet system identifier (3 character)'-(either BATCH or TRANSMIT).</td></tr><tr><td>2</td><td>locked by</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field is used to store the user which currently has the batchingor transmission locked.</td></tr><tr><td>3</td><td>date/time locked</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field is used to store the date and time the batching or transmissionwas locked.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB CLINIC STOP CODE BILLABLE TYPES</h1></div><div id="results"><dl><dt>name</dt><dd>IB CLINIC STOP CODE BILLABLE TYPES</dd><dt>number</dt><dd>352.5</dd><dt>location</dt><dd>^IBE(352.5,</dd><dt>description</dt><dd>This file is used to store the outpatient clinic stop code andbillable type based on an effective date.  An internal lookupon the AEFFDT cross reference for a clinic stop code and visitdate will provide the billable type.  The billable type determinesthe billable rate for each outpatient visit.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>clinic stop code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field stores the three or six digit stop code used for determiningthe billable rate as either billable for primary care, billable forspecialty care, or non-billable based on effective date.  This fieldis not DINUMed to allow duplicate stop code entries with differentbillable rates depending on the visit date (effective date of the rate). Data in this file is static and should not be added, deleted, orchanged.  This file will be maintained and populated with the releaseof future IB patches.</td></tr><tr><td>.02</td><td>effective date(+)</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date on which billing for this clinic stop code should beactivated or ignored.</td></tr><tr><td>.03</td><td>billable type(+)</td><td>0;3</td><td>SET OF CODES</td><td>0:NON-BILLABLE<br/>1:BASIC CARE<br/>2:SPECIALTY CARE<br/></td><td></td><td>This specifies if the clinic stop is billable under basic care orspecialty care, or if the clinic stop code is non-billable.</td></tr><tr><td>.04</td><td>description</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field stores the description of the stop code for display onlookup and reports.</td></tr><tr><td>.05</td><td>override flag</td><td>0;5</td><td>SET OF CODES</td><td>1:OVERRIDE<br/></td><td></td><td>OVERRIDE FLAG is 1 if the code belongs to override table</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OBS_VIEW</h1></div><div id="results"><dl><dt>name</dt><dd>OBS_VIEW</dd><dt>number</dt><dd>704.111</dd><dt>location</dt><dd>^MDC(704.111,</dd><dt>description</dt><dd>This file maintains the views displayed within a flowsheet via the Clinical Flowsheets application.  A view is a group of terms displayed together.A sample view could display "ICU VITALS,INPUTS,OUTPUTS, and ICU HEMODYNAMICS" information together in a section of a flowsheet displayed via the Clinical Flowsheets application.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>view id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the view's Global Unique IDentifier(GUID). This value is maintained nationally and represents this view throughout the enterprise.A sample VIEW ID could be "{11AA9949-B1FA-40A5-A208-5BB8255BE961}".</td></tr><tr><td>.02</td><td>name(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the NAME of this view.A sample NAME could be "ICU HEMODYNAMICS".</td></tr><tr><td>.03</td><td>time interval(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>A view is displayed to the user as part of a "page" on the screen. That page is divided into TIME INTERVALs.  This field is the number of minutes within an interval when the page is initially displayed to the user.  The maximum is 1440 (1 day).A sample TIME INTERVAL could be "60".</td></tr><tr><td>.04</td><td>x axis(+)</td><td>0;4</td><td>SET OF CODES</td><td>0:Terminology<br/>1:Date/Time<br/></td><td></td><td>This field indicates whether the initial layout of the view's horizontal axis shows terminology information or date/time information.  The information not indicated to display horizontally will initially display vertically.</td></tr><tr><td>.05</td><td>display name</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of this view to display to the user when this view is being used. A sample DISPLAY NAME could be "ICU Hemodynamics".</td></tr><tr><td>.06</td><td>allow pivot</td><td>0;6</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>This field indicates whether the user is allowed to "pivot" howinformation is displayed. For example:   If initially this view's terminology information displays horizontally and date/time information displays vertically, a '1' value ("YES") in this field gives the user the option to display this view's terminology information vertically and the date/time information horizontally.</td></tr><tr><td>.08</td><td>national title</td><td>0;8</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field indicates whether this view is a NATIONAL TITLE, maintained nationally, and cannot be modified at/by a site.</td></tr><tr><td>.09</td><td>active(+)</td><td>0;9</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>This field indicates whether this view is ACTIVE or not.  An ACTIVE view can be incorporated into a flowsheet.</td></tr><tr><td>.1</td><td>comment</td><td>.1;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>This field is free-text comment to further describe the use and purpose of this view. A sample COMMENT could be "National ICU Flowsheet View".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

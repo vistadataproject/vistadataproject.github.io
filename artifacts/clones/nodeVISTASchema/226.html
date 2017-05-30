@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DENTAL NON CLINICAL TIME</h1></div><div id="results"><dl><dt>name</dt><dd>DENTAL NON CLINICAL TIME</dd><dt>number</dt><dd>226</dd><dt>location</dt><dd>^DENT(226,</dd><dt>description</dt><dd>This file contains the non-clinical time spent by each dental providerin each of four categories: Administrative; Research; Fee Basis andEducation and Training.  This information is totaled for the month, thencombined with the data in the Dental Personnel file to produce a monthlypersonnel report.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>.06</td><td>dental provider</td><td>0;6</td><td>POINTER</td><td><a href="220_5.html">220.5</a></td><td></td><td>This field contains the Dental Provider.  The 4 digit Provider Id saved in the Provider Number field (#.4) is being phased out, although we will continue to keep that field for historical records.</td></tr><tr><td>.3</td><td>station.division(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.4</td><td>provider number</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>Provider names are entered last name, first name.  This field contains the old 4 digit Provider Id which is being phased out and replaced with a new 8 digit Id.  This field will remain for historical records.</td></tr><tr><td>.6</td><td>non clinical time category(+)</td><td>0;4</td><td>SET OF CODES</td><td>A:ADMIN<br/>R:RESEARCH<br/>F:FEE BASIS<br/>E:EDUC & TRAIN<br/></td><td></td><td></td></tr><tr><td>.9</td><td>time spent(+)</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>60</td><td>released by</td><td>.1;1</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td></td></tr><tr><td>61</td><td>date released</td><td>.1;2</td><td>DATE-TIME</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

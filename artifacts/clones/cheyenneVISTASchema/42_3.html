@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > *TRANSFER TYPE</h1></div><div id="results"><dl><dt>name</dt><dd>*TRANSFER TYPE</dd><dt>number</dt><dd>42.3</dd><dt>location</dt><dd>^DIC(42.3,</dd><dt>description</dt><dd>This file contains the acceptable types of transfer as usedwhen moving a patient within the medical facility.Each transfer type, with the exception of INTERWARD, must havean associated movement type otherwise it will be treated asan interward for G&L and statistical purposes.  The data inthis file will be incorporated into the FACILITY MOVEMENT filein a future release.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td></td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td></td></tr><tr><td>.03</td><td>active(+)</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td></td></tr><tr><td>.04</td><td>ask treating specialty(+)</td><td>0;4</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td></td></tr><tr><td>.05</td><td>follow admission?</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td></td></tr><tr><td>.06</td><td>movement type</td><td>0;6</td><td>POINTER</td><td><a href="43_9.html">43.9</a></td><td>AM</td><td></td></tr><tr><td>.07</td><td>point to mas movement type</td><td>0;7</td><td>POINTER</td><td><a href="405_2.html">405.2</a></td><td></td><td>With version 5.0, there will be a new, expanded list of movement typesallowable.  All existing movement types will be moved to the new file,but, in addition, there will be several new movement types.  If you wouldlike to take advantage of any of these new types, enter your choice hereand, during the conversion, this new movement type will be utilized.  Thiswill save considerable time during the conversion process itself if enteredbeforehand.  Should you decide to leave this field blank, the existingmovement type will remain with version 5.0.</td></tr><tr><td>.08</td><td>print name</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.1</td><td>default transfer to follow</td><td>0;10</td><td>POINTER</td><td><a href="42_3.html">42.3</a></td><td></td><td></td></tr><tr><td>1</td><td>transfers that cannot precede</td><td>1;0</td><td>MULTIPLE</td><td><a href="42_31.html">42.31</a></td><td></td><td>The transfer type that cannot preceed this transfer type</td></tr><tr><td>1412</td><td>*loss/nonloss/gain</td><td>NL;1</td><td>SET OF CODES</td><td>L:LOSS<br/>G:GAIN<br/>N:NONLOSS<br/>B:BOTH<br/></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

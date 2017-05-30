@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CODE SYSTEM REFERENCE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="63.html">63</a></dd><dt>name</dt><dd>CODE SYSTEM REFERENCE</dd><dt>number</dt><dd>63.00014</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>lab data reference</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>Contains the global reference in a format similar to a FileMan DA array. It resolves to the section of this file which contains the results that are related to this reference. It constructed based on the entry's LRDFN, LRSS and LRIDT where LRDFN = internal enter number in file #63 , LRSS = related subscript   LRIDT =inverse date/time of specimen Autopsy results being one of a kind are created using a value LRSS="AU"   LRIDT=0  to maintain the structure of the entries andrelated index. The structure of the reference is  LRDFN,LRSS,LRIDT,1...N related global nodes in the LR global. When reference is to a specific field which shares other fields on the same node then the format used to distinguish separatefields is node;piece position on node. Example microbiology results within MI subscript  - 173,MI,6959788.895648,3,1,0 Example microbiology results with MI subscript, 6th piece of 1 node - 356,MI,6919497.888687,1;6</td></tr><tr><td>.02</td><td>role</td><td>0;2</td><td>SET OF CODES</td><td>1:ORDER<br/>2:RESULT<br/>3:ANSWER<br/>4:METHODOLOGY<br/>5:WORKLOAD<br/>6:BILLING<br/></td><td></td><td></td></tr><tr><td>.03</td><td>code id</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The code id value from the code system being stored.</td></tr><tr><td>.035</td><td>code text</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Contains the text associated with the CODE ID.</td></tr><tr><td>.04</td><td>name of code system</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Contains the code system name or designated abbreviation used to identify the CODE ID.</td></tr><tr><td>.05</td><td>code version</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the version ID for the coding system identified by CODE ID.</td></tr><tr><td>.06</td><td>related entry</td><td>0;6</td><td>VARIABLE-POINTER</td><td><a href="95_3.html">95.3</a>, <a href="64.html">64</a>, <a href="81.html">81</a></td><td></td><td>If the associated code exists in a VistA file then this field will contain a link to the related entry. This field can be blank if the code system does not exist in a related VistA file or the code is contained in a version not supported by a related VistA file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

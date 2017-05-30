@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BULLETIN</h1></div><div id="results"><dl><dt>name</dt><dd>BULLETIN</dd><dt>number</dt><dd>3.6</dd><dt>location</dt><dd>^XMB(3.6,</dd><dt>description</dt><dd>Bulletins are 'Super' messages.  Each Bulletin has a text and a subjectjust like a normal message.  But embedded within either the subject orthe text can be variable fields that can be filled in with parameters.There is also a standard set of recipients in the form of a Mail Groupthat is associated with the bulletin. Bulletins are processed by MailMan either because of a special crossreference type of FileMan or because of a direct call in a routine.The interface for the direct call is described in the documentationon programmer entry points.  FileMan sets up code that will issuea bulletin automatically when the special cross reference type iscreated.  In either case the parameters that go into the text and/orthe subject make each bulletin unique.</dd><dt>applicationGroups</dt><dd>XU;XM</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field is the name of the bulletin, in the standard format of a two character package prefix, followed by a descriptive name.</td></tr><tr><td>2</td><td>subject(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the subject of the bulletin, as it will appear to the recipient.Note that it may contain windows, just as in the "MESSAGE" field.</td></tr><tr><td>4</td><td>mail group</td><td>2;0</td><td>MULTIPLE</td><td><a href="3_62.html">3.62</a></td><td></td><td>This is a list of the mail groups to which this bulletin will be directedwhen triggered.  If no mail groups are defined, or they point to no users,then the bulletin is ignored.</td></tr><tr><td>5</td><td>retention days</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>After this number of days, if the bulletin hasn't already been purged,it will be purged by the XMAUTOPURGE option.  If zero or null, thebulletin will not have a purge date, and will not be purged by XMAUTOPURGE.</td></tr><tr><td>6</td><td>description</td><td>3;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field is a description of the bulletin, for documentation purposes.It is not used by MailMan for any automatic processing.</td></tr><tr><td>10</td><td>message</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This holds the "canned" text of the bulletin which will be sent whenthe bulletin is fired.   Variable text may be stored in parameters at the time of firing, theninserted in the message text.  Parameter windows are defined by puttingthem within vertical bars, with the parameter number inside.  Forexample,  "Appointment for |1| on |2| has been cancelled."  with parameter1 set to "Jones", and parameter 2 set to "Monday" would generate abulletin of "Appointment for Jones on Monday has been cancelled." Parameters may be set with fileman (in the Bulletin cross reference)or by programmers from within programs.</td></tr><tr><td>11</td><td>parameter</td><td>4;0</td><td>MULTIPLE</td><td><a href="3_64.html">3.64</a></td><td></td><td>This defines the parameters, which will be used to set informationinto the bulletin.</td></tr><tr><td>12</td><td>priority?</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>If you want this bulletin to appear to the recipients as a priority message,enter 'yes'; if not, enter 'no'.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

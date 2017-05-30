@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RATE SCHEDULE</h1></div><div id="results"><dl><dt>name</dt><dd>RATE SCHEDULE</dd><dt>number</dt><dd>363</dd><dt>location</dt><dd>^IBE(363,</dd><dt>description</dt><dd>A Rate Schedule defines a specific type of service that may be billed to a specific payer.  This links all elements necessary to define exactlywhat events are billed (Charge Set) to which payers (Rate Type). There should be a unique Rate Schedule for each type of service billableto a payer.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>A Rate Schedule which defines a set of charges billable to a payer fora specific type of service.  This is a free text short description thatshould identify who and what is being billed.</td></tr><tr><td>.02</td><td>rate type(+)</td><td>0;2</td><td>POINTER</td><td><a href="399_3.html">399.3</a></td><td></td><td>The Rate Type of the bills the charges of this schedule should be applied to.</td></tr><tr><td>.03</td><td>bill type(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:INPATIENT<br/>3:OUTPATIENT<br/></td><td></td><td>The type of care being billed or type of bill the charges of this scheduleare for.</td></tr><tr><td>.04</td><td>billable service</td><td>0;4</td><td>POINTER</td><td><a href="399_1.html">399.1</a></td><td></td><td>The type of service covered by the charges of this Rate Schedule.</td></tr><tr><td>.05</td><td>effective date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>The first date the charges associated with this Rate Schedule may be billedto a payer.</td></tr><tr><td>.06</td><td>inactive date</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>This is the last date this Rate Schedule may be used to bill a payer.</td></tr><tr><td>1.01</td><td>dispensing fee</td><td>1;1</td><td>NUMERIC</td><td></td><td></td><td>This dollar amount is the dispensing fee component of the rate scheduleadjustment that was entered.</td></tr><tr><td>1.02</td><td>administrative fee</td><td>1;2</td><td>NUMERIC</td><td></td><td></td><td>This dollar amount is the administrative fee component of the rateschedule adjustment that was entered.</td></tr><tr><td>10</td><td>adjustment</td><td>10;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This allows the base charges of a rate to be adjusted for specific typesof payers. Modifies the Unit Charge of all items assigned to this Rate Schedule.For Example, this would be used to bill a certain type of payer only 80%of the CMAC.  Or to add a $2.50 fee to each prescription. This is a line of M code and should only be modified by an M programmer. Once the Unit Charge is determined for a billable item, this code is executed to modify that charge.  This modified charge is what will be addedto the bill. When this code is executed:- the original value of the Unit Charge will be in variable X- the modified charge to be billed should be returned in variable XUse the local namespace for any other variables needed and kill them.           To charge 80% of the Unit Charge:        S X=X*.8          To add a $2.50 fee to the Unit Charge:   S X=X+2.5</td></tr><tr><td>11</td><td>charge set</td><td>11;0</td><td>MULTIPLE</td><td><a href="363_0011.html">363.0011</a></td><td></td><td>All Charge Sets for this Rate Schedule.  These define all the chargesthat may be billable to the payors for a specific type of bill.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

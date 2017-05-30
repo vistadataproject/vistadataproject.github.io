@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DIAGNOSIS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="373.html">373</a></dd><dt>name</dt><dd>DIAGNOSIS</dd><dt>number</dt><dd>373.04</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>set id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>Charge data being filed into the PFSS CHARGE CACHE comes from one ofthree sources - Outpatient Pharmacy, Prosthetics, or PCE.  Each application sending charge data to IBB will provide one ormore related diagnoses.  If more than one, then these diagnosesare passed to IBB in priority order; i.e., the first diagnosis isthe primary diagnosis related to the charge, the second diagnosisis the secondary diagnosis related to the charge, etc.  IBB filesthe data into subfile #373.04 in that same order.  This fieldindicates the exact order in which the diagnoses were received andfiled.</td></tr><tr><td>.03</td><td>diagnosis code(+)</td><td>0;3</td><td>POINTER</td><td><a href="80.html">80</a></td><td></td><td>Charge data being filed into the PFSS CHARGE CACHE comes from one ofthree sources - Outpatient Pharmacy, Prosthetics, or PCE.  The applications sending charge data to IBB will provide one ormore related diagnoses.  Each diagnosis is provided as a pointer tothe ICD DIAGNOSIS file (#80).</td></tr><tr><td>.06</td><td>diagnosis type(+)</td><td>0;6</td><td>SET OF CODES</td><td>A:ADMITTING<br/>D:DISCHARGE<br/>W:WORKING<br/>F:FINAL<br/></td><td></td><td>The applications passing charge data to IBB must define each diagnosiscode included in the charge data as being one of the following:A(dmitting), W(orking), D(ischarging), or F(inal).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

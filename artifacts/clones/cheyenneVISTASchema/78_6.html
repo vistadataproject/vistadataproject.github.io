@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CAMERA/EQUIP/RM</h1></div><div id="results"><dl><dt>name</dt><dd>CAMERA/EQUIP/RM</dd><dt>number</dt><dd>78.6</dd><dt>location</dt><dd>^RA(78.6,</dd><dt>description</dt><dd>This file contains all the camera/equip/rm that may be used to performimaging examinations.  The 'RADIOLOGY LOCATIONS' file uses this file toindicate which camera/eqip/rm are allowable choices when the technologistattaches a camera/equip/rm to an exam s/he has performed.  In otherwords, when the procedure is performed on a patient at a location, theonly valid choices are those cameras/equip/rms associated with thatlocation. A camera/equip/rm can be associated with more than one location. Entries in this file should not be deleted. Adding new entries is alwaysallowed.  Data Storage ------------The data for the 'CAMERA/EQUIP/RM' file is stored in the ^RA(78.6,global. At the present time this file is very static after day-oneinitialization is complete.  However, it still should be journaled.It should also be translated if the operating system supports this function.  Input Templates ---------------The rad/nuc med package does not use any input templates associated withthis file.  Print Templates ---------------The rad/nuc med package does not use any print templates associated withthis file.  Sort Templates --------------The rad/nuc med package does not use any sort templates associated withthis file.</dd><dt>applicationGroups</dt><dd>RA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>camera/equip/rm(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of this camera/equipment/room.  Namesmust be between 1 and 30 characters in length.</td></tr><tr><td>2</td><td>description</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This field is used to describe this camera/equipment/room and define whattypes of procedures may be performed there.  'Triple Head Spec Scanner'is an example of a description.  Descriptions may be between 3 and 40characters in length.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

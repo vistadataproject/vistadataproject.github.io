@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IIV AUTO MATCH</h1></div><div id="results"><dl><dt>name</dt><dd>IIV AUTO MATCH</dd><dt>number</dt><dd>365.11</dd><dt>location</dt><dd>^IBCN(365.11,</dd><dt>description</dt><dd>The Auto Match file is a VistA facility to help IIV match user-entered insurance company names to the correct insurance company names in the insurance company file.  This file links together an Auto Match Value with a valid insurance company name.  The Auto Match Value may contain common spelling mistakes and wildcard characters to aid in the selection of a valid insurance company name.Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>auto match value(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field is the entered name for the insurance company.  Thisvalue holds the 'incorrect' insurance company name which needsto get corrected and replaced with the valid insurance companyname.  Typical values in this field will include common spelling mistakes and incorrect insurance company names.  Alsoallowed here is the "*" wildcard character.  Any entry with a wildcard character must also contain at least 4 non-wildcardcharacters.  Multiple asterisks are allowed here.</td></tr><tr><td>.02</td><td>insurance company name(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the name of a valid insurance company from the InsuranceCompany file (file# 36).  The insurance company name entered here mustbe a currently valid company name meaning that the entry must beactive and not scheduled for deletion.</td></tr><tr><td>.03</td><td>date/time entered(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time that the auto match value wascreated.</td></tr><tr><td>.04</td><td>entered by(+)</td><td>0;4</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who created the auto match value.</td></tr><tr><td>.05</td><td>date/time last edited(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This is the date and time that the auto match valuewas last edited.</td></tr><tr><td>.06</td><td>last edited by(+)</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who last edited the auto match value.</td></tr><tr><td>.07</td><td>original entered value(+)</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the original value of the 'entered by' field.  The firsttime an entry is created, this value will get set and then nofurther updates to this field will be made.  This will providethe original value to this entry.</td></tr><tr><td>.08</td><td>original insurance company(+)</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This is the original, valid, correct insurance company name at the time this entry was first created.  This is for auditingand historical tracking purposes only.  This field isn't updated after the original data entry.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

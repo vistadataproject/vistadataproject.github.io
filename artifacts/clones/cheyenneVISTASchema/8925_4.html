@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TIU UPLOAD LOG</h1></div><div id="results"><dl><dt>name</dt><dd>TIU UPLOAD LOG</dd><dt>number</dt><dd>8925.4</dd><dt>location</dt><dd>^TIU(8925.4,</dd><dt>description</dt><dd>This file is used by the filer module of the upload process to logboth successfully filed records and non-fatal errors which may occurduring routing/filing of one or more records in a given batch.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>event date/time(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the date/time at which the filing event (i.e., success or failure)occurred.</td></tr><tr><td>.02</td><td>user</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who invoked the upload process. </td></tr><tr><td>.03</td><td>document type</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the document type (as found in the second piece of the header tag,(e.g., $HDR:   DISCHARGE SUMMARY), by which the filing event can beidentified.</td></tr><tr><td>.04</td><td>error description</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the freetext error message.</td></tr><tr><td>.05</td><td>buffer file pointer</td><td>0;5</td><td>POINTER</td><td><a href="8925_2.html">8925.2</a></td><td></td><td> This is the record number in file #8925.2 (TIU UPLOAD BUFFER FILE) wherethe erroneous record(s) reside(s).</td></tr><tr><td>.06</td><td>resolution status</td><td>0;6</td><td>SET OF CODES</td><td>1:RESOLVED<br/>0:UNRESOLVED<br/></td><td>C</td><td> This set of codes indicates the resolution status of the error.</td></tr><tr><td>.07</td><td>resolution date</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td> This field indicates the date/time at which the error was resolved.</td></tr><tr><td>.08</td><td>event type</td><td>0;8</td><td>SET OF CODES</td><td>0:Success<br/>1:Filing Error<br/>2:Missing Field Error<br/></td><td>D</td><td>This identifies whether the record was successfully filed, or whether anerror occurred.</td></tr><tr><td>.09</td><td>division</td><td>0;9</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This field contains the institution associated with the upload filingevent. For TIU DOCUMENT file (#8925) entries, is extracted from thedocument's hospital location if known; otherwise it is extracted from the user's log-on division.</td></tr><tr><td>1</td><td>header text</td><td>HEAD;0</td><td>WORD-PROCESSING</td><td></td><td></td><td></td></tr><tr><td>2</td><td>missing fields</td><td>1;0</td><td>MULTIPLE</td><td><a href="8925_42.html">8925.42</a></td><td></td><td>This multiple is used to store errors where records are successfully filedwith one or more missing fields.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

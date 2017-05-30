@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROBLEM SELECTION LIST CONTENTS</h1></div><div id="results"><dl><dt>name</dt><dd>PROBLEM SELECTION LIST CONTENTS</dd><dt>number</dt><dd>125.1</dd><dt>location</dt><dd>^GMPL(125.1,</dd><dt>description</dt><dd>This file contains the categories that make up the Problem SelectionLists defined in file #125.  Each entry links a problem category toa list, optionally with a subheader and a sequence order.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>list(+)</td><td>0;1</td><td>POINTER</td><td><a href="125.html">125</a></td><td>B</td><td>This is the Problem Selection List which is to contain the problem groupentered in field #1; this group may be assigned a sequence number forordering and a subheader as well here.</td></tr><tr><td>1</td><td>sequence</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is a number which will determine the order this group will appearin the current list; up to two decimal places may be used.</td></tr><tr><td>2</td><td>category</td><td>0;3</td><td>POINTER</td><td><a href="125_11.html">125.11</a></td><td>G</td><td>This is the category whose problem items are to be included in the currentlist; it may have a subheader in this list, and a designated order.</td></tr><tr><td>3</td><td>subheader</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is text which will appear in the list as a subheader or title tothis group of problems.  It will have a single blank row between it andthe previous problem group, and it will be underlined.</td></tr><tr><td>4</td><td>show problems</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field controls the initial display of this category in this selectionlist.  If set to YES, the problems will automatically be displayed as partof the list when it is initially built and displayed; if null or NO, thecategory must be selected in order to expand the list and show the problems.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

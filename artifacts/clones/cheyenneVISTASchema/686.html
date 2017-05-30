@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AAHSST PROGRAM</h1></div><div id="results"><dl><dt>name</dt><dd>AAHSST PROGRAM</dd><dt>number</dt><dd>686</dd><dt>location</dt><dd>^LBRY(686,</dd><dt>description</dt><dd>Contains Educational Program titles, dates, and cost. Used by theSatellite TV package.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field is the complete name of the program.  Atthis point, the file contains satellite programs only.However, the file was made in such a way that it couldhandle types of educational programs other thansatellite downlinks.</td></tr><tr><td>1</td><td>type</td><td>0;2</td><td>SET OF CODES</td><td>S:Satellite TV<br/>C:Chep<br/>O:Other<br/>D:Deactivated<br/></td><td></td><td>This is a set of codes for various types of programs;'S' for satellite downlinks; 'C' for CHEP; 'O' for other;'D' for deactivated.</td></tr><tr><td>2</td><td>date begin</td><td>0;3</td><td>DATE-TIME</td><td></td><td>C</td><td>This is the beginning date of the program.</td></tr><tr><td>3</td><td>date end</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the ending date of the program.  For satellitedownlinks, the beginning date and ending date wouldbe the same.</td></tr><tr><td>4</td><td>source</td><td>0;5</td><td>SET OF CODES</td><td>V:VA<br/>N:NON-VA<br/></td><td></td><td>This is a set of codes: 'V' for VA-produced programs;'N' for non-VA-produced programs.</td></tr><tr><td>5</td><td>cost actual</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field is for the full cost to the VA of theprogram.  It should be input later than the COSTESTIMATED field.</td></tr><tr><td>6</td><td>cost estimated</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This field is the estimated cost to the VA forthe program.</td></tr><tr><td>7</td><td>satellite</td><td>0;8</td><td>POINTER</td><td><a href="686_14.html">686.14</a></td><td></td><td>This field is a pointer to a file of specific namesof satellites.  Names of the satellites are importantto track reception problems.</td></tr><tr><td>8</td><td>sponsor</td><td>0;9</td><td>FREE TEXT</td><td></td><td></td><td>This is an optional field to indicate the programelement who is sponsoring this satellite program.</td></tr><tr><td>9</td><td>production site</td><td>0;10</td><td>SET OF CODES</td><td>1:NORTHPORT RLRS<br/>2:WASHINGTON, DC LRS<br/>3:ST LOUIS RLRS<br/>4:SALT LAKE CITY RLRS<br/></td><td></td><td>This field is a set of codes for the following sitesin the VA where VA satellite programs are produced.</td></tr><tr><td>20</td><td>description</td><td>DES;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field is an optional field for describingthe satellite program.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

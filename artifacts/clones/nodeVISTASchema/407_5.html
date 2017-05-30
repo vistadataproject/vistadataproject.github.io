@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LETTER</h1></div><div id="results"><dl><dt>name</dt><dd>LETTER</dd><dt>number</dt><dd>407.5</dd><dt>location</dt><dd>^VA(407.5,</dd><dt>description</dt><dd>This file contains all letters that may be sent out by a site.  Theseinclude letters notifying patients of future appointments, cancelledappointments, and scheduled admissions.  The site can edit the text thatthey would like to appear in these letters.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name of a letter that has been initially created by the developerin a 'skeleton form' and the user edits the body of the letter.  Theseletters are utilized mostly in the Scheduling Module of the MAS DHCPsoftware.</td></tr><tr><td>1</td><td>type(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>The letter created is assigned a type for user specific needs.  Forexample, a letter created to alert a veteran that he has an appointmentand a new travel legislation has been passed, the user may call thisletter 'Beneficiary Travel'.</td></tr><tr><td>2</td><td>initial section of letter</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The initial section of the letter is the portion that has been pre-\programmed by the developer to include items such as veteran'sname, address, social security number and is in the format of a VA style letter.  The first paragraph automatically lists theclinic and date/time he/she may have or had an appointment in oneof the facility's outpatient areas.</td></tr><tr><td>3</td><td>final section of letter</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>The final section of the letter is a word-processing field in which,through a scheduling menu option, the user can enter the body of theletter with site=specific information or announcements for the veteran.</td></tr><tr><td>4</td><td>print default provider?</td><td>3;1</td><td>BOOLEAN</td><td>Y:YES<br/></td><td></td><td>This field controls the printing of the clinic default provider on a Scheduling letter regardless of its type.</td></tr><tr><td>5</td><td>print clinic location?</td><td>3;2</td><td>BOOLEAN</td><td>Y:YES<br/></td><td></td><td>This field controls the printing of the clinic physical location for a Scheduling letter regardless of its type.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

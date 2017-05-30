@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BILLING RATE</h1></div><div id="results"><dl><dt>name</dt><dd>BILLING RATE</dd><dt>number</dt><dd>363.3</dd><dt>location</dt><dd>^IBE(363.3,</dd><dt>description</dt><dd>This file defines the types of rates available to bill third parties forreimbursment. Nationally distributed Billing Rates should not be modified.DO NOT edit data in this file with VA FileManager.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of this rate.  A rate defines a set of charges billable to a specificset of payers.</td></tr><tr><td>.02</td><td>abbreviation(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Enter a short identifier for this rate.  This may be used on reports anddisplays.</td></tr><tr><td>.03</td><td>distribution(+)</td><td>0;3</td><td>SET OF CODES</td><td>1:NATIONAL<br/>2:LOCAL<br/></td><td></td><td>This indicates how the rate and all corresponding data is distributed tothe sites.  All National entries will be exported nationally and should notbe modified locally.</td></tr><tr><td>.04</td><td>billable item(+)</td><td>0;4</td><td>SET OF CODES</td><td>1:BEDSECTION<br/>2:CPT<br/>3:NDC #<br/>4:DRG<br/>9:MISCELLANEOUS<br/></td><td></td><td>This is the type of item that will be found in the Charge Item list forall charges of this rate.</td></tr><tr><td>.05</td><td>charge method(+)</td><td>0;5</td><td>SET OF CODES</td><td>1:COUNT<br/>2:VA COST<br/>3:QUANTITY<br/>4:MILES<br/>5:MINUTES<br/>6:HOURS<br/></td><td></td><td>Indicates how the charge will be calculated for the Billable Itemsfound on the bills.COUNT:    charge per Item found on the billVA COST:  calculated value of the VA cost for an itemQUANTITY: price per dispense unit (NDC # charges only)MILES:    charge per mileMINUTES:  charge with base plus incremental charge per 15 minutesHOURS:    charge with base plus incremental charge per hour</td></tr><tr><td>.06</td><td>base charge</td><td>0;6</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>Certain types of charges require both an incremental charge per unit and base charge applied once per item.  Enter yes if this Billing Rate allows a base charge plus the unit charge for an item.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

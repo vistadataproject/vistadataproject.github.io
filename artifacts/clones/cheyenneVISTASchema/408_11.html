@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RELATIONSHIP</h1></div><div id="results"><dl><dt>name</dt><dd>RELATIONSHIP</dd><dt>number</dt><dd>408.11</dd><dt>location</dt><dd>^DG(408.11,</dd><dt>description</dt><dd>This file contains all acceptable relationships for persons contained in thePATIENT RELATION file.  These relationships are provided by MAS VACO for usein the income screening and means test portions of the MAS software.  Theymust NOT be altered in any way at the site level.  No entries may be added,edited, or removed from this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This filed contains the internal entry number for this type ofrelationship in conjunction with income screening data.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of an allowable relationship for an individualto a patient.  The list of allowable relationships is provided by MAS VACObased on documentation from the Internal Revenue Service.  This data isused in the income screening and means test modules of MAS and must not beadded to, edited, or removed from this file.</td></tr><tr><td>.02</td><td>active?(+)</td><td>0;2</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Enter yes, if this relationship is allowable through DHCP.  Otherwise,respond no.  This information is provided by MAS VACO for use in the incomescreening and means test modules of MAS.  It must not be altered in anyway at the local level.</td></tr><tr><td>.03</td><td>sex(+)</td><td>0;3</td><td>SET OF CODES</td><td>M:MALE<br/>F:FEMALE<br/>E:EITHER<br/></td><td></td><td>Enter the sex of a person of this relationship.  In some cases, such as'SELF', 'SPOUSE', or 'OTHER', the sex could be either male or female.  Inthat case, enter EITHER. This information is provided and maintained by the MAS package.  Alterationof this data in any way could have negative impacts on the performanceof the MAS package at your facility.</td></tr><tr><td>.04</td><td>allowable for means test?</td><td>0;4</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>If this relationship is an acceptable relationship for means test purposes,respond YES here.  If the relationship is acceptable for only incomescreening and IVM (income verification matching) purposes and not formeans test, answer NO here. This information is provided by MAS VACO and maintained by the MAS softwaremodule.  It must not be altered in any way at the local facility level.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > NURSE ROLE</h1></div><div id="results"><dl><dt>name</dt><dd>NURSE ROLE</dd><dt>number</dt><dd>451.1</dd><dt>location</dt><dd>^PRSN(451.1,</dd><dt>description</dt><dd>Nurse Roles correspond to codes from VA Human Resources and Finance databases, which were used in making the nursing roles determination.  Cost center, budget object code, occupation series code, and assignment codes are all utilized to determine a nursing role. This file is exported with data and the contents of the file should not belocally modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains a key containing values for cost center, budget object code, occupation series and assignment code.  For entries that contain the asterisk character, the employee can have any value for these fields in file 450 and therefore match the entry in this file. The following example shows how to interpret the codes:Example:  Code * 61 0610 88  The code is composed of 4 parts separated by spaces. Part 1=Cost Center. The "*" in this position indicates that any cost center is applicable. Otherwise a 4 digit number is present. Part 2=Last 2 digits of the 4 digit Budget Object Code. The "61"in this position is the last 2 digits of Budget Object Code 1061. Part 3=Occupational Series Code. This is a 4 digit number. Part 4=Assignment Code. The "88" in this position indicates anassignment of RN Staff, Inpatient Acute. This is typically a 2character code. An "*" in this position indicates nursing staffthat are automatically assigned to direct care roles regardlessof assignment codes.</td></tr><tr><td>1</td><td>role(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Nurse Role describes nursing personnel who have patient care responsibilities/assignments. Examples include direct care staff, hospital support staff, advanced practice staff.</td></tr><tr><td>2</td><td>assignment</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Nursing personnel are assigned to particular job positions suitable for their roles. The positions are identified by assignment codes which are included as the fourth portion of the .01 field in this file.</td></tr><tr><td>3</td><td>category</td><td>0;4</td><td>SET OF CODES</td><td>DC:DIRECT CARE<br/>HS:HOSPITAL SUPPORT (CONSULTIVE)<br/>AP:ADVANCED PRACTICE<br/>AN:ADMINISTRATIVE<br/>AT:ACADEMIC/TRAINEE<br/></td><td></td><td>Category is a high level designation for a health care employee skill mix.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

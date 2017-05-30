@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ALLERGIES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="853_51.html">853.51</a></dd><dt>name</dt><dd>ALLERGIES</dd><dt>number</dt><dd>853.52</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>allergy entry #</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This field contains a sequential number generated at the time a record isstored in the file.  It only serves to create an entry in the file and hasno other special meaning.  </td></tr><tr><td>.02</td><td>local allergy id</td><td>0;2</td><td>POINTER</td><td><a href="120_8.html">120.8</a></td><td>LOCAL</td><td>This is the patient Allergy.</td></tr><tr><td>.03</td><td>remote allergy id</td><td>0;3</td><td>NUMERIC</td><td></td><td>REMOTE</td><td>This is the patient Allergy IEN in the CDW database.</td></tr><tr><td>.05</td><td>remote allergy name</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the patient Allergy copied from CDW database, as pointed to by the REMOTE ALLERGY ID (#.03) field.</td></tr><tr><td>.06</td><td>ar patient response</td><td>0;6</td><td>SET OF CODES</td><td>Y:ALLERGIC<br/>N:NOT ALLERGIC<br/>U:UNSURE<br/>X:NO RESPONSE<br/></td><td></td><td>This is the patient structured response to the displayed allergy (field .05) on the Kiosk during MRAR.</td></tr><tr><td>.07</td><td>reactions</td><td>REACTIONS;0</td><td>MULTIPLE</td><td><a href="853_57.html">853.57</a></td><td></td><td>Each transaction sent by Vetlink may contain multiple allergies. Each allergy in that transaction may contain multiple allergy reactions.</td></tr><tr><td>.09</td><td>remote facility</td><td>0;8</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This is the facility where the allergy was reported. The value was retrieved from CDW database.</td></tr><tr><td>1</td><td>allergy comments patient</td><td>ACOMM1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains allergy comments entered by patient in AR.</td></tr><tr><td>2</td><td>allergy comments staff view </td><td>ACOMM2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains allergy comments entered by provider in staff-facingmodules' staff view tab.</td></tr><tr><td>3</td><td>allergy comments vet view</td><td>ACOMM3;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains allergy comments entered by provider in staff-facingmodule's Veteran view tab.</td></tr><tr><td>4</td><td>allergy dod</td><td>0;7</td><td>SET OF CODES</td><td>Y:PATIENT ALLERGIES FROM DOD<br/></td><td></td><td>This field indicates whether or not the allergies from DOD.</td></tr><tr><td>5</td><td>allergy changed indicators</td><td>ACHG;0</td><td>MULTIPLE</td><td><a href="853_525.html">853.525</a></td><td></td><td>This multiple contains all Allert Changed Indicators for an allergy.</td></tr><tr><td>6</td><td>allergy confirmed indicators</td><td>ACNFR;0</td><td>MULTIPLE</td><td><a href="853_526.html">853.526</a></td><td></td><td>This multiple contains all allergy confirmed indicators identified by patient.</td></tr><tr><td>7</td><td>allergy discrepancy indicators</td><td>ADISCR;0</td><td>MULTIPLE</td><td><a href="853_527.html">853.527</a></td><td></td><td>This multiple contains all allergy discrepancy indicators identified by patient.</td></tr><tr><td>16</td><td>allergy-mark for followup</td><td>0;26</td><td>SET OF CODES</td><td>S:STAFF-FACING STAFF VIEW<br/>V:STAFF-FACING VET VIEW<br/></td><td></td><td>This field is to indicate that the Mark for Follow-Up box was checked inthe staff-facing module's staff view or vet view.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TRACKING STAFF</h1></div><div id="results"><dl><dt>name</dt><dd>TRACKING STAFF</dd><dt>number</dt><dd>231.7</dd><dt>location</dt><dd>^EDPB(231.7,</dd><dt>description</dt><dd>This file contains staff assigned to a particular area (e.g., the emergency department).  It allows for concise selection lists when updating the tracking log.  It also allows for particular colors to be associated with staff.  When that person is shown on the display board, the colors may be used to more easily tell who is assigned to which patient.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>person(+)</td><td>0;1</td><td>POINTER</td><td><a href="200.html">200</a></td><td>B</td><td>This is a person who is assigned to work as staff in the emergency department.</td></tr><tr><td>.02</td><td>institution(+)</td><td>0;2</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This allows each station to have its own set of staff assignments.</td></tr><tr><td>.03</td><td>area</td><td>0;3</td><td>POINTER</td><td><a href="231_9.html">231.9</a></td><td></td><td>This is the area to which the person is assigned as staff.</td></tr><tr><td>.04</td><td>inactive</td><td>0;4</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>This flag is set to 'inactive' when the person is no longer an activemember of the staff for this area.</td></tr><tr><td>.05</td><td>local id*</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.06</td><td>role</td><td>0;6</td><td>SET OF CODES</td><td>P:Provider<br/>R:Resident<br/>N:Nurse<br/></td><td></td><td>This is the role the person has on the staff.  The roles currently supported are provider, nurse, and resident.</td></tr><tr><td>.07</td><td>initials*</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.08</td><td>color</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This contains the RGB values for the foreground and background colors used to highlight this person on the display board.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

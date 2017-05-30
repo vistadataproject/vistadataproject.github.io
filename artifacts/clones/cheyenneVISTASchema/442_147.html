@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LINE INVENTORY POINT</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="442_01.html">442.01</a></dd><dt>name</dt><dd>LINE INVENTORY POINT</dd><dt>number</dt><dd>442.147</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>line inventory point</td><td>0;1</td><td>POINTER</td><td><a href="445.html">445</a></td><td>B</td><td>This order request is on behalf of an entity that wants to maintain a perpetual inventory, automate their item distribution function, and automatically generate stock replenishment orders based on inventory needs.   The LINE INVENTORY POINT is the entry (if there is one) in the GenericInventory (file #445) for which the items on this line are being ordered.  If certain quantities of this line item are needed for different inventorypoints, then multiple entries of LINE INVENTORY POINT should be presentand the LINE QUANTITY and LINE DELIVERY fields of each entry should bepopulated.   If there is no entry in the LINE INVENTORY POINT field but there is anentry in the PRINCIPAL INVENTORY POINT field (#4 of file #410) then allline items on this request will be associated with the PRINCIPAL INVENTORYPOINT.   That is, LINE INVENTORY POINT (where it exists) will take precedence overPRINCIPAL INVENTORY POINT.   Secondary inventory points may not be selected as either PRINCIPAL or LINEINVENTORY POINTS.  </td></tr><tr><td>1</td><td>line quantity</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>The quantity of subject line item that is required in order to replenishsubject inventory point. The sum of the LINE ITEM QUANTITIES must equalthe QUANTITY of the ITEM or the transaction will not be accepted.</td></tr><tr><td>2</td><td>line delivery</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Physical location where these items will be stocked in inventory.Receiving personnel will rely on this field to get material where it needsto be.</td></tr><tr><td>3</td><td>quantity received to date</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The quantity thus far received. Should not exceed LINE QUANTITY.Automatically maintained by DATE RECEIVED sub-file (#442.08).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

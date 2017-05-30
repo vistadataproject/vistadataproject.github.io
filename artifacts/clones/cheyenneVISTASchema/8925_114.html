@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DIALOG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="8925_1.html">8925.1</a></dd><dt>name</dt><dd>DIALOG</dd><dt>number</dt><dd>8925.114</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>prompt</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the prompt with which the user will be presented during interactive entry of the document.</td></tr><tr><td>.02</td><td>item name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is a descriptive name for the datum which will help descibe the prompt for the user.</td></tr><tr><td>.03</td><td>sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td>AS</td><td>This is the sequence of the prompt within the dialog.  On the Windows Client this will correspond with the Tab Order Property of the prompt.</td></tr><tr><td>.04</td><td>field</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the field in the target file in which the user's response will be stored.</td></tr><tr><td>.05</td><td>required</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Please indicate whether a response to this prompt is required, in order to complete the dialog.</td></tr><tr><td>.06</td><td>visible</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field specifies whether a given datum will be prompted for, or "stuffed," based on execution of the SET METHOD for a given prompt.</td></tr><tr><td>1</td><td>set method</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the mumps code for determining the default value of an interactive("visible") prompt, and for setting the value to be non-interactively "stuffed" on invokation of an "invisible" prompt.  Regardless of the syntactic approach (e.g., subroutine or extrinsic function, the returnvalue of the method should be placed in the local varible X.</td></tr><tr><td>101</td><td>windows control</td><td>W;1</td><td>SET OF CODES</td><td>1:LongList<br/>2:SimpleList<br/>3:Edit<br/>4:Memo<br/></td><td></td><td>Stores the type of Windows control necessary to get the data for thisprompt.</td></tr><tr><td>102</td><td>api name</td><td>W;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the API that should be called by the broker when the control isused.  How the API is used varies with the control.  Examples are:filling list boxes, getting boilerplate text, etc.</td></tr><tr><td>103</td><td>api parameter #1</td><td>W;3</td><td>FREE TEXT</td><td></td><td></td><td>A parameter that is used by the API may be stored here.</td></tr><tr><td>113</td><td>windows condition</td><td>W3;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is silent code which is executed when building the dialog forWindows.  It identifies which prompts should be included in the dialog.The condition should leave $T failse if the prompt should not be asked.</td></tr><tr><td>117</td><td>windows default</td><td>W7;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This code should silently set the default value of a prompt when it isselected.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

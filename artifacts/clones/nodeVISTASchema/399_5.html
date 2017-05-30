@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BILLING RATES</h1></div><div id="results"><dl><dt>name</dt><dd>BILLING RATES</dd><dt>number</dt><dd>399.5</dd><dt>location</dt><dd>^DGCR(399.5,</dd><dt>description</dt><dd>This file contains the historical billing rates, associated with revenuecodes and bedsections that the DVA has legislative authority to bill thirdparties for reimbursement. It is used to automatically associate revenue codes, bedsections andamounts with a bill. Per VHA Directive 10-93-142, this file definition should not be modified. This file has been replaced by functionality in the Charge Master andwill no longer be used after patch IB*2*52 is released.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>effective date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the date in which changes in billing rates will take effect.A new entry, with a new effective date is necessary to change aprevious entry.  The most recent effective date's entry data willbe used (even if its null) in calculating current charges.</td></tr><tr><td>.02</td><td>billing bedsection(+)</td><td>0;2</td><td>POINTER</td><td><a href="399_1.html">399.1</a></td><td></td><td>This is the Specialty for which we have approved billing rates.</td></tr><tr><td>.03</td><td>revenue code(+)</td><td>0;3</td><td>POINTER</td><td><a href="399_2.html">399.2</a></td><td>D</td><td>This is the revenue code that will automatically be used with this rate.</td></tr><tr><td>.04</td><td>amount(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is the unit charge dollar amount for this rate.</td></tr><tr><td>.05</td><td>active</td><td>0;5</td><td>SET OF CODES</td><td>0:NOT ACTIVE<br/>1:YES, ACTIVE<br/></td><td></td><td>If a rate is no longer to be used it should be inactivated.  This may benecessary if you are building rates for the same care using differentRevenue Codes and would like to keep the old entries in the file forreference purposes.</td></tr><tr><td>.06</td><td>payors to use with</td><td>0;6</td><td>SET OF CODES</td><td>i:INSURANCE CO.<br/>p:PATIENTS<br/>o:OTHER (INSTITUTIONS)<br/>op:PATIENTS & INSTITUTIONS<br/>iop:ALL BUT CAT C'S<br/>iopc:ALL<br/>c:CAT C. BILLS ONLY<br/>opc:ALL BUT INSURANCE CO.'S<br/></td><td></td><td>Enter the payors that this Billing Rate is to be used with.  For thepurposes of this field, the choices for payer are:   i - Insurance companies   o - Other (Institutions   p - Patients   c - Means Test/Cat C bills All bills to patients will be considered patient bills except forMeans test Co-payment bills, which may have a different amount or maximum associated with it.</td></tr><tr><td>.07</td><td>non-standard rate</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field should be answered 'YES' if this billing rate should notbe automatically set up for all payers identified in the field 'PAYORSTO USE WITH."  This billing rate will only be used with insurance companies where this revenue code has been listed in the  DIFFERENT REVENUE CODES TO USE field of the Insurance Company File. If this field is left blank or answered 'NO' then this Revenue Codeand amount will be set up automatically for this bedsection when a billis created.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

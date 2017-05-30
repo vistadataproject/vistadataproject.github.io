@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > METHODS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="15050_11.html">15050.11</a></dd><dt>name</dt><dd>METHODS</dd><dt>number</dt><dd>15050.112</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Standardized Name for the Method to be created.</td></tr><tr><td>.02</td><td>class method(+)</td><td>0;2</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>Is the Method a Classmethod (1 for Yes, 0 for No)?Classmethods are static methods that can be called without instantiatingthe Class. Most methods created by this tool will be Classmethods.</td></tr><tr><td>.03</td><td>code mode</td><td>0;3</td><td>SET OF CODES</td><td>A:call<br/>C:code<br/>E:expression<br/>G:generator<br/>O:objectgenerator<br/></td><td></td><td>How the Method Code is implemented (call, code, expression, generator,or object generator).Most Methods used by this tool will be a simple expression or a list oflines (code). The more complex datatype methods often use Methodgenerators.</td></tr><tr><td>.04</td><td>private</td><td>0;4</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>Is the Method Private (1 for Yes, 0 for No)?</td></tr><tr><td>.05</td><td>return type</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The DataType of the Return Value (if applicable).</td></tr><tr><td>.06</td><td>field number</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>The FileMan Field Number this Method is associated with (if applicable),e.g. a Property's Get() method.</td></tr><tr><td>.11</td><td>description</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>The Description of the Method, used in the Class Definition.</td></tr><tr><td>.21</td><td>formal spec</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>The Formal Specification (list of Parameters and their DataTypes) forthis Method.</td></tr><tr><td>.31</td><td>public list</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>A list of Public Variables to be declared for this Method.This is only relevant for ProcedureBlock(=True) methods, where variablesneed to be passed to called non-ProcedureBlock code.</td></tr><tr><td>1</td><td>code</td><td>CODE;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>Multiple containing Implementation Code for the Method.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

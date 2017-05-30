@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROS AMIS CODES</h1></div><div id="results"><dl><dt>name</dt><dd>PROS AMIS CODES</dd><dt>number</dt><dd>663</dd><dt>location</dt><dd>^RMPR(663,</dd><dt>description</dt><dd>Contains prosthetic AMIS codes assigned to each item purchased for aveteran.  File 661, PROS ITEM MASTER, points to this file.  Do not editthese codes.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The CODE is in the format "01 A" where the first two characters are numeric(the AMIS line number) followed by one space and then alphabetic characters.CODE is needed for sorting in the proper sequence on reports, since thecomputer sorts 1A, 1B, 2, 3 as 2, 3, 1A, 1B. </td></tr><tr><td>1</td><td>ratio</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the national ratio set by VACO for AMIS calculations.</td></tr><tr><td>2</td><td>line description</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the AMIS Line Item Description.</td></tr><tr><td>3</td><td>issue/repair code</td><td>0;4</td><td>SET OF CODES</td><td>A:ADMINISTRATIVE ISSUE<br/>AR:ADMINISTRATIVE REPAIR<br/>O:ORTHOTIC LAB<br/>R:RESTORATION LAB<br/>OR:ORTHOTIC LAB REPAIR<br/>RR:RESTORATION LAB REPAIR<br/></td><td>D</td><td>This is a code defining what group within prosthetics the AMIS code willbe counted.</td></tr><tr><td>3.5</td><td>amis segment no</td><td>0;5</td><td>NUMERIC</td><td></td><td>E</td><td>This fields contains the segment number for the related disability codes.Used for the Generation of Generic Code Sheets.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

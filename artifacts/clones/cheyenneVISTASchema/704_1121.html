@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > OBS_FLOWSHEET_PAGE</h1></div><div id="results"><dl><dt>name</dt><dd>OBS_FLOWSHEET_PAGE</dd><dt>number</dt><dd>704.1121</dd><dt>location</dt><dd>^MDC(704.1121,</dd><dt>description</dt><dd>This file maintains the relationships between OBS_FLOWSHEET File (#704.112) entries and pages/view (OBS_VIEW File #704.111) entries.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>flowsheet id(+)</td><td>0;1</td><td>POINTER</td><td><a href="704_112.html">704.112</a></td><td></td><td>This field identifies the flowsheet that correlates to this file entry.</td></tr><tr><td>.02</td><td>page order(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field is the order of display for this view in the flowsheet (#.01).</td></tr><tr><td>.03</td><td>view id(+)</td><td>0;3</td><td>POINTER</td><td><a href="704_111.html">704.111</a></td><td></td><td>This field identifies a page/view displayed via this flowsheet (#.01).</td></tr><tr><td>.04</td><td>page type(+)</td><td>0;4</td><td>SET OF CODES</td><td>0:Mandatory<br/>1:Optional<br/>2:Supplemental<br/></td><td></td><td>This field indicates how this view (#.03) will be utilized in this flowsheet (#.01).</td></tr><tr><td>.05</td><td>display name(+)</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is a name to override the default DISPLAY NAME (file #704.112, field #.03).  This name will display when this page/view (#.03) isshown with this flowsheet (#.01). A sample DISPLAY NAME could be "NurseX ICU Monitoring".</td></tr><tr><td>.1</td><td>special instructions</td><td>.1;1</td><td>FREE TEXT</td><td></td><td></td><td>This is free-text to provide a way to give additional instruction, comment, or note about the use of this view (#.03) with this flowsheet (#.01). A sample SPECIAL INSTRUCTIONS value could be "Pivot the page when possible".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

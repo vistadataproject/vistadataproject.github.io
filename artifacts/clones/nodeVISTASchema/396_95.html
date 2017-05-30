@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AMIE C&P EXAM TRACKING</h1></div><div id="results"><dl><dt>name</dt><dd>AMIE C&P EXAM TRACKING</dd><dt>number</dt><dd>396.95</dd><dt>location</dt><dd>^DVB(396.95,</dd><dt>description</dt><dd>This file has been added for use by the 2507 REQUEST File (396.3).  Itcontains information about C&P appointments linked to 2507 Requests. This file should not be edited via FileMan.  The information in this fileis crucial to proper calculation of the Average Processing Time on theAMIE AMIS 290. NOTICE: This file is part of an implementation of a Nationally        Controlled Procedure.  Local modifications to this file        are prohibited per VHA Directive 10-93-142</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>initial appt date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This field contains the initial appointment date.</td></tr><tr><td>.02</td><td>original appt date</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the original appointment date.</td></tr><tr><td>.03</td><td>current appt date</td><td>0;3</td><td>DATE-TIME</td><td></td><td>CD</td><td>This field contains the current appointment date for the examination.</td></tr><tr><td>.04</td><td>veteran cancellation(+)</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field contains a code indicating if the appointment has been cancelledat the request of the veteran.</td></tr><tr><td>.05</td><td>veteran req appt date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date to which the veteran last requested theappointment be rescheduled.</td></tr><tr><td>.06</td><td>2507 request(+)</td><td>0;6</td><td>POINTER</td><td><a href="396_3.html">396.3</a></td><td>AR</td><td>This field contains a pointer to the 2507 request record this appointmentis scheduled for.</td></tr><tr><td>.07</td><td>appointment status(+)</td><td>0;7</td><td>SET OF CODES</td><td>1:ACTIVE<br/>0:CANCELLED<br/></td><td></td><td>This field contains a code indicating the status of the appointment.</td></tr><tr><td>.08</td><td>date appt cancelled</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date the appointment this link is associated withwas last cancelled.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

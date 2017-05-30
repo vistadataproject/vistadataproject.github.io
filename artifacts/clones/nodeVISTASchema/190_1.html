@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REQUESTED RECORDS</h1></div><div id="results"><dl><dt>name</dt><dd>REQUESTED RECORDS</dd><dt>number</dt><dd>190.1</dd><dt>location</dt><dd>^RTV(190.1,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="190.html">190</a></td><td>B</td><td>This allows the identification of the request for a record with theentity defined in the record file.</td></tr><tr><td>2</td><td>date/time requested(+)</td><td>0;2</td><td>DATE-TIME</td><td></td><td>AD</td><td>This identifies the date, time when the request was made</td></tr><tr><td>3</td><td>user requesting record</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This shows the person who made the request.</td></tr><tr><td>4</td><td>date/time record needed(+)</td><td>0;4</td><td>DATE-TIME</td><td></td><td>C</td><td>This identifies the date, time when the record is needed.</td></tr><tr><td>5</td><td>requestor(+)</td><td>0;5</td><td>POINTER</td><td><a href="195_9.html">195.9</a></td><td>ABOR</td><td>This identifies the borrower who needs the record</td></tr><tr><td>6</td><td>request status</td><td>0;6</td><td>SET OF CODES</td><td>c:CHARGED<br/>x:CANCELLED<br/>r:REQUESTED<br/>n:NOT FILLABLE<br/></td><td></td><td>This allows the system to differentiate the state of the request process.</td></tr><tr><td>7</td><td>date/time current status</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td>This defines the date, time when the current status was established.</td></tr><tr><td>8</td><td>user responsible for status</td><td>0;8</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This identifies the user in the system associated with the current status.</td></tr><tr><td>9</td><td>cancel reason</td><td>0;9</td><td>POINTER</td><td><a href="195_6.html">195.6</a></td><td></td><td>This differentiates the status of a canceled request.</td></tr><tr><td>10</td><td>pull list</td><td>0;10</td><td>POINTER</td><td><a href="194_2.html">194.2</a></td><td>AP</td><td>This identifies a list of requests which are logically grouped togetherto allow the system to perform a group action on a series of requests.</td></tr><tr><td>11</td><td>parent request</td><td>0;11</td><td>POINTER</td><td><a href="190_1.html">190.1</a></td><td>APAR</td><td>This allows the system to create a series of linked requests so that therequest for 1 record can spawn requests for logically associated records.</td></tr><tr><td>12</td><td>institution of requestor(+)</td><td>0;12</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This further identifies the requestor to support divisions within thesystem.</td></tr><tr><td>13</td><td>date request last printed</td><td>0;13</td><td>DATE-TIME</td><td></td><td></td><td>This identifies the date, time the barcoded request label was printed inthe system.</td></tr><tr><td>14</td><td>associated requestor</td><td>0;14</td><td>POINTER</td><td><a href="195_9.html">195.9</a></td><td></td><td>This allows the system to associate one borrower with another borrower tofurther more fully describe the need for a record.</td></tr><tr><td>75</td><td>comment</td><td>COMMENT;1</td><td>FREE TEXT</td><td></td><td></td><td>This allows the addition of free text to more fully describe the requestfor a record.</td></tr><tr><td>200</td><td>elapsed time to current status</td><td></td><td>COMPUTED</td><td></td><td></td><td>This allows the system to quantify the status of a request and sortrequests for priority.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

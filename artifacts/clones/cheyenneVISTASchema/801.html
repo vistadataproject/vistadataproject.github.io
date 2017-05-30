@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REMINDER ORDER CHECK ITEMS GROUP</h1></div><div id="results"><dl><dt>name</dt><dd>REMINDER ORDER CHECK ITEMS GROUP</dd><dt>number</dt><dd>801</dd><dt>location</dt><dd>^PXD(801,</dd><dt>description</dt><dd>This file contains a list of Orderable Items and Pharmacy Items that shouldhave a reminder order check rule(s). The Orderable Item will only beevaluated when the user places the order in CPRS. An Order Check Items Groupcan contain a list of Orderable\Pharmacy Items and a list of Rules.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>group name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>This field is the name of the Reminder Orderable Item Group.Nationally distributed reminder orderable items group namesare prefixed with "VA-".</td></tr><tr><td>10</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains a description of the clinicalreminder order checks. It is used to document itspurpose and intended goals.</td></tr><tr><td>15</td><td>pharmacy item list</td><td>1.5;0</td><td>MULTIPLE</td><td><a href="801_015.html">801.015</a></td><td></td><td>This multiple stores a list of VA Generic, VA Drug Class, and Drugs. If theordered orderable item belongs to one of the items in this multiple thanthe rules attached to the group will be evaluated.</td></tr><tr><td>20</td><td>orderable item list</td><td>2;0</td><td>MULTIPLE</td><td><a href="801_02.html">801.02</a></td><td></td><td>This multiple contains a list of orderable items that each reminderrule should run against. As an order is placed in CPRS, theorderable item is passed to the Order Check Mechanism. Thisorderable item will be checked against this list; if it is found,then the reminder definition or term assigned to the rule multiplewill be evaluated against the orderable item. When an order is placed in CPRS, the orderable item is passed tothe Order Check Mechanism. If the orderable item is found in a Group's Orderable Item List then each rule in the group willbe evaluated.</td></tr><tr><td>30</td><td>rule list</td><td>3;0</td><td>MULTIPLE</td><td><a href="801_04.html">801.04</a></td><td></td><td>This multiple contains a list of rules that are evaluated for eachorderable item in the orderable item list multiple. A rule can containeither one reminder term or one reminder definition.</td></tr><tr><td>100</td><td>class(+)</td><td>100;1</td><td>SET OF CODES</td><td>L:LOCAL<br/>V:VISN<br/>N:NATIONAL<br/></td><td></td><td>This is the CLASS of the Orderable Item Group. Possible classes are "N" fornational, "V" for VISN, and "L" for local.</td></tr><tr><td>101</td><td>sponsor</td><td>100;2</td><td>POINTER</td><td><a href="811_6.html">811.6</a></td><td></td><td>This is the organization or group that sponsors this orderable item group.</td></tr><tr><td>102</td><td>review date</td><td>100;3</td><td>DATE-TIME</td><td></td><td></td><td>The REVIEW DATE is used to determine when the orderable item group should bereviewed to verify that it is current with the latest standards andguidelines.</td></tr><tr><td>110</td><td>edit history</td><td>110;0</td><td>MULTIPLE</td><td><a href="801_03.html">801.03</a></td><td></td><td>This multiple is used to record a history of changes made to the order checkgroup.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

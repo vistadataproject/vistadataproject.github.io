@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCD NLOI CATEGORY</h1></div><div id="results"><dl><dt>name</dt><dd>SCD NLOI CATEGORY</dd><dt>number</dt><dd>154.01</dd><dt>location</dt><dd>^SPNL(154.01,</dd><dt>description</dt><dd>This file contains all the codes and descriptions of these codes for all neurologic level of injuries.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This three character code describes the neurologic level of injury.  Thecode must be Xnn, where X is the first letter of the cord segment(cervical,thoracic, lumbar, sacral) and nn is the vertebral level number(01-08 for cervical, 01-12 for thoracic, 01-05 for lumbar, 01-05 sacral).For example, C01 is cervical (cord segment) and 01 (vertebral level).For unknown NLOI, enter 'UNK' (uppercase).</td></tr><tr><td>.02</td><td>cord segment</td><td>0;2</td><td>SET OF CODES</td><td>C:CERVICAL<br/>T:THORACIC<br/>L:LUMBAR<br/>S:SACRAL<br/>U:UNKNOWN<br/></td><td>C</td><td>This field contains the code segments: Cervical, Thoracic, Lumbar, Sacral,and Unknown.This field is an uneditable field.</td></tr><tr><td>.03</td><td>vertebral level</td><td>0;3</td><td>FREE TEXT</td><td></td><td>D</td><td>Vertebral level is a two number code describing the level of the cordsegment (01-08 for cervical, 01-12 for thoracic, 01-05 for lumbar and 01-05 for sacral), where the first number is either 0 or 1.If unknown, leave this field blank.This field is an uneditable field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

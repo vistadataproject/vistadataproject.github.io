@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PCE ERROR</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="509850_6.html">509850.6</a></dd><dt>name</dt><dd>PCE ERROR</dd><dt>number</dt><dd>509850.65</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>pce error</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td></td></tr><tr><td>.02</td><td>pce field name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the field as defined in the array passed across to PCE.Examples of this field are: ENC D/T=Visit Date/Time, PATIENT=Patient,HOS LOC=Clinic, PROCEDURE=Procedure CPT, DIAGNOSIS=Diagnosis ICD9.</td></tr><tr><td>.03</td><td>pce field internal value</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal value of the field, that was passed to PCE and caused theerror message.The type for this field will obviously depend on the value of PCE FIELD NAME.For instance, if field name is ENC D/T (Visit Date/Time) then this field willcontain an internal Fileman Date/Time value. If the field name is PATIENTthen this field will contain the pointer to the PATIENT File.</td></tr><tr><td>.04</td><td>pce field external value</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the External value of the field that was rejected by PCE.As with the Internal Value field, the type of value in this field will dependon the PCE FIELD NAME that caused the error.If the PCE FIELD NAME is ENC D/T then this field will contain the externalvalue of the Visit Date/Time. If the PCE FIELD NAME is PATIENT then this field will contain the Patient Name.It is not always possible to determine the external value of the PCE FIELDNAME and so in some cases this field will be blank.</td></tr><tr><td>1</td><td>pce error message</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the text of the error message returned by PCE. The text inthis field comes directly from PCE and has not been generated in Quasar.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

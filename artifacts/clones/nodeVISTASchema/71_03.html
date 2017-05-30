@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AMIS CODES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="71.html">71</a></dd><dt>name</dt><dd>AMIS CODES</dd><dt>number</dt><dd>71.03</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>amis code</td><td>0;1</td><td>POINTER</td><td><a href="71_1.html">71.1</a></td><td>AC</td><td>This field contains the valid AMIS code(s) (from the Major AMIS CodesFile) associated with this exam procedure. There may be more than one AMIS code associated with each procedure.  If theprocedure type is 'Detailed', there will be one AMIS code.  If the procedure type is 'Series', there will be more than one AMIS code.  'Broad'types of procedures have no AMIS code.</td></tr><tr><td>2</td><td>amis weight multiplier</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field contains a number (0-99) to indicate to the various workloadreport routines how many times to multiply the weighted work unitsassociated with the AMIS code.  The weight for each AMIS code is storedin the 'MAJOR RAD/NUC MED AMIS CODE' file. Most multipliers will be 1.  However, there are some that are greaterthan 1.  For example, the procedure called 'UPPER GI + SMALL BOWEL' hasthe AMIS code 9-GASTROINTESTINAL which has a weight of 6 work units.But, the AMIS multiplier is 2.  Therefore on the workload reports, thesite will get credit for 12 weighted work units each time it is performed. Radiology Central Office has directed that the weighted work unit forUltrasound procedures involving multiple organs in the same visit can becounted only once if the organs are located close to each other.  (i.e.Liver and Gallbladder)</td></tr><tr><td>3</td><td>bilateral?</td><td>0;3</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field will contain a 'Yes' to indicate that this is a bilateralprocedure or a 'No' if it is not a bilateral procedure.  If it containsa 'Yes', then the system multiplies the AMIS weight by 2.  No harm is done by indicating the 'Multiplier' as '2' and 'Bilateral' as'Yes'.  The system will only use '2' as the multiplier, not (2*2) '4'.</td></tr><tr><td>4</td><td>ct head or body?</td><td>0;4</td><td>SET OF CODES</td><td>H:HEAD<br/>B:BODY<br/></td><td></td><td>This field contains a 'B' or 'H' value to indicate if this CT procedure isof the 'body' or of the 'head' area. Radiology Central Office has directed that the weighted work unit for twoCT procedures performed in the same visit can be counted twice only if theprocedures are performed on the 'head' and the 'body' areas.  If two CT'sare performed on the 'head' area during the same visit, then the weightedwork unit for the CT is counted only once.  The same is true for two CT'sperformed on the 'body' area during a visit.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RAD/NUC MED COMMON PROCEDURE</h1></div><div id="results"><dl><dt>name</dt><dd>RAD/NUC MED COMMON PROCEDURE</dd><dt>number</dt><dd>71.3</dd><dt>location</dt><dd>^RAMIS(71.3,</dd><dt>description</dt><dd>This file contains the procedures used in the display of common procedureswhen requesting a procedure.  Up to 40 active common procedures areallowed per imaging type.  Active common procedures have a sequence numberthat determines their display order on the common procedure selectionscreen.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>procedure(+)</td><td>0;1</td><td>POINTER</td><td><a href="71.html">71</a></td><td>B</td><td>This field is an "active" entry from your RAD/NUC MED PROCEDURES file(#71).</td></tr><tr><td>3</td><td>sequence number</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This is a unique number that puts a procedure on thecommon procedure display and allows selection by this number.</td></tr><tr><td>4</td><td>inactive</td><td>0;5</td><td>BOOLEAN</td><td>Y:yes<br/></td><td></td><td>This field should be answered 'yes' if you do not wantthe procedure to show up on display during order entry.</td></tr><tr><td>6</td><td>category of exam</td><td>0;6</td><td>SET OF CODES</td><td>I:INPATIENT<br/>O:OUTPATIENT<br/>C:CONTRACT<br/>S:SHARING<br/>E:EMPLOYEE<br/>R:RESEARCH<br/></td><td></td><td>This field contains a category for this procedure of 'I' forinpatient, 'O' for outpatient, 'C' for Contract, 'S' for sharing, 'E' for employee, or 'R' for research.If an entry is not made for this field, the category of 'Inpatient'will be automatically entered for each request generated fromthe protocal that is built for this procedure.</td></tr><tr><td>7</td><td>requested date</td><td>0;7</td><td>SET OF CODES</td><td>TODAY:TODAY<br/>TODAY+1:TOMORROW<br/></td><td></td><td>Enter the date on which you would like the exam done.This field should not be interpreted as an appointment date.</td></tr><tr><td>8</td><td>imaging location(+)</td><td>0;8</td><td>POINTER</td><td><a href="79_1.html">79.1</a></td><td></td><td>This field contains the imaging location for this procedure. Only animaging location is selectable.  The procedure request will be printed atthis location.</td></tr><tr><td>9</td><td>mode of transport</td><td>0;9</td><td>SET OF CODES</td><td>a:AMBULATORY<br/>p:PORTABLE<br/>s:STRETCHER<br/>w:WHEEL CHAIR<br/></td><td></td><td>Enter the mode of transport, 'a' for ambulatory, 'p' for portable,'s' for stretcher, and 'w' for wheelchair.</td></tr><tr><td>10</td><td>isolation procedures</td><td>0;10</td><td>BOOLEAN</td><td>y:YES<br/>n:NO<br/></td><td></td><td>Enter 'y'es if isolation procedures are required for this procedure.</td></tr><tr><td>11</td><td>request urgency</td><td>0;11</td><td>SET OF CODES</td><td>1:STAT<br/>2:URGENT<br/>9:ROUTINE<br/></td><td></td><td>Enter the urgency of this request.</td></tr><tr><td>12</td><td>procedure modifiers</td><td>M;0</td><td>MULTIPLE</td><td><a href="71_312.html">71.312</a></td><td></td><td>This field identifies the Procedure Modifiers that are associatedwith this Common Procedure.  Common Procedures may have more than oneProcedure Modifier association.</td></tr><tr><td>13</td><td>name of orderable item(+)</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>This is the name (menu text) that the person ordering this procedure willsee when they are placing orders in the OE/RR package.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

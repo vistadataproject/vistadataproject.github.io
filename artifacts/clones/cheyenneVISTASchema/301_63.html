@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IVM EXTRACT MANAGEMENT</h1></div><div id="results"><dl><dt>name</dt><dd>IVM EXTRACT MANAGEMENT</dd><dt>number</dt><dd>301.63</dd><dt>location</dt><dd>^IVM(301.63,</dd><dt>description</dt><dd>This file is used to record the processing statistics for theinitial enrollment extract.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>host file name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the root name used for the host files created.  Theextract may consist of multiple files, depending on the numberof patients extracted. The files will be named<HOST FILE NAME> concatenated with '_1', '_2', etc.</td></tr><tr><td>.02</td><td>directory</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>The directory/path for the host file.</td></tr><tr><td>.03</td><td># of patients processed</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>The number of records in the PATIENT file processed.</td></tr><tr><td>.04</td><td>task number</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The number assigned to the queued extract task by TaskMan.</td></tr><tr><td>.05</td><td>date/time job started</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>The date/time the queued job began execution.</td></tr><tr><td>.06</td><td>date/time job stopped</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>The date/time that the queued extract completed execution, or was stopped.</td></tr><tr><td>.07</td><td>terminated job (y/n)?</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Indicates whether or not the extract was completed.</td></tr><tr><td>.08</td><td>last patient processed</td><td>0;8</td><td>POINTER</td><td><a href="2.html">2</a></td><td></td><td>In the event of the extract being stopped before completion, this field is used to resume the extract where it left off.</td></tr><tr><td>.09</td><td>projected completion date/time</td><td>0;9</td><td>DATE-TIME</td><td></td><td></td><td>The estimated date/time that the extract will complete.</td></tr><tr><td>.1</td><td># of patients extracted</td><td>0;10</td><td>NUMERIC</td><td></td><td></td><td>The number of patients written to the extract.</td></tr><tr><td>.11</td><td>number of host files</td><td>0;11</td><td>NUMERIC</td><td></td><td></td><td>The number of host files created.</td></tr><tr><td>10</td><td>error</td><td>10;1</td><td>FREE TEXT</td><td></td><td></td><td>Used to document the reason the extract did not complete.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

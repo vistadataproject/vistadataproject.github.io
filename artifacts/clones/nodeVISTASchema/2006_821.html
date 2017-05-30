@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ACTIONS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="2006_82.html">2006.82</a></dd><dt>name</dt><dd>ACTIONS</dd><dt>number</dt><dd>2006.821</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>action</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>The Action field is an abbreviated form of the actual information.  The information in the field can be used for debugging purposes.The information contains the Action, DFN, MAGIEN, Desc, Date/TimePossible actions are :   LOGON,PAT (patient selected), IMG (image viewed),   CAP (image captured), MOD (image data modified), ERROR ('M' error occurred)   and LOGOFF.  IMPORT, Data, Result, and WSCheck are additional actions.</td></tr><tr><td>1</td><td>dfn</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal entry number that relates the Imaging action to the Vista Patient file.</td></tr><tr><td>2</td><td>image ien</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal entry number of the Vista Image file (#2005) thatrelates the ACTION activity to the Image.</td></tr><tr><td>3</td><td>procedure</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the Imaging application or modality that resulted in thissession action.</td></tr><tr><td>4</td><td>timestamp</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the time and date that this action event occurred.</td></tr><tr><td>5</td><td>v-rad images</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is the number of images associated with this VistaRad action.</td></tr><tr><td>6</td><td>v-rad patients</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the number of patients associated with this VistaRad action.</td></tr><tr><td>7</td><td>v-rad user type</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This is the VistaRad user type associated with this action.</td></tr><tr><td>8</td><td>v-rad remote read flag</td><td>0;9</td><td>BOOLEAN</td><td>1:Yes<br/>0:No<br/></td><td></td><td>This is the flag that specifies whether this VistaRad action occurredlocally or remotely.</td></tr><tr><td>9</td><td>resolution height</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This is the monitor resolution height settings at the action event.</td></tr><tr><td>10</td><td>resolution width</td><td>0;11</td><td>FREE TEXT</td><td></td><td></td><td>This is the monitor resolution width at the action event.</td></tr><tr><td>11</td><td>resolution bits</td><td>0;12</td><td>FREE TEXT</td><td></td><td></td><td>This is the monitor resolution bit settings at the action event.</td></tr><tr><td>12</td><td>display type</td><td>0;13</td><td>SET OF CODES</td><td>CL:Clinical Quality<br/>ND:Non-Dome<br/>VR:VistaRad Quality<br/>TC:Thin Client<br/></td><td></td><td>This field defines the monitor settings resolution quality at the action event.</td></tr><tr><td>13</td><td>action parameter</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the data parameters used for Data and Result action events.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCHEDULING EVENT</h1></div><div id="results"><dl><dt>name</dt><dd>SCHEDULING EVENT</dd><dt>number</dt><dd>403.43</dd><dt>location</dt><dd>^SD(403.43,</dd><dt>description</dt><dd>This table file contains the scheduling events. If an entry needs to be added, modified or deleted a patch will be issuedinstructing the site how to make the change.  Otherwise, this table should notbe edited in anyway by the site.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>event code(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Unique code that identifies an enrollment, request or appointment event.  This field uniquely identifies an event and is the primary key to theScheduling Event file.The event code corresponds to the following scheme:  HL-xxx    HL7 related event codes SC-RSxxx  Resource related event codes SC-RQxxx  Request related event codes ZMxxx to become SC-MCxxx  Managed Care related event codes SC-TMxxx  Team related event codes SC-OExxx  Encounter related event codes </td></tr><tr><td>.02</td><td>event name(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>EVN</td><td>Brief description of event type. This field briefly describes the event type and is used to help identifythe event.</td></tr><tr><td>.03</td><td>event type</td><td>0;3</td><td>SET OF CODES</td><td>1:REQUEST<br/>2:ENROLLMENT<br/>3:ENCOUNTER<br/>4:TEAM<br/>5:TEAM POSITION<br/>6:PRACTITIONER POSITION<br/>7:PATIENT TEAM<br/>8:PATIENT POSITION<br/>9:RESOURCE<br/>10:VISIT TYPE<br/>11:CLINICAL RESOURCE<br/>12:SCHEDULE<br/>13:QUERY<br/></td><td></td><td>This field contains the event type. Possible event types include:  Request, Enrollment and Encounter</td></tr><tr><td>.04</td><td>hl7 event code</td><td>0;4</td><td>POINTER</td><td><a href="779_001.html">779.001</a></td><td></td><td></td></tr><tr><td>50</td><td>description</td><td>D;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains the scheduling event description.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

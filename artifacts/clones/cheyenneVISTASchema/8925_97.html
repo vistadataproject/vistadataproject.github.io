@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TIU CONVERSIONS</h1></div><div id="results"><dl><dt>name</dt><dd>TIU CONVERSIONS</dd><dt>number</dt><dd>8925.97</dd><dt>location</dt><dd>^TIU(8925.97,</dd><dt>description</dt><dd>This file contains information concerning the conversion of legacy files such as ^GMR(121, Generic Progress Note File, to ^TIU(8925,TIU Document File.  </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>data converted(+)</td><td>0;1</td><td>SET OF CODES</td><td>PN:PROGRESS NOTES<br/>DS:DISCHARGE SUMMARY<br/></td><td>B</td><td>Field contains name of data converted</td></tr><tr><td>.02</td><td>start date</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>Date/time conversion is first started.  A record of restartsis kept in a subfile.</td></tr><tr><td>.03</td><td>completed date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>Date/time conversion completed.</td></tr><tr><td>.04</td><td>starting ien</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>When the conversion is begun the internal entry number (IEN)of the first record is stored in this field.</td></tr><tr><td>.05</td><td>processing ien</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>The internal file number of the last actual record processed.</td></tr><tr><td>.06</td><td>records processed</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field contains a running total of records successfully converted.</td></tr><tr><td>.07</td><td>error counter</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This field maintains a running total of the number of records notconverted. </td></tr><tr><td>.08</td><td>stopping ien</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>If a site wants to control a conversion, they may enter the IENof the record at which they want the conversion to stop. In thecase of progress notes, this allows for a controlled conversionof ^GMR(121 into TIU.  While the conversion is running, userscan continue to use Generic Progress Notes.</td></tr><tr><td>2</td><td>rollback - start</td><td>2;1</td><td>NUMERIC</td><td></td><td></td><td>If a rollback of data is required, this is the IEN within ^TIU(8925 at which to start.</td></tr><tr><td>2.1</td><td>rollback - stop</td><td>2;2</td><td>NUMERIC</td><td></td><td></td><td>This IEN can help to control a rollback of data if necessary.</td></tr><tr><td>2.5</td><td>halt conversion</td><td>2;3</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field will be monitored by the conversion to determineif the conversion should be halted before completion.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

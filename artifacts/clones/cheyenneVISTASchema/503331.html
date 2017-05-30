@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VOLUNTEER DAILY TIME</h1></div><div id="results"><dl><dt>name</dt><dd>VOLUNTEER DAILY TIME</dd><dt>number</dt><dd>503331</dd><dt>location</dt><dd>^ABS(503331,</dd><dt>description</dt><dd>This file contains the hours worked by volunteers, for a specific date andcombination.  It is the file from which the monthly time cardsare created.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="503330.html">503330</a></td><td>B</td><td>This field contains the name of volunteer.</td></tr><tr><td>1</td><td>site</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td> This field contains the site number associated with this daily record.  Itis the number assigned by the Austin voluntary system defining thespecific facility.  It can be 3 numbers or 3 numbers followed by 1uppercase character.</td></tr><tr><td>2</td><td>date worked</td><td>0;3</td><td>DATE-TIME</td><td></td><td>AD</td><td>This field contains the date the volunteer has worked.</td></tr><tr><td>3</td><td>organization</td><td>0;4</td><td>POINTER</td><td><a href="503334.html">503334</a></td><td>AC</td><td>This field contains the service organization the volunteer is representingduring this period of work.</td></tr><tr><td>3.5</td><td>service</td><td>0;8</td><td>POINTER</td><td><a href="503332.html">503332</a></td><td>AE</td><td>This field contains the medical center service the volunteer is workingfor during this period.</td></tr><tr><td>4</td><td>number of hours worked(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field contains the numbers of hours worked by the volunteer duringthis period.</td></tr><tr><td>5</td><td>month</td><td>0;2</td><td>DATE-TIME</td><td></td><td>AF</td><td>This field contains the month during which the work was performed.</td></tr><tr><td>6</td><td>combination(+)</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>A combination is a string of 7 to 8 characters representing the serviceorganization represented, the work schedule and the medical center servicefor which the work was performed.</td></tr><tr><td>7</td><td>review daily entry list?</td><td>0;9</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td> This field contains a "yes" if it is to be used in displaying the dailyrecords of an individual volunteer.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

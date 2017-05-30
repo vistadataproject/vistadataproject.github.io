@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRF LOCAL FLAG</h1></div><div id="results"><dl><dt>name</dt><dd>PRF LOCAL FLAG</dd><dt>number</dt><dd>26.11</dd><dt>location</dt><dd>^DGPF(26.11,</dd><dt>description</dt><dd>This file contains Category II (Local) Patient Record Flags that can be assigned to a patient.  Use the Record Flag Management [DGPF RECORD FLAGMANAGEMENT] option to create/edit entries in this file. Records in this file should not be added, edited, or deleted except through the use of the Patient Record Flag software that is part of Registration.  Doing so would likely cause the Patient Record Flag database to become corrupted.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the locally assigned name of the Patient Record Flag.</td></tr><tr><td>.02</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:INACTIVE<br/>1:ACTIVE<br/></td><td></td><td>This field contains the ACTIVE or INACTIVE status of the Patient RecordFlag.  Changing this field from ACTIVE to INACTIVE will inactivate allpatient record flag assignments associated with this flag.</td></tr><tr><td>.03</td><td>type(+)</td><td>0;3</td><td>POINTER</td><td><a href="26_16.html">26.16</a></td><td></td><td>This field identifies the usage classification of the Patient Record Flag.</td></tr><tr><td>.04</td><td>review frequency days(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field represents the number of days that may elapse between reviews of a Patient Record Flag Assignment.  A value of zero ("0") indicates that no automatic review will occur. (example: 730 = 2 years)</td></tr><tr><td>.05</td><td>notification days(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field contains the number of days prior to a patient record flagassignment's Review date that a review notification is sent tothe flag's Review Mail Group.  A value of zero ("0") indicatesthat NO prior notification is required. This field should always be lessthan the Review Frequency field value.</td></tr><tr><td>.06</td><td>review mail group</td><td>0;6</td><td>POINTER</td><td><a href="3_8.html">3.8</a></td><td></td><td>This field contains the name of the mail group whose members willreceive MailMan notification of Patient Record Flag Assignmentsthat are due for review. The mail group name must begin with 'DGPF' and it is further recommendedthat locally-defined flag mail group names begin with 'DGPFZ' to preventconflicts with nationally-released patient record flags.</td></tr><tr><td>.07</td><td>tiu pn title(+)</td><td>0;7</td><td>POINTER</td><td><a href="8925_1.html">8925.1</a></td><td></td><td>This field contains the Category II Progress Note Title that is associatedwith this Patient Record Flag.</td></tr><tr><td>1</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains the text that describes the purpose and instructionsfor application of this local Patient Record Flag to a patient.</td></tr><tr><td>2</td><td>principal investigator(s)</td><td>2;0</td><td>MULTIPLE</td><td><a href="26_112.html">26.112</a></td><td></td><td>This multiple field contains the principal investigator(s) names when theFlag TYPE is RESEARCH.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

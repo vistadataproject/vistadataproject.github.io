@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ROR LAB SEARCH</h1></div><div id="results"><dl><dt>name</dt><dd>ROR LAB SEARCH</dd><dt>number</dt><dd>798.9</dd><dt>location</dt><dd>^ROR(798.9,</dd><dt>description</dt><dd>Lab search criteria are stored in this file. Thesecriteria are referenced by the selection rules andused in the search for Lab results. It is possible but not recommended to use the samecriterion for several different registries. Records of the file are uniquely identified by thecriterion name. The "A" primary key and the "B"uniqueness index are used for this purpose.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>YOU MUST NOT EDIT THIS FIELD IF IT IS PART OF ANATIONAL REGISTRY DEFINITION! The criterion name must be unique and name spaced.The names that are used for National Registriesmust start with "VA".</td></tr><tr><td>.09</td><td>national</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>ONLY AUTHORIZED NATIONAL REGISTRY DEVELOPERS CANEDIT THIS FIELD! The national registries must have this field setto "YES". This prevents local editing of otherfields of national registry definitions.</td></tr><tr><td>1</td><td>status</td><td>0;2</td><td>SET OF CODES</td><td>0:ACTIVE<br/>1:INACTIVE<br/></td><td></td><td>Select the "INACTIVE" code if you want to disablethe criterion temporarily.</td></tr><tr><td>2</td><td>lab test</td><td>1;0</td><td>MULTIPLE</td><td><a href="798_92.html">798.92</a></td><td></td><td>This multiple contains a list of the Lab search indicators used by the registry update process. If at least one of the indicators is evaluated as True, the macro referencing the search criterionwill be evaluated as True as well. This multiple can contain several records for thesame Lab test.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

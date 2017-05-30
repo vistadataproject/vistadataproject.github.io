@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > EXTRACT FILES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="350_9.html">350.9</a></dd><dt>name</dt><dd>EXTRACT FILES</dd><dt>number</dt><dd>350.9006</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>extract file type</td><td>0;1</td><td>SET OF CODES</td><td>NOINSUR:NOINSUR<br/>ENHNOIN:ENHNOIN<br/>NORXINS:NORXINS<br/>NONVERINS:NONVERINS<br/></td><td>B</td><td>Type of Extract file.  Depending on your site requirements, you may want to define one or moreof the following Extract types: NOINSUR - (HMS No Insurance Data Extract) Pulls patients with no insurance info on file.  ENHNOIN - (HMS Enhanced No Insurance Data Extract) Pulls patients with only Medicare insurance on file and no commercial insurance. NORXINS - (HMS No Prescription Insurance Extract) Pulls patients with active insurance that is not "Prescription Only" and identifies Prescription Only insurance in the monthly insurance matching process. NONVERINS - (HMS Non-Verified Insurance Data Extract) Pulls patients treated within a user-specified date range WITH insurance information and where the insurance information has NOT been re-verified in the last six months (or other specified period). This file is also known as thereverification file.</td></tr><tr><td>.02</td><td>extract file active</td><td>0;2</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This is a flag to indicate whether the processing for this file type is enabled/active.</td></tr><tr><td>.03</td><td>file name</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Name of the extract file created by HMS Data Extract Utility associated with the extract file type.</td></tr><tr><td>.04</td><td>aitc dmi queue email address</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>Email address of the DMI Queue where the extract file message(s) associated withthis extract file type will be sent.</td></tr><tr><td>.05</td><td>day of month extract file due</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>Day of month, 0 to 31 when the extract file associatedwith this extract file type is expected from HMS data extractor software, installed at the local site.  A value of 0 meansdo not check the due date.For a day say  31 that does not exist for a given month,  eII software will assume last day of that month. This includes last day of February whether it is a leap year or not.</td></tr><tr><td>.06</td><td>days before late message sent</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>Number of days after the Extract File Due day of the month, before theExtract file creation by the HMS Data Extract is considered overdue. Ifthe Extract File is not created by this time a late message is sentto IBCNF EII IRM mail group. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HL7 MONITOR PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>HL7 MONITOR PARAMETERS</dd><dt>number</dt><dd>776.999</dd><dt>location</dt><dd>^HLEV(776.999,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field holds the name of the parameter entry.  (Only one entry, internal entry number 1 should exist.)  The value of this field has noaffect on software execution.</td></tr><tr><td>2</td><td>status-master</td><td>0;2</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td></td><td>This field should be set to ACTIVE if the master job should run, and INACTIVE if the master job should not run.  This field also controlsindividual monitor jobs.  (Note that setting this field has no affecton queued future Taskman jobs - either the master job or the monitorjobst - until these jobs start.  If this field is set to INACTIVE,when queued jobs start they check this field and immediately stop.)</td></tr><tr><td>3</td><td>requeue min-master job</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>When a master job runs, it's first action is to queue a new master jobtask in the future.  This field is used to determine the number minutesin the future that the task is queued.</td></tr><tr><td>4</td><td>purge hours</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The Event Monitor system purges itself, retaining data in it's filesfor the number hours specified by this field.</td></tr><tr><td>6</td><td>status-event</td><td>0;6</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td></td><td>This field is similar to the STATUS-MASTER field, (and you should read the description of that field), but only controls individual monitorjobs.  If this field is set to INACTIVE, no new monitor jobs will be queued.And, if any monitor jobs are already queued, they will stop immediatelywhen they start.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

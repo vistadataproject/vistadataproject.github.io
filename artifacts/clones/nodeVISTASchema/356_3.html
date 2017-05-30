@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLAIMS TRACKING SI/IS CATEGORIES</h1></div><div id="results"><dl><dt>name</dt><dd>CLAIMS TRACKING SI/IS CATEGORIES</dd><dt>number</dt><dd>356.3</dd><dt>location</dt><dd>^IBE(356.3,</dd><dt>description</dt><dd>This file contains the major categories of areas that are used to addressthe severity of illness and intensity of service.  Specific criteria foreach category must be met to address appropriateness of admission tocontinued stay in and discharge from specialized units and generalunits. Do Not add to or delete from this file without instructions from yourISC.  Editing this file may have significant impact on the QM national roll-up of Utilization Review information. The contents of this file are the general categories for Intesity of Service and Severity of Illness from Interqual. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the name of the Severity of Illness (SI) or Intensity of Service(IS) general category.   Enter the name as it appears in the Interqual manual.</td></tr><tr><td>.02</td><td>*general or special unit</td><td>0;2</td><td>SET OF CODES</td><td>1:SPECIAL UNIT CODE<br/>2:GENERAL UNIT<br/></td><td></td><td>Enter whether this criteria is for general medical surgical ward or fora specialized unit as defined in the Interqual manual.  Specializedunits include not only ICU's and CCU's but some other non-critical careunits that one might not normally expect to see included in the list. </td></tr><tr><td>.03</td><td>code</td><td>0;3</td><td>FREE TEXT</td><td></td><td>C</td><td>Enter the 2 digit number to assist in looking up SI/IS criteria. Do not edit this code as it will be used in the national roll-up of QM Utilization Review data to identify the category.</td></tr><tr><td>.04</td><td>level of care</td><td>0;4</td><td>SET OF CODES</td><td>1:CRITICAL CARE<br/>2:ACUTE CARE - BODY SYSTEM<br/>3:ACUTE CARE - OTHER<br/></td><td></td><td>This field stores the three levels of care for the SI/IS categories.This field is displayed as an identifier when the SI/IS category isselected.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

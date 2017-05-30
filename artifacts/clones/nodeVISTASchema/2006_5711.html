@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DICOM M2MB RPC QUEUE</h1></div><div id="results"><dl><dt>name</dt><dd>DICOM M2MB RPC QUEUE</dd><dt>number</dt><dd>2006.5711</dd><dt>location</dt><dd>^MAGDINPT(2006.5711,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ The entries in this table describe activities that are requestedby DICOM Gateways, to be performed by procedures that areexecuted remotely on a VistA Server.The name of the Remote Procedure that processed these requestsis MAG DICOM IMAGE PROCESSING; the code for this procedurestarts at ENTRY^MAGDIR8.The data in the various request-records contains a code thatspeficies the type of operation, and any subsequent datain the request are parameters for that operation.Currently, the following requests are recognized:(upper case values are constants, lower case valuesindicate variable values):PROCESSED|0|location|instrument|image|1CORRECT|PROCESSED|image|study|deletion|instrument|filename|study_uid|gateway_idThe data in this file is extremely volatile.Records will be entered, processed and deleted in rapid progression.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>data record(+)</td><td>0;E1,240</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is a record to be passed on to the remoteprocedure call. One of the parameters of this remote procedure decides how totreat the data record that is stored in this field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

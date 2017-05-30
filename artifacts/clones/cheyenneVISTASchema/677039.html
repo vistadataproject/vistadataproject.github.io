@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DESK ACCESSORY USER</h1></div><div id="results"><dl><dt>name</dt><dd>DESK ACCESSORY USER</dd><dt>number</dt><dd>677039</dd><dt>location</dt><dd>^AST(677039,</dd><dt>description</dt><dd>Holds the suspense file users and all their Personal Suspense Items.</dd><dt>applicationGroups</dt><dd>ASTR</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>user name(+)</td><td>0;1</td><td>POINTER</td><td><a href="3.html">3</a></td><td>B</td><td></td></tr><tr><td>.012</td><td>remind at login(+)</td><td>0;3</td><td>SET OF CODES</td><td>Y:Yes, Remind at every login<br/>N:No, Don't remind at login<br/>1:Remind only at first login of day<br/>D:Remind at my Descretion<br/></td><td></td><td>Answering yes to this will cause the active pending reminders toshow on the screen at the time of login if the user's primary menuhas the following code added to the ACTION TO BE PERFORMED WHENENTERING THIS MENU: D ^ASTR2Answering 1 to this will cause active pending reminders to showon the screen during the first login of the day and not again untilthe next day.If this field is set to no or the action is not added this userwill not be reminded at login of the pending Reminders.</td></tr><tr><td>.0121</td><td>overdue default</td><td>0;4</td><td>SET OF CODES</td><td>Y:Yes I know I'll get to it<br/>S:Set Date to forward<br/>C:Change Status to Complete<br/></td><td></td><td></td></tr><tr><td>.013</td><td>authorized suspense user</td><td>2;0</td><td>MULTIPLE</td><td><a href="677039_03.html">677039.03</a></td><td></td><td></td></tr><tr><td>.014</td><td>manager access</td><td>0;4</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td></td></tr><tr><td>.015</td><td>days on status(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This Number decides how far in the future to go for future remindersfor the status option.  If you enter 5 then all items set to beginreminding you later than 5 days from today will not show up on thestatus option.  (Min=5 days Max=1825 days [5 years])</td></tr><tr><td>.016</td><td>categories</td><td>CAT;0</td><td>MULTIPLE</td><td><a href="677039_05.html">677039.05</a></td><td></td><td></td></tr><tr><td>.017</td><td>default printer</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.018</td><td>calendar printer</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.019</td><td>memo printer</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>.02</td><td>suspense file</td><td>1;0</td><td>MULTIPLE</td><td><a href="677039_01.html">677039.01</a></td><td></td><td></td></tr><tr><td>.03</td><td>number of suspense items</td><td></td><td>COMPUTED</td><td></td><td></td><td></td></tr><tr><td>.04</td><td>phone messages</td><td>3;0</td><td>MULTIPLE</td><td><a href="677039_06.html">677039.06</a></td><td></td><td></td></tr><tr><td>.99</td><td>date suspense last checked</td><td>99;1</td><td>FREE TEXT</td><td></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

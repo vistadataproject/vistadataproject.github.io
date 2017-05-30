@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DICOM WORKLIST STUDY</h1></div><div id="results"><dl><dt>name</dt><dd>DICOM WORKLIST STUDY</dd><dt>number</dt><dd>2006.56</dd><dt>location</dt><dd>^MAGDWLST(2006.56,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ The entries in this table contain the information about the variousstudies that are recorded as tasks on the worklist for a DICOM "modality".The top-level information in this table separates the activities from thevarious clinics at a consolidated site; the next level contains the studyinformation. This file contains temporary copies of information from the VistAsystem that live on our satellite systems for the duration of thestudy that produces the images, and the only reason forreplicating the information onto these "DICOM Gateway Stations"is that we want to be able to allow the acquisition of images andthe presentation of "worklist information" to continue, evenwhile the VistA system is down, or when the DDP connectionbetween our Gateways and the VistA system is not operating.  Information is copied from VistA to DICOM Gateway when an HL7message is processed that announces the "exam", and removed whenan HL7 message is processed that announces that the exam iscarried out. </dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>division(+)</td><td>0;1</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>The value of this field is a pointer into the INSTITUTION file (#4).The pointed to location is the division where a study for a patientis scheduled to be performed.</td></tr><tr><td>2</td><td>study</td><td>1;0</td><td>MULTIPLE</td><td><a href="2006_562.html">2006.562</a></td><td></td><td>This subfile holds the studies for the current division.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

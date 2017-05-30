@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VDEF REQUESTOR</h1></div><div id="results"><dl><dt>name</dt><dd>VDEF REQUESTOR</dd><dt>number</dt><dd>579.1</dd><dt>location</dt><dd>^VDEFHL7(579.1,</dd><dt>description</dt><dd>Identifies the logical source for a class of requests for HL7 messages.  ENTRIES IN THIS FILE SHOULD NOT BE EDITED IN PRODUCTION ACCOUNTS.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>requestor name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of the source of the request, aka Requestor.  Set up by the VISTA HL7 IRM. Identifies the logical source of a class of requests for HL7 messages. For example, all solicited requests may be thought of as coming from onelogical Requestor and all unsolicited requests would then fall under theother logical Requestor in the system.</td></tr><tr><td>.02</td><td>requestor default flag(+)</td><td>0;2</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td>C</td><td>YES/NO flag indicating whether this Requestor is the default one.  Set up by the VISTA HL7 IRM.  The VDEF Queue Manager will use this data elementif no Requestor name is passed in to determine which Request Queue to puteach request on.</td></tr><tr><td>.03</td><td>requestor destination(+)</td><td>0;3</td><td>POINTER</td><td><a href="579_2.html">579.2</a></td><td></td><td>A pointer to an entry in File 579.2. Set up by the VISTA HL7 IRM.  The VDEF Request Processor program will use this data as the defaultDestination for this Requestor if no Destination is explicitly passed inor if the passed in Destination is invalid.</td></tr><tr><td>.04</td><td>request queue(+)</td><td>0;4</td><td>POINTER</td><td><a href="579_3.html">579.3</a></td><td></td><td>Default Request Queue for this requestor. Set up by the VISTA HL7 IRM. Will be used by the VDEF Queue Manager program to determine whichRequest Queue to add the request to if no priority is explicitly passed in. The data in this field is a pointer to the Request Queue file (579.3).</td></tr><tr><td>.05</td><td>requestor activation flag(+)</td><td>0;5</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td></td><td>HL7 ACTIVATION flag. Set up by the VISTA HL7 IRM to INACTIVE if nooutbound  HL7 messages should be generated (for testing or any otherreasons) and to ACTIVE if they should be generated. Used by the VDEF APIprogram to determine whether to queue up or reject incoming requests for this Requestor.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

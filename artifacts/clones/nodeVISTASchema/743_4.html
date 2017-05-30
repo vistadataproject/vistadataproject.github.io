@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DATA ELEMENT</h1></div><div id="results"><dl><dt>name</dt><dd>DATA ELEMENT</dd><dt>number</dt><dd>743.4</dd><dt>location</dt><dd>^QA(743.4,</dd><dt>description</dt><dd>This file contains the data elements from DHCP a user may select to becaptured when a patient falls out for a given monitor.  New dataelements may be added by a programmer.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the data element that the user will see.</td></tr><tr><td>.03</td><td>parent file(+)</td><td>0;3</td><td>POINTER</td><td><a href="1.html">1</a></td><td></td><td>This field is a pointer to the file that the data element belongs to.</td></tr><tr><td>2</td><td>dictionary number</td><td>DD;0</td><td>MULTIPLE</td><td><a href="743_42.html">743.42</a></td><td></td><td>Enter the (sub) dictionary number where this field resides.</td></tr><tr><td>20</td><td>dir(0)</td><td>DIR0;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This field is used in the manual entry of a fall out.  Enter the DIR(0)code(s) used to validate the data for this data element.</td></tr><tr><td>21</td><td>dir(?)</td><td>DIRQ;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Enter help text or an up-arrow followed by MUMPS code.</td></tr><tr><td>22</td><td>dir(?,#)</td><td>DIR1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field is used as the data for the DIR("?",#) strings.  The firstline of text goes into DIR("?",1), the second into DIR("?",2), andso on.</td></tr><tr><td>23</td><td>dir output transform</td><td>DIROUT;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Enter standard MUMPS code that takes the output of DIR and returnsthe variable Y in the external format.</td></tr><tr><td>24</td><td>dir(??)</td><td>DIRQQ;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Enter the help frame ^ MUMPS code to be used by DIR.</td></tr><tr><td>25</td><td>dir(a)</td><td>DIR;1</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the prompt the user will see for this data elementwhen a fall out is being edited.  If nothing is entered in this fieldthe text of the NAME field is used.</td></tr><tr><td>26</td><td>dir(b)</td><td>DIR;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the default value for this data element.  It willbe used if: 1) No data was previously entered for this data element for a fall    out, and 2) No default value can be calculated for this data element.</td></tr><tr><td>27</td><td>dir(t)</td><td>DIR;3</td><td>NUMERIC</td><td></td><td></td><td>This field is the time out value (in seconds) that will be used whena fall out is being edited.  If nothing is entered in this field thevalue of DTIME will be used.</td></tr><tr><td>28</td><td>dir(a,#)</td><td>DIR2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is a larger message shown to the user before the prompt for thisdata element is presented.</td></tr><tr><td>40</td><td>code to create data pointers</td><td>POINT;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>The MUMPS code in this field should take the variables QAMDFN (= pointerto the patient file) and QAMEVENT (= an event date/time) and return theQAMDTPT(1,2,3,...,n) array.  The QAMDTPT array will be used to capture adefault value for this data element when the user is manually enteringa fall out.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

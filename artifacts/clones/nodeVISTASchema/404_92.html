@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SCHEDULING REPORT DEFINITION</h1></div><div id="results"><dl><dt>name</dt><dd>SCHEDULING REPORT DEFINITION</dd><dt>number</dt><dd>404.92</dd><dt>location</dt><dd>^SD(404.92,</dd><dt>description</dt><dd>This file contains the definitions for hard coded scheduling reportsthat are available to the user on a client workstation.These definitions are pre-determined and must not be modified unlessexplicitly instructed as part of a patch or module upgrade.The parameters specified in each report definition are used by theclient application. The parameters indicate what prompts are presentedto the user, which prompts are required as part report criteria.Also, where possible, a default value is specified that is usedwhen first displaying the prompt.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of scheduling report.The name is presented to the user in the combo-box as part of the QueryTemplate Utility functionality on the client workstation.</td></tr><tr><td>.02</td><td>report group</td><td>0;2</td><td>POINTER</td><td><a href="404_94.html">404.94</a></td><td>C</td><td>This field indicates the report group associated with thereport definition. The grouping will be used in futurereleases to help screen reports available to the user duringreport selection.</td></tr><tr><td>10</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains a description of the report's purposeand output.</td></tr><tr><td>20</td><td>sorts</td><td>SORTS;0</td><td>MULTIPLE</td><td><a href="404_9202.html">404.9202</a></td><td></td><td>This multiple field contains the list of possible waysthis report can be sorted.If this list contains more then one entry, then the usermust select a sort as part of the report criteria.</td></tr><tr><td>30</td><td>fields</td><td>FIELDS;0</td><td>MULTIPLE</td><td><a href="404_9203.html">404.9203</a></td><td></td><td>This multiple contains the list of fields used by this reportdefinition.</td></tr><tr><td>40</td><td>files</td><td>FILES;0</td><td>MULTIPLE</td><td><a href="404_9204.html">404.9204</a></td><td></td><td>This multiple contains the list of files that theuser usually must select entries for as part ofthe report criteria.Most reports require at least the selection ofone entry from each file in the multiple.However, there is at least one report where only oneselection is allowed for the file. Also, there is atleast one report that does not require any selection tobe made if the user desires the report to search fornull values.The 'NUMBER OF SELECTIONS REQUIRED' (#.02) fieldindicates how many selections need to be made.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

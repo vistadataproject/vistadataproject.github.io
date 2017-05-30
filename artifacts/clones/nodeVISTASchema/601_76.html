@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MH INSTRUMENT CONTENT</h1></div><div id="results"><dl><dt>name</dt><dd>MH INSTRUMENT CONTENT</dd><dt>number</dt><dd>601.76</dd><dt>location</dt><dd>^YTT(601.76,</dd><dt>description</dt><dd>This file specifies which entries from the MH QUESTIONS file (#601.72) are parts of which instrument in the MH TESTS AND SURVEYS file (#601.71).  It is the "table of contents" for an interview, survey or test. Also specified are the sequence of questions and display attributes for the introductions, questions and choices.  Display attributes can be bold, underlined and font size for the introductions, questions and choices.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>instrument content id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is a unique identifier for this Instrument Content. This is the IEN. Numbers under 100,000 are part of the national database and should not be edited locally.</td></tr><tr><td>1</td><td>instrument(+)</td><td>0;2</td><td>POINTER</td><td><a href="601_71.html">601.71</a></td><td>AC</td><td>A pointer to the MH TESTS AND SURVEYS file (#601.71). This associatesquestions to their instrument.</td></tr><tr><td>2</td><td>question sequence</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Order of the question in the instruments.</td></tr><tr><td>3</td><td>question id</td><td>0;4</td><td>POINTER</td><td><a href="601_72.html">601.72</a></td><td>AE</td><td>Pointer to the MH QUESTIONS file (#601.72). It associates instruments to their questions.</td></tr><tr><td>4</td><td>designator</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The "number" (e.g., "1", "F2", "1.2.a") displayed along with the questiontext.</td></tr><tr><td>5</td><td>question text</td><td></td><td>COMPUTED</td><td></td><td></td><td>Allows display of question text through this computed field.</td></tr><tr><td>6</td><td>choicetype</td><td></td><td>COMPUTED</td><td></td><td></td><td>Associates a ChoiceType (a group of multiple choice alternatives) to this question in this instrument.</td></tr><tr><td>7</td><td>questiondisplayid</td><td>0;6</td><td>POINTER</td><td><a href="601_88.html">601.88</a></td><td></td><td>Specifies display attributes like font, color and bold for this question.</td></tr><tr><td>8</td><td>introdisplayid</td><td>0;7</td><td>POINTER</td><td><a href="601_88.html">601.88</a></td><td></td><td>Specifies display attributes like font, color and bold for this intro.</td></tr><tr><td>9</td><td>mhchoicedisplayid</td><td>0;8</td><td>POINTER</td><td><a href="601_88.html">601.88</a></td><td></td><td>Specifies display attributes like font, color and bold for this set of alternatives.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

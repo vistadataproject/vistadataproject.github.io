@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REMOTE USER DIRECTORY</h1></div><div id="results"><dl><dt>name</dt><dd>REMOTE USER DIRECTORY</dd><dt>number</dt><dd>4.2997</dd><dt>location</dt><dd>^XMD(4.2997,</dd><dt>description</dt><dd>People who have mailboxes on remote systems may be entered into thisfile so that local users can look up their names and have their mailautomatically addressed.</dd><dt>applicationGroups</dt><dd>XM</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>last name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the last name of the remote user.</td></tr><tr><td>1</td><td>first name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the first name of the remote user.</td></tr><tr><td>2</td><td>rest of name</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the rest of the remote user's name.</td></tr><tr><td>3</td><td>mail code</td><td>0;4</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the mail code name of the remote user.</td></tr><tr><td>4</td><td>extended mail code</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the mail code name of the remote user with a greater amount of detailthan the regular mail code.</td></tr><tr><td>5</td><td>location</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This is where the remote user is located.</td></tr><tr><td>6</td><td>date last used</td><td>0;9</td><td>DATE-TIME</td><td></td><td>AC</td><td>This is when the entry was last chosen and used for addressing a message.</td></tr><tr><td>7</td><td>phone</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the phone number of the remote user.</td></tr><tr><td>8</td><td>phone extension</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the extension of the phone number of the remote user.</td></tr><tr><td>50</td><td>date entered</td><td>0;8</td><td>NUMERIC</td><td></td><td></td><td>This is the date that a user was entered into the directory.It is is $H format (just the day portion, eg.  55445).It is data to be entered only when users are being enteredinto the database automatically.</td></tr><tr><td>98</td><td>automatically entered by</td><td>AUTO;1</td><td>FREE TEXT</td><td></td><td>E</td><td>This field is used by a routine (or server) that automatically enters namesinto this file to mark it with a prechosen name.  This name must be coordinatedby the MailMan Development team.  Local sites may use names that begin withthe three character sequence "XMZ" without coordinating. </td></tr><tr><td>99</td><td>network address</td><td>0;7</td><td>FREE TEXT</td><td></td><td>F</td><td>This field is used to address mail automatically.  When a look-upis done on the local user file and fails, a secondary look-up triesto find the user in the Remote User file.  If it is found, the messageis automatically addressed using this field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

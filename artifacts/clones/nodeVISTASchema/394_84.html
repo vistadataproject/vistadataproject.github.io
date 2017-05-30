@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VAQ - SEGMENT GROUP</h1></div><div id="results"><dl><dt>name</dt><dd>VAQ - SEGMENT GROUP</dd><dt>number</dt><dd>394.84</dd><dt>location</dt><dd>^VAT(394.84,</dd><dt>description</dt><dd>This file contains groups of data segments commonly referenced by thefacility.  Groups marked as 'Public' may be referenced by all users ofPDX.  Groups marked as 'Private' may only be referenced by the individualthat created the group.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>group name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td> Name of group.</td></tr><tr><td>.02</td><td>group type</td><td>0;2</td><td>SET OF CODES</td><td>1:PUBLIC<br/>0:PRIVATE<br/></td><td></td><td>Set to PRIVATE if the group can only be referenced by the person whocreated the group.  Set to PUBLIC if the group can be referencedby all users.</td></tr><tr><td>.03</td><td>created by</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Person who created this group.</td></tr><tr><td>.04</td><td>date created</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>Date the group was created.</td></tr><tr><td>10</td><td>data segment</td><td>SEG;0</td><td>MULTIPLE</td><td><a href="394_841.html">394.841</a></td><td></td><td>Multiple containing data segments contained in this group.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

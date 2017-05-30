@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LOCAL SURGICAL SPECIALTY</h1></div><div id="results"><dl><dt>name</dt><dd>LOCAL SURGICAL SPECIALTY</dd><dt>number</dt><dd>137.45</dd><dt>location</dt><dd>^SRO(137.45,</dd><dt>description</dt><dd>This file contains the Surgical Specialties used locally.  This filecontains all the entries in the national SURGICAL SPECIALTY file (45.3)as well as locally created entries.  All entries should point to astandard entry in the national SURGICAL SPECIALTY file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the name of the 'local' surgical specialty used at this site.</td></tr><tr><td>1</td><td>national surgical specialty(+)</td><td>0;2</td><td>POINTER</td><td><a href="45_3.html">45.3</a></td><td>C</td><td>This is the 'national' surgical specialty in file 45.3 to which this'local' specialty points.</td></tr><tr><td>2</td><td>associated clinic</td><td>0;5</td><td>POINTER</td><td><a href="44.html">44</a></td><td></td><td>This is the default clinic associated with operations or proceduresperformed by this surgical specialty.  This information is used todocument patient encounters in the VISIT file (#900010).</td></tr><tr><td>10</td><td>inactive?</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>Enter 'YES' to make this specialty inactive and to prevent its selectionand use by users in the Surgery Package.</td></tr><tr><td>11</td><td>code</td><td>0;4</td><td>FREE TEXT</td><td></td><td>D</td><td>This is a code used for selecting local surgical specialties.  Your answermay be a number, number/letter combination, or brief alphabetic code. The specialty code is optional. </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

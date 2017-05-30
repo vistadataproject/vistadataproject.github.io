@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MUMPS OPERATING SYSTEM</h1></div><div id="results"><dl><dt>name</dt><dd>MUMPS OPERATING SYSTEM</dd><dt>number</dt><dd>.7</dd><dt>location</dt><dd>^DD("OS",</dd><dt>description</dt><dd>This file stores operating system-specific code.  Since the code to invokesome operating system utilities that FileMan uses varies among operatingsystems, code to perform these utilities is stored in and executed fromthis file.  During the FileMan INIT process an operating system isselected so that FileMan knows which entry to use from this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Name of a MUMPS operating system that is supported by VA FileMan.</td></tr><tr><td>1</td><td>break logic(+)</td><td>1;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code to enable terminal break, i.e., to allow the user to interruptprocessing with <CTRL-C>.</td></tr><tr><td>2</td><td>global length (max)(+)</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Maximum allowable length of a global.</td></tr><tr><td>3</td><td>routine size (max)(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>Maximum allowable size of a routine.</td></tr><tr><td>4</td><td>closing principal device</td><td>0;5</td><td>SET OF CODES</td><td>1:ALLOWED<br/></td><td></td><td>Is closing a job's principal device allowed?</td></tr><tr><td>5</td><td>new command</td><td>0;6</td><td>SET OF CODES</td><td>1:SUPPORTED<br/></td><td></td><td>Is the NEW command supported?</td></tr><tr><td>7</td><td>individual subscript length</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Maximum length of an individual subscript.</td></tr><tr><td>8</td><td>save symbol table</td><td>8;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code that saves the contents of the local symbol table.</td></tr><tr><td>419</td><td>minimum safe $s</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>The minimum value for $S that will allow routines to process successfully.</td></tr><tr><td>1820</td><td>routine existence test</td><td>18;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code that tests for the existence of a routine.</td></tr><tr><td>2425</td><td>set $x & $y from 'iox' & 'ioy'</td><td>XY;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code to XECUTE to move the position of the cursor to the positionspecified by the variables IOX and IOY.</td></tr><tr><td>2619</td><td>zsave code</td><td>ZS;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code that will save a routine to disk.  The name of the routinemust be in variable X.  The source code of the routine should be storedin ^UTLITY($J,0,%Y).  Each node of the array will become a line of theroutine.</td></tr><tr><td>190416</td><td>write from sdp</td><td>SDP;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code that READs data from SDP and WRITEs it to a device.  The $Ivalue of the SDP device should be in variable DIO and the $I valuefor the output device in IO.  The DLP variable should contain the openparameters of the SDP device.</td></tr><tr><td>190416.1</td><td>find sdp end</td><td>SDPEND;E1,250</td><td>FREE TEXT</td><td></td><td></td><td>MUMPS code that tests for the end of SDP.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

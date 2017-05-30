@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CLINIC STOP LIST</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="810_9.html">810.9</a></dd><dt>name</dt><dd>CLINIC STOP LIST</dd><dt>number</dt><dd>810.9001</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>clinic stop</td><td>0;1</td><td>POINTER</td><td><a href="40_7.html">40.7</a></td><td>B</td><td></td></tr><tr><td>.02</td><td>amis reporting stop code</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the AMIS REPORTING STOP CODE; it is set automatically when thelocation is selected.</td></tr><tr><td>1</td><td>credit stops to exclude</td><td>1;0</td><td>MULTIPLE</td><td><a href="810_90011.html">810.90011</a></td><td></td><td>A Clinic Stop resolves to a list of Hospital Locations. Associated witheach Hospital Location entry in file #44 is a Credit Stop (the 18thpiece of the 0 node). There may be certain Credit Stops that you wantto exclude from the list of locations in the Clinic Stop. This multiplecontains a list of any Credit Stops that should be excluded.</td></tr><tr><td>2</td><td>credit stops to exclude (list)</td><td>2;1</td><td>POINTER</td><td><a href="810_9.html">810.9</a></td><td></td><td>Clinic Stops have lists of Hospital Locations associated with them.Each Hospital Location entry in file #44 has an associated CreditStop (the 18th piece of the 0 node). There may be certain CreditStops that you want to exclude from the list of locations in theClinic Stop. You can define a Location List that contains the listof Credit Stops to exclude and this field points to the exclusionlist.</td></tr><tr><td>3</td><td>excl locs with no credit stop</td><td>3;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>If this field has a value of "YES" then locations that do not have acredit stop will be excluded from the list. The default value is"NO".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

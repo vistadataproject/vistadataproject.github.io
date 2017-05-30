@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS PAID TO IB</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS PAID TO IB</dd><dt>number</dt><dd>161.9</dd><dt>location</dt><dd>^FB(161.9,</dd><dt>description</dt><dd>This file contains temporary information for the automationof Fee Basis Vendor and 5010 Providers to the IB NON/OTHERVA BILLING PROVIDER (#355.93) file.  The automation assists IB clerks in thecreation of bills to third party insurance companies for paid fee claims.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This field contains the patient for the paid Fee claim that may have vendor and/or 5010 provider information automated to IB.</td></tr><tr><td>.02</td><td>program</td><td>0;2</td><td>SET OF CODES</td><td>3:OUTPATIENT<br/>9:INPATIENT<br/></td><td></td><td>This field identifies the Fee program for the paid claim. Vendor and 5010 provider data is pulled from either the FEE BASIS PAYMENT(#162) file for Outpatient, or the FEE BASIS INVOICE(#162.5) file for Inpatient during IB automation.</td></tr><tr><td>.03</td><td>fb internal control number</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This value is retrieved from the PAID message from Central Fee to identifythe payment or invoice. Outpatient claim control numbers are formatted ascomma-delimited strings that point to the specific line item in a claim.Inpatient claim control numbers are pointers to the FEE BASISINVOICE(#162.5) file.</td></tr><tr><td>.04</td><td>process date</td><td>0;4</td><td>DATE-TIME</td><td></td><td>AC</td><td>This field contains the date the MailMan message from Central Fee was processed by the server.</td></tr><tr><td>.05</td><td>li number</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>The Line Item number from the FEE BASIS entry being processed.</td></tr><tr><td>.06</td><td>provider type</td><td>0;6</td><td>SET OF CODES</td><td>V:VENDOR<br/>A:ATTENDING<br/>O:OPERATING<br/>R:RENDERING<br/>S:SERVICING<br/>F:REFERRING<br/>L:LI RENDERING<br/></td><td></td><td>This field identifies the provider type that is associated with this Line Item.</td></tr><tr><td>.07</td><td>ib non/other provider</td><td>0;7</td><td>POINTER</td><td><a href="355_93.html">355.93</a></td><td></td><td>This is the provider of Fee Basis services in the IB file.</td></tr><tr><td>.08</td><td>npi added</td><td>0;8</td><td>SET OF CODES</td><td>0:NO NPI UPDATES ATTEMPTED<br/>1:NPI DATA INVALID<br/>2:NPI MATCHED ACTIVE, NO UPDATES<br/>3:NPI MATCHED INACTIVE, NO UPDATES<br/>4:NPI MATCHED ACTIVE, IB UPDATED<br/>5:NPI NEW, IB RECORD CREATED<br/></td><td></td><td>This field provides information about updates to the NPI(#41.01) field of the record in the IB/NON OTHER VA BILLING PROVIDER (#355.93) file as pointed to by field #.07 in this file.</td></tr><tr><td>.09</td><td>taxonomy added</td><td>0;9</td><td>SET OF CODES</td><td>0:NO TXY UPDATES ATTEMPTED<br/>1:TXY CODE NOT FOUND IN 8932.1<br/>2:MATCHED PRIMARY, NO UPDATES<br/>3:MATCHED NON-PRIMARY, IB TXY UPDATES<br/>4:NEW, IB TXY ENTRY CREATED<br/></td><td></td><td>This field provides information about updates to the TAXONOMY CODE(#42) field of the record in the IB/NON OTHER VA PROVIDER(#355.93) file as pointed to by field #.07 in this file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

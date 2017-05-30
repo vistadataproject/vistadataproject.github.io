@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > *EVENT CAPTURE PROCEDURE</h1></div><div id="results"><dl><dt>name</dt><dd>*EVENT CAPTURE PROCEDURE</dd><dt>number</dt><dd>720</dd><dt>location</dt><dd>^ECP(</dd><dt>description</dt><dd>This file contains the categories and procedures associated withDSS units in the Event Capture software. All entries in this fileare procedures. If flagged using the CATEGORY (Y/N) field (2)these entries will be recognized as categories and procedures. Entries in this file are locally entered and edited. A synonym fieldis provided for local use in identifying these entries within varioushospital departments. **NOTE**This file is being exported with Event Capture Version 2.0 foruse in converting existing data, at the pilot sites, to currentdata formats. This file will be removed in a future release ofthe Event Capture software. ** Per patch EC*2*5, this file has been starred for deletion. **</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>procedure name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the procedure selected.</td></tr><tr><td>1</td><td>national number(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the national number assigned to eachprocedure. If this procedure represents a CPT code, enter the appropriateCPT code.</td></tr><tr><td>2</td><td>category (y/n)</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>Enter "YES" or "1" if this procedure name should be displayed whenaccessing categories. Procedures that do not have "1" enteredfor this field will not appear when "looking up" categories.All categories must have "1" entered to be recognized by thesoftware.</td></tr><tr><td>3</td><td>synonym</td><td>0;4</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains the locally defined name for this categoryor procedure.</td></tr><tr><td>4</td><td>number of procedures</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field tracks the volume of this procedure.</td></tr><tr><td>5</td><td>variable pointer</td><td>V;1</td><td>VARIABLE-POINTER</td><td><a href="81.html">81</a>, <a href="725.html">725</a></td><td></td><td>The variable pointer created from the NATIONAL NUMBERfield (1) will be used in the data conversion process for EventCapture Version 2.0.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

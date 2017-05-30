@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TIU TEXT EVENTS</h1></div><div id="results"><dl><dt>name</dt><dd>TIU TEXT EVENTS</dd><dt>number</dt><dd>8925.71</dd><dt>location</dt><dd>^TIU(8925.71,</dd><dt>description</dt><dd>The TIU TEXT EVENTS file is used to store data to be used in searching for certain text within Progress Notes in order to alert treating specialty areas of monitored concerns when a patient is seen.  Setting up entries in this file will cause alerts to be sent to providers and services to indicate a possible care opportunity.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name to identify this text search string.</td></tr><tr><td>.02</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:INACTIVE<br/>1:ACTIVE<br/></td><td></td><td>Flag to determine if this entry should be searched in TIU documents.</td></tr><tr><td>.03</td><td>case sensitive(+)</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Indicates if searching for this text is case sensitive.</td></tr><tr><td>.04</td><td>include spaces(+)</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>Indicates if spaces should be stripped from text before searchingfor text string.</td></tr><tr><td>1</td><td>text to search</td><td>1;1</td><td>FREE TEXT</td><td></td><td></td><td>Enter the text string to search for in the document.</td></tr><tr><td>2</td><td>alert message</td><td>2;1</td><td>FREE TEXT</td><td></td><td></td><td>Enter the text to be used for the CPRS alert message.</td></tr><tr><td>2.1</td><td>signer alert message</td><td>2;2</td><td>FREE TEXT</td><td></td><td></td><td>Enter the text to be used for the CPRS alert to be sent to the signerof the document that informs them of the notifications that have been sent.</td></tr><tr><td>3</td><td>search string</td><td>3;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the text string to search for.  It must match the entry in theTEXT TO SEARCH field (#1).</td></tr><tr><td>4</td><td>cprs team</td><td>4;0</td><td>MULTIPLE</td><td><a href="8925_714.html">8925.714</a></td><td></td><td>This multiple will contain pointers to the OE/RR LIST (#100.21) file to indicate which Provider Teams to be alerted upon matching the searchstring to a piece of text in the Progress Note.</td></tr><tr><td>5</td><td>visit location</td><td>5;0</td><td>MULTIPLE</td><td><a href="8925_715.html">8925.715</a></td><td></td><td>This multiple stores pointers from the HOSPITAL LOCATION (#44) file to limit which locations are to be included in the Progress Note search.  If a location is entered into this multiple, the search will be limited to those notes that match this location.  If this multiple is left empty, then all locations will be searched.</td></tr><tr><td>5.1</td><td>visit location string</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>If the document's visit location is contained in this string then thisevent will trigger an alert.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ELECTROLYTES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="52_7.html">52.7</a></dd><dt>name</dt><dd>ELECTROLYTES</dd><dt>number</dt><dd>52.702</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>electrolytes</td><td>0;1</td><td>POINTER</td><td><a href="50_4.html">50.4</a></td><td></td><td>  This field should contain the electrolytes that make up this solution.If the solution drug is AMINOSYN 8.5% W/ELECT, it would be made up of several electrolytes which might be SODIUM, POTASSIUM, CHLORIDE,MAGNESIUM, PHOSPHATE and ACETATE.  This field is used during hyperallabel generation ONLY.  The IV PACKAGE will break down each solution into individual electrolytes and add together electrolytes that  are the same.  Thereby giving total SODIUM, POTASSIUM, CHLORIDE etc. in the hyperal order.  If no electrolytes are entered here the IV PACKAGE will print the solution without breaking it down into electrolytes.</td></tr><tr><td>1</td><td>concentration(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>  This field is the ratio of MLs to electrolyte unit.  This field makesit possible for the IV PACKAGE to calculate the true strength for eachelectrolyte.For example:   If the solution you are defining is AMINOSYN 8.5% W/ELECT with thefollowing electrolytes.                 ELECTROLYTE                    CONCENTRATION                 ===========                    =============                 SODIUM                         .07  MEQ/ML                 CHLORIDE                       .098 MEQ/ML                 POTASSIUM                      .066 MEQ/ML                 MAGNESIUM                      .01  MEQ/ML                 ACETATE                        .142 MEQ/ML                 PHOSPHATE                      .03  MM/ML   If the hyperal order had AMINOSYN 8.5% W/ELECT 500 ML, the 'true'strength of each electrolyte would be:                 SODIUM    : 35 MEQ (500 ML*.07 MEQ/ML)                 CHLORIDE  : 49 MEQ (500 ML*.098 MEQ/ML)                 POTASSIUM : 33 MEQ (500 ML*.066 MEQ/ML)                 MAGNESIUM :  5 MEQ (500 ML*.01 MEQ/ML)                 ACETATE   : 71 MEQ (500 ML*.142 MEQ/ML)                 PHOSPHATE : 15 MM  (500 ML*.03 MM/ML)</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

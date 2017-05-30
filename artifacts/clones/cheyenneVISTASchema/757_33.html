@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAPPINGS</h1></div><div id="results"><dl><dt>name</dt><dd>MAPPINGS</dd><dt>number</dt><dd>757.33</dd><dt>location</dt><dd>^LEX(757.33,</dd><dt>description</dt><dd>This file contains the mappings from one coding system to another coding system.  Selection of a term or a code  fromone coding system can be translated to another coding system.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>mapping id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>The purpose of this field is to hold the mapping ID. The mapping ID may be a VUID or a Lexicon ID. If it is a VUID it is assigned for each individual map by the VETS system. Each mapping ID must indentify uniquely the mapping of one source code to one, and only one, target code.</td></tr><tr><td>.02</td><td>mapping definition</td><td>0;4</td><td>POINTER</td><td><a href="757_32.html">757.32</a></td><td>AMAPDEF</td><td>This is the Mapping Definition for a specific mapping recordwhich defines source coding system is being mapped to which target coding system.  This Mapping Definition is stored inthe Mapping Definition file #757.32.</td></tr><tr><td>1</td><td>source code</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is a code from the Source Coding System of the MappingDefinition (file 757.32).  It is the basis of the mapping (source) and will be mapped to a code from another coding system.</td></tr><tr><td>2</td><td>target code</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is a code from the Target Coding System of the MappingDefinition (file 757.32).  It is the result of the mapping (target) based on the source code from another codingsystem.</td></tr><tr><td>3</td><td>status history</td><td>2;0</td><td>MULTIPLE</td><td><a href="757_333.html">757.333</a></td><td></td><td>This multiple field contains a series of records indicatingthe mapping status (active or inactive) over time.</td></tr><tr><td>4</td><td>mapping order(+)</td><td>3;1</td><td>NUMERIC</td><td></td><td></td><td>This field contains an integer that determines the order of preferencefor when a single source code maps to multiple target codes. The orderwill be determined by domain stewards responsible for the maintenanceof the mapping in question. If there is only one target for the sourcecode the value of this field will default to 1.</td></tr><tr><td>5</td><td>match</td><td>0;5</td><td>SET OF CODES</td><td>1:FULL<br/>0:PARTIAL<br/></td><td></td><td>If the target code is a true match for the source codethen the value will be set to 1 indicating a fully compatible match.  If the target code is a partial matchfor the source code then the value will be set to 0 indicating a partial match and that human review is necessary to evaluate the mapping.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GE PACS QUERY/RETRIEVE</h1></div><div id="results"><dl><dt>name</dt><dd>GE PACS QUERY/RETRIEVE</dd><dt>number</dt><dd>2006.573</dd><dt>location</dt><dd>^MAGDGEQR(2006.573,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ The entries in this table describe the various requests to obtaininformation from a PACS from General Electric.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>done(+)</td><td>0;1</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td>B</td><td>The value of this field is a code that indicateswhether or not the data in the current entry iscompletely entered. When the value of this field is not present, or whenit is present and equal to 0, the record is incomplete.When the value of this field is equal to 1, therecord is complete.</td></tr><tr><td>2</td><td>study date</td><td>A_STUDYDAT;1</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is the date on whichthe study that is referenced in this entry wasperformed. This date is encoded as yyyy.mm.dd</td></tr><tr><td>3</td><td>patient name</td><td>A_PNAME;1</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is equal to the name of thepatient for whom the study in question is performed. This value is copied from ^DPT so that the VistADICOM Gateway will need to be able to access thisvalue whether or not the network link with the VistAsystem (DDP) is available.</td></tr><tr><td>4</td><td>ssn</td><td>A_SSN;1</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is a code that identifiesa patient. This code is equal to the patient'sSocial Security Number. This value is copied from ^DPT so that the VistADICOM Gateway will need to be able to access thisvalue whether or not the network link with the VistAsystem (DDP) is available.</td></tr><tr><td>5</td><td>case number</td><td>A_CASENUMB;1</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is the (short) case numberfor the study that is referenced in this entry. A long case number consists of two groups of digitsseparated by a dash. The first group is 6 digits,and is derived from the date. The second group isan integer number that uniquely identifies the studyfor that date. For this field, just that second number is entered.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

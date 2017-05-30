@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ORDER ACKNOWLEDGEMENT</h1></div><div id="results"><dl><dt>name</dt><dd>ORDER ACKNOWLEDGEMENT</dd><dt>number</dt><dd>102.4</dd><dt>location</dt><dd>^ORA(102.4,</dd><dt>description</dt><dd>This file contains all acknowledgments for order results captured viathe Care Management dashboards.  A stub is created here for the orderingprovider when new results become available for an order that s/he placed;the entry is then updated when the order is actually acknowledged viathe CM application.  An order's results may also be acknowledged byother users as well, such as the nursing staff caring for the patient.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>order(+)</td><td>0;1</td><td>POINTER</td><td><a href="100.html">100</a></td><td>B</td><td>This field contains the number of an order with results from the Ordersfile #100.</td></tr><tr><td>2</td><td>provider</td><td>0;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field contains the provider from the New Person file #200 who placedthis order; this order will be presented to this user in the Care Management dashboard to view and acknowledge the results.</td></tr><tr><td>3</td><td>acknowledged</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field is the date/time that the results of this order were viewedand acknowledged in the Care Management dashboard.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

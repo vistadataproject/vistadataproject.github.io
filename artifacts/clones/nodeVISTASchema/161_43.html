@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS CONTRACT</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS CONTRACT</dd><dt>number</dt><dd>161.43</dd><dt>location</dt><dd>^FBAA(161.43,</dd><dt>description</dt><dd>This file contains a list of contracts for the local site.  New outpatientand civil hospital authorizations and payments can be linked to an activecontract.  The contract number will be included with associated paymentsthat are transmitted to Central Fee.  Note that contracts for communitynursing home rates are stored in the FEE BASIS CNH CONTRACT file insteadof this file.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>contract number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the contract number of the contract.  The contract number cannot be changed if any authorization or payments point to the contract.</td></tr><tr><td>2</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>A:ACTIVE<br/>I:INACTIVE<br/></td><td></td><td>Only active contracts can be selected when authorizations or payments are entered.</td></tr><tr><td>3</td><td>applicable vendors</td><td>3;0</td><td>MULTIPLE</td><td><a href="161_433.html">161.433</a></td><td></td><td>Applicable vendors for the contract.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

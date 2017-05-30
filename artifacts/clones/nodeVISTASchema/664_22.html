@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MATERIALS USED</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="664_2.html">664.2</a></dd><dt>name</dt><dd>MATERIALS USED</dd><dt>number</dt><dd>664.22</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>materials used</td><td>0;1</td><td>POINTER</td><td><a href="661.html">661</a></td><td>B</td><td>Component or stock issue item(s) used to complete the item(s)/service(s)requested on the Lab Work Order.</td></tr><tr><td>1</td><td>qty</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This is the number of units ordered for this item.  Keep in mind thatthis will be governed by the unit of issue (e.g., pair, each).</td></tr><tr><td>2</td><td>materials cost</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>The charge associated with the item(s)/service(s) used on the Lab WorkOrder.</td></tr><tr><td>3</td><td>va or commercial source (v/c)</td><td>0;4</td><td>SET OF CODES</td><td>V:VA<br/>C:COMMERCIAL<br/></td><td></td><td>This is the source for the items ordered on VAF 10-2421 (V for VA or C for Commercial).</td></tr><tr><td>4</td><td>inventory point</td><td>0;5</td><td>POINTER</td><td><a href="445.html">445</a></td><td>AC</td><td>This is the pointer to the GENERIC INVENTORY file (#445) that tellswhich inventory point is charged for the item(s).</td></tr><tr><td>5</td><td>vendor(+)</td><td>0;6</td><td>POINTER</td><td><a href="440.html">440</a></td><td></td><td>This is the name of the Vendor for the items(s) ordered on the request.</td></tr><tr><td>6</td><td>unit of issue</td><td>0;7</td><td>POINTER</td><td><a href="420_5.html">420.5</a></td><td></td><td>This the is unit by which item(s)/service(s) are issued (e.g., each, pair,box, case, etc.).</td></tr><tr><td>7</td><td>serial nbr</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This is number assigned by the manufacturer of the item.</td></tr><tr><td>9</td><td>remarks</td><td>3;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>These are the remarks entered by the Lab Technician concerning the materials used on the Lab Work Order.</td></tr><tr><td>10</td><td>reference</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This is the VAF 10-2421 C Number from the VAF 4-1358 Daily Record entry.</td></tr><tr><td>11</td><td>purchase form</td><td>0;11</td><td>POINTER</td><td><a href="664.html">664</a></td><td>AC</td><td>Points to the Prosthetics 1358 file if the materials had to be purchasedon a VAF 10-2421 and could not be taken from stock.</td></tr><tr><td>12</td><td>appliance/repair</td><td>0;12</td><td>POINTER</td><td><a href="660.html">660</a></td><td></td><td>Pointer to associated RECORD OF PROS APPLIANCE/REPAIR file (#660).</td></tr><tr><td>13</td><td>purchase status</td><td>0;9</td><td>SET OF CODES</td><td>PD:PENDING DELIVERY<br/>D:DELIVERED<br/></td><td></td><td>This field indicates if a purchase on a VAF 10-2421 is PendingDelivery (PD) or Delivered (D).</td></tr><tr><td>14</td><td>2529-3</td><td>0;13</td><td>POINTER</td><td><a href="664_1.html">664.1</a></td><td></td><td>Contains VAF 10-2529-3 request used to obtain materials for current WorkOrder.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

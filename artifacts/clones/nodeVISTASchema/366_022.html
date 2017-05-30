@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CONTACT MEANS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="366_02.html">366.02</a></dd><dt>name</dt><dd>CONTACT MEANS</dd><dt>number</dt><dd>366.022</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>pkey</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The contact means' primary key (PKey).</td></tr><tr><td>.02</td><td>type</td><td>0;2</td><td>SET OF CODES</td><td>A:Alternate contact means<br/>P:Primary contact means<br/></td><td></td><td>The contact means' type.</td></tr><tr><td>.03</td><td>telecommunication use</td><td>0;3</td><td>SET OF CODES</td><td>ASN:Answering Service Number<br/>BPN:Beeper Number<br/>EMR:Emergency Number<br/>NET:Network (email) Address<br/>ORN:Other Residence Number<br/>PRN:Primary Residence Number<br/>VHN:Vacation Home Number<br/>WPN:Work Number<br/></td><td></td><td>The contact means' telecommunication use code from HL7 Table 0201.</td></tr><tr><td>.04</td><td>telecommunication equipment</td><td>0;4</td><td>SET OF CODES</td><td>BP:Beeper<br/>CP:Cellular Phone<br/>FX:Fax<br/>Internet:Internet Address<br/>MD:Modem<br/>PH:Telephone<br/>X.400:X.400 email address<br/></td><td></td><td>The contact means' telecommunication equipment type code from HL7 Table0202.</td></tr><tr><td>.05</td><td>email address</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>The contact means' email address.Required if telecommunication use code = NET (Network (email) Address).</td></tr><tr><td>.06</td><td>telephone number</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>The contact means' telephone number.Required if telecommunication use code is not = NET (Network (email)Address).</td></tr><tr><td>.07</td><td>comment</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>The contact means' comment (e.g. Do not call on Friday.).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

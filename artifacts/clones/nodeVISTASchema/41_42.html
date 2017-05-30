@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PRE-REGISTRATION CALL LIST</h1></div><div id="results"><dl><dt>name</dt><dd>PRE-REGISTRATION CALL LIST</dd><dt>number</dt><dd>41.42</dd><dt>location</dt><dd>^DGS(41.42,</dd><dt>description</dt><dd>This file contains a list of patients to be called as part of the Pre-Registration process. *** NOTE ***This file SHOULD NOT be edited directly.  Field values need to beentered by the background job, or the Add to Call List Option.Editing this file directly can result in erroneous data being displayedin the Call List.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Patient to call for pre-registration.  Pointer to the PATIENT FILE, #2.</td></tr><tr><td>.1</td><td>division</td><td>0;2</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td>C</td><td>This is the Division the APPT CLINIC, Field #5, is associated with.</td></tr><tr><td>1</td><td>ssn</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is the first initial of the patients last name and the lastfour of the patients SSN.  This field will normally be filled in by abackground job.  Entry appears in a List Manager screen.</td></tr><tr><td>2</td><td>phone(+)</td><td>1;3</td><td>FREE TEXT</td><td></td><td></td><td>Telephone number at which patient will be called for the pre-registrationprocess. If the patients has a residence phone number, the residencenumber is loaded.  If there is no residence number on file, then thepatients Emergency Phone number is loaded.  If there is no emergency phonenumber, then tbe string 'NO PHONE' is entered.</td></tr><tr><td>3</td><td>last updated</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>Date/time field showing the date and time the last attempt was made to call this patient.  This field is loaded from the PRE_REGISTRATIONCALL LOG File, #41.43.</td></tr><tr><td>4</td><td>called</td><td>0;6</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>Indicates whether the patient was called or not.  When 'Y'es, thepatient has been called and his information updtaed.  If 'N'o, theneither the patient has not been reached, or he has been called, buthis information was not updated.</td></tr><tr><td>5</td><td>appt clinic</td><td>0;7</td><td>POINTER</td><td><a href="44.html">44</a></td><td></td><td>Pointer to the HOSPITAL LOCATION File, #44.  This is the clinicthe patients appointment is in.</td></tr><tr><td>6</td><td>appt date/time</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>The date and time of the patients appointment for the clinic specifiedin field #5.</td></tr><tr><td>7</td><td>medical service</td><td>1;1</td><td>SET OF CODES</td><td>M:MEDICINE<br/>S:SURGERY<br/>P:PSYCHIATRY<br/>R:REHAB MEDICINE<br/>N:NEUROLOGY<br/>0:NONE<br/></td><td></td><td>This field mirrors the set of codes in the SERVICE Field, #9, of theHOSPITAL LOCATION File, #44.  These are: M:MEDICINE S:SURGERY  P:PSYCHIATRY R:REHAB MEDICINE N:NEUROLOGY 0:NONE</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

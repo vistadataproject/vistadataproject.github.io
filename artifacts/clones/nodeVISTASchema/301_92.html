@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IVM DEMOGRAPHIC UPLOAD FIELDS</h1></div><div id="results"><dl><dt>name</dt><dd>IVM DEMOGRAPHIC UPLOAD FIELDS</dd><dt>number</dt><dd>301.92</dd><dt>location</dt><dd>^IVM(301.92,</dd><dt>description</dt><dd> This file contains information pertaining to the demographic fields sentin HL7 segments from the IVM Center to the VAMCs. This table contains parameters which are used during the receiptand upload of demographics data from the IVM Center.  This fileshould not be altered in any way. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>dhcp field name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td> This field contains the DHCP field name.</td></tr><tr><td>.02</td><td>hl7 location(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td> This field contains HL7 segment name concatenated with seq number of HL7segment and if applicable concatenated with piece of field(ex. cityof ADDRESS would be PID113).</td></tr><tr><td>.03</td><td>uploadable demographic field(+)</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>A value of one indicates that the demographic field received from the IVMCenter may be uploaded.  A value of 0 indicates that the demographic fieldreceived from the IVM Center may not be uploaded and may be displayed asinformation only.</td></tr><tr><td>.04</td><td>dhcp file(+)</td><td>0;4</td><td>POINTER</td><td><a href="1.html">1</a></td><td></td><td>This field contains a pointer to the FILE (#1) file.  This field will be used to indentify the global location of the IVM demographic upload field.</td></tr><tr><td>.05</td><td>dhcp field number</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the field number location of the DHCP field.</td></tr><tr><td>.06</td><td>transform ivm data</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine whether the demographic elementis stored in an internal format which would need to be transformedbefore being displayed to the user.</td></tr><tr><td>.07</td><td>transform dhcp data</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is used to determine if demographic data extracted from DHCPneeds to undergo an additional output transform.</td></tr><tr><td>.08</td><td>address field?</td><td>0;8</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field is used to flag whether the field is part of a fulladdress.</td></tr><tr><td>.09</td><td>inactive flag</td><td>0;9</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field will be set when the field is no longer part ofthe IVM Demographic Upload.</td></tr><tr><td>10</td><td>dhcp location logic(+)</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td></td></tr><tr><td>20</td><td>dhcp output logic</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This executable logic is used to extract DHCP data in a display-readyformat.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

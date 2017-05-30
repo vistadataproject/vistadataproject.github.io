@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SURVEY RESPONSE DATA</h1></div><div id="results"><dl><dt>name</dt><dd>SURVEY RESPONSE DATA</dd><dt>number</dt><dd>748.3</dd><dt>location</dt><dd>^QA(748.3,</dd><dt>description</dt><dd>Holds the responses given to survey questions by the survey participants.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>survey(+)</td><td>0;1</td><td>POINTER</td><td><a href="748.html">748</a></td><td>B</td><td>This field is a pointer to the SURVEY file, 748.  It links the answers inthis file to a specific survey.</td></tr><tr><td>1</td><td>question number</td><td>1;0</td><td>MULTIPLE</td><td><a href="748_31.html">748.31</a></td><td></td><td>This field is the internal file number (IFN) of a specific question infile 748.25.  </td></tr><tr><td>2</td><td>participant</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the hashed version of the participant DUZ.  It is hashed via^XUSHSHP and all user-viewable outputs of this field are converted to<Hidden> for confidentiality. This field is used to determine if a user has already participated in asurvey.  No pointer to file 200 is used since the DUZ is hashed.</td></tr><tr><td>3</td><td>survey completion status</td><td>0;3</td><td>SET OF CODES</td><td>c:COMPLETED<br/>s:SUSPENDED<br/>i:IN PROGRESS<br/></td><td></td><td>This is the status of a survey at any given moment.  It may be:        c = completed  - the participant is finished totally        s = suspended  - the participant has stopped taking                        the survey for a while and will resume                        at a later time        i = in progress - a person is actually participating                         at the moment</td></tr><tr><td>4</td><td>last question answered</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field is a memo field used as to inform a participant which questionwas the last one he answered.</td></tr><tr><td>5</td><td>last question number</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field is used by the programming to know with which question toresume after a survey has been suspended by a participant.</td></tr><tr><td>6</td><td>demographic question</td><td>2;0</td><td>MULTIPLE</td><td><a href="748_36.html">748.36</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

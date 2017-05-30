@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GENERIC CODE SHEET TRANSMISSION RECORD</h1></div><div id="results"><dl><dt>name</dt><dd>GENERIC CODE SHEET TRANSMISSION RECORD</dd><dt>number</dt><dd>2101.3</dd><dt>location</dt><dd>^GECS(2101.3,</dd><dt>description</dt><dd>This file stores data that manages the creation/transmission ofbatch numbers (batches of code sheets).</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>batch number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The batch number of the batch created.  Example: 460-VOL-89-75 wouldindicate a batch with station number 460, code sheet system identifierVOL (3 character identifier for batch type), fiscal year 89, and counternumber 75.  The counter is generated from file 2101.5 GENERIC CODESHEET COUNTER.</td></tr><tr><td>.1</td><td>system identifier</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is used to store the 3 character batch type (from thebatch type file 2101.1).</td></tr><tr><td>.2</td><td>batch type</td><td>0;6</td><td>POINTER</td><td><a href="2101_1.html">2101.1</a></td><td></td><td>This field is used to store the batch type from the batch type file2101.1.</td></tr><tr><td>.5</td><td>type</td><td>0;3</td><td>SET OF CODES</td><td>B:BATCH<br/>T:TRANSMISSION<br/>R:RECEIVING REPORT<br/></td><td></td><td>This field is used to store the status of the batch.  Status's canbe batch (code sheets have been batched but not transmitted) ortransmitted.  The receiving report status is currently not used.</td></tr><tr><td>.7</td><td>date created</td><td>0;10</td><td>DATE-TIME</td><td></td><td></td><td>This field is used to store the date the batch was assembled.  Thisfield is used for archiving old transmission records.</td></tr><tr><td>.8</td><td>created by</td><td>0;11</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field is used to store the user which batched the code sheets.  Thisfield is used for informational purposes only.</td></tr><tr><td>4</td><td>date given to mailman</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field is used to store the date the batch was assembled in amail message for transmission.</td></tr><tr><td>4.5</td><td>message number</td><td>2;0</td><td>MULTIPLE</td><td><a href="2101_32.html">2101.32</a></td><td></td><td>This field is used to store the mail messages which were used to transmitthe batch.</td></tr><tr><td>5</td><td>release by</td><td>0;5</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field is used to store the user which transmitted the batch.  Thisfield is used for informational purposes only.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

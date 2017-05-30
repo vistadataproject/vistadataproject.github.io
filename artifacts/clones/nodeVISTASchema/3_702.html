@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MESSAGE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="3_701.html">3.701</a></dd><dt>name</dt><dd>MESSAGE</dd><dt>number</dt><dd>3.702</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>message</td><td>0;1</td><td>POINTER</td><td><a href="3_9.html">3.9</a></td><td></td><td>Messages exist in the MESSAGE file and are pointed to by multiple RECIPIENTS.File.</td></tr><tr><td>2</td><td>mailbox index(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td>C</td><td>This field is used to help the user choose a message.  It is assignedwhen a message is delivered into a MailBox.</td></tr><tr><td>3</td><td>new flag</td><td>0;3</td><td>SET OF CODES</td><td>0:NOT NEW<br/>1:NEW<br/></td><td></td><td>This field indicates to the user and to MailMan whether or not a message isnew. </td></tr><tr><td>4</td><td>last read date/time</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the last date/time the message was read, printed.</td></tr><tr><td>5</td><td>automatic delete date</td><td>0;5</td><td>DATE-TIME</td><td></td><td>AC</td><td>This is the date at which this message will be 'vaporized',deleted from this mail basket for this user.the message will be taken out of the users mail basket at the firsttime that the IN-BASKET-PURGE runs.</td></tr><tr><td>6</td><td>network priority transmission?</td><td>0;6</td><td>SET OF CODES</td><td>1:HIGH PRIORITY<br/>0:REGULAR PRIORITY<br/>2:LOW PRIORITY<br/></td><td></td><td>This field is used to flag messages that need to be transmitted before orafter all other messages in a queue.Messages in the queue which are flagged as HIGH priority are transmittedbefore all other messages.Messages in the queue which are flagged as REGULAR priority (default) aretransmitted next.Messages in the queue which are flagged as LOW priority are transmittedafter all other messages.Messages with the same priority are transmitted in IEN order, which isnot necessarily the order in which they appear in the transmit queue.Only the POSTMASTER (or surrogate) may change the priority of a messagein a transmit queue.  If, during a transmission, MailMan has problemswith a particular message, MailMan may flag that message as LOW priority,so that other messages in the queue will transmit, before the problemmessage is attempted again.Changes to message priorities can be made even while a queue is beingtransmitted.</td></tr><tr><td>7</td><td>delete date set by mailman?</td><td>0;7</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>When the IN BASKET PURGE sets a delete date for a message, it sets this fieldto 1.If a user sets a delete date for a message, this field is set to 0.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

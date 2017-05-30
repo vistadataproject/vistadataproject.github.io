@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CONSULTS PARAMETERS FILE</h1></div><div id="results"><dl><dt>name</dt><dd>CONSULTS PARAMETERS FILE</dd><dt>number</dt><dd>123.9</dd><dt>location</dt><dd>^GMR(123.9,</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>site name(+)</td><td>0;1</td><td>POINTER</td><td><a href="4.html">4</a></td><td>B</td><td>This is the name of the Hospital site. It should be the same as that foundin the INSTITUTION File.</td></tr><tr><td>1</td><td>multi-division/multi-site</td><td>0;2</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This is a parameter for determining if a site has multiple divisions,multiple  sites, or neither. If there are multiple divisions orsites, Consults will prompt for the site or division thatthe medical service is in.</td></tr><tr><td>2</td><td>division/site medical service</td><td>123;0</td><td>MULTIPLE</td><td><a href="123_92.html">123.92</a></td><td></td><td>In a hospital that supports multiple divisions/sites, this field will allowall of the hospitals divisions/sites medical services to be entered. It isrecommended that the divisions/sites medical services be prefixed with anidentifier for the division/site, i.e., 'WACO MEDICINE'. If the hospitalhas a '1' in the Multi-Division/Site parameter field, then when a siteenters the medicine package interface, the Division/Site Medical serviceto use will be asked for, i.e., 'ENTER DIVISION/SITE MEDICAL SERVICE: WACO MEDICINE' is the prompt/response.</td></tr><tr><td>3</td><td>use cprs 513 print templates?</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>If a site used OE/RR 2.5 print templates to print Form 513 in Consult/RequestTracking V 2.5 wants to continue using these templates in version 3.0,  entering a 'Y' here will cause Form 513 to use the fields defined inCPRS print templates. If a site wishes to use the generic Form 513print routine provided with Consult/Request Tracking V 3.0,enter a 'N' in this field.</td></tr><tr><td>4</td><td>ask for significant findings?</td><td>0;4</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field sets a parameter that is checked when TIU results are enteredfor a consult request. If this parameter is set to 1 ('YES') then theperson entering the result is asked if the result is a significantfinding. If this parameter is set to 0 ('NO'), then the entering clinicianwill see no prompt asking whether this is a significant finding.</td></tr><tr><td>99</td><td>gmrcr protocol</td><td>99;0</td><td>MULTIPLE</td><td><a href="123_99.html">123.99</a></td><td></td><td></td></tr><tr><td>999</td><td>pre-v3 action iens from 123.1</td><td>OLD;0</td><td>MULTIPLE</td><td><a href="123_9999.html">123.9999</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

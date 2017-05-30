@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > AOU INVENTORY GROUP</h1></div><div id="results"><dl><dt>name</dt><dd>AOU INVENTORY GROUP</dd><dt>number</dt><dd>58.2</dd><dt>location</dt><dd>^PSI(58.2,</dd><dt>description</dt><dd>Entries in this file define standard inventories by defining the areasof use and type of inventory items inventoried.  This saves the userfrom having to re-define the inventory boundaries every time a particularinventory is scheduled.  Instead, the user can name inventory groups andthe computer then knows what will be inventoried by accessing this file. This file is designed to be used by both the Automatic Replenishment/Ward Stock module and the Controlled Substance module.  Areas of useintended for AR/WS are defined in field #1 - AREA OF USE (AOU).  Areas ofuse intended for CS are defined in field #3 - NARCOTIC AREA OF USE (NAOU).</dd><dt>applicationGroups</dt><dd>PSGW;PSD</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This group name represents the Areas of Use which are inventoriedtogether as a "batch" or "cluster".  This grouping establishesthe elements of the inventory so that they do not have to beredefined every time the inventory is scheduled.Inventory groups may be established by (1) location, (2) time,(3) category or "type" of item to be inventoried, or any combinationof these three.</td></tr><tr><td>1</td><td>area of use (aou)</td><td>1;0</td><td>MULTIPLE</td><td><a href="58_21.html">58.21</a></td><td></td><td>Enter name of AOU that is to be inventoried when specifying this inventorygroup at the time of creating an inventory date.  This is a way to 'group'commonly inventoried AOUs under an easy to remember inventory group name.</td></tr><tr><td>2</td><td>group description</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This text describes the inventory group and its use, and perhapsthe times when normally processed.  This is purely for documentationof your site specific information.</td></tr><tr><td>3</td><td>narcotic area of use (naou)</td><td>3;0</td><td>MULTIPLE</td><td><a href="58_29.html">58.29</a></td><td></td><td>Enter name of NAOU that is to be inventoried when specifying thisinventory group at the time of creating an inventory date.  This isa way to "group" commonly inventoried NAOUs under an easy to rememberinventory group name.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

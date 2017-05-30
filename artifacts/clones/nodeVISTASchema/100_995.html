@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PACKAGE PARAMETERS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="100_99.html">100.99</a></dd><dt>name</dt><dd>PACKAGE PARAMETERS</dd><dt>number</dt><dd>100.995</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>package parameters</td><td>0;1</td><td>POINTER</td><td><a href="9_4.html">9.4</a></td><td></td><td>This is the package for which the parameters apply.</td></tr><tr><td>1</td><td>*on</td><td>0;3</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field is no longer in use.   It has been moved to the PACKAGESITE PARAMETERS multiple of this file.</td></tr><tr><td>1.1</td><td>display group default</td><td>0;4</td><td>POINTER</td><td><a href="100_98.html">100.98</a></td><td></td><td>This field is used as a default display group for orders created bythis package.  If the variable ORTO is not defined correctly whencreating the order, this default will be used.  This is ultimately usedin reporting for grouping related orders via relationships found in the DISPLAY GROUP file.</td></tr><tr><td>1.2</td><td>export namespace</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is used to define a namespace for exporting protocols fromthe PROTOCOL file (101).  Any protocol name that begins with thenamespace entered in this field can be exported by running the routineORVOM.  The initialization routines created by ORVOM can then be runat the time of package initialization to set up these protocols.</td></tr><tr><td>2</td><td>transaction code</td><td>2;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>If transaction based, this is the code executed for the package when theuser accepts the new orders.</td></tr><tr><td>3</td><td>setup action</td><td>3;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the MUMPS code that is executed by OE/RR upon the first occurrenceof a package's protocol after selecting a patient name for ordering.</td></tr><tr><td>4</td><td>clean-up action</td><td>4;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the MUMPS code that is executed by OE/RR after a patient's ordershave been processed.Only the CLEAN-UP ACTION for packages selected during a patient'sordering session are executed.</td></tr><tr><td>5</td><td>protocol set</td><td>5;0</td><td>MULTIPLE</td><td><a href="100_9955.html">100.9955</a></td><td></td><td>This set of fields is used by a clinical coordinator utility to defineprotocols in the PROTOCOL file for specific procedures that are orderablefor ancillary services.</td></tr><tr><td>10</td><td>protocol to export</td><td>1;0</td><td>MULTIPLE</td><td><a href="100_9951.html">100.9951</a></td><td></td><td>Protocols entered in this multiple will be exported with this package.</td></tr><tr><td>15</td><td>patient select action</td><td>15;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is package specific code that is to be executed whenever the patientis selected for any action within order entry.  Be very careful what youput here!  It could have a significant impact on the responsiveness of theSelect Patient prompt. The following variables can be expected when this field is executed.These variables must not be changed:        ORVP - Variable pointer reference of patient </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ACTIVITY LOG</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="55_01.html">55.01</a></dd><dt>name</dt><dd>ACTIVITY LOG</dd><dt>number</dt><dd>55.04</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>activity log</td><td>0;1</td><td>NUMERIC</td><td></td><td></td><td>  Log in IV activity.</td></tr><tr><td>.02</td><td>type of activity(+)</td><td>0;2</td><td>SET OF CODES</td><td>H:HOLD<br/>D:DISCONTINUED<br/>U:UNHOLD<br/>E:EDIT<br/>R:RENEW<br/>I:REINSTATE<br/>O:ON CALL<br/>C:OFF CALL<br/>V:VERIFY<br/>F:COMPLETE<br/>AI:AUTO REINSTATE<br/>PNRD:PENDING/NON-VERIFIED RENEWAL DISCONTINUED<br/>G:FLAGGED<br/>UG:UNFLAGGED<br/></td><td></td><td>  Captures type of activity. Enter one of following set of codes:H for hold, D for Discontinue, U for Unhold, E for Edit, R for Renew, I for Reinstate, AI for auto reinstate, O for On Call, C for Off call, V for Verify, F for Complete, PNRD for Pending/Non-Verified RenewalDiscontinued, G for Flagged, or UG for Unflagged.</td></tr><tr><td>.03</td><td>entry code</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>  This is the free text name from the user file of the person whoperformed the activity on this order.</td></tr><tr><td>.04</td><td>reason for activity</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>  Reason for activity. This may be a message field.</td></tr><tr><td>.05</td><td>activity date</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>  This is the date in which this action was taken.</td></tr><tr><td>.06</td><td>user</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who effected the activity.</td></tr><tr><td>1</td><td>field changed</td><td>1;0</td><td>MULTIPLE</td><td><a href="55_15.html">55.15</a></td><td></td><td> This is used to record the actual changes made to fields in  the IV order.Information stored includes the field name, it's old value, and it's new value.</td></tr><tr><td>2</td><td>other print info (old value)</td><td>2;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This contains the previous data that was in the OTHER PRINT INFO (LONG) (#154) multiple in the IV (#100) multiple in the PHARMACY PATIENT (#55) file, prior to an edit. The data is captured automatically and is not editable.</td></tr><tr><td>3</td><td>other print info (new value)</td><td>3;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This contains the new data in the OTHER PRINT INFO (LONG) (#154) multiple in the IV (#100) multiple in the PHARMACY PATIENT (#55) file, after an edit. The data is captured automatically and is not editable.  </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

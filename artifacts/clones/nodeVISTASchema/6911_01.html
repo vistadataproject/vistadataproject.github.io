@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RESPONSIBLE SHOP</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="6911.html">6911</a></dd><dt>name</dt><dd>RESPONSIBLE SHOP</dd><dt>number</dt><dd>6911.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>responsible shop</td><td>0;1</td><td>POINTER</td><td><a href="6922.html">6922</a></td><td>B</td><td>Engineering shop(s) with PM responsibility.</td></tr><tr><td>1</td><td>technician</td><td>0;2</td><td>POINTER</td><td><a href="6929.html">6929</a></td><td></td><td>The Engineering Service employee who normally does the PM work on thispiece of equipment for this shop.</td></tr><tr><td>2</td><td>starting month</td><td>1;1</td><td>SET OF CODES</td><td>1:JAN<br/>2:FEB<br/>3:MAR<br/>4:APR<br/>5:MAY<br/>6:JUN<br/>7:JUL<br/>8:AUG<br/>9:SEP<br/>10:OCT<br/>11:NOV<br/>12:DEC<br/></td><td></td><td> STARTING MONTH is used by the PM module as a criterion in determiningwhen a PM is due. Let's consider the following example: an item subjectto MONTHLY, QUARTERLY, and ANNUAL PM inspections. If STARTING MONTH wereset to FEB; an ANNUAL inspection would be scheduled in FEB; QUARTERLYinspections in MAY, AUG, and NOV; and MONTHLY inspections in MAR, APR,JUN, JUL, SEP, OCT, DEC, and JAN. If STARTING MONTH is left blank, JAN will be assumed.</td></tr><tr><td>2.6</td><td>skip months</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td> A range of months (inclusive) during which PMI's are to be suspended. Forexample, an entry of 'NOV-MAR' for an air-conditioner would suppress thescheduling of any PMI's in NOV, DEC, JAN, FEB, and MAR. Some care needs to be taken when using this field. If you want an annualinspection, for instance, be sure that the STARTING MONTH is not within therange specified by the SKIP MONTHS; otherwise the ANNUAL PMI will never bescheduled. Entries must take the form 'MMM-NNN', where MMM is a three characterabbreviation of the first month for which PMI's should be suspended and NNNis a three character abbreviation of the last month for which PMI's shouldbe suspended. Valid abbreviations are: JAN, FEB, MAR, APR, MAY, JUN, JUL,AUG, SEP, OCT, NOV, and DEC.</td></tr><tr><td>2.7</td><td>criticality</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>An index of the importance of performing PMI's on this device. Enter aninteger between 1 and some upper limit not greater than 99 (most sites use10 or 20). The closer a value is to the upper limit, the more critical thePreventive Maintenance Inspections are. A value of 1 indicates that PMI'sare desireable but far from essential (least critical). When PM worklists are generated, the system will ask if all devicesshould be included or just those whose CRITICALITY is within a certainuser specified range (say, 7 to 10). This is intended as a means ofadjusting workload to match available resources. When a CRITICALITY range is specified (as part of PM worklist generation),the system will ask the user whether equipment with no value forCRITICALITY should be included or excluded.</td></tr><tr><td>3</td><td>frequency</td><td>2;0</td><td>MULTIPLE</td><td><a href="6911_13.html">6911.13</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

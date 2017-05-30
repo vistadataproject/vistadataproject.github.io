@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IPEC Study Parameters</h1></div><div id="results"><dl><dt>name</dt><dd>IPEC Study Parameters</dd><dt>number</dt><dd>539390.1</dd><dt>location</dt><dd>^AFRJYP(</dd><dt>description</dt><dd>This Inpatient Evaluation Center file contains the study parametersfor upcoming IPEC data acquisition rounds through FY 2011.  Thisuneditable file resides both in the central IPEC VISTA databaseand in the database of each remote study site.  Routines called byserver options will first ascertain the study identifier passed inthe server request message, then look up the needed parameters inthis file, and then set variables that will be used by the IPECdata acquisition software in identifing the inpatient episodes ofcare for which data will be required.  cvamc-st;3.2.2007 ---------------------------------------------------------------                    Updated:  9.5.2007---------------------------------------------------------------Inpatient Evaluation Center (IPEC)      -    VISN 10VAMC, Cincinnati, OH  -  Director:  Marta L. Render, M.D.---------------------------------------------------------------</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>study acronym(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the study type-period acronym that will be used by theIPEC programmer in selecting the study parameters to be used atthe remote site.  This acronym will be passed in the server requestmessage to the site and, when the data acquisition software isactivated, it will look for the acronym, look up the parametersin the IPEC Study Parameters File, and start data acquisition.cvamc;ipec-st</td></tr><tr><td>.02</td><td>start</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the internal -M- starting date of the study.</td></tr><tr><td>.03</td><td>end</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal -M- ending date for the study.</td></tr><tr><td>.04</td><td>i end</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal -M- inverse END date that willbe used as starting point for lab data look ups.</td></tr><tr><td>.05</td><td>i start</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This is the internal -M- inverse date that will beused by the data acquisition softare to start thelab data search. </td></tr><tr><td>.07</td><td>type</td><td>0;6</td><td>SET OF CODES</td><td>A:ACUTE HOSPITALIZATION<br/>I:CRITICAL CARE UNIT (ICU)<br/></td><td></td><td>This defines the study as critical care (ICU) oracute hospitalization including critical care.</td></tr><tr><td>.08</td><td>prefix</td><td>0;7</td><td>SET OF CODES</td><td>1:1<br/>2:2<br/>3:3<br/>4:4<br/>5:5<br/>6:6<br/>7:7<br/>8:8<br/>9:9<br/>0:0<br/></td><td></td><td>This is the lead number for the ward locationepisode number and helps in quickly identifyingthe study database.</td></tr><tr><td>.09</td><td>lrc</td><td>0;8</td><td>SET OF CODES</td><td>*:LAST RECORD<br/></td><td></td><td>This marks the last study parameter recordentered in the file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

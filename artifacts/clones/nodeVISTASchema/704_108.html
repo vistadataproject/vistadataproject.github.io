@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TERM_MAPPING_TABLE</h1></div><div id="results"><dl><dt>name</dt><dd>TERM_MAPPING_TABLE</dd><dt>number</dt><dd>704.108</dd><dt>location</dt><dd>^MDC(704.108,</dd><dt>description</dt><dd>NOTICE: This file is maintained exclusively by the CP Terminology group and must not be modified or edited in any way. Subsequent releases of CP Terminology may create lasting errors in the CliO data store if this file is changed. This file is the anchor for the mapping table structure for the CP Gateway. Each mapping table is called up by elements in the HL7 message.  The entries are used to translate the HL7 data into appropriate CP terminology.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td></td><td>This field is the Global Unique IDentifier (GUID) that identifies the mapping table.A sample ID could be "{4E41823C-CB5B-499F-BAAC-13626A6CD0D2}".</td></tr><tr><td>.02</td><td>name(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is the NAME of the mapping table.A sample could be "DeviceX ServiceZ".</td></tr><tr><td>.03</td><td>hl7 sending application</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field is the application sending the HL7 message.  This will be used for matching purposes.A sample HL7 SENDING APPLICATION could be "ServiceZ".</td></tr><tr><td>.09</td><td>active(+)</td><td>0;9</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field indicates whether this mapping-table is ACTIVE or not.</td></tr><tr><td>.1</td><td>comment</td><td>.1;1</td><td>FREE TEXT</td><td></td><td></td><td>This field is a comment about the mapping-table.A sample COMMENT could be "Default DeviceX ServiceZ mapping table".</td></tr><tr><td>.21</td><td>source id</td><td>.2;1</td><td>FREE TEXT</td><td></td><td></td><td>This field identifies the source of the HL7 message.A sample SOURCE ID could be "DeviceX".</td></tr><tr><td>.22</td><td>source application</td><td>.2;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is the application regarded as the source of the HL7 message.A sample SOURCE APPLICATION could be "ServiceZ".</td></tr><tr><td>.23</td><td>source version</td><td>.2;3</td><td>FREE TEXT</td><td></td><td></td><td>This field is the version of the source of the HL7 message.A sample SOURCE VERSION could be "VerN-ReleaseN.NN".</td></tr><tr><td>.24</td><td>source trusted</td><td>.2;4</td><td>BOOLEAN</td><td>0:No<br/>1:Yes<br/></td><td></td><td>This field indicates whether data processed via this source/mapping-table is "trusted" or not.  Only verified data will be filed.  Verification may be done with user intervention or it may be automatic.  Trusted mapping-tables will have their data filedas "verified" without user intervention.  </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

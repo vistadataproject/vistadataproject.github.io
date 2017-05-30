@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SUPPORTED INDEXES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="409_64.html">409.64</a></dd><dt>name</dt><dd>SUPPORTED INDEXES</dd><dt>number</dt><dd>409.641</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>index</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td> This property is the name on the index supported by the custodial package.   Note: This is not the name of the cross reference being used       internally. This is a easy to understand text that       describes the content of the cross reference.        For example:                    File: Patient         Cross Reference: B                   Index: PATIENT NAME</td></tr><tr><td>.02</td><td>cross reference</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td> This property indicates the specific internal VA FileMan cross reference associated with the index being defined.</td></tr><tr><td>.03</td><td>type</td><td>0;3</td><td>SET OF CODES</td><td>1:REGULAR<br/>2:REGULAR DATE/TIME<br/>3:COMPOSITE<br/>4:COMPOSITE DATE/TIME<br/></td><td></td><td> This property indicates the type of index being defined. Based on this type, various query object method will execute generic logic that applies to all indexes of the specified type.  Note: Currently, 8/97, the 'COMPOSITE' type is not supported.   Examples:       Index                           Type      -----                           ----      ^SCE("C",DFN,DA)                REGULAR      ^SCE("B",DATETIME,DA)           REGULAR DATE/TIME      ^SCE("ADFN",DFN,DATETIME,DA)    COMPOSITE DATE/TIME</td></tr><tr><td>101</td><td>custom node validator</td><td>VALIDATOR;E1,245</td><td>FREE TEXT</td><td></td><td></td><td> This property contains any query specific validator logic that the  custodial pacakge needs performed. This logic is executed after the various methods execute the intrinic $QUERY function. Normally, the generic validator associated with the index type is sufficient and no custom logic is required.  The validator checks to see if $QUERY returns a value that is beyond the scope of the query object's properties. For example, if your query is for a specific patient, the validator will check if a new patient has been reached by $QUERY.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TIU PRINT PARAMETERS</h1></div><div id="results"><dl><dt>name</dt><dd>TIU PRINT PARAMETERS</dd><dt>number</dt><dd>8925.93</dd><dt>location</dt><dd>^TIU(8925.93,</dd><dt>description</dt><dd>This file describes the parameters for controlling the Printing ofProgress Notes.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>hospital location(+)</td><td>0;1</td><td>POINTER</td><td><a href="44.html">44</a></td><td>B</td><td>This is the Hospital Location to which the parameters apply.</td></tr><tr><td>1.01</td><td>progress notes</td><td>1;1</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field should be set to 'YES' to enable batch printing of progressnotes from the [TIU PRINT PN WARD] and [TIU PRINT PN OUPT LOC] options.These options are intended to be used by MAS personnel printing CHARTcopies.</td></tr><tr><td>1.02</td><td>last progress note printed</td><td>1;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is used to track the last progress note printed for thislocation.  The option resets this field after each print.  If the fieldis null the option will prompt to select a date.</td></tr><tr><td>1.03</td><td>progress notes default printer</td><td>1;3</td><td>POINTER</td><td><a href="3_5.html">3.5</a></td><td></td><td>This field is a pointer to the device file.  The default the sitewould like to have presented when batch using the TIU progress notesbatch print options [TIU PRINT PN OUTPT LOC] and [TIU PRINT PN WARD].The user may select another printer at the time to job is queued.</td></tr><tr><td>3</td><td>exclude from pn batch print</td><td>3;1</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>If you answer yes to this prompt, progress notes for this location will not be included inthe progress notes outpatient batch print job [TIU PRINT PN BATCH].Do this if you want to print the CHART copies of the notes for this locationin the clinic and not in the file room.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

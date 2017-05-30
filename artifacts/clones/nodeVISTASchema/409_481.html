@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TRACK EDITS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="409_48.html">409.48</a></dd><dt>name</dt><dd>TRACK EDITS</dd><dt>number</dt><dd>409.481</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>edit number</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This field contains a unique entry for each edit. The edits are storedin order beginning at 1. Under ordinary circumstances there will usuallyonly be between 1 and 3 edits for any record although there is no specificmaximum.</td></tr><tr><td>.02</td><td>date edited</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>This is the date that the user edited this encounter. A trigger on thisfield will also update the DATE LAST EDITED field in the main file.</td></tr><tr><td>.03</td><td>edited by</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This is the user who edited this encounter. A trigger on this field willalso update the LAST EDITED BY field in the main file.</td></tr><tr><td>.04</td><td>type of entry</td><td>0;4</td><td>SET OF CODES</td><td>U:USER<br/>C:CLINICAL<br/>S:SUPERVISOR<br/></td><td></td><td>This is the type of user who edited this encounter.    "USER"        any standard user of this package.    "CLINICAL"    a clinical reviewer with the appropriate security key.    "SUPERVISOR"  a supervisor with the appropriate security key.</td></tr><tr><td>.05</td><td>serv. connect (ok by user?)</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field will contain 1 ('YES') or 0 ('NO') based on the userdetermination of the encounter's service connected value. A trigger on this field will also update the SERV. CONNECT (OK BY USER?) field in themain file.</td></tr><tr><td>.06</td><td>review required?</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field will be set to 1 ('YES') if a regular user determines that thisrecord requires further review by a clinical reviewer. A trigger will alsoset the STATUS field in the main file to 'REVIEW'.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

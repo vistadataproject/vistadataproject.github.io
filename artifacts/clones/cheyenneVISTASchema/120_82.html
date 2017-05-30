@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > GMR ALLERGIES</h1></div><div id="results"><dl><dt>name</dt><dd>GMR ALLERGIES</dd><dt>number</dt><dd>120.82</dd><dt>location</dt><dd>^GMRD(120.82,</dd><dt>description</dt><dd>Contains a listing of allergies from which user can select. Per VHA directive XXX, this file has been "locked down" by DataStandardization (DS).  The file definition (i.e. data dictionary) shallnot be modified.  All additions, changes and deletions to entries in thefile shall be done by Enterprise Reference Terminology (ERT) using theMaster File Server (MFS), provided by Common Services (CS).  Creatingand/or editing locally defined fields in the file are not permitted.  Useof locally defined fields that were created prior to VHA Directive XXXshall not be supported.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The name of the allergy/adverse reaction.</td></tr><tr><td>1</td><td>allergy type(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This field contains the type(s) for this allergy/adverse reaction .  Theuser can enter the type(s) separated by commas, or the following codes:D=Drug, F=Food, O=Other.  If codes are used, do not use commas to separatemultiple codes.  Examples of valid entries are:  DRUG or DRUG, FOOD or Dor DF or OTHER.</td></tr><tr><td>2</td><td>national allergy</td><td>0;3</td><td>SET OF CODES</td><td>1:NATIONAL ALLERGY<br/></td><td></td><td>Indicates whether this allergy was distributed with the national releaseor is a locally added allergy.</td></tr><tr><td>3</td><td>synonym</td><td>3;0</td><td>MULTIPLE</td><td><a href="120_823.html">120.823</a></td><td></td><td>A list of synonyms that can also be used to look up this allergy.</td></tr><tr><td>4</td><td>drug ingredients</td><td>ING;0</td><td>MULTIPLE</td><td><a href="120_824.html">120.824</a></td><td></td><td>List of drug ingredients that comprise this particular allergy.</td></tr><tr><td>5</td><td>va drug classes</td><td>CLASS;0</td><td>MULTIPLE</td><td><a href="120_8205.html">120.8205</a></td><td></td><td>List of VA Drug classes that comprise this reactant.</td></tr><tr><td>99.98</td><td>master entry for vuid(+)</td><td>VUID;2</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field identifies the Master entry for a VUID associatedwith a Term/Concept.</td></tr><tr><td>99.99</td><td>vuid(+)</td><td>VUID;1</td><td>FREE TEXT</td><td></td><td>AVUID</td><td>VHA Unique ID (VUID).  A unique meaningless integerassigned to reference terms VHA wide.</td></tr><tr><td>99.991</td><td>effective date/time</td><td>TERMSTATUS;0</td><td>MULTIPLE</td><td><a href="120_8299.html">120.8299</a></td><td></td><td>Describes the pair Status and Effective Date/Time for each referenceterm.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

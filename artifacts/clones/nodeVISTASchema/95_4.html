@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > LAB MAPPING TRANSPORT</h1></div><div id="results"><dl><dt>name</dt><dd>LAB MAPPING TRANSPORT</dd><dt>number</dt><dd>95.4</dd><dt>location</dt><dd>^LAHM(95.4,</dd><dt>description</dt><dd>This file is used to transport STS mapping to target sites for installation by the laboratory auto mapping software.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>entry identifier(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the identifier used to uniquely identifythe site/test/specimen combination.</td></tr><tr><td>2</td><td>institution</td><td>0;2</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>Pointer to the institution in the VistA INSITUTION file (#4)which this test/specimen record is related to.</td></tr><tr><td>3</td><td>code system</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Contains the name of the code system related to this record.Code system is free text to support multiple code systems.Generally the name of the code system is that used and/orassigned by the HL7 standard to recognized code systems. The software used to process entries from this file containthe business rules and knowledge of the corresponding codesystem.</td></tr><tr><td>4</td><td>status</td><td>0;4</td><td>SET OF CODES</td><td>0:LOADED<br/>.5:DEFER<br/>.7:PROCESSING EXECPTION<br/>1:PROCESSED<br/>2:DISCARD<br/></td><td></td><td>Holds the status of this record as it's loaded, processed and dispositioned by the site.</td></tr><tr><td>5</td><td>mapping status</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Stores the free text mapping status of this term when it's applied to it's related file entry.</td></tr><tr><td>6</td><td>status date</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>Records the date/time that this entry is processed andthe data is applied to the target file. </td></tr><tr><td>100</td><td>field reference</td><td>100;0</td><td>MULTIPLE</td><td><a href="95_401.html">95.401</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

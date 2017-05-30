@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MEDICINE AUTO INSTRUMENT INTERFACE SUMMARY</h1></div><div id="results"><dl><dt>name</dt><dd>MEDICINE AUTO INSTRUMENT INTERFACE SUMMARY</dd><dt>number</dt><dd>700.5</dd><dt>location</dt><dd>^MCAR(700.5,</dd><dt>description</dt><dd>Contains one entry for each record transmitted from an auto instrument toDHCP.  This file is used to print the Auto-Instrument Summary report.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date/time of test(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>Date/Time of Test</td></tr><tr><td>.05</td><td>date/time initial</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>Date/Time of creation of entry in Bad Data File</td></tr><tr><td>.06</td><td>date/time latest</td><td>0;9</td><td>DATE-TIME</td><td></td><td>C</td><td>This field identifies the Date/Time of latest transmission attempt.</td></tr><tr><td>1</td><td>instrument name</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Name of Auto instrument on-line when bad data transmission occurred</td></tr><tr><td>2</td><td>ssn</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field identifies SSN portion of data line as received for Auto Instrument</td></tr><tr><td>3</td><td>name</td><td>0;4</td><td>FREE TEXT</td><td></td><td>PT</td><td>This field identifies Patient Name portion of data line received form AutoInstrument </td></tr><tr><td>4</td><td>reason for failure</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>Reason for initial failure to pass DHCP validity checks</td></tr><tr><td>5</td><td>attempts</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Number of attempts at transmission of same bad data record</td></tr><tr><td>6</td><td>err</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the error code for the last transmission if thetransmission is unsuccessful.</td></tr><tr><td>7</td><td>type(+)</td><td>0;10</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates the type of transmission: ie 'H' will be a Holtertransmission, etc.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

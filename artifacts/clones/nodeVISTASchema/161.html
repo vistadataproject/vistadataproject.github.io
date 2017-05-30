@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS PATIENT</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS PATIENT</dd><dt>number</dt><dd>161</dd><dt>location</dt><dd>^FBAAA(</dd><dt>description</dt><dd>CONTAINS ALL AUTHORIZATIONS FOR FEE BASIS SERVICES. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>The name of the patient who is requesting authorization for obtainingFee services.</td></tr><tr><td>.5</td><td>fee id card number</td><td>4;1</td><td>FREE TEXT</td><td></td><td>AE</td><td>The number pre-printed on the Fee ID Card assigned (given) to the patient.The patient can only have one number assigned to him/her at a given time.</td></tr><tr><td>.6</td><td>fee id card issue date</td><td>4;2</td><td>DATE-TIME</td><td></td><td></td><td>The date that the Fee ID Card was issued to the patient.</td></tr><tr><td>.65</td><td>fee id card expiration date</td><td>4;4</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the expiration date for a patient'sID card.</td></tr><tr><td>.7</td><td>reason for card number change(+)</td><td>4;3</td><td>FREE TEXT</td><td></td><td></td><td>The reason that the patient's Fee ID Card number was changed or terminated.</td></tr><tr><td>1</td><td>authorization</td><td>1;0</td><td>MULTIPLE</td><td><a href="161_01.html">161.01</a></td><td></td><td>This data is related to specific validity periods where the veteranis authorized to obtain Fee services and the VA will reimburse.</td></tr><tr><td>2</td><td>report of contact</td><td>2;0</td><td>MULTIPLE</td><td><a href="161_02.html">161.02</a></td><td></td><td>Contains information relating to the initial contact between the VA anda patient's representative, regarding patient treatment at a non-VAfacility.</td></tr><tr><td>11</td><td>arch eligibility</td><td>ARCHFEE;0</td><td>MULTIPLE</td><td><a href="161_011.html">161.011</a></td><td></td><td>This field is a Project ARCH (Access Received Closer to Home) Eligibility multiple.  Every time a new update of eligibility data comes in, a new entry for this multiple is created.            </td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

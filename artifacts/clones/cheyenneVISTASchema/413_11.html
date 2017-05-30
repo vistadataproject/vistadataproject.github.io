@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TURN-IN LINE ITEM</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="413_1.html">413.1</a></dd><dt>name</dt><dd>TURN-IN LINE ITEM</dd><dt>number</dt><dd>413.11</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>turn-in line item number</td><td></td><td>11</td><td></td><td></td><td>This is the sequential internal number for each line item.</td></tr><tr><td>.01</td><td>replacement item number</td><td>0;1</td><td>POINTER</td><td><a href="6914.html">6914</a></td><td>B</td><td>This is a pointer to the item in the inventory that is being replaced.</td></tr><tr><td>.5</td><td>justification(+)</td><td>0;11</td><td>SET OF CODES</td><td>1:Fair wear and tear<br/>2:Excess equipment failure/repair<br/>3:Upgrade<br/>4:State-of-art technology<br/>5:Replacement due to loss or damage<br/>6:Other<br/></td><td></td><td>This is the reason why the item is requested to be turned in.</td></tr><tr><td>.7</td><td>other justification</td><td>0;12</td><td>FREE TEXT</td><td></td><td></td><td>This field is for a free text if 'OTHER' justification is selected.</td></tr><tr><td>1</td><td>disposal condition code</td><td>0;2</td><td>SET OF CODES</td><td>1:Unused-Good<br/>2:Unused-Fair<br/>3:Unused-Poor<br/>4:Used-Good<br/>5:Used-Fair<br/>6:Used-Poor<br/>7:Repairs Required-15% of a/c or less<br/>8:Repairs Required-16%-40% of a/c<br/>9:Repairs Required-41%-65% of a/c<br/>X:Salvage<br/>S:Scrap<br/></td><td></td><td>This field is to designate the condition of the equipment that wasturned in.  Equipment that is in fair to good condition could besent to another medical center needing it.</td></tr><tr><td>2</td><td>equip request line item</td><td>0;3</td><td>NUMERIC</td><td></td><td>AC</td><td>This is the corresponding Equipment Request Line Item Number fromthe Equipment Request File (413).</td></tr><tr><td>3</td><td>description</td><td>0;13</td><td>FREE TEXT</td><td></td><td></td><td>This field is for a free text description of the line item tobe turned in.</td></tr><tr><td>4</td><td>utility disconnect?(+)</td><td>0;4</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field is answered 'Y'es if the line item needs to be disconnected bythe Engineering department.</td></tr><tr><td>5</td><td>voucher #</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field is for a voucher number if the turned in item canbe sold.account.</td></tr><tr><td>11</td><td>work order #</td><td>0;14</td><td>POINTER</td><td><a href="6920.html">6920</a></td><td></td><td>This is the work order number that is processed by Engineeringif the turn-in item must be disconnected or removed by theEngineering department.</td></tr><tr><td>12</td><td>work order needed(+)</td><td>0;8</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field will be entered by the CMR Responsible Official on whether awork order will be needed to process the item(s) to be turned-in.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

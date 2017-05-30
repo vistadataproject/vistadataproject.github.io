@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > BASC LOCALITY MODIFIER</h1></div><div id="results"><dl><dt>name</dt><dd>BASC LOCALITY MODIFIER</dd><dt>number</dt><dd>350.5</dd><dt>location</dt><dd>^IBE(350.5,</dd><dt>description</dt><dd>This file is used in the calculation of the charge for an ambulatorysurgery performed on any given date. This file contains time sensitive datawith each entry defining a locality modifier and wage percentage for adivision. There may be multiple entries for each division indicating changeseffective on a particular date. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>effective date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>The date on which this entries data becomes effective.The data in this entry will override any other entry forthis DIVISION that has a previous EFFECTIVE DATE.</td></tr><tr><td>.02</td><td>division(+)</td><td>0;2</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td>C</td><td>The division that this data applies to.</td></tr><tr><td>.04</td><td>status(+)</td><td>0;4</td><td>SET OF CODES</td><td>1:ACTIVE<br/>0:INACTIVE<br/></td><td></td><td>The status for this DIVISION on/after this EFFECTIVE DATE.</td></tr><tr><td>.05</td><td>wage percentage(+)</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the percentage of the rate group unit charge that is the wagecomponent to be used in calculating the ambulatory surgery charge.</td></tr><tr><td>.06</td><td>non-wage percentage(+)</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the percentage of the rate group unit charge that is the non-wage component to be used in calculating the ambulatory surgery charge.</td></tr><tr><td>.07</td><td>locality rate modifier(+)</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>This is the Geographic Wage Index that is used to account for wage differencesin different localities when calculating the ambulatory surgery charge. It ismultiplied by the wage component to get the final geographic wage componentof the charge.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

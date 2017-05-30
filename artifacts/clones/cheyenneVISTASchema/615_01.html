@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROBLEM</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="615.html">615</a></dd><dt>name</dt><dd>PROBLEM</dd><dt>number</dt><dd>615.01</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>problem</td><td>0;1</td><td>POINTER</td><td><a href="620.html">620</a></td><td>C</td><td>Problem, pointing to the 'Problem' file is the title of the problemselected for the 'Problist' patient.</td></tr><tr><td>1</td><td>specify other problem</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is free text describing a problem 'Other' not found coveredby the other specific problems in the 'Problem' file.Only one 'Specify Other Problem' entry may be made. Multipleentries may be made in the 'Specify Other Indicator' field.</td></tr><tr><td>2</td><td>priority</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This determines the order in which the Problem is presentedto the user and printed. It is used in the critical item screenand problem list printouts.</td></tr><tr><td>3</td><td>onset date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>Date of problem onset. Requested when a problem is entered.</td></tr><tr><td>4</td><td>recorded date(+)</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>Date problem was recorded. Mandatory, time of day important.</td></tr><tr><td>5</td><td>staff</td><td>0;6</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Person entering problem on the list. Points to New Person file.</td></tr><tr><td>6</td><td>screen</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This is the alphabetical key which associates a problem with itsindicators.</td></tr><tr><td>7</td><td>problem indicator</td><td>1;0</td><td>MULTIPLE</td><td><a href="615_02.html">615.02</a></td><td></td><td>This is the problem indicator selected by the staff for that problem.</td></tr><tr><td>8</td><td>status date</td><td>2;0</td><td>MULTIPLE</td><td><a href="615_03.html">615.03</a></td><td></td><td>Date that problem's status (Active, Inactive, Resolved, Reformulated)was added.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

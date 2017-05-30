@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RUG-II</h1></div><div id="results"><dl><dt>name</dt><dd>RUG-II</dd><dt>number</dt><dd>45.91</dd><dt>location</dt><dd>^DG(45.91,</dd><dt>description</dt><dd>This file contains the RUG-II groupings used for reimbursment for patientsthat reside on long term care units (those with services of eitherintermediate or nursing home care).  Each time a patient is transferredor admitted to a ward of one of these types, a patient assessmentinstrument must be completed (these are stored in the PAF file - #45.9).Additionally, twice a year, a census of nursing home and intermediatemedicine wards is taken and assessments are done at that time.  Once anassessment is completed, a patient is placed into one of the 17 RUG-IIgroups based on the level of care s/he is receiving.  The 17 RUG groupsare stored in this file along with the yearly WWUs (weighted work units)for each.  These weighted work units are supplied by MAS VACO and theBoston DPC (which supports the RUG-II program) and are used forreimbursement at the medical center level.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>This number is created automatically by VA FileMan.  It should notbe altered in any way.  Adding, editing, or removing entries fromthis file could have severe and negative impacts on the operation ofthe RUG-II software and could cause losses in reimbursement for longterm care.</td></tr><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contain the name of the RUG-II group (1-17).  These groupsare maintained by the MAS module with direction from MAS VACO and theAustin DPC.  Altering of these entries (or adding or removing entries)will have a severe and negative impact on operations of the RUG-II softwareat your medical center.  Impacts may include losses of reimbursement.</td></tr><tr><td>1</td><td>fiscal year</td><td>FY;0</td><td>MULTIPLE</td><td><a href="45_9101.html">45.9101</a></td><td></td><td>This multiple contains data on the number of weighted work units appied tothis RUG-II group each fiscal year.  This data is supplied by the BostonDPC.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IDENTIFIER</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="62_47.html">62.47</a></dd><dt>name</dt><dd>IDENTIFIER</dd><dt>number</dt><dd>62.4701</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>identifier</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the code or id associated with an instance of this concept.The identifier in conjunction with CODING SYSTEM field (#.02) indicates its use and source.</td></tr><tr><td>.02</td><td>coding system(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>Identifies the name of the coding system which this code is derivedfrom.</td></tr><tr><td>.03</td><td>purpose</td><td>0;3</td><td>SET OF CODES</td><td>1:RESULT<br/>2:ANSWER<br/></td><td></td><td>Classifies the code as a result or answer code. Codes from HL7 OBX segment field OBX-3 shouldbe classified as result codes. Example is LOINC code 11475-1 MICROORGANISMIDENTIFIED: PRID:PT:XXX:NOM:CULTURE thatrepresents the concept of organism identified.  Codes from HL7 OBX segment field OBX-5 shouldbe classified as answer codes.Example is SNOMED CT code 30334005 AEROMONASSALMONICIDA (ORGANISM) that represent the nameof organism identified.</td></tr><tr><td>.04</td><td>override concept</td><td>0;4</td><td>POINTER</td><td><a href="62_47.html">62.47</a></td><td></td><td>For 'answer' type codes this field indicates therelated area of the Laboratory package databasewhere answers to this code are to be stored.It is used when the 'answer' that is associated witha 'result' code cannot not be stored in the usualVistA Laboratory LAB DATA file (#63) field. Example: SNOMED CT code 23506009 is the term'normal flora'.  This term can be the 'answer'used in several places within the Lab DATA file (#63).If it is associated as the 'answer' to a microorganismidentified code instead of being stored as an entryin the ETIOLOGY FIELD file (#61.2) it would bestored as a comment. </td></tr><tr><td>.05</td><td>national standard</td><td>0;5</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td>AC</td><td>This field indicates whether this entry was distributed nationwide. Ifnot, then it was entered locally.</td></tr><tr><td>2.1</td><td>related entry</td><td>2;1</td><td>VARIABLE-POINTER</td><td><a href="61_2.html">61.2</a>, <a href="62_06.html">62.06</a></td><td>AE</td><td>Links this code/codeset to an entry in one of the pointed-to files.  This allows the system to determine how to translate a code/codeset to a file entry.</td></tr><tr><td>2.2</td><td>message configuration</td><td>2;2</td><td>POINTER</td><td><a href="62_48.html">62.48</a></td><td>AG</td><td>When the related identifier (code) is from a local coding systemthen this field indicates for which specific interface the codeis associated with. Local codes are interface specific.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

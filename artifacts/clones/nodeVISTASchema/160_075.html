@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SUSPENSE</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="160.html">160</a></dd><dt>name</dt><dd>SUSPENSE</dd><dt>number</dt><dd>160.075</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>suspense date</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td> Identifies the date the patient was entered as a potential 'case' to beregistered in the Tumor Registry.  </td></tr><tr><td>1</td><td>date entered</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>All cases other than in-situs of the cervix uteri must be followedannually.  If information on persons with an in-situ of the cervixuteri is received, the follow-up information should be updated.</td></tr><tr><td>2</td><td>source</td><td>0;3</td><td>SET OF CODES</td><td>LS:SURGICAL PATHOLOGY<br/>LC:CYTOPATHOLOGY<br/>LE:ELECTRON MICROSCOPY<br/>LA:AUTOPSY<br/>PT:PTF FILE<br/>RA:RADIOLOGY<br/>SE:MANUAL ENTRY<br/>DI:DISEASE INDEX<br/></td><td>D</td><td> Records the source or origin of the suspense entry.</td></tr><tr><td>3</td><td>division</td><td>0;4</td><td>POINTER</td><td><a href="4.html">4</a></td><td>C</td><td>When a patient is in 'suspense', DIVISION identifies the facilitywhich is responsible for analyzing this case for entry into theregistry.When a patient is not in 'suspense', DIVISION is blank.NOTE: This field is for 'suspense' purposes only.  It does NOT      indicate the overall ownership of the patient's record by a      particular facility.</td></tr><tr><td>4</td><td>lab morphology</td><td>0;5</td><td>POINTER</td><td><a href="61_1.html">61.1</a></td><td></td><td>Pointer to the file containing the MORPHOLOGY codes for pathology.</td></tr><tr><td>5</td><td>organ/tissue</td><td>0;6</td><td>POINTER</td><td><a href="61.html">61</a></td><td></td><td>Pointer to describe the type of tissue or organic material being diagnosed.</td></tr><tr><td>6</td><td>radiological procedure</td><td>0;7</td><td>POINTER</td><td><a href="71.html">71</a></td><td></td><td>Points to the RAD/NUC MED PROCEDURES file (#71) to record the radiologyprocedures codes.</td></tr><tr><td>7</td><td>ptf discharge</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>Records the date/time a (PTF) patient is discharged.</td></tr><tr><td>8</td><td>icd9</td><td>0;9</td><td>POINTER</td><td><a href="80.html">80</a></td><td></td><td>This field is a pointer to the ICD DIAGNOSIS file (#80) whichcontains a listing of the International Classification ofDiseases (ICD) codes, clinical modification, 9th revision.</td></tr><tr><td>9</td><td>ptf code</td><td>0;10</td><td>SET OF CODES</td><td>1:1<br/></td><td></td><td>Diagnosis codes for patient discharged from active hospitalization.</td></tr><tr><td>10</td><td>icdo morphology code</td><td>0;11</td><td>POINTER</td><td><a href="164_1.html">164.1</a></td><td></td><td>Pointer to the ICDO MORPHOLOGY file (#164.1) which contains themorphology/histology codes in the International Calssification ofDiseases (ICD) for Oncology, 2nd edition, 1990.</td></tr><tr><td>11</td><td>test time</td><td>0;12</td><td>NUMERIC</td><td></td><td></td><td>Records the time a test was performed.</td></tr><tr><td>12</td><td>suspense month</td><td>0;13</td><td>DATE-TIME</td><td></td><td></td><td>SUSPENSE MONTH is the month and year of the SUSPENSE DATE.</td></tr><tr><td>13</td><td>disease code</td><td>0;14</td><td>POINTER</td><td><a href="61_4.html">61.4</a></td><td></td><td>Some LAB casefinding cases will be found not in the LAB Morphology (61.1)file but in the LAB Disease Field (61.4) file.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

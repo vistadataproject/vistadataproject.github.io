@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CAPTION LINE COLUMNS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="409_61.html">409.61</a></dd><dt>name</dt><dd>CAPTION LINE COLUMNS</dd><dt>number</dt><dd>409.621</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>item name</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the reference name of the column.  The DISPLAY TEXTfield contains the text that will be used when the caption lineis written.The text in this field is used when the application refers tothis column during programming.  For example, the <field name>reference in function call $$FLDUPD^VALM1(<string>,<field name>,<line number>) would contain this text.</td></tr><tr><td>.02</td><td>column</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>The field contains the column number where the data/caption starts.</td></tr><tr><td>.03</td><td>width</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This field contains the number of characters this field willuse.</td></tr><tr><td>.04</td><td>display text</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the text that will appear on the captionline for this column/field.If the text is longer than the WIDTH parameter, it will betruncated to the WIDTH specification when written as partof the caption line.This field is optional and can be left blank.</td></tr><tr><td>.05</td><td>default video attributes</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This parameter allows the developer to indicate the default video attributes that should be applied when program calls are made to the FLDCTRL^VALM10 video control utility. The following is the list of attributes and abbreviations used for this parameter:  H - for highlight R - for reverse video U - for underline B - for blinking</td></tr><tr><td>.06</td><td>scroll lock</td><td>0;6</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td>AIDENT</td><td>If you want to lock one for more columns into place as the userscrolls horizontally through the list, you can place a 'scroll lock' on the right most column field that should be locked.  Only one column can have this 'scroll lock' parameter set to 'yes'.If you attempt to set more than one, the system will not allow itand will issue a warning. If this parameter is set to 'YES', this caption field and any othercaption field, with a COLUMN parameter set to less than thiscurrent caption field's, will always be displayed by the ListManager.This parameter does not need to be filled in for List Templateswith a RIGHT MARGIN of 80. For those templates with aRIGHT MARGIN of over 80, this field also does not need tobe entered. However, the use of this field allows the developerto indicate the list's identification fields for user readability.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

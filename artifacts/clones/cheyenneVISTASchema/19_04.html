@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DISPAR(0,N)</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="19.html">19</a></dd><dt>name</dt><dd>DISPAR(0,N)</dd><dt>number</dt><dd>19.04</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>subscript level number</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>Number equal to one of the "N" subscripts that FileMan must sort throughon the global or cross-reference defined by the BY(0) input variable tothe FileMan print routine, EN1^DIP. Used to set entries into theDIAPAR(0,N) and DIAPAR(0,N,"OUT") input arrays (subheader control for theNth subscript). </td></tr><tr><td>1</td><td>statistical control characters</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>Statistical control characters for printing the "Nth" subscript from theBY(0) global/cross-reference.  Used to set first piece of DISPAR(0,N)input variable to the FileMan print, EN1^DIP. If defined, it shouldcontain any of the three statistical control characters !, #, or + thatare normally entered BEFORE a sort field in the FileMan interactive modefor printing data.  See the FileMan User's manual section on How toDisplay and Print File Data for more information.</td></tr><tr><td>2</td><td>subheader format characters</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Subheader formatting characters for printing the "Nth" subscript from theBY(0) global/cross-reference.  Used to set second piece of DISPAR(0,N)input variable to the FileMan print, EN1^DIP. If defined, it shouldcontain any subheader formatting characters that are normally enteredAFTER a sort field in the FileMan interactive mode for printing data.  Seethe FileMan User's manual section on How to Display and Print File Datafor more information. (ex. ;C3;"SUBHEADER TITLE:" to begin printingsubheader in column 3, with a literal caption.)</td></tr><tr><td>3</td><td>subheader output transform</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Output transform code for printing the "Nth" subscript subheader from theBY(0) global/cross-reference.  Used to set DISPAR(0,N,"OUT") inputvariable to the FileMan print, EN1^DIP. For instance, it could transforman inverse date into a printable date.  If defined, it should containMUMPS code that transforms the internal value of the subscript "Y", intoit's external form, also in variable "Y".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

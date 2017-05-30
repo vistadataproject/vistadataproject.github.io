@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > IB DM EXTRACT DATA</h1></div><div id="results"><dl><dt>name</dt><dd>IB DM EXTRACT DATA</dd><dt>number</dt><dd>351.71</dd><dt>location</dt><dd>^IBE(351.71,</dd><dt>description</dt><dd>This file contains data collected via the Diagnostic Measures Extractionprocess. Within each entry is a series of DM reports from which summarydata has been collected on a monthly basis. Per VHA directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>month/year</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>This is the month/year corresponding to the extracted data.</td></tr><tr><td>.02</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>1:ON STANDBY<br/>2:STARTED<br/>3:COMPLETED<br/></td><td>AC</td><td>This is the current status of the data extraction process for thisfile entry.</td></tr><tr><td>.03</td><td>start run date</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the extraction process for this file entry started.</td></tr><tr><td>.04</td><td>end run date</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date the extraction process for this file entry ended.</td></tr><tr><td>.05</td><td>extract message sent?</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>This field, if set to YES, means that a mail message containing theDM extract data for this entry was transmitted to the FORUM mail group.</td></tr><tr><td>.06</td><td>message number</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the number that identifies the mail message sent with the extracted information.</td></tr><tr><td>1</td><td>report</td><td>1;0</td><td>MULTIPLE</td><td><a href="351_711.html">351.711</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

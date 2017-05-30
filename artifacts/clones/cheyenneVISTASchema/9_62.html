@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > INSTALL QUESTIONS</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="9_6.html">9.6</a></dd><dt>name</dt><dd>INSTALL QUESTIONS</dd><dt>number</dt><dd>9.62</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>subscript</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field will be used as the subscript of the users answer to theInstall Questions.  The first 3 character should be either "PRE" or "POS"to indicate whether the question should be asked during the pre-init orduring the post-init.   The answers will be in the XPDQUES array, example: If this field was set to 'PRE1 QUESTION' then XPDQUES("PRE1 QUESTION") = user response. This field is also used to determine the order of the questions.</td></tr><tr><td>1</td><td>dir(0)(+)</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the DIR(0) variable for the VA Fileman DIR routine.</td></tr><tr><td>2</td><td>dir(a)</td><td>A;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the DIR("A") variable for the VA Fileman DIR routine.</td></tr><tr><td>3</td><td>dir(a,#)</td><td>A1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the DIR("A",#) array for the VA Fileman DIR routine.</td></tr><tr><td>4</td><td>dir(b)</td><td>B;1</td><td>FREE TEXT</td><td></td><td></td><td>This is the DIR("B") variable for the VA Fileman DIR routine.</td></tr><tr><td>5</td><td>dir(?)</td><td>Q;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the DIR("?") variable for the VA Fileman DIR routine.</td></tr><tr><td>6</td><td>dir(?,#)</td><td>Q1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This is the DIR("?",#) array for the VA Fileman DIR routine.</td></tr><tr><td>7</td><td>dir(??)</td><td>QQ;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This is the DIR("??") variable for the VA Fileman DIR routine.</td></tr><tr><td>10</td><td>m code</td><td>M;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>This field contains standard M code which will be executed after the DIRarray has been set from the previous fields, but before the call to the DIRroutine. If the developer doesn't want to ask a question, kill the DIRarray.  The array XPDQUES(SUBSCRIPT)=internal answer will be defined for allquestions asked.  This code can only make references to the ENVIORMENT CHECKROUTINE, since it will be the only routine loaded at this time.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MH SKIPPED QUESTIONS</h1></div><div id="results"><dl><dt>name</dt><dd>MH SKIPPED QUESTIONS</dd><dt>number</dt><dd>601.79</dd><dt>location</dt><dd>^YTT(601.79,</dd><dt>description</dt><dd>This file specifies the questions to be skipped (by question IEN) if a rule is met for a given question in a given instrument.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the unique identifier for this record. It is the IEN. Numbers under 100,000 are part of the national database and should not be edited locally.</td></tr><tr><td>1</td><td>instrument(+)</td><td>0;2</td><td>POINTER</td><td><a href="601_71.html">601.71</a></td><td>AC</td><td>Pointer to MH TESTS AND SURVEYS file (#601.71). Specifies which instrumentis being checked for skip rules.</td></tr><tr><td>2</td><td>rule id(+)</td><td>0;3</td><td>POINTER</td><td><a href="601_82.html">601.82</a></td><td>AE</td><td>A pointer to the RULE ID field (#.01) of the MH RULES file (#601.82). This specifies which rule is being fired.</td></tr><tr><td>3</td><td>skipped question id(+)</td><td>0;4</td><td>POINTER</td><td><a href="601_72.html">601.72</a></td><td>AD</td><td>A pointer to the QUESTION NUMBER field (#.01) of the MH QUESTIONS file(#601.72). This specifies which question is to be skipped.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > SQLI_TABLE</h1></div><div id="results"><dl><dt>name</dt><dd>SQLI_TABLE</dd><dt>number</dt><dd>1.5215</dd><dt>location</dt><dd>^DMSQ("T",</dd><dt>description</dt><dd>Descriptor of a set of table elements: Includes name and file no.(See SQLI_TABLE_ELEMENTS). Each ^DD(DA) represents a table in a relationalmodel of FileMan. Further, each index represents a table.  Each schema contains multiple tables. Each table contains just one primarykey, but multiple columns, foreign keys and indicies.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>t name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Table name must be a valid SQL identifier, unique by schema</td></tr><tr><td>1</td><td>t schema(+)</td><td>0;2</td><td>POINTER</td><td><a href="1_521.html">1.521</a></td><td></td><td>IEN in SQLI_SCHEMA of the schema to which this table belongs.</td></tr><tr><td>2</td><td>t comment</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>A short description of the table</td></tr><tr><td>3</td><td>t master table</td><td>0;4</td><td>POINTER</td><td><a href="1_5215.html">1.5215</a></td><td>E</td><td>The table of which this table is an index. (Only index tables)</td></tr><tr><td>4</td><td>t version fm</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>The version number is updated by FileMan when ^DD or ^DIC changes.</td></tr><tr><td>5</td><td>t row count</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field should contain an estimate of the number of rows in the table</td></tr><tr><td>6</td><td>t file(+)</td><td>0;7</td><td>NUMERIC</td><td></td><td>C</td><td>FileMan file number from which table is derived.</td></tr><tr><td>7</td><td>t update</td><td>0;8</td><td>DATE-TIME</td><td></td><td></td><td>Date last updated.</td></tr><tr><td>8</td><td>t global</td><td>1;E1,245</td><td>FREE TEXT</td><td></td><td>D</td><td>Global variable name. {K} stands for a subscriptE.g.: ^DIC(9.4,{K},3,{K},4,{K})</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

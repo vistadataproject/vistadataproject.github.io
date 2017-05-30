@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAG RAD CPT MATCHING</h1></div><div id="results"><dl><dt>name</dt><dd>MAG RAD CPT MATCHING</dd><dt>number</dt><dd>2006.67</dd><dt>location</dt><dd>^MAG(2006.67,</dd><dt>description</dt><dd>This file allows us to map a given Radiology procedure to otherprocedures of interest based on grouping of CPT codes, orattributes associated with the CPT code (Modality, Body Part).This supports logic in the hanging protocols for automatically retrieving and displaying prior exams of interest when interpretinga new exam for a patient.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>cpt code(+)</td><td>0;1</td><td>POINTER</td><td><a href="81.html">81</a></td><td>B</td><td>CPT code for creating an entry in this file.</td></tr><tr><td>1</td><td>ama body region</td><td>0;2</td><td>POINTER</td><td><a href="2006_672.html">2006.672</a></td><td></td><td>This field contains generic body region descriptive informationderived from the AMA CPT book.  The values used are from the Radiology procedures section; it provides a general frame ofreference when assigning Body Part asociations.</td></tr><tr><td>2</td><td>vrad body region</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Provides another means for grouping body part designations.</td></tr><tr><td>3</td><td>match group</td><td>0;4</td><td>POINTER</td><td><a href="2006_67.html">2006.67</a></td><td>CPTMATCH</td><td>This field points to another CPT entry in this file.  It is usedto identify another procedure that is "similar" to this one forautomatic prior exams matching.  As many CPTs as desired may pointto the same MATCH GROUP CPT value--this will have the effect whereany one of those procedures are thus part of the same group of examsfor matching.  I.e., looking for matching priors for any one ofthose values would be able to retrieve exams that correspond toall of the CPTs so defined.</td></tr><tr><td>4</td><td>body part</td><td>1;0</td><td>MULTIPLE</td><td><a href="2006_674.html">2006.674</a></td><td></td><td>Searching for prior exams may be done by matching the Body Part(s) ofthe current exam with prior exams of the same Body Part as definedin this file.Note that prior exams matching logic may use Body Part in combinationwith Modality to find matching CPT codes.</td></tr><tr><td>5</td><td>modality</td><td>2;0</td><td>MULTIPLE</td><td><a href="2006_675.html">2006.675</a></td><td></td><td>Searching for prior exams may be done by matching the Modality(s) ofthe current exam with prior exams of the same Modality.  Note thatthe matching may optionally be based on Modality and Body Part in combination.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

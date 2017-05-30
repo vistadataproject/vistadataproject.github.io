@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PATIENT TO PEER REVIEW</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="575066_19.html">575066.19</a></dd><dt>name</dt><dd>PATIENT TO PEER REVIEW</dd><dt>number</dt><dd>575066.193</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient to peer review</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>Enter the patient identification sent to Peer Review.</td></tr><tr><td>1</td><td>level assigned by svc chief</td><td>0;2</td><td>SET OF CODES</td><td>1:LEVEL 1<br/>2:LEVEL 2<br/>3:LEVEL 3<br/></td><td></td><td>It is assumed levels assigned by Peer Review will be further evaluatedby the service chief.</td></tr><tr><td>2</td><td>severity of outcome</td><td>0;3</td><td>SET OF CODES</td><td>0:NO HARM<br/>1:MINOR<br/>2:MAJOR<br/>3:DEATH<br/></td><td></td><td>Answer this question only if the level of care assigned by the ServiceChief is a 2 or 3.  For further definitions refer to patient incidentreporting directive.</td></tr><tr><td>3</td><td>action (provider)</td><td>0;4</td><td>SET OF CODES</td><td>1:COUNSELLED BY SVC CHIEF<br/>2:COUNSELLED BY COS<br/>3:EDUCATION<br/>4:CHANGE POLICY<br/>5:RESTRICT PRIVILEDGES<br/>6:INCREASED SUPERVISION<br/>7:OTHER<br/></td><td></td><td>Enter the code for the corrective action taken. (only for level 2 or 3)</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

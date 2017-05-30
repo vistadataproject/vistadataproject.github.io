@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > A&SP PATIENT</h1></div><div id="results"><dl><dt>name</dt><dd>A&SP PATIENT</dd><dt>number</dt><dd>509850.2</dd><dt>location</dt><dd>^ACK(509850.2,</dd><dt>description</dt><dd>The A&SP PATIENT file (#509850.2) contains identifying, demographic, and other clinical information for all patients seen in the Audiology and Speech Pathology clinics.  The entries in this file are pointers to the PATIENT file (#2) used by MAS.  For this reason, a patient must already be present in DHCP File #2 before he can be added as an Audiology/Speech Pathology patient.  Data in this file SHOULD NOT be altered through the use of VA FileMan; input should take place ONLY through the QUASAR menu options.  Per VHA Directive 10-93-142, this file definition SHOULD NOT be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>The NAME field contains the name of the patient seen in the Audiologyand Speech Pathology clinics.</td></tr><tr><td>.03</td><td>asp file number</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The ASP FILE NUMBER field contains an existing LOCAL file number associated with this Audiology and Speech Pathology patient.  Some Audiology and Speech Pathology Services may use locally-determined file numbers to track and control clinic files.  This field does NOT contain the patient's social security number.  Use of this field is optional and is controlled by the USE ASP CLINIC FILE NUMBER site parameter.</td></tr><tr><td>1</td><td>initial visit date</td><td>0;2</td><td>DATE-TIME</td><td></td><td></td><td>The INITIAL VISIT DATE field contains the date (if known) of this patient's first visit to the Audiology and/or Speech Pathology clinic at this site.  This field can be left blank.</td></tr><tr><td>2</td><td>diagnostic condition</td><td>1;0</td><td>MULTIPLE</td><td><a href="509850_22.html">509850.22</a></td><td></td><td>The DIAGNOSTIC CONDITION field contains the ICD-9CM diagnostic condition code for the A&SP patient.  Disease codes listed in this field appear in the A&SP Problem List.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > VIC HL7 TRANSMISSION LOG</h1></div><div id="results"><dl><dt>name</dt><dd>VIC HL7 TRANSMISSION LOG</dd><dt>number</dt><dd>39.7</dd><dt>location</dt><dd>^DGQE(39.7,</dd><dt>description</dt><dd>This file contains a list of General Order (ORM~O01) HL7 transmissionsthat have been sent to the National Card Management Directory (NCMD) by the Veteran ID Card software module.  Entries in this file arecreated/edited automatically by the VistA to NCMD HL7 interface. Records in this file should not be added or edited except through the use of the Veteran ID Card software that is part of Registration. Doing sowould likely cause Veteran ID Card database to become corrupted.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>message control id(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the HL7 Message ID of the transmitted General Order (ORM~O01) message.</td></tr><tr><td>.02</td><td>vic request(+)</td><td>0;2</td><td>POINTER</td><td><a href="39_6.html">39.6</a></td><td></td><td>This field contains the VIC request that generated the General Order (ORM~O01) HL7 message transmitted to the NCMD.</td></tr><tr><td>.03</td><td>transmitted date/time(+)</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date and time that the General Order (ORM~O01) HL7message is transmitted.</td></tr><tr><td>.04</td><td>status(+)</td><td>0;4</td><td>SET OF CODES</td><td>T:TRANSMITTED<br/>A:ACCEPTED<br/>RJ:REJECTED<br/>RT:RETRANSMITTED<br/></td><td></td><td>This field contains the status of the HL7 transmission as a set of codes.</td></tr><tr><td>.05</td><td>ack received date/time</td><td>0;5</td><td>DATE-TIME</td><td></td><td></td><td>This field contains the date and time that a General Order Response (ORR~O02) HL7 message was received acknowledging the transmission.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

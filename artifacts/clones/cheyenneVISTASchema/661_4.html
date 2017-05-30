@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > HCPCS INVENTORY</h1></div><div id="results"><dl><dt>name</dt><dd>HCPCS INVENTORY</dd><dt>number</dt><dd>661.4</dd><dt>location</dt><dd>^RMPR(661.4,</dd><dt>description</dt><dd>This file holds the re-order quantity for a given HCPCS item at a given LOCATION and STATION.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>hcpcs(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the HCPCS code</td></tr><tr><td>2</td><td>hcpcs item(+)</td><td>0;2</td><td>NUMERIC</td><td></td><td></td><td>This field is a pointer to the HCPCS ITEM sub-file (661.12) of thePROSTHETIC HCPCS file (661.1). ********* S I T E  I N T E G R A T O R S  B E W A R E *********It is defined as free text as FM does not allow sub-file pointers to bedefined explicitly.</td></tr><tr><td>3</td><td>station(+)</td><td>0;3</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This field is a pointer to the INSTITUTION file (4).</td></tr><tr><td>4</td><td>re-order quantity</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>This field is the re-order quantity for a HCPCS item at a Station and isused to drive reports which alert sites to the need to re-order.</td></tr><tr><td>5</td><td>quantity on order</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This field is the current quantity on order for a HCPCS Item at a Station.It is used to inform sites that although a stock item might be below theproscribed re-order level, orders have been placed to re-stock.A distinction should be made on low stock warning type reports between thesituation where the current on-hand quantity + on-order quantity is belowthe re-order level, and that where it is not.This field will be updated for any receipt or order type transactionrecorded in the PROSTHETIC INVENTORY TRANSACTION file (661.6):-for receipt type transactions subtract the receipt quantity,for order type transactions add the order quantity.</td></tr><tr><td>7</td><td>location(+)</td><td>0;7</td><td>POINTER</td><td><a href="661_5.html">661.5</a></td><td>C</td><td>This field is a pointer to the Prosthetic Stock Location file (661.5).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

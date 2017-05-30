@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ENG ARCHIVE LOG</h1></div><div id="results"><dl><dt>name</dt><dd>ENG ARCHIVE LOG</dd><dt>number</dt><dd>6919</dd><dt>location</dt><dd>^ENG(6919,</dd><dt>description</dt><dd>Permanent record of every archival episode performed within theEngineering Package.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>archive i.d.(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Unique identifier of each archival episode.  Computer generated.</td></tr><tr><td>1</td><td>records type(+)</td><td>1;1</td><td>SET OF CODES</td><td>1:ENG. WORK ORDERS<br/>2:2162 ACCIDENT REPORTS<br/>3:EQUIPMENT INVENTORY<br/>4:PROJECTS<br/>5:CONTROL POINT TRANSACTIOONS<br/></td><td></td><td>Identifies the file from which archived records were taken.</td></tr><tr><td>2</td><td>records start date</td><td>1;2</td><td>DATE-TIME</td><td></td><td></td><td>The beginning date specified by the user when archiving wasrequested.</td></tr><tr><td>3</td><td>records stop date</td><td>1;3</td><td>DATE-TIME</td><td></td><td></td><td>The ending date specified by the user when archiving was requested.</td></tr><tr><td>4</td><td>opt. search params.</td><td>1;4</td><td>FREE TEXT</td><td></td><td></td><td>Options specified by the user for archival of specific records.These options vary with file type.  Automatically captured bythe system during the archival process.</td></tr><tr><td>5</td><td>no. records saved</td><td>1;5</td><td>NUMERIC</td><td></td><td></td><td>Count of records that were archived.  Recorded automatically.</td></tr><tr><td>6</td><td>phys. location</td><td>1;6</td><td>FREE TEXT</td><td></td><td>C</td><td>Physical storage of archival medium.  Entered by user for futurereference.</td></tr><tr><td>7</td><td>tape description</td><td>1;7</td><td>FREE TEXT</td><td></td><td>D</td><td>General description of archival set, entered at the discretionof the user.</td></tr><tr><td>8</td><td>file type version</td><td>1;8</td><td>FREE TEXT</td><td></td><td></td><td>Indicates revision of archival record type.  Internal use only.Generated automatically.</td></tr><tr><td>10</td><td>activity log</td><td>2;0</td><td>MULTIPLE</td><td><a href="6919_01.html">6919.01</a></td><td></td><td>Record of all activity on a defined archival set.  This log ismaintained by the system automatically.</td></tr><tr><td>20</td><td>equipment inv. entry #</td><td>3;0</td><td>MULTIPLE</td><td><a href="6919_02.html">6919.02</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

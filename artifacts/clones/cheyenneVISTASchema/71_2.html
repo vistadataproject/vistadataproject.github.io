@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PROCEDURE MODIFIERS</h1></div><div id="results"><dl><dt>name</dt><dd>PROCEDURE MODIFIERS</dd><dt>number</dt><dd>71.2</dd><dt>location</dt><dd>^RAMIS(71.2,</dd><dt>description</dt><dd>This file contains the modifiers that can be associated with an imagingexam.  These modifiers are used to further describe the procedureassociated with the exam. For example, if an exam of the 'hand' wasperformed then the modifier 'left' can be chosen to indicate which hand. If an exam has a modifier associated with it, then it will automaticallyappear on the report. When the system is installed, the following modifiers are loaded as partof the module:          o PORTABLE         o OPERATING ROOM         o BILATERAL         o LEFT         o RIGHT Portable, Operating Room and Bilateral are very important for thecompilation of the AMIS report.  For this reason, the name of themodifier is uneditable.  Any modifier who meaning is portable, operatingroom, or bilateral should be further defined by entering one of thesechoices in the AMIS Credit Indicator field. Series type procedures cannotbe assigned modifiers that affect AMIS credit. Entries in this file should not be deleted. Adding new entries is alwaysallowed. Each modifier must be assigned one or more Imaging Type(s) in order toappear as a selection during modifier edits of procedures and exams. Todeactivate a modifier, use the option for editing procedure modifiers todelete all the imaging types that appear under the modifier. To add site specific modifiers and to obtain more information regardingthis file, see the ADPAC Guide.  Data Storage ------------ The data for the 'PROCEDURE MODIFIERS' file is stored in the ^RAMIS(71.2,global. At the present time this file is very static afterinitialization is complete.  However, it still should be journaled.It should also be translated if the operating system supports this function.  Input Templates --------------- The package does not use any input templates associated with thisfile.  Print Templates --------------- The package does not use any print templates associated with thisfile.  Sort Templates -------------- The package does not use any sort templates associated with thisfile.</dd><dt>applicationGroups</dt><dd>RA</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This field contains the name of the procedure modifier.  Proceduremodifiers are used to further describe the procedure performed and can befrom 2-30 characters in length. Following are examples of procedure modifiers which are included inthe system:  Portable, Operating Room, Bilateral, Left, Right.  Sites mayadd additional procedure modifiers.</td></tr><tr><td>3</td><td>type of imaging</td><td>1;0</td><td>MULTIPLE</td><td><a href="71_23.html">71.23</a></td><td></td><td>This field contains the name of the type of imaging from the'Imaging Type' file.  Enter imaging types for which this modifieris valid.</td></tr><tr><td>4</td><td>amis credit indicator</td><td>0;2</td><td>SET OF CODES</td><td>b:BILATERAL<br/>o:OPERATING ROOM<br/>p:PORTABLE<br/></td><td></td><td>This is the AMIS credit indicator used in workload reports for thismodifier.  If this modifier is a bilateral, operating room or portabletype of modifier, this field should be used to indicate that.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

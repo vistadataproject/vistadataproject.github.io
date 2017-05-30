@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > APPLICATION ENTITY TITLE</h1></div><div id="results"><dl><dt>name</dt><dd>APPLICATION ENTITY TITLE</dd><dt>number</dt><dd>2006.588</dd><dt>location</dt><dd>^MAGDICOM(2006.588,</dd><dt>description</dt><dd>The APPLICATION ENTITY TITLE file (2006.588) is used to map Application Entity Titles to aliases and descriptive names.  It is built from the entries in AETITLE.DIC. The APPLICATION ENTITY TITLE file is used for two purposes.  When a DICOM Service Class User (SCU) negotiates an association with VistA, it may present a Called Application Entity Title that is different than one defined in the SCP_LIST.DIC.  The APPLICATION ENTITY TITLE file may contain an entry for the SCU's Called Application Entity Title that maps it to one that is defined in SCP_LIST.DIC. This is required in order for the association to be accepted. The second purpose is to provide a mapping from the SCU's Calling Application Entity Title to a more descriptive name, which help to identify it better.  In this case, if the SCU's Called Application Entity Title is one that is defined in the SCP_LIST.DIC, the entry in the APPLICATION ENTITY TITLE file is optional.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>application entity title(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The value of this field will be used during the DICOM negotiation request. The AE_TITLE.DIC is used to map the Called Application Entity Title of a DICOM negotiation request to the alias that identifies the VistA ApplicationEntity Title name for the SCP.  This is used for looking up acceptable presentation contexts in SCP_LIST.DIC.  The Called Application Entity Titlefor a DICOM request must either be the VistA Application Entity Title namein file SCP_LIST.DIC or else one defined in AE_Title.DIC as an alias for the VistA one. Otherwise, the DICOM negotiation request will be rejected.</td></tr><tr><td>2</td><td>alias</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This field is optional and it stores the alias for the Application Entity Title.</td></tr><tr><td>3</td><td>site name</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field stores the site that has the device with the Application Entity Title.For example: "Walter Reed AMC" could be the site name for the ApplicationEntity "OSXWRAMC".</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

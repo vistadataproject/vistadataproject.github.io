@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DICOM GATEWAY MACHINE ID</h1></div><div id="results"><dl><dt>name</dt><dd>DICOM GATEWAY MACHINE ID</dd><dt>number</dt><dd>2006.5641</dd><dt>location</dt><dd>^MAGDICOM(2006.5641,</dd><dt>description</dt><dd> +---------------------------------------------------------------+ |                                                               | | Property of the US Government.                                | | No permission to copy or redistribute this software is given. | | Use of unreleased versions of this software requires the user | | to execute a written test agreement with the VistA Imaging    | | Development Office of the Department of Veterans Affairs,     | | telephone (301) 734-0100.                                     | |                                                               | | The Food and Drug Administration classifies this software as  | | a medical device.  As such, it may not be changed in any way. | | Modifications to this software may result in an adulterated   | | medical device under 21CFR820, the use of which is considered | | to be a violation of US Federal Statutes.                     | |                                                               | +---------------------------------------------------------------+ This table is used to keep track of the various Machine IDs onthe DICOM Gateways. Since each ID has to be a unique one, thesoftware that maintains this table uses the data in this tableto ensure that the same ID is not issued multiple times.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>machine id(+)</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>The value of this field is the same as the internal entry number.</td></tr><tr><td>2</td><td>hostname(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>The value of this field is a string. This string represents the'hostname' of the computer that is used for the DICOM Gateway thatis described in the current record. The format of the 'hostname' is subject to VA policy.Policies regarding the format of these names are subject to change, hence noadditional formatting restrictions are imposed in this datadefinition. </td></tr><tr><td>3</td><td>timestamp</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>The value of this field is a date/time value ($Horolog format).This value represents the date and time when the content of thisrecord was most recently confirmed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DG SECURITY LOG</h1></div><div id="results"><dl><dt>name</dt><dd>DG SECURITY LOG</dd><dt>number</dt><dd>38.1</dd><dt>location</dt><dd>^DGSL(38.1,</dd><dt>description</dt><dd>This file contains all sensitive patients. Patients are eithersensitive or non-sensitive. This file is also used as an audittrail for when a sensitive patient is accessed, who accessed it,the option used to access it and whether or not the patient wasan inpatient at the time the record was accessed.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>patient name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>This field contains a pointer to the PATIENT file representing the patientwho is listed as sensitive.</td></tr><tr><td>2</td><td>security level(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:NON-SENSITIVE<br/>1:SENSITIVE<br/></td><td></td><td>This field contains a 1 if the patient record is presently listed assensitive or a 0 if the patient's record is not currently sensitive.</td></tr><tr><td>3</td><td>security assigned by(+)</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>This field contains a pointer to the NEW PERSON file denoting the name ofthe user who most recently changed this patient's security level.</td></tr><tr><td>4</td><td>date/time security assigned(+)</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field contians the date/time that this patient's security level wasmost recently changed.</td></tr><tr><td>5</td><td>security source</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the remote source that assigned the patient's security level.</td></tr><tr><td>50</td><td>date/time record accessed</td><td>D;0</td><td>MULTIPLE</td><td><a href="38_11.html">38.11</a></td><td></td><td>This multiple contains information on when and by whom a patient's recordwas accessed (if that patient's record was listed as sensitive at the time).</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

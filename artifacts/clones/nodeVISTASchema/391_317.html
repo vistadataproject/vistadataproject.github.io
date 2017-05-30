@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > TRANSACTION</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="391_31.html">391.31</a></dd><dt>name</dt><dd>TRANSACTION</dd><dt>number</dt><dd>391.317</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>transaction date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>Date and time transaction was transmitted.  The date/time is reflective of the last time this event was transmitted.</td></tr><tr><td>.02</td><td>message id of xmit to ht</td><td>0;2</td><td>FREE TEXT</td><td></td><td>D</td><td>Message ID of last transmission to Home Telehealth Vendor server.</td></tr><tr><td>.03</td><td>user creating transaction</td><td>0;3</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>The user creating this transaction. This information is obtained from the DUZ.</td></tr><tr><td>.04</td><td>message type(+)</td><td>0;4</td><td>SET OF CODES</td><td>A:ACTIVATION/SIGN UP<br/>I:INACTIVATION<br/></td><td></td><td>This is the type of message being transmitted for the Home Telehealth patient.    A   Patient Activation/Sign-up. This is a 'A04' (register) HL7 type message.    I   Patient Inactivation.  This is an 'A03' (discharge) HL7 type message.</td></tr><tr><td>.05</td><td>transmission event(+)</td><td>0;5</td><td>SET OF CODES</td><td>0:RETRANSMIT<br/>1:ADD<br/></td><td></td><td>Actions taken for the transmission are as follows:-  ADD         Encounter 1st added.    RETRANSMIT  Encounter retransmitted.</td></tr><tr><td>.06</td><td>date/time of ack from ht</td><td>0;6</td><td>DATE-TIME</td><td></td><td></td><td>Date and time acknowledgement for transmission to Home Telehealth Vendor server was received. </td></tr><tr><td>.07</td><td>ack code from ht</td><td>0;7</td><td>SET OF CODES</td><td>A:ACCEPTED<br/>R:REJECTED<br/></td><td></td><td>Code denoting type of acknowledgement received for transmission to Home Telehealth Vendor Server.  This code is related to the application acknowledgement.  The codes are as follows:-    A = Accepted    R = Rejected</td></tr><tr><td>.08</td><td>reject message</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>If there was an error in processing of the transmission message, this field will contain the 3-50 characters of the error message.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

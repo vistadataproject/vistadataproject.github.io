@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > V.O.R. TRANSACTION</h1></div><div id="results"><dl><dt>name</dt><dd>V.O.R. TRANSACTION</dd><dt>number</dt><dd>667.3</dd><dt>location</dt><dd>^RMPR(667.3,</dd><dt>description</dt><dd>This file contains all items that are added as new, repair, or vanmodifications to be counted on AMIS.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>date processed(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>The date that the item or repair was processed.</td></tr><tr><td>1</td><td>vehicle id#</td><td>0;2</td><td>POINTER</td><td><a href="667.html">667</a></td><td>C</td><td>The Identification number of the Vehicle of Records.  This points to file667 and is an internal entry number.</td></tr><tr><td>2</td><td>item(+)</td><td>0;3</td><td>POINTER</td><td><a href="667_1.html">667.1</a></td><td></td><td>The name of the item that will be on the Vehicle of Records.</td></tr><tr><td>2.5</td><td>qty(+)</td><td>0;7</td><td>NUMERIC</td><td></td><td></td><td>Contains the quantity of items purchased.</td></tr><tr><td>3</td><td>cost(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td></td><td>The cost of the item.</td></tr><tr><td>4</td><td>amis code(+)</td><td>0;5</td><td>SET OF CODES</td><td>21B:A<br/>21A:V<br/>R16:R<br/></td><td></td><td>This field contains the AMIS code for the transaction.</td></tr><tr><td>5</td><td>description</td><td>1;0</td><td>WORD-PROCESSING</td><td></td><td></td><td>This field contains the description of the vehicle transaction.</td></tr><tr><td>6</td><td>serial number</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This field contains the serial number of the item being purchasedor repaired.</td></tr><tr><td>7</td><td>amis</td><td>3;1</td><td>NUMERIC</td><td></td><td></td><td>This field contains the grouper number stored in the Site Parameters file 669.9 and should not be edited.</td></tr><tr><td>8</td><td>type of transaction(+)</td><td>0;8</td><td>SET OF CODES</td><td>I:INITIAL ISSUE<br/>R:REPLACE<br/>S:SPARE<br/>X:REPAIR<br/></td><td></td><td>Set of Codes for type of transaction processed.</td></tr><tr><td>9</td><td>patient category(+)</td><td>0;9</td><td>SET OF CODES</td><td>1:SC/OP<br/>2:SC/IP<br/>3:NSC/IP<br/>4:NSC/OP<br/></td><td></td><td>This field stores the patient category for this V.O.R. transaction.</td></tr><tr><td>10</td><td>special category</td><td>0;10</td><td>SET OF CODES</td><td>1:SPECIAL LEGISLATION<br/>2:A&A<br/>3:PHC<br/></td><td></td><td>This field stores the patient's special category for this V.O.R.transaction.</td></tr><tr><td>11</td><td>source(+)</td><td>0;11</td><td>SET OF CODES</td><td>V:VA<br/>C:COMMERCIAL<br/></td><td></td><td>Set of codes for the source of the item either Commercial or VA.</td></tr><tr><td>12</td><td>station name</td><td>2;1</td><td>POINTER</td><td><a href="4.html">4</a></td><td></td><td>This field is a pointer to the Insitution file.  If the data base is Multi Divisional entries are screened out by the station number.</td></tr><tr><td>13</td><td>user</td><td>2;2</td><td>POINTER</td><td><a href="200.html">200</a></td><td></td><td>Person who entered the transaction.</td></tr><tr><td>14</td><td>return date</td><td>0;12</td><td>DATE-TIME</td><td></td><td></td><td>Contains the date that the item was retunred thru the Flag Item a Returned/Condemned option.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

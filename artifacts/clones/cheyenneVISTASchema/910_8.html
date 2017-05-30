@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > ESP EVIDENCE</h1></div><div id="results"><dl><dt>name</dt><dd>ESP EVIDENCE</dd><dt>number</dt><dd>910.8</dd><dt>location</dt><dd>^ESP(910.8,</dd><dt>description</dt><dd>The ESP EVIDENCE file contains data necessary to implement theEvidence/Property Custody Records requirement mandated by the VAPolice policy directives.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>record number(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>The Record Number should be input in the following format:  92-001,92-011, 92-111, etc.</td></tr><tr><td>.02</td><td>uor number</td><td>0;2</td><td>POINTER</td><td><a href="912.html">912</a></td><td></td><td>The Uniform Offense Report (UOR) Number must be entered in straight numeric format, (i.e., 301100630).  The Uniform Offense Report (UOR) Numbermust exist in the ESP Offense Report file.  If there is no UniformOffense Report associated with the Evidence/Property Record, leave thisfield blank.</td></tr><tr><td>.03</td><td>date/time obtained</td><td>0;3</td><td>DATE-TIME</td><td></td><td></td><td>Enter the date and time that the Evidence/Property was taken intocustody by the VA Police.</td></tr><tr><td>.04</td><td>sensitive flag</td><td>0;4</td><td>SET OF CODES</td><td>0:NONSENSITIVE<br/>1:SENSITIVE<br/></td><td></td><td>This field is set by the program so can tell ifthis evidence is sensitive.  A person must have theESP CHIEF key to view a sensitive evidence record.</td></tr><tr><td>.05</td><td>facility</td><td>0;5</td><td>POINTER</td><td><a href="40_8.html">40.8</a></td><td></td><td>Enter the Facility that this evidence is associated with.</td></tr><tr><td>1</td><td>item number</td><td>1;0</td><td>MULTIPLE</td><td><a href="910_81.html">910.81</a></td><td></td><td>This field contains the Item # as listed on the Evidence/PropertyCustody Record.</td></tr><tr><td>5</td><td>change of custody date</td><td>5;0</td><td>MULTIPLE</td><td><a href="910_85.html">910.85</a></td><td></td><td>This field contains the date/time that the Evidence/Property itemsphysically changed custody.</td></tr><tr><td>10</td><td>record status</td><td>10;1</td><td>SET OF CODES</td><td>C:CLOSED<br/>O:OPEN<br/></td><td></td><td>Enter the current status for this record.  It must be either'O' for Open or 'C' for Closed.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

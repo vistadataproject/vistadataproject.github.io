@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > QUIC EXTRACT</h1></div><div id="results"><dl><dt>name</dt><dd>QUIC EXTRACT</dd><dt>number</dt><dd>738.1</dd><dt>location</dt><dd>^QIP(738.1,</dd><dt>description</dt><dd>This file will be used to "automatically queue" the options on theQUIC "DHCP Extract Reports" menu.  The file consists of the optionmenu text and a list of variables which must be "pre-answered"in order to queue each extract report to print.  The file arrives atthe VAMC with some data.  Data in this file SHOULD NOT be alteredthrough the use of VA FileMan; input should take place ONLY throughthe Quality Improvement Checklist menu options.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Each QUIC extract entry contains the option menu text as listedon the "DHCP Extract Reports" menu.</td></tr><tr><td>.25</td><td>inactive flag</td><td>I;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field will be set to "1" if an option has been taken off thecurrent survey and is scheduled for future deletion.</td></tr><tr><td>.5</td><td>not available flag</td><td>NA;1</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This flag will identify (by a "1" for "YES") those Extract Options thatare not available because the "parent" DHCP package is not installed.</td></tr><tr><td>1</td><td>parent menu(+)</td><td>0;2</td><td>SET OF CODES</td><td>L:LABORATORY<br/>M:MAS<br/>N:NURSING<br/>P:PHARMACY<br/>S:SURGERY<br/>Q:QUALITY MANAGEMENT<br/>R:RADIOLOGY<br/></td><td>APAR</td><td>Parent menu is an identifier which is displayed along with the option menu text.</td></tr><tr><td>2</td><td>required variables answered?</td><td>0;3</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>When all required variables for this option have been answered, this flagwill be set to "1".  Before an option is "automatically" queueable,all required variables for that option must be "pre-answered".</td></tr><tr><td>3</td><td>display order</td><td>0;4</td><td>NUMERIC</td><td></td><td>ADSP</td><td>This field will contain a number which is the order in which the options will be presented to the user.</td></tr><tr><td>4</td><td>entry point</td><td>ROU;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Enter the entry point in the extract routine which will producethe extract report.  This will be in the form "TAG^ROUTINE".</td></tr><tr><td>5</td><td>pre-queue</td><td>PRE;E1,245</td><td>FREE TEXT</td><td></td><td></td><td>Enter the entry point in the extract routine which will set upa variable array (i.e., list of procedures) prior to auto-queueing.This will be in the form "TAG^ROUTINE".</td></tr><tr><td>6</td><td>subfile flag(+)</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td>This field serves as a flag to inform the auto-queue software ifthe "Variable" subfile contains any variables which are "User SuppliedAnswer?" but do not require an answer.</td></tr><tr><td>10</td><td>variable</td><td>5;0</td><td>MULTIPLE</td><td><a href="738_11.html">738.11</a></td><td></td><td>This field contains the variable name which must be "pre-answered"before calling the entry point to queue the extract report.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

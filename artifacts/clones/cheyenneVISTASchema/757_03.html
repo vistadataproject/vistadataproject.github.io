@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > CODING SYSTEMS</h1></div><div id="results"><dl><dt>name</dt><dd>CODING SYSTEMS</dd><dt>number</dt><dd>757.03</dd><dt>location</dt><dd>^LEX(757.03,</dd><dt>description</dt><dd>This file contains the descriptive titles for medical terminology anddiagnosis and classification systems.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>source abbreviation(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>Three to six character identifier for the source of the classificationcode located in the Codes file (#757.02).  The normal format is a threecharacter mnemonic for the classification source, appended with the yearof publication of the source (i.e., ICD89).</td></tr><tr><td>1</td><td>nomenclature(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>Short title for the classification source.  This is the name normally usedto refer to the source (i.e., ICD-9, CPT-4, DSM-IIIR, SNOMED etc.)</td></tr><tr><td>2</td><td>source title(+)</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>Full title of source.  Also includes edition/revision and year ofpublication when available.</td></tr><tr><td>3</td><td>source</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This is source of the named coding system.</td></tr><tr><td>4</td><td>entries</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the number of coded entries found in the Lexicon (by classificationsystem) at the time of export.  NOTE:  This does not include deactivatedentries.</td></tr><tr><td>5</td><td>unique entries</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the number of unique coded entries found in the Lexicon (byclassification system) at the time of export.  NOTE:  This does not includedeactivated entries.</td></tr><tr><td>6</td><td>inactive version</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This represents the version number of the source file for which inactivatedcodes are derived.</td></tr><tr><td>7</td><td>hl7 coding system</td><td>0;8</td><td>FREE TEXT</td><td></td><td>D</td><td>This is the HL7 coding system mnemonic for the Lexicon coding system</td></tr><tr><td>10</td><td>sdo version</td><td>1;0</td><td>MULTIPLE</td><td><a href="757_08.html">757.08</a></td><td></td><td>This multiple stores the Standards Development Organization's (SDO) nomenclature that identifies the versions of their code systems and theirassociated dates. This information will be essential to applications thatshare code systems data with external agencies.</td></tr><tr><td>11</td><td>implementation date</td><td>2;1</td><td>DATE-TIME</td><td></td><td></td><td>This is either the VistA implementation date or theinitial publication date.  If the VistA implementationdate is different from the initial publication date then the VistA date will be used, i.e.    ICD-10 Published (world wide)  Jan 1, 1992   ICD-10 VistA Implementation    Oct 1, 2013       Oct 1, 2013 is used for ICD-10    UMDNS Published (world-wide)   Jan 1, 1993   UMDNS VistA Implementation         N/A       Jan 1, 1993 is used for UMDNS</td></tr><tr><td>12</td><td>search threshold</td><td>2;2</td><td>NUMERIC</td><td></td><td></td><td>This number is the maximum number of terms thatshould be looked at before a warning is issuedto the user.  The application would ask theuser if they wanted to continue with the search(knowing in advance that it will take quite sometime) or if they wanted to further specify the inputsearch parameter.  This is a site editable field.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

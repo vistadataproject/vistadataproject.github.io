@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > COTS INVENTORY SUBSCRIPTION CONTROL</h1></div><div id="results"><dl><dt>name</dt><dd>COTS INVENTORY SUBSCRIPTION CONTROL</dd><dt>number</dt><dd>414.03</dd><dt>location</dt><dd>^PRCV(414.03,</dd><dt>description</dt><dd>In the event that an external system needs to be notified when an event of some type occurs, a publish/subscribe interface allows messages to be sent to that system when the event occurs. This file contains a list of active subscriptions, and records are added or deleted in response to "subscribe" or "cancel" messages received from the external system. More than one type of subscription is supported.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>station</td><td>0;1</td><td>POINTER</td><td><a href="411.html">411</a></td><td></td><td>This is the station number associated with the IFCAP object being moniored. It is required, but may be 0.</td></tr><tr><td>.02</td><td>subscription</td><td>0;2</td><td>FREE TEXT</td><td></td><td></td><td>This is the object (e.g., fund control point) being monitored. This field is an identifying string (required) and field .03 identifies the type of objct. The format of the string depends on the object type.</td></tr><tr><td>.03</td><td>subscription type</td><td>0;3</td><td>SET OF CODES</td><td>1:FCP Running Balance<br/></td><td>AC</td><td>This field is a code that specifies the subscription type. The interpretation of field .02 depends on the value of this code. These two fields are intended to provide support for multiple types of subscriptions within the one file.</td></tr><tr><td>1</td><td>created</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This is the date/time that this subscription was created.</td></tr><tr><td>2</td><td>active</td><td>0;5</td><td>BOOLEAN</td><td>1:YES<br/>0:NO<br/></td><td></td><td></td></tr><tr><td>3</td><td>subscription mid</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the message control ID (MID) of the HL7 message requesting that this subscription be created.</td></tr><tr><td>10</td><td>attribute set</td><td>1;0</td><td>MULTIPLE</td><td><a href="414_031.html">414.031</a></td><td></td><td>This subfile is used to store attribute values for the object associated with the subscription. Since the file is designed to work with various types of objects, attributes are stored as simple key/value pairs, where both the key and  value are free text.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

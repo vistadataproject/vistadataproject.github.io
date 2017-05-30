@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MAS ELIGIBILITY CODE</h1></div><div id="results"><dl><dt>name</dt><dd>MAS ELIGIBILITY CODE</dd><dt>number</dt><dd>8.1</dd><dt>location</dt><dd>^DIC(8.1,</dd><dt>description</dt><dd>The MAS ELIGIBILITY CODE file consists of those codes which have beenestablished by VACO MAS.  Currently there are 18 eligibility codesin use by the Dept of Veterans Affairs.  Addition to this file oflocal codes or modification of those codes distributed by the MASpackage developers could have a negative impact on the performanceof the MAS module as well as other modules. If local codes are desired, the site can enter them inthe ELIGIBILITY CODE file (#8).  Each code entered inthe ELIGIBILITY CODE file must point to an entry inMAS ELIGIBILITY CODE file via the MAS ELIGIBILITY CODEfield.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This is the official name of the MAS eligibility code.</td></tr><tr><td>1</td><td>card color(+)</td><td>0;2</td><td>SET OF CODES</td><td>P:PURPLE<br/>B:BLUE<br/>R:RED<br/></td><td></td><td>This field indicates the color of the patient's card for theMAS eligibility.</td></tr><tr><td>2</td><td>abbreviation</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field may contain an abbreviation for the eligibilityname.  It may be used in place of the name in selectedprints.</td></tr><tr><td>3</td><td>va code number(+)</td><td>0;4</td><td>NUMERIC</td><td></td><td>C</td><td>This field contains the VA CODE NUMBER that has been assignedto this eligibility.</td></tr><tr><td>4</td><td>type(+)</td><td>0;5</td><td>SET OF CODES</td><td>N:NON-VETERAN<br/>Y:VETERAN<br/></td><td></td><td>This field indicates the type of patient that can be assignedthis eligibility. The patient is either a 'veteran' or a'non-veteran' type.</td></tr><tr><td>5</td><td>print name(+)</td><td>0;6</td><td>FREE TEXT</td><td></td><td></td><td>This field contains a shorten eligibility name that is used foroutput that has limited space to print.</td></tr><tr><td>6</td><td>inactive</td><td>0;7</td><td>BOOLEAN</td><td>1:YES<br/></td><td></td><td>If the eligibility is inactive then this field will be set to'YES'.</td></tr><tr><td>7</td><td>select as additional</td><td>0;8</td><td>BOOLEAN</td><td>0:NO<br/>1:YES<br/></td><td></td><td>This field indicates whether patients may be assigned this eligibilityas an 'additional' eligibility. If the field is set to 'NO' or is not filled in, then the eligibility canonly be assigned as a primary eligibility. If set to 'YES', then the eligibility can be used as both aprimary and an 'additional' eligibility.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

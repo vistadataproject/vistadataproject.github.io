@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REMINDERS/COUNTING RULES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="810_21.html">810.21</a></dd><dt>name</dt><dd>REMINDERS/COUNTING RULES</dd><dt>number</dt><dd>810.22</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>reminder sequence</td><td>0;1</td><td>NUMERIC</td><td></td><td>B</td><td>This is the sequence number which determines the order in which the reminders will be evaluated and the sequence that reminder compliance totals and findingtotals from extract runs are stored in the extract summary file. </td></tr><tr><td>1</td><td>reminder</td><td>0;2</td><td>POINTER</td><td><a href="811_9.html">811.9</a></td><td></td><td>This is the reminder to be evaluated by the extract process. The status ofthe reminder (applicable, not applicable, due, not due) is used to accumulatecompliance totals which are stored in the extract summary file.</td></tr><tr><td>2</td><td>counting rule</td><td>0;3</td><td>POINTER</td><td><a href="810_7.html">810.7</a></td><td></td><td>The COUNTING RULE, file #810.7, defines which EXTRACT COUNTINGGROUPS, file #810.8, are used to collect finding counts for thisreminder. If no extract counting rules are defined for the reminderin an extract definition that includes both compliance totals andfinding totals, then no finding totals will be accumulated for thereminder.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

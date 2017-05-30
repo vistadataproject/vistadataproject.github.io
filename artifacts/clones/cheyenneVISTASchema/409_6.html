@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > PATIENT APPOINTMENT INFO LOG</h1></div><div id="results"><dl><dt>name</dt><dd>PATIENT APPOINTMENT INFO LOG</dd><dt>number</dt><dd>409.6</dd><dt>location</dt><dd>^SDWL(409.6,</dd><dt>description</dt><dd>The Patient Appointment Information Transmission (PAIT) log is maintained in this file.  Log entries are added when appointment information is transmitted to the Austin Automation Center via HL7 messages.  File entries are deleted automatically when HL7 acknowledgments are received.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>run date(+)</td><td>0;1</td><td>DATE-TIME</td><td></td><td>B</td><td>The date the extract started running at the site. Extracts are run as Taskman background jobs.</td></tr><tr><td>1</td><td>task id</td><td>0;2</td><td>FREE TEXT</td><td></td><td>AD</td><td>The Taskman task ID number.  When the extract is run the Taskman ID of the process is stored in this field.</td></tr><tr><td>1.1</td><td>last batch # of this run</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>This is the the Message Conrol ID of MSH segment in the latest created HL7 batch. When the extract is run an HL7 batch is created that may contain up to 5000 individual messages.</td></tr><tr><td>1.2</td><td>last scanned date(+)</td><td>0;4</td><td>DATE-TIME</td><td></td><td></td><td>This field represents an appointment creation date that was completely scanned as the last one with this transmission.</td></tr><tr><td>1.3</td><td># of appointments</td><td>0;5</td><td>NUMERIC</td><td></td><td></td><td>This is the number of appointments corresponding to individual MSG segments sent with this transmission.</td></tr><tr><td>1.4</td><td># of batches(+)</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This is the number of batches generated during the run.</td></tr><tr><td>1.5</td><td>transmission finished(+)</td><td>0;7</td><td>DATE-TIME</td><td></td><td></td><td></td></tr><tr><td>2</td><td>patient</td><td>1;0</td><td>MULTIPLE</td><td><a href="409_69.html">409.69</a></td><td></td><td>The multiple field that records key elements of the patient appointmentextract.</td></tr><tr><td>3</td><td>batch tracking</td><td>2;0</td><td>MULTIPLE</td><td><a href="409_7.html">409.7</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

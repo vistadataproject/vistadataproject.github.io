@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>cheyenneVISTA</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > DSS TREATING SPECIALTY TRANSLATION</h1></div><div id="results"><dl><dt>name</dt><dd>DSS TREATING SPECIALTY TRANSLATION</dd><dt>number</dt><dd>727.831</dd><dt>location</dt><dd>^ECX(727.831,</dd><dt>description</dt><dd>This file will translate the patient's treating specialty to aDOM/PRRTP/SARRTP code (if applicable), an observation patient indicator,an inpatient/outpatient status indicator, and an observation stop code foruse in all DSS extracts. This file was originally called DOM PRRTP SAARTP ETC and has been modifiedas part of the DSS FY2002 software release.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>treating specialty(+)</td><td>0;1</td><td>POINTER</td><td><a href="42_4.html">42.4</a></td><td>B</td><td>The treating specialty location.  This field points to the TREATINGSPECIALTY file (#42.4).  This field is DINUMed.  This file is maintainedby the DSS package and should not be altered in any way.</td></tr><tr><td>2</td><td>dom/prrtp/sarrtp code</td><td>0;2</td><td>SET OF CODES</td><td>P:GEN. PRRTP<br/>T:PTSD PRRTP<br/>S:DOM. PRRTP<br/>H:HOMELESS CWT/TR<br/>A:SA CWT/TR<br/>D:DOMICILIARY<br/>B:PTSD CWT/TR<br/>C:GEN. CWT/TR<br/></td><td></td><td>This field contains the DOM/PRRTP/SARRTP code the patient is admitted toat time of service.</td></tr><tr><td>3</td><td>in/out code</td><td>0;3</td><td>NUMERIC</td><td></td><td></td><td>Old inpatient/outpatient code, used by the PAI extract only at this time.</td></tr><tr><td>4</td><td>observation pat indicator</td><td>0;4</td><td>BOOLEAN</td><td>Y:YES<br/>N:NO<br/></td><td></td><td>This field contains the observation patient indicator which is basedon the treating specialty and inpat/outpat code values of the record.</td></tr><tr><td>5</td><td>inpat/outpat code</td><td>0;5</td><td>SET OF CODES</td><td>I:INPATIENT<br/>O:OUTPATIENT<br/></td><td></td><td>This field contains the inpatient/outpatient status which is basedon the treating specialty value of the record.  It replaces the IN/OUTCODE field (#3) of this file.</td></tr><tr><td>6</td><td>observation stop code</td><td>0;6</td><td>NUMERIC</td><td></td><td></td><td>This field contains the observation stop code which is based on thetreating specialty value of the record.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>

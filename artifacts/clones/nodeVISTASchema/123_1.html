@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>nodeVISTA (FOIA)</title>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<![endif]-->
+<meta charset="utf-8"/>
+<meta name="application-name" content="FileMan Schema"/>
+<meta name="fragment" content="!">
+<link rel='stylesheet' href='fmBase.css' type='text/css'>
+</head>
+<body>
+<div id="header">
+<h1 id="logo"><a href="index.html">nodeVISTA (FOIA) Schema Browser</a></h1>
+</div>
+<div id="fmql">
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > REQUEST ACTION TYPES</h1></div><div id="results"><dl><dt>name</dt><dd>REQUEST ACTION TYPES</dd><dt>number</dt><dd>123.1</dd><dt>location</dt><dd>^GMR(123.1,</dd><dt>description</dt><dd>This file identifies the action types which may be used by a service to track activity related to a consult or request.  Certain action types may have a "GMRCACT " protocol entry in the ProtocolFile (101) which corresponds to the action type.  Two actions should not point to the same protocol.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.001</td><td>number</td><td></td><td>11</td><td></td><td></td><td>The internal entry number of the Request Action Type.</td></tr><tr><td>.01</td><td>action type(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This file contains the tracking actions which may be taken to tracka Consult or Request order from its entry in CPRS through itsresolution. This file also contains relationships of CPRS statuses which are theresult of the action taken.</td></tr><tr><td>1</td><td>related oe/rr status</td><td>0;2</td><td>POINTER</td><td><a href="100_01.html">100.01</a></td><td>AC</td><td>This is the CPRS status which will be used to update the order in OE/RRwhen this action is taken.</td></tr><tr><td>3</td><td>disabled message</td><td>0;4</td><td>FREE TEXT</td><td></td><td></td><td>This field displays a 'DISABLED' message when this CPRS status has beendisabled.</td></tr><tr><td>4</td><td>hl7 control code from consults</td><td>0;5</td><td>FREE TEXT</td><td></td><td></td><td>This field indicates what HL7 control code is passed to CPRS fromConsults.    Example:              "SN"=Service entered, backdoor consult, automaticallyreleased from CPRS, though signatures may still be required depending onnature of order             "OD"=Discontinued             "OC"=Denied by service (Cancelled)             "SC"=Service status update (generic status change) for activeand partial results             "XX"=Forwarded             "RE"=Completed</td></tr><tr><td>5</td><td>hl7 control code from cprs</td><td>0;6</td><td>FREE TEXT</td><td></td><td>D</td><td>This field indicates what HL7 control code is passed from CPRS toConsults.    Example: "NW"=New consult entered and released through CPRS             "CA"=Cancelled via the orders tab             "DC"=Discontinued</td></tr><tr><td>6</td><td>hl7 table 38 order status</td><td>0;7</td><td>FREE TEXT</td><td></td><td></td><td>This field is for documenting purposes and contains the related Table 38order status from HL7 for each activity.</td></tr><tr><td>7</td><td>action print name</td><td>0;8</td><td>FREE TEXT</td><td></td><td></td><td>This field is used on the 513 Form as a header for comments.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+</div>
+<div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
+</body>
+</html>
