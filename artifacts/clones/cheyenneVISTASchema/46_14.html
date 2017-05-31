@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>cheyenneVISTA</title>
+<title>Cheyenne</title>
 <!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 <![endif]-->
@@ -12,10 +12,10 @@
 </head>
 <body>
 <div id="header">
-<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+<h1 id="logo"><a href="index.html">Cheyenne Schema Browser</a></h1>
 </div>
 <div id="fmql">
-<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RAI MDS ASIH PATIENT</h1></div><div id="results"><dl><dt>name</dt><dd>RAI MDS ASIH PATIENT</dd><dt>number</dt><dd>46.14</dd><dt>location</dt><dd>^DGRU(46.14,</dd><dt>description</dt><dd>In the initial design of the RAI/MDS interface, the need to create adischarge when a patient exceeds 30 days in ASIH was overlooked.  Becausethe RAI/MDS interface is triggered by PIMS ADT events, there is no PIMSevent for this discharge.  In fact, the PIMS software creates a pseudodischarge at the time the patient goes on ASIH with a date/time of NOWplus 30 days.  Therefore, if the 30 days is exceeded, the discharge goesinto affect.  If the patient returns or dies while ASIH, the discharge iseither deleted or modified.In order to maintain control of the patients on ASIH, a new file wascreated.  In addition, a routine which will periodically run checking theentries for patients who have exceeded the 30 day stay.  Whenever a stayis found to exceed the 30 days, an HL7 Discharge (A03) will be created andsent to the COTS system and the entry in the RAI MDS ASIH PATIENT filewill be inactivated.  This file and associated routine and option are partof patch DG*5.3*328.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>The name of the patient in the format last name,first name.</td></tr><tr><td>.02</td><td>to asih date/time</td><td>1;0</td><td>MULTIPLE</td><td><a href="46_15.html">46.15</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > RAI MDS ASIH PATIENT</h1></div><div id="results"><dl><dt>name</dt><dd>RAI MDS ASIH PATIENT</dd><dt>number</dt><dd>46.14</dd><dt>location</dt><dd>^DGRU(46.14,</dd><dt>description</dt><dd>In the initial design of the RAI/MDS interface, the need to create adischarge when a patient exceeds 30 days in ASIH was overlooked.  Becausethe RAI/MDS interface is triggered by PIMS ADT events, there is no PIMSevent for this discharge.  In fact, the PIMS software creates a pseudodischarge at the time the patient goes on ASIH with a date/time of NOWplus 30 days.  Therefore, if the 30 days is exceeded, the discharge goesinto affect.  If the patient returns or dies while ASIH, the discharge iseither deleted or modified.In order to maintain control of the patients on ASIH, a new file wascreated.  In addition, a routine which will periodically run checking theentries for patients who have exceeded the 30 day stay.  Whenever a stayis found to exceed the 30 days, an HL7 Discharge (A03) will be created andsent to the COTS system and the entry in the RAI MDS ASIH PATIENT filewill be inactivated.  This file and associated routine and option are partof patch DG*5.3*328.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>name(+)</td><td>0;1</td><td>POINTER</td><td><a href="2.html">2</a></td><td>B</td><td>The name of the patient in the format last name,first name.</td></tr><tr><td>.02</td><td>to asih date/time</td><td>1;0</td><td>MULTIPLE</td><td><a href="46_15.html">46.15</a></td><td></td><td></td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>Not Referenced</p></div>
 </div>
 <div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
 </body>

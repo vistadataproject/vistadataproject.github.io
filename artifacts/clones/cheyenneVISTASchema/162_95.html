@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>cheyenneVISTA</title>
+<title>Cheyenne</title>
 <!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 <![endif]-->
@@ -12,10 +12,10 @@
 </head>
 <body>
 <div id="header">
-<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+<h1 id="logo"><a href="index.html">Cheyenne Schema Browser</a></h1>
 </div>
 <div id="fmql">
-<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS CHECK CANCELLATION REASON</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS CHECK CANCELLATION REASON</dd><dt>number</dt><dd>162.95</dd><dt>location</dt><dd>^FB(162.95,</dd><dt>description</dt><dd>This file stores the check cancellation reasons and codes used by theFinancial Management System (FMS).  These reasons will be returned tothe site from FMS when a check is cancelled.  This file will be pointedto by all payment files. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>cancellation reason(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This reason is passed back from the treasury when acheck has been cancelled.</td></tr><tr><td>1</td><td>reason code(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the actual code that is passed back from Austinwhen a check has been cancelled.</td></tr><tr><td>2</td><td>inactivation flag</td><td>0;3</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td>This field was added to this file in the event that thetreasury decides to stop using a code.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > FEE BASIS CHECK CANCELLATION REASON</h1></div><div id="results"><dl><dt>name</dt><dd>FEE BASIS CHECK CANCELLATION REASON</dd><dt>number</dt><dd>162.95</dd><dt>location</dt><dd>^FB(162.95,</dd><dt>description</dt><dd>This file stores the check cancellation reasons and codes used by theFinancial Management System (FMS).  These reasons will be returned tothe site from FMS when a check is cancelled.  This file will be pointedto by all payment files. Per VHA Directive 10-93-142, this file definition should not be modified.</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>cancellation reason(+)</td><td>0;1</td><td>FREE TEXT</td><td></td><td>B</td><td>This reason is passed back from the treasury when acheck has been cancelled.</td></tr><tr><td>1</td><td>reason code(+)</td><td>0;2</td><td>FREE TEXT</td><td></td><td>C</td><td>This is the actual code that is passed back from Austinwhen a check has been cancelled.</td></tr><tr><td>2</td><td>inactivation flag</td><td>0;3</td><td>SET OF CODES</td><td>1:INACTIVE<br/></td><td></td><td>This field was added to this file in the event that thetreasury decides to stop using a code.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><h2>Referenced by 1 types</h2><ol><li><a href="162_5.html">FEE BASIS INVOICE</a> (162.5) -- reason code</li></ol></div>
 </div>
 <div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
 </body>

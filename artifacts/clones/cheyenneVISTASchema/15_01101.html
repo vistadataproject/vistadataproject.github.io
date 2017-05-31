@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>cheyenneVISTA</title>
+<title>Cheyenne</title>
 <!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
 <![endif]-->
@@ -12,10 +12,10 @@
 </head>
 <body>
 <div id="header">
-<h1 id="logo"><a href="index.html">cheyenneVISTA Schema Browser</a></h1>
+<h1 id="logo"><a href="index.html">Cheyenne Schema Browser</a></h1>
 </div>
 <div id="fmql">
-<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MERGE PACKAGES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="15.html">15</a></dd><dt>name</dt><dd>MERGE PACKAGES</dd><dt>number</dt><dd>15.01101</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>package</td><td>0;1</td><td>POINTER</td><td><a href="9_4.html">9.4</a></td><td></td><td>Package interested in pending merge.  In order to enter a package in thisfield the package must be affected by file being merged.</td></tr><tr><td>.02</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:NOT READY<br/>1:READY<br/>2:NO FROM ENTRY<br/></td><td></td><td>This field set to 0=NOT READY if package does its own interactive merge;1=READY if package has 'from' entry and has a merge routine specified inthe package file; 2=NO FROM ENTRY if the package does not have the 'from'entry, regardless of whether it has a merge routine or not.The TRIGGER on this field must not be modified to fire on the delete side.</td></tr><tr><td>.0299</td><td>ready</td><td></td><td>COMPUTED</td><td></td><td></td><td>This field is set to 0 (not ready) if any of the entries in the MERGEPACKAGES multiple indicate via STATUS field that this duplicate recordis not ready to be merged.  If all packages are ready for this recordto be merged than this field will contain 1 (ready).</td></tr><tr><td>.03</td><td>error message</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field contains system error messages trapped during the executionof package merge routines.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><p>No REFERENCES reply available to process</p></div>
+<div class="fmqlResults"><div id="resultsHeader"><h1><a href='index.html'>Files</a> > MERGE PACKAGES</h1></div><div id="results"><dl><dt>parent</dt><dd><a href="15.html">15</a></dd><dt>name</dt><dd>MERGE PACKAGES</dd><dt>number</dt><dd>15.01101</dd><dt>Fields</dt><dd><table><thead><tr><th>#</th><th>Name</th><th>Location</th><th>Type</th><th>Details</th><th>Index</th><th>Description</th></tr></thead><tbody><tr><td>.01</td><td>package</td><td>0;1</td><td>POINTER</td><td><a href="9_4.html">9.4</a></td><td></td><td>Package interested in pending merge.  In order to enter a package in thisfield the package must be affected by file being merged.</td></tr><tr><td>.02</td><td>status(+)</td><td>0;2</td><td>SET OF CODES</td><td>0:NOT READY<br/>1:READY<br/>2:NO FROM ENTRY<br/></td><td></td><td>This field set to 0=NOT READY if package does its own interactive merge;1=READY if package has 'from' entry and has a merge routine specified inthe package file; 2=NO FROM ENTRY if the package does not have the 'from'entry, regardless of whether it has a merge routine or not.The TRIGGER on this field must not be modified to fire on the delete side.</td></tr><tr><td>.0299</td><td>ready</td><td></td><td>COMPUTED</td><td></td><td></td><td>This field is set to 0 (not ready) if any of the entries in the MERGEPACKAGES multiple indicate via STATUS field that this duplicate recordis not ready to be merged.  If all packages are ready for this recordto be merged than this field will contain 1 (ready).</td></tr><tr><td>.03</td><td>error message</td><td>0;3</td><td>FREE TEXT</td><td></td><td></td><td>This field contains system error messages trapped during the executionof package merge routines.</td></tr></tbody></table></dd></dl></div></div><hr><div class="fmqlResults"><div class='error'><p>Error: Invalid Global File Type: 15.01101</p></div></div>
 </div>
 <div id="footer"><a href="http://www.caregraf.info">Master FileMan's Data</a>&trade; (c) 2017 <span id="flogo"><a href="http://www.caregraf.info">Caregraf</a></span></div>
 </body>
