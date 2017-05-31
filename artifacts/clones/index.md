@@ -3,12 +3,11 @@ layout: default
 title: FileMan Systems - FM Schemas
 ---
 
-## FileMan Schemas (with totals)
+## FileMan Schemas and totals
 
-
-System | Type | Schema
---- | --- | ---
-nodeVISTA | VISTA | [See](nodeVISTASchema/index.html)
-cheyenne | VISTA | [See](cheyenneVISTASchema/index.html)
-madigan | CHCS | [See](madiganSchema/index.html)
-north chicago | CHCS | [See](chcsNCSchema/index.html)
+System | Type | Files | Records | Schema
+--- | --- | --- | --- | ---
+nodeVISTA (FOIA) | VISTA | 2,641 | 7,598,881 | [See](nodeVISTASchema/index.html)
+Cheyenne | VISTA | 3,256  | 136,931,297 | [See](cheyenneVISTASchema/index.html)
+Madigan | CHCS | 1,004 | 589,111,224 | [See](madiganSchema/index.html)
+North Chicago | CHCS | 1,004 | 130,064,402 | [See](chcsNCSchema/index.html)
