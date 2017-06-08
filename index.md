@@ -17,7 +17,7 @@ The VISTA Data Model is in turn normalized across all local VISTA system data mo
 
 <br>
 
-![vdp-transition](assets/vdp-transition-20170607d)
+![vdp-transition](assets/vdp-transition-20170607d.png)
 
 <br>
 
