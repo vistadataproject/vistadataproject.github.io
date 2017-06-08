@@ -16,7 +16,7 @@ Now, for the first time, VA's native transactional healthcare data model - the V
 The VISTA Data Model is in turn normalized across all local VISTA system data models to create a national, standardized __Master VISTA Data Model__ (MVDM), alowing  transactions across all VA VISTA systems with a single, standard, secure, veteran-centric, service-based mechanism, __MVDM Services__: 
 
 <br>
-![vdp-transition](assets/vdp-transition-20170607c.png)
+![vdp-transition](assets/vdp-transition-20170607d.png)
 <br>
 
 *The figure summarizes this evolution from __thousands of unique, inconsistent, insecure, unidirectional code-based interfaces__ to that of a __single, standardized, secure, server-side, symmetric (bidirectional), service-based master data model-driven interface__.*
