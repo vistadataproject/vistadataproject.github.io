@@ -1,0 +1,27 @@
+---
+layout: default
+title: Parameters
+---
+
+## [Parameters](TableOfContents) &#8594; ORB FORWARD BACKUP REVIEWER
+# ORB FORWARD BACKUP REVIEWER
+
+The number of days before a notification is forwarded to a recipient&#x27;sbackup alert reviewer. The maximum is 30 days.  If not indicated or zero,the notification will not be forwarded.  For example, if a notificationhas a value of 14 for this parameter, it will be forwarded to the backupreviewer of each recipient who hasn&#x27;t processed the notification after 14days. Determination of recipients who have not processed the notificationand their backup alert reviewer is made by the Kernel Alert Utility.  Itwill not be forwarded to backup reviewers of recipients who haveprocessed the alert within 14 days.  If the value of this parameter iszero or non-existent, the  alert/notification will never be forwarded.
+
+Property | Value
+--- | ---
+ID | 4752
+Summary | Holds Days before Forward to Backup
+Value Type | numeric
+Value Domain | 0:30:0
+Multiple Instances | true
+
+### Allowable Entities
+
+Precedence | Entity
+--- | ---
+1 | DIVISION
+2 | SYSTEM
+3 | PACKAGE
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}

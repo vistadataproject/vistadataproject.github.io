@@ -1,0 +1,38 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+## [VISTA RPCs](TableOfContents) &#8594; ORWD VALIDACT
+# ORWD VALIDACT
+
+Returns 1 if action is valid for an order, otherwise 0^error.
+
+Property | Value
+--- | ---
+Label | VALIDACT
+Routine | [ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
+Return Type | SINGLE VALUE
+
+
+
+
+### MUMPS Method Description
+
+Property | Value
+--- | ---
+Method | [VALIDACT^ORWD](http://code.osehra.org/dox/Routine_ORWD_source.html)
+Method Comment | procedure
+Input Parameters | ORIFN, ACTION
+First Comment | {::nomarkdown}<pre><code> Return 1 if action is valid for this order, otherwise 0^error</code></pre>{:/}
+Code | {::nomarkdown}<pre><code> S VAL=$$VALID^ORCACT0(ORIFN,ACTION,.ERR)<br/> I VAL=0 S VAL=VAL_U_ERR</code></pre>{:/}
+
+
+
+### CPRS
+
+File Type | Description
+--- | ---
+NOT OSEHRA CPRS | {::nomarkdown}N/A{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}

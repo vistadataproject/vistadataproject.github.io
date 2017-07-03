@@ -1,0 +1,28 @@
+---
+layout: default
+title: Parameters
+---
+
+## [Parameters](TableOfContents) &#8594; ORWD PTCARE GENERAL INPT
+# ORWD PTCARE GENERAL INPT
+
+This parameter lists all the patient care orders that may be selected in aninpatient context.
+
+Property | Value
+--- | ---
+ID | 155
+Summary | Patient Care General - Inpatient
+Value Type | pointer
+Value Domain | 101.41
+Multiple Instances | true
+
+### Allowable Entities
+
+Precedence | Entity
+--- | ---
+1 | USER
+3 | LOCATION
+5 | SYSTEM
+9 | PACKAGE
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}

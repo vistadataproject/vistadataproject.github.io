@@ -1,0 +1,27 @@
+---
+layout: default
+title: Parameters
+---
+
+## [Parameters](TableOfContents) &#8594; ORB DELETE MECHANISM
+# ORB DELETE MECHANISM
+
+Set of codes used to determine how a notification will be deleted at asite.  Codes include: I (Individual Recipient): delete the notificationfor  an individual recipient when a) that individual completes thefollow-up  action on notifications with associated follow-up action,  b)that  individual reviews notifications without follow-up actions.  A (AllRecipients): delete the notification for all recipients when a) anyrecipient completes the follow-up action on notifications with follow-upactions,  b) any recipient reviews notifications without follow-upactions.
+
+Property | Value
+--- | ---
+ID | 43
+Summary | Delete Mechanism
+Value Type | set of codes
+Value Domain | I:Individual Recipient;A:All Recipients
+Multiple Instances | true
+
+### Allowable Entities
+
+Precedence | Entity
+--- | ---
+1 | DIVISION
+2 | SYSTEM
+3 | PACKAGE
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:01 pm</p>{:/}

@@ -1,0 +1,27 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+## [VISTA RPCs](TableOfContents) &#8594; MAGG OFFLINE IMAGE ACCESSED
+# MAGG OFFLINE IMAGE ACCESSED
+
+This sends a message when an image has been accessed from a Jukeboxplatter that is offline, as determined by having an entry in the file ^MAGQUEUE(2006.033.
+
+Property | Value
+--- | ---
+Label | MAIL
+Routine | [MAGGTU3](http://code.osehra.org/dox/Routine_MAGGTU3_source.html)
+Return Type | SINGLE VALUE
+
+
+### Input Parameters
+
+Name | Type | Maximum Data Length | Required | Description
+--- | --- | --- | --- | ---
+MAGFILE | LITERAL | 90 | true | The full path and file name of the Image accessed.
+MAGIEN | LITERAL | 30 | true | The Internal entry number in file MAG(2005.  
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}

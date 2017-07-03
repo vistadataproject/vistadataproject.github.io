@@ -1,0 +1,41 @@
+---
+layout: default
+title: VDM
+---
+
+## [VDM](TableOfContents) &#8594; Pharmacy_Orderable_Item-50_7
+# Pharmacy Orderable Item (50.7)
+Order Entry name for items that can be ordered in the Pharmacy package.
+
+<dl>
+<dt>Global</dt><dd>^PS(50.7,</dd>
+<dt>Domain</dt><dd>Non-Clinical</dd>
+</dl>
+
+### Properties
+
+Field | ID | Description | Datatype | Attributes | Range
+--- | --- | --- | --- | --- | ---
+**Name**{::nomarkdown}<pre><code>  name</code></pre>{:/} | .01 |  | STRING | REQUIRED | 
+**Dosage Form**{::nomarkdown}<pre><code>  dosage_form</code></pre>{:/} | .02 |  | POINTER | REQUIRED | [Dosage_Form-50_606](Dosage_Form-50_606)
+**Iv Flag**{::nomarkdown}<pre><code>  iv_flag</code></pre>{:/} | .03 | This field indicates PHARMACY ORDERABLE ITEMs that are related to IV<br/>additives or solutions. | ENUMERATION | INDEXED | {::nomarkdown}IV: <em><strong>1</strong></em>{:/}
+**Inactive Date**{::nomarkdown}<pre><code>  inactive_date</code></pre>{:/} | .04 |  | DATE-TIME |  | 
+**Day (nd) Or Dose (nl) Limit**{::nomarkdown}<pre><code>  day_nd_or_dose_nl_limit</code></pre>{:/} | .05 | If found when this drug is ordered, this is used to calculate a DEFAULT vale for the STOP DATE prompt of the order.  If the number entered here is followed by a "D", that NUMBER OF DAYS will be added to the START DATE to calculate the STOP DATE.<br/>If the number entered is followed by an "L", the number is used as the NUMBER OF DOSES to calculate the STOP DATE.  This is best used for NARCOTICS and ANTIBIOTICS. | STRING |  | 
+**Default Med Route**{::nomarkdown}<pre><code>  default_med_route</code></pre>{:/} | .06 | If a MED ROUTE is entered here, that med route is used as a DEFAULT <br/>value during order entry when this drug is selected.  | POINTER |  | [Medication_Routes-51_2](Medication_Routes-51_2)
+**Schedule Type**{::nomarkdown}<pre><code>  schedule_type</code></pre>{:/} | .07 | If a SCHEDULE TYPE is entered here, it is used as a DEFAULT value in order entry when this drug is selected. | ENUMERATION |  | {::nomarkdown}FILL ON REQUEST: <em><strong>R</strong></em><br/>PRN: <em><strong>P</strong></em><br/>ON CALL: <em><strong>OC</strong></em><br/>ONE TIME: <em><strong>O</strong></em>{:/}
+**Schedule**{::nomarkdown}<pre><code>  schedule</code></pre>{:/} | .08 | If a Schedule is entered here, it will be used as a default value in<br/>Computerized Patient Record System (CPRS) at the Schedule prompt for<br/>medication orders. When the order is placed in CPRS, the default will<br/>display only if the value meets the criteria for the package for which the<br/>order is being placed, Inpatient Medications or Outpatient Pharmacy. | STRING |  | 
+**Supply**{::nomarkdown}<pre><code>  supply</code></pre>{:/} | .09 | This field is used to indicate whether or not the Orderable Item is a<br/>supply, 1 indicating a supply. | ENUMERATION |  | {::nomarkdown}SUPPLY: <em><strong>1</strong></em>{:/}
+**High Risk/high Alert**{::nomarkdown}<pre><code>  high_risk_high_alert</code></pre>{:/} | 1 | This field will allow an orderable item to be marked as High Risk/High <br/>Alert. The BCMA GUI application will use this field to control the witness<br/>process, of medication, during administration to a patient.  | ENUMERATION |  | {::nomarkdown}HIGH RISK/ALERT-NO WITNESS REQUIRED IN BCMA: <em><strong>1</strong></em><br/>NOT HIGH RISK/ALERT: <em><strong>0</strong></em><br/>WITNESS REQUIRED IN BCMA-HIGH RISK/ALERT: <em><strong>3</strong></em><br/>RECOMMEND WITNESS IN BCMA-HIGH RISK/ALERT: <em><strong>2</strong></em>{:/}
+**Synonym**{::nomarkdown}<pre><code>  synonym</code></pre>{:/} | 2 |  | STRING |  | 
+**Formulary Status**{::nomarkdown}<pre><code>  formulary_status</code></pre>{:/} | 5 | This field will designate the formulary status of the orderable item. The<br/>non-formulary status will be displayed to the provider next to the<br/>selectable list of orderable item(s) during CPRS order entry (List Manager<br/>and GUI). This field is not editable. It is controlled by the software. An<br/>Orderable Item will only be marked as non-formulary if there are no active<br/>Dispense Drugs matched to the item that are formulary drugs. | ENUMERATION |  | {::nomarkdown}N/F: <em><strong>1</strong></em>{:/}
+**Oi-drug Text Entry**{::nomarkdown}<pre><code>  oidrug_text_entry</code></pre>{:/} | 6 |  | POINTER |  | [Drug_Text-51_7](Drug_Text-51_7)
+**Patient Instructions**{::nomarkdown}<pre><code>  patient_instructions</code></pre>{:/} | 7 | The text in this field shall be presented as a default for the Patient<br/>Instructions prompt in the Outpatient Pharmacy package when entering<br/>orders, if the Dispense Drug selected is matched to this Pharmacy<br/>Orderable Item. This text will also be presented during the Outpatient<br/>Medication order entry process through Computerized Patient Record System<br/>(CPRS), and the CPRS user can then determine whether or not these<br/>Instructions should be part of the order. For all words entered in this<br/>field, the software will check for expansions for each word in the<br/>Medication Instruction (#51) file, and expand the word accordingly. | STRING |  | 
+**Other Language Instructions**{::nomarkdown}<pre><code>  other_language_instructions</code></pre>{:/} | 7.1 | This field is used to store patient instructions in another language. | STRING |  | 
+**Non-va Med**{::nomarkdown}<pre><code>  nonva_med</code></pre>{:/} | 8 | This field indicates whether the Orderable Item<br/>is marked as Non-VA Med or not. It is<br/>controlled by software and is not manually<br/>editable. An Orderable Item will only be marked<br/>as Non-VA Med if there is at least one active<br/>Dispense Drug matched to the item that is<br/>marked as Non-VA Med. | BOOLEAN |  | {::nomarkdown}true: <em><strong>1</strong></em>{:/}
+**Associated Immunization**{::nomarkdown}<pre><code>  associated_immunization</code></pre>{:/} | 9 | This field is added as part of the "Immunizations Documentation by BCMA"<br/>project.  A mapping relationship is created between the file entry<br/>(Pharmacy Orderable Item) and the pointed-to immunization so that a<br/>record can be created in PCE's V IMMUNIZATION file corresponding to<br/>the BCMA administration of an immunization. | POINTER | INDEXED | [Immunization-9999999_14](Immunization-9999999_14)
+**Use Dosage Form Med Route List**{::nomarkdown}<pre><code>  use_dosage_form_med_route_list</code></pre>{:/} | 10 | This flag governs the source of the medication routes that will be <br/>used during medication order entry. If this field is set to YES, the<br/>optional list of med routes will be derived from the Dosage Form file<br/>associated to the orderable item. Otherwise, it will be derived from <br/>the Possible Med Routes Sub-file associated to the orderable item. | BOOLEAN | REQUIRED | {::nomarkdown}false: <em><strong>N</strong></em><br/>true: <em><strong>Y</strong></em>{:/}
+**Possible Med Routes**{::nomarkdown}<pre><code>  possible_med_routes</code></pre>{:/} | 11 | If the DEFAULT MED ROUTE field (#.06) is populated then that value <br/>will be returned as the default value. If the DEFAULT MED ROUTE field<br/>(#.06) is not populated and the POSSIBLE MED ROUTES multiple is<br/>populated with a single entry and the USE DOSAGE FORM MED ROUTE LIST <br/>field (#10) is set to "NO", the single entry will be returned as the<br/>default value.<br/> <br/>If the DEFAULT MED ROUTE (#.06) field is not populated and the POSSIBLE<br/>MED ROUTES multiple is populated with more than one entry and the USE<br/>DOSAGE FORM MED ROUTE LIST field (#10) is set to "NO", no value will be<br/>returned as the default value.<br/> <br/>The med routes selection list in CPRS will be populated with entries<br/>in all the medication routes associated with the orderable item's<br/>dosage form if the USE DOSAGE FORM MED ROUTE LIST field (#10) is set to<br/>"YES", otherwise from the POSSIBLE MED ROUTES multiple. | POINTER |  | [Medication_Routes-51_2](Medication_Routes-51_2)
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:00 pm</p>{:/}

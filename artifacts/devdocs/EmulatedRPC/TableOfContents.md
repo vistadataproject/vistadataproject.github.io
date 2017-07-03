@@ -1,0 +1,148 @@
+---
+layout: default
+title: VISTA Emulator Documentation
+---
+
+## Emulated RPCs
+
+ID | Class | Domain
+--- | --- | ---
+1 | [DG CHK BS5 XREF ARRAY](DG_CHK_BS5_XREF_ARRAY) | Patients
+2 | [DG SENSITIVE RECORD ACCESS](DG_SENSITIVE_RECORD_ACCESS) | Patients
+3 | [GMV ADD VM](GMV_ADD_VM) | Vitals
+4 | [GMV DLL VERSION](GMV_DLL_VERSION) | Non-Clinical: Parameters
+5 | [GMV GET VITAL TYPE IEN](GMV_GET_VITAL_TYPE_IEN) | Non-Clinical: Files
+6 | [GMV MARK ERROR](GMV_MARK_ERROR) | Vitals
+7 | [GMV PARAMETER](GMV_PARAMETER) | Non-Clinical: Parameters
+8 | [GMV USER](GMV_USER) | Non-Clinical: Parameters
+9 | [GMV VITALS/CAT/QUAL](GMV_VITALS_CAT_QUAL) | Non-Clinical: Files
+10 | [OR GET COMBAT VET](OR_GET_COMBAT_VET) | Patients
+11 | [ORB SORT METHOD](ORB_SORT_METHOD) | Non-Clinical: Parameters
+12 | [ORDEA DEATEXT](ORDEA_DEATEXT) | Non-Clinical: Parameters
+13 | [OREVNTX1 DLGIEN](OREVNTX1_DLGIEN) | Non-Clinical: Files
+14 | [ORIMO ISCLOC](ORIMO_ISCLOC) | Non-Clinical: Files
+15 | [ORIMO ISIVQO](ORIMO_ISIVQO) | Non-Clinical: Files
+16 | [ORPRF HASFLG](ORPRF_HASFLG) | Patients
+17 | [ORQORB SORT](ORQORB_SORT) | Non-Clinical: Parameters
+18 | [ORQPT DEFAULT LIST SOURCE](ORQPT_DEFAULT_LIST_SOURCE) | Non-Clinical: Parameters
+19 | [ORQQAL DETAIL](ORQQAL_DETAIL) | Allergies
+20 | [ORQQAL LIST](ORQQAL_LIST) | Allergies
+21 | [ORQQCN SVC W/SYNONYMS](ORQQCN_SVC_W_SYNONYMS) | Non-Clinical: Files
+22 | [ORQQCN2 GET CONTEXT](ORQQCN2_GET_CONTEXT) | Non-Clinical: Parameters
+23 | [ORQQPL ADD SAVE](ORQQPL_ADD_SAVE) | Problems
+24 | [ORQQPL DELETE](ORQQPL_DELETE) | Problems
+25 | [ORQQPL DETAIL](ORQQPL_DETAIL) | Problems
+26 | [ORQQPL EDIT SAVE](ORQQPL_EDIT_SAVE) | Problems
+27 | [ORQQPL INIT USER](ORQQPL_INIT_USER) | Non-Clinical: File/Parameters
+28 | [ORQQPL PROBLEM LIST](ORQQPL_PROBLEM_LIST) | Problems
+29 | [ORQQPL REPLACE](ORQQPL_REPLACE) | Problems
+30 | [ORQQPL UPDATE](ORQQPL_UPDATE) | Problems
+31 | [ORQQPL USER PROB CATS](ORQQPL_USER_PROB_CATS) | Non-Clinical: Files
+32 | [ORQQPL4 LEX](ORQQPL4_LEX) | Non-Clinical: Others
+33 | [ORQQPX NEW REMINDERS ACTIVE](ORQQPX_NEW_REMINDERS_ACTIVE) | Non-Clinical: Parameters
+34 | [ORQQPXRM REMINDER CATEGORIES](ORQQPXRM_REMINDER_CATEGORIES) | Non-Clinical: Parameters
+35 | [ORQQVI VITALS](ORQQVI_VITALS) | Vitals
+36 | [ORWCH LDFONT](ORWCH_LDFONT) | Non-Clinical: Parameters
+37 | [ORWCH LOADALL](ORWCH_LOADALL) | Non-Clinical: Parameters
+38 | [ORWCH LOADSIZ](ORWCH_LOADSIZ) | Non-Clinical: Parameters
+39 | [ORWCH SAVEALL](ORWCH_SAVEALL) | Non-Clinical: Parameters
+40 | [ORWCH SAVFONT](ORWCH_SAVFONT) | Non-Clinical: Parameters
+41 | [ORWCIRN AUTORDV](ORWCIRN_AUTORDV) | Non-Clinical: Parameters
+42 | [ORWCOM ORDEROBJ](ORWCOM_ORDEROBJ) | Non-Clinical: Parameters
+43 | [ORWCOM PTOBJ](ORWCOM_PTOBJ) | Non-Clinical: Parameters
+44 | [ORWCV1 COVERSHEET LIST](ORWCV1_COVERSHEET_LIST) | Non-Clinical: File/Parameters
+45 | [ORWDAL32 ALLERGY MATCH](ORWDAL32_ALLERGY_MATCH) | Non-Clinical: Files
+46 | [ORWDAL32 CLINUSER](ORWDAL32_CLINUSER) | Non-Clinical: Parameters
+47 | [ORWDAL32 DEF](ORWDAL32_DEF) | Non-Clinical: Files
+48 | [ORWDAL32 SAVE ALLERGY](ORWDAL32_SAVE_ALLERGY) | Allergies
+49 | [ORWDAL32 SITE PARAMS](ORWDAL32_SITE_PARAMS) | Non-Clinical: Files
+50 | [ORWDAL32 SYMPTOMS](ORWDAL32_SYMPTOMS) | Non-Clinical: Files
+51 | [ORWDBA1 BASTATUS](ORWDBA1_BASTATUS) | Non-Clinical: File/Parameters
+52 | [ORWDBA3 HINTS](ORWDBA3_HINTS) | Non-Clinical: Files
+53 | [ORWDPS1 FAILDEA](ORWDPS1_FAILDEA) | Non-Clinical: Files
+54 | [ORWDPS1 ODSLCT](ORWDPS1_ODSLCT) | Non-Clinical: Files
+55 | [ORWDPS2 QOGRP](ORWDPS2_QOGRP) | Non-Clinical: Files
+56 | [ORWDPS32 AUTH](ORWDPS32_AUTH) | Non-Clinical: File/Parameters
+57 | [ORWDPS32 VALROUTE](ORWDPS32_VALROUTE) | Non-Clinical: Files
+58 | [ORWDPS5 LESGRP](ORWDPS5_LESGRP) | Non-Clinical: Files
+59 | [ORWDRA32 LOCTYPE](ORWDRA32_LOCTYPE) | Non-Clinical: Files
+60 | [ORWDX AGAIN](ORWDX_AGAIN) | Non-Clinical: Files
+61 | [ORWDX DGNM](ORWDX_DGNM) | Non-Clinical: Files
+62 | [ORWDX DLGDEF](ORWDX_DLGDEF) | Non-Clinical: Files
+63 | [ORWDX WRLST](ORWDX_WRLST) | Non-Clinical: File/Parameters
+64 | [ORWDX2 DCREASON](ORWDX2_DCREASON) | Non-Clinical: File/Parameters
+65 | [ORWDXA ISACTOI](ORWDXA_ISACTOI) | Non-Clinical: Files
+66 | [ORWDXC ON](ORWDXC_ON) | Non-Clinical: Parameters
+67 | [ORWDXM FORMID](ORWDXM_FORMID) | Non-Clinical: Files
+68 | [ORWDXM MSTYLE](ORWDXM_MSTYLE) | Non-Clinical: Parameters
+69 | [ORWDXM3 ISUDQO](ORWDXM3_ISUDQO) | Non-Clinical: Files
+70 | [ORWDXR01 ISSPLY](ORWDXR01_ISSPLY) | Non-Clinical: Files
+71 | [ORWDXVB3 COLLTIM](ORWDXVB3_COLLTIM) | Non-Clinical: Parameters
+72 | [ORWDXVB3 SWPANEL](ORWDXVB3_SWPANEL) | Non-Clinical: Parameters
+73 | [ORWGRPC ALLVIEWS](ORWGRPC_ALLVIEWS) | Non-Clinical: Parameters
+74 | [ORWGRPC GETPREF](ORWGRPC_GETPREF) | Non-Clinical: Parameters
+75 | [ORWGRPC TESTSPEC](ORWGRPC TESTSPEC) | Non-Clinical: Files
+76 | [ORWLEX GETFREQ](ORWLEX_GETFREQ) | Non-Clinical: Others
+77 | [ORWOR PKISITE](ORWOR_PKISITE) | Non-Clinical: Files
+78 | [ORWOR VWGET](ORWOR_VWGET) | Non-Clinical: File/Parameters
+79 | [ORWORB GETSORT](ORWORB_GETSORT) | Non-Clinical: Parameters
+80 | [ORWORB SETSORT](ORWORB_SETSORT) | Non-Clinical: Parameters
+81 | [ORWORDG IEN](ORWORDG_IEN) | Non-Clinical: Files
+82 | [ORWORDG MAPSEQ](ORWORDG_MAPSEQ) | Non-Clinical: File/Parameters
+83 | [ORWPCE ACTIVE PROV](ORWPCE_ACTIVE_PROV) | Non-Clinical: Others
+84 | [ORWPCE ALWAYS CHECKOUT](ORWPCE_ALWAYS_CHECKOUT) | Non-Clinical: Parameters
+85 | [ORWPCE ANYTIME](ORWPCE_ANYTIME) | Non-Clinical: Parameters
+86 | [ORWPCE ASKPCE](ORWPCE_ASKPCE) | Non-Clinical: Parameters
+87 | [ORWPCE AUTO VISIT TYPE SELECT](ORWPCE_AUTO_VISIT_TYPE_SELECT) | Non-Clinical: Parameters
+88 | [ORWPCE GET EDUCATION TOPICS](ORWPCE_GET_EDUCATION_TOPICS) | Non-Clinical: Files
+89 | [ORWPCE GET EXAM TYPE](ORWPCE_GET_EXAM_TYPE) | Non-Clinical: Files
+90 | [ORWPCE GET EXCLUDED](ORWPCE_GET_EXCLUDED) | Non-Clinical: Parameters
+91 | [ORWPCE GET HEALTH FACTORS TY](ORWPCE_GET_HEALTH_FACTORS_TY) | Non-Clinical: Files
+92 | [ORWPCE GET IMMUNIZATION TYPE](ORWPCE_GET_IMMUNIZATION_TYPE) | Non-Clinical: Files
+93 | [ORWPCE GET SKIN TEST TYPE](ORWPCE_GET_SKIN_TEST_TYPE) | Non-Clinical: Files
+94 | [ORWPCE GETSVC](ORWPCE_GETSVC) | Non-Clinical: Files
+95 | [ORWPCE HASCPT](ORWPCE_HASCPT) | Non-Clinical: Others
+96 | [ORWPCE MHCLINIC](ORWPCE_MHCLINIC) | Non-Clinical: Others
+97 | [ORWPCE1 NONCOUNT](ORWPCE1_NONCOUNT) | Non-Clinical: Files
+98 | [ORWPS REASON](ORWPS_REASON) | Non-Clinical: Parameters
+99 | [ORWPT DIEDON](ORWPT_DIEDON) | Patients
+100 | [ORWPT ENCTITL](ORWPT_ENCTITL) | Patients
+101 | [ORWPT ID INFO](ORWPT_ID_INFO) | Patients
+102 | [ORWPT INPLOC](ORWPT_INPLOC) | Patients
+103 | [ORWPT LIST ALL](ORWPT_LIST_ALL) | Patients
+104 | [ORWPT SELECT](ORWPT SELECT) | Patients
+105 | [ORWPT TOP](ORWPT_TOP) | Patients
+106 | [ORWPT1 PRCARE](ORWPT1_PRCARE) | Patients
+107 | [ORWSR SHOW SURG TAB](ORWSR_SHOW_SURG_TAB) | Non-Clinical: Parameters
+108 | [ORWTIU GET TIU CONTEXT](ORWTIU_GET_TIU_CONTEXT) | Non-Clinical: Parameters
+109 | [ORWTPD1 GETEAFL](ORWTPD1_GETEAFL) | Non-Clinical: Parameters
+110 | [ORWTPD1 GETEDATS](ORWTPD1_GETEDATS) | Non-Clinical: Parameters
+111 | [ORWTPO CSARNGD](ORWTPO_CSARNGD) | Non-Clinical: Parameters
+112 | [ORWTPO GETIMGD](ORWTPO_GETIMGD) | Non-Clinical: Parameters
+113 | [ORWU CLINLOC](ORWU_CLINLOC) | Non-Clinical: Files
+114 | [ORWU EXTNAME](ORWU_EXTNAME) | Non-Clinical: Files
+115 | [ORWU HASKEY](ORWU_HASKEY) | Non-Clinical: Others
+116 | [ORWU PARAM](ORWU_PARAM) | Non-Clinical: Parameters
+117 | [ORWU PATCH](ORWU_PATCH) | Non-Clinical: Files
+118 | [ORWU TOOLMENU](ORWU_TOOLMENU) | Non-Clinical: Parameters
+119 | [ORWU USERINFO](ORWU_USERINFO) | Non-Clinical: File/Parameters
+120 | [ORWU VALIDSIG](ORWU_VALIDSIG) | Non-Clinical: Files
+121 | [ORWU VERSRV](ORWU_VERSRV) | Non-Clinical: Files
+122 | [ORWU1 NEWLOC](ORWU1_NEWLOC) | Non-Clinical: Files
+123 | [ORWUL FVSUB](ORWUL_FVSUB) | Non-Clinical: Files
+124 | [ORWUL QV4DG](ORWUL_QV4DG) | Non-Clinical: File/Parameters
+125 | [TIU GET DEFAULT PROVIDER](TIU_GET_DEFAULT_PROVIDER) | Non-Clinical: Files
+126 | [TIU GET PERSONAL PREFERENCES](TIU_GET_PERSONAL_PREFERENCES) | Non-Clinical: Others
+127 | [TIU GET PRINT NAME](TIU_GET_PRINT_NAME) | Non-Clinical: Others
+128 | [TIU IS THIS A CONSULT?](TIU_IS_THIS_A_CONSULT?) | Non-Clinical: Others
+129 | [TIU ISPRF](TIU_ISPRF) | Non-Clinical: Files
+130 | [TIU TEMPLATE ACCESS LEVEL](TIU_TEMPLATE_ACCESS_LEVEL) | Non-Clinical: Parameters
+131 | [TIU TEMPLATE GET DEFAULTS](TIU_TEMPLATE_GET_DEFAULTS) | Non-Clinical: Parameters
+132 | [TIU TEMPLATE GETLINK](TIU_TEMPLATE_GETLINK) | Non-Clinical: Files
+133 | [TIU TEMPLATE SET DEFAULTS](TIU_TEMPLATE_SET_DEFAULTS) | Non-Clinical: Parameters
+134 | [XUS GET USER INFO](XUS_GET_USER_INFO) | Non-Clinical: Files
+135 | [XUS INTRO MSG](XUS_INTRO_MSG) | Non-Clinical: Files
+136 | [XUS PKI GET UPN](XUS_PKI_GET_UPN) | Non-Clinical: Files
+137 | [XWB GET BROKER INFO](XWB_GET_BROKER_INFO) | Non-Clinical: Files
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:06 pm</p>{:/}

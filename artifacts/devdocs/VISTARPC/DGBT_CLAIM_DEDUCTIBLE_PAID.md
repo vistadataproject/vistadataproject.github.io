@@ -1,0 +1,28 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+## [VISTA RPCs](TableOfContents) &#8594; DGBT CLAIM DEDUCTIBLE PAID
+# DGBT CLAIM DEDUCTIBLE PAID
+
+THIS RPC IS USED BY BENEFICIARY TRAVEL PACKAGE TO RETRIEVE TRAVEL CLAIM INFORMATION ABOUT ANY TRAVEL CLAIMS FOR PATIENT.
+
+Property | Value
+--- | ---
+Label | RPC
+Routine | [DGBTRDV](http://code.osehra.org/dox/Routine_DGBTRDV_source.html)
+Return Type | ARRAY
+
+
+### Input Parameters
+
+Name | Type | Maximum Data Length | Required | Description
+--- | --- | --- | --- | ---
+PATIENT ICN | LITERAL | 30 | true | PATIENTS ICN NUMBER FROM ^DPT(DFN).
+CLAIM DATE | LITERAL | 15 | true | BENEFICIARY TRAVEL CLAIM DATE (NOT THE CURRENT DATE).
+DGBTRET | REFERENCE |  | true | THE ARRAY THE DATA WILL BE RETURNED IN.
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}

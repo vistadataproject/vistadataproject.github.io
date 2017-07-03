@@ -1,0 +1,36 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+## [VISTA RPCs](TableOfContents) &#8594; ORWTPD GETDFLT
+# ORWTPD GETDFLT
+
+get default setting for all reports(time/occ limits)
+
+Property | Value
+--- | ---
+Label | GETDFLT
+Routine | [ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
+Return Type | SINGLE VALUE
+
+
+
+
+### MUMPS Method Description
+
+Property | Value
+--- | ---
+Method | [GETDFLT^ORWTPD](http://code.osehra.org/dox/Routine_ORWTPD_source.html)
+Method Comment | Get default time/occ limits for all reports
+Code | {::nomarkdown}<pre><code> N VALUE<br/> S Y=$$GET^XPAR("USR.`"_DUZ_"^DIV^SYS^PKG","ORWRP TIME/OCC LIMITS ALL",1,"I")<br/> K VALUE</code></pre>{:/}
+
+
+
+### CPRS
+
+File Type | Description
+--- | ---
+Pascal File | {::nomarkdown}<a href="https://github.com/OSEHRA/VistA/blob/master/Packages/Order%20Entry%20Results%20Reporting/CPRS/CPRS-Chart/Options/rOptions.pas">Options/rOptions.pas</a>{:/}
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}

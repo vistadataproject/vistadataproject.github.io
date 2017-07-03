@@ -1,0 +1,26 @@
+---
+layout: default
+title: VISTA RPC Documentation
+---
+
+## [VISTA RPCs](TableOfContents) &#8594; EC GETECSPROCS
+# EC GETECSPROCS
+
+Returns an array of procedures for an Event Code screen (file #720.3). Eventcode screens are based on location, DSS unit and Category.
+
+Property | Value
+--- | ---
+Label | PROC
+Routine | [ECUERPC](http://code.osehra.org/dox/Routine_ECUERPC_source.html)
+Return Type | GLOBAL ARRAY
+
+
+### Input Parameters
+
+Name | Type | Maximum Data Length | Required | Description
+--- | --- | --- | --- | ---
+ECARY | LITERAL |  | true | Input variable ECARY contains the following values separated by up-arrow.  1.  ECL  - Location IEN  2.  ECD  - DSS Unit IEN  3.  ECC  - Category IEN
+
+
+
+{::nomarkdown} <br/><p style="font-size: 11px">Document generated on July 3rd 2017, 12:09:02 pm</p>{:/}
